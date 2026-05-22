@@ -28,10 +28,10 @@
           </div>
         </div>
         <div class="university-card__actions">
-          <button class="ghost-action" @click="catalog.toggleFavoriteUniversity(university.id)">
+          <button class="ghost-action" @click.stop="catalog.toggleFavoriteUniversity(university.id)">
             {{ catalog.favoriteState.universities.includes(university.id) ? t('common.favorited') : t('common.favorite') }}
           </button>
-          <button class="ghost-action" @click="catalog.toggleCompare(university.id)">
+          <button class="ghost-action" :class="{ active: catalog.compareIds.includes(university.id) }" @click.stop="catalog.toggleCompare(university.id)">
             {{ catalog.compareIds.includes(university.id) ? t('common.compared') : t('common.compare') }}
           </button>
         </div>
@@ -70,7 +70,7 @@
           v-for="program in topPrograms"
           :key="program.id"
           class="program-chip"
-          @click="router.push(`/programs/${program.slug}`)"
+          @click="router.push({ path: `/universities/${university.slug}`, query: { program: String(program.id) } })"
         >
           {{ text(program.name) }}
         </button>

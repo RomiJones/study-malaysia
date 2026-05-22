@@ -1,11 +1,18 @@
 import { defineStore } from "pinia";
 import { computed, ref } from "vue";
-import type { ProgramListItem, UniversityListItem } from "@studymy/shared";
+import type {
+  ProgramCatalogDetail,
+  ProgramListItem,
+  SearchSuggestionItem,
+  UniversityListItem
+} from "@studymy/shared";
 import { apiFetch } from "../api/client";
 
 const FAVORITES_KEY = "studymy_favorites";
 const COMPARE_KEY = "studymy_compare";
 const FEATURED_ORDER = ["UM", "UPM", "UKM", "USM", "UTM", "TAYLORS", "SUNWAY", "UCSI", "APU", "MONASH"];
+const DEFAULT_FAVORITES = { universities: [] as number[], programs: [] as number[] };
+const DEFAULT_COMPARE: number[] = [];
 
 interface HomeMeta {
   stats: {
@@ -22,8 +29,13 @@ export const useCatalogStore = defineStore("catalog", () => {
   const programs = ref<ProgramListItem[]>([]);
   const universityDetail = ref<(UniversityListItem & { programs: ProgramListItem[] }) | null>(null);
   const programDetail = ref<(ProgramListItem & { university: UniversityListItem }) | null>(null);
+  const selectedProgramDetail = ref<ProgramCatalogDetail | null>(null);
+  const searchSuggestions = ref<SearchSuggestionItem[]>([]);
   const loading = ref(false);
+  const searchLoading = ref(false);
+  const programLoading = ref(false);
   const errorMessage = ref("");
+  const compareMessage = ref("");
   const search = ref("");
   const ownerships = ref<string[]>([]);
   const categories = ref<string[]>([]);
@@ -32,8 +44,10 @@ export const useCatalogStore = defineStore("catalog", () => {
   const qsRankMax = ref<number | null>(null);
   const tuitionMin = ref<number | null>(null);
   const tuitionMax = ref<number | null>(null);
-  const favoriteState = ref<{ universities: number[]; programs: number[] }>(JSON.parse(localStorage.getItem(FAVORITES_KEY) || '{"universities":[],"programs":[]}'));
-  const compareIds = ref<number[]>(JSON.parse(localStorage.getItem(COMPARE_KEY) || "[]"));
+  const homePage = ref(1);
+  const pageSize = ref(8);
+  const favoriteState = ref<{ universities: number[]; programs: number[] }>(readStorage(FAVORITES_KEY, DEFAULT_FAVORITES));
+  const compareIds = ref<number[]>(readStorage(COMPARE_KEY, DEFAULT_COMPARE));
 
   const filteredUniversities = computed(() =>
     [...universities.value]
@@ -96,6 +110,45 @@ export const useCatalogStore = defineStore("catalog", () => {
     programDetail.value = await apiFetch<ProgramListItem & { university: UniversityListItem }>(`/programs/${slug}`);
   }
 
+  async function loadSearchSuggestions(query = search.value) {
+    const value = query.trim();
+    if (!value) {
+      searchSuggestions.value = [];
+      return;
+    }
+
+    searchLoading.value = true;
+    try {
+      searchSuggestions.value = await apiFetch<SearchSuggestionItem[]>(`/search/suggestions?q=${encodeURIComponent(value)}&limit=8`);
+    } catch {
+      searchSuggestions.value = [];
+    } finally {
+      searchLoading.value = false;
+    }
+  }
+
+  function clearSearchSuggestions() {
+    searchSuggestions.value = [];
+  }
+
+  async function openProgramDetail(identifier: number | string) {
+    programLoading.value = true;
+    try {
+      selectedProgramDetail.value = await apiFetch<ProgramCatalogDetail>(`/programs/detail/${encodeURIComponent(String(identifier))}`);
+      errorMessage.value = "";
+    } catch (error) {
+      errorMessage.value = error instanceof Error ? error.message : "Failed to load program detail";
+      selectedProgramDetail.value = null;
+      throw error;
+    } finally {
+      programLoading.value = false;
+    }
+  }
+
+  function closeProgramDetail() {
+    selectedProgramDetail.value = null;
+  }
+
   function toggleFavoriteUniversity(id: number) {
     const index = favoriteState.value.universities.indexOf(id);
     if (index >= 0) favoriteState.value.universities.splice(index, 1);
@@ -111,15 +164,30 @@ export const useCatalogStore = defineStore("catalog", () => {
   }
 
   function toggleCompare(id: number) {
+    compareMessage.value = "";
     const index = compareIds.value.indexOf(id);
     if (index >= 0) compareIds.value.splice(index, 1);
-    else if (compareIds.value.length < 3) compareIds.value.push(id);
+    else if (compareIds.value.length < 4) compareIds.value.push(id);
+    else {
+      compareMessage.value = "最多只能同时对比 4 所院校";
+      return false;
+    }
     localStorage.setItem(COMPARE_KEY, JSON.stringify(compareIds.value));
+    return true;
   }
 
   function clearCompare() {
     compareIds.value = [];
+    compareMessage.value = "";
     localStorage.setItem(COMPARE_KEY, JSON.stringify(compareIds.value));
+  }
+
+  function setHomePage(value: number) {
+    homePage.value = Math.max(1, value);
+  }
+
+  function resetHomePage() {
+    homePage.value = 1;
   }
 
   return {
@@ -128,8 +196,13 @@ export const useCatalogStore = defineStore("catalog", () => {
     programs,
     universityDetail,
     programDetail,
+    selectedProgramDetail,
+    searchSuggestions,
     loading,
+    searchLoading,
+    programLoading,
     errorMessage,
+    compareMessage,
     search,
     ownerships,
     categories,
@@ -138,6 +211,8 @@ export const useCatalogStore = defineStore("catalog", () => {
     qsRankMax,
     tuitionMin,
     tuitionMax,
+    homePage,
+    pageSize,
     favoriteState,
     compareIds,
     filteredUniversities,
@@ -145,12 +220,27 @@ export const useCatalogStore = defineStore("catalog", () => {
     loadUniversities,
     loadUniversity,
     loadProgram,
+    loadSearchSuggestions,
+    clearSearchSuggestions,
+    openProgramDetail,
+    closeProgramDetail,
     toggleFavoriteUniversity,
     toggleFavoriteProgram,
     toggleCompare,
-    clearCompare
+    clearCompare,
+    setHomePage,
+    resetHomePage
   };
 });
+
+function readStorage<T>(key: string, fallback: T): T {
+  try {
+    const raw = localStorage.getItem(key);
+    return raw ? JSON.parse(raw) as T : structuredClone(fallback);
+  } catch {
+    return structuredClone(fallback);
+  }
+}
 
 function compareUniversities(a: UniversityListItem, b: UniversityListItem) {
   const aIndex = FEATURED_ORDER.indexOf(a.code);

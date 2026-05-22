@@ -23,6 +23,8 @@
   common: {
     search: "Search universities, programmes or cities",
     searchAction: "Search now",
+    university: "University",
+    program: "Programme",
     language: "Language",
     qsRank: "QS Rank",
     annualCost: "First-year cost",
@@ -296,6 +298,8 @@ const zhCN = {
   common: {
     search: "搜索学校、专业、城市或关键词",
     searchAction: "立即搜索",
+    university: "院校",
+    program: "专业",
     language: "语言",
     qsRank: "QS 排名",
     annualCost: "首年成本",

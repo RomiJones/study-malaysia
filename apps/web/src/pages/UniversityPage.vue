@@ -1,214 +1,424 @@
 <template>
-  <section v-if="catalog.universityDetail" class="grid gap-6">
-    <div class="section-card overflow-hidden rounded-[32px]">
-      <div class="grid md:grid-cols-[1.05fr_0.95fr]">
-        <div class="relative min-h-[320px] bg-slate-900">
-          <img v-if="catalog.universityDetail.imageUrl" :src="catalog.universityDetail.imageUrl" :alt="text(catalog.universityDetail.name)" class="h-full w-full object-cover" />
-          <div v-else class="gradient-bg absolute inset-0"></div>
-          <div class="absolute left-5 top-5 flex flex-wrap gap-2">
-            <span class="info-chip badge-contrast">QS #{{ catalog.universityDetail.qsRank }}</span>
-            <span class="info-chip badge-success">{{ t(`ownership.${catalog.universityDetail.ownership}`) }}</span>
+  <section v-if="detail" class="university-detail-page">
+    <section class="detail-hero">
+      <div class="container detail-hero__inner">
+        <div class="detail-hero__copy">
+          <div class="detail-hero__eyebrow">{{ detail.shortName }} / {{ detail.code }}</div>
+          <h1 class="detail-hero__title">{{ text(detail.name) }}</h1>
+          <p class="detail-hero__description">{{ text(detail.description) }}</p>
+          <div class="detail-hero__chips">
+            <span class="chip chip-gold">QS #{{ detail.qsRank }}</span>
+            <span class="chip chip-teal">{{ t(`ownership.${detail.ownership}`) }}</span>
+            <span class="chip chip-ink">{{ text(detail.location) }}</span>
+            <span v-if="detail.acceptNoLanguage" class="chip chip-blue">{{ t('common.noLanguageApply') }}</span>
           </div>
         </div>
-        <div class="flex flex-col gap-5 p-6 md:p-8">
-          <div class="text-xs font-bold uppercase tracking-[0.18em] text-slate-400">{{ catalog.universityDetail.shortName }}</div>
-          <h1 class="text-3xl font-black leading-tight text-slate-900 md:text-4xl">{{ text(catalog.universityDetail.name) }}</h1>
-          <p class="muted text-sm md:text-base">{{ text(catalog.universityDetail.description) }}</p>
-          <div class="grid gap-3 sm:grid-cols-2">
-            <div class="rounded-[20px] bg-slate-50 p-4">
-              <div class="text-xs font-bold uppercase tracking-[0.14em] text-slate-400">{{ t('common.city') }}</div>
-              <div class="mt-2 text-lg font-bold text-slate-900">{{ text(catalog.universityDetail.location) }}</div>
+
+        <div class="detail-hero__panel">
+          <div class="detail-hero__stat">
+            <span>{{ t('common.programCount') }}</span>
+            <strong>{{ detail.programs.length }}</strong>
+          </div>
+          <div class="detail-hero__stat">
+            <span>{{ t('common.tuitionRange') }}</span>
+            <strong>CNY {{ formatCurrency(detail.tuitionMinCny) }} - {{ formatCurrency(detail.tuitionMaxCny) }}</strong>
+          </div>
+          <div class="detail-hero__stat">
+            <span>{{ t('common.languageRequirement') }}</span>
+            <strong>IELTS {{ detail.minIelts }}+</strong>
+          </div>
+          <div class="detail-hero__actions">
+            <a class="btn btn-gold" :href="detail.officialWebsite || detail.website" target="_blank" rel="noreferrer">{{ t('common.visitWebsite') }}</a>
+            <button class="btn btn-outline btn-outline-light" @click="catalog.toggleCompare(detail.id)">
+              {{ catalog.compareIds.includes(detail.id) ? t('common.removeFromCompare') : t('common.addToCompare') }}
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <nav class="detail-tabs container">
+        <a href="#overview">{{ t('common.overview') }}</a>
+        <a href="#applications">{{ t('common.applications') }}</a>
+        <a href="#programmes">{{ t('university.structureTitle') }}</a>
+      </nav>
+    </section>
+
+    <section id="overview" class="detail-section">
+      <div class="container detail-section__inner">
+        <div class="detail-section-title serif">{{ t('university.introTitle') }}</div>
+        <div class="detail-overview-grid">
+          <article class="official-card">
+            <span>{{ t('common.foundedYear') }}</span>
+            <strong>{{ detail.foundedYear }}</strong>
+          </article>
+          <article class="official-card">
+            <span>{{ t('common.students') }}</span>
+            <strong>{{ compactNumber(detail.students) }}</strong>
+          </article>
+          <article class="official-card">
+            <span>{{ t('common.international') }}</span>
+            <strong>{{ compactNumber(detail.intlStudents) }}</strong>
+          </article>
+          <article class="official-card">
+            <span>{{ t('common.official') }}</span>
+            <strong>{{ detail.officialVerifiedAt || detail.officialSourceStatus }}</strong>
+          </article>
+        </div>
+
+        <div class="detail-two-col">
+          <div class="section-card detail-copy-card">
+            <h2 class="section-title">{{ t('university.highlightsTitle') }}</h2>
+            <ul>
+              <li v-for="item in array(detail.highlights)" :key="item">{{ item }}</li>
+            </ul>
+          </div>
+          <div class="section-card detail-copy-card">
+            <h2 class="section-title">{{ t('university.facilitiesTitle') }}</h2>
+            <ul>
+              <li v-for="item in array(detail.facilities)" :key="item">{{ item }}</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="applications" class="detail-section">
+      <div class="container detail-section__inner">
+        <div class="detail-section-title serif">{{ t('common.applications') }}</div>
+        <div class="application-grid">
+          <article class="section-card application-card">
+            <span>官方申请入口</span>
+            <a :href="detail.applicationPortalUrl || detail.studyPortalUrl || detail.website" target="_blank" rel="noreferrer">
+              {{ detail.applicationPortalUrl || detail.studyPortalUrl || detail.website }}
+            </a>
+          </article>
+          <article class="section-card application-card">
+            <span>申请时间</span>
+            <ul>
+              <li v-for="item in detail.applicationPeriods" :key="item">{{ item }}</li>
+              <li v-if="!detail.applicationPeriods.length">以学校官方页面为准</li>
+            </ul>
+          </article>
+          <article class="section-card application-card">
+            <span>申请材料</span>
+            <ul>
+              <li v-for="item in array(detail.applicationDocuments)" :key="item">{{ item }}</li>
+              <li v-if="!array(detail.applicationDocuments).length">{{ t('common.documents') }}</li>
+            </ul>
+          </article>
+          <article class="section-card application-card">
+            <span>中国学生要求</span>
+            <ul>
+              <li v-for="item in array(detail.chinaStudentRequirements)" :key="item">{{ item }}</li>
+              <li v-if="!array(detail.chinaStudentRequirements).length">按具体专业官方要求核对</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="programmes" class="detail-section">
+      <div class="container detail-section__inner">
+        <div class="programme-page-title">
+          <div>
+            <div class="section-kicker">{{ t('university.structureTitle') }}</div>
+            <h2>{{ t('university.visibleCount', { count: detail.programs.length }) }}</h2>
+          </div>
+          <span class="programme-count">{{ detail.programs.length }}</span>
+        </div>
+
+        <div class="programme-levels">
+          <section v-for="section in programSections" :key="section.level" class="programme-level">
+            <div class="programme-level__head">
+              <h2>{{ section.label }}</h2>
+              <span class="programme-count">{{ section.items.length }}</span>
             </div>
-            <div class="rounded-[20px] bg-slate-50 p-4">
-              <div class="text-xs font-bold uppercase tracking-[0.14em] text-slate-400">{{ t('common.foundedYear') }}</div>
-              <div class="mt-2 text-lg font-bold text-slate-900">{{ catalog.universityDetail.foundedYear }}</div>
+            <div class="programme-table-wrap">
+              <div class="programme-grid-head">
+                <div>专业名称</div>
+                <div>学院</div>
+                <div>学制</div>
+                <div>官方学费</div>
+                <div>语言要求</div>
+                <div>开学</div>
+                <div>详情</div>
+              </div>
+              <button
+                v-for="program in section.items"
+                :key="program.id"
+                class="programme-grid-row"
+                type="button"
+                @click="openProgram(program)"
+              >
+                <div class="programme-cell" data-label="专业名称">
+                  <div class="programme-name-zh">{{ text(program.name) }}</div>
+                  <div class="programme-name-en">{{ program.nameEnOfficial || program.nameEn }}</div>
+                </div>
+                <div class="programme-cell" data-label="学院">
+                  <div class="programme-faculty-zh">{{ program.facultyZh || text(program.faculty) }}</div>
+                </div>
+                <div class="programme-cell" data-label="学制">
+                  <span class="programme-pill">{{ program.durationOfficial || `${Number(program.durationYears)} 年` }}</span>
+                </div>
+                <div class="programme-cell" data-label="官方学费">
+                  <div class="programme-fee-main">{{ program.tuitionDisplay || program.listTuitionText }}</div>
+                  <div class="programme-fee-status" :class="{ review: program.officialFeeAuditStatus !== 'matched-official' }">
+                    {{ feeStatus(program) }}
+                  </div>
+                </div>
+                <div class="programme-cell" data-label="语言要求">
+                  <span class="programme-lang-pill">IELTS {{ program.languageRequirement.ielts }}+</span>
+                </div>
+                <div class="programme-cell" data-label="开学">
+                  <div class="programme-intake-cn">{{ program.officialIntake || program.intakeMonths.join(' / ') || '待确认' }}</div>
+                </div>
+                <div class="programme-cell" data-label="详情">
+                  <span class="programme-detail-link">详情</span>
+                </div>
+              </button>
             </div>
-            <div class="rounded-[20px] bg-slate-50 p-4">
-              <div class="text-xs font-bold uppercase tracking-[0.14em] text-slate-400">{{ t('common.tuitionRange') }}</div>
-              <div class="mt-2 text-lg font-bold text-slate-900">CNY {{ formatCurrency(catalog.universityDetail.tuitionMinCny) }} - CNY {{ formatCurrency(catalog.universityDetail.tuitionMaxCny) }}</div>
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <div v-if="catalog.selectedProgramDetail" class="modal-backdrop fade-in" @click.self="closeProgramModal">
+      <div class="modal program-detail-modal">
+        <div class="modal-header">
+          <div>
+            <div class="program-modal-tags">
+              <span class="chip chip-teal">{{ levelLabel(catalog.selectedProgramDetail.level) }}</span>
+              <span class="chip chip-gold">{{ catalog.selectedProgramDetail.category }}</span>
+              <span class="chip chip-ink">{{ catalog.selectedProgramDetail.durationOfficial }}</span>
             </div>
-            <div class="rounded-[20px] bg-slate-50 p-4">
-              <div class="text-xs font-bold uppercase tracking-[0.14em] text-slate-400">{{ t('common.languageRequirement') }}</div>
-              <div class="mt-2 text-lg font-bold text-slate-900">IELTS {{ catalog.universityDetail.minIelts }}+</div>
+            <h2 class="serif">{{ text(catalog.selectedProgramDetail.name) }}</h2>
+            <div class="program-modal-subtitle">
+              {{ catalog.selectedProgramDetail.nameEnOfficial || catalog.selectedProgramDetail.nameEn }} · {{ text(catalog.selectedProgramDetail.university.name) }}
             </div>
           </div>
-          <div class="flex flex-wrap gap-3">
-            <a class="primary-action" :href="catalog.universityDetail.website" target="_blank" rel="noreferrer">{{ t('common.visitWebsite') }}</a>
-            <a class="secondary-action" :href="`mailto:${catalog.universityDetail.admissionEmail}`">{{ t('common.contactAdmissions') }}</a>
-            <button class="secondary-action" @click="catalog.toggleCompare(catalog.universityDetail.id)">
-              {{ catalog.compareIds.includes(catalog.universityDetail.id) ? t('common.removeFromCompare') : t('common.addToCompare') }}
+          <button class="modal-close" @click="closeProgramModal">×</button>
+        </div>
+
+        <div class="modal-body">
+          <p class="program-modal-description">{{ text(catalog.selectedProgramDetail.description) }}</p>
+
+          <div class="modal-section">
+            <div class="modal-section-title">学费与开学</div>
+            <div class="req-grid">
+              <div class="req-item">
+                <div class="req-item-label">官方国际学生总学费</div>
+                <div class="req-item-value">{{ catalog.selectedProgramDetail.tuitionDisplay || catalog.selectedProgramDetail.tuitionInfo.displayText }}</div>
+              </div>
+              <div class="req-item">
+                <div class="req-item-label">开学时间</div>
+                <div class="req-item-value">{{ catalog.selectedProgramDetail.officialIntake || catalog.selectedProgramDetail.intakeMonths.join(' / ') || '待确认' }}</div>
+              </div>
+              <div class="req-item">
+                <div class="req-item-label">官方学制</div>
+                <div class="req-item-value">{{ catalog.selectedProgramDetail.durationOfficial }}</div>
+              </div>
+              <div class="req-item">
+                <div class="req-item-label">费用备注</div>
+                <div class="req-item-value req-item-value--text">{{ catalog.selectedProgramDetail.tuitionInfo.note || '以官方页面为准' }}</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal-section">
+            <div class="modal-section-title">入学与语言要求</div>
+            <div class="req-grid">
+              <div class="req-item">
+                <div class="req-item-label">GPA 要求</div>
+                <div class="req-item-value">{{ catalog.selectedProgramDetail.requirement.gpa }}+</div>
+              </div>
+              <div class="req-item">
+                <div class="req-item-label">雅思要求</div>
+                <div class="req-item-value">IELTS {{ catalog.selectedProgramDetail.languageRequirement.ielts }}+</div>
+              </div>
+              <div v-if="catalog.selectedProgramDetail.languageRequirement.toefl" class="req-item">
+                <div class="req-item-label">托福要求</div>
+                <div class="req-item-value">TOEFL {{ catalog.selectedProgramDetail.languageRequirement.toefl }}+</div>
+              </div>
+              <div class="req-item req-item--full">
+                <div class="req-item-label">官方语言要求</div>
+                <div class="req-item-value req-item-value--text">{{ catalog.selectedProgramDetail.officialLanguageRequirement || '按学校官方页面为准' }}</div>
+              </div>
+              <div class="req-item req-item--full">
+                <div class="req-item-label">官方学术要求 / 备注</div>
+                <div class="req-item-value req-item-value--text">{{ catalog.selectedProgramDetail.officialAcademicRequirement || text(catalog.selectedProgramDetail.requirement.note) }}</div>
+              </div>
+              <div v-if="catalog.selectedProgramDetail.chinaStudentRequirement" class="req-item req-item--full">
+                <div class="req-item-label">中国学生申请备注</div>
+                <div class="req-item-value req-item-value--text">{{ catalog.selectedProgramDetail.chinaStudentRequirement }}</div>
+              </div>
+              <div v-if="catalog.selectedProgramDetail.officialAccreditationNote" class="req-item req-item--full">
+                <div class="req-item-label">官方认证 / 专业认可</div>
+                <div class="req-item-value req-item-value--text">{{ catalog.selectedProgramDetail.officialAccreditationNote }}</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal-section">
+            <div class="modal-section-title">{{ t('common.documents') }}</div>
+            <ul class="program-doc-list">
+              <li v-for="item in array(catalog.selectedProgramDetail.applicationDocs)" :key="item">{{ item }}</li>
+              <li v-if="!array(catalog.selectedProgramDetail.applicationDocs).length">以官方申请系统要求为准</li>
+            </ul>
+          </div>
+
+          <div v-if="array(catalog.selectedProgramDetail.curriculum).length" class="modal-section">
+            <div class="modal-section-title">{{ t('common.curriculum') }}</div>
+            <div class="curriculum-pills">
+              <span v-for="item in array(catalog.selectedProgramDetail.curriculum)" :key="item" class="curriculum-pill">{{ item }}</span>
+            </div>
+          </div>
+
+          <div v-if="array(catalog.selectedProgramDetail.careers).length" class="modal-section">
+            <div class="modal-section-title">{{ t('common.careers') }}</div>
+            <div class="career-pills">
+              <span v-for="item in array(catalog.selectedProgramDetail.careers)" :key="item" class="career-pill">{{ item }}</span>
+            </div>
+          </div>
+
+          <div class="modal-section">
+            <div class="modal-section-title">官方来源与核验状态</div>
+            <div class="req-grid">
+              <div class="req-item">
+                <div class="req-item-label">来源状态</div>
+                <div class="req-item-value">{{ sourceStatus(catalog.selectedProgramDetail.officialSourceStatus) }}</div>
+              </div>
+              <div class="req-item">
+                <div class="req-item-label">核验日期</div>
+                <div class="req-item-value">{{ catalog.selectedProgramDetail.officialVerifiedAt || '待确认' }}</div>
+              </div>
+              <div class="req-item req-item--full">
+                <div class="req-item-label">官方链接</div>
+                <a class="req-source-link" :href="catalog.selectedProgramDetail.officialSourceUrl" target="_blank" rel="noreferrer">
+                  {{ catalog.selectedProgramDetail.officialSourceUrl || '待补充' }}
+                </a>
+              </div>
+              <div class="req-item req-item--full">
+                <div class="req-item-label">官方学费来源</div>
+                <a class="req-source-link" :href="catalog.selectedProgramDetail.officialFeeSourceUrl" target="_blank" rel="noreferrer">
+                  {{ catalog.selectedProgramDetail.officialFeeSourceUrl || '待补充' }}
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="program-modal-actions">
+            <button class="btn btn-primary" @click="goPlanner">{{ t('program.addToPlanner') }}</button>
+            <button class="btn btn-outline" @click="catalog.toggleFavoriteProgram(catalog.selectedProgramDetail.id)">
+              {{ catalog.favoriteState.programs.includes(catalog.selectedProgramDetail.id) ? t('common.favorited') : t('program.favoriteProgram') }}
             </button>
           </div>
         </div>
       </div>
     </div>
+  </section>
 
-    <div class="section-card rounded-[28px] p-6 md:p-7">
-      <div class="flex flex-col gap-2 md:flex-row md:items-end md:justify-between">
-        <div>
-          <div class="text-xs font-bold uppercase tracking-[0.18em] text-slate-400">{{ t('university.introTitle') }}</div>
-          <h2 class="section-title mt-2">{{ t('university.introTitle') }}</h2>
-        </div>
-        <div class="text-sm text-slate-500">{{ text(catalog.universityDetail.region) }} · {{ compactNumber(catalog.universityDetail.students) }} {{ t('common.students') }}</div>
-      </div>
-      <div class="mt-5 grid gap-5 lg:grid-cols-[1.15fr_0.85fr]">
-        <div class="grid gap-4">
-          <p class="muted text-sm leading-8 md:text-base">{{ introText }}</p>
-          <p v-if="secondaryIntro" class="muted text-sm leading-8 md:text-base">{{ secondaryIntro }}</p>
-        </div>
-        <div class="grid gap-3 sm:grid-cols-2">
-          <div class="rounded-[20px] bg-slate-50 p-4">
-            <div class="text-xs font-bold uppercase tracking-[0.14em] text-slate-400">{{ t('common.students') }}</div>
-            <div class="mt-2 text-lg font-black text-slate-900">{{ compactNumber(catalog.universityDetail.students) }}</div>
-          </div>
-          <div class="rounded-[20px] bg-slate-50 p-4">
-            <div class="text-xs font-bold uppercase tracking-[0.14em] text-slate-400">{{ t('common.international') }}</div>
-            <div class="mt-2 text-lg font-black text-slate-900">{{ compactNumber(catalog.universityDetail.intlStudents) }}</div>
-          </div>
-          <div class="rounded-[20px] bg-slate-50 p-4">
-            <div class="text-xs font-bold uppercase tracking-[0.14em] text-slate-400">{{ t('common.location') }}</div>
-            <div class="mt-2 text-lg font-black text-slate-900">{{ text(catalog.universityDetail.location) }}</div>
-          </div>
-          <div class="rounded-[20px] bg-slate-50 p-4">
-            <div class="text-xs font-bold uppercase tracking-[0.14em] text-slate-400">{{ t('common.qsRank') }}</div>
-            <div class="mt-2 text-lg font-black text-slate-900">#{{ catalog.universityDetail.qsRank }}</div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="overview-grid">
-      <div class="section-card rounded-[28px] p-6">
-        <div class="text-xs font-bold uppercase tracking-[0.18em] text-slate-400">{{ t('university.highlightsTitle') }}</div>
-        <h2 class="section-title mt-2">{{ t('university.highlightsTitle') }}</h2>
-        <ul class="mt-5 grid gap-3 text-sm leading-7 text-slate-600">
-          <li v-for="item in array(catalog.universityDetail.highlights)" :key="item">{{ item }}</li>
-        </ul>
-      </div>
-      <div class="section-card rounded-[28px] p-6">
-        <div class="text-xs font-bold uppercase tracking-[0.18em] text-slate-400">{{ t('university.facilitiesTitle') }}</div>
-        <h2 class="section-title mt-2">{{ t('university.facilitiesTitle') }}</h2>
-        <ul class="mt-5 grid gap-3 text-sm leading-7 text-slate-600">
-          <li v-for="item in array(catalog.universityDetail.facilities)" :key="item">{{ item }}</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="grid gap-4 md:grid-cols-4">
-      <div class="section-card rounded-[24px] p-5">
-        <div class="text-xs font-bold uppercase tracking-[0.14em] text-slate-400">{{ t('common.total') }}</div>
-        <div class="mt-2 text-3xl font-black text-slate-900">{{ catalog.universityDetail.programs.length }}</div>
-        <div class="mt-1 text-sm text-slate-500">{{ t('university.coursesTotal') }}</div>
-      </div>
-      <div class="section-card rounded-[24px] p-5">
-        <div class="text-xs font-bold uppercase tracking-[0.14em] text-slate-400">{{ t('common.bachelor') }}</div>
-        <div class="mt-2 text-3xl font-black text-slate-900">{{ bachelorPrograms.length }}</div>
-        <div class="mt-1 text-sm text-slate-500">{{ t('university.bachelorPrograms') }}</div>
-      </div>
-      <div class="section-card rounded-[24px] p-5">
-        <div class="text-xs font-bold uppercase tracking-[0.14em] text-slate-400">{{ t('common.master') }}</div>
-        <div class="mt-2 text-3xl font-black text-slate-900">{{ masterPrograms.length }}</div>
-        <div class="mt-1 text-sm text-slate-500">{{ t('university.masterPrograms') }}</div>
-      </div>
-      <div class="section-card rounded-[24px] p-5">
-        <div class="text-xs font-bold uppercase tracking-[0.14em] text-slate-400">{{ t('common.phd') }}</div>
-        <div class="mt-2 text-3xl font-black text-slate-900">{{ phdPrograms.length }}</div>
-        <div class="mt-1 text-sm text-slate-500">{{ t('university.phdPrograms') }}</div>
-      </div>
-    </div>
-
-    <div class="section-card rounded-[28px] p-6 md:p-7">
-      <div class="flex flex-col gap-2 md:flex-row md:items-end md:justify-between">
-        <div>
-          <div class="text-xs font-bold uppercase tracking-[0.18em] text-slate-400">{{ t('university.structureTitle') }}</div>
-          <h2 class="section-title mt-2">{{ t('university.structureTitle') }}</h2>
-        </div>
-        <div class="text-sm text-slate-500">{{ t('university.visibleCount', { count: catalog.universityDetail.programs.length }) }}</div>
-      </div>
-      <div class="mt-6 grid gap-8">
-        <section v-for="section in programSections" :key="section.key" class="grid gap-4">
-          <div class="flex items-center justify-between gap-3">
-            <h3 class="text-xl font-black text-slate-900">{{ section.title }}</h3>
-            <span class="info-chip bg-slate-100 text-slate-700">{{ section.items.length }}</span>
-          </div>
-          <div class="program-grid">
-            <RouterLink v-for="program in section.items" :key="program.id" :to="`/programs/${program.slug}`" class="data-card block rounded-[24px] p-5 card-hover">
-              <div class="flex items-start justify-between gap-4">
-                <div>
-                  <div class="text-xs font-bold uppercase tracking-[0.14em] text-slate-400">{{ program.code }}</div>
-                  <h3 class="mt-2 text-xl font-black leading-tight text-slate-900">{{ text(program.name) }}</h3>
-                </div>
-                <span class="info-chip bg-purple-50 text-purple-700">{{ section.shortLabel }}</span>
-              </div>
-              <p class="mt-3 text-sm text-slate-500">{{ text(program.faculty) }}</p>
-              <div class="mt-5 flex flex-wrap gap-2">
-                <span class="filter-chip">CNY {{ formatCurrency(program.annualTuitionCny) }}{{ t('common.perYear') }}</span>
-                <span class="filter-chip">{{ Number(program.durationYears) }} {{ t('calculator.years') }}</span>
-                <span class="filter-chip">IELTS {{ program.languageRequirement.ielts }}+</span>
-              </div>
-              <p class="muted mt-4 text-sm">{{ text(program.description) }}</p>
-            </RouterLink>
-          </div>
-        </section>
-      </div>
-    </div>
+  <section v-else class="container detail-loading">
+    <div class="section-card empty-state">{{ catalog.loading ? t('common.loading') : t('common.noData') }}</div>
   </section>
 </template>
 
 <script setup lang="ts">
-import { computed, onMounted } from "vue";
+import { computed, onMounted, watch } from "vue";
+import type { DegreeLevel, ProgramListItem, UniversityListItem } from "@studymy/shared";
+import { useRoute, useRouter } from "vue-router";
 import { useI18n } from "vue-i18n";
-import { RouterLink } from "vue-router";
 import { useLocaleText } from "../composables/useLocaleText";
 import { useCatalogStore } from "../stores/catalog";
 import { formatCurrency } from "../utils/format";
 
+type UniversityDetailView = UniversityListItem & { programs: ProgramListItem[] };
+
 const props = defineProps<{ slug: string }>();
 const catalog = useCatalogStore();
-const { t, locale } = useI18n();
+const route = useRoute();
+const router = useRouter();
+const { t } = useI18n();
 const { text, array } = useLocaleText();
 
-const bachelorPrograms = computed(() => catalog.universityDetail?.programs.filter((program) => program.level === "bachelor") ?? []);
-const masterPrograms = computed(() => catalog.universityDetail?.programs.filter((program) => program.level === "master") ?? []);
-const phdPrograms = computed(() => catalog.universityDetail?.programs.filter((program) => program.level === "phd") ?? []);
+const detail = computed(() => catalog.universityDetail as UniversityDetailView | null);
+const levelOrder: DegreeLevel[] = ["bachelor", "master", "phd"];
+const programSections = computed(() =>
+  levelOrder
+    .map((level) => ({
+      level,
+      label: sectionLabel(level),
+      items: (detail.value?.programs || []).filter((program) => program.level === level).sort(comparePrograms)
+    }))
+    .filter((section) => section.items.length)
+);
 
-const programSections = computed(() => [
-  { key: "bachelor", title: t('university.bachelorPrograms'), shortLabel: t('degree.bachelor'), items: bachelorPrograms.value },
-  { key: "master", title: t('university.masterPrograms'), shortLabel: t('degree.master'), items: masterPrograms.value },
-  { key: "phd", title: t('university.phdPrograms'), shortLabel: t('degree.phd'), items: phdPrograms.value }
-].filter((section) => section.items.length));
+async function loadDetail() {
+  await catalog.loadUniversity(props.slug);
+  await openQueryProgram();
+}
 
-const introText = computed(() => {
-  if (!catalog.universityDetail) return "";
-  if (catalog.universityDetail.code !== "UM") return text(catalog.universityDetail.description);
+async function openQueryProgram() {
+  const programId = route.query.program;
+  if (!programId || Array.isArray(programId)) return;
+  await catalog.openProgramDetail(programId);
+}
 
-  const copy = {
-    en: "Universiti Malaya is Malaysia's flagship public research university. Located in Kuala Lumpur, it is consistently treated as one of the country's strongest comprehensive universities for business, computing, engineering, medicine, law, science and the humanities, and it remains one of the most referenced choices for students targeting a top Malaysian degree.",
-    ms: "Universiti Malaya ialah universiti penyelidikan awam utama Malaysia. Berpusat di Kuala Lumpur, ia dianggap sebagai antara universiti komprehensif terkuat negara dalam bidang perniagaan, pengkomputeran, kejuruteraan, perubatan, undang-undang, sains dan kemanusiaan, serta kekal sebagai pilihan utama bagi pelajar yang menyasarkan ijazah Malaysia bertaraf tinggi.",
-    "zh-CN": "马来亚大学是马来西亚最具代表性的旗舰公立研究型大学之一，位于吉隆坡。无论是商科、计算机、工程、医学、法学、理科还是人文社科，UM 都属于国际学生申请马来西亚名校时最常被重点对比和优先考虑的综合型大学。",
-    "zh-TW": "馬來亞大學是馬來西亞最具代表性的旗艦公立研究型大學之一，位於吉隆坡。無論是商科、電腦、工程、醫學、法學、理科還是人文社科，UM 都屬於國際學生申請馬來西亞名校時最常被重點對比和優先考慮的綜合型大學。"
-  };
+async function openProgram(program: ProgramListItem) {
+  await catalog.openProgramDetail(program.id);
+  await router.replace({ path: route.path, query: { ...route.query, program: String(program.id) } });
+}
 
-  return copy[locale.value as keyof typeof copy] ?? copy["zh-CN"];
-});
+async function closeProgramModal() {
+  catalog.closeProgramDetail();
+  const nextQuery = { ...route.query };
+  delete nextQuery.program;
+  await router.replace({ path: route.path, query: nextQuery });
+}
 
-const secondaryIntro = computed(() => {
-  if (!catalog.universityDetail || catalog.universityDetail.code !== "UM") return "";
+function goPlanner() {
+  void router.push("/planner");
+}
 
-  const copy = {
-    en: "The site now expands Universiti Malaya to 61 visible programmes across bachelor's, master's and doctoral levels, so students and parents can review a much more realistic academic mix instead of only a few sample entries.",
-    ms: "Laman ini kini mengembangkan Universiti Malaya kepada 61 program yang kelihatan merentas peringkat sarjana muda, sarjana dan kedoktoran, supaya pelajar dan ibu bapa dapat melihat struktur akademik yang jauh lebih realistik berbanding beberapa contoh ringkas sahaja.",
-    "zh-CN": "当前站点已经把马来亚大学扩展到 61 个可见项目，覆盖本科、硕士和博士三个层级，方便学生和家长更真实地查看这所学校的学科结构，而不是只看到少量示例条目。",
-    "zh-TW": "當前站點已經把馬來亞大學擴展到 61 個可見項目，覆蓋本科、碩士和博士三個層級，方便學生和家長更真實地查看這所學校的學科結構，而不是只看到少量示例條目。"
-  };
+function comparePrograms(a: ProgramListItem, b: ProgramListItem) {
+  return a.nameEn.localeCompare(b.nameEn);
+}
 
-  return copy[locale.value as keyof typeof copy] ?? copy["zh-CN"];
-});
+function sectionLabel(level: DegreeLevel) {
+  if (level === "bachelor") return t('university.bachelorPrograms');
+  if (level === "master") return t('university.masterPrograms');
+  return t('university.phdPrograms');
+}
+
+function levelLabel(level: DegreeLevel) {
+  if (level === "bachelor") return t('degree.bachelor');
+  if (level === "master") return t('degree.master');
+  return t('degree.phd');
+}
 
 function compactNumber(value: number) {
   if (value >= 1000) return `${Math.round(value / 1000)}k+`;
   return `${value}`;
 }
 
-onMounted(() => catalog.loadUniversity(props.slug));
+function feeStatus(program: ProgramListItem) {
+  if (program.officialFeeAuditStatus === "matched-official") return "官方已核验";
+  if (program.officialFeeAuditStatus === "not-published") return "官方未公布";
+  return "待复核";
+}
+
+function sourceStatus(status: string) {
+  if (status === "official-verified") return "官方来源已核验";
+  if (status.includes("not-available")) return "官方页已核验但暂不开放";
+  if (status.includes("missing")) return "缺少官方来源";
+  return "待复核";
+}
+
+onMounted(() => {
+  void loadDetail();
+});
+
+watch(() => props.slug, () => {
+  catalog.closeProgramDetail();
+  void loadDetail();
+});
 </script>

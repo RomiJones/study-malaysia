@@ -1,73 +1,53 @@
 <template>
-  <section class="grid gap-6">
-    <div class="section-card rounded-[32px] p-6 md:p-8">
-      <div class="flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
-        <div>
-          <div class="text-xs font-bold uppercase tracking-[0.18em] text-slate-400">{{ t('nav.compare') }}</div>
-          <h1 class="section-title mt-2">{{ t('comparePage.title') }}</h1>
-        </div>
-        <button class="secondary-action" @click="catalog.clearCompare">{{ t('comparePage.clear') }}</button>
+  <section class="compare-page">
+    <div class="section-card compare-page__header">
+      <div>
+        <div class="section-kicker">{{ t('nav.compare') }}</div>
+        <h1 class="section-title">{{ t('comparePage.title') }}</h1>
       </div>
+      <button v-if="compareUniversities.length" class="secondary-action" @click="catalog.clearCompare">{{ t('comparePage.clear') }}</button>
     </div>
 
-    <div v-if="!compareUniversities.length" class="empty-state section-card rounded-[28px] p-8 text-center text-slate-500">
-      {{ t('comparePage.empty') }}
+    <div v-if="catalog.compareMessage" class="app-alert compare-alert">{{ catalog.compareMessage }}</div>
+
+    <div v-if="compareUniversities.length < 2" class="fav-empty section-card">
+      <div class="fav-empty-icon">VS</div>
+      <div class="serif text-xl">请至少选择 2 所院校进行对比</div>
+      <div class="text-slate-500 mt-2">在院校卡片上点击对比按钮，最多可同时比较 4 所。</div>
+      <RouterLink class="primary-action mt-4" to="/">{{ t('home.browseUniversities') }}</RouterLink>
     </div>
 
-    <div v-else class="grid gap-6">
-      <div class="compare-grid">
-        <div v-for="item in compareUniversities" :key="item.id" class="compare-card rounded-[28px] p-6">
-          <div class="text-xs font-bold uppercase tracking-[0.14em] text-slate-400">{{ item.shortName }}</div>
-          <h2 class="mt-2 text-2xl font-black leading-tight text-slate-900">{{ text(item.name) }}</h2>
-          <div class="mt-4 flex flex-wrap gap-2">
-            <span class="info-chip badge-contrast">QS #{{ item.qsRank }}</span>
-            <span class="info-chip bg-slate-100 text-slate-700">{{ t(`ownership.${item.ownership}`) }}</span>
-          </div>
-          <div class="mt-5 grid gap-3 text-sm text-slate-600">
-            <div>{{ t('common.location') }}: {{ text(item.location) }}</div>
-            <div>{{ t('common.tuitionRange') }}: CNY {{ formatCurrency(item.tuitionMinCny) }} - CNY {{ formatCurrency(item.tuitionMaxCny) }}</div>
-            <div>{{ t('comparePage.livingCost') }}: CNY {{ formatCurrency(item.livingCostCny) }}{{ t('common.perYear') }}</div>
-            <div>{{ t('common.languageRequirement') }}: IELTS {{ item.minIelts }}+</div>
-            <div>{{ t('common.programCount') }}: {{ item.programCount }}</div>
-          </div>
-          <p class="muted mt-5 text-sm">{{ text(item.description) }}</p>
-          <div class="mt-5 flex flex-wrap gap-2">
-            <span v-for="highlight in array(item.highlights).slice(0, 3)" :key="highlight" class="filter-chip">{{ highlight }}</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="section-card rounded-[28px] overflow-hidden">
-        <div class="overflow-x-auto">
-          <table class="min-w-full border-collapse text-left text-sm">
-            <thead class="bg-slate-50 text-slate-500">
-              <tr>
-                <th class="px-5 py-4 font-bold">{{ t('comparePage.dimension') }}</th>
-                <th v-for="item in compareUniversities" :key="item.id" class="px-5 py-4 font-bold">{{ item.shortName }}</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr class="border-t border-slate-100">
-                <td class="px-5 py-4 font-semibold text-slate-500">{{ t('common.foundedYear') }}</td>
-                <td v-for="item in compareUniversities" :key="`${item.id}-founded`" class="px-5 py-4">{{ item.foundedYear }}</td>
-              </tr>
-              <tr class="border-t border-slate-100">
-                <td class="px-5 py-4 font-semibold text-slate-500">{{ t('comparePage.region') }}</td>
-                <td v-for="item in compareUniversities" :key="`${item.id}-region`" class="px-5 py-4">{{ text(item.region) }}</td>
-              </tr>
-              <tr class="border-t border-slate-100">
-                <td class="px-5 py-4 font-semibold text-slate-500">{{ t('comparePage.admissionMode') }}</td>
-                <td v-for="item in compareUniversities" :key="`${item.id}-lang`" class="px-5 py-4">{{ item.acceptNoLanguage ? t('comparePage.conditional') : t('comparePage.direct') }}</td>
-              </tr>
-              <tr class="border-t border-slate-100">
-                <td class="px-5 py-4 font-semibold text-slate-500">{{ t('comparePage.website') }}</td>
-                <td v-for="item in compareUniversities" :key="`${item.id}-site`" class="px-5 py-4">
-                  <a :href="item.website" target="_blank" rel="noreferrer" class="font-semibold text-purple-700">{{ item.shortName }}</a>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+    <div v-else class="section-card compare-table-card">
+      <div class="compare-table-scroll">
+        <table class="compare-table">
+          <thead>
+            <tr>
+              <th class="compare-label-col">{{ t('comparePage.dimension') }}</th>
+              <th v-for="item in compareUniversities" :key="item.id">
+                <div class="compare-head-cell">
+                  <div>
+                    <div class="compare-head-name">{{ text(item.name) }}</div>
+                    <div class="compare-head-sub">QS #{{ item.qsRank }} · {{ item.shortName }}</div>
+                  </div>
+                  <button class="compare-remove" @click="catalog.toggleCompare(item.id)">移除</button>
+                </div>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr v-for="row in rows" :key="row.key">
+              <td class="compare-label-col">{{ row.label }}</td>
+              <td v-for="item in compareUniversities" :key="`${row.key}-${item.id}`">
+                <component
+                  :is="row.key === 'detail' ? RouterLink : 'span'"
+                  v-bind="row.key === 'detail' ? { to: `/universities/${item.slug}`, class: 'primary-action compare-detail-link' } : {}"
+                >
+                  {{ row.value(item) }}
+                </component>
+              </td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
   </section>
@@ -75,6 +55,8 @@
 
 <script setup lang="ts">
 import { computed } from "vue";
+import type { UniversityListItem } from "@studymy/shared";
+import { RouterLink } from "vue-router";
 import { useI18n } from "vue-i18n";
 import { useLocaleText } from "../composables/useLocaleText";
 import { useCatalogStore } from "../stores/catalog";
@@ -82,6 +64,31 @@ import { formatCurrency } from "../utils/format";
 
 const catalog = useCatalogStore();
 const { t } = useI18n();
-const { text, array } = useLocaleText();
-const compareUniversities = computed(() => catalog.universities.filter((item) => catalog.compareIds.includes(item.id)));
+const { text } = useLocaleText();
+
+const compareUniversities = computed(() =>
+  catalog.compareIds
+    .map((id) => catalog.universities.find((item) => item.id === id))
+    .filter((item): item is UniversityListItem => Boolean(item))
+);
+
+const rows = computed(() => [
+  { key: "qsRank", label: "QS 排名", value: (item: UniversityListItem) => `QS #${item.qsRank}` },
+  { key: "ownership", label: "院校类型", value: (item: UniversityListItem) => t(`ownership.${item.ownership}`) },
+  { key: "location", label: "所在地", value: (item: UniversityListItem) => text(item.location) },
+  { key: "founded", label: "建校年份", value: (item: UniversityListItem) => `${item.foundedYear}` },
+  { key: "students", label: "在校学生", value: (item: UniversityListItem) => `${formatCurrency(item.students)} 人` },
+  { key: "intlStudents", label: "国际生", value: (item: UniversityListItem) => `${formatCurrency(item.intlStudents)} 人` },
+  {
+    key: "tuition",
+    label: "学费区间",
+    value: (item: UniversityListItem) => `CNY ${formatCurrency(item.tuitionMinCny)} - ${formatCurrency(item.tuitionMaxCny)}`
+  },
+  { key: "living", label: "年生活费", value: (item: UniversityListItem) => `CNY ${formatCurrency(item.livingCostCny)}` },
+  { key: "ielts", label: "最低雅思", value: (item: UniversityListItem) => `IELTS ${item.minIelts}+` },
+  { key: "language", label: "免语言申请", value: (item: UniversityListItem) => item.acceptNoLanguage ? t('common.yes') : t('common.no') },
+  { key: "programs", label: "专业数量", value: (item: UniversityListItem) => `${item.programCount}` },
+  { key: "certified", label: "MQA / 官方认证", value: (item: UniversityListItem) => item.csrCertified ? t('common.yes') : t('common.no') },
+  { key: "detail", label: "操作", value: () => t('common.viewDetails') }
+]);
 </script>
