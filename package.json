@@ -15,11 +15,15 @@
     "preview:admin": "npm --workspace @studymy/admin run preview",
     "build": "npm run build --workspaces",
     "test": "node scripts/run-tests.mjs",
+    "test:e2e": "node scripts/run-e2e.mjs",
     "verify:task013": "node scripts/task013-member-api-verify.mjs",
     "verify:task014": "node scripts/task014-admin-cms-verify.mjs",
     "seed": "npm --workspace @studymy/api run seed",
     "extract:static": "npm --workspace @studymy/api run extract:static",
     "import:static": "npm --workspace @studymy/api run import:static",
     "check:static": "npm --workspace @studymy/api run check:static"
+  },
+  "devDependencies": {
+    "playwright": "^1.60.0"
   }
 }
