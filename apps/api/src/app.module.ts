@@ -10,6 +10,8 @@ import { UniversitiesController } from "./universities/universities.controller.j
 import { UniversitiesService } from "./universities/universities.service.js";
 import { ProgramsController } from "./programs/programs.controller.js";
 import { ProgramsService } from "./programs/programs.service.js";
+import { SearchController } from "./search/search.controller.js";
+import { SearchService } from "./search/search.service.js";
 import { PlannerController } from "./planner/planner.controller.js";
 import { PlannerService } from "./planner/planner.service.js";
 import { FavoritesController } from "./favorites/favorites.controller.js";
@@ -54,6 +56,7 @@ loadEnvFiles();
     AuthController,
     UniversitiesController,
     ProgramsController,
+    SearchController,
     PlannerController,
     FavoritesController,
     AdminController,
@@ -66,6 +69,7 @@ loadEnvFiles();
     AuthService,
     UniversitiesService,
     ProgramsService,
+    SearchService,
     PlannerService,
     FavoritesService,
     AdminAuthService,

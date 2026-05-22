@@ -266,6 +266,81 @@ export interface RecommendationResult {
   annualCostCny: number;
 }
 
+export type SearchSuggestionType = "university" | "program" | "city";
+
+export interface SearchSuggestionItem {
+  type: SearchSuggestionType;
+  id: string;
+  title: string;
+  subtitle: string;
+  highlight: string;
+  score: number;
+  universityId?: number;
+  universitySlug?: string;
+  programId?: number;
+  programSlug?: string;
+}
+
+export interface FilterFacetOption {
+  value: string;
+  label: LocalizedText;
+  count: number;
+}
+
+export interface FilterFacet {
+  key: string;
+  label: LocalizedText;
+  options: FilterFacetOption[];
+}
+
+export interface ActiveFilterItem {
+  key: string;
+  value: string;
+  label: LocalizedText;
+}
+
+export interface PublicCatalogPagination {
+  page: number;
+  pageSize: number;
+  total: number;
+  totalPages: number;
+}
+
+export interface PublicCatalogFacets {
+  resultCount: number;
+  universityResultCount: number;
+  programResultCount: number;
+  facets: FilterFacet[];
+  activeFilters: ActiveFilterItem[];
+}
+
+export interface UniversityProgramGroup {
+  level: DegreeLevel;
+  label: LocalizedText;
+  items: ProgramListItem[];
+  count: number;
+}
+
+export interface UniversityCatalogDetail extends UniversityListItem {
+  programs: ProgramListItem[];
+  programGroups: UniversityProgramGroup[];
+}
+
+export interface ProgramCatalogItem extends ProgramListItem {
+  university: UniversityListItem;
+  annualCostCny: number;
+}
+
+export interface ProgramCatalogDetail extends ProgramCatalogItem {}
+
+export interface PublicCatalogListResponse<T> {
+  items: T[];
+  pagination: PublicCatalogPagination;
+  facets: FilterFacet[];
+  activeFilters: ActiveFilterItem[];
+  total: number;
+}
+
 export interface AuthPayload {
   method: AuthMethod;
   account: string;

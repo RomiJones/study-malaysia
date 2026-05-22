@@ -5,6 +5,49 @@ import type { DegreeLevel, ProgramCategoryCode, RecommendationResult } from "@st
 import { CacheService } from "../common/cache.service.js";
 import { ProgramEntity, UniversityEntity } from "../db/entities.js";
 import { buildRecommendation, isReadyForPublicCatalog, mapProgram, mapUniversity } from "../common/mappers.js";
+import {
+  buildCatalogFacets,
+  mapProgramCatalogItem,
+  matchesProgramFilters,
+  publicReadyPrograms,
+  toListResponse,
+  type PublicCatalogQuery
+} from "../common/public-catalog.js";
+
+export interface ProgramQuery {
+  search?: string;
+  categories?: string[];
+  levels?: string[];
+  ownerships?: string[];
+  types?: string[];
+  institutionTypes?: string[];
+  universityId?: number;
+  acceptNoLanguage?: boolean;
+  qsRankMax?: number;
+  tuitionMin?: number;
+  tuitionMax?: number;
+  budgetCny?: number;
+  ieltsMax?: number;
+  page?: number;
+  pageSize?: number;
+  includeMeta?: boolean;
+}
+
+function normalizeQuery(query: ProgramQuery): PublicCatalogQuery {
+  const typeValues = query.types || [];
+  const ownershipValues = new Set([...(query.ownerships || []), ...typeValues.filter((value) => value === "public" || value === "private")]);
+  const institutionTypeValues = new Set([
+    ...(query.institutionTypes || []),
+    ...typeValues.filter((value) => value === "research" || value === "comprehensive" || value === "applied")
+  ]);
+
+  return {
+    ...query,
+    ownerships: [...ownershipValues] as PublicCatalogQuery["ownerships"],
+    institutionTypes: [...institutionTypeValues] as PublicCatalogQuery["institutionTypes"],
+    levels: query.levels as PublicCatalogQuery["levels"]
+  };
+}
 
 export interface RecommendationQuery {
   level?: DegreeLevel;
@@ -31,35 +74,102 @@ export class ProgramsService {
     this.cacheService = cacheService;
   }
 
-  async list() {
-    const cacheKey = "catalog:programs";
+  async list(query: ProgramQuery = {}) {
+    const normalizedQuery = normalizeQuery(query);
+    const cacheKey = `catalog:programs:${JSON.stringify({ ...normalizedQuery, universityId: query.universityId })}`;
     const cached = await this.cacheService.getJson(cacheKey);
     if (cached) return cached;
 
-    const programs = await this.programsRepository.find({ where: { isPublished: true, publicDisplayStatus: "ready" }, order: { createdAt: "DESC" } });
-    const payload = programs.map(mapProgram);
-    await this.cacheService.setJson(cacheKey, payload, 600);
+    const [programs, universities] = await Promise.all([
+      this.programsRepository.find({ where: { isPublished: true, publicDisplayStatus: "ready" }, relations: { university: true }, order: { createdAt: "DESC" } }),
+      this.universitiesRepository.find({ where: { isPublished: true, publicDisplayStatus: "ready" } })
+    ]);
+    const universityMap = new Map(universities.map((university) => [university.id, university]));
+    for (const program of programs) {
+      if (program.university) universityMap.set(program.universityId, program.university);
+    }
+
+    const readyPrograms = publicReadyPrograms(programs, universityMap);
+    const filtered = readyPrograms.filter((program) => {
+      const university = universityMap.get(program.universityId);
+      if (!university) return false;
+      if (query.universityId && program.universityId !== query.universityId) return false;
+      return matchesProgramFilters(program, university, normalizedQuery);
+    });
+    const filteredUniversities = [...new Set(filtered.map((program) => program.universityId))]
+      .map((id) => universityMap.get(id))
+      .filter((university): university is UniversityEntity => Boolean(university));
+    const facetPayload = buildCatalogFacets(universities, readyPrograms, normalizedQuery, filteredUniversities, filtered);
+    const payload = filtered.map((program) => mapProgramCatalogItem(program, universityMap.get(program.universityId)!));
+    const response = normalizedQuery.includeMeta || normalizedQuery.page || normalizedQuery.pageSize
+      ? toListResponse(payload, normalizedQuery, facetPayload.facets, facetPayload.activeFilters)
+      : payload;
+    await this.cacheService.setJson(cacheKey, response, 600);
+    return response;
+  }
+
+  async getFacets(query: ProgramQuery = {}) {
+    const normalizedQuery = normalizeQuery(query);
+    const cacheKey = `catalog:program-facets:${JSON.stringify({ ...normalizedQuery, universityId: query.universityId })}`;
+    const cached = await this.cacheService.getJson(cacheKey);
+    if (cached) return cached;
+
+    const [programs, universities] = await Promise.all([
+      this.programsRepository.find({ where: { isPublished: true, publicDisplayStatus: "ready" }, relations: { university: true } }),
+      this.universitiesRepository.find({ where: { isPublished: true, publicDisplayStatus: "ready" } })
+    ]);
+    const universityMap = new Map(universities.map((university) => [university.id, university]));
+    for (const program of programs) {
+      if (program.university) universityMap.set(program.universityId, program.university);
+    }
+    const readyPrograms = publicReadyPrograms(programs, universityMap);
+    const filteredPrograms = readyPrograms.filter((program) => {
+      const university = universityMap.get(program.universityId);
+      if (!university) return false;
+      if (query.universityId && program.universityId !== query.universityId) return false;
+      return matchesProgramFilters(program, university, normalizedQuery);
+    });
+    const filteredUniversities = [...new Set(filteredPrograms.map((program) => program.universityId))]
+      .map((id) => universityMap.get(id))
+      .filter((university): university is UniversityEntity => Boolean(university));
+    const payload = buildCatalogFacets(universities, readyPrograms, normalizedQuery, filteredUniversities, filteredPrograms);
+    await this.cacheService.setJson(cacheKey, payload, 300);
     return payload;
   }
 
   async getBySlug(slug: string) {
-    const cacheKey = `catalog:program:${slug}`;
+    return this.getByIdentifier(slug);
+  }
+
+  async getByIdentifier(identifier: string) {
+    const cacheKey = `catalog:program:${identifier}`;
     const cached = await this.cacheService.getJson(cacheKey);
     if (cached) return cached;
 
-    const program = await this.programsRepository.findOne({ where: { slug, isPublished: true, publicDisplayStatus: "ready" } });
+    const numericId = /^\d+$/.test(identifier) ? Number(identifier) : null;
+    const program = await this.programsRepository.findOne({
+      where: numericId
+        ? { id: numericId, isPublished: true, publicDisplayStatus: "ready" }
+        : { slug: identifier, isPublished: true, publicDisplayStatus: "ready" },
+      relations: { university: true }
+    });
     if (!program) {
       throw new NotFoundException("Program not found");
     }
 
-    const university = await this.universitiesRepository.findOneBy({ id: program.universityId, isPublished: true, publicDisplayStatus: "ready" });
+    const university = program.university || await this.universitiesRepository.findOneBy({ id: program.universityId, isPublished: true, publicDisplayStatus: "ready" });
     if (!university) {
       throw new NotFoundException("University not found");
     }
 
     const payload = {
-      ...mapProgram(program),
-      university: mapUniversity(university)
+      ...mapProgramCatalogItem(program, university),
+      directTarget: {
+        universityId: university.id,
+        universitySlug: university.slug,
+        programId: program.id,
+        programSlug: program.slug
+      }
     };
     await this.cacheService.setJson(cacheKey, payload, 600);
     return payload;
