@@ -16,6 +16,8 @@ import { PlannerController } from "./planner/planner.controller.js";
 import { PlannerService } from "./planner/planner.service.js";
 import { FavoritesController } from "./favorites/favorites.controller.js";
 import { FavoritesService } from "./favorites/favorites.service.js";
+import { CompareController } from "./compare/compare.controller.js";
+import { CompareService } from "./compare/compare.service.js";
 import { AdminController } from "./admin/admin.controller.js";
 import { AdminAuthController } from "./admin/admin-auth.controller.js";
 import { AdminAuthService } from "./admin/admin-auth.service.js";
@@ -59,6 +61,7 @@ loadEnvFiles();
     SearchController,
     PlannerController,
     FavoritesController,
+    CompareController,
     AdminController,
     AdminAuthController,
     AdminAccessController
@@ -72,6 +75,7 @@ loadEnvFiles();
     SearchService,
     PlannerService,
     FavoritesService,
+    CompareService,
     AdminAuthService,
     AdminAccessService,
     AdminCmsService,

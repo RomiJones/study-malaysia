@@ -1,9 +1,26 @@
 ﻿import { BadRequestException, Injectable, NotFoundException } from "@nestjs/common";
 import { InjectRepository } from "@nestjs/typeorm";
 import { Repository } from "typeorm";
-import type { MaterialStatus, PlannerProfile, PlannerVisaChecklist } from "@studymy/shared";
+import type { ApplicationStage, LocalizedText, MaterialStatus, PlannerProfile, PlannerVisaChecklist } from "@studymy/shared";
 import { PlannerProfileEntity, PlannerTaskEntity, ProgramEntity, UniversityEntity, UserEntity } from "../db/entities.js";
 import { buildRecommendation, mapPlannerMaterials, mapPlannerProfile, mapPlannerTasks, mapVisaChecklist } from "../common/mappers.js";
+
+interface PlannerTaskInput {
+  universityId: number;
+  programId: number;
+  tier?: Record<string, string>;
+  stage?: ApplicationStage;
+  progress?: number;
+  deadlineNote?: Record<string, string>;
+  nextAction?: Record<string, string>;
+}
+
+interface PlannerLocalStateInput {
+  profile?: Partial<PlannerProfile>;
+  materialProgress?: Record<string, MaterialStatus>;
+  visaChecklist?: Partial<PlannerVisaChecklist>;
+  tasks?: PlannerTaskInput[];
+}
 
 @Injectable()
 export class PlannerService {
@@ -71,6 +88,13 @@ export class PlannerService {
     return this.getDashboard(userId);
   }
 
+  async saveMaterials(userId: number, materialProgress: Record<string, MaterialStatus>) {
+    const profile = await this.ensureProfile(userId);
+    profile.materialProgress = this.normalizeMaterialProgress(materialProgress);
+    await this.profileRepository.save(profile);
+    return this.getDashboard(userId);
+  }
+
   async updateMaterialStatus(userId: number, key: string, status: MaterialStatus) {
     const profile = await this.ensureProfile(userId);
     profile.materialProgress = { ...(profile.materialProgress || {}), [key]: status };
@@ -117,6 +141,60 @@ export class PlannerService {
       })
     );
 
+    return this.getDashboard(userId);
+  }
+
+  async listTasks(userId: number) {
+    const tasks = await this.taskRepository.find({ where: { userId }, order: { createdAt: "DESC" } });
+    return {
+      tasks: mapPlannerTasks(tasks)
+    };
+  }
+
+  async saveTasks(userId: number, taskInputs: PlannerTaskInput[]) {
+    const uniqueInputs = this.uniqueTaskInputs(taskInputs);
+    const builtTasks = [];
+    for (const input of uniqueInputs) {
+      builtTasks.push(await this.buildTaskEntity(userId, input));
+    }
+
+    const existing = await this.taskRepository.find({ where: { userId } });
+    if (existing.length) {
+      await this.taskRepository.remove(existing);
+    }
+    if (builtTasks.length) {
+      await this.taskRepository.save(builtTasks);
+    }
+    return this.getDashboard(userId);
+  }
+
+  async updateTask(userId: number, taskId: number, payload: Partial<PlannerTaskInput>) {
+    const task = await this.taskRepository.findOneBy({ id: taskId, userId });
+    if (!task) throw new NotFoundException("Task not found");
+
+    const universityId = payload.universityId ?? task.universityId;
+    const programId = payload.programId ?? task.programId;
+    if (universityId !== task.universityId || programId !== task.programId) {
+      await this.ensureTaskTarget(universityId, programId);
+      task.universityId = universityId;
+      task.programId = programId;
+    }
+
+    if (payload.tier) task.tier = this.normalizeLocalizedText(payload.tier, task.tier);
+    if (payload.stage) task.stage = payload.stage;
+    if (typeof payload.progress === "number") task.progress = this.clampProgress(payload.progress);
+    if (payload.deadlineNote) task.deadlineNote = this.normalizeLocalizedText(payload.deadlineNote, task.deadlineNote);
+    if (payload.nextAction) task.nextAction = this.normalizeLocalizedText(payload.nextAction, task.nextAction);
+
+    await this.taskRepository.save(task);
+    return this.getDashboard(userId);
+  }
+
+  async deleteTask(userId: number, taskId: number) {
+    const task = await this.taskRepository.findOneBy({ id: taskId, userId });
+    if (task) {
+      await this.taskRepository.remove(task);
+    }
     return this.getDashboard(userId);
   }
 
@@ -177,6 +255,181 @@ export class PlannerService {
     return this.getDashboard(userId);
   }
 
+  async saveVisa(userId: number, payload: Partial<PlannerVisaChecklist>) {
+    const profile = await this.ensureProfile(userId);
+    profile.visaChecklist = { ...this.defaultVisaChecklist(), ...payload };
+    await this.profileRepository.save(profile);
+    return this.getDashboard(userId);
+  }
+
+  async mergeLocalState(userId: number, payload: PlannerLocalStateInput) {
+    const profile = await this.ensureProfile(userId);
+    if (payload.profile) {
+      Object.assign(profile, payload.profile);
+    }
+    if (payload.materialProgress) {
+      profile.materialProgress = {
+        ...(profile.materialProgress || {}),
+        ...this.normalizeMaterialProgress(payload.materialProgress)
+      };
+    }
+    if (payload.visaChecklist) {
+      profile.visaChecklist = { ...(profile.visaChecklist || this.defaultVisaChecklist()), ...payload.visaChecklist };
+    }
+    await this.profileRepository.save(profile);
+
+    const skippedTasks = await this.mergeTasks(userId, payload.tasks || []);
+
+    return {
+      dashboard: await this.getDashboard(userId),
+      skippedTasks,
+      mergeStrategy: {
+        favorites: "Call POST /api/favorites/merge with localStorage universityIds and programIds.",
+        compare: "Call POST /api/compare/merge with localStorage universityIds.",
+        plannerProfile: "Explicit local profile fields overwrite server fields.",
+        materialProgress: "Explicit local material statuses overwrite matching server keys.",
+        visaChecklist: "Explicit local checklist flags overwrite matching server keys.",
+        tasks: "Server tasks are kept first and local tasks are appended by universityId + programId."
+      }
+    };
+  }
+
+  private async buildTaskEntity(userId: number, input: PlannerTaskInput) {
+    await this.ensureTaskTarget(input.universityId, input.programId);
+    const defaults = this.defaultTaskFields();
+    return this.taskRepository.create({
+      userId,
+      universityId: input.universityId,
+      programId: input.programId,
+      tier: this.normalizeLocalizedText(input.tier, defaults.tier),
+      stage: input.stage || defaults.stage,
+      progress: this.clampProgress(input.progress ?? defaults.progress),
+      deadlineNote: this.normalizeLocalizedText(input.deadlineNote, defaults.deadlineNote),
+      nextAction: this.normalizeLocalizedText(input.nextAction, defaults.nextAction)
+    });
+  }
+
+  private async mergeTasks(userId: number, taskInputs: PlannerTaskInput[]) {
+    const current = await this.taskRepository.find({ where: { userId } });
+    const existingKeys = new Set(current.map((task) => `${task.universityId}:${task.programId}`));
+    const additions: PlannerTaskEntity[] = [];
+    const skippedTasks: Array<{ universityId: number; programId: number; reason: string }> = [];
+
+    for (const input of this.uniqueTaskInputs(taskInputs)) {
+      const key = `${input.universityId}:${input.programId}`;
+      if (existingKeys.has(key)) continue;
+      try {
+        additions.push(await this.buildTaskEntity(userId, input));
+        existingKeys.add(key);
+      } catch {
+        skippedTasks.push({ universityId: input.universityId, programId: input.programId, reason: "Target university or program not found" });
+      }
+    }
+
+    if (additions.length) {
+      await this.taskRepository.save(additions);
+    }
+
+    return skippedTasks;
+  }
+
+  private async ensureTaskTarget(universityId: number, programId: number) {
+    if (!Number.isInteger(universityId) || universityId <= 0) {
+      throw new BadRequestException("University id is required");
+    }
+    if (!Number.isInteger(programId) || programId <= 0) {
+      throw new BadRequestException("Program id is required");
+    }
+
+    const [university, program] = await Promise.all([
+      this.universitiesRepository.findOneBy({ id: universityId }),
+      this.programsRepository.findOneBy({ id: programId, universityId })
+    ]);
+    if (!university) throw new NotFoundException("University not found");
+    if (!program) throw new NotFoundException("Program not found");
+  }
+
+  private uniqueTaskInputs(taskInputs: PlannerTaskInput[]) {
+    const seen = new Set<string>();
+    const uniqueInputs: PlannerTaskInput[] = [];
+    for (const input of taskInputs) {
+      const universityId = Number(input.universityId);
+      const programId = Number(input.programId);
+      const key = `${universityId}:${programId}`;
+      if (seen.has(key)) continue;
+      seen.add(key);
+      uniqueInputs.push({ ...input, universityId, programId });
+    }
+    return uniqueInputs;
+  }
+
+  private normalizeMaterialProgress(materialProgress: Record<string, MaterialStatus>) {
+    const normalized: Record<string, MaterialStatus> = {};
+    for (const [key, status] of Object.entries(materialProgress || {})) {
+      if (!key || !this.isMaterialStatus(status)) continue;
+      normalized[key] = status;
+    }
+    return normalized;
+  }
+
+  private isMaterialStatus(status: string): status is MaterialStatus {
+    return status === "draft" || status === "wait" || status === "progress" || status === "done";
+  }
+
+  private clampProgress(progress: number) {
+    return Math.min(100, Math.max(0, Math.round(progress)));
+  }
+
+  private defaultVisaChecklist(): PlannerVisaChecklist {
+    return {
+      offerAccepted: false,
+      depositPaid: false,
+      visaDocsReady: false,
+      preDeparture: false,
+      arrivalReady: false
+    };
+  }
+
+  private normalizeLocalizedText(value: Record<string, string> | undefined, fallback: LocalizedText): LocalizedText {
+    return {
+      en: value?.en || fallback.en,
+      ms: value?.ms || fallback.ms,
+      "zh-CN": value?.["zh-CN"] || fallback["zh-CN"],
+      "zh-TW": value?.["zh-TW"] || fallback["zh-TW"]
+    };
+  }
+
+  private defaultTaskFields(): {
+    tier: LocalizedText;
+    stage: ApplicationStage;
+    progress: number;
+    deadlineNote: LocalizedText;
+    nextAction: LocalizedText;
+  } {
+    return {
+      tier: {
+        en: "New",
+        ms: "New",
+        "zh-CN": "New",
+        "zh-TW": "New"
+      },
+      stage: "draft" as ApplicationStage,
+      progress: 18,
+      deadlineNote: {
+        en: "Confirm shortlist within 7 days.",
+        ms: "Confirm shortlist within 7 days.",
+        "zh-CN": "Confirm shortlist within 7 days.",
+        "zh-TW": "Confirm shortlist within 7 days."
+      },
+      nextAction: {
+        en: "Lock application strategy and material package.",
+        ms: "Lock application strategy and material package.",
+        "zh-CN": "Lock application strategy and material package.",
+        "zh-TW": "Lock application strategy and material package."
+      }
+    };
+  }
+
   private async ensureProfile(userId: number) {
     const user = await this.usersRepository.findOneBy({ id: userId });
     if (!user) throw new NotFoundException("User not found");
@@ -187,13 +440,7 @@ export class PlannerService {
         this.profileRepository.create({
           userId,
           materialProgress: {},
-          visaChecklist: {
-            offerAccepted: false,
-            depositPaid: false,
-            visaDocsReady: false,
-            preDeparture: false,
-            arrivalReady: false
-          }
+          visaChecklist: this.defaultVisaChecklist()
         })
       );
     }

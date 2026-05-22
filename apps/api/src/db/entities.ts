@@ -71,6 +71,9 @@ export class UserEntity {
   @OneToMany(() => FavoriteEntity, (favorite) => favorite.user)
   favorites?: Relation<FavoriteEntity[]>;
 
+  @OneToMany(() => CompareItemEntity, (compareItem) => compareItem.user)
+  compareItems?: Relation<CompareItemEntity[]>;
+
   @OneToMany(() => PlannerTaskEntity, (task) => task.user)
   plannerTasks?: Relation<PlannerTaskEntity[]>;
 
@@ -697,6 +700,7 @@ export class PlannerProfileEntity {
 }
 
 @Entity({ name: "favorites" })
+@Index(["userId", "favoriteType", "targetId"], { unique: true })
 export class FavoriteEntity {
   @PrimaryGeneratedColumn()
   id!: number;
@@ -713,6 +717,33 @@ export class FavoriteEntity {
 
   @Column({ type: "int" })
   targetId!: number;
+
+  @CreateDateColumn()
+  createdAt!: Date;
+}
+
+@Entity({ name: "compare_items" })
+@Index(["userId", "universityId"], { unique: true })
+export class CompareItemEntity {
+  @PrimaryGeneratedColumn()
+  id!: number;
+
+  @Column({ type: "int" })
+  userId!: number;
+
+  @ManyToOne(() => UserEntity, (user) => user.compareItems, { onDelete: "CASCADE" })
+  @JoinColumn({ name: "userId" })
+  user!: Relation<UserEntity>;
+
+  @Column({ type: "int" })
+  universityId!: number;
+
+  @ManyToOne(() => UniversityEntity, { onDelete: "CASCADE" })
+  @JoinColumn({ name: "universityId" })
+  university!: Relation<UniversityEntity>;
+
+  @Column({ type: "int", default: 0 })
+  sortOrder!: number;
 
   @CreateDateColumn()
   createdAt!: Date;
@@ -1043,6 +1074,7 @@ export const ALL_ENTITIES = [
   ProgramEntity,
   PlannerProfileEntity,
   FavoriteEntity,
+  CompareItemEntity,
   PlannerTaskEntity,
   ContentBlockEntity,
   StudentApplicationEntity,
