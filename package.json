@@ -14,6 +14,7 @@
     "dev:admin": "npm --workspace @studymy/admin run dev",
     "preview:admin": "npm --workspace @studymy/admin run preview",
     "build": "npm run build --workspaces",
+    "test": "node scripts/run-tests.mjs",
     "verify:task013": "node scripts/task013-member-api-verify.mjs",
     "verify:task014": "node scripts/task014-admin-cms-verify.mjs",
     "seed": "npm --workspace @studymy/api run seed",

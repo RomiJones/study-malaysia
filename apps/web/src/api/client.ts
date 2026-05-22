@@ -1,13 +1,16 @@
-﻿export const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || "http://localhost:3000/api";
+const env = (import.meta as ImportMeta & { env?: Record<string, string | undefined> }).env || {};
+
+export const API_BASE_URL = env.VITE_API_BASE_URL || "http://localhost:3000/api";
 
 export async function apiFetch<T>(path: string, options: RequestInit = {}, token?: string): Promise<T> {
+  const { headers, ...requestOptions } = options;
   const response = await fetch(`${API_BASE_URL}${path}`, {
+    ...requestOptions,
     headers: {
       "Content-Type": "application/json",
       ...(token ? { Authorization: `Bearer ${token}` } : {}),
-      ...(options.headers || {})
-    },
-    ...options
+      ...(headers || {})
+    }
   });
 
   if (!response.ok) {

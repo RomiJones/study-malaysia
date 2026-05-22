@@ -1,0 +1,16 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "types": ["node", "vite/client"],
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["apps/admin/src/*"],
+      "@studymy/shared": ["packages/shared/src"],
+      "@studymy/shared/*": ["packages/shared/src/*"]
+    }
+  }
+}
