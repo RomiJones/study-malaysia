@@ -1,0 +1,224 @@
+﻿import type {
+  PlannerApplicationItem,
+  PlannerMaterialItem,
+  PlannerProfile,
+  PlannerVisaChecklist,
+  ProgramListItem,
+  RecommendationResult,
+  UniversityListItem
+} from "@studymy/shared";
+import { translateArray } from "./i18n.js";
+import {
+  ContentBlockEntity,
+  PlannerProfileEntity,
+  PlannerTaskEntity,
+  ProgramEntity,
+  UniversityEntity
+} from "../db/entities.js";
+
+export function mapUniversity(entity: UniversityEntity): UniversityListItem {
+  return {
+    id: entity.id,
+    slug: entity.slug,
+    code: entity.code,
+    name: entity.name,
+    shortName: entity.shortName,
+    nameEn: entity.name.en,
+    logoUrl: entity.logoUrl,
+    imageUrl: entity.imageUrl,
+    color: entity.color,
+    qsRank: entity.qsRank,
+    qsAsiaRank: entity.qsAsiaRank,
+    location: entity.location,
+    region: entity.region,
+    ownership: entity.ownership,
+    institutionType: entity.institutionType,
+    foundedYear: entity.foundedYear,
+    students: entity.students,
+    intlStudents: entity.intlStudents,
+    csrCertified: entity.csrCertified,
+    description: entity.description,
+    website: entity.website,
+    admissionEmail: entity.admissionEmail,
+    tuitionMinCny: entity.tuitionMinCny,
+    tuitionMaxCny: entity.tuitionMaxCny,
+    livingCostCny: entity.livingCostCny,
+    minIelts: entity.minIelts,
+    acceptNoLanguage: entity.acceptNoLanguage,
+    facilities: entity.facilities,
+    highlights: entity.highlights,
+    programCount: entity.programs?.length ?? entity.programCount ?? 0
+  };
+}
+
+export function mapProgram(entity: ProgramEntity): ProgramListItem {
+  return {
+    id: entity.id,
+    universityId: entity.universityId,
+    slug: entity.slug,
+    code: entity.code,
+    name: entity.name,
+    nameEn: entity.name.en,
+    level: entity.level,
+    category: entity.category,
+    faculty: entity.faculty,
+    durationYears: entity.durationYears,
+    annualTuitionCny: entity.annualTuitionCny,
+    intakeMonths: entity.intakeMonths,
+    languageRequirement: entity.languageRequirement,
+    requirement: entity.requirement,
+    applicationDocs: entity.applicationDocs,
+    curriculum: entity.curriculum,
+    careers: entity.careers,
+    specializations: entity.specializations,
+    description: entity.description
+  };
+}
+
+export function mapPlannerProfile(entity?: PlannerProfileEntity | null): PlannerProfile {
+  return {
+    level: entity?.level ?? "master",
+    targetCategory: entity?.targetCategory ?? "it",
+    budgetCny: entity?.budgetCny ?? 80000,
+    gpa: entity?.gpa ?? 3,
+    ielts: entity?.ielts ?? 5.5,
+    experience: entity?.experience ?? "0-1 years",
+    acceptNoLanguage: entity?.acceptNoLanguage ?? true
+  };
+}
+
+export function mapPlannerMaterials(entity?: PlannerProfileEntity | null): PlannerMaterialItem[] {
+  const profile = mapPlannerProfile(entity);
+  const defaults: PlannerMaterialItem[] = [
+    {
+      key: "passport",
+      name: { en: "Passport Scan", ms: "Imbasan Pasport", "zh-CN": "护照首页扫描件", "zh-TW": "護照首頁掃描件" },
+      note: { en: "Keep at least 18 months validity.", ms: "Pastikan sah sekurang-kurangnya 18 bulan.", "zh-CN": "建议有效期不少于 18 个月。", "zh-TW": "建議有效期不少於 18 個月。" },
+      status: entity?.materialProgress?.passport ?? "done"
+    },
+    {
+      key: "photo",
+      name: { en: "Passport Photo", ms: "Foto Pasport", "zh-CN": "白底证件照", "zh-TW": "白底證件照" },
+      note: { en: "Use one naming convention across uploads.", ms: "Gunakan format nama fail yang konsisten.", "zh-CN": "建议统一命名上传照片。", "zh-TW": "建議統一命名上傳照片。" },
+      status: entity?.materialProgress?.photo ?? "progress"
+    },
+    {
+      key: "transcript",
+      name: { en: "Academic Transcript", ms: "Transkrip Akademik", "zh-CN": "成绩单", "zh-TW": "成績單" },
+      note: { en: "Prepare English or bilingual versions.", ms: "Sediakan versi Inggeris atau dwibahasa.", "zh-CN": "建议准备英文版或中英双语。", "zh-TW": "建議準備英文版或中英雙語。" },
+      status: entity?.materialProgress?.transcript ?? "progress"
+    },
+    {
+      key: "english",
+      name: { en: "English Test Report", ms: "Laporan Ujian Bahasa Inggeris", "zh-CN": "英语成绩单", "zh-TW": "英語成績單" },
+      note: { en: "You can still shortlist conditional-offer schools before the score is ready.", ms: "Anda masih boleh menyenarai pendek program conditional offer sebelum skor siap.", "zh-CN": "分数未出前也可以先筛选支持 conditional offer 的项目。", "zh-TW": "分數未出前也可以先篩選支持 conditional offer 的項目。" },
+      status: entity?.materialProgress?.english ?? "wait"
+    }
+  ];
+
+  const levelSpecific: PlannerMaterialItem[] = profile.level === "bachelor"
+    ? [
+        {
+          key: "graduation",
+          name: { en: "Graduation Certificate", ms: "Sijil Tamat Pengajian", "zh-CN": "高中毕业证明", "zh-TW": "高中畢業證明" },
+          note: { en: "Use an enrolment proof if not graduated yet.", ms: "Gunakan surat pengesahan belajar jika belum tamat.", "zh-CN": "未毕业可先用在读证明替代。", "zh-TW": "未畢業可先用在讀證明替代。" },
+          status: entity?.materialProgress?.graduation ?? "wait"
+        },
+        {
+          key: "studyplan",
+          name: { en: "Personal Statement", ms: "Pernyataan Peribadi", "zh-CN": "个人陈述", "zh-TW": "個人陳述" },
+          note: { en: "Explain why Malaysia and why this major.", ms: "Terangkan sebab memilih Malaysia dan program ini.", "zh-CN": "重点说明为什么选择马来西亚和该专业。", "zh-TW": "重點說明為什麼選擇馬來西亞和該專業。" },
+          status: entity?.materialProgress?.studyplan ?? "draft"
+        }
+      ]
+    : profile.level === "master"
+      ? [
+          {
+            key: "degree",
+            name: { en: "Degree Certificates", ms: "Sijil Ijazah", "zh-CN": "本科毕业证与学位证", "zh-TW": "本科畢業證與學位證" },
+            note: { en: "Keep Chinese and English versions aligned.", ms: "Pastikan versi Cina dan Inggeris konsisten.", "zh-CN": "中英文版本信息需要保持一致。", "zh-TW": "中英文版本資訊需要保持一致。" },
+            status: entity?.materialProgress?.degree ?? "progress"
+          },
+          {
+            key: "studyplan",
+            name: { en: "Study Plan", ms: "Pelan Pengajian", "zh-CN": "学习计划 / 个人陈述", "zh-TW": "學習計畫 / 個人陳述" },
+            note: { en: "Show academic fit and career goals.", ms: "Jelaskan kesesuaian akademik dan matlamat kerjaya.", "zh-CN": "重点体现学术匹配和职业目标。", "zh-TW": "重點體現學術匹配和職業目標。" },
+            status: entity?.materialProgress?.studyplan ?? "draft"
+          },
+          {
+            key: "recommendation",
+            name: { en: "Recommendation Letters", ms: "Surat Rujukan", "zh-CN": "推荐信", "zh-TW": "推薦信" },
+            note: { en: "Academic referees are preferred.", ms: "Pensyarah atau penyelia akademik lebih diutamakan.", "zh-CN": "优先使用学术导师或直属上级。", "zh-TW": "優先使用學術導師或直屬上級。" },
+            status: entity?.materialProgress?.recommendation ?? "wait"
+          }
+        ]
+      : [
+          {
+            key: "master-degree",
+            name: { en: "Master's Degree Package", ms: "Dokumen Ijazah Sarjana", "zh-CN": "硕士阶段完整材料", "zh-TW": "碩士階段完整材料" },
+            note: { en: "Include transcript and degree certificate.", ms: "Sertakan transkrip dan sijil sarjana.", "zh-CN": "需包含成绩单与学位证明。", "zh-TW": "需包含成績單與學位證明。" },
+            status: entity?.materialProgress?.["master-degree"] ?? "progress"
+          },
+          {
+            key: "research-plan",
+            name: { en: "Research Proposal", ms: "Cadangan Penyelidikan", "zh-CN": "研究计划书", "zh-TW": "研究計畫書" },
+            note: { en: "Keep the topic and supervisor direction specific.", ms: "Pastikan topik dan arah penyelia jelas.", "zh-CN": "建议聚焦明确主题和导师方向。", "zh-TW": "建議聚焦明確主題和導師方向。" },
+            status: entity?.materialProgress?.["research-plan"] ?? "draft"
+          }
+        ];
+
+  return defaults.concat(levelSpecific);
+}
+
+export function mapPlannerTasks(tasks: PlannerTaskEntity[]): PlannerApplicationItem[] {
+  return tasks.map((task) => ({
+    id: task.id,
+    universityId: task.universityId,
+    programId: task.programId,
+    tier: task.tier,
+    stage: task.stage,
+    progress: task.progress,
+    deadlineNote: task.deadlineNote,
+    nextAction: task.nextAction
+  }));
+}
+
+export function mapVisaChecklist(entity?: PlannerProfileEntity | null): PlannerVisaChecklist {
+  return entity?.visaChecklist ?? {
+    offerAccepted: false,
+    depositPaid: false,
+    visaDocsReady: false,
+    preDeparture: false,
+    arrivalReady: false
+  };
+}
+
+export function mapContentBlock(entity: ContentBlockEntity) {
+  return {
+    id: entity.id,
+    key: entity.key,
+    title: entity.title,
+    body: entity.body
+  };
+}
+
+export function buildRecommendation(
+  university: UniversityEntity,
+  program: ProgramEntity,
+  score: number,
+  reasons: RecommendationResult["reasons"]
+): RecommendationResult {
+  return {
+    score,
+    reasons,
+    university: mapUniversity(university),
+    program: mapProgram(program),
+    annualCostCny: program.annualTuitionCny + university.livingCostCny
+  };
+}
+
+export function textContains(value: UniversityEntity | ProgramEntity, search: string): boolean {
+  const query = search.toLowerCase();
+  const source = JSON.stringify(value).toLowerCase();
+  return source.includes(query);
+}

@@ -1,0 +1,12 @@
+node_modules
+dist
+.next
+.turbo
+coverage
+.DS_Store
+.env
+.env.local
+apps/api/uploads
+*.log
+.playwright-cli
+output

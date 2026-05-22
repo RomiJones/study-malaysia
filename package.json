@@ -1,0 +1,19 @@
+{
+  "name": "study-malaysia",
+  "private": true,
+  "version": "0.1.0",
+  "workspaces": [
+    "apps/api",
+    "apps/web",
+    "apps/admin",
+    "packages/shared"
+  ],
+  "scripts": {
+    "dev:api": "npm --workspace @studymy/api run start:dev",
+    "dev:web": "npm --workspace @studymy/web run dev",
+    "dev:admin": "npm --workspace @studymy/admin run dev",
+    "preview:admin": "npm --workspace @studymy/admin run preview",
+    "build": "npm run build --workspaces",
+    "seed": "npm --workspace @studymy/api run seed"
+  }
+}
