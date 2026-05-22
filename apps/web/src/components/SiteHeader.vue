@@ -1,42 +1,38 @@
-﻿<template>
+<template>
   <header class="site-header">
     <div class="header-inner">
-      <div class="header-bar">
-        <div class="header-trust-copy">{{ t('header.officialData') }}</div>
-        <div class="header-trust-copy header-trust-copy--muted">{{ t('header.privateAdvisory') }}</div>
-      </div>
-
-      <div class="site-header-panel">
-        <RouterLink to="/" class="header-brand-link">
-          <div class="header-brand-mark">SM</div>
-          <div class="header-brand-copy">
-            <div class="header-brand-title">StudyMY</div>
-            <div class="header-brand-subtitle">{{ t('header.platform') }}</div>
+      <RouterLink to="/" class="header-brand-link">
+        <div class="header-brand-mark">SM</div>
+        <div class="header-brand-copy">
+          <div class="header-brand-title">
+            <span>StudyMY</span>
+            <span class="header-brand-badge">2026</span>
           </div>
-        </RouterLink>
-
-        <nav class="site-nav" aria-label="Primary">
-          <component
-            :is="item.to ? RouterLink : 'button'"
-            v-for="item in menuItems"
-            :key="item.key"
-            :to="item.to"
-            class="nav-link"
-            :class="{ active: item.to ? isActive(item.to) : false }"
-            type="button"
-            @click="handleMenuClick(item)"
-          >
-            <span class="nav-link__label">{{ item.label }}</span>
-          </component>
-        </nav>
-
-        <div class="header-actions">
-          <select v-model="locale" class="shell-select" @change="switchLocale">
-            <option v-for="option in localeOptions" :key="option.value" :value="option.value">{{ option.label }}</option>
-          </select>
-          <RouterLink v-if="session.isLoggedIn" class="primary-action" to="/member">{{ session.user?.displayName || t('nav.member') }}</RouterLink>
-          <button v-else class="primary-action" @click="$emit('open-auth', 'login')">{{ t('nav.login') }}</button>
+          <div class="header-brand-subtitle">{{ t('header.platform') }}</div>
         </div>
+      </RouterLink>
+
+      <nav class="site-nav" aria-label="Primary">
+        <component
+          :is="item.to ? RouterLink : 'button'"
+          v-for="item in menuItems"
+          :key="item.key"
+          :to="item.to"
+          class="nav-link"
+          :class="{ active: item.to ? isActive(item.to) : false }"
+          type="button"
+          @click="handleMenuClick(item)"
+        >
+          <span class="nav-link__label">{{ item.label }}</span>
+        </component>
+      </nav>
+
+      <div class="header-actions">
+        <select v-model="locale" class="shell-select" @change="switchLocale">
+          <option v-for="option in localeOptions" :key="option.value" :value="option.value">{{ option.label }}</option>
+        </select>
+        <RouterLink v-if="session.isLoggedIn" class="primary-action" to="/member">{{ session.user?.displayName || t('nav.member') }}</RouterLink>
+        <button v-else class="primary-action" @click="$emit('open-auth', 'login')">{{ t('nav.login') }}</button>
       </div>
     </div>
   </header>

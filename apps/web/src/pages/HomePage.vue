@@ -1,6 +1,10 @@
-﻿<template>
+<template>
   <section class="home-page">
     <section class="hero-panel">
+      <div class="hero-noise"></div>
+      <div class="hero-dots"></div>
+      <div class="hero-glow"></div>
+
       <div class="hero-panel__content">
         <div class="hero-panel__main">
           <div class="eyebrow-pill">{{ t('home.badge', { count: catalog.homeMeta?.stats.universityCount ?? 0 }) }}</div>
@@ -10,9 +14,24 @@
           </h1>
           <p class="hero-description">{{ t('home.subtitle') }}</p>
 
-          <div class="hero-actions">
-            <button class="primary-action" @click="scrollToCatalog">{{ t('home.browseUniversities') }}</button>
-            <RouterLink class="secondary-action" to="/planner">{{ t('nav.planner') }}</RouterLink>
+          <div class="search-wrap">
+            <div class="search-inner">
+              <span class="search-icon">⌕</span>
+              <input
+                v-model="catalog.search"
+                class="search-input"
+                :placeholder="t('home.searchLead')"
+                @keydown.enter="scrollToCatalog"
+              />
+              <button class="search-btn" @click="scrollToCatalog">{{ t('common.searchAction') }}</button>
+            </div>
+          </div>
+
+          <div class="quick-picks">
+            <span class="quick-picks__label">{{ t('home.quickPick') }}</span>
+            <button v-for="tag in quickTags" :key="`${tag.type}-${tag.value}`" class="tag-pill" @click="applyQuickTag(tag)">
+              {{ tag.label }}
+            </button>
           </div>
 
           <div class="hero-metrics">
@@ -28,64 +47,21 @@
               <div class="hero-metric-card__value">QS {{ catalog.homeMeta?.stats.bestQsRank ?? '--' }}</div>
               <div class="hero-metric-card__label">{{ t('home.statsBestRank') }}</div>
             </article>
-            <article class="hero-metric-card hero-metric-card--accent">
+            <article class="hero-metric-card">
               <div class="hero-metric-card__value">{{ t('common.official') }}</div>
               <div class="hero-metric-card__label">{{ t('home.statsSource') }}</div>
             </article>
           </div>
         </div>
-
-        <aside class="hero-panel__aside">
-          <div class="brief-card">
-            <div class="brief-card__eyebrow">{{ t('home.strategyTitle') }}</div>
-            <h2 class="brief-card__title">{{ t('home.trustTitle') }}</h2>
-            <p class="brief-card__body">{{ t('home.strategyBody') }}</p>
-            <ul class="brief-list">
-              <li>{{ t('home.trustPointOne') }}</li>
-              <li>{{ t('home.trustPointTwo') }}</li>
-              <li>{{ t('home.trustPointThree') }}</li>
-            </ul>
-          </div>
-        </aside>
-      </div>
-    </section>
-
-    <section class="search-panel section-card">
-      <div class="search-panel__header">
-        <div>
-          <div class="section-kicker">{{ t('common.decisionReady') }}</div>
-          <h2 class="section-title">{{ t('home.ctaTitle') }}</h2>
-        </div>
-        <p class="section-copy">{{ t('home.ctaBody') }}</p>
-      </div>
-
-      <div class="search-panel__form">
-        <label class="search-field">
-          <span>{{ t('common.search') }}</span>
-          <input
-            v-model="catalog.search"
-            class="search-field__input"
-            :placeholder="t('home.searchLead')"
-            @keydown.enter="scrollToCatalog"
-          />
-        </label>
-        <button class="primary-action primary-action--wide" @click="scrollToCatalog">{{ t('common.searchAction') }}</button>
-      </div>
-
-      <div class="quick-picks">
-        <span class="quick-picks__label">{{ t('home.quickPick') }}</span>
-        <button v-for="tag in quickTags" :key="tag.value" class="tag-pill" @click="applyQuickTag(tag)">
-          {{ tag.label }}
-        </button>
       </div>
     </section>
 
     <section class="home-layout" ref="catalogSectionRef">
       <aside class="filter-panel section-card">
         <div class="filter-panel__header">
-          <div>
-            <div class="section-kicker">{{ t('common.shortlist') }}</div>
-            <h2 class="section-title">{{ t('home.filtersTitle') }}</h2>
+          <div class="filter-panel__title">
+            <span class="filter-panel__icon">F</span>
+            <span>{{ t('home.filtersTitle') }}</span>
           </div>
           <button class="ghost-action" @click="resetFilters">{{ t('common.reset') }}</button>
         </div>
@@ -94,22 +70,11 @@
           <div class="field-shell">
             <span>{{ t('home.ownership') }}</span>
             <div class="chip-row">
-              <button class="filter-chip" :class="{ active: ownership === 'public' }" @click="ownership = ownership === 'public' ? '' : 'public'">{{ t('ownership.public') }}</button>
-              <button class="filter-chip" :class="{ active: ownership === 'private' }" @click="ownership = ownership === 'private' ? '' : 'private'">{{ t('ownership.private') }}</button>
-            </div>
-          </div>
-
-          <div class="field-shell">
-            <span>{{ t('home.category') }}</span>
-            <div class="chip-row">
-              <button
-                v-for="category in categoryOptions"
-                :key="category.value"
-                class="filter-chip"
-                :class="{ active: catalog.categories.includes(category.value) }"
-                @click="toggleArrayFilter(catalog.categories, category.value)"
-              >
-                {{ category.label }}
+              <button class="filter-chip" :class="{ active: ownership === 'public' }" @click="ownership = ownership === 'public' ? '' : 'public'">
+                {{ t('ownership.public') }}
+              </button>
+              <button class="filter-chip" :class="{ active: ownership === 'private' }" @click="ownership = ownership === 'private' ? '' : 'private'">
+                {{ t('ownership.private') }}
               </button>
             </div>
           </div>
@@ -120,7 +85,7 @@
               <button
                 v-for="level in levelOptions"
                 :key="level.value"
-                class="filter-chip"
+                class="filter-chip filter-chip--level"
                 :class="{ active: catalog.levels.includes(level.value) }"
                 @click="toggleArrayFilter(catalog.levels, level.value)"
               >
@@ -128,21 +93,6 @@
               </button>
             </div>
           </div>
-
-          <div class="field-shell">
-            <span>{{ t('home.language') }}</span>
-            <button class="filter-chip filter-chip--block" :class="{ active: catalog.acceptNoLanguage }" @click="catalog.acceptNoLanguage = !catalog.acceptNoLanguage">
-              {{ t('home.noLanguage') }}
-            </button>
-          </div>
-
-          <label class="field-shell">
-            <span>{{ t('home.tuition') }}</span>
-            <div class="range-row">
-              <input v-model.number="catalog.tuitionMin" type="number" :placeholder="t('home.tuitionMin')" />
-              <input v-model.number="catalog.tuitionMax" type="number" :placeholder="t('home.tuitionMax')" />
-            </div>
-          </label>
 
           <label class="field-shell">
             <span>{{ t('home.qsTop') }}</span>
@@ -157,10 +107,48 @@
             </select>
           </label>
 
-          <div class="filter-summary">
-            <div class="filter-summary__count">{{ catalog.filteredUniversities.length }}</div>
-            <div class="filter-summary__label">{{ t('home.matchCount', { count: catalog.filteredUniversities.length }) }}</div>
+          <label class="field-shell">
+            <span>{{ t('home.tuition') }}</span>
+            <div class="range-row">
+              <input v-model.number="catalog.tuitionMin" type="number" :placeholder="t('home.tuitionMin')" />
+              <input v-model.number="catalog.tuitionMax" type="number" :placeholder="t('home.tuitionMax')" />
+            </div>
+          </label>
+
+          <div class="field-shell">
+            <span>{{ t('home.category') }}</span>
+            <div class="chip-row">
+              <button
+                v-for="category in categoryOptions"
+                :key="category.value"
+                class="filter-chip filter-chip--category"
+                :class="{ active: catalog.categories.includes(category.value) }"
+                @click="toggleArrayFilter(catalog.categories, category.value)"
+              >
+                {{ category.label }}
+              </button>
+            </div>
           </div>
+
+          <div class="field-shell">
+            <span>{{ t('home.language') }}</span>
+            <button class="filter-chip filter-chip--block" :class="{ active: catalog.acceptNoLanguage }" @click="catalog.acceptNoLanguage = !catalog.acceptNoLanguage">
+              {{ t('home.noLanguage') }}
+            </button>
+          </div>
+        </div>
+
+        <div v-if="activeFilters.length" class="active-strip">
+          <span v-for="item in activeFilters" :key="item.key" class="active-tag">
+            {{ item.label }}
+            <button class="active-tag-x" @click="removeFilter(item.key)">×</button>
+          </span>
+          <button class="clear-all-btn" @click="resetFilters">{{ t('common.reset') }}</button>
+        </div>
+
+        <div class="filter-summary">
+          <div class="filter-summary__count">{{ catalog.filteredUniversities.length }}</div>
+          <div class="filter-summary__label">{{ t('home.matchCount', { count: catalog.filteredUniversities.length }) }}</div>
         </div>
       </aside>
 
@@ -188,10 +176,9 @@
 
 <script setup lang="ts">
 import { computed, ref } from "vue";
-import { RouterLink } from "vue-router";
-import { useI18n } from "vue-i18n";
 import UniversityCard from "../components/UniversityCard.vue";
 import { useCatalogStore } from "../stores/catalog";
+import { useI18n } from "vue-i18n";
 
 const catalog = useCatalogStore();
 const { t } = useI18n();
@@ -229,6 +216,39 @@ const quickTags = computed(() => [
   { type: "level", value: "phd", label: t('degree.phd') }
 ] as const);
 
+const activeFilters = computed(() => {
+  const categoryLabels = new Map(categoryOptions.value.map((item) => [item.value, item.label]));
+  const levelLabels = new Map(levelOptions.value.map((item) => [item.value, item.label]));
+  const items: Array<{ key: string; label: string }> = [];
+
+  if (ownership.value) {
+    items.push({ key: `ownership:${ownership.value}`, label: ownership.value === "public" ? t('ownership.public') : t('ownership.private') });
+  }
+  for (const value of catalog.levels) {
+    items.push({ key: `level:${value}`, label: levelLabels.get(value) || value });
+  }
+  for (const value of catalog.categories) {
+    items.push({ key: `category:${value}`, label: categoryLabels.get(value) || value });
+  }
+  if (catalog.qsRankMax) {
+    items.push({ key: "qs", label: `Top ${catalog.qsRankMax}` });
+  }
+  if (catalog.tuitionMin || catalog.tuitionMax) {
+    items.push({
+      key: "tuition",
+      label: `${catalog.tuitionMin || 0} - ${catalog.tuitionMax || t('home.unlimited')} CNY`
+    });
+  }
+  if (catalog.acceptNoLanguage) {
+    items.push({ key: "language", label: t('home.noLanguage') });
+  }
+  if (catalog.search.trim()) {
+    items.push({ key: "search", label: catalog.search.trim() });
+  }
+
+  return items;
+});
+
 function toggleArrayFilter(target: string[], value: string) {
   const index = target.indexOf(value);
   if (index >= 0) target.splice(index, 1);
@@ -243,6 +263,20 @@ function applyQuickTag(tag: (typeof quickTags.value)[number]) {
     catalog.levels = [tag.value];
   }
   scrollToCatalog();
+}
+
+function removeFilter(key: string) {
+  const [type, value] = key.split(":");
+  if (type === "ownership") catalog.ownerships = [];
+  if (type === "level") catalog.levels = catalog.levels.filter((item) => item !== value);
+  if (type === "category") catalog.categories = catalog.categories.filter((item) => item !== value);
+  if (type === "qs") catalog.qsRankMax = null;
+  if (type === "tuition") {
+    catalog.tuitionMin = null;
+    catalog.tuitionMax = null;
+  }
+  if (type === "language") catalog.acceptNoLanguage = false;
+  if (type === "search") catalog.search = "";
 }
 
 function resetFilters() {

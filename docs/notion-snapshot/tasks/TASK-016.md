@@ -2,7 +2,7 @@
 
 - **任务编号**: TASK-016
 - **任务标题**: 用户端视觉基线和页面骨架 1:1 落地
-- **状态**: 可开始
+- **状态**: 待评审
 - **优先级**: 高
 - **任务类型**: 前端
 - **负责人**: Codex
@@ -10,8 +10,8 @@
 - **关联技术方案**: 技术方案
 - **实现说明**: 本任务允许修改业务代码。以 `D:\mydev\StudyMY_UM_v58_na_display_tidy.html` 和 TASK-002 视觉规范为基准，重构用户端全局视觉 token、字体、颜色、布局、Header、Hero、统计栏、筛选侧栏骨架、弹窗基线和响应式断点；本任务不完成全部业务交互。
 - **测试计划**: 运行 `npm run build`；启动用户端并用浏览器截图对比静态 HTML 关键首屏。
-- **验证结果**:
-- **阻塞说明**:
+- **验证结果**: `npm run build` 通过；已用 Playwright 生成静态 HTML 与 Vue 用户端首屏截图，截图位于 `output/playwright/task016-20260523-static-home-1440.png`、`output/playwright/task016-20260523-web-home-1440.png`、`output/playwright/task016-20260523-web-home-mobile.png`。
+- **阻塞说明**: 无。
 
 ## 依赖任务
 - TASK-012
@@ -26,3 +26,17 @@
 ## 关联 Commit
 
 ## 执行记录
+
+### 2026-05-22T17:57:09.907Z - 自动状态更新
+
+- **状态**: 进行中
+- **说明**: 自动化运行 TASK-016-2026-05-22T17-57-09-899Z 已领取该任务。
+
+### 2026-05-23T02:11:29+08:00 - Codex 实现与验证
+
+- **状态**: 待评审
+- **实现摘要**: 已按静态 HTML 和 TASK-002 视觉基线重构用户端全局视觉 token、DM Sans / DM Serif Display 字体、纸色背景、深墨色 Hero、金色强调、Header、居中搜索入口、统计栏、260px 筛选侧栏骨架、活跃筛选标签、院校横向卡片和弹窗基础样式；移动端导航已改为换行避免文本截断。
+- **修改范围**: 仅修改用户端 `apps/web` 相关文件和本任务本地 Notion 快照；未修改后端、管理端或共享包业务实现。
+- **验证结果**: `npm run build` 通过；用户端构建通过；管理端仍存在既有 Vite chunk 大小警告，不阻塞本任务。
+- **浏览器截图**: 已保存 `output/playwright/task016-20260523-static-home-1440.png`、`output/playwright/task016-20260523-web-home-1440.png`、`output/playwright/task016-20260523-web-home-mobile.png`。
+- **Notion 更新**: 未直接更新真实 Notion；`NOTION_PROJECT_HOME` 为空，Notion 搜索只返回无关页面，未定位到可安全更新的真实 TASK-016 页面。本轮已更新本地中文任务快照。

@@ -17,10 +17,15 @@
 
     <div class="university-card__body">
       <div class="university-card__top">
-        <div>
-          <div class="university-card__code">{{ university.shortName }} / {{ university.code }}</div>
-          <h3 class="university-card__title" @click="router.push(`/universities/${university.slug}`)">{{ text(university.name) }}</h3>
-          <p class="university-card__subtitle">{{ university.nameEn }}</p>
+        <div class="university-card__identity">
+          <div v-if="university.logoUrl" class="university-card__logo-wrap">
+            <img :src="university.logoUrl" :alt="university.shortName" class="university-card__logo" />
+          </div>
+          <div class="university-card__info">
+            <div class="university-card__code">{{ university.shortName }} / {{ university.code }}</div>
+            <h3 class="university-card__title" @click="router.push(`/universities/${university.slug}`)">{{ text(university.name) }}</h3>
+            <p class="university-card__subtitle">{{ university.nameEn }}</p>
+          </div>
         </div>
         <div class="university-card__actions">
           <button class="ghost-action" @click="catalog.toggleFavoriteUniversity(university.id)">
