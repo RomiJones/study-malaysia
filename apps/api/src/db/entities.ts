@@ -15,15 +15,21 @@ import type {
   ApplicationStage,
   AuthMethod,
   DegreeLevel,
+  FeeAuditStatus,
   InstitutionOwnership,
   InstitutionType,
   LanguageRequirement,
   LocalizedStringArray,
   LocalizedText,
   MaterialStatus,
+  OfficialSourceLink,
+  OfficialSourceStatus,
   PlannerVisaChecklist,
   ProgramCategory,
-  ProgramRequirement
+  ProgramCategoryCode,
+  ProgramRequirement,
+  PublicDisplayStatus,
+  TuitionCurrency
 } from "@studymy/shared";
 
 export type AdminDataScope = "all" | "assigned" | "created";
@@ -382,6 +388,57 @@ export class UniversityEntity {
   @Column({ type: "varchar", length: 255 })
   admissionEmail!: string;
 
+  @Column({ type: "varchar", length: 255, default: "" })
+  nameEnOfficial!: string;
+
+  @Column({ type: "varchar", length: 500, default: "" })
+  officialWebsite!: string;
+
+  @Column({ type: "varchar", length: 500, default: "" })
+  studyPortalUrl!: string;
+
+  @Column({ type: "varchar", length: 500, default: "" })
+  internationalPageUrl!: string;
+
+  @Column({ type: "varchar", length: 500, default: "" })
+  applicationPortalUrl!: string;
+
+  @Column({ type: "varchar", length: 500, default: "" })
+  officialAddress!: string;
+
+  @Column({ type: "json", nullable: true })
+  applicationPeriods!: string[] | null;
+
+  @Column({ type: "json", nullable: true })
+  applicationFees!: string[] | null;
+
+  @Column({ type: "json", nullable: true })
+  applicationDocuments!: LocalizedStringArray | null;
+
+  @Column({ type: "json", nullable: true })
+  chinaStudentRequirements!: LocalizedStringArray | null;
+
+  @Column({ type: "json", nullable: true })
+  officialProfile!: Record<string, unknown> | null;
+
+  @Column({ type: "json", nullable: true })
+  officialSources!: OfficialSourceLink[] | null;
+
+  @Column({ type: "date", nullable: true })
+  officialVerifiedAt!: string | null;
+
+  @Column({ type: "varchar", length: 80, default: "needs-review" })
+  officialSourceStatus!: OfficialSourceStatus;
+
+  @Column({ type: "text", nullable: true })
+  officialAuditSummary!: string | null;
+
+  @Column({ type: "varchar", length: 80, default: "ready" })
+  publicDisplayStatus!: PublicDisplayStatus;
+
+  @Column({ type: "text", nullable: true })
+  livingCostOfficialNote!: string | null;
+
   @Column({ type: "int" })
   tuitionMinCny!: number;
 
@@ -444,29 +501,89 @@ export class ProgramEntity {
   @Column({ type: "json" })
   name!: LocalizedText;
 
+  @Column({ type: "varchar", length: 255, default: "" })
+  nameEnOfficial!: string;
+
   @Column({ type: "varchar", length: 20 })
   level!: DegreeLevel;
 
-  @Column({ type: "varchar", length: 30 })
-  category!: ProgramCategory;
+  @Column({ type: "varchar", length: 80 })
+  category!: ProgramCategoryCode;
 
   @Column({ type: "json" })
   faculty!: LocalizedText;
 
+  @Column({ type: "varchar", length: 255, default: "" })
+  facultyZh!: string;
+
+  @Column({ type: "varchar", length: 80, default: "" })
+  studyMode!: string;
+
+  @Column({ type: "varchar", length: 120, default: "" })
+  campus!: string;
+
   @Column({ type: "decimal", precision: 4, scale: 1 })
   durationYears!: number;
+
+  @Column({ type: "varchar", length: 120, default: "" })
+  durationOfficial!: string;
 
   @Column({ type: "int" })
   annualTuitionCny!: number;
 
+  @Column({ type: "int", nullable: true })
+  tuitionAmount!: number | null;
+
+  @Column({ type: "varchar", length: 20, default: "CNY" })
+  tuitionCurrency!: TuitionCurrency;
+
+  @Column({ type: "varchar", length: 255, default: "" })
+  tuitionDisplay!: string;
+
+  @Column({ type: "int", nullable: true })
+  officialTuitionMYR!: number | null;
+
+  @Column({ type: "text", nullable: true })
+  officialTuitionNote!: string | null;
+
+  @Column({ type: "varchar", length: 500, default: "" })
+  officialFeeSourceUrl!: string;
+
+  @Column({ type: "varchar", length: 500, default: "" })
+  secondaryOfficialFeeSourceUrl!: string;
+
+  @Column({ type: "varchar", length: 80, default: "pending-review" })
+  officialFeeAuditStatus!: FeeAuditStatus;
+
+  @Column({ type: "date", nullable: true })
+  officialFeeAuditedAt!: string | null;
+
   @Column({ type: "json" })
   intakeMonths!: string[];
+
+  @Column({ type: "varchar", length: 255, default: "" })
+  officialIntake!: string;
+
+  @Column({ type: "text", nullable: true })
+  officialIntakeNote!: string | null;
 
   @Column({ type: "json" })
   languageRequirement!: LanguageRequirement;
 
+  @Column({ type: "text", nullable: true })
+  officialLanguageRequirement!: string | null;
+
   @Column({ type: "json" })
   requirement!: ProgramRequirement;
+
+  @Column({ type: "text", nullable: true })
+  officialAcademicRequirement!: string | null;
+
+  @Column({ type: "text", nullable: true })
+  chinaStudentRequirement!: string | null;
+
+  @Column({ type: "text", nullable: true })
+  specialRequirementsNote!: string | null;
 
   @Column({ type: "json" })
   applicationDocs!: LocalizedStringArray;
@@ -482,6 +599,42 @@ export class ProgramEntity {
 
   @Column({ type: "json" })
   description!: LocalizedText;
+
+  @Column({ type: "text", nullable: true })
+  officialAccreditationNote!: string | null;
+
+  @Column({ type: "varchar", length: 500, default: "" })
+  officialSourceUrl!: string;
+
+  @Column({ type: "varchar", length: 500, default: "" })
+  officialEntryRequirementSourceUrl!: string;
+
+  @Column({ type: "varchar", length: 500, default: "" })
+  officialAccreditationSourceUrl!: string;
+
+  @Column({ type: "json", nullable: true })
+  sourceUrls!: OfficialSourceLink[] | null;
+
+  @Column({ type: "date", nullable: true })
+  officialVerifiedAt!: string | null;
+
+  @Column({ type: "varchar", length: 80, default: "needs-review" })
+  officialSourceStatus!: OfficialSourceStatus;
+
+  @Column({ type: "varchar", length: 80, default: "ready" })
+  publicDisplayStatus!: PublicDisplayStatus;
+
+  @Column({ type: "text", nullable: true })
+  publicDisplayNote!: string | null;
+
+  @Column({ type: "text", nullable: true })
+  reviewReason!: string | null;
+
+  @Column({ type: "text", nullable: true })
+  auditNote!: string | null;
+
+  @Column({ type: "varchar", length: 255, default: "" })
+  listTuitionText!: string;
 
   @Column({ type: "boolean", default: true })
   isPublished!: boolean;
@@ -512,7 +665,7 @@ export class PlannerProfileEntity {
   @Column({ type: "varchar", length: 20, default: "master" })
   level!: DegreeLevel;
 
-  @Column({ type: "varchar", length: 30, default: "it" })
+  @Column({ type: "varchar", length: 80, default: "it" })
   targetCategory!: ProgramCategory;
 
   @Column({ type: "int", default: 80000 })

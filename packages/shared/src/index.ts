@@ -1,4 +1,4 @@
-﻿export const SUPPORTED_LOCALES = ["en", "ms", "zh-CN", "zh-TW"] as const;
+export const SUPPORTED_LOCALES = ["en", "ms", "zh-CN", "zh-TW"] as const;
 
 export type SupportedLocale = (typeof SUPPORTED_LOCALES)[number];
 
@@ -6,7 +6,7 @@ export type LocalizedText = Record<SupportedLocale, string>;
 export type LocalizedStringArray = Record<SupportedLocale, string[]>;
 
 export type DegreeLevel = "bachelor" | "master" | "phd";
-export type ProgramCategory =
+export type CoreProgramCategory =
   | "business"
   | "it"
   | "engineering"
@@ -14,8 +14,40 @@ export type ProgramCategory =
   | "arts"
   | "medicine"
   | "law";
+export type ProgramCategory = CoreProgramCategory;
+export type ProgramCategoryCode = CoreProgramCategory | (string & {});
 export type InstitutionOwnership = "public" | "private";
 export type InstitutionType = "research" | "comprehensive" | "applied";
+export type PublicDisplayStatus =
+  | "ready"
+  | "not-available-for-international"
+  | "needs-review"
+  | "hidden-unverified"
+  | "archived";
+export type OfficialSourceStatus =
+  | "official-verified"
+  | "official-page-verified-international-not-available"
+  | "needs-review"
+  | "source-conflict"
+  | "missing-source"
+  | "hidden-duplicate-superseded";
+export type TuitionCurrency = "MYR" | "CNY" | "USD" | "UNKNOWN";
+export type FeeAuditStatus =
+  | "matched-official"
+  | "conflict"
+  | "source-conflict"
+  | "pending-review"
+  | "not-published";
+export type ApplicationTier = "reach" | "target" | "safe";
+export type OfficialSourceType =
+  | "official-website"
+  | "study-portal"
+  | "admission"
+  | "fee"
+  | "entry-requirement"
+  | "accreditation"
+  | "profile"
+  | "other";
 export type AuthMethod = "phone" | "email" | "wechat" | "qq";
 export type MaterialStatus = "draft" | "wait" | "progress" | "done";
 export type ApplicationStage =
@@ -40,7 +72,88 @@ export interface ProgramRequirement {
   note: LocalizedText;
 }
 
-export interface UniversityListItem {
+export interface ProgramCategoryOption {
+  code: ProgramCategoryCode;
+  label: LocalizedText;
+  sortOrder: number;
+  enabled: boolean;
+  visibleOnPublic: boolean;
+  legacyCategory?: CoreProgramCategory;
+}
+
+export interface OfficialSourceLink {
+  title: string;
+  url: string;
+  sourceType: OfficialSourceType;
+  verifiedAt?: string | null;
+  status?: OfficialSourceStatus;
+  note?: string | null;
+}
+
+export interface TuitionInfo {
+  amount?: number | null;
+  currency: TuitionCurrency;
+  displayText: string;
+  officialAmountMYR?: number | null;
+  sourceUrl?: string | null;
+  secondarySourceUrl?: string | null;
+  auditStatus: FeeAuditStatus;
+  auditedAt?: string | null;
+  note?: string | null;
+}
+
+export interface RequirementInfo {
+  language: LanguageRequirement;
+  officialLanguageRequirement?: string | null;
+  academic: ProgramRequirement;
+  officialAcademicRequirement?: string | null;
+  chinaStudentRequirement?: string | null;
+  specialRequirementsNote?: string | null;
+}
+
+export interface UniversityOfficialProfile {
+  nameEnOfficial: string;
+  officialWebsite: string;
+  studyPortalUrl: string;
+  internationalPageUrl: string;
+  applicationPortalUrl: string;
+  officialAddress: string;
+  applicationPeriods: string[];
+  applicationFees: string[];
+  applicationDocuments: LocalizedStringArray;
+  chinaStudentRequirements: LocalizedStringArray;
+  officialProfile: Record<string, unknown> | null;
+  officialSources: OfficialSourceLink[];
+  officialVerifiedAt: string | null;
+  officialSourceStatus: OfficialSourceStatus;
+  officialAuditSummary: string;
+  publicDisplayStatus: PublicDisplayStatus;
+}
+
+export interface ProgramOfficialProfile {
+  nameEnOfficial: string;
+  facultyZh: string;
+  studyMode: string;
+  campus: string;
+  durationOfficial: string;
+  officialIntake: string;
+  officialIntakeNote: string;
+  tuitionInfo: TuitionInfo;
+  requirements: RequirementInfo;
+  officialAccreditationNote: string;
+  officialSourceUrl: string;
+  officialEntryRequirementSourceUrl: string;
+  officialAccreditationSourceUrl: string;
+  sourceUrls: OfficialSourceLink[];
+  officialVerifiedAt: string | null;
+  officialSourceStatus: OfficialSourceStatus;
+  publicDisplayStatus: PublicDisplayStatus;
+  publicDisplayNote: string;
+  reviewReason: string;
+  auditNote: string;
+}
+
+export interface UniversityListItem extends UniversityOfficialProfile {
   id: number;
   slug: string;
   code: string;
@@ -66,6 +179,7 @@ export interface UniversityListItem {
   tuitionMinCny: number;
   tuitionMaxCny: number;
   livingCostCny: number;
+  livingCostOfficialNote: string;
   minIelts: number;
   acceptNoLanguage: boolean;
   facilities: LocalizedStringArray;
@@ -73,7 +187,7 @@ export interface UniversityListItem {
   programCount: number;
 }
 
-export interface ProgramListItem {
+export interface ProgramListItem extends ProgramOfficialProfile {
   id: number;
   universityId: number;
   slug: string;
@@ -81,18 +195,31 @@ export interface ProgramListItem {
   name: LocalizedText;
   nameEn: string;
   level: DegreeLevel;
-  category: ProgramCategory;
+  category: ProgramCategoryCode;
   faculty: LocalizedText;
   durationYears: number;
   annualTuitionCny: number;
+  tuitionAmount: number | null;
+  tuitionCurrency: TuitionCurrency;
+  tuitionDisplay: string;
+  officialTuitionMYR: number | null;
+  officialFeeSourceUrl: string;
+  secondaryOfficialFeeSourceUrl: string;
+  officialFeeAuditStatus: FeeAuditStatus;
+  officialFeeAuditedAt: string | null;
   intakeMonths: string[];
   languageRequirement: LanguageRequirement;
+  officialLanguageRequirement: string;
   requirement: ProgramRequirement;
+  officialAcademicRequirement: string;
+  chinaStudentRequirement: string;
   applicationDocs: LocalizedStringArray;
   curriculum: LocalizedStringArray;
   careers: LocalizedStringArray;
   specializations: LocalizedStringArray;
   description: LocalizedText;
+  listTuitionText: string;
+  requirementInfo: RequirementInfo;
 }
 
 export interface PlannerProfile {
@@ -178,7 +305,17 @@ export const DEGREE_LEVEL_LABELS: Record<DegreeLevel, LocalizedText> = {
   }
 };
 
-export const CATEGORY_LABELS: Record<ProgramCategory, LocalizedText> = {
+export const CORE_PROGRAM_CATEGORIES = [
+  "business",
+  "it",
+  "engineering",
+  "science",
+  "arts",
+  "medicine",
+  "law"
+] as const satisfies readonly CoreProgramCategory[];
+
+export const CATEGORY_LABELS: Record<CoreProgramCategory, LocalizedText> = {
   business: {
     en: "Business",
     ms: "Perniagaan",
@@ -220,5 +357,119 @@ export const CATEGORY_LABELS: Record<ProgramCategory, LocalizedText> = {
     ms: "Undang-undang",
     "zh-CN": "法学",
     "zh-TW": "法學"
+  }
+};
+
+export const DEFAULT_PROGRAM_CATEGORY_OPTIONS: ProgramCategoryOption[] = CORE_PROGRAM_CATEGORIES.map((code, index) => ({
+  code,
+  label: CATEGORY_LABELS[code],
+  sortOrder: index + 1,
+  enabled: true,
+  visibleOnPublic: true,
+  legacyCategory: code
+}));
+
+export const PUBLIC_DISPLAY_STATUS_LABELS: Record<PublicDisplayStatus, LocalizedText> = {
+  ready: {
+    en: "Ready for public display",
+    ms: "Sedia untuk paparan awam",
+    "zh-CN": "可公开展示",
+    "zh-TW": "可公開展示"
+  },
+  "not-available-for-international": {
+    en: "Not available for international applicants",
+    ms: "Tidak tersedia untuk pemohon antarabangsa",
+    "zh-CN": "不开放国际学生",
+    "zh-TW": "不開放國際學生"
+  },
+  "needs-review": {
+    en: "Needs review",
+    ms: "Perlu semakan",
+    "zh-CN": "待复核",
+    "zh-TW": "待複核"
+  },
+  "hidden-unverified": {
+    en: "Hidden until verified",
+    ms: "Disembunyikan sehingga disahkan",
+    "zh-CN": "未核验隐藏",
+    "zh-TW": "未核驗隱藏"
+  },
+  archived: {
+    en: "Archived",
+    ms: "Diarkibkan",
+    "zh-CN": "已归档",
+    "zh-TW": "已歸檔"
+  }
+};
+
+export const OFFICIAL_SOURCE_STATUS_LABELS: Record<OfficialSourceStatus, LocalizedText> = {
+  "official-verified": {
+    en: "Official source verified",
+    ms: "Sumber rasmi disahkan",
+    "zh-CN": "官方来源已核验",
+    "zh-TW": "官方來源已核驗"
+  },
+  "official-page-verified-international-not-available": {
+    en: "Official page verified, international admission unavailable",
+    ms: "Halaman rasmi disahkan, kemasukan antarabangsa tidak tersedia",
+    "zh-CN": "官方页已核验但不开放国际学生",
+    "zh-TW": "官方頁已核驗但不開放國際學生"
+  },
+  "needs-review": {
+    en: "Needs review",
+    ms: "Perlu semakan",
+    "zh-CN": "待复核",
+    "zh-TW": "待複核"
+  },
+  "source-conflict": {
+    en: "Source conflict",
+    ms: "Konflik sumber",
+    "zh-CN": "来源冲突",
+    "zh-TW": "來源衝突"
+  },
+  "missing-source": {
+    en: "Missing official source",
+    ms: "Sumber rasmi tiada",
+    "zh-CN": "缺少官方来源",
+    "zh-TW": "缺少官方來源"
+  },
+  "hidden-duplicate-superseded": {
+    en: "Hidden duplicate or superseded",
+    ms: "Duplikasi atau digantikan",
+    "zh-CN": "重复或已被替代隐藏",
+    "zh-TW": "重複或已被替代隱藏"
+  }
+};
+
+export const FEE_AUDIT_STATUS_LABELS: Record<FeeAuditStatus, LocalizedText> = {
+  "matched-official": {
+    en: "Matched official source",
+    ms: "Sepadan dengan sumber rasmi",
+    "zh-CN": "与官方来源一致",
+    "zh-TW": "與官方來源一致"
+  },
+  conflict: {
+    en: "Conflict",
+    ms: "Konflik",
+    "zh-CN": "冲突",
+    "zh-TW": "衝突"
+  },
+  "source-conflict": {
+    en: "Source conflict",
+    ms: "Konflik sumber",
+    "zh-CN": "来源冲突",
+    "zh-TW": "來源衝突"
+  },
+  "pending-review": {
+    en: "Pending review",
+    ms: "Menunggu semakan",
+    "zh-CN": "待复核",
+    "zh-TW": "待複核"
+  },
+  "not-published": {
+    en: "Not published",
+    ms: "Belum diterbitkan",
+    "zh-CN": "未公布",
+    "zh-TW": "未公布"
   }
 };

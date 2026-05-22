@@ -1,10 +1,17 @@
-﻿import type {
+import type {
+  FeeAuditStatus,
+  LocalizedStringArray,
+  OfficialSourceLink,
   PlannerApplicationItem,
   PlannerMaterialItem,
   PlannerProfile,
   PlannerVisaChecklist,
   ProgramListItem,
+  PublicDisplayStatus,
   RecommendationResult,
+  RequirementInfo,
+  TuitionCurrency,
+  TuitionInfo,
   UniversityListItem
 } from "@studymy/shared";
 import { translateArray } from "./i18n.js";
@@ -16,7 +23,56 @@ import {
   UniversityEntity
 } from "../db/entities.js";
 
+const emptyLocalizedArray = (): LocalizedStringArray => ({ en: [], ms: [], "zh-CN": [], "zh-TW": [] });
+
+function toDateString(value: Date | string | null | undefined) {
+  if (!value) return null;
+  return typeof value === "string" ? value : value.toISOString().slice(0, 10);
+}
+
+function normalizeSourceLink(item: OfficialSourceLink): OfficialSourceLink {
+  return {
+    title: item.title || item.url,
+    url: item.url,
+    sourceType: item.sourceType || "other",
+    verifiedAt: item.verifiedAt ?? null,
+    status: item.status,
+    note: item.note ?? null
+  };
+}
+
+function normalizeSourceLinks(value: OfficialSourceLink[] | null | undefined): OfficialSourceLink[] {
+  return Array.isArray(value)
+    ? value.filter((item) => Boolean(item?.url)).map(normalizeSourceLink)
+    : [];
+}
+
+function appendSourceLink(items: OfficialSourceLink[], link: OfficialSourceLink): OfficialSourceLink[] {
+  if (!link.url || items.some((item) => item.url === link.url)) return items;
+  return [...items, normalizeSourceLink(link)];
+}
+
+export function normalizePublicDisplayStatus(status?: PublicDisplayStatus | null, isPublished = true): PublicDisplayStatus {
+  if (!isPublished && (!status || status === "ready")) return "hidden-unverified";
+  return status || "ready";
+}
+
+export function isReadyForPublicCatalog(entity: { isPublished: boolean; publicDisplayStatus?: PublicDisplayStatus | null }) {
+  return entity.isPublished && normalizePublicDisplayStatus(entity.publicDisplayStatus, entity.isPublished) === "ready";
+}
+
 export function mapUniversity(entity: UniversityEntity): UniversityListItem {
+  const officialWebsite = entity.officialWebsite || entity.website;
+  let officialSources = normalizeSourceLinks(entity.officialSources);
+  officialSources = appendSourceLink(officialSources, {
+    title: "Official website",
+    url: officialWebsite,
+    sourceType: "official-website",
+    verifiedAt: toDateString(entity.officialVerifiedAt),
+    status: entity.officialSourceStatus || "needs-review",
+    note: null
+  });
+
   return {
     id: entity.id,
     slug: entity.slug,
@@ -40,6 +96,23 @@ export function mapUniversity(entity: UniversityEntity): UniversityListItem {
     description: entity.description,
     website: entity.website,
     admissionEmail: entity.admissionEmail,
+    nameEnOfficial: entity.nameEnOfficial || entity.name.en,
+    officialWebsite,
+    studyPortalUrl: entity.studyPortalUrl || "",
+    internationalPageUrl: entity.internationalPageUrl || "",
+    applicationPortalUrl: entity.applicationPortalUrl || "",
+    officialAddress: entity.officialAddress || "",
+    applicationPeriods: entity.applicationPeriods || [],
+    applicationFees: entity.applicationFees || [],
+    applicationDocuments: entity.applicationDocuments || emptyLocalizedArray(),
+    chinaStudentRequirements: entity.chinaStudentRequirements || emptyLocalizedArray(),
+    officialProfile: entity.officialProfile || null,
+    officialSources,
+    officialVerifiedAt: toDateString(entity.officialVerifiedAt),
+    officialSourceStatus: entity.officialSourceStatus || "needs-review",
+    officialAuditSummary: entity.officialAuditSummary || "",
+    publicDisplayStatus: normalizePublicDisplayStatus(entity.publicDisplayStatus, entity.isPublished),
+    livingCostOfficialNote: entity.livingCostOfficialNote || "",
     tuitionMinCny: entity.tuitionMinCny,
     tuitionMaxCny: entity.tuitionMaxCny,
     livingCostCny: entity.livingCostCny,
@@ -52,6 +125,65 @@ export function mapUniversity(entity: UniversityEntity): UniversityListItem {
 }
 
 export function mapProgram(entity: ProgramEntity): ProgramListItem {
+  const officialFeeAuditStatus: FeeAuditStatus = entity.officialFeeAuditStatus || "pending-review";
+  const tuitionCurrency: TuitionCurrency = entity.tuitionCurrency || (entity.officialTuitionMYR ? "MYR" : "CNY");
+  const tuitionDisplay =
+    entity.tuitionDisplay ||
+    entity.listTuitionText ||
+    (entity.officialTuitionMYR ? `RM ${entity.officialTuitionMYR.toLocaleString("en-US")}` : `CNY ${entity.annualTuitionCny.toLocaleString("en-US")} / year`);
+  const tuitionInfo: TuitionInfo = {
+    amount: entity.tuitionAmount ?? (tuitionCurrency === "MYR" ? entity.officialTuitionMYR : entity.annualTuitionCny),
+    currency: tuitionCurrency,
+    displayText: tuitionDisplay,
+    officialAmountMYR: entity.officialTuitionMYR ?? null,
+    sourceUrl: entity.officialFeeSourceUrl || null,
+    secondarySourceUrl: entity.secondaryOfficialFeeSourceUrl || null,
+    auditStatus: officialFeeAuditStatus,
+    auditedAt: toDateString(entity.officialFeeAuditedAt),
+    note: entity.officialTuitionNote || null
+  };
+  const requirementInfo: RequirementInfo = {
+    language: entity.languageRequirement,
+    officialLanguageRequirement: entity.officialLanguageRequirement || null,
+    academic: entity.requirement,
+    officialAcademicRequirement: entity.officialAcademicRequirement || null,
+    chinaStudentRequirement: entity.chinaStudentRequirement || null,
+    specialRequirementsNote: entity.specialRequirementsNote || null
+  };
+  let sourceUrls = normalizeSourceLinks(entity.sourceUrls);
+  sourceUrls = appendSourceLink(sourceUrls, {
+    title: "Official program page",
+    url: entity.officialSourceUrl,
+    sourceType: "profile",
+    verifiedAt: toDateString(entity.officialVerifiedAt),
+    status: entity.officialSourceStatus || "needs-review",
+    note: null
+  });
+  sourceUrls = appendSourceLink(sourceUrls, {
+    title: "Official fee source",
+    url: entity.officialFeeSourceUrl,
+    sourceType: "fee",
+    verifiedAt: toDateString(entity.officialFeeAuditedAt),
+    status: entity.officialSourceStatus || "needs-review",
+    note: entity.officialTuitionNote || null
+  });
+  sourceUrls = appendSourceLink(sourceUrls, {
+    title: "Official entry requirement source",
+    url: entity.officialEntryRequirementSourceUrl,
+    sourceType: "entry-requirement",
+    verifiedAt: toDateString(entity.officialVerifiedAt),
+    status: entity.officialSourceStatus || "needs-review",
+    note: null
+  });
+  sourceUrls = appendSourceLink(sourceUrls, {
+    title: "Official accreditation source",
+    url: entity.officialAccreditationSourceUrl,
+    sourceType: "accreditation",
+    verifiedAt: toDateString(entity.officialVerifiedAt),
+    status: entity.officialSourceStatus || "needs-review",
+    note: entity.officialAccreditationNote || null
+  });
+
   return {
     id: entity.id,
     universityId: entity.universityId,
@@ -59,19 +191,52 @@ export function mapProgram(entity: ProgramEntity): ProgramListItem {
     code: entity.code,
     name: entity.name,
     nameEn: entity.name.en,
+    nameEnOfficial: entity.nameEnOfficial || entity.name.en,
     level: entity.level,
     category: entity.category,
     faculty: entity.faculty,
+    facultyZh: entity.facultyZh || entity.faculty["zh-CN"] || "",
+    studyMode: entity.studyMode || "",
+    campus: entity.campus || "",
     durationYears: entity.durationYears,
+    durationOfficial: entity.durationOfficial || `${Number(entity.durationYears)} years`,
     annualTuitionCny: entity.annualTuitionCny,
+    tuitionAmount: entity.tuitionAmount ?? null,
+    tuitionCurrency,
+    tuitionDisplay,
+    officialTuitionMYR: entity.officialTuitionMYR ?? null,
+    officialFeeSourceUrl: entity.officialFeeSourceUrl || "",
+    secondaryOfficialFeeSourceUrl: entity.secondaryOfficialFeeSourceUrl || "",
+    officialFeeAuditStatus,
+    officialFeeAuditedAt: toDateString(entity.officialFeeAuditedAt),
     intakeMonths: entity.intakeMonths,
+    officialIntake: entity.officialIntake || entity.intakeMonths.join(", "),
+    officialIntakeNote: entity.officialIntakeNote || "",
     languageRequirement: entity.languageRequirement,
+    officialLanguageRequirement: entity.officialLanguageRequirement || "",
     requirement: entity.requirement,
+    officialAcademicRequirement: entity.officialAcademicRequirement || "",
+    chinaStudentRequirement: entity.chinaStudentRequirement || "",
     applicationDocs: entity.applicationDocs,
     curriculum: entity.curriculum,
     careers: entity.careers,
     specializations: entity.specializations,
-    description: entity.description
+    description: entity.description,
+    officialAccreditationNote: entity.officialAccreditationNote || "",
+    officialSourceUrl: entity.officialSourceUrl || "",
+    officialEntryRequirementSourceUrl: entity.officialEntryRequirementSourceUrl || "",
+    officialAccreditationSourceUrl: entity.officialAccreditationSourceUrl || "",
+    sourceUrls,
+    officialVerifiedAt: toDateString(entity.officialVerifiedAt),
+    officialSourceStatus: entity.officialSourceStatus || "needs-review",
+    publicDisplayStatus: normalizePublicDisplayStatus(entity.publicDisplayStatus, entity.isPublished),
+    publicDisplayNote: entity.publicDisplayNote || "",
+    reviewReason: entity.reviewReason || "",
+    auditNote: entity.auditNote || "",
+    listTuitionText: entity.listTuitionText || tuitionDisplay,
+    tuitionInfo,
+    requirements: requirementInfo,
+    requirementInfo
   };
 }
 

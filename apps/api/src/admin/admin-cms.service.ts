@@ -40,7 +40,7 @@ export class AdminCmsService {
     };
   }
 
-  async listUniversities(query: AdminListQuery & { ownership?: string; published?: string }) {
+  async listUniversities(query: AdminListQuery & { ownership?: string; published?: string; publicDisplayStatus?: string; officialSourceStatus?: string }) {
     const { page, pageSize, skip } = normalizePagination(query);
     const qb = this.universitiesRepository.createQueryBuilder("university");
     if (query.search) {
@@ -51,6 +51,8 @@ export class AdminCmsService {
     }
     if (query.ownership) qb.andWhere("university.ownership = :ownership", { ownership: query.ownership });
     if (query.published === "true" || query.published === "false") qb.andWhere("university.isPublished = :published", { published: query.published === "true" });
+    if (query.publicDisplayStatus) qb.andWhere("university.publicDisplayStatus = :publicDisplayStatus", { publicDisplayStatus: query.publicDisplayStatus });
+    if (query.officialSourceStatus) qb.andWhere("university.officialSourceStatus = :officialSourceStatus", { officialSourceStatus: query.officialSourceStatus });
     const [items, total] = await qb.orderBy("university.qsRank", "ASC").skip(skip).take(pageSize).getManyAndCount();
     return { items, total, page, pageSize };
   }
@@ -63,7 +65,13 @@ export class AdminCmsService {
       entity = existing;
       Object.assign(entity, payload);
     } else {
-      entity = this.universitiesRepository.create({ ...payload, programCount: payload.programCount || 0, isPublished: payload.isPublished ?? true } as UniversityEntity);
+      entity = this.universitiesRepository.create({
+        ...payload,
+        programCount: payload.programCount || 0,
+        isPublished: payload.isPublished ?? true,
+        publicDisplayStatus: payload.publicDisplayStatus ?? "ready",
+        officialSourceStatus: payload.officialSourceStatus ?? "needs-review"
+      } as UniversityEntity);
     }
     const saved = await this.universitiesRepository.save(entity);
     await this.invalidateCatalog();
@@ -78,7 +86,7 @@ export class AdminCmsService {
     return true;
   }
 
-  async listPrograms(query: AdminListQuery & { universityId?: number; level?: string; category?: string; published?: string }) {
+  async listPrograms(query: AdminListQuery & { universityId?: number; level?: string; category?: string; published?: string; publicDisplayStatus?: string; officialSourceStatus?: string; feeAuditStatus?: string }) {
     const { page, pageSize, skip } = normalizePagination(query);
     const qb = this.programsRepository.createQueryBuilder("program").leftJoinAndSelect("program.university", "university");
     if (query.search) {
@@ -91,6 +99,9 @@ export class AdminCmsService {
     if (query.level) qb.andWhere("program.level = :level", { level: query.level });
     if (query.category) qb.andWhere("program.category = :category", { category: query.category });
     if (query.published === "true" || query.published === "false") qb.andWhere("program.isPublished = :published", { published: query.published === "true" });
+    if (query.publicDisplayStatus) qb.andWhere("program.publicDisplayStatus = :publicDisplayStatus", { publicDisplayStatus: query.publicDisplayStatus });
+    if (query.officialSourceStatus) qb.andWhere("program.officialSourceStatus = :officialSourceStatus", { officialSourceStatus: query.officialSourceStatus });
+    if (query.feeAuditStatus) qb.andWhere("program.officialFeeAuditStatus = :feeAuditStatus", { feeAuditStatus: query.feeAuditStatus });
     const [items, total] = await qb.orderBy("program.createdAt", "DESC").skip(skip).take(pageSize).getManyAndCount();
     return { items, total, page, pageSize };
   }
@@ -103,7 +114,13 @@ export class AdminCmsService {
       entity = existing;
       Object.assign(entity, payload);
     } else {
-      entity = this.programsRepository.create({ ...payload, isPublished: payload.isPublished ?? true } as ProgramEntity);
+      entity = this.programsRepository.create({
+        ...payload,
+        isPublished: payload.isPublished ?? true,
+        publicDisplayStatus: payload.publicDisplayStatus ?? "ready",
+        officialSourceStatus: payload.officialSourceStatus ?? "needs-review",
+        officialFeeAuditStatus: payload.officialFeeAuditStatus ?? "pending-review"
+      } as ProgramEntity);
     }
     const saved = await this.programsRepository.save(entity);
     await this.refreshProgramCount(saved.universityId);

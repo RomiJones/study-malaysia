@@ -1,6 +1,6 @@
 import { Controller, Get, Param, Query, Inject } from "@nestjs/common";
 import { Transform } from "class-transformer";
-import { IsBoolean, IsIn, IsNumber, IsOptional } from "class-validator";
+import { IsBoolean, IsIn, IsNumber, IsOptional, IsString } from "class-validator";
 import { ProgramsService } from "./programs.service.js";
 
 class RecommendationQueryDto {
@@ -9,8 +9,8 @@ class RecommendationQueryDto {
   level?: "bachelor" | "master" | "phd";
 
   @IsOptional()
-  @IsIn(["business", "it", "engineering", "science", "arts", "medicine", "law"])
-  targetCategory?: "business" | "it" | "engineering" | "science" | "arts" | "medicine" | "law";
+  @IsString()
+  targetCategory?: string;
 
   @IsOptional()
   @Transform(({ value }) => Number(value))

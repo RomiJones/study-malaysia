@@ -3,7 +3,7 @@ import { InjectRepository } from "@nestjs/typeorm";
 import { Repository } from "typeorm";
 import { CacheService } from "../common/cache.service.js";
 import { ContentBlockEntity, ProgramEntity, UniversityEntity } from "../db/entities.js";
-import { mapContentBlock, mapProgram, mapUniversity, textContains } from "../common/mappers.js";
+import { isReadyForPublicCatalog, mapContentBlock, mapProgram, mapUniversity, textContains } from "../common/mappers.js";
 
 export interface UniversityQuery {
   search?: string;
@@ -40,8 +40,8 @@ export class UniversitiesService {
     if (cached) return cached;
 
     const [universities, programs, content] = await Promise.all([
-      this.universitiesRepository.find({ where: { isPublished: true } }),
-      this.programsRepository.find({ where: { isPublished: true } }),
+      this.universitiesRepository.find({ where: { isPublished: true, publicDisplayStatus: "ready" } }),
+      this.programsRepository.find({ where: { isPublished: true, publicDisplayStatus: "ready" } }),
       this.contentRepository.find()
     ]);
 
@@ -64,13 +64,13 @@ export class UniversitiesService {
     if (cached) return cached;
 
     const universities = await this.universitiesRepository.find({
-      where: { isPublished: true },
+      where: { isPublished: true, publicDisplayStatus: "ready" },
       relations: { programs: true },
       order: { qsRank: "ASC" }
     });
 
     const filtered = universities.filter((university) => {
-      const publishedPrograms = (university.programs || []).filter((program) => program.isPublished);
+      const publishedPrograms = (university.programs || []).filter(isReadyForPublicCatalog);
       if (query.search && !textContains(university, query.search) && !publishedPrograms.some((program) => textContains(program, query.search!))) {
         return false;
       }
@@ -97,7 +97,7 @@ export class UniversitiesService {
 
     const payload = filtered.map((university) => ({
       ...mapUniversity(university),
-      programCount: (university.programs || []).filter((program) => program.isPublished).length || university.programCount
+      programCount: (university.programs || []).filter(isReadyForPublicCatalog).length || university.programCount
     }));
     await this.cacheService.setJson(cacheKey, payload, 300);
     return payload;
@@ -109,7 +109,7 @@ export class UniversitiesService {
     if (cached) return cached;
 
     const university = await this.universitiesRepository.findOne({
-      where: { slug, isPublished: true },
+      where: { slug, isPublished: true, publicDisplayStatus: "ready" },
       relations: { programs: true }
     });
 
@@ -119,7 +119,7 @@ export class UniversitiesService {
 
     const payload = {
       ...mapUniversity(university),
-      programs: (university.programs || []).filter((program) => program.isPublished).map(mapProgram)
+      programs: (university.programs || []).filter(isReadyForPublicCatalog).map(mapProgram)
     };
     await this.cacheService.setJson(cacheKey, payload, 600);
     return payload;

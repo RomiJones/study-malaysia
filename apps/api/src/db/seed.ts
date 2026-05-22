@@ -10,6 +10,7 @@ import {
   AdminRolePermissionEntity,
   AdminUserEntity,
   AdminUserRoleEntity,
+  type ApplicationStatus,
   ApplicationFollowUpEntity,
   ContentBlockEntity,
   DictionaryItemEntity,

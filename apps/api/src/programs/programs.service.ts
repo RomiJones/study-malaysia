@@ -1,14 +1,14 @@
 ﻿import { Inject, Injectable, NotFoundException } from "@nestjs/common";
 import { InjectRepository } from "@nestjs/typeorm";
 import { Repository } from "typeorm";
-import type { DegreeLevel, ProgramCategory, RecommendationResult } from "@studymy/shared";
+import type { DegreeLevel, ProgramCategoryCode, RecommendationResult } from "@studymy/shared";
 import { CacheService } from "../common/cache.service.js";
 import { ProgramEntity, UniversityEntity } from "../db/entities.js";
-import { buildRecommendation, mapProgram, mapUniversity } from "../common/mappers.js";
+import { buildRecommendation, isReadyForPublicCatalog, mapProgram, mapUniversity } from "../common/mappers.js";
 
 export interface RecommendationQuery {
   level?: DegreeLevel;
-  targetCategory?: ProgramCategory;
+  targetCategory?: ProgramCategoryCode;
   budgetCny?: number;
   gpa?: number;
   ielts?: number;
@@ -36,7 +36,7 @@ export class ProgramsService {
     const cached = await this.cacheService.getJson(cacheKey);
     if (cached) return cached;
 
-    const programs = await this.programsRepository.find({ where: { isPublished: true }, order: { createdAt: "DESC" } });
+    const programs = await this.programsRepository.find({ where: { isPublished: true, publicDisplayStatus: "ready" }, order: { createdAt: "DESC" } });
     const payload = programs.map(mapProgram);
     await this.cacheService.setJson(cacheKey, payload, 600);
     return payload;
@@ -47,12 +47,12 @@ export class ProgramsService {
     const cached = await this.cacheService.getJson(cacheKey);
     if (cached) return cached;
 
-    const program = await this.programsRepository.findOne({ where: { slug, isPublished: true } });
+    const program = await this.programsRepository.findOne({ where: { slug, isPublished: true, publicDisplayStatus: "ready" } });
     if (!program) {
       throw new NotFoundException("Program not found");
     }
 
-    const university = await this.universitiesRepository.findOneBy({ id: program.universityId, isPublished: true });
+    const university = await this.universitiesRepository.findOneBy({ id: program.universityId, isPublished: true, publicDisplayStatus: "ready" });
     if (!university) {
       throw new NotFoundException("University not found");
     }
@@ -70,11 +70,11 @@ export class ProgramsService {
     const cached = await this.cacheService.getJson(cacheKey);
     if (cached) return cached;
 
-    const program = await this.programsRepository.findOneBy({ id: programId, isPublished: true });
+    const program = await this.programsRepository.findOneBy({ id: programId, isPublished: true, publicDisplayStatus: "ready" });
     if (!program) {
       throw new NotFoundException("Program not found");
     }
-    const university = await this.universitiesRepository.findOneBy({ id: program.universityId, isPublished: true });
+    const university = await this.universitiesRepository.findOneBy({ id: program.universityId, isPublished: true, publicDisplayStatus: "ready" });
     if (!university) {
       throw new NotFoundException("University not found");
     }
@@ -99,14 +99,15 @@ export class ProgramsService {
     const cached = await this.cacheService.getJson<RecommendationResult[]>(cacheKey);
     if (cached) return cached;
 
-    const universities = await this.universitiesRepository.find({ where: { isPublished: true } });
-    const programs = await this.programsRepository.find({ where: { isPublished: true } });
+    const universities = await this.universitiesRepository.find({ where: { isPublished: true, publicDisplayStatus: "ready" } });
+    const programs = await this.programsRepository.find({ where: { isPublished: true, publicDisplayStatus: "ready" } });
     const universityMap = new Map(universities.map((item) => [item.id, item]));
     const results: RecommendationResult[] = [];
 
     for (const program of programs) {
       const university = universityMap.get(program.universityId);
       if (!university) continue;
+      if (!isReadyForPublicCatalog(program) || !isReadyForPublicCatalog(university)) continue;
       if (query.level && program.level !== query.level) continue;
       if (query.targetCategory && program.category !== query.targetCategory) continue;
 
