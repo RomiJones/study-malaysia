@@ -8,7 +8,10 @@
     "build": "tsc -p tsconfig.build.json",
     "start": "node dist/main.js",
     "seed": "tsx src/db/seed.ts",
-    "import:official": "tsx src/db/import-official-directory.ts"
+    "import:official": "tsx src/db/import-official-directory.ts",
+    "extract:static": "tsx src/db/extract-static-html.ts",
+    "import:static": "tsx src/db/import-static-html.ts",
+    "check:static": "tsx src/db/verify-static-html.ts"
   },
   "dependencies": {
     "@nestjs/common": "^11.1.6",

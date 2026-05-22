@@ -525,7 +525,7 @@ export class ProgramEntity {
   @Column({ type: "decimal", precision: 4, scale: 1 })
   durationYears!: number;
 
-  @Column({ type: "varchar", length: 120, default: "" })
+  @Column({ type: "varchar", length: 500, default: "" })
   durationOfficial!: string;
 
   @Column({ type: "int" })
