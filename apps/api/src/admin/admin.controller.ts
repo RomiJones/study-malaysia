@@ -195,6 +195,12 @@ export class AdminController {
     return adminOk(await this.cmsService.listUniversities(query));
   }
 
+  @RequireAdminPermissions("school:view")
+  @Get("universities/:id")
+  async universityDetail(@Param("id") id: string) {
+    return adminOk(await this.cmsService.getUniversity(Number(id)));
+  }
+
   @RequireAdminPermissions("school:update")
   @Post("universities")
   async saveUniversity(@Req() request: { adminUser: AdminRequestUser }, @Body() payload: SaveUniversityDto) {
@@ -211,6 +217,12 @@ export class AdminController {
   @Get("programs")
   async programs(@Query() query: Record<string, string>) {
     return adminOk(await this.cmsService.listPrograms(query));
+  }
+
+  @RequireAdminPermissions("program:view")
+  @Get("programs/:id")
+  async programDetail(@Param("id") id: string) {
+    return adminOk(await this.cmsService.getProgram(Number(id)));
   }
 
   @RequireAdminPermissions("program:update")
