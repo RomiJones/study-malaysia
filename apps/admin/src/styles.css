@@ -334,6 +334,30 @@ a { color: inherit; text-decoration: none; }
 .table-actions { display: flex; gap: 8px; flex-wrap: wrap; }
 .json-box { background: #0f172a; color: #cbd5e1; padding: 12px; border-radius: 12px; overflow: auto; }
 
+.section-subtitle {
+  margin-top: 6px;
+  color: #64748b;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.inline-edit-table {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.inline-edit-table .el-date-editor.el-input {
+  width: 130px;
+}
+
+.inline-add-button {
+  margin-top: 10px;
+}
+
+.import-checked-at {
+  margin-top: 14px;
+}
+
 .el-button--primary {
   background: linear-gradient(135deg, #4f7cff, #6d4dff);
   border: none;
