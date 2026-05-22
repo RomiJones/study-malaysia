@@ -14,7 +14,15 @@
     </main>
 
     <div class="floating-tools">
-      <RouterLink v-if="session.isLoggedIn" class="floating-tool" :class="{ active: route.path === '/favorites' }" to="/favorites">
+      <button class="floating-tool" type="button" @click="showCalculator = true">
+        <span class="floating-tool-icon">¥</span>
+        <span class="floating-tool-label">{{ t('nav.calculator') }}</span>
+      </button>
+      <button class="floating-tool" type="button" @click="showRecommend = true">
+        <span class="floating-tool-icon">荐</span>
+        <span class="floating-tool-label">{{ t('nav.recommend') }}</span>
+      </button>
+      <RouterLink class="floating-tool" :class="{ active: route.path === '/favorites' }" to="/favorites">
         <span class="floating-tool-icon">藏</span>
         <span class="floating-tool-label">{{ t('nav.favorites') }}</span>
         <span v-if="favoriteCount" class="floating-tool-badge">{{ favoriteCount }}</span>
@@ -57,7 +65,8 @@ const compareCount = computed(() => catalog.compareIds.length);
 
 onMounted(async () => {
   try {
-    await Promise.all([session.hydrateUser(), catalog.loadHomeMeta(), catalog.loadUniversities()]);
+    const [profile] = await Promise.all([session.hydrateUser(), catalog.loadHomeMeta(), catalog.loadUniversities()]);
+    if (profile) await catalog.loadUserCollections();
   } catch (error) {
     bootError.value = error instanceof Error ? error.message : "Unknown error";
   }

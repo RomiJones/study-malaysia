@@ -1,39 +1,49 @@
 <template>
-  <section class="grid gap-6">
-    <div class="section-card rounded-[32px] p-6 md:p-8">
-      <div class="flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
+  <section class="favorites-page">
+    <div class="section-card favorites-head">
+      <div class="favorites-head__row">
         <div>
-          <div class="text-xs font-bold uppercase tracking-[0.18em] text-slate-400">{{ t('nav.favorites') }}</div>
-          <h1 class="section-title mt-2">{{ t('favorites.title') }}</h1>
+          <div class="section-kicker">{{ t('nav.favorites') }}</div>
+          <h1 class="section-title">{{ t('favorites.title') }}</h1>
         </div>
-        <div class="text-sm text-slate-500">{{ t('favorites.summary', { universities: favoriteUniversities.length, programs: favoritePrograms.length }) }}</div>
+        <div class="favorites-summary">{{ t('favorites.summary', { universities: favoriteUniversities.length, programs: favoritePrograms.length }) }}</div>
       </div>
     </div>
 
-    <div v-if="!favoriteUniversities.length && !favoritePrograms.length" class="empty-state section-card rounded-[28px] p-8 text-center text-slate-500">
-      {{ t('favorites.empty') }}
+    <div v-if="catalog.syncLoading" class="inline-alert">{{ t('common.loading') }}</div>
+    <div v-if="catalog.syncError" class="inline-alert inline-alert--error">{{ catalog.syncError }}</div>
+
+    <div v-if="!favoriteUniversities.length && !favoritePrograms.length" class="fav-empty section-card">
+      <div class="fav-empty-icon">藏</div>
+      <strong>{{ t('favorites.empty') }}</strong>
+      <RouterLink class="btn btn-gold" to="/">{{ t('home.browseUniversities') }}</RouterLink>
     </div>
 
     <template v-else>
-      <div v-if="favoriteUniversities.length" class="grid gap-4">
-        <div class="text-xs font-bold uppercase tracking-[0.18em] text-slate-400">{{ t('favorites.universities') }}</div>
+      <div v-if="favoriteUniversities.length" class="favorites-section">
+        <div class="section-kicker">{{ t('favorites.universities') }}</div>
         <div class="university-grid">
           <UniversityCard v-for="item in favoriteUniversities" :key="item.id" :university="item" />
         </div>
       </div>
 
-      <div v-if="favoritePrograms.length" class="grid gap-4">
-        <div class="text-xs font-bold uppercase tracking-[0.18em] text-slate-400">{{ t('favorites.programs') }}</div>
-        <div class="program-grid">
-          <RouterLink v-for="item in favoritePrograms" :key="item.id" :to="`/programs/${item.slug}`" class="data-card rounded-[24px] p-5 card-hover">
-            <div class="text-xs font-bold uppercase tracking-[0.14em] text-slate-400">{{ item.code }}</div>
-            <h3 class="mt-2 text-xl font-black text-slate-900">{{ text(item.name) }}</h3>
-            <p class="mt-2 text-sm text-slate-500">{{ text(item.faculty) }}</p>
-            <div class="mt-4 flex flex-wrap gap-2">
-              <span class="filter-chip">CNY {{ formatCurrency(item.annualTuitionCny) }}{{ t('common.perYear') }}</span>
-              <span class="filter-chip">IELTS {{ item.languageRequirement.ielts }}+</span>
+      <div v-if="favoritePrograms.length" class="favorites-section">
+        <div class="section-kicker">{{ t('favorites.programs') }}</div>
+        <div class="favorite-program-grid">
+          <article v-for="item in favoritePrograms" :key="item.id" class="favorite-program-card">
+            <RouterLink :to="`/programs/${item.slug}`">
+              <div class="section-kicker">{{ item.code }}</div>
+              <h3>{{ text(item.name) }}</h3>
+              <p>{{ text(item.faculty) }}</p>
+              <div class="favorite-program-card__chips">
+                <span class="chip chip-ink">CNY {{ formatCurrency(item.annualTuitionCny) }}{{ t('common.perYear') }}</span>
+                <span class="chip chip-teal">IELTS {{ item.languageRequirement.ielts }}+</span>
+              </div>
+            </RouterLink>
+            <div class="favorite-program-card__actions">
+              <button class="btn btn-outline" type="button" @click="catalog.toggleFavoriteProgram(item.id)">移除收藏</button>
             </div>
-          </RouterLink>
+          </article>
         </div>
       </div>
     </template>
@@ -41,7 +51,7 @@
 </template>
 
 <script setup lang="ts">
-import { computed } from "vue";
+import { computed, onMounted } from "vue";
 import { RouterLink } from "vue-router";
 import { useI18n } from "vue-i18n";
 import UniversityCard from "../components/UniversityCard.vue";
@@ -55,4 +65,8 @@ const { text } = useLocaleText();
 
 const favoriteUniversities = computed(() => catalog.universities.filter((item) => catalog.favoriteState.universities.includes(item.id)));
 const favoritePrograms = computed(() => catalog.programs.filter((item) => catalog.favoriteState.programs.includes(item.id)));
+
+onMounted(async () => {
+  if (!catalog.universities.length || !catalog.programs.length) await catalog.loadUniversities();
+});
 </script>

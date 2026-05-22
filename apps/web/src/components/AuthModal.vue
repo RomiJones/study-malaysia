@@ -1,20 +1,20 @@
 <template>
-  <div class="modal-backdrop">
-    <div class="modal-panel auth-panel section-card">
-      <div class="flex items-center justify-between gap-4">
+  <div class="modal-backdrop" @click.self="session.closeAuth">
+    <div class="modal-panel auth-panel">
+      <div class="auth-modal-head">
         <div>
-          <div class="text-xs font-bold uppercase tracking-[0.16em] text-slate-400">{{ t('nav.login') }}</div>
-          <h3 class="mt-2 text-2xl font-black text-slate-900">{{ session.authMode === 'login' ? t('auth.titleLogin') : t('auth.titleRegister') }}</h3>
+          <div class="modal-kicker">{{ t('nav.login') }}</div>
+          <h3 class="auth-modal-title">{{ session.authMode === 'login' ? t('auth.titleLogin') : t('auth.titleRegister') }}</h3>
         </div>
-        <button class="ghost-action !rounded-full !px-4" @click="session.closeAuth">{{ t('common.close') }}</button>
+        <button class="modal-close" @click="session.closeAuth" aria-label="Close">×</button>
       </div>
 
-      <div class="mt-6 flex gap-3">
-        <button class="secondary-action flex-1" :class="{ 'primary-action': session.authMode === 'login' }" @click="session.authMode = 'login'">{{ t('auth.login') }}</button>
-        <button class="secondary-action flex-1" :class="{ 'primary-action': session.authMode === 'register' }" @click="session.authMode = 'register'">{{ t('auth.register') }}</button>
+      <div class="auth-tabs">
+        <button class="auth-tab" :class="{ active: session.authMode === 'login' }" @click="session.authMode = 'login'">{{ t('auth.login') }}</button>
+        <button class="auth-tab" :class="{ active: session.authMode === 'register' }" @click="session.authMode = 'register'">{{ t('auth.register') }}</button>
       </div>
 
-      <form class="mt-6 grid gap-4" @submit.prevent="submit">
+      <form class="auth-form" @submit.prevent="submit">
         <label class="field-shell">
           <span>{{ t('auth.method') }}</span>
           <select v-model="form.method">
@@ -36,8 +36,11 @@
           <span>{{ t('auth.displayName') }}</span>
           <input v-model="form.displayName" />
         </label>
-        <button class="primary-action w-full" type="submit">{{ session.authMode === 'login' ? t('auth.submitLogin') : t('auth.submitRegister') }}</button>
-        <p v-if="error" class="text-sm font-semibold text-red-600">{{ error }}</p>
+        <button class="btn btn-primary auth-submit" type="submit" :disabled="submitting">
+          {{ submitting ? t('common.loading') : session.authMode === 'login' ? t('auth.submitLogin') : t('auth.submitRegister') }}
+        </button>
+        <p v-if="syncNotice" class="inline-alert">{{ syncNotice }}</p>
+        <p v-if="error" class="inline-alert inline-alert--error">{{ error }}</p>
       </form>
     </div>
   </div>
@@ -47,12 +50,18 @@
 import { reactive, ref } from "vue";
 import { useRouter } from "vue-router";
 import { useI18n } from "vue-i18n";
+import { useCatalogStore } from "../stores/catalog";
+import { usePlannerStore } from "../stores/planner";
 import { useSessionStore } from "../stores/session";
 
 const session = useSessionStore();
+const catalog = useCatalogStore();
+const planner = usePlannerStore();
 const router = useRouter();
 const { t } = useI18n();
 const error = ref("");
+const submitting = ref(false);
+const syncNotice = ref("");
 const form = reactive({
   method: "email" as "phone" | "email" | "wechat" | "qq",
   account: "",
@@ -62,11 +71,18 @@ const form = reactive({
 
 async function submit() {
   error.value = "";
+  submitting.value = true;
+  syncNotice.value = "";
   try {
     await session.submitAuth(session.authMode, form);
+    syncNotice.value = "正在同步本地收藏和申请规划...";
+    await Promise.all([catalog.mergeLocalState(), planner.mergeLocalState()]);
+    session.closeAuth();
     router.push("/member");
   } catch (err) {
     error.value = err instanceof Error ? err.message : t('auth.failed');
+  } finally {
+    submitting.value = false;
   }
 }
 </script>

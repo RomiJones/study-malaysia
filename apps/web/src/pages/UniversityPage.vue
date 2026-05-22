@@ -329,6 +329,7 @@ import { useRoute, useRouter } from "vue-router";
 import { useI18n } from "vue-i18n";
 import { useLocaleText } from "../composables/useLocaleText";
 import { useCatalogStore } from "../stores/catalog";
+import { usePlannerStore } from "../stores/planner";
 import { formatCurrency } from "../utils/format";
 
 type UniversityDetailView = UniversityListItem & { programs: ProgramListItem[] };
@@ -339,6 +340,7 @@ const route = useRoute();
 const router = useRouter();
 const { t } = useI18n();
 const { text, array } = useLocaleText();
+const planner = usePlannerStore();
 
 const detail = computed(() => catalog.universityDetail as UniversityDetailView | null);
 const levelOrder: DegreeLevel[] = ["bachelor", "master", "phd"];
@@ -375,7 +377,10 @@ async function closeProgramModal() {
   await router.replace({ path: route.path, query: nextQuery });
 }
 
-function goPlanner() {
+async function goPlanner() {
+  if (catalog.selectedProgramDetail) {
+    await planner.addTask(catalog.selectedProgramDetail.university.id, catalog.selectedProgramDetail.id);
+  }
   void router.push("/planner");
 }
 

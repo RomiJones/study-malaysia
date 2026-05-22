@@ -24,6 +24,7 @@
           @click="handleMenuClick(item)"
         >
           <span class="nav-link__label">{{ item.label }}</span>
+          <span v-if="item.key === 'favorites' && favoriteCount" class="nav-link__badge">{{ favoriteCount }}</span>
         </component>
       </nav>
 
@@ -42,6 +43,7 @@
 import { computed } from "vue";
 import { RouterLink, useRoute } from "vue-router";
 import { useI18n } from "vue-i18n";
+import { useCatalogStore } from "../stores/catalog";
 import { useSessionStore } from "../stores/session";
 
 type HeaderMenuItem = {
@@ -58,12 +60,15 @@ const emit = defineEmits<{
 }>();
 
 const session = useSessionStore();
+const catalog = useCatalogStore();
 const route = useRoute();
 const { t, locale } = useI18n();
+const favoriteCount = computed(() => catalog.favoriteState.universities.length + catalog.favoriteState.programs.length);
 
 const menuItems = computed<HeaderMenuItem[]>(() => [
   { key: "home", label: t("nav.home"), to: "/" },
   { key: "planner", label: t("nav.planner"), to: "/planner" },
+  { key: "favorites", label: t("nav.favorites"), to: "/favorites" },
   { key: "calculator", label: t("nav.calculator"), action: "calculator" },
   { key: "recommend", label: t("nav.recommend"), action: "recommend" },
   { key: "compare", label: t("nav.compare"), to: "/compare" }

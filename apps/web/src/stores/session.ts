@@ -32,7 +32,6 @@ export const useSessionStore = defineStore("session", () => {
     user.value = response.user;
     localStorage.setItem(TOKEN_KEY, response.accessToken);
     localStorage.setItem(USER_KEY, JSON.stringify(response.user));
-    authOpen.value = false;
     return response.user;
   }
 

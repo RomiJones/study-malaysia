@@ -13,6 +13,7 @@
             <span class="filter-chip">{{ Number(catalog.programDetail.durationYears) }} {{ t('calculator.years') }}</span>
             <span class="filter-chip">IELTS {{ catalog.programDetail.languageRequirement.ielts }}+</span>
           </div>
+          <p v-if="planner.syncMessage" class="inline-alert mt-5">{{ planner.syncMessage }}</p>
         </div>
 
         <div class="grid gap-4">
@@ -79,14 +80,12 @@ import { computed, onMounted } from "vue";
 import { useI18n } from "vue-i18n";
 import { useCatalogStore } from "../stores/catalog";
 import { usePlannerStore } from "../stores/planner";
-import { useSessionStore } from "../stores/session";
 import { useLocaleText } from "../composables/useLocaleText";
 import { formatCurrency } from "../utils/format";
 
 const props = defineProps<{ slug: string }>();
 const catalog = useCatalogStore();
 const planner = usePlannerStore();
-const session = useSessionStore();
 const { t } = useI18n();
 const { text, array } = useLocaleText();
 
@@ -94,8 +93,4 @@ const levelLabel = computed(() => catalog.programDetail ? t(`degree.${catalog.pr
 const categoryLabel = computed(() => catalog.programDetail ? t(`category.${catalog.programDetail.category}`) : "");
 
 onMounted(() => catalog.loadProgram(props.slug));
-
-if (!session.isLoggedIn) {
-  session.openAuth('login');
-}
 </script>

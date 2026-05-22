@@ -1,45 +1,60 @@
 <template>
-  <div class="modal-backdrop">
-    <div class="modal-panel section-card">
-      <div class="flex items-center justify-between gap-4">
+  <div class="modal-backdrop" @click.self="$emit('close')">
+    <div class="tool-modal-inner tool-modal-inner--calculator">
+      <div class="tool-modal-header">
         <div>
-          <div class="text-xs font-bold uppercase tracking-[0.16em] text-slate-400">{{ t('calculator.title') }}</div>
-          <h3 class="mt-2 text-2xl font-black text-slate-900">{{ t('calculator.title') }}</h3>
+          <div class="tool-modal-kicker">{{ t('calculator.title') }}</div>
+          <h3>留学总费用估算</h3>
         </div>
-        <button class="ghost-action !rounded-full !px-4" @click="$emit('close')">{{ t('common.close') }}</button>
+        <button class="tool-modal-close" type="button" @click="$emit('close')">×</button>
       </div>
 
-      <div class="mt-6 grid gap-4 md:grid-cols-2">
-        <label class="field-shell">
-          <span>{{ t('calculator.school') }}</span>
-          <select v-model.number="selectedUniversityId" @change="resetProgram">
-            <option :value="0">{{ t('common.select') }}</option>
-            <option v-for="item in catalog.universities" :key="item.id" :value="item.id">{{ text(item.name) }}</option>
-          </select>
-        </label>
-        <label class="field-shell">
-          <span>{{ t('calculator.program') }}</span>
-          <select v-model.number="selectedProgramId">
-            <option :value="0">{{ t('common.select') }}</option>
-            <option v-for="item in availablePrograms" :key="item.id" :value="item.id">{{ text(item.name) }}</option>
-          </select>
-        </label>
-      </div>
-
-      <button class="primary-action mt-6" @click="loadEstimate">{{ t('calculator.start') }}</button>
-
-      <div v-if="estimate" class="mt-6 grid gap-4 md:grid-cols-3">
-        <div class="stat-card rounded-[24px] p-5">
-          <div class="text-xs font-bold uppercase tracking-[0.16em] text-slate-500">{{ t('calculator.duration') }}</div>
-          <div class="mt-3 text-3xl font-black text-slate-900">{{ estimate.durationYears }} {{ t('calculator.years') }}</div>
+      <div class="tool-modal-body">
+        <div class="calculator-picker">
+          <label class="field-shell">
+            <span>{{ t('calculator.school') }}</span>
+            <select v-model.number="selectedUniversityId" @change="resetProgram">
+              <option :value="0">{{ t('common.select') }}</option>
+              <option v-for="item in catalog.universities" :key="item.id" :value="item.id">{{ text(item.name) }}</option>
+            </select>
+          </label>
+          <label class="field-shell">
+            <span>{{ t('calculator.program') }}</span>
+            <select v-model.number="selectedProgramId" @change="applyProgramDefaults">
+              <option :value="0">{{ t('common.select') }}</option>
+              <option v-for="item in availablePrograms" :key="item.id" :value="item.id">{{ text(item.name) }}</option>
+            </select>
+          </label>
         </div>
-        <div class="stat-card rounded-[24px] p-5">
-          <div class="text-xs font-bold uppercase tracking-[0.16em] text-slate-500">{{ t('calculator.tuition') }}</div>
-          <div class="mt-3 text-3xl font-black text-slate-900">CNY {{ formatCurrency(estimate.tuitionTotal) }}</div>
+
+        <div class="calculator-grid">
+          <label class="field-shell">
+            <span>年学费（人民币）</span>
+            <input v-model.number="form.tuition" type="number" min="0" step="1000" />
+          </label>
+          <label class="field-shell">
+            <span>年生活费（人民币）</span>
+            <input v-model.number="form.living" type="number" min="0" step="1000" />
+          </label>
+          <label class="field-shell">
+            <span>{{ t('calculator.duration') }}</span>
+            <input v-model.number="form.duration" type="number" min="0.5" max="8" step="0.5" />
+          </label>
+          <label class="field-shell">
+            <span>其他费用（签证 / 机票等）</span>
+            <input v-model.number="form.misc" type="number" min="0" step="1000" />
+          </label>
         </div>
-        <div class="stat-card rounded-[24px] p-5">
-          <div class="text-xs font-bold uppercase tracking-[0.16em] text-slate-500">{{ t('calculator.total') }}</div>
-          <div class="mt-3 text-3xl font-black text-slate-900">CNY {{ formatCurrency(estimate.grandTotal) }}</div>
+
+        <div class="calc-result">
+          <div class="calc-result-label">预估总费用</div>
+          <div class="calc-result-total">CNY {{ formatCurrency(grandTotal) }}</div>
+          <div class="calc-breakdown">
+            <div class="calc-row"><span>年学费 × {{ form.duration }} 年</span><strong>CNY {{ formatCurrency(tuitionTotal) }}</strong></div>
+            <div class="calc-row"><span>年生活费 × {{ form.duration }} 年</span><strong>CNY {{ formatCurrency(livingTotal) }}</strong></div>
+            <div class="calc-row"><span>其他费用</span><strong>CNY {{ formatCurrency(form.misc) }}</strong></div>
+            <div class="calc-row calc-row--total"><span>年总成本</span><strong>CNY {{ formatCurrency(annualTotal) }}{{ t('common.perYear') }}</strong></div>
+          </div>
         </div>
       </div>
     </div>
@@ -47,35 +62,48 @@
 </template>
 
 <script setup lang="ts">
-import { computed, ref } from "vue";
+import { computed, reactive, ref } from "vue";
 import { useI18n } from "vue-i18n";
-import { apiFetch } from "../api/client";
 import { useLocaleText } from "../composables/useLocaleText";
 import { useCatalogStore } from "../stores/catalog";
 import { formatCurrency } from "../utils/format";
+
+defineEmits<{ (e: "close"): void }>();
 
 const catalog = useCatalogStore();
 const { t } = useI18n();
 const { text } = useLocaleText();
 const selectedUniversityId = ref(0);
 const selectedProgramId = ref(0);
-const estimate = ref<any>(null);
+const form = reactive({
+  tuition: 50000,
+  living: 25000,
+  duration: 3,
+  misc: 10000
+});
 
-const availablePrograms = computed(() => catalog.universityDetail?.id === selectedUniversityId.value
-  ? catalog.universityDetail.programs
-  : []);
+const availablePrograms = computed(() => catalog.programs.filter((item) => item.universityId === selectedUniversityId.value));
+const selectedUniversity = computed(() => catalog.universities.find((item) => item.id === selectedUniversityId.value));
+const selectedProgram = computed(() => catalog.programs.find((item) => item.id === selectedProgramId.value));
+const tuitionTotal = computed(() => Number(form.tuition || 0) * Number(form.duration || 0));
+const livingTotal = computed(() => Number(form.living || 0) * Number(form.duration || 0));
+const annualTotal = computed(() => Number(form.tuition || 0) + Number(form.living || 0));
+const grandTotal = computed(() => tuitionTotal.value + livingTotal.value + Number(form.misc || 0));
 
-async function resetProgram() {
+function resetProgram() {
   selectedProgramId.value = 0;
-  estimate.value = null;
-  const target = catalog.universities.find((item) => item.id === selectedUniversityId.value);
-  if (target) {
-    await catalog.loadUniversity(target.slug);
+  if (selectedUniversity.value) {
+    form.living = selectedUniversity.value.livingCostCny;
   }
 }
 
-async function loadEstimate() {
-  if (!selectedProgramId.value) return;
-  estimate.value = await apiFetch(`/programs/cost-estimate/${selectedProgramId.value}`);
+function applyProgramDefaults() {
+  if (selectedProgram.value) {
+    form.tuition = selectedProgram.value.annualTuitionCny;
+    form.duration = Number(selectedProgram.value.durationYears) || form.duration;
+  }
+  if (selectedUniversity.value) {
+    form.living = selectedUniversity.value.livingCostCny;
+  }
 }
 </script>

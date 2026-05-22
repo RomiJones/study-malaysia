@@ -7,6 +7,7 @@ import type {
   UniversityListItem
 } from "@studymy/shared";
 import { apiFetch } from "../api/client";
+import { useSessionStore } from "./session";
 
 const FAVORITES_KEY = "studymy_favorites";
 const COMPARE_KEY = "studymy_compare";
@@ -23,7 +24,17 @@ interface HomeMeta {
   contentBlocks: Array<{ id: number; key: string; title: Record<string, string>; body: Record<string, string> }>;
 }
 
+interface FavoriteSyncResponse {
+  universityIds?: number[];
+  programIds?: number[];
+}
+
+interface CompareSyncResponse {
+  universityIds?: number[];
+}
+
 export const useCatalogStore = defineStore("catalog", () => {
+  const session = useSessionStore();
   const homeMeta = ref<HomeMeta | null>(null);
   const universities = ref<UniversityListItem[]>([]);
   const programs = ref<ProgramListItem[]>([]);
@@ -34,7 +45,10 @@ export const useCatalogStore = defineStore("catalog", () => {
   const loading = ref(false);
   const searchLoading = ref(false);
   const programLoading = ref(false);
+  const syncLoading = ref(false);
   const errorMessage = ref("");
+  const syncMessage = ref("");
+  const syncError = ref("");
   const compareMessage = ref("");
   const search = ref("");
   const ownerships = ref<string[]>([]);
@@ -46,8 +60,10 @@ export const useCatalogStore = defineStore("catalog", () => {
   const tuitionMax = ref<number | null>(null);
   const homePage = ref(1);
   const pageSize = ref(8);
-  const favoriteState = ref<{ universities: number[]; programs: number[] }>(readStorage(FAVORITES_KEY, DEFAULT_FAVORITES));
-  const compareIds = ref<number[]>(readStorage(COMPARE_KEY, DEFAULT_COMPARE));
+  const favoriteState = ref<{ universities: number[]; programs: number[] }>(
+    normalizeFavoriteState(readStorage(FAVORITES_KEY, DEFAULT_FAVORITES))
+  );
+  const compareIds = ref<number[]>(normalizeIds(readStorage(COMPARE_KEY, DEFAULT_COMPARE)));
 
   const filteredUniversities = computed(() =>
     [...universities.value]
@@ -149,37 +165,168 @@ export const useCatalogStore = defineStore("catalog", () => {
     selectedProgramDetail.value = null;
   }
 
-  function toggleFavoriteUniversity(id: number) {
-    const index = favoriteState.value.universities.indexOf(id);
-    if (index >= 0) favoriteState.value.universities.splice(index, 1);
-    else favoriteState.value.universities.push(id);
+  async function loadUserCollections() {
+    if (!session.token) return;
+    syncLoading.value = true;
+    try {
+      const [favorites, compare] = await Promise.all([
+        apiFetch<FavoriteSyncResponse>("/favorites", {}, session.token),
+        apiFetch<CompareSyncResponse>("/compare", {}, session.token)
+      ]);
+      applyFavoriteResponse(favorites);
+      compareIds.value = normalizeIds(compare.universityIds || []);
+      persistCompare();
+      syncMessage.value = "已读取账户收藏和对比清单。";
+      syncError.value = "";
+    } catch (error) {
+      syncError.value = error instanceof Error ? error.message : "账户状态读取失败";
+    } finally {
+      syncLoading.value = false;
+    }
+  }
+
+  async function mergeLocalState() {
+    if (!session.token) return;
+    syncLoading.value = true;
+    try {
+      const [favorites, compare] = await Promise.all([
+        apiFetch<FavoriteSyncResponse>(
+          "/favorites/merge",
+          {
+            method: "POST",
+            body: JSON.stringify({
+              universityIds: favoriteState.value.universities,
+              programIds: favoriteState.value.programs
+            })
+          },
+          session.token
+        ),
+        apiFetch<CompareSyncResponse>(
+          "/compare/merge",
+          {
+            method: "POST",
+            body: JSON.stringify({ universityIds: compareIds.value })
+          },
+          session.token
+        )
+      ]);
+      applyFavoriteResponse(favorites);
+      compareIds.value = normalizeIds(compare.universityIds || compareIds.value);
+      persistCompare();
+      syncMessage.value = "已同步本地收藏、专业收藏和对比清单。";
+      syncError.value = "";
+    } catch (error) {
+      syncError.value = error instanceof Error ? error.message : "收藏同步失败，本地数据已保留";
+    } finally {
+      syncLoading.value = false;
+    }
+  }
+
+  function applyFavoriteResponse(response: FavoriteSyncResponse) {
+    favoriteState.value = {
+      universities: normalizeIds(response.universityIds || favoriteState.value.universities),
+      programs: normalizeIds(response.programIds || favoriteState.value.programs)
+    };
+    persistFavorites();
+  }
+
+  function persistFavorites() {
     localStorage.setItem(FAVORITES_KEY, JSON.stringify(favoriteState.value));
   }
 
-  function toggleFavoriteProgram(id: number) {
-    const index = favoriteState.value.programs.indexOf(id);
-    if (index >= 0) favoriteState.value.programs.splice(index, 1);
-    else favoriteState.value.programs.push(id);
-    localStorage.setItem(FAVORITES_KEY, JSON.stringify(favoriteState.value));
+  function persistCompare() {
+    localStorage.setItem(COMPARE_KEY, JSON.stringify(compareIds.value));
   }
 
-  function toggleCompare(id: number) {
+  async function toggleFavoriteUniversity(id: number) {
+    await toggleFavorite("university", id);
+  }
+
+  async function toggleFavoriteProgram(id: number) {
+    await toggleFavorite("program", id);
+  }
+
+  async function toggleFavorite(type: "university" | "program", id: number) {
+    const key = type === "university" ? "universities" : "programs";
+    const previous = {
+      universities: [...favoriteState.value.universities],
+      programs: [...favoriteState.value.programs]
+    };
+    const list = favoriteState.value[key];
+    const index = list.indexOf(id);
+    const nextIsActive = index < 0;
+
+    if (index >= 0) list.splice(index, 1);
+    else list.push(id);
+    favoriteState.value[key] = normalizeIds(list);
+    persistFavorites();
+
+    if (!session.token) return;
+
+    try {
+      const response = await apiFetch<FavoriteSyncResponse>(
+        `/favorites/${key}/${id}`,
+        { method: nextIsActive ? "POST" : "DELETE" },
+        session.token
+      );
+      applyFavoriteResponse(response);
+      syncError.value = "";
+    } catch (error) {
+      favoriteState.value = previous;
+      persistFavorites();
+      syncError.value = error instanceof Error ? error.message : "收藏保存失败";
+    }
+  }
+
+  async function toggleCompare(id: number) {
     compareMessage.value = "";
+    const previous = [...compareIds.value];
     const index = compareIds.value.indexOf(id);
+    const nextIsActive = index < 0;
     if (index >= 0) compareIds.value.splice(index, 1);
     else if (compareIds.value.length < 4) compareIds.value.push(id);
     else {
       compareMessage.value = "最多只能同时对比 4 所院校";
       return false;
     }
-    localStorage.setItem(COMPARE_KEY, JSON.stringify(compareIds.value));
+    compareIds.value = normalizeIds(compareIds.value).slice(0, 4);
+    persistCompare();
+
+    if (session.token) {
+      try {
+        const response = await apiFetch<CompareSyncResponse>(
+          nextIsActive ? `/compare/universities/${id}` : `/compare/universities/${id}`,
+          { method: nextIsActive ? "POST" : "DELETE" },
+          session.token
+        );
+        compareIds.value = normalizeIds(response.universityIds || compareIds.value).slice(0, 4);
+        persistCompare();
+        syncError.value = "";
+      } catch (error) {
+        compareIds.value = previous;
+        persistCompare();
+        syncError.value = error instanceof Error ? error.message : "对比清单保存失败";
+      }
+    }
     return true;
   }
 
-  function clearCompare() {
+  async function clearCompare() {
+    const previous = [...compareIds.value];
     compareIds.value = [];
     compareMessage.value = "";
-    localStorage.setItem(COMPARE_KEY, JSON.stringify(compareIds.value));
+    persistCompare();
+
+    if (!session.token) return;
+    try {
+      const response = await apiFetch<CompareSyncResponse>("/compare", { method: "DELETE" }, session.token);
+      compareIds.value = normalizeIds(response.universityIds || []);
+      persistCompare();
+    } catch (error) {
+      compareIds.value = previous;
+      persistCompare();
+      syncError.value = error instanceof Error ? error.message : "清空对比清单失败";
+    }
   }
 
   function setHomePage(value: number) {
@@ -201,7 +348,10 @@ export const useCatalogStore = defineStore("catalog", () => {
     loading,
     searchLoading,
     programLoading,
+    syncLoading,
     errorMessage,
+    syncMessage,
+    syncError,
     compareMessage,
     search,
     ownerships,
@@ -224,6 +374,8 @@ export const useCatalogStore = defineStore("catalog", () => {
     clearSearchSuggestions,
     openProgramDetail,
     closeProgramDetail,
+    loadUserCollections,
+    mergeLocalState,
     toggleFavoriteUniversity,
     toggleFavoriteProgram,
     toggleCompare,
@@ -240,6 +392,21 @@ function readStorage<T>(key: string, fallback: T): T {
   } catch {
     return structuredClone(fallback);
   }
+}
+
+function normalizeFavoriteState(value: unknown) {
+  const source = value && typeof value === "object" && !Array.isArray(value)
+    ? value as { universities?: unknown; programs?: unknown }
+    : DEFAULT_FAVORITES;
+  return {
+    universities: normalizeIds(source.universities),
+    programs: normalizeIds(source.programs)
+  };
+}
+
+function normalizeIds(value: unknown) {
+  if (!Array.isArray(value)) return [];
+  return Array.from(new Set(value.map(Number).filter((id) => Number.isInteger(id) && id > 0)));
 }
 
 function compareUniversities(a: UniversityListItem, b: UniversityListItem) {
