@@ -16,6 +16,7 @@ import type {
   UniversityListItem
 } from "@studymy/shared";
 import { apiFetch } from "../api/client";
+import { localizedText } from "../i18n/localeTransforms";
 import { runtimeText } from "../i18n/runtimeText";
 import { useCatalogStore } from "./catalog";
 import { useSessionStore } from "./session";
@@ -312,25 +313,25 @@ export const usePlannerStore = defineStore("planner", () => {
 
 function buildMaterials(profile: PlannerProfileState, progress: Record<string, MaterialStatus>): PlannerMaterialItem[] {
   const base = [
-    material("passport", "Passport bio page", "护照首页扫描件", "Clear scan with at least six months validity."),
-    material("photo", "ID photo", "白底证件照", "Use recent white-background ID photos."),
-    material("transcript", "Academic transcript", "英文版成绩单", "Official or school-issued English transcript."),
-    material("language", "Language score", "英语成绩证明", "IELTS, TOEFL or accepted conditional-language route.")
+    material("passport", "Passport bio page", "护照首页扫描件", "Halaman biodata pasport", "Clear scan with at least six months validity.", "清晰扫描件，护照有效期至少六个月。", "Salinan imbasan jelas dengan tempoh sah sekurang-kurangnya enam bulan."),
+    material("photo", "ID photo", "白底证件照", "Foto pengenalan berlatar putih", "Use recent white-background ID photos.", "使用近期白底证件照。", "Gunakan foto pengenalan terkini dengan latar belakang putih."),
+    material("transcript", "Academic transcript", "英文版成绩单", "Transkrip akademik", "Official or school-issued English transcript.", "学校或官方出具的英文成绩单。", "Transkrip bahasa Inggeris yang dikeluarkan oleh sekolah atau pihak rasmi."),
+    material("language", "Language score", "英语成绩证明", "Bukti skor bahasa Inggeris", "IELTS, TOEFL or accepted conditional-language route.", "IELTS、TOEFL 或学校认可的条件语言路径。", "IELTS, TOEFL atau laluan bahasa bersyarat yang diterima universiti.")
   ];
   const levelMaterials: Record<DegreeLevel, PlannerMaterialItem[]> = {
     bachelor: [
-      material("high_school", "High school certificate", "高中毕业证或在读证明", "Graduation certificate or enrollment certificate."),
-      material("personal_statement", "Personal statement", "个人陈述", "Draft your study motivation and academic fit.")
+      material("high_school", "High school certificate", "高中毕业证或在读证明", "Sijil sekolah menengah atau surat pengesahan pelajar", "Graduation certificate or enrollment certificate.", "高中毕业证，或仍在读学生的在读证明。", "Sijil tamat sekolah atau surat pengesahan masih belajar."),
+      material("personal_statement", "Personal statement", "个人陈述", "Penyataan peribadi", "Draft your study motivation and academic fit.", "说明学习动机、专业匹配度和未来规划。", "Terangkan motivasi belajar, kesesuaian akademik dan rancangan masa depan.")
     ],
     master: [
-      material("degree_certificate", "Bachelor degree documents", "本科毕业证与学位证", "Degree certificate and graduation certificate."),
-      material("study_plan", "Study plan", "个人陈述或 Study Plan", "Explain academic background and study plan."),
-      material("recommendation", "Recommendation letter", "推荐信 1-2 封", "Academic or professional references.")
+      material("degree_certificate", "Bachelor degree documents", "本科毕业证与学位证", "Dokumen ijazah sarjana muda", "Degree certificate and graduation certificate.", "本科毕业证和学位证。", "Sijil ijazah dan sijil tamat pengajian sarjana muda."),
+      material("study_plan", "Study plan", "个人陈述或学习计划", "Pelan pengajian", "Explain academic background and study plan.", "说明学术背景、申请动机和学习计划。", "Terangkan latar akademik, motivasi permohonan dan pelan pengajian."),
+      material("recommendation", "Recommendation letter", "推荐信 1-2 封", "Surat cadangan", "Academic or professional references.", "准备 1-2 封学术或职业推荐信。", "Sediakan 1-2 surat cadangan akademik atau profesional.")
     ],
     phd: [
-      material("master_degree", "Master degree documents", "硕士学位材料", "Master transcript and degree certificate."),
-      material("research_proposal", "Research proposal", "研究计划书", "Research topic, method and supervisor fit."),
-      material("academic_cv", "Academic CV", "学术简历或论文成果", "Include publications, research projects and awards.")
+      material("master_degree", "Master degree documents", "硕士学位材料", "Dokumen ijazah sarjana", "Master transcript and degree certificate.", "硕士成绩单、毕业证和学位证。", "Transkrip sarjana, sijil tamat pengajian dan sijil ijazah."),
+      material("research_proposal", "Research proposal", "研究计划书", "Cadangan penyelidikan", "Research topic, method and supervisor fit.", "说明研究主题、方法和潜在导师匹配度。", "Terangkan topik penyelidikan, kaedah dan kesesuaian penyelia."),
+      material("academic_cv", "Academic CV", "学术简历或论文成果", "CV akademik atau hasil penerbitan", "Include publications, research projects and awards.", "包含论文、研究项目和奖项等学术成果。", "Sertakan penerbitan, projek penyelidikan dan anugerah akademik.")
     ]
   };
 
@@ -373,26 +374,26 @@ function scoreProgram(profile: PlannerProfileState, program: ProgramListItem, un
 
   if (profile.gpa >= program.requirement.gpa) {
     score += 28;
-    pushReason(reasons, "Academic background fits", "学术背景匹配");
+    pushReason(reasons, "Academic background fits", "学术背景匹配", "Latar akademik sepadan");
   } else if (profile.gpa + 0.3 >= program.requirement.gpa) {
     score += 16;
-    pushReason(reasons, "Academic background is close", "学术背景接近要求");
+    pushReason(reasons, "Academic background is close", "学术背景接近要求", "Latar akademik hampir memenuhi syarat");
   }
 
   if (profile.ielts >= program.languageRequirement.ielts) {
     score += 24;
-    pushReason(reasons, "Language score already meets the requirement", "语言成绩已达标");
+    pushReason(reasons, "Language score already meets the requirement", "语言成绩已达标", "Skor bahasa sudah memenuhi syarat");
   } else if (profile.acceptNoLanguage && university.acceptNoLanguage) {
     score += 14;
-    pushReason(reasons, "Conditional language pathway is available", "支持先申请后补语言");
+    pushReason(reasons, "Conditional language pathway is available", "支持先申请后补语言", "Laluan bahasa bersyarat tersedia");
   }
 
   if (annualCostCny <= profile.budgetCny) {
     score += 20;
-    pushReason(reasons, "First-year cost fits the budget", "首年成本在预算内");
+    pushReason(reasons, "First-year cost fits the budget", "首年成本在预算内", "Kos tahun pertama dalam belanjawan");
   } else if (annualCostCny <= profile.budgetCny * 1.2) {
     score += 10;
-    pushReason(reasons, "First-year cost is close to the budget", "首年成本接近预算");
+    pushReason(reasons, "First-year cost is close to the budget", "首年成本接近预算", "Kos tahun pertama hampir dengan belanjawan");
   }
 
   if (university.qsRank <= 200) score += 12;
@@ -453,11 +454,19 @@ function advanceLocalTask(task: PlannerApplicationItem): PlannerApplicationItem 
   };
 }
 
-function material(key: string, en: string, zh: string, noteEn: string): PlannerMaterialItem {
+function material(
+  key: string,
+  nameEn: string,
+  nameZh: string,
+  nameMs: string,
+  noteEn: string,
+  noteZh: string,
+  noteMs: string
+): PlannerMaterialItem {
   return {
     key,
-    name: text(en, zh),
-    note: text(noteEn, zh),
+    name: text(nameEn, nameZh, nameMs),
+    note: text(noteEn, noteZh, noteMs),
     status: "wait"
   };
 }
@@ -665,7 +674,7 @@ function normalizeStage(value: unknown): ApplicationStage {
 }
 
 function normalizeLocalizedText(value: unknown, fallback: LocalizedText): LocalizedText {
-  if (typeof value === "string") return text(value, value);
+  if (typeof value === "string") return text(value, value, value);
   if (!value || typeof value !== "object") return fallback;
   const source = value as Record<string, string>;
   return {
@@ -703,48 +712,43 @@ function getReadiness(profile: PlannerProfileState, materialCompletion: number, 
   );
 }
 
-function pushReason(target: LocalizedStringArray, en: string, zh: string) {
+function pushReason(target: LocalizedStringArray, en: string, zh: string, ms: string) {
   target.en.push(en);
-  target.ms.push(en);
+  target.ms.push(ms);
   target["zh-CN"].push(zh);
-  target["zh-TW"].push(zh);
+  target["zh-TW"].push(text(en, zh, ms)["zh-TW"]);
 }
 
 function tierText(tier: "reach" | "target" | "safe"): LocalizedText {
-  if (tier === "reach") return text("Reach", "冲刺");
-  if (tier === "target") return text("Target", "主申");
-  return text("Safe", "保底");
+  if (tier === "reach") return text("Reach", "冲刺", "Reach");
+  if (tier === "target") return text("Target", "主申", "Target");
+  return text("Safe", "保底", "Safe");
 }
 
 function stageDeadline(stage: ApplicationStage): LocalizedText {
   const map: Record<ApplicationStage, LocalizedText> = {
-    draft: text("Within 7 days", "建议 7 天内确认"),
-    materials: text("Within 10 days", "建议 10 天内补齐"),
-    ready: text("Within 14 days", "建议 14 天内递交"),
-    review: text("Keep following up", "保持跟进"),
-    "conditional-offer": text("Follow offer timeline", "按 offer 节点推进"),
-    visa: text("Per visa requirement", "按签证要求推进")
+    draft: text("Within 7 days", "建议 7 天内确认", "Dalam 7 hari"),
+    materials: text("Within 10 days", "建议 10 天内补齐", "Dalam 10 hari"),
+    ready: text("Within 14 days", "建议 14 天内递交", "Dalam 14 hari"),
+    review: text("Keep following up", "保持跟进", "Teruskan susulan"),
+    "conditional-offer": text("Follow offer timeline", "按录取节点推进", "Ikut garis masa tawaran"),
+    visa: text("Per visa requirement", "按签证要求推进", "Ikut syarat visa")
   };
   return map[stage];
 }
 
 function stageNextAction(stage: ApplicationStage): LocalizedText {
   const map: Record<ApplicationStage, LocalizedText> = {
-    draft: text("Confirm shortlist and required materials.", "确认目标名单与材料包。"),
-    materials: text("Complete language, recommendation and degree documents.", "补齐语言、推荐信和学历材料。"),
-    ready: text("Submit form and fee package.", "完成表单与申请费准备。"),
-    review: text("Track review feedback and missing documents.", "跟进审核反馈与补件。"),
-    "conditional-offer": text("Close offer conditions and deposit steps.", "完成 conditional offer 条件与押金步骤。"),
-    visa: text("Move into visa and pre-departure workflow.", "转入签证与行前流程。")
+    draft: text("Confirm shortlist and required materials.", "确认目标名单与材料包。", "Sahkan senarai pendek dan bahan yang diperlukan."),
+    materials: text("Complete language, recommendation and degree documents.", "补齐语言、推荐信和学历材料。", "Lengkapkan dokumen bahasa, cadangan dan ijazah."),
+    ready: text("Submit form and fee package.", "完成表单与申请费准备。", "Sediakan borang dan bayaran permohonan."),
+    review: text("Track review feedback and missing documents.", "跟进审核反馈与补件。", "Pantau maklum balas semakan dan dokumen tambahan."),
+    "conditional-offer": text("Close conditional offer requirements and deposit steps.", "完成条件录取要求与押金步骤。", "Lengkapkan syarat tawaran bersyarat dan langkah deposit."),
+    visa: text("Move into visa and pre-departure workflow.", "转入签证与行前流程。", "Teruskan ke aliran visa dan pra-berlepas.")
   };
   return map[stage];
 }
 
-function text(en: string, zh: string): LocalizedText {
-  return {
-    en,
-    ms: en,
-    "zh-CN": zh,
-    "zh-TW": zh
-  };
+function text(en: string, zh: string, ms: string): LocalizedText {
+  return localizedText(en, zh, ms);
 }

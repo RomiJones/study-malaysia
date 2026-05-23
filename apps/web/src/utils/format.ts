@@ -10,6 +10,7 @@ import type {
   SupportedLocale,
   TuitionCurrency
 } from "@studymy/shared";
+import { toTraditionalText } from "../i18n/localeTransforms";
 
 export const OFFICIAL_PAGE_FALLBACK = "以学校官方页面为准";
 export const OFFICIAL_CONFIRMATION_FALLBACK = "待官方确认";
@@ -35,22 +36,22 @@ const localizedFormatText = {
     sourceNeedsReview: "Pending review"
   },
   ms: {
-    officialPageFallback: "Refer to the official university page",
-    officialConfirmationFallback: "Pending official confirmation",
-    notAvailableForInternational: "Not applicable to international students",
-    yes: "Yes",
-    no: "No",
-    years: "years",
-    detailPageNote: "See detail page notes",
-    feeMatchedOfficial: "Officially verified",
-    feeNotPublished: "Not published officially",
-    feeSourceReview: "Fee source needs review",
-    sourceOfficialVerified: "Official source verified",
-    sourceNotAvailable: "Official page verified but not open",
-    sourceMissing: "Official source missing",
-    sourceConflict: "Source needs review",
-    sourceHidden: "Not included in public display",
-    sourceNeedsReview: "Pending review"
+    officialPageFallback: "Rujuk halaman rasmi universiti",
+    officialConfirmationFallback: "Menunggu pengesahan rasmi",
+    notAvailableForInternational: "Tidak terpakai untuk pelajar antarabangsa",
+    yes: "Ya",
+    no: "Tidak",
+    years: "tahun",
+    detailPageNote: "Lihat nota halaman butiran",
+    feeMatchedOfficial: "Disahkan rasmi",
+    feeNotPublished: "Belum diterbitkan secara rasmi",
+    feeSourceReview: "Sumber yuran perlu disemak",
+    sourceOfficialVerified: "Sumber rasmi disahkan",
+    sourceNotAvailable: "Halaman rasmi disahkan tetapi belum dibuka",
+    sourceMissing: "Sumber rasmi tiada",
+    sourceConflict: "Sumber perlu disemak",
+    sourceHidden: "Tidak termasuk dalam paparan awam",
+    sourceNeedsReview: "Menunggu semakan"
   },
   "zh-CN": {
     officialPageFallback: OFFICIAL_PAGE_FALLBACK,
@@ -165,8 +166,9 @@ export function normalizeAcademicText(value: unknown, fallback?: string, locale?
   const actualFallback = fallback ?? officialPageFallback(locale);
   const text = cleanDisplayText(value, "", locale);
   if (!text) return actualFallback;
+  const normalizedLocale = normalizeLocale(locale);
   const normalized = isChineseLocale(locale)
-    ? text
+    ? (normalizedLocale === "zh-TW" ? toTraditionalText(text) : text)
       .replace(/Not offered for the Academic Session 2026\/2027/gi, "2026/2027 学年不开放")
       .replace(/Not offered/gi, "暂不开放")
       .replace(/Semester 1 \(October\) Intake/gi, "第一学期（10月）")
@@ -184,11 +186,30 @@ export function normalizeAcademicText(value: unknown, fallback?: string, locale?
       .replace(/\band\b/gi, "及")
       .replace(/\s+\/\s+year/gi, " / 年")
       .trim()
+    : normalizedLocale === "ms"
+      ? text
+        .replace(/Not offered for the Academic Session 2026\/2027/gi, "Tidak ditawarkan untuk tahun akademik 2026/2027")
+        .replace(/Not offered/gi, "Tidak ditawarkan")
+        .replace(/Semester 1 \(October\) Intake/gi, "Ambilan Semester 1 (Oktober)")
+        .replace(/Semester 2 \(March\) Intake/gi, "Ambilan Semester 2 (Mac)")
+        .replace(/October Intake/gi, "Ambilan Oktober")
+        .replace(/March Intake/gi, "Ambilan Mac")
+        .replace(/October/gi, "Oktober")
+        .replace(/March/gi, "Mac")
+        .replace(/September/gi, "September")
+        .replace(/Rolling/gi, "Ambilan bergilir")
+        .replace(/Years?/gi, "tahun")
+        .replace(/Semesters?/gi, "semester")
+        .replace(/Full time/gi, "sepenuh masa")
+        .replace(/Coursework/gi, "kerja kursus")
+        .replace(/\band\b/gi, "dan")
+        .replace(/\s+\/\s+year/gi, " / tahun")
+        .trim()
     : text
       .replace(/Not offered for the Academic Session 2026\/2027/gi, "Not offered for the 2026/2027 academic year")
       .replace(/\s+\/\s+year/gi, " / year")
       .trim();
-  return cleanDisplayText(normalized, actualFallback, locale);
+  return cleanDisplayText(normalizedLocale === "zh-TW" ? toTraditionalText(normalized) : normalized, actualFallback, locale);
 }
 
 function currencyPrefix(currency?: TuitionCurrency | null): string {

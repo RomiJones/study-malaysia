@@ -327,9 +327,9 @@ function tierChipClass(index: number) {
 }
 
 function taskTierClass(item: { tier: Record<string, string> }) {
-  const value = text(item.tier as any);
-  if (value.includes("冲刺") || value.toLowerCase().includes("reach")) return "tier-sprint";
-  if (value.includes("主申") || value.toLowerCase().includes("target")) return "tier-main";
+  const value = `${item.tier.en || ""} ${item.tier["zh-CN"] || ""} ${item.tier["zh-TW"] || ""}`.toLowerCase();
+  if (value.includes("冲刺") || value.includes("衝刺") || value.includes("reach")) return "tier-sprint";
+  if (value.includes("主申") || value.includes("target")) return "tier-main";
   return "tier-safe";
 }
 
@@ -339,12 +339,12 @@ function stageLabel(stage: ApplicationStage) {
 
 function programName(programId: number) {
   const program = catalog.programs.find((item) => item.id === programId);
-  return program ? text(program.name) : `Program #${programId}`;
+  return program ? text(program.name) : `${t('common.program')} #${programId}`;
 }
 
 function universityName(universityId: number) {
   const university = catalog.universities.find((item) => item.id === universityId);
-  return university ? text(university.name) : `University #${universityId}`;
+  return university ? text(university.name) : `${t('common.university')} #${universityId}`;
 }
 
 function annualCost(universityId: number, programId: number) {
