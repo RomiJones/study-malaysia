@@ -71,6 +71,12 @@ describe("web display format helpers", () => {
     assert.equal(formatCategoryLabel("Education", "ms"), "Pendidikan");
     assert.equal(formatCategoryLabel("Arts and Social Sciences", "en"), "Arts and Social Sciences");
     assert.equal(formatCategoryLabel("Arts and Social Sciences", "zh-CN"), "文学与社会科学");
+    assert.equal(formatCategoryLabel("理科", "en"), "Science");
+    assert.equal(formatCategoryLabel("商科", "ms"), "Perniagaan");
+    assert.equal(formatCategoryLabel("建筑与建成环境", "zh-TW"), "建築與建成環境");
+    assert.equal(formatCategoryLabel("医学 / 护理", "en"), "Medicine");
+    assert.equal(formatCategoryLabel("计算机 / IT", "ms"), "Teknologi Maklumat");
+    assert.equal(formatCategoryLabel("未知分类", "en"), "Other programmes");
   });
 
   test("prevents Chinese dynamic text on English and Malay pages", () => {
@@ -94,6 +100,8 @@ describe("web display format helpers", () => {
   test("converts real simplified dynamic samples on Traditional Chinese pages", () => {
     assert.equal(cleanDisplayText("心胸外科学临床型硕士", "", "zh-TW"), "心胸外科學臨床型碩士");
     assert.equal(cleanDisplayText("医学执业注册资格", "", "zh-TW"), "醫學執業註冊資格");
+    assert.equal(cleanDisplayText("软件工程硕士（软件技术）", "", "zh-TW"), "軟體工程碩士（軟體技術）");
+    assert.equal(cleanDisplayText("管理责任与农业生物安全公开信息", "", "zh-TW"), "管理責任與農業生物安全公開資訊");
   });
 
   test("formats programme faculty without leaking Chinese fallback across locales", () => {

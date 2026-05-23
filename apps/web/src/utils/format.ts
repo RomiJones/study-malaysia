@@ -160,17 +160,70 @@ const unknownCategoryLabels = {
 
 const extraCategoryLabelMap = extraCategoryLabels as Record<string, LocalizedText>;
 
+const categoryAliasLabels = {
+  商科: CATEGORY_LABELS.business,
+  商学: CATEGORY_LABELS.business,
+  商業: CATEGORY_LABELS.business,
+  工科: CATEGORY_LABELS.engineering,
+  工程: CATEGORY_LABELS.engineering,
+  工程学: CATEGORY_LABELS.engineering,
+  工程學: CATEGORY_LABELS.engineering,
+  理科: CATEGORY_LABELS.science,
+  科学: CATEGORY_LABELS.science,
+  科學: CATEGORY_LABELS.science,
+  医学: CATEGORY_LABELS.medicine,
+  醫學: CATEGORY_LABELS.medicine,
+  医科: CATEGORY_LABELS.medicine,
+  醫科: CATEGORY_LABELS.medicine,
+  文科: CATEGORY_LABELS.arts,
+  艺术: CATEGORY_LABELS.arts,
+  藝術: CATEGORY_LABELS.arts,
+  法学: CATEGORY_LABELS.law,
+  法學: CATEGORY_LABELS.law,
+  法律: CATEGORY_LABELS.law,
+  教育: extraCategoryLabels.education,
+  酒店: extraCategoryLabels.hospitality,
+  旅游: extraCategoryLabels.hospitality,
+  旅遊: extraCategoryLabels.hospitality,
+  酒店与旅游: extraCategoryLabels.hospitality,
+  酒店與旅遊: extraCategoryLabels.hospitality,
+  计算机: extraCategoryLabels["computer science"],
+  電腦: extraCategoryLabels["computer science"],
+  计算机科学: extraCategoryLabels["computer science"],
+  電腦科學: extraCategoryLabels["computer science"],
+  信息技术: CATEGORY_LABELS.it,
+  資訊技術: CATEGORY_LABELS.it,
+  人文社科: extraCategoryLabels["arts and social sciences"],
+  社会科学: extraCategoryLabels["arts and social sciences"],
+  社會科學: extraCategoryLabels["arts and social sciences"],
+  建筑: extraCategoryLabels["architecture and built environment"],
+  建築: extraCategoryLabels["architecture and built environment"],
+  建筑与建成环境: extraCategoryLabels["architecture and built environment"],
+  建築與建成環境: extraCategoryLabels["architecture and built environment"]
+} satisfies Record<string, LocalizedText>;
+
+const categoryAliasLabelMap = categoryAliasLabels as Record<string, LocalizedText>;
+
 const categoryKeywordLabels: Array<[RegExp, LocalizedText]> = [
   [/clinical\s+medicine/i, extraCategoryLabels["clinical medicine"]],
   [/arts?.*social|social.*arts|social sciences?/i, extraCategoryLabels["arts and social sciences"]],
+  [/商|管理|会计|會計|金融|经济|經濟/i, CATEGORY_LABELS.business],
   [/business|account|finance|economic|management|marketing/i, CATEGORY_LABELS.business],
+  [/计算机|計算機|电脑|電腦|信息技术|資訊技術|软件|軟體|数据|資料|网络|網路|人工智能|人工智慧/i, CATEGORY_LABELS.it],
   [/information technology|computer|software|data|digital|cyber|artificial intelligence|\bit\b/i, CATEGORY_LABELS.it],
+  [/工程|工科|建筑|建築|建成环境|建成環境/i, CATEGORY_LABELS.engineering],
   [/engineer|built environment|architecture|construction|quantity survey|urban/i, CATEGORY_LABELS.engineering],
+  [/医学|醫學|医科|醫科|临床|臨床|药学|藥學|牙科|护理|護理|健康/i, CATEGORY_LABELS.medicine],
   [/medicine|medical|health|pharmacy|dentistry|nursing|clinical/i, CATEGORY_LABELS.medicine],
+  [/教育|教学|教學/i, extraCategoryLabels.education],
   [/education|tesl|teaching|pedagogy/i, extraCategoryLabels.education],
+  [/法律|法学|法學/i, CATEGORY_LABELS.law],
   [/law|legal/i, CATEGORY_LABELS.law],
+  [/酒店|旅游|旅遊/i, extraCategoryLabels.hospitality],
   [/hospitality|tourism|event/i, extraCategoryLabels.hospitality],
+  [/科学|科學|理科|生物|化学|化學|物理|数学|數學|统计|統計/i, CATEGORY_LABELS.science],
   [/science|biology|chemistry|physics|mathematics|statistics/i, CATEGORY_LABELS.science],
+  [/艺术|藝術|设计|設計|媒体|媒體|传播|傳播|语言|語言|文学|文學|社会科学|社會科學|人文/i, CATEGORY_LABELS.arts],
   [/art|design|media|communication|language|linguistics/i, CATEGORY_LABELS.arts]
 ];
 
@@ -212,7 +265,7 @@ export function formatCategoryLabel(value: unknown, locale?: SupportedLocale): s
   if (!key) return unknownCategoryLabels[normalizedLocale];
 
   const coreLabels = CATEGORY_LABELS as Record<string, LocalizedText>;
-  const exactLabel = coreLabels[key] || extraCategoryLabelMap[key];
+  const exactLabel = coreLabels[key] || extraCategoryLabelMap[key] || categoryAliasLabelMap[key];
   const keywordLabel = exactLabel || categoryKeywordLabels.find(([pattern]) => pattern.test(key))?.[1];
   if (keywordLabel) {
     return cleanDisplayText(
@@ -223,7 +276,7 @@ export function formatCategoryLabel(value: unknown, locale?: SupportedLocale): s
   }
 
   const displayText = String(value).trim().replace(/[-_]+/g, " ").replace(/\s+/g, " ");
-  if (normalizedLocale === "en") return titleCaseCategory(displayText);
+  if (normalizedLocale === "en" && !containsCjkText(displayText)) return titleCaseCategory(displayText);
   if (isChineseLocale(normalizedLocale) && containsCjkText(displayText)) {
     return cleanDisplayText(displayText, unknownCategoryLabels[normalizedLocale], normalizedLocale);
   }

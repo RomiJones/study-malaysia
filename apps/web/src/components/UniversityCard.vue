@@ -2,13 +2,13 @@
   <article class="university-card">
     <div class="university-card__media">
       <img
-        v-if="university.imageUrl"
+        v-if="university.imageUrl && !hasImageError"
         :src="university.imageUrl"
         :alt="text(university.name)"
         class="university-card__image"
         @error="handleMediaError"
       />
-      <div v-else class="university-card__image university-card__image--placeholder"></div>
+      <div v-else class="university-card__image university-card__image--placeholder" aria-hidden="true"></div>
       <div class="university-card__overlay"></div>
       <div class="university-card__badges">
         <span class="info-chip info-chip--light">QS #{{ university.qsRank }}</span>
@@ -18,7 +18,7 @@
     <div class="university-card__body">
       <div class="university-card__top">
         <div class="university-card__identity">
-          <div v-if="university.logoUrl" class="university-card__logo-wrap">
+          <div v-if="university.logoUrl && !hasLogoError" class="university-card__logo-wrap">
             <img :src="university.logoUrl" :alt="university.shortName" class="university-card__logo" @error="hideBrokenLogo" />
           </div>
           <div class="university-card__info">
@@ -98,7 +98,7 @@
 </template>
 
 <script setup lang="ts">
-import { computed } from "vue";
+import { computed, ref, watch } from "vue";
 import type { DegreeLevel, ProgramListItem, UniversityListItem } from "@studymy/shared";
 import { RouterLink, useRouter } from "vue-router";
 import { useI18n } from "vue-i18n";
@@ -135,6 +135,16 @@ const relatedPrograms = computed(() =>
 const topPrograms = computed(() => relatedPrograms.value.slice(0, 4));
 const tuitionDisplay = computed(() => university.tuitionMinCny > 0 ? `CNY ${shortPrice(university.tuitionMinCny)}+` : officialPageFallback(currentLocale.value));
 const sourceStatusLabel = computed(() => formatOfficialSourceStatus(university.officialSourceStatus, currentLocale.value));
+const hasImageError = ref(false);
+const hasLogoError = ref(false);
+
+watch(
+  () => [university.imageUrl, university.logoUrl],
+  () => {
+    hasImageError.value = false;
+    hasLogoError.value = false;
+  }
+);
 
 function comparePrograms(a: ProgramListItem, b: ProgramListItem) {
   const levelDiff = levelOrder[a.level] - levelOrder[b.level];
@@ -156,15 +166,11 @@ function shortNumber(value: number) {
   return `${value}+`;
 }
 
-function handleMediaError(event: Event) {
-  const image = event.target as HTMLImageElement;
-  image.removeAttribute("src");
-  image.removeAttribute("srcset");
-  image.classList.add("university-card__image--placeholder");
+function handleMediaError() {
+  hasImageError.value = true;
 }
 
-function hideBrokenLogo(event: Event) {
-  const image = event.target as HTMLImageElement;
-  image.closest(".university-card__logo-wrap")?.remove();
+function hideBrokenLogo() {
+  hasLogoError.value = true;
 }
 </script>
