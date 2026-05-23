@@ -83,6 +83,7 @@ import { usePlannerStore } from "../stores/planner";
 import { useLocaleText } from "../composables/useLocaleText";
 import {
   cleanDisplayText,
+  formatCategoryLabel,
   officialConfirmationFallback,
   officialPageFallback,
   formatProgramDuration,
@@ -98,7 +99,7 @@ const { t } = useI18n();
 const { currentLocale, text, array } = useLocaleText();
 
 const levelLabel = computed(() => catalog.programDetail ? t(`degree.${catalog.programDetail.level}`) : "");
-const categoryLabel = computed(() => catalog.programDetail ? t(`category.${catalog.programDetail.category}`) : "");
+const categoryLabel = computed(() => catalog.programDetail ? formatCategoryLabel(catalog.programDetail.category, currentLocale.value) : "");
 const durationLabel = computed(() => catalog.programDetail ? formatProgramDuration(catalog.programDetail, currentLocale.value) : officialConfirmationFallback(currentLocale.value));
 const languageLabel = computed(() => catalog.programDetail ? formatProgramLanguage(catalog.programDetail, undefined, currentLocale.value) : officialPageFallback(currentLocale.value));
 const tuitionLabel = computed(() => catalog.programDetail ? formatProgramTuition(catalog.programDetail, undefined, currentLocale.value) : officialPageFallback(currentLocale.value));

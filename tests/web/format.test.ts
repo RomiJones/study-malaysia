@@ -3,10 +3,13 @@ import assert from "node:assert/strict";
 import {
   OFFICIAL_PAGE_FALLBACK,
   cleanDisplayText,
+  formatCategoryLabel,
   formatOfficialSourceStatus,
   formatProgramIntake,
   formatProgramLanguage,
-  formatProgramTuition
+  formatProgramTuition,
+  pickLocaleArray,
+  pickLocaleText
 } from "../../apps/web/src/utils/format.ts";
 
 function program(overrides: Record<string, unknown> = {}) {
@@ -59,5 +62,36 @@ describe("web display format helpers", () => {
     assert.equal(formatOfficialSourceStatus("official-verified"), "官方来源已核验");
     assert.equal(formatOfficialSourceStatus("missing-source"), "缺少官方来源");
     assert.equal(formatOfficialSourceStatus(null), "待官方确认");
+  });
+
+  test("localizes raw backend category values without dynamic i18n keys", () => {
+    assert.equal(formatCategoryLabel("Clinical Medicine", "zh-CN"), "临床医学");
+    assert.equal(formatCategoryLabel("Clinical Medicine", "zh-TW"), "臨床醫學");
+    assert.equal(formatCategoryLabel("Education", "ms"), "Pendidikan");
+    assert.equal(formatCategoryLabel("Arts and Social Sciences", "en"), "Arts and Social Sciences");
+    assert.equal(formatCategoryLabel("Arts and Social Sciences", "zh-CN"), "文学与社会科学");
+  });
+
+  test("prevents Chinese dynamic text on English and Malay pages", () => {
+    const localizedText = {
+      en: "申请要求以官方页面为准",
+      ms: "Permohonan bergantung pada halaman rasmi",
+      "zh-CN": "申请要求以官方页面为准",
+      "zh-TW": "申請要求以官方頁面為準"
+    };
+    assert.equal(pickLocaleText(localizedText, "en"), "");
+    assert.equal(pickLocaleText(localizedText, "ms"), "Permohonan bergantung pada halaman rasmi");
+    assert.deepEqual(pickLocaleArray({
+      en: ["临床训练"],
+      ms: ["Latihan klinikal"],
+      "zh-CN": ["临床训练"],
+      "zh-TW": ["臨床訓練"]
+    }, "en"), []);
+    assert.equal(cleanDisplayText("吉隆坡", "fallback", "en"), "fallback");
+  });
+
+  test("converts real simplified dynamic samples on Traditional Chinese pages", () => {
+    assert.equal(cleanDisplayText("心胸外科学临床型硕士", "", "zh-TW"), "心胸外科學臨床型碩士");
+    assert.equal(cleanDisplayText("医学执业注册资格", "", "zh-TW"), "醫學執業註冊資格");
   });
 });

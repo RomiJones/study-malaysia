@@ -10,6 +10,7 @@ import type {
   SupportedLocale,
   TuitionCurrency
 } from "@studymy/shared";
+import { CATEGORY_LABELS } from "@studymy/shared";
 import { toTraditionalText } from "../i18n/localeTransforms";
 
 export const OFFICIAL_PAGE_FALLBACK = "以学校官方页面为准";
@@ -93,6 +94,86 @@ const localizedFormatText = {
 
 type FormatTextKey = keyof typeof localizedFormatText.en;
 
+const extraCategoryLabels = {
+  hospitality: {
+    en: "Hospitality",
+    ms: "Hospitaliti",
+    "zh-CN": "酒店与旅游",
+    "zh-TW": "酒店與旅遊"
+  },
+  education: {
+    en: "Education",
+    ms: "Pendidikan",
+    "zh-CN": "教育",
+    "zh-TW": "教育"
+  },
+  "clinical medicine": {
+    en: "Clinical Medicine",
+    ms: "Perubatan klinikal",
+    "zh-CN": "临床医学",
+    "zh-TW": "臨床醫學"
+  },
+  "arts and social sciences": {
+    en: "Arts and Social Sciences",
+    ms: "Sastera dan Sains Sosial",
+    "zh-CN": "文学与社会科学",
+    "zh-TW": "文學與社會科學"
+  },
+  "business and economics": {
+    en: "Business and Economics",
+    ms: "Perniagaan dan Ekonomi",
+    "zh-CN": "商科与经济",
+    "zh-TW": "商科與經濟"
+  },
+  "computer science": {
+    en: "Computer Science",
+    ms: "Sains Komputer",
+    "zh-CN": "计算机科学",
+    "zh-TW": "電腦科學"
+  },
+  "architecture and built environment": {
+    en: "Architecture and Built Environment",
+    ms: "Seni Bina dan Alam Bina",
+    "zh-CN": "建筑与建成环境",
+    "zh-TW": "建築與建成環境"
+  },
+  pharmacy: {
+    en: "Pharmacy",
+    ms: "Farmasi",
+    "zh-CN": "药学",
+    "zh-TW": "藥學"
+  },
+  dentistry: {
+    en: "Dentistry",
+    ms: "Pergigian",
+    "zh-CN": "牙科",
+    "zh-TW": "牙科"
+  }
+} satisfies Record<string, LocalizedText>;
+
+const unknownCategoryLabels = {
+  en: "Other programmes",
+  ms: "Program lain",
+  "zh-CN": "其他专业",
+  "zh-TW": "其他專業"
+} satisfies LocalizedText;
+
+const extraCategoryLabelMap = extraCategoryLabels as Record<string, LocalizedText>;
+
+const categoryKeywordLabels: Array<[RegExp, LocalizedText]> = [
+  [/clinical\s+medicine/i, extraCategoryLabels["clinical medicine"]],
+  [/arts?.*social|social.*arts|social sciences?/i, extraCategoryLabels["arts and social sciences"]],
+  [/business|account|finance|economic|management|marketing/i, CATEGORY_LABELS.business],
+  [/information technology|computer|software|data|digital|cyber|artificial intelligence|\bit\b/i, CATEGORY_LABELS.it],
+  [/engineer|built environment|architecture|construction|quantity survey|urban/i, CATEGORY_LABELS.engineering],
+  [/medicine|medical|health|pharmacy|dentistry|nursing|clinical/i, CATEGORY_LABELS.medicine],
+  [/education|tesl|teaching|pedagogy/i, extraCategoryLabels.education],
+  [/law|legal/i, CATEGORY_LABELS.law],
+  [/hospitality|tourism|event/i, extraCategoryLabels.hospitality],
+  [/science|biology|chemistry|physics|mathematics|statistics/i, CATEGORY_LABELS.science],
+  [/art|design|media|communication|language|linguistics/i, CATEGORY_LABELS.arts]
+];
+
 function normalizeLocale(locale?: SupportedLocale): SupportedLocale {
   return locale && localizedFormatText[locale] ? locale : "zh-CN";
 }
@@ -104,6 +185,49 @@ function isChineseLocale(locale?: SupportedLocale) {
 
 function formatText(key: FormatTextKey, locale?: SupportedLocale) {
   return localizedFormatText[normalizeLocale(locale)][key];
+}
+
+export function containsCjkText(value: string): boolean {
+  return /[\u3400-\u9fff]/.test(value);
+}
+
+function normalizeCategoryKey(value: unknown): string {
+  return typeof value === "string"
+    ? value
+      .trim()
+      .replace(/&/g, "and")
+      .replace(/[-_]+/g, " ")
+      .replace(/\s+/g, " ")
+      .toLowerCase()
+    : "";
+}
+
+function titleCaseCategory(value: string): string {
+  return value.replace(/\b[a-z]/g, (char) => char.toUpperCase());
+}
+
+export function formatCategoryLabel(value: unknown, locale?: SupportedLocale): string {
+  const normalizedLocale = normalizeLocale(locale);
+  const key = normalizeCategoryKey(value);
+  if (!key) return unknownCategoryLabels[normalizedLocale];
+
+  const coreLabels = CATEGORY_LABELS as Record<string, LocalizedText>;
+  const exactLabel = coreLabels[key] || extraCategoryLabelMap[key];
+  const keywordLabel = exactLabel || categoryKeywordLabels.find(([pattern]) => pattern.test(key))?.[1];
+  if (keywordLabel) {
+    return cleanDisplayText(
+      keywordLabel[normalizedLocale] || keywordLabel.en,
+      unknownCategoryLabels[normalizedLocale],
+      normalizedLocale
+    );
+  }
+
+  const displayText = String(value).trim().replace(/[-_]+/g, " ").replace(/\s+/g, " ");
+  if (normalizedLocale === "en") return titleCaseCategory(displayText);
+  if (isChineseLocale(normalizedLocale) && containsCjkText(displayText)) {
+    return cleanDisplayText(displayText, unknownCategoryLabels[normalizedLocale], normalizedLocale);
+  }
+  return unknownCategoryLabels[normalizedLocale];
 }
 
 export function officialPageFallback(locale?: SupportedLocale): string {
@@ -119,11 +243,38 @@ export function notAvailableForInternational(locale?: SupportedLocale): string {
 }
 
 export function pickLocaleText(value: LocalizedText, locale: SupportedLocale): string {
-  return value[locale] || value.en || value["zh-CN"];
+  const normalizedLocale = normalizeLocale(locale);
+  const candidates: SupportedLocale[] = normalizedLocale === "zh-TW"
+    ? ["zh-TW", "zh-CN", "en"]
+    : normalizedLocale === "zh-CN"
+      ? ["zh-CN", "en"]
+      : normalizedLocale === "ms"
+        ? ["ms", "en"]
+        : ["en"];
+
+  for (const candidate of candidates) {
+    const text = cleanDisplayText(value[candidate], "", normalizedLocale);
+    if (text) return text;
+  }
+  return "";
 }
 
 export function pickLocaleArray(value: LocalizedStringArray, locale: SupportedLocale): string[] {
-  return value[locale] || value.en || value["zh-CN"];
+  const normalizedLocale = normalizeLocale(locale);
+  const candidates: SupportedLocale[] = normalizedLocale === "zh-TW"
+    ? ["zh-TW", "zh-CN", "en"]
+    : normalizedLocale === "zh-CN"
+      ? ["zh-CN", "en"]
+      : normalizedLocale === "ms"
+        ? ["ms", "en"]
+        : ["en"];
+
+  for (const candidate of candidates) {
+    const rows = value[candidate] || [];
+    const safeRows = rows.map((item) => cleanDisplayText(item, "", normalizedLocale)).filter(Boolean);
+    if (safeRows.length) return safeRows;
+  }
+  return [];
 }
 
 export function formatCurrency(value: number) {
@@ -151,11 +302,16 @@ function rawDisplayText(value: unknown, locale?: SupportedLocale): string {
 
 export function cleanDisplayText(
   value: unknown,
-  fallback = OFFICIAL_CONFIRMATION_FALLBACK,
+  fallback?: string,
   locale?: SupportedLocale
 ): string {
+  const actualFallback = fallback ?? officialConfirmationFallback(locale);
   const text = rawDisplayText(value, locale).replace(/\s+/g, " ").trim();
-  return missingDisplayValues.has(text.toLowerCase()) ? fallback : text;
+  if (missingDisplayValues.has(text.toLowerCase())) return actualFallback;
+  const normalizedLocale = normalizeLocale(locale);
+  if ((normalizedLocale === "en" || normalizedLocale === "ms") && containsCjkText(text)) return actualFallback;
+  const localizedText = normalizedLocale === "zh-TW" ? toTraditionalText(text) : text;
+  return localizedText || actualFallback;
 }
 
 export function hasDisplayText(value: unknown): boolean {

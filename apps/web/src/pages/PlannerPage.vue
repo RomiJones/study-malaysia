@@ -221,7 +221,7 @@ import type { ApplicationStage, DegreeLevel, MaterialStatus } from "@studymy/sha
 import { useLocaleText } from "../composables/useLocaleText";
 import { useCatalogStore } from "../stores/catalog";
 import { usePlannerStore } from "../stores/planner";
-import { formatCurrency, officialConfirmationFallback } from "../utils/format";
+import { formatCategoryLabel, formatCurrency, officialConfirmationFallback } from "../utils/format";
 
 const planner = usePlannerStore();
 const catalog = useCatalogStore();
@@ -286,16 +286,7 @@ async function saveProfile() {
 }
 
 function categoryLabel(value: string) {
-  const coreLabels: Record<string, string> = {
-    business: t('category.business'),
-    it: t('category.it'),
-    engineering: t('category.engineering'),
-    science: t('category.science'),
-    arts: t('category.arts'),
-    medicine: t('category.medicine'),
-    law: t('category.law')
-  };
-  return coreLabels[value] || value;
+  return formatCategoryLabel(value, currentLocale.value);
 }
 
 function statusLabel(status: MaterialStatus) {

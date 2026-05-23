@@ -245,15 +245,15 @@
 
 <script setup lang="ts">
 import { computed, onBeforeUnmount, onMounted, ref, watch } from "vue";
-import type { SearchSuggestionItem } from "@studymy/shared";
+import type { SearchSuggestionItem, SupportedLocale } from "@studymy/shared";
 import UniversityCard from "../components/UniversityCard.vue";
 import { useCatalogStore } from "../stores/catalog";
 import { useI18n } from "vue-i18n";
 import { useRouter } from "vue-router";
-import { formatPublicCount } from "../utils/format";
+import { formatCategoryLabel, formatPublicCount } from "../utils/format";
 
 const catalog = useCatalogStore();
-const { t } = useI18n();
+const { t, locale } = useI18n();
 const router = useRouter();
 const catalogSectionRef = ref<HTMLElement | null>(null);
 const searchWrapRef = ref<HTMLElement | null>(null);
@@ -531,17 +531,7 @@ function toggleFilterGroup(key: string) {
 }
 
 function categoryLabel(value: string) {
-  const known: Record<string, string> = {
-    business: t('category.business'),
-    it: t('category.it'),
-    engineering: t('category.engineering'),
-    science: t('category.science'),
-    arts: t('category.arts'),
-    medicine: t('category.medicine'),
-    hospitality: t('category.hospitality'),
-    law: t('category.law')
-  };
-  return known[value] || value.replace(/[-_]/g, " ");
+  return formatCategoryLabel(value, locale.value as SupportedLocale);
 }
 
 function handleDocumentClick(event: MouseEvent) {

@@ -382,13 +382,13 @@
                 <div class="req-item-label">{{ t('program.officialAcademicRequirement') }}</div>
                 <div class="req-item-value req-item-value--text">{{ academicRequirementLabel(catalog.selectedProgramDetail) }}</div>
               </div>
-              <div v-if="catalog.selectedProgramDetail.chinaStudentRequirement" class="req-item req-item--full">
+              <div v-if="chinaStudentRequirementLabel(catalog.selectedProgramDetail)" class="req-item req-item--full">
                 <div class="req-item-label">{{ t('program.chinaStudentNote') }}</div>
-                <div class="req-item-value req-item-value--text">{{ catalog.selectedProgramDetail.chinaStudentRequirement }}</div>
+                <div class="req-item-value req-item-value--text">{{ chinaStudentRequirementLabel(catalog.selectedProgramDetail) }}</div>
               </div>
-              <div v-if="catalog.selectedProgramDetail.officialAccreditationNote" class="req-item req-item--full">
+              <div v-if="accreditationNoteLabel(catalog.selectedProgramDetail)" class="req-item req-item--full">
                 <div class="req-item-label">{{ t('program.accreditationNote') }}</div>
-                <div class="req-item-value req-item-value--text">{{ catalog.selectedProgramDetail.officialAccreditationNote }}</div>
+                <div class="req-item-value req-item-value--text">{{ accreditationNoteLabel(catalog.selectedProgramDetail) }}</div>
               </div>
             </div>
           </div>
@@ -471,6 +471,7 @@ import { useCatalogStore } from "../stores/catalog";
 import { usePlannerStore } from "../stores/planner";
 import {
   cleanDisplayText,
+  formatCategoryLabel,
   formatCurrency,
   formatFeeAuditStatus,
   formatOfficialSourceStatus,
@@ -534,7 +535,12 @@ const officialInfoFields = computed<LabelValue[]>(() => {
     { label: t('university.institutionType'), value: profileString("institutionType") || ownershipLabel(current.ownership) },
     { label: t('university.universityPositioning'), value: profileString("universityType") || institutionTypeLabel(current.institutionType) },
     { label: t('university.city'), value: cityCountry || text(current.location) },
-    { label: t('university.officialAddress'), value: current.officialAddress || profileString("address") || officialConfirmationFallback(currentLocale.value) }
+    {
+      label: t('university.officialAddress'),
+      value: cleanDisplayText(current.officialAddress, "", currentLocale.value) ||
+        profileString("address") ||
+        officialConfirmationFallback(currentLocale.value)
+    }
   ];
 });
 
@@ -601,7 +607,7 @@ const sourceLinks = computed<SourceLinkView[]>(() => {
 
 const auditSummary = computed(() =>
   profileString("qualityNote") ||
-  detail.value?.officialAuditSummary ||
+  cleanDisplayText(detail.value?.officialAuditSummary, "", currentLocale.value) ||
   t('university.qualityNoteFallback')
 );
 
@@ -749,17 +755,7 @@ function institutionTypeLabel(value: InstitutionType) {
 }
 
 function categoryLabel(value: string) {
-  const labels: Record<string, string> = {
-    business: t('category.business'),
-    it: t('category.it'),
-    engineering: t('category.engineering'),
-    science: t('category.science'),
-    arts: t('category.arts'),
-    medicine: t('category.medicine'),
-    hospitality: t('category.hospitality'),
-    law: t('category.law')
-  };
-  return labels[value] || value;
+  return formatCategoryLabel(value, currentLocale.value);
 }
 
 function compactNumber(value: number) {
@@ -803,6 +799,14 @@ function officialLanguageLabel(program: ProgramCatalogDetail) {
 
 function academicRequirementLabel(program: ProgramCatalogDetail) {
   return cleanDisplayText(program.officialAcademicRequirement || text(program.requirement.note), officialPageFallback(currentLocale.value), currentLocale.value);
+}
+
+function chinaStudentRequirementLabel(program: ProgramCatalogDetail) {
+  return cleanDisplayText(program.chinaStudentRequirement, "", currentLocale.value);
+}
+
+function accreditationNoteLabel(program: ProgramCatalogDetail) {
+  return cleanDisplayText(program.officialAccreditationNote, "", currentLocale.value);
 }
 
 function programApplicationDocs(program: ProgramCatalogDetail) {
@@ -927,14 +931,17 @@ function normalizeList(value: unknown): string[] {
   if (!value) return [];
   if (Array.isArray(value)) {
     return value.map((item) => {
-      if (typeof item === "string") return item;
+      if (typeof item === "string") return stringFrom(item);
       const record = asRecord(item);
       if (!record) return "";
       const row = normalizeRows([record])[0];
       return row ? formatRow(row) : "";
     }).filter(Boolean);
   }
-  if (typeof value === "string") return value ? [value] : [];
+  if (typeof value === "string") {
+    const text = stringFrom(value);
+    return text ? [text] : [];
+  }
   return [];
 }
 
@@ -944,7 +951,7 @@ function pushLink(items: SourceLinkView[], label: string, url?: string | null) {
 }
 
 function stringFrom(value: unknown) {
-  if (typeof value === "string") return value.trim();
+  if (typeof value === "string") return cleanDisplayText(value, "", currentLocale.value);
   if (typeof value === "number") return String(value);
   if (typeof value === "boolean") return value ? t('common.yes') : t('common.no');
   return "";
