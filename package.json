@@ -19,6 +19,7 @@
     "verify:task013": "node scripts/task013-member-api-verify.mjs",
     "verify:task014": "node scripts/task014-admin-cms-verify.mjs",
     "verify:task022": "node scripts/task022-visual-baseline.mjs",
+    "verify:task024": "node scripts/task024-university-detail-visual.mjs",
     "seed": "npm --workspace @studymy/api run seed",
     "extract:static": "npm --workspace @studymy/api run extract:static",
     "import:static": "npm --workspace @studymy/api run import:static",

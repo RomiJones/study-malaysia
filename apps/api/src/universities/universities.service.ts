@@ -161,10 +161,22 @@ export class UniversitiesService {
     const cached = await this.cacheService.getJson(cacheKey);
     if (cached) return cached;
 
-    const university = await this.universitiesRepository.findOne({
+    let university = await this.universitiesRepository.findOne({
       where: { slug, isPublished: true, publicDisplayStatus: "ready" },
       relations: { programs: true }
     });
+
+    const slugAliases: Record<string, string> = {
+      "universiti-malaya-um": "UM",
+      um: "UM"
+    };
+
+    if (!university && slugAliases[slug]) {
+      university = await this.universitiesRepository.findOne({
+        where: { code: slugAliases[slug], isPublished: true, publicDisplayStatus: "ready" },
+        relations: { programs: true }
+      });
+    }
 
     if (!university) {
       throw new NotFoundException("University not found");
