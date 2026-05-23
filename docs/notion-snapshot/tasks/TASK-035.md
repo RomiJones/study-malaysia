@@ -2,7 +2,7 @@
 
 - **任务编号**: TASK-035
 - **任务标题**: 前端细节最终验收和可发布检查
-- **状态**: 可开始
+- **状态**: 待评审
 - **优先级**: 中
 - **任务类型**: 测试
 - **负责人**: Codex
@@ -10,8 +10,8 @@
 - **关联技术方案**: 技术方案
 - **实现说明**: 本任务允许修改测试代码和少量业务代码。对前端数据展示、翻译文案、细节样式、弹窗状态和移动端布局进行最终验收；只允许修复验收中发现的小问题，不允许新增功能或重做整体设计。
 - **测试计划**: 运行单元测试、E2E 测试、全页面截图对比、`npm run build`。
-- **验证结果**:
-- **阻塞说明**:
+- **验证结果**: 已完成最终验收。`npm run test` 通过 9 个测试套件、30 个用例；`npm run test:e2e` 通过；`npm run verify:task028` 通过并生成 52 张截图、26 组对比、阻塞级问题 0；`node scripts/task035-final-release-audit.mjs` 通过并生成 10 张专项截图；`npm run build` 通过，管理端仅保留既有 chunk 大小警告。中文报告见 `docs/prd/TASK-035-final-release-acceptance-report.md`。
+- **阻塞说明**: 当前无阻塞。真实 Notion 未更新：`NOTION_PROJECT_HOME` 为空，Notion 搜索未定位到 TASK-035 项目任务页；已更新本地中文任务快照和中文验收报告。
 
 ## 依赖任务
 - TASK-034
@@ -25,3 +25,16 @@
 ## 关联 Commit
 
 ## 执行记录
+
+### 2026-05-23T23:14:30.618Z - 自动状态更新
+
+- **状态**: 进行中
+- **说明**: 自动化运行 TASK-035-2026-05-23T23-14-30-614Z 已领取该任务。
+
+### 2026-05-24T07:26:53+08:00 - 最终验收记录
+
+- **状态**: 待评审
+- **说明**: 已完成前端细节最终验收和可发布检查；新增 TASK-035 专项浏览器验收脚本，复核四语言、登录错误本地化、弹窗关闭、移动端横向溢出和图片 fallback。
+- **截图报告**: `output/playwright/task028-20260523T231701Z/visual-diff-report.md`、`output/playwright/task035-20260523T232409Z/task035-final-release-audit.json`。
+- **测试结果**: `npm run test`、`npm run test:e2e`、`npm run verify:task028`、`node scripts/task035-final-release-audit.mjs`、`npm run build` 全部通过。
+- **剩余风险**: 全页面视觉脚本不做逐像素断言；发布环境仍建议用真实数据库做一次冒烟；管理端存在既有 chunk 大小警告，不阻塞本任务。
