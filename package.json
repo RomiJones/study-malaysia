@@ -24,6 +24,8 @@
     "verify:task026": "node scripts/task026-tools-visual.mjs",
     "verify:task027": "node scripts/task027-mobile-visual.mjs",
     "verify:task028": "node scripts/task028-final-visual-regression.mjs",
+    "extract:static-assets": "node scripts/task036-extract-static-html-assets.mjs",
+    "verify:static-assets": "node scripts/task036-verify-static-html-assets.mjs",
     "seed": "npm --workspace @studymy/api run seed",
     "extract:static": "npm --workspace @studymy/api run extract:static",
     "import:static": "npm --workspace @studymy/api run import:static",
