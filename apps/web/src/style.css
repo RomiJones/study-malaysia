@@ -753,6 +753,9 @@ img {
   font-size: 14px;
   font-weight: 600;
   line-height: 1.3;
+  min-height: 38px;
+  max-width: 100%;
+  text-align: center;
   white-space: nowrap;
   transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease, filter 0.2s ease, transform 0.2s ease;
 }
@@ -826,6 +829,24 @@ img {
 .ghost-action:hover {
   background: var(--paper-2);
   color: var(--ink);
+}
+
+.btn:focus-visible,
+.primary-action:focus-visible,
+.secondary-action:focus-visible,
+.ghost-action:focus-visible,
+.filter-chip:focus-visible,
+.tag-pill:focus-visible,
+.program-chip:focus-visible,
+.icon-action:focus-visible,
+.page-btn:focus-visible,
+.detail-tab:focus-visible,
+.planner-tab:focus-visible,
+.compare-remove:focus-visible,
+.floating-tool:focus-visible,
+.modal-close:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(200, 168, 75, 0.24);
 }
 
 .primary-action--wide {
@@ -1175,9 +1196,17 @@ img {
   justify-content: center;
   gap: 5px;
   min-width: 0;
+  max-width: 100%;
   border-radius: 999px;
   white-space: nowrap;
   line-height: 1.35;
+}
+
+.chip {
+  border: 1px solid transparent;
+  padding: 3px 10px;
+  font-size: 12px;
+  font-weight: 600;
 }
 
 .tag-pill {
@@ -1417,6 +1446,7 @@ label.lbl {
   background: #fff;
   color: var(--ink-2);
   padding: 7px 12px;
+  min-height: 32px;
   font-size: 13px;
   font-weight: 500;
   transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
@@ -1515,8 +1545,10 @@ label.lbl {
 .category-grid .filter-chip {
   justify-content: flex-start;
   overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+  line-height: 1.25;
+  text-align: left;
+  white-space: normal;
+  overflow-wrap: anywhere;
 }
 
 .budget-filter {
@@ -1620,6 +1652,7 @@ label.lbl {
   display: inline-flex;
   align-items: center;
   gap: 4px;
+  max-width: 100%;
   border: 1px solid var(--border);
   border-radius: 999px;
   background: #fff;
@@ -1627,6 +1660,7 @@ label.lbl {
   padding: 3px 8px 3px 10px;
   font-size: 11px;
   font-weight: 600;
+  overflow-wrap: anywhere;
 }
 
 .active-tag-x,
@@ -1719,6 +1753,7 @@ label.lbl {
   display: inline-flex;
   align-items: center;
   gap: 6px;
+  max-width: 100%;
   border: 1px solid var(--border);
   border-radius: 999px;
   background: var(--paper-2);
@@ -1726,6 +1761,7 @@ label.lbl {
   padding: 4px 10px;
   font-size: 12px;
   font-weight: 600;
+  overflow-wrap: anywhere;
 }
 
 .active-filter-tag button {
@@ -1804,7 +1840,7 @@ label.lbl {
   border: 1px solid var(--border);
   border-radius: var(--r);
   background: #fff;
-  box-shadow: none;
+  box-shadow: var(--shadow);
   cursor: pointer;
   transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s ease, border-color 0.3s ease;
 }
@@ -1913,6 +1949,7 @@ label.lbl {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  gap: 10px;
   padding: 18px 20px;
 }
 
@@ -2045,6 +2082,9 @@ label.lbl {
   padding: 3px 10px;
   font-size: 12px;
   font-weight: 600;
+  min-height: 26px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .program-chip:hover {
@@ -2397,6 +2437,7 @@ label.lbl {
 
 .programme-cell {
   min-width: 0;
+  overflow-wrap: anywhere;
 }
 
 .programme-name-zh {
@@ -2490,6 +2531,7 @@ label.lbl {
 
 .btn-sm {
   padding: 7px 14px;
+  min-height: 32px;
   font-size: 13px;
 }
 
@@ -3264,6 +3306,7 @@ label.lbl {
   font-size: 12px;
   font-weight: 800;
   letter-spacing: 0.04em;
+  line-height: 1.45;
   text-transform: uppercase;
   vertical-align: top;
 }
@@ -3273,6 +3316,7 @@ label.lbl {
   padding: 14px 16px;
   color: var(--ink-2);
   font-size: 14px;
+  line-height: 1.55;
   vertical-align: top;
 }
 
@@ -3502,9 +3546,11 @@ label.lbl {
   background: #fff;
   padding: 16px;
   box-shadow: var(--shadow);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
 }
 
 .favorite-program-card:hover {
+  transform: translateY(-2px);
   border-color: rgba(200, 168, 75, 0.7);
   box-shadow: 0 12px 30px rgba(12, 14, 26, 0.09);
 }
@@ -4039,6 +4085,7 @@ label.lbl {
   border-radius: var(--r);
   background: #fff;
   padding: 14px;
+  transition: border-color 0.2s ease, background 0.2s ease;
 }
 
 .material-status {
@@ -4104,6 +4151,12 @@ label.lbl {
   border-radius: var(--r);
   background: #fff;
   padding: 16px;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.app-task-card:hover {
+  border-color: rgba(200, 168, 75, 0.45);
+  box-shadow: var(--shadow);
 }
 
 .app-task-card__top {
@@ -4181,6 +4234,7 @@ label.lbl {
   background: #fff;
   padding: 16px;
   text-align: left;
+  transition: border-color 0.2s ease, background 0.2s ease;
 }
 
 .visa-step.done {
@@ -4635,6 +4689,10 @@ label.lbl {
     overflow: hidden;
   }
 
+  .programme-table-title {
+    padding-right: 92px;
+  }
+
   .programme-grid-head {
     display: none;
   }
@@ -4675,6 +4733,19 @@ label.lbl {
 
   .programme-pill {
     border-radius: 12px;
+    white-space: normal;
+    text-align: left;
+  }
+
+  .programme-lang-pill {
+    white-space: normal;
+    text-align: left;
+  }
+
+  .programme-detail-link {
+    display: inline-flex;
+    align-items: center;
+    min-height: 30px;
   }
 
   .compare-page__header,
@@ -4711,7 +4782,7 @@ label.lbl {
   }
 
   .compare-label-col {
-    width: 160px;
+    width: 130px;
     min-width: 0;
   }
 
@@ -4762,6 +4833,13 @@ label.lbl {
   .favorite-program-card__actions .btn {
     width: 100%;
   }
+
+  .btn,
+  .primary-action,
+  .secondary-action,
+  .ghost-action {
+    white-space: normal;
+  }
 }
 
 @media (max-width: 700px) {
@@ -4792,6 +4870,10 @@ label.lbl {
     width: 100%;
     flex-wrap: wrap;
     justify-content: flex-end;
+  }
+
+  .university-card__footer .primary-action {
+    flex: 1 1 110px;
   }
 }
 
@@ -4872,17 +4954,17 @@ label.lbl {
   }
 
   .floating-tools {
-    right: 12px;
+    right: 10px;
     bottom: 14px;
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    gap: 8px;
   }
 
   .floating-tool {
-    width: 48px;
-    min-width: 48px;
-    height: 48px;
-    min-height: 48px;
+    width: 44px;
+    min-width: 44px;
+    height: 44px;
+    min-height: 44px;
     padding: 0;
   }
 

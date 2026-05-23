@@ -6,6 +6,7 @@
         :src="university.imageUrl"
         :alt="text(university.name)"
         class="university-card__image"
+        @error="handleMediaError"
       />
       <div v-else class="university-card__image university-card__image--placeholder"></div>
       <div class="university-card__overlay"></div>
@@ -18,7 +19,7 @@
       <div class="university-card__top">
         <div class="university-card__identity">
           <div v-if="university.logoUrl" class="university-card__logo-wrap">
-            <img :src="university.logoUrl" :alt="university.shortName" class="university-card__logo" />
+            <img :src="university.logoUrl" :alt="university.shortName" class="university-card__logo" @error="hideBrokenLogo" />
           </div>
           <div class="university-card__info">
             <div class="university-card__code">{{ university.shortName }} / {{ university.code }}</div>
@@ -153,5 +154,17 @@ function shortPrice(value: number) {
 function shortNumber(value: number) {
   if (value >= 1000) return `${Math.round(value / 1000)}k+`;
   return `${value}+`;
+}
+
+function handleMediaError(event: Event) {
+  const image = event.target as HTMLImageElement;
+  image.removeAttribute("src");
+  image.removeAttribute("srcset");
+  image.classList.add("university-card__image--placeholder");
+}
+
+function hideBrokenLogo(event: Event) {
+  const image = event.target as HTMLImageElement;
+  image.closest(".university-card__logo-wrap")?.remove();
 }
 </script>
