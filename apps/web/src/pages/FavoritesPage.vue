@@ -25,7 +25,7 @@
         <div class="favorite-university-grid">
           <article v-for="item in favoriteUniversities" :key="item.id" class="favorite-university-card">
             <div class="favorite-university-card__top">
-              <img class="favorite-university-card__logo" :src="item.logoUrl" :alt="text(item.name)" />
+              <img class="favorite-university-card__logo" :src="item.logoUrl" :alt="text(item.name)" @error="hideBrokenImage" />
               <div class="favorite-university-card__copy">
                 <h3>{{ text(item.name) }}</h3>
                 <p>QS #{{ item.qsRank }} · {{ text(item.location) }}</p>
@@ -80,4 +80,9 @@ const favoritePrograms = computed(() => catalog.programs.filter((item) => catalo
 onMounted(async () => {
   if (!catalog.universities.length || !catalog.programs.length) await catalog.loadUniversities();
 });
+
+function hideBrokenImage(event: Event) {
+  const target = event.target;
+  if (target instanceof HTMLImageElement) target.style.display = "none";
+}
 </script>
