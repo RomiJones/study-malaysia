@@ -3,8 +3,7 @@
     <div class="modal-panel auth-panel">
       <div class="auth-modal-head">
         <div>
-          <div class="modal-kicker">{{ t('nav.login') }}</div>
-          <h3 class="auth-modal-title">{{ session.authMode === 'login' ? t('auth.titleLogin') : t('auth.titleRegister') }}</h3>
+          <h3 class="auth-modal-title">{{ session.authMode === 'login' ? '登录 StudyMY' : '注册 StudyMY' }}</h3>
         </div>
         <button class="modal-close" @click="session.closeAuth" aria-label="Close">×</button>
       </div>
@@ -16,25 +15,16 @@
 
       <form class="auth-form" @submit.prevent="submit">
         <label class="field-shell">
-          <span>{{ t('auth.method') }}</span>
-          <select v-model="form.method">
-            <option value="email">{{ t('authMethod.email') }}</option>
-            <option value="phone">{{ t('authMethod.phone') }}</option>
-            <option value="wechat">{{ t('authMethod.wechat') }}</option>
-            <option value="qq">{{ t('authMethod.qq') }}</option>
-          </select>
-        </label>
-        <label class="field-shell">
-          <span>{{ t('auth.account') }}</span>
-          <input v-model="form.account" required />
+          <span>邮箱 / 手机号</span>
+          <input v-model="form.account" required placeholder="请输入邮箱或手机号" />
         </label>
         <label class="field-shell">
           <span>{{ t('auth.password') }}</span>
-          <input v-model="form.password" type="password" required minlength="6" />
+          <input v-model="form.password" type="password" required minlength="6" placeholder="请输入密码" />
         </label>
         <label v-if="session.authMode === 'register'" class="field-shell">
-          <span>{{ t('auth.displayName') }}</span>
-          <input v-model="form.displayName" />
+          <span>昵称（可选）</span>
+          <input v-model="form.displayName" placeholder="你的昵称" />
         </label>
         <button class="btn btn-primary auth-submit" type="submit" :disabled="submitting">
           {{ submitting ? t('common.loading') : session.authMode === 'login' ? t('auth.submitLogin') : t('auth.submitRegister') }}

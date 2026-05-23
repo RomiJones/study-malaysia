@@ -10,23 +10,6 @@
       </div>
 
       <div class="tool-modal-body">
-        <div class="calculator-picker">
-          <label class="field-shell">
-            <span>{{ t('calculator.school') }}</span>
-            <select v-model.number="selectedUniversityId" @change="resetProgram">
-              <option :value="0">{{ t('common.select') }}</option>
-              <option v-for="item in catalog.universities" :key="item.id" :value="item.id">{{ text(item.name) }}</option>
-            </select>
-          </label>
-          <label class="field-shell">
-            <span>{{ t('calculator.program') }}</span>
-            <select v-model.number="selectedProgramId" @change="applyProgramDefaults">
-              <option :value="0">{{ t('common.select') }}</option>
-              <option v-for="item in availablePrograms" :key="item.id" :value="item.id">{{ text(item.name) }}</option>
-            </select>
-          </label>
-        </div>
-
         <div class="calculator-grid">
           <label class="field-shell">
             <span>年学费（人民币）</span>
@@ -62,19 +45,13 @@
 </template>
 
 <script setup lang="ts">
-import { computed, reactive, ref } from "vue";
+import { computed, reactive } from "vue";
 import { useI18n } from "vue-i18n";
-import { useLocaleText } from "../composables/useLocaleText";
-import { useCatalogStore } from "../stores/catalog";
 import { formatCurrency } from "../utils/format";
 
 defineEmits<{ (e: "close"): void }>();
 
-const catalog = useCatalogStore();
 const { t } = useI18n();
-const { text } = useLocaleText();
-const selectedUniversityId = ref(0);
-const selectedProgramId = ref(0);
 const form = reactive({
   tuition: 50000,
   living: 25000,
@@ -82,28 +59,8 @@ const form = reactive({
   misc: 10000
 });
 
-const availablePrograms = computed(() => catalog.programs.filter((item) => item.universityId === selectedUniversityId.value));
-const selectedUniversity = computed(() => catalog.universities.find((item) => item.id === selectedUniversityId.value));
-const selectedProgram = computed(() => catalog.programs.find((item) => item.id === selectedProgramId.value));
 const tuitionTotal = computed(() => Number(form.tuition || 0) * Number(form.duration || 0));
 const livingTotal = computed(() => Number(form.living || 0) * Number(form.duration || 0));
 const annualTotal = computed(() => Number(form.tuition || 0) + Number(form.living || 0));
 const grandTotal = computed(() => tuitionTotal.value + livingTotal.value + Number(form.misc || 0));
-
-function resetProgram() {
-  selectedProgramId.value = 0;
-  if (selectedUniversity.value) {
-    form.living = selectedUniversity.value.livingCostCny;
-  }
-}
-
-function applyProgramDefaults() {
-  if (selectedProgram.value) {
-    form.tuition = selectedProgram.value.annualTuitionCny;
-    form.duration = Number(selectedProgram.value.durationYears) || form.duration;
-  }
-  if (selectedUniversity.value) {
-    form.living = selectedUniversity.value.livingCostCny;
-  }
-}
 </script>

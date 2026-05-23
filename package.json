@@ -21,6 +21,7 @@
     "verify:task022": "node scripts/task022-visual-baseline.mjs",
     "verify:task024": "node scripts/task024-university-detail-visual.mjs",
     "verify:task025": "node scripts/task025-program-visual.mjs",
+    "verify:task026": "node scripts/task026-tools-visual.mjs",
     "seed": "npm --workspace @studymy/api run seed",
     "extract:static": "npm --workspace @studymy/api run extract:static",
     "import:static": "npm --workspace @studymy/api run import:static",

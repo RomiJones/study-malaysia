@@ -22,8 +22,20 @@
     <template v-else>
       <div v-if="favoriteUniversities.length" class="favorites-section">
         <div class="section-kicker">{{ t('favorites.universities') }}</div>
-        <div class="university-grid">
-          <UniversityCard v-for="item in favoriteUniversities" :key="item.id" :university="item" />
+        <div class="favorite-university-grid">
+          <article v-for="item in favoriteUniversities" :key="item.id" class="favorite-university-card">
+            <div class="favorite-university-card__top">
+              <img class="favorite-university-card__logo" :src="item.logoUrl" :alt="text(item.name)" />
+              <div class="favorite-university-card__copy">
+                <h3>{{ text(item.name) }}</h3>
+                <p>QS #{{ item.qsRank }} · {{ text(item.location) }}</p>
+              </div>
+            </div>
+            <div class="favorite-university-card__actions">
+              <RouterLink class="btn btn-primary btn-sm" :to="`/universities/${item.slug}`">{{ t('common.viewDetails') }}</RouterLink>
+              <button class="btn btn-outline btn-sm favorite-remove" type="button" @click="catalog.toggleFavoriteUniversity(item.id)">移除</button>
+            </div>
+          </article>
         </div>
       </div>
 
@@ -54,7 +66,6 @@
 import { computed, onMounted } from "vue";
 import { RouterLink } from "vue-router";
 import { useI18n } from "vue-i18n";
-import UniversityCard from "../components/UniversityCard.vue";
 import { useLocaleText } from "../composables/useLocaleText";
 import { useCatalogStore } from "../stores/catalog";
 import { formatCurrency } from "../utils/format";

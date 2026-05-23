@@ -3,21 +3,14 @@
     <div v-if="planner.loading && !dashboard" class="section-card empty-state">{{ t('common.loading') }}</div>
 
     <template v-else-if="dashboard">
-      <div class="planner-hero">
+      <div class="planner-page-head">
         <div>
-          <div class="planner-hero__badge">{{ t('planner.heroBadge') }}</div>
-          <h1 class="planner-hero__title">{{ t('planner.title') }}</h1>
-          <p class="planner-hero__subtitle">{{ t('planner.subtitle') }}</p>
+          <h1 class="section-title">{{ t('planner.title') }}</h1>
+          <p class="section-copy mt-1">{{ t('planner.subtitle') }}</p>
         </div>
-        <div class="planner-hero__stats">
-          <div class="planner-hero__stat">
-            <span>{{ t('planner.readiness') }}</span>
-            <strong>{{ dashboard.summary.readinessScore }}%</strong>
-          </div>
-          <div class="planner-hero__stat">
-            <span>{{ t('planner.activeTasks') }}</span>
-            <strong>{{ dashboard.summary.activeTaskCount }}</strong>
-          </div>
+        <div class="planner-head-chips">
+          <span class="chip chip-gold">{{ t('planner.readiness') }} {{ dashboard.summary.readinessScore }}%</span>
+          <span class="chip chip-teal">{{ t('planner.activeTasks') }} {{ dashboard.summary.activeTaskCount }}</span>
         </div>
       </div>
 
@@ -28,29 +21,6 @@
         <div v-if="planner.syncError" class="inline-alert inline-alert--error">{{ planner.syncError }}</div>
       </div>
 
-      <div class="planner-summary-grid">
-        <article class="planner-summary-card">
-          <span>{{ t('common.profile') }}</span>
-          <strong>{{ dashboard.summary.profileCompleteness }}%</strong>
-          <div class="progress-bar"><div class="progress-fill" :style="{ width: `${dashboard.summary.profileCompleteness}%` }"></div></div>
-        </article>
-        <article class="planner-summary-card">
-          <span>{{ t('common.materials') }}</span>
-          <strong>{{ dashboard.summary.materialCompletion }}%</strong>
-          <div class="progress-bar"><div class="progress-fill" :style="{ width: `${dashboard.summary.materialCompletion}%` }"></div></div>
-        </article>
-        <article class="planner-summary-card">
-          <span>{{ t('common.visa') }}</span>
-          <strong>{{ dashboard.summary.visaDoneCount }}/5</strong>
-          <div class="progress-bar"><div class="progress-fill" :style="{ width: `${dashboard.summary.visaDoneCount / 5 * 100}%` }"></div></div>
-        </article>
-        <article class="planner-summary-card">
-          <span>{{ t('common.budget') }}</span>
-          <strong>CNY {{ formatCurrency(dashboard.profile.budgetCny) }}</strong>
-          <small>GPA {{ dashboard.profile.gpa }} · IELTS {{ dashboard.profile.ielts }}</small>
-        </article>
-      </div>
-
       <div class="planner-tabs" role="tablist">
         <button v-for="item in tabs" :key="item.key" class="planner-tab" :class="{ active: activeTab === item.key }" type="button" @click="activeTab = item.key">
           {{ item.label }}
@@ -58,6 +28,29 @@
       </div>
 
       <section v-if="activeTab === 'overview'" class="planner-panel">
+        <div class="planner-summary-grid">
+          <article class="planner-summary-card">
+            <span>{{ t('common.profile') }}</span>
+            <strong>{{ dashboard.summary.profileCompleteness }}%</strong>
+            <div class="progress-bar"><div class="progress-fill" :style="{ width: `${dashboard.summary.profileCompleteness}%` }"></div></div>
+          </article>
+          <article class="planner-summary-card">
+            <span>{{ t('common.materials') }}</span>
+            <strong>{{ dashboard.summary.materialCompletion }}%</strong>
+            <div class="progress-bar"><div class="progress-fill" :style="{ width: `${dashboard.summary.materialCompletion}%` }"></div></div>
+          </article>
+          <article class="planner-summary-card">
+            <span>{{ t('common.visa') }}</span>
+            <strong>{{ dashboard.summary.visaDoneCount }}/5</strong>
+            <div class="progress-bar"><div class="progress-fill" :style="{ width: `${dashboard.summary.visaDoneCount / 5 * 100}%` }"></div></div>
+          </article>
+          <article class="planner-summary-card">
+            <span>{{ t('common.budget') }}</span>
+            <strong>CNY {{ formatCurrency(dashboard.profile.budgetCny) }}</strong>
+            <small>GPA {{ dashboard.profile.gpa }} · IELTS {{ dashboard.profile.ielts }}</small>
+          </article>
+        </div>
+
         <div class="planner-panel__head">
           <div>
             <div class="section-kicker">{{ t('common.recommendations') }}</div>
@@ -68,7 +61,7 @@
 
         <div v-if="dashboard.recommendations.length" class="recommendation-list">
           <RouterLink
-            v-for="(item, index) in dashboard.recommendations.slice(0, 4)"
+            v-for="(item, index) in dashboard.recommendations.slice(0, 3)"
             :key="item.program.id"
             class="rec-card"
             :to="`/universities/${item.university.slug}?program=${item.program.id}`"

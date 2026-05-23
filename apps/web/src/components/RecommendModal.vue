@@ -16,14 +16,6 @@
         </div>
 
         <template v-else-if="dashboard">
-          <div class="recommend-profile-strip">
-            <span>{{ levelLabel(dashboard.profile.level) }}</span>
-            <span>{{ categoryLabel(dashboard.profile.targetCategory) }}</span>
-            <span>CNY {{ formatCurrency(dashboard.profile.budgetCny) }}</span>
-            <span>GPA {{ dashboard.profile.gpa }}</span>
-            <span>IELTS {{ dashboard.profile.ielts }}</span>
-          </div>
-
           <div v-if="dashboard.recommendations.length" class="recommendation-list">
             <RouterLink
               v-for="item in dashboard.recommendations"
@@ -60,7 +52,6 @@
 import { computed, onMounted } from "vue";
 import { RouterLink } from "vue-router";
 import { useI18n } from "vue-i18n";
-import type { DegreeLevel } from "@studymy/shared";
 import { useLocaleText } from "../composables/useLocaleText";
 import { usePlannerStore } from "../stores/planner";
 import { formatCurrency } from "../utils/format";
@@ -76,20 +67,4 @@ onMounted(() => {
   if (!planner.dashboard) void planner.load();
 });
 
-function levelLabel(level: DegreeLevel) {
-  return t(`degree.${level}`);
-}
-
-function categoryLabel(value: string) {
-  const coreLabels: Record<string, string> = {
-    business: t('category.business'),
-    it: t('category.it'),
-    engineering: t('category.engineering'),
-    science: t('category.science'),
-    arts: t('category.arts'),
-    medicine: t('category.medicine'),
-    law: t('category.law')
-  };
-  return coreLabels[value] || value;
-}
 </script>

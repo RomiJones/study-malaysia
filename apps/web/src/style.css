@@ -3178,23 +3178,30 @@ label.lbl {
 }
 
 .fav-empty {
-  display: grid;
-  justify-items: center;
-  gap: 8px;
+  display: block;
   padding: 60px 24px;
   text-align: center;
 }
 
+.fav-empty > * + * {
+  margin-top: 8px;
+}
+
+.fav-empty .btn,
+.fav-empty .primary-action {
+  margin-top: 16px;
+}
+
 .fav-empty-icon {
-  width: 52px;
-  height: 52px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 999px;
-  background: var(--gold-lt);
+  display: block;
+  width: auto;
+  height: auto;
+  margin-bottom: 8px;
+  background: transparent;
   color: #8a6a10;
+  font-size: 48px;
   font-weight: 900;
+  line-height: 1;
 }
 
 .compare-table-card {
@@ -3341,15 +3348,94 @@ label.lbl {
   gap: 14px;
 }
 
-.favorite-program-grid {
+.favorite-university-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 16px;
+}
+
+.favorite-university-card {
+  display: grid;
   gap: 14px;
+  border: 1px solid var(--border);
+  border-radius: var(--r);
+  background: #fff;
+  padding: 16px;
+  box-shadow: var(--shadow);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.favorite-university-card:hover {
+  transform: translateY(-2px);
+  border-color: rgba(200, 168, 75, 0.45);
+  box-shadow: var(--shadow-lg);
+}
+
+.favorite-university-card__top {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.favorite-university-card__logo {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  object-fit: contain;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--paper);
+  padding: 4px;
+}
+
+.favorite-university-card__copy {
+  min-width: 0;
+}
+
+.favorite-university-card__copy h3 {
+  color: var(--ink);
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 1.35;
+}
+
+.favorite-university-card__copy p {
+  margin-top: 2px;
+  color: var(--ink-3);
+  font-size: 13px;
+}
+
+.favorite-university-card__actions {
+  display: flex;
+  gap: 8px;
+}
+
+.favorite-university-card__actions .btn:first-child {
+  flex: 1;
+}
+
+.favorite-remove {
+  border-color: rgba(196, 56, 48, 0.45);
+  color: var(--red);
+}
+
+.favorite-remove:hover {
+  border-color: var(--red);
+  background: var(--red-lt);
+  color: var(--red);
+}
+
+.favorite-program-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .favorite-program-card {
-  display: grid;
-  gap: 14px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
   border: 1px solid var(--border);
   border-radius: var(--r);
   background: #fff;
@@ -3360,6 +3446,11 @@ label.lbl {
 .favorite-program-card:hover {
   border-color: rgba(200, 168, 75, 0.7);
   box-shadow: 0 12px 30px rgba(12, 14, 26, 0.09);
+}
+
+.favorite-program-card > a {
+  min-width: 0;
+  flex: 1;
 }
 
 .favorite-program-card h3 {
@@ -3382,6 +3473,11 @@ label.lbl {
   flex-wrap: wrap;
   gap: 6px;
   margin-top: 12px;
+}
+
+.favorite-program-card__actions {
+  flex-shrink: 0;
+  margin-top: 0;
 }
 
 .modal-panel.auth-panel {
@@ -3408,7 +3504,7 @@ label.lbl {
 }
 
 .auth-modal-title {
-  margin-top: 6px;
+  margin-top: 0;
   color: var(--ink);
   font-family: "DM Serif Display", Georgia, serif;
   font-size: 24px;
@@ -3641,6 +3737,20 @@ label.lbl {
   margin-top: 9px;
 }
 
+.planner-page-head {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 18px;
+}
+
+.planner-head-chips {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 6px;
+}
+
 .planner-hero {
   display: grid;
   grid-template-columns: 1.15fr 0.85fr;
@@ -3793,6 +3903,10 @@ label.lbl {
   background: #fff;
   padding: 24px;
   box-shadow: var(--shadow);
+}
+
+.planner-panel .planner-summary-grid {
+  margin-bottom: 24px;
 }
 
 .planner-panel__head {
@@ -4267,10 +4381,15 @@ label.lbl {
   }
 
   .favorites-head__row,
+  .planner-page-head,
   .planner-panel__head,
   .app-task-card__top {
     align-items: flex-start;
     flex-direction: column;
+  }
+
+  .planner-head-chips {
+    justify-content: flex-start;
   }
 }
 
@@ -4482,8 +4601,38 @@ label.lbl {
     flex-direction: column;
   }
 
+  .compare-table {
+    min-width: 0;
+    table-layout: fixed;
+  }
+
+  .compare-table th,
+  .compare-table td {
+    padding: 12px 10px;
+    word-break: break-word;
+  }
+
+  .compare-head-cell {
+    min-width: 0;
+    display: block;
+  }
+
+  .compare-head-name,
+  .compare-head-sub {
+    white-space: normal;
+    overflow-wrap: anywhere;
+  }
+
+  .compare-remove {
+    display: none;
+  }
+
+  .compare-label-col {
+    width: 160px;
+    min-width: 0;
+  }
+
   .calculator-picker,
-  .calculator-grid,
   .planner-hero__stats {
     grid-template-columns: 1fr;
   }
@@ -4503,6 +4652,17 @@ label.lbl {
   }
 
   .material-select {
+    width: 100%;
+  }
+
+  .favorite-program-card,
+  .favorite-university-card__actions {
+    flex-direction: column;
+  }
+
+  .favorite-university-card__actions .btn,
+  .favorite-program-card__actions,
+  .favorite-program-card__actions .btn {
     width: 100%;
   }
 }
