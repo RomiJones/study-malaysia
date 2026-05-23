@@ -10,6 +10,8 @@
       </div>
 
       <div class="tool-modal-body">
+        <div v-if="planner.syncError" class="inline-alert inline-alert--error">{{ planner.syncError }}</div>
+
         <div v-if="planner.loading && !dashboard" class="fav-empty">
           <div class="fav-empty-icon">✦</div>
           <strong>{{ t('common.loading') }}</strong>

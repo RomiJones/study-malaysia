@@ -73,6 +73,12 @@
       </div>
     </div>
   </section>
+
+  <section v-else class="container detail-loading">
+    <div class="section-card empty-state" :class="{ 'empty-state--warning': catalog.errorMessage && !catalog.loading }">
+      {{ catalog.loading ? t("common.loading") : catalog.errorMessage || t("common.noData") }}
+    </div>
+  </section>
 </template>
 
 <script setup lang="ts">
@@ -128,5 +134,7 @@ const specializationRows = computed(() => {
   return rows.length ? rows : [officialConfirmationFallback(currentLocale.value)];
 });
 
-onMounted(() => catalog.loadProgram(props.slug));
+onMounted(() => {
+  void catalog.loadProgram(props.slug).catch(() => undefined);
+});
 </script>

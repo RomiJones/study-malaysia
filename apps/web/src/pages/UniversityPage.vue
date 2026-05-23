@@ -174,6 +174,8 @@
               <h2>{{ t('university.programmeHeading', { level: activeProgramLabel }) }}</h2>
               <span class="programme-count">{{ activePrograms.length }}</span>
             </div>
+            <div v-if="catalog.errorMessage" class="inline-alert inline-alert--error programme-inline-alert">{{ catalog.errorMessage }}</div>
+            <div v-if="catalog.programLoading" class="section-card empty-state empty-state--loading">{{ t('common.loading') }}</div>
             <div v-if="activePrograms.length" class="programme-table-wrap">
               <div class="programme-grid-head">
                 <div>{{ t('university.programmeName') }}</div>
@@ -449,7 +451,9 @@
   </section>
 
   <section v-else class="container detail-loading">
-    <div class="section-card empty-state">{{ catalog.loading ? t("common.loading") : t("common.noData") }}</div>
+    <div class="section-card empty-state" :class="{ 'empty-state--warning': catalog.errorMessage && !catalog.loading }">
+      {{ catalog.loading ? t("common.loading") : catalog.errorMessage || t("common.noData") }}
+    </div>
   </section>
 </template>
 
@@ -690,8 +694,12 @@ const chinaRequirementSummary = computed(() => {
 });
 
 async function loadDetail() {
-  await catalog.loadUniversity(props.slug);
-  await openQueryProgram();
+  try {
+    await catalog.loadUniversity(props.slug);
+    await openQueryProgram();
+  } catch {
+    catalog.closeProgramDetail();
+  }
 }
 
 async function openQueryProgram() {
@@ -706,8 +714,8 @@ function setActiveTab(tab: DetailTab) {
 }
 
 async function openProgram(program: ProgramListItem) {
-  await catalog.openProgramDetail(program.id);
-  await router.replace({ path: route.path, query: { ...route.query, program: String(program.id) } });
+  const opened = await catalog.openProgramDetail(program.id);
+  if (opened) await router.replace({ path: route.path, query: { ...route.query, program: String(program.id) } });
 }
 
 async function closeProgramModal() {

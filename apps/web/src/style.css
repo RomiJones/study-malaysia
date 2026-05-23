@@ -561,6 +561,7 @@ img {
   background: var(--gold-lt);
   color: #8a6a10;
   box-shadow: var(--shadow);
+  line-height: 1.55;
 }
 
 .container,
@@ -3019,8 +3020,26 @@ label.lbl {
 }
 
 .empty-state {
+  min-height: 116px;
+  display: grid;
+  align-content: center;
+  justify-items: center;
+  gap: 8px;
+  padding: 40px 24px;
   text-align: center;
   color: var(--ink-3);
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+
+.empty-state--warning {
+  border-color: rgba(196, 56, 48, 0.24);
+  background: var(--red-lt);
+  color: var(--red);
+}
+
+.empty-state--loading {
+  color: var(--ink-2);
 }
 
 .modal-backdrop {
@@ -3032,6 +3051,7 @@ label.lbl {
   justify-content: center;
   padding: 24px;
   background: rgba(12, 14, 26, 0.55);
+  overflow: hidden;
 }
 
 .modal {
@@ -3045,6 +3065,11 @@ label.lbl {
   overscroll-behavior: contain;
 }
 
+.program-detail-modal {
+  display: flex;
+  flex-direction: column;
+}
+
 .modal-panel {
   width: min(860px, calc(100vw - 48px));
   max-height: 88vh;
@@ -3053,14 +3078,19 @@ label.lbl {
   background: #fff;
   border-radius: var(--r);
   box-shadow: var(--shadow-lg);
+  overscroll-behavior: contain;
 }
 
 .modal-header {
+  position: sticky;
+  top: 0;
+  z-index: 2;
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
   gap: 16px;
   padding: 24px 24px 0;
+  background: #fff;
 }
 
 .modal-header h2 {
@@ -3071,6 +3101,7 @@ label.lbl {
 }
 
 .modal-body {
+  min-height: 0;
   padding: 24px;
 }
 
@@ -3256,13 +3287,18 @@ label.lbl {
 }
 
 .fav-empty {
-  display: block;
+  display: grid;
+  justify-items: center;
+  gap: 8px;
   padding: 60px 24px;
   text-align: center;
+  color: var(--ink-3);
+  line-height: 1.6;
+  overflow-wrap: anywhere;
 }
 
 .fav-empty > * + * {
-  margin-top: 8px;
+  margin-top: 0;
 }
 
 .fav-empty .btn,
@@ -3386,6 +3422,8 @@ label.lbl {
   padding: 10px 12px;
   font-size: 13px;
   font-weight: 600;
+  line-height: 1.55;
+  overflow-wrap: anywhere;
 }
 
 .inline-alert--error {
@@ -3606,15 +3644,19 @@ label.lbl {
 .modal-panel.auth-panel {
   width: min(440px, calc(100vw - 48px));
   padding: 0;
-  overflow: hidden;
+  overflow: auto;
 }
 
 .auth-modal-head {
+  position: sticky;
+  top: 0;
+  z-index: 2;
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
   gap: 16px;
   padding: 24px 24px 0;
+  background: #fff;
 }
 
 .modal-kicker,
@@ -3633,6 +3675,13 @@ label.lbl {
   font-size: 24px;
   font-weight: 500;
   line-height: 1.2;
+}
+
+.auth-modal-note {
+  margin-top: 6px;
+  color: var(--ink-3);
+  font-size: 13px;
+  line-height: 1.55;
 }
 
 .auth-tabs {
@@ -3663,6 +3712,7 @@ label.lbl {
   display: grid;
   gap: 14px;
   padding: 24px;
+  min-height: 0;
 }
 
 .auth-form .field-shell,
@@ -3689,6 +3739,7 @@ label.lbl {
   border-radius: var(--r);
   background: #fff;
   box-shadow: var(--shadow-lg);
+  overscroll-behavior: contain;
 }
 
 .tool-modal-inner--calculator {
@@ -3696,6 +3747,9 @@ label.lbl {
 }
 
 .tool-modal-header {
+  position: sticky;
+  top: 0;
+  z-index: 2;
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
@@ -3776,6 +3830,7 @@ label.lbl {
   gap: 16px;
   color: var(--ink-2);
   font-size: 14px;
+  overflow-wrap: anywhere;
 }
 
 .calc-row--total {
@@ -3953,6 +4008,11 @@ label.lbl {
 .planner-status-row {
   display: grid;
   gap: 8px;
+  align-items: start;
+}
+
+.programme-inline-alert {
+  margin-bottom: 14px;
 }
 
 .planner-summary-grid {
@@ -4787,6 +4847,7 @@ label.lbl {
   }
 
   .calculator-picker,
+  .calculator-grid,
   .planner-hero__stats {
     grid-template-columns: 1fr;
   }

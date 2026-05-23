@@ -211,7 +211,7 @@
 
         <div v-if="catalog.loading" class="section-card empty-state">{{ t('common.loading') }}</div>
         <div v-else-if="catalog.errorMessage && !catalog.filteredUniversities.length" class="section-card empty-state empty-state--warning">
-          {{ t('home.loadFailed') }}: {{ catalog.errorMessage }}
+          {{ catalog.errorMessage || t('home.loadFailed') }}
         </div>
         <div v-else-if="!catalog.filteredUniversities.length" class="section-card empty-state empty-state--action">
           <div>{{ t('home.empty') }}</div>

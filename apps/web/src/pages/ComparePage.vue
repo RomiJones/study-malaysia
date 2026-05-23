@@ -14,6 +14,7 @@
       <div class="fav-empty-icon">VS</div>
       <div class="serif text-xl">{{ t('comparePage.emptyTitle') }}</div>
       <div class="text-slate-500 mt-2">{{ t('comparePage.emptyBody') }}</div>
+      <div class="text-slate-500 mt-2">{{ session.isLoggedIn ? t('comparePage.emptyAccount') : t('comparePage.emptyGuest') }}</div>
       <RouterLink class="primary-action mt-4" to="/">{{ t('home.browseUniversities') }}</RouterLink>
     </div>
 
@@ -60,9 +61,11 @@ import { RouterLink } from "vue-router";
 import { useI18n } from "vue-i18n";
 import { useLocaleText } from "../composables/useLocaleText";
 import { useCatalogStore } from "../stores/catalog";
+import { useSessionStore } from "../stores/session";
 import { formatCurrency } from "../utils/format";
 
 const catalog = useCatalogStore();
+const session = useSessionStore();
 const { t } = useI18n();
 const { text } = useLocaleText();
 

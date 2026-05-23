@@ -4,6 +4,7 @@
       <div class="auth-modal-head">
         <div>
           <h3 class="auth-modal-title">{{ session.authMode === 'login' ? t('auth.titleLogin') : t('auth.titleRegister') }}</h3>
+          <p class="auth-modal-note">{{ t('auth.guestSyncHint') }}</p>
         </div>
         <button class="modal-close" @click="session.closeAuth" :aria-label="t('common.close')">×</button>
       </div>
@@ -70,7 +71,7 @@ async function submit() {
     session.closeAuth();
     router.push("/member");
   } catch (err) {
-    error.value = err instanceof Error ? err.message : t('auth.failed');
+    error.value = t('auth.failed');
   } finally {
     submitting.value = false;
   }

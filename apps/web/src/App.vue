@@ -8,7 +8,7 @@
 
     <main class="page-shell">
       <div v-if="bootError" class="app-alert">
-        {{ t('common.initError') }}: {{ bootError }}
+        {{ t('common.initError') }} · {{ bootError }}
       </div>
       <RouterView />
     </main>
@@ -55,7 +55,7 @@ onMounted(async () => {
     const [profile] = await Promise.all([session.hydrateUser(), catalog.loadHomeMeta(), catalog.loadUniversities()]);
     if (profile) await catalog.loadUserCollections();
   } catch (error) {
-    bootError.value = error instanceof Error ? error.message : "Unknown error";
+    bootError.value = t('common.serviceUnavailable');
   }
 });
 </script>

@@ -95,7 +95,7 @@ export const useCatalogStore = defineStore("catalog", () => {
       homeMeta.value = await apiFetch<HomeMeta>("/universities/meta/home");
       errorMessage.value = "";
     } catch (error) {
-      errorMessage.value = error instanceof Error ? error.message : "Failed to load home metadata";
+      errorMessage.value = runtimeText("dataLoadFailed");
       homeMeta.value = null;
       throw error;
     }
@@ -112,7 +112,7 @@ export const useCatalogStore = defineStore("catalog", () => {
       programs.value = programList;
       errorMessage.value = "";
     } catch (error) {
-      errorMessage.value = error instanceof Error ? error.message : "Failed to load university catalog";
+      errorMessage.value = runtimeText("dataLoadFailed");
       universities.value = [];
       programs.value = [];
       throw error;
@@ -122,11 +122,31 @@ export const useCatalogStore = defineStore("catalog", () => {
   }
 
   async function loadUniversity(slug: string) {
-    universityDetail.value = await apiFetch<UniversityListItem & { programs: ProgramListItem[] }>(`/universities/${slug}`);
+    loading.value = true;
+    try {
+      universityDetail.value = await apiFetch<UniversityListItem & { programs: ProgramListItem[] }>(`/universities/${slug}`);
+      errorMessage.value = "";
+    } catch (error) {
+      universityDetail.value = null;
+      errorMessage.value = runtimeText("dataLoadFailed");
+      throw error;
+    } finally {
+      loading.value = false;
+    }
   }
 
   async function loadProgram(slug: string) {
-    programDetail.value = await apiFetch<ProgramListItem & { university: UniversityListItem }>(`/programs/${slug}`);
+    loading.value = true;
+    try {
+      programDetail.value = await apiFetch<ProgramListItem & { university: UniversityListItem }>(`/programs/${slug}`);
+      errorMessage.value = "";
+    } catch (error) {
+      programDetail.value = null;
+      errorMessage.value = runtimeText("dataLoadFailed");
+      throw error;
+    } finally {
+      loading.value = false;
+    }
   }
 
   async function loadSearchSuggestions(query = search.value) {
@@ -155,10 +175,11 @@ export const useCatalogStore = defineStore("catalog", () => {
     try {
       selectedProgramDetail.value = await apiFetch<ProgramCatalogDetail>(`/programs/detail/${encodeURIComponent(String(identifier))}`);
       errorMessage.value = "";
+      return true;
     } catch (error) {
-      errorMessage.value = error instanceof Error ? error.message : "Failed to load program detail";
+      errorMessage.value = runtimeText("dataLoadFailed");
       selectedProgramDetail.value = null;
-      throw error;
+      return false;
     } finally {
       programLoading.value = false;
     }
@@ -182,7 +203,7 @@ export const useCatalogStore = defineStore("catalog", () => {
       syncMessage.value = runtimeText("catalogLoaded");
       syncError.value = "";
     } catch (error) {
-      syncError.value = error instanceof Error ? error.message : runtimeText("catalogLoadFailed");
+      syncError.value = runtimeText("catalogLoadFailed");
     } finally {
       syncLoading.value = false;
     }
@@ -219,7 +240,7 @@ export const useCatalogStore = defineStore("catalog", () => {
       syncMessage.value = runtimeText("catalogMerged");
       syncError.value = "";
     } catch (error) {
-      syncError.value = error instanceof Error ? error.message : runtimeText("catalogMergeFailed");
+      syncError.value = runtimeText("catalogMergeFailed");
     } finally {
       syncLoading.value = false;
     }
@@ -277,7 +298,7 @@ export const useCatalogStore = defineStore("catalog", () => {
     } catch (error) {
       favoriteState.value = previous;
       persistFavorites();
-      syncError.value = error instanceof Error ? error.message : runtimeText("favoriteSaveFailed");
+      syncError.value = runtimeText("favoriteSaveFailed");
     }
   }
 
@@ -308,7 +329,7 @@ export const useCatalogStore = defineStore("catalog", () => {
       } catch (error) {
         compareIds.value = previous;
         persistCompare();
-        syncError.value = error instanceof Error ? error.message : runtimeText("compareSaveFailed");
+        syncError.value = runtimeText("compareSaveFailed");
       }
     }
     return true;
@@ -328,7 +349,7 @@ export const useCatalogStore = defineStore("catalog", () => {
     } catch (error) {
       compareIds.value = previous;
       persistCompare();
-      syncError.value = error instanceof Error ? error.message : runtimeText("compareClearFailed");
+      syncError.value = runtimeText("compareClearFailed");
     }
   }
 

@@ -13,6 +13,7 @@
     <div v-if="!favoriteUniversities.length && !favoritePrograms.length" class="fav-empty section-card">
       <div class="fav-empty-icon">♥</div>
       <strong>{{ t('favorites.empty') }}</strong>
+      <span>{{ session.isLoggedIn ? t('favorites.emptyAccount') : t('favorites.emptyGuest') }}</span>
       <RouterLink class="btn btn-gold" to="/">{{ t('home.browseUniversities') }}</RouterLink>
     </div>
 
@@ -72,9 +73,11 @@ import { RouterLink } from "vue-router";
 import { useI18n } from "vue-i18n";
 import { useLocaleText } from "../composables/useLocaleText";
 import { useCatalogStore } from "../stores/catalog";
+import { useSessionStore } from "../stores/session";
 import { formatCurrency } from "../utils/format";
 
 const catalog = useCatalogStore();
+const session = useSessionStore();
 const { t } = useI18n();
 const { text } = useLocaleText();
 
@@ -82,7 +85,7 @@ const favoriteUniversities = computed(() => catalog.universities.filter((item) =
 const favoritePrograms = computed(() => catalog.programs.filter((item) => catalog.favoriteState.programs.includes(item.id)));
 
 onMounted(async () => {
-  if (!catalog.universities.length || !catalog.programs.length) await catalog.loadUniversities();
+  if (!catalog.universities.length || !catalog.programs.length) await catalog.loadUniversities().catch(() => undefined);
 });
 
 function hideBrokenImage(event: Event) {

@@ -91,6 +91,7 @@ const en = {
     applications: "Applications",
     perYear: " / year",
     initError: "Site initialization failed",
+    serviceUnavailable: "Some data is temporarily unavailable. Please refresh or try again later.",
     official: "Official",
     yes: "Yes",
     no: "No",
@@ -191,7 +192,8 @@ const en = {
     submitLogin: "Login and continue",
     submitRegister: "Register and continue",
     failed: "Authentication failed",
-    syncNotice: "Syncing local favorites and application planner..."
+    syncNotice: "Syncing local favorites and application planner...",
+    guestSyncHint: "Guest favorites, compare list and planner data will sync after login."
   },
   calculator: {
     title: "Cost estimator",
@@ -229,6 +231,8 @@ const en = {
     title: "My favorites",
     summary: "Universities {universities} / Programmes {programs}",
     empty: "No favorites yet. Save universities or programmes first.",
+    emptyGuest: "Guest favorites are saved on this device and can sync after login.",
+    emptyAccount: "Account favorites will stay available across signed-in devices.",
     universities: "Universities",
     programs: "Programmes"
   },
@@ -238,6 +242,8 @@ const en = {
     empty: "Select 2-3 universities to compare.",
     emptyTitle: "Select at least 2 universities to compare",
     emptyBody: "Use the compare button on university cards. You can compare up to 4 universities at once.",
+    emptyGuest: "Guest compare lists are saved locally and can sync after login.",
+    emptyAccount: "Your compare list is saved to your account when available.",
     dimension: "Dimension",
     region: "Region",
     qsRank: "QS ranking",
@@ -469,6 +475,7 @@ const en = {
   sync: {
     catalogLoaded: "Account favorites and compare list loaded.",
     catalogMerged: "Local favorites, saved programmes and compare list synced.",
+    dataLoadFailed: "Data is temporarily unavailable. Please refresh or try again later.",
     catalogLoadFailed: "Failed to read account status",
     catalogMergeFailed: "Favorite sync failed. Local data is kept.",
     favoriteSaveFailed: "Failed to save favorite",
@@ -589,6 +596,7 @@ const zhCN = {
     applications: "申请推进",
     perYear: " / 年",
     initError: "站点初始化失败",
+    serviceUnavailable: "部分数据暂时无法读取，请刷新或稍后再试。",
     official: "官方",
     yes: "是",
     no: "否",
@@ -689,7 +697,8 @@ const zhCN = {
     submitLogin: "登录并继续",
     submitRegister: "注册并继续",
     failed: "认证失败",
-    syncNotice: "正在同步本地收藏和申请规划..."
+    syncNotice: "正在同步本地收藏和申请规划...",
+    guestSyncHint: "访客态的收藏、对比和申请规划会保存在本机，登录后可同步。"
   },
   calculator: {
     title: "费用测算",
@@ -727,6 +736,8 @@ const zhCN = {
     title: "我的收藏",
     summary: "院校 {universities} / 专业 {programs}",
     empty: "还没有收藏内容，先把目标学校或专业加入收藏。",
+    emptyGuest: "访客态收藏会保存在本机，登录后可同步到账户。",
+    emptyAccount: "账户收藏会在已登录设备间保留。",
     universities: "院校",
     programs: "专业"
   },
@@ -736,6 +747,8 @@ const zhCN = {
     empty: "请选择 2-3 所学校进入对比。",
     emptyTitle: "请至少选择 2 所院校进行对比",
     emptyBody: "在院校卡片上点击对比按钮，最多可同时比较 4 所。",
+    emptyGuest: "访客态对比清单会保存在本机，登录后可同步。",
+    emptyAccount: "账户对比清单会在服务端可用时保存。",
     dimension: "维度",
     region: "地区",
     qsRank: "QS 排名",
@@ -967,6 +980,7 @@ const zhCN = {
   sync: {
     catalogLoaded: "已读取账户收藏和对比清单。",
     catalogMerged: "已同步本地收藏、专业收藏和对比清单。",
+    dataLoadFailed: "数据暂时无法读取，请刷新或稍后再试。",
     catalogLoadFailed: "账户状态读取失败",
     catalogMergeFailed: "收藏同步失败，本地数据已保留",
     favoriteSaveFailed: "收藏保存失败",
@@ -1089,6 +1103,7 @@ const ms = mergeMessages(en, {
     applications: "Permohonan",
     perYear: " / tahun",
     initError: "Inisialisasi laman gagal",
+    serviceUnavailable: "Sebahagian data tidak tersedia buat sementara. Sila segar semula atau cuba lagi nanti.",
     official: "Rasmi",
     yes: "Ya",
     no: "Tidak",
@@ -1189,7 +1204,8 @@ const ms = mergeMessages(en, {
     submitLogin: "Log masuk dan teruskan",
     submitRegister: "Daftar dan teruskan",
     failed: "Pengesahan gagal",
-    syncNotice: "Menyegerakkan kegemaran tempatan dan perancang permohonan..."
+    syncNotice: "Menyegerakkan kegemaran tempatan dan perancang permohonan...",
+    guestSyncHint: "Kegemaran, senarai perbandingan dan perancang tetamu akan disegerakkan selepas log masuk."
   },
   calculator: {
     title: "Anggaran kos",
@@ -1227,6 +1243,8 @@ const ms = mergeMessages(en, {
     title: "Kegemaran saya",
     summary: "Universiti {universities} / Program {programs}",
     empty: "Belum ada kegemaran. Simpan universiti atau program dahulu.",
+    emptyGuest: "Kegemaran tetamu disimpan pada peranti ini dan boleh disegerakkan selepas log masuk.",
+    emptyAccount: "Kegemaran akaun tersedia pada peranti yang telah log masuk.",
     universities: "Universiti",
     programs: "Program"
   },
@@ -1236,6 +1254,8 @@ const ms = mergeMessages(en, {
     empty: "Pilih 2-3 universiti untuk dibandingkan.",
     emptyTitle: "Pilih sekurang-kurangnya 2 universiti untuk dibandingkan",
     emptyBody: "Gunakan butang banding pada kad universiti. Anda boleh membandingkan sehingga 4 universiti sekali gus.",
+    emptyGuest: "Senarai perbandingan tetamu disimpan secara tempatan dan boleh disegerakkan selepas log masuk.",
+    emptyAccount: "Senarai perbandingan anda disimpan ke akaun apabila tersedia.",
     dimension: "Dimensi",
     region: "Wilayah",
     qsRank: "Kedudukan QS",
@@ -1467,6 +1487,7 @@ const ms = mergeMessages(en, {
   sync: {
     catalogLoaded: "Kegemaran akaun dan senarai perbandingan dimuatkan.",
     catalogMerged: "Kegemaran tempatan, program disimpan dan senarai perbandingan telah disegerakkan.",
+    dataLoadFailed: "Data tidak tersedia buat sementara. Sila segar semula atau cuba lagi nanti.",
     catalogLoadFailed: "Gagal membaca status akaun",
     catalogMergeFailed: "Penyegerakan kegemaran gagal. Data tempatan dikekalkan.",
     favoriteSaveFailed: "Gagal menyimpan kegemaran",

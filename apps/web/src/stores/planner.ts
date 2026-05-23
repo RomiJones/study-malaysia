@@ -93,7 +93,7 @@ export const usePlannerStore = defineStore("planner", () => {
       syncError.value = "";
     } catch (error) {
       dashboard.value = buildLocalDashboard();
-      syncError.value = error instanceof Error ? error.message : runtimeText("plannerLoadFailed");
+      syncError.value = runtimeText("plannerLoadFailed");
     } finally {
       loading.value = false;
     }
@@ -117,7 +117,7 @@ export const usePlannerStore = defineStore("planner", () => {
       syncMessage.value = runtimeText("plannerMerged");
       syncError.value = "";
     } catch (error) {
-      syncError.value = error instanceof Error ? error.message : runtimeText("plannerMergeFailed");
+      syncError.value = runtimeText("plannerMergeFailed");
     } finally {
       loading.value = false;
     }
@@ -144,7 +144,7 @@ export const usePlannerStore = defineStore("planner", () => {
       syncError.value = "";
     } catch (error) {
       dashboard.value = buildLocalDashboard();
-      syncError.value = error instanceof Error ? error.message : runtimeText("profileSyncFailed");
+      syncError.value = runtimeText("profileSyncFailed");
     }
   }
 
@@ -169,7 +169,7 @@ export const usePlannerStore = defineStore("planner", () => {
       syncError.value = "";
     } catch (error) {
       dashboard.value = buildLocalDashboard();
-      syncError.value = error instanceof Error ? error.message : runtimeText("materialSyncFailed");
+      syncError.value = runtimeText("materialSyncFailed");
     }
   }
 
@@ -199,7 +199,7 @@ export const usePlannerStore = defineStore("planner", () => {
       syncError.value = "";
     } catch (error) {
       dashboard.value = buildLocalDashboard();
-      syncError.value = error instanceof Error ? error.message : runtimeText("taskSyncFailed");
+      syncError.value = runtimeText("taskSyncFailed");
     }
   }
 
@@ -217,7 +217,7 @@ export const usePlannerStore = defineStore("planner", () => {
       syncMessage.value = runtimeText("taskProgressSynced");
       syncError.value = "";
     } catch (error) {
-      syncError.value = error instanceof Error ? error.message : runtimeText("taskAdvanceFailed");
+      syncError.value = runtimeText("taskAdvanceFailed");
     }
   }
 
@@ -238,7 +238,7 @@ export const usePlannerStore = defineStore("planner", () => {
       syncError.value = "";
     } catch (error) {
       dashboard.value = buildLocalDashboard();
-      syncError.value = error instanceof Error ? error.message : runtimeText("visaSyncFailed");
+      syncError.value = runtimeText("visaSyncFailed");
     }
   }
 
