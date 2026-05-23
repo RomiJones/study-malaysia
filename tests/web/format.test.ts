@@ -5,6 +5,7 @@ import {
   cleanDisplayText,
   formatCategoryLabel,
   formatOfficialSourceStatus,
+  formatProgramFacultyLabel,
   formatProgramIntake,
   formatProgramLanguage,
   formatProgramTuition,
@@ -93,5 +94,23 @@ describe("web display format helpers", () => {
   test("converts real simplified dynamic samples on Traditional Chinese pages", () => {
     assert.equal(cleanDisplayText("心胸外科学临床型硕士", "", "zh-TW"), "心胸外科學臨床型碩士");
     assert.equal(cleanDisplayText("医学执业注册资格", "", "zh-TW"), "醫學執業註冊資格");
+  });
+
+  test("formats programme faculty without leaking Chinese fallback across locales", () => {
+    const facultyProgram = program({
+      category: "medicine",
+      facultyZh: "医学院",
+      faculty: {
+        en: "医学院",
+        ms: "",
+        "zh-CN": "",
+        "zh-TW": ""
+      }
+    });
+
+    assert.equal(formatProgramFacultyLabel(facultyProgram, "en"), "Medicine");
+    assert.equal(formatProgramFacultyLabel(facultyProgram, "ms"), "Perubatan");
+    assert.equal(formatProgramFacultyLabel(facultyProgram, "zh-CN"), "医学院");
+    assert.equal(formatProgramFacultyLabel(facultyProgram, "zh-TW"), "醫學院");
   });
 });

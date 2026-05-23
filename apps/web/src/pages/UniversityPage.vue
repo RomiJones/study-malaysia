@@ -196,7 +196,7 @@
                   <div class="programme-name-en">{{ program.nameEnOfficial || program.nameEn }}</div>
                 </div>
                 <div class="programme-cell" :data-label="t('university.faculty')">
-                  <div class="programme-faculty-zh">{{ program.facultyZh || text(program.faculty) || categoryLabel(program.category) }}</div>
+                  <div class="programme-faculty-zh">{{ facultyLabel(program) }}</div>
                 </div>
                 <div class="programme-cell" :data-label="t('university.duration')">
                   <span class="programme-pill">{{ durationLabel(program) }}</span>
@@ -475,6 +475,7 @@ import {
   formatCurrency,
   formatFeeAuditStatus,
   formatOfficialSourceStatus,
+  formatProgramFacultyLabel,
   formatProgramDuration,
   formatProgramIntake,
   formatProgramLanguage,
@@ -756,6 +757,10 @@ function institutionTypeLabel(value: InstitutionType) {
 
 function categoryLabel(value: string) {
   return formatCategoryLabel(value, currentLocale.value);
+}
+
+function facultyLabel(program: ProgramListItem | ProgramCatalogDetail) {
+  return formatProgramFacultyLabel(program, currentLocale.value);
 }
 
 function compactNumber(value: number) {

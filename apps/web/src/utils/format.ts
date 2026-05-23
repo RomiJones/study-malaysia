@@ -284,6 +284,7 @@ export function formatCurrency(value: number) {
 }
 
 type ProgramDisplayFields = ProgramListItem | ProgramCatalogDetail;
+type ProgramFacultyDisplayFields = Pick<ProgramListItem, "category" | "faculty" | "facultyZh">;
 
 const missingDisplayValues = new Set(["", "-", "--", "n/a", "na", "null", "undefined", "[]", "{}", "[object object]"]);
 
@@ -316,6 +317,17 @@ export function cleanDisplayText(
 
 export function hasDisplayText(value: unknown): boolean {
   return cleanDisplayText(value, "") !== "";
+}
+
+export function formatProgramFacultyLabel(program: ProgramFacultyDisplayFields, locale?: SupportedLocale): string {
+  const normalizedLocale = normalizeLocale(locale);
+  const localizedFaculty = pickLocaleText(program.faculty, normalizedLocale);
+  if (localizedFaculty) return localizedFaculty;
+
+  const chineseFaculty = isChineseLocale(normalizedLocale)
+    ? cleanDisplayText(program.facultyZh, "", normalizedLocale)
+    : "";
+  return chineseFaculty || formatCategoryLabel(program.category, normalizedLocale);
 }
 
 export function normalizeAcademicText(value: unknown, fallback?: string, locale?: SupportedLocale): string {
