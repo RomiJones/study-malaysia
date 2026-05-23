@@ -43,7 +43,7 @@
       <div class="university-card__metrics">
         <div class="university-metric">
           <div class="university-metric__label">{{ t('common.annualTuition') }}</div>
-          <div class="university-metric__value">CNY {{ shortPrice(university.tuitionMinCny) }}+</div>
+          <div class="university-metric__value">{{ tuitionDisplay }}</div>
         </div>
         <div class="university-metric">
           <div class="university-metric__label">{{ t('common.minIelts') }}</div>
@@ -73,7 +73,7 @@
 
       <div class="university-card__footer">
         <div class="university-card__highlights">
-          <span>{{ t('common.officialSource') }}</span>
+          <span>{{ t('common.officialSource') }}：{{ sourceStatusLabel }}</span>
           <span v-for="highlight in array(university.highlights).slice(0, 2)" :key="highlight">{{ highlight }}</span>
         </div>
         <div class="university-card__right">
@@ -103,6 +103,7 @@ import { RouterLink, useRouter } from "vue-router";
 import { useI18n } from "vue-i18n";
 import { useLocaleText } from "../composables/useLocaleText";
 import { useCatalogStore } from "../stores/catalog";
+import { OFFICIAL_PAGE_FALLBACK, formatOfficialSourceStatus } from "../utils/format";
 
 const props = defineProps<{ university: UniversityListItem }>();
 const catalog = useCatalogStore();
@@ -131,7 +132,8 @@ const relatedPrograms = computed(() =>
   [...catalog.programs.filter((program) => program.universityId === university.id)].sort(comparePrograms)
 );
 const topPrograms = computed(() => relatedPrograms.value.slice(0, 4));
-const tuitionDisplay = computed(() => `CNY ${shortPrice(university.tuitionMinCny)}+`);
+const tuitionDisplay = computed(() => university.tuitionMinCny > 0 ? `CNY ${shortPrice(university.tuitionMinCny)}+` : OFFICIAL_PAGE_FALLBACK);
+const sourceStatusLabel = computed(() => formatOfficialSourceStatus(university.officialSourceStatus));
 
 function comparePrograms(a: ProgramListItem, b: ProgramListItem) {
   const levelDiff = levelOrder[a.level] - levelOrder[b.level];

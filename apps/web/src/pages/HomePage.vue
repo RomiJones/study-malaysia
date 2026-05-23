@@ -13,6 +13,7 @@
             <span class="hero-accent">{{ t('home.accent') }}</span>
           </h1>
           <p class="hero-description">{{ t('home.subtitle') }}</p>
+          <p class="hero-data-note">{{ heroDataNote }}</p>
 
           <div class="search-wrap" ref="searchWrapRef">
             <div class="search-inner">
@@ -249,6 +250,7 @@ import UniversityCard from "../components/UniversityCard.vue";
 import { useCatalogStore } from "../stores/catalog";
 import { useI18n } from "vue-i18n";
 import { useRouter } from "vue-router";
+import { formatPublicCount } from "../utils/format";
 
 const catalog = useCatalogStore();
 const { t } = useI18n();
@@ -353,12 +355,26 @@ const pagedUniversities = computed(() => {
   const start = (catalog.homePage - 1) * catalog.pageSize;
   return catalog.filteredUniversities.slice(start, start + catalog.pageSize);
 });
+const publicStats = computed(() => {
+  const stats = catalog.homeMeta?.stats;
+  return {
+    universityCount: stats?.universityCount ?? catalog.universities.length,
+    programCount: stats?.programCount ?? catalog.programs.length,
+    readyProgramCount: stats?.readyProgramCount ?? stats?.programCount ?? catalog.programs.length,
+    officialVerifiedCount: stats?.officialVerifiedCount ?? catalog.universities.filter((item) => item.officialSourceStatus === "official-verified").length
+  };
+});
 const heroStats = computed(() => [
-  { value: `${Math.max(catalog.homeMeta?.stats.universityCount ?? 0, 119)}+`, label: t('home.statsUniversities') },
-  { value: `${Math.max(catalog.homeMeta?.stats.programCount ?? 0, 687)}+`, label: t('home.statsPrograms') },
-  { value: "12", label: t('home.statsBestRank') },
-  { value: "100%", label: t('home.statsSource') }
+  { value: formatPublicCount(publicStats.value.universityCount), label: t('home.statsUniversities') },
+  { value: formatPublicCount(publicStats.value.programCount), label: t('home.statsPrograms') },
+  { value: formatPublicCount(publicStats.value.readyProgramCount), label: t('home.statsReadyPrograms') },
+  { value: formatPublicCount(publicStats.value.officialVerifiedCount), label: t('home.statsSource') }
 ]);
+const heroDataNote = computed(() => t('home.publicScope', {
+  universities: formatPublicCount(publicStats.value.universityCount),
+  programs: formatPublicCount(publicStats.value.programCount),
+  readyPrograms: formatPublicCount(publicStats.value.readyProgramCount)
+}));
 const budgetRangeValue = computed(() => catalog.tuitionMax ?? 120000);
 const budgetRangeLabel = computed(() => shortBudget(budgetRangeValue.value));
 const visiblePages = computed(() => {

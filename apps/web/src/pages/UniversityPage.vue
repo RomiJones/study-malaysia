@@ -354,7 +354,7 @@
               </div>
               <div class="req-item">
                 <div class="req-item-label">费用备注</div>
-                <div class="req-item-value req-item-value--text">{{ catalog.selectedProgramDetail.tuitionInfo.note || "以官方页面为准" }}</div>
+                <div class="req-item-value req-item-value--text">{{ tuitionNoteLabel(catalog.selectedProgramDetail) }}</div>
               </div>
             </div>
           </div>
@@ -364,7 +364,7 @@
             <div class="req-grid">
               <div class="req-item">
                 <div class="req-item-label">GPA 要求</div>
-                <div class="req-item-value">{{ catalog.selectedProgramDetail.requirement.gpa }}+</div>
+                <div class="req-item-value">{{ gpaLabel(catalog.selectedProgramDetail) }}</div>
               </div>
               <div class="req-item">
                 <div class="req-item-label">雅思要求</div>
@@ -376,11 +376,11 @@
               </div>
               <div class="req-item req-item--full">
                 <div class="req-item-label">官方语言要求</div>
-                <div class="req-item-value req-item-value--text">{{ catalog.selectedProgramDetail.officialLanguageRequirement || "按学校官方页面为准" }}</div>
+                <div class="req-item-value req-item-value--text">{{ officialLanguageLabel(catalog.selectedProgramDetail) }}</div>
               </div>
               <div class="req-item req-item--full">
                 <div class="req-item-label">官方学术要求 / 备注</div>
-                <div class="req-item-value req-item-value--text">{{ catalog.selectedProgramDetail.officialAcademicRequirement || text(catalog.selectedProgramDetail.requirement.note) }}</div>
+                <div class="req-item-value req-item-value--text">{{ academicRequirementLabel(catalog.selectedProgramDetail) }}</div>
               </div>
               <div v-if="catalog.selectedProgramDetail.chinaStudentRequirement" class="req-item req-item--full">
                 <div class="req-item-label">中国学生申请备注</div>
@@ -469,7 +469,19 @@ import { useI18n } from "vue-i18n";
 import { useLocaleText } from "../composables/useLocaleText";
 import { useCatalogStore } from "../stores/catalog";
 import { usePlannerStore } from "../stores/planner";
-import { formatCurrency } from "../utils/format";
+import {
+  OFFICIAL_CONFIRMATION_FALLBACK,
+  OFFICIAL_PAGE_FALLBACK,
+  cleanDisplayText,
+  formatCurrency,
+  formatFeeAuditStatus,
+  formatOfficialSourceStatus,
+  formatProgramDuration,
+  formatProgramIntake,
+  formatProgramLanguage,
+  formatProgramTuition,
+  normalizeAcademicText
+} from "../utils/format";
 
 type DetailTab = "overview" | "bachelor" | "master" | "phd" | "facilities" | "apply";
 type UniversityDetailView = UniversityListItem & { programs: ProgramListItem[] };
@@ -753,32 +765,40 @@ function compactNumber(value: number) {
 }
 
 function tuitionLabel(program: ProgramListItem | ProgramCatalogDetail) {
-  if (program.publicDisplayStatus === "not-available-for-international") return "不适用国际学生";
-  return program.tuitionDisplay || program.listTuitionText || program.tuitionInfo?.displayText || `CNY ${formatCurrency(program.annualTuitionCny)} / 年`;
+  return formatProgramTuition(program);
 }
 
 function feeStatus(program: ProgramListItem | ProgramCatalogDetail) {
-  if (program.officialFeeAuditStatus === "matched-official") return "官方已核验";
-  if (program.officialFeeAuditStatus === "not-published") return "官方未公布";
-  if (program.publicDisplayStatus === "not-available-for-international") return "详情页查看说明";
-  return "待官方确认";
+  return formatFeeAuditStatus(program.officialFeeAuditStatus, program.publicDisplayStatus);
 }
 
 function durationLabel(program: ProgramListItem | ProgramCatalogDetail) {
-  return normalizeAcademicText(program.durationOfficial || `${Number(program.durationYears)} years`);
+  return formatProgramDuration(program);
 }
 
 function languageLabel(program: ProgramListItem | ProgramCatalogDetail) {
-  if (program.publicDisplayStatus === "not-available-for-international") return "不适用";
-  const raw = program.officialLanguageRequirement || "";
-  const match = raw.match(/IELTS(?:\s*\(Academic\)|\s+Academic)?(?:\s*Band)?\s*(\d+(?:\.\d+)?)/i);
-  if (match) return `IELTS ${match[1]}+`;
-  return `IELTS ${program.languageRequirement.ielts}+`;
+  return formatProgramLanguage(program);
 }
 
 function intakeLabel(program: ProgramListItem | ProgramCatalogDetail) {
-  const value = program.officialIntake || program.intakeMonths.join(" / ");
-  return normalizeAcademicText(value || "待确认");
+  return formatProgramIntake(program);
+}
+
+function tuitionNoteLabel(program: ProgramCatalogDetail) {
+  return cleanDisplayText(program.tuitionInfo?.note, OFFICIAL_PAGE_FALLBACK);
+}
+
+function gpaLabel(program: ProgramCatalogDetail) {
+  const gpa = Number(program.requirement?.gpa);
+  return Number.isFinite(gpa) && gpa > 0 ? `${gpa}+` : OFFICIAL_CONFIRMATION_FALLBACK;
+}
+
+function officialLanguageLabel(program: ProgramCatalogDetail) {
+  return normalizeAcademicText(program.officialLanguageRequirement, OFFICIAL_PAGE_FALLBACK);
+}
+
+function academicRequirementLabel(program: ProgramCatalogDetail) {
+  return cleanDisplayText(program.officialAcademicRequirement || text(program.requirement.note), OFFICIAL_PAGE_FALLBACK);
 }
 
 function programApplicationDocs(program: ProgramCatalogDetail) {
@@ -798,7 +818,7 @@ function programSourceRows(program: ProgramCatalogDetail): ModalSourceRow[] {
   if (program.auditNote || program.publicDisplayNote || program.reviewReason) {
     rows.push({
       label: "资料备注",
-      value: program.auditNote || program.publicDisplayNote || program.reviewReason,
+      value: cleanDisplayText(program.auditNote || program.publicDisplayNote || program.reviewReason, OFFICIAL_CONFIRMATION_FALLBACK),
       full: true
     });
   }
@@ -815,30 +835,8 @@ function programSourceLinks(program: ProgramCatalogDetail): SourceLinkView[] {
   return items;
 }
 
-function normalizeAcademicText(value: string) {
-  return value
-    .replace(/Not offered for the Academic Session 2026\/2027/gi, "2026/2027 学年不开放")
-    .replace(/Not offered/gi, "暂不开放")
-    .replace(/Semester 1 \(October\) Intake/gi, "第一学期（10月）")
-    .replace(/Semester 2 \(March\) Intake/gi, "第二学期（3月）")
-    .replace(/October Intake/gi, "10月")
-    .replace(/March Intake/gi, "3月")
-    .replace(/October/gi, "10月")
-    .replace(/March/gi, "3月")
-    .replace(/Rolling/gi, "滚动开放")
-    .replace(/Years?/gi, "年")
-    .replace(/Semesters?/gi, "个学期")
-    .replace(/Full time/gi, "全日制")
-    .replace(/Coursework/gi, "授课型")
-    .replace(/\band\b/gi, "及");
-}
-
 function sourceStatus(status: string) {
-  if (status === "official-verified") return "官方来源已核验";
-  if (status.includes("not-available")) return "官方页已核验但暂不开放";
-  if (status.includes("missing")) return "缺少官方来源";
-  if (status.includes("conflict")) return "来源需复核";
-  return "待复核";
+  return formatOfficialSourceStatus(status);
 }
 
 function profileString(key: string) {

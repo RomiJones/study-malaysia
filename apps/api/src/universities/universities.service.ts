@@ -76,15 +76,17 @@ export class UniversitiesService {
 
     const [universities, programs, content] = await Promise.all([
       this.universitiesRepository.find({ where: { isPublished: true, publicDisplayStatus: "ready" } }),
-      this.programsRepository.find({ where: { isPublished: true, publicDisplayStatus: "ready" } }),
+      this.programsRepository.find({ where: { isPublished: true, publicDisplayStatus: "ready" }, relations: { university: true } }),
       this.contentRepository.find()
     ]);
+    const universityMap = new Map(universities.map((university) => [university.id, university]));
+    const readyPrograms = publicReadyPrograms(programs, universityMap);
 
     const payload = {
       stats: {
         universityCount: universities.length,
-        programCount: programs.length,
-        readyProgramCount: programs.length,
+        programCount: readyPrograms.length,
+        readyProgramCount: readyPrograms.length,
         bestQsRank: universities.length ? universities.reduce((min, item) => Math.min(min, item.qsRank), Number.POSITIVE_INFINITY) : null,
         officialVerifiedCount: universities.filter((item) => item.officialSourceStatus === "official-verified").length
       },

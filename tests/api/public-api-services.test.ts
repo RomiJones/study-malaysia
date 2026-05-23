@@ -4,6 +4,7 @@ import assert from "node:assert/strict";
 import { AuthController } from "../../apps/api/src/auth/auth.controller.ts";
 import { ProgramsController } from "../../apps/api/src/programs/programs.controller.ts";
 import { ProgramsService } from "../../apps/api/src/programs/programs.service.ts";
+import { UniversitiesService } from "../../apps/api/src/universities/universities.service.ts";
 
 function text(en: string, zh = en) {
   return { en, ms: en, "zh-CN": zh, "zh-TW": zh };
@@ -174,6 +175,33 @@ describe("public API services and controllers", () => {
       'list:{"search":"um","includeMeta":true}',
       'recommend:{"level":"master","targetCategory":"it"}'
     ]);
+  });
+
+  test("home metadata uses the same public catalog scope as public lists", async () => {
+    const hiddenUniversity = university({
+      id: 2,
+      slug: "hidden-university",
+      code: "HID",
+      isPublished: false,
+      publicDisplayStatus: "hidden-unverified",
+      officialSourceStatus: "missing-source"
+    });
+    const service = new UniversitiesService(
+      { find: async () => [university()] } as any,
+      { find: async () => [program(), program({ id: 12, universityId: 2, university: hiddenUniversity })] } as any,
+      { find: async () => [] } as any,
+      {
+        getJson: async () => null,
+        setJson: async () => undefined
+      } as any
+    );
+
+    const result = await service.getHomeMeta() as any;
+
+    assert.equal(result.stats.universityCount, 1);
+    assert.equal(result.stats.programCount, 1);
+    assert.equal(result.stats.readyProgramCount, 1);
+    assert.equal(result.stats.officialVerifiedCount, 1);
   });
 
   test("auth controller exposes the current user state endpoint", async () => {

@@ -19,7 +19,9 @@ interface HomeMeta {
   stats: {
     universityCount: number;
     programCount: number;
-    bestQsRank: number;
+    readyProgramCount?: number;
+    bestQsRank?: number | null;
+    officialVerifiedCount?: number;
   };
   contentBlocks: Array<{ id: number; key: string; title: Record<string, string>; body: Record<string, string> }>;
 }
