@@ -1,7 +1,7 @@
 {
   "version": 1,
   "taskId": "TASK-036",
-  "generatedAt": "2026-05-23T23:48:10.269Z",
+  "generatedAt": "2026-05-23T23:53:05.022Z",
   "sourceHtmlPath": "D:/mydev/StudyMY_UM_v58_na_display_tidy.html",
   "assetRoot": "apps/web/public/assets/static-html",
   "manifestPath": "apps/web/public/assets/static-html/manifest.json",
@@ -1295,7 +1295,7 @@
       "inlineContent": null,
       "descriptor": null,
       "status": "failed",
-      "statusMessageZh": "无法提取图片：HTTP 429 Too many requests (76af2b0)",
+      "statusMessageZh": "无法提取图片：HTTP 404 Not Found",
       "handlingStrategyZh": "已记录失败原因；后续可重试下载、手工补充同源图片，或在接入时使用本地设计兜底。",
       "fileName": null,
       "localPath": null,

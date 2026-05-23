@@ -3,7 +3,7 @@
 ## 摘要
 
 - **任务编号**: TASK-036
-- **生成时间**: 2026-05-23T23:48:10.269Z
+- **生成时间**: 2026-05-23T23:53:05.022Z
 - **静态 HTML**: `D:/mydev/StudyMY_UM_v58_na_display_tidy.html`
 - **本地资源目录**: `apps/web/public/assets/static-html`
 - **Manifest**: `apps/web/public/assets/static-html/manifest.json`
@@ -68,7 +68,7 @@
 | failed | logo | `https://upload.wikimedia.org/wikipedia/en/thumb/c/c3/INTI_International_University_logo...` | universitiesBase.9.logo / line 26620 | 无法提取图片：HTTP 400 Use thumbnail sizes listed on https://w.wiki/GHai 已记录失败原因；后续可重试下载、手工补充同源图片，或在接入时使用本地设计兜底。 |
 | failed | logo | `https://upload.wikimedia.org/wikipedia/en/thumb/4/42/Universiti_Teknologi_MARA_logo.png...` | universitiesBase.10.logo / line 26902 | 无法提取图片：HTTP 400 Use thumbnail sizes listed on https://w.wiki/GHai 已记录失败原因；后续可重试下载、手工补充同源图片，或在接入时使用本地设计兜底。 |
 | failed | logo | `https://upload.wikimedia.org/wikipedia/en/thumb/5/5e/UTAR_logo.png/200px-UTAR_logo.png` | universitiesBase.11.logo / line 27574 | 无法提取图片：HTTP 400 Use thumbnail sizes listed on https://w.wiki/GHai 已记录失败原因；后续可重试下载、手工补充同源图片，或在接入时使用本地设计兜底。 |
-| failed | logo | `https://upload.wikimedia.org/wikipedia/en/a/a4/Upsilogo.png` | universitiesBase.12.logo / line 27996 | 无法提取图片：HTTP 429 Too many requests (76af2b0) 已记录失败原因；后续可重试下载、手工补充同源图片，或在接入时使用本地设计兜底。 |
+| failed | logo | `https://upload.wikimedia.org/wikipedia/en/a/a4/Upsilogo.png` | universitiesBase.12.logo / line 27996 | 无法提取图片：HTTP 404 Not Found 已记录失败原因；后续可重试下载、手工补充同源图片，或在接入时使用本地设计兜底。 |
 | failed | logo | `https://upload.wikimedia.org/wikipedia/en/thumb/a/ac/Sunway_University_Logo.svg/200px-S...` | universitiesBase.13.logo / line 28452 | 无法提取图片：HTTP 400 Use thumbnail sizes listed on https://w.wiki/GHai 已记录失败原因；后续可重试下载、手工补充同源图片，或在接入时使用本地设计兜底。 |
 | failed | card-image | `https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=800&h=500&fit=crop&hue=60` | universitiesBase.13.image / line 28453 | 无法提取图片：HTTP 404 Not Found 已记录失败原因；后续可重试下载、手工补充同源图片，或在接入时使用本地设计兜底。 |
 | failed | logo | `https://upload.wikimedia.org/wikipedia/en/thumb/8/8e/UNIMAS_logo.svg/200px-UNIMAS_logo....` | universitiesBase.14.logo / line 28887 | 无法提取图片：HTTP 400 Use thumbnail sizes listed on https://w.wiki/GHai 已记录失败原因；后续可重试下载、手工补充同源图片，或在接入时使用本地设计兜底。 |
