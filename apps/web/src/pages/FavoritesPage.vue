@@ -1,11 +1,8 @@
 <template>
   <section class="favorites-page">
-    <div class="section-card favorites-head">
+    <div class="favorites-head">
       <div class="favorites-head__row">
-        <div>
-          <div class="section-kicker">{{ t('nav.favorites') }}</div>
-          <h1 class="section-title">{{ t('favorites.title') }}</h1>
-        </div>
+        <h1 class="section-title">{{ t('favorites.title') }}</h1>
         <div class="favorites-summary">{{ t('favorites.summary', { universities: favoriteUniversities.length, programs: favoritePrograms.length }) }}</div>
       </div>
     </div>
@@ -21,7 +18,10 @@
 
     <template v-else>
       <div v-if="favoriteUniversities.length" class="favorites-section">
-        <div class="section-kicker">{{ t('favorites.universities') }}</div>
+        <h2 class="favorites-section-title">
+          {{ t('favorites.universities') }}
+          <span>{{ favoriteUniversities.length }}</span>
+        </h2>
         <div class="favorite-university-grid">
           <article v-for="item in favoriteUniversities" :key="item.id" class="favorite-university-card">
             <div class="favorite-university-card__top">
@@ -40,10 +40,13 @@
       </div>
 
       <div v-if="favoritePrograms.length" class="favorites-section">
-        <div class="section-kicker">{{ t('favorites.programs') }}</div>
+        <h2 class="favorites-section-title">
+          {{ t('favorites.programs') }}
+          <span>{{ favoritePrograms.length }}</span>
+        </h2>
         <div class="favorite-program-grid">
           <article v-for="item in favoritePrograms" :key="item.id" class="favorite-program-card">
-            <RouterLink :to="`/programs/${item.slug}`">
+            <div class="favorite-program-card__body">
               <div class="section-kicker">{{ item.code }}</div>
               <h3>{{ text(item.name) }}</h3>
               <p>{{ text(item.faculty) }}</p>
@@ -51,9 +54,10 @@
                 <span class="chip chip-ink">CNY {{ formatCurrency(item.annualTuitionCny) }}{{ t('common.perYear') }}</span>
                 <span class="chip chip-teal">IELTS {{ item.languageRequirement.ielts }}+</span>
               </div>
-            </RouterLink>
+            </div>
             <div class="favorite-program-card__actions">
-              <button class="btn btn-outline" type="button" @click="catalog.toggleFavoriteProgram(item.id)">移除收藏</button>
+              <RouterLink class="btn btn-primary" :to="`/programs/${item.slug}`">{{ t('common.viewDetails') }}</RouterLink>
+              <button class="btn btn-outline favorite-remove" type="button" @click="catalog.toggleFavoriteProgram(item.id)">移除</button>
             </div>
           </article>
         </div>

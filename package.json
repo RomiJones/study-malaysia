@@ -23,6 +23,7 @@
     "verify:task025": "node scripts/task025-program-visual.mjs",
     "verify:task026": "node scripts/task026-tools-visual.mjs",
     "verify:task027": "node scripts/task027-mobile-visual.mjs",
+    "verify:task028": "node scripts/task028-final-visual-regression.mjs",
     "seed": "npm --workspace @studymy/api run seed",
     "extract:static": "npm --workspace @studymy/api run extract:static",
     "import:static": "npm --workspace @studymy/api run import:static",

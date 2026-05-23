@@ -328,7 +328,9 @@ async function verifyUserWebFlow() {
   const programs = await fetchJson(`${apiBaseUrl}/programs`);
   const firstUniversity = catalog.find((university) => programs.some((program) => program.universityId === university.id));
   const secondUniversity = catalog.find((university) => university.id !== firstUniversity.id);
+  const firstProgram = programs.find((program) => program.universityId === firstUniversity?.id);
   assert(firstUniversity && secondUniversity, "用户端流程需要至少两所院校");
+  assert(firstProgram, "用户端流程需要至少一个可打开的专业");
 
   await withPage("user-web", async (page) => {
     await page.goto(webBaseUrl, { waitUntil: "domcontentloaded" });
@@ -355,7 +357,7 @@ async function verifyUserWebFlow() {
     assert(localState.compare.length >= 2, "对比状态必须写入本地存储");
 
     await page.goto(`${webBaseUrl}/favorites`, { waitUntil: "domcontentloaded" });
-    await expectCount(page.locator(".favorites-page .university-card"), 1, "收藏页应展示收藏院校");
+    await expectCount(page.locator(".favorites-page .favorite-university-card, .favorites-page .university-card"), 1, "收藏页应展示收藏院校");
 
     await page.goto(`${webBaseUrl}/compare`, { waitUntil: "domcontentloaded" });
     await page.locator(".compare-table").waitFor();
@@ -363,6 +365,8 @@ async function verifyUserWebFlow() {
 
     await page.goto(`${webBaseUrl}/universities/${firstUniversity.slug}`, { waitUntil: "domcontentloaded" });
     await page.locator(".detail-hero").waitFor();
+    await page.getByRole("tab", { name: programTabName(firstProgram.level) }).click();
+    await page.locator(".programme-grid-row").first().waitFor();
     await page.locator(".programme-grid-row").first().click();
     await page.locator(".program-detail-modal").waitFor();
     await page.locator(".program-modal-actions .btn-primary").click();
@@ -386,6 +390,12 @@ async function verifyUserWebFlow() {
   });
 
   return { universitySlug: firstUniversity.slug, comparedSlug: secondUniversity.slug };
+}
+
+function programTabName(level) {
+  if (level === "master") return "硕士专业";
+  if (level === "phd") return "博士专业";
+  return "本科专业";
 }
 
 async function verifyAdminFlow() {
@@ -480,7 +490,7 @@ async function toggleCardAction(page, cardIndex, actionIndex) {
   await page
     .locator(".university-card")
     .nth(cardIndex)
-    .locator(".university-card__actions .ghost-action")
+    .locator(".university-card__actions .icon-action, .university-card__actions .ghost-action")
     .nth(actionIndex)
     .click();
 }

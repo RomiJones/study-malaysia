@@ -3354,7 +3354,7 @@ label.lbl {
 }
 
 .favorites-head {
-  padding: 24px;
+  padding: 20px 0 6px;
 }
 
 .favorites-head__row {
@@ -3373,6 +3373,31 @@ label.lbl {
 .favorites-section {
   display: grid;
   gap: 14px;
+}
+
+.favorites-section-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--ink);
+  font-family: "DM Serif Display", Georgia, serif;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.favorites-section-title span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 24px;
+  height: 24px;
+  border-radius: 999px;
+  background: var(--paper-2);
+  color: var(--ink-2);
+  font-family: "DM Sans", system-ui, sans-serif;
+  font-size: 12px;
+  font-weight: 800;
 }
 
 .favorite-university-grid {
@@ -3480,6 +3505,11 @@ label.lbl {
   flex: 1;
 }
 
+.favorite-program-card__body {
+  min-width: 0;
+  flex: 1;
+}
+
 .favorite-program-card h3 {
   margin-top: 8px;
   color: var(--ink);
@@ -3505,6 +3535,17 @@ label.lbl {
 .favorite-program-card__actions {
   flex-shrink: 0;
   margin-top: 0;
+  align-items: stretch;
+  justify-content: center;
+}
+
+.favorite-program-card__actions .btn {
+  min-width: 56px;
+  justify-content: center;
+}
+
+.favorite-program-card__actions .btn-primary {
+  padding-inline: 18px;
 }
 
 .modal-panel.auth-panel {
