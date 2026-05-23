@@ -393,14 +393,6 @@
             </div>
           </div>
 
-          <div class="modal-section">
-            <div class="modal-section-title">{{ t("common.documents") }}</div>
-            <ul class="program-doc-list">
-              <li v-for="item in array(catalog.selectedProgramDetail.applicationDocs)" :key="item">{{ item }}</li>
-              <li v-if="!array(catalog.selectedProgramDetail.applicationDocs).length">以官方申请系统要求为准</li>
-            </ul>
-          </div>
-
           <div v-if="array(catalog.selectedProgramDetail.curriculum).length" class="modal-section">
             <div class="modal-section-title">{{ t("common.curriculum") }}</div>
             <div class="curriculum-pills">
@@ -416,27 +408,31 @@
           </div>
 
           <div class="modal-section">
+            <div class="modal-section-title">申请所需材料</div>
+            <ul class="program-doc-list program-doc-list--checked">
+              <li v-for="item in programApplicationDocs(catalog.selectedProgramDetail)" :key="item">{{ item }}</li>
+            </ul>
+          </div>
+
+          <div class="modal-section">
             <div class="modal-section-title">官方来源与核验状态</div>
-            <div class="req-grid">
-              <div class="req-item">
-                <div class="req-item-label">来源状态</div>
-                <div class="req-item-value">{{ sourceStatus(catalog.selectedProgramDetail.officialSourceStatus) }}</div>
+            <div class="req-grid req-grid--sources">
+              <div
+                v-for="item in programSourceRows(catalog.selectedProgramDetail)"
+                :key="item.label"
+                class="req-item"
+                :class="{ 'req-item--full': item.full }"
+              >
+                <div class="req-item-label">{{ item.label }}</div>
+                <div class="req-item-value" :class="{ 'req-item-value--text': item.full }">{{ item.value }}</div>
               </div>
-              <div class="req-item">
-                <div class="req-item-label">核验日期</div>
-                <div class="req-item-value">{{ catalog.selectedProgramDetail.officialVerifiedAt || "待确认" }}</div>
-              </div>
-              <div class="req-item req-item--full">
-                <div class="req-item-label">官方链接</div>
-                <a class="req-source-link" :href="catalog.selectedProgramDetail.officialSourceUrl" target="_blank" rel="noreferrer">
-                  {{ catalog.selectedProgramDetail.officialSourceUrl || "待补充" }}
-                </a>
-              </div>
-              <div class="req-item req-item--full">
-                <div class="req-item-label">官方学费来源</div>
-                <a class="req-source-link" :href="catalog.selectedProgramDetail.officialFeeSourceUrl" target="_blank" rel="noreferrer">
-                  {{ catalog.selectedProgramDetail.officialFeeSourceUrl || "待补充" }}
-                </a>
+              <div
+                v-for="item in programSourceLinks(catalog.selectedProgramDetail)"
+                :key="item.url"
+                class="req-item req-item--full req-item--source-link"
+              >
+                <div class="req-item-label">{{ item.label }}</div>
+                <a class="req-source-link" :href="item.url" target="_blank" rel="noreferrer">{{ item.url }}</a>
               </div>
             </div>
           </div>
@@ -478,6 +474,7 @@ import { formatCurrency } from "../utils/format";
 type DetailTab = "overview" | "bachelor" | "master" | "phd" | "facilities" | "apply";
 type UniversityDetailView = UniversityListItem & { programs: ProgramListItem[] };
 type LabelValue = { label: string; value: string };
+type ModalSourceRow = LabelValue & { full?: boolean };
 type LabelLink = LabelValue & { href: string };
 type SourceLinkView = { label: string; url: string };
 type LooseRecord = Record<string, unknown>;
@@ -782,6 +779,40 @@ function languageLabel(program: ProgramListItem | ProgramCatalogDetail) {
 function intakeLabel(program: ProgramListItem | ProgramCatalogDetail) {
   const value = program.officialIntake || program.intakeMonths.join(" / ");
   return normalizeAcademicText(value || "待确认");
+}
+
+function programApplicationDocs(program: ProgramCatalogDetail) {
+  const docs = array(program.applicationDocs);
+  return docs.length ? docs : ["以官方申请系统要求为准"];
+}
+
+function programSourceRows(program: ProgramCatalogDetail): ModalSourceRow[] {
+  const rows: ModalSourceRow[] = [
+    { label: "来源状态", value: sourceStatus(program.officialSourceStatus) },
+    { label: "核验日期", value: program.officialVerifiedAt || "待确认" },
+    { label: "费用状态", value: feeStatus(program) }
+  ];
+  if (program.officialIntakeNote) {
+    rows.push({ label: "开学备注", value: normalizeAcademicText(program.officialIntakeNote), full: true });
+  }
+  if (program.auditNote || program.publicDisplayNote || program.reviewReason) {
+    rows.push({
+      label: "资料备注",
+      value: program.auditNote || program.publicDisplayNote || program.reviewReason,
+      full: true
+    });
+  }
+  return rows;
+}
+
+function programSourceLinks(program: ProgramCatalogDetail): SourceLinkView[] {
+  const items: SourceLinkView[] = [];
+  pushLink(items, "官方链接", program.officialSourceUrl);
+  pushLink(items, "官方学费来源", program.officialFeeSourceUrl);
+  pushLink(items, "入学要求来源", program.officialEntryRequirementSourceUrl);
+  pushLink(items, "官方认证来源", program.officialAccreditationSourceUrl);
+  for (const item of program.sourceUrls || []) pushLink(items, sourceLabel(item), item.url);
+  return items;
 }
 
 function normalizeAcademicText(value: string) {

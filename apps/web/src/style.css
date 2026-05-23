@@ -2283,16 +2283,16 @@ label.lbl {
 }
 
 .programme-count {
-  width: 42px;
+  min-width: 42px;
   height: 42px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   border-radius: 999px;
-  background: var(--ink);
-  color: var(--gold);
-  font-family: "DM Serif Display", Georgia, serif;
-  font-size: 18px;
+  background: var(--paper-2);
+  color: var(--ink-2);
+  font-size: 14px;
+  font-weight: 700;
 }
 
 .programme-levels {
@@ -2307,7 +2307,6 @@ label.lbl {
 
 .programme-table-wrap {
   overflow: hidden;
-  border: 1px solid var(--border);
   border-top: 3px solid var(--ink);
   border-radius: 0 0 var(--r) var(--r);
   background: #fff;
@@ -2325,11 +2324,11 @@ label.lbl {
 .programme-grid-head {
   padding: 16px 18px;
   border-bottom: 2px solid var(--border);
+  background: #fff;
   color: #8b91ae;
   font-size: 12px;
   font-weight: 800;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
+  letter-spacing: 0.03em;
 }
 
 .programme-grid-row {
@@ -2340,13 +2339,20 @@ label.lbl {
   background: #fff;
   padding: 20px 18px;
   color: inherit;
+  font: inherit;
   text-align: left;
   cursor: pointer;
+  appearance: none;
   transition: background 0.18s ease;
 }
 
 .programme-grid-row:hover {
   background: #fcfcfa;
+}
+
+.programme-grid-row:focus-visible {
+  outline: 2px solid rgba(200, 168, 75, 0.65);
+  outline-offset: -2px;
 }
 
 .programme-grid-row:last-child {
@@ -2843,19 +2849,18 @@ label.lbl {
 
 .programme-table-title {
   display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
-  gap: 16px;
-  margin-bottom: 14px;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 0;
   border-bottom: 1px solid var(--border);
-  padding-bottom: 14px;
+  padding: 0 0 14px;
 }
 
 .programme-table-title h2 {
   color: var(--ink);
   font-family: "DM Serif Display", Georgia, serif;
   font-size: 30px;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 1.1;
 }
 
@@ -2959,6 +2964,7 @@ label.lbl {
   border-radius: var(--r) var(--r) 0 0;
   background: #fff;
   box-shadow: var(--shadow-lg);
+  overscroll-behavior: contain;
 }
 
 .modal-panel {
@@ -2993,11 +2999,15 @@ label.lbl {
 .modal-close {
   width: 32px;
   height: 32px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   flex-shrink: 0;
   border: 1.5px solid var(--border);
   border-radius: var(--r-sm);
   background: #fff;
   color: var(--ink);
+  cursor: pointer;
   font-size: 18px;
   line-height: 1;
 }
@@ -3038,6 +3048,10 @@ label.lbl {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 10px;
+}
+
+.req-grid--sources {
+  align-items: stretch;
 }
 
 .req-item {
@@ -3083,6 +3097,29 @@ label.lbl {
   margin: 0;
 }
 
+.program-doc-list--checked {
+  list-style: none;
+  padding-left: 0;
+}
+
+.program-doc-list--checked li {
+  display: flex;
+  gap: 8px;
+  color: var(--ink-2);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.program-doc-list--checked li::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  flex: 0 0 auto;
+  margin-top: 9px;
+  border-radius: 999px;
+  background: var(--teal);
+}
+
 .curriculum-pills,
 .career-pills {
   display: flex;
@@ -3106,7 +3143,7 @@ label.lbl {
 .career-pill {
   background: var(--teal-lt);
   color: var(--teal);
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .program-modal-actions {
