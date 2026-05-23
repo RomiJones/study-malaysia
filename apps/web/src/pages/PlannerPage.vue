@@ -16,7 +16,7 @@
 
       <div class="planner-status-row">
         <div class="inline-alert" :class="{ 'inline-alert--local': planner.isLocalMode }">
-          {{ planner.isLocalMode ? '访客模式：收藏、画像、材料、申请任务和签证清单会保存在本机，登录后会同步到服务端。' : (planner.syncMessage || '账户模式：规划状态会保存到服务端。') }}
+          {{ planner.isLocalMode ? t('planner.localModeNotice') : (planner.syncMessage || t('planner.accountModeNotice')) }}
         </div>
         <div v-if="planner.syncError" class="inline-alert inline-alert--error">{{ planner.syncError }}</div>
       </div>
@@ -80,10 +80,10 @@
         </div>
 
         <div v-else class="fav-empty section-card">
-          <div class="fav-empty-icon">荐</div>
-          <strong>暂无匹配推荐</strong>
-          <span>调整申请层次、专业方向、预算、GPA 或 IELTS 后再查看。</span>
-          <button class="btn btn-gold" type="button" @click="activeTab = 'profile'">完善学生画像</button>
+          <div class="fav-empty-icon">✦</div>
+          <strong>{{ t('planner.noRecommendationsTitle') }}</strong>
+          <span>{{ t('planner.noRecommendationsBody') }}</span>
+          <button class="btn btn-gold" type="button" @click="activeTab = 'profile'">{{ t('planner.improveProfile') }}</button>
         </div>
       </section>
 
@@ -91,7 +91,7 @@
         <div class="planner-panel__head">
           <div>
             <div class="section-kicker">{{ t('planner.eligibilityTitle') }}</div>
-            <h2 class="section-title">学生基本画像</h2>
+            <h2 class="section-title">{{ t('planner.studentProfileTitle') }}</h2>
           </div>
         </div>
         <div class="planner-form">
@@ -122,15 +122,12 @@
           <label class="field-shell">
             <span>{{ t('common.experience') }}</span>
             <select v-model="profile.experience">
-              <option value="0-1 years">0-1 年</option>
-              <option value="1-3 years">1-3 年</option>
-              <option value="3-5 years">3-5 年</option>
-              <option value="5+ years">5 年以上</option>
+              <option v-for="item in experienceOptions" :key="item.value" :value="item.value">{{ item.label }}</option>
             </select>
           </label>
           <label class="planner-toggle">
             <input v-model="profile.acceptNoLanguage" type="checkbox" />
-            <span>接受先申请、后补语言成绩的方案</span>
+            <span>{{ t('planner.conditionalDescription') }}</span>
           </label>
         </div>
         <button class="btn btn-gold planner-save" type="button" @click="saveProfile">{{ t('planner.saveProfile') }}</button>
@@ -178,7 +175,7 @@
               </div>
               <div class="task-progress-number">
                 <strong>{{ item.progress }}%</strong>
-                <span>进度</span>
+                <span>{{ t('planner.progressNow') }}</span>
               </div>
             </div>
             <div class="progress-bar"><div class="progress-fill" :style="{ width: `${item.progress}%` }"></div></div>
@@ -188,10 +185,10 @@
         </div>
 
         <div v-else class="fav-empty section-card">
-          <div class="fav-empty-icon">任</div>
-          <strong>暂无申请任务</strong>
-          <span>完善画像后，系统会根据推荐结果自动生成冲刺、主申和保底任务。</span>
-          <button class="btn btn-gold" type="button" @click="activeTab = 'profile'">完善学生画像</button>
+          <div class="fav-empty-icon">✓</div>
+          <strong>{{ t('planner.noTasksTitle') }}</strong>
+          <span>{{ t('planner.noTasksBody') }}</span>
+          <button class="btn btn-gold" type="button" @click="activeTab = 'profile'">{{ t('planner.improveProfile') }}</button>
         </div>
       </section>
 
@@ -224,12 +221,12 @@ import type { ApplicationStage, DegreeLevel, MaterialStatus } from "@studymy/sha
 import { useLocaleText } from "../composables/useLocaleText";
 import { useCatalogStore } from "../stores/catalog";
 import { usePlannerStore } from "../stores/planner";
-import { formatCurrency } from "../utils/format";
+import { formatCurrency, officialConfirmationFallback } from "../utils/format";
 
 const planner = usePlannerStore();
 const catalog = useCatalogStore();
 const { t } = useI18n();
-const { text } = useLocaleText();
+const { currentLocale, text } = useLocaleText();
 const activeTab = ref<"overview" | "profile" | "materials" | "applications" | "visa">("overview");
 const statuses: MaterialStatus[] = ["draft", "wait", "progress", "done"];
 const profile = reactive({
@@ -244,11 +241,11 @@ const profile = reactive({
 
 const dashboard = computed(() => planner.dashboard);
 const tabs = computed(() => [
-  { key: "overview", label: "申请概览" },
-  { key: "profile", label: "学生画像" },
-  { key: "materials", label: "材料清单" },
-  { key: "applications", label: "申请管理" },
-  { key: "visa", label: "签证清单" }
+  { key: "overview", label: t('planner.tabs.overview') },
+  { key: "profile", label: t('planner.tabs.profile') },
+  { key: "materials", label: t('planner.tabs.materials') },
+  { key: "applications", label: t('planner.tabs.applications') },
+  { key: "visa", label: t('planner.tabs.visa') }
 ] as const);
 const levelOptions = computed(() => [
   { value: "bachelor", label: t('degree.bachelor') },
@@ -261,12 +258,18 @@ const categoryOptions = computed(() => {
     ? categories.map((value) => ({ value, label: categoryLabel(value) }))
     : ["business", "it", "engineering", "science", "arts", "medicine", "law"].map((value) => ({ value, label: categoryLabel(value) }));
 });
+const experienceOptions = computed(() => [
+  { value: "0-1 years", label: t('planner.experience.zeroOne') },
+  { value: "1-3 years", label: t('planner.experience.oneThree') },
+  { value: "3-5 years", label: t('planner.experience.threeFive') },
+  { value: "5+ years", label: t('planner.experience.fivePlus') }
+]);
 const visaKeys = computed(() => [
-  { key: "offerAccepted", label: "收到正式录取通知书（Offer Letter）", note: "确认所有录取条件已满足" },
-  { key: "depositPaid", label: "缴纳入学押金（Acceptance Deposit）", note: "按院校要求时间节点完成" },
-  { key: "visaDocsReady", label: "准备签证申请材料", note: "护照、照片、财务证明、录取信、健康证明" },
-  { key: "preDeparture", label: "完成签证申请并获批", note: "通过 eVAL 系统或使馆流程" },
-  { key: "arrivalReady", label: "出发前准备就绪", note: "机票、住宿、保险、外币等" }
+  { key: "offerAccepted", label: t('planner.visaSteps.offerAccepted'), note: t('planner.visaSteps.offerAcceptedNote') },
+  { key: "depositPaid", label: t('planner.visaSteps.depositPaid'), note: t('planner.visaSteps.depositPaidNote') },
+  { key: "visaDocsReady", label: t('planner.visaSteps.visaDocsReady'), note: t('planner.visaSteps.visaDocsReadyNote') },
+  { key: "preDeparture", label: t('planner.visaSteps.preDeparture'), note: t('planner.visaSteps.preDepartureNote') },
+  { key: "arrivalReady", label: t('planner.visaSteps.arrivalReady'), note: t('planner.visaSteps.arrivalReadyNote') }
 ] as const);
 
 onMounted(() => {
@@ -312,9 +315,9 @@ function updateMaterial(key: string, event: Event) {
 }
 
 function tierLabel(index: number) {
-  if (index === 0) return "冲刺";
-  if (index < 3) return "主申";
-  return "保底";
+  if (index === 0) return t('planner.tiers.reach');
+  if (index < 3) return t('planner.tiers.target');
+  return t('planner.tiers.safe');
 }
 
 function tierChipClass(index: number) {
@@ -331,15 +334,7 @@ function taskTierClass(item: { tier: Record<string, string> }) {
 }
 
 function stageLabel(stage: ApplicationStage) {
-  const labels: Record<ApplicationStage, string> = {
-    draft: "待创建",
-    materials: "材料准备中",
-    ready: "待递交",
-    review: "院校审核中",
-    "conditional-offer": "条件录取",
-    visa: "签证阶段"
-  };
-  return labels[stage] || stage;
+  return t(`planner.stages.${stage}`);
 }
 
 function programName(programId: number) {
@@ -355,7 +350,7 @@ function universityName(universityId: number) {
 function annualCost(universityId: number, programId: number) {
   const university = catalog.universities.find((item) => item.id === universityId);
   const program = catalog.programs.find((item) => item.id === programId);
-  if (!university || !program) return "年总成本待确认";
-  return `CNY ${formatCurrency(university.livingCostCny + program.annualTuitionCny)} / 年`;
+  if (!university || !program) return officialConfirmationFallback(currentLocale.value);
+  return `CNY ${formatCurrency(university.livingCostCny + program.annualTuitionCny)}${t('common.perYear')}`;
 }
 </script>

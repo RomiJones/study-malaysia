@@ -4,19 +4,19 @@
       <div class="tool-modal-header">
         <div>
           <div class="tool-modal-kicker">{{ t('calculator.title') }}</div>
-          <h3>留学总费用估算</h3>
+          <h3>{{ t('calculator.heading') }}</h3>
         </div>
-        <button class="tool-modal-close" type="button" @click="$emit('close')">×</button>
+        <button class="tool-modal-close" type="button" :aria-label="t('common.close')" @click="$emit('close')">×</button>
       </div>
 
       <div class="tool-modal-body">
         <div class="calculator-grid">
           <label class="field-shell">
-            <span>年学费（人民币）</span>
+            <span>{{ t('calculator.annualTuitionCny') }}</span>
             <input v-model.number="form.tuition" type="number" min="0" step="1000" />
           </label>
           <label class="field-shell">
-            <span>年生活费（人民币）</span>
+            <span>{{ t('calculator.annualLivingCny') }}</span>
             <input v-model.number="form.living" type="number" min="0" step="1000" />
           </label>
           <label class="field-shell">
@@ -24,19 +24,19 @@
             <input v-model.number="form.duration" type="number" min="0.5" max="8" step="0.5" />
           </label>
           <label class="field-shell">
-            <span>其他费用（签证 / 机票等）</span>
+            <span>{{ t('calculator.miscCostCny') }}</span>
             <input v-model.number="form.misc" type="number" min="0" step="1000" />
           </label>
         </div>
 
         <div class="calc-result">
-          <div class="calc-result-label">预估总费用</div>
+          <div class="calc-result-label">{{ t('calculator.estimatedTotal') }}</div>
           <div class="calc-result-total">CNY {{ formatCurrency(grandTotal) }}</div>
           <div class="calc-breakdown">
-            <div class="calc-row"><span>年学费 × {{ form.duration }} 年</span><strong>CNY {{ formatCurrency(tuitionTotal) }}</strong></div>
-            <div class="calc-row"><span>年生活费 × {{ form.duration }} 年</span><strong>CNY {{ formatCurrency(livingTotal) }}</strong></div>
-            <div class="calc-row"><span>其他费用</span><strong>CNY {{ formatCurrency(form.misc) }}</strong></div>
-            <div class="calc-row calc-row--total"><span>年总成本</span><strong>CNY {{ formatCurrency(annualTotal) }}{{ t('common.perYear') }}</strong></div>
+            <div class="calc-row"><span>{{ t('calculator.tuitionBreakdown', { years: form.duration }) }}</span><strong>CNY {{ formatCurrency(tuitionTotal) }}</strong></div>
+            <div class="calc-row"><span>{{ t('calculator.livingBreakdown', { years: form.duration }) }}</span><strong>CNY {{ formatCurrency(livingTotal) }}</strong></div>
+            <div class="calc-row"><span>{{ t('calculator.miscBreakdown') }}</span><strong>CNY {{ formatCurrency(form.misc) }}</strong></div>
+            <div class="calc-row calc-row--total"><span>{{ t('calculator.annualTotal') }}</span><strong>CNY {{ formatCurrency(annualTotal) }}{{ t('common.perYear') }}</strong></div>
           </div>
         </div>
       </div>

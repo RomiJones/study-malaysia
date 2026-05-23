@@ -3,9 +3,9 @@
     <div class="modal-panel auth-panel">
       <div class="auth-modal-head">
         <div>
-          <h3 class="auth-modal-title">{{ session.authMode === 'login' ? '登录 StudyMY' : '注册 StudyMY' }}</h3>
+          <h3 class="auth-modal-title">{{ session.authMode === 'login' ? t('auth.titleLogin') : t('auth.titleRegister') }}</h3>
         </div>
-        <button class="modal-close" @click="session.closeAuth" aria-label="Close">×</button>
+        <button class="modal-close" @click="session.closeAuth" :aria-label="t('common.close')">×</button>
       </div>
 
       <div class="auth-tabs">
@@ -15,16 +15,16 @@
 
       <form class="auth-form" @submit.prevent="submit">
         <label class="field-shell">
-          <span>邮箱 / 手机号</span>
-          <input v-model="form.account" required placeholder="请输入邮箱或手机号" />
+          <span>{{ t('auth.accountLabel') }}</span>
+          <input v-model="form.account" required :placeholder="t('auth.accountPlaceholder')" />
         </label>
         <label class="field-shell">
           <span>{{ t('auth.password') }}</span>
-          <input v-model="form.password" type="password" required minlength="6" placeholder="请输入密码" />
+          <input v-model="form.password" type="password" required minlength="6" :placeholder="t('auth.passwordPlaceholder')" />
         </label>
         <label v-if="session.authMode === 'register'" class="field-shell">
-          <span>昵称（可选）</span>
-          <input v-model="form.displayName" placeholder="你的昵称" />
+          <span>{{ t('auth.displayNameOptional') }}</span>
+          <input v-model="form.displayName" :placeholder="t('auth.displayNamePlaceholder')" />
         </label>
         <button class="btn btn-primary auth-submit" type="submit" :disabled="submitting">
           {{ submitting ? t('common.loading') : session.authMode === 'login' ? t('auth.submitLogin') : t('auth.submitRegister') }}
@@ -65,7 +65,7 @@ async function submit() {
   syncNotice.value = "";
   try {
     await session.submitAuth(session.authMode, form);
-    syncNotice.value = "正在同步本地收藏和申请规划...";
+    syncNotice.value = t('auth.syncNotice');
     await Promise.all([catalog.mergeLocalState(), planner.mergeLocalState()]);
     session.closeAuth();
     router.push("/member");

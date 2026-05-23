@@ -16,6 +16,7 @@ import type {
   UniversityListItem
 } from "@studymy/shared";
 import { apiFetch } from "../api/client";
+import { runtimeText } from "../i18n/runtimeText";
 import { useCatalogStore } from "./catalog";
 import { useSessionStore } from "./session";
 
@@ -83,15 +84,15 @@ export const usePlannerStore = defineStore("planner", () => {
       if (session.token) {
         dashboard.value = normalizeDashboard(await apiFetch<PlannerDashboard>("/planner", {}, session.token));
         persistDashboard(dashboard.value);
-        syncMessage.value = "已读取账户申请规划。";
+        syncMessage.value = runtimeText("plannerLoaded");
       } else {
         dashboard.value = buildLocalDashboard();
-        syncMessage.value = "访客规划已保存在本机。";
+        syncMessage.value = runtimeText("plannerLocalSaved");
       }
       syncError.value = "";
     } catch (error) {
       dashboard.value = buildLocalDashboard();
-      syncError.value = error instanceof Error ? error.message : "申请规划加载失败，已切换本地数据";
+      syncError.value = error instanceof Error ? error.message : runtimeText("plannerLoadFailed");
     } finally {
       loading.value = false;
     }
@@ -112,10 +113,10 @@ export const usePlannerStore = defineStore("planner", () => {
       );
       dashboard.value = normalizeDashboard(response.dashboard);
       persistDashboard(dashboard.value);
-      syncMessage.value = "已同步本地画像、材料、申请任务和签证清单。";
+      syncMessage.value = runtimeText("plannerMerged");
       syncError.value = "";
     } catch (error) {
-      syncError.value = error instanceof Error ? error.message : "申请规划同步失败，本地数据已保留";
+      syncError.value = error instanceof Error ? error.message : runtimeText("plannerMergeFailed");
     } finally {
       loading.value = false;
     }
@@ -127,7 +128,7 @@ export const usePlannerStore = defineStore("planner", () => {
 
     if (!session.token) {
       dashboard.value = buildLocalDashboard();
-      syncMessage.value = "画像已保存在本机。";
+      syncMessage.value = runtimeText("profileLocalSaved");
       return;
     }
 
@@ -138,11 +139,11 @@ export const usePlannerStore = defineStore("planner", () => {
         session.token
       ));
       persistDashboard(dashboard.value);
-      syncMessage.value = "画像已同步到账户。";
+      syncMessage.value = runtimeText("profileSynced");
       syncError.value = "";
     } catch (error) {
       dashboard.value = buildLocalDashboard();
-      syncError.value = error instanceof Error ? error.message : "画像同步失败，本地数据已保留";
+      syncError.value = error instanceof Error ? error.message : runtimeText("profileSyncFailed");
     }
   }
 
@@ -152,7 +153,7 @@ export const usePlannerStore = defineStore("planner", () => {
 
     if (!session.token) {
       dashboard.value = buildLocalDashboard();
-      syncMessage.value = "材料状态已保存在本机。";
+      syncMessage.value = runtimeText("materialLocalSaved");
       return;
     }
 
@@ -163,11 +164,11 @@ export const usePlannerStore = defineStore("planner", () => {
         session.token
       ));
       persistDashboard(dashboard.value);
-      syncMessage.value = "材料状态已同步到账户。";
+      syncMessage.value = runtimeText("materialSynced");
       syncError.value = "";
     } catch (error) {
       dashboard.value = buildLocalDashboard();
-      syncError.value = error instanceof Error ? error.message : "材料状态同步失败，本地数据已保留";
+      syncError.value = error instanceof Error ? error.message : runtimeText("materialSyncFailed");
     }
   }
 
@@ -182,7 +183,7 @@ export const usePlannerStore = defineStore("planner", () => {
 
     if (!session.token) {
       dashboard.value = buildLocalDashboard();
-      syncMessage.value = "已加入本地申请规划。";
+      syncMessage.value = runtimeText("taskLocalAdded");
       return;
     }
 
@@ -193,11 +194,11 @@ export const usePlannerStore = defineStore("planner", () => {
         session.token
       ));
       persistDashboard(dashboard.value);
-      syncMessage.value = "申请任务已同步到账户。";
+      syncMessage.value = runtimeText("taskSynced");
       syncError.value = "";
     } catch (error) {
       dashboard.value = buildLocalDashboard();
-      syncError.value = error instanceof Error ? error.message : "申请任务同步失败，本地数据已保留";
+      syncError.value = error instanceof Error ? error.message : runtimeText("taskSyncFailed");
     }
   }
 
@@ -205,17 +206,17 @@ export const usePlannerStore = defineStore("planner", () => {
     if (!session.token) {
       saveLocalTasks(readLocalTasks().map((item) => item.id === id ? advanceLocalTask(item) : item));
       dashboard.value = buildLocalDashboard();
-      syncMessage.value = "申请任务进度已保存在本机。";
+      syncMessage.value = runtimeText("taskProgressLocalSaved");
       return;
     }
 
     try {
       dashboard.value = normalizeDashboard(await apiFetch<PlannerDashboard>(`/planner/tasks/${id}/advance`, { method: "PATCH" }, session.token));
       persistDashboard(dashboard.value);
-      syncMessage.value = "申请任务进度已同步到账户。";
+      syncMessage.value = runtimeText("taskProgressSynced");
       syncError.value = "";
     } catch (error) {
-      syncError.value = error instanceof Error ? error.message : "任务推进失败";
+      syncError.value = error instanceof Error ? error.message : runtimeText("taskAdvanceFailed");
     }
   }
 
@@ -225,18 +226,18 @@ export const usePlannerStore = defineStore("planner", () => {
 
     if (!session.token) {
       dashboard.value = buildLocalDashboard();
-      syncMessage.value = "签证清单已保存在本机。";
+      syncMessage.value = runtimeText("visaLocalSaved");
       return;
     }
 
     try {
       dashboard.value = normalizeDashboard(await apiFetch<PlannerDashboard>("/planner/visa", { method: "PATCH", body: JSON.stringify(payload) }, session.token));
       persistDashboard(dashboard.value);
-      syncMessage.value = "签证清单已同步到账户。";
+      syncMessage.value = runtimeText("visaSynced");
       syncError.value = "";
     } catch (error) {
       dashboard.value = buildLocalDashboard();
-      syncError.value = error instanceof Error ? error.message : "签证清单同步失败，本地数据已保留";
+      syncError.value = error instanceof Error ? error.message : runtimeText("visaSyncFailed");
     }
   }
 

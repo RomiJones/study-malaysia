@@ -103,13 +103,13 @@ import { RouterLink, useRouter } from "vue-router";
 import { useI18n } from "vue-i18n";
 import { useLocaleText } from "../composables/useLocaleText";
 import { useCatalogStore } from "../stores/catalog";
-import { OFFICIAL_PAGE_FALLBACK, formatOfficialSourceStatus } from "../utils/format";
+import { formatOfficialSourceStatus, officialPageFallback } from "../utils/format";
 
 const props = defineProps<{ university: UniversityListItem }>();
 const catalog = useCatalogStore();
 const router = useRouter();
 const { t } = useI18n();
-const { text, array } = useLocaleText();
+const { currentLocale, text, array } = useLocaleText();
 const university = props.university;
 
 const levelOrder: Record<DegreeLevel, number> = {
@@ -132,8 +132,8 @@ const relatedPrograms = computed(() =>
   [...catalog.programs.filter((program) => program.universityId === university.id)].sort(comparePrograms)
 );
 const topPrograms = computed(() => relatedPrograms.value.slice(0, 4));
-const tuitionDisplay = computed(() => university.tuitionMinCny > 0 ? `CNY ${shortPrice(university.tuitionMinCny)}+` : OFFICIAL_PAGE_FALLBACK);
-const sourceStatusLabel = computed(() => formatOfficialSourceStatus(university.officialSourceStatus));
+const tuitionDisplay = computed(() => university.tuitionMinCny > 0 ? `CNY ${shortPrice(university.tuitionMinCny)}+` : officialPageFallback(currentLocale.value));
+const sourceStatusLabel = computed(() => formatOfficialSourceStatus(university.officialSourceStatus, currentLocale.value));
 
 function comparePrograms(a: ProgramListItem, b: ProgramListItem) {
   const levelDiff = levelOrder[a.level] - levelOrder[b.level];

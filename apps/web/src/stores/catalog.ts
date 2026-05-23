@@ -7,6 +7,7 @@ import type {
   UniversityListItem
 } from "@studymy/shared";
 import { apiFetch } from "../api/client";
+import { runtimeText } from "../i18n/runtimeText";
 import { useSessionStore } from "./session";
 
 const FAVORITES_KEY = "studymy_favorites";
@@ -178,10 +179,10 @@ export const useCatalogStore = defineStore("catalog", () => {
       applyFavoriteResponse(favorites);
       compareIds.value = normalizeIds(compare.universityIds || []);
       persistCompare();
-      syncMessage.value = "已读取账户收藏和对比清单。";
+      syncMessage.value = runtimeText("catalogLoaded");
       syncError.value = "";
     } catch (error) {
-      syncError.value = error instanceof Error ? error.message : "账户状态读取失败";
+      syncError.value = error instanceof Error ? error.message : runtimeText("catalogLoadFailed");
     } finally {
       syncLoading.value = false;
     }
@@ -215,10 +216,10 @@ export const useCatalogStore = defineStore("catalog", () => {
       applyFavoriteResponse(favorites);
       compareIds.value = normalizeIds(compare.universityIds || compareIds.value);
       persistCompare();
-      syncMessage.value = "已同步本地收藏、专业收藏和对比清单。";
+      syncMessage.value = runtimeText("catalogMerged");
       syncError.value = "";
     } catch (error) {
-      syncError.value = error instanceof Error ? error.message : "收藏同步失败，本地数据已保留";
+      syncError.value = error instanceof Error ? error.message : runtimeText("catalogMergeFailed");
     } finally {
       syncLoading.value = false;
     }
@@ -276,7 +277,7 @@ export const useCatalogStore = defineStore("catalog", () => {
     } catch (error) {
       favoriteState.value = previous;
       persistFavorites();
-      syncError.value = error instanceof Error ? error.message : "收藏保存失败";
+      syncError.value = error instanceof Error ? error.message : runtimeText("favoriteSaveFailed");
     }
   }
 
@@ -288,7 +289,7 @@ export const useCatalogStore = defineStore("catalog", () => {
     if (index >= 0) compareIds.value.splice(index, 1);
     else if (compareIds.value.length < 4) compareIds.value.push(id);
     else {
-      compareMessage.value = "最多只能同时对比 4 所院校";
+      compareMessage.value = runtimeText("compareLimit");
       return false;
     }
     compareIds.value = normalizeIds(compareIds.value).slice(0, 4);
@@ -307,7 +308,7 @@ export const useCatalogStore = defineStore("catalog", () => {
       } catch (error) {
         compareIds.value = previous;
         persistCompare();
-        syncError.value = error instanceof Error ? error.message : "对比清单保存失败";
+        syncError.value = error instanceof Error ? error.message : runtimeText("compareSaveFailed");
       }
     }
     return true;
@@ -327,7 +328,7 @@ export const useCatalogStore = defineStore("catalog", () => {
     } catch (error) {
       compareIds.value = previous;
       persistCompare();
-      syncError.value = error instanceof Error ? error.message : "清空对比清单失败";
+      syncError.value = error instanceof Error ? error.message : runtimeText("compareClearFailed");
     }
   }
 

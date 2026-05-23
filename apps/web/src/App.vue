@@ -19,7 +19,7 @@
         <span class="floating-tool-label">{{ t('nav.calculator') }}</span>
       </button>
       <button class="floating-tool" type="button" @click="showRecommend = true">
-        <span class="floating-tool-icon">荐</span>
+        <span class="floating-tool-icon">✦</span>
         <span class="floating-tool-label">{{ t('nav.recommend') }}</span>
       </button>
     </div>

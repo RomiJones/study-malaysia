@@ -82,9 +82,9 @@ import { useCatalogStore } from "../stores/catalog";
 import { usePlannerStore } from "../stores/planner";
 import { useLocaleText } from "../composables/useLocaleText";
 import {
-  OFFICIAL_CONFIRMATION_FALLBACK,
-  OFFICIAL_PAGE_FALLBACK,
   cleanDisplayText,
+  officialConfirmationFallback,
+  officialPageFallback,
   formatProgramDuration,
   formatProgramIntake,
   formatProgramLanguage,
@@ -95,36 +95,36 @@ const props = defineProps<{ slug: string }>();
 const catalog = useCatalogStore();
 const planner = usePlannerStore();
 const { t } = useI18n();
-const { text, array } = useLocaleText();
+const { currentLocale, text, array } = useLocaleText();
 
 const levelLabel = computed(() => catalog.programDetail ? t(`degree.${catalog.programDetail.level}`) : "");
 const categoryLabel = computed(() => catalog.programDetail ? t(`category.${catalog.programDetail.category}`) : "");
-const durationLabel = computed(() => catalog.programDetail ? formatProgramDuration(catalog.programDetail) : OFFICIAL_CONFIRMATION_FALLBACK);
-const languageLabel = computed(() => catalog.programDetail ? formatProgramLanguage(catalog.programDetail) : OFFICIAL_PAGE_FALLBACK);
-const tuitionLabel = computed(() => catalog.programDetail ? formatProgramTuition(catalog.programDetail) : OFFICIAL_PAGE_FALLBACK);
-const intakeLabel = computed(() => catalog.programDetail ? formatProgramIntake(catalog.programDetail) : OFFICIAL_PAGE_FALLBACK);
+const durationLabel = computed(() => catalog.programDetail ? formatProgramDuration(catalog.programDetail, currentLocale.value) : officialConfirmationFallback(currentLocale.value));
+const languageLabel = computed(() => catalog.programDetail ? formatProgramLanguage(catalog.programDetail, undefined, currentLocale.value) : officialPageFallback(currentLocale.value));
+const tuitionLabel = computed(() => catalog.programDetail ? formatProgramTuition(catalog.programDetail, undefined, currentLocale.value) : officialPageFallback(currentLocale.value));
+const intakeLabel = computed(() => catalog.programDetail ? formatProgramIntake(catalog.programDetail, undefined, currentLocale.value) : officialPageFallback(currentLocale.value));
 const gpaLabel = computed(() => {
   const gpa = Number(catalog.programDetail?.requirement?.gpa);
-  return Number.isFinite(gpa) && gpa > 0 ? `${gpa}+` : OFFICIAL_CONFIRMATION_FALLBACK;
+  return Number.isFinite(gpa) && gpa > 0 ? `${gpa}+` : officialConfirmationFallback(currentLocale.value);
 });
 const requirementNote = computed(() => catalog.programDetail
-  ? cleanDisplayText(text(catalog.programDetail.requirement.note), OFFICIAL_PAGE_FALLBACK)
-  : OFFICIAL_PAGE_FALLBACK);
+  ? cleanDisplayText(text(catalog.programDetail.requirement.note), officialPageFallback(currentLocale.value), currentLocale.value)
+  : officialPageFallback(currentLocale.value));
 const documentRows = computed(() => {
   const rows = catalog.programDetail ? array(catalog.programDetail.applicationDocs).filter(Boolean) : [];
-  return rows.length ? rows : [OFFICIAL_PAGE_FALLBACK];
+  return rows.length ? rows : [officialPageFallback(currentLocale.value)];
 });
 const curriculumRows = computed(() => {
   const rows = catalog.programDetail ? array(catalog.programDetail.curriculum).filter(Boolean) : [];
-  return rows.length ? rows : [OFFICIAL_CONFIRMATION_FALLBACK];
+  return rows.length ? rows : [officialConfirmationFallback(currentLocale.value)];
 });
 const careerRows = computed(() => {
   const rows = catalog.programDetail ? array(catalog.programDetail.careers).filter(Boolean) : [];
-  return rows.length ? rows : [OFFICIAL_CONFIRMATION_FALLBACK];
+  return rows.length ? rows : [officialConfirmationFallback(currentLocale.value)];
 });
 const specializationRows = computed(() => {
   const rows = catalog.programDetail ? array(catalog.programDetail.specializations).filter(Boolean) : [];
-  return rows.length ? rows : [OFFICIAL_CONFIRMATION_FALLBACK];
+  return rows.length ? rows : [officialConfirmationFallback(currentLocale.value)];
 });
 
 onMounted(() => catalog.loadProgram(props.slug));

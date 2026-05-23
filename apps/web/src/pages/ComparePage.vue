@@ -12,8 +12,8 @@
 
     <div v-if="compareUniversities.length < 2" class="fav-empty section-card">
       <div class="fav-empty-icon">VS</div>
-      <div class="serif text-xl">请至少选择 2 所院校进行对比</div>
-      <div class="text-slate-500 mt-2">在院校卡片上点击对比按钮，最多可同时比较 4 所。</div>
+      <div class="serif text-xl">{{ t('comparePage.emptyTitle') }}</div>
+      <div class="text-slate-500 mt-2">{{ t('comparePage.emptyBody') }}</div>
       <RouterLink class="primary-action mt-4" to="/">{{ t('home.browseUniversities') }}</RouterLink>
     </div>
 
@@ -29,7 +29,7 @@
                     <div class="compare-head-name">{{ text(item.name) }}</div>
                     <div class="compare-head-sub">QS #{{ item.qsRank }} · {{ item.shortName }}</div>
                   </div>
-                  <button class="compare-remove" @click="catalog.toggleCompare(item.id)">移除</button>
+                  <button class="compare-remove" @click="catalog.toggleCompare(item.id)">{{ t('common.remove') }}</button>
                 </div>
               </th>
             </tr>
@@ -73,22 +73,22 @@ const compareUniversities = computed(() =>
 );
 
 const rows = computed(() => [
-  { key: "qsRank", label: "QS 排名", value: (item: UniversityListItem) => `QS #${item.qsRank}` },
-  { key: "ownership", label: "院校类型", value: (item: UniversityListItem) => t(`ownership.${item.ownership}`) },
-  { key: "location", label: "所在地", value: (item: UniversityListItem) => text(item.location) },
-  { key: "founded", label: "建校年份", value: (item: UniversityListItem) => `${item.foundedYear}` },
-  { key: "students", label: "在校学生", value: (item: UniversityListItem) => `${formatCurrency(item.students)} 人` },
-  { key: "intlStudents", label: "国际生", value: (item: UniversityListItem) => `${formatCurrency(item.intlStudents)} 人` },
+  { key: "qsRank", label: t('comparePage.qsRank'), value: (item: UniversityListItem) => `QS #${item.qsRank}` },
+  { key: "ownership", label: t('comparePage.ownership'), value: (item: UniversityListItem) => t(`ownership.${item.ownership}`) },
+  { key: "location", label: t('comparePage.location'), value: (item: UniversityListItem) => text(item.location) },
+  { key: "founded", label: t('comparePage.foundedYear'), value: (item: UniversityListItem) => `${item.foundedYear}` },
+  { key: "students", label: t('comparePage.students'), value: (item: UniversityListItem) => `${formatCurrency(item.students)} ${t('common.people')}` },
+  { key: "intlStudents", label: t('comparePage.intlStudents'), value: (item: UniversityListItem) => `${formatCurrency(item.intlStudents)} ${t('common.people')}` },
   {
     key: "tuition",
-    label: "学费区间",
+    label: t('comparePage.tuitionRange'),
     value: (item: UniversityListItem) => `CNY ${formatCurrency(item.tuitionMinCny)} - ${formatCurrency(item.tuitionMaxCny)}`
   },
-  { key: "living", label: "年生活费", value: (item: UniversityListItem) => `CNY ${formatCurrency(item.livingCostCny)}` },
-  { key: "ielts", label: "最低雅思", value: (item: UniversityListItem) => `IELTS ${item.minIelts}+` },
-  { key: "language", label: "免语言申请", value: (item: UniversityListItem) => item.acceptNoLanguage ? t('common.yes') : t('common.no') },
-  { key: "programs", label: "专业数量", value: (item: UniversityListItem) => `${item.programCount}` },
-  { key: "certified", label: "MQA / 官方认证", value: (item: UniversityListItem) => item.csrCertified ? t('common.yes') : t('common.no') },
-  { key: "detail", label: "操作", value: () => t('common.viewDetails') }
+  { key: "living", label: t('comparePage.annualLivingCost'), value: (item: UniversityListItem) => `CNY ${formatCurrency(item.livingCostCny)}` },
+  { key: "ielts", label: t('comparePage.minIelts'), value: (item: UniversityListItem) => `IELTS ${item.minIelts}+` },
+  { key: "language", label: t('comparePage.noLanguage'), value: (item: UniversityListItem) => item.acceptNoLanguage ? t('common.yes') : t('common.no') },
+  { key: "programs", label: t('comparePage.programCount'), value: (item: UniversityListItem) => `${item.programCount}` },
+  { key: "certified", label: t('comparePage.certification'), value: (item: UniversityListItem) => item.csrCertified ? t('common.yes') : t('common.no') },
+  { key: "detail", label: t('comparePage.action'), value: () => t('common.viewDetails') }
 ]);
 </script>

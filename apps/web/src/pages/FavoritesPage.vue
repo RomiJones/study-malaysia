@@ -11,7 +11,7 @@
     <div v-if="catalog.syncError" class="inline-alert inline-alert--error">{{ catalog.syncError }}</div>
 
     <div v-if="!favoriteUniversities.length && !favoritePrograms.length" class="fav-empty section-card">
-      <div class="fav-empty-icon">藏</div>
+      <div class="fav-empty-icon">♥</div>
       <strong>{{ t('favorites.empty') }}</strong>
       <RouterLink class="btn btn-gold" to="/">{{ t('home.browseUniversities') }}</RouterLink>
     </div>
@@ -33,7 +33,7 @@
             </div>
             <div class="favorite-university-card__actions">
               <RouterLink class="btn btn-primary btn-sm" :to="`/universities/${item.slug}`">{{ t('common.viewDetails') }}</RouterLink>
-              <button class="btn btn-outline btn-sm favorite-remove" type="button" @click="catalog.toggleFavoriteUniversity(item.id)">移除</button>
+              <button class="btn btn-outline btn-sm favorite-remove" type="button" @click="catalog.toggleFavoriteUniversity(item.id)">{{ t('common.remove') }}</button>
             </div>
           </article>
         </div>
@@ -57,7 +57,7 @@
             </div>
             <div class="favorite-program-card__actions">
               <RouterLink class="btn btn-primary" :to="`/programs/${item.slug}`">{{ t('common.viewDetails') }}</RouterLink>
-              <button class="btn btn-outline favorite-remove" type="button" @click="catalog.toggleFavoriteProgram(item.id)">移除</button>
+              <button class="btn btn-outline favorite-remove" type="button" @click="catalog.toggleFavoriteProgram(item.id)">{{ t('common.remove') }}</button>
             </div>
           </article>
         </div>

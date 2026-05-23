@@ -3,15 +3,15 @@
     <div class="tool-modal-inner tool-modal-inner--recommend">
       <div class="tool-modal-header">
         <div>
-          <div class="tool-modal-kicker">基于你的画像匹配</div>
+          <div class="tool-modal-kicker">{{ t('recommend.kicker') }}</div>
           <h3>{{ t('recommend.title') }}</h3>
         </div>
-        <button class="tool-modal-close" type="button" @click="$emit('close')">×</button>
+        <button class="tool-modal-close" type="button" :aria-label="t('common.close')" @click="$emit('close')">×</button>
       </div>
 
       <div class="tool-modal-body">
         <div v-if="planner.loading && !dashboard" class="fav-empty">
-          <div class="fav-empty-icon">荐</div>
+          <div class="fav-empty-icon">✦</div>
           <strong>{{ t('common.loading') }}</strong>
         </div>
 
@@ -37,10 +37,10 @@
           </div>
 
           <div v-else class="fav-empty">
-            <div class="fav-empty-icon">荐</div>
-            <strong>暂无完全匹配的推荐</strong>
-            <span>请在申请规划里调整画像参数后重新查看。</span>
-            <RouterLink class="btn btn-gold" to="/planner" @click="$emit('close')">完善学生画像</RouterLink>
+            <div class="fav-empty-icon">✦</div>
+            <strong>{{ t('recommend.emptyTitle') }}</strong>
+            <span>{{ t('recommend.emptyBody') }}</span>
+            <RouterLink class="btn btn-gold" to="/planner" @click="$emit('close')">{{ t('recommend.improveProfile') }}</RouterLink>
           </div>
         </template>
       </div>
