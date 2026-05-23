@@ -4672,6 +4672,15 @@ label.lbl {
     width: 100%;
     max-height: 92vh;
     border-radius: var(--r) var(--r) 0 0;
+    box-shadow: 0 -14px 38px rgba(12, 14, 26, 0.18);
+  }
+
+  .modal-header {
+    padding: 22px 22px 0;
+  }
+
+  .modal-body {
+    padding: 20px 22px 22px;
   }
 }
 
@@ -4822,7 +4831,8 @@ label.lbl {
 
   .compare-table th,
   .compare-table td {
-    padding: 12px 10px;
+    padding: 11px 8px;
+    line-height: 1.48;
     word-break: break-word;
   }
 
@@ -4842,8 +4852,9 @@ label.lbl {
   }
 
   .compare-label-col {
-    width: 130px;
+    width: 124px;
     min-width: 0;
+    word-break: keep-all;
   }
 
   .calculator-picker,
@@ -5015,18 +5026,23 @@ label.lbl {
   }
 
   .floating-tools {
-    right: 10px;
-    bottom: 14px;
+    right: 8px;
+    bottom: max(12px, env(safe-area-inset-bottom));
     display: grid;
-    gap: 8px;
+    gap: 6px;
   }
 
   .floating-tool {
-    width: 44px;
-    min-width: 44px;
-    height: 44px;
-    min-height: 44px;
+    width: 40px;
+    min-width: 40px;
+    height: 40px;
+    min-height: 40px;
     padding: 0;
+    box-shadow: 0 8px 22px rgba(12, 14, 26, 0.24);
+  }
+
+  .floating-tool-icon {
+    font-size: 13px;
   }
 
   .floating-tool-label {
