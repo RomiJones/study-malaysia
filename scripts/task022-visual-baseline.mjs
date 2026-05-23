@@ -684,6 +684,7 @@ const scenarios = [
       await gotoWeb(page);
       await page.waitForSelector(".filter-panel", { timeout: 30_000 });
       await page.locator(".filter-chip--level").nth(1).click();
+      await page.locator(".filter-chip--rank").nth(2).click();
       await page.locator(".filter-chip--category").first().click();
       await page.waitForSelector(".active-filter-tag, .active-tag, .university-card", { timeout: 30_000 });
     },

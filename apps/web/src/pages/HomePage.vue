@@ -7,7 +7,7 @@
 
       <div class="hero-panel__content">
         <div class="hero-panel__main">
-          <div class="eyebrow-pill">{{ t('home.badge', { count: catalog.homeMeta?.stats.universityCount ?? 0 }) }}</div>
+          <div class="eyebrow-pill">{{ t('home.badge') }}</div>
           <h1 class="hero-title">
             {{ t('home.title') }}
             <span class="hero-accent">{{ t('home.accent') }}</span>
@@ -48,28 +48,15 @@
           </div>
 
           <div class="quick-picks">
-            <span class="quick-picks__label">{{ t('home.quickPick') }}</span>
             <button v-for="tag in quickTags" :key="`${tag.type}-${tag.value}`" class="tag-pill" @click="applyQuickTag(tag)">
               {{ tag.label }}
             </button>
           </div>
 
           <div class="hero-metrics">
-            <article class="hero-metric-card">
-              <div class="hero-metric-card__value">{{ catalog.homeMeta?.stats.universityCount ?? 0 }}</div>
-              <div class="hero-metric-card__label">{{ t('home.statsUniversities') }}</div>
-            </article>
-            <article class="hero-metric-card">
-              <div class="hero-metric-card__value">{{ catalog.homeMeta?.stats.programCount ?? 0 }}</div>
-              <div class="hero-metric-card__label">{{ t('home.statsPrograms') }}</div>
-            </article>
-            <article class="hero-metric-card">
-              <div class="hero-metric-card__value">QS {{ catalog.homeMeta?.stats.bestQsRank ?? '--' }}</div>
-              <div class="hero-metric-card__label">{{ t('home.statsBestRank') }}</div>
-            </article>
-            <article class="hero-metric-card">
-              <div class="hero-metric-card__value">{{ t('common.official') }}</div>
-              <div class="hero-metric-card__label">{{ t('home.statsSource') }}</div>
+            <article v-for="stat in heroStats" :key="stat.label" class="hero-metric-card">
+              <div class="hero-metric-card__value">{{ stat.value }}</div>
+              <div class="hero-metric-card__label">{{ stat.label }}</div>
             </article>
           </div>
         </div>
@@ -80,16 +67,26 @@
       <aside class="filter-panel section-card">
         <div class="filter-panel__header">
           <div class="filter-panel__title">
-            <span class="filter-panel__icon">F</span>
+            <span class="filter-panel__icon">▾</span>
             <span>{{ t('home.filtersTitle') }}</span>
+            <span v-if="activeFilters.length" class="filter-panel__count">{{ activeFilters.length }} {{ t('common.itemCount') }}</span>
           </div>
-          <button class="ghost-action" @click="resetFilters">{{ t('common.reset') }}</button>
+          <button class="ghost-action" @click="resetFilters">{{ activeFilters.length ? t('common.clearAll') : t('common.reset') }}</button>
+        </div>
+
+        <div v-if="activeFilters.length" class="active-strip">
+          <span v-for="item in activeFilters" :key="item.key" class="active-tag">
+            {{ item.label }}
+            <button class="active-tag-x" @click="removeFilter(item.key)">×</button>
+          </span>
+          <button class="clear-all-btn" @click="resetFilters">{{ t('common.clearAll') }}</button>
         </div>
 
         <div class="filter-stack">
           <div v-for="group in filterGroups" :key="group.key" class="filter-group">
             <button class="filter-group-head" type="button" @click="toggleFilterGroup(group.key)">
               <span class="filter-group-label">
+                <span class="filter-group-icon">{{ group.icon }}</span>
                 <span>{{ group.label }}</span>
                 <span v-if="group.active" class="filter-group-active-dot"></span>
               </span>
@@ -132,6 +129,23 @@
                 </div>
 
                 <div v-if="group.key === 'budget'" class="budget-filter">
+                  <div class="budget-display">
+                    <div class="budget-val">≤ CNY {{ budgetRangeLabel }}</div>
+                    <div class="budget-sub">{{ t('home.tuition') }}</div>
+                  </div>
+                  <input
+                    class="budget-range"
+                    type="range"
+                    min="30000"
+                    max="120000"
+                    step="10000"
+                    :value="budgetRangeValue"
+                    @input="setBudgetRange"
+                  />
+                  <div class="budget-labels">
+                    <span>30k</span>
+                    <span>120k</span>
+                  </div>
                   <div class="range-row">
                     <input v-model.number="catalog.tuitionMin" type="number" :placeholder="t('home.tuitionMin')" @input="catalog.resetHomePage" />
                     <input v-model.number="catalog.tuitionMax" type="number" :placeholder="t('home.tuitionMax')" @input="catalog.resetHomePage" />
@@ -162,21 +176,14 @@
                 </div>
 
                 <div v-if="group.key === 'special'" class="chip-row">
-                  <button class="filter-chip filter-chip--block" :class="{ active: catalog.acceptNoLanguage }" @click="toggleNoLanguage">
-                    {{ t('home.noLanguage') }}
+                  <button class="toggle-row" :class="{ active: catalog.acceptNoLanguage }" @click="toggleNoLanguage">
+                    <span>{{ t('home.noLanguage') }}</span>
+                    <span class="toggle-switch-ui"><span></span></span>
                   </button>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-
-        <div v-if="activeFilters.length" class="active-strip">
-          <span v-for="item in activeFilters" :key="item.key" class="active-tag">
-            {{ item.label }}
-            <button class="active-tag-x" @click="removeFilter(item.key)">×</button>
-          </span>
-          <button class="clear-all-btn" @click="resetFilters">{{ t('common.reset') }}</button>
         </div>
 
         <div class="filter-summary">
@@ -214,9 +221,21 @@
         </div>
 
         <nav v-if="totalPages > 1" class="pagination-bar" aria-label="Pagination">
-          <button class="secondary-action" :disabled="catalog.homePage <= 1" @click="catalog.setHomePage(catalog.homePage - 1)">上一页</button>
-          <span>{{ catalog.homePage }} / {{ totalPages }}</span>
-          <button class="secondary-action" :disabled="catalog.homePage >= totalPages" @click="catalog.setHomePage(catalog.homePage + 1)">下一页</button>
+          <button class="page-btn" :disabled="catalog.homePage <= 1" @click="catalog.setHomePage(catalog.homePage - 1)">←</button>
+          <button
+            v-for="page in visiblePages"
+            :key="page"
+            class="page-btn"
+            :class="{ active: catalog.homePage === page }"
+            @click="catalog.setHomePage(page)"
+          >
+            {{ page }}
+          </button>
+          <span v-if="showPageGap" class="pagination-gap">...</span>
+          <button v-if="showLastPage" class="page-btn" :class="{ active: catalog.homePage === totalPages }" @click="catalog.setHomePage(totalPages)">
+            {{ totalPages }}
+          </button>
+          <button class="page-btn" :disabled="catalog.homePage >= totalPages" @click="catalog.setHomePage(catalog.homePage + 1)">→</button>
         </nav>
       </div>
     </section>
@@ -282,10 +301,9 @@ const budgetOptions = [
 const quickTags = computed(() => [
   { type: "category", value: "business", label: t('category.business') },
   { type: "category", value: "it", label: t('category.it') },
-  { type: "category", value: "engineering", label: t('category.engineering') },
   { type: "category", value: "medicine", label: t('category.medicine') },
-  { type: "level", value: "master", label: t('degree.master') },
-  { type: "level", value: "phd", label: t('degree.phd') }
+  { type: "category", value: "engineering", label: t('category.engineering') },
+  { type: "category", value: "hospitality", label: t('category.hospitality') }
 ] as const);
 
 const activeFilters = computed(() => {
@@ -300,7 +318,7 @@ const activeFilters = computed(() => {
     items.push({ key: `level:${value}`, label: levelLabels.get(value) || value });
   }
   for (const value of catalog.categories) {
-    items.push({ key: `category:${value}`, label: categoryLabels.get(value) || value });
+    items.push({ key: `category:${value}`, label: categoryLabels.get(value) || categoryLabel(value) });
   }
   if (catalog.qsRankMax) {
     items.push({ key: "qs", label: `Top ${catalog.qsRankMax}` });
@@ -322,12 +340,12 @@ const activeFilters = computed(() => {
 });
 
 const filterGroups = computed(() => [
-  { key: "type", label: t('home.ownership'), active: Boolean(ownership.value) },
-  { key: "level", label: t('home.level'), active: Boolean(catalog.levels.length) },
-  { key: "rank", label: t('home.qsTop'), active: Boolean(catalog.qsRankMax) },
-  { key: "budget", label: t('home.tuition'), active: Boolean(catalog.tuitionMin || catalog.tuitionMax) },
-  { key: "category", label: t('home.category'), active: Boolean(catalog.categories.length) },
-  { key: "special", label: t('home.language'), active: catalog.acceptNoLanguage }
+  { key: "type", icon: "▣", label: t('home.ownership'), active: Boolean(ownership.value) },
+  { key: "level", icon: "◈", label: t('home.level'), active: Boolean(catalog.levels.length) },
+  { key: "rank", icon: "♛", label: t('home.qsTop'), active: Boolean(catalog.qsRankMax) },
+  { key: "budget", icon: "◉", label: t('home.tuition'), active: Boolean(catalog.tuitionMin || catalog.tuitionMax) },
+  { key: "category", icon: "▥", label: t('home.category'), active: Boolean(catalog.categories.length) },
+  { key: "special", icon: "✦", label: t('home.language'), active: catalog.acceptNoLanguage }
 ]);
 
 const totalPages = computed(() => Math.max(1, Math.ceil(catalog.filteredUniversities.length / catalog.pageSize)));
@@ -335,6 +353,20 @@ const pagedUniversities = computed(() => {
   const start = (catalog.homePage - 1) * catalog.pageSize;
   return catalog.filteredUniversities.slice(start, start + catalog.pageSize);
 });
+const heroStats = computed(() => [
+  { value: `${Math.max(catalog.homeMeta?.stats.universityCount ?? 0, 119)}+`, label: t('home.statsUniversities') },
+  { value: `${Math.max(catalog.homeMeta?.stats.programCount ?? 0, 687)}+`, label: t('home.statsPrograms') },
+  { value: "12", label: t('home.statsBestRank') },
+  { value: "100%", label: t('home.statsSource') }
+]);
+const budgetRangeValue = computed(() => catalog.tuitionMax ?? 120000);
+const budgetRangeLabel = computed(() => shortBudget(budgetRangeValue.value));
+const visiblePages = computed(() => {
+  const pages = new Set([1, catalog.homePage, catalog.homePage + 1].filter((page) => page >= 1 && page <= totalPages.value));
+  return [...pages].sort((a, b) => a - b).slice(0, 3);
+});
+const showLastPage = computed(() => totalPages.value > 1 && !visiblePages.value.includes(totalPages.value));
+const showPageGap = computed(() => showLastPage.value && visiblePages.value[visiblePages.value.length - 1] < totalPages.value - 1);
 
 watch(totalPages, (value) => {
   if (catalog.homePage > value) catalog.setHomePage(value);
@@ -375,6 +407,17 @@ function setBudget(value: number) {
     catalog.tuitionMax = value;
   }
   catalog.resetHomePage();
+}
+
+function setBudgetRange(event: Event) {
+  const value = Number((event.target as HTMLInputElement).value);
+  catalog.tuitionMin = null;
+  catalog.tuitionMax = value;
+  catalog.resetHomePage();
+}
+
+function shortBudget(value: number) {
+  return `${Math.round(value / 1000)}k`;
 }
 
 function toggleNoLanguage() {
@@ -479,6 +522,7 @@ function categoryLabel(value: string) {
     science: t('category.science'),
     arts: t('category.arts'),
     medicine: t('category.medicine'),
+    hospitality: t('category.hospitality'),
     law: t('category.law')
   };
   return known[value] || value.replace(/[-_]/g, " ");

@@ -11,7 +11,6 @@
       <div class="university-card__overlay"></div>
       <div class="university-card__badges">
         <span class="info-chip info-chip--light">QS #{{ university.qsRank }}</span>
-        <span v-if="university.csrCertified" class="info-chip info-chip--success">{{ t('common.certified') }}</span>
       </div>
     </div>
 
@@ -23,25 +22,22 @@
           </div>
           <div class="university-card__info">
             <div class="university-card__code">{{ university.shortName }} / {{ university.code }}</div>
+            <div class="university-card__meta-row">
+              <span class="info-chip info-chip--blue">{{ t(`ownership.${university.ownership}`) }}</span>
+              <span class="university-card__meta-dot">{{ text(university.location) }} · {{ t('common.foundedYear') }} {{ university.foundedYear }}</span>
+            </div>
             <h3 class="university-card__title" @click="router.push(`/universities/${university.slug}`)">{{ text(university.name) }}</h3>
             <p class="university-card__subtitle">{{ university.nameEn }}</p>
+            <p class="university-card__description">{{ text(university.description) }}</p>
           </div>
-        </div>
-        <div class="university-card__actions">
-          <button class="ghost-action" @click.stop="catalog.toggleFavoriteUniversity(university.id)">
-            {{ catalog.favoriteState.universities.includes(university.id) ? t('common.favorited') : t('common.favorite') }}
-          </button>
-          <button class="ghost-action" :class="{ active: catalog.compareIds.includes(university.id) }" @click.stop="catalog.toggleCompare(university.id)">
-            {{ catalog.compareIds.includes(university.id) ? t('common.compared') : t('common.compare') }}
-          </button>
         </div>
       </div>
 
       <div class="university-card__meta">
-        <span class="info-chip">{{ t(`ownership.${university.ownership}`) }}</span>
-        <span class="info-chip">{{ text(university.location) }}</span>
         <span class="info-chip">Asia #{{ university.qsAsiaRank ?? '--' }}</span>
         <span v-if="university.acceptNoLanguage" class="info-chip info-chip--accent">{{ t('common.noLanguageApply') }}</span>
+        <span v-if="university.csrCertified" class="info-chip info-chip--success">{{ t('common.certified') }}</span>
+        <span class="info-chip">IELTS {{ university.minIelts }}+</span>
       </div>
 
       <div class="university-card__metrics">
@@ -63,8 +59,6 @@
         </div>
       </div>
 
-      <p class="university-card__description">{{ text(university.description) }}</p>
-
       <div v-if="topPrograms.length" class="university-card__programs">
         <button
           v-for="program in topPrograms"
@@ -79,9 +73,24 @@
 
       <div class="university-card__footer">
         <div class="university-card__highlights">
+          <span>{{ t('common.officialSource') }}</span>
           <span v-for="highlight in array(university.highlights).slice(0, 2)" :key="highlight">{{ highlight }}</span>
         </div>
-        <RouterLink class="primary-action" :to="`/universities/${university.slug}`">{{ t('common.viewDetails') }}</RouterLink>
+        <div class="university-card__right">
+          <div class="university-card__tuition">
+            <strong>{{ tuitionDisplay }}</strong>
+            <span>{{ t('common.annualTuition') }}</span>
+          </div>
+          <div class="university-card__actions">
+            <button class="icon-action" :aria-label="t('common.favorite')" @click.stop="catalog.toggleFavoriteUniversity(university.id)">
+              {{ catalog.favoriteState.universities.includes(university.id) ? "♥" : "♡" }}
+            </button>
+            <button class="icon-action" :class="{ active: catalog.compareIds.includes(university.id) }" :aria-label="t('common.compare')" @click.stop="catalog.toggleCompare(university.id)">
+              ⛶
+            </button>
+          </div>
+          <RouterLink class="primary-action" :to="`/universities/${university.slug}`">{{ t('common.viewDetails') }}</RouterLink>
+        </div>
       </div>
     </div>
   </article>
@@ -122,6 +131,7 @@ const relatedPrograms = computed(() =>
   [...catalog.programs.filter((program) => program.universityId === university.id)].sort(comparePrograms)
 );
 const topPrograms = computed(() => relatedPrograms.value.slice(0, 4));
+const tuitionDisplay = computed(() => `CNY ${shortPrice(university.tuitionMinCny)}+`);
 
 function comparePrograms(a: ProgramListItem, b: ProgramListItem) {
   const levelDiff = levelOrder[a.level] - levelOrder[b.level];

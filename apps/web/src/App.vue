@@ -22,16 +22,6 @@
         <span class="floating-tool-icon">荐</span>
         <span class="floating-tool-label">{{ t('nav.recommend') }}</span>
       </button>
-      <RouterLink class="floating-tool" :class="{ active: route.path === '/favorites' }" to="/favorites">
-        <span class="floating-tool-icon">藏</span>
-        <span class="floating-tool-label">{{ t('nav.favorites') }}</span>
-        <span v-if="favoriteCount" class="floating-tool-badge">{{ favoriteCount }}</span>
-      </RouterLink>
-      <RouterLink class="floating-tool" :class="{ active: route.path === '/compare' }" to="/compare">
-        <span class="floating-tool-icon">比</span>
-        <span class="floating-tool-label">{{ t('nav.compare') }}</span>
-        <span v-if="compareCount" class="floating-tool-badge floating-tool-badge--accent">{{ compareCount }}</span>
-      </RouterLink>
     </div>
 
     <SiteFooter />
@@ -42,8 +32,8 @@
 </template>
 
 <script setup lang="ts">
-import { computed, onMounted, ref } from "vue";
-import { RouterLink, RouterView, useRoute } from "vue-router";
+import { onMounted, ref } from "vue";
+import { RouterView } from "vue-router";
 import { useI18n } from "vue-i18n";
 import AuthModal from "./components/AuthModal.vue";
 import CalculatorModal from "./components/CalculatorModal.vue";
@@ -55,13 +45,10 @@ import { useSessionStore } from "./stores/session";
 
 const session = useSessionStore();
 const catalog = useCatalogStore();
-const route = useRoute();
 const { t } = useI18n();
 const showCalculator = ref(false);
 const showRecommend = ref(false);
 const bootError = ref("");
-const favoriteCount = computed(() => catalog.favoriteState.universities.length + catalog.favoriteState.programs.length);
-const compareCount = computed(() => catalog.compareIds.length);
 
 onMounted(async () => {
   try {

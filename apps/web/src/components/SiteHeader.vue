@@ -23,6 +23,7 @@
           type="button"
           @click="handleMenuClick(item)"
         >
+          <span class="nav-link__icon">{{ item.icon }}</span>
           <span class="nav-link__label">{{ item.label }}</span>
           <span v-if="item.key === 'favorites' && favoriteCount" class="nav-link__badge">{{ favoriteCount }}</span>
         </component>
@@ -49,6 +50,7 @@ import { useSessionStore } from "../stores/session";
 type HeaderMenuItem = {
   key: string;
   label: string;
+  icon: string;
   to?: string;
   action?: "calculator" | "recommend";
 };
@@ -66,12 +68,12 @@ const { t, locale } = useI18n();
 const favoriteCount = computed(() => catalog.favoriteState.universities.length + catalog.favoriteState.programs.length);
 
 const menuItems = computed<HeaderMenuItem[]>(() => [
-  { key: "home", label: t("nav.home"), to: "/" },
-  { key: "planner", label: t("nav.planner"), to: "/planner" },
-  { key: "favorites", label: t("nav.favorites"), to: "/favorites" },
-  { key: "calculator", label: t("nav.calculator"), action: "calculator" },
-  { key: "recommend", label: t("nav.recommend"), action: "recommend" },
-  { key: "compare", label: t("nav.compare"), to: "/compare" }
+  { key: "home", label: t("nav.home"), icon: "▣", to: "/" },
+  { key: "planner", label: t("nav.planner"), icon: "◎", to: "/planner" },
+  { key: "calculator", label: t("nav.calculator"), icon: "◈", action: "calculator" },
+  { key: "recommend", label: t("nav.recommend"), icon: "✦", action: "recommend" },
+  { key: "favorites", label: t("nav.favorites"), icon: "♥", to: "/favorites" },
+  { key: "compare", label: t("nav.compare"), icon: "⚖", to: "/compare" }
 ]);
 
 const localeOptions = [
