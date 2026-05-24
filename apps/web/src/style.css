@@ -5191,6 +5191,18 @@ label.lbl {
     font-size: 14px;
   }
 
+  .program-grid,
+  .feature-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .data-card h2,
+  .stat-card .text-2xl,
+  .data-card .text-xs {
+    overflow-wrap: anywhere;
+  }
+
   .header-brand-subtitle,
   .shell-select {
     display: none;

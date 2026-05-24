@@ -33,6 +33,7 @@
     "verify:task039:images": "node scripts/task039-image-regression.mjs",
     "verify:task040:i18n": "tsx --tsconfig tsconfig.test.json scripts/task040-i18n-audit.ts",
     "verify:task041:i18n": "npm run verify:task040:i18n && tsx --tsconfig tsconfig.test.json scripts/task041-copy-audit.ts",
+    "verify:task042": "node scripts/task042-multilingual-visual-regression.mjs",
     "verify:task040:browser": "node scripts/task035-final-release-audit.mjs",
     "seed": "npm --workspace @studymy/api run seed",
     "extract:static": "npm --workspace @studymy/api run extract:static",

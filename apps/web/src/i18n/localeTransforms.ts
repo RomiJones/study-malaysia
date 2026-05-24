@@ -329,6 +329,7 @@ const simplifiedToTraditional: Record<string, string> = {
   读: "讀",
   课: "課",
   调: "調",
+  财: "財",
   费: "費",
   资: "資",
   败: "敗",
