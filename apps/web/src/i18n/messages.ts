@@ -103,7 +103,9 @@ const en = {
     admissionsEmail: "Admissions email",
     officialLink: "Official link",
     applicationPortal: "Application portal",
-    contactInfo: "Contact information"
+    contactInfo: "Contact information",
+    previous: "Previous page",
+    next: "Next page"
   },
   degree: {
     bachelor: "Bachelor",
@@ -608,7 +610,9 @@ const zhCN = {
     admissionsEmail: "招生邮箱",
     officialLink: "官方链接",
     applicationPortal: "申请入口",
-    contactInfo: "联系信息"
+    contactInfo: "联系信息",
+    previous: "上一页",
+    next: "下一页"
   },
   degree: {
     bachelor: "本科",
@@ -1115,7 +1119,9 @@ const ms = mergeMessages(en, {
     admissionsEmail: "E-mel kemasukan",
     officialLink: "Pautan rasmi",
     applicationPortal: "Portal permohonan",
-    contactInfo: "Maklumat hubungan"
+    contactInfo: "Maklumat hubungan",
+    previous: "Halaman sebelumnya",
+    next: "Halaman seterusnya"
   },
   degree: {
     bachelor: "Sarjana muda",

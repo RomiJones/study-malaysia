@@ -78,6 +78,120 @@ img {
   max-width: 100%;
 }
 
+.ui-icon {
+  --ui-icon-size: 16px;
+  --ui-icon-url: none;
+  width: var(--ui-icon-size);
+  height: var(--ui-icon-size);
+  display: inline-block;
+  flex-shrink: 0;
+  background: currentColor;
+  -webkit-mask: var(--ui-icon-url) center / contain no-repeat;
+  mask: var(--ui-icon-url) center / contain no-repeat;
+}
+
+.ui-icon--school {
+  --ui-icon-url: url("/assets/static-html/inline-svg-inline-svg-bb78dac7fc1c-bb78dac7fc1c.svg");
+}
+
+.ui-icon--home {
+  --ui-icon-url: url("/assets/static-html/icon-university.svg");
+}
+
+.ui-icon--planner {
+  --ui-icon-url: url("/assets/static-html/icon-compass.svg");
+}
+
+.ui-icon--calculator {
+  --ui-icon-url: url("/assets/static-html/icon-calculator.svg");
+}
+
+.ui-icon--recommend {
+  --ui-icon-url: url("/assets/static-html/icon-sparkle.svg");
+}
+
+.ui-icon--favorites,
+.ui-icon--heart {
+  --ui-icon-url: url("/assets/static-html/icon-heart.svg");
+}
+
+.ui-icon--heart-filled {
+  --ui-icon-url: url("/assets/static-html/icon-heart-filled.svg");
+}
+
+.ui-icon--compare {
+  --ui-icon-url: url("/assets/static-html/inline-svg-inline-svg-be91448f6f5a-be91448f6f5a.svg");
+}
+
+.ui-icon--search {
+  --ui-icon-url: url("/assets/static-html/inline-svg-inline-svg-c37be65d3006-c37be65d3006.svg");
+}
+
+.ui-icon--filter {
+  --ui-icon-url: url("/assets/static-html/inline-svg-inline-svg-f843c6d34847-f843c6d34847.svg");
+}
+
+.ui-icon--chevron {
+  --ui-icon-url: url("/assets/static-html/inline-svg-inline-svg-e2bf67ea8213-e2bf67ea8213.svg");
+}
+
+.ui-icon--arrow-right {
+  --ui-icon-url: url("/assets/static-html/inline-svg-inline-svg-d5047f91a39c-d5047f91a39c.svg");
+}
+
+.ui-icon--arrow-left {
+  --ui-icon-url: url("/assets/static-html/inline-svg-inline-svg-d5047f91a39c-d5047f91a39c.svg");
+  transform: rotate(180deg);
+}
+
+.ui-icon--close {
+  --ui-icon-url: url("/assets/static-html/inline-svg-inline-svg-0408b92c9e54-0408b92c9e54.svg");
+}
+
+.ui-icon--level {
+  --ui-icon-url: url("/assets/static-html/icon-graduation.svg");
+}
+
+.ui-icon--rank {
+  --ui-icon-url: url("/assets/static-html/icon-trophy.svg");
+}
+
+.ui-icon--budget {
+  --ui-icon-url: url("/assets/static-html/icon-wallet.svg");
+}
+
+.ui-icon--category {
+  --ui-icon-url: url("/assets/static-html/icon-book-open.svg");
+}
+
+.ui-icon--special {
+  --ui-icon-url: url("/assets/static-html/icon-zap.svg");
+}
+
+.ui-icon--check {
+  --ui-icon-url: url("/assets/static-html/icon-check.svg");
+}
+
+.ui-icon--vs {
+  --ui-icon-url: url("/assets/static-html/icon-vs.svg");
+}
+
+.ui-icon--official {
+  --ui-icon-url: url("/assets/static-html/icon-official.svg");
+}
+
+.ui-icon--progress {
+  --ui-icon-url: url("/assets/static-html/icon-progress.svg");
+}
+
+.ui-icon--draft {
+  --ui-icon-url: url("/assets/static-html/icon-draft.svg");
+}
+
+.ui-icon--wait {
+  --ui-icon-url: url("/assets/static-html/icon-circle.svg");
+}
+
 .section-title,
 .hero-title,
 .detail-hero-title,
@@ -614,6 +728,10 @@ img {
   box-shadow: 0 2px 8px rgba(12, 14, 26, 0.18);
 }
 
+.header-brand-mark-icon {
+  --ui-icon-size: 19px;
+}
+
 .header-brand-copy {
   min-width: 0;
 }
@@ -710,8 +828,8 @@ img {
 }
 
 .nav-link__icon {
+  --ui-icon-size: 14px;
   color: inherit;
-  font-size: 12px;
   line-height: 1;
 }
 
@@ -1067,7 +1185,9 @@ img {
 }
 
 .search-icon {
-  padding: 0 16px;
+  --ui-icon-size: 18px;
+  margin: 0 16px;
+  padding: 0;
   color: var(--ink-3);
   flex-shrink: 0;
 }
@@ -1321,6 +1441,10 @@ img {
   font-size: 13px;
 }
 
+.filter-panel__icon .ui-icon {
+  --ui-icon-size: 14px;
+}
+
 .filter-panel__count {
   display: inline-flex;
   align-items: center;
@@ -1372,6 +1496,7 @@ img {
 }
 
 .filter-group-icon {
+  --ui-icon-size: 16px;
   width: 16px;
   color: var(--ink-2);
   text-align: center;
@@ -1387,6 +1512,7 @@ img {
 }
 
 .filter-group-arrow {
+  --ui-icon-size: 16px;
   width: 20px;
   height: 20px;
   display: inline-flex;
@@ -1672,9 +1798,20 @@ label.lbl {
 }
 
 .active-tag-x {
+  width: 14px;
+  height: 14px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
   color: var(--ink-3);
   font-size: 14px;
   line-height: 1;
+}
+
+.active-tag-x .ui-icon,
+.active-filter-tag button .ui-icon {
+  --ui-icon-size: 11px;
 }
 
 .active-tag-x:hover {
@@ -1766,6 +1903,12 @@ label.lbl {
 }
 
 .active-filter-tag button {
+  width: 14px;
+  height: 14px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
   border: 0;
   background: transparent;
   color: var(--ink-3);
@@ -1829,6 +1972,10 @@ label.lbl {
 .page-btn:disabled {
   opacity: 0.45;
   cursor: not-allowed;
+}
+
+.page-btn .ui-icon {
+  --ui-icon-size: 13px;
 }
 
 .pagination-gap {
@@ -2052,6 +2199,10 @@ label.lbl {
   transition: border-color 0.2s ease, color 0.2s ease, background 0.2s ease;
 }
 
+.icon-action .ui-icon {
+  --ui-icon-size: 15px;
+}
+
 .icon-action:hover {
   border-color: var(--red);
   background: var(--red-lt);
@@ -2063,6 +2214,13 @@ label.lbl {
   border-color: var(--blue);
   background: var(--blue-lt);
   color: var(--blue);
+}
+
+.icon-action--favorite.active,
+.icon-action--favorite.active:hover {
+  border-color: var(--red);
+  background: var(--red-lt);
+  color: var(--red);
 }
 
 .university-card__meta,
@@ -2580,6 +2738,10 @@ label.lbl {
   margin-bottom: 12px;
   padding-left: 0;
   color: rgba(255, 255, 255, 0.62);
+}
+
+.detail-back-btn .ui-icon {
+  --ui-icon-size: 13px;
 }
 
 .detail-back-btn:hover {
@@ -3143,6 +3305,10 @@ label.lbl {
   line-height: 1;
 }
 
+.modal-close .ui-icon {
+  --ui-icon-size: 16px;
+}
+
 .program-modal-tags {
   display: flex;
   flex-wrap: wrap;
@@ -3329,15 +3495,21 @@ label.lbl {
 }
 
 .fav-empty-icon {
-  display: block;
-  width: auto;
-  height: auto;
+  width: 64px;
+  height: 64px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   margin-bottom: 8px;
-  background: transparent;
+  border: 1px solid rgba(200, 168, 75, 0.32);
+  border-radius: 18px;
+  background: var(--gold-lt);
   color: #8a6a10;
-  font-size: 48px;
-  font-weight: 900;
   line-height: 1;
+}
+
+.fav-empty-icon .ui-icon {
+  --ui-icon-size: 34px;
 }
 
 .compare-table-card {
@@ -3813,11 +3985,18 @@ label.lbl {
 .tool-modal-close {
   width: 32px;
   height: 32px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   border: none;
   border-radius: 8px;
   background: rgba(255, 255, 255, 0.12);
   color: #fff;
   font-size: 18px;
+}
+
+.tool-modal-close .ui-icon {
+  --ui-icon-size: 16px;
 }
 
 .tool-modal-body {
@@ -4208,6 +4387,10 @@ label.lbl {
   font-weight: 900;
 }
 
+.material-status .ui-icon {
+  --ui-icon-size: 15px;
+}
+
 .material-status--done {
   background: var(--teal-lt);
   color: var(--teal);
@@ -4365,6 +4548,10 @@ label.lbl {
   font-weight: 900;
 }
 
+.visa-check .ui-icon {
+  --ui-icon-size: 15px;
+}
+
 .visa-step strong {
   display: block;
   color: var(--ink);
@@ -4455,6 +4642,7 @@ label.lbl {
 }
 
 .floating-tool-icon {
+  --ui-icon-size: 16px;
   font-weight: 800;
 }
 

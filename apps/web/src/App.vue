@@ -15,11 +15,11 @@
 
     <div class="floating-tools">
       <button class="floating-tool" type="button" @click="showCalculator = true">
-        <span class="floating-tool-icon">¥</span>
+        <span class="floating-tool-icon ui-icon ui-icon--calculator" aria-hidden="true"></span>
         <span class="floating-tool-label">{{ t('nav.calculator') }}</span>
       </button>
       <button class="floating-tool" type="button" @click="showRecommend = true">
-        <span class="floating-tool-icon">✦</span>
+        <span class="floating-tool-icon ui-icon ui-icon--recommend" aria-hidden="true"></span>
         <span class="floating-tool-label">{{ t('nav.recommend') }}</span>
       </button>
     </div>

@@ -86,11 +86,20 @@
             <span>{{ t('common.annualTuition') }}</span>
           </div>
           <div class="university-card__actions">
-            <button class="icon-action" :aria-label="t('common.favorite')" @click.stop="catalog.toggleFavoriteUniversity(university.id)">
-              {{ catalog.favoriteState.universities.includes(university.id) ? "♥" : "♡" }}
+            <button
+              class="icon-action icon-action--favorite"
+              :class="{ active: isFavorite }"
+              :aria-label="t('common.favorite')"
+              @click.stop="catalog.toggleFavoriteUniversity(university.id)"
+            >
+              <span
+                class="ui-icon"
+                :class="isFavorite ? 'ui-icon--heart-filled' : 'ui-icon--heart'"
+                aria-hidden="true"
+              ></span>
             </button>
             <button class="icon-action" :class="{ active: catalog.compareIds.includes(university.id) }" :aria-label="t('common.compare')" @click.stop="catalog.toggleCompare(university.id)">
-              ⛶
+              <span class="ui-icon ui-icon--compare" aria-hidden="true"></span>
             </button>
           </div>
           <RouterLink class="primary-action" :to="`/universities/${university.slug}`">{{ t('common.viewDetails') }}</RouterLink>
@@ -138,6 +147,7 @@ const relatedPrograms = computed(() =>
 const topPrograms = computed(() => relatedPrograms.value.slice(0, 4));
 const tuitionDisplay = computed(() => university.tuitionMinCny > 0 ? `CNY ${shortPrice(university.tuitionMinCny)}+` : officialPageFallback(currentLocale.value));
 const sourceStatusLabel = computed(() => formatOfficialSourceStatus(university.officialSourceStatus, currentLocale.value));
+const isFavorite = computed(() => catalog.favoriteState.universities.includes(university.id));
 const hasImageError = ref(false);
 const hasLogoError = ref(false);
 

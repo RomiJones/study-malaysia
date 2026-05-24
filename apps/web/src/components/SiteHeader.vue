@@ -2,7 +2,9 @@
   <header class="site-header">
     <div class="header-inner">
       <RouterLink to="/" class="header-brand-link">
-        <div class="header-brand-mark">SM</div>
+        <div class="header-brand-mark" aria-hidden="true">
+          <span class="header-brand-mark-icon ui-icon ui-icon--school"></span>
+        </div>
         <div class="header-brand-copy">
           <div class="header-brand-title">
             <span>StudyMY</span>
@@ -23,7 +25,7 @@
           type="button"
           @click="handleMenuClick(item)"
         >
-          <span class="nav-link__icon">{{ item.icon }}</span>
+          <span class="nav-link__icon ui-icon" :class="item.icon" aria-hidden="true"></span>
           <span class="nav-link__label">{{ item.label }}</span>
           <span v-if="item.key === 'favorites' && favoriteCount" class="nav-link__badge">{{ favoriteCount }}</span>
         </component>
@@ -68,12 +70,12 @@ const { t, locale } = useI18n();
 const favoriteCount = computed(() => catalog.favoriteState.universities.length + catalog.favoriteState.programs.length);
 
 const menuItems = computed<HeaderMenuItem[]>(() => [
-  { key: "home", label: t("nav.home"), icon: "▣", to: "/" },
-  { key: "planner", label: t("nav.planner"), icon: "◎", to: "/planner" },
-  { key: "calculator", label: t("nav.calculator"), icon: "◈", action: "calculator" },
-  { key: "recommend", label: t("nav.recommend"), icon: "✦", action: "recommend" },
-  { key: "favorites", label: t("nav.favorites"), icon: "♥", to: "/favorites" },
-  { key: "compare", label: t("nav.compare"), icon: "⚖", to: "/compare" }
+  { key: "home", label: t("nav.home"), icon: "ui-icon--home", to: "/" },
+  { key: "planner", label: t("nav.planner"), icon: "ui-icon--planner", to: "/planner" },
+  { key: "calculator", label: t("nav.calculator"), icon: "ui-icon--calculator", action: "calculator" },
+  { key: "recommend", label: t("nav.recommend"), icon: "ui-icon--recommend", action: "recommend" },
+  { key: "favorites", label: t("nav.favorites"), icon: "ui-icon--favorites", to: "/favorites" },
+  { key: "compare", label: t("nav.compare"), icon: "ui-icon--compare", to: "/compare" }
 ]);
 
 const localeOptions = [

@@ -17,7 +17,7 @@
 
           <div class="search-wrap" ref="searchWrapRef">
             <div class="search-inner">
-              <span class="search-icon">⌕</span>
+              <span class="search-icon ui-icon ui-icon--search" aria-hidden="true"></span>
               <input
                 v-model="catalog.search"
                 class="search-input"
@@ -68,7 +68,9 @@
       <aside class="filter-panel section-card">
         <div class="filter-panel__header">
           <div class="filter-panel__title">
-            <span class="filter-panel__icon">▾</span>
+            <span class="filter-panel__icon" aria-hidden="true">
+              <span class="ui-icon ui-icon--filter"></span>
+            </span>
             <span>{{ t('home.filtersTitle') }}</span>
             <span v-if="activeFilters.length" class="filter-panel__count">{{ activeFilters.length }} {{ t('common.itemCount') }}</span>
           </div>
@@ -78,7 +80,9 @@
         <div v-if="activeFilters.length" class="active-strip">
           <span v-for="item in activeFilters" :key="item.key" class="active-tag">
             {{ item.label }}
-            <button class="active-tag-x" @click="removeFilter(item.key)">×</button>
+            <button class="active-tag-x" :aria-label="t('common.remove')" @click="removeFilter(item.key)">
+              <span class="ui-icon ui-icon--close" aria-hidden="true"></span>
+            </button>
           </span>
           <button class="clear-all-btn" @click="resetFilters">{{ t('common.clearAll') }}</button>
         </div>
@@ -87,11 +91,11 @@
           <div v-for="group in filterGroups" :key="group.key" class="filter-group">
             <button class="filter-group-head" type="button" @click="toggleFilterGroup(group.key)">
               <span class="filter-group-label">
-                <span class="filter-group-icon">{{ group.icon }}</span>
+                <span class="filter-group-icon ui-icon" :class="group.icon" aria-hidden="true"></span>
                 <span>{{ group.label }}</span>
                 <span v-if="group.active" class="filter-group-active-dot"></span>
               </span>
-              <span class="filter-group-arrow" :class="{ open: openGroups.includes(group.key) }">⌄</span>
+              <span class="filter-group-arrow ui-icon ui-icon--chevron" :class="{ open: openGroups.includes(group.key) }" aria-hidden="true"></span>
             </button>
 
             <div class="filter-group-body" :class="{ open: openGroups.includes(group.key) }">
@@ -205,7 +209,9 @@
         <div v-if="activeFilters.length" class="active-filter-tags">
           <span v-for="item in activeFilters" :key="item.key" class="active-filter-tag">
             {{ item.label }}
-            <button @click="removeFilter(item.key)">×</button>
+            <button :aria-label="t('common.remove')" @click="removeFilter(item.key)">
+              <span class="ui-icon ui-icon--close" aria-hidden="true"></span>
+            </button>
           </span>
         </div>
 
@@ -222,7 +228,9 @@
         </div>
 
         <nav v-if="totalPages > 1" class="pagination-bar" aria-label="Pagination">
-          <button class="page-btn" :disabled="catalog.homePage <= 1" @click="catalog.setHomePage(catalog.homePage - 1)">←</button>
+          <button class="page-btn" :disabled="catalog.homePage <= 1" :aria-label="t('common.previous')" @click="catalog.setHomePage(catalog.homePage - 1)">
+            <span class="ui-icon ui-icon--arrow-left" aria-hidden="true"></span>
+          </button>
           <button
             v-for="page in visiblePages"
             :key="page"
@@ -236,7 +244,9 @@
           <button v-if="showLastPage" class="page-btn" :class="{ active: catalog.homePage === totalPages }" @click="catalog.setHomePage(totalPages)">
             {{ totalPages }}
           </button>
-          <button class="page-btn" :disabled="catalog.homePage >= totalPages" @click="catalog.setHomePage(catalog.homePage + 1)">→</button>
+          <button class="page-btn" :disabled="catalog.homePage >= totalPages" :aria-label="t('common.next')" @click="catalog.setHomePage(catalog.homePage + 1)">
+            <span class="ui-icon ui-icon--arrow-right" aria-hidden="true"></span>
+          </button>
         </nav>
       </div>
     </section>
@@ -342,12 +352,12 @@ const activeFilters = computed(() => {
 });
 
 const filterGroups = computed(() => [
-  { key: "type", icon: "▣", label: t('home.ownership'), active: Boolean(ownership.value) },
-  { key: "level", icon: "◈", label: t('home.level'), active: Boolean(catalog.levels.length) },
-  { key: "rank", icon: "♛", label: t('home.qsTop'), active: Boolean(catalog.qsRankMax) },
-  { key: "budget", icon: "◉", label: t('home.tuition'), active: Boolean(catalog.tuitionMin || catalog.tuitionMax) },
-  { key: "category", icon: "▥", label: t('home.category'), active: Boolean(catalog.categories.length) },
-  { key: "special", icon: "✦", label: t('home.language'), active: catalog.acceptNoLanguage }
+  { key: "type", icon: "ui-icon--home", label: t('home.ownership'), active: Boolean(ownership.value) },
+  { key: "level", icon: "ui-icon--level", label: t('home.level'), active: Boolean(catalog.levels.length) },
+  { key: "rank", icon: "ui-icon--rank", label: t('home.qsTop'), active: Boolean(catalog.qsRankMax) },
+  { key: "budget", icon: "ui-icon--budget", label: t('home.tuition'), active: Boolean(catalog.tuitionMin || catalog.tuitionMax) },
+  { key: "category", icon: "ui-icon--category", label: t('home.category'), active: Boolean(catalog.categories.length) },
+  { key: "special", icon: "ui-icon--special", label: t('home.language'), active: catalog.acceptNoLanguage }
 ]);
 
 const totalPages = computed(() => Math.max(1, Math.ceil(catalog.filteredUniversities.length / catalog.pageSize)));

@@ -6,7 +6,9 @@
           <h3 class="auth-modal-title">{{ session.authMode === 'login' ? t('auth.titleLogin') : t('auth.titleRegister') }}</h3>
           <p class="auth-modal-note">{{ t('auth.guestSyncHint') }}</p>
         </div>
-        <button class="modal-close" @click="session.closeAuth" :aria-label="t('common.close')">×</button>
+        <button class="modal-close" @click="session.closeAuth" :aria-label="t('common.close')">
+          <span class="ui-icon ui-icon--close" aria-hidden="true"></span>
+        </button>
       </div>
 
       <div class="auth-tabs">

@@ -6,14 +6,18 @@
           <div class="tool-modal-kicker">{{ t('recommend.kicker') }}</div>
           <h3>{{ t('recommend.title') }}</h3>
         </div>
-        <button class="tool-modal-close" type="button" :aria-label="t('common.close')" @click="$emit('close')">×</button>
+        <button class="tool-modal-close" type="button" :aria-label="t('common.close')" @click="$emit('close')">
+          <span class="ui-icon ui-icon--close" aria-hidden="true"></span>
+        </button>
       </div>
 
       <div class="tool-modal-body">
         <div v-if="planner.syncError" class="inline-alert inline-alert--error">{{ planner.syncError }}</div>
 
         <div v-if="planner.loading && !dashboard" class="fav-empty">
-          <div class="fav-empty-icon">✦</div>
+          <div class="fav-empty-icon" aria-hidden="true">
+            <span class="ui-icon ui-icon--recommend"></span>
+          </div>
           <strong>{{ t('common.loading') }}</strong>
         </div>
 
@@ -45,7 +49,9 @@
           </div>
 
           <div v-else class="fav-empty">
-            <div class="fav-empty-icon">✦</div>
+            <div class="fav-empty-icon" aria-hidden="true">
+              <span class="ui-icon ui-icon--recommend"></span>
+            </div>
             <strong>{{ t('recommend.emptyTitle') }}</strong>
             <span>{{ t('recommend.emptyBody') }}</span>
             <RouterLink class="btn btn-gold" to="/planner" @click="$emit('close')">{{ t('recommend.improveProfile') }}</RouterLink>

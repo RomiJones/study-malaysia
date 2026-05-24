@@ -11,7 +11,9 @@
     <div v-if="catalog.compareMessage" class="app-alert compare-alert">{{ catalog.compareMessage }}</div>
 
     <div v-if="compareUniversities.length < 2" class="fav-empty section-card">
-      <div class="fav-empty-icon">VS</div>
+      <div class="fav-empty-icon" aria-hidden="true">
+        <span class="ui-icon ui-icon--vs"></span>
+      </div>
       <div class="serif text-xl">{{ t('comparePage.emptyTitle') }}</div>
       <div class="text-slate-500 mt-2">{{ t('comparePage.emptyBody') }}</div>
       <div class="text-slate-500 mt-2">{{ session.isLoggedIn ? t('comparePage.emptyAccount') : t('comparePage.emptyGuest') }}</div>

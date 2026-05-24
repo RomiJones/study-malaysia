@@ -6,7 +6,9 @@
           <div class="tool-modal-kicker">{{ t('calculator.title') }}</div>
           <h3>{{ t('calculator.heading') }}</h3>
         </div>
-        <button class="tool-modal-close" type="button" :aria-label="t('common.close')" @click="$emit('close')">×</button>
+        <button class="tool-modal-close" type="button" :aria-label="t('common.close')" @click="$emit('close')">
+          <span class="ui-icon ui-icon--close" aria-hidden="true"></span>
+        </button>
       </div>
 
       <div class="tool-modal-body">

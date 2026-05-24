@@ -86,7 +86,9 @@
         </div>
 
         <div v-else class="fav-empty section-card">
-          <div class="fav-empty-icon">✦</div>
+          <div class="fav-empty-icon" aria-hidden="true">
+            <span class="ui-icon ui-icon--recommend"></span>
+          </div>
           <strong>{{ t('planner.noRecommendationsTitle') }}</strong>
           <span>{{ t('planner.noRecommendationsBody') }}</span>
           <button class="btn btn-gold" type="button" @click="activeTab = 'profile'">{{ t('planner.improveProfile') }}</button>
@@ -148,7 +150,9 @@
         </div>
         <div class="material-list">
           <article v-for="item in dashboard.materials" :key="item.key" class="material-item">
-            <div class="material-status" :class="`material-status--${item.status}`">{{ statusIcon(item.status) }}</div>
+            <div class="material-status" :class="`material-status--${item.status}`" aria-hidden="true">
+              <span class="ui-icon" :class="statusIconClass(item.status)"></span>
+            </div>
             <div class="material-item__body">
               <strong>{{ text(item.name) }}</strong>
               <span>{{ text(item.note) }}</span>
@@ -191,7 +195,9 @@
         </div>
 
         <div v-else class="fav-empty section-card">
-          <div class="fav-empty-icon">✓</div>
+          <div class="fav-empty-icon" aria-hidden="true">
+            <span class="ui-icon ui-icon--check"></span>
+          </div>
           <strong>{{ t('planner.noTasksTitle') }}</strong>
           <span>{{ t('planner.noTasksBody') }}</span>
           <button class="btn btn-gold" type="button" @click="activeTab = 'profile'">{{ t('planner.improveProfile') }}</button>
@@ -207,7 +213,9 @@
         </div>
         <div class="visa-list">
           <button v-for="item in visaKeys" :key="item.key" class="visa-step" :class="{ done: dashboard.visaChecklist[item.key] }" type="button" @click="planner.updateVisa({ [item.key]: !dashboard.visaChecklist[item.key] })">
-            <span class="visa-check">{{ dashboard.visaChecklist[item.key] ? '✓' : '' }}</span>
+            <span class="visa-check" aria-hidden="true">
+              <span v-if="dashboard.visaChecklist[item.key]" class="ui-icon ui-icon--check"></span>
+            </span>
             <span>
               <strong>{{ item.label }}</strong>
               <small>{{ item.note }}</small>
@@ -299,11 +307,11 @@ function statusLabel(status: MaterialStatus) {
   return t(`status.${status}`);
 }
 
-function statusIcon(status: MaterialStatus) {
-  if (status === "done") return "✓";
-  if (status === "progress") return "◑";
-  if (status === "draft") return "✎";
-  return "○";
+function statusIconClass(status: MaterialStatus) {
+  if (status === "done") return "ui-icon--check";
+  if (status === "progress") return "ui-icon--progress";
+  if (status === "draft") return "ui-icon--draft";
+  return "ui-icon--wait";
 }
 
 function updateMaterial(key: string, event: Event) {

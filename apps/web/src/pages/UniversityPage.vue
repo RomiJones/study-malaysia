@@ -3,7 +3,8 @@
     <section class="detail-hero">
       <div class="container detail-hero-inner">
         <button class="btn btn-ghost btn-sm detail-back-btn" type="button" @click="goHome">
-          ← {{ t('university.backToDirectory') }}
+          <span class="ui-icon ui-icon--arrow-left" aria-hidden="true"></span>
+          {{ t('university.backToDirectory') }}
         </button>
 
         <div class="detail-hero-main">
@@ -336,7 +337,9 @@
               {{ catalog.selectedProgramDetail.nameEnOfficial || catalog.selectedProgramDetail.nameEn }} · {{ text(catalog.selectedProgramDetail.university.name) }}
             </div>
           </div>
-          <button class="modal-close" type="button" :aria-label="t('common.close')" @click="closeProgramModal">×</button>
+          <button class="modal-close" type="button" :aria-label="t('common.close')" @click="closeProgramModal">
+            <span class="ui-icon ui-icon--close" aria-hidden="true"></span>
+          </button>
         </div>
 
         <div class="modal-body">

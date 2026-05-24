@@ -11,7 +11,9 @@
     <div v-if="catalog.syncError" class="inline-alert inline-alert--error">{{ catalog.syncError }}</div>
 
     <div v-if="!favoriteUniversities.length && !favoritePrograms.length" class="fav-empty section-card">
-      <div class="fav-empty-icon">♥</div>
+      <div class="fav-empty-icon" aria-hidden="true">
+        <span class="ui-icon ui-icon--heart-filled"></span>
+      </div>
       <strong>{{ t('favorites.empty') }}</strong>
       <span>{{ session.isLoggedIn ? t('favorites.emptyAccount') : t('favorites.emptyGuest') }}</span>
       <RouterLink class="btn btn-gold" to="/">{{ t('home.browseUniversities') }}</RouterLink>
