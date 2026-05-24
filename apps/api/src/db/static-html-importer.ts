@@ -32,6 +32,7 @@ export interface StaticCatalogPruneOptions {
 
 export interface StaticCatalogDbStatsOptions {
   universityCodes?: string[];
+  programCodes?: string[];
 }
 
 export interface StaticCatalogQualitySummary {
@@ -49,8 +50,12 @@ export interface StaticCatalogImportConflict {
   entity: "university" | "program";
   code: string;
   slug: string;
-  codeMatchId: number;
-  slugMatchId: number;
+  codeMatchId: number | null;
+  slugMatchId: number | null;
+  targetUniversityId?: number | null;
+  codeMatchUniversityId?: number | null;
+  slugMatchUniversityId?: number | null;
+  reason?: "code-slug-mismatch" | "cross-university-match";
 }
 
 export interface StaticCatalogImportPlan {
@@ -121,11 +126,12 @@ async function findExistingUniversity(
 
 async function findExistingProgram(
   repository: Repository<ProgramEntity>,
-  item: StaticProgramSeed
+  item: StaticProgramSeed,
+  targetUniversityId: number
 ) {
-  const { current, conflict } = await findProgramMatch(repository, item);
+  const { current, conflict } = await findProgramMatch(repository, item, targetUniversityId);
   if (conflict) {
-    throw new Error(`Static catalog program conflict for ${item.code}/${item.slug}: code and slug match different rows.`);
+    throw new Error(`Static catalog program conflict for ${item.code}/${item.slug}: code or slug matches another row or university.`);
   }
   return current;
 }
@@ -151,29 +157,73 @@ async function findUniversityMatch(repository: Repository<UniversityEntity>, ite
   };
 }
 
-async function findProgramMatch(repository: Repository<ProgramEntity>, item: StaticProgramSeed) {
+function createProgramConflict(
+  item: StaticProgramSeed,
+  codeMatch: ProgramEntity | null,
+  slugMatch: ProgramEntity | null,
+  reason: StaticCatalogImportConflict["reason"],
+  targetUniversityId: number | null
+): StaticCatalogImportConflict {
+  return {
+    entity: "program",
+    code: item.code,
+    slug: item.slug,
+    codeMatchId: codeMatch?.id ?? null,
+    slugMatchId: slugMatch?.id ?? null,
+    targetUniversityId,
+    codeMatchUniversityId: codeMatch?.universityId ?? null,
+    slugMatchUniversityId: slugMatch?.universityId ?? null,
+    reason
+  };
+}
+
+async function findProgramMatch(
+  repository: Repository<ProgramEntity>,
+  item: StaticProgramSeed,
+  targetUniversityId: number | null
+) {
   const [byCode, bySlug] = await Promise.all([
-    repository.findOne({ where: { code: item.code } }),
+    repository.find({ where: { code: item.code } }),
     repository.findOne({ where: { slug: item.slug } })
   ]);
+
+  const codeMatchOutsideTarget = byCode.find((program) => program.universityId !== targetUniversityId) || null;
+  const slugMatchOutsideTarget = bySlug && bySlug.universityId !== targetUniversityId ? bySlug : null;
+  if (codeMatchOutsideTarget || slugMatchOutsideTarget) {
+    return {
+      current: null,
+      conflict: createProgramConflict(
+        item,
+        codeMatchOutsideTarget,
+        slugMatchOutsideTarget,
+        "cross-university-match",
+        targetUniversityId
+      )
+    };
+  }
+
+  const byCodeInTarget = byCode.find((program) => program.universityId === targetUniversityId) || null;
   const conflict =
-    byCode && bySlug && byCode.id !== bySlug.id
-      ? {
-          entity: "program" as const,
-          code: item.code,
-          slug: item.slug,
-          codeMatchId: byCode.id,
-          slugMatchId: bySlug.id
-        }
+    byCodeInTarget && bySlug && byCodeInTarget.id !== bySlug.id
+      ? createProgramConflict(item, byCodeInTarget, bySlug, "code-slug-mismatch", targetUniversityId)
       : null;
   return {
-    current: byCode || bySlug || null,
+    current: byCodeInTarget || bySlug || null,
     conflict
   };
 }
 
 export function getStaticCatalogDbStatsOptions(catalog: StaticCatalog): StaticCatalogDbStatsOptions {
-  return catalog.scope ? { universityCodes: catalog.universities.map((university) => university.code) } : {};
+  if (catalog.scope) {
+    return { universityCodes: catalog.universities.map((university) => university.code) };
+  }
+  if (catalog.layer === "base" || catalog.layer === "supplement") {
+    return {
+      universityCodes: catalog.universities.map((university) => university.code),
+      programCodes: catalog.programs.map((program) => program.code)
+    };
+  }
+  return {};
 }
 
 export async function getStaticCatalogDbStats(
@@ -183,6 +233,7 @@ export async function getStaticCatalogDbStats(
   const universityRepository = dataSource.getRepository(UniversityEntity);
   const programRepository = dataSource.getRepository(ProgramEntity);
   const universityCodes = options.universityCodes?.filter(Boolean) || [];
+  const programCodes = options.programCodes?.filter(Boolean) || [];
   if (options.universityCodes && !universityCodes.length) {
     return {
       universityCount: 0,
@@ -198,6 +249,13 @@ export async function getStaticCatalogDbStats(
     const query = programRepository.createQueryBuilder("program");
     if (universityCodes.length) {
       query.innerJoin("program.university", "university").where("university.code IN (:...universityCodes)", { universityCodes });
+    }
+    if (options.programCodes) {
+      if (programCodes.length) {
+        query.andWhere("program.code IN (:...programCodes)", { programCodes });
+      } else {
+        query.andWhere("1 = 0");
+      }
     }
     return query;
   };
@@ -275,6 +333,7 @@ export async function previewStaticCatalogImport(
   const warnings = [...catalog.warnings];
   const conflicts: StaticCatalogImportConflict[] = [];
   const existingUniversityIds: number[] = [];
+  const catalogUniversityIds = new Map<string, number | null>();
   let createdUniversities = 0;
   let updatedUniversities = 0;
   let createdPrograms = 0;
@@ -290,19 +349,20 @@ export async function previewStaticCatalogImport(
     if (match.current) {
       updatedUniversities += 1;
       existingUniversityIds.push(match.current.id);
+      catalogUniversityIds.set(item.code, match.current.id);
     } else {
       createdUniversities += 1;
+      catalogUniversityIds.set(item.code, null);
     }
   }
 
-  const catalogUniversityCodes = new Set(catalog.universities.map((university) => university.code));
   for (const item of catalog.programs) {
-    if (!catalogUniversityCodes.has(item.universityCode)) {
+    if (!catalogUniversityIds.has(item.universityCode)) {
       skippedPrograms += 1;
       warnings.push(`Skipped program ${item.code}; missing university ${item.universityCode}.`);
       continue;
     }
-    const match = await findProgramMatch(programRepository, item);
+    const match = await findProgramMatch(programRepository, item, catalogUniversityIds.get(item.universityCode) ?? null);
     if (match.conflict) {
       conflicts.push(match.conflict);
       continue;
@@ -402,7 +462,7 @@ export async function importStaticCatalog(
       summary.warnings.push(`Skipped program ${item.code}; missing university ${item.universityCode}.`);
       continue;
     }
-    const current = await findExistingProgram(programRepository, item);
+    const current = await findExistingProgram(programRepository, item, university.id);
     const { sourceId, universityCode, ...programData } = item;
     void sourceId;
     void universityCode;

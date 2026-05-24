@@ -1,5 +1,10 @@
 import { extractStaticCatalog, validateStaticCatalog } from "./static-html-catalog.js";
-import { compareDbStats, createCatalogDataSource, getStaticCatalogDbStats } from "./static-html-importer.js";
+import {
+  compareDbStats,
+  createCatalogDataSource,
+  getStaticCatalogDbStats,
+  getStaticCatalogDbStatsOptions
+} from "./static-html-importer.js";
 import type { StaticCatalogLayerName } from "./static-html-catalog.js";
 
 function getArgValue(name: string): string | null {
@@ -29,10 +34,7 @@ if (includeDatabase) {
   const dataSource = createCatalogDataSource();
   await dataSource.initialize();
   try {
-    dbStats = await getStaticCatalogDbStats(
-      dataSource,
-      catalog.scope ? { universityCodes: catalog.universities.map((university) => university.code) } : {}
-    );
+    dbStats = await getStaticCatalogDbStats(dataSource, getStaticCatalogDbStatsOptions(catalog));
     dbErrors = compareDbStats(dbStats, catalog.expectedStats);
   } finally {
     await dataSource.destroy();

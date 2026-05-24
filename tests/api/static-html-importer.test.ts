@@ -1,6 +1,12 @@
 import { describe, test } from "node:test";
 import assert from "node:assert/strict";
-import { compareDbStats, shouldPruneStaticCatalog } from "../../apps/api/src/db/static-html-importer.ts";
+import {
+  compareDbStats,
+  getStaticCatalogDbStatsOptions,
+  previewStaticCatalogImport,
+  shouldPruneStaticCatalog
+} from "../../apps/api/src/db/static-html-importer.ts";
+import { ProgramEntity, UniversityEntity } from "../../apps/api/src/db/entities.ts";
 import {
   STATIC_HTML_EXPECTED_UM_BASE_STATS,
   STATIC_HTML_EXPECTED_LAYER_STATS,
@@ -27,6 +33,110 @@ describe("static HTML import statistics", () => {
     assert.equal(shouldPruneStaticCatalog("supplement", { confirmPrune: true }), true);
     assert.equal(shouldPruneStaticCatalog("supplement", { noPrune: true, confirmPrune: true }), false);
     assert.equal(shouldPruneStaticCatalog("merged"), false);
+  });
+
+  test("builds layer-aware database statistics options", () => {
+    const universities = [{ code: "UM" }, { code: "UKM" }];
+    const programs = [{ code: "UMP1" }, { code: "UKMP1" }];
+
+    assert.deepEqual(getStaticCatalogDbStatsOptions({ layer: "base", universities, programs } as any), {
+      universityCodes: ["UM", "UKM"],
+      programCodes: ["UMP1", "UKMP1"]
+    });
+    assert.deepEqual(getStaticCatalogDbStatsOptions({ layer: "supplement", universities, programs } as any), {
+      universityCodes: ["UM", "UKM"],
+      programCodes: ["UMP1", "UKMP1"]
+    });
+    assert.deepEqual(getStaticCatalogDbStatsOptions({ layer: "merged", universities, programs } as any), {});
+    assert.deepEqual(
+      getStaticCatalogDbStatsOptions({
+        layer: "merged",
+        universities: [{ code: "UM" }],
+        programs: [{ code: "UMP1" }],
+        scope: {
+          universityCode: "UM",
+          universitySlug: null,
+          matchedUniversityCodes: ["UM"],
+          matchedUniversitySlugs: ["university-of-malaya"]
+        }
+      } as any),
+      { universityCodes: ["UM"] }
+    );
+  });
+
+  test("reports cross-university program code collisions in scoped import preview", async () => {
+    const existingUniversity = { id: 10, code: "UM", slug: "university-of-malaya" };
+    const foreignProgram = { id: 20, code: "UMP1", slug: "foreign-program", universityId: 99 };
+
+    const universityRepository = {
+      findOne: async ({ where }: any) =>
+        where.code === existingUniversity.code || where.slug === existingUniversity.slug ? existingUniversity : null,
+      count: async () => 1
+    };
+    const programRepository = {
+      find: async ({ where }: any) => (where.code === foreignProgram.code ? [foreignProgram] : []),
+      findOne: async ({ where }: any) => (where.slug === foreignProgram.slug ? foreignProgram : null),
+      createQueryBuilder: () => ({
+        innerJoin() {
+          return this;
+        },
+        where() {
+          return this;
+        },
+        andWhere() {
+          return this;
+        },
+        getCount: async () => 0
+      })
+    };
+    const dataSource = {
+      getRepository: (entity: any) => {
+        if (entity === UniversityEntity) return universityRepository;
+        if (entity === ProgramEntity) return programRepository;
+        throw new Error("Unexpected repository requested.");
+      }
+    };
+
+    const plan = await previewStaticCatalogImport(
+      dataSource as any,
+      {
+        layer: "base",
+        sourceHtmlPath: "fixture.html",
+        universities: [{ code: "UM", slug: "university-of-malaya" }],
+        programs: [{ code: "UMP1", slug: "um-target-program", universityCode: "UM" }],
+        stats: {
+          publicDisplayStatusCounts: {},
+          programsByLevel: {},
+          readyByLevel: {},
+          readyCategoryCount: 0
+        },
+        expectedStats: STATIC_HTML_EXPECTED_UM_BASE_STATS,
+        warnings: [],
+        scope: {
+          universityCode: "UM",
+          universitySlug: null,
+          matchedUniversityCodes: ["UM"],
+          matchedUniversitySlugs: ["university-of-malaya"]
+        }
+      } as any,
+      { pruneCatalog: false }
+    );
+
+    assert.equal(plan.createdPrograms, 0);
+    assert.equal(plan.updatedPrograms, 0);
+    assert.deepEqual(plan.conflicts, [
+      {
+        entity: "program",
+        code: "UMP1",
+        slug: "um-target-program",
+        codeMatchId: 20,
+        slugMatchId: null,
+        targetUniversityId: 10,
+        codeMatchUniversityId: 99,
+        slugMatchUniversityId: null,
+        reason: "cross-university-match"
+      }
+    ]);
   });
 
   test("reports every database statistic mismatch with machine-readable text", () => {
