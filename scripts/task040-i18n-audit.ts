@@ -118,6 +118,9 @@ function checkRuntimeDynamicTextLocalization() {
       if (formatted.includes(sample)) {
         failures.push(`${locale} still exposes runtime text sample: ${sample}`);
       }
+      if (hasAcademicEnglishResidue(formatted, locale)) {
+        failures.push(`${locale} runtime text keeps academic English residue: ${sample}; received: ${formatted}`);
+      }
     }
 
     for (const sample of runtimeEnglishFallbackSamples) {
@@ -133,6 +136,14 @@ function checkRuntimeDynamicTextLocalization() {
       const fallback = officialPageFallback(locale);
       if (formatted !== fallback) {
         failures.push(`${locale} should fall back for ordinary English academic text: ${sample}; received: ${formatted}`);
+      }
+    }
+
+    for (const sample of localizedAcademicTextSamples) {
+      const formatted = normalizeAcademicText(sample, undefined, locale);
+      const fallback = officialPageFallback(locale);
+      if (formatted !== fallback && hasAcademicEnglishResidue(formatted, locale)) {
+        failures.push(`${locale} academic text keeps English residue: ${sample}; received: ${formatted}`);
       }
     }
 
@@ -171,7 +182,7 @@ function checkRuntimeDynamicTextLocalization() {
   assert(failures.length === 0, `runtime dynamic text localization failed:\n${failures.join("\n")}`);
   return {
     locales: nonEnglishLocales,
-    sampleCount: runtimeDynamicTextSamples.length + runtimeEnglishFallbackSamples.length + academicEnglishFallbackSamples.length + 4,
+    sampleCount: runtimeDynamicTextSamples.length + runtimeEnglishFallbackSamples.length + academicEnglishFallbackSamples.length + localizedAcademicTextSamples.length + 4,
     leakedEnglishRuntimeTextCount: 0
   };
 }
@@ -294,6 +305,12 @@ function containsCjk(value: string): boolean {
   return /[\u3400-\u9fff]/.test(value);
 }
 
+function hasAcademicEnglishResidue(value: string, locale: SupportedLocale): boolean {
+  const commonResiduePattern = /\b(?:Rolling|Research|Clinical|Coursework|Mixed[-\s]?Mode|Full[-\s]?Time|Part[-\s]?Time|Duration)\b/i;
+  if (commonResiduePattern.test(value)) return true;
+  return locale === "ms" ? false : /\bSemesters?\b/i.test(value);
+}
+
 function assert(condition: unknown, message: string): asserts condition {
   if (!condition) throw new Error(message);
 }
@@ -342,7 +359,12 @@ const runtimeDynamicTextSamples = [
   "October intake",
   "Multiple intakes",
   "Refer to official portal",
-  "Refer to official system"
+  "Refer to official system",
+  "Rolling",
+  "Research",
+  "Clinical",
+  "Coursework",
+  "Mixed-Mode"
 ];
 
 const runtimeEnglishFallbackSamples = [
@@ -355,6 +377,15 @@ const academicEnglishFallbackSamples = [
   "March requirements are subject to change.",
   "Full-Time Duration: 6 Semesters, (Clinical) — official page title is Doctor of Public Health (Mixed-Mode)",
   "Language requirements are subject to official review."
+];
+
+const localizedAcademicTextSamples = [
+  "6 Semesters (Clinical)",
+  "Full-Time Duration: 6 Semesters (Clinical)",
+  "Research",
+  "Coursework",
+  "Mixed-Mode",
+  "Rolling"
 ];
 
 const runtimeTraditionalTextSample = "中国学生需准备研究计划、公证翻译和补充材料。";

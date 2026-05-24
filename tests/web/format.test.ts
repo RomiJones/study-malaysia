@@ -113,6 +113,11 @@ describe("web display format helpers", () => {
     assert.equal(formatRuntimeDisplayText("October intake", "fallback", "ms"), "Ambilan Oktober");
     assert.equal(formatRuntimeDisplayText("Refer to official portal", "fallback", "zh-CN"), "以官方申请入口为准。");
     assert.equal(formatRuntimeDisplayText("Refer to official system", "fallback", "ms"), "Rujuk sistem rasmi.");
+    assert.equal(formatRuntimeDisplayText("Rolling", "fallback", "ms"), "Ambilan bergilir");
+    assert.equal(formatRuntimeDisplayText("Research", "fallback", "zh-CN"), "研究型");
+    assert.equal(formatRuntimeDisplayText("Clinical", "fallback", "zh-TW"), "臨床");
+    assert.equal(formatRuntimeDisplayText("Coursework", "fallback", "ms"), "Kerja kursus");
+    assert.equal(formatRuntimeDisplayText("Mixed-Mode", "fallback", "zh-CN"), "混合模式");
     assert.equal(formatRuntimeDisplayText("Applications may be submitted through the official system.", "fallback", "zh-CN"), "fallback");
     assert.equal(formatRuntimeDisplayText("May be submitted through the official system.", "fallback", "ms"), "fallback");
     assert.equal(formatRuntimeDisplayText("March requirements are subject to change.", "fallback", "zh-TW"), "fallback");
@@ -120,8 +125,12 @@ describe("web display format helpers", () => {
     assert.equal(formatRuntimeDisplayText("Unknown runtime display note should not leak directly.", "fallback", "ms"), "fallback");
     assert.equal(formatRuntimeDisplayText("Unknown runtime display note should not leak directly.", "fallback", "en"), "Unknown runtime display note should not leak directly.");
     assert.equal(normalizeAcademicText("March requirements are subject to change.", "fallback", "zh-CN"), "fallback");
+    assert.equal(normalizeAcademicText("6 Semesters (Clinical)", "fallback", "zh-CN"), "6 个学期 (临床)");
+    assert.equal(normalizeAcademicText("6 Semesters (Clinical)", "fallback", "zh-TW"), "6 個學期 (臨床)");
+    assert.equal(normalizeAcademicText("6 Semesters (Clinical)", "fallback", "ms"), "6 semester (Klinikal)");
     assert.equal(normalizeAcademicText("Full-Time Duration: 6 Semesters, (Clinical) — official page title is Doctor of Public Health (Mixed-Mode)", "fallback", "zh-TW"), "fallback");
     assert.equal(formatProgramIntake(program({ officialIntake: "March requirements are subject to change." }), "fallback", "ms"), "fallback");
+    assert.equal(formatProgramDuration(program({ durationOfficial: "6 Semesters (Clinical)" }), "zh-CN"), "6 个学期 (临床)");
     assert.equal(formatProgramDuration(program({ durationOfficial: "Full-Time Duration: 6 Semesters, (Clinical) — official page title is Doctor of Public Health (Mixed-Mode)" }), "zh-CN"), officialPageFallback("zh-CN"));
     assert.equal(formatProgramLanguage(program({ officialLanguageRequirement: "Language requirements are subject to official review." }), "fallback", "zh-CN"), "fallback");
     assert.equal(

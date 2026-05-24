@@ -318,6 +318,102 @@ const runtimeDynamicTextLabels = {
 
 const runtimeDynamicTextLabelMap = runtimeDynamicTextLabels as Record<string, LocalizedText>;
 
+const academicTermLabels = {
+  rolling: {
+    en: "Rolling",
+    ms: "Ambilan bergilir",
+    "zh-CN": "滚动开放",
+    "zh-TW": "滾動開放"
+  },
+  research: {
+    en: "Research",
+    ms: "Penyelidikan",
+    "zh-CN": "研究型",
+    "zh-TW": "研究型"
+  },
+  coursework: {
+    en: "Coursework",
+    ms: "Kerja kursus",
+    "zh-CN": "授课型",
+    "zh-TW": "授課型"
+  },
+  clinical: {
+    en: "Clinical",
+    ms: "Klinikal",
+    "zh-CN": "临床",
+    "zh-TW": "臨床"
+  },
+  "mixed-mode": {
+    en: "Mixed-Mode",
+    ms: "Mod campuran",
+    "zh-CN": "混合模式",
+    "zh-TW": "混合模式"
+  },
+  "mixed mode": {
+    en: "Mixed Mode",
+    ms: "Mod campuran",
+    "zh-CN": "混合模式",
+    "zh-TW": "混合模式"
+  },
+  "full-time": {
+    en: "Full-Time",
+    ms: "Sepenuh masa",
+    "zh-CN": "全日制",
+    "zh-TW": "全日制"
+  },
+  "full time": {
+    en: "Full Time",
+    ms: "Sepenuh masa",
+    "zh-CN": "全日制",
+    "zh-TW": "全日制"
+  },
+  "part-time": {
+    en: "Part-Time",
+    ms: "Separuh masa",
+    "zh-CN": "非全日制",
+    "zh-TW": "非全日制"
+  },
+  "part time": {
+    en: "Part Time",
+    ms: "Separuh masa",
+    "zh-CN": "非全日制",
+    "zh-TW": "非全日制"
+  },
+  duration: {
+    en: "Duration",
+    ms: "Tempoh",
+    "zh-CN": "学制",
+    "zh-TW": "學制"
+  },
+  "full-time duration": {
+    en: "Full-Time Duration",
+    ms: "Tempoh sepenuh masa",
+    "zh-CN": "全日制学制",
+    "zh-TW": "全日制學制"
+  },
+  "part-time duration": {
+    en: "Part-Time Duration",
+    ms: "Tempoh separuh masa",
+    "zh-CN": "非全日制学制",
+    "zh-TW": "非全日制學制"
+  }
+} satisfies Record<string, LocalizedText>;
+
+const academicTermLabelMap = academicTermLabels as Record<string, LocalizedText>;
+
+const academicTermReplacements: Array<{ pattern: RegExp; labelKey: keyof typeof academicTermLabels }> = [
+  { pattern: /\bfull[-\s]?time\s+duration\b/gi, labelKey: "full-time duration" },
+  { pattern: /\bpart[-\s]?time\s+duration\b/gi, labelKey: "part-time duration" },
+  { pattern: /\bmixed[-\s]?mode\b/gi, labelKey: "mixed-mode" },
+  { pattern: /\bfull[-\s]?time\b/gi, labelKey: "full-time" },
+  { pattern: /\bpart[-\s]?time\b/gi, labelKey: "part-time" },
+  { pattern: /\bcoursework\b/gi, labelKey: "coursework" },
+  { pattern: /\bresearch\b/gi, labelKey: "research" },
+  { pattern: /\bclinical\b/gi, labelKey: "clinical" },
+  { pattern: /\brolling\b/gi, labelKey: "rolling" },
+  { pattern: /\bduration\b/gi, labelKey: "duration" }
+];
+
 const extraCategoryLabels = {
   hospitality: {
     en: "Hospitality",
@@ -589,7 +685,7 @@ function hasUnknownAcademicEnglish(value: string): boolean {
     .replace(/\bsemester\s+\d+\s*\(\s*[A-Za-z]+\s*\)\s+intakes?\b/gi, " ")
     .replace(/\bmultiple\s+intakes?\b/gi, " ")
     .replace(/\b(?:january|february|march|april|may|june|july|august|september|october|november|december)\b/gi, " ")
-    .replace(/\b(?:full[-\s]?time|part[-\s]?time|coursework|research|rolling|years?|semesters?|intakes?|academic|session|band|and|or|per|year)\b/gi, " ")
+    .replace(/\b(?:full[-\s]?time|part[-\s]?time|mixed[-\s]?mode|coursework|research|clinical|rolling|duration|years?|semesters?|intakes?|academic|session|band|and|or|per|year)\b/gi, " ")
     .replace(/[0-9.,:+/()&\-–—\s]+/g, " ")
     .trim();
 
@@ -620,6 +716,18 @@ function formatLocalizedLabel(label: LocalizedText, fallback: string, locale: Su
   return (locale === "zh-TW" ? toTraditionalText(text) : text) || fallback;
 }
 
+function formatAcademicTermText(value: string, fallback: string, locale: SupportedLocale): string {
+  const label = academicTermLabelMap[normalizeOfficialNoteKey(value)];
+  return label ? formatLocalizedLabel(label, fallback, locale) : "";
+}
+
+function replaceAcademicTerms(value: string, locale: SupportedLocale): string {
+  return academicTermReplacements.reduce(
+    (text, replacement) => text.replace(replacement.pattern, () => academicTermLabels[replacement.labelKey][locale]),
+    value
+  );
+}
+
 export function cleanDisplayText(
   value: unknown,
   fallback?: string,
@@ -633,6 +741,8 @@ export function cleanDisplayText(
   if (monthText) return monthText;
   const runtimeLabel = runtimeDynamicTextLabelMap[normalizeOfficialNoteKey(text)];
   if (runtimeLabel) return formatLocalizedLabel(runtimeLabel, actualFallback, normalizedLocale);
+  const academicTermLabel = formatAcademicTermText(text, "", normalizedLocale);
+  if (academicTermLabel) return academicTermLabel;
   if ((normalizedLocale === "en" || normalizedLocale === "ms") && containsCjkText(text)) return actualFallback;
   const localizedText = normalizedLocale === "zh-TW" ? toTraditionalText(text) : text;
   return localizedText || actualFallback;
@@ -679,6 +789,8 @@ export function formatRuntimeDisplayText(
   if (label) {
     return formatLocalizedLabel(label, actualFallback, normalizedLocale);
   }
+  const academicTermLabel = formatAcademicTermText(rawText, actualFallback, normalizedLocale);
+  if (academicTermLabel) return academicTermLabel;
   const monthText = formatRuntimeMonthDisplayText(rawText, actualFallback, normalizedLocale);
   if (monthText) return monthText;
 
@@ -712,16 +824,23 @@ export function normalizeAcademicText(value: unknown, fallback?: string, locale?
   const text = cleanDisplayText(value, "", locale);
   if (!text) return actualFallback;
   const normalizedLocale = normalizeLocale(locale);
+  const academicTermLabel = formatAcademicTermText(text, actualFallback, normalizedLocale);
+  if (academicTermLabel) return academicTermLabel;
   if (normalizedLocale !== "en" && hasUnknownAcademicEnglish(text)) return actualFallback;
-  const monthNormalizedText = normalizeRuntimeMonthText(text, normalizedLocale).text;
+  const monthNormalizedText = replaceAcademicTerms(normalizeRuntimeMonthText(text, normalizedLocale).text, normalizedLocale);
   const normalized = isChineseLocale(locale)
     ? (normalizedLocale === "zh-TW" ? toTraditionalText(monthNormalizedText) : monthNormalizedText)
       .replace(/Not offered for the Academic Session 2026\/2027/gi, "2026/2027 学年不开放")
       .replace(/Not offered/gi, "暂不开放")
       .replace(/Rolling/gi, "滚动开放")
+      .replace(/Mixed[-\s]?Mode/gi, "混合模式")
+      .replace(/Research/gi, "研究型")
+      .replace(/Clinical/gi, "临床")
       .replace(/Years?/gi, "年")
       .replace(/Semesters?/gi, "个学期")
-      .replace(/Full time/gi, "全日制")
+      .replace(/Full[-\s]?Time/gi, "全日制")
+      .replace(/Part[-\s]?Time/gi, "非全日制")
+      .replace(/Duration/gi, "学制")
       .replace(/Coursework/gi, "授课型")
       .replace(/\band\b/gi, "及")
       .replace(/\s+\/\s+year/gi, " / 年")
@@ -731,9 +850,14 @@ export function normalizeAcademicText(value: unknown, fallback?: string, locale?
         .replace(/Not offered for the Academic Session 2026\/2027/gi, "Tidak ditawarkan untuk tahun akademik 2026/2027")
         .replace(/Not offered/gi, "Tidak ditawarkan")
         .replace(/Rolling/gi, "Ambilan bergilir")
+        .replace(/Mixed[-\s]?Mode/gi, "Mod campuran")
+        .replace(/Research/gi, "Penyelidikan")
+        .replace(/Clinical/gi, "Klinikal")
         .replace(/Years?/gi, "tahun")
         .replace(/Semesters?/gi, "semester")
-        .replace(/Full time/gi, "sepenuh masa")
+        .replace(/Full[-\s]?Time/gi, "sepenuh masa")
+        .replace(/Part[-\s]?Time/gi, "separuh masa")
+        .replace(/Duration/gi, "tempoh")
         .replace(/Coursework/gi, "kerja kursus")
         .replace(/\band\b/gi, "dan")
         .replace(/\s+\/\s+year/gi, " / tahun")
