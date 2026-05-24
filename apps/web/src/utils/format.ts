@@ -94,6 +94,53 @@ const localizedFormatText = {
 
 type FormatTextKey = keyof typeof localizedFormatText.en;
 
+const officialNoteLabels = {
+  "official source verified": {
+    en: "Official source verified.",
+    ms: "Sumber rasmi disahkan.",
+    "zh-CN": "官方来源已核验。",
+    "zh-TW": "官方來源已核驗。"
+  },
+  "accommodation and personal expenses are not included": {
+    en: "Accommodation and personal expenses are not included.",
+    ms: "Penginapan dan perbelanjaan peribadi tidak termasuk.",
+    "zh-CN": "不包含住宿和个人开销。",
+    "zh-TW": "不包含住宿和個人開銷。"
+  },
+  "relevant academic background required": {
+    en: "Relevant academic background required.",
+    ms: "Latar akademik berkaitan diperlukan.",
+    "zh-CN": "需具备相关学术背景。",
+    "zh-TW": "需具備相關學術背景。"
+  },
+  "refer to programme page and mqa record": {
+    en: "Refer to programme page and MQA record.",
+    ms: "Rujuk halaman program dan rekod MQA.",
+    "zh-CN": "以专业页面和 MQA 记录为准。",
+    "zh-TW": "以專業頁面和 MQA 記錄為準。"
+  },
+  "fee follows the latest official page": {
+    en: "Fee follows the latest official page.",
+    ms: "Yuran mengikut halaman rasmi terkini.",
+    "zh-CN": "费用以最新官方页面为准。",
+    "zh-TW": "費用以最新官方頁面為準。"
+  },
+  "subject to official intake availability": {
+    en: "Subject to official intake availability.",
+    ms: "Tertakluk kepada ketersediaan ambilan rasmi.",
+    "zh-CN": "以官方开放的入学批次为准。",
+    "zh-TW": "以官方開放的入學批次為準。"
+  },
+  "living cost depends on accommodation": {
+    en: "Living cost depends on accommodation.",
+    ms: "Kos sara hidup bergantung pada penginapan.",
+    "zh-CN": "生活费取决于住宿安排。",
+    "zh-TW": "生活費取決於住宿安排。"
+  }
+} satisfies Record<string, LocalizedText>;
+
+const officialNoteLabelMap = officialNoteLabels as Record<string, LocalizedText>;
+
 const extraCategoryLabels = {
   hospitality: {
     en: "Hospitality",
@@ -341,6 +388,19 @@ type ProgramFacultyDisplayFields = Pick<ProgramListItem, "category" | "faculty" 
 
 const missingDisplayValues = new Set(["", "-", "--", "n/a", "na", "null", "undefined", "[]", "{}", "[object object]"]);
 
+function normalizeOfficialNoteKey(value: string): string {
+  return value
+    .trim()
+    .replace(/\s+/g, " ")
+    .replace(/[.!。]+$/g, "")
+    .toLowerCase();
+}
+
+function isEnglishLikeOfficialNote(value: string): boolean {
+  const words = value.match(/[A-Za-z][A-Za-z'-]*/g) || [];
+  return !containsCjkText(value) && words.length >= 2;
+}
+
 function finitePositiveNumber(value: unknown): number | null {
   const amount = Number(value);
   return Number.isFinite(amount) && amount > 0 ? amount : null;
@@ -366,6 +426,28 @@ export function cleanDisplayText(
   if ((normalizedLocale === "en" || normalizedLocale === "ms") && containsCjkText(text)) return actualFallback;
   const localizedText = normalizedLocale === "zh-TW" ? toTraditionalText(text) : text;
   return localizedText || actualFallback;
+}
+
+export function formatOfficialNote(
+  value: unknown,
+  fallback?: string,
+  locale?: SupportedLocale
+): string {
+  const normalizedLocale = normalizeLocale(locale);
+  const actualFallback = fallback ?? officialConfirmationFallback(normalizedLocale);
+  const text = cleanDisplayText(value, "", normalizedLocale);
+  if (!text) return actualFallback;
+
+  const label = officialNoteLabelMap[normalizeOfficialNoteKey(text)];
+  if (label) {
+    return cleanDisplayText(label[normalizedLocale] || label.en, actualFallback, normalizedLocale);
+  }
+
+  if (normalizedLocale !== "en" && isEnglishLikeOfficialNote(text)) {
+    return actualFallback;
+  }
+
+  return cleanDisplayText(text, actualFallback, normalizedLocale);
 }
 
 export function hasDisplayText(value: unknown): boolean {

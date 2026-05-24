@@ -484,6 +484,7 @@ import {
   formatCategoryLabel,
   formatCurrency,
   formatFeeAuditStatus,
+  formatOfficialNote,
   formatOfficialSourceStatus,
   formatProgramFacultyLabel,
   formatProgramDuration,
@@ -625,7 +626,7 @@ const sourceLinks = computed<SourceLinkView[]>(() => {
 
 const auditSummary = computed(() =>
   profileString("qualityNote") ||
-  cleanDisplayText(detail.value?.officialAuditSummary, "", currentLocale.value) ||
+  formatOfficialNote(detail.value?.officialAuditSummary, "", currentLocale.value) ||
   t('university.qualityNoteFallback')
 );
 
@@ -811,7 +812,7 @@ function intakeLabel(program: ProgramListItem | ProgramCatalogDetail) {
 }
 
 function tuitionNoteLabel(program: ProgramCatalogDetail) {
-  return cleanDisplayText(program.tuitionInfo?.note, officialPageFallback(currentLocale.value), currentLocale.value);
+  return formatOfficialNote(program.tuitionInfo?.note, officialPageFallback(currentLocale.value), currentLocale.value);
 }
 
 function gpaLabel(program: ProgramCatalogDetail) {
@@ -824,7 +825,7 @@ function officialLanguageLabel(program: ProgramCatalogDetail) {
 }
 
 function academicRequirementLabel(program: ProgramCatalogDetail) {
-  return cleanDisplayText(program.officialAcademicRequirement || text(program.requirement.note), officialPageFallback(currentLocale.value), currentLocale.value);
+  return formatOfficialNote(program.officialAcademicRequirement || text(program.requirement.note), officialPageFallback(currentLocale.value), currentLocale.value);
 }
 
 function chinaStudentRequirementLabel(program: ProgramCatalogDetail) {
@@ -832,7 +833,8 @@ function chinaStudentRequirementLabel(program: ProgramCatalogDetail) {
 }
 
 function accreditationNoteLabel(program: ProgramCatalogDetail) {
-  return cleanDisplayText(program.officialAccreditationNote, "", currentLocale.value);
+  if (!cleanDisplayText(program.officialAccreditationNote, "", currentLocale.value)) return "";
+  return formatOfficialNote(program.officialAccreditationNote, officialPageFallback(currentLocale.value), currentLocale.value);
 }
 
 function programApplicationDocs(program: ProgramCatalogDetail) {
@@ -847,12 +849,12 @@ function programSourceRows(program: ProgramCatalogDetail): ModalSourceRow[] {
     { label: t('university.feeStatus'), value: feeStatus(program) }
   ];
   if (program.officialIntakeNote) {
-    rows.push({ label: t('university.intakeNote'), value: normalizeAcademicText(program.officialIntakeNote, undefined, currentLocale.value), full: true });
+    rows.push({ label: t('university.intakeNote'), value: formatOfficialNote(program.officialIntakeNote, officialPageFallback(currentLocale.value), currentLocale.value), full: true });
   }
   if (program.auditNote || program.publicDisplayNote || program.reviewReason) {
     rows.push({
       label: t('university.dataNote'),
-      value: cleanDisplayText(program.auditNote || program.publicDisplayNote || program.reviewReason, officialConfirmationFallback(currentLocale.value), currentLocale.value),
+      value: formatOfficialNote(program.auditNote || program.publicDisplayNote || program.reviewReason, officialConfirmationFallback(currentLocale.value), currentLocale.value),
       full: true
     });
   }

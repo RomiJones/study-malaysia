@@ -4,6 +4,7 @@ import {
   OFFICIAL_PAGE_FALLBACK,
   cleanDisplayText,
   formatCategoryLabel,
+  formatOfficialNote,
   formatOfficialSourceStatus,
   formatProgramFacultyLabel,
   formatProgramIntake,
@@ -63,6 +64,37 @@ describe("web display format helpers", () => {
     assert.equal(formatOfficialSourceStatus("official-verified"), "官方来源已核验");
     assert.equal(formatOfficialSourceStatus("missing-source"), "缺少官方来源");
     assert.equal(formatOfficialSourceStatus(null), "待官方确认");
+  });
+
+  test("localizes official dynamic notes and hides unknown English notes outside English", () => {
+    assert.equal(
+      formatOfficialNote("Accommodation and personal expenses are not included.", "fallback", "ms"),
+      "Penginapan dan perbelanjaan peribadi tidak termasuk."
+    );
+    assert.equal(
+      formatOfficialNote("Relevant academic background required.", "fallback", "zh-CN"),
+      "需具备相关学术背景。"
+    );
+    assert.equal(
+      formatOfficialNote("Refer to programme page and MQA record.", "fallback", "zh-TW"),
+      "以專業頁面和 MQA 記錄為準。"
+    );
+    assert.equal(
+      formatOfficialNote("Official source verified.", "fallback", "zh-CN"),
+      "官方来源已核验。"
+    );
+    assert.equal(
+      formatOfficialNote("Unknown official note should not leak directly.", "fallback", "ms"),
+      "fallback"
+    );
+    assert.equal(
+      formatOfficialNote("Unknown official note should not leak directly.", "fallback", "zh-TW"),
+      "fallback"
+    );
+    assert.equal(
+      formatOfficialNote("Unknown official note should not leak directly.", "fallback", "en"),
+      "Unknown official note should not leak directly."
+    );
   });
 
   test("localizes raw backend category values without dynamic i18n keys", () => {

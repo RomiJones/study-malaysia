@@ -167,6 +167,9 @@ async function auditLocales() {
       await screenshot(page, `program-modal-${locale}.png`);
       const modalText = await visibleText(page);
       assertNoLiteral(modalText, ["undefined", "category.", "Not found"], `${locale} program modal must not show missing values or i18n keys`);
+      if (locale !== "en") {
+        assertNoLiteral(modalText, forbiddenOfficialNoteEnglish, `${locale} program modal must localize official dynamic notes`);
+      }
 
       if (locale === "en" || locale === "ms") {
         assertNoCjk(modalText, `${locale} program modal must not render Chinese dynamic text`);
@@ -487,6 +490,15 @@ function delay(ms) {
 function assert(condition, message) {
   if (!condition) throw new Error(message);
 }
+
+const forbiddenOfficialNoteEnglish = [
+  "Official source verified.",
+  "Accommodation and personal expenses are not included.",
+  "Relevant academic background required.",
+  "Refer to programme page and MQA record.",
+  "Fee follows the latest official page.",
+  "Subject to official intake availability."
+];
 
 const transparentPixel = "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==";
 

@@ -2,6 +2,7 @@ import { readFileSync, readdirSync, statSync } from "node:fs";
 import { join, relative } from "node:path";
 import { SUPPORTED_LOCALES, type SupportedLocale } from "@studymy/shared";
 import { messages } from "../apps/web/src/i18n/messages.ts";
+import { formatOfficialNote } from "../apps/web/src/utils/format.ts";
 
 type CheckResult = {
   name: string;
@@ -69,6 +70,33 @@ function checkLocaleFallbackBoundaries() {
     malayCjkCount: 0,
     malayEnglishFallbackCount: 0,
     traditionalSimplifiedSampleCount: 0
+  };
+}
+
+function checkOfficialDynamicNoteLocalization() {
+  const nonEnglishLocales: SupportedLocale[] = ["zh-CN", "zh-TW", "ms"];
+  const failures: string[] = [];
+
+  for (const locale of nonEnglishLocales) {
+    for (const sample of officialDynamicNoteSamples) {
+      const formatted = formatOfficialNote(sample, undefined, locale);
+      if (formatted.includes(sample)) {
+        failures.push(`${locale} still exposes official note sample: ${sample}`);
+      }
+    }
+
+    const unknown = "Unknown official note should not leak directly.";
+    const unknownFormatted = formatOfficialNote(unknown, undefined, locale);
+    if (unknownFormatted.includes(unknown)) {
+      failures.push(`${locale} still exposes unknown English official note: ${unknown}`);
+    }
+  }
+
+  assert(failures.length === 0, `official dynamic note localization failed:\n${failures.join("\n")}`);
+  return {
+    locales: nonEnglishLocales,
+    sampleCount: officialDynamicNoteSamples.length,
+    leakedEnglishNoteCount: 0
   };
 }
 
@@ -223,6 +251,15 @@ const knownSimplifiedSamples = [
   "筛选"
 ];
 
+const officialDynamicNoteSamples = [
+  "Official source verified.",
+  "Accommodation and personal expenses are not included.",
+  "Relevant academic background required.",
+  "Refer to programme page and MQA record.",
+  "Fee follows the latest official page.",
+  "Subject to official intake availability."
+];
+
 const allowedVisibleLiteralPatterns = [
   /^StudyMY(?: Admin)?$/,
   /^2026$/,
@@ -236,6 +273,7 @@ const allowedVisibleLiteralPatterns = [
 
 runCheck("i18n key completeness", checkMessageKeys);
 runCheck("locale fallback boundaries", checkLocaleFallbackBoundaries);
+runCheck("official dynamic note localization", checkOfficialDynamicNoteLocalization);
 runCheck("visible hardcoded text scan", checkVisibleHardcodedText);
 runCheck("script-generated visible label scan", checkScriptGeneratedVisibleLabels);
 runCheck("raw API error display scan", checkRawApiErrorDisplay);
