@@ -2877,8 +2877,10 @@ label.lbl {
   box-shadow: 0 0 0 3px rgba(200, 168, 75, 0.26), 0 10px 24px rgba(12, 14, 26, 0.18);
 }
 
-.university-detail-page .detail-panel:focus {
-  outline: none;
+.university-detail-page .detail-panel:focus-visible {
+  outline: 3px solid rgba(200, 168, 75, 0.55);
+  outline-offset: 6px;
+  border-radius: var(--r);
 }
 
 .detail-content {

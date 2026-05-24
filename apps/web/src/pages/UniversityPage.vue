@@ -62,273 +62,278 @@
 
     <section class="detail-content detail-section">
       <div
+        v-for="tab in detailTabs"
+        :key="`panel-${tab.key}`"
         class="container detail-panel"
         role="tabpanel"
-        :id="activePanelId"
-        :aria-labelledby="activeTabId"
-        tabindex="0"
+        :id="panelId(tab.key)"
+        :aria-labelledby="tabId(tab.key)"
+        :hidden="activeTab !== tab.key"
+        :tabindex="activeTab === tab.key ? 0 : -1"
       >
-        <template v-if="activeTab === 'overview'">
-          <div class="detail-highlights">
-            <div v-for="item in array(detail.highlights)" :key="item" class="highlight-item">
-              <span class="highlight-icon" aria-hidden="true"></span>
-              <span>{{ item }}</span>
-            </div>
-          </div>
-
-          <article class="section-card official-profile-card">
-            <div class="detail-section-title serif">{{ t('university.officialProfile') }}</div>
-            <div class="official-profile-grid">
-              <div v-for="item in officialInfoFields" :key="item.label" class="official-profile-item">
-                <span>{{ item.label }}</span>
-                <strong>{{ item.value }}</strong>
+        <template v-if="activeTab === tab.key">
+          <template v-if="tab.key === 'overview'">
+            <div class="detail-highlights">
+              <div v-for="item in array(detail.highlights)" :key="item" class="highlight-item">
+                <span class="highlight-icon" aria-hidden="true"></span>
+                <span>{{ item }}</span>
               </div>
             </div>
 
-            <div class="official-profile-support">
-              <div class="official-mini-card">
-                <span>{{ t('university.programmeLevels') }}</span>
-                <div class="tag-row">
-                  <span v-for="item in profileLevelChips" :key="item" class="chip chip-blue">{{ item }}</span>
-                </div>
-              </div>
-              <div class="official-mini-card">
-                <span>{{ t('university.studyMode') }}</span>
-                <div class="tag-row">
-                  <span v-for="item in profileModeChips" :key="item" class="chip chip-ink">{{ item }}</span>
-                </div>
-              </div>
-            </div>
-          </article>
-
-          <div class="detail-overview-cards">
-            <article class="section-card detail-metric-card">
-              <div class="detail-section-title serif detail-section-title--compact">{{ t('university.rankingScale') }}</div>
-              <div class="detail-row-list">
-                <div v-for="item in rankingRows" :key="`ranking-${item.label}`" class="detail-row">
+            <article class="section-card official-profile-card">
+              <div class="detail-section-title serif">{{ t('university.officialProfile') }}</div>
+              <div class="official-profile-grid">
+                <div v-for="item in officialInfoFields" :key="item.label" class="official-profile-item">
                   <span>{{ item.label }}</span>
                   <strong>{{ item.value }}</strong>
                 </div>
-                <div class="detail-row-separator"></div>
-                <div v-for="item in scaleRows" :key="`scale-${item.label}`" class="detail-row">
-                  <span>{{ item.label }}</span>
-                  <strong>{{ item.value }}</strong>
+              </div>
+
+              <div class="official-profile-support">
+                <div class="official-mini-card">
+                  <span>{{ t('university.programmeLevels') }}</span>
+                  <div class="tag-row">
+                    <span v-for="item in profileLevelChips" :key="item" class="chip chip-blue">{{ item }}</span>
+                  </div>
+                </div>
+                <div class="official-mini-card">
+                  <span>{{ t('university.studyMode') }}</span>
+                  <div class="tag-row">
+                    <span v-for="item in profileModeChips" :key="item" class="chip chip-ink">{{ item }}</span>
+                  </div>
                 </div>
               </div>
             </article>
 
-            <article class="section-card detail-metric-card">
-              <div class="detail-section-title serif detail-section-title--compact">{{ t('university.officialContact') }}</div>
-              <div class="detail-row-list">
-                <div v-for="item in contactRows" :key="item.label" class="detail-row detail-row--link">
+            <div class="detail-overview-cards">
+              <article class="section-card detail-metric-card">
+                <div class="detail-section-title serif detail-section-title--compact">{{ t('university.rankingScale') }}</div>
+                <div class="detail-row-list">
+                  <div v-for="item in rankingRows" :key="`ranking-${item.label}`" class="detail-row">
+                    <span>{{ item.label }}</span>
+                    <strong>{{ item.value }}</strong>
+                  </div>
+                  <div class="detail-row-separator"></div>
+                  <div v-for="item in scaleRows" :key="`scale-${item.label}`" class="detail-row">
+                    <span>{{ item.label }}</span>
+                    <strong>{{ item.value }}</strong>
+                  </div>
+                </div>
+              </article>
+
+              <article class="section-card detail-metric-card">
+                <div class="detail-section-title serif detail-section-title--compact">{{ t('university.officialContact') }}</div>
+                <div class="detail-row-list">
+                  <div v-for="item in contactRows" :key="item.label" class="detail-row detail-row--link">
+                    <span>{{ item.label }}</span>
+                    <a :href="item.href" target="_blank" rel="noreferrer">{{ item.value }}</a>
+                  </div>
+                </div>
+                <div class="official-link-row">
+                  <a
+                    v-for="item in sourceLinks"
+                    :key="item.url"
+                    class="btn btn-outline btn-sm"
+                    :href="item.url"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    {{ item.label }}
+                  </a>
+                </div>
+              </article>
+            </div>
+
+            <article class="audit-note-card">
+              <span>{{ t('university.auditNote') }}</span>
+              <p>{{ auditSummary }}</p>
+              <small>{{ sourceSummary }}</small>
+            </article>
+
+            <div class="detail-body">
+              <div class="detail-copy-block">
+                <div class="detail-section-title serif">{{ t('university.introTitle') }}</div>
+                <p>{{ text(detail.description) }}</p>
+                <div v-if="detail.admissionEmail" class="detail-inline-contact">
+                  {{ t('university.admissionsPrefix') }}
+                  <a :href="`mailto:${detail.admissionEmail}`">{{ detail.admissionEmail }}</a>
+                </div>
+              </div>
+
+              <aside class="section-card detail-side-card">
+                <div class="detail-section-title serif detail-section-title--compact">{{ t('university.officialFeeStatus') }}</div>
+                <div class="detail-tuition-main">{{ tuitionSummary }}</div>
+                <p>{{ tuitionNote }}</p>
+                <div class="detail-program-stats">
+                  <div v-for="item in programAuditRows" :key="item.label">
+                    <span>{{ item.label }}</span>
+                    <strong>{{ item.value }}</strong>
+                  </div>
+                </div>
+                <div class="detail-side-actions">
+                  <button class="btn btn-primary w-full" type="button" @click="setActiveTab('bachelor')">{{ t('university.browseBachelor') }}</button>
+                  <a
+                    v-if="detail.officialWebsite || detail.website"
+                    class="btn btn-outline w-full"
+                    :href="detail.officialWebsite || detail.website"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    {{ t('common.visitWebsite') }}
+                  </a>
+                </div>
+              </aside>
+            </div>
+          </template>
+
+          <template v-else-if="activeProgramLevel">
+            <div class="programme-block">
+              <div class="programme-table-title">
+                <h2>{{ t('university.programmeHeading', { level: activeProgramLabel }) }}</h2>
+                <span class="programme-count">{{ activePrograms.length }}</span>
+              </div>
+              <div v-if="catalog.errorMessage" class="inline-alert inline-alert--error programme-inline-alert">{{ catalog.errorMessage }}</div>
+              <div v-if="catalog.programLoading" class="section-card empty-state empty-state--loading">{{ t('common.loading') }}</div>
+              <div v-if="activePrograms.length" class="programme-table-wrap">
+                <div class="programme-grid-head">
+                  <div>{{ t('university.programmeName') }}</div>
+                  <div>{{ t('university.faculty') }}</div>
+                  <div>{{ t('university.duration') }}</div>
+                  <div>{{ t('university.officialTuition') }}</div>
+                  <div>{{ t('university.languageRequirement') }}</div>
+                  <div>{{ t('university.intake') }}</div>
+                  <div></div>
+                </div>
+                <button
+                  v-for="program in activePrograms"
+                  :key="program.id"
+                  class="programme-grid-row"
+                  type="button"
+                  @click="openProgram(program)"
+                >
+                  <div class="programme-cell" :data-label="t('university.programmeName')">
+                    <div class="programme-name-zh">{{ text(program.name) }}</div>
+                    <div class="programme-name-en">{{ program.nameEnOfficial || program.nameEn }}</div>
+                  </div>
+                  <div class="programme-cell" :data-label="t('university.faculty')">
+                    <div class="programme-faculty-zh">{{ facultyLabel(program) }}</div>
+                  </div>
+                  <div class="programme-cell" :data-label="t('university.duration')">
+                    <span class="programme-pill">{{ durationLabel(program) }}</span>
+                  </div>
+                  <div class="programme-cell" :data-label="t('university.officialTuition')">
+                    <div class="programme-fee-main">{{ tuitionLabel(program) }}</div>
+                    <div class="programme-fee-status" :class="{ review: program.officialFeeAuditStatus !== 'matched-official' }">
+                      {{ feeStatus(program) }}
+                    </div>
+                  </div>
+                  <div class="programme-cell" :data-label="t('university.languageRequirement')">
+                    <span class="programme-lang-pill">{{ languageLabel(program) }}</span>
+                  </div>
+                  <div class="programme-cell" :data-label="t('university.intake')">
+                    <div class="programme-intake-cn">{{ intakeLabel(program) }}</div>
+                  </div>
+                  <div class="programme-cell" :data-label="t('university.detail')">
+                    <span class="programme-detail-link">{{ t('university.detail') }}</span>
+                  </div>
+                </button>
+              </div>
+              <div v-else class="section-card empty-state">
+                {{ t('university.noPrograms', { level: activeProgramLabel }) }}
+              </div>
+            </div>
+          </template>
+
+          <template v-else-if="tab.key === 'facilities'">
+            <div class="detail-section-title serif">{{ t('university.facilitiesTab') }}</div>
+            <div class="detail-highlights">
+              <div v-for="item in array(detail.facilities)" :key="item" class="highlight-item highlight-item--facility">
+                <span class="highlight-icon" aria-hidden="true"></span>
+                <span>{{ item }}</span>
+              </div>
+            </div>
+          </template>
+
+          <template v-else-if="tab.key === 'apply'">
+            <article class="section-card official-apply-card">
+              <div class="detail-section-title serif">{{ t('university.officialApplicationEntry') }}</div>
+              <div class="official-link-grid">
+                <a
+                  v-for="item in sourceLinks"
+                  :key="`apply-${item.url}`"
+                  :href="item.url"
+                  target="_blank"
+                  rel="noreferrer"
+                  class="official-link-card"
+                >
+                  <span>{{ t('common.officialLink') }}</span>
+                  <strong>{{ item.label }}</strong>
+                  <small>{{ item.url }}</small>
+                </a>
+              </div>
+
+              <div class="official-contact-grid">
+                <div v-for="item in contactRows" :key="`apply-contact-${item.label}`" class="official-profile-item">
                   <span>{{ item.label }}</span>
                   <a :href="item.href" target="_blank" rel="noreferrer">{{ item.value }}</a>
                 </div>
               </div>
-              <div class="official-link-row">
-                <a
-                  v-for="item in sourceLinks"
-                  :key="item.url"
-                  class="btn btn-outline btn-sm"
-                  :href="item.url"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  {{ item.label }}
-                </a>
+
+              <div class="application-info-grid">
+                <div class="application-info-card">
+                  <span>{{ t('university.applicationPeriod') }}</span>
+                  <ul>
+                    <li v-for="item in applicationPeriodRows" :key="item">{{ item }}</li>
+                  </ul>
+                </div>
+                <div class="application-info-card">
+                  <span>{{ t('university.applicationFee') }}</span>
+                  <ul>
+                    <li v-for="item in applicationFeeRows" :key="item">{{ item }}</li>
+                  </ul>
+                </div>
+                <div class="application-info-card">
+                  <span>{{ t('university.applicationDocuments') }}</span>
+                  <ul>
+                    <li v-for="item in applicationDocumentRows" :key="item">{{ item }}</li>
+                  </ul>
+                </div>
+                <div class="application-info-card">
+                  <span>{{ t('university.chinaBachelorRequirement') }}</span>
+                  <p>{{ chinaRequirementSummary }}</p>
+                </div>
               </div>
             </article>
-          </div>
 
-          <article class="audit-note-card">
-            <span>{{ t('university.auditNote') }}</span>
-            <p>{{ auditSummary }}</p>
-            <small>{{ sourceSummary }}</small>
-          </article>
-
-          <div class="detail-body">
-            <div class="detail-copy-block">
-              <div class="detail-section-title serif">{{ t('university.introTitle') }}</div>
-              <p>{{ text(detail.description) }}</p>
-              <div v-if="detail.admissionEmail" class="detail-inline-contact">
-                {{ t('university.admissionsPrefix') }}
-                <a :href="`mailto:${detail.admissionEmail}`">{{ detail.admissionEmail }}</a>
-              </div>
-            </div>
-
-            <aside class="section-card detail-side-card">
-              <div class="detail-section-title serif detail-section-title--compact">{{ t('university.officialFeeStatus') }}</div>
-              <div class="detail-tuition-main">{{ tuitionSummary }}</div>
-              <p>{{ tuitionNote }}</p>
-              <div class="detail-program-stats">
-                <div v-for="item in programAuditRows" :key="item.label">
-                  <span>{{ item.label }}</span>
-                  <strong>{{ item.value }}</strong>
-                </div>
-              </div>
-              <div class="detail-side-actions">
-                <button class="btn btn-primary w-full" type="button" @click="setActiveTab('bachelor')">{{ t('university.browseBachelor') }}</button>
-                <a
-                  v-if="detail.officialWebsite || detail.website"
-                  class="btn btn-outline w-full"
-                  :href="detail.officialWebsite || detail.website"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  {{ t('common.visitWebsite') }}
-                </a>
-              </div>
-            </aside>
-          </div>
-        </template>
-
-        <template v-else-if="activeProgramLevel">
-          <div class="programme-block">
-            <div class="programme-table-title">
-              <h2>{{ t('university.programmeHeading', { level: activeProgramLabel }) }}</h2>
-              <span class="programme-count">{{ activePrograms.length }}</span>
-            </div>
-            <div v-if="catalog.errorMessage" class="inline-alert inline-alert--error programme-inline-alert">{{ catalog.errorMessage }}</div>
-            <div v-if="catalog.programLoading" class="section-card empty-state empty-state--loading">{{ t('common.loading') }}</div>
-            <div v-if="activePrograms.length" class="programme-table-wrap">
-              <div class="programme-grid-head">
-                <div>{{ t('university.programmeName') }}</div>
-                <div>{{ t('university.faculty') }}</div>
-                <div>{{ t('university.duration') }}</div>
-                <div>{{ t('university.officialTuition') }}</div>
-                <div>{{ t('university.languageRequirement') }}</div>
-                <div>{{ t('university.intake') }}</div>
-                <div></div>
-              </div>
-              <button
-                v-for="program in activePrograms"
-                :key="program.id"
-                class="programme-grid-row"
-                type="button"
-                @click="openProgram(program)"
-              >
-                <div class="programme-cell" :data-label="t('university.programmeName')">
-                  <div class="programme-name-zh">{{ text(program.name) }}</div>
-                  <div class="programme-name-en">{{ program.nameEnOfficial || program.nameEn }}</div>
-                </div>
-                <div class="programme-cell" :data-label="t('university.faculty')">
-                  <div class="programme-faculty-zh">{{ facultyLabel(program) }}</div>
-                </div>
-                <div class="programme-cell" :data-label="t('university.duration')">
-                  <span class="programme-pill">{{ durationLabel(program) }}</span>
-                </div>
-                <div class="programme-cell" :data-label="t('university.officialTuition')">
-                  <div class="programme-fee-main">{{ tuitionLabel(program) }}</div>
-                  <div class="programme-fee-status" :class="{ review: program.officialFeeAuditStatus !== 'matched-official' }">
-                    {{ feeStatus(program) }}
+            <div class="apply-bottom-grid">
+              <article class="section-card">
+                <div class="detail-section-title serif detail-section-title--compact">{{ t('university.applicationNotes') }}</div>
+                <div class="apply-note-list">
+                  <div>
+                    <span>{{ t('common.officialWebsite') }}</span>
+                    <a :href="detail.officialWebsite || detail.website" target="_blank" rel="noreferrer">
+                      {{ detail.officialWebsite || detail.website || officialConfirmationFallback(currentLocale) }}
+                    </a>
+                  </div>
+                  <div>
+                    <span>{{ t('common.admissionsEmail') }}</span>
+                    <a v-if="detail.admissionEmail" :href="`mailto:${detail.admissionEmail}`">{{ detail.admissionEmail }}</a>
+                    <strong v-else>{{ officialConfirmationFallback(currentLocale) }}</strong>
+                  </div>
+                  <div>
+                    <span>{{ t('university.englishRequirement') }}</span>
+                    <strong>{{ t('university.englishRequirementNote') }}</strong>
                   </div>
                 </div>
-                <div class="programme-cell" :data-label="t('university.languageRequirement')">
-                  <span class="programme-lang-pill">{{ languageLabel(program) }}</span>
-                </div>
-                <div class="programme-cell" :data-label="t('university.intake')">
-                  <div class="programme-intake-cn">{{ intakeLabel(program) }}</div>
-                </div>
-                <div class="programme-cell" :data-label="t('university.detail')">
-                  <span class="programme-detail-link">{{ t('university.detail') }}</span>
-                </div>
-              </button>
-            </div>
-            <div v-else class="section-card empty-state">
-              {{ t('university.noPrograms', { level: activeProgramLabel }) }}
-            </div>
-          </div>
-        </template>
+              </article>
 
-        <template v-else-if="activeTab === 'facilities'">
-          <div class="detail-section-title serif">{{ t('university.facilitiesTab') }}</div>
-          <div class="detail-highlights">
-            <div v-for="item in array(detail.facilities)" :key="item" class="highlight-item highlight-item--facility">
-              <span class="highlight-icon" aria-hidden="true"></span>
-              <span>{{ item }}</span>
+              <article class="section-card apply-planner-card">
+                <div class="detail-section-title serif detail-section-title--compact">{{ t('university.openPlannerTitle') }}</div>
+                <p>{{ t('university.openPlannerBody') }}</p>
+                <button class="btn btn-gold w-full" type="button" @click="goPlanner">{{ t('university.openPlannerAction') }}</button>
+              </article>
             </div>
-          </div>
-        </template>
-
-        <template v-else-if="activeTab === 'apply'">
-          <article class="section-card official-apply-card">
-            <div class="detail-section-title serif">{{ t('university.officialApplicationEntry') }}</div>
-            <div class="official-link-grid">
-              <a
-                v-for="item in sourceLinks"
-                :key="`apply-${item.url}`"
-                :href="item.url"
-                target="_blank"
-                rel="noreferrer"
-                class="official-link-card"
-              >
-                <span>{{ t('common.officialLink') }}</span>
-                <strong>{{ item.label }}</strong>
-                <small>{{ item.url }}</small>
-              </a>
-            </div>
-
-            <div class="official-contact-grid">
-              <div v-for="item in contactRows" :key="`apply-contact-${item.label}`" class="official-profile-item">
-                <span>{{ item.label }}</span>
-                <a :href="item.href" target="_blank" rel="noreferrer">{{ item.value }}</a>
-              </div>
-            </div>
-
-            <div class="application-info-grid">
-              <div class="application-info-card">
-                <span>{{ t('university.applicationPeriod') }}</span>
-                <ul>
-                  <li v-for="item in applicationPeriodRows" :key="item">{{ item }}</li>
-                </ul>
-              </div>
-              <div class="application-info-card">
-                <span>{{ t('university.applicationFee') }}</span>
-                <ul>
-                  <li v-for="item in applicationFeeRows" :key="item">{{ item }}</li>
-                </ul>
-              </div>
-              <div class="application-info-card">
-                <span>{{ t('university.applicationDocuments') }}</span>
-                <ul>
-                  <li v-for="item in applicationDocumentRows" :key="item">{{ item }}</li>
-                </ul>
-              </div>
-              <div class="application-info-card">
-                <span>{{ t('university.chinaBachelorRequirement') }}</span>
-                <p>{{ chinaRequirementSummary }}</p>
-              </div>
-            </div>
-          </article>
-
-          <div class="apply-bottom-grid">
-            <article class="section-card">
-              <div class="detail-section-title serif detail-section-title--compact">{{ t('university.applicationNotes') }}</div>
-              <div class="apply-note-list">
-                <div>
-                  <span>{{ t('common.officialWebsite') }}</span>
-                  <a :href="detail.officialWebsite || detail.website" target="_blank" rel="noreferrer">
-                    {{ detail.officialWebsite || detail.website || officialConfirmationFallback(currentLocale) }}
-                  </a>
-                </div>
-                <div>
-                  <span>{{ t('common.admissionsEmail') }}</span>
-                  <a v-if="detail.admissionEmail" :href="`mailto:${detail.admissionEmail}`">{{ detail.admissionEmail }}</a>
-                  <strong v-else>{{ officialConfirmationFallback(currentLocale) }}</strong>
-                </div>
-                <div>
-                  <span>{{ t('university.englishRequirement') }}</span>
-                  <strong>{{ t('university.englishRequirementNote') }}</strong>
-                </div>
-              </div>
-            </article>
-
-            <article class="section-card apply-planner-card">
-              <div class="detail-section-title serif detail-section-title--compact">{{ t('university.openPlannerTitle') }}</div>
-              <p>{{ t('university.openPlannerBody') }}</p>
-              <button class="btn btn-gold w-full" type="button" @click="goPlanner">{{ t('university.openPlannerAction') }}</button>
-            </article>
-          </div>
+          </template>
         </template>
       </div>
     </section>
@@ -540,8 +545,6 @@ const detailTabs = computed<Array<{ key: DetailTab; label: string }>>(() => [
   { key: "facilities", label: t('university.facilitiesTab') },
   { key: "apply", label: t('university.applyTab') }
 ]);
-const activeTabId = computed(() => tabId(activeTab.value));
-const activePanelId = computed(() => panelId(activeTab.value));
 
 const detail = computed(() => catalog.universityDetail as UniversityDetailView | null);
 const profile = computed(() => asRecord(detail.value?.officialProfile));
