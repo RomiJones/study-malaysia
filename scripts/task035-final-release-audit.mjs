@@ -49,6 +49,7 @@ async function main() {
   await step("start mock API", startMockApi);
   await step("start web app", startWeb);
   await step("audit locale rendering", auditLocales);
+  await step("audit TASK-040 runtime locale switch", auditRuntimeLocaleSwitch);
   await step("audit modal close and localized auth error", auditAuthModal);
   await step("audit mobile layout and asset fallback", auditMobileAndAssets);
 
@@ -187,6 +188,95 @@ async function auditLocales() {
   return results;
 }
 
+async function auditRuntimeLocaleSwitch() {
+  const browser = await chromium.launch({ headless: process.env.STUDYMY_TASK035_HEADED !== "1" });
+  const expectations = {
+    "zh-CN": {
+      filtersTitle: "筛选条件",
+      rankUnlimited: "不限",
+      rankTop100: "前 100",
+      budget30: "≤ CNY 30k",
+      activeTuition: "CNY 0 - 30000",
+      forbidden: []
+    },
+    en: {
+      filtersTitle: "Filter conditions",
+      rankUnlimited: "Unlimited",
+      rankTop100: "Top 100",
+      budget30: "≤ CNY 30k",
+      activeTuition: "0 - 30000 CNY",
+      forbidden: ["筛选条件", "不限", "前 100", "CNY 0 - 30000"]
+    },
+    ms: {
+      filtersTitle: "Syarat tapisan",
+      rankUnlimited: "Tiada had",
+      rankTop100: "100 teratas",
+      budget30: "CNY 30k ke bawah",
+      activeTuition: "CNY 0 hingga 30000",
+      forbidden: ["Filter conditions", "Unlimited", "Top 100", "筛选条件", "不限", "前 100"]
+    },
+    "zh-TW": {
+      filtersTitle: "篩選條件",
+      rankUnlimited: "不限",
+      rankTop100: "前 100",
+      budget30: "≤ CNY 30k",
+      activeTuition: "CNY 0 - 30000",
+      forbidden: ["Filter conditions", "Syarat tapisan", "Unlimited", "Tiada had", "Top 100", "100 teratas"]
+    }
+  };
+  const locales = ["zh-CN", "en", "ms", "zh-TW"];
+  const results = [];
+
+  try {
+    const context = await newContext(browser, "zh-CN", { width: 1440, height: 1000 });
+    const page = await context.newPage();
+    await page.goto(webBaseUrl, { waitUntil: "domcontentloaded" });
+    await page.locator(".filter-panel").waitFor({ timeout: 30_000 });
+    await assertRuntimeLocale(page, "zh-CN", expectations["zh-CN"]);
+
+    await page.locator(".filter-chip--rank").filter({ hasText: expectations["zh-CN"].rankTop100 }).first().click();
+    await page.locator(".filter-chip--budget").filter({ hasText: expectations["zh-CN"].budget30 }).first().click();
+    await assertRuntimeLocale(page, "zh-CN", expectations["zh-CN"], true);
+    await screenshot(page, "runtime-switch-zh-CN.png");
+    results.push({ locale: "zh-CN", status: "passed" });
+
+    for (const locale of locales.slice(1)) {
+      await switchRuntimeLocale(page, locale);
+      await waitForBodyText(page, expectations[locale].filtersTitle);
+      await assertRuntimeLocale(page, locale, expectations[locale], true);
+      await screenshot(page, `runtime-switch-${locale}.png`);
+      results.push({ locale, status: "passed" });
+    }
+
+    await context.close();
+  } finally {
+    await browser.close();
+  }
+
+  return results;
+}
+
+async function assertRuntimeLocale(page, locale, expected, withActiveFilters = false) {
+  const bodyText = await visibleText(page);
+  assert(bodyText.includes(expected.filtersTitle), `${locale} should show localized filter title: ${expected.filtersTitle}`);
+
+  const rankLabels = normalizeLabels(await page.locator(".filter-chip--rank").allTextContents());
+  assert(rankLabels.includes(expected.rankUnlimited), `${locale} should show localized unlimited rank chip; received: ${rankLabels.join(", ")}`);
+  assert(rankLabels.includes(expected.rankTop100), `${locale} should show localized top-rank chip; received: ${rankLabels.join(", ")}`);
+
+  const budgetLabels = normalizeLabels(await page.locator(".filter-chip--budget").allTextContents());
+  assert(budgetLabels.includes(expected.budget30), `${locale} should show localized budget chip; received: ${budgetLabels.join(", ")}`);
+
+  if (withActiveFilters) {
+    assert(bodyText.includes(expected.rankTop100), `${locale} active rank filter should be localized as ${expected.rankTop100}`);
+    assert(bodyText.includes(expected.activeTuition), `${locale} active tuition filter should be localized as ${expected.activeTuition}`);
+  }
+
+  for (const forbidden of expected.forbidden) {
+    assert(!bodyText.includes(forbidden), `${locale} runtime switch should not keep old-language text: ${forbidden}`);
+  }
+}
+
 async function auditAuthModal() {
   const browser = await chromium.launch({ headless: process.env.STUDYMY_TASK035_HEADED !== "1" });
   try {
@@ -252,6 +342,24 @@ async function screenshot(page, filename) {
 
 async function visibleText(page) {
   return page.locator("body").innerText({ timeout: 10_000 });
+}
+
+async function waitForBodyText(page, text) {
+  await page.waitForFunction((expectedText) => document.body.innerText.includes(expectedText), text, { timeout: 10_000 });
+}
+
+async function switchRuntimeLocale(page, locale) {
+  await page.locator(".shell-select").evaluate((element, nextLocale) => {
+    if (!(element instanceof HTMLSelectElement)) {
+      throw new Error("Locale selector is not a select element");
+    }
+    element.value = nextLocale;
+    element.dispatchEvent(new Event("change", { bubbles: true }));
+  }, locale);
+}
+
+function normalizeLabels(values) {
+  return values.map((value) => value.replace(/\s+/g, " ").trim()).filter(Boolean);
 }
 
 async function pageMetrics(page) {

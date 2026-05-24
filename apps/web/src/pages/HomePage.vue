@@ -135,7 +135,7 @@
 
                 <div v-if="group.key === 'budget'" class="budget-filter">
                   <div class="budget-display">
-                    <div class="budget-val">≤ CNY {{ budgetRangeLabel }}</div>
+                    <div class="budget-val">{{ t('home.budgetUpTo', { amount: budgetRangeLabel }) }}</div>
                     <div class="budget-sub">{{ t('home.tuition') }}</div>
                   </div>
                   <input
@@ -294,21 +294,21 @@ const categoryOptions = computed(() => {
     .map(([value, count]) => ({ value, label: `${categoryLabel(value)} (${count})` }));
 });
 
-const rankOptions = [
+const rankOptions = computed(() => [
   { value: null, label: t('home.unlimited') },
-  { value: 100, label: "Top 100" },
-  { value: 200, label: "Top 200" },
-  { value: 300, label: "Top 300" },
-  { value: 500, label: "Top 500" },
-  { value: 800, label: "Top 800" }
-] as const;
+  { value: 100, label: rankTopLabel(100) },
+  { value: 200, label: rankTopLabel(200) },
+  { value: 300, label: rankTopLabel(300) },
+  { value: 500, label: rankTopLabel(500) },
+  { value: 800, label: rankTopLabel(800) }
+] as const);
 
-const budgetOptions = [
-  { value: 30000, label: "≤ CNY 30k" },
-  { value: 50000, label: "≤ CNY 50k" },
-  { value: 80000, label: "≤ CNY 80k" },
-  { value: 120000, label: "≤ CNY 120k" }
-] as const;
+const budgetOptions = computed(() => [
+  { value: 30000, label: budgetUpToLabel(30000) },
+  { value: 50000, label: budgetUpToLabel(50000) },
+  { value: 80000, label: budgetUpToLabel(80000) },
+  { value: 120000, label: budgetUpToLabel(120000) }
+] as const);
 
 const quickTags = computed(() => [
   { type: "category", value: "business", label: t('category.business') },
@@ -333,12 +333,15 @@ const activeFilters = computed(() => {
     items.push({ key: `category:${value}`, label: categoryLabels.get(value) || categoryLabel(value) });
   }
   if (catalog.qsRankMax) {
-    items.push({ key: "qs", label: `Top ${catalog.qsRankMax}` });
+    items.push({ key: "qs", label: rankTopLabel(catalog.qsRankMax) });
   }
   if (catalog.tuitionMin || catalog.tuitionMax) {
     items.push({
       key: "tuition",
-      label: `${catalog.tuitionMin || 0} - ${catalog.tuitionMax || t('home.unlimited')} CNY`
+      label: t('home.tuitionRangeValue', {
+        min: catalog.tuitionMin || 0,
+        max: catalog.tuitionMax || t('home.unlimited')
+      })
     });
   }
   if (catalog.acceptNoLanguage) {
@@ -448,6 +451,14 @@ function setBudgetRange(event: Event) {
 
 function shortBudget(value: number) {
   return `${Math.round(value / 1000)}k`;
+}
+
+function rankTopLabel(rank: number) {
+  return t('home.rankTop', { rank });
+}
+
+function budgetUpToLabel(value: number) {
+  return t('home.budgetUpTo', { amount: shortBudget(value) });
 }
 
 function toggleNoLanguage() {

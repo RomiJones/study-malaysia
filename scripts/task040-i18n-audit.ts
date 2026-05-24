@@ -101,6 +101,35 @@ function checkVisibleHardcodedText() {
   return { scannedFiles: files.length, hardcodedTextCount: 0 };
 }
 
+function checkScriptGeneratedVisibleLabels() {
+  const file = join(webSourceRoot, "pages", "HomePage.vue");
+  const source = readFileSync(file, "utf8");
+  const hits: string[] = [];
+
+  if (!/const\s+rankOptions\s*=\s*computed\s*\(\s*\(\)\s*=>/.test(source)) {
+    hits.push("HomePage rankOptions must be a computed value so labels update after runtime locale switches");
+  }
+  if (!/const\s+budgetOptions\s*=\s*computed\s*\(\s*\(\)\s*=>/.test(source)) {
+    hits.push("HomePage budgetOptions must be a computed value so labels update after runtime locale switches");
+  }
+
+  const forbiddenScriptLabelPatterns = [
+    /label:\s*["'`]Top\s+\d+["'`]/g,
+    /label:\s*["'`]≤\s*CNY\s+\d+k["'`]/g,
+    /label:\s*`Top\s+\$\{[^`]+\}`/g,
+    /label:\s*`\$\{[^`]+}\s*-\s*\$\{[^`]+}\s*CNY`/g
+  ];
+
+  for (const pattern of forbiddenScriptLabelPatterns) {
+    for (const match of source.matchAll(pattern)) {
+      hits.push(`HomePage script-generated visible label must use i18n: ${match[0]}`);
+    }
+  }
+
+  assert(hits.length === 0, `script-generated visible labels found outside i18n bindings:\n${hits.join("\n")}`);
+  return { scannedFiles: 1, hardcodedScriptLabelCount: 0 };
+}
+
 function checkRawApiErrorDisplay() {
   const files = collectFiles(webSourceRoot).filter((file) => /\.(ts|vue)$/.test(file) && !file.endsWith(join("api", "client.ts")));
   const hits: string[] = [];
@@ -208,6 +237,7 @@ const allowedVisibleLiteralPatterns = [
 runCheck("i18n key completeness", checkMessageKeys);
 runCheck("locale fallback boundaries", checkLocaleFallbackBoundaries);
 runCheck("visible hardcoded text scan", checkVisibleHardcodedText);
+runCheck("script-generated visible label scan", checkScriptGeneratedVisibleLabels);
 runCheck("raw API error display scan", checkRawApiErrorDisplay);
 
 console.log(JSON.stringify({
