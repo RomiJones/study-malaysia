@@ -5,6 +5,88 @@ export type SupportedLocale = (typeof SUPPORTED_LOCALES)[number];
 export type LocalizedText = Record<SupportedLocale, string>;
 export type LocalizedStringArray = Record<SupportedLocale, string[]>;
 
+export const LOCAL_STATIC_HTML_ASSET_ROOT = "/assets/static-html";
+export const LOCAL_UNIVERSITY_LOGO_FALLBACK = `${LOCAL_STATIC_HTML_ASSET_ROOT}/fallback-university-logo.svg`;
+export const LOCAL_UNIVERSITY_COVER_PLACEHOLDER = `${LOCAL_STATIC_HTML_ASSET_ROOT}/fallback-university-cover.svg`;
+export const LOCAL_UNIVERSITY_COVER_FALLBACK = `${LOCAL_STATIC_HTML_ASSET_ROOT}/image-photo-1562774053-701939374585-3a3ba5b0250f.jpg`;
+
+const LOCAL_CARD_IMAGE_BY_UNSPLASH_KEY: Record<string, string> = {
+  "photo-1492538368677-f6e0afe31dcc": `${LOCAL_STATIC_HTML_ASSET_ROOT}/card-image-photo-1492538368677-f6e0afe31dcc-884806738b15.jpg`,
+  "photo-1498243691581-b145c3f54a5a": `${LOCAL_STATIC_HTML_ASSET_ROOT}/card-image-photo-1498243691581-b145c3f54a5a-35fe71643bf3.jpg`,
+  "photo-1518611012118-696072aa579a": `${LOCAL_STATIC_HTML_ASSET_ROOT}/card-image-photo-1518611012118-696072aa579a-68870b6b05cf.jpg`,
+  "photo-1519494026892-80bbd2d6fd0d": `${LOCAL_STATIC_HTML_ASSET_ROOT}/card-image-photo-1519494026892-80bbd2d6fd0d-5e203eb940f2.jpg`,
+  "photo-1523240795612-9a054b0db644": `${LOCAL_STATIC_HTML_ASSET_ROOT}/card-image-photo-1523240795612-9a054b0db644-5ad455ba6f2e.jpg`,
+  "photo-1541339907198-e08756dedf3f": `${LOCAL_STATIC_HTML_ASSET_ROOT}/card-image-photo-1541339907198-e08756dedf3f-8421a6bf5c1a.jpg`,
+  "photo-1541339907198-e08756dedf3f|hue=200": `${LOCAL_STATIC_HTML_ASSET_ROOT}/card-image-photo-1541339907198-e08756dedf3f-b620ee0533d9.jpg`,
+  "photo-1562774053-701939374585": `${LOCAL_STATIC_HTML_ASSET_ROOT}/card-image-photo-1562774053-701939374585-81c45bbca274.jpg`,
+  "photo-1568792923760-d70635a89fdc": `${LOCAL_STATIC_HTML_ASSET_ROOT}/card-image-photo-1568792923760-d70635a89fdc-73d28b5b6ef9.jpg`,
+  "photo-1576091160550-2173dba999ef": `${LOCAL_STATIC_HTML_ASSET_ROOT}/card-image-photo-1576091160550-2173dba999ef-c0a784d5b331.jpg`,
+  "photo-1580582932707-520aed937b7b": `${LOCAL_STATIC_HTML_ASSET_ROOT}/card-image-photo-1580582932707-520aed937b7b-4b277f493eec.jpg`,
+  "photo-1580582932707-520aed937b7b|brightness=80": `${LOCAL_STATIC_HTML_ASSET_ROOT}/card-image-photo-1580582932707-520aed937b7b-e8fb83c01fc9.jpg`,
+  "photo-1580582932707-520aed937b7b|hue=120": `${LOCAL_STATIC_HTML_ASSET_ROOT}/card-image-photo-1580582932707-520aed937b7b-ce76cc39bd61.jpg`,
+  "photo-1581091226825-a6a2a5aee158": `${LOCAL_STATIC_HTML_ASSET_ROOT}/card-image-photo-1581091226825-a6a2a5aee158-6352f726081d.jpg`,
+  "photo-1593079831268-3381b0db4a77": `${LOCAL_STATIC_HTML_ASSET_ROOT}/card-image-photo-1593079831268-3381b0db4a77-076cab005287.jpg`,
+  "photo-1607237138185-eedd9c632b0b": `${LOCAL_STATIC_HTML_ASSET_ROOT}/card-image-photo-1607237138185-eedd9c632b0b-8554be173a93.jpg`,
+  "photo-1607237138185-eedd9c632b0b|sat=-20": `${LOCAL_STATIC_HTML_ASSET_ROOT}/card-image-photo-1607237138185-eedd9c632b0b-a31f29138620.jpg`
+};
+
+export function isLocalPublicAssetUrl(value: string | null | undefined): boolean {
+  const url = String(value || "").trim();
+  return url.startsWith(`${LOCAL_STATIC_HTML_ASSET_ROOT}/`) || url.startsWith("data:image/");
+}
+
+export function isExternalImageUrl(value: string | null | undefined): boolean {
+  const url = String(value || "").trim();
+  return /^https?:\/\//i.test(url);
+}
+
+export function localizeUniversityLogoUrl(value: string | null | undefined): string {
+  const url = String(value || "").trim();
+  if (isLocalPublicAssetUrl(url)) return url;
+  return LOCAL_UNIVERSITY_LOGO_FALLBACK;
+}
+
+export function localizeUniversityImageUrl(value: string | null | undefined): string {
+  const url = String(value || "").trim();
+  if (isLocalPublicAssetUrl(url)) return url;
+
+  const unsplashKey = getUnsplashAssetKey(url);
+  if (unsplashKey) {
+    return LOCAL_CARD_IMAGE_BY_UNSPLASH_KEY[unsplashKey] ||
+      LOCAL_CARD_IMAGE_BY_UNSPLASH_KEY[unsplashKey.split("|")[0]] ||
+      LOCAL_UNIVERSITY_COVER_FALLBACK;
+  }
+
+  return LOCAL_UNIVERSITY_COVER_FALLBACK;
+}
+
+export function localizeUniversityImageFields<T extends { logoUrl?: string; imageUrl?: string }>(item: T): T {
+  return {
+    ...item,
+    logoUrl: localizeUniversityLogoUrl(item.logoUrl),
+    imageUrl: localizeUniversityImageUrl(item.imageUrl)
+  };
+}
+
+function getUnsplashAssetKey(value: string): string {
+  try {
+    const url = new URL(value);
+    const match = url.pathname.match(/\/(photo-[a-z0-9-]+)/i);
+    if (!match) return "";
+    const variant = ["sat", "hue", "brightness"]
+      .map((key) => {
+        const param = url.searchParams.get(key);
+        return param ? `${key}=${param}` : "";
+      })
+      .filter(Boolean)
+      .join("&");
+    return variant ? `${match[1]}|${variant}` : match[1];
+  } catch {
+    const match = value.match(/photo-[a-z0-9-]+/i);
+    return match?.[0] || "";
+  }
+}
+
 export type DegreeLevel = "bachelor" | "master" | "phd";
 export type CoreProgramCategory =
   | "business"

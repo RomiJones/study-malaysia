@@ -27,6 +27,8 @@
     "extract:static-assets": "node scripts/task036-extract-static-html-assets.mjs",
     "verify:static-assets": "node scripts/task036-verify-static-html-assets.mjs",
     "verify:static-assets:browser": "node scripts/task036-browser-verify-static-html-assets.mjs",
+    "verify:task037:images": "node scripts/task037-verify-user-image-fields.mjs",
+    "verify:task037:browser": "node scripts/task037-user-image-screenshots.mjs",
     "seed": "npm --workspace @studymy/api run seed",
     "extract:static": "npm --workspace @studymy/api run extract:static",
     "import:static": "npm --workspace @studymy/api run import:static",

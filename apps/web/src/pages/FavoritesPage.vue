@@ -26,7 +26,16 @@
         <div class="favorite-university-grid">
           <article v-for="item in favoriteUniversities" :key="item.id" class="favorite-university-card">
             <div class="favorite-university-card__top">
-              <img class="favorite-university-card__logo" :src="item.logoUrl" :alt="text(item.name)" @error="hideBrokenImage" />
+              <img
+                v-if="item.logoUrl && !brokenLogoIds.has(item.id)"
+                class="favorite-university-card__logo"
+                :src="item.logoUrl"
+                :alt="text(item.name)"
+                @error="markBrokenLogo(item.id)"
+              />
+              <div v-else class="favorite-university-card__logo favorite-university-card__logo--fallback" aria-hidden="true">
+                {{ item.shortName.slice(0, 3) }}
+              </div>
               <div class="favorite-university-card__copy">
                 <h3>{{ text(item.name) }}</h3>
                 <p>QS #{{ item.qsRank }} · {{ text(item.location) }}</p>
@@ -68,7 +77,7 @@
 </template>
 
 <script setup lang="ts">
-import { computed, onMounted } from "vue";
+import { computed, onMounted, ref } from "vue";
 import { RouterLink } from "vue-router";
 import { useI18n } from "vue-i18n";
 import { useLocaleText } from "../composables/useLocaleText";
@@ -80,6 +89,7 @@ const catalog = useCatalogStore();
 const session = useSessionStore();
 const { t } = useI18n();
 const { text } = useLocaleText();
+const brokenLogoIds = ref(new Set<number>());
 
 const favoriteUniversities = computed(() => catalog.universities.filter((item) => catalog.favoriteState.universities.includes(item.id)));
 const favoritePrograms = computed(() => catalog.programs.filter((item) => catalog.favoriteState.programs.includes(item.id)));
@@ -88,8 +98,7 @@ onMounted(async () => {
   if (!catalog.universities.length || !catalog.programs.length) await catalog.loadUniversities().catch(() => undefined);
 });
 
-function hideBrokenImage(event: Event) {
-  const target = event.target;
-  if (target instanceof HTMLImageElement) target.style.display = "none";
+function markBrokenLogo(id: number) {
+  brokenLogoIds.value = new Set([...brokenLogoIds.value, id]);
 }
 </script>

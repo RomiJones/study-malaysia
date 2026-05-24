@@ -26,6 +26,12 @@
               <th class="compare-label-col">{{ t('comparePage.dimension') }}</th>
               <th v-for="item in compareUniversities" :key="item.id">
                 <div class="compare-head-cell">
+                  <img
+                    class="compare-head-logo"
+                    :src="item.logoUrl || LOCAL_UNIVERSITY_LOGO_FALLBACK"
+                    :alt="item.shortName"
+                    @error="replaceBrokenLogo"
+                  />
                   <div>
                     <div class="compare-head-name">{{ text(item.name) }}</div>
                     <div class="compare-head-sub">QS #{{ item.qsRank }} · {{ item.shortName }}</div>
@@ -56,7 +62,7 @@
 
 <script setup lang="ts">
 import { computed } from "vue";
-import type { UniversityListItem } from "@studymy/shared";
+import { LOCAL_UNIVERSITY_LOGO_FALLBACK, type UniversityListItem } from "@studymy/shared";
 import { RouterLink } from "vue-router";
 import { useI18n } from "vue-i18n";
 import { useLocaleText } from "../composables/useLocaleText";
@@ -94,4 +100,15 @@ const rows = computed(() => [
   { key: "certified", label: t('comparePage.certification'), value: (item: UniversityListItem) => item.csrCertified ? t('common.yes') : t('common.no') },
   { key: "detail", label: t('comparePage.action'), value: () => t('common.viewDetails') }
 ]);
+
+function replaceBrokenLogo(event: Event) {
+  const target = event.target;
+  if (!(target instanceof HTMLImageElement)) return;
+  if (target.dataset.fallbackApplied) {
+    target.style.display = "none";
+    return;
+  }
+  target.dataset.fallbackApplied = "true";
+  target.src = LOCAL_UNIVERSITY_LOGO_FALLBACK;
+}
 </script>

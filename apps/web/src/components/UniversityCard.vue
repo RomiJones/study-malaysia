@@ -21,6 +21,9 @@
           <div v-if="university.logoUrl && !hasLogoError" class="university-card__logo-wrap">
             <img :src="university.logoUrl" :alt="university.shortName" class="university-card__logo" @error="hideBrokenLogo" />
           </div>
+          <div v-else class="university-card__logo-wrap" aria-hidden="true">
+            <div class="university-card__logo university-card__logo--fallback">{{ university.shortName.slice(0, 3) }}</div>
+          </div>
           <div class="university-card__info">
             <div class="university-card__code">{{ university.shortName }} / {{ university.code }}</div>
             <div class="university-card__meta-row">

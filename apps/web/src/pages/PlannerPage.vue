@@ -67,6 +67,12 @@
             :to="`/universities/${item.university.slug}?program=${item.program.id}`"
           >
             <div class="rec-score">{{ item.score }}</div>
+            <img
+              class="rec-card__logo"
+              :src="item.university.logoUrl || LOCAL_UNIVERSITY_LOGO_FALLBACK"
+              :alt="item.university.shortName"
+              @error="replaceBrokenLogo"
+            />
             <div class="rec-card__body">
               <div class="rec-card__title">{{ text(item.program.name) }}</div>
               <div class="rec-card__meta">{{ text(item.university.name) }} · QS #{{ item.university.qsRank }}</div>
@@ -217,7 +223,7 @@
 import { computed, onMounted, reactive, ref, watch } from "vue";
 import { RouterLink } from "vue-router";
 import { useI18n } from "vue-i18n";
-import type { ApplicationStage, DegreeLevel, MaterialStatus } from "@studymy/shared";
+import { LOCAL_UNIVERSITY_LOGO_FALLBACK, type ApplicationStage, type DegreeLevel, type MaterialStatus } from "@studymy/shared";
 import { useLocaleText } from "../composables/useLocaleText";
 import { useCatalogStore } from "../stores/catalog";
 import { usePlannerStore } from "../stores/planner";
@@ -343,5 +349,16 @@ function annualCost(universityId: number, programId: number) {
   const program = catalog.programs.find((item) => item.id === programId);
   if (!university || !program) return officialConfirmationFallback(currentLocale.value);
   return `CNY ${formatCurrency(university.livingCostCny + program.annualTuitionCny)}${t('common.perYear')}`;
+}
+
+function replaceBrokenLogo(event: Event) {
+  const target = event.target;
+  if (!(target instanceof HTMLImageElement)) return;
+  if (target.dataset.fallbackApplied) {
+    target.style.display = "none";
+    return;
+  }
+  target.dataset.fallbackApplied = "true";
+  target.src = LOCAL_UNIVERSITY_LOGO_FALLBACK;
 }
 </script>

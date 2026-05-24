@@ -1,19 +1,21 @@
 import { createHash } from "node:crypto";
 import { existsSync, readFileSync } from "node:fs";
-import type {
-  DegreeLevel,
-  FeeAuditStatus,
-  InstitutionOwnership,
-  InstitutionType,
-  LanguageRequirement,
-  LocalizedStringArray,
-  LocalizedText,
-  OfficialSourceLink,
-  OfficialSourceStatus,
-  ProgramCategoryCode,
-  ProgramRequirement,
-  PublicDisplayStatus,
-  TuitionCurrency
+import {
+  localizeUniversityImageUrl,
+  localizeUniversityLogoUrl,
+  type DegreeLevel,
+  type FeeAuditStatus,
+  type InstitutionOwnership,
+  type InstitutionType,
+  type LanguageRequirement,
+  type LocalizedStringArray,
+  type LocalizedText,
+  type OfficialSourceLink,
+  type OfficialSourceStatus,
+  type ProgramCategoryCode,
+  type ProgramRequirement,
+  type PublicDisplayStatus,
+  type TuitionCurrency
 } from "@studymy/shared";
 
 export const DEFAULT_STATIC_HTML_PATH = "D:/mydev/StudyMY_UM_v58_na_display_tidy.html";
@@ -670,8 +672,8 @@ function mapUniversityRecord(raw: RawUniversity, usedCodes: Set<string>, usedSlu
     code,
     name: localizedText(nameEnOfficial, nameZh || nameEnOfficial),
     shortName,
-    logoUrl: readString(raw, "logo") || readString(raw, "logoUrl"),
-    imageUrl: readString(raw, "image") || readString(raw, "imageUrl"),
+    logoUrl: localizeUniversityLogoUrl(readString(raw, "logo") || readString(raw, "logoUrl")),
+    imageUrl: localizeUniversityImageUrl(readString(raw, "image") || readString(raw, "imageUrl")),
     color: readString(raw, "color") || "#1B7A72",
     qsRank: readNumber(raw, "qsRank", 0),
     qsAsiaRank: hasValue(raw.qsAsiaRank) ? readNumber(raw, "qsAsiaRank", 0) : null,

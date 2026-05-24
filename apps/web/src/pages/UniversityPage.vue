@@ -8,12 +8,15 @@
 
         <div class="detail-hero-main">
           <img
-            v-if="detail.logoUrl"
+            v-if="detail.logoUrl && !hasHeroLogoError"
             class="detail-hero-logo"
             :src="detail.logoUrl"
             :alt="detail.shortName"
             @error="hideBrokenImage"
           >
+          <div v-else class="detail-hero-logo detail-hero-logo--fallback" aria-hidden="true">
+            {{ detail.shortName.slice(0, 3) }}
+          </div>
           <div class="detail-hero-heading">
             <div class="detail-hero-badges">
               <span class="chip" :class="detail.ownership === 'public' ? 'chip-blue' : 'chip-gold'">
@@ -505,6 +508,7 @@ const { t, tm } = useI18n();
 const { currentLocale, text, array } = useLocaleText();
 const planner = usePlannerStore();
 const activeTab = ref<DetailTab>("overview");
+const hasHeroLogoError = ref(false);
 
 const detailTabs = computed<Array<{ key: DetailTab; label: string }>>(() => [
   { key: "overview", label: t('university.overviewTab') },
@@ -735,7 +739,7 @@ function goPlanner() {
 
 function hideBrokenImage(event: Event) {
   const target = event.target;
-  if (target instanceof HTMLImageElement) target.style.display = "none";
+  if (target instanceof HTMLImageElement) hasHeroLogoError.value = true;
 }
 
 async function goPlannerWithProgram() {
@@ -999,7 +1003,12 @@ onMounted(() => {
 
 watch(() => props.slug, () => {
   activeTab.value = "overview";
+  hasHeroLogoError.value = false;
   catalog.closeProgramDetail();
   void loadDetail();
+});
+
+watch(() => detail.value?.logoUrl, () => {
+  hasHeroLogoError.value = false;
 });
 </script>

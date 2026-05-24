@@ -954,7 +954,7 @@ img {
   position: absolute;
   inset: 0;
   opacity: 0.03;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-image: url("/assets/static-html/css-background-data-image-7faa2fc18780-7faa2fc18780.svg");
   background-size: 200px;
 }
 
@@ -1983,6 +1983,18 @@ label.lbl {
   object-fit: contain;
 }
 
+.university-card__logo--fallback,
+.favorite-university-card__logo--fallback {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #8a6a10;
+  background: var(--gold-lt);
+  font-size: 11px;
+  font-weight: 900;
+  line-height: 1;
+}
+
 .university-card__info {
   min-width: 0;
 }
@@ -2591,6 +2603,16 @@ label.lbl {
   background: #fff;
   object-fit: contain;
   padding: 6px;
+}
+
+.detail-hero-logo--fallback {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #8a6a10;
+  background: var(--gold-lt);
+  font-size: 13px;
+  font-weight: 900;
 }
 
 .detail-hero-heading {
@@ -3374,6 +3396,22 @@ label.lbl {
   gap: 12px;
 }
 
+.compare-head-logo {
+  width: 36px;
+  height: 36px;
+  flex: 0 0 36px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--paper);
+  padding: 4px;
+  object-fit: contain;
+}
+
+.compare-head-cell > div {
+  min-width: 0;
+  flex: 1;
+}
+
 .compare-head-name {
   color: var(--ink);
   font-family: "DM Serif Display", Georgia, serif;
@@ -3891,6 +3929,17 @@ label.lbl {
   color: var(--gold);
   font-family: "DM Serif Display", Georgia, serif;
   font-size: 20px;
+}
+
+.rec-card__logo {
+  width: 40px;
+  height: 40px;
+  flex: 0 0 40px;
+  border: 1px solid var(--border);
+  border-radius: var(--r-sm);
+  background: var(--paper);
+  padding: 4px;
+  object-fit: contain;
 }
 
 .rec-card__body {

@@ -1,7 +1,8 @@
 import "reflect-metadata";
 import { describe, test } from "node:test";
 import assert from "node:assert/strict";
-import { isReadyForPublicCatalog, mapProgram, normalizePublicDisplayStatus } from "../../apps/api/src/common/mappers.ts";
+import { LOCAL_UNIVERSITY_COVER_FALLBACK, LOCAL_UNIVERSITY_LOGO_FALLBACK } from "../../packages/shared/src/index.ts";
+import { isReadyForPublicCatalog, mapProgram, mapUniversity, normalizePublicDisplayStatus } from "../../apps/api/src/common/mappers.ts";
 
 function text(en: string, zh = en) {
   return { en, ms: en, "zh-CN": zh, "zh-TW": zh };
@@ -82,5 +83,116 @@ describe("API mappers", () => {
     assert.equal(mapped.requirementInfo.chinaStudentRequirement, "Bachelor diploma and transcript");
     assert.equal(mapped.sourceUrls.filter((item) => item.url === "https://example.edu/fees").length, 1);
     assert.equal(mapped.sourceUrls.some((item) => item.url === "https://example.edu/program"), true);
+  });
+
+  test("localizes public university image fields before API responses", () => {
+    const mapped = mapUniversity({
+      id: 1,
+      slug: "universiti-malaya",
+      code: "UM",
+      name: text("Universiti Malaya", "马来亚大学"),
+      shortName: "UM",
+      nameEnOfficial: "Universiti Malaya",
+      logoUrl: "https://upload.wikimedia.org/wikipedia/en/thumb/f/f9/University_of_Malaya_coat_of_arms.svg/200px-University_of_Malaya_coat_of_arms.svg.png",
+      imageUrl: "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=1200&h=800&fit=crop",
+      color: "#003DA5",
+      qsRank: 60,
+      qsAsiaRank: 12,
+      location: text("Kuala Lumpur", "吉隆坡"),
+      region: text("Kuala Lumpur", "吉隆坡"),
+      ownership: "public",
+      institutionType: "research",
+      foundedYear: 1905,
+      students: 30000,
+      intlStudents: 6200,
+      csrCertified: true,
+      description: text("Research university", "研究型大学"),
+      website: "https://www.um.edu.my",
+      admissionEmail: "study@um.edu.my",
+      officialWebsite: "https://www.um.edu.my",
+      studyPortalUrl: "",
+      internationalPageUrl: "",
+      applicationPortalUrl: "",
+      officialAddress: "",
+      applicationPeriods: [],
+      applicationFees: [],
+      applicationDocuments: list(),
+      chinaStudentRequirements: list(),
+      officialProfile: null,
+      officialSources: [],
+      officialVerifiedAt: "2026-05-23",
+      officialSourceStatus: "official-verified",
+      officialAuditSummary: "",
+      publicDisplayStatus: "ready",
+      livingCostOfficialNote: "",
+      tuitionMinCny: 30000,
+      tuitionMaxCny: 90000,
+      livingCostCny: 30000,
+      minIelts: 5.5,
+      acceptNoLanguage: false,
+      facilities: list(["Library"]),
+      highlights: list(["Official source verified"]),
+      programCount: 0,
+      isPublished: true
+    } as any);
+
+    assert.equal(mapped.logoUrl, LOCAL_UNIVERSITY_LOGO_FALLBACK);
+    assert.match(mapped.imageUrl, /^\/assets\/static-html\/card-image-photo-1541339907198-e08756dedf3f-/);
+    assert.equal(mapped.imageUrl.startsWith("https://"), false);
+  });
+
+  test("falls back failed static html image fields to local cover asset", () => {
+    const mapped = mapUniversity({
+      id: 2,
+      slug: "taylors-university",
+      code: "TAYLORS",
+      name: text("Taylor's University", "泰莱大学"),
+      shortName: "Taylor's",
+      logoUrl: "",
+      imageUrl: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=1200&h=800&fit=crop",
+      color: "#E91E63",
+      qsRank: 253,
+      qsAsiaRank: 41,
+      location: text("Subang Jaya", "梳邦再也"),
+      region: text("Selangor", "雪兰莪"),
+      ownership: "private",
+      institutionType: "comprehensive",
+      foundedYear: 1969,
+      students: 20000,
+      intlStudents: 6000,
+      csrCertified: true,
+      description: text("Private university", "私立大学"),
+      website: "https://university.taylors.edu.my",
+      admissionEmail: "admissions@taylors.edu.my",
+      nameEnOfficial: "Taylor's University",
+      officialWebsite: "https://university.taylors.edu.my",
+      studyPortalUrl: "",
+      internationalPageUrl: "",
+      applicationPortalUrl: "",
+      officialAddress: "",
+      applicationPeriods: [],
+      applicationFees: [],
+      applicationDocuments: list(),
+      chinaStudentRequirements: list(),
+      officialProfile: null,
+      officialSources: [],
+      officialVerifiedAt: "2026-05-23",
+      officialSourceStatus: "official-verified",
+      officialAuditSummary: "",
+      publicDisplayStatus: "ready",
+      livingCostOfficialNote: "",
+      tuitionMinCny: 42000,
+      tuitionMaxCny: 108000,
+      livingCostCny: 32000,
+      minIelts: 5,
+      acceptNoLanguage: true,
+      facilities: list(["Campus"]),
+      highlights: list(["Private university"]),
+      programCount: 0,
+      isPublished: true
+    } as any);
+
+    assert.equal(mapped.logoUrl, LOCAL_UNIVERSITY_LOGO_FALLBACK);
+    assert.equal(mapped.imageUrl, LOCAL_UNIVERSITY_COVER_FALLBACK);
   });
 });

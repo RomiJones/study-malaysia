@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-label="StudyMY university logo fallback">
+  <rect width="96" height="96" rx="18" fill="#FAFAF8"/>
+  <rect x="8" y="8" width="80" height="80" rx="14" fill="#0C0E1A"/>
+  <path d="M48 18 72 30v16c0 16.8-9.8 27.5-24 34-14.2-6.5-24-17.2-24-34V30l24-12Z" fill="#C8A84B"/>
+  <path d="M34 43h28v6H34v-6Zm4 12h20v5H38v-5Z" fill="#0C0E1A"/>
+  <path d="M48 27 33 35l15 8 15-8-15-8Z" fill="#FAFAF8"/>
+</svg>

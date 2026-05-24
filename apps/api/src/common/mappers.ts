@@ -1,18 +1,20 @@
-import type {
-  FeeAuditStatus,
-  LocalizedStringArray,
-  OfficialSourceLink,
-  PlannerApplicationItem,
-  PlannerMaterialItem,
-  PlannerProfile,
-  PlannerVisaChecklist,
-  ProgramListItem,
-  PublicDisplayStatus,
-  RecommendationResult,
-  RequirementInfo,
-  TuitionCurrency,
-  TuitionInfo,
-  UniversityListItem
+import {
+  localizeUniversityImageUrl,
+  localizeUniversityLogoUrl,
+  type FeeAuditStatus,
+  type LocalizedStringArray,
+  type OfficialSourceLink,
+  type PlannerApplicationItem,
+  type PlannerMaterialItem,
+  type PlannerProfile,
+  type PlannerVisaChecklist,
+  type ProgramListItem,
+  type PublicDisplayStatus,
+  type RecommendationResult,
+  type RequirementInfo,
+  type TuitionCurrency,
+  type TuitionInfo,
+  type UniversityListItem
 } from "@studymy/shared";
 import { translateArray } from "./i18n.js";
 import {
@@ -80,8 +82,8 @@ export function mapUniversity(entity: UniversityEntity): UniversityListItem {
     name: entity.name,
     shortName: entity.shortName,
     nameEn: entity.name.en,
-    logoUrl: entity.logoUrl,
-    imageUrl: entity.imageUrl,
+    logoUrl: localizeUniversityLogoUrl(entity.logoUrl),
+    imageUrl: localizeUniversityImageUrl(entity.imageUrl),
     color: entity.color,
     qsRank: entity.qsRank,
     qsAsiaRank: entity.qsAsiaRank,
