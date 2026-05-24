@@ -1,0 +1,2528 @@
+{
+  "version": 1,
+  "projectRoot": "D:\\mydev\\study-malaysia",
+  "updatedAt": "2026-05-24T22:31:39+08:00",
+  "issues": [
+    {
+      "issueId": "TASK-030-REV-001",
+      "taskId": "TASK-030",
+      "taskTitle": "前端中英文翻译和页面文案统一修复",
+      "runId": "TASK-030-2026-05-23T19-54-53-237Z-REVIEW",
+      "category": "i18n",
+      "severity": "high",
+      "status": "fixed",
+      "title": "动态专业方向未本地化并暴露缺失 i18n key",
+      "description": "首页筛选和专业详情仍直接显示后端 category 原值。中文页面可见 Clinical Medicine、Education 等英文专业方向；专业详情页会显示 category.Clinical Medicine，并触发 vue-i18n missing key warning。相关逻辑位于 HomePage.vue:533、PlannerPage.vue:288、UniversityPage.vue:751 和 ProgramPage.vue:101。",
+      "affectedFiles": [
+        "apps/web/src/pages/HomePage.vue",
+        "apps/web/src/pages/PlannerPage.vue",
+        "apps/web/src/pages/UniversityPage.vue",
+        "apps/web/src/pages/ProgramPage.vue",
+        "apps/web/src/i18n/messages.ts"
+      ],
+      "affectedPages": [
+        "http://127.0.0.1:5180/",
+        "http://127.0.0.1:5180/planner",
+        "http://127.0.0.1:5180/universities/universiti-malaya-um",
+        "http://127.0.0.1:5180/programs/universiti-malaya-um-master-of-cardiothoracic-surgery-959031"
+      ],
+      "affectedCommands": [
+        "Playwright 四语言浏览器抽查"
+      ],
+      "reproductionSteps": [
+        "启动用户端并连接本地 API。",
+        "切换到 zh-CN 或 zh-TW，打开首页筛选区。",
+        "查看“专业方向”筛选项，可见 Clinical Medicine、Education 等非当前语言标签。",
+        "打开 /programs/universiti-malaya-um-master-of-cardiothoracic-surgery-959031。",
+        "页面显示 category.Clinical Medicine，控制台出现 Not found 'category.Clinical Medicine' key。"
+      ],
+      "suggestedFix": "建立覆盖真实后端 category 值的统一本地化映射或让 API 返回 category label 的 LocalizedText。所有 categoryLabel 调用改用同一个 formatter，禁止用 t(`category.${rawCategory}`) 直接拼接动态 key；补测试覆盖 Clinical Medicine、Education、Arts and Social Sciences 等真实分类。",
+      "autoFixable": true,
+      "confidence": "high",
+      "firstSeenAt": "2026-05-23T20:13:51.315Z",
+      "lastSeenAt": "2026-05-23T20:13:51.329Z",
+      "fixAttempts": 1,
+      "signature": "ea57fa8090",
+      "promptPath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-030-2026-05-23T19-54-53-237Z-REVIEW.prompt.md",
+      "logPath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-030-2026-05-23T19-54-53-237Z-REVIEW.codex.log",
+      "lastMessagePath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-030-2026-05-23T19-54-53-237Z-REVIEW.last-message.txt",
+      "notes": "已修复动态专业方向本地化、英文/马来文页面中文动态内容泄漏、繁体动态内容简体残留。新增统一 category formatter、动态文本安全回退与真实样本测试；Notion 未更新，未触碰既有 docs/notion-snapshot 外部变更。",
+      "fixedAt": "2026-05-23T20:32:02.281Z",
+      "resolvedByRunId": "TASK-030-2026-05-23T20-13-51-326Z-FIX-REVIEW"
+    },
+    {
+      "issueId": "TASK-030-REV-002",
+      "taskId": "TASK-030",
+      "taskTitle": "前端中英文翻译和页面文案统一修复",
+      "runId": "TASK-030-2026-05-23T19-54-53-237Z-REVIEW",
+      "category": "i18n",
+      "severity": "high",
+      "status": "fixed",
+      "title": "英文和马来文详情页仍渲染中文动态内容",
+      "description": "英文和马来文的院校详情、专业详情仍会显示中文数据字段。例如英文/马来文院校详情显示“吉隆坡”“超过 27,000 名学生”；专业详情英文/马来文显示中文专业描述和中文申请要求。这违反四语言切换后不得出现非当前语言界面文案的验收要求。",
+      "affectedFiles": [
+        "apps/web/src/composables/useLocaleText.ts",
+        "apps/web/src/pages/UniversityPage.vue",
+        "apps/web/src/pages/ProgramPage.vue",
+        "apps/web/src/utils/format.ts",
+        "apps/api"
+      ],
+      "affectedPages": [
+        "http://127.0.0.1:5180/universities/universiti-malaya-um",
+        "http://127.0.0.1:5180/programs/universiti-malaya-um-master-of-cardiothoracic-surgery-959031"
+      ],
+      "affectedCommands": [
+        "Playwright 四语言浏览器抽查"
+      ],
+      "reproductionSteps": [
+        "切换到 en 或 ms。",
+        "打开 /universities/universiti-malaya-um。",
+        "详情页关键字段中可见中文地点和规模文本。",
+        "打开 /programs/universiti-malaya-um-master-of-cardiothoracic-surgery-959031。",
+        "页面描述、申请要求中可见中文段落。"
+      ],
+      "suggestedFix": "优先在数据导入/API 层补齐 en、ms 字段；前端补一道防线：当 en/ms 字段含中文且存在官方英文字段时使用官方英文字段，否则显示当前语言的“以官方页面为准/待官方确认”类 fallback，不能把中文内容渲染到英文或马来文界面。",
+      "autoFixable": true,
+      "confidence": "high",
+      "firstSeenAt": "2026-05-23T20:13:51.315Z",
+      "lastSeenAt": "2026-05-23T20:13:51.329Z",
+      "fixAttempts": 1,
+      "signature": "c89a50a4c6",
+      "promptPath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-030-2026-05-23T19-54-53-237Z-REVIEW.prompt.md",
+      "logPath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-030-2026-05-23T19-54-53-237Z-REVIEW.codex.log",
+      "lastMessagePath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-030-2026-05-23T19-54-53-237Z-REVIEW.last-message.txt",
+      "notes": "已修复动态专业方向本地化、英文/马来文页面中文动态内容泄漏、繁体动态内容简体残留。新增统一 category formatter、动态文本安全回退与真实样本测试；Notion 未更新，未触碰既有 docs/notion-snapshot 外部变更。",
+      "fixedAt": "2026-05-23T20:32:02.281Z",
+      "resolvedByRunId": "TASK-030-2026-05-23T20-13-51-326Z-FIX-REVIEW"
+    },
+    {
+      "issueId": "TASK-030-REV-003",
+      "taskId": "TASK-030",
+      "taskTitle": "前端中英文翻译和页面文案统一修复",
+      "runId": "TASK-030-2026-05-23T19-54-53-237Z-REVIEW",
+      "category": "i18n",
+      "severity": "medium",
+      "status": "fixed",
+      "title": "繁体转换覆盖不完整，动态内容残留简体字",
+      "description": "新增的手写 toTraditionalText 对静态 messages 有效，但动态数据仍有未转换简体字。繁体专业详情中出现“临床”“执业”等简体残留，例如“心胸外科學临床型碩士”“醫學执業註冊資格”。",
+      "affectedFiles": [
+        "apps/web/src/i18n/localeTransforms.ts",
+        "apps/web/src/composables/useLocaleText.ts",
+        "apps/web/src/utils/format.ts",
+        "apps/web/src/pages/ProgramPage.vue"
+      ],
+      "affectedPages": [
+        "http://127.0.0.1:5180/programs/universiti-malaya-um-master-of-cardiothoracic-surgery-959031"
+      ],
+      "affectedCommands": [
+        "Playwright 四语言浏览器抽查"
+      ],
+      "reproductionSteps": [
+        "切换到 zh-TW。",
+        "打开 /programs/universiti-malaya-um-master-of-cardiothoracic-surgery-959031。",
+        "查看专业标题下方描述和申请要求，可见“临床”“执业”等简体字。"
+      ],
+      "suggestedFix": "不要依赖不完整的手写字符表作为动态数据转换主方案。引入可靠的简繁转换方案，或至少补齐真实数据集中命中的简体字并增加浏览器/数据样本测试，覆盖专业描述、申请要求、院校规模、地点等动态字段。",
+      "autoFixable": true,
+      "confidence": "high",
+      "firstSeenAt": "2026-05-23T20:13:51.315Z",
+      "lastSeenAt": "2026-05-23T20:13:51.329Z",
+      "fixAttempts": 1,
+      "signature": "0661d1348a",
+      "promptPath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-030-2026-05-23T19-54-53-237Z-REVIEW.prompt.md",
+      "logPath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-030-2026-05-23T19-54-53-237Z-REVIEW.codex.log",
+      "lastMessagePath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-030-2026-05-23T19-54-53-237Z-REVIEW.last-message.txt",
+      "notes": "已修复动态专业方向本地化、英文/马来文页面中文动态内容泄漏、繁体动态内容简体残留。新增统一 category formatter、动态文本安全回退与真实样本测试；Notion 未更新，未触碰既有 docs/notion-snapshot 外部变更。",
+      "fixedAt": "2026-05-23T20:32:02.281Z",
+      "resolvedByRunId": "TASK-030-2026-05-23T20-13-51-326Z-FIX-REVIEW"
+    },
+    {
+      "issueId": "TASK-030-REV-004",
+      "taskId": "TASK-030",
+      "taskTitle": "前端中英文翻译和页面文案统一修复",
+      "runId": "TASK-030-2026-05-23T20-32-02-299Z-REVIEW",
+      "category": "i18n",
+      "severity": "high",
+      "status": "fixed",
+      "title": "院校详情专业列表仍直接渲染中文院系名",
+      "description": "apps/web/src/pages/UniversityPage.vue:199 使用 `program.facultyZh || text(program.faculty) || categoryLabel(program.category)`，会优先渲染中文字段，绕过 `cleanDisplayText`、`pickLocaleText` 和繁体转换。浏览器抽查中，en 和 ms 页面专业列表显示“医学院”“教育学院”；zh-TW 页面也显示简体“医学院”，没有转换为繁体。",
+      "affectedFiles": [
+        "apps/web/src/pages/UniversityPage.vue",
+        "tests/web/format.test.ts"
+      ],
+      "affectedPages": [
+        "http://127.0.0.1:5185/universities/universiti-malaya-um",
+        "/universities/:slug 的 bachelor/master/phd 专业列表 tab"
+      ],
+      "affectedCommands": [
+        "Playwright 四语言浏览器抽查"
+      ],
+      "reproductionSteps": [
+        "启动用户端并使用包含 `program.facultyZh` 中文字段的 API 或 mock API。",
+        "切换语言为 en 或 ms，打开 `/universities/universiti-malaya-um`。",
+        "点击 Master programmes / Program sarjana tab。",
+        "查看 Faculty 列，可见中文“医学院”“教育学院”。",
+        "切换 zh-TW 后重复检查，可见简体“医学院”残留。"
+      ],
+      "suggestedFix": "不要在模板中直接优先使用 `program.facultyZh`。新增统一 `facultyLabel(program)`，按当前语言先读取 `text(program.faculty)`；中文语言可用 `cleanDisplayText(program.facultyZh, '', currentLocale.value)` 并让 zh-TW 走繁体转换；en/ms 若 faculty 仅有中文，应回退到 `categoryLabel(program.category)` 或当前语言的官方确认类 fallback。补充测试覆盖 en/ms 不显示 CJK faculty、zh-TW faculty 不残留简体。",
+      "autoFixable": true,
+      "confidence": "high",
+      "firstSeenAt": "2026-05-23T20:47:42.547Z",
+      "lastSeenAt": "2026-05-23T20:47:42.571Z",
+      "fixAttempts": 1,
+      "signature": "754c386457",
+      "promptPath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-030-2026-05-23T20-32-02-299Z-REVIEW.prompt.md",
+      "logPath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-030-2026-05-23T20-32-02-299Z-REVIEW.codex.log",
+      "lastMessagePath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-030-2026-05-23T20-32-02-299Z-REVIEW.last-message.txt",
+      "notes": "已修复院校详情专业列表 faculty 文案优先渲染中文 facultyZh 的问题，改为统一按当前语言取 faculty，中文语言才回退 facultyZh，并补充测试覆盖。",
+      "fixedAt": "2026-05-23T20:53:22.122Z",
+      "resolvedByRunId": "TASK-030-2026-05-23T20-47-42-564Z-FIX-REVIEW"
+    },
+    {
+      "issueId": "TASK-030-REV-005",
+      "taskId": "TASK-030",
+      "taskTitle": "前端中英文翻译和页面文案统一修复",
+      "runId": "TASK-030-2026-05-23T20-53-22-136Z-REVIEW",
+      "category": "i18n",
+      "severity": "high",
+      "status": "open",
+      "title": "英文页面仍显示中文分类值",
+      "description": "英文语言下仍可见后端原始中文专业分类。首页筛选区出现“理科”，院校专业详情弹窗分类标签出现“商科”。根因是 formatCategoryLabel 对英文 locale 遇到无法识别的 CJK 分类时直接 titleCase 原始值，而不是映射到英文分类或回退到英文 fallback。",
+      "affectedFiles": [
+        "apps/web/src/utils/format.ts",
+        "apps/web/src/pages/HomePage.vue",
+        "apps/web/src/pages/PlannerPage.vue",
+        "apps/web/src/pages/UniversityPage.vue"
+      ],
+      "affectedPages": [
+        "http://localhost:5173/",
+        "http://localhost:5173/universities/universiti-malaya-um?program=1670"
+      ],
+      "affectedCommands": [
+        "Playwright 四语言页面抽查"
+      ],
+      "reproductionSteps": [
+        "设置 localStorage.studymy_locale 为 en",
+        "打开 http://localhost:5173/，查看专业方向筛选区",
+        "打开 http://localhost:5173/universities/universiti-malaya-um?program=1670，查看专业弹窗顶部分类标签",
+        "可见“理科”“商科”等中文分类残留"
+      ],
+      "suggestedFix": "在 formatCategoryLabel 或更靠近数据入口处增加中文分类别名归一化，例如 商科、工科、理科、医学、文科、建筑、人文社科 等映射到 canonical category；英文和马来文 locale 遇到 CJK 原始分类时不得直接渲染原文。补充 en/ms 针对中文 raw category 的单元测试。",
+      "autoFixable": true,
+      "confidence": "high",
+      "firstSeenAt": "2026-05-23T21:01:29.522Z",
+      "lastSeenAt": "2026-05-23T21:01:29.522Z",
+      "fixAttempts": 0,
+      "signature": "c330bd3b3a",
+      "promptPath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-030-2026-05-23T20-53-22-136Z-REVIEW.prompt.md",
+      "logPath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-030-2026-05-23T20-53-22-136Z-REVIEW.codex.log",
+      "lastMessagePath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-030-2026-05-23T20-53-22-136Z-REVIEW.last-message.txt"
+    },
+    {
+      "issueId": "TASK-030-REV-006",
+      "taskId": "TASK-030",
+      "taskTitle": "前端中英文翻译和页面文案统一修复",
+      "runId": "TASK-030-2026-05-23T20-53-22-136Z-REVIEW",
+      "category": "i18n",
+      "severity": "high",
+      "status": "open",
+      "title": "繁体页面动态数据仍有简体字残留",
+      "description": "繁体中文页面的动态字段仍残留简体字。规划页可见“软件工程碩士（软件技術）”，院校硕士列表可见“管理责任”“农業生物安全”，部分页脚和标签仍有“公开信息”等偏简体表达。静态 messages.ts 通过了检查，但 API 动态数据和本地生成数据仍依赖不完整的手写 toTraditionalText 转换。",
+      "affectedFiles": [
+        "apps/web/src/i18n/localeTransforms.ts",
+        "apps/web/src/utils/format.ts",
+        "apps/web/src/composables/useLocaleText.ts",
+        "apps/web/src/stores/planner.ts"
+      ],
+      "affectedPages": [
+        "http://localhost:5173/planner",
+        "http://localhost:5173/universities/universiti-malaya-um"
+      ],
+      "affectedCommands": [
+        "Playwright 四语言页面抽查"
+      ],
+      "reproductionSteps": [
+        "设置 localStorage.studymy_locale 为 zh-TW",
+        "打开 http://localhost:5173/planner",
+        "查看推荐列表，可见“软件工程碩士（软件技術）”",
+        "打开 http://localhost:5173/universities/universiti-malaya-um 并切换到硕士专业",
+        "查看专业列表，可见“管理责任”“农業生物安全”等简体残留"
+      ],
+      "suggestedFix": "用可靠的简繁转换方案替换或补强当前 localeTransforms.ts 的手写映射，至少补齐 软/責/農/內容/建築 等已发现残留，并为动态 program name、faculty、planner recommendation、footer copy 增加 zh-TW 转换测试样例。",
+      "autoFixable": true,
+      "confidence": "high",
+      "firstSeenAt": "2026-05-23T21:01:29.522Z",
+      "lastSeenAt": "2026-05-23T21:01:29.522Z",
+      "fixAttempts": 0,
+      "signature": "4692314a73",
+      "promptPath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-030-2026-05-23T20-53-22-136Z-REVIEW.prompt.md",
+      "logPath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-030-2026-05-23T20-53-22-136Z-REVIEW.codex.log",
+      "lastMessagePath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-030-2026-05-23T20-53-22-136Z-REVIEW.last-message.txt"
+    },
+    {
+      "issueId": "TASK-030-REV-007",
+      "taskId": "TASK-030",
+      "taskTitle": "前端中英文翻译和页面文案统一修复",
+      "runId": "TASK-030-2026-05-23T20-53-22-136Z-REVIEW",
+      "category": "i18n",
+      "severity": "high",
+      "status": "open",
+      "title": "用户端错误提示直接透出英文后端错误",
+      "description": "登录失败等错误状态会直接显示后端英文错误。中文页面登录弹窗输入不存在账号后显示“Invalid account or method”，不符合任务要求中的错误提示文案完整且遵循当前语言。代码中 AuthModal、App、catalog store、planner store 多处优先展示 error.message，也会让 API 英文错误进入中文、繁体或马来文界面。",
+      "affectedFiles": [
+        "apps/web/src/components/AuthModal.vue",
+        "apps/web/src/App.vue",
+        "apps/web/src/stores/catalog.ts",
+        "apps/web/src/stores/planner.ts",
+        "apps/web/src/api/client.ts"
+      ],
+      "affectedPages": [
+        "http://localhost:5173/"
+      ],
+      "affectedCommands": [
+        "Playwright 登录弹窗错误态抽查"
+      ],
+      "reproductionSteps": [
+        "设置 localStorage.studymy_locale 为 zh-CN",
+        "打开 http://localhost:5173/ 并打开登录弹窗",
+        "输入 review@example.com / wrongpass 提交",
+        "错误提示显示英文“Invalid account or method”"
+      ],
+      "suggestedFix": "用户端展示层优先使用 t('auth.failed')、runtimeText 或新增本地化错误 key；后端原始 error.message 仅用于日志或调试。对 catalog/planner 同步错误也应改为本地化通用提示或已知错误映射。",
+      "autoFixable": true,
+      "confidence": "high",
+      "firstSeenAt": "2026-05-23T21:01:29.522Z",
+      "lastSeenAt": "2026-05-23T21:01:29.522Z",
+      "fixAttempts": 0,
+      "signature": "0b3c3bfc3e",
+      "promptPath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-030-2026-05-23T20-53-22-136Z-REVIEW.prompt.md",
+      "logPath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-030-2026-05-23T20-53-22-136Z-REVIEW.codex.log",
+      "lastMessagePath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-030-2026-05-23T20-53-22-136Z-REVIEW.last-message.txt"
+    },
+    {
+      "issueId": "TASK-031-ASSET-001",
+      "taskId": "TASK-031",
+      "taskTitle": "前端卡片、标签、按钮和表格细节样式优化",
+      "runId": "TASK-031-2026-05-23T21-33-26-642Z-REVIEW",
+      "category": "asset",
+      "severity": "medium",
+      "status": "fixing",
+      "title": "院校封面 fallback 仍显示默认破图图标和 alt 文本",
+      "description": "在新生成的首页筛选与院校卡片截图中，第二张院校卡片封面区域虽然加上了深色占位背景，但仍可见浏览器默认破图图标和“博特拉大学”alt 文本。原因是 apps/web/src/components/UniversityCard.vue 的 handleMediaError 只移除 img 的 src/srcset 并给同一个 img 增加 placeholder class，失败的 img 元素仍会渲染破图占位和 alt 文本。",
+      "affectedFiles": [
+        "apps/web/src/components/UniversityCard.vue",
+        "apps/web/src/style.css"
+      ],
+      "affectedPages": [
+        "首页筛选与院校卡片：桌面端 1440x1000",
+        "首页筛选与院校卡片：移动端 390x844"
+      ],
+      "affectedCommands": [
+        "npm run verify:task028（命令通过，但截图可复现该视觉问题）"
+      ],
+      "reproductionSteps": [
+        "运行 npm run verify:task028。",
+        "打开 output/playwright/task028-20260523T213523Z/web-list-filter-mobile.png 或 web-list-filter-desktop.png。",
+        "查看第二张院校卡片封面区域，可见深色 placeholder 上叠加默认破图图标和院校 alt 文本。"
+      ],
+      "suggestedFix": "不要在失败的 img 上直接模拟占位图。改为组件状态控制，例如 hasImageError/hasLogoError，图片加载失败后渲染 div.university-card__image--placeholder，或隐藏失败 img 并确保不会显示 alt 文本；logo fallback 也建议用响应式状态替代直接 DOM remove。修复后重新运行 npm run verify:task028 并人工抽查截图。",
+      "autoFixable": true,
+      "confidence": "high",
+      "firstSeenAt": "2026-05-23T21:38:59.762Z",
+      "lastSeenAt": "2026-05-23T21:38:59.790Z",
+      "fixAttempts": 1,
+      "signature": "eacb587d71",
+      "promptPath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-031-2026-05-23T21-33-26-642Z-REVIEW.prompt.md",
+      "logPath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-031-2026-05-23T21-33-26-642Z-REVIEW.codex.log",
+      "lastMessagePath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-031-2026-05-23T21-33-26-642Z-REVIEW.last-message.txt",
+      "notes": "Fix run: TASK-031-2026-05-23T21-38-59-778Z-FIX-REVIEW"
+    },
+    {
+      "issueId": "TASK-040-REV-001",
+      "taskId": "TASK-040",
+      "taskTitle": "多语言硬编码清理与运行时语言一致性修复",
+      "runId": "TASK-040-2026-05-24T11-07-22-462Z-REVIEW",
+      "category": "i18n",
+      "severity": "high",
+      "status": "fixed",
+      "title": "首页排名筛选运行时切换语言后仍显示旧语言",
+      "description": "`apps/web/src/pages/HomePage.vue` 中 `rankOptions` 在 setup 阶段直接创建，`label: t('home.unlimited')` 只在组件初始化时求值。浏览器复现显示页面从 zh-CN 切换到 en/ms 后，筛选标题已分别变为 `Filter conditions` / `Syarat tapisan`，但 QS 排名筛选第一项仍是中文 `不限`。这会造成同一页面混合语言，违反 TASK-040 对运行时语言一致性的验收要求。相同区域内 `Top 100`、`Top 200` 等脚本文案也仍是直接硬编码，未纳入 i18n key。",
+      "affectedFiles": [
+        "apps/web/src/pages/HomePage.vue"
+      ],
+      "affectedPages": [
+        "/"
+      ],
+      "affectedCommands": [
+        "npm run dev:web",
+        "自定义 Playwright 运行时语言切换抽查"
+      ],
+      "reproductionSteps": [
+        "启动用户端：`npm --workspace @studymy/web run dev -- --host 127.0.0.1 --port <port>`",
+        "打开首页并确保初始语言为 `zh-CN`",
+        "确认 QS 排名筛选第一项显示 `不限`",
+        "在页面语言选择器中切换到 `en` 或 `ms`",
+        "观察筛选标题已经切换语言，但 QS 排名筛选第一项仍显示 `不限`"
+      ],
+      "suggestedFix": "将 `rankOptions` 改为 `computed`，并把排名 chip 文案接入 i18n 或统一格式化函数，例如新增 `home.rankUnlimited` / `home.rankTop` 之类 key；同时补充运行时语言切换测试，断言 zh-CN -> en/ms 后筛选 chip 文案同步变化。",
+      "autoFixable": true,
+      "confidence": "high",
+      "firstSeenAt": "2026-05-24T11:14:53.953Z",
+      "lastSeenAt": "2026-05-24T11:14:53.997Z",
+      "fixAttempts": 1,
+      "signature": "16f621262f",
+      "promptPath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-040-2026-05-24T11-07-22-462Z-REVIEW.prompt.md",
+      "logPath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-040-2026-05-24T11-07-22-462Z-REVIEW.codex.log",
+      "lastMessagePath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-040-2026-05-24T11-07-22-462Z-REVIEW.last-message.txt",
+      "notes": "已修复首页排名与预算筛选在运行时切换语言后的旧语言残留问题；新增首页脚本生成文案审计，并在浏览器验证中加入 zh-CN -> en/ms/zh-TW 的运行时语言切换检查。未更新 Notion：本轮未提供可写入的 Notion 任务页 ID/URL，且未修改 Notion 快照。",
+      "fixedAt": "2026-05-24T11:24:22.603Z",
+      "resolvedByRunId": "TASK-040-2026-05-24T11-14-53-984Z-FIX-REVIEW"
+    },
+    {
+      "issueId": "TASK-040-REV-002",
+      "taskId": "TASK-040",
+      "taskTitle": "多语言硬编码清理与运行时语言一致性修复",
+      "runId": "TASK-040-2026-05-24T11-07-22-462Z-REVIEW",
+      "category": "test",
+      "severity": "medium",
+      "status": "fixed",
+      "title": "硬编码扫描未覆盖 script 生成的可见文案和运行时切换",
+      "description": "`scripts/task040-i18n-audit.ts` 的可见硬编码扫描只解析 `.vue` 的 `<template>` 文本和少量静态属性，因此没有发现 `HomePage.vue` script 中生成的 `Top 100`、`Top 200`、`≤ CNY 30k` 等可见标签，也没有覆盖用户在同一页面内切换语言后的响应式更新。现有 `verify:task040:browser` 是按 locale 预置后刷新进入页面，同样未覆盖运行时切换场景。",
+      "affectedFiles": [
+        "scripts/task040-i18n-audit.ts",
+        "apps/web/src/pages/HomePage.vue",
+        "package.json"
+      ],
+      "affectedPages": [
+        "/"
+      ],
+      "affectedCommands": [
+        "npm run verify:task040:i18n",
+        "npm run verify:task040:browser"
+      ],
+      "reproductionSteps": [
+        "运行 `npm run verify:task040:i18n`，结果显示 visible hardcoded text scan 为 0",
+        "检查 `apps/web/src/pages/HomePage.vue:297` 附近，可见 `rankOptions` 和 `budgetOptions` 仍包含脚本生成的可见硬编码标签",
+        "运行页面内语言切换抽查，可复现旧语言残留"
+      ],
+      "suggestedFix": "扩展 TASK-040 审计覆盖 script/setup 中用于模板渲染的 option label，或新增更聚焦的浏览器测试：从一个语言启动页面，切换到另外三种语言，检查导航、筛选组、筛选 chip、分页和错误态均无旧语言残留。",
+      "autoFixable": true,
+      "confidence": "high",
+      "firstSeenAt": "2026-05-24T11:14:53.953Z",
+      "lastSeenAt": "2026-05-24T11:14:53.997Z",
+      "fixAttempts": 1,
+      "signature": "96a7790ad0",
+      "promptPath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-040-2026-05-24T11-07-22-462Z-REVIEW.prompt.md",
+      "logPath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-040-2026-05-24T11-07-22-462Z-REVIEW.codex.log",
+      "lastMessagePath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-040-2026-05-24T11-07-22-462Z-REVIEW.last-message.txt",
+      "notes": "已修复首页排名与预算筛选在运行时切换语言后的旧语言残留问题；新增首页脚本生成文案审计，并在浏览器验证中加入 zh-CN -> en/ms/zh-TW 的运行时语言切换检查。未更新 Notion：本轮未提供可写入的 Notion 任务页 ID/URL，且未修改 Notion 快照。",
+      "fixedAt": "2026-05-24T11:24:22.603Z",
+      "resolvedByRunId": "TASK-040-2026-05-24T11-14-53-984Z-FIX-REVIEW"
+    },
+    {
+      "issueId": "TASK-040-REV-003",
+      "taskId": "TASK-040",
+      "taskTitle": "多语言硬编码清理与运行时语言一致性修复",
+      "runId": "TASK-040-2026-05-24T11-26-55-675Z-REVIEW",
+      "category": "i18n",
+      "severity": "high",
+      "status": "fixed",
+      "title": "专业详情动态备注在马来文和繁体中文下仍泄漏英文句子",
+      "description": "在 TASK-040 的浏览器验证截图中，马来文和繁体中文专业详情弹窗仍显示英文动态说明，例如 “Accommodation and personal expenses are not included.”、“Relevant academic background required.”、“Refer to programme page and MQA record.” 以及页面审核卡中的 “Official source verified.”。这些不是验收标准允许保留的官方英文校名、专业官方英文名或 QS/IELTS/TOEFL/GPA/RM/CNY 等专有名词，说明 API/官方备注类字段仍会绕过本地化策略。当前 `npm run verify:task040:browser` 仍然通过，是因为脚本只禁止英文/马来文页面出现中文、禁止繁中出现少量简体样本，没有禁止非英文 locale 显示这些英文备注。",
+      "affectedFiles": [
+        "apps/web/src/pages/UniversityPage.vue",
+        "apps/web/src/utils/format.ts",
+        "scripts/task035-final-release-audit.mjs",
+        "tests/web/format.test.ts"
+      ],
+      "affectedPages": [
+        "http://127.0.0.1:5180/universities/universiti-malaya-um?program=1670",
+        "D:\\mydev\\study-malaysia\\output\\playwright\\task035-20260524T112956Z\\program-modal-ms.png",
+        "D:\\mydev\\study-malaysia\\output\\playwright\\task035-20260524T112956Z\\program-modal-zh-TW.png"
+      ],
+      "affectedCommands": [
+        "npm run verify:task040:browser",
+        "npm run verify:task040:i18n",
+        "npm run test"
+      ],
+      "reproductionSteps": [
+        "运行 `npm run verify:task040:browser`。",
+        "打开生成目录中的 `program-modal-ms.png`。",
+        "观察马来文弹窗内仍出现英文说明：Accommodation and personal expenses are not included、Relevant academic background required、Refer to programme page and MQA record。",
+        "打开 `program-modal-zh-TW.png`，可看到繁体中文弹窗中也保留同类英文说明。",
+        "对照验收标准，这些通用备注应通过 locale text 或统一格式化函数按当前语言输出，不能直接显示英文原文。"
+      ],
+      "suggestedFix": "为官方备注、费用备注、学术要求、认证备注、审核摘要等字段增加统一的本地化显示函数。已知官方短语应映射到 zh-CN、zh-TW、en、ms；未知英文长句在非英文 locale 下应显示对应语言 fallback，而不是裸露英文。将 `UniversityPage.vue` 中 `auditSummary`、`tuitionNoteLabel`、`academicRequirementLabel`、`accreditationNoteLabel` 等路径改用该统一函数，并扩展 `task035-final-release-audit.mjs` 与 `tests/web/format.test.ts`，明确禁止 ms/zh-CN/zh-TW 页面出现这些英文备注样本。",
+      "autoFixable": true,
+      "confidence": "high",
+      "firstSeenAt": "2026-05-24T11:33:01.789Z",
+      "lastSeenAt": "2026-05-24T11:49:23.658Z",
+      "fixAttempts": 1,
+      "signature": "22217442b3",
+      "promptPath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-040-2026-05-24T11-26-55-675Z-REVIEW.prompt.md",
+      "logPath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-040-2026-05-24T11-26-55-675Z-REVIEW.codex.log",
+      "lastMessagePath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-040-2026-05-24T11-26-55-675Z-REVIEW.last-message.txt",
+      "notes": "已修复 TASK-040-REV-003：新增统一官方动态备注本地化格式化函数，并接入专业详情弹窗、页面审核摘要、费用备注、学术要求、认证备注和数据备注路径；同步补充单测、i18n 审计和浏览器验证断言。Notion 未更新。",
+      "fixedAt": "2026-05-24T11:55:58.475Z",
+      "resolvedByRunId": "TASK-040-2026-05-24T11-49-23-652Z-FIX-REVIEW"
+    },
+    {
+      "issueId": "TASK-040-REV-003",
+      "taskId": "TASK-040",
+      "taskTitle": "多语言硬编码清理与运行时语言一致性修复",
+      "runId": "TASK-040-2026-05-24T11-33-55-577Z-REVIEW",
+      "category": "i18n",
+      "severity": "high",
+      "status": "fixed",
+      "title": "专业详情动态备注在马来文和繁体中文下仍泄漏英文句子",
+      "description": "在最新浏览器截图中，马来文和繁体中文专业详情弹窗仍显示 “Accommodation and personal expenses are not included.”、“Relevant academic background required.”、“Refer to programme page and MQA record.”，页面审核卡也显示 “Official source verified.”。这些不是官方学校英文名、专业官方英文名或 QS/IELTS/TOEFL/GPA/RM/CNY 等允许保留的专有名词。代码层面，UniversityPage.vue 仍通过 cleanDisplayText 直接渲染 officialAuditSummary、tuitionInfo.note、officialAcademicRequirement 和 officialAccreditationNote；cleanDisplayText 不会把这些英文备注映射为当前 locale，因此 API/官方备注字段仍会绕过本地化策略。",
+      "affectedFiles": [
+        "apps/web/src/pages/UniversityPage.vue",
+        "apps/web/src/utils/format.ts",
+        "scripts/task035-final-release-audit.mjs",
+        "scripts/task040-i18n-audit.ts",
+        "tests/web/format.test.ts"
+      ],
+      "affectedPages": [
+        "http://127.0.0.1:5180/universities/universiti-malaya-um?program=1670",
+        "D:\\mydev\\study-malaysia\\output\\playwright\\task035-20260524T113545Z\\program-modal-ms.png",
+        "D:\\mydev\\study-malaysia\\output\\playwright\\task035-20260524T113545Z\\program-modal-zh-TW.png"
+      ],
+      "affectedCommands": [
+        "npm run verify:task040:browser",
+        "npm run verify:task040:i18n",
+        "npm run test"
+      ],
+      "reproductionSteps": [
+        "运行 npm run verify:task040:browser。",
+        "打开 output/playwright/task035-20260524T113545Z/program-modal-ms.png。",
+        "观察马来文弹窗中的费用备注、学术要求和认证备注仍为英文句子。",
+        "打开 output/playwright/task035-20260524T113545Z/program-modal-zh-TW.png。",
+        "观察繁体中文弹窗和审核备注中仍保留同类英文动态文案。"
+      ],
+      "suggestedFix": "新增统一的官方备注本地化格式化函数，覆盖 officialAuditSummary、tuitionInfo.note、officialAcademicRequirement、officialAccreditationNote、auditNote 等用户可见 API 字符串。已知英文短语映射到 zh-CN、zh-TW、en、ms；未知英文长句在非英文 locale 下应显示对应语言 fallback 或可控本地化提示，不能裸露英文。同步扩展 task035-final-release-audit.mjs、task040-i18n-audit.ts 和 tests/web/format.test.ts，明确禁止 ms、zh-CN、zh-TW 页面出现上述英文备注样本。",
+      "autoFixable": true,
+      "confidence": "high",
+      "firstSeenAt": "2026-05-24T11:37:27.148Z",
+      "lastSeenAt": "2026-05-24T11:49:23.658Z",
+      "fixAttempts": 1,
+      "signature": "4d89538aac",
+      "promptPath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-040-2026-05-24T11-33-55-577Z-REVIEW.prompt.md",
+      "logPath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-040-2026-05-24T11-33-55-577Z-REVIEW.codex.log",
+      "lastMessagePath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-040-2026-05-24T11-33-55-577Z-REVIEW.last-message.txt",
+      "notes": "已修复 TASK-040-REV-003：新增统一官方动态备注本地化格式化函数，并接入专业详情弹窗、页面审核摘要、费用备注、学术要求、认证备注和数据备注路径；同步补充单测、i18n 审计和浏览器验证断言。Notion 未更新。",
+      "fixedAt": "2026-05-24T11:55:58.475Z",
+      "resolvedByRunId": "TASK-040-2026-05-24T11-49-23-652Z-FIX-REVIEW"
+    },
+    {
+      "issueId": "TASK-040-REV-003",
+      "taskId": "TASK-040",
+      "taskTitle": "多语言硬编码清理与运行时语言一致性修复",
+      "runId": "TASK-040-2026-05-24T11-37-56-108Z-REVIEW",
+      "category": "i18n",
+      "severity": "high",
+      "status": "fixed",
+      "title": "专业详情动态备注在马来文和繁体中文下仍泄漏英文句子",
+      "description": "最新截图中，马来文和繁体中文专业详情弹窗仍显示 “Accommodation and personal expenses are not included.”、“Relevant academic background required.”、“Refer to programme page and MQA record.”，页面核验卡也显示 “Official source verified.”。这些不是允许保留的学校官方英文名、专业官方英文名或 QS/IELTS/TOEFL/GPA/RM/CNY 等专有名词。代码层面，UniversityPage.vue 仍在 auditSummary、tuitionNoteLabel、academicRequirementLabel、accreditationNoteLabel、programSourceRows 中通过 cleanDisplayText 直接渲染 API/夹具备注；format.ts 的 cleanDisplayText 只过滤中文跨 locale，不会把英文备注映射为当前 locale。",
+      "affectedFiles": [
+        "apps/web/src/pages/UniversityPage.vue",
+        "apps/web/src/utils/format.ts",
+        "scripts/task035-final-release-audit.mjs",
+        "scripts/task040-i18n-audit.ts",
+        "tests/web/format.test.ts"
+      ],
+      "affectedPages": [
+        "http://127.0.0.1:5180/universities/universiti-malaya-um?program=1670",
+        "D:\\mydev\\study-malaysia\\output\\playwright\\task035-20260524T113940Z\\program-modal-ms.png",
+        "D:\\mydev\\study-malaysia\\output\\playwright\\task035-20260524T113940Z\\program-modal-zh-TW.png"
+      ],
+      "affectedCommands": [
+        "npm run verify:task040:browser",
+        "npm run verify:task040:i18n",
+        "npm run test"
+      ],
+      "reproductionSteps": [
+        "运行 npm run verify:task040:browser。",
+        "打开 output/playwright/task035-20260524T113940Z/program-modal-ms.png。",
+        "观察马来文弹窗中的费用备注、学术要求、认证备注仍为英文句子。",
+        "打开 output/playwright/task035-20260524T113940Z/program-modal-zh-TW.png。",
+        "观察繁体中文弹窗和核验备注中仍保留同类英文动态文案。"
+      ],
+      "suggestedFix": "新增统一的官方备注本地化格式化函数，覆盖 officialAuditSummary、tuitionInfo.note、officialAcademicRequirement、officialAccreditationNote、auditNote、publicDisplayNote、reviewReason 等用户可见 API 字符串。已知英文短语映射到 zh-CN、zh-TW、en、ms；未知英文长句在非英文 locale 下应显示对应语言 fallback 或可控本地化提示，不能裸露英文。同步扩展 task035-final-release-audit.mjs、task040-i18n-audit.ts 和 tests/web/format.test.ts，明确禁止 ms、zh-CN、zh-TW 页面出现这些英文备注样本。",
+      "autoFixable": true,
+      "confidence": "high",
+      "firstSeenAt": "2026-05-24T11:42:09.357Z",
+      "lastSeenAt": "2026-05-24T11:49:23.658Z",
+      "fixAttempts": 1,
+      "signature": "b13136ca92",
+      "promptPath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-040-2026-05-24T11-37-56-108Z-REVIEW.prompt.md",
+      "logPath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-040-2026-05-24T11-37-56-108Z-REVIEW.codex.log",
+      "lastMessagePath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-040-2026-05-24T11-37-56-108Z-REVIEW.last-message.txt",
+      "notes": "已修复 TASK-040-REV-003：新增统一官方动态备注本地化格式化函数，并接入专业详情弹窗、页面审核摘要、费用备注、学术要求、认证备注和数据备注路径；同步补充单测、i18n 审计和浏览器验证断言。Notion 未更新。",
+      "fixedAt": "2026-05-24T11:55:58.475Z",
+      "resolvedByRunId": "TASK-040-2026-05-24T11-49-23-652Z-FIX-REVIEW"
+    },
+    {
+      "issueId": "TASK-040-REV-003",
+      "taskId": "TASK-040",
+      "taskTitle": "多语言硬编码清理与运行时语言一致性修复",
+      "runId": "TASK-040-2026-05-24T11-45-55-747Z-REVIEW",
+      "category": "i18n",
+      "severity": "high",
+      "status": "fixed",
+      "title": "专业详情动态备注在非英文语言下仍泄漏英文句子",
+      "description": "最新截图中，ms、zh-CN 和 zh-TW 的专业详情弹窗仍显示 “Accommodation and personal expenses are not included.”、“Relevant academic background required.”、“Refer to programme page and MQA record.”，页面核验备注也显示 “Official source verified.”。这些不是允许保留的学校官方英文名、专业官方英文名或 QS/IELTS/TOEFL/GPA/RM/CNY 等专有名词。代码层面，UniversityPage.vue 的 auditSummary、tuitionNoteLabel、academicRequirementLabel、accreditationNoteLabel、programSourceRows 仍通过 cleanDisplayText 直接渲染 API/夹具备注；format.ts 的 cleanDisplayText 只阻止中文泄漏到英文/马来文，不会把英文备注映射为当前语言。",
+      "affectedFiles": [
+        "apps/web/src/pages/UniversityPage.vue",
+        "apps/web/src/utils/format.ts",
+        "scripts/task035-final-release-audit.mjs",
+        "scripts/task040-i18n-audit.ts",
+        "tests/web/format.test.ts"
+      ],
+      "affectedPages": [
+        "http://127.0.0.1:5180/universities/universiti-malaya-um?program=1670",
+        "D:\\mydev\\study-malaysia\\output\\playwright\\task035-20260524T114741Z\\program-modal-ms.png",
+        "D:\\mydev\\study-malaysia\\output\\playwright\\task035-20260524T114741Z\\program-modal-zh-CN.png",
+        "D:\\mydev\\study-malaysia\\output\\playwright\\task035-20260524T114741Z\\program-modal-zh-TW.png"
+      ],
+      "affectedCommands": [
+        "npm run verify:task040:browser",
+        "npm run verify:task040:i18n",
+        "npm run test"
+      ],
+      "reproductionSteps": [
+        "运行 npm run verify:task040:browser。",
+        "打开 output/playwright/task035-20260524T114741Z/program-modal-ms.png。",
+        "观察马来文弹窗中的费用备注、学术要求和认证备注仍为英文句子。",
+        "打开 program-modal-zh-CN.png 和 program-modal-zh-TW.png。",
+        "观察简体中文、繁体中文弹窗及页面核验备注中仍出现同类英文动态文案。"
+      ],
+      "suggestedFix": "新增统一的官方备注本地化格式化函数，覆盖 officialAuditSummary、tuitionInfo.note、officialAcademicRequirement、officialAccreditationNote、auditNote、publicDisplayNote、reviewReason 等用户可见 API 字符串。已知英文短语映射到 zh-CN、zh-TW、en、ms；未知英文长句在非英文 locale 下应显示对应语言 fallback 或可控本地化提示，不能裸露英文。同步扩展 task035-final-release-audit.mjs、task040-i18n-audit.ts 和 tests/web/format.test.ts，明确禁止 ms、zh-CN、zh-TW 页面出现这些英文备注样本。",
+      "autoFixable": true,
+      "confidence": "high",
+      "firstSeenAt": "2026-05-24T11:49:23.629Z",
+      "lastSeenAt": "2026-05-24T11:49:23.658Z",
+      "fixAttempts": 1,
+      "signature": "236740354e",
+      "promptPath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-040-2026-05-24T11-45-55-747Z-REVIEW.prompt.md",
+      "logPath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-040-2026-05-24T11-45-55-747Z-REVIEW.codex.log",
+      "lastMessagePath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-040-2026-05-24T11-45-55-747Z-REVIEW.last-message.txt",
+      "notes": "已修复 TASK-040-REV-003：新增统一官方动态备注本地化格式化函数，并接入专业详情弹窗、页面审核摘要、费用备注、学术要求、认证备注和数据备注路径；同步补充单测、i18n 审计和浏览器验证断言。Notion 未更新。",
+      "fixedAt": "2026-05-24T11:55:58.475Z",
+      "resolvedByRunId": "TASK-040-2026-05-24T11-49-23-652Z-FIX-REVIEW"
+    },
+    {
+      "issueId": "TASK-040-REV-004",
+      "taskId": "TASK-040",
+      "taskTitle": "多语言硬编码清理与运行时语言一致性修复",
+      "runId": "TASK-040-2026-05-24T11-55-58-508Z-REVIEW",
+      "category": "i18n",
+      "severity": "high",
+      "status": "fixed",
+      "title": "申请信息动态数组仍会在非英文界面裸露英文",
+      "description": "学校详情页申请信息 tab 的 `applicationPeriodRows` 和 `applicationFeeRows` 通过 `normalizeList` / `stringFrom` 直接清洗字符串。`cleanDisplayText` 目前不会在 `zh-CN`、`zh-TW`、`ms` 下拦截英文字符串，因此 mock 数据和真实 API 数据中的 `October intake`、`Refer to official portal`、`Refer to official system` 会直接显示在非英文界面，违反 TASK-040 关于运行时语言一致性和 fallback 文案的验收标准。同类风险也存在于 `profile.qualityNote`、`profile.sourceNote`、`tuitionAudit.notes` 等 profile 动态备注路径。",
+      "affectedFiles": [
+        "apps/web/src/pages/UniversityPage.vue",
+        "apps/web/src/utils/format.ts",
+        "scripts/task035-final-release-audit.mjs",
+        "scripts/task040-i18n-audit.ts",
+        "tests/web/format.test.ts"
+      ],
+      "affectedPages": [
+        "学校详情页申请信息 tab",
+        "本地验证 URL 示例：http://127.0.0.1:5180/universities/universiti-malaya-um"
+      ],
+      "affectedCommands": [
+        "npm run verify:task040:browser",
+        "npm run verify:task040:i18n"
+      ],
+      "reproductionSteps": [
+        "使用包含 `applicationPeriods: [\"October intake\"]` 与 `applicationFees: [\"Refer to official portal\"]` 的现有 TASK-035 mock 数据启动用户端。",
+        "切换语言到 `zh-CN`、`zh-TW` 或 `ms`。",
+        "打开学校详情页并切换到申请信息 tab。",
+        "观察申请周期或申请费用列表，英文动态字符串仍直接展示。",
+        "代码级复现：执行 `node --import tsx -e \"import { cleanDisplayText, officialPageFallback } from './apps/web/src/utils/format.ts'; for (const locale of ['zh-CN','zh-TW','ms']) console.log(locale + ': ' + cleanDisplayText('October intake', officialPageFallback(locale), locale));\"`，当前输出均为 `October intake`。"
+      ],
+      "suggestedFix": "为申请周期、申请费用、profile 备注和 tuitionAudit notes 增加统一动态文本格式化路径。可复用或扩展 `normalizeAcademicText` / `formatOfficialNote`，对已知英文短语进行四语言映射，对未知英文在非英文语言下回落到本地化 fallback；同时在 `task035-final-release-audit.mjs` 中点击申请信息 tab 并断言非英文界面不包含这些英文样本，在 `task040-i18n-audit.ts` 和 `tests/web/format.test.ts` 中补充对应样本。",
+      "autoFixable": true,
+      "confidence": "high",
+      "firstSeenAt": "2026-05-24T12:01:26.162Z",
+      "lastSeenAt": "2026-05-24T12:56:32.194Z",
+      "fixAttempts": 5,
+      "signature": "49cdeafa85",
+      "promptPath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-040-2026-05-24T11-55-58-508Z-REVIEW.prompt.md",
+      "logPath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-040-2026-05-24T11-55-58-508Z-REVIEW.codex.log",
+      "lastMessagePath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-040-2026-05-24T11-55-58-508Z-REVIEW.last-message.txt",
+      "notes": "已修复 selected review issues：为 normalizeAcademicText 增加非英文语言下普通英文专业字段 fallback 保护，并补齐 formatProgramIntake、formatProgramDuration、formatProgramLanguage 的审计、单测和浏览器 mock 覆盖；同时提交了此前相关的 officialProfile、月份归一化和繁体动态文本覆盖改动。",
+      "fixedAt": "2026-05-24T13:02:58.406Z",
+      "resolvedByRunId": "TASK-040-2026-05-24T12-56-32-188Z-FIX-REVIEW"
+    },
+    {
+      "issueId": "TASK-040-REV-004",
+      "taskId": "TASK-040",
+      "taskTitle": "多语言硬编码清理与运行时语言一致性修复",
+      "runId": "TASK-040-2026-05-24T12-08-18-007Z-REVIEW",
+      "category": "i18n",
+      "severity": "high",
+      "status": "fixed",
+      "title": "单词月份仍会在非英文界面裸露英文",
+      "description": "`formatRuntimeDisplayText` 只映射了 `October intake`、`March intake`、`September intake` 等短语，未知英文判断又要求至少 2 个英文单词。因此 `February`、`September` 这类单词月份会在 `zh-CN`、`zh-TW`、`ms` 下原样输出。项目已有 `scripts/task014-admin-cms-verify.mjs` 使用 `applicationPeriods: [\"February\", \"September\"]`，同类数据进入用户端申请信息 tab 或专业入学时间时会违反 TASK-040 的运行时语言一致性要求。",
+      "affectedFiles": [
+        "apps/web/src/utils/format.ts",
+        "apps/web/src/pages/UniversityPage.vue",
+        "scripts/task040-i18n-audit.ts",
+        "scripts/task035-final-release-audit.mjs",
+        "tests/web/format.test.ts",
+        "scripts/task014-admin-cms-verify.mjs"
+      ],
+      "affectedPages": [
+        "学校详情页申请信息 tab",
+        "专业列表和专业详情中的入学时间展示",
+        "本地验证 URL 示例：http://127.0.0.1:5180/universities/universiti-malaya-um"
+      ],
+      "affectedCommands": [
+        "npm run verify:task040:i18n",
+        "npm run verify:task040:browser",
+        "npm run test"
+      ],
+      "reproductionSteps": [
+        "执行：node --import tsx -e \"import { formatRuntimeDisplayText, officialPageFallback } from './apps/web/src/utils/format.ts'; for (const locale of ['zh-CN','zh-TW','ms']) console.log(locale, formatRuntimeDisplayText('February', officialPageFallback(locale), locale));\"",
+        "当前输出中 `zh-CN`、`zh-TW`、`ms` 都仍显示 `February`。",
+        "再执行 `formatProgramIntake` 使用 `intakeMonths: ['February','September']`，中文输出为 `February / 9月`。",
+        "现有 TASK-040 i18n 和浏览器脚本仍通过，因为样本只覆盖了 `October intake`、`Refer to official portal`、`Refer to official system`。"
+      ],
+      "suggestedFix": "为运行时申请周期和专业入学时间增加完整月份归一化，覆盖 12 个月、月份列表、month-only 字符串和 `Multiple intakes` 等常见形态；统一复用于 `formatRuntimeDisplayText`、`normalizeAcademicText`、`formatProgramIntake` 和申请信息 tab。同步补充 `task040-i18n-audit.ts`、`task035-final-release-audit.mjs` 和 `tests/web/format.test.ts` 样本。",
+      "autoFixable": true,
+      "confidence": "high",
+      "firstSeenAt": "2026-05-24T12:14:46.206Z",
+      "lastSeenAt": "2026-05-24T12:56:32.194Z",
+      "fixAttempts": 4,
+      "signature": "b9b921a4eb",
+      "promptPath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-040-2026-05-24T12-08-18-007Z-REVIEW.prompt.md",
+      "logPath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-040-2026-05-24T12-08-18-007Z-REVIEW.codex.log",
+      "lastMessagePath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-040-2026-05-24T12-08-18-007Z-REVIEW.last-message.txt",
+      "notes": "已修复 selected review issues：为 normalizeAcademicText 增加非英文语言下普通英文专业字段 fallback 保护，并补齐 formatProgramIntake、formatProgramDuration、formatProgramLanguage 的审计、单测和浏览器 mock 覆盖；同时提交了此前相关的 officialProfile、月份归一化和繁体动态文本覆盖改动。",
+      "fixedAt": "2026-05-24T13:02:58.406Z",
+      "resolvedByRunId": "TASK-040-2026-05-24T12-56-32-188Z-FIX-REVIEW"
+    },
+    {
+      "issueId": "TASK-040-REV-005",
+      "taskId": "TASK-040",
+      "taskTitle": "多语言硬编码清理与运行时语言一致性修复",
+      "runId": "TASK-040-2026-05-24T12-08-18-007Z-REVIEW",
+      "category": "i18n",
+      "severity": "high",
+      "status": "fixed",
+      "title": "officialProfile 多个字段仍绕过本地化直接渲染",
+      "description": "学校详情页仍有多条 `officialProfile` 路径通过 `profileString`、`normalizeList`、`normalizeRows`、`stringFrom` 直接展示原始 JSON，例如 `institutionType`、`universityType`、`levels`、`studyModes`、`programmeModes`、`rankings`、`scale`、`contact`、`officialLinks`、`tuitionAudit.displayText`、`applicationDocuments` 和 `chinaRequirement.summary`。历史视觉 mock 中这些字段大量为简体中文，例如 `按专业显示 RM 官方总学费`、`公立大学`、`全日制`、`申请入口`，在英文和马来文界面会直接显示中文，在繁体界面也可能保留简体。当前 TASK-040 浏览器脚本的主 mock 将 `officialProfile` 设为 null，因此没有覆盖这个风险。",
+      "affectedFiles": [
+        "apps/web/src/pages/UniversityPage.vue",
+        "apps/web/src/utils/format.ts",
+        "scripts/task035-final-release-audit.mjs",
+        "scripts/task024-university-detail-visual.mjs",
+        "scripts/task025-program-visual.mjs",
+        "scripts/task027-mobile-visual.mjs",
+        "scripts/task028-final-visual-regression.mjs"
+      ],
+      "affectedPages": [
+        "学校详情页概览 tab",
+        "学校详情页官方基础信息区",
+        "学校详情页官方费用状态卡片",
+        "学校详情页申请信息 tab"
+      ],
+      "affectedCommands": [
+        "npm run verify:task040:browser",
+        "npm run verify:task040:i18n"
+      ],
+      "reproductionSteps": [
+        "查看 `scripts/task024-university-detail-visual.mjs` 中的 `officialProfile` mock，可见 `institutionType: 公立大学`、`levels: 本科/硕士/博士`、`tuitionAudit.displayText: 按专业显示 RM 官方总学费` 等原始中文字段。",
+        "查看 `apps/web/src/pages/UniversityPage.vue`，这些字段仍通过 `profileString`、`normalizeList`、`normalizeRows` 或 `stringFrom` 输出。",
+        "使用包含该 `officialProfile` 的学校详情 API 响应打开学校详情页，并切换到 `en` 或 `ms`。",
+        "概览 tab 和申请信息 tab 会出现中文原文或未转换的简体文本。"
+      ],
+      "suggestedFix": "为 `officialProfile` 增加统一本地化格式化层：已知枚举/标签走 i18n key 或映射表，数组和 label/value 行统一经本地化 formatter，`tuitionAudit.displayText` 走 runtime formatter 或明确的四语言 key。浏览器审计应使用包含完整 `officialProfile` 的 mock，并在 `en`、`ms` 断言无 CJK，在 `zh-TW` 断言无已知简体样本。",
+      "autoFixable": true,
+      "confidence": "high",
+      "firstSeenAt": "2026-05-24T12:14:46.206Z",
+      "lastSeenAt": "2026-05-24T12:56:32.194Z",
+      "fixAttempts": 4,
+      "signature": "0fc6e5c7a5",
+      "promptPath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-040-2026-05-24T12-08-18-007Z-REVIEW.prompt.md",
+      "logPath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-040-2026-05-24T12-08-18-007Z-REVIEW.codex.log",
+      "lastMessagePath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-040-2026-05-24T12-08-18-007Z-REVIEW.last-message.txt",
+      "notes": "已修复 selected review issues：为 normalizeAcademicText 增加非英文语言下普通英文专业字段 fallback 保护，并补齐 formatProgramIntake、formatProgramDuration、formatProgramLanguage 的审计、单测和浏览器 mock 覆盖；同时提交了此前相关的 officialProfile、月份归一化和繁体动态文本覆盖改动。",
+      "fixedAt": "2026-05-24T13:02:58.406Z",
+      "resolvedByRunId": "TASK-040-2026-05-24T12-56-32-188Z-FIX-REVIEW"
+    },
+    {
+      "issueId": "TASK-040-REV-004",
+      "taskId": "TASK-040",
+      "taskTitle": "多语言硬编码清理与运行时语言一致性修复",
+      "runId": "TASK-040-2026-05-24T12-16-21-003Z-REVIEW",
+      "category": "i18n",
+      "severity": "high",
+      "status": "fixed",
+      "title": "单词月份在非英文界面仍会裸露英文",
+      "description": "`formatRuntimeDisplayText` 只映射了少量固定短语，且未知英文判断要求至少 2 个英文单词，导致 `February`、`September` 这类 month-only 字符串在 `zh-CN`、`zh-TW`、`ms` 下原样输出。`formatProgramIntake({ intakeMonths: ['February','September'] })` 在中文下仍会生成 `February / 9月` 这类混合语言结果。现有 i18n 和浏览器审计只覆盖 `October intake`、`Refer to official portal/system`，所以门禁没有发现。",
+      "affectedFiles": [
+        "apps/web/src/utils/format.ts",
+        "apps/web/src/pages/UniversityPage.vue",
+        "scripts/task040-i18n-audit.ts",
+        "scripts/task035-final-release-audit.mjs",
+        "tests/web/format.test.ts",
+        "scripts/task014-admin-cms-verify.mjs"
+      ],
+      "affectedPages": [
+        "学校详情页申请信息 tab",
+        "专业列表和专业详情中的入学时间展示",
+        "http://127.0.0.1:5180/universities/universiti-malaya-um"
+      ],
+      "affectedCommands": [
+        "npm run verify:task040:i18n",
+        "npm run verify:task040:browser",
+        "npm run test"
+      ],
+      "reproductionSteps": [
+        "执行 `node --import tsx -e \"import { formatRuntimeDisplayText, formatProgramIntake, officialPageFallback } from './apps/web/src/utils/format.ts'; for (const locale of ['zh-CN','zh-TW','ms']) console.log(locale, formatRuntimeDisplayText('February', officialPageFallback(locale), locale)); for (const locale of ['zh-CN','zh-TW','ms']) console.log(locale, formatRuntimeDisplayText('September', officialPageFallback(locale), locale)); for (const locale of ['zh-CN','zh-TW','ms']) console.log(locale, formatProgramIntake({ intakeMonths: ['February','September'] }, officialPageFallback(locale), locale));\"`",
+        "当前输出中 `February` 和 runtime `September` 在非英文语言下仍保持英文。",
+        "观察 `scripts/task040-i18n-audit.ts` 的 `runtimeDynamicTextSamples`，当前只包含 3 个固定短语。",
+        "观察 `scripts/task035-final-release-audit.mjs`，mock 只使用 `October intake` 和官方入口/系统样本。"
+      ],
+      "suggestedFix": "增加完整月份归一化层，覆盖 12 个月、month-only 字符串、月份列表、`Multiple intakes` 等常见形态，并统一复用于 `formatRuntimeDisplayText`、`normalizeAcademicText`、`formatProgramIntake` 和申请信息 tab。同步扩展 i18n 审计、浏览器 mock 和格式化单测。",
+      "autoFixable": true,
+      "confidence": "high",
+      "firstSeenAt": "2026-05-24T12:21:00.868Z",
+      "lastSeenAt": "2026-05-24T12:56:32.194Z",
+      "fixAttempts": 3,
+      "signature": "1dbd71217f",
+      "promptPath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-040-2026-05-24T12-16-21-003Z-REVIEW.prompt.md",
+      "logPath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-040-2026-05-24T12-16-21-003Z-REVIEW.codex.log",
+      "lastMessagePath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-040-2026-05-24T12-16-21-003Z-REVIEW.last-message.txt",
+      "notes": "已修复 selected review issues：为 normalizeAcademicText 增加非英文语言下普通英文专业字段 fallback 保护，并补齐 formatProgramIntake、formatProgramDuration、formatProgramLanguage 的审计、单测和浏览器 mock 覆盖；同时提交了此前相关的 officialProfile、月份归一化和繁体动态文本覆盖改动。",
+      "fixedAt": "2026-05-24T13:02:58.406Z",
+      "resolvedByRunId": "TASK-040-2026-05-24T12-56-32-188Z-FIX-REVIEW"
+    },
+    {
+      "issueId": "TASK-040-REV-005",
+      "taskId": "TASK-040",
+      "taskTitle": "多语言硬编码清理与运行时语言一致性修复",
+      "runId": "TASK-040-2026-05-24T12-16-21-003Z-REVIEW",
+      "category": "i18n",
+      "severity": "high",
+      "status": "fixed",
+      "title": "officialProfile 多个字段仍绕过本地化直接渲染",
+      "description": "学校详情页仍有多条 `officialProfile` 路径通过 `profileString`、`normalizeList`、`normalizeRows` 或 `stringFrom` 直接输出原始 JSON，例如 `institutionType`、`universityType`、`levels`、`studyModes`、`programmeModes`、`rankings`、`scale`、`contact`、`officialLinks`、`tuitionAudit.displayText`、`applicationDocuments` 和 `chinaRequirement.summary`。历史视觉 mock 中这些字段大量为中文或英文裸值，切换到 `en`、`ms` 或 `zh-TW` 时仍可能出现中文原文、简体残留或英文业务标签。当前 TASK-040 浏览器审计把 `officialProfile` 设为 null，没有覆盖该风险。",
+      "affectedFiles": [
+        "apps/web/src/pages/UniversityPage.vue",
+        "apps/web/src/utils/format.ts",
+        "scripts/task035-final-release-audit.mjs",
+        "scripts/task024-university-detail-visual.mjs",
+        "scripts/task025-program-visual.mjs",
+        "scripts/task027-mobile-visual.mjs",
+        "scripts/task028-final-visual-regression.mjs"
+      ],
+      "affectedPages": [
+        "学校详情页概览 tab",
+        "学校详情页官方基础信息区",
+        "学校详情页官方费用状态卡片",
+        "学校详情页申请信息 tab"
+      ],
+      "affectedCommands": [
+        "npm run verify:task040:browser",
+        "npm run verify:task040:i18n"
+      ],
+      "reproductionSteps": [
+        "查看 `apps/web/src/pages/UniversityPage.vue:555`、`:567`、`:572`、`:577`、`:589`、`:647`、`:704`、`:709`，这些路径仍直接取 `officialProfile` 原始值。",
+        "查看 `scripts/task024-university-detail-visual.mjs` 的 `officialProfile` mock，可见 `institutionType`、`levels`、`tuitionAudit.displayText`、`applicationDocuments`、`chinaRequirement.summary` 等原始中文字段。",
+        "查看 `scripts/task035-final-release-audit.mjs:574` 和 `:623`，当前 TASK-040 浏览器审计 mock 仍为 `officialProfile: null`。",
+        "使用包含完整 `officialProfile` 的学校详情 API 响应打开学校详情页并切换到 `en` 或 `ms`，概览和申请信息区域会出现未本地化原文。"
+      ],
+      "suggestedFix": "为 `officialProfile` 增加统一格式化层：已知枚举和标签走 i18n key 或映射表，数组与 label/value 行统一经过本地化 formatter，`tuitionAudit.displayText` 走 runtime formatter 或四语言 key。浏览器审计应使用包含完整 `officialProfile` 的 mock，并断言 `en/ms` 无 CJK、`zh-TW` 无已知简体样本。",
+      "autoFixable": true,
+      "confidence": "high",
+      "firstSeenAt": "2026-05-24T12:21:00.868Z",
+      "lastSeenAt": "2026-05-24T12:56:32.194Z",
+      "fixAttempts": 3,
+      "signature": "1dbe2e99d2",
+      "promptPath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-040-2026-05-24T12-16-21-003Z-REVIEW.prompt.md",
+      "logPath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-040-2026-05-24T12-16-21-003Z-REVIEW.codex.log",
+      "lastMessagePath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-040-2026-05-24T12-16-21-003Z-REVIEW.last-message.txt",
+      "notes": "已修复 selected review issues：为 normalizeAcademicText 增加非英文语言下普通英文专业字段 fallback 保护，并补齐 formatProgramIntake、formatProgramDuration、formatProgramLanguage 的审计、单测和浏览器 mock 覆盖；同时提交了此前相关的 officialProfile、月份归一化和繁体动态文本覆盖改动。",
+      "fixedAt": "2026-05-24T13:02:58.406Z",
+      "resolvedByRunId": "TASK-040-2026-05-24T12-56-32-188Z-FIX-REVIEW"
+    },
+    {
+      "issueId": "TASK-004-REVIEW-001",
+      "taskId": "TASK-004",
+      "taskTitle": "院校与专业数据模型及 API 升级",
+      "runId": "TASK-004-2026-05-24T12-16-21-003Z-REVIEW",
+      "category": "functional",
+      "severity": "high",
+      "status": "open",
+      "title": "任务要求与实际产出范围不一致",
+      "description": "TASK-004 任务页的实现说明要求升级后端实体、共享类型、种子数据和 API，但实现结果和方案文档都明确声明本轮只产出中文方案文档，未修改 apps/api、apps/web、apps/admin 的业务实现文件，也没有迁移、种子数据或接口验证。如果 TASK-004 是后端实现任务，则当前交付无法满足验收；如果 TASK-004 实际是方案任务，则任务标题、任务类型、实现说明、测试计划和验收标准需要同步改为文档产出口径。",
+      "affectedFiles": [
+        "docs/notion-snapshot/tasks/TASK-004.md",
+        "docs/prd/TASK-004-data-model-api-upgrade-plan.md"
+      ],
+      "affectedPages": [
+        "TASK-004 任务页"
+      ],
+      "affectedCommands": [
+        "npm run build"
+      ],
+      "reproductionSteps": [
+        "读取 docs/notion-snapshot/tasks/TASK-004.md 的实现说明和验收标准。",
+        "对照实现结果中的 scope_note：未修改 apps/web、apps/api、apps/admin 的业务实现文件。",
+        "检查当前 TASK-004 产出文件，仅能确认方案文档，不存在本任务对应的实体、API、种子数据升级提交。"
+      ],
+      "suggestedFix": "先确认 TASK-004 的真实范围：若为后端实现任务，进入 Fix Agent 补齐共享类型、实体、API、种子数据或接口验证；若为方案任务，则更新任务元信息，把实际实现任务保留在后续 API-DATA/API-SEARCH/ADMIN/USER 子任务中。",
+      "autoFixable": false,
+      "confidence": "high",
+      "firstSeenAt": "2026-05-24T12:21:23.267Z",
+      "lastSeenAt": "2026-05-24T12:21:23.267Z",
+      "fixAttempts": 0,
+      "signature": "66dda3570b",
+      "promptPath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-004-2026-05-24T12-16-21-003Z-REVIEW.prompt.md",
+      "logPath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-004-2026-05-24T12-16-21-003Z-REVIEW.codex.log",
+      "lastMessagePath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-004-2026-05-24T12-16-21-003Z-REVIEW.last-message.txt",
+      "notes": "Fix remaining: 已修复 selected autoFixable 问题：新增 POST /tools/cost-estimate 手动费用估算接口并支持 programId 优先使用官方 MYR 总学费；将 supplement 层期望统计调整为当前去重映射后的导入候选口径 104/256；修正根目录 import:static/check:static 参数透传，dry-run 不再误进入实际 import。REVIEW-004/005 在当前基线已验证通过。非自动修复的 TASK-004-REVIEW-001 未处理。"
+    },
+    {
+      "issueId": "TASK-004-REVIEW-002",
+      "taskId": "TASK-004",
+      "taskTitle": "院校与专业数据模型及 API 升级",
+      "runId": "TASK-004-2026-05-24T12-16-21-003Z-REVIEW",
+      "category": "documentation",
+      "severity": "medium",
+      "status": "fixed",
+      "title": "专业详情 API 路由设计存在动态路径冲突",
+      "description": "方案文档同时定义 GET /programs/:id 和 GET /programs/:slug。对 NestJS/Express 这类路由来说，两者是相同的动态路径形态，不能作为两个明确接口稳定区分，会导致后续实现顺序依赖或误匹配。",
+      "affectedFiles": [
+        "docs/prd/TASK-004-data-model-api-upgrade-plan.md"
+      ],
+      "affectedPages": [],
+      "affectedCommands": [],
+      "reproductionSteps": [
+        "打开 docs/prd/TASK-004-data-model-api-upgrade-plan.md 的 9.1 用户端公开 API 表。",
+        "查看专业详情相关两行：GET /programs/:id 与 GET /programs/:slug。",
+        "对照 NestJS 动态路由规则，确认二者路径形态冲突。"
+      ],
+      "suggestedFix": "把接口改为可区分路径，例如 GET /programs/detail/:id 和 GET /programs/:slug，或统一为 GET /programs/:identifier 并在方案中说明 id/slug 判定规则。",
+      "autoFixable": true,
+      "confidence": "high",
+      "firstSeenAt": "2026-05-24T12:21:23.267Z",
+      "lastSeenAt": "2026-05-24T12:21:23.292Z",
+      "fixAttempts": 1,
+      "signature": "456dc04cc9",
+      "promptPath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-004-2026-05-24T12-16-21-003Z-REVIEW.prompt.md",
+      "logPath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-004-2026-05-24T12-16-21-003Z-REVIEW.codex.log",
+      "lastMessagePath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-004-2026-05-24T12-16-21-003Z-REVIEW.last-message.txt",
+      "notes": "已修复 selected review issues：专业详情按 id 路由改为 `/programs/detail/:id`，避免与 `/programs/:slug` 动态路径冲突；新增静态 HTML 数据统计口径说明，明确区分 `universitiesBase`、`universitiesSupplement` 和运行时 merged 数据。TASK-004-REVIEW-001 未处理，因为它不可自动修复且不在 selected review issues 中。Notion 未更新。",
+      "fixedAt": "2026-05-24T12:24:05.321Z",
+      "resolvedByRunId": "TASK-004-2026-05-24T12-21-23-287Z-FIX-REVIEW"
+    },
+    {
+      "issueId": "TASK-004-REVIEW-003",
+      "taskId": "TASK-004",
+      "taskTitle": "院校与专业数据模型及 API 升级",
+      "runId": "TASK-004-2026-05-24T12-16-21-003Z-REVIEW",
+      "category": "data",
+      "severity": "medium",
+      "status": "fixed",
+      "title": "静态数据统计范围需要明确区分 base 与运行时合并数据",
+      "description": "TASK-004 文档以 universitiesBase 的 18 所院校、431 个专业作为导入和 dry-run 口径，但静态 HTML 运行时还有 universitiesSupplement，并通过 dedupeUniversities 合并生成最终页面数据。文档没有清楚说明后续导入为什么只以 universitiesBase 为准，容易让后续 API-IMPORT 任务漏判补充数据是否应导入或排除。",
+      "affectedFiles": [
+        "docs/prd/TASK-004-data-model-api-upgrade-plan.md"
+      ],
+      "affectedPages": [],
+      "affectedCommands": [],
+      "reproductionSteps": [
+        "在静态 HTML 中搜索 const universitiesBase、const universitiesSupplement 和 const universities = dedupeUniversities([...universitiesBase, ...universitiesSupplement])。",
+        "对照 TASK-004 文档 3.1 和 7.5，确认文档把静态页数据规模描述为 18 所院校、431 个专业。",
+        "检查文档未明确说明 universitiesSupplement 是排除项、辅助展示项还是后续导入项。"
+      ],
+      "suggestedFix": "在文档中增加“数据统计口径”章节，明确区分 official base 数据、supplement/demo 数据和运行时 merged 数据，并说明后续导入 dry-run 目标到底是哪一层。",
+      "autoFixable": true,
+      "confidence": "medium",
+      "firstSeenAt": "2026-05-24T12:21:23.267Z",
+      "lastSeenAt": "2026-05-24T12:21:23.292Z",
+      "fixAttempts": 1,
+      "signature": "c0698c2f34",
+      "promptPath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-004-2026-05-24T12-16-21-003Z-REVIEW.prompt.md",
+      "logPath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-004-2026-05-24T12-16-21-003Z-REVIEW.codex.log",
+      "lastMessagePath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-004-2026-05-24T12-16-21-003Z-REVIEW.last-message.txt",
+      "notes": "已修复 selected review issues：专业详情按 id 路由改为 `/programs/detail/:id`，避免与 `/programs/:slug` 动态路径冲突；新增静态 HTML 数据统计口径说明，明确区分 `universitiesBase`、`universitiesSupplement` 和运行时 merged 数据。TASK-004-REVIEW-001 未处理，因为它不可自动修复且不在 selected review issues 中。Notion 未更新。",
+      "fixedAt": "2026-05-24T12:24:05.321Z",
+      "resolvedByRunId": "TASK-004-2026-05-24T12-21-23-287Z-FIX-REVIEW"
+    },
+    {
+      "issueId": "TASK-006-REVIEW-001",
+      "taskId": "TASK-006",
+      "taskTitle": "用户端页面结构与静态样式 1:1 还原",
+      "runId": "TASK-006-2026-05-24T12-16-21-003Z-REVIEW",
+      "category": "functional",
+      "severity": "high",
+      "status": "open",
+      "title": "实现范围未满足 TASK-006 前端还原要求",
+      "description": "任务要求升级 apps/web，把静态 HTML 的页面结构和视觉风格迁移到 Vue 3 用户端；但实现结果明确写明未修改 apps/web、apps/api、apps/admin 的实现文件，仅产出规划文档。这不满足首页、筛选区、院校/专业卡片、详情弹窗、工具弹窗与静态页视觉一致的验收标准。",
+      "affectedFiles": [
+        "apps/web",
+        "docs/notion-snapshot/tasks/TASK-006.md",
+        "docs/prd/TASK-006-user-web-static-style-restoration-plan.md"
+      ],
+      "affectedPages": [
+        "用户端首页",
+        "院校筛选区",
+        "院校详情页",
+        "专业详情弹窗",
+        "费用估算/推荐/登录弹窗"
+      ],
+      "affectedCommands": [
+        "npm run dev:web",
+        "npm run build"
+      ],
+      "reproductionSteps": [
+        "读取 docs/notion-snapshot/tasks/TASK-006.md 的实现说明和验收标准。",
+        "读取实现结果 JSON，确认 business_code_changed 为否。",
+        "查看 Git 记录，未发现 TASK-006 对 apps/web 的任务级实现提交。"
+      ],
+      "suggestedFix": "将 TASK-006 退回实现阶段，按静态 HTML 视觉基准实际修改 apps/web；如果本轮真实意图只是规划任务，则应拆分或重命名任务，并修改验收标准，不能以当前 TASK-006 前端实现任务通过评审。",
+      "autoFixable": false,
+      "confidence": "high",
+      "firstSeenAt": "2026-05-24T12:22:34.716Z",
+      "lastSeenAt": "2026-05-24T12:22:34.716Z",
+      "fixAttempts": 0,
+      "signature": "074b4295d1",
+      "promptPath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-006-2026-05-24T12-16-21-003Z-REVIEW.prompt.md",
+      "logPath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-006-2026-05-24T12-16-21-003Z-REVIEW.codex.log",
+      "lastMessagePath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-006-2026-05-24T12-16-21-003Z-REVIEW.last-message.txt",
+      "notes": "Fix remaining: 已仅修复 selected issue `TASK-006-REVIEW-002`：复跑浏览器视觉验收并生成本轮截图证据，追加到 TASK-006 本地中文任务快照和规划文档；未处理不可自动修复的 `TASK-006-REVIEW-001`、`TASK-006-REVIEW-003`，未修改业务实现文件。"
+    },
+    {
+      "issueId": "TASK-006-REVIEW-002",
+      "taskId": "TASK-006",
+      "taskTitle": "用户端页面结构与静态样式 1:1 还原",
+      "runId": "TASK-006-2026-05-24T12-16-21-003Z-REVIEW",
+      "category": "test",
+      "severity": "high",
+      "status": "fixed",
+      "title": "缺少 TASK-006 当轮视觉验收证据",
+      "description": "TASK-006 测试计划要求启动用户端和静态 HTML，使用浏览器截图对比桌面端和移动端关键区域。实现结果只记录 npm run build 通过，没有提供当轮截图路径、视觉差异记录或人工对比结论。",
+      "affectedFiles": [
+        "docs/notion-snapshot/tasks/TASK-006.md",
+        "docs/prd/TASK-006-user-web-static-style-restoration-plan.md",
+        "output/playwright"
+      ],
+      "affectedPages": [
+        "首页首屏",
+        "搜索筛选区",
+        "院校详情",
+        "专业列表",
+        "专业详情弹窗",
+        "工具弹窗"
+      ],
+      "affectedCommands": [
+        "npm run build",
+        "npm run dev:web",
+        "Playwright 截图命令"
+      ],
+      "reproductionSteps": [
+        "检查 Implementation Result JSON 的 outputs 和 verification。",
+        "检查 TASK-006 本地任务页验证结果。",
+        "未发现 TASK-006 当轮静态页与 Vue 页面同视口截图对比产物。"
+      ],
+      "suggestedFix": "补充可复现的浏览器视觉验收：至少覆盖 1440x1000 和 390x844 的首页、筛选列表、院校详情、专业弹窗和工具弹窗，并把截图路径与差异结论写入中文验收记录。",
+      "autoFixable": true,
+      "confidence": "high",
+      "firstSeenAt": "2026-05-24T12:22:34.716Z",
+      "lastSeenAt": "2026-05-24T12:44:12.738Z",
+      "fixAttempts": 2,
+      "signature": "c6aa20091e",
+      "promptPath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-006-2026-05-24T12-16-21-003Z-REVIEW.prompt.md",
+      "logPath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-006-2026-05-24T12-16-21-003Z-REVIEW.codex.log",
+      "lastMessagePath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-006-2026-05-24T12-16-21-003Z-REVIEW.last-message.txt",
+      "notes": "已仅修复 selected issue `TASK-006-REVIEW-002`：复跑浏览器视觉验收并生成本轮截图证据，追加到 TASK-006 本地中文任务快照和规划文档；未处理不可自动修复的 `TASK-006-REVIEW-001`、`TASK-006-REVIEW-003`，未修改业务实现文件。",
+      "fixedAt": "2026-05-24T12:49:44.346Z",
+      "resolvedByRunId": "TASK-006-2026-05-24T12-44-12-733Z-FIX-REVIEW"
+    },
+    {
+      "issueId": "TASK-006-REVIEW-003",
+      "taskId": "TASK-006",
+      "taskTitle": "用户端页面结构与静态样式 1:1 还原",
+      "runId": "TASK-006-2026-05-24T12-16-21-003Z-REVIEW",
+      "category": "automation",
+      "severity": "medium",
+      "status": "open",
+      "title": "实现结果中的 Git 状态判断不准确",
+      "description": "实现结果写明“当前目录不是 Git 仓库，无法生成本地 commit”，但本轮 Review 在 D:\\mydev\\study-malaysia 成功执行 git rev-parse，并确认该目录是 Git 仓库。这会导致任务状态、提交记录和自动化验收链路失真。",
+      "affectedFiles": [
+        "docs/notion-snapshot/tasks/TASK-006.md",
+        "automation result metadata"
+      ],
+      "affectedPages": [],
+      "affectedCommands": [
+        "git rev-parse --show-toplevel",
+        "git status --short"
+      ],
+      "reproductionSteps": [
+        "在 D:\\mydev\\study-malaysia 执行 git rev-parse --show-toplevel。",
+        "命令返回 D:/mydev/study-malaysia，说明目录是 Git 仓库。",
+        "对比 Implementation Result JSON 的 commit 字段。"
+      ],
+      "suggestedFix": "修正自动化运行环境或 Git 检测逻辑；通过验证后按项目工作流提交任务相关改动，或者在任务记录中准确说明未提交的真实原因。",
+      "autoFixable": false,
+      "confidence": "high",
+      "firstSeenAt": "2026-05-24T12:22:34.716Z",
+      "lastSeenAt": "2026-05-24T12:22:34.716Z",
+      "fixAttempts": 0,
+      "signature": "a23ddbcb7f",
+      "promptPath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-006-2026-05-24T12-16-21-003Z-REVIEW.prompt.md",
+      "logPath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-006-2026-05-24T12-16-21-003Z-REVIEW.codex.log",
+      "lastMessagePath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-006-2026-05-24T12-16-21-003Z-REVIEW.last-message.txt",
+      "notes": "Fix remaining: 已仅修复 selected issue `TASK-006-REVIEW-002`：复跑浏览器视觉验收并生成本轮截图证据，追加到 TASK-006 本地中文任务快照和规划文档；未处理不可自动修复的 `TASK-006-REVIEW-001`、`TASK-006-REVIEW-003`，未修改业务实现文件。"
+    },
+    {
+      "issueId": "TASK-004-REVIEW-001",
+      "taskId": "TASK-004",
+      "taskTitle": "院校与专业数据模型及 API 升级",
+      "runId": "TASK-004-2026-05-24T12-24-05-342Z-REVIEW",
+      "category": "functional",
+      "severity": "high",
+      "status": "open",
+      "title": "任务要求与实际产出范围不一致",
+      "description": "TASK-004 任务页的实现说明要求升级后端实体、共享类型、种子数据和 API，但当前交付仍仅修改 `docs/prd/TASK-004-data-model-api-upgrade-plan.md`。本轮检查 `apps/api`、`packages/shared`、`apps/admin` 没有 TASK-004 相关实现差异，也没有迁移、种子数据导入或接口验证证据。因此如果 TASK-004 是后端实现任务，当前不能通过验收；如果它实际只是方案任务，则任务元信息、验收标准和测试计划需要改为文档产出口径。",
+      "affectedFiles": [
+        "docs/notion-snapshot/tasks/TASK-004.md",
+        "docs/prd/TASK-004-data-model-api-upgrade-plan.md",
+        "apps/api",
+        "packages/shared",
+        "apps/admin"
+      ],
+      "affectedPages": [
+        "TASK-004 任务页"
+      ],
+      "affectedCommands": [
+        "npm run build",
+        "npm run seed",
+        "npm run check:static",
+        "API 接口验证命令"
+      ],
+      "reproductionSteps": [
+        "读取 `docs/notion-snapshot/tasks/TASK-004.md`，确认任务类型为后端，且实现说明要求升级实体、共享类型、种子数据和 API。",
+        "读取实现结果，确认本轮声明只产出中文方案文档，未修改业务实现文件。",
+        "执行 `git diff --name-only -- apps/api packages/shared apps/admin`，结果为空。",
+        "检查 `docs/prd/TASK-004-data-model-api-upgrade-plan.md`，文档自身也把实体、API、导入和管理端能力拆为后续任务项。"
+      ],
+      "suggestedFix": "先人工确认 TASK-004 的真实范围：若它是后端实现任务，应退回实现阶段，补齐共享类型、TypeORM 实体/DTO、公开 API、管理端维护接口、种子或静态导入验证；若它是方案任务，应更新 TASK-004 任务标题、任务类型、实现说明、测试计划和验收标准，把实际后端实现保留在后续 API-DATA/API-SEARCH/API-IMPORT/ADMIN 子任务中。",
+      "autoFixable": false,
+      "confidence": "high",
+      "firstSeenAt": "2026-05-24T12:26:09.639Z",
+      "lastSeenAt": "2026-05-24T12:26:09.639Z",
+      "fixAttempts": 0,
+      "signature": "29f3866dfa",
+      "promptPath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-004-2026-05-24T12-24-05-342Z-REVIEW.prompt.md",
+      "logPath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-004-2026-05-24T12-24-05-342Z-REVIEW.codex.log",
+      "lastMessagePath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-004-2026-05-24T12-24-05-342Z-REVIEW.last-message.txt",
+      "notes": "Fix remaining: 已修复 selected autoFixable 问题：新增 POST /tools/cost-estimate 手动费用估算接口并支持 programId 优先使用官方 MYR 总学费；将 supplement 层期望统计调整为当前去重映射后的导入候选口径 104/256；修正根目录 import:static/check:static 参数透传，dry-run 不再误进入实际 import。REVIEW-004/005 在当前基线已验证通过。非自动修复的 TASK-004-REVIEW-001 未处理。"
+    },
+    {
+      "issueId": "TASK-004-REVIEW-001",
+      "taskId": "TASK-004",
+      "taskTitle": "院校与专业数据模型及 API 升级",
+      "runId": "TASK-004-2026-05-24T12-39-00-297Z-REVIEW",
+      "category": "documentation",
+      "severity": "medium",
+      "status": "open",
+      "title": "TASK-004 任务记录仍与当前实现基线不一致",
+      "description": "`docs/notion-snapshot/tasks/TASK-004.md` 仍写明本任务只产出方案文档，且“未修改 apps/web、apps/api、apps/admin 的业务实现文件”。但当前 git 历史和代码基线已经包含共享类型、TypeORM 实体、公开 API、静态 HTML 导入和管理端字段维护实现。这会让 Notion/本地快照作为中文任务来源时无法准确反映 TASK-004 的真实交付范围，也会导致旧 Review issue 无法被准确关闭或追溯。",
+      "affectedFiles": [
+        "docs/notion-snapshot/tasks/TASK-004.md",
+        "docs/notion-snapshot/review-issues.json",
+        "docs/prd/TASK-004-data-model-api-upgrade-plan.md"
+      ],
+      "affectedPages": [
+        "TASK-004 任务页"
+      ],
+      "affectedCommands": [
+        "git log --oneline -- apps/api packages/shared apps/admin docs/prd/TASK-004-data-model-api-upgrade-plan.md",
+        "git status --short"
+      ],
+      "reproductionSteps": [
+        "读取 `docs/notion-snapshot/tasks/TASK-004.md`，确认验证结果声明未修改业务实现文件。",
+        "执行 `git log --oneline -- apps/api packages/shared apps/admin docs/prd/TASK-004-data-model-api-upgrade-plan.md`。",
+        "可见当前代码基线已有 `feat(api): land official catalog fields`、`Add static HTML catalog import`、`feat(api): implement public catalog search filters`、`feat(admin): support official field maintenance` 等实现提交。",
+        "对比任务页的验证结果，确认任务记录与当前实现基线不一致。"
+      ],
+      "suggestedFix": "人工确认哪些提交归属 TASK-004，然后更新实际 Notion 页面和本地任务快照：补充关联 commit、真实实现范围、验证命令和剩余风险；确认后关闭旧的范围不一致 Review issue。",
+      "autoFixable": false,
+      "confidence": "high",
+      "firstSeenAt": "2026-05-24T12:43:58.062Z",
+      "lastSeenAt": "2026-05-24T12:43:58.062Z",
+      "fixAttempts": 0,
+      "signature": "ee0c74d3ac",
+      "promptPath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-004-2026-05-24T12-39-00-297Z-REVIEW.prompt.md",
+      "logPath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-004-2026-05-24T12-39-00-297Z-REVIEW.codex.log",
+      "lastMessagePath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-004-2026-05-24T12-39-00-297Z-REVIEW.last-message.txt",
+      "notes": "Fix remaining: 已修复 selected autoFixable 问题：新增 POST /tools/cost-estimate 手动费用估算接口并支持 programId 优先使用官方 MYR 总学费；将 supplement 层期望统计调整为当前去重映射后的导入候选口径 104/256；修正根目录 import:static/check:static 参数透传，dry-run 不再误进入实际 import。REVIEW-004/005 在当前基线已验证通过。非自动修复的 TASK-004-REVIEW-001 未处理。"
+    },
+    {
+      "issueId": "TASK-004-REVIEW-004",
+      "taskId": "TASK-004",
+      "taskTitle": "院校与专业数据模型及 API 升级",
+      "runId": "TASK-004-2026-05-24T12-39-00-297Z-REVIEW",
+      "category": "data",
+      "severity": "high",
+      "status": "fixed",
+      "title": "静态导入实现未按 base/supplement/merged 三层口径输出和控制导入",
+      "description": "TASK-004 文档已明确：`universitiesBase` 是默认自动导入候选，`universitiesSupplement` 需单独统计并经管理端确认后再导入，dry-run 至少输出 base、supplement 和 merged 三组统计。但 `apps/api/src/db/static-html-catalog.ts` 当前读取 base 和 supplement 后直接 `dedupeUniversities([...base, ...supplement])`，`STATIC_HTML_EXPECTED_STATS` 也只校验 merged 口径 119/687。`npm run check:static` 输出中没有 base/supplement 分层统计，后续导入会把 supplement 或演示兼容数据静默合并进候选数据，偏离文档定义的第一阶段事实源。",
+      "affectedFiles": [
+        "apps/api/src/db/static-html-catalog.ts",
+        "apps/api/src/db/import-static-html.ts",
+        "apps/api/src/db/verify-static-html.ts",
+        "apps/api/src/db/static-html-importer.ts",
+        "tests/api/static-html-importer.test.ts",
+        "docs/prd/TASK-004-data-model-api-upgrade-plan.md"
+      ],
+      "affectedPages": [
+        "静态 HTML 数据导入 dry-run",
+        "管理端后续导入校验工作台"
+      ],
+      "affectedCommands": [
+        "npm run check:static",
+        "npm run import:static -- --dry-run",
+        "npm run import:static"
+      ],
+      "reproductionSteps": [
+        "执行 `npm run check:static`。",
+        "查看输出，只有 `universityCount: 119`、`programCount: 687` 等 merged 统计。",
+        "查看 `apps/api/src/db/static-html-catalog.ts`，确认 `buildRawUniversities` 直接合并 `universitiesBase` 与 `universitiesSupplement`。",
+        "对照 `docs/prd/TASK-004-data-model-api-upgrade-plan.md` 的 3.1.1，确认实现没有输出 base、supplement、merged 三组统计，也没有默认只导入 base。"
+      ],
+      "suggestedFix": "调整静态解析模型，保留 `base`、`supplement`、`merged` 三个 catalog layer；dry-run 输出三组统计、重复项和覆盖项；默认导入只允许 `base`，除非显式传入并记录经管理端确认的 supplement 导入策略；补充测试覆盖三层统计和默认导入层级。",
+      "autoFixable": true,
+      "confidence": "high",
+      "firstSeenAt": "2026-05-24T12:43:58.062Z",
+      "lastSeenAt": "2026-05-24T12:55:35.888Z",
+      "fixAttempts": 2,
+      "signature": "115b597577",
+      "promptPath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-004-2026-05-24T12-39-00-297Z-REVIEW.prompt.md",
+      "logPath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-004-2026-05-24T12-39-00-297Z-REVIEW.codex.log",
+      "lastMessagePath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-004-2026-05-24T12-39-00-297Z-REVIEW.last-message.txt",
+      "notes": "已修复 selected autoFixable 问题：新增 POST /tools/cost-estimate 手动费用估算接口并支持 programId 优先使用官方 MYR 总学费；将 supplement 层期望统计调整为当前去重映射后的导入候选口径 104/256；修正根目录 import:static/check:static 参数透传，dry-run 不再误进入实际 import。REVIEW-004/005 在当前基线已验证通过。非自动修复的 TASK-004-REVIEW-001 未处理。",
+      "fixedAt": "2026-05-24T13:02:39.045Z",
+      "resolvedByRunId": "TASK-004-2026-05-24T12-55-35-882Z-FIX-REVIEW"
+    },
+    {
+      "issueId": "TASK-004-REVIEW-005",
+      "taskId": "TASK-004",
+      "taskTitle": "院校与专业数据模型及 API 升级",
+      "runId": "TASK-004-2026-05-24T12-39-00-297Z-REVIEW",
+      "category": "functional",
+      "severity": "high",
+      "status": "fixed",
+      "title": "对比 API 上限实现为 3，与验收和静态页要求的 4 不一致",
+      "description": "TASK-004 文档多处要求对比最多 4 所院校，静态 HTML 中 `toggleCompare` 也允许 `S.compareList.length < 4`。但 `apps/api/src/compare/compare.service.ts` 中 `MAX_COMPARE_ITEMS = 3`，服务端会在第 4 所院校加入时拒绝或截断。用户端本地状态和后端登录持久化状态会出现数量上限不一致。",
+      "affectedFiles": [
+        "apps/api/src/compare/compare.service.ts",
+        "docs/prd/TASK-004-data-model-api-upgrade-plan.md",
+        "D:\\mydev\\StudyMY_UM_v58_na_display_tidy.html"
+      ],
+      "affectedPages": [
+        "院校对比功能",
+        "登录后对比同步"
+      ],
+      "affectedCommands": [
+        "npm test",
+        "对比 API 手工验证"
+      ],
+      "reproductionSteps": [
+        "查看 `docs/prd/TASK-004-data-model-api-upgrade-plan.md`，确认对比最多 4 所。",
+        "查看 `D:\\mydev\\StudyMY_UM_v58_na_display_tidy.html`，确认静态页 `S.compareList.length < 4`。",
+        "查看 `apps/api/src/compare/compare.service.ts`，确认 `MAX_COMPARE_ITEMS = 3`。",
+        "调用对比新增或 merge 接口加入 4 所院校，服务端会按 3 所上限处理。"
+      ],
+      "suggestedFix": "把 `MAX_COMPARE_ITEMS` 调整为 4，并补充 compare service 测试：新增第 4 所成功，第 5 所失败；merge 场景最多保留 4 所且返回 `maxItems: 4`。",
+      "autoFixable": true,
+      "confidence": "high",
+      "firstSeenAt": "2026-05-24T12:43:58.062Z",
+      "lastSeenAt": "2026-05-24T12:55:35.888Z",
+      "fixAttempts": 2,
+      "signature": "ab1a320e1b",
+      "promptPath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-004-2026-05-24T12-39-00-297Z-REVIEW.prompt.md",
+      "logPath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-004-2026-05-24T12-39-00-297Z-REVIEW.codex.log",
+      "lastMessagePath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-004-2026-05-24T12-39-00-297Z-REVIEW.last-message.txt",
+      "notes": "已修复 selected autoFixable 问题：新增 POST /tools/cost-estimate 手动费用估算接口并支持 programId 优先使用官方 MYR 总学费；将 supplement 层期望统计调整为当前去重映射后的导入候选口径 104/256；修正根目录 import:static/check:static 参数透传，dry-run 不再误进入实际 import。REVIEW-004/005 在当前基线已验证通过。非自动修复的 TASK-004-REVIEW-001 未处理。",
+      "fixedAt": "2026-05-24T13:02:39.045Z",
+      "resolvedByRunId": "TASK-004-2026-05-24T12-55-35-882Z-FIX-REVIEW"
+    },
+    {
+      "issueId": "TASK-004-REVIEW-006",
+      "taskId": "TASK-004",
+      "taskTitle": "院校与专业数据模型及 API 升级",
+      "runId": "TASK-004-2026-05-24T12-39-00-297Z-REVIEW",
+      "category": "functional",
+      "severity": "medium",
+      "status": "fixed",
+      "title": "费用估算公开 API 未覆盖 TASK-004 方案中的手动输入接口",
+      "description": "TASK-004 方案要求 `POST /tools/cost-estimate` 支持静态页手动输入，并结合官方专业总学费和生活成本估算。当前后端只暴露 `GET /programs/cost-estimate/:id`，且实现基于 `annualTuitionCny * durationYears`，没有 `tools` 控制器，也没有手动输入、币种、杂费或 official MYR 总学费参数的 POST 契约。",
+      "affectedFiles": [
+        "apps/api/src/programs/programs.controller.ts",
+        "apps/api/src/programs/programs.service.ts",
+        "docs/prd/TASK-004-data-model-api-upgrade-plan.md"
+      ],
+      "affectedPages": [
+        "费用估算弹窗",
+        "规划工具"
+      ],
+      "affectedCommands": [
+        "rg -n \"tools/cost-estimate|cost-estimate\" apps/api/src docs/prd/TASK-004-data-model-api-upgrade-plan.md"
+      ],
+      "reproductionSteps": [
+        "查看 TASK-004 方案 9.1，确认存在 `POST /tools/cost-estimate`。",
+        "在 `apps/api/src` 搜索 `tools/cost-estimate`，没有控制器或服务实现。",
+        "查看 `ProgramsController`，只有 `GET /programs/cost-estimate/:id`。",
+        "查看 `ProgramsService.costEstimate`，确认只按专业 id 和 CNY 年学费估算，不能接收静态页费用弹窗的手动输入。"
+      ],
+      "suggestedFix": "新增 `/tools/cost-estimate` POST 契约，DTO 覆盖 tuition、currency、duration、livingCost、miscCost、programId 等输入；当传入 programId 时优先使用官方 MYR 总学费和来源状态，同时保留手动输入估算；补充 API 单元测试或接口验证脚本。",
+      "autoFixable": true,
+      "confidence": "medium",
+      "firstSeenAt": "2026-05-24T12:43:58.062Z",
+      "lastSeenAt": "2026-05-24T12:55:35.888Z",
+      "fixAttempts": 2,
+      "signature": "ca6be3194f",
+      "promptPath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-004-2026-05-24T12-39-00-297Z-REVIEW.prompt.md",
+      "logPath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-004-2026-05-24T12-39-00-297Z-REVIEW.codex.log",
+      "lastMessagePath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-004-2026-05-24T12-39-00-297Z-REVIEW.last-message.txt",
+      "notes": "已修复 selected autoFixable 问题：新增 POST /tools/cost-estimate 手动费用估算接口并支持 programId 优先使用官方 MYR 总学费；将 supplement 层期望统计调整为当前去重映射后的导入候选口径 104/256；修正根目录 import:static/check:static 参数透传，dry-run 不再误进入实际 import。REVIEW-004/005 在当前基线已验证通过。非自动修复的 TASK-004-REVIEW-001 未处理。",
+      "fixedAt": "2026-05-24T13:02:39.045Z",
+      "resolvedByRunId": "TASK-004-2026-05-24T12-55-35-882Z-FIX-REVIEW"
+    },
+    {
+      "issueId": "TASK-006-REVIEW-001",
+      "taskId": "TASK-006",
+      "taskTitle": "用户端页面结构与静态样式 1:1 还原",
+      "runId": "TASK-006-2026-05-24T12-39-00-297Z-REVIEW",
+      "category": "functional",
+      "severity": "high",
+      "status": "open",
+      "title": "实现范围未满足 TASK-006 前端还原要求",
+      "description": "TASK-006 要求升级 apps/web，把静态 HTML 的页面结构和视觉风格迁移到 Vue 3 用户端；但当前 HEAD 提交 `e1d594f` 仅补充 `docs/notion-snapshot/tasks/TASK-006.md` 和 `docs/prd/TASK-006-user-web-static-style-restoration-plan.md` 的视觉证据记录。任务页与规划文档仍明确说明本轮未修改 apps/web、apps/api、apps/admin 实现文件，因此不能作为 TASK-006 前端实现任务通过验收。",
+      "affectedFiles": [
+        "apps/web",
+        "docs/notion-snapshot/tasks/TASK-006.md",
+        "docs/prd/TASK-006-user-web-static-style-restoration-plan.md"
+      ],
+      "affectedPages": [
+        "用户端首页",
+        "搜索筛选区",
+        "院校卡片",
+        "院校详情页",
+        "专业详情弹窗",
+        "费用估算弹窗",
+        "智能推荐弹窗",
+        "登录弹窗"
+      ],
+      "affectedCommands": [
+        "npm run dev:web",
+        "npm run verify:task028",
+        "npm run build"
+      ],
+      "reproductionSteps": [
+        "读取 docs/notion-snapshot/tasks/TASK-006.md，确认任务实现说明要求升级 apps/web。",
+        "读取 docs/prd/TASK-006-user-web-static-style-restoration-plan.md，确认文档声明本任务不修改业务实现文件。",
+        "执行 git show --stat --oneline HEAD，确认当前 TASK-006 相关提交只修改两份文档。",
+        "对照验收标准，确认首页、筛选区、卡片、详情弹窗和工具弹窗的任务级实现仍未由 TASK-006 提交交付。"
+      ],
+      "suggestedFix": "先人工确认 TASK-006 的真实任务口径。若 TASK-006 是前端实现任务，应退回实现阶段，按静态 HTML 视觉基准实际修改 apps/web，并提交可追踪实现改动；若它实际只是规划任务，应修改任务标题、任务类型、实现说明、测试计划和验收标准，不要按前端实现任务评审。",
+      "autoFixable": false,
+      "confidence": "high",
+      "firstSeenAt": "2026-05-24T12:44:12.710Z",
+      "lastSeenAt": "2026-05-24T12:44:12.710Z",
+      "fixAttempts": 0,
+      "signature": "aa622ba963",
+      "promptPath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-006-2026-05-24T12-39-00-297Z-REVIEW.prompt.md",
+      "logPath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-006-2026-05-24T12-39-00-297Z-REVIEW.codex.log",
+      "lastMessagePath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-006-2026-05-24T12-39-00-297Z-REVIEW.last-message.txt",
+      "notes": "Fix remaining: 已仅修复 selected issue `TASK-006-REVIEW-002`：复跑浏览器视觉验收并生成本轮截图证据，追加到 TASK-006 本地中文任务快照和规划文档；未处理不可自动修复的 `TASK-006-REVIEW-001`、`TASK-006-REVIEW-003`，未修改业务实现文件。"
+    },
+    {
+      "issueId": "TASK-006-REVIEW-003",
+      "taskId": "TASK-006",
+      "taskTitle": "用户端页面结构与静态样式 1:1 还原",
+      "runId": "TASK-006-2026-05-24T12-39-00-297Z-REVIEW",
+      "category": "automation",
+      "severity": "medium",
+      "status": "open",
+      "title": "实现结果中的 Git 状态判断仍需纠正",
+      "description": "历史实现结果曾写明“当前目录不是 Git 仓库，无法生成本地 commit”，但本轮复核 `git rev-parse --show-toplevel` 返回 D:/mydev/study-malaysia，且 HEAD 已存在 TASK-006 文档证据提交。这说明原自动化 Git 状态判断不准确。当前任务页的关联 Commit 仍为空，自动化验收链路没有把真实提交状态完整落到任务记录中。",
+      "affectedFiles": [
+        "docs/notion-snapshot/tasks/TASK-006.md",
+        "automation result metadata"
+      ],
+      "affectedPages": [],
+      "affectedCommands": [
+        "git rev-parse --show-toplevel",
+        "git status --short",
+        "git show --stat --oneline HEAD"
+      ],
+      "reproductionSteps": [
+        "在 D:\\mydev\\study-malaysia 执行 git rev-parse --show-toplevel。",
+        "确认返回 D:/mydev/study-malaysia，说明目录是 Git 仓库。",
+        "执行 git show --stat --oneline HEAD，确认已有 `docs: add TASK-006 visual review evidence` 提交。",
+        "对比 TASK-006 任务记录和历史实现结果，确认 Git 状态与提交关联信息没有被准确记录。"
+      ],
+      "suggestedFix": "修正自动化运行环境或 Git 检测逻辑，并在任务记录中准确写入实际 commit；如果某次运行无法提交，应记录真实原因，而不是误判当前目录不是 Git 仓库。",
+      "autoFixable": false,
+      "confidence": "high",
+      "firstSeenAt": "2026-05-24T12:44:12.710Z",
+      "lastSeenAt": "2026-05-24T12:44:12.710Z",
+      "fixAttempts": 0,
+      "signature": "1f10d94e20",
+      "promptPath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-006-2026-05-24T12-39-00-297Z-REVIEW.prompt.md",
+      "logPath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-006-2026-05-24T12-39-00-297Z-REVIEW.codex.log",
+      "lastMessagePath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-006-2026-05-24T12-39-00-297Z-REVIEW.last-message.txt",
+      "notes": "Fix remaining: 已仅修复 selected issue `TASK-006-REVIEW-002`：复跑浏览器视觉验收并生成本轮截图证据，追加到 TASK-006 本地中文任务快照和规划文档；未处理不可自动修复的 `TASK-006-REVIEW-001`、`TASK-006-REVIEW-003`，未修改业务实现文件。"
+    },
+    {
+      "issueId": "TASK-040-REV-006",
+      "taskId": "TASK-040",
+      "taskTitle": "多语言硬编码清理与运行时语言一致性修复",
+      "runId": "TASK-040-2026-05-24T12-39-00-297Z-REVIEW",
+      "category": "i18n",
+      "severity": "high",
+      "status": "fixed",
+      "title": "月份归一化会误处理普通英文句子并绕过非英文 fallback",
+      "description": "`normalizeRuntimeMonthText` 会在任意文本中替换 month token，且 `formatRuntimeMonthDisplayText` 一旦 changed 就直接返回，导致 `Applications may be submitted through the official system.` 在中文界面输出成 `Applications 5月 be submitted through the official system.`，马来文界面输出成 `Applications Mei be submitted...`。这破坏了 TASK-040 要求的运行时语言一致性，也绕过了未知英文在非英文语言下应回落到本地化 fallback 的保护。",
+      "affectedFiles": [
+        "apps/web/src/utils/format.ts",
+        "scripts/task040-i18n-audit.ts",
+        "scripts/task035-final-release-audit.mjs",
+        "tests/web/format.test.ts"
+      ],
+      "affectedPages": [
+        "学校详情页申请信息 tab",
+        "学校详情页 officialProfile 备注、费用、申请周期字段",
+        "专业列表和专业详情中经过 normalizeAcademicText 的动态字段"
+      ],
+      "affectedCommands": [
+        "npm run verify:task040:i18n",
+        "npm run verify:task040:browser",
+        "npm run test"
+      ],
+      "reproductionSteps": [
+        "执行 `node --import tsx -e \"import { formatRuntimeDisplayText, officialPageFallback } from './apps/web/src/utils/format.ts'; for (const locale of ['zh-CN','zh-TW','ms']) console.log(locale, formatRuntimeDisplayText('Applications may be submitted through the official system.', officialPageFallback(locale), locale));\"`",
+        "观察 zh-CN/zh-TW 输出包含 `Applications 5月 be submitted...`，ms 输出包含 `Applications Mei be submitted...`。",
+        "再执行相同命令测试 `March requirements are subject to change.`，会得到 `3月 requirements...` 或 `Mac requirements...`。",
+        "当前 `runtimeDynamicTextSamples` 只覆盖 month-only、月份列表和固定 portal/system 样本，因此门禁没有发现该问题。"
+      ],
+      "suggestedFix": "把月份归一化限制在明确的月份场景，例如完整 month-only、月份列表、`<Month> intake`、`Semester N (<Month>) intake` 和 `Multiple intakes`。对于包含其他英文单词的文本，月份替换后仍必须执行非英文 unknown-English fallback 检查。同步新增 `Applicants may...`、`May be...`、`March requirements...` 这类反例到 i18n audit、format 单测和浏览器 mock。",
+      "autoFixable": true,
+      "confidence": "high",
+      "firstSeenAt": "2026-05-24T12:45:13.607Z",
+      "lastSeenAt": "2026-05-24T12:56:32.194Z",
+      "fixAttempts": 2,
+      "signature": "d2b419b1cb",
+      "promptPath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-040-2026-05-24T12-39-00-297Z-REVIEW.prompt.md",
+      "logPath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-040-2026-05-24T12-39-00-297Z-REVIEW.codex.log",
+      "lastMessagePath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-040-2026-05-24T12-39-00-297Z-REVIEW.last-message.txt",
+      "notes": "已修复 selected review issues：为 normalizeAcademicText 增加非英文语言下普通英文专业字段 fallback 保护，并补齐 formatProgramIntake、formatProgramDuration、formatProgramLanguage 的审计、单测和浏览器 mock 覆盖；同时提交了此前相关的 officialProfile、月份归一化和繁体动态文本覆盖改动。",
+      "fixedAt": "2026-05-24T13:02:58.406Z",
+      "resolvedByRunId": "TASK-040-2026-05-24T12-56-32-188Z-FIX-REVIEW"
+    },
+    {
+      "issueId": "TASK-040-REV-007",
+      "taskId": "TASK-040",
+      "taskTitle": "多语言硬编码清理与运行时语言一致性修复",
+      "runId": "TASK-040-2026-05-24T12-39-00-297Z-REVIEW",
+      "category": "i18n",
+      "severity": "high",
+      "status": "fixed",
+      "title": "完整 officialProfile 仍缺少浏览器覆盖，繁体动态文本存在简体残留",
+      "description": "当前 TASK-040 浏览器审计的大学 mock 仍为 `officialProfile: null`，没有覆盖上一轮要求的完整 officialProfile 路径。代码虽然新增了 profile formatter，但动态简体资料走 `toTraditionalText` 时仍会残留简体词，例如 `中国学生需按具体专业核对高中 / 本科成绩、语言要求、公证翻译和补充材料。` 在 zh-TW 下会变成 `中國學生需按具體專業核對高中 / 本科成績、語言要求、公證翻译和補充材料。`，其中 `翻译` 未转换为 `翻譯`。",
+      "affectedFiles": [
+        "apps/web/src/i18n/localeTransforms.ts",
+        "apps/web/src/utils/format.ts",
+        "apps/web/src/pages/UniversityPage.vue",
+        "scripts/task035-final-release-audit.mjs",
+        "tests/web/format.test.ts"
+      ],
+      "affectedPages": [
+        "学校详情页概览 tab",
+        "学校详情页官方基础信息区",
+        "学校详情页申请信息 tab",
+        "http://127.0.0.1:5180/universities/universiti-malaya-um"
+      ],
+      "affectedCommands": [
+        "npm run verify:task040:i18n",
+        "npm run verify:task040:browser",
+        "npm run test"
+      ],
+      "reproductionSteps": [
+        "执行 `node --import tsx -e \"import { formatRuntimeDisplayText, officialPageFallback } from './apps/web/src/utils/format.ts'; console.log(formatRuntimeDisplayText('中国学生需按具体专业核对高中 / 本科成绩、语言要求、公证翻译和补充材料。', officialPageFallback('zh-TW'), 'zh-TW'));\"`",
+        "观察输出中仍包含简体 `翻译`。",
+        "查看 `scripts/task035-final-release-audit.mjs` 中两个大学 mock 的 `officialProfile: null`，浏览器审计没有覆盖完整 profile。",
+        "查看历史 mock `scripts/task024-university-detail-visual.mjs`，完整 officialProfile 中包含 `chinaRequirement.summary`、`tuitionAudit.notes`、`applicationDocuments` 等动态中文字段。"
+      ],
+      "suggestedFix": "补齐 `toTraditionalText` 的常见简繁映射，至少覆盖本项目动态资料中的 `译/譯` 等残留样本；更稳妥的是为 officialProfile 常见说明类字段提供四语言结构化文本或明确 formatter 映射。将 TASK-040 浏览器审计 mock 改为包含完整 officialProfile，并在 zh-TW 断言无 `翻译`、`计划`、`准备` 等已知简体样本，在 en/ms 继续断言无 CJK。",
+      "autoFixable": true,
+      "confidence": "high",
+      "firstSeenAt": "2026-05-24T12:45:13.607Z",
+      "lastSeenAt": "2026-05-24T12:56:32.194Z",
+      "fixAttempts": 2,
+      "signature": "32915d69ce",
+      "promptPath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-040-2026-05-24T12-39-00-297Z-REVIEW.prompt.md",
+      "logPath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-040-2026-05-24T12-39-00-297Z-REVIEW.codex.log",
+      "lastMessagePath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-040-2026-05-24T12-39-00-297Z-REVIEW.last-message.txt",
+      "notes": "已修复 selected review issues：为 normalizeAcademicText 增加非英文语言下普通英文专业字段 fallback 保护，并补齐 formatProgramIntake、formatProgramDuration、formatProgramLanguage 的审计、单测和浏览器 mock 覆盖；同时提交了此前相关的 officialProfile、月份归一化和繁体动态文本覆盖改动。",
+      "fixedAt": "2026-05-24T13:02:58.406Z",
+      "resolvedByRunId": "TASK-040-2026-05-24T12-56-32-188Z-FIX-REVIEW"
+    },
+    {
+      "issueId": "TASK-007-REVIEW-001",
+      "taskId": "TASK-007",
+      "taskTitle": "搜索筛选、专业详情与对比功能升级",
+      "runId": "TASK-007-2026-05-24T12-39-00-296Z-REVIEW",
+      "category": "functional",
+      "severity": "high",
+      "status": "fixed",
+      "title": "搜索建议项被快捷标签拦截，无法真实点击",
+      "description": "首页输入 medicine 后搜索建议正常出现 8 条，但 Playwright 对第一条建议执行真实点击时超时，错误显示 `.quick-picks .tag-pill` 拦截了指针事件。桌面端和移动端都复现，导致“点击专业建议直达专业详情弹窗”的核心验收项不可用。",
+      "affectedFiles": [
+        "apps/web/src/style.css",
+        "apps/web/src/pages/HomePage.vue"
+      ],
+      "affectedPages": [
+        "http://localhost:5173/"
+      ],
+      "affectedCommands": [
+        "Playwright: fill .search-input medicine 后 click .search-suggest-item:first-child"
+      ],
+      "reproductionSteps": [
+        "打开 http://localhost:5173/",
+        "在首页搜索框输入 medicine",
+        "等待搜索建议浮层出现",
+        "点击第一条专业建议",
+        "实际结果：点击被下方快捷标签拦截，无法进入专业详情"
+      ],
+      "suggestedFix": "提高 `.search-wrap` 或 `.search-suggest` 所在层级，使建议浮层处于 `.quick-picks`、统计区和后续内容之上；同时回归桌面与移动端真实点击，不要只用强制 dispatch 事件验证。",
+      "autoFixable": true,
+      "confidence": "high",
+      "firstSeenAt": "2026-05-24T12:48:39.889Z",
+      "lastSeenAt": "2026-05-24T12:58:22.224Z",
+      "fixAttempts": 2,
+      "signature": "69155c4650",
+      "promptPath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-007-2026-05-24T12-39-00-296Z-REVIEW.prompt.md",
+      "logPath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-007-2026-05-24T12-39-00-296Z-REVIEW.codex.log",
+      "lastMessagePath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-007-2026-05-24T12-39-00-296Z-REVIEW.last-message.txt",
+      "notes": "已修复 selected auto-fix 问题：城市建议不再返回英文硬编码 subtitle，改为 API 返回结构化 count/countType，前端按当前 locale 渲染；Kuala Lumpur 城市查询现在优先返回 city 和 university 建议；同时回归验证了搜索建议真实点击、命中高亮和超过 4 所对比反馈。TASK-007-REVIEW-004 为非自动修复的交付记录问题，本轮按规则未修改。Notion 未更新。",
+      "fixedAt": "2026-05-24T13:23:43.477Z",
+      "resolvedByRunId": "TASK-007-2026-05-24T12-58-22-216Z-FIX-REVIEW"
+    },
+    {
+      "issueId": "TASK-007-REVIEW-002",
+      "taskId": "TASK-007",
+      "taskTitle": "搜索筛选、专业详情与对比功能升级",
+      "runId": "TASK-007-2026-05-24T12-39-00-296Z-REVIEW",
+      "category": "functional",
+      "severity": "medium",
+      "status": "fixed",
+      "title": "超过 4 所对比没有可见反馈",
+      "description": "连续点击 5 个院校卡片对比按钮后，localStorage 中对比列表保持 4 所，限制逻辑生效；但首页没有显示 `catalog.compareMessage`，跳转到对比页也没有看到限制提示，不满足“超过 4 所时有明确反馈”的验收要求。",
+      "affectedFiles": [
+        "apps/web/src/stores/catalog.ts",
+        "apps/web/src/pages/HomePage.vue",
+        "apps/web/src/components/UniversityCard.vue",
+        "apps/web/src/pages/ComparePage.vue"
+      ],
+      "affectedPages": [
+        "http://localhost:5173/",
+        "http://localhost:5173/compare"
+      ],
+      "affectedCommands": [
+        "Playwright: clear studymy_compare 后连续点击 5 个 compare button"
+      ],
+      "reproductionSteps": [
+        "打开首页并清空 `studymy_compare`",
+        "连续点击前 5 张院校卡片的对比按钮",
+        "查看页面提示和对比页提示",
+        "实际结果：第 5 所未加入，但没有用户可见反馈"
+      ],
+      "suggestedFix": "在首页结果区或全局 toast/alert 中展示 `catalog.compareMessage`，或让 `UniversityCard` 对超过上限直接显示局部反馈；补充超过 4 所的浏览器断言。",
+      "autoFixable": true,
+      "confidence": "high",
+      "firstSeenAt": "2026-05-24T12:48:39.889Z",
+      "lastSeenAt": "2026-05-24T12:58:22.224Z",
+      "fixAttempts": 2,
+      "signature": "ee441d8529",
+      "promptPath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-007-2026-05-24T12-39-00-296Z-REVIEW.prompt.md",
+      "logPath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-007-2026-05-24T12-39-00-296Z-REVIEW.codex.log",
+      "lastMessagePath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-007-2026-05-24T12-39-00-296Z-REVIEW.last-message.txt",
+      "notes": "已修复 selected auto-fix 问题：城市建议不再返回英文硬编码 subtitle，改为 API 返回结构化 count/countType，前端按当前 locale 渲染；Kuala Lumpur 城市查询现在优先返回 city 和 university 建议；同时回归验证了搜索建议真实点击、命中高亮和超过 4 所对比反馈。TASK-007-REVIEW-004 为非自动修复的交付记录问题，本轮按规则未修改。Notion 未更新。",
+      "fixedAt": "2026-05-24T13:23:43.477Z",
+      "resolvedByRunId": "TASK-007-2026-05-24T12-58-22-216Z-FIX-REVIEW"
+    },
+    {
+      "issueId": "TASK-007-REVIEW-003",
+      "taskId": "TASK-007",
+      "taskTitle": "搜索筛选、专业详情与对比功能升级",
+      "runId": "TASK-007-2026-05-24T12-39-00-296Z-REVIEW",
+      "category": "visual",
+      "severity": "medium",
+      "status": "fixed",
+      "title": "搜索建议未做命中高亮",
+      "description": "任务要求搜索建议命中高亮。当前 `HomePage.vue` 直接输出 `suggestion.title` 和 `suggestion.subtitle`，截图中 medicine 命中的 Medicine / Clinical Medicine 文本没有高亮表现。",
+      "affectedFiles": [
+        "apps/web/src/pages/HomePage.vue",
+        "apps/web/src/style.css"
+      ],
+      "affectedPages": [
+        "http://localhost:5173/"
+      ],
+      "affectedCommands": [
+        "Playwright: 搜索 medicine 并截图 search-suggestions.png"
+      ],
+      "reproductionSteps": [
+        "打开首页",
+        "输入 medicine",
+        "观察搜索建议列表",
+        "实际结果：命中文本没有高亮，仅有类型徽标"
+      ],
+      "suggestedFix": "基于当前查询词对 title/subtitle 做安全的分段渲染，使用 `mark` 或项目内高亮 span 样式；避免直接使用不可信 HTML。",
+      "autoFixable": true,
+      "confidence": "medium",
+      "firstSeenAt": "2026-05-24T12:48:39.889Z",
+      "lastSeenAt": "2026-05-24T12:58:22.224Z",
+      "fixAttempts": 2,
+      "signature": "06c39bc2c4",
+      "promptPath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-007-2026-05-24T12-39-00-296Z-REVIEW.prompt.md",
+      "logPath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-007-2026-05-24T12-39-00-296Z-REVIEW.codex.log",
+      "lastMessagePath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-007-2026-05-24T12-39-00-296Z-REVIEW.last-message.txt",
+      "notes": "已修复 selected auto-fix 问题：城市建议不再返回英文硬编码 subtitle，改为 API 返回结构化 count/countType，前端按当前 locale 渲染；Kuala Lumpur 城市查询现在优先返回 city 和 university 建议；同时回归验证了搜索建议真实点击、命中高亮和超过 4 所对比反馈。TASK-007-REVIEW-004 为非自动修复的交付记录问题，本轮按规则未修改。Notion 未更新。",
+      "fixedAt": "2026-05-24T13:23:43.477Z",
+      "resolvedByRunId": "TASK-007-2026-05-24T12-58-22-216Z-FIX-REVIEW"
+    },
+    {
+      "issueId": "TASK-007-REVIEW-004",
+      "taskId": "TASK-007",
+      "taskTitle": "搜索筛选、专业详情与对比功能升级",
+      "runId": "TASK-007-2026-05-24T12-39-00-296Z-REVIEW",
+      "category": "automation",
+      "severity": "high",
+      "status": "open",
+      "title": "TASK-007 交付记录与前端实现验收口径不一致",
+      "description": "任务页要求实现搜索建议、筛选组、活跃筛选标签、专业详情弹窗、对比表格，并要求浏览器验证；但 TASK-007 实现结果和 `docs/prd/TASK-007-search-filter-program-detail-compare-plan.md` 明确写明本轮只产出规划文档、不修改业务代码。这不能作为 TASK-007 前端实现任务的完成依据。",
+      "affectedFiles": [
+        "docs/prd/TASK-007-search-filter-program-detail-compare-plan.md",
+        "docs/notion-snapshot/tasks/TASK-007.md"
+      ],
+      "affectedPages": [],
+      "affectedCommands": [
+        "npm run build"
+      ],
+      "reproductionSteps": [
+        "读取 docs/notion-snapshot/tasks/TASK-007.md 的实现说明和验收标准",
+        "读取 TASK-007 实现结果 JSON",
+        "读取 docs/prd/TASK-007-search-filter-program-detail-compare-plan.md 的范围限制",
+        "对比后可见实现任务被记录成规划任务"
+      ],
+      "suggestedFix": "如果 TASK-007 是实现任务，应关联实际业务代码变更、浏览器验证和提交记录；如果它被拆成规划任务，需要在 Notion/任务快照中修改任务类型、验收标准和后续任务依赖，不能标记为前端实现完成。",
+      "autoFixable": false,
+      "confidence": "high",
+      "firstSeenAt": "2026-05-24T12:48:39.889Z",
+      "lastSeenAt": "2026-05-24T12:48:39.889Z",
+      "fixAttempts": 0,
+      "signature": "5cfafef854",
+      "promptPath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-007-2026-05-24T12-39-00-296Z-REVIEW.prompt.md",
+      "logPath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-007-2026-05-24T12-39-00-296Z-REVIEW.codex.log",
+      "lastMessagePath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-007-2026-05-24T12-39-00-296Z-REVIEW.last-message.txt",
+      "notes": "Fix remaining: 已修复 selected auto-fix 问题：城市建议不再返回英文硬编码 subtitle，改为 API 返回结构化 count/countType，前端按当前 locale 渲染；Kuala Lumpur 城市查询现在优先返回 city 和 university 建议；同时回归验证了搜索建议真实点击、命中高亮和超过 4 所对比反馈。TASK-007-REVIEW-004 为非自动修复的交付记录问题，本轮按规则未修改。Notion 未更新。"
+    },
+    {
+      "issueId": "TASK-004-REVIEW-001",
+      "taskId": "TASK-004",
+      "taskTitle": "院校与专业数据模型及 API 升级",
+      "runId": "TASK-004-2026-05-24T12-51-23-373Z-REVIEW",
+      "category": "documentation",
+      "severity": "medium",
+      "status": "open",
+      "title": "TASK-004 任务记录仍与当前实现基线不一致",
+      "description": "`docs/notion-snapshot/tasks/TASK-004.md` 仍声明本任务只产出方案文档且未修改 `apps/web`、`apps/api`、`apps/admin` 的业务实现文件。但当前代码基线和工作树已有共享类型、实体、API、静态导入、管理端维护能力和 TASK-004 修复变更。任务快照作为中文项目来源时会误导后续 Review 和追溯。",
+      "affectedFiles": [
+        "docs/notion-snapshot/tasks/TASK-004.md",
+        "docs/notion-snapshot/review-issues.json",
+        "docs/prd/TASK-004-data-model-api-upgrade-plan.md"
+      ],
+      "affectedPages": [
+        "TASK-004 任务页"
+      ],
+      "affectedCommands": [
+        "git status --short",
+        "git log --oneline -- apps/api packages/shared apps/admin docs/prd/TASK-004-data-model-api-upgrade-plan.md"
+      ],
+      "reproductionSteps": [
+        "读取 `docs/notion-snapshot/tasks/TASK-004.md`。",
+        "确认验证结果仍声明未修改业务实现文件。",
+        "查看当前 git 状态和 TASK-004 相关实现文件。",
+        "对比后可见任务记录与当前实现范围不一致。"
+      ],
+      "suggestedFix": "人工确认哪些提交和当前变更归属 TASK-004，更新实际 Notion 页面和本地任务快照，补充真实实现范围、验证命令、关联 commit 和剩余风险。",
+      "autoFixable": false,
+      "confidence": "high",
+      "firstSeenAt": "2026-05-24T12:55:35.858Z",
+      "lastSeenAt": "2026-05-24T12:55:35.858Z",
+      "fixAttempts": 0,
+      "signature": "e3ed372425",
+      "promptPath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-004-2026-05-24T12-51-23-373Z-REVIEW.prompt.md",
+      "logPath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-004-2026-05-24T12-51-23-373Z-REVIEW.codex.log",
+      "lastMessagePath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-004-2026-05-24T12-51-23-373Z-REVIEW.last-message.txt",
+      "notes": "Fix remaining: 已修复 selected autoFixable 问题：新增 POST /tools/cost-estimate 手动费用估算接口并支持 programId 优先使用官方 MYR 总学费；将 supplement 层期望统计调整为当前去重映射后的导入候选口径 104/256；修正根目录 import:static/check:static 参数透传，dry-run 不再误进入实际 import。REVIEW-004/005 在当前基线已验证通过。非自动修复的 TASK-004-REVIEW-001 未处理。"
+    },
+    {
+      "issueId": "TASK-004-REVIEW-006",
+      "taskId": "TASK-004",
+      "taskTitle": "院校与专业数据模型及 API 升级",
+      "runId": "TASK-004-2026-05-24T12-51-23-373Z-REVIEW",
+      "category": "functional",
+      "severity": "medium",
+      "status": "fixed",
+      "title": "费用估算公开 API 仍未覆盖手动输入接口",
+      "description": "TASK-004 方案要求 `POST /tools/cost-estimate` 支持静态页手动输入，并结合官方专业总学费和生活成本估算。当前后端仍只有 `GET /programs/cost-estimate/:id`，不能接收 tuition、currency、duration、livingCost、miscCost 等手动输入，也没有 tools controller。",
+      "affectedFiles": [
+        "apps/api/src/programs/programs.controller.ts",
+        "apps/api/src/programs/programs.service.ts",
+        "docs/prd/TASK-004-data-model-api-upgrade-plan.md"
+      ],
+      "affectedPages": [
+        "费用估算弹窗",
+        "规划工具"
+      ],
+      "affectedCommands": [
+        "rg -n \"tools/cost-estimate|cost-estimate|CostEstimate|costEstimate\" apps/api/src tests/api packages/shared/src"
+      ],
+      "reproductionSteps": [
+        "查看 TASK-004 方案，确认存在 `POST /tools/cost-estimate` 要求。",
+        "搜索 `tools/cost-estimate`，没有控制器或服务实现。",
+        "查看 `ProgramsController`，只有 `GET /programs/cost-estimate/:id`。",
+        "查看 `ProgramsService.costEstimate`，确认只能按 programId 估算。"
+      ],
+      "suggestedFix": "新增 `/tools/cost-estimate` POST 契约和 DTO，覆盖手动输入与 programId 两种场景；当传入 programId 时优先使用官方 MYR 总学费与来源状态；补充 API 单元测试。",
+      "autoFixable": true,
+      "confidence": "high",
+      "firstSeenAt": "2026-05-24T12:55:35.858Z",
+      "lastSeenAt": "2026-05-24T12:55:35.888Z",
+      "fixAttempts": 1,
+      "signature": "6e5f395871",
+      "promptPath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-004-2026-05-24T12-51-23-373Z-REVIEW.prompt.md",
+      "logPath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-004-2026-05-24T12-51-23-373Z-REVIEW.codex.log",
+      "lastMessagePath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-004-2026-05-24T12-51-23-373Z-REVIEW.last-message.txt",
+      "notes": "已修复 selected autoFixable 问题：新增 POST /tools/cost-estimate 手动费用估算接口并支持 programId 优先使用官方 MYR 总学费；将 supplement 层期望统计调整为当前去重映射后的导入候选口径 104/256；修正根目录 import:static/check:static 参数透传，dry-run 不再误进入实际 import。REVIEW-004/005 在当前基线已验证通过。非自动修复的 TASK-004-REVIEW-001 未处理。",
+      "fixedAt": "2026-05-24T13:02:39.045Z",
+      "resolvedByRunId": "TASK-004-2026-05-24T12-55-35-882Z-FIX-REVIEW"
+    },
+    {
+      "issueId": "TASK-004-REVIEW-007",
+      "taskId": "TASK-004",
+      "taskTitle": "院校与专业数据模型及 API 升级",
+      "runId": "TASK-004-2026-05-24T12-51-23-373Z-REVIEW",
+      "category": "data",
+      "severity": "high",
+      "status": "fixed",
+      "title": "supplement 层期望统计与实际导入候选不一致",
+      "description": "分层模型已新增，但 `STATIC_HTML_EXPECTED_LAYER_STATS.supplement` 写为 108 所院校、274 个专业；实际经当前 dedupe/map 后 supplement 层为 104 所院校、256 个专业。执行 `npm --workspace @studymy/api run check:static -- --layer supplement` 会失败，意味着即使人工确认 supplement 导入策略，当前 supplement 层也无法通过校验进入导入流程。",
+      "affectedFiles": [
+        "apps/api/src/db/static-html-catalog.ts",
+        "apps/api/src/db/verify-static-html.ts",
+        "apps/api/src/db/import-static-html.ts",
+        "tests/api/static-html-importer.test.ts",
+        "docs/prd/TASK-004-data-model-api-upgrade-plan.md"
+      ],
+      "affectedPages": [
+        "静态 HTML 数据导入 dry-run",
+        "管理端后续导入校验工作台"
+      ],
+      "affectedCommands": [
+        "npm --workspace @studymy/api run check:static -- --layer supplement",
+        "npm --workspace @studymy/api run import:static -- --layer supplement --confirm-supplement"
+      ],
+      "reproductionSteps": [
+        "执行 `npm --workspace @studymy/api run check:static -- --layer supplement`。",
+        "观察退出码为 1。",
+        "错误显示 `Expected supplement universityCount=108, got 104` 和 `Expected supplement programCount=274, got 256`。",
+        "对比默认 `check:static` 的 layerReports，可见 supplement report 内也存在同样的 expected/actual 不一致。"
+      ],
+      "suggestedFix": "明确 supplement 统计口径：如果校验导入候选，应把 expected stats 调整为去重映射后的 104/256；如果需要保留原始 108/274，则新增 rawStats 与 candidateStats，校验导入时使用 candidateStats，并补充分层统计测试。",
+      "autoFixable": true,
+      "confidence": "high",
+      "firstSeenAt": "2026-05-24T12:55:35.858Z",
+      "lastSeenAt": "2026-05-24T12:55:35.888Z",
+      "fixAttempts": 1,
+      "signature": "fb8e4128a8",
+      "promptPath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-004-2026-05-24T12-51-23-373Z-REVIEW.prompt.md",
+      "logPath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-004-2026-05-24T12-51-23-373Z-REVIEW.codex.log",
+      "lastMessagePath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-004-2026-05-24T12-51-23-373Z-REVIEW.last-message.txt",
+      "notes": "已修复 selected autoFixable 问题：新增 POST /tools/cost-estimate 手动费用估算接口并支持 programId 优先使用官方 MYR 总学费；将 supplement 层期望统计调整为当前去重映射后的导入候选口径 104/256；修正根目录 import:static/check:static 参数透传，dry-run 不再误进入实际 import。REVIEW-004/005 在当前基线已验证通过。非自动修复的 TASK-004-REVIEW-001 未处理。",
+      "fixedAt": "2026-05-24T13:02:39.045Z",
+      "resolvedByRunId": "TASK-004-2026-05-24T12-55-35-882Z-FIX-REVIEW"
+    },
+    {
+      "issueId": "TASK-004-REVIEW-008",
+      "taskId": "TASK-004",
+      "taskTitle": "院校与专业数据模型及 API 升级",
+      "runId": "TASK-004-2026-05-24T12-51-23-373Z-REVIEW",
+      "category": "automation",
+      "severity": "high",
+      "status": "fixed",
+      "title": "根目录静态导入脚本参数未正确透传，dry-run 会变成实际导入",
+      "description": "从根目录执行 `npm run import:static -- --dry-run` 时，参数没有传到 `tsx src/db/import-static-html.ts`，实际输出 `mode: import` 并执行 base 层导入；执行 `npm run import:static -- --layer merged` 也没有选择 merged，而是按 base 层导入。这会让自动化或人工以为在 dry-run/merged 校验，实际却更新并裁剪本地数据库。",
+      "affectedFiles": [
+        "package.json",
+        "apps/api/package.json",
+        "apps/api/src/db/import-static-html.ts",
+        "apps/api/src/db/verify-static-html.ts"
+      ],
+      "affectedPages": [
+        "静态 HTML 导入命令",
+        "自动化验证流水线"
+      ],
+      "affectedCommands": [
+        "npm run import:static -- --dry-run",
+        "npm run import:static -- --layer merged",
+        "npm run check:static -- --layer supplement"
+      ],
+      "reproductionSteps": [
+        "在仓库根目录执行 `npm run import:static -- --dry-run`。",
+        "观察输出不是 `mode: dry-run`，而是 `mode: import`。",
+        "在仓库根目录执行 `npm run import:static -- --layer merged`。",
+        "观察输出 layer 仍为 `base`，且进入 `mode: import`。",
+        "对比执行 `npm --workspace @studymy/api run import:static -- --dry-run`，workspace 直连命令才会正确 dry-run。"
+      ],
+      "suggestedFix": "修正根目录脚本的参数转发方式，例如让 workspace run 后保留 `--`，或新增明确的根脚本如 `import:static:dry-run`、`check:static:merged`；补充脚本级测试或自动化检查，确保 dry-run 不会连接数据库执行 import。",
+      "autoFixable": true,
+      "confidence": "high",
+      "firstSeenAt": "2026-05-24T12:55:35.858Z",
+      "lastSeenAt": "2026-05-24T12:55:35.888Z",
+      "fixAttempts": 1,
+      "signature": "9452f5e45a",
+      "promptPath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-004-2026-05-24T12-51-23-373Z-REVIEW.prompt.md",
+      "logPath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-004-2026-05-24T12-51-23-373Z-REVIEW.codex.log",
+      "lastMessagePath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-004-2026-05-24T12-51-23-373Z-REVIEW.last-message.txt",
+      "notes": "已修复 selected autoFixable 问题：新增 POST /tools/cost-estimate 手动费用估算接口并支持 programId 优先使用官方 MYR 总学费；将 supplement 层期望统计调整为当前去重映射后的导入候选口径 104/256；修正根目录 import:static/check:static 参数透传，dry-run 不再误进入实际 import。REVIEW-004/005 在当前基线已验证通过。非自动修复的 TASK-004-REVIEW-001 未处理。",
+      "fixedAt": "2026-05-24T13:02:39.045Z",
+      "resolvedByRunId": "TASK-004-2026-05-24T12-55-35-882Z-FIX-REVIEW"
+    },
+    {
+      "issueId": "TASK-006-REVIEW-001",
+      "taskId": "TASK-006",
+      "taskTitle": "用户端页面结构与静态样式 1:1 还原",
+      "runId": "TASK-006-2026-05-24T12-51-23-372Z-REVIEW",
+      "category": "functional",
+      "severity": "high",
+      "status": "open",
+      "title": "实现范围仍未满足 TASK-006 前端还原要求",
+      "description": "TASK-006 的任务类型、实现说明和验收标准都要求升级 `apps/web`，把静态 HTML 页面结构和视觉风格迁移到 Vue 3 用户端。但本轮关联提交 `fd89734` 只修改 `docs/notion-snapshot/tasks/TASK-006.md` 和 `docs/prd/TASK-006-user-web-static-style-restoration-plan.md`，没有可追踪的 `apps/web` 实现变更。视觉证据可以关闭测试证据缺失问题，但不能替代前端实现交付。",
+      "affectedFiles": [
+        "apps/web/src/pages/HomePage.vue",
+        "apps/web/src/pages/UniversityPage.vue",
+        "apps/web/src/style.css",
+        "docs/notion-snapshot/tasks/TASK-006.md",
+        "docs/prd/TASK-006-user-web-static-style-restoration-plan.md"
+      ],
+      "affectedPages": [
+        "用户端首页",
+        "搜索筛选区",
+        "院校详情页",
+        "专业详情弹窗",
+        "工具弹窗"
+      ],
+      "affectedCommands": [
+        "git show --stat fd89734",
+        "npm run verify:task028",
+        "npm run build"
+      ],
+      "reproductionSteps": [
+        "查看 TASK-006 的任务类型、实现说明和验收标准，确认其为前端实现任务。",
+        "运行 `git show --stat fd89734`。",
+        "确认提交只包含两个文档文件，不包含 `apps/web` 实现文件。"
+      ],
+      "suggestedFix": "先人工确认 TASK-006 的真实口径。若它是前端实现任务，应退回实现阶段并提交 `apps/web` 的实际静态页还原改动；若它实际只是规划任务，应修改任务标题、任务类型、实现说明、测试计划和验收标准，不能按当前前端实现任务通过评审。",
+      "autoFixable": false,
+      "confidence": "high",
+      "firstSeenAt": "2026-05-24T12:55:53.166Z",
+      "lastSeenAt": "2026-05-24T12:55:53.166Z",
+      "fixAttempts": 0,
+      "signature": "43ad058427",
+      "promptPath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-006-2026-05-24T12-51-23-372Z-REVIEW.prompt.md",
+      "logPath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-006-2026-05-24T12-51-23-372Z-REVIEW.codex.log",
+      "lastMessagePath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-006-2026-05-24T12-51-23-372Z-REVIEW.last-message.txt"
+    },
+    {
+      "issueId": "TASK-006-REVIEW-003",
+      "taskId": "TASK-006",
+      "taskTitle": "用户端页面结构与静态样式 1:1 还原",
+      "runId": "TASK-006-2026-05-24T12-51-23-372Z-REVIEW",
+      "category": "automation",
+      "severity": "medium",
+      "status": "open",
+      "title": "自动化 Git 状态与任务记录仍需纠正",
+      "description": "当前实现结果 JSON 已给出提交 `fd89734`，但任务页的“关联 Commit”仍为空；同时工作区存在大量未提交改动，自动化输出仍出现“Changed Files 未读取到变更文件”一类不一致信息。提交 `fd89734` 未修正自动化 Git 检测或任务记录写入逻辑，因此该自动化问题仍未关闭。",
+      "affectedFiles": [
+        "docs/notion-snapshot/tasks/TASK-006.md",
+        "docs/notion-snapshot/review-issues.json",
+        "自动化运行日志"
+      ],
+      "affectedPages": [],
+      "affectedCommands": [
+        "git status --short --branch",
+        "git show --name-status fd89734"
+      ],
+      "reproductionSteps": [
+        "查看实现结果 JSON，确认 commit 字段为 `fd89734d08f07203dbf34dd38aeb56dfe7801699`。",
+        "查看 `docs/notion-snapshot/tasks/TASK-006.md`，确认“关联 Commit”仍未写入该提交。",
+        "运行 `git status --short --branch`，确认当前工作区还有大量未提交变更，自动化记录容易混淆提交范围和当前工作区状态。"
+      ],
+      "suggestedFix": "修正自动化运行环境或 Git 检测逻辑，确保变更文件、实际提交和任务页记录一致；若某轮无法提交，应记录真实原因，而不是产生空变更或错误 Git 状态判断。",
+      "autoFixable": false,
+      "confidence": "high",
+      "firstSeenAt": "2026-05-24T12:55:53.166Z",
+      "lastSeenAt": "2026-05-24T12:55:53.166Z",
+      "fixAttempts": 0,
+      "signature": "fb34ab5893",
+      "promptPath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-006-2026-05-24T12-51-23-372Z-REVIEW.prompt.md",
+      "logPath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-006-2026-05-24T12-51-23-372Z-REVIEW.codex.log",
+      "lastMessagePath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-006-2026-05-24T12-51-23-372Z-REVIEW.last-message.txt"
+    },
+    {
+      "issueId": "TASK-040-REV-006",
+      "taskId": "TASK-040",
+      "taskTitle": "多语言硬编码清理与运行时语言一致性修复",
+      "runId": "TASK-040-2026-05-24T12-51-23-372Z-REVIEW",
+      "category": "i18n",
+      "severity": "high",
+      "status": "fixed",
+      "title": "未知英文 fallback 未覆盖 normalizeAcademicText 路径",
+      "description": "`formatRuntimeDisplayText` 已能把 `March requirements are subject to change.` 这类普通英文在 zh-CN、zh-TW、ms 下回落到本地化 fallback，但 `normalizeAcademicText` 仍直接返回该英文文本。`formatProgramIntake`、`formatProgramDuration`、`formatProgramLanguage` 和学校详情专业弹窗都会经过这条路径，因此专业入学时间、学制、语言要求等动态字段仍可能在非英文界面混入英文。示例 `Full-Time Duration: 6 Semesters, (Clinical) — official page title is Doctor of Public Health (Mixed-Mode)` 在 zh-CN 下只局部替换成 `Full-Time Duration: 6 个学期...`，仍不符合 TASK-040 的运行时语言一致性要求。",
+      "affectedFiles": [
+        "apps/web/src/utils/format.ts",
+        "apps/web/src/pages/UniversityPage.vue",
+        "apps/web/src/pages/ProgramPage.vue",
+        "scripts/task040-i18n-audit.ts",
+        "scripts/task035-final-release-audit.mjs",
+        "tests/web/format.test.ts"
+      ],
+      "affectedPages": [
+        "学校详情页专业列表和专业详情弹窗",
+        "独立专业详情页",
+        "http://127.0.0.1:5180/universities/universiti-malaya-um"
+      ],
+      "affectedCommands": [
+        "npm run verify:task040:i18n",
+        "npm run verify:task040:browser",
+        "npm run test"
+      ],
+      "reproductionSteps": [
+        "执行 `node --import tsx -e \"import { normalizeAcademicText, formatProgramIntake, officialPageFallback } from './apps/web/src/utils/format.ts'; const program={durationOfficial:'',officialIntake:'March requirements are subject to change.',intakeMonths:[],publicDisplayStatus:'published'}; for (const locale of ['zh-CN','zh-TW','ms']) console.log(locale, normalizeAcademicText('March requirements are subject to change.', officialPageFallback(locale), locale), formatProgramIntake(program, officialPageFallback(locale), locale));\"`",
+        "观察 zh-CN、zh-TW、ms 都输出 `March requirements are subject to change.`，没有回落到各语言的 official page fallback。",
+        "执行 `node --import tsx -e \"import { normalizeAcademicText, officialPageFallback } from './apps/web/src/utils/format.ts'; for (const locale of ['zh-CN','zh-TW','ms']) console.log(locale, normalizeAcademicText('Full-Time Duration: 6 Semesters, (Clinical) — official page title is Doctor of Public Health (Mixed-Mode)', officialPageFallback(locale), locale));\"`",
+        "观察非英文输出仍混有 `Full-Time Duration`、`official page title is` 等英文片段。",
+        "当前 `task040-i18n-audit.ts` 和 `tests/web/format.test.ts` 只覆盖了 `formatRuntimeDisplayText`，没有覆盖 `normalizeAcademicText` / `formatProgramIntake` 的普通英文 fallback 反例。"
+      ],
+      "suggestedFix": "把非英文 unknown-English fallback 保护下沉到 `normalizeAcademicText`，或让它复用 `formatRuntimeDisplayText` 的英文泄漏判断；同时补充 `formatProgramIntake`、`formatProgramDuration`、`formatProgramLanguage` 的反例单测。浏览器 mock 中加入一个通过专业字段渲染的普通英文样本，并在 zh-CN、zh-TW、ms 页面断言不出现该英文原文。",
+      "autoFixable": true,
+      "confidence": "high",
+      "firstSeenAt": "2026-05-24T12:56:32.164Z",
+      "lastSeenAt": "2026-05-24T12:56:32.194Z",
+      "fixAttempts": 1,
+      "signature": "41e6a12a29",
+      "promptPath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-040-2026-05-24T12-51-23-372Z-REVIEW.prompt.md",
+      "logPath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-040-2026-05-24T12-51-23-372Z-REVIEW.codex.log",
+      "lastMessagePath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-040-2026-05-24T12-51-23-372Z-REVIEW.last-message.txt",
+      "notes": "已修复 selected review issues：为 normalizeAcademicText 增加非英文语言下普通英文专业字段 fallback 保护，并补齐 formatProgramIntake、formatProgramDuration、formatProgramLanguage 的审计、单测和浏览器 mock 覆盖；同时提交了此前相关的 officialProfile、月份归一化和繁体动态文本覆盖改动。",
+      "fixedAt": "2026-05-24T13:02:58.406Z",
+      "resolvedByRunId": "TASK-040-2026-05-24T12-56-32-188Z-FIX-REVIEW"
+    },
+    {
+      "issueId": "TASK-007-REVIEW-004",
+      "taskId": "TASK-007",
+      "taskTitle": "搜索筛选、专业详情与对比功能升级",
+      "runId": "TASK-007-2026-05-24T12-51-23-372Z-REVIEW",
+      "category": "automation",
+      "severity": "high",
+      "status": "open",
+      "title": "TASK-007 交付记录仍与前端实现验收口径不一致",
+      "description": "`docs/notion-snapshot/tasks/TASK-007.md` 的任务类型和验收要求是前端实现，但执行记录仍写明本轮只产出规划文档且无 commit；`docs/prd/TASK-007-search-filter-program-detail-compare-plan.md` 也多处写明“本任务不修改业务实现文件”。当前代码已经存在 TASK-007 相关实现与修复，这会导致任务源记录无法支撑“待评审/完成”的前端实现结论。",
+      "affectedFiles": [
+        "docs/notion-snapshot/tasks/TASK-007.md",
+        "docs/prd/TASK-007-search-filter-program-detail-compare-plan.md"
+      ],
+      "affectedPages": [],
+      "affectedCommands": [],
+      "reproductionSteps": [
+        "读取 docs/notion-snapshot/tasks/TASK-007.md 的实现说明、测试计划和执行记录",
+        "读取 docs/prd/TASK-007-search-filter-program-detail-compare-plan.md 的范围限制和验收标准",
+        "对比当前 apps/web 中已存在的搜索建议、高亮、对比提示等实现",
+        "可见任务记录仍按规划任务描述，不能作为前端实现任务的完整交付依据"
+      ],
+      "suggestedFix": "更新 TASK-007 的中文任务记录或 Notion 快照，明确当前实际前端/API实现、浏览器验证截图、构建结果和待解决问题；如果原 TASK-007 已拆成规划任务，则需要调整任务类型和依赖关系，不应继续用该记录代表前端实现完成。",
+      "autoFixable": false,
+      "confidence": "high",
+      "firstSeenAt": "2026-05-24T12:58:22.190Z",
+      "lastSeenAt": "2026-05-24T12:58:22.190Z",
+      "fixAttempts": 0,
+      "signature": "b29ef23938",
+      "promptPath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-007-2026-05-24T12-51-23-372Z-REVIEW.prompt.md",
+      "logPath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-007-2026-05-24T12-51-23-372Z-REVIEW.codex.log",
+      "lastMessagePath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-007-2026-05-24T12-51-23-372Z-REVIEW.last-message.txt",
+      "notes": "Fix remaining: 已修复 selected auto-fix 问题：城市建议不再返回英文硬编码 subtitle，改为 API 返回结构化 count/countType，前端按当前 locale 渲染；Kuala Lumpur 城市查询现在优先返回 city 和 university 建议；同时回归验证了搜索建议真实点击、命中高亮和超过 4 所对比反馈。TASK-007-REVIEW-004 为非自动修复的交付记录问题，本轮按规则未修改。Notion 未更新。"
+    },
+    {
+      "issueId": "TASK-007-REVIEW-005",
+      "taskId": "TASK-007",
+      "taskTitle": "搜索筛选、专业详情与对比功能升级",
+      "runId": "TASK-007-2026-05-24T12-51-23-372Z-REVIEW",
+      "category": "i18n",
+      "severity": "medium",
+      "status": "fixed",
+      "title": "城市搜索建议存在中英混排和英文城市关键词质量问题",
+      "description": "中文城市关键词 `吉隆坡` 能返回 city 建议，但 city suggestion 的 subtitle 是硬编码英文，例如 `8 universities`；英文城市关键词 `Kuala Lumpur` 的前 8 条结果均为 program，城市或院校建议没有进入结果。搜索入口面向“院校、专业、城市”，该行为会影响城市搜索建议的可读性和命中质量。",
+      "affectedFiles": [
+        "apps/api/src/search/search.service.ts",
+        "packages/shared/src/index.ts",
+        "apps/web/src/pages/HomePage.vue"
+      ],
+      "affectedPages": [
+        "http://localhost:5173/"
+      ],
+      "affectedCommands": [
+        "GET http://localhost:3000/api/search/suggestions?q=吉隆坡&limit=8",
+        "GET http://localhost:3000/api/search/suggestions?q=Kuala%20Lumpur&limit=8"
+      ],
+      "reproductionSteps": [
+        "打开首页或直接调用搜索建议 API",
+        "查询 `吉隆坡`，观察 city 建议副标题为英文 `universities`",
+        "查询 `Kuala Lumpur`，观察前 8 条结果均为 program",
+        "对比任务要求的院校、专业、城市混合搜索建议"
+      ],
+      "suggestedFix": "不要在 API 中硬编码英文 subtitle；可返回结构化 count/type，由前端按当前 locale 渲染。调整建议排序或匹配规则，让城市/院校的精确城市命中优先于仅因描述包含城市词而命中的专业建议。",
+      "autoFixable": true,
+      "confidence": "medium",
+      "firstSeenAt": "2026-05-24T12:58:22.190Z",
+      "lastSeenAt": "2026-05-24T12:58:22.224Z",
+      "fixAttempts": 1,
+      "signature": "f339108f54",
+      "promptPath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-007-2026-05-24T12-51-23-372Z-REVIEW.prompt.md",
+      "logPath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-007-2026-05-24T12-51-23-372Z-REVIEW.codex.log",
+      "lastMessagePath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-007-2026-05-24T12-51-23-372Z-REVIEW.last-message.txt",
+      "notes": "已修复 selected auto-fix 问题：城市建议不再返回英文硬编码 subtitle，改为 API 返回结构化 count/countType，前端按当前 locale 渲染；Kuala Lumpur 城市查询现在优先返回 city 和 university 建议；同时回归验证了搜索建议真实点击、命中高亮和超过 4 所对比反馈。TASK-007-REVIEW-004 为非自动修复的交付记录问题，本轮按规则未修改。Notion 未更新。",
+      "fixedAt": "2026-05-24T13:23:43.477Z",
+      "resolvedByRunId": "TASK-007-2026-05-24T12-58-22-216Z-FIX-REVIEW"
+    },
+    {
+      "issueId": "TASK-004-REVIEW-001",
+      "taskId": "TASK-004",
+      "taskTitle": "院校与专业数据模型及 API 升级",
+      "runId": "TASK-004-2026-05-24T13-02-39-074Z-REVIEW",
+      "category": "documentation",
+      "severity": "high",
+      "status": "open",
+      "title": "TASK-004 任务记录仍与当前实现基线不一致",
+      "description": "当前代码已修改 apps/api、packages/shared、package.json、tests/api 等业务实现和测试文件，并新增 apps/api/src/tools；但 TASK-004 本地快照和方案文档仍写明本任务未修改 apps/web、apps/api、apps/admin 业务实现文件，关联 Commit 为空。Notion 搜索也未定位到 TASK-004 实际页面，源记录无法支撑当前完成结论。",
+      "affectedFiles": [
+        "docs/notion-snapshot/tasks/TASK-004.md",
+        "docs/prd/TASK-004-data-model-api-upgrade-plan.md",
+        "docs/notion-snapshot/review-issues.json"
+      ],
+      "affectedPages": [
+        "Notion TASK-004 任务页"
+      ],
+      "affectedCommands": [
+        "git status --short",
+        "Notion search: TASK-004 院校与专业数据模型及 API 升级"
+      ],
+      "reproductionSteps": [
+        "查看当前 git status，可见 apps/api、packages/shared、tests/api 等业务实现变更。",
+        "查看 docs/notion-snapshot/tasks/TASK-004.md，验证结果仍写本任务未修改业务实现文件。",
+        "查看实现结果 JSON，commit 字段仍为无。",
+        "使用 Notion 搜索 TASK-004，未找到实际任务页。"
+      ],
+      "suggestedFix": "人工确认哪些当前变更归属 TASK-004，然后更新实际 Notion 页面和本地任务快照，补充真实实现范围、验证命令、关联 commit、剩余风险；确认后再关闭旧的范围不一致 Review issue。",
+      "autoFixable": false,
+      "confidence": "high",
+      "firstSeenAt": "2026-05-24T13:08:16.525Z",
+      "lastSeenAt": "2026-05-24T13:08:16.525Z",
+      "fixAttempts": 0,
+      "signature": "48fbbf0594",
+      "promptPath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-004-2026-05-24T13-02-39-074Z-REVIEW.prompt.md",
+      "logPath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-004-2026-05-24T13-02-39-074Z-REVIEW.codex.log",
+      "lastMessagePath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-004-2026-05-24T13-02-39-074Z-REVIEW.last-message.txt"
+    },
+    {
+      "issueId": "TASK-004-REVIEW-009",
+      "taskId": "TASK-004",
+      "taskTitle": "院校与专业数据模型及 API 升级",
+      "runId": "TASK-004-2026-05-24T13-02-39-074Z-REVIEW",
+      "category": "data",
+      "severity": "high",
+      "status": "fixed",
+      "title": "supplement 确认导入默认会 prune 掉 base 数据",
+      "description": "import:static 默认 pruneCatalog=true。当前只要求 supplement/merged 增加 --confirm-supplement，但如果执行 supplement 确认导入，importStaticCatalog 会用 supplement 的 104 所院校、256 个专业作为保留集合，并删除所有不在 supplement 中的 base 记录。这与文档中 supplement 需人工确认后补录或导入的定位不一致，存在误删 base 数据风险。",
+      "affectedFiles": [
+        "apps/api/src/db/import-static-html.ts",
+        "apps/api/src/db/static-html-importer.ts",
+        "tests/api/static-html-importer.test.ts"
+      ],
+      "affectedPages": [
+        "静态 HTML 数据导入命令"
+      ],
+      "affectedCommands": [
+        "npm run import:static -- --layer supplement --confirm-supplement"
+      ],
+      "reproductionSteps": [
+        "阅读 apps/api/src/db/import-static-html.ts，确认 pruneCatalog 默认由 --no-prune 控制，默认 true。",
+        "阅读 apps/api/src/db/static-html-importer.ts，确认 prune 逻辑会删除 code 不在当前 catalog 中的所有院校和专业。",
+        "选择 layer=supplement 且带 --confirm-supplement 时，当前 catalog 只包含 supplement 层数据，因此 base-only 记录会被判定为 stale。"
+      ],
+      "suggestedFix": "对 supplement 层默认禁用 prune，或增加独立的 --confirm-prune 强确认；至少 supplement 确认导入应默认走补录/追加语义。补充脚本级或 importer 单测，覆盖 supplement + confirm 时不会默认删除 base 数据。",
+      "autoFixable": true,
+      "confidence": "high",
+      "firstSeenAt": "2026-05-24T13:08:16.525Z",
+      "lastSeenAt": "2026-05-24T13:08:16.563Z",
+      "fixAttempts": 1,
+      "signature": "df0c5cffdf",
+      "promptPath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-004-2026-05-24T13-02-39-074Z-REVIEW.prompt.md",
+      "logPath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-004-2026-05-24T13-02-39-074Z-REVIEW.codex.log",
+      "lastMessagePath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-004-2026-05-24T13-02-39-074Z-REVIEW.last-message.txt",
+      "notes": "已修复两个 selected autoFixable Review 问题：supplement 静态导入默认不再 prune，只有显式 --confirm-prune 才会启用；费用估算接口不再信任未过滤的 university relation，会按公开状态重新查询关联院校。",
+      "fixedAt": "2026-05-24T13:13:12.418Z",
+      "resolvedByRunId": "TASK-004-2026-05-24T13-08-16-557Z-FIX-REVIEW"
+    },
+    {
+      "issueId": "TASK-004-REVIEW-010",
+      "taskId": "TASK-004",
+      "taskTitle": "院校与专业数据模型及 API 升级",
+      "runId": "TASK-004-2026-05-24T13-02-39-074Z-REVIEW",
+      "category": "functional",
+      "severity": "medium",
+      "status": "fixed",
+      "title": "费用估算接口未强制校验关联院校公开状态",
+      "description": "ToolsService 查询 ready program 时加载 university relation，随后直接使用 program.university。TypeORM relation 不会自动套用 isPublished/publicDisplayStatus 过滤；如果后台产生 ready program 关联隐藏或未发布院校的异常数据，POST /tools/cost-estimate 会返回该院校信息，而不是按公开目录规则拒绝。",
+      "affectedFiles": [
+        "apps/api/src/tools/tools.service.ts",
+        "tests/api/public-api-services.test.ts"
+      ],
+      "affectedPages": [
+        "POST /api/tools/cost-estimate"
+      ],
+      "affectedCommands": [
+        "npm test -- tests/api/public-api-services.test.ts"
+      ],
+      "reproductionSteps": [
+        "构造 programsRepository.findOne 返回 isPublished=true、publicDisplayStatus=ready 的 program。",
+        "让该 program.university 为 isPublished=false 或 publicDisplayStatus=hidden-unverified。",
+        "调用 ToolsService.costEstimate({ programId })，当前实现会返回 university/program payload，而不是 NotFound。"
+      ],
+      "suggestedFix": "不要直接信任 relation；对 program.university 再执行 isPublished/publicDisplayStatus 校验，或始终用带公开条件的 universitiesRepository 查询。补充单测覆盖隐藏院校关联 ready program 时返回 NotFound。",
+      "autoFixable": true,
+      "confidence": "medium",
+      "firstSeenAt": "2026-05-24T13:08:16.525Z",
+      "lastSeenAt": "2026-05-24T13:08:16.563Z",
+      "fixAttempts": 1,
+      "signature": "d372d59391",
+      "promptPath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-004-2026-05-24T13-02-39-074Z-REVIEW.prompt.md",
+      "logPath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-004-2026-05-24T13-02-39-074Z-REVIEW.codex.log",
+      "lastMessagePath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-004-2026-05-24T13-02-39-074Z-REVIEW.last-message.txt",
+      "notes": "已修复两个 selected autoFixable Review 问题：supplement 静态导入默认不再 prune，只有显式 --confirm-prune 才会启用；费用估算接口不再信任未过滤的 university relation，会按公开状态重新查询关联院校。",
+      "fixedAt": "2026-05-24T13:13:12.418Z",
+      "resolvedByRunId": "TASK-004-2026-05-24T13-08-16-557Z-FIX-REVIEW"
+    },
+    {
+      "issueId": "TASK-040-REV-008",
+      "taskId": "TASK-040",
+      "taskTitle": "多语言硬编码清理与运行时语言一致性修复",
+      "runId": "TASK-040-2026-05-24T13-02-58-443Z-REVIEW",
+      "category": "i18n",
+      "severity": "high",
+      "status": "fixed",
+      "title": "单词级英文动态专业字段仍会在非英文语言中泄漏",
+      "description": "apps/web/src/utils/format.ts:581 的 hasUnknownAcademicEnglish 只把两个及以上英文词视为未知英文，且会把 Research 等词提前白名单剔除；但 normalizeAcademicText 并未翻译 Research/Clinical 等单词，formatRuntimeDisplayText 也没有覆盖 Rolling、Research、Clinical、Coursework 这类单词级运行时文案。结果是在 zh-CN、zh-TW、ms 下仍可能显示英文片段，例如 6 Semesters (Clinical) 会输出 6 个学期 (Clinical)，Rolling 在马来文下仍输出 Rolling。",
+      "affectedFiles": [
+        "apps/web/src/utils/format.ts",
+        "apps/web/src/pages/UniversityPage.vue",
+        "scripts/task040-i18n-audit.ts",
+        "tests/web/format.test.ts"
+      ],
+      "affectedPages": [
+        "/universities/:slug 专业列表",
+        "/universities/:slug 专业详情弹窗",
+        "/universities/:slug 申请信息运行时字段"
+      ],
+      "affectedCommands": [
+        "npm run verify:task040:i18n",
+        "npm run verify:task040:browser"
+      ],
+      "reproductionSteps": [
+        "在项目根目录运行：node --import tsx -e \"import { normalizeAcademicText, formatRuntimeDisplayText, officialPageFallback } from './apps/web/src/utils/format.ts'; console.log(normalizeAcademicText('6 Semesters (Clinical)', officialPageFallback('zh-CN'), 'zh-CN')); console.log(formatRuntimeDisplayText('Rolling', officialPageFallback('ms'), 'ms'));\"",
+        "观察输出包含 6 个学期 (Clinical) 和 Rolling，而不是本地化文本或本地化 fallback。",
+        "现有 npm run verify:task040:i18n 仍通过，说明审计样本没有覆盖该类短文本。"
+      ],
+      "suggestedFix": "为单词级和短括号专业描述建立统一本地化映射或更严格的非英文 fallback 规则，至少覆盖 Rolling、Research、Coursework、Clinical、Mixed-Mode 等真实专业字段；同时补充 normalizeAcademicText、formatRuntimeDisplayText、formatProgramDuration 的单测和 task040 审计样本。",
+      "autoFixable": true,
+      "confidence": "high",
+      "firstSeenAt": "2026-05-24T13:09:24.643Z",
+      "lastSeenAt": "2026-05-24T13:09:24.736Z",
+      "fixAttempts": 1,
+      "signature": "38f6debbec",
+      "promptPath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-040-2026-05-24T13-02-58-443Z-REVIEW.prompt.md",
+      "logPath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-040-2026-05-24T13-02-58-443Z-REVIEW.codex.log",
+      "lastMessagePath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-040-2026-05-24T13-02-58-443Z-REVIEW.last-message.txt",
+      "notes": "已修复 TASK-040-REV-008：补齐 Rolling、Research、Coursework、Clinical、Mixed-Mode 等单词级学术字段的四语言本地化，避免非英文语言泄漏英文动态文本；Notion 未更新，本轮未提供可写入的 Notion 页面 ID。",
+      "fixedAt": "2026-05-24T13:20:00.315Z",
+      "resolvedByRunId": "TASK-040-2026-05-24T13-09-24-730Z-FIX-REVIEW"
+    },
+    {
+      "issueId": "TASK-040-REV-009",
+      "taskId": "TASK-040",
+      "taskTitle": "多语言硬编码清理与运行时语言一致性修复",
+      "runId": "TASK-040-2026-05-24T13-20-00-344Z-REVIEW",
+      "category": "i18n",
+      "severity": "high",
+      "status": "open",
+      "title": "马来文学术词在专业字段格式化中仍退回 fallback",
+      "description": "新增的 Rolling、Mixed-Mode、Full-Time、Part-Time、Coursework 等学术词只在 formatRuntimeDisplayText 的直接调用中通过；但 normalizeAcademicText 会先把原词清洗成本地化马来文，再被 hasUnknownAcademicEnglish 判定为未知英文样式文本，最终退回 Rujuk halaman rasmi universiti 或调用方 fallback。formatProgramIntake 和 formatProgramDuration 依赖该函数，因此当后端字段值为 Rolling、Mixed-Mode、Coursework 等常见值时，马来文页面不会展示 Ambilan bergilir、Mod campuran、Kerja kursus 等本地化结果。",
+      "affectedFiles": [
+        "apps/web/src/utils/format.ts",
+        "scripts/task040-i18n-audit.ts",
+        "tests/web/format.test.ts",
+        "apps/web/src/pages/UniversityPage.vue",
+        "apps/web/src/pages/ProgramPage.vue"
+      ],
+      "affectedPages": [
+        "专业列表学制/开学时间字段",
+        "专业详情弹窗学制/开学时间字段",
+        "独立专业详情页学制/开学时间字段"
+      ],
+      "affectedCommands": [
+        "node --import tsx --input-type=module -e \"import { formatProgramIntake, formatProgramDuration, normalizeAcademicText } from './apps/web/src/utils/format.ts'; const program=(x)=>({publicDisplayStatus:'ready', durationYears:1, intakeMonths:[], languageRequirement:{ielts:null}, officialLanguageRequirement:'', ...x}); for (const sample of ['Rolling','Mixed-Mode','Full-Time','Part-Time','Coursework']) console.log(sample, normalizeAcademicText(sample,'fallback','ms'), formatProgramIntake(program({officialIntake:sample}),'fallback','ms'), formatProgramDuration(program({durationOfficial:sample}),'ms'));\"",
+        "npm run verify:task040:i18n"
+      ],
+      "reproductionSteps": [
+        "在项目根目录运行追加探针命令。",
+        "观察 Rolling normalize ms 输出 fallback，formatProgramIntake 也输出 fallback。",
+        "观察 Mixed-Mode、Full-Time、Part-Time、Coursework 在 ms 下同样退回 fallback 或官方页兜底。",
+        "对比 formatRuntimeDisplayText('Rolling','fallback','ms') 可输出 Ambilan bergilir，说明问题出在 normalizeAcademicText 及其调用链。"
+      ],
+      "suggestedFix": "调整 normalizeAcademicText 的流程：对原始 rawText 先做 exact academic term 匹配并直接返回本地化值，或让 hasUnknownAcademicEnglish 不再把已本地化的马来文标签当作未知英文。同步补充 formatProgramIntake、formatProgramDuration、normalizeAcademicText 的 ms 精确断言，并修改 task040 审计，localizedAcademicTextSamples 不应允许等于 fallback。",
+      "autoFixable": true,
+      "confidence": "high",
+      "firstSeenAt": "2026-05-24T13:24:45.736Z",
+      "lastSeenAt": "2026-05-24T13:24:45.736Z",
+      "fixAttempts": 0,
+      "signature": "887660f0d6",
+      "promptPath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-040-2026-05-24T13-20-00-344Z-REVIEW.prompt.md",
+      "logPath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-040-2026-05-24T13-20-00-344Z-REVIEW.codex.log",
+      "lastMessagePath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-040-2026-05-24T13-20-00-344Z-REVIEW.last-message.txt"
+    },
+    {
+      "issueId": "TASK-007-REVIEW-004",
+      "taskId": "TASK-007",
+      "taskTitle": "搜索筛选、专业详情与对比功能升级",
+      "runId": "TASK-007-2026-05-24T13-23-43-512Z-REVIEW",
+      "category": "automation",
+      "severity": "high",
+      "status": "open",
+      "title": "TASK-007 交付记录仍与前端实现验收口径不一致",
+      "description": "当前代码已经包含 TASK-007 相关前端/API 实现与修复，且本轮重新验证通过；但 docs/notion-snapshot/tasks/TASK-007.md 的执行记录仍写明本轮只产出规划文档、无 commit，docs/prd/TASK-007-search-filter-program-detail-compare-plan.md 也仍声明本任务不修改业务实现文件。这会导致 Notion/任务快照无法作为前端实现完成和验收的可信记录。",
+      "affectedFiles": [
+        "docs/notion-snapshot/tasks/TASK-007.md",
+        "docs/prd/TASK-007-search-filter-program-detail-compare-plan.md",
+        "docs/notion-snapshot/review-issues.json"
+      ],
+      "affectedPages": [
+        "Notion TASK-007 任务页或本地 Notion 快照"
+      ],
+      "affectedCommands": [
+        "git status --short",
+        "npm run build",
+        "npm test"
+      ],
+      "reproductionSteps": [
+        "读取 docs/notion-snapshot/tasks/TASK-007.md 的任务类型、实现说明、测试计划和执行记录",
+        "读取 docs/prd/TASK-007-search-filter-program-detail-compare-plan.md 的范围限制",
+        "对比当前实现结果 JSON 与本轮验证结果，可见实际已存在前端/API实现、浏览器截图和测试结果，但任务记录未同步"
+      ],
+      "suggestedFix": "更新实际 Notion TASK-007 页面或本地任务快照，明确当前真实实现范围、变更文件、浏览器验证截图、构建/测试结果、剩余风险和关联 commit；如果 TASK-007 已被重新定义为规划任务，则应调整任务类型、验收标准和后续依赖，不能继续用该记录代表前端实现完成。",
+      "autoFixable": false,
+      "confidence": "high",
+      "firstSeenAt": "2026-05-24T13:29:30.458Z",
+      "lastSeenAt": "2026-05-24T13:29:30.458Z",
+      "fixAttempts": 0,
+      "signature": "e2b0ab5d57",
+      "promptPath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-007-2026-05-24T13-23-43-512Z-REVIEW.prompt.md",
+      "logPath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-007-2026-05-24T13-23-43-512Z-REVIEW.codex.log",
+      "lastMessagePath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-007-2026-05-24T13-23-43-512Z-REVIEW.last-message.txt"
+    },
+    {
+      "issueId": "TASK-004-REVIEW-001",
+      "taskId": "TASK-004",
+      "taskTitle": "院校与专业数据模型及 API 升级",
+      "runId": "TASK-004-2026-05-24T13-13-12-453Z-REVIEW",
+      "category": "documentation",
+      "severity": "high",
+      "status": "open",
+      "title": "TASK-004 任务记录仍与当前实现范围不一致",
+      "description": "当前工作区包含 apps/api、packages/shared、package.json 和 tests/api 的后端实现与测试变更，并新增 apps/api/src/tools；但 docs/prd/TASK-004-data-model-api-upgrade-plan.md 仍写明本任务不修改 apps/web、apps/api、apps/admin 实现文件，docs/notion-snapshot/tasks/TASK-004.md 的验证结果也仍声明只产出方案文档且未修改业务实现文件，关联 Commit 为空。由于 Notion/本地快照是中文任务来源记录，这会导致 TASK-004 完成口径不可追溯。",
+      "affectedFiles": [
+        "docs/prd/TASK-004-data-model-api-upgrade-plan.md",
+        "docs/notion-snapshot/tasks/TASK-004.md"
+      ],
+      "affectedPages": [
+        "TASK-004 任务页",
+        "Notion TASK-004 页面"
+      ],
+      "affectedCommands": [
+        "git status --short"
+      ],
+      "reproductionSteps": [
+        "运行 git status --short，确认当前存在 apps/api、packages/shared、tests/api 等实现变更。",
+        "查看 docs/prd/TASK-004-data-model-api-upgrade-plan.md:10-11 和 :532-542，确认仍声明本任务不修改实现文件。",
+        "查看 docs/notion-snapshot/tasks/TASK-004.md:11-14 和关联 Commit 区域，确认任务记录仍停留在方案文档口径。"
+      ],
+      "suggestedFix": "人工确认哪些当前变更归属 TASK-004，然后更新实际 Notion 页面和本地任务快照，补充真实实现范围、验证命令、关联 commit 和剩余风险；若 TASK-004 实际只是方案任务，则应把实现变更移入后续子任务记录。",
+      "autoFixable": false,
+      "confidence": "high",
+      "firstSeenAt": "2026-05-24T13:38:20.629Z",
+      "lastSeenAt": "2026-05-24T13:38:20.629Z",
+      "fixAttempts": 0,
+      "signature": "755a1f079b",
+      "promptPath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-004-2026-05-24T13-13-12-453Z-REVIEW.prompt.md",
+      "logPath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-004-2026-05-24T13-13-12-453Z-REVIEW.codex.log",
+      "lastMessagePath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-004-2026-05-24T13-13-12-453Z-REVIEW.last-message.txt"
+    },
+    {
+      "issueId": "TASK-004-REVIEW-011",
+      "taskId": "TASK-004",
+      "taskTitle": "院校与专业数据模型及 API 升级",
+      "runId": "TASK-004-2026-05-24T13-13-12-453Z-REVIEW",
+      "category": "functional",
+      "severity": "medium",
+      "status": "open",
+      "title": "费用估算的官方 MYR programId 路径默认漏算生活费",
+      "description": "apps/api/src/tools/tools.service.ts 在 program 有 officialTuitionMYR 时将响应 currency 固定为 MYR，但 livingAnnual 只有在 currency === CNY 时才使用 university.livingCostCny；因此只传 programId 且不手动传 livingCost 时，livingTotal 会变为 0。TASK-004 要求费用估算支持基于官方专业总学费和生活成本估算，当前测试只覆盖了手动传 livingCost 的官方 MYR 场景，未覆盖默认 programId 场景。",
+      "affectedFiles": [
+        "apps/api/src/tools/tools.service.ts",
+        "tests/api/public-api-services.test.ts"
+      ],
+      "affectedPages": [],
+      "affectedCommands": [
+        "npm test -- tests/api/public-api-services.test.ts"
+      ],
+      "reproductionSteps": [
+        "构造一个 officialTuitionMYR 有值、durationYears 为 2、关联院校 livingCostCny 为 30000 的 ready 专业。",
+        "调用 ToolsService.costEstimate({ programId })，不传 livingCost。",
+        "观察 apps/api/src/tools/tools.service.ts:80-82 的逻辑会让 livingTotal 为 0，而不是使用院校生活成本或明确返回分币种费用。"
+      ],
+      "suggestedFix": "先明确 MYR 官方学费与 CNY 生活费的响应契约：可以返回分币种 breakdown、增加汇率/币种输入，或在没有汇率时明确提示生活费未纳入；随后补充 programId 无手动 livingCost 的单元测试。",
+      "autoFixable": false,
+      "confidence": "medium",
+      "firstSeenAt": "2026-05-24T13:38:20.629Z",
+      "lastSeenAt": "2026-05-24T13:38:20.629Z",
+      "fixAttempts": 0,
+      "signature": "c32d43da0d",
+      "promptPath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-004-2026-05-24T13-13-12-453Z-REVIEW.prompt.md",
+      "logPath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-004-2026-05-24T13-13-12-453Z-REVIEW.codex.log",
+      "lastMessagePath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-004-2026-05-24T13-13-12-453Z-REVIEW.last-message.txt"
+    },
+    {
+      "issueId": "TASK-053-REVIEW-001",
+      "taskId": "TASK-053",
+      "taskTitle": "新增需求功能实现和验证",
+      "runId": "TASK-053-2026-05-24T14-02-22-319Z-REVIEW",
+      "category": "data",
+      "severity": "medium",
+      "status": "fixed",
+      "title": "非 scoped 的 base 层 DB 校验误用整库统计",
+      "description": "`verify-static-html.ts` 只有在 `catalog.scope` 存在时才把 DB 统计限制到目标院校；当执行 `--layer base --db` 且当前数据库包含 merged 全量数据时，代码会用整库 119 所院校、687 个专业去对比 base 期望 18 所院校、431 个专业，命令退出 1。UM scoped 校验不受影响，但这会破坏既有分层校验流程，也容易让自动化误判数据库不一致。",
+      "affectedFiles": [
+        "apps/api/src/db/verify-static-html.ts",
+        "apps/api/src/db/static-html-importer.ts"
+      ],
+      "affectedPages": [],
+      "affectedCommands": [
+        "npm run check:static -- --input \"D:\\mydev\\StudyMY_UM_v58_na_display_tidy.html\" --layer base --db"
+      ],
+      "reproductionSteps": [
+        "确保本地数据库已有 merged 静态目录数据；当前环境中 `--layer merged --db` 通过，统计为 119/687。",
+        "执行 `npm run check:static -- --input \"D:\\mydev\\StudyMY_UM_v58_na_display_tidy.html\" --layer base --db`。",
+        "观察命令失败，错误为 `Expected database universityCount=18, got 119` 和 `Expected database programCount=431, got 687`。"
+      ],
+      "suggestedFix": "为 DB 校验引入 layer-aware 统计范围：当存在显式 scope 时继续按 scope 院校统计；当 `layer` 是 `base` 或 `supplement` 且无 scope 时，按该 layer 的 catalog university codes 统计；`merged` 才统计整库。补充覆盖 base/supplement/merged DB stats options 的单测。",
+      "autoFixable": true,
+      "confidence": "high",
+      "firstSeenAt": "2026-05-24T14:06:42.050Z",
+      "lastSeenAt": "2026-05-24T14:06:42.086Z",
+      "fixAttempts": 1,
+      "signature": "b44a7e97a0",
+      "promptPath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-053-2026-05-24T14-02-22-319Z-REVIEW.prompt.md",
+      "logPath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-053-2026-05-24T14-02-22-319Z-REVIEW.codex.log",
+      "lastMessagePath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-053-2026-05-24T14-02-22-319Z-REVIEW.last-message.txt",
+      "notes": "已修复非 scoped base/supplement DB 校验误用整库统计的问题：分层校验现在会按当前 layer 的院校 code 和专业 code 统计；merged 仍统计整库；显式 scope 保持按 scope 院校统计。Notion 未更新。",
+      "fixedAt": "2026-05-24T14:10:23.642Z",
+      "resolvedByRunId": "TASK-053-2026-05-24T14-06-42-080Z-FIX-REVIEW"
+    },
+    {
+      "issueId": "TASK-053-REVIEW-002",
+      "taskId": "TASK-053",
+      "taskTitle": "新增需求功能实现和验证",
+      "runId": "TASK-053-2026-05-24T14-10-23-666Z-REVIEW",
+      "category": "data",
+      "severity": "high",
+      "status": "fixed",
+      "title": "专业匹配未限定目标院校，存在覆盖非 UM 数据风险",
+      "description": "apps/api/src/db/static-html-importer.ts 中 findProgramMatch 按全局 code 或 slug 查找已有 ProgramEntity；importStaticCatalog 随后用 current.id 保存并把 universityId 写为当前 UM 院校。由于 ProgramEntity.code 没有唯一约束，且匹配逻辑没有校验已匹配记录是否属于目标院校，一旦数据库中已有非 UM 专业与 UM catalog 的 code 或 slug 碰撞，dry-run 不会报告冲突，confirm import 可能把该非 UM 记录改写并挂到 UM 下。这与 TASK-051/TASK-053 要求的“不覆盖非 UM 数据”不一致。",
+      "affectedFiles": [
+        "apps/api/src/db/static-html-importer.ts"
+      ],
+      "affectedPages": [],
+      "affectedCommands": [
+        "npm run import:static -- --input \"D:\\mydev\\StudyMY_UM_v58_na_display_tidy.html\" --layer base --university-code UM --dry-run",
+        "npm run import:static -- --input \"D:\\mydev\\StudyMY_UM_v58_na_display_tidy.html\" --layer base --university-code UM --confirm-import"
+      ],
+      "reproductionSteps": [
+        "在数据库中准备一个非 UM 院校及专业，使该专业 code 或 slug 与 UM 静态 catalog 中某个专业相同或冲突。",
+        "运行 UM scoped dry-run，观察 importPlan 只统计 updatedPrograms，conflicts 仍可能为空。",
+        "运行 confirm import 后，匹配到的既有专业会被按 UM 数据保存，universityId 被改为 UM 院校。"
+      ],
+      "suggestedFix": "将 program 匹配改为目标院校感知：先确定目标 universityId，再只在该院校下按 code/slug 匹配；如果全局发现同 code/slug 属于其他院校，应作为 StaticCatalogImportConflict 阻塞。补充单元测试覆盖 scoped import 遇到跨院校 code/slug 碰撞时必须报冲突且不得更新。",
+      "autoFixable": true,
+      "confidence": "high",
+      "firstSeenAt": "2026-05-24T14:15:08.696Z",
+      "lastSeenAt": "2026-05-24T14:15:08.725Z",
+      "fixAttempts": 1,
+      "signature": "7b3a2b8d2b",
+      "promptPath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-053-2026-05-24T14-10-23-666Z-REVIEW.prompt.md",
+      "logPath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-053-2026-05-24T14-10-23-666Z-REVIEW.codex.log",
+      "lastMessagePath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-053-2026-05-24T14-10-23-666Z-REVIEW.last-message.txt",
+      "notes": "已修复 UM scoped 导入的专业匹配保护：专业 upsert 现在按目标院校匹配，跨院校 code/slug 碰撞会进入 conflicts 并阻断导入；同时补齐上一轮已验证但未提交的分层 DB 校验修复，并已提交。",
+      "fixedAt": "2026-05-24T14:20:45.528Z",
+      "resolvedByRunId": "TASK-053-2026-05-24T14-15-08-720Z-FIX-REVIEW"
+    },
+    {
+      "issueId": "TASK-053-REVIEW-003",
+      "taskId": "TASK-053",
+      "taskTitle": "新增需求功能实现和验证",
+      "runId": "TASK-053-2026-05-24T14-10-23-666Z-REVIEW",
+      "category": "automation",
+      "severity": "medium",
+      "status": "fixed",
+      "title": "已验证修复未提交，关联 commit 不包含当前修复",
+      "description": "当前 HEAD 为 6462bdd，但上一轮修复仍以未提交 diff 存在于 static-html-importer.ts、verify-static-html.ts 和 static-html-importer.test.ts。当前工作区验证通过依赖这些未提交变更；如果只按实现结果中的 commitSha 6462bdd 交付或回放，仍会缺少已修复的分层 DB 校验逻辑。",
+      "affectedFiles": [
+        "apps/api/src/db/static-html-importer.ts",
+        "apps/api/src/db/verify-static-html.ts",
+        "tests/api/static-html-importer.test.ts"
+      ],
+      "affectedPages": [],
+      "affectedCommands": [
+        "git show 6462bdd -- apps/api/src/db/verify-static-html.ts",
+        "git diff -- apps/api/src/db/static-html-importer.ts apps/api/src/db/verify-static-html.ts tests/api/static-html-importer.test.ts"
+      ],
+      "reproductionSteps": [
+        "运行 git log -1 --oneline，确认 HEAD 为 6462bdd。",
+        "运行 git diff -- apps/api/src/db/static-html-importer.ts apps/api/src/db/verify-static-html.ts tests/api/static-html-importer.test.ts。",
+        "观察当前通过验证的 TASK-053 修复仍未进入提交。"
+      ],
+      "suggestedFix": "在修复 TASK-053-REVIEW-002 后，只暂存 TASK-053 相关文件，重新运行 check:static、import dry-run、npm run test 和 npm run build，通过后创建新的任务提交，并更新最终结果中的 commitSha。",
+      "autoFixable": true,
+      "confidence": "high",
+      "firstSeenAt": "2026-05-24T14:15:08.696Z",
+      "lastSeenAt": "2026-05-24T14:15:08.725Z",
+      "fixAttempts": 1,
+      "signature": "4f4c9508c3",
+      "promptPath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-053-2026-05-24T14-10-23-666Z-REVIEW.prompt.md",
+      "logPath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-053-2026-05-24T14-10-23-666Z-REVIEW.codex.log",
+      "lastMessagePath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-053-2026-05-24T14-10-23-666Z-REVIEW.last-message.txt",
+      "notes": "已修复 UM scoped 导入的专业匹配保护：专业 upsert 现在按目标院校匹配，跨院校 code/slug 碰撞会进入 conflicts 并阻断导入；同时补齐上一轮已验证但未提交的分层 DB 校验修复，并已提交。",
+      "fixedAt": "2026-05-24T14:20:45.528Z",
+      "resolvedByRunId": "TASK-053-2026-05-24T14-15-08-720Z-FIX-REVIEW"
+    },
+    {
+      "issueId": "TASK-053-REVIEW-004",
+      "taskId": "TASK-053",
+      "taskTitle": "新增需求功能实现和验证",
+      "runId": "TASK-053-2026-05-24T14-20-45-554Z-REVIEW",
+      "category": "data",
+      "severity": "high",
+      "status": "fixed",
+      "title": "dry-run 会初始化 synchronize=true 的数据库连接",
+      "description": "`import-static-html.ts` 在 `--dry-run` 且静态校验通过时会调用 `createCatalogDataSource()`，而该数据源固定 `synchronize: true`。这意味着 dry-run 虽然不写入业务数据，但连接数据库时仍可能触发 TypeORM schema 同步，和 dry-run 应无副作用的预期不一致；如果环境变量指向测试库或更高风险库，会有非预期 schema 写入风险。",
+      "affectedFiles": [
+        "apps/api/src/db/import-static-html.ts",
+        "apps/api/src/db/static-html-importer.ts"
+      ],
+      "affectedPages": [
+        "静态 HTML 数据导入 dry-run"
+      ],
+      "affectedCommands": [
+        "npm run import:static -- --input \"D:\\mydev\\StudyMY_UM_v58_na_display_tidy.html\" --layer base --university-code UM --dry-run"
+      ],
+      "reproductionSteps": [
+        "阅读 apps/api/src/db/import-static-html.ts，确认 dry-run 分支会初始化 DataSource 并调用 previewStaticCatalogImport。",
+        "阅读 apps/api/src/db/static-html-importer.ts，确认 createCatalogDataSource 固定设置 synchronize: true。",
+        "因此 dry-run 命令连接数据库时仍可能触发 schema 同步。"
+      ],
+      "suggestedFix": "让 createCatalogDataSource 支持传入 synchronize 选项，并在 dry-run、check:static --db、preview 这类只读路径中使用 synchronize: false；需要 schema 初始化时使用独立 seed/setup 命令。补充测试或脚本检查，确保 dry-run 不会启用 schema sync。",
+      "autoFixable": true,
+      "confidence": "high",
+      "firstSeenAt": "2026-05-24T14:25:36.586Z",
+      "lastSeenAt": "2026-05-24T22:31:39+08:00",
+      "fixAttempts": 1,
+      "signature": "6192313cff",
+      "promptPath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-053-2026-05-24T14-20-45-554Z-REVIEW.prompt.md",
+      "logPath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-053-2026-05-24T14-20-45-554Z-REVIEW.codex.log",
+      "lastMessagePath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-053-2026-05-24T14-20-45-554Z-REVIEW.last-message.txt",
+      "notes": "已修复 dry-run 和 check:static --db 只读路径的 schema sync 风险：createCatalogDataSource 支持 synchronize 选项，dry-run 与 DB 校验均使用 synchronize=false，并补充单元测试覆盖。",
+      "fixedAt": "2026-05-24T22:31:39+08:00",
+      "resolvedByRunId": "TASK-054-2026-05-24T14-25-51-783Z"
+    },
+    {
+      "issueId": "TASK-053-REVIEW-005",
+      "taskId": "TASK-053",
+      "taskTitle": "新增需求功能实现和验证",
+      "runId": "TASK-053-2026-05-24T14-20-45-554Z-REVIEW",
+      "category": "data",
+      "severity": "high",
+      "status": "fixed",
+      "title": "正式导入缺少事务回滚保护",
+      "description": "`importStaticCatalog` 逐条保存院校和专业，随后才做 prune、刷新 programCount 和 DB 统计校验。当前流程没有事务包裹；如果某条专业保存失败、冲突在二次检查中抛错，或导入后 `compareDbStats` 失败，脚本会退出失败但前面已经写入的 UM 数据不会自动回滚。这不符合 TASK-052 中对高风险导入优先事务和失败可恢复的要求。",
+      "affectedFiles": [
+        "apps/api/src/db/import-static-html.ts",
+        "apps/api/src/db/static-html-importer.ts",
+        "tests/api/static-html-importer.test.ts"
+      ],
+      "affectedPages": [
+        "UM scoped 静态 HTML 正式导入"
+      ],
+      "affectedCommands": [
+        "npm run import:static -- --input \"D:\\mydev\\StudyMY_UM_v58_na_display_tidy.html\" --layer base --university-code UM --confirm-import"
+      ],
+      "reproductionSteps": [
+        "阅读 apps/api/src/db/import-static-html.ts，确认正式导入先 preview，再直接调用 importStaticCatalog。",
+        "阅读 apps/api/src/db/static-html-importer.ts，确认 importStaticCatalog 使用 repository.save 逐步写入，并没有 transaction/queryRunner。",
+        "注意导入后 DB 校验失败只设置 process.exitCode，无法撤销已写入数据。"
+      ],
+      "suggestedFix": "将正式导入和导入后 DB 校验放入同一事务中执行；让 importStaticCatalog 使用事务 EntityManager 获取 repository。校验失败或保存失败时抛错触发 rollback，并补充失败回滚测试。",
+      "autoFixable": true,
+      "confidence": "high",
+      "firstSeenAt": "2026-05-24T14:25:36.586Z",
+      "lastSeenAt": "2026-05-24T22:31:39+08:00",
+      "fixAttempts": 1,
+      "signature": "894cbfe6df",
+      "promptPath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-053-2026-05-24T14-20-45-554Z-REVIEW.prompt.md",
+      "logPath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-053-2026-05-24T14-20-45-554Z-REVIEW.codex.log",
+      "lastMessagePath": "D:\\dev-test\\auto-codex-agent\\automation-logs\\TASK-053-2026-05-24T14-20-45-554Z-REVIEW.last-message.txt",
+      "notes": "已修复正式导入缺少事务保护的问题：confirm import 的写入与导入后 DB 校验在同一事务中执行，DB 校验失败会抛出结构化错误并回滚；UM scoped confirm import 已验证通过。",
+      "fixedAt": "2026-05-24T22:31:39+08:00",
+      "resolvedByRunId": "TASK-054-2026-05-24T14-25-51-783Z"
+    }
+  ]
+}

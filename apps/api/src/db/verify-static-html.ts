@@ -31,7 +31,7 @@ let dbStats: Awaited<ReturnType<typeof getStaticCatalogDbStats>> | null = null;
 let dbErrors: string[] = [];
 
 if (includeDatabase) {
-  const dataSource = createCatalogDataSource();
+  const dataSource = createCatalogDataSource({ synchronize: false });
   await dataSource.initialize();
   try {
     dbStats = await getStaticCatalogDbStats(dataSource, getStaticCatalogDbStatsOptions(catalog));

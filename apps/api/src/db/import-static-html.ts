@@ -6,7 +6,34 @@ import {
   previewStaticCatalogImport,
   shouldPruneStaticCatalog
 } from "./static-html-importer.js";
-import type { StaticCatalogLayerName } from "./static-html-catalog.js";
+import type { StaticCatalogLayerName, StaticCatalogScope, StaticCatalogValidation } from "./static-html-catalog.js";
+
+type StaticCatalogImportPlan = Awaited<ReturnType<typeof previewStaticCatalogImport>>;
+type StaticCatalogImportSummary = Awaited<ReturnType<typeof importStaticCatalog>>;
+
+interface StaticCatalogImportOutput {
+  mode: "import";
+  input: string;
+  layer: StaticCatalogLayerName;
+  scope: StaticCatalogScope | null;
+  pruneCatalog: boolean;
+  supplementImportConfirmed: boolean;
+  importConfirmed: boolean;
+  staticValidation: StaticCatalogValidation;
+  importPlan: StaticCatalogImportPlan;
+  importSummary: StaticCatalogImportSummary;
+  dbValidation: {
+    ok: boolean;
+    errors: string[];
+    rolledBack: boolean;
+  };
+}
+
+class StaticCatalogDbValidationError extends Error {
+  constructor(readonly output: StaticCatalogImportOutput) {
+    super("Static catalog import failed database validation and was rolled back.");
+  }
+}
 
 function getArgValue(name: string): string | null {
   const index = process.argv.indexOf(name);
@@ -36,10 +63,35 @@ const pruneCatalog = shouldPruneStaticCatalog(layer, {
 });
 const validation = validateStaticCatalog(catalog);
 
+function createImportOutput(
+  importPlan: StaticCatalogImportPlan,
+  importSummary: StaticCatalogImportSummary,
+  dbErrors: string[],
+  rolledBack: boolean
+): StaticCatalogImportOutput {
+  return {
+    mode: "import",
+    input: catalog.sourceHtmlPath,
+    layer: catalog.layer,
+    scope: catalog.scope || null,
+    pruneCatalog,
+    supplementImportConfirmed,
+    importConfirmed,
+    staticValidation: validation,
+    importPlan,
+    importSummary,
+    dbValidation: {
+      ok: dbErrors.length === 0,
+      errors: dbErrors,
+      rolledBack
+    }
+  };
+}
+
 if (dryRun || !validation.ok) {
   let importPlan: Awaited<ReturnType<typeof previewStaticCatalogImport>> | null = null;
   if (dryRun && validation.ok) {
-    const dataSource = createCatalogDataSource();
+    const dataSource = createCatalogDataSource({ synchronize: false });
     await dataSource.initialize();
     try {
       importPlan = await previewStaticCatalogImport(dataSource, catalog, { pruneCatalog });
@@ -126,31 +178,25 @@ if (dryRun || !validation.ok) {
       );
       process.exitCode = 1;
     } else {
-      const summary = await importStaticCatalog(dataSource, catalog, { pruneCatalog });
-      const dbErrors = compareDbStats(summary.dbStats, summary.expectedStats);
-      console.log(
-        JSON.stringify(
-          {
-            mode: "import",
-            input: catalog.sourceHtmlPath,
-            layer: catalog.layer,
-            scope: catalog.scope || null,
-            pruneCatalog,
-            supplementImportConfirmed,
-            importConfirmed,
-            staticValidation: validation,
-            importPlan,
-            importSummary: summary,
-            dbValidation: {
-              ok: dbErrors.length === 0,
-              errors: dbErrors
-            }
-          },
-          null,
-          2
-        )
-      );
-      if (dbErrors.length) process.exitCode = 1;
+      let output: StaticCatalogImportOutput | null = null;
+      try {
+        await dataSource.transaction(async (manager) => {
+          const summary = await importStaticCatalog(manager, catalog, { pruneCatalog });
+          const dbErrors = compareDbStats(summary.dbStats, summary.expectedStats);
+          output = createImportOutput(importPlan, summary, dbErrors, false);
+          if (dbErrors.length) {
+            throw new StaticCatalogDbValidationError(createImportOutput(importPlan, summary, dbErrors, true));
+          }
+        });
+        console.log(JSON.stringify(output, null, 2));
+      } catch (error) {
+        if (error instanceof StaticCatalogDbValidationError) {
+          console.log(JSON.stringify(error.output, null, 2));
+          process.exitCode = 1;
+        } else {
+          throw error;
+        }
+      }
     }
   } finally {
     await dataSource.destroy();

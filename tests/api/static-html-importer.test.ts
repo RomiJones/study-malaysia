@@ -2,6 +2,7 @@ import { describe, test } from "node:test";
 import assert from "node:assert/strict";
 import {
   compareDbStats,
+  createCatalogDataSource,
   getStaticCatalogDbStatsOptions,
   previewStaticCatalogImport,
   shouldPruneStaticCatalog
@@ -15,6 +16,11 @@ import {
 } from "../../apps/api/src/db/static-html-catalog.ts";
 
 describe("static HTML import statistics", () => {
+  test("can disable TypeORM schema synchronization for read-only checks", () => {
+    assert.equal(createCatalogDataSource().options.synchronize, true);
+    assert.equal(createCatalogDataSource({ synchronize: false }).options.synchronize, false);
+  });
+
   test("passes when database statistics match the static HTML baseline", () => {
     assert.deepEqual(compareDbStats({ ...STATIC_HTML_EXPECTED_STATS }), []);
   });

@@ -1,5 +1,5 @@
 import "reflect-metadata";
-import { DataSource, In, Not, type Repository } from "typeorm";
+import { DataSource, In, Not, type EntityManager, type Repository } from "typeorm";
 import { loadEnvFiles } from "../config/env.js";
 import { ALL_ENTITIES, ProgramEntity, UniversityEntity } from "./entities.js";
 import type {
@@ -22,6 +22,10 @@ export interface StaticCatalogDbStats {
 
 export interface StaticCatalogImportOptions {
   pruneCatalog?: boolean;
+}
+
+export interface StaticCatalogDataSourceOptions {
+  synchronize?: boolean;
 }
 
 export interface StaticCatalogPruneOptions {
@@ -88,7 +92,9 @@ export interface StaticCatalogImportSummary {
   warnings: string[];
 }
 
-export function createCatalogDataSource() {
+type StaticCatalogRepositoryProvider = DataSource | EntityManager;
+
+export function createCatalogDataSource(options: StaticCatalogDataSourceOptions = {}) {
   loadEnvFiles();
   return new DataSource({
     type: "mysql",
@@ -98,7 +104,7 @@ export function createCatalogDataSource() {
     password: process.env.MYSQL_PASSWORD || "123456",
     database: process.env.MYSQL_DATABASE || "study_malaysia",
     entities: [...ALL_ENTITIES],
-    synchronize: true,
+    synchronize: options.synchronize ?? true,
     charset: "utf8mb4_unicode_ci"
   });
 }
@@ -227,7 +233,7 @@ export function getStaticCatalogDbStatsOptions(catalog: StaticCatalog): StaticCa
 }
 
 export async function getStaticCatalogDbStats(
-  dataSource: DataSource,
+  dataSource: StaticCatalogRepositoryProvider,
   options: StaticCatalogDbStatsOptions = {}
 ): Promise<StaticCatalogDbStats> {
   const universityRepository = dataSource.getRepository(UniversityEntity);
@@ -322,7 +328,7 @@ async function countStaleUniversities(
 }
 
 export async function previewStaticCatalogImport(
-  dataSource: DataSource,
+  dataSource: StaticCatalogRepositoryProvider,
   catalog: StaticCatalog,
   options: StaticCatalogImportOptions = {}
 ): Promise<StaticCatalogImportPlan> {
@@ -397,7 +403,7 @@ export async function previewStaticCatalogImport(
   };
 }
 
-async function refreshProgramCounts(dataSource: DataSource, universityIds: number[]) {
+async function refreshProgramCounts(dataSource: StaticCatalogRepositoryProvider, universityIds: number[]) {
   if (!universityIds.length) return;
   const universityRepository = dataSource.getRepository(UniversityEntity);
   const programRepository = dataSource.getRepository(ProgramEntity);
@@ -417,7 +423,7 @@ async function refreshProgramCounts(dataSource: DataSource, universityIds: numbe
 }
 
 export async function importStaticCatalog(
-  dataSource: DataSource,
+  dataSource: StaticCatalogRepositoryProvider,
   catalog: StaticCatalog,
   options: StaticCatalogImportOptions = {}
 ): Promise<StaticCatalogImportSummary> {
