@@ -20,14 +20,54 @@ import {
 
 export const DEFAULT_STATIC_HTML_PATH = "D:/mydev/StudyMY_UM_v58_na_display_tidy.html";
 
-export const STATIC_HTML_EXPECTED_STATS = {
-  universityCount: 119,
-  programCount: 687,
+export type StaticCatalogLayerName = "base" | "supplement" | "merged";
+
+export interface StaticCatalogExpectedStats {
+  universityCount: number;
+  programCount: number;
+  readyProgramCount: number;
+  officialTuitionMYRCount: number;
+  officialFeeSourceUrlCount: number;
+  officialIntakeCount: number;
+}
+
+export const STATIC_HTML_EXPECTED_LAYER_STATS = {
+  base: {
+    universityCount: 18,
+    programCount: 431,
+    readyProgramCount: 239,
+    officialTuitionMYRCount: 240,
+    officialFeeSourceUrlCount: 248,
+    officialIntakeCount: 245
+  },
+  supplement: {
+    universityCount: 104,
+    programCount: 256,
+    readyProgramCount: 0,
+    officialTuitionMYRCount: 0,
+    officialFeeSourceUrlCount: 0,
+    officialIntakeCount: 0
+  },
+  merged: {
+    universityCount: 119,
+    programCount: 687,
+    readyProgramCount: 239,
+    officialTuitionMYRCount: 240,
+    officialFeeSourceUrlCount: 248,
+    officialIntakeCount: 245
+  }
+} as const;
+
+export const STATIC_HTML_EXPECTED_STATS = STATIC_HTML_EXPECTED_LAYER_STATS.base;
+
+export const STATIC_HTML_EXPECTED_UM_BASE_STATS: StaticCatalogExpectedStats = {
+  universityCount: 1,
+  programCount: 248,
   readyProgramCount: 239,
   officialTuitionMYRCount: 240,
   officialFeeSourceUrlCount: 248,
   officialIntakeCount: 245
-} as const;
+};
 
 type RawRecord = Record<string, unknown>;
 
@@ -149,16 +189,38 @@ export interface StaticCatalogStats {
   officialFeeSourceUrlCount: number;
   officialIntakeCount: number;
   publicDisplayStatusCounts: Record<string, number>;
+  programsByLevel: Record<string, number>;
   readyByLevel: Record<string, number>;
   readyCategoryCount: number;
   readyCategories: string[];
 }
 
+export interface StaticCatalogScope {
+  universityCode: string | null;
+  universitySlug: string | null;
+  matchedUniversityCodes: string[];
+  matchedUniversitySlugs: string[];
+}
+
+export interface StaticCatalogLayerReport {
+  layer: StaticCatalogLayerName;
+  stats: StaticCatalogStats;
+  expectedStats: StaticCatalogExpectedStats;
+  duplicateUniversityKeys: string[];
+  duplicateUniversityCount: number;
+  overrideUniversityNames: string[];
+  overrideUniversityCount: number;
+}
+
 export interface StaticCatalog {
+  layer: StaticCatalogLayerName;
   sourceHtmlPath: string;
   universities: StaticUniversitySeed[];
   programs: StaticProgramSeed[];
   stats: StaticCatalogStats;
+  expectedStats: StaticCatalogExpectedStats;
+  layerReports: Record<StaticCatalogLayerName, StaticCatalogLayerReport>;
+  scope?: StaticCatalogScope | null;
   warnings: string[];
 }
 
@@ -166,7 +228,17 @@ export interface StaticCatalogValidation {
   ok: boolean;
   errors: string[];
   warnings: string[];
+  layer: StaticCatalogLayerName;
+  expectedStats: StaticCatalogExpectedStats;
   stats: StaticCatalogStats;
+  layerReports: Record<StaticCatalogLayerName, StaticCatalogLayerReport>;
+  scope: StaticCatalogScope | null;
+}
+
+export interface ExtractStaticCatalogOptions {
+  layer?: StaticCatalogLayerName;
+  universityCode?: string | null;
+  universitySlug?: string | null;
 }
 
 function localizedText(en: string, zhCN = en, ms = en, zhTW = zhCN): LocalizedText {
@@ -493,37 +565,45 @@ function mergeUniquePrograms(programLists: RawRecord[][] = []): RawRecord[] {
   return Array.from(map.values());
 }
 
+function cloneRawUniversity(university: RawUniversity): RawUniversity {
+  return JSON.parse(JSON.stringify(university)) as RawUniversity;
+}
+
+function normalizeUniversityName(name = "") {
+  return String(name || "")
+    .replace(/\u9a6c\u6765\u897f\u4e9a\u7406\u5de5\u5927\u5b66/g, "\u9a6c\u6765\u897f\u4e9a\u5de5\u827a\u5927\u5b66")
+    .trim()
+    .toLowerCase();
+}
+
+function normalizeUniversityWebsite(url = "") {
+  return String(url || "")
+    .replace(/^https?:\/\//, "")
+    .replace(/^www\./, "")
+    .replace(/\/$/, "")
+    .trim()
+    .toLowerCase();
+}
+
+function getUniversityDedupeKey(university: RawUniversity): string {
+  return [
+    readString(university, "shortName").toLowerCase(),
+    normalizeUniversityWebsite(readString(university, "website")),
+    normalizeUniversityName(readString(university, "name")),
+    readString(university, "nameEn").toLowerCase()
+  ].join("||");
+}
+
 function dedupeUniversities(list: RawUniversity[]): RawUniversity[] {
   const map = new Map<string, RawUniversity>();
-
-  function normalizeUniversityName(name = "") {
-    return String(name || "")
-      .replace(/\u9a6c\u6765\u897f\u4e9a\u7406\u5de5\u5927\u5b66/g, "\u9a6c\u6765\u897f\u4e9a\u5de5\u827a\u5927\u5b66")
-      .trim()
-      .toLowerCase();
-  }
-
-  function normalizeUniversityWebsite(url = "") {
-    return String(url || "")
-      .replace(/^https?:\/\//, "")
-      .replace(/^www\./, "")
-      .replace(/\/$/, "")
-      .trim()
-      .toLowerCase();
-  }
 
   for (const university of list) {
     if (!university) continue;
 
-    const key = [
-      readString(university, "shortName").toLowerCase(),
-      normalizeUniversityWebsite(readString(university, "website")),
-      normalizeUniversityName(readString(university, "name")),
-      readString(university, "nameEn").toLowerCase()
-    ].join("||");
+    const key = getUniversityDedupeKey(university);
 
     if (!map.has(key)) {
-      map.set(key, JSON.parse(JSON.stringify(university)) as RawUniversity);
+      map.set(key, cloneRawUniversity(university));
       continue;
     }
 
@@ -563,15 +643,18 @@ function dedupeUniversities(list: RawUniversity[]): RawUniversity[] {
   return Array.from(map.values());
 }
 
-function buildRawUniversities(html: string): RawUniversity[] {
-  const base = evaluateLiteral<RawUniversity[]>(html, "universitiesBase");
-  const supplement = evaluateLiteral<RawUniversity[]>(html, "universitiesSupplement");
-  const patches = evaluateLiteral<Record<string, RawRecord>>(html, "officialUniversityPatches");
-  const universities = dedupeUniversities([...base, ...supplement]);
+interface RawCatalogLayerCollection {
+  layers: Record<StaticCatalogLayerName, RawUniversity[]>;
+  duplicateUniversityKeys: string[];
+  patchNamesByLayer: Record<StaticCatalogLayerName, string[]>;
+}
 
+function applyOfficialPatches(universities: RawUniversity[], patches: Record<string, RawRecord>): string[] {
+  const patchedNames: string[] = [];
   for (const university of universities) {
     const patch = patches[readString(university, "name")];
     if (!patch) continue;
+    patchedNames.push(readString(university, "name"));
     for (const key of Object.keys(patch)) {
       if (key === "facilities") {
         university.facilities = Array.from(new Set([...toStringArray(university.facilities), ...toStringArray(patch.facilities)]));
@@ -583,7 +666,32 @@ function buildRawUniversities(html: string): RawUniversity[] {
     }
   }
 
-  return universities;
+  return patchedNames;
+}
+
+function buildRawCatalogLayers(html: string): RawCatalogLayerCollection {
+  const base = evaluateLiteral<RawUniversity[]>(html, "universitiesBase");
+  const supplement = evaluateLiteral<RawUniversity[]>(html, "universitiesSupplement");
+  const patches = evaluateLiteral<Record<string, RawRecord>>(html, "officialUniversityPatches");
+  const baseKeys = new Set(base.map(getUniversityDedupeKey));
+  const duplicateUniversityKeys = Array.from(new Set(supplement.map(getUniversityDedupeKey).filter((key) => baseKeys.has(key)))).sort();
+
+  const layers: Record<StaticCatalogLayerName, RawUniversity[]> = {
+    base: dedupeUniversities(base),
+    supplement: dedupeUniversities(supplement),
+    merged: dedupeUniversities([...base, ...supplement])
+  };
+  const patchNamesByLayer: Record<StaticCatalogLayerName, string[]> = {
+    base: applyOfficialPatches(layers.base, patches),
+    supplement: applyOfficialPatches(layers.supplement, patches),
+    merged: applyOfficialPatches(layers.merged, patches)
+  };
+
+  return {
+    layers,
+    duplicateUniversityKeys,
+    patchNamesByLayer
+  };
 }
 
 function buildOfficialSourceLink(
@@ -840,19 +948,52 @@ function buildStats(sourceHtmlPath: string, fileBytes: number, universities: Sta
     officialFeeSourceUrlCount: programs.filter((program) => hasValue(program.officialFeeSourceUrl)).length,
     officialIntakeCount: programs.filter((program) => hasValue(program.officialIntake)).length,
     publicDisplayStatusCounts: countBy(programs, (program) => program.publicDisplayStatus),
+    programsByLevel: countBy(programs, (program) => program.level),
     readyByLevel: countBy(readyPrograms, (program) => program.level),
     readyCategoryCount: readyCategories.length,
     readyCategories
   };
 }
 
-export function extractStaticCatalog(htmlPath = process.env.STATIC_HTML_PATH || DEFAULT_STATIC_HTML_PATH): StaticCatalog {
-  if (!existsSync(htmlPath)) {
-    throw new Error(`Static HTML file not found: ${htmlPath}`);
-  }
+const STATIC_CATALOG_LAYERS: StaticCatalogLayerName[] = ["base", "supplement", "merged"];
 
-  const html = readFileSync(htmlPath, "utf8");
-  const rawUniversities = buildRawUniversities(html);
+function expectedStatsFromStats(stats: StaticCatalogStats): StaticCatalogExpectedStats {
+  return {
+    universityCount: stats.universityCount,
+    programCount: stats.programCount,
+    readyProgramCount: stats.readyProgramCount,
+    officialTuitionMYRCount: stats.officialTuitionMYRCount,
+    officialFeeSourceUrlCount: stats.officialFeeSourceUrlCount,
+    officialIntakeCount: stats.officialIntakeCount
+  };
+}
+
+function normalizeScopeCode(value: string | null | undefined): string | null {
+  const normalized = String(value || "").trim().toUpperCase();
+  return normalized || null;
+}
+
+function normalizeScopeSlug(value: string | null | undefined): string | null {
+  const normalized = String(value || "").trim();
+  return normalized || null;
+}
+
+function getExpectedStatsForScope(
+  layer: StaticCatalogLayerName,
+  scope: StaticCatalogScope | null,
+  stats: StaticCatalogStats
+): StaticCatalogExpectedStats {
+  if (layer === "base" && scope?.universityCode === "UM" && !scope.universitySlug) {
+    return STATIC_HTML_EXPECTED_UM_BASE_STATS;
+  }
+  return expectedStatsFromStats(stats);
+}
+
+function mapRawCatalog(
+  sourceHtmlPath: string,
+  fileBytes: number,
+  rawUniversities: RawUniversity[]
+): Pick<StaticCatalog, "universities" | "programs" | "stats"> {
   const usedUniversityCodes = new Set<string>();
   const usedUniversitySlugs = new Set<string>();
   const universities = rawUniversities.map((raw) => mapUniversityRecord(raw, usedUniversityCodes, usedUniversitySlugs));
@@ -870,14 +1011,119 @@ export function extractStaticCatalog(htmlPath = process.env.STATIC_HTML_PATH || 
     university.programCount = programs.filter((program) => program.universityCode === university.code).length;
   }
 
-  const stats = buildStats(htmlPath, readFileSync(htmlPath).length, universities, programs);
-  const validation = validateStaticCatalog({ sourceHtmlPath: htmlPath, universities, programs, stats, warnings: [] }, false);
-
   return {
-    sourceHtmlPath: htmlPath,
     universities,
     programs,
-    stats,
+    stats: buildStats(sourceHtmlPath, fileBytes, universities, programs)
+  };
+}
+
+function applyCatalogScope(
+  sourceHtmlPath: string,
+  fileBytes: number,
+  catalog: Pick<StaticCatalog, "universities" | "programs" | "stats">,
+  options: Pick<ExtractStaticCatalogOptions, "universityCode" | "universitySlug">
+): Pick<StaticCatalog, "universities" | "programs" | "stats" | "scope"> {
+  const universityCode = normalizeScopeCode(options.universityCode);
+  const universitySlug = normalizeScopeSlug(options.universitySlug);
+  if (!universityCode && !universitySlug) {
+    return { ...catalog, scope: null };
+  }
+
+  const matchedUniversities = catalog.universities.filter((university) => {
+    const codeMatches = !universityCode || university.code.toUpperCase() === universityCode;
+    const slugMatches = !universitySlug || university.slug === universitySlug;
+    return codeMatches && slugMatches;
+  });
+  const matchedCodes = new Set(matchedUniversities.map((university) => university.code));
+  const programs = catalog.programs.filter((program) => matchedCodes.has(program.universityCode));
+  const programCounts = countBy(programs, (program) => program.universityCode);
+  const universities = matchedUniversities.map((university) => ({
+    ...university,
+    programCount: programCounts[university.code] || 0
+  }));
+
+  return {
+    universities,
+    programs,
+    stats: buildStats(sourceHtmlPath, fileBytes, universities, programs),
+    scope: {
+      universityCode,
+      universitySlug,
+      matchedUniversityCodes: universities.map((university) => university.code),
+      matchedUniversitySlugs: universities.map((university) => university.slug)
+    }
+  };
+}
+
+function normalizeStaticCatalogLayer(layer: string | undefined): StaticCatalogLayerName {
+  if (layer === "base" || layer === "supplement" || layer === "merged") return layer;
+  throw new Error(`Unsupported static catalog layer: ${layer || ""}. Use base, supplement, or merged.`);
+}
+
+export function extractStaticCatalog(
+  htmlPath = process.env.STATIC_HTML_PATH || DEFAULT_STATIC_HTML_PATH,
+  options: ExtractStaticCatalogOptions = {}
+): StaticCatalog {
+  if (!existsSync(htmlPath)) {
+    throw new Error(`Static HTML file not found: ${htmlPath}`);
+  }
+
+  const html = readFileSync(htmlPath, "utf8");
+  const fileBytes = readFileSync(htmlPath).length;
+  const selectedLayer = normalizeStaticCatalogLayer(options.layer || process.env.STATIC_HTML_LAYER || "base");
+  const rawCollection = buildRawCatalogLayers(html);
+  const mappedLayers = Object.fromEntries(
+    STATIC_CATALOG_LAYERS.map((layer) => [
+      layer,
+      applyCatalogScope(htmlPath, fileBytes, mapRawCatalog(htmlPath, fileBytes, rawCollection.layers[layer]), options)
+    ])
+  ) as Record<StaticCatalogLayerName, Pick<StaticCatalog, "universities" | "programs" | "stats" | "scope">>;
+  const layerReports = Object.fromEntries(
+    STATIC_CATALOG_LAYERS.map((layer) => [
+      layer,
+      {
+        layer,
+        stats: mappedLayers[layer].stats,
+        expectedStats: mappedLayers[layer].scope
+          ? getExpectedStatsForScope(layer, mappedLayers[layer].scope || null, mappedLayers[layer].stats)
+          : STATIC_HTML_EXPECTED_LAYER_STATS[layer],
+        duplicateUniversityKeys: layer === "base" ? [] : rawCollection.duplicateUniversityKeys,
+        duplicateUniversityCount: layer === "base" ? 0 : rawCollection.duplicateUniversityKeys.length,
+        overrideUniversityNames: rawCollection.patchNamesByLayer[layer],
+        overrideUniversityCount: rawCollection.patchNamesByLayer[layer].length
+      }
+    ])
+  ) as Record<StaticCatalogLayerName, StaticCatalogLayerReport>;
+  const selected = mappedLayers[selectedLayer];
+  const validation = validateStaticCatalog(
+    {
+      layer: selectedLayer,
+      sourceHtmlPath: htmlPath,
+      universities: selected.universities,
+      programs: selected.programs,
+      stats: selected.stats,
+      expectedStats: selected.scope
+        ? getExpectedStatsForScope(selectedLayer, selected.scope || null, selected.stats)
+        : STATIC_HTML_EXPECTED_LAYER_STATS[selectedLayer],
+      layerReports,
+      scope: selected.scope || null,
+      warnings: []
+    },
+    false
+  );
+
+  return {
+    layer: selectedLayer,
+    sourceHtmlPath: htmlPath,
+    universities: selected.universities,
+    programs: selected.programs,
+    stats: selected.stats,
+    expectedStats: selected.scope
+      ? getExpectedStatsForScope(selectedLayer, selected.scope || null, selected.stats)
+      : STATIC_HTML_EXPECTED_LAYER_STATS[selectedLayer],
+    layerReports,
+    scope: selected.scope || null,
     warnings: validation.warnings
   };
 }
@@ -897,6 +1143,38 @@ function assertUnique(values: string[], label: string, errors: string[]): void {
 export function validateStaticCatalog(catalog: StaticCatalog, compareExpected = true): StaticCatalogValidation {
   const errors: string[] = [];
   const warnings: string[] = [];
+  const layer = catalog.layer || "base";
+  const expectedStats = catalog.expectedStats || STATIC_HTML_EXPECTED_LAYER_STATS[layer];
+  const scope = catalog.scope || null;
+  const layerReports = catalog.layerReports || {
+    base: {
+      layer: "base",
+      stats: catalog.stats,
+      expectedStats,
+      duplicateUniversityKeys: [],
+      duplicateUniversityCount: 0,
+      overrideUniversityNames: [],
+      overrideUniversityCount: 0
+    },
+    supplement: {
+      layer: "supplement",
+      stats: catalog.stats,
+      expectedStats: STATIC_HTML_EXPECTED_LAYER_STATS.supplement,
+      duplicateUniversityKeys: [],
+      duplicateUniversityCount: 0,
+      overrideUniversityNames: [],
+      overrideUniversityCount: 0
+    },
+    merged: {
+      layer: "merged",
+      stats: catalog.stats,
+      expectedStats: STATIC_HTML_EXPECTED_LAYER_STATS.merged,
+      duplicateUniversityKeys: [],
+      duplicateUniversityCount: 0,
+      overrideUniversityNames: [],
+      overrideUniversityCount: 0
+    }
+  };
   const stats = buildStats(
     catalog.sourceHtmlPath,
     catalog.stats.fileBytes,
@@ -914,17 +1192,24 @@ export function validateStaticCatalog(catalog: StaticCatalog, compareExpected = 
   if (orphanPrograms.length) {
     errors.push(`Program references missing universities: ${orphanPrograms.slice(0, 10).map((item) => item.code).join(", ")}`);
   }
+  if (scope && !catalog.universities.length) {
+    const scopeLabel = [
+      scope.universityCode ? `code=${scope.universityCode}` : "",
+      scope.universitySlug ? `slug=${scope.universitySlug}` : ""
+    ].filter(Boolean).join(", ");
+    errors.push(`Static catalog scope matched no universities: ${scopeLabel || "empty scope"}`);
+  }
 
   if (compareExpected) {
-    for (const [key, expected] of Object.entries(STATIC_HTML_EXPECTED_STATS)) {
-      const actual = stats[key as keyof typeof STATIC_HTML_EXPECTED_STATS];
+    for (const [key, expected] of Object.entries(expectedStats)) {
+      const actual = stats[key as keyof StaticCatalogExpectedStats];
       if (actual !== expected) {
-        errors.push(`Expected ${key}=${expected}, got ${String(actual)}`);
+        errors.push(`Expected ${layer} ${key}=${expected}, got ${String(actual)}`);
       }
     }
   }
 
-  if (stats.publicDisplayStatusCounts.ready !== STATIC_HTML_EXPECTED_STATS.readyProgramCount) {
+  if ((stats.publicDisplayStatusCounts.ready || 0) !== expectedStats.readyProgramCount) {
     warnings.push("Ready program count differs from public display status count.");
   }
 
@@ -932,6 +1217,10 @@ export function validateStaticCatalog(catalog: StaticCatalog, compareExpected = 
     ok: errors.length === 0,
     errors,
     warnings,
-    stats
+    layer,
+    expectedStats,
+    stats,
+    layerReports,
+    scope
   };
 }

@@ -1,5 +1,6 @@
 import { extractStaticCatalog, validateStaticCatalog } from "./static-html-catalog.js";
 import { compareDbStats, createCatalogDataSource, getStaticCatalogDbStats } from "./static-html-importer.js";
+import type { StaticCatalogLayerName } from "./static-html-catalog.js";
 
 function getArgValue(name: string): string | null {
   const index = process.argv.indexOf(name);
@@ -8,9 +9,18 @@ function getArgValue(name: string): string | null {
   return inline ? inline.slice(name.length + 1) : null;
 }
 
+function getCatalogLayer(value: string | null): StaticCatalogLayerName {
+  if (!value || value === "base") return "base";
+  if (value === "supplement" || value === "merged") return value;
+  throw new Error(`Unsupported static catalog layer: ${value}. Use base, supplement, or merged.`);
+}
+
 const input = getArgValue("--input") || process.env.STATIC_HTML_PATH || undefined;
 const includeDatabase = process.argv.includes("--db");
-const catalog = extractStaticCatalog(input);
+const layer = getCatalogLayer(getArgValue("--layer") || process.env.STATIC_HTML_LAYER || null);
+const universityCode = getArgValue("--university-code") || process.env.STATIC_HTML_UNIVERSITY_CODE || null;
+const universitySlug = getArgValue("--university-slug") || process.env.STATIC_HTML_UNIVERSITY_SLUG || null;
+const catalog = extractStaticCatalog(input, { layer, universityCode, universitySlug });
 const validation = validateStaticCatalog(catalog);
 let dbStats: Awaited<ReturnType<typeof getStaticCatalogDbStats>> | null = null;
 let dbErrors: string[] = [];
@@ -19,8 +29,11 @@ if (includeDatabase) {
   const dataSource = createCatalogDataSource();
   await dataSource.initialize();
   try {
-    dbStats = await getStaticCatalogDbStats(dataSource);
-    dbErrors = compareDbStats(dbStats);
+    dbStats = await getStaticCatalogDbStats(
+      dataSource,
+      catalog.scope ? { universityCodes: catalog.universities.map((university) => university.code) } : {}
+    );
+    dbErrors = compareDbStats(dbStats, catalog.expectedStats);
   } finally {
     await dataSource.destroy();
   }
@@ -28,10 +41,12 @@ if (includeDatabase) {
 
 console.log(
   JSON.stringify(
-    {
-      input: catalog.sourceHtmlPath,
-      staticValidation: validation,
-      dbStats,
+      {
+        input: catalog.sourceHtmlPath,
+        layer: catalog.layer,
+        scope: catalog.scope || null,
+        staticValidation: validation,
+        dbStats,
       dbValidation: includeDatabase
         ? {
             ok: dbErrors.length === 0,

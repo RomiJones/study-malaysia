@@ -2,7 +2,13 @@ import "reflect-metadata";
 import { DataSource, In, Not, type Repository } from "typeorm";
 import { loadEnvFiles } from "../config/env.js";
 import { ALL_ENTITIES, ProgramEntity, UniversityEntity } from "./entities.js";
-import type { StaticCatalog, StaticProgramSeed, StaticUniversitySeed } from "./static-html-catalog.js";
+import type {
+  StaticCatalog,
+  StaticCatalogExpectedStats,
+  StaticCatalogLayerName,
+  StaticProgramSeed,
+  StaticUniversitySeed
+} from "./static-html-catalog.js";
 import { STATIC_HTML_EXPECTED_STATS } from "./static-html-catalog.js";
 
 export interface StaticCatalogDbStats {
@@ -18,6 +24,53 @@ export interface StaticCatalogImportOptions {
   pruneCatalog?: boolean;
 }
 
+export interface StaticCatalogPruneOptions {
+  noPrune?: boolean;
+  confirmPrune?: boolean;
+  scopeActive?: boolean;
+}
+
+export interface StaticCatalogDbStatsOptions {
+  universityCodes?: string[];
+}
+
+export interface StaticCatalogQualitySummary {
+  publicDisplayStatusCounts: Record<string, number>;
+  programsByLevel: Record<string, number>;
+  readyByLevel: Record<string, number>;
+  readyCategoryCount: number;
+  missingOfficialTuitionMYRCount: number;
+  missingOfficialFeeSourceUrlCount: number;
+  missingOfficialIntakeCount: number;
+  missingOfficialProgramSourceUrlCount: number;
+}
+
+export interface StaticCatalogImportConflict {
+  entity: "university" | "program";
+  code: string;
+  slug: string;
+  codeMatchId: number;
+  slugMatchId: number;
+}
+
+export interface StaticCatalogImportPlan {
+  createdUniversities: number;
+  updatedUniversities: number;
+  createdPrograms: number;
+  updatedPrograms: number;
+  skippedPrograms: number;
+  staleUniversities: number;
+  stalePrograms: number;
+  pruneCatalog: boolean;
+  scopeActive: boolean;
+  scopeUniversityCodes: string[];
+  dbStatsBefore: StaticCatalogDbStats;
+  expectedStats: StaticCatalogExpectedStats;
+  quality: StaticCatalogQualitySummary;
+  conflicts: StaticCatalogImportConflict[];
+  warnings: string[];
+}
+
 export interface StaticCatalogImportSummary {
   createdUniversities: number;
   updatedUniversities: number;
@@ -26,7 +79,7 @@ export interface StaticCatalogImportSummary {
   prunedUniversities: number;
   prunedPrograms: number;
   dbStats: StaticCatalogDbStats;
-  expectedStats: typeof STATIC_HTML_EXPECTED_STATS;
+  expectedStats: StaticCatalogExpectedStats;
   warnings: string[];
 }
 
@@ -45,23 +98,109 @@ export function createCatalogDataSource() {
   });
 }
 
+export function shouldPruneStaticCatalog(
+  layer: StaticCatalogLayerName,
+  options: StaticCatalogPruneOptions = {}
+): boolean {
+  if (options.noPrune) return false;
+  if (options.scopeActive) return options.confirmPrune === true;
+  if (layer === "base") return true;
+  return options.confirmPrune === true;
+}
+
 async function findExistingUniversity(
   repository: Repository<UniversityEntity>,
   item: StaticUniversitySeed
 ) {
-  return repository.findOne({ where: [{ code: item.code }, { slug: item.slug }] });
+  const { current, conflict } = await findUniversityMatch(repository, item);
+  if (conflict) {
+    throw new Error(`Static catalog university conflict for ${item.code}/${item.slug}: code and slug match different rows.`);
+  }
+  return current;
 }
 
 async function findExistingProgram(
   repository: Repository<ProgramEntity>,
   item: StaticProgramSeed
 ) {
-  return repository.findOne({ where: [{ code: item.code }, { slug: item.slug }] });
+  const { current, conflict } = await findProgramMatch(repository, item);
+  if (conflict) {
+    throw new Error(`Static catalog program conflict for ${item.code}/${item.slug}: code and slug match different rows.`);
+  }
+  return current;
 }
 
-export async function getStaticCatalogDbStats(dataSource: DataSource): Promise<StaticCatalogDbStats> {
+async function findUniversityMatch(repository: Repository<UniversityEntity>, item: StaticUniversitySeed) {
+  const [byCode, bySlug] = await Promise.all([
+    repository.findOne({ where: { code: item.code } }),
+    repository.findOne({ where: { slug: item.slug } })
+  ]);
+  const conflict =
+    byCode && bySlug && byCode.id !== bySlug.id
+      ? {
+          entity: "university" as const,
+          code: item.code,
+          slug: item.slug,
+          codeMatchId: byCode.id,
+          slugMatchId: bySlug.id
+        }
+      : null;
+  return {
+    current: byCode || bySlug || null,
+    conflict
+  };
+}
+
+async function findProgramMatch(repository: Repository<ProgramEntity>, item: StaticProgramSeed) {
+  const [byCode, bySlug] = await Promise.all([
+    repository.findOne({ where: { code: item.code } }),
+    repository.findOne({ where: { slug: item.slug } })
+  ]);
+  const conflict =
+    byCode && bySlug && byCode.id !== bySlug.id
+      ? {
+          entity: "program" as const,
+          code: item.code,
+          slug: item.slug,
+          codeMatchId: byCode.id,
+          slugMatchId: bySlug.id
+        }
+      : null;
+  return {
+    current: byCode || bySlug || null,
+    conflict
+  };
+}
+
+export function getStaticCatalogDbStatsOptions(catalog: StaticCatalog): StaticCatalogDbStatsOptions {
+  return catalog.scope ? { universityCodes: catalog.universities.map((university) => university.code) } : {};
+}
+
+export async function getStaticCatalogDbStats(
+  dataSource: DataSource,
+  options: StaticCatalogDbStatsOptions = {}
+): Promise<StaticCatalogDbStats> {
   const universityRepository = dataSource.getRepository(UniversityEntity);
   const programRepository = dataSource.getRepository(ProgramEntity);
+  const universityCodes = options.universityCodes?.filter(Boolean) || [];
+  if (options.universityCodes && !universityCodes.length) {
+    return {
+      universityCount: 0,
+      programCount: 0,
+      readyProgramCount: 0,
+      officialTuitionMYRCount: 0,
+      officialFeeSourceUrlCount: 0,
+      officialIntakeCount: 0
+    };
+  }
+
+  const scopedPrograms = () => {
+    const query = programRepository.createQueryBuilder("program");
+    if (universityCodes.length) {
+      query.innerJoin("program.university", "university").where("university.code IN (:...universityCodes)", { universityCodes });
+    }
+    return query;
+  };
 
   const [
     universityCount,
@@ -71,12 +210,12 @@ export async function getStaticCatalogDbStats(dataSource: DataSource): Promise<S
     officialFeeSourceUrlCount,
     officialIntakeCount
   ] = await Promise.all([
-    universityRepository.count(),
-    programRepository.count(),
-    programRepository.count({ where: { publicDisplayStatus: "ready" } }),
-    programRepository.createQueryBuilder("program").where("program.officialTuitionMYR IS NOT NULL").getCount(),
-    programRepository.createQueryBuilder("program").where("program.officialFeeSourceUrl <> ''").getCount(),
-    programRepository.createQueryBuilder("program").where("program.officialIntake <> ''").getCount()
+    universityCodes.length ? universityRepository.count({ where: { code: In(universityCodes) } }) : universityRepository.count(),
+    scopedPrograms().getCount(),
+    scopedPrograms().andWhere("program.publicDisplayStatus = :ready", { ready: "ready" }).getCount(),
+    scopedPrograms().andWhere("program.officialTuitionMYR IS NOT NULL").getCount(),
+    scopedPrograms().andWhere("program.officialFeeSourceUrl <> ''").getCount(),
+    scopedPrograms().andWhere("program.officialIntake <> ''").getCount()
   ]);
 
   return {
@@ -86,6 +225,115 @@ export async function getStaticCatalogDbStats(dataSource: DataSource): Promise<S
     officialTuitionMYRCount,
     officialFeeSourceUrlCount,
     officialIntakeCount
+  };
+}
+
+function getCatalogQualitySummary(catalog: StaticCatalog): StaticCatalogQualitySummary {
+  return {
+    publicDisplayStatusCounts: catalog.stats.publicDisplayStatusCounts,
+    programsByLevel: catalog.stats.programsByLevel,
+    readyByLevel: catalog.stats.readyByLevel,
+    readyCategoryCount: catalog.stats.readyCategoryCount,
+    missingOfficialTuitionMYRCount: catalog.programs.filter((program) => program.officialTuitionMYR == null).length,
+    missingOfficialFeeSourceUrlCount: catalog.programs.filter((program) => !program.officialFeeSourceUrl).length,
+    missingOfficialIntakeCount: catalog.programs.filter((program) => !program.officialIntake).length,
+    missingOfficialProgramSourceUrlCount: catalog.programs.filter((program) => !program.officialSourceUrl).length
+  };
+}
+
+async function countStalePrograms(
+  repository: Repository<ProgramEntity>,
+  programCodes: string[],
+  universityIds: number[] | null
+): Promise<number> {
+  if (!programCodes.length) return 0;
+  const query = repository.createQueryBuilder("program").where("program.code NOT IN (:...programCodes)", { programCodes });
+  if (universityIds) {
+    if (!universityIds.length) return 0;
+    query.andWhere("program.universityId IN (:...universityIds)", { universityIds });
+  }
+  return query.getCount();
+}
+
+async function countStaleUniversities(
+  repository: Repository<UniversityEntity>,
+  universityCodes: string[]
+): Promise<number> {
+  if (!universityCodes.length) return 0;
+  return repository.count({ where: { code: Not(In(universityCodes)) } });
+}
+
+export async function previewStaticCatalogImport(
+  dataSource: DataSource,
+  catalog: StaticCatalog,
+  options: StaticCatalogImportOptions = {}
+): Promise<StaticCatalogImportPlan> {
+  const universityRepository = dataSource.getRepository(UniversityEntity);
+  const programRepository = dataSource.getRepository(ProgramEntity);
+  const pruneCatalog = options.pruneCatalog ?? true;
+  const scopeActive = Boolean(catalog.scope);
+  const warnings = [...catalog.warnings];
+  const conflicts: StaticCatalogImportConflict[] = [];
+  const existingUniversityIds: number[] = [];
+  let createdUniversities = 0;
+  let updatedUniversities = 0;
+  let createdPrograms = 0;
+  let updatedPrograms = 0;
+  let skippedPrograms = 0;
+
+  for (const item of catalog.universities) {
+    const match = await findUniversityMatch(universityRepository, item);
+    if (match.conflict) {
+      conflicts.push(match.conflict);
+      continue;
+    }
+    if (match.current) {
+      updatedUniversities += 1;
+      existingUniversityIds.push(match.current.id);
+    } else {
+      createdUniversities += 1;
+    }
+  }
+
+  const catalogUniversityCodes = new Set(catalog.universities.map((university) => university.code));
+  for (const item of catalog.programs) {
+    if (!catalogUniversityCodes.has(item.universityCode)) {
+      skippedPrograms += 1;
+      warnings.push(`Skipped program ${item.code}; missing university ${item.universityCode}.`);
+      continue;
+    }
+    const match = await findProgramMatch(programRepository, item);
+    if (match.conflict) {
+      conflicts.push(match.conflict);
+      continue;
+    }
+    if (match.current) updatedPrograms += 1;
+    else createdPrograms += 1;
+  }
+
+  const programCodes = catalog.programs.map((program) => program.code);
+  const universityCodes = catalog.universities.map((university) => university.code);
+  const stalePrograms = pruneCatalog
+    ? await countStalePrograms(programRepository, programCodes, scopeActive ? existingUniversityIds : null)
+    : 0;
+  const staleUniversities = pruneCatalog && !scopeActive ? await countStaleUniversities(universityRepository, universityCodes) : 0;
+
+  return {
+    createdUniversities,
+    updatedUniversities,
+    createdPrograms,
+    updatedPrograms,
+    skippedPrograms,
+    staleUniversities,
+    stalePrograms,
+    pruneCatalog,
+    scopeActive,
+    scopeUniversityCodes: universityCodes,
+    dbStatsBefore: await getStaticCatalogDbStats(dataSource, getStaticCatalogDbStatsOptions(catalog)),
+    expectedStats: catalog.expectedStats,
+    quality: getCatalogQualitySummary(catalog),
+    conflicts,
+    warnings
   };
 }
 
@@ -132,7 +380,7 @@ export async function importStaticCatalog(
       officialFeeSourceUrlCount: 0,
       officialIntakeCount: 0
     },
-    expectedStats: STATIC_HTML_EXPECTED_STATS,
+    expectedStats: catalog.expectedStats,
     warnings: [...catalog.warnings]
   };
 
@@ -172,13 +420,26 @@ export async function importStaticCatalog(
   if (pruneCatalog) {
     const programCodes = catalog.programs.map((item) => item.code);
     const universityCodes = catalog.universities.map((item) => item.code);
-    const staleProgramCount = await programRepository.count({ where: { code: Not(In(programCodes)) } });
+    const savedUniversityIds = Array.from(savedUniversities.values()).map((item) => item.id);
+    const staleProgramCount = catalog.scope
+      ? await countStalePrograms(programRepository, programCodes, savedUniversityIds)
+      : await programRepository.count({ where: { code: Not(In(programCodes)) } });
     if (staleProgramCount) {
-      await programRepository.delete({ code: Not(In(programCodes)) });
+      if (catalog.scope) {
+        await programRepository
+          .createQueryBuilder()
+          .delete()
+          .from(ProgramEntity)
+          .where("code NOT IN (:...programCodes)", { programCodes })
+          .andWhere("universityId IN (:...savedUniversityIds)", { savedUniversityIds })
+          .execute();
+      } else {
+        await programRepository.delete({ code: Not(In(programCodes)) });
+      }
     }
     summary.prunedPrograms = staleProgramCount;
 
-    const staleUniversityCount = await universityRepository.count({ where: { code: Not(In(universityCodes)) } });
+    const staleUniversityCount = catalog.scope ? 0 : await universityRepository.count({ where: { code: Not(In(universityCodes)) } });
     if (staleUniversityCount) {
       await universityRepository.delete({ code: Not(In(universityCodes)) });
     }
@@ -186,14 +447,17 @@ export async function importStaticCatalog(
   }
 
   await refreshProgramCounts(dataSource, Array.from(savedUniversities.values()).map((item) => item.id));
-  summary.dbStats = await getStaticCatalogDbStats(dataSource);
+  summary.dbStats = await getStaticCatalogDbStats(dataSource, getStaticCatalogDbStatsOptions(catalog));
 
   return summary;
 }
 
-export function compareDbStats(stats: StaticCatalogDbStats): string[] {
+export function compareDbStats(
+  stats: StaticCatalogDbStats,
+  expectedStats: StaticCatalogExpectedStats = STATIC_HTML_EXPECTED_STATS
+): string[] {
   const errors: string[] = [];
-  for (const [key, expected] of Object.entries(STATIC_HTML_EXPECTED_STATS)) {
+  for (const [key, expected] of Object.entries(expectedStats)) {
     const actual = stats[key as keyof StaticCatalogDbStats];
     if (actual !== expected) {
       errors.push(`Expected database ${key}=${expected}, got ${actual}`);
