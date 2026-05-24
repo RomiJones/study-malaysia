@@ -378,3 +378,43 @@ TASK-006 不应直接进入 Vue 代码实现。静态 HTML 已经提供完整用
 - 已搜索 Notion，但未找到可安全更新的 TASK-006 页面。
 - 已新增本地中文 PRD/规划文档。
 - 本任务未修改 `apps/web`、`apps/api`、`apps/admin` 的实现文件。
+
+## 11. Review 自动修复视觉验收补充
+
+### 11.1 修复范围
+
+- 本节仅补充 `TASK-006-REVIEW-002` 要求的当轮浏览器视觉验收证据。
+- 本轮未修改 `apps/web`、`apps/api`、`apps/admin` 实现文件。
+- `TASK-006-REVIEW-001` 和 `TASK-006-REVIEW-003` 为不可自动修复问题，不在本轮处理范围内。
+
+### 11.2 验证命令
+
+- 已运行 `npm run verify:task028`，结果通过。
+- 已运行 `npm run build`，结果通过；管理端仍存在既有大 chunk 警告，不阻塞本轮测试证据补充。
+
+### 11.3 截图产物
+
+- 输出目录：`D:\mydev\study-malaysia\output\playwright\task028-20260524T122419Z`
+- Markdown 报告：`D:\mydev\study-malaysia\output\playwright\task028-20260524T122419Z\visual-diff-report.md`
+- JSON 报告：`D:\mydev\study-malaysia\output\playwright\task028-20260524T122419Z\visual-diff-report.json`
+- 截图数量：52 张。
+- 对比数量：26 组。
+- 覆盖视口：`1440x1000`、`390x844`。
+- 自动差异结论：阻塞项 0，差异项 0。
+
+### 11.4 关键截图路径
+
+| 覆盖项 | 桌面端截图 | 移动端截图 |
+| --- | --- | --- |
+| 首页首屏 | `output\playwright\task028-20260524T122419Z\static-home-desktop.png` / `output\playwright\task028-20260524T122419Z\web-home-desktop.png` | `output\playwright\task028-20260524T122419Z\static-home-mobile.png` / `output\playwright\task028-20260524T122419Z\web-home-mobile.png` |
+| 搜索筛选区与院校卡片 | `output\playwright\task028-20260524T122419Z\static-list-filter-desktop.png` / `output\playwright\task028-20260524T122419Z\web-list-filter-desktop.png` | `output\playwright\task028-20260524T122419Z\static-list-filter-mobile.png` / `output\playwright\task028-20260524T122419Z\web-list-filter-mobile.png` |
+| 院校详情概览 | `output\playwright\task028-20260524T122419Z\static-university-overview-desktop.png` / `output\playwright\task028-20260524T122419Z\web-university-overview-desktop.png` | `output\playwright\task028-20260524T122419Z\static-university-overview-mobile.png` / `output\playwright\task028-20260524T122419Z\web-university-overview-mobile.png` |
+| 专业列表 | `output\playwright\task028-20260524T122419Z\static-university-programs-desktop.png` / `output\playwright\task028-20260524T122419Z\web-university-programs-desktop.png` | `output\playwright\task028-20260524T122419Z\static-university-programs-mobile.png` / `output\playwright\task028-20260524T122419Z\web-university-programs-mobile.png` |
+| 专业详情弹窗 | `output\playwright\task028-20260524T122419Z\static-program-modal-desktop.png` / `output\playwright\task028-20260524T122419Z\web-program-modal-desktop.png` | `output\playwright\task028-20260524T122419Z\static-program-modal-mobile.png` / `output\playwright\task028-20260524T122419Z\web-program-modal-mobile.png` |
+| 登录弹窗 | `output\playwright\task028-20260524T122419Z\static-auth-modal-desktop.png` / `output\playwright\task028-20260524T122419Z\web-auth-modal-desktop.png` | `output\playwright\task028-20260524T122419Z\static-auth-modal-mobile.png` / `output\playwright\task028-20260524T122419Z\web-auth-modal-mobile.png` |
+| 费用估算弹窗 | `output\playwright\task028-20260524T122419Z\static-calculator-modal-desktop.png` / `output\playwright\task028-20260524T122419Z\web-calculator-modal-desktop.png` | `output\playwright\task028-20260524T122419Z\static-calculator-modal-mobile.png` / `output\playwright\task028-20260524T122419Z\web-calculator-modal-mobile.png` |
+| 智能推荐弹窗 | `output\playwright\task028-20260524T122419Z\static-recommend-modal-desktop.png` / `output\playwright\task028-20260524T122419Z\web-recommend-modal-desktop.png` | `output\playwright\task028-20260524T122419Z\static-recommend-modal-mobile.png` / `output\playwright\task028-20260524T122419Z\web-recommend-modal-mobile.png` |
+
+### 11.5 结论
+
+本轮已补齐桌面端和移动端关键区域的静态 HTML 与 Vue 用户端同视口截图、可复现命令、报告路径和自动差异结论，可作为 `TASK-006-REVIEW-002` 的修复证据。Notion 未更新；本轮只更新本地中文任务快照和本地中文规划文档。
