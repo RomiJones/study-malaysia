@@ -1,0 +1,56 @@
+# 任务：新增需求边界和验收标准补充
+
+- **任务编号**: TASK-051
+- **任务标题**: 新增需求边界和验收标准补充
+- **状态**: 待评审
+- **优先级**: 高
+- **任务类型**: 产品
+- **负责人**: Codex
+- **关联需求**: 产品需求文档
+- **关联技术方案**: 技术方案
+- **实现说明**: 围绕新增需求“需要从D:\mydev\StudyMY_UM_v58_na_display_tidy.html提取马来大学所有数据进入到对应的数据库中”补充中文 PRD、范围、非目标、验收标准、风险和后续实现边界。本任务只更新中文文档，不修改业务代码。
+- **测试计划**: 人工检查新增需求说明、验收标准、依赖关系和后续任务是否清晰。
+- **验证结果**: 已补充中文 PRD 边界、需求快照、详细边界文档和开发进度记录；本任务未修改业务代码、未导入数据库、未把 Notion 或 Markdown 快照描述为业务数据库。已运行 `npm run test` 和 `npm run build`，均通过；管理端保留既有 Vite 大 chunk 警告，不影响本任务。
+- **阻塞说明**: 当前无已确认阻塞；后续实现若无法确认 UM 范围、目标数据库、覆盖策略或公开发布策略，必须阻塞。
+
+## 依赖任务
+
+
+## 并行分组
+- parallelGroup: docs
+
+## 影响范围
+- affectedApps: apps/api, docs
+- affectedModules: apps/api:需求边界和验收标准补, docs:需求边界和验收标准补
+- likelyFiles: none
+
+## 锁范围建议
+- lockScopeHint: module_scope
+- riskLevel: low
+
+## 依赖说明
+- 当前任务没有真实前置任务；如锁范围不冲突，可作为并行候选。
+- 并行说明：parallelGroup=docs，lockScopeHint=module_scope。文件或模块冲突由运行时锁控制，不通过伪依赖解决。
+
+## 验收标准
+- 已说明新增需求的目标、用户价值、功能范围和非目标。
+- 已明确该新增需求与已有任务的关系，不覆盖或重置历史任务。
+- 已列出需要人工确认的问题和阻塞条件。
+- 没有把 Notion 或 Markdown 快照描述为业务数据库。
+
+## 关联 Commit
+
+## 执行记录
+
+### 2026-05-24T13:38:51.600Z - 自动状态更新
+
+- **状态**: 进行中
+- **说明**: 自动化运行 TASK-051-2026-05-24T13-38-51-585Z 已领取该任务。
+
+### 2026-05-24T21:40:31+08:00 - 文档边界补充
+
+- **状态**: 待评审
+- **说明**: 已围绕新增需求补充中文需求边界、目标、用户价值、功能范围、非目标、历史任务关系、验收标准、人工确认问题、阻塞条件和后续实现边界。
+- **验证结果**: `npm run test` 通过，44 个测试全部通过；`npm run build` 通过，API、Web、Admin、Shared 构建成功，管理端存在既有大 chunk 警告。
+- **更新文件**: `docs/prd/TASK-051-um-data-import-requirement-boundary.md`、`docs/notion-snapshot/产品需求文档.md`、`docs/notion-snapshot/requirements/REQ-2026-05-24T12-55-06-287Z.md`、`docs/notion-snapshot/tasks/TASK-051.md`、`docs/notion-snapshot/开发进度日志.md`
+- **Notion 更新**: 未更新实际 Notion；本轮没有可写入的 Notion 页面 ID，已更新本地中文文档快照。
