@@ -36,9 +36,9 @@
     "verify:task042": "node scripts/task042-multilingual-visual-regression.mjs",
     "verify:task040:browser": "node scripts/task035-final-release-audit.mjs",
     "seed": "npm --workspace @studymy/api run seed",
-    "extract:static": "npm --workspace @studymy/api run extract:static",
-    "import:static": "npm --workspace @studymy/api run import:static --",
-    "check:static": "npm --workspace @studymy/api run check:static --"
+    "extract:static": "npm --workspace @studymy/api run extract:static -- --layer=merged",
+    "import:static": "npm --workspace @studymy/api run import:static -- --layer=merged --confirm-supplement",
+    "check:static": "npm --workspace @studymy/api run check:static -- --layer=merged"
   },
   "devDependencies": {
     "playwright": "^1.60.0"

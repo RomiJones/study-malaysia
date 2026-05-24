@@ -21,6 +21,7 @@ import {
 export const DEFAULT_STATIC_HTML_PATH = "D:/mydev/StudyMY_UM_v58_na_display_tidy.html";
 
 export type StaticCatalogLayerName = "base" | "supplement" | "merged";
+export const DEFAULT_STATIC_CATALOG_LAYER: StaticCatalogLayerName = "merged";
 
 export interface StaticCatalogExpectedStats {
   universityCount: number;
@@ -58,7 +59,7 @@ export const STATIC_HTML_EXPECTED_LAYER_STATS = {
   }
 } as const;
 
-export const STATIC_HTML_EXPECTED_STATS = STATIC_HTML_EXPECTED_LAYER_STATS.base;
+export const STATIC_HTML_EXPECTED_STATS = STATIC_HTML_EXPECTED_LAYER_STATS[DEFAULT_STATIC_CATALOG_LAYER];
 
 export const STATIC_HTML_EXPECTED_UM_BASE_STATS: StaticCatalogExpectedStats = {
   universityCount: 1,
@@ -1071,7 +1072,7 @@ export function extractStaticCatalog(
 
   const html = readFileSync(htmlPath, "utf8");
   const fileBytes = readFileSync(htmlPath).length;
-  const selectedLayer = normalizeStaticCatalogLayer(options.layer || process.env.STATIC_HTML_LAYER || "base");
+  const selectedLayer = normalizeStaticCatalogLayer(options.layer || process.env.STATIC_HTML_LAYER || DEFAULT_STATIC_CATALOG_LAYER);
   const rawCollection = buildRawCatalogLayers(html);
   const mappedLayers = Object.fromEntries(
     STATIC_CATALOG_LAYERS.map((layer) => [

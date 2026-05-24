@@ -113,9 +113,8 @@ export function shouldPruneStaticCatalog(
   layer: StaticCatalogLayerName,
   options: StaticCatalogPruneOptions = {}
 ): boolean {
+  void layer;
   if (options.noPrune) return false;
-  if (options.scopeActive) return options.confirmPrune === true;
-  if (layer === "base") return true;
   return options.confirmPrune === true;
 }
 

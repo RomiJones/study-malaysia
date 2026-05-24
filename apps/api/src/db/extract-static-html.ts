@@ -1,6 +1,7 @@
 import { mkdirSync, writeFileSync } from "node:fs";
 import { dirname, resolve } from "node:path";
-import { extractStaticCatalog, validateStaticCatalog } from "./static-html-catalog.js";
+import { DEFAULT_STATIC_CATALOG_LAYER, extractStaticCatalog, validateStaticCatalog } from "./static-html-catalog.js";
+import type { StaticCatalogLayerName } from "./static-html-catalog.js";
 
 function getArgValue(name: string): string | null {
   const index = process.argv.indexOf(name);
@@ -9,9 +10,16 @@ function getArgValue(name: string): string | null {
   return inline ? inline.slice(name.length + 1) : null;
 }
 
+function getCatalogLayer(value: string | null): StaticCatalogLayerName {
+  if (!value) return DEFAULT_STATIC_CATALOG_LAYER;
+  if (value === "base" || value === "supplement" || value === "merged") return value;
+  throw new Error(`Unsupported static catalog layer: ${value}. Use base, supplement, or merged.`);
+}
+
 const input = getArgValue("--input") || process.env.STATIC_HTML_PATH || undefined;
 const output = getArgValue("--out");
-const catalog = extractStaticCatalog(input);
+const layer = getCatalogLayer(getArgValue("--layer") || process.env.STATIC_HTML_LAYER || null);
+const catalog = extractStaticCatalog(input, { layer });
 const validation = validateStaticCatalog(catalog);
 
 if (output) {
@@ -22,6 +30,8 @@ if (output) {
     JSON.stringify(
       {
         sourceHtmlPath: catalog.sourceHtmlPath,
+        layer: catalog.layer,
+        scope: catalog.scope || null,
         stats: catalog.stats,
         universities: catalog.universities,
         programs: catalog.programs
@@ -38,6 +48,8 @@ console.log(
     {
       input: catalog.sourceHtmlPath,
       output: output ? resolve(output) : null,
+      layer: catalog.layer,
+      scope: catalog.scope || null,
       stats: catalog.stats,
       validation
     },

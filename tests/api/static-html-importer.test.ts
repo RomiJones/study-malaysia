@@ -9,6 +9,8 @@ import {
 } from "../../apps/api/src/db/static-html-importer.ts";
 import { ProgramEntity, UniversityEntity } from "../../apps/api/src/db/entities.ts";
 import {
+  DEFAULT_STATIC_CATALOG_LAYER,
+  extractStaticCatalog,
   STATIC_HTML_EXPECTED_UM_BASE_STATS,
   STATIC_HTML_EXPECTED_LAYER_STATS,
   STATIC_HTML_EXPECTED_STATS,
@@ -25,13 +27,31 @@ describe("static HTML import statistics", () => {
     assert.deepEqual(compareDbStats({ ...STATIC_HTML_EXPECTED_STATS }), []);
   });
 
+  test("uses the merged catalog as the default TASK-011 acceptance baseline", () => {
+    assert.equal(DEFAULT_STATIC_CATALOG_LAYER, "merged");
+    assert.deepEqual(STATIC_HTML_EXPECTED_STATS, STATIC_HTML_EXPECTED_LAYER_STATS.merged);
+    assert.equal(STATIC_HTML_EXPECTED_STATS.universityCount, 119);
+    assert.equal(STATIC_HTML_EXPECTED_STATS.programCount, 687);
+    assert.equal(STATIC_HTML_EXPECTED_STATS.readyProgramCount, 239);
+  });
+
+  test("extracts merged catalog data by default", () => {
+    const catalog = extractStaticCatalog();
+
+    assert.equal(catalog.layer, "merged");
+    assert.equal(catalog.stats.universityCount, 119);
+    assert.equal(catalog.stats.programCount, 687);
+    assert.equal(catalog.stats.readyProgramCount, 239);
+  });
+
   test("tracks supplement expected stats as mapped import candidates", () => {
     assert.equal(STATIC_HTML_EXPECTED_LAYER_STATS.supplement.universityCount, 104);
     assert.equal(STATIC_HTML_EXPECTED_LAYER_STATS.supplement.programCount, 256);
   });
 
-  test("keeps confirmed supplement imports additive unless prune is explicitly confirmed", () => {
-    assert.equal(shouldPruneStaticCatalog("base"), true);
+  test("requires explicit confirmation before pruning any catalog layer", () => {
+    assert.equal(shouldPruneStaticCatalog("base"), false);
+    assert.equal(shouldPruneStaticCatalog("base", { confirmPrune: true }), true);
     assert.equal(shouldPruneStaticCatalog("base", { noPrune: true }), false);
     assert.equal(shouldPruneStaticCatalog("base", { scopeActive: true }), false);
     assert.equal(shouldPruneStaticCatalog("base", { scopeActive: true, confirmPrune: true }), true);

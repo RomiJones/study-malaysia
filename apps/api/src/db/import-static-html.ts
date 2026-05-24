@@ -1,4 +1,4 @@
-import { extractStaticCatalog, validateStaticCatalog } from "./static-html-catalog.js";
+import { DEFAULT_STATIC_CATALOG_LAYER, extractStaticCatalog, validateStaticCatalog } from "./static-html-catalog.js";
 import {
   compareDbStats,
   createCatalogDataSource,
@@ -43,7 +43,8 @@ function getArgValue(name: string): string | null {
 }
 
 function getCatalogLayer(value: string | null): StaticCatalogLayerName {
-  if (!value || value === "base") return "base";
+  if (!value) return DEFAULT_STATIC_CATALOG_LAYER;
+  if (value === "base") return "base";
   if (value === "supplement" || value === "merged") return value;
   throw new Error(`Unsupported static catalog layer: ${value}. Use base, supplement, or merged.`);
 }
