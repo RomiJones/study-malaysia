@@ -315,8 +315,8 @@ function buildMaterials(profile: PlannerProfileState, progress: Record<string, M
   const base = [
     material("passport", "Passport bio page", "护照首页扫描件", "Halaman biodata pasport", "Clear scan with at least six months validity.", "清晰扫描件，护照有效期至少六个月。", "Salinan imbasan jelas dengan tempoh sah sekurang-kurangnya enam bulan."),
     material("photo", "ID photo", "白底证件照", "Foto pengenalan berlatar putih", "Use recent white-background ID photos.", "使用近期白底证件照。", "Gunakan foto pengenalan terkini dengan latar belakang putih."),
-    material("transcript", "Academic transcript", "英文版成绩单", "Transkrip akademik", "Official or school-issued English transcript.", "学校或官方出具的英文成绩单。", "Transkrip bahasa Inggeris yang dikeluarkan oleh sekolah atau pihak rasmi."),
-    material("language", "Language score", "英语成绩证明", "Bukti skor bahasa Inggeris", "IELTS, TOEFL or accepted conditional-language route.", "IELTS、TOEFL 或学校认可的条件语言路径。", "IELTS, TOEFL atau laluan bahasa bersyarat yang diterima universiti.")
+    material("transcript", "Academic transcript", "英文版成绩单", "Transkrip akademik", "English transcript issued by the previous school or an official authority.", "原就读学校或官方出具的英文成绩单。", "Transkrip bahasa Inggeris yang dikeluarkan oleh sekolah terdahulu atau pihak rasmi."),
+    material("language", "Language score", "英语成绩证明", "Bukti skor bahasa Inggeris", "IELTS, TOEFL or university-accepted conditional-language route.", "IELTS、TOEFL 或院校认可的条件语言路径。", "IELTS, TOEFL atau laluan bahasa bersyarat yang diterima universiti.")
   ];
   const levelMaterials: Record<DegreeLevel, PlannerMaterialItem[]> = {
     bachelor: [

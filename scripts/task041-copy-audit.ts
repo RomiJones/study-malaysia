@@ -1,5 +1,7 @@
+import { readFileSync } from "node:fs";
 import { SUPPORTED_LOCALES, type SupportedLocale } from "@studymy/shared";
 import { messages } from "../apps/web/src/i18n/messages.ts";
+import { localizedText } from "../apps/web/src/i18n/localeTransforms.ts";
 import {
   cleanDisplayText,
   formatCategoryLabel,
@@ -95,6 +97,42 @@ function checkMalayIsNotEnglishFallback() {
 
   return {
     malayEnglishFallbackCount: 0
+  };
+}
+
+function checkPlannerMaterialRuntimeCopySamples() {
+  const failures: string[] = [];
+  const plannerSource = readFileSync(new URL("../apps/web/src/stores/planner.ts", import.meta.url), "utf8");
+
+  for (const sample of plannerMaterialRuntimeSamples) {
+    const localized = localizedText(sample.expected.en, sample.expected["zh-CN"], sample.expected.ms);
+
+    for (const locale of SUPPORTED_LOCALES) {
+      const expected = sample.expected[locale];
+      if (localized[locale] !== expected) {
+        failures.push(`${sample.key} ${locale}: expected "${expected}", received "${localized[locale]}"`);
+      }
+    }
+
+    for (const locale of runtimeSourceLocales) {
+      const expected = sample.expected[locale];
+      if (!plannerSource.includes(expected)) {
+        failures.push(`${sample.key} source is missing ${locale} runtime copy: ${expected}`);
+      }
+    }
+  }
+
+  for (const forbidden of plannerForbiddenRuntimeSnippets) {
+    if (plannerSource.includes(forbidden)) {
+      failures.push(`planner runtime copy still contains outdated terminology: ${forbidden}`);
+    }
+  }
+
+  assert(failures.length === 0, `TASK-041 planner runtime copy samples failed:\n${failures.join("\n")}`);
+
+  return {
+    sampleCount: plannerMaterialRuntimeSamples.length,
+    sourceLocales: runtimeSourceLocales
   };
 }
 
@@ -341,6 +379,36 @@ const malayForbiddenTerms = [
   "Daftar ahli"
 ];
 
+const runtimeSourceLocales = ["en", "ms", "zh-CN"] as const;
+
+const plannerMaterialRuntimeSamples: Array<{ key: string; expected: Record<SupportedLocale, string> }> = [
+  {
+    key: "planner.materials.transcript.note",
+    expected: {
+      en: "English transcript issued by the previous school or an official authority.",
+      ms: "Transkrip bahasa Inggeris yang dikeluarkan oleh sekolah terdahulu atau pihak rasmi.",
+      "zh-CN": "原就读学校或官方出具的英文成绩单。",
+      "zh-TW": "原就讀學校或官方出具的英文成績單。"
+    }
+  },
+  {
+    key: "planner.materials.language.note",
+    expected: {
+      en: "IELTS, TOEFL or university-accepted conditional-language route.",
+      ms: "IELTS, TOEFL atau laluan bahasa bersyarat yang diterima universiti.",
+      "zh-CN": "IELTS、TOEFL 或院校认可的条件语言路径。",
+      "zh-TW": "IELTS、TOEFL 或院校認可的條件語言路徑。"
+    }
+  }
+];
+
+const plannerForbiddenRuntimeSnippets = [
+  "\"Official or school-issued English transcript.\"",
+  "\"学校或官方出具的英文成绩单。\"",
+  "学校认可的条件语言路径",
+  "學校認可的條件語言路徑"
+];
+
 const allowedEqualMalayEnglishPaths = new Set([
   "common.phd",
   "common.visa",
@@ -358,6 +426,7 @@ const allowedEqualMalayEnglishPaths = new Set([
 runCheck("glossary message samples", checkGlossaryMessageSamples);
 runCheck("copy terminology boundaries", checkCopyTerminologyBoundaries);
 runCheck("Malay non-English fallback boundary", checkMalayIsNotEnglishFallback);
+runCheck("planner material runtime copy samples", checkPlannerMaterialRuntimeCopySamples);
 runCheck("dynamic copy samples", checkDynamicCopySamples);
 
 console.log(JSON.stringify({
