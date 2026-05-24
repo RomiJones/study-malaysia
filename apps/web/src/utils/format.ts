@@ -13,7 +13,7 @@ import type {
 import { CATEGORY_LABELS } from "@studymy/shared";
 import { toTraditionalText } from "../i18n/localeTransforms";
 
-export const OFFICIAL_PAGE_FALLBACK = "以学校官方页面为准";
+export const OFFICIAL_PAGE_FALLBACK = "以院校官方页面为准";
 export const OFFICIAL_CONFIRMATION_FALLBACK = "待官方确认";
 export const NOT_AVAILABLE_FOR_INTERNATIONAL = "不适用国际学生";
 
@@ -73,7 +73,7 @@ const localizedFormatText = {
     sourceNeedsReview: "待复核"
   },
   "zh-TW": {
-    officialPageFallback: "以學校官方頁面為準",
+    officialPageFallback: "以院校官方頁面為準",
     officialConfirmationFallback: "待官方確認",
     notAvailableForInternational: "不適用國際學生",
     yes: "是",
@@ -689,7 +689,7 @@ function hasUnknownAcademicEnglish(value: string): boolean {
     .replace(/[0-9.,:+/()&\-–—\s]+/g, " ")
     .trim();
 
-  return isEnglishLikeOfficialNote(stripped);
+  return /[A-Za-z][A-Za-z'-]*/.test(stripped);
 }
 
 function finitePositiveNumber(value: unknown): number | null {
@@ -820,10 +820,18 @@ export function formatProgramFacultyLabel(program: ProgramFacultyDisplayFields, 
 }
 
 export function normalizeAcademicText(value: unknown, fallback?: string, locale?: SupportedLocale): string {
-  const actualFallback = fallback ?? officialPageFallback(locale);
-  const text = cleanDisplayText(value, "", locale);
-  if (!text) return actualFallback;
   const normalizedLocale = normalizeLocale(locale);
+  const actualFallback = fallback ?? officialPageFallback(normalizedLocale);
+  const rawText = normalizedRawDisplayText(value, normalizedLocale);
+  if (missingDisplayValues.has(rawText.toLowerCase())) return actualFallback;
+
+  const rawAcademicTermLabel = formatAcademicTermText(rawText, actualFallback, normalizedLocale);
+  if (rawAcademicTermLabel) return rawAcademicTermLabel;
+  const rawMonthText = formatRuntimeMonthDisplayText(rawText, actualFallback, normalizedLocale);
+  if (rawMonthText) return rawMonthText;
+
+  const text = cleanDisplayText(rawText, "", normalizedLocale);
+  if (!text) return actualFallback;
   const academicTermLabel = formatAcademicTermText(text, actualFallback, normalizedLocale);
   if (academicTermLabel) return academicTermLabel;
   if (normalizedLocale !== "en" && hasUnknownAcademicEnglish(text)) return actualFallback;
@@ -927,9 +935,12 @@ export function formatProgramLanguage(program: ProgramDisplayFields, fallback?: 
 }
 
 export function formatProgramIntake(program: ProgramDisplayFields, fallback?: string, locale?: SupportedLocale): string {
-  const officialIntake = cleanDisplayText(program.officialIntake, "", locale);
+  const officialIntakeText = normalizedRawDisplayText(program.officialIntake, locale);
+  const officialIntake = missingDisplayValues.has(officialIntakeText.toLowerCase()) ? "" : officialIntakeText;
   const intakeMonths = Array.isArray(program.intakeMonths)
-    ? program.intakeMonths.map((item) => cleanDisplayText(item, "", locale)).filter(Boolean)
+    ? program.intakeMonths
+      .map((item) => normalizedRawDisplayText(item, locale))
+      .filter((item) => item && !missingDisplayValues.has(item.toLowerCase()))
     : [];
   return normalizeAcademicText(officialIntake || intakeMonths.join(" / "), fallback, locale);
 }

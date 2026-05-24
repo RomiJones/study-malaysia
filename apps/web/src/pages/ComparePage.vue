@@ -38,7 +38,10 @@
                     <div class="compare-head-name">{{ text(item.name) }}</div>
                     <div class="compare-head-sub">QS #{{ item.qsRank }} · {{ item.shortName }}</div>
                   </div>
-                  <button class="compare-remove" @click="catalog.toggleCompare(item.id)">{{ t('common.remove') }}</button>
+                  <button class="compare-remove" :aria-label="`${t('common.remove')} ${text(item.name)}`" @click="catalog.toggleCompare(item.id)">
+                    <span class="compare-remove__text">{{ t('common.remove') }}</span>
+                    <span class="compare-remove__icon ui-icon ui-icon--close" aria-hidden="true"></span>
+                  </button>
                 </div>
               </th>
             </tr>
