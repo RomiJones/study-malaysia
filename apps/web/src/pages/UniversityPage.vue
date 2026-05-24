@@ -43,12 +43,16 @@
           <button
             v-for="tab in detailTabs"
             :key="tab.key"
+            :id="tabId(tab.key)"
             class="detail-tab"
             :class="{ active: activeTab === tab.key }"
             type="button"
             role="tab"
             :aria-selected="activeTab === tab.key"
+            :aria-controls="panelId(tab.key)"
+            :tabindex="activeTab === tab.key ? 0 : -1"
             @click="setActiveTab(tab.key)"
+            @keydown="handleTabKeydown($event, tab.key)"
           >
             {{ tab.label }}
           </button>
@@ -57,7 +61,13 @@
     </section>
 
     <section class="detail-content detail-section">
-      <div class="container">
+      <div
+        class="container detail-panel"
+        role="tabpanel"
+        :id="activePanelId"
+        :aria-labelledby="activeTabId"
+        tabindex="0"
+      >
         <template v-if="activeTab === 'overview'">
           <div class="detail-highlights">
             <div v-for="item in array(detail.highlights)" :key="item" class="highlight-item">
@@ -520,6 +530,7 @@ const { currentLocale, text, array } = useLocaleText();
 const planner = usePlannerStore();
 const activeTab = ref<DetailTab>("overview");
 const hasHeroLogoError = ref(false);
+const tabKeys: DetailTab[] = ["overview", "bachelor", "master", "phd", "facilities", "apply"];
 
 const detailTabs = computed<Array<{ key: DetailTab; label: string }>>(() => [
   { key: "overview", label: t('university.overviewTab') },
@@ -529,6 +540,8 @@ const detailTabs = computed<Array<{ key: DetailTab; label: string }>>(() => [
   { key: "facilities", label: t('university.facilitiesTab') },
   { key: "apply", label: t('university.applyTab') }
 ]);
+const activeTabId = computed(() => tabId(activeTab.value));
+const activePanelId = computed(() => panelId(activeTab.value));
 
 const detail = computed(() => catalog.universityDetail as UniversityDetailView | null);
 const profile = computed(() => asRecord(detail.value?.officialProfile));
@@ -736,6 +749,41 @@ async function openQueryProgram() {
 function setActiveTab(tab: DetailTab) {
   activeTab.value = tab;
   catalog.closeProgramDetail();
+}
+
+function handleTabKeydown(event: KeyboardEvent, currentTab: DetailTab) {
+  const currentIndex = tabKeys.indexOf(currentTab);
+  if (currentIndex < 0) return;
+
+  let nextTab: DetailTab | null = null;
+  if (event.key === "ArrowRight" || event.key === "ArrowDown") {
+    nextTab = tabKeys[(currentIndex + 1) % tabKeys.length];
+  } else if (event.key === "ArrowLeft" || event.key === "ArrowUp") {
+    nextTab = tabKeys[(currentIndex - 1 + tabKeys.length) % tabKeys.length];
+  } else if (event.key === "Home") {
+    nextTab = tabKeys[0];
+  } else if (event.key === "End") {
+    nextTab = tabKeys[tabKeys.length - 1];
+  }
+
+  if (!nextTab) return;
+  event.preventDefault();
+  setActiveTab(nextTab);
+  focusTab(nextTab);
+}
+
+function focusTab(tab: DetailTab) {
+  window.requestAnimationFrame(() => {
+    document.getElementById(tabId(tab))?.focus();
+  });
+}
+
+function tabId(tab: DetailTab) {
+  return `university-detail-${tab}-tab`;
+}
+
+function panelId(tab: DetailTab) {
+  return `university-detail-${tab}-panel`;
 }
 
 async function openProgram(program: ProgramListItem) {
