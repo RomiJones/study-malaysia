@@ -4836,6 +4836,19 @@ label.lbl {
     gap: 18px;
   }
 
+  .university-detail-page .detail-tabs {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    overflow-x: visible;
+  }
+
+  .university-detail-page .detail-tab {
+    flex: none;
+    min-width: 0;
+    white-space: normal;
+    overflow-wrap: anywhere;
+  }
+
   .detail-body {
     gap: 20px;
   }
