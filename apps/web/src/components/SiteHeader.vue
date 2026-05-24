@@ -14,7 +14,7 @@
         </div>
       </RouterLink>
 
-      <nav class="site-nav" aria-label="Primary">
+      <nav class="site-nav" :aria-label="t('header.primaryNavigation')">
         <component
           :is="item.to ? RouterLink : 'button'"
           v-for="item in menuItems"
@@ -46,6 +46,7 @@
 import { computed } from "vue";
 import { RouterLink, useRoute } from "vue-router";
 import { useI18n } from "vue-i18n";
+import type { SupportedLocale } from "@studymy/shared";
 import { useCatalogStore } from "../stores/catalog";
 import { useSessionStore } from "../stores/session";
 
@@ -78,12 +79,12 @@ const menuItems = computed<HeaderMenuItem[]>(() => [
   { key: "compare", label: t("nav.compare"), icon: "ui-icon--compare", to: "/compare" }
 ]);
 
-const localeOptions = [
-  { value: "zh-CN", label: "简体中文" },
-  { value: "zh-TW", label: "繁體中文" },
-  { value: "en", label: "English" },
-  { value: "ms", label: "Bahasa Melayu" }
-] as const;
+const localeOptions = computed<Array<{ value: SupportedLocale; label: string }>>(() => [
+  { value: "zh-CN", label: t("localeNames.zhCN") },
+  { value: "zh-TW", label: t("localeNames.zhTW") },
+  { value: "en", label: t("localeNames.en") },
+  { value: "ms", label: t("localeNames.ms") }
+]);
 
 function switchLocale() {
   localStorage.setItem("studymy_locale", locale.value);

@@ -31,6 +31,8 @@
     "verify:task037:browser": "node scripts/task037-user-image-screenshots.mjs",
     "verify:task038:assets": "node scripts/task038-verify-small-assets.mjs",
     "verify:task039:images": "node scripts/task039-image-regression.mjs",
+    "verify:task040:i18n": "tsx --tsconfig tsconfig.test.json scripts/task040-i18n-audit.ts",
+    "verify:task040:browser": "node scripts/task035-final-release-audit.mjs",
     "seed": "npm --workspace @studymy/api run seed",
     "extract:static": "npm --workspace @studymy/api run extract:static",
     "import:static": "npm --workspace @studymy/api run import:static",

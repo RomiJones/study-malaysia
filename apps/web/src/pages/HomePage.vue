@@ -148,8 +148,8 @@
                     @input="setBudgetRange"
                   />
                   <div class="budget-labels">
-                    <span>30k</span>
-                    <span>120k</span>
+                    <span>{{ budgetTickLabels.min }}</span>
+                    <span>{{ budgetTickLabels.max }}</span>
                   </div>
                   <div class="range-row">
                     <input v-model.number="catalog.tuitionMin" type="number" :placeholder="t('home.tuitionMin')" @input="catalog.resetHomePage" />
@@ -227,7 +227,7 @@
           <UniversityCard v-for="item in pagedUniversities" :key="item.id" :university="item" />
         </div>
 
-        <nav v-if="totalPages > 1" class="pagination-bar" aria-label="Pagination">
+        <nav v-if="totalPages > 1" class="pagination-bar" :aria-label="t('common.pagination')">
           <button class="page-btn" :disabled="catalog.homePage <= 1" :aria-label="t('common.previous')" @click="catalog.setHomePage(catalog.homePage - 1)">
             <span class="ui-icon ui-icon--arrow-left" aria-hidden="true"></span>
           </button>
@@ -387,6 +387,10 @@ const heroDataNote = computed(() => t('home.publicScope', {
 }));
 const budgetRangeValue = computed(() => catalog.tuitionMax ?? 120000);
 const budgetRangeLabel = computed(() => shortBudget(budgetRangeValue.value));
+const budgetTickLabels = computed(() => ({
+  min: shortBudget(30000),
+  max: shortBudget(120000)
+}));
 const visiblePages = computed(() => {
   const pages = new Set([1, catalog.homePage, catalog.homePage + 1].filter((page) => page >= 1 && page <= totalPages.value));
   return [...pages].sort((a, b) => a - b).slice(0, 3);

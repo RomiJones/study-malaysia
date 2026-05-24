@@ -14,7 +14,8 @@ const en = {
   header: {
     platform: "Malaysia study decision platform",
     officialData: "Official university and programme data",
-    privateAdvisory: "Built for families making a serious decision"
+    privateAdvisory: "Built for families making a serious decision",
+    primaryNavigation: "Primary navigation"
   },
   footer: {
     description: "StudyMY helps students and parents review official university information, compare programmes, and turn school selection into a practical action list.",
@@ -102,10 +103,18 @@ const en = {
     officialWebsite: "Official website",
     admissionsEmail: "Admissions email",
     officialLink: "Official link",
+    studyPortal: "Study portal",
     applicationPortal: "Application portal",
     contactInfo: "Contact information",
     previous: "Previous page",
-    next: "Next page"
+    next: "Next page",
+    pagination: "Pagination"
+  },
+  localeNames: {
+    zhCN: "Simplified Chinese",
+    zhTW: "Traditional Chinese",
+    en: "English",
+    ms: "Malay"
   },
   degree: {
     bachelor: "Bachelor",
@@ -521,7 +530,8 @@ const zhCN = {
   header: {
     platform: "马来西亚留学决策平台",
     officialData: "优先采用院校官网与官方发布信息",
-    privateAdvisory: "适合家长与学生共同完成关键决策"
+    privateAdvisory: "适合家长与学生共同完成关键决策",
+    primaryNavigation: "主导航"
   },
   footer: {
     description: "StudyMY 用更清晰的结构，把学校筛选、专业判断、预算对比和申请推进放到同一个页面体系里。",
@@ -609,10 +619,18 @@ const zhCN = {
     officialWebsite: "官方网站",
     admissionsEmail: "招生邮箱",
     officialLink: "官方链接",
+    studyPortal: "学习入口",
     applicationPortal: "申请入口",
     contactInfo: "联系信息",
     previous: "上一页",
-    next: "下一页"
+    next: "下一页",
+    pagination: "分页"
+  },
+  localeNames: {
+    zhCN: "简体中文",
+    zhTW: "繁体中文",
+    en: "英文",
+    ms: "马来文"
   },
   degree: {
     bachelor: "本科",
@@ -1030,7 +1048,8 @@ const ms = mergeMessages(en, {
   header: {
     platform: "Platform keputusan pengajian Malaysia",
     officialData: "Maklumat diutamakan daripada laman rasmi universiti",
-    privateAdvisory: "Sesuai untuk ibu bapa dan pelajar membuat keputusan bersama"
+    privateAdvisory: "Sesuai untuk ibu bapa dan pelajar membuat keputusan bersama",
+    primaryNavigation: "Navigasi utama"
   },
   footer: {
     description: "StudyMY membantu pelajar dan ibu bapa menyemak maklumat rasmi universiti, membandingkan program dan menukar senarai pilihan kepada pelan tindakan.",
@@ -1118,10 +1137,18 @@ const ms = mergeMessages(en, {
     officialWebsite: "Laman rasmi",
     admissionsEmail: "E-mel kemasukan",
     officialLink: "Pautan rasmi",
+    studyPortal: "Portal pengajian",
     applicationPortal: "Portal permohonan",
     contactInfo: "Maklumat hubungan",
     previous: "Halaman sebelumnya",
-    next: "Halaman seterusnya"
+    next: "Halaman seterusnya",
+    pagination: "Penomboran halaman"
+  },
+  localeNames: {
+    zhCN: "Cina ringkas",
+    zhTW: "Cina tradisional",
+    en: "Inggeris",
+    ms: "Bahasa Melayu"
   },
   degree: {
     bachelor: "Sarjana muda",

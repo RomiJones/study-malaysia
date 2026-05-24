@@ -88,12 +88,26 @@ describe("web display format helpers", () => {
     };
     assert.equal(pickLocaleText(localizedText, "en"), "");
     assert.equal(pickLocaleText(localizedText, "ms"), "Permohonan bergantung pada halaman rasmi");
+    assert.equal(pickLocaleText({ ...localizedText, ms: "" }, "ms"), "");
+    assert.equal(pickLocaleText({ ...localizedText, "zh-TW": "" }, "zh-TW"), "申請要求以官方頁面為準");
     assert.deepEqual(pickLocaleArray({
       en: ["临床训练"],
       ms: ["Latihan klinikal"],
       "zh-CN": ["临床训练"],
       "zh-TW": ["臨床訓練"]
     }, "en"), []);
+    assert.deepEqual(pickLocaleArray({
+      en: ["Official English fallback"],
+      ms: [],
+      "zh-CN": ["申请规划"],
+      "zh-TW": []
+    }, "ms"), []);
+    assert.deepEqual(pickLocaleArray({
+      en: ["Official English fallback"],
+      ms: [],
+      "zh-CN": ["申请规划"],
+      "zh-TW": []
+    }, "zh-TW"), ["申請規劃"]);
     assert.equal(cleanDisplayText("吉隆坡", "fallback", "en"), "fallback");
   });
 

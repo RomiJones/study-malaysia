@@ -298,11 +298,11 @@ export function notAvailableForInternational(locale?: SupportedLocale): string {
 export function pickLocaleText(value: LocalizedText, locale: SupportedLocale): string {
   const normalizedLocale = normalizeLocale(locale);
   const candidates: SupportedLocale[] = normalizedLocale === "zh-TW"
-    ? ["zh-TW", "zh-CN", "en"]
+    ? ["zh-TW", "zh-CN"]
     : normalizedLocale === "zh-CN"
-      ? ["zh-CN", "en"]
+      ? ["zh-CN"]
       : normalizedLocale === "ms"
-        ? ["ms", "en"]
+        ? ["ms"]
         : ["en"];
 
   for (const candidate of candidates) {
@@ -315,11 +315,11 @@ export function pickLocaleText(value: LocalizedText, locale: SupportedLocale): s
 export function pickLocaleArray(value: LocalizedStringArray, locale: SupportedLocale): string[] {
   const normalizedLocale = normalizeLocale(locale);
   const candidates: SupportedLocale[] = normalizedLocale === "zh-TW"
-    ? ["zh-TW", "zh-CN", "en"]
+    ? ["zh-TW", "zh-CN"]
     : normalizedLocale === "zh-CN"
-      ? ["zh-CN", "en"]
+      ? ["zh-CN"]
       : normalizedLocale === "ms"
-        ? ["ms", "en"]
+        ? ["ms"]
         : ["en"];
 
   for (const candidate of candidates) {

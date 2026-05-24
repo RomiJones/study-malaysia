@@ -502,6 +502,12 @@ type ModalSourceRow = LabelValue & { full?: boolean };
 type LabelLink = LabelValue & { href: string };
 type SourceLinkView = { label: string; url: string };
 type LooseRecord = Record<string, unknown>;
+type ProfileScaleKey = "studentTotal" | "internationalStudents";
+
+const legacyProfileScaleLabels: Record<ProfileScaleKey, string[]> = {
+  studentTotal: ["studentTotal", "student count", "student total", "学生总数", "在校学生", "Students"],
+  internationalStudents: ["internationalStudents", "international students", "国际学生", "國際學生", "International"]
+};
 
 const props = defineProps<{ slug: string }>();
 const catalog = useCatalogStore();
@@ -531,8 +537,8 @@ const heroStats = computed<LabelValue[]>(() => {
   return [
     { label: t('common.location'), value: text(current.location) },
     { label: t('common.foundedYear'), value: `${current.foundedYear}` },
-    { label: t('university.studentTotal'), value: profileScaleValue(t('university.studentTotal')) || profileScaleValue("学生总数") || profileScaleValue("Students") || compactNumber(current.students) },
-    { label: t('university.internationalStudents'), value: profileScaleValue(t('university.internationalStudents')) || profileScaleValue("国际学生") || profileScaleValue("International") || compactNumber(current.intlStudents) },
+    { label: t('university.studentTotal'), value: profileScaleValue("studentTotal") || compactNumber(current.students) },
+    { label: t('university.internationalStudents'), value: profileScaleValue("internationalStudents") || compactNumber(current.intlStudents) },
     { label: t('university.languageRequirement'), value: current.acceptNoLanguage ? t('university.conditionalPath') : `IELTS ${current.minIelts}+` }
   ];
 });
@@ -609,7 +615,7 @@ const sourceLinks = computed<SourceLinkView[]>(() => {
   if (!current) return [];
   const items: SourceLinkView[] = [];
   pushLink(items, t('common.officialWebsite'), current.officialWebsite || current.website);
-  pushLink(items, "Study Portal", current.studyPortalUrl);
+  pushLink(items, t('common.studyPortal'), current.studyPortalUrl);
   pushLink(items, t('common.international'), current.internationalPageUrl);
   pushLink(items, t('common.applicationPortal'), current.applicationPortalUrl);
   for (const item of normalizeProfileLinks(profile.value?.officialLinks)) pushLink(items, item.label, item.url);
@@ -871,8 +877,12 @@ function profileString(key: string) {
   return stringFrom(profile.value?.[key]);
 }
 
-function profileScaleValue(label: string) {
-  return scaleRows.value.find((item) => item.label.includes(label))?.value || "";
+function profileScaleValue(key: ProfileScaleKey) {
+  const labels = [t(`university.${key}`), ...legacyProfileScaleLabels[key]].map((item) => item.toLowerCase());
+  return scaleRows.value.find((item) => {
+    const label = item.label.toLowerCase();
+    return labels.some((candidate) => label.includes(candidate));
+  })?.value || "";
 }
 
 function countPrograms(level: DegreeLevel) {
@@ -894,7 +904,7 @@ function auditReviewCount() {
 
 function sourceLabel(item: OfficialSourceLink) {
   if (item.sourceType === "official-website") return t('common.officialWebsite');
-  if (item.sourceType === "study-portal") return "Study Portal";
+  if (item.sourceType === "study-portal") return t('common.studyPortal');
   if (item.sourceType === "admission") return t('common.applicationPortal');
   if (item.sourceType === "fee") return t('university.officialFeeSource');
   return item.title || t('common.officialLink');
