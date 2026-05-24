@@ -418,3 +418,20 @@ TASK-006 不应直接进入 Vue 代码实现。静态 HTML 已经提供完整用
 ### 11.5 结论
 
 本轮已补齐桌面端和移动端关键区域的静态 HTML 与 Vue 用户端同视口截图、可复现命令、报告路径和自动差异结论，可作为 `TASK-006-REVIEW-002` 的修复证据。Notion 未更新；本轮只更新本地中文任务快照和本地中文规划文档。
+
+### 11.6 本轮复核补充
+
+- 复核时间：2026-05-24T20:45:04+08:00。
+- 修复范围：仅复跑并补充 `TASK-006-REVIEW-002` 的视觉验收证据；未处理不可自动修复的 `TASK-006-REVIEW-001` 和 `TASK-006-REVIEW-003`。
+- 验证命令：已运行 `npm run verify:task028`，结果通过；已运行 `npm run build`，结果通过，管理端仍存在既有大 chunk 警告。
+- 输出目录：`D:\mydev\study-malaysia\output\playwright\task028-20260524T124504Z`
+- Markdown 报告：`D:\mydev\study-malaysia\output\playwright\task028-20260524T124504Z\visual-diff-report.md`
+- JSON 报告：`D:\mydev\study-malaysia\output\playwright\task028-20260524T124504Z\visual-diff-report.json`
+- 截图数量：52 张。
+- 对比数量：26 组。
+- 覆盖视口：`1440x1000`、`390x844`。
+- 覆盖页面与弹窗：首页首屏、首页筛选与院校卡片、院校详情概览、院校详情专业列表、专业详情弹窗、收藏页、对比页、规划页、登录弹窗、费用估算弹窗和智能推荐弹窗。
+- 自动差异结论：阻塞项 0，差异项 0。
+- 关键截图路径：`output\playwright\task028-20260524T124504Z\static-home-desktop.png`、`output\playwright\task028-20260524T124504Z\web-home-desktop.png`、`output\playwright\task028-20260524T124504Z\static-list-filter-mobile.png`、`output\playwright\task028-20260524T124504Z\web-list-filter-mobile.png`、`output\playwright\task028-20260524T124504Z\static-university-programs-desktop.png`、`output\playwright\task028-20260524T124504Z\web-university-programs-desktop.png`、`output\playwright\task028-20260524T124504Z\static-program-modal-mobile.png`、`output\playwright\task028-20260524T124504Z\web-program-modal-mobile.png`、`output\playwright\task028-20260524T124504Z\static-calculator-modal-desktop.png`、`output\playwright\task028-20260524T124504Z\web-calculator-modal-desktop.png`、`output\playwright\task028-20260524T124504Z\static-recommend-modal-mobile.png`、`output\playwright\task028-20260524T124504Z\web-recommend-modal-mobile.png`。
+
+本轮复核已重新生成可复现截图和自动指标报告，可作为 `TASK-006-REVIEW-002` 的当前修复证据。Notion 未更新；本轮只更新本地中文任务快照和本地中文规划文档。
