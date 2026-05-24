@@ -2,7 +2,15 @@ import { readFileSync, readdirSync, statSync } from "node:fs";
 import { join, relative } from "node:path";
 import { SUPPORTED_LOCALES, type SupportedLocale } from "@studymy/shared";
 import { messages } from "../apps/web/src/i18n/messages.ts";
-import { formatOfficialNote } from "../apps/web/src/utils/format.ts";
+import {
+  formatOfficialNote,
+  formatProgramDuration,
+  formatProgramIntake,
+  formatProgramLanguage,
+  formatRuntimeDisplayText,
+  normalizeAcademicText,
+  officialPageFallback
+} from "../apps/web/src/utils/format.ts";
 
 type CheckResult = {
   name: string;
@@ -97,6 +105,74 @@ function checkOfficialDynamicNoteLocalization() {
     locales: nonEnglishLocales,
     sampleCount: officialDynamicNoteSamples.length,
     leakedEnglishNoteCount: 0
+  };
+}
+
+function checkRuntimeDynamicTextLocalization() {
+  const nonEnglishLocales: SupportedLocale[] = ["zh-CN", "zh-TW", "ms"];
+  const failures: string[] = [];
+
+  for (const locale of nonEnglishLocales) {
+    for (const sample of runtimeDynamicTextSamples) {
+      const formatted = formatRuntimeDisplayText(sample, undefined, locale);
+      if (formatted.includes(sample)) {
+        failures.push(`${locale} still exposes runtime text sample: ${sample}`);
+      }
+    }
+
+    for (const sample of runtimeEnglishFallbackSamples) {
+      const formatted = formatRuntimeDisplayText(sample, undefined, locale);
+      const fallback = officialPageFallback(locale);
+      if (formatted !== fallback) {
+        failures.push(`${locale} should fall back for ordinary English runtime text: ${sample}; received: ${formatted}`);
+      }
+    }
+
+    for (const sample of academicEnglishFallbackSamples) {
+      const formatted = normalizeAcademicText(sample, undefined, locale);
+      const fallback = officialPageFallback(locale);
+      if (formatted !== fallback) {
+        failures.push(`${locale} should fall back for ordinary English academic text: ${sample}; received: ${formatted}`);
+      }
+    }
+
+    const academicProgram = {
+      publicDisplayStatus: "ready",
+      durationOfficial: "Full-Time Duration: 6 Semesters, (Clinical) — official page title is Doctor of Public Health (Mixed-Mode)",
+      officialIntake: "March requirements are subject to change.",
+      intakeMonths: [],
+      officialLanguageRequirement: "Language requirements are subject to official review.",
+      languageRequirement: { ielts: null }
+    } as any;
+    const fallback = officialPageFallback(locale);
+    if (formatProgramIntake(academicProgram, undefined, locale) !== fallback) {
+      failures.push(`${locale} formatProgramIntake still exposes ordinary English academic text`);
+    }
+    if (formatProgramDuration(academicProgram, locale) !== fallback) {
+      failures.push(`${locale} formatProgramDuration still exposes ordinary English academic text`);
+    }
+    if (formatProgramLanguage(academicProgram, undefined, locale) !== fallback) {
+      failures.push(`${locale} formatProgramLanguage still exposes ordinary English academic text`);
+    }
+
+    const unknown = "Unknown runtime display note should not leak directly.";
+    const unknownFormatted = formatRuntimeDisplayText(unknown, undefined, locale);
+    if (unknownFormatted.includes(unknown)) {
+      failures.push(`${locale} still exposes unknown English runtime text: ${unknown}`);
+    }
+  }
+
+  const traditionalFormatted = formatRuntimeDisplayText(runtimeTraditionalTextSample, undefined, "zh-TW");
+  const simplifiedResidues = ["翻译", "计划", "准备"].filter((sample) => traditionalFormatted.includes(sample));
+  if (simplifiedResidues.length) {
+    failures.push(`zh-TW runtime text keeps Simplified Chinese samples: ${simplifiedResidues.join(", ")}`);
+  }
+
+  assert(failures.length === 0, `runtime dynamic text localization failed:\n${failures.join("\n")}`);
+  return {
+    locales: nonEnglishLocales,
+    sampleCount: runtimeDynamicTextSamples.length + runtimeEnglishFallbackSamples.length + academicEnglishFallbackSamples.length + 4,
+    leakedEnglishRuntimeTextCount: 0
   };
 }
 
@@ -260,6 +336,29 @@ const officialDynamicNoteSamples = [
   "Subject to official intake availability."
 ];
 
+const runtimeDynamicTextSamples = [
+  "February",
+  "February / September",
+  "October intake",
+  "Multiple intakes",
+  "Refer to official portal",
+  "Refer to official system"
+];
+
+const runtimeEnglishFallbackSamples = [
+  "Applications may be submitted through the official system.",
+  "May be submitted through the official system.",
+  "March requirements are subject to change."
+];
+
+const academicEnglishFallbackSamples = [
+  "March requirements are subject to change.",
+  "Full-Time Duration: 6 Semesters, (Clinical) — official page title is Doctor of Public Health (Mixed-Mode)",
+  "Language requirements are subject to official review."
+];
+
+const runtimeTraditionalTextSample = "中国学生需准备研究计划、公证翻译和补充材料。";
+
 const allowedVisibleLiteralPatterns = [
   /^StudyMY(?: Admin)?$/,
   /^2026$/,
@@ -274,6 +373,7 @@ const allowedVisibleLiteralPatterns = [
 runCheck("i18n key completeness", checkMessageKeys);
 runCheck("locale fallback boundaries", checkLocaleFallbackBoundaries);
 runCheck("official dynamic note localization", checkOfficialDynamicNoteLocalization);
+runCheck("runtime dynamic text localization", checkRuntimeDynamicTextLocalization);
 runCheck("visible hardcoded text scan", checkVisibleHardcodedText);
 runCheck("script-generated visible label scan", checkScriptGeneratedVisibleLabels);
 runCheck("raw API error display scan", checkRawApiErrorDisplay);

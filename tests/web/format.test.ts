@@ -6,10 +6,14 @@ import {
   formatCategoryLabel,
   formatOfficialNote,
   formatOfficialSourceStatus,
+  formatProgramDuration,
   formatProgramFacultyLabel,
   formatProgramIntake,
   formatProgramLanguage,
   formatProgramTuition,
+  formatRuntimeDisplayText,
+  normalizeAcademicText,
+  officialPageFallback,
   pickLocaleArray,
   pickLocaleText
 } from "../../apps/web/src/utils/format.ts";
@@ -95,6 +99,36 @@ describe("web display format helpers", () => {
       formatOfficialNote("Unknown official note should not leak directly.", "fallback", "en"),
       "Unknown official note should not leak directly."
     );
+  });
+
+  test("localizes runtime application text and hides unknown English outside English", () => {
+    assert.equal(cleanDisplayText("October intake", "fallback", "zh-CN"), "10月入学");
+    assert.equal(cleanDisplayText("Refer to official portal", "fallback", "ms"), "Rujuk portal rasmi.");
+    assert.equal(formatRuntimeDisplayText("February", "fallback", "zh-CN"), "2月");
+    assert.equal(formatRuntimeDisplayText("February / September", "fallback", "zh-CN"), "2月 / 9月");
+    assert.equal(formatRuntimeDisplayText("February / September", "fallback", "ms"), "Februari / September");
+    assert.equal(formatRuntimeDisplayText("Multiple intakes", "fallback", "zh-TW"), "多批次入學");
+    assert.equal(formatRuntimeDisplayText("October intake", "fallback", "zh-CN"), "10月入学");
+    assert.equal(formatRuntimeDisplayText("October intake", "fallback", "zh-TW"), "10月入學");
+    assert.equal(formatRuntimeDisplayText("October intake", "fallback", "ms"), "Ambilan Oktober");
+    assert.equal(formatRuntimeDisplayText("Refer to official portal", "fallback", "zh-CN"), "以官方申请入口为准。");
+    assert.equal(formatRuntimeDisplayText("Refer to official system", "fallback", "ms"), "Rujuk sistem rasmi.");
+    assert.equal(formatRuntimeDisplayText("Applications may be submitted through the official system.", "fallback", "zh-CN"), "fallback");
+    assert.equal(formatRuntimeDisplayText("May be submitted through the official system.", "fallback", "ms"), "fallback");
+    assert.equal(formatRuntimeDisplayText("March requirements are subject to change.", "fallback", "zh-TW"), "fallback");
+    assert.equal(formatRuntimeDisplayText("Unknown runtime display note should not leak directly.", "fallback", "zh-TW"), "fallback");
+    assert.equal(formatRuntimeDisplayText("Unknown runtime display note should not leak directly.", "fallback", "ms"), "fallback");
+    assert.equal(formatRuntimeDisplayText("Unknown runtime display note should not leak directly.", "fallback", "en"), "Unknown runtime display note should not leak directly.");
+    assert.equal(normalizeAcademicText("March requirements are subject to change.", "fallback", "zh-CN"), "fallback");
+    assert.equal(normalizeAcademicText("Full-Time Duration: 6 Semesters, (Clinical) — official page title is Doctor of Public Health (Mixed-Mode)", "fallback", "zh-TW"), "fallback");
+    assert.equal(formatProgramIntake(program({ officialIntake: "March requirements are subject to change." }), "fallback", "ms"), "fallback");
+    assert.equal(formatProgramDuration(program({ durationOfficial: "Full-Time Duration: 6 Semesters, (Clinical) — official page title is Doctor of Public Health (Mixed-Mode)" }), "zh-CN"), officialPageFallback("zh-CN"));
+    assert.equal(formatProgramLanguage(program({ officialLanguageRequirement: "Language requirements are subject to official review." }), "fallback", "zh-CN"), "fallback");
+    assert.equal(
+      formatRuntimeDisplayText("中国学生需按具体专业核对高中 / 本科成绩、语言要求、公证翻译和补充材料。", "fallback", "zh-TW"),
+      "中國學生需按具體專業核對高中 / 本科成績、語言要求、公證翻譯和補充材料。"
+    );
+    assert.equal(formatProgramIntake(program({ intakeMonths: ["February", "September"] }), "fallback", "zh-CN"), "2月 / 9月");
   });
 
   test("localizes raw backend category values without dynamic i18n keys", () => {

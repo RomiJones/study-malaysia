@@ -182,6 +182,32 @@ async function auditLocales() {
 
       await page.locator(".program-detail-modal .modal-close").click();
       await page.locator(".program-detail-modal").waitFor({ state: "detached", timeout: 10_000 });
+
+      await screenshot(page, `university-overview-${locale}.png`);
+      const overviewText = await visibleText(page);
+      assertNoLiteral(overviewText, ["undefined", "category.", "Not found"], `${locale} university overview must not show missing values or i18n keys`);
+      if (locale === "en" || locale === "ms") {
+        assertNoCjk(overviewText, `${locale} university overview must not render Chinese officialProfile text`);
+      }
+      if (locale === "zh-TW") {
+        assertNoLiteral(overviewText, forbiddenSimplifiedProfileText, "zh-TW university overview must not keep known Simplified Chinese profile samples");
+      }
+
+      await page.locator(".detail-tab").nth(5).click();
+      await page.locator(".official-apply-card").waitFor({ timeout: 30_000 });
+      await screenshot(page, `apply-info-${locale}.png`);
+      const applyText = await visibleText(page);
+      assertNoLiteral(applyText, ["undefined", "category.", "Not found"], `${locale} application info must not show missing values or i18n keys`);
+      if (locale !== "en") {
+        assertNoLiteral(applyText, forbiddenRuntimeTextEnglish, `${locale} application info must localize runtime dynamic text`);
+      }
+      if (locale === "en" || locale === "ms") {
+        assertNoCjk(applyText, `${locale} application info must not render Chinese officialProfile text`);
+      }
+      if (locale === "zh-TW") {
+        assertNoLiteral(applyText, forbiddenSimplifiedProfileText, "zh-TW application info must not keep known Simplified Chinese profile samples");
+      }
+
       await context.close();
       results.push({ locale, status: "passed" });
     }
@@ -500,6 +526,23 @@ const forbiddenOfficialNoteEnglish = [
   "Subject to official intake availability."
 ];
 
+const forbiddenRuntimeTextEnglish = [
+  "October intake",
+  "Refer to official portal",
+  "Refer to official system",
+  "Applications may be submitted through the official system.",
+  "May be submitted through the official system.",
+  "March requirements are subject to change.",
+  "Full-Time Duration: 6 Semesters, (Clinical) — official page title is Doctor of Public Health (Mixed-Mode)",
+  "Language requirements are subject to official review."
+];
+
+const forbiddenSimplifiedProfileText = [
+  "翻译",
+  "计划",
+  "准备"
+];
+
 const transparentPixel = "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==";
 
 const localized = (en, zhCN, ms, zhTW) => ({
@@ -515,6 +558,62 @@ const localizedArray = (en, zhCN, ms, zhTW) => ({
   "zh-CN": zhCN,
   "zh-TW": zhTW || zhCN
 });
+
+const fullOfficialProfile = {
+  chineseName: "马来亚大学",
+  legalName: "Universiti Malaya",
+  institutionType: "公立大学",
+  universityType: "研究型大学",
+  city: "Kuala Lumpur",
+  country: "Malaysia",
+  address: "Universiti Malaya, 50603 Kuala Lumpur, Malaysia",
+  levels: ["本科", "硕士", "博士"],
+  studyModes: ["全日制", "授课型", "研究型"],
+  programmeModes: ["Coursework", "Research"],
+  rankings: [
+    { label: "QS 世界排名", value: "#60" },
+    { label: "QS 亚洲排名", value: "#12" }
+  ],
+  scale: [
+    { label: "学生总数", value: "超过 30,000 人" },
+    { label: "国际学生", value: "来自 80+ 国家和地区" }
+  ],
+  contact: [
+    { label: "官网", value: "www.um.edu.my", href: "https://www.um.edu.my" },
+    { label: "招生邮箱", value: "study@um.edu.my", href: "mailto:study@um.edu.my" }
+  ],
+  officialLinks: [
+    { label: "官网", url: "https://www.um.edu.my" },
+    { label: "Study Portal", url: "https://study.um.edu.my" },
+    { label: "申请入口", url: "https://maya.um.edu.my" }
+  ],
+  qualityNote: "官方资料已准备完成，申请计划字段需按官方页面复核。",
+  sourceNote: "以 UM 官网、Study Portal 和官方申请入口为主要来源。",
+  verifiedAt: "2026-05-23",
+  tuitionAudit: {
+    displayText: "按专业显示 RM 官方总学费",
+    notes: ["每个专业显示官方国际学生总学费，费用以官方最新公布为准。"]
+  },
+  undergraduateAudit: {
+    officialBachelorTotal: 4,
+    readyForPublicDisplay: 4,
+    needsReview: 0,
+    notAvailableForInternational: 0
+  },
+  applicationPeriods: [
+    { label: "本科", value: "第一学期（10月）为主" },
+    { label: "研究生", value: "March requirements are subject to change." }
+  ],
+  applicationFees: [
+    { label: "申请费", value: "Refer to official portal" },
+    { label: "Application note", value: "Applications may be submitted through the official system." },
+    { label: "System note", value: "May be submitted through the official system." }
+  ],
+  applicationDocuments: ["护照", "成绩单", "语言成绩", "个人陈述", "研究计划（研究型）"],
+  chinaRequirement: {
+    summary: "中国学生需准备研究计划、公证翻译和补充材料。"
+  }
+};
 
 const universities = [
   {
@@ -555,7 +654,7 @@ const universities = [
     applicationFees: ["Refer to official portal"],
     applicationDocuments: localizedArray(["Passport", "Transcript"], ["护照", "成绩单"], ["Pasport", "Transkrip"], ["護照", "成績單"]),
     chinaStudentRequirements: localizedArray(["Verify official requirements."], ["中国学生需核对官方要求。"], ["Semak syarat rasmi."], ["中國學生需核對官方要求。"]),
-    officialProfile: null,
+    officialProfile: fullOfficialProfile,
     officialSources: [],
     officialVerifiedAt: "2026-05-23",
     officialSourceStatus: "official-verified",
@@ -630,6 +729,16 @@ const programs = [
 ];
 
 function program(id, universityId, level, category, nameZh, nameEn, facultyZh, tuitionDisplay, annualTuitionCny, ielts) {
+  const durationOfficial = id === 1670
+    ? "Full-Time Duration: 6 Semesters, (Clinical) — official page title is Doctor of Public Health (Mixed-Mode)"
+    : level === "bachelor" ? "3.5 Years" : "1.5 Years";
+  const officialIntake = id === 1670
+    ? "March requirements are subject to change."
+    : "Semester 1 (October) Intake";
+  const officialLanguageRequirement = id === 1670
+    ? "Language requirements are subject to official review."
+    : `IELTS ${ielts}`;
+
   return {
     id,
     universityId,
@@ -645,7 +754,7 @@ function program(id, universityId, level, category, nameZh, nameEn, facultyZh, t
     studyMode: "Full time",
     campus: "Main campus",
     durationYears: level === "bachelor" ? 3.5 : 1.5,
-    durationOfficial: level === "bachelor" ? "3.5 Years" : "1.5 Years",
+    durationOfficial,
     annualTuitionCny,
     tuitionAmount: null,
     tuitionCurrency: "MYR",
@@ -656,10 +765,10 @@ function program(id, universityId, level, category, nameZh, nameEn, facultyZh, t
     officialFeeAuditStatus: "matched-official",
     officialFeeAuditedAt: "2026-05-23",
     intakeMonths: ["October"],
-    officialIntake: "Semester 1 (October) Intake",
+    officialIntake,
     officialIntakeNote: "Subject to official intake availability.",
     languageRequirement: { ielts, toefl: 80, pte: 50, muet: 4 },
-    officialLanguageRequirement: `IELTS ${ielts}`,
+    officialLanguageRequirement,
     requirement: { gpa: 3, gaokaoRequired: false, huikaoRequired: false, note: localized("Relevant academic background required.", "需具备相关学术背景。", "Latar akademik berkaitan diperlukan.", "需具備相關學術背景。") },
     officialAcademicRequirement: "Relevant academic background required.",
     chinaStudentRequirement: "中国学生需准备成绩单、公证翻译和语言成绩。",
@@ -693,7 +802,7 @@ function program(id, universityId, level, category, nameZh, nameEn, facultyZh, t
     },
     requirements: {
       language: { ielts, toefl: 80, pte: 50, muet: 4 },
-      officialLanguageRequirement: `IELTS ${ielts}`,
+      officialLanguageRequirement,
       academic: { gpa: 3, gaokaoRequired: false, huikaoRequired: false, note: localized("Relevant academic background required.", "需具备相关学术背景。", "Latar akademik berkaitan diperlukan.", "需具備相關學術背景。") },
       officialAcademicRequirement: "Relevant academic background required.",
       chinaStudentRequirement: "中国学生需准备成绩单、公证翻译和语言成绩。",
@@ -701,7 +810,7 @@ function program(id, universityId, level, category, nameZh, nameEn, facultyZh, t
     },
     requirementInfo: {
       language: { ielts, toefl: 80, pte: 50, muet: 4 },
-      officialLanguageRequirement: `IELTS ${ielts}`,
+      officialLanguageRequirement,
       academic: { gpa: 3, gaokaoRequired: false, huikaoRequired: false, note: localized("Relevant academic background required.", "需具备相关学术背景。", "Latar akademik berkaitan diperlukan.", "需具備相關學術背景。") },
       officialAcademicRequirement: "Relevant academic background required.",
       chinaStudentRequirement: "中国学生需准备成绩单、公证翻译和语言成绩。",

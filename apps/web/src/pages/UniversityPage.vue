@@ -491,6 +491,7 @@ import {
   formatProgramIntake,
   formatProgramLanguage,
   formatProgramTuition,
+  formatRuntimeDisplayText,
   officialConfirmationFallback,
   officialPageFallback,
   normalizeAcademicText
@@ -551,8 +552,8 @@ const officialInfoFields = computed<LabelValue[]>(() => {
   return [
     { label: t('university.officialProfileChineseName'), value: profileString("chineseName") || text(current.name) },
     { label: t('university.officialLegalName'), value: profileString("legalName") || current.nameEnOfficial || current.nameEn },
-    { label: t('university.institutionType'), value: profileString("institutionType") || ownershipLabel(current.ownership) },
-    { label: t('university.universityPositioning'), value: profileString("universityType") || institutionTypeLabel(current.institutionType) },
+    { label: t('university.institutionType'), value: profileDisplayText(profile.value?.institutionType, "", "institution") || ownershipLabel(current.ownership) },
+    { label: t('university.universityPositioning'), value: profileDisplayText(profile.value?.universityType, "", "universityType") || institutionTypeLabel(current.institutionType) },
     { label: t('university.city'), value: cityCountry || text(current.location) },
     {
       label: t('university.officialAddress'),
@@ -563,17 +564,21 @@ const officialInfoFields = computed<LabelValue[]>(() => {
   ];
 });
 
-const profileLevelChips = computed(() => normalizeList(profile.value?.levels).length
-  ? normalizeList(profile.value?.levels)
-  : [t('degree.bachelor'), t('degree.master'), t('degree.phd')]);
+const profileLevelChips = computed(() => {
+  const levels = normalizeProfileList(profile.value?.levels, "level");
+  return levels.length ? levels : [t('degree.bachelor'), t('degree.master'), t('degree.phd')];
+});
 
 const profileModeChips = computed(() => {
-  const modes = [...normalizeList(profile.value?.studyModes), ...normalizeList(profile.value?.programmeModes)];
+  const modes = [
+    ...normalizeProfileList(profile.value?.studyModes, "mode"),
+    ...normalizeProfileList(profile.value?.programmeModes, "mode")
+  ];
   return modes.length ? modes : [detail.value ? institutionTypeLabel(detail.value.institutionType) : t('university.studyModeFallback')];
 });
 
 const rankingRows = computed<LabelValue[]>(() => {
-  const rows = normalizeRows(profile.value?.rankings);
+  const rows = normalizeProfileRows(profile.value?.rankings);
   if (rows.length) return rows;
   const current = detail.value;
   if (!current) return [];
@@ -585,7 +590,7 @@ const rankingRows = computed<LabelValue[]>(() => {
 });
 
 const scaleRows = computed<LabelValue[]>(() => {
-  const rows = normalizeRows(profile.value?.scale);
+  const rows = normalizeProfileRows(profile.value?.scale);
   if (rows.length) return rows;
   const current = detail.value;
   if (!current) return [];
@@ -625,13 +630,13 @@ const sourceLinks = computed<SourceLinkView[]>(() => {
 });
 
 const auditSummary = computed(() =>
-  profileString("qualityNote") ||
+  profileOfficialNote("qualityNote") ||
   formatOfficialNote(detail.value?.officialAuditSummary, "", currentLocale.value) ||
   t('university.qualityNoteFallback')
 );
 
 const sourceSummary = computed(() => {
-  const note = profileString("sourceNote");
+  const note = profileOfficialNote("sourceNote");
   const date = detail.value?.officialVerifiedAt || profileString("verifiedAt") || profileString("auditedAt") || officialConfirmationFallback(currentLocale.value);
   return note
     ? t('university.sourceSummaryWithNote', { note, date })
@@ -643,7 +648,7 @@ const sourceSummary = computed(() => {
 
 const tuitionSummary = computed(() => {
   const tuitionAudit = asRecord(profile.value?.tuitionAudit);
-  const display = stringFrom(tuitionAudit?.displayText);
+  const display = formatRuntimeDisplayText(tuitionAudit?.displayText, "", currentLocale.value);
   if (display) return display;
   const current = detail.value;
   if (!current) return officialConfirmationFallback(currentLocale.value);
@@ -652,7 +657,7 @@ const tuitionSummary = computed(() => {
 
 const tuitionNote = computed(() => {
   const tuitionAudit = asRecord(profile.value?.tuitionAudit);
-  const notes = normalizeList(tuitionAudit?.notes);
+  const notes = normalizeRuntimeList(tuitionAudit?.notes, "");
   if (notes.length) return notes[0];
   return t('university.tuitionNoteFallback');
 });
@@ -685,23 +690,29 @@ const activePrograms = computed(() => {
 const activeProgramLabel = computed(() => activeProgramLevel.value ? levelLabel(activeProgramLevel.value) : "");
 
 const applicationPeriodRows = computed(() => {
-  const rows = normalizeRows(profile.value?.applicationPeriods).map(formatRow);
-  return rows.length ? rows : normalizeList(detail.value?.applicationPeriods).concat([officialPageFallback(currentLocale.value)]).slice(0, Math.max(1, normalizeList(detail.value?.applicationPeriods).length || 1));
+  const rows = normalizeRawRows(profile.value?.applicationPeriods).map((item) => formatProfileRuntimeRow(item)).filter(Boolean);
+  if (rows.length) return uniqueRows(rows);
+  const detailRows = normalizeRuntimeList(detail.value?.applicationPeriods);
+  return detailRows.length ? uniqueRows(detailRows) : [officialPageFallback(currentLocale.value)];
 });
 
 const applicationFeeRows = computed(() => {
-  const rows = normalizeRows(profile.value?.applicationFees).map(formatRow);
-  return rows.length ? rows : normalizeList(detail.value?.applicationFees).concat([officialPageFallback(currentLocale.value)]).slice(0, Math.max(1, normalizeList(detail.value?.applicationFees).length || 1));
+  const rows = normalizeRawRows(profile.value?.applicationFees).map((item) => formatProfileRuntimeRow(item)).filter(Boolean);
+  if (rows.length) return uniqueRows(rows);
+  const detailRows = normalizeRuntimeList(detail.value?.applicationFees);
+  return detailRows.length ? uniqueRows(detailRows) : [officialPageFallback(currentLocale.value)];
 });
 
 const applicationDocumentRows = computed(() => {
   const rows = array(detail.value?.applicationDocuments || emptyLocalizedArray());
-  return rows.length ? rows : normalizeList(profile.value?.applicationDocuments).concat(messageArray("university.defaultApplicationDocs")).slice(0, 4);
+  return rows.length
+    ? rows
+    : uniqueRows(normalizeProfileList(profile.value?.applicationDocuments, "document").concat(messageArray("university.defaultApplicationDocs"))).slice(0, 4);
 });
 
 const chinaRequirementSummary = computed(() => {
   const profileChina = asRecord(profile.value?.chinaRequirement);
-  const summary = stringFrom(profileChina?.summary);
+  const summary = formatRuntimeDisplayText(profileChina?.summary, "", currentLocale.value);
   if (summary) return summary;
   const rows = array(detail.value?.chinaStudentRequirements || emptyLocalizedArray());
   return rows.length ? rows.join("；") : t('university.chinaRequirementFallback');
@@ -875,8 +886,99 @@ function sourceStatus(status: string) {
   return formatOfficialSourceStatus(status, currentLocale.value);
 }
 
+type ProfileTextKind = "institution" | "universityType" | "level" | "mode" | "rowLabel" | "document" | "linkLabel";
+
+function profileLocaleText(labels: Record<string, string>) {
+  return labels[currentLocale.value] || labels.en || "";
+}
+
+function normalizeProfileKey(value: unknown) {
+  return rawStringFrom(value)
+    .trim()
+    .replace(/[()（）]/g, " ")
+    .replace(/[：:|/,_-]+/g, " ")
+    .replace(/\s+/g, " ")
+    .toLowerCase();
+}
+
+function profileKnownText(value: unknown, kind?: ProfileTextKind) {
+  const key = normalizeProfileKey(value);
+  if (!key) return "";
+
+  if (kind === "institution") {
+    if (/^(public|public university|公立|公立大学|公立大學)$/.test(key)) return t('common.publicUniversity');
+    if (/^(private|private university|私立|私立大学|私立大學)$/.test(key)) return t('common.privateUniversity');
+  }
+
+  if (kind === "universityType") {
+    if (/^(research|research university|研究型|研究型大学|研究型大學)$/.test(key)) return t('university.researchUniversity');
+    if (/^(applied|applied university|应用型|應用型|应用型大学|應用型大學)$/.test(key)) return t('university.appliedUniversity');
+    if (/^(comprehensive|comprehensive university|综合型|綜合型|综合型大学|綜合型大學)$/.test(key)) return t('university.comprehensiveUniversity');
+  }
+
+  if (kind === "level" || kind === "rowLabel") {
+    if (/^(bachelor|bachelor programmes?|undergraduate|本科)$/.test(key)) return t('degree.bachelor');
+    if (/^(master|master programmes?|postgraduate|硕士|碩士|研究生)$/.test(key)) return t('degree.master');
+    if (/^(phd|ph d|doctor|doctoral|doctorate|博士)$/.test(key)) return t('degree.phd');
+  }
+
+  if (kind === "mode") {
+    if (/^(full time|fulltime|full time study|全日制)$/.test(key)) {
+      return profileLocaleText({ en: "Full time", ms: "Sepenuh masa", "zh-CN": "全日制", "zh-TW": "全日制" });
+    }
+    if (/^(part time|parttime|part time study|非全日制)$/.test(key)) {
+      return profileLocaleText({ en: "Part time", ms: "Separuh masa", "zh-CN": "非全日制", "zh-TW": "非全日制" });
+    }
+    if (/^(coursework|course work|授课型|授課型|课程制|課程制)$/.test(key)) {
+      return profileLocaleText({ en: "Coursework", ms: "Kerja kursus", "zh-CN": "授课型", "zh-TW": "授課型" });
+    }
+    if (/^(research|research mode|研究型|研究制)$/.test(key)) {
+      return profileLocaleText({ en: "Research", ms: "Penyelidikan", "zh-CN": "研究型", "zh-TW": "研究型" });
+    }
+  }
+
+  if (kind === "rowLabel" || kind === "linkLabel") {
+    if (/^(qs world ranking|qs world rank|qs 世界排名|qs 世界排名)$/.test(key)) return t('university.qsWorldRank');
+    if (/^(qs asia ranking|qs asia rank|qs 亚洲排名|qs 亞洲排名)$/.test(key)) return t('university.qsAsiaRank');
+    if (/^(student total|student count|students|学生总数|學生總數|在校学生|在校學生)$/.test(key)) return t('university.studentTotal');
+    if (/^(international students|intl students|国际学生|國際學生)$/.test(key)) return t('university.internationalStudents');
+    if (/^(official source|source|官方来源|官方來源)$/.test(key)) return t('university.officialSource');
+    if (/^(official website|website|home page|homepage|官网|官網)$/.test(key)) return t('common.officialWebsite');
+    if (/^(admissions email|admission email|email|招生邮箱|招生郵箱)$/.test(key)) return t('common.admissionsEmail');
+    if (/^(study portal|study programme portal)$/.test(key)) return t('common.studyPortal');
+    if (/^(application portal|application entry|application system|申请入口|申請入口|申请系统|申請系統)$/.test(key)) return t('common.applicationPortal');
+    if (/^(application fee|fee|申请费|申請費)$/.test(key)) return t('university.applicationFee');
+  }
+
+  if (kind === "document") {
+    const docs = messageArray("university.defaultApplicationDocs");
+    if (/^(passport|护照|護照|pasport)$/.test(key)) return docs[0] || "";
+    if (/^(transcript|academic transcript|成绩单|成績單|transkrip)$/.test(key)) return docs[1] || "";
+    if (/^(language score|language test score|语言成绩|語言成績|skor bahasa)$/.test(key)) return docs[2] || "";
+    if (/^(personal statement|个人陈述|個人陳述|penyataan peribadi)$/.test(key)) return docs[3] || "";
+  }
+
+  return "";
+}
+
+function profileRuntimeText(value: unknown, fallback = "", kind?: ProfileTextKind) {
+  const known = profileKnownText(value, kind);
+  if (known) return known;
+  return formatRuntimeDisplayText(rawStringFrom(value), fallback, currentLocale.value);
+}
+
+function profileDisplayText(value: unknown, fallback = "", kind?: ProfileTextKind) {
+  const known = profileKnownText(value, kind);
+  if (known) return known;
+  return cleanDisplayText(rawStringFrom(value), fallback, currentLocale.value);
+}
+
 function profileString(key: string) {
   return stringFrom(profile.value?.[key]);
+}
+
+function profileOfficialNote(key: string) {
+  return formatOfficialNote(profile.value?.[key], "", currentLocale.value);
 }
 
 function profileScaleValue(key: ProfileScaleKey) {
@@ -916,17 +1018,45 @@ function formatRow(item: LabelValue) {
   return item.label ? `${item.label}${labelValueSeparator()}${item.value}` : item.value;
 }
 
-function normalizeRows(value: unknown): LabelValue[] {
+function formatRuntimeRow(item: LabelValue, fallback = officialPageFallback(currentLocale.value)) {
+  const label = formatRuntimeDisplayText(item.label, "", currentLocale.value);
+  const value = formatRuntimeDisplayText(item.value, fallback, currentLocale.value);
+  if (label && value) return `${label}${labelValueSeparator()}${value}`;
+  return value || label;
+}
+
+function formatProfileRuntimeRow(item: LabelValue, fallback = officialPageFallback(currentLocale.value)) {
+  const label = profileRuntimeText(item.label, "", "rowLabel");
+  const value = profileRuntimeText(item.value, fallback);
+  if (label && value) return `${label}${labelValueSeparator()}${value}`;
+  return value || label;
+}
+
+function normalizeRawRows(value: unknown): LabelValue[] {
   if (!Array.isArray(value)) return [];
   return value.map((item) => {
     if (typeof item === "string") return { label: "", value: item };
     const record = asRecord(item);
     if (!record) return { label: "", value: "" };
     return {
-      label: stringFrom(record.label || record.title || record.name),
-      value: stringFrom(record.value || record.text || record.description || record.url)
+      label: rawStringFrom(record.label || record.title || record.name),
+      value: rawStringFrom(record.value || record.text || record.description || record.url)
     };
   }).filter((item) => item.label || item.value);
+}
+
+function normalizeRows(value: unknown): LabelValue[] {
+  return normalizeRawRows(value).map((item) => ({
+    label: stringFrom(item.label),
+    value: stringFrom(item.value)
+  })).filter((item) => item.label || item.value);
+}
+
+function normalizeProfileRows(value: unknown): LabelValue[] {
+  return normalizeRawRows(value).map((item) => ({
+    label: profileDisplayText(item.label, "", "rowLabel"),
+    value: profileRuntimeText(item.value, "")
+  })).filter((item) => item.label && item.value);
 }
 
 function normalizeContactRows(value: unknown): LabelLink[] {
@@ -934,10 +1064,10 @@ function normalizeContactRows(value: unknown): LabelLink[] {
   return value.map((item) => {
     const record = asRecord(item);
     if (!record) return null;
-    const valueText = stringFrom(record.value || record.text || record.url || record.href);
-    const href = stringFrom(record.href || record.url) || (valueText.includes("@") ? `mailto:${valueText}` : valueText);
+    const valueText = profileDisplayText(record.value || record.text || record.url || record.href);
+    const href = rawStringFrom(record.href || record.url) || (valueText.includes("@") ? `mailto:${valueText}` : valueText);
     return {
-      label: stringFrom(record.label || record.title || record.name) || t('common.contactInfo'),
+      label: profileDisplayText(record.label || record.title || record.name, "", "linkLabel") || t('common.contactInfo'),
       value: valueText,
       href
     };
@@ -949,13 +1079,14 @@ function normalizeProfileLinks(value: unknown): SourceLinkView[] {
   return value.map((item) => {
     if (typeof item === "string") {
       const match = item.match(/https?:\/\/\S+/);
-      return match ? { label: item.replace(/:\s*https?:\/\/\S+$/, "") || t('common.officialLink'), url: match[0] } : null;
+      const rawLabel = item.replace(/:\s*https?:\/\/\S+$/, "");
+      return match ? { label: profileDisplayText(rawLabel, "", "linkLabel") || t('common.officialLink'), url: match[0] } : null;
     }
     const record = asRecord(item);
     if (!record) return null;
-    const url = stringFrom(record.url || record.href);
+    const url = rawStringFrom(record.url || record.href);
     if (!url) return null;
-    return { label: stringFrom(record.label || record.title || record.name) || t('common.officialLink'), url };
+    return { label: profileDisplayText(record.label || record.title || record.name, "", "linkLabel") || t('common.officialLink'), url };
   }).filter((item): item is SourceLinkView => Boolean(item));
 }
 
@@ -977,6 +1108,46 @@ function normalizeList(value: unknown): string[] {
   return [];
 }
 
+function normalizeProfileList(value: unknown, kind?: ProfileTextKind): string[] {
+  if (!value) return [];
+  if (Array.isArray(value)) {
+    return value.map((item) => {
+      if (typeof item === "string") return profileRuntimeText(item, "", kind);
+      const record = asRecord(item);
+      if (!record) return "";
+      const row = normalizeRawRows([record])[0];
+      return row ? formatProfileRuntimeRow(row, "") : "";
+    }).filter(Boolean);
+  }
+  if (typeof value === "string") {
+    const text = profileRuntimeText(value, "", kind);
+    return text ? [text] : [];
+  }
+  return [];
+}
+
+function normalizeRuntimeList(value: unknown, fallback = officialPageFallback(currentLocale.value)): string[] {
+  if (!value) return [];
+  if (Array.isArray(value)) {
+    return value.map((item) => {
+      if (typeof item === "string") return formatRuntimeDisplayText(item, fallback, currentLocale.value);
+      const record = asRecord(item);
+      if (!record) return "";
+      const row = normalizeRows([record])[0];
+      return row ? formatRuntimeRow(row, fallback) : "";
+    }).filter(Boolean);
+  }
+  if (typeof value === "string") {
+    const text = formatRuntimeDisplayText(value, fallback, currentLocale.value);
+    return text ? [text] : [];
+  }
+  return [];
+}
+
+function uniqueRows(rows: string[]) {
+  return [...new Set(rows.filter(Boolean))];
+}
+
 function pushLink(items: SourceLinkView[], label: string, url?: string | null) {
   if (!url || items.some((item) => item.url === url)) return;
   items.push({ label, url });
@@ -984,6 +1155,13 @@ function pushLink(items: SourceLinkView[], label: string, url?: string | null) {
 
 function stringFrom(value: unknown) {
   if (typeof value === "string") return cleanDisplayText(value, "", currentLocale.value);
+  if (typeof value === "number") return String(value);
+  if (typeof value === "boolean") return value ? t('common.yes') : t('common.no');
+  return "";
+}
+
+function rawStringFrom(value: unknown) {
+  if (typeof value === "string") return value.replace(/\s+/g, " ").trim();
   if (typeof value === "number") return String(value);
   if (typeof value === "boolean") return value ? t('common.yes') : t('common.no');
   return "";

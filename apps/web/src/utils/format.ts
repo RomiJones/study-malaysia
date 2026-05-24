@@ -141,6 +141,183 @@ const officialNoteLabels = {
 
 const officialNoteLabelMap = officialNoteLabels as Record<string, LocalizedText>;
 
+const monthNameLabels = {
+  january: {
+    labels: { en: "January", ms: "Januari", "zh-CN": "1月", "zh-TW": "1月" }
+  },
+  february: {
+    labels: { en: "February", ms: "Februari", "zh-CN": "2月", "zh-TW": "2月" }
+  },
+  march: {
+    labels: { en: "March", ms: "Mac", "zh-CN": "3月", "zh-TW": "3月" }
+  },
+  april: {
+    labels: { en: "April", ms: "April", "zh-CN": "4月", "zh-TW": "4月" }
+  },
+  may: {
+    labels: { en: "May", ms: "Mei", "zh-CN": "5月", "zh-TW": "5月" }
+  },
+  june: {
+    labels: { en: "June", ms: "Jun", "zh-CN": "6月", "zh-TW": "6月" }
+  },
+  july: {
+    labels: { en: "July", ms: "Julai", "zh-CN": "7月", "zh-TW": "7月" }
+  },
+  august: {
+    labels: { en: "August", ms: "Ogos", "zh-CN": "8月", "zh-TW": "8月" }
+  },
+  september: {
+    labels: { en: "September", ms: "September", "zh-CN": "9月", "zh-TW": "9月" }
+  },
+  october: {
+    labels: { en: "October", ms: "Oktober", "zh-CN": "10月", "zh-TW": "10月" }
+  },
+  november: {
+    labels: { en: "November", ms: "November", "zh-CN": "11月", "zh-TW": "11月" }
+  },
+  december: {
+    labels: { en: "December", ms: "Disember", "zh-CN": "12月", "zh-TW": "12月" }
+  }
+} satisfies Record<string, { labels: LocalizedText }>;
+
+type MonthNameKey = keyof typeof monthNameLabels;
+
+const monthNameAlternation = Object.keys(monthNameLabels).join("|");
+const monthNamePattern = new RegExp(`\\b(${monthNameAlternation})\\b`, "gi");
+const monthIntakePattern = new RegExp(`\\b(${monthNameAlternation})\\s+intakes?\\b`, "gi");
+const semesterIntakePattern = new RegExp(`\\bsemester\\s+(\\d+)\\s*\\(\\s*(${monthNameAlternation})\\s*\\)\\s+intake\\b`, "gi");
+const monthExpressionItem = `(?:${monthNameAlternation})(?:\\s+intakes?)?|semester\\s+\\d+\\s*\\(\\s*(?:${monthNameAlternation})\\s*\\)\\s+intake|multiple\\s+intakes?`;
+const monthExpressionSeparator = `\\s*(?:/|,|;|&|\\band\\b|\\bor\\b|、|，)\\s*`;
+const monthExpressionPattern = new RegExp(`^\\s*(?:${monthExpressionItem})(?:${monthExpressionSeparator}(?:${monthExpressionItem}))*\\s*$`, "i");
+
+const multipleIntakesLabels = {
+  en: "Multiple intakes",
+  ms: "Beberapa ambilan",
+  "zh-CN": "多批次入学",
+  "zh-TW": "多批次入學"
+} satisfies LocalizedText;
+
+function monthKey(value: string): MonthNameKey | null {
+  const normalized = value.toLowerCase();
+  return normalized in monthNameLabels ? normalized as MonthNameKey : null;
+}
+
+function monthNameLabel(value: string, locale: SupportedLocale): string {
+  const key = monthKey(value);
+  return key ? monthNameLabels[key].labels[locale] : value;
+}
+
+function monthIntakeLabel(value: string, locale: SupportedLocale): string {
+  const month = monthNameLabel(value, locale);
+  if (locale === "zh-CN") return `${month}入学`;
+  if (locale === "zh-TW") return `${month}入學`;
+  if (locale === "ms") return `Ambilan ${month}`;
+  return `${month} intake`;
+}
+
+function semesterIntakeLabel(term: string, month: string, locale: SupportedLocale): string {
+  const monthLabel = monthNameLabel(month, locale);
+  if (locale === "zh-CN") return `第${term}学期（${monthLabel}）`;
+  if (locale === "zh-TW") return `第${term}學期（${monthLabel}）`;
+  if (locale === "ms") return `Ambilan Semester ${term} (${monthLabel})`;
+  return `Semester ${term} (${monthLabel}) intake`;
+}
+
+function isExplicitMonthExpression(value: string): boolean {
+  return monthExpressionPattern.test(value);
+}
+
+function normalizeRuntimeMonthText(value: string, locale: SupportedLocale): { text: string; changed: boolean } {
+  const explicitMonthExpression = isExplicitMonthExpression(value);
+  let changed = false;
+  let text = value.replace(semesterIntakePattern, (_match, term: string, month: string) => {
+    changed = true;
+    return semesterIntakeLabel(term, month, locale);
+  });
+
+  text = text.replace(/\bmultiple\s+intakes?\b/gi, () => {
+    changed = true;
+    return multipleIntakesLabels[locale];
+  });
+
+  text = text.replace(monthIntakePattern, (_match, month: string) => {
+    changed = true;
+    return monthIntakeLabel(month, locale);
+  });
+
+  if (explicitMonthExpression) {
+    text = text.replace(monthNamePattern, (_match, month: string) => {
+      changed = true;
+      return monthNameLabel(month, locale);
+    });
+
+    if (locale === "zh-CN" || locale === "zh-TW") {
+      text = text.replace(/\band\b/gi, () => {
+        changed = true;
+        return "及";
+      }).replace(/\bor\b/gi, () => {
+        changed = true;
+        return "或";
+      });
+    } else if (locale === "ms") {
+      text = text.replace(/\band\b/gi, () => {
+        changed = true;
+        return "dan";
+      }).replace(/\bor\b/gi, () => {
+        changed = true;
+        return "atau";
+      });
+    }
+  }
+
+  return { text, changed };
+}
+
+function formatRuntimeMonthDisplayText(value: string, fallback: string, locale: SupportedLocale): string {
+  const normalized = normalizeRuntimeMonthText(value, locale);
+  if (!normalized.changed) return "";
+  if (!isExplicitMonthExpression(value)) return "";
+  const text = normalized.text.replace(/\s+/g, " ").trim();
+  if (missingDisplayValues.has(text.toLowerCase())) return fallback;
+  if ((locale === "en" || locale === "ms") && containsCjkText(text)) return fallback;
+  return (locale === "zh-TW" ? toTraditionalText(text) : text) || fallback;
+}
+
+const runtimeDynamicTextLabels = {
+  "october intake": {
+    en: "October intake",
+    ms: "Ambilan Oktober",
+    "zh-CN": "10月入学",
+    "zh-TW": "10月入學"
+  },
+  "march intake": {
+    en: "March intake",
+    ms: "Ambilan Mac",
+    "zh-CN": "3月入学",
+    "zh-TW": "3月入學"
+  },
+  "september intake": {
+    en: "September intake",
+    ms: "Ambilan September",
+    "zh-CN": "9月入学",
+    "zh-TW": "9月入學"
+  },
+  "refer to official portal": {
+    en: "Refer to official portal.",
+    ms: "Rujuk portal rasmi.",
+    "zh-CN": "以官方申请入口为准。",
+    "zh-TW": "以官方申請入口為準。"
+  },
+  "refer to official system": {
+    en: "Refer to official system.",
+    ms: "Rujuk sistem rasmi.",
+    "zh-CN": "以官方申请系统为准。",
+    "zh-TW": "以官方申請系統為準。"
+  }
+} satisfies Record<string, LocalizedText>;
+
+const runtimeDynamicTextLabelMap = runtimeDynamicTextLabels as Record<string, LocalizedText>;
+
 const extraCategoryLabels = {
   hospitality: {
     en: "Hospitality",
@@ -401,6 +578,24 @@ function isEnglishLikeOfficialNote(value: string): boolean {
   return !containsCjkText(value) && words.length >= 2;
 }
 
+function hasUnknownAcademicEnglish(value: string): boolean {
+  if (isExplicitMonthExpression(value)) return false;
+
+  const stripped = value
+    .replace(/https?:\/\/\S+/gi, " ")
+    .replace(/\b(?:RM|CNY|USD|IELTS|TOEFL|GPA|QS|MQA|MUET|PTE)\b/gi, " ")
+    .replace(/\bnot\s+offered\s+for\s+the\s+academic\s+session\s+\d{4}\/\d{4}\b/gi, " ")
+    .replace(/\bnot\s+offered\b/gi, " ")
+    .replace(/\bsemester\s+\d+\s*\(\s*[A-Za-z]+\s*\)\s+intakes?\b/gi, " ")
+    .replace(/\bmultiple\s+intakes?\b/gi, " ")
+    .replace(/\b(?:january|february|march|april|may|june|july|august|september|october|november|december)\b/gi, " ")
+    .replace(/\b(?:full[-\s]?time|part[-\s]?time|coursework|research|rolling|years?|semesters?|intakes?|academic|session|band|and|or|per|year)\b/gi, " ")
+    .replace(/[0-9.,:+/()&\-–—\s]+/g, " ")
+    .trim();
+
+  return isEnglishLikeOfficialNote(stripped);
+}
+
 function finitePositiveNumber(value: unknown): number | null {
   const amount = Number(value);
   return Number.isFinite(amount) && amount > 0 ? amount : null;
@@ -414,6 +609,17 @@ function rawDisplayText(value: unknown, locale?: SupportedLocale): string {
   return "";
 }
 
+function normalizedRawDisplayText(value: unknown, locale?: SupportedLocale): string {
+  return rawDisplayText(value, locale).replace(/\s+/g, " ").trim();
+}
+
+function formatLocalizedLabel(label: LocalizedText, fallback: string, locale: SupportedLocale): string {
+  const text = rawDisplayText(label[locale] || label.en, locale).replace(/\s+/g, " ").trim();
+  if (missingDisplayValues.has(text.toLowerCase())) return fallback;
+  if ((locale === "en" || locale === "ms") && containsCjkText(text)) return fallback;
+  return (locale === "zh-TW" ? toTraditionalText(text) : text) || fallback;
+}
+
 export function cleanDisplayText(
   value: unknown,
   fallback?: string,
@@ -423,6 +629,10 @@ export function cleanDisplayText(
   const text = rawDisplayText(value, locale).replace(/\s+/g, " ").trim();
   if (missingDisplayValues.has(text.toLowerCase())) return actualFallback;
   const normalizedLocale = normalizeLocale(locale);
+  const monthText = formatRuntimeMonthDisplayText(text, actualFallback, normalizedLocale);
+  if (monthText) return monthText;
+  const runtimeLabel = runtimeDynamicTextLabelMap[normalizeOfficialNoteKey(text)];
+  if (runtimeLabel) return formatLocalizedLabel(runtimeLabel, actualFallback, normalizedLocale);
   if ((normalizedLocale === "en" || normalizedLocale === "ms") && containsCjkText(text)) return actualFallback;
   const localizedText = normalizedLocale === "zh-TW" ? toTraditionalText(text) : text;
   return localizedText || actualFallback;
@@ -435,13 +645,45 @@ export function formatOfficialNote(
 ): string {
   const normalizedLocale = normalizeLocale(locale);
   const actualFallback = fallback ?? officialConfirmationFallback(normalizedLocale);
-  const text = cleanDisplayText(value, "", normalizedLocale);
+  const rawText = normalizedRawDisplayText(value, normalizedLocale);
+  if (missingDisplayValues.has(rawText.toLowerCase())) return actualFallback;
+
+  const normalizedKey = normalizeOfficialNoteKey(rawText);
+  const label = officialNoteLabelMap[normalizedKey] || runtimeDynamicTextLabelMap[normalizedKey];
+  if (label) {
+    return formatLocalizedLabel(label, actualFallback, normalizedLocale);
+  }
+
+  const text = cleanDisplayText(rawText, "", normalizedLocale);
   if (!text) return actualFallback;
 
-  const label = officialNoteLabelMap[normalizeOfficialNoteKey(text)];
-  if (label) {
-    return cleanDisplayText(label[normalizedLocale] || label.en, actualFallback, normalizedLocale);
+  if (normalizedLocale !== "en" && isEnglishLikeOfficialNote(text)) {
+    return actualFallback;
   }
+
+  return cleanDisplayText(text, actualFallback, normalizedLocale);
+}
+
+export function formatRuntimeDisplayText(
+  value: unknown,
+  fallback?: string,
+  locale?: SupportedLocale
+): string {
+  const normalizedLocale = normalizeLocale(locale);
+  const actualFallback = fallback ?? officialPageFallback(normalizedLocale);
+  const rawText = normalizedRawDisplayText(value, normalizedLocale);
+  if (missingDisplayValues.has(rawText.toLowerCase())) return actualFallback;
+
+  const normalizedKey = normalizeOfficialNoteKey(rawText);
+  const label = runtimeDynamicTextLabelMap[normalizedKey] || officialNoteLabelMap[normalizedKey];
+  if (label) {
+    return formatLocalizedLabel(label, actualFallback, normalizedLocale);
+  }
+  const monthText = formatRuntimeMonthDisplayText(rawText, actualFallback, normalizedLocale);
+  if (monthText) return monthText;
+
+  const text = cleanDisplayText(rawText, "", normalizedLocale);
+  if (!text) return actualFallback;
 
   if (normalizedLocale !== "en" && isEnglishLikeOfficialNote(text)) {
     return actualFallback;
@@ -470,17 +712,12 @@ export function normalizeAcademicText(value: unknown, fallback?: string, locale?
   const text = cleanDisplayText(value, "", locale);
   if (!text) return actualFallback;
   const normalizedLocale = normalizeLocale(locale);
+  if (normalizedLocale !== "en" && hasUnknownAcademicEnglish(text)) return actualFallback;
+  const monthNormalizedText = normalizeRuntimeMonthText(text, normalizedLocale).text;
   const normalized = isChineseLocale(locale)
-    ? (normalizedLocale === "zh-TW" ? toTraditionalText(text) : text)
+    ? (normalizedLocale === "zh-TW" ? toTraditionalText(monthNormalizedText) : monthNormalizedText)
       .replace(/Not offered for the Academic Session 2026\/2027/gi, "2026/2027 学年不开放")
       .replace(/Not offered/gi, "暂不开放")
-      .replace(/Semester 1 \(October\) Intake/gi, "第一学期（10月）")
-      .replace(/Semester 2 \(March\) Intake/gi, "第二学期（3月）")
-      .replace(/October Intake/gi, "10月")
-      .replace(/March Intake/gi, "3月")
-      .replace(/October/gi, "10月")
-      .replace(/March/gi, "3月")
-      .replace(/September/gi, "9月")
       .replace(/Rolling/gi, "滚动开放")
       .replace(/Years?/gi, "年")
       .replace(/Semesters?/gi, "个学期")
@@ -490,16 +727,9 @@ export function normalizeAcademicText(value: unknown, fallback?: string, locale?
       .replace(/\s+\/\s+year/gi, " / 年")
       .trim()
     : normalizedLocale === "ms"
-      ? text
+      ? monthNormalizedText
         .replace(/Not offered for the Academic Session 2026\/2027/gi, "Tidak ditawarkan untuk tahun akademik 2026/2027")
         .replace(/Not offered/gi, "Tidak ditawarkan")
-        .replace(/Semester 1 \(October\) Intake/gi, "Ambilan Semester 1 (Oktober)")
-        .replace(/Semester 2 \(March\) Intake/gi, "Ambilan Semester 2 (Mac)")
-        .replace(/October Intake/gi, "Ambilan Oktober")
-        .replace(/March Intake/gi, "Ambilan Mac")
-        .replace(/October/gi, "Oktober")
-        .replace(/March/gi, "Mac")
-        .replace(/September/gi, "September")
         .replace(/Rolling/gi, "Ambilan bergilir")
         .replace(/Years?/gi, "tahun")
         .replace(/Semesters?/gi, "semester")
@@ -508,7 +738,7 @@ export function normalizeAcademicText(value: unknown, fallback?: string, locale?
         .replace(/\band\b/gi, "dan")
         .replace(/\s+\/\s+year/gi, " / tahun")
         .trim()
-    : text
+    : monthNormalizedText
       .replace(/Not offered for the Academic Session 2026\/2027/gi, "Not offered for the 2026/2027 academic year")
       .replace(/\s+\/\s+year/gi, " / year")
       .trim();
