@@ -12,7 +12,17 @@ export class I18nController {
     @Query(I18N_LOCALE_QUERY_PARAM) queryLocale?: string,
     @Headers(I18N_LOCALE_REQUEST_HEADER) headerLocale?: string
   ) {
-    return this.i18nService.getOptions(queryLocale || headerLocale);
+    const normalizedQueryLocale = this.normalizeLocaleCandidate(queryLocale);
+    if (normalizedQueryLocale) {
+      return this.i18nService.getOptions(normalizedQueryLocale, "query-param");
+    }
+
+    const normalizedHeaderLocale = this.normalizeLocaleCandidate(headerLocale);
+    if (normalizedHeaderLocale) {
+      return this.i18nService.getOptions(normalizedHeaderLocale, "request-header");
+    }
+
+    return this.i18nService.getOptions();
   }
 
   @Post("switch")
@@ -30,5 +40,11 @@ export class I18nController {
   @Put("preference")
   savePreference(@Req() request: { user: { id: number } }, @Body() payload: LocaleSwitchInput) {
     return this.i18nService.saveUserPreference(request.user.id, payload || {});
+  }
+
+  private normalizeLocaleCandidate(value?: string) {
+    if (typeof value !== "string") return undefined;
+    const normalized = value.trim();
+    return normalized || undefined;
   }
 }

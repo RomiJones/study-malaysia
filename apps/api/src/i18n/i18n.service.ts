@@ -108,8 +108,8 @@ const SWITCH_MESSAGES = {
 export class I18nService {
   constructor(@InjectRepository(UserEntity) private readonly usersRepository: Repository<UserEntity>) {}
 
-  getOptions(requestedLocale?: unknown) {
-    const resolved = this.resolveOptionalLocale(requestedLocale);
+  getOptions(requestedLocale?: unknown, requestedSource?: LocalePreferenceSource) {
+    const resolved = this.resolveOptionalLocale(requestedLocale, requestedSource);
     return {
       switcher: {
         ...I18N_LANGUAGE_SWITCHER_CONTRACT,
@@ -139,7 +139,7 @@ export class I18nService {
     return this.buildSwitchResponse({
       locale: resolved.locale,
       status: resolved.status,
-      source: resolved.status === "fallback-applied" ? "browser" : "local-storage",
+      source: "local-storage",
       scope: "device",
       persisted: false,
       preservedRoutePath,
@@ -201,7 +201,7 @@ export class I18nService {
     updatedAt?: string | null;
     preservedRoutePath?: string;
     switchSource: LocaleSwitchTrigger;
-  }): LocaleSwitchResponseDto & { switchSource: LocaleSwitchTrigger } {
+  }): LocaleSwitchResponseDto {
     return {
       status: input.status,
       preference: this.buildPreference(input),
@@ -229,7 +229,10 @@ export class I18nService {
     };
   }
 
-  private resolveOptionalLocale(value: unknown): {
+  private resolveOptionalLocale(
+    value: unknown,
+    requestedSource: LocalePreferenceSource = "query-param"
+  ): {
     locale: SupportedLocale;
     source: LocalePreferenceSource;
     status: LocaleSwitchStatus;
@@ -241,7 +244,7 @@ export class I18nService {
     const resolved = this.resolveLocale(value);
     return {
       ...resolved,
-      source: resolved.status === "fallback-applied" ? "browser" : "query-param"
+      source: requestedSource
     };
   }
 

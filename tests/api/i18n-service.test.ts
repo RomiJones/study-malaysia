@@ -53,12 +53,25 @@ describe("i18n API service and controller", () => {
 
     assert.equal(result.switcher.currentLocale, "en");
     assert.equal(result.preference.locale, "en");
-    assert.equal(result.preference.source, "browser");
+    assert.equal(result.preference.source, "query-param");
     assert.equal(result.preference.persisted, false);
     assert.equal(result.switcher.options.length, 4);
     assert.equal(result.navigation.items.some((item: any) => item.id === "universities"), true);
     assert.equal(result.request.header, "x-studymy-locale");
     assert.equal(result.request.queryParam, "locale");
+  });
+
+  test("preserves header locale source independently from alias fallback", () => {
+    const service = new I18nService(createRepository() as any);
+    const controller = new I18nController(service);
+
+    const headerResult = controller.options(undefined, "ms") as any;
+    const queryAliasResult = controller.options("en-US") as any;
+
+    assert.equal(headerResult.preference.locale, "ms");
+    assert.equal(headerResult.preference.source, "request-header");
+    assert.equal(queryAliasResult.preference.locale, "en");
+    assert.equal(queryAliasResult.preference.source, "query-param");
   });
 
   test("switches device locale while preserving a safe route", () => {
@@ -73,6 +86,7 @@ describe("i18n API service and controller", () => {
 
     assert.equal(result.status, "fallback-applied");
     assert.equal(result.preference.locale, "zh-TW");
+    assert.equal(result.preference.source, "local-storage");
     assert.equal(result.preference.persistenceScope, "device");
     assert.equal(result.preference.persisted, false);
     assert.equal(result.switchSource, "header");

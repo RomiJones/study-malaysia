@@ -16,6 +16,7 @@ export type LocalePreferenceSource =
   | "default"
   | "browser"
   | "local-storage"
+  | "request-header"
   | "query-param"
   | "user-account";
 export type LocalePersistenceScope = "device" | "user-account";
@@ -98,6 +99,7 @@ export interface LocaleSwitchResponseDto {
   options: readonly LocaleOptionContract[];
   preservedRoutePath?: string;
   message?: LocalizedText;
+  switchSource?: LocaleSwitchTrigger;
 }
 
 export interface UserLocalePreferenceDto {
