@@ -11,6 +11,7 @@ import ProgramsPage from "@/pages/ProgramsPage.vue";
 import ContentPage from "@/pages/ContentPage.vue";
 import ApplicationsPage from "@/pages/ApplicationsPage.vue";
 import SettingsPage from "@/pages/SettingsPage.vue";
+import NotionTasksPage from "@/pages/NotionTasksPage.vue";
 import LocalizationPage from "@/pages/LocalizationPage.vue";
 import SmartRecommendationsPage from "@/pages/SmartRecommendationsPage.vue";
 import AdminLayout from "@/layouts/AdminLayout.vue";
@@ -32,6 +33,7 @@ const router = createRouter({
         { path: "/universities", name: "universities", component: UniversitiesPage, meta: { title: "学校管理", permission: "school:view" } },
         { path: "/programs", name: "programs", component: ProgramsPage, meta: { title: "专业管理", permission: "program:view" } },
         { path: "/content", name: "content", component: ContentPage, meta: { title: "内容管理", permission: "content:view" } },
+        { path: "/notion-tasks", name: "notion-tasks", component: NotionTasksPage, meta: { title: "Notion 任务", permission: "settings:view" } },
         { path: "/localization", name: "localization", component: LocalizationPage, meta: { title: "多语言切换", permission: "settings:view" } },
         { path: "/smart-recommendations", name: "smart-recommendations", component: SmartRecommendationsPage, meta: { title: "智能推荐", permission: "settings:view" } },
         { path: "/applications", name: "applications", component: ApplicationsPage, meta: { title: "学生申请", permission: "application:view" } },

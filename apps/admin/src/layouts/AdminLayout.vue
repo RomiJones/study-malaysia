@@ -30,6 +30,10 @@
             <span>{{ menu.title }}</span>
           </el-menu-item>
         </template>
+        <el-menu-item v-if="showNotionTasksShortcut" index="/notion-tasks">
+          <component :is="resolveIcon('DocumentChecked')" class="menu-icon" />
+          <span>Notion 任务</span>
+        </el-menu-item>
         <el-menu-item v-if="showLocalizationShortcut" index="/localization">
           <component :is="resolveIcon('Switch')" class="menu-icon" />
           <span>多语言切换</span>
@@ -81,6 +85,7 @@ import { resolveIcon } from "@/utils/icons";
 const route = useRoute();
 const router = useRouter();
 const auth = useAuthStore();
+const showNotionTasksShortcut = computed(() => auth.hasPermission("settings:view") && !hasMenuPath(auth.menuTree, "/notion-tasks"));
 const showLocalizationShortcut = computed(() => auth.hasPermission("settings:view") && !hasMenuPath(auth.menuTree, "/localization"));
 const showSmartRecommendationShortcut = computed(() => auth.hasPermission("settings:view") && !hasMenuPath(auth.menuTree, "/smart-recommendations"));
 
