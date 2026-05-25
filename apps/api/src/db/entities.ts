@@ -8,6 +8,7 @@
   OneToMany,
   OneToOne,
   PrimaryGeneratedColumn,
+  Unique,
   UpdateDateColumn,
   type Relation
 } from "typeorm";
@@ -39,6 +40,45 @@ export type ApplicationStatus = "draft" | "submitted" | "reviewing" | "offer" | 
 export type VisaStatus = "not-started" | "preparing" | "submitted" | "approved" | "rejected";
 export type FollowUpType = "note" | "status" | "assign" | "material" | "visa";
 export type UserLocalePreferenceSource = "default" | "browser" | "local-storage" | "query-param" | "user-account";
+export type RecommendationProfileFieldKey =
+  | "level"
+  | "targetCategory"
+  | "budgetCny"
+  | "gpa"
+  | "ielts"
+  | "experience"
+  | "acceptNoLanguage";
+export type PlannerProfileCompletenessStatus = "incomplete" | "complete" | "stale";
+export type RecommendationRunStatus = "blocked-profile-incomplete" | "generated" | "no-match" | "expired";
+
+export const RECOMMENDATION_REQUIRED_PROFILE_FIELDS: RecommendationProfileFieldKey[] = [
+  "level",
+  "targetCategory",
+  "budgetCny",
+  "gpa",
+  "ielts",
+  "experience",
+  "acceptNoLanguage"
+];
+
+export interface RecommendationProfileSnapshot {
+  level: DegreeLevel;
+  targetCategory: ProgramCategoryCode;
+  budgetCny: number;
+  gpa: number;
+  ielts: number;
+  experience: string;
+  acceptNoLanguage: boolean;
+}
+
+export interface RecommendationResultSnapshot {
+  universityId: number;
+  programId: number;
+  score: number;
+  annualCostCny: number;
+  reasons: LocalizedStringArray;
+  riskFlags?: string[];
+}
 
 @Entity({ name: "users" })
 export class UserEntity {
@@ -87,6 +127,9 @@ export class UserEntity {
 
   @OneToMany(() => PlannerTaskEntity, (task) => task.user)
   plannerTasks?: Relation<PlannerTaskEntity[]>;
+
+  @OneToMany(() => RecommendationRunEntity, (run) => run.user)
+  recommendationRuns?: Relation<RecommendationRunEntity[]>;
 
   @OneToMany(() => StudentApplicationEntity, (application) => application.student)
   applications?: Relation<StudentApplicationEntity[]>;
@@ -697,11 +740,97 @@ export class PlannerProfileEntity {
   @Column({ type: "boolean", default: true })
   acceptNoLanguage!: boolean;
 
+  @Column({ type: "int", default: 1 })
+  profileVersion!: number;
+
+  @Column({ type: "varchar", length: 30, default: "incomplete" })
+  completenessStatus!: PlannerProfileCompletenessStatus;
+
+  @Column({ type: "json", nullable: true })
+  requiredProfileFields!: RecommendationProfileFieldKey[] | null;
+
+  @Column({ type: "json", nullable: true })
+  missingProfileFields!: RecommendationProfileFieldKey[] | null;
+
+  @Column({ type: "varchar", length: 128, default: "" })
+  profileSnapshotHash!: string;
+
+  @Column({ type: "datetime", nullable: true })
+  profileCompletedAt!: Date | null;
+
+  @Column({ type: "datetime", nullable: true })
+  recommendationRefreshedAt!: Date | null;
+
   @Column({ type: "json" })
   materialProgress!: Record<string, MaterialStatus>;
 
   @Column({ type: "json" })
   visaChecklist!: PlannerVisaChecklist;
+
+  @OneToMany(() => RecommendationRunEntity, (run) => run.profile)
+  recommendationRuns?: Relation<RecommendationRunEntity[]>;
+
+  @CreateDateColumn()
+  createdAt!: Date;
+
+  @UpdateDateColumn()
+  updatedAt!: Date;
+}
+
+@Entity({ name: "recommendation_runs" })
+@Index(["userId", "profileVersion"])
+@Index(["userId", "status"])
+@Index(["cacheKey"])
+export class RecommendationRunEntity {
+  @PrimaryGeneratedColumn()
+  id!: number;
+
+  @Column({ type: "int" })
+  userId!: number;
+
+  @ManyToOne(() => UserEntity, (user) => user.recommendationRuns, { onDelete: "CASCADE" })
+  @JoinColumn({ name: "userId" })
+  user!: Relation<UserEntity>;
+
+  @Column({ type: "int" })
+  profileId!: number;
+
+  @ManyToOne(() => PlannerProfileEntity, (profile) => profile.recommendationRuns, { onDelete: "CASCADE" })
+  @JoinColumn({ name: "profileId" })
+  profile!: Relation<PlannerProfileEntity>;
+
+  @Column({ type: "int", default: 1 })
+  profileVersion!: number;
+
+  @Column({ type: "varchar", length: 30, default: "blocked-profile-incomplete" })
+  status!: RecommendationRunStatus;
+
+  @Column({ type: "varchar", length: 128, default: "" })
+  cacheKey!: string;
+
+  @Column({ type: "json", nullable: true })
+  profileSnapshot!: RecommendationProfileSnapshot | null;
+
+  @Column({ type: "json", nullable: true })
+  requiredProfileFields!: RecommendationProfileFieldKey[] | null;
+
+  @Column({ type: "json", nullable: true })
+  missingProfileFields!: RecommendationProfileFieldKey[] | null;
+
+  @Column({ type: "json", nullable: true })
+  results!: RecommendationResultSnapshot[] | null;
+
+  @Column({ type: "int", default: 0 })
+  resultCount!: number;
+
+  @Column({ type: "datetime", nullable: true })
+  generatedAt!: Date | null;
+
+  @Column({ type: "datetime", nullable: true })
+  expiresAt!: Date | null;
+
+  @Column({ type: "text", nullable: true })
+  auditNote!: string | null;
 
   @CreateDateColumn()
   createdAt!: Date;
@@ -761,6 +890,7 @@ export class CompareItemEntity {
 }
 
 @Entity({ name: "planner_tasks" })
+@Unique(["userId", "universityId", "programId"])
 export class PlannerTaskEntity {
   @PrimaryGeneratedColumn()
   id!: number;
@@ -1084,6 +1214,7 @@ export const ALL_ENTITIES = [
   UniversityEntity,
   ProgramEntity,
   PlannerProfileEntity,
+  RecommendationRunEntity,
   FavoriteEntity,
   CompareItemEntity,
   PlannerTaskEntity,

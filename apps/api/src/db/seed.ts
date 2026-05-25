@@ -16,10 +16,13 @@ import {
   DictionaryItemEntity,
   PlannerProfileEntity,
   ProgramEntity,
+  RECOMMENDATION_REQUIRED_PROFILE_FIELDS,
+  RecommendationRunEntity,
   StudentApplicationEntity,
   SystemConfigEntity,
   UniversityEntity,
-  UserEntity
+  UserEntity,
+  type RecommendationProfileSnapshot
 } from "./entities.js";
 import { seedAdminUsers, seedConfigs, seedDictionaryItems, seedMenus, seedPermissions, seedRoles } from "./admin-seed.js";
 import { seedContentBlocks, seedPrograms, seedUniversities, seedUsers } from "./seed-data.js";
@@ -45,6 +48,7 @@ async function run() {
   const repos = {
     users: dataSource.getRepository(UserEntity),
     plannerProfiles: dataSource.getRepository(PlannerProfileEntity),
+    recommendationRuns: dataSource.getRepository(RecommendationRunEntity),
     universities: dataSource.getRepository(UniversityEntity),
     programs: dataSource.getRepository(ProgramEntity),
     content: dataSource.getRepository(ContentBlockEntity),
@@ -64,6 +68,7 @@ async function run() {
   const deleteOrder = [
     "application_follow_ups",
     "student_applications",
+    "recommendation_runs",
     "planner_tasks",
     "favorites",
     "planner_profiles",
@@ -88,6 +93,8 @@ async function run() {
   }
 
   const userMap = new Map<string, UserEntity>();
+  const profileMap = new Map<string, PlannerProfileEntity>();
+  const seededRecommendationAt = new Date("2026-05-25T00:00:00.000Z");
   for (const item of seedUsers) {
     const saved = await repos.users.save(repos.users.create({
       role: item.role,
@@ -101,8 +108,15 @@ async function run() {
     }));
     userMap.set(item.account, saved);
     if (saved.role === "student") {
-      await repos.plannerProfiles.save(repos.plannerProfiles.create({
+      const profile = await repos.plannerProfiles.save(repos.plannerProfiles.create({
         userId: saved.id,
+        profileVersion: 1,
+        completenessStatus: "complete",
+        requiredProfileFields: [...RECOMMENDATION_REQUIRED_PROFILE_FIELDS],
+        missingProfileFields: [],
+        profileSnapshotHash: "seed-demo-profile-v1",
+        profileCompletedAt: seededRecommendationAt,
+        recommendationRefreshedAt: null,
         materialProgress: {},
         visaChecklist: {
           offerAccepted: false,
@@ -112,6 +126,7 @@ async function run() {
           arrivalReady: false
         }
       }));
+      profileMap.set(item.account, profile);
     }
   }
 
@@ -121,10 +136,11 @@ async function run() {
     universityMap.set(item.code, saved);
   }
 
+  const savedPrograms: ProgramEntity[] = [];
   for (const item of seedPrograms) {
     const university = universityMap.get(item.universityCode);
     if (!university) continue;
-    await repos.programs.save(repos.programs.create({
+    const saved = await repos.programs.save(repos.programs.create({
       universityId: university.id,
       slug: item.slug,
       code: item.code,
@@ -144,11 +160,64 @@ async function run() {
       description: item.description,
       isPublished: true
     }));
+    savedPrograms.push(saved);
   }
 
   for (const university of universityMap.values()) {
     university.programCount = await repos.programs.count({ where: { universityId: university.id } });
     await repos.universities.save(university);
+  }
+
+  const demoStudent = userMap.get("demo@studymy.local");
+  const demoProfile = profileMap.get("demo@studymy.local");
+  if (demoStudent && demoProfile) {
+    const demoProgram = savedPrograms.find((program) => program.level === demoProfile.level && program.category === demoProfile.targetCategory);
+    const demoUniversity = demoProgram
+      ? [...universityMap.values()].find((university) => university.id === demoProgram.universityId)
+      : null;
+
+    if (demoProgram && demoUniversity) {
+      const profileSnapshot: RecommendationProfileSnapshot = {
+        level: demoProfile.level,
+        targetCategory: demoProfile.targetCategory,
+        budgetCny: demoProfile.budgetCny,
+        gpa: Number(demoProfile.gpa),
+        ielts: Number(demoProfile.ielts),
+        experience: demoProfile.experience,
+        acceptNoLanguage: demoProfile.acceptNoLanguage
+      };
+      await repos.recommendationRuns.save(repos.recommendationRuns.create({
+        userId: demoStudent.id,
+        profileId: demoProfile.id,
+        profileVersion: demoProfile.profileVersion,
+        status: "generated",
+        cacheKey: `profile:${demoStudent.id}:${demoProfile.profileVersion}:seed-demo-profile-v1`,
+        profileSnapshot,
+        requiredProfileFields: [...RECOMMENDATION_REQUIRED_PROFILE_FIELDS],
+        missingProfileFields: [],
+        results: [
+          {
+            universityId: demoUniversity.id,
+            programId: demoProgram.id,
+            score: 86,
+            annualCostCny: demoProgram.annualTuitionCny + demoUniversity.livingCostCny,
+            reasons: {
+              en: ["Seed profile is complete", "Program matches target category"],
+              ms: ["Profil seed lengkap", "Program sepadan dengan kategori sasaran"],
+              "zh-CN": ["种子画像完整", "专业方向匹配"],
+              "zh-TW": ["種子畫像完整", "專業方向匹配"]
+            },
+            riskFlags: []
+          }
+        ],
+        resultCount: 1,
+        generatedAt: seededRecommendationAt,
+        expiresAt: new Date("2026-06-24T00:00:00.000Z"),
+        auditNote: "Seeded from a complete demo profile and one public catalog program."
+      }));
+      demoProfile.recommendationRefreshedAt = seededRecommendationAt;
+      await repos.plannerProfiles.save(demoProfile);
+    }
   }
 
   for (const block of seedContentBlocks) {
