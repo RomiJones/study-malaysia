@@ -1406,8 +1406,27 @@ img {
 .filter-panel {
   position: sticky;
   top: 80px;
-  overflow: hidden;
+  max-height: calc(100vh - 96px);
+  overflow-x: hidden;
+  overflow-y: auto;
+  overscroll-behavior: contain;
   padding: 0;
+  scrollbar-color: rgba(12, 14, 26, 0.24) transparent;
+  scrollbar-width: thin;
+}
+
+.filter-panel::-webkit-scrollbar {
+  width: 8px;
+}
+
+.filter-panel::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.filter-panel::-webkit-scrollbar-thumb {
+  border: 2px solid #fff;
+  border-radius: 999px;
+  background: rgba(12, 14, 26, 0.22);
 }
 
 .filter-panel__header {
@@ -1534,6 +1553,25 @@ img {
 
 .filter-group-body.open {
   max-height: 440px;
+}
+
+.filter-group--category .filter-group-body.open {
+  max-height: none;
+  overflow: visible;
+}
+
+.filter-group--category .filter-group-body.open::-webkit-scrollbar {
+  width: 8px;
+}
+
+.filter-group--category .filter-group-body.open::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.filter-group--category .filter-group-body.open::-webkit-scrollbar-thumb {
+  border: 2px solid #fff;
+  border-radius: 999px;
+  background: rgba(12, 14, 26, 0.24);
 }
 
 .filter-group-inner {
@@ -1665,14 +1703,18 @@ label.lbl {
 
 .category-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: 1fr;
+  align-items: start;
   gap: 6px;
 }
 
 .category-grid .filter-chip {
+  width: 100%;
   justify-content: flex-start;
   overflow: hidden;
   line-height: 1.25;
+  min-height: 36px;
+  padding: 8px 10px;
   text-align: left;
   white-space: normal;
   overflow-wrap: anywhere;
@@ -4753,9 +4795,15 @@ label.lbl {
 
   .filter-panel {
     position: static;
+    max-height: none;
+    overflow: visible;
   }
 
   .filter-stack {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .category-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
@@ -5242,6 +5290,18 @@ label.lbl {
 @media (max-width: 600px) {
   body {
     font-size: 14px;
+  }
+
+  .filter-group--category .filter-group-body.open {
+    max-height: min(58vh, 620px);
+    overflow-y: auto;
+    scrollbar-color: rgba(12, 14, 26, 0.28) transparent;
+    scrollbar-gutter: stable;
+    scrollbar-width: thin;
+  }
+
+  .category-grid {
+    grid-template-columns: 1fr;
   }
 
   .program-grid,

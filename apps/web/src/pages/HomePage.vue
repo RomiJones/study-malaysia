@@ -88,8 +88,19 @@
         </div>
 
         <div class="filter-stack">
-          <div v-for="group in filterGroups" :key="group.key" class="filter-group">
-            <button class="filter-group-head" type="button" @click="toggleFilterGroup(group.key)">
+          <div
+            v-for="group in filterGroups"
+            :key="group.key"
+            class="filter-group"
+            :class="[`filter-group--${group.key}`, { 'filter-group--open': openGroups.includes(group.key) }]"
+          >
+            <button
+              class="filter-group-head"
+              type="button"
+              :aria-controls="`home-filter-${group.key}`"
+              :aria-expanded="openGroups.includes(group.key)"
+              @click="toggleFilterGroup(group.key)"
+            >
               <span class="filter-group-label">
                 <span class="filter-group-icon ui-icon" :class="group.icon" aria-hidden="true"></span>
                 <span>{{ group.label }}</span>
@@ -98,7 +109,11 @@
               <span class="filter-group-arrow ui-icon ui-icon--chevron" :class="{ open: openGroups.includes(group.key) }" aria-hidden="true"></span>
             </button>
 
-            <div class="filter-group-body" :class="{ open: openGroups.includes(group.key) }">
+            <div
+              :id="`home-filter-${group.key}`"
+              class="filter-group-body"
+              :class="{ open: openGroups.includes(group.key) }"
+            >
               <div class="filter-group-inner">
                 <div v-if="group.key === 'type'" class="chip-row">
                   <button class="filter-chip" :class="{ active: ownership === 'public' }" @click="setOwnership('public')">
