@@ -3,7 +3,7 @@
     <section class="page-card notion-page__hero">
       <div class="page-toolbar notion-page__hero-toolbar">
         <div>
-          <div class="notion-page__eyebrow">TASK-091 / parent TASK-063</div>
+          <div class="notion-page__eyebrow">TASK-079 / parent TASK-059</div>
           <h2 class="notion-page__title">Notion 任务管理端拆分看板</h2>
           <div class="section-subtitle notion-page__hero-copy">
             只维护中文项目任务页的管理端可验证界面，覆盖任务列表、筛选、表单、状态流转和执行记录；Notion 不作为业务数据库。
@@ -259,10 +259,10 @@ const createTask = (overrides: Partial<NotionTaskContract>): NotionTaskContract 
   impactScope: { affectedApps: ["apps/admin"], affectedModules: ["apps/admin:Notion"], likelyFiles: [] },
   lockScope: { lockScopeHint: "module_scope", riskLevel: "medium" },
   split: {
-    parentTaskId: "TASK-063",
+    parentTaskId: "TASK-059",
     childTaskIds: [],
     splitDepth: 1,
-    splitReason: "由父任务 TASK-063 拆分生成。",
+    splitReason: "由父任务 TASK-059 拆分生成。",
     splitStatus: "not_split",
     taskSize: "medium",
     taskSizeScore: 0,
@@ -277,41 +277,42 @@ const createTask = (overrides: Partial<NotionTaskContract>): NotionTaskContract 
 
 const tasks = ref<NotionTaskContract[]>([
   createTask({
-    taskId: "TASK-091",
-    title: "新增需求边界和验收标准补充：Notion 管理端页面拆分",
-    status: "待评审",
+    taskId: "TASK-079",
+    title: "新增需求边界、验收标准和依赖规划补充：Notion 管理端页面拆分",
+    status: "进行中",
     priority: "高",
-    implementationNotes: "从父任务 TASK-063 中拆出 Notion 管理端页面、表单、列表和状态交互，只处理管理端可验证界面。",
-    validationResult: "Codex 已完成实现并返回完成状态。",
+    implementationNotes: "从父任务 TASK-059 中拆出 Notion 管理端页面、表单、列表和状态交互，只处理管理端可验证界面。",
+    validationResult: null,
+    blockerNote: "上一轮记录显示管理端构建、全量测试和全工作区构建已通过；本轮正在复验同任务视觉失败。",
     executionRecords: [
       {
-        recordedAt: "2026-05-25T15:05:48.843Z",
-        status: "待评审",
-        runId: "TASK-091-2026-05-25T14-53-34-129Z",
-        summary: "Codex 已完成实现并返回完成状态。",
+        recordedAt: "2026-05-25T16:39:57.319Z",
+        status: "进行中",
+        runId: "TASK-079-2026-05-25T16-39-57-276Z",
+        summary: "自动化运行已领取该任务，正在重新验证管理端 Notion 任务界面。",
         testsRun: []
       },
       {
-        recordedAt: "2026-05-25T14:53:34.134Z",
-        status: "进行中",
-        runId: "TASK-091-2026-05-25T14-53-34-129Z",
-        summary: "自动化运行已领取该任务。",
-        testsRun: []
+        recordedAt: "2026-05-25T14:53:33.932Z",
+        status: "已失败",
+        runId: "TASK-079-2026-05-25T14-43-10-848Z",
+        summary: "通过。管理端构建通过；npm run test 通过 16 个套件、97 个用例；npm run build 全工作区通过，管理端仅有既有 chunk size 警告。",
+        testsRun: ["npm --workspace @studymy/admin run build", "npm run test", "npm run build"]
       }
     ]
   }),
   createTask({
-    taskId: "TASK-063",
+    taskId: "TASK-059",
     title: "新增需求边界和验收标准补充",
     status: "已失败",
     priority: "高",
     taskType: "产品",
     parallelGroup: "docs",
-    impactScope: { affectedApps: ["docs"], affectedModules: ["docs:智能推荐需求边界"], likelyFiles: ["docs/prd/TASK-063-smart-recommendation-profile-requirement-boundary.md"] },
-    implementationNotes: "父任务仅记录智能推荐必须登录并完善学生画像后的需求边界；Notion 只作为中文项目文档来源，不是业务数据库。",
+    impactScope: { affectedApps: ["apps/web", "docs"], affectedModules: ["apps/web:需求边界", "docs:需求边界"], likelyFiles: ["docs/prd/TASK-059-user-web-i18n-switcher-requirement-boundary.md"] },
+    implementationNotes: "父任务记录用户端多语言切换、顶部菜单间距和长文案响应式边界；Notion 只作为中文项目文档来源，不是业务数据库。",
     testPlan: "人工检查中文需求边界、非目标、验收标准和阻塞条件。",
-    acceptanceCriteria: ["已说明新增需求目标、用户价值、功能范围和非目标。", "没有把 Notion 或 Markdown 快照描述为业务数据库。"],
-    validationResult: "父任务已拆分为多个子任务，TASK-091 只承接管理端 Notion 页面可验证界面。"
+    acceptanceCriteria: ["已说明新增需求的目标、用户价值、功能范围和非目标。", "已明确新增需求与已有任务的关系，不覆盖或重置历史任务。", "已记录任务依赖不是编号顺序，而是真实业务或技术前置条件。"],
+    validationResult: "父任务已拆分为 12 个子任务，TASK-079 只承接管理端 Notion 页面可验证界面。"
   }),
   createTask({
     taskId: "TASK-072",
@@ -327,26 +328,28 @@ const tasks = ref<NotionTaskContract[]>([
   createTask({
     taskId: "TASK-076",
     title: "新增需求边界、验收标准和依赖规划补充：Notion 后端 API 和服务拆分",
-    status: "可开始",
+    status: "已完成",
     priority: "高",
     taskType: "后端",
     parallelGroup: "api-endpoints",
-    implementationNotes: "从父任务 TASK-063 中拆出 Notion 后端 API、服务、校验和错误处理，只处理后端可测试接口能力。",
+    implementationNotes: "从父任务 TASK-059 中拆出 Notion 后端 API、服务、校验和错误处理，只处理后端可测试接口能力。",
     testPlan: "运行后端构建、单元测试或接口验证命令。",
     acceptanceCriteria: ["API 契约清晰，输入校验和错误处理完整。", "后端构建、单测或接口验证通过。"],
+    validationResult: "Review 通过：后端 Notion API 复审通过，Notion 仍被标记为中文任务快照来源，不作为运行时业务数据库。",
     impactScope: { affectedApps: ["apps/api"], affectedModules: ["apps/api:Notion"], likelyFiles: [] }
   }),
   createTask({
-    taskId: "TASK-094",
+    taskId: "TASK-082",
     title: "新增需求边界、验收标准和依赖规划补充：Notion 用户端页面和交互拆分",
-    status: "已失败",
+    status: "已阻塞",
     priority: "高",
     taskType: "前端",
     parallelGroup: "frontend-pages",
-    implementationNotes: "从父任务 TASK-063 中拆出的用户端残留项；Notion 不是业务功能，不应在用户端暴露为页面。",
+    implementationNotes: "从父任务 TASK-059 中拆出的用户端残留项；Notion 不是业务功能，不应在用户端暴露为页面。",
     testPlan: "启动或复用前端服务，使用浏览器或等价工具验证关键页面。",
     acceptanceCriteria: ["用户端主流程满足父任务相关验收标准。", "浏览器验证通过，页面无明显视觉和响应式问题。"],
-    impactScope: { affectedApps: ["apps/web"], affectedModules: ["apps/web:Notion"], likelyFiles: [] }
+    validationResult: "代码、i18n、测试、构建和前端浏览器复验均通过；但该任务把 Notion 误生成为用户端业务功能，需要人工取消、合并或重标。",
+    impactScope: { affectedApps: ["apps/web"], affectedModules: ["apps/web:Notion", "apps/web:需求边界"], likelyFiles: [] }
   })
 ]);
 
@@ -581,6 +584,16 @@ const statusTagType = (status: NotionTaskStatus) => {
 
 .notion-page__detail {
   overflow: hidden;
+}
+
+.notion-page__detail :deep(.el-descriptions__label) {
+  min-width: 92px;
+  white-space: nowrap;
+}
+
+.notion-page__detail :deep(.el-descriptions__content) {
+  min-width: 0;
+  word-break: break-word;
 }
 
 .notion-detail-grid {
