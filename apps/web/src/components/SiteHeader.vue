@@ -32,11 +32,23 @@
       </nav>
 
       <div class="header-actions">
-        <select v-model="locale" class="shell-select" @change="switchLocale">
-          <option v-for="option in localeOptions" :key="option.value" :value="option.value">{{ option.label }}</option>
-        </select>
-        <RouterLink v-if="session.isLoggedIn" class="primary-action" to="/member">{{ session.user?.displayName || t('nav.member') }}</RouterLink>
-        <button v-else class="primary-action" @click="$emit('open-auth', 'login')">{{ t('nav.login') }}</button>
+        <div class="language-switcher" role="group" :aria-label="t('common.language')">
+          <button
+            v-for="option in localeOptions"
+            :key="option.value"
+            class="language-switcher__option"
+            :class="{ active: option.value === currentLocale }"
+            type="button"
+            :aria-label="option.label"
+            :aria-pressed="option.value === currentLocale"
+            :title="option.label"
+            @click="switchLocale(option.value)"
+          >
+            {{ option.shortLabel }}
+          </button>
+        </div>
+        <RouterLink v-if="session.isLoggedIn" class="primary-action" to="/member">{{ session.user?.displayName || headerMemberLabel }}</RouterLink>
+        <button v-else class="primary-action" @click="$emit('open-auth', 'login')">{{ headerLoginLabel }}</button>
       </div>
     </div>
   </header>
@@ -69,25 +81,55 @@ const catalog = useCatalogStore();
 const route = useRoute();
 const { t, locale } = useI18n();
 const favoriteCount = computed(() => catalog.favoriteState.universities.length + catalog.favoriteState.programs.length);
+const currentLocale = computed(() => locale.value as SupportedLocale);
+
+const compactHeaderLabels: Partial<Record<SupportedLocale, Record<string, string>>> = {
+  en: {
+    home: "Universities",
+    planner: "Planner",
+    calculator: "Costs",
+    recommend: "Match",
+    member: "Student",
+    login: "Sign in"
+  },
+  ms: {
+    planner: "Perancang",
+    favorites: "Senarai",
+    compare: "Banding",
+    member: "Pelajar",
+    login: "Log masuk",
+    calculator: "Kos",
+    recommend: "Padanan"
+  }
+};
+
+function headerLabel(key: string, fallbackKey: string) {
+  return compactHeaderLabels[currentLocale.value]?.[key] || t(fallbackKey);
+}
 
 const menuItems = computed<HeaderMenuItem[]>(() => [
-  { key: "home", label: t("nav.home"), icon: "ui-icon--home", to: "/" },
-  { key: "planner", label: t("nav.planner"), icon: "ui-icon--planner", to: "/planner" },
-  { key: "calculator", label: t("nav.calculator"), icon: "ui-icon--calculator", action: "calculator" },
-  { key: "recommend", label: t("nav.recommend"), icon: "ui-icon--recommend", action: "recommend" },
-  { key: "favorites", label: t("nav.favorites"), icon: "ui-icon--favorites", to: "/favorites" },
-  { key: "compare", label: t("nav.compare"), icon: "ui-icon--compare", to: "/compare" }
+  { key: "home", label: headerLabel("home", "nav.home"), icon: "ui-icon--home", to: "/" },
+  { key: "planner", label: headerLabel("planner", "nav.planner"), icon: "ui-icon--planner", to: "/planner" },
+  { key: "calculator", label: headerLabel("calculator", "nav.calculator"), icon: "ui-icon--calculator", action: "calculator" },
+  { key: "recommend", label: headerLabel("recommend", "nav.recommend"), icon: "ui-icon--recommend", action: "recommend" },
+  { key: "favorites", label: headerLabel("favorites", "nav.favorites"), icon: "ui-icon--favorites", to: "/favorites" },
+  { key: "compare", label: headerLabel("compare", "nav.compare"), icon: "ui-icon--compare", to: "/compare" }
 ]);
 
-const localeOptions = computed<Array<{ value: SupportedLocale; label: string }>>(() => [
-  { value: "zh-CN", label: t("localeNames.zhCN") },
-  { value: "zh-TW", label: t("localeNames.zhTW") },
-  { value: "en", label: t("localeNames.en") },
-  { value: "ms", label: t("localeNames.ms") }
+const headerMemberLabel = computed(() => headerLabel("member", "nav.member"));
+const headerLoginLabel = computed(() => headerLabel("login", "nav.login"));
+
+const localeOptions = computed<Array<{ value: SupportedLocale; label: string; shortLabel: string }>>(() => [
+  { value: "zh-CN", label: t("localeNames.zhCN"), shortLabel: "简" },
+  { value: "zh-TW", label: t("localeNames.zhTW"), shortLabel: "繁" },
+  { value: "en", label: t("localeNames.en"), shortLabel: "EN" },
+  { value: "ms", label: t("localeNames.ms"), shortLabel: "BM" }
 ]);
 
-function switchLocale() {
-  localStorage.setItem("studymy_locale", locale.value);
+function switchLocale(nextLocale: SupportedLocale) {
+  locale.value = nextLocale;
+  localStorage.setItem("studymy_locale", nextLocale);
+  document.documentElement.lang = nextLocale;
 }
 
 function handleMenuClick(item: HeaderMenuItem) {

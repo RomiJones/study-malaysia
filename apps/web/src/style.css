@@ -856,20 +856,42 @@ img {
   min-width: max-content;
 }
 
-.shell-select {
-  display: none;
-  width: 116px;
-  min-width: 0;
-  appearance: none;
+.language-switcher {
+  display: inline-flex;
+  flex-shrink: 0;
+  align-items: center;
+  gap: 2px;
+  padding: 3px;
   border: 1.5px solid var(--border);
   border-radius: var(--r-sm);
-  background:
-    linear-gradient(45deg, transparent 50%, var(--ink-3) 50%) right 12px center / 6px 6px no-repeat,
-    #fff;
+  background: #fff;
+  box-shadow: 0 1px 0 rgba(12, 14, 26, 0.03);
+}
+
+.language-switcher__option {
+  width: 34px;
+  min-width: 34px;
+  height: 30px;
+  appearance: none;
+  border: 0;
+  border-radius: 8px;
+  background: transparent;
   color: var(--ink-2);
-  padding: 8px 28px 8px 11px;
-  font-size: 13px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 800;
+  line-height: 1;
   outline: none;
+}
+
+.language-switcher__option:hover {
+  background: var(--paper-2);
+  color: var(--ink);
+}
+
+.language-switcher__option.active {
+  background: var(--ink);
+  color: #fff;
 }
 
 .btn,
@@ -1813,7 +1835,7 @@ label.lbl {
 .field-shell textarea:focus,
 .range-row input:focus,
 .search-field__input:focus,
-.shell-select:focus {
+.language-switcher__option:focus-visible {
   border-color: var(--gold);
   box-shadow: 0 0 0 3px rgba(200, 168, 75, 0.12);
 }
@@ -5365,8 +5387,15 @@ label.lbl {
     overflow-wrap: anywhere;
   }
 
-  .header-brand-subtitle,
-  .shell-select {
+  .header-brand-subtitle {
+    display: none;
+  }
+
+  .header-brand-link {
+    gap: 8px;
+  }
+
+  .header-brand-badge {
     display: none;
   }
 
@@ -5374,11 +5403,30 @@ label.lbl {
     width: min(100vw - 20px, 1280px);
     height: 64px;
     padding: 0;
+    gap: 10px;
     flex-wrap: nowrap;
   }
 
   .site-nav {
     display: none;
+  }
+
+  .header-actions {
+    gap: 6px;
+    min-width: 0;
+  }
+
+  .language-switcher {
+    gap: 1px;
+    padding: 2px;
+  }
+
+  .language-switcher__option {
+    width: 26px;
+    min-width: 26px;
+    height: 28px;
+    padding: 0;
+    font-size: 11px;
   }
 
   .nav-link {
@@ -5387,8 +5435,10 @@ label.lbl {
   }
 
   .header-actions .primary-action {
-    padding: 8px 12px;
+    max-width: 84px;
+    padding: 8px 10px;
     font-size: 13px;
+    white-space: normal;
   }
 
   .hero-panel {
@@ -5458,5 +5508,23 @@ label.lbl {
 
   .floating-tool-label {
     display: none;
+  }
+}
+
+@media (max-width: 380px) {
+  .header-brand-title {
+    font-size: 19px;
+  }
+
+  .language-switcher__option {
+    width: 24px;
+    min-width: 24px;
+    font-size: 10.5px;
+  }
+
+  .header-actions .primary-action {
+    max-width: 74px;
+    padding: 7px 8px;
+    font-size: 12px;
   }
 }
