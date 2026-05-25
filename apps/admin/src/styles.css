@@ -280,6 +280,12 @@ a { color: inherit; text-decoration: none; }
   flex-wrap: wrap;
 }
 
+.page-toolbar__left .el-input,
+.page-toolbar__left .el-select {
+  width: 220px;
+  max-width: 100%;
+}
+
 .metrics-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -334,6 +340,30 @@ a { color: inherit; text-decoration: none; }
 .table-actions { display: flex; gap: 8px; flex-wrap: wrap; }
 .json-box { background: #0f172a; color: #cbd5e1; padding: 12px; border-radius: 12px; overflow: auto; }
 
+.el-overlay-dialog {
+  padding: 16px;
+}
+
+.el-dialog {
+  max-width: calc(100vw - 32px);
+}
+
+.el-dialog__body {
+  max-height: calc(100vh - 180px);
+  overflow-y: auto;
+}
+
+.el-dialog__footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.el-table .cell {
+  overflow-wrap: anywhere;
+}
+
 .section-subtitle {
   margin-top: 6px;
   color: #64748b;
@@ -384,4 +414,59 @@ a { color: inherit; text-decoration: none; }
   .admin-layout__sidebar { display: none; }
   .admin-layout__content { padding: 16px; }
   .split-grid { grid-template-columns: 1fr; }
+  .admin-layout__header {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 14px;
+    padding: 16px;
+  }
+  .admin-layout__actions,
+  .page-toolbar,
+  .page-toolbar__left,
+  .page-toolbar__right {
+    width: 100%;
+  }
+  .page-toolbar__left .el-input,
+  .page-toolbar__left .el-select,
+  .page-toolbar__right .el-button {
+    width: 100%;
+  }
+  .el-overlay-dialog {
+    padding: 8px;
+  }
+  .el-dialog {
+    width: calc(100vw - 16px) !important;
+    max-width: calc(100vw - 16px);
+    margin-top: 8px !important;
+  }
+  .el-dialog__body {
+    max-height: calc(100vh - 142px);
+    padding: 16px;
+  }
+  .el-dialog__footer .el-button {
+    flex: 1 1 120px;
+  }
+  .el-dialog .el-tabs__nav {
+    max-width: 100%;
+    flex-wrap: wrap;
+    transform: none !important;
+  }
+  .el-dialog .el-tabs__nav-scroll {
+    overflow: visible;
+  }
+  .el-dialog .el-tabs__item {
+    flex: 1 1 50%;
+    min-width: 0;
+    justify-content: center;
+    padding: 0 8px;
+  }
+  .el-dialog .el-tabs__active-bar {
+    display: none;
+  }
+  .el-pagination {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    white-space: normal;
+  }
 }
