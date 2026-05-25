@@ -10,7 +10,9 @@ function isSupportedLocale(value: string | null): value is SupportedLocale {
 
 function readInitialLocale(): SupportedLocale {
   const storedLocale = localStorage.getItem("studymy_locale");
-  return isSupportedLocale(storedLocale) ? storedLocale : DEFAULT_LOCALE;
+  if (isSupportedLocale(storedLocale)) return storedLocale;
+  if (storedLocale) localStorage.removeItem("studymy_locale");
+  return DEFAULT_LOCALE;
 }
 
 const locale = readInitialLocale();

@@ -32,21 +32,19 @@
       </nav>
 
       <div class="header-actions">
-        <div class="language-switcher" role="group" :aria-label="t('common.language')">
-          <button
-            v-for="option in localeOptions"
-            :key="option.value"
-            class="language-switcher__option"
-            :class="{ active: option.value === currentLocale }"
-            type="button"
-            :aria-label="option.label"
-            :aria-pressed="option.value === currentLocale"
-            :title="option.label"
-            @click="switchLocale(option.value)"
+        <label class="language-switcher">
+          <span class="language-switcher__label">{{ t('common.language') }}</span>
+          <select
+            class="language-switcher__select"
+            :value="currentLocale"
+            :aria-label="`${t('common.language')}: ${currentLocaleOption.label}`"
+            @change="handleLocaleChange"
           >
-            {{ option.shortLabel }}
-          </button>
-        </div>
+            <option v-for="option in localeOptions" :key="option.value" :value="option.value">
+              {{ option.label }}
+            </option>
+          </select>
+        </label>
         <RouterLink v-if="session.isLoggedIn" class="primary-action" to="/member">{{ session.user?.displayName || headerMemberLabel }}</RouterLink>
         <button v-else class="primary-action" @click="$emit('open-auth', 'login')">{{ headerLoginLabel }}</button>
       </div>
@@ -126,10 +124,23 @@ const localeOptions = computed<Array<{ value: SupportedLocale; label: string; sh
   { value: "ms", label: t("localeNames.ms"), shortLabel: "BM" }
 ]);
 
+const currentLocaleOption = computed(
+  () => localeOptions.value.find((option) => option.value === currentLocale.value) || localeOptions.value[0]
+);
+
+function isSupportedLocale(value: string): value is SupportedLocale {
+  return localeOptions.value.some((option) => option.value === value);
+}
+
 function switchLocale(nextLocale: SupportedLocale) {
   locale.value = nextLocale;
   localStorage.setItem("studymy_locale", nextLocale);
   document.documentElement.lang = nextLocale;
+}
+
+function handleLocaleChange(event: Event) {
+  const nextLocale = (event.target as HTMLSelectElement).value;
+  if (isSupportedLocale(nextLocale)) switchLocale(nextLocale);
 }
 
 function handleMenuClick(item: HeaderMenuItem) {

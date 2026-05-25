@@ -770,7 +770,8 @@ img {
   color: var(--ink-3);
   font-size: 11px;
   line-height: 1.25;
-  white-space: nowrap;
+  white-space: normal;
+  overflow-wrap: anywhere;
 }
 
 .nav-link__badge {
@@ -791,7 +792,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 8px;
+  gap: clamp(10px, 0.9vw, 16px);
   flex: 1 1 auto;
   min-width: 0;
   overflow-x: auto;
@@ -813,7 +814,7 @@ img {
   justify-content: center;
   gap: 6px;
   flex: 0 0 auto;
-  padding: 8px 14px;
+  padding: 8px 16px;
   border-radius: var(--r-sm);
   color: var(--ink-2);
   font-size: 13.5px;
@@ -851,7 +852,7 @@ img {
 .header-actions {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
   flex-shrink: 0;
   min-width: max-content;
 }
@@ -860,38 +861,53 @@ img {
   display: inline-flex;
   flex-shrink: 0;
   align-items: center;
-  gap: 2px;
-  padding: 3px;
+  gap: 8px;
+  min-height: 40px;
+  padding: 4px 6px 4px 12px;
   border: 1.5px solid var(--border);
   border-radius: var(--r-sm);
   background: #fff;
   box-shadow: 0 1px 0 rgba(12, 14, 26, 0.03);
 }
 
-.language-switcher__option {
-  width: 34px;
-  min-width: 34px;
+.language-switcher__label {
+  color: var(--ink-3);
+  font-size: 11px;
+  font-weight: 800;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.language-switcher__select {
+  width: 136px;
+  max-width: 136px;
   height: 30px;
   appearance: none;
   border: 0;
-  border-radius: 8px;
-  background: transparent;
-  color: var(--ink-2);
+  border-radius: 7px;
+  background:
+    linear-gradient(45deg, transparent 50%, currentColor 50%) right 13px center / 5px 5px no-repeat,
+    linear-gradient(135deg, currentColor 50%, transparent 50%) right 8px center / 5px 5px no-repeat,
+    var(--paper-2);
+  color: var(--ink);
   cursor: pointer;
   font-size: 12px;
   font-weight: 800;
   line-height: 1;
+  overflow: hidden;
   outline: none;
+  padding: 0 24px 0 10px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
-.language-switcher__option:hover {
-  background: var(--paper-2);
-  color: var(--ink);
+.language-switcher__select:hover {
+  background-color: #ecece6;
 }
 
-.language-switcher__option.active {
-  background: var(--ink);
-  color: #fff;
+.language-switcher__select:focus-visible {
+  box-shadow: 0 0 0 3px rgba(200, 168, 75, 0.28);
 }
 
 .btn,
@@ -1834,8 +1850,7 @@ label.lbl {
 .field-shell select:focus,
 .field-shell textarea:focus,
 .range-row input:focus,
-.search-field__input:focus,
-.language-switcher__option:focus-visible {
+.search-field__input:focus {
   border-color: var(--gold);
   box-shadow: 0 0 0 3px rgba(200, 168, 75, 0.12);
 }
@@ -5417,16 +5432,21 @@ label.lbl {
   }
 
   .language-switcher {
-    gap: 1px;
+    gap: 0;
+    min-height: 34px;
     padding: 2px;
   }
 
-  .language-switcher__option {
-    width: 26px;
-    min-width: 26px;
-    height: 28px;
-    padding: 0;
-    font-size: 11px;
+  .language-switcher__label {
+    display: none;
+  }
+
+  .language-switcher__select {
+    width: 112px;
+    max-width: 112px;
+    height: 30px;
+    padding-left: 9px;
+    font-size: 11.5px;
   }
 
   .nav-link {
@@ -5516,9 +5536,9 @@ label.lbl {
     font-size: 19px;
   }
 
-  .language-switcher__option {
-    width: 24px;
-    min-width: 24px;
+  .language-switcher__select {
+    width: 92px;
+    max-width: 92px;
     font-size: 10.5px;
   }
 
