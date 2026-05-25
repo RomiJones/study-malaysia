@@ -237,9 +237,16 @@ export class CatalogLocalizationService {
         continue;
       }
 
+      const shouldRequireLocaleContent = field.required || hasAnyLocalizedValue(value);
+
       for (const checkedLocale of locales) {
+        if (!isLocaleValueShapeValid(value, checkedLocale, field.kind)) {
+          issues.push(this.buildIssue(entityType, record, field.field, checkedLocale, "invalid-localized-shape", "error", null));
+          continue;
+        }
+
         const samples = localeSamples(value, checkedLocale, field.kind);
-        if (!samples.length && field.required) {
+        if (!samples.length && shouldRequireLocaleContent) {
           issues.push(this.buildIssue(entityType, record, field.field, checkedLocale, "missing-locale", "error", null));
           continue;
         }
@@ -432,6 +439,25 @@ function localeSamples(
       : [];
   }
   return typeof raw === "string" && raw.trim() ? [raw.trim()] : [];
+}
+
+function hasAnyLocalizedValue(value: LocalizedText | LocalizedStringArray): boolean {
+  return SUPPORTED_LOCALES.some((locale) => {
+    const raw = value[locale];
+    if (Array.isArray(raw)) return raw.some((item) => Boolean(String(item || "").trim()));
+    if (typeof raw === "string") return Boolean(raw.trim());
+    return raw != null;
+  });
+}
+
+function isLocaleValueShapeValid(
+  value: LocalizedText | LocalizedStringArray,
+  locale: SupportedLocale,
+  kind: CatalogLocalizationFieldKind
+): boolean {
+  const raw = value[locale];
+  if (raw == null) return true;
+  return kind === "localized-array" ? Array.isArray(raw) : typeof raw === "string";
 }
 
 function hasCjkContent(value: string): boolean {

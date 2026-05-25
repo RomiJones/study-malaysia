@@ -146,6 +146,67 @@ describe("catalog localization API service", () => {
     assert.equal(report.summary.completeRecords.universities, 1);
   });
 
+  test("reports missing locales for non-empty optional localized arrays", async () => {
+    const service = new CatalogLocalizationService(
+      repository([
+        university({
+          facilities: { en: [], ms: [], "zh-CN": ["\u56fe\u4e66\u9986"], "zh-TW": [] }
+        })
+      ]) as any,
+      repository([]) as any
+    );
+
+    const report = await service.getCoverageReport({ entityType: "university", limit: "10" });
+
+    assert.equal(report.summary.issues.total, 3);
+    assert.equal(report.summary.issues.byCode["missing-locale"], 3);
+    assert.equal(report.summary.completeRecords.universities, 0);
+    assert.deepEqual(
+      report.issues.map((issue) => `${issue.field}:${issue.locale}:${issue.code}`).sort(),
+      [
+        "facilities:en:missing-locale",
+        "facilities:ms:missing-locale",
+        "facilities:zh-TW:missing-locale"
+      ]
+    );
+  });
+
+  test("skips optional localized arrays when every locale is empty", async () => {
+    const service = new CatalogLocalizationService(
+      repository([
+        university({
+          facilities: list([], [], [], [])
+        })
+      ]) as any,
+      repository([]) as any
+    );
+
+    const report = await service.getCoverageReport({ entityType: "university" });
+
+    assert.equal(report.summary.issues.total, 0);
+    assert.equal(report.summary.completeRecords.universities, 1);
+  });
+
+  test("reports invalid locale value shape for non-empty optional localized arrays", async () => {
+    const service = new CatalogLocalizationService(
+      repository([
+        university({
+          applicationDocuments: { en: "Passport", ms: [], "zh-CN": [], "zh-TW": [] }
+        })
+      ]) as any,
+      repository([]) as any
+    );
+
+    const report = await service.getCoverageReport({ entityType: "university", locale: "en", limit: "10" });
+
+    assert.equal(report.summary.issues.total, 1);
+    assert.equal(report.summary.issues.byCode["invalid-localized-shape"], 1);
+    assert.equal(report.summary.completeRecords.universities, 0);
+    assert.deepEqual(report.issues.map((issue) => `${issue.field}:${issue.locale}:${issue.code}`), [
+      "applicationDocuments:en:invalid-localized-shape"
+    ]);
+  });
+
   test("reports non-null optional fields when they are not localized payloads", async () => {
     const service = new CatalogLocalizationService(
       repository([university({ applicationDocuments: ["Passport"], chinaStudentRequirements: null })]) as any,
