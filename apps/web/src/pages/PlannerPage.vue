@@ -59,40 +59,12 @@
           <button class="btn btn-outline" type="button" @click="activeTab = 'profile'">{{ t('planner.saveProfile') }}</button>
         </div>
 
-        <div v-if="dashboard.recommendations.length" class="recommendation-list">
-          <RouterLink
-            v-for="(item, index) in dashboard.recommendations.slice(0, 3)"
-            :key="item.program.id"
-            class="rec-card"
-            :to="`/universities/${item.university.slug}?program=${item.program.id}`"
-          >
-            <div class="rec-score">{{ item.score }}</div>
-            <img
-              class="rec-card__logo"
-              :src="item.university.logoUrl || LOCAL_UNIVERSITY_LOGO_FALLBACK"
-              :alt="item.university.shortName"
-              @error="replaceBrokenLogo"
-            />
-            <div class="rec-card__body">
-              <div class="rec-card__title">{{ text(item.program.name) }}</div>
-              <div class="rec-card__meta">{{ text(item.university.name) }} · QS #{{ item.university.qsRank }}</div>
-              <div class="rec-card__chips">
-                <span class="chip" :class="tierChipClass(index)">{{ tierLabel(index) }}</span>
-                <span class="chip chip-ink">CNY {{ formatCurrency(item.annualCostCny) }}{{ t('common.perYear') }}</span>
-                <span class="chip chip-teal">IELTS {{ item.program.languageRequirement.ielts }}+</span>
-              </div>
-            </div>
-          </RouterLink>
-        </div>
-
-        <div v-else class="fav-empty section-card">
-          <div class="fav-empty-icon" aria-hidden="true">
-            <span class="ui-icon ui-icon--recommend"></span>
-          </div>
-          <strong>{{ t('planner.noRecommendationsTitle') }}</strong>
-          <span>{{ t('planner.noRecommendationsBody') }}</span>
-          <button class="btn btn-gold" type="button" @click="activeTab = 'profile'">{{ t('planner.improveProfile') }}</button>
-        </div>
+        <SmartRecommendationPanel
+          context="planner"
+          :limit="3"
+          @open-auth="openAuth"
+          @open-profile="activeTab = 'profile'"
+        />
       </section>
 
       <section v-if="activeTab === 'profile'" class="planner-panel">
@@ -229,16 +201,22 @@
 
 <script setup lang="ts">
 import { computed, onMounted, reactive, ref, watch } from "vue";
-import { RouterLink } from "vue-router";
+import { useRoute } from "vue-router";
 import { useI18n } from "vue-i18n";
-import { LOCAL_UNIVERSITY_LOGO_FALLBACK, type ApplicationStage, type DegreeLevel, type MaterialStatus } from "@studymy/shared";
+import type { ApplicationStage, DegreeLevel, MaterialStatus } from "@studymy/shared";
+import SmartRecommendationPanel from "../components/SmartRecommendationPanel.vue";
 import { useLocaleText } from "../composables/useLocaleText";
 import { useCatalogStore } from "../stores/catalog";
 import { usePlannerStore } from "../stores/planner";
+import { useSessionStore } from "../stores/session";
+import { useSmartRecommendationsStore } from "../stores/recommendations";
 import { formatCategoryLabel, formatCurrency, officialConfirmationFallback } from "../utils/format";
 
 const planner = usePlannerStore();
 const catalog = useCatalogStore();
+const session = useSessionStore();
+const smartRecommendations = useSmartRecommendationsStore();
+const route = useRoute();
 const { t } = useI18n();
 const { currentLocale, text } = useLocaleText();
 const activeTab = ref<"overview" | "profile" | "materials" | "applications" | "visa">("overview");
@@ -287,6 +265,7 @@ const visaKeys = computed(() => [
 ] as const);
 
 onMounted(() => {
+  syncActiveTabFromRoute(route.query.tab);
   void planner.load();
 });
 
@@ -294,9 +273,24 @@ watch(dashboard, (value) => {
   if (value) Object.assign(profile, value.profile);
 }, { immediate: true });
 
+watch(() => route.query.tab, (tab) => {
+  syncActiveTabFromRoute(tab);
+});
+
 async function saveProfile() {
   await planner.updateProfile(profile);
+  await smartRecommendations.refresh(currentLocale.value);
   activeTab.value = "overview";
+}
+
+function openAuth(mode: "login" | "register") {
+  session.openAuth(mode);
+}
+
+function syncActiveTabFromRoute(tab: unknown) {
+  if (tab === "overview" || tab === "profile" || tab === "materials" || tab === "applications" || tab === "visa") {
+    activeTab.value = tab;
+  }
 }
 
 function categoryLabel(value: string) {
@@ -317,18 +311,6 @@ function statusIconClass(status: MaterialStatus) {
 function updateMaterial(key: string, event: Event) {
   const status = (event.target as HTMLSelectElement).value as MaterialStatus;
   void planner.updateMaterial(key, status);
-}
-
-function tierLabel(index: number) {
-  if (index === 0) return t('planner.tiers.reach');
-  if (index < 3) return t('planner.tiers.target');
-  return t('planner.tiers.safe');
-}
-
-function tierChipClass(index: number) {
-  if (index === 0) return "chip-gold";
-  if (index < 3) return "chip-teal";
-  return "chip-blue";
 }
 
 function taskTierClass(item: { tier: Record<string, string> }) {
@@ -357,16 +339,5 @@ function annualCost(universityId: number, programId: number) {
   const program = catalog.programs.find((item) => item.id === programId);
   if (!university || !program) return officialConfirmationFallback(currentLocale.value);
   return `CNY ${formatCurrency(university.livingCostCny + program.annualTuitionCny)}${t('common.perYear')}`;
-}
-
-function replaceBrokenLogo(event: Event) {
-  const target = event.target;
-  if (!(target instanceof HTMLImageElement)) return;
-  if (target.dataset.fallbackApplied) {
-    target.style.display = "none";
-    return;
-  }
-  target.dataset.fallbackApplied = "true";
-  target.src = LOCAL_UNIVERSITY_LOGO_FALLBACK;
 }
 </script>
