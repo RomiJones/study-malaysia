@@ -1,3 +1,5 @@
+export * from "./notion.js";
+
 export * from "./i18n.js";
 
 import type { LocalizedStringArray, LocalizedText } from "./i18n.js";
