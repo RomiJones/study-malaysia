@@ -6,12 +6,35 @@ import { SMART_RECOMMENDATION_CONTRACT } from "@studymy/shared";
 import { RecommendationsController } from "../../apps/api/src/recommendations/recommendations.controller.ts";
 import { RecommendationsService } from "../../apps/api/src/recommendations/recommendations.service.ts";
 
-function text(en: string, zh = en) {
-  return { en, ms: en, "zh-CN": zh, "zh-TW": zh };
+function text(en: string, zhCN = en, zhTW = zhCN, ms = en) {
+  return { en, ms, "zh-CN": zhCN, "zh-TW": zhTW };
 }
 
-function list(values: string[] = []) {
-  return { en: values, ms: values, "zh-CN": values, "zh-TW": values };
+function list(en: string[] = [], zhCN = en, zhTW = zhCN, ms = en) {
+  return { en, ms, "zh-CN": zhCN, "zh-TW": zhTW };
+}
+
+function assertNoKnownSimplifiedSamples(value: string) {
+  const simplifiedSamples = [
+    "层次",
+    "保存",
+    "专业",
+    "达到",
+    "公开",
+    "学术",
+    "语言",
+    "预算",
+    "预计",
+    "学费",
+    "候选",
+    "条件录取",
+    "后补",
+    "该推荐",
+    "来源",
+    "复核",
+    "筛选"
+  ];
+  assert.deepEqual(simplifiedSamples.filter((sample) => value.includes(sample)), []);
 }
 
 function profile(overrides: Record<string, unknown> = {}) {
@@ -44,7 +67,7 @@ function university(overrides: Record<string, unknown> = {}) {
     id: 1,
     slug: "universiti-malaya",
     code: "UM",
-    name: text("Universiti Malaya", "马来亚大学"),
+    name: text("Universiti Malaya", "马来亚大学", "馬來亞大學"),
     shortName: "UM",
     nameEnOfficial: "Universiti Malaya",
     logoUrl: "",
@@ -98,11 +121,11 @@ function program(overrides: Record<string, unknown> = {}) {
     universityId: 1,
     slug: "um-master-it",
     code: "UMP1",
-    name: text("Master of Information Technology", "信息技术硕士"),
+    name: text("Master of Information Technology", "信息技术硕士", "資訊技術碩士"),
     nameEnOfficial: "Master of Information Technology",
     level: "master",
     category: "it",
-    faculty: text("Faculty of Computer Science", "计算机学院"),
+    faculty: text("Faculty of Computer Science", "计算机学院", "電腦科學學院"),
     facultyZh: "计算机学院",
     studyMode: "Full-time",
     campus: "Kuala Lumpur",
@@ -241,10 +264,20 @@ describe("smart recommendations API and service", () => {
     assert.equal(result.status, "ready");
     assert.equal(result.gate.canShowRecommendations, true);
     assert.equal(result.recommendations.length, 1);
-    assert.equal(result.recommendations[0].program.id, 11);
-    assert.equal(result.recommendations[0].trace.userId, 7);
-    assert.equal(result.recommendations[0].reasonsDetailed.some((item) => item.profileField === "gpa"), true);
-    assert.equal(result.recommendations[0].risks.length, 0);
+    const recommendation = result.recommendations[0];
+    const detailByCode = new Map(recommendation.reasonsDetailed.map((item) => [item.code, item]));
+    assert.equal(recommendation.program.id, 11);
+    assert.equal(recommendation.trace.userId, 7);
+    assert.equal(recommendation.reasonsDetailed.some((item) => item.profileField === "gpa"), true);
+    assert.equal(recommendation.risks.length, 0);
+    assert.equal(detailByCode.get("level-match")?.message["zh-TW"], "層次匹配已儲存畫像。");
+    assert.equal(detailByCode.get("category-match")?.message["zh-TW"], "專業方向匹配目標方向。");
+    assert.equal(detailByCode.get("gpa-meets-requirement")?.message["zh-TW"], "GPA 達到公開學術門檻。");
+    assert.equal(detailByCode.get("language-meets-requirement")?.message["zh-TW"], "雅思達到公開語言要求。");
+    assert.equal(detailByCode.get("budget-within-range")?.message["zh-TW"], "預算可覆蓋預計首年學費和生活費。");
+    assert.equal(detailByCode.get("ranking-fit")?.message["zh-TW"], "院校排名提升候選可信度。");
+    assertNoKnownSimplifiedSamples(recommendation.reasons["zh-TW"].join("\n"));
+    assertNoKnownSimplifiedSamples(recommendation.reasonsDetailed.map((item) => item.message["zh-TW"]).join("\n"));
     assert.equal((savedRuns[0] as any).status, "generated");
     assert.equal((savedRuns[0] as any).resultCount, 1);
     assert.equal((savedProfiles[0] as any).recommendationRefreshedAt instanceof Date, true);
@@ -262,7 +295,31 @@ describe("smart recommendations API and service", () => {
       () => service.getPersonalizedRecommendations(7, { mode: "personalized-profile-match", profileVersion: "3" }),
       (error) =>
         error instanceof BadRequestException &&
-        (error.getResponse() as any).code === "SMART_RECOMMENDATION_PROFILE_STALE"
+        (error.getResponse() as any).code === "SMART_RECOMMENDATION_PROFILE_STALE" &&
+        (error.getResponse() as any).message["zh-TW"] === "畫像版本已過期，請重新讀取已儲存學生畫像後再重新整理推薦。"
+    );
+  });
+
+  test("localizes warning risks and invalid mode errors for Traditional Chinese", async () => {
+    const service = makeService({
+      profileValue: profile(),
+      universities: [university()],
+      programs: [program({ languageRequirement: { ielts: 7, toefl: null, pte: null, muet: null } })]
+    });
+
+    const result = await service.refreshPersonalizedRecommendations(7, { mode: "personalized-profile-match" });
+    const risk = result.recommendations[0].risks.find((item) => item.code === "conditional-language-required");
+
+    assert.equal(risk?.message["zh-TW"], "該推薦依賴條件錄取或後補語言路徑。");
+    assert.equal(risk?.suggestion?.["zh-TW"], "請複核畫像或調整篩選條件。");
+    assertNoKnownSimplifiedSamples(`${risk?.message["zh-TW"]}\n${risk?.suggestion?.["zh-TW"]}`);
+
+    await assert.rejects(
+      () => service.getPersonalizedRecommendations(7, { mode: "public-filter" } as any),
+      (error) =>
+        error instanceof BadRequestException &&
+        (error.getResponse() as any).code === "SMART_RECOMMENDATION_MODE_INVALID" &&
+        (error.getResponse() as any).message["zh-TW"] === "智能推薦僅支援 personalized-profile-match 模式。"
     );
   });
 

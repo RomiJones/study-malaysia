@@ -91,7 +91,8 @@ export class RecommendationsService {
         localized(
           "Profile version is stale. Reload the saved student profile before refreshing recommendations.",
           "画像版本已过期，请重新读取已保存学生画像后再刷新推荐。",
-          "Versi profil telah tamat tempoh. Muat semula profil pelajar tersimpan sebelum menyegar cadangan."
+          "Versi profil telah tamat tempoh. Muat semula profil pelajar tersimpan sebelum menyegar cadangan.",
+          "畫像版本已過期，請重新讀取已儲存學生畫像後再重新整理推薦。"
         )
       );
     }
@@ -147,7 +148,8 @@ export class RecommendationsService {
         localized(
           "Smart recommendations only support personalized-profile-match mode.",
           "智能推荐仅支持 personalized-profile-match 模式。",
-          "Cadangan pintar hanya menyokong mod personalized-profile-match."
+          "Cadangan pintar hanya menyokong mod personalized-profile-match.",
+          "智能推薦僅支援 personalized-profile-match 模式。"
         )
       );
     }
@@ -309,7 +311,12 @@ export class RecommendationsService {
         code: "level-match",
         profileField: "level",
         publicDataField: "program.level",
-        message: localized("Degree level matches the saved profile.", "层次匹配已保存画像。", "Tahap pengajian sepadan dengan profil tersimpan."),
+        message: localized(
+          "Degree level matches the saved profile.",
+          "层次匹配已保存画像。",
+          "Tahap pengajian sepadan dengan profil tersimpan.",
+          "層次匹配已儲存畫像。"
+        ),
         profileValue: profile.level,
         publicDataValue: program.level
       },
@@ -317,7 +324,12 @@ export class RecommendationsService {
         code: "category-match",
         profileField: "targetCategory",
         publicDataField: "program.category",
-        message: localized("Program category matches the target direction.", "专业方向匹配目标方向。", "Kategori program sepadan dengan arah sasaran."),
+        message: localized(
+          "Program category matches the target direction.",
+          "专业方向匹配目标方向。",
+          "Kategori program sepadan dengan arah sasaran.",
+          "專業方向匹配目標方向。"
+        ),
         profileValue: profile.targetCategory,
         publicDataValue: program.category
       }
@@ -339,7 +351,12 @@ export class RecommendationsService {
       reasonsDetailed.push({
         code: "ranking-fit",
         publicDataField: "university.qsRank",
-        message: localized("University ranking adds shortlist confidence.", "院校排名提升候选可信度。", "Kedudukan universiti menambah keyakinan senarai pendek."),
+        message: localized(
+          "University ranking adds shortlist confidence.",
+          "院校排名提升候选可信度。",
+          "Kedudukan universiti menambah keyakinan senarai pendek.",
+          "院校排名提升候選可信度。"
+        ),
         publicDataValue: university.qsRank
       });
     }
@@ -410,7 +427,12 @@ export class RecommendationsService {
         code: "gpa-meets-requirement",
         profileField: "gpa",
         publicDataField: "program.requirement.gpa",
-        message: localized("GPA meets the published academic threshold.", "GPA 达到公开学术门槛。", "GPA memenuhi ambang akademik yang diterbitkan."),
+        message: localized(
+          "GPA meets the published academic threshold.",
+          "GPA 达到公开学术门槛。",
+          "GPA memenuhi ambang akademik yang diterbitkan.",
+          "GPA 達到公開學術門檻。"
+        ),
         profileValue: profileGpa,
         publicDataValue: requiredGpa
       });
@@ -422,7 +444,12 @@ export class RecommendationsService {
         code: "gpa-close",
         profileField: "gpa",
         publicDataField: "program.requirement.gpa",
-        message: localized("GPA is close to the public threshold and needs review.", "GPA 接近公开门槛，需要进一步评估。", "GPA hampir dengan ambang awam dan perlu disemak."),
+        message: localized(
+          "GPA is close to the public threshold and needs review.",
+          "GPA 接近公开门槛，需要进一步评估。",
+          "GPA hampir dengan ambang awam dan perlu disemak.",
+          "GPA 接近公開門檻，需要進一步評估。"
+        ),
         profileValue: profileGpa,
         publicDataValue: requiredGpa
       });
@@ -451,7 +478,12 @@ export class RecommendationsService {
         code: "language-meets-requirement",
         profileField: "ielts",
         publicDataField: "program.languageRequirement.ielts",
-        message: localized("IELTS meets the public language requirement.", "雅思达到公开语言要求。", "IELTS memenuhi syarat bahasa awam."),
+        message: localized(
+          "IELTS meets the public language requirement.",
+          "雅思达到公开语言要求。",
+          "IELTS memenuhi syarat bahasa awam.",
+          "雅思達到公開語言要求。"
+        ),
         profileValue: profileIelts,
         publicDataValue: requiredIelts
       });
@@ -466,7 +498,12 @@ export class RecommendationsService {
         code: "conditional-language-available",
         profileField: "acceptNoLanguage",
         publicDataField: "university.acceptNoLanguage",
-        message: localized("The saved profile accepts a conditional language pathway.", "画像接受条件录取或后补语言路径。", "Profil tersimpan menerima laluan bahasa bersyarat."),
+        message: localized(
+          "The saved profile accepts a conditional language pathway.",
+          "画像接受条件录取或后补语言路径。",
+          "Profil tersimpan menerima laluan bahasa bersyarat.",
+          "畫像接受條件錄取或後補語言路徑。"
+        ),
         profileValue: profile.acceptNoLanguage,
         publicDataValue: university.acceptNoLanguage
       });
@@ -494,7 +531,12 @@ export class RecommendationsService {
         code: "budget-within-range",
         profileField: "budgetCny",
         publicDataField: "program.annualTuitionCny",
-        message: localized("Budget covers estimated first-year tuition and living cost.", "预算可覆盖预计首年学费和生活费。", "Bajet menampung anggaran yuran dan kos hidup tahun pertama."),
+        message: localized(
+          "Budget covers estimated first-year tuition and living cost.",
+          "预算可覆盖预计首年学费和生活费。",
+          "Bajet menampung anggaran yuran dan kos hidup tahun pertama.",
+          "預算可覆蓋預計首年學費和生活費。"
+        ),
         profileValue: budget,
         publicDataValue: annualCostCny
       });
@@ -506,7 +548,12 @@ export class RecommendationsService {
         code: "budget-close",
         profileField: "budgetCny",
         publicDataField: "program.annualTuitionCny",
-        message: localized("Estimated first-year cost is close to the budget.", "预计首年成本接近预算上限。", "Anggaran kos tahun pertama hampir dengan bajet."),
+        message: localized(
+          "Estimated first-year cost is close to the budget.",
+          "预计首年成本接近预算上限。",
+          "Anggaran kos tahun pertama hampir dengan bajet.",
+          "預計首年成本接近預算上限。"
+        ),
         profileValue: budget,
         publicDataValue: annualCostCny
       });
@@ -523,12 +570,42 @@ export class RecommendationsService {
     publicDataField: SmartRecommendationRiskDto["publicDataField"]
   ): SmartRecommendationRiskDto {
     const messages: Record<SmartRecommendationRiskDto["code"], LocalizedText> = {
-      "budget-over-limit": localized("Budget is below the estimated cost.", "预算低于预计成本。", "Bajet lebih rendah daripada anggaran kos."),
-      "gpa-below-requirement": localized("GPA is below the public requirement.", "GPA 低于公开要求。", "GPA lebih rendah daripada syarat awam."),
-      "language-below-requirement": localized("Language score is below the public requirement.", "语言成绩低于公开要求。", "Skor bahasa lebih rendah daripada syarat awam."),
-      "conditional-language-required": localized("Recommendation depends on a conditional language pathway.", "该推荐依赖条件录取或后补语言路径。", "Cadangan bergantung pada laluan bahasa bersyarat."),
-      "limited-public-data": localized("Public data is limited and needs review.", "公开数据有限，需要复核。", "Data awam terhad dan perlu disemak."),
-      "source-needs-review": localized("Official source still needs review.", "官方来源仍需核验。", "Sumber rasmi masih perlu semakan.")
+      "budget-over-limit": localized(
+        "Budget is below the estimated cost.",
+        "预算低于预计成本。",
+        "Bajet lebih rendah daripada anggaran kos.",
+        "預算低於預計成本。"
+      ),
+      "gpa-below-requirement": localized(
+        "GPA is below the public requirement.",
+        "GPA 低于公开要求。",
+        "GPA lebih rendah daripada syarat awam.",
+        "GPA 低於公開要求。"
+      ),
+      "language-below-requirement": localized(
+        "Language score is below the public requirement.",
+        "语言成绩低于公开要求。",
+        "Skor bahasa lebih rendah daripada syarat awam.",
+        "語言成績低於公開要求。"
+      ),
+      "conditional-language-required": localized(
+        "Recommendation depends on a conditional language pathway.",
+        "该推荐依赖条件录取或后补语言路径。",
+        "Cadangan bergantung pada laluan bahasa bersyarat.",
+        "該推薦依賴條件錄取或後補語言路徑。"
+      ),
+      "limited-public-data": localized(
+        "Public data is limited and needs review.",
+        "公开数据有限，需要复核。",
+        "Data awam terhad dan perlu disemak.",
+        "公開資料有限，需要複核。"
+      ),
+      "source-needs-review": localized(
+        "Official source still needs review.",
+        "官方来源仍需核验。",
+        "Sumber rasmi masih perlu semakan.",
+        "官方來源仍需核驗。"
+      )
     };
     return {
       code,
@@ -536,7 +613,12 @@ export class RecommendationsService {
       profileField,
       publicDataField,
       message: messages[code],
-      suggestion: localized("Review the saved profile or adjust the shortlist condition.", "请复核画像或调整筛选条件。", "Semak profil tersimpan atau laraskan syarat senarai pendek.")
+      suggestion: localized(
+        "Review the saved profile or adjust the shortlist condition.",
+        "请复核画像或调整筛选条件。",
+        "Semak profil tersimpan atau laraskan syarat senarai pendek.",
+        "請複核畫像或調整篩選條件。"
+      )
     };
   }
 
@@ -623,11 +705,11 @@ export class RecommendationsService {
   }
 }
 
-function localized(en: string, zh: string, ms: string): LocalizedText {
+function localized(en: string, zhCN: string, ms: string, zhTW: string): LocalizedText {
   return {
     en,
     ms,
-    "zh-CN": zh,
-    "zh-TW": zh
+    "zh-CN": zhCN,
+    "zh-TW": zhTW
   };
 }
