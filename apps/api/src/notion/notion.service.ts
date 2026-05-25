@@ -20,6 +20,21 @@ export interface NotionTaskListQuery {
   limit?: number;
 }
 
+export interface NotionTaskContractValidationInput {
+  taskId: string;
+  title: string;
+  status: string;
+  taskType: string;
+}
+
+interface NotionTaskContractViolation {
+  field: string;
+  code: "missing-required-field" | "payload-mismatch";
+  message: string;
+  expected?: unknown;
+  actual?: unknown;
+}
+
 export interface NotionTaskDependency {
   taskId: string;
   reason: string;
@@ -277,10 +292,13 @@ export class NotionService {
         "GET /api/notion/health",
         "GET /api/notion/tasks",
         "GET /api/notion/tasks/:taskId",
-        "GET /api/notion/tasks/:taskId/dependency-plan"
+        "GET /api/notion/tasks/:taskId/dependency-plan",
+        "POST /api/notion/tasks/validate"
       ],
       constraints: {
         readOnly: true,
+        adminAuthRequired: true,
+        internalGovernanceApi: true,
         runtimeBusinessDatabase: false,
         taskIdPattern: TASK_ID_PATTERN.source
       }
@@ -344,6 +362,69 @@ export class NotionService {
     };
   }
 
+  async validateTaskContract(input: NotionTaskContractValidationInput) {
+    const envelope = await this.getTaskContract(input.taskId);
+    const contract = envelope.payload;
+    const violations: NotionTaskContractViolation[] = [];
+
+    this.addMismatchViolation(violations, "title", contract.title, input.title);
+    this.addMismatchViolation(violations, "status", contract.status, input.status);
+    this.addMismatchViolation(violations, "taskType", contract.taskType, input.taskType);
+
+    this.addMissingViolation(violations, "title", contract.title);
+    this.addMissingViolation(violations, "status", contract.status);
+    this.addMissingViolation(violations, "taskType", contract.taskType);
+    this.addMissingViolation(violations, "acceptanceCriteria", contract.acceptanceCriteria);
+    this.addMissingViolation(violations, "impactScope.affectedApps", contract.impactScope.affectedApps);
+    this.addMissingViolation(violations, "impactScope.affectedModules", contract.impactScope.affectedModules);
+    this.addMissingViolation(violations, "lockScope.lockScopeHint", contract.lockScope.lockScopeHint);
+    this.addMissingViolation(violations, "lockScope.riskLevel", contract.lockScope.riskLevel);
+    this.addMissingViolation(violations, "parallelGroup", contract.parallelGroup);
+
+    if (violations.length) {
+      throw new UnprocessableEntityException({
+        code: "NOTION_TASK_CONTRACT_INVALID",
+        message: "Notion task contract validation failed",
+        taskId: contract.taskId,
+        violations
+      });
+    }
+
+    return {
+      valid: true,
+      source: envelope.source,
+      schemaVersion: envelope.schemaVersion,
+      taskId: contract.taskId,
+      requiredFields: [
+        "taskId",
+        "title",
+        "status",
+        "taskType",
+        "acceptanceCriteria",
+        "impactScope.affectedApps",
+        "impactScope.affectedModules",
+        "lockScope.lockScopeHint",
+        "lockScope.riskLevel",
+        "parallelGroup"
+      ],
+      validatedFields: [
+        "snapshotExists",
+        "requestMatchesSnapshot",
+        "acceptanceCriteria",
+        "impactScope",
+        "lockScope",
+        "dependencyPlanningScope",
+        "notionIsNotRuntimeBusinessDatabase"
+      ],
+      constraints: {
+        readOnly: true,
+        adminAuthRequired: true,
+        internalGovernanceApi: true,
+        runtimeBusinessDatabase: false
+      }
+    };
+  }
+
   private resolveSnapshotRoot(): string {
     const candidates = [
       resolve(process.cwd(), "docs", "notion-snapshot"),
@@ -371,6 +452,32 @@ export class NotionService {
     if (!TASK_ID_PATTERN.test(taskId.trim().toUpperCase())) {
       throw new BadRequestException(`${fieldName} must match TASK- followed by digits`);
     }
+  }
+
+  private addMissingViolation(violations: NotionTaskContractViolation[], field: string, value: unknown): void {
+    const missing = Array.isArray(value) ? value.length === 0 : value == null || String(value).trim() === "";
+    if (!missing) return;
+    violations.push({
+      field,
+      code: "missing-required-field",
+      message: `${field} is required in the Notion task contract`
+    });
+  }
+
+  private addMismatchViolation(
+    violations: NotionTaskContractViolation[],
+    field: keyof NotionTaskContractValidationInput,
+    expected: string,
+    actual: string
+  ): void {
+    if (expected === actual.trim()) return;
+    violations.push({
+      field,
+      code: "payload-mismatch",
+      message: `${field} must match the Notion task snapshot`,
+      expected,
+      actual
+    });
   }
 
   private async readTaskSnapshot(taskId: string): Promise<string> {

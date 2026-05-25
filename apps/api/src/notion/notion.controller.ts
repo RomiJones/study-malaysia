@@ -1,14 +1,14 @@
-import { Body, Controller, Get, Inject, Param, Post, Query } from "@nestjs/common";
+import { Body, Controller, Get, Inject, Param, Post, Query, UseGuards } from "@nestjs/common";
 import { Transform } from "class-transformer";
 import { IsInt, IsOptional, IsString, Matches, Max, Min, MinLength } from "class-validator";
-import { NotionService, type NotionTaskListQuery } from "./notion.service.js";
+import { AdminAuthGuard } from "../common/guards.js";
+import { NotionService, type NotionTaskContractValidationInput, type NotionTaskListQuery } from "./notion.service.js";
 
 const TASK_ID_PATTERN = /^TASK-\d{3,}$/;
 
 function toOptionalInteger(value: unknown): number | undefined {
   if (value == null || value === "") return undefined;
-  const parsed = Number(value);
-  return Number.isInteger(parsed) ? parsed : undefined;
+  return Number(value);
 }
 
 class NotionTaskParamsDto {
@@ -16,7 +16,7 @@ class NotionTaskParamsDto {
   taskId!: string;
 }
 
-class NotionTaskListQueryDto implements NotionTaskListQuery {
+export class NotionTaskListQueryDto implements NotionTaskListQuery {
   @IsOptional()
   @IsString()
   status?: string;
@@ -41,7 +41,7 @@ class NotionTaskListQueryDto implements NotionTaskListQuery {
   limit?: number;
 }
 
-class NotionTaskContractValidationDto {
+class NotionTaskContractValidationDto implements NotionTaskContractValidationInput {
   @Matches(TASK_ID_PATTERN)
   taskId!: string;
 
@@ -58,6 +58,7 @@ class NotionTaskContractValidationDto {
   taskType!: string;
 }
 
+@UseGuards(AdminAuthGuard)
 @Controller("notion")
 export class NotionController {
   constructor(@Inject(NotionService) private readonly notionService: NotionService) {}
@@ -84,10 +85,6 @@ export class NotionController {
 
   @Post("tasks/validate")
   validateTaskContract(@Body() body: NotionTaskContractValidationDto) {
-    return {
-      valid: true,
-      taskId: body.taskId,
-      requiredFields: ["taskId", "title", "status", "taskType"]
-    };
+    return this.notionService.validateTaskContract(body);
   }
 }
