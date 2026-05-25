@@ -7,11 +7,13 @@ import {
   type InstitutionType,
   type LocalizedStringArray,
   type LocalizedText,
-  type ProgramCategory
+  type ProgramCategory,
+  type SupportedLocale
 } from "@studymy/shared";
 import { umExtraPrograms } from "./seed-um-extra.js";
 
 const localCover = (fileName: string) => `/assets/static-html/${fileName}`;
+type SeedLocalePreferenceSource = "default" | "browser" | "local-storage" | "query-param" | "user-account";
 
 const t = (en: string, ms: string, zhCN: string, zhTW: string): LocalizedText => ({
   en,
@@ -38,6 +40,8 @@ export interface SeedUser {
   account: string;
   password: string;
   displayName: string;
+  preferredLocale?: SupportedLocale;
+  localePreferenceSource?: SeedLocalePreferenceSource;
 }
 
 export interface SeedUniversity {

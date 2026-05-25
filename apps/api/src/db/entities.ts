@@ -29,6 +29,7 @@ import type {
   ProgramCategoryCode,
   ProgramRequirement,
   PublicDisplayStatus,
+  SupportedLocale,
   TuitionCurrency
 } from "@studymy/shared";
 
@@ -37,6 +38,7 @@ export type AdminMenuType = "directory" | "menu" | "action";
 export type ApplicationStatus = "draft" | "submitted" | "reviewing" | "offer" | "visa" | "done" | "closed";
 export type VisaStatus = "not-started" | "preparing" | "submitted" | "approved" | "rejected";
 export type FollowUpType = "note" | "status" | "assign" | "material" | "visa";
+export type UserLocalePreferenceSource = "default" | "browser" | "local-storage" | "query-param" | "user-account";
 
 @Entity({ name: "users" })
 export class UserEntity {
@@ -58,6 +60,15 @@ export class UserEntity {
 
   @Column({ type: "varchar", length: 120 })
   displayName!: string;
+
+  @Column({ type: "varchar", length: 10, default: "zh-CN" })
+  preferredLocale!: SupportedLocale;
+
+  @Column({ type: "varchar", length: 30, default: "default" })
+  localePreferenceSource!: UserLocalePreferenceSource;
+
+  @Column({ type: "datetime", nullable: true })
+  localePreferenceUpdatedAt!: Date | null;
 
   @CreateDateColumn()
   createdAt!: Date;

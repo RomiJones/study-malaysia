@@ -94,6 +94,9 @@ async function run() {
       method: item.method,
       account: item.account,
       displayName: item.displayName,
+      preferredLocale: item.preferredLocale || "zh-CN",
+      localePreferenceSource: item.localePreferenceSource || "default",
+      localePreferenceUpdatedAt: null,
       passwordHash: await hash(item.password, 10)
     }));
     userMap.set(item.account, saved);
