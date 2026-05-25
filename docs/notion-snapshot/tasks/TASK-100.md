@@ -10,8 +10,8 @@
 - **关联技术方案**: 技术方案
 - **实现说明**: 从父任务 TASK-067 中拆出最终构建、测试、浏览器验证、Review 和验收记录。
 - **测试计划**: 运行父任务要求的最终构建、测试、浏览器验证或 Review 命令。
-- **验证结果**: 通过。已完成当前工作树快照的集成验证：`npm run test` 通过 15 个测试套件、88 个用例；`npm run build` 通过 API、Web、Admin 和 Shared 构建，Admin 仅保留既有 chunk size 警告；`npm run verify:task041:i18n` 通过，缺失 key、硬编码可见文案和 raw API error 展示均为 0；`npm run verify:task040:browser` 修复验证脚本选择器漂移后通过，生成 22 张浏览器截图和 JSON 报告。
-- **阻塞说明**: 无当前构建、测试或浏览器验证阻塞。注意：父任务 TASK-067 的子任务 TASK-096 至 TASK-099 在本地任务快照中仍未全部标记完成，本轮只能证明当前工作树快照通过集成验证；父任务最终释放前建议在所有子任务完成后再次复跑。
+- **验证结果**: 通过。已完成当前工作树快照的集成验证：`npm run test` 通过 17 个测试套件、111 个用例；`npm run build` 通过 API、Web、Admin 和 Shared 构建，Admin 仅保留既有 chunk size 警告；`npm run verify:task041:i18n` 通过，缺失 key、硬编码可见文案和 raw API error 展示均为 0；`npm run verify:task040:browser` 通过，生成 22 张浏览器截图和 JSON 报告。
+- **阻塞说明**: 无当前构建、测试、i18n 审计或浏览器验证阻塞。注意：当前工作树仍有大量并行任务改动和其它任务开放 Review，本轮只证明当前 TASK-100 快照通过集成验证。
 
 ## 依赖任务
 
@@ -72,3 +72,25 @@
   - `npm run verify:task040:browser`：通过，输出目录 `output/playwright/task035-20260525T135103Z`，生成 22 张截图。
 - **Review 结论**: 当前 Review 快照没有 TASK-100 专属 open issue；与多语言相关的 TASK-030 历史 open issue 已被当前单测和 i18n 审计覆盖复验，但本轮不直接改写历史 Review 状态。其它历史视觉、管理端、费用和文档问题不属于 TASK-100 锁范围，已记录为非本轮阻塞。
 - **Notion 更新**: 未更新真实 Notion；本轮没有可写入的 Notion 页面 ID，仅更新本地 Notion 快照。
+
+### 2026-05-25T13:54:36.407Z - 自动状态更新
+
+- **状态**: 已失败
+- **说明**: 通过。最终 npm run test 通过 15 个套件、88 个用例；npm run build 通过 API、Web、Admin、Shared 构建，Admin 仅有既有 chunk size 警告；i18n 审计通过；浏览器验证通过并生成 22 张截图。
+
+### 2026-05-25T15:11:51.554Z - 自动状态更新
+
+- **状态**: 进行中
+- **说明**: 自动化运行 TASK-100-2026-05-25T15-11-51-548Z 已领取该任务。
+
+### 2026-05-25T23:13:39+08:00 - Codex 集成验证记录
+
+- **状态**: 已完成
+- **说明**: 已按 TASK-100 范围重新执行当前工作树快照的全量测试、构建、i18n 审计和浏览器验证。同任务历史自动化错误未复现，旧语言选择器漂移问题已由当前浏览器验证覆盖。
+- **验证命令**:
+  - `npm run test`：通过，17 个测试套件、111 个用例。
+  - `npm run build`：通过，API、Web、Admin、Shared 构建完成；Admin 仅保留既有 chunk size 警告。
+  - `npm run verify:task041:i18n`：通过，四语言 key 完整性、动态文案、硬编码可见文案和 raw API error 展示扫描均通过。
+  - `npm run verify:task040:browser`：通过，输出目录 `output/playwright/task035-20260525T151339Z`，生成 22 张截图和 JSON 报告。
+- **Review 结论**: 当前 Review 快照没有 TASK-100 专属 open issue；其它开放 Review 属于历史或并行任务范围，不在本轮锁范围内。
+- **Notion 更新**: 未更新真实 Notion；本轮没有可写入的 Notion 页面 ID，仅更新本地 TASK-100 快照。
