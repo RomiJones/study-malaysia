@@ -591,6 +591,22 @@ const statusTagType = (status: NotionTaskStatus) => {
   white-space: nowrap;
 }
 
+.notion-page__detail :deep(.el-descriptions),
+.notion-page__detail :deep(.el-descriptions__body) {
+  min-width: 0;
+  max-width: 100%;
+}
+
+.notion-page__detail :deep(.el-descriptions__table) {
+  width: 100%;
+  table-layout: fixed;
+}
+
+.notion-page__detail :deep(.el-descriptions__cell) {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
 .notion-page__detail :deep(.el-descriptions__content) {
   min-width: 0;
   word-break: break-word;
@@ -600,6 +616,11 @@ const statusTagType = (status: NotionTaskStatus) => {
   display: grid;
   grid-template-columns: minmax(260px, 0.9fr) minmax(260px, 1fr) minmax(280px, 1.1fr);
   gap: 18px;
+}
+
+.notion-detail-grid > * {
+  min-width: 0;
+  max-width: 100%;
 }
 
 .notion-section-title {
