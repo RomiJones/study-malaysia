@@ -12,6 +12,8 @@ import { ProgramsController } from "./programs/programs.controller.js";
 import { ProgramsService } from "./programs/programs.service.js";
 import { I18nController } from "./i18n/i18n.controller.js";
 import { I18nService } from "./i18n/i18n.service.js";
+import { CatalogLocalizationController } from "./i18n/catalog-localization.controller.js";
+import { CatalogLocalizationService } from "./i18n/catalog-localization.service.js";
 import { SearchController } from "./search/search.controller.js";
 import { SearchService } from "./search/search.service.js";
 import { PlannerController } from "./planner/planner.controller.js";
@@ -61,6 +63,7 @@ loadEnvFiles();
     UniversitiesController,
     ProgramsController,
     I18nController,
+    CatalogLocalizationController,
     SearchController,
     PlannerController,
     FavoritesController,
@@ -76,6 +79,7 @@ loadEnvFiles();
     UniversitiesService,
     ProgramsService,
     I18nService,
+    CatalogLocalizationService,
     SearchService,
     PlannerService,
     FavoritesService,
