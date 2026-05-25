@@ -1,4 +1,5 @@
-import { Controller, Get, Inject, Query } from "@nestjs/common";
+import { Controller, Get, Inject, Query, UseGuards } from "@nestjs/common";
+import { AdminAuthGuard } from "../common/guards.js";
 import { CatalogLocalizationService, type CatalogLocalizationQuery } from "./catalog-localization.service.js";
 
 @Controller("i18n/catalog-localization")
@@ -13,6 +14,7 @@ export class CatalogLocalizationController {
     return this.catalogLocalizationService.getContract();
   }
 
+  @UseGuards(AdminAuthGuard)
   @Get("coverage")
   coverage(@Query() query: CatalogLocalizationQuery) {
     return this.catalogLocalizationService.getCoverageReport(query || {});

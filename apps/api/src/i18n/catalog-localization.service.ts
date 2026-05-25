@@ -226,6 +226,10 @@ export class CatalogLocalizationService {
 
     for (const field of fields) {
       const value = readField(record, field.field);
+      if (value == null && !field.required) {
+        continue;
+      }
+
       if (!isLocalizedPayload(value)) {
         for (const checkedLocale of locales) {
           issues.push(this.buildIssue(entityType, record, field.field, checkedLocale, "invalid-localized-shape", "error", null));

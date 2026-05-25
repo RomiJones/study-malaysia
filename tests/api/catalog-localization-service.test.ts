@@ -2,6 +2,8 @@ import "reflect-metadata";
 import { describe, test } from "node:test";
 import assert from "node:assert/strict";
 import { BadRequestException } from "@nestjs/common";
+import { GUARDS_METADATA } from "@nestjs/common/constants";
+import { AdminAuthGuard } from "../../apps/api/src/common/guards.ts";
 import { CatalogLocalizationController } from "../../apps/api/src/i18n/catalog-localization.controller.ts";
 import { CatalogLocalizationService } from "../../apps/api/src/i18n/catalog-localization.service.ts";
 
@@ -131,6 +133,33 @@ describe("catalog localization API service", () => {
     assert.equal(report.issues[0].slug, "hidden-program");
   });
 
+  test("skips nullable optional localized fields without marking records incomplete", async () => {
+    const service = new CatalogLocalizationService(
+      repository([university({ applicationDocuments: null, chinaStudentRequirements: null })]) as any,
+      repository([]) as any
+    );
+
+    const report = await service.getCoverageReport({ entityType: "university" });
+
+    assert.equal(report.summary.scanned.universities, 1);
+    assert.equal(report.summary.issues.total, 0);
+    assert.equal(report.summary.completeRecords.universities, 1);
+  });
+
+  test("reports non-null optional fields when they are not localized payloads", async () => {
+    const service = new CatalogLocalizationService(
+      repository([university({ applicationDocuments: ["Passport"], chinaStudentRequirements: null })]) as any,
+      repository([]) as any
+    );
+
+    const report = await service.getCoverageReport({ entityType: "university", limit: "10" });
+
+    assert.equal(report.summary.issues.total, 4);
+    assert.equal(report.summary.issues.byCode["invalid-localized-shape"], 4);
+    assert.equal(report.summary.completeRecords.universities, 0);
+    assert.deepEqual(new Set(report.issues.map((issue) => issue.field)), new Set(["applicationDocuments"]));
+  });
+
   test("rejects unsupported query values with structured localized errors", async () => {
     const service = new CatalogLocalizationService(repository([]) as any, repository([]) as any);
 
@@ -181,5 +210,12 @@ describe("catalog localization API service", () => {
       summary: { scanned: { total: 0 } }
     });
     assert.deepEqual(calls, [{ entityType: "program", locale: "en" }]);
+  });
+
+  test("coverage endpoint requires admin authentication before hidden records can be queried", () => {
+    const guards = Reflect.getMetadata(GUARDS_METADATA, CatalogLocalizationController.prototype.coverage);
+
+    assert.ok(Array.isArray(guards));
+    assert.ok(guards.includes(AdminAuthGuard));
   });
 });
