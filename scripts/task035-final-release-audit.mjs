@@ -378,7 +378,7 @@ async function waitForBodyText(page, text) {
 }
 
 async function switchRuntimeLocale(page, locale) {
-  await page.locator(".shell-select").evaluate((element, nextLocale) => {
+  await page.locator(".shell-select, .language-switcher__select").first().evaluate((element, nextLocale) => {
     if (!(element instanceof HTMLSelectElement)) {
       throw new Error("Locale selector is not a select element");
     }
