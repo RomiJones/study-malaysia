@@ -44,5 +44,6 @@ export const adminApi = {
   saveDictionary: (payload: Record<string, unknown>) => unwrap(http.post("/admin/settings/dictionaries", payload)),
   logs: (params?: Record<string, unknown>) => unwrap(http.get("/admin/settings/logs", { params })),
   i18nOptions: (locale?: string) => unwrapLoose(http.get("/i18n/options", { params: locale ? { locale } : undefined })),
-  switchLocale: (payload: Record<string, unknown>) => unwrapLoose(http.post("/i18n/switch", payload))
+  switchLocale: (payload: Record<string, unknown>) => unwrapLoose(http.post("/i18n/switch", payload)),
+  recommendationContract: () => unwrapLoose(http.get("/recommendations/contract"))
 };

@@ -34,6 +34,10 @@
           <component :is="resolveIcon('Switch')" class="menu-icon" />
           <span>多语言切换</span>
         </el-menu-item>
+        <el-menu-item v-if="showSmartRecommendationShortcut" index="/smart-recommendations">
+          <component :is="resolveIcon('MagicStick')" class="menu-icon" />
+          <span>智能推荐</span>
+        </el-menu-item>
       </el-menu>
 
       <div class="admin-layout__sidebar-footer">
@@ -78,6 +82,7 @@ const route = useRoute();
 const router = useRouter();
 const auth = useAuthStore();
 const showLocalizationShortcut = computed(() => auth.hasPermission("settings:view") && !hasMenuPath(auth.menuTree, "/localization"));
+const showSmartRecommendationShortcut = computed(() => auth.hasPermission("settings:view") && !hasMenuPath(auth.menuTree, "/smart-recommendations"));
 
 const hasMenuPath = (menus: any[], path: string): boolean =>
   menus.some((menu) => menu.path === path || hasMenuPath(menu.children || [], path));
