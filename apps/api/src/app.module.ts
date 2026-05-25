@@ -14,6 +14,8 @@ import { I18nController } from "./i18n/i18n.controller.js";
 import { I18nService } from "./i18n/i18n.service.js";
 import { CatalogLocalizationController } from "./i18n/catalog-localization.controller.js";
 import { CatalogLocalizationService } from "./i18n/catalog-localization.service.js";
+import { NotionController } from "./notion/notion.controller.js";
+import { NotionService } from "./notion/notion.service.js";
 import { SearchController } from "./search/search.controller.js";
 import { SearchService } from "./search/search.service.js";
 import { PlannerController } from "./planner/planner.controller.js";
@@ -64,6 +66,7 @@ loadEnvFiles();
     ProgramsController,
     I18nController,
     CatalogLocalizationController,
+    NotionController,
     SearchController,
     PlannerController,
     FavoritesController,
@@ -80,6 +83,7 @@ loadEnvFiles();
     ProgramsService,
     I18nService,
     CatalogLocalizationService,
+    NotionService,
     SearchService,
     PlannerService,
     FavoritesService,
