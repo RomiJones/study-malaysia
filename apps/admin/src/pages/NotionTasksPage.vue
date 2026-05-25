@@ -279,15 +279,23 @@ const tasks = ref<NotionTaskContract[]>([
   createTask({
     taskId: "TASK-091",
     title: "新增需求边界和验收标准补充：Notion 管理端页面拆分",
-    status: "进行中",
+    status: "待评审",
     priority: "高",
     implementationNotes: "从父任务 TASK-063 中拆出 Notion 管理端页面、表单、列表和状态交互，只处理管理端可验证界面。",
+    validationResult: "Codex 已完成实现并返回完成状态。",
     executionRecords: [
       {
-        recordedAt: nowText(),
+        recordedAt: "2026-05-25T15:05:48.843Z",
+        status: "待评审",
+        runId: "TASK-091-2026-05-25T14-53-34-129Z",
+        summary: "Codex 已完成实现并返回完成状态。",
+        testsRun: []
+      },
+      {
+        recordedAt: "2026-05-25T14:53:34.134Z",
         status: "进行中",
         runId: "TASK-091-2026-05-25T14-53-34-129Z",
-        summary: "自动化运行已领取该任务，正在验证管理端 Notion 任务界面是否满足 TASK-091 验收。",
+        summary: "自动化运行已领取该任务。",
         testsRun: []
       }
     ]
