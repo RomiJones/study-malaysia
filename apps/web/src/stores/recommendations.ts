@@ -13,12 +13,21 @@ export const useSmartRecommendationsStore = defineStore("smartRecommendations", 
   const loading = ref(false);
   const error = ref("");
   const loadedToken = ref<string | null>(null);
+  const session = useSessionStore();
 
-  const status = computed(() => response.value?.status || "login-required");
-  const gate = computed(() => response.value?.gate || null);
-  const profileCompleteness = computed(() => response.value?.profileCompleteness || null);
+  const hasCurrentSessionResponse = computed(() => Boolean(session.token && response.value && loadedToken.value === session.token));
+  const status = computed(() => {
+    if (!session.token) return "login-required";
+    if (!hasCurrentSessionResponse.value) return "login-required";
+    return response.value?.status || "login-required";
+  });
+  const gate = computed(() => {
+    if (!session.token) return buildLoginRequiredResponse().gate;
+    return hasCurrentSessionResponse.value ? response.value?.gate || null : null;
+  });
+  const profileCompleteness = computed(() => hasCurrentSessionResponse.value ? response.value?.profileCompleteness || null : null);
   const recommendations = computed(() => {
-    if (!response.value?.gate.canShowRecommendations) return [];
+    if (!hasCurrentSessionResponse.value || !response.value?.gate.canShowRecommendations) return [];
     return response.value.recommendations;
   });
 
@@ -78,6 +87,7 @@ export const useSmartRecommendationsStore = defineStore("smartRecommendations", 
       loadedToken.value = session.token;
       error.value = "";
     } catch {
+      loadedToken.value = session.token;
       response.value = buildErrorResponse();
       error.value = "recommendation-refresh-failed";
     } finally {
@@ -119,6 +129,7 @@ function buildLoginRequiredResponse(): SmartRecommendationResponseDto {
       message: localized(
         "Sign in and complete your saved student profile before viewing personalized recommendations.",
         "请先登录并完善已保存的学生画像，再查看个性化智能推荐。",
+        "請先登入並完善已儲存的學生畫像，再查看個人化智能推薦。",
         "Log masuk dan lengkapkan profil pelajar tersimpan sebelum melihat cadangan peribadi."
       ),
       blockReasons: ["login-required", "anonymous-personalization-not-allowed"],
@@ -144,6 +155,7 @@ function buildErrorResponse(): SmartRecommendationResponseDto {
       message: localized(
         "Personalized recommendations are temporarily unavailable.",
         "个性化推荐暂时不可用。",
+        "個人化推薦暫時不可用。",
         "Cadangan peribadi tidak tersedia buat sementara."
       ),
       blockReasons: [],
@@ -155,11 +167,11 @@ function buildErrorResponse(): SmartRecommendationResponseDto {
   };
 }
 
-function localized(en: string, zh: string, ms: string): LocalizedText {
+function localized(en: string, zhCN: string, zhTW: string, ms: string): LocalizedText {
   return {
     en,
     ms,
-    "zh-CN": zh,
-    "zh-TW": zh
+    "zh-CN": zhCN,
+    "zh-TW": zhTW
   };
 }

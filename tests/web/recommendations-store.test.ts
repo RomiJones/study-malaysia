@@ -3,6 +3,7 @@ import assert from "node:assert/strict";
 import { createPinia, setActivePinia } from "pinia";
 import { API_BASE_URL } from "../../apps/web/src/api/client.ts";
 import { useSmartRecommendationsStore } from "../../apps/web/src/stores/recommendations.ts";
+import { useSessionStore } from "../../apps/web/src/stores/session.ts";
 
 const originalFetch = globalThis.fetch;
 
@@ -128,5 +129,44 @@ describe("smart recommendation store", () => {
     assert.equal((requests[0].init?.headers as Record<string, string>).Authorization, "Bearer token-2");
     assert.match(String(requests[0].init?.body), /personalized-profile-match/);
     assert.equal(smart.status, "no-match");
+  });
+
+  test("hides cached recommendations after logout or account switch", async () => {
+    localStorage.setItem("studymy_token", "token-3");
+    localStorage.setItem("studymy_user", JSON.stringify({ id: 9, role: "student", account: "student3@example.com" }));
+    globalThis.fetch = async () => new Response(JSON.stringify({
+      schemaVersion: "2026-05-25",
+      status: "ready",
+      gate: {
+        status: "ready",
+        mode: "personalized-profile-match",
+        canShowRecommendations: true,
+        requiresAuthentication: false,
+        requiresCompleteProfile: false,
+        primaryAction: "view-results",
+        message: { en: "Ready", ms: "Ready", "zh-CN": "已生成", "zh-TW": "已生成" },
+        blockReasons: [],
+        missingProfileFields: []
+      },
+      profile: null,
+      profileCompleteness: null,
+      recommendations: [
+        { score: 91, program: { id: 101 }, university: { id: 1 } }
+      ]
+    }), { status: 200 });
+
+    const smart = useSmartRecommendationsStore();
+    const session = useSessionStore();
+
+    await smart.load("en");
+    assert.equal(smart.recommendations.length, 1);
+
+    session.token = "token-4";
+    assert.equal(smart.status, "login-required");
+    assert.deepEqual(smart.recommendations, []);
+
+    session.logout();
+    assert.equal(smart.status, "login-required");
+    assert.deepEqual(smart.recommendations, []);
   });
 });
