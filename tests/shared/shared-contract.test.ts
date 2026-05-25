@@ -5,6 +5,8 @@ import {
   CORE_PROGRAM_CATEGORIES,
   DEFAULT_PROGRAM_CATEGORY_OPTIONS,
   FEE_AUDIT_STATUS_LABELS,
+  HEADER_NAVIGATION_CONTRACT,
+  LANGUAGE_SWITCHER_CONTRACT,
   OFFICIAL_SOURCE_STATUS_LABELS,
   PUBLIC_DISPLAY_STATUS_LABELS,
   SUPPORTED_LOCALES
@@ -32,5 +34,63 @@ describe("shared catalog contracts", () => {
     assert.equal(PUBLIC_DISPLAY_STATUS_LABELS.ready["zh-CN"], "可公开展示");
     assert.equal(OFFICIAL_SOURCE_STATUS_LABELS["missing-source"]["zh-CN"], "缺少官方来源");
     assert.equal(FEE_AUDIT_STATUS_LABELS["matched-official"]["zh-CN"], "与官方来源一致");
+  });
+
+  test("exposes the language switcher contract for every supported locale", () => {
+    assert.equal(LANGUAGE_SWITCHER_CONTRACT.defaultLocale, "zh-CN");
+    assert.equal(LANGUAGE_SWITCHER_CONTRACT.fallbackLocale, "en");
+    assert.equal(LANGUAGE_SWITCHER_CONTRACT.preserveRouteOnSwitch, true);
+    assert.deepEqual([...LANGUAGE_SWITCHER_CONTRACT.supportedPersistenceScopes], ["device", "user-account"]);
+    assert.deepEqual(
+      [...LANGUAGE_SWITCHER_CONTRACT.options].map((option) => option.value).sort(),
+      [...SUPPORTED_LOCALES].sort()
+    );
+
+    for (const option of LANGUAGE_SWITCHER_CONTRACT.options) {
+      assert.equal(option.enabled, true);
+      assert.equal(option.direction, "ltr");
+      assert.equal(typeof option.nativeLabel, "string");
+      assert.equal(typeof option.shortLabel, "string");
+
+      for (const locale of SUPPORTED_LOCALES) {
+        assert.equal(typeof option.label[locale], "string");
+        assert.notEqual(option.label[locale].trim(), "");
+      }
+    }
+  });
+
+  test("exposes header navigation labels and layouts for every supported locale", () => {
+    assert.deepEqual(Object.keys(HEADER_NAVIGATION_CONTRACT.localeLayouts).sort(), [...SUPPORTED_LOCALES].sort());
+    assert.equal(HEADER_NAVIGATION_CONTRACT.items.length > 0, true);
+    assert.equal(HEADER_NAVIGATION_CONTRACT.actions.length > 0, true);
+    assert.deepEqual(
+      HEADER_NAVIGATION_CONTRACT.breakpoints.map((breakpoint) => breakpoint.name),
+      ["desktop", "laptop", "tablet", "mobile"]
+    );
+
+    for (const locale of SUPPORTED_LOCALES) {
+      assert.equal(HEADER_NAVIGATION_CONTRACT.localeLayouts[locale].locale, locale);
+      assert.equal(HEADER_NAVIGATION_CONTRACT.localeLayouts[locale].preservePrimaryNavigation, true);
+      assert.equal(HEADER_NAVIGATION_CONTRACT.localeLayouts[locale].minActionTapTargetPx >= 44, true);
+    }
+
+    for (const item of HEADER_NAVIGATION_CONTRACT.items) {
+      assert.equal(item.routePath.startsWith("/"), true);
+
+      for (const locale of SUPPORTED_LOCALES) {
+        assert.equal(typeof item.label[locale], "string");
+        assert.notEqual(item.label[locale].trim(), "");
+      }
+    }
+
+    for (const action of HEADER_NAVIGATION_CONTRACT.actions) {
+      assert.equal(action.minTapTargetPx >= 44, true);
+      assert.equal(action.preservesLocaleState, true);
+
+      for (const locale of SUPPORTED_LOCALES) {
+        assert.equal(typeof action.label[locale], "string");
+        assert.notEqual(action.label[locale].trim(), "");
+      }
+    }
   });
 });
