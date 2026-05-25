@@ -1,9 +1,20 @@
 ﻿import { BadRequestException, Injectable, NotFoundException } from "@nestjs/common";
 import { InjectRepository } from "@nestjs/typeorm";
+import { createHash } from "node:crypto";
 import { Repository } from "typeorm";
-import type { ApplicationStage, LocalizedText, MaterialStatus, PlannerProfile, PlannerVisaChecklist } from "@studymy/shared";
+import {
+  SMART_RECOMMENDATION_PROFILE_COMPLETENESS_THRESHOLD,
+  SMART_RECOMMENDATION_PROFILE_COMPLETENESS_WEIGHTS,
+  SMART_RECOMMENDATION_REQUIRED_PROFILE_FIELDS,
+  type ApplicationStage,
+  type LocalizedText,
+  type MaterialStatus,
+  type PlannerProfile,
+  type PlannerVisaChecklist,
+  type SmartRecommendationProfileField
+} from "@studymy/shared";
 import { PlannerProfileEntity, PlannerTaskEntity, ProgramEntity, UniversityEntity, UserEntity } from "../db/entities.js";
-import { buildRecommendation, mapPlannerMaterials, mapPlannerProfile, mapPlannerTasks, mapVisaChecklist } from "../common/mappers.js";
+import { buildRecommendation, isReadyForPublicCatalog, mapPlannerMaterials, mapPlannerProfile, mapPlannerTasks, mapVisaChecklist } from "../common/mappers.js";
 
 interface PlannerTaskInput {
   universityId: number;
@@ -46,7 +57,7 @@ export class PlannerService {
 
   async getDashboard(userId: number) {
     const profile = await this.ensureProfile(userId);
-    const tasks = await this.taskRepository.find({ where: { userId }, order: { createdAt: "DESC" } });
+    const tasks = await this.findReadyTasks(userId);
     const materials = mapPlannerMaterials(profile);
     const visaChecklist = mapVisaChecklist(profile);
     const recommendations = await this.buildProfileRecommendations(profile);
@@ -84,6 +95,7 @@ export class PlannerService {
   async updateProfile(userId: number, payload: Partial<PlannerProfile>) {
     const profile = await this.ensureProfile(userId);
     Object.assign(profile, payload);
+    this.syncProfileRecommendationState(profile, true);
     await this.profileRepository.save(profile);
     return this.getDashboard(userId);
   }
@@ -103,10 +115,7 @@ export class PlannerService {
   }
 
   async addTask(userId: number, universityId: number, programId: number) {
-    const program = await this.programsRepository.findOneBy({ id: programId, universityId });
-    if (!program) throw new NotFoundException("Program not found");
-    const university = await this.universitiesRepository.findOneBy({ id: universityId });
-    if (!university) throw new NotFoundException("University not found");
+    await this.ensureTaskTarget(universityId, programId);
 
     const existing = await this.taskRepository.findOne({ where: { userId, universityId, programId } });
     if (existing) {
@@ -145,7 +154,7 @@ export class PlannerService {
   }
 
   async listTasks(userId: number) {
-    const tasks = await this.taskRepository.find({ where: { userId }, order: { createdAt: "DESC" } });
+    const tasks = await this.findReadyTasks(userId);
     return {
       tasks: mapPlannerTasks(tasks)
     };
@@ -276,6 +285,9 @@ export class PlannerService {
     if (payload.visaChecklist) {
       profile.visaChecklist = { ...(profile.visaChecklist || this.defaultVisaChecklist()), ...payload.visaChecklist };
     }
+    if (payload.profile) {
+      this.syncProfileRecommendationState(profile, true);
+    }
     await this.profileRepository.save(profile);
 
     const skippedTasks = await this.mergeTasks(userId, payload.tasks || []);
@@ -310,7 +322,7 @@ export class PlannerService {
   }
 
   private async mergeTasks(userId: number, taskInputs: PlannerTaskInput[]) {
-    const current = await this.taskRepository.find({ where: { userId } });
+    const current = await this.findReadyTasks(userId);
     const existingKeys = new Set(current.map((task) => `${task.universityId}:${task.programId}`));
     const additions: PlannerTaskEntity[] = [];
     const skippedTasks: Array<{ universityId: number; programId: number; reason: string }> = [];
@@ -342,11 +354,30 @@ export class PlannerService {
     }
 
     const [university, program] = await Promise.all([
-      this.universitiesRepository.findOneBy({ id: universityId }),
-      this.programsRepository.findOneBy({ id: programId, universityId })
+      this.universitiesRepository.findOneBy({ id: universityId, isPublished: true, publicDisplayStatus: "ready" }),
+      this.programsRepository.findOneBy({ id: programId, universityId, isPublished: true, publicDisplayStatus: "ready" })
     ]);
-    if (!university) throw new NotFoundException("University not found");
-    if (!program) throw new NotFoundException("Program not found");
+    if (!university || !isReadyForPublicCatalog(university)) throw new NotFoundException("University not found");
+    if (!program || !isReadyForPublicCatalog(program)) throw new NotFoundException("Program not found");
+  }
+
+  private async findReadyTasks(userId: number) {
+    const tasks = await this.taskRepository.find({
+      where: { userId },
+      relations: { university: true, program: true },
+      order: { createdAt: "DESC" }
+    });
+    return tasks.filter((task) => this.isReadyTaskTarget(task));
+  }
+
+  private isReadyTaskTarget(task: PlannerTaskEntity) {
+    return Boolean(
+      task.university &&
+        task.program &&
+        task.program.universityId === task.universityId &&
+        isReadyForPublicCatalog(task.university) &&
+        isReadyForPublicCatalog(task.program)
+    );
   }
 
   private uniqueTaskInputs(taskInputs: PlannerTaskInput[]) {
@@ -439,6 +470,13 @@ export class PlannerService {
       profile = await this.profileRepository.save(
         this.profileRepository.create({
           userId,
+          profileVersion: 1,
+          completenessStatus: "incomplete",
+          requiredProfileFields: [...SMART_RECOMMENDATION_REQUIRED_PROFILE_FIELDS],
+          missingProfileFields: [...SMART_RECOMMENDATION_REQUIRED_PROFILE_FIELDS],
+          profileSnapshotHash: "",
+          profileCompletedAt: null,
+          recommendationRefreshedAt: null,
           materialProgress: {},
           visaChecklist: this.defaultVisaChecklist()
         })
@@ -448,26 +486,66 @@ export class PlannerService {
   }
 
   private profileCompleteness(profile: PlannerProfileEntity) {
-    let score = 0;
-    if (profile.level) score += 16;
-    if (profile.targetCategory) score += 16;
-    if (profile.budgetCny > 0) score += 16;
-    if (profile.gpa > 0) score += 18;
-    if (profile.ielts > 0) score += 16;
-    if (profile.experience) score += 8;
-    if (typeof profile.acceptNoLanguage === "boolean") score += 10;
-    return Math.min(score, 100);
+    return Math.min(
+      Object.entries(SMART_RECOMMENDATION_PROFILE_COMPLETENESS_WEIGHTS).reduce((score, [field, weight]) => {
+        return this.hasRecommendationProfileField(profile, field as SmartRecommendationProfileField) ? score + weight : score;
+      }, 0),
+      100
+    );
+  }
+
+  private syncProfileRecommendationState(profile: PlannerProfileEntity, incrementVersion: boolean) {
+    const missingFields = SMART_RECOMMENDATION_REQUIRED_PROFILE_FIELDS.filter((field) => !this.hasRecommendationProfileField(profile, field));
+    const score = this.profileCompleteness(profile);
+    const isComplete = missingFields.length === 0 && score >= SMART_RECOMMENDATION_PROFILE_COMPLETENESS_THRESHOLD;
+
+    profile.requiredProfileFields = [...SMART_RECOMMENDATION_REQUIRED_PROFILE_FIELDS];
+    profile.missingProfileFields = missingFields;
+    profile.completenessStatus = isComplete ? "complete" : "incomplete";
+    profile.profileCompletedAt = isComplete ? profile.profileCompletedAt || new Date() : null;
+    if (incrementVersion) {
+      profile.profileVersion = Number(profile.profileVersion || 0) + 1;
+    }
+    profile.profileSnapshotHash = isComplete ? this.profileHash(profile) : "";
+    profile.recommendationRefreshedAt = null;
+  }
+
+  private hasRecommendationProfileField(profile: PlannerProfileEntity, field: SmartRecommendationProfileField) {
+    if (field === "level") return profile.level === "bachelor" || profile.level === "master" || profile.level === "phd";
+    if (field === "targetCategory") return typeof profile.targetCategory === "string" && profile.targetCategory.trim().length > 0;
+    if (field === "budgetCny") return Number(profile.budgetCny) > 0;
+    if (field === "gpa") return Number(profile.gpa) > 0;
+    if (field === "ielts") return Number(profile.ielts) > 0;
+    if (field === "experience") return typeof profile.experience === "string" && profile.experience.trim().length > 0;
+    return typeof profile.acceptNoLanguage === "boolean";
+  }
+
+  private profileHash(profile: PlannerProfileEntity) {
+    return createHash("sha256")
+      .update(JSON.stringify({
+        level: profile.level,
+        targetCategory: profile.targetCategory,
+        budgetCny: Number(profile.budgetCny),
+        gpa: Number(profile.gpa),
+        ielts: Number(profile.ielts),
+        experience: profile.experience,
+        acceptNoLanguage: profile.acceptNoLanguage,
+        profileVersion: profile.profileVersion
+      }))
+      .digest("hex")
+      .slice(0, 32);
   }
 
   private async buildProfileRecommendations(profile: PlannerProfileEntity) {
-    const universities = await this.universitiesRepository.find();
-    const programs = await this.programsRepository.find();
+    const universities = await this.universitiesRepository.find({ where: { isPublished: true, publicDisplayStatus: "ready" } });
+    const programs = await this.programsRepository.find({ where: { isPublished: true, publicDisplayStatus: "ready" } });
     const universityMap = new Map(universities.map((item) => [item.id, item]));
     const results = [];
 
     for (const program of programs) {
       const university = universityMap.get(program.universityId);
       if (!university) continue;
+      if (!isReadyForPublicCatalog(program) || !isReadyForPublicCatalog(university)) continue;
       if (program.level !== profile.level) continue;
       if (program.category !== profile.targetCategory) continue;
 

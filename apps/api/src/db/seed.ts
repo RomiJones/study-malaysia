@@ -1,4 +1,6 @@
 ﻿import "reflect-metadata";
+import { resolve } from "node:path";
+import { fileURLToPath } from "node:url";
 import { DataSource } from "typeorm";
 import { hash } from "bcryptjs";
 import {
@@ -16,19 +18,142 @@ import {
   DictionaryItemEntity,
   PlannerProfileEntity,
   ProgramEntity,
+  RECOMMENDATION_OPTIONAL_PROFILE_FIELDS,
   RECOMMENDATION_REQUIRED_PROFILE_FIELDS,
   RecommendationRunEntity,
   StudentApplicationEntity,
   SystemConfigEntity,
   UniversityEntity,
   UserEntity,
-  type RecommendationProfileSnapshot
+  type RecommendationProfileSnapshot,
+  type RecommendationResultSnapshot
 } from "./entities.js";
 import { seedAdminUsers, seedConfigs, seedDictionaryItems, seedMenus, seedPermissions, seedRoles } from "./admin-seed.js";
 import { seedContentBlocks, seedPrograms, seedUniversities, seedUsers } from "./seed-data.js";
 import { loadEnvFiles } from "../config/env.js";
 
 loadEnvFiles();
+
+export const SEEDED_RECOMMENDATION_GENERATED_AT = new Date("2026-05-25T00:00:00.000Z");
+export const SEEDED_RECOMMENDATION_EXPIRES_AT = new Date("2026-06-24T00:00:00.000Z");
+
+export interface DemoRecommendationSeedInput {
+  student: Pick<UserEntity, "id">;
+  profile: Pick<
+    PlannerProfileEntity,
+    "id" | "level" | "targetCategory" | "budgetCny" | "gpa" | "ielts" | "experience" | "acceptNoLanguage" | "profileVersion"
+  >;
+  program: Pick<ProgramEntity, "id" | "level" | "category" | "annualTuitionCny">;
+  university: Pick<UniversityEntity, "id" | "livingCostCny">;
+  generatedAt?: Date;
+  expiresAt?: Date;
+}
+
+export interface DemoRecommendationSeedPayload {
+  userId: number;
+  profileId: number;
+  profileVersion: number;
+  status: "generated";
+  cacheKey: string;
+  profileSnapshot: RecommendationProfileSnapshot;
+  requiredProfileFields: typeof RECOMMENDATION_REQUIRED_PROFILE_FIELDS;
+  missingProfileFields: [];
+  results: RecommendationResultSnapshot[];
+  resultCount: number;
+  generatedAt: Date;
+  expiresAt: Date;
+  auditNote: string;
+}
+
+export function buildDemoRecommendationSeedPayload(input: DemoRecommendationSeedInput): DemoRecommendationSeedPayload {
+  const generatedAt = input.generatedAt ?? SEEDED_RECOMMENDATION_GENERATED_AT;
+  const expiresAt = input.expiresAt ?? SEEDED_RECOMMENDATION_EXPIRES_AT;
+  const annualCostCny = input.program.annualTuitionCny + input.university.livingCostCny;
+  const profileSnapshot: RecommendationProfileSnapshot = {
+    level: input.profile.level,
+    targetCategory: input.profile.targetCategory,
+    budgetCny: input.profile.budgetCny,
+    gpa: Number(input.profile.gpa),
+    ielts: Number(input.profile.ielts),
+    experience: input.profile.experience,
+    acceptNoLanguage: input.profile.acceptNoLanguage
+  };
+  const result: RecommendationResultSnapshot = {
+    universityId: input.university.id,
+    programId: input.program.id,
+    score: 86,
+    annualCostCny,
+    tier: "target",
+    publicDisplayStatus: "ready",
+    reasons: {
+      en: ["Seed profile is complete", "Program matches target category"],
+      ms: ["Profil seed lengkap", "Program sepadan dengan kategori sasaran"],
+      "zh-CN": ["种子画像完整", "专业方向匹配"],
+      "zh-TW": ["種子畫像完整", "專業方向匹配"]
+    },
+    reasonsDetailed: [
+      {
+        code: "level-match",
+        profileField: "level",
+        publicDataField: "program.level",
+        message: {
+          en: "Degree level matches the saved demo profile.",
+          ms: "Tahap pengajian sepadan dengan profil demo tersimpan.",
+          "zh-CN": "学历层次匹配已保存的演示画像。",
+          "zh-TW": "學歷層次匹配已保存的演示畫像。"
+        },
+        profileValue: input.profile.level,
+        publicDataValue: input.program.level
+      },
+      {
+        code: "category-match",
+        profileField: "targetCategory",
+        publicDataField: "program.category",
+        message: {
+          en: "Program category matches the target direction.",
+          ms: "Kategori program sepadan dengan arah sasaran.",
+          "zh-CN": "专业方向匹配目标方向。",
+          "zh-TW": "專業方向匹配目標方向。"
+        },
+        profileValue: input.profile.targetCategory,
+        publicDataValue: input.program.category
+      }
+    ],
+    risks: [],
+    trace: {
+      userId: input.student.id,
+      profileVersion: String(input.profile.profileVersion),
+      profileFields: [...RECOMMENDATION_REQUIRED_PROFILE_FIELDS, ...RECOMMENDATION_OPTIONAL_PROFILE_FIELDS],
+      publicDataFields: [
+        "program.level",
+        "program.category",
+        "program.annualTuitionCny",
+        "university.livingCostCny",
+        "program.publicDisplayStatus",
+        "university.publicDisplayStatus"
+      ],
+      universityId: input.university.id,
+      programId: input.program.id,
+      generatedAt: generatedAt.toISOString()
+    }
+  };
+
+  return {
+    userId: input.student.id,
+    profileId: input.profile.id,
+    profileVersion: input.profile.profileVersion,
+    status: "generated",
+    cacheKey: `profile:${input.student.id}:${input.profile.profileVersion}:seed-demo-profile-v1`,
+    profileSnapshot,
+    requiredProfileFields: [...RECOMMENDATION_REQUIRED_PROFILE_FIELDS],
+    missingProfileFields: [],
+    results: [result],
+    resultCount: 1,
+    generatedAt,
+    expiresAt,
+    auditNote: "Seeded from a complete demo profile and one public catalog program."
+  };
+}
 
 async function run() {
   const dataSource = new DataSource({
@@ -94,7 +219,7 @@ async function run() {
 
   const userMap = new Map<string, UserEntity>();
   const profileMap = new Map<string, PlannerProfileEntity>();
-  const seededRecommendationAt = new Date("2026-05-25T00:00:00.000Z");
+  const seededRecommendationAt = SEEDED_RECOMMENDATION_GENERATED_AT;
   for (const item of seedUsers) {
     const saved = await repos.users.save(repos.users.create({
       role: item.role,
@@ -110,6 +235,13 @@ async function run() {
     if (saved.role === "student") {
       const profile = await repos.plannerProfiles.save(repos.plannerProfiles.create({
         userId: saved.id,
+        level: "master",
+        targetCategory: "it",
+        budgetCny: 80000,
+        gpa: 3,
+        ielts: 5.5,
+        experience: "0-1 years",
+        acceptNoLanguage: true,
         profileVersion: 1,
         completenessStatus: "complete",
         requiredProfileFields: [...RECOMMENDATION_REQUIRED_PROFILE_FIELDS],
@@ -170,55 +302,30 @@ async function run() {
 
   const demoStudent = userMap.get("demo@studymy.local");
   const demoProfile = profileMap.get("demo@studymy.local");
-  if (demoStudent && demoProfile) {
-    const demoProgram = savedPrograms.find((program) => program.level === demoProfile.level && program.category === demoProfile.targetCategory);
-    const demoUniversity = demoProgram
-      ? [...universityMap.values()].find((university) => university.id === demoProgram.universityId)
-      : null;
-
-    if (demoProgram && demoUniversity) {
-      const profileSnapshot: RecommendationProfileSnapshot = {
-        level: demoProfile.level,
-        targetCategory: demoProfile.targetCategory,
-        budgetCny: demoProfile.budgetCny,
-        gpa: Number(demoProfile.gpa),
-        ielts: Number(demoProfile.ielts),
-        experience: demoProfile.experience,
-        acceptNoLanguage: demoProfile.acceptNoLanguage
-      };
-      await repos.recommendationRuns.save(repos.recommendationRuns.create({
-        userId: demoStudent.id,
-        profileId: demoProfile.id,
-        profileVersion: demoProfile.profileVersion,
-        status: "generated",
-        cacheKey: `profile:${demoStudent.id}:${demoProfile.profileVersion}:seed-demo-profile-v1`,
-        profileSnapshot,
-        requiredProfileFields: [...RECOMMENDATION_REQUIRED_PROFILE_FIELDS],
-        missingProfileFields: [],
-        results: [
-          {
-            universityId: demoUniversity.id,
-            programId: demoProgram.id,
-            score: 86,
-            annualCostCny: demoProgram.annualTuitionCny + demoUniversity.livingCostCny,
-            reasons: {
-              en: ["Seed profile is complete", "Program matches target category"],
-              ms: ["Profil seed lengkap", "Program sepadan dengan kategori sasaran"],
-              "zh-CN": ["种子画像完整", "专业方向匹配"],
-              "zh-TW": ["種子畫像完整", "專業方向匹配"]
-            },
-            riskFlags: []
-          }
-        ],
-        resultCount: 1,
-        generatedAt: seededRecommendationAt,
-        expiresAt: new Date("2026-06-24T00:00:00.000Z"),
-        auditNote: "Seeded from a complete demo profile and one public catalog program."
-      }));
-      demoProfile.recommendationRefreshedAt = seededRecommendationAt;
-      await repos.plannerProfiles.save(demoProfile);
-    }
+  if (!demoStudent || !demoProfile) {
+    throw new Error("Demo recommendation seed requires demo@studymy.local user and profile.");
   }
+
+  const demoProgram = savedPrograms.find((program) => program.level === demoProfile.level && program.category === demoProfile.targetCategory);
+  if (!demoProgram) {
+    throw new Error("Demo recommendation seed requires a program matching the demo profile.");
+  }
+
+  const demoUniversity = [...universityMap.values()].find((university) => university.id === demoProgram.universityId);
+  if (!demoUniversity) {
+    throw new Error("Demo recommendation seed requires the matched program university.");
+  }
+
+  await repos.recommendationRuns.save(repos.recommendationRuns.create(buildDemoRecommendationSeedPayload({
+    student: demoStudent,
+    profile: demoProfile,
+    program: demoProgram,
+    university: demoUniversity,
+    generatedAt: seededRecommendationAt,
+    expiresAt: SEEDED_RECOMMENDATION_EXPIRES_AT
+  })));
+  demoProfile.recommendationRefreshedAt = seededRecommendationAt;
+  await repos.plannerProfiles.save(demoProfile);
 
   for (const block of seedContentBlocks) {
     await repos.content.save(repos.content.create(block));
@@ -376,7 +483,13 @@ async function run() {
   console.log("StudyMY seed completed.");
 }
 
-run().catch((error) => {
-  console.error(error);
-  process.exit(1);
-});
+function isDirectRun() {
+  return Boolean(process.argv[1] && fileURLToPath(import.meta.url) === resolve(process.argv[1]));
+}
+
+if (isDirectRun()) {
+  run().catch((error) => {
+    console.error(error);
+    process.exit(1);
+  });
+}

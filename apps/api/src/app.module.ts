@@ -10,6 +10,8 @@ import { UniversitiesController } from "./universities/universities.controller.j
 import { UniversitiesService } from "./universities/universities.service.js";
 import { ProgramsController } from "./programs/programs.controller.js";
 import { ProgramsService } from "./programs/programs.service.js";
+import { RecommendationsController } from "./recommendations/recommendations.controller.js";
+import { RecommendationsService } from "./recommendations/recommendations.service.js";
 import { I18nController } from "./i18n/i18n.controller.js";
 import { I18nService } from "./i18n/i18n.service.js";
 import { CatalogLocalizationController } from "./i18n/catalog-localization.controller.js";
@@ -64,6 +66,7 @@ loadEnvFiles();
     AuthController,
     UniversitiesController,
     ProgramsController,
+    RecommendationsController,
     I18nController,
     CatalogLocalizationController,
     NotionController,
@@ -81,6 +84,7 @@ loadEnvFiles();
     AuthService,
     UniversitiesService,
     ProgramsService,
+    RecommendationsService,
     I18nService,
     CatalogLocalizationService,
     NotionService,

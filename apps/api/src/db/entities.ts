@@ -12,7 +12,12 @@
   UpdateDateColumn,
   type Relation
 } from "typeorm";
+import {
+  SMART_RECOMMENDATION_OPTIONAL_PROFILE_FIELDS,
+  SMART_RECOMMENDATION_REQUIRED_PROFILE_FIELDS
+} from "@studymy/shared";
 import type {
+  ApplicationTier,
   ApplicationStage,
   AuthMethod,
   DegreeLevel,
@@ -30,6 +35,13 @@ import type {
   ProgramCategoryCode,
   ProgramRequirement,
   PublicDisplayStatus,
+  SmartRecommendationOptionalProfileField,
+  SmartRecommendationProfileField,
+  SmartRecommendationPublicDisplayStatus,
+  SmartRecommendationReasonDto,
+  SmartRecommendationRequiredProfileField,
+  SmartRecommendationRiskDto,
+  SmartRecommendationTraceDto,
   SupportedLocale,
   TuitionCurrency
 } from "@studymy/shared";
@@ -40,25 +52,18 @@ export type ApplicationStatus = "draft" | "submitted" | "reviewing" | "offer" | 
 export type VisaStatus = "not-started" | "preparing" | "submitted" | "approved" | "rejected";
 export type FollowUpType = "note" | "status" | "assign" | "material" | "visa";
 export type UserLocalePreferenceSource = "default" | "browser" | "local-storage" | "query-param" | "user-account";
-export type RecommendationProfileFieldKey =
-  | "level"
-  | "targetCategory"
-  | "budgetCny"
-  | "gpa"
-  | "ielts"
-  | "experience"
-  | "acceptNoLanguage";
+export type RecommendationProfileFieldKey = SmartRecommendationProfileField;
+export type RecommendationRequiredProfileFieldKey = SmartRecommendationRequiredProfileField;
+export type RecommendationOptionalProfileFieldKey = SmartRecommendationOptionalProfileField;
 export type PlannerProfileCompletenessStatus = "incomplete" | "complete" | "stale";
 export type RecommendationRunStatus = "blocked-profile-incomplete" | "generated" | "no-match" | "expired";
 
-export const RECOMMENDATION_REQUIRED_PROFILE_FIELDS: RecommendationProfileFieldKey[] = [
-  "level",
-  "targetCategory",
-  "budgetCny",
-  "gpa",
-  "ielts",
-  "experience",
-  "acceptNoLanguage"
+export const RECOMMENDATION_REQUIRED_PROFILE_FIELDS: RecommendationRequiredProfileFieldKey[] = [
+  ...SMART_RECOMMENDATION_REQUIRED_PROFILE_FIELDS
+];
+
+export const RECOMMENDATION_OPTIONAL_PROFILE_FIELDS: RecommendationOptionalProfileFieldKey[] = [
+  ...SMART_RECOMMENDATION_OPTIONAL_PROFILE_FIELDS
 ];
 
 export interface RecommendationProfileSnapshot {
@@ -67,7 +72,7 @@ export interface RecommendationProfileSnapshot {
   budgetCny: number;
   gpa: number;
   ielts: number;
-  experience: string;
+  experience?: string | null;
   acceptNoLanguage: boolean;
 }
 
@@ -76,8 +81,12 @@ export interface RecommendationResultSnapshot {
   programId: number;
   score: number;
   annualCostCny: number;
+  tier: ApplicationTier;
+  publicDisplayStatus: SmartRecommendationPublicDisplayStatus;
   reasons: LocalizedStringArray;
-  riskFlags?: string[];
+  reasonsDetailed: SmartRecommendationReasonDto[];
+  risks: SmartRecommendationRiskDto[];
+  trace: SmartRecommendationTraceDto;
 }
 
 @Entity({ name: "users" })
@@ -747,10 +756,10 @@ export class PlannerProfileEntity {
   completenessStatus!: PlannerProfileCompletenessStatus;
 
   @Column({ type: "json", nullable: true })
-  requiredProfileFields!: RecommendationProfileFieldKey[] | null;
+  requiredProfileFields!: RecommendationRequiredProfileFieldKey[] | null;
 
   @Column({ type: "json", nullable: true })
-  missingProfileFields!: RecommendationProfileFieldKey[] | null;
+  missingProfileFields!: RecommendationRequiredProfileFieldKey[] | null;
 
   @Column({ type: "varchar", length: 128, default: "" })
   profileSnapshotHash!: string;
@@ -812,10 +821,10 @@ export class RecommendationRunEntity {
   profileSnapshot!: RecommendationProfileSnapshot | null;
 
   @Column({ type: "json", nullable: true })
-  requiredProfileFields!: RecommendationProfileFieldKey[] | null;
+  requiredProfileFields!: RecommendationRequiredProfileFieldKey[] | null;
 
   @Column({ type: "json", nullable: true })
-  missingProfileFields!: RecommendationProfileFieldKey[] | null;
+  missingProfileFields!: RecommendationRequiredProfileFieldKey[] | null;
 
   @Column({ type: "json", nullable: true })
   results!: RecommendationResultSnapshot[] | null;
