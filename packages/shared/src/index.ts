@@ -1,9 +1,6 @@
-export const SUPPORTED_LOCALES = ["en", "ms", "zh-CN", "zh-TW"] as const;
+export * from "./i18n.js";
 
-export type SupportedLocale = (typeof SUPPORTED_LOCALES)[number];
-
-export type LocalizedText = Record<SupportedLocale, string>;
-export type LocalizedStringArray = Record<SupportedLocale, string[]>;
+import type { LocalizedStringArray, LocalizedText } from "./i18n.js";
 
 export const LOCAL_STATIC_HTML_ASSET_ROOT = "/assets/static-html";
 export const LOCAL_UNIVERSITY_LOGO_FALLBACK = `${LOCAL_STATIC_HTML_ASSET_ROOT}/fallback-university-logo.svg`;
