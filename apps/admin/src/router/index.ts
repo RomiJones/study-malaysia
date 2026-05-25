@@ -11,6 +11,7 @@ import ProgramsPage from "@/pages/ProgramsPage.vue";
 import ContentPage from "@/pages/ContentPage.vue";
 import ApplicationsPage from "@/pages/ApplicationsPage.vue";
 import SettingsPage from "@/pages/SettingsPage.vue";
+import LocalizationPage from "@/pages/LocalizationPage.vue";
 import AdminLayout from "@/layouts/AdminLayout.vue";
 
 const router = createRouter({
@@ -30,6 +31,7 @@ const router = createRouter({
         { path: "/universities", name: "universities", component: UniversitiesPage, meta: { title: "学校管理", permission: "school:view" } },
         { path: "/programs", name: "programs", component: ProgramsPage, meta: { title: "专业管理", permission: "program:view" } },
         { path: "/content", name: "content", component: ContentPage, meta: { title: "内容管理", permission: "content:view" } },
+        { path: "/localization", name: "localization", component: LocalizationPage, meta: { title: "多语言切换", permission: "settings:view" } },
         { path: "/applications", name: "applications", component: ApplicationsPage, meta: { title: "学生申请", permission: "application:view" } },
         { path: "/settings", name: "settings", component: SettingsPage, meta: { title: "系统设置", permission: "settings:view" } }
       ]

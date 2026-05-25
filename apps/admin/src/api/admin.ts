@@ -3,6 +3,11 @@ import { http, unwrap } from "./client";
 export type LocaleMap = { en: string; ms: string; "zh-CN": string; "zh-TW": string };
 export type LocaleArrayMap = { en: string[]; ms: string[]; "zh-CN": string[]; "zh-TW": string[] };
 
+const unwrapLoose = async (promise: Promise<any>) => {
+  const response = await promise;
+  return response.data?.data ?? response.data;
+};
+
 export const adminApi = {
   login: (payload: { username: string; password: string }) => unwrap(http.post("/admin/auth/login", payload)),
   me: () => unwrap(http.get("/admin/auth/me")),
@@ -37,5 +42,7 @@ export const adminApi = {
   saveConfig: (payload: Record<string, unknown>) => unwrap(http.post("/admin/settings/configs", payload)),
   dictionaries: (dictType?: string) => unwrap(http.get("/admin/settings/dictionaries", { params: dictType ? { dictType } : undefined })),
   saveDictionary: (payload: Record<string, unknown>) => unwrap(http.post("/admin/settings/dictionaries", payload)),
-  logs: (params?: Record<string, unknown>) => unwrap(http.get("/admin/settings/logs", { params }))
+  logs: (params?: Record<string, unknown>) => unwrap(http.get("/admin/settings/logs", { params })),
+  i18nOptions: (locale?: string) => unwrapLoose(http.get("/i18n/options", { params: locale ? { locale } : undefined })),
+  switchLocale: (payload: Record<string, unknown>) => unwrapLoose(http.post("/i18n/switch", payload))
 };

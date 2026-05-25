@@ -30,6 +30,10 @@
             <span>{{ menu.title }}</span>
           </el-menu-item>
         </template>
+        <el-menu-item v-if="showLocalizationShortcut" index="/localization">
+          <component :is="resolveIcon('Switch')" class="menu-icon" />
+          <span>多语言切换</span>
+        </el-menu-item>
       </el-menu>
 
       <div class="admin-layout__sidebar-footer">
@@ -65,6 +69,7 @@
 </template>
 
 <script setup lang="ts">
+import { computed } from "vue";
 import { useRoute, useRouter } from "vue-router";
 import { useAuthStore } from "@/stores/auth";
 import { resolveIcon } from "@/utils/icons";
@@ -72,6 +77,10 @@ import { resolveIcon } from "@/utils/icons";
 const route = useRoute();
 const router = useRouter();
 const auth = useAuthStore();
+const showLocalizationShortcut = computed(() => auth.hasPermission("settings:view") && !hasMenuPath(auth.menuTree, "/localization"));
+
+const hasMenuPath = (menus: any[], path: string): boolean =>
+  menus.some((menu) => menu.path === path || hasMenuPath(menu.children || [], path));
 
 const logout = () => {
   auth.logout();
