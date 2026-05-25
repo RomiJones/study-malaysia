@@ -237,6 +237,13 @@ export class CatalogLocalizationService {
         continue;
       }
 
+      if (hasUnsupportedLocaleKey(value) || (!hasSupportedLocaleKey(value) && hasAnyPayloadValue(value))) {
+        for (const checkedLocale of locales) {
+          issues.push(this.buildIssue(entityType, record, field.field, checkedLocale, "invalid-localized-shape", "error", null));
+        }
+        continue;
+      }
+
       const shouldRequireLocaleContent = field.required || hasAnyLocalizedValue(value);
 
       for (const checkedLocale of locales) {
@@ -425,6 +432,22 @@ function readField(record: CatalogRecord, field: string): unknown {
 
 function isLocalizedPayload(value: unknown): value is LocalizedText | LocalizedStringArray {
   return Boolean(value && typeof value === "object" && !Array.isArray(value));
+}
+
+function hasUnsupportedLocaleKey(value: LocalizedText | LocalizedStringArray): boolean {
+  return Object.keys(value).some((key) => !SUPPORTED_LOCALES.includes(key as SupportedLocale));
+}
+
+function hasSupportedLocaleKey(value: LocalizedText | LocalizedStringArray): boolean {
+  return Object.keys(value).some((key) => SUPPORTED_LOCALES.includes(key as SupportedLocale));
+}
+
+function hasAnyPayloadValue(value: LocalizedText | LocalizedStringArray): boolean {
+  return Object.values(value).some((raw) => {
+    if (Array.isArray(raw)) return raw.some((item) => Boolean(String(item || "").trim()));
+    if (typeof raw === "string") return Boolean(raw.trim());
+    return raw != null;
+  });
 }
 
 function localeSamples(

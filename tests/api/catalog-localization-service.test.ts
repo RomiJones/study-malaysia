@@ -171,6 +171,32 @@ describe("catalog localization API service", () => {
     );
   });
 
+  test("reports invalid shape for optional localized arrays with unsupported locale keys", async () => {
+    const service = new CatalogLocalizationService(
+      repository([
+        university({
+          facilities: { foo: ["Library"] }
+        })
+      ]) as any,
+      repository([]) as any
+    );
+
+    const report = await service.getCoverageReport({ entityType: "university", limit: "10" });
+
+    assert.equal(report.summary.issues.total, 4);
+    assert.equal(report.summary.issues.byCode["invalid-localized-shape"], 4);
+    assert.equal(report.summary.completeRecords.universities, 0);
+    assert.deepEqual(
+      report.issues.map((issue) => `${issue.field}:${issue.locale}:${issue.code}`).sort(),
+      [
+        "facilities:en:invalid-localized-shape",
+        "facilities:ms:invalid-localized-shape",
+        "facilities:zh-CN:invalid-localized-shape",
+        "facilities:zh-TW:invalid-localized-shape"
+      ]
+    );
+  });
+
   test("skips optional localized arrays when every locale is empty", async () => {
     const service = new CatalogLocalizationService(
       repository([
