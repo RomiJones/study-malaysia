@@ -9,6 +9,8 @@
     "start": "node dist/main.js",
     "seed": "tsx src/db/seed.ts",
     "import:official": "tsx src/db/import-official-directory.ts",
+    "import:usm:undergraduate": "tsx src/db/import-usm-undergraduate-official.ts",
+    "verify:usm:undergraduate": "tsx src/db/import-usm-undergraduate-official.ts --verify-only",
     "extract:static": "tsx src/db/extract-static-html.ts",
     "import:static": "tsx src/db/import-static-html.ts",
     "check:static": "tsx src/db/verify-static-html.ts"

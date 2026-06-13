@@ -1,5 +1,8 @@
 import { describe, test } from "node:test";
 import assert from "node:assert/strict";
+import { existsSync, mkdtempSync, rmSync, writeFileSync } from "node:fs";
+import { tmpdir } from "node:os";
+import { join } from "node:path";
 import {
   compareDbStats,
   createCatalogDataSource,
@@ -10,6 +13,7 @@ import {
 import { ProgramEntity, UniversityEntity } from "../../apps/api/src/db/entities.ts";
 import {
   DEFAULT_STATIC_CATALOG_LAYER,
+  DEFAULT_STATIC_HTML_PATH,
   extractStaticCatalog,
   STATIC_HTML_EXPECTED_UM_BASE_STATS,
   STATIC_HTML_EXPECTED_LAYER_STATS,
@@ -35,7 +39,71 @@ describe("static HTML import statistics", () => {
     assert.equal(STATIC_HTML_EXPECTED_STATS.readyProgramCount, 239);
   });
 
-  test("extracts merged catalog data by default", () => {
+  test("extracts the merged layer by default from a portable fixture", () => {
+    const fixtureDirectory = mkdtempSync(join(tmpdir(), "studymy-static-catalog-"));
+    const fixturePath = join(fixtureDirectory, "catalog.html");
+    writeFileSync(
+      fixturePath,
+      `<!doctype html><script>
+const universitiesBase = [{
+  id: 1,
+  name: "甲大学",
+  nameEn: "Alpha University",
+  shortName: "AU",
+  website: "https://alpha.example.edu",
+  type: "public",
+  uniType: "research",
+  programs: [{
+    id: 1,
+    name: "计算机科学学士",
+    nameEn: "Bachelor of Computer Science",
+    level: "bachelor",
+    category: "it",
+    publicDisplayStatus: "ready",
+    officialSourceStatus: "official-verified",
+    officialSourceUrl: "https://alpha.example.edu/program",
+    officialFeeSourceUrl: "https://alpha.example.edu/fee",
+    officialTuitionMYR: 10000,
+    officialIntake: "October",
+    intake: ["October"]
+  }]
+}];
+const universitiesSupplement = [{
+  id: 2,
+  name: "乙大学",
+  nameEn: "Beta University",
+  shortName: "BU",
+  website: "https://beta.example.edu",
+  type: "private",
+  uniType: "comprehensive",
+  programs: [{
+    id: 2,
+    name: "商业硕士",
+    nameEn: "Master of Business",
+    level: "master",
+    category: "business",
+    publicDisplayStatus: "needs-review"
+  }]
+}];
+const officialUniversityPatches = {};
+</script>`,
+      "utf8"
+    );
+
+    const catalog = extractStaticCatalog(fixturePath);
+    rmSync(fixtureDirectory, { recursive: true, force: true });
+
+    assert.equal(catalog.layer, "merged");
+    assert.equal(catalog.stats.universityCount, 2);
+    assert.equal(catalog.stats.programCount, 2);
+    assert.equal(catalog.stats.readyProgramCount, 1);
+    assert.equal(catalog.layerReports.base.stats.universityCount, 1);
+    assert.equal(catalog.layerReports.supplement.stats.universityCount, 1);
+  });
+
+  test("validates the full legacy static baseline when the source artifact is available", {
+    skip: !existsSync(process.env.STATIC_HTML_PATH || DEFAULT_STATIC_HTML_PATH)
+  }, () => {
     const catalog = extractStaticCatalog();
 
     assert.equal(catalog.layer, "merged");

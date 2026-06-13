@@ -1,0 +1,408 @@
+[
+  {
+    "url": "https://admission.usm.my/index.php/course-ug-international/us6145004-bachelor-of-education-honours-tesol",
+    "code": "US6145004",
+    "name": "Bachelor of Education (TESOL) with Honours",
+    "durationOfficial": "4 Years / 8 Semester",
+    "mediumInstruction": "English Language",
+    "semesterOffered": "Semester 1 (October)",
+    "ieltsMinimum": 6.0,
+    "interviewRequired": true,
+    "feeRows": [
+      {
+        "label": "Total Tuition Fees",
+        "value": "13,750.00"
+      },
+      {
+        "label": "Per semester",
+        "value": "1,718.75"
+      },
+      {
+        "label": "Per year",
+        "value": "3,437.50"
+      },
+      {
+        "label": "Recurrent Fee (Payable every semester)",
+        "value": "112.50"
+      },
+      {
+        "label": "Non-Recurrent Fee (Payable upon registration)",
+        "value": "1,350.00"
+      }
+    ],
+    "courseSectionCount": 4,
+    "careerCount": 6,
+    "careers": [
+      "Teachers/ educators in government or private schools",
+      "Lecturers/ assistant lecturers/ tutors/ teachers in public and private higher education institutions",
+      "Translators",
+      "Editors",
+      "Book writers",
+      "Event organizers/Speakers"
+    ],
+    "csvTotalTuition": "13750.0",
+    "csvWelfareFee": "112.5",
+    "csvRegistrationFee": "1350.0"
+  },
+  {
+    "url": "https://admission.usm.my/index.php/course-ug-international/us6212001-bachelor-of-music-honours",
+    "code": "US6212001",
+    "name": "Bachelor of Music with Honours",
+    "durationOfficial": "Minimum 7 semesters (3 1/2 years) / Maximum 12 semesters (6 years)",
+    "mediumInstruction": "English Language",
+    "semesterOffered": "Semester 1 (October)",
+    "ieltsMinimum": 5.0,
+    "interviewRequired": true,
+    "feeRows": [
+      {
+        "label": "Total Tuition Fees",
+        "value": "10,937.50"
+      },
+      {
+        "label": "Per semester",
+        "value": "1,562.50"
+      },
+      {
+        "label": "Per year",
+        "value": "3,125.00"
+      },
+      {
+        "label": "Recurrent Fee (Payable every semester)",
+        "value": "112.50"
+      },
+      {
+        "label": "Non-Recurrent Fee (Payable upon registration)",
+        "value": "1,325.00"
+      }
+    ],
+    "courseSectionCount": 3,
+    "careerCount": 15,
+    "careers": [
+      "Music Educator",
+      "Musician",
+      "Composer",
+      "Sound Engineer",
+      "Music Arranger",
+      "Private Music Educators",
+      "Arts Administrator",
+      "Music Producer",
+      "Music Consultant",
+      "Production Manager",
+      "Television Production Assistant",
+      "Recording Studios and Music Production Film and Game Scoring (soundtracks, background music)",
+      "Live Events and Concert Management",
+      "Music Education and Workshops",
+      "Streaming Services and Digital Music Platforms"
+    ],
+    "csvTotalTuition": "10937.5",
+    "csvWelfareFee": "112.5",
+    "csvRegistrationFee": "1325.0"
+  },
+  {
+    "url": "https://admission.usm.my/index.php/course-ug-international/us6345001-bachelor-of-management-honours-finance-international-business-marketing-operations-management-strategy-and-organisational-management-islamic-finance-business-analytics",
+    "code": "US6345001",
+    "name": "Bachelor of Management with Honours",
+    "durationOfficial": "3 1/2 Years / 7 Semesters",
+    "mediumInstruction": "English Language",
+    "semesterOffered": "Semester 1 (October) & Semester 2 (March)",
+    "ieltsMinimum": 5.0,
+    "interviewRequired": true,
+    "feeRows": [
+      {
+        "label": "Total Tuition Fees",
+        "value": "16,000.00"
+      },
+      {
+        "label": "Per semester",
+        "value": "2,285.71"
+      },
+      {
+        "label": "Per year",
+        "value": "4,571.42"
+      },
+      {
+        "label": "Recurrent Fee (Payable every semester)",
+        "value": "112.50"
+      },
+      {
+        "label": "Non-Recurrent Fee (Payable upon registration)",
+        "value": "1,325.00"
+      }
+    ],
+    "courseSectionCount": 4,
+    "careerCount": 0,
+    "careers": [],
+    "csvTotalTuition": "16000.0",
+    "csvWelfareFee": "112.5",
+    "csvRegistrationFee": "1325.0"
+  },
+  {
+    "url": "https://admission.usm.my/index.php/course-ug-international/us6344001-bachelor-of-accounting-honours",
+    "code": "US6344001",
+    "name": "Bachelor of Accounting with Honours",
+    "durationOfficial": "3 1/2 tahun / 7 semester",
+    "mediumInstruction": "English Language",
+    "semesterOffered": "Semester 1 (October)",
+    "ieltsMinimum": 5.0,
+    "interviewRequired": true,
+    "feeRows": [
+      {
+        "label": "Total Tuition Fees",
+        "value": "18,000.00"
+      },
+      {
+        "label": "Per semester",
+        "value": "2,250.00"
+      },
+      {
+        "label": "Per year",
+        "value": "4,500.00"
+      },
+      {
+        "label": "Recurrent Fee (Payable every semester)",
+        "value": "112.50"
+      },
+      {
+        "label": "Non-Recurrent Fee (Payable upon registration)",
+        "value": "1,325.00"
+      }
+    ],
+    "courseSectionCount": 4,
+    "careerCount": 0,
+    "careers": [],
+    "csvTotalTuition": "18000.0",
+    "csvWelfareFee": "112.5",
+    "csvRegistrationFee": "1325.0"
+  },
+  {
+    "url": "https://admission.usm.my/index.php/course-ug-international/us6314001-bachelor-of-economics-honours",
+    "code": "US6314001",
+    "name": "Bachelor of Economics with Honours",
+    "durationOfficial": "4 Tahun / 8 Semester",
+    "mediumInstruction": "Lectures will be mainly delivered in English Examination : Bilingual (English & Bahasa Malaysia)",
+    "semesterOffered": "Semester 1 (October)",
+    "ieltsMinimum": 5.0,
+    "interviewRequired": true,
+    "feeRows": [
+      {
+        "label": "Total Tuition Fees",
+        "value": "15,000.00"
+      },
+      {
+        "label": "Per semester",
+        "value": "1,875.00"
+      },
+      {
+        "label": "Per year",
+        "value": "3,750.00"
+      },
+      {
+        "label": "Recurrent Fee (Payable every semester)",
+        "value": "112.50"
+      },
+      {
+        "label": "Non-Recurrent Fee (Payable upon registration)",
+        "value": "1,325.00"
+      }
+    ],
+    "courseSectionCount": 4,
+    "careerCount": 0,
+    "careers": [],
+    "csvTotalTuition": "15000.0",
+    "csvWelfareFee": "112.5",
+    "csvRegistrationFee": "1325.0"
+  },
+  {
+    "url": "https://admission.usm.my/index.php/course-ug-international/us6222002-bachelor-of-arts-honours-english-for-professionals",
+    "code": "US6222002",
+    "name": "Bachelor of Arts in English For Professionals with Honours",
+    "durationOfficial": "3 Years / 6 Semester",
+    "mediumInstruction": "English Language",
+    "semesterOffered": "Semester 1 (October) & Semester 2 (March)",
+    "ieltsMinimum": 5.0,
+    "interviewRequired": true,
+    "feeRows": [
+      {
+        "label": "Total Tuition Fees",
+        "value": "12,750.00"
+      },
+      {
+        "label": "Per semester",
+        "value": "2,125.00"
+      },
+      {
+        "label": "Per year",
+        "value": "4,250.00"
+      },
+      {
+        "label": "Recurrent Fee (Payable every semester)",
+        "value": "112.50"
+      },
+      {
+        "label": "Non-Recurrent Fee (Payable upon registration)",
+        "value": "1,325.00"
+      }
+    ],
+    "courseSectionCount": 3,
+    "careerCount": 5,
+    "careers": [
+      "Human Resource",
+      "Teaching",
+      "Entrepreneur",
+      "Government agencies",
+      "Private sectors"
+    ],
+    "csvTotalTuition": "12750.0",
+    "csvWelfareFee": "112.5",
+    "csvRegistrationFee": "1325.0"
+  },
+  {
+    "url": "https://admission.usm.my/index.php/course-ug-international/us6442002-bachelor-of-science-honours-chemistry",
+    "code": "US6442002",
+    "name": "Bachelor of Science in Chemistry with Honours",
+    "durationOfficial": "4 Years / 8 Semester",
+    "mediumInstruction": "English Language",
+    "semesterOffered": "Semester I (October) Semester II (March)",
+    "ieltsMinimum": 5.0,
+    "interviewRequired": true,
+    "feeRows": [
+      {
+        "label": "Total Tuition Fees",
+        "value": "13,750.00"
+      },
+      {
+        "label": "Per semester",
+        "value": "1,718.75"
+      },
+      {
+        "label": "Per year",
+        "value": "3,437.50"
+      },
+      {
+        "label": "Recurrent Fee (Payable every semester)",
+        "value": "112.50"
+      },
+      {
+        "label": "Non-Recurrent Fee (Payable upon registration)",
+        "value": "1,325.00"
+      }
+    ],
+    "courseSectionCount": 4,
+    "careerCount": 12,
+    "careers": [
+      "Materials Scientist",
+      "Manufacturing",
+      "Junior Engineer",
+      "QA Scientist",
+      "R&D Scientist",
+      "Safety Officer",
+      "Research Officer",
+      "Science Officer",
+      "Chemical Industry",
+      "Oil and gas industry",
+      "Government Agencies",
+      "Food industry"
+    ],
+    "csvTotalTuition": "13750.0",
+    "csvWelfareFee": "112.5",
+    "csvRegistrationFee": "1325.0"
+  },
+  {
+    "url": "https://admission.usm.my/index.php/course-ug-international/us6441001-bachelor-of-science-honours-physics",
+    "code": "US6441001",
+    "name": "Bachelor of Science in Physics with Honours",
+    "durationOfficial": "4 Years / 8 Semester",
+    "mediumInstruction": "English Language",
+    "semesterOffered": "Semester 1 (October)",
+    "ieltsMinimum": 5.0,
+    "interviewRequired": true,
+    "feeRows": [
+      {
+        "label": "Total Tuition Fees",
+        "value": "13,750.00"
+      },
+      {
+        "label": "Per semester",
+        "value": "1,718.75"
+      },
+      {
+        "label": "Per year",
+        "value": "3,437.50"
+      },
+      {
+        "label": "Recurrent Fee (Payable every semester)",
+        "value": "112.50"
+      },
+      {
+        "label": "Non-Recurrent Fee (Payable upon registration)",
+        "value": "1,325.00"
+      }
+    ],
+    "courseSectionCount": 4,
+    "careerCount": 13,
+    "careers": [
+      "Physicist – R&D",
+      "Semiconductor Engineer",
+      "Photonics Engineer",
+      "Biomedical Engineer",
+      "High School Physics Teacher",
+      "Science Officer",
+      "Research Officer",
+      "Data Analyst",
+      "Government agencies",
+      "Academia & Education",
+      "Manufacturing & Industrial",
+      "Telecommunications & Electronics",
+      "Tech Companies"
+    ],
+    "csvTotalTuition": "13750.0",
+    "csvWelfareFee": "112.5",
+    "csvRegistrationFee": "1325.0"
+  },
+  {
+    "url": "https://admission.usm.my/index.php/course-ug-international/us6461004-bachelor-of-science-honours-mathematics",
+    "code": "US6461004",
+    "name": "Bachelor of Science in Mathematics with Honours",
+    "durationOfficial": "4 Year / 8 Semester",
+    "mediumInstruction": "English Language",
+    "semesterOffered": "Semester I (October) Semester II (March)",
+    "ieltsMinimum": 5.0,
+    "interviewRequired": false,
+    "feeRows": [
+      {
+        "label": "Total Tuition Fees",
+        "value": "13,750.00"
+      },
+      {
+        "label": "Per semester",
+        "value": "1,718.75"
+      },
+      {
+        "label": "Per year",
+        "value": "3,437.50"
+      },
+      {
+        "label": "Recurrent Fee (Payable every semester)",
+        "value": "112.50"
+      },
+      {
+        "label": "Non-Recurrent Fee (Payable upon registration)",
+        "value": "1,325.00"
+      }
+    ],
+    "courseSectionCount": 4,
+    "careerCount": 7,
+    "careers": [
+      "Engineer Executive",
+      "Statistical Process Control Engineer",
+      "Customer Service Manager",
+      "Lecturer",
+      "Semiconductor",
+      "Bank",
+      "Education"
+    ],
+    "csvTotalTuition": "13750.0",
+    "csvWelfareFee": "112.5",
+    "csvRegistrationFee": "1325.0"
+  }
+]
