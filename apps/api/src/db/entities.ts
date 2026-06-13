@@ -597,7 +597,7 @@ export class ProgramEntity {
   @Column({ type: "int" })
   annualTuitionCny!: number;
 
-  @Column({ type: "int", nullable: true })
+  @Column({ type: "decimal", precision: 12, scale: 2, nullable: true })
   tuitionAmount!: number | null;
 
   @Column({ type: "varchar", length: 20, default: "CNY" })

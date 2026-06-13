@@ -21,6 +21,7 @@ const localizedFormatText = {
   en: {
     officialPageFallback: "Refer to the official university page",
     officialConfirmationFallback: "Pending official confirmation",
+    officialSourceOriginal: "Official source text",
     notAvailableForInternational: "Not applicable to international students",
     yes: "Yes",
     no: "No",
@@ -39,6 +40,7 @@ const localizedFormatText = {
   ms: {
     officialPageFallback: "Rujuk halaman rasmi universiti",
     officialConfirmationFallback: "Menunggu pengesahan rasmi",
+    officialSourceOriginal: "Teks sumber rasmi",
     notAvailableForInternational: "Tidak terpakai untuk pelajar antarabangsa",
     yes: "Ya",
     no: "Tidak",
@@ -57,6 +59,7 @@ const localizedFormatText = {
   "zh-CN": {
     officialPageFallback: OFFICIAL_PAGE_FALLBACK,
     officialConfirmationFallback: OFFICIAL_CONFIRMATION_FALLBACK,
+    officialSourceOriginal: "官方来源原文",
     notAvailableForInternational: NOT_AVAILABLE_FOR_INTERNATIONAL,
     yes: "是",
     no: "否",
@@ -75,6 +78,7 @@ const localizedFormatText = {
   "zh-TW": {
     officialPageFallback: "以院校官方頁面為準",
     officialConfirmationFallback: "待官方確認",
+    officialSourceOriginal: "官方來源原文",
     notAvailableForInternational: "不適用國際學生",
     yes: "是",
     no: "否",
@@ -611,6 +615,21 @@ export function officialConfirmationFallback(locale?: SupportedLocale): string {
   return formatText("officialConfirmationFallback", locale);
 }
 
+export function formatVerifiedOfficialText(
+  value: unknown,
+  status?: OfficialSourceStatus | null,
+  fallback?: string,
+  locale?: SupportedLocale
+): string {
+  const normalizedLocale = normalizeLocale(locale);
+  const actualFallback = fallback ?? officialPageFallback(normalizedLocale);
+  const formatted = formatOfficialNote(value, actualFallback, normalizedLocale);
+  if (formatted !== actualFallback) return formatted;
+  if (status !== "official-verified") return actualFallback;
+  const original = cleanDisplayText(value, "", "en");
+  return original ? `${formatText("officialSourceOriginal", normalizedLocale)}: ${original}` : actualFallback;
+}
+
 export function notAvailableForInternational(locale?: SupportedLocale): string {
   return formatText("notAvailableForInternational", locale);
 }
@@ -928,7 +947,7 @@ export function formatProgramLanguage(program: ProgramDisplayFields, fallback?: 
   const actualFallback = fallback ?? officialPageFallback(locale);
   if (program.publicDisplayStatus === "not-available-for-international") return notAvailableForInternational(locale);
   const officialText = cleanDisplayText(program.officialLanguageRequirement, "", locale);
-  const match = officialText.match(/IELTS(?:\s*\(Academic\)|\s+Academic)?(?:\s*Band)?\s*(\d+(?:\.\d+)?)/i);
+  const match = officialText.match(/IELTS(?:\/IELTS Online|\s*\(Academic\)|\s+Academic)?(?:\s+minimum)?(?:\s*Band)?\s*(\d+(?:\.\d+)?)/i);
   if (match) return `IELTS ${match[1]}+`;
   if (officialText) return normalizeAcademicText(officialText, actualFallback, locale);
   return formatIelts(program.languageRequirement) || actualFallback;

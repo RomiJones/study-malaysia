@@ -11,6 +11,7 @@ import {
   formatProgramIntake,
   formatProgramLanguage,
   formatProgramTuition,
+  formatVerifiedOfficialText,
   formatRuntimeDisplayText,
   normalizeAcademicText,
   officialPageFallback,
@@ -62,6 +63,18 @@ describe("web display format helpers", () => {
     assert.equal(formatProgramIntake(program()), OFFICIAL_PAGE_FALLBACK);
     assert.equal(formatProgramLanguage(program()), OFFICIAL_PAGE_FALLBACK);
     assert.equal(formatProgramLanguage(program({ officialLanguageRequirement: "IELTS (Academic) Band 6.0" })), "IELTS 6.0+");
+    assert.equal(formatProgramLanguage(program({ officialLanguageRequirement: "IELTS/IELTS Online minimum Band 5.0" }), "fallback", "zh-CN"), "IELTS 5.0+");
+  });
+
+  test("shows verified official source text instead of discarding untranslated evidence", () => {
+    assert.equal(
+      formatVerifiedOfficialText("Minimum CGPA 3.00.", "official-verified", "fallback", "zh-CN"),
+      "官方来源原文: Minimum CGPA 3.00."
+    );
+    assert.equal(
+      formatVerifiedOfficialText("Minimum CGPA 3.00.", "needs-review", "fallback", "zh-CN"),
+      "fallback"
+    );
   });
 
   test("formats official source status labels for public pages", () => {

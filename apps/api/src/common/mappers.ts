@@ -129,12 +129,13 @@ export function mapUniversity(entity: UniversityEntity): UniversityListItem {
 export function mapProgram(entity: ProgramEntity): ProgramListItem {
   const officialFeeAuditStatus: FeeAuditStatus = entity.officialFeeAuditStatus || "pending-review";
   const tuitionCurrency: TuitionCurrency = entity.tuitionCurrency || (entity.officialTuitionMYR ? "MYR" : "CNY");
+  const tuitionAmount = entity.tuitionAmount == null ? null : Number(entity.tuitionAmount);
   const tuitionDisplay =
     entity.tuitionDisplay ||
     entity.listTuitionText ||
     (entity.officialTuitionMYR ? `RM ${entity.officialTuitionMYR.toLocaleString("en-US")}` : `CNY ${entity.annualTuitionCny.toLocaleString("en-US")} / year`);
   const tuitionInfo: TuitionInfo = {
-    amount: entity.tuitionAmount ?? (tuitionCurrency === "MYR" ? entity.officialTuitionMYR : entity.annualTuitionCny),
+    amount: tuitionAmount ?? (tuitionCurrency === "MYR" ? entity.officialTuitionMYR : entity.annualTuitionCny),
     currency: tuitionCurrency,
     displayText: tuitionDisplay,
     officialAmountMYR: entity.officialTuitionMYR ?? null,
@@ -203,7 +204,7 @@ export function mapProgram(entity: ProgramEntity): ProgramListItem {
     durationYears: entity.durationYears,
     durationOfficial: entity.durationOfficial || `${Number(entity.durationYears)} years`,
     annualTuitionCny: entity.annualTuitionCny,
-    tuitionAmount: entity.tuitionAmount ?? null,
+    tuitionAmount,
     tuitionCurrency,
     tuitionDisplay,
     officialTuitionMYR: entity.officialTuitionMYR ?? null,

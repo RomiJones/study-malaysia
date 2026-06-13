@@ -506,6 +506,7 @@ import {
   formatProgramIntake,
   formatProgramLanguage,
   formatProgramTuition,
+  formatVerifiedOfficialText,
   formatRuntimeDisplayText,
   officialConfirmationFallback,
   officialPageFallback,
@@ -874,7 +875,12 @@ function intakeLabel(program: ProgramListItem | ProgramCatalogDetail) {
 }
 
 function tuitionNoteLabel(program: ProgramCatalogDetail) {
-  return formatOfficialNote(program.tuitionInfo?.note, officialPageFallback(currentLocale.value), currentLocale.value);
+  return formatVerifiedOfficialText(
+    program.tuitionInfo?.note,
+    program.officialSourceStatus,
+    officialPageFallback(currentLocale.value),
+    currentLocale.value
+  );
 }
 
 function gpaLabel(program: ProgramCatalogDetail) {
@@ -883,19 +889,49 @@ function gpaLabel(program: ProgramCatalogDetail) {
 }
 
 function officialLanguageLabel(program: ProgramCatalogDetail) {
-  return normalizeAcademicText(program.officialLanguageRequirement, officialPageFallback(currentLocale.value), currentLocale.value);
+  return formatVerifiedOfficialText(
+    program.officialLanguageRequirement,
+    program.officialSourceStatus,
+    officialPageFallback(currentLocale.value),
+    currentLocale.value
+  );
 }
 
 function academicRequirementLabel(program: ProgramCatalogDetail) {
-  return formatOfficialNote(program.officialAcademicRequirement || text(program.requirement.note), officialPageFallback(currentLocale.value), currentLocale.value);
+  return formatVerifiedOfficialText(
+    program.officialAcademicRequirement || text(program.requirement.note),
+    program.officialSourceStatus,
+    officialPageFallback(currentLocale.value),
+    currentLocale.value
+  );
 }
 
 function chinaStudentRequirementLabel(program: ProgramCatalogDetail) {
-  return cleanDisplayText(program.chinaStudentRequirement, "", currentLocale.value);
+  const value = cleanDisplayText(program.chinaStudentRequirement, "", "en");
+  if (!value.startsWith("USM does not publish a China-specific route in this prospectus.")) {
+    return cleanDisplayText(program.chinaStudentRequirement, "", currentLocale.value);
+  }
+  const labels = {
+    en: value,
+    ms: "USM tidak menerbitkan laluan khusus untuk pemohon dari China dalam prospektus ini. Pemohon hendaklah menggunakan laluan High School, A-Level, IB, AUSMAT, SAM, Diploma atau kelayakan setara yang diterima dan mendapatkan pengesahan kes khusus daripada USM.",
+    "zh-CN": "USM 本次简章未公布中国学生专属申请路径。申请人应按其认可的高中、A-Level、IB、AUSMAT、SAM、文凭或同等学历路径申请，并向 USM 确认个案要求。",
+    "zh-TW": "USM 本次簡章未公布中國學生專屬申請路徑。申請人應按其認可的高中、A-Level、IB、AUSMAT、SAM、文憑或同等學歷路徑申請，並向 USM 確認個案要求。"
+  };
+  return labels[currentLocale.value];
 }
 
 function accreditationNoteLabel(program: ProgramCatalogDetail) {
-  if (!cleanDisplayText(program.officialAccreditationNote, "", currentLocale.value)) return "";
+  const value = cleanDisplayText(program.officialAccreditationNote, "", "en");
+  if (!value) return "";
+  if (value === "Programme accreditation details are not published in the collected USM international prospectus and are not inferred.") {
+    const labels = {
+      en: value,
+      ms: "Butiran akreditasi program tidak diterbitkan dalam prospektus antarabangsa USM yang dikumpulkan dan tidak dibuat andaian.",
+      "zh-CN": "本次采集的 USM 国际招生简章未公布该专业的认证详情，StudyMY 不作推断。",
+      "zh-TW": "本次採集的 USM 國際招生簡章未公布該專業的認證詳情，StudyMY 不作推斷。"
+    };
+    return labels[currentLocale.value];
+  }
   return formatOfficialNote(program.officialAccreditationNote, officialPageFallback(currentLocale.value), currentLocale.value);
 }
 
@@ -911,12 +947,22 @@ function programSourceRows(program: ProgramCatalogDetail): ModalSourceRow[] {
     { label: t('university.feeStatus'), value: feeStatus(program) }
   ];
   if (program.officialIntakeNote) {
-    rows.push({ label: t('university.intakeNote'), value: formatOfficialNote(program.officialIntakeNote, officialPageFallback(currentLocale.value), currentLocale.value), full: true });
+    rows.push({
+      label: t('university.intakeNote'),
+      value: formatVerifiedOfficialText(
+        program.officialIntakeNote,
+        program.officialSourceStatus,
+        officialPageFallback(currentLocale.value),
+        currentLocale.value
+      ),
+      full: true
+    });
   }
   if (program.auditNote || program.publicDisplayNote || program.reviewReason) {
+    const auditValue = program.auditNote || program.publicDisplayNote || program.reviewReason;
     rows.push({
       label: t('university.dataNote'),
-      value: formatOfficialNote(program.auditNote || program.publicDisplayNote || program.reviewReason, officialConfirmationFallback(currentLocale.value), currentLocale.value),
+      value: cleanDisplayText(auditValue, officialConfirmationFallback(currentLocale.value), "en"),
       full: true
     });
   }
