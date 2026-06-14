@@ -413,6 +413,21 @@ function parseModeDuration(text: string, label: "full" | "part") {
   return null;
 }
 
+function fullTimeSemesterRange(text: string, studyMode: StudyMode) {
+  const fullTime = parseModeDuration(text, "full");
+  if (fullTime) {
+    return {
+      min: Math.round(fullTime.min * 2),
+      max: Math.round(fullTime.max * 2),
+      source: "programme-specific" as const
+    };
+  }
+  if (studyMode === "research") {
+    return { min: 2, max: 6, source: "research-mode-general-rule" as const };
+  }
+  return null;
+}
+
 export function normalizeMasterDuration(
   officialText: string,
   studyMode: StudyMode
@@ -454,6 +469,14 @@ export function normalizeMasterDuration(
     return {
       durationYears: years,
       durationOfficial: `${formatYears(years)} years`,
+      rawOfficial,
+      numeric: true
+    };
+  }
+  if (studyMode === "research") {
+    return {
+      durationYears: 1,
+      durationOfficial: "Full-time: 1-3 years; Part-time: 2-6 years",
       rawOfficial,
       numeric: true
     };
@@ -521,19 +544,45 @@ function feePresentation(record: CandidateRecord) {
   if (direct?.international) {
     const fee = direct.international;
     if (fee.fullTimePerSemester) {
+      const duration = fullTimeSemesterRange(record.duration.textEnOfficial, record.studyMode);
+      if (!duration) {
+        return {
+          amount: null,
+          currency: fee.currency,
+          display: "",
+          status: "not-published" as const,
+          sourceUrl: direct.officialSourceUrl || feeDirectoryUrl,
+          note: `USM publishes an international full-time rate of ${fee.currency} ${fee.fullTimePerSemester.toLocaleString("en-US")} per semester, but no numeric official duration is available to calculate a total tuition amount.`
+        };
+      }
+      const minimum = fee.fullTimePerSemester * duration.min;
+      const maximum = fee.fullTimePerSemester * duration.max;
+      const totalDisplay = minimum === maximum
+        ? `${fee.currency} ${minimum.toLocaleString("en-US")} total tuition`
+        : `${fee.currency} ${minimum.toLocaleString("en-US")}-${maximum.toLocaleString("en-US")} total tuition`;
       return {
-        amount: null,
+        amount: minimum === maximum ? minimum : null,
         currency: fee.currency,
-        display: `${fee.currency} ${fee.fullTimePerSemester.toLocaleString("en-US")} per semester (full-time); ${fee.currency} ${(fee.partTimePerSemester || 0).toLocaleString("en-US")} per semester (part-time)`,
+        display: totalDisplay,
         status: "matched-official" as const,
         sourceUrl: direct.officialSourceUrl || feeDirectoryUrl,
-        note: `Official ${direct.academicSession || "current"} research fee by academic unit. Malaysian fee: MYR ${direct.malaysian?.fullTimePerSemester?.toLocaleString("en-US") || "not published"} per semester (full-time).`
+        note: `StudyMY calculation from USM official ${direct.academicSession || "current"} international full-time tuition of ${fee.currency} ${fee.fullTimePerSemester.toLocaleString("en-US")} per semester and the official ${duration.min}-${duration.max} semester full-time duration. The displayed total excludes registration, bond, methodology, thesis evaluation, graduation and other separate fees. Duration source: ${duration.source}.`
+      };
+    }
+    if (!fee.amount) {
+      return {
+        amount: null,
+        currency: "UNKNOWN" as const,
+        display: "",
+        status: "not-published" as const,
+        sourceUrl: direct.officialSourceUrl || feeDirectoryUrl,
+        note: direct.effectiveNote || direct.reason || "The current official fee schedule refers applicants to the programme website and does not publish a numeric total."
       };
     }
     return {
-      amount: fee.amount ?? null,
+      amount: fee.amount,
       currency: fee.currency,
-      display: fee.amount ? `${fee.currency} ${fee.amount.toLocaleString("en-US")} total` : "",
+      display: `${fee.currency} ${fee.amount.toLocaleString("en-US")} total tuition`,
       status: "matched-official" as const,
       sourceUrl: direct.officialSourceUrl || feeDirectoryUrl,
       note: `Official ${direct.academicSession || "current"} total programme fee. Malaysian fee: MYR ${direct.malaysian?.amount?.toLocaleString("en-US") || "not published"}.${direct.effectiveNote ? ` ${direct.effectiveNote}` : ""}`
@@ -541,6 +590,16 @@ function feePresentation(record: CandidateRecord) {
   }
   if (variants.length) {
     const amounts = variants.map((fee) => Number(fee.international?.amount || 0)).filter(Boolean);
+    if (!amounts.length) {
+      return {
+        amount: null,
+        currency: "UNKNOWN" as const,
+        display: "",
+        status: "not-published" as const,
+        sourceUrl: variants[0].officialSourceUrl || feeDirectoryUrl,
+        note: "The official track rows do not publish a numeric international total."
+      };
+    }
     const min = Math.min(...amounts);
     const max = Math.max(...amounts);
     return {
@@ -625,7 +684,16 @@ export function buildUsmMasterRows(source: MasterCommercialSource): Array<DeepPa
         status: "official-verified"
       }
     ];
-    const localOnly = record.internationalEligibility === "malaysian-candidate-only" || /Malaysian Candidate Only/i.test(record.officialName);
+    const localOnly =
+      record.internationalEligibility === "not-eligible-malaysian-candidate-only" ||
+      record.internationalEligibility === "malaysian-candidate-only" ||
+      /Malaysian Candidate Only/i.test(record.officialName);
+    const eligibilityUnconfirmed = record.internationalEligibility === "not-explicitly-confirmed-on-public-detail";
+    const publicDisplayStatus = localOnly
+      ? "not-available-for-international" as const
+      : eligibilityUnconfirmed
+        ? "needs-review" as const
+        : "ready" as const;
     const descriptionZh = `${record.faculty}开设的${record.studyMode === "research" ? "研究型" : record.studyMode === "coursework" ? "授课型" : record.studyMode === "mixed" ? "混合型" : "临床型"}硕士项目。申请、学制与费用以所列 USM 官方来源为准。`;
     return {
       slug: stableSlug(record),
@@ -672,10 +740,16 @@ export function buildUsmMasterRows(source: MasterCommercialSource): Array<DeepPa
         )
       },
       officialAcademicRequirement: sanitizeOfficialText(record.academicRequirement.textEnOfficial),
-      chinaStudentRequirement: "中国学历、成绩单及非英文材料须按 OnlineIPS 指南提交官方英文翻译；最终资格由 USM 审核。",
+      chinaStudentRequirement: localOnly
+        ? "该项目官方标注仅限马来西亚申请人，不适用于中国及其他国际学生申请。"
+        : eligibilityUnconfirmed
+          ? "该项目公开详情页未明确确认国际学生申请资格，暂不作为中国学生可申请项目展示。"
+          : "中国学历、成绩单及非英文材料须按 OnlineIPS 指南提交官方英文翻译；最终资格由 USM 审核。",
       specialRequirementsNote: localOnly
         ? "Official directory marks this programme as Malaysian Candidate Only; it is retained for catalogue completeness and is not available to international applicants."
-        : `International eligibility status: ${record.internationalEligibility}.`,
+        : eligibilityUnconfirmed
+          ? "The public programme detail does not explicitly confirm international eligibility; retained for review and excluded from the ready international catalogue."
+          : `International eligibility status: ${record.internationalEligibility}.`,
       applicationDocs: applicationDocuments(source, record.studyMode),
       curriculum: localizedArray(
         [sanitizeOfficialText(record.overviewOfficial) || "Refer to the official programme page for curriculum details."],
@@ -702,13 +776,21 @@ export function buildUsmMasterRows(source: MasterCommercialSource): Array<DeepPa
       officialAccreditationSourceUrl: record.evidence.officialDirectoryUrl,
       sourceUrls: sourceLinks,
       officialVerifiedAt: "2026-06-14",
-      officialSourceStatus: "official-verified",
-      publicDisplayStatus: "ready",
-      publicDisplayNote: "Published from the audited USM public postgraduate directory; StudyMY localisations are non-official.",
-      reviewReason: null,
+      officialSourceStatus: localOnly ? "official-page-verified-international-not-available" : "official-verified",
+      publicDisplayStatus,
+      publicDisplayNote: localOnly
+        ? "USM official directory marks this programme as Malaysian Candidate Only; retained for audit and excluded from the international application list."
+        : eligibilityUnconfirmed
+          ? "International eligibility is not explicitly confirmed on the public detail page; retained for audit and excluded pending confirmation."
+          : "Published from the audited USM public postgraduate directory; StudyMY localisations are non-official.",
+      reviewReason: localOnly
+        ? "Not available to international applicants."
+        : eligibilityUnconfirmed
+          ? "International eligibility requires official confirmation."
+          : null,
       auditNote: `StudyMY audit verified USM directory record ${record.code} on 2026-06-14. Original duration: ${duration.rawOfficial}. Fee status: ${record.fee.status}. Evidence hash: ${record.evidence.detailSha256.slice(0, 16)}.`,
       listTuitionText: fee.display || "Official fee not published",
-      isPublished: true
+      isPublished: publicDisplayStatus === "ready"
     };
   });
 }
@@ -731,6 +813,8 @@ export function summarizeUsmMasterRows(rows: Array<DeepPartial<ProgramEntity>>) 
   return {
     rows: rows.length,
     ready: rows.filter((row) => row.publicDisplayStatus === "ready" && row.isPublished).length,
+    notAvailableForInternational: rows.filter((row) => row.publicDisplayStatus === "not-available-for-international").length,
+    needsReview: rows.filter((row) => row.publicDisplayStatus === "needs-review").length,
     yearDuration: rows.filter((row) => /years?/i.test(String(row.durationOfficial))).length,
     feeMatched: rows.filter((row) => row.officialFeeAuditStatus === "matched-official").length,
     feeNotPublished: rows.filter((row) => row.officialFeeAuditStatus === "not-published").length,
@@ -749,11 +833,15 @@ async function verifyRows(manager: EntityManager | DataSource, universityId: num
     where: { universityId, level: "bachelor", isPublished: true, publicDisplayStatus: "ready" }
   });
   const commercial = canonical.filter((row) => row.slug.startsWith(USM_MASTER_SLUG_PREFIX));
+  const notAvailableForInternational = commercial.filter((row) => row.publicDisplayStatus === "not-available-for-international");
+  const needsReview = commercial.filter((row) => row.publicDisplayStatus === "needs-review");
   const leakedLegacy = publicMaster.filter((row) => !row.slug.startsWith(USM_MASTER_SLUG_PREFIX));
   const convertedDurations = commercial.filter((row) => /years?/i.test(row.durationOfficial)).length;
   if (
     commercial.length !== 274 ||
-    publicMaster.length !== 274 ||
+    publicMaster.length !== 270 ||
+    notAvailableForInternational.length !== 1 ||
+    needsReview.length !== 3 ||
     leakedLegacy.length !== 0 ||
     publishedBachelor !== 63
   ) {
@@ -766,6 +854,8 @@ async function verifyRows(manager: EntityManager | DataSource, universityId: num
     publicMasterRows: publicMaster.length,
     publicBachelorRows: publishedBachelor,
     totalPublicRows: publicMaster.length + publishedBachelor,
+    notAvailableForInternationalRows: notAvailableForInternational.length,
+    needsReviewRows: needsReview.length,
     leakedLegacyRows: leakedLegacy.length,
     durationDisplayedInYears: convertedDurations,
     feeMatchedRows: commercial.filter((row) => row.officialFeeAuditStatus === "matched-official").length,
@@ -825,7 +915,7 @@ async function main() {
         canonicalRows: 274,
         archiveLegacyPublicMasterRows: true,
         preserveBachelorAndDoctoralRows: true,
-        programmeCountAfterImport: 337
+        programmeCountAfterImport: 333
       }
     }, null, 2));
     return;
@@ -883,7 +973,38 @@ async function main() {
         }
         await repository.save(repository.create({ ...row, id: existing?.id, universityId: university.id }));
       }
-      university.programCount = 337;
+      university.programCount = 333;
+      university.officialProfile = {
+        ...(university.officialProfile || {}),
+        catalogStatusSummary: {
+          all: {
+            total: 337,
+            ready: 333,
+            needsReview: 3,
+            notAvailableForInternational: 1
+          },
+          byLevel: {
+            bachelor: {
+              total: 63,
+              ready: 63,
+              needsReview: 0,
+              notAvailableForInternational: 0
+            },
+            master: {
+              total: 274,
+              ready: 270,
+              needsReview: 3,
+              notAvailableForInternational: 1
+            },
+            phd: {
+              total: 0,
+              ready: 0,
+              needsReview: 0,
+              notAvailableForInternational: 0
+            }
+          }
+        }
+      };
       await manager.getRepository(UniversityEntity).save(university);
       verification = await verifyRows(manager, university.id);
     });

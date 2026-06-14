@@ -36,12 +36,29 @@ interface CompareSyncResponse {
   universityIds?: number[];
 }
 
+interface CatalogStatusSummary {
+  all: CatalogStatusCounts;
+  byLevel: Record<"bachelor" | "master" | "phd", CatalogStatusCounts>;
+}
+
+interface CatalogStatusCounts {
+  total: number;
+  ready: number;
+  needsReview: number;
+  notAvailableForInternational: number;
+}
+
+type UniversityDetail = UniversityListItem & {
+  programs: ProgramListItem[];
+  catalogStatusSummary?: CatalogStatusSummary;
+};
+
 export const useCatalogStore = defineStore("catalog", () => {
   const session = useSessionStore();
   const homeMeta = ref<HomeMeta | null>(null);
   const universities = ref<UniversityListItem[]>([]);
   const programs = ref<ProgramListItem[]>([]);
-  const universityDetail = ref<(UniversityListItem & { programs: ProgramListItem[] }) | null>(null);
+  const universityDetail = ref<UniversityDetail | null>(null);
   const programDetail = ref<(ProgramListItem & { university: UniversityListItem }) | null>(null);
   const selectedProgramDetail = ref<ProgramCatalogDetail | null>(null);
   const searchSuggestions = ref<SearchSuggestionItem[]>([]);
@@ -124,7 +141,7 @@ export const useCatalogStore = defineStore("catalog", () => {
   async function loadUniversity(slug: string) {
     loading.value = true;
     try {
-      universityDetail.value = await apiFetch<UniversityListItem & { programs: ProgramListItem[] }>(`/universities/${slug}`);
+      universityDetail.value = await apiFetch<UniversityDetail>(`/universities/${slug}`);
       errorMessage.value = "";
     } catch (error) {
       universityDetail.value = null;

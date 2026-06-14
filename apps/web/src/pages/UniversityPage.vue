@@ -506,7 +506,6 @@ import {
   formatProgramIntake,
   formatProgramListTuition,
   formatProgramLanguage,
-  formatProgramTuition,
   formatVerifiedOfficialText,
   formatRuntimeDisplayText,
   officialConfirmationFallback,
@@ -515,7 +514,19 @@ import {
 } from "../utils/format";
 
 type DetailTab = "overview" | "bachelor" | "master" | "phd" | "facilities" | "apply";
-type UniversityDetailView = UniversityListItem & { programs: ProgramListItem[] };
+type CatalogStatusCounts = {
+  total: number;
+  ready: number;
+  needsReview: number;
+  notAvailableForInternational: number;
+};
+type UniversityDetailView = UniversityListItem & {
+  programs: ProgramListItem[];
+  catalogStatusSummary?: {
+    all: CatalogStatusCounts;
+    byLevel: Record<DegreeLevel, CatalogStatusCounts>;
+  };
+};
 type LabelValue = { label: string; value: string };
 type ModalSourceRow = LabelValue & { full?: boolean };
 type LabelLink = LabelValue & { href: string };
@@ -684,8 +695,9 @@ const programAuditRows = computed<LabelValue[]>(() => {
   const current = detail.value;
   if (!current) return [];
   return [
-    { label: t('university.bachelorPrograms'), value: auditCount("undergraduateAudit", "officialBachelorTotal", countPrograms("bachelor")) },
-    { label: t('university.publicReady'), value: auditCount("undergraduateAudit", "readyForPublicDisplay", current.programs.length) },
+    { label: t('university.bachelorPrograms'), value: catalogLevelTotal("bachelor") },
+    { label: t('university.masterPrograms'), value: catalogLevelTotal("master") },
+    { label: t('university.publicReady'), value: String(current.catalogStatusSummary?.all.ready ?? current.programs.length) },
     { label: t('university.reviewUnavailable'), value: auditReviewCount() },
     { label: t('university.languageRequirement'), value: t('university.languageShownByProgram') }
   ];
@@ -856,7 +868,7 @@ function compactNumber(value: number) {
 }
 
 function tuitionLabel(program: ProgramListItem | ProgramCatalogDetail) {
-  return formatProgramTuition(program, undefined, currentLocale.value);
+  return formatProgramListTuition(program, undefined, currentLocale.value);
 }
 
 function tuitionListLabel(program: ProgramListItem | ProgramCatalogDetail) {
@@ -880,6 +892,13 @@ function intakeLabel(program: ProgramListItem | ProgramCatalogDetail) {
 }
 
 function tuitionNoteLabel(program: ProgramCatalogDetail) {
+  if (program.code.startsWith("USM-M-") && program.level === "master") {
+    if (program.officialFeeAuditStatus === "not-published") return t("program.feeNotPublishedNote");
+    if (/StudyMY calculation from USM official/i.test(program.tuitionInfo?.note || "")) {
+      return t("program.calculatedTotalTuitionNote");
+    }
+    return t("program.officialTotalTuitionNote");
+  }
   return formatVerifiedOfficialText(
     program.tuitionInfo?.note,
     program.officialSourceStatus,
@@ -1095,12 +1114,13 @@ function countPrograms(level: DegreeLevel) {
   return String((detail.value?.programs || []).filter((program) => program.level === level).length);
 }
 
-function auditCount(section: string, key: string, fallback: string | number) {
-  const value = asRecord(profile.value?.[section])?.[key];
-  return stringFrom(value) || String(fallback);
+function catalogLevelTotal(level: DegreeLevel) {
+  return String(detail.value?.catalogStatusSummary?.byLevel[level].total ?? countPrograms(level));
 }
 
 function auditReviewCount() {
+  const summary = detail.value?.catalogStatusSummary?.all;
+  if (summary) return String(summary.needsReview + summary.notAvailableForInternational);
   const audit = asRecord(profile.value?.undergraduateAudit);
   const needsReview = numberFrom(audit?.needsReview);
   const unavailable = numberFrom(audit?.notAvailableForInternational);

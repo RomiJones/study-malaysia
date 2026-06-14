@@ -992,6 +992,12 @@ export function formatProgramListTuition(
 }
 
 export function formatProgramDuration(program: ProgramDisplayFields, locale?: SupportedLocale): string {
+  if (
+    !finitePositiveNumber(program.durationYears) &&
+    /(?:not published|pending|refer to the programme structure)/i.test(String(program.durationOfficial || ""))
+  ) {
+    return officialConfirmationFallback(locale);
+  }
   if (hasDisplayText(program.durationOfficial)) return normalizeAcademicText(program.durationOfficial, undefined, locale);
   const years = finitePositiveNumber(program.durationYears);
   return years ? `${years} ${formatText("years", locale)}` : officialConfirmationFallback(locale);

@@ -69,11 +69,11 @@ describe("web display format helpers", () => {
     );
     assert.equal(
       formatProgramListTuition(program({
-        tuitionDisplay: "USD 1,800 per semester (full-time); USD 1,530 per semester (part-time)",
+        tuitionDisplay: "USD 3,600-10,800 total tuition",
         officialFeeAuditStatus: "matched-official",
         officialFeeSourceUrl: "https://example.edu/fee"
       }), undefined, "zh-CN"),
-      "USD 1,530 - 1,800 / 学期"
+      "USD 3,600 - 10,800"
     );
     assert.equal(
       formatProgramListTuition(program({
@@ -184,6 +184,13 @@ describe("web display format helpers", () => {
     assert.equal(formatProgramDuration(program({ durationOfficial: "6 Semesters (Clinical)" }), "zh-CN"), "6 个学期 (临床)");
     assert.equal(formatProgramDuration(program({ durationOfficial: "Full-Time Duration: 6 Semesters, (Clinical) — official page title is Doctor of Public Health (Mixed-Mode)" }), "zh-CN"), officialPageFallback("zh-CN"));
     assert.equal(formatProgramLanguage(program({ officialLanguageRequirement: "Language requirements are subject to official review." }), "fallback", "zh-CN"), "fallback");
+    assert.equal(
+      formatProgramDuration(program({
+        durationOfficial: "Official duration in years is not published; refer to the programme structure",
+        durationYears: 0
+      }), "zh-CN"),
+      "待官方确认"
+    );
     assert.equal(
       formatRuntimeDisplayText("中国学生需按具体专业核对高中 / 本科成绩、语言要求、公证翻译和补充材料。", "fallback", "zh-TW"),
       "中國學生需按具體專業核對高中 / 本科成績、語言要求、公證翻譯和補充材料。"

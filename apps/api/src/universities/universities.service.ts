@@ -50,6 +50,30 @@ function normalizeQuery(query: UniversityQuery): PublicCatalogQuery {
   };
 }
 
+function buildCatalogStatusSummary(university: UniversityEntity, programs: ProgramEntity[]) {
+  const profile = university.officialProfile;
+  if (profile && typeof profile === "object" && "catalogStatusSummary" in profile) {
+    const summary = profile.catalogStatusSummary;
+    if (summary && typeof summary === "object") return summary;
+  }
+  const summarize = (items: ProgramEntity[]) => ({
+    total: items.length,
+    ready: items.filter((program) => program.isPublished && program.publicDisplayStatus === "ready").length,
+    needsReview: items.filter((program) => program.publicDisplayStatus === "needs-review").length,
+    notAvailableForInternational: items.filter(
+      (program) => program.publicDisplayStatus === "not-available-for-international"
+    ).length
+  });
+  return {
+    all: summarize(programs),
+    byLevel: {
+      bachelor: summarize(programs.filter((program) => program.level === "bachelor")),
+      master: summarize(programs.filter((program) => program.level === "master")),
+      phd: summarize(programs.filter((program) => program.level === "phd"))
+    }
+  };
+}
+
 @Injectable()
 export class UniversitiesService {
   private readonly universitiesRepository: Repository<UniversityEntity>;
@@ -184,10 +208,13 @@ export class UniversitiesService {
       throw new NotFoundException("University not found");
     }
 
+    const allPrograms = university.programs || [];
+    const publicPrograms = allPrograms.filter(isReadyForPublicCatalog);
     const payload = {
-      ...mapUniversityCatalogItem(university, (university.programs || []).filter(isReadyForPublicCatalog)),
-      programs: (university.programs || []).filter(isReadyForPublicCatalog).map(mapProgram),
-      programGroups: buildProgramGroups((university.programs || []).filter(isReadyForPublicCatalog)),
+      ...mapUniversityCatalogItem(university, publicPrograms),
+      programs: publicPrograms.map(mapProgram),
+      programGroups: buildProgramGroups(publicPrograms),
+      catalogStatusSummary: buildCatalogStatusSummary(university, allPrograms),
       applicationInfo: {
         applicationPortalUrl: university.applicationPortalUrl || "",
         applicationPeriods: university.applicationPeriods || [],
@@ -202,7 +229,7 @@ export class UniversitiesService {
         { key: "tuitionRange", label: textLabel("Tuition range"), value: [university.tuitionMinCny, university.tuitionMaxCny] },
         { key: "livingCostCny", label: textLabel("Living cost"), value: university.livingCostCny },
         { key: "minIelts", label: textLabel("Minimum IELTS"), value: university.minIelts },
-        { key: "programCount", label: textLabel("Ready programs"), value: (university.programs || []).filter(isReadyForPublicCatalog).length }
+        { key: "programCount", label: textLabel("Ready programs"), value: publicPrograms.length }
       ]
     };
     await this.cacheService.setJson(cacheKey, payload, 600);

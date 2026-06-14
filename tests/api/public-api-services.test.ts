@@ -153,6 +153,43 @@ describe("public API services and controllers", () => {
     assert.match(cacheWrites[0].key, /^catalog:recommend:/);
   });
 
+  test("university detail reports canonical and public catalogue status separately", async () => {
+    const readyProgram = program();
+    const reviewProgram = program({
+      id: 12,
+      slug: "review-program",
+      code: "REVIEW",
+      isPublished: false,
+      publicDisplayStatus: "needs-review"
+    });
+    const readyUniversity = university({
+      programs: [readyProgram, reviewProgram],
+      officialProfile: {
+        catalogStatusSummary: {
+          all: { total: 2, ready: 1, needsReview: 1, notAvailableForInternational: 0 },
+          byLevel: {
+            bachelor: { total: 0, ready: 0, needsReview: 0, notAvailableForInternational: 0 },
+            master: { total: 2, ready: 1, needsReview: 1, notAvailableForInternational: 0 },
+            phd: { total: 0, ready: 0, needsReview: 0, notAvailableForInternational: 0 }
+          }
+        }
+      }
+    });
+    const service = new UniversitiesService(
+      { findOne: async () => readyUniversity } as any,
+      {} as any,
+      {} as any,
+      { getJson: async () => null, setJson: async () => undefined } as any
+    );
+
+    const detail = await service.getBySlug("university-of-malaya") as any;
+
+    assert.equal(detail.programs.length, 1);
+    assert.equal(detail.catalogStatusSummary.all.total, 2);
+    assert.equal(detail.catalogStatusSummary.all.ready, 1);
+    assert.equal(detail.catalogStatusSummary.all.needsReview, 1);
+  });
+
   test("program controller delegates list and recommendation queries", async () => {
     const calls: string[] = [];
     const controller = new ProgramsController({
