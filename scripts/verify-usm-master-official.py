@@ -143,12 +143,25 @@ def main() -> None:
     if any("isPublished" in record for record in records):
         errors.append("Collection dry-run records must not contain isPublished.")
     if current_catalogue:
-        if len(current_catalogue.get("rows", [])) != 95:
-            errors.append("Current doctoral catalogue must contain 95 rows.")
-        if current_catalogue.get("uniqueOfficialUrls") != 91:
-            errors.append("Current doctoral catalogue must contain 91 unique URLs.")
-        if current_catalogue.get("detailUrlsAddedBeyondLegacyDirectory") != 9:
-            errors.append("Expected nine current detail URLs beyond the legacy directory.")
+        expected_current_rows = 305 if level == "master" else 95
+        expected_current_urls = 255 if level == "master" else 91
+        expected_added_urls = 43 if level == "master" else 9
+        if len(current_catalogue.get("rows", [])) != expected_current_rows:
+            errors.append(
+                f"Current {level} catalogue must contain {expected_current_rows} rows."
+            )
+        if current_catalogue.get("uniqueOfficialUrls") != expected_current_urls:
+            errors.append(
+                f"Current {level} catalogue must contain {expected_current_urls} unique URLs."
+            )
+        if (
+            current_catalogue.get("detailUrlsAddedBeyondLegacyDirectory")
+            != expected_added_urls
+        ):
+            errors.append(
+                f"Expected {expected_added_urls} current {level} detail URLs beyond "
+                "the legacy directory."
+            )
 
     result = {
         "manifest": str(args.manifest),

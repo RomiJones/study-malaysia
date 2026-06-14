@@ -19,8 +19,8 @@
     "applicationCodeOnlyOfferings": 5,
     "offshoreApplicationCodesReconciled": 24,
     "statusCounts": {
-      "needs-review": 79,
-      "ready": 14,
+      "needs-review": 21,
+      "ready": 72,
       "not-available-for-international": 2
     },
     "modeCounts": {
@@ -37,8 +37,8 @@
     },
     "feeCounts": {
       "verified-current-official-fee": 13,
-      "verified-calculated-total-range": 59,
-      "official-unpublished": 23
+      "verified-calculated-total-range": 62,
+      "official-unpublished": 20
     },
     "doctoralNamedFeeRows": 13,
     "coverage": {
@@ -63,8 +63,8 @@
         "review": 0
       },
       "duration": {
-        "covered": 93,
-        "unpublished": 2,
+        "covered": 94,
+        "unpublished": 1,
         "review": 0
       },
       "intake": {
@@ -73,9 +73,9 @@
         "review": 0
       },
       "internationalEligibility": {
-        "covered": 72,
+        "covered": 75,
         "unpublished": 0,
-        "review": 23
+        "review": 20
       },
       "academicRequirement": {
         "covered": 95,
@@ -93,8 +93,8 @@
         "review": 0
       },
       "fee": {
-        "covered": 72,
-        "unpublished": 23,
+        "covered": 75,
+        "unpublished": 20,
         "review": 0
       },
       "evidence": {
@@ -103,12 +103,11 @@
         "review": 0
       }
     },
-    "exceptionCount": 79,
-    "publicationDecision": "blocked",
+    "exceptionCount": 21,
+    "publicationDecision": "publish-ready-subset",
     "blockingReasons": [
-      "Collection authorization does not permit database publication.",
-      "Needs-review records must not enter the public international catalogue.",
-      "Four-language commercial localization has not been reviewed."
+      "Needs-review and Malaysian-only records must remain excluded from the public international catalogue.",
+      "Four-language commercial localization must pass import and API/UI verification before release."
     ]
   },
   "exceptions": [
@@ -116,597 +115,147 @@
       "code": "USM-PHD-ARTICLE-340-F6B2DBBE",
       "nameEnOfficial": "DOCTOR OF BUSINESS ADMINISTRATION (DBA)",
       "reasons": [
-        "official numeric duration is unpublished",
-        "programme-specific intake is unpublished"
-      ]
-    },
-    {
-      "code": "USM-PHD-ARTICLE-413-F4FF207B",
-      "nameEnOfficial": "DOCTOR OF NEUROSCIENCE",
-      "reasons": [
-        "official numeric duration is unpublished",
-        "programme-specific intake is unpublished"
-      ]
-    },
-    {
-      "code": "USM-PHD-ARTICLE-557-7081B653",
-      "nameEnOfficial": "DOCTOR OF PHILOSOPHY (BIOMEDICINE)",
-      "reasons": [
-        "programme-specific intake is unpublished"
-      ]
-    },
-    {
-      "code": "USM-PHD-ARTICLE-246-D78D9DD2",
-      "nameEnOfficial": "DOCTOR OF PHILOSOPHY (BUILDING SURVEYING)",
-      "reasons": [
-        "programme-specific intake is unpublished"
-      ]
-    },
-    {
-      "code": "USM-PHD-ARTICLE-200-2C6B8775",
-      "nameEnOfficial": "DOCTOR OF PHILOSOPHY (BUILDING TECHNOLOGY)",
-      "reasons": [
-        "programme-specific intake is unpublished"
-      ]
-    },
-    {
-      "code": "USM-PHD-ARTICLE-167-A219BB23",
-      "nameEnOfficial": "DOCTOR OF PHILOSOPHY (DUAL PHD KEELE UNIVERSITY,UK)",
-      "reasons": [
-        "programme-specific intake is unpublished"
-      ]
-    },
-    {
-      "code": "USM-PHD-ARTICLE-153-1C328CB2",
-      "nameEnOfficial": "DOCTOR OF PHILOSOPHY (DUAL PHD NATIONAL TSING HUA UNIVERSITY,TAIWAN)",
-      "reasons": [
-        "programme-specific intake is unpublished"
-      ]
-    },
-    {
-      "code": "USM-PHD-ARTICLE-390-61D17A58",
-      "nameEnOfficial": "DOCTOR OF PHILOSOPHY (ENGINEERING CAMPUS)",
-      "reasons": [
-        "programme-specific intake is unpublished"
-      ]
-    },
-    {
-      "code": "USM-PHD-ARTICLE-392-11B9FC72",
-      "nameEnOfficial": "DOCTOR OF PHILOSOPHY (ENGINEERING CAMPUS)",
-      "reasons": [
-        "programme-specific intake is unpublished"
-      ]
-    },
-    {
-      "code": "USM-PHD-ARTICLE-395-92654AFA",
-      "nameEnOfficial": "DOCTOR OF PHILOSOPHY (ENGINEERING CAMPUS)",
-      "reasons": [
-        "programme-specific intake is unpublished"
-      ]
-    },
-    {
-      "code": "USM-PHD-ARTICLE-402-9D4FB379",
-      "nameEnOfficial": "DOCTOR OF PHILOSOPHY (ENGINEERING CAMPUS)",
-      "reasons": [
-        "programme-specific intake is unpublished"
-      ]
-    },
-    {
-      "code": "USM-PHD-ARTICLE-407-B0241583",
-      "nameEnOfficial": "DOCTOR OF PHILOSOPHY (ENGINEERING CAMPUS)",
-      "reasons": [
-        "programme-specific intake is unpublished"
-      ]
-    },
-    {
-      "code": "USM-PHD-ARTICLE-404-31FB99DD",
-      "nameEnOfficial": "DOCTOR OF PHILOSOPHY (ENGINEERING CAMPUS)",
-      "reasons": [
-        "programme-specific intake is unpublished"
-      ]
-    },
-    {
-      "code": "USM-PHD-ARTICLE-558-1A7EF8A8",
-      "nameEnOfficial": "DOCTOR OF PHILOSOPHY (FORENSIC SCIENCE)",
-      "reasons": [
-        "programme-specific intake is unpublished"
-      ]
-    },
-    {
-      "code": "USM-PHD-ARTICLE-555-1399FD12",
-      "nameEnOfficial": "DOCTOR OF PHILOSOPHY (HEALTH CAMPUS)",
-      "reasons": [
-        "programme-specific intake is unpublished"
-      ]
-    },
-    {
-      "code": "USM-PHD-ARTICLE-807-331F9B3B",
-      "nameEnOfficial": "DOCTOR OF PHILOSOPHY (HEALTH CAMPUS)",
-      "reasons": [
-        "programme-specific intake is unpublished"
-      ]
-    },
-    {
-      "code": "USM-PHD-ARTICLE-233-F8F04AED",
-      "nameEnOfficial": "DOCTOR OF PHILOSOPHY (HOUSING)",
-      "reasons": [
-        "programme-specific intake is unpublished"
-      ]
-    },
-    {
-      "code": "USM-PHD-ARTICLE-234-A49B2AC1",
-      "nameEnOfficial": "DOCTOR OF PHILOSOPHY (INTERIOR DESIGN)",
-      "reasons": [
-        "programme-specific intake is unpublished"
-      ]
-    },
-    {
-      "code": "USM-PHD-ARTICLE-888-ABF3CB0A",
-      "nameEnOfficial": "DOCTOR OF PHILOSOPHY (JOINT PHD NEW CASTLE UNIVERSITY, UNITED KINGDOM)",
-      "reasons": [
-        "programme-specific intake is unpublished"
-      ]
-    },
-    {
-      "code": "USM-PHD-ARTICLE-244-F4A13D11",
-      "nameEnOfficial": "DOCTOR OF PHILOSOPHY (MAIN CAMPUS)",
-      "reasons": [
-        "programme-specific intake is unpublished"
-      ]
-    },
-    {
-      "code": "USM-PHD-ARTICLE-169-C35B2022",
-      "nameEnOfficial": "DOCTOR OF PHILOSOPHY (MAIN CAMPUS)",
-      "reasons": [
-        "programme-specific intake is unpublished"
-      ]
-    },
-    {
-      "code": "USM-PHD-ARTICLE-217-DDFFC688",
-      "nameEnOfficial": "DOCTOR OF PHILOSOPHY (MAIN CAMPUS)",
-      "reasons": [
-        "programme-specific intake is unpublished"
-      ]
-    },
-    {
-      "code": "USM-PHD-ARTICLE-333-204B8FF5",
-      "nameEnOfficial": "DOCTOR OF PHILOSOPHY (MAIN CAMPUS)",
-      "reasons": [
-        "programme-specific intake is unpublished"
-      ]
-    },
-    {
-      "code": "USM-PHD-ARTICLE-372-672DB387",
-      "nameEnOfficial": "DOCTOR OF PHILOSOPHY (MAIN CAMPUS)",
-      "reasons": [
-        "programme-specific intake is unpublished"
-      ]
-    },
-    {
-      "code": "USM-PHD-ARTICLE-273-EF8BB80C",
-      "nameEnOfficial": "DOCTOR OF PHILOSOPHY (MAIN CAMPUS)",
-      "reasons": [
-        "programme-specific intake is unpublished"
-      ]
-    },
-    {
-      "code": "USM-PHD-ARTICLE-170-8655C53B",
-      "nameEnOfficial": "DOCTOR OF PHILOSOPHY (MAIN CAMPUS)",
-      "reasons": [
-        "programme-specific intake is unpublished"
-      ]
-    },
-    {
-      "code": "USM-PHD-ARTICLE-271-7F5394A0",
-      "nameEnOfficial": "DOCTOR OF PHILOSOPHY (MAIN CAMPUS)",
-      "reasons": [
-        "programme-specific intake is unpublished"
-      ]
-    },
-    {
-      "code": "USM-PHD-ARTICLE-809-4DB1B238",
-      "nameEnOfficial": "DOCTOR OF PHILOSOPHY (MAIN CAMPUS)",
-      "reasons": [
-        "international eligibility is not explicitly confirmed",
-        "programme-specific intake is unpublished",
-        "no uniquely applicable current international tuition"
-      ]
-    },
-    {
-      "code": "USM-PHD-ARTICLE-388-4B3FE108",
-      "nameEnOfficial": "DOCTOR OF PHILOSOPHY (MAIN CAMPUS)",
-      "reasons": [
-        "programme-specific intake is unpublished"
-      ]
-    },
-    {
-      "code": "USM-PHD-ARTICLE-219-DEE779E2",
-      "nameEnOfficial": "DOCTOR OF PHILOSOPHY (MAIN CAMPUS)",
-      "reasons": [
-        "international eligibility is not explicitly confirmed",
-        "programme-specific intake is unpublished",
-        "no uniquely applicable current international tuition"
-      ]
-    },
-    {
-      "code": "USM-PHD-ARTICLE-338-A89E7B8C",
-      "nameEnOfficial": "DOCTOR OF PHILOSOPHY (MAIN CAMPUS)",
-      "reasons": [
-        "programme-specific intake is unpublished"
-      ]
-    },
-    {
-      "code": "USM-PHD-ARTICLE-510-30AB87BE",
-      "nameEnOfficial": "DOCTOR OF PHILOSOPHY (MAIN CAMPUS)",
-      "reasons": [
-        "programme-specific intake is unpublished"
-      ]
-    },
-    {
-      "code": "USM-PHD-ARTICLE-215-1208D3CA",
-      "nameEnOfficial": "DOCTOR OF PHILOSOPHY (MAIN CAMPUS)",
-      "reasons": [
-        "international eligibility is not explicitly confirmed",
-        "programme-specific intake is unpublished",
-        "no uniquely applicable current international tuition"
-      ]
-    },
-    {
-      "code": "USM-PHD-ARTICLE-218-B3A10FF2",
-      "nameEnOfficial": "DOCTOR OF PHILOSOPHY (MAIN CAMPUS)",
-      "reasons": [
-        "programme-specific intake is unpublished"
-      ]
-    },
-    {
-      "code": "USM-PHD-ARTICLE-325-B8B6326F",
-      "nameEnOfficial": "DOCTOR OF PHILOSOPHY (MAIN CAMPUS)",
-      "reasons": [
-        "programme-specific intake is unpublished"
-      ]
-    },
-    {
-      "code": "USM-PHD-ARTICLE-220-E1BD8F32",
-      "nameEnOfficial": "DOCTOR OF PHILOSOPHY (MAIN CAMPUS)",
-      "reasons": [
-        "programme-specific intake is unpublished"
-      ]
-    },
-    {
-      "code": "USM-PHD-ARTICLE-888-0184C491",
-      "nameEnOfficial": "DOCTOR OF PHILOSOPHY (MAIN CAMPUS)",
-      "reasons": [
-        "programme-specific intake is unpublished"
-      ]
-    },
-    {
-      "code": "USM-PHD-ARTICLE-376-E4CF4C2E",
-      "nameEnOfficial": "DOCTOR OF PHILOSOPHY (MAIN CAMPUS)",
-      "reasons": [
-        "programme-specific intake is unpublished"
-      ]
-    },
-    {
-      "code": "USM-PHD-ARTICLE-167-D16175AE",
-      "nameEnOfficial": "DOCTOR OF PHILOSOPHY (MAIN CAMPUS)",
-      "reasons": [
-        "programme-specific intake is unpublished"
-      ]
-    },
-    {
-      "code": "USM-PHD-ARTICLE-153-A3B106C5",
-      "nameEnOfficial": "DOCTOR OF PHILOSOPHY (MAIN CAMPUS)",
-      "reasons": [
-        "programme-specific intake is unpublished"
-      ]
-    },
-    {
-      "code": "USM-PHD-ARTICLE-375-4579FD96",
-      "nameEnOfficial": "DOCTOR OF PHILOSOPHY (MAIN CAMPUS)",
-      "reasons": [
-        "programme-specific intake is unpublished"
-      ]
-    },
-    {
-      "code": "USM-PHD-ARTICLE-221-1C33BEF5",
-      "nameEnOfficial": "DOCTOR OF PHILOSOPHY (MAIN CAMPUS)",
-      "reasons": [
-        "programme-specific intake is unpublished"
-      ]
-    },
-    {
-      "code": "USM-PHD-ARTICLE-361-F93DBDBA",
-      "nameEnOfficial": "DOCTOR OF PHILOSOPHY (MAIN CAMPUS)",
-      "reasons": [
-        "programme-specific intake is unpublished"
-      ]
-    },
-    {
-      "code": "USM-PHD-ARTICLE-887-795F4413",
-      "nameEnOfficial": "DOCTOR OF PHILOSOPHY (MAIN CAMPUS)",
-      "reasons": [
-        "programme-specific intake is unpublished"
-      ]
-    },
-    {
-      "code": "USM-PHD-ARTICLE-243-E1524B43",
-      "nameEnOfficial": "DOCTOR OF PHILOSOPHY (MAIN CAMPUS)",
-      "reasons": [
-        "programme-specific intake is unpublished"
-      ]
-    },
-    {
-      "code": "USM-PHD-ARTICLE-315-5BE5C9C6",
-      "nameEnOfficial": "DOCTOR OF PHILOSOPHY (MAIN CAMPUS)",
-      "reasons": [
-        "programme-specific intake is unpublished"
-      ]
-    },
-    {
-      "code": "USM-PHD-ARTICLE-147-922EA0D1",
-      "nameEnOfficial": "DOCTOR OF PHILOSOPHY (MAIN CAMPUS)",
-      "reasons": [
-        "programme-specific intake is unpublished"
-      ]
-    },
-    {
-      "code": "USM-PHD-ARTICLE-241-7E0BAB3B",
-      "nameEnOfficial": "DOCTOR OF PHILOSOPHY (MAIN CAMPUS)",
-      "reasons": [
-        "programme-specific intake is unpublished"
-      ]
-    },
-    {
-      "code": "USM-PHD-ARTICLE-145-B278876C",
-      "nameEnOfficial": "DOCTOR OF PHILOSOPHY (MAIN CAMPUS)",
-      "reasons": [
-        "programme-specific intake is unpublished"
-      ]
-    },
-    {
-      "code": "USM-PHD-ARTICLE-326-FC5BC872",
-      "nameEnOfficial": "DOCTOR OF PHILOSOPHY (MAIN CAMPUS)",
-      "reasons": [
-        "programme-specific intake is unpublished"
-      ]
-    },
-    {
-      "code": "USM-PHD-ARTICLE-247-95E84700",
-      "nameEnOfficial": "DOCTOR OF PHILOSOPHY (MAIN CAMPUS)- SCIENCE",
-      "reasons": [
-        "programme-specific intake is unpublished"
-      ]
-    },
-    {
-      "code": "USM-PHD-ARTICLE-379-63462EB7",
-      "nameEnOfficial": "DOCTOR OF PHILOSOPHY (MAIN CAMPUS)-ART",
-      "reasons": [
-        "programme-specific intake is unpublished"
-      ]
-    },
-    {
-      "code": "USM-PHD-ARTICLE-561-1A146DC4",
-      "nameEnOfficial": "DOCTOR OF PHILOSOPHY (MEDICAL RADIATION)",
-      "reasons": [
-        "programme-specific intake is unpublished"
-      ]
-    },
-    {
-      "code": "USM-PHD-ARTICLE-560-D920F911",
-      "nameEnOfficial": "DOCTOR OF PHILOSOPHY (NURSING)",
-      "reasons": [
-        "programme-specific intake is unpublished"
-      ]
-    },
-    {
-      "code": "USM-PHD-ARTICLE-559-C64343D5",
-      "nameEnOfficial": "DOCTOR OF PHILOSOPHY (NUTRITION)",
-      "reasons": [
-        "programme-specific intake is unpublished"
+        "official numeric duration is unpublished"
       ]
     },
     {
       "code": "USM-PHD-ARTICLE-1475-DFD9E09D",
       "nameEnOfficial": "DOCTOR OF PHILOSOPHY (OFFSHORE EUROPEAN GLOBAL SCHOOL UNIVERSITY, ISTANBUL)",
       "reasons": [
-        "international eligibility is not explicitly confirmed",
-        "programme-specific intake is unpublished",
-        "no uniquely applicable current international tuition"
+        "international eligibility is not explicitly confirmed"
       ]
     },
     {
       "code": "USM-PHD-ARTICLE-1476-EDCE896B",
       "nameEnOfficial": "DOCTOR OF PHILOSOPHY (OFFSHORE EUROPEAN GLOBAL SCHOOL UNIVERSITY, ISTANBUL)",
       "reasons": [
-        "international eligibility is not explicitly confirmed",
-        "programme-specific intake is unpublished",
-        "no uniquely applicable current international tuition"
+        "international eligibility is not explicitly confirmed"
       ]
     },
     {
       "code": "USM-PHD-ARTICLE-1474-13A979E2",
       "nameEnOfficial": "DOCTOR OF PHILOSOPHY (OFFSHORE EUROPEAN GLOBAL SCHOOL UNIVERSITY, ISTANBUL)",
       "reasons": [
-        "international eligibility is not explicitly confirmed",
-        "programme-specific intake is unpublished",
-        "no uniquely applicable current international tuition"
+        "international eligibility is not explicitly confirmed"
       ]
     },
     {
       "code": "USM-PHD-ARTICLE-1482-71AFD600",
       "nameEnOfficial": "DOCTOR OF PHILOSOPHY (OFFSHORE EUROPEAN GLOBAL SCHOOL UNIVERSITY, ISTANBUL)",
       "reasons": [
-        "international eligibility is not explicitly confirmed",
-        "programme-specific intake is unpublished",
-        "no uniquely applicable current international tuition"
+        "international eligibility is not explicitly confirmed"
       ]
     },
     {
       "code": "USM-PHD-ARTICLE-1501-AA166411",
       "nameEnOfficial": "DOCTOR OF PHILOSOPHY (OFFSHORE EUROPEAN GLOBAL SCHOOL UNIVERSITY, ISTANBUL)",
       "reasons": [
-        "international eligibility is not explicitly confirmed",
-        "programme-specific intake is unpublished",
-        "no uniquely applicable current international tuition"
+        "international eligibility is not explicitly confirmed"
       ]
     },
     {
       "code": "USM-PHD-ARTICLE-1506-E0F6CDF0",
       "nameEnOfficial": "DOCTOR OF PHILOSOPHY (OFFSHORE EUROPEAN GLOBAL SCHOOL UNIVERSITY, ISTANBUL)",
       "reasons": [
-        "international eligibility is not explicitly confirmed",
-        "programme-specific intake is unpublished",
-        "no uniquely applicable current international tuition"
+        "international eligibility is not explicitly confirmed"
       ]
     },
     {
       "code": "USM-PHD-ARTICLE-1508-17AAC296",
       "nameEnOfficial": "DOCTOR OF PHILOSOPHY (OFFSHORE EUROPEAN GLOBAL SCHOOL UNIVERSITY, ISTANBUL)",
       "reasons": [
-        "international eligibility is not explicitly confirmed",
-        "programme-specific intake is unpublished",
-        "no uniquely applicable current international tuition"
+        "international eligibility is not explicitly confirmed"
       ]
     },
     {
       "code": "USM-PHD-ARTICLE-1503-7E2AA05C",
       "nameEnOfficial": "DOCTOR OF PHILOSOPHY (OFFSHORE EUROPEAN GLOBAL SCHOOL UNIVERSITY, ISTANBUL)",
       "reasons": [
-        "international eligibility is not explicitly confirmed",
-        "no uniquely applicable current international tuition"
+        "international eligibility is not explicitly confirmed"
       ]
     },
     {
       "code": "USM-PHD-ARTICLE-1515-A74EBF7B",
       "nameEnOfficial": "DOCTOR OF PHILOSOPHY (OFFSHORE EUROPEAN GLOBAL SCHOOL UNIVERSITY, ISTANBUL)",
       "reasons": [
-        "international eligibility is not explicitly confirmed",
-        "programme-specific intake is unpublished",
-        "no uniquely applicable current international tuition"
+        "international eligibility is not explicitly confirmed"
       ]
     },
     {
       "code": "USM-PHD-ARTICLE-1519-B908433A",
       "nameEnOfficial": "DOCTOR OF PHILOSOPHY (OFFSHORE EUROPEAN GLOBAL SCHOOL UNIVERSITY, ISTANBUL)",
       "reasons": [
-        "international eligibility is not explicitly confirmed",
-        "programme-specific intake is unpublished",
-        "no uniquely applicable current international tuition"
+        "international eligibility is not explicitly confirmed"
       ]
     },
     {
       "code": "USM-PHD-ARTICLE-1492-B74C2ACF",
       "nameEnOfficial": "DOCTOR OF PHILOSOPHY (OFFSHORE EUROPEAN GLOBAL SCHOOL UNIVERSITY, ISTANBUL)",
       "reasons": [
-        "international eligibility is not explicitly confirmed",
-        "no uniquely applicable current international tuition"
+        "international eligibility is not explicitly confirmed"
       ]
     },
     {
       "code": "USM-PHD-ARTICLE-1491-B0781791",
       "nameEnOfficial": "DOCTOR OF PHILOSOPHY (OFFSHORE EUROPEAN GLOBAL SCHOOL UNIVERSITY, ISTANBUL)",
       "reasons": [
-        "international eligibility is not explicitly confirmed",
-        "programme-specific intake is unpublished",
-        "no uniquely applicable current international tuition"
+        "international eligibility is not explicitly confirmed"
       ]
     },
     {
       "code": "USM-PHD-ARTICLE-1490-21A1FFAC",
       "nameEnOfficial": "DOCTOR OF PHILOSOPHY (OFFSHORE EUROPEAN GLOBAL SCHOOL UNIVERSITY, ISTANBUL)",
       "reasons": [
-        "international eligibility is not explicitly confirmed",
-        "programme-specific intake is unpublished",
-        "no uniquely applicable current international tuition"
+        "international eligibility is not explicitly confirmed"
       ]
     },
     {
       "code": "USM-PHD-ARTICLE-1487-68D66E5A",
       "nameEnOfficial": "DOCTOR OF PHILOSOPHY (OFFSHORE EUROPEAN GLOBAL SCHOOL UNIVERSITY, ISTANBUL)",
       "reasons": [
-        "international eligibility is not explicitly confirmed",
-        "programme-specific intake is unpublished",
-        "no uniquely applicable current international tuition"
+        "international eligibility is not explicitly confirmed"
       ]
     },
     {
       "code": "USM-PHD-ARTICLE-1486-350D1D27",
       "nameEnOfficial": "DOCTOR OF PHILOSOPHY (OFFSHORE EUROPEAN GLOBAL SCHOOL UNIVERSITY, ISTANBUL)",
       "reasons": [
-        "international eligibility is not explicitly confirmed",
-        "programme-specific intake is unpublished",
-        "no uniquely applicable current international tuition"
+        "international eligibility is not explicitly confirmed"
       ]
     },
     {
       "code": "USM-PHD-ARTICLE-1493-9DF5CFA5",
       "nameEnOfficial": "DOCTOR OF PHILOSOPHY (OFFSHORE MINJIANG UNIVERSITY)",
       "reasons": [
-        "international eligibility is not explicitly confirmed",
-        "no uniquely applicable current international tuition"
+        "international eligibility is not explicitly confirmed"
       ]
     },
     {
       "code": "USM-PHD-ARTICLE-1516-5FCB065D",
       "nameEnOfficial": "DOCTOR OF PHILOSOPHY (OFFSHORE NORTHEASTERN UNIVERSITY, QINHUANGDAO)",
       "reasons": [
-        "international eligibility is not explicitly confirmed",
-        "programme-specific intake is unpublished",
-        "no uniquely applicable current international tuition"
+        "international eligibility is not explicitly confirmed"
       ]
     },
     {
       "code": "USM-PHD-ARTICLE-1494-9A5B9F7D",
       "nameEnOfficial": "DOCTOR OF PHILOSOPHY (OFFSHORE UNIVERSITAS INDONESIA)",
       "reasons": [
-        "international eligibility is not explicitly confirmed",
-        "no uniquely applicable current international tuition"
+        "international eligibility is not explicitly confirmed"
       ]
     },
     {
       "code": "USM-PHD-ARTICLE-1517-D53FD044",
       "nameEnOfficial": "DOCTOR OF PHILOSOPHY (OFFSHORE YANGTZE NORMAL UNIVERSITY)",
       "reasons": [
-        "international eligibility is not explicitly confirmed",
-        "programme-specific intake is unpublished",
-        "no uniquely applicable current international tuition"
-      ]
-    },
-    {
-      "code": "USM-PHD-ARTICLE-222-3C8B9B11",
-      "nameEnOfficial": "DOCTOR OF PHILOSOPHY (PLANNING STUDIES)",
-      "reasons": [
-        "programme-specific intake is unpublished"
-      ]
-    },
-    {
-      "code": "USM-PHD-ARTICLE-232-7F458489",
-      "nameEnOfficial": "DOCTOR OF PHILOSOPHY (PROJECT MANAGEMENT)",
-      "reasons": [
-        "programme-specific intake is unpublished"
-      ]
-    },
-    {
-      "code": "USM-PHD-ARTICLE-235-AE06FB17",
-      "nameEnOfficial": "DOCTOR OF PHILOSOPHY (QUANTITY SURVEYING)",
-      "reasons": [
-        "programme-specific intake is unpublished"
-      ]
-    },
-    {
-      "code": "USM-PHD-ARTICLE-556-D76B8766",
-      "nameEnOfficial": "DOCTOR OF PHILOSOPHY (SPORTS SCIENCE)",
-      "reasons": [
-        "programme-specific intake is unpublished"
+        "international eligibility is not explicitly confirmed"
       ]
     },
     {
       "code": "USM-PHD-ARTICLE-1479-0BF3C6B6",
       "nameEnOfficial": "DOCTOR OF PHILOSOPHY - OFFSHORE EUROPEAN GLOBAL SCHOOL ISTANBUL GELISIM UNIVERSITY",
       "reasons": [
-        "international eligibility is not explicitly confirmed",
-        "programme-specific intake is unpublished",
-        "no uniquely applicable current international tuition"
+        "international eligibility is not explicitly confirmed"
       ]
     }
   ],
@@ -722,5 +271,5 @@
     "usm-coursework-mixed-candidature": "10a840d099c43a52c4dfaf7ab9b1173549eded928a2a55b8d9e987554afd77a0"
   },
   "databaseWrite": "not-performed",
-  "publicationDecision": "blocked"
+  "publicationDecision": "publish-ready-subset"
 }

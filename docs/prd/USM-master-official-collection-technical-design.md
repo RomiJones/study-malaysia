@@ -22,11 +22,13 @@
   - 批量处理正常记录，只保留无法自动裁决的例外队列。
   - 专业页明确公布 2026/2027 新费率时，优先于 2025/2026 总表。
 - `scripts/verify-usm-master-commercial-candidate.py`
-  - 校验 274 条目录记录、110 条具名收费行、培养模式、申请材料、字段状态和来源哈希。
+  - 校验 305 条当前目录记录、110 条具名收费行、培养模式、申请材料、字段状态和来源哈希。
 - `data/imports/usm/2026-06-14/master-official-source.json`
   - 保存本轮来源图、目录记录、费用结构、详情证据和审计结果。
 - `data/imports/usm/2026-06-14/master-commercial-candidate.json`
   - 保存目录级完整候选、费用分配、申请材料、未公布状态和发布门禁。
+- `data/imports/usm/2026-06-14/sources`
+  - 保存当前目录、费用页、费用 PDF、IPS 规则页和申请指南的版本化原始证据；干净环境可按 SHA-256 离线复核。
 - `tmp/usm-master-details`
   - 保存可重试的传输缓存，不作为业务数据或发布来源。
 
@@ -70,8 +72,8 @@ python3 scripts/verify-usm-master-official.py \
 
 python3 scripts/build-usm-master-commercial-candidate.py \
   --source data/imports/usm/2026-06-14/master-official-source.json \
-  --application-guide tmp/pdfs/usm-master/online-application-guide-2026.pdf \
-  --coursework-mixed-html tmp/usm-ips-coursework-mixed.html \
+  --application-guide data/imports/usm/2026-06-14/sources/online-application-guide-2026.pdf \
+  --coursework-mixed-html data/imports/usm/2026-06-14/sources/coursework-mixed-candidature.html \
   --output data/imports/usm/2026-06-14/master-commercial-candidate.json
 
 python3 scripts/verify-usm-master-commercial-candidate.py \

@@ -36,7 +36,7 @@
       "academicSession": null,
       "status": "verified",
       "sha256": "ccb852d13ccb650d2d80006c1ff18bf9129002fca83175db9158436d66f6be5f",
-      "localPath": "tmp/usm-master-programmes-jina-https.md",
+      "localPath": "data/imports/usm/2026-06-14/sources/pg-current-directory.md",
       "transport": "public-reader-proxy because direct requests are blocked by USM WAF"
     },
     {
@@ -49,7 +49,7 @@
       "academicSession": "2025/2026",
       "status": "verified",
       "sha256": "3597c8977755aa2f18fb3b389c813435989bd62cc54318f26b8e573c10401076",
-      "localPath": "tmp/usm-pg-fee-page.md"
+      "localPath": "data/imports/usm/2026-06-14/sources/pg-fee-page.md"
     },
     {
       "id": "usm-pg-fees-2025-2026",
@@ -61,7 +61,7 @@
       "academicSession": "2025/2026",
       "status": "verified",
       "sha256": "24bc178e7da6de039ff9e5cd866c580a5f3ed1c73db04d08b8f7ca42cb75bcef",
-      "localPath": "tmp/pdfs/usm-master/pg-fees-2025-03-11.pdf",
+      "localPath": "data/imports/usm/2026-06-14/sources/pg-fees-2025-2026.pdf",
       "sourcePage": 2
     },
     {
@@ -74,7 +74,7 @@
       "academicSession": null,
       "status": "verified",
       "sha256": "ccb852d13ccb650d2d80006c1ff18bf9129002fca83175db9158436d66f6be5f",
-      "localPath": "tmp/usm-master-programmes-jina-https.md",
+      "localPath": "data/imports/usm/2026-06-14/sources/pg-current-directory.md",
       "evidenceNote": "The same general requirement text is embedded in the canonical directory snapshot."
     },
     {
@@ -87,7 +87,7 @@
       "academicSession": "2026/2027",
       "status": "verified",
       "sha256": "8bc410b05fc4909de3d3bf6187cd6acd92bc760bfc293f0b2a2b3490476bec9c",
-      "localPath": "tmp/usm-ips-admission-official.html"
+      "localPath": "data/imports/usm/2026-06-14/sources/ips-admission-downloads.html"
     },
     {
       "id": "usm-ips-research-mode-registration",
@@ -99,7 +99,7 @@
       "academicSession": null,
       "status": "verified",
       "sha256": "604bd880c1a0c8528cb7c4233e86c08f80ba4075a126c14b15d46bb23eff2d3e",
-      "localPath": "tmp/usm-ips-research-mode.html"
+      "localPath": "data/imports/usm/2026-06-14/sources/ips-research-mode-registration.html"
     },
     {
       "id": "usm-onlineips-application-guide-2026",
@@ -111,7 +111,7 @@
       "academicSession": "2026",
       "status": "verified",
       "sha256": "92559bbca13240e19d9cec7b761c7718eace5fa86648f3a13a0ea46fd443ece3",
-      "localPath": "tmp/pdfs/usm-master/online-application-guide-2026.pdf"
+      "localPath": "data/imports/usm/2026-06-14/sources/online-application-guide-2026.pdf"
     },
     {
       "id": "usm-coursework-mixed-candidature",
@@ -123,7 +123,7 @@
       "academicSession": null,
       "status": "verified",
       "sha256": "10a840d099c43a52c4dfaf7ab9b1173549eded928a2a55b8d9e987554afd77a0",
-      "localPath": "tmp/usm-ips-coursework-mixed.html"
+      "localPath": "data/imports/usm/2026-06-14/sources/coursework-mixed-candidature.html"
     }
   ],
   "applicationDocuments": {
@@ -2793,7 +2793,9 @@
       "officialSourceStatus": "review-required",
       "publicDisplayStatus": "needs-review",
       "reviewReasons": [
-        "official numeric duration is unpublished",
+        "official numeric duration is unpublished"
+      ],
+      "publicationWarnings": [
         "programme-specific intake is unpublished"
       ],
       "fee": {
@@ -2928,6 +2930,7 @@
       "officialSourceStatus": "verified",
       "publicDisplayStatus": "ready",
       "reviewReasons": [],
+      "publicationWarnings": [],
       "fee": {
         "status": "verified-current-official-fee",
         "tuitionAmount": 18225.0,
@@ -3060,6 +3063,7 @@
       "officialSourceStatus": "verified",
       "publicDisplayStatus": "not-available-for-international",
       "reviewReasons": [],
+      "publicationWarnings": [],
       "fee": {
         "status": "verified-current-official-fee",
         "tuitionAmount": 18000.0,
@@ -3192,6 +3196,7 @@
       "officialSourceStatus": "verified",
       "publicDisplayStatus": "ready",
       "reviewReasons": [],
+      "publicationWarnings": [],
       "fee": {
         "status": "verified-current-official-fee",
         "tuitionAmount": 18000.0,
@@ -3324,6 +3329,7 @@
       "officialSourceStatus": "verified",
       "publicDisplayStatus": "ready",
       "reviewReasons": [],
+      "publicationWarnings": [],
       "fee": {
         "status": "verified-current-official-fee",
         "tuitionAmount": 18000.0,
@@ -3456,6 +3462,7 @@
       "officialSourceStatus": "verified",
       "publicDisplayStatus": "not-available-for-international",
       "reviewReasons": [],
+      "publicationWarnings": [],
       "fee": {
         "status": "verified-current-official-fee",
         "tuitionAmount": 18000.0,
@@ -3511,7 +3518,10 @@
         "evidenceText": "Current official fee authority publishes an international fee for this offering."
       },
       "academicSession": "current-directory-and-2025/2026-fees",
-      "durationValue": null,
+      "durationValue": {
+        "min": 3.0,
+        "max": 5.0
+      },
       "durationUnit": "year",
       "durationOfficial": "Full-Time: min. 3 years / max. 5 years",
       "provenance": "official-unpublished",
@@ -3583,9 +3593,9 @@
       "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=413&catid=55",
       "officialVerifiedAt": "2026-06-14T15:01:36Z",
       "officialSourceStatus": "review-required",
-      "publicDisplayStatus": "needs-review",
-      "reviewReasons": [
-        "official numeric duration is unpublished",
+      "publicDisplayStatus": "ready",
+      "reviewReasons": [],
+      "publicationWarnings": [
         "programme-specific intake is unpublished"
       ],
       "fee": {
@@ -3649,6 +3659,7 @@
       },
       "durationUnit": "year",
       "durationOfficial": "Full-time : Min 4 semesters / Max 10 semesters Part-time : Min 6 semesters /Max 15 semesters",
+      "provenance": "programme-specific",
       "fullTimeSemesters": {
         "min": 4,
         "max": 10
@@ -3657,7 +3668,6 @@
         "min": 6,
         "max": 15
       },
-      "provenance": "programme-specific",
       "intakeMonths": [],
       "officialIntake": "April & October",
       "officialAcademicRequirement": "Applicants should possess one of the following: A Master's degree in research mode; or A Master’s degree in related area with CGPA 3.00/4;or A Master’s degree in related area with CGPA 2.50-2.99/4 with additional requirements; or Bachelor’s degree in related area with minimum CGPA 3.67/4 (fast-track to PhD)",
@@ -3728,6 +3738,7 @@
       "officialSourceStatus": "verified",
       "publicDisplayStatus": "ready",
       "reviewReasons": [],
+      "publicationWarnings": [],
       "fee": {
         "status": "verified-calculated-total-range",
         "tuitionAmount": {
@@ -3794,6 +3805,7 @@
       },
       "durationUnit": "year",
       "durationOfficial": "Full Time: Min 4 semesters / Max 10 semesters Part Time: Min 6 semesters / Max 15 semesters",
+      "provenance": "official-unpublished",
       "fullTimeSemesters": {
         "min": 4,
         "max": 10
@@ -3802,7 +3814,6 @@
         "min": 6,
         "max": 15
       },
-      "provenance": "official-unpublished",
       "intakeMonths": [],
       "officialIntake": "",
       "officialAcademicRequirement": "Applicants should possess one of the following: A Master's degree in research mode; or A Master’s degree in related area with CGPA 3.00/4;or A Master’s degree in related area with CGPA 2.50-2.99/4 with additional requirements; or Bachelor’s degree in related area with minimum CGPA 3.67/4 (fast-track to PhD)",
@@ -3871,8 +3882,9 @@
       "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=557&catid=55",
       "officialVerifiedAt": "2026-06-14T15:01:36Z",
       "officialSourceStatus": "review-required",
-      "publicDisplayStatus": "needs-review",
-      "reviewReasons": [
+      "publicDisplayStatus": "ready",
+      "reviewReasons": [],
+      "publicationWarnings": [
         "programme-specific intake is unpublished"
       ],
       "fee": {
@@ -4018,8 +4030,9 @@
       "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=246&catid=51",
       "officialVerifiedAt": "2026-06-14T15:01:36Z",
       "officialSourceStatus": "review-required",
-      "publicDisplayStatus": "needs-review",
-      "reviewReasons": [
+      "publicDisplayStatus": "ready",
+      "reviewReasons": [],
+      "publicationWarnings": [
         "programme-specific intake is unpublished"
       ],
       "fee": {
@@ -4088,6 +4101,7 @@
       },
       "durationUnit": "year",
       "durationOfficial": "Full-time : Min 4 semesters / Max 10 semesters Part-time : Min 6 semesters /Max 15 semesters",
+      "provenance": "official-unpublished",
       "fullTimeSemesters": {
         "min": 4,
         "max": 10
@@ -4096,7 +4110,6 @@
         "min": 6,
         "max": 15
       },
-      "provenance": "official-unpublished",
       "intakeMonths": [],
       "officialIntake": "",
       "officialAcademicRequirement": "Applicants should possess one of the following: A Master's degree in research mode; or A Master’s degree in related area with CGPA 3.00/4;or A Master’s degree in related area with CGPA 2.50-2.99/4 with additional requirements; or Bachelor’s degree in related area with minimum CGPA 3.67/4 (fast-track to PhD)",
@@ -4165,8 +4178,9 @@
       "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=200&catid=51",
       "officialVerifiedAt": "2026-06-14T15:01:36Z",
       "officialSourceStatus": "review-required",
-      "publicDisplayStatus": "needs-review",
-      "reviewReasons": [
+      "publicDisplayStatus": "ready",
+      "reviewReasons": [],
+      "publicationWarnings": [
         "programme-specific intake is unpublished"
       ],
       "fee": {
@@ -4312,8 +4326,9 @@
       "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=167&catid=50",
       "officialVerifiedAt": "2026-06-14T15:01:36Z",
       "officialSourceStatus": "review-required",
-      "publicDisplayStatus": "needs-review",
-      "reviewReasons": [
+      "publicDisplayStatus": "ready",
+      "reviewReasons": [],
+      "publicationWarnings": [
         "programme-specific intake is unpublished"
       ],
       "fee": {
@@ -4382,6 +4397,7 @@
       },
       "durationUnit": "year",
       "durationOfficial": "Full-time: Min 4 semesters / Max 10 semesters Part-time: Min 6 semesters / Max 15 semesters",
+      "provenance": "official-unpublished",
       "fullTimeSemesters": {
         "min": 4,
         "max": 10
@@ -4390,7 +4406,6 @@
         "min": 6,
         "max": 15
       },
-      "provenance": "official-unpublished",
       "intakeMonths": [],
       "officialIntake": "",
       "officialAcademicRequirement": "Applicants should possess one of the following: A Master’s degree in related area with CGPA 3.00/4; or A Master’s degree in related area with CGPA 2.50-2.99/4 with additional requirements; or Bachelor’s degree in related area with minimum CGPA 3.67/4 (fast-track to PhD)",
@@ -4459,8 +4474,9 @@
       "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=153&catid=50",
       "officialVerifiedAt": "2026-06-14T15:01:36Z",
       "officialSourceStatus": "review-required",
-      "publicDisplayStatus": "needs-review",
-      "reviewReasons": [
+      "publicDisplayStatus": "ready",
+      "reviewReasons": [],
+      "publicationWarnings": [
         "programme-specific intake is unpublished"
       ],
       "fee": {
@@ -4529,6 +4545,7 @@
       },
       "durationUnit": "year",
       "durationOfficial": "Full-time: Min 4 semesters / Max 10 semesters Part-time: Min 6 semesters / Max 15 semesters",
+      "provenance": "official-unpublished",
       "fullTimeSemesters": {
         "min": 4,
         "max": 10
@@ -4537,7 +4554,6 @@
         "min": 6,
         "max": 15
       },
-      "provenance": "official-unpublished",
       "intakeMonths": [],
       "officialIntake": "",
       "officialAcademicRequirement": "Applicants should possess one of the following: A Master's degree in research mode; or A Master’s degree in related area with CGPA 3.00/4;or A Master’s degree in related area with CGPA 2.50-2.99/4 with additional requirements; or Bachelor’s degree in related area with minimum CGPA 3.67/4 (fast-track to PhD)",
@@ -4606,8 +4622,9 @@
       "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=390&catid=54",
       "officialVerifiedAt": "2026-06-14T15:01:36Z",
       "officialSourceStatus": "review-required",
-      "publicDisplayStatus": "needs-review",
-      "reviewReasons": [
+      "publicDisplayStatus": "ready",
+      "reviewReasons": [],
+      "publicationWarnings": [
         "programme-specific intake is unpublished"
       ],
       "fee": {
@@ -4753,8 +4770,9 @@
       "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=392&catid=54",
       "officialVerifiedAt": "2026-06-14T15:01:36Z",
       "officialSourceStatus": "review-required",
-      "publicDisplayStatus": "needs-review",
-      "reviewReasons": [
+      "publicDisplayStatus": "ready",
+      "reviewReasons": [],
+      "publicationWarnings": [
         "programme-specific intake is unpublished"
       ],
       "fee": {
@@ -4900,8 +4918,9 @@
       "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=395&catid=54",
       "officialVerifiedAt": "2026-06-14T15:01:36Z",
       "officialSourceStatus": "review-required",
-      "publicDisplayStatus": "needs-review",
-      "reviewReasons": [
+      "publicDisplayStatus": "ready",
+      "reviewReasons": [],
+      "publicationWarnings": [
         "programme-specific intake is unpublished"
       ],
       "fee": {
@@ -5047,8 +5066,9 @@
       "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=402&catid=54",
       "officialVerifiedAt": "2026-06-14T15:01:36Z",
       "officialSourceStatus": "review-required",
-      "publicDisplayStatus": "needs-review",
-      "reviewReasons": [
+      "publicDisplayStatus": "ready",
+      "reviewReasons": [],
+      "publicationWarnings": [
         "programme-specific intake is unpublished"
       ],
       "fee": {
@@ -5116,7 +5136,7 @@
         "max": 5.0
       },
       "durationUnit": "year",
-      "durationOfficial": "Full-time: Min 24 months / Max 60 months Part-time: Min 36 months / Max 90 months",
+      "durationOfficial": "Full-time: Min 4 semesters / Max 10 semesters",
       "fullTimeSemesters": {
         "min": 4,
         "max": 10
@@ -5196,6 +5216,7 @@
       "officialSourceStatus": "verified",
       "publicDisplayStatus": "ready",
       "reviewReasons": [],
+      "publicationWarnings": [],
       "fee": {
         "status": "verified-calculated-total-range",
         "tuitionAmount": {
@@ -5339,8 +5360,9 @@
       "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=407&catid=54",
       "officialVerifiedAt": "2026-06-14T15:01:36Z",
       "officialSourceStatus": "review-required",
-      "publicDisplayStatus": "needs-review",
-      "reviewReasons": [
+      "publicDisplayStatus": "ready",
+      "reviewReasons": [],
+      "publicationWarnings": [
         "programme-specific intake is unpublished"
       ],
       "fee": {
@@ -5486,8 +5508,9 @@
       "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=404&catid=54",
       "officialVerifiedAt": "2026-06-14T15:01:36Z",
       "officialSourceStatus": "review-required",
-      "publicDisplayStatus": "needs-review",
-      "reviewReasons": [
+      "publicDisplayStatus": "ready",
+      "reviewReasons": [],
+      "publicationWarnings": [
         "programme-specific intake is unpublished"
       ],
       "fee": {
@@ -5633,8 +5656,9 @@
       "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=558&catid=55",
       "officialVerifiedAt": "2026-06-14T15:01:36Z",
       "officialSourceStatus": "review-required",
-      "publicDisplayStatus": "needs-review",
-      "reviewReasons": [
+      "publicDisplayStatus": "ready",
+      "reviewReasons": [],
+      "publicationWarnings": [
         "programme-specific intake is unpublished"
       ],
       "fee": {
@@ -5780,8 +5804,9 @@
       "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=555&catid=55",
       "officialVerifiedAt": "2026-06-14T15:01:36Z",
       "officialSourceStatus": "review-required",
-      "publicDisplayStatus": "needs-review",
-      "reviewReasons": [
+      "publicDisplayStatus": "ready",
+      "reviewReasons": [],
+      "publicationWarnings": [
         "programme-specific intake is unpublished"
       ],
       "fee": {
@@ -5850,6 +5875,7 @@
       },
       "durationUnit": "year",
       "durationOfficial": "Full-time: Min 4 semesters / Max 10 semesters Part-time: Min 6 semesters / Max 15 semesters",
+      "provenance": "official-unpublished",
       "fullTimeSemesters": {
         "min": 4,
         "max": 10
@@ -5858,7 +5884,6 @@
         "min": 6,
         "max": 15
       },
-      "provenance": "official-unpublished",
       "intakeMonths": [],
       "officialIntake": "",
       "officialAcademicRequirement": "Applicants should possess the following: A Master's degree in research mode; or A Master’s degree in related area with CGPA 3.00/4;or A Master’s degree in related area with CGPA 2.50-2.99/4 with additional requirements; or Bachelor’s degree in related area with minimum CGPA 3.67/4 (fast-track to PhD)",
@@ -5927,8 +5952,9 @@
       "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=807&catid=55",
       "officialVerifiedAt": "2026-06-14T15:01:36Z",
       "officialSourceStatus": "review-required",
-      "publicDisplayStatus": "needs-review",
-      "reviewReasons": [
+      "publicDisplayStatus": "ready",
+      "reviewReasons": [],
+      "publicationWarnings": [
         "programme-specific intake is unpublished"
       ],
       "fee": {
@@ -5997,6 +6023,7 @@
       },
       "durationUnit": "year",
       "durationOfficial": "Full-time : Min 4 semesters / Max 10 semesters Part-time : Min 6 semesters / Max 15 semesters",
+      "provenance": "official-unpublished",
       "fullTimeSemesters": {
         "min": 4,
         "max": 10
@@ -6005,7 +6032,6 @@
         "min": 6,
         "max": 15
       },
-      "provenance": "official-unpublished",
       "intakeMonths": [],
       "officialIntake": "",
       "officialAcademicRequirement": "Applicants should possess one of the following: A Master's degree in research mode; or A Master’s degree in related area with CGPA 3.00/4;or A Master’s degree in related area with CGPA 2.50-2.99/4 with additional requirements; or Bachelor’s degree in related area with minimum CGPA 3.67/4 (fast-track to PhD)",
@@ -6074,8 +6100,9 @@
       "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=233&catid=51",
       "officialVerifiedAt": "2026-06-14T15:01:36Z",
       "officialSourceStatus": "review-required",
-      "publicDisplayStatus": "needs-review",
-      "reviewReasons": [
+      "publicDisplayStatus": "ready",
+      "reviewReasons": [],
+      "publicationWarnings": [
         "programme-specific intake is unpublished"
       ],
       "fee": {
@@ -6144,6 +6171,7 @@
       },
       "durationUnit": "year",
       "durationOfficial": "Full-time : Min 4 semesters / Max 10 semesters Part-time : Min 6 semesters / Max 15 semesters",
+      "provenance": "official-unpublished",
       "fullTimeSemesters": {
         "min": 4,
         "max": 10
@@ -6152,7 +6180,6 @@
         "min": 6,
         "max": 15
       },
-      "provenance": "official-unpublished",
       "intakeMonths": [],
       "officialIntake": "",
       "officialAcademicRequirement": "Applicants should possess one of the following: A Master's degree in research mode; or A Master’s degree in related area with CGPA 3.00/4;or A Master’s degree in related area with CGPA 2.50-2.99/4 with additional requirements; or Bachelor’s degree in related area with minimum CGPA 3.67/4 (fast-track to PhD)",
@@ -6221,8 +6248,9 @@
       "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=234&catid=51",
       "officialVerifiedAt": "2026-06-14T15:01:36Z",
       "officialSourceStatus": "review-required",
-      "publicDisplayStatus": "needs-review",
-      "reviewReasons": [
+      "publicDisplayStatus": "ready",
+      "reviewReasons": [],
+      "publicationWarnings": [
         "programme-specific intake is unpublished"
       ],
       "fee": {
@@ -6368,8 +6396,9 @@
       "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=888&catid=55",
       "officialVerifiedAt": "2026-06-14T15:01:36Z",
       "officialSourceStatus": "review-required",
-      "publicDisplayStatus": "needs-review",
-      "reviewReasons": [
+      "publicDisplayStatus": "ready",
+      "reviewReasons": [],
+      "publicationWarnings": [
         "programme-specific intake is unpublished"
       ],
       "fee": {
@@ -6515,8 +6544,9 @@
       "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=244&catid=51",
       "officialVerifiedAt": "2026-06-14T15:01:36Z",
       "officialSourceStatus": "review-required",
-      "publicDisplayStatus": "needs-review",
-      "reviewReasons": [
+      "publicDisplayStatus": "ready",
+      "reviewReasons": [],
+      "publicationWarnings": [
         "programme-specific intake is unpublished"
       ],
       "fee": {
@@ -6585,6 +6615,7 @@
       },
       "durationUnit": "year",
       "durationOfficial": "Full-time : Min 4 semesters / Max 10 semesters Part-time: Min 6 semesters/ Max 15 semesters",
+      "provenance": "official-unpublished",
       "fullTimeSemesters": {
         "min": 4,
         "max": 10
@@ -6593,7 +6624,6 @@
         "min": 6,
         "max": 15
       },
-      "provenance": "official-unpublished",
       "intakeMonths": [],
       "officialIntake": "",
       "officialAcademicRequirement": "Applicants should possess one of the following: A Master’s degree in related area with CGPA 3.00/4;or A Master’s degree in related area with CGPA 2.50-2.99/4 with additional requirements; or Bachelor’s degree in related area with minimum CGPA 3.67/4 (fast-track to PhD)",
@@ -6662,8 +6692,9 @@
       "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=169&catid=50",
       "officialVerifiedAt": "2026-06-14T15:01:36Z",
       "officialSourceStatus": "review-required",
-      "publicDisplayStatus": "needs-review",
-      "reviewReasons": [
+      "publicDisplayStatus": "ready",
+      "reviewReasons": [],
+      "publicationWarnings": [
         "programme-specific intake is unpublished"
       ],
       "fee": {
@@ -6809,8 +6840,9 @@
       "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=217&catid=51",
       "officialVerifiedAt": "2026-06-14T15:01:36Z",
       "officialSourceStatus": "review-required",
-      "publicDisplayStatus": "needs-review",
-      "reviewReasons": [
+      "publicDisplayStatus": "ready",
+      "reviewReasons": [],
+      "publicationWarnings": [
         "programme-specific intake is unpublished"
       ],
       "fee": {
@@ -6879,6 +6911,7 @@
       },
       "durationUnit": "year",
       "durationOfficial": "Full-time: Min 4 semesters / Max 10 semesters Part-time: Min 6 semesters /Max 15 semesters",
+      "provenance": "official-unpublished",
       "fullTimeSemesters": {
         "min": 4,
         "max": 10
@@ -6887,7 +6920,6 @@
         "min": 6,
         "max": 15
       },
-      "provenance": "official-unpublished",
       "intakeMonths": [],
       "officialIntake": "",
       "officialAcademicRequirement": "![Image 3](https://admission.usm.my/templates/yootheme/cache/ea/Centre for Global Archaeological Research-ea77f464.jpeg) Applicants should possess the following: A Master’s degree with CGPA 3.00/4 or Bachelor’s (CGPA 3.67/4) degree in a related field (fast-track to PhD) Application for admission opened throughout the year.",
@@ -6956,8 +6988,9 @@
       "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=333&catid=52",
       "officialVerifiedAt": "2026-06-14T15:01:36Z",
       "officialSourceStatus": "review-required",
-      "publicDisplayStatus": "needs-review",
-      "reviewReasons": [
+      "publicDisplayStatus": "ready",
+      "reviewReasons": [],
+      "publicationWarnings": [
         "programme-specific intake is unpublished"
       ],
       "fee": {
@@ -7026,6 +7059,7 @@
       },
       "durationUnit": "year",
       "durationOfficial": "Full-time: Min 4 semesters / Max 10 semesters Part-time: Min 6 semesters / Max 15 semesters",
+      "provenance": "official-unpublished",
       "fullTimeSemesters": {
         "min": 4,
         "max": 10
@@ -7034,7 +7068,6 @@
         "min": 6,
         "max": 15
       },
-      "provenance": "official-unpublished",
       "intakeMonths": [],
       "officialIntake": "",
       "officialAcademicRequirement": "Applicants should possess one of the following: A Master's degree in research mode; or A Master’s degree in related area with CGPA 3.00/4;or A Master’s degree in related area with CGPA 2.50-2.99/4 with additional requirements Note: All international candidates are required to attend interview session conducted by the school.",
@@ -7103,8 +7136,9 @@
       "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=372&catid=53",
       "officialVerifiedAt": "2026-06-14T15:01:36Z",
       "officialSourceStatus": "review-required",
-      "publicDisplayStatus": "needs-review",
-      "reviewReasons": [
+      "publicDisplayStatus": "ready",
+      "reviewReasons": [],
+      "publicationWarnings": [
         "programme-specific intake is unpublished"
       ],
       "fee": {
@@ -7250,8 +7284,9 @@
       "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=273&catid=52",
       "officialVerifiedAt": "2026-06-14T15:01:36Z",
       "officialSourceStatus": "review-required",
-      "publicDisplayStatus": "needs-review",
-      "reviewReasons": [
+      "publicDisplayStatus": "ready",
+      "reviewReasons": [],
+      "publicationWarnings": [
         "programme-specific intake is unpublished"
       ],
       "fee": {
@@ -7320,6 +7355,7 @@
       },
       "durationUnit": "year",
       "durationOfficial": "Full-time : Min 4 semesters / Max 10 semesters Part-time: Min 6 semesters/ Max 15 semesters",
+      "provenance": "official-unpublished",
       "fullTimeSemesters": {
         "min": 4,
         "max": 10
@@ -7328,7 +7364,6 @@
         "min": 6,
         "max": 15
       },
-      "provenance": "official-unpublished",
       "intakeMonths": [],
       "officialIntake": "",
       "officialAcademicRequirement": "Candidates are required to possess: A Master degree in related field (research mode); or A Master’s degree in related area with CGPA 3.00/4;or A Master’s degree in related area with CGPA 2.50-2.99/4 with additional requirements; or Bachelor’s degree in related area with minimum CGPA 3.67/4 (fast-track to PhD) In cases where the candidates do not meet the minimum CGPA requirements, research experience or journal publications may be used to support applications.",
@@ -7397,8 +7432,9 @@
       "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=170&catid=50",
       "officialVerifiedAt": "2026-06-14T15:01:36Z",
       "officialSourceStatus": "review-required",
-      "publicDisplayStatus": "needs-review",
-      "reviewReasons": [
+      "publicDisplayStatus": "ready",
+      "reviewReasons": [],
+      "publicationWarnings": [
         "programme-specific intake is unpublished"
       ],
       "fee": {
@@ -7467,6 +7503,7 @@
       },
       "durationUnit": "year",
       "durationOfficial": "Full-time: Min 4 semesters / Max 10 semesters Part-time: Min 6 semesters /Max 15 semesters",
+      "provenance": "official-unpublished",
       "fullTimeSemesters": {
         "min": 4,
         "max": 10
@@ -7475,7 +7512,6 @@
         "min": 6,
         "max": 15
       },
-      "provenance": "official-unpublished",
       "intakeMonths": [],
       "officialIntake": "",
       "officialAcademicRequirement": "Applicants should possess one of the following: A Master’s degree in related area with CGPA 3.00/4;or A Master’s degree in research mode; or Bachelor’s degree in related area with minimum CGPA 3.67/4 (fast-track to PhD)",
@@ -7544,8 +7580,9 @@
       "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=271&catid=52",
       "officialVerifiedAt": "2026-06-14T15:01:36Z",
       "officialSourceStatus": "review-required",
-      "publicDisplayStatus": "needs-review",
-      "reviewReasons": [
+      "publicDisplayStatus": "ready",
+      "reviewReasons": [],
+      "publicationWarnings": [
         "programme-specific intake is unpublished"
       ],
       "fee": {
@@ -7603,9 +7640,9 @@
       "offshorePartnerEn": null,
       "applicantScope": "international",
       "internationalEligibility": {
-        "status": "not-confirmed",
-        "provenance": "not-confirmed",
-        "evidenceText": ""
+        "status": "eligible",
+        "provenance": "programme-specific",
+        "evidenceText": "Current official fee authority publishes an international fee for this offering."
       },
       "academicSession": "current-directory-and-2025/2026-fees",
       "durationValue": {
@@ -7614,15 +7651,11 @@
       },
       "durationUnit": "year",
       "durationOfficial": "Full-time: Min 4 semesters / Max 10 semesters Part-time: Min 6 semesters /Max 15 semeste",
+      "provenance": "official-unpublished",
       "fullTimeSemesters": {
         "min": 4,
         "max": 10
       },
-      "partTimeSemesters": {
-        "min": 6,
-        "max": 15
-      },
-      "provenance": "official-unpublished",
       "intakeMonths": [],
       "officialIntake": "",
       "officialAcademicRequirement": "Applicants should possess one of the following: A Master's degree in research mode; or A Master’s degree in related area with CGPA 3.00/4; or A Master’s degree in related area with CGPA 2.50-2.99/4 with additional requirements; or Bachelor’s degree in related area with minimum CGPA 3.67/4 (fast-track to PhD)",
@@ -7691,20 +7724,25 @@
       "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=809&catid=53",
       "officialVerifiedAt": "2026-06-14T15:01:36Z",
       "officialSourceStatus": "review-required",
-      "publicDisplayStatus": "needs-review",
-      "reviewReasons": [
-        "international eligibility is not explicitly confirmed",
-        "programme-specific intake is unpublished",
-        "no uniquely applicable current international tuition"
+      "publicDisplayStatus": "ready",
+      "reviewReasons": [],
+      "publicationWarnings": [
+        "programme-specific intake is unpublished"
       ],
       "fee": {
-        "status": "official-unpublished",
-        "tuitionAmount": null,
-        "tuitionCurrency": null,
-        "tuitionBasis": null,
+        "status": "verified-calculated-total-range",
+        "tuitionAmount": {
+          "min": 5600.0,
+          "max": 14000.0
+        },
+        "tuitionCurrency": "USD",
+        "tuitionBasis": "total-programme",
+        "officialRatePerSemester": 1400.0,
         "tuitionAcademicSession": "2025/2026",
         "officialFeeSourceUrl": "https://admission.usm.my/index.php/postgraduate/fee-pg",
-        "provenance": "official-unpublished"
+        "provenance": "calculated-from-official-components",
+        "calculation": "international full-time per-semester rate x 4-10 semesters",
+        "sourcePage": 2
       },
       "evidence": [
         {
@@ -7719,10 +7757,10 @@
           "field": "fee",
           "sourceId": "usm-pg-fees-2025-2026",
           "sourceUrl": "https://admission.usm.my/index.php/postgraduate/fee-pg",
-          "sourcePage": null,
-          "sourceText": "official-unpublished",
+          "sourcePage": 2,
+          "sourceText": "verified-calculated-total-range",
           "retrievedAt": "2026-06-14T15:01:36Z",
-          "confidence": 0
+          "confidence": 1
         }
       ],
       "detailSha256": "2b506695de6397cf00544bd32beacdaa176ce6bc8258a84c1ae35eefdf33d1c5"
@@ -7757,6 +7795,7 @@
       },
       "durationUnit": "year",
       "durationOfficial": "Full-time: Min 4 semesters / Max 10 semesters Part-time: Min 6 semesters / Max 15 semesters",
+      "provenance": "official-unpublished",
       "fullTimeSemesters": {
         "min": 4,
         "max": 10
@@ -7765,7 +7804,6 @@
         "min": 6,
         "max": 15
       },
-      "provenance": "official-unpublished",
       "intakeMonths": [],
       "officialIntake": "",
       "officialAcademicRequirement": "MSc in Electrical and Electronic Engineering or related fields (Research Mode); or MSc in Electrical and Electronic Engineering or related disciplines (taught or mixed mode) with minimum CGPA of 3.0 or equivalent. Other qualifications will be considered on case by case basis",
@@ -7834,8 +7872,9 @@
       "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=388&catid=54",
       "officialVerifiedAt": "2026-06-14T15:01:36Z",
       "officialSourceStatus": "review-required",
-      "publicDisplayStatus": "needs-review",
-      "reviewReasons": [
+      "publicDisplayStatus": "ready",
+      "reviewReasons": [],
+      "publicationWarnings": [
         "programme-specific intake is unpublished"
       ],
       "fee": {
@@ -7893,9 +7932,9 @@
       "offshorePartnerEn": null,
       "applicantScope": "international",
       "internationalEligibility": {
-        "status": "not-confirmed",
-        "provenance": "not-confirmed",
-        "evidenceText": ""
+        "status": "eligible",
+        "provenance": "programme-specific",
+        "evidenceText": "Current official fee authority publishes an international fee for this offering."
       },
       "academicSession": "current-directory-and-2025/2026-fees",
       "durationValue": {
@@ -7981,20 +8020,25 @@
       "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=219&catid=51",
       "officialVerifiedAt": "2026-06-14T15:01:36Z",
       "officialSourceStatus": "review-required",
-      "publicDisplayStatus": "needs-review",
-      "reviewReasons": [
-        "international eligibility is not explicitly confirmed",
-        "programme-specific intake is unpublished",
-        "no uniquely applicable current international tuition"
+      "publicDisplayStatus": "ready",
+      "reviewReasons": [],
+      "publicationWarnings": [
+        "programme-specific intake is unpublished"
       ],
       "fee": {
-        "status": "official-unpublished",
-        "tuitionAmount": null,
-        "tuitionCurrency": null,
-        "tuitionBasis": null,
+        "status": "verified-calculated-total-range",
+        "tuitionAmount": {
+          "min": 7400.0,
+          "max": 18500.0
+        },
+        "tuitionCurrency": "USD",
+        "tuitionBasis": "total-programme",
+        "officialRatePerSemester": 1850.0,
         "tuitionAcademicSession": "2025/2026",
         "officialFeeSourceUrl": "https://admission.usm.my/index.php/postgraduate/fee-pg",
-        "provenance": "official-unpublished"
+        "provenance": "calculated-from-official-components",
+        "calculation": "international full-time per-semester rate x 4-10 semesters",
+        "sourcePage": 2
       },
       "evidence": [
         {
@@ -8009,10 +8053,10 @@
           "field": "fee",
           "sourceId": "usm-pg-fees-2025-2026",
           "sourceUrl": "https://admission.usm.my/index.php/postgraduate/fee-pg",
-          "sourcePage": null,
-          "sourceText": "official-unpublished",
+          "sourcePage": 2,
+          "sourceText": "verified-calculated-total-range",
           "retrievedAt": "2026-06-14T15:01:36Z",
-          "confidence": 0
+          "confidence": 1
         }
       ],
       "detailSha256": "ee9c8d86fd4bac063467f42e8ffe63cf6d3a9bf2e05c8b511f16f915ea075e55"
@@ -8047,6 +8091,7 @@
       },
       "durationUnit": "year",
       "durationOfficial": "Full-time: Min 4 semesters / Max 10 semesters Part-time: Min 6 semesters /Max 15 semesters Graduate on Time (GOT): Graduate with a minimum of 42 months (7 semesters)",
+      "provenance": "official-unpublished",
       "fullTimeSemesters": {
         "min": 4,
         "max": 10
@@ -8055,7 +8100,6 @@
         "min": 6,
         "max": 15
       },
-      "provenance": "official-unpublished",
       "intakeMonths": [],
       "officialIntake": "",
       "officialAcademicRequirement": "Applicants should possess the following: A Master’s degree from universities recognised by USM’s senate or an equivalent qualification with a minimum CGPA of 3.00/4.00; or A Master’s degree by research from universities recognised by USM’s senate or an equivalent qualification A two-page Research Proposal that includes: 1. Proposed area of interest 2. Potential contribution to theory 3. Background (with evidence of reading that supports potential contribution) 4. Research objectives 5. Significance of research 6. Expected economic, or social, or environmental impact of research",
@@ -8124,8 +8168,9 @@
       "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=338&catid=53",
       "officialVerifiedAt": "2026-06-14T15:01:36Z",
       "officialSourceStatus": "review-required",
-      "publicDisplayStatus": "needs-review",
-      "reviewReasons": [
+      "publicDisplayStatus": "ready",
+      "reviewReasons": [],
+      "publicationWarnings": [
         "programme-specific intake is unpublished"
       ],
       "fee": {
@@ -8194,6 +8239,7 @@
       },
       "durationUnit": "year",
       "durationOfficial": "Full-time: Min 4 semesters / Max 10 semesters Part-time: Min 6 semesters / Max 15 semesters",
+      "provenance": "official-unpublished",
       "fullTimeSemesters": {
         "min": 4,
         "max": 10
@@ -8202,7 +8248,6 @@
         "min": 6,
         "max": 15
       },
-      "provenance": "official-unpublished",
       "intakeMonths": [],
       "officialIntake": "",
       "officialAcademicRequirement": "Applicants should possess one of the following: A Master's degree in research mode; or A Master’s degree in related area with CGPA 3.00/4;or A Master’s degree in related area with CGPA 2.50-2.99/4 with additional requirements; or Bachelor’s degree in related area with minimum CGPA 3.67/4 (fast-track to PhD)",
@@ -8271,8 +8316,9 @@
       "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=510&catid=55",
       "officialVerifiedAt": "2026-06-14T15:01:36Z",
       "officialSourceStatus": "review-required",
-      "publicDisplayStatus": "needs-review",
-      "reviewReasons": [
+      "publicDisplayStatus": "ready",
+      "reviewReasons": [],
+      "publicationWarnings": [
         "programme-specific intake is unpublished"
       ],
       "fee": {
@@ -8330,9 +8376,9 @@
       "offshorePartnerEn": null,
       "applicantScope": "international",
       "internationalEligibility": {
-        "status": "not-confirmed",
-        "provenance": "not-confirmed",
-        "evidenceText": ""
+        "status": "eligible",
+        "provenance": "programme-specific",
+        "evidenceText": "Current official fee authority publishes an international fee for this offering."
       },
       "academicSession": "current-directory-and-2025/2026-fees",
       "durationValue": {
@@ -8418,20 +8464,25 @@
       "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=215&catid=51",
       "officialVerifiedAt": "2026-06-14T15:01:36Z",
       "officialSourceStatus": "review-required",
-      "publicDisplayStatus": "needs-review",
-      "reviewReasons": [
-        "international eligibility is not explicitly confirmed",
-        "programme-specific intake is unpublished",
-        "no uniquely applicable current international tuition"
+      "publicDisplayStatus": "ready",
+      "reviewReasons": [],
+      "publicationWarnings": [
+        "programme-specific intake is unpublished"
       ],
       "fee": {
-        "status": "official-unpublished",
-        "tuitionAmount": null,
-        "tuitionCurrency": null,
-        "tuitionBasis": null,
+        "status": "verified-calculated-total-range",
+        "tuitionAmount": {
+          "min": 7200.0,
+          "max": 18000.0
+        },
+        "tuitionCurrency": "USD",
+        "tuitionBasis": "total-programme",
+        "officialRatePerSemester": 1800.0,
         "tuitionAcademicSession": "2025/2026",
         "officialFeeSourceUrl": "https://admission.usm.my/index.php/postgraduate/fee-pg",
-        "provenance": "official-unpublished"
+        "provenance": "calculated-from-official-components",
+        "calculation": "international full-time per-semester rate x 4-10 semesters",
+        "sourcePage": 2
       },
       "evidence": [
         {
@@ -8446,10 +8497,10 @@
           "field": "fee",
           "sourceId": "usm-pg-fees-2025-2026",
           "sourceUrl": "https://admission.usm.my/index.php/postgraduate/fee-pg",
-          "sourcePage": null,
-          "sourceText": "official-unpublished",
+          "sourcePage": 2,
+          "sourceText": "verified-calculated-total-range",
           "retrievedAt": "2026-06-14T15:01:36Z",
-          "confidence": 0
+          "confidence": 1
         }
       ],
       "detailSha256": "60bf5a392916b2bafafd06d9c22bba0faeb5164b8f6c5f29fd4cc5a072b36e89"
@@ -8484,6 +8535,7 @@
       },
       "durationUnit": "year",
       "durationOfficial": "Full-time: Min 4 semesters / Max 10 semesters Part-time: Min 6 semesters / Max 15 semesters",
+      "provenance": "official-unpublished",
       "fullTimeSemesters": {
         "min": 4,
         "max": 10
@@ -8492,7 +8544,6 @@
         "min": 6,
         "max": 15
       },
-      "provenance": "official-unpublished",
       "intakeMonths": [],
       "officialIntake": "",
       "officialAcademicRequirement": "Applicants should possess one of the following: A Master's degree in research mode; or A Master’s degree in related area with CGPA 3.00/4;or A Master’s degree in related area with CGPA 2.50-2.99/4 with additional requirements; or Bachelor’s degree in related area with minimum CGPA 3.67/4 (fast-track to PhD)",
@@ -8561,8 +8612,9 @@
       "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=218&catid=51",
       "officialVerifiedAt": "2026-06-14T15:01:36Z",
       "officialSourceStatus": "review-required",
-      "publicDisplayStatus": "needs-review",
-      "reviewReasons": [
+      "publicDisplayStatus": "ready",
+      "reviewReasons": [],
+      "publicationWarnings": [
         "programme-specific intake is unpublished"
       ],
       "fee": {
@@ -8631,6 +8683,7 @@
       },
       "durationUnit": "year",
       "durationOfficial": "Full-time: Min 4 semesters / Max 10 semesters Part-time: Min 6 semesters /Max 15 semesters",
+      "provenance": "official-unpublished",
       "fullTimeSemesters": {
         "min": 4,
         "max": 10
@@ -8639,7 +8692,6 @@
         "min": 6,
         "max": 15
       },
-      "provenance": "official-unpublished",
       "intakeMonths": [],
       "officialIntake": "",
       "officialAcademicRequirement": "Applicants should possess one of the following: A Master's degree in research mode; or A Master’s degree in related area with CGPA 3.00/4;or A Master’s degree in related area with CGPA 2.50-2.99/4 with additional requirements; or Bachelor’s degree in related area with minimum CGPA 3.67/4 (fast-track to PhD)",
@@ -8708,8 +8760,9 @@
       "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=325&catid=52",
       "officialVerifiedAt": "2026-06-14T15:01:36Z",
       "officialSourceStatus": "review-required",
-      "publicDisplayStatus": "needs-review",
-      "reviewReasons": [
+      "publicDisplayStatus": "ready",
+      "reviewReasons": [],
+      "publicationWarnings": [
         "programme-specific intake is unpublished"
       ],
       "fee": {
@@ -8778,6 +8831,7 @@
       },
       "durationUnit": "year",
       "durationOfficial": "Full Time: Min 4 semesters / Max 10 semesters Part Time: Min 6 semesters / Max 15 semesters",
+      "provenance": "official-unpublished",
       "fullTimeSemesters": {
         "min": 4,
         "max": 10
@@ -8786,7 +8840,6 @@
         "min": 6,
         "max": 15
       },
-      "provenance": "official-unpublished",
       "intakeMonths": [],
       "officialIntake": "",
       "officialAcademicRequirement": "Applicants should possess one of the following: A Master's degree in research mode; or A Master’s degree in related area with CGPA 3.00/4;or A Master’s degree in related area with CGPA 2.50-2.99/4 with additional requirements; or Bachelor’s degree in related area with minimum CGPA 3.67/4 (fast-track to PhD)",
@@ -8855,8 +8908,9 @@
       "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=220&catid=51",
       "officialVerifiedAt": "2026-06-14T15:01:36Z",
       "officialSourceStatus": "review-required",
-      "publicDisplayStatus": "needs-review",
-      "reviewReasons": [
+      "publicDisplayStatus": "ready",
+      "reviewReasons": [],
+      "publicationWarnings": [
         "programme-specific intake is unpublished"
       ],
       "fee": {
@@ -9002,8 +9056,9 @@
       "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=888&catid=55",
       "officialVerifiedAt": "2026-06-14T15:01:36Z",
       "officialSourceStatus": "review-required",
-      "publicDisplayStatus": "needs-review",
-      "reviewReasons": [
+      "publicDisplayStatus": "ready",
+      "reviewReasons": [],
+      "publicationWarnings": [
         "programme-specific intake is unpublished"
       ],
       "fee": {
@@ -9072,6 +9127,7 @@
       },
       "durationUnit": "year",
       "durationOfficial": "Full-time: Min 4 semesters / Max 10 semesters Part-time: Min 6 semesters / Max 15 semesters",
+      "provenance": "official-unpublished",
       "fullTimeSemesters": {
         "min": 4,
         "max": 10
@@ -9080,7 +9136,6 @@
         "min": 6,
         "max": 15
       },
-      "provenance": "official-unpublished",
       "intakeMonths": [],
       "officialIntake": "",
       "officialAcademicRequirement": "Applicants should possess one of the following: A Master's degree in research mode; or A Master’s degree in related area with CGPA 3.00/4;or A Master’s degree in related area with CGPA 2.50-2.99/4 with additional requirements; or Bachelor’s degree in related area with minimum CGPA 3.67/4 (fast-track to PhD)",
@@ -9149,8 +9204,9 @@
       "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=376&catid=53",
       "officialVerifiedAt": "2026-06-14T15:01:36Z",
       "officialSourceStatus": "review-required",
-      "publicDisplayStatus": "needs-review",
-      "reviewReasons": [
+      "publicDisplayStatus": "ready",
+      "reviewReasons": [],
+      "publicationWarnings": [
         "programme-specific intake is unpublished"
       ],
       "fee": {
@@ -9296,8 +9352,9 @@
       "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=167&catid=50",
       "officialVerifiedAt": "2026-06-14T15:01:36Z",
       "officialSourceStatus": "review-required",
-      "publicDisplayStatus": "needs-review",
-      "reviewReasons": [
+      "publicDisplayStatus": "ready",
+      "reviewReasons": [],
+      "publicationWarnings": [
         "programme-specific intake is unpublished"
       ],
       "fee": {
@@ -9366,6 +9423,7 @@
       },
       "durationUnit": "year",
       "durationOfficial": "Full-time: Min 4 semesters / Max 10 semesters Part-time: Min 6 semesters / Max 15 semesters",
+      "provenance": "official-unpublished",
       "fullTimeSemesters": {
         "min": 4,
         "max": 10
@@ -9374,7 +9432,6 @@
         "min": 6,
         "max": 15
       },
-      "provenance": "official-unpublished",
       "intakeMonths": [],
       "officialIntake": "",
       "officialAcademicRequirement": "Applicants should possess one of the following: A Master’s degree in related area with CGPA 3.00/4; or A Master’s degree in related area with CGPA 2.50-2.99/4 with additional requirements; or Bachelor’s degree in related area with minimum CGPA 3.67/4 (fast-track to PhD)",
@@ -9443,8 +9500,9 @@
       "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=153&catid=50",
       "officialVerifiedAt": "2026-06-14T15:01:36Z",
       "officialSourceStatus": "review-required",
-      "publicDisplayStatus": "needs-review",
-      "reviewReasons": [
+      "publicDisplayStatus": "ready",
+      "reviewReasons": [],
+      "publicationWarnings": [
         "programme-specific intake is unpublished"
       ],
       "fee": {
@@ -9513,6 +9571,7 @@
       },
       "durationUnit": "year",
       "durationOfficial": "Full-time: Min 4 semesters / Max 10 semesters Part-time: Min 6 semesters / Max 15 semesters",
+      "provenance": "official-unpublished",
       "fullTimeSemesters": {
         "min": 4,
         "max": 10
@@ -9521,7 +9580,6 @@
         "min": 6,
         "max": 15
       },
-      "provenance": "official-unpublished",
       "intakeMonths": [],
       "officialIntake": "",
       "officialAcademicRequirement": "Applicants should possess one of the following: A Master's degree in research mode; or A Master’s degree in related area with CGPA 3.00/4;or A Master’s degree in related area with CGPA 2.50-2.99/4 with additional requirements; or Bachelor’s degree in related area with minimum CGPA 3.67/4 (fast-track to PhD)",
@@ -9590,8 +9648,9 @@
       "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=375&catid=53",
       "officialVerifiedAt": "2026-06-14T15:01:36Z",
       "officialSourceStatus": "review-required",
-      "publicDisplayStatus": "needs-review",
-      "reviewReasons": [
+      "publicDisplayStatus": "ready",
+      "reviewReasons": [],
+      "publicationWarnings": [
         "programme-specific intake is unpublished"
       ],
       "fee": {
@@ -9737,8 +9796,9 @@
       "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=221&catid=51",
       "officialVerifiedAt": "2026-06-14T15:01:36Z",
       "officialSourceStatus": "review-required",
-      "publicDisplayStatus": "needs-review",
-      "reviewReasons": [
+      "publicDisplayStatus": "ready",
+      "reviewReasons": [],
+      "publicationWarnings": [
         "programme-specific intake is unpublished"
       ],
       "fee": {
@@ -9806,7 +9866,7 @@
         "max": 5.0
       },
       "durationUnit": "year",
-      "durationOfficial": "Full-time : Minimum 24 months / Maximum 60 months Part-time : Minimum 36 months / Maximum 90 months",
+      "durationOfficial": "Full-time: Min 4 semesters / Max 10 semesters",
       "fullTimeSemesters": {
         "min": 4,
         "max": 10
@@ -9884,8 +9944,9 @@
       "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=361&catid=53",
       "officialVerifiedAt": "2026-06-14T15:01:36Z",
       "officialSourceStatus": "review-required",
-      "publicDisplayStatus": "needs-review",
-      "reviewReasons": [
+      "publicDisplayStatus": "ready",
+      "reviewReasons": [],
+      "publicationWarnings": [
         "programme-specific intake is unpublished"
       ],
       "fee": {
@@ -10031,8 +10092,9 @@
       "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=887&catid=52",
       "officialVerifiedAt": "2026-06-14T15:01:36Z",
       "officialSourceStatus": "review-required",
-      "publicDisplayStatus": "needs-review",
-      "reviewReasons": [
+      "publicDisplayStatus": "ready",
+      "reviewReasons": [],
+      "publicationWarnings": [
         "programme-specific intake is unpublished"
       ],
       "fee": {
@@ -10101,6 +10163,7 @@
       },
       "durationUnit": "year",
       "durationOfficial": "Full-time: Min 4 semesters / Max 10 semesters Part-time: Min 6 semesters / Max 15 semesters",
+      "provenance": "official-unpublished",
       "fullTimeSemesters": {
         "min": 4,
         "max": 10
@@ -10109,7 +10172,6 @@
         "min": 6,
         "max": 15
       },
-      "provenance": "official-unpublished",
       "intakeMonths": [],
       "officialIntake": "",
       "officialAcademicRequirement": "Applicants should possess one of the following: A Master's degree in research mode; or A Master’s degree in related area with CGPA 3.00/4;or A Master’s degree in related area with CGPA 2.50-2.99/4 with additional requirements; or Bachelor’s degree in related area with minimum CGPA 3.67/4 (Fast-track to PhD)",
@@ -10178,8 +10240,9 @@
       "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=243&catid=51",
       "officialVerifiedAt": "2026-06-14T15:01:36Z",
       "officialSourceStatus": "review-required",
-      "publicDisplayStatus": "needs-review",
-      "reviewReasons": [
+      "publicDisplayStatus": "ready",
+      "reviewReasons": [],
+      "publicationWarnings": [
         "programme-specific intake is unpublished"
       ],
       "fee": {
@@ -10248,6 +10311,7 @@
       },
       "durationUnit": "year",
       "durationOfficial": "Full-time: Min 4 semesters / Max 10 semesters Part-time: Min 6 semesters /Max 15 semesters",
+      "provenance": "official-unpublished",
       "fullTimeSemesters": {
         "min": 4,
         "max": 10
@@ -10256,7 +10320,6 @@
         "min": 6,
         "max": 15
       },
-      "provenance": "official-unpublished",
       "intakeMonths": [],
       "officialIntake": "",
       "officialAcademicRequirement": "Applicants should possess one of the following: A Master's degree in research mode; or A Master’s degree in related area with CGPA 3.00/4;or A Master’s degree in related area with CGPA 2.50-2.99/4 with additional requirements; or Bachelor’s degree in related area with minimum CGPA 3.67/4 (fast-track to PhD) International candidates are required to undergo interview conducted by the school.",
@@ -10325,8 +10388,9 @@
       "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=315&catid=52",
       "officialVerifiedAt": "2026-06-14T15:01:36Z",
       "officialSourceStatus": "review-required",
-      "publicDisplayStatus": "needs-review",
-      "reviewReasons": [
+      "publicDisplayStatus": "ready",
+      "reviewReasons": [],
+      "publicationWarnings": [
         "programme-specific intake is unpublished"
       ],
       "fee": {
@@ -10395,6 +10459,7 @@
       },
       "durationUnit": "year",
       "durationOfficial": "Full-time: Min 4 semesters / Max 10 semesters Part-time: Min 6 semesters / Max 15 semesters",
+      "provenance": "programme-specific",
       "fullTimeSemesters": {
         "min": 4,
         "max": 10
@@ -10403,7 +10468,6 @@
         "min": 6,
         "max": 15
       },
-      "provenance": "programme-specific",
       "intakeMonths": [],
       "officialIntake": "April & October",
       "officialAcademicRequirement": "Applicants should possess one of the following: A Master's degree in research mode; or A Master’s degree in related area with CGPA 3.00/4;or A Master’s degree in related area with CGPA 2.50-2.99/4 with additional requirements; or Bachelor’s degree in related area with minimum CGPA 3.67/4 (fast-track to PhD)",
@@ -10474,6 +10538,7 @@
       "officialSourceStatus": "verified",
       "publicDisplayStatus": "ready",
       "reviewReasons": [],
+      "publicationWarnings": [],
       "fee": {
         "status": "verified-calculated-total-range",
         "tuitionAmount": {
@@ -10540,6 +10605,7 @@
       },
       "durationUnit": "year",
       "durationOfficial": "Full-time: Min 4 semesters / Max 10 semesters Part-time: Min 6 semesters / Max 15 semesters",
+      "provenance": "official-unpublished",
       "fullTimeSemesters": {
         "min": 4,
         "max": 10
@@ -10548,7 +10614,6 @@
         "min": 6,
         "max": 15
       },
-      "provenance": "official-unpublished",
       "intakeMonths": [],
       "officialIntake": "",
       "officialAcademicRequirement": "Applicants should possess one of the following: A Master's degree in research mode; or A Master’s degree in related area with CGPA 3.00/4; or A Master’s degree in related area with CGPA 2.50-2.99/4 with additional requirements; or Bachelor’s degree in related area with minimum CGPA 3.67/4 (fast-track to PhD)",
@@ -10617,8 +10682,9 @@
       "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=147&catid=50",
       "officialVerifiedAt": "2026-06-14T15:01:36Z",
       "officialSourceStatus": "review-required",
-      "publicDisplayStatus": "needs-review",
-      "reviewReasons": [
+      "publicDisplayStatus": "ready",
+      "reviewReasons": [],
+      "publicationWarnings": [
         "programme-specific intake is unpublished"
       ],
       "fee": {
@@ -10687,6 +10753,7 @@
       },
       "durationUnit": "year",
       "durationOfficial": "Full-time: Min 4 semesters / Max 10 semesters Part-time: Min 6 semesters / Max 15 semesters",
+      "provenance": "official-unpublished",
       "fullTimeSemesters": {
         "min": 4,
         "max": 10
@@ -10695,7 +10762,6 @@
         "min": 6,
         "max": 15
       },
-      "provenance": "official-unpublished",
       "intakeMonths": [],
       "officialIntake": "",
       "officialAcademicRequirement": "Applicants should possess one of the following: A Master's degree in research mode; or A Master’s degree in related area with CGPA 3.00/4;or A Master’s degree in related area with CGPA 2.50-2.99/4 with additional requirements; or Bachelor’s degree in related area with minimum CGPA 3.67/4 (fast-track to PhD) International applicants are required to undergo interview conducted by the school.",
@@ -10764,8 +10830,9 @@
       "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=241&catid=51",
       "officialVerifiedAt": "2026-06-14T15:01:36Z",
       "officialSourceStatus": "review-required",
-      "publicDisplayStatus": "needs-review",
-      "reviewReasons": [
+      "publicDisplayStatus": "ready",
+      "reviewReasons": [],
+      "publicationWarnings": [
         "programme-specific intake is unpublished"
       ],
       "fee": {
@@ -10911,8 +10978,9 @@
       "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=145&catid=50",
       "officialVerifiedAt": "2026-06-14T15:01:36Z",
       "officialSourceStatus": "review-required",
-      "publicDisplayStatus": "needs-review",
-      "reviewReasons": [
+      "publicDisplayStatus": "ready",
+      "reviewReasons": [],
+      "publicationWarnings": [
         "programme-specific intake is unpublished"
       ],
       "fee": {
@@ -10981,6 +11049,7 @@
       },
       "durationUnit": "year",
       "durationOfficial": "Full-time: Min 4 semesters / Max 10 semesters Part-time: Min 6 semesters /Max 15 semesters",
+      "provenance": "official-unpublished",
       "fullTimeSemesters": {
         "min": 4,
         "max": 10
@@ -10989,7 +11058,6 @@
         "min": 6,
         "max": 15
       },
-      "provenance": "official-unpublished",
       "intakeMonths": [],
       "officialIntake": "",
       "officialAcademicRequirement": "Applicants should possess one of the following: A Master's degree in research mode; or A Master’s degree in related area with CGPA 3.00/4;or A Master’s degree in related area with CGPA 2.50-2.99/4 with additional requirements; or Bachelor’s degree in related area with minimum CGPA 3.67/4 (fast-track to PhD)",
@@ -11058,8 +11126,9 @@
       "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=326&catid=52",
       "officialVerifiedAt": "2026-06-14T15:01:36Z",
       "officialSourceStatus": "review-required",
-      "publicDisplayStatus": "needs-review",
-      "reviewReasons": [
+      "publicDisplayStatus": "ready",
+      "reviewReasons": [],
+      "publicationWarnings": [
         "programme-specific intake is unpublished"
       ],
       "fee": {
@@ -11128,6 +11197,7 @@
       },
       "durationUnit": "year",
       "durationOfficial": "Full Time: Mininum 4 semesters / Maximum 10 semesters Part Time: Mininum 6 semesters / Maximum 15 semesters",
+      "provenance": "official-unpublished",
       "fullTimeSemesters": {
         "min": 4,
         "max": 10
@@ -11136,7 +11206,6 @@
         "min": 6,
         "max": 15
       },
-      "provenance": "official-unpublished",
       "intakeMonths": [],
       "officialIntake": "",
       "officialAcademicRequirement": "Applicants should possess one of the following: A Master’s degree in related area with CGPA 3.00/4;or A Master’s degree in related area with CGPA 2.50-2.99/4 with additional requirements; or Bachelor’s degree in related area with minimum CGPA 3.67/4 (fast-track to PhD)",
@@ -11205,8 +11274,9 @@
       "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=247&catid=51",
       "officialVerifiedAt": "2026-06-14T15:01:36Z",
       "officialSourceStatus": "review-required",
-      "publicDisplayStatus": "needs-review",
-      "reviewReasons": [
+      "publicDisplayStatus": "ready",
+      "reviewReasons": [],
+      "publicationWarnings": [
         "programme-specific intake is unpublished"
       ],
       "fee": {
@@ -11275,6 +11345,7 @@
       },
       "durationUnit": "year",
       "durationOfficial": "Full-time: Min 4 semesters / Max 10 semesters Part-time: Min 6 semesters /Max 15 semesters",
+      "provenance": "programme-specific",
       "fullTimeSemesters": {
         "min": 4,
         "max": 10
@@ -11283,7 +11354,6 @@
         "min": 6,
         "max": 15
       },
-      "provenance": "programme-specific",
       "intakeMonths": [],
       "officialIntake": "April & October",
       "officialAcademicRequirement": "Applicants should possess one of the following: A Master's degree in research mode; or A Master’s degree in related area with CGPA 3.00/4;or A Master’s degree in related area with CGPA 2.50-2.99/4 with additional requirements; or Bachelor’s degree in related area with minimum CGPA 3.67/4 (fast-track to PhD)",
@@ -11354,6 +11424,7 @@
       "officialSourceStatus": "verified",
       "publicDisplayStatus": "ready",
       "reviewReasons": [],
+      "publicationWarnings": [],
       "fee": {
         "status": "verified-calculated-total-range",
         "tuitionAmount": {
@@ -11420,6 +11491,7 @@
       },
       "durationUnit": "year",
       "durationOfficial": "Full Time: Minimum 4 semesters / Maximum 10 semesters Part Time: Minimum 6 semesters / Maximum 15 semesters",
+      "provenance": "official-unpublished",
       "fullTimeSemesters": {
         "min": 4,
         "max": 10
@@ -11428,7 +11500,6 @@
         "min": 6,
         "max": 15
       },
-      "provenance": "official-unpublished",
       "intakeMonths": [],
       "officialIntake": "",
       "officialAcademicRequirement": "Applicants should possess one of the following: A Master’s degree in related area with CGPA 3.00/4;or A Master’s degree in related area with CGPA 2.50-2.99/4 with additional requirements; or Bachelor’s degree in related area with minimum CGPA 3.67/4 (fast-track to PhD)",
@@ -11497,8 +11568,9 @@
       "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=379&catid=53",
       "officialVerifiedAt": "2026-06-14T15:01:36Z",
       "officialSourceStatus": "review-required",
-      "publicDisplayStatus": "needs-review",
-      "reviewReasons": [
+      "publicDisplayStatus": "ready",
+      "reviewReasons": [],
+      "publicationWarnings": [
         "programme-specific intake is unpublished"
       ],
       "fee": {
@@ -11567,6 +11639,7 @@
       },
       "durationUnit": "year",
       "durationOfficial": "Full-time: Min 4 semesters / Max 10 semesters Part-time: Min 6 semesters /Max 15 semesters",
+      "provenance": "programme-specific",
       "fullTimeSemesters": {
         "min": 4,
         "max": 10
@@ -11575,7 +11648,6 @@
         "min": 6,
         "max": 15
       },
-      "provenance": "programme-specific",
       "intakeMonths": [],
       "officialIntake": "April & October",
       "officialAcademicRequirement": "Applicants should possess one of the following: A Master's degree in research mode; or A Master’s degree in related area with CGPA 3.00/4;or A Master’s degree in related area with CGPA 2.50-2.99/4 with additional requirements; or Bachelor’s degree in related area with minimum CGPA 3.67/4 (fast-track to PhD)",
@@ -11646,6 +11718,7 @@
       "officialSourceStatus": "verified",
       "publicDisplayStatus": "ready",
       "reviewReasons": [],
+      "publicationWarnings": [],
       "fee": {
         "status": "verified-calculated-total-range",
         "tuitionAmount": {
@@ -11712,6 +11785,7 @@
       },
       "durationUnit": "year",
       "durationOfficial": "Full Time: Min 4 semesters / Max 10 semesters Part Time: Min 6 semesters / Max 15 semesters",
+      "provenance": "official-unpublished",
       "fullTimeSemesters": {
         "min": 4,
         "max": 10
@@ -11720,7 +11794,6 @@
         "min": 6,
         "max": 15
       },
-      "provenance": "official-unpublished",
       "intakeMonths": [],
       "officialIntake": "",
       "officialAcademicRequirement": "Applicants should possess one of the following: A Master's degree in research mode; or A Master’s degree in related area with CGPA 3.00/4;or A Master’s degree in related area with CGPA 2.50-2.99/4 with additional requirements; or Bachelor’s degree in related area with minimum CGPA 3.67/4 (fast-track to PhD)",
@@ -11789,8 +11862,9 @@
       "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=561&catid=55",
       "officialVerifiedAt": "2026-06-14T15:01:36Z",
       "officialSourceStatus": "review-required",
-      "publicDisplayStatus": "needs-review",
-      "reviewReasons": [
+      "publicDisplayStatus": "ready",
+      "reviewReasons": [],
+      "publicationWarnings": [
         "programme-specific intake is unpublished"
       ],
       "fee": {
@@ -11936,8 +12010,9 @@
       "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=560&catid=55",
       "officialVerifiedAt": "2026-06-14T15:01:36Z",
       "officialSourceStatus": "review-required",
-      "publicDisplayStatus": "needs-review",
-      "reviewReasons": [
+      "publicDisplayStatus": "ready",
+      "reviewReasons": [],
+      "publicationWarnings": [
         "programme-specific intake is unpublished"
       ],
       "fee": {
@@ -12006,6 +12081,7 @@
       },
       "durationUnit": "year",
       "durationOfficial": "Full Time: Min 4 semesters / Max 10 semesters Part Time: Min 6 semesters / Max 15 semesters",
+      "provenance": "official-unpublished",
       "fullTimeSemesters": {
         "min": 4,
         "max": 10
@@ -12014,7 +12090,6 @@
         "min": 6,
         "max": 15
       },
-      "provenance": "official-unpublished",
       "intakeMonths": [],
       "officialIntake": "",
       "officialAcademicRequirement": "Applicants should possess one of the following: A Master's degree in research mode; or A Master’s degree in related area with CGPA 3.00/4;or A Master’s degree in related area with CGPA 2.50-2.99/4 with additional requirements; or Bachelor’s degree in related area with minimum CGPA 3.67/4 (fast-track to PhD)",
@@ -12083,8 +12158,9 @@
       "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=559&catid=55",
       "officialVerifiedAt": "2026-06-14T15:01:36Z",
       "officialSourceStatus": "review-required",
-      "publicDisplayStatus": "needs-review",
-      "reviewReasons": [
+      "publicDisplayStatus": "ready",
+      "reviewReasons": [],
+      "publicationWarnings": [
         "programme-specific intake is unpublished"
       ],
       "fee": {
@@ -12153,6 +12229,7 @@
       },
       "durationUnit": "year",
       "durationOfficial": "Full-time: Min 4 semesters / Max 10 semesters Part-time: Min 6 semesters / Max 15 semesters",
+      "provenance": "official-unpublished",
       "fullTimeSemesters": {
         "min": 4,
         "max": 10
@@ -12161,7 +12238,6 @@
         "min": 6,
         "max": 15
       },
-      "provenance": "official-unpublished",
       "intakeMonths": [],
       "officialIntake": "",
       "officialAcademicRequirement": "Applicants should possess one of the following: A Master's degree in research mode; or A Master’s degree in related area with CGPA 3.00/4;or A Master’s degree in related area with CGPA 2.50-2.99/4 with additional requirements; or Bachelor’s degree in related area with minimum CGPA 3.67/4 (fast-track to PhD)",
@@ -12232,7 +12308,9 @@
       "officialSourceStatus": "review-required",
       "publicDisplayStatus": "needs-review",
       "reviewReasons": [
-        "international eligibility is not explicitly confirmed",
+        "international eligibility is not explicitly confirmed"
+      ],
+      "publicationWarnings": [
         "programme-specific intake is unpublished",
         "no uniquely applicable current international tuition"
       ],
@@ -12375,7 +12453,9 @@
       "officialSourceStatus": "review-required",
       "publicDisplayStatus": "needs-review",
       "reviewReasons": [
-        "international eligibility is not explicitly confirmed",
+        "international eligibility is not explicitly confirmed"
+      ],
+      "publicationWarnings": [
         "programme-specific intake is unpublished",
         "no uniquely applicable current international tuition"
       ],
@@ -12518,7 +12598,9 @@
       "officialSourceStatus": "review-required",
       "publicDisplayStatus": "needs-review",
       "reviewReasons": [
-        "international eligibility is not explicitly confirmed",
+        "international eligibility is not explicitly confirmed"
+      ],
+      "publicationWarnings": [
         "programme-specific intake is unpublished",
         "no uniquely applicable current international tuition"
       ],
@@ -12582,6 +12664,7 @@
       },
       "durationUnit": "year",
       "durationOfficial": "Full-time: Min 4 semesters / Max 10 semesters Part-time: Min 6 semesters / Max 15 semesters",
+      "provenance": "official-unpublished",
       "fullTimeSemesters": {
         "min": 4,
         "max": 10
@@ -12590,7 +12673,6 @@
         "min": 6,
         "max": 15
       },
-      "provenance": "official-unpublished",
       "intakeMonths": [],
       "officialIntake": "",
       "officialAcademicRequirement": "Applicants should possess one of the following: A Master’s degree in related area with CGPA 3.00/4; or A Master’s degree in related area with CGPA 2.50-2.99/4 with additional requirements; or Bachelor’s degree in related area with minimum CGPA 3.67/4 (fast-track to PhD)",
@@ -12661,7 +12743,9 @@
       "officialSourceStatus": "review-required",
       "publicDisplayStatus": "needs-review",
       "reviewReasons": [
-        "international eligibility is not explicitly confirmed",
+        "international eligibility is not explicitly confirmed"
+      ],
+      "publicationWarnings": [
         "programme-specific intake is unpublished",
         "no uniquely applicable current international tuition"
       ],
@@ -12804,7 +12888,9 @@
       "officialSourceStatus": "review-required",
       "publicDisplayStatus": "needs-review",
       "reviewReasons": [
-        "international eligibility is not explicitly confirmed",
+        "international eligibility is not explicitly confirmed"
+      ],
+      "publicationWarnings": [
         "programme-specific intake is unpublished",
         "no uniquely applicable current international tuition"
       ],
@@ -12947,7 +13033,9 @@
       "officialSourceStatus": "review-required",
       "publicDisplayStatus": "needs-review",
       "reviewReasons": [
-        "international eligibility is not explicitly confirmed",
+        "international eligibility is not explicitly confirmed"
+      ],
+      "publicationWarnings": [
         "programme-specific intake is unpublished",
         "no uniquely applicable current international tuition"
       ],
@@ -13006,20 +13094,20 @@
       },
       "academicSession": "current-directory-and-2025/2026-fees",
       "durationValue": {
-        "min": 2.0,
-        "max": 5.0
+        "min": 1.0,
+        "max": 2.0
       },
       "durationUnit": "year",
-      "durationOfficial": "Full Time: Min 2 semesters / Max 4 semesters Part Time: Min 3 semesters / Max 6 semesters Postgraduate Institute of Postgraduate Studies Universiti Sains Malaysia, 11800 Penang, Malaysia. Tel: +604-653 6309 / 6027 / 2606 / 2946 / 2958 Fax: +604-653 2931 Disclaimer The institution shall not be held responsible for any discrepancies arising from the translations. Users are encouraged to refer to the official documents and seek clarification from the relevant authorities if necessary.In the event of any discrepancy or inconsistency between the English, Bahasa Melayu, and Mandarin versions of this website, the English version shall prevail. Last Update: Friday 12 June 2026. All Rights Reserved © Universiti Sains Malaysia",
+      "durationOfficial": "Full Time: Min 2 semesters / Max 4 semesters Part Time: Min 3 semesters / Max 6 semesters",
+      "provenance": "official-unpublished",
       "fullTimeSemesters": {
-        "min": 4,
-        "max": 10
+        "min": 2,
+        "max": 4
       },
       "partTimeSemesters": {
-        "min": 6,
-        "max": 15
+        "min": 3,
+        "max": 6
       },
-      "provenance": "official-unpublished",
       "intakeMonths": [],
       "officialIntake": "",
       "officialAcademicRequirement": "Applicants should possess one of the following: A Master's degree in research mode; or A Master’s degree in related area with CGPA 3.00/4;or A Master’s degree in related area with CGPA 2.50-2.99/4 with additional requirements; or Bachelor’s degree in related area with minimum CGPA 3.67/4 (fast-track to PhD)",
@@ -13090,7 +13178,9 @@
       "officialSourceStatus": "review-required",
       "publicDisplayStatus": "needs-review",
       "reviewReasons": [
-        "international eligibility is not explicitly confirmed",
+        "international eligibility is not explicitly confirmed"
+      ],
+      "publicationWarnings": [
         "programme-specific intake is unpublished",
         "no uniquely applicable current international tuition"
       ],
@@ -13153,7 +13243,7 @@
         "max": 5.0
       },
       "durationUnit": "year",
-      "durationOfficial": "Full-time: Min 24 months / Max 60 months Part-time: Min 36 months / Max 90 months",
+      "durationOfficial": "Full-time: Min 4 semesters / Max 10 semesters",
       "fullTimeSemesters": {
         "min": 4,
         "max": 10
@@ -13233,7 +13323,9 @@
       "officialSourceStatus": "review-required",
       "publicDisplayStatus": "needs-review",
       "reviewReasons": [
-        "international eligibility is not explicitly confirmed",
+        "international eligibility is not explicitly confirmed"
+      ],
+      "publicationWarnings": [
         "no uniquely applicable current international tuition"
       ],
       "fee": {
@@ -13375,7 +13467,9 @@
       "officialSourceStatus": "review-required",
       "publicDisplayStatus": "needs-review",
       "reviewReasons": [
-        "international eligibility is not explicitly confirmed",
+        "international eligibility is not explicitly confirmed"
+      ],
+      "publicationWarnings": [
         "programme-specific intake is unpublished",
         "no uniquely applicable current international tuition"
       ],
@@ -13438,7 +13532,8 @@
         "max": 5.0
       },
       "durationUnit": "year",
-      "durationOfficial": "Full-time: Min 4 semesters / Max 10 semesters Part-time: Min 6 semesters /Max 15 semesters Postgraduate Institute of Postgraduate Studies Universiti Sains Malaysia, 11800 Penang, Malaysia. Tel: +604-653 6309 / 6027 / 2606 / 2946 / 2958 Fax: +604-653 2931 Disclaimer The institution shall not be held responsible for any discrepancies arising from the translations. Users are encouraged to refer to the official documents and seek clarification from the relevant authorities if necessary.In the event of any discrepancy or inconsistency between the English, Bahasa Melayu, and Mandarin versions of this website, the English version shall prevail. Last Update: Friday 12 June 2026. All Rights Reserved © Universiti Sains Malaysia",
+      "durationOfficial": "Full-time: Min 4 semesters / Max 10 semesters Part-time: Min 6 semesters /Max 15 semesters",
+      "provenance": "official-unpublished",
       "fullTimeSemesters": {
         "min": 4,
         "max": 10
@@ -13447,7 +13542,6 @@
         "min": 6,
         "max": 15
       },
-      "provenance": "official-unpublished",
       "intakeMonths": [],
       "officialIntake": "",
       "officialAcademicRequirement": "Applicants should possess one of the following: A Master's degree in research mode; or A Master’s degree in related area with CGPA 3.00/4;or A Master’s degree in related area with CGPA 2.50-2.99/4 with additional requirements; or Bachelor’s degree in related area with minimum CGPA 3.67/4 (fast-track to PhD) International candidates are required to undergo interview conducted by the school.",
@@ -13518,7 +13612,9 @@
       "officialSourceStatus": "review-required",
       "publicDisplayStatus": "needs-review",
       "reviewReasons": [
-        "international eligibility is not explicitly confirmed",
+        "international eligibility is not explicitly confirmed"
+      ],
+      "publicationWarnings": [
         "programme-specific intake is unpublished",
         "no uniquely applicable current international tuition"
       ],
@@ -13582,6 +13678,7 @@
       },
       "durationUnit": "year",
       "durationOfficial": "Full-time: Min 4 semesters / Max 10 semesters Part-time: Min 6 semesters / Max 15 semesters",
+      "provenance": "programme-specific",
       "fullTimeSemesters": {
         "min": 4,
         "max": 10
@@ -13590,7 +13687,6 @@
         "min": 6,
         "max": 15
       },
-      "provenance": "programme-specific",
       "intakeMonths": [],
       "officialIntake": "April & October",
       "officialAcademicRequirement": "Applicants should possess one of the following: A Master's degree in research mode; or A Master’s degree in related area with CGPA 3.00/4;or A Master’s degree in related area with CGPA 2.50-2.99/4 with additional requirements; or Bachelor’s degree in related area with minimum CGPA 3.67/4 (fast-track to PhD)",
@@ -13661,7 +13757,9 @@
       "officialSourceStatus": "review-required",
       "publicDisplayStatus": "needs-review",
       "reviewReasons": [
-        "international eligibility is not explicitly confirmed",
+        "international eligibility is not explicitly confirmed"
+      ],
+      "publicationWarnings": [
         "no uniquely applicable current international tuition"
       ],
       "fee": {
@@ -13724,6 +13822,7 @@
       },
       "durationUnit": "year",
       "durationOfficial": "Full-time: Min 4 semesters / Max 10 semesters Part-time: Min 6 semesters / Max 15 semesters",
+      "provenance": "official-unpublished",
       "fullTimeSemesters": {
         "min": 4,
         "max": 10
@@ -13732,7 +13831,6 @@
         "min": 6,
         "max": 15
       },
-      "provenance": "official-unpublished",
       "intakeMonths": [],
       "officialIntake": "",
       "officialAcademicRequirement": "Applicants should possess one of the following: A Master's degree in research mode; or A Master’s degree in related area with CGPA 3.00/4; or A Master’s degree in related area with CGPA 2.50-2.99/4 with additional requirements; or Bachelor’s degree in related area with minimum CGPA 3.67/4 (fast-track to PhD)",
@@ -13803,7 +13901,9 @@
       "officialSourceStatus": "review-required",
       "publicDisplayStatus": "needs-review",
       "reviewReasons": [
-        "international eligibility is not explicitly confirmed",
+        "international eligibility is not explicitly confirmed"
+      ],
+      "publicationWarnings": [
         "programme-specific intake is unpublished",
         "no uniquely applicable current international tuition"
       ],
@@ -13946,7 +14046,9 @@
       "officialSourceStatus": "review-required",
       "publicDisplayStatus": "needs-review",
       "reviewReasons": [
-        "international eligibility is not explicitly confirmed",
+        "international eligibility is not explicitly confirmed"
+      ],
+      "publicationWarnings": [
         "programme-specific intake is unpublished",
         "no uniquely applicable current international tuition"
       ],
@@ -14009,7 +14111,8 @@
         "max": 5.0
       },
       "durationUnit": "year",
-      "durationOfficial": "Full-time: Min 4 semesters / Max 10 semesters Part-time: Min 6 semesters / Max 15 semesters Postgraduate Institute of Postgraduate Studies Universiti Sains Malaysia, 11800 Penang, Malaysia. Tel: +604-653 6309 / 6027 / 2606 / 2946 / 2958 Fax: +604-653 2931 Disclaimer The institution shall not be held responsible for any discrepancies arising from the translations. Users are encouraged to refer to the official documents and seek clarification from the relevant authorities if necessary.In the event of any discrepancy or inconsistency between the English, Bahasa Melayu, and Mandarin versions of this website, the English version shall prevail. Last Update: Friday 12 June 2026. All Rights Reserved © Universiti Sains Malaysia",
+      "durationOfficial": "Full-time: Min 4 semesters / Max 10 semesters Part-time: Min 6 semesters / Max 15 semesters",
+      "provenance": "official-unpublished",
       "fullTimeSemesters": {
         "min": 4,
         "max": 10
@@ -14018,7 +14121,6 @@
         "min": 6,
         "max": 15
       },
-      "provenance": "official-unpublished",
       "intakeMonths": [],
       "officialIntake": "",
       "officialAcademicRequirement": "Applicants should possess one of the following: A Master's degree in research mode; or A Master’s degree in related area with CGPA 3.00/4;or A Master’s degree in related area with CGPA 2.50-2.99/4 with additional requirements; or Bachelor’s degree in related area with minimum CGPA 3.67/4 (fast-track to PhD) International applicants are required to undergo interview conducted by the school.",
@@ -14089,7 +14191,9 @@
       "officialSourceStatus": "review-required",
       "publicDisplayStatus": "needs-review",
       "reviewReasons": [
-        "international eligibility is not explicitly confirmed",
+        "international eligibility is not explicitly confirmed"
+      ],
+      "publicationWarnings": [
         "programme-specific intake is unpublished",
         "no uniquely applicable current international tuition"
       ],
@@ -14153,6 +14257,7 @@
       },
       "durationUnit": "year",
       "durationOfficial": "Full-time: Min 4 semesters / Max 10 semesters Part-time: Min 6 semesters /Max 15 semesters",
+      "provenance": "official-unpublished",
       "fullTimeSemesters": {
         "min": 4,
         "max": 10
@@ -14161,7 +14266,6 @@
         "min": 6,
         "max": 15
       },
-      "provenance": "official-unpublished",
       "intakeMonths": [],
       "officialIntake": "",
       "officialAcademicRequirement": "Applicants should possess one of the following: A Master's degree in research mode; or A Master’s degree in related area with CGPA 3.00/4;or A Master’s degree in related area with CGPA 2.50-2.99/4 with additional requirements; or Bachelor’s degree in related area with minimum CGPA 3.67/4 (fast-track to PhD)",
@@ -14232,7 +14336,9 @@
       "officialSourceStatus": "review-required",
       "publicDisplayStatus": "needs-review",
       "reviewReasons": [
-        "international eligibility is not explicitly confirmed",
+        "international eligibility is not explicitly confirmed"
+      ],
+      "publicationWarnings": [
         "programme-specific intake is unpublished",
         "no uniquely applicable current international tuition"
       ],
@@ -14296,6 +14402,7 @@
       },
       "durationUnit": "year",
       "durationOfficial": "Full-time: Min 4 semesters / Max 10 semesters Part-time: Min 6 semesters / Max 15 semesters",
+      "provenance": "programme-specific",
       "fullTimeSemesters": {
         "min": 4,
         "max": 10
@@ -14304,7 +14411,6 @@
         "min": 6,
         "max": 15
       },
-      "provenance": "programme-specific",
       "intakeMonths": [],
       "officialIntake": "April & October",
       "officialAcademicRequirement": "Applicants should possess one of the following: A Master's degree in research mode; or A Master’s degree in related area with CGPA 3.00/4;or A Master’s degree in related area with CGPA 2.50-2.99/4 with additional requirements; or Bachelor’s degree in related area with minimum CGPA 3.67/4 (fast-track to PhD)",
@@ -14375,7 +14481,9 @@
       "officialSourceStatus": "review-required",
       "publicDisplayStatus": "needs-review",
       "reviewReasons": [
-        "international eligibility is not explicitly confirmed",
+        "international eligibility is not explicitly confirmed"
+      ],
+      "publicationWarnings": [
         "no uniquely applicable current international tuition"
       ],
       "fee": {
@@ -14517,7 +14625,9 @@
       "officialSourceStatus": "review-required",
       "publicDisplayStatus": "needs-review",
       "reviewReasons": [
-        "international eligibility is not explicitly confirmed",
+        "international eligibility is not explicitly confirmed"
+      ],
+      "publicationWarnings": [
         "programme-specific intake is unpublished",
         "no uniquely applicable current international tuition"
       ],
@@ -14581,6 +14691,7 @@
       },
       "durationUnit": "year",
       "durationOfficial": "Full-time: Min 4 semesters / Max 10 semesters Part-time: Min 6 semesters / Max 15 semesters",
+      "provenance": "programme-specific",
       "fullTimeSemesters": {
         "min": 4,
         "max": 10
@@ -14589,7 +14700,6 @@
         "min": 6,
         "max": 15
       },
-      "provenance": "programme-specific",
       "intakeMonths": [],
       "officialIntake": "April & October",
       "officialAcademicRequirement": "Applicants should possess one of the following: A Master's degree in research mode; or A Master’s degree in related area with CGPA 3.00/4;or A Master’s degree in related area with CGPA 2.50-2.99/4 with additional requirements; or Bachelor’s degree in related area with minimum CGPA 3.67/4 (fast-track to PhD)",
@@ -14660,7 +14770,9 @@
       "officialSourceStatus": "review-required",
       "publicDisplayStatus": "needs-review",
       "reviewReasons": [
-        "international eligibility is not explicitly confirmed",
+        "international eligibility is not explicitly confirmed"
+      ],
+      "publicationWarnings": [
         "no uniquely applicable current international tuition"
       ],
       "fee": {
@@ -14802,7 +14914,9 @@
       "officialSourceStatus": "review-required",
       "publicDisplayStatus": "needs-review",
       "reviewReasons": [
-        "international eligibility is not explicitly confirmed",
+        "international eligibility is not explicitly confirmed"
+      ],
+      "publicationWarnings": [
         "programme-specific intake is unpublished",
         "no uniquely applicable current international tuition"
       ],
@@ -14866,6 +14980,7 @@
       },
       "durationUnit": "year",
       "durationOfficial": "Full-time : Min 4 semesters / Max 10 semesters Part-time : Min 6 semesters / Max 15 semesters",
+      "provenance": "official-unpublished",
       "fullTimeSemesters": {
         "min": 4,
         "max": 10
@@ -14874,7 +14989,6 @@
         "min": 6,
         "max": 15
       },
-      "provenance": "official-unpublished",
       "intakeMonths": [],
       "officialIntake": "",
       "officialAcademicRequirement": "Applicants should possess one of the following: A Master's degree in research mode; or A Master’s degree in related area with CGPA 3.00/4;or A Master’s degree in related area with CGPA 2.50-2.99/4 with additional requirements; or Bachelor’s degree in related area with minimum CGPA 3.67/4 (fast-track to PhD)",
@@ -14943,8 +15057,9 @@
       "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=222&catid=51",
       "officialVerifiedAt": "2026-06-14T15:01:36Z",
       "officialSourceStatus": "review-required",
-      "publicDisplayStatus": "needs-review",
-      "reviewReasons": [
+      "publicDisplayStatus": "ready",
+      "reviewReasons": [],
+      "publicationWarnings": [
         "programme-specific intake is unpublished"
       ],
       "fee": {
@@ -15090,8 +15205,9 @@
       "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=232&catid=51",
       "officialVerifiedAt": "2026-06-14T15:01:36Z",
       "officialSourceStatus": "review-required",
-      "publicDisplayStatus": "needs-review",
-      "reviewReasons": [
+      "publicDisplayStatus": "ready",
+      "reviewReasons": [],
+      "publicationWarnings": [
         "programme-specific intake is unpublished"
       ],
       "fee": {
@@ -15160,6 +15276,7 @@
       },
       "durationUnit": "year",
       "durationOfficial": "Full-time : Min 4 semesters / Max 10 semesters Part-time : Min 6 semesters / Max 15 semesters",
+      "provenance": "official-unpublished",
       "fullTimeSemesters": {
         "min": 4,
         "max": 10
@@ -15168,7 +15285,6 @@
         "min": 6,
         "max": 15
       },
-      "provenance": "official-unpublished",
       "intakeMonths": [],
       "officialIntake": "",
       "officialAcademicRequirement": "Applicants should possess one of the following: A Master's degree in research mode; or A Master’s degree in related area with CGPA 3.00/4;or A Master’s degree in related area with CGPA 2.50-2.99/4 with additional requirements; or Bachelor’s degree in related area with minimum CGPA 3.67/4 (fast-track to PhD)",
@@ -15237,8 +15353,9 @@
       "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=235&catid=51",
       "officialVerifiedAt": "2026-06-14T15:01:36Z",
       "officialSourceStatus": "review-required",
-      "publicDisplayStatus": "needs-review",
-      "reviewReasons": [
+      "publicDisplayStatus": "ready",
+      "reviewReasons": [],
+      "publicationWarnings": [
         "programme-specific intake is unpublished"
       ],
       "fee": {
@@ -15307,6 +15424,7 @@
       },
       "durationUnit": "year",
       "durationOfficial": "Full Time: Min 4 semesters / Max 10 semesters Part Time: Min 6 semesters / Max 15 semesters",
+      "provenance": "official-unpublished",
       "fullTimeSemesters": {
         "min": 4,
         "max": 10
@@ -15315,7 +15433,6 @@
         "min": 6,
         "max": 15
       },
-      "provenance": "official-unpublished",
       "intakeMonths": [],
       "officialIntake": "",
       "officialAcademicRequirement": "Applicants should possess one of the following: A Master's degree in research mode; or A Master’s degree in related area with CGPA 3.00/4;or A Master’s degree in related area with CGPA 2.50-2.99/4 with additional requirements; or Bachelor’s degree in related area with minimum CGPA 3.67/4 (fast-track to PhD)",
@@ -15384,8 +15501,9 @@
       "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=556&catid=55",
       "officialVerifiedAt": "2026-06-14T15:01:36Z",
       "officialSourceStatus": "review-required",
-      "publicDisplayStatus": "needs-review",
-      "reviewReasons": [
+      "publicDisplayStatus": "ready",
+      "reviewReasons": [],
+      "publicationWarnings": [
         "programme-specific intake is unpublished"
       ],
       "fee": {
@@ -15533,7 +15651,9 @@
       "officialSourceStatus": "review-required",
       "publicDisplayStatus": "needs-review",
       "reviewReasons": [
-        "international eligibility is not explicitly confirmed",
+        "international eligibility is not explicitly confirmed"
+      ],
+      "publicationWarnings": [
         "programme-specific intake is unpublished",
         "no uniquely applicable current international tuition"
       ],
@@ -15668,6 +15788,7 @@
       "officialSourceStatus": "verified",
       "publicDisplayStatus": "ready",
       "reviewReasons": [],
+      "publicationWarnings": [],
       "fee": {
         "status": "verified-current-official-fee",
         "tuitionAmount": 63000.0,
@@ -15800,6 +15921,7 @@
       "officialSourceStatus": "verified",
       "publicDisplayStatus": "ready",
       "reviewReasons": [],
+      "publicationWarnings": [],
       "fee": {
         "status": "verified-current-official-fee",
         "tuitionAmount": 63000.0,
@@ -15932,6 +16054,7 @@
       "officialSourceStatus": "verified",
       "publicDisplayStatus": "ready",
       "reviewReasons": [],
+      "publicationWarnings": [],
       "fee": {
         "status": "verified-current-official-fee",
         "tuitionAmount": 36000.0,
@@ -16064,6 +16187,7 @@
       "officialSourceStatus": "verified",
       "publicDisplayStatus": "ready",
       "reviewReasons": [],
+      "publicationWarnings": [],
       "fee": {
         "status": "verified-current-official-fee",
         "tuitionAmount": 36000.0,
@@ -16196,6 +16320,7 @@
       "officialSourceStatus": "verified",
       "publicDisplayStatus": "ready",
       "reviewReasons": [],
+      "publicationWarnings": [],
       "fee": {
         "status": "verified-current-official-fee",
         "tuitionAmount": 36000.0,
@@ -16328,6 +16453,7 @@
       "officialSourceStatus": "verified",
       "publicDisplayStatus": "ready",
       "reviewReasons": [],
+      "publicationWarnings": [],
       "fee": {
         "status": "verified-current-official-fee",
         "tuitionAmount": 36000.0,
@@ -16365,597 +16491,147 @@
       "code": "USM-PHD-ARTICLE-340-F6B2DBBE",
       "nameEnOfficial": "DOCTOR OF BUSINESS ADMINISTRATION (DBA)",
       "reasons": [
-        "official numeric duration is unpublished",
-        "programme-specific intake is unpublished"
-      ]
-    },
-    {
-      "code": "USM-PHD-ARTICLE-413-F4FF207B",
-      "nameEnOfficial": "DOCTOR OF NEUROSCIENCE",
-      "reasons": [
-        "official numeric duration is unpublished",
-        "programme-specific intake is unpublished"
-      ]
-    },
-    {
-      "code": "USM-PHD-ARTICLE-557-7081B653",
-      "nameEnOfficial": "DOCTOR OF PHILOSOPHY (BIOMEDICINE)",
-      "reasons": [
-        "programme-specific intake is unpublished"
-      ]
-    },
-    {
-      "code": "USM-PHD-ARTICLE-246-D78D9DD2",
-      "nameEnOfficial": "DOCTOR OF PHILOSOPHY (BUILDING SURVEYING)",
-      "reasons": [
-        "programme-specific intake is unpublished"
-      ]
-    },
-    {
-      "code": "USM-PHD-ARTICLE-200-2C6B8775",
-      "nameEnOfficial": "DOCTOR OF PHILOSOPHY (BUILDING TECHNOLOGY)",
-      "reasons": [
-        "programme-specific intake is unpublished"
-      ]
-    },
-    {
-      "code": "USM-PHD-ARTICLE-167-A219BB23",
-      "nameEnOfficial": "DOCTOR OF PHILOSOPHY (DUAL PHD KEELE UNIVERSITY,UK)",
-      "reasons": [
-        "programme-specific intake is unpublished"
-      ]
-    },
-    {
-      "code": "USM-PHD-ARTICLE-153-1C328CB2",
-      "nameEnOfficial": "DOCTOR OF PHILOSOPHY (DUAL PHD NATIONAL TSING HUA UNIVERSITY,TAIWAN)",
-      "reasons": [
-        "programme-specific intake is unpublished"
-      ]
-    },
-    {
-      "code": "USM-PHD-ARTICLE-390-61D17A58",
-      "nameEnOfficial": "DOCTOR OF PHILOSOPHY (ENGINEERING CAMPUS)",
-      "reasons": [
-        "programme-specific intake is unpublished"
-      ]
-    },
-    {
-      "code": "USM-PHD-ARTICLE-392-11B9FC72",
-      "nameEnOfficial": "DOCTOR OF PHILOSOPHY (ENGINEERING CAMPUS)",
-      "reasons": [
-        "programme-specific intake is unpublished"
-      ]
-    },
-    {
-      "code": "USM-PHD-ARTICLE-395-92654AFA",
-      "nameEnOfficial": "DOCTOR OF PHILOSOPHY (ENGINEERING CAMPUS)",
-      "reasons": [
-        "programme-specific intake is unpublished"
-      ]
-    },
-    {
-      "code": "USM-PHD-ARTICLE-402-9D4FB379",
-      "nameEnOfficial": "DOCTOR OF PHILOSOPHY (ENGINEERING CAMPUS)",
-      "reasons": [
-        "programme-specific intake is unpublished"
-      ]
-    },
-    {
-      "code": "USM-PHD-ARTICLE-407-B0241583",
-      "nameEnOfficial": "DOCTOR OF PHILOSOPHY (ENGINEERING CAMPUS)",
-      "reasons": [
-        "programme-specific intake is unpublished"
-      ]
-    },
-    {
-      "code": "USM-PHD-ARTICLE-404-31FB99DD",
-      "nameEnOfficial": "DOCTOR OF PHILOSOPHY (ENGINEERING CAMPUS)",
-      "reasons": [
-        "programme-specific intake is unpublished"
-      ]
-    },
-    {
-      "code": "USM-PHD-ARTICLE-558-1A7EF8A8",
-      "nameEnOfficial": "DOCTOR OF PHILOSOPHY (FORENSIC SCIENCE)",
-      "reasons": [
-        "programme-specific intake is unpublished"
-      ]
-    },
-    {
-      "code": "USM-PHD-ARTICLE-555-1399FD12",
-      "nameEnOfficial": "DOCTOR OF PHILOSOPHY (HEALTH CAMPUS)",
-      "reasons": [
-        "programme-specific intake is unpublished"
-      ]
-    },
-    {
-      "code": "USM-PHD-ARTICLE-807-331F9B3B",
-      "nameEnOfficial": "DOCTOR OF PHILOSOPHY (HEALTH CAMPUS)",
-      "reasons": [
-        "programme-specific intake is unpublished"
-      ]
-    },
-    {
-      "code": "USM-PHD-ARTICLE-233-F8F04AED",
-      "nameEnOfficial": "DOCTOR OF PHILOSOPHY (HOUSING)",
-      "reasons": [
-        "programme-specific intake is unpublished"
-      ]
-    },
-    {
-      "code": "USM-PHD-ARTICLE-234-A49B2AC1",
-      "nameEnOfficial": "DOCTOR OF PHILOSOPHY (INTERIOR DESIGN)",
-      "reasons": [
-        "programme-specific intake is unpublished"
-      ]
-    },
-    {
-      "code": "USM-PHD-ARTICLE-888-ABF3CB0A",
-      "nameEnOfficial": "DOCTOR OF PHILOSOPHY (JOINT PHD NEW CASTLE UNIVERSITY, UNITED KINGDOM)",
-      "reasons": [
-        "programme-specific intake is unpublished"
-      ]
-    },
-    {
-      "code": "USM-PHD-ARTICLE-244-F4A13D11",
-      "nameEnOfficial": "DOCTOR OF PHILOSOPHY (MAIN CAMPUS)",
-      "reasons": [
-        "programme-specific intake is unpublished"
-      ]
-    },
-    {
-      "code": "USM-PHD-ARTICLE-169-C35B2022",
-      "nameEnOfficial": "DOCTOR OF PHILOSOPHY (MAIN CAMPUS)",
-      "reasons": [
-        "programme-specific intake is unpublished"
-      ]
-    },
-    {
-      "code": "USM-PHD-ARTICLE-217-DDFFC688",
-      "nameEnOfficial": "DOCTOR OF PHILOSOPHY (MAIN CAMPUS)",
-      "reasons": [
-        "programme-specific intake is unpublished"
-      ]
-    },
-    {
-      "code": "USM-PHD-ARTICLE-333-204B8FF5",
-      "nameEnOfficial": "DOCTOR OF PHILOSOPHY (MAIN CAMPUS)",
-      "reasons": [
-        "programme-specific intake is unpublished"
-      ]
-    },
-    {
-      "code": "USM-PHD-ARTICLE-372-672DB387",
-      "nameEnOfficial": "DOCTOR OF PHILOSOPHY (MAIN CAMPUS)",
-      "reasons": [
-        "programme-specific intake is unpublished"
-      ]
-    },
-    {
-      "code": "USM-PHD-ARTICLE-273-EF8BB80C",
-      "nameEnOfficial": "DOCTOR OF PHILOSOPHY (MAIN CAMPUS)",
-      "reasons": [
-        "programme-specific intake is unpublished"
-      ]
-    },
-    {
-      "code": "USM-PHD-ARTICLE-170-8655C53B",
-      "nameEnOfficial": "DOCTOR OF PHILOSOPHY (MAIN CAMPUS)",
-      "reasons": [
-        "programme-specific intake is unpublished"
-      ]
-    },
-    {
-      "code": "USM-PHD-ARTICLE-271-7F5394A0",
-      "nameEnOfficial": "DOCTOR OF PHILOSOPHY (MAIN CAMPUS)",
-      "reasons": [
-        "programme-specific intake is unpublished"
-      ]
-    },
-    {
-      "code": "USM-PHD-ARTICLE-809-4DB1B238",
-      "nameEnOfficial": "DOCTOR OF PHILOSOPHY (MAIN CAMPUS)",
-      "reasons": [
-        "international eligibility is not explicitly confirmed",
-        "programme-specific intake is unpublished",
-        "no uniquely applicable current international tuition"
-      ]
-    },
-    {
-      "code": "USM-PHD-ARTICLE-388-4B3FE108",
-      "nameEnOfficial": "DOCTOR OF PHILOSOPHY (MAIN CAMPUS)",
-      "reasons": [
-        "programme-specific intake is unpublished"
-      ]
-    },
-    {
-      "code": "USM-PHD-ARTICLE-219-DEE779E2",
-      "nameEnOfficial": "DOCTOR OF PHILOSOPHY (MAIN CAMPUS)",
-      "reasons": [
-        "international eligibility is not explicitly confirmed",
-        "programme-specific intake is unpublished",
-        "no uniquely applicable current international tuition"
-      ]
-    },
-    {
-      "code": "USM-PHD-ARTICLE-338-A89E7B8C",
-      "nameEnOfficial": "DOCTOR OF PHILOSOPHY (MAIN CAMPUS)",
-      "reasons": [
-        "programme-specific intake is unpublished"
-      ]
-    },
-    {
-      "code": "USM-PHD-ARTICLE-510-30AB87BE",
-      "nameEnOfficial": "DOCTOR OF PHILOSOPHY (MAIN CAMPUS)",
-      "reasons": [
-        "programme-specific intake is unpublished"
-      ]
-    },
-    {
-      "code": "USM-PHD-ARTICLE-215-1208D3CA",
-      "nameEnOfficial": "DOCTOR OF PHILOSOPHY (MAIN CAMPUS)",
-      "reasons": [
-        "international eligibility is not explicitly confirmed",
-        "programme-specific intake is unpublished",
-        "no uniquely applicable current international tuition"
-      ]
-    },
-    {
-      "code": "USM-PHD-ARTICLE-218-B3A10FF2",
-      "nameEnOfficial": "DOCTOR OF PHILOSOPHY (MAIN CAMPUS)",
-      "reasons": [
-        "programme-specific intake is unpublished"
-      ]
-    },
-    {
-      "code": "USM-PHD-ARTICLE-325-B8B6326F",
-      "nameEnOfficial": "DOCTOR OF PHILOSOPHY (MAIN CAMPUS)",
-      "reasons": [
-        "programme-specific intake is unpublished"
-      ]
-    },
-    {
-      "code": "USM-PHD-ARTICLE-220-E1BD8F32",
-      "nameEnOfficial": "DOCTOR OF PHILOSOPHY (MAIN CAMPUS)",
-      "reasons": [
-        "programme-specific intake is unpublished"
-      ]
-    },
-    {
-      "code": "USM-PHD-ARTICLE-888-0184C491",
-      "nameEnOfficial": "DOCTOR OF PHILOSOPHY (MAIN CAMPUS)",
-      "reasons": [
-        "programme-specific intake is unpublished"
-      ]
-    },
-    {
-      "code": "USM-PHD-ARTICLE-376-E4CF4C2E",
-      "nameEnOfficial": "DOCTOR OF PHILOSOPHY (MAIN CAMPUS)",
-      "reasons": [
-        "programme-specific intake is unpublished"
-      ]
-    },
-    {
-      "code": "USM-PHD-ARTICLE-167-D16175AE",
-      "nameEnOfficial": "DOCTOR OF PHILOSOPHY (MAIN CAMPUS)",
-      "reasons": [
-        "programme-specific intake is unpublished"
-      ]
-    },
-    {
-      "code": "USM-PHD-ARTICLE-153-A3B106C5",
-      "nameEnOfficial": "DOCTOR OF PHILOSOPHY (MAIN CAMPUS)",
-      "reasons": [
-        "programme-specific intake is unpublished"
-      ]
-    },
-    {
-      "code": "USM-PHD-ARTICLE-375-4579FD96",
-      "nameEnOfficial": "DOCTOR OF PHILOSOPHY (MAIN CAMPUS)",
-      "reasons": [
-        "programme-specific intake is unpublished"
-      ]
-    },
-    {
-      "code": "USM-PHD-ARTICLE-221-1C33BEF5",
-      "nameEnOfficial": "DOCTOR OF PHILOSOPHY (MAIN CAMPUS)",
-      "reasons": [
-        "programme-specific intake is unpublished"
-      ]
-    },
-    {
-      "code": "USM-PHD-ARTICLE-361-F93DBDBA",
-      "nameEnOfficial": "DOCTOR OF PHILOSOPHY (MAIN CAMPUS)",
-      "reasons": [
-        "programme-specific intake is unpublished"
-      ]
-    },
-    {
-      "code": "USM-PHD-ARTICLE-887-795F4413",
-      "nameEnOfficial": "DOCTOR OF PHILOSOPHY (MAIN CAMPUS)",
-      "reasons": [
-        "programme-specific intake is unpublished"
-      ]
-    },
-    {
-      "code": "USM-PHD-ARTICLE-243-E1524B43",
-      "nameEnOfficial": "DOCTOR OF PHILOSOPHY (MAIN CAMPUS)",
-      "reasons": [
-        "programme-specific intake is unpublished"
-      ]
-    },
-    {
-      "code": "USM-PHD-ARTICLE-315-5BE5C9C6",
-      "nameEnOfficial": "DOCTOR OF PHILOSOPHY (MAIN CAMPUS)",
-      "reasons": [
-        "programme-specific intake is unpublished"
-      ]
-    },
-    {
-      "code": "USM-PHD-ARTICLE-147-922EA0D1",
-      "nameEnOfficial": "DOCTOR OF PHILOSOPHY (MAIN CAMPUS)",
-      "reasons": [
-        "programme-specific intake is unpublished"
-      ]
-    },
-    {
-      "code": "USM-PHD-ARTICLE-241-7E0BAB3B",
-      "nameEnOfficial": "DOCTOR OF PHILOSOPHY (MAIN CAMPUS)",
-      "reasons": [
-        "programme-specific intake is unpublished"
-      ]
-    },
-    {
-      "code": "USM-PHD-ARTICLE-145-B278876C",
-      "nameEnOfficial": "DOCTOR OF PHILOSOPHY (MAIN CAMPUS)",
-      "reasons": [
-        "programme-specific intake is unpublished"
-      ]
-    },
-    {
-      "code": "USM-PHD-ARTICLE-326-FC5BC872",
-      "nameEnOfficial": "DOCTOR OF PHILOSOPHY (MAIN CAMPUS)",
-      "reasons": [
-        "programme-specific intake is unpublished"
-      ]
-    },
-    {
-      "code": "USM-PHD-ARTICLE-247-95E84700",
-      "nameEnOfficial": "DOCTOR OF PHILOSOPHY (MAIN CAMPUS)- SCIENCE",
-      "reasons": [
-        "programme-specific intake is unpublished"
-      ]
-    },
-    {
-      "code": "USM-PHD-ARTICLE-379-63462EB7",
-      "nameEnOfficial": "DOCTOR OF PHILOSOPHY (MAIN CAMPUS)-ART",
-      "reasons": [
-        "programme-specific intake is unpublished"
-      ]
-    },
-    {
-      "code": "USM-PHD-ARTICLE-561-1A146DC4",
-      "nameEnOfficial": "DOCTOR OF PHILOSOPHY (MEDICAL RADIATION)",
-      "reasons": [
-        "programme-specific intake is unpublished"
-      ]
-    },
-    {
-      "code": "USM-PHD-ARTICLE-560-D920F911",
-      "nameEnOfficial": "DOCTOR OF PHILOSOPHY (NURSING)",
-      "reasons": [
-        "programme-specific intake is unpublished"
-      ]
-    },
-    {
-      "code": "USM-PHD-ARTICLE-559-C64343D5",
-      "nameEnOfficial": "DOCTOR OF PHILOSOPHY (NUTRITION)",
-      "reasons": [
-        "programme-specific intake is unpublished"
+        "official numeric duration is unpublished"
       ]
     },
     {
       "code": "USM-PHD-ARTICLE-1475-DFD9E09D",
       "nameEnOfficial": "DOCTOR OF PHILOSOPHY (OFFSHORE EUROPEAN GLOBAL SCHOOL UNIVERSITY, ISTANBUL)",
       "reasons": [
-        "international eligibility is not explicitly confirmed",
-        "programme-specific intake is unpublished",
-        "no uniquely applicable current international tuition"
+        "international eligibility is not explicitly confirmed"
       ]
     },
     {
       "code": "USM-PHD-ARTICLE-1476-EDCE896B",
       "nameEnOfficial": "DOCTOR OF PHILOSOPHY (OFFSHORE EUROPEAN GLOBAL SCHOOL UNIVERSITY, ISTANBUL)",
       "reasons": [
-        "international eligibility is not explicitly confirmed",
-        "programme-specific intake is unpublished",
-        "no uniquely applicable current international tuition"
+        "international eligibility is not explicitly confirmed"
       ]
     },
     {
       "code": "USM-PHD-ARTICLE-1474-13A979E2",
       "nameEnOfficial": "DOCTOR OF PHILOSOPHY (OFFSHORE EUROPEAN GLOBAL SCHOOL UNIVERSITY, ISTANBUL)",
       "reasons": [
-        "international eligibility is not explicitly confirmed",
-        "programme-specific intake is unpublished",
-        "no uniquely applicable current international tuition"
+        "international eligibility is not explicitly confirmed"
       ]
     },
     {
       "code": "USM-PHD-ARTICLE-1482-71AFD600",
       "nameEnOfficial": "DOCTOR OF PHILOSOPHY (OFFSHORE EUROPEAN GLOBAL SCHOOL UNIVERSITY, ISTANBUL)",
       "reasons": [
-        "international eligibility is not explicitly confirmed",
-        "programme-specific intake is unpublished",
-        "no uniquely applicable current international tuition"
+        "international eligibility is not explicitly confirmed"
       ]
     },
     {
       "code": "USM-PHD-ARTICLE-1501-AA166411",
       "nameEnOfficial": "DOCTOR OF PHILOSOPHY (OFFSHORE EUROPEAN GLOBAL SCHOOL UNIVERSITY, ISTANBUL)",
       "reasons": [
-        "international eligibility is not explicitly confirmed",
-        "programme-specific intake is unpublished",
-        "no uniquely applicable current international tuition"
+        "international eligibility is not explicitly confirmed"
       ]
     },
     {
       "code": "USM-PHD-ARTICLE-1506-E0F6CDF0",
       "nameEnOfficial": "DOCTOR OF PHILOSOPHY (OFFSHORE EUROPEAN GLOBAL SCHOOL UNIVERSITY, ISTANBUL)",
       "reasons": [
-        "international eligibility is not explicitly confirmed",
-        "programme-specific intake is unpublished",
-        "no uniquely applicable current international tuition"
+        "international eligibility is not explicitly confirmed"
       ]
     },
     {
       "code": "USM-PHD-ARTICLE-1508-17AAC296",
       "nameEnOfficial": "DOCTOR OF PHILOSOPHY (OFFSHORE EUROPEAN GLOBAL SCHOOL UNIVERSITY, ISTANBUL)",
       "reasons": [
-        "international eligibility is not explicitly confirmed",
-        "programme-specific intake is unpublished",
-        "no uniquely applicable current international tuition"
+        "international eligibility is not explicitly confirmed"
       ]
     },
     {
       "code": "USM-PHD-ARTICLE-1503-7E2AA05C",
       "nameEnOfficial": "DOCTOR OF PHILOSOPHY (OFFSHORE EUROPEAN GLOBAL SCHOOL UNIVERSITY, ISTANBUL)",
       "reasons": [
-        "international eligibility is not explicitly confirmed",
-        "no uniquely applicable current international tuition"
+        "international eligibility is not explicitly confirmed"
       ]
     },
     {
       "code": "USM-PHD-ARTICLE-1515-A74EBF7B",
       "nameEnOfficial": "DOCTOR OF PHILOSOPHY (OFFSHORE EUROPEAN GLOBAL SCHOOL UNIVERSITY, ISTANBUL)",
       "reasons": [
-        "international eligibility is not explicitly confirmed",
-        "programme-specific intake is unpublished",
-        "no uniquely applicable current international tuition"
+        "international eligibility is not explicitly confirmed"
       ]
     },
     {
       "code": "USM-PHD-ARTICLE-1519-B908433A",
       "nameEnOfficial": "DOCTOR OF PHILOSOPHY (OFFSHORE EUROPEAN GLOBAL SCHOOL UNIVERSITY, ISTANBUL)",
       "reasons": [
-        "international eligibility is not explicitly confirmed",
-        "programme-specific intake is unpublished",
-        "no uniquely applicable current international tuition"
+        "international eligibility is not explicitly confirmed"
       ]
     },
     {
       "code": "USM-PHD-ARTICLE-1492-B74C2ACF",
       "nameEnOfficial": "DOCTOR OF PHILOSOPHY (OFFSHORE EUROPEAN GLOBAL SCHOOL UNIVERSITY, ISTANBUL)",
       "reasons": [
-        "international eligibility is not explicitly confirmed",
-        "no uniquely applicable current international tuition"
+        "international eligibility is not explicitly confirmed"
       ]
     },
     {
       "code": "USM-PHD-ARTICLE-1491-B0781791",
       "nameEnOfficial": "DOCTOR OF PHILOSOPHY (OFFSHORE EUROPEAN GLOBAL SCHOOL UNIVERSITY, ISTANBUL)",
       "reasons": [
-        "international eligibility is not explicitly confirmed",
-        "programme-specific intake is unpublished",
-        "no uniquely applicable current international tuition"
+        "international eligibility is not explicitly confirmed"
       ]
     },
     {
       "code": "USM-PHD-ARTICLE-1490-21A1FFAC",
       "nameEnOfficial": "DOCTOR OF PHILOSOPHY (OFFSHORE EUROPEAN GLOBAL SCHOOL UNIVERSITY, ISTANBUL)",
       "reasons": [
-        "international eligibility is not explicitly confirmed",
-        "programme-specific intake is unpublished",
-        "no uniquely applicable current international tuition"
+        "international eligibility is not explicitly confirmed"
       ]
     },
     {
       "code": "USM-PHD-ARTICLE-1487-68D66E5A",
       "nameEnOfficial": "DOCTOR OF PHILOSOPHY (OFFSHORE EUROPEAN GLOBAL SCHOOL UNIVERSITY, ISTANBUL)",
       "reasons": [
-        "international eligibility is not explicitly confirmed",
-        "programme-specific intake is unpublished",
-        "no uniquely applicable current international tuition"
+        "international eligibility is not explicitly confirmed"
       ]
     },
     {
       "code": "USM-PHD-ARTICLE-1486-350D1D27",
       "nameEnOfficial": "DOCTOR OF PHILOSOPHY (OFFSHORE EUROPEAN GLOBAL SCHOOL UNIVERSITY, ISTANBUL)",
       "reasons": [
-        "international eligibility is not explicitly confirmed",
-        "programme-specific intake is unpublished",
-        "no uniquely applicable current international tuition"
+        "international eligibility is not explicitly confirmed"
       ]
     },
     {
       "code": "USM-PHD-ARTICLE-1493-9DF5CFA5",
       "nameEnOfficial": "DOCTOR OF PHILOSOPHY (OFFSHORE MINJIANG UNIVERSITY)",
       "reasons": [
-        "international eligibility is not explicitly confirmed",
-        "no uniquely applicable current international tuition"
+        "international eligibility is not explicitly confirmed"
       ]
     },
     {
       "code": "USM-PHD-ARTICLE-1516-5FCB065D",
       "nameEnOfficial": "DOCTOR OF PHILOSOPHY (OFFSHORE NORTHEASTERN UNIVERSITY, QINHUANGDAO)",
       "reasons": [
-        "international eligibility is not explicitly confirmed",
-        "programme-specific intake is unpublished",
-        "no uniquely applicable current international tuition"
+        "international eligibility is not explicitly confirmed"
       ]
     },
     {
       "code": "USM-PHD-ARTICLE-1494-9A5B9F7D",
       "nameEnOfficial": "DOCTOR OF PHILOSOPHY (OFFSHORE UNIVERSITAS INDONESIA)",
       "reasons": [
-        "international eligibility is not explicitly confirmed",
-        "no uniquely applicable current international tuition"
+        "international eligibility is not explicitly confirmed"
       ]
     },
     {
       "code": "USM-PHD-ARTICLE-1517-D53FD044",
       "nameEnOfficial": "DOCTOR OF PHILOSOPHY (OFFSHORE YANGTZE NORMAL UNIVERSITY)",
       "reasons": [
-        "international eligibility is not explicitly confirmed",
-        "programme-specific intake is unpublished",
-        "no uniquely applicable current international tuition"
-      ]
-    },
-    {
-      "code": "USM-PHD-ARTICLE-222-3C8B9B11",
-      "nameEnOfficial": "DOCTOR OF PHILOSOPHY (PLANNING STUDIES)",
-      "reasons": [
-        "programme-specific intake is unpublished"
-      ]
-    },
-    {
-      "code": "USM-PHD-ARTICLE-232-7F458489",
-      "nameEnOfficial": "DOCTOR OF PHILOSOPHY (PROJECT MANAGEMENT)",
-      "reasons": [
-        "programme-specific intake is unpublished"
-      ]
-    },
-    {
-      "code": "USM-PHD-ARTICLE-235-AE06FB17",
-      "nameEnOfficial": "DOCTOR OF PHILOSOPHY (QUANTITY SURVEYING)",
-      "reasons": [
-        "programme-specific intake is unpublished"
-      ]
-    },
-    {
-      "code": "USM-PHD-ARTICLE-556-D76B8766",
-      "nameEnOfficial": "DOCTOR OF PHILOSOPHY (SPORTS SCIENCE)",
-      "reasons": [
-        "programme-specific intake is unpublished"
+        "international eligibility is not explicitly confirmed"
       ]
     },
     {
       "code": "USM-PHD-ARTICLE-1479-0BF3C6B6",
       "nameEnOfficial": "DOCTOR OF PHILOSOPHY - OFFSHORE EUROPEAN GLOBAL SCHOOL ISTANBUL GELISIM UNIVERSITY",
       "reasons": [
-        "international eligibility is not explicitly confirmed",
-        "programme-specific intake is unpublished",
-        "no uniquely applicable current international tuition"
+        "international eligibility is not explicitly confirmed"
       ]
     }
   ],
@@ -16971,8 +16647,8 @@
     "applicationCodeOnlyOfferings": 5,
     "offshoreApplicationCodesReconciled": 24,
     "statusCounts": {
-      "needs-review": 79,
-      "ready": 14,
+      "needs-review": 21,
+      "ready": 72,
       "not-available-for-international": 2
     },
     "modeCounts": {
@@ -16989,8 +16665,8 @@
     },
     "feeCounts": {
       "verified-current-official-fee": 13,
-      "verified-calculated-total-range": 59,
-      "official-unpublished": 23
+      "verified-calculated-total-range": 62,
+      "official-unpublished": 20
     },
     "doctoralNamedFeeRows": 13,
     "coverage": {
@@ -17015,8 +16691,8 @@
         "review": 0
       },
       "duration": {
-        "covered": 93,
-        "unpublished": 2,
+        "covered": 94,
+        "unpublished": 1,
         "review": 0
       },
       "intake": {
@@ -17025,9 +16701,9 @@
         "review": 0
       },
       "internationalEligibility": {
-        "covered": 72,
+        "covered": 75,
         "unpublished": 0,
-        "review": 23
+        "review": 20
       },
       "academicRequirement": {
         "covered": 95,
@@ -17045,8 +16721,8 @@
         "review": 0
       },
       "fee": {
-        "covered": 72,
-        "unpublished": 23,
+        "covered": 75,
+        "unpublished": 20,
         "review": 0
       },
       "evidence": {
@@ -17055,12 +16731,11 @@
         "review": 0
       }
     },
-    "exceptionCount": 79,
-    "publicationDecision": "blocked",
+    "exceptionCount": 21,
+    "publicationDecision": "publish-ready-subset",
     "blockingReasons": [
-      "Collection authorization does not permit database publication.",
-      "Needs-review records must not enter the public international catalogue.",
-      "Four-language commercial localization has not been reviewed."
+      "Needs-review and Malaysian-only records must remain excluded from the public international catalogue.",
+      "Four-language commercial localization must pass import and API/UI verification before release."
     ]
   }
 }

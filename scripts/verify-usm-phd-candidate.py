@@ -103,8 +103,17 @@ def main() -> None:
 
     if data.get("databaseWrite") != "not-performed":
         errors.append("Candidate collection must not write the database.")
-    if audit.get("publicationDecision") != "blocked":
-        errors.append("Publication must remain blocked.")
+    if audit.get("publicationDecision") != "publish-ready-subset":
+        errors.append("Publication decision must allow only the audited ready subset.")
+    expected_statuses = {
+        "ready": 72,
+        "needs-review": 21,
+        "not-available-for-international": 2,
+    }
+    if audit.get("statusCounts") != expected_statuses:
+        errors.append(
+            f"Expected doctoral status partition {expected_statuses}, got {audit.get('statusCounts')}."
+        )
     needs_review = audit.get("statusCounts", {}).get("needs-review", 0)
     if needs_review:
         warnings.append(f"{needs_review} records remain in the exception queue.")

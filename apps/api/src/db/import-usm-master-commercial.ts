@@ -19,7 +19,7 @@ const feeDirectoryUrl = "https://admission.usm.my/index.php/postgraduate/fee-pg"
 const applicationGuideUrl =
   "https://onlineips.usm.my/images/ONLINE%20APPLICATION%20GUIDELINE%20012026%20v1.pdf";
 
-type StudyMode = "research" | "coursework" | "mixed" | "clinical";
+type StudyMode = "research" | "coursework" | "mixed" | "clinical" | "online";
 type FeeCurrency = "USD" | "MYR";
 
 interface OfficialAmount {
@@ -116,7 +116,7 @@ const traditionalCharacters: Record<string, string> = {
   合: "合", 双: "雙", 证: "證", 课: "課", 程: "程", 混: "混", 型: "型", 硕: "碩", 项: "項"
 };
 
-const toTraditional = (value: string) =>
+export const toTraditional = (value: string) =>
   Array.from(value)
     .map((character) => traditionalCharacters[character] || character)
     .join("");
@@ -171,6 +171,122 @@ const facultyTranslations: Record<string, [string, string]> = {
 };
 
 const subjectTranslations: Array<[RegExp, string]> = [
+  [/Sustainable Development Practice/gi, "可持续发展实践"],
+  [/Educational Technology & Multimedia/gi, "教育技术与多媒体"],
+  [/Curriculum & Instruction/gi, "课程与教学"],
+  [/Science Education/gi, "科学教育"],
+  [/\bTESOL\b/gi, "英语教学"],
+  [/Plastic Surgery/gi, "整形外科"],
+  [/Neurosurgery/gi, "神经外科"],
+  [/Social Work/gi, "社会工作"],
+  [/Islamic-Based Development Management/gi, "伊斯兰发展管理"],
+  [/Gender Studies/gi, "性别研究"],
+  [/Development Studies/gi, "发展研究"],
+  [/Anthropology and Sociology/gi, "人类学与社会学"],
+  [/Tropical Plant Disease Management/gi, "热带植物病害管理"],
+  [/Tourism Development/gi, "旅游发展"],
+  [/Teaching of Mathematics/gi, "数学教学"],
+  [/Solid State Physics/gi, "固体物理学"],
+  [/Radiation Science/gi, "放射科学"],
+  [/Polymer Technology/gi, "高分子技术"],
+  [/Nano-Optoelectronics/gi, "纳米光电子学"],
+  [/Optoelectronics/gi, "光电子学"],
+  [/Geomatics for Disaster Risk Reduction/gi, "减灾地理信息学"],
+  [/Electronic Systems Design Engineering/gi, "电子系统设计工程"],
+  [/Electrical and Electronic Engineering/gi, "电气与电子工程"],
+  [/Clinical Exercise Science/gi, "临床运动科学"],
+  [/Chemical Instrumentation/gi, "化学仪器学"],
+  [/Building Technology/gi, "建筑技术"],
+  [/Building Surveying/gi, "建筑测量"],
+  [/Bioresource, Paper and Coatings Technology/gi, "生物资源、造纸与涂层技术"],
+  [/Applied Geophysics/gi, "应用地球物理学"],
+  [/Aerospace Engineering/gi, "航空航天工程"],
+  [/Advanced Semiconductor Packaging/gi, "先进半导体封装"],
+  [/Women's Health/gi, "女性健康"],
+  [/Sports Science/gi, "运动科学"],
+  [/River and Urban Drainage Management/gi, "河流与城市排水管理"],
+  [/Reconstructive Science/gi, "重建科学"],
+  [/Polymer Engineering/gi, "高分子工程"],
+  [/Pharmaceutical Technology/gi, "制药技术"],
+  [/Nuclear Medicine/gi, "核医学"],
+  [/Molecular Biology/gi, "分子生物学"],
+  [/Mineral Resources Engineering/gi, "矿产资源工程"],
+  [/Microelectronic Systems Engineering/gi, "微电子系统工程"],
+  [/Microelectronic Engineering/gi, "微电子工程"],
+  [/Medical Statistics?/gi, "医学统计学"],
+  [/Medical Radiation/gi, "医学放射学"],
+  [/Medical Parasitology/gi, "医学寄生虫学"],
+  [/Medical Microbiology/gi, "医学微生物学"],
+  [/Medical Immunology/gi, "医学免疫学"],
+  [/Medical Audiology/gi, "医学听力学"],
+  [/Mechanical Engineering/gi, "机械工程"],
+  [/Lifestyle Science/gi, "生活方式科学"],
+  [/Human Genetics/gi, "人类遗传学"],
+  [/Healthcare Biotechnology/gi, "医疗生物技术"],
+  [/Forensic Science/gi, "法医科学"],
+  [/Fire Safety Engineering/gi, "消防安全工程"],
+  [/Epidemiology/gi, "流行病学"],
+  [/Endocrinology and Metabolism/gi, "内分泌与代谢学"],
+  [/Community Medicine/gi, "社区医学"],
+  [/Clinical Sciences/gi, "临床科学"],
+  [/Clinical Anatomy/gi, "临床解剖学"],
+  [/Civil Engineering/gi, "土木工程"],
+  [/Chemical Pathology/gi, "化学病理学"],
+  [/Botany/gi, "植物学"],
+  [/Biomedicine/gi, "生物医学"],
+  [/Aquatic Biology/gi, "水生生物学"],
+  [/Applied Parasitology/gi, "应用寄生虫学"],
+  [/Applied Entomology/gi, "应用昆虫学"],
+  [/Analytical Biochemistry/gi, "分析生物化学"],
+  [/Advanced Computer Networks/gi, "高级计算机网络"],
+  [/Professional Management/gi, "专业管理"],
+  [/Clinical Pharmacy/gi, "临床药学"],
+  [/Medical Genetics/gi, "医学遗传学"],
+  [/Haematology/gi, "血液学"],
+  [/Clinical Immunology/gi, "临床免疫学"],
+  [/Anatomic Pathology/gi, "解剖病理学"],
+  [/Transfusion Medicine/gi, "输血医学"],
+  [/Radiology/gi, "放射学"],
+  [/Psychiatry/gi, "精神病学"],
+  [/Paediatrics/gi, "儿科学"],
+  [/Otorhinolaryngology, Head and Neck Surgery/gi, "耳鼻咽喉头颈外科学"],
+  [/Orthopaedics/gi, "骨科学"],
+  [/Ophthalmology/gi, "眼科学"],
+  [/Obstetrics and Gynaecology/gi, "妇产科学"],
+  [/Internal Medicine/gi, "内科学"],
+  [/Family Medicine/gi, "家庭医学"],
+  [/Emergency Medicine/gi, "急诊医学"],
+  [/Anaesthesiology and Critical Care/gi, "麻醉与重症医学"],
+  [/Global Islamic Finance/gi, "全球伊斯兰金融"],
+  [/Landscape Architecture/gi, "景观建筑学"],
+  [/Instructional Multimedia/gi, "教学多媒体"],
+  [/Educational Management and Administration/gi, "教育管理与行政"],
+  [/Curriculum Studies/gi, "课程研究"],
+  [/Economics Management/gi, "经济管理"],
+  [/Digital Transformation/gi, "数字化转型"],
+  [/Creative Industry/gi, "创意产业"],
+  [/Integrated Marketing Communication/gi, "整合营销传播"],
+  [/Translation for Professionals/gi, "专业翻译"],
+  [/Southeast Asian History/gi, "东南亚史"],
+  [/Malay Linguistics/gi, "马来语语言学"],
+  [/Linguistics and English Language Studies/gi, "语言学与英语研究"],
+  [/Hadith/gi, "圣训研究"],
+  [/Special Education/gi, "特殊教育"],
+  [/Psychometrics and Educational Measurement/gi, "心理测量与教育测量"],
+  [/Malay Language Education/gi, "马来语教育"],
+  [/English Language Education\/TESOL/gi, "英语教育／TESOL"],
+  [/Early Childhood Education/gi, "幼儿教育"],
+  [/Drama and Theatre/gi, "戏剧与剧场"],
+  [/Civilization Studies/gi, "文明研究"],
+  [/Civilisation Studies/gi, "文明研究"],
+  [/Archaeology|Archaelogy|Archaeology/gi, "考古学"],
+  [/Learning Design and Technology/gi, "学习设计与技术"],
+  [/Counseling|Counselling/gi, "辅导学"],
+  [/Clinical Neuropsychology/gi, "临床神经心理学"],
+  [/Clinical Psychology/gi, "临床心理学"],
+  [/Health System Management/gi, "卫生系统管理"],
+  [/Family Health/gi, "家庭健康"],
+  [/Environmental Health and Occupational/gi, "环境与职业健康"],
   [/Business Administration/gi, "工商管理"],
   [/Business Analytics/gi, "商业分析"],
   [/Biomedical Science/gi, "生物医学科学"],
@@ -250,7 +366,7 @@ const subjectTranslations: Array<[RegExp, string]> = [
   [/Science/gi, "科学"]
 ];
 
-function translatedSubject(value: string) {
+export function translatedSubject(value: string) {
   const original = value.replace(/\s+/g, " ").trim();
   const translated = subjectTranslations.reduce((current, [pattern, replacement]) => current.replace(pattern, replacement), original)
     .replace(/\s+/g, " ")
@@ -264,6 +380,7 @@ function escapeRegExp(value: string) {
 
 function localizeProgrammeName(officialName: string, faculty: string): LocalizedText {
   const cleaned = officialName
+    .replace(/^MASTERS\b/i, "Master")
     .replace(/\s+-\s+(Research|Coursework|Mixed(?: Mode)?|Clinical)\s*$/i, "")
     .replace(/\s*-\s*\((Research|Coursework|Mixed(?: Mode)?|Clinical)\)\s*$/i, "")
     .replace(/\s+by\s+(Research|Coursework|Mixed)\s*$/i, "")
@@ -309,7 +426,7 @@ function localizeProgrammeName(officialName: string, faculty: string): Localized
     [/^Master of Pharmacy(?: in)?\s+(.+)$/i, "药学硕士"]
   ];
   let zh = "";
-  if (/Malaysian Candidate Only/i.test(officialName)) {
+  if (/Malaysian(?:\s+Candidate)?\s+Only/i.test(officialName)) {
     zh = "教育学硕士（仅限马来西亚申请人）";
   } else if (/^Master of Arts$/i.test(core)) {
     zh = "文学硕士";
@@ -329,7 +446,10 @@ function localizeProgrammeName(officialName: string, faculty: string): Localized
     for (const [pattern, degree] of degreePatterns) {
       const match = core.match(pattern);
       if (match) {
-        const subject = translatedSubject(match[1]);
+        const translated = translatedSubject(match[1]);
+        const subject = /[A-Za-z]{3,}/.test(translated)
+          ? (facultyTranslations[faculty]?.[0] || "相关专业")
+          : translated;
         zh = (degree === "文学硕士" && subject === "文学")
           || (degree === "社会科学硕士" && subject === "社会科学")
           ? degree
@@ -340,7 +460,11 @@ function localizeProgrammeName(officialName: string, faculty: string): Localized
   }
   if (!zh) {
     const generic = core.match(/^Master(?: in| of)?\s+(.+)$/i);
-    zh = `${translatedSubject(generic?.[1] || core)}硕士`;
+    const translated = translatedSubject(generic?.[1] || core);
+    const subject = /[A-Za-z]{3,}/.test(translated)
+      ? (facultyTranslations[faculty]?.[0] || "相关专业")
+      : translated;
+    zh = `${subject}硕士`;
   }
   zh += modeSuffix;
   const ms = cleaned
@@ -360,8 +484,15 @@ function localizeProgrammeName(officialName: string, faculty: string): Localized
   return t(officialName, ms, zh, toTraditional(zh));
 }
 
-function localizeFaculty(faculty: string): LocalizedText {
-  const translated = facultyTranslations[faculty] || [`${faculty}（USM）`, faculty];
+export function localizeFaculty(faculty: string): LocalizedText {
+  const aliases: Record<string, string> = {
+    "Centre for Marine and Coastal Studies": "Centre For Marine And Coastal Studies",
+    "Centre for Research On Women and Gender (KANITA)": "Centre for Research on Women and Gender (KANITA)",
+    "Cybersecurity Research Centre": "Cyber Security Research Centre",
+    "Institute of Nano-Optoelectronics Research and Technology": "Institute of Nano Optoelectronics Research & Technology",
+    "School of Languages, Literacies and Translation": "School of Languages, Literacies & Translation"
+  };
+  const translated = facultyTranslations[aliases[faculty] || faculty] || [`${faculty}（USM）`, faculty];
   return t(faculty, translated[1], translated[0], toTraditional(translated[0]));
 }
 
@@ -372,7 +503,7 @@ function normalizeEvidenceText(value: string) {
     .trim();
 }
 
-function sanitizeOfficialText(value: string) {
+export function sanitizeOfficialText(value: string) {
   return normalizeEvidenceText(value)
     .replace(/!\[[^\]]*]\([^)]+\)/g, "")
     .replace(/\[([^\]]+)]\([^)]+\)/g, "$1")
@@ -489,7 +620,7 @@ export function normalizeMasterDuration(
   };
 }
 
-function categoryFor(record: CandidateRecord) {
+export function categoryFor(record: Pick<CandidateRecord, "faculty" | "officialName">) {
   const value = `${record.faculty} ${record.officialName}`.toLowerCase();
   if (/engineering|architecture|building|planning|technology/.test(value)) return "engineering";
   if (/computer|cyber|data science|information technology|microelectronic/.test(value)) return "it";
@@ -500,8 +631,10 @@ function categoryFor(record: CandidateRecord) {
 }
 
 function stableCode(sourceCode: string) {
-  const article = sourceCode.match(/ARTICLE-(\d+)/);
-  if (article) return `USM-M-ARTICLE-${article[1]}`;
+  const article = sourceCode.match(/ARTICLE-(\d+)(?:-([A-F0-9]{8}))?$/);
+  if (article) {
+    return `USM-M-ARTICLE-${article[1]}${article[2] ? `-${article[2]}` : ""}`;
+  }
   return `USM-M-${createHash("sha1").update(sourceCode).digest("hex").slice(0, 12).toUpperCase()}`;
 }
 
@@ -522,7 +655,7 @@ function extractIntakeMonths(text: string) {
   return months.filter((month) => new RegExp(month, "i").test(text));
 }
 
-function extractIelts(text: string) {
+export function extractIelts(text: string) {
   const beforeIelts = text.match(/Band\s*(\d(?:\.\d+)?)\s*(?:for|in)\s*IELTS/i);
   if (beforeIelts) return Number(beforeIelts[1]);
   const afterIelts = text.match(
@@ -531,7 +664,7 @@ function extractIelts(text: string) {
   return Number(afterIelts?.[1] || 0);
 }
 
-function extractCgpa(text: string) {
+export function extractCgpa(text: string) {
   const match = text.match(/(?:CGPA|minimum of)\s*(\d\.\d{1,2})/i);
   return Number(match?.[1] || 0);
 }
@@ -687,14 +820,14 @@ export function buildUsmMasterRows(source: MasterCommercialSource): Array<DeepPa
     const localOnly =
       record.internationalEligibility === "not-eligible-malaysian-candidate-only" ||
       record.internationalEligibility === "malaysian-candidate-only" ||
-      /Malaysian Candidate Only/i.test(record.officialName);
+      /Malaysian(?:\s+Candidate)?\s+Only/i.test(record.officialName);
     const eligibilityUnconfirmed = record.internationalEligibility === "not-explicitly-confirmed-on-public-detail";
     const publicDisplayStatus = localOnly
       ? "not-available-for-international" as const
       : eligibilityUnconfirmed
         ? "needs-review" as const
         : "ready" as const;
-    const descriptionZh = `${record.faculty}开设的${record.studyMode === "research" ? "研究型" : record.studyMode === "coursework" ? "授课型" : record.studyMode === "mixed" ? "混合型" : "临床型"}硕士项目。申请、学制与费用以所列 USM 官方来源为准。`;
+    const descriptionZh = `${record.faculty}开设的${record.studyMode === "research" ? "研究型" : record.studyMode === "coursework" ? "授课型" : record.studyMode === "mixed" ? "混合型" : record.studyMode === "online" ? "在线" : "临床型"}硕士项目。申请、学制与费用以所列 USM 官方来源为准。`;
     return {
       slug: stableSlug(record),
       code: stableCode(record.code),
@@ -799,9 +932,9 @@ export function validateUsmMasterSource(source: MasterCommercialSource) {
   const errors: string[] = [];
   if (source.universityCode !== "USM") errors.push("universityCode must be USM.");
   if (source.level !== "master") errors.push("level must be master.");
-  if (source.records.length !== 274) errors.push(`Expected 274 records, received ${source.records.length}.`);
-  if (source.audit.recordCount !== 274) errors.push("Audit record count must be 274.");
-  if (source.catalogueDecision.officialDirectoryEntryCount !== 274) errors.push("Directory count must be 274.");
+  if (source.records.length !== 305) errors.push(`Expected 305 records, received ${source.records.length}.`);
+  if (source.audit.recordCount !== 305) errors.push("Audit record count must be 305.");
+  if (source.catalogueDecision.officialDirectoryEntryCount !== 305) errors.push("Directory count must be 305.");
   if (new Set(source.records.map((record) => record.code)).size !== source.records.length) errors.push("Candidate codes must be unique.");
   if (new Set(source.records.map(stableSlug)).size !== source.records.length) errors.push("Generated slugs must be unique.");
   if (source.audit.currentNamedFeeRowsAccountedFor !== 110) errors.push("Expected 110 accounted named fee rows.");
@@ -838,10 +971,10 @@ async function verifyRows(manager: EntityManager | DataSource, universityId: num
   const leakedLegacy = publicMaster.filter((row) => !row.slug.startsWith(USM_MASTER_SLUG_PREFIX));
   const convertedDurations = commercial.filter((row) => /years?/i.test(row.durationOfficial)).length;
   if (
-    commercial.length !== 274 ||
-    publicMaster.length !== 270 ||
+    commercial.length !== 305 ||
+    publicMaster.length !== 302 ||
     notAvailableForInternational.length !== 1 ||
-    needsReview.length !== 3 ||
+    needsReview.length !== 2 ||
     leakedLegacy.length !== 0 ||
     publishedBachelor !== 63
   ) {
@@ -912,10 +1045,10 @@ async function main() {
       writePolicy: {
         university: "USM",
         level: "master",
-        canonicalRows: 274,
+        canonicalRows: 305,
         archiveLegacyPublicMasterRows: true,
         preserveBachelorAndDoctoralRows: true,
-        programmeCountAfterImport: 333
+        programmeCountAfterImport: 365
       }
     }, null, 2));
     return;
@@ -958,8 +1091,13 @@ async function main() {
     await dataSource.transaction(async (manager) => {
       const repository = manager.getRepository(ProgramEntity);
       const currentMaster = await repository.find({ where: { universityId: university.id, level: "master" } });
+      const incomingSlugs = new Set(rows.map((row) => String(row.slug)));
       for (const existing of currentMaster) {
-        if (existing.slug.startsWith(USM_MASTER_SLUG_PREFIX)) continue;
+        if (incomingSlugs.has(existing.slug)) continue;
+        if (existing.slug.startsWith(USM_MASTER_SLUG_PREFIX)) {
+          await repository.remove(existing);
+          continue;
+        }
         existing.isPublished = false;
         existing.publicDisplayStatus = "archived";
         existing.publicDisplayNote = "Superseded by the audited USM public master directory dataset.";
@@ -973,14 +1111,14 @@ async function main() {
         }
         await repository.save(repository.create({ ...row, id: existing?.id, universityId: university.id }));
       }
-      university.programCount = 333;
+      university.programCount = 365;
       university.officialProfile = {
         ...(university.officialProfile || {}),
         catalogStatusSummary: {
           all: {
-            total: 337,
-            ready: 333,
-            needsReview: 3,
+            total: 368,
+            ready: 365,
+            needsReview: 2,
             notAvailableForInternational: 1
           },
           byLevel: {
@@ -991,9 +1129,9 @@ async function main() {
               notAvailableForInternational: 0
             },
             master: {
-              total: 274,
-              ready: 270,
-              needsReview: 3,
+              total: 305,
+              ready: 302,
+              needsReview: 2,
               notAvailableForInternational: 1
             },
             phd: {

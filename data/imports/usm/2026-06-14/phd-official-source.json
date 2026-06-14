@@ -37,7 +37,7 @@
       "academicSession": null,
       "status": "verified",
       "sha256": "ccb852d13ccb650d2d80006c1ff18bf9129002fca83175db9158436d66f6be5f",
-      "localPath": "tmp/usm-master-programmes-jina-https.md",
+      "localPath": "data/imports/usm/2026-06-14/sources/pg-current-directory.md",
       "transport": "public-reader-proxy because direct requests are blocked by USM WAF"
     },
     {
@@ -50,7 +50,7 @@
       "academicSession": "2025/2026",
       "status": "verified",
       "sha256": "3597c8977755aa2f18fb3b389c813435989bd62cc54318f26b8e573c10401076",
-      "localPath": "tmp/usm-pg-fee-page.md"
+      "localPath": "data/imports/usm/2026-06-14/sources/pg-fee-page.md"
     },
     {
       "id": "usm-pg-fees-2025-2026",
@@ -62,7 +62,7 @@
       "academicSession": "2025/2026",
       "status": "verified",
       "sha256": "24bc178e7da6de039ff9e5cd866c580a5f3ed1c73db04d08b8f7ca42cb75bcef",
-      "localPath": "tmp/pdfs/usm-master/pg-fees-2025-03-11.pdf",
+      "localPath": "data/imports/usm/2026-06-14/sources/pg-fees-2025-2026.pdf",
       "sourcePage": 2
     },
     {
@@ -75,7 +75,7 @@
       "academicSession": null,
       "status": "verified",
       "sha256": "ccb852d13ccb650d2d80006c1ff18bf9129002fca83175db9158436d66f6be5f",
-      "localPath": "tmp/usm-master-programmes-jina-https.md",
+      "localPath": "data/imports/usm/2026-06-14/sources/pg-current-directory.md",
       "evidenceNote": "The same general requirement text is embedded in the canonical directory snapshot."
     },
     {
@@ -88,7 +88,7 @@
       "academicSession": "2026/2027",
       "status": "verified",
       "sha256": "8bc410b05fc4909de3d3bf6187cd6acd92bc760bfc293f0b2a2b3490476bec9c",
-      "localPath": "tmp/usm-ips-admission-official.html"
+      "localPath": "data/imports/usm/2026-06-14/sources/ips-admission-downloads.html"
     },
     {
       "id": "usm-ips-research-mode-registration",
@@ -100,7 +100,7 @@
       "academicSession": null,
       "status": "verified",
       "sha256": "604bd880c1a0c8528cb7c4233e86c08f80ba4075a126c14b15d46bb23eff2d3e",
-      "localPath": "tmp/usm-ips-research-mode.html"
+      "localPath": "data/imports/usm/2026-06-14/sources/ips-research-mode-registration.html"
     }
   ],
   "records": [

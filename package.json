@@ -13,7 +13,7 @@
     "dev:web": "npm --workspace @studymy/web run dev",
     "dev:admin": "npm --workspace @studymy/admin run dev",
     "preview:admin": "npm --workspace @studymy/admin run preview",
-    "build": "npm run build --workspaces",
+    "build": "npm --workspace @studymy/shared run build && npm --workspace @studymy/api run build && npm --workspace @studymy/web run build && npm --workspace @studymy/admin run build",
     "test": "node scripts/run-tests.mjs",
     "test:e2e": "node scripts/run-e2e.mjs",
     "verify:task013": "node scripts/task013-member-api-verify.mjs",

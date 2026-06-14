@@ -843,11 +843,11 @@ def build_manifest(args: argparse.Namespace) -> dict:
             args.current_catalogue_json.read_text(encoding="utf-8")
         )
         current_rows = current_catalogue.get("rows", [])
-        if args.level != "phd":
-            raise ValueError("--current-catalogue-json is currently supported for phd only.")
-        if len(current_rows) != 95:
+        expected_current_count = 305 if args.level == "master" else 95
+        if len(current_rows) != expected_current_count:
             raise ValueError(
-                f"Expected 95 current official doctoral rows, got {len(current_rows)}."
+                f"Expected {expected_current_count} current official {args.level} rows, "
+                f"got {len(current_rows)}."
             )
         existing_urls = {
             normalized_official_url(record["officialSourceUrl"])
@@ -864,7 +864,7 @@ def build_manifest(args: argparse.Namespace) -> dict:
                 {
                     "code": stable_entry_code(row["url"]),
                     "nameEnOfficial": row["name"],
-                    "level": "phd",
+                    "level": args.level,
                     "universityCode": "USM",
                     "facultyEn": row["school"],
                     "campus": "official-detail-review-required",

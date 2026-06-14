@@ -1,0 +1,2752 @@
+{
+  "retrievedAt": "2026-06-14T15:17:46.343Z",
+  "sourceUrl": "https://admission.usm.my/index.php/main/postgraduate",
+  "filterInfo": "Showing 1 to 305 of 305 entries (filtered from 400 total entries)",
+  "rows": [
+    {
+      "cluster": "MEDICAL & HEALTH SCIENCES",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "MIXED MODE",
+      "name": "MASTER IN BIOMEDICAL SCIENCE",
+      "school": "SCHOOL OF HEALTH SCIENCES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=453&catid=55"
+    },
+    {
+      "cluster": "ENGINEERING & TECHNOLOGY",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "MIXED MODE",
+      "name": "MASTER IN BIOPROCESS TECHNOLOGY",
+      "school": "SCHOOL OF INDUSTRIAL TECHNOLOGY",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=224&catid=51"
+    },
+    {
+      "cluster": "MEDICAL & HEALTH SCIENCES",
+      "degree": "JOINT DEGREE",
+      "level": "MASTER",
+      "mode": "COURSEWORK",
+      "name": "MASTER IN CLINICAL PSYCHOLOGY -JOINT DEGREE *USM@KL",
+      "school": "SCHOOL OF MEDICAL SCIENCES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=568&catid=59"
+    },
+    {
+      "cluster": "ARTS",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "COURSEWORK",
+      "name": "MASTER IN COUNSELING",
+      "school": "SCHOOL OF EDUCATIONAL STUDIES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=342&catid=53"
+    },
+    {
+      "cluster": "ENGINEERING & TECHNOLOGY",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "COURSEWORK",
+      "name": "MASTER IN CYBERSECURITY",
+      "school": "CYBERSECURITY RESEARCH CENTRE",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=883&catid=51"
+    },
+    {
+      "cluster": "MEDICAL & HEALTH SCIENCES",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "MIXED MODE",
+      "name": "MASTER IN FORENSIC SCIENCE",
+      "school": "SCHOOL OF HEALTH SCIENCES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=418&catid=55"
+    },
+    {
+      "cluster": "ARTS",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "COURSEWORK",
+      "name": "MASTER IN GLOBAL ISLAMIC FINANCE",
+      "school": "SCHOOL OF MANAGEMENT",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=356&catid=53"
+    },
+    {
+      "cluster": "ARTS",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "MIXED MODE",
+      "name": "MASTER IN LEARNING DESIGN AND TECHNOLOGY",
+      "school": "CENTRE FOR INSTRUCTIONAL TECHNOLOGY AND MULTIMEDIA",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=812&catid=53"
+    },
+    {
+      "cluster": "ENGINEERING & TECHNOLOGY",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "COURSEWORK",
+      "name": "MASTER OF ARCHITECTURE",
+      "school": "SCHOOL OF HOUSING, BUILDING AND PLANNING",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=190&catid=51"
+    },
+    {
+      "cluster": "ARTS",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF ARTS",
+      "school": "SCHOOL OF HUMANITIES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=886&catid=52"
+    },
+    {
+      "cluster": "ARTS",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF ARTS (ARCHAELOGY)",
+      "school": "CENTRE FOR GLOBAL ARCHAEOLOGICAL RESEARCH",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=332&catid=52"
+    },
+    {
+      "cluster": "ARTS",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF ARTS (CIVILIZATION STUDIES)",
+      "school": "SCHOOL OF DISTANCE EDUCATION",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=276&catid=52"
+    },
+    {
+      "cluster": "ARTS",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF ARTS (COMMUNICATION)",
+      "school": "SCHOOL OF COMMUNICATION",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=363&catid=53"
+    },
+    {
+      "cluster": "ARTS",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF ARTS (DRAMA AND THEATRE)",
+      "school": "SCHOOL OF ARTS",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=368&catid=53"
+    },
+    {
+      "cluster": "ARTS",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "MIXED MODE",
+      "name": "MASTER OF ARTS (EDUCATION) - CURRICULUM STUDIES",
+      "school": "SCHOOL OF EDUCATIONAL STUDIES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=362&catid=53"
+    },
+    {
+      "cluster": "ARTS",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "MIXED MODE",
+      "name": "MASTER OF ARTS (EDUCATION) - EARLY CHILDHOOD EDUCATION",
+      "school": "SCHOOL OF EDUCATIONAL STUDIES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=362&catid=53"
+    },
+    {
+      "cluster": "ARTS",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "MIXED MODE",
+      "name": "MASTER OF ARTS (EDUCATION) - EDUCATION MANAGEMENT AND ADMINISTRATION",
+      "school": "SCHOOL OF EDUCATIONAL STUDIES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=362&catid=53"
+    },
+    {
+      "cluster": "ARTS",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "MIXED MODE",
+      "name": "MASTER OF ARTS (EDUCATION) - EDUCATIONAL PSYCHOLOGY",
+      "school": "SCHOOL OF EDUCATIONAL STUDIES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=362&catid=53"
+    },
+    {
+      "cluster": "ARTS",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "MIXED MODE",
+      "name": "MASTER OF ARTS (EDUCATION) - EDUCATIONAL TECHNOLOGY AND MULTIMEDIA",
+      "school": "SCHOOL OF EDUCATIONAL STUDIES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=362&catid=53"
+    },
+    {
+      "cluster": "ARTS",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "MIXED MODE",
+      "name": "MASTER OF ARTS (EDUCATION) - ENGLISH LANGUAGE EDUCATION/TESOL",
+      "school": "SCHOOL OF EDUCATIONAL STUDIES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=362&catid=53"
+    },
+    {
+      "cluster": "ARTS",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "MIXED MODE",
+      "name": "MASTER OF ARTS (EDUCATION) - MALAY LANGUAGE EDUCATION",
+      "school": "SCHOOL OF EDUCATIONAL STUDIES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=362&catid=53"
+    },
+    {
+      "cluster": "ARTS",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "MIXED MODE",
+      "name": "MASTER OF ARTS (EDUCATION) - MATHEMATICS EDUCATION",
+      "school": "SCHOOL OF EDUCATIONAL STUDIES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=362&catid=53"
+    },
+    {
+      "cluster": "ARTS",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "MIXED MODE",
+      "name": "MASTER OF ARTS (EDUCATION) - PSYCHOMETRICS AND EDUCATIONAL MEASUREMENT",
+      "school": "SCHOOL OF EDUCATIONAL STUDIES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=362&catid=53"
+    },
+    {
+      "cluster": "ARTS",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "MIXED MODE",
+      "name": "MASTER OF ARTS (EDUCATION) - SCIENCE EDUCATION",
+      "school": "SCHOOL OF EDUCATIONAL STUDIES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=362&catid=53"
+    },
+    {
+      "cluster": "ARTS",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "MIXED MODE",
+      "name": "MASTER OF ARTS (EDUCATION) - SPECIAL EDUCATION",
+      "school": "SCHOOL OF EDUCATIONAL STUDIES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=362&catid=53"
+    },
+    {
+      "cluster": "ARTS",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF ARTS (FINE ARTS)",
+      "school": "SCHOOL OF ARTS",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=367&catid=53"
+    },
+    {
+      "cluster": "ARTS",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF ARTS (GEOGRAPHY)",
+      "school": "SCHOOL OF DISTANCE EDUCATION",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=295&catid=52"
+    },
+    {
+      "cluster": "ARTS",
+      "degree": "OFFSHORE",
+      "level": "MASTER",
+      "mode": "MIXED MODE",
+      "name": "MASTER OF ARTS (HADITH) - (OFFSHORE EUROPEAN GLOBAL SCHOOL UNIVERSITY, ISTANBUL)",
+      "school": "SCHOOL OF HUMANITIES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1518&catid=52"
+    },
+    {
+      "cluster": "ARTS",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF ARTS (HIGHER EDUCATION)",
+      "school": "NATIONAL HIGHER EDUCATION RESEARCH INSTITUTE",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=294&catid=52"
+    },
+    {
+      "cluster": "ARTS",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF ARTS (HISTORY)",
+      "school": "SCHOOL OF DISTANCE EDUCATION",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=297&catid=52"
+    },
+    {
+      "cluster": "ARTS",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF ARTS (INTERPRETATION)",
+      "school": "SCHOOL OF LANGUAGES, LITERACIES AND TRANSLATION",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=287&catid=52"
+    },
+    {
+      "cluster": "ARTS",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF ARTS (LANGUAGE STUDIES)",
+      "school": "SCHOOL OF LANGUAGES, LITERACIES AND TRANSLATION",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=285&catid=52"
+    },
+    {
+      "cluster": "ARTS",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF ARTS (LITERATURE)",
+      "school": "SCHOOL OF DISTANCE EDUCATION",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=296&catid=52"
+    },
+    {
+      "cluster": "ARTS",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF ARTS (MUSIC)",
+      "school": "SCHOOL OF ARTS",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=371&catid=53"
+    },
+    {
+      "cluster": "ARTS",
+      "degree": "OFFSHORE",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF ARTS (OFFSHORE EUROPEAN GLOBAL SCHOOL UNIVERSITY, ISTANBUL)",
+      "school": "SCHOOL OF DISTANCE EDUCATION",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1509&catid=52"
+    },
+    {
+      "cluster": "ARTS",
+      "degree": "OFFSHORE",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF ARTS (OFFSHORE EUROPEAN GLOBAL SCHOOL UNIVERSITY, ISTANBUL)",
+      "school": "SCHOOL OF MANAGEMENT",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1496&catid=53"
+    },
+    {
+      "cluster": "ENGINEERING & TECHNOLOGY",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF ARTS (SUSTAINABILITY)",
+      "school": "CENTRE FOR GLOBAL SUSTAINABILITY STUDIES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=369&catid=53"
+    },
+    {
+      "cluster": "ARTS",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF ARTS (TRANSLATION)",
+      "school": "SCHOOL OF LANGUAGES, LITERACIES AND TRANSLATION",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=264&catid=52"
+    },
+    {
+      "cluster": "ARTS",
+      "degree": "OFFSHORE",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF ARTS (TRANSLATION)- (OFFSHORE EUROPEAN GLOBAL SCHOOL UNIVERSITY,ISTANBUL)",
+      "school": "SCHOOL OF LANGUAGES, LITERACIES AND TRANSLATION",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=286&catid=52"
+    },
+    {
+      "cluster": "ARTS",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF ARTS IN ACCOUNTING",
+      "school": "SCHOOL OF MANAGEMENT",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=885&catid=53"
+    },
+    {
+      "cluster": "ARTS",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF ARTS IN EDUCATION",
+      "school": "SCHOOL OF DISTANCE EDUCATION",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=274&catid=52"
+    },
+    {
+      "cluster": "ARTS",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF ARTS IN EDUCATION",
+      "school": "SCHOOL OF EDUCATIONAL STUDIES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=337&catid=53"
+    },
+    {
+      "cluster": "ARTS",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF ARTS IN EDUCATIONAL TECHNOLOGY",
+      "school": "CENTRE FOR INSTRUCTIONAL TECHNOLOGY AND MULTIMEDIA",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=360&catid=53"
+    },
+    {
+      "cluster": "ARTS",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF ARTS IN EDUCATIONAL TECHNOLOGY",
+      "school": "SCHOOL OF DISTANCE EDUCATION",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=275&catid=52"
+    },
+    {
+      "cluster": "ARTS",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF ARTS IN FINANCE",
+      "school": "SCHOOL OF MANAGEMENT",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=885&catid=53"
+    },
+    {
+      "cluster": "ARTS",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "MIXED MODE",
+      "name": "MASTER OF ARTS IN HADITH",
+      "school": "SCHOOL OF HUMANITIES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=258&catid=52"
+    },
+    {
+      "cluster": "ARTS",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "MIXED MODE",
+      "name": "MASTER OF ARTS IN LINGUISTICS AND ENGLISH LANGUAGE STUDIES",
+      "school": "SCHOOL OF HUMANITIES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=259&catid=52"
+    },
+    {
+      "cluster": "ARTS",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "MIXED MODE",
+      "name": "MASTER OF ARTS IN LITERATURE",
+      "school": "SCHOOL OF HUMANITIES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=256&catid=52"
+    },
+    {
+      "cluster": "ARTS",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "MIXED MODE",
+      "name": "MASTER OF ARTS IN MALAY LINGUISTICS",
+      "school": "SCHOOL OF HUMANITIES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=253&catid=52"
+    },
+    {
+      "cluster": "ARTS",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF ARTS IN MANAGEMENT",
+      "school": "SCHOOL OF DISTANCE EDUCATION",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=381&catid=52"
+    },
+    {
+      "cluster": "ARTS",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF ARTS IN MANAGEMENT",
+      "school": "SCHOOL OF MANAGEMENT",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=885&catid=53"
+    },
+    {
+      "cluster": "ARTS",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "MIXED MODE",
+      "name": "MASTER OF ARTS IN SOUTHEAST ASIAN HISTORY",
+      "school": "SCHOOL OF HUMANITIES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=257&catid=52"
+    },
+    {
+      "cluster": "ARTS",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "COURSEWORK",
+      "name": "MASTER OF ARTS IN TRANSLATION FOR PROFESSIONALS",
+      "school": "SCHOOL OF LANGUAGES, LITERACIES AND TRANSLATION",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=264&catid=52"
+    },
+    {
+      "cluster": "ARTS",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "ODL (ONLINE)",
+      "name": "MASTER OF BUSINESS ADMINISTRATION (E-MBA)",
+      "school": "GRADUATE SCHOOL OF BUSINESS",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=344&catid=53"
+    },
+    {
+      "cluster": "ARTS",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "COURSEWORK",
+      "name": "MASTER OF BUSINESS ADMINISTRATION (MBA)",
+      "school": "GRADUATE SCHOOL OF BUSINESS",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=343&catid=53"
+    },
+    {
+      "cluster": "ARTS",
+      "degree": "DOUBLE DEGREE",
+      "level": "MASTER",
+      "mode": "COURSEWORK",
+      "name": "MASTER OF BUSINESS ADMINISTRATION (MBA) DOUBLE DEGREE - UNIVERSITY OF GLASGOW",
+      "school": "GRADUATE SCHOOL OF BUSINESS",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=562&catid=57"
+    },
+    {
+      "cluster": "ARTS",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "COURSEWORK",
+      "name": "MASTER OF BUSINESS ANALYTICS",
+      "school": "SCHOOL OF MANAGEMENT",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=355&catid=53"
+    },
+    {
+      "cluster": "ARTS",
+      "degree": "OFFSHORE",
+      "level": "MASTER",
+      "mode": "COURSEWORK",
+      "name": "MASTER OF BUSINESS ANALYTICS (OFFSHORE EUROPEAN GLOBAL SCHOOL UNIVERSITY, ISTANBUL)",
+      "school": "SCHOOL OF MANAGEMENT",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=355&catid=53"
+    },
+    {
+      "cluster": "ARTS",
+      "degree": "OFFSHORE",
+      "level": "MASTER",
+      "mode": "COURSEWORK",
+      "name": "MASTER OF BUSINESS ANALYTICS (OFFSHORE OXUS UNIVERSITY, UZBEKISTAN)",
+      "school": "SCHOOL OF MANAGEMENT",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1497&catid=53"
+    },
+    {
+      "cluster": "ARTS",
+      "degree": "OFFSHORE",
+      "level": "MASTER",
+      "mode": "COURSEWORK",
+      "name": "MASTER OF BUSINESS ANALYTICS (OFFSHORE USM INTERNATIONAL)",
+      "school": "SCHOOL OF MANAGEMENT",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1498&catid=53"
+    },
+    {
+      "cluster": "ARTS",
+      "degree": "OFFSHORE",
+      "level": "MASTER",
+      "mode": "COURSEWORK",
+      "name": "MASTER OF BUSINESS ANALYTICS *USM@KL",
+      "school": "SCHOOL OF MANAGEMENT",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1424&catid=53"
+    },
+    {
+      "cluster": "ARTS",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "ODL (ONLINE)",
+      "name": "MASTER OF BUSINESS ANALYTICS - EMBIZ",
+      "school": "SCHOOL OF MANAGEMENT",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=359&catid=53"
+    },
+    {
+      "cluster": "ARTS",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "ODL (ONLINE)",
+      "name": "MASTER OF BUSINESS ANALYTICS - EMBIZ (MALAYSIA HEC - CENTRAL ASIA)",
+      "school": "SCHOOL OF MANAGEMENT",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=359&catid=53"
+    },
+    {
+      "cluster": "ARTS",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "MIXED MODE",
+      "name": "MASTER OF COMMUNICATION",
+      "school": "SCHOOL OF COMMUNICATION",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=339&catid=53"
+    },
+    {
+      "cluster": "ARTS",
+      "degree": "OFFSHORE",
+      "level": "MASTER",
+      "mode": "MIXED MODE",
+      "name": "MASTER OF COMMUNICATION *USM@KL",
+      "school": "SCHOOL OF COMMUNICATION",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=339&catid=53"
+    },
+    {
+      "cluster": "ARTS",
+      "degree": "OFFSHORE",
+      "level": "MASTER",
+      "mode": "COURSEWORK",
+      "name": "MASTER OF COMMUNICATION IN INTEGRATED MARKETING COMMUNICATION *USM@KL",
+      "school": "SCHOOL OF COMMUNICATION",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=345&catid=53"
+    },
+    {
+      "cluster": "ENGINEERING & TECHNOLOGY",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "MIXED MODE",
+      "name": "MASTER OF COMPUTER SCIENCE",
+      "school": "SCHOOL OF COMPUTER SCIENCES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=198&catid=51"
+    },
+    {
+      "cluster": "ENGINEERING & TECHNOLOGY",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "COURSEWORK",
+      "name": "MASTER OF DATA SCIENCE",
+      "school": "SCHOOL OF COMPUTER SCIENCES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=191&catid=51"
+    },
+    {
+      "cluster": "ARTS",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "COURSEWORK",
+      "name": "MASTER OF DESIGN IN CREATIVE INDUSTRY",
+      "school": "SCHOOL OF ARTS",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=816&catid=53"
+    },
+    {
+      "cluster": "ARTS",
+      "degree": "OFFSHORE",
+      "level": "MASTER",
+      "mode": "COURSEWORK",
+      "name": "MASTER OF DESIGN IN CREATIVE INDUSTRY (OFFSHORE USM INTERNATIONAL)",
+      "school": "SCHOOL OF ARTS",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1478&catid=53"
+    },
+    {
+      "cluster": "ARTS",
+      "degree": "OFFSHORE",
+      "level": "MASTER",
+      "mode": "COURSEWORK",
+      "name": "MASTER OF DESIGN IN CREATIVE INDUSTRY *USM@KL",
+      "school": "SCHOOL OF ARTS",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1226&catid=53"
+    },
+    {
+      "cluster": "ENGINEERING & TECHNOLOGY",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "COURSEWORK",
+      "name": "MASTER OF DIGITAL TRANSFORMATION",
+      "school": "SCHOOL OF COMPUTER SCIENCES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=194&catid=51"
+    },
+    {
+      "cluster": "ARTS",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "COURSEWORK",
+      "name": "MASTER OF ECONOMICS MANAGEMENT (MEM)",
+      "school": "SCHOOL OF SOCIAL SCIENCES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=262&catid=52"
+    },
+    {
+      "cluster": "ARTS",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "COURSEWORK",
+      "name": "MASTER OF EDUCATION IN CURRICULUM STUDIES",
+      "school": "SCHOOL OF EDUCATIONAL STUDIES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=362&catid=53"
+    },
+    {
+      "cluster": "ARTS",
+      "degree": "OFFSHORE",
+      "level": "MASTER",
+      "mode": "COURSEWORK",
+      "name": "MASTER OF EDUCATION IN CURRICULUM STUDIES (OFFSHORE - MRSM KUCHING)",
+      "school": "SCHOOL OF EDUCATIONAL STUDIES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=334&catid=53"
+    },
+    {
+      "cluster": "ARTS",
+      "degree": "OFFSHORE",
+      "level": "MASTER",
+      "mode": "COURSEWORK",
+      "name": "MASTER OF EDUCATION IN CURRICULUM STUDIES (OFFSHORE - POLITEKNIK S.PERAI)",
+      "school": "SCHOOL OF EDUCATIONAL STUDIES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=334&catid=53"
+    },
+    {
+      "cluster": "ARTS",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "COURSEWORK",
+      "name": "MASTER OF EDUCATION IN EDUCATION PSYCHOLOGY",
+      "school": "SCHOOL OF EDUCATIONAL STUDIES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=362&catid=53"
+    },
+    {
+      "cluster": "ARTS",
+      "degree": "OFFSHORE",
+      "level": "MASTER",
+      "mode": "COURSEWORK",
+      "name": "MASTER OF EDUCATION IN EDUCATION PSYCHOLOGY (OFFSHORE - POLITEKNIK S.PERAI)",
+      "school": "SCHOOL OF EDUCATIONAL STUDIES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=352&catid=53"
+    },
+    {
+      "cluster": "ARTS",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "COURSEWORK",
+      "name": "MASTER OF EDUCATION IN EDUCATIONAL MANAGEMENT AND ADMINISTRATION",
+      "school": "SCHOOL OF EDUCATIONAL STUDIES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=334&catid=53"
+    },
+    {
+      "cluster": "ARTS",
+      "degree": "OFFSHORE",
+      "level": "MASTER",
+      "mode": "COURSEWORK",
+      "name": "MASTER OF EDUCATION IN EDUCATIONAL MANAGEMENT AND ADMINISTRATION (OFFSHORE - MRSM KUCHING)",
+      "school": "SCHOOL OF EDUCATIONAL STUDIES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=352&catid=53"
+    },
+    {
+      "cluster": "ARTS",
+      "degree": "OFFSHORE",
+      "level": "MASTER",
+      "mode": "COURSEWORK",
+      "name": "MASTER OF EDUCATION IN EDUCATIONAL MANAGEMENT AND ADMINISTRATION (OFFSHORE - POLITEKNIK S.PERAI)",
+      "school": "SCHOOL OF EDUCATIONAL STUDIES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=334&catid=53"
+    },
+    {
+      "cluster": "ARTS",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "COURSEWORK",
+      "name": "MASTER OF EDUCATION IN EDUCATIONAL TECHNOLOGY",
+      "school": "SCHOOL OF EDUCATIONAL STUDIES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=334&catid=53"
+    },
+    {
+      "cluster": "ARTS",
+      "degree": "OFFSHORE",
+      "level": "MASTER",
+      "mode": "COURSEWORK",
+      "name": "MASTER OF EDUCATION IN EDUCATIONAL TECHNOLOGY (OFFSHORE - POLITEKNIK S.PERAI)",
+      "school": "SCHOOL OF EDUCATIONAL STUDIES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=334&catid=53"
+    },
+    {
+      "cluster": "ARTS",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "COURSEWORK",
+      "name": "MASTER OF EDUCATION IN SCIENCE EDUCATION",
+      "school": "SCHOOL OF EDUCATIONAL STUDIES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=334&catid=53"
+    },
+    {
+      "cluster": "ARTS",
+      "degree": "OFFSHORE",
+      "level": "MASTER",
+      "mode": "COURSEWORK",
+      "name": "MASTER OF EDUCATION IN SCIENCE EDUCATION (OFFSHORE - POLITEKNIK S.PERAI)",
+      "school": "SCHOOL OF EDUCATIONAL STUDIES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=334&catid=53"
+    },
+    {
+      "cluster": "ARTS",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "COURSEWORK",
+      "name": "MASTER OF EDUCATION IN TESOL",
+      "school": "SCHOOL OF EDUCATIONAL STUDIES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=334&catid=53"
+    },
+    {
+      "cluster": "ARTS",
+      "degree": "OFFSHORE",
+      "level": "MASTER",
+      "mode": "COURSEWORK",
+      "name": "MASTER OF EDUCATION IN TESOL (OFFSHORE - POLITEKNIK S.PERAI)",
+      "school": "SCHOOL OF EDUCATIONAL STUDIES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=334&catid=53"
+    },
+    {
+      "cluster": "ENGINEERING & TECHNOLOGY",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "COURSEWORK",
+      "name": "MASTER OF ENVIRONMENTAL SCIENCE",
+      "school": "SCHOOL OF INDUSTRIAL TECHNOLOGY",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=192&catid=51"
+    },
+    {
+      "cluster": "ARTS",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "COURSEWORK",
+      "name": "MASTER OF INSTRUCTIONAL MULTIMEDIA",
+      "school": "CENTRE FOR INSTRUCTIONAL TECHNOLOGY AND MULTIMEDIA",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=350&catid=53"
+    },
+    {
+      "cluster": "ARTS",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF ISLAMIC-BASED DEVELOPMENT MANAGEMENT",
+      "school": "CENTRE FOR ISLAMIC DEVELOPMENT MANAGEMENT STUDIES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=272&catid=52"
+    },
+    {
+      "cluster": "ARTS",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF ISLAMIC-BASED DEVELOPMENT MANAGEMENT",
+      "school": "SCHOOL OF SOCIAL SCIENCES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=272&catid=52"
+    },
+    {
+      "cluster": "ENGINEERING & TECHNOLOGY",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "COURSEWORK",
+      "name": "MASTER OF LANDSCAPE ARCHITECTURE",
+      "school": "SCHOOL OF HOUSING, BUILDING AND PLANNING",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=193&catid=51"
+    },
+    {
+      "cluster": "ARTS",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "MIXED MODE",
+      "name": "MASTER OF MANAGEMENT IN GLOBAL ISLAMIC FINANCE",
+      "school": "SCHOOL OF MANAGEMENT",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=341&catid=53"
+    },
+    {
+      "cluster": "MEDICAL & HEALTH SCIENCES",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "COURSEWORK",
+      "name": "MASTER OF MEDICINE (ANAESTHESIOLOGY AND CRITICAL CARE)",
+      "school": "SCHOOL OF MEDICAL SCIENCES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=442&catid=55"
+    },
+    {
+      "cluster": "MEDICAL & HEALTH SCIENCES",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "COURSEWORK",
+      "name": "MASTER OF MEDICINE (EMERGENCY MEDICINE)",
+      "school": "SCHOOL OF MEDICAL SCIENCES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=442&catid=55"
+    },
+    {
+      "cluster": "MEDICAL & HEALTH SCIENCES",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "COURSEWORK",
+      "name": "MASTER OF MEDICINE (FAMILY MEDICINE)",
+      "school": "SCHOOL OF MEDICAL SCIENCES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=442&catid=55"
+    },
+    {
+      "cluster": "MEDICAL & HEALTH SCIENCES",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "COURSEWORK",
+      "name": "MASTER OF MEDICINE (INTERNAL MEDICINE)",
+      "school": "SCHOOL OF MEDICAL SCIENCES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=442&catid=55"
+    },
+    {
+      "cluster": "MEDICAL & HEALTH SCIENCES",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "COURSEWORK",
+      "name": "MASTER OF MEDICINE (OBSTETRICS AND GYNAECOLOGY)",
+      "school": "SCHOOL OF MEDICAL SCIENCES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=442&catid=55"
+    },
+    {
+      "cluster": "MEDICAL & HEALTH SCIENCES",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "COURSEWORK",
+      "name": "MASTER OF MEDICINE (OPHTHALMOLOGY)",
+      "school": "SCHOOL OF MEDICAL SCIENCES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=442&catid=55"
+    },
+    {
+      "cluster": "MEDICAL & HEALTH SCIENCES",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "COURSEWORK",
+      "name": "MASTER OF MEDICINE (ORTHOPAEDICS)",
+      "school": "SCHOOL OF MEDICAL SCIENCES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=442&catid=55"
+    },
+    {
+      "cluster": "MEDICAL & HEALTH SCIENCES",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "COURSEWORK",
+      "name": "MASTER OF MEDICINE (OTORHINOLARYNGOLOGY, HEAD AND NECK SURGERY)",
+      "school": "SCHOOL OF MEDICAL SCIENCES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=442&catid=55"
+    },
+    {
+      "cluster": "MEDICAL & HEALTH SCIENCES",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "COURSEWORK",
+      "name": "MASTER OF MEDICINE (PAEDIATRICS)",
+      "school": "SCHOOL OF MEDICAL SCIENCES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=442&catid=55"
+    },
+    {
+      "cluster": "MEDICAL & HEALTH SCIENCES",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "COURSEWORK",
+      "name": "MASTER OF MEDICINE (PSYCHIATRY)",
+      "school": "SCHOOL OF MEDICAL SCIENCES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=442&catid=55"
+    },
+    {
+      "cluster": "MEDICAL & HEALTH SCIENCES",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "COURSEWORK",
+      "name": "MASTER OF MEDICINE (RADIOLOGY)",
+      "school": "SCHOOL OF MEDICAL SCIENCES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=442&catid=55"
+    },
+    {
+      "cluster": "MEDICAL & HEALTH SCIENCES",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "COURSEWORK",
+      "name": "MASTER OF MEDICINE (SURGERY)",
+      "school": "SCHOOL OF MEDICAL SCIENCES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=442&catid=55"
+    },
+    {
+      "cluster": "MEDICAL & HEALTH SCIENCES",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "COURSEWORK",
+      "name": "MASTER OF MEDICINE IN NUCLEAR MEDICINE",
+      "school": "PUSAT KANSER TUN ABDULLAH AHMAD BADAWI",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=446&catid=55"
+    },
+    {
+      "cluster": "MEDICAL & HEALTH SCIENCES",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "COURSEWORK",
+      "name": "MASTER OF MEDICINE IN TRANSFUSION MEDICINE",
+      "school": "PUSAT KANSER TUN ABDULLAH AHMAD BADAWI",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=445&catid=55"
+    },
+    {
+      "cluster": "MEDICAL & HEALTH SCIENCES",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "MIXED MODE",
+      "name": "MASTER OF NEUROSCIENCE",
+      "school": "SCHOOL OF MEDICAL SCIENCES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=421&catid=55"
+    },
+    {
+      "cluster": "MEDICAL & HEALTH SCIENCES",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "COURSEWORK",
+      "name": "MASTER OF PATHOLOGY (ANATOMIC PATHOLOGY)",
+      "school": "SCHOOL OF MEDICAL SCIENCES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=435&catid=55"
+    },
+    {
+      "cluster": "MEDICAL & HEALTH SCIENCES",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "COURSEWORK",
+      "name": "MASTER OF PATHOLOGY (CHEMICAL PATHOLOGY)",
+      "school": "SCHOOL OF MEDICAL SCIENCES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=497&catid=55"
+    },
+    {
+      "cluster": "MEDICAL & HEALTH SCIENCES",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "COURSEWORK",
+      "name": "MASTER OF PATHOLOGY (CLINICAL IMMUNOLOGY)",
+      "school": "SCHOOL OF MEDICAL SCIENCES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=437&catid=55"
+    },
+    {
+      "cluster": "MEDICAL & HEALTH SCIENCES",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "COURSEWORK",
+      "name": "MASTER OF PATHOLOGY (HAEMATOLOGY)",
+      "school": "SCHOOL OF MEDICAL SCIENCES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=436&catid=55"
+    },
+    {
+      "cluster": "MEDICAL & HEALTH SCIENCES",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "COURSEWORK",
+      "name": "MASTER OF PATHOLOGY (MEDICAL GENETICS)",
+      "school": "SCHOOL OF MEDICAL SCIENCES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=499&catid=55"
+    },
+    {
+      "cluster": "MEDICAL & HEALTH SCIENCES",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "COURSEWORK",
+      "name": "MASTER OF PATHOLOGY (MEDICAL MICROBIOLOGY)",
+      "school": "SCHOOL OF MEDICAL SCIENCES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=438&catid=55"
+    },
+    {
+      "cluster": "MEDICAL & HEALTH SCIENCES",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "COURSEWORK",
+      "name": "MASTER OF PHARMACY IN CLINICAL PHARMACY",
+      "school": "SCHOOL OF PHARMACEUTICAL SCIENCES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=227&catid=51"
+    },
+    {
+      "cluster": "ARTS",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "COURSEWORK",
+      "name": "MASTER OF PROFESSIONAL MANAGEMENT",
+      "school": "SCHOOL OF MANAGEMENT",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=357&catid=53"
+    },
+    {
+      "cluster": "ARTS",
+      "degree": "OFFSHORE",
+      "level": "MASTER",
+      "mode": "COURSEWORK",
+      "name": "MASTER OF PROFESSIONAL MANAGEMENT *USM@KL",
+      "school": "SCHOOL OF MANAGEMENT",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=890&catid=53"
+    },
+    {
+      "cluster": "ARTS",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "ODL (ONLINE)",
+      "name": "MASTER OF PROFESSIONAL MANAGEMENT - EMPM",
+      "school": "SCHOOL OF MANAGEMENT",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=335&catid=53"
+    },
+    {
+      "cluster": "ARTS",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "ODL (ONLINE)",
+      "name": "MASTER OF PROFESSIONAL MANAGEMENT - EMPM (MALAYSIA HEC - CENTRAL ASIA)",
+      "school": "SCHOOL OF MANAGEMENT",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=335&catid=53"
+    },
+    {
+      "cluster": "ARTS",
+      "degree": "OFFSHORE",
+      "level": "MASTER",
+      "mode": "COURSEWORK",
+      "name": "MASTER OF PROFESSIONAL MANAGEMENT -(OFFSHORE OXUS UNIVERSITY,UZBEKISTAN)",
+      "school": "SCHOOL OF MANAGEMENT",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1499&catid=53"
+    },
+    {
+      "cluster": "ARTS",
+      "degree": "OFFSHORE",
+      "level": "MASTER",
+      "mode": "COURSEWORK",
+      "name": "MASTER OF PROFESSIONAL MANAGEMENT -(OFFSHORE USM INTERNATIONAL)",
+      "school": "SCHOOL OF MANAGEMENT",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1500&catid=53"
+    },
+    {
+      "cluster": "ARTS",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "COURSEWORK",
+      "name": "MASTER OF PUBLIC ADMINISTRATION (MPA)",
+      "school": "SCHOOL OF SOCIAL SCIENCES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=263&catid=52"
+    },
+    {
+      "cluster": "ARTS",
+      "degree": "OFFSHORE",
+      "level": "MASTER",
+      "mode": "COURSEWORK",
+      "name": "MASTER OF PUBLIC ADMINISTRATION * USM@KL",
+      "school": "SCHOOL OF SOCIAL SCIENCES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1427&catid=52"
+    },
+    {
+      "cluster": "MEDICAL & HEALTH SCIENCES",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "COURSEWORK",
+      "name": "MASTER OF PUBLIC HEALTH",
+      "school": "SCHOOL OF MEDICAL SCIENCES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=423&catid=55"
+    },
+    {
+      "cluster": "ENGINEERING & TECHNOLOGY",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF SCIENCE (ADVANCED COMPUTER NETWORKS)",
+      "school": "CYBERSECURITY RESEARCH CENTRE",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=196&catid=51"
+    },
+    {
+      "cluster": "PURE SCIENCES",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF SCIENCE (ANALYTICAL BIOCHEMISTRY)",
+      "school": "ANALYTICAL BIOCHEMISTRY RESEARCH CENTRE",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=245&catid=51"
+    },
+    {
+      "cluster": "MEDICAL & HEALTH SCIENCES",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF SCIENCE (ANATOMY)",
+      "school": "SCHOOL OF MEDICAL SCIENCES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=501&catid=55"
+    },
+    {
+      "cluster": "PURE SCIENCES",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF SCIENCE (APPLIED ENTOMOLOGY)",
+      "school": "SCHOOL OF BIOLOGICAL SCIENCES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=135&catid=50"
+    },
+    {
+      "cluster": "PURE SCIENCES",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF SCIENCE (APPLIED PARASITOLOGY)",
+      "school": "SCHOOL OF BIOLOGICAL SCIENCES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=136&catid=50"
+    },
+    {
+      "cluster": "PURE SCIENCES",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF SCIENCE (AQUATIC BIOLOGY)",
+      "school": "SCHOOL OF BIOLOGICAL SCIENCES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=133&catid=50"
+    },
+    {
+      "cluster": "ARTS",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF SCIENCE (AQUATIC BIOLOGY)",
+      "school": "SCHOOL OF DISTANCE EDUCATION",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=164&catid=50"
+    },
+    {
+      "cluster": "MEDICAL & HEALTH SCIENCES",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF SCIENCE (BIOMEDICINE)",
+      "school": "PUSAT KANSER TUN ABDULLAH AHMAD BADAWI",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=464&catid=55"
+    },
+    {
+      "cluster": "MEDICAL & HEALTH SCIENCES",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF SCIENCE (BIOMEDICINE)",
+      "school": "SCHOOL OF HEALTH SCIENCES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=459&catid=55"
+    },
+    {
+      "cluster": "PURE SCIENCES",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF SCIENCE (BIOTECHNOLOGY)",
+      "school": "CENTRE FOR CHEMICAL BIOLOGY",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=125&catid=50"
+    },
+    {
+      "cluster": "PURE SCIENCES",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF SCIENCE (BIOTECHNOLOGY)",
+      "school": "SCHOOL OF BIOLOGICAL SCIENCES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=132&catid=50"
+    },
+    {
+      "cluster": "PURE SCIENCES",
+      "degree": "OFFSHORE",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF SCIENCE (BIOTECHNOLOGY) -OFFSHORE EUROPEAN GLOBAL SCHOOL ISTANBUL GELISIM UNIVERSITY",
+      "school": "SCHOOL OF BIOLOGICAL SCIENCES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1480&catid=50"
+    },
+    {
+      "cluster": "PURE SCIENCES",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF SCIENCE (BOTANY)",
+      "school": "SCHOOL OF BIOLOGICAL SCIENCES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=131&catid=50"
+    },
+    {
+      "cluster": "MEDICAL & HEALTH SCIENCES",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF SCIENCE (CHEMICAL PATHOLOGY)",
+      "school": "SCHOOL OF MEDICAL SCIENCES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=497&catid=55"
+    },
+    {
+      "cluster": "ENGINEERING & TECHNOLOGY",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF SCIENCE (CIVIL ENGINEERING)",
+      "school": "SCHOOL OF CIVIL ENGINEERING",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=396&catid=54"
+    },
+    {
+      "cluster": "ENGINEERING & TECHNOLOGY",
+      "degree": "OFFSHORE",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF SCIENCE (CIVIL ENGINEERING) -(OFFSHORE EUROPEAN GLOBAL SCHOOL UNIVERSITY, ISTANBUL)",
+      "school": "SCHOOL OF CIVIL ENGINEERING",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1502&catid=54"
+    },
+    {
+      "cluster": "MEDICAL & HEALTH SCIENCES",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "MIXED MODE",
+      "name": "MASTER OF SCIENCE (CLINICAL ANATOMY)",
+      "school": "SCHOOL OF MEDICAL SCIENCES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=414&catid=55"
+    },
+    {
+      "cluster": "MEDICAL & HEALTH SCIENCES",
+      "degree": "OFFSHORE",
+      "level": "MASTER",
+      "mode": "MIXED MODE",
+      "name": "MASTER OF SCIENCE (CLINICAL ANATOMY)-(OFFSHORE AL-MUSTAQBAL UNIVERSITY)",
+      "school": "SCHOOL OF MEDICAL SCIENCES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1488&catid=55"
+    },
+    {
+      "cluster": "MEDICAL & HEALTH SCIENCES",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF SCIENCE (CLINICAL SCIENCES)",
+      "school": "PUSAT KANSER TUN ABDULLAH AHMAD BADAWI",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=479&catid=55"
+    },
+    {
+      "cluster": "MEDICAL & HEALTH SCIENCES",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF SCIENCE (CLINICAL SCIENCES)",
+      "school": "SCHOOL OF MEDICAL SCIENCES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=489&catid=55"
+    },
+    {
+      "cluster": "MEDICAL & HEALTH SCIENCES",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF SCIENCE (COMMUNITY MEDICINE)",
+      "school": "PUSAT KANSER TUN ABDULLAH AHMAD BADAWI",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=477&catid=55"
+    },
+    {
+      "cluster": "MEDICAL & HEALTH SCIENCES",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF SCIENCE (COMMUNITY MEDICINE)",
+      "school": "SCHOOL OF MEDICAL SCIENCES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=502&catid=55"
+    },
+    {
+      "cluster": "MEDICAL & HEALTH SCIENCES",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF SCIENCE (COMPUTER SCIENCE)",
+      "school": "PUSAT KANSER TUN ABDULLAH AHMAD BADAWI",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=889&catid=55"
+    },
+    {
+      "cluster": "ENGINEERING & TECHNOLOGY",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF SCIENCE (COMPUTER SCIENCE)",
+      "school": "SCHOOL OF COMPUTER SCIENCES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=185&catid=51"
+    },
+    {
+      "cluster": "MEDICAL & HEALTH SCIENCES",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF SCIENCE (DENTISTRY)",
+      "school": "PUSAT KANSER TUN ABDULLAH AHMAD BADAWI",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=467&catid=55"
+    },
+    {
+      "cluster": "MEDICAL & HEALTH SCIENCES",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF SCIENCE (DENTISTRY)",
+      "school": "SCHOOL OF DENTAL SCIENCES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=505&catid=55"
+    },
+    {
+      "cluster": "MEDICAL & HEALTH SCIENCES",
+      "degree": "OFFSHORE",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF SCIENCE (DENTISTRY)-(OFFSHORE EUROPEAN GLOBAL SCHOOL UNIVERSITY, ISTANBUL)",
+      "school": "SCHOOL OF DENTAL SCIENCES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1507&catid=55"
+    },
+    {
+      "cluster": "ENGINEERING & TECHNOLOGY",
+      "degree": "OFFSHORE",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF SCIENCE (ELECTRICAL AND ELECTRONIC ENGINEERING)-(OFFSHORE EUROPEAN GLOBAL SCHOOL UNIVERSITY, ISTANBUL)",
+      "school": "SCHOOL OF ELECTRICAL AND ELECTRONIC ENGINEERING",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1504&catid=54"
+    },
+    {
+      "cluster": "MEDICAL & HEALTH SCIENCES",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF SCIENCE (ENDOCRINOLOGY AND METABOLISM)",
+      "school": "SCHOOL OF MEDICAL SCIENCES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=483&catid=55"
+    },
+    {
+      "cluster": "PURE SCIENCES",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF SCIENCE (ENVIRONMENTAL BIOLOGY)",
+      "school": "SCHOOL OF BIOLOGICAL SCIENCES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=137&catid=50"
+    },
+    {
+      "cluster": "ARTS",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF SCIENCE (ENVIRONMENTAL BIOLOGY)",
+      "school": "SCHOOL OF DISTANCE EDUCATION",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=151&catid=50"
+    },
+    {
+      "cluster": "MEDICAL & HEALTH SCIENCES",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF SCIENCE (EPIDEMIOLOGY)",
+      "school": "SCHOOL OF MEDICAL SCIENCES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=482&catid=55"
+    },
+    {
+      "cluster": "ENGINEERING & TECHNOLOGY",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "MIXED MODE",
+      "name": "MASTER OF SCIENCE (FIRE SAFETY ENGINEERING)",
+      "school": "SCHOOL OF CIVIL ENGINEERING",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=387&catid=54"
+    },
+    {
+      "cluster": "MEDICAL & HEALTH SCIENCES",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF SCIENCE (FORENSIC SCIENCE)",
+      "school": "SCHOOL OF HEALTH SCIENCES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=456&catid=55"
+    },
+    {
+      "cluster": "MEDICAL & HEALTH SCIENCES",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF SCIENCE (HEALTH EDUCATION)",
+      "school": "SCHOOL OF MEDICAL SCIENCES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=485&catid=55"
+    },
+    {
+      "cluster": "MEDICAL & HEALTH SCIENCES",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF SCIENCE (HEALTHCARE BIOTECHNOLOGY)",
+      "school": "MALAYSIAN INSTITUTE OF PHARMACEUTICALS AND NUTRACEUTICALS",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=230&catid=51"
+    },
+    {
+      "cluster": "MEDICAL & HEALTH SCIENCES",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF SCIENCE (HUMAN GENETICS)",
+      "school": "PUSAT KANSER TUN ABDULLAH AHMAD BADAWI",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=470&catid=55"
+    },
+    {
+      "cluster": "MEDICAL & HEALTH SCIENCES",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF SCIENCE (HUMAN GENETICS)",
+      "school": "SCHOOL OF MEDICAL SCIENCES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=492&catid=55"
+    },
+    {
+      "cluster": "MEDICAL & HEALTH SCIENCES",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF SCIENCE (LIFESTYLE SCIENCE)",
+      "school": "PUSAT KANSER TUN ABDULLAH AHMAD BADAWI",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=884&catid=55"
+    },
+    {
+      "cluster": "ENGINEERING & TECHNOLOGY",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF SCIENCE (MARINE SCIENCES)",
+      "school": "CENTRE FOR MARINE AND COASTAL STUDIES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=127&catid=50"
+    },
+    {
+      "cluster": "ARTS",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF SCIENCE (MARINE SCIENCES)",
+      "school": "CENTRE FOR POLICY RESEARCH",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=168&catid=50"
+    },
+    {
+      "cluster": "PURE SCIENCES",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF SCIENCE (MARINE SCIENCES)",
+      "school": "SCHOOL OF BIOLOGICAL SCIENCES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=128&catid=50"
+    },
+    {
+      "cluster": "ENGINEERING & TECHNOLOGY",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF SCIENCE (MATERIALS ENGINEERING)",
+      "school": "SCHOOL OF MATERIALS AND MINERAL RESOURCES ENGINEERING",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=399&catid=54"
+    },
+    {
+      "cluster": "ENGINEERING & TECHNOLOGY",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF SCIENCE (MECHANICAL ENGINEERING)",
+      "school": "SCHOOL OF MECHANICAL ENGINEERING",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=398&catid=54"
+    },
+    {
+      "cluster": "ENGINEERING & TECHNOLOGY",
+      "degree": "OFFSHORE",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF SCIENCE (MECHANICAL ENGINEERING) -(OFFSHORE EUROPEAN GLOBAL SCHOOL UNIVERSITY, ISTANBUL)",
+      "school": "SCHOOL OF MECHANICAL ENGINEERING",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1489&catid=54"
+    },
+    {
+      "cluster": "MEDICAL & HEALTH SCIENCES",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF SCIENCE (MEDICAL AUDIOLOGY)",
+      "school": "SCHOOL OF MEDICAL SCIENCES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=488&catid=55"
+    },
+    {
+      "cluster": "MEDICAL & HEALTH SCIENCES",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF SCIENCE (MEDICAL EDUCATION)",
+      "school": "SCHOOL OF MEDICAL SCIENCES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=455&catid=55"
+    },
+    {
+      "cluster": "MEDICAL & HEALTH SCIENCES",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF SCIENCE (MEDICAL IMMUNOLOGY)",
+      "school": "PUSAT KANSER TUN ABDULLAH AHMAD BADAWI",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=471&catid=55"
+    },
+    {
+      "cluster": "MEDICAL & HEALTH SCIENCES",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF SCIENCE (MEDICAL IMMUNOLOGY)",
+      "school": "SCHOOL OF MEDICAL SCIENCES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=493&catid=55"
+    },
+    {
+      "cluster": "MEDICAL & HEALTH SCIENCES",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF SCIENCE (MEDICAL MICROBIOLOGY)",
+      "school": "PUSAT KANSER TUN ABDULLAH AHMAD BADAWI",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=472&catid=55"
+    },
+    {
+      "cluster": "MEDICAL & HEALTH SCIENCES",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF SCIENCE (MEDICAL MICROBIOLOGY)",
+      "school": "SCHOOL OF MEDICAL SCIENCES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=494&catid=55"
+    },
+    {
+      "cluster": "MEDICAL & HEALTH SCIENCES",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF SCIENCE (MEDICAL PARASITOLOGY)",
+      "school": "SCHOOL OF MEDICAL SCIENCES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=495&catid=55"
+    },
+    {
+      "cluster": "MEDICAL & HEALTH SCIENCES",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF SCIENCE (MEDICAL PHYSICS)",
+      "school": "PUSAT KANSER TUN ABDULLAH AHMAD BADAWI",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=478&catid=55"
+    },
+    {
+      "cluster": "MEDICAL & HEALTH SCIENCES",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF SCIENCE (MEDICAL PHYSICS)",
+      "school": "SCHOOL OF MEDICAL SCIENCES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=503&catid=55"
+    },
+    {
+      "cluster": "MEDICAL & HEALTH SCIENCES",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF SCIENCE (MEDICAL PHYSIOLOGY)",
+      "school": "SCHOOL OF MEDICAL SCIENCES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=491&catid=55"
+    },
+    {
+      "cluster": "MEDICAL & HEALTH SCIENCES",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF SCIENCE (MEDICAL PSYCHOLOGY)",
+      "school": "SCHOOL OF MEDICAL SCIENCES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=486&catid=55"
+    },
+    {
+      "cluster": "MEDICAL & HEALTH SCIENCES",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF SCIENCE (MEDICAL RADIATION) [HEALTH]",
+      "school": "SCHOOL OF HEALTH SCIENCES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=509&catid=55"
+    },
+    {
+      "cluster": "MEDICAL & HEALTH SCIENCES",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF SCIENCE (MEDICAL RADIATION) [MEDICAL]",
+      "school": "SCHOOL OF MEDICAL SCIENCES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=484&catid=55"
+    },
+    {
+      "cluster": "MEDICAL & HEALTH SCIENCES",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "MIXED MODE",
+      "name": "MASTER OF SCIENCE (MEDICAL STATISTIC)",
+      "school": "SCHOOL OF MEDICAL SCIENCES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=451&catid=55"
+    },
+    {
+      "cluster": "MEDICAL & HEALTH SCIENCES",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF SCIENCE (MEDICAL STATISTICS)",
+      "school": "SCHOOL OF MEDICAL SCIENCES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=454&catid=55"
+    },
+    {
+      "cluster": "PURE SCIENCES",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF SCIENCE (MICROBIOLOGY)",
+      "school": "CENTRE FOR CHEMICAL BIOLOGY",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=124&catid=50"
+    },
+    {
+      "cluster": "PURE SCIENCES",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF SCIENCE (MICROBIOLOGY)",
+      "school": "SCHOOL OF BIOLOGICAL SCIENCES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=129&catid=50"
+    },
+    {
+      "cluster": "PURE SCIENCES",
+      "degree": "OFFSHORE",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF SCIENCE (MICROBIOLOGY) -OFFSHORE EUROPEAN GLOBAL SCHOOL ISTANBUL GELISIM UNIVERSITY",
+      "school": "SCHOOL OF BIOLOGICAL SCIENCES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1481&catid=50"
+    },
+    {
+      "cluster": "ENGINEERING & TECHNOLOGY",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "MIXED MODE",
+      "name": "MASTER OF SCIENCE (MICROELECTRONIC ENGINEERING)",
+      "school": "COLLABORATIVE MICROELECTRONIC DESIGN EXCELLENCE CENTRE",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=389&catid=54"
+    },
+    {
+      "cluster": "ENGINEERING & TECHNOLOGY",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "MIXED MODE",
+      "name": "MASTER OF SCIENCE (MICROELECTRONIC ENGINEERING) - MALAYSIAN ONLY (INDUSTRY CANDIDATES)",
+      "school": "COLLABORATIVE MICROELECTRONIC DESIGN EXCELLENCE CENTRE",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=389&catid=54"
+    },
+    {
+      "cluster": "ENGINEERING & TECHNOLOGY",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF SCIENCE (MICROELECTRONIC SYSTEMS ENGINEERING)",
+      "school": "COLLABORATIVE MICROELECTRONIC DESIGN EXCELLENCE CENTRE",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=385&catid=54"
+    },
+    {
+      "cluster": "ENGINEERING & TECHNOLOGY",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF SCIENCE (MINERAL RESOURCES ENGINEERING)",
+      "school": "SCHOOL OF MATERIALS AND MINERAL RESOURCES ENGINEERING",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=401&catid=54"
+    },
+    {
+      "cluster": "PURE SCIENCES",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF SCIENCE (MOLECULAR BIOLOGY)",
+      "school": "CENTRE FOR CHEMICAL BIOLOGY",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=126&catid=50"
+    },
+    {
+      "cluster": "MEDICAL & HEALTH SCIENCES",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF SCIENCE (MOLECULAR BIOLOGY)",
+      "school": "PUSAT KANSER TUN ABDULLAH AHMAD BADAWI",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=468&catid=55"
+    },
+    {
+      "cluster": "ARTS",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF SCIENCE (MOLECULAR BIOLOGY)",
+      "school": "SCHOOL OF DISTANCE EDUCATION",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=162&catid=50"
+    },
+    {
+      "cluster": "MEDICAL & HEALTH SCIENCES",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF SCIENCE (MOLECULAR BIOLOGY)",
+      "school": "SCHOOL OF MEDICAL SCIENCES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=481&catid=55"
+    },
+    {
+      "cluster": "MEDICAL & HEALTH SCIENCES",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF SCIENCE (NEUROSCIENCE)",
+      "school": "PUSAT KANSER TUN ABDULLAH AHMAD BADAWI",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=476&catid=55"
+    },
+    {
+      "cluster": "MEDICAL & HEALTH SCIENCES",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF SCIENCE (NEUROSCIENCES)",
+      "school": "SCHOOL OF MEDICAL SCIENCES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=500&catid=55"
+    },
+    {
+      "cluster": "MEDICAL & HEALTH SCIENCES",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF SCIENCE (NUCLEAR MEDICINE)",
+      "school": "PUSAT KANSER TUN ABDULLAH AHMAD BADAWI",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=473&catid=55"
+    },
+    {
+      "cluster": "MEDICAL & HEALTH SCIENCES",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF SCIENCE (NUCLEAR MEDICINE)",
+      "school": "SCHOOL OF MEDICAL SCIENCES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=498&catid=55"
+    },
+    {
+      "cluster": "MEDICAL & HEALTH SCIENCES",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF SCIENCE (NURSING)",
+      "school": "SCHOOL OF HEALTH SCIENCES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=508&catid=55"
+    },
+    {
+      "cluster": "MEDICAL & HEALTH SCIENCES",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF SCIENCE (NUTRITION)",
+      "school": "PUSAT KANSER TUN ABDULLAH AHMAD BADAWI",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=465&catid=55"
+    },
+    {
+      "cluster": "MEDICAL & HEALTH SCIENCES",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF SCIENCE (NUTRITION) [MEDICAL]",
+      "school": "SCHOOL OF MEDICAL SCIENCES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=496&catid=55"
+    },
+    {
+      "cluster": "MEDICAL & HEALTH SCIENCES",
+      "degree": "OFFSHORE",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF SCIENCE (OFFSHORE EUROPEAN GLOBAL SCHOOL UNIVERSITY, ISTANBUL)",
+      "school": "PUSAT KANSER TUN ABDULLAH AHMAD BADAWI",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1485&catid=55"
+    },
+    {
+      "cluster": "ARTS",
+      "degree": "OFFSHORE",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF SCIENCE (OFFSHORE EUROPEAN GLOBAL SCHOOL UNIVERSITY, ISTANBUL)",
+      "school": "SCHOOL OF DISTANCE EDUCATION",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1510&catid=50"
+    },
+    {
+      "cluster": "MEDICAL & HEALTH SCIENCES",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF SCIENCE (PATHOLOGY)",
+      "school": "PUSAT KANSER TUN ABDULLAH AHMAD BADAWI",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=474&catid=55"
+    },
+    {
+      "cluster": "MEDICAL & HEALTH SCIENCES",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF SCIENCE (PATHOLOGY)",
+      "school": "SCHOOL OF MEDICAL SCIENCES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=499&catid=55"
+    },
+    {
+      "cluster": "MEDICAL & HEALTH SCIENCES",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF SCIENCE (PHARMACEUTICAL SCIENCES)",
+      "school": "SCHOOL OF PHARMACEUTICAL SCIENCES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=216&catid=51"
+    },
+    {
+      "cluster": "MEDICAL & HEALTH SCIENCES",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF SCIENCE (PHARMACEUTICAL TECHNOLOGY)",
+      "school": "PUSAT KANSER TUN ABDULLAH AHMAD BADAWI",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=461&catid=55"
+    },
+    {
+      "cluster": "MEDICAL & HEALTH SCIENCES",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF SCIENCE (PHARMACOLOGY)",
+      "school": "PUSAT KANSER TUN ABDULLAH AHMAD BADAWI",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=469&catid=55"
+    },
+    {
+      "cluster": "MEDICAL & HEALTH SCIENCES",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF SCIENCE (PHARMACOLOGY)",
+      "school": "SCHOOL OF MEDICAL SCIENCES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=490&catid=55"
+    },
+    {
+      "cluster": "MEDICAL & HEALTH SCIENCES",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF SCIENCE (PHARMACY)",
+      "school": "CENTRE FOR DRUG RESEARCH",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=231&catid=51"
+    },
+    {
+      "cluster": "MEDICAL & HEALTH SCIENCES",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF SCIENCE (PHARMACY)",
+      "school": "NATIONAL POISON CENTRE",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=197&catid=51"
+    },
+    {
+      "cluster": "MEDICAL & HEALTH SCIENCES",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF SCIENCE (PHARMACY)",
+      "school": "PUSAT KANSER TUN ABDULLAH AHMAD BADAWI",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=463&catid=55"
+    },
+    {
+      "cluster": "PURE SCIENCES",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF SCIENCE (PLANT PATHOLOGY)",
+      "school": "SCHOOL OF BIOLOGICAL SCIENCES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=134&catid=50"
+    },
+    {
+      "cluster": "ENGINEERING & TECHNOLOGY",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF SCIENCE (POLYMER ENGINEERING)",
+      "school": "SCHOOL OF MATERIALS AND MINERAL RESOURCES ENGINEERING",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=400&catid=54"
+    },
+    {
+      "cluster": "ENGINEERING & TECHNOLOGY",
+      "degree": "OFFSHORE",
+      "level": "MASTER",
+      "mode": "COURSEWORK",
+      "name": "MASTER OF SCIENCE (PROJECT MANAGEMENT)-(OFFSHORE EUROPEAN GLOBAL SCHOOL UNIVERSITY, ISTANBUL)",
+      "school": "SCHOOL OF HOUSING, BUILDING AND PLANNING",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1514&catid=51"
+    },
+    {
+      "cluster": "MEDICAL & HEALTH SCIENCES",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF SCIENCE (RECONSTRUCTIVE SCIENCE)",
+      "school": "SCHOOL OF MEDICAL SCIENCES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=504&catid=55"
+    },
+    {
+      "cluster": "ENGINEERING & TECHNOLOGY",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF SCIENCE (RIVER AND URBAN DRAINAGE MANAGEMENT)",
+      "school": "RIVER ENGINEERING AND URBAN DRAINAGE RESEARCH CENTRE",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=391&catid=54"
+    },
+    {
+      "cluster": "PURE SCIENCES",
+      "degree": "DUAL DEGREE",
+      "level": "MASTER",
+      "mode": "MIXED MODE",
+      "name": "MASTER OF SCIENCE (SOLID STATE PHYSICS) DUAL DEGREE - OTH REGENSBURG",
+      "school": "SCHOOL OF PHYSICS",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=118&catid=50"
+    },
+    {
+      "cluster": "MEDICAL & HEALTH SCIENCES",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF SCIENCE (SPORTS SCIENCE)",
+      "school": "PUSAT KANSER TUN ABDULLAH AHMAD BADAWI",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=475&catid=55"
+    },
+    {
+      "cluster": "MEDICAL & HEALTH SCIENCES",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF SCIENCE (SPORTS SCIENCE)",
+      "school": "SCHOOL OF HEALTH SCIENCES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=506&catid=55"
+    },
+    {
+      "cluster": "ENGINEERING & TECHNOLOGY",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF SCIENCE (SUSTAINABILITY)",
+      "school": "CENTRE FOR GLOBAL SUSTAINABILITY STUDIES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=248&catid=51"
+    },
+    {
+      "cluster": "MEDICAL & HEALTH SCIENCES",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF SCIENCE (WOMEN'S HEALTH)",
+      "school": "SCHOOL OF MEDICAL SCIENCES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=806&catid=55"
+    },
+    {
+      "cluster": "PURE SCIENCES",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF SCIENCE (ZOOLOGY)",
+      "school": "SCHOOL OF BIOLOGICAL SCIENCES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=130&catid=50"
+    },
+    {
+      "cluster": "ARTS",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF SCIENCE (ZOOLOGY)",
+      "school": "SCHOOL OF DISTANCE EDUCATION",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=163&catid=50"
+    },
+    {
+      "cluster": "ENGINEERING & TECHNOLOGY",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "COURSEWORK",
+      "name": "MASTER OF SCIENCE IN ADVANCED MANUFACTURING ENGINEERING MANAGEMENT",
+      "school": "SCHOOL OF MECHANICAL ENGINEERING",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=882&catid=54"
+    },
+    {
+      "cluster": "ENGINEERING & TECHNOLOGY",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "MIXED MODE",
+      "name": "MASTER OF SCIENCE IN ADVANCED SEMICONDUCTOR PACKAGING",
+      "school": "SCHOOL OF MATERIALS AND MINERAL RESOURCES ENGINEERING",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=892&catid=54"
+    },
+    {
+      "cluster": "ENGINEERING & TECHNOLOGY",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF SCIENCE IN AEROSPACE ENGINEERING",
+      "school": "SCHOOL OF AEROSPACE ENGINEERING",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=393&catid=54"
+    },
+    {
+      "cluster": "ENGINEERING & TECHNOLOGY",
+      "degree": "OFFSHORE",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF SCIENCE IN AEROSPACE ENGINEERING (OFFSHORE EUROPEAN GLOBAL SCHOOL UNIVERSITY, ISTANBUL)",
+      "school": "SCHOOL OF AEROSPACE ENGINEERING",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1473&catid=54"
+    },
+    {
+      "cluster": "PURE SCIENCES",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "MIXED MODE",
+      "name": "MASTER OF SCIENCE IN APPLIED GEOPHYSICS",
+      "school": "SCHOOL OF PHYSICS",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=114&catid=50"
+    },
+    {
+      "cluster": "ENGINEERING & TECHNOLOGY",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF SCIENCE IN ARCHITECTURE",
+      "school": "SCHOOL OF HOUSING, BUILDING AND PLANNING",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=223&catid=51"
+    },
+    {
+      "cluster": "ENGINEERING & TECHNOLOGY",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF SCIENCE IN BIOPROCESS TECHNOLOGY",
+      "school": "SCHOOL OF INDUSTRIAL TECHNOLOGY",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=224&catid=51"
+    },
+    {
+      "cluster": "ENGINEERING & TECHNOLOGY",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF SCIENCE IN BIORESOURCE, PAPER AND COATINGS TECHNOLOGY",
+      "school": "SCHOOL OF INDUSTRIAL TECHNOLOGY",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=225&catid=51"
+    },
+    {
+      "cluster": "ENGINEERING & TECHNOLOGY",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF SCIENCE IN BUILDING SURVEYING",
+      "school": "SCHOOL OF HOUSING, BUILDING AND PLANNING",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=229&catid=51"
+    },
+    {
+      "cluster": "ENGINEERING & TECHNOLOGY",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "MIXED MODE",
+      "name": "MASTER OF SCIENCE IN BUILDING TECHNOLOGY",
+      "school": "SCHOOL OF HOUSING, BUILDING AND PLANNING",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=226&catid=51"
+    },
+    {
+      "cluster": "ENGINEERING & TECHNOLOGY",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "COURSEWORK",
+      "name": "MASTER OF SCIENCE IN BUILDING TECHNOLOGY",
+      "school": "SCHOOL OF HOUSING, BUILDING AND PLANNING",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=183&catid=51"
+    },
+    {
+      "cluster": "ENGINEERING & TECHNOLOGY",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF SCIENCE IN BUILDING TECHNOLOGY",
+      "school": "SCHOOL OF HOUSING, BUILDING AND PLANNING",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=188&catid=51"
+    },
+    {
+      "cluster": "ENGINEERING & TECHNOLOGY",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF SCIENCE IN CHEMICAL ENGINEERING",
+      "school": "SCHOOL OF CHEMICAL ENGINEERING",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=394&catid=54"
+    },
+    {
+      "cluster": "PURE SCIENCES",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "MIXED MODE",
+      "name": "MASTER OF SCIENCE IN CHEMICAL INSTRUMENTATION",
+      "school": "SCHOOL OF CHEMICAL SCIENCES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=115&catid=50"
+    },
+    {
+      "cluster": "MEDICAL & HEALTH SCIENCES",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF SCIENCE IN CHEMISTRY",
+      "school": "PUSAT KANSER TUN ABDULLAH AHMAD BADAWI",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=466&catid=55"
+    },
+    {
+      "cluster": "PURE SCIENCES",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF SCIENCE IN CHEMISTRY",
+      "school": "SCHOOL OF CHEMICAL SCIENCES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=138&catid=50"
+    },
+    {
+      "cluster": "ARTS",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF SCIENCE IN CHEMISTRY",
+      "school": "SCHOOL OF DISTANCE EDUCATION",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=140&catid=50"
+    },
+    {
+      "cluster": "PURE SCIENCES",
+      "degree": "OFFSHORE",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF SCIENCE IN CHEMISTRY-(OFFSHORE EUROPEAN GLOBAL SCHOOL UNIVERSITY, ISTANBUL)",
+      "school": "SCHOOL OF CHEMICAL SCIENCES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1484&catid=50"
+    },
+    {
+      "cluster": "MEDICAL & HEALTH SCIENCES",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "COURSEWORK",
+      "name": "MASTER OF SCIENCE IN CLINICAL EXERCISE SCIENCE",
+      "school": "PUSAT KANSER TUN ABDULLAH AHMAD BADAWI",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=424&catid=55"
+    },
+    {
+      "cluster": "MEDICAL & HEALTH SCIENCES",
+      "degree": "OFFSHORE",
+      "level": "MASTER",
+      "mode": "COURSEWORK",
+      "name": "MASTER OF SCIENCE IN CLINICAL EXERCISE SCIENCE (OFFSHORE USM INTERNATIONAL)",
+      "school": "PUSAT KANSER TUN ABDULLAH AHMAD BADAWI",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1477&catid=55"
+    },
+    {
+      "cluster": "ENGINEERING & TECHNOLOGY",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF SCIENCE IN ELECTRICAL AND ELECTRONIC ENGINEERING",
+      "school": "SCHOOL OF ELECTRICAL AND ELECTRONIC ENGINEERING",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=397&catid=54"
+    },
+    {
+      "cluster": "ENGINEERING & TECHNOLOGY",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "MIXED MODE",
+      "name": "MASTER OF SCIENCE IN ELECTRONIC SYSTEMS DESIGN ENGINEERING",
+      "school": "SCHOOL OF ELECTRICAL AND ELECTRONIC ENGINEERING",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=386&catid=54"
+    },
+    {
+      "cluster": "ENGINEERING & TECHNOLOGY",
+      "degree": "OFFSHORE",
+      "level": "MASTER",
+      "mode": "MIXED MODE",
+      "name": "MASTER OF SCIENCE IN ELECTRONIC SYSTEMS DESIGN ENGINEERING -(OFFSHORE AL-MUSTAQBAL UNIVERSITY)",
+      "school": "SCHOOL OF ELECTRICAL AND ELECTRONIC ENGINEERING",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1505&catid=54"
+    },
+    {
+      "cluster": "ENGINEERING & TECHNOLOGY",
+      "degree": "OFFSHORE",
+      "level": "MASTER",
+      "mode": "MIXED MODE",
+      "name": "MASTER OF SCIENCE IN ELECTRONIC SYSTEMS DESIGN ENGINEERING -(OFFSHORE XIAMEN UNIVERSITY OF TECHNOLOGY (XMUT), CHINA)",
+      "school": "SCHOOL OF ELECTRICAL AND ELECTRONIC ENGINEERING",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1513&catid=54"
+    },
+    {
+      "cluster": "ENGINEERING & TECHNOLOGY",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "MIXED MODE",
+      "name": "MASTER OF SCIENCE IN ELECTRONIC SYSTEMS DESIGN ENGINEERING-- INDUSTRY CANDIDATES",
+      "school": "SCHOOL OF ELECTRICAL AND ELECTRONIC ENGINEERING",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=386&catid=54"
+    },
+    {
+      "cluster": "ARTS",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF SCIENCE IN ENVIRONMENTAL SCIENCE",
+      "school": "SCHOOL OF DISTANCE EDUCATION",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=139&catid=50"
+    },
+    {
+      "cluster": "ENGINEERING & TECHNOLOGY",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF SCIENCE IN ENVIRONMENTAL TECHNOLOGY",
+      "school": "SCHOOL OF INDUSTRIAL TECHNOLOGY",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=207&catid=51"
+    },
+    {
+      "cluster": "ENGINEERING & TECHNOLOGY",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF SCIENCE IN FOOD TECHNOLOGY",
+      "school": "SCHOOL OF INDUSTRIAL TECHNOLOGY",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=205&catid=51"
+    },
+    {
+      "cluster": "ARTS",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "COURSEWORK",
+      "name": "MASTER OF SCIENCE IN GEOMATICS FOR DISASTER RISK REDUCTION",
+      "school": "SCHOOL OF HUMANITIES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=179&catid=51"
+    },
+    {
+      "cluster": "ENGINEERING & TECHNOLOGY",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF SCIENCE IN HOUSING",
+      "school": "SCHOOL OF HOUSING, BUILDING AND PLANNING",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=201&catid=51"
+    },
+    {
+      "cluster": "ENGINEERING & TECHNOLOGY",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF SCIENCE IN INTERIOR DESIGN",
+      "school": "SCHOOL OF HOUSING, BUILDING AND PLANNING",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=203&catid=51"
+    },
+    {
+      "cluster": "ENGINEERING & TECHNOLOGY",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "MIXED MODE",
+      "name": "MASTER OF SCIENCE IN MATERIALS ENGINEERING",
+      "school": "SCHOOL OF MATERIALS AND MINERAL RESOURCES ENGINEERING",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=805&catid=54"
+    },
+    {
+      "cluster": "ARTS",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF SCIENCE IN MATHEMATICS",
+      "school": "SCHOOL OF DISTANCE EDUCATION",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=141&catid=50"
+    },
+    {
+      "cluster": "PURE SCIENCES",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "MIXED MODE",
+      "name": "MASTER OF SCIENCE IN MATHEMATICS",
+      "school": "SCHOOL OF MATHEMATICAL SCIENCES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=116&catid=50"
+    },
+    {
+      "cluster": "PURE SCIENCES",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF SCIENCE IN MATHEMATICS",
+      "school": "SCHOOL OF MATHEMATICAL SCIENCES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=107&catid=50"
+    },
+    {
+      "cluster": "PURE SCIENCES",
+      "degree": "OFFSHORE",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF SCIENCE IN MATHEMATICS-(OFFSHORE EUROPEAN GLOBAL SCHOOL UNIVERSITY, ISTANBUL)",
+      "school": "SCHOOL OF MATHEMATICAL SCIENCES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=107&catid=50"
+    },
+    {
+      "cluster": "PURE SCIENCES",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "COURSEWORK",
+      "name": "MASTER OF SCIENCE IN MEDICAL PHYSICS",
+      "school": "SCHOOL OF PHYSICS",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=119&catid=50"
+    },
+    {
+      "cluster": "MEDICAL & HEALTH SCIENCES",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "MIXED MODE",
+      "name": "MASTER OF SCIENCE IN MOLECULAR MEDICINE",
+      "school": "INSTITUTE FOR RESEARCH IN MOLECULAR MEDICINE",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=419&catid=55"
+    },
+    {
+      "cluster": "MEDICAL & HEALTH SCIENCES",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF SCIENCE IN MOLECULAR MEDICINE",
+      "school": "INSTITUTE FOR RESEARCH IN MOLECULAR MEDICINE",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=460&catid=55"
+    },
+    {
+      "cluster": "PURE SCIENCES",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "MIXED MODE",
+      "name": "MASTER OF SCIENCE IN NANO-OPTOELECTRONICS",
+      "school": "INSTITUTE OF NANO-OPTOELECTRONICS RESEARCH AND TECHNOLOGY",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=195&catid=51"
+    },
+    {
+      "cluster": "PURE SCIENCES",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF SCIENCE IN OPTOELECTRONICS",
+      "school": "INSTITUTE OF NANO-OPTOELECTRONICS RESEARCH AND TECHNOLOGY",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=186&catid=51"
+    },
+    {
+      "cluster": "ARTS",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF SCIENCE IN PHYSICS",
+      "school": "SCHOOL OF DISTANCE EDUCATION",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=142&catid=50"
+    },
+    {
+      "cluster": "PURE SCIENCES",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF SCIENCE IN PHYSICS",
+      "school": "SCHOOL OF PHYSICS",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=143&catid=50"
+    },
+    {
+      "cluster": "ENGINEERING & TECHNOLOGY",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF SCIENCE IN PLANNING STUDIES",
+      "school": "SCHOOL OF HOUSING, BUILDING AND PLANNING",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=199&catid=51"
+    },
+    {
+      "cluster": "ENGINEERING & TECHNOLOGY",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF SCIENCE IN POLYMER TECHNOLOGY",
+      "school": "SCHOOL OF INDUSTRIAL TECHNOLOGY",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=400&catid=54"
+    },
+    {
+      "cluster": "ENGINEERING & TECHNOLOGY",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "COURSEWORK",
+      "name": "MASTER OF SCIENCE IN PROJECT MANAGEMENT",
+      "school": "SCHOOL OF HOUSING, BUILDING AND PLANNING",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=189&catid=51"
+    },
+    {
+      "cluster": "ENGINEERING & TECHNOLOGY",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF SCIENCE IN PROJECT MANAGEMENT",
+      "school": "SCHOOL OF HOUSING, BUILDING AND PLANNING",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=228&catid=51"
+    },
+    {
+      "cluster": "ENGINEERING & TECHNOLOGY",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF SCIENCE IN QUANTITY SURVEYING",
+      "school": "SCHOOL OF HOUSING, BUILDING AND PLANNING",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=204&catid=51"
+    },
+    {
+      "cluster": "PURE SCIENCES",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "MIXED MODE",
+      "name": "MASTER OF SCIENCE IN RADIATION SCIENCE",
+      "school": "SCHOOL OF PHYSICS",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=117&catid=50"
+    },
+    {
+      "cluster": "PURE SCIENCES",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "COURSEWORK",
+      "name": "MASTER OF SCIENCE IN SOLID STATE PHYSICS",
+      "school": "SCHOOL OF PHYSICS",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=120&catid=50"
+    },
+    {
+      "cluster": "ARTS",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF SCIENCE IN STATISTICS",
+      "school": "SCHOOL OF DISTANCE EDUCATION",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=161&catid=50"
+    },
+    {
+      "cluster": "PURE SCIENCES",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "MIXED MODE",
+      "name": "MASTER OF SCIENCE IN STATISTICS",
+      "school": "SCHOOL OF MATHEMATICAL SCIENCES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=113&catid=50"
+    },
+    {
+      "cluster": "PURE SCIENCES",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF SCIENCE IN STATISTICS",
+      "school": "SCHOOL OF MATHEMATICAL SCIENCES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=112&catid=50"
+    },
+    {
+      "cluster": "PURE SCIENCES",
+      "degree": "OFFSHORE",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF SCIENCE IN STATISTICS -(OFFSHORE EUROPEAN GLOBAL SCHOOL UNIVERSITY, ISTANBUL)",
+      "school": "SCHOOL OF MATHEMATICAL SCIENCES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=112&catid=50"
+    },
+    {
+      "cluster": "PURE SCIENCES",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "COURSEWORK",
+      "name": "MASTER OF SCIENCE IN TEACHING OF MATHEMATICS",
+      "school": "SCHOOL OF MATHEMATICAL SCIENCES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=175&catid=50"
+    },
+    {
+      "cluster": "PURE SCIENCES",
+      "degree": "OFFSHORE",
+      "level": "MASTER",
+      "mode": "COURSEWORK",
+      "name": "MASTER OF SCIENCE IN TEACHING OF MATHEMATICS *USM@KL",
+      "school": "SCHOOL OF MATHEMATICAL SCIENCES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1426&catid=50"
+    },
+    {
+      "cluster": "ENGINEERING & TECHNOLOGY",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "MIXED MODE",
+      "name": "MASTER OF SCIENCE IN TOURISM DEVELOPMENT",
+      "school": "SCHOOL OF HOUSING, BUILDING AND PLANNING",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=184&catid=51"
+    },
+    {
+      "cluster": "PURE SCIENCES",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "MIXED MODE",
+      "name": "MASTER OF SCIENCE IN TROPICAL PLANT DISEASE MANAGEMENT",
+      "school": "SCHOOL OF BIOLOGICAL SCIENCES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=106&catid=50"
+    },
+    {
+      "cluster": "ARTS",
+      "degree": "OFFSHORE",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF SOCIAL SCIENCE (OFFSHORE EUROPEAN GLOBAL SCHOOL UNIVERSITY, ISTANBUL)",
+      "school": "SCHOOL OF DISTANCE EDUCATION",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1512&catid=52"
+    },
+    {
+      "cluster": "ARTS",
+      "degree": "OFFSHORE",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF SOCIAL SCIENCE (OFFSHORE EUROPEAN GLOBAL SCHOOL UNIVERSITY, ISTANBUL)",
+      "school": "SCHOOL OF SOCIAL SCIENCES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=289&catid=52"
+    },
+    {
+      "cluster": "ARTS",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF SOCIAL SCIENCES IN ANTHROPOLOGY AND SOCIOLOGY",
+      "school": "CENTRE FOR POLICY RESEARCH",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=265&catid=52"
+    },
+    {
+      "cluster": "ARTS",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF SOCIAL SCIENCES IN ANTHROPOLOGY AND SOCIOLOGY",
+      "school": "SCHOOL OF DISTANCE EDUCATION",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=298&catid=52"
+    },
+    {
+      "cluster": "ARTS",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF SOCIAL SCIENCES IN ANTHROPOLOGY AND SOCIOLOGY",
+      "school": "SCHOOL OF SOCIAL SCIENCES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=288&catid=52"
+    },
+    {
+      "cluster": "ARTS",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF SOCIAL SCIENCES IN DEVELOPMENT STUDIES",
+      "school": "CENTRE FOR POLICY RESEARCH",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=268&catid=52"
+    },
+    {
+      "cluster": "ARTS",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF SOCIAL SCIENCES IN DEVELOPMENT STUDIES",
+      "school": "SCHOOL OF SOCIAL SCIENCES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=291&catid=52"
+    },
+    {
+      "cluster": "ARTS",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF SOCIAL SCIENCES IN ECONOMICS",
+      "school": "CENTRE FOR POLICY RESEARCH",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=266&catid=52"
+    },
+    {
+      "cluster": "ARTS",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF SOCIAL SCIENCES IN ECONOMICS",
+      "school": "SCHOOL OF DISTANCE EDUCATION",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=299&catid=52"
+    },
+    {
+      "cluster": "ARTS",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF SOCIAL SCIENCES IN ECONOMICS",
+      "school": "SCHOOL OF SOCIAL SCIENCES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=289&catid=52"
+    },
+    {
+      "cluster": "ARTS",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF SOCIAL SCIENCES IN GENDER STUDIES",
+      "school": "CENTRE FOR RESEARCH ON WOMEN AND GENDER (KANITA)",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=811&catid=53"
+    },
+    {
+      "cluster": "ARTS",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "MIXED MODE",
+      "name": "MASTER OF SOCIAL SCIENCES IN ISLAMIC-BASED DEVELOPMENT MANAGEMENT",
+      "school": "CENTRE FOR ISLAMIC DEVELOPMENT MANAGEMENT STUDIES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=261&catid=52"
+    },
+    {
+      "cluster": "ARTS",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF SOCIAL SCIENCES IN POLITICAL SCIENCE",
+      "school": "CENTRE FOR POLICY RESEARCH",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=269&catid=52"
+    },
+    {
+      "cluster": "ARTS",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF SOCIAL SCIENCES IN POLITICAL SCIENCE",
+      "school": "SCHOOL OF DISTANCE EDUCATION",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=300&catid=52"
+    },
+    {
+      "cluster": "ARTS",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF SOCIAL SCIENCES IN POLITICAL SCIENCE",
+      "school": "SCHOOL OF SOCIAL SCIENCES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=292&catid=52"
+    },
+    {
+      "cluster": "MEDICAL & HEALTH SCIENCES",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF SOCIAL SCIENCES IN PSYCHOLOGY",
+      "school": "PUSAT KANSER TUN ABDULLAH AHMAD BADAWI",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=480&catid=55"
+    },
+    {
+      "cluster": "ARTS",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF SOCIAL SCIENCES IN PSYCHOLOGY",
+      "school": "SCHOOL OF SOCIAL SCIENCES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=293&catid=52"
+    },
+    {
+      "cluster": "ARTS",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "RESEARCH",
+      "name": "MASTER OF SOCIAL SCIENCES IN SOCIAL WORK",
+      "school": "SCHOOL OF SOCIAL SCIENCES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=290&catid=52"
+    },
+    {
+      "cluster": "ARTS",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "MIXED MODE",
+      "name": "MASTER OF SOCIAL WORK",
+      "school": "SCHOOL OF SOCIAL SCIENCES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=260&catid=52"
+    },
+    {
+      "cluster": "MEDICAL & HEALTH SCIENCES",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "COURSEWORK",
+      "name": "MASTER OF SURGERY (NEUROSURGERY)",
+      "school": "SCHOOL OF MEDICAL SCIENCES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=443&catid=55"
+    },
+    {
+      "cluster": "MEDICAL & HEALTH SCIENCES",
+      "degree": "CONVENTIONAL",
+      "level": "MASTER",
+      "mode": "COURSEWORK",
+      "name": "MASTER OF SURGERY (PLASTIC SURGERY)",
+      "school": "SCHOOL OF MEDICAL SCIENCES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=444&catid=55"
+    },
+    {
+      "cluster": "ENGINEERING & TECHNOLOGY",
+      "degree": "OFFSHORE",
+      "level": "MASTER",
+      "mode": "COURSEWORK",
+      "name": "MASTERS IN SUSTAINABLE DEVELOPMENT PRACTICE - *USM@KL",
+      "school": "CENTRE FOR GLOBAL SUSTAINABILITY STUDIES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=351&catid=53"
+    }
+  ]
+}

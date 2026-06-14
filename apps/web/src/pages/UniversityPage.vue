@@ -697,6 +697,7 @@ const programAuditRows = computed<LabelValue[]>(() => {
   return [
     { label: t('university.bachelorPrograms'), value: catalogLevelTotal("bachelor") },
     { label: t('university.masterPrograms'), value: catalogLevelTotal("master") },
+    { label: t('university.phdPrograms'), value: catalogLevelTotal("phd") },
     { label: t('university.publicReady'), value: String(current.catalogStatusSummary?.all.ready ?? current.programs.length) },
     { label: t('university.reviewUnavailable'), value: auditReviewCount() },
     { label: t('university.languageRequirement'), value: t('university.languageShownByProgram') }

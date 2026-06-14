@@ -53,8 +53,9 @@ USM Admission 页面受 WAF 保护时，使用只读公开渲染或浏览器动�
 - `phd-candidate.json`：标准化候选、费用、要求、材料、证据和状态。
 - `phd-audit.json`：覆盖率、异常和来源哈希。
 - `phd-delivery.json`：一次交付范围、三类计数、状态分区、验证与决策。
+- `sources/`：当前目录、费用页、费用 PDF、IPS 规则页和申请指南的版本化原始证据。
 
-专项验证器校验固定计数、唯一身份、官方域名、来源哈希、字段覆盖、费用行、状态分区和未写库约束。`scripts/audit_delivery.py` 校验最终交付 envelope。
+专项验证器校验固定计数、唯一身份、官方域名、可离线读取的来源哈希、字段覆盖、费用行、状态分区和未写库约束。`scripts/audit_delivery.py` 校验最终交付 envelope。
 
 ## 回滚
 

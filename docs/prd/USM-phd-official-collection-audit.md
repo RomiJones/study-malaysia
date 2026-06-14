@@ -1,5 +1,9 @@
 # USM 博士阶段官方数据采集审计
 
+## 当前发布结论
+
+2026-06-14 全层级复审后，95 条博士规范身份已受控入库：72 条公开、21 条待审核、2 条国际生不可用。数值学制覆盖 94 条；国际资格确认覆盖 75 条；费用为官方总额 13、官方组件计算区间 62、官方未公布 20。以下 14 / 79 / 2 和“未写数据库”属于采集阶段快照，当前结论及最新哈希以 `USM-all-level-official-publication-audit.md` 为准。
+
 - 审计日期：2026-06-14
 - 官方当前目录：https://admission.usm.my/index.php/main/postgraduate
 - 当前官方博士标准数量：95
@@ -78,10 +82,10 @@ USM 当前招生动态目录在 `PHD/DOCTORATE` 筛选下显示 95 条记录，�
 | 文件 | SHA-256 |
 | --- | --- |
 | `phd-current-catalogue.json` | `03be7bc3fadfbb2313e6ddefbdf02457481832041724176bccdd60ad878c9372` |
-| `phd-official-source.json` | `984590ce65da53933076f532d9cb2b0add50f2f25fed1a5d118a5311af8ba617` |
-| `phd-candidate.json` | `6dee3df9b39d4ef7c4e19bc1f3e3c6f858602152bd53f5d489e41f55a1b1594d` |
-| `phd-audit.json` | `dfee790c6d9cfc0b86119d12e6446cb4c0499d674578f7549a5cdb60f2c7dd3a` |
-| `phd-delivery.json` | `fc1878ad9543fa3a645ce1c3a39cfcf63b047114f375c8118db680b4f5005008` |
+| `phd-official-source.json` | `9e889a530617c4bfb0b178f38574962e9936fbabd20320b4f6e3fa21ac53b4bc` |
+| `phd-candidate.json` | `bb52a58aede370d72c23fa09bd5c792e2cacb95ff23cb60eeea531aca91289a9` |
+| `phd-audit.json` | `96c138c1433cb75784559844d3d284b6b44228b9de7955b4b631bf0ccfcc9ae4` |
+| `phd-delivery.json` | `29392893bc65f50451470de766536e49f5836968a5ddde94b5b96582c33f4fbd` |
 
 ## 发布结论
 

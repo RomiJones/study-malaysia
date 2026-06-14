@@ -24,8 +24,8 @@ def main() -> None:
 
     if data.get("schemaVersion") != "studymy-usm-master-candidate-v1":
         errors.append("Unexpected schemaVersion.")
-    if len(records) != 274:
-        errors.append(f"Expected 274 directory records, got {len(records)}.")
+    if len(records) != 305:
+        errors.append(f"Expected 305 current catalogue records, got {len(records)}.")
     if len({item.get("code") for item in records}) != len(records):
         errors.append("Record codes are not unique.")
     if any(item.get("studyMode") == "official-title-unspecified" for item in records):
@@ -48,8 +48,17 @@ def main() -> None:
         errors.append(f"Expected all 110 current named fee rows, got {len(allocations)}.")
     if len({item.get("feeRowKey") for item in allocations}) != len(allocations):
         errors.append("Named fee row allocation keys are not unique.")
-    if len(data.get("feeOnlyOfferings", [])) != 2:
-        errors.append("Expected two official fee-only pathology offerings.")
+    if data.get("catalogueDecision", {}).get("officialDirectoryEntryCount") != 305:
+        errors.append("Current official master catalogue count must be 305.")
+    audit = data.get("audit", {})
+    if audit.get("currentOfficialCatalogueRows") != 305:
+        errors.append("Current official master catalogue audit count must be 305.")
+    if audit.get("currentOfficialUniqueUrls") != 255:
+        errors.append("Current official master catalogue must contain 255 unique URLs.")
+    if audit.get("legacyDirectoryDetailEntries") != 274:
+        errors.append("Legacy master detail entry count must be 274.")
+    if audit.get("currentDetailsAddedBeyondLegacyDirectory") != 43:
+        errors.append("Expected 43 current master detail URLs beyond the legacy directory.")
     if len(data.get("applicationDocuments", {}).get("items", [])) != 10:
         errors.append("Expected ten application-document rules.")
 
@@ -62,8 +71,8 @@ def main() -> None:
 
     if data.get("databaseWrite") != "not-performed":
         errors.append("Candidate build must not write the database.")
-    if data.get("audit", {}).get("publicationDecision") != "blocked":
-        errors.append("Publication must remain blocked until localisation and final review pass.")
+    if audit.get("publicationDecision") != "publish-ready-subset":
+        errors.append("Publication decision must allow only the audited ready subset.")
 
     unpublished_fees = sum(
         item["fee"]["status"] != "verified-current-official-fee"

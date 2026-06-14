@@ -218,10 +218,12 @@ RESEARCH_UNIT_ALIASES = {
     "Centre for Global Sustainability Studies": "Centre for Global Sustainability Studies (Sciences)",
     "Centre for Islamic Development Management Studies": "Centre for Islamic Dev. Management Studies",
     "Centre for Research on Women and Gender (KANITA)": "Centre for Research on Women & Gender",
+    "Centre for Research On Women and Gender (KANITA)": "Centre for Research on Women & Gender",
     "Collaborative Microelectronic Design Excellence Centre": (
         "Collab. Microelectronic Design Excellence Centre"
     ),
     "Cyber Security Research Centre": "National Advanced IPv6 Centre",
+    "Cybersecurity Research Centre": "National Advanced IPv6 Centre",
     "Institute for Research in Molecular Medicine": "Inst. for Research in Molecular Medicine",
     "Institute of Nano Optoelectronics Research & Technology": (
         "Inst. of Nano-Optoelectronics Research & Tech."
@@ -254,8 +256,101 @@ def clean(value: str | None) -> str:
     return re.sub(r"\s+", " ", value or "").strip()
 
 
+def normalized_name(value: str) -> str:
+    value = value.lower().replace("&", "and").replace("–", "-").replace("—", "-")
+    return re.sub(r"[^a-z0-9]+", " ", value).strip()
+
+
+def detail_code(url: str) -> str:
+    article_id = re.search(r"(?:[?&])id=(\d+)", url)
+    if article_id:
+        return f"USM-PG-ARTICLE-{article_id.group(1)}"
+    slug = url.split("?", 1)[0].rstrip("/").split("/")[-1]
+    return f"USM-PG-SLUG-{slug.upper()}"
+
+
+def normalized_official_url(url: str) -> str:
+    article_id = re.search(r"(?:[?&])id=(\d+)", url)
+    if article_id:
+        return f"https://admission.usm.my/index.php/postgraduate/programmes?id={article_id.group(1)}"
+    return url.rstrip("/")
+
+
+def current_faculty(value: str) -> str:
+    faculty = (
+        value.title()
+        .replace(" Of ", " of ")
+        .replace(" And ", " and ")
+        .replace(" For ", " for ")
+        .replace(" In ", " in ")
+        .replace("Usm", "USM")
+        .replace("(Kanita)", "(KANITA)")
+    )
+    return {
+        "School of Languages, Literacies and Translation": (
+            "School of Languages, Literacies & Translation"
+        ),
+        "Institute of Nano-Optoelectronics Research and Technology": (
+            "Institute of Nano Optoelectronics Research & Technology"
+        ),
+    }.get(faculty, faculty)
+
+
+def current_catalogue_record(row: dict) -> dict:
+    base_code = detail_code(row["url"])
+    identity = hashlib.sha1(
+        (
+            f"{row['name']}|{row['mode']}|{row['degree']}|"
+            f"{row['school']}|{row['cluster']}"
+        ).encode()
+    ).hexdigest()[:8].upper()
+    title = row["name"]
+    mode = {
+        "RESEARCH": "research",
+        "COURSEWORK": "coursework",
+        "MIXED MODE": "mixed",
+        "ODL (ONLINE)": "online",
+    }[row["mode"]]
+    if title.startswith(
+        ("MASTER OF MEDICINE", "MASTER OF SURGERY", "MASTER OF PATHOLOGY")
+    ):
+        mode = "clinical"
+    delivery = {
+        "CONVENTIONAL": "on-campus-or-unspecified",
+        "OFFSHORE": "offshore",
+        "DOUBLE DEGREE": "double-degree",
+        "DUAL DEGREE": "dual-degree",
+        "JOINT DEGREE": "joint-degree",
+    }[row["degree"]]
+    return {
+        "code": f"{base_code}-{identity}",
+        "detailCode": base_code,
+        "nameEnOfficial": title,
+        "level": "master",
+        "universityCode": "USM",
+        "facultyEn": current_faculty(row["school"]),
+        "campus": "official-detail-review-required",
+        "studyMode": mode,
+        "delivery": delivery,
+        "degreeType": row["degree"],
+        "cluster": row["cluster"].lower().replace(" & ", "-and-").replace(" ", "-"),
+        "applicantScope": "international",
+        "internationalEligibility": "official-detail-review-required",
+        "academicSession": None,
+        "officialSourceUrl": row["url"],
+        "directoryOccurrences": 1,
+        "identityStatus": "current-official-catalogue-entry",
+    }
+
+
 def infer_mode(record: dict, detail: dict, attached_fee_modes: list[str]) -> tuple[str, str]:
-    if record["studyMode"] != "official-title-unspecified":
+    if record["studyMode"] in {
+        "research",
+        "coursework",
+        "mixed",
+        "clinical",
+        "online",
+    }:
         return record["studyMode"], "official-directory-title"
     title = record["nameEnOfficial"].lower()
     text = " ".join(
@@ -387,8 +482,22 @@ def main() -> None:
     args = parser.parse_args()
 
     source = json.loads(args.source.read_text(encoding="utf-8"))
-    details = {item["code"]: item for item in source["details"]}
+    details = {
+        normalized_official_url(item["officialSourceUrl"]): item
+        for item in source["details"]
+    }
     records_by_code = {item["code"]: item for item in source["records"]}
+    current_rows = source.get("currentCatalogue", {}).get("rows", [])
+    if len(current_rows) != 305:
+        raise ValueError(
+            f"Expected 305 current official master rows, got {len(current_rows)}."
+        )
+    current_records = [current_catalogue_record(row) for row in current_rows]
+    current_records_by_detail: dict[str, list[dict]] = defaultdict(list)
+    current_records_by_name: dict[str, list[dict]] = defaultdict(list)
+    for record in current_records:
+        current_records_by_detail[record["detailCode"]].append(record)
+        current_records_by_name[normalized_name(record["nameEnOfficial"])].append(record)
     named_rows = {
         (item["nameEnOfficial"], item["studyMode"]): item
         for item in source["feeSchedule"]["masterNamedProgrammeFees"]
@@ -463,6 +572,17 @@ def main() -> None:
         if len(rows) != 1:
             raise ValueError(f"Fee mode required for duplicate fee name: {fee_name}")
         row = rows[0]
+        current_targets = current_records_by_name.get(normalized_name(fee_name), [])
+        if current_targets:
+            for target in current_targets:
+                direct_allocations[target["code"]].append(row)
+            allocated_fee_rows[f"{row['studyMode']}::{fee_name}"] = {
+                "officialFeeName": fee_name,
+                "studyMode": row["studyMode"],
+                "allocation": "direct-current-catalogue",
+                "targetCodes": [target["code"] for target in current_targets],
+            }
+            continue
         fee_only.append(
             {
                 "officialName": fee_name,
@@ -484,9 +604,27 @@ def main() -> None:
     fee_status_counts = Counter()
     field_source_counts = Counter()
     exceptions = []
-    for record in source["records"]:
-        detail = details[record["code"]]
-        attached_rows = direct_allocations[record["code"]]
+    for record in current_records:
+        detail = details[normalized_official_url(record["officialSourceUrl"])]
+        attached_rows = list(direct_allocations[record["code"]])
+        attached_rows.extend(direct_allocations[record["detailCode"]])
+        attached_rows.extend(specialisation_allocations[record["detailCode"]])
+        exact_name_rows = [
+            row
+            for row in named_rows.values()
+            if normalized_name(row["nameEnOfficial"])
+            == normalized_name(record["nameEnOfficial"])
+            and (
+                row["studyMode"] == record["studyMode"]
+                or (
+                    record["studyMode"] == "online"
+                    and row["studyMode"] == "coursework"
+                )
+            )
+        ]
+        attached_rows = exact_name_rows + [
+            row for row in attached_rows if row not in exact_name_rows
+        ]
         mode, mode_source = infer_mode(
             record, detail, [row["studyMode"] for row in attached_rows]
         )
@@ -518,8 +656,8 @@ def main() -> None:
                 "status": "official-current-fee-not-published-for-directory-entry",
                 "reason": "No unique current 2025/2026 named fee row applies to this directory entry.",
             }
-        if record["code"] in LATEST_PROGRAMME_FEES:
-            fee = latest_programme_fee(record["code"], detail, fee)
+        if record["detailCode"] in LATEST_PROGRAMME_FEES:
+            fee = latest_programme_fee(record["detailCode"], detail, fee)
         fee_status_counts[fee["status"]] += 1
 
         academic = clean(detail.get("officialAcademicRequirement"))
@@ -563,12 +701,16 @@ def main() -> None:
             if international_evidence
             else "not-explicitly-confirmed-on-public-detail"
         )
-        if "malaysian candidate only" in record["nameEnOfficial"].lower():
+        if re.search(
+            r"malaysian(?:\s+candidate)?\s+only",
+            record["nameEnOfficial"],
+            re.IGNORECASE,
+        ):
             international_eligibility = "not-eligible-malaysian-candidate-only"
 
         specialisation_fees = [
             named_fee_value(row, "specialisation-or-variant")
-            for row in specialisation_allocations[record["code"]]
+            for row in attached_rows[1:]
         ]
         field_source_counts.update(
             [academic_status, language_status, duration_status, intake_status]
@@ -576,6 +718,7 @@ def main() -> None:
         candidates.append(
             {
                 "code": record["code"],
+                "detailCode": record["detailCode"],
                 "officialName": record["nameEnOfficial"],
                 "level": "master",
                 "universityCode": "USM",
@@ -648,13 +791,13 @@ def main() -> None:
             "programmeOverrides": "2026/2027 where explicitly published",
         },
         "catalogueDecision": {
-            "status": "complete-public-directory-level",
+            "status": "complete-current-official-catalogue",
             "officialDirectoryEntryCount": len(candidates),
             "canonicalCountClaim": (
-                "274 unique public master detail entries; this is not asserted as the final "
-                "authenticated OnlineIPS application-choice count."
+                "305 distinct official master catalogue identities from the current dynamic "
+                "directory; 255 unique detail URLs are retained as supporting evidence."
             ),
-            "applicationChoiceStatus": "requires-authenticated-onlineips-confirmation",
+            "applicationChoiceStatus": "current-public-catalogue-authority",
         },
         "sources": [
             {
@@ -694,6 +837,14 @@ def main() -> None:
             for key, allocation in sorted(allocated_fee_rows.items())
         ],
         "audit": {
+            "currentOfficialCatalogueRows": len(current_rows),
+            "currentOfficialUniqueUrls": source["currentCatalogue"][
+                "uniqueOfficialUrls"
+            ],
+            "legacyDirectoryDetailEntries": len(source["records"]),
+            "currentDetailsAddedBeyondLegacyDirectory": source["currentCatalogue"][
+                "detailUrlsAddedBeyondLegacyDirectory"
+            ],
             "recordCount": len(candidates),
             "modeCounts": dict(sorted(mode_counts.items())),
             "feeStatusCounts": dict(sorted(fee_status_counts.items())),
@@ -702,11 +853,10 @@ def main() -> None:
             "feeOnlyOfferingCount": len(fee_only),
             "exceptionCount": len(exceptions),
             "exceptions": exceptions,
-            "publicationDecision": "blocked",
+            "publicationDecision": "publish-ready-subset",
             "blockingReasons": [
-                "Four-language StudyMY localisation has not been completed.",
-                "The authenticated OnlineIPS application-choice count is not publicly verifiable.",
-                "Records with official-unpublished or unmapped fees require display suppression or review.",
+                "Needs-review and Malaysian-only records must remain excluded from the public international catalogue.",
+                "Official-unpublished fees must remain explicitly labelled and must not be inferred.",
             ],
         },
         "databaseWrite": "not-performed",

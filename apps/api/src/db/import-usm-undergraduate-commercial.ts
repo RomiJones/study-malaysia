@@ -119,7 +119,7 @@ const nameZh: Record<string, [string, string]> = {
   US6321001: ["传播学荣誉学士", "傳播學榮譽學士"],
   US6344001: ["会计学荣誉学士", "會計學榮譽學士"],
   US6345001: ["管理学荣誉学士", "管理學榮譽學士"],
-  "0020": ["管理学荣誉学士（USM International，RECSAM）", "管理學榮譽學士（USM International，RECSAM）"],
+  "0020": ["管理学荣誉学士（USM 国际学院，RECSAM）", "管理學榮譽學士（USM 國際學院，RECSAM）"],
   US6521001: ["机械工程荣誉学士", "機械工程榮譽學士"],
   US6540001: ["制造工程与管理荣誉学士", "製造工程與管理榮譽學士"],
   US6522001: ["电气工程荣誉学士", "電機工程榮譽學士"],
@@ -720,7 +720,13 @@ async function main() {
         }
         await repository.save(repository.create({ ...row, id: existing?.id, universityId: university.id }));
       }
-      university.programCount = 63;
+      university.programCount = await repository.count({
+        where: {
+          universityId: university.id,
+          isPublished: true,
+          publicDisplayStatus: "ready"
+        }
+      });
       await manager.getRepository(UniversityEntity).save(university);
       verification = await verifyRows(manager, university.id);
     });

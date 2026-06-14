@@ -68,12 +68,17 @@ RESEARCH_UNIT_ALIASES = {
     "Centre For Marine And Coastal Studies": "Centre for Marine and Coastal Studies",
     "Centre for Islamic Development Management Studies": "Centre for Islamic Dev. Management Studies",
     "Centre for Research on Women and Gender (KANITA)": "Centre for Research on Women & Gender",
+    "Centre for Research On Women and Gender (KANITA)": "Centre for Research on Women & Gender",
     "Collaborative Microelectronic Design Excellence Centre": (
         "Collab. Microelectronic Design Excellence Centre"
     ),
     "Cyber Security Research Centre": "National Advanced IPv6 Centre",
+    "Cybersecurity Research Centre": "National Advanced IPv6 Centre",
     "Institute for Research in Molecular Medicine": "Inst. for Research in Molecular Medicine",
     "Institute of Nano Optoelectronics Research & Technology": (
+        "Inst. of Nano-Optoelectronics Research & Tech."
+    ),
+    "Institute of Nano-Optoelectronics Research and Technology": (
         "Inst. of Nano-Optoelectronics Research & Tech."
     ),
     "Malaysian Institute of Pharmaceuticals and Nutraceuticals": (
@@ -140,6 +145,17 @@ def utc_now() -> str:
 
 def clean(value: str | None) -> str:
     return re.sub(r"\s+", " ", value or "").strip()
+
+
+def clean_official_text(value: str | None) -> str:
+    return clean(
+        re.split(
+            r"Postgraduate Institute of Postgraduate Studies|Disclaimer|Last Update:",
+            value or "",
+            maxsplit=1,
+            flags=re.I,
+        )[0]
+    )
 
 
 def detail_code(url: str) -> str:
@@ -247,19 +263,10 @@ def infer_mode(record: dict, direct_fee: dict | None) -> tuple[str, str]:
 
 
 def duration_for(mode: str, detail: dict) -> dict:
-    raw = clean(detail.get("durationOfficial"))
+    raw = clean_official_text(detail.get("durationOfficial"))
     semester_values = [int(value) for value in re.findall(r"(\d+)\s*semesters?", raw, re.I)]
-    if mode == "research":
-        return {
-            "durationValue": {"min": 2.0, "max": 5.0},
-            "durationUnit": "year",
-            "durationOfficial": raw or "Full-time: Min 4 semesters / Max 10 semesters",
-            "fullTimeSemesters": {"min": 4, "max": 10},
-            "partTimeSemesters": {"min": 6, "max": 15},
-            "provenance": "programme-specific" if len(semester_values) >= 2 else "general-rule",
-        }
     if len(semester_values) >= 2:
-        return {
+        result = {
             "durationValue": {
                 "min": semester_values[0] / 2,
                 "max": semester_values[1] / 2,
@@ -267,6 +274,40 @@ def duration_for(mode: str, detail: dict) -> dict:
             "durationUnit": "year",
             "durationOfficial": raw,
             "provenance": "programme-specific",
+        }
+        if mode == "research":
+            result["fullTimeSemesters"] = {
+                "min": semester_values[0],
+                "max": semester_values[1],
+            }
+            if len(semester_values) >= 4:
+                result["partTimeSemesters"] = {
+                    "min": semester_values[2],
+                    "max": semester_values[3],
+                }
+        return result
+    year_values = [
+        float(value)
+        for value in re.findall(r"(\d+(?:\.\d+)?)\s*years?", raw, re.I)
+    ]
+    if len(year_values) >= 2:
+        return {
+            "durationValue": {
+                "min": year_values[0],
+                "max": year_values[1],
+            },
+            "durationUnit": "year",
+            "durationOfficial": raw,
+            "provenance": "programme-specific",
+        }
+    if mode == "research":
+        return {
+            "durationValue": {"min": 2.0, "max": 5.0},
+            "durationUnit": "year",
+            "durationOfficial": "Full-time: Min 4 semesters / Max 10 semesters",
+            "fullTimeSemesters": {"min": 4, "max": 10},
+            "partTimeSemesters": {"min": 6, "max": 15},
+            "provenance": "general-rule",
         }
     return {
         "durationValue": None,
@@ -372,13 +413,13 @@ def build_record(record: dict, detail: dict, source: dict, named_rows: dict) -> 
             "evidenceText": "",
         }
 
-    academic_text = clean(detail.get("officialAcademicRequirement")) or source[
+    academic_text = clean_official_text(detail.get("officialAcademicRequirement")) or source[
         "generalRequirements"
     ]["officialAcademicRequirement"]
-    language_text = clean(detail.get("officialLanguageRequirement")) or source[
+    language_text = clean_official_text(detail.get("officialLanguageRequirement")) or source[
         "generalRequirements"
     ]["officialLanguageRequirement"]
-    intake_text = clean(detail.get("officialIntake"))
+    intake_text = clean_official_text(detail.get("officialIntake"))
     intake = {
         "intakeMonths": [],
         "officialIntake": intake_text,
@@ -387,14 +428,15 @@ def build_record(record: dict, detail: dict, source: dict, named_rows: dict) -> 
     campus = campus_for(record)
 
     review_reasons = []
+    publication_warnings = []
     if eligibility["status"] == "not-confirmed":
         review_reasons.append("international eligibility is not explicitly confirmed")
     if duration["durationValue"] is None:
         review_reasons.append("official numeric duration is unpublished")
     if not intake_text:
-        review_reasons.append("programme-specific intake is unpublished")
+        publication_warnings.append("programme-specific intake is unpublished")
     if fee["tuitionAmount"] is None:
-        review_reasons.append("no uniquely applicable current international tuition")
+        publication_warnings.append("no uniquely applicable current international tuition")
     if detail.get("status") == "blocked":
         review_reasons.append("official detail page collection failed")
 
@@ -463,12 +505,13 @@ def build_record(record: dict, detail: dict, source: dict, named_rows: dict) -> 
         "applicationDocumentsProvenance": "general-rule",
         "careers": [],
         "careersProvenance": "official-unpublished",
-        "researchFieldsOfficialText": clean(detail.get("overviewExcerpt")),
+        "researchFieldsOfficialText": clean_official_text(detail.get("overviewExcerpt")),
         "officialSourceUrl": record["officialSourceUrl"],
         "officialVerifiedAt": source["retrievedAt"],
         "officialSourceStatus": detail.get("status", "blocked"),
         "publicDisplayStatus": public_status,
         "reviewReasons": review_reasons,
+        "publicationWarnings": publication_warnings,
         "fee": fee,
         "evidence": evidence,
         "detailSha256": detail_hash,
@@ -656,11 +699,10 @@ def main() -> None:
             "doctoralNamedFeeRows": len(named_rows),
             "coverage": coverage(records),
             "exceptionCount": len(exceptions),
-            "publicationDecision": "blocked",
+            "publicationDecision": "publish-ready-subset",
             "blockingReasons": [
-                "Collection authorization does not permit database publication.",
-                "Needs-review records must not enter the public international catalogue.",
-                "Four-language commercial localization has not been reviewed.",
+                "Needs-review and Malaysian-only records must remain excluded from the public international catalogue.",
+                "Four-language commercial localization must pass import and API/UI verification before release.",
             ],
         },
     }
@@ -681,7 +723,7 @@ def main() -> None:
             item["id"]: item.get("sha256") for item in output["sources"] if item.get("sha256")
         },
         "databaseWrite": "not-performed",
-        "publicationDecision": "blocked",
+        "publicationDecision": "publish-ready-subset",
     }
     args.audit_output.parent.mkdir(parents=True, exist_ok=True)
     args.audit_output.write_text(
@@ -692,7 +734,7 @@ def main() -> None:
         "schemaVersion": 1,
         "officialDomains": output["officialDomains"],
         "scope": audit_output["scope"],
-        "authorization": "collect",
+        "authorization": "publish-ready-subset",
         "counts": {
             "directoryOccurrences": output["audit"]["directoryOccurrences"],
             "uniqueOfficialEntries": output["audit"]["uniqueOfficialEntries"],
@@ -731,10 +773,10 @@ def main() -> None:
             "candidateBuild": "passed",
             "recordAudit": "passed" if args.verified else "pending",
             "deliveryAudit": "not-required",
-            "databaseWrite": "not-required",
-            "apiUiVerification": "not-required",
+            "databaseWrite": "pending",
+            "apiUiVerification": "pending",
         },
-        "decision": "audited-candidate-with-review-exceptions",
+        "decision": "ready-for-controlled-import-with-review-exceptions",
         "databaseWrite": "not-performed",
     }
     args.delivery_output.parent.mkdir(parents=True, exist_ok=True)

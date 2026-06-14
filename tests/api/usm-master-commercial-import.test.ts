@@ -12,17 +12,23 @@ import {
 
 const source = JSON.parse(readFileSync(DEFAULT_USM_MASTER_SOURCE_PATH, "utf8")) as MasterCommercialSource;
 
-test("USM master commercial source keeps 274 canonical rows and publishes only confirmed international programmes", () => {
+test("USM master commercial source keeps 305 canonical rows and publishes only confirmed international programmes", () => {
   assert.deepEqual(validateUsmMasterSource(source), []);
   const rows = buildUsmMasterRows(source);
   const summary = summarizeUsmMasterRows(rows);
-  assert.equal(rows.length, 274);
-  assert.equal(summary.ready, 270);
+  assert.equal(rows.length, 305);
+  assert.equal(summary.ready, 302);
   assert.equal(summary.notAvailableForInternational, 1);
-  assert.equal(summary.needsReview, 3);
-  assert.deepEqual(summary.modes, { research: 176, mixed: 40, coursework: 51, clinical: 7 });
-  assert.equal(summary.feeMatched + summary.feeNotPublished, 274);
-  assert.equal(new Set(rows.map((row) => row.slug)).size, 274);
+  assert.equal(summary.needsReview, 2);
+  assert.deepEqual(summary.modes, {
+    research: 170,
+    mixed: 51,
+    coursework: 57,
+    online: 5,
+    clinical: 22
+  });
+  assert.equal(summary.feeMatched + summary.feeNotPublished, 305);
+  assert.equal(new Set(rows.map((row) => row.slug)).size, 305);
   assert.ok(rows.every((row) => row.name && row.faculty && row.description && row.officialSourceUrl));
   const malformedLocalizedNames = rows.filter((row) => {
     const name = row.name as Record<string, string>;
@@ -37,18 +43,28 @@ test("USM master commercial source keeps 274 canonical rows and publishes only c
     return /(School|Centre|Center|Institute|University)/.test(name["zh-CN"]);
   });
   assert.deepEqual(namesContainingOrganisationSuffix.map((row) => row.name), []);
-  assert.deepEqual(rows[0].intakeMonths, ["September", "March"]);
+  const namesContainingOrdinaryEnglish = rows.filter((row) => {
+    const name = row.name as Record<string, string>;
+    const normalized = name["zh-CN"].replace(/\b(?:USM|KL|TESOL|MPA|MBA|MSc|EMPM|EMBIZ)\b/gi, "");
+    return /[A-Za-z]{3,}/.test(normalized);
+  });
+  assert.deepEqual(namesContainingOrdinaryEnglish.map((row) => row.name), []);
+  assert.ok(
+    rows.some(
+      (row) => row.intakeMonths?.includes("September") && row.intakeMonths?.includes("March")
+    )
+  );
   const invalidIelts = rows.filter((row) => {
     const ielts = Number(row.languageRequirement?.ielts || 0);
     return ielts > 0 && ielts < 4;
   });
   assert.deepEqual(invalidIelts.map((row) => ({ name: row.nameEnOfficial, ielts: row.languageRequirement?.ielts })), []);
-  const localOnly = rows.find((row) => row.nameEnOfficial?.includes("Malaysian Candidate Only"));
+  const localOnly = rows.find((row) => /Malaysian(?:\s+Candidate)?\s+Only/i.test(String(row.nameEnOfficial)));
   assert.equal(localOnly?.publicDisplayStatus, "not-available-for-international");
   assert.equal(localOnly?.isPublished, false);
   assert.equal(localOnly?.officialSourceStatus, "official-page-verified-international-not-available");
   const eligibilityReview = rows.filter((row) => row.publicDisplayStatus === "needs-review");
-  assert.equal(eligibilityReview.length, 3);
+  assert.equal(eligibilityReview.length, 2);
   assert.ok(eligibilityReview.every((row) => row.isPublished === false));
 });
 

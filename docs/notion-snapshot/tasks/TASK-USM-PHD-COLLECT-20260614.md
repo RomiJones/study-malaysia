@@ -1,5 +1,9 @@
 # 任务：USM 国际博士官方数据采集、审计与可入库候选
 
+## 2026-06-14 发布更新
+
+博士规范总数仍为 95，现已完成受控入库和公开发布门禁：72 条 `ready`、21 条 `needs-review`、2 条 `not-available-for-international`。75 条专业级 intake 未公布和 20 条唯一国际学费未公布作为公开披露警告，不再自动阻断；20 条 offshore 国际资格未确认项目及 1 条未公布数字学制的 DBA 继续隔离。以下“仅采集、不写数据库”及 14 / 79 / 2 的内容仅保留为采集阶段记录，最终结论以 `TASK-USM-ALL-LEVEL-AUDIT-20260614.md` 和 `USM-all-level-official-publication-audit.md` 为准。
+
 - **任务标识**：TASK-USM-PHD-COLLECT-20260614
 - **状态**：已完成（当前官方 95 条规范博士项目已全量覆盖）
 - **优先级**：最高
