@@ -13,6 +13,8 @@
     "verify:usm:undergraduate": "tsx src/db/import-usm-undergraduate-official.ts --verify-only",
     "publish:usm:undergraduate": "tsx src/db/import-usm-undergraduate-commercial.ts",
     "verify:usm:undergraduate:commercial": "tsx src/db/import-usm-undergraduate-commercial.ts --verify-only",
+    "publish:usm:master": "tsx src/db/import-usm-master-commercial.ts",
+    "verify:usm:master:commercial": "tsx src/db/import-usm-master-commercial.ts --verify-only",
     "extract:static": "tsx src/db/extract-static-html.ts",
     "import:static": "tsx src/db/import-static-html.ts",
     "check:static": "tsx src/db/verify-static-html.ts"

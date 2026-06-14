@@ -943,7 +943,7 @@ const zhCN = {
     favoriteProgram: "收藏专业",
     suggestedGpa: "建议 GPA",
     tuitionAndIntake: "学费与开学",
-    officialInternationalTuition: "官方国际学生总学费",
+    officialInternationalTuition: "官方国际学生学费",
     intakeTime: "开学时间",
     officialDuration: "官方学制",
     feeNote: "费用备注",

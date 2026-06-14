@@ -57,6 +57,15 @@ describe("web display format helpers", () => {
   test("uses official MYR tuition and avoids generated CNY fallback without source evidence", () => {
     assert.equal(formatProgramTuition(program({ officialTuitionMYR: 62000 })), "RM 62,000");
     assert.equal(formatProgramTuition(program({ tuitionDisplay: "CNY 45,000 / year" })), OFFICIAL_PAGE_FALLBACK);
+    assert.equal(formatProgramTuition(program({ officialFeeAuditStatus: "not-published" }), undefined, "zh-CN"), "官方未公布");
+    assert.equal(
+      formatProgramTuition(program({
+        tuitionDisplay: "USD 1,800 per semester (full-time)",
+        officialFeeAuditStatus: "matched-official",
+        officialFeeSourceUrl: "https://example.edu/fee"
+      }), undefined, "zh-CN"),
+      "USD 1,800 / 学期 (全日制)"
+    );
   });
 
   test("falls back for missing intake and language fields without undefined text", () => {
@@ -64,6 +73,10 @@ describe("web display format helpers", () => {
     assert.equal(formatProgramLanguage(program()), OFFICIAL_PAGE_FALLBACK);
     assert.equal(formatProgramLanguage(program({ officialLanguageRequirement: "IELTS (Academic) Band 6.0" })), "IELTS 6.0+");
     assert.equal(formatProgramLanguage(program({ officialLanguageRequirement: "IELTS/IELTS Online minimum Band 5.0" }), "fallback", "zh-CN"), "IELTS 5.0+");
+    assert.equal(formatProgramLanguage(program({
+      officialLanguageRequirement: "A minimum of Band 5 for IELTS",
+      languageRequirement: { ielts: 5 }
+    }), "fallback", "zh-CN"), "IELTS 5+");
   });
 
   test("shows verified official source text instead of discarding untranslated evidence", () => {
