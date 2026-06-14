@@ -23,7 +23,11 @@ const csvUrl = "https://admission.usm.my/images/data/antarbangsa.csv";
 
 export interface CommercialSource {
   universityCode: "USM";
+  officialDomains: string[];
+  level: "bachelor";
+  applicantScope: "international";
   academicSession: string;
+  retrievedAt: string;
   verifiedAt: string;
   programmeCount: number;
   sources: Array<{ title: string; url: string; sha256?: string; pages?: number; role: string }>;
@@ -529,6 +533,21 @@ function toProgramRow(programme: CommercialProgramme, verifiedAt: string): DeepP
 export function validateUsmCommercialSource(source: CommercialSource) {
   const errors: string[] = [];
   if (source.universityCode !== "USM") errors.push("Source universityCode must be USM.");
+  if (!source.officialDomains.includes("usm.my") || !source.officialDomains.includes("admission.usm.my")) {
+    errors.push("Source officialDomains must include USM and admission domains.");
+  }
+  if (source.level !== "bachelor" || source.applicantScope !== "international") {
+    errors.push("Source scope must be international bachelor.");
+  }
+  if (source.academicSession !== "2025/2026" || !source.retrievedAt || !source.verifiedAt) {
+    errors.push("Source session, retrieval date, and verification date are required.");
+  }
+  if (
+    !source.sources.some((item) => item.role === "canonical" && /^[a-f0-9]{64}$/i.test(item.sha256 || "")) ||
+    !source.sources.some((item) => item.role === "field-authority" && /^[a-f0-9]{64}$/i.test(item.sha256 || ""))
+  ) {
+    errors.push("Canonical and fee-authority sources require SHA-256 evidence.");
+  }
   if (source.programmeCount !== 63 || source.programmes.length !== 63) {
     errors.push(`Expected 63 programmes, got declared=${source.programmeCount}, actual=${source.programmes.length}.`);
   }

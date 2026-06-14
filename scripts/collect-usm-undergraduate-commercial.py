@@ -368,7 +368,13 @@ def extract_ielts(general: str) -> float:
     return float(match.group(1)) if match else 5.0
 
 
-def build_manifest(prospectus: Path, malay_brochure: Path | None = None) -> dict:
+def build_manifest(
+    prospectus: Path,
+    summary_pdf: Path,
+    fee_pdf: Path,
+    csv_file: Path,
+    malay_brochure: Path | None = None,
+) -> dict:
     with pdfplumber.open(str(prospectus)) as pdf:
         summary = extract_summary(pdf)
         requirements = extract_requirements(pdf)
@@ -445,7 +451,11 @@ def build_manifest(prospectus: Path, malay_brochure: Path | None = None) -> dict
         raise ValueError(f"Expected 63 unique programmes, got rows={len(programmes)}, unique={len(set(codes))}")
     return {
         "universityCode": "USM",
+        "officialDomains": ["usm.my", "admission.usm.my"],
+        "level": "bachelor",
+        "applicantScope": "international",
         "academicSession": "2025/2026",
+        "retrievedAt": "2026-06-13",
         "verifiedAt": "2026-06-13",
         "programmeCount": len(programmes),
         "sources": [
@@ -456,9 +466,24 @@ def build_manifest(prospectus: Path, malay_brochure: Path | None = None) -> dict
                 "pages": 73,
                 "role": "canonical",
             },
-            {"title": "USM Summary of Programme 2025/2026", "url": SUMMARY_URL, "role": "cross-check"},
-            {"title": "USM Undergraduate International Tuition Fees", "url": FEE_URL, "role": "cross-check"},
-            {"title": "USM International Undergraduate CSV", "url": CSV_URL, "role": "change-detection"},
+            {
+                "title": "USM Summary of Programme 2025/2026",
+                "url": SUMMARY_URL,
+                "sha256": sha256(summary_pdf),
+                "role": "cross-check",
+            },
+            {
+                "title": "USM Undergraduate International Tuition Fees",
+                "url": FEE_URL,
+                "sha256": sha256(fee_pdf),
+                "role": "field-authority",
+            },
+            {
+                "title": "USM International Undergraduate CSV",
+                "url": CSV_URL,
+                "sha256": sha256(csv_file),
+                "role": "change-detection",
+            },
             *(
                 [
                     {
@@ -480,10 +505,13 @@ def build_manifest(prospectus: Path, malay_brochure: Path | None = None) -> dict
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--prospectus", required=True, type=Path)
+    parser.add_argument("--summary", required=True, type=Path)
+    parser.add_argument("--fees", required=True, type=Path)
+    parser.add_argument("--csv", required=True, type=Path)
     parser.add_argument("--malay-brochure", type=Path)
     parser.add_argument("--output", required=True, type=Path)
     args = parser.parse_args()
-    manifest = build_manifest(args.prospectus, args.malay_brochure)
+    manifest = build_manifest(args.prospectus, args.summary, args.fees, args.csv, args.malay_brochure)
     args.output.parent.mkdir(parents=True, exist_ok=True)
     args.output.write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(json.dumps({"output": str(args.output), "programmeCount": manifest["programmeCount"]}, indent=2))

@@ -1,6 +1,13 @@
 {
   "universityCode": "USM",
+  "officialDomains": [
+    "usm.my",
+    "admission.usm.my"
+  ],
+  "level": "bachelor",
+  "applicantScope": "international",
   "academicSession": "2025/2026",
+  "retrievedAt": "2026-06-13",
   "verifiedAt": "2026-06-13",
   "programmeCount": 63,
   "sources": [
@@ -14,16 +21,19 @@
     {
       "title": "USM Summary of Programme 2025/2026",
       "url": "https://admission.usm.my/images/00uginternational/download_2025/SUMMARY_OF_PROGRAMME.pdf",
+      "sha256": "69e2ba522ae7074bfc1a8ff03c84d71863df22c755333c9162af0dbebb240056",
       "role": "cross-check"
     },
     {
       "title": "USM Undergraduate International Tuition Fees",
       "url": "https://admission.usm.my/images/00uginternational/fee_2025/UNDERGRADUATE_INTERNATIONAL_TUITION_FEES_PER_SEMESTER.pdf",
-      "role": "cross-check"
+      "sha256": "12f9a395911c5fc4858dc6ef7ea5ae88881867dca01ca079f8dcd4214f814404",
+      "role": "field-authority"
     },
     {
       "title": "USM International Undergraduate CSV",
       "url": "https://admission.usm.my/images/data/antarbangsa.csv",
+      "sha256": "ae455fbacf0d3dbc2c7ba01528b7f9bc1d75ad8aa678bdbde73b5dd5b6b3ef91",
       "role": "change-detection"
     },
     {

@@ -19,6 +19,11 @@ describe("USM undergraduate commercial publication", () => {
     const rows = buildUsmCommercialRows(source);
 
     assert.deepEqual(validateUsmCommercialSource(source), []);
+    assert.deepEqual(source.officialDomains, ["usm.my", "admission.usm.my"]);
+    assert.equal(source.level, "bachelor");
+    assert.equal(source.applicantScope, "international");
+    assert.equal(source.academicSession, "2025/2026");
+    assert.ok(source.sources.every((item) => /^[a-f0-9]{64}$/i.test(item.sha256 || "")));
     assert.deepEqual(summarizeUsmCommercialRows(rows), {
       rows: 63,
       uniqueCodes: 63,

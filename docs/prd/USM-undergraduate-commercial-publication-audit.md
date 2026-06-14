@@ -22,8 +22,10 @@
    - SHA-256：`5b9587640dd81105148b618d98eb6096409f4ed35c514a61b3cd5795d0308621`
    - 用途：专业目录、代码、院系、学制、入学要求、语言要求、面试、职业方向和费用的规范来源
 2. [USM Summary of Programme 2025/2026](https://admission.usm.my/images/00uginternational/download_2025/SUMMARY_OF_PROGRAMME.pdf)
+   - SHA-256：`69e2ba522ae7074bfc1a8ff03c84d71863df22c755333c9162af0dbebb240056`
    - 用途：专业数量、学期和授课语言交叉核对
 3. [USM Undergraduate International Tuition Fees](https://admission.usm.my/images/00uginternational/fee_2025/UNDERGRADUATE_INTERNATIONAL_TUITION_FEES_PER_SEMESTER.pdf)
+   - SHA-256：`12f9a395911c5fc4858dc6ef7ea5ae88881867dca01ca079f8dcd4214f814404`
    - 用途：国际本科费用交叉核对
 4. [USM 当前国际本科 CSV](https://admission.usm.my/images/data/antarbangsa.csv)
    - SHA-256：`ae455fbacf0d3dbc2c7ba01528b7f9bc1d75ad8aa678bdbde73b5dd5b6b3ef91`
@@ -52,6 +54,8 @@
 - 学费字段升级为 `DECIMAL(12,2)`，保留 `10937.50`、`2285.71` 等官方美元小数。
 - API 将 MySQL `DECIMAL` 稳定转换为数字。
 - 费用计算器按 `tuitionAmount + tuitionCurrency` 识别项目总学费，USM 不再被误算为 0 或重复乘以学制。
+- USM 公开页面以官方公布的 USD 为主币种；院校主页仅在 63 项费用全部核验且币种一致时汇总显示官方总学费区间，不显示非官方换算值。
+- 专业详情保留官方每学期学费、项目总学费、周期性费用、注册费和来源证据，避免主页汇总金额替代项目级费用口径。
 - 四语名称、院系、简介、申请摘要、材料、职业和专业方向完整；官方英文长条款以“官方来源原文”明确展示。
 
 ## 发布验证
