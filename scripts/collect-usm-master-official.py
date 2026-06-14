@@ -130,6 +130,13 @@ def stable_entry_code(url: str) -> str:
     return f"USM-PG-SLUG-{slug.upper()}"
 
 
+def normalized_official_url(url: str) -> str:
+    article_id = re.search(r"(?:[?&])id=(\d+)", url)
+    if article_id:
+        return f"https://admission.usm.my/index.php/postgraduate/programmes?id={article_id.group(1)}"
+    return url.rstrip("/")
+
+
 def normalized_fee_name(value: str) -> str:
     normalized = value.lower().replace("–", "-").replace("&", " and ")
     normalized = re.sub(r"^msc\b", "master of science", normalized)
@@ -220,12 +227,17 @@ def parse_offshore_offerings(markdown: str) -> list[dict]:
     section = markdown.split(marker, 1)[1].split("\n# Postgraduate", 1)[0]
     country = "MALAYSIA"
     school = ""
+    partner = ""
     offerings: list[dict] = []
     for raw_line in section.splitlines():
         line = clean(raw_line)
         country_match = re.search(r"###\s+([A-Z]+)", line)
         if country_match:
             country = country_match.group(1)
+            continue
+        partner_match = re.search(r"Overseas Partner:\s*(.+)$", line, re.IGNORECASE)
+        if partner_match:
+            partner = clean(re.sub(r"[*_\[\]()]|https?://\S+", " ", partner_match.group(1)))
             continue
         school_match = re.search(r"(?:\*\*)?USM:\s*([^*]+?)(?:\*\*)?$", line)
         if school_match:
@@ -243,6 +255,7 @@ def parse_offshore_offerings(markdown: str) -> list[dict]:
                 "level": classify_level(title),
                 "schoolEn": school,
                 "country": country.title(),
+                "partnerEn": partner,
                 "delivery": "offshore",
                 "officialSourceUrl": DIRECTORY_URL,
                 "identityStatus": "official-offshore-offering-pending-base-programme-link",
@@ -741,6 +754,7 @@ def build_audit(
     details: list[dict],
     fee_reconciliation: dict,
     level: str = "master",
+    expected_detail_count: int | None = None,
 ) -> dict:
     detail_statuses: dict[str, int] = {}
     missing_fields: dict[str, int] = {}
@@ -761,9 +775,10 @@ def build_audit(
             f"Expected {expected_count} unique {level} detail pages, "
             f"got {directory['uniqueSelectedDetailPages']}."
         )
-    if len(details) != directory["uniqueSelectedDetailPages"]:
+    expected_details = expected_detail_count or directory["uniqueSelectedDetailPages"]
+    if len(details) != expected_details:
         blocking_reasons.append(
-            f"Detail count mismatch: directory={directory['uniqueSelectedDetailPages']}, "
+            f"Detail count mismatch: expected={expected_details}, "
             f"details={len(details)}."
         )
     if detail_statuses.get("blocked"):
@@ -821,9 +836,57 @@ def build_manifest(args: argparse.Namespace) -> dict:
     general_requirements = parse_general_requirements(directory_markdown, args.level)
     offshore = parse_offshore_offerings(directory_markdown)
     fee_data = parse_fee_pdf(args.fee_pdf)
+    current_catalogue = None
+    detail_records = directory["records"]
+    if args.current_catalogue_json:
+        current_catalogue = json.loads(
+            args.current_catalogue_json.read_text(encoding="utf-8")
+        )
+        current_rows = current_catalogue.get("rows", [])
+        if args.level != "phd":
+            raise ValueError("--current-catalogue-json is currently supported for phd only.")
+        if len(current_rows) != 95:
+            raise ValueError(
+                f"Expected 95 current official doctoral rows, got {len(current_rows)}."
+            )
+        existing_urls = {
+            normalized_official_url(record["officialSourceUrl"])
+            for record in directory["records"]
+        }
+        additions = []
+        seen_additions = set()
+        for row in current_rows:
+            normalized_url = normalized_official_url(row["url"])
+            if normalized_url in existing_urls or normalized_url in seen_additions:
+                continue
+            seen_additions.add(normalized_url)
+            additions.append(
+                {
+                    "code": stable_entry_code(row["url"]),
+                    "nameEnOfficial": row["name"],
+                    "level": "phd",
+                    "universityCode": "USM",
+                    "facultyEn": row["school"],
+                    "campus": "official-detail-review-required",
+                    "studyMode": row["mode"].lower(),
+                    "delivery": row["degree"].lower().replace(" ", "-"),
+                    "cluster": row["cluster"].lower().replace(" ", "-"),
+                    "applicantScope": "international",
+                    "internationalEligibility": "official-detail-review-required",
+                    "academicSession": None,
+                    "officialSourceUrl": row["url"],
+                    "directoryOccurrences": 1,
+                    "identityStatus": "current-official-catalogue-entry",
+                }
+            )
+        detail_records = directory["records"] + additions
+        current_catalogue["uniqueOfficialUrls"] = len(
+            {normalized_official_url(row["url"]) for row in current_rows}
+        )
+        current_catalogue["detailUrlsAddedBeyondLegacyDirectory"] = len(additions)
     details = (
         fetch_details(
-            directory["records"],
+            detail_records,
             args.detail_cache,
             retrieved_at,
             args.workers,
@@ -846,7 +909,9 @@ def build_manifest(args: argparse.Namespace) -> dict:
         details,
         fee_reconciliation,
         args.level,
+        len(detail_records),
     )
+    current_count = len(current_catalogue["rows"]) if current_catalogue else None
     return {
         "universityCode": "USM",
         "officialDomains": ["usm.my", "admission.usm.my", "ips.usm.my"],
@@ -854,16 +919,36 @@ def build_manifest(args: argparse.Namespace) -> dict:
         "applicantScope": "international",
         "academicSession": "2025/2026",
         "retrievedAt": retrieved_at,
-        "declaredProgrammeCount": None,
-        "directoryEntryCount": directory["uniqueSelectedDetailPages"],
+        "declaredProgrammeCount": current_count,
+        "directoryEntryCount": current_count or directory["uniqueSelectedDetailPages"],
+        "legacyDirectoryEntryCount": directory["uniqueSelectedDetailPages"],
         "publicationDecision": audit["publicationDecision"],
         "sources": [
+            *(
+                [
+                    {
+                        "id": "usm-pg-current-catalogue",
+                        "title": "USM Current Postgraduate Programme Catalogue",
+                        "url": "https://admission.usm.my/index.php/main/postgraduate",
+                        "sourceType": "official-page",
+                        "role": "canonical",
+                        "retrievedAt": current_catalogue["retrievedAt"],
+                        "academicSession": None,
+                        "status": "verified",
+                        "sha256": sha256_path(args.current_catalogue_json),
+                        "localPath": str(args.current_catalogue_json),
+                        "evidenceNote": current_catalogue["filterInfo"],
+                    }
+                ]
+                if current_catalogue
+                else []
+            ),
             {
                 "id": "usm-pg-directory-current",
                 "title": "USM Postgraduate Programme Directory",
                 "url": DIRECTORY_URL,
                 "sourceType": "official-page",
-                "role": "canonical",
+                "role": "cross-check" if current_catalogue else "canonical",
                 "retrievedAt": retrieved_at,
                 "academicSession": None,
                 "status": "verified",
@@ -953,6 +1038,7 @@ def build_manifest(args: argparse.Namespace) -> dict:
             },
         ],
         "records": directory["records"],
+        "currentCatalogue": current_catalogue,
         "generalRequirements": general_requirements,
         "registrationRequirements": registration_requirements(
             args.ips_admission_html,
@@ -975,6 +1061,7 @@ def main() -> None:
     parser.add_argument("--research-mode-html", type=Path)
     parser.add_argument("--output", required=True, type=Path)
     parser.add_argument("--level", choices=("master", "phd"), default="master")
+    parser.add_argument("--current-catalogue-json", type=Path)
     parser.add_argument("--detail-cache", type=Path)
     parser.add_argument("--retrieved-at")
     parser.add_argument("--workers", type=int, default=6)

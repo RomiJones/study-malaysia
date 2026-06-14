@@ -38,6 +38,7 @@ def main() -> None:
 
     records = manifest.get("records", [])
     details = manifest.get("details", [])
+    current_catalogue = manifest.get("currentCatalogue")
     offshore = manifest.get("offshoreOfferings", [])
     fee_schedule = manifest.get("feeSchedule", {})
     audit = manifest.get("audit", {})
@@ -110,9 +111,15 @@ def main() -> None:
                 errors.append(f"Source hash mismatch for {source.get('id')}.")
 
     if details:
-        if len(details) != expected_records:
+        expected_details = (
+            manifest.get("legacyDirectoryEntryCount", expected_records)
+            + current_catalogue.get("detailUrlsAddedBeyondLegacyDirectory", 0)
+            if current_catalogue
+            else expected_records
+        )
+        if len(details) != expected_details:
             errors.append(
-                f"Expected {expected_records} detail audit rows, got {len(details)}."
+                f"Expected {expected_details} detail audit rows, got {len(details)}."
             )
         if len({detail.get("code") for detail in details}) != len(details):
             errors.append("Detail audit codes are not unique.")
@@ -135,6 +142,13 @@ def main() -> None:
         errors.append("Blocked publication decision must include blocking reasons.")
     if any("isPublished" in record for record in records):
         errors.append("Collection dry-run records must not contain isPublished.")
+    if current_catalogue:
+        if len(current_catalogue.get("rows", [])) != 95:
+            errors.append("Current doctoral catalogue must contain 95 rows.")
+        if current_catalogue.get("uniqueOfficialUrls") != 91:
+            errors.append("Current doctoral catalogue must contain 91 unique URLs.")
+        if current_catalogue.get("detailUrlsAddedBeyondLegacyDirectory") != 9:
+            errors.append("Expected nine current detail URLs beyond the legacy directory.")
 
     result = {
         "manifest": str(args.manifest),

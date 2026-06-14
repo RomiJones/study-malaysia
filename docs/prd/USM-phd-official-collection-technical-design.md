@@ -6,19 +6,21 @@
 
 ## 来源图
 
-1. USM Postgraduate Programme Directory：规范项目身份、院系、详情入口和开设类型。
-2. USM General Entry Requirements：博士通用学术和语言要求。
-3. USM Postgraduate Fees 2025/2026：研究院系国际费率和具名博士总学费。
-4. USM IPS candidature pages：研究型及 coursework/mixed 学制与注册规则。
-5. USM OnlineIPS 2026 application guide：申请材料和上传规则。
+1. USM 新版 Postgraduate Programme 动态表：当前规范项目身份、模式、学位类型、院系和精确数量。
+2. USM 旧 Postgraduate Programme Directory：细分详情、研究方向和 offshore 代码交叉验证。
+3. USM General Entry Requirements：博士通用学术和语言要求。
+4. USM Postgraduate Fees 2025/2026：研究院系国际费率和具名博士总学费。
+5. USM IPS candidature pages：研究型及 coursework/mixed 学制与注册规则。
+6. USM OnlineIPS 2026 application guide：申请材料和上传规则。
 
-USM Admission 页面受 WAF 保护时，使用只读公开渲染作为传输层；证据 URL 始终保留官方域名。2026-06-14 再次复核时，目录与费用页业务内容未变化，渲染哈希差异只来自 `Published Time` 元数据。
+USM Admission 页面受 WAF 保护时，使用只读公开渲染或浏览器动态表作为传输层；证据 URL 始终保留官方域名。新版动态表总计 400 个研究生项目，筛选 `PHD/DOCTORATE` 后为 95 条。
 
 ## 共享流水线
 
 `scripts/collect-usm-master-official.py` 保持原入口并新增 `--level master|phd`：
 
-- 统一解析 405 个研究生目录入口。
+- 统一解析旧版目录的 405 个研究生入口。
+- 读取新版 95 条博士规范目录快照。
 - 按目标层级选择记录并使用独立详情缓存。
 - 按层级解析通用要求和具名费用行。
 - 输出统一来源、详情证据、费用结构和初步审计。
@@ -27,10 +29,11 @@ USM Admission 页面受 WAF 保护时，使用只读公开渲染作为传输层�
 
 ## 身份规则
 
-- 129 个博士详情 URL 均唯一，因此形成 129 个规范项目候选。
-- 同名 `Doctor of Philosophy` 在不同院系、校区、离岸合作方或独立详情入口下保留为独立申请开设。
+- 新版动态表的 95 行是当前规范项目主表，其中 91 个唯一 URL，4 组同 URL 不同学位身份按官方表分别保留。
+- 旧目录的 129 个博士详情入口用于补充 research field 和细分证据，不直接决定规范项目数量。
 - 详情页内 research areas、expertise、topics 和 supervisors 只保留为子数据，不增加项目数。
-- offshore 20 条、joint-degree 4 条保持独立开设身份。
+- 新版主表包含 offshore 20 条、joint-degree 3 条、dual-degree 2 条。
+- 旧目录的 24 个 offshore 申请代码全部保留：19 个映射主表，5 个作为代码型 offering 待审核。
 - `Fast-Track To PhD` 只作为入学路径，不创建项目。
 
 ## 字段裁决
@@ -45,7 +48,8 @@ USM Admission 页面受 WAF 保护时，使用只读公开渲染作为传输层�
 
 ## 输出与门禁
 
-- `phd-official-source.json`：原始来源图、129 个详情证据和初步审计。
+- `phd-current-catalogue.json`：新版官方动态表的 95 条规范记录快照。
+- `phd-official-source.json`：来源图、旧目录 129 条和联合后的 138 个详情证据。
 - `phd-candidate.json`：标准化候选、费用、要求、材料、证据和状态。
 - `phd-audit.json`：覆盖率、异常和来源哈希。
 - `phd-delivery.json`：一次交付范围、三类计数、状态分区、验证与决策。

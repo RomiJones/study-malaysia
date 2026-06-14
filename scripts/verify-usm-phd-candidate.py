@@ -30,15 +30,27 @@ def main() -> None:
         errors.append("Unexpected schemaVersion.")
     if data.get("level") != "phd" or data.get("universityCode") != "USM":
         errors.append("Manifest scope must be USM phd.")
-    if len(records) != 129:
-        errors.append(f"Expected 129 canonical doctoral records, got {len(records)}.")
+    if len(records) != 95:
+        errors.append(f"Expected 95 current canonical doctoral records, got {len(records)}.")
     if len({row.get("code") for row in records}) != len(records):
         errors.append("Record codes are not unique.")
-    if len({row.get("officialSourceUrl") for row in records}) != len(records):
-        errors.append("Official source URLs are not unique.")
+    official_identities = {
+        (
+            row.get("officialSourceUrl"),
+            row.get("degreeType"),
+            row.get("nameEnOfficial"),
+            row.get("facultyEn"),
+        )
+        for row in records
+    }
+    if len(official_identities) != len(records):
+        errors.append("Official URL/application-code identities are not unique.")
     if any(row.get("level") != "phd" for row in records):
         errors.append("A non-doctoral record is present.")
-    if any(row.get("studyMode") not in {"research", "mixed", "coursework"} for row in records):
+    if any(
+        row.get("studyMode") not in {"research", "mixed", "coursework", "online"}
+        for row in records
+    ):
         errors.append("An unresolved study mode remains.")
     if any(not row.get("officialAcademicRequirement") for row in records):
         errors.append("An academic requirement is missing.")
@@ -47,24 +59,38 @@ def main() -> None:
     if any(not row.get("applicationDocuments") for row in records):
         errors.append("Application documents are missing.")
     if any(not row.get("detailSha256") for row in records):
-        errors.append("Detail evidence hash is missing.")
-    if sum(row["publicDisplayStatus"] == "not-available-for-international" for row in records) != 1:
-        errors.append("Expected exactly one Malaysian-only doctoral record.")
+        errors.append("Evidence hash is missing.")
+    if sum(row["publicDisplayStatus"] == "not-available-for-international" for row in records) != 2:
+        errors.append("Expected exactly two Malaysian-only doctoral records.")
 
     audit = data.get("audit", {})
-    if audit.get("directoryOccurrences") != 129:
-        errors.append("Doctoral directory occurrence count must be 129.")
-    if audit.get("uniqueOfficialEntries") != 129:
-        errors.append("Unique doctoral official entry count must be 129.")
-    if audit.get("canonicalProgrammes") != 129:
-        errors.append("Canonical doctoral programme count must be 129.")
+    if audit.get("currentOfficialCatalogueRows") != 95:
+        errors.append("Current official doctoral catalogue count must be 95.")
+    if audit.get("currentOfficialUniqueUrls") != 91:
+        errors.append("Current official doctoral URL count must be 91.")
+    if audit.get("legacyDirectoryDetailOccurrences") != 129:
+        errors.append("Legacy doctoral detail occurrence count must be 129.")
+    if audit.get("offshoreApplicationCodeOccurrences") != 24:
+        errors.append("Doctoral offshore application-code count must be 24.")
+    if audit.get("directoryOccurrences") != 95:
+        errors.append("Canonical doctoral directory occurrence count must be 95.")
+    if audit.get("uniqueOfficialEntries") != 95:
+        errors.append("Unique doctoral official entry count must be 95.")
+    if audit.get("canonicalProgrammes") != 95:
+        errors.append("Canonical doctoral programme count must be 95.")
+    if audit.get("currentDetailsAddedBeyondLegacyDirectory") != 9:
+        errors.append("Expected nine current detail URLs beyond the legacy directory.")
+    if audit.get("applicationCodeOnlyOfferings") != 5:
+        errors.append("Expected five application-code-only doctoral offerings.")
+    if audit.get("offshoreApplicationCodesReconciled") != 24:
+        errors.append("All 24 offshore application codes must be reconciled.")
     if audit.get("doctoralNamedFeeRows") != 13:
         errors.append("All 13 named doctoral fee rows must be accounted for.")
-    if sum(audit.get("statusCounts", {}).values()) != 129:
-        errors.append("Status partition does not sum to 129.")
+    if sum(audit.get("statusCounts", {}).values()) != 95:
+        errors.append("Status partition does not sum to 95.")
     for key, value in audit.get("coverage", {}).items():
-        if value.get("covered", 0) + value.get("unpublished", 0) + value.get("review", 0) != 129:
-            errors.append(f"Coverage partition for {key} does not sum to 129.")
+        if value.get("covered", 0) + value.get("unpublished", 0) + value.get("review", 0) != 95:
+            errors.append(f"Coverage partition for {key} does not sum to 95.")
 
     for source in data.get("sources", []):
         if urlparse(source.get("url", "")).hostname not in ALLOWED_DOMAINS:

@@ -107,6 +107,28 @@ DIRECT_FEE_TARGETS = {
     "USM-PG-ARTICLE-566": "Doctor of Psychology (Clinical Psychology) - Joint Degree",
 }
 
+# Official offshore application codes already represented by a distinct detail page.
+OFFSHORE_DETAIL_TARGETS = {
+    "R14": "USM-PG-ARTICLE-1493",
+    "R17": "USM-PG-ARTICLE-1516",
+    "R15": "USM-PG-ARTICLE-1494",
+    "R29": "USM-PG-ARTICLE-1474",
+    "R40": "USM-PG-ARTICLE-1479",
+    "R92": "USM-PG-ARTICLE-1482",
+    "R28": "USM-PG-ARTICLE-1501",
+    "R34": "USM-PG-ARTICLE-1506",
+    "R88": "USM-PG-ARTICLE-1508",
+    "R37": "USM-PG-ARTICLE-1503",
+    "R41": "USM-PG-ARTICLE-1515",
+    "R35": "USM-PG-ARTICLE-1519",
+    "R36": "USM-PG-ARTICLE-1492",
+    "R93": "USM-PG-ARTICLE-1491",
+    "R30": "USM-PG-ARTICLE-1490",
+    "R90": "USM-PG-ARTICLE-1487",
+    "R59": "USM-PG-ARTICLE-1486",
+    "R87": "USM-PG-ARTICLE-1476",
+    "R95": "USM-PG-ARTICLE-1475",
+}
 
 def sha256(path: Path) -> str:
     return hashlib.sha256(path.read_bytes()).hexdigest()
@@ -120,10 +142,79 @@ def clean(value: str | None) -> str:
     return re.sub(r"\s+", " ", value or "").strip()
 
 
+def detail_code(url: str) -> str:
+    article_id = re.search(r"(?:[?&])id=(\d+)", url)
+    if article_id:
+        return f"USM-PG-ARTICLE-{article_id.group(1)}"
+    slug = url.split("?", 1)[0].rstrip("/").split("/")[-1]
+    return f"USM-PG-SLUG-{slug.upper()}"
+
+
+def normalized_official_url(url: str) -> str:
+    article_id = re.search(r"(?:[?&])id=(\d+)", url)
+    if article_id:
+        return f"https://admission.usm.my/index.php/postgraduate/programmes?id={article_id.group(1)}"
+    return url.rstrip("/")
+
+
+def current_catalogue_record(row: dict) -> dict:
+    base_code = detail_code(row["url"])
+    identity = hashlib.sha1(
+        f"{row['name']}|{row['degree']}|{row['school']}|{row['cluster']}".encode()
+    ).hexdigest()[:8].upper()
+    mode = {
+        "RESEARCH": "research",
+        "COURSEWORK": "coursework",
+        "MIXED MODE": "mixed",
+        "ODL (ONLINE)": "online",
+    }[row["mode"]]
+    delivery = {
+        "CONVENTIONAL": "on-campus-or-unspecified",
+        "OFFSHORE": "offshore",
+        "JOINT DEGREE": "joint-degree",
+        "DUAL DEGREE": "dual-degree",
+        "DOUBLE DEGREE": "double-degree",
+    }[row["degree"]]
+    faculty = (
+        row["school"]
+        .title()
+        .replace(" Of ", " of ")
+        .replace(" And ", " and ")
+        .replace(" For ", " for ")
+        .replace(" In ", " in ")
+        .replace("Usm", "USM")
+        .replace("(Kanita)", "(KANITA)")
+    )
+    return {
+        "code": f"{base_code}-{identity}",
+        "detailCode": base_code,
+        "nameEnOfficial": row["name"],
+        "level": "phd",
+        "universityCode": "USM",
+        "facultyEn": faculty,
+        "campus": "official-detail-review-required",
+        "studyMode": mode,
+        "delivery": delivery,
+        "degreeType": row["degree"],
+        "cluster": row["cluster"].lower().replace(" ", "-"),
+        "applicantScope": "international",
+        "internationalEligibility": "official-detail-review-required",
+        "academicSession": None,
+        "officialSourceUrl": row["url"],
+        "directoryOccurrences": 1,
+        "identityStatus": "current-official-catalogue-entry",
+    }
+
+
 def campus_for(record: dict) -> dict:
     title = record["nameEnOfficial"].lower()
     faculty = record["facultyEn"]
     if record["delivery"] == "offshore":
+        if record.get("offshorePartnerEn"):
+            return {
+                "name": f"{record['offshorePartnerEn']}, {record['offshoreCountry']}",
+                "provenance": "programme-specific",
+            }
         for place in ("Istanbul", "Qinhuangdao", "YangTze", "Minjiang", "Indonesia"):
             if place.lower() in title:
                 return {"name": place, "provenance": "programme-specific"}
@@ -144,8 +235,12 @@ def campus_for(record: dict) -> dict:
 
 def infer_mode(record: dict, direct_fee: dict | None) -> tuple[str, str]:
     title = record["nameEnOfficial"].lower()
+    if record["studyMode"] in {"research", "coursework", "mixed", "online"}:
+        return record["studyMode"], "programme-specific"
     if direct_fee:
         return direct_fee["studyMode"], "programme-specific"
+    if "doctor of business administration" in title:
+        return "mixed", "general-rule"
     if "coursework" in title:
         return "coursework", "programme-specific"
     return "research", "programme-specific" if "research" in title else "general-rule"
@@ -206,7 +301,7 @@ def fee_for(record: dict, mode: str, fee_schedule: dict) -> dict:
     named_rows = {
         row["nameEnOfficial"]: row for row in fee_schedule["doctoralNamedProgrammeFees"]
     }
-    direct_name = DIRECT_FEE_TARGETS.get(record["code"])
+    direct_name = DIRECT_FEE_TARGETS.get(record.get("detailCode", record["code"]))
     if direct_name:
         row = named_rows[direct_name]
         return {
@@ -249,7 +344,9 @@ def fee_for(record: dict, mode: str, fee_schedule: dict) -> dict:
 
 
 def build_record(record: dict, detail: dict, source: dict, named_rows: dict) -> dict:
-    direct_fee = named_rows.get(DIRECT_FEE_TARGETS.get(record["code"], ""))
+    direct_fee = named_rows.get(
+        DIRECT_FEE_TARGETS.get(record.get("detailCode", record["code"]), "")
+    )
     mode, mode_provenance = infer_mode(record, direct_fee)
     duration = duration_for(mode, detail)
     fee = fee_for(record, mode, source["feeSchedule"])
@@ -331,6 +428,7 @@ def build_record(record: dict, detail: dict, source: dict, named_rows: dict) -> 
     return {
         "code": record["code"].replace("USM-PG-", "USM-PHD-"),
         "sourceCode": record["code"],
+        "detailCode": record.get("detailCode", record["code"]),
         "nameEnOfficial": title,
         "level": "phd",
         "universityCode": "USM",
@@ -340,6 +438,10 @@ def build_record(record: dict, detail: dict, source: dict, named_rows: dict) -> 
         "studyMode": mode,
         "studyModeProvenance": mode_provenance,
         "delivery": record["delivery"],
+        "degreeType": record.get("degreeType"),
+        "applicationCode": record.get("applicationCode"),
+        "offshoreCountry": record.get("offshoreCountry"),
+        "offshorePartnerEn": record.get("offshorePartnerEn"),
         "applicantScope": "international",
         "internationalEligibility": eligibility,
         "academicSession": "current-directory-and-2025/2026-fees",
@@ -377,7 +479,8 @@ def coverage(records: list[dict]) -> dict:
     checks = {
         "identity": lambda row: bool(row["nameEnOfficial"] and row["officialSourceUrl"]),
         "faculty": lambda row: bool(row["facultyEn"]),
-        "studyMode": lambda row: row["studyMode"] in {"research", "mixed", "coursework"},
+        "studyMode": lambda row: row["studyMode"]
+        in {"research", "mixed", "coursework", "online"},
         "campus": lambda row: bool(row["campus"]),
         "duration": lambda row: row["durationValue"] is not None,
         "intake": lambda row: bool(row["officialIntake"]),
@@ -416,15 +519,61 @@ def main() -> None:
     args = parser.parse_args()
 
     source = json.loads(args.source.read_text(encoding="utf-8"))
-    details = {item["code"]: item for item in source["details"]}
+    details = {
+        normalized_official_url(item["officialSourceUrl"]): item
+        for item in source["details"]
+    }
     named_rows = {
         row["nameEnOfficial"]: row
         for row in source["feeSchedule"]["doctoralNamedProgrammeFees"]
     }
+    current_rows = source.get("currentCatalogue", {}).get("rows", [])
+    if len(current_rows) != 95:
+        raise ValueError(f"Expected 95 current official doctoral rows, got {len(current_rows)}.")
+    current_records = [current_catalogue_record(row) for row in current_rows]
     records = [
-        build_record(record, details.get(record["code"], {}), source, named_rows)
-        for record in source["records"]
+        build_record(
+            record,
+            details.get(normalized_official_url(record["officialSourceUrl"]), {}),
+            source,
+            named_rows,
+        )
+        for record in current_records
     ]
+    offshore_offerings = [
+        item for item in source["offshoreOfferings"] if item["level"] == "phd"
+    ]
+    offshore_codes = {item["code"] for item in offshore_offerings}
+    if offshore_codes != set(OFFSHORE_DETAIL_TARGETS) | {
+        "C006",
+        "R16",
+        "R31",
+        "R39",
+        "R94",
+    }:
+        raise ValueError("Doctoral offshore application-code set changed; review mapping.")
+    current_detail_codes = {record["detailCode"] for record in current_records}
+    missing_targets = set(OFFSHORE_DETAIL_TARGETS.values()) - current_detail_codes
+    if missing_targets:
+        raise ValueError(f"Offshore detail targets are missing: {sorted(missing_targets)}")
+    target_records = {}
+    for record in records:
+        target_records.setdefault(record["detailCode"], record)
+    offshore_application_offerings = []
+    for offering in offshore_offerings:
+        target_detail_code = OFFSHORE_DETAIL_TARGETS.get(offering["code"])
+        target = target_records.get(target_detail_code)
+        offshore_application_offerings.append(
+            {
+                **offering,
+                "canonicalProgrammeCode": target["code"] if target else None,
+                "mappingStatus": (
+                    "mapped-to-current-catalogue"
+                    if target
+                    else "application-code-only-needs-review"
+                ),
+            }
+        )
     status_counts = Counter(row["publicDisplayStatus"] for row in records)
     fee_counts = Counter(row["fee"]["status"] for row in records)
     exceptions = [
@@ -478,12 +627,28 @@ def main() -> None:
             "provenance": "general-rule",
             "officialSourceUrl": APPLICATION_GUIDE_URL,
         },
+        "offshoreApplicationOfferings": offshore_application_offerings,
+        "legacyDetailedOfferings": source["records"],
         "records": records,
         "exceptions": exceptions,
         "audit": {
-            "directoryOccurrences": source["audit"]["directory"]["doctorOccurrences"],
-            "uniqueOfficialEntries": source["directoryEntryCount"],
+            "currentOfficialCatalogueRows": len(current_rows),
+            "currentOfficialUniqueUrls": source["currentCatalogue"]["uniqueOfficialUrls"],
+            "legacyDirectoryDetailOccurrences": source["audit"]["directory"][
+                "doctorOccurrences"
+            ],
+            "offshoreApplicationCodeOccurrences": len(offshore_offerings),
+            "directoryOccurrences": len(current_rows),
+            "uniqueOfficialEntries": len(records),
             "canonicalProgrammes": len(records),
+            "currentDetailsAddedBeyondLegacyDirectory": source["currentCatalogue"][
+                "detailUrlsAddedBeyondLegacyDirectory"
+            ],
+            "applicationCodeOnlyOfferings": sum(
+                item["canonicalProgrammeCode"] is None
+                for item in offshore_application_offerings
+            ),
+            "offshoreApplicationCodesReconciled": len(offshore_offerings),
             "statusCounts": dict(status_counts),
             "modeCounts": dict(Counter(row["studyMode"] for row in records)),
             "deliveryCounts": dict(Counter(row["delivery"] for row in records)),

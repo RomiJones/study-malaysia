@@ -1,0 +1,862 @@
+{
+  "retrievedAt": "2026-06-14T14:58:27.756Z",
+  "sourceUrl": "https://admission.usm.my/index.php/main/postgraduate",
+  "filterInfo": "Showing 1 to 95 of 95 entries (filtered from 400 total entries)",
+  "rows": [
+    {
+      "cluster": "ARTS",
+      "degree": "CONVENTIONAL",
+      "level": "PHD/DOCTORATE",
+      "mode": "MIXED MODE",
+      "name": "DOCTOR OF BUSINESS ADMINISTRATION (DBA)",
+      "school": "GRADUATE SCHOOL OF BUSINESS",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=340&catid=53"
+    },
+    {
+      "cluster": "ARTS",
+      "degree": "CONVENTIONAL",
+      "level": "PHD/DOCTORATE",
+      "mode": "ODL (ONLINE)",
+      "name": "DOCTOR OF BUSINESS ADMINISTRATION (E-DBA)",
+      "school": "GRADUATE SCHOOL OF BUSINESS",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=336&catid=53"
+    },
+    {
+      "cluster": "ARTS",
+      "degree": "CONVENTIONAL",
+      "level": "PHD/DOCTORATE",
+      "mode": "COURSEWORK",
+      "name": "DOCTOR OF EDUCATION IN CURRICULUM & INSTRUCTION *MALAYSIAN CANDIDATE ONLY",
+      "school": "SCHOOL OF EDUCATIONAL STUDIES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=348&catid=53"
+    },
+    {
+      "cluster": "ARTS",
+      "degree": "CONVENTIONAL",
+      "level": "PHD/DOCTORATE",
+      "mode": "COURSEWORK",
+      "name": "DOCTOR OF EDUCATION IN EDUCATIONAL TECHNOLOGY & MULTIMEDIA",
+      "school": "SCHOOL OF EDUCATIONAL STUDIES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=347&catid=53"
+    },
+    {
+      "cluster": "ARTS",
+      "degree": "CONVENTIONAL",
+      "level": "PHD/DOCTORATE",
+      "mode": "COURSEWORK",
+      "name": "DOCTOR OF EDUCATION IN SCIENCE EDUCATION",
+      "school": "SCHOOL OF EDUCATIONAL STUDIES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=346&catid=53"
+    },
+    {
+      "cluster": "ARTS",
+      "degree": "CONVENTIONAL",
+      "level": "PHD/DOCTORATE",
+      "mode": "COURSEWORK",
+      "name": "DOCTOR OF EDUCATION IN TESOL - MALAYSIAN CANDIDATE ONLY",
+      "school": "SCHOOL OF EDUCATIONAL STUDIES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=349&catid=53"
+    },
+    {
+      "cluster": "MEDICAL & HEALTH SCIENCES",
+      "degree": "CONVENTIONAL",
+      "level": "PHD/DOCTORATE",
+      "mode": "MIXED MODE",
+      "name": "DOCTOR OF NEUROSCIENCE",
+      "school": "SCHOOL OF MEDICAL SCIENCES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=413&catid=55"
+    },
+    {
+      "cluster": "ENGINEERING & TECHNOLOGY",
+      "degree": "CONVENTIONAL",
+      "level": "PHD/DOCTORATE",
+      "mode": "RESEARCH",
+      "name": "DOCTOR OF PHILOSOPHY (ARCHITECTURE)",
+      "school": "SCHOOL OF HOUSING, BUILDING AND PLANNING",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=202&catid=51"
+    },
+    {
+      "cluster": "MEDICAL & HEALTH SCIENCES",
+      "degree": "CONVENTIONAL",
+      "level": "PHD/DOCTORATE",
+      "mode": "RESEARCH",
+      "name": "DOCTOR OF PHILOSOPHY (BIOMEDICINE)",
+      "school": "SCHOOL OF HEALTH SCIENCES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=557&catid=55"
+    },
+    {
+      "cluster": "ENGINEERING & TECHNOLOGY",
+      "degree": "CONVENTIONAL",
+      "level": "PHD/DOCTORATE",
+      "mode": "RESEARCH",
+      "name": "DOCTOR OF PHILOSOPHY (BUILDING SURVEYING)",
+      "school": "SCHOOL OF HOUSING, BUILDING AND PLANNING",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=246&catid=51"
+    },
+    {
+      "cluster": "ENGINEERING & TECHNOLOGY",
+      "degree": "CONVENTIONAL",
+      "level": "PHD/DOCTORATE",
+      "mode": "RESEARCH",
+      "name": "DOCTOR OF PHILOSOPHY (BUILDING TECHNOLOGY)",
+      "school": "SCHOOL OF HOUSING, BUILDING AND PLANNING",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=200&catid=51"
+    },
+    {
+      "cluster": "PURE SCIENCES",
+      "degree": "DUAL DEGREE",
+      "level": "PHD/DOCTORATE",
+      "mode": "RESEARCH",
+      "name": "DOCTOR OF PHILOSOPHY (DUAL PHD KEELE UNIVERSITY,UK)",
+      "school": "SCHOOL OF BIOLOGICAL SCIENCES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=167&catid=50"
+    },
+    {
+      "cluster": "PURE SCIENCES",
+      "degree": "DUAL DEGREE",
+      "level": "PHD/DOCTORATE",
+      "mode": "RESEARCH",
+      "name": "DOCTOR OF PHILOSOPHY (DUAL PHD NATIONAL TSING HUA UNIVERSITY,TAIWAN)",
+      "school": "SCHOOL OF CHEMICAL SCIENCES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=153&catid=50"
+    },
+    {
+      "cluster": "ENGINEERING & TECHNOLOGY",
+      "degree": "CONVENTIONAL",
+      "level": "PHD/DOCTORATE",
+      "mode": "RESEARCH",
+      "name": "DOCTOR OF PHILOSOPHY (ENGINEERING CAMPUS)",
+      "school": "RIVER ENGINEERING AND URBAN DRAINAGE RESEARCH CENTRE",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=390&catid=54"
+    },
+    {
+      "cluster": "ENGINEERING & TECHNOLOGY",
+      "degree": "CONVENTIONAL",
+      "level": "PHD/DOCTORATE",
+      "mode": "RESEARCH",
+      "name": "DOCTOR OF PHILOSOPHY (ENGINEERING CAMPUS)",
+      "school": "SCHOOL OF AEROSPACE ENGINEERING",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=392&catid=54"
+    },
+    {
+      "cluster": "ENGINEERING & TECHNOLOGY",
+      "degree": "CONVENTIONAL",
+      "level": "PHD/DOCTORATE",
+      "mode": "RESEARCH",
+      "name": "DOCTOR OF PHILOSOPHY (ENGINEERING CAMPUS)",
+      "school": "SCHOOL OF CHEMICAL ENGINEERING",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=395&catid=54"
+    },
+    {
+      "cluster": "ENGINEERING & TECHNOLOGY",
+      "degree": "CONVENTIONAL",
+      "level": "PHD/DOCTORATE",
+      "mode": "RESEARCH",
+      "name": "DOCTOR OF PHILOSOPHY (ENGINEERING CAMPUS)",
+      "school": "SCHOOL OF CIVIL ENGINEERING",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=402&catid=54"
+    },
+    {
+      "cluster": "ENGINEERING & TECHNOLOGY",
+      "degree": "CONVENTIONAL",
+      "level": "PHD/DOCTORATE",
+      "mode": "RESEARCH",
+      "name": "DOCTOR OF PHILOSOPHY (ENGINEERING CAMPUS)",
+      "school": "SCHOOL OF ELECTRICAL AND ELECTRONIC ENGINEERING",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=403&catid=54"
+    },
+    {
+      "cluster": "ENGINEERING & TECHNOLOGY",
+      "degree": "CONVENTIONAL",
+      "level": "PHD/DOCTORATE",
+      "mode": "RESEARCH",
+      "name": "DOCTOR OF PHILOSOPHY (ENGINEERING CAMPUS)",
+      "school": "SCHOOL OF MATERIALS AND MINERAL RESOURCES ENGINEERING",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=407&catid=54"
+    },
+    {
+      "cluster": "ENGINEERING & TECHNOLOGY",
+      "degree": "CONVENTIONAL",
+      "level": "PHD/DOCTORATE",
+      "mode": "RESEARCH",
+      "name": "DOCTOR OF PHILOSOPHY (ENGINEERING CAMPUS)",
+      "school": "SCHOOL OF MECHANICAL ENGINEERING",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=404&catid=54"
+    },
+    {
+      "cluster": "MEDICAL & HEALTH SCIENCES",
+      "degree": "CONVENTIONAL",
+      "level": "PHD/DOCTORATE",
+      "mode": "RESEARCH",
+      "name": "DOCTOR OF PHILOSOPHY (FORENSIC SCIENCE)",
+      "school": "SCHOOL OF HEALTH SCIENCES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=558&catid=55"
+    },
+    {
+      "cluster": "MEDICAL & HEALTH SCIENCES",
+      "degree": "CONVENTIONAL",
+      "level": "PHD/DOCTORATE",
+      "mode": "RESEARCH",
+      "name": "DOCTOR OF PHILOSOPHY (HEALTH CAMPUS)",
+      "school": "SCHOOL OF DENTAL SCIENCES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=555&catid=55"
+    },
+    {
+      "cluster": "MEDICAL & HEALTH SCIENCES",
+      "degree": "CONVENTIONAL",
+      "level": "PHD/DOCTORATE",
+      "mode": "RESEARCH",
+      "name": "DOCTOR OF PHILOSOPHY (HEALTH CAMPUS)",
+      "school": "SCHOOL OF MEDICAL SCIENCES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=807&catid=55"
+    },
+    {
+      "cluster": "ENGINEERING & TECHNOLOGY",
+      "degree": "CONVENTIONAL",
+      "level": "PHD/DOCTORATE",
+      "mode": "RESEARCH",
+      "name": "DOCTOR OF PHILOSOPHY (HOUSING)",
+      "school": "SCHOOL OF HOUSING, BUILDING AND PLANNING",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=233&catid=51"
+    },
+    {
+      "cluster": "ENGINEERING & TECHNOLOGY",
+      "degree": "CONVENTIONAL",
+      "level": "PHD/DOCTORATE",
+      "mode": "RESEARCH",
+      "name": "DOCTOR OF PHILOSOPHY (INTERIOR DESIGN)",
+      "school": "SCHOOL OF HOUSING, BUILDING AND PLANNING",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=234&catid=51"
+    },
+    {
+      "cluster": "MEDICAL & HEALTH SCIENCES",
+      "degree": "JOINT DEGREE",
+      "level": "PHD/DOCTORATE",
+      "mode": "RESEARCH",
+      "name": "DOCTOR OF PHILOSOPHY (JOINT PHD NEW CASTLE UNIVERSITY, UNITED KINGDOM)",
+      "school": "PUSAT KANSER TUN ABDULLAH AHMAD BADAWI",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=888&catid=55"
+    },
+    {
+      "cluster": "PURE SCIENCES",
+      "degree": "CONVENTIONAL",
+      "level": "PHD/DOCTORATE",
+      "mode": "RESEARCH",
+      "name": "DOCTOR OF PHILOSOPHY (MAIN CAMPUS)",
+      "school": "ANALYTICAL BIOCHEMISTRY RESEARCH CENTRE",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=244&catid=51"
+    },
+    {
+      "cluster": "PURE SCIENCES",
+      "degree": "CONVENTIONAL",
+      "level": "PHD/DOCTORATE",
+      "mode": "RESEARCH",
+      "name": "DOCTOR OF PHILOSOPHY (MAIN CAMPUS)",
+      "school": "CENTRE FOR CHEMICAL BIOLOGY",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=169&catid=50"
+    },
+    {
+      "cluster": "MEDICAL & HEALTH SCIENCES",
+      "degree": "CONVENTIONAL",
+      "level": "PHD/DOCTORATE",
+      "mode": "RESEARCH",
+      "name": "DOCTOR OF PHILOSOPHY (MAIN CAMPUS)",
+      "school": "CENTRE FOR DRUG RESEARCH",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=217&catid=51"
+    },
+    {
+      "cluster": "ARTS",
+      "degree": "CONVENTIONAL",
+      "level": "PHD/DOCTORATE",
+      "mode": "RESEARCH",
+      "name": "DOCTOR OF PHILOSOPHY (MAIN CAMPUS)",
+      "school": "CENTRE FOR GLOBAL ARCHAEOLOGICAL RESEARCH",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=333&catid=52"
+    },
+    {
+      "cluster": "ARTS",
+      "degree": "CONVENTIONAL",
+      "level": "PHD/DOCTORATE",
+      "mode": "RESEARCH",
+      "name": "DOCTOR OF PHILOSOPHY (MAIN CAMPUS)",
+      "school": "CENTRE FOR INSTRUCTIONAL TECHNOLOGY AND MULTIMEDIA",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=372&catid=53"
+    },
+    {
+      "cluster": "ARTS",
+      "degree": "CONVENTIONAL",
+      "level": "PHD/DOCTORATE",
+      "mode": "RESEARCH",
+      "name": "DOCTOR OF PHILOSOPHY (MAIN CAMPUS)",
+      "school": "CENTRE FOR ISLAMIC DEVELOPMENT MANAGEMENT STUDIES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=273&catid=52"
+    },
+    {
+      "cluster": "ENGINEERING & TECHNOLOGY",
+      "degree": "CONVENTIONAL",
+      "level": "PHD/DOCTORATE",
+      "mode": "RESEARCH",
+      "name": "DOCTOR OF PHILOSOPHY (MAIN CAMPUS)",
+      "school": "CENTRE FOR MARINE AND COASTAL STUDIES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=170&catid=50"
+    },
+    {
+      "cluster": "ARTS",
+      "degree": "CONVENTIONAL",
+      "level": "PHD/DOCTORATE",
+      "mode": "RESEARCH",
+      "name": "DOCTOR OF PHILOSOPHY (MAIN CAMPUS)",
+      "school": "CENTRE FOR POLICY RESEARCH",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=271&catid=52"
+    },
+    {
+      "cluster": "ARTS",
+      "degree": "CONVENTIONAL",
+      "level": "PHD/DOCTORATE",
+      "mode": "RESEARCH",
+      "name": "DOCTOR OF PHILOSOPHY (MAIN CAMPUS)",
+      "school": "CENTRE FOR RESEARCH ON WOMEN AND GENDER (KANITA)",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=809&catid=53"
+    },
+    {
+      "cluster": "ENGINEERING & TECHNOLOGY",
+      "degree": "CONVENTIONAL",
+      "level": "PHD/DOCTORATE",
+      "mode": "RESEARCH",
+      "name": "DOCTOR OF PHILOSOPHY (MAIN CAMPUS)",
+      "school": "COLLABORATIVE MICROELECTRONIC DESIGN EXCELLENCE CENTRE",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=388&catid=54"
+    },
+    {
+      "cluster": "ENGINEERING & TECHNOLOGY",
+      "degree": "CONVENTIONAL",
+      "level": "PHD/DOCTORATE",
+      "mode": "RESEARCH",
+      "name": "DOCTOR OF PHILOSOPHY (MAIN CAMPUS)",
+      "school": "CYBERSECURITY RESEARCH CENTRE",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=219&catid=51"
+    },
+    {
+      "cluster": "ARTS",
+      "degree": "CONVENTIONAL",
+      "level": "PHD/DOCTORATE",
+      "mode": "RESEARCH",
+      "name": "DOCTOR OF PHILOSOPHY (MAIN CAMPUS)",
+      "school": "GRADUATE SCHOOL OF BUSINESS",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=338&catid=53"
+    },
+    {
+      "cluster": "MEDICAL & HEALTH SCIENCES",
+      "degree": "CONVENTIONAL",
+      "level": "PHD/DOCTORATE",
+      "mode": "RESEARCH",
+      "name": "DOCTOR OF PHILOSOPHY (MAIN CAMPUS)",
+      "school": "INSTITUTE FOR RESEARCH IN MOLECULAR MEDICINE",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=510&catid=55"
+    },
+    {
+      "cluster": "PURE SCIENCES",
+      "degree": "CONVENTIONAL",
+      "level": "PHD/DOCTORATE",
+      "mode": "RESEARCH",
+      "name": "DOCTOR OF PHILOSOPHY (MAIN CAMPUS)",
+      "school": "INSTITUTE OF NANO-OPTOELECTRONICS RESEARCH AND TECHNOLOGY",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=215&catid=51"
+    },
+    {
+      "cluster": "MEDICAL & HEALTH SCIENCES",
+      "degree": "CONVENTIONAL",
+      "level": "PHD/DOCTORATE",
+      "mode": "RESEARCH",
+      "name": "DOCTOR OF PHILOSOPHY (MAIN CAMPUS)",
+      "school": "MALAYSIAN INSTITUTE OF PHARMACEUTICALS AND NUTRACEUTICALS",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=218&catid=51"
+    },
+    {
+      "cluster": "ARTS",
+      "degree": "CONVENTIONAL",
+      "level": "PHD/DOCTORATE",
+      "mode": "RESEARCH",
+      "name": "DOCTOR OF PHILOSOPHY (MAIN CAMPUS)",
+      "school": "NATIONAL HIGHER EDUCATION RESEARCH INSTITUTE",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=325&catid=52"
+    },
+    {
+      "cluster": "MEDICAL & HEALTH SCIENCES",
+      "degree": "CONVENTIONAL",
+      "level": "PHD/DOCTORATE",
+      "mode": "RESEARCH",
+      "name": "DOCTOR OF PHILOSOPHY (MAIN CAMPUS)",
+      "school": "NATIONAL POISON CENTRE",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=220&catid=51"
+    },
+    {
+      "cluster": "MEDICAL & HEALTH SCIENCES",
+      "degree": "CONVENTIONAL",
+      "level": "PHD/DOCTORATE",
+      "mode": "RESEARCH",
+      "name": "DOCTOR OF PHILOSOPHY (MAIN CAMPUS)",
+      "school": "PUSAT KANSER TUN ABDULLAH AHMAD BADAWI",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=888&catid=55"
+    },
+    {
+      "cluster": "ARTS",
+      "degree": "CONVENTIONAL",
+      "level": "PHD/DOCTORATE",
+      "mode": "RESEARCH",
+      "name": "DOCTOR OF PHILOSOPHY (MAIN CAMPUS)",
+      "school": "SCHOOL OF ARTS",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=376&catid=53"
+    },
+    {
+      "cluster": "PURE SCIENCES",
+      "degree": "CONVENTIONAL",
+      "level": "PHD/DOCTORATE",
+      "mode": "RESEARCH",
+      "name": "DOCTOR OF PHILOSOPHY (MAIN CAMPUS)",
+      "school": "SCHOOL OF BIOLOGICAL SCIENCES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=167&catid=50"
+    },
+    {
+      "cluster": "PURE SCIENCES",
+      "degree": "CONVENTIONAL",
+      "level": "PHD/DOCTORATE",
+      "mode": "RESEARCH",
+      "name": "DOCTOR OF PHILOSOPHY (MAIN CAMPUS)",
+      "school": "SCHOOL OF CHEMICAL SCIENCES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=153&catid=50"
+    },
+    {
+      "cluster": "ARTS",
+      "degree": "CONVENTIONAL",
+      "level": "PHD/DOCTORATE",
+      "mode": "RESEARCH",
+      "name": "DOCTOR OF PHILOSOPHY (MAIN CAMPUS)",
+      "school": "SCHOOL OF COMMUNICATION",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=375&catid=53"
+    },
+    {
+      "cluster": "ENGINEERING & TECHNOLOGY",
+      "degree": "CONVENTIONAL",
+      "level": "PHD/DOCTORATE",
+      "mode": "RESEARCH",
+      "name": "DOCTOR OF PHILOSOPHY (MAIN CAMPUS)",
+      "school": "SCHOOL OF COMPUTER SCIENCES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=221&catid=51"
+    },
+    {
+      "cluster": "ARTS",
+      "degree": "CONVENTIONAL",
+      "level": "PHD/DOCTORATE",
+      "mode": "RESEARCH",
+      "name": "DOCTOR OF PHILOSOPHY (MAIN CAMPUS)",
+      "school": "SCHOOL OF EDUCATIONAL STUDIES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=361&catid=53"
+    },
+    {
+      "cluster": "ARTS",
+      "degree": "CONVENTIONAL",
+      "level": "PHD/DOCTORATE",
+      "mode": "RESEARCH",
+      "name": "DOCTOR OF PHILOSOPHY (MAIN CAMPUS)",
+      "school": "SCHOOL OF HUMANITIES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=887&catid=52"
+    },
+    {
+      "cluster": "ENGINEERING & TECHNOLOGY",
+      "degree": "CONVENTIONAL",
+      "level": "PHD/DOCTORATE",
+      "mode": "RESEARCH",
+      "name": "DOCTOR OF PHILOSOPHY (MAIN CAMPUS)",
+      "school": "SCHOOL OF INDUSTRIAL TECHNOLOGY",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=243&catid=51"
+    },
+    {
+      "cluster": "ARTS",
+      "degree": "CONVENTIONAL",
+      "level": "PHD/DOCTORATE",
+      "mode": "RESEARCH",
+      "name": "DOCTOR OF PHILOSOPHY (MAIN CAMPUS)",
+      "school": "SCHOOL OF LANGUAGES, LITERACIES AND TRANSLATION",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=315&catid=52"
+    },
+    {
+      "cluster": "ARTS",
+      "degree": "CONVENTIONAL",
+      "level": "PHD/DOCTORATE",
+      "mode": "RESEARCH",
+      "name": "DOCTOR OF PHILOSOPHY (MAIN CAMPUS)",
+      "school": "SCHOOL OF MANAGEMENT",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=378&catid=53"
+    },
+    {
+      "cluster": "PURE SCIENCES",
+      "degree": "CONVENTIONAL",
+      "level": "PHD/DOCTORATE",
+      "mode": "RESEARCH",
+      "name": "DOCTOR OF PHILOSOPHY (MAIN CAMPUS)",
+      "school": "SCHOOL OF MATHEMATICAL SCIENCES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=147&catid=50"
+    },
+    {
+      "cluster": "MEDICAL & HEALTH SCIENCES",
+      "degree": "CONVENTIONAL",
+      "level": "PHD/DOCTORATE",
+      "mode": "RESEARCH",
+      "name": "DOCTOR OF PHILOSOPHY (MAIN CAMPUS)",
+      "school": "SCHOOL OF PHARMACEUTICAL SCIENCES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=241&catid=51"
+    },
+    {
+      "cluster": "PURE SCIENCES",
+      "degree": "CONVENTIONAL",
+      "level": "PHD/DOCTORATE",
+      "mode": "RESEARCH",
+      "name": "DOCTOR OF PHILOSOPHY (MAIN CAMPUS)",
+      "school": "SCHOOL OF PHYSICS",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=145&catid=50"
+    },
+    {
+      "cluster": "ARTS",
+      "degree": "CONVENTIONAL",
+      "level": "PHD/DOCTORATE",
+      "mode": "RESEARCH",
+      "name": "DOCTOR OF PHILOSOPHY (MAIN CAMPUS)",
+      "school": "SCHOOL OF SOCIAL SCIENCES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=326&catid=52"
+    },
+    {
+      "cluster": "ENGINEERING & TECHNOLOGY",
+      "degree": "CONVENTIONAL",
+      "level": "PHD/DOCTORATE",
+      "mode": "RESEARCH",
+      "name": "DOCTOR OF PHILOSOPHY (MAIN CAMPUS)- SCIENCE",
+      "school": "CENTRE FOR GLOBAL SUSTAINABILITY STUDIES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=247&catid=51"
+    },
+    {
+      "cluster": "ARTS",
+      "degree": "CONVENTIONAL",
+      "level": "PHD/DOCTORATE",
+      "mode": "RESEARCH",
+      "name": "DOCTOR OF PHILOSOPHY (MAIN CAMPUS)- SCIENCE",
+      "school": "SCHOOL OF DISTANCE EDUCATION",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=313&catid=52"
+    },
+    {
+      "cluster": "ENGINEERING & TECHNOLOGY",
+      "degree": "CONVENTIONAL",
+      "level": "PHD/DOCTORATE",
+      "mode": "RESEARCH",
+      "name": "DOCTOR OF PHILOSOPHY (MAIN CAMPUS)-ART",
+      "school": "CENTRE FOR GLOBAL SUSTAINABILITY STUDIES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=379&catid=53"
+    },
+    {
+      "cluster": "ARTS",
+      "degree": "CONVENTIONAL",
+      "level": "PHD/DOCTORATE",
+      "mode": "RESEARCH",
+      "name": "DOCTOR OF PHILOSOPHY (MAIN CAMPUS)-ART",
+      "school": "SCHOOL OF DISTANCE EDUCATION",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=313&catid=52"
+    },
+    {
+      "cluster": "MEDICAL & HEALTH SCIENCES",
+      "degree": "CONVENTIONAL",
+      "level": "PHD/DOCTORATE",
+      "mode": "RESEARCH",
+      "name": "DOCTOR OF PHILOSOPHY (MEDICAL RADIATION)",
+      "school": "SCHOOL OF HEALTH SCIENCES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=561&catid=55"
+    },
+    {
+      "cluster": "MEDICAL & HEALTH SCIENCES",
+      "degree": "CONVENTIONAL",
+      "level": "PHD/DOCTORATE",
+      "mode": "RESEARCH",
+      "name": "DOCTOR OF PHILOSOPHY (NURSING)",
+      "school": "SCHOOL OF HEALTH SCIENCES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=560&catid=55"
+    },
+    {
+      "cluster": "MEDICAL & HEALTH SCIENCES",
+      "degree": "CONVENTIONAL",
+      "level": "PHD/DOCTORATE",
+      "mode": "RESEARCH",
+      "name": "DOCTOR OF PHILOSOPHY (NUTRITION)",
+      "school": "SCHOOL OF HEALTH SCIENCES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=559&catid=55"
+    },
+    {
+      "cluster": "MEDICAL & HEALTH SCIENCES",
+      "degree": "OFFSHORE",
+      "level": "PHD/DOCTORATE",
+      "mode": "RESEARCH",
+      "name": "DOCTOR OF PHILOSOPHY (OFFSHORE EUROPEAN GLOBAL SCHOOL UNIVERSITY, ISTANBUL)",
+      "school": "INSTITUTE FOR RESEARCH IN MOLECULAR MEDICINE",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1475&catid=55"
+    },
+    {
+      "cluster": "MEDICAL & HEALTH SCIENCES",
+      "degree": "OFFSHORE",
+      "level": "PHD/DOCTORATE",
+      "mode": "RESEARCH",
+      "name": "DOCTOR OF PHILOSOPHY (OFFSHORE EUROPEAN GLOBAL SCHOOL UNIVERSITY, ISTANBUL)",
+      "school": "PUSAT KANSER TUN ABDULLAH AHMAD BADAWI",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1476&catid=55"
+    },
+    {
+      "cluster": "ENGINEERING & TECHNOLOGY",
+      "degree": "OFFSHORE",
+      "level": "PHD/DOCTORATE",
+      "mode": "RESEARCH",
+      "name": "DOCTOR OF PHILOSOPHY (OFFSHORE EUROPEAN GLOBAL SCHOOL UNIVERSITY, ISTANBUL)",
+      "school": "SCHOOL OF AEROSPACE ENGINEERING",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1474&catid=54"
+    },
+    {
+      "cluster": "PURE SCIENCES",
+      "degree": "OFFSHORE",
+      "level": "PHD/DOCTORATE",
+      "mode": "RESEARCH",
+      "name": "DOCTOR OF PHILOSOPHY (OFFSHORE EUROPEAN GLOBAL SCHOOL UNIVERSITY, ISTANBUL)",
+      "school": "SCHOOL OF CHEMICAL SCIENCES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1482&catid=50"
+    },
+    {
+      "cluster": "ENGINEERING & TECHNOLOGY",
+      "degree": "OFFSHORE",
+      "level": "PHD/DOCTORATE",
+      "mode": "RESEARCH",
+      "name": "DOCTOR OF PHILOSOPHY (OFFSHORE EUROPEAN GLOBAL SCHOOL UNIVERSITY, ISTANBUL)",
+      "school": "SCHOOL OF CIVIL ENGINEERING",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1501&catid=54"
+    },
+    {
+      "cluster": "MEDICAL & HEALTH SCIENCES",
+      "degree": "OFFSHORE",
+      "level": "PHD/DOCTORATE",
+      "mode": "RESEARCH",
+      "name": "DOCTOR OF PHILOSOPHY (OFFSHORE EUROPEAN GLOBAL SCHOOL UNIVERSITY, ISTANBUL)",
+      "school": "SCHOOL OF DENTAL SCIENCES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1506&catid=55"
+    },
+    {
+      "cluster": "ARTS",
+      "degree": "OFFSHORE",
+      "level": "PHD/DOCTORATE",
+      "mode": "RESEARCH",
+      "name": "DOCTOR OF PHILOSOPHY (OFFSHORE EUROPEAN GLOBAL SCHOOL UNIVERSITY, ISTANBUL)",
+      "school": "SCHOOL OF DISTANCE EDUCATION",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1508&catid=52"
+    },
+    {
+      "cluster": "ENGINEERING & TECHNOLOGY",
+      "degree": "OFFSHORE",
+      "level": "PHD/DOCTORATE",
+      "mode": "RESEARCH",
+      "name": "DOCTOR OF PHILOSOPHY (OFFSHORE EUROPEAN GLOBAL SCHOOL UNIVERSITY, ISTANBUL)",
+      "school": "SCHOOL OF ELECTRICAL AND ELECTRONIC ENGINEERING",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1503&catid=54"
+    },
+    {
+      "cluster": "ARTS",
+      "degree": "OFFSHORE",
+      "level": "PHD/DOCTORATE",
+      "mode": "RESEARCH",
+      "name": "DOCTOR OF PHILOSOPHY (OFFSHORE EUROPEAN GLOBAL SCHOOL UNIVERSITY, ISTANBUL)",
+      "school": "SCHOOL OF HUMANITIES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1515&catid=52"
+    },
+    {
+      "cluster": "ARTS",
+      "degree": "OFFSHORE",
+      "level": "PHD/DOCTORATE",
+      "mode": "RESEARCH",
+      "name": "DOCTOR OF PHILOSOPHY (OFFSHORE EUROPEAN GLOBAL SCHOOL UNIVERSITY, ISTANBUL)",
+      "school": "SCHOOL OF LANGUAGES, LITERACIES AND TRANSLATION",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1519&catid=52"
+    },
+    {
+      "cluster": "ARTS",
+      "degree": "OFFSHORE",
+      "level": "PHD/DOCTORATE",
+      "mode": "RESEARCH",
+      "name": "DOCTOR OF PHILOSOPHY (OFFSHORE EUROPEAN GLOBAL SCHOOL UNIVERSITY, ISTANBUL)",
+      "school": "SCHOOL OF MANAGEMENT",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1492&catid=53"
+    },
+    {
+      "cluster": "PURE SCIENCES",
+      "degree": "OFFSHORE",
+      "level": "PHD/DOCTORATE",
+      "mode": "RESEARCH",
+      "name": "DOCTOR OF PHILOSOPHY (OFFSHORE EUROPEAN GLOBAL SCHOOL UNIVERSITY, ISTANBUL)",
+      "school": "SCHOOL OF MATHEMATICAL SCIENCES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1491&catid=50"
+    },
+    {
+      "cluster": "ENGINEERING & TECHNOLOGY",
+      "degree": "OFFSHORE",
+      "level": "PHD/DOCTORATE",
+      "mode": "RESEARCH",
+      "name": "DOCTOR OF PHILOSOPHY (OFFSHORE EUROPEAN GLOBAL SCHOOL UNIVERSITY, ISTANBUL)",
+      "school": "SCHOOL OF MECHANICAL ENGINEERING",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1490&catid=54"
+    },
+    {
+      "cluster": "MEDICAL & HEALTH SCIENCES",
+      "degree": "OFFSHORE",
+      "level": "PHD/DOCTORATE",
+      "mode": "RESEARCH",
+      "name": "DOCTOR OF PHILOSOPHY (OFFSHORE EUROPEAN GLOBAL SCHOOL UNIVERSITY, ISTANBUL)",
+      "school": "SCHOOL OF PHARMACEUTICAL SCIENCES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1487&catid=51"
+    },
+    {
+      "cluster": "ARTS",
+      "degree": "OFFSHORE",
+      "level": "PHD/DOCTORATE",
+      "mode": "RESEARCH",
+      "name": "DOCTOR OF PHILOSOPHY (OFFSHORE EUROPEAN GLOBAL SCHOOL UNIVERSITY, ISTANBUL)",
+      "school": "SCHOOL OF SOCIAL SCIENCES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1486&catid=52"
+    },
+    {
+      "cluster": "ARTS",
+      "degree": "OFFSHORE",
+      "level": "PHD/DOCTORATE",
+      "mode": "RESEARCH",
+      "name": "DOCTOR OF PHILOSOPHY (OFFSHORE MINJIANG UNIVERSITY)",
+      "school": "SCHOOL OF MANAGEMENT",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1493&catid=53"
+    },
+    {
+      "cluster": "ARTS",
+      "degree": "OFFSHORE",
+      "level": "PHD/DOCTORATE",
+      "mode": "RESEARCH",
+      "name": "DOCTOR OF PHILOSOPHY (OFFSHORE NORTHEASTERN UNIVERSITY, QINHUANGDAO)",
+      "school": "SCHOOL OF HUMANITIES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1516&catid=52"
+    },
+    {
+      "cluster": "ARTS",
+      "degree": "OFFSHORE",
+      "level": "PHD/DOCTORATE",
+      "mode": "RESEARCH",
+      "name": "DOCTOR OF PHILOSOPHY (OFFSHORE UNIVERSITAS INDONESIA)",
+      "school": "SCHOOL OF MANAGEMENT",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1494&catid=53"
+    },
+    {
+      "cluster": "ARTS",
+      "degree": "OFFSHORE",
+      "level": "PHD/DOCTORATE",
+      "mode": "RESEARCH",
+      "name": "DOCTOR OF PHILOSOPHY (OFFSHORE YANGTZE NORMAL UNIVERSITY)",
+      "school": "SCHOOL OF HUMANITIES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1517&catid=52"
+    },
+    {
+      "cluster": "ENGINEERING & TECHNOLOGY",
+      "degree": "CONVENTIONAL",
+      "level": "PHD/DOCTORATE",
+      "mode": "RESEARCH",
+      "name": "DOCTOR OF PHILOSOPHY (PLANNING STUDIES)",
+      "school": "SCHOOL OF HOUSING, BUILDING AND PLANNING",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=222&catid=51"
+    },
+    {
+      "cluster": "ENGINEERING & TECHNOLOGY",
+      "degree": "CONVENTIONAL",
+      "level": "PHD/DOCTORATE",
+      "mode": "RESEARCH",
+      "name": "DOCTOR OF PHILOSOPHY (PROJECT MANAGEMENT)",
+      "school": "SCHOOL OF HOUSING, BUILDING AND PLANNING",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=232&catid=51"
+    },
+    {
+      "cluster": "ENGINEERING & TECHNOLOGY",
+      "degree": "CONVENTIONAL",
+      "level": "PHD/DOCTORATE",
+      "mode": "RESEARCH",
+      "name": "DOCTOR OF PHILOSOPHY (QUANTITY SURVEYING)",
+      "school": "SCHOOL OF HOUSING, BUILDING AND PLANNING",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=235&catid=51"
+    },
+    {
+      "cluster": "MEDICAL & HEALTH SCIENCES",
+      "degree": "CONVENTIONAL",
+      "level": "PHD/DOCTORATE",
+      "mode": "RESEARCH",
+      "name": "DOCTOR OF PHILOSOPHY (SPORTS SCIENCE)",
+      "school": "SCHOOL OF HEALTH SCIENCES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=556&catid=55"
+    },
+    {
+      "cluster": "PURE SCIENCES",
+      "degree": "OFFSHORE",
+      "level": "PHD/DOCTORATE",
+      "mode": "RESEARCH",
+      "name": "DOCTOR OF PHILOSOPHY - OFFSHORE EUROPEAN GLOBAL SCHOOL ISTANBUL GELISIM UNIVERSITY",
+      "school": "SCHOOL OF BIOLOGICAL SCIENCES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1479&catid=50"
+    },
+    {
+      "cluster": "MEDICAL & HEALTH SCIENCES",
+      "degree": "JOINT DEGREE",
+      "level": "PHD/DOCTORATE",
+      "mode": "COURSEWORK",
+      "name": "DOCTOR OF PSYCHOLOGY (CLINICAL NEUROPSYCHOLOGY) - JOINT DEGREE *USM@KL",
+      "school": "SCHOOL OF MEDICAL SCIENCES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=567&catid=59"
+    },
+    {
+      "cluster": "MEDICAL & HEALTH SCIENCES",
+      "degree": "JOINT DEGREE",
+      "level": "PHD/DOCTORATE",
+      "mode": "COURSEWORK",
+      "name": "DOCTOR OF PSYCHOLOGY (CLINICAL PSYCHOLOGY) - JOINT DEGREE *USM@KL",
+      "school": "SCHOOL OF MEDICAL SCIENCES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=566&catid=59"
+    },
+    {
+      "cluster": "MEDICAL & HEALTH SCIENCES",
+      "degree": "CONVENTIONAL",
+      "level": "PHD/DOCTORATE",
+      "mode": "MIXED MODE",
+      "name": "DOCTOR OF PUBLIC HEALTH (ENVIRONMENTAL HEALTH AND OCCUPATIONAL)",
+      "school": "SCHOOL OF MEDICAL SCIENCES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=416&catid=55"
+    },
+    {
+      "cluster": "MEDICAL & HEALTH SCIENCES",
+      "degree": "CONVENTIONAL",
+      "level": "PHD/DOCTORATE",
+      "mode": "MIXED MODE",
+      "name": "DOCTOR OF PUBLIC HEALTH (EPIDEMIOLOGY)",
+      "school": "SCHOOL OF MEDICAL SCIENCES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=417&catid=55"
+    },
+    {
+      "cluster": "MEDICAL & HEALTH SCIENCES",
+      "degree": "CONVENTIONAL",
+      "level": "PHD/DOCTORATE",
+      "mode": "MIXED MODE",
+      "name": "DOCTOR OF PUBLIC HEALTH (FAMILY HEALTH)",
+      "school": "SCHOOL OF MEDICAL SCIENCES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=415&catid=55"
+    },
+    {
+      "cluster": "MEDICAL & HEALTH SCIENCES",
+      "degree": "CONVENTIONAL",
+      "level": "PHD/DOCTORATE",
+      "mode": "MIXED MODE",
+      "name": "DOCTOR OF PUBLIC HEALTH (HEALTH SYSTEM MANAGEMENT)",
+      "school": "SCHOOL OF MEDICAL SCIENCES",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=420&catid=55"
+    }
+  ]
+}
