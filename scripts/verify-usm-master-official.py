@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Verify the reproducible USM master's collection manifest."""
+"""Verify a reproducible USM postgraduate collection manifest."""
 
 from __future__ import annotations
 
@@ -28,8 +28,9 @@ def main() -> None:
 
     if manifest.get("universityCode") != "USM":
         errors.append("universityCode must be USM.")
-    if manifest.get("level") != "master":
-        errors.append("level must be master.")
+    level = manifest.get("level")
+    if level not in {"master", "phd"}:
+        errors.append("level must be master or phd.")
     if manifest.get("applicantScope") != "international":
         errors.append("applicantScope must be international.")
     if manifest.get("academicSession") != "2025/2026":
@@ -46,17 +47,27 @@ def main() -> None:
         "allDirectoryOccurrences": 405,
         "masterOccurrences": 276,
         "uniqueMasterDetailPages": 274,
+        "uniqueDoctorDetailPages": 129,
         "doctorOccurrences": 129,
         "duplicateMasterOccurrences": 2,
+        "duplicateDoctorOccurrences": 0,
     }
     for key, expected in expected_counts.items():
+        if level == "master" and key in {
+            "uniqueDoctorDetailPages",
+            "duplicateDoctorOccurrences",
+        } and key not in directory_audit:
+            continue
         if directory_audit.get(key) != expected:
             errors.append(
                 f"Directory count {key} expected {expected}, got {directory_audit.get(key)}."
             )
 
-    if len(records) != 274:
-        errors.append(f"Expected 274 master directory records, got {len(records)}.")
+    expected_records = 274 if level == "master" else 129
+    if len(records) != expected_records:
+        errors.append(
+            f"Expected {expected_records} {level} directory records, got {len(records)}."
+        )
     if len({record.get("code") for record in records}) != len(records):
         errors.append("Master record codes are not unique.")
     if len({record.get("officialSourceUrl") for record in records}) != len(records):
@@ -64,19 +75,28 @@ def main() -> None:
 
     if len(offshore) != 54:
         errors.append(f"Expected 54 current offshore offerings, got {len(offshore)}.")
-    offshore_master_count = sum(item.get("level") == "master" for item in offshore)
-    if offshore_master_count != 30:
-        errors.append(f"Expected 30 offshore master offerings, got {offshore_master_count}.")
+    expected_offshore = 30 if level == "master" else 24
+    offshore_level_count = sum(item.get("level") == level for item in offshore)
+    if offshore_level_count != expected_offshore:
+        errors.append(
+            f"Expected {expected_offshore} offshore {level} offerings, "
+            f"got {offshore_level_count}."
+        )
 
     research_fees = fee_schedule.get("researchAcademicUnitFees", [])
     named_fees = fee_schedule.get("namedProgrammeFees", [])
     master_named_fees = fee_schedule.get("masterNamedProgrammeFees", [])
+    doctoral_named_fees = fee_schedule.get("doctoralNamedProgrammeFees", [])
     if len(research_fees) != 47:
         errors.append(f"Expected 47 research academic-unit fee rows, got {len(research_fees)}.")
     if len(named_fees) != 123:
         errors.append(f"Expected 123 named fee rows, got {len(named_fees)}.")
     if len(master_named_fees) != 110:
         errors.append(f"Expected 110 master named fee rows, got {len(master_named_fees)}.")
+    if level == "phd" and len(doctoral_named_fees) != 13:
+        errors.append(
+            f"Expected 13 doctoral named fee rows, got {len(doctoral_named_fees)}."
+        )
 
     for source in manifest.get("sources", []):
         domain = urlparse(source.get("url", "")).hostname
@@ -90,8 +110,10 @@ def main() -> None:
                 errors.append(f"Source hash mismatch for {source.get('id')}.")
 
     if details:
-        if len(details) != 274:
-            errors.append(f"Expected 274 detail audit rows, got {len(details)}.")
+        if len(details) != expected_records:
+            errors.append(
+                f"Expected {expected_records} detail audit rows, got {len(details)}."
+            )
         if len({detail.get("code") for detail in details}) != len(details):
             errors.append("Detail audit codes are not unique.")
         blocked_details = [detail for detail in details if detail.get("status") == "blocked"]
@@ -120,6 +142,7 @@ def main() -> None:
         "details": len(details),
         "offshoreOfferings": len(offshore),
         "masterNamedFeeRows": len(master_named_fees),
+        "doctoralNamedFeeRows": len(doctoral_named_fees),
         "publicationDecision": manifest.get("publicationDecision"),
         "errors": errors,
         "warnings": warnings,

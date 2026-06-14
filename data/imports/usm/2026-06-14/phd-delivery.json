@@ -1,0 +1,1044 @@
+{
+  "schemaVersion": 1,
+  "officialDomains": [
+    "usm.my",
+    "admission.usm.my",
+    "ips.usm.my"
+  ],
+  "scope": {
+    "universityCode": "USM",
+    "level": "phd",
+    "applicantScope": "international",
+    "academicSession": "current-directory-and-2025/2026-fees"
+  },
+  "authorization": "collect",
+  "counts": {
+    "directoryOccurrences": 129,
+    "uniqueOfficialEntries": 129,
+    "canonicalProgrammes": 129,
+    "ready": 16,
+    "needsReview": 112,
+    "notAvailableForInternational": 1
+  },
+  "coverage": {
+    "identity": {
+      "covered": 129,
+      "unpublished": 0,
+      "review": 0
+    },
+    "faculty": {
+      "covered": 129,
+      "unpublished": 0,
+      "review": 0
+    },
+    "studyMode": {
+      "covered": 129,
+      "unpublished": 0,
+      "review": 0
+    },
+    "campus": {
+      "covered": 129,
+      "unpublished": 0,
+      "review": 0
+    },
+    "duration": {
+      "covered": 127,
+      "unpublished": 2,
+      "review": 0
+    },
+    "intake": {
+      "covered": 23,
+      "unpublished": 106,
+      "review": 0
+    },
+    "internationalEligibility": {
+      "covered": 106,
+      "unpublished": 0,
+      "review": 23
+    },
+    "academicRequirement": {
+      "covered": 129,
+      "unpublished": 0,
+      "review": 0
+    },
+    "languageRequirement": {
+      "covered": 129,
+      "unpublished": 0,
+      "review": 0
+    },
+    "applicationDocuments": {
+      "covered": 129,
+      "unpublished": 0,
+      "review": 0
+    },
+    "fee": {
+      "covered": 106,
+      "unpublished": 23,
+      "review": 0
+    },
+    "evidence": {
+      "covered": 129,
+      "unpublished": 0,
+      "review": 0
+    }
+  },
+  "sources": [
+    {
+      "id": "usm-pg-directory-current",
+      "title": "USM Postgraduate Programme Directory",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes",
+      "sourceType": "official-page",
+      "role": "canonical",
+      "retrievedAt": "2026-06-14T10:08:30Z",
+      "academicSession": null,
+      "status": "verified",
+      "sha256": "ccb852d13ccb650d2d80006c1ff18bf9129002fca83175db9158436d66f6be5f",
+      "localPath": "tmp/usm-master-programmes-jina-https.md",
+      "transport": "public-reader-proxy because direct requests are blocked by USM WAF"
+    },
+    {
+      "id": "usm-pg-fee-page-current",
+      "title": "USM Postgraduate Fees",
+      "url": "https://admission.usm.my/index.php/postgraduate/fee-pg",
+      "sourceType": "official-page",
+      "role": "field-authority",
+      "retrievedAt": "2026-06-14T10:08:30Z",
+      "academicSession": "2025/2026",
+      "status": "verified",
+      "sha256": "3597c8977755aa2f18fb3b389c813435989bd62cc54318f26b8e573c10401076",
+      "localPath": "tmp/usm-pg-fee-page.md"
+    },
+    {
+      "id": "usm-pg-fees-2025-2026",
+      "title": "USM Postgraduate Fees 2025/2026",
+      "url": "https://admission.usm.my/images/PG%20FEE%20-%20YURAN%20PG/PG%20FEES%2011.03.2025.pdf",
+      "sourceType": "official-pdf",
+      "role": "cross-check",
+      "retrievedAt": "2026-06-14T10:08:30Z",
+      "academicSession": "2025/2026",
+      "status": "verified",
+      "sha256": "24bc178e7da6de039ff9e5cd866c580a5f3ed1c73db04d08b8f7ca42cb75bcef",
+      "localPath": "tmp/pdfs/usm-master/pg-fees-2025-03-11.pdf",
+      "sourcePage": 2
+    },
+    {
+      "id": "usm-pg-general-requirements",
+      "title": "USM General Entry Requirements",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?catid=48&id=785%3Ageneral-entry-requirement&view=article",
+      "sourceType": "official-page",
+      "role": "field-authority",
+      "retrievedAt": "2026-06-14T10:08:30Z",
+      "academicSession": null,
+      "status": "verified",
+      "sha256": "ccb852d13ccb650d2d80006c1ff18bf9129002fca83175db9158436d66f6be5f",
+      "localPath": "tmp/usm-master-programmes-jina-https.md",
+      "evidenceNote": "The same general requirement text is embedded in the canonical directory snapshot."
+    },
+    {
+      "id": "usm-ips-admission-downloads",
+      "title": "USM IPS Admission and Registration Downloads",
+      "url": "https://ips.usm.my/index.php/download/admission",
+      "sourceType": "official-page",
+      "role": "cross-check",
+      "retrievedAt": "2026-06-14T10:08:30Z",
+      "academicSession": "2026/2027",
+      "status": "verified",
+      "sha256": "8bc410b05fc4909de3d3bf6187cd6acd92bc760bfc293f0b2a2b3490476bec9c",
+      "localPath": "tmp/usm-ips-admission-official.html"
+    },
+    {
+      "id": "usm-ips-research-mode-registration",
+      "title": "USM IPS Research Mode Programme",
+      "url": "https://ips.usm.my/index.php/current-student-v2/candidature-matters/research-mode-programme",
+      "sourceType": "official-page",
+      "role": "cross-check",
+      "retrievedAt": "2026-06-14T10:08:30Z",
+      "academicSession": null,
+      "status": "verified",
+      "sha256": "604bd880c1a0c8528cb7c4233e86c08f80ba4075a126c14b15d46bb23eff2d3e",
+      "localPath": "tmp/usm-ips-research-mode.html"
+    },
+    {
+      "id": "usm-onlineips-application-guide-2026",
+      "title": "USM OnlineIPS Online Application Guideline",
+      "url": "https://onlineips.usm.my/images/ONLINE%20APPLICATION%20GUIDELINE%20012026%20v1.pdf",
+      "sourceType": "official-pdf",
+      "role": "field-authority",
+      "retrievedAt": "2026-06-14T10:08:30Z",
+      "academicSession": "2026",
+      "status": "verified",
+      "sha256": "92559bbca13240e19d9cec7b761c7718eace5fa86648f3a13a0ea46fd443ece3",
+      "localPath": "tmp/pdfs/usm-master/online-application-guide-2026.pdf"
+    },
+    {
+      "id": "usm-coursework-mixed-candidature",
+      "title": "USM Coursework and Mixed Mode Programme",
+      "url": "https://ips.usm.my/index.php/current-student-v2/candidature-matters/coursework-and-mixed-mode-programme",
+      "sourceType": "official-page",
+      "role": "field-authority",
+      "retrievedAt": "2026-06-14T10:08:30Z",
+      "academicSession": null,
+      "status": "verified",
+      "sha256": "10a840d099c43a52c4dfaf7ab9b1173549eded928a2a55b8d9e987554afd77a0",
+      "localPath": "tmp/usm-ips-coursework-mixed.html"
+    }
+  ],
+  "artifacts": [
+    {
+      "role": "manifest",
+      "path": "data/imports/usm/2026-06-14/phd-official-source.json",
+      "sha256": "b296255567e95c83bda74102d317c2966c14dfb91bef93c908b54cba6423ee2f"
+    },
+    {
+      "role": "candidate",
+      "path": "data/imports/usm/2026-06-14/phd-candidate.json",
+      "sha256": "fa891702242a44b1e19061271d6855f80b59c05a50fe9ef25f88f26ea7999a61"
+    },
+    {
+      "role": "audit",
+      "path": "data/imports/usm/2026-06-14/phd-audit.json",
+      "sha256": "bf97d74740c95a599bd9d020bd07f834da036a7dc2326533f19a2b725d85fa74"
+    }
+  ],
+  "exceptions": {
+    "blocking": [],
+    "review": [
+      {
+        "code": "USM-PHD-SLUG-PHD-MICROBIOLOGY-SCHOOL-OF-BIOLOGICAL-SCIENCES",
+        "nameEnOfficial": "Doctor of Philosophy - Research",
+        "reasons": [
+          "programme-specific intake is unpublished"
+        ]
+      },
+      {
+        "code": "USM-PHD-SLUG-PHD-MICROBIOLOGY-SCHOOL-OF-BIOLOGICAL-SCIENCES-2",
+        "nameEnOfficial": "Doctor of Philosophy (Offshore European Global School Istanbul Gelisim University) - Research",
+        "reasons": [
+          "international eligibility is not explicitly confirmed",
+          "programme-specific intake is unpublished",
+          "no uniquely applicable current international tuition"
+        ]
+      },
+      {
+        "code": "USM-PHD-SLUG-PHD-CHEMISTRY-SCHOOL-OF-CHEMICAL-SCIENCES",
+        "nameEnOfficial": "Doctor of Philosophy - Research",
+        "reasons": [
+          "programme-specific intake is unpublished"
+        ]
+      },
+      {
+        "code": "USM-PHD-SLUG-PHD-CHEMISTRY-SCHOOL-OF-CHEMICAL-SCIENCES-2",
+        "nameEnOfficial": "Doctor of Philosophy (Offshore European Global School University, Istanbul) - Research",
+        "reasons": [
+          "international eligibility is not explicitly confirmed",
+          "programme-specific intake is unpublished",
+          "no uniquely applicable current international tuition"
+        ]
+      },
+      {
+        "code": "USM-PHD-SLUG-PHD-ENVIRONMENTAL-BIOLOGY-SCHOOL-OF-DISTANCE-EDUCATION",
+        "nameEnOfficial": "Doctor of Philosophy",
+        "reasons": [
+          "programme-specific intake is unpublished"
+        ]
+      },
+      {
+        "code": "USM-PHD-SLUG-PHD-MATHEMATICS-SCHOOL-OF-MATHEMATICAL-SCIENCES",
+        "nameEnOfficial": "Doctor of Philosophy - Research",
+        "reasons": [
+          "programme-specific intake is unpublished"
+        ]
+      },
+      {
+        "code": "USM-PHD-SLUG-PHD-MATHEMATICS-SCHOOL-OF-MATHEMATICAL-SCIENCES-2",
+        "nameEnOfficial": "Doctor of Philosophy (Offshore European Global School University, Istanbul) - Research",
+        "reasons": [
+          "international eligibility is not explicitly confirmed",
+          "programme-specific intake is unpublished",
+          "no uniquely applicable current international tuition"
+        ]
+      },
+      {
+        "code": "USM-PHD-SLUG-PHD-PHYSICS-SCHOOL-OF-PHYSICS",
+        "nameEnOfficial": "Doctor of Philosophy - School of Physics",
+        "reasons": [
+          "programme-specific intake is unpublished"
+        ]
+      },
+      {
+        "code": "USM-PHD-SLUG-PHD-BIOTECHNOLOGY-CENTRE-FOR-CHEMICAL-BIOLOGY",
+        "nameEnOfficial": "Doctor of Philosophy",
+        "reasons": [
+          "programme-specific intake is unpublished"
+        ]
+      },
+      {
+        "code": "USM-PHD-SLUG-PHD-MARINE-SCIENCES-CENTRE-FOR-MARINE-AND-COASTAL-STUDIES",
+        "nameEnOfficial": "Doctor of Philosophy",
+        "reasons": [
+          "programme-specific intake is unpublished"
+        ]
+      },
+      {
+        "code": "USM-PHD-ARTICLE-221",
+        "nameEnOfficial": "Doctor of Philosophy - (COM)",
+        "reasons": [
+          "programme-specific intake is unpublished"
+        ]
+      },
+      {
+        "code": "USM-PHD-ARTICLE-246",
+        "nameEnOfficial": "PhD (Building Surveying) - (HBP)",
+        "reasons": [
+          "programme-specific intake is unpublished"
+        ]
+      },
+      {
+        "code": "USM-PHD-ARTICLE-200",
+        "nameEnOfficial": "PhD (Building Technology) - (HBP)",
+        "reasons": [
+          "programme-specific intake is unpublished"
+        ]
+      },
+      {
+        "code": "USM-PHD-ARTICLE-233",
+        "nameEnOfficial": "PhD (Housing) - (HBP)",
+        "reasons": [
+          "programme-specific intake is unpublished"
+        ]
+      },
+      {
+        "code": "USM-PHD-ARTICLE-234",
+        "nameEnOfficial": "PhD (Interior Design) - (HBP)",
+        "reasons": [
+          "programme-specific intake is unpublished"
+        ]
+      },
+      {
+        "code": "USM-PHD-ARTICLE-222",
+        "nameEnOfficial": "PhD (Planning Studies) - (HBP)",
+        "reasons": [
+          "programme-specific intake is unpublished"
+        ]
+      },
+      {
+        "code": "USM-PHD-ARTICLE-232",
+        "nameEnOfficial": "PhD (Project Management) - (HBP)",
+        "reasons": [
+          "programme-specific intake is unpublished"
+        ]
+      },
+      {
+        "code": "USM-PHD-ARTICLE-235",
+        "nameEnOfficial": "PhD (Quantity Surveying) - (HBP)",
+        "reasons": [
+          "programme-specific intake is unpublished"
+        ]
+      },
+      {
+        "code": "USM-PHD-ARTICLE-208",
+        "nameEnOfficial": "PhD (Bioprocess Technology) – School of Industrial Technology",
+        "reasons": [
+          "programme-specific intake is unpublished"
+        ]
+      },
+      {
+        "code": "USM-PHD-ARTICLE-206",
+        "nameEnOfficial": "PhD (Bioresource, Paper and Coatings Technology) - School of Industrial Technology",
+        "reasons": [
+          "programme-specific intake is unpublished"
+        ]
+      },
+      {
+        "code": "USM-PHD-ARTICLE-243",
+        "nameEnOfficial": "PhD (Environmental Technology) - School of Industrial Technology",
+        "reasons": [
+          "programme-specific intake is unpublished"
+        ]
+      },
+      {
+        "code": "USM-PHD-ARTICLE-242",
+        "nameEnOfficial": "PhD (Food Technology) - School of Industrial Technology",
+        "reasons": [
+          "programme-specific intake is unpublished"
+        ]
+      },
+      {
+        "code": "USM-PHD-ARTICLE-1487",
+        "nameEnOfficial": "Doctor of Philosophy (Offshore European Global School University, Istanbul) - Research",
+        "reasons": [
+          "international eligibility is not explicitly confirmed",
+          "programme-specific intake is unpublished",
+          "no uniquely applicable current international tuition"
+        ]
+      },
+      {
+        "code": "USM-PHD-ARTICLE-212",
+        "nameEnOfficial": "PhD (Clinical Pharmacy) - School of Pharmaceutical Sciences",
+        "reasons": [
+          "programme-specific intake is unpublished"
+        ]
+      },
+      {
+        "code": "USM-PHD-ARTICLE-239",
+        "nameEnOfficial": "PhD (Pharmaceutical Chemistry) - School of Pharmaceutical Sciences",
+        "reasons": [
+          "programme-specific intake is unpublished"
+        ]
+      },
+      {
+        "code": "USM-PHD-ARTICLE-241",
+        "nameEnOfficial": "PhD (Pharmaceutical Sciences) - School of Pharmaceutical Sciences",
+        "reasons": [
+          "programme-specific intake is unpublished"
+        ]
+      },
+      {
+        "code": "USM-PHD-ARTICLE-238",
+        "nameEnOfficial": "PhD (Pharmaceutical Technology) - School of Pharmaceutical Sciences",
+        "reasons": [
+          "programme-specific intake is unpublished"
+        ]
+      },
+      {
+        "code": "USM-PHD-ARTICLE-236",
+        "nameEnOfficial": "PhD (Pharmacology) - School of Pharmaceutical Sciences",
+        "reasons": [
+          "programme-specific intake is unpublished"
+        ]
+      },
+      {
+        "code": "USM-PHD-ARTICLE-237",
+        "nameEnOfficial": "PhD (Physiology) - School of Pharmaceutical Sciences",
+        "reasons": [
+          "programme-specific intake is unpublished"
+        ]
+      },
+      {
+        "code": "USM-PHD-ARTICLE-244",
+        "nameEnOfficial": "PhD (Analytical Biochemistry) - Analytical Biochemistry Research Centre",
+        "reasons": [
+          "programme-specific intake is unpublished"
+        ]
+      },
+      {
+        "code": "USM-PHD-ARTICLE-217",
+        "nameEnOfficial": "PhD (Pharmacy) - Centre for Drug Research",
+        "reasons": [
+          "programme-specific intake is unpublished"
+        ]
+      },
+      {
+        "code": "USM-PHD-ARTICLE-247",
+        "nameEnOfficial": "PhD (Sustainability) - Centre for Global Sustainability Studies",
+        "reasons": [
+          "programme-specific intake is unpublished"
+        ]
+      },
+      {
+        "code": "USM-PHD-ARTICLE-215",
+        "nameEnOfficial": "PhD (Optoelectronics) - Institute of Nano-Optoelectronics Research and Technology",
+        "reasons": [
+          "programme-specific intake is unpublished"
+        ]
+      },
+      {
+        "code": "USM-PHD-ARTICLE-218",
+        "nameEnOfficial": "PhD (Healthcare Biotechnology) – Malaysian Institute of Pharmaceuticals and Nutraceuticals",
+        "reasons": [
+          "programme-specific intake is unpublished"
+        ]
+      },
+      {
+        "code": "USM-PHD-ARTICLE-220",
+        "nameEnOfficial": "PhD (Pharmacy) - National Poison Centre",
+        "reasons": [
+          "programme-specific intake is unpublished"
+        ]
+      },
+      {
+        "code": "USM-PHD-ARTICLE-219",
+        "nameEnOfficial": "Doctor of Philosophy - (CYB)",
+        "reasons": [
+          "programme-specific intake is unpublished"
+        ]
+      },
+      {
+        "code": "USM-PHD-ARTICLE-1508",
+        "nameEnOfficial": "Doctor of Philosophy (Offshore European Global School University, Istanbul) - Research",
+        "reasons": [
+          "international eligibility is not explicitly confirmed",
+          "programme-specific intake is unpublished",
+          "no uniquely applicable current international tuition"
+        ]
+      },
+      {
+        "code": "USM-PHD-ARTICLE-311",
+        "nameEnOfficial": "PhD (Anthropology/Sociology) - School of Distance Education",
+        "reasons": [
+          "programme-specific intake is unpublished"
+        ]
+      },
+      {
+        "code": "USM-PHD-ARTICLE-307",
+        "nameEnOfficial": "PhD (Civilization Studies) - School of Distance Education",
+        "reasons": [
+          "programme-specific intake is unpublished"
+        ]
+      },
+      {
+        "code": "USM-PHD-ARTICLE-312",
+        "nameEnOfficial": "PhD (Economics) - School of Distance Education",
+        "reasons": [
+          "programme-specific intake is unpublished"
+        ]
+      },
+      {
+        "code": "USM-PHD-ARTICLE-305",
+        "nameEnOfficial": "PhD (Education) - School of Distance Education",
+        "reasons": [
+          "programme-specific intake is unpublished"
+        ]
+      },
+      {
+        "code": "USM-PHD-ARTICLE-306",
+        "nameEnOfficial": "PhD (Educational Technology) - School of Distance Education",
+        "reasons": [
+          "programme-specific intake is unpublished"
+        ]
+      },
+      {
+        "code": "USM-PHD-ARTICLE-310",
+        "nameEnOfficial": "PhD (History) - School of Distance Education",
+        "reasons": [
+          "programme-specific intake is unpublished"
+        ]
+      },
+      {
+        "code": "USM-PHD-ARTICLE-309",
+        "nameEnOfficial": "PhD (Literature) - School of Distance Education",
+        "reasons": [
+          "programme-specific intake is unpublished"
+        ]
+      },
+      {
+        "code": "USM-PHD-ARTICLE-380",
+        "nameEnOfficial": "PhD (Management) - School of Distance Education",
+        "reasons": [
+          "programme-specific intake is unpublished"
+        ]
+      },
+      {
+        "code": "USM-PHD-ARTICLE-887",
+        "nameEnOfficial": "Doctor of Philosophy - School of Humanities",
+        "reasons": [
+          "programme-specific intake is unpublished"
+        ]
+      },
+      {
+        "code": "USM-PHD-ARTICLE-1515",
+        "nameEnOfficial": "Doctor of Philosophy (Offshore European Global School University, Istanbul) - Research",
+        "reasons": [
+          "international eligibility is not explicitly confirmed",
+          "programme-specific intake is unpublished",
+          "no uniquely applicable current international tuition"
+        ]
+      },
+      {
+        "code": "USM-PHD-ARTICLE-1516",
+        "nameEnOfficial": "Doctor of Philosophy (Offshore Northeastern University, Qinhuangdao) - Research",
+        "reasons": [
+          "international eligibility is not explicitly confirmed",
+          "programme-specific intake is unpublished",
+          "no uniquely applicable current international tuition"
+        ]
+      },
+      {
+        "code": "USM-PHD-ARTICLE-1517",
+        "nameEnOfficial": "Doctor of Philosophy (Offshore YangTze Normal University) - Research",
+        "reasons": [
+          "international eligibility is not explicitly confirmed",
+          "programme-specific intake is unpublished",
+          "no uniquely applicable current international tuition"
+        ]
+      },
+      {
+        "code": "USM-PHD-ARTICLE-1519",
+        "nameEnOfficial": "Doctor of Philosophy (Offshore European Global School University, Istanbul) - Research",
+        "reasons": [
+          "international eligibility is not explicitly confirmed",
+          "programme-specific intake is unpublished",
+          "no uniquely applicable current international tuition"
+        ]
+      },
+      {
+        "code": "USM-PHD-ARTICLE-316",
+        "nameEnOfficial": "PhD (Interpretation) - School of Languages, Literacies & Translation",
+        "reasons": [
+          "programme-specific intake is unpublished"
+        ]
+      },
+      {
+        "code": "USM-PHD-ARTICLE-314",
+        "nameEnOfficial": "PhD (Language Studies) - School of Languages, Literacies & Translation",
+        "reasons": [
+          "programme-specific intake is unpublished"
+        ]
+      },
+      {
+        "code": "USM-PHD-ARTICLE-315",
+        "nameEnOfficial": "PhD (Translation) - School of Languages, Literacies & Translation",
+        "reasons": [
+          "programme-specific intake is unpublished"
+        ]
+      },
+      {
+        "code": "USM-PHD-ARTICLE-1486",
+        "nameEnOfficial": "Doctor of Philosophy (Offshore European Global School University, Istanbul) - Research",
+        "reasons": [
+          "international eligibility is not explicitly confirmed",
+          "programme-specific intake is unpublished",
+          "no uniquely applicable current international tuition"
+        ]
+      },
+      {
+        "code": "USM-PHD-ARTICLE-326",
+        "nameEnOfficial": "PhD (Anthropology/Sociology) - School of Social Sciences",
+        "reasons": [
+          "programme-specific intake is unpublished"
+        ]
+      },
+      {
+        "code": "USM-PHD-ARTICLE-329",
+        "nameEnOfficial": "PhD (Development Planning and Management) - School of Social Sciences",
+        "reasons": [
+          "programme-specific intake is unpublished"
+        ]
+      },
+      {
+        "code": "USM-PHD-ARTICLE-327",
+        "nameEnOfficial": "PhD (Economics) - School of Social Sciences",
+        "reasons": [
+          "programme-specific intake is unpublished"
+        ]
+      },
+      {
+        "code": "USM-PHD-ARTICLE-330",
+        "nameEnOfficial": "PhD (Political Science) - School of Social Sciences",
+        "reasons": [
+          "programme-specific intake is unpublished"
+        ]
+      },
+      {
+        "code": "USM-PHD-ARTICLE-331",
+        "nameEnOfficial": "PhD (Psychology) - School of Social Sciences",
+        "reasons": [
+          "programme-specific intake is unpublished"
+        ]
+      },
+      {
+        "code": "USM-PHD-ARTICLE-328",
+        "nameEnOfficial": "PhD (Social Work) - School of Social Sciences",
+        "reasons": [
+          "programme-specific intake is unpublished"
+        ]
+      },
+      {
+        "code": "USM-PHD-ARTICLE-333",
+        "nameEnOfficial": "PhD (Archaeology) – Centre for Global Archaeological Research",
+        "reasons": [
+          "programme-specific intake is unpublished"
+        ]
+      },
+      {
+        "code": "USM-PHD-ARTICLE-273",
+        "nameEnOfficial": "PhD (Islamic Development Management) - Centre for Islamic Development Management Studies",
+        "reasons": [
+          "programme-specific intake is unpublished"
+        ]
+      },
+      {
+        "code": "USM-PHD-ARTICLE-271",
+        "nameEnOfficial": "PhD (Anthropology/Sociology) - Centre for Policy Research",
+        "reasons": [
+          "programme-specific intake is unpublished"
+        ]
+      },
+      {
+        "code": "USM-PHD-ARTICLE-303",
+        "nameEnOfficial": "PhD (Development Planning and Management) - Centre for Policy Research",
+        "reasons": [
+          "programme-specific intake is unpublished"
+        ]
+      },
+      {
+        "code": "USM-PHD-ARTICLE-301",
+        "nameEnOfficial": "PhD (Economics) - Centre for Policy Research",
+        "reasons": [
+          "programme-specific intake is unpublished"
+        ]
+      },
+      {
+        "code": "USM-PHD-SLUG-PHD-MARINE-SCIENCES-CENTRE-FOR-POLICY-AND-INTERNATIONAL-RESEARCH-CENTER",
+        "nameEnOfficial": "PhD (Marine Sciences) - Centre for Policy Research",
+        "reasons": [
+          "programme-specific intake is unpublished"
+        ]
+      },
+      {
+        "code": "USM-PHD-ARTICLE-304",
+        "nameEnOfficial": "PhD (Political Science) - Centre for Policy Research",
+        "reasons": [
+          "programme-specific intake is unpublished"
+        ]
+      },
+      {
+        "code": "USM-PHD-ARTICLE-302",
+        "nameEnOfficial": "PhD (Social Work) - Centre for Policy Research",
+        "reasons": [
+          "programme-specific intake is unpublished"
+        ]
+      },
+      {
+        "code": "USM-PHD-ARTICLE-325",
+        "nameEnOfficial": "PhD (Higher Education) - National Higher Education Research Institute",
+        "reasons": [
+          "programme-specific intake is unpublished"
+        ]
+      },
+      {
+        "code": "USM-PHD-ARTICLE-374",
+        "nameEnOfficial": "PhD (Drama & Theatre, Acting & Directing) - School of Arts",
+        "reasons": [
+          "programme-specific intake is unpublished"
+        ]
+      },
+      {
+        "code": "USM-PHD-ARTICLE-376",
+        "nameEnOfficial": "PhD (Fine Art) - School of Arts",
+        "reasons": [
+          "programme-specific intake is unpublished"
+        ]
+      },
+      {
+        "code": "USM-PHD-ARTICLE-373",
+        "nameEnOfficial": "PhD (Music) - School of Arts",
+        "reasons": [
+          "programme-specific intake is unpublished"
+        ]
+      },
+      {
+        "code": "USM-PHD-ARTICLE-375",
+        "nameEnOfficial": "PhD (Communication) - School of Communication",
+        "reasons": [
+          "programme-specific intake is unpublished"
+        ]
+      },
+      {
+        "code": "USM-PHD-ARTICLE-361",
+        "nameEnOfficial": "Doctor of Philosophy (EDU)",
+        "reasons": [
+          "programme-specific intake is unpublished"
+        ]
+      },
+      {
+        "code": "USM-PHD-ARTICLE-1492",
+        "nameEnOfficial": "Doctor of Philosophy (Offshore European Global School University, Istanbul) - Research",
+        "reasons": [
+          "international eligibility is not explicitly confirmed",
+          "no uniquely applicable current international tuition"
+        ]
+      },
+      {
+        "code": "USM-PHD-ARTICLE-1493",
+        "nameEnOfficial": "Doctor of Philosophy (Offshore Minjiang University) - Research",
+        "reasons": [
+          "international eligibility is not explicitly confirmed",
+          "no uniquely applicable current international tuition"
+        ]
+      },
+      {
+        "code": "USM-PHD-ARTICLE-1494",
+        "nameEnOfficial": "Doctor of Philosophy (Offshore Universitas Indonesia) - Research",
+        "reasons": [
+          "international eligibility is not explicitly confirmed",
+          "no uniquely applicable current international tuition"
+        ]
+      },
+      {
+        "code": "USM-PHD-ARTICLE-379",
+        "nameEnOfficial": "PhD (Sustainability) - (CGS)",
+        "reasons": [
+          "programme-specific intake is unpublished"
+        ]
+      },
+      {
+        "code": "USM-PHD-ARTICLE-372",
+        "nameEnOfficial": "PhD (Educational Technology) - Centre for Instructional Technology and Multimedia",
+        "reasons": [
+          "programme-specific intake is unpublished"
+        ]
+      },
+      {
+        "code": "USM-PHD-ARTICLE-809",
+        "nameEnOfficial": "Doctor of Philosophy",
+        "reasons": [
+          "programme-specific intake is unpublished"
+        ]
+      },
+      {
+        "code": "USM-PHD-ARTICLE-340",
+        "nameEnOfficial": "Doctor of Business Administration (DBA) - Graduate School of Business",
+        "reasons": [
+          "official numeric duration is unpublished",
+          "programme-specific intake is unpublished"
+        ]
+      },
+      {
+        "code": "USM-PHD-ARTICLE-338",
+        "nameEnOfficial": "PhD - Graduate School of Business V2",
+        "reasons": [
+          "programme-specific intake is unpublished"
+        ]
+      },
+      {
+        "code": "USM-PHD-ARTICLE-392",
+        "nameEnOfficial": "Doctor of Philosophy - Research",
+        "reasons": [
+          "programme-specific intake is unpublished"
+        ]
+      },
+      {
+        "code": "USM-PHD-ARTICLE-1474",
+        "nameEnOfficial": "Doctor of Philosophy (Offshore European Global School University, Istanbul) - Research",
+        "reasons": [
+          "international eligibility is not explicitly confirmed",
+          "programme-specific intake is unpublished",
+          "no uniquely applicable current international tuition"
+        ]
+      },
+      {
+        "code": "USM-PHD-ARTICLE-1503",
+        "nameEnOfficial": "Doctor of Philosophy (Offshore European Global School University, Istanbul) - Research",
+        "reasons": [
+          "international eligibility is not explicitly confirmed",
+          "no uniquely applicable current international tuition"
+        ]
+      },
+      {
+        "code": "USM-PHD-ARTICLE-395",
+        "nameEnOfficial": "Doctor of Philosophy",
+        "reasons": [
+          "programme-specific intake is unpublished"
+        ]
+      },
+      {
+        "code": "USM-PHD-ARTICLE-402",
+        "nameEnOfficial": "Doctor of Philosophy - Research",
+        "reasons": [
+          "programme-specific intake is unpublished"
+        ]
+      },
+      {
+        "code": "USM-PHD-ARTICLE-1501",
+        "nameEnOfficial": "Doctor of Philosophy (Offshore European Global School University, Istanbul) - Research",
+        "reasons": [
+          "international eligibility is not explicitly confirmed",
+          "programme-specific intake is unpublished",
+          "no uniquely applicable current international tuition"
+        ]
+      },
+      {
+        "code": "USM-PHD-ARTICLE-407",
+        "nameEnOfficial": "Doctor of Philosophy",
+        "reasons": [
+          "programme-specific intake is unpublished"
+        ]
+      },
+      {
+        "code": "USM-PHD-ARTICLE-404",
+        "nameEnOfficial": "Doctor of Philosophy",
+        "reasons": [
+          "programme-specific intake is unpublished"
+        ]
+      },
+      {
+        "code": "USM-PHD-ARTICLE-1490",
+        "nameEnOfficial": "Doctor of Philosophy (Offshore European Global School University, Istanbul) - Research",
+        "reasons": [
+          "international eligibility is not explicitly confirmed",
+          "programme-specific intake is unpublished",
+          "no uniquely applicable current international tuition"
+        ]
+      },
+      {
+        "code": "USM-PHD-ARTICLE-388",
+        "nameEnOfficial": "Doctor of Philosophy",
+        "reasons": [
+          "programme-specific intake is unpublished"
+        ]
+      },
+      {
+        "code": "USM-PHD-ARTICLE-390",
+        "nameEnOfficial": "Doctor of Philosophy",
+        "reasons": [
+          "programme-specific intake is unpublished"
+        ]
+      },
+      {
+        "code": "USM-PHD-ARTICLE-1506",
+        "nameEnOfficial": "Doctor of Philosophy (Offshore European Global School University, Istanbul) - Research",
+        "reasons": [
+          "international eligibility is not explicitly confirmed",
+          "programme-specific intake is unpublished",
+          "no uniquely applicable current international tuition"
+        ]
+      },
+      {
+        "code": "USM-PHD-ARTICLE-555",
+        "nameEnOfficial": "PhD (Dentistry) - Research",
+        "reasons": [
+          "programme-specific intake is unpublished"
+        ]
+      },
+      {
+        "code": "USM-PHD-ARTICLE-557",
+        "nameEnOfficial": "PhD (Biomedicine) - School of Health Sciences",
+        "reasons": [
+          "programme-specific intake is unpublished"
+        ]
+      },
+      {
+        "code": "USM-PHD-ARTICLE-558",
+        "nameEnOfficial": "PhD (Forensic Science) - School of Health Sciences",
+        "reasons": [
+          "programme-specific intake is unpublished"
+        ]
+      },
+      {
+        "code": "USM-PHD-ARTICLE-561",
+        "nameEnOfficial": "PhD (Medical Radiation) - School of Health Sciences",
+        "reasons": [
+          "programme-specific intake is unpublished"
+        ]
+      },
+      {
+        "code": "USM-PHD-ARTICLE-560",
+        "nameEnOfficial": "PhD (Nursing) - School of Health Sciences",
+        "reasons": [
+          "programme-specific intake is unpublished"
+        ]
+      },
+      {
+        "code": "USM-PHD-ARTICLE-559",
+        "nameEnOfficial": "PhD (Nutrition) - School of Health Sciences",
+        "reasons": [
+          "programme-specific intake is unpublished"
+        ]
+      },
+      {
+        "code": "USM-PHD-ARTICLE-556",
+        "nameEnOfficial": "PhD (Sports Science) - School of Health Sciences",
+        "reasons": [
+          "programme-specific intake is unpublished"
+        ]
+      },
+      {
+        "code": "USM-PHD-ARTICLE-413",
+        "nameEnOfficial": "Doctor of Neuroscience - School of Medical Sciences",
+        "reasons": [
+          "official numeric duration is unpublished",
+          "programme-specific intake is unpublished"
+        ]
+      },
+      {
+        "code": "USM-PHD-ARTICLE-807",
+        "nameEnOfficial": "Doctor of Philosophy - School of Medical Sciences",
+        "reasons": [
+          "programme-specific intake is unpublished"
+        ]
+      },
+      {
+        "code": "USM-PHD-ARTICLE-888",
+        "nameEnOfficial": "Doctor of Philosophy - Research",
+        "reasons": [
+          "programme-specific intake is unpublished"
+        ]
+      },
+      {
+        "code": "USM-PHD-ARTICLE-1476",
+        "nameEnOfficial": "Doctor of Philosophy (Offshore European Global School University, Istanbul) - Research",
+        "reasons": [
+          "international eligibility is not explicitly confirmed",
+          "programme-specific intake is unpublished",
+          "no uniquely applicable current international tuition"
+        ]
+      },
+      {
+        "code": "USM-PHD-ARTICLE-408",
+        "nameEnOfficial": "PhD (Joint Degree) - Advanced Medical and Dental Institute",
+        "reasons": [
+          "programme-specific intake is unpublished"
+        ]
+      },
+      {
+        "code": "USM-PHD-ARTICLE-528",
+        "nameEnOfficial": "PhD (Psychology) - Advanced Medical and Dental Institute",
+        "reasons": [
+          "programme-specific intake is unpublished"
+        ]
+      },
+      {
+        "code": "USM-PHD-ARTICLE-510",
+        "nameEnOfficial": "Doctor of Philosophy (Molecular Medicine) - Research",
+        "reasons": [
+          "programme-specific intake is unpublished"
+        ]
+      },
+      {
+        "code": "USM-PHD-ARTICLE-1475",
+        "nameEnOfficial": "Doctor of Philosophy (Offshore European Global School University, Istanbul) - Research",
+        "reasons": [
+          "international eligibility is not explicitly confirmed",
+          "programme-specific intake is unpublished",
+          "no uniquely applicable current international tuition"
+        ]
+      },
+      {
+        "code": "USM-PHD-ARTICLE-448",
+        "nameEnOfficial": "Doctor of Psychology (Psychology Clinical) - USM@KL",
+        "reasons": [
+          "international eligibility is not explicitly confirmed",
+          "no uniquely applicable current international tuition"
+        ]
+      },
+      {
+        "code": "USM-PHD-ARTICLE-447",
+        "nameEnOfficial": "Doctor of Psychology (Neuropsychology Clinical) - USM@KL",
+        "reasons": [
+          "international eligibility is not explicitly confirmed",
+          "no uniquely applicable current international tuition"
+        ]
+      },
+      {
+        "code": "USM-PHD-ARTICLE-565",
+        "nameEnOfficial": "PHD Joint Degree (Broad Programmes) - USM and Newcastle University",
+        "reasons": [
+          "international eligibility is not explicitly confirmed",
+          "programme-specific intake is unpublished",
+          "no uniquely applicable current international tuition"
+        ]
+      }
+    ]
+  },
+  "verification": {
+    "sourceCollection": "passed",
+    "candidateBuild": "passed",
+    "recordAudit": "passed",
+    "deliveryAudit": "not-required",
+    "databaseWrite": "not-required",
+    "apiUiVerification": "not-required"
+  },
+  "decision": "audited-candidate-with-review-exceptions",
+  "databaseWrite": "not-performed"
+}

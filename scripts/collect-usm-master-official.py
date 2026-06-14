@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Collect and audit official USM master's programme data without writing the database."""
+"""Collect and audit official USM postgraduate data without writing the database."""
 
 from __future__ import annotations
 
@@ -149,7 +149,7 @@ def normalized_fee_name(value: str) -> str:
     return re.sub(r"[^a-z0-9]+", " ", normalized).strip()
 
 
-def parse_directory(markdown: str) -> dict:
+def parse_directory(markdown: str, level: str = "master") -> dict:
     school = ""
     occurrences: list[dict] = []
     for match in DIRECTORY_EVENT_PATTERN.finditer(markdown):
@@ -172,8 +172,9 @@ def parse_directory(markdown: str) -> dict:
 
     masters = [item for item in occurrences if item["level"] == "master"]
     doctors = [item for item in occurrences if item["level"] == "phd"]
+    selected = masters if level == "master" else doctors
     by_url: dict[str, dict] = {}
-    for item in masters:
+    for item in selected:
         existing = by_url.get(item["url"])
         if existing:
             existing["directoryOccurrences"] += 1
@@ -181,7 +182,7 @@ def parse_directory(markdown: str) -> dict:
         by_url[item["url"]] = {
             "code": stable_entry_code(item["url"]),
             "nameEnOfficial": item["title"],
-            "level": "master",
+            "level": level,
             "universityCode": "USM",
             "facultyEn": item["school"],
             "campus": "official-detail-review-required",
@@ -199,9 +200,15 @@ def parse_directory(markdown: str) -> dict:
     return {
         "allDirectoryOccurrences": len(occurrences),
         "masterOccurrences": len(masters),
-        "uniqueMasterDetailPages": len(by_url),
+        "uniqueMasterDetailPages": len({item["url"] for item in masters}),
+        "uniqueDoctorDetailPages": len({item["url"] for item in doctors}),
         "doctorOccurrences": len(doctors),
-        "duplicateMasterOccurrences": len(masters) - len(by_url),
+        "duplicateMasterOccurrences": len(masters) - len({item["url"] for item in masters}),
+        "duplicateDoctorOccurrences": len(doctors) - len({item["url"] for item in doctors}),
+        "selectedLevel": level,
+        "selectedOccurrences": len(selected),
+        "uniqueSelectedDetailPages": len(by_url),
+        "duplicateSelectedOccurrences": len(selected) - len(by_url),
         "records": list(by_url.values()),
     }
 
@@ -244,12 +251,19 @@ def parse_offshore_offerings(markdown: str) -> list[dict]:
     return offerings
 
 
-def parse_general_requirements(markdown: str) -> dict:
+def parse_general_requirements(markdown: str, level: str = "master") -> dict:
     master_marker = "****MASTER****"
     doctorate_marker = "****PhD / DOCTORATE****"
     english_marker = "[English Requirements]"
     fast_track_marker = "[Fast-Track To PhD]"
-    academic = markdown.split(master_marker, 1)[1].split(doctorate_marker, 1)[0].strip()
+    if level == "master":
+        academic = markdown.split(master_marker, 1)[1].split(doctorate_marker, 1)[0].strip()
+    else:
+        academic = (
+            markdown.split(doctorate_marker, 1)[1]
+            .split(english_marker, 1)[0]
+            .strip()
+        )
     language = markdown.split(english_marker, 1)[1].split(fast_track_marker, 1)[0].strip()
     return {
         "officialAcademicRequirement": evidence_excerpt(academic, limit=2600),
@@ -490,6 +504,11 @@ def parse_fee_pdf(path: Path) -> dict:
             for row in mixed_rows + coursework_rows + clinical_rows
             if row["level"] == "master"
         ],
+        "doctoralNamedProgrammeFees": [
+            row
+            for row in mixed_rows + coursework_rows + clinical_rows
+            if row["level"] == "phd"
+        ],
     }
 
 
@@ -641,6 +660,7 @@ def reconcile_exact_fee_matches(
     records: list[dict],
     fee_data: dict,
     cache_dir: Path,
+    level: str = "master",
 ) -> dict:
     records_by_name: dict[str, list[dict]] = {}
     for record in records:
@@ -651,7 +671,8 @@ def reconcile_exact_fee_matches(
 
     matches: list[dict] = []
     unresolved: list[dict] = []
-    for fee_row in fee_data["masterNamedProgrammeFees"]:
+    fee_key = "masterNamedProgrammeFees" if level == "master" else "doctoralNamedProgrammeFees"
+    for fee_row in fee_data[fee_key]:
         candidates = records_by_name.get(normalized_fee_name(fee_row["nameEnOfficial"]), [])
         if len(candidates) != 1:
             unresolved.append(
@@ -719,6 +740,7 @@ def build_audit(
     fee_data: dict,
     details: list[dict],
     fee_reconciliation: dict,
+    level: str = "master",
 ) -> dict:
     detail_statuses: dict[str, int] = {}
     missing_fields: dict[str, int] = {}
@@ -733,13 +755,15 @@ def build_audit(
         if detail.get("officialFeeText") and not detail.get("hasExplicit2025FeeUpdate")
     ]
     blocking_reasons = []
-    if directory["uniqueMasterDetailPages"] != 274:
+    expected_count = 274 if level == "master" else 129
+    if directory["uniqueSelectedDetailPages"] != expected_count:
         blocking_reasons.append(
-            f"Expected 274 unique master detail pages, got {directory['uniqueMasterDetailPages']}."
+            f"Expected {expected_count} unique {level} detail pages, "
+            f"got {directory['uniqueSelectedDetailPages']}."
         )
-    if len(details) != directory["uniqueMasterDetailPages"]:
+    if len(details) != directory["uniqueSelectedDetailPages"]:
         blocking_reasons.append(
-            f"Detail count mismatch: directory={directory['uniqueMasterDetailPages']}, "
+            f"Detail count mismatch: directory={directory['uniqueSelectedDetailPages']}, "
             f"details={len(details)}."
         )
     if detail_statuses.get("blocked"):
@@ -776,6 +800,7 @@ def build_audit(
             "researchAcademicUnitRows": len(fee_data["researchAcademicUnitFees"]),
             "namedProgrammeRows": len(fee_data["namedProgrammeFees"]),
             "masterNamedProgrammeRows": len(fee_data["masterNamedProgrammeFees"]),
+            "doctoralNamedProgrammeRows": len(fee_data["doctoralNamedProgrammeFees"]),
         },
         "detailStatuses": detail_statuses,
         "missingOfficialFields": missing_fields,
@@ -792,8 +817,8 @@ def build_audit(
 def build_manifest(args: argparse.Namespace) -> dict:
     retrieved_at = args.retrieved_at or utc_now()
     directory_markdown = args.directory_markdown.read_text(encoding="utf-8")
-    directory = parse_directory(directory_markdown)
-    general_requirements = parse_general_requirements(directory_markdown)
+    directory = parse_directory(directory_markdown, args.level)
+    general_requirements = parse_general_requirements(directory_markdown, args.level)
     offshore = parse_offshore_offerings(directory_markdown)
     fee_data = parse_fee_pdf(args.fee_pdf)
     details = (
@@ -812,17 +837,25 @@ def build_manifest(args: argparse.Namespace) -> dict:
         directory["records"],
         fee_data,
         args.detail_cache,
+        args.level,
     )
-    audit = build_audit(directory, offshore, fee_data, details, fee_reconciliation)
+    audit = build_audit(
+        directory,
+        offshore,
+        fee_data,
+        details,
+        fee_reconciliation,
+        args.level,
+    )
     return {
         "universityCode": "USM",
         "officialDomains": ["usm.my", "admission.usm.my", "ips.usm.my"],
-        "level": "master",
+        "level": args.level,
         "applicantScope": "international",
         "academicSession": "2025/2026",
         "retrievedAt": retrieved_at,
         "declaredProgrammeCount": None,
-        "directoryEntryCount": directory["uniqueMasterDetailPages"],
+        "directoryEntryCount": directory["uniqueSelectedDetailPages"],
         "publicationDecision": audit["publicationDecision"],
         "sources": [
             {
@@ -941,13 +974,16 @@ def main() -> None:
     parser.add_argument("--ips-admission-html", type=Path)
     parser.add_argument("--research-mode-html", type=Path)
     parser.add_argument("--output", required=True, type=Path)
-    parser.add_argument("--detail-cache", type=Path, default=Path("tmp/usm-master-details"))
+    parser.add_argument("--level", choices=("master", "phd"), default="master")
+    parser.add_argument("--detail-cache", type=Path)
     parser.add_argument("--retrieved-at")
     parser.add_argument("--workers", type=int, default=6)
     parser.add_argument("--request-delay", type=float, default=0.0)
     parser.add_argument("--fetch-details", action="store_true")
     parser.add_argument("--refresh", action="store_true")
     args = parser.parse_args()
+    if args.detail_cache is None:
+        args.detail_cache = Path(f"tmp/usm-{args.level}-details")
 
     manifest = build_manifest(args)
     args.output.parent.mkdir(parents=True, exist_ok=True)
@@ -962,8 +998,12 @@ def main() -> None:
                 "directoryEntryCount": manifest["directoryEntryCount"],
                 "detailCount": len(manifest["details"]),
                 "offshoreOfferingCount": len(manifest["offshoreOfferings"]),
-                "masterNamedFeeRows": len(
-                    manifest["feeSchedule"]["masterNamedProgrammeFees"]
+                "namedFeeRows": len(
+                    manifest["feeSchedule"][
+                        "masterNamedProgrammeFees"
+                        if args.level == "master"
+                        else "doctoralNamedProgrammeFees"
+                    ]
                 ),
                 "publicationDecision": manifest["publicationDecision"],
             },
