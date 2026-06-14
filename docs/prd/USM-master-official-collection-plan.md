@@ -37,4 +37,7 @@
 - 2025/2026 硕士具名收费行：110。
 - 研究型院系收费组：47。
 - 274 个详情页已全部采集。
-- 当前发布状态：`blocked`，原因见 `USM-master-official-collection-audit.md`。
+- 274 条目录级完整商用候选已生成。
+- 模式裁决：research 176、mixed 40、coursework 51、clinical 7。
+- 110 条具名硕士收费行已全部完成分配，例外队列为 0。
+- 当前发布状态：`blocked`，仅剩四语本地化、登录后申请选择核验和受控写库门禁，原因见 `USM-master-official-collection-audit.md`。

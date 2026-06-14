@@ -4,12 +4,12 @@
 
 - 审计日期：2026-06-14。
 - 范围：USM、硕士层级、国际申请人。
-- 当前官方费用学年：2025/2026。
-- 采集状态：官方目录、274 个唯一硕士详情页、当前费用页、费用 PDF、IPS 注册页和研究型学期规则已采集。
+- 当前官方费用口径：2025/2026 总表；5 个专业入口按详情页采用 2026/2027 新费率。
+- 采集状态：官方目录、274 个唯一硕士详情页、当前费用、OnlineIPS 申请指南、IPS 注册页和培养模式规则已采集并合并。
 - 发布状态：`blocked`。
 - 数据库状态：未写入、未发布。
 
-本轮确认的是 `274` 个唯一硕士详情页入口，不是最终商用规范专业数。官方目录同时混合研究领域、临床方向、双学位、离岸交付和同名不同模式项目，必须完成身份裁决后才能声明最终专业总数。
+本轮完成 `274` 个唯一硕士详情页入口的目录级完整候选。该数字可作为 USM 当前公开硕士目录入口数，但不能冒充需要登录的 OnlineIPS 最终申请选择数。
 
 ## 官方来源
 
@@ -20,6 +20,7 @@
 | USM Postgraduate Fees PDF | 费用表视觉与结构交叉验证 | 2025/2026，更新于 2025-03-11 | `24bc178e7da6de039ff9e5cd866c580a5f3ed1c73db04d08b8f7ca42cb75bcef` |
 | USM IPS Admission 页面 | 2026 注册活动与注册材料 | 2026 | `8bc410b05fc4909de3d3bf6187cd6acd92bc760bfc293f0b2a2b3490476bec9c` |
 | USM IPS Research Mode 页面 | 研究型学期规则 | 当前规则 | `604bd880c1a0c8528cb7c4233e86c08f80ba4075a126c14b15d46bb23eff2d3e` |
+| OnlineIPS Online Application Guideline | 申请材料与上传规则 | 2026-01 | `92559bbca13240e19d9cec7b761c7718eace5fa86648f3a13a0ea46fd443ece3` |
 
 USM Admission 页面会对当前采集环境返回 WAF 403。目录和详情页使用公开只读页面代理作为传输层，所有来源身份、详情 URL 和字段证据仍绑定 USM 官方域名。费用 PDF 与 IPS 页面直接从官方服务器下载。
 
@@ -45,7 +46,14 @@ USM Admission 页面会对当前采集环境返回 WAF 403。目录和详情页�
 | Double Degree | 1 |
 | Joint Degree | 1 |
 
-标题明确标注的模式为：coursework 34、mixed 25、research 47；另有 168 个标题未明确模式，必须根据详情页和费用表裁决，不能按标题猜测。
+结合目录标题、详情正文和当前费用表后，274 条候选模式已全部裁决：
+
+| 模式 | 数量 |
+| --- | ---: |
+| Research | 176 |
+| Coursework | 51 |
+| Mixed | 40 |
+| Clinical | 7 |
 
 ## 离岸开设
 
@@ -75,37 +83,28 @@ USM Admission 页面会对当前采集环境返回 WAF 403。目录和详情页�
 
 费用页面和 PDF 同时声明：费用可能调整；承诺前应再次确认；如有差异，以 USM Bursary 金额为准。
 
-## 官方冲突
+## 费用裁决
 
-自动化仅对唯一、规范化后完全同名的收费行做初步匹配。49 条收费行完成唯一同名匹配，其中 28 条金额得到详情页印证，10 条详情页未公布费用，11 条出现官方金额冲突候选：
-
-1. Master in Biomedical Science
-2. Master of Science in Building Technology
-3. Master of Science in Molecular Medicine
-4. Master of Social Sciences in Islamic-Based Development Management
-5. Master of Cognitive Neurosciences
-6. Master of Digital Transformation
-7. Master of Science in Clinical Exercise Science
-8. Master of Medicine in Nuclear Medicine
-9. Master of Medicine in Transfusion Medicine
-10. Master of Pathology (Anatomic Pathology)
-11. Master of Pathology (Haematology)
-
-其余 61 条具名硕士收费行需要人工身份映射，主要涉及模式、track、临床方向、双学位、线上或同名不同校区。
-
-当前发布口径应以 2025/2026 官方费用页为主，并保留详情页冲突证据。不能选取更低的旧详情页金额用于展示。
+- 110 条具名硕士收费行已全部分配，例外队列为 0。
+- 同名 `Master of Science in Building Technology` 按 mixed 和 coursework 两种模式分别映射，避免名称覆盖。
+- 教育、景观建筑、Master of Medicine 等方向费用挂在其官方父级目录入口下，不虚增目录数量。
+- `Master of Pathology (Chemical Pathology)` 和 `Master of Pathology (Medical Genetics)` 只有当前官方收费行、没有公开目录入口，作为 2 个待申请系统确认的收费项单独保留。
+- 5 个详情页已明确公布 2026/2027 新费率：Master of Communication 两个入口为国际总学费 USD 8,600；Master of Business Analytics 三个入口为国际总学费 USD 9,030。
+- 其余项目使用 2025/2026 官方费用总表。旧详情页与总表冲突时不采用旧金额。
+- 238 个目录入口具有直接当前费率；另有 4 个父级入口具有方向或 track 当前费率。
+- 32 个入口没有唯一适用的当前公开费率，主要为离岸或新增项目，必须显示“官网未公布/请向 USM 确认”，不得套用本部旧金额。
 
 ## 详情完整性
 
-274 个详情页全部取得内容和哈希，69 个页面具备完整标准栏目，205 个页面至少缺少一个标准栏目：
+274 个详情页全部取得内容和哈希。修复链接式章节标题解析后，71 个页面具备完整标准栏目，203 个页面至少缺少一个标准栏目：
 
-- 62 个未单列专业级学术要求。
-- 62 个未单列专业级语言要求。
-- 62 个未单列结构化学制。
-- 202 个未单列 `SEMESTER INTAKE`。
-- 72 个未单列详情页费用。
+- 60 个未单列专业级学术要求。
+- 60 个未单列专业级语言要求。
+- 60 个未单列结构化学制。
+- 200 个未单列 `SEMESTER INTAKE`。
+- 70 个未单列详情页费用。
 
-这些缺口并非全部是采集失败。部分页面只有长文本介绍；研究型项目可由 IPS 学期规则补证；通用学术和语言要求可作为一般规则，但必须标注为全校规则，不能伪装成专业级要求。
+候选清单已用官方通用要求、研究型学制和学期规则补足结构，并保留 `official-programme-specific`、`official-general-rule`、`official-unpublished` 等证据层级，不把通用规则伪装成专业级要求。
 
 ## 注册与签证
 
@@ -118,16 +117,14 @@ IPS 当前页面公布：
 - 国际在校学习者通常需要 Student Pass/Visa；coursework/mixed 应在新学期前 3 个月办理，research 应在计划注册日前 3 个月办理。
 - Online 和 overseas offshore 项目不要求 Student Pass。
 
-以上是录取后的注册材料，不等于完整的申请阶段材料清单。当前公开页面未提供可用于所有专业的完整申请材料清单，因此该字段继续阻断发布。
+OnlineIPS 2026 官方申请指南另外确认了护照、证件照、本科学位证、成绩单、评分标准、英语成绩或豁免证明、研究计划、推荐人资料和奖学金信等 10 类申请材料及上传规则。研究计划仅适用于研究型申请，推荐人资料适用于研究型或 Master of Medicine。
 
 ## 发布阻断
 
-1. 274 个目录入口尚未完成规范专业、研究方向和开设项裁决。
-2. 61 条具名收费行和全部研究型院系收费组尚未完整映射到规范专业。
-3. 11 个同名项目存在官方费用冲突候选。
-4. 申请阶段材料清单没有完整的当前官方来源。
-5. 专业级缺栏仍需使用官方通用规则或其它学院来源补证并明确证据层级。
-6. 四语本地化、数据库 dry-run、API 和前端验证尚未开始。
+1. 四语 StudyMY 本地化尚未生产和审核。
+2. OnlineIPS 的最终申请选择需要登录，当前不能公开验证其数量是否与 274 个目录入口完全一致。
+3. 32 个目录入口没有唯一适用的当前公开费率，公开页面必须抑制金额并显示官方未公布状态。
+4. 数据库 dry-run、事务导入、API 和前端验证尚未开始。
 
 ## 回滚与安全
 

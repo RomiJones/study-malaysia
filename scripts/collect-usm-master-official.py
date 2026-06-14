@@ -44,10 +44,13 @@ DIRECTORY_EVENT_PATTERN = re.compile(
     r"\*\s+#\s+([^\n]+)|"
     r"###\s+\[([^\]]+)\]\((https://admission\.usm\.my/[^)\n]+)\)"
 )
+SECTION_NAMES = (
+    r"OVERVIEW|ADMISSION REQUIREMENTS|LANGUAGE REQUIREMENTS|DURATION|"
+    r"SEMESTER INTAKE|FEES"
+)
 SECTION_PATTERN = re.compile(
-    r"(?m)^\s*(?:\*\s+)?###\s+"
-    r"(OVERVIEW|ADMISSION REQUIREMENTS|LANGUAGE REQUIREMENTS|DURATION|"
-    r"SEMESTER INTAKE|FEES)\s*$"
+    rf"(?m)^\s*(?:\*\s+)?(?:###\s+)?"
+    rf"(?:\[({SECTION_NAMES})\]\([^)]+\)|({SECTION_NAMES}))\s*$"
 )
 
 
@@ -512,7 +515,7 @@ def extract_sections(markdown: str) -> dict[str, str]:
     for index, match in enumerate(matches):
         start = match.end()
         end = matches[index + 1].start() if index + 1 < len(matches) else len(markdown)
-        key = match.group(1).lower().replace(" ", "_")
+        key = (match.group(1) or match.group(2)).lower().replace(" ", "_")
         sections[key] = markdown[start:end].strip()
     return sections
 

@@ -17,8 +17,16 @@
   - 生成缺失字段、旧费用和发布阻断清单。
 - `scripts/verify-usm-master-official.py`
   - 校验固定来源计数、唯一身份、官方域名、来源哈希和只读发布状态。
+- `scripts/build-usm-master-commercial-candidate.py`
+  - 将目录、详情、研究型收费组、具名收费行和 OnlineIPS 申请指南合并为目录级完整候选。
+  - 批量处理正常记录，只保留无法自动裁决的例外队列。
+  - 专业页明确公布 2026/2027 新费率时，优先于 2025/2026 总表。
+- `scripts/verify-usm-master-commercial-candidate.py`
+  - 校验 274 条目录记录、110 条具名收费行、培养模式、申请材料、字段状态和来源哈希。
 - `data/imports/usm/2026-06-14/master-official-source.json`
   - 保存本轮来源图、目录记录、费用结构、详情证据和审计结果。
+- `data/imports/usm/2026-06-14/master-commercial-candidate.json`
+  - 保存目录级完整候选、费用分配、申请材料、未公布状态和发布门禁。
 - `tmp/usm-master-details`
   - 保存可重试的传输缓存，不作为业务数据或发布来源。
 
@@ -59,6 +67,15 @@ python3 scripts/collect-usm-master-official.py \
 ```bash
 python3 scripts/verify-usm-master-official.py \
   --manifest data/imports/usm/2026-06-14/master-official-source.json
+
+python3 scripts/build-usm-master-commercial-candidate.py \
+  --source data/imports/usm/2026-06-14/master-official-source.json \
+  --application-guide tmp/pdfs/usm-master/online-application-guide-2026.pdf \
+  --coursework-mixed-html tmp/usm-ips-coursework-mixed.html \
+  --output data/imports/usm/2026-06-14/master-commercial-candidate.json
+
+python3 scripts/verify-usm-master-commercial-candidate.py \
+  --manifest data/imports/usm/2026-06-14/master-commercial-candidate.json
 ```
 
 本任务不提供写库接口。后续写库必须建立新的中文任务并通过备份、dry-run、事务导入、API 与四语前端验证。
