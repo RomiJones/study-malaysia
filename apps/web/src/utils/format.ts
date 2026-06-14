@@ -937,6 +937,60 @@ export function formatProgramTuition(program: ProgramDisplayFields, fallback?: s
   return actualFallback;
 }
 
+export function formatProgramListTuition(
+  program: ProgramDisplayFields,
+  fallback?: string,
+  locale?: SupportedLocale
+): string {
+  const detailed = formatProgramTuition(program, fallback, locale);
+  const explicitDisplay = String(
+    program.tuitionDisplay || program.listTuitionText || program.tuitionInfo?.displayText || ""
+  ).trim();
+  if (!explicitDisplay || program.officialFeeAuditStatus === "not-published") return detailed;
+
+  const rangeMatch = explicitDisplay.match(
+    /\b(USD|CNY|MYR|RM)\s*([\d,]+(?:\.\d+)?)\s*[-–—]\s*([\d,]+(?:\.\d+)?)/i
+  );
+  if (rangeMatch) {
+    const prefix = rangeMatch[1].toUpperCase() === "MYR" ? "RM" : rangeMatch[1].toUpperCase();
+    return `${prefix} ${rangeMatch[2]} - ${rangeMatch[3]}`;
+  }
+
+  const feeMatches = [...explicitDisplay.matchAll(/\b(USD|CNY|MYR|RM)\s*([\d,]+(?:\.\d+)?)/gi)];
+  if (feeMatches.length < 2) return detailed;
+  const prefixes = new Set(feeMatches.map((match) => match[1].toUpperCase() === "MYR" ? "RM" : match[1].toUpperCase()));
+  if (prefixes.size !== 1) return detailed;
+
+  const amounts = feeMatches
+    .map((match) => Number(match[2].replace(/,/g, "")))
+    .filter((amount) => Number.isFinite(amount) && amount > 0);
+  if (!amounts.length) return detailed;
+
+  const minimum = Math.min(...amounts);
+  const maximum = Math.max(...amounts);
+  const amountLabel = minimum === maximum
+    ? formatCurrency(minimum)
+    : `${formatCurrency(minimum)} - ${formatCurrency(maximum)}`;
+  const prefix = [...prefixes][0];
+  const isPerSemester = /(?:\bper\s+semester\b|\/\s*semester\b|每\s*(?:个)?学期|每\s*(?:個)?學期|\/\s*(?:学期|學期))/i.test(explicitDisplay);
+  if (isPerSemester) {
+    const semesterLabel = locale === "zh-CN"
+      ? "学期"
+      : locale === "zh-TW"
+        ? "學期"
+        : "semester";
+    return `${prefix} ${amountLabel} / ${semesterLabel}`;
+  }
+
+  const isPerYear = /(?:\bper\s+year\b|\/\s*year\b|每年|\/\s*年)/i.test(explicitDisplay);
+  if (isPerYear) {
+    const yearLabel = locale === "ms" ? "tahun" : locale === "en" ? "year" : "年";
+    return `${prefix} ${amountLabel} / ${yearLabel}`;
+  }
+
+  return `${prefix} ${amountLabel}`;
+}
+
 export function formatProgramDuration(program: ProgramDisplayFields, locale?: SupportedLocale): string {
   if (hasDisplayText(program.durationOfficial)) return normalizeAcademicText(program.durationOfficial, undefined, locale);
   const years = finitePositiveNumber(program.durationYears);

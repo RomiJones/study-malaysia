@@ -10,6 +10,7 @@ import {
   formatProgramFacultyLabel,
   formatProgramIntake,
   formatProgramLanguage,
+  formatProgramListTuition,
   formatProgramTuition,
   formatVerifiedOfficialText,
   formatRuntimeDisplayText,
@@ -65,6 +66,30 @@ describe("web display format helpers", () => {
         officialFeeSourceUrl: "https://example.edu/fee"
       }), undefined, "zh-CN"),
       "USD 1,800 / 学期 (全日制)"
+    );
+    assert.equal(
+      formatProgramListTuition(program({
+        tuitionDisplay: "USD 1,800 per semester (full-time); USD 1,530 per semester (part-time)",
+        officialFeeAuditStatus: "matched-official",
+        officialFeeSourceUrl: "https://example.edu/fee"
+      }), undefined, "zh-CN"),
+      "USD 1,530 - 1,800 / 学期"
+    );
+    assert.equal(
+      formatProgramListTuition(program({
+        tuitionDisplay: "USD 6,300-9,380 total, varies by track",
+        officialFeeAuditStatus: "matched-official",
+        officialFeeSourceUrl: "https://example.edu/fee"
+      }), undefined, "zh-CN"),
+      "USD 6,300 - 9,380"
+    );
+    assert.equal(
+      formatProgramListTuition(program({
+        tuitionDisplay: "USD 6,300 total (track A); USD 9,380 total (track B)",
+        officialFeeAuditStatus: "matched-official",
+        officialFeeSourceUrl: "https://example.edu/fee"
+      }), undefined, "zh-CN"),
+      "USD 6,300 - 9,380"
     );
   });
 

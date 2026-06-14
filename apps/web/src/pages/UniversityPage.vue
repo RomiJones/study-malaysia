@@ -222,7 +222,7 @@
                     <span class="programme-pill">{{ durationLabel(program) }}</span>
                   </div>
                   <div class="programme-cell" :data-label="t('university.officialTuition')">
-                    <div class="programme-fee-main">{{ tuitionLabel(program) }}</div>
+                    <div class="programme-fee-main">{{ tuitionListLabel(program) }}</div>
                     <div class="programme-fee-status" :class="{ review: program.officialFeeAuditStatus !== 'matched-official' }">
                       {{ feeStatus(program) }}
                     </div>
@@ -504,6 +504,7 @@ import {
   formatProgramFacultyLabel,
   formatProgramDuration,
   formatProgramIntake,
+  formatProgramListTuition,
   formatProgramLanguage,
   formatProgramTuition,
   formatVerifiedOfficialText,
@@ -856,6 +857,10 @@ function compactNumber(value: number) {
 
 function tuitionLabel(program: ProgramListItem | ProgramCatalogDetail) {
   return formatProgramTuition(program, undefined, currentLocale.value);
+}
+
+function tuitionListLabel(program: ProgramListItem | ProgramCatalogDetail) {
+  return formatProgramListTuition(program, undefined, currentLocale.value);
 }
 
 function feeStatus(program: ProgramListItem | ProgramCatalogDetail) {
