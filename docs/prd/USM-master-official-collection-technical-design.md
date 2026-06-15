@@ -23,6 +23,7 @@
   - 专业页明确公布 2026/2027 新费率时，优先于 2025/2026 总表。
 - `scripts/verify-usm-master-commercial-candidate.py`
   - 校验 305 条当前目录记录、110 条具名收费行、培养模式、申请材料、字段状态和来源哈希。
+  - 阻断费用范围、推算总额、无数字却标记为已核实总学费，以及每学期费率误写入主总额。
 - `data/imports/usm/2026-06-14/master-official-source.json`
   - 保存本轮来源图、目录记录、费用结构、详情证据和审计结果。
 - `data/imports/usm/2026-06-14/master-commercial-candidate.json`
@@ -88,6 +89,9 @@ python3 scripts/verify-usm-master-commercial-candidate.py \
 - 固定目录计数和唯一 URL 校验。
 - 离岸开设项按国家和层级统计。
 - 费用表行数、币种、计费口径和学年校验。
+- 只有官网直接公布的唯一标准项目总学费可以进入主学费字段。
+- 研究型每学期费率统一标记为 `official-rate-only`，不得按学制计算总额或范围。
+- 不同方向总额不一致时，主项目保持“官方未公布”，不得聚合最低至最高值。
 - 官方来源域名与本地证据哈希校验。
 - 详情采集失败与字段缺失必须显式进入审计。
 - 发布状态必须保持 `blocked`，直到身份、费用映射、申请材料和四语门禁全部通过。

@@ -46,6 +46,8 @@ describe("USM undergraduate commercial publication", () => {
 
     assert.ok(rows.every((row) => /^\d+(?:\.\d+)? years$/.test(String(row.durationOfficial))));
     assert.ok(rows.every((row) => !/semesters?/i.test(String(row.durationOfficial))));
+    assert.ok(rows.every((row) => !/per semester/i.test(String(row.tuitionDisplay))));
+    assert.ok(rows.every((row) => !/per semester/i.test(String(row.listTuitionText))));
     assert.ok(source.programmes.every((item) =>
       item.nameEnOfficial
       && item.nameMs

@@ -36,7 +36,7 @@
     },
     "feeCounts": {
       "verified-current-official-fee": 13,
-      "official-total-unpublished": 62,
+      "official-rate-only": 62,
       "official-unpublished": 20
     },
     "doctoralNamedFeeRows": 13,

@@ -6,6 +6,7 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
+from collections import Counter
 from pathlib import Path
 
 
@@ -40,8 +41,41 @@ def main() -> None:
         errors.append("At least one record has no intake status.")
     if any(not item.get("fee", {}).get("status") for item in records):
         errors.append("At least one record has no fee status.")
+    rate_only = [
+        item
+        for item in records
+        if item.get("fee", {}).get("international", {}).get("fullTimePerSemester")
+    ]
+    if any(item["fee"]["status"] != "official-rate-only" for item in rate_only):
+        errors.append("Per-semester fee evidence must use official-rate-only status.")
+    if any(item["fee"].get("international", {}).get("amount") for item in rate_only):
+        errors.append("Rate-only fee evidence must not contain a total amount.")
+    if any(
+        "calculated" in item.get("fee", {}).get("status", "").lower()
+        for item in records
+    ):
+        errors.append("Calculated tuition status is forbidden.")
+    if any(
+        item["fee"]["status"] == "verified-current-official-fee"
+        and not item["fee"].get("international", {}).get("amount")
+        for item in records
+    ):
+        errors.append("Verified official fee status requires a numeric total amount.")
     if any(not item.get("evidence", {}).get("detailSha256") for item in records):
         errors.append("At least one record has no detail evidence hash.")
+    eligibility_counts = Counter(
+        item.get("internationalEligibility") for item in records
+    )
+    expected_eligibility = {
+        "officially-addresses-international-applicants": 302,
+        "available-after-official-review": 2,
+        "not-eligible-malaysian-candidate-only": 1,
+    }
+    if dict(eligibility_counts) != expected_eligibility:
+        errors.append(
+            f"Expected international eligibility partition {expected_eligibility}, "
+            f"got {dict(eligibility_counts)}."
+        )
 
     allocations = data.get("feeRowAllocations", [])
     if len(allocations) != 110:
@@ -75,7 +109,11 @@ def main() -> None:
         errors.append("Publication decision must allow only the audited ready subset.")
 
     unpublished_fees = sum(
-        item["fee"]["status"] != "verified-current-official-fee"
+        item["fee"]["status"]
+        in {
+            "official-current-fee-not-published-for-directory-entry",
+            "official-total-unpublished",
+        }
         and not item.get("specialisationOrVariantFees")
         for item in records
     )
@@ -89,6 +127,8 @@ def main() -> None:
         "modeCounts": data.get("audit", {}).get("modeCounts"),
         "namedFeeRowsAccountedFor": len(allocations),
         "feeOnlyOfferings": len(data.get("feeOnlyOfferings", [])),
+        "officialRateOnly": len(rate_only),
+        "eligibility": dict(sorted(eligibility_counts.items())),
         "errors": errors,
         "warnings": warnings,
     }

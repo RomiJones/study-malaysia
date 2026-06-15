@@ -655,7 +655,13 @@ export function extractCgpa(text: string) {
 }
 
 function feePresentation(record: CandidateRecord) {
-  const direct = record.fee.status === "verified-current-official-fee" ? record.fee : null;
+  const direct = [
+    "verified-current-official-fee",
+    "official-rate-only",
+    "official-total-unpublished"
+  ].includes(record.fee.status)
+    ? record.fee
+    : null;
   const variants = record.specialisationOrVariantFees.filter(
     (fee) => fee.status === "verified-current-official-fee" && fee.international
   );

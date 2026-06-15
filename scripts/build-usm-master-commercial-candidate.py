@@ -20,6 +20,19 @@ COURSEWORK_MIXED_URL = (
     "coursework-and-mixed-mode-programme"
 )
 
+# Officially reviewed international eligibility decisions that are not
+# recoverable from fee availability alone.
+INTERNATIONAL_ELIGIBILITY_OVERRIDES = {
+    "USM-PG-ARTICLE-118-E8F9BDA4": {
+        "status": "available-after-official-review",
+        "reason": "Current official dual-degree programme entry and international postgraduate application rules confirm international scope.",
+    },
+    "USM-PG-ARTICLE-882-4E737064": {
+        "status": "available-after-official-review",
+        "reason": "Current official programme entry and international postgraduate application rules confirm international scope.",
+    },
+}
+
 APPLICATION_DOCUMENTS = [
     {"id": "passport", "nameEn": "Passport for international applicants", "sourcePage": 2},
     {"id": "photo", "nameEn": "Passport-size photograph", "sourcePage": 2},
@@ -425,7 +438,7 @@ def research_fee_for(record: dict, research_fees: dict[str, dict]) -> dict | Non
     if not row:
         return None
     return {
-        "status": "verified-current-official-fee",
+        "status": "official-rate-only",
         "feeType": "research-academic-unit",
         "academicUnit": unit,
         "academicSession": row["academicSession"],
@@ -437,8 +450,13 @@ def research_fee_for(record: dict, research_fees: dict[str, dict]) -> dict | Non
 
 
 def named_fee_value(row: dict, allocation: str) -> dict:
+    international_amount = row.get("international", {}).get("amount")
     return {
-        "status": "verified-current-official-fee",
+        "status": (
+            "verified-current-official-fee"
+            if international_amount is not None
+            else "official-total-unpublished"
+        ),
         "feeType": allocation,
         "officialFeeName": row["nameEnOfficial"],
         "studyMode": row["studyMode"],
@@ -701,6 +719,9 @@ def main() -> None:
             if international_evidence
             else "not-explicitly-confirmed-on-public-detail"
         )
+        eligibility_override = INTERNATIONAL_ELIGIBILITY_OVERRIDES.get(record["code"])
+        if eligibility_override:
+            international_eligibility = eligibility_override["status"]
         if re.search(
             r"malaysian(?:\s+candidate)?\s+only",
             record["nameEnOfficial"],
@@ -728,6 +749,15 @@ def main() -> None:
                 "studyModeSource": mode_source,
                 "delivery": record["delivery"],
                 "internationalEligibility": international_eligibility,
+                **(
+                    {
+                        "internationalEligibilityEvidence": eligibility_override[
+                            "reason"
+                        ]
+                    }
+                    if eligibility_override
+                    else {}
+                ),
                 "identityStatus": "verified-official-public-directory-entry",
                 "overviewOfficial": detail.get("overviewExcerpt") or "",
                 "academicRequirement": {

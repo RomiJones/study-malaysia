@@ -403,7 +403,7 @@ function officialLanguageRequirement(programme: CommercialProgramme) {
 
 function toProgramRow(programme: CommercialProgramme, verifiedAt: string): DeepPartial<ProgramEntity> {
   const feeNote = [
-    `Official tuition: USD ${money(programme.tuitionPerSemesterUSD)} per semester; USD ${money(programme.totalTuitionUSD)} total programme tuition.`,
+    `Official standard total programme tuition: USD ${money(programme.totalTuitionUSD)}.`,
     `Official recurrent fee: USD ${money(programme.recurrentFeePerSemesterUSD)} per semester.`,
     `Official registration fee: USD ${money(programme.registrationFeeUSD)} payable upon registration.`,
     programme.feeNote,

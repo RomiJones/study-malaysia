@@ -19,7 +19,8 @@
 
 ## 终审裁决
 
-- 75 条未公布专业级 intake 和 20 条未公布唯一适用国际学费被明确标为“官方未公布”，不再因缺少可选字段自动阻断。
+- 75 条未公布专业级 intake 被明确标为“官方未公布”，不再因缺少可选字段自动阻断。
+- 严格总学费规则下，硕士 187 条、博士 82 条没有唯一官方标准总额：其中 213 条仅有官方费率，另 56 条没有数字总额，公开层均显示“官方未公布”。
 - 20 条 offshore 博士由 USM 官方研究生招生页的境外项目国际学生政策、项目页和国际申请语言要求共同确认，转为 `ready`。
 - DBA 由官方项目页和商学院材料确认全日制 3.5–5 年、非全日制 4.5–7 年，转为 `ready`。
 - 固体物理国际双学位硕士和先进制造工程与管理硕士经官方项目页复核，转为 `ready`。
@@ -47,6 +48,7 @@
 - USM `programCount=460`。
 - `officialProfile.catalogStatusSummary` 返回总数 463、公开 460、待审核 0、国际生不可用 3。
 - 公开 API 按层级返回本科 63、硕士 304、博士 93，全部为 `ready`。
+- 公开 API 的 460 条记录中，191 条展示唯一官方总学费，269 条明确显示官方未公布；费用范围、估算总额和费率型主显示均为 0。
 
 ## 验证命令
 
@@ -56,9 +58,10 @@
 - `npm --workspace @studymy/api run verify:usm:undergraduate:commercial`
 - `npm --workspace @studymy/api run verify:usm:master:commercial`
 - `npm --workspace @studymy/api run verify:usm:phd:commercial`
+- `node scripts/verify-usm-commercial-release.mjs`
 - `npm --workspace @studymy/api run start`
 
-结果：全量测试 133 通过、1 跳过；生产构建、四语审计、三个数据库专项验证和生产 API 启动均通过。
+结果：一键商用门禁决策为 `commercial-release-ready`；全量测试 133 通过、1 跳过，生产构建、四语审计、三个数据库专项验证、总学费政策、公开 API、四语真实浏览器和浏览器控制台检查均通过。
 
 ## 浏览器验收
 
@@ -77,12 +80,12 @@
 | --- | --- |
 | `master-current-catalogue.json` | `c02a5464d577b0ab7f4cd1daf677137282e50b3191f71be6fef7fe5773183dd0` |
 | `master-official-source.json` | `ee7e131915bc4161aae4eb55fe2e27dabb629af1e1ba3fb08772ef3e0451f190` |
-| `master-commercial-candidate.json` | `670943df0596c0bceaf64274ce32f99ef6c3af349fbab97e36636dc2f7322923` |
+| `master-commercial-candidate.json` | `eb87f795a061f739278c49860c926bffe668baddc233a7c07056fcff1a84c1f7` |
 | `phd-current-catalogue.json` | `03be7bc3fadfbb2313e6ddefbdf02457481832041724176bccdd60ad878c9372` |
 | `phd-official-source.json` | `9e889a530617c4bfb0b178f38574962e9936fbabd20320b4f6e3fa21ac53b4bc` |
-| `phd-candidate.json` | `23e80798f4068b51638a175ba4ca27bb1fff556ef521c5b7097548fde8a17e24` |
-| `phd-audit.json` | `2ae9dc5c8dfcfe58390c8b2adb986ac83e30db76a2563be60d46a44466d96dd7` |
-| `phd-delivery.json` | `166508ff18077cccf89df8375a00a67d341dcb6420e49f73379a79ab067d0620` |
+| `phd-candidate.json` | `d7ded915faf33e68c81962aa439661f8102d77971f60375da8b3a22f7a26ece0` |
+| `phd-audit.json` | `ccbff2b6c864e38a6399dd9e607498a6ca252d66ed53e076b78948c83743a1c1` |
+| `phd-delivery.json` | `6fdd9d5d7db8fd1543de13459ce7338023ae38fd30780ec8c8cc4e330cd1753b` |
 
 ## 回滚与 Notion
 

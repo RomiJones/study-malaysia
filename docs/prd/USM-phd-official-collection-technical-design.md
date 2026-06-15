@@ -39,9 +39,9 @@ USM Admission 页面受 WAF 保护时，使用只读公开渲染或浏览器动�
 ## 字段裁决
 
 - 研究型博士全日制采用官方 4–10 学期，主显示为 2–5 年；非研究型项目优先使用详情页学制。
-- 研究型费用按官方院系映射国际全日制每学期费率，并计算 4–10 学期总学费区间。
+- 研究型费用按官方院系映射国际全日制每学期费率，标记为 `official-rate-only`；不计算 4–10 学期总额或费用范围。
 - DBA、Doctor of Neuroscience、Doctor of Public Health、Doctor of Education 和联合 Doctor of Psychology 使用官方总学费。
-- offshore、USM@KL 非联合心理学博士和 Newcastle 联合 PhD 没有唯一当前费用时保持 `official-unpublished`。
+- 仅有费率或没有唯一当前总学费的项目保持 `official-unpublished`；offshore、USM@KL 非联合心理学博士和 Newcastle 联合 PhD 同样适用。
 - `Malaysian Candidate Only` 进入 `not-available-for-international`。
 - 详情页或当前国际费用权威来源无法确认国际范围时进入 `needs-review`。
 - 专业级字段缺失时使用 `general-rule`、`official-unpublished` 或 `not-confirmed`，不伪装为专业原文。
@@ -55,7 +55,7 @@ USM Admission 页面受 WAF 保护时，使用只读公开渲染或浏览器动�
 - `phd-delivery.json`：一次交付范围、三类计数、状态分区、验证与决策。
 - `sources/`：当前目录、费用页、费用 PDF、IPS 规则页和申请指南的版本化原始证据。
 
-专项验证器校验固定计数、唯一身份、官方域名、可离线读取的来源哈希、字段覆盖、费用行、状态分区和未写库约束。`scripts/audit_delivery.py` 校验最终交付 envelope。
+专项验证器校验固定计数、唯一身份、官方域名、可离线读取的来源哈希、字段覆盖、费用行、状态分区、总学费标量约束和未写库约束。`scripts/audit_delivery.py` 校验最终交付 envelope。
 
 ## 回滚
 

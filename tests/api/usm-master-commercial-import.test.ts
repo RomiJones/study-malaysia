@@ -114,4 +114,10 @@ test("USM master rows show only unique official total tuition", () => {
   assert.equal(unpublished?.tuitionAmount, null);
   assert.ok(rows.every((row) => !/[\d,]+-[\d,]+.*tuition/i.test(String(row.tuitionDisplay))));
   assert.ok(rows.every((row) => !/estimated total/i.test(String(row.tuitionDisplay))));
+  assert.equal(
+    source.records
+      .filter((row) => row.fee.international?.fullTimePerSemester)
+      .every((row) => row.fee.status === "official-rate-only"),
+    true
+  );
 });

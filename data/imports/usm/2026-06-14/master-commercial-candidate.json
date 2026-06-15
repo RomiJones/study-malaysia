@@ -1,6 +1,6 @@
 {
   "schemaVersion": "studymy-usm-master-candidate-v1",
-  "generatedAt": "2026-06-14T18:48:15Z",
+  "generatedAt": "2026-06-15T08:20:37Z",
   "universityCode": "USM",
   "level": "master",
   "applicantScope": "international",
@@ -839,7 +839,7 @@
         "status": "official-research-semester-rule"
       },
       "fee": {
-        "status": "verified-current-official-fee",
+        "status": "official-rate-only",
         "feeType": "research-academic-unit",
         "academicUnit": "School of Humanities",
         "academicSession": "2025/2026",
@@ -916,7 +916,7 @@
         "status": "official-research-semester-rule"
       },
       "fee": {
-        "status": "verified-current-official-fee",
+        "status": "official-rate-only",
         "feeType": "research-academic-unit",
         "academicUnit": "Centre for Global Archaeological Research",
         "academicSession": "2025/2026",
@@ -993,7 +993,7 @@
         "status": "official-research-semester-rule"
       },
       "fee": {
-        "status": "verified-current-official-fee",
+        "status": "official-rate-only",
         "feeType": "research-academic-unit",
         "academicUnit": "School of Distance Education (Arts)",
         "academicSession": "2025/2026",
@@ -1070,7 +1070,7 @@
         "status": "official-research-semester-rule"
       },
       "fee": {
-        "status": "verified-current-official-fee",
+        "status": "official-rate-only",
         "feeType": "research-academic-unit",
         "academicUnit": "School of Communication",
         "academicSession": "2025/2026",
@@ -1147,7 +1147,7 @@
         "status": "official-research-semester-rule"
       },
       "fee": {
-        "status": "verified-current-official-fee",
+        "status": "official-rate-only",
         "feeType": "research-academic-unit",
         "academicUnit": "School of Arts",
         "academicSession": "2025/2026",
@@ -6757,7 +6757,7 @@
         "status": "official-research-semester-rule"
       },
       "fee": {
-        "status": "verified-current-official-fee",
+        "status": "official-rate-only",
         "feeType": "research-academic-unit",
         "academicUnit": "School of Arts",
         "academicSession": "2025/2026",
@@ -6834,7 +6834,7 @@
         "status": "official-research-semester-rule"
       },
       "fee": {
-        "status": "verified-current-official-fee",
+        "status": "official-rate-only",
         "feeType": "research-academic-unit",
         "academicUnit": "School of Distance Education (Arts)",
         "academicSession": "2025/2026",
@@ -6974,7 +6974,7 @@
         "status": "official-research-semester-rule"
       },
       "fee": {
-        "status": "verified-current-official-fee",
+        "status": "official-rate-only",
         "feeType": "research-academic-unit",
         "academicUnit": "National Higher Education Research Institute",
         "academicSession": "2025/2026",
@@ -7051,7 +7051,7 @@
         "status": "official-research-semester-rule"
       },
       "fee": {
-        "status": "verified-current-official-fee",
+        "status": "official-rate-only",
         "feeType": "research-academic-unit",
         "academicUnit": "School of Distance Education (Arts)",
         "academicSession": "2025/2026",
@@ -7128,7 +7128,7 @@
         "status": "official-research-semester-rule"
       },
       "fee": {
-        "status": "verified-current-official-fee",
+        "status": "official-rate-only",
         "feeType": "research-academic-unit",
         "academicUnit": "School of Languages, Literacies and Translation",
         "academicSession": "2025/2026",
@@ -7205,7 +7205,7 @@
         "status": "official-research-semester-rule"
       },
       "fee": {
-        "status": "verified-current-official-fee",
+        "status": "official-rate-only",
         "feeType": "research-academic-unit",
         "academicUnit": "School of Languages, Literacies and Translation",
         "academicSession": "2025/2026",
@@ -7282,7 +7282,7 @@
         "status": "official-research-semester-rule"
       },
       "fee": {
-        "status": "verified-current-official-fee",
+        "status": "official-rate-only",
         "feeType": "research-academic-unit",
         "academicUnit": "School of Distance Education (Arts)",
         "academicSession": "2025/2026",
@@ -7359,7 +7359,7 @@
         "status": "official-research-semester-rule"
       },
       "fee": {
-        "status": "verified-current-official-fee",
+        "status": "official-rate-only",
         "feeType": "research-academic-unit",
         "academicUnit": "School of Arts",
         "academicSession": "2025/2026",
@@ -7562,7 +7562,7 @@
         "status": "official-research-semester-rule"
       },
       "fee": {
-        "status": "verified-current-official-fee",
+        "status": "official-rate-only",
         "feeType": "research-academic-unit",
         "academicUnit": "Centre for Global Sustainability Studies (Arts)",
         "academicSession": "2025/2026",
@@ -7782,7 +7782,7 @@
         "status": "official-research-semester-rule"
       },
       "fee": {
-        "status": "verified-current-official-fee",
+        "status": "official-rate-only",
         "feeType": "research-academic-unit",
         "academicUnit": "School of Management",
         "academicSession": "2025/2026",
@@ -7859,7 +7859,7 @@
         "status": "official-research-semester-rule"
       },
       "fee": {
-        "status": "verified-current-official-fee",
+        "status": "official-rate-only",
         "feeType": "research-academic-unit",
         "academicUnit": "School of Distance Education (Arts)",
         "academicSession": "2025/2026",
@@ -7936,7 +7936,7 @@
         "status": "official-research-semester-rule"
       },
       "fee": {
-        "status": "verified-current-official-fee",
+        "status": "official-rate-only",
         "feeType": "research-academic-unit",
         "academicUnit": "School of Educational Studies",
         "academicSession": "2025/2026",
@@ -8013,7 +8013,7 @@
         "status": "official-research-semester-rule"
       },
       "fee": {
-        "status": "verified-current-official-fee",
+        "status": "official-rate-only",
         "feeType": "research-academic-unit",
         "academicUnit": "Centre for Instructional Technology and Multimedia",
         "academicSession": "2025/2026",
@@ -8090,7 +8090,7 @@
         "status": "official-research-semester-rule"
       },
       "fee": {
-        "status": "verified-current-official-fee",
+        "status": "official-rate-only",
         "feeType": "research-academic-unit",
         "academicUnit": "School of Distance Education (Arts)",
         "academicSession": "2025/2026",
@@ -8167,7 +8167,7 @@
         "status": "official-research-semester-rule"
       },
       "fee": {
-        "status": "verified-current-official-fee",
+        "status": "official-rate-only",
         "feeType": "research-academic-unit",
         "academicUnit": "School of Management",
         "academicSession": "2025/2026",
@@ -8564,7 +8564,7 @@
         "status": "official-research-semester-rule"
       },
       "fee": {
-        "status": "verified-current-official-fee",
+        "status": "official-rate-only",
         "feeType": "research-academic-unit",
         "academicUnit": "School of Distance Education (Arts)",
         "academicSession": "2025/2026",
@@ -8641,7 +8641,7 @@
         "status": "official-research-semester-rule"
       },
       "fee": {
-        "status": "verified-current-official-fee",
+        "status": "official-rate-only",
         "feeType": "research-academic-unit",
         "academicUnit": "School of Management",
         "academicSession": "2025/2026",
@@ -9038,7 +9038,7 @@
         "status": "official-unpublished"
       },
       "fee": {
-        "status": "verified-current-official-fee",
+        "status": "official-total-unpublished",
         "feeType": "named-programme",
         "officialFeeName": "Master of Business Administration - Double Degree UK",
         "studyMode": "coursework",
@@ -14776,7 +14776,7 @@
         "status": "official-research-semester-rule"
       },
       "fee": {
-        "status": "verified-current-official-fee",
+        "status": "official-rate-only",
         "feeType": "research-academic-unit",
         "academicUnit": "Centre for Islamic Dev. Management Studies",
         "academicSession": "2025/2026",
@@ -14853,7 +14853,7 @@
         "status": "official-research-semester-rule"
       },
       "fee": {
-        "status": "verified-current-official-fee",
+        "status": "official-rate-only",
         "feeType": "research-academic-unit",
         "academicUnit": "School of Social Sciences",
         "academicSession": "2025/2026",
@@ -23186,7 +23186,7 @@
         "status": "official-research-semester-rule"
       },
       "fee": {
-        "status": "verified-current-official-fee",
+        "status": "official-rate-only",
         "feeType": "research-academic-unit",
         "academicUnit": "National Advanced IPv6 Centre",
         "academicSession": "2025/2026",
@@ -23263,7 +23263,7 @@
         "status": "official-research-semester-rule"
       },
       "fee": {
-        "status": "verified-current-official-fee",
+        "status": "official-rate-only",
         "feeType": "research-academic-unit",
         "academicUnit": "Analytical Biochemistry Research Centre",
         "academicSession": "2025/2026",
@@ -23340,7 +23340,7 @@
         "status": "official-research-semester-rule"
       },
       "fee": {
-        "status": "verified-current-official-fee",
+        "status": "official-rate-only",
         "feeType": "research-academic-unit",
         "academicUnit": "School of Medical Sciences",
         "academicSession": "2025/2026",
@@ -23417,7 +23417,7 @@
         "status": "official-research-semester-rule"
       },
       "fee": {
-        "status": "verified-current-official-fee",
+        "status": "official-rate-only",
         "feeType": "research-academic-unit",
         "academicUnit": "School of Biological Sciences",
         "academicSession": "2025/2026",
@@ -23494,7 +23494,7 @@
         "status": "official-research-semester-rule"
       },
       "fee": {
-        "status": "verified-current-official-fee",
+        "status": "official-rate-only",
         "feeType": "research-academic-unit",
         "academicUnit": "School of Biological Sciences",
         "academicSession": "2025/2026",
@@ -23571,7 +23571,7 @@
         "status": "official-research-semester-rule"
       },
       "fee": {
-        "status": "verified-current-official-fee",
+        "status": "official-rate-only",
         "feeType": "research-academic-unit",
         "academicUnit": "School of Biological Sciences",
         "academicSession": "2025/2026",
@@ -23648,7 +23648,7 @@
         "status": "official-research-semester-rule"
       },
       "fee": {
-        "status": "verified-current-official-fee",
+        "status": "official-rate-only",
         "feeType": "research-academic-unit",
         "academicUnit": "School of Distance Education (Arts)",
         "academicSession": "2025/2026",
@@ -23725,7 +23725,7 @@
         "status": "official-research-semester-rule"
       },
       "fee": {
-        "status": "verified-current-official-fee",
+        "status": "official-rate-only",
         "feeType": "research-academic-unit",
         "academicUnit": "Advanced Medical and Dental Institute",
         "academicSession": "2025/2026",
@@ -23802,7 +23802,7 @@
         "status": "official-research-semester-rule"
       },
       "fee": {
-        "status": "verified-current-official-fee",
+        "status": "official-rate-only",
         "feeType": "research-academic-unit",
         "academicUnit": "School of Health Sciences",
         "academicSession": "2025/2026",
@@ -23879,7 +23879,7 @@
         "status": "official-research-semester-rule"
       },
       "fee": {
-        "status": "verified-current-official-fee",
+        "status": "official-rate-only",
         "feeType": "research-academic-unit",
         "academicUnit": "Centre for Chemical Biology",
         "academicSession": "2025/2026",
@@ -23956,7 +23956,7 @@
         "status": "official-research-semester-rule"
       },
       "fee": {
-        "status": "verified-current-official-fee",
+        "status": "official-rate-only",
         "feeType": "research-academic-unit",
         "academicUnit": "School of Biological Sciences",
         "academicSession": "2025/2026",
@@ -24096,7 +24096,7 @@
         "status": "official-research-semester-rule"
       },
       "fee": {
-        "status": "verified-current-official-fee",
+        "status": "official-rate-only",
         "feeType": "research-academic-unit",
         "academicUnit": "School of Biological Sciences",
         "academicSession": "2025/2026",
@@ -24173,7 +24173,7 @@
         "status": "official-research-semester-rule"
       },
       "fee": {
-        "status": "verified-current-official-fee",
+        "status": "official-rate-only",
         "feeType": "research-academic-unit",
         "academicUnit": "School of Medical Sciences",
         "academicSession": "2025/2026",
@@ -24250,7 +24250,7 @@
         "status": "official-research-semester-rule"
       },
       "fee": {
-        "status": "verified-current-official-fee",
+        "status": "official-rate-only",
         "feeType": "research-academic-unit",
         "academicUnit": "School of Civil Engineering",
         "academicSession": "2025/2026",
@@ -24533,7 +24533,7 @@
         "status": "official-research-semester-rule"
       },
       "fee": {
-        "status": "verified-current-official-fee",
+        "status": "official-rate-only",
         "feeType": "research-academic-unit",
         "academicUnit": "Advanced Medical and Dental Institute",
         "academicSession": "2025/2026",
@@ -24610,7 +24610,7 @@
         "status": "official-research-semester-rule"
       },
       "fee": {
-        "status": "verified-current-official-fee",
+        "status": "official-rate-only",
         "feeType": "research-academic-unit",
         "academicUnit": "School of Medical Sciences",
         "academicSession": "2025/2026",
@@ -24687,7 +24687,7 @@
         "status": "official-research-semester-rule"
       },
       "fee": {
-        "status": "verified-current-official-fee",
+        "status": "official-rate-only",
         "feeType": "research-academic-unit",
         "academicUnit": "Advanced Medical and Dental Institute",
         "academicSession": "2025/2026",
@@ -24764,7 +24764,7 @@
         "status": "official-research-semester-rule"
       },
       "fee": {
-        "status": "verified-current-official-fee",
+        "status": "official-rate-only",
         "feeType": "research-academic-unit",
         "academicUnit": "School of Medical Sciences",
         "academicSession": "2025/2026",
@@ -24841,7 +24841,7 @@
         "status": "official-research-semester-rule"
       },
       "fee": {
-        "status": "verified-current-official-fee",
+        "status": "official-rate-only",
         "feeType": "research-academic-unit",
         "academicUnit": "Advanced Medical and Dental Institute",
         "academicSession": "2025/2026",
@@ -24918,7 +24918,7 @@
         "status": "official-research-semester-rule"
       },
       "fee": {
-        "status": "verified-current-official-fee",
+        "status": "official-rate-only",
         "feeType": "research-academic-unit",
         "academicUnit": "School of Computer Sciences",
         "academicSession": "2025/2026",
@@ -24995,7 +24995,7 @@
         "status": "official-research-semester-rule"
       },
       "fee": {
-        "status": "verified-current-official-fee",
+        "status": "official-rate-only",
         "feeType": "research-academic-unit",
         "academicUnit": "Advanced Medical and Dental Institute",
         "academicSession": "2025/2026",
@@ -25072,7 +25072,7 @@
         "status": "official-research-semester-rule"
       },
       "fee": {
-        "status": "verified-current-official-fee",
+        "status": "official-rate-only",
         "feeType": "research-academic-unit",
         "academicUnit": "School of Dental Sciences",
         "academicSession": "2025/2026",
@@ -25275,7 +25275,7 @@
         "status": "official-research-semester-rule"
       },
       "fee": {
-        "status": "verified-current-official-fee",
+        "status": "official-rate-only",
         "feeType": "research-academic-unit",
         "academicUnit": "School of Medical Sciences",
         "academicSession": "2025/2026",
@@ -25352,7 +25352,7 @@
         "status": "official-research-semester-rule"
       },
       "fee": {
-        "status": "verified-current-official-fee",
+        "status": "official-rate-only",
         "feeType": "research-academic-unit",
         "academicUnit": "School of Biological Sciences",
         "academicSession": "2025/2026",
@@ -25429,7 +25429,7 @@
         "status": "official-research-semester-rule"
       },
       "fee": {
-        "status": "verified-current-official-fee",
+        "status": "official-rate-only",
         "feeType": "research-academic-unit",
         "academicUnit": "School of Distance Education (Arts)",
         "academicSession": "2025/2026",
@@ -25506,7 +25506,7 @@
         "status": "official-research-semester-rule"
       },
       "fee": {
-        "status": "verified-current-official-fee",
+        "status": "official-rate-only",
         "feeType": "research-academic-unit",
         "academicUnit": "School of Medical Sciences",
         "academicSession": "2025/2026",
@@ -25663,7 +25663,7 @@
         "status": "official-research-semester-rule"
       },
       "fee": {
-        "status": "verified-current-official-fee",
+        "status": "official-rate-only",
         "feeType": "research-academic-unit",
         "academicUnit": "School of Health Sciences",
         "academicSession": "2025/2026",
@@ -25740,7 +25740,7 @@
         "status": "official-research-semester-rule"
       },
       "fee": {
-        "status": "verified-current-official-fee",
+        "status": "official-rate-only",
         "feeType": "research-academic-unit",
         "academicUnit": "School of Medical Sciences",
         "academicSession": "2025/2026",
@@ -25817,7 +25817,7 @@
         "status": "official-research-semester-rule"
       },
       "fee": {
-        "status": "verified-current-official-fee",
+        "status": "official-rate-only",
         "feeType": "research-academic-unit",
         "academicUnit": "M’sian Institute of Pharmaceuticals & Nutraceuticals",
         "academicSession": "2025/2026",
@@ -25894,7 +25894,7 @@
         "status": "official-research-semester-rule"
       },
       "fee": {
-        "status": "verified-current-official-fee",
+        "status": "official-rate-only",
         "feeType": "research-academic-unit",
         "academicUnit": "Advanced Medical and Dental Institute",
         "academicSession": "2025/2026",
@@ -25971,7 +25971,7 @@
         "status": "official-research-semester-rule"
       },
       "fee": {
-        "status": "verified-current-official-fee",
+        "status": "official-rate-only",
         "feeType": "research-academic-unit",
         "academicUnit": "School of Medical Sciences",
         "academicSession": "2025/2026",
@@ -26048,7 +26048,7 @@
         "status": "official-research-semester-rule"
       },
       "fee": {
-        "status": "verified-current-official-fee",
+        "status": "official-rate-only",
         "feeType": "research-academic-unit",
         "academicUnit": "Advanced Medical and Dental Institute",
         "academicSession": "2025/2026",
@@ -26125,7 +26125,7 @@
         "status": "official-research-semester-rule"
       },
       "fee": {
-        "status": "verified-current-official-fee",
+        "status": "official-rate-only",
         "feeType": "research-academic-unit",
         "academicUnit": "Centre for Marine and Coastal Studies",
         "academicSession": "2025/2026",
@@ -26202,7 +26202,7 @@
         "status": "official-research-semester-rule"
       },
       "fee": {
-        "status": "verified-current-official-fee",
+        "status": "official-rate-only",
         "feeType": "research-academic-unit",
         "academicUnit": "Centre for Policy Research",
         "academicSession": "2025/2026",
@@ -26279,7 +26279,7 @@
         "status": "official-research-semester-rule"
       },
       "fee": {
-        "status": "verified-current-official-fee",
+        "status": "official-rate-only",
         "feeType": "research-academic-unit",
         "academicUnit": "School of Biological Sciences",
         "academicSession": "2025/2026",
@@ -26356,7 +26356,7 @@
         "status": "official-research-semester-rule"
       },
       "fee": {
-        "status": "verified-current-official-fee",
+        "status": "official-rate-only",
         "feeType": "research-academic-unit",
         "academicUnit": "School of Materials and Mineral Resources Eng.",
         "academicSession": "2025/2026",
@@ -26433,7 +26433,7 @@
         "status": "official-research-semester-rule"
       },
       "fee": {
-        "status": "verified-current-official-fee",
+        "status": "official-rate-only",
         "feeType": "research-academic-unit",
         "academicUnit": "School of Mechanical Engineering",
         "academicSession": "2025/2026",
@@ -26573,7 +26573,7 @@
         "status": "official-research-semester-rule"
       },
       "fee": {
-        "status": "verified-current-official-fee",
+        "status": "official-rate-only",
         "feeType": "research-academic-unit",
         "academicUnit": "School of Medical Sciences",
         "academicSession": "2025/2026",
@@ -26650,7 +26650,7 @@
         "status": "official-research-semester-rule"
       },
       "fee": {
-        "status": "verified-current-official-fee",
+        "status": "official-rate-only",
         "feeType": "research-academic-unit",
         "academicUnit": "School of Medical Sciences",
         "academicSession": "2025/2026",
@@ -26727,7 +26727,7 @@
         "status": "official-research-semester-rule"
       },
       "fee": {
-        "status": "verified-current-official-fee",
+        "status": "official-rate-only",
         "feeType": "research-academic-unit",
         "academicUnit": "Advanced Medical and Dental Institute",
         "academicSession": "2025/2026",
@@ -26804,7 +26804,7 @@
         "status": "official-research-semester-rule"
       },
       "fee": {
-        "status": "verified-current-official-fee",
+        "status": "official-rate-only",
         "feeType": "research-academic-unit",
         "academicUnit": "School of Medical Sciences",
         "academicSession": "2025/2026",
@@ -26881,7 +26881,7 @@
         "status": "official-programme-specific"
       },
       "fee": {
-        "status": "verified-current-official-fee",
+        "status": "official-rate-only",
         "feeType": "research-academic-unit",
         "academicUnit": "Advanced Medical and Dental Institute",
         "academicSession": "2025/2026",
@@ -26958,7 +26958,7 @@
         "status": "official-research-semester-rule"
       },
       "fee": {
-        "status": "verified-current-official-fee",
+        "status": "official-rate-only",
         "feeType": "research-academic-unit",
         "academicUnit": "School of Medical Sciences",
         "academicSession": "2025/2026",
@@ -27035,7 +27035,7 @@
         "status": "official-research-semester-rule"
       },
       "fee": {
-        "status": "verified-current-official-fee",
+        "status": "official-rate-only",
         "feeType": "research-academic-unit",
         "academicUnit": "School of Medical Sciences",
         "academicSession": "2025/2026",
@@ -27112,7 +27112,7 @@
         "status": "official-research-semester-rule"
       },
       "fee": {
-        "status": "verified-current-official-fee",
+        "status": "official-rate-only",
         "feeType": "research-academic-unit",
         "academicUnit": "Advanced Medical and Dental Institute",
         "academicSession": "2025/2026",
@@ -27189,7 +27189,7 @@
         "status": "official-research-semester-rule"
       },
       "fee": {
-        "status": "verified-current-official-fee",
+        "status": "official-rate-only",
         "feeType": "research-academic-unit",
         "academicUnit": "School of Medical Sciences",
         "academicSession": "2025/2026",
@@ -27266,7 +27266,7 @@
         "status": "official-research-semester-rule"
       },
       "fee": {
-        "status": "verified-current-official-fee",
+        "status": "official-rate-only",
         "feeType": "research-academic-unit",
         "academicUnit": "School of Medical Sciences",
         "academicSession": "2025/2026",
@@ -27343,7 +27343,7 @@
         "status": "official-research-semester-rule"
       },
       "fee": {
-        "status": "verified-current-official-fee",
+        "status": "official-rate-only",
         "feeType": "research-academic-unit",
         "academicUnit": "School of Medical Sciences",
         "academicSession": "2025/2026",
@@ -27420,7 +27420,7 @@
         "status": "official-research-semester-rule"
       },
       "fee": {
-        "status": "verified-current-official-fee",
+        "status": "official-rate-only",
         "feeType": "research-academic-unit",
         "academicUnit": "School of Health Sciences",
         "academicSession": "2025/2026",
@@ -27497,7 +27497,7 @@
         "status": "official-research-semester-rule"
       },
       "fee": {
-        "status": "verified-current-official-fee",
+        "status": "official-rate-only",
         "feeType": "research-academic-unit",
         "academicUnit": "School of Medical Sciences",
         "academicSession": "2025/2026",
@@ -27654,7 +27654,7 @@
         "status": "official-research-semester-rule"
       },
       "fee": {
-        "status": "verified-current-official-fee",
+        "status": "official-rate-only",
         "feeType": "research-academic-unit",
         "academicUnit": "School of Medical Sciences",
         "academicSession": "2025/2026",
@@ -27731,7 +27731,7 @@
         "status": "official-research-semester-rule"
       },
       "fee": {
-        "status": "verified-current-official-fee",
+        "status": "official-rate-only",
         "feeType": "research-academic-unit",
         "academicUnit": "Centre for Chemical Biology",
         "academicSession": "2025/2026",
@@ -27808,7 +27808,7 @@
         "status": "official-research-semester-rule"
       },
       "fee": {
-        "status": "verified-current-official-fee",
+        "status": "official-rate-only",
         "feeType": "research-academic-unit",
         "academicUnit": "School of Biological Sciences",
         "academicSession": "2025/2026",
@@ -27969,7 +27969,7 @@
         "sourcePage": 2,
         "alternatives": [
           {
-            "status": "verified-current-official-fee",
+            "status": "official-total-unpublished",
             "feeType": "named-programme",
             "officialFeeName": "Master of Science (Microelectronic Engineering) - Industry",
             "studyMode": "mixed",
@@ -27993,7 +27993,7 @@
       },
       "specialisationOrVariantFees": [
         {
-          "status": "verified-current-official-fee",
+          "status": "official-total-unpublished",
           "feeType": "specialisation-or-variant",
           "officialFeeName": "Master of Science (Microelectronic Engineering) - Industry",
           "studyMode": "mixed",
@@ -28094,7 +28094,7 @@
         "sourcePage": 2,
         "alternatives": [
           {
-            "status": "verified-current-official-fee",
+            "status": "official-total-unpublished",
             "feeType": "named-programme",
             "officialFeeName": "Master of Science (Microelectronic Engineering) - Industry",
             "studyMode": "mixed",
@@ -28118,7 +28118,7 @@
       },
       "specialisationOrVariantFees": [
         {
-          "status": "verified-current-official-fee",
+          "status": "official-total-unpublished",
           "feeType": "specialisation-or-variant",
           "officialFeeName": "Master of Science (Microelectronic Engineering) - Industry",
           "studyMode": "mixed",
@@ -28198,7 +28198,7 @@
         "status": "official-research-semester-rule"
       },
       "fee": {
-        "status": "verified-current-official-fee",
+        "status": "official-rate-only",
         "feeType": "research-academic-unit",
         "academicUnit": "Collab. Microelectronic Design Excellence Centre",
         "academicSession": "2025/2026",
@@ -28275,7 +28275,7 @@
         "status": "official-research-semester-rule"
       },
       "fee": {
-        "status": "verified-current-official-fee",
+        "status": "official-rate-only",
         "feeType": "research-academic-unit",
         "academicUnit": "School of Materials and Mineral Resources Eng.",
         "academicSession": "2025/2026",
@@ -28352,7 +28352,7 @@
         "status": "official-research-semester-rule"
       },
       "fee": {
-        "status": "verified-current-official-fee",
+        "status": "official-rate-only",
         "feeType": "research-academic-unit",
         "academicUnit": "Centre for Chemical Biology",
         "academicSession": "2025/2026",
@@ -28429,7 +28429,7 @@
         "status": "official-programme-specific"
       },
       "fee": {
-        "status": "verified-current-official-fee",
+        "status": "official-rate-only",
         "feeType": "research-academic-unit",
         "academicUnit": "Advanced Medical and Dental Institute",
         "academicSession": "2025/2026",
@@ -28506,7 +28506,7 @@
         "status": "official-research-semester-rule"
       },
       "fee": {
-        "status": "verified-current-official-fee",
+        "status": "official-rate-only",
         "feeType": "research-academic-unit",
         "academicUnit": "School of Distance Education (Arts)",
         "academicSession": "2025/2026",
@@ -28583,7 +28583,7 @@
         "status": "official-research-semester-rule"
       },
       "fee": {
-        "status": "verified-current-official-fee",
+        "status": "official-rate-only",
         "feeType": "research-academic-unit",
         "academicUnit": "School of Medical Sciences",
         "academicSession": "2025/2026",
@@ -28660,7 +28660,7 @@
         "status": "official-research-semester-rule"
       },
       "fee": {
-        "status": "verified-current-official-fee",
+        "status": "official-rate-only",
         "feeType": "research-academic-unit",
         "academicUnit": "Advanced Medical and Dental Institute",
         "academicSession": "2025/2026",
@@ -28737,7 +28737,7 @@
         "status": "official-research-semester-rule"
       },
       "fee": {
-        "status": "verified-current-official-fee",
+        "status": "official-rate-only",
         "feeType": "research-academic-unit",
         "academicUnit": "School of Medical Sciences",
         "academicSession": "2025/2026",
@@ -28814,7 +28814,7 @@
         "status": "official-programme-specific"
       },
       "fee": {
-        "status": "verified-current-official-fee",
+        "status": "official-rate-only",
         "feeType": "research-academic-unit",
         "academicUnit": "Advanced Medical and Dental Institute",
         "academicSession": "2025/2026",
@@ -28891,7 +28891,7 @@
         "status": "official-research-semester-rule"
       },
       "fee": {
-        "status": "verified-current-official-fee",
+        "status": "official-rate-only",
         "feeType": "research-academic-unit",
         "academicUnit": "School of Medical Sciences",
         "academicSession": "2025/2026",
@@ -28968,7 +28968,7 @@
         "status": "official-research-semester-rule"
       },
       "fee": {
-        "status": "verified-current-official-fee",
+        "status": "official-rate-only",
         "feeType": "research-academic-unit",
         "academicUnit": "School of Health Sciences",
         "academicSession": "2025/2026",
@@ -29045,7 +29045,7 @@
         "status": "official-programme-specific"
       },
       "fee": {
-        "status": "verified-current-official-fee",
+        "status": "official-rate-only",
         "feeType": "research-academic-unit",
         "academicUnit": "Advanced Medical and Dental Institute",
         "academicSession": "2025/2026",
@@ -29122,7 +29122,7 @@
         "status": "official-research-semester-rule"
       },
       "fee": {
-        "status": "verified-current-official-fee",
+        "status": "official-rate-only",
         "feeType": "research-academic-unit",
         "academicUnit": "School of Medical Sciences",
         "academicSession": "2025/2026",
@@ -29325,7 +29325,7 @@
         "status": "official-research-semester-rule"
       },
       "fee": {
-        "status": "verified-current-official-fee",
+        "status": "official-rate-only",
         "feeType": "research-academic-unit",
         "academicUnit": "Advanced Medical and Dental Institute",
         "academicSession": "2025/2026",
@@ -29402,7 +29402,7 @@
         "status": "official-research-semester-rule"
       },
       "fee": {
-        "status": "verified-current-official-fee",
+        "status": "official-rate-only",
         "feeType": "research-academic-unit",
         "academicUnit": "School of Medical Sciences",
         "academicSession": "2025/2026",
@@ -29479,7 +29479,7 @@
         "status": "official-research-semester-rule"
       },
       "fee": {
-        "status": "verified-current-official-fee",
+        "status": "official-rate-only",
         "feeType": "research-academic-unit",
         "academicUnit": "School of Pharmaceutical Sciences",
         "academicSession": "2025/2026",
@@ -29556,7 +29556,7 @@
         "status": "official-research-semester-rule"
       },
       "fee": {
-        "status": "verified-current-official-fee",
+        "status": "official-rate-only",
         "feeType": "research-academic-unit",
         "academicUnit": "Advanced Medical and Dental Institute",
         "academicSession": "2025/2026",
@@ -29633,7 +29633,7 @@
         "status": "official-research-semester-rule"
       },
       "fee": {
-        "status": "verified-current-official-fee",
+        "status": "official-rate-only",
         "feeType": "research-academic-unit",
         "academicUnit": "Advanced Medical and Dental Institute",
         "academicSession": "2025/2026",
@@ -29710,7 +29710,7 @@
         "status": "official-research-semester-rule"
       },
       "fee": {
-        "status": "verified-current-official-fee",
+        "status": "official-rate-only",
         "feeType": "research-academic-unit",
         "academicUnit": "School of Medical Sciences",
         "academicSession": "2025/2026",
@@ -29787,7 +29787,7 @@
         "status": "official-research-semester-rule"
       },
       "fee": {
-        "status": "verified-current-official-fee",
+        "status": "official-rate-only",
         "feeType": "research-academic-unit",
         "academicUnit": "Centre for Drug Research",
         "academicSession": "2025/2026",
@@ -29864,7 +29864,7 @@
         "status": "official-research-semester-rule"
       },
       "fee": {
-        "status": "verified-current-official-fee",
+        "status": "official-rate-only",
         "feeType": "research-academic-unit",
         "academicUnit": "National Poison Centre",
         "academicSession": "2025/2026",
@@ -29941,7 +29941,7 @@
         "status": "official-research-semester-rule"
       },
       "fee": {
-        "status": "verified-current-official-fee",
+        "status": "official-rate-only",
         "feeType": "research-academic-unit",
         "academicUnit": "Advanced Medical and Dental Institute",
         "academicSession": "2025/2026",
@@ -30018,7 +30018,7 @@
         "status": "official-research-semester-rule"
       },
       "fee": {
-        "status": "verified-current-official-fee",
+        "status": "official-rate-only",
         "feeType": "research-academic-unit",
         "academicUnit": "School of Biological Sciences",
         "academicSession": "2025/2026",
@@ -30095,7 +30095,7 @@
         "status": "official-research-semester-rule"
       },
       "fee": {
-        "status": "verified-current-official-fee",
+        "status": "official-rate-only",
         "feeType": "research-academic-unit",
         "academicUnit": "School of Materials and Mineral Resources Eng.",
         "academicSession": "2025/2026",
@@ -30235,7 +30235,7 @@
         "status": "official-research-semester-rule"
       },
       "fee": {
-        "status": "verified-current-official-fee",
+        "status": "official-rate-only",
         "feeType": "research-academic-unit",
         "academicUnit": "School of Medical Sciences",
         "academicSession": "2025/2026",
@@ -30312,7 +30312,7 @@
         "status": "official-research-semester-rule"
       },
       "fee": {
-        "status": "verified-current-official-fee",
+        "status": "official-rate-only",
         "feeType": "research-academic-unit",
         "academicUnit": "River Eng. & Urban Drainage Research Centre",
         "academicSession": "2025/2026",
@@ -30368,6 +30368,7 @@
       "studyModeSource": "official-directory-title",
       "delivery": "dual-degree",
       "internationalEligibility": "available-after-official-review",
+      "internationalEligibilityEvidence": "Current official dual-degree programme entry and international postgraduate application rules confirm international scope.",
       "identityStatus": "verified-official-public-directory-entry",
       "overviewOfficial": "",
       "academicRequirement": {
@@ -30412,7 +30413,7 @@
       "evidence": {
         "officialDirectoryUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=118&catid=50",
         "detailSha256": "3c3380f7abedc37d8c7927bc9f689d6d37b5bf23ee32c825d1bc6fabe7c15932",
-        "detailStatus": "official-verified-after-review",
+        "detailStatus": "review-required",
         "retrievedAt": "2026-06-14T12:00:00Z"
       }
     },
@@ -30452,7 +30453,7 @@
         "status": "official-research-semester-rule"
       },
       "fee": {
-        "status": "verified-current-official-fee",
+        "status": "official-rate-only",
         "feeType": "research-academic-unit",
         "academicUnit": "Advanced Medical and Dental Institute",
         "academicSession": "2025/2026",
@@ -30529,7 +30530,7 @@
         "status": "official-research-semester-rule"
       },
       "fee": {
-        "status": "verified-current-official-fee",
+        "status": "official-rate-only",
         "feeType": "research-academic-unit",
         "academicUnit": "School of Health Sciences",
         "academicSession": "2025/2026",
@@ -30606,7 +30607,7 @@
         "status": "official-research-semester-rule"
       },
       "fee": {
-        "status": "verified-current-official-fee",
+        "status": "official-rate-only",
         "feeType": "research-academic-unit",
         "academicUnit": "Centre for Global Sustainability Studies (Arts)",
         "academicSession": "2025/2026",
@@ -30683,7 +30684,7 @@
         "status": "official-research-semester-rule"
       },
       "fee": {
-        "status": "verified-current-official-fee",
+        "status": "official-rate-only",
         "feeType": "research-academic-unit",
         "academicUnit": "School of Medical Sciences",
         "academicSession": "2025/2026",
@@ -30760,7 +30761,7 @@
         "status": "official-research-semester-rule"
       },
       "fee": {
-        "status": "verified-current-official-fee",
+        "status": "official-rate-only",
         "feeType": "research-academic-unit",
         "academicUnit": "School of Biological Sciences",
         "academicSession": "2025/2026",
@@ -30837,7 +30838,7 @@
         "status": "official-research-semester-rule"
       },
       "fee": {
-        "status": "verified-current-official-fee",
+        "status": "official-rate-only",
         "feeType": "research-academic-unit",
         "academicUnit": "School of Distance Education (Arts)",
         "academicSession": "2025/2026",
@@ -30893,6 +30894,7 @@
       "studyModeSource": "official-directory-title",
       "delivery": "on-campus-or-unspecified",
       "internationalEligibility": "available-after-official-review",
+      "internationalEligibilityEvidence": "Current official programme entry and international postgraduate application rules confirm international scope.",
       "identityStatus": "verified-official-public-directory-entry",
       "overviewOfficial": "To further enhance postgraduate offerings, Master of Science Degree Programmes by course work have also been introduced. In Academic Session 2025/2026, a course work programme known as the Master of Science in Advanced Manufacturing Engineering with Management is established. This programme provides candidates with comprehensive exposure to the latest theoretical and practical aspects of advanced manufacturing systems, industrial automation, and management strategies. It is designed to equip graduates with the knowledge and skills necessary to address real-world industrial challenges and to lead innovation in manufacturing and operations management.",
       "academicRequirement": {
@@ -30937,7 +30939,7 @@
       "evidence": {
         "officialDirectoryUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=882&catid=54",
         "detailSha256": "0e7643c09b434a261624ce412daa1183cb76ba05562dcdd0e974e630b28005ed",
-        "detailStatus": "official-verified-after-review",
+        "detailStatus": "review-required",
         "retrievedAt": "2026-06-14T12:00:00Z"
       }
     },
@@ -31040,7 +31042,7 @@
         "status": "official-research-semester-rule"
       },
       "fee": {
-        "status": "verified-current-official-fee",
+        "status": "official-rate-only",
         "feeType": "research-academic-unit",
         "academicUnit": "School of Aerospace Engineering",
         "academicSession": "2025/2026",
@@ -31260,7 +31262,7 @@
         "status": "official-research-semester-rule"
       },
       "fee": {
-        "status": "verified-current-official-fee",
+        "status": "official-rate-only",
         "feeType": "research-academic-unit",
         "academicUnit": "School of Housing, Building and Planning",
         "academicSession": "2025/2026",
@@ -31337,7 +31339,7 @@
         "status": "official-research-semester-rule"
       },
       "fee": {
-        "status": "verified-current-official-fee",
+        "status": "official-rate-only",
         "feeType": "research-academic-unit",
         "academicUnit": "School of Industrial Technology",
         "academicSession": "2025/2026",
@@ -31414,7 +31416,7 @@
         "status": "official-research-semester-rule"
       },
       "fee": {
-        "status": "verified-current-official-fee",
+        "status": "official-rate-only",
         "feeType": "research-academic-unit",
         "academicUnit": "School of Industrial Technology",
         "academicSession": "2025/2026",
@@ -31491,7 +31493,7 @@
         "status": "official-research-semester-rule"
       },
       "fee": {
-        "status": "verified-current-official-fee",
+        "status": "official-rate-only",
         "feeType": "research-academic-unit",
         "academicUnit": "School of Housing, Building and Planning",
         "academicSession": "2025/2026",
@@ -31728,7 +31730,7 @@
         "status": "official-research-semester-rule"
       },
       "fee": {
-        "status": "verified-current-official-fee",
+        "status": "official-rate-only",
         "feeType": "research-academic-unit",
         "academicUnit": "School of Housing, Building and Planning",
         "academicSession": "2025/2026",
@@ -31805,7 +31807,7 @@
         "status": "official-research-semester-rule"
       },
       "fee": {
-        "status": "verified-current-official-fee",
+        "status": "official-rate-only",
         "feeType": "research-academic-unit",
         "academicUnit": "School of Chemical Engineering",
         "academicSession": "2025/2026",
@@ -31962,7 +31964,7 @@
         "status": "official-research-semester-rule"
       },
       "fee": {
-        "status": "verified-current-official-fee",
+        "status": "official-rate-only",
         "feeType": "research-academic-unit",
         "academicUnit": "Advanced Medical and Dental Institute",
         "academicSession": "2025/2026",
@@ -32039,7 +32041,7 @@
         "status": "official-research-semester-rule"
       },
       "fee": {
-        "status": "verified-current-official-fee",
+        "status": "official-rate-only",
         "feeType": "research-academic-unit",
         "academicUnit": "School of Chemical Sciences",
         "academicSession": "2025/2026",
@@ -32116,7 +32118,7 @@
         "status": "official-research-semester-rule"
       },
       "fee": {
-        "status": "verified-current-official-fee",
+        "status": "official-rate-only",
         "feeType": "research-academic-unit",
         "academicUnit": "School of Distance Education (Arts)",
         "academicSession": "2025/2026",
@@ -32399,7 +32401,7 @@
         "status": "official-research-semester-rule"
       },
       "fee": {
-        "status": "verified-current-official-fee",
+        "status": "official-rate-only",
         "feeType": "research-academic-unit",
         "academicUnit": "School of Electrical and Electronic Engineering",
         "academicSession": "2025/2026",
@@ -32852,7 +32854,7 @@
         "status": "official-research-semester-rule"
       },
       "fee": {
-        "status": "verified-current-official-fee",
+        "status": "official-rate-only",
         "feeType": "research-academic-unit",
         "academicUnit": "School of Distance Education (Arts)",
         "academicSession": "2025/2026",
@@ -32929,7 +32931,7 @@
         "status": "official-research-semester-rule"
       },
       "fee": {
-        "status": "verified-current-official-fee",
+        "status": "official-rate-only",
         "feeType": "research-academic-unit",
         "academicUnit": "School of Industrial Technology",
         "academicSession": "2025/2026",
@@ -33006,7 +33008,7 @@
         "status": "official-research-semester-rule"
       },
       "fee": {
-        "status": "verified-current-official-fee",
+        "status": "official-rate-only",
         "feeType": "research-academic-unit",
         "academicUnit": "School of Industrial Technology",
         "academicSession": "2025/2026",
@@ -33163,7 +33165,7 @@
         "status": "official-research-semester-rule"
       },
       "fee": {
-        "status": "verified-current-official-fee",
+        "status": "official-rate-only",
         "feeType": "research-academic-unit",
         "academicUnit": "School of Housing, Building and Planning",
         "academicSession": "2025/2026",
@@ -33240,7 +33242,7 @@
         "status": "official-research-semester-rule"
       },
       "fee": {
-        "status": "verified-current-official-fee",
+        "status": "official-rate-only",
         "feeType": "research-academic-unit",
         "academicUnit": "School of Housing, Building and Planning",
         "academicSession": "2025/2026",
@@ -33397,7 +33399,7 @@
         "status": "official-research-semester-rule"
       },
       "fee": {
-        "status": "verified-current-official-fee",
+        "status": "official-rate-only",
         "feeType": "research-academic-unit",
         "academicUnit": "School of Distance Education (Arts)",
         "academicSession": "2025/2026",
@@ -33554,7 +33556,7 @@
         "status": "official-research-semester-rule"
       },
       "fee": {
-        "status": "verified-current-official-fee",
+        "status": "official-rate-only",
         "feeType": "research-academic-unit",
         "academicUnit": "School of Mathematical Sciences",
         "academicSession": "2025/2026",
@@ -33854,7 +33856,7 @@
         "status": "official-research-semester-rule"
       },
       "fee": {
-        "status": "verified-current-official-fee",
+        "status": "official-rate-only",
         "feeType": "research-academic-unit",
         "academicUnit": "Inst. for Research in Molecular Medicine",
         "academicSession": "2025/2026",
@@ -34091,7 +34093,7 @@
         "status": "official-research-semester-rule"
       },
       "fee": {
-        "status": "verified-current-official-fee",
+        "status": "official-rate-only",
         "feeType": "research-academic-unit",
         "academicUnit": "School of Distance Education (Arts)",
         "academicSession": "2025/2026",
@@ -34168,7 +34170,7 @@
         "status": "official-research-semester-rule"
       },
       "fee": {
-        "status": "verified-current-official-fee",
+        "status": "official-rate-only",
         "feeType": "research-academic-unit",
         "academicUnit": "School of Physics",
         "academicSession": "2025/2026",
@@ -34245,7 +34247,7 @@
         "status": "official-research-semester-rule"
       },
       "fee": {
-        "status": "verified-current-official-fee",
+        "status": "official-rate-only",
         "feeType": "research-academic-unit",
         "academicUnit": "School of Housing, Building and Planning",
         "academicSession": "2025/2026",
@@ -34322,7 +34324,7 @@
         "status": "official-research-semester-rule"
       },
       "fee": {
-        "status": "verified-current-official-fee",
+        "status": "official-rate-only",
         "feeType": "research-academic-unit",
         "academicUnit": "School of Industrial Technology",
         "academicSession": "2025/2026",
@@ -34479,7 +34481,7 @@
         "status": "official-research-semester-rule"
       },
       "fee": {
-        "status": "verified-current-official-fee",
+        "status": "official-rate-only",
         "feeType": "research-academic-unit",
         "academicUnit": "School of Housing, Building and Planning",
         "academicSession": "2025/2026",
@@ -34556,7 +34558,7 @@
         "status": "official-research-semester-rule"
       },
       "fee": {
-        "status": "verified-current-official-fee",
+        "status": "official-rate-only",
         "feeType": "research-academic-unit",
         "academicUnit": "School of Housing, Building and Planning",
         "academicSession": "2025/2026",
@@ -34793,7 +34795,7 @@
         "status": "official-research-semester-rule"
       },
       "fee": {
-        "status": "verified-current-official-fee",
+        "status": "official-rate-only",
         "feeType": "research-academic-unit",
         "academicUnit": "School of Distance Education (Arts)",
         "academicSession": "2025/2026",
@@ -34950,7 +34952,7 @@
         "status": "official-research-semester-rule"
       },
       "fee": {
-        "status": "verified-current-official-fee",
+        "status": "official-rate-only",
         "feeType": "research-academic-unit",
         "academicUnit": "School of Mathematical Sciences",
         "academicSession": "2025/2026",
@@ -35519,7 +35521,7 @@
         "status": "official-research-semester-rule"
       },
       "fee": {
-        "status": "verified-current-official-fee",
+        "status": "official-rate-only",
         "feeType": "research-academic-unit",
         "academicUnit": "Centre for Policy Research",
         "academicSession": "2025/2026",
@@ -35596,7 +35598,7 @@
         "status": "official-research-semester-rule"
       },
       "fee": {
-        "status": "verified-current-official-fee",
+        "status": "official-rate-only",
         "feeType": "research-academic-unit",
         "academicUnit": "School of Distance Education (Arts)",
         "academicSession": "2025/2026",
@@ -35673,7 +35675,7 @@
         "status": "official-research-semester-rule"
       },
       "fee": {
-        "status": "verified-current-official-fee",
+        "status": "official-rate-only",
         "feeType": "research-academic-unit",
         "academicUnit": "School of Social Sciences",
         "academicSession": "2025/2026",
@@ -35750,7 +35752,7 @@
         "status": "official-research-semester-rule"
       },
       "fee": {
-        "status": "verified-current-official-fee",
+        "status": "official-rate-only",
         "feeType": "research-academic-unit",
         "academicUnit": "Centre for Policy Research",
         "academicSession": "2025/2026",
@@ -35827,7 +35829,7 @@
         "status": "official-research-semester-rule"
       },
       "fee": {
-        "status": "verified-current-official-fee",
+        "status": "official-rate-only",
         "feeType": "research-academic-unit",
         "academicUnit": "School of Social Sciences",
         "academicSession": "2025/2026",
@@ -35904,7 +35906,7 @@
         "status": "official-research-semester-rule"
       },
       "fee": {
-        "status": "verified-current-official-fee",
+        "status": "official-rate-only",
         "feeType": "research-academic-unit",
         "academicUnit": "Centre for Policy Research",
         "academicSession": "2025/2026",
@@ -35981,7 +35983,7 @@
         "status": "official-research-semester-rule"
       },
       "fee": {
-        "status": "verified-current-official-fee",
+        "status": "official-rate-only",
         "feeType": "research-academic-unit",
         "academicUnit": "School of Distance Education (Arts)",
         "academicSession": "2025/2026",
@@ -36058,7 +36060,7 @@
         "status": "official-research-semester-rule"
       },
       "fee": {
-        "status": "verified-current-official-fee",
+        "status": "official-rate-only",
         "feeType": "research-academic-unit",
         "academicUnit": "School of Social Sciences",
         "academicSession": "2025/2026",
@@ -36135,7 +36137,7 @@
         "status": "official-research-semester-rule"
       },
       "fee": {
-        "status": "verified-current-official-fee",
+        "status": "official-rate-only",
         "feeType": "research-academic-unit",
         "academicUnit": "Centre for Research on Women & Gender",
         "academicSession": "2025/2026",
@@ -36292,7 +36294,7 @@
         "status": "official-research-semester-rule"
       },
       "fee": {
-        "status": "verified-current-official-fee",
+        "status": "official-rate-only",
         "feeType": "research-academic-unit",
         "academicUnit": "Centre for Policy Research",
         "academicSession": "2025/2026",
@@ -36369,7 +36371,7 @@
         "status": "official-research-semester-rule"
       },
       "fee": {
-        "status": "verified-current-official-fee",
+        "status": "official-rate-only",
         "feeType": "research-academic-unit",
         "academicUnit": "School of Distance Education (Arts)",
         "academicSession": "2025/2026",
@@ -36446,7 +36448,7 @@
         "status": "official-research-semester-rule"
       },
       "fee": {
-        "status": "verified-current-official-fee",
+        "status": "official-rate-only",
         "feeType": "research-academic-unit",
         "academicUnit": "School of Social Sciences",
         "academicSession": "2025/2026",
@@ -36523,7 +36525,7 @@
         "status": "official-research-semester-rule"
       },
       "fee": {
-        "status": "verified-current-official-fee",
+        "status": "official-rate-only",
         "feeType": "research-academic-unit",
         "academicUnit": "Advanced Medical and Dental Institute",
         "academicSession": "2025/2026",
@@ -36600,7 +36602,7 @@
         "status": "official-research-semester-rule"
       },
       "fee": {
-        "status": "verified-current-official-fee",
+        "status": "official-rate-only",
         "feeType": "research-academic-unit",
         "academicUnit": "School of Social Sciences",
         "academicSession": "2025/2026",
@@ -36677,7 +36679,7 @@
         "status": "official-research-semester-rule"
       },
       "fee": {
-        "status": "verified-current-official-fee",
+        "status": "official-rate-only",
         "feeType": "research-academic-unit",
         "academicUnit": "School of Social Sciences",
         "academicSession": "2025/2026",
@@ -38055,7 +38057,9 @@
     },
     "feeStatusCounts": {
       "official-current-fee-not-published-for-directory-entry": 35,
-      "verified-current-official-fee": 270
+      "official-rate-only": 151,
+      "official-total-unpublished": 1,
+      "verified-current-official-fee": 118
     },
     "fieldSourceCounts": {
       "official-coursework-mixed-general-rule": 30,

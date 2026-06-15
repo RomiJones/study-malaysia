@@ -78,6 +78,18 @@
 - 官方明确公布唯一总额的项目继续展示单一总学费，例如 DBA 国际学生总学费 USD 16,200。
 - USM 院校概览不再汇总不同专业的最低至最高费用，改为引导用户进入具体专业查看唯一官方标准总学费。
 
+## 2026-06-15 数据隐患与固定发布工作流
+
+- 硕士 151 条研究型每学期费率和博士 62 条研究型每学期费率统一使用 `official-rate-only`，不再与官方总学费共用状态。
+- 1 条官网仅写 “Refer to website” 的 MBA 双学位费用由错误的已核实费用状态修正为 `official-total-unpublished`。
+- 本科公开费用说明只突出官网直接公布的标准项目总学费；每学期费率继续保留为来源证据，不作为用户主学费信息。
+- 新增 `scripts/audit-official-total-tuition.py`，阻断费用范围、估算总额、费率乘学制、非标量金额和无数字却标记为官方总额。
+- 新增 `scripts/verify-usm-commercial-release.mjs`，一次串联候选、交付 envelope、数据库、公开 API、全量测试、构建、四语与真实浏览器门禁。
+- 固定工作流见 `docs/prd/USM-commercial-release-workflow.md`。
+- 专用 Skill 已同步升级为“唯一官方标准总学费”规范，并加入 `official-rate-only`、发布 envelope 和干净部署约束。
+- 固定门禁已完整执行通过：公开 API 463 条规范、460 条公开、0 条待审核、3 条国际生不可申请；191 条显示唯一官方总额、269 条显示官方未公布；费用范围和估算总额均为 0。
+- 四语真实浏览器检查通过，控制台错误为 0；最终门禁决策为 `commercial-release-ready`。
+
 ## Notion 状态
 
 当前 Codex 会话没有可写入的 Notion 连接器。本文件已更新本地中文任务快照，真实 Notion 页面未更新。

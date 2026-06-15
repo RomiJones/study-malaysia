@@ -25,6 +25,22 @@ REQUIRED_COVERAGE = {
     "evidence",
 }
 VALID_VERIFICATION = {"passed", "failed", "pending", "not-required"}
+VALID_AUTHORIZATION = {"collect", "publish"}
+VALID_DECISIONS = {
+    "blocked",
+    "review-required",
+    "ready-for-controlled-import",
+    "published",
+}
+REQUIRED_PUBLICATION_VERIFICATION = {
+    "recordAudit",
+    "feePolicy",
+    "localization",
+    "tests",
+    "build",
+    "databaseWrite",
+    "apiUiVerification",
+}
 
 
 def sha256(path: Path) -> str:
@@ -44,8 +60,12 @@ def main() -> None:
 
     if data.get("schemaVersion") != 1:
         errors.append("schemaVersion must be 1.")
-    if data.get("authorization") not in {"collect", "publish"}:
+    authorization = data.get("authorization")
+    decision = data.get("decision")
+    if authorization not in VALID_AUTHORIZATION:
         errors.append("authorization must be collect or publish.")
+    if decision not in VALID_DECISIONS:
+        errors.append("decision is not a supported delivery state.")
     if canonical != sum(
         counts.get(key, 0)
         for key in ("ready", "needsReview", "notAvailableForInternational")
@@ -76,22 +96,41 @@ def main() -> None:
             errors.append(f"Artifact hash mismatch: {path}")
     if not {"manifest", "audit"}.issubset(roles):
         errors.append("Delivery requires manifest and audit artifacts.")
-    if data.get("authorization") == "publish" and "backup" not in roles:
+    if decision == "published" and authorization != "publish":
+        errors.append("Published decision requires publish authorization.")
+    if decision == "published" and "backup" not in roles:
         errors.append("Publication delivery requires a backup artifact.")
 
-    for key, value in data.get("verification", {}).items():
+    verification = data.get("verification", {})
+    for key, value in verification.items():
         if value not in VALID_VERIFICATION:
             errors.append(f"Invalid verification status for {key}: {value}")
-        if value in {"failed", "pending"}:
+        if value == "failed":
+            errors.append(f"Verification {key} failed.")
+        elif value == "pending":
             warnings.append(f"Verification {key} is {value}.")
-    if data.get("authorization") == "collect" and data.get("decision") == "published":
+    if decision == "published":
+        missing_verification = REQUIRED_PUBLICATION_VERIFICATION - set(verification)
+        if missing_verification:
+            errors.append(
+                "Published delivery is missing verification keys: "
+                + ", ".join(sorted(missing_verification))
+                + "."
+            )
+        for key in REQUIRED_PUBLICATION_VERIFICATION:
+            if verification.get(key) != "passed":
+                errors.append(f"Published delivery requires {key}=passed.")
+        exceptions = data.get("exceptions", {})
+        if exceptions.get("blocking") or exceptions.get("review"):
+            errors.append("Published delivery cannot contain blocking or review exceptions.")
+    if authorization == "collect" and decision == "published":
         errors.append("Collect authorization cannot produce a published decision.")
 
     result = {
         "delivery": str(args.delivery),
         "scope": data.get("scope"),
         "counts": counts,
-        "decision": data.get("decision"),
+        "decision": decision,
         "errors": errors,
         "warnings": warnings,
     }

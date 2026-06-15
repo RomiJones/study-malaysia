@@ -62,6 +62,35 @@ def main() -> None:
         errors.append("Evidence hash is missing.")
     if sum(row["publicDisplayStatus"] == "not-available-for-international" for row in records) != 2:
         errors.append("Expected exactly two Malaysian-only doctoral records.")
+    if any(isinstance(row.get("fee", {}).get("tuitionAmount"), dict) for row in records):
+        errors.append("Tuition amount ranges are forbidden.")
+    if any(
+        "calculated" in row.get("fee", {}).get("status", "").lower()
+        for row in records
+    ):
+        errors.append("Calculated tuition status is forbidden.")
+    official_totals = [
+        row
+        for row in records
+        if row.get("fee", {}).get("status") == "verified-current-official-fee"
+    ]
+    if any(
+        not isinstance(row["fee"].get("tuitionAmount"), (int, float))
+        or row["fee"].get("tuitionBasis") != "total-programme"
+        for row in official_totals
+    ):
+        errors.append("Verified doctoral fees must be scalar official total-programme amounts.")
+    rate_only = [
+        row
+        for row in records
+        if row.get("fee", {}).get("status") == "official-rate-only"
+    ]
+    if any(
+        row["fee"].get("tuitionAmount") is not None
+        or row["fee"].get("tuitionBasis") != "per-semester-rate-only"
+        for row in rate_only
+    ):
+        errors.append("Rate-only doctoral fees must not contain a total tuition amount.")
 
     audit = data.get("audit", {})
     if audit.get("currentOfficialCatalogueRows") != 95:
@@ -127,6 +156,8 @@ def main() -> None:
         "statuses": audit.get("statusCounts"),
         "modes": audit.get("modeCounts"),
         "fees": audit.get("feeCounts"),
+        "officialTotals": len(official_totals),
+        "officialRateOnly": len(rate_only),
         "exceptions": audit.get("exceptionCount"),
         "errors": errors,
         "warnings": warnings,

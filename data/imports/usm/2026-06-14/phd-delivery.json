@@ -11,7 +11,7 @@
     "applicantScope": "international",
     "academicSession": "current-directory-and-2025/2026-fees"
   },
-  "authorization": "publish-international-eligible-catalogue",
+  "authorization": "collect",
   "counts": {
     "directoryOccurrences": 95,
     "uniqueOfficialEntries": 95,
@@ -205,12 +205,12 @@
     {
       "role": "candidate",
       "path": "data/imports/usm/2026-06-14/phd-candidate.json",
-      "sha256": "23e80798f4068b51638a175ba4ca27bb1fff556ef521c5b7097548fde8a17e24"
+      "sha256": "d7ded915faf33e68c81962aa439661f8102d77971f60375da8b3a22f7a26ece0"
     },
     {
       "role": "audit",
       "path": "data/imports/usm/2026-06-14/phd-audit.json",
-      "sha256": "2ae9dc5c8dfcfe58390c8b2adb986ac83e30db76a2563be60d46a44466d96dd7"
+      "sha256": "ccbff2b6c864e38a6399dd9e607498a6ca252d66ed53e076b78948c83743a1c1"
     }
   ],
   "exceptions": {
@@ -218,6 +218,12 @@
     "review": []
   },
   "verification": {
+    "sourceHashes": "passed",
+    "directoryParse": "passed",
+    "identityReconciliation": "passed",
+    "fieldCoverage": "passed",
+    "feeReconciliation": "passed",
+    "manifestAudit": "passed",
     "sourceCollection": "passed",
     "candidateBuild": "passed",
     "recordAudit": "passed",

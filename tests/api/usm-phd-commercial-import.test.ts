@@ -58,6 +58,10 @@ test("USM doctoral importer preserves unpublished fields without inventing value
   assert.equal(research?.tuitionAmount, null);
   assert.equal(research?.tuitionDisplay, "");
   assert.match(String(research?.officialTuitionNote), /does not calculate a total/i);
+  assert.equal(
+    source.records.filter((row) => row.fee.status === "official-rate-only").length,
+    62
+  );
   assert.equal(offshore?.officialFeeAuditStatus, "not-published");
   assert.equal(offshore?.publicDisplayStatus, "ready");
   assert.ok(rows.every((row) => !/[\d,]+-[\d,]+.*tuition/i.test(String(row.tuitionDisplay))));
