@@ -57,7 +57,7 @@ test("USM doctoral importer preserves unpublished fields without inventing value
   assert.equal(dba?.tuitionDisplay, "USD 16,200 total tuition");
   assert.equal(research?.officialFeeAuditStatus, "official-rate-verified");
   assert.equal(research?.tuitionAmount, null);
-  assert.equal(research?.tuitionDisplay, "");
+  assert.match(String(research?.tuitionDisplay), /^USD [\d,]+ per semester \(full-time\)$/);
   assert.match(String(research?.officialTuitionNote), /does not calculate one/i);
   assert.match(String(research?.officialTuitionNote), /full-time USD [\d,]+ per semester/i);
   assert.match(String(research?.officialTuitionNote), /part-time USD [\d,]+ per semester/i);

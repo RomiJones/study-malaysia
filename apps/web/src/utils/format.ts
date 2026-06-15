@@ -919,10 +919,27 @@ function hasOfficialFeeEvidence(program: ProgramDisplayFields): boolean {
 export function formatProgramTuition(program: ProgramDisplayFields, fallback?: string, locale?: SupportedLocale): string {
   const actualFallback = fallback ?? officialPageFallback(locale);
   if (program.publicDisplayStatus === "not-available-for-international") return notAvailableForInternational(locale);
-  if (program.officialFeeAuditStatus === "official-rate-verified") return formatText("feeNotPublished", locale);
-  if (program.officialFeeAuditStatus === "not-published") return formatText("feeNotPublished", locale);
 
   const explicitDisplay = cleanDisplayText(program.tuitionDisplay || program.listTuitionText || program.tuitionInfo?.displayText, "", locale);
+  if (program.officialFeeAuditStatus === "official-rate-verified") {
+    const note = String(program.tuitionInfo?.note || "");
+    const noteRate = note.match(/full-time\s+(USD|MYR|RM|CNY)\s+([\d,]+(?:\.\d+)?)\s+per semester/i);
+    const rateDisplay = explicitDisplay && /\bper\s+semester\b|\/\s*(?:semester|学期|學期)/i.test(explicitDisplay)
+      ? explicitDisplay
+      : noteRate
+        ? `${noteRate[1].toUpperCase() === "MYR" ? "RM" : noteRate[1].toUpperCase()} ${noteRate[2]} per semester (full-time)`
+        : "";
+    if (rateDisplay && hasOfficialFeeEvidence(program)) {
+      const normalized = normalizeAcademicText(rateDisplay, actualFallback, locale);
+      if (locale === "zh-CN") return normalized.replace(/\bper\s+个学期/gi, "/ 学期").replace(/\bper\s+学期/gi, "/ 学期");
+      if (locale === "zh-TW") return normalized.replace(/\bper\s+個學期/gi, "/ 學期").replace(/\bper\s+學期/gi, "/ 學期");
+      if (locale === "ms") return normalized.replace(/\bper\s+semester/gi, "/ semester");
+      return normalized;
+    }
+    return formatText("feeRateVerified", locale);
+  }
+  if (program.officialFeeAuditStatus === "not-published") return formatText("feeNotPublished", locale);
+
   const officialMyr = finitePositiveNumber(program.officialTuitionMYR ?? program.tuitionInfo?.officialAmountMYR);
   if (officialMyr) return `RM ${formatCurrency(officialMyr)}`;
 

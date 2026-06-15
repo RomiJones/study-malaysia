@@ -169,7 +169,7 @@ function feePresentation(record: CandidateRecord): {
     return {
       amount: null,
       currency,
-      display: "",
+      display: `${currency} ${fullTime.toLocaleString("en-US")} per semester (full-time)`,
       note: `USM official ${record.fee.tuitionAcademicSession || "current"} international tuition rates: full-time ${currency} ${fullTime.toLocaleString("en-US")} per semester; part-time ${currency} ${partTime.toLocaleString("en-US")} per semester. USM does not publish a standard programme total; StudyMY does not calculate one or include extension-period tuition.`,
       status: "official-rate-verified" as const
     };

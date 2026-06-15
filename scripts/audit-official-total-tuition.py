@@ -12,8 +12,9 @@ from urllib.request import urlopen
 
 
 RANGE_PATTERN = re.compile(r"\d[\d,]*(?:\.\d+)?\s*[-–]\s*\d[\d,]*(?:\.\d+)?")
-FORBIDDEN_DISPLAY_PATTERN = re.compile(
-    r"estimated|per[\s-]semester|per[\s-]year|每学期|每年|每學期|每年",
+ESTIMATED_DISPLAY_PATTERN = re.compile(r"estimated|估算|估計", re.IGNORECASE)
+RATE_DISPLAY_PATTERN = re.compile(
+    r"(?:USD|MYR|RM|CNY)\s+\d[\d,]*(?:\.\d+)?\s+(?:per[\s-]semester|/\s*(?:semester|学期|學期))",
     re.IGNORECASE,
 )
 
@@ -94,8 +95,8 @@ def audit_api(data: dict, errors: list[str], counts: Counter) -> None:
         status = row.get("officialFeeAuditStatus")
         if RANGE_PATTERN.search(display):
             errors.append(f"{label}: public tuition display contains a range.")
-        if FORBIDDEN_DISPLAY_PATTERN.search(display):
-            errors.append(f"{label}: public tuition display contains a rate or estimate.")
+        if ESTIMATED_DISPLAY_PATTERN.search(display):
+            errors.append(f"{label}: public tuition display contains an estimate.")
         if isinstance(amount, dict):
             errors.append(f"{label}: public tuition amount is not scalar.")
         if status == "matched-official":
@@ -106,6 +107,8 @@ def audit_api(data: dict, errors: list[str], counts: Counter) -> None:
             tuition_info = row.get("tuitionInfo") or {}
             if amount is not None or tuition_info.get("amount") is not None:
                 errors.append(f"{label}: verified rate must not populate the primary total.")
+            if not RATE_DISPLAY_PATTERN.search(display):
+                errors.append(f"{label}: verified rate is missing its numeric per-semester display.")
             note = str(tuition_info.get("note") or "")
             if "per semester" not in note.lower():
                 errors.append(f"{label}: verified rate is missing official per-semester evidence.")

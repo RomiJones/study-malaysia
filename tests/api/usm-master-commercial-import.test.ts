@@ -109,7 +109,7 @@ test("USM master rows show only unique official total tuition", () => {
   const unpublished = rows.find((row) => row.officialFeeAuditStatus === "not-published");
   assert.ok(research);
   assert.equal(research?.officialFeeAuditStatus, "official-rate-verified");
-  assert.equal(research?.tuitionDisplay, "");
+  assert.match(String(research?.tuitionDisplay), /^USD [\d,]+ per semester \(full-time\)$/);
   assert.equal(research?.tuitionAmount, null);
   assert.equal(research?.tuitionCurrency, "USD");
   assert.match(String(research?.officialTuitionNote), /full-time USD [\d,]+ per semester/i);

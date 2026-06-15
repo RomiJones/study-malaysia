@@ -111,8 +111,14 @@ async function checkApi() {
   const forbiddenFee = programmes.filter((row) => {
     const display = String(row.tuitionDisplay || "");
     return /\d[\d,]*(?:\.\d+)?\s*[-–]\s*\d[\d,]*(?:\.\d+)?/.test(display)
-      || /estimated|per[\s-]semester|per[\s-]year|每学期|每年|每學期/i.test(display);
+      || /estimated|估算|估計/i.test(display)
+      || (row.officialFeeAuditStatus !== "official-rate-verified"
+        && /per[\s-]semester|per[\s-]year|每学期|每年|每學期/i.test(display));
   });
+  const invalidVerifiedRates = programmes.filter((row) =>
+    row.officialFeeAuditStatus === "official-rate-verified"
+    && !/(?:USD|MYR|RM|CNY)\s+\d[\d,]*(?:\.\d+)?\s+per semester/i.test(String(row.tuitionDisplay || ""))
+  );
   const nonReady = programmes.filter((row) => row.publicDisplayStatus !== "ready");
   if (
     data.programCount !== 460
@@ -124,6 +130,7 @@ async function checkApi() {
     || summary?.notAvailableForInternational !== 3
     || JSON.stringify(feeStatusCounts) !== JSON.stringify(expectedFeeStatuses)
     || forbiddenFee.length
+    || invalidVerifiedRates.length
     || nonReady.length
   ) {
     throw new Error("USM public API commercial invariants failed.");
@@ -137,6 +144,7 @@ async function checkApi() {
       levelCounts,
       feeStatusCounts,
       forbiddenFee: 0,
+      invalidVerifiedRates: 0,
       nonReady: 0
     }
   });
@@ -146,10 +154,10 @@ async function checkUi() {
   const browser = await chromium.launch({ headless: true });
   const consoleErrors = [];
   const localeSummary = {
-    "zh-CN": "按专业查看官方总学费",
-    "zh-TW": "按專業查看官方總學費",
-    en: "Official total shown by programme",
-    ms: "Jumlah rasmi dipaparkan mengikut program"
+    "zh-CN": "按专业查看官方学费",
+    "zh-TW": "按專業查看官方學費",
+    en: "Official tuition shown by programme",
+    ms: "Yuran rasmi dipaparkan mengikut program"
   };
   try {
     for (const [locale, summaryText] of Object.entries(localeSummary)) {
@@ -167,13 +175,13 @@ async function checkUi() {
         await page.getByRole("tab", { name: "硕士专业", exact: true }).click();
         const master = await page.locator('[role="tabpanel"]:not([hidden])').innerText();
         assertNoFeeRange(master, "master list");
-        if (!master.includes("官方未公布")) throw new Error("Master list does not expose official unpublished status.");
+        if (!master.includes("/ 学期")) throw new Error("Master list does not expose the verified numeric semester rate.");
         if (!master.includes("官方费率已核验")) throw new Error("Master list does not expose verified official rate status.");
         await page.getByRole("tab", { name: "博士专业", exact: true }).click();
         const phd = await page.locator('[role="tabpanel"]:not([hidden])').innerText();
         assertNoFeeRange(phd, "doctoral list");
-        if (!phd.includes("USD 16,200") || !phd.includes("官方未公布") || !phd.includes("官方费率已核验")) {
-          throw new Error("Doctoral fee display is missing DBA total, unpublished status, or verified official rate status.");
+        if (!phd.includes("USD 16,200") || !phd.includes("/ 学期") || !phd.includes("官方费率已核验")) {
+          throw new Error("Doctoral fee display is missing the DBA total or verified numeric semester rate.");
         }
       }
       await context.close();

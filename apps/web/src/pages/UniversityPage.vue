@@ -822,7 +822,9 @@ async function setProgramPage(page: number) {
   if (nextPage === currentProgramPage.value) return;
   currentProgramPage.value = nextPage;
   await nextTick();
-  programmeBlockRef.value?.scrollIntoView({ behavior: "smooth", block: "start" });
+  if (typeof programmeBlockRef.value?.scrollIntoView === "function") {
+    programmeBlockRef.value.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
 }
 
 function handleTabKeydown(event: KeyboardEvent, currentTab: DetailTab) {

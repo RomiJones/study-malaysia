@@ -11,7 +11,7 @@
     "applicantScope": "international",
     "academicSession": "current-directory-and-2025/2026-fees"
   },
-  "authorization": "collect",
+  "authorization": "publish",
   "counts": {
     "directoryOccurrences": 95,
     "uniqueOfficialEntries": 95,
@@ -72,8 +72,8 @@
       "review": 0
     },
     "fee": {
-      "covered": 13,
-      "unpublished": 82,
+      "covered": 75,
+      "unpublished": 20,
       "review": 0
     },
     "evidence": {
@@ -211,6 +211,16 @@
       "role": "audit",
       "path": "data/imports/usm/2026-06-14/phd-audit.json",
       "sha256": "ccbff2b6c864e38a6399dd9e607498a6ca252d66ed53e076b78948c83743a1c1"
+    },
+    {
+      "role": "backup",
+      "path": "data/imports/usm/2026-06-14/publication/usm-phd-before-official-rate-display.json.gz",
+      "sha256": "bb0ab9360a398238be531a63fb351d2cbb65dde19b16d0f0540cf1a086e8821e"
+    },
+    {
+      "role": "release-report",
+      "path": "data/imports/usm/2026-06-14/publication/usm-official-rate-display-release-report.json",
+      "sha256": "00f103434e88c44e8ab869dafdee65b5af6104776f8f842bb18d99633dc7a1d3"
     }
   ],
   "exceptions": {
@@ -227,10 +237,14 @@
     "sourceCollection": "passed",
     "candidateBuild": "passed",
     "recordAudit": "passed",
-    "deliveryAudit": "not-required",
-    "databaseWrite": "pending",
-    "apiUiVerification": "pending"
+    "deliveryAudit": "passed",
+    "feePolicy": "passed",
+    "localization": "passed",
+    "tests": "passed",
+    "build": "passed",
+    "databaseWrite": "passed",
+    "apiUiVerification": "passed"
   },
-  "decision": "ready-for-controlled-import",
-  "databaseWrite": "not-performed"
+  "decision": "published",
+  "databaseWrite": "performed"
 }
