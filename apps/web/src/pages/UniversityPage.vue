@@ -187,7 +187,7 @@
           </template>
 
           <template v-else-if="activeProgramLevel">
-            <div class="programme-block">
+            <div ref="programmeBlockRef" class="programme-block">
               <div class="programme-table-title">
                 <h2>{{ t('university.programmeHeading', { level: activeProgramLabel }) }}</h2>
                 <span class="programme-count">{{ activePrograms.length }}</span>
@@ -205,7 +205,7 @@
                   <div></div>
                 </div>
                 <button
-                  v-for="program in activePrograms"
+                  v-for="program in pagedPrograms"
                   :key="program.id"
                   class="programme-grid-row"
                   type="button"
@@ -238,7 +238,44 @@
                   </div>
                 </button>
               </div>
-              <div v-else class="section-card empty-state">
+              <nav
+                v-if="programTotalPages > 1"
+                class="pagination-bar"
+                :aria-label="t('common.pagination')"
+              >
+                <button
+                  class="page-btn"
+                  type="button"
+                  :disabled="currentProgramPage <= 1"
+                  :aria-label="t('common.previous')"
+                  @click="setProgramPage(currentProgramPage - 1)"
+                >
+                  <span class="ui-icon ui-icon--arrow-left" aria-hidden="true"></span>
+                </button>
+                <template v-for="(item, index) in programPaginationItems" :key="`${item}-${index}`">
+                  <span v-if="item === 'ellipsis'" class="pagination-gap" aria-hidden="true">...</span>
+                  <button
+                    v-else
+                    class="page-btn"
+                    :class="{ active: currentProgramPage === item }"
+                    type="button"
+                    :aria-current="currentProgramPage === item ? 'page' : undefined"
+                    @click="setProgramPage(item)"
+                  >
+                    {{ item }}
+                  </button>
+                </template>
+                <button
+                  class="page-btn"
+                  type="button"
+                  :disabled="currentProgramPage >= programTotalPages"
+                  :aria-label="t('common.next')"
+                  @click="setProgramPage(currentProgramPage + 1)"
+                >
+                  <span class="ui-icon ui-icon--arrow-right" aria-hidden="true"></span>
+                </button>
+              </nav>
+              <div v-if="!activePrograms.length" class="section-card empty-state">
                 {{ t('university.noPrograms', { level: activeProgramLabel }) }}
               </div>
             </div>
@@ -479,7 +516,7 @@
 </template>
 
 <script setup lang="ts">
-import { computed, onMounted, ref, watch } from "vue";
+import { computed, nextTick, onMounted, ref, watch } from "vue";
 import type {
   DegreeLevel,
   InstitutionOwnership,
@@ -494,6 +531,7 @@ import { useI18n } from "vue-i18n";
 import { useLocaleText } from "../composables/useLocaleText";
 import { useCatalogStore } from "../stores/catalog";
 import { usePlannerStore } from "../stores/planner";
+import { buildPaginationItems } from "../utils/pagination";
 import {
   cleanDisplayText,
   formatCategoryLabel,
@@ -548,6 +586,9 @@ const { currentLocale, text, array } = useLocaleText();
 const planner = usePlannerStore();
 const activeTab = ref<DetailTab>("overview");
 const hasHeroLogoError = ref(false);
+const programmeBlockRef = ref<HTMLElement | null>(null);
+const currentProgramPage = ref(1);
+const PROGRAMS_PER_PAGE = 12;
 const tabKeys: DetailTab[] = ["overview", "bachelor", "master", "phd", "facilities", "apply"];
 
 const detailTabs = computed<Array<{ key: DetailTab; label: string }>>(() => [
@@ -715,6 +756,15 @@ const activePrograms = computed(() => {
     : [];
 });
 
+const programTotalPages = computed(() => Math.max(1, Math.ceil(activePrograms.value.length / PROGRAMS_PER_PAGE)));
+const pagedPrograms = computed(() => {
+  const start = (currentProgramPage.value - 1) * PROGRAMS_PER_PAGE;
+  return activePrograms.value.slice(start, start + PROGRAMS_PER_PAGE);
+});
+const programPaginationItems = computed(() =>
+  buildPaginationItems(currentProgramPage.value, programTotalPages.value)
+);
+
 const activeProgramLabel = computed(() => activeProgramLevel.value ? levelLabel(activeProgramLevel.value) : "");
 
 const applicationPeriodRows = computed(() => {
@@ -762,8 +812,17 @@ async function openQueryProgram() {
 }
 
 function setActiveTab(tab: DetailTab) {
+  if (activeTab.value !== tab) currentProgramPage.value = 1;
   activeTab.value = tab;
   catalog.closeProgramDetail();
+}
+
+async function setProgramPage(page: number) {
+  const nextPage = Math.min(programTotalPages.value, Math.max(1, Math.floor(page)));
+  if (nextPage === currentProgramPage.value) return;
+  currentProgramPage.value = nextPage;
+  await nextTick();
+  programmeBlockRef.value?.scrollIntoView({ behavior: "smooth", block: "start" });
 }
 
 function handleTabKeydown(event: KeyboardEvent, currentTab: DetailTab) {
@@ -1339,9 +1398,14 @@ onMounted(() => {
 
 watch(() => props.slug, () => {
   activeTab.value = "overview";
+  currentProgramPage.value = 1;
   hasHeroLogoError.value = false;
   catalog.closeProgramDetail();
   void loadDetail();
+});
+
+watch(programTotalPages, (totalPages) => {
+  if (currentProgramPage.value > totalPages) currentProgramPage.value = totalPages;
 });
 
 watch(() => detail.value?.logoUrl, () => {
