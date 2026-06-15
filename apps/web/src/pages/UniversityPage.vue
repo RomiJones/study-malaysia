@@ -223,7 +223,7 @@
                   </div>
                   <div class="programme-cell" :data-label="t('university.officialTuition')">
                     <div class="programme-fee-main">{{ tuitionListLabel(program) }}</div>
-                    <div class="programme-fee-status" :class="{ review: program.officialFeeAuditStatus !== 'matched-official' }">
+                    <div class="programme-fee-status" :class="{ review: feeStatusNeedsReview(program) }">
                       {{ feeStatus(program) }}
                     </div>
                   </div>
@@ -877,6 +877,10 @@ function feeStatus(program: ProgramListItem | ProgramCatalogDetail) {
   return formatFeeAuditStatus(program.officialFeeAuditStatus, program.publicDisplayStatus, currentLocale.value);
 }
 
+function feeStatusNeedsReview(program: ProgramListItem | ProgramCatalogDetail) {
+  return ["pending-review", "conflict", "source-conflict"].includes(program.officialFeeAuditStatus);
+}
+
 function durationLabel(program: ProgramListItem | ProgramCatalogDetail) {
   return formatProgramDuration(program, currentLocale.value);
 }
@@ -891,6 +895,21 @@ function intakeLabel(program: ProgramListItem | ProgramCatalogDetail) {
 
 function tuitionNoteLabel(program: ProgramCatalogDetail) {
   if (program.code.startsWith("USM-") && (program.level === "master" || program.level === "phd")) {
+    if (program.officialFeeAuditStatus === "official-rate-verified") {
+      const note = String(program.tuitionInfo?.note || "");
+      const match = note.match(
+        /USM official (.+?) international tuition rates: full-time (USD|MYR) ([\d,]+(?:\.\d+)?) per semester; part-time (?:USD|MYR) ([\d,]+(?:\.\d+)?) per semester/i
+      );
+      if (match) {
+        return t("program.officialRateTuitionNote", {
+          session: match[1],
+          currency: match[2].toUpperCase(),
+          fullTime: match[3],
+          partTime: match[4]
+        });
+      }
+      return t("program.calculatedTotalTuitionNote");
+    }
     if (program.officialFeeAuditStatus === "not-published") return t("program.feeNotPublishedNote");
     return t("program.officialTotalTuitionNote");
   }

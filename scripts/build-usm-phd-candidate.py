@@ -363,12 +363,14 @@ def fee_for(record: dict, mode: str, fee_schedule: dict) -> dict:
         row = research_fee_for(record, fee_schedule["researchAcademicUnitFees"])
         if row:
             rate = row["international"]["fullTimePerSemester"]
+            part_time_rate = row["international"]["partTimePerSemester"]
             return {
                 "status": "official-rate-only",
                 "tuitionAmount": None,
                 "tuitionCurrency": row["international"]["currency"],
                 "tuitionBasis": "per-semester-rate-only",
                 "officialRatePerSemester": rate,
+                "officialPartTimeRatePerSemester": part_time_rate,
                 "tuitionAcademicSession": row["academicSession"],
                 "officialFeeSourceUrl": row["officialFeeSourceUrl"],
                 "provenance": "official-rate-only",

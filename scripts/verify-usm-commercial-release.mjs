@@ -95,6 +95,19 @@ async function checkApi() {
   ]));
   const expectedLevels = { bachelor: 63, master: 304, phd: 93 };
   const summary = data.officialProfile?.catalogStatusSummary?.all;
+  const feeStatusCounts = Object.fromEntries([
+    "matched-official",
+    "official-rate-verified",
+    "not-published"
+  ].map((status) => [
+    status,
+    programmes.filter((row) => row.officialFeeAuditStatus === status).length
+  ]));
+  const expectedFeeStatuses = {
+    "matched-official": 191,
+    "official-rate-verified": 213,
+    "not-published": 56
+  };
   const forbiddenFee = programmes.filter((row) => {
     const display = String(row.tuitionDisplay || "");
     return /\d[\d,]*(?:\.\d+)?\s*[-–]\s*\d[\d,]*(?:\.\d+)?/.test(display)
@@ -109,6 +122,7 @@ async function checkApi() {
     || summary?.ready !== 460
     || summary?.needsReview !== 0
     || summary?.notAvailableForInternational !== 3
+    || JSON.stringify(feeStatusCounts) !== JSON.stringify(expectedFeeStatuses)
     || forbiddenFee.length
     || nonReady.length
   ) {
@@ -117,7 +131,14 @@ async function checkApi() {
   report.checks.push({
     name: "public API invariants",
     status: "passed",
-    result: { canonical: 463, public: 460, levelCounts, forbiddenFee: 0, nonReady: 0 }
+    result: {
+      canonical: 463,
+      public: 460,
+      levelCounts,
+      feeStatusCounts,
+      forbiddenFee: 0,
+      nonReady: 0
+    }
   });
 }
 
@@ -147,11 +168,12 @@ async function checkUi() {
         const master = await page.locator('[role="tabpanel"]:not([hidden])').innerText();
         assertNoFeeRange(master, "master list");
         if (!master.includes("官方未公布")) throw new Error("Master list does not expose official unpublished status.");
+        if (!master.includes("官方费率已核验")) throw new Error("Master list does not expose verified official rate status.");
         await page.getByRole("tab", { name: "博士专业", exact: true }).click();
         const phd = await page.locator('[role="tabpanel"]:not([hidden])').innerText();
         assertNoFeeRange(phd, "doctoral list");
-        if (!phd.includes("USD 16,200") || !phd.includes("官方未公布")) {
-          throw new Error("Doctoral fee display is missing DBA total or unpublished status.");
+        if (!phd.includes("USD 16,200") || !phd.includes("官方未公布") || !phd.includes("官方费率已核验")) {
+          throw new Error("Doctoral fee display is missing DBA total, unpublished status, or verified official rate status.");
         }
       }
       await context.close();

@@ -484,7 +484,9 @@ const validatePayload = (payload: any) => {
   const hasProgramSource =
     payload.officialSourceUrl || payload.officialEntryRequirementSourceUrl || payload.officialAccreditationSourceUrl || hasSourceUrl(payload.sourceUrls);
   if (sourceReady && !hasProgramSource) throw new Error("可公开展示或官方已核验的专业必须至少填写一个官方来源 URL");
-  if (payload.officialFeeAuditStatus === "matched-official" && !payload.officialFeeSourceUrl) throw new Error("费用审计为与官方一致时必须填写官方学费来源 URL");
+  if (["matched-official", "official-rate-verified"].includes(payload.officialFeeAuditStatus) && !payload.officialFeeSourceUrl) {
+    throw new Error("费用审计为官方已核验时必须填写官方学费来源 URL");
+  }
   if (((payload.officialTuitionMYR !== null && payload.officialTuitionMYR !== undefined) || payload.tuitionCurrency === "MYR") && !payload.officialFeeSourceUrl) {
     throw new Error("官方 MYR 学费或 MYR 币种必须填写官方学费来源 URL");
   }

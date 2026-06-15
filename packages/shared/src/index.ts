@@ -116,6 +116,7 @@ export type OfficialSourceStatus =
 export type TuitionCurrency = "MYR" | "CNY" | "USD" | "UNKNOWN";
 export type FeeAuditStatus =
   | "matched-official"
+  | "official-rate-verified"
   | "conflict"
   | "source-conflict"
   | "pending-review"
@@ -604,6 +605,12 @@ export const FEE_AUDIT_STATUS_LABELS: Record<FeeAuditStatus, LocalizedText> = {
     ms: "Sepadan dengan sumber rasmi",
     "zh-CN": "与官方来源一致",
     "zh-TW": "與官方來源一致"
+  },
+  "official-rate-verified": {
+    en: "Official rate verified",
+    ms: "Kadar rasmi disahkan",
+    "zh-CN": "官方费率已核验",
+    "zh-TW": "官方費率已核驗"
   },
   conflict: {
     en: "Conflict",

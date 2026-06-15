@@ -6,6 +6,7 @@ import {
   formatCategoryLabel,
   formatOfficialNote,
   formatOfficialSourceStatus,
+  formatFeeAuditStatus,
   formatProgramDuration,
   formatProgramFacultyLabel,
   formatProgramIntake,
@@ -59,6 +60,8 @@ describe("web display format helpers", () => {
     assert.equal(formatProgramTuition(program({ officialTuitionMYR: 62000 })), "RM 62,000");
     assert.equal(formatProgramTuition(program({ tuitionDisplay: "CNY 45,000 / year" })), OFFICIAL_PAGE_FALLBACK);
     assert.equal(formatProgramTuition(program({ officialFeeAuditStatus: "not-published" }), undefined, "zh-CN"), "官方未公布");
+    assert.equal(formatProgramTuition(program({ officialFeeAuditStatus: "official-rate-verified" }), undefined, "zh-CN"), "官方未公布");
+    assert.equal(formatFeeAuditStatus("official-rate-verified", "ready", "zh-CN"), "官方费率已核验");
     assert.equal(
       formatProgramTuition(program({
         tuitionDisplay: "USD 1,800 per semester (full-time)",

@@ -20,7 +20,8 @@ test("USM doctoral source keeps all 95 official identities and publishes the aud
   assert.equal(summary.needsReview, 0);
   assert.equal(summary.notAvailableForInternational, 2);
   assert.equal(summary.feeMatched, 13);
-  assert.equal(summary.feeNotPublished, 82);
+  assert.equal(summary.feeRateVerified, 62);
+  assert.equal(summary.feeNotPublished, 20);
   assert.deepEqual(summary.modes, {
     mixed: 6,
     online: 1,
@@ -54,10 +55,12 @@ test("USM doctoral importer preserves unpublished fields without inventing value
   assert.equal(neuroscience?.publicDisplayStatus, "ready");
   assert.equal(dba?.tuitionAmount, 16200);
   assert.equal(dba?.tuitionDisplay, "USD 16,200 total tuition");
-  assert.equal(research?.officialFeeAuditStatus, "not-published");
+  assert.equal(research?.officialFeeAuditStatus, "official-rate-verified");
   assert.equal(research?.tuitionAmount, null);
   assert.equal(research?.tuitionDisplay, "");
-  assert.match(String(research?.officialTuitionNote), /does not calculate a total/i);
+  assert.match(String(research?.officialTuitionNote), /does not calculate one/i);
+  assert.match(String(research?.officialTuitionNote), /full-time USD [\d,]+ per semester/i);
+  assert.match(String(research?.officialTuitionNote), /part-time USD [\d,]+ per semester/i);
   assert.equal(
     source.records.filter((row) => row.fee.status === "official-rate-only").length,
     62

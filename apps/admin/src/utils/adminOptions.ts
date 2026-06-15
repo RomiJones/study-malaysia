@@ -62,6 +62,7 @@ export const DEFAULT_OPTIONS: Record<string, AdminOption[]> = {
   ],
   fee_audit_status: [
     { label: "与官方一致", value: "matched-official" },
+    { label: "官方费率已核验", value: "official-rate-verified" },
     { label: "金额冲突", value: "conflict" },
     { label: "来源冲突", value: "source-conflict" },
     { label: "待复核", value: "pending-review" },
@@ -115,7 +116,7 @@ export function optionLabel(options: AdminOption[], value?: string | null) {
 
 export function statusTagType(value?: string | null) {
   if (!value) return "info";
-  if (["ready", "official-verified", "matched-official", "enabled"].includes(value)) return "success";
+  if (["ready", "official-verified", "matched-official", "official-rate-verified", "enabled"].includes(value)) return "success";
   if (["needs-review", "pending-review"].includes(value)) return "warning";
   if (["source-conflict", "conflict", "missing-source"].includes(value)) return "danger";
   return "info";

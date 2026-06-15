@@ -48,7 +48,8 @@
 - USM `programCount=460`。
 - `officialProfile.catalogStatusSummary` 返回总数 463、公开 460、待审核 0、国际生不可用 3。
 - 公开 API 按层级返回本科 63、硕士 304、博士 93，全部为 `ready`。
-- 公开 API 的 460 条记录中，191 条展示唯一官方总学费，269 条明确显示官方未公布；费用范围、估算总额和费率型主显示均为 0。
+- 公开 API 的 460 条记录中，191 条展示唯一官方总学费，213 条标记为“官方费率已核验”，56 条标记为“官方未公布”。
+- 213 条费率已核验记录的主学费总额保持为空，但保留官方学年、全日制与非全日制每学期费率及官方来源；费用范围、估算总额和费率型主显示均为 0。
 
 ## 验证命令
 
@@ -72,6 +73,7 @@
 - 博士标签显示 93 条公开项目。
 - DBA 显示 3.5 年主摘要、全日制 3.5–5 年/非全日制 4.5–7 年详情、USD 16,200 总学费和官方来源链接。
 - 境外博士及仅公布每学期费率的研究型项目明确显示“官方未公布”，未生成估算价格或费用范围。
+- 仅公布每学期费率的研究型项目同时显示“官方费率已核验”，详情可查看官方全日制与非全日制费率，避免被误解为尚未核验。
 - 教育博士中文名和硕博中文项目名英文残留复验通过。
 
 ## 证据哈希
@@ -83,9 +85,11 @@
 | `master-commercial-candidate.json` | `eb87f795a061f739278c49860c926bffe668baddc233a7c07056fcff1a84c1f7` |
 | `phd-current-catalogue.json` | `03be7bc3fadfbb2313e6ddefbdf02457481832041724176bccdd60ad878c9372` |
 | `phd-official-source.json` | `9e889a530617c4bfb0b178f38574962e9936fbabd20320b4f6e3fa21ac53b4bc` |
-| `phd-candidate.json` | `d7ded915faf33e68c81962aa439661f8102d77971f60375da8b3a22f7a26ece0` |
+| `phd-candidate.json` | `9707efdd4d730a54159ef0b59e6057d303d44700604cb0ddf1967c9f71ccc8d1` |
 | `phd-audit.json` | `ccbff2b6c864e38a6399dd9e607498a6ca252d66ed53e076b78948c83743a1c1` |
-| `phd-delivery.json` | `6fdd9d5d7db8fd1543de13459ce7338023ae38fd30780ec8c8cc4e330cd1753b` |
+| `phd-delivery.json` | `805c34b210843e3d3f122d7de0d7810871b8ea6e3cb27e8ba3d49f58ac5952e2` |
+
+USM 官方研究生费用 PDF 的 2026-06-15 线上复核 SHA-256 为 `24bc178e7da6de039ff9e5cd866c580a5f3ed1c73db04d08b8f7ca42cb75bcef`，与本地审计来源文件一致。
 
 ## 回滚与 Notion
 

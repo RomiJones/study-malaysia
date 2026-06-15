@@ -10,8 +10,11 @@
 - 公开国际生项目固定审计为 63、304、93，共 460。
 - `needs-review` 必须为 0；3 条仅限马来西亚申请人的记录保留在审计层且不得公开。
 - 主学费只接受官网直接公布、唯一对应项目或已选方向的标准项目总学费。
-- 每学期或每年费率使用 `official-rate-only`，主学费金额保持空值。
+- 候选来源中，每学期或每年费率使用 `official-rate-only`；进入数据库和公开 API 后使用 `official-rate-verified`，主学费金额保持空值。
 - 无数字的官方费用行使用 `official-total-unpublished`，不得标记为已匹配官方总额。
+- 公开项目学费状态必须精确为：191 条 `matched-official`、213 条 `official-rate-verified`、56 条 `not-published`。
+- `official-rate-verified` 与 `not-published` 的 `tuitionAmount`、`tuitionInfo.amount` 必须为 `null`；禁止用 `0` 表示没有官方总额。
+- 院校详情 API 必须保留 `tuitionInfo.note`，用于向用户展示官方学年、全日制费率、非全日制费率和“不计算项目总额”的说明。
 - 费用范围、估算总额、按学制相乘、延期或超期费用均不得进入主学费字段。
 - 院校概览不得汇总不同专业的最低至最高费用。
 

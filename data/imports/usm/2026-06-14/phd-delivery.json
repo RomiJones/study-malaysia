@@ -205,7 +205,7 @@
     {
       "role": "candidate",
       "path": "data/imports/usm/2026-06-14/phd-candidate.json",
-      "sha256": "d7ded915faf33e68c81962aa439661f8102d77971f60375da8b3a22f7a26ece0"
+      "sha256": "9707efdd4d730a54159ef0b59e6057d303d44700604cb0ddf1967c9f71ccc8d1"
     },
     {
       "role": "audit",

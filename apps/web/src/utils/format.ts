@@ -28,6 +28,7 @@ const localizedFormatText = {
     years: "years",
     detailPageNote: "See detail page notes",
     feeMatchedOfficial: "Officially verified",
+    feeRateVerified: "Official rate verified",
     feeNotPublished: "Not published officially",
     feeSourceReview: "Fee source needs review",
     sourceOfficialVerified: "Official source verified",
@@ -47,6 +48,7 @@ const localizedFormatText = {
     years: "tahun",
     detailPageNote: "Lihat nota halaman butiran",
     feeMatchedOfficial: "Disahkan rasmi",
+    feeRateVerified: "Kadar rasmi disahkan",
     feeNotPublished: "Belum diterbitkan secara rasmi",
     feeSourceReview: "Sumber yuran perlu disemak",
     sourceOfficialVerified: "Sumber rasmi disahkan",
@@ -66,6 +68,7 @@ const localizedFormatText = {
     years: "年",
     detailPageNote: "详情页查看说明",
     feeMatchedOfficial: "官方已核验",
+    feeRateVerified: "官方费率已核验",
     feeNotPublished: "官方未公布",
     feeSourceReview: "费用来源需复核",
     sourceOfficialVerified: "官方来源已核验",
@@ -85,6 +88,7 @@ const localizedFormatText = {
     years: "年",
     detailPageNote: "詳情頁查看說明",
     feeMatchedOfficial: "官方已核驗",
+    feeRateVerified: "官方費率已核驗",
     feeNotPublished: "官方未公布",
     feeSourceReview: "費用來源需複核",
     sourceOfficialVerified: "官方來源已核驗",
@@ -915,6 +919,7 @@ function hasOfficialFeeEvidence(program: ProgramDisplayFields): boolean {
 export function formatProgramTuition(program: ProgramDisplayFields, fallback?: string, locale?: SupportedLocale): string {
   const actualFallback = fallback ?? officialPageFallback(locale);
   if (program.publicDisplayStatus === "not-available-for-international") return notAvailableForInternational(locale);
+  if (program.officialFeeAuditStatus === "official-rate-verified") return formatText("feeNotPublished", locale);
   if (program.officialFeeAuditStatus === "not-published") return formatText("feeNotPublished", locale);
 
   const explicitDisplay = cleanDisplayText(program.tuitionDisplay || program.listTuitionText || program.tuitionInfo?.displayText, "", locale);
@@ -1038,6 +1043,7 @@ export function formatFeeAuditStatus(
 ): string {
   if (publicDisplayStatus === "not-available-for-international") return formatText("detailPageNote", locale);
   if (status === "matched-official") return formatText("feeMatchedOfficial", locale);
+  if (status === "official-rate-verified") return formatText("feeRateVerified", locale);
   if (status === "not-published") return formatText("feeNotPublished", locale);
   if (status === "conflict" || status === "source-conflict") return formatText("feeSourceReview", locale);
   return officialConfirmationFallback(locale);

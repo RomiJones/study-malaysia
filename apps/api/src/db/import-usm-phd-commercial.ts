@@ -55,6 +55,9 @@ interface CandidateRecord {
     status: string;
     tuitionAmount: number | null;
     tuitionCurrency: "USD" | "MYR" | null;
+    tuitionAcademicSession?: string;
+    officialRatePerSemester?: number;
+    officialPartTimeRatePerSemester?: number;
     officialFeeSourceUrl: string;
     reason?: string;
   };
@@ -144,7 +147,7 @@ function feePresentation(record: CandidateRecord): {
   currency: "USD" | "MYR" | "UNKNOWN";
   display: string;
   note: string;
-  status: "matched-official" | "not-published";
+  status: "matched-official" | "official-rate-verified" | "not-published";
 } {
   const amount = record.fee.tuitionAmount;
   if (typeof amount === "number") {
@@ -154,6 +157,21 @@ function feePresentation(record: CandidateRecord): {
       display: `${record.fee.tuitionCurrency} ${amount.toLocaleString("en-US")} total tuition`,
       note: "Current official total programme tuition; separate charges may apply.",
       status: "matched-official" as const
+    };
+  }
+  if (
+    record.fee.status === "official-rate-only"
+    && record.fee.officialRatePerSemester
+  ) {
+    const fullTime = record.fee.officialRatePerSemester;
+    const partTime = record.fee.officialPartTimeRatePerSemester || fullTime;
+    const currency = record.fee.tuitionCurrency || "UNKNOWN";
+    return {
+      amount: null,
+      currency,
+      display: "",
+      note: `USM official ${record.fee.tuitionAcademicSession || "current"} international tuition rates: full-time ${currency} ${fullTime.toLocaleString("en-US")} per semester; part-time ${currency} ${partTime.toLocaleString("en-US")} per semester. USM does not publish a standard programme total; StudyMY does not calculate one or include extension-period tuition.`,
+      status: "official-rate-verified" as const
     };
   }
   return {
@@ -208,7 +226,7 @@ export function buildUsmPhdRows(source: PhdCommercialSource): Array<DeepPartial<
         title: "USM postgraduate fee schedule",
         url: record.fee.officialFeeSourceUrl || feeDirectoryUrl,
         sourceType: "fee",
-        verifiedAt: "2026-06-14",
+        verifiedAt: "2026-06-15",
         status: "official-verified"
       },
       {
@@ -241,7 +259,7 @@ export function buildUsmPhdRows(source: PhdCommercialSource): Array<DeepPartial<
       officialFeeSourceUrl: record.fee.officialFeeSourceUrl || feeDirectoryUrl,
       secondaryOfficialFeeSourceUrl: feeDirectoryUrl,
       officialFeeAuditStatus: fee.status,
-      officialFeeAuditedAt: "2026-06-14",
+      officialFeeAuditedAt: "2026-06-15",
       intakeMonths: record.intakeMonths,
       officialIntake: record.officialIntake.slice(0, 255),
       officialIntakeNote: record.officialIntake
@@ -332,6 +350,7 @@ export function summarizeUsmPhdRows(rows: Array<DeepPartial<ProgramEntity>>) {
     needsReview: rows.filter((row) => row.publicDisplayStatus === "needs-review").length,
     notAvailableForInternational: rows.filter((row) => row.publicDisplayStatus === "not-available-for-international").length,
     feeMatched: rows.filter((row) => row.officialFeeAuditStatus === "matched-official").length,
+    feeRateVerified: rows.filter((row) => row.officialFeeAuditStatus === "official-rate-verified").length,
     feeNotPublished: rows.filter((row) => row.officialFeeAuditStatus === "not-published").length,
     modes: rows.reduce<Record<string, number>>((result, row) => {
       result[String(row.studyMode)] = (result[String(row.studyMode)] || 0) + 1;

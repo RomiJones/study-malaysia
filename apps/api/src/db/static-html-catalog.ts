@@ -445,6 +445,7 @@ function mapOfficialSourceStatus(value: string): OfficialSourceStatus {
 
 function mapFeeAuditStatus(value: string, hasOfficialFeeSource: boolean, hasOfficialTuition: boolean): FeeAuditStatus {
   const normalized = value.toLowerCase();
+  if (normalized.includes("official-rate-verified") || normalized.includes("rate verified")) return "official-rate-verified";
   if (normalized.includes("conflict")) return "source-conflict";
   if (normalized.includes("not available") || normalized.includes("not offered") || normalized.includes("not list")) return "not-published";
   if (normalized.includes("matched") || normalized.includes("official") || normalized.includes("confirmed")) return "matched-official";

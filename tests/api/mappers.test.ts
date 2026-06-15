@@ -85,6 +85,67 @@ describe("API mappers", () => {
     assert.equal(mapped.sourceUrls.some((item) => item.url === "https://example.edu/program"), true);
   });
 
+  test("keeps verified rates out of total tuition amount fields", () => {
+    const mapped = mapProgram({
+      id: 12,
+      universityId: 2,
+      slug: "usm-master-arts",
+      code: "USM-M-ARTS",
+      name: text("Master of Arts", "文学硕士"),
+      nameEnOfficial: "Master of Arts",
+      level: "master",
+      category: "arts",
+      faculty: text("School of Humanities", "人文学院"),
+      facultyZh: "人文学院",
+      studyMode: "research",
+      campus: "Main Campus, Penang",
+      durationYears: 1,
+      durationOfficial: "Full-time: 1-3 years; Part-time: 2-6 years",
+      annualTuitionCny: 0,
+      tuitionAmount: null,
+      tuitionCurrency: "USD",
+      tuitionDisplay: "Official fee not published",
+      officialTuitionMYR: null,
+      officialTuitionNote: "USM official 2025/2026 international tuition rates: full-time USD 1,400 per semester; part-time USD 1,190 per semester.",
+      officialFeeSourceUrl: "https://admission.usm.my/index.php/postgraduate/fee-pg",
+      secondaryOfficialFeeSourceUrl: "",
+      officialFeeAuditStatus: "official-rate-verified",
+      officialFeeAuditedAt: new Date("2026-06-15T00:00:00Z"),
+      intakeMonths: ["September", "March"],
+      officialIntake: "September / March",
+      officialIntakeNote: "",
+      languageRequirement: { ielts: 5, toefl: null, pte: null, muet: null },
+      officialLanguageRequirement: "IELTS 5.0",
+      requirement: { gpa: 2.75, gaokaoRequired: false, huikaoRequired: false, note: text("Bachelor degree") },
+      officialAcademicRequirement: "Bachelor degree",
+      chinaStudentRequirement: "",
+      specialRequirementsNote: "",
+      applicationDocs: list(),
+      curriculum: list(),
+      careers: list(),
+      specializations: list(),
+      description: text("Research programme"),
+      officialAccreditationNote: "",
+      officialSourceUrl: "https://admission.usm.my/programme",
+      officialEntryRequirementSourceUrl: "",
+      officialAccreditationSourceUrl: "",
+      sourceUrls: [],
+      officialVerifiedAt: "2026-06-15",
+      officialSourceStatus: "official-verified",
+      publicDisplayStatus: "ready",
+      publicDisplayNote: "",
+      reviewReason: "",
+      auditNote: "",
+      listTuitionText: "Official fee not published",
+      isPublished: true
+    } as any);
+
+    assert.equal(mapped.tuitionAmount, null);
+    assert.equal(mapped.tuitionInfo.amount, null);
+    assert.equal(mapped.tuitionInfo.auditStatus, "official-rate-verified");
+    assert.match(String(mapped.tuitionInfo.note), /full-time USD 1,400 per semester/);
+  });
+
   test("localizes public university image fields before API responses", () => {
     const mapped = mapUniversity({
       id: 1,

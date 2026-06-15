@@ -25,7 +25,14 @@ const OFFICIAL_SOURCE_STATUSES = new Set([
   "hidden-duplicate-superseded"
 ]);
 
-const FEE_AUDIT_STATUSES = new Set(["matched-official", "conflict", "source-conflict", "pending-review", "not-published"]);
+const FEE_AUDIT_STATUSES = new Set([
+  "matched-official",
+  "official-rate-verified",
+  "conflict",
+  "source-conflict",
+  "pending-review",
+  "not-published"
+]);
 const TUITION_CURRENCIES = new Set(["MYR", "CNY", "USD", "UNKNOWN"]);
 
 const UNIVERSITY_AUDIT_FIELDS = [
@@ -326,8 +333,11 @@ export class AdminCmsService {
       throw new BadRequestException("Official verified program requires an official source URL");
     }
 
-    if (payload.officialFeeAuditStatus === "matched-official" && !isFilledString(payload.officialFeeSourceUrl)) {
-      throw new BadRequestException("Matched official fee audit requires officialFeeSourceUrl");
+    if (
+      ["matched-official", "official-rate-verified"].includes(payload.officialFeeAuditStatus || "")
+      && !isFilledString(payload.officialFeeSourceUrl)
+    ) {
+      throw new BadRequestException("Verified official fee data requires officialFeeSourceUrl");
     }
 
     if (((payload.officialTuitionMYR !== undefined && payload.officialTuitionMYR !== null) || payload.tuitionCurrency === "MYR") && !isFilledString(payload.officialFeeSourceUrl)) {

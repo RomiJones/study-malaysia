@@ -102,10 +102,21 @@ def audit_api(data: dict, errors: list[str], counts: Counter) -> None:
             if not positive_scalar(amount) or "total tuition" not in display.lower():
                 errors.append(f"{label}: matched fee is not a single official total.")
             counts["api-official-total"] += 1
+        elif status == "official-rate-verified":
+            tuition_info = row.get("tuitionInfo") or {}
+            if amount is not None or tuition_info.get("amount") is not None:
+                errors.append(f"{label}: verified rate must not populate the primary total.")
+            note = str(tuition_info.get("note") or "")
+            if "per semester" not in note.lower():
+                errors.append(f"{label}: verified rate is missing official per-semester evidence.")
+            counts["api-rate-verified"] += 1
         elif status == "not-published":
-            if amount is not None:
+            tuition_info = row.get("tuitionInfo") or {}
+            if amount is not None or tuition_info.get("amount") is not None:
                 errors.append(f"{label}: unpublished public fee contains an amount.")
             counts["api-unpublished"] += 1
+        else:
+            errors.append(f"{label}: unsupported public fee audit status {status}.")
 
 
 def load_json(path_or_url: str) -> tuple[str, dict]:

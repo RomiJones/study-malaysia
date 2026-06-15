@@ -668,13 +668,14 @@ function feePresentation(record: CandidateRecord) {
   if (direct?.international) {
     const fee = direct.international;
     if (fee.fullTimePerSemester) {
+      const partTime = fee.partTimePerSemester || fee.fullTimePerSemester;
       return {
         amount: null,
         currency: fee.currency,
         display: "",
-        status: "not-published" as const,
+        status: "official-rate-verified" as const,
         sourceUrl: direct.officialSourceUrl || feeDirectoryUrl,
-        note: `USM publishes an international full-time rate of ${fee.currency} ${fee.fullTimePerSemester.toLocaleString("en-US")} per semester but no official standard programme total. StudyMY does not calculate a total or include extension-period tuition.`
+        note: `USM official ${direct.academicSession || "current"} international tuition rates: full-time ${fee.currency} ${fee.fullTimePerSemester.toLocaleString("en-US")} per semester; part-time ${fee.currency} ${partTime.toLocaleString("en-US")} per semester. USM does not publish a standard programme total; StudyMY does not calculate one or include extension-period tuition.`
       };
     }
     if (!fee.amount) {
@@ -791,7 +792,7 @@ export function buildUsmMasterRows(source: MasterCommercialSource): Array<DeepPa
         title: "USM postgraduate fee schedule",
         url: fee.sourceUrl,
         sourceType: "fee",
-        verifiedAt: "2026-06-14",
+        verifiedAt: "2026-06-15",
         status: "official-verified"
       },
       {
@@ -835,7 +836,7 @@ export function buildUsmMasterRows(source: MasterCommercialSource): Array<DeepPa
       officialFeeSourceUrl: fee.sourceUrl,
       secondaryOfficialFeeSourceUrl: feeDirectoryUrl,
       officialFeeAuditStatus: fee.status,
-      officialFeeAuditedAt: "2026-06-14",
+      officialFeeAuditedAt: "2026-06-15",
       intakeMonths: months,
       officialIntake: normalizeEvidenceText(record.intake.textEnOfficial).slice(0, 255),
       officialIntakeNote: `USM official intake schedule verified; source status: ${record.intake.status}.`,
@@ -935,6 +936,7 @@ export function summarizeUsmMasterRows(rows: Array<DeepPartial<ProgramEntity>>) 
     needsReview: rows.filter((row) => row.publicDisplayStatus === "needs-review").length,
     yearDuration: rows.filter((row) => /years?/i.test(String(row.durationOfficial))).length,
     feeMatched: rows.filter((row) => row.officialFeeAuditStatus === "matched-official").length,
+    feeRateVerified: rows.filter((row) => row.officialFeeAuditStatus === "official-rate-verified").length,
     feeNotPublished: rows.filter((row) => row.officialFeeAuditStatus === "not-published").length,
     modes: rows.reduce<Record<string, number>>((result, row) => {
       result[String(row.studyMode)] = (result[String(row.studyMode)] || 0) + 1;
@@ -977,6 +979,7 @@ async function verifyRows(manager: EntityManager | DataSource, universityId: num
     leakedLegacyRows: leakedLegacy.length,
     durationDisplayedInYears: convertedDurations,
     feeMatchedRows: commercial.filter((row) => row.officialFeeAuditStatus === "matched-official").length,
+    feeRateVerifiedRows: commercial.filter((row) => row.officialFeeAuditStatus === "official-rate-verified").length,
     feeNotPublishedRows: commercial.filter((row) => row.officialFeeAuditStatus === "not-published").length
   };
 }

@@ -88,9 +88,11 @@ def main() -> None:
     if any(
         row["fee"].get("tuitionAmount") is not None
         or row["fee"].get("tuitionBasis") != "per-semester-rate-only"
+        or not isinstance(row["fee"].get("officialRatePerSemester"), (int, float))
+        or not isinstance(row["fee"].get("officialPartTimeRatePerSemester"), (int, float))
         for row in rate_only
     ):
-        errors.append("Rate-only doctoral fees must not contain a total tuition amount.")
+        errors.append("Rate-only doctoral fees require both official semester rates and no total amount.")
 
     audit = data.get("audit", {})
     if audit.get("currentOfficialCatalogueRows") != 95:
