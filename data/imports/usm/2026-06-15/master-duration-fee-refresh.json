@@ -1,0 +1,282 @@
+{
+  "schemaVersion": 1,
+  "universityCode": "USM",
+  "level": "master",
+  "applicantType": "international",
+  "retrievedAt": "2026-06-15T14:39:00.000Z",
+  "sourceNote": "Current USM programme pages showing Last Update Friday 12 June 2026; duplicate catalogue identities may share one official article.",
+  "recordCount": 30,
+  "uniqueOfficialPageCount": 28,
+  "records": [
+    {
+      "code": "USM-PG-ARTICLE-342-733AE3B5",
+      "officialName": "MASTER IN COUNSELING",
+      "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=342&catid=53",
+      "duration": "Full Time: Min 2 semesters / Max 4 semesters Part Time: Min 3 semesters / Max 6 semesters",
+      "durationStatus": "official-programme-page-refreshed-2026-06-12",
+      "feesExcerpt": "Malaysian (MYR) International (USD) Registration Fee : 330.00 Tuition Fee : 450.00 X 53 Units = 23,850.00 Convocation Fee : 200.00 Registration Fees : 250.00 Personal Bond : 1,000.00 Tuition Fees : 170.00 X 53 Units = 9,010.00 Convocation Fee : 50.00 *NOT inclusive 6% Sales and Service Tax (SST) imposed by Government of Malaysia** Fees are subject to change",
+      "pageTextSha256": "af7c1e3d036951fe46135494c94732c0d13d97a5b56d3cfded90684d991cf687"
+    },
+    {
+      "code": "USM-PG-ARTICLE-356-6C394BC4",
+      "officialName": "MASTER IN GLOBAL ISLAMIC FINANCE",
+      "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=356&catid=53",
+      "duration": "Full-time: Minimum 2 semesters / Maximum 4 semesters Part-time: Minimum 4 semesters / Maximum 8 semesters",
+      "durationStatus": "official-programme-page-refreshed-2026-06-12",
+      "feesExcerpt": "Malaysian (MYR) International (USD)* Registration Fee : 330.00 Tuition Fee : 575.00 X 40 Units = 23,000.00 Convocation Fee : 200.00 Registration Fees : 225.00 Personal Bond : 1000.00 Tuition Fees : 187.50 X 40 Units = 7,500.00 Convocation Fee : 50.00 *Not inclusive 6% Sales and Service Tax (SST) imposed by Government of Malaysia ** Fees are subject to change",
+      "pageTextSha256": "a0f5aaa15fd2c3c9df3c8eb0252a313def6eaf8640395cabeabea61c155cfa4b"
+    },
+    {
+      "code": "USM-PG-ARTICLE-190-DE25AD0C",
+      "officialName": "MASTER OF ARCHITECTURE",
+      "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=190&catid=51",
+      "duration": "Full-time: Min 4 semesters / Max 8 semesters",
+      "durationStatus": "official-programme-page-refreshed-2026-06-12",
+      "feesExcerpt": "Malaysian (MYR) International (USD)* Registration Fee : 330.00 Tuition Fee : 340.00 X 60 Units = 20,400.00 Convocation Fee : 200.00 Registration Fees : 225.00 Personal Bond : 1,000.00 Tuition Fees : 150.00 X 60 Units = 9,000.00 Convocation Fee : 50.00 *NOT inclusive 6% Sales and Service Tax (SST) imposed by Government of Malaysia ** Fees are subject to change",
+      "pageTextSha256": "df70455fa5e328f8f43714043ee78227590e42f2dc6dac227131e80eca0ce82c"
+    },
+    {
+      "code": "USM-PG-ARTICLE-562-2AAFA9B6",
+      "officialName": "MASTER OF BUSINESS ADMINISTRATION (MBA) DOUBLE DEGREE - UNIVERSITY OF GLASGOW",
+      "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=562&catid=57",
+      "duration": "Full-time: 2 years (USM MBA Year 1 and University of Glasgow MSc Year 2)",
+      "durationStatus": "official-programme-page-refreshed-2026-06-12",
+      "feesExcerpt": "Fee at USM: GBP 5,000.00 (GBP 2,500.00 each for first and second semester) ** Fees are subject to change",
+      "pageTextSha256": "8b530aad55387618e83b50755466eebc7a0bd739ae31217ce459d3ebb7a3842c"
+    },
+    {
+      "code": "USM-PG-ARTICLE-345-346DCB40",
+      "officialName": "MASTER OF COMMUNICATION IN INTEGRATED MARKETING COMMUNICATION *USM@KL",
+      "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=345&catid=53",
+      "duration": "Full-time: Min 2 semesters / Max 4 semesters Part-time: Min 4 semesters / Max 8 semesters",
+      "durationStatus": "official-programme-page-refreshed-2026-06-12",
+      "feesExcerpt": "Malaysian (MYR) International (USD) - Registration Fee : 330.00- Tuition Fee : 450.00 X 42 Units = 18,900.00- Convocation Fee : 200.00 - Registration Fees : 225.00- Personal Bond : 1,000.00- Tuition Fees : 200.00 X 42 Units = 8,400.00- Convocation Fee : 50.00 * NOT inclusive 6% Sales & Service Tax imposed by Government of Malaysia**Fees are subject to change",
+      "pageTextSha256": "b1a15ce34f5b9f28dc6dc7e4ed3417cff64c4672079430bc527b44eeffa67dd3"
+    },
+    {
+      "code": "USM-PG-ARTICLE-198-D33A1020",
+      "officialName": "MASTER OF COMPUTER SCIENCE",
+      "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=198&catid=51",
+      "duration": "Full-time: Min 2 semesters / Max 4 semesters",
+      "durationStatus": "official-programme-page-refreshed-2026-06-12",
+      "feesExcerpt": "Malaysian (MYR) International (USD) * Registration Fee : 330.00 Tuition Fee : 480.00 X 40 Units = 19,200.00 Convocation Fee : 200.00 Registration Fees : 225.00 Personal Bond : 1000.00 Tuition Fees : 200.00 X 40 Units = 8,000.00 Convocation Fee : 50.00 *NOT inclusive 6% Sales and Service Tax (SST) imposed by Government of Malaysia ** Fees are subject to change",
+      "pageTextSha256": "03009d76ca2df0b79075ac549fee00bcb73cd5fc65470ba37b492537f0a9d1ca"
+    },
+    {
+      "code": "USM-PG-ARTICLE-191-42EA011D",
+      "officialName": "MASTER OF DATA SCIENCE",
+      "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=191&catid=51",
+      "duration": "Full-time: Min 3 semesters / Max 6 semesters",
+      "durationStatus": "official-programme-page-refreshed-2026-06-12",
+      "feesExcerpt": "Malaysian (MYR) International (USD) * Registration Fee : 330.00 Tuition Fee : 480.00 X 44 Units = 21,120.00 Convocation Fee : 200.00 Registration Fees : 225.00 Personal Bond : 1,000.00 Tuition Fees : 200.00 X 44 Units = 8,800.00 Convocation Fee : 50.00 *NOT inclusive 6% Sales and Service Tax (SST) imposed by Government of Malaysia ** Fees are subject to change",
+      "pageTextSha256": "12d75958ded5fc30d53272e6a99dbfbebf069dc59e25ef0f5f57dacf2e9765d7"
+    },
+    {
+      "code": "USM-PG-ARTICLE-816-97D94C5C",
+      "officialName": "MASTER OF DESIGN IN CREATIVE INDUSTRY",
+      "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=816&catid=53",
+      "duration": "Full-time: Min 2 semesters / Max 4 semesters Part-time: Min 4 semesters / Max 6 semesters",
+      "durationStatus": "official-programme-page-refreshed-2026-06-12",
+      "feesExcerpt": "Malaysian (MYR) International (USD) * Registration Fee : 330.00 Tuition Fee : 495.00 X 40 Units = 19,800.00 Convocation Fee : 200.00 Registration Fees : 225.00 Personal Bond : 1000.00 Tuition Fees : 160.00 X 40 Units = 6,400.00 Convocation Fee : 50.00 *NOT inclusive 6% Sales and Service Tax (SST) imposed by Government of Malaysia ** Fees are subject to change",
+      "pageTextSha256": "87a52b07bfca978046020c66510fca785984a8bd6d3d9e8893be5258f20ba9e0"
+    },
+    {
+      "code": "USM-PG-ARTICLE-1478-65126CE8",
+      "officialName": "MASTER OF DESIGN IN CREATIVE INDUSTRY (OFFSHORE USM INTERNATIONAL)",
+      "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1478&catid=53",
+      "duration": "Full-time: Min 2 semesters / Max 4 semesters Part-time: Min 4 semesters / Max 6 semesters",
+      "durationStatus": "official-programme-page-refreshed-2026-06-12",
+      "feesExcerpt": "Please refer to respective School/ Centre/ Institute",
+      "pageTextSha256": "fd78f5ae3663eafe75280e56880261bce5d59926fe5a4a520b8df2e1614b69cc"
+    },
+    {
+      "code": "USM-PG-ARTICLE-1226-61E0EF9C",
+      "officialName": "MASTER OF DESIGN IN CREATIVE INDUSTRY *USM@KL",
+      "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1226&catid=53",
+      "duration": "Full-time: Min 2 semesters / Max 4 semesters Part-time: Min 4 semesters / Max 6 semesters",
+      "durationStatus": "official-programme-page-refreshed-2026-06-12",
+      "feesExcerpt": "Malaysian (MYR) International (USD) * Registration Fee : 330.00 Tuition Fee : 495.00 X 40 Units = 19,800.00 Convocation Fee : 200.00 Registration Fees : 225.00 Personal Bond : 1000.00 Tuition Fees : 160.00 X 40 Units = 6,400.00 Convocation Fee : 50.00 *NOT inclusive 6% Sales and Service Tax (SST) imposed by Government of Malaysia ** Fees are subject to change",
+      "pageTextSha256": "062288f77176d07d4c91199c3fbb934a07f10f3b467eee47f6b4a62dd04de491"
+    },
+    {
+      "code": "USM-PG-ARTICLE-352-D31C8D58",
+      "officialName": "MASTER OF EDUCATION IN EDUCATION PSYCHOLOGY (OFFSHORE - POLITEKNIK S.PERAI)",
+      "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=352&catid=53",
+      "duration": "Part-time: 4 semesters / 24 months",
+      "durationStatus": "official-programme-page-refreshed-2026-06-12",
+      "feesExcerpt": null,
+      "pageTextSha256": "e74881906690963810ecee41374dd49595bc9486f0bed41f257c269a85452203"
+    },
+    {
+      "code": "USM-PG-ARTICLE-352-DA22F697",
+      "officialName": "MASTER OF EDUCATION IN EDUCATIONAL MANAGEMENT AND ADMINISTRATION (OFFSHORE - MRSM KUCHING)",
+      "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=352&catid=53",
+      "duration": "Part-time: 4 semesters / 24 months",
+      "durationStatus": "official-programme-page-refreshed-2026-06-12",
+      "feesExcerpt": null,
+      "pageTextSha256": "e74881906690963810ecee41374dd49595bc9486f0bed41f257c269a85452203"
+    },
+    {
+      "code": "USM-PG-ARTICLE-192-E15D3E0E",
+      "officialName": "MASTER OF ENVIRONMENTAL SCIENCE",
+      "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=192&catid=51",
+      "duration": "Full-time: Min 2 semesters / Max 4 semesters Part-time: Min 4 semesters / Max 8 semesters",
+      "durationStatus": "official-programme-page-refreshed-2026-06-12",
+      "feesExcerpt": "Malaysian (MYR) International (USD) * Registration Fee : 330.00 Tuition Fee : 450.00 X 40 Units = 18,000.00 Convocation Fee : 200.00 Registration Fees : 225.00 Personal Bond : 1000.00 Tuition Fees : 160.00 X 40 Units = 6,400.00 Convocation Fee : 50.00 *NOT inclusive 6% Sales and Service Tax (SST) imposed by Government of Malaysia** Fees are subject to change",
+      "pageTextSha256": "35c725350e8b6dd3cf2576ec0c66371864c73159751dcdbffbb0b45c3e78f270"
+    },
+    {
+      "code": "USM-PG-ARTICLE-341-25F866C6",
+      "officialName": "MASTER OF MANAGEMENT IN GLOBAL ISLAMIC FINANCE",
+      "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=341&catid=53",
+      "duration": "Full-time: Minimum 2 semesters / Maximum 4 semesters Part-time: Minimum 4 semesters / Maximum 8 semesters",
+      "durationStatus": "official-programme-page-refreshed-2026-06-12",
+      "feesExcerpt": "Malaysian (MYR) International (USD)* Registration Fee : 330.00 Tuition Fee : 575.00 X 40 Units = 23,000.00 Convocation Fee : 200.00 Registration Fees : 225.00 Personal Bond : 1000.00 Tuition Fees : 187.50 X 40 Units = 7,500.00 Convocation Fee : 50.00 *Not inclusive 6% Sales and Service Tax (SST) imposed by Government of Malaysia ** Fees are subject to change",
+      "pageTextSha256": "d5268479a851a33c4b179ce7c652eef4c8fe1a4f34ade8c0bef2115997733e78"
+    },
+    {
+      "code": "USM-PG-ARTICLE-499-208F3220",
+      "officialName": "MASTER OF PATHOLOGY (MEDICAL GENETICS)",
+      "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=499&catid=55",
+      "duration": "Full-time: Min 2 semesters / Max 4 semesters Part-time: Min 3 semesters / Max 6 semesters",
+      "durationStatus": "official-programme-page-refreshed-2026-06-12",
+      "feesExcerpt": "Malaysian (MYR) Full Time Part Time Registration Fee : 330.00 Tuition Fee (Semester) : 4,200.00 Thesis Evaluation Fee : 800.00 Convocation Fee : 200.00 Registration Fee : 330.00 Tuition Fee (Semester) : 3,585.00 Thesis Evaluation Fee: 800.00 Convocation Fee : 200.00 International (USD) * Full Time Part Time Registration Fee : 225.00 Personal Bond : 1000.00 Tuition Fee (Semester) : 2,500.00 Thesis Evaluation Fee: 250.00 Convocation Fee : 50.00 Registration Fee : 225.00 Personal Bond : 1000.00 Tuition Fee (Semester) : 2,130.00 Thesis Evaluation Fee : 250.00 Convocation Fee : 50.00 *Not inclusive 6% Sales and Service Tax (SST) imposed by Government of Malaysia** Fees are subject to change",
+      "pageTextSha256": "d652f00fab8fd46a197b41b3f5485a90d739ec4f93e8a6e0bc23408ca015defe"
+    },
+    {
+      "code": "USM-PG-ARTICLE-357-1651A3F3",
+      "officialName": "MASTER OF PROFESSIONAL MANAGEMENT",
+      "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=357&catid=53",
+      "duration": "Full-time: Min 2 semesters / Max 4 semesters Part-time: Min 3 semesters / Max 6 semesters",
+      "durationStatus": "official-programme-page-refreshed-2026-06-12",
+      "feesExcerpt": "Malaysian (MYR) International (USD)* Registration Fee : 330.00 Tuition Fee : 450.00 X 42 Units = 18,900.00 Convocation Fee : 200.00 Registration Fees : 225.00 Personal Bond : 1000.00 Tuition Fees : 175.00 X 42 Units = 7,350.00 Convocation Fee : 50.00 Fees Structure Effective for Students Intake from Academic Session 2026/2027: Malaysian (MYR) International (USD)* Registration Fee : 330.00 Tuition Fee : 450.00 X 42 Units = 18,900.00 Convocation Fee : 200.00 Registration Fees : 225.00 Personal Bond : 1000.00 Tuition Fees : 215.00 X 42 Units = 9,030.00 Convocation Fee : 50.00 *Not inclusive 6% Sales and Service Tax (SST) imposed by Government of Malaysia** Fees are subject to change",
+      "pageTextSha256": "dbcb41fd9ec1ca34d2e476fec982d0c2d7e2545fde7949f59288cc21edc4cdc1"
+    },
+    {
+      "code": "USM-PG-ARTICLE-890-22D7982F",
+      "officialName": "MASTER OF PROFESSIONAL MANAGEMENT *USM@KL",
+      "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=890&catid=53",
+      "duration": "Full-time: Min 2 semesters / Max 4 semesters Part-time: Min 4 semesters / Max 8 semesters",
+      "durationStatus": "official-programme-page-refreshed-2026-06-12",
+      "feesExcerpt": "Malaysian (MYR) International (USD)* Registration Fee : 330.00 Tuition Fee : 450.00 X 42 Units = 18,900.00 Convocation Fee : 200.00 Registration Fees : 225.00 Personal Bond : 1000.00 Tuition Fees : 250.00 X 42 Units = 10,500.00 Convocation Fee : 50.00 Fees Structure Effective for Students Intake from Academic Session 2026/2027: Malaysian (MYR) International (USD)* Registration Fee : 330.00 Tuition Fee : 450.00 X 42 Units = 18,900.00 Convocation Fee : 200.00 Registration Fees : 225.00 Personal Bond : 1000.00 Tuition Fees : 215.00 X 42 Units = 9,030.00 Convocation Fee : 50.00 *Not inclusive 6% Sales and Service Tax (SST) imposed by Government of Malaysia** Fees are subject to change",
+      "pageTextSha256": "2af5ede57674cd9d13f160253b28d9923ab220d6980f9dd5b69ac001b772f85a"
+    },
+    {
+      "code": "USM-PG-ARTICLE-335-083F609A",
+      "officialName": "MASTER OF PROFESSIONAL MANAGEMENT - EMPM",
+      "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=335&catid=53",
+      "duration": "Full-time: Minimum 2 semesters / Maximum 4 semesters Part-time: Minimum 4 semesters / Maximum 8 semesters",
+      "durationStatus": "official-programme-page-refreshed-2026-06-12",
+      "feesExcerpt": "Malaysian (MYR) International (USD)* Registration Fee : 330.00 Tuition Fee : 450.00 X 42 Units = 18,900.00 Convocation Fee : 200.00 Registration Fees : 225.00 Personal Bond : 1000.00 Tuition Fees : 175.00 X 42 Units = 7,350.00 Convocation Fee : 50.00 *Not inclusive 6% Sales and Service Tax (SST) imposed by Government of Malaysia ** Fees are subject to change",
+      "pageTextSha256": "bf92e9ffa8cc6d934a758aae86ab2cc8a06c1ababd44c791269b8631c30e82a5"
+    },
+    {
+      "code": "USM-PG-ARTICLE-335-CAAB9128",
+      "officialName": "MASTER OF PROFESSIONAL MANAGEMENT - EMPM (MALAYSIA HEC - CENTRAL ASIA)",
+      "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=335&catid=53",
+      "duration": "Full-time: Minimum 2 semesters / Maximum 4 semesters Part-time: Minimum 4 semesters / Maximum 8 semesters",
+      "durationStatus": "official-programme-page-refreshed-2026-06-12",
+      "feesExcerpt": "Malaysian (MYR) International (USD)* Registration Fee : 330.00 Tuition Fee : 450.00 X 42 Units = 18,900.00 Convocation Fee : 200.00 Registration Fees : 225.00 Personal Bond : 1000.00 Tuition Fees : 175.00 X 42 Units = 7,350.00 Convocation Fee : 50.00 *Not inclusive 6% Sales and Service Tax (SST) imposed by Government of Malaysia ** Fees are subject to change",
+      "pageTextSha256": "bf92e9ffa8cc6d934a758aae86ab2cc8a06c1ababd44c791269b8631c30e82a5"
+    },
+    {
+      "code": "USM-PG-ARTICLE-1499-54A1B24B",
+      "officialName": "MASTER OF PROFESSIONAL MANAGEMENT -(OFFSHORE OXUS UNIVERSITY,UZBEKISTAN)",
+      "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1499&catid=53",
+      "duration": "Full-time: Min 2 semesters / Max 4 semesters Part-time: Min 3 semesters / Max 6 semesters",
+      "durationStatus": "official-programme-page-refreshed-2026-06-12",
+      "feesExcerpt": null,
+      "pageTextSha256": "4e8edbb82140df59d0907cc967f8590b783802ab83ca85a47d1c9034f2e78639"
+    },
+    {
+      "code": "USM-PG-ARTICLE-1500-3149EB02",
+      "officialName": "MASTER OF PROFESSIONAL MANAGEMENT -(OFFSHORE USM INTERNATIONAL)",
+      "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1500&catid=53",
+      "duration": "Full-time: Min 2 semesters / Max 4 semesters Part-time: Min 3 semesters / Max 6 semesters",
+      "durationStatus": "official-programme-page-refreshed-2026-06-12",
+      "feesExcerpt": null,
+      "pageTextSha256": "9969386b520691325cb846f44e85311fc7a9a0c63798625518d61357fc3277a5"
+    },
+    {
+      "code": "USM-PG-ARTICLE-423-8DE050DC",
+      "officialName": "MASTER OF PUBLIC HEALTH",
+      "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=423&catid=55",
+      "duration": "Full-time: 2 semesters / 1 year",
+      "durationStatus": "official-programme-page-refreshed-2026-06-12",
+      "feesExcerpt": null,
+      "pageTextSha256": "12dd4939b067261e64e095c6716be58b49f5744f2654a5fefcf872634f57c696"
+    },
+    {
+      "code": "USM-PG-ARTICLE-1488-CA798095",
+      "officialName": "MASTER OF SCIENCE (CLINICAL ANATOMY)-(OFFSHORE AL-MUSTAQBAL UNIVERSITY)",
+      "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1488&catid=55",
+      "duration": "Full-time: Min 24 months / Max 36 months",
+      "durationStatus": "official-programme-page-refreshed-2026-06-12",
+      "feesExcerpt": null,
+      "pageTextSha256": "5b69fc78cf9afafdeb8a016457918dc281f3d7af6ebfd49946d255f6c707c02f"
+    },
+    {
+      "code": "USM-PG-ARTICLE-387-909293EB",
+      "officialName": "MASTER OF SCIENCE (FIRE SAFETY ENGINEERING)",
+      "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=387&catid=54",
+      "duration": "Full-time: Min 2 semesters / Max 4 semesters Part-time: Min 4 semesters / Max 8 semesters",
+      "durationStatus": "official-programme-page-refreshed-2026-06-12",
+      "feesExcerpt": "Malaysian (MYR) International (USD) * Registration Fee : 330.00 Tuition Fee : 750.00 X 40 Units = 30,000.00 Convocation Fee : 200.00 Registration Fees : 225.00 Personal Bond : 1,000.00 Tuition Fees : 285.00 X 40 Units = 11,400.00 Convocation Fee : 50.00 *NOT inclusive 6% Sales and Service Tax (SST) imposed by Government of Malaysia ** Fees are subject to change",
+      "pageTextSha256": "919623d4fcddc583deb8675565cb214beee55604a343d09ff708fa40256098fa"
+    },
+    {
+      "code": "USM-PG-ARTICLE-118-E8F9BDA4",
+      "officialName": "MASTER OF SCIENCE (SOLID STATE PHYSICS) DUAL DEGREE - OTH REGENSBURG",
+      "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=118&catid=50",
+      "duration": "Full-time: 2 years (4 semesters); maximum 4 years (8 semesters)",
+      "durationStatus": "official-programme-page-refreshed-2026-06-12",
+      "feesExcerpt": "Malaysian (MYR) International (USD) * Registration Fee : 330.00 Tuition Fee : 565.00 X 40 Units = 22,600.00 Convocation Fee : 200.00 Registration Fees : 225.00 Personal Bond : 1,000.00 Tuition Fees : 225.00 X 40 Units = 9,000.00 Convocation Fee : 50.00 Tuition fees for graduate studies in Germany are fully sponsored by the university (OTH). However, there will be an administration fee imposed by the university of approximately €150-300. *NOT inclusive 6% Sales and Service Tax (SST) imposed by Government of Malaysia ** Fees are subject to change",
+      "pageTextSha256": "10c5d67528ce07b8c92ef1b5b5e892f5564b66220b39b4a7e5b991d2c8d87c36"
+    },
+    {
+      "code": "USM-PG-ARTICLE-226-D47C7183",
+      "officialName": "MASTER OF SCIENCE IN BUILDING TECHNOLOGY",
+      "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=226&catid=51",
+      "duration": "Full-time: Min 2 semesters / Max 4 semesters Part-time: Min 4 semesters / Max 8 semesters",
+      "durationStatus": "official-programme-page-refreshed-2026-06-12",
+      "feesExcerpt": "Malaysian (MYR) International (USD)* Registration Fee : 330.00 Tuition Fee : 460.00 X 40 Units = 18,400.00 Convocation Fee : 200.00 Registration Fees : 225.00 Personal Bond : 1000.00 Tuition Fees : 235.00 X 40 Units = 9,400.00 Convocation Fee : 50.00 *NOT inclusive 6% Sales and Service Tax (SST) imposed by Government of Malaysia ** Fees are subject to change",
+      "pageTextSha256": "b5e9c7246f40d804fa9794b4c63b57eb9ad9bd9d597ef0e142083efee6377294"
+    },
+    {
+      "code": "USM-PG-ARTICLE-1513-8022424A",
+      "officialName": "MASTER OF SCIENCE IN ELECTRONIC SYSTEMS DESIGN ENGINEERING -(OFFSHORE XIAMEN UNIVERSITY OF TECHNOLOGY (XMUT), CHINA)",
+      "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1513&catid=54",
+      "duration": "Full-time: Min 2 semesters / Max 4 semesters",
+      "durationStatus": "official-programme-page-refreshed-2026-06-12",
+      "feesExcerpt": null,
+      "pageTextSha256": "4d5437b7497f8a029cdd9522b54af25f820fc9bc6a77c1524720e866cc7f5b96"
+    },
+    {
+      "code": "USM-PG-ARTICLE-195-3919140E",
+      "officialName": "MASTER OF SCIENCE IN NANO-OPTOELECTRONICS",
+      "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=195&catid=51",
+      "duration": "Full-time: Min 12 months / Max 36 months Part-time: Min 24 months / Max 72 months",
+      "durationStatus": "official-programme-page-refreshed-2026-06-12",
+      "feesExcerpt": "*Malaysian (MYR) Full Time Part Time Registration Fee : 330.00 Tuition Fee (Semester) : 4,150.00 Thesis Evaluation Fee : 800.00 Convocation Fee : 120.00 Research Methodology : 320.00 Registration Fee : 330.00 Tuition Fee (Semester) : 3,585.00 Thesis Evaluation Fee: 800.00 Convocation Fee : 120.00 Research Methodology : 320.00 International (USD)* Full Time Part Time Registration Fee : 225.00 Personal Bond : 1,000.00 Tuition Fee (Semester) : 1,800.00 Thesis Evaluation Fee: 250.00 Convocation Fee : 50.00 Research Methodology : 80.00 Registration Fee : 225.00 Personal Bond : 1,000.00 Tuition Fee (Semester) : 1,530.00 Thesis Evaluation Fee : 250.00 Convocation Fee : 50.00 Research Methodology : 80.00 *Not inclusive 6% Sales and Service Tax (SST) imposed by Government of Malaysia ** Fees are subject to change",
+      "pageTextSha256": "0a2bfaad346193b8c4604b1b4d89b20190e28b2a68b2453f5c0cc8dbf957402d"
+    },
+    {
+      "code": "USM-PG-ARTICLE-106-8E379C40",
+      "officialName": "MASTER OF SCIENCE IN TROPICAL PLANT DISEASE MANAGEMENT",
+      "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=106&catid=50",
+      "duration": "Full-time: Min 2 semesters / Max 4 semesters Part-time: Min 4 semesters / Max 8 semesters",
+      "durationStatus": "official-programme-page-refreshed-2026-06-12",
+      "feesExcerpt": "Malaysian (MYR) International (USD)* Registration Fee : 330.00 Tuition Fee : 500 X 40 Units = 20,000.00 Convocation Fee : 200.00 Registration Fees : 225.00 Personal Bond : 1,000.00 Tuition Fees : 200.00 X 40 Units = 8,000.00 Convocation Fee : 50.00 *NOT inclusive 6% Sales and Service Tax (SST) imposed by Government of Malaysia** Fees are subject to change",
+      "pageTextSha256": "59491efaa6a06fa97206a91fff65d193a6ed4ba83cd2b98acf63ec3b5a1be684"
+    },
+    {
+      "code": "USM-PG-ARTICLE-351-57741454",
+      "officialName": "MASTERS IN SUSTAINABLE DEVELOPMENT PRACTICE - *USM@KL",
+      "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=351&catid=53",
+      "duration": "Full-time: Minimum 4 semesters / Maximum 8 semesters Part-time: Minimum 6 semesters / Maximum 10 semesters",
+      "durationStatus": "official-programme-page-refreshed-2026-06-12",
+      "feesExcerpt": "Malaysian (MYR) International (USD) * Registration Fee : 330.00 Tuition Fee : 583.00 X 44 Units = 25,652.00 Convocation Fee : 200.00 Registration Fees : 225.00 Personal Bond : 1,000.00 Tuition Fees : 220.00 X 44 Units = 9,680.00 Convocation Fee : 50.00 *NOT inclusive 6% Sales and Service Tax (SST) imposed by Government of Malaysia ** Fees are subject to change",
+      "pageTextSha256": "4505004f737ffac2009eec3ed2e6ae61f5c0eed155dd5b1c2af1d9eb05b233c2"
+    }
+  ]
+}

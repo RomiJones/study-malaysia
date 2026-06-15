@@ -20,7 +20,7 @@ const applicationGuideUrl =
   "https://onlineips.usm.my/images/ONLINE%20APPLICATION%20GUIDELINE%20012026%20v1.pdf";
 
 type StudyMode = "research" | "coursework" | "mixed" | "clinical" | "online";
-type FeeCurrency = "USD" | "MYR";
+type FeeCurrency = "USD" | "MYR" | "GBP";
 
 interface OfficialAmount {
   currency: FeeCurrency;
@@ -654,7 +654,10 @@ export function extractCgpa(text: string) {
   return Number(match?.[1] || 0);
 }
 
-function feePresentation(record: CandidateRecord) {
+function feePresentation(
+  record: CandidateRecord,
+  duration: ReturnType<typeof normalizeMasterDuration>
+) {
   const direct = [
     "verified-current-official-fee",
     "official-rate-only",
@@ -669,13 +672,15 @@ function feePresentation(record: CandidateRecord) {
     const fee = direct.international;
     if (fee.fullTimePerSemester) {
       const partTime = fee.partTimePerSemester || fee.fullTimePerSemester;
+      const standardSemesters = Math.max(1, Math.round(duration.durationYears * 2));
+      const calculatedTotal = fee.fullTimePerSemester * standardSemesters;
       return {
-        amount: null,
+        amount: calculatedTotal,
         currency: fee.currency,
-        display: `${fee.currency} ${fee.fullTimePerSemester.toLocaleString("en-US")} per semester (full-time)`,
-        status: "official-rate-verified" as const,
+        display: `${fee.currency} ${calculatedTotal.toLocaleString("en-US")} total tuition`,
+        status: "calculated-from-official-rate" as const,
         sourceUrl: direct.officialSourceUrl || feeDirectoryUrl,
-        note: `USM official ${direct.academicSession || "current"} international tuition rates: full-time ${fee.currency} ${fee.fullTimePerSemester.toLocaleString("en-US")} per semester; part-time ${fee.currency} ${partTime.toLocaleString("en-US")} per semester. USM does not publish a standard programme total; StudyMY does not calculate one or include extension-period tuition.`
+        note: `StudyMY calculated the standard full-time tuition as ${fee.currency} ${fee.fullTimePerSemester.toLocaleString("en-US")} per semester × ${standardSemesters} official minimum semesters = ${fee.currency} ${calculatedTotal.toLocaleString("en-US")}. USM official ${direct.academicSession || "current"} part-time rate: ${fee.currency} ${partTime.toLocaleString("en-US")} per semester. Extension-period tuition and separate charges are excluded.`
       };
     }
     if (!fee.amount) {
@@ -776,7 +781,7 @@ function localizedSpecializations(record: CandidateRecord) {
 export function buildUsmMasterRows(source: MasterCommercialSource): Array<DeepPartial<ProgramEntity>> {
   return source.records.map((record) => {
     const duration = normalizeMasterDuration(record.duration.textEnOfficial, record.studyMode);
-    const fee = feePresentation(record);
+    const fee = feePresentation(record, duration);
     const name = localizeProgrammeName(record.officialName, record.faculty);
     const faculty = localizeFaculty(record.faculty);
     const months = extractIntakeMonths(record.intake.textEnOfficial);
@@ -937,6 +942,7 @@ export function summarizeUsmMasterRows(rows: Array<DeepPartial<ProgramEntity>>) 
     yearDuration: rows.filter((row) => /years?/i.test(String(row.durationOfficial))).length,
     feeMatched: rows.filter((row) => row.officialFeeAuditStatus === "matched-official").length,
     feeRateVerified: rows.filter((row) => row.officialFeeAuditStatus === "official-rate-verified").length,
+    feeCalculated: rows.filter((row) => row.officialFeeAuditStatus === "calculated-from-official-rate").length,
     feeNotPublished: rows.filter((row) => row.officialFeeAuditStatus === "not-published").length,
     modes: rows.reduce<Record<string, number>>((result, row) => {
       result[String(row.studyMode)] = (result[String(row.studyMode)] || 0) + 1;
@@ -980,6 +986,7 @@ async function verifyRows(manager: EntityManager | DataSource, universityId: num
     durationDisplayedInYears: convertedDurations,
     feeMatchedRows: commercial.filter((row) => row.officialFeeAuditStatus === "matched-official").length,
     feeRateVerifiedRows: commercial.filter((row) => row.officialFeeAuditStatus === "official-rate-verified").length,
+    feeCalculatedRows: commercial.filter((row) => row.officialFeeAuditStatus === "calculated-from-official-rate").length,
     feeNotPublishedRows: commercial.filter((row) => row.officialFeeAuditStatus === "not-published").length
   };
 }

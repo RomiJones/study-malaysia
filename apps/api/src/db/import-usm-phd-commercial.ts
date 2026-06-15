@@ -147,7 +147,7 @@ function feePresentation(record: CandidateRecord): {
   currency: "USD" | "MYR" | "UNKNOWN";
   display: string;
   note: string;
-  status: "matched-official" | "official-rate-verified" | "not-published";
+  status: "matched-official" | "calculated-from-official-rate" | "not-published";
 } {
   const amount = record.fee.tuitionAmount;
   if (typeof amount === "number") {
@@ -166,12 +166,14 @@ function feePresentation(record: CandidateRecord): {
     const fullTime = record.fee.officialRatePerSemester;
     const partTime = record.fee.officialPartTimeRatePerSemester || fullTime;
     const currency = record.fee.tuitionCurrency || "UNKNOWN";
+    const standardSemesters = Math.max(1, Math.round((record.durationValue?.min || 0) * 2));
+    const calculatedTotal = fullTime * standardSemesters;
     return {
-      amount: null,
+      amount: calculatedTotal,
       currency,
-      display: `${currency} ${fullTime.toLocaleString("en-US")} per semester (full-time)`,
-      note: `USM official ${record.fee.tuitionAcademicSession || "current"} international tuition rates: full-time ${currency} ${fullTime.toLocaleString("en-US")} per semester; part-time ${currency} ${partTime.toLocaleString("en-US")} per semester. USM does not publish a standard programme total; StudyMY does not calculate one or include extension-period tuition.`,
-      status: "official-rate-verified" as const
+      display: `${currency} ${calculatedTotal.toLocaleString("en-US")} total tuition`,
+      note: `StudyMY calculated the standard full-time tuition as ${currency} ${fullTime.toLocaleString("en-US")} per semester × ${standardSemesters} official minimum semesters = ${currency} ${calculatedTotal.toLocaleString("en-US")}. USM official ${record.fee.tuitionAcademicSession || "current"} part-time rate: ${currency} ${partTime.toLocaleString("en-US")} per semester. Extension-period tuition and separate charges are excluded.`,
+      status: "calculated-from-official-rate" as const
     };
   }
   return {
@@ -351,6 +353,7 @@ export function summarizeUsmPhdRows(rows: Array<DeepPartial<ProgramEntity>>) {
     notAvailableForInternational: rows.filter((row) => row.publicDisplayStatus === "not-available-for-international").length,
     feeMatched: rows.filter((row) => row.officialFeeAuditStatus === "matched-official").length,
     feeRateVerified: rows.filter((row) => row.officialFeeAuditStatus === "official-rate-verified").length,
+    feeCalculated: rows.filter((row) => row.officialFeeAuditStatus === "calculated-from-official-rate").length,
     feeNotPublished: rows.filter((row) => row.officialFeeAuditStatus === "not-published").length,
     modes: rows.reduce<Record<string, number>>((result, row) => {
       result[String(row.studyMode)] = (result[String(row.studyMode)] || 0) + 1;

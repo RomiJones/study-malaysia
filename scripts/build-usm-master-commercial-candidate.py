@@ -20,6 +20,41 @@ COURSEWORK_MIXED_URL = (
     "coursework-and-mixed-mode-programme"
 )
 
+# Programme pages refreshed by USM on 2026-06-12 now publish numeric
+# durations that were absent from the original collection snapshot.
+PROGRAMME_DURATION_OVERRIDES = {
+    "USM-PG-ARTICLE-342-733AE3B5": "Full Time: Min 2 semesters / Max 4 semesters Part Time: Min 3 semesters / Max 6 semesters",
+    "USM-PG-ARTICLE-356-6C394BC4": "Full-time: Minimum 2 semesters / Maximum 4 semesters Part-time: Minimum 4 semesters / Maximum 8 semesters",
+    "USM-PG-ARTICLE-190-DE25AD0C": "Full-time: Min 4 semesters / Max 8 semesters",
+    "USM-PG-ARTICLE-562-2AAFA9B6": "Full-time: 2 years (USM MBA Year 1 and University of Glasgow MSc Year 2)",
+    "USM-PG-ARTICLE-345-346DCB40": "Full-time: Min 2 semesters / Max 4 semesters Part-time: Min 4 semesters / Max 8 semesters",
+    "USM-PG-ARTICLE-198-D33A1020": "Full-time: Min 2 semesters / Max 4 semesters",
+    "USM-PG-ARTICLE-191-42EA011D": "Full-time: Min 3 semesters / Max 6 semesters",
+    "USM-PG-ARTICLE-816-97D94C5C": "Full-time: Min 2 semesters / Max 4 semesters Part-time: Min 4 semesters / Max 6 semesters",
+    "USM-PG-ARTICLE-1478-65126CE8": "Full-time: Min 2 semesters / Max 4 semesters Part-time: Min 4 semesters / Max 6 semesters",
+    "USM-PG-ARTICLE-1226-61E0EF9C": "Full-time: Min 2 semesters / Max 4 semesters Part-time: Min 4 semesters / Max 6 semesters",
+    "USM-PG-ARTICLE-352-D31C8D58": "Part-time: 4 semesters / 24 months",
+    "USM-PG-ARTICLE-352-DA22F697": "Part-time: 4 semesters / 24 months",
+    "USM-PG-ARTICLE-192-E15D3E0E": "Full-time: Min 2 semesters / Max 4 semesters Part-time: Min 4 semesters / Max 8 semesters",
+    "USM-PG-ARTICLE-341-25F866C6": "Full-time: Minimum 2 semesters / Maximum 4 semesters Part-time: Minimum 4 semesters / Maximum 8 semesters",
+    "USM-PG-ARTICLE-499-208F3220": "Full-time: Min 2 semesters / Max 4 semesters Part-time: Min 3 semesters / Max 6 semesters",
+    "USM-PG-ARTICLE-357-1651A3F3": "Full-time: Min 2 semesters / Max 4 semesters Part-time: Min 3 semesters / Max 6 semesters",
+    "USM-PG-ARTICLE-890-22D7982F": "Full-time: Min 2 semesters / Max 4 semesters Part-time: Min 4 semesters / Max 8 semesters",
+    "USM-PG-ARTICLE-335-083F609A": "Full-time: Minimum 2 semesters / Maximum 4 semesters Part-time: Minimum 4 semesters / Maximum 8 semesters",
+    "USM-PG-ARTICLE-335-CAAB9128": "Full-time: Minimum 2 semesters / Maximum 4 semesters Part-time: Minimum 4 semesters / Maximum 8 semesters",
+    "USM-PG-ARTICLE-1499-54A1B24B": "Full-time: Min 2 semesters / Max 4 semesters Part-time: Min 3 semesters / Max 6 semesters",
+    "USM-PG-ARTICLE-1500-3149EB02": "Full-time: Min 2 semesters / Max 4 semesters Part-time: Min 3 semesters / Max 6 semesters",
+    "USM-PG-ARTICLE-423-8DE050DC": "Full-time: 2 semesters / 1 year",
+    "USM-PG-ARTICLE-1488-CA798095": "Full-time: Min 24 months / Max 36 months",
+    "USM-PG-ARTICLE-387-909293EB": "Full-time: Min 2 semesters / Max 4 semesters Part-time: Min 4 semesters / Max 8 semesters",
+    "USM-PG-ARTICLE-118-E8F9BDA4": "Full-time: 2 years (4 semesters); maximum 4 years (8 semesters)",
+    "USM-PG-ARTICLE-226-D47C7183": "Full-time: Min 2 semesters / Max 4 semesters Part-time: Min 4 semesters / Max 8 semesters",
+    "USM-PG-ARTICLE-1513-8022424A": "Full-time: Min 2 semesters / Max 4 semesters",
+    "USM-PG-ARTICLE-195-3919140E": "Full-time: Min 12 months / Max 36 months Part-time: Min 24 months / Max 72 months",
+    "USM-PG-ARTICLE-106-8E379C40": "Full-time: Min 2 semesters / Max 4 semesters Part-time: Min 4 semesters / Max 8 semesters",
+    "USM-PG-ARTICLE-351-57741454": "Full-time: Minimum 4 semesters / Maximum 8 semesters Part-time: Minimum 6 semesters / Maximum 10 semesters",
+}
+
 # Officially reviewed international eligibility decisions that are not
 # recoverable from fee availability alone.
 INTERNATIONAL_ELIGIBILITY_OVERRIDES = {
@@ -199,6 +234,26 @@ MODE_SPECIFIC_FEE_TARGETS = {
 }
 
 LATEST_PROGRAMME_FEES = {
+    "USM-PG-ARTICLE-118": {
+        "academicSession": "2025/2026",
+        "malaysianAmount": 22600.0,
+        "internationalAmount": 9000.0,
+    },
+    "USM-PG-ARTICLE-191": {
+        "academicSession": "2025/2026",
+        "malaysianAmount": 21120.0,
+        "internationalAmount": 8800.0,
+    },
+    "USM-PG-ARTICLE-562": {
+        "academicSession": "current",
+        "internationalCurrency": "GBP",
+        "internationalAmount": 5000.0,
+    },
+    "USM-PG-ARTICLE-890": {
+        "academicSession": "2025/2026",
+        "malaysianAmount": 18900.0,
+        "internationalAmount": 10500.0,
+    },
     "USM-PG-ARTICLE-1424": {
         "academicSession": "2026/2027",
         "malaysianAmount": 18900.0,
@@ -267,6 +322,14 @@ def utc_now() -> str:
 
 def clean(value: str | None) -> str:
     return re.sub(r"\s+", " ", value or "").strip()
+
+
+def clean_duration(value: str | None) -> str:
+    return clean(value).split("Postgraduate Institute of Postgraduate Studies", 1)[0].strip()
+
+
+def has_numeric_duration(value: str) -> bool:
+    return bool(re.search(r"\d+(?:\.\d+)?\s*(?:years?|months?|semesters?)", value, re.I))
 
 
 def normalized_name(value: str) -> str:
@@ -470,21 +533,32 @@ def named_fee_value(row: dict, allocation: str) -> dict:
 
 def latest_programme_fee(code: str, detail: dict, previous_fee: dict) -> dict:
     latest = LATEST_PROGRAMME_FEES[code]
+    malaysian_amount = latest.get("malaysianAmount")
     return {
         "status": "verified-current-official-fee",
         "feeType": "programme-detail-latest-published",
         "academicSession": latest["academicSession"],
-        "effectiveNote": "Effective for students from the 2026/2027 intake.",
+        "effectiveNote": (
+            "Effective for students from the 2026/2027 intake."
+            if latest["academicSession"] == "2026/2027"
+            else "Published on the current official programme page."
+        ),
         "international": {
-            "currency": "USD",
+            "currency": latest.get("internationalCurrency", "USD"),
             "amount": latest["internationalAmount"],
             "basis": "total-programme",
         },
-        "malaysian": {
-            "currency": "MYR",
-            "amount": latest["malaysianAmount"],
-            "basis": "total-programme",
-        },
+        **(
+            {
+                "malaysian": {
+                    "currency": "MYR",
+                    "amount": malaysian_amount,
+                    "basis": "total-programme",
+                }
+            }
+            if malaysian_amount is not None
+            else {}
+        ),
         "officialSourceUrl": detail["officialSourceUrl"],
         "detailSha256": detail["sha256"],
         "previousPublishedFee": previous_fee if previous_fee.get("international") else None,
@@ -680,7 +754,11 @@ def main() -> None:
 
         academic = clean(detail.get("officialAcademicRequirement"))
         language = clean(detail.get("officialLanguageRequirement"))
-        duration = clean(detail.get("durationOfficial"))
+        duration = PROGRAMME_DURATION_OVERRIDES.get(record["code"]) or clean_duration(
+            detail.get("durationOfficial")
+        )
+        if duration and not has_numeric_duration(duration):
+            duration = ""
         intake = clean(detail.get("officialIntake"))
         if not academic:
             academic = source["generalRequirements"]["officialAcademicRequirement"]
@@ -696,7 +774,11 @@ def main() -> None:
             duration = "Full-time: 2-6 semesters; Part-time: 4-12 semesters"
             duration_status = "official-research-mode-rule"
         elif duration:
-            duration_status = "official-programme-specific"
+            duration_status = (
+                "official-programme-page-refreshed-2026-06-12"
+                if record["code"] in PROGRAMME_DURATION_OVERRIDES
+                else "official-programme-specific"
+            )
         else:
             duration = "Subject to the published programme structure"
             duration_status = "official-coursework-mixed-general-rule"

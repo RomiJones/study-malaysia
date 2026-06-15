@@ -1,6 +1,6 @@
 {
   "schemaVersion": "studymy-usm-master-candidate-v1",
-  "generatedAt": "2026-06-15T08:20:37Z",
+  "generatedAt": "2026-06-15T14:52:16Z",
   "universityCode": "USM",
   "level": "master",
   "applicantScope": "international",
@@ -351,8 +351,8 @@
         "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?catid=48&id=785%3Ageneral-entry-requirement&view=article"
       },
       "duration": {
-        "textEnOfficial": "Subject to the published programme structure",
-        "status": "official-coursework-mixed-general-rule"
+        "textEnOfficial": "Full Time: Min 2 semesters / Max 4 semesters Part Time: Min 3 semesters / Max 6 semesters",
+        "status": "official-programme-page-refreshed-2026-06-12"
       },
       "intake": {
         "textEnOfficial": "Programme-specific intake not published on the public detail page",
@@ -591,8 +591,8 @@
         "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?catid=48&id=785%3Ageneral-entry-requirement&view=article"
       },
       "duration": {
-        "textEnOfficial": "Subject to the published programme structure",
-        "status": "official-coursework-mixed-general-rule"
+        "textEnOfficial": "Full-time: Minimum 2 semesters / Maximum 4 semesters Part-time: Minimum 4 semesters / Maximum 8 semesters",
+        "status": "official-programme-page-refreshed-2026-06-12"
       },
       "intake": {
         "textEnOfficial": "Programme-specific intake not published on the public detail page",
@@ -751,8 +751,8 @@
         "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?catid=48&id=785%3Ageneral-entry-requirement&view=article"
       },
       "duration": {
-        "textEnOfficial": "Subject to the published programme structure",
-        "status": "official-coursework-mixed-general-rule"
+        "textEnOfficial": "Full-time: Min 4 semesters / Max 8 semesters",
+        "status": "official-programme-page-refreshed-2026-06-12"
       },
       "intake": {
         "textEnOfficial": "Programme-specific intake not published on the public detail page",
@@ -7428,7 +7428,7 @@
         "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1509&catid=52"
       },
       "duration": {
-        "textEnOfficial": "Full-time: Min 2 semesters / Max 6 semesters Part-time: Min 4 semesters / Max 12 semesters Postgraduate Institute of Postgraduate Studies Universiti Sains Malaysia, 11800 Penang, Malaysia. Tel: +604-653 6309 / 6027 / 2606 / 2946 / 2958 Fax: +604-653 2931 Disclaimer The institution shall not be held responsible for any discrepancies arising from the translations. Users are encouraged to refer to the official documents and seek clarification from the relevant authorities if necessary.In the event of any discrepancy or inconsistency between the English, Bahasa Melayu, and Mandarin versions of this website, the English version shall prevail. [](https://admission.usm.my/admission ips@usm.my) [](https://www.facebook.com/USMforinternational) [](https://www.tiktok.com/@admissionsusm) [](https://www.instagram.com/studentadmissionsusm/) [](https://admission.usm.my/index.php/login-usm) Last Update: Friday 12 June 2026. All Rights Reserved © Universiti Sains Malaysia",
+        "textEnOfficial": "Full-time: Min 2 semesters / Max 6 semesters Part-time: Min 4 semesters / Max 12 semesters",
         "status": "official-programme-specific"
       },
       "intake": {
@@ -7491,7 +7491,7 @@
         "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1496&catid=53"
       },
       "duration": {
-        "textEnOfficial": "Full-time: Min 2 semesters / Max 6 semesters Part-time: Min 4 semesters / Max 12 semesters Postgraduate Institute of Postgraduate Studies Universiti Sains Malaysia, 11800 Penang, Malaysia. Tel: +604-653 6309 / 6027 / 2606 / 2946 / 2958 Fax: +604-653 2931 Disclaimer The institution shall not be held responsible for any discrepancies arising from the translations. Users are encouraged to refer to the official documents and seek clarification from the relevant authorities if necessary.In the event of any discrepancy or inconsistency between the English, Bahasa Melayu, and Mandarin versions of this website, the English version shall prevail. [](https://admission.usm.my/admission ips@usm.my) [](https://www.facebook.com/USMforinternational) [](https://www.tiktok.com/@admissionsusm) [](https://www.instagram.com/studentadmissionsusm/) [](https://admission.usm.my/index.php/login-usm) Last Update: Friday 12 June 2026. All Rights Reserved © Universiti Sains Malaysia",
+        "textEnOfficial": "Full-time: Min 2 semesters / Max 6 semesters Part-time: Min 4 semesters / Max 12 semesters",
         "status": "official-programme-specific"
       },
       "intake": {
@@ -7711,7 +7711,7 @@
         "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=286&catid=52"
       },
       "duration": {
-        "textEnOfficial": "Full-time: Min 2 semesters / Max 6 semesters Part-time: Min 4 semesters / Max 12 semesters Postgraduate Institute of Postgraduate Studies Universiti Sains Malaysia, 11800 Penang, Malaysia. Tel: +604-653 6309 / 6027 / 2606 / 2946 / 2958 Fax: +604-653 2931 Disclaimer The institution shall not be held responsible for any discrepancies arising from the translations. Users are encouraged to refer to the official documents and seek clarification from the relevant authorities if necessary.In the event of any discrepancy or inconsistency between the English, Bahasa Melayu, and Mandarin versions of this website, the English version shall prevail. Last Update: Friday 12 June 2026. All Rights Reserved © Universiti Sains Malaysia",
+        "textEnOfficial": "Full-time: Min 2 semesters / Max 6 semesters Part-time: Min 4 semesters / Max 12 semesters",
         "status": "official-programme-specific"
       },
       "intake": {
@@ -9030,33 +9030,46 @@
         "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?catid=48&id=785%3Ageneral-entry-requirement&view=article"
       },
       "duration": {
-        "textEnOfficial": "Subject to the published programme structure",
-        "status": "official-coursework-mixed-general-rule"
+        "textEnOfficial": "Full-time: 2 years (USM MBA Year 1 and University of Glasgow MSc Year 2)",
+        "status": "official-programme-page-refreshed-2026-06-12"
       },
       "intake": {
         "textEnOfficial": "Programme-specific intake not published on the public detail page",
         "status": "official-unpublished"
       },
       "fee": {
-        "status": "official-total-unpublished",
-        "feeType": "named-programme",
-        "officialFeeName": "Master of Business Administration - Double Degree UK",
-        "studyMode": "coursework",
-        "academicSession": "2025/2026",
+        "status": "verified-current-official-fee",
+        "feeType": "programme-detail-latest-published",
+        "academicSession": "current",
+        "effectiveNote": "Published on the current official programme page.",
         "international": {
-          "currency": "USD",
-          "amount": null,
-          "raw": "Refer to website",
+          "currency": "GBP",
+          "amount": 5000.0,
           "basis": "total-programme"
         },
-        "malaysian": {
-          "currency": "MYR",
-          "amount": null,
-          "raw": "Refer to website",
-          "basis": "total-programme"
-        },
-        "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/fee-pg",
-        "sourcePage": 2
+        "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=562&catid=57",
+        "detailSha256": "b5e4368da7b9f956ec77f8958fc4407107b686a07185c7a5884c059ff8a9ec72",
+        "previousPublishedFee": {
+          "status": "official-total-unpublished",
+          "feeType": "named-programme",
+          "officialFeeName": "Master of Business Administration - Double Degree UK",
+          "studyMode": "coursework",
+          "academicSession": "2025/2026",
+          "international": {
+            "currency": "USD",
+            "amount": null,
+            "raw": "Refer to website",
+            "basis": "total-programme"
+          },
+          "malaysian": {
+            "currency": "MYR",
+            "amount": null,
+            "raw": "Refer to website",
+            "basis": "total-programme"
+          },
+          "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/fee-pg",
+          "sourcePage": 2
+        }
       },
       "specialisationOrVariantFees": [],
       "applicationDocumentsPolicy": "shared-current-onlineips-guide",
@@ -9881,8 +9894,8 @@
         "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?catid=48&id=785%3Ageneral-entry-requirement&view=article"
       },
       "duration": {
-        "textEnOfficial": "Subject to the published programme structure",
-        "status": "official-coursework-mixed-general-rule"
+        "textEnOfficial": "Full-time: Min 2 semesters / Max 4 semesters Part-time: Min 4 semesters / Max 8 semesters",
+        "status": "official-programme-page-refreshed-2026-06-12"
       },
       "intake": {
         "textEnOfficial": "Programme-specific intake not published on the public detail page",
@@ -9961,8 +9974,8 @@
         "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?catid=48&id=785%3Ageneral-entry-requirement&view=article"
       },
       "duration": {
-        "textEnOfficial": "Subject to the published programme structure",
-        "status": "official-coursework-mixed-general-rule"
+        "textEnOfficial": "Full-time: Min 2 semesters / Max 4 semesters",
+        "status": "official-programme-page-refreshed-2026-06-12"
       },
       "intake": {
         "textEnOfficial": "Programme-specific intake not published on the public detail page",
@@ -10041,8 +10054,8 @@
         "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?catid=48&id=785%3Ageneral-entry-requirement&view=article"
       },
       "duration": {
-        "textEnOfficial": "Subject to the published programme structure",
-        "status": "official-coursework-mixed-general-rule"
+        "textEnOfficial": "Full-time: Min 3 semesters / Max 6 semesters",
+        "status": "official-programme-page-refreshed-2026-06-12"
       },
       "intake": {
         "textEnOfficial": "Programme-specific intake not published on the public detail page",
@@ -10050,24 +10063,42 @@
       },
       "fee": {
         "status": "verified-current-official-fee",
-        "feeType": "named-programme",
-        "officialFeeName": "Master of Data Science",
-        "studyMode": "coursework",
+        "feeType": "programme-detail-latest-published",
         "academicSession": "2025/2026",
+        "effectiveNote": "Published on the current official programme page.",
         "international": {
           "currency": "USD",
-          "amount": 8000.0,
-          "raw": "8,000.00",
+          "amount": 8800.0,
           "basis": "total-programme"
         },
         "malaysian": {
           "currency": "MYR",
-          "amount": 19200.0,
-          "raw": "19,200.00",
+          "amount": 21120.0,
           "basis": "total-programme"
         },
-        "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/fee-pg",
-        "sourcePage": 2
+        "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=191&catid=51",
+        "detailSha256": "65510b710696a098a88104fcbde26390ad1a62a022a7d2bdfcef79953d5ea45b",
+        "previousPublishedFee": {
+          "status": "verified-current-official-fee",
+          "feeType": "named-programme",
+          "officialFeeName": "Master of Data Science",
+          "studyMode": "coursework",
+          "academicSession": "2025/2026",
+          "international": {
+            "currency": "USD",
+            "amount": 8000.0,
+            "raw": "8,000.00",
+            "basis": "total-programme"
+          },
+          "malaysian": {
+            "currency": "MYR",
+            "amount": 19200.0,
+            "raw": "19,200.00",
+            "basis": "total-programme"
+          },
+          "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/fee-pg",
+          "sourcePage": 2
+        }
       },
       "specialisationOrVariantFees": [],
       "applicationDocumentsPolicy": "shared-current-onlineips-guide",
@@ -10121,8 +10152,8 @@
         "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?catid=48&id=785%3Ageneral-entry-requirement&view=article"
       },
       "duration": {
-        "textEnOfficial": "Subject to the published programme structure",
-        "status": "official-coursework-mixed-general-rule"
+        "textEnOfficial": "Full-time: Min 2 semesters / Max 4 semesters Part-time: Min 4 semesters / Max 6 semesters",
+        "status": "official-programme-page-refreshed-2026-06-12"
       },
       "intake": {
         "textEnOfficial": "Programme-specific intake not published on the public detail page",
@@ -10201,8 +10232,8 @@
         "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?catid=48&id=785%3Ageneral-entry-requirement&view=article"
       },
       "duration": {
-        "textEnOfficial": "Subject to the published programme structure",
-        "status": "official-coursework-mixed-general-rule"
+        "textEnOfficial": "Full-time: Min 2 semesters / Max 4 semesters Part-time: Min 4 semesters / Max 6 semesters",
+        "status": "official-programme-page-refreshed-2026-06-12"
       },
       "intake": {
         "textEnOfficial": "Programme-specific intake not published on the public detail page",
@@ -10264,8 +10295,8 @@
         "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?catid=48&id=785%3Ageneral-entry-requirement&view=article"
       },
       "duration": {
-        "textEnOfficial": "Subject to the published programme structure",
-        "status": "official-coursework-mixed-general-rule"
+        "textEnOfficial": "Full-time: Min 2 semesters / Max 4 semesters Part-time: Min 4 semesters / Max 6 semesters",
+        "status": "official-programme-page-refreshed-2026-06-12"
       },
       "intake": {
         "textEnOfficial": "Programme-specific intake not published on the public detail page",
@@ -12138,8 +12169,8 @@
         "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?catid=48&id=785%3Ageneral-entry-requirement&view=article"
       },
       "duration": {
-        "textEnOfficial": "Subject to the published programme structure",
-        "status": "official-coursework-mixed-general-rule"
+        "textEnOfficial": "Part-time: 4 semesters / 24 months",
+        "status": "official-programme-page-refreshed-2026-06-12"
       },
       "intake": {
         "textEnOfficial": "Programme-specific intake not published on the public detail page",
@@ -12494,8 +12525,8 @@
         "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?catid=48&id=785%3Ageneral-entry-requirement&view=article"
       },
       "duration": {
-        "textEnOfficial": "Subject to the published programme structure",
-        "status": "official-coursework-mixed-general-rule"
+        "textEnOfficial": "Part-time: 4 semesters / 24 months",
+        "status": "official-programme-page-refreshed-2026-06-12"
       },
       "intake": {
         "textEnOfficial": "Programme-specific intake not published on the public detail page",
@@ -14608,8 +14639,8 @@
         "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?catid=48&id=785%3Ageneral-entry-requirement&view=article"
       },
       "duration": {
-        "textEnOfficial": "Subject to the published programme structure",
-        "status": "official-coursework-mixed-general-rule"
+        "textEnOfficial": "Full-time: Min 2 semesters / Max 4 semesters Part-time: Min 4 semesters / Max 8 semesters",
+        "status": "official-programme-page-refreshed-2026-06-12"
       },
       "intake": {
         "textEnOfficial": "Programme-specific intake not published on the public detail page",
@@ -15089,8 +15120,8 @@
         "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?catid=48&id=785%3Ageneral-entry-requirement&view=article"
       },
       "duration": {
-        "textEnOfficial": "Subject to the published programme structure",
-        "status": "official-coursework-mixed-general-rule"
+        "textEnOfficial": "Full-time: Minimum 2 semesters / Maximum 4 semesters Part-time: Minimum 4 semesters / Maximum 8 semesters",
+        "status": "official-programme-page-refreshed-2026-06-12"
       },
       "intake": {
         "textEnOfficial": "Programme-specific intake not published on the public detail page",
@@ -22269,8 +22300,8 @@
         "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?catid=48&id=785%3Ageneral-entry-requirement&view=article"
       },
       "duration": {
-        "textEnOfficial": "Subject to the published programme structure",
-        "status": "official-coursework-mixed-general-rule"
+        "textEnOfficial": "Full-time: Min 2 semesters / Max 4 semesters Part-time: Min 3 semesters / Max 6 semesters",
+        "status": "official-programme-page-refreshed-2026-06-12"
       },
       "intake": {
         "textEnOfficial": "Programme-specific intake not published on the public detail page",
@@ -22509,8 +22540,8 @@
         "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?catid=48&id=785%3Ageneral-entry-requirement&view=article"
       },
       "duration": {
-        "textEnOfficial": "Subject to the published programme structure",
-        "status": "official-coursework-mixed-general-rule"
+        "textEnOfficial": "Full-time: Min 2 semesters / Max 4 semesters Part-time: Min 3 semesters / Max 6 semesters",
+        "status": "official-programme-page-refreshed-2026-06-12"
       },
       "intake": {
         "textEnOfficial": "Programme-specific intake not published on the public detail page",
@@ -22589,16 +22620,31 @@
         "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?catid=48&id=785%3Ageneral-entry-requirement&view=article"
       },
       "duration": {
-        "textEnOfficial": "Subject to the published programme structure",
-        "status": "official-coursework-mixed-general-rule"
+        "textEnOfficial": "Full-time: Min 2 semesters / Max 4 semesters Part-time: Min 4 semesters / Max 8 semesters",
+        "status": "official-programme-page-refreshed-2026-06-12"
       },
       "intake": {
         "textEnOfficial": "Programme-specific intake not published on the public detail page",
         "status": "official-unpublished"
       },
       "fee": {
-        "status": "official-current-fee-not-published-for-directory-entry",
-        "reason": "No unique current 2025/2026 named fee row applies to this directory entry."
+        "status": "verified-current-official-fee",
+        "feeType": "programme-detail-latest-published",
+        "academicSession": "2025/2026",
+        "effectiveNote": "Published on the current official programme page.",
+        "international": {
+          "currency": "USD",
+          "amount": 10500.0,
+          "basis": "total-programme"
+        },
+        "malaysian": {
+          "currency": "MYR",
+          "amount": 18900.0,
+          "basis": "total-programme"
+        },
+        "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=890&catid=53",
+        "detailSha256": "8db15ac26658d5c3e1f6c2ca750ef37c8abd460cb2fd846dddc1e8392f63696a",
+        "previousPublishedFee": null
       },
       "specialisationOrVariantFees": [],
       "applicationDocumentsPolicy": "shared-current-onlineips-guide",
@@ -22652,8 +22698,8 @@
         "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?catid=48&id=785%3Ageneral-entry-requirement&view=article"
       },
       "duration": {
-        "textEnOfficial": "Subject to the published programme structure",
-        "status": "official-coursework-mixed-general-rule"
+        "textEnOfficial": "Full-time: Minimum 2 semesters / Maximum 4 semesters Part-time: Minimum 4 semesters / Maximum 8 semesters",
+        "status": "official-programme-page-refreshed-2026-06-12"
       },
       "intake": {
         "textEnOfficial": "Programme-specific intake not published on the public detail page",
@@ -22732,8 +22778,8 @@
         "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?catid=48&id=785%3Ageneral-entry-requirement&view=article"
       },
       "duration": {
-        "textEnOfficial": "Subject to the published programme structure",
-        "status": "official-coursework-mixed-general-rule"
+        "textEnOfficial": "Full-time: Minimum 2 semesters / Maximum 4 semesters Part-time: Minimum 4 semesters / Maximum 8 semesters",
+        "status": "official-programme-page-refreshed-2026-06-12"
       },
       "intake": {
         "textEnOfficial": "Programme-specific intake not published on the public detail page",
@@ -22812,8 +22858,8 @@
         "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?catid=48&id=785%3Ageneral-entry-requirement&view=article"
       },
       "duration": {
-        "textEnOfficial": "Subject to the published programme structure",
-        "status": "official-coursework-mixed-general-rule"
+        "textEnOfficial": "Full-time: Min 2 semesters / Max 4 semesters Part-time: Min 3 semesters / Max 6 semesters",
+        "status": "official-programme-page-refreshed-2026-06-12"
       },
       "intake": {
         "textEnOfficial": "Programme-specific intake not published on the public detail page",
@@ -22875,8 +22921,8 @@
         "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?catid=48&id=785%3Ageneral-entry-requirement&view=article"
       },
       "duration": {
-        "textEnOfficial": "Subject to the published programme structure",
-        "status": "official-coursework-mixed-general-rule"
+        "textEnOfficial": "Full-time: Min 2 semesters / Max 4 semesters Part-time: Min 3 semesters / Max 6 semesters",
+        "status": "official-programme-page-refreshed-2026-06-12"
       },
       "intake": {
         "textEnOfficial": "Programme-specific intake not published on the public detail page",
@@ -23098,8 +23144,8 @@
         "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?catid=48&id=785%3Ageneral-entry-requirement&view=article"
       },
       "duration": {
-        "textEnOfficial": "Subject to the published programme structure",
-        "status": "official-coursework-mixed-general-rule"
+        "textEnOfficial": "Full-time: 2 semesters / 1 year",
+        "status": "official-programme-page-refreshed-2026-06-12"
       },
       "intake": {
         "textEnOfficial": "Programme-specific intake not published on the public detail page",
@@ -24462,8 +24508,8 @@
         "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?catid=48&id=785%3Ageneral-entry-requirement&view=article"
       },
       "duration": {
-        "textEnOfficial": "Subject to the published programme structure",
-        "status": "official-coursework-mixed-general-rule"
+        "textEnOfficial": "Full-time: Min 24 months / Max 36 months",
+        "status": "official-programme-page-refreshed-2026-06-12"
       },
       "intake": {
         "textEnOfficial": "Programme-specific intake not published on the public detail page",
@@ -25204,7 +25250,7 @@
         "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1504&catid=54"
       },
       "duration": {
-        "textEnOfficial": "Full-time : Minimum 12 months / Maximum 36 months Part-time : Minimum 24 months / Maximum 72 months Postgraduate Institute of Postgraduate Studies Universiti Sains Malaysia, 11800 Penang, Malaysia. Tel: +604-653 6309 / 6027 / 2606 / 2946 / 2958 Fax: +604-653 2931 Disclaimer The institution shall not be held responsible for any discrepancies arising from the translations. Users are encouraged to refer to the official documents and seek clarification from the relevant authorities if necessary.In the event of any discrepancy or inconsistency between the English, Bahasa Melayu, and Mandarin versions of this website, the English version shall prevail. [](https://admission.usm.my/admission ips@usm.my) [](https://www.facebook.com/USMforinternational) [](https://www.tiktok.com/@admissionsusm) [](https://www.instagram.com/studentadmissionsusm/) [](https://admission.usm.my/index.php/login-usm) Last Update: Friday 12 June 2026. All Rights Reserved © Universiti Sains Malaysia",
+        "textEnOfficial": "Full-time : Minimum 12 months / Maximum 36 months Part-time : Minimum 24 months / Maximum 72 months",
         "status": "official-programme-specific"
       },
       "intake": {
@@ -25575,8 +25621,8 @@
         "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?catid=48&id=785%3Ageneral-entry-requirement&view=article"
       },
       "duration": {
-        "textEnOfficial": "Subject to the published programme structure",
-        "status": "official-coursework-mixed-general-rule"
+        "textEnOfficial": "Full-time: Min 2 semesters / Max 4 semesters Part-time: Min 4 semesters / Max 8 semesters",
+        "status": "official-programme-page-refreshed-2026-06-12"
       },
       "intake": {
         "textEnOfficial": "Programme-specific intake not published on the public detail page",
@@ -29254,7 +29300,7 @@
         "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1510&catid=50"
       },
       "duration": {
-        "textEnOfficial": "Full-time : Min 2 semesters / Max 6 semesters Part-time: Min 4 semesters / Max 12 semesters Postgraduate Institute of Postgraduate Studies Universiti Sains Malaysia, 11800 Penang, Malaysia. Tel: +604-653 6309 / 6027 / 2606 / 2946 / 2958 Fax: +604-653 2931 Disclaimer The institution shall not be held responsible for any discrepancies arising from the translations. Users are encouraged to refer to the official documents and seek clarification from the relevant authorities if necessary.In the event of any discrepancy or inconsistency between the English, Bahasa Melayu, and Mandarin versions of this website, the English version shall prevail. [](https://admission.usm.my/admission ips@usm.my) [](https://www.facebook.com/USMforinternational) [](https://www.tiktok.com/@admissionsusm) [](https://www.instagram.com/studentadmissionsusm/) [](https://admission.usm.my/index.php/login-usm) Last Update: Friday 12 June 2026. All Rights Reserved © Universiti Sains Malaysia",
+        "textEnOfficial": "Full-time : Min 2 semesters / Max 6 semesters Part-time: Min 4 semesters / Max 12 semesters",
         "status": "official-programme-specific"
       },
       "intake": {
@@ -30087,8 +30133,8 @@
         "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=400&catid=54"
       },
       "duration": {
-        "textEnOfficial": "Research in polymer engineering is focused in: Development of new materials such as new thermoplastic elastomer materials based on natural rubber, bioactive composite materials, degradable plastics and production of new compatibIliser or coupling agent with the utilisation of the nation's diverse natural resources. Preparation and characterisation of nano and natural filler-polymer composites such as development of cost effective modified polymer composites via incorporation of multi-component filler and high performance lignocelluloses/mineral fillers. Polymer synthesis of new polymers, such as polysiloxane, water-soluble polymer, conducting polymer etc. Various aspects of polymer processing and new technologies for recycling of various rubber and plastic waste. Research Thrust Areas: Polymer Engineering Plastics Rubber and Latex Polymer Alloy and Blends Polymer Composites Polymer Waste Management Biopolymers Polymer Synthesis Expertise available in the following School: School of Materials and Mineral Resources Engineering [](http://material.eng.usm.my/index.php/ms/)[http://material.eng.usm.my/index.php/ms/](http://material.eng.usm.my/index.php/ms/)",
-        "status": "official-programme-specific"
+        "textEnOfficial": "Full-time: 2-6 semesters; Part-time: 4-12 semesters",
+        "status": "official-research-mode-rule"
       },
       "intake": {
         "textEnOfficial": "Semester I: September-February; Semester II: March-August",
@@ -30382,16 +30428,31 @@
         "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?catid=48&id=785%3Ageneral-entry-requirement&view=article"
       },
       "duration": {
-        "textEnOfficial": "Subject to the published programme structure",
-        "status": "official-coursework-mixed-general-rule"
+        "textEnOfficial": "Full-time: 2 years (4 semesters); maximum 4 years (8 semesters)",
+        "status": "official-programme-page-refreshed-2026-06-12"
       },
       "intake": {
         "textEnOfficial": "Programme-specific intake not published on the public detail page",
         "status": "official-unpublished"
       },
       "fee": {
-        "status": "official-current-fee-not-published-for-directory-entry",
-        "reason": "No unique current 2025/2026 named fee row applies to this directory entry."
+        "status": "verified-current-official-fee",
+        "feeType": "programme-detail-latest-published",
+        "academicSession": "2025/2026",
+        "effectiveNote": "Published on the current official programme page.",
+        "international": {
+          "currency": "USD",
+          "amount": 9000.0,
+          "basis": "total-programme"
+        },
+        "malaysian": {
+          "currency": "MYR",
+          "amount": 22600.0,
+          "basis": "total-programme"
+        },
+        "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=118&catid=50",
+        "detailSha256": "3c3380f7abedc37d8c7927bc9f689d6d37b5bf23ee32c825d1bc6fabe7c15932",
+        "previousPublishedFee": null
       },
       "specialisationOrVariantFees": [],
       "applicationDocumentsPolicy": "shared-current-onlineips-guide",
@@ -31562,8 +31623,8 @@
         "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?catid=48&id=785%3Ageneral-entry-requirement&view=article"
       },
       "duration": {
-        "textEnOfficial": "Subject to the published programme structure",
-        "status": "official-coursework-mixed-general-rule"
+        "textEnOfficial": "Full-time: Min 2 semesters / Max 4 semesters Part-time: Min 4 semesters / Max 8 semesters",
+        "status": "official-programme-page-refreshed-2026-06-12"
       },
       "intake": {
         "textEnOfficial": "Programme-specific intake not published on the public detail page",
@@ -32595,7 +32656,7 @@
         "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1505&catid=54"
       },
       "duration": {
-        "textEnOfficial": "Full-time : Minimum 12 months / Maximum 36 months Part-time : Minimum 24 months / Maximum 72 months Postgraduate Institute of Postgraduate Studies Universiti Sains Malaysia, 11800 Penang, Malaysia. Tel: +604-653 6309 / 6027 / 2606 / 2946 / 2958 Fax: +604-653 2931 Disclaimer The institution shall not be held responsible for any discrepancies arising from the translations. Users are encouraged to refer to the official documents and seek clarification from the relevant authorities if necessary.In the event of any discrepancy or inconsistency between the English, Bahasa Melayu, and Mandarin versions of this website, the English version shall prevail. [](https://admission.usm.my/admission ips@usm.my) [](https://www.facebook.com/USMforinternational) [](https://www.tiktok.com/@admissionsusm) [](https://www.instagram.com/studentadmissionsusm/) [](https://admission.usm.my/index.php/login-usm) Last Update: Friday 12 June 2026. All Rights Reserved © Universiti Sains Malaysia",
+        "textEnOfficial": "Full-time : Minimum 12 months / Maximum 36 months Part-time : Minimum 24 months / Maximum 72 months",
         "status": "official-programme-specific"
       },
       "intake": {
@@ -32658,8 +32719,8 @@
         "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?catid=48&id=785%3Ageneral-entry-requirement&view=article"
       },
       "duration": {
-        "textEnOfficial": "Subject to the published programme structure",
-        "status": "official-coursework-mixed-general-rule"
+        "textEnOfficial": "Full-time: Min 2 semesters / Max 4 semesters",
+        "status": "official-programme-page-refreshed-2026-06-12"
       },
       "intake": {
         "textEnOfficial": "Programme-specific intake not published on the public detail page",
@@ -33548,7 +33609,7 @@
         "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=107&catid=50"
       },
       "duration": {
-        "textEnOfficial": "Full-time: Min 2 semesters / Max 6 semesters Part-time: Min 4 semesters / Max 12 semesters Postgraduate Institute of Postgraduate Studies Universiti Sains Malaysia, 11800 Penang, Malaysia. Tel: +604-653 6309 / 6027 / 2606 / 2946 / 2958 Fax: +604-653 2931 Disclaimer The institution shall not be held responsible for any discrepancies arising from the translations. Users are encouraged to refer to the official documents and seek clarification from the relevant authorities if necessary.In the event of any discrepancy or inconsistency between the English, Bahasa Melayu, and Mandarin versions of this website, the English version shall prevail. [](https://admission.usm.my/admission ips@usm.my) [](https://www.facebook.com/USMforinternational) [](https://www.tiktok.com/@admissionsusm) [](https://www.instagram.com/studentadmissionsusm/) [](https://admission.usm.my/index.php/login-usm) Last Update: Friday 12 June 2026. All Rights Reserved © Universiti Sains Malaysia",
+        "textEnOfficial": "Full-time: Min 2 semesters / Max 6 semesters Part-time: Min 4 semesters / Max 12 semesters",
         "status": "official-programme-specific"
       },
       "intake": {
@@ -33625,7 +33686,7 @@
         "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=107&catid=50"
       },
       "duration": {
-        "textEnOfficial": "Full-time: Min 2 semesters / Max 6 semesters Part-time: Min 4 semesters / Max 12 semesters Postgraduate Institute of Postgraduate Studies Universiti Sains Malaysia, 11800 Penang, Malaysia. Tel: +604-653 6309 / 6027 / 2606 / 2946 / 2958 Fax: +604-653 2931 Disclaimer The institution shall not be held responsible for any discrepancies arising from the translations. Users are encouraged to refer to the official documents and seek clarification from the relevant authorities if necessary.In the event of any discrepancy or inconsistency between the English, Bahasa Melayu, and Mandarin versions of this website, the English version shall prevail. [](https://admission.usm.my/admission ips@usm.my) [](https://www.facebook.com/USMforinternational) [](https://www.tiktok.com/@admissionsusm) [](https://www.instagram.com/studentadmissionsusm/) [](https://admission.usm.my/index.php/login-usm) Last Update: Friday 12 June 2026. All Rights Reserved © Universiti Sains Malaysia",
+        "textEnOfficial": "Full-time: Min 2 semesters / Max 6 semesters Part-time: Min 4 semesters / Max 12 semesters",
         "status": "official-programme-specific"
       },
       "intake": {
@@ -33925,8 +33986,8 @@
         "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?catid=48&id=785%3Ageneral-entry-requirement&view=article"
       },
       "duration": {
-        "textEnOfficial": "Subject to the published programme structure",
-        "status": "official-coursework-mixed-general-rule"
+        "textEnOfficial": "Full-time: Min 12 months / Max 36 months Part-time: Min 24 months / Max 72 months",
+        "status": "official-programme-page-refreshed-2026-06-12"
       },
       "intake": {
         "textEnOfficial": "Programme-specific intake not published on the public detail page",
@@ -34316,8 +34377,8 @@
         "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=400&catid=54"
       },
       "duration": {
-        "textEnOfficial": "Research in polymer engineering is focused in: Development of new materials such as new thermoplastic elastomer materials based on natural rubber, bioactive composite materials, degradable plastics and production of new compatibIliser or coupling agent with the utilisation of the nation's diverse natural resources. Preparation and characterisation of nano and natural filler-polymer composites such as development of cost effective modified polymer composites via incorporation of multi-component filler and high performance lignocelluloses/mineral fillers. Polymer synthesis of new polymers, such as polysiloxane, water-soluble polymer, conducting polymer etc. Various aspects of polymer processing and new technologies for recycling of various rubber and plastic waste. Research Thrust Areas: Polymer Engineering Plastics Rubber and Latex Polymer Alloy and Blends Polymer Composites Polymer Waste Management Biopolymers Polymer Synthesis Expertise available in the following School: School of Materials and Mineral Resources Engineering [](http://material.eng.usm.my/index.php/ms/)[http://material.eng.usm.my/index.php/ms/](http://material.eng.usm.my/index.php/ms/)",
-        "status": "official-programme-specific"
+        "textEnOfficial": "Full-time: 2-6 semesters; Part-time: 4-12 semesters",
+        "status": "official-research-mode-rule"
       },
       "intake": {
         "textEnOfficial": "Semester I: September-February; Semester II: March-August",
@@ -34944,7 +35005,7 @@
         "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=112&catid=50"
       },
       "duration": {
-        "textEnOfficial": "Full-time: Min 2 semesters / Max 6 semesters Part-time: Min 4 semesters / Max 12 semesters Postgraduate Institute of Postgraduate Studies Universiti Sains Malaysia, 11800 Penang, Malaysia. Tel: +604-653 6309 / 6027 / 2606 / 2946 / 2958 Fax: +604-653 2931 Disclaimer The institution shall not be held responsible for any discrepancies arising from the translations. Users are encouraged to refer to the official documents and seek clarification from the relevant authorities if necessary.In the event of any discrepancy or inconsistency between the English, Bahasa Melayu, and Mandarin versions of this website, the English version shall prevail. [](https://admission.usm.my/admission ips@usm.my) [](https://www.facebook.com/USMforinternational) [](https://www.tiktok.com/@admissionsusm) [](https://www.instagram.com/studentadmissionsusm/) [](https://admission.usm.my/index.php/login-usm) Last Update: Friday 12 June 2026. All Rights Reserved © Universiti Sains Malaysia",
+        "textEnOfficial": "Full-time: Min 2 semesters / Max 6 semesters Part-time: Min 4 semesters / Max 12 semesters",
         "status": "official-programme-specific"
       },
       "intake": {
@@ -35021,7 +35082,7 @@
         "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=112&catid=50"
       },
       "duration": {
-        "textEnOfficial": "Full-time: Min 2 semesters / Max 6 semesters Part-time: Min 4 semesters / Max 12 semesters Postgraduate Institute of Postgraduate Studies Universiti Sains Malaysia, 11800 Penang, Malaysia. Tel: +604-653 6309 / 6027 / 2606 / 2946 / 2958 Fax: +604-653 2931 Disclaimer The institution shall not be held responsible for any discrepancies arising from the translations. Users are encouraged to refer to the official documents and seek clarification from the relevant authorities if necessary.In the event of any discrepancy or inconsistency between the English, Bahasa Melayu, and Mandarin versions of this website, the English version shall prevail. [](https://admission.usm.my/admission ips@usm.my) [](https://www.facebook.com/USMforinternational) [](https://www.tiktok.com/@admissionsusm) [](https://www.instagram.com/studentadmissionsusm/) [](https://admission.usm.my/index.php/login-usm) Last Update: Friday 12 June 2026. All Rights Reserved © Universiti Sains Malaysia",
+        "textEnOfficial": "Full-time: Min 2 semesters / Max 6 semesters Part-time: Min 4 semesters / Max 12 semesters",
         "status": "official-programme-specific"
       },
       "intake": {
@@ -35307,8 +35368,8 @@
         "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?catid=48&id=785%3Ageneral-entry-requirement&view=article"
       },
       "duration": {
-        "textEnOfficial": "Subject to the published programme structure",
-        "status": "official-coursework-mixed-general-rule"
+        "textEnOfficial": "Full-time: Min 2 semesters / Max 4 semesters Part-time: Min 4 semesters / Max 8 semesters",
+        "status": "official-programme-page-refreshed-2026-06-12"
       },
       "intake": {
         "textEnOfficial": "Programme-specific intake not published on the public detail page",
@@ -35387,7 +35448,7 @@
         "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1512&catid=52"
       },
       "duration": {
-        "textEnOfficial": "Full-time: Min 2 semesters / Max 6 semesters Part-time: Min 4 semesters / Max 12 semesters Postgraduate Institute of Postgraduate Studies Universiti Sains Malaysia, 11800 Penang, Malaysia. Tel: +604-653 6309 / 6027 / 2606 / 2946 / 2958 Fax: +604-653 2931 Disclaimer The institution shall not be held responsible for any discrepancies arising from the translations. Users are encouraged to refer to the official documents and seek clarification from the relevant authorities if necessary.In the event of any discrepancy or inconsistency between the English, Bahasa Melayu, and Mandarin versions of this website, the English version shall prevail. [](https://admission.usm.my/admission ips@usm.my) [](https://www.facebook.com/USMforinternational) [](https://www.tiktok.com/@admissionsusm) [](https://www.instagram.com/studentadmissionsusm/) [](https://admission.usm.my/index.php/login-usm) Last Update: Friday 12 June 2026. All Rights Reserved © Universiti Sains Malaysia",
+        "textEnOfficial": "Full-time: Min 2 semesters / Max 6 semesters Part-time: Min 4 semesters / Max 12 semesters",
         "status": "official-programme-specific"
       },
       "intake": {
@@ -36988,8 +37049,8 @@
         "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?catid=48&id=785%3Ageneral-entry-requirement&view=article"
       },
       "duration": {
-        "textEnOfficial": "Subject to the published programme structure",
-        "status": "official-coursework-mixed-general-rule"
+        "textEnOfficial": "Full-time: Minimum 4 semesters / Maximum 8 semesters Part-time: Minimum 6 semesters / Maximum 10 semesters",
+        "status": "official-programme-page-refreshed-2026-06-12"
       },
       "intake": {
         "textEnOfficial": "Programme-specific intake not published on the public detail page",
@@ -38056,16 +38117,15 @@
       "research": 170
     },
     "feeStatusCounts": {
-      "official-current-fee-not-published-for-directory-entry": 35,
+      "official-current-fee-not-published-for-directory-entry": 33,
       "official-rate-only": 151,
-      "official-total-unpublished": 1,
-      "verified-current-official-fee": 118
+      "verified-current-official-fee": 121
     },
     "fieldSourceCounts": {
-      "official-coursework-mixed-general-rule": 30,
       "official-general-rule": 114,
-      "official-programme-specific": 851,
-      "official-research-mode-rule": 27,
+      "official-programme-page-refreshed-2026-06-12": 30,
+      "official-programme-specific": 849,
+      "official-research-mode-rule": 29,
       "official-research-semester-rule": 163,
       "official-unpublished": 35
     },

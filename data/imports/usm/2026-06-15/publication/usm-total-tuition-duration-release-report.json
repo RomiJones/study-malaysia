@@ -1,0 +1,86 @@
+{
+  "schemaVersion": 1,
+  "gate": "usm-commercial-release",
+  "startedAt": "2026-06-15T14:58:59.395Z",
+  "apiUrl": "http://127.0.0.1:3000/api/universities/universiti-sains-malaysia-usm",
+  "webUrl": "http://127.0.0.1:5173/universities/universiti-sains-malaysia-usm",
+  "checks": [
+    {
+      "name": "verify undergraduate database",
+      "status": "passed"
+    },
+    {
+      "name": "verify master candidate",
+      "status": "passed"
+    },
+    {
+      "name": "verify master database",
+      "status": "passed"
+    },
+    {
+      "name": "verify doctoral candidate",
+      "status": "passed"
+    },
+    {
+      "name": "verify doctoral delivery",
+      "status": "passed"
+    },
+    {
+      "name": "verify doctoral database",
+      "status": "passed"
+    },
+    {
+      "name": "audit tuition policy",
+      "status": "passed"
+    },
+    {
+      "name": "full tests",
+      "status": "passed"
+    },
+    {
+      "name": "production build",
+      "status": "passed"
+    },
+    {
+      "name": "four-locale audit",
+      "status": "passed"
+    },
+    {
+      "name": "public API invariants",
+      "status": "passed",
+      "result": {
+        "canonical": 463,
+        "public": 460,
+        "levelCounts": {
+          "bachelor": 63,
+          "master": 304,
+          "phd": 93
+        },
+        "feeStatusCounts": {
+          "matched-official": 194,
+          "calculated-from-official-rate": 213,
+          "not-published": 53
+        },
+        "forbiddenFee": 0,
+        "invalidCalculatedTotals": 0,
+        "nonReady": 0
+      }
+    },
+    {
+      "name": "four-locale browser tuition audit",
+      "status": "passed",
+      "result": {
+        "locales": [
+          "zh-CN",
+          "zh-TW",
+          "en",
+          "ms"
+        ],
+        "consoleErrors": 0
+      }
+    }
+  ],
+  "status": "passed",
+  "decision": "commercial-release-ready",
+  "finishedAt": "2026-06-15T14:59:24.383Z"
+}

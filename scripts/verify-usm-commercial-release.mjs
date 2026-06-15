@@ -97,27 +97,30 @@ async function checkApi() {
   const summary = data.officialProfile?.catalogStatusSummary?.all;
   const feeStatusCounts = Object.fromEntries([
     "matched-official",
-    "official-rate-verified",
+    "calculated-from-official-rate",
     "not-published"
   ].map((status) => [
     status,
     programmes.filter((row) => row.officialFeeAuditStatus === status).length
   ]));
   const expectedFeeStatuses = {
-    "matched-official": 191,
-    "official-rate-verified": 213,
-    "not-published": 56
+    "matched-official": 194,
+    "calculated-from-official-rate": 213,
+    "not-published": 53
   };
   const forbiddenFee = programmes.filter((row) => {
     const display = String(row.tuitionDisplay || "");
     return /\d[\d,]*(?:\.\d+)?\s*[-–]\s*\d[\d,]*(?:\.\d+)?/.test(display)
       || /estimated|估算|估計/i.test(display)
-      || (row.officialFeeAuditStatus !== "official-rate-verified"
-        && /per[\s-]semester|per[\s-]year|每学期|每年|每學期/i.test(display));
+      || /per[\s-]semester|per[\s-]year|每学期|每年|每學期/i.test(display);
   });
-  const invalidVerifiedRates = programmes.filter((row) =>
-    row.officialFeeAuditStatus === "official-rate-verified"
-    && !/(?:USD|MYR|RM|CNY)\s+\d[\d,]*(?:\.\d+)?\s+per semester/i.test(String(row.tuitionDisplay || ""))
+  const invalidCalculatedTotals = programmes.filter((row) =>
+    row.officialFeeAuditStatus === "calculated-from-official-rate"
+    && (
+      !(Number(row.tuitionAmount) > 0)
+      || !/(?:USD|MYR|RM|CNY)\s+\d[\d,]*(?:\.\d+)?\s+total tuition/i.test(String(row.tuitionDisplay || ""))
+      || !/official minimum semesters/i.test(String(row.tuitionInfo?.note || ""))
+    )
   );
   const nonReady = programmes.filter((row) => row.publicDisplayStatus !== "ready");
   if (
@@ -130,7 +133,7 @@ async function checkApi() {
     || summary?.notAvailableForInternational !== 3
     || JSON.stringify(feeStatusCounts) !== JSON.stringify(expectedFeeStatuses)
     || forbiddenFee.length
-    || invalidVerifiedRates.length
+    || invalidCalculatedTotals.length
     || nonReady.length
   ) {
     throw new Error("USM public API commercial invariants failed.");
@@ -144,7 +147,7 @@ async function checkApi() {
       levelCounts,
       feeStatusCounts,
       forbiddenFee: 0,
-      invalidVerifiedRates: 0,
+      invalidCalculatedTotals: 0,
       nonReady: 0
     }
   });
@@ -154,13 +157,25 @@ async function checkUi() {
   const browser = await chromium.launch({ headless: true });
   const consoleErrors = [];
   const localeSummary = {
-    "zh-CN": "按专业查看官方学费",
-    "zh-TW": "按專業查看官方學費",
-    en: "Official tuition shown by programme",
-    ms: "Yuran rasmi dipaparkan mengikut program"
+    "zh-CN": {
+      summary: "按专业查看官方学费",
+      note: "按官方全日制费率与官方最短学制计算一个标准总学费"
+    },
+    "zh-TW": {
+      summary: "按專業查看官方學費",
+      note: "按官方全日制費率與官方最短學制計算一個標準總學費"
+    },
+    en: {
+      summary: "Official tuition shown by programme",
+      note: "calculated from the official full-time rate and official minimum duration"
+    },
+    ms: {
+      summary: "Yuran rasmi dipaparkan mengikut program",
+      note: "dikira daripada kadar sepenuh masa rasmi dan tempoh minimum rasmi"
+    }
   };
   try {
-    for (const [locale, summaryText] of Object.entries(localeSummary)) {
+    for (const [locale, expectedText] of Object.entries(localeSummary)) {
       const context = await browser.newContext();
       await context.addInitScript((value) => localStorage.setItem("studymy_locale", value), locale);
       const page = await context.newPage();
@@ -168,20 +183,36 @@ async function checkUi() {
         if (message.type() === "error") consoleErrors.push(`${locale}: ${message.text()}`);
       });
       await page.goto(webUrl, { waitUntil: "networkidle" });
-      await page.getByText(summaryText, { exact: true }).waitFor({ timeout: 15_000 });
+      await page.getByText(expectedText.summary, { exact: true }).waitFor({ timeout: 15_000 });
       const overview = await page.locator('[role="tabpanel"]:not([hidden])').innerText();
       assertNoFeeRange(overview, `${locale} overview`);
+      if (!overview.includes(expectedText.note)) {
+        throw new Error(`${locale} overview does not explain the calculated total tuition basis.`);
+      }
       if (locale === "zh-CN") {
         await page.getByRole("tab", { name: "硕士专业", exact: true }).click();
         const master = await page.locator('[role="tabpanel"]:not([hidden])').innerText();
         assertNoFeeRange(master, "master list");
-        if (!master.includes("/ 学期")) throw new Error("Master list does not expose the verified numeric semester rate.");
-        if (!master.includes("官方费率已核验")) throw new Error("Master list does not expose verified official rate status.");
+        if (!master.includes("按官方费率与学制计算")) throw new Error("Master list does not expose calculated total tuition status.");
         await page.getByRole("tab", { name: "博士专业", exact: true }).click();
         const phd = await page.locator('[role="tabpanel"]:not([hidden])').innerText();
         assertNoFeeRange(phd, "doctoral list");
-        if (!phd.includes("USD 16,200") || !phd.includes("/ 学期") || !phd.includes("官方费率已核验")) {
-          throw new Error("Doctoral fee display is missing the DBA total or verified numeric semester rate.");
+        if (!phd.includes("USD 16,200") || !phd.includes("按官方费率与学制计算")) {
+          throw new Error("Doctoral fee display is missing the DBA total or calculated tuition status.");
+        }
+        const fineArtsUrl = new URL(
+          "/programs/usm-master-commercial-2026-usm-m-article-367-eee02810",
+          webUrl
+        ).toString();
+        await page.goto(fineArtsUrl, { waitUntil: "networkidle" });
+        const fineArts = await page.locator("body").innerText();
+        if (
+          !fineArts.includes("官方学费")
+          || !fineArts.includes("USD 2,800")
+          || !fineArts.includes("每学期 USD 1,400 × 官方最短 2 个学期")
+          || !fineArts.includes("官方非全日制费率为每学期 USD 1,190")
+        ) {
+          throw new Error("Calculated tuition detail does not expose the localized formula and part-time rate.");
         }
       }
       await context.close();
@@ -202,6 +233,6 @@ function assertNoFeeRange(text, label) {
     throw new Error(`${label} contains a tuition range.`);
   }
   if (/estimated total tuition|per[\s-]semester tuition/i.test(text)) {
-    throw new Error(`${label} contains inferred or rate-based tuition.`);
+    throw new Error(`${label} contains an estimated or rate-only tuition display.`);
   }
 }

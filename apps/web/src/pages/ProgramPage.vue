@@ -18,8 +18,9 @@
 
         <div class="grid gap-4">
           <div class="stat-card rounded-[24px] p-5">
-            <div class="text-xs font-bold uppercase tracking-[0.16em] text-slate-500">{{ t('common.annualTuition') }}</div>
+            <div class="text-xs font-bold uppercase tracking-[0.16em] text-slate-500">{{ t('university.officialTuition') }}</div>
             <div class="mt-3 text-3xl font-black text-slate-900">{{ tuitionLabel }}</div>
+            <p v-if="tuitionNote" class="mt-3 text-sm leading-6 text-slate-600">{{ tuitionNote }}</p>
           </div>
           <div class="stat-card rounded-[24px] p-5">
             <div class="text-xs font-bold uppercase tracking-[0.16em] text-slate-500">{{ t('common.faculty') }}</div>
@@ -109,6 +110,21 @@ const categoryLabel = computed(() => catalog.programDetail ? formatCategoryLabel
 const durationLabel = computed(() => catalog.programDetail ? formatProgramDuration(catalog.programDetail, currentLocale.value) : officialConfirmationFallback(currentLocale.value));
 const languageLabel = computed(() => catalog.programDetail ? formatProgramLanguage(catalog.programDetail, undefined, currentLocale.value) : officialPageFallback(currentLocale.value));
 const tuitionLabel = computed(() => catalog.programDetail ? formatProgramTuition(catalog.programDetail, undefined, currentLocale.value) : officialPageFallback(currentLocale.value));
+const tuitionNote = computed(() => {
+  const program = catalog.programDetail;
+  if (!program || program.officialFeeAuditStatus !== "calculated-from-official-rate") return "";
+  const match = String(program.tuitionInfo?.note || "").match(
+    /calculated the standard full-time tuition as (USD|MYR) ([\d,]+(?:\.\d+)?) per semester × (\d+) official minimum semesters = (?:USD|MYR) ([\d,]+(?:\.\d+)?).*part-time rate: (?:USD|MYR) ([\d,]+(?:\.\d+)?) per semester/i
+  );
+  if (!match) return "";
+  return t("program.calculatedTotalTuitionNote", {
+    currency: match[1].toUpperCase(),
+    fullTime: match[2],
+    semesters: match[3],
+    total: match[4],
+    partTime: match[5]
+  });
+});
 const intakeLabel = computed(() => catalog.programDetail ? formatProgramIntake(catalog.programDetail, undefined, currentLocale.value) : officialPageFallback(currentLocale.value));
 const gpaLabel = computed(() => {
   const gpa = Number(catalog.programDetail?.requirement?.gpa);

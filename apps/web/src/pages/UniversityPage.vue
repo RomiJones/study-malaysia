@@ -956,6 +956,26 @@ function intakeLabel(program: ProgramListItem | ProgramCatalogDetail) {
 
 function tuitionNoteLabel(program: ProgramCatalogDetail) {
   if (program.code.startsWith("USM-") && (program.level === "master" || program.level === "phd")) {
+    if (program.officialFeeAuditStatus === "calculated-from-official-rate") {
+      const note = String(program.tuitionInfo?.note || "");
+      const match = note.match(
+        /calculated the standard full-time tuition as (USD|MYR) ([\d,]+(?:\.\d+)?) per semester × (\d+) official minimum semesters = (?:USD|MYR) ([\d,]+(?:\.\d+)?).*part-time rate: (?:USD|MYR) ([\d,]+(?:\.\d+)?) per semester/i
+      );
+      if (match) {
+        return t("program.calculatedTotalTuitionNote", {
+          currency: match[1].toUpperCase(),
+          fullTime: match[2],
+          semesters: match[3],
+          total: match[4],
+          partTime: match[5]
+        });
+      }
+      return formatOfficialNote(
+        program.tuitionInfo?.note,
+        officialPageFallback(currentLocale.value),
+        currentLocale.value
+      );
+    }
     if (program.officialFeeAuditStatus === "official-rate-verified") {
       const note = String(program.tuitionInfo?.note || "");
       const match = note.match(
@@ -969,7 +989,12 @@ function tuitionNoteLabel(program: ProgramCatalogDetail) {
           partTime: match[4]
         });
       }
-      return t("program.calculatedTotalTuitionNote");
+      return t("program.officialRateTuitionNote", {
+        session: "",
+        currency: "",
+        fullTime: "",
+        partTime: ""
+      });
     }
     if (program.officialFeeAuditStatus === "not-published") return t("program.feeNotPublishedNote");
     return t("program.officialTotalTuitionNote");

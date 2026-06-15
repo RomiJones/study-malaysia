@@ -113,9 +113,10 @@ export type OfficialSourceStatus =
   | "source-conflict"
   | "missing-source"
   | "hidden-duplicate-superseded";
-export type TuitionCurrency = "MYR" | "CNY" | "USD" | "UNKNOWN";
+export type TuitionCurrency = "MYR" | "CNY" | "USD" | "GBP" | "UNKNOWN";
 export type FeeAuditStatus =
   | "matched-official"
+  | "calculated-from-official-rate"
   | "official-rate-verified"
   | "conflict"
   | "source-conflict"
@@ -611,6 +612,12 @@ export const FEE_AUDIT_STATUS_LABELS: Record<FeeAuditStatus, LocalizedText> = {
     ms: "Kadar rasmi disahkan",
     "zh-CN": "官方费率已核验",
     "zh-TW": "官方費率已核驗"
+  },
+  "calculated-from-official-rate": {
+    en: "Calculated from official rate and duration",
+    ms: "Dikira daripada kadar dan tempoh rasmi",
+    "zh-CN": "按官方费率与学制计算",
+    "zh-TW": "按官方費率與學制計算"
   },
   conflict: {
     en: "Conflict",

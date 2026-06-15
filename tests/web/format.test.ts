@@ -70,6 +70,20 @@ describe("web display format helpers", () => {
     );
     assert.equal(formatFeeAuditStatus("official-rate-verified", "ready", "zh-CN"), "官方费率已核验");
     assert.equal(
+      formatFeeAuditStatus("calculated-from-official-rate", "ready", "zh-CN"),
+      "按官方费率与学制计算"
+    );
+    assert.equal(
+      formatProgramListTuition(program({
+        tuitionAmount: 2800,
+        tuitionCurrency: "USD",
+        tuitionDisplay: "USD 2,800 total tuition",
+        officialFeeAuditStatus: "calculated-from-official-rate",
+        officialFeeSourceUrl: "https://example.edu/fee"
+      }), undefined, "zh-CN"),
+      "USD 2,800"
+    );
+    assert.equal(
       formatProgramTuition(program({
         tuitionDisplay: "USD 1,800 per semester (full-time)",
         officialFeeAuditStatus: "matched-official",

@@ -27,10 +27,11 @@ test("USM master commercial source keeps 305 canonical rows and publishes offici
     online: 5,
     clinical: 22
   });
-  assert.equal(summary.feeMatched, 118);
-  assert.equal(summary.feeRateVerified, 151);
-  assert.equal(summary.feeNotPublished, 36);
-  assert.equal(summary.feeMatched + summary.feeRateVerified + summary.feeNotPublished, 305);
+  assert.equal(summary.feeMatched, 121);
+  assert.equal(summary.feeRateVerified, 0);
+  assert.equal(summary.feeCalculated, 151);
+  assert.equal(summary.feeNotPublished, 33);
+  assert.equal(summary.feeMatched + summary.feeCalculated + summary.feeNotPublished, 305);
   assert.equal(new Set(rows.map((row) => row.slug)).size, 305);
   assert.ok(rows.every((row) => row.name && row.faculty && row.description && row.officialSourceUrl));
   const malformedLocalizedNames = rows.filter((row) => {
@@ -87,10 +88,7 @@ test("USM master duration converts semesters and months to years", () => {
     "Full-time: 1.5-2 years"
   );
   assert.equal(normalizeMasterDuration("6 semesters", "coursework").durationOfficial, "3 years");
-  assert.equal(
-    normalizeMasterDuration("Subject to the published programme structure", "coursework").durationYears,
-    0
-  );
+  assert.equal(normalizeMasterDuration("Full-time: Min 3 semesters / Max 6 semesters", "coursework").durationYears, 1.5);
   assert.deepEqual(
     normalizeMasterDuration("Research areas are listed without a numeric duration", "research"),
     {
@@ -102,24 +100,25 @@ test("USM master duration converts semesters and months to years", () => {
   );
 });
 
-test("USM master rows show only unique official total tuition", () => {
+test("USM master rows show official totals or totals calculated from official rates and durations", () => {
   const rows = buildUsmMasterRows(source);
-  const research = rows.find((row) => row.officialFeeAuditStatus === "official-rate-verified");
+  const research = rows.find((row) => row.officialFeeAuditStatus === "calculated-from-official-rate");
   const total = rows.find((row) => String(row.tuitionDisplay).includes("total"));
   const unpublished = rows.find((row) => row.officialFeeAuditStatus === "not-published");
   assert.ok(research);
-  assert.equal(research?.officialFeeAuditStatus, "official-rate-verified");
-  assert.match(String(research?.tuitionDisplay), /^USD [\d,]+ per semester \(full-time\)$/);
-  assert.equal(research?.tuitionAmount, null);
+  assert.equal(research?.officialFeeAuditStatus, "calculated-from-official-rate");
+  assert.match(String(research?.tuitionDisplay), /^USD [\d,]+ total tuition$/);
+  assert.ok(Number(research?.tuitionAmount) > 0);
   assert.equal(research?.tuitionCurrency, "USD");
-  assert.match(String(research?.officialTuitionNote), /full-time USD [\d,]+ per semester/i);
-  assert.match(String(research?.officialTuitionNote), /part-time USD [\d,]+ per semester/i);
+  assert.match(String(research?.officialTuitionNote), /per semester × \d+ official minimum semesters/i);
+  assert.match(String(research?.officialTuitionNote), /part-time rate: USD [\d,]+ per semester/i);
   assert.ok(total);
   assert.match(String(total?.tuitionDisplay), /^(USD|MYR) [\d,]+ total tuition$/);
   assert.ok(unpublished);
   assert.equal(unpublished?.tuitionAmount, null);
   assert.ok(rows.every((row) => !/[\d,]+-[\d,]+.*tuition/i.test(String(row.tuitionDisplay))));
   assert.ok(rows.every((row) => !/estimated total/i.test(String(row.tuitionDisplay))));
+  assert.ok(rows.every((row) => Number(row.durationYears) > 0));
   assert.equal(
     source.records
       .filter((row) => row.fee.international?.fullTimePerSemester)

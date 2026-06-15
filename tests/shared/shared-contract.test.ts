@@ -35,6 +35,7 @@ describe("shared catalog contracts", () => {
     assert.equal(OFFICIAL_SOURCE_STATUS_LABELS["missing-source"]["zh-CN"], "缺少官方来源");
     assert.equal(FEE_AUDIT_STATUS_LABELS["matched-official"]["zh-CN"], "与官方来源一致");
     assert.equal(FEE_AUDIT_STATUS_LABELS["official-rate-verified"]["zh-CN"], "官方费率已核验");
+    assert.equal(FEE_AUDIT_STATUS_LABELS["calculated-from-official-rate"]["zh-CN"], "按官方费率与学制计算");
   });
 
   test("exposes the language switcher contract for every supported locale", () => {

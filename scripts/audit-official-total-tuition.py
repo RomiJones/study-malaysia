@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Block inferred tuition totals and ranges from StudyMY publication data."""
+"""Audit official totals and totals calculated from official rates and durations."""
 
 from __future__ import annotations
 
@@ -103,6 +103,16 @@ def audit_api(data: dict, errors: list[str], counts: Counter) -> None:
             if not positive_scalar(amount) or "total tuition" not in display.lower():
                 errors.append(f"{label}: matched fee is not a single official total.")
             counts["api-official-total"] += 1
+        elif status == "calculated-from-official-rate":
+            tuition_info = row.get("tuitionInfo") or {}
+            if not positive_scalar(amount) or tuition_info.get("amount") != amount:
+                errors.append(f"{label}: calculated tuition must populate one scalar total.")
+            if "total tuition" not in display.lower():
+                errors.append(f"{label}: calculated tuition display is not a total.")
+            note = str(tuition_info.get("note") or "")
+            if "per semester" not in note.lower() or "official minimum semesters" not in note.lower():
+                errors.append(f"{label}: calculated tuition is missing its official rate and duration formula.")
+            counts["api-calculated-total"] += 1
         elif status == "official-rate-verified":
             tuition_info = row.get("tuitionInfo") or {}
             if amount is not None or tuition_info.get("amount") is not None:
@@ -151,7 +161,7 @@ def main() -> None:
             errors.append(f"{source}: unsupported tuition audit shape.")
 
     result = {
-        "policy": "official-standard-total-only",
+        "policy": "official-or-official-input-calculated-standard-total",
         "audited": audited,
         "counts": dict(sorted(counts.items())),
         "errors": errors,

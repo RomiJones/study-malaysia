@@ -28,6 +28,7 @@ const localizedFormatText = {
     years: "years",
     detailPageNote: "See detail page notes",
     feeMatchedOfficial: "Officially verified",
+    feeCalculatedOfficial: "Calculated from official rate and duration",
     feeRateVerified: "Official rate verified",
     feeNotPublished: "Not published officially",
     feeSourceReview: "Fee source needs review",
@@ -48,6 +49,7 @@ const localizedFormatText = {
     years: "tahun",
     detailPageNote: "Lihat nota halaman butiran",
     feeMatchedOfficial: "Disahkan rasmi",
+    feeCalculatedOfficial: "Dikira daripada kadar dan tempoh rasmi",
     feeRateVerified: "Kadar rasmi disahkan",
     feeNotPublished: "Belum diterbitkan secara rasmi",
     feeSourceReview: "Sumber yuran perlu disemak",
@@ -68,6 +70,7 @@ const localizedFormatText = {
     years: "年",
     detailPageNote: "详情页查看说明",
     feeMatchedOfficial: "官方已核验",
+    feeCalculatedOfficial: "按官方费率与学制计算",
     feeRateVerified: "官方费率已核验",
     feeNotPublished: "官方未公布",
     feeSourceReview: "费用来源需复核",
@@ -88,6 +91,7 @@ const localizedFormatText = {
     years: "年",
     detailPageNote: "詳情頁查看說明",
     feeMatchedOfficial: "官方已核驗",
+    feeCalculatedOfficial: "按官方費率與學制計算",
     feeRateVerified: "官方費率已核驗",
     feeNotPublished: "官方未公布",
     feeSourceReview: "費用來源需複核",
@@ -904,6 +908,7 @@ function currencyPrefix(currency?: TuitionCurrency | null): string {
   if (currency === "MYR") return "RM";
   if (currency === "CNY") return "CNY";
   if (currency === "USD") return "USD";
+  if (currency === "GBP") return "GBP";
   return "";
 }
 
@@ -1060,6 +1065,7 @@ export function formatFeeAuditStatus(
 ): string {
   if (publicDisplayStatus === "not-available-for-international") return formatText("detailPageNote", locale);
   if (status === "matched-official") return formatText("feeMatchedOfficial", locale);
+  if (status === "calculated-from-official-rate") return formatText("feeCalculatedOfficial", locale);
   if (status === "official-rate-verified") return formatText("feeRateVerified", locale);
   if (status === "not-published") return formatText("feeNotPublished", locale);
   if (status === "conflict" || status === "source-conflict") return formatText("feeSourceReview", locale);
