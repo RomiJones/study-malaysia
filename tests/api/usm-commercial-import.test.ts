@@ -32,6 +32,7 @@ describe("USM undergraduate commercial publication", () => {
       ready: 63,
       officialVerified: 63,
       feeMatched: 63,
+      yearDuration: 63,
       localized: 63
     });
     assert.equal(source.programmes.filter((item) => item.intakeMonths.includes("March")).length, 9);
@@ -43,6 +44,8 @@ describe("USM undergraduate commercial publication", () => {
   test("requires complete evidence, fees, names, careers and four-language display fields", () => {
     const rows = buildUsmCommercialRows(source);
 
+    assert.ok(rows.every((row) => /^\d+(?:\.\d+)? years$/.test(String(row.durationOfficial))));
+    assert.ok(rows.every((row) => !/semesters?/i.test(String(row.durationOfficial))));
     assert.ok(source.programmes.every((item) =>
       item.nameEnOfficial
       && item.nameMs

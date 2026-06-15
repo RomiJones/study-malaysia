@@ -338,11 +338,12 @@ function requirementNote(programme: CommercialProgramme): LocalizedText {
 function description(programme: CommercialProgramme): LocalizedText {
   const name = localizedName(programme);
   const faculty = localizedFaculty(programme.schoolEn);
+  const durationYears = `${programme.durationYears} years`;
   return t(
-    `${programme.nameEnOfficial} is a full-time USM undergraduate programme offered by ${programme.schoolEn} for the ${programme.durationOfficial} official duration.`,
-    `${name.ms} ialah program prasiswazah sepenuh masa USM yang ditawarkan oleh ${faculty.ms} dengan tempoh rasmi ${programme.durationOfficial}.`,
-    `${name["zh-CN"]}是由 USM ${faculty["zh-CN"]}开设的全日制本科项目，官方学制为 ${programme.durationSemesters} 个学期（${programme.durationYears} 年）。`,
-    `${name["zh-TW"]}是由 USM ${faculty["zh-TW"]}開設的全日制本科項目，官方學制為 ${programme.durationSemesters} 個學期（${programme.durationYears} 年）。`
+    `${programme.nameEnOfficial} is a full-time USM undergraduate programme offered by ${programme.schoolEn} with an official duration of ${durationYears}.`,
+    `${name.ms} ialah program prasiswazah sepenuh masa USM yang ditawarkan oleh ${faculty.ms} dengan tempoh rasmi ${programme.durationYears} tahun.`,
+    `${name["zh-CN"]}是由 USM ${faculty["zh-CN"]}开设的全日制本科项目，官方学制为 ${programme.durationYears} 年。`,
+    `${name["zh-TW"]}是由 USM ${faculty["zh-TW"]}開設的全日制本科項目，官方學制為 ${programme.durationYears} 年。`
   );
 }
 
@@ -464,7 +465,7 @@ function toProgramRow(programme: CommercialProgramme, verifiedAt: string): DeepP
     studyMode: programme.studyMode,
     campus: programme.campus,
     durationYears: programme.durationYears,
-    durationOfficial: programme.durationOfficial,
+    durationOfficial: `${programme.durationYears} years`,
     annualTuitionCny: 0,
     tuitionAmount: programme.totalTuitionUSD,
     tuitionCurrency: "USD",
@@ -590,6 +591,7 @@ export function summarizeUsmCommercialRows(rows: DeepPartial<ProgramEntity>[]) {
     ready: rows.filter((row) => row.publicDisplayStatus === "ready").length,
     officialVerified: rows.filter((row) => row.officialSourceStatus === "official-verified").length,
     feeMatched: rows.filter((row) => row.officialFeeAuditStatus === "matched-official").length,
+    yearDuration: rows.filter((row) => /^\d+(?:\.\d+)? years$/.test(String(row.durationOfficial))).length,
     localized: rows.filter((row) => {
       const name = row.name as LocalizedText;
       return Boolean(name?.en && name?.ms && name?.["zh-CN"] && name?.["zh-TW"]);
@@ -605,10 +607,14 @@ async function verifyRows(manager: EntityManager | DataSource, universityId: num
   const canonical = commercialRows.filter((row) => row.slug.startsWith(USM_COMMERCIAL_SLUG_PREFIX));
   const publicBachelor = commercialRows.filter((row) => row.isPublished && row.publicDisplayStatus === "ready");
   const leakedLegacy = publicBachelor.filter((row) => !row.slug.startsWith(USM_COMMERCIAL_SLUG_PREFIX));
+  const semesterDurationRows = canonical.filter((row) => /semesters?/i.test(row.durationOfficial));
+  const yearDurationRows = canonical.filter((row) => /^\d+(?:\.\d+)? years$/.test(row.durationOfficial));
   if (
     canonical.length !== 63 ||
     publicBachelor.length !== 63 ||
     leakedLegacy.length ||
+    semesterDurationRows.length ||
+    yearDurationRows.length !== 63 ||
     canonical.some(
       (row) =>
         !row.isPublished ||
@@ -618,13 +624,15 @@ async function verifyRows(manager: EntityManager | DataSource, universityId: num
     )
   ) {
     throw new Error(
-      `USM commercial verification failed: canonical=${canonical.length}, publicBachelor=${publicBachelor.length}, leakedLegacy=${leakedLegacy.length}.`
+      `USM commercial verification failed: canonical=${canonical.length}, publicBachelor=${publicBachelor.length}, leakedLegacy=${leakedLegacy.length}, yearDuration=${yearDurationRows.length}, semesterDuration=${semesterDurationRows.length}.`
     );
   }
   return {
     canonicalRows: canonical.length,
     publicBachelorRows: publicBachelor.length,
     leakedLegacyRows: leakedLegacy.length,
+    yearDurationRows: yearDurationRows.length,
+    semesterDurationRows: semesterDurationRows.length,
     archivedOrReviewRows: commercialRows.length - publicBachelor.length
   };
 }
