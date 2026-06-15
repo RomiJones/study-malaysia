@@ -19,8 +19,7 @@
     "applicationCodeOnlyOfferings": 5,
     "offshoreApplicationCodesReconciled": 24,
     "statusCounts": {
-      "needs-review": 21,
-      "ready": 72,
+      "ready": 93,
       "not-available-for-international": 2
     },
     "modeCounts": {
@@ -63,8 +62,8 @@
         "review": 0
       },
       "duration": {
-        "covered": 94,
-        "unpublished": 1,
+        "covered": 95,
+        "unpublished": 0,
         "review": 0
       },
       "intake": {
@@ -73,9 +72,9 @@
         "review": 0
       },
       "internationalEligibility": {
-        "covered": 75,
+        "covered": 95,
         "unpublished": 0,
-        "review": 20
+        "review": 0
       },
       "academicRequirement": {
         "covered": 95,
@@ -103,162 +102,14 @@
         "review": 0
       }
     },
-    "exceptionCount": 21,
-    "publicationDecision": "publish-ready-subset",
+    "exceptionCount": 0,
+    "publicationDecision": "publish-international-eligible-catalogue",
     "blockingReasons": [
-      "Needs-review and Malaysian-only records must remain excluded from the public international catalogue.",
+      "Malaysian-only records must remain excluded from the public international catalogue.",
       "Four-language commercial localization must pass import and API/UI verification before release."
     ]
   },
-  "exceptions": [
-    {
-      "code": "USM-PHD-ARTICLE-340-F6B2DBBE",
-      "nameEnOfficial": "DOCTOR OF BUSINESS ADMINISTRATION (DBA)",
-      "reasons": [
-        "official numeric duration is unpublished"
-      ]
-    },
-    {
-      "code": "USM-PHD-ARTICLE-1475-DFD9E09D",
-      "nameEnOfficial": "DOCTOR OF PHILOSOPHY (OFFSHORE EUROPEAN GLOBAL SCHOOL UNIVERSITY, ISTANBUL)",
-      "reasons": [
-        "international eligibility is not explicitly confirmed"
-      ]
-    },
-    {
-      "code": "USM-PHD-ARTICLE-1476-EDCE896B",
-      "nameEnOfficial": "DOCTOR OF PHILOSOPHY (OFFSHORE EUROPEAN GLOBAL SCHOOL UNIVERSITY, ISTANBUL)",
-      "reasons": [
-        "international eligibility is not explicitly confirmed"
-      ]
-    },
-    {
-      "code": "USM-PHD-ARTICLE-1474-13A979E2",
-      "nameEnOfficial": "DOCTOR OF PHILOSOPHY (OFFSHORE EUROPEAN GLOBAL SCHOOL UNIVERSITY, ISTANBUL)",
-      "reasons": [
-        "international eligibility is not explicitly confirmed"
-      ]
-    },
-    {
-      "code": "USM-PHD-ARTICLE-1482-71AFD600",
-      "nameEnOfficial": "DOCTOR OF PHILOSOPHY (OFFSHORE EUROPEAN GLOBAL SCHOOL UNIVERSITY, ISTANBUL)",
-      "reasons": [
-        "international eligibility is not explicitly confirmed"
-      ]
-    },
-    {
-      "code": "USM-PHD-ARTICLE-1501-AA166411",
-      "nameEnOfficial": "DOCTOR OF PHILOSOPHY (OFFSHORE EUROPEAN GLOBAL SCHOOL UNIVERSITY, ISTANBUL)",
-      "reasons": [
-        "international eligibility is not explicitly confirmed"
-      ]
-    },
-    {
-      "code": "USM-PHD-ARTICLE-1506-E0F6CDF0",
-      "nameEnOfficial": "DOCTOR OF PHILOSOPHY (OFFSHORE EUROPEAN GLOBAL SCHOOL UNIVERSITY, ISTANBUL)",
-      "reasons": [
-        "international eligibility is not explicitly confirmed"
-      ]
-    },
-    {
-      "code": "USM-PHD-ARTICLE-1508-17AAC296",
-      "nameEnOfficial": "DOCTOR OF PHILOSOPHY (OFFSHORE EUROPEAN GLOBAL SCHOOL UNIVERSITY, ISTANBUL)",
-      "reasons": [
-        "international eligibility is not explicitly confirmed"
-      ]
-    },
-    {
-      "code": "USM-PHD-ARTICLE-1503-7E2AA05C",
-      "nameEnOfficial": "DOCTOR OF PHILOSOPHY (OFFSHORE EUROPEAN GLOBAL SCHOOL UNIVERSITY, ISTANBUL)",
-      "reasons": [
-        "international eligibility is not explicitly confirmed"
-      ]
-    },
-    {
-      "code": "USM-PHD-ARTICLE-1515-A74EBF7B",
-      "nameEnOfficial": "DOCTOR OF PHILOSOPHY (OFFSHORE EUROPEAN GLOBAL SCHOOL UNIVERSITY, ISTANBUL)",
-      "reasons": [
-        "international eligibility is not explicitly confirmed"
-      ]
-    },
-    {
-      "code": "USM-PHD-ARTICLE-1519-B908433A",
-      "nameEnOfficial": "DOCTOR OF PHILOSOPHY (OFFSHORE EUROPEAN GLOBAL SCHOOL UNIVERSITY, ISTANBUL)",
-      "reasons": [
-        "international eligibility is not explicitly confirmed"
-      ]
-    },
-    {
-      "code": "USM-PHD-ARTICLE-1492-B74C2ACF",
-      "nameEnOfficial": "DOCTOR OF PHILOSOPHY (OFFSHORE EUROPEAN GLOBAL SCHOOL UNIVERSITY, ISTANBUL)",
-      "reasons": [
-        "international eligibility is not explicitly confirmed"
-      ]
-    },
-    {
-      "code": "USM-PHD-ARTICLE-1491-B0781791",
-      "nameEnOfficial": "DOCTOR OF PHILOSOPHY (OFFSHORE EUROPEAN GLOBAL SCHOOL UNIVERSITY, ISTANBUL)",
-      "reasons": [
-        "international eligibility is not explicitly confirmed"
-      ]
-    },
-    {
-      "code": "USM-PHD-ARTICLE-1490-21A1FFAC",
-      "nameEnOfficial": "DOCTOR OF PHILOSOPHY (OFFSHORE EUROPEAN GLOBAL SCHOOL UNIVERSITY, ISTANBUL)",
-      "reasons": [
-        "international eligibility is not explicitly confirmed"
-      ]
-    },
-    {
-      "code": "USM-PHD-ARTICLE-1487-68D66E5A",
-      "nameEnOfficial": "DOCTOR OF PHILOSOPHY (OFFSHORE EUROPEAN GLOBAL SCHOOL UNIVERSITY, ISTANBUL)",
-      "reasons": [
-        "international eligibility is not explicitly confirmed"
-      ]
-    },
-    {
-      "code": "USM-PHD-ARTICLE-1486-350D1D27",
-      "nameEnOfficial": "DOCTOR OF PHILOSOPHY (OFFSHORE EUROPEAN GLOBAL SCHOOL UNIVERSITY, ISTANBUL)",
-      "reasons": [
-        "international eligibility is not explicitly confirmed"
-      ]
-    },
-    {
-      "code": "USM-PHD-ARTICLE-1493-9DF5CFA5",
-      "nameEnOfficial": "DOCTOR OF PHILOSOPHY (OFFSHORE MINJIANG UNIVERSITY)",
-      "reasons": [
-        "international eligibility is not explicitly confirmed"
-      ]
-    },
-    {
-      "code": "USM-PHD-ARTICLE-1516-5FCB065D",
-      "nameEnOfficial": "DOCTOR OF PHILOSOPHY (OFFSHORE NORTHEASTERN UNIVERSITY, QINHUANGDAO)",
-      "reasons": [
-        "international eligibility is not explicitly confirmed"
-      ]
-    },
-    {
-      "code": "USM-PHD-ARTICLE-1494-9A5B9F7D",
-      "nameEnOfficial": "DOCTOR OF PHILOSOPHY (OFFSHORE UNIVERSITAS INDONESIA)",
-      "reasons": [
-        "international eligibility is not explicitly confirmed"
-      ]
-    },
-    {
-      "code": "USM-PHD-ARTICLE-1517-D53FD044",
-      "nameEnOfficial": "DOCTOR OF PHILOSOPHY (OFFSHORE YANGTZE NORMAL UNIVERSITY)",
-      "reasons": [
-        "international eligibility is not explicitly confirmed"
-      ]
-    },
-    {
-      "code": "USM-PHD-ARTICLE-1479-0BF3C6B6",
-      "nameEnOfficial": "DOCTOR OF PHILOSOPHY - OFFSHORE EUROPEAN GLOBAL SCHOOL ISTANBUL GELISIM UNIVERSITY",
-      "reasons": [
-        "international eligibility is not explicitly confirmed"
-      ]
-    }
-  ],
+  "exceptions": [],
   "sourceHashes": {
     "usm-pg-current-catalogue": "03be7bc3fadfbb2313e6ddefbdf02457481832041724176bccdd60ad878c9372",
     "usm-pg-directory-current": "ccb852d13ccb650d2d80006c1ff18bf9129002fca83175db9158436d66f6be5f",
@@ -271,5 +122,5 @@
     "usm-coursework-mixed-candidature": "10a840d099c43a52c4dfaf7ab9b1173549eded928a2a55b8d9e987554afd77a0"
   },
   "databaseWrite": "not-performed",
-  "publicationDecision": "publish-ready-subset"
+  "publicationDecision": "publish-international-eligible-catalogue"
 }

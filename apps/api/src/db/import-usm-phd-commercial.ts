@@ -326,7 +326,9 @@ export function validateUsmPhdSource(source: PhdCommercialSource) {
   if (source.universityCode !== "USM" || source.level !== "phd") errors.push("Source scope must be USM phd.");
   if (source.records.length !== 95 || source.declaredProgrammeCount !== 95) errors.push("Expected 95 doctoral records.");
   if (source.audit.canonicalProgrammes !== 95) errors.push("Canonical doctoral count must be 95.");
-  if (source.audit.publicationDecision !== "publish-ready-subset") errors.push("Publication decision is not approved.");
+  if (source.audit.publicationDecision !== "publish-international-eligible-catalogue") {
+    errors.push("Publication decision is not approved.");
+  }
   if (new Set(source.records.map((record) => record.code)).size !== 95) errors.push("Candidate codes must be unique.");
   if (new Set(source.records.map(stableSlug)).size !== 95) errors.push("Generated slugs must be unique.");
   return errors;
@@ -359,12 +361,12 @@ async function verifyRows(manager: EntityManager | DataSource, universityId: num
   const master = await repository.count({ where: { universityId, level: "master", isPublished: true, publicDisplayStatus: "ready" } });
   if (
     commercial.length !== 95 ||
-    ready.length !== 72 ||
-    needsReview.length !== 21 ||
+    ready.length !== 93 ||
+    needsReview.length !== 0 ||
     unavailable.length !== 2 ||
     leakedLegacy.length !== 0 ||
     bachelor !== 63 ||
-    master !== 302
+    master !== 304
   ) {
     throw new Error(
       `USM doctoral verification failed: canonical=${commercial.length}, ready=${ready.length}, review=${needsReview.length}, unavailable=${unavailable.length}, bachelor=${bachelor}, master=${master}.`
@@ -433,12 +435,12 @@ async function main() {
         university: "USM",
         level: "phd",
         canonicalRows: 95,
-        publishReadyRows: 72,
-        preserveReviewRows: 21,
+        publishReadyRows: 93,
+        preserveReviewRows: 0,
         preserveInternationalUnavailableRows: 2,
         archiveLegacyPublicDoctoralRows: true,
         totalCanonicalRowsAfterImport: 463,
-        totalPublicRowsAfterImport: 437
+        totalPublicRowsAfterImport: 460
       }
     }, null, 2));
     return;
@@ -496,15 +498,15 @@ async function main() {
         }
         await repository.save(repository.create({ ...row, id: existing?.id, universityId: university.id }));
       }
-      university.programCount = 437;
+      university.programCount = 460;
       university.officialProfile = {
         ...(university.officialProfile || {}),
         catalogStatusSummary: {
-          all: { total: 463, ready: 437, needsReview: 23, notAvailableForInternational: 3 },
+          all: { total: 463, ready: 460, needsReview: 0, notAvailableForInternational: 3 },
           byLevel: {
             bachelor: { total: 63, ready: 63, needsReview: 0, notAvailableForInternational: 0 },
-            master: { total: 305, ready: 302, needsReview: 2, notAvailableForInternational: 1 },
-            phd: { total: 95, ready: 72, needsReview: 21, notAvailableForInternational: 2 }
+            master: { total: 305, ready: 304, needsReview: 0, notAvailableForInternational: 1 },
+            phd: { total: 95, ready: 93, needsReview: 0, notAvailableForInternational: 2 }
           }
         }
       };

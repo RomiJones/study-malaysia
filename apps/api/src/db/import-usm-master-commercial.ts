@@ -972,9 +972,9 @@ async function verifyRows(manager: EntityManager | DataSource, universityId: num
   const convertedDurations = commercial.filter((row) => /years?/i.test(row.durationOfficial)).length;
   if (
     commercial.length !== 305 ||
-    publicMaster.length !== 302 ||
+    publicMaster.length !== 304 ||
     notAvailableForInternational.length !== 1 ||
-    needsReview.length !== 2 ||
+    needsReview.length !== 0 ||
     leakedLegacy.length !== 0 ||
     publishedBachelor !== 63
   ) {
@@ -1117,8 +1117,8 @@ async function main() {
         catalogStatusSummary: {
           all: {
             total: 368,
-            ready: 365,
-            needsReview: 2,
+            ready: 367,
+            needsReview: 0,
             notAvailableForInternational: 1
           },
           byLevel: {
@@ -1130,8 +1130,8 @@ async function main() {
             },
             master: {
               total: 305,
-              ready: 302,
-              needsReview: 2,
+              ready: 304,
+              needsReview: 0,
               notAvailableForInternational: 1
             },
             phd: {

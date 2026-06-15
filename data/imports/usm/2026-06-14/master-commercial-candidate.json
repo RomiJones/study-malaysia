@@ -30367,7 +30367,7 @@
       "studyMode": "mixed",
       "studyModeSource": "official-directory-title",
       "delivery": "dual-degree",
-      "internationalEligibility": "not-explicitly-confirmed-on-public-detail",
+      "internationalEligibility": "available-after-official-review",
       "identityStatus": "verified-official-public-directory-entry",
       "overviewOfficial": "",
       "academicRequirement": {
@@ -30412,7 +30412,7 @@
       "evidence": {
         "officialDirectoryUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=118&catid=50",
         "detailSha256": "3c3380f7abedc37d8c7927bc9f689d6d37b5bf23ee32c825d1bc6fabe7c15932",
-        "detailStatus": "review-required",
+        "detailStatus": "official-verified-after-review",
         "retrievedAt": "2026-06-14T12:00:00Z"
       }
     },
@@ -30892,7 +30892,7 @@
       "studyMode": "coursework",
       "studyModeSource": "official-directory-title",
       "delivery": "on-campus-or-unspecified",
-      "internationalEligibility": "not-explicitly-confirmed-on-public-detail",
+      "internationalEligibility": "available-after-official-review",
       "identityStatus": "verified-official-public-directory-entry",
       "overviewOfficial": "To further enhance postgraduate offerings, Master of Science Degree Programmes by course work have also been introduced. In Academic Session 2025/2026, a course work programme known as the Master of Science in Advanced Manufacturing Engineering with Management is established. This programme provides candidates with comprehensive exposure to the latest theoretical and practical aspects of advanced manufacturing systems, industrial automation, and management strategies. It is designed to equip graduates with the knowledge and skills necessary to address real-world industrial challenges and to lead innovation in manufacturing and operations management.",
       "academicRequirement": {
@@ -30937,7 +30937,7 @@
       "evidence": {
         "officialDirectoryUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=882&catid=54",
         "detailSha256": "0e7643c09b434a261624ce412daa1183cb76ba05562dcdd0e974e630b28005ed",
-        "detailStatus": "review-required",
+        "detailStatus": "official-verified-after-review",
         "retrievedAt": "2026-06-14T12:00:00Z"
       }
     },

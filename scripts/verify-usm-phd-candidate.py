@@ -103,16 +103,19 @@ def main() -> None:
 
     if data.get("databaseWrite") != "not-performed":
         errors.append("Candidate collection must not write the database.")
-    if audit.get("publicationDecision") != "publish-ready-subset":
-        errors.append("Publication decision must allow only the audited ready subset.")
+    if audit.get("publicationDecision") != "publish-international-eligible-catalogue":
+        errors.append("Publication decision must allow the audited international-eligible catalogue.")
     expected_statuses = {
-        "ready": 72,
-        "needs-review": 21,
+        "ready": 93,
+        "needs-review": 0,
         "not-available-for-international": 2,
     }
-    if audit.get("statusCounts") != expected_statuses:
+    actual_statuses = {
+        key: audit.get("statusCounts", {}).get(key, 0) for key in expected_statuses
+    }
+    if actual_statuses != expected_statuses:
         errors.append(
-            f"Expected doctoral status partition {expected_statuses}, got {audit.get('statusCounts')}."
+            f"Expected doctoral status partition {expected_statuses}, got {actual_statuses}."
         )
     needs_review = audit.get("statusCounts", {}).get("needs-review", 0)
     if needs_review:

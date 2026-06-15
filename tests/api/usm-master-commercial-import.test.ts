@@ -12,14 +12,14 @@ import {
 
 const source = JSON.parse(readFileSync(DEFAULT_USM_MASTER_SOURCE_PATH, "utf8")) as MasterCommercialSource;
 
-test("USM master commercial source keeps 305 canonical rows and publishes only confirmed international programmes", () => {
+test("USM master commercial source keeps 305 canonical rows and publishes officially reviewed international programmes", () => {
   assert.deepEqual(validateUsmMasterSource(source), []);
   const rows = buildUsmMasterRows(source);
   const summary = summarizeUsmMasterRows(rows);
   assert.equal(rows.length, 305);
-  assert.equal(summary.ready, 302);
+  assert.equal(summary.ready, 304);
   assert.equal(summary.notAvailableForInternational, 1);
-  assert.equal(summary.needsReview, 2);
+  assert.equal(summary.needsReview, 0);
   assert.deepEqual(summary.modes, {
     research: 170,
     mixed: 51,
@@ -63,9 +63,7 @@ test("USM master commercial source keeps 305 canonical rows and publishes only c
   assert.equal(localOnly?.publicDisplayStatus, "not-available-for-international");
   assert.equal(localOnly?.isPublished, false);
   assert.equal(localOnly?.officialSourceStatus, "official-page-verified-international-not-available");
-  const eligibilityReview = rows.filter((row) => row.publicDisplayStatus === "needs-review");
-  assert.equal(eligibilityReview.length, 2);
-  assert.ok(eligibilityReview.every((row) => row.isPublished === false));
+  assert.equal(rows.filter((row) => row.publicDisplayStatus === "needs-review").length, 0);
 });
 
 test("USM master duration converts semesters and months to years", () => {

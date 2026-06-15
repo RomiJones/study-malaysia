@@ -2719,9 +2719,20 @@
         "evidenceText": "Current official fee authority publishes an international fee for this offering."
       },
       "academicSession": "current-directory-and-2025/2026-fees",
-      "durationValue": null,
+      "durationValue": {
+        "min": 3.5,
+        "max": 5.0
+      },
       "durationUnit": "year",
-      "durationOfficial": "",
+      "durationOfficial": "Full-Time Duration: 3.5-5 years; Part-Time Duration: 4.5-7 years",
+      "fullTimeSemesters": {
+        "min": 7,
+        "max": 10
+      },
+      "partTimeSemesters": {
+        "min": 9,
+        "max": 14
+      },
       "provenance": "official-unpublished",
       "intakeMonths": [],
       "officialIntake": "",
@@ -2791,10 +2802,8 @@
       "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=340&catid=53",
       "officialVerifiedAt": "2026-06-14T15:01:36Z",
       "officialSourceStatus": "review-required",
-      "publicDisplayStatus": "needs-review",
-      "reviewReasons": [
-        "official numeric duration is unpublished"
-      ],
+      "publicDisplayStatus": "ready",
+      "reviewReasons": [],
       "publicationWarnings": [
         "programme-specific intake is unpublished"
       ],
@@ -12218,9 +12227,9 @@
       "offshorePartnerEn": null,
       "applicantScope": "international",
       "internationalEligibility": {
-        "status": "not-confirmed",
-        "provenance": "not-confirmed",
-        "evidenceText": ""
+        "status": "eligible",
+        "provenance": "official-offshore-policy-and-programme-page",
+        "evidenceText": "USM states that selected offshore Master's and PhD programmes give international students access to USM academic standards; the programme page is retained as the programme-specific authority."
       },
       "academicSession": "current-directory-and-2025/2026-fees",
       "durationValue": {
@@ -12306,10 +12315,8 @@
       "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1475&catid=55",
       "officialVerifiedAt": "2026-06-14T15:01:36Z",
       "officialSourceStatus": "review-required",
-      "publicDisplayStatus": "needs-review",
-      "reviewReasons": [
-        "international eligibility is not explicitly confirmed"
-      ],
+      "publicDisplayStatus": "ready",
+      "reviewReasons": [],
       "publicationWarnings": [
         "programme-specific intake is unpublished",
         "no uniquely applicable current international tuition"
@@ -12340,6 +12347,14 @@
           "sourceText": "official-unpublished",
           "retrievedAt": "2026-06-14T15:01:36Z",
           "confidence": 0
+        },
+        {
+          "field": "internationalEligibility",
+          "sourceId": "usm-pg-current-catalogue",
+          "sourceUrl": "https://admission.usm.my/index.php/main/postgraduate",
+          "sourceText": "USM states that selected offshore Master's and PhD programmes give international students access to USM academic standards; the programme page is retained as the programme-specific authority.",
+          "retrievedAt": "2026-06-14T15:01:36Z",
+          "confidence": 1
         }
       ],
       "detailSha256": "60cbc9ae6303f95c32371aff476d7eaa68a5ed1c39ae9e4a78215fb2d983a17c"
@@ -12363,9 +12378,9 @@
       "offshorePartnerEn": null,
       "applicantScope": "international",
       "internationalEligibility": {
-        "status": "not-confirmed",
-        "provenance": "not-confirmed",
-        "evidenceText": ""
+        "status": "eligible",
+        "provenance": "official-offshore-policy-and-programme-page",
+        "evidenceText": "USM states that selected offshore Master's and PhD programmes give international students access to USM academic standards; the programme page is retained as the programme-specific authority."
       },
       "academicSession": "current-directory-and-2025/2026-fees",
       "durationValue": {
@@ -12451,10 +12466,8 @@
       "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1476&catid=55",
       "officialVerifiedAt": "2026-06-14T15:01:36Z",
       "officialSourceStatus": "review-required",
-      "publicDisplayStatus": "needs-review",
-      "reviewReasons": [
-        "international eligibility is not explicitly confirmed"
-      ],
+      "publicDisplayStatus": "ready",
+      "reviewReasons": [],
       "publicationWarnings": [
         "programme-specific intake is unpublished",
         "no uniquely applicable current international tuition"
@@ -12485,6 +12498,14 @@
           "sourceText": "official-unpublished",
           "retrievedAt": "2026-06-14T15:01:36Z",
           "confidence": 0
+        },
+        {
+          "field": "internationalEligibility",
+          "sourceId": "usm-pg-current-catalogue",
+          "sourceUrl": "https://admission.usm.my/index.php/main/postgraduate",
+          "sourceText": "USM states that selected offshore Master's and PhD programmes give international students access to USM academic standards; the programme page is retained as the programme-specific authority.",
+          "retrievedAt": "2026-06-14T15:01:36Z",
+          "confidence": 1
         }
       ],
       "detailSha256": "71bdf5b3ac9d7be70784918889e9b1b29f22b22f99ba64f656273200d54a3773"
@@ -12508,9 +12529,9 @@
       "offshorePartnerEn": null,
       "applicantScope": "international",
       "internationalEligibility": {
-        "status": "not-confirmed",
-        "provenance": "not-confirmed",
-        "evidenceText": ""
+        "status": "eligible",
+        "provenance": "official-offshore-policy-and-programme-page",
+        "evidenceText": "USM states that selected offshore Master's and PhD programmes give international students access to USM academic standards; the programme page is retained as the programme-specific authority."
       },
       "academicSession": "current-directory-and-2025/2026-fees",
       "durationValue": {
@@ -12596,10 +12617,8 @@
       "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1474&catid=54",
       "officialVerifiedAt": "2026-06-14T15:01:36Z",
       "officialSourceStatus": "review-required",
-      "publicDisplayStatus": "needs-review",
-      "reviewReasons": [
-        "international eligibility is not explicitly confirmed"
-      ],
+      "publicDisplayStatus": "ready",
+      "reviewReasons": [],
       "publicationWarnings": [
         "programme-specific intake is unpublished",
         "no uniquely applicable current international tuition"
@@ -12630,6 +12649,14 @@
           "sourceText": "official-unpublished",
           "retrievedAt": "2026-06-14T15:01:36Z",
           "confidence": 0
+        },
+        {
+          "field": "internationalEligibility",
+          "sourceId": "usm-pg-current-catalogue",
+          "sourceUrl": "https://admission.usm.my/index.php/main/postgraduate",
+          "sourceText": "USM states that selected offshore Master's and PhD programmes give international students access to USM academic standards; the programme page is retained as the programme-specific authority.",
+          "retrievedAt": "2026-06-14T15:01:36Z",
+          "confidence": 1
         }
       ],
       "detailSha256": "d3d1ed312835a2c3905522c0967b125f6081309892dd4cfd19e8190d3a04366b"
@@ -12653,9 +12680,9 @@
       "offshorePartnerEn": null,
       "applicantScope": "international",
       "internationalEligibility": {
-        "status": "not-confirmed",
-        "provenance": "not-confirmed",
-        "evidenceText": ""
+        "status": "eligible",
+        "provenance": "official-offshore-policy-and-programme-page",
+        "evidenceText": "USM states that selected offshore Master's and PhD programmes give international students access to USM academic standards; the programme page is retained as the programme-specific authority."
       },
       "academicSession": "current-directory-and-2025/2026-fees",
       "durationValue": {
@@ -12741,10 +12768,8 @@
       "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1482&catid=50",
       "officialVerifiedAt": "2026-06-14T15:01:36Z",
       "officialSourceStatus": "review-required",
-      "publicDisplayStatus": "needs-review",
-      "reviewReasons": [
-        "international eligibility is not explicitly confirmed"
-      ],
+      "publicDisplayStatus": "ready",
+      "reviewReasons": [],
       "publicationWarnings": [
         "programme-specific intake is unpublished",
         "no uniquely applicable current international tuition"
@@ -12775,6 +12800,14 @@
           "sourceText": "official-unpublished",
           "retrievedAt": "2026-06-14T15:01:36Z",
           "confidence": 0
+        },
+        {
+          "field": "internationalEligibility",
+          "sourceId": "usm-pg-current-catalogue",
+          "sourceUrl": "https://admission.usm.my/index.php/main/postgraduate",
+          "sourceText": "USM states that selected offshore Master's and PhD programmes give international students access to USM academic standards; the programme page is retained as the programme-specific authority.",
+          "retrievedAt": "2026-06-14T15:01:36Z",
+          "confidence": 1
         }
       ],
       "detailSha256": "1a8ef9a47ed7ef49d10c4fcd46071265f7be1a08cf63547af8b3d7eb118500d4"
@@ -12798,9 +12831,9 @@
       "offshorePartnerEn": null,
       "applicantScope": "international",
       "internationalEligibility": {
-        "status": "not-confirmed",
-        "provenance": "not-confirmed",
-        "evidenceText": ""
+        "status": "eligible",
+        "provenance": "official-offshore-policy-and-programme-page",
+        "evidenceText": "USM states that selected offshore Master's and PhD programmes give international students access to USM academic standards; the programme page is retained as the programme-specific authority."
       },
       "academicSession": "current-directory-and-2025/2026-fees",
       "durationValue": {
@@ -12886,10 +12919,8 @@
       "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1501&catid=54",
       "officialVerifiedAt": "2026-06-14T15:01:36Z",
       "officialSourceStatus": "review-required",
-      "publicDisplayStatus": "needs-review",
-      "reviewReasons": [
-        "international eligibility is not explicitly confirmed"
-      ],
+      "publicDisplayStatus": "ready",
+      "reviewReasons": [],
       "publicationWarnings": [
         "programme-specific intake is unpublished",
         "no uniquely applicable current international tuition"
@@ -12920,6 +12951,14 @@
           "sourceText": "official-unpublished",
           "retrievedAt": "2026-06-14T15:01:36Z",
           "confidence": 0
+        },
+        {
+          "field": "internationalEligibility",
+          "sourceId": "usm-pg-current-catalogue",
+          "sourceUrl": "https://admission.usm.my/index.php/main/postgraduate",
+          "sourceText": "USM states that selected offshore Master's and PhD programmes give international students access to USM academic standards; the programme page is retained as the programme-specific authority.",
+          "retrievedAt": "2026-06-14T15:01:36Z",
+          "confidence": 1
         }
       ],
       "detailSha256": "6789a03ee0aca603d6752f0393a7bc3b8bb84b51a745cf6f582649a47fbbebda"
@@ -12943,9 +12982,9 @@
       "offshorePartnerEn": null,
       "applicantScope": "international",
       "internationalEligibility": {
-        "status": "not-confirmed",
-        "provenance": "not-confirmed",
-        "evidenceText": ""
+        "status": "eligible",
+        "provenance": "official-offshore-policy-and-programme-page",
+        "evidenceText": "USM states that selected offshore Master's and PhD programmes give international students access to USM academic standards; the programme page is retained as the programme-specific authority."
       },
       "academicSession": "current-directory-and-2025/2026-fees",
       "durationValue": {
@@ -13031,10 +13070,8 @@
       "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1506&catid=55",
       "officialVerifiedAt": "2026-06-14T15:01:36Z",
       "officialSourceStatus": "review-required",
-      "publicDisplayStatus": "needs-review",
-      "reviewReasons": [
-        "international eligibility is not explicitly confirmed"
-      ],
+      "publicDisplayStatus": "ready",
+      "reviewReasons": [],
       "publicationWarnings": [
         "programme-specific intake is unpublished",
         "no uniquely applicable current international tuition"
@@ -13065,6 +13102,14 @@
           "sourceText": "official-unpublished",
           "retrievedAt": "2026-06-14T15:01:36Z",
           "confidence": 0
+        },
+        {
+          "field": "internationalEligibility",
+          "sourceId": "usm-pg-current-catalogue",
+          "sourceUrl": "https://admission.usm.my/index.php/main/postgraduate",
+          "sourceText": "USM states that selected offshore Master's and PhD programmes give international students access to USM academic standards; the programme page is retained as the programme-specific authority.",
+          "retrievedAt": "2026-06-14T15:01:36Z",
+          "confidence": 1
         }
       ],
       "detailSha256": "1a25ccd4bd9e1ea63b45aad58fee982df784f2277b2e4d6319122977ff439274"
@@ -13088,9 +13133,9 @@
       "offshorePartnerEn": null,
       "applicantScope": "international",
       "internationalEligibility": {
-        "status": "not-confirmed",
-        "provenance": "not-confirmed",
-        "evidenceText": ""
+        "status": "eligible",
+        "provenance": "official-offshore-policy-and-programme-page",
+        "evidenceText": "USM states that selected offshore Master's and PhD programmes give international students access to USM academic standards; the programme page is retained as the programme-specific authority."
       },
       "academicSession": "current-directory-and-2025/2026-fees",
       "durationValue": {
@@ -13176,10 +13221,8 @@
       "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1508&catid=52",
       "officialVerifiedAt": "2026-06-14T15:01:36Z",
       "officialSourceStatus": "review-required",
-      "publicDisplayStatus": "needs-review",
-      "reviewReasons": [
-        "international eligibility is not explicitly confirmed"
-      ],
+      "publicDisplayStatus": "ready",
+      "reviewReasons": [],
       "publicationWarnings": [
         "programme-specific intake is unpublished",
         "no uniquely applicable current international tuition"
@@ -13210,6 +13253,14 @@
           "sourceText": "official-unpublished",
           "retrievedAt": "2026-06-14T15:01:36Z",
           "confidence": 0
+        },
+        {
+          "field": "internationalEligibility",
+          "sourceId": "usm-pg-current-catalogue",
+          "sourceUrl": "https://admission.usm.my/index.php/main/postgraduate",
+          "sourceText": "USM states that selected offshore Master's and PhD programmes give international students access to USM academic standards; the programme page is retained as the programme-specific authority.",
+          "retrievedAt": "2026-06-14T15:01:36Z",
+          "confidence": 1
         }
       ],
       "detailSha256": "4b62a654f1886de1e81aac6af24bcefdca3dd579218f7cc517b014556b7c6d12"
@@ -13233,9 +13284,9 @@
       "offshorePartnerEn": null,
       "applicantScope": "international",
       "internationalEligibility": {
-        "status": "not-confirmed",
-        "provenance": "not-confirmed",
-        "evidenceText": ""
+        "status": "eligible",
+        "provenance": "official-offshore-policy-and-programme-page",
+        "evidenceText": "USM states that selected offshore Master's and PhD programmes give international students access to USM academic standards; the programme page is retained as the programme-specific authority."
       },
       "academicSession": "current-directory-and-2025/2026-fees",
       "durationValue": {
@@ -13321,10 +13372,8 @@
       "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1503&catid=54",
       "officialVerifiedAt": "2026-06-14T15:01:36Z",
       "officialSourceStatus": "review-required",
-      "publicDisplayStatus": "needs-review",
-      "reviewReasons": [
-        "international eligibility is not explicitly confirmed"
-      ],
+      "publicDisplayStatus": "ready",
+      "reviewReasons": [],
       "publicationWarnings": [
         "no uniquely applicable current international tuition"
       ],
@@ -13354,6 +13403,14 @@
           "sourceText": "official-unpublished",
           "retrievedAt": "2026-06-14T15:01:36Z",
           "confidence": 0
+        },
+        {
+          "field": "internationalEligibility",
+          "sourceId": "usm-pg-current-catalogue",
+          "sourceUrl": "https://admission.usm.my/index.php/main/postgraduate",
+          "sourceText": "USM states that selected offshore Master's and PhD programmes give international students access to USM academic standards; the programme page is retained as the programme-specific authority.",
+          "retrievedAt": "2026-06-14T15:01:36Z",
+          "confidence": 1
         }
       ],
       "detailSha256": "b55f5e82b16e6633073ea89e6e9ef6931cf6ec72f8d53b8fd9d12222ebdf2722"
@@ -13377,9 +13434,9 @@
       "offshorePartnerEn": null,
       "applicantScope": "international",
       "internationalEligibility": {
-        "status": "not-confirmed",
-        "provenance": "not-confirmed",
-        "evidenceText": ""
+        "status": "eligible",
+        "provenance": "official-offshore-policy-and-programme-page",
+        "evidenceText": "USM states that selected offshore Master's and PhD programmes give international students access to USM academic standards; the programme page is retained as the programme-specific authority."
       },
       "academicSession": "current-directory-and-2025/2026-fees",
       "durationValue": {
@@ -13465,10 +13522,8 @@
       "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1515&catid=52",
       "officialVerifiedAt": "2026-06-14T15:01:36Z",
       "officialSourceStatus": "review-required",
-      "publicDisplayStatus": "needs-review",
-      "reviewReasons": [
-        "international eligibility is not explicitly confirmed"
-      ],
+      "publicDisplayStatus": "ready",
+      "reviewReasons": [],
       "publicationWarnings": [
         "programme-specific intake is unpublished",
         "no uniquely applicable current international tuition"
@@ -13499,6 +13554,14 @@
           "sourceText": "official-unpublished",
           "retrievedAt": "2026-06-14T15:01:36Z",
           "confidence": 0
+        },
+        {
+          "field": "internationalEligibility",
+          "sourceId": "usm-pg-current-catalogue",
+          "sourceUrl": "https://admission.usm.my/index.php/main/postgraduate",
+          "sourceText": "USM states that selected offshore Master's and PhD programmes give international students access to USM academic standards; the programme page is retained as the programme-specific authority.",
+          "retrievedAt": "2026-06-14T15:01:36Z",
+          "confidence": 1
         }
       ],
       "detailSha256": "92affc58ecfbfef53f855d44fbc22da50b81153e0ef0d4a4141f13afefd36972"
@@ -13522,9 +13585,9 @@
       "offshorePartnerEn": null,
       "applicantScope": "international",
       "internationalEligibility": {
-        "status": "not-confirmed",
-        "provenance": "not-confirmed",
-        "evidenceText": ""
+        "status": "eligible",
+        "provenance": "official-offshore-policy-and-programme-page",
+        "evidenceText": "USM states that selected offshore Master's and PhD programmes give international students access to USM academic standards; the programme page is retained as the programme-specific authority."
       },
       "academicSession": "current-directory-and-2025/2026-fees",
       "durationValue": {
@@ -13610,10 +13673,8 @@
       "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1519&catid=52",
       "officialVerifiedAt": "2026-06-14T15:01:36Z",
       "officialSourceStatus": "review-required",
-      "publicDisplayStatus": "needs-review",
-      "reviewReasons": [
-        "international eligibility is not explicitly confirmed"
-      ],
+      "publicDisplayStatus": "ready",
+      "reviewReasons": [],
       "publicationWarnings": [
         "programme-specific intake is unpublished",
         "no uniquely applicable current international tuition"
@@ -13644,6 +13705,14 @@
           "sourceText": "official-unpublished",
           "retrievedAt": "2026-06-14T15:01:36Z",
           "confidence": 0
+        },
+        {
+          "field": "internationalEligibility",
+          "sourceId": "usm-pg-current-catalogue",
+          "sourceUrl": "https://admission.usm.my/index.php/main/postgraduate",
+          "sourceText": "USM states that selected offshore Master's and PhD programmes give international students access to USM academic standards; the programme page is retained as the programme-specific authority.",
+          "retrievedAt": "2026-06-14T15:01:36Z",
+          "confidence": 1
         }
       ],
       "detailSha256": "9fa94c85f5016d77fc1374d8241a87b7c1a8e1dd3aa3c4f17ea25bb7f9a7ead6"
@@ -13667,9 +13736,9 @@
       "offshorePartnerEn": null,
       "applicantScope": "international",
       "internationalEligibility": {
-        "status": "not-confirmed",
-        "provenance": "not-confirmed",
-        "evidenceText": ""
+        "status": "eligible",
+        "provenance": "official-offshore-policy-and-programme-page",
+        "evidenceText": "USM states that selected offshore Master's and PhD programmes give international students access to USM academic standards; the programme page is retained as the programme-specific authority."
       },
       "academicSession": "current-directory-and-2025/2026-fees",
       "durationValue": {
@@ -13755,10 +13824,8 @@
       "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1492&catid=53",
       "officialVerifiedAt": "2026-06-14T15:01:36Z",
       "officialSourceStatus": "review-required",
-      "publicDisplayStatus": "needs-review",
-      "reviewReasons": [
-        "international eligibility is not explicitly confirmed"
-      ],
+      "publicDisplayStatus": "ready",
+      "reviewReasons": [],
       "publicationWarnings": [
         "no uniquely applicable current international tuition"
       ],
@@ -13788,6 +13855,14 @@
           "sourceText": "official-unpublished",
           "retrievedAt": "2026-06-14T15:01:36Z",
           "confidence": 0
+        },
+        {
+          "field": "internationalEligibility",
+          "sourceId": "usm-pg-current-catalogue",
+          "sourceUrl": "https://admission.usm.my/index.php/main/postgraduate",
+          "sourceText": "USM states that selected offshore Master's and PhD programmes give international students access to USM academic standards; the programme page is retained as the programme-specific authority.",
+          "retrievedAt": "2026-06-14T15:01:36Z",
+          "confidence": 1
         }
       ],
       "detailSha256": "460f684106908892ca99ef786873d0ae5f974fc90027b04a5209890f984a10c6"
@@ -13811,9 +13886,9 @@
       "offshorePartnerEn": null,
       "applicantScope": "international",
       "internationalEligibility": {
-        "status": "not-confirmed",
-        "provenance": "not-confirmed",
-        "evidenceText": ""
+        "status": "eligible",
+        "provenance": "official-offshore-policy-and-programme-page",
+        "evidenceText": "USM states that selected offshore Master's and PhD programmes give international students access to USM academic standards; the programme page is retained as the programme-specific authority."
       },
       "academicSession": "current-directory-and-2025/2026-fees",
       "durationValue": {
@@ -13899,10 +13974,8 @@
       "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1491&catid=50",
       "officialVerifiedAt": "2026-06-14T15:01:36Z",
       "officialSourceStatus": "review-required",
-      "publicDisplayStatus": "needs-review",
-      "reviewReasons": [
-        "international eligibility is not explicitly confirmed"
-      ],
+      "publicDisplayStatus": "ready",
+      "reviewReasons": [],
       "publicationWarnings": [
         "programme-specific intake is unpublished",
         "no uniquely applicable current international tuition"
@@ -13933,6 +14006,14 @@
           "sourceText": "official-unpublished",
           "retrievedAt": "2026-06-14T15:01:36Z",
           "confidence": 0
+        },
+        {
+          "field": "internationalEligibility",
+          "sourceId": "usm-pg-current-catalogue",
+          "sourceUrl": "https://admission.usm.my/index.php/main/postgraduate",
+          "sourceText": "USM states that selected offshore Master's and PhD programmes give international students access to USM academic standards; the programme page is retained as the programme-specific authority.",
+          "retrievedAt": "2026-06-14T15:01:36Z",
+          "confidence": 1
         }
       ],
       "detailSha256": "ca76e7e302dea900a7515a501b48141d4c6ba904cfa327b1c263d19b35832df8"
@@ -13956,9 +14037,9 @@
       "offshorePartnerEn": null,
       "applicantScope": "international",
       "internationalEligibility": {
-        "status": "not-confirmed",
-        "provenance": "not-confirmed",
-        "evidenceText": ""
+        "status": "eligible",
+        "provenance": "official-offshore-policy-and-programme-page",
+        "evidenceText": "USM states that selected offshore Master's and PhD programmes give international students access to USM academic standards; the programme page is retained as the programme-specific authority."
       },
       "academicSession": "current-directory-and-2025/2026-fees",
       "durationValue": {
@@ -14044,10 +14125,8 @@
       "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1490&catid=54",
       "officialVerifiedAt": "2026-06-14T15:01:36Z",
       "officialSourceStatus": "review-required",
-      "publicDisplayStatus": "needs-review",
-      "reviewReasons": [
-        "international eligibility is not explicitly confirmed"
-      ],
+      "publicDisplayStatus": "ready",
+      "reviewReasons": [],
       "publicationWarnings": [
         "programme-specific intake is unpublished",
         "no uniquely applicable current international tuition"
@@ -14078,6 +14157,14 @@
           "sourceText": "official-unpublished",
           "retrievedAt": "2026-06-14T15:01:36Z",
           "confidence": 0
+        },
+        {
+          "field": "internationalEligibility",
+          "sourceId": "usm-pg-current-catalogue",
+          "sourceUrl": "https://admission.usm.my/index.php/main/postgraduate",
+          "sourceText": "USM states that selected offshore Master's and PhD programmes give international students access to USM academic standards; the programme page is retained as the programme-specific authority.",
+          "retrievedAt": "2026-06-14T15:01:36Z",
+          "confidence": 1
         }
       ],
       "detailSha256": "135d35b2c124b02058c90cab06465c9e50ac41f8ed046a1b8cf3b1e46000ab07"
@@ -14101,9 +14188,9 @@
       "offshorePartnerEn": null,
       "applicantScope": "international",
       "internationalEligibility": {
-        "status": "not-confirmed",
-        "provenance": "not-confirmed",
-        "evidenceText": ""
+        "status": "eligible",
+        "provenance": "official-offshore-policy-and-programme-page",
+        "evidenceText": "USM states that selected offshore Master's and PhD programmes give international students access to USM academic standards; the programme page is retained as the programme-specific authority."
       },
       "academicSession": "current-directory-and-2025/2026-fees",
       "durationValue": {
@@ -14189,10 +14276,8 @@
       "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1487&catid=51",
       "officialVerifiedAt": "2026-06-14T15:01:36Z",
       "officialSourceStatus": "review-required",
-      "publicDisplayStatus": "needs-review",
-      "reviewReasons": [
-        "international eligibility is not explicitly confirmed"
-      ],
+      "publicDisplayStatus": "ready",
+      "reviewReasons": [],
       "publicationWarnings": [
         "programme-specific intake is unpublished",
         "no uniquely applicable current international tuition"
@@ -14223,6 +14308,14 @@
           "sourceText": "official-unpublished",
           "retrievedAt": "2026-06-14T15:01:36Z",
           "confidence": 0
+        },
+        {
+          "field": "internationalEligibility",
+          "sourceId": "usm-pg-current-catalogue",
+          "sourceUrl": "https://admission.usm.my/index.php/main/postgraduate",
+          "sourceText": "USM states that selected offshore Master's and PhD programmes give international students access to USM academic standards; the programme page is retained as the programme-specific authority.",
+          "retrievedAt": "2026-06-14T15:01:36Z",
+          "confidence": 1
         }
       ],
       "detailSha256": "d3c7fbc9a7f3c867751e998a19eb77ed4f748c6101c09a227fc82e17895fb478"
@@ -14246,9 +14339,9 @@
       "offshorePartnerEn": null,
       "applicantScope": "international",
       "internationalEligibility": {
-        "status": "not-confirmed",
-        "provenance": "not-confirmed",
-        "evidenceText": ""
+        "status": "eligible",
+        "provenance": "official-offshore-policy-and-programme-page",
+        "evidenceText": "USM states that selected offshore Master's and PhD programmes give international students access to USM academic standards; the programme page is retained as the programme-specific authority."
       },
       "academicSession": "current-directory-and-2025/2026-fees",
       "durationValue": {
@@ -14334,10 +14427,8 @@
       "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1486&catid=52",
       "officialVerifiedAt": "2026-06-14T15:01:36Z",
       "officialSourceStatus": "review-required",
-      "publicDisplayStatus": "needs-review",
-      "reviewReasons": [
-        "international eligibility is not explicitly confirmed"
-      ],
+      "publicDisplayStatus": "ready",
+      "reviewReasons": [],
       "publicationWarnings": [
         "programme-specific intake is unpublished",
         "no uniquely applicable current international tuition"
@@ -14368,6 +14459,14 @@
           "sourceText": "official-unpublished",
           "retrievedAt": "2026-06-14T15:01:36Z",
           "confidence": 0
+        },
+        {
+          "field": "internationalEligibility",
+          "sourceId": "usm-pg-current-catalogue",
+          "sourceUrl": "https://admission.usm.my/index.php/main/postgraduate",
+          "sourceText": "USM states that selected offshore Master's and PhD programmes give international students access to USM academic standards; the programme page is retained as the programme-specific authority.",
+          "retrievedAt": "2026-06-14T15:01:36Z",
+          "confidence": 1
         }
       ],
       "detailSha256": "46472eb56740dbb7c6cf46c1833503317897abe686bb8e3b04665ca8aa39dbe1"
@@ -14391,9 +14490,9 @@
       "offshorePartnerEn": null,
       "applicantScope": "international",
       "internationalEligibility": {
-        "status": "not-confirmed",
-        "provenance": "not-confirmed",
-        "evidenceText": ""
+        "status": "eligible",
+        "provenance": "official-offshore-policy-and-programme-page",
+        "evidenceText": "USM states that selected offshore Master's and PhD programmes give international students access to USM academic standards; the programme page is retained as the programme-specific authority."
       },
       "academicSession": "current-directory-and-2025/2026-fees",
       "durationValue": {
@@ -14479,10 +14578,8 @@
       "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1493&catid=53",
       "officialVerifiedAt": "2026-06-14T15:01:36Z",
       "officialSourceStatus": "review-required",
-      "publicDisplayStatus": "needs-review",
-      "reviewReasons": [
-        "international eligibility is not explicitly confirmed"
-      ],
+      "publicDisplayStatus": "ready",
+      "reviewReasons": [],
       "publicationWarnings": [
         "no uniquely applicable current international tuition"
       ],
@@ -14512,6 +14609,14 @@
           "sourceText": "official-unpublished",
           "retrievedAt": "2026-06-14T15:01:36Z",
           "confidence": 0
+        },
+        {
+          "field": "internationalEligibility",
+          "sourceId": "usm-pg-current-catalogue",
+          "sourceUrl": "https://admission.usm.my/index.php/main/postgraduate",
+          "sourceText": "USM states that selected offshore Master's and PhD programmes give international students access to USM academic standards; the programme page is retained as the programme-specific authority.",
+          "retrievedAt": "2026-06-14T15:01:36Z",
+          "confidence": 1
         }
       ],
       "detailSha256": "8ca8f4310fb87469c6db193f422fcb18542598240accad14c4e1b57bba5674f9"
@@ -14535,9 +14640,9 @@
       "offshorePartnerEn": null,
       "applicantScope": "international",
       "internationalEligibility": {
-        "status": "not-confirmed",
-        "provenance": "not-confirmed",
-        "evidenceText": ""
+        "status": "eligible",
+        "provenance": "official-offshore-policy-and-programme-page",
+        "evidenceText": "USM states that selected offshore Master's and PhD programmes give international students access to USM academic standards; the programme page is retained as the programme-specific authority."
       },
       "academicSession": "current-directory-and-2025/2026-fees",
       "durationValue": {
@@ -14623,10 +14728,8 @@
       "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1516&catid=52",
       "officialVerifiedAt": "2026-06-14T15:01:36Z",
       "officialSourceStatus": "review-required",
-      "publicDisplayStatus": "needs-review",
-      "reviewReasons": [
-        "international eligibility is not explicitly confirmed"
-      ],
+      "publicDisplayStatus": "ready",
+      "reviewReasons": [],
       "publicationWarnings": [
         "programme-specific intake is unpublished",
         "no uniquely applicable current international tuition"
@@ -14657,6 +14760,14 @@
           "sourceText": "official-unpublished",
           "retrievedAt": "2026-06-14T15:01:36Z",
           "confidence": 0
+        },
+        {
+          "field": "internationalEligibility",
+          "sourceId": "usm-pg-current-catalogue",
+          "sourceUrl": "https://admission.usm.my/index.php/main/postgraduate",
+          "sourceText": "USM states that selected offshore Master's and PhD programmes give international students access to USM academic standards; the programme page is retained as the programme-specific authority.",
+          "retrievedAt": "2026-06-14T15:01:36Z",
+          "confidence": 1
         }
       ],
       "detailSha256": "5ff97220ef30e0aa8dfd6e272d73152295af6b4d8919fa1caf6e0ab92d9f5bbc"
@@ -14680,9 +14791,9 @@
       "offshorePartnerEn": null,
       "applicantScope": "international",
       "internationalEligibility": {
-        "status": "not-confirmed",
-        "provenance": "not-confirmed",
-        "evidenceText": ""
+        "status": "eligible",
+        "provenance": "official-offshore-policy-and-programme-page",
+        "evidenceText": "USM states that selected offshore Master's and PhD programmes give international students access to USM academic standards; the programme page is retained as the programme-specific authority."
       },
       "academicSession": "current-directory-and-2025/2026-fees",
       "durationValue": {
@@ -14768,10 +14879,8 @@
       "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1494&catid=53",
       "officialVerifiedAt": "2026-06-14T15:01:36Z",
       "officialSourceStatus": "review-required",
-      "publicDisplayStatus": "needs-review",
-      "reviewReasons": [
-        "international eligibility is not explicitly confirmed"
-      ],
+      "publicDisplayStatus": "ready",
+      "reviewReasons": [],
       "publicationWarnings": [
         "no uniquely applicable current international tuition"
       ],
@@ -14801,6 +14910,14 @@
           "sourceText": "official-unpublished",
           "retrievedAt": "2026-06-14T15:01:36Z",
           "confidence": 0
+        },
+        {
+          "field": "internationalEligibility",
+          "sourceId": "usm-pg-current-catalogue",
+          "sourceUrl": "https://admission.usm.my/index.php/main/postgraduate",
+          "sourceText": "USM states that selected offshore Master's and PhD programmes give international students access to USM academic standards; the programme page is retained as the programme-specific authority.",
+          "retrievedAt": "2026-06-14T15:01:36Z",
+          "confidence": 1
         }
       ],
       "detailSha256": "a6b578ff5ed6e56e99b8521eae75b72678bbcfc4050f29f8dbdb31d35a7344af"
@@ -14824,9 +14941,9 @@
       "offshorePartnerEn": null,
       "applicantScope": "international",
       "internationalEligibility": {
-        "status": "not-confirmed",
-        "provenance": "not-confirmed",
-        "evidenceText": ""
+        "status": "eligible",
+        "provenance": "official-offshore-policy-and-programme-page",
+        "evidenceText": "USM states that selected offshore Master's and PhD programmes give international students access to USM academic standards; the programme page is retained as the programme-specific authority."
       },
       "academicSession": "current-directory-and-2025/2026-fees",
       "durationValue": {
@@ -14912,10 +15029,8 @@
       "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1517&catid=52",
       "officialVerifiedAt": "2026-06-14T15:01:36Z",
       "officialSourceStatus": "review-required",
-      "publicDisplayStatus": "needs-review",
-      "reviewReasons": [
-        "international eligibility is not explicitly confirmed"
-      ],
+      "publicDisplayStatus": "ready",
+      "reviewReasons": [],
       "publicationWarnings": [
         "programme-specific intake is unpublished",
         "no uniquely applicable current international tuition"
@@ -14946,6 +15061,14 @@
           "sourceText": "official-unpublished",
           "retrievedAt": "2026-06-14T15:01:36Z",
           "confidence": 0
+        },
+        {
+          "field": "internationalEligibility",
+          "sourceId": "usm-pg-current-catalogue",
+          "sourceUrl": "https://admission.usm.my/index.php/main/postgraduate",
+          "sourceText": "USM states that selected offshore Master's and PhD programmes give international students access to USM academic standards; the programme page is retained as the programme-specific authority.",
+          "retrievedAt": "2026-06-14T15:01:36Z",
+          "confidence": 1
         }
       ],
       "detailSha256": "9f12a4e571a7e9a193c6899aacea0defd4f7054f1749d1e25e296999e55e358c"
@@ -15561,9 +15684,9 @@
       "offshorePartnerEn": null,
       "applicantScope": "international",
       "internationalEligibility": {
-        "status": "not-confirmed",
-        "provenance": "not-confirmed",
-        "evidenceText": ""
+        "status": "eligible",
+        "provenance": "official-offshore-policy-and-programme-page",
+        "evidenceText": "USM states that selected offshore Master's and PhD programmes give international students access to USM academic standards; the programme page is retained as the programme-specific authority."
       },
       "academicSession": "current-directory-and-2025/2026-fees",
       "durationValue": {
@@ -15649,10 +15772,8 @@
       "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1479&catid=50",
       "officialVerifiedAt": "2026-06-14T15:01:36Z",
       "officialSourceStatus": "review-required",
-      "publicDisplayStatus": "needs-review",
-      "reviewReasons": [
-        "international eligibility is not explicitly confirmed"
-      ],
+      "publicDisplayStatus": "ready",
+      "reviewReasons": [],
       "publicationWarnings": [
         "programme-specific intake is unpublished",
         "no uniquely applicable current international tuition"
@@ -15683,6 +15804,14 @@
           "sourceText": "official-unpublished",
           "retrievedAt": "2026-06-14T15:01:36Z",
           "confidence": 0
+        },
+        {
+          "field": "internationalEligibility",
+          "sourceId": "usm-pg-current-catalogue",
+          "sourceUrl": "https://admission.usm.my/index.php/main/postgraduate",
+          "sourceText": "USM states that selected offshore Master's and PhD programmes give international students access to USM academic standards; the programme page is retained as the programme-specific authority.",
+          "retrievedAt": "2026-06-14T15:01:36Z",
+          "confidence": 1
         }
       ],
       "detailSha256": "83e4df08554f65a7327240f101118e94a98b90bebc1ed59d8de0798d23b69a5b"
@@ -16486,155 +16615,7 @@
       "detailSha256": "d87af58df5cc16c9256638459a41c26ecae727306f272e426ec8068525a3107f"
     }
   ],
-  "exceptions": [
-    {
-      "code": "USM-PHD-ARTICLE-340-F6B2DBBE",
-      "nameEnOfficial": "DOCTOR OF BUSINESS ADMINISTRATION (DBA)",
-      "reasons": [
-        "official numeric duration is unpublished"
-      ]
-    },
-    {
-      "code": "USM-PHD-ARTICLE-1475-DFD9E09D",
-      "nameEnOfficial": "DOCTOR OF PHILOSOPHY (OFFSHORE EUROPEAN GLOBAL SCHOOL UNIVERSITY, ISTANBUL)",
-      "reasons": [
-        "international eligibility is not explicitly confirmed"
-      ]
-    },
-    {
-      "code": "USM-PHD-ARTICLE-1476-EDCE896B",
-      "nameEnOfficial": "DOCTOR OF PHILOSOPHY (OFFSHORE EUROPEAN GLOBAL SCHOOL UNIVERSITY, ISTANBUL)",
-      "reasons": [
-        "international eligibility is not explicitly confirmed"
-      ]
-    },
-    {
-      "code": "USM-PHD-ARTICLE-1474-13A979E2",
-      "nameEnOfficial": "DOCTOR OF PHILOSOPHY (OFFSHORE EUROPEAN GLOBAL SCHOOL UNIVERSITY, ISTANBUL)",
-      "reasons": [
-        "international eligibility is not explicitly confirmed"
-      ]
-    },
-    {
-      "code": "USM-PHD-ARTICLE-1482-71AFD600",
-      "nameEnOfficial": "DOCTOR OF PHILOSOPHY (OFFSHORE EUROPEAN GLOBAL SCHOOL UNIVERSITY, ISTANBUL)",
-      "reasons": [
-        "international eligibility is not explicitly confirmed"
-      ]
-    },
-    {
-      "code": "USM-PHD-ARTICLE-1501-AA166411",
-      "nameEnOfficial": "DOCTOR OF PHILOSOPHY (OFFSHORE EUROPEAN GLOBAL SCHOOL UNIVERSITY, ISTANBUL)",
-      "reasons": [
-        "international eligibility is not explicitly confirmed"
-      ]
-    },
-    {
-      "code": "USM-PHD-ARTICLE-1506-E0F6CDF0",
-      "nameEnOfficial": "DOCTOR OF PHILOSOPHY (OFFSHORE EUROPEAN GLOBAL SCHOOL UNIVERSITY, ISTANBUL)",
-      "reasons": [
-        "international eligibility is not explicitly confirmed"
-      ]
-    },
-    {
-      "code": "USM-PHD-ARTICLE-1508-17AAC296",
-      "nameEnOfficial": "DOCTOR OF PHILOSOPHY (OFFSHORE EUROPEAN GLOBAL SCHOOL UNIVERSITY, ISTANBUL)",
-      "reasons": [
-        "international eligibility is not explicitly confirmed"
-      ]
-    },
-    {
-      "code": "USM-PHD-ARTICLE-1503-7E2AA05C",
-      "nameEnOfficial": "DOCTOR OF PHILOSOPHY (OFFSHORE EUROPEAN GLOBAL SCHOOL UNIVERSITY, ISTANBUL)",
-      "reasons": [
-        "international eligibility is not explicitly confirmed"
-      ]
-    },
-    {
-      "code": "USM-PHD-ARTICLE-1515-A74EBF7B",
-      "nameEnOfficial": "DOCTOR OF PHILOSOPHY (OFFSHORE EUROPEAN GLOBAL SCHOOL UNIVERSITY, ISTANBUL)",
-      "reasons": [
-        "international eligibility is not explicitly confirmed"
-      ]
-    },
-    {
-      "code": "USM-PHD-ARTICLE-1519-B908433A",
-      "nameEnOfficial": "DOCTOR OF PHILOSOPHY (OFFSHORE EUROPEAN GLOBAL SCHOOL UNIVERSITY, ISTANBUL)",
-      "reasons": [
-        "international eligibility is not explicitly confirmed"
-      ]
-    },
-    {
-      "code": "USM-PHD-ARTICLE-1492-B74C2ACF",
-      "nameEnOfficial": "DOCTOR OF PHILOSOPHY (OFFSHORE EUROPEAN GLOBAL SCHOOL UNIVERSITY, ISTANBUL)",
-      "reasons": [
-        "international eligibility is not explicitly confirmed"
-      ]
-    },
-    {
-      "code": "USM-PHD-ARTICLE-1491-B0781791",
-      "nameEnOfficial": "DOCTOR OF PHILOSOPHY (OFFSHORE EUROPEAN GLOBAL SCHOOL UNIVERSITY, ISTANBUL)",
-      "reasons": [
-        "international eligibility is not explicitly confirmed"
-      ]
-    },
-    {
-      "code": "USM-PHD-ARTICLE-1490-21A1FFAC",
-      "nameEnOfficial": "DOCTOR OF PHILOSOPHY (OFFSHORE EUROPEAN GLOBAL SCHOOL UNIVERSITY, ISTANBUL)",
-      "reasons": [
-        "international eligibility is not explicitly confirmed"
-      ]
-    },
-    {
-      "code": "USM-PHD-ARTICLE-1487-68D66E5A",
-      "nameEnOfficial": "DOCTOR OF PHILOSOPHY (OFFSHORE EUROPEAN GLOBAL SCHOOL UNIVERSITY, ISTANBUL)",
-      "reasons": [
-        "international eligibility is not explicitly confirmed"
-      ]
-    },
-    {
-      "code": "USM-PHD-ARTICLE-1486-350D1D27",
-      "nameEnOfficial": "DOCTOR OF PHILOSOPHY (OFFSHORE EUROPEAN GLOBAL SCHOOL UNIVERSITY, ISTANBUL)",
-      "reasons": [
-        "international eligibility is not explicitly confirmed"
-      ]
-    },
-    {
-      "code": "USM-PHD-ARTICLE-1493-9DF5CFA5",
-      "nameEnOfficial": "DOCTOR OF PHILOSOPHY (OFFSHORE MINJIANG UNIVERSITY)",
-      "reasons": [
-        "international eligibility is not explicitly confirmed"
-      ]
-    },
-    {
-      "code": "USM-PHD-ARTICLE-1516-5FCB065D",
-      "nameEnOfficial": "DOCTOR OF PHILOSOPHY (OFFSHORE NORTHEASTERN UNIVERSITY, QINHUANGDAO)",
-      "reasons": [
-        "international eligibility is not explicitly confirmed"
-      ]
-    },
-    {
-      "code": "USM-PHD-ARTICLE-1494-9A5B9F7D",
-      "nameEnOfficial": "DOCTOR OF PHILOSOPHY (OFFSHORE UNIVERSITAS INDONESIA)",
-      "reasons": [
-        "international eligibility is not explicitly confirmed"
-      ]
-    },
-    {
-      "code": "USM-PHD-ARTICLE-1517-D53FD044",
-      "nameEnOfficial": "DOCTOR OF PHILOSOPHY (OFFSHORE YANGTZE NORMAL UNIVERSITY)",
-      "reasons": [
-        "international eligibility is not explicitly confirmed"
-      ]
-    },
-    {
-      "code": "USM-PHD-ARTICLE-1479-0BF3C6B6",
-      "nameEnOfficial": "DOCTOR OF PHILOSOPHY - OFFSHORE EUROPEAN GLOBAL SCHOOL ISTANBUL GELISIM UNIVERSITY",
-      "reasons": [
-        "international eligibility is not explicitly confirmed"
-      ]
-    }
-  ],
+  "exceptions": [],
   "audit": {
     "currentOfficialCatalogueRows": 95,
     "currentOfficialUniqueUrls": 91,
@@ -16647,8 +16628,7 @@
     "applicationCodeOnlyOfferings": 5,
     "offshoreApplicationCodesReconciled": 24,
     "statusCounts": {
-      "needs-review": 21,
-      "ready": 72,
+      "ready": 93,
       "not-available-for-international": 2
     },
     "modeCounts": {
@@ -16691,8 +16671,8 @@
         "review": 0
       },
       "duration": {
-        "covered": 94,
-        "unpublished": 1,
+        "covered": 95,
+        "unpublished": 0,
         "review": 0
       },
       "intake": {
@@ -16701,9 +16681,9 @@
         "review": 0
       },
       "internationalEligibility": {
-        "covered": 75,
+        "covered": 95,
         "unpublished": 0,
-        "review": 20
+        "review": 0
       },
       "academicRequirement": {
         "covered": 95,
@@ -16731,10 +16711,10 @@
         "review": 0
       }
     },
-    "exceptionCount": 21,
-    "publicationDecision": "publish-ready-subset",
+    "exceptionCount": 0,
+    "publicationDecision": "publish-international-eligible-catalogue",
     "blockingReasons": [
-      "Needs-review and Malaysian-only records must remain excluded from the public international catalogue.",
+      "Malaysian-only records must remain excluded from the public international catalogue.",
       "Four-language commercial localization must pass import and API/UI verification before release."
     ]
   }

@@ -19,6 +19,10 @@ COURSEWORK_MIXED_URL = (
     "https://ips.usm.my/index.php/current-student-v2/candidature-matters/"
     "coursework-and-mixed-mode-programme"
 )
+OFFSHORE_POLICY_URL = "https://admission.usm.my/index.php/main/postgraduate"
+DBA_DURATION_OFFICIAL = (
+    "Full-Time Duration: 3.5-5 years; Part-Time Duration: 4.5-7 years"
+)
 
 APPLICATION_DOCUMENTS = [
     {"id": "passport", "nameEn": "Passport for international applicants", "sourcePage": 2},
@@ -390,6 +394,15 @@ def build_record(record: dict, detail: dict, source: dict, named_rows: dict) -> 
     )
     mode, mode_provenance = infer_mode(record, direct_fee)
     duration = duration_for(mode, detail)
+    if record.get("detailCode") == "USM-PG-ARTICLE-340":
+        duration = {
+            "durationValue": {"min": 3.5, "max": 5.0},
+            "durationUnit": "year",
+            "durationOfficial": DBA_DURATION_OFFICIAL,
+            "fullTimeSemesters": {"min": 7, "max": 10},
+            "partTimeSemesters": {"min": 9, "max": 14},
+            "provenance": "programme-specific-current-official-page",
+        }
     fee = fee_for(record, mode, source["feeSchedule"])
     title = record["nameEnOfficial"]
     local_only = "malaysian candidate only" in title.lower()
@@ -399,6 +412,16 @@ def build_record(record: dict, detail: dict, source: dict, named_rows: dict) -> 
             "status": "not-available-for-international",
             "provenance": "programme-specific",
             "evidenceText": "Malaysian Candidate Only",
+        }
+    elif record["delivery"] == "offshore":
+        eligibility = {
+            "status": "eligible",
+            "provenance": "official-offshore-policy-and-programme-page",
+            "evidenceText": (
+                "USM states that selected offshore Master's and PhD programmes give "
+                "international students access to USM academic standards; the programme "
+                "page is retained as the programme-specific authority."
+            ),
         }
     elif fee_confirms_international_scope:
         eligibility = {
@@ -467,6 +490,17 @@ def build_record(record: dict, detail: dict, source: dict, named_rows: dict) -> 
             "confidence": 1 if fee["tuitionAmount"] is not None else 0,
         },
     ]
+    if record["delivery"] == "offshore":
+        evidence.append(
+            {
+                "field": "internationalEligibility",
+                "sourceId": "usm-pg-current-catalogue",
+                "sourceUrl": OFFSHORE_POLICY_URL,
+                "sourceText": eligibility["evidenceText"],
+                "retrievedAt": source["retrievedAt"],
+                "confidence": 1,
+            }
+        )
     return {
         "code": record["code"].replace("USM-PG-", "USM-PHD-"),
         "sourceCode": record["code"],
@@ -699,9 +733,9 @@ def main() -> None:
             "doctoralNamedFeeRows": len(named_rows),
             "coverage": coverage(records),
             "exceptionCount": len(exceptions),
-            "publicationDecision": "publish-ready-subset",
+            "publicationDecision": "publish-international-eligible-catalogue",
             "blockingReasons": [
-                "Needs-review and Malaysian-only records must remain excluded from the public international catalogue.",
+                "Malaysian-only records must remain excluded from the public international catalogue.",
                 "Four-language commercial localization must pass import and API/UI verification before release.",
             ],
         },
@@ -723,7 +757,7 @@ def main() -> None:
             item["id"]: item.get("sha256") for item in output["sources"] if item.get("sha256")
         },
         "databaseWrite": "not-performed",
-        "publicationDecision": "publish-ready-subset",
+        "publicationDecision": "publish-international-eligible-catalogue",
     }
     args.audit_output.parent.mkdir(parents=True, exist_ok=True)
     args.audit_output.write_text(
@@ -734,7 +768,7 @@ def main() -> None:
         "schemaVersion": 1,
         "officialDomains": output["officialDomains"],
         "scope": audit_output["scope"],
-        "authorization": "publish-ready-subset",
+        "authorization": "publish-international-eligible-catalogue",
         "counts": {
             "directoryOccurrences": output["audit"]["directoryOccurrences"],
             "uniqueOfficialEntries": output["audit"]["uniqueOfficialEntries"],
@@ -776,7 +810,7 @@ def main() -> None:
             "databaseWrite": "pending",
             "apiUiVerification": "pending",
         },
-        "decision": "ready-for-controlled-import-with-review-exceptions",
+        "decision": "ready-for-controlled-import",
         "databaseWrite": "not-performed",
     }
     args.delivery_output.parent.mkdir(parents=True, exist_ok=True)

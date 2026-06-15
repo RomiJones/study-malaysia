@@ -699,7 +699,7 @@ const programAuditRows = computed<LabelValue[]>(() => {
     { label: t('university.masterPrograms'), value: catalogLevelTotal("master") },
     { label: t('university.phdPrograms'), value: catalogLevelTotal("phd") },
     { label: t('university.publicReady'), value: String(current.catalogStatusSummary?.all.ready ?? current.programs.length) },
-    { label: t('university.reviewUnavailable'), value: auditReviewCount() },
+    { label: auditRestrictionLabel(), value: auditReviewCount() },
     { label: t('university.languageRequirement'), value: t('university.languageShownByProgram') }
   ];
 });
@@ -1127,6 +1127,13 @@ function auditReviewCount() {
   const unavailable = numberFrom(audit?.notAvailableForInternational);
   if (needsReview || unavailable) return String(needsReview + unavailable);
   return "0";
+}
+
+function auditRestrictionLabel() {
+  const summary = detail.value?.catalogStatusSummary?.all;
+  return summary?.needsReview === 0
+    ? t('university.internationalUnavailable')
+    : t('university.reviewUnavailable');
 }
 
 function sourceLabel(item: OfficialSourceLink) {
