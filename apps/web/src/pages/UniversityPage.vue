@@ -676,12 +676,9 @@ const sourceSummary = computed(() => {
 });
 
 const tuitionSummary = computed(() => {
-  const tuitionAudit = asRecord(profile.value?.tuitionAudit);
-  const display = formatRuntimeDisplayText(tuitionAudit?.displayText, "", currentLocale.value);
-  if (display) return display;
-  const current = detail.value;
-  if (!current) return officialConfirmationFallback(currentLocale.value);
-  return `CNY ${formatCurrency(current.tuitionMinCny)} - ${formatCurrency(current.tuitionMaxCny)}`;
+  return detail.value
+    ? t("university.officialTotalByProgramme")
+    : officialConfirmationFallback(currentLocale.value);
 });
 
 const tuitionNote = computed(() => {
@@ -893,11 +890,8 @@ function intakeLabel(program: ProgramListItem | ProgramCatalogDetail) {
 }
 
 function tuitionNoteLabel(program: ProgramCatalogDetail) {
-  if (program.code.startsWith("USM-M-") && program.level === "master") {
+  if (program.code.startsWith("USM-") && (program.level === "master" || program.level === "phd")) {
     if (program.officialFeeAuditStatus === "not-published") return t("program.feeNotPublishedNote");
-    if (/StudyMY calculation from USM official/i.test(program.tuitionInfo?.note || "")) {
-      return t("program.calculatedTotalTuitionNote");
-    }
     return t("program.officialTotalTuitionNote");
   }
   return formatVerifiedOfficialText(

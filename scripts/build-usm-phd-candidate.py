@@ -364,15 +364,19 @@ def fee_for(record: dict, mode: str, fee_schedule: dict) -> dict:
         if row:
             rate = row["international"]["fullTimePerSemester"]
             return {
-                "status": "verified-calculated-total-range",
-                "tuitionAmount": {"min": rate * 4, "max": rate * 10},
+                "status": "official-total-unpublished",
+                "tuitionAmount": None,
                 "tuitionCurrency": row["international"]["currency"],
-                "tuitionBasis": "total-programme",
+                "tuitionBasis": "per-semester-rate-only",
                 "officialRatePerSemester": rate,
                 "tuitionAcademicSession": row["academicSession"],
                 "officialFeeSourceUrl": row["officialFeeSourceUrl"],
-                "provenance": "calculated-from-official-components",
-                "calculation": "international full-time per-semester rate x 4-10 semesters",
+                "provenance": "official-rate-only",
+                "reason": (
+                    "The official source publishes a per-semester rate but no "
+                    "standard programme total. StudyMY does not calculate a total, "
+                    "and extension-period tuition is excluded."
+                ),
                 "sourcePage": row["sourcePage"],
             }
     return {
@@ -406,7 +410,10 @@ def build_record(record: dict, detail: dict, source: dict, named_rows: dict) -> 
     fee = fee_for(record, mode, source["feeSchedule"])
     title = record["nameEnOfficial"]
     local_only = "malaysian candidate only" in title.lower()
-    fee_confirms_international_scope = fee["tuitionAmount"] is not None
+    fee_confirms_international_scope = fee["status"] in {
+        "verified-current-official-fee",
+        "official-total-unpublished",
+    }
     if local_only:
         eligibility = {
             "status": "not-available-for-international",

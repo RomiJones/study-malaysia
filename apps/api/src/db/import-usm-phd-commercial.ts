@@ -53,10 +53,10 @@ interface CandidateRecord {
   detailSha256: string;
   fee: {
     status: string;
-    tuitionAmount: number | { min: number; max: number } | null;
+    tuitionAmount: number | null;
     tuitionCurrency: "USD" | "MYR" | null;
     officialFeeSourceUrl: string;
-    calculation?: string;
+    reason?: string;
   };
 }
 
@@ -156,20 +156,11 @@ function feePresentation(record: CandidateRecord): {
       status: "matched-official" as const
     };
   }
-  if (amount) {
-    return {
-      amount: null,
-      currency: record.fee.tuitionCurrency || "UNKNOWN",
-      display: `${record.fee.tuitionCurrency} ${amount.min.toLocaleString("en-US")}-${amount.max.toLocaleString("en-US")} estimated total tuition`,
-      note: `StudyMY calculation from current official semester rates and the official 4-10 semester doctoral duration. ${record.fee.calculation || ""}`.trim(),
-      status: "matched-official" as const
-    };
-  }
   return {
     amount: null,
-    currency: "UNKNOWN" as const,
+    currency: record.fee.tuitionCurrency || "UNKNOWN",
     display: "",
-    note: "No uniquely applicable current official international tuition is published.",
+    note: record.fee.reason || "No uniquely applicable current official international total tuition is published.",
     status: "not-published" as const
   };
 }

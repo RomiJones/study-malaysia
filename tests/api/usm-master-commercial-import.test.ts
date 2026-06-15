@@ -99,17 +99,19 @@ test("USM master duration converts semesters and months to years", () => {
   );
 });
 
-test("USM master rows show total tuition while preserving unpublished status", () => {
+test("USM master rows show only unique official total tuition", () => {
   const rows = buildUsmMasterRows(source);
-  const research = rows.find((row) => String(row.officialTuitionNote).includes("StudyMY calculation from USM official"));
+  const research = rows.find((row) => String(row.officialTuitionNote).includes("does not calculate a total"));
   const total = rows.find((row) => String(row.tuitionDisplay).includes("total"));
   const unpublished = rows.find((row) => row.officialFeeAuditStatus === "not-published");
   assert.ok(research);
-  assert.match(String(research?.tuitionDisplay), /^USD [\d,]+-[\d,]+ total tuition$/);
-  assert.equal(String(research?.tuitionDisplay).includes("per semester"), false);
+  assert.equal(research?.tuitionDisplay, "");
   assert.equal(research?.tuitionAmount, null);
+  assert.equal(research?.tuitionCurrency, "USD");
   assert.ok(total);
+  assert.match(String(total?.tuitionDisplay), /^(USD|MYR) [\d,]+ total tuition$/);
   assert.ok(unpublished);
   assert.equal(unpublished?.tuitionAmount, null);
-  assert.equal(unpublished?.tuitionCurrency, "UNKNOWN");
+  assert.ok(rows.every((row) => !/[\d,]+-[\d,]+.*tuition/i.test(String(row.tuitionDisplay))));
+  assert.ok(rows.every((row) => !/estimated total/i.test(String(row.tuitionDisplay))));
 });

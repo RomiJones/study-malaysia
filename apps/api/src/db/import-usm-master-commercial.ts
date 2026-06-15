@@ -544,21 +544,6 @@ function parseModeDuration(text: string, label: "full" | "part") {
   return null;
 }
 
-function fullTimeSemesterRange(text: string, studyMode: StudyMode) {
-  const fullTime = parseModeDuration(text, "full");
-  if (fullTime) {
-    return {
-      min: Math.round(fullTime.min * 2),
-      max: Math.round(fullTime.max * 2),
-      source: "programme-specific" as const
-    };
-  }
-  if (studyMode === "research") {
-    return { min: 2, max: 6, source: "research-mode-general-rule" as const };
-  }
-  return null;
-}
-
 export function normalizeMasterDuration(
   officialText: string,
   studyMode: StudyMode
@@ -677,29 +662,13 @@ function feePresentation(record: CandidateRecord) {
   if (direct?.international) {
     const fee = direct.international;
     if (fee.fullTimePerSemester) {
-      const duration = fullTimeSemesterRange(record.duration.textEnOfficial, record.studyMode);
-      if (!duration) {
-        return {
-          amount: null,
-          currency: fee.currency,
-          display: "",
-          status: "not-published" as const,
-          sourceUrl: direct.officialSourceUrl || feeDirectoryUrl,
-          note: `USM publishes an international full-time rate of ${fee.currency} ${fee.fullTimePerSemester.toLocaleString("en-US")} per semester, but no numeric official duration is available to calculate a total tuition amount.`
-        };
-      }
-      const minimum = fee.fullTimePerSemester * duration.min;
-      const maximum = fee.fullTimePerSemester * duration.max;
-      const totalDisplay = minimum === maximum
-        ? `${fee.currency} ${minimum.toLocaleString("en-US")} total tuition`
-        : `${fee.currency} ${minimum.toLocaleString("en-US")}-${maximum.toLocaleString("en-US")} total tuition`;
       return {
-        amount: minimum === maximum ? minimum : null,
+        amount: null,
         currency: fee.currency,
-        display: totalDisplay,
-        status: "matched-official" as const,
+        display: "",
+        status: "not-published" as const,
         sourceUrl: direct.officialSourceUrl || feeDirectoryUrl,
-        note: `StudyMY calculation from USM official ${direct.academicSession || "current"} international full-time tuition of ${fee.currency} ${fee.fullTimePerSemester.toLocaleString("en-US")} per semester and the official ${duration.min}-${duration.max} semester full-time duration. The displayed total excludes registration, bond, methodology, thesis evaluation, graduation and other separate fees. Duration source: ${duration.source}.`
+        note: `USM publishes an international full-time rate of ${fee.currency} ${fee.fullTimePerSemester.toLocaleString("en-US")} per semester but no official standard programme total. StudyMY does not calculate a total or include extension-period tuition.`
       };
     }
     if (!fee.amount) {
@@ -733,15 +702,25 @@ function feePresentation(record: CandidateRecord) {
         note: "The official track rows do not publish a numeric international total."
       };
     }
-    const min = Math.min(...amounts);
-    const max = Math.max(...amounts);
+    const uniqueAmounts = Array.from(new Set(amounts));
+    if (uniqueAmounts.length > 1) {
+      return {
+        amount: null,
+        currency: "USD" as const,
+        display: "",
+        status: "not-published" as const,
+        sourceUrl: variants[0].officialSourceUrl || feeDirectoryUrl,
+        note: "USM publishes different official total tuition amounts by track. Confirm the exact official total for the selected track; StudyMY does not display a fee range."
+      };
+    }
+    const total = uniqueAmounts[0];
     return {
-      amount: min === max ? min : null,
+      amount: total,
       currency: "USD" as const,
-      display: min === max ? `USD ${min.toLocaleString("en-US")} total` : `USD ${min.toLocaleString("en-US")}-${max.toLocaleString("en-US")} total, varies by track`,
+      display: `USD ${total.toLocaleString("en-US")} total tuition`,
       status: "matched-official" as const,
       sourceUrl: variants[0].officialSourceUrl || feeDirectoryUrl,
-      note: `Official fee varies by track. ${variants.map((fee) => `${fee.officialFeeName}: USD ${fee.international?.amount?.toLocaleString("en-US")}`).join("; ")}`
+      note: "All published tracks share the same official total tuition."
     };
   }
   return {

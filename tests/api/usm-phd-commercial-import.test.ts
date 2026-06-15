@@ -19,8 +19,8 @@ test("USM doctoral source keeps all 95 official identities and publishes the aud
   assert.equal(summary.ready, 93);
   assert.equal(summary.needsReview, 0);
   assert.equal(summary.notAvailableForInternational, 2);
-  assert.equal(summary.feeMatched, 75);
-  assert.equal(summary.feeNotPublished, 20);
+  assert.equal(summary.feeMatched, 13);
+  assert.equal(summary.feeNotPublished, 82);
   assert.deepEqual(summary.modes, {
     mixed: 6,
     online: 1,
@@ -45,12 +45,20 @@ test("USM doctoral importer preserves unpublished fields without inventing value
   const rows = buildUsmPhdRows(source);
   const dba = rows.find((row) => row.nameEnOfficial?.includes("BUSINESS ADMINISTRATION (DBA)"));
   const neuroscience = rows.find((row) => row.nameEnOfficial === "DOCTOR OF NEUROSCIENCE");
+  const research = rows.find((row) => row.studyMode === "research" && row.tuitionCurrency === "USD");
   const offshore = rows.find((row) => String(row.nameEnOfficial).includes("OFFSHORE"));
   assert.equal(dba?.durationYears, 3.5);
   assert.equal(dba?.durationOfficial, "Full-Time Duration: 3.5-5 years; Part-Time Duration: 4.5-7 years");
   assert.equal(dba?.publicDisplayStatus, "ready");
   assert.equal(neuroscience?.durationYears, 3);
   assert.equal(neuroscience?.publicDisplayStatus, "ready");
+  assert.equal(dba?.tuitionAmount, 16200);
+  assert.equal(dba?.tuitionDisplay, "USD 16,200 total tuition");
+  assert.equal(research?.officialFeeAuditStatus, "not-published");
+  assert.equal(research?.tuitionAmount, null);
+  assert.equal(research?.tuitionDisplay, "");
+  assert.match(String(research?.officialTuitionNote), /does not calculate a total/i);
   assert.equal(offshore?.officialFeeAuditStatus, "not-published");
   assert.equal(offshore?.publicDisplayStatus, "ready");
+  assert.ok(rows.every((row) => !/[\d,]+-[\d,]+.*tuition/i.test(String(row.tuitionDisplay))));
 });

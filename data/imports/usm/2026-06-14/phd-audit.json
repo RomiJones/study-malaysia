@@ -36,7 +36,7 @@
     },
     "feeCounts": {
       "verified-current-official-fee": 13,
-      "verified-calculated-total-range": 62,
+      "official-total-unpublished": 62,
       "official-unpublished": 20
     },
     "doctoralNamedFeeRows": 13,
@@ -92,8 +92,8 @@
         "review": 0
       },
       "fee": {
-        "covered": 75,
-        "unpublished": 20,
+        "covered": 13,
+        "unpublished": 82,
         "review": 0
       },
       "evidence": {

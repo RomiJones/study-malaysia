@@ -3747,20 +3747,19 @@
       "officialSourceStatus": "verified",
       "publicDisplayStatus": "ready",
       "reviewReasons": [],
-      "publicationWarnings": [],
+      "publicationWarnings": [
+        "no uniquely applicable current international tuition"
+      ],
       "fee": {
-        "status": "verified-calculated-total-range",
-        "tuitionAmount": {
-          "min": 7400.0,
-          "max": 18500.0
-        },
+        "status": "official-total-unpublished",
+        "tuitionAmount": null,
         "tuitionCurrency": "USD",
-        "tuitionBasis": "total-programme",
+        "tuitionBasis": "per-semester-rate-only",
         "officialRatePerSemester": 1850.0,
         "tuitionAcademicSession": "2025/2026",
         "officialFeeSourceUrl": "https://admission.usm.my/index.php/postgraduate/fee-pg",
-        "provenance": "calculated-from-official-components",
-        "calculation": "international full-time per-semester rate x 4-10 semesters",
+        "provenance": "official-rate-only",
+        "reason": "The official source publishes a per-semester rate but no standard programme total. StudyMY does not calculate a total, and extension-period tuition is excluded.",
         "sourcePage": 2
       },
       "evidence": [
@@ -3777,9 +3776,9 @@
           "sourceId": "usm-pg-fees-2025-2026",
           "sourceUrl": "https://admission.usm.my/index.php/postgraduate/fee-pg",
           "sourcePage": 2,
-          "sourceText": "verified-calculated-total-range",
+          "sourceText": "official-total-unpublished",
           "retrievedAt": "2026-06-14T15:01:36Z",
-          "confidence": 1
+          "confidence": 0
         }
       ],
       "detailSha256": "1b298b15ac11a2d893fb82e07e5f2c5d20dbe95c31b947f093960ac704a07225"
@@ -3894,21 +3893,19 @@
       "publicDisplayStatus": "ready",
       "reviewReasons": [],
       "publicationWarnings": [
-        "programme-specific intake is unpublished"
+        "programme-specific intake is unpublished",
+        "no uniquely applicable current international tuition"
       ],
       "fee": {
-        "status": "verified-calculated-total-range",
-        "tuitionAmount": {
-          "min": 10000.0,
-          "max": 25000.0
-        },
+        "status": "official-total-unpublished",
+        "tuitionAmount": null,
         "tuitionCurrency": "USD",
-        "tuitionBasis": "total-programme",
+        "tuitionBasis": "per-semester-rate-only",
         "officialRatePerSemester": 2500.0,
         "tuitionAcademicSession": "2025/2026",
         "officialFeeSourceUrl": "https://admission.usm.my/index.php/postgraduate/fee-pg",
-        "provenance": "calculated-from-official-components",
-        "calculation": "international full-time per-semester rate x 4-10 semesters",
+        "provenance": "official-rate-only",
+        "reason": "The official source publishes a per-semester rate but no standard programme total. StudyMY does not calculate a total, and extension-period tuition is excluded.",
         "sourcePage": 2
       },
       "evidence": [
@@ -3925,9 +3922,9 @@
           "sourceId": "usm-pg-fees-2025-2026",
           "sourceUrl": "https://admission.usm.my/index.php/postgraduate/fee-pg",
           "sourcePage": 2,
-          "sourceText": "verified-calculated-total-range",
+          "sourceText": "official-total-unpublished",
           "retrievedAt": "2026-06-14T15:01:36Z",
-          "confidence": 1
+          "confidence": 0
         }
       ],
       "detailSha256": "b3b5178d0530637f94c2f20c3dcb94e20a90d4da5013c43399b045a4726efc8f"
@@ -4042,21 +4039,19 @@
       "publicDisplayStatus": "ready",
       "reviewReasons": [],
       "publicationWarnings": [
-        "programme-specific intake is unpublished"
+        "programme-specific intake is unpublished",
+        "no uniquely applicable current international tuition"
       ],
       "fee": {
-        "status": "verified-calculated-total-range",
-        "tuitionAmount": {
-          "min": 7400.0,
-          "max": 18500.0
-        },
+        "status": "official-total-unpublished",
+        "tuitionAmount": null,
         "tuitionCurrency": "USD",
-        "tuitionBasis": "total-programme",
+        "tuitionBasis": "per-semester-rate-only",
         "officialRatePerSemester": 1850.0,
         "tuitionAcademicSession": "2025/2026",
         "officialFeeSourceUrl": "https://admission.usm.my/index.php/postgraduate/fee-pg",
-        "provenance": "calculated-from-official-components",
-        "calculation": "international full-time per-semester rate x 4-10 semesters",
+        "provenance": "official-rate-only",
+        "reason": "The official source publishes a per-semester rate but no standard programme total. StudyMY does not calculate a total, and extension-period tuition is excluded.",
         "sourcePage": 2
       },
       "evidence": [
@@ -4073,9 +4068,9 @@
           "sourceId": "usm-pg-fees-2025-2026",
           "sourceUrl": "https://admission.usm.my/index.php/postgraduate/fee-pg",
           "sourcePage": 2,
-          "sourceText": "verified-calculated-total-range",
+          "sourceText": "official-total-unpublished",
           "retrievedAt": "2026-06-14T15:01:36Z",
-          "confidence": 1
+          "confidence": 0
         }
       ],
       "detailSha256": "8a1287425e8459a5230630380798ec1eb4507682ea648846e08a377015077ab9"
@@ -4190,21 +4185,19 @@
       "publicDisplayStatus": "ready",
       "reviewReasons": [],
       "publicationWarnings": [
-        "programme-specific intake is unpublished"
+        "programme-specific intake is unpublished",
+        "no uniquely applicable current international tuition"
       ],
       "fee": {
-        "status": "verified-calculated-total-range",
-        "tuitionAmount": {
-          "min": 7400.0,
-          "max": 18500.0
-        },
+        "status": "official-total-unpublished",
+        "tuitionAmount": null,
         "tuitionCurrency": "USD",
-        "tuitionBasis": "total-programme",
+        "tuitionBasis": "per-semester-rate-only",
         "officialRatePerSemester": 1850.0,
         "tuitionAcademicSession": "2025/2026",
         "officialFeeSourceUrl": "https://admission.usm.my/index.php/postgraduate/fee-pg",
-        "provenance": "calculated-from-official-components",
-        "calculation": "international full-time per-semester rate x 4-10 semesters",
+        "provenance": "official-rate-only",
+        "reason": "The official source publishes a per-semester rate but no standard programme total. StudyMY does not calculate a total, and extension-period tuition is excluded.",
         "sourcePage": 2
       },
       "evidence": [
@@ -4221,9 +4214,9 @@
           "sourceId": "usm-pg-fees-2025-2026",
           "sourceUrl": "https://admission.usm.my/index.php/postgraduate/fee-pg",
           "sourcePage": 2,
-          "sourceText": "verified-calculated-total-range",
+          "sourceText": "official-total-unpublished",
           "retrievedAt": "2026-06-14T15:01:36Z",
-          "confidence": 1
+          "confidence": 0
         }
       ],
       "detailSha256": "f870d73aa59a2271ea5dc0ad74830cc42339b747bea49d8d41f398338ba27f2c"
@@ -4338,21 +4331,19 @@
       "publicDisplayStatus": "ready",
       "reviewReasons": [],
       "publicationWarnings": [
-        "programme-specific intake is unpublished"
+        "programme-specific intake is unpublished",
+        "no uniquely applicable current international tuition"
       ],
       "fee": {
-        "status": "verified-calculated-total-range",
-        "tuitionAmount": {
-          "min": 7200.0,
-          "max": 18000.0
-        },
+        "status": "official-total-unpublished",
+        "tuitionAmount": null,
         "tuitionCurrency": "USD",
-        "tuitionBasis": "total-programme",
+        "tuitionBasis": "per-semester-rate-only",
         "officialRatePerSemester": 1800.0,
         "tuitionAcademicSession": "2025/2026",
         "officialFeeSourceUrl": "https://admission.usm.my/index.php/postgraduate/fee-pg",
-        "provenance": "calculated-from-official-components",
-        "calculation": "international full-time per-semester rate x 4-10 semesters",
+        "provenance": "official-rate-only",
+        "reason": "The official source publishes a per-semester rate but no standard programme total. StudyMY does not calculate a total, and extension-period tuition is excluded.",
         "sourcePage": 2
       },
       "evidence": [
@@ -4369,9 +4360,9 @@
           "sourceId": "usm-pg-fees-2025-2026",
           "sourceUrl": "https://admission.usm.my/index.php/postgraduate/fee-pg",
           "sourcePage": 2,
-          "sourceText": "verified-calculated-total-range",
+          "sourceText": "official-total-unpublished",
           "retrievedAt": "2026-06-14T15:01:36Z",
-          "confidence": 1
+          "confidence": 0
         }
       ],
       "detailSha256": "76f39ccadda810cc102dbc514ea02aeb4a81fc4f340a31ca8279b724b93bba46"
@@ -4486,21 +4477,19 @@
       "publicDisplayStatus": "ready",
       "reviewReasons": [],
       "publicationWarnings": [
-        "programme-specific intake is unpublished"
+        "programme-specific intake is unpublished",
+        "no uniquely applicable current international tuition"
       ],
       "fee": {
-        "status": "verified-calculated-total-range",
-        "tuitionAmount": {
-          "min": 7200.0,
-          "max": 18000.0
-        },
+        "status": "official-total-unpublished",
+        "tuitionAmount": null,
         "tuitionCurrency": "USD",
-        "tuitionBasis": "total-programme",
+        "tuitionBasis": "per-semester-rate-only",
         "officialRatePerSemester": 1800.0,
         "tuitionAcademicSession": "2025/2026",
         "officialFeeSourceUrl": "https://admission.usm.my/index.php/postgraduate/fee-pg",
-        "provenance": "calculated-from-official-components",
-        "calculation": "international full-time per-semester rate x 4-10 semesters",
+        "provenance": "official-rate-only",
+        "reason": "The official source publishes a per-semester rate but no standard programme total. StudyMY does not calculate a total, and extension-period tuition is excluded.",
         "sourcePage": 2
       },
       "evidence": [
@@ -4517,9 +4506,9 @@
           "sourceId": "usm-pg-fees-2025-2026",
           "sourceUrl": "https://admission.usm.my/index.php/postgraduate/fee-pg",
           "sourcePage": 2,
-          "sourceText": "verified-calculated-total-range",
+          "sourceText": "official-total-unpublished",
           "retrievedAt": "2026-06-14T15:01:36Z",
-          "confidence": 1
+          "confidence": 0
         }
       ],
       "detailSha256": "8ffeae6b0addef47fa50c4523fe689f6ea9c7ad0df13bcddc1526cdf0609ade2"
@@ -4634,21 +4623,19 @@
       "publicDisplayStatus": "ready",
       "reviewReasons": [],
       "publicationWarnings": [
-        "programme-specific intake is unpublished"
+        "programme-specific intake is unpublished",
+        "no uniquely applicable current international tuition"
       ],
       "fee": {
-        "status": "verified-calculated-total-range",
-        "tuitionAmount": {
-          "min": 7400.0,
-          "max": 18500.0
-        },
+        "status": "official-total-unpublished",
+        "tuitionAmount": null,
         "tuitionCurrency": "USD",
-        "tuitionBasis": "total-programme",
+        "tuitionBasis": "per-semester-rate-only",
         "officialRatePerSemester": 1850.0,
         "tuitionAcademicSession": "2025/2026",
         "officialFeeSourceUrl": "https://admission.usm.my/index.php/postgraduate/fee-pg",
-        "provenance": "calculated-from-official-components",
-        "calculation": "international full-time per-semester rate x 4-10 semesters",
+        "provenance": "official-rate-only",
+        "reason": "The official source publishes a per-semester rate but no standard programme total. StudyMY does not calculate a total, and extension-period tuition is excluded.",
         "sourcePage": 2
       },
       "evidence": [
@@ -4665,9 +4652,9 @@
           "sourceId": "usm-pg-fees-2025-2026",
           "sourceUrl": "https://admission.usm.my/index.php/postgraduate/fee-pg",
           "sourcePage": 2,
-          "sourceText": "verified-calculated-total-range",
+          "sourceText": "official-total-unpublished",
           "retrievedAt": "2026-06-14T15:01:36Z",
-          "confidence": 1
+          "confidence": 0
         }
       ],
       "detailSha256": "063afcad73cb09441525053a3bbe6373710b9146d9245b478596b2609738a2c3"
@@ -4782,21 +4769,19 @@
       "publicDisplayStatus": "ready",
       "reviewReasons": [],
       "publicationWarnings": [
-        "programme-specific intake is unpublished"
+        "programme-specific intake is unpublished",
+        "no uniquely applicable current international tuition"
       ],
       "fee": {
-        "status": "verified-calculated-total-range",
-        "tuitionAmount": {
-          "min": 7400.0,
-          "max": 18500.0
-        },
+        "status": "official-total-unpublished",
+        "tuitionAmount": null,
         "tuitionCurrency": "USD",
-        "tuitionBasis": "total-programme",
+        "tuitionBasis": "per-semester-rate-only",
         "officialRatePerSemester": 1850.0,
         "tuitionAcademicSession": "2025/2026",
         "officialFeeSourceUrl": "https://admission.usm.my/index.php/postgraduate/fee-pg",
-        "provenance": "calculated-from-official-components",
-        "calculation": "international full-time per-semester rate x 4-10 semesters",
+        "provenance": "official-rate-only",
+        "reason": "The official source publishes a per-semester rate but no standard programme total. StudyMY does not calculate a total, and extension-period tuition is excluded.",
         "sourcePage": 2
       },
       "evidence": [
@@ -4813,9 +4798,9 @@
           "sourceId": "usm-pg-fees-2025-2026",
           "sourceUrl": "https://admission.usm.my/index.php/postgraduate/fee-pg",
           "sourcePage": 2,
-          "sourceText": "verified-calculated-total-range",
+          "sourceText": "official-total-unpublished",
           "retrievedAt": "2026-06-14T15:01:36Z",
-          "confidence": 1
+          "confidence": 0
         }
       ],
       "detailSha256": "ed71c40c9da1ca2af68feb89f24b2b7a01023627d13245340ff752ad05f93253"
@@ -4930,21 +4915,19 @@
       "publicDisplayStatus": "ready",
       "reviewReasons": [],
       "publicationWarnings": [
-        "programme-specific intake is unpublished"
+        "programme-specific intake is unpublished",
+        "no uniquely applicable current international tuition"
       ],
       "fee": {
-        "status": "verified-calculated-total-range",
-        "tuitionAmount": {
-          "min": 7400.0,
-          "max": 18500.0
-        },
+        "status": "official-total-unpublished",
+        "tuitionAmount": null,
         "tuitionCurrency": "USD",
-        "tuitionBasis": "total-programme",
+        "tuitionBasis": "per-semester-rate-only",
         "officialRatePerSemester": 1850.0,
         "tuitionAcademicSession": "2025/2026",
         "officialFeeSourceUrl": "https://admission.usm.my/index.php/postgraduate/fee-pg",
-        "provenance": "calculated-from-official-components",
-        "calculation": "international full-time per-semester rate x 4-10 semesters",
+        "provenance": "official-rate-only",
+        "reason": "The official source publishes a per-semester rate but no standard programme total. StudyMY does not calculate a total, and extension-period tuition is excluded.",
         "sourcePage": 2
       },
       "evidence": [
@@ -4961,9 +4944,9 @@
           "sourceId": "usm-pg-fees-2025-2026",
           "sourceUrl": "https://admission.usm.my/index.php/postgraduate/fee-pg",
           "sourcePage": 2,
-          "sourceText": "verified-calculated-total-range",
+          "sourceText": "official-total-unpublished",
           "retrievedAt": "2026-06-14T15:01:36Z",
-          "confidence": 1
+          "confidence": 0
         }
       ],
       "detailSha256": "3b976e69cbc7abaaed878411b187429a9c5a45afe55410a922c0ce281f1554cc"
@@ -5078,21 +5061,19 @@
       "publicDisplayStatus": "ready",
       "reviewReasons": [],
       "publicationWarnings": [
-        "programme-specific intake is unpublished"
+        "programme-specific intake is unpublished",
+        "no uniquely applicable current international tuition"
       ],
       "fee": {
-        "status": "verified-calculated-total-range",
-        "tuitionAmount": {
-          "min": 7400.0,
-          "max": 18500.0
-        },
+        "status": "official-total-unpublished",
+        "tuitionAmount": null,
         "tuitionCurrency": "USD",
-        "tuitionBasis": "total-programme",
+        "tuitionBasis": "per-semester-rate-only",
         "officialRatePerSemester": 1850.0,
         "tuitionAcademicSession": "2025/2026",
         "officialFeeSourceUrl": "https://admission.usm.my/index.php/postgraduate/fee-pg",
-        "provenance": "calculated-from-official-components",
-        "calculation": "international full-time per-semester rate x 4-10 semesters",
+        "provenance": "official-rate-only",
+        "reason": "The official source publishes a per-semester rate but no standard programme total. StudyMY does not calculate a total, and extension-period tuition is excluded.",
         "sourcePage": 2
       },
       "evidence": [
@@ -5109,9 +5090,9 @@
           "sourceId": "usm-pg-fees-2025-2026",
           "sourceUrl": "https://admission.usm.my/index.php/postgraduate/fee-pg",
           "sourcePage": 2,
-          "sourceText": "verified-calculated-total-range",
+          "sourceText": "official-total-unpublished",
           "retrievedAt": "2026-06-14T15:01:36Z",
-          "confidence": 1
+          "confidence": 0
         }
       ],
       "detailSha256": "9988c645989714e5e113aaa36859b36b37bca79d329f5406ab868500c95b5c05"
@@ -5225,20 +5206,19 @@
       "officialSourceStatus": "verified",
       "publicDisplayStatus": "ready",
       "reviewReasons": [],
-      "publicationWarnings": [],
+      "publicationWarnings": [
+        "no uniquely applicable current international tuition"
+      ],
       "fee": {
-        "status": "verified-calculated-total-range",
-        "tuitionAmount": {
-          "min": 8200.0,
-          "max": 20500.0
-        },
+        "status": "official-total-unpublished",
+        "tuitionAmount": null,
         "tuitionCurrency": "USD",
-        "tuitionBasis": "total-programme",
+        "tuitionBasis": "per-semester-rate-only",
         "officialRatePerSemester": 2050.0,
         "tuitionAcademicSession": "2025/2026",
         "officialFeeSourceUrl": "https://admission.usm.my/index.php/postgraduate/fee-pg",
-        "provenance": "calculated-from-official-components",
-        "calculation": "international full-time per-semester rate x 4-10 semesters",
+        "provenance": "official-rate-only",
+        "reason": "The official source publishes a per-semester rate but no standard programme total. StudyMY does not calculate a total, and extension-period tuition is excluded.",
         "sourcePage": 2
       },
       "evidence": [
@@ -5255,9 +5235,9 @@
           "sourceId": "usm-pg-fees-2025-2026",
           "sourceUrl": "https://admission.usm.my/index.php/postgraduate/fee-pg",
           "sourcePage": 2,
-          "sourceText": "verified-calculated-total-range",
+          "sourceText": "official-total-unpublished",
           "retrievedAt": "2026-06-14T15:01:36Z",
-          "confidence": 1
+          "confidence": 0
         }
       ],
       "detailSha256": "e01bd26b29e6df6fb36517c7ba266865e19606d7aa2b8cf950dc84996be2804e"
@@ -5372,21 +5352,19 @@
       "publicDisplayStatus": "ready",
       "reviewReasons": [],
       "publicationWarnings": [
-        "programme-specific intake is unpublished"
+        "programme-specific intake is unpublished",
+        "no uniquely applicable current international tuition"
       ],
       "fee": {
-        "status": "verified-calculated-total-range",
-        "tuitionAmount": {
-          "min": 7400.0,
-          "max": 18500.0
-        },
+        "status": "official-total-unpublished",
+        "tuitionAmount": null,
         "tuitionCurrency": "USD",
-        "tuitionBasis": "total-programme",
+        "tuitionBasis": "per-semester-rate-only",
         "officialRatePerSemester": 1850.0,
         "tuitionAcademicSession": "2025/2026",
         "officialFeeSourceUrl": "https://admission.usm.my/index.php/postgraduate/fee-pg",
-        "provenance": "calculated-from-official-components",
-        "calculation": "international full-time per-semester rate x 4-10 semesters",
+        "provenance": "official-rate-only",
+        "reason": "The official source publishes a per-semester rate but no standard programme total. StudyMY does not calculate a total, and extension-period tuition is excluded.",
         "sourcePage": 2
       },
       "evidence": [
@@ -5403,9 +5381,9 @@
           "sourceId": "usm-pg-fees-2025-2026",
           "sourceUrl": "https://admission.usm.my/index.php/postgraduate/fee-pg",
           "sourcePage": 2,
-          "sourceText": "verified-calculated-total-range",
+          "sourceText": "official-total-unpublished",
           "retrievedAt": "2026-06-14T15:01:36Z",
-          "confidence": 1
+          "confidence": 0
         }
       ],
       "detailSha256": "2f3e1b3c28645759f41ea2159227687fb28d1e611916da780859c38031949cff"
@@ -5520,21 +5498,19 @@
       "publicDisplayStatus": "ready",
       "reviewReasons": [],
       "publicationWarnings": [
-        "programme-specific intake is unpublished"
+        "programme-specific intake is unpublished",
+        "no uniquely applicable current international tuition"
       ],
       "fee": {
-        "status": "verified-calculated-total-range",
-        "tuitionAmount": {
-          "min": 7400.0,
-          "max": 18500.0
-        },
+        "status": "official-total-unpublished",
+        "tuitionAmount": null,
         "tuitionCurrency": "USD",
-        "tuitionBasis": "total-programme",
+        "tuitionBasis": "per-semester-rate-only",
         "officialRatePerSemester": 1850.0,
         "tuitionAcademicSession": "2025/2026",
         "officialFeeSourceUrl": "https://admission.usm.my/index.php/postgraduate/fee-pg",
-        "provenance": "calculated-from-official-components",
-        "calculation": "international full-time per-semester rate x 4-10 semesters",
+        "provenance": "official-rate-only",
+        "reason": "The official source publishes a per-semester rate but no standard programme total. StudyMY does not calculate a total, and extension-period tuition is excluded.",
         "sourcePage": 2
       },
       "evidence": [
@@ -5551,9 +5527,9 @@
           "sourceId": "usm-pg-fees-2025-2026",
           "sourceUrl": "https://admission.usm.my/index.php/postgraduate/fee-pg",
           "sourcePage": 2,
-          "sourceText": "verified-calculated-total-range",
+          "sourceText": "official-total-unpublished",
           "retrievedAt": "2026-06-14T15:01:36Z",
-          "confidence": 1
+          "confidence": 0
         }
       ],
       "detailSha256": "46841627e8d2f2777df20af0c15186b5dc4bafb491c9dfa0af7dc6265c279931"
@@ -5668,21 +5644,19 @@
       "publicDisplayStatus": "ready",
       "reviewReasons": [],
       "publicationWarnings": [
-        "programme-specific intake is unpublished"
+        "programme-specific intake is unpublished",
+        "no uniquely applicable current international tuition"
       ],
       "fee": {
-        "status": "verified-calculated-total-range",
-        "tuitionAmount": {
-          "min": 10000.0,
-          "max": 25000.0
-        },
+        "status": "official-total-unpublished",
+        "tuitionAmount": null,
         "tuitionCurrency": "USD",
-        "tuitionBasis": "total-programme",
+        "tuitionBasis": "per-semester-rate-only",
         "officialRatePerSemester": 2500.0,
         "tuitionAcademicSession": "2025/2026",
         "officialFeeSourceUrl": "https://admission.usm.my/index.php/postgraduate/fee-pg",
-        "provenance": "calculated-from-official-components",
-        "calculation": "international full-time per-semester rate x 4-10 semesters",
+        "provenance": "official-rate-only",
+        "reason": "The official source publishes a per-semester rate but no standard programme total. StudyMY does not calculate a total, and extension-period tuition is excluded.",
         "sourcePage": 2
       },
       "evidence": [
@@ -5699,9 +5673,9 @@
           "sourceId": "usm-pg-fees-2025-2026",
           "sourceUrl": "https://admission.usm.my/index.php/postgraduate/fee-pg",
           "sourcePage": 2,
-          "sourceText": "verified-calculated-total-range",
+          "sourceText": "official-total-unpublished",
           "retrievedAt": "2026-06-14T15:01:36Z",
-          "confidence": 1
+          "confidence": 0
         }
       ],
       "detailSha256": "cf107d04b23034393d0498abc156be71d95caaf4eed41ecfd00e26daa352a341"
@@ -5816,21 +5790,19 @@
       "publicDisplayStatus": "ready",
       "reviewReasons": [],
       "publicationWarnings": [
-        "programme-specific intake is unpublished"
+        "programme-specific intake is unpublished",
+        "no uniquely applicable current international tuition"
       ],
       "fee": {
-        "status": "verified-calculated-total-range",
-        "tuitionAmount": {
-          "min": 11400.0,
-          "max": 28500.0
-        },
+        "status": "official-total-unpublished",
+        "tuitionAmount": null,
         "tuitionCurrency": "USD",
-        "tuitionBasis": "total-programme",
+        "tuitionBasis": "per-semester-rate-only",
         "officialRatePerSemester": 2850.0,
         "tuitionAcademicSession": "2025/2026",
         "officialFeeSourceUrl": "https://admission.usm.my/index.php/postgraduate/fee-pg",
-        "provenance": "calculated-from-official-components",
-        "calculation": "international full-time per-semester rate x 4-10 semesters",
+        "provenance": "official-rate-only",
+        "reason": "The official source publishes a per-semester rate but no standard programme total. StudyMY does not calculate a total, and extension-period tuition is excluded.",
         "sourcePage": 2
       },
       "evidence": [
@@ -5847,9 +5819,9 @@
           "sourceId": "usm-pg-fees-2025-2026",
           "sourceUrl": "https://admission.usm.my/index.php/postgraduate/fee-pg",
           "sourcePage": 2,
-          "sourceText": "verified-calculated-total-range",
+          "sourceText": "official-total-unpublished",
           "retrievedAt": "2026-06-14T15:01:36Z",
-          "confidence": 1
+          "confidence": 0
         }
       ],
       "detailSha256": "65118ee51ef0c5d814927e3fa158e1883789db956e7498b04fd6ba6b8787b676"
@@ -5964,21 +5936,19 @@
       "publicDisplayStatus": "ready",
       "reviewReasons": [],
       "publicationWarnings": [
-        "programme-specific intake is unpublished"
+        "programme-specific intake is unpublished",
+        "no uniquely applicable current international tuition"
       ],
       "fee": {
-        "status": "verified-calculated-total-range",
-        "tuitionAmount": {
-          "min": 10000.0,
-          "max": 25000.0
-        },
+        "status": "official-total-unpublished",
+        "tuitionAmount": null,
         "tuitionCurrency": "USD",
-        "tuitionBasis": "total-programme",
+        "tuitionBasis": "per-semester-rate-only",
         "officialRatePerSemester": 2500.0,
         "tuitionAcademicSession": "2025/2026",
         "officialFeeSourceUrl": "https://admission.usm.my/index.php/postgraduate/fee-pg",
-        "provenance": "calculated-from-official-components",
-        "calculation": "international full-time per-semester rate x 4-10 semesters",
+        "provenance": "official-rate-only",
+        "reason": "The official source publishes a per-semester rate but no standard programme total. StudyMY does not calculate a total, and extension-period tuition is excluded.",
         "sourcePage": 2
       },
       "evidence": [
@@ -5995,9 +5965,9 @@
           "sourceId": "usm-pg-fees-2025-2026",
           "sourceUrl": "https://admission.usm.my/index.php/postgraduate/fee-pg",
           "sourcePage": 2,
-          "sourceText": "verified-calculated-total-range",
+          "sourceText": "official-total-unpublished",
           "retrievedAt": "2026-06-14T15:01:36Z",
-          "confidence": 1
+          "confidence": 0
         }
       ],
       "detailSha256": "dcc0269615c7b188f231fa2a5bea21385045a53e57fc00f661239b7a9196bcce"
@@ -6112,21 +6082,19 @@
       "publicDisplayStatus": "ready",
       "reviewReasons": [],
       "publicationWarnings": [
-        "programme-specific intake is unpublished"
+        "programme-specific intake is unpublished",
+        "no uniquely applicable current international tuition"
       ],
       "fee": {
-        "status": "verified-calculated-total-range",
-        "tuitionAmount": {
-          "min": 7400.0,
-          "max": 18500.0
-        },
+        "status": "official-total-unpublished",
+        "tuitionAmount": null,
         "tuitionCurrency": "USD",
-        "tuitionBasis": "total-programme",
+        "tuitionBasis": "per-semester-rate-only",
         "officialRatePerSemester": 1850.0,
         "tuitionAcademicSession": "2025/2026",
         "officialFeeSourceUrl": "https://admission.usm.my/index.php/postgraduate/fee-pg",
-        "provenance": "calculated-from-official-components",
-        "calculation": "international full-time per-semester rate x 4-10 semesters",
+        "provenance": "official-rate-only",
+        "reason": "The official source publishes a per-semester rate but no standard programme total. StudyMY does not calculate a total, and extension-period tuition is excluded.",
         "sourcePage": 2
       },
       "evidence": [
@@ -6143,9 +6111,9 @@
           "sourceId": "usm-pg-fees-2025-2026",
           "sourceUrl": "https://admission.usm.my/index.php/postgraduate/fee-pg",
           "sourcePage": 2,
-          "sourceText": "verified-calculated-total-range",
+          "sourceText": "official-total-unpublished",
           "retrievedAt": "2026-06-14T15:01:36Z",
-          "confidence": 1
+          "confidence": 0
         }
       ],
       "detailSha256": "85a105134520da95c3a4c79b2fe7ba7cb823d762f183354e6028e307a9f835d8"
@@ -6260,21 +6228,19 @@
       "publicDisplayStatus": "ready",
       "reviewReasons": [],
       "publicationWarnings": [
-        "programme-specific intake is unpublished"
+        "programme-specific intake is unpublished",
+        "no uniquely applicable current international tuition"
       ],
       "fee": {
-        "status": "verified-calculated-total-range",
-        "tuitionAmount": {
-          "min": 7400.0,
-          "max": 18500.0
-        },
+        "status": "official-total-unpublished",
+        "tuitionAmount": null,
         "tuitionCurrency": "USD",
-        "tuitionBasis": "total-programme",
+        "tuitionBasis": "per-semester-rate-only",
         "officialRatePerSemester": 1850.0,
         "tuitionAcademicSession": "2025/2026",
         "officialFeeSourceUrl": "https://admission.usm.my/index.php/postgraduate/fee-pg",
-        "provenance": "calculated-from-official-components",
-        "calculation": "international full-time per-semester rate x 4-10 semesters",
+        "provenance": "official-rate-only",
+        "reason": "The official source publishes a per-semester rate but no standard programme total. StudyMY does not calculate a total, and extension-period tuition is excluded.",
         "sourcePage": 2
       },
       "evidence": [
@@ -6291,9 +6257,9 @@
           "sourceId": "usm-pg-fees-2025-2026",
           "sourceUrl": "https://admission.usm.my/index.php/postgraduate/fee-pg",
           "sourcePage": 2,
-          "sourceText": "verified-calculated-total-range",
+          "sourceText": "official-total-unpublished",
           "retrievedAt": "2026-06-14T15:01:36Z",
-          "confidence": 1
+          "confidence": 0
         }
       ],
       "detailSha256": "d71d94ee117b10b7836df6b50c1696709ff1c2167b3e9b43928c46e5f3c4c428"
@@ -6408,21 +6374,19 @@
       "publicDisplayStatus": "ready",
       "reviewReasons": [],
       "publicationWarnings": [
-        "programme-specific intake is unpublished"
+        "programme-specific intake is unpublished",
+        "no uniquely applicable current international tuition"
       ],
       "fee": {
-        "status": "verified-calculated-total-range",
-        "tuitionAmount": {
-          "min": 10000.0,
-          "max": 25000.0
-        },
+        "status": "official-total-unpublished",
+        "tuitionAmount": null,
         "tuitionCurrency": "USD",
-        "tuitionBasis": "total-programme",
+        "tuitionBasis": "per-semester-rate-only",
         "officialRatePerSemester": 2500.0,
         "tuitionAcademicSession": "2025/2026",
         "officialFeeSourceUrl": "https://admission.usm.my/index.php/postgraduate/fee-pg",
-        "provenance": "calculated-from-official-components",
-        "calculation": "international full-time per-semester rate x 4-10 semesters",
+        "provenance": "official-rate-only",
+        "reason": "The official source publishes a per-semester rate but no standard programme total. StudyMY does not calculate a total, and extension-period tuition is excluded.",
         "sourcePage": 2
       },
       "evidence": [
@@ -6439,9 +6403,9 @@
           "sourceId": "usm-pg-fees-2025-2026",
           "sourceUrl": "https://admission.usm.my/index.php/postgraduate/fee-pg",
           "sourcePage": 2,
-          "sourceText": "verified-calculated-total-range",
+          "sourceText": "official-total-unpublished",
           "retrievedAt": "2026-06-14T15:01:36Z",
-          "confidence": 1
+          "confidence": 0
         }
       ],
       "detailSha256": "79fedb8069fe22ebd5c3b075b76525687d26a502447854e59f22e3a94dca7438"
@@ -6556,21 +6520,19 @@
       "publicDisplayStatus": "ready",
       "reviewReasons": [],
       "publicationWarnings": [
-        "programme-specific intake is unpublished"
+        "programme-specific intake is unpublished",
+        "no uniquely applicable current international tuition"
       ],
       "fee": {
-        "status": "verified-calculated-total-range",
-        "tuitionAmount": {
-          "min": 7200.0,
-          "max": 18000.0
-        },
+        "status": "official-total-unpublished",
+        "tuitionAmount": null,
         "tuitionCurrency": "USD",
-        "tuitionBasis": "total-programme",
+        "tuitionBasis": "per-semester-rate-only",
         "officialRatePerSemester": 1800.0,
         "tuitionAcademicSession": "2025/2026",
         "officialFeeSourceUrl": "https://admission.usm.my/index.php/postgraduate/fee-pg",
-        "provenance": "calculated-from-official-components",
-        "calculation": "international full-time per-semester rate x 4-10 semesters",
+        "provenance": "official-rate-only",
+        "reason": "The official source publishes a per-semester rate but no standard programme total. StudyMY does not calculate a total, and extension-period tuition is excluded.",
         "sourcePage": 2
       },
       "evidence": [
@@ -6587,9 +6549,9 @@
           "sourceId": "usm-pg-fees-2025-2026",
           "sourceUrl": "https://admission.usm.my/index.php/postgraduate/fee-pg",
           "sourcePage": 2,
-          "sourceText": "verified-calculated-total-range",
+          "sourceText": "official-total-unpublished",
           "retrievedAt": "2026-06-14T15:01:36Z",
-          "confidence": 1
+          "confidence": 0
         }
       ],
       "detailSha256": "0102c61bfe9723868675902e906170cd6b48411ceb7181d8977fdec04fd2eb7b"
@@ -6704,21 +6666,19 @@
       "publicDisplayStatus": "ready",
       "reviewReasons": [],
       "publicationWarnings": [
-        "programme-specific intake is unpublished"
+        "programme-specific intake is unpublished",
+        "no uniquely applicable current international tuition"
       ],
       "fee": {
-        "status": "verified-calculated-total-range",
-        "tuitionAmount": {
-          "min": 7200.0,
-          "max": 18000.0
-        },
+        "status": "official-total-unpublished",
+        "tuitionAmount": null,
         "tuitionCurrency": "USD",
-        "tuitionBasis": "total-programme",
+        "tuitionBasis": "per-semester-rate-only",
         "officialRatePerSemester": 1800.0,
         "tuitionAcademicSession": "2025/2026",
         "officialFeeSourceUrl": "https://admission.usm.my/index.php/postgraduate/fee-pg",
-        "provenance": "calculated-from-official-components",
-        "calculation": "international full-time per-semester rate x 4-10 semesters",
+        "provenance": "official-rate-only",
+        "reason": "The official source publishes a per-semester rate but no standard programme total. StudyMY does not calculate a total, and extension-period tuition is excluded.",
         "sourcePage": 2
       },
       "evidence": [
@@ -6735,9 +6695,9 @@
           "sourceId": "usm-pg-fees-2025-2026",
           "sourceUrl": "https://admission.usm.my/index.php/postgraduate/fee-pg",
           "sourcePage": 2,
-          "sourceText": "verified-calculated-total-range",
+          "sourceText": "official-total-unpublished",
           "retrievedAt": "2026-06-14T15:01:36Z",
-          "confidence": 1
+          "confidence": 0
         }
       ],
       "detailSha256": "afdbc698f7f8008be88c149d516a6df149cef815c2878291dd17236d61b1b363"
@@ -6852,21 +6812,19 @@
       "publicDisplayStatus": "ready",
       "reviewReasons": [],
       "publicationWarnings": [
-        "programme-specific intake is unpublished"
+        "programme-specific intake is unpublished",
+        "no uniquely applicable current international tuition"
       ],
       "fee": {
-        "status": "verified-calculated-total-range",
-        "tuitionAmount": {
-          "min": 10000.0,
-          "max": 25000.0
-        },
+        "status": "official-total-unpublished",
+        "tuitionAmount": null,
         "tuitionCurrency": "USD",
-        "tuitionBasis": "total-programme",
+        "tuitionBasis": "per-semester-rate-only",
         "officialRatePerSemester": 2500.0,
         "tuitionAcademicSession": "2025/2026",
         "officialFeeSourceUrl": "https://admission.usm.my/index.php/postgraduate/fee-pg",
-        "provenance": "calculated-from-official-components",
-        "calculation": "international full-time per-semester rate x 4-10 semesters",
+        "provenance": "official-rate-only",
+        "reason": "The official source publishes a per-semester rate but no standard programme total. StudyMY does not calculate a total, and extension-period tuition is excluded.",
         "sourcePage": 2
       },
       "evidence": [
@@ -6883,9 +6841,9 @@
           "sourceId": "usm-pg-fees-2025-2026",
           "sourceUrl": "https://admission.usm.my/index.php/postgraduate/fee-pg",
           "sourcePage": 2,
-          "sourceText": "verified-calculated-total-range",
+          "sourceText": "official-total-unpublished",
           "retrievedAt": "2026-06-14T15:01:36Z",
-          "confidence": 1
+          "confidence": 0
         }
       ],
       "detailSha256": "41dd04876d2768a0f42411aeac29b92893004e21af1cc09647e1fcbf88cd033b"
@@ -7000,21 +6958,19 @@
       "publicDisplayStatus": "ready",
       "reviewReasons": [],
       "publicationWarnings": [
-        "programme-specific intake is unpublished"
+        "programme-specific intake is unpublished",
+        "no uniquely applicable current international tuition"
       ],
       "fee": {
-        "status": "verified-calculated-total-range",
-        "tuitionAmount": {
-          "min": 5600.0,
-          "max": 14000.0
-        },
+        "status": "official-total-unpublished",
+        "tuitionAmount": null,
         "tuitionCurrency": "USD",
-        "tuitionBasis": "total-programme",
+        "tuitionBasis": "per-semester-rate-only",
         "officialRatePerSemester": 1400.0,
         "tuitionAcademicSession": "2025/2026",
         "officialFeeSourceUrl": "https://admission.usm.my/index.php/postgraduate/fee-pg",
-        "provenance": "calculated-from-official-components",
-        "calculation": "international full-time per-semester rate x 4-10 semesters",
+        "provenance": "official-rate-only",
+        "reason": "The official source publishes a per-semester rate but no standard programme total. StudyMY does not calculate a total, and extension-period tuition is excluded.",
         "sourcePage": 2
       },
       "evidence": [
@@ -7031,9 +6987,9 @@
           "sourceId": "usm-pg-fees-2025-2026",
           "sourceUrl": "https://admission.usm.my/index.php/postgraduate/fee-pg",
           "sourcePage": 2,
-          "sourceText": "verified-calculated-total-range",
+          "sourceText": "official-total-unpublished",
           "retrievedAt": "2026-06-14T15:01:36Z",
-          "confidence": 1
+          "confidence": 0
         }
       ],
       "detailSha256": "075f7c39499b6de108ef9377a0377924067a9e5bbd5db9b1d469876419169715"
@@ -7148,21 +7104,19 @@
       "publicDisplayStatus": "ready",
       "reviewReasons": [],
       "publicationWarnings": [
-        "programme-specific intake is unpublished"
+        "programme-specific intake is unpublished",
+        "no uniquely applicable current international tuition"
       ],
       "fee": {
-        "status": "verified-calculated-total-range",
-        "tuitionAmount": {
-          "min": 5600.0,
-          "max": 14000.0
-        },
+        "status": "official-total-unpublished",
+        "tuitionAmount": null,
         "tuitionCurrency": "USD",
-        "tuitionBasis": "total-programme",
+        "tuitionBasis": "per-semester-rate-only",
         "officialRatePerSemester": 1400.0,
         "tuitionAcademicSession": "2025/2026",
         "officialFeeSourceUrl": "https://admission.usm.my/index.php/postgraduate/fee-pg",
-        "provenance": "calculated-from-official-components",
-        "calculation": "international full-time per-semester rate x 4-10 semesters",
+        "provenance": "official-rate-only",
+        "reason": "The official source publishes a per-semester rate but no standard programme total. StudyMY does not calculate a total, and extension-period tuition is excluded.",
         "sourcePage": 2
       },
       "evidence": [
@@ -7179,9 +7133,9 @@
           "sourceId": "usm-pg-fees-2025-2026",
           "sourceUrl": "https://admission.usm.my/index.php/postgraduate/fee-pg",
           "sourcePage": 2,
-          "sourceText": "verified-calculated-total-range",
+          "sourceText": "official-total-unpublished",
           "retrievedAt": "2026-06-14T15:01:36Z",
-          "confidence": 1
+          "confidence": 0
         }
       ],
       "detailSha256": "d332b75cf80ba423c5636bccfbab3c2abb7d07156dd39a422a1e5023b0a86fc7"
@@ -7296,21 +7250,19 @@
       "publicDisplayStatus": "ready",
       "reviewReasons": [],
       "publicationWarnings": [
-        "programme-specific intake is unpublished"
+        "programme-specific intake is unpublished",
+        "no uniquely applicable current international tuition"
       ],
       "fee": {
-        "status": "verified-calculated-total-range",
-        "tuitionAmount": {
-          "min": 5600.0,
-          "max": 14000.0
-        },
+        "status": "official-total-unpublished",
+        "tuitionAmount": null,
         "tuitionCurrency": "USD",
-        "tuitionBasis": "total-programme",
+        "tuitionBasis": "per-semester-rate-only",
         "officialRatePerSemester": 1400.0,
         "tuitionAcademicSession": "2025/2026",
         "officialFeeSourceUrl": "https://admission.usm.my/index.php/postgraduate/fee-pg",
-        "provenance": "calculated-from-official-components",
-        "calculation": "international full-time per-semester rate x 4-10 semesters",
+        "provenance": "official-rate-only",
+        "reason": "The official source publishes a per-semester rate but no standard programme total. StudyMY does not calculate a total, and extension-period tuition is excluded.",
         "sourcePage": 2
       },
       "evidence": [
@@ -7327,9 +7279,9 @@
           "sourceId": "usm-pg-fees-2025-2026",
           "sourceUrl": "https://admission.usm.my/index.php/postgraduate/fee-pg",
           "sourcePage": 2,
-          "sourceText": "verified-calculated-total-range",
+          "sourceText": "official-total-unpublished",
           "retrievedAt": "2026-06-14T15:01:36Z",
-          "confidence": 1
+          "confidence": 0
         }
       ],
       "detailSha256": "fa984235b018a8dfccdd27ff9bd29e5d38214595918d83faaeae5a9d6125f472"
@@ -7444,21 +7396,19 @@
       "publicDisplayStatus": "ready",
       "reviewReasons": [],
       "publicationWarnings": [
-        "programme-specific intake is unpublished"
+        "programme-specific intake is unpublished",
+        "no uniquely applicable current international tuition"
       ],
       "fee": {
-        "status": "verified-calculated-total-range",
-        "tuitionAmount": {
-          "min": 7400.0,
-          "max": 18500.0
-        },
+        "status": "official-total-unpublished",
+        "tuitionAmount": null,
         "tuitionCurrency": "USD",
-        "tuitionBasis": "total-programme",
+        "tuitionBasis": "per-semester-rate-only",
         "officialRatePerSemester": 1850.0,
         "tuitionAcademicSession": "2025/2026",
         "officialFeeSourceUrl": "https://admission.usm.my/index.php/postgraduate/fee-pg",
-        "provenance": "calculated-from-official-components",
-        "calculation": "international full-time per-semester rate x 4-10 semesters",
+        "provenance": "official-rate-only",
+        "reason": "The official source publishes a per-semester rate but no standard programme total. StudyMY does not calculate a total, and extension-period tuition is excluded.",
         "sourcePage": 2
       },
       "evidence": [
@@ -7475,9 +7425,9 @@
           "sourceId": "usm-pg-fees-2025-2026",
           "sourceUrl": "https://admission.usm.my/index.php/postgraduate/fee-pg",
           "sourcePage": 2,
-          "sourceText": "verified-calculated-total-range",
+          "sourceText": "official-total-unpublished",
           "retrievedAt": "2026-06-14T15:01:36Z",
-          "confidence": 1
+          "confidence": 0
         }
       ],
       "detailSha256": "42c3d787cfca15195b30ea62acb36b2df31db735338f9c20b9aa3a05f27ded03"
@@ -7592,21 +7542,19 @@
       "publicDisplayStatus": "ready",
       "reviewReasons": [],
       "publicationWarnings": [
-        "programme-specific intake is unpublished"
+        "programme-specific intake is unpublished",
+        "no uniquely applicable current international tuition"
       ],
       "fee": {
-        "status": "verified-calculated-total-range",
-        "tuitionAmount": {
-          "min": 5600.0,
-          "max": 14000.0
-        },
+        "status": "official-total-unpublished",
+        "tuitionAmount": null,
         "tuitionCurrency": "USD",
-        "tuitionBasis": "total-programme",
+        "tuitionBasis": "per-semester-rate-only",
         "officialRatePerSemester": 1400.0,
         "tuitionAcademicSession": "2025/2026",
         "officialFeeSourceUrl": "https://admission.usm.my/index.php/postgraduate/fee-pg",
-        "provenance": "calculated-from-official-components",
-        "calculation": "international full-time per-semester rate x 4-10 semesters",
+        "provenance": "official-rate-only",
+        "reason": "The official source publishes a per-semester rate but no standard programme total. StudyMY does not calculate a total, and extension-period tuition is excluded.",
         "sourcePage": 2
       },
       "evidence": [
@@ -7623,9 +7571,9 @@
           "sourceId": "usm-pg-fees-2025-2026",
           "sourceUrl": "https://admission.usm.my/index.php/postgraduate/fee-pg",
           "sourcePage": 2,
-          "sourceText": "verified-calculated-total-range",
+          "sourceText": "official-total-unpublished",
           "retrievedAt": "2026-06-14T15:01:36Z",
-          "confidence": 1
+          "confidence": 0
         }
       ],
       "detailSha256": "3b488f50c69c8518f18c643e6a5da48a257fd156ca87b27bb154c235849a8b1f"
@@ -7736,21 +7684,19 @@
       "publicDisplayStatus": "ready",
       "reviewReasons": [],
       "publicationWarnings": [
-        "programme-specific intake is unpublished"
+        "programme-specific intake is unpublished",
+        "no uniquely applicable current international tuition"
       ],
       "fee": {
-        "status": "verified-calculated-total-range",
-        "tuitionAmount": {
-          "min": 5600.0,
-          "max": 14000.0
-        },
+        "status": "official-total-unpublished",
+        "tuitionAmount": null,
         "tuitionCurrency": "USD",
-        "tuitionBasis": "total-programme",
+        "tuitionBasis": "per-semester-rate-only",
         "officialRatePerSemester": 1400.0,
         "tuitionAcademicSession": "2025/2026",
         "officialFeeSourceUrl": "https://admission.usm.my/index.php/postgraduate/fee-pg",
-        "provenance": "calculated-from-official-components",
-        "calculation": "international full-time per-semester rate x 4-10 semesters",
+        "provenance": "official-rate-only",
+        "reason": "The official source publishes a per-semester rate but no standard programme total. StudyMY does not calculate a total, and extension-period tuition is excluded.",
         "sourcePage": 2
       },
       "evidence": [
@@ -7767,9 +7713,9 @@
           "sourceId": "usm-pg-fees-2025-2026",
           "sourceUrl": "https://admission.usm.my/index.php/postgraduate/fee-pg",
           "sourcePage": 2,
-          "sourceText": "verified-calculated-total-range",
+          "sourceText": "official-total-unpublished",
           "retrievedAt": "2026-06-14T15:01:36Z",
-          "confidence": 1
+          "confidence": 0
         }
       ],
       "detailSha256": "2b506695de6397cf00544bd32beacdaa176ce6bc8258a84c1ae35eefdf33d1c5"
@@ -7884,21 +7830,19 @@
       "publicDisplayStatus": "ready",
       "reviewReasons": [],
       "publicationWarnings": [
-        "programme-specific intake is unpublished"
+        "programme-specific intake is unpublished",
+        "no uniquely applicable current international tuition"
       ],
       "fee": {
-        "status": "verified-calculated-total-range",
-        "tuitionAmount": {
-          "min": 7400.0,
-          "max": 18500.0
-        },
+        "status": "official-total-unpublished",
+        "tuitionAmount": null,
         "tuitionCurrency": "USD",
-        "tuitionBasis": "total-programme",
+        "tuitionBasis": "per-semester-rate-only",
         "officialRatePerSemester": 1850.0,
         "tuitionAcademicSession": "2025/2026",
         "officialFeeSourceUrl": "https://admission.usm.my/index.php/postgraduate/fee-pg",
-        "provenance": "calculated-from-official-components",
-        "calculation": "international full-time per-semester rate x 4-10 semesters",
+        "provenance": "official-rate-only",
+        "reason": "The official source publishes a per-semester rate but no standard programme total. StudyMY does not calculate a total, and extension-period tuition is excluded.",
         "sourcePage": 2
       },
       "evidence": [
@@ -7915,9 +7859,9 @@
           "sourceId": "usm-pg-fees-2025-2026",
           "sourceUrl": "https://admission.usm.my/index.php/postgraduate/fee-pg",
           "sourcePage": 2,
-          "sourceText": "verified-calculated-total-range",
+          "sourceText": "official-total-unpublished",
           "retrievedAt": "2026-06-14T15:01:36Z",
-          "confidence": 1
+          "confidence": 0
         }
       ],
       "detailSha256": "31480f07871edeeea4da3cb107c24bc7aaabef176c382bda267d39b58cc36a59"
@@ -8032,21 +7976,19 @@
       "publicDisplayStatus": "ready",
       "reviewReasons": [],
       "publicationWarnings": [
-        "programme-specific intake is unpublished"
+        "programme-specific intake is unpublished",
+        "no uniquely applicable current international tuition"
       ],
       "fee": {
-        "status": "verified-calculated-total-range",
-        "tuitionAmount": {
-          "min": 7400.0,
-          "max": 18500.0
-        },
+        "status": "official-total-unpublished",
+        "tuitionAmount": null,
         "tuitionCurrency": "USD",
-        "tuitionBasis": "total-programme",
+        "tuitionBasis": "per-semester-rate-only",
         "officialRatePerSemester": 1850.0,
         "tuitionAcademicSession": "2025/2026",
         "officialFeeSourceUrl": "https://admission.usm.my/index.php/postgraduate/fee-pg",
-        "provenance": "calculated-from-official-components",
-        "calculation": "international full-time per-semester rate x 4-10 semesters",
+        "provenance": "official-rate-only",
+        "reason": "The official source publishes a per-semester rate but no standard programme total. StudyMY does not calculate a total, and extension-period tuition is excluded.",
         "sourcePage": 2
       },
       "evidence": [
@@ -8063,9 +8005,9 @@
           "sourceId": "usm-pg-fees-2025-2026",
           "sourceUrl": "https://admission.usm.my/index.php/postgraduate/fee-pg",
           "sourcePage": 2,
-          "sourceText": "verified-calculated-total-range",
+          "sourceText": "official-total-unpublished",
           "retrievedAt": "2026-06-14T15:01:36Z",
-          "confidence": 1
+          "confidence": 0
         }
       ],
       "detailSha256": "ee9c8d86fd4bac063467f42e8ffe63cf6d3a9bf2e05c8b511f16f915ea075e55"
@@ -8180,21 +8122,19 @@
       "publicDisplayStatus": "ready",
       "reviewReasons": [],
       "publicationWarnings": [
-        "programme-specific intake is unpublished"
+        "programme-specific intake is unpublished",
+        "no uniquely applicable current international tuition"
       ],
       "fee": {
-        "status": "verified-calculated-total-range",
-        "tuitionAmount": {
-          "min": 6400.0,
-          "max": 16000.0
-        },
+        "status": "official-total-unpublished",
+        "tuitionAmount": null,
         "tuitionCurrency": "USD",
-        "tuitionBasis": "total-programme",
+        "tuitionBasis": "per-semester-rate-only",
         "officialRatePerSemester": 1600.0,
         "tuitionAcademicSession": "2025/2026",
         "officialFeeSourceUrl": "https://admission.usm.my/index.php/postgraduate/fee-pg",
-        "provenance": "calculated-from-official-components",
-        "calculation": "international full-time per-semester rate x 4-10 semesters",
+        "provenance": "official-rate-only",
+        "reason": "The official source publishes a per-semester rate but no standard programme total. StudyMY does not calculate a total, and extension-period tuition is excluded.",
         "sourcePage": 2
       },
       "evidence": [
@@ -8211,9 +8151,9 @@
           "sourceId": "usm-pg-fees-2025-2026",
           "sourceUrl": "https://admission.usm.my/index.php/postgraduate/fee-pg",
           "sourcePage": 2,
-          "sourceText": "verified-calculated-total-range",
+          "sourceText": "official-total-unpublished",
           "retrievedAt": "2026-06-14T15:01:36Z",
-          "confidence": 1
+          "confidence": 0
         }
       ],
       "detailSha256": "09dce5196a127d40fd155a6b8b781176acde19a8d34c6754b357774de2327a95"
@@ -8328,21 +8268,19 @@
       "publicDisplayStatus": "ready",
       "reviewReasons": [],
       "publicationWarnings": [
-        "programme-specific intake is unpublished"
+        "programme-specific intake is unpublished",
+        "no uniquely applicable current international tuition"
       ],
       "fee": {
-        "status": "verified-calculated-total-range",
-        "tuitionAmount": {
-          "min": 10000.0,
-          "max": 25000.0
-        },
+        "status": "official-total-unpublished",
+        "tuitionAmount": null,
         "tuitionCurrency": "USD",
-        "tuitionBasis": "total-programme",
+        "tuitionBasis": "per-semester-rate-only",
         "officialRatePerSemester": 2500.0,
         "tuitionAcademicSession": "2025/2026",
         "officialFeeSourceUrl": "https://admission.usm.my/index.php/postgraduate/fee-pg",
-        "provenance": "calculated-from-official-components",
-        "calculation": "international full-time per-semester rate x 4-10 semesters",
+        "provenance": "official-rate-only",
+        "reason": "The official source publishes a per-semester rate but no standard programme total. StudyMY does not calculate a total, and extension-period tuition is excluded.",
         "sourcePage": 2
       },
       "evidence": [
@@ -8359,9 +8297,9 @@
           "sourceId": "usm-pg-fees-2025-2026",
           "sourceUrl": "https://admission.usm.my/index.php/postgraduate/fee-pg",
           "sourcePage": 2,
-          "sourceText": "verified-calculated-total-range",
+          "sourceText": "official-total-unpublished",
           "retrievedAt": "2026-06-14T15:01:36Z",
-          "confidence": 1
+          "confidence": 0
         }
       ],
       "detailSha256": "c1509fd353327855dc99da4a3d79c9f9c4e3d63091290169354b4cb31416d470"
@@ -8476,21 +8414,19 @@
       "publicDisplayStatus": "ready",
       "reviewReasons": [],
       "publicationWarnings": [
-        "programme-specific intake is unpublished"
+        "programme-specific intake is unpublished",
+        "no uniquely applicable current international tuition"
       ],
       "fee": {
-        "status": "verified-calculated-total-range",
-        "tuitionAmount": {
-          "min": 7200.0,
-          "max": 18000.0
-        },
+        "status": "official-total-unpublished",
+        "tuitionAmount": null,
         "tuitionCurrency": "USD",
-        "tuitionBasis": "total-programme",
+        "tuitionBasis": "per-semester-rate-only",
         "officialRatePerSemester": 1800.0,
         "tuitionAcademicSession": "2025/2026",
         "officialFeeSourceUrl": "https://admission.usm.my/index.php/postgraduate/fee-pg",
-        "provenance": "calculated-from-official-components",
-        "calculation": "international full-time per-semester rate x 4-10 semesters",
+        "provenance": "official-rate-only",
+        "reason": "The official source publishes a per-semester rate but no standard programme total. StudyMY does not calculate a total, and extension-period tuition is excluded.",
         "sourcePage": 2
       },
       "evidence": [
@@ -8507,9 +8443,9 @@
           "sourceId": "usm-pg-fees-2025-2026",
           "sourceUrl": "https://admission.usm.my/index.php/postgraduate/fee-pg",
           "sourcePage": 2,
-          "sourceText": "verified-calculated-total-range",
+          "sourceText": "official-total-unpublished",
           "retrievedAt": "2026-06-14T15:01:36Z",
-          "confidence": 1
+          "confidence": 0
         }
       ],
       "detailSha256": "60bf5a392916b2bafafd06d9c22bba0faeb5164b8f6c5f29fd4cc5a072b36e89"
@@ -8624,21 +8560,19 @@
       "publicDisplayStatus": "ready",
       "reviewReasons": [],
       "publicationWarnings": [
-        "programme-specific intake is unpublished"
+        "programme-specific intake is unpublished",
+        "no uniquely applicable current international tuition"
       ],
       "fee": {
-        "status": "verified-calculated-total-range",
-        "tuitionAmount": {
-          "min": 10000.0,
-          "max": 25000.0
-        },
+        "status": "official-total-unpublished",
+        "tuitionAmount": null,
         "tuitionCurrency": "USD",
-        "tuitionBasis": "total-programme",
+        "tuitionBasis": "per-semester-rate-only",
         "officialRatePerSemester": 2500.0,
         "tuitionAcademicSession": "2025/2026",
         "officialFeeSourceUrl": "https://admission.usm.my/index.php/postgraduate/fee-pg",
-        "provenance": "calculated-from-official-components",
-        "calculation": "international full-time per-semester rate x 4-10 semesters",
+        "provenance": "official-rate-only",
+        "reason": "The official source publishes a per-semester rate but no standard programme total. StudyMY does not calculate a total, and extension-period tuition is excluded.",
         "sourcePage": 2
       },
       "evidence": [
@@ -8655,9 +8589,9 @@
           "sourceId": "usm-pg-fees-2025-2026",
           "sourceUrl": "https://admission.usm.my/index.php/postgraduate/fee-pg",
           "sourcePage": 2,
-          "sourceText": "verified-calculated-total-range",
+          "sourceText": "official-total-unpublished",
           "retrievedAt": "2026-06-14T15:01:36Z",
-          "confidence": 1
+          "confidence": 0
         }
       ],
       "detailSha256": "38cbeb75d16097a2e2b36e4ddb6482b24c05e5b064e8f50b7491f21e3885dc16"
@@ -8772,21 +8706,19 @@
       "publicDisplayStatus": "ready",
       "reviewReasons": [],
       "publicationWarnings": [
-        "programme-specific intake is unpublished"
+        "programme-specific intake is unpublished",
+        "no uniquely applicable current international tuition"
       ],
       "fee": {
-        "status": "verified-calculated-total-range",
-        "tuitionAmount": {
-          "min": 5600.0,
-          "max": 14000.0
-        },
+        "status": "official-total-unpublished",
+        "tuitionAmount": null,
         "tuitionCurrency": "USD",
-        "tuitionBasis": "total-programme",
+        "tuitionBasis": "per-semester-rate-only",
         "officialRatePerSemester": 1400.0,
         "tuitionAcademicSession": "2025/2026",
         "officialFeeSourceUrl": "https://admission.usm.my/index.php/postgraduate/fee-pg",
-        "provenance": "calculated-from-official-components",
-        "calculation": "international full-time per-semester rate x 4-10 semesters",
+        "provenance": "official-rate-only",
+        "reason": "The official source publishes a per-semester rate but no standard programme total. StudyMY does not calculate a total, and extension-period tuition is excluded.",
         "sourcePage": 2
       },
       "evidence": [
@@ -8803,9 +8735,9 @@
           "sourceId": "usm-pg-fees-2025-2026",
           "sourceUrl": "https://admission.usm.my/index.php/postgraduate/fee-pg",
           "sourcePage": 2,
-          "sourceText": "verified-calculated-total-range",
+          "sourceText": "official-total-unpublished",
           "retrievedAt": "2026-06-14T15:01:36Z",
-          "confidence": 1
+          "confidence": 0
         }
       ],
       "detailSha256": "0ee8284e954e77a3006d2c0a27bef2bc009c55c273ef2b85dbb3d1a74db2fbc6"
@@ -8920,21 +8852,19 @@
       "publicDisplayStatus": "ready",
       "reviewReasons": [],
       "publicationWarnings": [
-        "programme-specific intake is unpublished"
+        "programme-specific intake is unpublished",
+        "no uniquely applicable current international tuition"
       ],
       "fee": {
-        "status": "verified-calculated-total-range",
-        "tuitionAmount": {
-          "min": 10000.0,
-          "max": 25000.0
-        },
+        "status": "official-total-unpublished",
+        "tuitionAmount": null,
         "tuitionCurrency": "USD",
-        "tuitionBasis": "total-programme",
+        "tuitionBasis": "per-semester-rate-only",
         "officialRatePerSemester": 2500.0,
         "tuitionAcademicSession": "2025/2026",
         "officialFeeSourceUrl": "https://admission.usm.my/index.php/postgraduate/fee-pg",
-        "provenance": "calculated-from-official-components",
-        "calculation": "international full-time per-semester rate x 4-10 semesters",
+        "provenance": "official-rate-only",
+        "reason": "The official source publishes a per-semester rate but no standard programme total. StudyMY does not calculate a total, and extension-period tuition is excluded.",
         "sourcePage": 2
       },
       "evidence": [
@@ -8951,9 +8881,9 @@
           "sourceId": "usm-pg-fees-2025-2026",
           "sourceUrl": "https://admission.usm.my/index.php/postgraduate/fee-pg",
           "sourcePage": 2,
-          "sourceText": "verified-calculated-total-range",
+          "sourceText": "official-total-unpublished",
           "retrievedAt": "2026-06-14T15:01:36Z",
-          "confidence": 1
+          "confidence": 0
         }
       ],
       "detailSha256": "f12523dd30e584554e88003a8eca1ec95e3465567f8d35d0b59bbf34783468bd"
@@ -9068,21 +8998,19 @@
       "publicDisplayStatus": "ready",
       "reviewReasons": [],
       "publicationWarnings": [
-        "programme-specific intake is unpublished"
+        "programme-specific intake is unpublished",
+        "no uniquely applicable current international tuition"
       ],
       "fee": {
-        "status": "verified-calculated-total-range",
-        "tuitionAmount": {
-          "min": 10000.0,
-          "max": 25000.0
-        },
+        "status": "official-total-unpublished",
+        "tuitionAmount": null,
         "tuitionCurrency": "USD",
-        "tuitionBasis": "total-programme",
+        "tuitionBasis": "per-semester-rate-only",
         "officialRatePerSemester": 2500.0,
         "tuitionAcademicSession": "2025/2026",
         "officialFeeSourceUrl": "https://admission.usm.my/index.php/postgraduate/fee-pg",
-        "provenance": "calculated-from-official-components",
-        "calculation": "international full-time per-semester rate x 4-10 semesters",
+        "provenance": "official-rate-only",
+        "reason": "The official source publishes a per-semester rate but no standard programme total. StudyMY does not calculate a total, and extension-period tuition is excluded.",
         "sourcePage": 2
       },
       "evidence": [
@@ -9099,9 +9027,9 @@
           "sourceId": "usm-pg-fees-2025-2026",
           "sourceUrl": "https://admission.usm.my/index.php/postgraduate/fee-pg",
           "sourcePage": 2,
-          "sourceText": "verified-calculated-total-range",
+          "sourceText": "official-total-unpublished",
           "retrievedAt": "2026-06-14T15:01:36Z",
-          "confidence": 1
+          "confidence": 0
         }
       ],
       "detailSha256": "79fedb8069fe22ebd5c3b075b76525687d26a502447854e59f22e3a94dca7438"
@@ -9216,21 +9144,19 @@
       "publicDisplayStatus": "ready",
       "reviewReasons": [],
       "publicationWarnings": [
-        "programme-specific intake is unpublished"
+        "programme-specific intake is unpublished",
+        "no uniquely applicable current international tuition"
       ],
       "fee": {
-        "status": "verified-calculated-total-range",
-        "tuitionAmount": {
-          "min": 5600.0,
-          "max": 14000.0
-        },
+        "status": "official-total-unpublished",
+        "tuitionAmount": null,
         "tuitionCurrency": "USD",
-        "tuitionBasis": "total-programme",
+        "tuitionBasis": "per-semester-rate-only",
         "officialRatePerSemester": 1400.0,
         "tuitionAcademicSession": "2025/2026",
         "officialFeeSourceUrl": "https://admission.usm.my/index.php/postgraduate/fee-pg",
-        "provenance": "calculated-from-official-components",
-        "calculation": "international full-time per-semester rate x 4-10 semesters",
+        "provenance": "official-rate-only",
+        "reason": "The official source publishes a per-semester rate but no standard programme total. StudyMY does not calculate a total, and extension-period tuition is excluded.",
         "sourcePage": 2
       },
       "evidence": [
@@ -9247,9 +9173,9 @@
           "sourceId": "usm-pg-fees-2025-2026",
           "sourceUrl": "https://admission.usm.my/index.php/postgraduate/fee-pg",
           "sourcePage": 2,
-          "sourceText": "verified-calculated-total-range",
+          "sourceText": "official-total-unpublished",
           "retrievedAt": "2026-06-14T15:01:36Z",
-          "confidence": 1
+          "confidence": 0
         }
       ],
       "detailSha256": "d7f67253234fd58dc37081118a2e9da14d502ade16dfdd0795c0f63d12a4f002"
@@ -9364,21 +9290,19 @@
       "publicDisplayStatus": "ready",
       "reviewReasons": [],
       "publicationWarnings": [
-        "programme-specific intake is unpublished"
+        "programme-specific intake is unpublished",
+        "no uniquely applicable current international tuition"
       ],
       "fee": {
-        "status": "verified-calculated-total-range",
-        "tuitionAmount": {
-          "min": 7200.0,
-          "max": 18000.0
-        },
+        "status": "official-total-unpublished",
+        "tuitionAmount": null,
         "tuitionCurrency": "USD",
-        "tuitionBasis": "total-programme",
+        "tuitionBasis": "per-semester-rate-only",
         "officialRatePerSemester": 1800.0,
         "tuitionAcademicSession": "2025/2026",
         "officialFeeSourceUrl": "https://admission.usm.my/index.php/postgraduate/fee-pg",
-        "provenance": "calculated-from-official-components",
-        "calculation": "international full-time per-semester rate x 4-10 semesters",
+        "provenance": "official-rate-only",
+        "reason": "The official source publishes a per-semester rate but no standard programme total. StudyMY does not calculate a total, and extension-period tuition is excluded.",
         "sourcePage": 2
       },
       "evidence": [
@@ -9395,9 +9319,9 @@
           "sourceId": "usm-pg-fees-2025-2026",
           "sourceUrl": "https://admission.usm.my/index.php/postgraduate/fee-pg",
           "sourcePage": 2,
-          "sourceText": "verified-calculated-total-range",
+          "sourceText": "official-total-unpublished",
           "retrievedAt": "2026-06-14T15:01:36Z",
-          "confidence": 1
+          "confidence": 0
         }
       ],
       "detailSha256": "76f39ccadda810cc102dbc514ea02aeb4a81fc4f340a31ca8279b724b93bba46"
@@ -9512,21 +9436,19 @@
       "publicDisplayStatus": "ready",
       "reviewReasons": [],
       "publicationWarnings": [
-        "programme-specific intake is unpublished"
+        "programme-specific intake is unpublished",
+        "no uniquely applicable current international tuition"
       ],
       "fee": {
-        "status": "verified-calculated-total-range",
-        "tuitionAmount": {
-          "min": 7200.0,
-          "max": 18000.0
-        },
+        "status": "official-total-unpublished",
+        "tuitionAmount": null,
         "tuitionCurrency": "USD",
-        "tuitionBasis": "total-programme",
+        "tuitionBasis": "per-semester-rate-only",
         "officialRatePerSemester": 1800.0,
         "tuitionAcademicSession": "2025/2026",
         "officialFeeSourceUrl": "https://admission.usm.my/index.php/postgraduate/fee-pg",
-        "provenance": "calculated-from-official-components",
-        "calculation": "international full-time per-semester rate x 4-10 semesters",
+        "provenance": "official-rate-only",
+        "reason": "The official source publishes a per-semester rate but no standard programme total. StudyMY does not calculate a total, and extension-period tuition is excluded.",
         "sourcePage": 2
       },
       "evidence": [
@@ -9543,9 +9465,9 @@
           "sourceId": "usm-pg-fees-2025-2026",
           "sourceUrl": "https://admission.usm.my/index.php/postgraduate/fee-pg",
           "sourcePage": 2,
-          "sourceText": "verified-calculated-total-range",
+          "sourceText": "official-total-unpublished",
           "retrievedAt": "2026-06-14T15:01:36Z",
-          "confidence": 1
+          "confidence": 0
         }
       ],
       "detailSha256": "8ffeae6b0addef47fa50c4523fe689f6ea9c7ad0df13bcddc1526cdf0609ade2"
@@ -9660,21 +9582,19 @@
       "publicDisplayStatus": "ready",
       "reviewReasons": [],
       "publicationWarnings": [
-        "programme-specific intake is unpublished"
+        "programme-specific intake is unpublished",
+        "no uniquely applicable current international tuition"
       ],
       "fee": {
-        "status": "verified-calculated-total-range",
-        "tuitionAmount": {
-          "min": 5600.0,
-          "max": 14000.0
-        },
+        "status": "official-total-unpublished",
+        "tuitionAmount": null,
         "tuitionCurrency": "USD",
-        "tuitionBasis": "total-programme",
+        "tuitionBasis": "per-semester-rate-only",
         "officialRatePerSemester": 1400.0,
         "tuitionAcademicSession": "2025/2026",
         "officialFeeSourceUrl": "https://admission.usm.my/index.php/postgraduate/fee-pg",
-        "provenance": "calculated-from-official-components",
-        "calculation": "international full-time per-semester rate x 4-10 semesters",
+        "provenance": "official-rate-only",
+        "reason": "The official source publishes a per-semester rate but no standard programme total. StudyMY does not calculate a total, and extension-period tuition is excluded.",
         "sourcePage": 2
       },
       "evidence": [
@@ -9691,9 +9611,9 @@
           "sourceId": "usm-pg-fees-2025-2026",
           "sourceUrl": "https://admission.usm.my/index.php/postgraduate/fee-pg",
           "sourcePage": 2,
-          "sourceText": "verified-calculated-total-range",
+          "sourceText": "official-total-unpublished",
           "retrievedAt": "2026-06-14T15:01:36Z",
-          "confidence": 1
+          "confidence": 0
         }
       ],
       "detailSha256": "574fb2ab91f094d42c4e1a49b5c623adfdf16b38b62a7673af13029b0893a179"
@@ -9808,21 +9728,19 @@
       "publicDisplayStatus": "ready",
       "reviewReasons": [],
       "publicationWarnings": [
-        "programme-specific intake is unpublished"
+        "programme-specific intake is unpublished",
+        "no uniquely applicable current international tuition"
       ],
       "fee": {
-        "status": "verified-calculated-total-range",
-        "tuitionAmount": {
-          "min": 7400.0,
-          "max": 18500.0
-        },
+        "status": "official-total-unpublished",
+        "tuitionAmount": null,
         "tuitionCurrency": "USD",
-        "tuitionBasis": "total-programme",
+        "tuitionBasis": "per-semester-rate-only",
         "officialRatePerSemester": 1850.0,
         "tuitionAcademicSession": "2025/2026",
         "officialFeeSourceUrl": "https://admission.usm.my/index.php/postgraduate/fee-pg",
-        "provenance": "calculated-from-official-components",
-        "calculation": "international full-time per-semester rate x 4-10 semesters",
+        "provenance": "official-rate-only",
+        "reason": "The official source publishes a per-semester rate but no standard programme total. StudyMY does not calculate a total, and extension-period tuition is excluded.",
         "sourcePage": 2
       },
       "evidence": [
@@ -9839,9 +9757,9 @@
           "sourceId": "usm-pg-fees-2025-2026",
           "sourceUrl": "https://admission.usm.my/index.php/postgraduate/fee-pg",
           "sourcePage": 2,
-          "sourceText": "verified-calculated-total-range",
+          "sourceText": "official-total-unpublished",
           "retrievedAt": "2026-06-14T15:01:36Z",
-          "confidence": 1
+          "confidence": 0
         }
       ],
       "detailSha256": "09f01a7b4506c4c751536231077871dfdebcfc6f56046fcb8d9c21c70897dcd5"
@@ -9956,21 +9874,19 @@
       "publicDisplayStatus": "ready",
       "reviewReasons": [],
       "publicationWarnings": [
-        "programme-specific intake is unpublished"
+        "programme-specific intake is unpublished",
+        "no uniquely applicable current international tuition"
       ],
       "fee": {
-        "status": "verified-calculated-total-range",
-        "tuitionAmount": {
-          "min": 5600.0,
-          "max": 14000.0
-        },
+        "status": "official-total-unpublished",
+        "tuitionAmount": null,
         "tuitionCurrency": "USD",
-        "tuitionBasis": "total-programme",
+        "tuitionBasis": "per-semester-rate-only",
         "officialRatePerSemester": 1400.0,
         "tuitionAcademicSession": "2025/2026",
         "officialFeeSourceUrl": "https://admission.usm.my/index.php/postgraduate/fee-pg",
-        "provenance": "calculated-from-official-components",
-        "calculation": "international full-time per-semester rate x 4-10 semesters",
+        "provenance": "official-rate-only",
+        "reason": "The official source publishes a per-semester rate but no standard programme total. StudyMY does not calculate a total, and extension-period tuition is excluded.",
         "sourcePage": 2
       },
       "evidence": [
@@ -9987,9 +9903,9 @@
           "sourceId": "usm-pg-fees-2025-2026",
           "sourceUrl": "https://admission.usm.my/index.php/postgraduate/fee-pg",
           "sourcePage": 2,
-          "sourceText": "verified-calculated-total-range",
+          "sourceText": "official-total-unpublished",
           "retrievedAt": "2026-06-14T15:01:36Z",
-          "confidence": 1
+          "confidence": 0
         }
       ],
       "detailSha256": "276b9f18698069e61ca3b76459e3999deb4a8acd9185dbc8b32837610d0a5c2d"
@@ -10104,21 +10020,19 @@
       "publicDisplayStatus": "ready",
       "reviewReasons": [],
       "publicationWarnings": [
-        "programme-specific intake is unpublished"
+        "programme-specific intake is unpublished",
+        "no uniquely applicable current international tuition"
       ],
       "fee": {
-        "status": "verified-calculated-total-range",
-        "tuitionAmount": {
-          "min": 5600.0,
-          "max": 14000.0
-        },
+        "status": "official-total-unpublished",
+        "tuitionAmount": null,
         "tuitionCurrency": "USD",
-        "tuitionBasis": "total-programme",
+        "tuitionBasis": "per-semester-rate-only",
         "officialRatePerSemester": 1400.0,
         "tuitionAcademicSession": "2025/2026",
         "officialFeeSourceUrl": "https://admission.usm.my/index.php/postgraduate/fee-pg",
-        "provenance": "calculated-from-official-components",
-        "calculation": "international full-time per-semester rate x 4-10 semesters",
+        "provenance": "official-rate-only",
+        "reason": "The official source publishes a per-semester rate but no standard programme total. StudyMY does not calculate a total, and extension-period tuition is excluded.",
         "sourcePage": 2
       },
       "evidence": [
@@ -10135,9 +10049,9 @@
           "sourceId": "usm-pg-fees-2025-2026",
           "sourceUrl": "https://admission.usm.my/index.php/postgraduate/fee-pg",
           "sourcePage": 2,
-          "sourceText": "verified-calculated-total-range",
+          "sourceText": "official-total-unpublished",
           "retrievedAt": "2026-06-14T15:01:36Z",
-          "confidence": 1
+          "confidence": 0
         }
       ],
       "detailSha256": "77118b9e404d3283c5a69f4c311caf8af3b24333d50a643ee53c0e15975a7215"
@@ -10252,21 +10166,19 @@
       "publicDisplayStatus": "ready",
       "reviewReasons": [],
       "publicationWarnings": [
-        "programme-specific intake is unpublished"
+        "programme-specific intake is unpublished",
+        "no uniquely applicable current international tuition"
       ],
       "fee": {
-        "status": "verified-calculated-total-range",
-        "tuitionAmount": {
-          "min": 7400.0,
-          "max": 18500.0
-        },
+        "status": "official-total-unpublished",
+        "tuitionAmount": null,
         "tuitionCurrency": "USD",
-        "tuitionBasis": "total-programme",
+        "tuitionBasis": "per-semester-rate-only",
         "officialRatePerSemester": 1850.0,
         "tuitionAcademicSession": "2025/2026",
         "officialFeeSourceUrl": "https://admission.usm.my/index.php/postgraduate/fee-pg",
-        "provenance": "calculated-from-official-components",
-        "calculation": "international full-time per-semester rate x 4-10 semesters",
+        "provenance": "official-rate-only",
+        "reason": "The official source publishes a per-semester rate but no standard programme total. StudyMY does not calculate a total, and extension-period tuition is excluded.",
         "sourcePage": 2
       },
       "evidence": [
@@ -10283,9 +10195,9 @@
           "sourceId": "usm-pg-fees-2025-2026",
           "sourceUrl": "https://admission.usm.my/index.php/postgraduate/fee-pg",
           "sourcePage": 2,
-          "sourceText": "verified-calculated-total-range",
+          "sourceText": "official-total-unpublished",
           "retrievedAt": "2026-06-14T15:01:36Z",
-          "confidence": 1
+          "confidence": 0
         }
       ],
       "detailSha256": "7b9221fae32bb80a3f52790ab7631e3d219d279b93c3483f7cb7c4a3820f31be"
@@ -10400,21 +10312,19 @@
       "publicDisplayStatus": "ready",
       "reviewReasons": [],
       "publicationWarnings": [
-        "programme-specific intake is unpublished"
+        "programme-specific intake is unpublished",
+        "no uniquely applicable current international tuition"
       ],
       "fee": {
-        "status": "verified-calculated-total-range",
-        "tuitionAmount": {
-          "min": 5600.0,
-          "max": 14000.0
-        },
+        "status": "official-total-unpublished",
+        "tuitionAmount": null,
         "tuitionCurrency": "USD",
-        "tuitionBasis": "total-programme",
+        "tuitionBasis": "per-semester-rate-only",
         "officialRatePerSemester": 1400.0,
         "tuitionAcademicSession": "2025/2026",
         "officialFeeSourceUrl": "https://admission.usm.my/index.php/postgraduate/fee-pg",
-        "provenance": "calculated-from-official-components",
-        "calculation": "international full-time per-semester rate x 4-10 semesters",
+        "provenance": "official-rate-only",
+        "reason": "The official source publishes a per-semester rate but no standard programme total. StudyMY does not calculate a total, and extension-period tuition is excluded.",
         "sourcePage": 2
       },
       "evidence": [
@@ -10431,9 +10341,9 @@
           "sourceId": "usm-pg-fees-2025-2026",
           "sourceUrl": "https://admission.usm.my/index.php/postgraduate/fee-pg",
           "sourcePage": 2,
-          "sourceText": "verified-calculated-total-range",
+          "sourceText": "official-total-unpublished",
           "retrievedAt": "2026-06-14T15:01:36Z",
-          "confidence": 1
+          "confidence": 0
         }
       ],
       "detailSha256": "39ea260e8244069f645f9ccd0ee9a7780e3808c0f6e01ef9fbea150b50db6bb8"
@@ -10547,20 +10457,19 @@
       "officialSourceStatus": "verified",
       "publicDisplayStatus": "ready",
       "reviewReasons": [],
-      "publicationWarnings": [],
+      "publicationWarnings": [
+        "no uniquely applicable current international tuition"
+      ],
       "fee": {
-        "status": "verified-calculated-total-range",
-        "tuitionAmount": {
-          "min": 5600.0,
-          "max": 14000.0
-        },
+        "status": "official-total-unpublished",
+        "tuitionAmount": null,
         "tuitionCurrency": "USD",
-        "tuitionBasis": "total-programme",
+        "tuitionBasis": "per-semester-rate-only",
         "officialRatePerSemester": 1400.0,
         "tuitionAcademicSession": "2025/2026",
         "officialFeeSourceUrl": "https://admission.usm.my/index.php/postgraduate/fee-pg",
-        "provenance": "calculated-from-official-components",
-        "calculation": "international full-time per-semester rate x 4-10 semesters",
+        "provenance": "official-rate-only",
+        "reason": "The official source publishes a per-semester rate but no standard programme total. StudyMY does not calculate a total, and extension-period tuition is excluded.",
         "sourcePage": 2
       },
       "evidence": [
@@ -10577,9 +10486,9 @@
           "sourceId": "usm-pg-fees-2025-2026",
           "sourceUrl": "https://admission.usm.my/index.php/postgraduate/fee-pg",
           "sourcePage": 2,
-          "sourceText": "verified-calculated-total-range",
+          "sourceText": "official-total-unpublished",
           "retrievedAt": "2026-06-14T15:01:36Z",
-          "confidence": 1
+          "confidence": 0
         }
       ],
       "detailSha256": "9b8db8f424e59231f412d0ac797d869e9cef432d04e1f706941089655afcd3ab"
@@ -10694,21 +10603,19 @@
       "publicDisplayStatus": "ready",
       "reviewReasons": [],
       "publicationWarnings": [
-        "programme-specific intake is unpublished"
+        "programme-specific intake is unpublished",
+        "no uniquely applicable current international tuition"
       ],
       "fee": {
-        "status": "verified-calculated-total-range",
-        "tuitionAmount": {
-          "min": 7200.0,
-          "max": 18000.0
-        },
+        "status": "official-total-unpublished",
+        "tuitionAmount": null,
         "tuitionCurrency": "USD",
-        "tuitionBasis": "total-programme",
+        "tuitionBasis": "per-semester-rate-only",
         "officialRatePerSemester": 1800.0,
         "tuitionAcademicSession": "2025/2026",
         "officialFeeSourceUrl": "https://admission.usm.my/index.php/postgraduate/fee-pg",
-        "provenance": "calculated-from-official-components",
-        "calculation": "international full-time per-semester rate x 4-10 semesters",
+        "provenance": "official-rate-only",
+        "reason": "The official source publishes a per-semester rate but no standard programme total. StudyMY does not calculate a total, and extension-period tuition is excluded.",
         "sourcePage": 2
       },
       "evidence": [
@@ -10725,9 +10632,9 @@
           "sourceId": "usm-pg-fees-2025-2026",
           "sourceUrl": "https://admission.usm.my/index.php/postgraduate/fee-pg",
           "sourcePage": 2,
-          "sourceText": "verified-calculated-total-range",
+          "sourceText": "official-total-unpublished",
           "retrievedAt": "2026-06-14T15:01:36Z",
-          "confidence": 1
+          "confidence": 0
         }
       ],
       "detailSha256": "f43e6553d55a0b05dd9bdf12ffa65590e61ad9ef89d983bf1a85a760bab5d1b3"
@@ -10842,21 +10749,19 @@
       "publicDisplayStatus": "ready",
       "reviewReasons": [],
       "publicationWarnings": [
-        "programme-specific intake is unpublished"
+        "programme-specific intake is unpublished",
+        "no uniquely applicable current international tuition"
       ],
       "fee": {
-        "status": "verified-calculated-total-range",
-        "tuitionAmount": {
-          "min": 10000.0,
-          "max": 25000.0
-        },
+        "status": "official-total-unpublished",
+        "tuitionAmount": null,
         "tuitionCurrency": "USD",
-        "tuitionBasis": "total-programme",
+        "tuitionBasis": "per-semester-rate-only",
         "officialRatePerSemester": 2500.0,
         "tuitionAcademicSession": "2025/2026",
         "officialFeeSourceUrl": "https://admission.usm.my/index.php/postgraduate/fee-pg",
-        "provenance": "calculated-from-official-components",
-        "calculation": "international full-time per-semester rate x 4-10 semesters",
+        "provenance": "official-rate-only",
+        "reason": "The official source publishes a per-semester rate but no standard programme total. StudyMY does not calculate a total, and extension-period tuition is excluded.",
         "sourcePage": 2
       },
       "evidence": [
@@ -10873,9 +10778,9 @@
           "sourceId": "usm-pg-fees-2025-2026",
           "sourceUrl": "https://admission.usm.my/index.php/postgraduate/fee-pg",
           "sourcePage": 2,
-          "sourceText": "verified-calculated-total-range",
+          "sourceText": "official-total-unpublished",
           "retrievedAt": "2026-06-14T15:01:36Z",
-          "confidence": 1
+          "confidence": 0
         }
       ],
       "detailSha256": "b30f255ebcc77e70f6939174d142c8621c680c827e612b4db80e6f290dad4710"
@@ -10990,21 +10895,19 @@
       "publicDisplayStatus": "ready",
       "reviewReasons": [],
       "publicationWarnings": [
-        "programme-specific intake is unpublished"
+        "programme-specific intake is unpublished",
+        "no uniquely applicable current international tuition"
       ],
       "fee": {
-        "status": "verified-calculated-total-range",
-        "tuitionAmount": {
-          "min": 7200.0,
-          "max": 18000.0
-        },
+        "status": "official-total-unpublished",
+        "tuitionAmount": null,
         "tuitionCurrency": "USD",
-        "tuitionBasis": "total-programme",
+        "tuitionBasis": "per-semester-rate-only",
         "officialRatePerSemester": 1800.0,
         "tuitionAcademicSession": "2025/2026",
         "officialFeeSourceUrl": "https://admission.usm.my/index.php/postgraduate/fee-pg",
-        "provenance": "calculated-from-official-components",
-        "calculation": "international full-time per-semester rate x 4-10 semesters",
+        "provenance": "official-rate-only",
+        "reason": "The official source publishes a per-semester rate but no standard programme total. StudyMY does not calculate a total, and extension-period tuition is excluded.",
         "sourcePage": 2
       },
       "evidence": [
@@ -11021,9 +10924,9 @@
           "sourceId": "usm-pg-fees-2025-2026",
           "sourceUrl": "https://admission.usm.my/index.php/postgraduate/fee-pg",
           "sourcePage": 2,
-          "sourceText": "verified-calculated-total-range",
+          "sourceText": "official-total-unpublished",
           "retrievedAt": "2026-06-14T15:01:36Z",
-          "confidence": 1
+          "confidence": 0
         }
       ],
       "detailSha256": "32e7fb97a7c1f46a619b0bfa881b5a2e37b0d2a3e000948a999a9d5ea9495857"
@@ -11138,21 +11041,19 @@
       "publicDisplayStatus": "ready",
       "reviewReasons": [],
       "publicationWarnings": [
-        "programme-specific intake is unpublished"
+        "programme-specific intake is unpublished",
+        "no uniquely applicable current international tuition"
       ],
       "fee": {
-        "status": "verified-calculated-total-range",
-        "tuitionAmount": {
-          "min": 5600.0,
-          "max": 14000.0
-        },
+        "status": "official-total-unpublished",
+        "tuitionAmount": null,
         "tuitionCurrency": "USD",
-        "tuitionBasis": "total-programme",
+        "tuitionBasis": "per-semester-rate-only",
         "officialRatePerSemester": 1400.0,
         "tuitionAcademicSession": "2025/2026",
         "officialFeeSourceUrl": "https://admission.usm.my/index.php/postgraduate/fee-pg",
-        "provenance": "calculated-from-official-components",
-        "calculation": "international full-time per-semester rate x 4-10 semesters",
+        "provenance": "official-rate-only",
+        "reason": "The official source publishes a per-semester rate but no standard programme total. StudyMY does not calculate a total, and extension-period tuition is excluded.",
         "sourcePage": 2
       },
       "evidence": [
@@ -11169,9 +11070,9 @@
           "sourceId": "usm-pg-fees-2025-2026",
           "sourceUrl": "https://admission.usm.my/index.php/postgraduate/fee-pg",
           "sourcePage": 2,
-          "sourceText": "verified-calculated-total-range",
+          "sourceText": "official-total-unpublished",
           "retrievedAt": "2026-06-14T15:01:36Z",
-          "confidence": 1
+          "confidence": 0
         }
       ],
       "detailSha256": "67ae060b7dae4956b972df3686247951f476b7cf7e0984573e637869726ee123"
@@ -11286,21 +11187,19 @@
       "publicDisplayStatus": "ready",
       "reviewReasons": [],
       "publicationWarnings": [
-        "programme-specific intake is unpublished"
+        "programme-specific intake is unpublished",
+        "no uniquely applicable current international tuition"
       ],
       "fee": {
-        "status": "verified-calculated-total-range",
-        "tuitionAmount": {
-          "min": 5600.0,
-          "max": 14000.0
-        },
+        "status": "official-total-unpublished",
+        "tuitionAmount": null,
         "tuitionCurrency": "USD",
-        "tuitionBasis": "total-programme",
+        "tuitionBasis": "per-semester-rate-only",
         "officialRatePerSemester": 1400.0,
         "tuitionAcademicSession": "2025/2026",
         "officialFeeSourceUrl": "https://admission.usm.my/index.php/postgraduate/fee-pg",
-        "provenance": "calculated-from-official-components",
-        "calculation": "international full-time per-semester rate x 4-10 semesters",
+        "provenance": "official-rate-only",
+        "reason": "The official source publishes a per-semester rate but no standard programme total. StudyMY does not calculate a total, and extension-period tuition is excluded.",
         "sourcePage": 2
       },
       "evidence": [
@@ -11317,9 +11216,9 @@
           "sourceId": "usm-pg-fees-2025-2026",
           "sourceUrl": "https://admission.usm.my/index.php/postgraduate/fee-pg",
           "sourcePage": 2,
-          "sourceText": "verified-calculated-total-range",
+          "sourceText": "official-total-unpublished",
           "retrievedAt": "2026-06-14T15:01:36Z",
-          "confidence": 1
+          "confidence": 0
         }
       ],
       "detailSha256": "39c9239b1d7013215d63398341c8cd331920e7d1674cbfc984c813b5ada8c435"
@@ -11433,20 +11332,19 @@
       "officialSourceStatus": "verified",
       "publicDisplayStatus": "ready",
       "reviewReasons": [],
-      "publicationWarnings": [],
+      "publicationWarnings": [
+        "no uniquely applicable current international tuition"
+      ],
       "fee": {
-        "status": "verified-calculated-total-range",
-        "tuitionAmount": {
-          "min": 5600.0,
-          "max": 14000.0
-        },
+        "status": "official-total-unpublished",
+        "tuitionAmount": null,
         "tuitionCurrency": "USD",
-        "tuitionBasis": "total-programme",
+        "tuitionBasis": "per-semester-rate-only",
         "officialRatePerSemester": 1400.0,
         "tuitionAcademicSession": "2025/2026",
         "officialFeeSourceUrl": "https://admission.usm.my/index.php/postgraduate/fee-pg",
-        "provenance": "calculated-from-official-components",
-        "calculation": "international full-time per-semester rate x 4-10 semesters",
+        "provenance": "official-rate-only",
+        "reason": "The official source publishes a per-semester rate but no standard programme total. StudyMY does not calculate a total, and extension-period tuition is excluded.",
         "sourcePage": 2
       },
       "evidence": [
@@ -11463,9 +11361,9 @@
           "sourceId": "usm-pg-fees-2025-2026",
           "sourceUrl": "https://admission.usm.my/index.php/postgraduate/fee-pg",
           "sourcePage": 2,
-          "sourceText": "verified-calculated-total-range",
+          "sourceText": "official-total-unpublished",
           "retrievedAt": "2026-06-14T15:01:36Z",
-          "confidence": 1
+          "confidence": 0
         }
       ],
       "detailSha256": "16c82ddec4137163183a6c1698237d6ba814a5cf768021ea5a6d9df5e3ee2f69"
@@ -11580,21 +11478,19 @@
       "publicDisplayStatus": "ready",
       "reviewReasons": [],
       "publicationWarnings": [
-        "programme-specific intake is unpublished"
+        "programme-specific intake is unpublished",
+        "no uniquely applicable current international tuition"
       ],
       "fee": {
-        "status": "verified-calculated-total-range",
-        "tuitionAmount": {
-          "min": 5600.0,
-          "max": 14000.0
-        },
+        "status": "official-total-unpublished",
+        "tuitionAmount": null,
         "tuitionCurrency": "USD",
-        "tuitionBasis": "total-programme",
+        "tuitionBasis": "per-semester-rate-only",
         "officialRatePerSemester": 1400.0,
         "tuitionAcademicSession": "2025/2026",
         "officialFeeSourceUrl": "https://admission.usm.my/index.php/postgraduate/fee-pg",
-        "provenance": "calculated-from-official-components",
-        "calculation": "international full-time per-semester rate x 4-10 semesters",
+        "provenance": "official-rate-only",
+        "reason": "The official source publishes a per-semester rate but no standard programme total. StudyMY does not calculate a total, and extension-period tuition is excluded.",
         "sourcePage": 2
       },
       "evidence": [
@@ -11611,9 +11507,9 @@
           "sourceId": "usm-pg-fees-2025-2026",
           "sourceUrl": "https://admission.usm.my/index.php/postgraduate/fee-pg",
           "sourcePage": 2,
-          "sourceText": "verified-calculated-total-range",
+          "sourceText": "official-total-unpublished",
           "retrievedAt": "2026-06-14T15:01:36Z",
-          "confidence": 1
+          "confidence": 0
         }
       ],
       "detailSha256": "3d2a951a591593e1f271d17edfcb870be78cc22a4afb706e556decfaecbde5bf"
@@ -11727,20 +11623,19 @@
       "officialSourceStatus": "verified",
       "publicDisplayStatus": "ready",
       "reviewReasons": [],
-      "publicationWarnings": [],
+      "publicationWarnings": [
+        "no uniquely applicable current international tuition"
+      ],
       "fee": {
-        "status": "verified-calculated-total-range",
-        "tuitionAmount": {
-          "min": 5600.0,
-          "max": 14000.0
-        },
+        "status": "official-total-unpublished",
+        "tuitionAmount": null,
         "tuitionCurrency": "USD",
-        "tuitionBasis": "total-programme",
+        "tuitionBasis": "per-semester-rate-only",
         "officialRatePerSemester": 1400.0,
         "tuitionAcademicSession": "2025/2026",
         "officialFeeSourceUrl": "https://admission.usm.my/index.php/postgraduate/fee-pg",
-        "provenance": "calculated-from-official-components",
-        "calculation": "international full-time per-semester rate x 4-10 semesters",
+        "provenance": "official-rate-only",
+        "reason": "The official source publishes a per-semester rate but no standard programme total. StudyMY does not calculate a total, and extension-period tuition is excluded.",
         "sourcePage": 2
       },
       "evidence": [
@@ -11757,9 +11652,9 @@
           "sourceId": "usm-pg-fees-2025-2026",
           "sourceUrl": "https://admission.usm.my/index.php/postgraduate/fee-pg",
           "sourcePage": 2,
-          "sourceText": "verified-calculated-total-range",
+          "sourceText": "official-total-unpublished",
           "retrievedAt": "2026-06-14T15:01:36Z",
-          "confidence": 1
+          "confidence": 0
         }
       ],
       "detailSha256": "16c82ddec4137163183a6c1698237d6ba814a5cf768021ea5a6d9df5e3ee2f69"
@@ -11874,21 +11769,19 @@
       "publicDisplayStatus": "ready",
       "reviewReasons": [],
       "publicationWarnings": [
-        "programme-specific intake is unpublished"
+        "programme-specific intake is unpublished",
+        "no uniquely applicable current international tuition"
       ],
       "fee": {
-        "status": "verified-calculated-total-range",
-        "tuitionAmount": {
-          "min": 10000.0,
-          "max": 25000.0
-        },
+        "status": "official-total-unpublished",
+        "tuitionAmount": null,
         "tuitionCurrency": "USD",
-        "tuitionBasis": "total-programme",
+        "tuitionBasis": "per-semester-rate-only",
         "officialRatePerSemester": 2500.0,
         "tuitionAcademicSession": "2025/2026",
         "officialFeeSourceUrl": "https://admission.usm.my/index.php/postgraduate/fee-pg",
-        "provenance": "calculated-from-official-components",
-        "calculation": "international full-time per-semester rate x 4-10 semesters",
+        "provenance": "official-rate-only",
+        "reason": "The official source publishes a per-semester rate but no standard programme total. StudyMY does not calculate a total, and extension-period tuition is excluded.",
         "sourcePage": 2
       },
       "evidence": [
@@ -11905,9 +11798,9 @@
           "sourceId": "usm-pg-fees-2025-2026",
           "sourceUrl": "https://admission.usm.my/index.php/postgraduate/fee-pg",
           "sourcePage": 2,
-          "sourceText": "verified-calculated-total-range",
+          "sourceText": "official-total-unpublished",
           "retrievedAt": "2026-06-14T15:01:36Z",
-          "confidence": 1
+          "confidence": 0
         }
       ],
       "detailSha256": "a832d8a4f2c7b82b21ee7fc10a4676c884b77bd85eb097a98f5b442f9ab5287f"
@@ -12022,21 +11915,19 @@
       "publicDisplayStatus": "ready",
       "reviewReasons": [],
       "publicationWarnings": [
-        "programme-specific intake is unpublished"
+        "programme-specific intake is unpublished",
+        "no uniquely applicable current international tuition"
       ],
       "fee": {
-        "status": "verified-calculated-total-range",
-        "tuitionAmount": {
-          "min": 10000.0,
-          "max": 25000.0
-        },
+        "status": "official-total-unpublished",
+        "tuitionAmount": null,
         "tuitionCurrency": "USD",
-        "tuitionBasis": "total-programme",
+        "tuitionBasis": "per-semester-rate-only",
         "officialRatePerSemester": 2500.0,
         "tuitionAcademicSession": "2025/2026",
         "officialFeeSourceUrl": "https://admission.usm.my/index.php/postgraduate/fee-pg",
-        "provenance": "calculated-from-official-components",
-        "calculation": "international full-time per-semester rate x 4-10 semesters",
+        "provenance": "official-rate-only",
+        "reason": "The official source publishes a per-semester rate but no standard programme total. StudyMY does not calculate a total, and extension-period tuition is excluded.",
         "sourcePage": 2
       },
       "evidence": [
@@ -12053,9 +11944,9 @@
           "sourceId": "usm-pg-fees-2025-2026",
           "sourceUrl": "https://admission.usm.my/index.php/postgraduate/fee-pg",
           "sourcePage": 2,
-          "sourceText": "verified-calculated-total-range",
+          "sourceText": "official-total-unpublished",
           "retrievedAt": "2026-06-14T15:01:36Z",
-          "confidence": 1
+          "confidence": 0
         }
       ],
       "detailSha256": "e8068e6cb36470b2703bc72367bb6b206b7e8f277494d4e96ca22155201c597d"
@@ -12170,21 +12061,19 @@
       "publicDisplayStatus": "ready",
       "reviewReasons": [],
       "publicationWarnings": [
-        "programme-specific intake is unpublished"
+        "programme-specific intake is unpublished",
+        "no uniquely applicable current international tuition"
       ],
       "fee": {
-        "status": "verified-calculated-total-range",
-        "tuitionAmount": {
-          "min": 10000.0,
-          "max": 25000.0
-        },
+        "status": "official-total-unpublished",
+        "tuitionAmount": null,
         "tuitionCurrency": "USD",
-        "tuitionBasis": "total-programme",
+        "tuitionBasis": "per-semester-rate-only",
         "officialRatePerSemester": 2500.0,
         "tuitionAcademicSession": "2025/2026",
         "officialFeeSourceUrl": "https://admission.usm.my/index.php/postgraduate/fee-pg",
-        "provenance": "calculated-from-official-components",
-        "calculation": "international full-time per-semester rate x 4-10 semesters",
+        "provenance": "official-rate-only",
+        "reason": "The official source publishes a per-semester rate but no standard programme total. StudyMY does not calculate a total, and extension-period tuition is excluded.",
         "sourcePage": 2
       },
       "evidence": [
@@ -12201,9 +12090,9 @@
           "sourceId": "usm-pg-fees-2025-2026",
           "sourceUrl": "https://admission.usm.my/index.php/postgraduate/fee-pg",
           "sourcePage": 2,
-          "sourceText": "verified-calculated-total-range",
+          "sourceText": "official-total-unpublished",
           "retrievedAt": "2026-06-14T15:01:36Z",
-          "confidence": 1
+          "confidence": 0
         }
       ],
       "detailSha256": "15a64298c7355ac73649fb71d6cb0983ad57768ddc77984a2b7c20eed43700ae"
@@ -15183,21 +15072,19 @@
       "publicDisplayStatus": "ready",
       "reviewReasons": [],
       "publicationWarnings": [
-        "programme-specific intake is unpublished"
+        "programme-specific intake is unpublished",
+        "no uniquely applicable current international tuition"
       ],
       "fee": {
-        "status": "verified-calculated-total-range",
-        "tuitionAmount": {
-          "min": 7400.0,
-          "max": 18500.0
-        },
+        "status": "official-total-unpublished",
+        "tuitionAmount": null,
         "tuitionCurrency": "USD",
-        "tuitionBasis": "total-programme",
+        "tuitionBasis": "per-semester-rate-only",
         "officialRatePerSemester": 1850.0,
         "tuitionAcademicSession": "2025/2026",
         "officialFeeSourceUrl": "https://admission.usm.my/index.php/postgraduate/fee-pg",
-        "provenance": "calculated-from-official-components",
-        "calculation": "international full-time per-semester rate x 4-10 semesters",
+        "provenance": "official-rate-only",
+        "reason": "The official source publishes a per-semester rate but no standard programme total. StudyMY does not calculate a total, and extension-period tuition is excluded.",
         "sourcePage": 2
       },
       "evidence": [
@@ -15214,9 +15101,9 @@
           "sourceId": "usm-pg-fees-2025-2026",
           "sourceUrl": "https://admission.usm.my/index.php/postgraduate/fee-pg",
           "sourcePage": 2,
-          "sourceText": "verified-calculated-total-range",
+          "sourceText": "official-total-unpublished",
           "retrievedAt": "2026-06-14T15:01:36Z",
-          "confidence": 1
+          "confidence": 0
         }
       ],
       "detailSha256": "1175f9f0ec25dab0adc73bb3c90639f61773a3c39d5e96992a9b45e8db03627c"
@@ -15331,21 +15218,19 @@
       "publicDisplayStatus": "ready",
       "reviewReasons": [],
       "publicationWarnings": [
-        "programme-specific intake is unpublished"
+        "programme-specific intake is unpublished",
+        "no uniquely applicable current international tuition"
       ],
       "fee": {
-        "status": "verified-calculated-total-range",
-        "tuitionAmount": {
-          "min": 7400.0,
-          "max": 18500.0
-        },
+        "status": "official-total-unpublished",
+        "tuitionAmount": null,
         "tuitionCurrency": "USD",
-        "tuitionBasis": "total-programme",
+        "tuitionBasis": "per-semester-rate-only",
         "officialRatePerSemester": 1850.0,
         "tuitionAcademicSession": "2025/2026",
         "officialFeeSourceUrl": "https://admission.usm.my/index.php/postgraduate/fee-pg",
-        "provenance": "calculated-from-official-components",
-        "calculation": "international full-time per-semester rate x 4-10 semesters",
+        "provenance": "official-rate-only",
+        "reason": "The official source publishes a per-semester rate but no standard programme total. StudyMY does not calculate a total, and extension-period tuition is excluded.",
         "sourcePage": 2
       },
       "evidence": [
@@ -15362,9 +15247,9 @@
           "sourceId": "usm-pg-fees-2025-2026",
           "sourceUrl": "https://admission.usm.my/index.php/postgraduate/fee-pg",
           "sourcePage": 2,
-          "sourceText": "verified-calculated-total-range",
+          "sourceText": "official-total-unpublished",
           "retrievedAt": "2026-06-14T15:01:36Z",
-          "confidence": 1
+          "confidence": 0
         }
       ],
       "detailSha256": "3f714a697f04747a758b387bd9254a484fc9547c84a2d57a8c4117772dd40374"
@@ -15479,21 +15364,19 @@
       "publicDisplayStatus": "ready",
       "reviewReasons": [],
       "publicationWarnings": [
-        "programme-specific intake is unpublished"
+        "programme-specific intake is unpublished",
+        "no uniquely applicable current international tuition"
       ],
       "fee": {
-        "status": "verified-calculated-total-range",
-        "tuitionAmount": {
-          "min": 7400.0,
-          "max": 18500.0
-        },
+        "status": "official-total-unpublished",
+        "tuitionAmount": null,
         "tuitionCurrency": "USD",
-        "tuitionBasis": "total-programme",
+        "tuitionBasis": "per-semester-rate-only",
         "officialRatePerSemester": 1850.0,
         "tuitionAcademicSession": "2025/2026",
         "officialFeeSourceUrl": "https://admission.usm.my/index.php/postgraduate/fee-pg",
-        "provenance": "calculated-from-official-components",
-        "calculation": "international full-time per-semester rate x 4-10 semesters",
+        "provenance": "official-rate-only",
+        "reason": "The official source publishes a per-semester rate but no standard programme total. StudyMY does not calculate a total, and extension-period tuition is excluded.",
         "sourcePage": 2
       },
       "evidence": [
@@ -15510,9 +15393,9 @@
           "sourceId": "usm-pg-fees-2025-2026",
           "sourceUrl": "https://admission.usm.my/index.php/postgraduate/fee-pg",
           "sourcePage": 2,
-          "sourceText": "verified-calculated-total-range",
+          "sourceText": "official-total-unpublished",
           "retrievedAt": "2026-06-14T15:01:36Z",
-          "confidence": 1
+          "confidence": 0
         }
       ],
       "detailSha256": "be176c3e47f44d140664a90621a1cfe8a66b09369295b145e133285ce61022ef"
@@ -15627,21 +15510,19 @@
       "publicDisplayStatus": "ready",
       "reviewReasons": [],
       "publicationWarnings": [
-        "programme-specific intake is unpublished"
+        "programme-specific intake is unpublished",
+        "no uniquely applicable current international tuition"
       ],
       "fee": {
-        "status": "verified-calculated-total-range",
-        "tuitionAmount": {
-          "min": 10000.0,
-          "max": 25000.0
-        },
+        "status": "official-total-unpublished",
+        "tuitionAmount": null,
         "tuitionCurrency": "USD",
-        "tuitionBasis": "total-programme",
+        "tuitionBasis": "per-semester-rate-only",
         "officialRatePerSemester": 2500.0,
         "tuitionAcademicSession": "2025/2026",
         "officialFeeSourceUrl": "https://admission.usm.my/index.php/postgraduate/fee-pg",
-        "provenance": "calculated-from-official-components",
-        "calculation": "international full-time per-semester rate x 4-10 semesters",
+        "provenance": "official-rate-only",
+        "reason": "The official source publishes a per-semester rate but no standard programme total. StudyMY does not calculate a total, and extension-period tuition is excluded.",
         "sourcePage": 2
       },
       "evidence": [
@@ -15658,9 +15539,9 @@
           "sourceId": "usm-pg-fees-2025-2026",
           "sourceUrl": "https://admission.usm.my/index.php/postgraduate/fee-pg",
           "sourcePage": 2,
-          "sourceText": "verified-calculated-total-range",
+          "sourceText": "official-total-unpublished",
           "retrievedAt": "2026-06-14T15:01:36Z",
-          "confidence": 1
+          "confidence": 0
         }
       ],
       "detailSha256": "2e74e8fd5ff920b275e6da65c77bef0d8650705e9ddca5a9ecbeff82f18860c4"
@@ -16645,7 +16526,7 @@
     },
     "feeCounts": {
       "verified-current-official-fee": 13,
-      "verified-calculated-total-range": 62,
+      "official-total-unpublished": 62,
       "official-unpublished": 20
     },
     "doctoralNamedFeeRows": 13,
@@ -16701,8 +16582,8 @@
         "review": 0
       },
       "fee": {
-        "covered": 75,
-        "unpublished": 20,
+        "covered": 13,
+        "unpublished": 82,
         "review": 0
       },
       "evidence": {
