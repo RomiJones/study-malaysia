@@ -1,0 +1,664 @@
+{
+  "auditMeta": {
+    "institution": "Universiti Teknologi Malaysia",
+    "shortName": "UTM",
+    "batchId": "utm-master-2026-06-17",
+    "authorization": "collect",
+    "level": "master",
+    "applicantScope": "international",
+    "academicSession": "2026/2027",
+    "canonicalCount": 153,
+    "readyCount": 92,
+    "needsReviewCount": 61,
+    "notAvailableForInternationalCount": 0
+  },
+  "officialSourceRegistry": [
+    {
+      "url": "https://admission.utm.my/international-postgraduate-study/",
+      "finalUrl": "https://admission.utm.my/international-postgraduate-study/",
+      "localPath": "data/imports/utm/2026-06-17/master/sources/international-postgraduate-study.html",
+      "sha256": "6f8d1cef4a3694c822adf2fa7d64c7aab1b8c07befd78a5dcd6471488552d310",
+      "bytes": 234576,
+      "retrievedAt": "2026-06-17T07:51:31+00:00",
+      "status": "verified",
+      "id": "international-postgraduate-study",
+      "sourceType": "official-page",
+      "role": "canonical"
+    },
+    {
+      "url": "https://admission.utm.my/fees-pg-inter/",
+      "finalUrl": "https://admission.utm.my/fees-pg-inter/",
+      "localPath": "data/imports/utm/2026-06-17/master/sources/fees-pg-inter.html",
+      "sha256": "f7aca81d18a803750b82ee8e176d5596162fed72e4bc984d272955deffb3b40f",
+      "bytes": 249978,
+      "retrievedAt": "2026-06-17T07:51:31+00:00",
+      "status": "verified",
+      "id": "fees-pg-inter",
+      "sourceType": "official-page",
+      "role": "field-authority"
+    },
+    {
+      "url": "https://admission.utm.my/int-pg-entry-requirements/",
+      "finalUrl": "https://admission.utm.my/int-pg-entry-requirements/",
+      "localPath": "data/imports/utm/2026-06-17/master/sources/int-pg-entry-requirements.html",
+      "sha256": "d4dfdbd558ca3d3fb9381de11553d3f7ad0d8c439621ca816c0622e297741a8f",
+      "bytes": 244123,
+      "retrievedAt": "2026-06-17T07:51:31+00:00",
+      "status": "verified",
+      "id": "int-pg-entry-requirements",
+      "sourceType": "official-page",
+      "role": "field-authority"
+    },
+    {
+      "url": "https://admission.utm.my/english-language-requirements-3/",
+      "finalUrl": "https://admission.utm.my/english-language-requirements-3/",
+      "localPath": "data/imports/utm/2026-06-17/master/sources/english-language-requirements.html",
+      "sha256": "984956f8024728d95249ec21fa23e3f5f4930bc445954ce78fe91549d45a11d2",
+      "bytes": 272338,
+      "retrievedAt": "2026-06-17T07:51:32+00:00",
+      "status": "verified",
+      "id": "english-language-requirements",
+      "sourceType": "official-page",
+      "role": "field-authority"
+    },
+    {
+      "url": "https://admission.utm.my/e-brochure/",
+      "finalUrl": "https://admission.utm.my/e-brochure/",
+      "localPath": "data/imports/utm/2026-06-17/master/sources/e-brochure.html",
+      "sha256": "1e9687e751483b526fda31a2834b3d166e5f8bb787493f7f9098afc06cd44256",
+      "bytes": 227794,
+      "retrievedAt": "2026-06-17T07:51:32+00:00",
+      "status": "verified",
+      "id": "e-brochure",
+      "sourceType": "official-page",
+      "role": "field-authority"
+    },
+    {
+      "url": "https://odl.utm.my/fees-structure/",
+      "finalUrl": "https://odl.utm.my/fees-structure/",
+      "localPath": "data/imports/utm/2026-06-17/master/sources/odl-fees-structure.html",
+      "sha256": "b0b2519e2018d452ba78019ca2d65c62772fd12c4c6bc795137281970eb6042b",
+      "bytes": 190948,
+      "retrievedAt": "2026-06-17T07:51:32+00:00",
+      "status": "verified",
+      "id": "odl-fees-structure",
+      "sourceType": "official-page",
+      "role": "field-authority"
+    },
+    {
+      "url": "https://admission.utm.my/odl/",
+      "finalUrl": "https://admission.utm.my/odl/",
+      "localPath": "data/imports/utm/2026-06-17/master/sources/odl-admission.html",
+      "sha256": "482ef36b607d3dd1ee9e1504a528041b09aabf551310f5ad909802008c0e13ca",
+      "bytes": 463597,
+      "retrievedAt": "2026-06-17T07:51:33+00:00",
+      "status": "verified",
+      "id": "odl-admission",
+      "sourceType": "official-page",
+      "role": "field-authority"
+    },
+    {
+      "url": "https://admission.utm.my/int-postgraduate-school-of-biomedical-engineering-health-science/",
+      "finalUrl": "https://admission.utm.my/int-postgraduate-school-of-biomedical-engineering-health-science/",
+      "localPath": "data/imports/utm/2026-06-17/master/sources/faculty-pages/engineering-education-generic-programmes.html",
+      "sha256": "503873aed6af685ef5da82c34dfb5598ea3a906faaf57b701e04c66576d38b93",
+      "bytes": 236383,
+      "retrievedAt": "2026-06-17T07:51:33+00:00",
+      "status": "verified",
+      "id": "faculty-engineering-education-generic-programmes",
+      "sourceType": "official-page",
+      "role": "canonical",
+      "fields": [
+        "programme identity",
+        "faculty",
+        "mode",
+        "international postgraduate listing"
+      ],
+      "faculty": "Engineering Education & Generic Programmes"
+    },
+    {
+      "url": "https://admission.utm.my/int-postgraduate-school-of-civil-engineering/",
+      "finalUrl": "https://admission.utm.my/int-postgraduate-school-of-civil-engineering/",
+      "localPath": "data/imports/utm/2026-06-17/master/sources/faculty-pages/civil-engineering.html",
+      "sha256": "927090aaf73a526d42eea35bd7ef7567662eaf4688897bdb131c94a6b975e7a6",
+      "bytes": 250069,
+      "retrievedAt": "2026-06-17T07:51:33+00:00",
+      "status": "verified",
+      "id": "faculty-civil-engineering",
+      "sourceType": "official-page",
+      "role": "canonical",
+      "fields": [
+        "programme identity",
+        "faculty",
+        "mode",
+        "international postgraduate listing"
+      ],
+      "faculty": "Faculty of Civil Engineering"
+    },
+    {
+      "url": "https://admission.utm.my/int-postgraduate-school-of-chemical-energy-engineering/",
+      "finalUrl": "https://admission.utm.my/int-postgraduate-school-of-chemical-energy-engineering/",
+      "localPath": "data/imports/utm/2026-06-17/master/sources/faculty-pages/chemical-energy-engineering.html",
+      "sha256": "0063d9fe83cc1f897741a9ea26427b494a59cb8dae17b1a31a2acf4e0f7e8f91",
+      "bytes": 266384,
+      "retrievedAt": "2026-06-17T07:51:33+00:00",
+      "status": "verified",
+      "id": "faculty-chemical-energy-engineering",
+      "sourceType": "official-page",
+      "role": "canonical",
+      "fields": [
+        "programme identity",
+        "faculty",
+        "mode",
+        "international postgraduate listing"
+      ],
+      "faculty": "Faculty of Chemical and Energy Engineering"
+    },
+    {
+      "url": "https://admission.utm.my/int-postgraduate-school-of-electrical-engineering/",
+      "finalUrl": "https://admission.utm.my/int-postgraduate-school-of-electrical-engineering/",
+      "localPath": "data/imports/utm/2026-06-17/master/sources/faculty-pages/electrical-engineering.html",
+      "sha256": "7e6003a3083ac779325def972f6bacf619baf73954aab62b6a7ec533b88b1496",
+      "bytes": 258408,
+      "retrievedAt": "2026-06-17T07:51:34+00:00",
+      "status": "verified",
+      "id": "faculty-electrical-engineering",
+      "sourceType": "official-page",
+      "role": "canonical",
+      "fields": [
+        "programme identity",
+        "faculty",
+        "mode",
+        "international postgraduate listing"
+      ],
+      "faculty": "Faculty of Electrical Engineering"
+    },
+    {
+      "url": "https://admission.utm.my/int-postgraduate-school-of-mechanical-engineering/",
+      "finalUrl": "https://admission.utm.my/int-postgraduate-school-of-mechanical-engineering/",
+      "localPath": "data/imports/utm/2026-06-17/master/sources/faculty-pages/mechanical-engineering.html",
+      "sha256": "e7661dbbd325597b12a5c2b9b6c17c89fce7ef764c32a42f73e63eba4a5c2bcd",
+      "bytes": 261616,
+      "retrievedAt": "2026-06-17T07:51:34+00:00",
+      "status": "verified",
+      "id": "faculty-mechanical-engineering",
+      "sourceType": "official-page",
+      "role": "canonical",
+      "fields": [
+        "programme identity",
+        "faculty",
+        "mode",
+        "international postgraduate listing"
+      ],
+      "faculty": "Faculty of Mechanical Engineering"
+    },
+    {
+      "url": "https://admission.utm.my/int-faculty-of-social-science-and-humanities/",
+      "finalUrl": "https://admission.utm.my/int-faculty-of-social-science-and-humanities/",
+      "localPath": "data/imports/utm/2026-06-17/master/sources/faculty-pages/social-science-humanities.html",
+      "sha256": "d66785cd88beec42806db6793160ec1465247175f0eaee42420c48033fdeddb9",
+      "bytes": 240520,
+      "retrievedAt": "2026-06-17T07:51:34+00:00",
+      "status": "verified",
+      "id": "faculty-social-science-humanities",
+      "sourceType": "official-page",
+      "role": "canonical",
+      "fields": [
+        "programme identity",
+        "faculty",
+        "mode",
+        "international postgraduate listing"
+      ],
+      "faculty": "Faculty of Social Science and Humanities"
+    },
+    {
+      "url": "https://admission.utm.my/int-postgraduate-school-of-hrd-psycohology/",
+      "finalUrl": "https://admission.utm.my/int-postgraduate-school-of-hrd-psycohology/",
+      "localPath": "data/imports/utm/2026-06-17/master/sources/faculty-pages/hrd-psychology.html",
+      "sha256": "3e16ce91ad4396f94b660109ec78452ca5cc0a9d5c234944d81ed078be4e077b",
+      "bytes": 240676,
+      "retrievedAt": "2026-06-17T07:51:34+00:00",
+      "status": "verified",
+      "id": "faculty-hrd-psychology",
+      "sourceType": "official-page",
+      "role": "canonical",
+      "fields": [
+        "programme identity",
+        "faculty",
+        "mode",
+        "international postgraduate listing"
+      ],
+      "faculty": "School of HRD and Psychology"
+    },
+    {
+      "url": "https://admission.utm.my/int-postgraduate-islamic-civilisation-academic/",
+      "finalUrl": "https://admission.utm.my/int-postgraduate-islamic-civilisation-academic/",
+      "localPath": "data/imports/utm/2026-06-17/master/sources/faculty-pages/islamic-civilization-academy.html",
+      "sha256": "c1ed0abb24ef1b3039a3d4be9e57d6890da8bd01fd38a70f054c4705427c1bdf",
+      "bytes": 241472,
+      "retrievedAt": "2026-06-17T07:51:35+00:00",
+      "status": "verified",
+      "id": "faculty-islamic-civilization-academy",
+      "sourceType": "official-page",
+      "role": "canonical",
+      "fields": [
+        "programme identity",
+        "faculty",
+        "mode",
+        "international postgraduate listing"
+      ],
+      "faculty": "Islamic Civilization Academy"
+    },
+    {
+      "url": "https://admission.utm.my/int-postgraduate-language-academy/",
+      "finalUrl": "https://admission.utm.my/int-postgraduate-language-academy/",
+      "localPath": "data/imports/utm/2026-06-17/master/sources/faculty-pages/language-academy.html",
+      "sha256": "0c156da55a1be7b38740d25aa85db3db63cb51934f9cc0411d3e472c8aded90f",
+      "bytes": 238904,
+      "retrievedAt": "2026-06-17T07:51:35+00:00",
+      "status": "verified",
+      "id": "faculty-language-academy",
+      "sourceType": "official-page",
+      "role": "canonical",
+      "fields": [
+        "programme identity",
+        "faculty",
+        "mode",
+        "international postgraduate listing"
+      ],
+      "faculty": "Language Academy"
+    },
+    {
+      "url": "https://admission.utm.my/int-postgraduate-school-of-education/",
+      "finalUrl": "https://admission.utm.my/int-postgraduate-school-of-education/",
+      "localPath": "data/imports/utm/2026-06-17/master/sources/faculty-pages/educational-sciences-technology.html",
+      "sha256": "e1f62e6475964e55bdefbcf5995eb5127eea52773574ee53eb3401130c213e33",
+      "bytes": 288278,
+      "retrievedAt": "2026-06-17T07:51:35+00:00",
+      "status": "verified",
+      "id": "faculty-educational-sciences-technology",
+      "sourceType": "official-page",
+      "role": "canonical",
+      "fields": [
+        "programme identity",
+        "faculty",
+        "mode",
+        "international postgraduate listing"
+      ],
+      "faculty": "Faculty of Educational Sciences and Technology"
+    },
+    {
+      "url": "https://admission.utm.my/int-faculty-of-built-environment-surveying/",
+      "finalUrl": "https://admission.utm.my/int-faculty-of-built-environment-surveying/",
+      "localPath": "data/imports/utm/2026-06-17/master/sources/faculty-pages/built-environment-surveying.html",
+      "sha256": "dd67fd859f00a9d8d659a48e6cc2079f90c0f8ed26cf3380897917b811221578",
+      "bytes": 260113,
+      "retrievedAt": "2026-06-17T07:51:36+00:00",
+      "status": "verified",
+      "id": "faculty-built-environment-surveying",
+      "sourceType": "official-page",
+      "role": "canonical",
+      "fields": [
+        "programme identity",
+        "faculty",
+        "mode",
+        "international postgraduate listing"
+      ],
+      "faculty": "Faculty of Built Environment and Surveying"
+    },
+    {
+      "url": "https://admission.utm.my/int-postgraduate-school-of-computing/",
+      "finalUrl": "https://admission.utm.my/int-postgraduate-school-of-computing/",
+      "localPath": "data/imports/utm/2026-06-17/master/sources/faculty-pages/computing.html",
+      "sha256": "c97f7ce3f7a75b30d040fe2debe8beca9111a34f9522c9165fb967fe7ac7e4e1",
+      "bytes": 261512,
+      "retrievedAt": "2026-06-17T07:51:36+00:00",
+      "status": "verified",
+      "id": "faculty-computing",
+      "sourceType": "official-page",
+      "role": "canonical",
+      "fields": [
+        "programme identity",
+        "faculty",
+        "mode",
+        "international postgraduate listing"
+      ],
+      "faculty": "Faculty of Computing"
+    },
+    {
+      "url": "https://admission.utm.my/int-faculty-of-management/",
+      "finalUrl": "https://admission.utm.my/int-faculty-of-management/",
+      "localPath": "data/imports/utm/2026-06-17/master/sources/faculty-pages/management.html",
+      "sha256": "d1ea0b07f865ec3d9ad13621846e6815c542c077f4e05831e8964579cee6b2d7",
+      "bytes": 240585,
+      "retrievedAt": "2026-06-17T07:51:36+00:00",
+      "status": "verified",
+      "id": "faculty-management",
+      "sourceType": "official-page",
+      "role": "canonical",
+      "fields": [
+        "programme identity",
+        "faculty",
+        "mode",
+        "international postgraduate listing"
+      ],
+      "faculty": "Faculty of Management"
+    },
+    {
+      "url": "https://admission.utm.my/int-faculty-of-science/",
+      "finalUrl": "https://admission.utm.my/int-faculty-of-science/",
+      "localPath": "data/imports/utm/2026-06-17/master/sources/faculty-pages/science.html",
+      "sha256": "ddb316a0ea2cce8941e6bafe2bce8052b1354ffac7ad61a271e2b51e0084d0a2",
+      "bytes": 250100,
+      "retrievedAt": "2026-06-17T07:51:37+00:00",
+      "status": "verified",
+      "id": "faculty-science",
+      "sourceType": "official-page",
+      "role": "canonical",
+      "fields": [
+        "programme identity",
+        "faculty",
+        "mode",
+        "international postgraduate listing"
+      ],
+      "faculty": "Faculty of Science"
+    },
+    {
+      "url": "https://admission.utm.my/int-azman-hashim-international-business-school/",
+      "finalUrl": "https://admission.utm.my/int-azman-hashim-international-business-school/",
+      "localPath": "data/imports/utm/2026-06-17/master/sources/faculty-pages/ahibs.html",
+      "sha256": "35a2cf0c85e82f5609e3fbfdf547bf07df78cbc5b7e501e845c3416d83139143",
+      "bytes": 247609,
+      "retrievedAt": "2026-06-17T07:51:37+00:00",
+      "status": "verified",
+      "id": "faculty-ahibs",
+      "sourceType": "official-page",
+      "role": "canonical",
+      "fields": [
+        "programme identity",
+        "faculty",
+        "mode",
+        "international postgraduate listing"
+      ],
+      "faculty": "Azman Hashim International Business School"
+    },
+    {
+      "url": "https://admission.utm.my/int-razak-faculty-of-technology-informatics/",
+      "finalUrl": "https://admission.utm.my/int-razak-faculty-of-technology-informatics/",
+      "localPath": "data/imports/utm/2026-06-17/master/sources/faculty-pages/artificial-intelligence.html",
+      "sha256": "3c4e5e8c1c1a160e82bf0070b25a7a576e6068e088595714d3cbd61691defa47",
+      "bytes": 252433,
+      "retrievedAt": "2026-06-17T07:51:37+00:00",
+      "status": "verified",
+      "id": "faculty-artificial-intelligence",
+      "sourceType": "official-page",
+      "role": "canonical",
+      "fields": [
+        "programme identity",
+        "faculty",
+        "mode",
+        "international postgraduate listing"
+      ],
+      "faculty": "Faculty of Artificial Intelligence"
+    },
+    {
+      "url": "https://admission.utm.my/int-malaysia-japan-international-institute-of-technology/",
+      "finalUrl": "https://admission.utm.my/int-malaysia-japan-international-institute-of-technology/",
+      "localPath": "data/imports/utm/2026-06-17/master/sources/faculty-pages/mjiit.html",
+      "sha256": "21281f132414aedeafbfb92513721e68af2d9e11b3a3034463ca4de332df486a",
+      "bytes": 250709,
+      "retrievedAt": "2026-06-17T07:51:38+00:00",
+      "status": "verified",
+      "id": "faculty-mjiit",
+      "sourceType": "official-page",
+      "role": "canonical",
+      "fields": [
+        "programme identity",
+        "faculty",
+        "mode",
+        "international postgraduate listing"
+      ],
+      "faculty": "Malaysia-Japan International Institute of Technology"
+    },
+    {
+      "url": "https://admission.utm.my/wp-content/uploads/sites/461/2025/11/SKM_C650i25111217021.pdf",
+      "finalUrl": "https://admission.utm.my/wp-content/uploads/sites/461/2025/11/SKM_C650i25111217021.pdf",
+      "localPath": "data/imports/utm/2026-06-17/master/sources/brochures/brochure-all-postgraduate-programmes.pdf",
+      "sha256": "8f77d0aa516b6b1526349b0208e479547ddb2911c4fa14273778c8decf2fca09",
+      "bytes": 3467286,
+      "retrievedAt": "2026-06-17T07:51:38+00:00",
+      "status": "verified",
+      "id": "brochure-all-postgraduate-programmes",
+      "sourceType": "official-pdf",
+      "role": "field-authority",
+      "fields": [
+        "programme detail cross-check",
+        "faculty prospectus"
+      ],
+      "title": "All POSTGRADUATE Programmes"
+    },
+    {
+      "url": "https://admission.utm.my/wp-content/uploads/sites/461/2023/09/Faculty-of-Civil-Engineering.pdf",
+      "finalUrl": "https://admission.utm.my/wp-content/uploads/sites/461/2023/09/Faculty-of-Civil-Engineering.pdf",
+      "localPath": "data/imports/utm/2026-06-17/master/sources/brochures/brochure-faculty-of-civil-engineering.pdf",
+      "sha256": "a302397f232359c0c1964063ac4b840f795c1e7f0c318b7be8f548f479ed00fe",
+      "bytes": 227584,
+      "retrievedAt": "2026-06-17T07:51:39+00:00",
+      "status": "verified",
+      "id": "brochure-faculty-of-civil-engineering",
+      "sourceType": "official-pdf",
+      "role": "field-authority",
+      "fields": [
+        "programme detail cross-check",
+        "faculty prospectus"
+      ],
+      "title": "Faculty of Civil Engineering"
+    },
+    {
+      "url": "https://admission.utm.my/wp-content/uploads/sites/461/2023/09/Faculty-of-Mechanical.pdf",
+      "finalUrl": "https://admission.utm.my/wp-content/uploads/sites/461/2023/09/Faculty-of-Mechanical.pdf",
+      "localPath": "data/imports/utm/2026-06-17/master/sources/brochures/brochure-faculty-of-mechanical-engineering.pdf",
+      "sha256": "0da466f822e93b3ce79b94f3e0d76027ba59deff4e74989410ae32c5d3969cca",
+      "bytes": 177873,
+      "retrievedAt": "2026-06-17T07:51:39+00:00",
+      "status": "verified",
+      "id": "brochure-faculty-of-mechanical-engineering",
+      "sourceType": "official-pdf",
+      "role": "field-authority",
+      "fields": [
+        "programme detail cross-check",
+        "faculty prospectus"
+      ],
+      "title": "Faculty of Mechanical Engineering"
+    },
+    {
+      "url": "https://admission.utm.my/wp-content/uploads/sites/461/2023/09/Faculty-of-Electrical-Engineering.pdf",
+      "finalUrl": "https://admission.utm.my/wp-content/uploads/sites/461/2023/09/Faculty-of-Electrical-Engineering.pdf",
+      "localPath": "data/imports/utm/2026-06-17/master/sources/brochures/brochure-faculty-of-electrical-engineering.pdf",
+      "sha256": "255e6562cf7167d3ba2f322c294b89a9861135498a7289e9f37881408b5f9cfc",
+      "bytes": 217929,
+      "retrievedAt": "2026-06-17T07:51:39+00:00",
+      "status": "verified",
+      "id": "brochure-faculty-of-electrical-engineering",
+      "sourceType": "official-pdf",
+      "role": "field-authority",
+      "fields": [
+        "programme detail cross-check",
+        "faculty prospectus"
+      ],
+      "title": "Faculty of Electrical Engineering"
+    },
+    {
+      "url": "https://admission.utm.my/wp-content/uploads/sites/461/2023/09/Faculty-of-Chemical-Engineering.pdf",
+      "finalUrl": "https://admission.utm.my/wp-content/uploads/sites/461/2023/09/Faculty-of-Chemical-Engineering.pdf",
+      "localPath": "data/imports/utm/2026-06-17/master/sources/brochures/brochure-faculty-of-chemical-and-energy-engineering.pdf",
+      "sha256": "62cad7ea74c1c8dfc81b4b3640a5d02ba689405f648a5f5ceaa5478ab299d03a",
+      "bytes": 200640,
+      "retrievedAt": "2026-06-17T07:51:39+00:00",
+      "status": "verified",
+      "id": "brochure-faculty-of-chemical-and-energy-engineering",
+      "sourceType": "official-pdf",
+      "role": "field-authority",
+      "fields": [
+        "programme detail cross-check",
+        "faculty prospectus"
+      ],
+      "title": "Faculty of Chemical & Energy Engineering"
+    },
+    {
+      "url": "https://admission.utm.my/wp-content/uploads/sites/461/2023/09/Faculty-of-computing.pdf",
+      "finalUrl": "https://admission.utm.my/wp-content/uploads/sites/461/2023/09/Faculty-of-computing.pdf",
+      "localPath": "data/imports/utm/2026-06-17/master/sources/brochures/brochure-faculty-of-computing.pdf",
+      "sha256": "10aed1851049e152e0939fb4a150ab4127b579fbc2ca56a65708cf240632731f",
+      "bytes": 183177,
+      "retrievedAt": "2026-06-17T07:51:40+00:00",
+      "status": "verified",
+      "id": "brochure-faculty-of-computing",
+      "sourceType": "official-pdf",
+      "role": "field-authority",
+      "fields": [
+        "programme detail cross-check",
+        "faculty prospectus"
+      ],
+      "title": "Faculty of Computing"
+    },
+    {
+      "url": "https://admission.utm.my/wp-content/uploads/sites/461/2023/09/Faculty-of-Science.pdf",
+      "finalUrl": "https://admission.utm.my/wp-content/uploads/sites/461/2023/09/Faculty-of-Science.pdf",
+      "localPath": "data/imports/utm/2026-06-17/master/sources/brochures/brochure-faculty-of-science.pdf",
+      "sha256": "64151f8c5b627305be9d35dbcb1063ae458c3c171a0df72f50ace42ade4cbe38",
+      "bytes": 196606,
+      "retrievedAt": "2026-06-17T07:51:40+00:00",
+      "status": "verified",
+      "id": "brochure-faculty-of-science",
+      "sourceType": "official-pdf",
+      "role": "field-authority",
+      "fields": [
+        "programme detail cross-check",
+        "faculty prospectus"
+      ],
+      "title": "Faculty of Science"
+    },
+    {
+      "url": "https://admission.utm.my/wp-content/uploads/sites/461/2023/09/Faculty-of-SOCIAL-SCIENCES-HUMANITIES-1.pdf",
+      "finalUrl": "https://admission.utm.my/wp-content/uploads/sites/461/2023/09/Faculty-of-SOCIAL-SCIENCES-HUMANITIES-1.pdf",
+      "localPath": "data/imports/utm/2026-06-17/master/sources/brochures/brochure-faculty-of-educational-sciences-and-technology.pdf",
+      "sha256": "803a6a32f59b88e6636f5e170de8bed8ebfe6d95ac00755a03dfa98f776b2dda",
+      "bytes": 370535,
+      "retrievedAt": "2026-06-17T07:51:40+00:00",
+      "status": "verified",
+      "id": "brochure-faculty-of-educational-sciences-and-technology",
+      "sourceType": "official-pdf",
+      "role": "field-authority",
+      "fields": [
+        "programme detail cross-check",
+        "faculty prospectus"
+      ],
+      "title": "Faculty of Educational Sciences and Technology"
+    },
+    {
+      "url": "https://admission.utm.my/wp-content/uploads/sites/461/2023/09/Faculty-of-SOCIAL-SCIENCES-HUMANITIES-1.pdf",
+      "finalUrl": "https://admission.utm.my/wp-content/uploads/sites/461/2023/09/Faculty-of-SOCIAL-SCIENCES-HUMANITIES-1.pdf",
+      "localPath": "data/imports/utm/2026-06-17/master/sources/brochures/brochure-faculty-of-social-sciences-and-humanities.pdf",
+      "sha256": "803a6a32f59b88e6636f5e170de8bed8ebfe6d95ac00755a03dfa98f776b2dda",
+      "bytes": 370535,
+      "retrievedAt": "2026-06-17T07:51:40+00:00",
+      "status": "verified",
+      "id": "brochure-faculty-of-social-sciences-and-humanities",
+      "sourceType": "official-pdf",
+      "role": "field-authority",
+      "fields": [
+        "programme detail cross-check",
+        "faculty prospectus"
+      ],
+      "title": "Faculty of Social Sciences & Humanities"
+    },
+    {
+      "url": "https://admission.utm.my/wp-content/uploads/sites/461/2023/09/Faculty-of-Environmental.pdf",
+      "finalUrl": "https://admission.utm.my/wp-content/uploads/sites/461/2023/09/Faculty-of-Environmental.pdf",
+      "localPath": "data/imports/utm/2026-06-17/master/sources/brochures/brochure-faculty-of-built-environment-and-surveying.pdf",
+      "sha256": "5210b1c7d61d67ca575dcf51bd9446fdfaa02254a061953e71f93529c18c591d",
+      "bytes": 229533,
+      "retrievedAt": "2026-06-17T07:51:41+00:00",
+      "status": "verified",
+      "id": "brochure-faculty-of-built-environment-and-surveying",
+      "sourceType": "official-pdf",
+      "role": "field-authority",
+      "fields": [
+        "programme detail cross-check",
+        "faculty prospectus"
+      ],
+      "title": "Faculty of Built Environment & Surveying"
+    },
+    {
+      "url": "https://admission.utm.my/wp-content/uploads/sites/461/2023/09/Faculty-of-Management-1.pdf",
+      "finalUrl": "https://admission.utm.my/wp-content/uploads/sites/461/2023/09/Faculty-of-Management-1.pdf",
+      "localPath": "data/imports/utm/2026-06-17/master/sources/brochures/brochure-faculty-of-management.pdf",
+      "sha256": "3e41583ea2619c47190dcdd676e8ac2cd584f7d70d6d3ea71ad1fa24ce154d9f",
+      "bytes": 208620,
+      "retrievedAt": "2026-06-17T07:51:41+00:00",
+      "status": "verified",
+      "id": "brochure-faculty-of-management",
+      "sourceType": "official-pdf",
+      "role": "field-authority",
+      "fields": [
+        "programme detail cross-check",
+        "faculty prospectus"
+      ],
+      "title": "Faculty of Management"
+    },
+    {
+      "url": "https://admission.utm.my/wp-content/uploads/sites/461/2023/09/Faculty-of-Razak-Technology-Informatic.pdf",
+      "finalUrl": "https://admission.utm.my/wp-content/uploads/sites/461/2023/09/Faculty-of-Razak-Technology-Informatic.pdf",
+      "localPath": "data/imports/utm/2026-06-17/master/sources/brochures/brochure-faculty-of-artificial-intelligence.pdf",
+      "sha256": "dfc42bae7da2d3fa80b507691f17a0d3be89a2df0de4c0e68b2285b6e20c7260",
+      "bytes": 174460,
+      "retrievedAt": "2026-06-17T07:51:41+00:00",
+      "status": "verified",
+      "id": "brochure-faculty-of-artificial-intelligence",
+      "sourceType": "official-pdf",
+      "role": "field-authority",
+      "fields": [
+        "programme detail cross-check",
+        "faculty prospectus"
+      ],
+      "title": "Faculty of Artificial Intelligence"
+    },
+    {
+      "url": "https://admission.utm.my/wp-content/uploads/sites/461/2023/09/AZMAN-HASHIM-INTERNATIONAL-BUSINESS-SCH.pdf",
+      "finalUrl": "https://admission.utm.my/wp-content/uploads/sites/461/2023/09/AZMAN-HASHIM-INTERNATIONAL-BUSINESS-SCH.pdf",
+      "localPath": "data/imports/utm/2026-06-17/master/sources/brochures/brochure-azman-hashim-international-business-school.pdf",
+      "sha256": "cc891aedac51a6d1d1af5c4093f599e9b2cc9a41ab2dc4e7fbd011f78722997e",
+      "bytes": 239726,
+      "retrievedAt": "2026-06-17T07:51:41+00:00",
+      "status": "verified",
+      "id": "brochure-azman-hashim-international-business-school",
+      "sourceType": "official-pdf",
+      "role": "field-authority",
+      "fields": [
+        "programme detail cross-check",
+        "faculty prospectus"
+      ],
+      "title": "Azman Hashim International Business School"
+    }
+  ],
+  "prepReport": {
+    "programmeBaseline": "UTM international postgraduate faculty pages",
+    "feeVersion": "UTM Programme Fees for international students page, captured in this run",
+    "internationalFeeNote": "Strict official totals are accepted only for UTM named totals or mainstream category totals; ODL rates/ranges remain review-only.",
+    "exclusions": "Doctoral, bachelor, foundation, diploma, local-only weekend programme, and local Malaysian-only fee rows are excluded from the master international candidate."
+  },
+  "auditSummary": {
+    "candidateRows": 153,
+    "readyRows": 92,
+    "needsReviewRows": 61,
+    "notAvailableForInternationalRows": 0,
+    "feeStatusCounts": {
+      "verified-official-total": 129,
+      "official-rate-or-range-only": 24
+    },
+    "fieldOfResearchRows": 37,
+    "odlRows": 0
+  },
+  "reviewDecision": "ready-for-human-review; not ready for controlled import until review rows are resolved or accepted."
+}

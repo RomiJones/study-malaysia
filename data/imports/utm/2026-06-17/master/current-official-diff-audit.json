@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "universityCode": "UTM",
+  "level": "master",
+  "currentAsOf": "2026-06-17",
+  "decision": "baseline-locked-for-collection",
+  "checks": [
+    "Parsed current UTM international postgraduate faculty pages rather than old local cache.",
+    "Captured UTM e-brochure page and postgraduate brochure PDFs for source hash evidence.",
+    "Separated coursework, mixed mode, research and ODL occurrences; ODL fee rows are not promoted to strict official totals.",
+    "Field of Research rows are retained in canonical collection and marked for reviewer identity confirmation instead of being deleted."
+  ],
+  "counts": {
+    "ready": 92,
+    "needsReview": 61,
+    "notAvailableForInternational": 0,
+    "canonicalProgrammes": 153
+  }
+}

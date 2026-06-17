@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "institutionIdentifier": "UTM",
+  "institutionNameOfficial": "Universiti Teknologi Malaysia",
+  "collectionScope": "programmes",
+  "level": "master",
+  "applicantScope": "international",
+  "academicSession": "2026/2027",
+  "currentAsOf": "2026-06-17",
+  "authorization": "collect",
+  "selectedChineseTask": "Current user instruction in this Codex thread: start UTM master information statistics collection using StudyMY official collector workflow.",
+  "selectedChineseTaskStatus": "No dedicated UTM master Notion snapshot page was found in docs/notion-snapshot/tasks at run start.",
+  "prdOrTechnicalDesign": [
+    "docs/notion-snapshot/tasks/TASK-STUDYMY-COLLECTOR-SKILL-20260614.md",
+    "docs/notion-snapshot/复盘总结.md",
+    "docs/prd/USM-master-official-collection-plan.md",
+    "docs/prd/USM-master-official-collection-technical-design.md"
+  ],
+  "outputPaths": {
+    "runContract": "data/imports/utm/2026-06-17/master/run-contract.json",
+    "levelManifest": "data/imports/utm/2026-06-17/master/level-manifest.json",
+    "sourceCacheIndex": "data/imports/utm/2026-06-17/master/source-cache-index.json",
+    "candidateDataset": "data/imports/utm/2026-06-17/master/candidate-dataset.json",
+    "exceptionQueue": "data/imports/utm/2026-06-17/master/exception-queue.json",
+    "preImportGapAudit": "data/imports/utm/2026-06-17/master/pre-import-gap-audit.json",
+    "currentOfficialDiffAudit": "data/imports/utm/2026-06-17/master/current-official-diff-audit.json",
+    "operatorReviewReport": "data/imports/utm/2026-06-17/master/operator-review-report.json",
+    "deliveryEnvelope": "data/imports/utm/2026-06-17/master/delivery-envelope.json"
+  },
+  "verificationCommands": [
+    "python3 -m py_compile scripts/collect-utm-master-official.py",
+    "python3 scripts/collect-utm-master-official.py"
+  ],
+  "rollbackTarget": "Not applicable: collect-only run does not mutate database.",
+  "notionOrLocalNotePath": "docs/notion-snapshot/开发进度日志.md",
+  "retrievedAt": "2026-06-17T07:51:31+00:00"
+}
