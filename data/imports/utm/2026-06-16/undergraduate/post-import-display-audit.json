@@ -1,0 +1,4 @@
+{
+  "status": "not-applicable",
+  "reason": "Collect-only run; no database/API/UI mutation authorized."
+}

@@ -1,0 +1,110 @@
+{
+  "schemaVersion": 1,
+  "createdAt": "2026-06-16T15:28:00.000Z",
+  "scope": {
+    "universityCode": "UTM",
+    "institutionNameOfficial": "Universiti Teknologi Malaysia",
+    "level": "bachelor",
+    "applicantScope": "international",
+    "authorization": "controlled-import-for-local-review",
+    "candidatePath": "data/imports/utm/2026-06-16/undergraduate/candidate-dataset.json"
+  },
+  "databaseImport": {
+    "universityId": 8,
+    "backupPath": "apps/api/tmp/backups/utm-undergraduate-before-2026-06-16T15-26-47-863Z.json",
+    "importedRows": 40,
+    "readyRows": 40,
+    "publishedRows": 40,
+    "legacyBachelorPublicRows": 0,
+    "officialTotalFeeRows": 40,
+    "languageRows": 40,
+    "sourceLinkedRows": 40,
+    "universityProgramCount": 40
+  },
+  "candidateCounts": {
+    "canonicalProgrammes": 44,
+    "readyForImport": 40,
+    "internationalUnavailableCurrentCycle": 4,
+    "importedPublicRows": 40
+  },
+  "publicApiChecks": {
+    "baseUrl": "http://127.0.0.1:3000/api",
+    "universityDetail": {
+      "path": "/universities/utm",
+      "status": 200,
+      "programCount": 40,
+      "detailProgramCount": 40,
+      "catalogStatusSummary": {
+        "all": {
+          "total": 58,
+          "ready": 40,
+          "needsReview": 18,
+          "notAvailableForInternational": 0
+        },
+        "byLevel": {
+          "bachelor": {
+            "total": 54,
+            "ready": 40,
+            "needsReview": 14,
+            "notAvailableForInternational": 0
+          },
+          "master": {
+            "total": 3,
+            "ready": 0,
+            "needsReview": 3,
+            "notAvailableForInternational": 0
+          },
+          "phd": {
+            "total": 1,
+            "ready": 0,
+            "needsReview": 1,
+            "notAvailableForInternational": 0
+          }
+        }
+      }
+    },
+    "universitySearch": {
+      "path": "/universities?search=UTM&includeMeta=true&pageSize=20",
+      "status": 200,
+      "total": 1,
+      "match": {
+        "id": 8,
+        "slug": "utm",
+        "code": "UTM",
+        "programCount": 40
+      }
+    },
+    "programmeList": {
+      "path": "/programs?universityId=8&levels=bachelor&includeMeta=true&pageSize=80",
+      "status": 200,
+      "total": 40,
+      "returned": 40,
+      "ready": 40
+    },
+    "programmeDetailSample": {
+      "path": "/programs/utm-ug-official-2026-row-044-bachelor-of-chemical-process-engineering-with-honours",
+      "status": 200,
+      "slug": "utm-ug-official-2026-row-044-bachelor-of-chemical-process-engineering-with-honours",
+      "nameEnOfficial": "Bachelor of Chemical Process Engineering with Honours",
+      "tuitionDisplay": "MYR 75,000 total programme tuition",
+      "officialTuitionMYR": 75000,
+      "ielts": 5.5,
+      "officialSourceUrl": "https://mjiit.utm.my/undergraduate/",
+      "sourceCount": 6
+    }
+  },
+  "verificationCommands": [
+    "npm --workspace @studymy/api run import:utm:undergraduate",
+    "npm --workspace @studymy/api run build",
+    "npm --workspace @studymy/api run import:utm:undergraduate -- --confirm-import",
+    "npm --workspace @studymy/api run verify:utm:undergraduate",
+    "node - <<'NODE' ... public API checks ... NODE"
+  ],
+  "decision": "imported-for-local-review",
+  "remainingReviewNotes": [
+    "Four current-cycle unavailable undergraduate rows are retained only in collection audit artifacts and were not imported as public rows.",
+    "Some programme-specific duration/curriculum/career fields remain weak where official detail pages did not publish normalized values; audit notes on each imported row preserve this status.",
+    "CNY tuition display fields use the repository internal review conversion rate and are not official UTM amounts.",
+    "True Notion was not updated because no writable Notion connector is available in this session."
+  ]
+}

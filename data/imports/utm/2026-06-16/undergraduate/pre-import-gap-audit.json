@@ -1,0 +1,32 @@
+{
+  "checkedRecords": 44,
+  "officialValueRecords": {
+    "identity": 44,
+    "faculty": 44,
+    "intake": 44,
+    "tuitionTotal": 44,
+    "detailUrl": 44,
+    "detailPageParsed": 41,
+    "duration": 40,
+    "entryRequirements": 44,
+    "programmeSpecificAcademicRequirements": 18,
+    "languageRequirements": 44,
+    "curriculum": 20,
+    "careers": 29,
+    "localization": 0
+  },
+  "missingOrWeakFields": {
+    "languageRequirements": 0,
+    "duration": 4,
+    "curriculum": 24,
+    "programmeSpecificAcademicRequirements": 26,
+    "careers": 15,
+    "fourLocaleLocalization": 44
+  },
+  "sourceNotes": [
+    "The current All Courses HTML governs live catalogue rows and current application status.",
+    "The September 2026 PDF governs the current advertised intake list and application dates.",
+    "The international fee page publishes field-level totals and selected programme-level MJIIT totals.",
+    "Faculty detail pages govern programme overview, duration, curriculum, accreditation, and careers when parsed."
+  ]
+}

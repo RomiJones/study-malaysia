@@ -1,0 +1,133 @@
+{
+  "universityCode": "UTM",
+  "scope": "undergraduate international bachelor",
+  "auditedAt": "2026-06-17",
+  "importStatus": "imported-and-verified-public-44",
+  "logicFix": "canonical programmes must be imported and published for catalogue completeness even when current-cycle international intake is closed; public pages expose all 44 official rows and clearly mark the 4 not-open-to-international rows.",
+  "database": {
+    "universityId": 8,
+    "canonicalImportedRows": 44,
+    "publicVisibleRows": 44,
+    "publicReadyRows": 40,
+    "publishedRows": 44,
+    "notAvailableForInternationalRows": 4,
+    "legacyBachelorPublicRows": 0,
+    "latestBackupPath": "apps/api/tmp/backups/utm-undergraduate-before-2026-06-17T06-18-33-480Z.json"
+  },
+  "collection": {
+    "canonicalRows": 44,
+    "currentInternationalReadyRows": 40,
+    "currentCycleUnavailableRows": 4,
+    "officialSourceCount": 45
+  },
+  "unavailableRows": [
+    {
+      "ordinal": 15,
+      "nameEnOfficial": "Bachelor of Mechanical Engineering (Manufacturing) with Honours",
+      "facultyEn": "Faculty of Mechanical Engineering",
+      "status": "international-unavailable-current-cycle",
+      "intakeText": "Not offered for both the September and February intakes for the 2026/2027 academic session",
+      "publicDisplayStatus": "not-available-for-international",
+      "officialSourceStatus": "official-page-verified-international-not-available",
+      "isPublished": true,
+      "sourceUrl": "https://admission.utm.my/offered-allcourses-international/"
+    },
+    {
+      "ordinal": 18,
+      "nameEnOfficial": "Bachelor in Accounting with Honours",
+      "facultyEn": "Faculty of Management",
+      "status": "international-unavailable-current-cycle",
+      "intakeText": "Not offered for both the September and February intakes for the 2026/2027 academic session",
+      "publicDisplayStatus": "not-available-for-international",
+      "officialSourceStatus": "official-page-verified-international-not-available",
+      "isPublished": true,
+      "sourceUrl": "https://admission.utm.my/offered-allcourses-international/"
+    },
+    {
+      "ordinal": 19,
+      "nameEnOfficial": "Bachelor in Digital Marketing with Honours",
+      "facultyEn": "Faculty of Management",
+      "status": "international-unavailable-current-cycle",
+      "intakeText": "Not offered for both the September and February intakes for the 2026/2027 academic session",
+      "publicDisplayStatus": "not-available-for-international",
+      "officialSourceStatus": "official-page-verified-international-not-available",
+      "isPublished": true,
+      "sourceUrl": "https://admission.utm.my/offered-allcourses-international/"
+    },
+    {
+      "ordinal": 20,
+      "nameEnOfficial": "Bachelor of Management with Honours",
+      "facultyEn": "Faculty of Management",
+      "status": "international-unavailable-current-cycle",
+      "intakeText": "Not offered for both the September and February intakes for the 2026/2027 academic session",
+      "publicDisplayStatus": "not-available-for-international",
+      "officialSourceStatus": "official-page-verified-international-not-available",
+      "isPublished": true,
+      "sourceUrl": "https://admission.utm.my/offered-allcourses-international/"
+    }
+  ],
+  "fieldCoverage": {
+    "duration": {
+      "programme-specific": 40,
+      "not-open-current-cycle": 4
+    },
+    "tuition": {
+      "official-total": 44
+    },
+    "detailPage": {
+      "official-detail-parsed": 40,
+      "official-catalogue-row-with-shared-detail-url": 4
+    },
+    "languageRequirements": {
+      "official-general-rule": 44
+    },
+    "programmeSpecificAcademicRequirements": {
+      "general-rule": 26,
+      "programme-specific": 18
+    },
+    "curriculum": {
+      "official-unpublished": 20,
+      "programme-specific": 20
+    },
+    "careers": {
+      "official-unpublished": 11,
+      "programme-specific": 29
+    },
+    "languageOfInstruction": {
+      "official-unpublished": 35,
+      "programme-specific": 5
+    },
+    "localization": {
+      "pending-after-fact-lock": 40
+    }
+  },
+  "gates": {
+    "canonicalPartition": "44 = 40 ready + 0 needs-review + 4 not-available-for-international",
+    "publicDisplay": "public /api/universities/utm and /api/programs?universityId=8&levels=bachelor return 44 bachelor rows",
+    "closedRowDisclosure": "the 4 current-cycle closed rows are public with publicDisplayStatus=not-available-for-international and officialSourceStatus=official-page-verified-international-not-available",
+    "reviewVisibility": "database verifier requires 44 imported rows, 44 published rows, 40 ready rows, and 4 not-available rows"
+  },
+  "residualNotes": [
+    "All canonical UTM undergraduate rows are now imported into the database and published in public catalogue/detail APIs.",
+    "The four current-cycle closed rows are visible publicly and use publicDisplayStatus=not-available-for-international plus officialSourceStatus=official-page-verified-international-not-available.",
+    "Duration has programme-specific official/detail/supplemental evidence for all 40 public ready rows.",
+    "Public programCount is now 44 because it represents the complete official UTM undergraduate catalogue; ready count remains 40 and not-available-for-international count remains 4."
+  ],
+  "keySourceUrls": [
+    "https://admission.utm.my/offered-allcourses-international/",
+    "https://admission.utm.my/wp-content/uploads/sites/461/2026/03/LATEST-UG-PROGRAMME-SEPT-2026-INTAKE.pdf",
+    "https://admission.utm.my/programme-fees-ug-international/",
+    "https://admission.utm.my/entry-requirements-ug-international/",
+    "https://admission.utm.my/english-language-requirements-3/"
+  ],
+  "verificationCommands": [
+    "npm --workspace @studymy/api run build",
+    "npm --workspace @studymy/api run import:utm:undergraduate",
+    "npm --workspace @studymy/api run import:utm:undergraduate -- --confirm-import",
+    "npm --workspace @studymy/api run verify:utm:undergraduate",
+    "npm run test -- tests/api/utm-undergraduate-import.test.ts tests/api/public-api-services.test.ts tests/api/mappers.test.ts",
+    "npm --workspace @studymy/api run build",
+    "npm --workspace @studymy/web run build",
+    "node -e API verification for /api/universities/utm, /api/programs?universityId=8&levels=bachelor&includeMeta=true&pageSize=80, and a not-available programme detail"
+  ]
+}

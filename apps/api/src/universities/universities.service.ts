@@ -1,9 +1,9 @@
 ﻿import { Inject, Injectable, NotFoundException } from "@nestjs/common";
 import { InjectRepository } from "@nestjs/typeorm";
-import { Repository } from "typeorm";
+import { In, Repository } from "typeorm";
 import { CacheService } from "../common/cache.service.js";
 import { ContentBlockEntity, ProgramEntity, UniversityEntity } from "../db/entities.js";
-import { isReadyForPublicCatalog, mapContentBlock, mapProgram } from "../common/mappers.js";
+import { mapContentBlock, mapProgram } from "../common/mappers.js";
 import {
   buildCatalogFacets,
   buildProgramGroups,
@@ -100,7 +100,10 @@ export class UniversitiesService {
 
     const [universities, programs, content] = await Promise.all([
       this.universitiesRepository.find({ where: { isPublished: true, publicDisplayStatus: "ready" } }),
-      this.programsRepository.find({ where: { isPublished: true, publicDisplayStatus: "ready" }, relations: { university: true } }),
+      this.programsRepository.find({
+        where: { isPublished: true, publicDisplayStatus: In(["ready", "not-available-for-international"]) },
+        relations: { university: true }
+      }),
       this.contentRepository.find()
     ]);
     const universityMap = new Map(universities.map((university) => [university.id, university]));
@@ -209,7 +212,7 @@ export class UniversitiesService {
     }
 
     const allPrograms = university.programs || [];
-    const publicPrograms = allPrograms.filter(isReadyForPublicCatalog);
+    const publicPrograms = publicReadyPrograms(allPrograms, new Map<number, UniversityEntity>([[university.id, university]]));
     const payload = {
       ...mapUniversityCatalogItem(university, publicPrograms),
       programs: publicPrograms.map(mapProgram),

@@ -63,6 +63,12 @@ export function isReadyForPublicCatalog(entity: { isPublished: boolean; publicDi
   return entity.isPublished && normalizePublicDisplayStatus(entity.publicDisplayStatus, entity.isPublished) === "ready";
 }
 
+export function isVisibleInPublicCatalog(entity: { isPublished: boolean; publicDisplayStatus?: PublicDisplayStatus | null }) {
+  if (!entity.isPublished) return false;
+  const status = normalizePublicDisplayStatus(entity.publicDisplayStatus, entity.isPublished);
+  return status === "ready" || status === "not-available-for-international";
+}
+
 export function mapUniversity(entity: UniversityEntity): UniversityListItem {
   const officialWebsite = entity.officialWebsite || entity.website;
   let officialSources = normalizeSourceLinks(entity.officialSources);

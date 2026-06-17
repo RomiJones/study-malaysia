@@ -1,0 +1,22 @@
+{
+  "institutionIdentifier": "UTM",
+  "institutionNameOfficial": "Universiti Teknologi Malaysia",
+  "collectionScope": "programmes",
+  "requestedLevel": "bachelor",
+  "applicantScope": "international",
+  "academicSession": "September 2026 intake / 2026-2027 application cycle where published",
+  "currentAsOfDate": "2026-06-17",
+  "authorization": "collect",
+  "selectedChineseTask": "Current user instruction; no dedicated UTM Notion snapshot task found locally.",
+  "prdAndTechnicalDesign": [
+    "docs/notion-snapshot/产品需求文档.md",
+    "docs/notion-snapshot/技术方案.md",
+    "docs/prd/USM-master-official-collection-technical-design.md"
+  ],
+  "outputPath": "data/imports/utm/2026-06-16/undergraduate",
+  "verificationCommands": [
+    "python3 /Users/ian/Desktop/dev/study-malaysia/scripts/collect-utm-undergraduate-official.py --verify --output-dir data/imports/utm/2026-06-16/undergraduate"
+  ],
+  "rollbackTarget": "No database mutation; remove generated UTM artifact directory if needed.",
+  "notionOrLocalNoteUpdatePath": "docs/notion-snapshot/开发进度日志.md (not updated automatically in this run)"
+}

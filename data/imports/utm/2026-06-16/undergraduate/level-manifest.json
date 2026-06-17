@@ -1,0 +1,335 @@
+{
+  "universityCode": "UTM",
+  "officialDomains": [
+    "utm.my",
+    "admission.utm.my"
+  ],
+  "level": "bachelor",
+  "applicantScope": "international",
+  "academicSession": "September 2026 intake / 2026-2027 application cycle where published",
+  "retrievedAt": "2026-06-16T16:37:41+00:00",
+  "officialLevelSources": [
+    "https://admission.utm.my/offered-allcourses-international/",
+    "https://admission.utm.my/wp-content/uploads/sites/461/2026/03/LATEST-UG-PROGRAMME-SEPT-2026-INTAKE.pdf"
+  ],
+  "directoryOccurrences": 44,
+  "uniqueHtmlEntries": 44,
+  "currentIntakePdfOccurrences": 43,
+  "currentIntakePdfUniqueEntries": 40,
+  "canonicalCount": 44,
+  "publicCandidateCount": 40,
+  "needsReviewCount": 0,
+  "internationalUnavailableCount": 4,
+  "detailSourceCount": 30,
+  "detailTransportErrorCount": 0,
+  "programmeOrder": [
+    {
+      "ordinal": 1,
+      "nameEnOfficial": "Bachelor of Biomedical Engineering with Honours",
+      "facultyEn": "Faculty of Electrical Engineering",
+      "status": "ready-for-detail-enrichment",
+      "detailUrl": "https://fke.utm.my/undergraduate/."
+    },
+    {
+      "ordinal": 2,
+      "nameEnOfficial": "Bachelor of Chemical Engineering with Honours",
+      "facultyEn": "Faculty of Chemical and Energy Engineering",
+      "status": "ready-for-detail-enrichment",
+      "detailUrl": "https://fkt.utm.my/bachelor-of-chemical-engineering-2/"
+    },
+    {
+      "ordinal": 3,
+      "nameEnOfficial": "Bachelor of Nuclear Engineering with Honours",
+      "facultyEn": "Faculty of Chemical and Energy Engineering",
+      "status": "ready-for-detail-enrichment",
+      "detailUrl": "https://fkt.utm.my/bachelor-of-nuclear-engineering-2/"
+    },
+    {
+      "ordinal": 4,
+      "nameEnOfficial": "Bachelor of Chemical Engineering (Bioprocess) with Honours",
+      "facultyEn": "Faculty of Chemical and Energy Engineering",
+      "status": "ready-for-detail-enrichment",
+      "detailUrl": "https://fkt.utm.my/bachelor-of-engineering-chemical-bioprocess-2/"
+    },
+    {
+      "ordinal": 5,
+      "nameEnOfficial": "Bachelor of Chemical Engineering (Gas) with Honours",
+      "facultyEn": "Faculty of Chemical and Energy Engineering",
+      "status": "ready-for-detail-enrichment",
+      "detailUrl": "https://fkt.utm.my/bachelor-of-chemical-gas-2/"
+    },
+    {
+      "ordinal": 6,
+      "nameEnOfficial": "Bachelor of Petroleum Engineering with Honours",
+      "facultyEn": "Faculty of Chemical and Energy Engineering",
+      "status": "ready-for-detail-enrichment",
+      "detailUrl": "https://fkt.utm.my/bachelor-of-petroleum-eng/"
+    },
+    {
+      "ordinal": 7,
+      "nameEnOfficial": "Bachelor of Civil Engineering with Honours",
+      "facultyEn": "Faculty of Civil Engineering",
+      "status": "ready-for-detail-enrichment",
+      "detailUrl": "https://civil.utm.my/undergraduate/"
+    },
+    {
+      "ordinal": 8,
+      "nameEnOfficial": "Bachelor in Software Engineering with Honours",
+      "facultyEn": "Faculty of Computing",
+      "status": "ready-for-detail-enrichment",
+      "detailUrl": "https://comp.utm.my/undergraduate/"
+    },
+    {
+      "ordinal": 9,
+      "nameEnOfficial": "Bachelor of Computer Science (Computer Networks and Security) with Honours",
+      "facultyEn": "Faculty of Computing",
+      "status": "ready-for-detail-enrichment",
+      "detailUrl": "https://comp.utm.my/undergraduate/"
+    },
+    {
+      "ordinal": 10,
+      "nameEnOfficial": "Bachelor of Computer Science (Graphics and Multimedia Software) with Honours",
+      "facultyEn": "Faculty of Computing",
+      "status": "ready-for-detail-enrichment",
+      "detailUrl": "https://comp.utm.my/undergraduate/"
+    },
+    {
+      "ordinal": 11,
+      "nameEnOfficial": "Bachelor of Electronic Engineering with Honours",
+      "facultyEn": "Faculty of Electrical Engineering",
+      "status": "ready-for-detail-enrichment",
+      "detailUrl": "https://fke.utm.my/undergraduate/"
+    },
+    {
+      "ordinal": 12,
+      "nameEnOfficial": "Bachelor of Electrical Engineering with Honours",
+      "facultyEn": "Faculty of Electrical Engineering",
+      "status": "ready-for-detail-enrichment",
+      "detailUrl": "https://fke.utm.my/undergraduate/"
+    },
+    {
+      "ordinal": 13,
+      "nameEnOfficial": "Bachelor of Engineering (Electrical-Mechatronics) with Honours",
+      "facultyEn": "Faculty of Electrical Engineering",
+      "status": "ready-for-detail-enrichment",
+      "detailUrl": "https://fke.utm.my/undergraduate/."
+    },
+    {
+      "ordinal": 14,
+      "nameEnOfficial": "Bachelor of Mechanical Engineering with Honours",
+      "facultyEn": "Faculty of Mechanical Engineering",
+      "status": "ready-for-detail-enrichment",
+      "detailUrl": "https://mech.utm.my/ug-programme/"
+    },
+    {
+      "ordinal": 15,
+      "nameEnOfficial": "Bachelor of Mechanical Engineering (Manufacturing) with Honours",
+      "facultyEn": "Faculty of Mechanical Engineering",
+      "status": "international-unavailable-current-cycle",
+      "detailUrl": "https://mech.utm.my/ug-programme/"
+    },
+    {
+      "ordinal": 16,
+      "nameEnOfficial": "Bachelor of Naval Architecture & Offshore Engineering with Honours",
+      "facultyEn": "Faculty of Mechanical Engineering",
+      "status": "ready-for-detail-enrichment",
+      "detailUrl": "https://mech.utm.my/ug-programme/"
+    },
+    {
+      "ordinal": 17,
+      "nameEnOfficial": "Bachelor of Mechanical Engineering (Aeronautics) with Honours",
+      "facultyEn": "Faculty of Mechanical Engineering",
+      "status": "ready-for-detail-enrichment",
+      "detailUrl": "https://mech.utm.my/ug-programme/"
+    },
+    {
+      "ordinal": 18,
+      "nameEnOfficial": "Bachelor in Accounting with Honours",
+      "facultyEn": "Faculty of Management",
+      "status": "international-unavailable-current-cycle",
+      "detailUrl": "https://management.utm.my/undergraduates/"
+    },
+    {
+      "ordinal": 19,
+      "nameEnOfficial": "Bachelor in Digital Marketing with Honours",
+      "facultyEn": "Faculty of Management",
+      "status": "international-unavailable-current-cycle",
+      "detailUrl": "https://management.utm.my/undergraduates/"
+    },
+    {
+      "ordinal": 20,
+      "nameEnOfficial": "Bachelor of Management with Honours",
+      "facultyEn": "Faculty of Management",
+      "status": "international-unavailable-current-cycle",
+      "detailUrl": "https://management.utm.my/undergraduates/"
+    },
+    {
+      "ordinal": 21,
+      "nameEnOfficial": "Bachelor of Science in Architecture with Honours",
+      "facultyEn": "Faculty of Built Environment and Surveying",
+      "status": "ready-for-detail-enrichment",
+      "detailUrl": "https://builtsurvey.utm.my/academic/architecture/?_gl=1*hvaqr6*_ga*MTUxMzEyNjM0Mi4xNjYxODMwNDc1*_ga_N3HJW8G3P7*MTY2MzgyNzg4MS40OC4xLjE2NjM4MzE1MDcuMC4wLjA."
+    },
+    {
+      "ordinal": 22,
+      "nameEnOfficial": "Bachelor of Quantity Surveying with Honours",
+      "facultyEn": "Faculty of Built Environment and Surveying",
+      "status": "ready-for-detail-enrichment",
+      "detailUrl": "http://builtsurvey.utm.my/academics/undergraduate/quantity-surveying/"
+    },
+    {
+      "ordinal": 23,
+      "nameEnOfficial": "Bachelor of Science in Construction with Honours",
+      "facultyEn": "Faculty of Built Environment and Surveying",
+      "status": "ready-for-detail-enrichment",
+      "detailUrl": "http://builtsurvey.utm.my/academics/undergraduate/construction/"
+    },
+    {
+      "ordinal": 24,
+      "nameEnOfficial": "Bachelor of Urban and Regional Planning with Honours",
+      "facultyEn": "Faculty of Built Environment and Surveying",
+      "status": "ready-for-detail-enrichment",
+      "detailUrl": "http://builtsurvey.utm.my/academics/undergraduate/urban-regional-planning/"
+    },
+    {
+      "ordinal": 25,
+      "nameEnOfficial": "Bachelor of Landscape Architecture with Honours",
+      "facultyEn": "Faculty of Built Environment and Surveying",
+      "status": "ready-for-detail-enrichment",
+      "detailUrl": "http://builtsurvey.utm.my/academics/undergraduate/landscape-architecture/"
+    },
+    {
+      "ordinal": 26,
+      "nameEnOfficial": "Bachelor of Geomatics Engineering with Honours",
+      "facultyEn": "Faculty of Built Environment and Surveying",
+      "status": "ready-for-detail-enrichment",
+      "detailUrl": "https://builtsurvey.utm.my/academic/bachelor-of-geomatics-engineering/"
+    },
+    {
+      "ordinal": 27,
+      "nameEnOfficial": "Bachelor of Science in Geoinformatics with Honours",
+      "facultyEn": "Faculty of Built Environment and Surveying",
+      "status": "ready-for-detail-enrichment",
+      "detailUrl": "https://builtsurvey.utm.my/academic/bachelor-of-geomatics-engineering/"
+    },
+    {
+      "ordinal": 28,
+      "nameEnOfficial": "Bachelor of Science in Land Administration and Development with Honours",
+      "facultyEn": "Faculty of Built Environment and Surveying",
+      "status": "ready-for-detail-enrichment",
+      "detailUrl": "http://builtsurvey.utm.my/academic/bachelor-of-science-land-administration-development/"
+    },
+    {
+      "ordinal": 29,
+      "nameEnOfficial": "Bachelor of Real Estate with Honours",
+      "facultyEn": "Faculty of Built Environment and Surveying",
+      "status": "ready-for-detail-enrichment",
+      "detailUrl": "https://builtsurvey.utm.my/academic/bachelor-of-property-management/"
+    },
+    {
+      "ordinal": 30,
+      "nameEnOfficial": "Bachelor in Artificial Intelligence with Honours",
+      "facultyEn": "Faculty of Artificial Intelligence",
+      "status": "ready-for-detail-enrichment",
+      "detailUrl": "https://fai.utm.my/bachelor-in-artificial-intelligence-with-honours/"
+    },
+    {
+      "ordinal": 31,
+      "nameEnOfficial": "Bachelor of Science (Physics) with Honours",
+      "facultyEn": "Faculty of Science",
+      "status": "ready-for-detail-enrichment",
+      "detailUrl": "https://science.utm.my/undergraduate/b-sc-in-physics/"
+    },
+    {
+      "ordinal": 32,
+      "nameEnOfficial": "Bachelor of Science (Industrial Physics) with Honours",
+      "facultyEn": "Faculty of Science",
+      "status": "ready-for-detail-enrichment",
+      "detailUrl": "https://science.utm.my/undergraduate/b-sc-in-industrial-physics/"
+    },
+    {
+      "ordinal": 33,
+      "nameEnOfficial": "Bachelor of Science (Chemistry) with Honours",
+      "facultyEn": "Faculty of Science",
+      "status": "ready-for-detail-enrichment",
+      "detailUrl": "https://science.utm.my/undergraduate/b-sc-in-chemistry/"
+    },
+    {
+      "ordinal": 34,
+      "nameEnOfficial": "Bachelor of Science (Industrial Chemistry) with Honours",
+      "facultyEn": "Faculty of Science",
+      "status": "ready-for-detail-enrichment",
+      "detailUrl": "https://science.utm.my/undergraduate/b-sc-in-industrial-chemistry/"
+    },
+    {
+      "ordinal": 35,
+      "nameEnOfficial": "Bachelor of Science (Mathematics) with Honours",
+      "facultyEn": "Faculty of Science",
+      "status": "ready-for-detail-enrichment",
+      "detailUrl": "https://science.utm.my/undergraduate/b-sc-in-mathematics/"
+    },
+    {
+      "ordinal": 36,
+      "nameEnOfficial": "Bachelor of Science (Industrial Mathematics) with Honours",
+      "facultyEn": "Faculty of Science",
+      "status": "ready-for-detail-enrichment",
+      "detailUrl": "https://science.utm.my/undergraduate/b-sc-in-industrial-mathematics/"
+    },
+    {
+      "ordinal": 37,
+      "nameEnOfficial": "Bachelor of Science (Biology) with Honours",
+      "facultyEn": "Faculty of Science",
+      "status": "ready-for-detail-enrichment",
+      "detailUrl": "https://science.utm.my/undergraduate/b-sc-biology/"
+    },
+    {
+      "ordinal": 38,
+      "nameEnOfficial": "Bachelor of Science in Biotechnology with Honours",
+      "facultyEn": "Faculty of Science",
+      "status": "ready-for-detail-enrichment",
+      "detailUrl": "https://science.utm.my/undergraduate/bachelor-of-science-biotechnology/"
+    },
+    {
+      "ordinal": 39,
+      "nameEnOfficial": "Bachelor in Human Resource Development with Honours",
+      "facultyEn": "Faculty of Social Science and Humanities",
+      "status": "ready-for-detail-enrichment",
+      "detailUrl": "https://humanities.utm.my/sharps/bachelor-of-science-human-resource-development/"
+    },
+    {
+      "ordinal": 40,
+      "nameEnOfficial": "Bachelor of Psychology with Human Resource Development with Honours",
+      "facultyEn": "Faculty of Social Science and Humanities",
+      "status": "ready-for-detail-enrichment",
+      "detailUrl": "https://humanities.utm.my/sharps/bachelor-of-psychology-with-human-resource-development/"
+    },
+    {
+      "ordinal": 41,
+      "nameEnOfficial": "Bachelor of Science with Honours (Industrial Design)",
+      "facultyEn": "Faculty of Artificial Intelligence",
+      "status": "ready-for-detail-enrichment",
+      "detailUrl": "https://fai.utm.my/bachelor-of-science-with-honours-industrial-design/"
+    },
+    {
+      "ordinal": 42,
+      "nameEnOfficial": "Bachelor of Electronic Systems Engineering with Honours",
+      "facultyEn": "Malaysia-Japan International Institute of Technology",
+      "status": "ready-for-detail-enrichment",
+      "detailUrl": "https://mjiit.utm.my/undergraduate/"
+    },
+    {
+      "ordinal": 43,
+      "nameEnOfficial": "Bachelor of Mechanical Precision Engineering with Honours",
+      "facultyEn": "Malaysia-Japan International Institute of Technology",
+      "status": "ready-for-detail-enrichment",
+      "detailUrl": "https://mjiit.utm.my/undergraduate/"
+    },
+    {
+      "ordinal": 44,
+      "nameEnOfficial": "Bachelor of Chemical Process Engineering with Honours",
+      "facultyEn": "Malaysia-Japan International Institute of Technology",
+      "status": "ready-for-detail-enrichment",
+      "detailUrl": "https://mjiit.utm.my/undergraduate/"
+    }
+  ]
+}

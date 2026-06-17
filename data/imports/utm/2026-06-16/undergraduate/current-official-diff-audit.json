@@ -1,0 +1,39 @@
+{
+  "htmlOpenCount": 40,
+  "htmlClosedCurrentCycleCount": 4,
+  "pdfUniqueCurrentIntakeCount": 40,
+  "htmlOpenNotInPdf": [],
+  "pdfNotInHtmlCatalogue": [],
+  "duplicatePdfNames": [
+    "Bachelor in Artificial Intelligence with Honours",
+    "Bachelor in Software Engineering with Honours",
+    "Bachelor of Science (Industrial Mathematics) with Honours"
+  ],
+  "detailCoverage": {
+    "detailSources": 30,
+    "transportErrors": [],
+    "programmeAnchorNotFound": []
+  },
+  "closedHtmlRows": [
+    {
+      "nameEnOfficial": "Bachelor of Mechanical Engineering (Manufacturing) with Honours",
+      "facultyEn": "Faculty of Mechanical Engineering",
+      "intakeText": "Not offered for both the September and February intakes for the 2026/2027 academic session"
+    },
+    {
+      "nameEnOfficial": "Bachelor in Accounting with Honours",
+      "facultyEn": "Faculty of Management",
+      "intakeText": "Not offered for both the September and February intakes for the 2026/2027 academic session"
+    },
+    {
+      "nameEnOfficial": "Bachelor in Digital Marketing with Honours",
+      "facultyEn": "Faculty of Management",
+      "intakeText": "Not offered for both the September and February intakes for the 2026/2027 academic session"
+    },
+    {
+      "nameEnOfficial": "Bachelor of Management with Honours",
+      "facultyEn": "Faculty of Management",
+      "intakeText": "Not offered for both the September and February intakes for the 2026/2027 academic session"
+    }
+  ]
+}

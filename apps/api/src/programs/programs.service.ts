@@ -1,6 +1,6 @@
 ﻿import { Inject, Injectable, NotFoundException } from "@nestjs/common";
 import { InjectRepository } from "@nestjs/typeorm";
-import { Repository } from "typeorm";
+import { In, Repository } from "typeorm";
 import type { DegreeLevel, ProgramCategoryCode, RecommendationResult } from "@studymy/shared";
 import { CacheService } from "../common/cache.service.js";
 import { ProgramEntity, UniversityEntity } from "../db/entities.js";
@@ -81,7 +81,11 @@ export class ProgramsService {
     if (cached) return cached;
 
     const [programs, universities] = await Promise.all([
-      this.programsRepository.find({ where: { isPublished: true, publicDisplayStatus: "ready" }, relations: { university: true }, order: { createdAt: "DESC" } }),
+      this.programsRepository.find({
+        where: { isPublished: true, publicDisplayStatus: In(["ready", "not-available-for-international"]) },
+        relations: { university: true },
+        order: { createdAt: "DESC" }
+      }),
       this.universitiesRepository.find({ where: { isPublished: true, publicDisplayStatus: "ready" } })
     ]);
     const universityMap = new Map(universities.map((university) => [university.id, university]));
@@ -115,7 +119,10 @@ export class ProgramsService {
     if (cached) return cached;
 
     const [programs, universities] = await Promise.all([
-      this.programsRepository.find({ where: { isPublished: true, publicDisplayStatus: "ready" }, relations: { university: true } }),
+      this.programsRepository.find({
+        where: { isPublished: true, publicDisplayStatus: In(["ready", "not-available-for-international"]) },
+        relations: { university: true }
+      }),
       this.universitiesRepository.find({ where: { isPublished: true, publicDisplayStatus: "ready" } })
     ]);
     const universityMap = new Map(universities.map((university) => [university.id, university]));
@@ -149,8 +156,8 @@ export class ProgramsService {
     const numericId = /^\d+$/.test(identifier) ? Number(identifier) : null;
     const program = await this.programsRepository.findOne({
       where: numericId
-        ? { id: numericId, isPublished: true, publicDisplayStatus: "ready" }
-        : { slug: identifier, isPublished: true, publicDisplayStatus: "ready" },
+        ? { id: numericId, isPublished: true, publicDisplayStatus: In(["ready", "not-available-for-international"]) }
+        : { slug: identifier, isPublished: true, publicDisplayStatus: In(["ready", "not-available-for-international"]) },
       relations: { university: true }
     });
     if (!program) {

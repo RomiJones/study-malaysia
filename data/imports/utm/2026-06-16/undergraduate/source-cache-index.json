@@ -1,0 +1,976 @@
+[
+  {
+    "url": "https://admission.utm.my/undergraduate-international/",
+    "finalUrl": "https://admission.utm.my/undergraduate-international/",
+    "localPath": "data/imports/utm/2026-06-16/undergraduate/sources/undergraduate-international.html",
+    "sha256": "73ca9f83b8430e5ac7e6e00e8577779522158221cf02fd1b636ddde4a9281776",
+    "bytes": 210148,
+    "retrievedAt": "2026-06-16T16:37:17+00:00",
+    "status": "verified-cache",
+    "id": "undergraduate-international",
+    "sourceRole": "level-entry",
+    "officialDomain": "admission.utm.my"
+  },
+  {
+    "url": "https://admission.utm.my/offered-allcourses-international/",
+    "finalUrl": "https://admission.utm.my/offered-allcourses-international/",
+    "localPath": "data/imports/utm/2026-06-16/undergraduate/sources/offered-allcourses-international.html",
+    "sha256": "fe367225288349afbef7fb451b5fd8bb36a58246129dbd18fbe7bec8d746461a",
+    "bytes": 281712,
+    "retrievedAt": "2026-06-16T16:37:17+00:00",
+    "status": "verified-cache",
+    "id": "offered-allcourses-international",
+    "sourceRole": "level-catalogue",
+    "officialDomain": "admission.utm.my"
+  },
+  {
+    "url": "https://admission.utm.my/programme-fees-ug-international/",
+    "finalUrl": "https://admission.utm.my/programme-fees-ug-international/",
+    "localPath": "data/imports/utm/2026-06-16/undergraduate/sources/programme-fees-ug-international.html",
+    "sha256": "3029ba5de121d43281616584a930cc39a574aa84e43eef6d963b9b0f393bb832",
+    "bytes": 208633,
+    "retrievedAt": "2026-06-16T16:37:17+00:00",
+    "status": "verified-cache",
+    "id": "programme-fees-ug-international",
+    "sourceRole": "fee-table",
+    "officialDomain": "admission.utm.my"
+  },
+  {
+    "url": "https://admission.utm.my/entry-requirements-ug-international/",
+    "finalUrl": "https://admission.utm.my/entry-requirements-ug-international/",
+    "localPath": "data/imports/utm/2026-06-16/undergraduate/sources/entry-requirements-ug-international.html",
+    "sha256": "ef07dfda43be4d804005425bcb90fbd9bda1c972684ef1c27ee5b55a9db88a7d",
+    "bytes": 535264,
+    "retrievedAt": "2026-06-16T16:37:17+00:00",
+    "status": "verified-cache",
+    "id": "entry-requirements-ug-international",
+    "sourceRole": "entry-requirements",
+    "officialDomain": "admission.utm.my"
+  },
+  {
+    "url": "https://admission.utm.my/english-language-requirements-3/",
+    "finalUrl": "https://admission.utm.my/english-language-requirements-3/",
+    "localPath": "data/imports/utm/2026-06-16/undergraduate/sources/english-language-requirements.html",
+    "sha256": "944214640e6e68dd9fce9f0ec682ae39a8b6e15922c8427a51a676eb532717c4",
+    "bytes": 272346,
+    "retrievedAt": "2026-06-16T16:37:17+00:00",
+    "status": "verified-cache",
+    "id": "english-language-requirements",
+    "sourceRole": "language-requirements",
+    "officialDomain": "admission.utm.my"
+  },
+  {
+    "url": "https://admission.utm.my/wp-content/uploads/sites/461/2026/03/LATEST-UG-PROGRAMME-SEPT-2026-INTAKE.pdf",
+    "finalUrl": "https://admission.utm.my/wp-content/uploads/sites/461/2026/03/LATEST-UG-PROGRAMME-SEPT-2026-INTAKE.pdf",
+    "localPath": "data/imports/utm/2026-06-16/undergraduate/sources/latest-ug-programme-sept-2026-intake.pdf",
+    "sha256": "1b5881979a0b54b2a4df1ff7bcac65479c32dbed71402cccf5648a8d91882f1a",
+    "bytes": 3446236,
+    "retrievedAt": "2026-06-16T16:37:17+00:00",
+    "status": "verified-cache",
+    "id": "latest-ug-programme-sept-2026-intake",
+    "sourceRole": "current-intake-pdf",
+    "officialDomain": "admission.utm.my"
+  },
+  {
+    "url": "http://builtsurvey.utm.my/academic/bachelor-of-science-land-administration-development/",
+    "finalUrl": "http://builtsurvey.utm.my/academic/bachelor-of-science-land-administration-development/",
+    "localPath": "data/imports/utm/2026-06-16/undergraduate/sources/programme-details/001-builtsurvey-utm-my-academic-bachelor-of-science-land-administration-development.html",
+    "sha256": "d950028d4891860f80c39a2a0c6485dd10609e3af218545f1b8703a2330510c3",
+    "bytes": 90501,
+    "retrievedAt": "2026-06-16T16:37:18+00:00",
+    "status": "verified-cache",
+    "id": "programme-detail-001",
+    "sourceRole": "programme-detail",
+    "officialDomain": "builtsurvey.utm.my",
+    "fields": [
+      "overview",
+      "duration",
+      "studyMode",
+      "languageOfInstruction",
+      "curriculum",
+      "career",
+      "accreditation"
+    ]
+  },
+  {
+    "url": "http://builtsurvey.utm.my/academics/undergraduate/construction/",
+    "finalUrl": "http://builtsurvey.utm.my/academics/undergraduate/construction/",
+    "localPath": "data/imports/utm/2026-06-16/undergraduate/sources/programme-details/002-builtsurvey-utm-my-academics-undergraduate-construction.html",
+    "sha256": "e8bd733f7edfd557eb4b70c13c097a9c386a8d60e7cdbafcf7ed58d28bd0ecd1",
+    "bytes": 95587,
+    "retrievedAt": "2026-06-16T16:37:18+00:00",
+    "status": "verified-cache",
+    "id": "programme-detail-002",
+    "sourceRole": "programme-detail",
+    "officialDomain": "builtsurvey.utm.my",
+    "fields": [
+      "overview",
+      "duration",
+      "studyMode",
+      "languageOfInstruction",
+      "curriculum",
+      "career",
+      "accreditation"
+    ]
+  },
+  {
+    "url": "http://builtsurvey.utm.my/academics/undergraduate/landscape-architecture/",
+    "finalUrl": "http://builtsurvey.utm.my/academics/undergraduate/landscape-architecture/",
+    "localPath": "data/imports/utm/2026-06-16/undergraduate/sources/programme-details/003-builtsurvey-utm-my-academics-undergraduate-landscape-architecture.html",
+    "sha256": "9665ec5329b4321059c1f58f87c15b1317441b146e6c16cdb15ab5e939ae1e82",
+    "bytes": 96839,
+    "retrievedAt": "2026-06-16T16:37:18+00:00",
+    "status": "verified-cache",
+    "id": "programme-detail-003",
+    "sourceRole": "programme-detail",
+    "officialDomain": "builtsurvey.utm.my",
+    "fields": [
+      "overview",
+      "duration",
+      "studyMode",
+      "languageOfInstruction",
+      "curriculum",
+      "career",
+      "accreditation"
+    ]
+  },
+  {
+    "url": "http://builtsurvey.utm.my/academics/undergraduate/quantity-surveying/",
+    "finalUrl": "http://builtsurvey.utm.my/academics/undergraduate/quantity-surveying/",
+    "localPath": "data/imports/utm/2026-06-16/undergraduate/sources/programme-details/004-builtsurvey-utm-my-academics-undergraduate-quantity-surveying.html",
+    "sha256": "dda1631b39089e2fcce11b4f3a4574d87d6e6abb11a23c586af982136e32ac78",
+    "bytes": 96785,
+    "retrievedAt": "2026-06-16T16:37:18+00:00",
+    "status": "verified-cache",
+    "id": "programme-detail-004",
+    "sourceRole": "programme-detail",
+    "officialDomain": "builtsurvey.utm.my",
+    "fields": [
+      "overview",
+      "duration",
+      "studyMode",
+      "languageOfInstruction",
+      "curriculum",
+      "career",
+      "accreditation"
+    ]
+  },
+  {
+    "url": "https://builtsurvey.utm.my/academic/architecture/",
+    "finalUrl": "https://builtsurvey.utm.my/academic/architecture/",
+    "localPath": "data/imports/utm/2026-06-16/undergraduate/sources/programme-details/005-builtsurvey-utm-my-academic-architecture.html",
+    "sha256": "0ae8f0ffdb5d01afcd136e62f9d74221aceec5cc5dd2947f5c5a7ee96e8119dc",
+    "bytes": 100697,
+    "retrievedAt": "2026-06-16T16:37:18+00:00",
+    "status": "verified-cache",
+    "id": "programme-detail-005",
+    "sourceRole": "programme-detail",
+    "officialDomain": "builtsurvey.utm.my",
+    "fields": [
+      "overview",
+      "duration",
+      "studyMode",
+      "languageOfInstruction",
+      "curriculum",
+      "career",
+      "accreditation"
+    ]
+  },
+  {
+    "url": "https://builtsurvey.utm.my/academic/bachelor-of-geomatics-engineering/",
+    "finalUrl": "https://builtsurvey.utm.my/academic/bachelor-of-geomatics-engineering/",
+    "localPath": "data/imports/utm/2026-06-16/undergraduate/sources/programme-details/006-builtsurvey-utm-my-academic-bachelor-of-geomatics-engineering.html",
+    "sha256": "794fce155e4b5e0550aed00d177cfd2727dab29b044e71e201cad35d6ee137b6",
+    "bytes": 92520,
+    "retrievedAt": "2026-06-16T16:37:18+00:00",
+    "status": "verified-cache",
+    "id": "programme-detail-006",
+    "sourceRole": "programme-detail",
+    "officialDomain": "builtsurvey.utm.my",
+    "fields": [
+      "overview",
+      "duration",
+      "studyMode",
+      "languageOfInstruction",
+      "curriculum",
+      "career",
+      "accreditation"
+    ]
+  },
+  {
+    "url": "https://builtsurvey.utm.my/academic/undergraduate/urban-regional-planning/",
+    "finalUrl": "https://builtsurvey.utm.my/academic/undergraduate/urban-regional-planning/",
+    "localPath": "data/imports/utm/2026-06-16/undergraduate/sources/programme-details/007-builtsurvey-utm-my-academic-undergraduate-urban-regional-planning.html",
+    "sha256": "eb44aa3987ad0035aa27c3c3885421b0adaabbbe56e01fdbbdae0a637db7d245",
+    "bytes": 104371,
+    "retrievedAt": "2026-06-16T16:37:18+00:00",
+    "status": "verified-cache",
+    "id": "programme-detail-007",
+    "sourceRole": "programme-detail",
+    "officialDomain": "builtsurvey.utm.my",
+    "fields": [
+      "overview",
+      "duration",
+      "studyMode",
+      "languageOfInstruction",
+      "curriculum",
+      "career",
+      "accreditation"
+    ]
+  },
+  {
+    "url": "https://builtsurvey.utm.my/fabu2024/academic/bachelor-of-property-management/",
+    "finalUrl": "https://builtsurvey.utm.my/fabu2024/academic/bachelor-of-property-management/",
+    "localPath": "data/imports/utm/2026-06-16/undergraduate/sources/programme-details/008-builtsurvey-utm-my-fabu2024-academic-bachelor-of-property-management.html",
+    "sha256": "f25497e496a08802c225c9e14ef0369064a62c039d94642ddd0b9783bc3365d7",
+    "bytes": 179725,
+    "retrievedAt": "2026-06-16T16:37:18+00:00",
+    "status": "verified-cache",
+    "id": "programme-detail-008",
+    "sourceRole": "programme-detail",
+    "officialDomain": "builtsurvey.utm.my",
+    "fields": [
+      "overview",
+      "duration",
+      "studyMode",
+      "languageOfInstruction",
+      "curriculum",
+      "career",
+      "accreditation"
+    ]
+  },
+  {
+    "url": "https://civil.utm.my/undergraduate/",
+    "finalUrl": "https://civil.utm.my/undergraduate/",
+    "localPath": "data/imports/utm/2026-06-16/undergraduate/sources/programme-details/009-civil-utm-my-undergraduate.html",
+    "sha256": "0962c6d5de0a3aa03614b48eb753ed533bae77ff10470001fea40b18dd8a71ed",
+    "bytes": 328321,
+    "retrievedAt": "2026-06-16T16:37:18+00:00",
+    "status": "verified-cache",
+    "id": "programme-detail-009",
+    "sourceRole": "programme-detail",
+    "officialDomain": "civil.utm.my",
+    "fields": [
+      "overview",
+      "duration",
+      "studyMode",
+      "languageOfInstruction",
+      "curriculum",
+      "career",
+      "accreditation"
+    ]
+  },
+  {
+    "url": "https://comp.utm.my/undergraduate/",
+    "finalUrl": "https://comp.utm.my/undergraduate/",
+    "localPath": "data/imports/utm/2026-06-16/undergraduate/sources/programme-details/010-comp-utm-my-undergraduate.html",
+    "sha256": "b8563216ce8996afa4f67a45333f1ed66114d458076210ed16c15fd6fbeee5ae",
+    "bytes": 231052,
+    "retrievedAt": "2026-06-16T16:37:18+00:00",
+    "status": "verified-cache",
+    "id": "programme-detail-010",
+    "sourceRole": "programme-detail",
+    "officialDomain": "comp.utm.my",
+    "fields": [
+      "overview",
+      "duration",
+      "studyMode",
+      "languageOfInstruction",
+      "curriculum",
+      "career",
+      "accreditation"
+    ]
+  },
+  {
+    "url": "https://fai.utm.my/bachelor-in-artificial-intelligence-with-honours/",
+    "finalUrl": "https://fai.utm.my/bachelor-in-artificial-intelligence-with-honours/",
+    "localPath": "data/imports/utm/2026-06-16/undergraduate/sources/programme-details/011-fai-utm-my-bachelor-in-artificial-intelligence-with-honours.html",
+    "sha256": "10268193de9b496a80eb125a36301db93c5da6ce297d9d396e61d2d8e46d601d",
+    "bytes": 248755,
+    "retrievedAt": "2026-06-16T16:37:18+00:00",
+    "status": "verified-cache",
+    "id": "programme-detail-011",
+    "sourceRole": "programme-detail",
+    "officialDomain": "fai.utm.my",
+    "fields": [
+      "overview",
+      "duration",
+      "studyMode",
+      "languageOfInstruction",
+      "curriculum",
+      "career",
+      "accreditation"
+    ]
+  },
+  {
+    "url": "https://fai.utm.my/bachelor-of-science-with-honours-industrial-design/",
+    "finalUrl": "https://fai.utm.my/bachelor-of-science-with-honours-industrial-design/",
+    "localPath": "data/imports/utm/2026-06-16/undergraduate/sources/programme-details/012-fai-utm-my-bachelor-of-science-with-honours-industrial-design.html",
+    "sha256": "3b2ca62bd1670d68694b6d130e838cc1be7b4881feda423871af35342315453f",
+    "bytes": 246184,
+    "retrievedAt": "2026-06-16T16:37:18+00:00",
+    "status": "verified-cache",
+    "id": "programme-detail-012",
+    "sourceRole": "programme-detail",
+    "officialDomain": "fai.utm.my",
+    "fields": [
+      "overview",
+      "duration",
+      "studyMode",
+      "languageOfInstruction",
+      "curriculum",
+      "career",
+      "accreditation"
+    ]
+  },
+  {
+    "url": "https://fke.utm.my/undergraduate/",
+    "finalUrl": "https://fke.utm.my/undergraduate/",
+    "localPath": "data/imports/utm/2026-06-16/undergraduate/sources/programme-details/013-fke-utm-my-undergraduate.html",
+    "sha256": "4a54e2ba3f799c91cd4d1586f118abe0927cf639025c669035d781a7d3ff7a1e",
+    "bytes": 244291,
+    "retrievedAt": "2026-06-16T16:37:18+00:00",
+    "status": "verified-cache",
+    "id": "programme-detail-013",
+    "sourceRole": "programme-detail",
+    "officialDomain": "fke.utm.my",
+    "fields": [
+      "overview",
+      "duration",
+      "studyMode",
+      "languageOfInstruction",
+      "curriculum",
+      "career",
+      "accreditation"
+    ]
+  },
+  {
+    "url": "https://fkt.utm.my/bachelor-of-chemical-engineering-2/",
+    "finalUrl": "https://fkt.utm.my/bachelor-of-chemical-engineering-2/",
+    "localPath": "data/imports/utm/2026-06-16/undergraduate/sources/programme-details/014-fkt-utm-my-bachelor-of-chemical-engineering-2.html",
+    "sha256": "19a0ac6403094db370381ac1a357472b056b5535aaf0179091681e452992fe28",
+    "bytes": 208737,
+    "retrievedAt": "2026-06-16T16:37:18+00:00",
+    "status": "verified-cache",
+    "id": "programme-detail-014",
+    "sourceRole": "programme-detail",
+    "officialDomain": "fkt.utm.my",
+    "fields": [
+      "overview",
+      "duration",
+      "studyMode",
+      "languageOfInstruction",
+      "curriculum",
+      "career",
+      "accreditation"
+    ]
+  },
+  {
+    "url": "https://fkt.utm.my/bachelor-of-chemical-gas-2/",
+    "finalUrl": "https://fkt.utm.my/bachelor-of-chemical-gas-2/",
+    "localPath": "data/imports/utm/2026-06-16/undergraduate/sources/programme-details/015-fkt-utm-my-bachelor-of-chemical-gas-2.html",
+    "sha256": "bd74b575ac373781dcdc9802c0cc86cfe03d75dc01df2c82eddf93fe7af76371",
+    "bytes": 205876,
+    "retrievedAt": "2026-06-16T16:37:18+00:00",
+    "status": "verified-cache",
+    "id": "programme-detail-015",
+    "sourceRole": "programme-detail",
+    "officialDomain": "fkt.utm.my",
+    "fields": [
+      "overview",
+      "duration",
+      "studyMode",
+      "languageOfInstruction",
+      "curriculum",
+      "career",
+      "accreditation"
+    ]
+  },
+  {
+    "url": "https://fkt.utm.my/bachelor-of-engineering-chemical-bioprocess-2/",
+    "finalUrl": "https://fkt.utm.my/bachelor-of-engineering-chemical-bioprocess-2/",
+    "localPath": "data/imports/utm/2026-06-16/undergraduate/sources/programme-details/016-fkt-utm-my-bachelor-of-engineering-chemical-bioprocess-2.html",
+    "sha256": "68af0147e0c23f63858d9f7ef73fe56714f54cf8a0b0cda2cfbf702671a64540",
+    "bytes": 206948,
+    "retrievedAt": "2026-06-16T16:37:18+00:00",
+    "status": "verified-cache",
+    "id": "programme-detail-016",
+    "sourceRole": "programme-detail",
+    "officialDomain": "fkt.utm.my",
+    "fields": [
+      "overview",
+      "duration",
+      "studyMode",
+      "languageOfInstruction",
+      "curriculum",
+      "career",
+      "accreditation"
+    ]
+  },
+  {
+    "url": "https://fkt.utm.my/bachelor-of-nuclear-engineering-2/",
+    "finalUrl": "https://fkt.utm.my/bachelor-of-nuclear-engineering-2/",
+    "localPath": "data/imports/utm/2026-06-16/undergraduate/sources/programme-details/017-fkt-utm-my-bachelor-of-nuclear-engineering-2.html",
+    "sha256": "7e6a2cd156a3bff71e5c4cf196aaf79814af1b9b61287026bc1cbb4f054ea0bb",
+    "bytes": 188856,
+    "retrievedAt": "2026-06-16T16:37:18+00:00",
+    "status": "verified-cache",
+    "id": "programme-detail-017",
+    "sourceRole": "programme-detail",
+    "officialDomain": "fkt.utm.my",
+    "fields": [
+      "overview",
+      "duration",
+      "studyMode",
+      "languageOfInstruction",
+      "curriculum",
+      "career",
+      "accreditation"
+    ]
+  },
+  {
+    "url": "https://fkt.utm.my/bachelor-of-petroleum-eng/",
+    "finalUrl": "https://fkt.utm.my/bachelor-of-petroleum-eng/",
+    "localPath": "data/imports/utm/2026-06-16/undergraduate/sources/programme-details/018-fkt-utm-my-bachelor-of-petroleum-eng.html",
+    "sha256": "2694a05f2ba66f10aa218bda85161488fbbb1ad2d36d4f98aaae4b509b9b7a40",
+    "bytes": 201869,
+    "retrievedAt": "2026-06-16T16:37:18+00:00",
+    "status": "verified-cache",
+    "id": "programme-detail-018",
+    "sourceRole": "programme-detail",
+    "officialDomain": "fkt.utm.my",
+    "fields": [
+      "overview",
+      "duration",
+      "studyMode",
+      "languageOfInstruction",
+      "curriculum",
+      "career",
+      "accreditation"
+    ]
+  },
+  {
+    "url": "https://humanities.utm.my/sharps/bachelor-of-psychology-with-human-resource-development/",
+    "finalUrl": "https://humanities.utm.my/sharps/bachelor-of-psychology-with-human-resource-development/",
+    "localPath": "data/imports/utm/2026-06-16/undergraduate/sources/programme-details/019-humanities-utm-my-sharps-bachelor-of-psychology-with-human-resource-development.html",
+    "sha256": "633679cb94124eb11fa74fcaf703c018fa8cecee077a0e0274155b523d6b5437",
+    "bytes": 219140,
+    "retrievedAt": "2026-06-16T16:37:18+00:00",
+    "status": "verified-cache",
+    "id": "programme-detail-019",
+    "sourceRole": "programme-detail",
+    "officialDomain": "humanities.utm.my",
+    "fields": [
+      "overview",
+      "duration",
+      "studyMode",
+      "languageOfInstruction",
+      "curriculum",
+      "career",
+      "accreditation"
+    ]
+  },
+  {
+    "url": "https://humanities.utm.my/sharps/bachelor-of-science-human-resource-development/",
+    "finalUrl": "https://humanities.utm.my/sharps/bachelor-of-science-human-resource-development/",
+    "localPath": "data/imports/utm/2026-06-16/undergraduate/sources/programme-details/020-humanities-utm-my-sharps-bachelor-of-science-human-resource-development.html",
+    "sha256": "9ec878c5c4826a0061413407bfcfdbfb57546e5a0d7cc30acf783e1b0b427b01",
+    "bytes": 221352,
+    "retrievedAt": "2026-06-16T16:37:18+00:00",
+    "status": "verified-cache",
+    "id": "programme-detail-020",
+    "sourceRole": "programme-detail",
+    "officialDomain": "humanities.utm.my",
+    "fields": [
+      "overview",
+      "duration",
+      "studyMode",
+      "languageOfInstruction",
+      "curriculum",
+      "career",
+      "accreditation"
+    ]
+  },
+  {
+    "url": "https://mech.utm.my/ug-programme/",
+    "finalUrl": "https://mech.utm.my/ug-programme/",
+    "localPath": "data/imports/utm/2026-06-16/undergraduate/sources/programme-details/021-mech-utm-my-ug-programme.html",
+    "sha256": "19494b4daf2e6215bb8954a4be19ccd11dac72901f72cd9656f904594ac35257",
+    "bytes": 226473,
+    "retrievedAt": "2026-06-16T16:37:18+00:00",
+    "status": "verified-cache",
+    "id": "programme-detail-021",
+    "sourceRole": "programme-detail",
+    "officialDomain": "mech.utm.my",
+    "fields": [
+      "overview",
+      "duration",
+      "studyMode",
+      "languageOfInstruction",
+      "curriculum",
+      "career",
+      "accreditation"
+    ]
+  },
+  {
+    "url": "https://mjiit.utm.my/undergraduate/",
+    "finalUrl": "https://mjiit.utm.my/undergraduate/",
+    "localPath": "data/imports/utm/2026-06-16/undergraduate/sources/programme-details/022-mjiit-utm-my-undergraduate.html",
+    "sha256": "244ab6cb46da52f3478013aa0876358a0552e0a9b4fba553a9c390cbcd08ac12",
+    "bytes": 436841,
+    "retrievedAt": "2026-06-16T16:37:18+00:00",
+    "status": "verified-cache",
+    "id": "programme-detail-022",
+    "sourceRole": "programme-detail",
+    "officialDomain": "mjiit.utm.my",
+    "fields": [
+      "overview",
+      "duration",
+      "studyMode",
+      "languageOfInstruction",
+      "curriculum",
+      "career",
+      "accreditation"
+    ]
+  },
+  {
+    "url": "https://science.utm.my/undergraduate/b-sc-biology/",
+    "finalUrl": "https://science.utm.my/undergraduate/b-sc-biology/",
+    "localPath": "data/imports/utm/2026-06-16/undergraduate/sources/programme-details/023-science-utm-my-undergraduate-b-sc-biology.html",
+    "sha256": "31de05c572db3e2e1468061b10fbcd43765456fe66b6f46531007cc1f7e056b6",
+    "bytes": 208086,
+    "retrievedAt": "2026-06-16T16:37:18+00:00",
+    "status": "verified-cache",
+    "id": "programme-detail-023",
+    "sourceRole": "programme-detail",
+    "officialDomain": "science.utm.my",
+    "fields": [
+      "overview",
+      "duration",
+      "studyMode",
+      "languageOfInstruction",
+      "curriculum",
+      "career",
+      "accreditation"
+    ]
+  },
+  {
+    "url": "https://science.utm.my/undergraduate/b-sc-in-chemistry/",
+    "finalUrl": "https://science.utm.my/undergraduate/b-sc-in-chemistry/",
+    "localPath": "data/imports/utm/2026-06-16/undergraduate/sources/programme-details/024-science-utm-my-undergraduate-b-sc-in-chemistry.html",
+    "sha256": "97266e2bf03e6cf7e8e59bb90c3caecdccf3cca00bd2b4bea767438ab524c4ca",
+    "bytes": 201441,
+    "retrievedAt": "2026-06-16T16:37:18+00:00",
+    "status": "verified-cache",
+    "id": "programme-detail-024",
+    "sourceRole": "programme-detail",
+    "officialDomain": "science.utm.my",
+    "fields": [
+      "overview",
+      "duration",
+      "studyMode",
+      "languageOfInstruction",
+      "curriculum",
+      "career",
+      "accreditation"
+    ]
+  },
+  {
+    "url": "https://science.utm.my/undergraduate/b-sc-in-industrial-chemistry/",
+    "finalUrl": "https://science.utm.my/undergraduate/b-sc-in-industrial-chemistry/",
+    "localPath": "data/imports/utm/2026-06-16/undergraduate/sources/programme-details/025-science-utm-my-undergraduate-b-sc-in-industrial-chemistry.html",
+    "sha256": "bfc58439f0ae90eecf456cfc7e55de4cb116185fc0e0b818ae4694a4f008c419",
+    "bytes": 201962,
+    "retrievedAt": "2026-06-16T16:37:18+00:00",
+    "status": "verified-cache",
+    "id": "programme-detail-025",
+    "sourceRole": "programme-detail",
+    "officialDomain": "science.utm.my",
+    "fields": [
+      "overview",
+      "duration",
+      "studyMode",
+      "languageOfInstruction",
+      "curriculum",
+      "career",
+      "accreditation"
+    ]
+  },
+  {
+    "url": "https://science.utm.my/undergraduate/b-sc-in-industrial-mathematics/",
+    "finalUrl": "https://science.utm.my/undergraduate/b-sc-in-industrial-mathematics/",
+    "localPath": "data/imports/utm/2026-06-16/undergraduate/sources/programme-details/026-science-utm-my-undergraduate-b-sc-in-industrial-mathematics.html",
+    "sha256": "6d76a51a46e9b3ec43cf16a3ae52b6f38891b1933b38f433ad43354884ff2cf0",
+    "bytes": 201051,
+    "retrievedAt": "2026-06-16T16:37:18+00:00",
+    "status": "verified-cache",
+    "id": "programme-detail-026",
+    "sourceRole": "programme-detail",
+    "officialDomain": "science.utm.my",
+    "fields": [
+      "overview",
+      "duration",
+      "studyMode",
+      "languageOfInstruction",
+      "curriculum",
+      "career",
+      "accreditation"
+    ]
+  },
+  {
+    "url": "https://science.utm.my/undergraduate/b-sc-in-industrial-physics/",
+    "finalUrl": "https://science.utm.my/undergraduate/b-sc-in-industrial-physics/",
+    "localPath": "data/imports/utm/2026-06-16/undergraduate/sources/programme-details/027-science-utm-my-undergraduate-b-sc-in-industrial-physics.html",
+    "sha256": "a8d6238bc5bcf490ad8177758a1cbd3d443ac5f046c21275a6b97770c6dd2252",
+    "bytes": 208691,
+    "retrievedAt": "2026-06-16T16:37:18+00:00",
+    "status": "verified-cache",
+    "id": "programme-detail-027",
+    "sourceRole": "programme-detail",
+    "officialDomain": "science.utm.my",
+    "fields": [
+      "overview",
+      "duration",
+      "studyMode",
+      "languageOfInstruction",
+      "curriculum",
+      "career",
+      "accreditation"
+    ]
+  },
+  {
+    "url": "https://science.utm.my/undergraduate/b-sc-in-mathematics/",
+    "finalUrl": "https://science.utm.my/undergraduate/b-sc-in-mathematics/",
+    "localPath": "data/imports/utm/2026-06-16/undergraduate/sources/programme-details/028-science-utm-my-undergraduate-b-sc-in-mathematics.html",
+    "sha256": "e7542837f414a78b73fdf66ca9e4d29e5309c73255451adb5b9d8fa0cee04318",
+    "bytes": 200765,
+    "retrievedAt": "2026-06-16T16:37:18+00:00",
+    "status": "verified-cache",
+    "id": "programme-detail-028",
+    "sourceRole": "programme-detail",
+    "officialDomain": "science.utm.my",
+    "fields": [
+      "overview",
+      "duration",
+      "studyMode",
+      "languageOfInstruction",
+      "curriculum",
+      "career",
+      "accreditation"
+    ]
+  },
+  {
+    "url": "https://science.utm.my/undergraduate/b-sc-in-physics/",
+    "finalUrl": "https://science.utm.my/undergraduate/b-sc-in-physics/",
+    "localPath": "data/imports/utm/2026-06-16/undergraduate/sources/programme-details/029-science-utm-my-undergraduate-b-sc-in-physics.html",
+    "sha256": "e1f22c8f6989da440625f0ea2aadaa95333412befdd684a343c88856e16e5fdf",
+    "bytes": 201048,
+    "retrievedAt": "2026-06-16T16:37:18+00:00",
+    "status": "verified-cache",
+    "id": "programme-detail-029",
+    "sourceRole": "programme-detail",
+    "officialDomain": "science.utm.my",
+    "fields": [
+      "overview",
+      "duration",
+      "studyMode",
+      "languageOfInstruction",
+      "curriculum",
+      "career",
+      "accreditation"
+    ]
+  },
+  {
+    "url": "https://science.utm.my/undergraduate/bachelor-of-science-biotechnology/",
+    "finalUrl": "https://science.utm.my/undergraduate/bachelor-of-science-biotechnology/",
+    "localPath": "data/imports/utm/2026-06-16/undergraduate/sources/programme-details/030-science-utm-my-undergraduate-bachelor-of-science-biotechnology.html",
+    "sha256": "85bfe104849bc63e7d27318fe6430a4f5e9e6fcda110ff0fdce85c07b7e77943",
+    "bytes": 200487,
+    "retrievedAt": "2026-06-16T16:37:18+00:00",
+    "status": "verified-cache",
+    "id": "programme-detail-030",
+    "sourceRole": "programme-detail",
+    "officialDomain": "science.utm.my",
+    "fields": [
+      "overview",
+      "duration",
+      "studyMode",
+      "languageOfInstruction",
+      "curriculum",
+      "career",
+      "accreditation"
+    ]
+  },
+  {
+    "url": "https://fke.utm.my/wp-content/uploads/2025/09/SKEB-Booklet-20252026-Both-Intake.pdf",
+    "finalUrl": "https://fke.utm.my/wp-content/uploads/2025/09/SKEB-Booklet-20252026-Both-Intake.pdf",
+    "localPath": "data/imports/utm/2026-06-16/undergraduate/sources/supplemental-pdfs/SKEB-Booklet-20252026-Both-Intake.pdf",
+    "sha256": "c3954f2f00773f49377169e53d3c4b37ed50da3c614370d9a7a3fcb5f2def697",
+    "bytes": 7808929,
+    "retrievedAt": "2026-06-16T16:37:18+00:00",
+    "status": "verified-cache",
+    "id": "fke-biomedical-booklet-2025-2026",
+    "sourceRole": "supplemental-programme-handbook",
+    "officialDomain": "fke.utm.my",
+    "fields": [
+      "duration",
+      "studyMode",
+      "programmeStructure",
+      "entryRequirements"
+    ],
+    "relatedProgrammes": [
+      "Bachelor of Biomedical Engineering with Honours"
+    ],
+    "pageWindows": [
+      [
+        1,
+        18
+      ]
+    ]
+  },
+  {
+    "url": "https://fke.utm.my/wp-content/uploads/2025/09/SKEEH-Booklet-20252026-50825.pdf",
+    "finalUrl": "https://fke.utm.my/wp-content/uploads/2025/09/SKEEH-Booklet-20252026-50825.pdf",
+    "localPath": "data/imports/utm/2026-06-16/undergraduate/sources/supplemental-pdfs/SKEEH-Booklet-20252026-50825.pdf",
+    "sha256": "bb0369d3b22f30db3755e728766d13302726e5449f6db4d6885c7b39109ac5db",
+    "bytes": 2113642,
+    "retrievedAt": "2026-06-16T16:37:18+00:00",
+    "status": "verified-cache",
+    "id": "fke-electrical-booklet-2025-2026",
+    "sourceRole": "supplemental-programme-handbook",
+    "officialDomain": "fke.utm.my",
+    "fields": [
+      "duration",
+      "studyMode",
+      "programmeStructure",
+      "entryRequirements"
+    ],
+    "relatedProgrammes": [
+      "Bachelor of Electrical Engineering with Honours"
+    ],
+    "pageWindows": [
+      [
+        1,
+        18
+      ]
+    ]
+  },
+  {
+    "url": "https://fke.utm.my/wp-content/uploads/2025/10/Booklet-SKELH-20252026_REV1.pdf",
+    "finalUrl": "https://fke.utm.my/wp-content/uploads/2025/10/Booklet-SKELH-20252026_REV1.pdf",
+    "localPath": "data/imports/utm/2026-06-16/undergraduate/sources/supplemental-pdfs/Booklet-SKELH-20252026_REV1.pdf",
+    "sha256": "c2e0850b01864b4061f5cb3af7a3fd3472c1e292e20f407d5d9a0ab0be6d069c",
+    "bytes": 7478196,
+    "retrievedAt": "2026-06-16T16:37:18+00:00",
+    "status": "verified-cache",
+    "id": "fke-electronic-booklet-2025-2026",
+    "sourceRole": "supplemental-programme-handbook",
+    "officialDomain": "fke.utm.my",
+    "fields": [
+      "duration",
+      "studyMode",
+      "programmeStructure",
+      "entryRequirements"
+    ],
+    "relatedProgrammes": [
+      "Bachelor of Electronic Engineering with Honours"
+    ],
+    "pageWindows": [
+      [
+        1,
+        18
+      ]
+    ]
+  },
+  {
+    "url": "https://fke.utm.my/wp-content/uploads/2026/05/SKEMH-Handbook-20252026-22-May-2026.pdf",
+    "finalUrl": "https://fke.utm.my/wp-content/uploads/2026/05/SKEMH-Handbook-20252026-22-May-2026.pdf",
+    "localPath": "data/imports/utm/2026-06-16/undergraduate/sources/supplemental-pdfs/SKEMH-Handbook-20252026-22-May-2026.pdf",
+    "sha256": "b556b93807a2087ace7633b12dd37d60871cf35ef4084a28e6e2f35379a8e3cc",
+    "bytes": 2535510,
+    "retrievedAt": "2026-06-16T16:37:18+00:00",
+    "status": "verified-cache",
+    "id": "fke-mechatronics-handbook-2025-2026",
+    "sourceRole": "supplemental-programme-handbook",
+    "officialDomain": "fke.utm.my",
+    "fields": [
+      "duration",
+      "studyMode",
+      "programmeStructure",
+      "entryRequirements"
+    ],
+    "relatedProgrammes": [
+      "Bachelor of Engineering (Electrical-Mechatronics) with Honours"
+    ],
+    "pageWindows": [
+      [
+        1,
+        20
+      ]
+    ]
+  },
+  {
+    "url": "https://fkt.utm.my/wp-content/uploads/2026/01/GUIDEBOOK-UG-FKT-2025-2026-1.pdf",
+    "finalUrl": "https://fkt.utm.my/wp-content/uploads/2026/01/GUIDEBOOK-UG-FKT-2025-2026-1.pdf",
+    "localPath": "data/imports/utm/2026-06-16/undergraduate/sources/supplemental-pdfs/GUIDEBOOK-UG-FKT-2025-2026-1.pdf",
+    "sha256": "b777b3da30c1c599c3c62f87721975c90176545495bd0d3647b7a5a8dd02f352",
+    "bytes": 2937778,
+    "retrievedAt": "2026-06-16T16:37:18+00:00",
+    "status": "verified-cache",
+    "id": "fkt-undergraduate-guidebook-2025-2026",
+    "sourceRole": "supplemental-programme-handbook",
+    "officialDomain": "fkt.utm.my",
+    "fields": [
+      "duration",
+      "studyMode",
+      "programmeStructure",
+      "entryRequirements"
+    ],
+    "relatedProgrammes": [
+      "Bachelor of Chemical Engineering with Honours",
+      "Bachelor of Nuclear Engineering with Honours",
+      "Bachelor of Chemical Engineering (Bioprocess) with Honours",
+      "Bachelor of Chemical Engineering (Gas) with Honours",
+      "Bachelor of Petroleum Engineering with Honours"
+    ],
+    "pageWindows": [
+      [
+        1,
+        40
+      ]
+    ]
+  },
+  {
+    "url": "https://mech.utm.my/wp-content/uploads/2023/10/UNDERGRADUATE-HANDBOOK-FACULTY-OF-MECHANICAL-ENGINEERING-SESSION-20232024.pdf",
+    "finalUrl": "https://mech.utm.my/wp-content/uploads/2023/10/UNDERGRADUATE-HANDBOOK-FACULTY-OF-MECHANICAL-ENGINEERING-SESSION-20232024.pdf",
+    "localPath": "data/imports/utm/2026-06-16/undergraduate/sources/supplemental-pdfs/UNDERGRADUATE-HANDBOOK-FACULTY-OF-MECHANICAL-ENGINEERING-SESSION-20232024.pdf",
+    "sha256": "a78fc874bb6dd353278a3618ceaae24b2ca679e34a996a7202361129aa50a2c7",
+    "bytes": 11104685,
+    "retrievedAt": "2026-06-16T16:37:18+00:00",
+    "status": "verified-cache",
+    "id": "mechanical-undergraduate-handbook-2023-2024",
+    "sourceRole": "supplemental-programme-handbook",
+    "officialDomain": "mech.utm.my",
+    "fields": [
+      "duration",
+      "studyMode",
+      "programmeStructure",
+      "entryRequirements"
+    ],
+    "relatedProgrammes": [
+      "Bachelor of Mechanical Engineering with Honours",
+      "Bachelor of Naval Architecture & Offshore Engineering with Honours",
+      "Bachelor of Mechanical Engineering (Aeronautics) with Honours"
+    ],
+    "pageWindows": [
+      [
+        1,
+        40
+      ]
+    ]
+  },
+  {
+    "url": "https://science.utm.my/undergraduate/wp-content/uploads/sites/584/2025/09/UGFS-Academic-Handbook-20252026-v2.pdf",
+    "finalUrl": "https://science.utm.my/undergraduate/wp-content/uploads/sites/584/2025/09/UGFS-Academic-Handbook-20252026-v2.pdf",
+    "localPath": "data/imports/utm/2026-06-16/undergraduate/sources/supplemental-pdfs/UGFS-Academic-Handbook-20252026-v2.pdf",
+    "sha256": "0fdc024f4f2fcc40d1802a98eaaf82de22fabe05c80fecfa4bb65aeb5a215381",
+    "bytes": 4667112,
+    "retrievedAt": "2026-06-16T16:37:18+00:00",
+    "status": "verified-cache",
+    "id": "science-academic-handbook-2025-2026",
+    "sourceRole": "supplemental-programme-handbook",
+    "officialDomain": "science.utm.my",
+    "fields": [
+      "duration",
+      "studyMode",
+      "programmeStructure",
+      "entryRequirements"
+    ],
+    "relatedProgrammes": [
+      "Bachelor of Science (Physics) with Honours",
+      "Bachelor of Science (Industrial Physics) with Honours",
+      "Bachelor of Science (Chemistry) with Honours",
+      "Bachelor of Science (Industrial Chemistry) with Honours",
+      "Bachelor of Science (Mathematics) with Honours",
+      "Bachelor of Science (Industrial Mathematics) with Honours",
+      "Bachelor of Science (Biology) with Honours",
+      "Bachelor of Science in Biotechnology with Honours"
+    ],
+    "pageWindows": [
+      [
+        1,
+        40
+      ]
+    ]
+  },
+  {
+    "url": "https://mjiit.utm.my/wp-content/uploads/2025/09/Final-Guideline-Book-UG-20252026.pdf",
+    "finalUrl": "https://mjiit.utm.my/wp-content/uploads/2025/09/Final-Guideline-Book-UG-20252026.pdf",
+    "localPath": "data/imports/utm/2026-06-16/undergraduate/sources/supplemental-pdfs/Final-Guideline-Book-UG-20252026.pdf",
+    "sha256": "a2d0dd02b78554f258cee2ee439bf4efa69c7700fb07b433d5f2ce59dd98c4c5",
+    "bytes": 13128050,
+    "retrievedAt": "2026-06-16T16:37:18+00:00",
+    "status": "verified-cache",
+    "id": "mjiit-undergraduate-guideline-2025-2026",
+    "sourceRole": "supplemental-programme-handbook",
+    "officialDomain": "mjiit.utm.my",
+    "fields": [
+      "duration",
+      "studyMode",
+      "programmeStructure",
+      "entryRequirements"
+    ],
+    "relatedProgrammes": [
+      "Bachelor in Software Engineering with Honours",
+      "Bachelor of Science (Industrial Mathematics) with Honours",
+      "Bachelor of Electronic Systems Engineering with Honours",
+      "Bachelor of Mechanical Precision Engineering with Honours",
+      "Bachelor of Chemical Process Engineering with Honours"
+    ],
+    "pageWindows": [
+      [
+        45,
+        62
+      ],
+      [
+        116,
+        132
+      ],
+      [
+        148,
+        166
+      ],
+      [
+        192,
+        210
+      ]
+    ]
+  },
+  {
+    "url": "https://admission.utm.my/wp-content/uploads/sites/461/2025/09/FINAL-APPROVED-NEW-BROCHURE-UG-INTER-8-x-8-in-1.pdf",
+    "finalUrl": "https://admission.utm.my/wp-content/uploads/sites/461/2025/09/FINAL-APPROVED-NEW-BROCHURE-UG-INTER-8-x-8-in-1.pdf",
+    "localPath": "data/imports/utm/2026-06-16/undergraduate/sources/supplemental-pdfs/FINAL-APPROVED-NEW-BROCHURE-UG-INTER-8-x-8-in-1.pdf",
+    "sha256": "7ff70b3d6249d04a26c2e15a3dfa39f0611dd0daeb4a710ace4de7556934a826",
+    "bytes": 3216278,
+    "retrievedAt": "2026-06-16T16:37:18+00:00",
+    "status": "verified",
+    "id": "utm-admission-undergraduate-international-brochure-2025",
+    "sourceRole": "supplemental-programme-handbook",
+    "officialDomain": "admission.utm.my",
+    "fields": [
+      "duration",
+      "studyMode",
+      "programmeStructure",
+      "entryRequirements"
+    ],
+    "relatedProgrammes": [
+      "Bachelor of Science in Geoinformatics with Honours"
+    ],
+    "pageWindows": [
+      [
+        1,
+        16
+      ]
+    ]
+  }
+]

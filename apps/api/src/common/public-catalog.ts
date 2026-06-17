@@ -16,7 +16,7 @@ import type {
 } from "@studymy/shared";
 import { DEGREE_LEVEL_LABELS } from "@studymy/shared";
 import { ProgramEntity, UniversityEntity } from "../db/entities.js";
-import { isReadyForPublicCatalog, mapProgram, mapUniversity } from "./mappers.js";
+import { isReadyForPublicCatalog, isVisibleInPublicCatalog, mapProgram, mapUniversity } from "./mappers.js";
 
 export interface PublicCatalogQuery {
   search?: string;
@@ -100,7 +100,7 @@ export function publicReadyUniversities(universities: UniversityEntity[]): Unive
 
 export function publicReadyPrograms(programs: ProgramEntity[], universityMap?: Map<number, UniversityEntity>): ProgramEntity[] {
   return programs.filter((program) => {
-    if (!isReadyForPublicCatalog(program)) return false;
+    if (!isVisibleInPublicCatalog(program)) return false;
     const university = universityMap?.get(program.universityId) ?? program.university;
     return !university || isReadyForPublicCatalog(university);
   });
@@ -118,7 +118,7 @@ export function matchesProgramSpecificFilters(program: ProgramEntity, query: Pub
 
 export function matchesProgramFilters(program: ProgramEntity, university: UniversityEntity, query: PublicCatalogQuery): boolean {
   const search = normalizeSearch(query.search);
-  if (!isReadyForPublicCatalog(program) || !isReadyForPublicCatalog(university)) return false;
+  if (!isVisibleInPublicCatalog(program) || !isReadyForPublicCatalog(university)) return false;
   if (search && !`${buildProgramSearchText(program)} ${buildUniversitySearchText(university)}`.includes(search)) return false;
   if (query.ownerships?.length && !query.ownerships.includes(university.ownership)) return false;
   if (query.institutionTypes?.length && !query.institutionTypes.includes(university.institutionType)) return false;
