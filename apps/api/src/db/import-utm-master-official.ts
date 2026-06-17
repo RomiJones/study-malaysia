@@ -177,12 +177,216 @@ function inferCategory(name: string, faculty: string): ProgramCategoryCode {
   return "science";
 }
 
+const traditionalCharacterMap = Object.fromEntries(
+  [
+    ["学", "學"], ["硕", "碩"], ["领", "領"], ["筑", "築"], ["环", "環"], ["结", "結"], ["构", "構"],
+    ["运", "運"], ["输", "輸"], ["与", "與"], ["网", "網"], ["络", "絡"], ["证", "證"], ["项", "項"],
+    ["气", "氣"], ["职", "職"], ["业", "業"], ["创", "創"], ["医", "醫"], ["电", "電"], ["无", "無"],
+    ["线", "線"], ["机", "機"], ["复", "復"], ["技", "技"], ["术", "術"], ["资", "資"], ["开", "開"],
+    ["发", "發"], ["数", "數"], ["课", "課"], ["评", "評"], ["询", "詢"], ["体", "體"], ["儿", "兒"],
+    ["区", "區"], ["遥", "遙"], ["测", "測"], ["绘", "繪"], ["产", "產"], ["规", "規"], ["划", "劃"],
+    ["计", "計"], ["软", "軟"], ["据", "據"], ["经", "經"], ["济", "濟"], ["预", "預"], ["灾", "災"],
+    ["风", "風"], ["险", "險"], ["续", "續"], ["设", "設"], ["联", "聯"], ["双", "雙"], ["国", "國"],
+    ["际", "際"], ["马", "馬"], ["来", "來"], ["亚", "亞"], ["汉", "漢"], ["兹", "茲"]
+  ] as Array<[string, string]>
+);
+
+function toTraditional(value: string) {
+  return Array.from(value).map((char) => traditionalCharacterMap[char] || char).join("");
+}
+
+const facultyZhMap: Record<string, string> = {
+  "Azman Hashim International Business School": "阿兹曼哈希姆国际商学院",
+  "Engineering Education & Generic Programmes": "工程教育与通用课程",
+  "Faculty of Artificial Intelligence": "人工智能学院",
+  "Faculty of Built Environment and Surveying": "建筑环境与测量学院",
+  "Faculty of Chemical and Energy Engineering": "化学与能源工程学院",
+  "Faculty of Civil Engineering": "土木工程学院",
+  "Faculty of Computing": "计算学院",
+  "Faculty of Educational Sciences and Technology": "教育科学与技术学院",
+  "Faculty of Electrical Engineering": "电气工程学院",
+  "Faculty of Management": "管理学院",
+  "Faculty of Mechanical Engineering": "机械工程学院",
+  "Faculty of Science": "理学院",
+  "Faculty of Social Science and Humanities": "社会科学与人文学院",
+  "Islamic Civilization Academy": "伊斯兰文明学院",
+  "Language Academy": "语言学院",
+  "Malaysia-Japan International Institute of Technology": "马来西亚-日本国际技术学院",
+  "School of HRD and Psychology": "人力资源开发与心理学学院"
+};
+
+const subjectZhMap: Record<string, string> = {
+  "Generic": "通用",
+  "Engineering Education": "工程教育",
+  "Civil": "土木工程",
+  "Construction Management": "施工管理",
+  "Environmental Management": "环境管理",
+  "Structure": "结构工程",
+  "Geotechnical Engineering": "岩土工程",
+  "Hydraulics and Hydrology": "水力学与水文学",
+  "Transportation Engineering": "交通工程",
+  "Forensic Engineering": "法证工程",
+  "Project Management": "项目管理",
+  "Chemical Engineering": "化学工程",
+  "Petroleum Engineering": "石油工程",
+  "Gas Engineering": "天然气工程",
+  "Gas Engineering and Management": "天然气工程与管理",
+  "Energy Management": "能源管理",
+  "Occupational Safety and Health": "职业安全与健康",
+  "Occupational Safety and Health Management": "职业安全与健康管理",
+  "Food Processing Innovation": "食品加工创新",
+  "Bioprocess Engineering": "生物加工工程",
+  "Polymer Engineering": "高分子工程",
+  "Biomedical Engineering": "生物医学工程",
+  "Wireless Communication and Network": "无线通信与网络",
+  "Computer and Microelectronic Systems": "计算机与微电子系统",
+  "Electrical Power and Energy": "电力与能源",
+  "Mechatronics and Automatic Control": "机电一体化与自动控制",
+  "Electrical Engineering": "电气工程",
+  "Rehabilitation Technology": "康复技术",
+  "Industrial Engineering": "工业工程",
+  "Mechanical Engineering": "机械工程",
+  "Science, Technology and Innovation Policy": "科学、技术与创新政策",
+  "Policy Studies": "政策研究",
+  "Human Resource Development": "人力资源开发",
+  "Islamic Studies": "伊斯兰研究",
+  "Halal Science": "清真科学",
+  "Communication and Digital Culture": "传播与数字文化",
+  "Chemistry": "化学",
+  "Curriculum and Instruction": "课程与教学",
+  "Education and Development": "教育与发展",
+  "Educational Psychology": "教育心理学",
+  "Educational Technology": "教育技术",
+  "Guidance and Counselling": "指导与咨询",
+  "Guidance and Counselling in Education": "教育指导与咨询",
+  "Management and Administration": "管理与行政",
+  "Management and Administration in Education": "教育管理与行政",
+  "Mathematics": "数学",
+  "Measurement and Evaluation": "测量与评估",
+  "Measurement & Evaluation": "测量与评估",
+  "Measurement and Evaluation in Education": "教育测量与评估",
+  "Physics": "物理",
+  "Teaching English as a Second Language": "英语作为第二语言教学",
+  "Teaching English as a Second Language (TESL)": "英语作为第二语言教学（TESL）",
+  "Technical and Vocational Education": "技术与职业教育",
+  "Physical Education and Sports Science": "体育教育与运动科学",
+  "Early Childhood Education": "学前教育",
+  "Science": "科学",
+  "Chemistry Education": "化学教育",
+  "Mathematics Education": "数学教育",
+  "Physics Education": "物理教育",
+  "Multimedia in Education": "教育多媒体",
+  "Online Learning": "在线学习",
+  "Architecture": "建筑学",
+  "Asset and Facilities Management": "资产与设施管理",
+  "Construction Contract Management": "建筑合同管理",
+  "Geoinformatics": "地理信息学",
+  "Real Estate": "房地产",
+  "Tourism Planning": "旅游规划",
+  "Urban and Regional Planning": "城市与区域规划",
+  "Remote Sensing": "遥感",
+  "Geomatics Engineering": "测绘工程",
+  "Land Administration and Development": "土地行政与发展",
+  "Transportation Planning": "交通规划",
+  "Data Science": "数据科学",
+  "Innovative Computing": "创新计算",
+  "Cyber Security": "网络安全",
+  "Informatics": "信息学",
+  "Information Security Assurance": "信息安全保障",
+  "Software Engineering": "软件工程",
+  "Computer Science": "计算机科学",
+  "Technology Management": "技术管理",
+  "Management": "管理学",
+  "Forensic Science": "法证科学",
+  "Biotechnology": "生物技术",
+  "Engineering Mathematics": "工程数学",
+  "Bioscience": "生物科学",
+  "Business Administration": "工商管理",
+  "Computer Systems Engineering": "计算机系统工程",
+  "Business Intelligence and Analytics": "商业智能与分析",
+  "Engineering Business Management": "工程商业管理",
+  "Engineering Design": "工程设计",
+  "Professional Science": "专业科学",
+  "Systems Engineering": "系统工程",
+  "Sustainable Infrastructure": "可持续基础设施",
+  "Industrial Design": "工业设计",
+  "Disaster Risk Management": "灾害风险管理",
+  "Sustainability and Environmental Sciences": "可持续发展与环境科学",
+  "Sustainable Systems": "可持续系统",
+  "Technology and Innovation Management": "技术与创新管理",
+  "Sustainable Urban Design": "可持续城市设计",
+  "Electronic Systems Engineering": "电子系统工程",
+  "Management of Technology": "技术管理"
+};
+
+function translateSubject(value: string) {
+  const normalized = normalizeText(value).replace(/^Field of Research\s*:?\s*/i, "").replace(/\s*&\s*/g, " and ");
+  return subjectZhMap[normalized] || normalized;
+}
+
 function localizedProgrammeName(name: string): LocalizedText {
-  return t(name, `${name}（UTM 官方硕士项目）`, `${name}（UTM 官方碩士項目）`, name);
+  const normalized = normalizeText(name);
+  let zhCN = normalized;
+  const fieldMatch = normalized.match(/^Master of Philosophy Field of Research\s*:?\s*(.*)$/i);
+  const mPhilParenthesis = normalized.match(/^Master of Philosophy\s*\(\s*(.*?)\s*\)$/i);
+  const educationSpecialization = normalized.match(/^Master in Education Specialization\s*:\s*(.*)$/i);
+  const managementSpecialization = normalized.match(/^Master of Management Specialization\s*:\s*(.*)$/i);
+  const engineeringSpecialization = normalized.match(/^Master of Engineering Specialization\s*:\s*(.*)$/i);
+  const scienceParenthesis = normalized.match(/^Master of Science\s*\(\s*(.*?)\s*\)$/i);
+  const educationParenthesis = normalized.match(/^Master of Education\s*\(\s*(.*?)\s*\)$/i);
+  const engineeringParenthesis = normalized.match(/^Master of Engineering\s*\(\s*(.*?)\s*\)$/i);
+  const scienceIn = normalized.match(/^Master of Science in\s+(.*)$/i);
+  const engineeringIn = normalized.match(/^Master of Engineering in\s+(.*)$/i);
+  const masterIn = normalized.match(/^Master in\s+(.*)$/i);
+  const masterOf = normalized.match(/^Master of\s+(.*)$/i);
+
+  if (/^Dual Degree - Master of Science \(Mechanical Engineering\) UTM and Master of Engineering \(Kyushu University\)$/i.test(normalized)) {
+    zhCN = "双学位：机械工程理学硕士（UTM）与工程硕士（九州大学）";
+  } else if (/^Dual Degree - Master of Science \(Mechanical Engineering\) UTM and Master of Science \(Pusan National University\)$/i.test(normalized)) {
+    zhCN = "双学位：机械工程理学硕士（UTM）与理学硕士（釜山国立大学）";
+  } else if (/^Dual Degree Master in Technology and Innovation Management \(UTM\) and Master in Management of Technology \(Yamaguchi University\)$/i.test(normalized)) {
+    zhCN = "双学位：技术与创新管理硕士（UTM）与技术管理硕士（山口大学）";
+  } else if (/^Master of Sustainability and Environmental Sciences \(Joint Degree\) with Tsukuba University$/i.test(normalized)) {
+    zhCN = "可持续发展与环境科学硕士（与筑波大学联合学位）";
+  } else if (fieldMatch) {
+    const subject = translateSubject(fieldMatch[1]);
+    zhCN = subject ? `哲学硕士（研究领域：${subject}）` : "哲学硕士（研究领域）";
+  } else if (mPhilParenthesis) {
+    zhCN = `哲学硕士（${translateSubject(mPhilParenthesis[1])}）`;
+  } else if (normalized === "Master of Philosophy") {
+    zhCN = "哲学硕士";
+  } else if (educationSpecialization) {
+    zhCN = `教育硕士（专业方向：${translateSubject(educationSpecialization[1])}）`;
+  } else if (managementSpecialization) {
+    zhCN = `管理硕士（专业方向：${translateSubject(managementSpecialization[1])}）`;
+  } else if (engineeringSpecialization) {
+    zhCN = `工程硕士（专业方向：${translateSubject(engineeringSpecialization[1])}）`;
+  } else if (educationParenthesis) {
+    zhCN = `教育硕士（${translateSubject(educationParenthesis[1])}）`;
+  } else if (engineeringParenthesis) {
+    zhCN = `工程硕士（${translateSubject(engineeringParenthesis[1])}）`;
+  } else if (scienceParenthesis) {
+    zhCN = `理学硕士（${translateSubject(scienceParenthesis[1])}）`;
+  } else if (scienceIn) {
+    zhCN = `${translateSubject(scienceIn[1])}理学硕士`;
+  } else if (engineeringIn) {
+    zhCN = `工程硕士（${translateSubject(engineeringIn[1])}）`;
+  } else if (/^Master of Education Teaching English as a Second Language \(TESL\)$/i.test(normalized)) {
+    zhCN = "教育硕士（英语作为第二语言教学 TESL）";
+  } else if (/^Master of Language in Communication and Digital Culture$/i.test(normalized)) {
+    zhCN = "传播与数字文化语言硕士";
+  } else if (masterIn) {
+    zhCN = `${translateSubject(masterIn[1])}硕士`;
+  } else if (masterOf) {
+    const subject = translateSubject(masterOf[1]);
+    zhCN = subject === "Business Administration" || subject === "工商管理" ? "工商管理硕士（MBA）" : `${subject}硕士`;
+  }
+  return t(name, zhCN, toTraditional(zhCN), name);
 }
 
 function localizedFaculty(faculty: string): LocalizedText {
-  return t(faculty, faculty, faculty, faculty);
+  const zhCN = facultyZhMap[faculty] || faculty;
+  return t(faculty, zhCN, toTraditional(zhCN), faculty);
 }
 
 function studyModeDisplay(mode: StudyMode, official: string) {

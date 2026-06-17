@@ -20,6 +20,8 @@ test("UTM master import keeps all official rows and preserves fee-status boundar
   const rateOnlyRows = rows.filter((row) => row.officialFeeAuditStatus === "official-rate-verified");
   const conflictRows = rows.filter((row) => row.officialFeeAuditStatus === "not-published");
   const nonScalarRows = [...rateOnlyRows, ...conflictRows];
+  const chineseNames = rows.map((row) => String(row.name?.["zh-CN"] || ""));
+  const chineseFaculties = rows.map((row) => String(row.faculty?.["zh-CN"] || ""));
 
   assert.equal(source.programmes.length, 153);
   assert.equal(rows.length, 153);
@@ -39,4 +41,10 @@ test("UTM master import keeps all official rows and preserves fee-status boundar
   assert.ok(officialTotalRows.every((row) => row.officialTuitionMYR != null && row.tuitionAmount != null));
   assert.ok(nonScalarRows.every((row) => row.officialTuitionMYR == null && row.tuitionAmount == null));
   assert.ok(nonScalarRows.every((row) => /no single total|no single scalar/i.test(String(row.tuitionDisplay))));
+  assert.ok(chineseNames.every((name) => !/Master of|Master in|Field of Research|Official master/i.test(name)));
+  assert.ok(chineseFaculties.every((faculty) => !/Faculty of|School of|Academy|Institute|Programmes/i.test(faculty)));
+  assert.equal(rows.find((row) => row.code === "UTM-M-107")?.name?.["zh-CN"], "数据科学硕士");
+  assert.equal(rows.find((row) => row.code === "UTM-M-107")?.faculty?.["zh-CN"], "计算学院");
+  assert.equal(rows.find((row) => row.code === "UTM-M-113")?.name?.["zh-CN"], "哲学硕士（研究领域：软件工程）");
+  assert.equal(rows.find((row) => row.code === "UTM-M-129")?.name?.["zh-CN"], "工商管理硕士（MBA）");
 });

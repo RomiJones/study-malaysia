@@ -10,7 +10,7 @@
   "candidateDataset": "data/imports/utm/2026-06-17/master/candidate-dataset.json",
   "controlledImport": {
     "command": "npm --workspace @studymy/api run import:utm:master -- --confirm-import",
-    "backupPath": "apps/api/tmp/backups/utm-master-before-2026-06-17T10-18-06-704Z.json",
+    "backupPath": "apps/api/tmp/backups/utm-master-before-2026-06-17T11-19-25-404Z.json",
     "transactionResult": "passed",
     "cacheCleared": false
   },
@@ -86,6 +86,43 @@
     "programListSampleBadScalarFeeRows": 0,
     "programListSampleMissingSourceRows": 0
   },
+  "commercialLocalizationVerification": {
+    "standardReference": "UM scoped static import and seed display pattern: official English remains in name.en/nameEnOfficial, while zh-CN/zh-TW display fields contain readable programme and faculty names instead of English fallback.",
+    "result": "passed",
+    "checkedMasterRows": 153,
+    "badZhCNProgrammeNameRows": 0,
+    "badZhCNFacultyRows": 0,
+    "sampleRows": [
+      {
+        "code": "UTM-M-062",
+        "nameEnOfficial": "Master of Education (Technical and Vocational Education)",
+        "nameZhCN": "教育硕士（技术与职业教育）",
+        "facultyEn": "Faculty of Educational Sciences and Technology",
+        "facultyZhCN": "教育科学与技术学院"
+      },
+      {
+        "code": "UTM-M-107",
+        "nameEnOfficial": "Master in Data Science",
+        "nameZhCN": "数据科学硕士",
+        "facultyEn": "Faculty of Computing",
+        "facultyZhCN": "计算学院"
+      },
+      {
+        "code": "UTM-M-113",
+        "nameEnOfficial": "Master of Philosophy Field of Research : Software Engineering",
+        "nameZhCN": "哲学硕士（研究领域：软件工程）",
+        "facultyEn": "Faculty of Computing",
+        "facultyZhCN": "计算学院"
+      },
+      {
+        "code": "UTM-M-129",
+        "nameEnOfficial": "Master of Business Administration",
+        "nameZhCN": "工商管理硕士（MBA）",
+        "facultyEn": "Azman Hashim International Business School",
+        "facultyZhCN": "阿兹曼哈希姆国际商学院"
+      }
+    ]
+  },
   "feeDisplayPolicy": {
     "officialTotalRows": {
       "count": 132,
@@ -106,6 +143,7 @@
     "npm test -- tests/api/utm-master-import.test.ts",
     "npm --workspace @studymy/api run import:utm:master -- --confirm-import",
     "npm --workspace @studymy/api run verify:utm:master",
+    "database localization gate: 153 UTM master rows checked, bad zh-CN programme names 0, bad zh-CN faculties 0",
     "npm test -- tests/api/utm-master-import.test.ts tests/api/utm-undergraduate-import.test.ts tests/api/utm-public-catalog-display.test.ts",
     "npm --workspace @studymy/api run build",
     "npm --workspace @studymy/web run build"
