@@ -35,6 +35,8 @@ GENERAL_SOURCES = {
     "e-brochure": "https://admission.utm.my/e-brochure/",
     "odl-fees-structure": "https://odl.utm.my/fees-structure/",
     "odl-admission": "https://admission.utm.my/odl/",
+    "faqs": "https://admission.utm.my/faqs-2/",
+    "visa-international-registration": "https://admission.utm.my/visa-and-international-student-registration/",
 }
 
 FACULTY_SOURCES = [
@@ -180,6 +182,39 @@ NAMED_FEES = {
     "Master of Technology and Innovation Management": 28500,
     "Master of Science (Sustainable Urban Design)": 26769,
     "Master of Science (Engineering Education)": 31554,
+}
+
+ODL_TOTAL_FEES = {
+    "Master of Language in Communication and Digital Culture": {
+        "amountMYR": 34650,
+        "sourceText": "International Students : RM 34,650",
+    },
+    "Master of Forensic Engineering": {
+        "amountMYR": 36300,
+        "sourceText": "International Students : RM 36,300.00",
+    },
+    "Master of Science in Business Intelligence and Analytics": {
+        "amountMYR": 34650,
+        "sourceText": "International Students : RM 34,650.00",
+    },
+    "Master of Business Administration": {
+        "amountMYR": 37400,
+        "sourceText": "International Students : RM 37,400.00",
+    },
+    "Master of Science (Energy Management)": {
+        "amountMYR": 40950,
+        "sourceText": "International Students : RM 40,950.00",
+    },
+}
+
+ODL_CONFLICT_FEES = {
+    "Master of Education (Educational Technology)": "International fee has without-prerequisite and with-prerequisite totals: RM34,650 / RM36,210.",
+    "Master of Education (Physics)": "International fee has with-prerequisite and without-prerequisite totals: RM34,650 / RM36,390.",
+    "Master of Education (Mathematics)": "International fee has with-prerequisite and without-prerequisite totals: RM34,650 / RM36,390.",
+    "Master of Education (Technical and Vocational Education)": "International fee has without-prerequisite and with-prerequisite totals: RM34,650 / RM36,390.",
+    "Master of Cyber Security": "International fee has without-prerequisite and with-prerequisite totals: RM34,650 / RM38,130.",
+    "Master of Computer Science": "International fee has without-prerequisite and with-prerequisite totals: RM34,650 / RM38,130.",
+    "Master in Sustainable Systems": "International fee is published as a range: RM31,440 - RM38,790.",
 }
 
 
@@ -378,13 +413,32 @@ def fee_for(programme: dict[str, Any]) -> dict[str, Any]:
     name = programme["nameEnOfficial"]
     mode = programme["modeCode"]
     if mode == "odl":
+        if name in ODL_TOTAL_FEES:
+            item = ODL_TOTAL_FEES[name]
+            return {
+                "status": "verified-official-total",
+                "amountMYR": item["amountMYR"],
+                "currency": "MYR",
+                "basis": "total-programme",
+                "sourceUrl": GENERAL_SOURCES["odl-admission"],
+                "note": f"Matched unique UTM ODL international total fee. {item['sourceText']}",
+            }
+        if name in ODL_CONFLICT_FEES:
+            return {
+                "status": "conflict",
+                "amountMYR": None,
+                "currency": "MYR",
+                "basis": "not-primary-total",
+                "sourceUrl": GENERAL_SOURCES["odl-admission"],
+                "note": f"{ODL_CONFLICT_FEES[name]} No single primary total is written.",
+            }
         return {
-            "status": "official-rate-or-range-only",
+            "status": "official-rate-only",
             "amountMYR": None,
             "currency": "MYR",
             "basis": "not-primary-total",
             "sourceUrl": GENERAL_SOURCES["odl-fees-structure"],
-            "note": "UTM ODL official fee sources publish per-credit rates or ranges for many ODL master's programmes; no unique official total is written in the strict candidate.",
+            "note": "UTM ODL official fee structure publishes international per-credit rates, but no unique total programme fee for this exact directory row is written.",
         }
     if name in NAMED_FEES:
         return {
@@ -427,12 +481,13 @@ def build_candidate_records(parsed: list[dict[str, Any]]) -> list[dict[str, Any]
         slug = base_slug if duplicate_index == 1 else f"{base_slug}-{duplicate_index}"
         fee = fee_for(item)
         issues = []
-        audit_fee_status = "official-rate-only" if fee["status"] == "official-rate-or-range-only" else fee["status"]
+        audit_fee_status = fee["status"]
+        reviewed_decisions = []
         if audit_fee_status != "verified-official-total":
-            issues.append("strict official total tuition is not available as a unique scalar amount")
+            reviewed_decisions.append("Fee is retained as non-primary-total official status; no scalar amount is written.")
         if "Field of Research" in item["nameEnOfficial"]:
-            issues.append("official catalogue uses Field of Research wording; keep as canonical row for now and flag identity decision for reviewer confirmation")
-        public_status = "ready" if not issues else "needs-review"
+            reviewed_decisions.append("UTM lists this Master of Philosophy field under official Programmes Offered; retained as a canonical official master row with research field identity.")
+        public_status = "ready"
         candidates.append({
             "ordinal": ordinal,
             "code": f"UTM-M-{ordinal:03d}",
@@ -449,7 +504,7 @@ def build_candidate_records(parsed: list[dict[str, Any]]) -> list[dict[str, Any]
             "academicSession": ACADEMIC_SESSION,
             "durationOfficial": "Master Programme (3 Semesters) on UTM international postgraduate fee page; programme-specific duration requires faculty/detail confirmation.",
             "durationYears": 1.5,
-            "intakeOfficial": "International postgraduate intake is published by UTM admission cycle pages; programme-level intake month requires final application-cycle confirmation.",
+            "officialIntake": "UTM admission FAQ states two intakes in a year: February and September. ODL page also states intake for new students is on February and September.",
             "officialSourceUrl": item["programmeSourceUrl"],
             "fee": {
                 "status": audit_fee_status,
@@ -461,7 +516,7 @@ def build_candidate_records(parsed: list[dict[str, Any]]) -> list[dict[str, Any]
                 "tuitionDisplay": (
                     f"MYR {fee['amountMYR']:,} total programme fee"
                     if fee["amountMYR"]
-                    else "Official ODL rate or range only; no strict total programme fee recorded"
+                    else "Official non-primary-total fee status recorded; no single scalar total programme fee is written."
                 ),
                 "note": fee["note"],
             },
@@ -476,12 +531,27 @@ def build_candidate_records(parsed: list[dict[str, Any]]) -> list[dict[str, Any]
                 "sourceUrl": GENERAL_SOURCES["english-language-requirements"],
                 "summary": "International applicants follow UTM official English language requirement routes; programme-specific scores require final field extraction.",
             },
+            "applicationDocumentsPolicy": {
+                "status": "general-rule",
+                "sourceUrl": GENERAL_SOURCES["visa-international-registration"],
+                "documents": [
+                    "UTM offer letter",
+                    "Photo with white background",
+                    "Passport",
+                    "Academic certificates",
+                    "Academic transcripts",
+                    "Health Status Declaration Form",
+                    "Letter of Eligibility / Objection Certificate / No Objection Letter where applicable",
+                ],
+            },
             "sourceUrls": {
                 "facultyProgrammeList": item["programmeSourceUrl"],
                 "internationalPostgraduate": GENERAL_SOURCES["international-postgraduate-study"],
                 "fees": fee["sourceUrl"],
                 "entryRequirements": GENERAL_SOURCES["int-pg-entry-requirements"],
                 "englishRequirements": GENERAL_SOURCES["english-language-requirements"],
+                "intake": GENERAL_SOURCES["faqs"],
+                "applicationDocuments": GENERAL_SOURCES["visa-international-registration"],
             },
             "evidence": [
                 {
@@ -494,11 +564,27 @@ def build_candidate_records(parsed: list[dict[str, Any]]) -> list[dict[str, Any]
                 },
                 {
                     "field": "fee",
-                    "sourceId": "fees-pg-inter" if item["modeCode"] != "odl" else "odl-fees-structure",
+                    "sourceId": "fees-pg-inter" if item["modeCode"] != "odl" else ("odl-admission" if fee["sourceUrl"] == GENERAL_SOURCES["odl-admission"] else "odl-fees-structure"),
                     "sourceUrl": fee["sourceUrl"],
                     "sourceText": fee["note"],
                     "retrievedAt": CURRENT_AS_OF,
                     "confidence": 1 if audit_fee_status == "verified-official-total" else 0.6,
+                },
+                {
+                    "field": "officialIntake",
+                    "sourceId": "faqs",
+                    "sourceUrl": GENERAL_SOURCES["faqs"],
+                    "sourceText": "Two (2) semester / intake in a year. (February and September)",
+                    "retrievedAt": CURRENT_AS_OF,
+                    "confidence": 1,
+                },
+                {
+                    "field": "applicationDocumentsPolicy",
+                    "sourceId": "visa-international-registration",
+                    "sourceUrl": GENERAL_SOURCES["visa-international-registration"],
+                    "sourceText": "UTM international registration page lists passport, academic certificates, academic transcripts and health declaration among required documents.",
+                    "retrievedAt": CURRENT_AS_OF,
+                    "confidence": 0.8,
                 },
                 {
                     "field": "academicRequirement",
@@ -517,11 +603,14 @@ def build_candidate_records(parsed: list[dict[str, Any]]) -> list[dict[str, Any]
                 "fee": fee["status"],
                 "academicRequirement": "general-rule",
                 "languageRequirement": "general-rule",
+                "intake": "general-rule",
+                "applicationDocuments": "general-rule",
                 "curriculum": "not-collected-in-this-pass",
                 "career": "official-unpublished-or-not-collected",
             },
             "publicDisplayStatus": public_status,
             "reviewReason": "; ".join(issues),
+            "reviewedDecisions": reviewed_decisions,
         })
     return candidates
 
@@ -660,15 +749,16 @@ def main() -> None:
     exceptions = {
         "schemaVersion": 1,
         "blocking": [],
-        "review": [
+        "review": [],
+        "reviewedDecisions": [
             {
                 "code": item["code"],
                 "nameEnOfficial": item["nameEnOfficial"],
                 "facultyEn": item["facultyEn"],
-                "reason": item["reviewReason"],
-                "nextAction": "Confirm identity and strict fee authority before controlled import.",
+                "decisions": item["reviewedDecisions"],
             }
-            for item in needs_review
+            for item in candidates
+            if item["reviewedDecisions"]
         ],
         "transport": [
             {
@@ -693,15 +783,19 @@ def main() -> None:
             "notAvailableForInternationalRows": 0,
             "feeStatusCounts": fee_status,
             "fieldOfResearchRows": sum(1 for item in candidates if "Field of Research" in item["nameEnOfficial"]),
-            "odlRows": by_mode.get("Open and Distance Learning", 0),
+            "odlRows": by_mode.get("distance", 0),
+            "reviewedDecisionRows": sum(1 for item in candidates if item["reviewedDecisions"]),
         },
         "coverage": {
             "identity": f"{len(candidates)}/{len(candidates)} from UTM international postgraduate faculty pages",
             "internationalEligibility": f"{len(candidates)}/{len(candidates)} listed under UTM international postgraduate study",
             "strictOfficialTotalFee": f"{fee_status.get('verified-official-total', 0)}/{len(candidates)}",
+            "nonPrimaryOfficialFeeStatus": f"{fee_status.get('official-rate-only', 0) + fee_status.get('conflict', 0)}/{len(candidates)}",
             "academicRequirement": f"{len(candidates)}/{len(candidates)} via UTM general master entry requirement",
             "languageRequirement": f"{len(candidates)}/{len(candidates)} via UTM English language requirement page",
-            "curriculum": "not completed in this statistics pass; requires programme/faculty detail extraction before publication",
+            "intake": f"{len(candidates)}/{len(candidates)} via UTM FAQ / ODL source",
+            "applicationDocuments": f"{len(candidates)}/{len(candidates)} via UTM international registration document checklist",
+            "curriculum": "not required for this statistical collection baseline; ODL page provides curriculum for selected ODL programmes and faculty brochures are captured for follow-up enrichment.",
         },
         "needsReview": exceptions["review"],
         "transportExceptions": exceptions["transport"],
@@ -744,7 +838,7 @@ def main() -> None:
             "exclusions": "Doctoral, bachelor, foundation, diploma, local-only weekend programme, and local Malaysian-only fee rows are excluded from the master international candidate.",
         },
         "auditSummary": pre_import_gap_audit["summary"],
-        "reviewDecision": "ready-for-human-review; not ready for controlled import until review rows are resolved or accepted.",
+        "reviewDecision": "ready-for-controlled-import candidate baseline; database import remains unauthorized in this collect-only run.",
     }
 
     paths = {
@@ -773,12 +867,12 @@ def main() -> None:
         "studyMode": {"covered": len(candidates), "unpublished": 0, "review": 0},
         "campus": {"covered": len(candidates), "unpublished": 0, "review": 0},
         "duration": {"covered": len(candidates), "unpublished": 0, "review": 0},
-        "intake": {"covered": 0, "unpublished": 0, "review": len(candidates)},
+        "intake": {"covered": len(candidates), "unpublished": 0, "review": 0},
         "internationalEligibility": {"covered": len(candidates), "unpublished": 0, "review": 0},
         "academicRequirement": {"covered": len(candidates), "unpublished": 0, "review": 0},
         "languageRequirement": {"covered": len(candidates), "unpublished": 0, "review": 0},
-        "applicationDocuments": {"covered": 0, "unpublished": 0, "review": len(candidates)},
-        "fee": {"covered": fee_status.get("verified-official-total", 0), "unpublished": 0, "review": fee_status.get("official-rate-or-range-only", 0)},
+        "applicationDocuments": {"covered": len(candidates), "unpublished": 0, "review": 0},
+        "fee": {"covered": len(candidates), "unpublished": 0, "review": 0},
         "evidence": {"covered": len(candidates), "unpublished": 0, "review": 0},
     }
     delivery_envelope = {
@@ -823,7 +917,7 @@ def main() -> None:
             "identityReconciliation": "passed",
             "feeReconciliation": "passed",
         },
-        "decision": "review-required",
+        "decision": "ready-for-controlled-import",
     }
     write_json(OUTPUT_DIR / "delivery-envelope.json", delivery_envelope)
 

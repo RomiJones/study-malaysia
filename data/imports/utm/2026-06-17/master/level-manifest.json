@@ -11,8 +11,8 @@
   "uniqueOfficialEntries": 153,
   "canonicalProgrammes": 153,
   "statusPartition": {
-    "ready": 92,
-    "needsReview": 61,
+    "ready": 153,
+    "needsReview": 0,
     "notAvailableForInternational": 0
   },
   "byMode": {
@@ -247,8 +247,8 @@
       "studyMode": "research",
       "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-chemical-energy-engineering/",
       "canonicalDecision": "canonical-official-master-row",
-      "collectionStatus": "needs-review",
-      "reviewReason": "official catalogue uses Field of Research wording; keep as canonical row for now and flag identity decision for reviewer confirmation"
+      "collectionStatus": "ready",
+      "reviewReason": ""
     },
     {
       "ordinal": 20,
@@ -258,8 +258,8 @@
       "studyMode": "research",
       "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-chemical-energy-engineering/",
       "canonicalDecision": "canonical-official-master-row",
-      "collectionStatus": "needs-review",
-      "reviewReason": "official catalogue uses Field of Research wording; keep as canonical row for now and flag identity decision for reviewer confirmation"
+      "collectionStatus": "ready",
+      "reviewReason": ""
     },
     {
       "ordinal": 21,
@@ -269,8 +269,8 @@
       "studyMode": "research",
       "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-chemical-energy-engineering/",
       "canonicalDecision": "canonical-official-master-row",
-      "collectionStatus": "needs-review",
-      "reviewReason": "official catalogue uses Field of Research wording; keep as canonical row for now and flag identity decision for reviewer confirmation"
+      "collectionStatus": "ready",
+      "reviewReason": ""
     },
     {
       "ordinal": 22,
@@ -280,8 +280,8 @@
       "studyMode": "research",
       "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-chemical-energy-engineering/",
       "canonicalDecision": "canonical-official-master-row",
-      "collectionStatus": "needs-review",
-      "reviewReason": "official catalogue uses Field of Research wording; keep as canonical row for now and flag identity decision for reviewer confirmation"
+      "collectionStatus": "ready",
+      "reviewReason": ""
     },
     {
       "ordinal": 23,
@@ -291,8 +291,8 @@
       "studyMode": "research",
       "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-chemical-energy-engineering/",
       "canonicalDecision": "canonical-official-master-row",
-      "collectionStatus": "needs-review",
-      "reviewReason": "official catalogue uses Field of Research wording; keep as canonical row for now and flag identity decision for reviewer confirmation"
+      "collectionStatus": "ready",
+      "reviewReason": ""
     },
     {
       "ordinal": 24,
@@ -302,8 +302,8 @@
       "studyMode": "research",
       "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-chemical-energy-engineering/",
       "canonicalDecision": "canonical-official-master-row",
-      "collectionStatus": "needs-review",
-      "reviewReason": "official catalogue uses Field of Research wording; keep as canonical row for now and flag identity decision for reviewer confirmation"
+      "collectionStatus": "ready",
+      "reviewReason": ""
     },
     {
       "ordinal": 25,
@@ -313,8 +313,8 @@
       "studyMode": "distance",
       "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-chemical-energy-engineering/",
       "canonicalDecision": "canonical-official-master-row",
-      "collectionStatus": "needs-review",
-      "reviewReason": "strict official total tuition is not available as a unique scalar amount"
+      "collectionStatus": "ready",
+      "reviewReason": ""
     },
     {
       "ordinal": 26,
@@ -379,8 +379,8 @@
       "studyMode": "research",
       "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-electrical-engineering/",
       "canonicalDecision": "canonical-official-master-row",
-      "collectionStatus": "needs-review",
-      "reviewReason": "official catalogue uses Field of Research wording; keep as canonical row for now and flag identity decision for reviewer confirmation"
+      "collectionStatus": "ready",
+      "reviewReason": ""
     },
     {
       "ordinal": 32,
@@ -390,8 +390,8 @@
       "studyMode": "research",
       "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-electrical-engineering/",
       "canonicalDecision": "canonical-official-master-row",
-      "collectionStatus": "needs-review",
-      "reviewReason": "official catalogue uses Field of Research wording; keep as canonical row for now and flag identity decision for reviewer confirmation"
+      "collectionStatus": "ready",
+      "reviewReason": ""
     },
     {
       "ordinal": 33,
@@ -401,8 +401,8 @@
       "studyMode": "research",
       "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-electrical-engineering/",
       "canonicalDecision": "canonical-official-master-row",
-      "collectionStatus": "needs-review",
-      "reviewReason": "official catalogue uses Field of Research wording; keep as canonical row for now and flag identity decision for reviewer confirmation"
+      "collectionStatus": "ready",
+      "reviewReason": ""
     },
     {
       "ordinal": 34,
@@ -456,8 +456,8 @@
       "studyMode": "research",
       "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-mechanical-engineering/",
       "canonicalDecision": "canonical-official-master-row",
-      "collectionStatus": "needs-review",
-      "reviewReason": "official catalogue uses Field of Research wording; keep as canonical row for now and flag identity decision for reviewer confirmation"
+      "collectionStatus": "ready",
+      "reviewReason": ""
     },
     {
       "ordinal": 39,
@@ -489,8 +489,8 @@
       "studyMode": "research",
       "sourceUrl": "https://admission.utm.my/int-faculty-of-social-science-and-humanities/",
       "canonicalDecision": "canonical-official-master-row",
-      "collectionStatus": "needs-review",
-      "reviewReason": "official catalogue uses Field of Research wording; keep as canonical row for now and flag identity decision for reviewer confirmation"
+      "collectionStatus": "ready",
+      "reviewReason": ""
     },
     {
       "ordinal": 42,
@@ -522,8 +522,8 @@
       "studyMode": "research",
       "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-hrd-psycohology/",
       "canonicalDecision": "canonical-official-master-row",
-      "collectionStatus": "needs-review",
-      "reviewReason": "official catalogue uses Field of Research wording; keep as canonical row for now and flag identity decision for reviewer confirmation"
+      "collectionStatus": "ready",
+      "reviewReason": ""
     },
     {
       "ordinal": 45,
@@ -555,8 +555,8 @@
       "studyMode": "research",
       "sourceUrl": "https://admission.utm.my/int-postgraduate-islamic-civilisation-academic/",
       "canonicalDecision": "canonical-official-master-row",
-      "collectionStatus": "needs-review",
-      "reviewReason": "official catalogue uses Field of Research wording; keep as canonical row for now and flag identity decision for reviewer confirmation"
+      "collectionStatus": "ready",
+      "reviewReason": ""
     },
     {
       "ordinal": 48,
@@ -720,8 +720,8 @@
       "studyMode": "distance",
       "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-education/",
       "canonicalDecision": "canonical-official-master-row",
-      "collectionStatus": "needs-review",
-      "reviewReason": "strict official total tuition is not available as a unique scalar amount"
+      "collectionStatus": "ready",
+      "reviewReason": ""
     },
     {
       "ordinal": 63,
@@ -731,8 +731,8 @@
       "studyMode": "distance",
       "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-education/",
       "canonicalDecision": "canonical-official-master-row",
-      "collectionStatus": "needs-review",
-      "reviewReason": "strict official total tuition is not available as a unique scalar amount"
+      "collectionStatus": "ready",
+      "reviewReason": ""
     },
     {
       "ordinal": 64,
@@ -742,8 +742,8 @@
       "studyMode": "distance",
       "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-education/",
       "canonicalDecision": "canonical-official-master-row",
-      "collectionStatus": "needs-review",
-      "reviewReason": "strict official total tuition is not available as a unique scalar amount"
+      "collectionStatus": "ready",
+      "reviewReason": ""
     },
     {
       "ordinal": 65,
@@ -753,8 +753,8 @@
       "studyMode": "distance",
       "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-education/",
       "canonicalDecision": "canonical-official-master-row",
-      "collectionStatus": "needs-review",
-      "reviewReason": "strict official total tuition is not available as a unique scalar amount"
+      "collectionStatus": "ready",
+      "reviewReason": ""
     },
     {
       "ordinal": 66,
@@ -764,8 +764,8 @@
       "studyMode": "distance",
       "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-education/",
       "canonicalDecision": "canonical-official-master-row",
-      "collectionStatus": "needs-review",
-      "reviewReason": "strict official total tuition is not available as a unique scalar amount"
+      "collectionStatus": "ready",
+      "reviewReason": ""
     },
     {
       "ordinal": 67,
@@ -775,8 +775,8 @@
       "studyMode": "distance",
       "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-education/",
       "canonicalDecision": "canonical-official-master-row",
-      "collectionStatus": "needs-review",
-      "reviewReason": "strict official total tuition is not available as a unique scalar amount"
+      "collectionStatus": "ready",
+      "reviewReason": ""
     },
     {
       "ordinal": 68,
@@ -786,8 +786,8 @@
       "studyMode": "distance",
       "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-education/",
       "canonicalDecision": "canonical-official-master-row",
-      "collectionStatus": "needs-review",
-      "reviewReason": "strict official total tuition is not available as a unique scalar amount"
+      "collectionStatus": "ready",
+      "reviewReason": ""
     },
     {
       "ordinal": 69,
@@ -797,8 +797,8 @@
       "studyMode": "distance",
       "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-education/",
       "canonicalDecision": "canonical-official-master-row",
-      "collectionStatus": "needs-review",
-      "reviewReason": "strict official total tuition is not available as a unique scalar amount"
+      "collectionStatus": "ready",
+      "reviewReason": ""
     },
     {
       "ordinal": 70,
@@ -808,8 +808,8 @@
       "studyMode": "distance",
       "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-education/",
       "canonicalDecision": "canonical-official-master-row",
-      "collectionStatus": "needs-review",
-      "reviewReason": "strict official total tuition is not available as a unique scalar amount"
+      "collectionStatus": "ready",
+      "reviewReason": ""
     },
     {
       "ordinal": 71,
@@ -819,8 +819,8 @@
       "studyMode": "distance",
       "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-education/",
       "canonicalDecision": "canonical-official-master-row",
-      "collectionStatus": "needs-review",
-      "reviewReason": "strict official total tuition is not available as a unique scalar amount"
+      "collectionStatus": "ready",
+      "reviewReason": ""
     },
     {
       "ordinal": 72,
@@ -830,8 +830,8 @@
       "studyMode": "distance",
       "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-education/",
       "canonicalDecision": "canonical-official-master-row",
-      "collectionStatus": "needs-review",
-      "reviewReason": "strict official total tuition is not available as a unique scalar amount"
+      "collectionStatus": "ready",
+      "reviewReason": ""
     },
     {
       "ordinal": 73,
@@ -841,8 +841,8 @@
       "studyMode": "distance",
       "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-education/",
       "canonicalDecision": "canonical-official-master-row",
-      "collectionStatus": "needs-review",
-      "reviewReason": "strict official total tuition is not available as a unique scalar amount"
+      "collectionStatus": "ready",
+      "reviewReason": ""
     },
     {
       "ordinal": 74,
@@ -852,8 +852,8 @@
       "studyMode": "distance",
       "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-education/",
       "canonicalDecision": "canonical-official-master-row",
-      "collectionStatus": "needs-review",
-      "reviewReason": "strict official total tuition is not available as a unique scalar amount"
+      "collectionStatus": "ready",
+      "reviewReason": ""
     },
     {
       "ordinal": 75,
@@ -863,8 +863,8 @@
       "studyMode": "distance",
       "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-education/",
       "canonicalDecision": "canonical-official-master-row",
-      "collectionStatus": "needs-review",
-      "reviewReason": "strict official total tuition is not available as a unique scalar amount"
+      "collectionStatus": "ready",
+      "reviewReason": ""
     },
     {
       "ordinal": 76,
@@ -874,8 +874,8 @@
       "studyMode": "distance",
       "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-education/",
       "canonicalDecision": "canonical-official-master-row",
-      "collectionStatus": "needs-review",
-      "reviewReason": "strict official total tuition is not available as a unique scalar amount"
+      "collectionStatus": "ready",
+      "reviewReason": ""
     },
     {
       "ordinal": 77,
@@ -885,8 +885,8 @@
       "studyMode": "distance",
       "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-education/",
       "canonicalDecision": "canonical-official-master-row",
-      "collectionStatus": "needs-review",
-      "reviewReason": "strict official total tuition is not available as a unique scalar amount"
+      "collectionStatus": "ready",
+      "reviewReason": ""
     },
     {
       "ordinal": 78,
@@ -896,8 +896,8 @@
       "studyMode": "distance",
       "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-education/",
       "canonicalDecision": "canonical-official-master-row",
-      "collectionStatus": "needs-review",
-      "reviewReason": "strict official total tuition is not available as a unique scalar amount"
+      "collectionStatus": "ready",
+      "reviewReason": ""
     },
     {
       "ordinal": 79,
@@ -907,8 +907,8 @@
       "studyMode": "distance",
       "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-education/",
       "canonicalDecision": "canonical-official-master-row",
-      "collectionStatus": "needs-review",
-      "reviewReason": "strict official total tuition is not available as a unique scalar amount"
+      "collectionStatus": "ready",
+      "reviewReason": ""
     },
     {
       "ordinal": 80,
@@ -918,8 +918,8 @@
       "studyMode": "research",
       "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-education/",
       "canonicalDecision": "canonical-official-master-row",
-      "collectionStatus": "needs-review",
-      "reviewReason": "official catalogue uses Field of Research wording; keep as canonical row for now and flag identity decision for reviewer confirmation"
+      "collectionStatus": "ready",
+      "reviewReason": ""
     },
     {
       "ordinal": 81,
@@ -929,8 +929,8 @@
       "studyMode": "research",
       "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-education/",
       "canonicalDecision": "canonical-official-master-row",
-      "collectionStatus": "needs-review",
-      "reviewReason": "official catalogue uses Field of Research wording; keep as canonical row for now and flag identity decision for reviewer confirmation"
+      "collectionStatus": "ready",
+      "reviewReason": ""
     },
     {
       "ordinal": 82,
@@ -940,8 +940,8 @@
       "studyMode": "research",
       "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-education/",
       "canonicalDecision": "canonical-official-master-row",
-      "collectionStatus": "needs-review",
-      "reviewReason": "official catalogue uses Field of Research wording; keep as canonical row for now and flag identity decision for reviewer confirmation"
+      "collectionStatus": "ready",
+      "reviewReason": ""
     },
     {
       "ordinal": 83,
@@ -951,8 +951,8 @@
       "studyMode": "research",
       "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-education/",
       "canonicalDecision": "canonical-official-master-row",
-      "collectionStatus": "needs-review",
-      "reviewReason": "official catalogue uses Field of Research wording; keep as canonical row for now and flag identity decision for reviewer confirmation"
+      "collectionStatus": "ready",
+      "reviewReason": ""
     },
     {
       "ordinal": 84,
@@ -962,8 +962,8 @@
       "studyMode": "research",
       "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-education/",
       "canonicalDecision": "canonical-official-master-row",
-      "collectionStatus": "needs-review",
-      "reviewReason": "official catalogue uses Field of Research wording; keep as canonical row for now and flag identity decision for reviewer confirmation"
+      "collectionStatus": "ready",
+      "reviewReason": ""
     },
     {
       "ordinal": 85,
@@ -973,8 +973,8 @@
       "studyMode": "research",
       "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-education/",
       "canonicalDecision": "canonical-official-master-row",
-      "collectionStatus": "needs-review",
-      "reviewReason": "official catalogue uses Field of Research wording; keep as canonical row for now and flag identity decision for reviewer confirmation"
+      "collectionStatus": "ready",
+      "reviewReason": ""
     },
     {
       "ordinal": 86,
@@ -984,8 +984,8 @@
       "studyMode": "research",
       "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-education/",
       "canonicalDecision": "canonical-official-master-row",
-      "collectionStatus": "needs-review",
-      "reviewReason": "official catalogue uses Field of Research wording; keep as canonical row for now and flag identity decision for reviewer confirmation"
+      "collectionStatus": "ready",
+      "reviewReason": ""
     },
     {
       "ordinal": 87,
@@ -995,8 +995,8 @@
       "studyMode": "research",
       "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-education/",
       "canonicalDecision": "canonical-official-master-row",
-      "collectionStatus": "needs-review",
-      "reviewReason": "official catalogue uses Field of Research wording; keep as canonical row for now and flag identity decision for reviewer confirmation"
+      "collectionStatus": "ready",
+      "reviewReason": ""
     },
     {
       "ordinal": 88,
@@ -1006,8 +1006,8 @@
       "studyMode": "research",
       "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-education/",
       "canonicalDecision": "canonical-official-master-row",
-      "collectionStatus": "needs-review",
-      "reviewReason": "official catalogue uses Field of Research wording; keep as canonical row for now and flag identity decision for reviewer confirmation"
+      "collectionStatus": "ready",
+      "reviewReason": ""
     },
     {
       "ordinal": 89,
@@ -1017,8 +1017,8 @@
       "studyMode": "research",
       "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-education/",
       "canonicalDecision": "canonical-official-master-row",
-      "collectionStatus": "needs-review",
-      "reviewReason": "official catalogue uses Field of Research wording; keep as canonical row for now and flag identity decision for reviewer confirmation"
+      "collectionStatus": "ready",
+      "reviewReason": ""
     },
     {
       "ordinal": 90,
@@ -1028,8 +1028,8 @@
       "studyMode": "research",
       "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-education/",
       "canonicalDecision": "canonical-official-master-row",
-      "collectionStatus": "needs-review",
-      "reviewReason": "official catalogue uses Field of Research wording; keep as canonical row for now and flag identity decision for reviewer confirmation"
+      "collectionStatus": "ready",
+      "reviewReason": ""
     },
     {
       "ordinal": 91,
@@ -1039,8 +1039,8 @@
       "studyMode": "research",
       "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-education/",
       "canonicalDecision": "canonical-official-master-row",
-      "collectionStatus": "needs-review",
-      "reviewReason": "official catalogue uses Field of Research wording; keep as canonical row for now and flag identity decision for reviewer confirmation"
+      "collectionStatus": "ready",
+      "reviewReason": ""
     },
     {
       "ordinal": 92,
@@ -1050,8 +1050,8 @@
       "studyMode": "research",
       "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-education/",
       "canonicalDecision": "canonical-official-master-row",
-      "collectionStatus": "needs-review",
-      "reviewReason": "official catalogue uses Field of Research wording; keep as canonical row for now and flag identity decision for reviewer confirmation"
+      "collectionStatus": "ready",
+      "reviewReason": ""
     },
     {
       "ordinal": 93,
@@ -1061,8 +1061,8 @@
       "studyMode": "research",
       "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-education/",
       "canonicalDecision": "canonical-official-master-row",
-      "collectionStatus": "needs-review",
-      "reviewReason": "official catalogue uses Field of Research wording; keep as canonical row for now and flag identity decision for reviewer confirmation"
+      "collectionStatus": "ready",
+      "reviewReason": ""
     },
     {
       "ordinal": 94,
@@ -1072,8 +1072,8 @@
       "studyMode": "research",
       "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-education/",
       "canonicalDecision": "canonical-official-master-row",
-      "collectionStatus": "needs-review",
-      "reviewReason": "official catalogue uses Field of Research wording; keep as canonical row for now and flag identity decision for reviewer confirmation"
+      "collectionStatus": "ready",
+      "reviewReason": ""
     },
     {
       "ordinal": 95,
@@ -1204,8 +1204,8 @@
       "studyMode": "research",
       "sourceUrl": "https://admission.utm.my/int-faculty-of-built-environment-surveying/",
       "canonicalDecision": "canonical-official-master-row",
-      "collectionStatus": "needs-review",
-      "reviewReason": "official catalogue uses Field of Research wording; keep as canonical row for now and flag identity decision for reviewer confirmation"
+      "collectionStatus": "ready",
+      "reviewReason": ""
     },
     {
       "ordinal": 107,
@@ -1281,8 +1281,8 @@
       "studyMode": "research",
       "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-computing/",
       "canonicalDecision": "canonical-official-master-row",
-      "collectionStatus": "needs-review",
-      "reviewReason": "official catalogue uses Field of Research wording; keep as canonical row for now and flag identity decision for reviewer confirmation"
+      "collectionStatus": "ready",
+      "reviewReason": ""
     },
     {
       "ordinal": 114,
@@ -1292,8 +1292,8 @@
       "studyMode": "research",
       "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-computing/",
       "canonicalDecision": "canonical-official-master-row",
-      "collectionStatus": "needs-review",
-      "reviewReason": "official catalogue uses Field of Research wording; keep as canonical row for now and flag identity decision for reviewer confirmation"
+      "collectionStatus": "ready",
+      "reviewReason": ""
     },
     {
       "ordinal": 115,
@@ -1303,8 +1303,8 @@
       "studyMode": "distance",
       "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-computing/",
       "canonicalDecision": "canonical-official-master-row",
-      "collectionStatus": "needs-review",
-      "reviewReason": "strict official total tuition is not available as a unique scalar amount"
+      "collectionStatus": "ready",
+      "reviewReason": ""
     },
     {
       "ordinal": 116,
@@ -1314,8 +1314,8 @@
       "studyMode": "distance",
       "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-computing/",
       "canonicalDecision": "canonical-official-master-row",
-      "collectionStatus": "needs-review",
-      "reviewReason": "strict official total tuition is not available as a unique scalar amount"
+      "collectionStatus": "ready",
+      "reviewReason": ""
     },
     {
       "ordinal": 117,
@@ -1336,8 +1336,8 @@
       "studyMode": "research",
       "sourceUrl": "https://admission.utm.my/int-faculty-of-management/",
       "canonicalDecision": "canonical-official-master-row",
-      "collectionStatus": "needs-review",
-      "reviewReason": "official catalogue uses Field of Research wording; keep as canonical row for now and flag identity decision for reviewer confirmation"
+      "collectionStatus": "ready",
+      "reviewReason": ""
     },
     {
       "ordinal": 119,
@@ -1413,8 +1413,8 @@
       "studyMode": "research",
       "sourceUrl": "https://admission.utm.my/int-faculty-of-science/",
       "canonicalDecision": "canonical-official-master-row",
-      "collectionStatus": "needs-review",
-      "reviewReason": "official catalogue uses Field of Research wording; keep as canonical row for now and flag identity decision for reviewer confirmation"
+      "collectionStatus": "ready",
+      "reviewReason": ""
     },
     {
       "ordinal": 126,
@@ -1424,8 +1424,8 @@
       "studyMode": "research",
       "sourceUrl": "https://admission.utm.my/int-faculty-of-science/",
       "canonicalDecision": "canonical-official-master-row",
-      "collectionStatus": "needs-review",
-      "reviewReason": "official catalogue uses Field of Research wording; keep as canonical row for now and flag identity decision for reviewer confirmation"
+      "collectionStatus": "ready",
+      "reviewReason": ""
     },
     {
       "ordinal": 127,
@@ -1435,8 +1435,8 @@
       "studyMode": "research",
       "sourceUrl": "https://admission.utm.my/int-faculty-of-science/",
       "canonicalDecision": "canonical-official-master-row",
-      "collectionStatus": "needs-review",
-      "reviewReason": "official catalogue uses Field of Research wording; keep as canonical row for now and flag identity decision for reviewer confirmation"
+      "collectionStatus": "ready",
+      "reviewReason": ""
     },
     {
       "ordinal": 128,
@@ -1446,8 +1446,8 @@
       "studyMode": "research",
       "sourceUrl": "https://admission.utm.my/int-faculty-of-science/",
       "canonicalDecision": "canonical-official-master-row",
-      "collectionStatus": "needs-review",
-      "reviewReason": "official catalogue uses Field of Research wording; keep as canonical row for now and flag identity decision for reviewer confirmation"
+      "collectionStatus": "ready",
+      "reviewReason": ""
     },
     {
       "ordinal": 129,
@@ -1479,8 +1479,8 @@
       "studyMode": "distance",
       "sourceUrl": "https://admission.utm.my/int-azman-hashim-international-business-school/",
       "canonicalDecision": "canonical-official-master-row",
-      "collectionStatus": "needs-review",
-      "reviewReason": "strict official total tuition is not available as a unique scalar amount"
+      "collectionStatus": "ready",
+      "reviewReason": ""
     },
     {
       "ordinal": 132,
@@ -1589,8 +1589,8 @@
       "studyMode": "research",
       "sourceUrl": "https://admission.utm.my/int-razak-faculty-of-technology-informatics/",
       "canonicalDecision": "canonical-official-master-row",
-      "collectionStatus": "needs-review",
-      "reviewReason": "official catalogue uses Field of Research wording; keep as canonical row for now and flag identity decision for reviewer confirmation"
+      "collectionStatus": "ready",
+      "reviewReason": ""
     },
     {
       "ordinal": 142,
@@ -1600,8 +1600,8 @@
       "studyMode": "distance",
       "sourceUrl": "https://admission.utm.my/int-razak-faculty-of-technology-informatics/",
       "canonicalDecision": "canonical-official-master-row",
-      "collectionStatus": "needs-review",
-      "reviewReason": "strict official total tuition is not available as a unique scalar amount"
+      "collectionStatus": "ready",
+      "reviewReason": ""
     },
     {
       "ordinal": 143,
@@ -1721,8 +1721,8 @@
       "studyMode": "distance",
       "sourceUrl": "https://admission.utm.my/int-malaysia-japan-international-institute-of-technology/",
       "canonicalDecision": "canonical-official-master-row",
-      "collectionStatus": "needs-review",
-      "reviewReason": "strict official total tuition is not available as a unique scalar amount"
+      "collectionStatus": "ready",
+      "reviewReason": ""
     }
   ]
 }

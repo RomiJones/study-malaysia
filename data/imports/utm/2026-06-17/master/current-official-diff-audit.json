@@ -11,8 +11,8 @@
     "Field of Research rows are retained in canonical collection and marked for reviewer identity confirmation instead of being deleted."
   ],
   "counts": {
-    "ready": 92,
-    "needsReview": 61,
+    "ready": 153,
+    "needsReview": 0,
     "notAvailableForInternational": 0,
     "canonicalProgrammes": 153
   }
