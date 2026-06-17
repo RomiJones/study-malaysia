@@ -10,7 +10,7 @@
   "candidateDataset": "data/imports/utm/2026-06-17/master/candidate-dataset.json",
   "controlledImport": {
     "command": "npm --workspace @studymy/api run import:utm:master -- --confirm-import",
-    "backupPath": "apps/api/tmp/backups/utm-master-before-2026-06-17T11-19-25-404Z.json",
+    "backupPath": "apps/api/tmp/backups/utm-master-before-2026-06-17T11-37-09-254Z.json",
     "transactionResult": "passed",
     "cacheCleared": false
   },
@@ -32,15 +32,16 @@
     "publishedRows": 153,
     "legacyMasterPublicRows": 0,
     "officialTotalFeeRows": 132,
-    "officialRateOnlyRows": 14,
+    "calculatedFromOfficialRateRows": 14,
+    "officialRateOnlyRows": 0,
     "conflictFeeRows": 7,
-    "noScalarTotalRows": 21,
+    "noScalarTotalRows": 7,
     "languageRows": 153,
     "sourceLinkedRows": 153,
     "feeAuditStatusCounts": {
       "matched-official": 132,
       "not-published": 7,
-      "official-rate-verified": 14
+      "calculated-from-official-rate": 14
     }
   },
   "publicApiVerification": {
@@ -128,15 +129,41 @@
       "count": 132,
       "publicAmountPolicy": "Display UTM official total programme fee only."
     },
-    "officialRateOnlyRows": {
+    "calculatedFromOfficialRateRows": {
       "count": 14,
-      "publicAmountPolicy": "Do not calculate or display a StudyMY total; show that UTM publishes official rate basis only."
+      "publicAmountPolicy": "Display the calculated total tuition from UTM official ODL international fee rates and the official standard master fee structure.",
+      "formula": "MYR 2,670 registration fee + MYR 1,470 service fee x 4 semesters + MYR 580 study fee x 45 credits = MYR 34,650",
+      "publicDisplay": "MYR 34,650 calculated total tuition"
+    },
+    "officialRateOnlyRows": {
+      "count": 0,
+      "publicAmountPolicy": "No current UTM master row remains as rate-only text after the authorized official-rate calculation gate."
     },
     "conflictRows": {
       "count": 7,
-      "publicAmountPolicy": "Do not display ranges or pick one value; show that UTM publishes non-primary fee information without one confirmed scalar total."
+      "publicAmountPolicy": "Display concrete official fee variants in tuitionDisplay, but do not write a StudyMY scalar total where UTM publishes more than one applicable value."
     }
   },
+  "feeDisplaySampleRows": [
+    {
+      "code": "UTM-M-066",
+      "nameEnOfficial": "Master in Education Specialization : Management and Administration",
+      "tuitionAmount": 34650,
+      "officialTuitionMYR": 34650,
+      "tuitionDisplay": "MYR 34,650 calculated total tuition",
+      "officialFeeAuditStatus": "calculated-from-official-rate",
+      "calculationEvidence": "UTM official ODL international fee table: MYR 2,670 registration fee, MYR 1,470 service fee every semester, Master of Education MYR 580 per credit; calculated by 2,670 + 1,470 x 4 + 580 x 45 = 34,650."
+    },
+    {
+      "code": "UTM-M-062",
+      "nameEnOfficial": "Master of Education (Technical and Vocational Education)",
+      "tuitionAmount": null,
+      "officialTuitionMYR": null,
+      "tuitionDisplay": "Official fee variants: MYR 34,650 / MYR 36,390",
+      "officialFeeAuditStatus": "not-published",
+      "displayDecision": "Specific official variants are shown, but no single StudyMY total is selected because the official source presents more than one applicable amount."
+    }
+  ],
   "verificationCommands": [
     "python3 -m py_compile scripts/collect-utm-master-official.py",
     "npm --workspace @studymy/api run import:utm:master",

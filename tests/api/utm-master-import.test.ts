@@ -17,9 +17,9 @@ test("UTM master import keeps all official rows and preserves fee-status boundar
   const rows = buildUtmMasterProgramRows(source);
   const summary = summarizeUtmMasterImport(source, rows);
   const officialTotalRows = rows.filter((row) => row.officialFeeAuditStatus === "matched-official");
+  const calculatedRows = rows.filter((row) => row.officialFeeAuditStatus === "calculated-from-official-rate");
   const rateOnlyRows = rows.filter((row) => row.officialFeeAuditStatus === "official-rate-verified");
   const conflictRows = rows.filter((row) => row.officialFeeAuditStatus === "not-published");
-  const nonScalarRows = [...rateOnlyRows, ...conflictRows];
   const chineseNames = rows.map((row) => String(row.name?.["zh-CN"] || ""));
   const chineseFaculties = rows.map((row) => String(row.faculty?.["zh-CN"] || ""));
 
@@ -31,16 +31,19 @@ test("UTM master import keeps all official rows and preserves fee-status boundar
   assert.equal(summary.uniqueSlugs, 153);
   assert.deepEqual(summary.publicDisplayStatusCounts, { ready: 153 });
   assert.equal(officialTotalRows.length, 132);
-  assert.equal(rateOnlyRows.length, 14);
+  assert.equal(calculatedRows.length, 14);
+  assert.equal(rateOnlyRows.length, 0);
   assert.equal(conflictRows.length, 7);
-  assert.equal(nonScalarRows.length, 21);
   assert.ok(rows.every((row) => row.isPublished));
   assert.ok(rows.every((row) => row.publicDisplayStatus === "ready"));
   assert.ok(rows.every((row) => row.officialSourceStatus === "official-verified"));
   assert.ok(rows.every((row) => (row.sourceUrls || []).length >= 5));
   assert.ok(officialTotalRows.every((row) => row.officialTuitionMYR != null && row.tuitionAmount != null));
-  assert.ok(nonScalarRows.every((row) => row.officialTuitionMYR == null && row.tuitionAmount == null));
-  assert.ok(nonScalarRows.every((row) => /no single total|no single scalar/i.test(String(row.tuitionDisplay))));
+  assert.ok(calculatedRows.every((row) => row.officialTuitionMYR === 34650 && row.tuitionAmount === 34650));
+  assert.ok(calculatedRows.every((row) => /MYR 34,650 calculated total tuition/i.test(String(row.tuitionDisplay))));
+  assert.ok(calculatedRows.every((row) => /2,670.*1,470.*4.*580.*45.*34,650/i.test(String(row.officialTuitionNote))));
+  assert.ok(conflictRows.every((row) => row.officialTuitionMYR == null && row.tuitionAmount == null));
+  assert.ok(conflictRows.every((row) => /Official fee variants: MYR/i.test(String(row.tuitionDisplay))));
   assert.ok(chineseNames.every((name) => !/Master of|Master in|Field of Research|Official master/i.test(name)));
   assert.ok(chineseFaculties.every((faculty) => !/Faculty of|School of|Academy|Institute|Programmes/i.test(faculty)));
   assert.equal(rows.find((row) => row.code === "UTM-M-107")?.name?.["zh-CN"], "数据科学硕士");

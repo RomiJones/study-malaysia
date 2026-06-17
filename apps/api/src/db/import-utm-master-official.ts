@@ -26,6 +26,16 @@ export const DEFAULT_UTM_MASTER_CANDIDATE_PATH = resolve(
 
 const verifiedAt = "2026-06-17";
 const cnyPerMyr = 1.55;
+const odlEducationCalculatedFee = {
+  totalMYR: 34650,
+  registrationFeeMYR: 2670,
+  serviceFeePerSemesterMYR: 1470,
+  standardSemesters: 4,
+  studyFeePerCreditMYR: 580,
+  totalCredits: 45,
+  sourceText:
+    "UTM ODL official international fee table publishes Registration Fees MYR 2,670, Service Fees MYR 1,470 every semester, and Master of Education international Study Fees MYR 580 for 01 credit. The official ODL admission page publishes matching Master of Education totals of MYR 34,650 without prerequisite; StudyMY calculates 2,670 + 1,470 x 4 + 580 x 45 = 34,650."
+};
 
 type StudyMode = "coursework" | "mixed" | "research" | "distance";
 type FeeStatus = "verified-official-total" | "conflict" | "official-rate-only";
@@ -109,6 +119,7 @@ interface UTMMasterImportSummary {
   readyRows: number;
   uniqueSlugs: number;
   officialTotalFeeRows: number;
+  calculatedFromOfficialRateRows: number;
   officialRateOnlyRows: number;
   conflictFeeRows: number;
   publicDisplayStatusCounts: Record<string, number>;
@@ -122,6 +133,7 @@ interface UTMMasterImportVerification {
   publishedRows: number;
   legacyMasterPublicRows: number;
   officialTotalFeeRows: number;
+  calculatedFromOfficialRateRows: number;
   officialRateOnlyRows: number;
   conflictFeeRows: number;
   noScalarTotalRows: number;
@@ -425,6 +437,17 @@ function feePresentation(candidate: UTMMasterCandidateRecord): {
     };
   }
   if (fee.status === "official-rate-only") {
+    if (/^Master in Education Specialization\s*:/i.test(candidate.nameEnOfficial)) {
+      return {
+        amount: odlEducationCalculatedFee.totalMYR,
+        currency: "MYR",
+        display: `MYR ${odlEducationCalculatedFee.totalMYR.toLocaleString("en-US")} calculated total tuition`,
+        note: `StudyMY calculated the UTM ODL international education master total from official rates and the standard fee structure: MYR ${odlEducationCalculatedFee.registrationFeeMYR.toLocaleString("en-US")} registration fee + MYR ${odlEducationCalculatedFee.serviceFeePerSemesterMYR.toLocaleString("en-US")} service fee x ${odlEducationCalculatedFee.standardSemesters} semesters + MYR ${odlEducationCalculatedFee.studyFeePerCreditMYR.toLocaleString("en-US")} study fee x ${odlEducationCalculatedFee.totalCredits} credits = MYR ${odlEducationCalculatedFee.totalMYR.toLocaleString("en-US")}. ${odlEducationCalculatedFee.sourceText}`,
+        sourceUrl: fee.officialFeeSourceUrl,
+        auditStatus: "calculated-from-official-rate",
+        officialTuitionMYR: odlEducationCalculatedFee.totalMYR
+      };
+    }
     return {
       amount: null,
       currency: "MYR",
@@ -435,10 +458,14 @@ function feePresentation(candidate: UTMMasterCandidateRecord): {
       officialTuitionMYR: null
     };
   }
+  const feeNumbers = [...fee.note.matchAll(/RM\s?([\d,]+)/gi)].map((match) => Number(match[1].replace(/,/g, "")));
+  const officialVariantDisplay = feeNumbers.length
+    ? `Official fee variants: ${feeNumbers.map((amount) => `MYR ${amount.toLocaleString("en-US")}`).join(" / ")}`
+    : "UTM publishes non-primary fee information; no single total programme fee is displayed.";
   return {
     amount: null,
     currency: "MYR",
-    display: "UTM publishes non-primary fee information; no single total programme fee is displayed.",
+    display: officialVariantDisplay,
     note: `No StudyMY scalar total is written because UTM publishes more than one applicable fee value or a non-primary total. Official note: ${fee.note}`,
     sourceUrl: fee.officialFeeSourceUrl,
     auditStatus: "not-published",
@@ -635,6 +662,7 @@ export function summarizeUtmMasterImport(dataset: UTMMasterCandidateDataset, row
     readyRows: rows.filter((row) => row.publicDisplayStatus === "ready" && row.isPublished).length,
     uniqueSlugs: new Set(rows.map((row) => row.slug)).size,
     officialTotalFeeRows: rows.filter((row) => row.officialTuitionMYR != null && row.officialFeeAuditStatus === "matched-official").length,
+    calculatedFromOfficialRateRows: rows.filter((row) => row.officialFeeAuditStatus === "calculated-from-official-rate").length,
     officialRateOnlyRows: rows.filter((row) => row.officialFeeAuditStatus === "official-rate-verified").length,
     conflictFeeRows: rows.filter((row) => row.officialFeeAuditStatus === "not-published").length,
     publicDisplayStatusCounts: countBy(rows, (row) => String(row.publicDisplayStatus)),
@@ -647,6 +675,9 @@ function verifyUtmMasterImportedRecordSet(rows: ProgramEntity[], legacyMasterPub
   const readyRows = rows.filter((row) => row.publicDisplayStatus === "ready");
   const publishedRows = rows.filter((row) => row.isPublished);
   const officialTotalFeeRows = rows.filter((row) => row.officialTuitionMYR != null && row.officialFeeAuditStatus === "matched-official");
+  const calculatedFromOfficialRateRows = rows.filter(
+    (row) => row.officialTuitionMYR != null && row.tuitionAmount != null && row.officialFeeAuditStatus === "calculated-from-official-rate"
+  );
   const officialRateOnlyRows = rows.filter((row) => row.officialFeeAuditStatus === "official-rate-verified" && row.officialTuitionMYR == null);
   const conflictFeeRows = rows.filter((row) => row.officialFeeAuditStatus === "not-published" && row.officialTuitionMYR == null);
   const noScalarTotalRows = rows.filter((row) => row.officialTuitionMYR == null && row.tuitionAmount == null).length;
@@ -657,15 +688,16 @@ function verifyUtmMasterImportedRecordSet(rows: ProgramEntity[], legacyMasterPub
     readyRows.length !== expectedRows ||
     publishedRows.length !== expectedRows ||
     officialTotalFeeRows.length !== 132 ||
-    officialRateOnlyRows.length !== 14 ||
+    calculatedFromOfficialRateRows.length !== 14 ||
+    officialRateOnlyRows.length !== 0 ||
     conflictFeeRows.length !== 7 ||
-    noScalarTotalRows !== 21 ||
+    noScalarTotalRows !== 7 ||
     languageRows !== expectedRows ||
     sourceLinkedRows !== expectedRows ||
     legacyMasterPublicRows !== 0
   ) {
     throw new Error(
-      `UTM master import verification failed: expected=${expectedRows}, actual=${rows.length}, ready=${readyRows.length}, published=${publishedRows.length}, officialTotal=${officialTotalFeeRows.length}, rateOnly=${officialRateOnlyRows.length}, conflict=${conflictFeeRows.length}, noScalarTotal=${noScalarTotalRows}, language=${languageRows}, sourceLinks=${sourceLinkedRows}, legacyPublic=${legacyMasterPublicRows}.`
+      `UTM master import verification failed: expected=${expectedRows}, actual=${rows.length}, ready=${readyRows.length}, published=${publishedRows.length}, officialTotal=${officialTotalFeeRows.length}, calculated=${calculatedFromOfficialRateRows.length}, rateOnly=${officialRateOnlyRows.length}, conflict=${conflictFeeRows.length}, noScalarTotal=${noScalarTotalRows}, language=${languageRows}, sourceLinks=${sourceLinkedRows}, legacyPublic=${legacyMasterPublicRows}.`
     );
   }
   return {
@@ -674,6 +706,7 @@ function verifyUtmMasterImportedRecordSet(rows: ProgramEntity[], legacyMasterPub
     publishedRows: publishedRows.length,
     legacyMasterPublicRows,
     officialTotalFeeRows: officialTotalFeeRows.length,
+    calculatedFromOfficialRateRows: calculatedFromOfficialRateRows.length,
     officialRateOnlyRows: officialRateOnlyRows.length,
     conflictFeeRows: conflictFeeRows.length,
     noScalarTotalRows,
@@ -741,7 +774,7 @@ async function updateUniversityAfterMasterImport(manager: EntityManager, univers
       byLevel: { bachelor, master, phd }
     }
   };
-  university.officialAuditSummary = `UTM official catalogue import: ${bachelor.total} bachelor rows and ${master.total} master rows are public-visible from official UTM sources. Master fees include ${summary.officialTotalFeeRows} official total rows and ${summary.officialRateOnlyRows + summary.conflictFeeRows} rows retained without a StudyMY scalar total.`;
+  university.officialAuditSummary = `UTM official catalogue import: ${bachelor.total} bachelor rows and ${master.total} master rows are public-visible from official UTM sources. Master fees include ${summary.officialTotalFeeRows} official total rows, ${summary.calculatedFromOfficialRateRows} rows calculated from official ODL rates, and ${summary.conflictFeeRows} rows retained as official non-scalar variants.`;
   university.officialVerifiedAt = verifiedAt;
   university.officialSourceStatus = "official-verified";
   university.publicDisplayStatus = "ready";
@@ -800,6 +833,7 @@ async function main() {
             preserveBachelorRows: true,
             feePolicy: {
               officialTotalRows: summary.officialTotalFeeRows,
+              calculatedFromOfficialRateRows: summary.calculatedFromOfficialRateRows,
               officialRateOnlyRows: summary.officialRateOnlyRows,
               conflictRows: summary.conflictFeeRows,
               nonScalarRowsDisplayNoStudyMYTotal: summary.officialRateOnlyRows + summary.conflictFeeRows
