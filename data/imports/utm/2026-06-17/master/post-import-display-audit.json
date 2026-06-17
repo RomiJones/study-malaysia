@@ -1,0 +1,114 @@
+{
+  "institution": {
+    "code": "UTM",
+    "name": "Universiti Teknologi Malaysia",
+    "universityId": 8
+  },
+  "level": "master",
+  "stage": "post-import-display-audit",
+  "auditedAt": "2026-06-17",
+  "candidateDataset": "data/imports/utm/2026-06-17/master/candidate-dataset.json",
+  "controlledImport": {
+    "command": "npm --workspace @studymy/api run import:utm:master -- --confirm-import",
+    "backupPath": "apps/api/tmp/backups/utm-master-before-2026-06-17T10-18-06-704Z.json",
+    "transactionResult": "passed",
+    "cacheCleared": false
+  },
+  "expected": {
+    "masterCanonicalRows": 153,
+    "masterReadyRows": 153,
+    "masterNeedsReviewRows": 0,
+    "masterNotAvailableForInternationalRows": 0,
+    "utmPublicBachelorRows": 44,
+    "utmPublicMasterRows": 153,
+    "utmPublicTotalRows": 197,
+    "legacyPublicMasterRows": 0
+  },
+  "databaseVerification": {
+    "command": "npm --workspace @studymy/api run verify:utm:master",
+    "result": "passed",
+    "importedRows": 153,
+    "readyRows": 153,
+    "publishedRows": 153,
+    "legacyMasterPublicRows": 0,
+    "officialTotalFeeRows": 132,
+    "officialRateOnlyRows": 14,
+    "conflictFeeRows": 7,
+    "noScalarTotalRows": 21,
+    "languageRows": 153,
+    "sourceLinkedRows": 153,
+    "feeAuditStatusCounts": {
+      "matched-official": 132,
+      "not-published": 7,
+      "official-rate-verified": 14
+    }
+  },
+  "publicApiVerification": {
+    "universityDetailEndpoint": "http://localhost:3000/api/universities/utm",
+    "result": "passed",
+    "programCount": 197,
+    "programGroups": {
+      "bachelor": 44,
+      "master": 153,
+      "phd": 0
+    },
+    "catalogStatusSummary": {
+      "all": {
+        "total": 197,
+        "ready": 193,
+        "needsReview": 0,
+        "notAvailableForInternational": 4
+      },
+      "byLevel": {
+        "bachelor": {
+          "total": 44,
+          "ready": 40,
+          "needsReview": 0,
+          "notAvailableForInternational": 4
+        },
+        "master": {
+          "total": 153,
+          "ready": 153,
+          "needsReview": 0,
+          "notAvailableForInternational": 0
+        },
+        "phd": {
+          "total": 0,
+          "ready": 0,
+          "needsReview": 0,
+          "notAvailableForInternational": 0
+        }
+      }
+    },
+    "programListSampleEndpoint": "http://localhost:3000/api/programs?universityId=8&levels=master&pageSize=200",
+    "programListSampleRows": 100,
+    "programListSampleNote": "Program list endpoint caps the sample page at 100 rows; the full 153 master rows are verified by university detail grouping and direct database verification.",
+    "programListSampleBadScalarFeeRows": 0,
+    "programListSampleMissingSourceRows": 0
+  },
+  "feeDisplayPolicy": {
+    "officialTotalRows": {
+      "count": 132,
+      "publicAmountPolicy": "Display UTM official total programme fee only."
+    },
+    "officialRateOnlyRows": {
+      "count": 14,
+      "publicAmountPolicy": "Do not calculate or display a StudyMY total; show that UTM publishes official rate basis only."
+    },
+    "conflictRows": {
+      "count": 7,
+      "publicAmountPolicy": "Do not display ranges or pick one value; show that UTM publishes non-primary fee information without one confirmed scalar total."
+    }
+  },
+  "verificationCommands": [
+    "python3 -m py_compile scripts/collect-utm-master-official.py",
+    "npm --workspace @studymy/api run import:utm:master",
+    "npm test -- tests/api/utm-master-import.test.ts",
+    "npm --workspace @studymy/api run import:utm:master -- --confirm-import",
+    "npm --workspace @studymy/api run verify:utm:master",
+    "npm test -- tests/api/utm-master-import.test.ts tests/api/utm-undergraduate-import.test.ts tests/api/utm-public-catalog-display.test.ts",
+    "npm --workspace @studymy/api run build",
+    "npm --workspace @studymy/web run build"
+  ],
+  "decision": "master-publication-closed"
+}
