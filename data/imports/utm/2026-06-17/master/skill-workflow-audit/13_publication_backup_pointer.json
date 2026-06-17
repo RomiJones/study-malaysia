@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "scope": {
+    "universityCode": "UTM",
+    "level": "master",
+    "applicantScope": "international",
+    "academicSession": "2026/2027"
+  },
+  "backupPath": "apps/api/tmp/backups/utm-master-before-2026-06-17T13-30-57-879Z.json",
+  "absoluteBackupPath": "/Users/ian/Desktop/dev/study-malaysia/apps/api/tmp/backups/utm-master-before-2026-06-17T13-30-57-879Z.json",
+  "backupSha256": "a8b59046e25d705b3ae54d6934604b8a652897e12e0b13af3b92f4dbd0439608",
+  "backupBytes": 2292442,
+  "createdByCommand": "npm --workspace @studymy/api run import:utm:master -- --confirm-import",
+  "createdAt": "2026-06-17T13:30:57.879Z",
+  "purpose": "Rollback point before controlled UTM master publication import.",
+  "importSummary": {
+    "importedRows": 153,
+    "readyRows": 153,
+    "publishedRows": 153,
+    "legacyMasterPublicRows": 0,
+    "officialTotalFeeRows": 132,
+    "calculatedFromOfficialRateRows": 14,
+    "officialRateOnlyRows": 0,
+    "conflictFeeRows": 7,
+    "noScalarTotalRows": 7,
+    "academicRequirementGpaRows": 153,
+    "languageRows": 153,
+    "sourceLinkedRows": 153,
+    "universityProgramCount": 197
+  }
+}

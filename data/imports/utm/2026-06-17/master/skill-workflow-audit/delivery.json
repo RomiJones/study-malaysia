@@ -12,7 +12,7 @@
     "applicantScope": "international",
     "academicSession": "2026/2027"
   },
-  "authorization": "collect",
+  "authorization": "publish",
   "counts": {
     "directoryOccurrences": 153,
     "uniqueOfficialEntries": 153,
@@ -98,6 +98,11 @@
     },
     "displayParity": {
       "covered": 5,
+      "unpublished": 0,
+      "review": 0
+    },
+    "localization": {
+      "covered": 153,
       "unpublished": 0,
       "review": 0
     }
@@ -760,12 +765,12 @@
     {
       "path": "00_run_contract.json",
       "role": "manifest",
-      "sha256": "647d4921394cfe56a30f3d59db4cf1f109fa4f769dcd6c9aac51192c2dd73858"
+      "sha256": "9221ef0486d3a7f9d858980ee6ff232862e5f51e4a29121001aed85c1b8f91a6"
     },
     {
       "path": "01_instruction_execution_ledger.json",
       "role": "instruction-execution-ledger",
-      "sha256": "df5fd000cddf41e63e51cec861f0640cc333cf447e3c8ab2bc5223eca3e8a938"
+      "sha256": "27665d1f62b27392d0623a9655f4e09c7beb734fd2693f3f4039e6ce3b03d54e"
     },
     {
       "path": "02_official_source_registry.json",
@@ -810,7 +815,7 @@
     {
       "path": "10_display_parity_report.json",
       "role": "display-parity-report",
-      "sha256": "9becbf00b0a626ed91748cb16ae242da8c3ace7b3418375b76056438d6bcd8ee"
+      "sha256": "8e19250883788901540012c605c8d5e11512aedf8314be16fabcef0c0b40c72c"
     },
     {
       "path": "11_exception_queue.json",
@@ -820,7 +825,12 @@
     {
       "path": "12_operator_review_report.md",
       "role": "report",
-      "sha256": "80591c6bdec49d6d9a2c2d8e474031fb56c5a7912048e296a04711ffe023f379"
+      "sha256": "24dcf0c49ccf5da4f5464a013f709a4a85b623e8d1d00017fdcffc44f57b67fd"
+    },
+    {
+      "path": "13_publication_backup_pointer.json",
+      "role": "backup",
+      "sha256": "de7ac7aca9f93fb4ad9955548d6cc0fcb51c9187090ea33815d1912bacd7c8ec"
     }
   ],
   "exceptions": {
@@ -838,7 +848,48 @@
     "directoryParse": "passed",
     "identityReconciliation": "passed",
     "feeReconciliation": "passed",
-    "instructionExecution": "passed"
+    "instructionExecution": "passed",
+    "localizationAudit": "passed",
+    "databaseBackup": "passed",
+    "importDryRun": "passed",
+    "transactionalImport": "passed",
+    "databaseAudit": "passed",
+    "apiAudit": "passed",
+    "uiAudit": "passed",
+    "tests": "passed",
+    "builds": "passed",
+    "browserConsole": "passed",
+    "focusedDiff": "passed",
+    "feePolicy": "passed"
   },
-  "decision": "ready-for-controlled-import"
+  "decision": "published",
+  "commercialDisplayReady": true,
+  "displayParityRequired": true,
+  "publication": {
+    "status": "published",
+    "completedAt": "2026-06-17T13:36:00Z",
+    "backupArtifact": "13_publication_backup_pointer.json",
+    "databaseVerification": {
+      "importedRows": 153,
+      "readyRows": 153,
+      "publishedRows": 153,
+      "legacyMasterPublicRows": 0,
+      "academicRequirementGpaRows": 153,
+      "sourceLinkedRows": 153,
+      "universityProgramCount": 197
+    },
+    "apiVerification": {
+      "universityDetailMaster": 153,
+      "programListMaster": 153,
+      "page1Rows": 100,
+      "page2Rows": 53,
+      "sourceLinkedRows": 153
+    },
+    "uiVerification": {
+      "detailMasterCountVisible": true,
+      "detailBachelorCountVisible": true,
+      "homeVisible": true,
+      "consoleErrors": 0
+    }
+  }
 }

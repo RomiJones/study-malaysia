@@ -129,5 +129,23 @@
         }
       }
     }
-  ]
+  ],
+  "publicationVerification": {
+    "status": "passed",
+    "verifiedAt": "2026-06-17T13:36:00Z",
+    "apiAudit": {
+      "universityDetailMaster": 153,
+      "programListMaster": 153,
+      "page1Rows": 100,
+      "page2Rows": 53,
+      "listGpaRows": 153,
+      "sourceLinkedRows": 153
+    },
+    "uiAudit": {
+      "detailMasterCountVisible": true,
+      "detailBachelorCountVisible": true,
+      "homeVisible": true,
+      "consoleErrors": 0
+    }
+  }
 }

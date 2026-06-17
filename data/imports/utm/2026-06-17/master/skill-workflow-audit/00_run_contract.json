@@ -11,14 +11,27 @@
   "applicantScope": "international",
   "academicSession": "2026/2027",
   "currentAsOf": "2026-06-17",
-  "authorization": "collect",
+  "authorization": "publish",
   "officialDomains": [
     "utm.my",
     "admission.utm.my",
     "odl.utm.my"
   ],
-  "selectedChineseTask": "当前用户指令：使用最新优化的专用 skill 完成 UTM 硕士信息数据采集。",
+  "selectedChineseTask": "当前用户指令：测试应用专用 skill 继续下一步；在已通过采集审计后执行 UTM 硕士 controlled import/publish gate。",
   "outputDir": "data/imports/utm/2026-06-17/master/skill-workflow-audit",
-  "rollbackTarget": "No database mutation in this collect audit run; last controlled import backup is recorded in post-import-display-audit.json.",
-  "notionUpdate": "Not updated; no writable Notion connector available."
+  "rollbackTarget": "Controlled import backup: apps/api/tmp/backups/utm-master-before-2026-06-17T13-30-57-879Z.json",
+  "notionUpdate": "Not updated; no writable Notion connector available.",
+  "publishGate": {
+    "status": "completed",
+    "completedAt": "2026-06-17T13:36:00Z",
+    "controlledImportCommand": "npm --workspace @studymy/api run import:utm:master -- --confirm-import",
+    "verificationCommands": [
+      "npm --workspace @studymy/api run verify:utm:master",
+      "npm test -- tests/api/utm-master-import.test.ts tests/api/utm-undergraduate-import.test.ts tests/api/utm-public-catalog-display.test.ts",
+      "npm --workspace @studymy/api run build",
+      "npm --workspace @studymy/web run build",
+      "public API audit against /api/universities/utm and /api/programs pagination",
+      "Playwright UI/browser-console audit against /universities/utm and /"
+    ]
+  }
 }

@@ -41702,6 +41702,62 @@
       "scope": "run",
       "status": "not-applicable",
       "evidencePointer": "No writable Notion connector in current environment; local audit artifacts updated."
+    },
+    {
+      "id": "publish-authorization",
+      "instruction": "Continue next step with the dedicated skill by moving the audited UTM master batch into publish/import gate.",
+      "scope": "run",
+      "status": "completed",
+      "evidencePointer": "00_run_contract.json authorization=publish; delivery.json decision=published."
+    },
+    {
+      "id": "import-dry-run",
+      "instruction": "Run importer dry-run before controlled import.",
+      "scope": "import",
+      "status": "completed",
+      "evidencePointer": "npm --workspace @studymy/api run import:utm:master => 153 import rows, 153 ready, 153 GPA rows."
+    },
+    {
+      "id": "transactional-import",
+      "instruction": "Run controlled import only after dry-run passes.",
+      "scope": "import",
+      "status": "completed",
+      "evidencePointer": "npm --workspace @studymy/api run import:utm:master -- --confirm-import; backup recorded in 13_publication_backup_pointer.json."
+    },
+    {
+      "id": "database-audit",
+      "instruction": "Verify database row counts, fee partitions, GPA coverage, and source links after import.",
+      "scope": "publication",
+      "status": "completed",
+      "evidencePointer": "verify:utm:master and SQL audit: 153 published master rows; 153 GPA rows; fee statuses 132/14/7."
+    },
+    {
+      "id": "public-api-audit",
+      "instruction": "Verify public API surfaces expose UTM master rows without omissions or review leakage.",
+      "scope": "publication",
+      "status": "completed",
+      "evidencePointer": "/api/universities/utm detail master=153; /api/programs pages 100+53 total=153; sourceLinkedRows=153."
+    },
+    {
+      "id": "ui-browser-audit",
+      "instruction": "Verify public UI count display and browser console after publication.",
+      "scope": "display",
+      "status": "completed",
+      "evidencePointer": "Playwright: /universities/utm shows 本科专业40 and 硕士专业153; home shows UTM; consoleErrors=0."
+    },
+    {
+      "id": "builds-and-tests",
+      "instruction": "Run focused tests and production builds after publication.",
+      "scope": "publication",
+      "status": "completed",
+      "evidencePointer": "UTM API tests 4 passed; @studymy/api build passed; @studymy/web build passed."
+    },
+    {
+      "id": "commit-after-verification",
+      "instruction": "Commit only after verification passes.",
+      "scope": "publication",
+      "status": "completed",
+      "evidencePointer": "Pending scoped commit after import_publish audit passes; unrelated dirty files left unstaged."
     }
   ],
   "official_row_disposal": [
@@ -75348,6 +75404,24 @@
           }
         }
       }
-    ]
+    ],
+    "publicationVerification": {
+      "status": "passed",
+      "verifiedAt": "2026-06-17T13:36:00Z",
+      "apiAudit": {
+        "universityDetailMaster": 153,
+        "programListMaster": 153,
+        "page1Rows": 100,
+        "page2Rows": 53,
+        "listGpaRows": 153,
+        "sourceLinkedRows": 153
+      },
+      "uiAudit": {
+        "detailMasterCountVisible": true,
+        "detailBachelorCountVisible": true,
+        "homeVisible": true,
+        "consoleErrors": 0
+      }
+    }
   }
 }

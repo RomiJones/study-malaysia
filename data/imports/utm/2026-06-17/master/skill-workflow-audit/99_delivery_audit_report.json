@@ -1,5 +1,5 @@
 {
-  "status": "ready-for-controlled-import",
+  "status": "published",
   "scope": {
     "universityCode": "UTM",
     "collectionScope": "programmes",
@@ -10,7 +10,7 @@
   "levels": [
     "master"
   ],
-  "authorization": "collect",
+  "authorization": "publish",
   "counts": {
     "directoryOccurrences": 153,
     "uniqueOfficialEntries": 153,
@@ -34,10 +34,11 @@
     "intake",
     "internationalEligibility",
     "languageRequirement",
+    "localization",
     "studyMode"
   ],
   "sourceCount": 39,
-  "artifactCount": 13,
+  "artifactCount": 14,
   "blockingExceptionCount": 0,
   "reviewExceptionCount": 0,
   "issueCounts": {},
