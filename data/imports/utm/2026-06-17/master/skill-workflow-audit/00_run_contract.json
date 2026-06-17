@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "institutionIdentifier": "UTM",
+  "universityCode": "UTM",
+  "institutionNameOfficial": "Universiti Teknologi Malaysia",
+  "collectionScope": "programmes",
+  "levels": [
+    "master"
+  ],
+  "level": "master",
+  "applicantScope": "international",
+  "academicSession": "2026/2027",
+  "currentAsOf": "2026-06-17",
+  "authorization": "collect",
+  "officialDomains": [
+    "utm.my",
+    "admission.utm.my",
+    "odl.utm.my"
+  ],
+  "selectedChineseTask": "当前用户指令：使用最新优化的专用 skill 完成 UTM 硕士信息数据采集。",
+  "outputDir": "data/imports/utm/2026-06-17/master/skill-workflow-audit",
+  "rollbackTarget": "No database mutation in this collect audit run; last controlled import backup is recorded in post-import-display-audit.json.",
+  "notionUpdate": "Not updated; no writable Notion connector available."
+}

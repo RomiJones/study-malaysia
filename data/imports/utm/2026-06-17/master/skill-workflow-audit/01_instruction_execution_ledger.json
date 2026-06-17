@@ -1,0 +1,79 @@
+[
+  {
+    "id": "latest-skill",
+    "instruction": "Use the latest optimized StudyMY official university collector skill.",
+    "scope": "run",
+    "status": "completed",
+    "evidencePointer": "SKILL.md read; skill-workflow-audit artifacts generated."
+  },
+  {
+    "id": "scope-utm-master",
+    "instruction": "Scope is UTM master programmes for international applicants, academic session/current-as-of 2026-06-17.",
+    "scope": "level",
+    "status": "completed",
+    "evidencePointer": "00_run_contract.json"
+  },
+  {
+    "id": "no-silent-omission",
+    "instruction": "Do not omit or reduce official programme rows.",
+    "scope": "level",
+    "status": "completed",
+    "evidencePointer": "153 candidate rows; 153 disposal rows."
+  },
+  {
+    "id": "official-consistency",
+    "instruction": "Official data must match official publication and preserve status partitions.",
+    "scope": "field",
+    "status": "completed",
+    "evidencePointer": "07_field_coverage_matrix.json"
+  },
+  {
+    "id": "fee-specific-values",
+    "instruction": "Tuition must show concrete official totals/rate-derived authorized totals/official variants.",
+    "scope": "field",
+    "status": "completed",
+    "evidencePointer": "132 official total, 14 calculated official-rate totals, 7 official variants."
+  },
+  {
+    "id": "gpa-specific-values",
+    "instruction": "GPA/CGPA requirements must be concrete official values, not generic verified text.",
+    "scope": "field",
+    "status": "completed",
+    "evidencePointer": "153 structured GPA rows verified in database and importer tests."
+  },
+  {
+    "id": "source-trace",
+    "instruction": "Ready values must trace to official evidence.",
+    "scope": "field",
+    "status": "completed",
+    "evidencePointer": "09_source_to_candidate_trace.json"
+  },
+  {
+    "id": "page-options",
+    "instruction": "Inventory page/source options for each ready programme.",
+    "scope": "programme",
+    "status": "completed",
+    "evidencePointer": "06_page_option_inventory.json"
+  },
+  {
+    "id": "display-parity",
+    "instruction": "Verify StudyMY display surfaces and leakage checks.",
+    "scope": "display",
+    "status": "completed",
+    "evidencePointer": "10_display_parity_report.json"
+  },
+  {
+    "id": "no-new-live-fetch",
+    "instruction": "Avoid re-running live scrape that previously drifted to 151 rows due transport instability.",
+    "scope": "source",
+    "status": "not-applicable",
+    "evidencePointer": "Using locked verified cache/source artifacts and current database verification instead."
+  },
+  {
+    "id": "notion-update",
+    "instruction": "Update Notion or state Notion was not updated.",
+    "scope": "run",
+    "status": "not-applicable",
+    "evidencePointer": "No writable Notion connector in current environment; local audit artifacts updated."
+  }
+]

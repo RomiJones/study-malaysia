@@ -1,0 +1,45 @@
+{
+  "status": "ready-for-controlled-import",
+  "scope": {
+    "universityCode": "UTM",
+    "collectionScope": "programmes",
+    "level": "master",
+    "applicantScope": "international",
+    "academicSession": "2026/2027"
+  },
+  "levels": [
+    "master"
+  ],
+  "authorization": "collect",
+  "counts": {
+    "directoryOccurrences": 153,
+    "uniqueOfficialEntries": 153,
+    "canonicalProgrammes": 153,
+    "ready": 153,
+    "needsReview": 0,
+    "notAvailableForInternational": 0
+  },
+  "coverageKeys": [
+    "academicRequirement",
+    "applicationDocuments",
+    "campus",
+    "careers",
+    "curriculum",
+    "displayParity",
+    "duration",
+    "evidence",
+    "faculty",
+    "fee",
+    "identity",
+    "intake",
+    "internationalEligibility",
+    "languageRequirement",
+    "studyMode"
+  ],
+  "sourceCount": 39,
+  "artifactCount": 13,
+  "blockingExceptionCount": 0,
+  "reviewExceptionCount": 0,
+  "issueCounts": {},
+  "issues": []
+}

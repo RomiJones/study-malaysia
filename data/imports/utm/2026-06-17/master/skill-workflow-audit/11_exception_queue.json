@@ -1,0 +1,12 @@
+{
+  "blocking": [],
+  "review": [],
+  "transport": [],
+  "resolved": [
+    {
+      "id": "live-refresh-151-drift",
+      "status": "resolved-by-locked-cache",
+      "note": "Live collector retry produced 151 rows due transport instability and was not accepted; locked 153-row cache and database verification govern this audit."
+    }
+  ]
+}

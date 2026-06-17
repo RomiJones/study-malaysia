@@ -1,0 +1,133 @@
+{
+  "schemaVersion": 1,
+  "surfaces": [
+    {
+      "surface": "institution profile",
+      "fields": {
+        "institutionName": {
+          "state": "ready",
+          "evidencePointer": "post-import-display-audit.json",
+          "note": "post-import-display-audit.json"
+        },
+        "officialLinks": {
+          "state": "ready",
+          "evidencePointer": "source-cache-index.json",
+          "note": "source-cache-index.json"
+        },
+        "programmeCount": {
+          "state": "ready",
+          "evidencePointer": "database verification 197 total UTM rows",
+          "note": "database verification 197 total UTM rows"
+        }
+      }
+    },
+    {
+      "surface": "catalogue tabs and aggregate counts",
+      "fields": {
+        "bachelorCount": {
+          "state": "ready",
+          "evidencePointer": "44 bachelor rows",
+          "note": "44 bachelor rows"
+        },
+        "masterCount": {
+          "state": "ready",
+          "evidencePointer": "153 master rows",
+          "note": "153 master rows"
+        },
+        "reviewLeakage": {
+          "state": "ready",
+          "evidencePointer": "0 needs-review master rows",
+          "note": "0 needs-review master rows"
+        }
+      }
+    },
+    {
+      "surface": "program-list rows",
+      "fields": {
+        "localizedName": {
+          "state": "ready",
+          "evidencePointer": "import-utm-master-official.ts localizedProgrammeName",
+          "note": "import-utm-master-official.ts localizedProgrammeName"
+        },
+        "faculty": {
+          "state": "ready",
+          "evidencePointer": "localizedFaculty mapping",
+          "note": "localizedFaculty mapping"
+        },
+        "tuitionDisplay": {
+          "state": "ready",
+          "evidencePointer": "132 official total, 14 calculated official rate, 7 official variants",
+          "note": "132 official total, 14 calculated official rate, 7 official variants"
+        },
+        "gpa": {
+          "state": "ready",
+          "evidencePointer": "153 structured GPA rows",
+          "note": "153 structured GPA rows"
+        },
+        "intake": {
+          "state": "ready",
+          "evidencePointer": "UTM FAQ February/September",
+          "note": "UTM FAQ February/September"
+        }
+      }
+    },
+    {
+      "surface": "program-detail sections",
+      "fields": {
+        "officialAcademicRequirement": {
+          "state": "ready",
+          "evidencePointer": "153 official CPA/CGPA requirement rows",
+          "note": "153 official CPA/CGPA requirement rows"
+        },
+        "officialLanguageRequirement": {
+          "state": "ready",
+          "evidencePointer": "UTM English language requirements source",
+          "note": "UTM English language requirements source"
+        },
+        "applicationDocuments": {
+          "state": "ready",
+          "evidencePointer": "UTM visa and international registration checklist",
+          "note": "UTM visa and international registration checklist"
+        },
+        "curriculum": {
+          "state": "unpublished",
+          "reason": "Uniform programme-level curriculum is not published for every row in collected UTM master source set."
+        },
+        "careers": {
+          "state": "unpublished",
+          "reason": "Structured programme-level career list is not published in collected source set."
+        },
+        "officialSources": {
+          "state": "ready",
+          "evidencePointer": "sourceUrls on every programme record",
+          "note": "sourceUrls on every programme record"
+        }
+      }
+    },
+    {
+      "surface": "leakage and public filter checks",
+      "fields": {
+        "archivedLeakage": {
+          "state": "ready",
+          "evidencePointer": "verify:utm:master legacyMasterPublicRows=0",
+          "note": "verify:utm:master legacyMasterPublicRows=0"
+        },
+        "needsReviewLeakage": {
+          "state": "ready",
+          "evidencePointer": "153 ready, 0 needs-review master rows",
+          "note": "153 ready, 0 needs-review master rows"
+        },
+        "unavailableLeakage": {
+          "state": "ready",
+          "evidencePointer": "0 not-available-for-international master rows",
+          "note": "0 not-available-for-international master rows"
+        },
+        "feeRangeLeakage": {
+          "state": "ready",
+          "evidencePointer": "conflict rows display official variants without scalar total",
+          "note": "conflict rows display official variants without scalar total"
+        }
+      }
+    }
+  ]
+}

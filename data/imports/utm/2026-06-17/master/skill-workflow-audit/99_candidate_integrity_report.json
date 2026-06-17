@@ -1,0 +1,25 @@
+{
+  "status": "passed",
+  "recordKey": "records",
+  "baselineKey": "official_row_disposal",
+  "pageOptionKey": "page_option_inventory",
+  "coverageKey": "field_coverage_matrix",
+  "displayParityKey": "display_parity_report.surfaces",
+  "instructionLedgerKey": "instruction_execution_ledger",
+  "officialDomains": [
+    "admission.utm.my",
+    "odl.utm.my",
+    "utm.my"
+  ],
+  "recordCount": 153,
+  "baselineCount": 153,
+  "pageOptionCount": 153,
+  "coverageRowCount": 153,
+  "displayParityRowCount": 5,
+  "instructionLedgerCount": 11,
+  "recordsByPublicStatus": {
+    "ready": 153
+  },
+  "issueCounts": {},
+  "issues": []
+}
