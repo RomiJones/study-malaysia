@@ -26,6 +26,8 @@ export const DEFAULT_UTM_MASTER_CANDIDATE_PATH = resolve(
 
 const verifiedAt = "2026-06-17";
 const cnyPerMyr = 1.55;
+const utmInternationalPostgraduateEntryRequirementUrl = "https://admission.utm.my/int-pg-entry-requirements/";
+const utmOdlAdmissionRequirementUrl = "https://admission.utm.my/odl/";
 const odlEducationCalculatedFee = {
   totalMYR: 34650,
   registrationFeeMYR: 2670,
@@ -122,6 +124,7 @@ interface UTMMasterImportSummary {
   calculatedFromOfficialRateRows: number;
   officialRateOnlyRows: number;
   conflictFeeRows: number;
+  academicRequirementGpaRows: number;
   publicDisplayStatusCounts: Record<string, number>;
   feeAuditStatusCounts: Record<string, number>;
   modes: Record<string, number>;
@@ -137,6 +140,7 @@ interface UTMMasterImportVerification {
   officialRateOnlyRows: number;
   conflictFeeRows: number;
   noScalarTotalRows: number;
+  academicRequirementGpaRows: number;
   languageRows: number;
   sourceLinkedRows: number;
   publicDisplayStatusCounts: Record<string, number>;
@@ -413,6 +417,78 @@ function annualTuitionCny(totalMyr: number | null, years: number) {
   return Math.round((totalMyr / Math.max(years, 1)) * cnyPerMyr);
 }
 
+function academicRequirementPresentation(candidate: UTMMasterCandidateRecord) {
+  const name = candidate.nameEnOfficial.toLowerCase();
+  if (candidate.studyMode === "distance") {
+    return {
+      gpa: 2.5,
+      sourceUrl: utmOdlAdmissionRequirementUrl,
+      officialText:
+        "UTM ODL official admission requirement: a recognised Bachelor's Degree with good honours with minimum CGPA 2.5/4.0 or equivalent. International applicants must also satisfy academic admission and English language proficiency requirements.",
+      note: t(
+        "UTM ODL official admission requirement: a recognised Bachelor's Degree with good honours with minimum CGPA 2.5/4.0 or equivalent. International applicants must also satisfy academic admission and English language proficiency requirements.",
+        "UTM ODL 官方入学要求：认可本科荣誉学位，最低 CGPA 2.5/4.0 或同等资格；国际申请人还须满足学术录取与英语能力要求。",
+        "UTM ODL 官方入學要求：認可本科榮譽學位，最低 CGPA 2.5/4.0 或同等資格；國際申請人還須滿足學術錄取與英語能力要求。",
+        "Syarat kemasukan rasmi ODL UTM: Ijazah Sarjana Muda yang diiktiraf dengan kepujian baik dan minimum CGPA 2.5/4.0 atau setara. Pemohon antarabangsa juga mesti memenuhi syarat akademik dan kemahiran bahasa Inggeris."
+      )
+    };
+  }
+  if (name.includes("master of business administration")) {
+    return {
+      gpa: 3.5,
+      sourceUrl: utmInternationalPostgraduateEntryRequirementUrl,
+      officialText:
+        "UTM official MBA entry requirement: CPA 3.50 and above requires no working experience; CPA 3.00 to 3.49 requires 2 years working experience in the related field; CPA 2.00 to 2.99 requires 5 years working experience in the related field.",
+      note: t(
+        "UTM official MBA entry requirement: CPA 3.50 and above requires no working experience; CPA 3.00 to 3.49 requires 2 years related working experience; CPA 2.00 to 2.99 requires 5 years related working experience.",
+        "UTM 官方 MBA 入学要求：CPA 3.50 及以上无需工作经验；CPA 3.00 至 3.49 需 2 年相关工作经验；CPA 2.00 至 2.99 需 5 年相关工作经验。",
+        "UTM 官方 MBA 入學要求：CPA 3.50 及以上無需工作經驗；CPA 3.00 至 3.49 需 2 年相關工作經驗；CPA 2.00 至 2.99 需 5 年相關工作經驗。",
+        "Syarat kemasukan rasmi MBA UTM: CPA 3.50 dan ke atas tidak memerlukan pengalaman kerja; CPA 3.00 hingga 3.49 memerlukan 2 tahun pengalaman kerja berkaitan; CPA 2.00 hingga 2.99 memerlukan 5 tahun pengalaman kerja berkaitan."
+      )
+    };
+  }
+  if (name === "master of architecture") {
+    return {
+      gpa: 2.3,
+      sourceUrl: utmInternationalPostgraduateEntryRequirementUrl,
+      officialText:
+        "UTM official Master of Architecture entry requirement: Bachelor of Science in Architecture/Degree in Architecture with CPA 3.0 to 4.0 requires 6 months working experience in an architectural firm; CPA 2.7 to 2.99 requires 12 months; CPA 2.5 to 2.69 requires 24 months; CPA 2.3 to 2.49 requires 36 months. International candidates must obtain LAM Part 1 certificate before applying.",
+      note: t(
+        "UTM official Master of Architecture entry requirement: CPA 3.0 to 4.0 requires 6 months architectural-firm experience; CPA 2.7 to 2.99 requires 12 months; CPA 2.5 to 2.69 requires 24 months; CPA 2.3 to 2.49 requires 36 months. International candidates must obtain LAM Part 1 certificate before applying.",
+        "UTM 官方建筑学硕士入学要求：建筑科学本科/建筑学学位背景；CPA 3.0 至 4.0 需 6 个月建筑事务所经验，CPA 2.7 至 2.99 需 12 个月，CPA 2.5 至 2.69 需 24 个月，CPA 2.3 至 2.49 需 36 个月。国际申请人申请前必须取得 LAM Part 1 证书。",
+        "UTM 官方建築學碩士入學要求：建築科學本科/建築學學位背景；CPA 3.0 至 4.0 需 6 個月建築事務所經驗，CPA 2.7 至 2.99 需 12 個月，CPA 2.5 至 2.69 需 24 個月，CPA 2.3 至 2.49 需 36 個月。國際申請人申請前必須取得 LAM Part 1 證書。",
+        "Syarat kemasukan rasmi Sarjana Seni Bina UTM: CPA 3.0 hingga 4.0 memerlukan 6 bulan pengalaman firma seni bina; CPA 2.7 hingga 2.99 memerlukan 12 bulan; CPA 2.5 hingga 2.69 memerlukan 24 bulan; CPA 2.3 hingga 2.49 memerlukan 36 bulan. Calon antarabangsa mesti memperoleh sijil LAM Part 1 sebelum memohon."
+      )
+    };
+  }
+  if (candidate.studyMode === "research" || candidate.studyMode === "mixed") {
+    return {
+      gpa: 2.75,
+      sourceUrl: utmInternationalPostgraduateEntryRequirementUrl,
+      officialText:
+        "UTM official entry requirement for Master by Mixed-Mode and Research programme: CPA Scale of 4 at 2.75 or higher requires no working experience; 2.50 < CPA < 2.75 is subject to rigorous internal assessment; CPA below 2.50 requires 5 years working experience in the related field.",
+      note: t(
+        "UTM official entry requirement for Master by Mixed-Mode and Research programme: CPA 2.75/4.00 or higher requires no working experience; 2.50 < CPA < 2.75 is subject to rigorous internal assessment; CPA below 2.50 requires 5 years related working experience.",
+        "UTM 官方混合模式/研究型硕士入学要求：CPA 2.75/4.00 及以上无需工作经验；2.50 < CPA < 2.75 需经过严格内部评估；CPA 低于 2.50 需 5 年相关工作经验。",
+        "UTM 官方混合模式/研究型碩士入學要求：CPA 2.75/4.00 及以上無需工作經驗；2.50 < CPA < 2.75 需經過嚴格內部評估；CPA 低於 2.50 需 5 年相關工作經驗。",
+        "Syarat kemasukan rasmi UTM untuk sarjana mod campuran dan penyelidikan: CPA 2.75/4.00 atau lebih tinggi tidak memerlukan pengalaman kerja; 2.50 < CPA < 2.75 tertakluk kepada penilaian dalaman yang ketat; CPA di bawah 2.50 memerlukan 5 tahun pengalaman kerja berkaitan."
+      )
+    };
+  }
+  return {
+    gpa: 2.5,
+    sourceUrl: utmInternationalPostgraduateEntryRequirementUrl,
+    officialText:
+      "UTM official entry requirement for Master by Coursework programme: CPA Scale of 4 at 2.50 or higher requires no working experience; CPA below 2.50 requires 5 years working experience in the related field.",
+    note: t(
+      "UTM official entry requirement for Master by Coursework programme: CPA 2.50/4.00 or higher requires no working experience; CPA below 2.50 requires 5 years related working experience.",
+      "UTM 官方授课型硕士入学要求：CPA 2.50/4.00 及以上无需工作经验；CPA 低于 2.50 需 5 年相关工作经验。",
+      "UTM 官方授課型碩士入學要求：CPA 2.50/4.00 及以上無需工作經驗；CPA 低於 2.50 需 5 年相關工作經驗。",
+      "Syarat kemasukan rasmi UTM untuk sarjana kerja kursus: CPA 2.50/4.00 atau lebih tinggi tidak memerlukan pengalaman kerja; CPA di bawah 2.50 memerlukan 5 tahun pengalaman kerja berkaitan."
+    )
+  };
+}
+
 function feePresentation(candidate: UTMMasterCandidateRecord): {
   amount: number | null;
   currency: TuitionCurrency;
@@ -563,6 +639,7 @@ export function validateUtmMasterCandidate(dataset: UTMMasterCandidateDataset) {
 export function buildUtmMasterProgramRows(dataset: UTMMasterCandidateDataset): Array<DeepPartial<ProgramEntity>> {
   return dataset.programmes.map((candidate) => {
     const fee = feePresentation(candidate);
+    const academicRequirement = academicRequirementPresentation(candidate);
     const faculty = localizedFaculty(candidate.facultyEn);
     const sourceStatus: OfficialSourceStatus = "official-verified";
     const publicDisplayStatus: PublicDisplayStatus = "ready";
@@ -599,17 +676,12 @@ export function buildUtmMasterProgramRows(dataset: UTMMasterCandidateDataset): A
       languageRequirement: { ielts: 6, toefl: null, pte: null, muet: null },
       officialLanguageRequirement: normalizeText(candidate.languageRequirement.summary),
       requirement: {
-        gpa: 0,
+        gpa: academicRequirement.gpa,
         gaokaoRequired: false,
         huikaoRequired: false,
-        note: t(
-          candidate.academicRequirement.summary,
-          "以 UTM 官方硕士入学要求为准：申请人需具备认可本科荣誉学位或参议院认可的同等资格与经验。",
-          "以 UTM 官方碩士入學要求為準：申請人需具備認可本科榮譽學位或參議院認可的同等資格與經驗。",
-          candidate.academicRequirement.summary
-        )
+        note: academicRequirement.note
       },
-      officialAcademicRequirement: normalizeText(candidate.academicRequirement.summary),
+      officialAcademicRequirement: normalizeText(academicRequirement.officialText),
       chinaStudentRequirement: "Chinese applicants must follow UTM international postgraduate academic, English, visa and registration document rules; final equivalency is assessed by UTM.",
       specialRequirementsNote: noScalarTotal
         ? "Fee source is retained exactly as official evidence, but no single total programme fee is displayed because UTM does not publish one unique scalar total for this row."
@@ -631,7 +703,7 @@ export function buildUtmMasterProgramRows(dataset: UTMMasterCandidateDataset): A
       ),
       officialAccreditationNote: "No programme-level accreditation claim is made without a dedicated official source.",
       officialSourceUrl: candidate.officialSourceUrl,
-      officialEntryRequirementSourceUrl: candidate.academicRequirement.sourceUrl,
+      officialEntryRequirementSourceUrl: academicRequirement.sourceUrl,
       officialAccreditationSourceUrl: candidate.officialSourceUrl,
       sourceUrls: sourceLinks(candidate),
       officialVerifiedAt: verifiedAt,
@@ -665,6 +737,7 @@ export function summarizeUtmMasterImport(dataset: UTMMasterCandidateDataset, row
     calculatedFromOfficialRateRows: rows.filter((row) => row.officialFeeAuditStatus === "calculated-from-official-rate").length,
     officialRateOnlyRows: rows.filter((row) => row.officialFeeAuditStatus === "official-rate-verified").length,
     conflictFeeRows: rows.filter((row) => row.officialFeeAuditStatus === "not-published").length,
+    academicRequirementGpaRows: rows.filter((row) => Number(row.requirement?.gpa || 0) > 0).length,
     publicDisplayStatusCounts: countBy(rows, (row) => String(row.publicDisplayStatus)),
     feeAuditStatusCounts: countBy(rows, (row) => String(row.officialFeeAuditStatus)),
     modes: countBy(rows, (row) => String(row.studyMode))
@@ -681,6 +754,7 @@ function verifyUtmMasterImportedRecordSet(rows: ProgramEntity[], legacyMasterPub
   const officialRateOnlyRows = rows.filter((row) => row.officialFeeAuditStatus === "official-rate-verified" && row.officialTuitionMYR == null);
   const conflictFeeRows = rows.filter((row) => row.officialFeeAuditStatus === "not-published" && row.officialTuitionMYR == null);
   const noScalarTotalRows = rows.filter((row) => row.officialTuitionMYR == null && row.tuitionAmount == null).length;
+  const academicRequirementGpaRows = rows.filter((row) => Number(row.requirement?.gpa || 0) > 0).length;
   const languageRows = rows.filter((row) => Number(row.languageRequirement?.ielts || 0) >= 6).length;
   const sourceLinkedRows = rows.filter((row) => (row.sourceUrls || []).length >= 5).length;
   if (
@@ -692,12 +766,13 @@ function verifyUtmMasterImportedRecordSet(rows: ProgramEntity[], legacyMasterPub
     officialRateOnlyRows.length !== 0 ||
     conflictFeeRows.length !== 7 ||
     noScalarTotalRows !== 7 ||
+    academicRequirementGpaRows !== expectedRows ||
     languageRows !== expectedRows ||
     sourceLinkedRows !== expectedRows ||
     legacyMasterPublicRows !== 0
   ) {
     throw new Error(
-      `UTM master import verification failed: expected=${expectedRows}, actual=${rows.length}, ready=${readyRows.length}, published=${publishedRows.length}, officialTotal=${officialTotalFeeRows.length}, calculated=${calculatedFromOfficialRateRows.length}, rateOnly=${officialRateOnlyRows.length}, conflict=${conflictFeeRows.length}, noScalarTotal=${noScalarTotalRows}, language=${languageRows}, sourceLinks=${sourceLinkedRows}, legacyPublic=${legacyMasterPublicRows}.`
+      `UTM master import verification failed: expected=${expectedRows}, actual=${rows.length}, ready=${readyRows.length}, published=${publishedRows.length}, officialTotal=${officialTotalFeeRows.length}, calculated=${calculatedFromOfficialRateRows.length}, rateOnly=${officialRateOnlyRows.length}, conflict=${conflictFeeRows.length}, noScalarTotal=${noScalarTotalRows}, academicGpa=${academicRequirementGpaRows}, language=${languageRows}, sourceLinks=${sourceLinkedRows}, legacyPublic=${legacyMasterPublicRows}.`
     );
   }
   return {
@@ -710,6 +785,7 @@ function verifyUtmMasterImportedRecordSet(rows: ProgramEntity[], legacyMasterPub
     officialRateOnlyRows: officialRateOnlyRows.length,
     conflictFeeRows: conflictFeeRows.length,
     noScalarTotalRows,
+    academicRequirementGpaRows,
     languageRows,
     sourceLinkedRows,
     publicDisplayStatusCounts: countBy(rows, (row) => row.publicDisplayStatus),

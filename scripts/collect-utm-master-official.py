@@ -471,6 +471,75 @@ def fee_for(programme: dict[str, Any]) -> dict[str, Any]:
     }
 
 
+def academic_requirement_for(programme: dict[str, Any]) -> dict[str, Any]:
+    name = programme["nameEnOfficial"].lower()
+    mode = programme["modeCode"]
+    if mode == "odl":
+        summary = (
+            "UTM ODL official admission requirement: a recognised Bachelor's Degree with good honours "
+            "with minimum CGPA 2.5/4.0 or equivalent. International applicants must also satisfy "
+            "academic admission and English language proficiency requirements."
+        )
+        return {
+            "status": "official-odl-rule",
+            "sourceUrl": GENERAL_SOURCES["odl-admission"],
+            "minimumGpa": 2.5,
+            "summary": summary,
+            "sourceText": summary,
+        }
+    if "master of business administration" in name:
+        summary = (
+            "UTM official MBA entry requirement: CPA 3.50 and above requires no working experience; "
+            "CPA 3.00 to 3.49 requires 2 years working experience in the related field; "
+            "CPA 2.00 to 2.99 requires 5 years working experience in the related field."
+        )
+        return {
+            "status": "official-mba-rule",
+            "sourceUrl": GENERAL_SOURCES["int-pg-entry-requirements"],
+            "minimumGpa": 3.5,
+            "summary": summary,
+            "sourceText": summary,
+        }
+    if name == "master of architecture":
+        summary = (
+            "UTM official Master of Architecture entry requirement: Bachelor of Science in Architecture/Degree "
+            "in Architecture with CPA 3.0 to 4.0 requires 6 months working experience in an architectural firm; "
+            "CPA 2.7 to 2.99 requires 12 months; CPA 2.5 to 2.69 requires 24 months; CPA 2.3 to 2.49 requires "
+            "36 months. International candidates must obtain LAM Part 1 certificate before applying."
+        )
+        return {
+            "status": "official-architecture-rule",
+            "sourceUrl": GENERAL_SOURCES["int-pg-entry-requirements"],
+            "minimumGpa": 2.3,
+            "summary": summary,
+            "sourceText": summary,
+        }
+    if mode in {"mixed", "research"}:
+        summary = (
+            "UTM official entry requirement for Master by Mixed-Mode and Research programme: CPA Scale of 4 "
+            "at 2.75 or higher requires no working experience; 2.50 < CPA < 2.75 is subject to rigorous "
+            "internal assessment; CPA below 2.50 requires 5 years working experience in the related field."
+        )
+        return {
+            "status": "official-mixed-research-rule",
+            "sourceUrl": GENERAL_SOURCES["int-pg-entry-requirements"],
+            "minimumGpa": 2.75,
+            "summary": summary,
+            "sourceText": summary,
+        }
+    summary = (
+        "UTM official entry requirement for Master by Coursework programme: CPA Scale of 4 at 2.50 or higher "
+        "requires no working experience; CPA below 2.50 requires 5 years working experience in the related field."
+    )
+    return {
+        "status": "official-coursework-rule",
+        "sourceUrl": GENERAL_SOURCES["int-pg-entry-requirements"],
+        "minimumGpa": 2.5,
+        "summary": summary,
+        "sourceText": summary,
+    }
+
+
 def build_candidate_records(parsed: list[dict[str, Any]]) -> list[dict[str, Any]]:
     candidates = []
     seen: dict[str, int] = {}
@@ -480,6 +549,7 @@ def build_candidate_records(parsed: list[dict[str, Any]]) -> list[dict[str, Any]
         seen[base_slug] = duplicate_index
         slug = base_slug if duplicate_index == 1 else f"{base_slug}-{duplicate_index}"
         fee = fee_for(item)
+        academic_requirement = academic_requirement_for(item)
         issues = []
         audit_fee_status = fee["status"]
         reviewed_decisions = []
@@ -522,9 +592,10 @@ def build_candidate_records(parsed: list[dict[str, Any]]) -> list[dict[str, Any]
             },
             "tuition": fee,
             "academicRequirement": {
-                "status": "general-rule",
-                "sourceUrl": GENERAL_SOURCES["int-pg-entry-requirements"],
-                "summary": "A Bachelor's Degree with good honours from UTM or another recognised institution, or an equivalent qualification and experience recognised by the Senate.",
+                "status": academic_requirement["status"],
+                "sourceUrl": academic_requirement["sourceUrl"],
+                "minimumGpa": academic_requirement["minimumGpa"],
+                "summary": academic_requirement["summary"],
             },
             "languageRequirement": {
                 "status": "general-rule",
@@ -548,7 +619,7 @@ def build_candidate_records(parsed: list[dict[str, Any]]) -> list[dict[str, Any]
                 "facultyProgrammeList": item["programmeSourceUrl"],
                 "internationalPostgraduate": GENERAL_SOURCES["international-postgraduate-study"],
                 "fees": fee["sourceUrl"],
-                "entryRequirements": GENERAL_SOURCES["int-pg-entry-requirements"],
+                "entryRequirements": academic_requirement["sourceUrl"],
                 "englishRequirements": GENERAL_SOURCES["english-language-requirements"],
                 "intake": GENERAL_SOURCES["faqs"],
                 "applicationDocuments": GENERAL_SOURCES["visa-international-registration"],
@@ -588,9 +659,9 @@ def build_candidate_records(parsed: list[dict[str, Any]]) -> list[dict[str, Any]
                 },
                 {
                     "field": "academicRequirement",
-                    "sourceId": "int-pg-entry-requirements",
-                    "sourceUrl": GENERAL_SOURCES["int-pg-entry-requirements"],
-                    "sourceText": "A Bachelor's Degree with good honours from UTM or another recognised institution, or an equivalent qualification and experience recognised by the Senate.",
+                    "sourceId": "odl-admission" if item["modeCode"] == "odl" else "int-pg-entry-requirements",
+                    "sourceUrl": academic_requirement["sourceUrl"],
+                    "sourceText": academic_requirement["sourceText"],
                     "retrievedAt": CURRENT_AS_OF,
                     "confidence": 1,
                 },
@@ -601,7 +672,7 @@ def build_candidate_records(parsed: list[dict[str, Any]]) -> list[dict[str, Any]
                 "mode": "programme-list",
                 "internationalEligibility": "international-postgraduate-list",
                 "fee": fee["status"],
-                "academicRequirement": "general-rule",
+                "academicRequirement": academic_requirement["status"],
                 "languageRequirement": "general-rule",
                 "intake": "general-rule",
                 "applicationDocuments": "general-rule",

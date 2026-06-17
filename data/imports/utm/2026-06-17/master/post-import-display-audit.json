@@ -10,7 +10,7 @@
   "candidateDataset": "data/imports/utm/2026-06-17/master/candidate-dataset.json",
   "controlledImport": {
     "command": "npm --workspace @studymy/api run import:utm:master -- --confirm-import",
-    "backupPath": "apps/api/tmp/backups/utm-master-before-2026-06-17T11-37-09-254Z.json",
+    "backupPath": "apps/api/tmp/backups/utm-master-before-2026-06-17T11-56-32-883Z.json",
     "transactionResult": "passed",
     "cacheCleared": false
   },
@@ -36,6 +36,7 @@
     "officialRateOnlyRows": 0,
     "conflictFeeRows": 7,
     "noScalarTotalRows": 7,
+    "academicRequirementGpaRows": 153,
     "languageRows": 153,
     "sourceLinkedRows": 153,
     "feeAuditStatusCounts": {
@@ -164,6 +165,67 @@
       "displayDecision": "Specific official variants are shown, but no single StudyMY total is selected because the official source presents more than one applicable amount."
     }
   ],
+  "academicRequirementDisplayPolicy": {
+    "result": "passed",
+    "checkedMasterRows": 153,
+    "structuredGpaRows": 153,
+    "genericZeroGpaRows": 0,
+    "officialSources": [
+      {
+        "role": "general international postgraduate entry requirement",
+        "url": "https://admission.utm.my/int-pg-entry-requirements/",
+        "governedRows": "coursework, mixed-mode, research, MBA and Master of Architecture rows"
+      },
+      {
+        "role": "ODL admission requirement",
+        "url": "https://admission.utm.my/odl/",
+        "governedRows": "Open and Distance Learning rows"
+      }
+    ],
+    "publicDisplayRules": [
+      "Coursework master rows display CPA 2.50/4.00 as the structured GPA gate and retain the official below-2.50 working-experience route in the academic requirement note.",
+      "Mixed-mode and research master rows display CPA 2.75/4.00 as the structured GPA gate and retain the official 2.50 < CPA < 2.75 internal-assessment route plus below-2.50 working-experience route.",
+      "ODL master rows display minimum CGPA 2.5/4.0 from the ODL official admission page.",
+      "MBA and Master of Architecture rows retain their official special GPA/CPA and working-experience partitions instead of the generic master rule."
+    ],
+    "sampleRows": [
+      {
+        "code": "UTM-M-107",
+        "nameEnOfficial": "Master in Data Science",
+        "requirementGpa": 2.5,
+        "officialEntryRequirementSourceUrl": "https://admission.utm.my/int-pg-entry-requirements/",
+        "displayEvidence": "UTM official coursework master rule: CPA Scale of 4 at 2.50 or higher requires no working experience; CPA below 2.50 requires 5 years related working experience."
+      },
+      {
+        "code": "UTM-M-113",
+        "nameEnOfficial": "Master of Philosophy Field of Research : Software Engineering",
+        "requirementGpa": 2.75,
+        "officialEntryRequirementSourceUrl": "https://admission.utm.my/int-pg-entry-requirements/",
+        "displayEvidence": "UTM official mixed-mode/research master rule: CPA Scale of 4 at 2.75 or higher requires no working experience; 2.50 < CPA < 2.75 is subject to rigorous internal assessment."
+      },
+      {
+        "code": "UTM-M-129",
+        "nameEnOfficial": "Master of Business Administration",
+        "requirementGpa": 3.5,
+        "officialEntryRequirementSourceUrl": "https://admission.utm.my/int-pg-entry-requirements/",
+        "displayEvidence": "UTM official MBA rule: CPA 3.50 and above no working experience; CPA 3.00 to 3.49 requires 2 years; CPA 2.00 to 2.99 requires 5 years."
+      },
+      {
+        "code": "UTM-M-131",
+        "nameEnOfficial": "Master of Business Administration",
+        "requirementGpa": 2.5,
+        "officialEntryRequirementSourceUrl": "https://admission.utm.my/odl/",
+        "displayEvidence": "UTM ODL official admission rule: recognised Bachelor's Degree with good honours with minimum CGPA 2.5/4.0 or equivalent."
+      },
+      {
+        "code": "UTM-M-095",
+        "nameEnOfficial": "Master of Architecture",
+        "requirementGpa": 2.3,
+        "officialEntryRequirementSourceUrl": "https://admission.utm.my/int-pg-entry-requirements/",
+        "displayEvidence": "UTM official Master of Architecture rule keeps CPA 3.0-4.0, 2.7-2.99, 2.5-2.69 and 2.3-2.49 working-experience partitions plus LAM Part 1 requirement."
+      }
+    ]
+  },
   "verificationCommands": [
     "python3 -m py_compile scripts/collect-utm-master-official.py",
     "npm --workspace @studymy/api run import:utm:master",
