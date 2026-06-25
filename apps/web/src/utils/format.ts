@@ -1035,13 +1035,46 @@ function formatIelts(language?: LanguageRequirement | null): string {
   return ielts ? `IELTS ${ielts}+` : "";
 }
 
+function formatIeltsEquivalentRequirement(score: number, locale?: SupportedLocale): string {
+  const suffix = {
+    en: " equivalent",
+    ms: " setara",
+    "zh-CN": "（等效）",
+    "zh-TW": "（等效）"
+  } satisfies Record<SupportedLocale, string>;
+  return `IELTS ${score.toFixed(1)}+${suffix[normalizeLocale(locale)]}`;
+}
+
+function languageEquivalentEvidenceText(officialText: string): string {
+  const cleaned = cleanDisplayText(officialText, "", "en");
+  return `${cleaned} ${String(officialText || "")}`.replace(/\s+/g, " ").trim();
+}
+
+function formatIeltsEquivalentFromLanguage(officialText: string, language?: LanguageRequirement | null, locale?: SupportedLocale): string {
+  const source = languageEquivalentEvidenceText(officialText);
+  const cefrMatch = source.match(/\bCEFR\b\s*(?:Min\.\s*)?\(?\s*((?:Low|Mid|High)?\s*B2)\s*\)?/i);
+  if (cefrMatch?.[1]) {
+    const cefr = cefrMatch[1];
+    if (/High/i.test(cefr)) return formatIeltsEquivalentRequirement(6.5, locale);
+    if (/Mid/i.test(cefr)) return formatIeltsEquivalentRequirement(6.0, locale);
+    return formatIeltsEquivalentRequirement(5.5, locale);
+  }
+
+  const muetMatch = source.match(/MUET(?:\s+overall)?\s*(?:Min\.\s*)?(?:\s+Band|\s+band)?\s*(\d+(?:\.\d+)?)|Band\s*(\d+(?:\.\d+)?)\s+(?:in|for)\s+MUET/i);
+  const muet = Number(muetMatch?.[1] || muetMatch?.[2] || language?.muet);
+  if (muet === 3 && /equivalent|同等|CEFR|Low\s*B2/i.test(source)) {
+    return formatIeltsEquivalentRequirement(5.5, locale);
+  }
+  return "";
+}
+
 function formatAlternativeLanguageScores(officialText: string, language?: LanguageRequirement | null): string {
   const items: string[] = [];
   const add = (item: string) => {
     if (item && !items.includes(item)) items.push(item);
   };
 
-  const source = cleanDisplayText(officialText, "", "en").replace(/\s+/g, " ").trim();
+  const source = languageEquivalentEvidenceText(officialText);
   const toefl = finitePositiveNumber(language?.toefl);
   if (toefl) add(`TOEFL iBT ${toefl}+`);
 
@@ -1070,6 +1103,8 @@ export function formatProgramLanguage(program: ProgramDisplayFields, fallback?: 
   if (match) return `IELTS ${match[1]}+`;
   const compactRequirement = formatIelts(program.languageRequirement);
   if (compactRequirement) return compactRequirement;
+  const ieltsEquivalent = formatIeltsEquivalentFromLanguage(rawOfficialText || officialText, program.languageRequirement, locale);
+  if (ieltsEquivalent) return ieltsEquivalent;
   const alternativeRequirement = formatAlternativeLanguageScores(rawOfficialText || officialText, program.languageRequirement);
   if (alternativeRequirement) return alternativeRequirement;
   if (officialText) return normalizeAcademicText(officialText, actualFallback, locale);

@@ -129,11 +129,11 @@ describe("web display format helpers", () => {
     assert.equal(formatProgramLanguage(program({
       officialLanguageRequirement: "MUET Band 3; CEFR Low B2 或同等水平。",
       languageRequirement: { ielts: 0, muet: 3 }
-    }), "fallback", "zh-CN"), "MUET 3+ / CEFR Low B2");
+    }), "fallback", "zh-CN"), "IELTS 5.5+（等效）");
     assert.equal(formatProgramLanguage(program({
       officialLanguageRequirement: "官方标注 MUET Band 3 或同等水平。",
       languageRequirement: { ielts: 0, muet: 3 }
-    }), "fallback", "zh-CN"), "MUET 3+");
+    }), "fallback", "zh-CN"), "IELTS 5.5+（等效）");
   });
 
   test("shows verified official source text instead of discarding untranslated evidence", () => {
