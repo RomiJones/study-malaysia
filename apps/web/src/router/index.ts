@@ -11,6 +11,7 @@ export const router = createRouter({
   history: createWebHistory(),
   routes: [
     { path: "/", component: HomePage },
+    { path: "/universities", component: HomePage },
     { path: "/universities/:slug", component: UniversityPage, props: true },
     { path: "/programs/:slug", component: ProgramPage, props: true },
     { path: "/favorites", component: FavoritesPage },
