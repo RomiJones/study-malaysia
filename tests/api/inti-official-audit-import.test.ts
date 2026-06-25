@@ -21,6 +21,26 @@ function isEnglishProgrammeTitle(value: unknown) {
   return /\b(Bachelor|Master|Doctor|Diploma|Foundation|Certificate|Programme|Program|Degree|PhD|MBA|MSc|BSc|BA|Honours|Engineering|Management|Science|Arts|Medicine|Pharmacy|Nursing|Accounting|Finance|Education|Technology|Business)\b/i.test(String(value || ""));
 }
 
+function normalizeEnglishComparable(value: unknown) {
+  return String(value || "")
+    .normalize("NFKC")
+    .toLowerCase()
+    .replace(/&/g, "and")
+    .replace(/[^a-z0-9]+/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+function includesOfficialEnglishName(value: unknown, officialEnglishName: unknown) {
+  const normalizedValue = normalizeEnglishComparable(value);
+  const normalizedOfficialName = normalizeEnglishComparable(officialEnglishName);
+  return Boolean(normalizedOfficialName && normalizedValue.includes(normalizedOfficialName));
+}
+
+function hasFeeRange(value: unknown) {
+  return /\b(?:USD|CNY|MYR|RM)\s*[\d,]+(?:\.\d+)?\s*[-–—]\s*(?:USD|CNY|MYR|RM)?\s*[\d,]+(?:\.\d+)?/i.test(String(value || ""));
+}
+
 test("INTI official audit import publishes official approximate fees as public programme rows", () => {
   assert.deepEqual(validateIntiOfficialAuditDataset(source, sourceRegistry), []);
 
@@ -55,6 +75,8 @@ test("INTI official audit import publishes official approximate fees as public p
   assert.ok(rows.every((row) => Number(row.annualTuitionCny) > 0));
   assert.ok(rows.every((row) => !/excludes 6% SST|exclude 6% SST/i.test(String(row.tuitionDisplay))));
   assert.ok(rows.every((row) => !/excludes 6% SST|exclude 6% SST/i.test(String(row.listTuitionText))));
+  assert.ok(rows.every((row) => !hasFeeRange(row.tuitionDisplay)));
+  assert.ok(rows.every((row) => !hasFeeRange(row.listTuitionText)));
   assert.ok(rows.every((row) => /official approximate fee|Multiple official approximate fee options/i.test(String(row.officialTuitionNote))));
   assert.ok(rows.every((row) => /exclude 6% SST/i.test(String(row.officialTuitionNote))));
   assert.ok(rows.every((row) => String(row.officialSourceUrl || "").includes("newinti.edu.my")));
@@ -63,7 +85,9 @@ test("INTI official audit import publishes official approximate fees as public p
   assert.ok(rows.every((row) => row.code && String(row.code).startsWith("INTI-")));
   assert.ok(rows.every((row) => Number(row.durationYears) > 0));
   assert.ok(rows.every((row) => hasCjk((row.name as any)?.["zh-CN"])));
-  assert.ok(rows.every((row) => !isEnglishProgrammeTitle((row.name as any)?.["zh-CN"])));
+  assert.ok(rows.every((row) => hasCjk((row.name as any)?.["zh-TW"])));
+  assert.ok(rows.every((row) => includesOfficialEnglishName((row.name as any)?.["zh-CN"], row.nameEnOfficial)));
+  assert.ok(rows.every((row) => includesOfficialEnglishName((row.name as any)?.["zh-TW"], row.nameEnOfficial)));
   assert.ok(rows.every((row) => hasCjk((row.faculty as any)?.["zh-CN"])));
   assert.ok(rows.every((row) => !isEnglishProgrammeTitle((row.faculty as any)?.["zh-CN"])));
   assert.ok(rows.every((row) => !hasCjk((row.name as any)?.en)));
@@ -73,7 +97,7 @@ test("INTI official audit import publishes official approximate fees as public p
 
   const scienceTransfer = rows.find((row) => row.code === "INTI-B-003");
   assert.equal(scienceTransfer?.nameEnOfficial, "Australian Degree Transfer Programme (Science)");
-  assert.equal((scienceTransfer?.name as any)?.["zh-CN"], "澳大利亚学位转学分课程（理科）");
+  assert.equal((scienceTransfer?.name as any)?.["zh-CN"], "澳大利亚学位转学分课程（理科）（Australian Degree Transfer Programme (Science)）");
   assert.equal(Number(scienceTransfer?.durationYears), 3);
   assert.match(String(scienceTransfer?.durationOfficial), /years?|semesters?/i);
 
@@ -89,8 +113,8 @@ test("INTI official audit import publishes official approximate fees as public p
   const actuarialScience = rows.find((row) => row.code === "INTI-B-001");
   assert.equal(actuarialScience?.officialFeeAuditStatus, "official-non-scalar");
   assert.equal(actuarialScience?.tuitionAmount, null);
-  assert.equal(actuarialScience?.tuitionDisplay, "Approx. RM 46,012 - 48,820");
-  assert.equal((actuarialScience?.name as any)?.["zh-CN"], "精算科学课程（美国大学转学分课程）");
+  assert.equal(actuarialScience?.tuitionDisplay, "Official fee variants verified");
+  assert.equal((actuarialScience?.name as any)?.["zh-CN"], "精算科学课程（美国大学转学分课程）（Actuarial Science Program (American University Program)）");
   assert.equal((actuarialScience?.faculty as any)?.["zh-CN"], "美国大学课程");
 });
 

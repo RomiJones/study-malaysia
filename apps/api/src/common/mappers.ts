@@ -136,7 +136,7 @@ export function mapProgram(entity: ProgramEntity): ProgramListItem {
   const officialFeeAuditStatus: FeeAuditStatus = entity.officialFeeAuditStatus || "pending-review";
   const tuitionCurrency: TuitionCurrency = entity.tuitionCurrency || (entity.officialTuitionMYR ? "MYR" : "CNY");
   const tuitionAmount = entity.tuitionAmount == null ? null : Number(entity.tuitionAmount);
-  const hasNoOfficialTotal = ["official-rate-verified", "not-published"].includes(officialFeeAuditStatus);
+  const hasNoOfficialTotal = ["official-rate-verified", "official-non-scalar", "not-published"].includes(officialFeeAuditStatus);
   const tuitionDisplay =
     entity.tuitionDisplay ||
     entity.listTuitionText ||

@@ -325,7 +325,7 @@ export function buildIntiOfficialAuditRows(
     const ordinal = index + 1;
     const fee = feePresentation(candidate);
     const reviewed = reviewedLocalizations.get(candidate.nameEnOfficial);
-    const name = localizedValue(candidate.nameEnOfficial, candidate.name, reviewed?.name);
+    const name = localizedProgrammeName(candidate.nameEnOfficial, candidate.name, reviewed?.name);
     const faculty = localizedValue(candidate.facultyEn, candidate.faculty, reviewed?.facultyZh);
     const sourceStatus: OfficialSourceStatus = "official-verified";
     const publicDisplayStatus: PublicDisplayStatus = "ready";
@@ -568,6 +568,7 @@ function verifyIntiImportedRecordSet(
 ): IntiImportVerification {
   const summary = summarizeIntiOfficialAuditImport(rows);
   const languageIsolationIssues = intiLanguageIsolationIssues(rows);
+  const feeDisplayIssues = intiFeeDisplayIssues(rows);
   const publicLeakageRows = rows.filter((row) => row.isPublished && row.publicDisplayStatus === "ready").length;
   const before = options.beforeUniversityPublicState || null;
   const after = publicVisibilityState(university, rows);
@@ -590,6 +591,7 @@ function verifyIntiImportedRecordSet(
     summary.rowsWithOfficialSourceUrl !== 107 ||
     summary.rowsWithDurationYears !== 107 ||
     languageIsolationIssues.length > 0 ||
+    feeDisplayIssues.length > 0 ||
     publicLeakageRows !== 107 ||
     !existingPublicInstitutionPreserved
   ) {
@@ -600,6 +602,7 @@ function verifyIntiImportedRecordSet(
         before,
         after,
         languageIsolationIssues: languageIsolationIssues.slice(0, 12),
+        feeDisplayIssues: feeDisplayIssues.slice(0, 12),
         existingPublicInstitutionPreserved,
         universityStatus: university.publicDisplayStatus,
         universityPublished: university.isPublished
@@ -627,7 +630,7 @@ function intiLanguageIsolationIssues(rows: Array<DeepPartial<ProgramEntity>>) {
     const faculty = row.faculty as LocalizedText | undefined;
     const slug = row.slug;
     for (const locale of ["zh-CN", "zh-TW"] as const) {
-      if (!hasChinese(name?.[locale]) || looksLikeEnglishProgrammeTitle(name?.[locale])) {
+      if (!hasChinese(name?.[locale]) || !includesOfficialEnglishName(name?.[locale], row.nameEnOfficial)) {
         issues.push({ slug, field: `name.${locale}`, value: name?.[locale] });
       }
       if (!hasChinese(faculty?.[locale]) || looksLikeEnglishProgrammeTitle(faculty?.[locale])) {
@@ -637,6 +640,20 @@ function intiLanguageIsolationIssues(rows: Array<DeepPartial<ProgramEntity>>) {
     for (const locale of ["en", "ms"] as const) {
       if (hasChinese(name?.[locale])) issues.push({ slug, field: `name.${locale}`, value: name?.[locale] });
       if (hasChinese(faculty?.[locale])) issues.push({ slug, field: `faculty.${locale}`, value: faculty?.[locale] });
+    }
+  }
+  return issues;
+}
+
+function intiFeeDisplayIssues(rows: Array<DeepPartial<ProgramEntity>>) {
+  const issues: Array<{ slug: unknown; field: string; value: unknown }> = [];
+  for (const row of rows) {
+    for (const field of ["tuitionDisplay", "listTuitionText"] as const) {
+      const value = row[field];
+      if (hasFeeRange(value)) issues.push({ slug: row.slug, field, value });
+    }
+    if (row.officialFeeAuditStatus === "official-non-scalar" && row.tuitionAmount != null) {
+      issues.push({ slug: row.slug, field: "tuitionAmount", value: row.tuitionAmount });
     }
   }
   return issues;
@@ -672,14 +689,11 @@ function feePresentation(candidate: IntiCandidateProgramme): {
     : Number(candidate.fee.approximateTuitionAmount || 0) > 0
       ? Number(candidate.fee.approximateTuitionAmount)
       : null;
-  const rangeDisplay = uniqueAmounts.length > 1
-    ? `Approx. RM ${uniqueAmounts[0].toLocaleString("en-US")} - ${uniqueAmounts[uniqueAmounts.length - 1].toLocaleString("en-US")}`
-    : "";
   const evidenceText = options.length
     ? options.map((option) => `${option.label}: ${option.internationalFeeText}`).join(" / ")
     : candidate.fee.approximateTuitionDisplay || "Approximate official fee";
   const display = normalizeText(
-    rangeDisplay ||
+    (nonScalar ? "Official fee variants verified" : "") ||
     candidate.fee.approximateTuitionDisplay ||
     (selectedAmount ? `Approx. RM ${selectedAmount.toLocaleString("en-US")}` : evidenceText || "Approximate official fee"),
     255
@@ -900,6 +914,15 @@ function loadIntiReviewedLocalizations(paths = DEFAULT_INTI_REVIEWED_AUDIT_PATHS
   return rows;
 }
 
+function localizedProgrammeName(en: string, existing?: LocalizedText, zhCNOverride?: string): LocalizedText {
+  const base = localizedValue(en, existing, zhCNOverride);
+  return {
+    ...base,
+    "zh-CN": bilingualProgrammeName(base["zh-CN"], en),
+    "zh-TW": bilingualProgrammeName(base["zh-TW"], en)
+  };
+}
+
 function localizedValue(en: string, existing?: LocalizedText, zhCNOverride?: string): LocalizedText {
   const zhCN = normalizeText(zhCNOverride || existing?.["zh-CN"] || "", 255);
   const existingZhTW = normalizeText(existing?.["zh-TW"] || "", 255);
@@ -910,6 +933,20 @@ function localizedValue(en: string, existing?: LocalizedText, zhCNOverride?: str
     "zh-CN": zhCN || en,
     "zh-TW": zhTW || zhCN || en
   };
+}
+
+function bilingualProgrammeName(localName: string, officialEnglishName: string) {
+  const local = normalizeText(localName, 255);
+  const official = normalizeText(officialEnglishName, 255);
+  if (!local) return official;
+  if (!official || includesOfficialEnglishName(local, official)) return local;
+  return normalizeText(`${local}（${official}）`, 255);
+}
+
+function includesOfficialEnglishName(value: unknown, officialEnglishName: unknown) {
+  const normalizedValue = normalizeEnglishComparable(value);
+  const normalizedOfficialName = normalizeEnglishComparable(officialEnglishName);
+  return Boolean(normalizedOfficialName && normalizedValue.includes(normalizedOfficialName));
 }
 
 function campusDisplay(value: string[] | string) {
@@ -951,6 +988,20 @@ function hasChinese(value: unknown) {
 
 function looksLikeEnglishProgrammeTitle(value: unknown) {
   return /\b(Bachelor|Master|Doctor|Diploma|Foundation|Certificate|Programme|Program|Degree|PhD|MBA|MSc|BSc|BA|Honours|Engineering|Management|Science|Arts|Medicine|Pharmacy|Nursing|Accounting|Finance|Education|Technology|Business)\b/i.test(String(value || ""));
+}
+
+function normalizeEnglishComparable(value: unknown) {
+  return String(value || "")
+    .normalize("NFKC")
+    .toLowerCase()
+    .replace(/&/g, "and")
+    .replace(/[^a-z0-9]+/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+function hasFeeRange(value: unknown) {
+  return /\b(?:USD|CNY|MYR|RM)\s*[\d,]+(?:\.\d+)?\s*[-–—]\s*(?:USD|CNY|MYR|RM)?\s*[\d,]+(?:\.\d+)?/i.test(String(value || ""));
 }
 
 function slugify(value: string) {

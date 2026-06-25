@@ -30,6 +30,7 @@ const localizedFormatText = {
     feeMatchedOfficial: "Officially verified",
     feeCalculatedOfficial: "Calculated from official rate and duration",
     feeRateVerified: "Official rate verified",
+    feeOfficialNonScalar: "Official fee variants verified",
     feeNotPublished: "Not published officially",
     feeSourceReview: "Fee source needs review",
     sourceOfficialVerified: "Official source verified",
@@ -51,6 +52,7 @@ const localizedFormatText = {
     feeMatchedOfficial: "Disahkan rasmi",
     feeCalculatedOfficial: "Dikira daripada kadar dan tempoh rasmi",
     feeRateVerified: "Kadar rasmi disahkan",
+    feeOfficialNonScalar: "Varian yuran rasmi disahkan",
     feeNotPublished: "Belum diterbitkan secara rasmi",
     feeSourceReview: "Sumber yuran perlu disemak",
     sourceOfficialVerified: "Sumber rasmi disahkan",
@@ -72,6 +74,7 @@ const localizedFormatText = {
     feeMatchedOfficial: "官方已核验",
     feeCalculatedOfficial: "按官方费率与学制计算",
     feeRateVerified: "官方费率已核验",
+    feeOfficialNonScalar: "官方非单一费用已核验",
     feeNotPublished: "官方未公布",
     feeSourceReview: "费用来源需复核",
     sourceOfficialVerified: "官方来源已核验",
@@ -93,6 +96,7 @@ const localizedFormatText = {
     feeMatchedOfficial: "官方已核驗",
     feeCalculatedOfficial: "按官方費率與學制計算",
     feeRateVerified: "官方費率已核驗",
+    feeOfficialNonScalar: "官方非單一費用已核驗",
     feeNotPublished: "官方未公布",
     feeSourceReview: "費用來源需複核",
     sourceOfficialVerified: "官方來源已核驗",
@@ -944,6 +948,7 @@ export function formatProgramTuition(program: ProgramDisplayFields, fallback?: s
     return formatText("feeRateVerified", locale);
   }
   if (program.officialFeeAuditStatus === "not-published") return formatText("feeNotPublished", locale);
+  if (program.officialFeeAuditStatus === "official-non-scalar") return formatText("feeOfficialNonScalar", locale);
 
   const officialMyr = finitePositiveNumber(program.officialTuitionMYR ?? program.tuitionInfo?.officialAmountMYR);
   if (officialMyr) return `RM ${formatCurrency(officialMyr)}`;
@@ -1131,6 +1136,7 @@ export function formatFeeAuditStatus(
   if (status === "matched-official") return formatText("feeMatchedOfficial", locale);
   if (status === "calculated-from-official-rate") return formatText("feeCalculatedOfficial", locale);
   if (status === "official-rate-verified") return formatText("feeRateVerified", locale);
+  if (status === "official-non-scalar") return formatText("feeOfficialNonScalar", locale);
   if (status === "not-published") return formatText("feeNotPublished", locale);
   if (status === "conflict" || status === "source-conflict") return formatText("feeSourceReview", locale);
   return officialConfirmationFallback(locale);
