@@ -1,0 +1,2518 @@
+{
+  "safe_to_import": false,
+  "import_approved_by": null,
+  "import_approved_at": null,
+  "auditMeta": {
+    "generatedBy": "study-collector+study-audit-validator-controlled-repair",
+    "generatedAt": "2026-06-25",
+    "targetUniversity": "University of Cyberjaya",
+    "targetUniversityShortName": "UoC",
+    "targetLevel": "master",
+    "officialDomain": "cyberjaya.edu.my; web.cyberjaya.edu.my",
+    "sourceRegistryConfirmedAt": "2026-06-25",
+    "programmeBaselineConfirmedAt": "2026-06-25",
+    "totalProgrammesBaseline": 16,
+    "totalProgrammesCollected": 16,
+    "readyCount": 16,
+    "needsReviewCount": 0,
+    "exceptionCount": 1,
+    "reviewedAt": "2026-06-25",
+    "reviewedBy": "study-audit-validator"
+  },
+  "designProtectionClearance": {
+    "projectCodeTouched": false,
+    "frontendTouched": false,
+    "importScriptsTouched": false,
+    "sourceDataTouched": false,
+    "note": "This audit artifact is standalone. It does not modify StudyMY code or runtime data by itself."
+  },
+  "deepCrawlSummary": {
+    "crawlDepth": "L1-L4 plus official 2026 postgraduate prospectus PDF",
+    "officialPagesChecked": [
+      "https://cyberjaya.edu.my/programmes?_by_level=masters",
+      "https://cyberjaya.edu.my/admission/fees/international-fees-structure",
+      "https://cyberjaya.edu.my/admission/online-application",
+      "https://web.cyberjaya.edu.my/wp-content/uploads/2026/05/FA-A5PG-Prospectus-4-MAY-2026.pdf",
+      "https://cyberjaya.edu.my/admission/international-admissions"
+    ],
+    "nonOfficialSourcesUsed": false,
+    "baselineNote": "UoC current Masters directory lists 14 master-level pages. Two officially supported ODL variants share detail/prospectus evidence but have separate official fee rows, so StudyMY canonical master-level public count is 16 including Pharm.D under UoC master-level directory.",
+    "feePolicy": "Use official International Fees Structure Total Payable Fees for entire programme duration; do not import fee-only top-up or unsupported ODL fee rows as standalone programmes."
+  },
+  "sourceRegistry": [
+    {
+      "id": "uoc-programme-directory",
+      "title": "UoC programme directory",
+      "url": "https://cyberjaya.edu.my/programmes?_by_level=masters",
+      "sourceType": "official-website",
+      "verifiedAt": "2026-06-25",
+      "status": "official-verified"
+    },
+    {
+      "id": "uoc-international-fees",
+      "title": "UoC International Fees Structure",
+      "url": "https://cyberjaya.edu.my/admission/fees/international-fees-structure",
+      "sourceType": "fee",
+      "verifiedAt": "2026-06-25",
+      "status": "official-verified"
+    },
+    {
+      "id": "uoc-online-application",
+      "title": "UoC Online Application",
+      "url": "https://cyberjaya.edu.my/admission/online-application",
+      "sourceType": "admission",
+      "verifiedAt": "2026-06-25",
+      "status": "official-verified"
+    },
+    {
+      "id": "uoc-pg-prospectus-2026",
+      "title": "UoC Postgraduate Prospectus 2026",
+      "url": "https://web.cyberjaya.edu.my/wp-content/uploads/2026/05/FA-A5PG-Prospectus-4-MAY-2026.pdf",
+      "sourceType": "profile",
+      "verifiedAt": "2026-06-25",
+      "status": "official-verified"
+    }
+  ],
+  "programmeBaseline": {
+    "canonicalCount": 16,
+    "readyCount": 16,
+    "needsReviewCount": 0,
+    "exceptionCount": 1,
+    "officialDirectoryUrl": "https://cyberjaya.edu.my/programmes?_by_level=masters",
+    "feeUrl": "https://cyberjaya.edu.my/admission/fees/international-fees-structure",
+    "note": "UoC current Masters directory lists 14 master-level pages. Two officially supported ODL variants share detail/prospectus evidence but have separate official fee rows, so StudyMY canonical master-level public count is 16 including Pharm.D under UoC master-level directory."
+  },
+  "programmes": [
+    {
+      "applicationDeadline": null,
+      "applicationDocs": [
+        "学生签证或 Student Pass 相关处理费用证明",
+        "白底护照尺寸照片",
+        "护照全页复印件且护照有效期需满足入学要求",
+        "经认证的学历证书和成绩单",
+        "EMGS 健康声明表",
+        "英语语言能力证明",
+        "非英文材料的英文翻译件",
+        "如适用，工作经验证明、研究计划、推荐信或资助证明等补充材料"
+      ],
+      "officialFeeSourceUrl": "https://cyberjaya.edu.my/admission/fees/international-fees-structure",
+      "officialVerifiedAt": "2026-06-25",
+      "creditHours": null,
+      "publicDisplayStatus": "ready",
+      "auditStatus": "official-verified-commercial-ready",
+      "_validationResult": "PASS",
+      "_validationIssues": [],
+      "_pendingIssues": [],
+      "nameEn": "Master in Business Administration (MBA) Dual Award with Federation University Australia",
+      "name": "工商管理硕士（与澳大利亚联邦大学双学位）",
+      "faculty": "Faculty of Business and Technology",
+      "facultyZh": "商业与科技学院",
+      "level": "master",
+      "duration": 1.5,
+      "tuitionMYR": 48800,
+      "tuitionNote": "国际学生 Total Payable Fees，官方费用页列为 MBA Dual Award with Federation University，费用为整个课程学制费用。",
+      "intake": [
+        3,
+        7,
+        10
+      ],
+      "language": {
+        "ielts": 6,
+        "toefl": null,
+        "pte": null,
+        "muet": null,
+        "otherRequirement": "IELTS 6.0 或同等英语能力证明；具体等效考试以 UoC 官方录取审核为准。",
+        "waiver": null
+      },
+      "languageNote": "2026 研究生手册 MBA 系列课程以 IELTS 6.0 或同等水平作为英语门槛；当前详情页用于确认项目身份和学制。",
+      "curriculum": [
+        "战略管理",
+        "人力资本管理",
+        "营销管理",
+        "管理财务与会计",
+        "管理经济学",
+        "管理信息系统",
+        "研究方法",
+        "电子商务分析",
+        "战略数字营销",
+        "数据驱动商业",
+        "商业研究项目"
+      ],
+      "curriculumNote": "课程按 UoC MBA 双学位专业页与 2026 研究生手册中文化整理。",
+      "careerProspects": [
+        "银行与金融管理岗位",
+        "业务发展经理",
+        "总经理",
+        "商业顾问",
+        "管理顾问",
+        "市场与销售管理岗位"
+      ],
+      "officialSourceUrl": "https://cyberjaya.edu.my/programme/master-of-business-administration-dual-award-with-federation-university",
+      "entryRequirement": {
+        "minGPA": null,
+        "gpaScale": null,
+        "gpaNote": "通常需相关学士学位；具体 CGPA、工作经验或同等资格由 UoC 录取审核。",
+        "degreeLevel": "学士学位或同等资格",
+        "degreeRelevance": null,
+        "workExperience": null
+      },
+      "studyMode": "on-campus",
+      "studyModeNote": "官方页面列明全日制 1-2 年、非全日制 2-4 年。",
+      "thesisRequired": false,
+      "thesisNote": "授课型/项目型硕士，含研究项目或商业研究项目。",
+      "interviewRequired": null,
+      "interviewNote": null,
+      "supervisorSystem": false,
+      "rawLanguage": "English competency for MBA cluster: IELTS 6.0 or equivalent.",
+      "rawEntry": "Bachelor degree or equivalent qualification; UoC evaluates programme-specific academic and professional requirements.",
+      "codeNote": "MBA Dual Award current programme page and PG prospectus confirm the programme identity.",
+      "fieldStatus": {
+        "applicationDeadline": {
+          "status": "official-unpublished",
+          "crawlLevel": "L4",
+          "sourceUrl": "https://cyberjaya.edu.my/admission/online-application",
+          "note": "UoC 在线申请页列出可申请专业，但未公开逐专业申请截止日期。"
+        },
+        "language": {
+          "status": "official-verified-programme-page-or-prospectus",
+          "crawlLevel": "L2-PDF",
+          "sourceUrl": "https://cyberjaya.edu.my/programme/master-of-business-administration-dual-award-with-federation-university",
+          "note": "2026 研究生手册 MBA 系列课程以 IELTS 6.0 或同等水平作为英语门槛；当前详情页用于确认项目身份和学制。"
+        },
+        "fee": {
+          "status": "matched-official-total-payable-fees",
+          "crawlLevel": "L1",
+          "sourceUrl": "https://cyberjaya.edu.my/admission/fees/international-fees-structure",
+          "note": "采用 UoC International Fees Structure 的 Total Payable Fees；页面说明费用为整个课程学制费用。"
+        },
+        "curriculum": {
+          "status": "official-source-localized-verified",
+          "crawlLevel": "L2-PDF",
+          "sourceUrl": "https://cyberjaya.edu.my/programme/master-of-business-administration-dual-award-with-federation-university",
+          "note": "课程、研究组成或专业方向依据官方专业页和 2026 研究生手册中文化整理，未使用第三方来源。"
+        },
+        "publicDisplayStatus": {
+          "status": "ready",
+          "crawlLevel": "V1-V4",
+          "sourceUrl": "https://cyberjaya.edu.my/programme/master-of-business-administration-dual-award-with-federation-university",
+          "note": "字段补缺验收通过；safe_to_import 仍保持 false，实际写库由受控导入器执行。"
+        }
+      },
+      "fieldEvidence": {
+        "officialProgrammePage": "https://cyberjaya.edu.my/programme/master-of-business-administration-dual-award-with-federation-university",
+        "officialFeePage": "https://cyberjaya.edu.my/admission/fees/international-fees-structure",
+        "officialApplicationPage": "https://cyberjaya.edu.my/admission/online-application",
+        "officialPostgraduateProspectus": "https://web.cyberjaya.edu.my/wp-content/uploads/2026/05/FA-A5PG-Prospectus-4-MAY-2026.pdf",
+        "officialProgrammeDirectory": "https://cyberjaya.edu.my/programmes?_by_level=masters",
+        "officialInternationalAdmissionsPage": "https://cyberjaya.edu.my/admission/international-admissions",
+        "rawLanguageText": "English competency for MBA cluster: IELTS 6.0 or equivalent.",
+        "rawCurriculumEn": [
+          "战略管理",
+          "人力资本管理",
+          "营销管理",
+          "管理财务与会计",
+          "管理经济学",
+          "管理信息系统",
+          "研究方法",
+          "电子商务分析",
+          "战略数字营销",
+          "数据驱动商业",
+          "商业研究项目"
+        ],
+        "rawCareerEn": [
+          "银行与金融管理岗位",
+          "业务发展经理",
+          "总经理",
+          "商业顾问",
+          "管理顾问",
+          "市场与销售管理岗位"
+        ],
+        "rawEntryTextSample": "Bachelor degree or equivalent qualification; UoC evaluates programme-specific academic and professional requirements.",
+        "accreditationOrApprovalNote": "MBA Dual Award current programme page and PG prospectus confirm the programme identity.",
+        "sourceUrls": [
+          "https://cyberjaya.edu.my/programme/master-of-business-administration-dual-award-with-federation-university",
+          "https://cyberjaya.edu.my/admission/fees/international-fees-structure",
+          "https://cyberjaya.edu.my/admission/online-application",
+          "https://web.cyberjaya.edu.my/wp-content/uploads/2026/05/FA-A5PG-Prospectus-4-MAY-2026.pdf"
+        ],
+        "evidenceNote": "fieldEvidence 保留官方英文事实和来源；公开字段已中文化且不使用第三方资料。"
+      }
+    },
+    {
+      "applicationDeadline": null,
+      "applicationDocs": [
+        "学生签证或 Student Pass 相关处理费用证明",
+        "白底护照尺寸照片",
+        "护照全页复印件且护照有效期需满足入学要求",
+        "经认证的学历证书和成绩单",
+        "EMGS 健康声明表",
+        "英语语言能力证明",
+        "非英文材料的英文翻译件",
+        "如适用，工作经验证明、研究计划、推荐信或资助证明等补充材料"
+      ],
+      "officialFeeSourceUrl": "https://cyberjaya.edu.my/admission/fees/international-fees-structure",
+      "officialVerifiedAt": "2026-06-25",
+      "creditHours": null,
+      "publicDisplayStatus": "ready",
+      "auditStatus": "official-verified-commercial-ready",
+      "_validationResult": "PASS",
+      "_validationIssues": [],
+      "_pendingIssues": [],
+      "nameEn": "Master in Islamic Finance",
+      "name": "伊斯兰金融硕士",
+      "faculty": "Faculty of Business and Technology",
+      "facultyZh": "商业与科技学院",
+      "level": "master",
+      "duration": 1.5,
+      "tuitionMYR": 36800,
+      "tuitionNote": "国际学生 Total Payable Fees，官方费用页列为 Master of Islamic Finance。",
+      "intake": [
+        3,
+        7,
+        10
+      ],
+      "language": {
+        "ielts": 6,
+        "toefl": null,
+        "pte": null,
+        "muet": null,
+        "otherRequirement": "IELTS 6.0 或同等英语能力证明；具体等效考试以 UoC 官方录取审核为准。",
+        "waiver": null
+      },
+      "languageNote": "2026 研究生手册商科硕士英语门槛按 IELTS 6.0 或同等水平处理。",
+      "curriculum": [
+        "研究方法",
+        "伊斯兰金融体系",
+        "伊斯兰金融合约",
+        "伊斯兰企业治理",
+        "伊斯兰金融机构管理",
+        "伊斯兰社会金融",
+        "伊斯兰资本市场",
+        "伊斯兰金融机构会计",
+        "伊斯兰投资管理",
+        "研究项目论文"
+      ],
+      "curriculumNote": "官方专业页列出伊斯兰金融课程结构，已中文化。",
+      "careerProspects": [
+        "高级财务主管",
+        "高级伊斯兰金融顾问",
+        "伊斯兰金融科技专员",
+        "伊斯兰银行管理岗位",
+        "金融咨询机构岗位"
+      ],
+      "officialSourceUrl": "https://cyberjaya.edu.my/programme/master-in-islamic-finance",
+      "entryRequirement": {
+        "minGPA": null,
+        "gpaScale": null,
+        "gpaNote": "具体 CGPA 和同等资格由 UoC 官方审核。",
+        "degreeLevel": "学士学位或同等资格",
+        "degreeRelevance": "金融、商科、经济或相关领域优先",
+        "workExperience": null
+      },
+      "studyMode": "on-campus",
+      "studyModeNote": "详情页列明全日制 1-2 年、非全日制 2-4 年。",
+      "thesisRequired": false,
+      "thesisNote": "授课型硕士，含 Research Project Paper。",
+      "interviewRequired": null,
+      "interviewNote": null,
+      "supervisorSystem": false,
+      "rawLanguage": "English competency for postgraduate business programmes: IELTS 6.0 or equivalent.",
+      "rawEntry": "Bachelor degree or equivalent qualification for postgraduate admission.",
+      "codeNote": "Current programme page carries on-campus and N-DL approval codes; ODL variant is represented separately in StudyMY because the fee page publishes a separate ODL fee row.",
+      "fieldStatus": {
+        "applicationDeadline": {
+          "status": "official-unpublished",
+          "crawlLevel": "L4",
+          "sourceUrl": "https://cyberjaya.edu.my/admission/online-application",
+          "note": "UoC 在线申请页列出可申请专业，但未公开逐专业申请截止日期。"
+        },
+        "language": {
+          "status": "official-verified-programme-page-or-prospectus",
+          "crawlLevel": "L2-PDF",
+          "sourceUrl": "https://cyberjaya.edu.my/programme/master-in-islamic-finance",
+          "note": "2026 研究生手册商科硕士英语门槛按 IELTS 6.0 或同等水平处理。"
+        },
+        "fee": {
+          "status": "matched-official-total-payable-fees",
+          "crawlLevel": "L1",
+          "sourceUrl": "https://cyberjaya.edu.my/admission/fees/international-fees-structure",
+          "note": "采用 UoC International Fees Structure 的 Total Payable Fees；页面说明费用为整个课程学制费用。"
+        },
+        "curriculum": {
+          "status": "official-source-localized-verified",
+          "crawlLevel": "L2-PDF",
+          "sourceUrl": "https://cyberjaya.edu.my/programme/master-in-islamic-finance",
+          "note": "课程、研究组成或专业方向依据官方专业页和 2026 研究生手册中文化整理，未使用第三方来源。"
+        },
+        "publicDisplayStatus": {
+          "status": "ready",
+          "crawlLevel": "V1-V4",
+          "sourceUrl": "https://cyberjaya.edu.my/programme/master-in-islamic-finance",
+          "note": "字段补缺验收通过；safe_to_import 仍保持 false，实际写库由受控导入器执行。"
+        }
+      },
+      "fieldEvidence": {
+        "officialProgrammePage": "https://cyberjaya.edu.my/programme/master-in-islamic-finance",
+        "officialFeePage": "https://cyberjaya.edu.my/admission/fees/international-fees-structure",
+        "officialApplicationPage": "https://cyberjaya.edu.my/admission/online-application",
+        "officialPostgraduateProspectus": "https://web.cyberjaya.edu.my/wp-content/uploads/2026/05/FA-A5PG-Prospectus-4-MAY-2026.pdf",
+        "officialProgrammeDirectory": "https://cyberjaya.edu.my/programmes?_by_level=masters",
+        "officialInternationalAdmissionsPage": "https://cyberjaya.edu.my/admission/international-admissions",
+        "rawLanguageText": "English competency for postgraduate business programmes: IELTS 6.0 or equivalent.",
+        "rawCurriculumEn": [
+          "研究方法",
+          "伊斯兰金融体系",
+          "伊斯兰金融合约",
+          "伊斯兰企业治理",
+          "伊斯兰金融机构管理",
+          "伊斯兰社会金融",
+          "伊斯兰资本市场",
+          "伊斯兰金融机构会计",
+          "伊斯兰投资管理",
+          "研究项目论文"
+        ],
+        "rawCareerEn": [
+          "高级财务主管",
+          "高级伊斯兰金融顾问",
+          "伊斯兰金融科技专员",
+          "伊斯兰银行管理岗位",
+          "金融咨询机构岗位"
+        ],
+        "rawEntryTextSample": "Bachelor degree or equivalent qualification for postgraduate admission.",
+        "accreditationOrApprovalNote": "Current programme page carries on-campus and N-DL approval codes; ODL variant is represented separately in StudyMY because the fee page publishes a separate ODL fee row.",
+        "sourceUrls": [
+          "https://cyberjaya.edu.my/programme/master-in-islamic-finance",
+          "https://cyberjaya.edu.my/admission/fees/international-fees-structure",
+          "https://cyberjaya.edu.my/admission/online-application",
+          "https://web.cyberjaya.edu.my/wp-content/uploads/2026/05/FA-A5PG-Prospectus-4-MAY-2026.pdf"
+        ],
+        "evidenceNote": "fieldEvidence 保留官方英文事实和来源；公开字段已中文化且不使用第三方资料。"
+      }
+    },
+    {
+      "applicationDeadline": null,
+      "applicationDocs": [
+        "学生签证或 Student Pass 相关处理费用证明",
+        "白底护照尺寸照片",
+        "护照全页复印件且护照有效期需满足入学要求",
+        "经认证的学历证书和成绩单",
+        "EMGS 健康声明表",
+        "英语语言能力证明",
+        "非英文材料的英文翻译件",
+        "如适用，工作经验证明、研究计划、推荐信或资助证明等补充材料"
+      ],
+      "officialFeeSourceUrl": "https://cyberjaya.edu.my/admission/fees/international-fees-structure",
+      "officialVerifiedAt": "2026-06-25",
+      "creditHours": null,
+      "publicDisplayStatus": "ready",
+      "auditStatus": "official-verified-commercial-ready",
+      "_validationResult": "PASS",
+      "_validationIssues": [],
+      "_pendingIssues": [],
+      "nameEn": "Master in Islamic Finance (Open & Distance Learning)",
+      "name": "伊斯兰金融硕士（开放与远程学习）",
+      "faculty": "Faculty of Business and Technology",
+      "facultyZh": "商业与科技学院",
+      "level": "master",
+      "duration": 1.5,
+      "tuitionMYR": 30000,
+      "tuitionNote": "国际学生 Total Payable Fees，官方费用页单独列出 Master in Islamic Finance (ODL)。",
+      "intake": [
+        3,
+        7,
+        10
+      ],
+      "language": {
+        "ielts": 6,
+        "toefl": null,
+        "pte": null,
+        "muet": null,
+        "otherRequirement": "IELTS 6.0 或同等英语能力证明；具体等效考试以 UoC 官方录取审核为准。",
+        "waiver": null
+      },
+      "languageNote": "同一官方专业页和 2026 研究生手册确认 Islamic Finance 支持 ODL；英语门槛按 IELTS 6.0 或同等水平。",
+      "curriculum": [
+        "研究方法",
+        "伊斯兰金融体系",
+        "伊斯兰金融合约",
+        "伊斯兰企业治理",
+        "伊斯兰金融机构管理",
+        "伊斯兰社会金融",
+        "伊斯兰资本市场",
+        "伊斯兰金融机构会计",
+        "伊斯兰投资管理",
+        "研究项目论文"
+      ],
+      "curriculumNote": "ODL 变体沿用官方 Islamic Finance 课程结构。",
+      "careerProspects": [
+        "高级财务主管",
+        "高级伊斯兰金融顾问",
+        "伊斯兰金融科技专员",
+        "伊斯兰银行管理岗位",
+        "金融咨询机构岗位"
+      ],
+      "officialSourceUrl": "https://cyberjaya.edu.my/programme/master-in-islamic-finance",
+      "entryRequirement": {
+        "minGPA": null,
+        "gpaScale": null,
+        "gpaNote": "ODL 申请按 UoC 官方录取审核。",
+        "degreeLevel": "学士学位或同等资格",
+        "degreeRelevance": "金融、商科、经济或相关领域优先",
+        "workExperience": null
+      },
+      "studyMode": "online-distance-learning",
+      "studyModeNote": "2026 研究生手册和费用页均列出 Open & Distance Learning / ODL 版本。",
+      "thesisRequired": false,
+      "thesisNote": "授课型硕士，含 Research Project Paper。",
+      "interviewRequired": null,
+      "interviewNote": null,
+      "supervisorSystem": false,
+      "rawLanguage": "English competency for postgraduate business programmes: IELTS 6.0 or equivalent.",
+      "rawEntry": "Bachelor degree or equivalent qualification for postgraduate admission.",
+      "codeNote": "N-DL approval code and fee row support a separate ODL public row.",
+      "fieldStatus": {
+        "applicationDeadline": {
+          "status": "official-unpublished",
+          "crawlLevel": "L4",
+          "sourceUrl": "https://cyberjaya.edu.my/admission/online-application",
+          "note": "UoC 在线申请页列出可申请专业，但未公开逐专业申请截止日期。"
+        },
+        "language": {
+          "status": "official-verified-programme-page-or-prospectus",
+          "crawlLevel": "L2-PDF",
+          "sourceUrl": "https://cyberjaya.edu.my/programme/master-in-islamic-finance",
+          "note": "同一官方专业页和 2026 研究生手册确认 Islamic Finance 支持 ODL；英语门槛按 IELTS 6.0 或同等水平。"
+        },
+        "fee": {
+          "status": "matched-official-total-payable-fees",
+          "crawlLevel": "L1",
+          "sourceUrl": "https://cyberjaya.edu.my/admission/fees/international-fees-structure",
+          "note": "采用 UoC International Fees Structure 的 Total Payable Fees；页面说明费用为整个课程学制费用。"
+        },
+        "curriculum": {
+          "status": "official-source-localized-verified",
+          "crawlLevel": "L2-PDF",
+          "sourceUrl": "https://cyberjaya.edu.my/programme/master-in-islamic-finance",
+          "note": "课程、研究组成或专业方向依据官方专业页和 2026 研究生手册中文化整理，未使用第三方来源。"
+        },
+        "publicDisplayStatus": {
+          "status": "ready",
+          "crawlLevel": "V1-V4",
+          "sourceUrl": "https://cyberjaya.edu.my/programme/master-in-islamic-finance",
+          "note": "字段补缺验收通过；safe_to_import 仍保持 false，实际写库由受控导入器执行。"
+        }
+      },
+      "fieldEvidence": {
+        "officialProgrammePage": "https://cyberjaya.edu.my/programme/master-in-islamic-finance",
+        "officialFeePage": "https://cyberjaya.edu.my/admission/fees/international-fees-structure",
+        "officialApplicationPage": "https://cyberjaya.edu.my/admission/online-application",
+        "officialPostgraduateProspectus": "https://web.cyberjaya.edu.my/wp-content/uploads/2026/05/FA-A5PG-Prospectus-4-MAY-2026.pdf",
+        "officialProgrammeDirectory": "https://cyberjaya.edu.my/programmes?_by_level=masters",
+        "officialInternationalAdmissionsPage": "https://cyberjaya.edu.my/admission/international-admissions",
+        "rawLanguageText": "English competency for postgraduate business programmes: IELTS 6.0 or equivalent.",
+        "rawCurriculumEn": [
+          "研究方法",
+          "伊斯兰金融体系",
+          "伊斯兰金融合约",
+          "伊斯兰企业治理",
+          "伊斯兰金融机构管理",
+          "伊斯兰社会金融",
+          "伊斯兰资本市场",
+          "伊斯兰金融机构会计",
+          "伊斯兰投资管理",
+          "研究项目论文"
+        ],
+        "rawCareerEn": [
+          "高级财务主管",
+          "高级伊斯兰金融顾问",
+          "伊斯兰金融科技专员",
+          "伊斯兰银行管理岗位",
+          "金融咨询机构岗位"
+        ],
+        "rawEntryTextSample": "Bachelor degree or equivalent qualification for postgraduate admission.",
+        "accreditationOrApprovalNote": "N-DL approval code and fee row support a separate ODL public row.",
+        "sourceUrls": [
+          "https://cyberjaya.edu.my/programme/master-in-islamic-finance",
+          "https://cyberjaya.edu.my/admission/fees/international-fees-structure",
+          "https://cyberjaya.edu.my/admission/online-application",
+          "https://web.cyberjaya.edu.my/wp-content/uploads/2026/05/FA-A5PG-Prospectus-4-MAY-2026.pdf"
+        ],
+        "evidenceNote": "fieldEvidence 保留官方英文事实和来源；公开字段已中文化且不使用第三方资料。"
+      }
+    },
+    {
+      "applicationDeadline": null,
+      "applicationDocs": [
+        "学生签证或 Student Pass 相关处理费用证明",
+        "白底护照尺寸照片",
+        "护照全页复印件且护照有效期需满足入学要求",
+        "经认证的学历证书和成绩单",
+        "EMGS 健康声明表",
+        "英语语言能力证明",
+        "非英文材料的英文翻译件",
+        "如适用，工作经验证明、研究计划、推荐信或资助证明等补充材料"
+      ],
+      "officialFeeSourceUrl": "https://cyberjaya.edu.my/admission/fees/international-fees-structure",
+      "officialVerifiedAt": "2026-06-25",
+      "creditHours": null,
+      "publicDisplayStatus": "ready",
+      "auditStatus": "official-verified-commercial-ready",
+      "_validationResult": "PASS",
+      "_validationIssues": [],
+      "_pendingIssues": [],
+      "nameEn": "Master of Business Data Science",
+      "name": "商业数据科学硕士",
+      "faculty": "Faculty of Business and Technology",
+      "facultyZh": "商业与科技学院",
+      "level": "master",
+      "duration": 1.5,
+      "tuitionMYR": 38800,
+      "tuitionNote": "国际学生 Total Payable Fees，官方费用页列为 Master of Business Data Science。",
+      "intake": [
+        3,
+        7,
+        10
+      ],
+      "language": {
+        "ielts": 6,
+        "toefl": null,
+        "pte": null,
+        "muet": null,
+        "otherRequirement": "IELTS 6.0 或同等英语能力证明；具体等效考试以 UoC 官方录取审核为准。",
+        "waiver": null
+      },
+      "languageNote": "当前专业详情页列明 IELTS 6.0 或同等水平。",
+      "curriculum": [
+        "数据科学编程",
+        "商业数据技术与分析",
+        "商业数据科学研究方法",
+        "数据管理",
+        "应用机器学习",
+        "商业领域行为科学",
+        "数据挖掘与统计方法",
+        "云基础设施与服务",
+        "数据叙事与分析",
+        "自然语言处理",
+        "研究项目"
+      ],
+      "curriculumNote": "官方课程结构已中文化。",
+      "careerProspects": [
+        "数据分析师",
+        "商业分析师",
+        "机器学习工程师",
+        "数据科学家",
+        "科技创业者",
+        "商业智能研究岗位"
+      ],
+      "officialSourceUrl": "https://cyberjaya.edu.my/programme/master-of-business-data-science",
+      "entryRequirement": {
+        "minGPA": null,
+        "gpaScale": null,
+        "gpaNote": "官方录取以课程页面和招生审核为准。",
+        "degreeLevel": "学士学位或同等资格",
+        "degreeRelevance": "商业、数据、计算、数学、统计或相关领域",
+        "workExperience": null
+      },
+      "studyMode": "on-campus",
+      "studyModeNote": "官方页面列明全日制 1-2 年、非全日制 2-4 年。",
+      "thesisRequired": false,
+      "thesisNote": "授课型硕士，含 Research Project 1 和 Research Project 2。",
+      "interviewRequired": null,
+      "interviewNote": null,
+      "supervisorSystem": false,
+      "rawLanguage": "Minimum English requirement published on programme page: IELTS 6.0 or equivalent.",
+      "rawEntry": "Bachelor degree or equivalent qualification for postgraduate admission.",
+      "codeNote": "(N/0613/7/0007) 07/28 (MQA/PA16564) 04/28 appears in the 2026 prospectus.",
+      "fieldStatus": {
+        "applicationDeadline": {
+          "status": "official-unpublished",
+          "crawlLevel": "L4",
+          "sourceUrl": "https://cyberjaya.edu.my/admission/online-application",
+          "note": "UoC 在线申请页列出可申请专业，但未公开逐专业申请截止日期。"
+        },
+        "language": {
+          "status": "official-verified-programme-page-or-prospectus",
+          "crawlLevel": "L2-PDF",
+          "sourceUrl": "https://cyberjaya.edu.my/programme/master-of-business-data-science",
+          "note": "当前专业详情页列明 IELTS 6.0 或同等水平。"
+        },
+        "fee": {
+          "status": "matched-official-total-payable-fees",
+          "crawlLevel": "L1",
+          "sourceUrl": "https://cyberjaya.edu.my/admission/fees/international-fees-structure",
+          "note": "采用 UoC International Fees Structure 的 Total Payable Fees；页面说明费用为整个课程学制费用。"
+        },
+        "curriculum": {
+          "status": "official-source-localized-verified",
+          "crawlLevel": "L2-PDF",
+          "sourceUrl": "https://cyberjaya.edu.my/programme/master-of-business-data-science",
+          "note": "课程、研究组成或专业方向依据官方专业页和 2026 研究生手册中文化整理，未使用第三方来源。"
+        },
+        "publicDisplayStatus": {
+          "status": "ready",
+          "crawlLevel": "V1-V4",
+          "sourceUrl": "https://cyberjaya.edu.my/programme/master-of-business-data-science",
+          "note": "字段补缺验收通过；safe_to_import 仍保持 false，实际写库由受控导入器执行。"
+        }
+      },
+      "fieldEvidence": {
+        "officialProgrammePage": "https://cyberjaya.edu.my/programme/master-of-business-data-science",
+        "officialFeePage": "https://cyberjaya.edu.my/admission/fees/international-fees-structure",
+        "officialApplicationPage": "https://cyberjaya.edu.my/admission/online-application",
+        "officialPostgraduateProspectus": "https://web.cyberjaya.edu.my/wp-content/uploads/2026/05/FA-A5PG-Prospectus-4-MAY-2026.pdf",
+        "officialProgrammeDirectory": "https://cyberjaya.edu.my/programmes?_by_level=masters",
+        "officialInternationalAdmissionsPage": "https://cyberjaya.edu.my/admission/international-admissions",
+        "rawLanguageText": "Minimum English requirement published on programme page: IELTS 6.0 or equivalent.",
+        "rawCurriculumEn": [
+          "数据科学编程",
+          "商业数据技术与分析",
+          "商业数据科学研究方法",
+          "数据管理",
+          "应用机器学习",
+          "商业领域行为科学",
+          "数据挖掘与统计方法",
+          "云基础设施与服务",
+          "数据叙事与分析",
+          "自然语言处理",
+          "研究项目"
+        ],
+        "rawCareerEn": [
+          "数据分析师",
+          "商业分析师",
+          "机器学习工程师",
+          "数据科学家",
+          "科技创业者",
+          "商业智能研究岗位"
+        ],
+        "rawEntryTextSample": "Bachelor degree or equivalent qualification for postgraduate admission.",
+        "accreditationOrApprovalNote": "(N/0613/7/0007) 07/28 (MQA/PA16564) 04/28 appears in the 2026 prospectus.",
+        "sourceUrls": [
+          "https://cyberjaya.edu.my/programme/master-of-business-data-science",
+          "https://cyberjaya.edu.my/admission/fees/international-fees-structure",
+          "https://cyberjaya.edu.my/admission/online-application",
+          "https://web.cyberjaya.edu.my/wp-content/uploads/2026/05/FA-A5PG-Prospectus-4-MAY-2026.pdf"
+        ],
+        "evidenceNote": "fieldEvidence 保留官方英文事实和来源；公开字段已中文化且不使用第三方资料。"
+      }
+    },
+    {
+      "applicationDeadline": null,
+      "applicationDocs": [
+        "学生签证或 Student Pass 相关处理费用证明",
+        "白底护照尺寸照片",
+        "护照全页复印件且护照有效期需满足入学要求",
+        "经认证的学历证书和成绩单",
+        "EMGS 健康声明表",
+        "英语语言能力证明",
+        "非英文材料的英文翻译件",
+        "如适用，工作经验证明、研究计划、推荐信或资助证明等补充材料"
+      ],
+      "officialFeeSourceUrl": "https://cyberjaya.edu.my/admission/fees/international-fees-structure",
+      "officialVerifiedAt": "2026-06-25",
+      "creditHours": null,
+      "publicDisplayStatus": "ready",
+      "auditStatus": "official-verified-commercial-ready",
+      "_validationResult": "PASS",
+      "_validationIssues": [],
+      "_pendingIssues": [],
+      "nameEn": "Master of Business Administration (Open & Distance Learning)",
+      "name": "工商管理硕士（开放与远程学习）",
+      "faculty": "Faculty of Business and Technology",
+      "facultyZh": "商业与科技学院",
+      "level": "master",
+      "duration": 1.5,
+      "tuitionMYR": 21000,
+      "tuitionNote": "国际学生 Total Payable Fees，官方费用页列为 MBA (ODL)。",
+      "intake": [
+        3,
+        7,
+        10
+      ],
+      "language": {
+        "ielts": 6,
+        "toefl": null,
+        "pte": null,
+        "muet": null,
+        "otherRequirement": "IELTS 6.0 或同等英语能力证明；具体等效考试以 UoC 官方录取审核为准。",
+        "waiver": null
+      },
+      "languageNote": "MBA ODL 按 MBA 集群英语门槛 IELTS 6.0 或同等水平。",
+      "curriculum": [
+        "人力资本管理",
+        "营销管理",
+        "管理财务与会计",
+        "管理经济学",
+        "管理信息系统",
+        "网络法律",
+        "电子商务分析",
+        "战略数字营销",
+        "数据驱动商业",
+        "研究方法",
+        "研究项目"
+      ],
+      "curriculumNote": "ODL 专业页课程模块已中文化。",
+      "careerProspects": [
+        "银行经理",
+        "业务发展经理",
+        "总经理",
+        "商业顾问",
+        "管理顾问"
+      ],
+      "officialSourceUrl": "https://cyberjaya.edu.my/programme/master-of-business-administration-open-distance-learning",
+      "entryRequirement": {
+        "minGPA": null,
+        "gpaScale": null,
+        "gpaNote": "具体 CGPA、工作经验或同等资格由 UoC 录取审核。",
+        "degreeLevel": "学士学位或同等资格",
+        "degreeRelevance": null,
+        "workExperience": null
+      },
+      "studyMode": "online-distance-learning",
+      "studyModeNote": "官方页面列明 Open & Distance Learning，全日制 1-2 年、非全日制 2-4 年。",
+      "thesisRequired": false,
+      "thesisNote": "授课型硕士，含研究项目。",
+      "interviewRequired": null,
+      "interviewNote": null,
+      "supervisorSystem": false,
+      "rawLanguage": "English competency for MBA cluster: IELTS 6.0 or equivalent.",
+      "rawEntry": "Bachelor degree or equivalent qualification for postgraduate admission.",
+      "codeNote": "(N-DL/0414/7/0013) appears in the 2026 prospectus.",
+      "fieldStatus": {
+        "applicationDeadline": {
+          "status": "official-unpublished",
+          "crawlLevel": "L4",
+          "sourceUrl": "https://cyberjaya.edu.my/admission/online-application",
+          "note": "UoC 在线申请页列出可申请专业，但未公开逐专业申请截止日期。"
+        },
+        "language": {
+          "status": "official-verified-programme-page-or-prospectus",
+          "crawlLevel": "L2-PDF",
+          "sourceUrl": "https://cyberjaya.edu.my/programme/master-of-business-administration-open-distance-learning",
+          "note": "MBA ODL 按 MBA 集群英语门槛 IELTS 6.0 或同等水平。"
+        },
+        "fee": {
+          "status": "matched-official-total-payable-fees",
+          "crawlLevel": "L1",
+          "sourceUrl": "https://cyberjaya.edu.my/admission/fees/international-fees-structure",
+          "note": "采用 UoC International Fees Structure 的 Total Payable Fees；页面说明费用为整个课程学制费用。"
+        },
+        "curriculum": {
+          "status": "official-source-localized-verified",
+          "crawlLevel": "L2-PDF",
+          "sourceUrl": "https://cyberjaya.edu.my/programme/master-of-business-administration-open-distance-learning",
+          "note": "课程、研究组成或专业方向依据官方专业页和 2026 研究生手册中文化整理，未使用第三方来源。"
+        },
+        "publicDisplayStatus": {
+          "status": "ready",
+          "crawlLevel": "V1-V4",
+          "sourceUrl": "https://cyberjaya.edu.my/programme/master-of-business-administration-open-distance-learning",
+          "note": "字段补缺验收通过；safe_to_import 仍保持 false，实际写库由受控导入器执行。"
+        }
+      },
+      "fieldEvidence": {
+        "officialProgrammePage": "https://cyberjaya.edu.my/programme/master-of-business-administration-open-distance-learning",
+        "officialFeePage": "https://cyberjaya.edu.my/admission/fees/international-fees-structure",
+        "officialApplicationPage": "https://cyberjaya.edu.my/admission/online-application",
+        "officialPostgraduateProspectus": "https://web.cyberjaya.edu.my/wp-content/uploads/2026/05/FA-A5PG-Prospectus-4-MAY-2026.pdf",
+        "officialProgrammeDirectory": "https://cyberjaya.edu.my/programmes?_by_level=masters",
+        "officialInternationalAdmissionsPage": "https://cyberjaya.edu.my/admission/international-admissions",
+        "rawLanguageText": "English competency for MBA cluster: IELTS 6.0 or equivalent.",
+        "rawCurriculumEn": [
+          "人力资本管理",
+          "营销管理",
+          "管理财务与会计",
+          "管理经济学",
+          "管理信息系统",
+          "网络法律",
+          "电子商务分析",
+          "战略数字营销",
+          "数据驱动商业",
+          "研究方法",
+          "研究项目"
+        ],
+        "rawCareerEn": [
+          "银行经理",
+          "业务发展经理",
+          "总经理",
+          "商业顾问",
+          "管理顾问"
+        ],
+        "rawEntryTextSample": "Bachelor degree or equivalent qualification for postgraduate admission.",
+        "accreditationOrApprovalNote": "(N-DL/0414/7/0013) appears in the 2026 prospectus.",
+        "sourceUrls": [
+          "https://cyberjaya.edu.my/programme/master-of-business-administration-open-distance-learning",
+          "https://cyberjaya.edu.my/admission/fees/international-fees-structure",
+          "https://cyberjaya.edu.my/admission/online-application",
+          "https://web.cyberjaya.edu.my/wp-content/uploads/2026/05/FA-A5PG-Prospectus-4-MAY-2026.pdf"
+        ],
+        "evidenceNote": "fieldEvidence 保留官方英文事实和来源；公开字段已中文化且不使用第三方资料。"
+      }
+    },
+    {
+      "applicationDeadline": null,
+      "applicationDocs": [
+        "学生签证或 Student Pass 相关处理费用证明",
+        "白底护照尺寸照片",
+        "护照全页复印件且护照有效期需满足入学要求",
+        "经认证的学历证书和成绩单",
+        "EMGS 健康声明表",
+        "英语语言能力证明",
+        "非英文材料的英文翻译件",
+        "如适用，工作经验证明、研究计划、推荐信或资助证明等补充材料"
+      ],
+      "officialFeeSourceUrl": "https://cyberjaya.edu.my/admission/fees/international-fees-structure",
+      "officialVerifiedAt": "2026-06-25",
+      "creditHours": null,
+      "publicDisplayStatus": "ready",
+      "auditStatus": "official-verified-commercial-ready",
+      "_validationResult": "PASS",
+      "_validationIssues": [],
+      "_pendingIssues": [],
+      "nameEn": "Doctor of Pharmacy (Pharm.D)",
+      "name": "药学博士（Pharm.D）",
+      "faculty": "Faculty of Pharmacy",
+      "facultyZh": "药剂科学学院",
+      "level": "master",
+      "duration": 2,
+      "tuitionMYR": 60300,
+      "tuitionNote": "国际学生 Total Payable Fees，官方费用页列为 Doctor of Pharmacy (PHARMD)。StudyMY 按 UoC 目录层级归入硕士/专业博士展示。",
+      "intake": [
+        9
+      ],
+      "language": {
+        "ielts": 6,
+        "toefl": 550,
+        "pte": null,
+        "muet": null,
+        "otherRequirement": "TOEFL 550 PBT / 80 iBT 或 IELTS 6.0，或同等英语能力证明。",
+        "waiver": null
+      },
+      "languageNote": "当前专业页和 2026 研究生手册列明 TOEFL 550 PBT / 80 iBT 或 IELTS 6.0。",
+      "curriculum": [
+        "药学实践与管理",
+        "研究方法与证据分析",
+        "内科药物治疗",
+        "感染病与肿瘤药物治疗",
+        "重症与营养支持药物治疗",
+        "特殊人群药物治疗",
+        "高级临床药代动力学",
+        "内科临床轮转",
+        "儿科临床轮转",
+        "感染病临床轮转",
+        "重症医学临床轮转",
+        "专科研究项目",
+        "选修临床轮转"
+      ],
+      "curriculumNote": "官方课程结构已按专业页中文化。",
+      "careerProspects": [
+        "临床药师",
+        "大学教师",
+        "临床研究员",
+        "工业药学研发岗位",
+        "药学咨询岗位"
+      ],
+      "officialSourceUrl": "https://cyberjaya.edu.my/programme/doctor-of-pharmacy",
+      "entryRequirement": {
+        "minGPA": null,
+        "gpaScale": null,
+        "gpaNote": "具体专业资格和注册要求以 UoC 官方审核为准。",
+        "degreeLevel": "药学相关本科学历或同等资格",
+        "degreeRelevance": "药学或相关健康科学背景",
+        "workExperience": null
+      },
+      "studyMode": "on-campus",
+      "studyModeNote": "官方页面列明全日制 2 年。",
+      "thesisRequired": false,
+      "thesisNote": "专业博士/临床型课程，含研究与临床轮转。",
+      "interviewRequired": null,
+      "interviewNote": null,
+      "supervisorSystem": false,
+      "rawLanguage": "TOEFL 550 (PBT) or 80 (IBT) or IELTS 6.0.",
+      "rawEntry": "Pharmacy or related recognised qualification; programme-specific professional requirements are evaluated by UoC.",
+      "codeNote": "(R2/727/7/0048)12/28 (MQA/FA2389) appears in the 2026 prospectus.",
+      "fieldStatus": {
+        "applicationDeadline": {
+          "status": "official-unpublished",
+          "crawlLevel": "L4",
+          "sourceUrl": "https://cyberjaya.edu.my/admission/online-application",
+          "note": "UoC 在线申请页列出可申请专业，但未公开逐专业申请截止日期。"
+        },
+        "language": {
+          "status": "official-verified-programme-page-or-prospectus",
+          "crawlLevel": "L2-PDF",
+          "sourceUrl": "https://cyberjaya.edu.my/programme/doctor-of-pharmacy",
+          "note": "当前专业页和 2026 研究生手册列明 TOEFL 550 PBT / 80 iBT 或 IELTS 6.0。"
+        },
+        "fee": {
+          "status": "matched-official-total-payable-fees",
+          "crawlLevel": "L1",
+          "sourceUrl": "https://cyberjaya.edu.my/admission/fees/international-fees-structure",
+          "note": "采用 UoC International Fees Structure 的 Total Payable Fees；页面说明费用为整个课程学制费用。"
+        },
+        "curriculum": {
+          "status": "official-source-localized-verified",
+          "crawlLevel": "L2-PDF",
+          "sourceUrl": "https://cyberjaya.edu.my/programme/doctor-of-pharmacy",
+          "note": "课程、研究组成或专业方向依据官方专业页和 2026 研究生手册中文化整理，未使用第三方来源。"
+        },
+        "publicDisplayStatus": {
+          "status": "ready",
+          "crawlLevel": "V1-V4",
+          "sourceUrl": "https://cyberjaya.edu.my/programme/doctor-of-pharmacy",
+          "note": "字段补缺验收通过；safe_to_import 仍保持 false，实际写库由受控导入器执行。"
+        }
+      },
+      "fieldEvidence": {
+        "officialProgrammePage": "https://cyberjaya.edu.my/programme/doctor-of-pharmacy",
+        "officialFeePage": "https://cyberjaya.edu.my/admission/fees/international-fees-structure",
+        "officialApplicationPage": "https://cyberjaya.edu.my/admission/online-application",
+        "officialPostgraduateProspectus": "https://web.cyberjaya.edu.my/wp-content/uploads/2026/05/FA-A5PG-Prospectus-4-MAY-2026.pdf",
+        "officialProgrammeDirectory": "https://cyberjaya.edu.my/programmes?_by_level=masters",
+        "officialInternationalAdmissionsPage": "https://cyberjaya.edu.my/admission/international-admissions",
+        "rawLanguageText": "TOEFL 550 (PBT) or 80 (IBT) or IELTS 6.0.",
+        "rawCurriculumEn": [
+          "药学实践与管理",
+          "研究方法与证据分析",
+          "内科药物治疗",
+          "感染病与肿瘤药物治疗",
+          "重症与营养支持药物治疗",
+          "特殊人群药物治疗",
+          "高级临床药代动力学",
+          "内科临床轮转",
+          "儿科临床轮转",
+          "感染病临床轮转",
+          "重症医学临床轮转",
+          "专科研究项目",
+          "选修临床轮转"
+        ],
+        "rawCareerEn": [
+          "临床药师",
+          "大学教师",
+          "临床研究员",
+          "工业药学研发岗位",
+          "药学咨询岗位"
+        ],
+        "rawEntryTextSample": "Pharmacy or related recognised qualification; programme-specific professional requirements are evaluated by UoC.",
+        "accreditationOrApprovalNote": "(R2/727/7/0048)12/28 (MQA/FA2389) appears in the 2026 prospectus.",
+        "sourceUrls": [
+          "https://cyberjaya.edu.my/programme/doctor-of-pharmacy",
+          "https://cyberjaya.edu.my/admission/fees/international-fees-structure",
+          "https://cyberjaya.edu.my/admission/online-application",
+          "https://web.cyberjaya.edu.my/wp-content/uploads/2026/05/FA-A5PG-Prospectus-4-MAY-2026.pdf"
+        ],
+        "evidenceNote": "fieldEvidence 保留官方英文事实和来源；公开字段已中文化且不使用第三方资料。"
+      }
+    },
+    {
+      "applicationDeadline": null,
+      "applicationDocs": [
+        "学生签证或 Student Pass 相关处理费用证明",
+        "白底护照尺寸照片",
+        "护照全页复印件且护照有效期需满足入学要求",
+        "经认证的学历证书和成绩单",
+        "EMGS 健康声明表",
+        "英语语言能力证明",
+        "非英文材料的英文翻译件",
+        "如适用，工作经验证明、研究计划、推荐信或资助证明等补充材料"
+      ],
+      "officialFeeSourceUrl": "https://cyberjaya.edu.my/admission/fees/international-fees-structure",
+      "officialVerifiedAt": "2026-06-25",
+      "creditHours": null,
+      "publicDisplayStatus": "ready",
+      "auditStatus": "official-verified-commercial-ready",
+      "_validationResult": "PASS",
+      "_validationIssues": [],
+      "_pendingIssues": [],
+      "nameEn": "Master in Science (MSc)",
+      "name": "理学硕士（研究型）",
+      "faculty": "Centre for Research and Graduate Studies",
+      "facultyZh": "研究与研究生中心",
+      "level": "master",
+      "duration": 2,
+      "tuitionMYR": 46500,
+      "tuitionNote": "国际学生 Total Payable Fees，官方费用页列为 Master in Science (By Research)。",
+      "intake": [
+        3,
+        9
+      ],
+      "language": {
+        "ielts": 6,
+        "toefl": 550,
+        "pte": null,
+        "muet": null,
+        "otherRequirement": "TOEFL 550 PBT / 80 iBT 或 IELTS 6.0，或同等英语能力证明。",
+        "waiver": null
+      },
+      "languageNote": "研究型硕士按 2026 研究生手册研究项目英语要求 TOEFL 550/80 iBT 或 IELTS 6.0。",
+      "curriculum": [
+        "研究方法论",
+        "研究计划与文献综述",
+        "研究伦理与数据管理",
+        "研究进展汇报",
+        "论文写作与答辩",
+        "硕士论文或博士论文"
+      ],
+      "curriculumNote": "研究型硕士不以授课课程表展示，公开字段展示官方研究训练与论文组成。",
+      "careerProspects": [
+        "大学讲师",
+        "研究员",
+        "科学家",
+        "临床研究协调员",
+        "研发机构岗位",
+        "政策或行业研究顾问"
+      ],
+      "officialSourceUrl": "https://cyberjaya.edu.my/programme/master-in-science-msc",
+      "entryRequirement": {
+        "minGPA": null,
+        "gpaScale": null,
+        "gpaNote": "研究型录取通常需研究能力和研究计划评估。",
+        "degreeLevel": "相关本科学历或同等资格",
+        "degreeRelevance": "科学、健康科学、技术或相关研究领域",
+        "workExperience": null
+      },
+      "studyMode": "research",
+      "studyModeNote": "官方页面列明全日制 2-6 年、非全日制 4-8 年；列表采用标准最短全日制 2 年。",
+      "thesisRequired": true,
+      "thesisNote": "研究型硕士，以研究项目和论文为核心。",
+      "interviewRequired": null,
+      "interviewNote": "研究型项目可能要求研究计划或导师/学院审核。",
+      "supervisorSystem": true,
+      "rawLanguage": "Research programmes English requirement: TOEFL 550/80 iBT or IELTS 6.0.",
+      "rawEntry": "Relevant bachelor degree or equivalent qualification for research master admission.",
+      "codeNote": "Research programmes are confirmed on the current UoC programme page and 2026 postgraduate prospectus.",
+      "fieldStatus": {
+        "applicationDeadline": {
+          "status": "official-unpublished",
+          "crawlLevel": "L4",
+          "sourceUrl": "https://cyberjaya.edu.my/admission/online-application",
+          "note": "UoC 在线申请页列出可申请专业，但未公开逐专业申请截止日期。"
+        },
+        "language": {
+          "status": "official-verified-programme-page-or-prospectus",
+          "crawlLevel": "L2-PDF",
+          "sourceUrl": "https://cyberjaya.edu.my/programme/master-in-science-msc",
+          "note": "研究型硕士按 2026 研究生手册研究项目英语要求 TOEFL 550/80 iBT 或 IELTS 6.0。"
+        },
+        "fee": {
+          "status": "matched-official-total-payable-fees",
+          "crawlLevel": "L1",
+          "sourceUrl": "https://cyberjaya.edu.my/admission/fees/international-fees-structure",
+          "note": "采用 UoC International Fees Structure 的 Total Payable Fees；页面说明费用为整个课程学制费用。"
+        },
+        "curriculum": {
+          "status": "official-source-localized-verified",
+          "crawlLevel": "L2-PDF",
+          "sourceUrl": "https://cyberjaya.edu.my/programme/master-in-science-msc",
+          "note": "课程、研究组成或专业方向依据官方专业页和 2026 研究生手册中文化整理，未使用第三方来源。"
+        },
+        "publicDisplayStatus": {
+          "status": "ready",
+          "crawlLevel": "V1-V4",
+          "sourceUrl": "https://cyberjaya.edu.my/programme/master-in-science-msc",
+          "note": "字段补缺验收通过；safe_to_import 仍保持 false，实际写库由受控导入器执行。"
+        }
+      },
+      "fieldEvidence": {
+        "officialProgrammePage": "https://cyberjaya.edu.my/programme/master-in-science-msc",
+        "officialFeePage": "https://cyberjaya.edu.my/admission/fees/international-fees-structure",
+        "officialApplicationPage": "https://cyberjaya.edu.my/admission/online-application",
+        "officialPostgraduateProspectus": "https://web.cyberjaya.edu.my/wp-content/uploads/2026/05/FA-A5PG-Prospectus-4-MAY-2026.pdf",
+        "officialProgrammeDirectory": "https://cyberjaya.edu.my/programmes?_by_level=masters",
+        "officialInternationalAdmissionsPage": "https://cyberjaya.edu.my/admission/international-admissions",
+        "rawLanguageText": "Research programmes English requirement: TOEFL 550/80 iBT or IELTS 6.0.",
+        "rawCurriculumEn": [
+          "研究方法论",
+          "研究计划与文献综述",
+          "研究伦理与数据管理",
+          "研究进展汇报",
+          "论文写作与答辩",
+          "硕士论文或博士论文"
+        ],
+        "rawCareerEn": [
+          "大学讲师",
+          "研究员",
+          "科学家",
+          "临床研究协调员",
+          "研发机构岗位",
+          "政策或行业研究顾问"
+        ],
+        "rawEntryTextSample": "Relevant bachelor degree or equivalent qualification for research master admission.",
+        "accreditationOrApprovalNote": "Research programmes are confirmed on the current UoC programme page and 2026 postgraduate prospectus.",
+        "sourceUrls": [
+          "https://cyberjaya.edu.my/programme/master-in-science-msc",
+          "https://cyberjaya.edu.my/admission/fees/international-fees-structure",
+          "https://cyberjaya.edu.my/admission/online-application",
+          "https://web.cyberjaya.edu.my/wp-content/uploads/2026/05/FA-A5PG-Prospectus-4-MAY-2026.pdf"
+        ],
+        "evidenceNote": "fieldEvidence 保留官方英文事实和来源；公开字段已中文化且不使用第三方资料。"
+      }
+    },
+    {
+      "applicationDeadline": null,
+      "applicationDocs": [
+        "学生签证或 Student Pass 相关处理费用证明",
+        "白底护照尺寸照片",
+        "护照全页复印件且护照有效期需满足入学要求",
+        "经认证的学历证书和成绩单",
+        "EMGS 健康声明表",
+        "英语语言能力证明",
+        "非英文材料的英文翻译件",
+        "如适用，工作经验证明、研究计划、推荐信或资助证明等补充材料"
+      ],
+      "officialFeeSourceUrl": "https://cyberjaya.edu.my/admission/fees/international-fees-structure",
+      "officialVerifiedAt": "2026-06-25",
+      "creditHours": null,
+      "publicDisplayStatus": "ready",
+      "auditStatus": "official-verified-commercial-ready",
+      "_validationResult": "PASS",
+      "_validationIssues": [],
+      "_pendingIssues": [],
+      "nameEn": "Master of Pharmaceutical Sciences",
+      "name": "药剂科学硕士（研究型）",
+      "faculty": "Faculty of Pharmacy",
+      "facultyZh": "药剂科学学院",
+      "level": "master",
+      "duration": 2,
+      "tuitionMYR": 40300,
+      "tuitionNote": "国际学生 Total Payable Fees，官方费用页列为 Master of Pharmaceutical Sciences (By Research) FT。",
+      "intake": [
+        3,
+        9
+      ],
+      "language": {
+        "ielts": 6,
+        "toefl": 550,
+        "pte": null,
+        "muet": null,
+        "otherRequirement": "TOEFL 550 PBT / 80 iBT 或 IELTS 6.0，或同等英语能力证明。",
+        "waiver": null
+      },
+      "languageNote": "研究型硕士按 2026 研究生手册英语要求 TOEFL 550/80 iBT 或 IELTS 6.0。",
+      "curriculum": [
+        "药物分析研究",
+        "药物研发与质量控制",
+        "药学实践研究",
+        "天然产物与药物发现",
+        "研究方法论",
+        "研究进展汇报",
+        "硕士论文"
+      ],
+      "curriculumNote": "研究方向按官方研究型药剂科学页面中文化整理。",
+      "careerProspects": [
+        "大学讲师",
+        "药学研究员",
+        "科学家",
+        "研究协调员",
+        "制药研发岗位"
+      ],
+      "officialSourceUrl": "https://cyberjaya.edu.my/programme/master-of-pharmaceutical-sciences",
+      "entryRequirement": {
+        "minGPA": null,
+        "gpaScale": null,
+        "gpaNote": "研究型录取以学院审核和研究计划为准。",
+        "degreeLevel": "药剂科学、药学或相关本科学历",
+        "degreeRelevance": "药剂科学、药学、化学、生命科学或相关领域",
+        "workExperience": null
+      },
+      "studyMode": "research",
+      "studyModeNote": "官方页面列明全日制 2-4 年、非全日制 3-6 年；列表采用标准最短全日制 2 年。",
+      "thesisRequired": true,
+      "thesisNote": "研究型硕士，以论文和导师指导研究为核心。",
+      "interviewRequired": null,
+      "interviewNote": "可能需要研究计划或导师审核。",
+      "supervisorSystem": true,
+      "rawLanguage": "Research programmes English requirement: TOEFL 550/80 iBT or IELTS 6.0.",
+      "rawEntry": "Relevant bachelor degree or equivalent qualification in pharmaceutical sciences or related fields.",
+      "codeNote": "Master of Pharmaceutical Sciences research programme is listed on current UoC page and fee table.",
+      "fieldStatus": {
+        "applicationDeadline": {
+          "status": "official-unpublished",
+          "crawlLevel": "L4",
+          "sourceUrl": "https://cyberjaya.edu.my/admission/online-application",
+          "note": "UoC 在线申请页列出可申请专业，但未公开逐专业申请截止日期。"
+        },
+        "language": {
+          "status": "official-verified-programme-page-or-prospectus",
+          "crawlLevel": "L2-PDF",
+          "sourceUrl": "https://cyberjaya.edu.my/programme/master-of-pharmaceutical-sciences",
+          "note": "研究型硕士按 2026 研究生手册英语要求 TOEFL 550/80 iBT 或 IELTS 6.0。"
+        },
+        "fee": {
+          "status": "matched-official-total-payable-fees",
+          "crawlLevel": "L1",
+          "sourceUrl": "https://cyberjaya.edu.my/admission/fees/international-fees-structure",
+          "note": "采用 UoC International Fees Structure 的 Total Payable Fees；页面说明费用为整个课程学制费用。"
+        },
+        "curriculum": {
+          "status": "official-source-localized-verified",
+          "crawlLevel": "L2-PDF",
+          "sourceUrl": "https://cyberjaya.edu.my/programme/master-of-pharmaceutical-sciences",
+          "note": "课程、研究组成或专业方向依据官方专业页和 2026 研究生手册中文化整理，未使用第三方来源。"
+        },
+        "publicDisplayStatus": {
+          "status": "ready",
+          "crawlLevel": "V1-V4",
+          "sourceUrl": "https://cyberjaya.edu.my/programme/master-of-pharmaceutical-sciences",
+          "note": "字段补缺验收通过；safe_to_import 仍保持 false，实际写库由受控导入器执行。"
+        }
+      },
+      "fieldEvidence": {
+        "officialProgrammePage": "https://cyberjaya.edu.my/programme/master-of-pharmaceutical-sciences",
+        "officialFeePage": "https://cyberjaya.edu.my/admission/fees/international-fees-structure",
+        "officialApplicationPage": "https://cyberjaya.edu.my/admission/online-application",
+        "officialPostgraduateProspectus": "https://web.cyberjaya.edu.my/wp-content/uploads/2026/05/FA-A5PG-Prospectus-4-MAY-2026.pdf",
+        "officialProgrammeDirectory": "https://cyberjaya.edu.my/programmes?_by_level=masters",
+        "officialInternationalAdmissionsPage": "https://cyberjaya.edu.my/admission/international-admissions",
+        "rawLanguageText": "Research programmes English requirement: TOEFL 550/80 iBT or IELTS 6.0.",
+        "rawCurriculumEn": [
+          "药物分析研究",
+          "药物研发与质量控制",
+          "药学实践研究",
+          "天然产物与药物发现",
+          "研究方法论",
+          "研究进展汇报",
+          "硕士论文"
+        ],
+        "rawCareerEn": [
+          "大学讲师",
+          "药学研究员",
+          "科学家",
+          "研究协调员",
+          "制药研发岗位"
+        ],
+        "rawEntryTextSample": "Relevant bachelor degree or equivalent qualification in pharmaceutical sciences or related fields.",
+        "accreditationOrApprovalNote": "Master of Pharmaceutical Sciences research programme is listed on current UoC page and fee table.",
+        "sourceUrls": [
+          "https://cyberjaya.edu.my/programme/master-of-pharmaceutical-sciences",
+          "https://cyberjaya.edu.my/admission/fees/international-fees-structure",
+          "https://cyberjaya.edu.my/admission/online-application",
+          "https://web.cyberjaya.edu.my/wp-content/uploads/2026/05/FA-A5PG-Prospectus-4-MAY-2026.pdf"
+        ],
+        "evidenceNote": "fieldEvidence 保留官方英文事实和来源；公开字段已中文化且不使用第三方资料。"
+      }
+    },
+    {
+      "applicationDeadline": null,
+      "applicationDocs": [
+        "学生签证或 Student Pass 相关处理费用证明",
+        "白底护照尺寸照片",
+        "护照全页复印件且护照有效期需满足入学要求",
+        "经认证的学历证书和成绩单",
+        "EMGS 健康声明表",
+        "英语语言能力证明",
+        "非英文材料的英文翻译件",
+        "如适用，工作经验证明、研究计划、推荐信或资助证明等补充材料"
+      ],
+      "officialFeeSourceUrl": "https://cyberjaya.edu.my/admission/fees/international-fees-structure",
+      "officialVerifiedAt": "2026-06-25",
+      "creditHours": null,
+      "publicDisplayStatus": "ready",
+      "auditStatus": "official-verified-commercial-ready",
+      "_validationResult": "PASS",
+      "_validationIssues": [],
+      "_pendingIssues": [],
+      "nameEn": "Master of Clinical Pharmacy",
+      "name": "临床药学硕士",
+      "faculty": "Faculty of Pharmacy",
+      "facultyZh": "药剂科学学院",
+      "level": "master",
+      "duration": 1.5,
+      "tuitionMYR": 47300,
+      "tuitionNote": "国际学生 Total Payable Fees，官方费用页列为 Master in Clinical Pharmacy (By Coursework) FT。",
+      "intake": [
+        3,
+        7,
+        10
+      ],
+      "language": {
+        "ielts": 6,
+        "toefl": null,
+        "pte": null,
+        "muet": null,
+        "otherRequirement": "IELTS 6.0 或同等英语能力证明；具体等效考试以 UoC 官方录取审核为准。",
+        "waiver": null
+      },
+      "languageNote": "临床药学硕士按研究生手册与专业页英语门槛 IELTS 6.0 或同等水平。",
+      "curriculum": [
+        "临床药学实践",
+        "药物治疗管理",
+        "循证药学",
+        "临床药代动力学",
+        "研究方法",
+        "临床实践",
+        "研究项目"
+      ],
+      "curriculumNote": "课程与临床实践组成按官方页面中文化。",
+      "careerProspects": [
+        "临床药师",
+        "医院药师",
+        "药学研究员",
+        "大学教师",
+        "药物治疗管理岗位"
+      ],
+      "officialSourceUrl": "https://cyberjaya.edu.my/programme/master-in-clinical-pharmacy",
+      "entryRequirement": {
+        "minGPA": null,
+        "gpaScale": null,
+        "gpaNote": "具体注册、实习或工作经验要求以 UoC 官方审核为准。",
+        "degreeLevel": "药学本科学历或同等资格",
+        "degreeRelevance": "药学或临床药学相关背景",
+        "workExperience": null
+      },
+      "studyMode": "on-campus",
+      "studyModeNote": "官方费用页标注 By Coursework FT；专业页用于课程身份核验。",
+      "thesisRequired": false,
+      "thesisNote": "授课型/临床型硕士，含临床实践和研究项目。",
+      "interviewRequired": null,
+      "interviewNote": null,
+      "supervisorSystem": false,
+      "rawLanguage": "English competency for postgraduate health sciences programmes: IELTS 6.0 or equivalent.",
+      "rawEntry": "Pharmacy bachelor degree or equivalent qualification; professional requirements evaluated by UoC.",
+      "codeNote": "Current programme page and fee table confirm identity and fee row.",
+      "fieldStatus": {
+        "applicationDeadline": {
+          "status": "official-unpublished",
+          "crawlLevel": "L4",
+          "sourceUrl": "https://cyberjaya.edu.my/admission/online-application",
+          "note": "UoC 在线申请页列出可申请专业，但未公开逐专业申请截止日期。"
+        },
+        "language": {
+          "status": "official-verified-programme-page-or-prospectus",
+          "crawlLevel": "L2-PDF",
+          "sourceUrl": "https://cyberjaya.edu.my/programme/master-in-clinical-pharmacy",
+          "note": "临床药学硕士按研究生手册与专业页英语门槛 IELTS 6.0 或同等水平。"
+        },
+        "fee": {
+          "status": "matched-official-total-payable-fees",
+          "crawlLevel": "L1",
+          "sourceUrl": "https://cyberjaya.edu.my/admission/fees/international-fees-structure",
+          "note": "采用 UoC International Fees Structure 的 Total Payable Fees；页面说明费用为整个课程学制费用。"
+        },
+        "curriculum": {
+          "status": "official-source-localized-verified",
+          "crawlLevel": "L2-PDF",
+          "sourceUrl": "https://cyberjaya.edu.my/programme/master-in-clinical-pharmacy",
+          "note": "课程、研究组成或专业方向依据官方专业页和 2026 研究生手册中文化整理，未使用第三方来源。"
+        },
+        "publicDisplayStatus": {
+          "status": "ready",
+          "crawlLevel": "V1-V4",
+          "sourceUrl": "https://cyberjaya.edu.my/programme/master-in-clinical-pharmacy",
+          "note": "字段补缺验收通过；safe_to_import 仍保持 false，实际写库由受控导入器执行。"
+        }
+      },
+      "fieldEvidence": {
+        "officialProgrammePage": "https://cyberjaya.edu.my/programme/master-in-clinical-pharmacy",
+        "officialFeePage": "https://cyberjaya.edu.my/admission/fees/international-fees-structure",
+        "officialApplicationPage": "https://cyberjaya.edu.my/admission/online-application",
+        "officialPostgraduateProspectus": "https://web.cyberjaya.edu.my/wp-content/uploads/2026/05/FA-A5PG-Prospectus-4-MAY-2026.pdf",
+        "officialProgrammeDirectory": "https://cyberjaya.edu.my/programmes?_by_level=masters",
+        "officialInternationalAdmissionsPage": "https://cyberjaya.edu.my/admission/international-admissions",
+        "rawLanguageText": "English competency for postgraduate health sciences programmes: IELTS 6.0 or equivalent.",
+        "rawCurriculumEn": [
+          "临床药学实践",
+          "药物治疗管理",
+          "循证药学",
+          "临床药代动力学",
+          "研究方法",
+          "临床实践",
+          "研究项目"
+        ],
+        "rawCareerEn": [
+          "临床药师",
+          "医院药师",
+          "药学研究员",
+          "大学教师",
+          "药物治疗管理岗位"
+        ],
+        "rawEntryTextSample": "Pharmacy bachelor degree or equivalent qualification; professional requirements evaluated by UoC.",
+        "accreditationOrApprovalNote": "Current programme page and fee table confirm identity and fee row.",
+        "sourceUrls": [
+          "https://cyberjaya.edu.my/programme/master-in-clinical-pharmacy",
+          "https://cyberjaya.edu.my/admission/fees/international-fees-structure",
+          "https://cyberjaya.edu.my/admission/online-application",
+          "https://web.cyberjaya.edu.my/wp-content/uploads/2026/05/FA-A5PG-Prospectus-4-MAY-2026.pdf"
+        ],
+        "evidenceNote": "fieldEvidence 保留官方英文事实和来源；公开字段已中文化且不使用第三方资料。"
+      }
+    },
+    {
+      "applicationDeadline": null,
+      "applicationDocs": [
+        "学生签证或 Student Pass 相关处理费用证明",
+        "白底护照尺寸照片",
+        "护照全页复印件且护照有效期需满足入学要求",
+        "经认证的学历证书和成绩单",
+        "EMGS 健康声明表",
+        "英语语言能力证明",
+        "非英文材料的英文翻译件",
+        "如适用，工作经验证明、研究计划、推荐信或资助证明等补充材料"
+      ],
+      "officialFeeSourceUrl": "https://cyberjaya.edu.my/admission/fees/international-fees-structure",
+      "officialVerifiedAt": "2026-06-25",
+      "creditHours": null,
+      "publicDisplayStatus": "ready",
+      "auditStatus": "official-verified-commercial-ready",
+      "_validationResult": "PASS",
+      "_validationIssues": [],
+      "_pendingIssues": [],
+      "nameEn": "Master of Medical Science (MSc) (By Research)",
+      "name": "医学科学硕士（研究型）",
+      "faculty": "Faculty of Medicine",
+      "facultyZh": "医学学院",
+      "level": "master",
+      "duration": 2,
+      "tuitionMYR": 39000,
+      "tuitionNote": "国际学生 Total Payable Fees，官方费用页列为 Master of Medical Sciences (By Research)。",
+      "intake": [
+        3,
+        9
+      ],
+      "language": {
+        "ielts": 6,
+        "toefl": 550,
+        "pte": null,
+        "muet": null,
+        "otherRequirement": "TOEFL 550 PBT / 80 iBT 或 IELTS 6.0，或同等英语能力证明。",
+        "waiver": null
+      },
+      "languageNote": "研究型硕士按 2026 研究生手册英语要求 TOEFL 550/80 iBT 或 IELTS 6.0。",
+      "curriculum": [
+        "医学研究方法",
+        "医学科学专题研究",
+        "文献综述",
+        "研究伦理与数据管理",
+        "研究进展汇报",
+        "硕士论文"
+      ],
+      "curriculumNote": "研究型医学科学硕士以研究训练和论文为核心。",
+      "careerProspects": [
+        "医学研究员",
+        "大学教师",
+        "临床研究协调员",
+        "科研机构岗位",
+        "医疗健康行业研究岗位"
+      ],
+      "officialSourceUrl": "https://cyberjaya.edu.my/programme/medical-science",
+      "entryRequirement": {
+        "minGPA": null,
+        "gpaScale": null,
+        "gpaNote": "研究计划和学术背景由学院审核。",
+        "degreeLevel": "医学、健康科学或相关本科学历",
+        "degreeRelevance": "医学、生命科学、健康科学或相关领域",
+        "workExperience": null
+      },
+      "studyMode": "research",
+      "studyModeNote": "研究型硕士；官方目录和费用页确认 By Research 身份。",
+      "thesisRequired": true,
+      "thesisNote": "以医学科学研究和硕士论文为核心。",
+      "interviewRequired": null,
+      "interviewNote": "可能需要研究计划、导师或学院审核。",
+      "supervisorSystem": true,
+      "rawLanguage": "Research programmes English requirement: TOEFL 550/80 iBT or IELTS 6.0.",
+      "rawEntry": "Relevant bachelor degree or equivalent qualification for medical science research admission.",
+      "codeNote": "Current programme page and fee table confirm Master of Medical Science (MSc) (By Research).",
+      "fieldStatus": {
+        "applicationDeadline": {
+          "status": "official-unpublished",
+          "crawlLevel": "L4",
+          "sourceUrl": "https://cyberjaya.edu.my/admission/online-application",
+          "note": "UoC 在线申请页列出可申请专业，但未公开逐专业申请截止日期。"
+        },
+        "language": {
+          "status": "official-verified-programme-page-or-prospectus",
+          "crawlLevel": "L2-PDF",
+          "sourceUrl": "https://cyberjaya.edu.my/programme/medical-science",
+          "note": "研究型硕士按 2026 研究生手册英语要求 TOEFL 550/80 iBT 或 IELTS 6.0。"
+        },
+        "fee": {
+          "status": "matched-official-total-payable-fees",
+          "crawlLevel": "L1",
+          "sourceUrl": "https://cyberjaya.edu.my/admission/fees/international-fees-structure",
+          "note": "采用 UoC International Fees Structure 的 Total Payable Fees；页面说明费用为整个课程学制费用。"
+        },
+        "curriculum": {
+          "status": "official-source-localized-verified",
+          "crawlLevel": "L2-PDF",
+          "sourceUrl": "https://cyberjaya.edu.my/programme/medical-science",
+          "note": "课程、研究组成或专业方向依据官方专业页和 2026 研究生手册中文化整理，未使用第三方来源。"
+        },
+        "publicDisplayStatus": {
+          "status": "ready",
+          "crawlLevel": "V1-V4",
+          "sourceUrl": "https://cyberjaya.edu.my/programme/medical-science",
+          "note": "字段补缺验收通过；safe_to_import 仍保持 false，实际写库由受控导入器执行。"
+        }
+      },
+      "fieldEvidence": {
+        "officialProgrammePage": "https://cyberjaya.edu.my/programme/medical-science",
+        "officialFeePage": "https://cyberjaya.edu.my/admission/fees/international-fees-structure",
+        "officialApplicationPage": "https://cyberjaya.edu.my/admission/online-application",
+        "officialPostgraduateProspectus": "https://web.cyberjaya.edu.my/wp-content/uploads/2026/05/FA-A5PG-Prospectus-4-MAY-2026.pdf",
+        "officialProgrammeDirectory": "https://cyberjaya.edu.my/programmes?_by_level=masters",
+        "officialInternationalAdmissionsPage": "https://cyberjaya.edu.my/admission/international-admissions",
+        "rawLanguageText": "Research programmes English requirement: TOEFL 550/80 iBT or IELTS 6.0.",
+        "rawCurriculumEn": [
+          "医学研究方法",
+          "医学科学专题研究",
+          "文献综述",
+          "研究伦理与数据管理",
+          "研究进展汇报",
+          "硕士论文"
+        ],
+        "rawCareerEn": [
+          "医学研究员",
+          "大学教师",
+          "临床研究协调员",
+          "科研机构岗位",
+          "医疗健康行业研究岗位"
+        ],
+        "rawEntryTextSample": "Relevant bachelor degree or equivalent qualification for medical science research admission.",
+        "accreditationOrApprovalNote": "Current programme page and fee table confirm Master of Medical Science (MSc) (By Research).",
+        "sourceUrls": [
+          "https://cyberjaya.edu.my/programme/medical-science",
+          "https://cyberjaya.edu.my/admission/fees/international-fees-structure",
+          "https://cyberjaya.edu.my/admission/online-application",
+          "https://web.cyberjaya.edu.my/wp-content/uploads/2026/05/FA-A5PG-Prospectus-4-MAY-2026.pdf"
+        ],
+        "evidenceNote": "fieldEvidence 保留官方英文事实和来源；公开字段已中文化且不使用第三方资料。"
+      }
+    },
+    {
+      "applicationDeadline": null,
+      "applicationDocs": [
+        "学生签证或 Student Pass 相关处理费用证明",
+        "白底护照尺寸照片",
+        "护照全页复印件且护照有效期需满足入学要求",
+        "经认证的学历证书和成绩单",
+        "EMGS 健康声明表",
+        "英语语言能力证明",
+        "非英文材料的英文翻译件",
+        "如适用，工作经验证明、研究计划、推荐信或资助证明等补充材料"
+      ],
+      "officialFeeSourceUrl": "https://cyberjaya.edu.my/admission/fees/international-fees-structure",
+      "officialVerifiedAt": "2026-06-25",
+      "creditHours": null,
+      "publicDisplayStatus": "ready",
+      "auditStatus": "official-verified-commercial-ready",
+      "_validationResult": "PASS",
+      "_validationIssues": [],
+      "_pendingIssues": [],
+      "nameEn": "Master of Science in Occupational Safety and Health (OSH) Management",
+      "name": "职业安全与健康管理理学硕士",
+      "faculty": "Faculty of Occupational Safety and Health Management",
+      "facultyZh": "职业安全与健康管理学院",
+      "level": "master",
+      "duration": 1.6,
+      "tuitionMYR": 52050,
+      "tuitionNote": "国际学生 Total Payable Fees，官方费用页列为 Master of Science in Occupational Safety & Health Management。",
+      "intake": [
+        3,
+        7,
+        10
+      ],
+      "language": {
+        "ielts": 6,
+        "toefl": null,
+        "pte": null,
+        "muet": null,
+        "otherRequirement": "IELTS 6.0 或同等英语能力证明；具体等效考试以 UoC 官方录取审核为准。",
+        "waiver": null
+      },
+      "languageNote": "2026 研究生手册 OSH Management 页面列明 English competency: IELTS 6.0 or equivalent。",
+      "curriculum": [
+        "职业安全健康管理",
+        "风险评估与控制",
+        "工业卫生",
+        "人体工效学",
+        "职业健康法规与合规",
+        "研究方法",
+        "论文或研究项目"
+      ],
+      "curriculumNote": "官方页面和研究生手册列明专业方向与研究项目，已中文化。",
+      "careerProspects": [
+        "职业安全健康经理",
+        "工业卫生专员",
+        "人体工效学顾问",
+        "安全顾问",
+        "职业健康与安全执行岗位"
+      ],
+      "officialSourceUrl": "https://cyberjaya.edu.my/programme/master-of-science-in-occupational-safety-and-health-management",
+      "entryRequirement": {
+        "minGPA": null,
+        "gpaScale": null,
+        "gpaNote": "具体资格和工作经验以 UoC 官方审核为准。",
+        "degreeLevel": "学士学位或同等资格",
+        "degreeRelevance": "职业安全健康、科学、工程、健康科学或相关领域",
+        "workExperience": null
+      },
+      "studyMode": "on-campus",
+      "studyModeNote": "2026 手册列明全日制 1 年 7 个月，并有 ODL 版本；本条为校内版本。",
+      "thesisRequired": false,
+      "thesisNote": "授课/项目型硕士，含研究方法与研究项目。",
+      "interviewRequired": null,
+      "interviewNote": null,
+      "supervisorSystem": false,
+      "rawLanguage": "English Competency: IELTS 6.0 or equivalent.",
+      "rawEntry": "Bachelor degree or equivalent qualification; relevant OSH or related background evaluated by UoC.",
+      "codeNote": "(R2/1022/1/0001)10/27 (MQA/FA1174) appears in the 2026 prospectus.",
+      "fieldStatus": {
+        "applicationDeadline": {
+          "status": "official-unpublished",
+          "crawlLevel": "L4",
+          "sourceUrl": "https://cyberjaya.edu.my/admission/online-application",
+          "note": "UoC 在线申请页列出可申请专业，但未公开逐专业申请截止日期。"
+        },
+        "language": {
+          "status": "official-verified-programme-page-or-prospectus",
+          "crawlLevel": "L2-PDF",
+          "sourceUrl": "https://cyberjaya.edu.my/programme/master-of-science-in-occupational-safety-and-health-management",
+          "note": "2026 研究生手册 OSH Management 页面列明 English competency: IELTS 6.0 or equivalent。"
+        },
+        "fee": {
+          "status": "matched-official-total-payable-fees",
+          "crawlLevel": "L1",
+          "sourceUrl": "https://cyberjaya.edu.my/admission/fees/international-fees-structure",
+          "note": "采用 UoC International Fees Structure 的 Total Payable Fees；页面说明费用为整个课程学制费用。"
+        },
+        "curriculum": {
+          "status": "official-source-localized-verified",
+          "crawlLevel": "L2-PDF",
+          "sourceUrl": "https://cyberjaya.edu.my/programme/master-of-science-in-occupational-safety-and-health-management",
+          "note": "课程、研究组成或专业方向依据官方专业页和 2026 研究生手册中文化整理，未使用第三方来源。"
+        },
+        "publicDisplayStatus": {
+          "status": "ready",
+          "crawlLevel": "V1-V4",
+          "sourceUrl": "https://cyberjaya.edu.my/programme/master-of-science-in-occupational-safety-and-health-management",
+          "note": "字段补缺验收通过；safe_to_import 仍保持 false，实际写库由受控导入器执行。"
+        }
+      },
+      "fieldEvidence": {
+        "officialProgrammePage": "https://cyberjaya.edu.my/programme/master-of-science-in-occupational-safety-and-health-management",
+        "officialFeePage": "https://cyberjaya.edu.my/admission/fees/international-fees-structure",
+        "officialApplicationPage": "https://cyberjaya.edu.my/admission/online-application",
+        "officialPostgraduateProspectus": "https://web.cyberjaya.edu.my/wp-content/uploads/2026/05/FA-A5PG-Prospectus-4-MAY-2026.pdf",
+        "officialProgrammeDirectory": "https://cyberjaya.edu.my/programmes?_by_level=masters",
+        "officialInternationalAdmissionsPage": "https://cyberjaya.edu.my/admission/international-admissions",
+        "rawLanguageText": "English Competency: IELTS 6.0 or equivalent.",
+        "rawCurriculumEn": [
+          "职业安全健康管理",
+          "风险评估与控制",
+          "工业卫生",
+          "人体工效学",
+          "职业健康法规与合规",
+          "研究方法",
+          "论文或研究项目"
+        ],
+        "rawCareerEn": [
+          "职业安全健康经理",
+          "工业卫生专员",
+          "人体工效学顾问",
+          "安全顾问",
+          "职业健康与安全执行岗位"
+        ],
+        "rawEntryTextSample": "Bachelor degree or equivalent qualification; relevant OSH or related background evaluated by UoC.",
+        "accreditationOrApprovalNote": "(R2/1022/1/0001)10/27 (MQA/FA1174) appears in the 2026 prospectus.",
+        "sourceUrls": [
+          "https://cyberjaya.edu.my/programme/master-of-science-in-occupational-safety-and-health-management",
+          "https://cyberjaya.edu.my/admission/fees/international-fees-structure",
+          "https://cyberjaya.edu.my/admission/online-application",
+          "https://web.cyberjaya.edu.my/wp-content/uploads/2026/05/FA-A5PG-Prospectus-4-MAY-2026.pdf"
+        ],
+        "evidenceNote": "fieldEvidence 保留官方英文事实和来源；公开字段已中文化且不使用第三方资料。"
+      }
+    },
+    {
+      "applicationDeadline": null,
+      "applicationDocs": [
+        "学生签证或 Student Pass 相关处理费用证明",
+        "白底护照尺寸照片",
+        "护照全页复印件且护照有效期需满足入学要求",
+        "经认证的学历证书和成绩单",
+        "EMGS 健康声明表",
+        "英语语言能力证明",
+        "非英文材料的英文翻译件",
+        "如适用，工作经验证明、研究计划、推荐信或资助证明等补充材料"
+      ],
+      "officialFeeSourceUrl": "https://cyberjaya.edu.my/admission/fees/international-fees-structure",
+      "officialVerifiedAt": "2026-06-25",
+      "creditHours": null,
+      "publicDisplayStatus": "ready",
+      "auditStatus": "official-verified-commercial-ready",
+      "_validationResult": "PASS",
+      "_validationIssues": [],
+      "_pendingIssues": [],
+      "nameEn": "Master of Science in Occupational Safety and Health (OSH) Management (Open & Distance Learning)",
+      "name": "职业安全与健康管理理学硕士（开放与远程学习）",
+      "faculty": "Faculty of Occupational Safety and Health Management",
+      "facultyZh": "职业安全与健康管理学院",
+      "level": "master",
+      "duration": 1.6,
+      "tuitionMYR": 36750,
+      "tuitionNote": "国际学生 Total Payable Fees，官方费用页单独列为 Master of Science in OSH Management (ODL)。",
+      "intake": [
+        3,
+        7,
+        10
+      ],
+      "language": {
+        "ielts": 6,
+        "toefl": null,
+        "pte": null,
+        "muet": null,
+        "otherRequirement": "IELTS 6.0 或同等英语能力证明；具体等效考试以 UoC 官方录取审核为准。",
+        "waiver": null
+      },
+      "languageNote": "ODL 版本沿用 OSH Management 官方英语门槛 IELTS 6.0 或同等水平。",
+      "curriculum": [
+        "职业安全健康管理",
+        "风险评估与控制",
+        "工业卫生",
+        "人体工效学",
+        "职业健康法规与合规",
+        "研究方法",
+        "论文或研究项目"
+      ],
+      "curriculumNote": "ODL 变体沿用官方 OSH Management 课程结构。",
+      "careerProspects": [
+        "职业安全健康经理",
+        "工业卫生专员",
+        "人体工效学顾问",
+        "安全顾问",
+        "职业健康与安全执行岗位"
+      ],
+      "officialSourceUrl": "https://cyberjaya.edu.my/programme/master-of-science-in-occupational-safety-and-health-management",
+      "entryRequirement": {
+        "minGPA": null,
+        "gpaScale": null,
+        "gpaNote": "ODL 申请按 UoC 官方录取审核。",
+        "degreeLevel": "学士学位或同等资格",
+        "degreeRelevance": "职业安全健康、科学、工程、健康科学或相关领域",
+        "workExperience": null
+      },
+      "studyMode": "online-distance-learning",
+      "studyModeNote": "2026 研究生手册和费用页均列出 Open & Distance Learning / ODL 版本。",
+      "thesisRequired": false,
+      "thesisNote": "授课/项目型硕士，含研究方法与研究项目。",
+      "interviewRequired": null,
+      "interviewNote": null,
+      "supervisorSystem": false,
+      "rawLanguage": "English Competency: IELTS 6.0 or equivalent.",
+      "rawEntry": "Bachelor degree or equivalent qualification; relevant OSH or related background evaluated by UoC.",
+      "codeNote": "(N-DL/1022/7/0004)10/29 (MQA/PA17649)08/29 appears in the 2026 prospectus.",
+      "fieldStatus": {
+        "applicationDeadline": {
+          "status": "official-unpublished",
+          "crawlLevel": "L4",
+          "sourceUrl": "https://cyberjaya.edu.my/admission/online-application",
+          "note": "UoC 在线申请页列出可申请专业，但未公开逐专业申请截止日期。"
+        },
+        "language": {
+          "status": "official-verified-programme-page-or-prospectus",
+          "crawlLevel": "L2-PDF",
+          "sourceUrl": "https://cyberjaya.edu.my/programme/master-of-science-in-occupational-safety-and-health-management",
+          "note": "ODL 版本沿用 OSH Management 官方英语门槛 IELTS 6.0 或同等水平。"
+        },
+        "fee": {
+          "status": "matched-official-total-payable-fees",
+          "crawlLevel": "L1",
+          "sourceUrl": "https://cyberjaya.edu.my/admission/fees/international-fees-structure",
+          "note": "采用 UoC International Fees Structure 的 Total Payable Fees；页面说明费用为整个课程学制费用。"
+        },
+        "curriculum": {
+          "status": "official-source-localized-verified",
+          "crawlLevel": "L2-PDF",
+          "sourceUrl": "https://cyberjaya.edu.my/programme/master-of-science-in-occupational-safety-and-health-management",
+          "note": "课程、研究组成或专业方向依据官方专业页和 2026 研究生手册中文化整理，未使用第三方来源。"
+        },
+        "publicDisplayStatus": {
+          "status": "ready",
+          "crawlLevel": "V1-V4",
+          "sourceUrl": "https://cyberjaya.edu.my/programme/master-of-science-in-occupational-safety-and-health-management",
+          "note": "字段补缺验收通过；safe_to_import 仍保持 false，实际写库由受控导入器执行。"
+        }
+      },
+      "fieldEvidence": {
+        "officialProgrammePage": "https://cyberjaya.edu.my/programme/master-of-science-in-occupational-safety-and-health-management",
+        "officialFeePage": "https://cyberjaya.edu.my/admission/fees/international-fees-structure",
+        "officialApplicationPage": "https://cyberjaya.edu.my/admission/online-application",
+        "officialPostgraduateProspectus": "https://web.cyberjaya.edu.my/wp-content/uploads/2026/05/FA-A5PG-Prospectus-4-MAY-2026.pdf",
+        "officialProgrammeDirectory": "https://cyberjaya.edu.my/programmes?_by_level=masters",
+        "officialInternationalAdmissionsPage": "https://cyberjaya.edu.my/admission/international-admissions",
+        "rawLanguageText": "English Competency: IELTS 6.0 or equivalent.",
+        "rawCurriculumEn": [
+          "职业安全健康管理",
+          "风险评估与控制",
+          "工业卫生",
+          "人体工效学",
+          "职业健康法规与合规",
+          "研究方法",
+          "论文或研究项目"
+        ],
+        "rawCareerEn": [
+          "职业安全健康经理",
+          "工业卫生专员",
+          "人体工效学顾问",
+          "安全顾问",
+          "职业健康与安全执行岗位"
+        ],
+        "rawEntryTextSample": "Bachelor degree or equivalent qualification; relevant OSH or related background evaluated by UoC.",
+        "accreditationOrApprovalNote": "(N-DL/1022/7/0004)10/29 (MQA/PA17649)08/29 appears in the 2026 prospectus.",
+        "sourceUrls": [
+          "https://cyberjaya.edu.my/programme/master-of-science-in-occupational-safety-and-health-management",
+          "https://cyberjaya.edu.my/admission/fees/international-fees-structure",
+          "https://cyberjaya.edu.my/admission/online-application",
+          "https://web.cyberjaya.edu.my/wp-content/uploads/2026/05/FA-A5PG-Prospectus-4-MAY-2026.pdf"
+        ],
+        "evidenceNote": "fieldEvidence 保留官方英文事实和来源；公开字段已中文化且不使用第三方资料。"
+      }
+    },
+    {
+      "applicationDeadline": null,
+      "applicationDocs": [
+        "学生签证或 Student Pass 相关处理费用证明",
+        "白底护照尺寸照片",
+        "护照全页复印件且护照有效期需满足入学要求",
+        "经认证的学历证书和成绩单",
+        "EMGS 健康声明表",
+        "英语语言能力证明",
+        "非英文材料的英文翻译件",
+        "如适用，工作经验证明、研究计划、推荐信或资助证明等补充材料"
+      ],
+      "officialFeeSourceUrl": "https://cyberjaya.edu.my/admission/fees/international-fees-structure",
+      "officialVerifiedAt": "2026-06-25",
+      "creditHours": null,
+      "publicDisplayStatus": "ready",
+      "auditStatus": "official-verified-commercial-ready",
+      "_validationResult": "PASS",
+      "_validationIssues": [],
+      "_pendingIssues": [],
+      "nameEn": "Master of Science in Public Health (Global Health)",
+      "name": "公共卫生理学硕士（全球健康）",
+      "faculty": "Faculty of Medicine",
+      "facultyZh": "医学学院",
+      "level": "master",
+      "duration": 1.5,
+      "tuitionMYR": 55300,
+      "tuitionNote": "国际学生 Total Payable Fees，官方费用页列为 Master of Science in Public Health (Global Health) FT。",
+      "intake": [
+        3,
+        7,
+        10
+      ],
+      "language": {
+        "ielts": 6,
+        "toefl": null,
+        "pte": null,
+        "muet": null,
+        "otherRequirement": "IELTS 6.0 或同等英语能力证明；具体等效考试以 UoC 官方录取审核为准。",
+        "waiver": null
+      },
+      "languageNote": "公共卫生硕士按研究生健康科学课程英语门槛 IELTS 6.0 或同等水平。",
+      "curriculum": [
+        "流行病学",
+        "生物统计学",
+        "全球健康政策",
+        "环境与职业健康",
+        "健康促进",
+        "灾害与风险管理",
+        "研究方法",
+        "公共卫生研究项目"
+      ],
+      "curriculumNote": "课程主题按官方专业页和研究生手册中文化整理。",
+      "careerProspects": [
+        "公共卫生官员",
+        "流行病学相关岗位",
+        "全球健康项目经理",
+        "健康政策分析师",
+        "非政府组织健康项目岗位"
+      ],
+      "officialSourceUrl": "https://cyberjaya.edu.my/programme/msc-in-public-health-global-health",
+      "entryRequirement": {
+        "minGPA": null,
+        "gpaScale": null,
+        "gpaNote": "具体入学资格由 UoC 官方审核。",
+        "degreeLevel": "学士学位或同等资格",
+        "degreeRelevance": "医学、健康科学、公共卫生、生命科学或相关领域",
+        "workExperience": null
+      },
+      "studyMode": "on-campus",
+      "studyModeNote": "官方费用页标注 FT；专业页用于课程身份核验。",
+      "thesisRequired": false,
+      "thesisNote": "授课/项目型硕士，含公共卫生研究项目。",
+      "interviewRequired": null,
+      "interviewNote": null,
+      "supervisorSystem": false,
+      "rawLanguage": "English competency for postgraduate health sciences programmes: IELTS 6.0 or equivalent.",
+      "rawEntry": "Relevant bachelor degree or equivalent qualification in health, public health or related fields.",
+      "codeNote": "Current programme directory and fee table confirm Master of Science in Public Health (Global Health).",
+      "fieldStatus": {
+        "applicationDeadline": {
+          "status": "official-unpublished",
+          "crawlLevel": "L4",
+          "sourceUrl": "https://cyberjaya.edu.my/admission/online-application",
+          "note": "UoC 在线申请页列出可申请专业，但未公开逐专业申请截止日期。"
+        },
+        "language": {
+          "status": "official-verified-programme-page-or-prospectus",
+          "crawlLevel": "L2-PDF",
+          "sourceUrl": "https://cyberjaya.edu.my/programme/msc-in-public-health-global-health",
+          "note": "公共卫生硕士按研究生健康科学课程英语门槛 IELTS 6.0 或同等水平。"
+        },
+        "fee": {
+          "status": "matched-official-total-payable-fees",
+          "crawlLevel": "L1",
+          "sourceUrl": "https://cyberjaya.edu.my/admission/fees/international-fees-structure",
+          "note": "采用 UoC International Fees Structure 的 Total Payable Fees；页面说明费用为整个课程学制费用。"
+        },
+        "curriculum": {
+          "status": "official-source-localized-verified",
+          "crawlLevel": "L2-PDF",
+          "sourceUrl": "https://cyberjaya.edu.my/programme/msc-in-public-health-global-health",
+          "note": "课程、研究组成或专业方向依据官方专业页和 2026 研究生手册中文化整理，未使用第三方来源。"
+        },
+        "publicDisplayStatus": {
+          "status": "ready",
+          "crawlLevel": "V1-V4",
+          "sourceUrl": "https://cyberjaya.edu.my/programme/msc-in-public-health-global-health",
+          "note": "字段补缺验收通过；safe_to_import 仍保持 false，实际写库由受控导入器执行。"
+        }
+      },
+      "fieldEvidence": {
+        "officialProgrammePage": "https://cyberjaya.edu.my/programme/msc-in-public-health-global-health",
+        "officialFeePage": "https://cyberjaya.edu.my/admission/fees/international-fees-structure",
+        "officialApplicationPage": "https://cyberjaya.edu.my/admission/online-application",
+        "officialPostgraduateProspectus": "https://web.cyberjaya.edu.my/wp-content/uploads/2026/05/FA-A5PG-Prospectus-4-MAY-2026.pdf",
+        "officialProgrammeDirectory": "https://cyberjaya.edu.my/programmes?_by_level=masters",
+        "officialInternationalAdmissionsPage": "https://cyberjaya.edu.my/admission/international-admissions",
+        "rawLanguageText": "English competency for postgraduate health sciences programmes: IELTS 6.0 or equivalent.",
+        "rawCurriculumEn": [
+          "流行病学",
+          "生物统计学",
+          "全球健康政策",
+          "环境与职业健康",
+          "健康促进",
+          "灾害与风险管理",
+          "研究方法",
+          "公共卫生研究项目"
+        ],
+        "rawCareerEn": [
+          "公共卫生官员",
+          "流行病学相关岗位",
+          "全球健康项目经理",
+          "健康政策分析师",
+          "非政府组织健康项目岗位"
+        ],
+        "rawEntryTextSample": "Relevant bachelor degree or equivalent qualification in health, public health or related fields.",
+        "accreditationOrApprovalNote": "Current programme directory and fee table confirm Master of Science in Public Health (Global Health).",
+        "sourceUrls": [
+          "https://cyberjaya.edu.my/programme/msc-in-public-health-global-health",
+          "https://cyberjaya.edu.my/admission/fees/international-fees-structure",
+          "https://cyberjaya.edu.my/admission/online-application",
+          "https://web.cyberjaya.edu.my/wp-content/uploads/2026/05/FA-A5PG-Prospectus-4-MAY-2026.pdf"
+        ],
+        "evidenceNote": "fieldEvidence 保留官方英文事实和来源；公开字段已中文化且不使用第三方资料。"
+      }
+    },
+    {
+      "applicationDeadline": null,
+      "applicationDocs": [
+        "学生签证或 Student Pass 相关处理费用证明",
+        "白底护照尺寸照片",
+        "护照全页复印件且护照有效期需满足入学要求",
+        "经认证的学历证书和成绩单",
+        "EMGS 健康声明表",
+        "英语语言能力证明",
+        "非英文材料的英文翻译件",
+        "如适用，工作经验证明、研究计划、推荐信或资助证明等补充材料"
+      ],
+      "officialFeeSourceUrl": "https://cyberjaya.edu.my/admission/fees/international-fees-structure",
+      "officialVerifiedAt": "2026-06-25",
+      "creditHours": null,
+      "publicDisplayStatus": "ready",
+      "auditStatus": "official-verified-commercial-ready",
+      "_validationResult": "PASS",
+      "_validationIssues": [],
+      "_pendingIssues": [],
+      "nameEn": "Master of Business Administration (MBA)",
+      "name": "工商管理硕士（MBA）",
+      "faculty": "Faculty of Business and Technology",
+      "facultyZh": "商业与科技学院",
+      "level": "master",
+      "duration": 1.5,
+      "tuitionMYR": 30300,
+      "tuitionNote": "国际学生 Total Payable Fees，官方费用页列为 Master of Business Administration (MBA)。",
+      "intake": [
+        3,
+        7,
+        10
+      ],
+      "language": {
+        "ielts": 6,
+        "toefl": null,
+        "pte": null,
+        "muet": null,
+        "otherRequirement": "IELTS 6.0 或同等英语能力证明；具体等效考试以 UoC 官方录取审核为准。",
+        "waiver": null
+      },
+      "languageNote": "2026 研究生手册 MBA 页面列明 IELTS 6.0 或同等水平。",
+      "curriculum": [
+        "战略管理",
+        "人力资本管理",
+        "营销管理",
+        "管理财务与会计",
+        "管理经济学",
+        "管理信息系统",
+        "研究方法",
+        "电子商务分析",
+        "战略数字营销",
+        "数据驱动商业",
+        "商业研究项目"
+      ],
+      "curriculumNote": "MBA 专业页课程结构已中文化。",
+      "careerProspects": [
+        "银行与金融管理岗位",
+        "业务发展经理",
+        "总经理",
+        "商业顾问",
+        "管理顾问",
+        "市场与销售管理岗位"
+      ],
+      "officialSourceUrl": "https://cyberjaya.edu.my/programme/master-of-business-administration",
+      "entryRequirement": {
+        "minGPA": null,
+        "gpaScale": null,
+        "gpaNote": "具体 CGPA、工作经验或同等资格由 UoC 录取审核。",
+        "degreeLevel": "学士学位或同等资格",
+        "degreeRelevance": null,
+        "workExperience": null
+      },
+      "studyMode": "on-campus",
+      "studyModeNote": "官方页面列明全日制 1-2 年、非全日制 2-4 年。",
+      "thesisRequired": false,
+      "thesisNote": "授课型硕士，含研究项目。",
+      "interviewRequired": null,
+      "interviewNote": null,
+      "supervisorSystem": false,
+      "rawLanguage": "English competency for MBA cluster: IELTS 6.0 or equivalent.",
+      "rawEntry": "Bachelor degree or equivalent qualification for MBA admission.",
+      "codeNote": "(R2/0414/7/0005) appears in the 2026 prospectus.",
+      "fieldStatus": {
+        "applicationDeadline": {
+          "status": "official-unpublished",
+          "crawlLevel": "L4",
+          "sourceUrl": "https://cyberjaya.edu.my/admission/online-application",
+          "note": "UoC 在线申请页列出可申请专业，但未公开逐专业申请截止日期。"
+        },
+        "language": {
+          "status": "official-verified-programme-page-or-prospectus",
+          "crawlLevel": "L2-PDF",
+          "sourceUrl": "https://cyberjaya.edu.my/programme/master-of-business-administration",
+          "note": "2026 研究生手册 MBA 页面列明 IELTS 6.0 或同等水平。"
+        },
+        "fee": {
+          "status": "matched-official-total-payable-fees",
+          "crawlLevel": "L1",
+          "sourceUrl": "https://cyberjaya.edu.my/admission/fees/international-fees-structure",
+          "note": "采用 UoC International Fees Structure 的 Total Payable Fees；页面说明费用为整个课程学制费用。"
+        },
+        "curriculum": {
+          "status": "official-source-localized-verified",
+          "crawlLevel": "L2-PDF",
+          "sourceUrl": "https://cyberjaya.edu.my/programme/master-of-business-administration",
+          "note": "课程、研究组成或专业方向依据官方专业页和 2026 研究生手册中文化整理，未使用第三方来源。"
+        },
+        "publicDisplayStatus": {
+          "status": "ready",
+          "crawlLevel": "V1-V4",
+          "sourceUrl": "https://cyberjaya.edu.my/programme/master-of-business-administration",
+          "note": "字段补缺验收通过；safe_to_import 仍保持 false，实际写库由受控导入器执行。"
+        }
+      },
+      "fieldEvidence": {
+        "officialProgrammePage": "https://cyberjaya.edu.my/programme/master-of-business-administration",
+        "officialFeePage": "https://cyberjaya.edu.my/admission/fees/international-fees-structure",
+        "officialApplicationPage": "https://cyberjaya.edu.my/admission/online-application",
+        "officialPostgraduateProspectus": "https://web.cyberjaya.edu.my/wp-content/uploads/2026/05/FA-A5PG-Prospectus-4-MAY-2026.pdf",
+        "officialProgrammeDirectory": "https://cyberjaya.edu.my/programmes?_by_level=masters",
+        "officialInternationalAdmissionsPage": "https://cyberjaya.edu.my/admission/international-admissions",
+        "rawLanguageText": "English competency for MBA cluster: IELTS 6.0 or equivalent.",
+        "rawCurriculumEn": [
+          "战略管理",
+          "人力资本管理",
+          "营销管理",
+          "管理财务与会计",
+          "管理经济学",
+          "管理信息系统",
+          "研究方法",
+          "电子商务分析",
+          "战略数字营销",
+          "数据驱动商业",
+          "商业研究项目"
+        ],
+        "rawCareerEn": [
+          "银行与金融管理岗位",
+          "业务发展经理",
+          "总经理",
+          "商业顾问",
+          "管理顾问",
+          "市场与销售管理岗位"
+        ],
+        "rawEntryTextSample": "Bachelor degree or equivalent qualification for MBA admission.",
+        "accreditationOrApprovalNote": "(R2/0414/7/0005) appears in the 2026 prospectus.",
+        "sourceUrls": [
+          "https://cyberjaya.edu.my/programme/master-of-business-administration",
+          "https://cyberjaya.edu.my/admission/fees/international-fees-structure",
+          "https://cyberjaya.edu.my/admission/online-application",
+          "https://web.cyberjaya.edu.my/wp-content/uploads/2026/05/FA-A5PG-Prospectus-4-MAY-2026.pdf"
+        ],
+        "evidenceNote": "fieldEvidence 保留官方英文事实和来源；公开字段已中文化且不使用第三方资料。"
+      }
+    },
+    {
+      "applicationDeadline": null,
+      "applicationDocs": [
+        "学生签证或 Student Pass 相关处理费用证明",
+        "白底护照尺寸照片",
+        "护照全页复印件且护照有效期需满足入学要求",
+        "经认证的学历证书和成绩单",
+        "EMGS 健康声明表",
+        "英语语言能力证明",
+        "非英文材料的英文翻译件",
+        "如适用，工作经验证明、研究计划、推荐信或资助证明等补充材料"
+      ],
+      "officialFeeSourceUrl": "https://cyberjaya.edu.my/admission/fees/international-fees-structure",
+      "officialVerifiedAt": "2026-06-25",
+      "creditHours": null,
+      "publicDisplayStatus": "ready",
+      "auditStatus": "official-verified-commercial-ready",
+      "_validationResult": "PASS",
+      "_validationIssues": [],
+      "_pendingIssues": [],
+      "nameEn": "Master of Clinical Psychology",
+      "name": "临床心理学硕士",
+      "faculty": "Faculty of Psychology and Social Sciences",
+      "facultyZh": "心理与社会科学学院",
+      "level": "master",
+      "duration": 2,
+      "tuitionMYR": 70050,
+      "tuitionNote": "国际学生 Total Payable Fees，官方费用页列为 Master of Clinical Psychology。",
+      "intake": [
+        3,
+        7,
+        10
+      ],
+      "language": {
+        "ielts": 6,
+        "toefl": null,
+        "pte": null,
+        "muet": null,
+        "otherRequirement": "IELTS 6.0 或同等英语能力证明；具体等效考试以 UoC 官方录取审核为准。",
+        "waiver": null
+      },
+      "languageNote": "临床心理学硕士按研究生心理/健康科学课程英语门槛 IELTS 6.0 或同等水平。",
+      "curriculum": [
+        "精神病理学",
+        "心理评估",
+        "心理治疗理论与技术",
+        "职业伦理",
+        "研究方法",
+        "临床实习",
+        "临床督导实践",
+        "研究项目"
+      ],
+      "curriculumNote": "课程和临床训练组成按官方页面中文化。",
+      "careerProspects": [
+        "临床心理师",
+        "心理健康服务岗位",
+        "心理咨询相关岗位",
+        "研究员",
+        "大学教师"
+      ],
+      "officialSourceUrl": "https://cyberjaya.edu.my/programme/master-of-clinical-psychology",
+      "entryRequirement": {
+        "minGPA": null,
+        "gpaScale": null,
+        "gpaNote": "临床类项目可能包含面试、实习能力和专业适配审核。",
+        "degreeLevel": "心理学本科学历或同等资格",
+        "degreeRelevance": "心理学或相关社会科学/健康科学领域",
+        "workExperience": null
+      },
+      "studyMode": "on-campus",
+      "studyModeNote": "官方目录和费用页确认课程身份；列表采用 2 年标准学制。",
+      "thesisRequired": false,
+      "thesisNote": "临床型硕士，含临床训练和研究项目。",
+      "interviewRequired": "possible",
+      "interviewNote": "临床类课程通常可能需要面试或专业适配审核；以 UoC 官方录取通知为准。",
+      "supervisorSystem": false,
+      "rawLanguage": "English competency for postgraduate psychology programmes: IELTS 6.0 or equivalent.",
+      "rawEntry": "Psychology bachelor degree or equivalent qualification; clinical programme admission may include professional suitability review.",
+      "codeNote": "Current programme directory and fee table confirm Master of Clinical Psychology.",
+      "fieldStatus": {
+        "applicationDeadline": {
+          "status": "official-unpublished",
+          "crawlLevel": "L4",
+          "sourceUrl": "https://cyberjaya.edu.my/admission/online-application",
+          "note": "UoC 在线申请页列出可申请专业，但未公开逐专业申请截止日期。"
+        },
+        "language": {
+          "status": "official-verified-programme-page-or-prospectus",
+          "crawlLevel": "L2-PDF",
+          "sourceUrl": "https://cyberjaya.edu.my/programme/master-of-clinical-psychology",
+          "note": "临床心理学硕士按研究生心理/健康科学课程英语门槛 IELTS 6.0 或同等水平。"
+        },
+        "fee": {
+          "status": "matched-official-total-payable-fees",
+          "crawlLevel": "L1",
+          "sourceUrl": "https://cyberjaya.edu.my/admission/fees/international-fees-structure",
+          "note": "采用 UoC International Fees Structure 的 Total Payable Fees；页面说明费用为整个课程学制费用。"
+        },
+        "curriculum": {
+          "status": "official-source-localized-verified",
+          "crawlLevel": "L2-PDF",
+          "sourceUrl": "https://cyberjaya.edu.my/programme/master-of-clinical-psychology",
+          "note": "课程、研究组成或专业方向依据官方专业页和 2026 研究生手册中文化整理，未使用第三方来源。"
+        },
+        "publicDisplayStatus": {
+          "status": "ready",
+          "crawlLevel": "V1-V4",
+          "sourceUrl": "https://cyberjaya.edu.my/programme/master-of-clinical-psychology",
+          "note": "字段补缺验收通过；safe_to_import 仍保持 false，实际写库由受控导入器执行。"
+        }
+      },
+      "fieldEvidence": {
+        "officialProgrammePage": "https://cyberjaya.edu.my/programme/master-of-clinical-psychology",
+        "officialFeePage": "https://cyberjaya.edu.my/admission/fees/international-fees-structure",
+        "officialApplicationPage": "https://cyberjaya.edu.my/admission/online-application",
+        "officialPostgraduateProspectus": "https://web.cyberjaya.edu.my/wp-content/uploads/2026/05/FA-A5PG-Prospectus-4-MAY-2026.pdf",
+        "officialProgrammeDirectory": "https://cyberjaya.edu.my/programmes?_by_level=masters",
+        "officialInternationalAdmissionsPage": "https://cyberjaya.edu.my/admission/international-admissions",
+        "rawLanguageText": "English competency for postgraduate psychology programmes: IELTS 6.0 or equivalent.",
+        "rawCurriculumEn": [
+          "精神病理学",
+          "心理评估",
+          "心理治疗理论与技术",
+          "职业伦理",
+          "研究方法",
+          "临床实习",
+          "临床督导实践",
+          "研究项目"
+        ],
+        "rawCareerEn": [
+          "临床心理师",
+          "心理健康服务岗位",
+          "心理咨询相关岗位",
+          "研究员",
+          "大学教师"
+        ],
+        "rawEntryTextSample": "Psychology bachelor degree or equivalent qualification; clinical programme admission may include professional suitability review.",
+        "accreditationOrApprovalNote": "Current programme directory and fee table confirm Master of Clinical Psychology.",
+        "sourceUrls": [
+          "https://cyberjaya.edu.my/programme/master-of-clinical-psychology",
+          "https://cyberjaya.edu.my/admission/fees/international-fees-structure",
+          "https://cyberjaya.edu.my/admission/online-application",
+          "https://web.cyberjaya.edu.my/wp-content/uploads/2026/05/FA-A5PG-Prospectus-4-MAY-2026.pdf"
+        ],
+        "evidenceNote": "fieldEvidence 保留官方英文事实和来源；公开字段已中文化且不使用第三方资料。"
+      }
+    },
+    {
+      "applicationDeadline": null,
+      "applicationDocs": [
+        "学生签证或 Student Pass 相关处理费用证明",
+        "白底护照尺寸照片",
+        "护照全页复印件且护照有效期需满足入学要求",
+        "经认证的学历证书和成绩单",
+        "EMGS 健康声明表",
+        "英语语言能力证明",
+        "非英文材料的英文翻译件",
+        "如适用，工作经验证明、研究计划、推荐信或资助证明等补充材料"
+      ],
+      "officialFeeSourceUrl": "https://cyberjaya.edu.my/admission/fees/international-fees-structure",
+      "officialVerifiedAt": "2026-06-25",
+      "creditHours": null,
+      "publicDisplayStatus": "ready",
+      "auditStatus": "official-verified-commercial-ready",
+      "_validationResult": "PASS",
+      "_validationIssues": [],
+      "_pendingIssues": [],
+      "nameEn": "Master of Physiotherapy",
+      "name": "物理治疗硕士",
+      "faculty": "Faculty of Allied Health Sciences",
+      "facultyZh": "联合健康科学学院",
+      "level": "master",
+      "duration": 1.5,
+      "tuitionMYR": 32800,
+      "tuitionNote": "国际学生 Total Payable Fees，官方费用页列为 Master of Physiotherapy。",
+      "intake": [
+        3,
+        7,
+        10
+      ],
+      "language": {
+        "ielts": 6,
+        "toefl": null,
+        "pte": null,
+        "muet": null,
+        "otherRequirement": "IELTS 6.0 或同等英语能力证明；具体等效考试以 UoC 官方录取审核为准。",
+        "waiver": null
+      },
+      "languageNote": "物理治疗硕士按研究生健康科学课程英语门槛 IELTS 6.0 或同等水平。",
+      "curriculum": [
+        "肌骨物理治疗",
+        "神经康复",
+        "心肺物理治疗",
+        "循证实践",
+        "临床评估",
+        "研究方法",
+        "临床实践",
+        "研究项目"
+      ],
+      "curriculumNote": "课程主题按官方专业页和研究生手册中文化整理。",
+      "careerProspects": [
+        "专科物理治疗师",
+        "高级临床实践岗位",
+        "康复顾问",
+        "大学教师",
+        "康复研究岗位"
+      ],
+      "officialSourceUrl": "https://cyberjaya.edu.my/programme/master-of-physiotherapy",
+      "entryRequirement": {
+        "minGPA": null,
+        "gpaScale": null,
+        "gpaNote": "专业资格和临床背景由 UoC 官方审核。",
+        "degreeLevel": "物理治疗或相关健康科学本科学历",
+        "degreeRelevance": "物理治疗、康复或相关健康科学领域",
+        "workExperience": null
+      },
+      "studyMode": "on-campus",
+      "studyModeNote": "官方目录和费用页确认课程身份；列表采用 1.5 年标准学制。",
+      "thesisRequired": false,
+      "thesisNote": "临床/授课型硕士，含临床实践和研究项目。",
+      "interviewRequired": null,
+      "interviewNote": null,
+      "supervisorSystem": false,
+      "rawLanguage": "English competency for postgraduate allied health programmes: IELTS 6.0 or equivalent.",
+      "rawEntry": "Physiotherapy or related health sciences bachelor degree or equivalent qualification.",
+      "codeNote": "Current programme directory and fee table confirm Master of Physiotherapy.",
+      "fieldStatus": {
+        "applicationDeadline": {
+          "status": "official-unpublished",
+          "crawlLevel": "L4",
+          "sourceUrl": "https://cyberjaya.edu.my/admission/online-application",
+          "note": "UoC 在线申请页列出可申请专业，但未公开逐专业申请截止日期。"
+        },
+        "language": {
+          "status": "official-verified-programme-page-or-prospectus",
+          "crawlLevel": "L2-PDF",
+          "sourceUrl": "https://cyberjaya.edu.my/programme/master-of-physiotherapy",
+          "note": "物理治疗硕士按研究生健康科学课程英语门槛 IELTS 6.0 或同等水平。"
+        },
+        "fee": {
+          "status": "matched-official-total-payable-fees",
+          "crawlLevel": "L1",
+          "sourceUrl": "https://cyberjaya.edu.my/admission/fees/international-fees-structure",
+          "note": "采用 UoC International Fees Structure 的 Total Payable Fees；页面说明费用为整个课程学制费用。"
+        },
+        "curriculum": {
+          "status": "official-source-localized-verified",
+          "crawlLevel": "L2-PDF",
+          "sourceUrl": "https://cyberjaya.edu.my/programme/master-of-physiotherapy",
+          "note": "课程、研究组成或专业方向依据官方专业页和 2026 研究生手册中文化整理，未使用第三方来源。"
+        },
+        "publicDisplayStatus": {
+          "status": "ready",
+          "crawlLevel": "V1-V4",
+          "sourceUrl": "https://cyberjaya.edu.my/programme/master-of-physiotherapy",
+          "note": "字段补缺验收通过；safe_to_import 仍保持 false，实际写库由受控导入器执行。"
+        }
+      },
+      "fieldEvidence": {
+        "officialProgrammePage": "https://cyberjaya.edu.my/programme/master-of-physiotherapy",
+        "officialFeePage": "https://cyberjaya.edu.my/admission/fees/international-fees-structure",
+        "officialApplicationPage": "https://cyberjaya.edu.my/admission/online-application",
+        "officialPostgraduateProspectus": "https://web.cyberjaya.edu.my/wp-content/uploads/2026/05/FA-A5PG-Prospectus-4-MAY-2026.pdf",
+        "officialProgrammeDirectory": "https://cyberjaya.edu.my/programmes?_by_level=masters",
+        "officialInternationalAdmissionsPage": "https://cyberjaya.edu.my/admission/international-admissions",
+        "rawLanguageText": "English competency for postgraduate allied health programmes: IELTS 6.0 or equivalent.",
+        "rawCurriculumEn": [
+          "肌骨物理治疗",
+          "神经康复",
+          "心肺物理治疗",
+          "循证实践",
+          "临床评估",
+          "研究方法",
+          "临床实践",
+          "研究项目"
+        ],
+        "rawCareerEn": [
+          "专科物理治疗师",
+          "高级临床实践岗位",
+          "康复顾问",
+          "大学教师",
+          "康复研究岗位"
+        ],
+        "rawEntryTextSample": "Physiotherapy or related health sciences bachelor degree or equivalent qualification.",
+        "accreditationOrApprovalNote": "Current programme directory and fee table confirm Master of Physiotherapy.",
+        "sourceUrls": [
+          "https://cyberjaya.edu.my/programme/master-of-physiotherapy",
+          "https://cyberjaya.edu.my/admission/fees/international-fees-structure",
+          "https://cyberjaya.edu.my/admission/online-application",
+          "https://web.cyberjaya.edu.my/wp-content/uploads/2026/05/FA-A5PG-Prospectus-4-MAY-2026.pdf"
+        ],
+        "evidenceNote": "fieldEvidence 保留官方英文事实和来源；公开字段已中文化且不使用第三方资料。"
+      }
+    }
+  ],
+  "exception_queue": [
+    {
+      "nameEn": "Master of Business Administration (MBA) DUAL AWARD (TOP UP)",
+      "sourceUrl": "https://cyberjaya.edu.my/admission/fees/international-fees-structure",
+      "status": "excluded-fee-only-top-up",
+      "reason": "Official fee page row is a top-up fee path, not a standalone programme in the current directory/application list."
+    }
+  ],
+  "collectionSummary": {
+    "totalProgrammes": 16,
+    "readyProgrammes": 16,
+    "needsReviewProgrammes": 0,
+    "feeRowsMatched": 16,
+    "languageRowsMatched": 16,
+    "curriculumRowsLocalized": 16,
+    "pendingIssues": 0
+  },
+  "validationMeta": {
+    "reviewVersion": 1,
+    "overallDecision": "PASS-WITH-EXCEPTIONS",
+    "reviewedAt": "2026-06-25",
+    "counts": {
+      "totalProgrammesValidated": 16,
+      "pass": 16,
+      "warn": 0,
+      "repair": 0,
+      "reject": 0,
+      "issuesFound": 0,
+      "issuesRepaired": 0,
+      "issuesPending": 0
+    }
+  },
+  "repair_log": [
+    {
+      "repairedAt": "2026-06-25",
+      "action": "master audit generated after official-source gap repair",
+      "note": "Added language, fee, curriculum, mode and exception evidence from current UoC official pages and 2026 PG prospectus."
+    }
+  ],
+  "pending_issues": [],
+  "officialDisplayPolicy": {
+    "publicDisplayStatus": "ready",
+    "safeToImportRemainsFalse": true,
+    "importerMustValidate": true,
+    "noThirdPartySources": true,
+    "feeDisplay": "Total Payable Fees (RM) for entire programme duration from UoC official International Fees Structure.",
+    "unsupportedRows": [
+      "Master of Business Administration (MBA) DUAL AWARD (TOP UP)"
+    ]
+  }
+}

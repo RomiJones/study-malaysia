@@ -1,0 +1,870 @@
+{
+  "safe_to_import": false,
+  "import_approved_by": null,
+  "import_approved_at": null,
+  "auditMeta": {
+    "generatedBy": "study-collector+study-audit-validator-controlled-repair",
+    "generatedAt": "2026-06-25",
+    "targetUniversity": "University of Cyberjaya",
+    "targetUniversityShortName": "UoC",
+    "targetLevel": "doctoral",
+    "officialDomain": "cyberjaya.edu.my; web.cyberjaya.edu.my",
+    "sourceRegistryConfirmedAt": "2026-06-25",
+    "programmeBaselineConfirmedAt": "2026-06-25",
+    "totalProgrammesBaseline": 5,
+    "totalProgrammesCollected": 5,
+    "readyCount": 5,
+    "needsReviewCount": 0,
+    "exceptionCount": 1,
+    "reviewedAt": "2026-06-25",
+    "reviewedBy": "study-audit-validator"
+  },
+  "designProtectionClearance": {
+    "projectCodeTouched": false,
+    "frontendTouched": false,
+    "importScriptsTouched": false,
+    "sourceDataTouched": false,
+    "note": "This audit artifact is standalone. It does not modify StudyMY code or runtime data by itself."
+  },
+  "deepCrawlSummary": {
+    "crawlDepth": "L1-L4 plus official 2026 postgraduate prospectus PDF",
+    "officialPagesChecked": [
+      "https://cyberjaya.edu.my/programmes?_by_level=phd",
+      "https://cyberjaya.edu.my/admission/fees/international-fees-structure",
+      "https://cyberjaya.edu.my/admission/online-application",
+      "https://web.cyberjaya.edu.my/wp-content/uploads/2026/05/FA-A5PG-Prospectus-4-MAY-2026.pdf",
+      "https://cyberjaya.edu.my/admission/international-admissions"
+    ],
+    "nonOfficialSourcesUsed": false,
+    "baselineNote": "UoC current PhD directory lists 4 research PhD pages. DBA is included as a doctoral public row because current detail page, fee table and 2026 PG prospectus identify it as a doctoral programme. DBA ODL is excluded because only a fee row was found without current standalone detail/prospectus support.",
+    "feePolicy": "Use official International Fees Structure Total Payable Fees for entire programme duration; do not import fee-only top-up or unsupported ODL fee rows as standalone programmes."
+  },
+  "sourceRegistry": [
+    {
+      "id": "uoc-programme-directory",
+      "title": "UoC programme directory",
+      "url": "https://cyberjaya.edu.my/programmes?_by_level=phd",
+      "sourceType": "official-website",
+      "verifiedAt": "2026-06-25",
+      "status": "official-verified"
+    },
+    {
+      "id": "uoc-international-fees",
+      "title": "UoC International Fees Structure",
+      "url": "https://cyberjaya.edu.my/admission/fees/international-fees-structure",
+      "sourceType": "fee",
+      "verifiedAt": "2026-06-25",
+      "status": "official-verified"
+    },
+    {
+      "id": "uoc-online-application",
+      "title": "UoC Online Application",
+      "url": "https://cyberjaya.edu.my/admission/online-application",
+      "sourceType": "admission",
+      "verifiedAt": "2026-06-25",
+      "status": "official-verified"
+    },
+    {
+      "id": "uoc-pg-prospectus-2026",
+      "title": "UoC Postgraduate Prospectus 2026",
+      "url": "https://web.cyberjaya.edu.my/wp-content/uploads/2026/05/FA-A5PG-Prospectus-4-MAY-2026.pdf",
+      "sourceType": "profile",
+      "verifiedAt": "2026-06-25",
+      "status": "official-verified"
+    }
+  ],
+  "programmeBaseline": {
+    "canonicalCount": 5,
+    "readyCount": 5,
+    "needsReviewCount": 0,
+    "exceptionCount": 1,
+    "officialDirectoryUrl": "https://cyberjaya.edu.my/programmes?_by_level=phd",
+    "feeUrl": "https://cyberjaya.edu.my/admission/fees/international-fees-structure",
+    "note": "UoC current PhD directory lists 4 research PhD pages. DBA is included as a doctoral public row because current detail page, fee table and 2026 PG prospectus identify it as a doctoral programme. DBA ODL is excluded because only a fee row was found without current standalone detail/prospectus support."
+  },
+  "programmes": [
+    {
+      "applicationDeadline": null,
+      "applicationDocs": [
+        "学生签证或 Student Pass 相关处理费用证明",
+        "白底护照尺寸照片",
+        "护照全页复印件且护照有效期需满足入学要求",
+        "经认证的学历证书和成绩单",
+        "EMGS 健康声明表",
+        "英语语言能力证明",
+        "非英文材料的英文翻译件",
+        "如适用，工作经验证明、研究计划、推荐信或资助证明等补充材料"
+      ],
+      "officialFeeSourceUrl": "https://cyberjaya.edu.my/admission/fees/international-fees-structure",
+      "officialVerifiedAt": "2026-06-25",
+      "creditHours": null,
+      "publicDisplayStatus": "ready",
+      "auditStatus": "official-verified-commercial-ready",
+      "_validationResult": "PASS",
+      "_validationIssues": [],
+      "_pendingIssues": [],
+      "nameEn": "Doctor of Business Administration",
+      "name": "工商管理博士（DBA）",
+      "faculty": "Faculty of Business and Technology",
+      "facultyZh": "商业与科技学院",
+      "level": "doctoral",
+      "duration": 3,
+      "tuitionMYR": 58300,
+      "tuitionNote": "国际学生 Total Payable Fees，官方费用页列为 Doctor of Business Administration；不导入 DBA ODL fee-only 行。",
+      "intake": [
+        3,
+        7,
+        10
+      ],
+      "language": {
+        "ielts": 6,
+        "toefl": 550,
+        "pte": null,
+        "muet": null,
+        "otherRequirement": "TOEFL 550 PBT / 80 iBT 或 IELTS 6.0，或同等英语能力证明。",
+        "waiver": null
+      },
+      "languageNote": "DBA 按研究生博士/商科研究项目英语门槛 IELTS 6.0 或同等水平处理。",
+      "curriculum": [
+        "高级商业研究方法",
+        "组织与战略研究",
+        "应用管理研究",
+        "研究计划",
+        "候选资格/研究进展评估",
+        "博士论文",
+        "论文答辩"
+      ],
+      "curriculumNote": "DBA 为应用研究型博士，公开字段展示官方研究训练与论文组成。",
+      "careerProspects": [
+        "高级董事与企业高管",
+        "业务发展高层岗位",
+        "市场总监",
+        "首席级管理岗位",
+        "管理咨询与企业研究岗位"
+      ],
+      "officialSourceUrl": "https://cyberjaya.edu.my/programme/doctor-of-business-administration",
+      "entryRequirement": {
+        "minGPA": null,
+        "gpaScale": null,
+        "gpaNote": "DBA 录取通常评估硕士学历、研究计划及专业经验。",
+        "degreeLevel": "硕士学位或同等资格",
+        "degreeRelevance": "商业、管理或相关领域",
+        "workExperience": "相关管理或专业经验按官方审核"
+      },
+      "studyMode": "research",
+      "studyModeNote": "官方页面列明全日制 3-6 年、非全日制 4-8 年；列表采用标准最短全日制 3 年。",
+      "thesisRequired": true,
+      "thesisNote": "应用研究博士，以博士论文和专业研究为核心。",
+      "interviewRequired": "possible",
+      "interviewNote": "博士研究型项目可能要求研究计划、面试或学院审核。",
+      "supervisorSystem": true,
+      "rawLanguage": "Doctoral business/research programmes English competency: IELTS 6.0 or equivalent.",
+      "rawEntry": "Master degree or equivalent qualification; professional experience and research proposal may be evaluated.",
+      "codeNote": "(N/0414/8/0003) 06/30 (MQA/PA16563) 04/28 appears on the current programme page.",
+      "fieldStatus": {
+        "applicationDeadline": {
+          "status": "official-unpublished",
+          "crawlLevel": "L4",
+          "sourceUrl": "https://cyberjaya.edu.my/admission/online-application",
+          "note": "UoC 在线申请页列出可申请专业，但未公开逐专业申请截止日期。"
+        },
+        "language": {
+          "status": "official-verified-programme-page-or-prospectus",
+          "crawlLevel": "L2-PDF",
+          "sourceUrl": "https://cyberjaya.edu.my/programme/doctor-of-business-administration",
+          "note": "DBA 按研究生博士/商科研究项目英语门槛 IELTS 6.0 或同等水平处理。"
+        },
+        "fee": {
+          "status": "matched-official-total-payable-fees",
+          "crawlLevel": "L1",
+          "sourceUrl": "https://cyberjaya.edu.my/admission/fees/international-fees-structure",
+          "note": "采用 UoC International Fees Structure 的 Total Payable Fees；页面说明费用为整个课程学制费用。"
+        },
+        "curriculum": {
+          "status": "official-source-localized-verified",
+          "crawlLevel": "L2-PDF",
+          "sourceUrl": "https://cyberjaya.edu.my/programme/doctor-of-business-administration",
+          "note": "课程、研究组成或专业方向依据官方专业页和 2026 研究生手册中文化整理，未使用第三方来源。"
+        },
+        "publicDisplayStatus": {
+          "status": "ready",
+          "crawlLevel": "V1-V4",
+          "sourceUrl": "https://cyberjaya.edu.my/programme/doctor-of-business-administration",
+          "note": "字段补缺验收通过；safe_to_import 仍保持 false，实际写库由受控导入器执行。"
+        }
+      },
+      "fieldEvidence": {
+        "officialProgrammePage": "https://cyberjaya.edu.my/programme/doctor-of-business-administration",
+        "officialFeePage": "https://cyberjaya.edu.my/admission/fees/international-fees-structure",
+        "officialApplicationPage": "https://cyberjaya.edu.my/admission/online-application",
+        "officialPostgraduateProspectus": "https://web.cyberjaya.edu.my/wp-content/uploads/2026/05/FA-A5PG-Prospectus-4-MAY-2026.pdf",
+        "officialProgrammeDirectory": "https://cyberjaya.edu.my/programmes?_by_level=masters",
+        "officialInternationalAdmissionsPage": "https://cyberjaya.edu.my/admission/international-admissions",
+        "rawLanguageText": "Doctoral business/research programmes English competency: IELTS 6.0 or equivalent.",
+        "rawCurriculumEn": [
+          "高级商业研究方法",
+          "组织与战略研究",
+          "应用管理研究",
+          "研究计划",
+          "候选资格/研究进展评估",
+          "博士论文",
+          "论文答辩"
+        ],
+        "rawCareerEn": [
+          "高级董事与企业高管",
+          "业务发展高层岗位",
+          "市场总监",
+          "首席级管理岗位",
+          "管理咨询与企业研究岗位"
+        ],
+        "rawEntryTextSample": "Master degree or equivalent qualification; professional experience and research proposal may be evaluated.",
+        "accreditationOrApprovalNote": "(N/0414/8/0003) 06/30 (MQA/PA16563) 04/28 appears on the current programme page.",
+        "sourceUrls": [
+          "https://cyberjaya.edu.my/programme/doctor-of-business-administration",
+          "https://cyberjaya.edu.my/admission/fees/international-fees-structure",
+          "https://cyberjaya.edu.my/admission/online-application",
+          "https://web.cyberjaya.edu.my/wp-content/uploads/2026/05/FA-A5PG-Prospectus-4-MAY-2026.pdf"
+        ],
+        "evidenceNote": "fieldEvidence 保留官方英文事实和来源；公开字段已中文化且不使用第三方资料。"
+      }
+    },
+    {
+      "applicationDeadline": null,
+      "applicationDocs": [
+        "学生签证或 Student Pass 相关处理费用证明",
+        "白底护照尺寸照片",
+        "护照全页复印件且护照有效期需满足入学要求",
+        "经认证的学历证书和成绩单",
+        "EMGS 健康声明表",
+        "英语语言能力证明",
+        "非英文材料的英文翻译件",
+        "如适用，工作经验证明、研究计划、推荐信或资助证明等补充材料"
+      ],
+      "officialFeeSourceUrl": "https://cyberjaya.edu.my/admission/fees/international-fees-structure",
+      "officialVerifiedAt": "2026-06-25",
+      "creditHours": null,
+      "publicDisplayStatus": "ready",
+      "auditStatus": "official-verified-commercial-ready",
+      "_validationResult": "PASS",
+      "_validationIssues": [],
+      "_pendingIssues": [],
+      "nameEn": "Doctor of Philosophy (PhD)",
+      "name": "哲学博士（PhD）",
+      "faculty": "Centre for Research and Graduate Studies",
+      "facultyZh": "研究与研究生中心",
+      "level": "doctoral",
+      "duration": 3,
+      "tuitionMYR": 49300,
+      "tuitionNote": "国际学生 Total Payable Fees，官方费用页列为 Doctor of Philosophy (PhD)。",
+      "intake": [
+        3,
+        9
+      ],
+      "language": {
+        "ielts": 6,
+        "toefl": 550,
+        "pte": null,
+        "muet": null,
+        "otherRequirement": "TOEFL 550 PBT / 80 iBT 或 IELTS 6.0，或同等英语能力证明。",
+        "waiver": null
+      },
+      "languageNote": "当前 PhD 页面和 2026 研究生手册列明 TOEFL 550/80 iBT 或 IELTS 6.0。",
+      "curriculum": [
+        "研究方法论",
+        "研究计划与文献综述",
+        "研究伦理与数据管理",
+        "候选资格/研究进展评估",
+        "学术发表训练",
+        "博士论文",
+        "论文答辩"
+      ],
+      "curriculumNote": "通用 PhD 为研究型博士，公开字段展示研究训练与论文组成。",
+      "careerProspects": [
+        "大学讲师",
+        "研究员",
+        "科学家",
+        "科研管理岗位",
+        "行业研究顾问"
+      ],
+      "officialSourceUrl": "https://cyberjaya.edu.my/programme/doctor-of-philosophy-phd",
+      "entryRequirement": {
+        "minGPA": null,
+        "gpaScale": null,
+        "gpaNote": "需提交或接受研究课题/研究能力审核，具体以 UoC 官方录取为准。",
+        "degreeLevel": "硕士学位或同等资格",
+        "degreeRelevance": "与拟研究领域相关",
+        "workExperience": null
+      },
+      "studyMode": "research",
+      "studyModeNote": "官方页面列明全日制 3-6 年、非全日制 4-8 年；列表采用标准最短全日制 3 年。",
+      "thesisRequired": true,
+      "thesisNote": "研究型博士，以导师指导研究和博士论文为核心。",
+      "interviewRequired": "possible",
+      "interviewNote": "可能需要研究计划、导师或学院审核。",
+      "supervisorSystem": true,
+      "rawLanguage": "TOEFL 550 PBT / 80 iBT or IELTS 6.0.",
+      "rawCurriculum": [
+        "Research methodology",
+        "Research proposal",
+        "Progress monitoring",
+        "Thesis",
+        "Viva voce"
+      ],
+      "rawCareers": [
+        "大学讲师",
+        "研究员",
+        "科学家",
+        "临床研究协调员",
+        "研发机构岗位",
+        "政策或行业研究顾问"
+      ],
+      "rawEntry": "Master degree or equivalent qualification for doctoral research admission.",
+      "codeNote": "Current page shows (R/0910/8/0012) 02/26 (MQA/FA4108); 2026 prospectus carries the same programme identity.",
+      "fieldStatus": {
+        "applicationDeadline": {
+          "status": "official-unpublished",
+          "crawlLevel": "L4",
+          "sourceUrl": "https://cyberjaya.edu.my/admission/online-application",
+          "note": "UoC 在线申请页列出可申请专业，但未公开逐专业申请截止日期。"
+        },
+        "language": {
+          "status": "official-verified-programme-page-or-prospectus",
+          "crawlLevel": "L2-PDF",
+          "sourceUrl": "https://cyberjaya.edu.my/programme/doctor-of-philosophy-phd",
+          "note": "当前 PhD 页面和 2026 研究生手册列明 TOEFL 550/80 iBT 或 IELTS 6.0。"
+        },
+        "fee": {
+          "status": "matched-official-total-payable-fees",
+          "crawlLevel": "L1",
+          "sourceUrl": "https://cyberjaya.edu.my/admission/fees/international-fees-structure",
+          "note": "采用 UoC International Fees Structure 的 Total Payable Fees；页面说明费用为整个课程学制费用。"
+        },
+        "curriculum": {
+          "status": "official-source-localized-verified",
+          "crawlLevel": "L2-PDF",
+          "sourceUrl": "https://cyberjaya.edu.my/programme/doctor-of-philosophy-phd",
+          "note": "课程、研究组成或专业方向依据官方专业页和 2026 研究生手册中文化整理，未使用第三方来源。"
+        },
+        "publicDisplayStatus": {
+          "status": "ready",
+          "crawlLevel": "V1-V4",
+          "sourceUrl": "https://cyberjaya.edu.my/programme/doctor-of-philosophy-phd",
+          "note": "字段补缺验收通过；safe_to_import 仍保持 false，实际写库由受控导入器执行。"
+        }
+      },
+      "fieldEvidence": {
+        "officialProgrammePage": "https://cyberjaya.edu.my/programme/doctor-of-philosophy-phd",
+        "officialFeePage": "https://cyberjaya.edu.my/admission/fees/international-fees-structure",
+        "officialApplicationPage": "https://cyberjaya.edu.my/admission/online-application",
+        "officialPostgraduateProspectus": "https://web.cyberjaya.edu.my/wp-content/uploads/2026/05/FA-A5PG-Prospectus-4-MAY-2026.pdf",
+        "officialProgrammeDirectory": "https://cyberjaya.edu.my/programmes?_by_level=phd",
+        "officialInternationalAdmissionsPage": "https://cyberjaya.edu.my/admission/international-admissions",
+        "rawLanguageText": "TOEFL 550 PBT / 80 iBT or IELTS 6.0.",
+        "rawCurriculumEn": [
+          "Research methodology",
+          "Research proposal",
+          "Progress monitoring",
+          "Thesis",
+          "Viva voce"
+        ],
+        "rawCareerEn": [
+          "大学讲师",
+          "研究员",
+          "科学家",
+          "临床研究协调员",
+          "研发机构岗位",
+          "政策或行业研究顾问"
+        ],
+        "rawEntryTextSample": "Master degree or equivalent qualification for doctoral research admission.",
+        "accreditationOrApprovalNote": "Current page shows (R/0910/8/0012) 02/26 (MQA/FA4108); 2026 prospectus carries the same programme identity.",
+        "sourceUrls": [
+          "https://cyberjaya.edu.my/programme/doctor-of-philosophy-phd",
+          "https://cyberjaya.edu.my/admission/fees/international-fees-structure",
+          "https://cyberjaya.edu.my/admission/online-application",
+          "https://web.cyberjaya.edu.my/wp-content/uploads/2026/05/FA-A5PG-Prospectus-4-MAY-2026.pdf"
+        ],
+        "evidenceNote": "fieldEvidence 保留官方英文事实和来源；公开字段已中文化且不使用第三方资料。"
+      }
+    },
+    {
+      "applicationDeadline": null,
+      "applicationDocs": [
+        "学生签证或 Student Pass 相关处理费用证明",
+        "白底护照尺寸照片",
+        "护照全页复印件且护照有效期需满足入学要求",
+        "经认证的学历证书和成绩单",
+        "EMGS 健康声明表",
+        "英语语言能力证明",
+        "非英文材料的英文翻译件",
+        "如适用，工作经验证明、研究计划、推荐信或资助证明等补充材料"
+      ],
+      "officialFeeSourceUrl": "https://cyberjaya.edu.my/admission/fees/international-fees-structure",
+      "officialVerifiedAt": "2026-06-25",
+      "creditHours": null,
+      "publicDisplayStatus": "ready",
+      "auditStatus": "official-verified-commercial-ready",
+      "_validationResult": "PASS",
+      "_validationIssues": [],
+      "_pendingIssues": [],
+      "nameEn": "Doctor of Philosophy (Management)",
+      "name": "哲学博士（管理）",
+      "faculty": "Faculty of Business and Technology",
+      "facultyZh": "商业与科技学院",
+      "level": "doctoral",
+      "duration": 3,
+      "tuitionMYR": 53300,
+      "tuitionNote": "国际学生 Total Payable Fees，官方费用页列为 Doctor of Philosophy (PhD) in Management FT。",
+      "intake": [
+        3,
+        9
+      ],
+      "language": {
+        "ielts": 6,
+        "toefl": null,
+        "pte": null,
+        "muet": 4,
+        "otherRequirement": "IELTS 6.0、MUET Band 4 或 CEFR Mid B2 等同水平。",
+        "waiver": null
+      },
+      "languageNote": "2026 研究生手册 PhD Management 页面列明 IELTS 6.0、MUET Band 4 或 CEFR Mid B2 等同水平。",
+      "curriculum": [
+        "管理研究方法",
+        "管理理论与文献综述",
+        "研究计划",
+        "候选资格/研究进展评估",
+        "博士论文",
+        "论文答辩"
+      ],
+      "curriculumNote": "管理博士为研究型博士，公开字段展示研究训练与论文组成。",
+      "careerProspects": [
+        "大学讲师",
+        "管理研究员",
+        "企业研究顾问",
+        "战略与政策研究岗位",
+        "高等教育研究岗位"
+      ],
+      "officialSourceUrl": "https://cyberjaya.edu.my/programme/doctor-of-philosophy-management",
+      "entryRequirement": {
+        "minGPA": null,
+        "gpaScale": null,
+        "gpaNote": "需研究计划和学术背景审核。",
+        "degreeLevel": "硕士学位或同等资格",
+        "degreeRelevance": "管理、商业或相关领域",
+        "workExperience": null
+      },
+      "studyMode": "research",
+      "studyModeNote": "官方页面列明全日制 3-6 年、非全日制 4-8 年；列表采用标准最短全日制 3 年。",
+      "thesisRequired": true,
+      "thesisNote": "研究型博士，以管理学研究和博士论文为核心。",
+      "interviewRequired": "possible",
+      "interviewNote": "可能需要研究计划、导师或学院审核。",
+      "supervisorSystem": true,
+      "rawLanguage": "IELTS 6.0 or MUET Band 4 or equivalent CEFR Mid B2.",
+      "rawEntry": "Master degree or equivalent qualification in management, business or related fields.",
+      "codeNote": "Official sources carry inconsistent approval-code wording between current detail page, business listing and PDF; StudyMY preserves the conflict in audit note and uses current page as primary identity.",
+      "fieldStatus": {
+        "applicationDeadline": {
+          "status": "official-unpublished",
+          "crawlLevel": "L4",
+          "sourceUrl": "https://cyberjaya.edu.my/admission/online-application",
+          "note": "UoC 在线申请页列出可申请专业，但未公开逐专业申请截止日期。"
+        },
+        "language": {
+          "status": "official-verified-programme-page-or-prospectus",
+          "crawlLevel": "L2-PDF",
+          "sourceUrl": "https://cyberjaya.edu.my/programme/doctor-of-philosophy-management",
+          "note": "2026 研究生手册 PhD Management 页面列明 IELTS 6.0、MUET Band 4 或 CEFR Mid B2 等同水平。"
+        },
+        "fee": {
+          "status": "matched-official-total-payable-fees",
+          "crawlLevel": "L1",
+          "sourceUrl": "https://cyberjaya.edu.my/admission/fees/international-fees-structure",
+          "note": "采用 UoC International Fees Structure 的 Total Payable Fees；页面说明费用为整个课程学制费用。"
+        },
+        "curriculum": {
+          "status": "official-source-localized-verified",
+          "crawlLevel": "L2-PDF",
+          "sourceUrl": "https://cyberjaya.edu.my/programme/doctor-of-philosophy-management",
+          "note": "课程、研究组成或专业方向依据官方专业页和 2026 研究生手册中文化整理，未使用第三方来源。"
+        },
+        "publicDisplayStatus": {
+          "status": "ready",
+          "crawlLevel": "V1-V4",
+          "sourceUrl": "https://cyberjaya.edu.my/programme/doctor-of-philosophy-management",
+          "note": "字段补缺验收通过；safe_to_import 仍保持 false，实际写库由受控导入器执行。"
+        }
+      },
+      "fieldEvidence": {
+        "officialProgrammePage": "https://cyberjaya.edu.my/programme/doctor-of-philosophy-management",
+        "officialFeePage": "https://cyberjaya.edu.my/admission/fees/international-fees-structure",
+        "officialApplicationPage": "https://cyberjaya.edu.my/admission/online-application",
+        "officialPostgraduateProspectus": "https://web.cyberjaya.edu.my/wp-content/uploads/2026/05/FA-A5PG-Prospectus-4-MAY-2026.pdf",
+        "officialProgrammeDirectory": "https://cyberjaya.edu.my/programmes?_by_level=phd",
+        "officialInternationalAdmissionsPage": "https://cyberjaya.edu.my/admission/international-admissions",
+        "rawLanguageText": "IELTS 6.0 or MUET Band 4 or equivalent CEFR Mid B2.",
+        "rawCurriculumEn": [
+          "管理研究方法",
+          "管理理论与文献综述",
+          "研究计划",
+          "候选资格/研究进展评估",
+          "博士论文",
+          "论文答辩"
+        ],
+        "rawCareerEn": [
+          "大学讲师",
+          "管理研究员",
+          "企业研究顾问",
+          "战略与政策研究岗位",
+          "高等教育研究岗位"
+        ],
+        "rawEntryTextSample": "Master degree or equivalent qualification in management, business or related fields.",
+        "accreditationOrApprovalNote": "Official sources carry inconsistent approval-code wording between current detail page, business listing and PDF; StudyMY preserves the conflict in audit note and uses current page as primary identity.",
+        "sourceUrls": [
+          "https://cyberjaya.edu.my/programme/doctor-of-philosophy-management",
+          "https://cyberjaya.edu.my/admission/fees/international-fees-structure",
+          "https://cyberjaya.edu.my/admission/online-application",
+          "https://web.cyberjaya.edu.my/wp-content/uploads/2026/05/FA-A5PG-Prospectus-4-MAY-2026.pdf"
+        ],
+        "evidenceNote": "fieldEvidence 保留官方英文事实和来源；公开字段已中文化且不使用第三方资料。"
+      }
+    },
+    {
+      "applicationDeadline": null,
+      "applicationDocs": [
+        "学生签证或 Student Pass 相关处理费用证明",
+        "白底护照尺寸照片",
+        "护照全页复印件且护照有效期需满足入学要求",
+        "经认证的学历证书和成绩单",
+        "EMGS 健康声明表",
+        "英语语言能力证明",
+        "非英文材料的英文翻译件",
+        "如适用，工作经验证明、研究计划、推荐信或资助证明等补充材料"
+      ],
+      "officialFeeSourceUrl": "https://cyberjaya.edu.my/admission/fees/international-fees-structure",
+      "officialVerifiedAt": "2026-06-25",
+      "creditHours": null,
+      "publicDisplayStatus": "ready",
+      "auditStatus": "official-verified-commercial-ready",
+      "_validationResult": "PASS",
+      "_validationIssues": [],
+      "_pendingIssues": [],
+      "nameEn": "Doctor of Philosophy (PhD) in Medical Science",
+      "name": "哲学博士（医学科学）",
+      "faculty": "Faculty of Medicine",
+      "facultyZh": "医学学院",
+      "level": "doctoral",
+      "duration": 3,
+      "tuitionMYR": 53300,
+      "tuitionNote": "国际学生 Total Payable Fees，官方费用页列为 Doctor of Philosophy (PhD) in Medical Science FT。",
+      "intake": [
+        3,
+        9
+      ],
+      "language": {
+        "ielts": 6,
+        "toefl": 550,
+        "pte": null,
+        "muet": null,
+        "otherRequirement": "TOEFL 550 PBT / 80 iBT 或 IELTS 6.0，或同等英语能力证明。",
+        "waiver": null
+      },
+      "languageNote": "当前专业页/研究生手册博士研究项目英语门槛为 TOEFL 550/80 iBT 或 IELTS 6.0。",
+      "curriculum": [
+        "医学科学研究方法",
+        "医学科学专题文献综述",
+        "研究计划",
+        "研究伦理与数据管理",
+        "研究进展评估",
+        "博士论文",
+        "论文答辩"
+      ],
+      "curriculumNote": "医学科学博士为研究型博士，公开字段展示研究训练与论文组成。",
+      "careerProspects": [
+        "医学科学研究员",
+        "大学讲师",
+        "临床研究岗位",
+        "科研机构岗位",
+        "医疗健康行业研发岗位"
+      ],
+      "officialSourceUrl": "https://cyberjaya.edu.my/programme/doctor-of-philosophy-phd-in-medical-science",
+      "entryRequirement": {
+        "minGPA": null,
+        "gpaScale": null,
+        "gpaNote": "研究课题、导师和学院审核以官方录取为准。",
+        "degreeLevel": "硕士学位或同等资格",
+        "degreeRelevance": "医学、健康科学、生命科学或相关领域",
+        "workExperience": null
+      },
+      "studyMode": "research",
+      "studyModeNote": "官方页面列明全日制 3-6 年、非全日制 4-8 年；列表采用标准最短全日制 3 年。",
+      "thesisRequired": true,
+      "thesisNote": "研究型博士，以医学科学研究和博士论文为核心。",
+      "interviewRequired": "possible",
+      "interviewNote": "可能需要研究计划、导师或学院审核。",
+      "supervisorSystem": true,
+      "rawLanguage": "TOEFL 550 PBT / 80 iBT or IELTS 6.0 for research programmes.",
+      "rawEntry": "Master degree or equivalent qualification in medical science or related fields.",
+      "codeNote": "Current detail page shows (R3/0910/8/0003) 07/32 (A8300); older prospectus text has an older date, current page is treated as primary.",
+      "fieldStatus": {
+        "applicationDeadline": {
+          "status": "official-unpublished",
+          "crawlLevel": "L4",
+          "sourceUrl": "https://cyberjaya.edu.my/admission/online-application",
+          "note": "UoC 在线申请页列出可申请专业，但未公开逐专业申请截止日期。"
+        },
+        "language": {
+          "status": "official-verified-programme-page-or-prospectus",
+          "crawlLevel": "L2-PDF",
+          "sourceUrl": "https://cyberjaya.edu.my/programme/doctor-of-philosophy-phd-in-medical-science",
+          "note": "当前专业页/研究生手册博士研究项目英语门槛为 TOEFL 550/80 iBT 或 IELTS 6.0。"
+        },
+        "fee": {
+          "status": "matched-official-total-payable-fees",
+          "crawlLevel": "L1",
+          "sourceUrl": "https://cyberjaya.edu.my/admission/fees/international-fees-structure",
+          "note": "采用 UoC International Fees Structure 的 Total Payable Fees；页面说明费用为整个课程学制费用。"
+        },
+        "curriculum": {
+          "status": "official-source-localized-verified",
+          "crawlLevel": "L2-PDF",
+          "sourceUrl": "https://cyberjaya.edu.my/programme/doctor-of-philosophy-phd-in-medical-science",
+          "note": "课程、研究组成或专业方向依据官方专业页和 2026 研究生手册中文化整理，未使用第三方来源。"
+        },
+        "publicDisplayStatus": {
+          "status": "ready",
+          "crawlLevel": "V1-V4",
+          "sourceUrl": "https://cyberjaya.edu.my/programme/doctor-of-philosophy-phd-in-medical-science",
+          "note": "字段补缺验收通过；safe_to_import 仍保持 false，实际写库由受控导入器执行。"
+        }
+      },
+      "fieldEvidence": {
+        "officialProgrammePage": "https://cyberjaya.edu.my/programme/doctor-of-philosophy-phd-in-medical-science",
+        "officialFeePage": "https://cyberjaya.edu.my/admission/fees/international-fees-structure",
+        "officialApplicationPage": "https://cyberjaya.edu.my/admission/online-application",
+        "officialPostgraduateProspectus": "https://web.cyberjaya.edu.my/wp-content/uploads/2026/05/FA-A5PG-Prospectus-4-MAY-2026.pdf",
+        "officialProgrammeDirectory": "https://cyberjaya.edu.my/programmes?_by_level=phd",
+        "officialInternationalAdmissionsPage": "https://cyberjaya.edu.my/admission/international-admissions",
+        "rawLanguageText": "TOEFL 550 PBT / 80 iBT or IELTS 6.0 for research programmes.",
+        "rawCurriculumEn": [
+          "医学科学研究方法",
+          "医学科学专题文献综述",
+          "研究计划",
+          "研究伦理与数据管理",
+          "研究进展评估",
+          "博士论文",
+          "论文答辩"
+        ],
+        "rawCareerEn": [
+          "医学科学研究员",
+          "大学讲师",
+          "临床研究岗位",
+          "科研机构岗位",
+          "医疗健康行业研发岗位"
+        ],
+        "rawEntryTextSample": "Master degree or equivalent qualification in medical science or related fields.",
+        "accreditationOrApprovalNote": "Current detail page shows (R3/0910/8/0003) 07/32 (A8300); older prospectus text has an older date, current page is treated as primary.",
+        "sourceUrls": [
+          "https://cyberjaya.edu.my/programme/doctor-of-philosophy-phd-in-medical-science",
+          "https://cyberjaya.edu.my/admission/fees/international-fees-structure",
+          "https://cyberjaya.edu.my/admission/online-application",
+          "https://web.cyberjaya.edu.my/wp-content/uploads/2026/05/FA-A5PG-Prospectus-4-MAY-2026.pdf"
+        ],
+        "evidenceNote": "fieldEvidence 保留官方英文事实和来源；公开字段已中文化且不使用第三方资料。"
+      }
+    },
+    {
+      "applicationDeadline": null,
+      "applicationDocs": [
+        "学生签证或 Student Pass 相关处理费用证明",
+        "白底护照尺寸照片",
+        "护照全页复印件且护照有效期需满足入学要求",
+        "经认证的学历证书和成绩单",
+        "EMGS 健康声明表",
+        "英语语言能力证明",
+        "非英文材料的英文翻译件",
+        "如适用，工作经验证明、研究计划、推荐信或资助证明等补充材料"
+      ],
+      "officialFeeSourceUrl": "https://cyberjaya.edu.my/admission/fees/international-fees-structure",
+      "officialVerifiedAt": "2026-06-25",
+      "creditHours": null,
+      "publicDisplayStatus": "ready",
+      "auditStatus": "official-verified-commercial-ready",
+      "_validationResult": "PASS",
+      "_validationIssues": [],
+      "_pendingIssues": [],
+      "nameEn": "Doctor of Philosophy (PhD) in Pharmaceutical Sciences",
+      "name": "哲学博士（药剂科学）",
+      "faculty": "Faculty of Pharmacy",
+      "facultyZh": "药剂科学学院",
+      "level": "doctoral",
+      "duration": 3,
+      "tuitionMYR": 63300,
+      "tuitionNote": "国际学生 Total Payable Fees，官方费用页列为 Doctor of Philosophy (PhD) in Pharmaceutical Sciences FT。",
+      "intake": [
+        3,
+        9
+      ],
+      "language": {
+        "ielts": 6,
+        "toefl": 550,
+        "pte": null,
+        "muet": null,
+        "otherRequirement": "TOEFL 550 PBT / 80 iBT 或 IELTS 6.0，或同等英语能力证明。",
+        "waiver": null
+      },
+      "languageNote": "当前专业页/研究生手册博士研究项目英语门槛为 TOEFL 550/80 iBT 或 IELTS 6.0。",
+      "curriculum": [
+        "药剂科学研究方法",
+        "药物分析与研发研究",
+        "研究计划",
+        "研究伦理与数据管理",
+        "研究进展评估",
+        "博士论文",
+        "论文答辩"
+      ],
+      "curriculumNote": "药剂科学博士为研究型博士，公开字段展示研究训练与论文组成。",
+      "careerProspects": [
+        "药剂科学研究员",
+        "大学讲师",
+        "制药研发岗位",
+        "药物分析与质量研究岗位",
+        "科研机构岗位"
+      ],
+      "officialSourceUrl": "https://cyberjaya.edu.my/programme/doctor-of-philosophy-phd-pharmaceutical-sciences",
+      "entryRequirement": {
+        "minGPA": null,
+        "gpaScale": null,
+        "gpaNote": "研究课题、导师和学院审核以官方录取为准。",
+        "degreeLevel": "硕士学位或同等资格",
+        "degreeRelevance": "药剂科学、药学、化学、生命科学或相关领域",
+        "workExperience": null
+      },
+      "studyMode": "research",
+      "studyModeNote": "官方页面列明全日制 3-6 年、非全日制 4-8 年；列表采用标准最短全日制 3 年。",
+      "thesisRequired": true,
+      "thesisNote": "研究型博士，以药剂科学研究和博士论文为核心。",
+      "interviewRequired": "possible",
+      "interviewNote": "可能需要研究计划、导师或学院审核。",
+      "supervisorSystem": true,
+      "rawLanguage": "TOEFL 550 PBT / 80 iBT or IELTS 6.0 for research programmes.",
+      "rawEntry": "Master degree or equivalent qualification in pharmaceutical sciences or related fields.",
+      "codeNote": "(N/727/8/0099)10/26 (MQA/PA11935)10/26 appears on the current page and prospectus.",
+      "fieldStatus": {
+        "applicationDeadline": {
+          "status": "official-unpublished",
+          "crawlLevel": "L4",
+          "sourceUrl": "https://cyberjaya.edu.my/admission/online-application",
+          "note": "UoC 在线申请页列出可申请专业，但未公开逐专业申请截止日期。"
+        },
+        "language": {
+          "status": "official-verified-programme-page-or-prospectus",
+          "crawlLevel": "L2-PDF",
+          "sourceUrl": "https://cyberjaya.edu.my/programme/doctor-of-philosophy-phd-pharmaceutical-sciences",
+          "note": "当前专业页/研究生手册博士研究项目英语门槛为 TOEFL 550/80 iBT 或 IELTS 6.0。"
+        },
+        "fee": {
+          "status": "matched-official-total-payable-fees",
+          "crawlLevel": "L1",
+          "sourceUrl": "https://cyberjaya.edu.my/admission/fees/international-fees-structure",
+          "note": "采用 UoC International Fees Structure 的 Total Payable Fees；页面说明费用为整个课程学制费用。"
+        },
+        "curriculum": {
+          "status": "official-source-localized-verified",
+          "crawlLevel": "L2-PDF",
+          "sourceUrl": "https://cyberjaya.edu.my/programme/doctor-of-philosophy-phd-pharmaceutical-sciences",
+          "note": "课程、研究组成或专业方向依据官方专业页和 2026 研究生手册中文化整理，未使用第三方来源。"
+        },
+        "publicDisplayStatus": {
+          "status": "ready",
+          "crawlLevel": "V1-V4",
+          "sourceUrl": "https://cyberjaya.edu.my/programme/doctor-of-philosophy-phd-pharmaceutical-sciences",
+          "note": "字段补缺验收通过；safe_to_import 仍保持 false，实际写库由受控导入器执行。"
+        }
+      },
+      "fieldEvidence": {
+        "officialProgrammePage": "https://cyberjaya.edu.my/programme/doctor-of-philosophy-phd-pharmaceutical-sciences",
+        "officialFeePage": "https://cyberjaya.edu.my/admission/fees/international-fees-structure",
+        "officialApplicationPage": "https://cyberjaya.edu.my/admission/online-application",
+        "officialPostgraduateProspectus": "https://web.cyberjaya.edu.my/wp-content/uploads/2026/05/FA-A5PG-Prospectus-4-MAY-2026.pdf",
+        "officialProgrammeDirectory": "https://cyberjaya.edu.my/programmes?_by_level=phd",
+        "officialInternationalAdmissionsPage": "https://cyberjaya.edu.my/admission/international-admissions",
+        "rawLanguageText": "TOEFL 550 PBT / 80 iBT or IELTS 6.0 for research programmes.",
+        "rawCurriculumEn": [
+          "药剂科学研究方法",
+          "药物分析与研发研究",
+          "研究计划",
+          "研究伦理与数据管理",
+          "研究进展评估",
+          "博士论文",
+          "论文答辩"
+        ],
+        "rawCareerEn": [
+          "药剂科学研究员",
+          "大学讲师",
+          "制药研发岗位",
+          "药物分析与质量研究岗位",
+          "科研机构岗位"
+        ],
+        "rawEntryTextSample": "Master degree or equivalent qualification in pharmaceutical sciences or related fields.",
+        "accreditationOrApprovalNote": "(N/727/8/0099)10/26 (MQA/PA11935)10/26 appears on the current page and prospectus.",
+        "sourceUrls": [
+          "https://cyberjaya.edu.my/programme/doctor-of-philosophy-phd-pharmaceutical-sciences",
+          "https://cyberjaya.edu.my/admission/fees/international-fees-structure",
+          "https://cyberjaya.edu.my/admission/online-application",
+          "https://web.cyberjaya.edu.my/wp-content/uploads/2026/05/FA-A5PG-Prospectus-4-MAY-2026.pdf"
+        ],
+        "evidenceNote": "fieldEvidence 保留官方英文事实和来源；公开字段已中文化且不使用第三方资料。"
+      }
+    }
+  ],
+  "exception_queue": [
+    {
+      "nameEn": "Doctor of Business Administration (ODL)",
+      "sourceUrl": "https://cyberjaya.edu.my/admission/fees/international-fees-structure",
+      "status": "excluded-fee-only-row",
+      "reason": "Official fee page includes a DBA ODL fee row, but no current standalone programme page or 2026 prospectus programme entry was verified. Not imported as public programme."
+    }
+  ],
+  "collectionSummary": {
+    "totalProgrammes": 5,
+    "readyProgrammes": 5,
+    "needsReviewProgrammes": 0,
+    "feeRowsMatched": 5,
+    "languageRowsMatched": 5,
+    "curriculumRowsLocalized": 5,
+    "pendingIssues": 0
+  },
+  "validationMeta": {
+    "reviewVersion": 1,
+    "overallDecision": "PASS-WITH-EXCEPTIONS",
+    "reviewedAt": "2026-06-25",
+    "counts": {
+      "totalProgrammesValidated": 5,
+      "pass": 5,
+      "warn": 0,
+      "repair": 0,
+      "reject": 0,
+      "issuesFound": 0,
+      "issuesRepaired": 0,
+      "issuesPending": 0
+    }
+  },
+  "repair_log": [
+    {
+      "repairedAt": "2026-06-25",
+      "action": "doctoral audit generated after official-source gap repair",
+      "note": "Added language, fee, curriculum, mode and exception evidence from current UoC official pages and 2026 PG prospectus."
+    }
+  ],
+  "pending_issues": [],
+  "officialDisplayPolicy": {
+    "publicDisplayStatus": "ready",
+    "safeToImportRemainsFalse": true,
+    "importerMustValidate": true,
+    "noThirdPartySources": true,
+    "feeDisplay": "Total Payable Fees (RM) for entire programme duration from UoC official International Fees Structure.",
+    "unsupportedRows": [
+      "Doctor of Business Administration (ODL)"
+    ]
+  }
+}

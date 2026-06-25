@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "mode": "uoc-all-level-published",
+  "createdAt": "2026-06-25T12:00:33.378Z",
+  "institution": {
+    "code": "UOC",
+    "name": "University of Cyberjaya",
+    "importedRows": 42,
+    "byLevel": {
+      "bachelor": 21,
+      "master": 16,
+      "phd": 5
+    }
+  },
+  "database": {
+    "backupPath": "tmp/backups/uoc-all-level-public-before-2026-06-25T12-00-33-210Z.json",
+    "transactionalImport": "passed",
+    "catalogCacheCleared": false,
+    "scopedRows": 42,
+    "activeSupersededRows": 0,
+    "legacyVisibleRows": 0,
+    "visibleCurrentRows": 42
+  },
+  "publicVisibility": {
+    "universityPublicDisplayStatus": "ready",
+    "universityIsPublished": true,
+    "universityProgramCount": 42,
+    "rowsPublished": 42,
+    "rowsReady": 42
+  },
+  "displayHygiene": {
+    "chineseNameRows": 42,
+    "chineseCurriculumRows": 42,
+    "chineseCareerRows": 42,
+    "languageRows": 42,
+    "officialFeeRows": 42,
+    "sourceRows": 42
+  }
+}

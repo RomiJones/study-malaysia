@@ -1,0 +1,167 @@
+{
+  "schemaVersion": 1,
+  "createdAt": "2026-06-25T12:00:46.101Z",
+  "institution": {
+    "code": "UOC",
+    "shortName": "UoC",
+    "name": "University of Cyberjaya",
+    "slug": "university-of-cyberjaya"
+  },
+  "authorization": "operator-requested-publication",
+  "sourceInputs": {
+    "undergraduateAudit": "audits/UoC_audit_undergraduate_20260625_reviewed_v3.json",
+    "masterAudit": "audits/UoC_audit_master_20260625_reviewed_v1.json",
+    "doctoralAudit": "audits/UoC_audit_doctoral_20260625_reviewed_v1.json",
+    "sourceAuditSafeToImport": false,
+    "sourceAuditReason": "StudyMY audit JSON stays safe_to_import=false by contract; this importer publishes only after explicit operator command."
+  },
+  "writePolicy": {
+    "importer": "apps/api/src/db/import-uoc-official-audit.ts",
+    "mode": "publish-all-levels",
+    "upsertPrefix": "uoc-public-20260625-",
+    "universityRow": "upsert by code UOC or slug university-of-cyberjaya",
+    "programmeRows": "upsert 42 current UoC public rows and archive non-current UoC rows",
+    "transactional": true,
+    "backupRequired": true
+  },
+  "expectedSurface": {
+    "programmeCount": 42,
+    "byLevel": {
+      "bachelor": 21,
+      "master": 16,
+      "phd": 5
+    },
+    "summary": {
+      "importRows": 42,
+      "byLevel": {
+        "bachelor": 21,
+        "master": 16,
+        "phd": 5
+      },
+      "readyRows": 42,
+      "publishedRows": 42,
+      "uniqueSlugs": 42,
+      "officialFeeRows": 42,
+      "languageRows": 42,
+      "chineseNameRows": 42,
+      "chineseCurriculumRows": 42,
+      "chineseCareerRows": 42,
+      "sourceRows": 42,
+      "publicDisplayStatusCounts": {
+        "ready": 42
+      },
+      "officialSourceStatusCounts": {
+        "official-verified": 42
+      },
+      "feeAuditStatusCounts": {
+        "matched-official": 42
+      }
+    },
+    "exceptions": [
+      {
+        "type": "collection-omission",
+        "severity": "medium",
+        "affectedProgramme": "Bachelor of Homeopathic Medical Science (Hons)",
+        "affectedField": "programmeBaseline",
+        "description": "该专业出现在官方在线申请、国际费用页和院系页，但未出现在当前本科筛选目录标准 20 条列表中。",
+        "evidence": [
+          {
+            "sourceUrl": "https://cyberjaya.edu.my/admission/online-application",
+            "value": "Programme Preference includes Bachelor of Homeopathic Medical Science (Honours)"
+          },
+          {
+            "sourceUrl": "https://cyberjaya.edu.my/admission/fees/international-fees-structure",
+            "value": "International fee row Total Payable Fees RM99,300"
+          },
+          {
+            "sourceUrl": "https://cyberjaya.edu.my/university/faculties/faculty-of-health/faculty-of-traditional-complementary-medicine",
+            "value": "Programmes Offered includes Bachelor of Homeopathic Medical Science (Hons.)"
+          }
+        ],
+        "recommendation": "请验收阶段确认是否纳入本科正式 import 候选，或要求学校确认当前招生状态。",
+        "status": "resolved-in-reviewed-v3",
+        "reviewedResolution": "current general2026、online application、fee page、landing 和 faculty page 多源确认当前项目；语言由官方 prospectus fallback 补齐并保留说明；Ian 本轮裁定接受。",
+        "reviewedLanguageSupplement": {
+          "status": "official-pdf-fallback-found-current-page-unpublished",
+          "value": "IELTS 5.0 / TOEFL 500 or equivalent",
+          "sourceUrl": "https://cyberjaya.edu.my/wp-content/uploads/2022/11/A5-Prospectus-UoC-CCC-7-March-2023.pdf",
+          "reviewedAt": "2026-06-25"
+        }
+      },
+      {
+        "type": "format-decoupling-risk",
+        "severity": "medium",
+        "affectedProgramme": "Bachelor in Occupational Safety And Health (Honours) Open & Distance Learning (ODL)",
+        "affectedField": "officialSourceUrl",
+        "description": "ODL 在官方申请和国际费用页作为独立项出现，但详情内容与 OSH landing/主详情页共用，源站展示结构不应改变 audit schema。",
+        "evidence": [
+          {
+            "sourceUrl": "https://cyberjaya.edu.my/admission/online-application",
+            "value": "Programme Preference includes OSH ODL"
+          },
+          {
+            "sourceUrl": "https://cyberjaya.edu.my/admission/fees/international-fees-structure",
+            "value": "Separate fee row for OSH ODL Total Payable Fees RM51,000"
+          },
+          {
+            "sourceUrl": "https://web.cyberjaya.edu.my/programme/osh-fb/",
+            "value": "On-Campus / Online Mode Available"
+          }
+        ],
+        "recommendation": "保留为独立 programme 候选，但维持 needs-review，等待 Ian 或验收 skill 确认展示和导入口径。",
+        "status": "resolved-in-reviewed-v3",
+        "reviewedResolution": "general2026、online application、international fee row 与 landing/N-DL code 支持独立 ODL record；Ian 本轮裁定接受独立展示。",
+        "reviewedLanguageSupplement": {
+          "status": "shared-osh-programme-page-language-found",
+          "value": "MUET Band 3 or CEFR (Low B2)",
+          "sourceUrl": "https://cyberjaya.edu.my/programme/bachelor-of-occupational-safety-and-health-hons",
+          "reviewedAt": "2026-06-25"
+        }
+      },
+      {
+        "type": "field-format-violation",
+        "severity": "medium",
+        "affectedProgramme": null,
+        "affectedField": "curriculum",
+        "description": "源站课程结构为英文长列表；本采集已避免将英文列表写入 public curriculum，但逐项中文课程仍需验收校准。",
+        "evidence": [
+          {
+            "sourceUrl": "https://cyberjaya.edu.my/programme/bachelor-in-mass-communication-honours",
+            "value": "Bachelor in Mass Communication (Honours): rawCurriculumEn collected in fieldEvidence"
+          },
+          {
+            "sourceUrl": "https://cyberjaya.edu.my/programme/bachelor-of-counselling-honours",
+            "value": "Bachelor of Counselling (Honours): rawCurriculumEn collected in fieldEvidence"
+          },
+          {
+            "sourceUrl": "https://web.cyberjaya.edu.my/programme/osh-fb/",
+            "value": "Bachelor in Occupational Safety And Health (Honours) Open & Distance Learning (ODL): rawCurriculumEn collected in fieldEvidence"
+          },
+          {
+            "sourceUrl": "https://cyberjaya.edu.my/programme/bachelor-of-education-hons-in-early-childhood-education",
+            "value": "Bachelor of Education (Honours) in Early Childhood Education: rawCurriculumEn collected in fieldEvidence"
+          },
+          {
+            "sourceUrl": "https://cyberjaya.edu.my/programme/bachelor-in-creative-multimedia-hons",
+            "value": "Bachelor in Creative Multimedia (Honours): rawCurriculumEn collected in fieldEvidence"
+          }
+        ],
+        "recommendation": "使用验收修复流程逐项校准中文课程名后，再判断是否可进入 ready。",
+        "status": "resolved-in-reviewed-v1",
+        "reviewedResolution": "19 条可发布记录的 public curriculum 已复校为中文扁平数组；ODL/Homeopathy 因导入口径/来源缺口保留 needs-review。"
+      },
+      {
+        "nameEn": "Master of Business Administration (MBA) DUAL AWARD (TOP UP)",
+        "sourceUrl": "https://cyberjaya.edu.my/admission/fees/international-fees-structure",
+        "status": "excluded-fee-only-top-up",
+        "reason": "Official fee page row is a top-up fee path, not a standalone programme in the current directory/application list."
+      },
+      {
+        "nameEn": "Doctor of Business Administration (ODL)",
+        "sourceUrl": "https://cyberjaya.edu.my/admission/fees/international-fees-structure",
+        "status": "excluded-fee-only-row",
+        "reason": "Official fee page includes a DBA ODL fee row, but no current standalone programme page or 2026 prospectus programme entry was verified. Not imported as public programme."
+      }
+    ]
+  }
+}
