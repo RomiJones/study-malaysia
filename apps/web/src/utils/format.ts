@@ -1035,14 +1035,43 @@ function formatIelts(language?: LanguageRequirement | null): string {
   return ielts ? `IELTS ${ielts}+` : "";
 }
 
+function formatAlternativeLanguageScores(officialText: string, language?: LanguageRequirement | null): string {
+  const items: string[] = [];
+  const add = (item: string) => {
+    if (item && !items.includes(item)) items.push(item);
+  };
+
+  const source = cleanDisplayText(officialText, "", "en").replace(/\s+/g, " ").trim();
+  const toefl = finitePositiveNumber(language?.toefl);
+  if (toefl) add(`TOEFL iBT ${toefl}+`);
+
+  const pte = finitePositiveNumber(language?.pte);
+  if (pte) add(`PTE ${pte}+`);
+
+  const muetMatch = source.match(
+    /MUET(?:\s+overall)?\s*(?:Min\.\s*)?(?:\s+Band|\s+band)?\s*(\d+(?:\.\d+)?)|Band\s*(\d+(?:\.\d+)?)\s+(?:in|for)\s+MUET/i
+  );
+  const structuredMuet = finitePositiveNumber(language?.muet);
+  const muet = muetMatch?.[1] || muetMatch?.[2] || (structuredMuet ? String(structuredMuet) : "");
+  if (muet) add(`MUET ${muet}+`);
+
+  const cefrMatch = source.match(/\bCEFR\b\s*(?:Min\.\s*)?\(?\s*((?:Low|Mid|High)?\s*[ABC]\d)\s*\)?/i);
+  if (cefrMatch?.[1]) add(`CEFR ${cefrMatch[1].replace(/\s+/g, " ").trim()}`);
+
+  return items.join(" / ");
+}
+
 export function formatProgramLanguage(program: ProgramDisplayFields, fallback?: string, locale?: SupportedLocale): string {
   const actualFallback = fallback ?? officialPageFallback(locale);
   if (program.publicDisplayStatus === "not-available-for-international") return notAvailableForInternational(locale);
-  const officialText = cleanDisplayText(program.officialLanguageRequirement, "", locale);
+  const rawOfficialText = String(program.officialLanguageRequirement || "");
+  const officialText = cleanDisplayText(rawOfficialText, "", locale);
   const match = officialText.match(/IELTS(?:\/IELTS Online|\s*\(Academic\)|\s+Academic)?(?:\s+minimum)?(?:\s*Band)?\s*(\d+(?:\.\d+)?)/i);
   if (match) return `IELTS ${match[1]}+`;
   const compactRequirement = formatIelts(program.languageRequirement);
   if (compactRequirement) return compactRequirement;
+  const alternativeRequirement = formatAlternativeLanguageScores(rawOfficialText || officialText, program.languageRequirement);
+  if (alternativeRequirement) return alternativeRequirement;
   if (officialText) return normalizeAcademicText(officialText, actualFallback, locale);
   return formatIelts(program.languageRequirement) || actualFallback;
 }
