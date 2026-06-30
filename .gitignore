@@ -10,3 +10,11 @@ apps/api/uploads
 *.log
 .playwright-cli
 output
+
+# Local generated data, crawler outputs, and workspace snapshots.
+/tmp/
+/apps/api/tmp/
+/apps/api/data/
+/apps/api/apps/
+/audits/
+/docs/notion-snapshot/
