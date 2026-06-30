@@ -1,4 +1,4 @@
-import { Body, Controller, Delete, Get, Param, Post, Query, Req, UseGuards, Inject } from "@nestjs/common";
+import { Body, Controller, Delete, Get, Param, Patch, Post, Query, Req, UseGuards, Inject } from "@nestjs/common";
 import { IsArray, IsBoolean, IsNumber, IsObject, IsOptional, IsString } from "class-validator";
 import { RequireAdminPermissions } from "../common/admin-permissions.js";
 import { AdminAuthGuard, AdminPermissionGuard, type AdminRequestUser } from "../common/guards.js";
@@ -166,6 +166,10 @@ class SaveDictionaryDto {
   @IsOptional() @IsObject() extra?: Record<string, unknown>;
 }
 
+class UpdateQualityIssueStatusDto {
+  @IsString() status!: string;
+}
+
 @UseGuards(AdminAuthGuard, AdminPermissionGuard)
 @Controller("admin")
 export class AdminController {
@@ -283,6 +287,30 @@ export class AdminController {
   @Get("settings/configs")
   async configs(@Query("category") category?: string) {
     return adminOk(await this.settingsService.listConfigs(category));
+  }
+
+  @RequireAdminPermissions("settings:view", "school:view", "program:view")
+  @Get("settings/catalog-quality")
+  async catalogQuality() {
+    return adminOk(await this.cmsService.catalogQuality());
+  }
+
+  @RequireAdminPermissions("settings:view", "school:view", "program:view")
+  @Get("settings/catalog-quality/issues")
+  async qualityIssues(@Query() query: Record<string, string>) {
+    return adminOk(await this.cmsService.listQualityIssues(query));
+  }
+
+  @RequireAdminPermissions("settings:update", "school:view", "program:view")
+  @Post("settings/catalog-quality/run")
+  async runCatalogQualityCheck() {
+    return adminOk(await this.cmsService.runCatalogQualityCheck());
+  }
+
+  @RequireAdminPermissions("settings:update")
+  @Patch("settings/catalog-quality/issues/:id/status")
+  async updateQualityIssueStatus(@Req() request: { adminUser: AdminRequestUser }, @Param("id") id: string, @Body() payload: UpdateQualityIssueStatusDto) {
+    return adminOk(await this.cmsService.updateQualityIssueStatus(request.adminUser, Number(id), payload.status));
   }
 
   @RequireAdminPermissions("settings:update")

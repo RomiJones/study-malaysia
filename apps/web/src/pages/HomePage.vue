@@ -276,6 +276,13 @@ import { useCatalogStore } from "../stores/catalog";
 import { useI18n } from "vue-i18n";
 import { useRouter } from "vue-router";
 import { formatCategoryLabel, formatPublicCount } from "../utils/format";
+import { apiFetch } from "../api/client";
+
+interface CatalogStatsPayload {
+  universities: { total: number; published: number };
+  programs: { total: number; ready: number; withOfficialSource: number };
+  quality: { openIssues: number; highSeverity: number; mediumSeverity: number; lowSeverity: number };
+}
 
 const catalog = useCatalogStore();
 const { t, locale } = useI18n();
@@ -283,6 +290,7 @@ const router = useRouter();
 const catalogSectionRef = ref<HTMLElement | null>(null);
 const searchWrapRef = ref<HTMLElement | null>(null);
 const showSuggestions = ref(false);
+const catalogStats = ref<CatalogStatsPayload | null>(null);
 const openGroups = ref(["type", "level", "rank", "budget", "category", "special"]);
 let searchTimer: ReturnType<typeof window.setTimeout> | undefined;
 
@@ -385,10 +393,11 @@ const pagedUniversities = computed(() => {
 });
 const publicStats = computed(() => {
   const stats = catalog.homeMeta?.stats;
+  const unifiedStats = catalogStats.value;
   return {
-    universityCount: stats?.universityCount ?? catalog.universities.length,
-    programCount: stats?.programCount ?? catalog.programs.length,
-    readyProgramCount: stats?.readyProgramCount ?? stats?.programCount ?? catalog.programs.length,
+    universityCount: unifiedStats?.universities.published ?? stats?.universityCount ?? catalog.universities.length,
+    programCount: unifiedStats?.programs.ready ?? stats?.programCount ?? catalog.programs.length,
+    readyProgramCount: unifiedStats?.programs.ready ?? stats?.readyProgramCount ?? stats?.programCount ?? catalog.programs.length,
     officialVerifiedCount: stats?.officialVerifiedCount ?? catalog.universities.filter((item) => item.officialSourceStatus === "official-verified").length
   };
 });
@@ -578,7 +587,18 @@ function handleDocumentClick(event: MouseEvent) {
   if (!searchWrapRef.value?.contains(event.target as Node)) closeSuggestions();
 }
 
-onMounted(() => document.addEventListener("click", handleDocumentClick));
+async function loadCatalogStats() {
+  try {
+    catalogStats.value = await apiFetch<CatalogStatsPayload>("/catalog/stats");
+  } catch (error) {
+    console.warn("Failed to load unified catalog stats", error);
+  }
+}
+
+onMounted(() => {
+  document.addEventListener("click", handleDocumentClick);
+  void loadCatalogStats();
+});
 
 onBeforeUnmount(() => {
   document.removeEventListener("click", handleDocumentClick);

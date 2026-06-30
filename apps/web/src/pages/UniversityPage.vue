@@ -222,7 +222,10 @@
                     <span class="programme-pill">{{ durationLabel(program) }}</span>
                   </div>
                   <div class="programme-cell" :data-label="t('university.officialTuition')">
-                    <div class="programme-fee-main">{{ tuitionListLabel(program) }}</div>
+                    <div class="programme-fee-main">
+                      <span>{{ tuitionListLabel(program) }}</span>
+                      <span v-if="hasVerifiedProgramFee(program)" class="fee-verified-badge">{{ formatProgramFeeVerifiedLabel(currentLocale) }}</span>
+                    </div>
                     <div class="programme-fee-status" :class="{ review: feeStatusNeedsReview(program) }">
                       {{ feeStatus(program) }}
                     </div>
@@ -402,7 +405,12 @@
             <div class="req-grid">
               <div class="req-item">
                 <div class="req-item-label">{{ t('program.officialInternationalTuition') }}</div>
-                <div class="req-item-value">{{ tuitionLabel(catalog.selectedProgramDetail) }}</div>
+                <div class="req-item-value req-item-value--inline">
+                  <span>{{ tuitionLabel(catalog.selectedProgramDetail) }}</span>
+                  <span v-if="hasVerifiedProgramFee(catalog.selectedProgramDetail)" class="fee-verified-badge">
+                    {{ formatProgramFeeVerifiedLabel(currentLocale) }}
+                  </span>
+                </div>
               </div>
               <div class="req-item">
                 <div class="req-item-label">{{ t('program.intakeTime') }}</div>
@@ -539,6 +547,7 @@ import {
   formatFeeAuditStatus,
   formatOfficialNote,
   formatOfficialSourceStatus,
+  formatProgramFeeVerifiedLabel,
   formatProgramFacultyLabel,
   formatProgramDuration,
   formatProgramIntake,
@@ -546,6 +555,7 @@ import {
   formatProgramLanguage,
   formatVerifiedOfficialText,
   formatRuntimeDisplayText,
+  hasVerifiedProgramFee,
   officialConfirmationFallback,
   officialPageFallback,
   normalizeAcademicText
@@ -556,7 +566,8 @@ type CatalogStatusCounts = {
   total: number;
   ready: number;
   needsReview: number;
-  notAvailableForInternational: number;
+  notAvailableForInternational?: number;
+  officialLanguageRequirementNotPublished?: number;
 };
 type UniversityDetailView = UniversityListItem & {
   programs: ProgramListItem[];
@@ -571,6 +582,7 @@ type LabelLink = LabelValue & { href: string };
 type SourceLinkView = { label: string; url: string };
 type LooseRecord = Record<string, unknown>;
 type ProfileScaleKey = "studentTotal" | "internationalStudents";
+type ReviewPreview = "msu" | "luc";
 
 const legacyProfileScaleLabels: Record<ProfileScaleKey, string[]> = {
   studentTotal: ["studentTotal", "student count", "student total", "学生总数", "在校学生", "Students"],
@@ -590,6 +602,13 @@ const programmeBlockRef = ref<HTMLElement | null>(null);
 const currentProgramPage = ref(1);
 const PROGRAMS_PER_PAGE = 12;
 const tabKeys: DetailTab[] = ["overview", "bachelor", "master", "phd", "facilities", "apply"];
+const lucReviewPreviewSlugs = new Set(["lincoln-university-college", "lincoln-university-college-malaysia", "lincoln-university", "luc"]);
+const reviewPreview = computed<ReviewPreview | undefined>(() => {
+  if (route.query.review === "msu") return "msu";
+  if (route.query.review === "luc") return "luc";
+  if (lucReviewPreviewSlugs.has(props.slug)) return "luc";
+  return undefined;
+});
 
 const detailTabs = computed<Array<{ key: DetailTab; label: string }>>(() => [
   { key: "overview", label: t('university.overviewTab') },
@@ -611,7 +630,12 @@ const heroStats = computed<LabelValue[]>(() => {
     { label: t('common.foundedYear'), value: `${current.foundedYear}` },
     { label: t('university.studentTotal'), value: profileScaleValue("studentTotal") || compactNumber(current.students) },
     { label: t('university.internationalStudents'), value: profileScaleValue("internationalStudents") || compactNumber(current.intlStudents) },
-    { label: t('university.languageRequirement'), value: current.acceptNoLanguage ? t('university.conditionalPath') : `IELTS ${current.minIelts}+` }
+    {
+      label: t('university.languageRequirement'),
+      value: current.acceptNoLanguage
+        ? t('university.conditionalPath')
+        : Number(current.minIelts) > 0 ? `IELTS ${current.minIelts}+` : t('university.languageShownByProgram')
+    }
   ];
 });
 
@@ -798,7 +822,7 @@ const chinaRequirementSummary = computed(() => {
 
 async function loadDetail() {
   try {
-    await catalog.loadUniversity(props.slug);
+    await catalog.loadUniversity(props.slug, reviewPreview.value ? { review: reviewPreview.value } : {});
     await openQueryProgram();
   } catch {
     catalog.closeProgramDetail();
@@ -808,7 +832,7 @@ async function loadDetail() {
 async function openQueryProgram() {
   const programId = route.query.program;
   if (!programId || Array.isArray(programId)) return;
-  await catalog.openProgramDetail(programId);
+  await catalog.openProgramDetail(programId, reviewPreview.value ? { review: reviewPreview.value } : {});
 }
 
 function setActiveTab(tab: DetailTab) {
@@ -863,7 +887,7 @@ function panelId(tab: DetailTab) {
 }
 
 async function openProgram(program: ProgramListItem) {
-  const opened = await catalog.openProgramDetail(program.id);
+  const opened = await catalog.openProgramDetail(program.id, reviewPreview.value ? { review: reviewPreview.value } : {});
   if (opened) await router.replace({ path: route.path, query: { ...route.query, program: String(program.id) } });
 }
 
@@ -1215,12 +1239,18 @@ function countPrograms(level: DegreeLevel) {
 }
 
 function catalogLevelTotal(level: DegreeLevel) {
-  return String(detail.value?.catalogStatusSummary?.byLevel[level].total ?? countPrograms(level));
+  return String(detail.value?.catalogStatusSummary?.byLevel?.[level]?.total ?? countPrograms(level));
 }
 
 function auditReviewCount() {
   const summary = detail.value?.catalogStatusSummary?.all;
-  if (summary) return String(summary.needsReview + summary.notAvailableForInternational);
+  if (summary) {
+    return String(
+      (summary.needsReview || 0) +
+      (summary.notAvailableForInternational || 0) +
+      (summary.officialLanguageRequirementNotPublished || 0)
+    );
+  }
   const audit = asRecord(profile.value?.undergraduateAudit);
   const needsReview = numberFrom(audit?.needsReview);
   const unavailable = numberFrom(audit?.notAvailableForInternational);
@@ -1230,6 +1260,7 @@ function auditReviewCount() {
 
 function auditRestrictionLabel() {
   const summary = detail.value?.catalogStatusSummary?.all;
+  if (summary?.officialLanguageRequirementNotPublished) return t('university.languageRequirement');
   return summary?.needsReview === 0
     ? t('university.internationalUnavailable')
     : t('university.reviewUnavailable');
@@ -1424,6 +1455,14 @@ onMounted(() => {
 });
 
 watch(() => props.slug, () => {
+  activeTab.value = "overview";
+  currentProgramPage.value = 1;
+  hasHeroLogoError.value = false;
+  catalog.closeProgramDetail();
+  void loadDetail();
+});
+
+watch(() => route.query.review, () => {
   activeTab.value = "overview";
   currentProgramPage.value = 1;
   hasHeroLogoError.value = false;

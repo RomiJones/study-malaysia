@@ -6,13 +6,18 @@ import type {
   SearchSuggestionItem,
   UniversityListItem
 } from "@studymy/shared";
+import { compareByQsWorldRank } from "@studymy/shared";
 import { apiFetch } from "../api/client";
 import { runtimeText } from "../i18n/runtimeText";
 import { useSessionStore } from "./session";
 
 const FAVORITES_KEY = "studymy_favorites";
 const COMPARE_KEY = "studymy_compare";
-const FEATURED_ORDER = ["UM", "UPM", "UKM", "USM", "UTM", "TAYLORS", "SUNWAY", "UCSI", "APU", "MONASH"];
+type ReviewPreview = "msu" | "luc";
+const REVIEW_PREVIEW_KEYS: Record<ReviewPreview, string> = {
+  msu: "msu-official-audit-2026",
+  luc: "luc-official-audit-2026"
+};
 const DEFAULT_FAVORITES = { universities: [] as number[], programs: [] as number[] };
 const DEFAULT_COMPARE: number[] = [];
 
@@ -100,8 +105,7 @@ export const useCatalogStore = defineStore("catalog", () => {
         if (levels.value.length && !relatedPrograms.some((program) => levels.value.includes(program.level))) return false;
         if (acceptNoLanguage.value && !item.acceptNoLanguage) return false;
         if (qsRankMax.value && item.qsRank > qsRankMax.value) return false;
-        if (tuitionMin.value && item.tuitionMaxCny < tuitionMin.value) return false;
-        if (tuitionMax.value && item.tuitionMinCny > tuitionMax.value) return false;
+        if ((tuitionMin.value || tuitionMax.value) && !relatedPrograms.some((program) => matchesTuitionBudget(program, tuitionMin.value, tuitionMax.value))) return false;
         return true;
       })
       .sort(compareUniversities)
@@ -138,10 +142,14 @@ export const useCatalogStore = defineStore("catalog", () => {
     }
   }
 
-  async function loadUniversity(slug: string) {
+  async function loadUniversity(slug: string, options: { review?: ReviewPreview } = {}) {
     loading.value = true;
     try {
-      universityDetail.value = await apiFetch<UniversityDetail>(`/universities/${slug}`);
+      const reviewKey = options.review ? REVIEW_PREVIEW_KEYS[options.review] : "";
+      const endpoint = reviewKey
+        ? `/universities/${slug}/review-preview?key=${encodeURIComponent(reviewKey)}`
+        : `/universities/${slug}`;
+      universityDetail.value = await apiFetch<UniversityDetail>(endpoint);
       errorMessage.value = "";
     } catch (error) {
       universityDetail.value = null;
@@ -152,10 +160,14 @@ export const useCatalogStore = defineStore("catalog", () => {
     }
   }
 
-  async function loadProgram(slug: string) {
+  async function loadProgram(slug: string, options: { review?: ReviewPreview } = {}) {
     loading.value = true;
     try {
-      programDetail.value = await apiFetch<ProgramListItem & { university: UniversityListItem }>(`/programs/${slug}`);
+      const reviewKey = options.review ? REVIEW_PREVIEW_KEYS[options.review] : "";
+      const endpoint = reviewKey
+        ? `/programs/review-preview/${encodeURIComponent(slug)}?key=${encodeURIComponent(reviewKey)}`
+        : `/programs/${slug}`;
+      programDetail.value = await apiFetch<ProgramListItem & { university: UniversityListItem }>(endpoint);
       errorMessage.value = "";
     } catch (error) {
       programDetail.value = null;
@@ -187,10 +199,14 @@ export const useCatalogStore = defineStore("catalog", () => {
     searchSuggestions.value = [];
   }
 
-  async function openProgramDetail(identifier: number | string) {
+  async function openProgramDetail(identifier: number | string, options: { review?: ReviewPreview } = {}) {
     programLoading.value = true;
     try {
-      selectedProgramDetail.value = await apiFetch<ProgramCatalogDetail>(`/programs/detail/${encodeURIComponent(String(identifier))}`);
+      const reviewKey = options.review ? REVIEW_PREVIEW_KEYS[options.review] : "";
+      const endpoint = reviewKey
+        ? `/programs/review-preview/${encodeURIComponent(String(identifier))}?key=${encodeURIComponent(reviewKey)}`
+        : `/programs/detail/${encodeURIComponent(String(identifier))}`;
+      selectedProgramDetail.value = await apiFetch<ProgramCatalogDetail>(endpoint);
       errorMessage.value = "";
       return true;
     } catch (error) {
@@ -451,12 +467,19 @@ function normalizeIds(value: unknown) {
 }
 
 function compareUniversities(a: UniversityListItem, b: UniversityListItem) {
-  const aIndex = FEATURED_ORDER.indexOf(a.code);
-  const bIndex = FEATURED_ORDER.indexOf(b.code);
+  return compareByQsWorldRank(a, b);
+}
 
-  if (aIndex >= 0 && bIndex >= 0) return aIndex - bIndex;
-  if (aIndex >= 0) return -1;
-  if (bIndex >= 0) return 1;
+function programFilterableTuitionCny(program: ProgramListItem): number | null {
+  if (program.filterableTuitionCny != null) return program.filterableTuitionCny;
+  if (program.tuitionInfo?.filterableTuitionCny != null) return program.tuitionInfo.filterableTuitionCny;
+  return null;
+}
 
-  return a.qsRank - b.qsRank;
+function matchesTuitionBudget(program: ProgramListItem, min: number | null, max: number | null) {
+  const filterableTuitionCny = programFilterableTuitionCny(program);
+  if (filterableTuitionCny == null) return false;
+  if (min && filterableTuitionCny < min) return false;
+  if (max && filterableTuitionCny > max) return false;
+  return true;
 }

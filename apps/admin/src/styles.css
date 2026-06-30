@@ -384,8 +384,106 @@ a { color: inherit; text-decoration: none; }
   margin-top: 10px;
 }
 
+.calibration-panel {
+  display: grid;
+  gap: 12px;
+  margin-bottom: 16px;
+  padding: 14px;
+  border: 1px solid rgba(148, 163, 184, 0.28);
+  border-radius: 8px;
+  background: #f8fafc;
+}
+
+.calibration-panel__header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.calibration-panel__title {
+  font-size: 15px;
+  font-weight: 800;
+  color: #1e293b;
+}
+
+.calibration-field-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.calibration-field {
+  min-width: 0;
+  padding: 10px;
+  border: 1px solid rgba(203, 213, 225, 0.72);
+  border-radius: 6px;
+  background: #ffffff;
+}
+
+.calibration-field span {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 12px;
+  color: #64748b;
+}
+
+.calibration-field strong {
+  display: block;
+  min-height: 20px;
+  color: #0f172a;
+  font-size: 13px;
+  line-height: 1.5;
+  word-break: break-word;
+}
+
+.entity-issue-list {
+  display: grid;
+  gap: 8px;
+}
+
+.entity-issue-row {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  align-items: start;
+  gap: 10px;
+  padding: 10px;
+  border: 1px solid rgba(251, 191, 36, 0.42);
+  border-radius: 6px;
+  background: #fffbeb;
+}
+
+.entity-issue-row__body {
+  min-width: 0;
+  display: grid;
+  gap: 3px;
+  color: #334155;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.entity-issue-row__body strong,
+.entity-issue-row__body span,
+.entity-issue-row__body small {
+  overflow-wrap: anywhere;
+}
+
+.entity-issue-row__body small {
+  color: #64748b;
+}
+
 .import-checked-at {
   margin-top: 14px;
+}
+
+.import-issue-title {
+  margin: 18px 0 10px;
+  font-weight: 700;
+  color: #334155;
+}
+
+.import-issue-limit {
+  margin-top: 12px;
 }
 
 .i18n-admin-page {
@@ -490,6 +588,14 @@ a { color: inherit; text-decoration: none; }
   .admin-layout__sidebar { display: none; }
   .admin-layout__content { padding: 16px; }
   .split-grid { grid-template-columns: 1fr; }
+  .calibration-panel__header,
+  .entity-issue-row {
+    grid-template-columns: 1fr;
+    display: grid;
+  }
+  .calibration-field-grid {
+    grid-template-columns: 1fr;
+  }
   .admin-layout__header {
     align-items: flex-start;
     flex-direction: column;

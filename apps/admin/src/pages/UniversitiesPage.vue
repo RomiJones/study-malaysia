@@ -71,8 +71,36 @@
 
   <el-dialog v-model="visible" title="学校管理" width="1120px" top="4vh" destroy-on-close>
     <el-form ref="formRef" :model="form" :rules="rules" label-position="top" status-icon>
-      <el-tabs>
-        <el-tab-pane label="基础信息">
+      <section v-if="form.id" class="calibration-panel">
+        <div class="calibration-panel__header">
+          <div>
+            <div class="calibration-panel__title">前端展示校准</div>
+            <div class="section-subtitle">保存后会清理目录缓存并触发单条质量检查，用户端院校卡片和详情页会读取这些字段。</div>
+          </div>
+          <el-tag :type="statusTagType(form.publicDisplayStatus)">{{ optionLabel(publicDisplayOptions, form.publicDisplayStatus) }}</el-tag>
+        </div>
+        <div class="calibration-field-grid">
+          <div v-for="item in universityCalibrationItems" :key="item.label" class="calibration-field">
+            <span>{{ item.label }}</span>
+            <strong>{{ item.value || "-" }}</strong>
+          </div>
+        </div>
+        <el-skeleton v-if="entityIssueLoading" :rows="2" animated />
+        <el-alert v-else-if="!entityIssues.length" title="当前条目暂无待处理质量问题" type="success" show-icon :closable="false" />
+        <div v-else class="entity-issue-list">
+          <div v-for="issue in entityIssues" :key="issue.id" class="entity-issue-row">
+            <el-tag :type="severityTagType(issue.severity)">{{ severityLabel(issue.severity) }}</el-tag>
+            <div class="entity-issue-row__body">
+              <strong>{{ issue.ruleName || issue.ruleId }}</strong>
+              <span>{{ issue.message }}</span>
+              <small>{{ issue.fieldPath || "-" }}</small>
+            </div>
+            <el-button link type="primary" @click="focusUniversityIssue(issue.fieldPath)">定位字段</el-button>
+          </div>
+        </div>
+      </section>
+      <el-tabs v-model="activeTab">
+        <el-tab-pane label="基础信息" name="base">
           <div class="split-grid">
             <el-form-item label="Slug" prop="slug"><el-input v-model="form.slug" /></el-form-item>
             <el-form-item label="Code" prop="code"><el-input v-model="form.code" /></el-form-item>
@@ -117,7 +145,7 @@
           </div>
         </el-tab-pane>
 
-        <el-tab-pane label="官方档案">
+        <el-tab-pane label="官方档案" name="official">
           <div class="split-grid">
             <el-form-item label="官方英文名称"><el-input v-model="form.nameEnOfficial" /></el-form-item>
             <el-form-item label="官方官网"><el-input v-model="form.officialWebsite" /></el-form-item>
@@ -159,7 +187,7 @@
           <el-form-item label="官方档案 JSON"><el-input v-model="officialProfileText" type="textarea" :rows="5" /></el-form-item>
         </el-tab-pane>
 
-        <el-tab-pane label="申请与费用">
+        <el-tab-pane label="申请与费用" name="application">
           <div class="split-grid">
             <el-form-item label="年学费最低(CNY)"><el-input-number v-model="form.tuitionMinCny" :min="0" /></el-form-item>
             <el-form-item label="年学费最高(CNY)"><el-input-number v-model="form.tuitionMaxCny" :min="0" /></el-form-item>
@@ -184,7 +212,7 @@
           </div>
         </el-tab-pane>
 
-        <el-tab-pane label="发布与审计">
+        <el-tab-pane label="发布与审计" name="audit">
           <div class="split-grid">
             <el-form-item label="发布状态"><el-switch v-model="form.isPublished" /></el-form-item>
             <el-form-item label="公开展示状态">
@@ -215,7 +243,8 @@
 </template>
 
 <script setup lang="ts">
-import { computed, onMounted, reactive, ref } from "vue";
+import { computed, onMounted, reactive, ref, watch } from "vue";
+import { useRoute } from "vue-router";
 import { ElMessage, ElMessageBox, type FormInstance, type FormRules } from "element-plus";
 import { adminApi } from "@/api/admin";
 import LocaleTextTabs from "@/components/LocaleTextTabs.vue";
@@ -236,6 +265,7 @@ import {
   type DictionaryItem
 } from "@/utils/adminOptions";
 
+const route = useRoute();
 const { hasPermission } = useAccess();
 const canUpdate = computed(() => hasPermission("school:update"));
 const canDelete = computed(() => hasPermission("school:delete"));
@@ -246,15 +276,33 @@ const visible = ref(false);
 const loading = ref(false);
 const saving = ref(false);
 const formRef = ref<FormInstance>();
+const activeTab = ref("base");
+const entityIssues = ref<QualityIssueItem[]>([]);
+const entityIssueLoading = ref(false);
+const lastRouteEditKey = ref("");
 const officialProfileText = ref("");
-const query = reactive({ page: 1, pageSize: 10, search: "", ownership: "", published: "", publicDisplayStatus: "", officialSourceStatus: "" });
+const query = reactive({ page: 1, pageSize: 10, search: routeQueryString(route.query.search), ownership: "", published: "", publicDisplayStatus: "", officialSourceStatus: "" });
 const form = reactive<any>({});
+
+interface QualityIssueItem {
+  id: number;
+  ruleId: string;
+  ruleName?: string;
+  severity: string;
+  message: string;
+  fieldPath?: string | null;
+}
 
 const ownershipOptions = computed(() => dictionaryOptions(dictionaries.value, "institution_ownership"));
 const institutionTypeOptions = computed(() => dictionaryOptions(dictionaries.value, "institution_type"));
 const publicDisplayOptions = computed(() => dictionaryOptions(dictionaries.value, "public_display_status"));
 const sourceStatusOptions = computed(() => dictionaryOptions(dictionaries.value, "official_source_status"));
 const sourceTypeOptions = computed(() => dictionaryOptions(dictionaries.value, "source_type"));
+const verifiedOfficialSourceStatuses = [
+  "official-verified",
+  "official-page-verified-current-cycle-not-open",
+  "official-page-verified-international-not-available"
+];
 
 const rules = reactive<FormRules>({
   slug: [{ required: true, message: "请输入 Slug", trigger: "blur" }],
@@ -277,6 +325,15 @@ const applicationFeesText = computed({
     form.applicationFees = parseLineList(value);
   }
 });
+
+const universityCalibrationItems = computed(() => [
+  { label: "用户端名称", value: form.name?.["zh-CN"] || form.nameEnOfficial || form.shortName },
+  { label: "官方入口", value: form.officialWebsite || form.website },
+  { label: "申请入口", value: form.applicationPortalUrl },
+  { label: "申请周期", value: `${form.applicationPeriods?.length || 0} 条` },
+  { label: "官方来源", value: `${form.officialSources?.filter((item: any) => item?.url)?.length || 0} 条` },
+  { label: "核验日期", value: form.officialVerifiedAt || "-" }
+]);
 
 const resetForm = () => {
   Object.assign(form, {
@@ -351,12 +408,32 @@ const load = async () => {
   }
 };
 
+watch(
+  () => route.query.search,
+  (search) => {
+    const nextSearch = routeQueryString(search);
+    if (query.search === nextSearch) return;
+    query.search = nextSearch;
+    query.page = 1;
+    void load();
+  }
+);
+
+watch(
+  () => [route.query.editId, route.query.focus],
+  () => {
+    void openRouteEdit();
+  }
+);
+
 const openCreate = () => {
   resetForm();
+  activeTab.value = "base";
+  entityIssues.value = [];
   visible.value = true;
 };
 
-const openEdit = (row: any) => {
+const openEdit = (row: any, focus?: string) => {
   resetForm();
   Object.assign(form, JSON.parse(JSON.stringify(row)));
   form.applicationDocuments ||= createLocaleArrayMap();
@@ -366,7 +443,60 @@ const openEdit = (row: any) => {
   form.officialSources = normalizeSourceLinks(form.officialSources);
   normalizeNumericFields();
   officialProfileText.value = form.officialProfile ? JSON.stringify(form.officialProfile, null, 2) : "";
+  activeTab.value = universityFieldTab(focus);
   visible.value = true;
+  void loadEntityIssues();
+};
+
+const openRouteEdit = async () => {
+  const editId = Number(route.query.editId);
+  if (!Number.isFinite(editId) || editId <= 0) return;
+  const focus = routeQueryString(route.query.focus);
+  const key = `${editId}:${focus}`;
+  if (lastRouteEditKey.value === key) return;
+  lastRouteEditKey.value = key;
+  try {
+    const detail = await adminApi.universityDetail(editId);
+    openEdit(detail, focus);
+  } catch (error) {
+    ElMessage.error(errorMessage(error));
+  }
+};
+
+const loadEntityIssues = async () => {
+  if (!form.id) {
+    entityIssues.value = [];
+    return;
+  }
+  entityIssueLoading.value = true;
+  try {
+    const data = await adminApi.qualityIssues({
+      entityType: "university",
+      entityId: form.id,
+      status: "open",
+      page: 1,
+      pageSize: 20
+    });
+    entityIssues.value = data.items || [];
+  } catch {
+    entityIssues.value = [];
+  } finally {
+    entityIssueLoading.value = false;
+  }
+};
+
+const focusUniversityIssue = (fieldPath?: string | null) => {
+  activeTab.value = universityFieldTab(fieldPath || "");
+};
+
+const universityFieldTab = (fieldPath?: string | null) => {
+  const field = fieldPath || "";
+  if (["officialSources", "officialWebsite", "studyPortalUrl", "internationalPageUrl", "applicationPortalUrl", "officialVerifiedAt", "nameEnOfficial"].some((item) => field.includes(item))) {
+    return "official";
+  }
+  if (["applicationPeriods", "applicationFees", "applicationDocuments", "chinaStudentRequirements"].some((item) => field.includes(item))) return "application";
+  if (["publicDisplayStatus", "officialSourceStatus", "officialAuditSummary"].some((item) => field.includes(item))) return "audit";
+  return "base";
 };
 
 const addSource = () => {
@@ -433,7 +563,7 @@ const validatePayload = (payload: any) => {
   if (!payload.name?.["zh-CN"]?.trim()) throw new Error("请填写学校中文名称");
   if (payload.tuitionMaxCny < payload.tuitionMinCny) throw new Error("年学费最高值不能小于最低值");
   if (payload.minIelts < 0 || payload.minIelts > 9) throw new Error("最低 IELTS 必须在 0 到 9 之间");
-  const sourceReady = payload.publicDisplayStatus === "ready" || payload.officialSourceStatus === "official-verified";
+  const sourceReady = payload.publicDisplayStatus === "ready" || verifiedOfficialSourceStatuses.includes(payload.officialSourceStatus);
   if (sourceReady && !payload.officialWebsite && !payload.website && !hasSourceUrl(payload.officialSources)) {
     throw new Error("可公开展示或官方已核验的学校必须至少填写一个官方来源 URL");
   }
@@ -445,10 +575,20 @@ const validatePayload = (payload: any) => {
 };
 
 const errorMessage = (error: unknown) => (error instanceof Error ? error.message : typeof error === "string" ? error : "请检查表单必填项");
+const severityLabel = (severity: string) => ({ high: "High", medium: "Medium", low: "Low" }[severity] || severity || "-");
+const severityTagType = (severity: string) => {
+  if (severity === "high") return "danger";
+  if (severity === "medium") return "warning";
+  return "info";
+};
+function routeQueryString(value: unknown) {
+  return typeof value === "string" ? value : "";
+}
 
 onMounted(async () => {
   resetForm();
   await loadDictionaries();
   await load();
+  await openRouteEdit();
 });
 </script>

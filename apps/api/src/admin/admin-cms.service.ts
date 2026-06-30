@@ -4,12 +4,16 @@ import { Like, Repository } from "typeorm";
 import { BadRequestException } from "@nestjs/common";
 import type { AdminRequestUser } from "../common/guards.js";
 import { CacheService } from "../common/cache.service.js";
+import { isReadyForPublicCatalog, isVisibleInPublicCatalog } from "../common/mappers.js";
 import { ContentBlockEntity, ProgramEntity, StudentApplicationEntity, UniversityEntity } from "../db/entities.js";
 import { AdminLogService } from "./admin-log.service.js";
 import { normalizePagination, type AdminListQuery } from "./admin.helpers.js";
+import { QualityEngineService } from "./quality-engine.service.js";
 
 const PUBLIC_DISPLAY_STATUSES = new Set([
   "ready",
+  "current-cycle-not-open",
+  "official-language-requirement-not-published",
   "not-available-for-international",
   "needs-review",
   "hidden-unverified",
@@ -18,6 +22,7 @@ const PUBLIC_DISPLAY_STATUSES = new Set([
 
 const OFFICIAL_SOURCE_STATUSES = new Set([
   "official-verified",
+  "official-page-verified-current-cycle-not-open",
   "official-page-verified-international-not-available",
   "needs-review",
   "source-conflict",
@@ -27,13 +32,31 @@ const OFFICIAL_SOURCE_STATUSES = new Set([
 
 const FEE_AUDIT_STATUSES = new Set([
   "matched-official",
+  "fee-sheet-verified",
+  "official-approximate",
   "official-rate-verified",
+  "calculated-from-official-rate",
+  "official-non-scalar",
   "conflict",
   "source-conflict",
   "pending-review",
   "not-published"
 ]);
+const VERIFIED_OFFICIAL_SOURCE_STATUSES = new Set([
+  "official-verified",
+  "official-page-verified-current-cycle-not-open",
+  "official-page-verified-international-not-available"
+]);
+const VERIFIED_FEE_AUDIT_STATUSES = new Set([
+  "matched-official",
+  "fee-sheet-verified",
+  "official-approximate",
+  "official-rate-verified",
+  "calculated-from-official-rate",
+  "official-non-scalar"
+]);
 const TUITION_CURRENCIES = new Set(["MYR", "CNY", "USD", "UNKNOWN"]);
+const MAX_CATALOG_QUALITY_ISSUES = 80;
 
 const UNIVERSITY_AUDIT_FIELDS = [
   "nameEnOfficial",
@@ -93,6 +116,26 @@ const PROGRAM_AUDIT_FIELDS = [
 ] as const;
 
 type AuditField = (typeof UNIVERSITY_AUDIT_FIELDS)[number] | (typeof PROGRAM_AUDIT_FIELDS)[number];
+type CatalogQualityIssueSeverity = "error" | "warning";
+type CatalogQualityIssueEntityType = "university" | "program";
+
+interface CatalogQualityIssue {
+  id: string;
+  entityType: CatalogQualityIssueEntityType;
+  entityId: number;
+  code: string;
+  severity: CatalogQualityIssueSeverity;
+  title: string;
+  targetLabel: string;
+  searchKeyword: string;
+  hint: string;
+  universityId?: number;
+  universityShortName?: string;
+  programId?: number;
+  publicDisplayStatus?: string | null;
+  officialSourceStatus?: string | null;
+  feeAuditStatus?: string | null;
+}
 
 @Injectable()
 export class AdminCmsService {
@@ -102,7 +145,8 @@ export class AdminCmsService {
     @InjectRepository(ContentBlockEntity) private readonly contentRepository: Repository<ContentBlockEntity>,
     @InjectRepository(StudentApplicationEntity) private readonly applicationsRepository: Repository<StudentApplicationEntity>,
     @Inject(CacheService) private readonly cacheService: CacheService,
-    @Inject(AdminLogService) private readonly logService: AdminLogService
+    @Inject(AdminLogService) private readonly logService: AdminLogService,
+    @Inject(QualityEngineService) private readonly qualityEngine?: QualityEngineService
   ) {}
 
   async dashboard() {
@@ -127,12 +171,111 @@ export class AdminCmsService {
     };
   }
 
+  async catalogQuality() {
+    if (this.qualityEngine) return this.qualityEngine.catalogQuality();
+
+    const [universities, programs] = await Promise.all([
+      this.universitiesRepository.find(),
+      this.programsRepository.find({ relations: { university: true } })
+    ]);
+    const readyUniversityMap = new Map(universities.filter(isReadyForPublicCatalog).map((university) => [university.id, university]));
+    const publicPrograms = programs.filter((program) => isVisibleInPublicCatalog(program) && readyUniversityMap.has(program.universityId));
+    const readyPrograms = publicPrograms.filter((program) => program.publicDisplayStatus === "ready");
+    const issues: CatalogQualityIssue[] = [];
+
+    for (const university of universities) {
+      if (!isFilledString(university.publicDisplayStatus) || !isFilledString(university.officialSourceStatus)) {
+        issues.push(buildUniversityIssue(university, "university-status-missing", "error", "院校缺少发布或来源状态", "补齐公开展示状态和官方来源状态，避免前端目录统计口径不稳定。"));
+      }
+
+      const universityMissingSource = !hasUniversityOfficialSource(university);
+      if (isReadyForPublicCatalog(university) && universityMissingSource) {
+        issues.push(buildUniversityIssue(university, "university-ready-missing-source", "error", "Ready 院校缺少官方来源", "补充官网或官方来源链接后再保持 Ready 展示。"));
+      } else if (VERIFIED_OFFICIAL_SOURCE_STATUSES.has(university.officialSourceStatus || "") && universityMissingSource) {
+        issues.push(buildUniversityIssue(university, "university-verified-missing-source", "error", "院校已标记官方核验但缺少来源", "补充官方来源链接，或将来源状态调整为待复核。"));
+      }
+
+      if (university.publicDisplayStatus === "needs-review" || university.officialSourceStatus === "needs-review") {
+        issues.push(buildUniversityIssue(university, "university-needs-review", "warning", "院校仍处于待复核状态", "完成官方字段核验后更新展示状态和来源状态。"));
+      }
+    }
+
+    for (const program of programs) {
+      const university = (program.university as UniversityEntity | undefined) || readyUniversityMap.get(program.universityId);
+
+      if (!isFilledString(program.publicDisplayStatus) || !isFilledString(program.officialSourceStatus) || !isFilledString(program.officialFeeAuditStatus)) {
+        issues.push(buildProgramIssue(program, university, "program-status-missing", "error", "专业缺少发布或审计状态", "补齐公开展示、官方来源和费用审计状态。"));
+      }
+
+      const programMissingSource = !hasProgramOfficialSource(program);
+      if (program.publicDisplayStatus === "ready" && programMissingSource) {
+        issues.push(buildProgramIssue(program, university, "program-ready-missing-source", "error", "Ready 专业缺少官方来源", "补充专业页、入学要求页、认证页或来源列表 URL。"));
+      } else if (VERIFIED_OFFICIAL_SOURCE_STATUSES.has(program.officialSourceStatus || "") && programMissingSource) {
+        issues.push(buildProgramIssue(program, university, "program-verified-missing-source", "error", "专业已标记官方核验但缺少来源", "补充官方来源链接，或将来源状态调整为待复核。"));
+      }
+
+      if (requiresFeeSource(program) && !isFilledString(program.officialFeeSourceUrl)) {
+        issues.push(buildProgramIssue(program, university, "program-fee-source-missing", "error", "官方学费缺少费用来源", "补充官方学费来源 URL 后再保留费用审计状态。"));
+      }
+
+      if (program.publicDisplayStatus === "needs-review" || program.officialSourceStatus === "needs-review" || program.officialFeeAuditStatus === "pending-review") {
+        issues.push(buildProgramIssue(program, university, "program-needs-review", "warning", "专业仍处于待复核状态", "完成专业来源、费用和入学要求核验后更新状态。"));
+      }
+    }
+
+    return {
+      overview: {
+        checkedAt: new Date().toISOString(),
+        universityTotal: universities.length,
+        publicUniversityCount: readyUniversityMap.size,
+        programTotal: programs.length,
+        publicProgramCount: publicPrograms.length,
+        readyProgramCount: readyPrograms.length,
+        officialVerifiedUniversityCount: universities.filter((item) => VERIFIED_OFFICIAL_SOURCE_STATUSES.has(item.officialSourceStatus || "")).length,
+        officialVerifiedProgramCount: programs.filter((item) => VERIFIED_OFFICIAL_SOURCE_STATUSES.has(item.officialSourceStatus || "")).length,
+        issueCount: issues.length,
+        missingUniversitySourceCount: countIssues(issues, "university-ready-missing-source") + countIssues(issues, "university-verified-missing-source"),
+        missingProgramSourceCount: countIssues(issues, "program-ready-missing-source") + countIssues(issues, "program-verified-missing-source"),
+        missingFeeSourceCount: countIssues(issues, "program-fee-source-missing"),
+        missingStatusCount: countIssues(issues, "university-status-missing") + countIssues(issues, "program-status-missing"),
+        needsReviewCount: countIssues(issues, "university-needs-review") + countIssues(issues, "program-needs-review"),
+        issueSeverityCounts: countIssueSeverity(issues),
+        universityPublicDisplayCounts: countValues(universities, (item) => item.publicDisplayStatus),
+        programPublicDisplayCounts: countValues(programs, (item) => item.publicDisplayStatus),
+        publicDisplayCounts: countValues(programs, (item) => item.publicDisplayStatus),
+        universitySourceStatusCounts: countValues(universities, (item) => item.officialSourceStatus),
+        programSourceStatusCounts: countValues(programs, (item) => item.officialSourceStatus),
+        feeAuditCounts: countValues(programs, (item) => item.officialFeeAuditStatus),
+        levelCounts: countValues(programs, (item) => item.level),
+        categoryCounts: countValues(programs, (item) => item.category)
+      },
+      issues: issues.slice(0, MAX_CATALOG_QUALITY_ISSUES),
+      issueLimit: MAX_CATALOG_QUALITY_ISSUES,
+      hasMoreIssues: issues.length > MAX_CATALOG_QUALITY_ISSUES
+    };
+  }
+
+  async runCatalogQualityCheck() {
+    if (!this.qualityEngine) return this.catalogQuality();
+    return this.qualityEngine.runFullCheck();
+  }
+
+  async updateQualityIssueStatus(actor: AdminRequestUser, id: number, status: string) {
+    if (!this.qualityEngine) throw new BadRequestException("Quality engine is not available");
+    return this.qualityEngine.updateIssueStatus(actor, id, status as any);
+  }
+
+  async listQualityIssues(query: Record<string, string>) {
+    if (!this.qualityEngine) throw new BadRequestException("Quality engine is not available");
+    return this.qualityEngine.listIssues(query);
+  }
+
   async listUniversities(query: AdminListQuery & { ownership?: string; published?: string; publicDisplayStatus?: string; officialSourceStatus?: string }) {
     const { page, pageSize, skip } = normalizePagination(query);
     const qb = this.universitiesRepository.createQueryBuilder("university");
     if (query.search) {
       qb.andWhere(
-        "university.code LIKE :search OR university.shortName LIKE :search OR JSON_UNQUOTE(JSON_EXTRACT(university.name, '$.en')) LIKE :search OR JSON_UNQUOTE(JSON_EXTRACT(university.name, '$.zh-CN')) LIKE :search",
+        "(university.code LIKE :search OR university.shortName LIKE :search OR JSON_UNQUOTE(JSON_EXTRACT(university.name, '$.en')) LIKE :search OR JSON_UNQUOTE(JSON_EXTRACT(university.name, '$.\"zh-CN\"')) LIKE :search)",
         { search: `%${query.search}%` }
       );
     }
@@ -169,7 +312,13 @@ export class AdminCmsService {
       } as UniversityEntity);
     }
     this.validateUniversityPayload(entity);
+    if (this.qualityEngine && entity.publicDisplayStatus === "ready") {
+      const wasNotReady = !previous || previous.publicDisplayStatus !== "ready";
+      if (wasNotReady && payload.id) await this.qualityEngine.assertNoOpenHighIssues("university", entity.id);
+      await this.qualityEngine.assertSnapshotCanBeReady("university", entity);
+    }
     const saved = await this.universitiesRepository.save(entity);
+    await this.qualityEngine?.runEntityCheck("university", saved.id);
     await this.invalidateCatalog();
     await this.logService.write(
       actor,
@@ -195,7 +344,7 @@ export class AdminCmsService {
     const qb = this.programsRepository.createQueryBuilder("program").leftJoinAndSelect("program.university", "university");
     if (query.search) {
       qb.andWhere(
-        "program.code LIKE :search OR JSON_UNQUOTE(JSON_EXTRACT(program.name, '$.en')) LIKE :search OR JSON_UNQUOTE(JSON_EXTRACT(program.name, '$.zh-CN')) LIKE :search",
+        "(program.code LIKE :search OR JSON_UNQUOTE(JSON_EXTRACT(program.name, '$.en')) LIKE :search OR JSON_UNQUOTE(JSON_EXTRACT(program.name, '$.\"zh-CN\"')) LIKE :search)",
         { search: `%${query.search}%` }
       );
     }
@@ -203,7 +352,11 @@ export class AdminCmsService {
     if (query.level) qb.andWhere("program.level = :level", { level: query.level });
     if (query.category) qb.andWhere("program.category = :category", { category: query.category });
     if (query.published === "true" || query.published === "false") qb.andWhere("program.isPublished = :published", { published: query.published === "true" });
-    if (query.publicDisplayStatus) qb.andWhere("program.publicDisplayStatus = :publicDisplayStatus", { publicDisplayStatus: query.publicDisplayStatus });
+    if (query.publicDisplayStatus) {
+      qb.andWhere("program.publicDisplayStatus = :publicDisplayStatus", { publicDisplayStatus: query.publicDisplayStatus });
+    } else {
+      qb.andWhere("program.publicDisplayStatus != :archivedStatus", { archivedStatus: "archived" });
+    }
     if (query.officialSourceStatus) qb.andWhere("program.officialSourceStatus = :officialSourceStatus", { officialSourceStatus: query.officialSourceStatus });
     if (query.feeAuditStatus) qb.andWhere("program.officialFeeAuditStatus = :feeAuditStatus", { feeAuditStatus: query.feeAuditStatus });
     const [items, total] = await qb.orderBy("program.createdAt", "DESC").skip(skip).take(pageSize).getManyAndCount();
@@ -235,7 +388,13 @@ export class AdminCmsService {
       } as ProgramEntity);
     }
     this.validateProgramPayload(entity);
+    if (this.qualityEngine && entity.publicDisplayStatus === "ready") {
+      const wasNotReady = !previous || previous.publicDisplayStatus !== "ready";
+      if (wasNotReady && payload.id) await this.qualityEngine.assertNoOpenHighIssues("program", entity.id);
+      await this.qualityEngine.assertSnapshotCanBeReady("program", entity);
+    }
     const saved = await this.programsRepository.save(entity);
+    await this.qualityEngine?.runEntityCheck("program", saved.id);
     await this.refreshProgramCount(saved.universityId);
     await this.invalidateCatalog();
     await this.logService.write(
@@ -308,7 +467,7 @@ export class AdminCmsService {
       throw new BadRequestException("Ready university requires at least one official source URL");
     }
 
-    if (payload.officialSourceStatus === "official-verified" && !hasUniversityOfficialSource(payload)) {
+    if (VERIFIED_OFFICIAL_SOURCE_STATUSES.has(payload.officialSourceStatus || "") && !hasUniversityOfficialSource(payload)) {
       throw new BadRequestException("Official verified university requires an official source URL");
     }
   }
@@ -329,12 +488,12 @@ export class AdminCmsService {
       throw new BadRequestException("Ready program requires an official source URL");
     }
 
-    if (payload.officialSourceStatus === "official-verified" && !hasProgramOfficialSource(payload)) {
+    if (VERIFIED_OFFICIAL_SOURCE_STATUSES.has(payload.officialSourceStatus || "") && !hasProgramOfficialSource(payload)) {
       throw new BadRequestException("Official verified program requires an official source URL");
     }
 
     if (
-      ["matched-official", "official-rate-verified"].includes(payload.officialFeeAuditStatus || "")
+      [...VERIFIED_FEE_AUDIT_STATUSES].includes(payload.officialFeeAuditStatus || "")
       && !isFilledString(payload.officialFeeSourceUrl)
     ) {
       throw new BadRequestException("Verified official fee data requires officialFeeSourceUrl");
@@ -344,6 +503,101 @@ export class AdminCmsService {
       throw new BadRequestException("Official tuition fields require officialFeeSourceUrl");
     }
   }
+}
+
+function buildUniversityIssue(
+  university: UniversityEntity,
+  code: string,
+  severity: CatalogQualityIssueSeverity,
+  title: string,
+  hint: string
+): CatalogQualityIssue {
+  const targetLabel = university.shortName || localizedLabel(university.name) || university.code || `University #${university.id}`;
+  return {
+    id: `${code}:${university.id}`,
+    entityType: "university",
+    entityId: university.id,
+    code,
+    severity,
+    title,
+    targetLabel,
+    searchKeyword: university.code || university.shortName || targetLabel,
+    hint,
+    universityId: university.id,
+    universityShortName: university.shortName,
+    publicDisplayStatus: university.publicDisplayStatus || null,
+    officialSourceStatus: university.officialSourceStatus || null
+  };
+}
+
+function buildProgramIssue(
+  program: ProgramEntity,
+  university: UniversityEntity | undefined,
+  code: string,
+  severity: CatalogQualityIssueSeverity,
+  title: string,
+  hint: string
+): CatalogQualityIssue {
+  const programLabel = program.nameEnOfficial || localizedLabel(program.name) || program.code || `Program #${program.id}`;
+  const universityLabel = university?.shortName || university?.code;
+  const targetLabel = universityLabel ? `${universityLabel} / ${programLabel}` : programLabel;
+  return {
+    id: `${code}:${program.id}`,
+    entityType: "program",
+    entityId: program.id,
+    code,
+    severity,
+    title,
+    targetLabel,
+    searchKeyword: program.code || program.nameEnOfficial || programLabel,
+    hint,
+    universityId: program.universityId,
+    universityShortName: university?.shortName,
+    programId: program.id,
+    publicDisplayStatus: program.publicDisplayStatus || null,
+    officialSourceStatus: program.officialSourceStatus || null,
+    feeAuditStatus: program.officialFeeAuditStatus || null
+  };
+}
+
+function requiresFeeSource(program: Partial<ProgramEntity>) {
+  return (
+    VERIFIED_FEE_AUDIT_STATUSES.has(program.officialFeeAuditStatus || "") ||
+    program.officialTuitionMYR !== undefined && program.officialTuitionMYR !== null ||
+    program.tuitionCurrency === "MYR"
+  );
+}
+
+function countIssues(issues: CatalogQualityIssue[], code: string) {
+  return issues.filter((issue) => issue.code === code).length;
+}
+
+function countIssueSeverity(issues: CatalogQualityIssue[]) {
+  return issues.reduce<Record<CatalogQualityIssueSeverity, number>>(
+    (result, issue) => {
+      result[issue.severity] += 1;
+      return result;
+    },
+    { error: 0, warning: 0 }
+  );
+}
+
+function countValues<T>(items: T[], readValue: (item: T) => unknown) {
+  return items.reduce<Record<string, number>>((result, item) => {
+    const key = statusKey(readValue(item));
+    result[key] = (result[key] || 0) + 1;
+    return result;
+  }, {});
+}
+
+function statusKey(value: unknown) {
+  return isFilledString(value) ? String(value) : "empty";
+}
+
+function localizedLabel(value: unknown) {
+  if (!value || typeof value !== "object" || Array.isArray(value)) return "";
+  const record = value as Record<string, unknown>;
+  return [record["zh-CN"], record.en, record.ms, record["zh-TW"]].find(isFilledString) as string || "";
 }
 
 function assertEnum(field: string, value: unknown, allowed: Set<string>) {

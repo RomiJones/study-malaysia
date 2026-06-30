@@ -1,7 +1,12 @@
 import "reflect-metadata";
 import { describe, test } from "node:test";
 import assert from "node:assert/strict";
-import { LOCAL_UNIVERSITY_COVER_FALLBACK, LOCAL_UNIVERSITY_LOGO_FALLBACK } from "../../packages/shared/src/index.ts";
+import {
+  LOCAL_UNIVERSITY_COVER_FALLBACK,
+  LOCAL_UNIVERSITY_LOGO_FALLBACK,
+  getLocalUniversityCoverByCode,
+  getLocalUniversityLogoByCode
+} from "../../packages/shared/src/index.ts";
 import { isReadyForPublicCatalog, mapProgram, mapUniversity, normalizePublicDisplayStatus } from "../../apps/api/src/common/mappers.ts";
 
 function text(en: string, zh = en) {
@@ -197,8 +202,9 @@ describe("API mappers", () => {
       isPublished: true
     } as any);
 
-    assert.equal(mapped.logoUrl, LOCAL_UNIVERSITY_LOGO_FALLBACK);
-    assert.match(mapped.imageUrl, /^\/assets\/static-html\/card-image-photo-1541339907198-e08756dedf3f-/);
+    assert.equal(mapped.logoUrl, getLocalUniversityLogoByCode("UM"));
+    assert.equal(mapped.imageUrl, getLocalUniversityCoverByCode("UM"));
+    assert.match(mapped.imageUrl, /^\/assets\/static-html\/university-covers\/um-/);
     assert.equal(mapped.imageUrl.startsWith("https://"), false);
   });
 
@@ -206,7 +212,7 @@ describe("API mappers", () => {
     const mapped = mapUniversity({
       id: 2,
       slug: "taylors-university",
-      code: "TAYLORS",
+      code: "NO_COVER",
       name: text("Taylor's University", "泰莱大学"),
       shortName: "Taylor's",
       logoUrl: "",

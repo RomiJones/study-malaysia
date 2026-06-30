@@ -1,11 +1,16 @@
 import { Controller, Get, Param, Query, Inject } from "@nestjs/common";
 import { Transform } from "class-transformer";
 import { IsBoolean, IsIn, IsNumber, IsOptional, IsString } from "class-validator";
-import { ProgramsService } from "./programs.service.js";
+import type { DegreeLevel } from "@studymy/shared";
+import { ProgramsService, type ProgramQuery } from "./programs.service.js";
 
 function toArray(value: unknown): string[] | undefined {
   if (value == null || value === "") return undefined;
-  return String(value).split(",").map((item) => item.trim()).filter(Boolean);
+  const items = (Array.isArray(value) ? value : [value])
+    .flatMap((item) => String(item).split(","))
+    .map((item) => item.trim())
+    .filter(Boolean);
+  return items.length ? items : undefined;
 }
 
 function toNumber(value: unknown): number | undefined {
@@ -17,6 +22,38 @@ function toNumber(value: unknown): number | undefined {
 function toBoolean(value: unknown): boolean | undefined {
   if (value == null || value === "") return undefined;
   return value === true || value === "true";
+}
+
+function toStringValue(value: unknown): string | undefined {
+  if (value == null || value === "") return undefined;
+  const firstValue = Array.isArray(value) ? value[0] : value;
+  const text = String(firstValue).trim();
+  return text || undefined;
+}
+
+function toArrayQuery(query: Record<string, unknown>, key: string): string[] | undefined {
+  return toArray(query[key]) || toArray(query[`${key}[]`]);
+}
+
+function normalizeProgramsQuery(query: Record<string, unknown>): ProgramQuery {
+  return {
+    search: toStringValue(query.search),
+    categories: toArrayQuery(query, "categories"),
+    levels: toArrayQuery(query, "levels"),
+    ownerships: toArrayQuery(query, "ownerships"),
+    types: toArrayQuery(query, "types"),
+    institutionTypes: toArrayQuery(query, "institutionTypes"),
+    universityId: toNumber(query.universityId),
+    acceptNoLanguage: toBoolean(query.acceptNoLanguage),
+    qsRankMax: toNumber(query.qsRankMax),
+    tuitionMin: toNumber(query.tuitionMin),
+    tuitionMax: toNumber(query.tuitionMax),
+    budgetCny: toNumber(query.budgetCny),
+    ieltsMax: toNumber(query.ieltsMax),
+    page: toNumber(query.page),
+    pageSize: toNumber(query.pageSize),
+    includeMeta: toBoolean(query.includeMeta)
+  };
 }
 
 class ProgramsQueryDto {
@@ -97,8 +134,8 @@ class ProgramsQueryDto {
 
 class RecommendationQueryDto {
   @IsOptional()
-  @IsIn(["bachelor", "master", "phd"])
-  level?: "bachelor" | "master" | "phd";
+  @IsIn(["bachelor", "master", "phd", "postgraduate-certificate", "postgraduate-diploma"])
+  level?: DegreeLevel;
 
   @IsOptional()
   @IsString()
@@ -134,18 +171,23 @@ export class ProgramsController {
   }
 
   @Get()
-  list(@Query() query: ProgramsQueryDto) {
-    return this.programsService.list(query);
+  list(@Query() query: Record<string, unknown>) {
+    return this.programsService.list(normalizeProgramsQuery(query));
   }
 
   @Get("meta/filters")
-  filters(@Query() query: ProgramsQueryDto) {
-    return this.programsService.getFacets(query);
+  filters(@Query() query: Record<string, unknown>) {
+    return this.programsService.getFacets(normalizeProgramsQuery(query));
   }
 
   @Get("detail/:id")
   detailById(@Param("id") id: string) {
     return this.programsService.getByIdentifier(id);
+  }
+
+  @Get("review-preview/:identifier")
+  reviewPreview(@Param("identifier") identifier: string, @Query("key") key?: string) {
+    return this.programsService.getReviewPreviewByIdentifier(identifier, key);
   }
 
   @Get("recommendations")

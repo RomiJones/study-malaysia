@@ -14,8 +14,9 @@ import type {
   UniversityListItem,
   UniversityProgramGroup
 } from "@studymy/shared";
-import { DEGREE_LEVEL_LABELS } from "@studymy/shared";
+import { DEGREE_LEVEL_LABELS, DEGREE_LEVEL_ORDER, hasValidQsWorldRank, muetBandToIeltsEquivalent } from "@studymy/shared";
 import { ProgramEntity, UniversityEntity } from "../db/entities.js";
+import { getFilterableTuitionCny } from "./fee-strategy.helper.js";
 import { isReadyForPublicCatalog, isVisibleInPublicCatalog, mapProgram, mapUniversity } from "./mappers.js";
 
 export interface PublicCatalogQuery {
@@ -38,7 +39,7 @@ export interface PublicCatalogQuery {
 const rankOptions = [100, 200, 300, 500, 800];
 const tuitionOptions = [30000, 50000, 80000, 120000];
 const languageOptions = ["accept-no-language", "ielts-5.5", "ielts-6.0", "ielts-6.5"];
-const degreeOrder: DegreeLevel[] = ["bachelor", "master", "phd"];
+const degreeOrder = [...DEGREE_LEVEL_ORDER];
 
 export function textLabel(value: string): LocalizedText {
   return { en: value, ms: value, "zh-CN": value, "zh-TW": value };
@@ -86,12 +87,29 @@ export function buildProgramSearchText(program: ProgramEntity): string {
   ].join(" ").toLowerCase();
 }
 
+export function buildProgramSuggestionSearchFields(program: ProgramEntity): string[] {
+  return [
+    program.nameEnOfficial,
+    program.category,
+    ...localizedTextValues(program.name)
+  ].filter((value): value is string => Boolean(value));
+}
+
 function queryBudgetMax(query: PublicCatalogQuery): number | undefined {
   return query.budgetCny ?? query.tuitionMax;
 }
 
+function queryArray<T extends string>(value: readonly T[] | T | null | undefined): T[] {
+  if (value == null) return [];
+  const items = (Array.isArray(value) ? value : [value])
+    .flatMap((item) => String(item).split(","))
+    .map((item) => item.trim())
+    .filter(Boolean) as T[];
+  return [...new Set(items)];
+}
+
 function hasProgramSpecificFilters(query: PublicCatalogQuery): boolean {
-  return Boolean(query.categories?.length || query.levels?.length || query.tuitionMin || query.tuitionMax || query.budgetCny || query.ieltsMax);
+  return Boolean(queryArray(query.categories).length || queryArray(query.levels).length || query.tuitionMin || query.tuitionMax || query.budgetCny || query.ieltsMax);
 }
 
 export function publicReadyUniversities(universities: UniversityEntity[]): UniversityEntity[] {
@@ -108,39 +126,55 @@ export function publicReadyPrograms(programs: ProgramEntity[], universityMap?: M
 
 export function matchesProgramSpecificFilters(program: ProgramEntity, query: PublicCatalogQuery): boolean {
   const budgetMax = queryBudgetMax(query);
-  if (query.categories?.length && !query.categories.includes(program.category)) return false;
-  if (query.levels?.length && !query.levels.includes(program.level)) return false;
-  if (query.tuitionMin && program.annualTuitionCny < query.tuitionMin) return false;
-  if (budgetMax && program.annualTuitionCny > budgetMax) return false;
-  if (query.ieltsMax && Number(program.languageRequirement?.ielts ?? 0) > query.ieltsMax) return false;
+  const categories = queryArray(query.categories);
+  const levels = queryArray(query.levels);
+  const hasTuitionFilter = Boolean(query.tuitionMin || budgetMax);
+  const filterableTuitionCny = hasTuitionFilter ? getFilterableTuitionCny(program) : null;
+  if (categories.length && !categories.includes(program.category)) return false;
+  if (levels.length && !levels.includes(program.level)) return false;
+  if (hasTuitionFilter && filterableTuitionCny == null) return false;
+  if (query.tuitionMin && (filterableTuitionCny ?? 0) < query.tuitionMin) return false;
+  if (budgetMax && (filterableTuitionCny ?? 0) > budgetMax) return false;
+  if (query.ieltsMax) {
+    const ielts = publicCatalogIeltsRequirement(program);
+    if (!Number.isFinite(ielts) || ielts <= 0 || ielts > query.ieltsMax) return false;
+  }
   return true;
 }
 
 export function matchesProgramFilters(program: ProgramEntity, university: UniversityEntity, query: PublicCatalogQuery): boolean {
   const search = normalizeSearch(query.search);
+  const ownerships = queryArray(query.ownerships);
+  const institutionTypes = queryArray(query.institutionTypes);
   if (!isVisibleInPublicCatalog(program) || !isReadyForPublicCatalog(university)) return false;
   if (search && !`${buildProgramSearchText(program)} ${buildUniversitySearchText(university)}`.includes(search)) return false;
-  if (query.ownerships?.length && !query.ownerships.includes(university.ownership)) return false;
-  if (query.institutionTypes?.length && !query.institutionTypes.includes(university.institutionType)) return false;
+  if (ownerships.length && !ownerships.includes(university.ownership)) return false;
+  if (institutionTypes.length && !institutionTypes.includes(university.institutionType)) return false;
   if (query.acceptNoLanguage === true && !university.acceptNoLanguage) return false;
-  if (query.qsRankMax && university.qsRank > query.qsRankMax) return false;
+  if (query.qsRankMax && (!hasValidQsWorldRank(university.qsRank) || university.qsRank > query.qsRankMax)) return false;
   return matchesProgramSpecificFilters(program, query);
 }
 
 export function matchesUniversityFilters(university: UniversityEntity, readyPrograms: ProgramEntity[], query: PublicCatalogQuery): boolean {
   const search = normalizeSearch(query.search);
   const budgetMax = queryBudgetMax(query);
+  const ownerships = queryArray(query.ownerships);
+  const institutionTypes = queryArray(query.institutionTypes);
+  const universitySearchText = buildUniversitySearchText(university);
+  const searchMatchesUniversity = !search || universitySearchText.includes(search);
 
   if (!isReadyForPublicCatalog(university)) return false;
-  if (search && !`${buildUniversitySearchText(university)} ${readyPrograms.map(buildProgramSearchText).join(" ")}`.includes(search)) return false;
-  if (query.ownerships?.length && !query.ownerships.includes(university.ownership)) return false;
-  if (query.institutionTypes?.length && !query.institutionTypes.includes(university.institutionType)) return false;
+  if (search && !searchMatchesUniversity && !readyPrograms.some((program) => buildProgramSearchText(program).includes(search))) return false;
+  if (ownerships.length && !ownerships.includes(university.ownership)) return false;
+  if (institutionTypes.length && !institutionTypes.includes(university.institutionType)) return false;
   if (query.acceptNoLanguage === true && !university.acceptNoLanguage) return false;
-  if (query.qsRankMax && university.qsRank > query.qsRankMax) return false;
+  if (query.qsRankMax && (!hasValidQsWorldRank(university.qsRank) || university.qsRank > query.qsRankMax)) return false;
   if (query.ieltsMax && Number(university.minIelts) > query.ieltsMax) return false;
 
   if (hasProgramSpecificFilters(query)) {
-    return readyPrograms.some((program) => matchesProgramSpecificFilters(program, query));
+    return readyPrograms.some((program) =>
+      (searchMatchesUniversity || !search || buildProgramSearchText(program).includes(search)) && matchesProgramSpecificFilters(program, query)
+    );
   }
 
   if (query.tuitionMin && university.tuitionMaxCny < query.tuitionMin) return false;
@@ -154,16 +188,63 @@ export function mapUniversityCatalogItem(university: UniversityEntity, readyProg
 }
 
 export function mapProgramCatalogItem(program: ProgramEntity, university: UniversityEntity): ProgramCatalogItem {
+  const filterableTuitionCny = getFilterableTuitionCny(program);
   return {
     ...mapProgram(program),
     university: mapUniversity(university),
-    annualCostCny: program.annualTuitionCny + university.livingCostCny
+    annualCostCny: filterableTuitionCny == null ? null : filterableTuitionCny + university.livingCostCny
   };
+}
+
+function publicProgramStatusRank(program: ProgramEntity) {
+  const ielts = publicCatalogIeltsRequirement(program);
+  const hasDisplayIelts = Number.isFinite(ielts) && ielts > 0 && program.publicDisplayStatus !== "not-available-for-international";
+  if (program.publicDisplayStatus === "ready" && hasDisplayIelts) return 0;
+  if (hasDisplayIelts) return 1;
+  if (program.publicDisplayStatus === "ready") return 2;
+  if (program.publicDisplayStatus === "current-cycle-not-open") return 3;
+  if (program.publicDisplayStatus === "not-available-for-international") return 4;
+  if (program.publicDisplayStatus === "official-language-requirement-not-published") return 5;
+  return 6;
+}
+
+function publicCatalogIeltsRequirement(program: ProgramEntity) {
+  const directIelts = Number(program.languageRequirement?.ielts ?? 0);
+  if (Number.isFinite(directIelts) && directIelts > 0) return directIelts;
+  return muetBandToIeltsEquivalent(program.languageRequirement?.muet) ?? 0;
+}
+
+function levelRank(level: unknown) {
+  const index = degreeOrder.indexOf(level as DegreeLevel);
+  return index >= 0 ? index : degreeOrder.length;
+}
+
+function universityRank(program: ProgramEntity) {
+  const rank = Number(program.university?.qsRank ?? 0);
+  return hasValidQsWorldRank(rank) ? rank : Number.MAX_SAFE_INTEGER;
+}
+
+function universityName(program: ProgramEntity) {
+  return program.university?.shortName || program.university?.nameEnOfficial || program.university?.name?.en || "";
+}
+
+function programName(program: ProgramEntity) {
+  return program.nameEnOfficial || program.name?.en || program.code || "";
+}
+
+export function compareProgramsForPublicCatalog(a: ProgramEntity, b: ProgramEntity) {
+  return publicProgramStatusRank(a) - publicProgramStatusRank(b) ||
+    levelRank(a.level) - levelRank(b.level) ||
+    universityRank(a) - universityRank(b) ||
+    universityName(a).localeCompare(universityName(b)) ||
+    String(a.category || "").localeCompare(String(b.category || "")) ||
+    programName(a).localeCompare(programName(b)) ||
+    a.id - b.id;
 }
 
 export function buildProgramGroups(programs: ProgramEntity[]): UniversityProgramGroup[] {
   return degreeOrder.map((level) => {
-    const items = programs.filter((program) => program.level === level).map(mapProgram);
+    const items = programs.filter((program) => program.level === level).sort(compareProgramsForPublicCatalog).map(mapProgram);
     return {
       level,
       label: DEGREE_LEVEL_LABELS[level],
@@ -217,7 +298,8 @@ export function buildCatalogFacets(
   programs: ProgramEntity[],
   query: PublicCatalogQuery,
   resultUniversities: UniversityEntity[],
-  resultPrograms: ProgramEntity[]
+  resultPrograms: ProgramEntity[],
+  resultCountMode: "university" | "program" = "university"
 ) {
   const ownershipCounts = new Map<string, number>();
   const institutionTypeCounts = new Map<string, number>();
@@ -236,11 +318,11 @@ export function buildCatalogFacets(
 
   const rankFacet = makeFacet(
     "qsRankMax",
-    "QS ranking",
+    "QS WUR 2027",
     rankOptions.map((value) => ({
       value: String(value),
       label: textLabel(`Top ${value}`),
-      count: universities.filter((university) => university.qsRank <= value).length
+      count: universities.filter((university) => hasValidQsWorldRank(university.qsRank) && university.qsRank <= value).length
     }))
   );
   const tuitionFacet = makeFacet(
@@ -249,7 +331,10 @@ export function buildCatalogFacets(
     tuitionOptions.map((value) => ({
       value: String(value),
       label: textLabel(`Under ${value} CNY`),
-      count: programs.filter((program) => program.annualTuitionCny <= value).length
+      count: programs.filter((program) => {
+        const filterableTuitionCny = getFilterableTuitionCny(program);
+        return filterableTuitionCny != null && filterableTuitionCny <= value;
+      }).length
     }))
   );
   const languageFacet = makeFacet(
@@ -260,12 +345,15 @@ export function buildCatalogFacets(
       label: textLabel(value),
       count: value === "accept-no-language"
         ? universities.filter((university) => university.acceptNoLanguage).length
-        : programs.filter((program) => program.languageRequirement.ielts <= Number(value.replace("ielts-", ""))).length
+        : programs.filter((program) => {
+          const ielts = publicCatalogIeltsRequirement(program);
+          return ielts > 0 && ielts <= Number(value.replace("ielts-", ""));
+        }).length
     }))
   );
 
   return {
-    resultCount: resultUniversities.length,
+    resultCount: resultCountMode === "program" ? resultPrograms.length : resultUniversities.length,
     universityResultCount: resultUniversities.length,
     programResultCount: resultPrograms.length,
     facets: [
@@ -288,12 +376,12 @@ export function buildActiveFilters(query: PublicCatalogQuery): ActiveFilterItem[
   };
 
   if (query.search) push("search", query.search, query.search);
-  query.ownerships?.forEach((value) => push("ownerships", value));
-  query.institutionTypes?.forEach((value) => push("institutionTypes", value));
-  query.levels?.forEach((value) => push("levels", value, DEGREE_LEVEL_LABELS[value].en));
-  query.categories?.forEach((value) => push("categories", value));
+  queryArray(query.ownerships).forEach((value) => push("ownerships", value));
+  queryArray(query.institutionTypes).forEach((value) => push("institutionTypes", value));
+  queryArray(query.levels).forEach((value) => push("levels", value, DEGREE_LEVEL_LABELS[value]?.en || value));
+  queryArray(query.categories).forEach((value) => push("categories", value));
   if (query.acceptNoLanguage) push("acceptNoLanguage", "true", "Accepts no-language applications");
-  if (query.qsRankMax) push("qsRankMax", String(query.qsRankMax), `QS Top ${query.qsRankMax}`);
+  if (query.qsRankMax) push("qsRankMax", String(query.qsRankMax), `QS WUR 2027 Top ${query.qsRankMax}`);
   if (query.tuitionMin) push("tuitionMin", String(query.tuitionMin), `From ${query.tuitionMin} CNY`);
   if (query.tuitionMax) push("tuitionMax", String(query.tuitionMax), `Under ${query.tuitionMax} CNY`);
   if (query.budgetCny) push("budgetCny", String(query.budgetCny), `Budget ${query.budgetCny} CNY`);

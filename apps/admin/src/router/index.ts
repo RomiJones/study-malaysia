@@ -8,6 +8,7 @@ import PermissionsPage from "@/pages/PermissionsPage.vue";
 import MenusPage from "@/pages/MenusPage.vue";
 import UniversitiesPage from "@/pages/UniversitiesPage.vue";
 import ProgramsPage from "@/pages/ProgramsPage.vue";
+import FeeReviewPage from "@/pages/FeeReviewPage.vue";
 import ContentPage from "@/pages/ContentPage.vue";
 import ApplicationsPage from "@/pages/ApplicationsPage.vue";
 import SettingsPage from "@/pages/SettingsPage.vue";
@@ -32,6 +33,7 @@ const router = createRouter({
         { path: "/menus", name: "menus", component: MenusPage, meta: { title: "菜单管理", permission: "menu:view" } },
         { path: "/universities", name: "universities", component: UniversitiesPage, meta: { title: "学校管理", permission: "school:view" } },
         { path: "/programs", name: "programs", component: ProgramsPage, meta: { title: "专业管理", permission: "program:view" } },
+        { path: "/fee-review", name: "fee-review", component: FeeReviewPage, meta: { title: "费用复核工作台", permission: "program:view" } },
         { path: "/content", name: "content", component: ContentPage, meta: { title: "内容管理", permission: "content:view" } },
         { path: "/notion-tasks", name: "notion-tasks", component: NotionTasksPage, meta: { title: "Notion 任务", permission: "settings:view" } },
         { path: "/localization", name: "localization", component: LocalizationPage, meta: { title: "多语言切换", permission: "settings:view" } },

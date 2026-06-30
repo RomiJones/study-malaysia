@@ -10,6 +10,8 @@ import {
   SMART_RECOMMENDATION_PROFILE_COMPLETENESS_THRESHOLD,
   SMART_RECOMMENDATION_PROFILE_COMPLETENESS_WEIGHTS,
   SMART_RECOMMENDATION_REQUIRED_PROFILE_FIELDS,
+  DEGREE_LEVEL_ORDER,
+  hasValidQsWorldRank,
   type ApplicationTier,
   type LocalizedText,
   type SmartRecommendationAccessStatus,
@@ -26,6 +28,7 @@ import {
   type SmartRecommendationSavedProfileDto
 } from "@studymy/shared";
 import { CacheService } from "../common/cache.service.js";
+import { getFilterableTuitionCny } from "../common/fee-strategy.helper.js";
 import { buildRecommendation, isReadyForPublicCatalog } from "../common/mappers.js";
 import {
   PlannerProfileEntity,
@@ -41,6 +44,7 @@ interface RecommendationBuildResult {
 }
 
 const recommendationRuleVersion = "profile-gated-v1";
+const recommendationCacheTtlSeconds = 30 * 60;
 
 @Injectable()
 export class RecommendationsService {
@@ -130,14 +134,14 @@ export class RecommendationsService {
         scope: "user-profile",
         profileVersion: String(profile.profileVersion),
         ruleVersion: recommendationRuleVersion,
-        expiresAt: new Date(generatedAt.getTime() + 30 * 60 * 1000).toISOString(),
+        expiresAt: this.cacheExpiresAt(generatedAt).toISOString(),
         invalidationTriggers: [...SMART_RECOMMENDATION_CACHE_INVALIDATION_TRIGGERS]
       },
       generatedAt: generatedAt.toISOString()
     };
 
     await this.persistGeneratedRun(userId, profile, profileHash, built, generatedAt);
-    await this.cacheService.setJson(cacheKey, response, 300);
+    await this.cacheService.setJson(cacheKey, response, recommendationCacheTtlSeconds);
     return response;
   }
 
@@ -188,7 +192,7 @@ export class RecommendationsService {
   }
 
   private hasProfileField(profile: PlannerProfileEntity, field: SmartRecommendationProfileField) {
-    if (field === "level") return profile.level === "bachelor" || profile.level === "master" || profile.level === "phd";
+    if (field === "level") return DEGREE_LEVEL_ORDER.includes(profile.level);
     if (field === "targetCategory") return typeof profile.targetCategory === "string" && profile.targetCategory.trim().length > 0;
     if (field === "budgetCny") return Number(profile.budgetCny) > 0;
     if (field === "gpa") return Number(profile.gpa) > 0;
@@ -303,7 +307,8 @@ export class RecommendationsService {
     university: UniversityEntity,
     program: ProgramEntity
   ): RecommendationBuildResult | null {
-    const annualCostCny = program.annualTuitionCny + university.livingCostCny;
+    const filterableTuitionCny = getFilterableTuitionCny(program);
+    const annualCostCny = filterableTuitionCny == null ? null : filterableTuitionCny + university.livingCostCny;
     const profileVersion = String(profile.profileVersion);
     const reasons = { en: [] as string[], ms: [] as string[], "zh-CN": [] as string[], "zh-TW": [] as string[] };
     const reasonsDetailed: SmartRecommendationResultDto["reasonsDetailed"] = [
@@ -345,9 +350,9 @@ export class RecommendationsService {
     const gpaScore = this.scoreGpa(profile, program, reasons, reasonsDetailed, risks);
     const languageScore = this.scoreLanguage(profile, university, program, reasons, reasonsDetailed, risks);
     const budgetScore = this.scoreBudget(profile, annualCostCny, reasons, reasonsDetailed, risks);
-    score += gpaScore + languageScore + budgetScore + (university.qsRank <= 100 ? 8 : university.qsRank <= 300 ? 5 : 0);
+    score += gpaScore + languageScore + budgetScore + (hasValidQsWorldRank(university.qsRank) ? university.qsRank <= 100 ? 8 : university.qsRank <= 300 ? 5 : 0 : 0);
 
-    if (university.qsRank <= 300) {
+    if (hasValidQsWorldRank(university.qsRank) && university.qsRank <= 300) {
       reasonsDetailed.push({
         code: "ranking-fit",
         publicDataField: "university.qsRank",
@@ -516,13 +521,13 @@ export class RecommendationsService {
 
   private scoreBudget(
     profile: PlannerProfileEntity,
-    annualCostCny: number,
+    annualCostCny: number | null,
     reasons: SmartRecommendationResultDto["reasons"],
     details: SmartRecommendationResultDto["reasonsDetailed"],
     risks: SmartRecommendationRiskDto[]
   ) {
     const budget = Number(profile.budgetCny);
-    if (annualCostCny <= budget) {
+    if (annualCostCny != null && annualCostCny <= budget) {
       reasons.en.push("First-year cost is within budget");
       reasons.ms.push("Kos tahun pertama dalam bajet");
       reasons["zh-CN"].push("首年成本在预算内");
@@ -542,7 +547,7 @@ export class RecommendationsService {
       });
       return 18;
     }
-    if (annualCostCny <= budget * 1.15) {
+    if (annualCostCny != null && annualCostCny <= budget * 1.15) {
       risks.push(this.risk("budget-over-limit", "warning", "budgetCny", "program.annualTuitionCny"));
       details.push({
         code: "budget-close",
@@ -657,7 +662,7 @@ export class RecommendationsService {
     built: RecommendationBuildResult[],
     generatedAt: Date
   ) {
-    const expiresAt = new Date(generatedAt.getTime() + 30 * 60 * 1000);
+    const expiresAt = this.cacheExpiresAt(generatedAt);
     await this.recommendationRunRepository.save(this.recommendationRunRepository.create({
       userId,
       profileId: profile.id,
@@ -702,6 +707,10 @@ export class RecommendationsService {
 
   private cacheKey(userId: number, profile: PlannerProfileEntity, profileHash: string, locale?: string) {
     return `recommendation:profile:${userId}:${profile.profileVersion}:${profileHash}:${locale || "all"}`;
+  }
+
+  private cacheExpiresAt(generatedAt: Date) {
+    return new Date(generatedAt.getTime() + recommendationCacheTtlSeconds * 1000);
   }
 }
 

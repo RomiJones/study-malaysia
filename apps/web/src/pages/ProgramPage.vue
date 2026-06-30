@@ -19,7 +19,12 @@
         <div class="grid gap-4">
           <div class="stat-card rounded-[24px] p-5">
             <div class="text-xs font-bold uppercase tracking-[0.16em] text-slate-500">{{ t('university.officialTuition') }}</div>
-            <div class="mt-3 text-3xl font-black text-slate-900">{{ tuitionLabel }}</div>
+            <div class="mt-3 flex flex-wrap items-center gap-2 text-3xl font-black text-slate-900">
+              <span>{{ tuitionLabel }}</span>
+              <span v-if="catalog.programDetail && hasVerifiedProgramFee(catalog.programDetail)" class="fee-verified-badge">
+                {{ formatProgramFeeVerifiedLabel(currentLocale) }}
+              </span>
+            </div>
             <p v-if="tuitionNote" class="mt-3 text-sm leading-6 text-slate-600">{{ tuitionNote }}</p>
           </div>
           <div class="stat-card rounded-[24px] p-5">
@@ -40,6 +45,7 @@
         <h2 class="section-title mt-2">{{ t('program.requirementsTitle') }}</h2>
         <div class="mt-5 grid gap-4 text-sm leading-7 text-slate-600">
           <div>{{ t('common.languageRequirement') }}: {{ languageLabel }}</div>
+          <div v-if="officialLanguageDetail">{{ t('program.officialLanguageRequirement') }}: {{ officialLanguageDetail }}</div>
           <div>{{ t('program.suggestedGpa') }}: {{ gpaLabel }}</div>
           <div>{{ requirementNote }}</div>
           <div>{{ t('program.startMonth') }}: {{ intakeLabel }}</div>
@@ -83,8 +89,9 @@
 </template>
 
 <script setup lang="ts">
-import { computed, onMounted } from "vue";
+import { computed, onMounted, watch } from "vue";
 import { useI18n } from "vue-i18n";
+import { useRoute } from "vue-router";
 import { useCatalogStore } from "../stores/catalog";
 import { usePlannerStore } from "../stores/planner";
 import { useLocaleText } from "../composables/useLocaleText";
@@ -96,14 +103,25 @@ import {
   formatProgramDuration,
   formatProgramIntake,
   formatProgramLanguage,
-  formatProgramTuition
+  formatProgramFeeVerifiedLabel,
+  formatProgramTuition,
+  hasVerifiedProgramFee
 } from "../utils/format";
+
+type ReviewPreview = "msu" | "luc";
 
 const props = defineProps<{ slug: string }>();
 const catalog = useCatalogStore();
 const planner = usePlannerStore();
+const route = useRoute();
 const { t } = useI18n();
 const { currentLocale, text, array } = useLocaleText();
+const reviewPreview = computed<ReviewPreview | undefined>(() => {
+  if (route.query.review === "msu") return "msu";
+  if (route.query.review === "luc") return "luc";
+  if (props.slug.startsWith("luc-official-20260630-row-")) return "luc";
+  return undefined;
+});
 
 const levelLabel = computed(() => catalog.programDetail ? t(`degree.${catalog.programDetail.level}`) : "");
 const categoryLabel = computed(() => catalog.programDetail ? formatCategoryLabel(catalog.programDetail.category, currentLocale.value) : "");
@@ -133,6 +151,9 @@ const gpaLabel = computed(() => {
 const requirementNote = computed(() => catalog.programDetail
   ? cleanDisplayText(text(catalog.programDetail.requirement.note), officialPageFallback(currentLocale.value), currentLocale.value)
   : officialPageFallback(currentLocale.value));
+const officialLanguageDetail = computed(() => catalog.programDetail
+  ? cleanDisplayText(catalog.programDetail.officialLanguageRequirement, "", currentLocale.value)
+  : "");
 const documentRows = computed(() => {
   const rows = catalog.programDetail ? array(catalog.programDetail.applicationDocs).filter(Boolean) : [];
   return rows.length ? rows : [officialPageFallback(currentLocale.value)];
@@ -150,7 +171,11 @@ const specializationRows = computed(() => {
   return rows.length ? rows : [officialConfirmationFallback(currentLocale.value)];
 });
 
-onMounted(() => {
-  void catalog.loadProgram(props.slug).catch(() => undefined);
-});
+function loadDetail() {
+  void catalog.loadProgram(props.slug, reviewPreview.value ? { review: reviewPreview.value } : {}).catch(() => undefined);
+}
+
+onMounted(loadDetail);
+
+watch(() => [props.slug, route.query.review], loadDetail);
 </script>

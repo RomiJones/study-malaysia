@@ -18,6 +18,9 @@
         <el-select v-model="query.feeAuditStatus" clearable placeholder="费用审计" @change="load">
           <el-option v-for="item in feeAuditOptions" :key="item.value" :label="item.label" :value="item.value" />
         </el-select>
+        <el-select v-model="query.officialSourceStatus" clearable placeholder="来源状态" @change="load">
+          <el-option v-for="item in sourceStatusOptions" :key="item.value" :label="item.label" :value="item.value" />
+        </el-select>
       </div>
       <div class="page-toolbar__right">
         <el-button type="primary" :disabled="!canUpdate" @click="openCreate">新增专业</el-button>
@@ -44,6 +47,13 @@
         <template #default="scope">
           <el-tag :type="statusTagType(scope.row.officialFeeAuditStatus)">
             {{ optionLabel(feeAuditOptions, scope.row.officialFeeAuditStatus) }}
+          </el-tag>
+        </template>
+      </el-table-column>
+      <el-table-column label="来源状态" min-width="160">
+        <template #default="scope">
+          <el-tag :type="statusTagType(scope.row.officialSourceStatus)">
+            {{ optionLabel(sourceStatusOptions, scope.row.officialSourceStatus) }}
           </el-tag>
         </template>
       </el-table-column>
@@ -75,8 +85,39 @@
 
   <el-dialog v-model="visible" title="专业管理" width="1180px" top="4vh" destroy-on-close>
     <el-form ref="formRef" :model="form" :rules="rules" label-position="top" status-icon>
-      <el-tabs>
-        <el-tab-pane label="基础信息">
+      <section v-if="form.id" class="calibration-panel">
+        <div class="calibration-panel__header">
+          <div>
+            <div class="calibration-panel__title">前端展示校准</div>
+            <div class="section-subtitle">保存后会清理目录缓存并触发单条质量检查，用户端专业列表和专业详情会读取这些字段。</div>
+          </div>
+          <div class="table-actions">
+            <el-tag :type="statusTagType(form.publicDisplayStatus)">{{ optionLabel(publicDisplayOptions, form.publicDisplayStatus) }}</el-tag>
+            <el-tag :type="statusTagType(form.officialFeeAuditStatus)">{{ optionLabel(feeAuditOptions, form.officialFeeAuditStatus) }}</el-tag>
+          </div>
+        </div>
+        <div class="calibration-field-grid">
+          <div v-for="item in programCalibrationItems" :key="item.label" class="calibration-field">
+            <span>{{ item.label }}</span>
+            <strong>{{ item.value || "-" }}</strong>
+          </div>
+        </div>
+        <el-skeleton v-if="entityIssueLoading" :rows="2" animated />
+        <el-alert v-else-if="!entityIssues.length" title="当前条目暂无待处理质量问题" type="success" show-icon :closable="false" />
+        <div v-else class="entity-issue-list">
+          <div v-for="issue in entityIssues" :key="issue.id" class="entity-issue-row">
+            <el-tag :type="severityTagType(issue.severity)">{{ severityLabel(issue.severity) }}</el-tag>
+            <div class="entity-issue-row__body">
+              <strong>{{ issue.ruleName || issue.ruleId }}</strong>
+              <span>{{ issue.message }}</span>
+              <small>{{ issue.fieldPath || "-" }}</small>
+            </div>
+            <el-button link type="primary" @click="focusProgramIssue(issue.fieldPath)">定位字段</el-button>
+          </div>
+        </div>
+      </section>
+      <el-tabs v-model="activeTab">
+        <el-tab-pane label="基础信息" name="base">
           <div class="split-grid">
             <el-form-item label="所属学校" prop="universityId">
               <el-select v-model="form.universityId" filterable>
@@ -118,7 +159,7 @@
           <LocaleListTabs v-model="form.specializations" label="方向与特色" />
         </el-tab-pane>
 
-        <el-tab-pane label="费用与开学">
+        <el-tab-pane label="费用与开学" name="fee">
           <div class="split-grid">
             <el-form-item label="学制(年)"><el-input-number v-model="form.durationYears" :min="0.5" :step="0.5" /></el-form-item>
             <el-form-item label="官方学制"><el-input v-model="form.durationOfficial" /></el-form-item>
@@ -161,7 +202,7 @@
           <el-form-item label="官方开学备注"><el-input v-model="form.officialIntakeNote" type="textarea" :rows="3" /></el-form-item>
         </el-tab-pane>
 
-        <el-tab-pane label="要求与来源">
+        <el-tab-pane label="要求与来源" name="requirements">
           <div class="split-grid">
             <el-form-item label="IELTS"><el-input-number v-model="form.languageRequirement.ielts" :min="0" :max="9" :step="0.5" /></el-form-item>
             <el-form-item label="TOEFL"><el-input-number v-model="form.languageRequirement.toefl" :min="0" /></el-form-item>
@@ -214,7 +255,7 @@
           </el-form-item>
         </el-tab-pane>
 
-        <el-tab-pane label="发布与审计">
+        <el-tab-pane label="发布与审计" name="audit">
           <div class="split-grid">
             <el-form-item label="公开展示状态">
               <el-select v-model="form.publicDisplayStatus">
@@ -246,7 +287,8 @@
 </template>
 
 <script setup lang="ts">
-import { computed, onMounted, reactive, ref } from "vue";
+import { computed, onMounted, reactive, ref, watch } from "vue";
+import { useRoute } from "vue-router";
 import { ElMessage, ElMessageBox, type FormInstance, type FormRules } from "element-plus";
 import { adminApi } from "@/api/admin";
 import LocaleTextTabs from "@/components/LocaleTextTabs.vue";
@@ -267,6 +309,7 @@ import {
   type DictionaryItem
 } from "@/utils/adminOptions";
 
+const route = useRoute();
 const { hasPermission } = useAccess();
 const canUpdate = computed(() => hasPermission("program:update"));
 const canDelete = computed(() => hasPermission("program:delete"));
@@ -278,17 +321,31 @@ const visible = ref(false);
 const loading = ref(false);
 const saving = ref(false);
 const formRef = ref<FormInstance>();
+const activeTab = ref("base");
+const entityIssues = ref<QualityIssueItem[]>([]);
+const entityIssueLoading = ref(false);
+const lastRouteEditKey = ref("");
 const query = reactive({
   page: 1,
   pageSize: 10,
-  search: "",
+  search: routeQueryString(route.query.search),
   universityId: undefined as number | undefined,
   level: "",
   category: "",
   publicDisplayStatus: "",
-  feeAuditStatus: ""
+  feeAuditStatus: "",
+  officialSourceStatus: ""
 });
 const form = reactive<any>({});
+
+interface QualityIssueItem {
+  id: number;
+  ruleId: string;
+  ruleName?: string;
+  severity: string;
+  message: string;
+  fieldPath?: string | null;
+}
 
 const levelOptions = computed(() => dictionaryOptions(dictionaries.value, "degree_level"));
 const categoryOptions = computed(() => dictionaryOptions(dictionaries.value, "program_category"));
@@ -297,6 +354,19 @@ const sourceStatusOptions = computed(() => dictionaryOptions(dictionaries.value,
 const feeAuditOptions = computed(() => dictionaryOptions(dictionaries.value, "fee_audit_status"));
 const tuitionCurrencyOptions = computed(() => dictionaryOptions(dictionaries.value, "tuition_currency"));
 const sourceTypeOptions = computed(() => dictionaryOptions(dictionaries.value, "source_type"));
+const verifiedOfficialSourceStatuses = [
+  "official-verified",
+  "official-page-verified-current-cycle-not-open",
+  "official-page-verified-international-not-available"
+];
+const verifiedFeeAuditStatuses = [
+  "matched-official",
+  "fee-sheet-verified",
+  "official-approximate",
+  "official-rate-verified",
+  "calculated-from-official-rate",
+  "official-non-scalar"
+];
 
 const rules = reactive<FormRules>({
   universityId: [{ required: true, message: "请选择学校", trigger: "change" }],
@@ -310,6 +380,15 @@ const intakeMonthsText = computed({
     form.intakeMonths = parseLineList(value);
   }
 });
+
+const programCalibrationItems = computed(() => [
+  { label: "用户端名称", value: form.name?.["zh-CN"] || form.nameEnOfficial },
+  { label: "列表学费", value: form.tuitionDisplay || form.listTuitionText || (form.officialTuitionMYR ? `RM ${Number(form.officialTuitionMYR).toLocaleString("en-US")}` : "") },
+  { label: "官方开学", value: form.officialIntake || formatLineList(form.intakeMonths) },
+  { label: "专业来源", value: form.officialSourceUrl },
+  { label: "费用来源", value: form.officialFeeSourceUrl },
+  { label: "核验日期", value: form.officialVerifiedAt || form.officialFeeAuditedAt || "-" }
+]);
 
 const resetForm = () => {
   Object.assign(form, {
@@ -388,6 +467,24 @@ const load = async () => {
   }
 };
 
+watch(
+  () => route.query.search,
+  (search) => {
+    const nextSearch = routeQueryString(search);
+    if (query.search === nextSearch) return;
+    query.search = nextSearch;
+    query.page = 1;
+    void load();
+  }
+);
+
+watch(
+  () => [route.query.editId, route.query.focus],
+  () => {
+    void openRouteEdit();
+  }
+);
+
 const loadUniversities = async () => {
   const data = await adminApi.universities({ page: 1, pageSize: 1000 });
   universities.value = data.items;
@@ -395,10 +492,12 @@ const loadUniversities = async () => {
 
 const openCreate = () => {
   resetForm();
+  activeTab.value = "base";
+  entityIssues.value = [];
   visible.value = true;
 };
 
-const openEdit = (row: any) => {
+const openEdit = (row: any, focus?: string) => {
   resetForm();
   Object.assign(form, JSON.parse(JSON.stringify(row)));
   delete form.university;
@@ -411,7 +510,62 @@ const openEdit = (row: any) => {
   form.specializations ||= createLocaleArrayMap();
   form.sourceUrls = normalizeSourceLinks(form.sourceUrls);
   normalizeNumericFields();
+  activeTab.value = programFieldTab(focus);
   visible.value = true;
+  void loadEntityIssues();
+};
+
+const openRouteEdit = async () => {
+  const editId = Number(route.query.editId);
+  if (!Number.isFinite(editId) || editId <= 0) return;
+  const focus = routeQueryString(route.query.focus);
+  const key = `${editId}:${focus}`;
+  if (lastRouteEditKey.value === key) return;
+  lastRouteEditKey.value = key;
+  try {
+    const detail = await adminApi.programDetail(editId);
+    openEdit(detail, focus);
+  } catch (error) {
+    ElMessage.error(errorMessage(error));
+  }
+};
+
+const loadEntityIssues = async () => {
+  if (!form.id) {
+    entityIssues.value = [];
+    return;
+  }
+  entityIssueLoading.value = true;
+  try {
+    const data = await adminApi.qualityIssues({
+      entityType: "program",
+      entityId: form.id,
+      status: "open",
+      page: 1,
+      pageSize: 20
+    });
+    entityIssues.value = data.items || [];
+  } catch {
+    entityIssues.value = [];
+  } finally {
+    entityIssueLoading.value = false;
+  }
+};
+
+const focusProgramIssue = (fieldPath?: string | null) => {
+  activeTab.value = programFieldTab(fieldPath || "");
+};
+
+const programFieldTab = (fieldPath?: string | null) => {
+  const field = fieldPath || "";
+  if (["officialFeeSourceUrl", "officialFeeAuditStatus", "tuitionDisplay", "officialTuitionMYR", "officialIntake", "durationOfficial"].some((item) => field.includes(item))) {
+    return "fee";
+  }
+  if (["officialLanguageRequirement", "officialAcademicRequirement", "chinaStudentRequirement", "officialSourceUrl", "officialEntryRequirementSourceUrl", "sourceUrls", "officialAccreditation"].some((item) => field.includes(item))) {
+    return "requirements";
+  }
+  if (["publicDisplayStatus", "officialSourceStatus", "reviewReason", "auditNote"].some((item) => field.includes(item))) return "audit";
+  return "base";
 };
 
 const addSource = () => {
@@ -480,11 +634,11 @@ const validatePayload = (payload: any) => {
   if (payload.durationYears <= 0) throw new Error("学制必须大于 0");
   if (payload.annualTuitionCny < 0) throw new Error("年学费不能为负数");
   if (payload.officialTuitionMYR !== null && payload.officialTuitionMYR < 0) throw new Error("官方 MYR 学费不能为负数");
-  const sourceReady = payload.publicDisplayStatus === "ready" || payload.officialSourceStatus === "official-verified";
+  const sourceReady = payload.publicDisplayStatus === "ready" || verifiedOfficialSourceStatuses.includes(payload.officialSourceStatus);
   const hasProgramSource =
     payload.officialSourceUrl || payload.officialEntryRequirementSourceUrl || payload.officialAccreditationSourceUrl || hasSourceUrl(payload.sourceUrls);
   if (sourceReady && !hasProgramSource) throw new Error("可公开展示或官方已核验的专业必须至少填写一个官方来源 URL");
-  if (["matched-official", "official-rate-verified"].includes(payload.officialFeeAuditStatus) && !payload.officialFeeSourceUrl) {
+  if (verifiedFeeAuditStatuses.includes(payload.officialFeeAuditStatus) && !payload.officialFeeSourceUrl) {
     throw new Error("费用审计为官方已核验时必须填写官方学费来源 URL");
   }
   if (((payload.officialTuitionMYR !== null && payload.officialTuitionMYR !== undefined) || payload.tuitionCurrency === "MYR") && !payload.officialFeeSourceUrl) {
@@ -498,10 +652,20 @@ const validatePayload = (payload: any) => {
 };
 
 const errorMessage = (error: unknown) => (error instanceof Error ? error.message : typeof error === "string" ? error : "请检查表单必填项");
+const severityLabel = (severity: string) => ({ high: "High", medium: "Medium", low: "Low" }[severity] || severity || "-");
+const severityTagType = (severity: string) => {
+  if (severity === "high") return "danger";
+  if (severity === "medium") return "warning";
+  return "info";
+};
+function routeQueryString(value: unknown) {
+  return typeof value === "string" ? value : "";
+}
 
 onMounted(async () => {
   resetForm();
   await Promise.all([loadDictionaries(), loadUniversities()]);
   await load();
+  await openRouteEdit();
 });
 </script>

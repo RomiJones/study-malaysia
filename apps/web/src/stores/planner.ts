@@ -328,6 +328,16 @@ function buildMaterials(profile: PlannerProfileState, progress: Record<string, M
       material("study_plan", "Study plan", "个人陈述或学习计划", "Pelan pengajian", "Explain academic background and study plan.", "说明学术背景、申请动机和学习计划。", "Terangkan latar akademik, motivasi permohonan dan pelan pengajian."),
       material("recommendation", "Recommendation letter", "推荐信 1-2 封", "Surat cadangan", "Academic or professional references.", "准备 1-2 封学术或职业推荐信。", "Sediakan 1-2 surat cadangan akademik atau profesional.")
     ],
+    "postgraduate-certificate": [
+      material("degree_certificate", "Bachelor degree documents", "本科毕业证与学位证", "Dokumen ijazah sarjana muda", "Degree certificate and graduation certificate.", "本科毕业证和学位证。", "Sijil ijazah dan sijil tamat pengajian sarjana muda."),
+      material("study_plan", "Study plan", "个人陈述或学习计划", "Pelan pengajian", "Explain academic background and study plan.", "说明学术背景、申请动机和学习计划。", "Terangkan latar akademik, motivasi permohonan dan pelan pengajian."),
+      material("recommendation", "Recommendation letter", "推荐信 1-2 封", "Surat cadangan", "Academic or professional references.", "准备 1-2 封学术或职业推荐信。", "Sediakan 1-2 surat cadangan akademik atau profesional.")
+    ],
+    "postgraduate-diploma": [
+      material("degree_certificate", "Bachelor degree documents", "本科毕业证与学位证", "Dokumen ijazah sarjana muda", "Degree certificate and graduation certificate.", "本科毕业证和学位证。", "Sijil ijazah dan sijil tamat pengajian sarjana muda."),
+      material("study_plan", "Study plan", "个人陈述或学习计划", "Pelan pengajian", "Explain academic background and study plan.", "说明学术背景、申请动机和学习计划。", "Terangkan latar akademik, motivasi permohonan dan pelan pengajian."),
+      material("recommendation", "Recommendation letter", "推荐信 1-2 封", "Surat cadangan", "Academic or professional references.", "准备 1-2 封学术或职业推荐信。", "Sediakan 1-2 surat cadangan akademik atau profesional.")
+    ],
     phd: [
       material("master_degree", "Master degree documents", "硕士学位材料", "Dokumen ijazah sarjana", "Master transcript and degree certificate.", "硕士成绩单、毕业证和学位证。", "Transkrip sarjana, sijil tamat pengajian dan sijil ijazah."),
       material("research_proposal", "Research proposal", "研究计划书", "Cadangan penyelidikan", "Research topic, method and supervisor fit.", "说明研究主题、方法和潜在导师匹配度。", "Terangkan topik penyelidikan, kaedah dan kesesuaian penyelia."),
@@ -353,7 +363,8 @@ function buildRecommendations(profile: PlannerProfileState): RecommendationResul
     if (program.level !== profile.level) continue;
     if (profile.targetCategory && !sameCategory(program.category, profile.targetCategory)) continue;
 
-    const annualCostCny = program.annualTuitionCny + university.livingCostCny;
+    const filterableTuitionCny = programFilterableTuitionCny(program);
+    const annualCostCny = filterableTuitionCny == null ? null : filterableTuitionCny + university.livingCostCny;
     const score = scoreProgram(profile, program, university, annualCostCny);
     if (score.score < 22) continue;
     results.push({
@@ -368,7 +379,7 @@ function buildRecommendations(profile: PlannerProfileState): RecommendationResul
   return results.sort((a, b) => b.score - a.score).slice(0, 8);
 }
 
-function scoreProgram(profile: PlannerProfileState, program: ProgramListItem, university: UniversityListItem, annualCostCny: number) {
+function scoreProgram(profile: PlannerProfileState, program: ProgramListItem, university: UniversityListItem, annualCostCny: number | null) {
   let score = 0;
   const reasons: LocalizedStringArray = { en: [], ms: [], "zh-CN": [], "zh-TW": [] };
 
@@ -388,10 +399,10 @@ function scoreProgram(profile: PlannerProfileState, program: ProgramListItem, un
     pushReason(reasons, "Conditional language pathway is available", "支持先申请后补语言", "Laluan bahasa bersyarat tersedia");
   }
 
-  if (annualCostCny <= profile.budgetCny) {
+  if (annualCostCny != null && annualCostCny <= profile.budgetCny) {
     score += 20;
     pushReason(reasons, "First-year cost fits the budget", "首年成本在预算内", "Kos tahun pertama dalam belanjawan");
-  } else if (annualCostCny <= profile.budgetCny * 1.2) {
+  } else if (annualCostCny != null && annualCostCny <= profile.budgetCny * 1.2) {
     score += 10;
     pushReason(reasons, "First-year cost is close to the budget", "首年成本接近预算", "Kos tahun pertama hampir dengan belanjawan");
   }
@@ -400,6 +411,12 @@ function scoreProgram(profile: PlannerProfileState, program: ProgramListItem, un
   else if (university.qsRank <= 500) score += 7;
 
   return { score, reasons };
+}
+
+function programFilterableTuitionCny(program: ProgramListItem): number | null {
+  if (program.filterableTuitionCny != null) return program.filterableTuitionCny;
+  if (program.tuitionInfo?.filterableTuitionCny != null) return program.tuitionInfo.filterableTuitionCny;
+  return null;
 }
 
 function buildDefaultTasks(recommendations: RecommendationResult[]) {

@@ -3,6 +3,7 @@ import { ConfigModule } from "@nestjs/config";
 import { JwtModule } from "@nestjs/jwt";
 import { Reflector } from "@nestjs/core";
 import { TypeOrmModule } from "@nestjs/typeorm";
+import { AppController } from "./app.controller.js";
 import { ALL_ENTITIES } from "./db/entities.js";
 import { AuthController } from "./auth/auth.controller.js";
 import { AuthService } from "./auth/auth.service.js";
@@ -12,6 +13,8 @@ import { ProgramsController } from "./programs/programs.controller.js";
 import { ProgramsService } from "./programs/programs.service.js";
 import { RecommendationsController } from "./recommendations/recommendations.controller.js";
 import { RecommendationsService } from "./recommendations/recommendations.service.js";
+import { ToolsController } from "./tools/tools.controller.js";
+import { ToolsService } from "./tools/tools.service.js";
 import { I18nController } from "./i18n/i18n.controller.js";
 import { I18nService } from "./i18n/i18n.service.js";
 import { CatalogLocalizationController } from "./i18n/catalog-localization.controller.js";
@@ -26,6 +29,7 @@ import { FavoritesController } from "./favorites/favorites.controller.js";
 import { FavoritesService } from "./favorites/favorites.service.js";
 import { CompareController } from "./compare/compare.controller.js";
 import { CompareService } from "./compare/compare.service.js";
+import { CatalogController } from "./catalog/catalog.controller.js";
 import { AdminController } from "./admin/admin.controller.js";
 import { AdminAuthController } from "./admin/admin-auth.controller.js";
 import { AdminAuthService } from "./admin/admin-auth.service.js";
@@ -35,6 +39,9 @@ import { AdminCmsService } from "./admin/admin-cms.service.js";
 import { AdminApplicationsService } from "./admin/admin-applications.service.js";
 import { AdminSettingsService } from "./admin/admin-settings.service.js";
 import { AdminLogService } from "./admin/admin-log.service.js";
+import { QualityEngineService } from "./admin/quality-engine.service.js";
+import { FeeReviewController } from "./admin/fee-review.controller.js";
+import { FeeReviewService } from "./admin/fee-review.service.js";
 import { AuthGuard, AdminGuard, AdminAuthGuard, AdminPermissionGuard } from "./common/guards.js";
 import { CacheService } from "./common/cache.service.js";
 import { ENV_FILE_PATHS, loadEnvFiles } from "./config/env.js";
@@ -63,10 +70,12 @@ loadEnvFiles();
     TypeOrmModule.forFeature([...ALL_ENTITIES])
   ],
   controllers: [
+    AppController,
     AuthController,
     UniversitiesController,
     ProgramsController,
     RecommendationsController,
+    ToolsController,
     I18nController,
     CatalogLocalizationController,
     NotionController,
@@ -74,7 +83,9 @@ loadEnvFiles();
     PlannerController,
     FavoritesController,
     CompareController,
+    CatalogController,
     AdminController,
+    FeeReviewController,
     AdminAuthController,
     AdminAccessController
   ],
@@ -85,6 +96,7 @@ loadEnvFiles();
     UniversitiesService,
     ProgramsService,
     RecommendationsService,
+    ToolsService,
     I18nService,
     CatalogLocalizationService,
     NotionService,
@@ -98,6 +110,8 @@ loadEnvFiles();
     AdminApplicationsService,
     AdminSettingsService,
     AdminLogService,
+    QualityEngineService,
+    FeeReviewService,
     AuthGuard,
     AdminGuard,
     AdminAuthGuard,

@@ -139,7 +139,7 @@ function program(overrides: Record<string, unknown> = {}) {
     officialTuitionNote: "",
     officialFeeSourceUrl: "",
     secondaryOfficialFeeSourceUrl: "",
-    officialFeeAuditStatus: "pending-review",
+    officialFeeAuditStatus: "matched-official",
     officialFeeAuditedAt: null,
     intakeMonths: ["September"],
     officialIntake: "September",
@@ -179,7 +179,7 @@ function makeService(input: {
   cached?: unknown;
   savedRuns?: unknown[];
   savedProfiles?: unknown[];
-  cacheWrites?: Array<{ key: string; value: unknown }>;
+  cacheWrites?: Array<{ key: string; value: unknown; ttlSeconds?: number }>;
 }) {
   const savedRuns = input.savedRuns || [];
   const savedProfiles = input.savedProfiles || [];
@@ -191,8 +191,8 @@ function makeService(input: {
     { find: async () => input.universities || [] } as any,
     {
       getJson: async () => input.cached || null,
-      setJson: async (key: string, value: unknown) => {
-        cacheWrites.push({ key, value });
+      setJson: async (key: string, value: unknown, ttlSeconds?: number) => {
+        cacheWrites.push({ key, value, ttlSeconds });
       }
     } as any
   );
@@ -283,6 +283,15 @@ describe("smart recommendations API and service", () => {
     assert.equal((savedProfiles[0] as any).recommendationRefreshedAt instanceof Date, true);
     assert.equal(cacheWrites.length, 1);
     assert.match(cacheWrites[0].key, /^recommendation:profile:7:3:/);
+    assert.equal(cacheWrites[0].ttlSeconds, 30 * 60);
+    assert.equal(
+      new Date(result.cachePolicy?.expiresAt || "").getTime() - new Date(result.generatedAt || "").getTime(),
+      30 * 60 * 1000
+    );
+    assert.equal(
+      ((savedRuns[0] as any).expiresAt as Date).getTime(),
+      new Date(result.cachePolicy?.expiresAt || "").getTime()
+    );
   });
 
   test("rejects stale profile versions before using cached recommendations", async () => {

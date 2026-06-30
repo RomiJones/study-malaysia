@@ -1,18 +1,41 @@
-﻿import { Inject, Injectable, NotFoundException } from "@nestjs/common";
+﻿import { BadRequestException, Inject, Injectable, NotFoundException } from "@nestjs/common";
 import { InjectRepository } from "@nestjs/typeorm";
-import { In, Repository } from "typeorm";
-import type { DegreeLevel, ProgramCategoryCode, RecommendationResult } from "@studymy/shared";
+import { In, Like, Repository } from "typeorm";
+import { hasValidQsWorldRank, type DegreeLevel, type ProgramCategoryCode, type RecommendationResult } from "@studymy/shared";
 import { CacheService } from "../common/cache.service.js";
+import { getFilterableTuitionCny } from "../common/fee-strategy.helper.js";
 import { ProgramEntity, UniversityEntity } from "../db/entities.js";
 import { buildRecommendation, isReadyForPublicCatalog, mapProgram, mapUniversity } from "../common/mappers.js";
 import {
   buildCatalogFacets,
+  compareProgramsForPublicCatalog,
   mapProgramCatalogItem,
   matchesProgramFilters,
   publicReadyPrograms,
   toListResponse,
   type PublicCatalogQuery
 } from "../common/public-catalog.js";
+
+const visibleProgramStatuses = [
+  "ready",
+  "current-cycle-not-open",
+  "official-language-requirement-not-published",
+  "not-available-for-international"
+] as const;
+const reviewPreviewConfigs = [
+  {
+    key: "msu-official-audit-2026",
+    slugPrefix: "msu-review-",
+    universityCode: "MSU",
+    scope: "MSU official audit review"
+  },
+  {
+    key: "luc-official-audit-2026",
+    slugPrefix: "luc-official-20260630-row-",
+    universityCode: "LUC",
+    scope: "LUC undergraduate official audit review"
+  }
+] as const;
 
 export interface ProgramQuery {
   search?: string;
@@ -58,6 +81,12 @@ export interface RecommendationQuery {
   acceptNoLanguage?: boolean;
 }
 
+function getReviewPreviewConfig(key?: string | null) {
+  const config = reviewPreviewConfigs.find((item) => item.key === key);
+  if (!config) throw new NotFoundException("Program not found");
+  return config;
+}
+
 @Injectable()
 export class ProgramsService {
   private readonly programsRepository: Repository<ProgramEntity>;
@@ -82,18 +111,15 @@ export class ProgramsService {
 
     const [programs, universities] = await Promise.all([
       this.programsRepository.find({
-        where: { isPublished: true, publicDisplayStatus: In(["ready", "not-available-for-international"]) },
+        where: { isPublished: true, publicDisplayStatus: In(visibleProgramStatuses) },
         relations: { university: true },
         order: { createdAt: "DESC" }
       }),
       this.universitiesRepository.find({ where: { isPublished: true, publicDisplayStatus: "ready" } })
     ]);
     const universityMap = new Map(universities.map((university) => [university.id, university]));
-    for (const program of programs) {
-      if (program.university) universityMap.set(program.universityId, program.university);
-    }
 
-    const readyPrograms = publicReadyPrograms(programs, universityMap);
+    const readyPrograms = publicReadyPrograms(programs, universityMap).filter((program) => universityMap.has(program.universityId));
     const filtered = readyPrograms.filter((program) => {
       const university = universityMap.get(program.universityId);
       if (!university) return false;
@@ -103,8 +129,9 @@ export class ProgramsService {
     const filteredUniversities = [...new Set(filtered.map((program) => program.universityId))]
       .map((id) => universityMap.get(id))
       .filter((university): university is UniversityEntity => Boolean(university));
+    const sorted = [...filtered].sort(compareProgramsForPublicCatalog);
     const facetPayload = buildCatalogFacets(universities, readyPrograms, normalizedQuery, filteredUniversities, filtered);
-    const payload = filtered.map((program) => mapProgramCatalogItem(program, universityMap.get(program.universityId)!));
+    const payload = sorted.map((program) => mapProgramCatalogItem(program, universityMap.get(program.universityId)!));
     const response = normalizedQuery.includeMeta || normalizedQuery.page || normalizedQuery.pageSize
       ? toListResponse(payload, normalizedQuery, facetPayload.facets, facetPayload.activeFilters)
       : payload;
@@ -120,16 +147,13 @@ export class ProgramsService {
 
     const [programs, universities] = await Promise.all([
       this.programsRepository.find({
-        where: { isPublished: true, publicDisplayStatus: In(["ready", "not-available-for-international"]) },
+        where: { isPublished: true, publicDisplayStatus: In(visibleProgramStatuses) },
         relations: { university: true }
       }),
       this.universitiesRepository.find({ where: { isPublished: true, publicDisplayStatus: "ready" } })
     ]);
     const universityMap = new Map(universities.map((university) => [university.id, university]));
-    for (const program of programs) {
-      if (program.university) universityMap.set(program.universityId, program.university);
-    }
-    const readyPrograms = publicReadyPrograms(programs, universityMap);
+    const readyPrograms = publicReadyPrograms(programs, universityMap).filter((program) => universityMap.has(program.universityId));
     const filteredPrograms = readyPrograms.filter((program) => {
       const university = universityMap.get(program.universityId);
       if (!university) return false;
@@ -139,7 +163,7 @@ export class ProgramsService {
     const filteredUniversities = [...new Set(filteredPrograms.map((program) => program.universityId))]
       .map((id) => universityMap.get(id))
       .filter((university): university is UniversityEntity => Boolean(university));
-    const payload = buildCatalogFacets(universities, readyPrograms, normalizedQuery, filteredUniversities, filteredPrograms);
+    const payload = buildCatalogFacets(universities, readyPrograms, normalizedQuery, filteredUniversities, filteredPrograms, "program");
     await this.cacheService.setJson(cacheKey, payload, 300);
     return payload;
   }
@@ -156,16 +180,16 @@ export class ProgramsService {
     const numericId = /^\d+$/.test(identifier) ? Number(identifier) : null;
     const program = await this.programsRepository.findOne({
       where: numericId
-        ? { id: numericId, isPublished: true, publicDisplayStatus: In(["ready", "not-available-for-international"]) }
-        : { slug: identifier, isPublished: true, publicDisplayStatus: In(["ready", "not-available-for-international"]) },
+        ? { id: numericId, isPublished: true, publicDisplayStatus: In(visibleProgramStatuses) }
+        : { slug: identifier, isPublished: true, publicDisplayStatus: In(visibleProgramStatuses) },
       relations: { university: true }
     });
     if (!program) {
       throw new NotFoundException("Program not found");
     }
 
-    const university = program.university || await this.universitiesRepository.findOneBy({ id: program.universityId, isPublished: true, publicDisplayStatus: "ready" });
-    if (!university) {
+    const university = await this.universitiesRepository.findOneBy({ id: program.universityId, isPublished: true, publicDisplayStatus: "ready" });
+    if (!university || !isReadyForPublicCatalog(university)) {
       throw new NotFoundException("University not found");
     }
 
@@ -182,6 +206,41 @@ export class ProgramsService {
     return payload;
   }
 
+  async getReviewPreviewByIdentifier(identifier: string, key?: string | null) {
+    const config = getReviewPreviewConfig(key);
+    const numericId = /^\d+$/.test(identifier) ? Number(identifier) : null;
+    const program = await this.programsRepository.findOne({
+      where: numericId
+        ? { id: numericId, slug: Like(`${config.slugPrefix}%`) }
+        : { slug: identifier },
+      relations: { university: true }
+    });
+    if (
+      !program ||
+      !program.slug.startsWith(config.slugPrefix) ||
+      program.university?.code !== config.universityCode ||
+      !["needs-review", "ready"].includes(String(program.publicDisplayStatus))
+    ) {
+      throw new NotFoundException("Program not found");
+    }
+
+    const university = program.university || await this.universitiesRepository.findOneBy({ id: program.universityId, code: config.universityCode });
+    if (!university) throw new NotFoundException("University not found");
+
+    return {
+      ...mapProgramCatalogItem(program, university),
+      directTarget: {
+        universityId: university.id,
+        universitySlug: university.slug,
+        programId: program.id,
+        programSlug: program.slug
+      },
+      reviewPreview: {
+        scope: config.scope
+      }
+    };
+  }
+
   async costEstimate(programId: number) {
     const cacheKey = `catalog:cost:${programId}`;
     const cached = await this.cacheService.getJson(cacheKey);
@@ -196,7 +255,11 @@ export class ProgramsService {
       throw new NotFoundException("University not found");
     }
 
-    const tuitionTotal = Math.round(program.annualTuitionCny * Number(program.durationYears));
+    const filterableTuitionCny = getFilterableTuitionCny(program);
+    if (filterableTuitionCny == null) {
+      throw new BadRequestException("Program fee is not verified for cost estimate");
+    }
+    const tuitionTotal = Math.round(filterableTuitionCny * Number(program.durationYears));
     const livingTotal = Math.round(university.livingCostCny * Number(program.durationYears));
     const payload = {
       tuitionTotal,
@@ -228,7 +291,8 @@ export class ProgramsService {
       if (query.level && program.level !== query.level) continue;
       if (query.targetCategory && program.category !== query.targetCategory) continue;
 
-      const annualCost = program.annualTuitionCny + university.livingCostCny;
+      const filterableTuitionCny = getFilterableTuitionCny(program);
+      const annualCost = filterableTuitionCny == null ? null : filterableTuitionCny + university.livingCostCny;
       let score = 0;
       const reasons = { en: [] as string[], ms: [] as string[], "zh-CN": [] as string[], "zh-TW": [] as string[] };
 
@@ -252,16 +316,16 @@ export class ProgramsService {
         reasons["zh-CN"].push("支持条件录取或语言衔接");
         reasons["zh-TW"].push("支援條件錄取或語言銜接");
       }
-      if ((query.budgetCny ?? 0) >= annualCost) {
+      if (annualCost != null && (query.budgetCny ?? 0) >= annualCost) {
         score += 22;
         reasons.en.push("Budget covers first-year cost");
         reasons.ms.push("Bajet meliputi kos tahun pertama");
         reasons["zh-CN"].push("预算可覆盖首年成本");
         reasons["zh-TW"].push("預算可覆蓋首年成本");
       }
-      if (university.qsRank <= 100) {
+      if (hasValidQsWorldRank(university.qsRank) && university.qsRank <= 100) {
         score += 15;
-      } else if (university.qsRank <= 300) {
+      } else if (hasValidQsWorldRank(university.qsRank) && university.qsRank <= 300) {
         score += 9;
       }
 

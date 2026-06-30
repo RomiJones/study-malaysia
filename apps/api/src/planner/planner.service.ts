@@ -5,7 +5,10 @@ import { Repository } from "typeorm";
 import {
   SMART_RECOMMENDATION_PROFILE_COMPLETENESS_THRESHOLD,
   SMART_RECOMMENDATION_PROFILE_COMPLETENESS_WEIGHTS,
+  SMART_RECOMMENDATION_OPTIONAL_PROFILE_FIELDS,
   SMART_RECOMMENDATION_REQUIRED_PROFILE_FIELDS,
+  DEGREE_LEVEL_ORDER,
+  hasValidQsWorldRank,
   type ApplicationStage,
   type LocalizedText,
   type MaterialStatus,
@@ -13,6 +16,7 @@ import {
   type PlannerVisaChecklist,
   type SmartRecommendationProfileField
 } from "@studymy/shared";
+import { getFilterableTuitionCny } from "../common/fee-strategy.helper.js";
 import { PlannerProfileEntity, PlannerTaskEntity, ProgramEntity, UniversityEntity, UserEntity } from "../db/entities.js";
 import { buildRecommendation, isReadyForPublicCatalog, mapPlannerMaterials, mapPlannerProfile, mapPlannerTasks, mapVisaChecklist } from "../common/mappers.js";
 
@@ -60,7 +64,8 @@ export class PlannerService {
     const tasks = await this.findReadyTasks(userId);
     const materials = mapPlannerMaterials(profile);
     const visaChecklist = mapVisaChecklist(profile);
-    const recommendations = await this.buildProfileRecommendations(profile);
+    const recommendationStatus = this.recommendationProfileStatus(profile);
+    const recommendations = recommendationStatus.isComplete ? await this.buildProfileRecommendations(profile) : [];
     const doneMaterials = materials.filter((item) => item.status === "done").length;
     const readinessScore = Math.min(
       96,
@@ -83,7 +88,7 @@ export class PlannerService {
       summary: {
         readinessScore,
         materialCompletion: Math.round((doneMaterials / materials.length) * 100),
-        profileCompleteness: this.profileCompleteness(profile),
+        profileCompleteness: recommendationStatus.score,
         recommendationCount: recommendations.length,
         activeTaskCount: tasks.length,
         visaDoneCount: Object.values(visaChecklist).filter(Boolean).length
@@ -95,7 +100,7 @@ export class PlannerService {
   async updateProfile(userId: number, payload: Partial<PlannerProfile>) {
     const profile = await this.ensureProfile(userId);
     Object.assign(profile, payload);
-    this.syncProfileRecommendationState(profile, true);
+    this.syncProfileRecommendationState(profile, true, this.confirmedRecommendationProfileFields(payload));
     await this.profileRepository.save(profile);
     return this.getDashboard(userId);
   }
@@ -286,7 +291,7 @@ export class PlannerService {
       profile.visaChecklist = { ...(profile.visaChecklist || this.defaultVisaChecklist()), ...payload.visaChecklist };
     }
     if (payload.profile) {
-      this.syncProfileRecommendationState(profile, true);
+      this.syncProfileRecommendationState(profile, true, this.confirmedRecommendationProfileFields(payload.profile));
     }
     await this.profileRepository.save(profile);
 
@@ -485,18 +490,45 @@ export class PlannerService {
     return profile;
   }
 
-  private profileCompleteness(profile: PlannerProfileEntity) {
+  private profileCompleteness(profile: PlannerProfileEntity, missingFields = this.resolveMissingRecommendationProfileFields(profile)) {
+    const missingFieldSet = new Set<SmartRecommendationProfileField>(missingFields);
     return Math.min(
       Object.entries(SMART_RECOMMENDATION_PROFILE_COMPLETENESS_WEIGHTS).reduce((score, [field, weight]) => {
-        return this.hasRecommendationProfileField(profile, field as SmartRecommendationProfileField) ? score + weight : score;
+        const profileField = field as SmartRecommendationProfileField;
+        return !missingFieldSet.has(profileField) && this.hasRecommendationProfileField(profile, profileField) ? score + weight : score;
       }, 0),
       100
     );
   }
 
-  private syncProfileRecommendationState(profile: PlannerProfileEntity, incrementVersion: boolean) {
-    const missingFields = SMART_RECOMMENDATION_REQUIRED_PROFILE_FIELDS.filter((field) => !this.hasRecommendationProfileField(profile, field));
-    const score = this.profileCompleteness(profile);
+  private recommendationProfileStatus(profile: PlannerProfileEntity) {
+    const missingFields = this.resolveMissingRecommendationProfileFields(profile);
+    const score = this.profileCompleteness(profile, missingFields);
+    const hasConfirmedProfile = Boolean(profile.profileCompletedAt && profile.completenessStatus === "complete");
+    return {
+      missingFields,
+      score,
+      isComplete: hasConfirmedProfile && missingFields.length === 0 && score >= SMART_RECOMMENDATION_PROFILE_COMPLETENESS_THRESHOLD
+    };
+  }
+
+  private syncProfileRecommendationState(
+    profile: PlannerProfileEntity,
+    incrementVersion: boolean,
+    confirmedFields: SmartRecommendationProfileField[]
+  ) {
+    const confirmedFieldSet = new Set<SmartRecommendationProfileField>(confirmedFields);
+    const missingFieldSet = new Set<SmartRecommendationProfileField>(this.resolveMissingRecommendationProfileFields(profile));
+    for (const field of SMART_RECOMMENDATION_REQUIRED_PROFILE_FIELDS) {
+      if (!this.hasRecommendationProfileField(profile, field)) {
+        missingFieldSet.add(field);
+      } else if (confirmedFieldSet.has(field)) {
+        missingFieldSet.delete(field);
+      }
+    }
+
+    const missingFields = SMART_RECOMMENDATION_REQUIRED_PROFILE_FIELDS.filter((field) => missingFieldSet.has(field));
+    const score = this.profileCompleteness(profile, missingFields);
     const isComplete = missingFields.length === 0 && score >= SMART_RECOMMENDATION_PROFILE_COMPLETENESS_THRESHOLD;
 
     profile.requiredProfileFields = [...SMART_RECOMMENDATION_REQUIRED_PROFILE_FIELDS];
@@ -510,8 +542,41 @@ export class PlannerService {
     profile.recommendationRefreshedAt = null;
   }
 
+  private confirmedRecommendationProfileFields(payload: Partial<PlannerProfile>) {
+    const payloadFields = new Set(
+      Object.entries(payload)
+        .filter(([, value]) => value !== undefined)
+        .map(([field]) => field)
+    );
+    return [...SMART_RECOMMENDATION_REQUIRED_PROFILE_FIELDS, ...SMART_RECOMMENDATION_OPTIONAL_PROFILE_FIELDS].filter((field) =>
+      payloadFields.has(field)
+    );
+  }
+
+  private resolveMissingRecommendationProfileFields(profile: PlannerProfileEntity) {
+    const storedMissingFields = this.normalizeMissingRecommendationProfileFields(profile.missingProfileFields);
+    const hasConfirmedProfile = Boolean(profile.profileCompletedAt && profile.completenessStatus === "complete");
+    const baselineMissingFields = hasConfirmedProfile || storedMissingFields.length
+      ? storedMissingFields
+      : [...SMART_RECOMMENDATION_REQUIRED_PROFILE_FIELDS];
+    const missingFieldSet = new Set<SmartRecommendationProfileField>(baselineMissingFields);
+
+    for (const field of SMART_RECOMMENDATION_REQUIRED_PROFILE_FIELDS) {
+      if (!this.hasRecommendationProfileField(profile, field)) {
+        missingFieldSet.add(field);
+      }
+    }
+
+    return SMART_RECOMMENDATION_REQUIRED_PROFILE_FIELDS.filter((field) => missingFieldSet.has(field));
+  }
+
+  private normalizeMissingRecommendationProfileFields(fields: PlannerProfileEntity["missingProfileFields"]) {
+    const fieldSet = new Set(fields || []);
+    return SMART_RECOMMENDATION_REQUIRED_PROFILE_FIELDS.filter((field) => fieldSet.has(field));
+  }
+
   private hasRecommendationProfileField(profile: PlannerProfileEntity, field: SmartRecommendationProfileField) {
-    if (field === "level") return profile.level === "bachelor" || profile.level === "master" || profile.level === "phd";
+    if (field === "level") return DEGREE_LEVEL_ORDER.includes(profile.level);
     if (field === "targetCategory") return typeof profile.targetCategory === "string" && profile.targetCategory.trim().length > 0;
     if (field === "budgetCny") return Number(profile.budgetCny) > 0;
     if (field === "gpa") return Number(profile.gpa) > 0;
@@ -549,7 +614,8 @@ export class PlannerService {
       if (program.level !== profile.level) continue;
       if (program.category !== profile.targetCategory) continue;
 
-      const annualCost = program.annualTuitionCny + university.livingCostCny;
+      const filterableTuitionCny = getFilterableTuitionCny(program);
+      const annualCost = filterableTuitionCny == null ? null : filterableTuitionCny + university.livingCostCny;
       let score = 0;
       const reasons = { en: [] as string[], ms: [] as string[], "zh-CN": [] as string[], "zh-TW": [] as string[] };
 
@@ -573,16 +639,16 @@ export class PlannerService {
         reasons["zh-CN"].push("支持条件录取路径");
         reasons["zh-TW"].push("支援條件錄取路徑");
       }
-      if (annualCost <= profile.budgetCny) {
+      if (annualCost != null && annualCost <= profile.budgetCny) {
         score += 20;
         reasons.en.push("Budget fits first year");
         reasons.ms.push("Bajet menampung tahun pertama");
         reasons["zh-CN"].push("预算可覆盖首年");
         reasons["zh-TW"].push("預算可覆蓋首年");
       }
-      if (university.qsRank <= 200) {
+      if (hasValidQsWorldRank(university.qsRank) && university.qsRank <= 200) {
         score += 12;
-      } else if (university.qsRank <= 500) {
+      } else if (hasValidQsWorldRank(university.qsRank) && university.qsRank <= 500) {
         score += 7;
       }
 

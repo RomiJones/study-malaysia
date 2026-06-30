@@ -3,12 +3,55 @@ export * from "./notion.js";
 export * from "./i18n.js";
 export * from "./recommendation.js";
 
-import type { LocalizedStringArray, LocalizedText } from "./i18n.js";
+import type { LocalizedStringArray, LocalizedText, SupportedLocale } from "./i18n.js";
 
 export const LOCAL_STATIC_HTML_ASSET_ROOT = "/assets/static-html";
 export const LOCAL_UNIVERSITY_LOGO_FALLBACK = `${LOCAL_STATIC_HTML_ASSET_ROOT}/fallback-university-logo.svg`;
 export const LOCAL_UNIVERSITY_COVER_PLACEHOLDER = `${LOCAL_STATIC_HTML_ASSET_ROOT}/fallback-university-cover.svg`;
 export const LOCAL_UNIVERSITY_COVER_FALLBACK = `${LOCAL_STATIC_HTML_ASSET_ROOT}/image-photo-1562774053-701939374585-3a3ba5b0250f.jpg`;
+export const QS_WORLD_RANKING_NAME = "QS World University Rankings";
+export const QS_WORLD_RANKING_YEAR = 2027;
+export const QS_UNRANKED_RANK = 9999;
+
+export const LOCAL_UNIVERSITY_LOGO_BY_CODE: Record<string, string> = {
+  UM: `${LOCAL_STATIC_HTML_ASSET_ROOT}/university-logos/um-universiti-malaya-um.svg`
+};
+
+export const LOCAL_UNIVERSITY_COVER_BY_CODE: Record<string, string> = {
+  UM: `${LOCAL_STATIC_HTML_ASSET_ROOT}/university-covers/um-universiti-malaya-um-299d955410.jpg`
+};
+
+export type QsWorldRankStatus = "ranked" | "not-ranked";
+export type QsWorldRankContext = "malaysia-institution" | "parent-institution" | "not-ranked";
+
+export function hasValidQsWorldRank(rank: number | null | undefined): rank is number {
+  return typeof rank === "number" && Number.isFinite(rank) && rank > 0 && rank < QS_UNRANKED_RANK;
+}
+
+export function qsRankSortValue(rank: number | null | undefined): number {
+  return hasValidQsWorldRank(rank) ? rank : Number.MAX_SAFE_INTEGER;
+}
+
+export interface QsWorldRankedItem {
+  qsRank?: number | null;
+  code?: string | null;
+  name?: Partial<LocalizedText> | null;
+}
+
+export function compareByQsWorldRank(a: QsWorldRankedItem, b: QsWorldRankedItem): number {
+  const rankDifference = qsRankSortValue(a.qsRank) - qsRankSortValue(b.qsRank);
+  if (rankDifference !== 0) return rankDifference;
+
+  const aName = a.name?.["zh-CN"] || a.name?.en || a.code || "";
+  const bName = b.name?.["zh-CN"] || b.name?.en || b.code || "";
+  return aName.localeCompare(bName, "zh-Hans") || String(a.code || "").localeCompare(String(b.code || ""));
+}
+
+export function normalizeQsRankDisplay(rank: number | null | undefined, display?: string | null): string | null {
+  if (!hasValidQsWorldRank(rank)) return null;
+  const value = String(display || "").trim();
+  return value || String(rank);
+}
 
 const LOCAL_CARD_IMAGE_BY_UNSPLASH_KEY: Record<string, string> = {
   "photo-1492538368677-f6e0afe31dcc": `${LOCAL_STATIC_HTML_ASSET_ROOT}/card-image-photo-1492538368677-f6e0afe31dcc-884806738b15.jpg`,
@@ -40,15 +83,28 @@ export function isExternalImageUrl(value: string | null | undefined): boolean {
   return /^https?:\/\//i.test(url);
 }
 
-export function localizeUniversityLogoUrl(value: string | null | undefined): string {
+export function getLocalUniversityLogoByCode(code: string | null | undefined): string {
+  return LOCAL_UNIVERSITY_LOGO_BY_CODE[String(code || "").trim().toUpperCase()] || "";
+}
+
+export function getLocalUniversityCoverByCode(code: string | null | undefined): string {
+  return LOCAL_UNIVERSITY_COVER_BY_CODE[String(code || "").trim().toUpperCase()] || "";
+}
+
+export function localizeUniversityLogoUrl(value: string | null | undefined, code?: string | null): string {
   const url = String(value || "").trim();
   if (isLocalPublicAssetUrl(url)) return url;
+  const codeAsset = getLocalUniversityLogoByCode(code);
+  if (codeAsset) return codeAsset;
   return LOCAL_UNIVERSITY_LOGO_FALLBACK;
 }
 
-export function localizeUniversityImageUrl(value: string | null | undefined): string {
+export function localizeUniversityImageUrl(value: string | null | undefined, code?: string | null): string {
   const url = String(value || "").trim();
   if (isLocalPublicAssetUrl(url)) return url;
+
+  const codeAsset = getLocalUniversityCoverByCode(code);
+  if (codeAsset) return codeAsset;
 
   const unsplashKey = getUnsplashAssetKey(url);
   if (unsplashKey) {
@@ -65,6 +121,102 @@ export function localizeUniversityImageFields<T extends { logoUrl?: string; imag
     ...item,
     logoUrl: localizeUniversityLogoUrl(item.logoUrl),
     imageUrl: localizeUniversityImageUrl(item.imageUrl)
+  };
+}
+
+export type ProgramDetailTextKind = "document" | "curriculum" | "career" | "specialization" | "description" | "note";
+
+const PROGRAM_DETAIL_FALLBACKS: Record<ProgramDetailTextKind, LocalizedText> = {
+  document: {
+    en: "Official document list collected; localization pending. Refer to the official source.",
+    ms: "Senarai dokumen rasmi telah dikumpulkan; penyetempatan belum lengkap. Rujuk sumber rasmi.",
+    "zh-CN": "官网未公布具体申请材料清单",
+    "zh-TW": "官網未公布具體申請材料清單"
+  },
+  curriculum: {
+    en: "Official course-setting content collected; localization pending. Refer to the official source.",
+    ms: "Kandungan struktur kursus rasmi telah dikumpulkan; penyetempatan belum lengkap. Rujuk sumber rasmi.",
+    "zh-CN": "官网未公布课程设置",
+    "zh-TW": "官網未公布課程設定"
+  },
+  career: {
+    en: "Official career content collected; localization pending. Refer to the official source.",
+    ms: "Kandungan kerjaya rasmi telah dikumpulkan; penyetempatan belum lengkap. Rujuk sumber rasmi.",
+    "zh-CN": "官网未公布就业方向",
+    "zh-TW": "官網未公布就業方向"
+  },
+  specialization: {
+    en: "Official specialization content collected; localization pending. Refer to the official source.",
+    ms: "Kandungan pengkhususan rasmi telah dikumpulkan; penyetempatan belum lengkap. Rujuk sumber rasmi.",
+    "zh-CN": "官网未公布专业方向",
+    "zh-TW": "官網未公布專業方向"
+  },
+  description: {
+    en: "Official programme overview collected; localization pending. Refer to the official source.",
+    ms: "Gambaran program rasmi telah dikumpulkan; penyetempatan belum lengkap. Rujuk sumber rasmi.",
+    "zh-CN": "该专业简介已根据官方资料收录，中文简介待补充；请结合课程设置、入学要求及官方来源查看。",
+    "zh-TW": "該專業簡介已根據官方資料收錄，中文簡介待補充；請結合課程設定、入學要求及官方來源查看。"
+  },
+  note: {
+    en: "Official note collected; localization pending. Refer to the official source.",
+    ms: "Nota rasmi telah dikumpulkan; penyetempatan belum lengkap. Rujuk sumber rasmi.",
+    "zh-CN": "官网未公布具体说明",
+    "zh-TW": "官網未公布具體說明"
+  }
+};
+
+export function isEnglishLikeProgramDetailText(value: string): boolean {
+  const text = value.trim();
+  return Boolean(text) && /[A-Za-z]/.test(text) && !/[\u4e00-\u9fff]/.test(text);
+}
+
+export function localizeProgramDetailText(
+  value: unknown,
+  locale: SupportedLocale,
+  kind: ProgramDetailTextKind
+): string {
+  const text = typeof value === "string" ? value.trim() : "";
+  if (!text) return PROGRAM_DETAIL_FALLBACKS[kind][locale];
+  return text;
+}
+
+export function localizeProgramDetailArray(
+  value: LocalizedStringArray,
+  locale: SupportedLocale,
+  kind: ProgramDetailTextKind,
+  fallback?: string[]
+): string[] {
+  const items = value?.[locale]?.filter(Boolean) || [];
+  if (items.length > 0) return items;
+  if (fallback?.length) return fallback;
+  return [PROGRAM_DETAIL_FALLBACKS[kind][locale]];
+}
+
+export function normalizeProgramDetailLocalizedArray(
+  value: LocalizedStringArray | null | undefined,
+  kind: ProgramDetailTextKind
+): LocalizedStringArray {
+  return {
+    en: value?.en?.filter(Boolean).length ? value.en.filter(Boolean) : [PROGRAM_DETAIL_FALLBACKS[kind].en],
+    ms: value?.ms?.filter(Boolean).length ? value.ms.filter(Boolean) : [PROGRAM_DETAIL_FALLBACKS[kind].ms],
+    "zh-CN": value?.["zh-CN"]?.filter(Boolean).length
+      ? value["zh-CN"].filter(Boolean)
+      : [PROGRAM_DETAIL_FALLBACKS[kind]["zh-CN"]],
+    "zh-TW": value?.["zh-TW"]?.filter(Boolean).length
+      ? value["zh-TW"].filter(Boolean)
+      : [PROGRAM_DETAIL_FALLBACKS[kind]["zh-TW"]]
+  };
+}
+
+export function normalizeProgramDetailLocalizedText(
+  value: LocalizedText | null | undefined,
+  kind: ProgramDetailTextKind
+): LocalizedText {
+  return {
+    en: value?.en?.trim() || PROGRAM_DETAIL_FALLBACKS[kind].en,
+    ms: value?.ms?.trim() || PROGRAM_DETAIL_FALLBACKS[kind].ms,
+    "zh-CN": value?.["zh-CN"]?.trim() || PROGRAM_DETAIL_FALLBACKS[kind]["zh-CN"],
+    "zh-TW": value?.["zh-TW"]?.trim() || PROGRAM_DETAIL_FALLBACKS[kind]["zh-TW"]
   };
 }
 
@@ -87,7 +239,14 @@ function getUnsplashAssetKey(value: string): string {
   }
 }
 
-export type DegreeLevel = "bachelor" | "master" | "phd";
+export type DegreeLevel = "bachelor" | "master" | "phd" | "postgraduate-certificate" | "postgraduate-diploma";
+export const DEGREE_LEVEL_ORDER = [
+  "bachelor",
+  "master",
+  "postgraduate-certificate",
+  "postgraduate-diploma",
+  "phd"
+] as const satisfies readonly DegreeLevel[];
 export type CoreProgramCategory =
   | "business"
   | "it"
@@ -102,12 +261,15 @@ export type InstitutionOwnership = "public" | "private";
 export type InstitutionType = "research" | "comprehensive" | "applied";
 export type PublicDisplayStatus =
   | "ready"
+  | "current-cycle-not-open"
+  | "official-language-requirement-not-published"
   | "not-available-for-international"
   | "needs-review"
   | "hidden-unverified"
   | "archived";
 export type OfficialSourceStatus =
   | "official-verified"
+  | "official-page-verified-current-cycle-not-open"
   | "official-page-verified-international-not-available"
   | "needs-review"
   | "source-conflict"
@@ -116,8 +278,11 @@ export type OfficialSourceStatus =
 export type TuitionCurrency = "MYR" | "CNY" | "USD" | "GBP" | "UNKNOWN";
 export type FeeAuditStatus =
   | "matched-official"
+  | "fee-sheet-verified"
+  | "official-approximate"
   | "calculated-from-official-rate"
   | "official-rate-verified"
+  | "official-non-scalar"
   | "conflict"
   | "source-conflict"
   | "pending-review"
@@ -149,6 +314,24 @@ export interface LanguageRequirement {
   muet?: number | null;
 }
 
+export const MUET_TO_IELTS_EQUIVALENT: Record<string, number> = {
+  "3": 5.0,
+  "3.0": 5.0,
+  "3.5": 5.0,
+  "4": 6.0,
+  "4.0": 6.0,
+  "4.5": 6.5,
+  "5": 6.5,
+  "5.0": 6.5
+};
+
+export function muetBandToIeltsEquivalent(value: unknown): number | null {
+  const muet = Number(value);
+  if (!Number.isFinite(muet) || muet <= 0) return null;
+  const normalized = Number.isInteger(muet) ? String(muet) : String(muet);
+  return MUET_TO_IELTS_EQUIVALENT[normalized] ?? null;
+}
+
 export interface ProgramRequirement {
   gpa: number;
   gaokaoRequired: boolean;
@@ -178,6 +361,7 @@ export interface TuitionInfo {
   amount?: number | null;
   currency: TuitionCurrency;
   displayText: string;
+  filterableTuitionCny?: number | null;
   officialAmountMYR?: number | null;
   sourceUrl?: string | null;
   secondarySourceUrl?: string | null;
@@ -248,6 +432,11 @@ export interface UniversityListItem extends UniversityOfficialProfile {
   imageUrl: string;
   color: string;
   qsRank: number;
+  qsRankDisplay?: string | null;
+  qsRankYear?: number | null;
+  qsRankStatus?: QsWorldRankStatus;
+  qsRankContext?: QsWorldRankContext;
+  qsRankSourceUrl?: string | null;
   qsAsiaRank?: number | null;
   location: LocalizedText;
   region: LocalizedText;
@@ -283,6 +472,9 @@ export interface ProgramListItem extends ProgramOfficialProfile {
   faculty: LocalizedText;
   durationYears: number;
   annualTuitionCny: number;
+  filterableTuitionCny: number | null;
+  hasVerifiedFee: boolean;
+  feeConfidence: "verified" | "display-only" | "unavailable";
   tuitionAmount: number | null;
   tuitionCurrency: TuitionCurrency;
   tuitionDisplay: string;
@@ -347,7 +539,7 @@ export interface RecommendationResult {
   reasons: LocalizedStringArray;
   university: UniversityListItem;
   program: ProgramListItem;
-  annualCostCny: number;
+  annualCostCny: number | null;
 }
 
 export type SearchSuggestionType = "university" | "program" | "city";
@@ -363,6 +555,8 @@ export interface SearchSuggestionItem {
   universitySlug?: string;
   programId?: number;
   programSlug?: string;
+  count?: number;
+  countType?: "university" | "program";
 }
 
 export interface FilterFacetOption {
@@ -412,7 +606,7 @@ export interface UniversityCatalogDetail extends UniversityListItem {
 
 export interface ProgramCatalogItem extends ProgramListItem {
   university: UniversityListItem;
-  annualCostCny: number;
+  annualCostCny: number | null;
 }
 
 export interface ProgramCatalogDetail extends ProgramCatalogItem {}
@@ -455,6 +649,18 @@ export const DEGREE_LEVEL_LABELS: Record<DegreeLevel, LocalizedText> = {
     ms: "Sarjana",
     "zh-CN": "硕士",
     "zh-TW": "碩士"
+  },
+  "postgraduate-certificate": {
+    en: "Postgraduate Certificate",
+    ms: "Sijil Pascasiswazah",
+    "zh-CN": "研究生证书",
+    "zh-TW": "研究生證書"
+  },
+  "postgraduate-diploma": {
+    en: "Postgraduate Diploma",
+    ms: "Diploma Pascasiswazah",
+    "zh-CN": "研究生文凭",
+    "zh-TW": "研究生文憑"
   },
   phd: {
     en: "PhD",
@@ -535,6 +741,18 @@ export const PUBLIC_DISPLAY_STATUS_LABELS: Record<PublicDisplayStatus, Localized
     "zh-CN": "可公开展示",
     "zh-TW": "可公開展示"
   },
+  "current-cycle-not-open": {
+    en: "Current cycle not open",
+    ms: "Kitaran semasa belum dibuka",
+    "zh-CN": "当前申请周期未开放",
+    "zh-TW": "目前申請週期未開放"
+  },
+  "official-language-requirement-not-published": {
+    en: "Official IELTS requirement not published",
+    ms: "Syarat IELTS rasmi belum diterbitkan",
+    "zh-CN": "官网未公布雅思",
+    "zh-TW": "官網未公布雅思"
+  },
   "not-available-for-international": {
     en: "Not available for international applicants",
     ms: "Tidak tersedia untuk pemohon antarabangsa",
@@ -567,6 +785,12 @@ export const OFFICIAL_SOURCE_STATUS_LABELS: Record<OfficialSourceStatus, Localiz
     ms: "Sumber rasmi disahkan",
     "zh-CN": "官方来源已核验",
     "zh-TW": "官方來源已核驗"
+  },
+  "official-page-verified-current-cycle-not-open": {
+    en: "Official page verified, current cycle not open",
+    ms: "Halaman rasmi disahkan, kitaran semasa belum dibuka",
+    "zh-CN": "官方页已核验但当前周期未开放",
+    "zh-TW": "官方頁已核驗但目前週期未開放"
   },
   "official-page-verified-international-not-available": {
     en: "Official page verified, international admission unavailable",
@@ -602,22 +826,40 @@ export const OFFICIAL_SOURCE_STATUS_LABELS: Record<OfficialSourceStatus, Localiz
 
 export const FEE_AUDIT_STATUS_LABELS: Record<FeeAuditStatus, LocalizedText> = {
   "matched-official": {
-    en: "Matched official source",
-    ms: "Sepadan dengan sumber rasmi",
-    "zh-CN": "与官方来源一致",
-    "zh-TW": "與官方來源一致"
+    en: "Official total fee matched",
+    ms: "Jumlah yuran rasmi sepadan",
+    "zh-CN": "官方总学费一致",
+    "zh-TW": "官方總學費一致"
+  },
+  "fee-sheet-verified": {
+    en: "Fee sheet verified",
+    ms: "Jadual yuran disahkan",
+    "zh-CN": "官方费用表已核验",
+    "zh-TW": "官方費用表已核驗"
+  },
+  "official-approximate": {
+    en: "Official approximate fee",
+    ms: "Anggaran yuran rasmi",
+    "zh-CN": "官方近似金额",
+    "zh-TW": "官方近似金額"
   },
   "official-rate-verified": {
-    en: "Official rate verified",
-    ms: "Kadar rasmi disahkan",
-    "zh-CN": "官方费率已核验",
-    "zh-TW": "官方費率已核驗"
+    en: "Official rate verified only",
+    ms: "Kadar rasmi sahaja disahkan",
+    "zh-CN": "仅官方费率已核验",
+    "zh-TW": "僅官方費率已核驗"
   },
   "calculated-from-official-rate": {
     en: "Calculated from official rate and duration",
     ms: "Dikira daripada kadar dan tempoh rasmi",
-    "zh-CN": "按官方费率与学制计算",
-    "zh-TW": "按官方費率與學制計算"
+    "zh-CN": "按官方费率计算总额",
+    "zh-TW": "按官方費率計算總額"
+  },
+  "official-non-scalar": {
+    en: "Official non-scalar fee",
+    ms: "Yuran rasmi bukan nilai tunggal",
+    "zh-CN": "官方非单一金额",
+    "zh-TW": "官方非單一金額"
   },
   conflict: {
     en: "Conflict",
@@ -626,21 +868,21 @@ export const FEE_AUDIT_STATUS_LABELS: Record<FeeAuditStatus, LocalizedText> = {
     "zh-TW": "衝突"
   },
   "source-conflict": {
-    en: "Source conflict",
-    ms: "Konflik sumber",
-    "zh-CN": "来源冲突",
-    "zh-TW": "來源衝突"
+    en: "Fee source conflict",
+    ms: "Konflik sumber yuran",
+    "zh-CN": "费用来源冲突",
+    "zh-TW": "費用來源衝突"
   },
   "pending-review": {
-    en: "Pending review",
-    ms: "Menunggu semakan",
-    "zh-CN": "待复核",
-    "zh-TW": "待複核"
+    en: "Fee pending review",
+    ms: "Yuran menunggu semakan",
+    "zh-CN": "费用待复核",
+    "zh-TW": "費用待複核"
   },
   "not-published": {
-    en: "Not published",
-    ms: "Belum diterbitkan",
-    "zh-CN": "未公布",
-    "zh-TW": "未公布"
+    en: "Fee not published",
+    ms: "Yuran tidak diterbitkan",
+    "zh-CN": "官网未公布费用",
+    "zh-TW": "官網未公布費用"
   }
 };

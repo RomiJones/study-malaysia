@@ -54,6 +54,7 @@ export const DEFAULT_OPTIONS: Record<string, AdminOption[]> = {
   ],
   official_source_status: [
     { label: "官方来源已核验", value: "official-verified" },
+    { label: "官方页已核验但当前周期未开放", value: "official-page-verified-current-cycle-not-open" },
     { label: "官方页已核验但不开放", value: "official-page-verified-international-not-available" },
     { label: "待复核", value: "needs-review" },
     { label: "来源冲突", value: "source-conflict" },
@@ -61,12 +62,16 @@ export const DEFAULT_OPTIONS: Record<string, AdminOption[]> = {
     { label: "重复或已替代隐藏", value: "hidden-duplicate-superseded" }
   ],
   fee_audit_status: [
-    { label: "与官方一致", value: "matched-official" },
-    { label: "官方费率已核验", value: "official-rate-verified" },
+    { label: "官方总学费一致", value: "matched-official" },
+    { label: "官方费用表已核验", value: "fee-sheet-verified" },
+    { label: "官方近似金额", value: "official-approximate" },
+    { label: "仅官方费率已核验", value: "official-rate-verified" },
+    { label: "按官方费率计算总额", value: "calculated-from-official-rate" },
+    { label: "官方非单一金额", value: "official-non-scalar" },
     { label: "金额冲突", value: "conflict" },
-    { label: "来源冲突", value: "source-conflict" },
-    { label: "待复核", value: "pending-review" },
-    { label: "未公开", value: "not-published" }
+    { label: "费用来源冲突", value: "source-conflict" },
+    { label: "费用待复核", value: "pending-review" },
+    { label: "官网未公布费用", value: "not-published" }
   ],
   tuition_currency: [
     { label: "MYR", value: "MYR" },
@@ -116,8 +121,8 @@ export function optionLabel(options: AdminOption[], value?: string | null) {
 
 export function statusTagType(value?: string | null) {
   if (!value) return "info";
-  if (["ready", "official-verified", "matched-official", "official-rate-verified", "enabled"].includes(value)) return "success";
-  if (["needs-review", "pending-review"].includes(value)) return "warning";
+  if (["ready", "official-verified", "matched-official", "fee-sheet-verified", "official-rate-verified", "calculated-from-official-rate", "enabled"].includes(value)) return "success";
+  if (["needs-review", "pending-review", "official-approximate", "official-non-scalar"].includes(value)) return "warning";
   if (["source-conflict", "conflict", "missing-source"].includes(value)) return "danger";
   return "info";
 }

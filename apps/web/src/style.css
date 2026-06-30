@@ -2176,6 +2176,11 @@ label.lbl {
   color: #145f59;
 }
 
+.chip-success {
+  background: #e8f7ef;
+  color: #137345;
+}
+
 .chip-blue {
   background: var(--blue-lt);
   color: #1a3f85;
@@ -2725,7 +2730,11 @@ label.lbl {
 }
 
 .programme-fee-main {
+  align-items: center;
   color: var(--ink);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
   font-size: 19px;
   font-weight: 850;
   line-height: 1.2;
@@ -3508,11 +3517,32 @@ label.lbl {
   font-weight: 700;
 }
 
+.req-item-value--inline {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
 .req-item-value--text {
   font-size: 13px;
   font-weight: 500;
   line-height: 1.65;
   white-space: pre-line;
+}
+
+.fee-verified-badge {
+  align-items: center;
+  background: #e8f7ef;
+  border: 1px solid rgba(19, 115, 69, 0.16);
+  border-radius: 999px;
+  color: #137345;
+  display: inline-flex;
+  font-size: 11px;
+  font-weight: 800;
+  line-height: 1.2;
+  padding: 3px 8px;
+  white-space: nowrap;
 }
 
 .req-source-link {

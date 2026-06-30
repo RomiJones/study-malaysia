@@ -10,7 +10,7 @@ import type {
   SupportedLocale,
   TuitionCurrency
 } from "@studymy/shared";
-import { CATEGORY_LABELS } from "@studymy/shared";
+import { CATEGORY_LABELS, muetBandToIeltsEquivalent } from "@studymy/shared";
 import { toTraditionalText } from "../i18n/localeTransforms";
 
 export const OFFICIAL_PAGE_FALLBACK = "以院校官方页面为准";
@@ -26,8 +26,11 @@ const localizedFormatText = {
     yes: "Yes",
     no: "No",
     years: "years",
+    ieltsNotPublished: "Official IELTS requirement not published",
+    eptRequired: "University English Proficiency Test (EPT)",
     detailPageNote: "See detail page notes",
     feeMatchedOfficial: "Officially verified",
+    feeVerifiedBadge: "Officially verified",
     feeCalculatedOfficial: "Calculated from official rate and duration",
     feeRateVerified: "Official rate verified",
     feeOfficialNonScalar: "Official fee variants verified",
@@ -48,8 +51,11 @@ const localizedFormatText = {
     yes: "Ya",
     no: "Tidak",
     years: "tahun",
+    ieltsNotPublished: "Syarat IELTS rasmi belum diterbitkan",
+    eptRequired: "Ujian Kemahiran Bahasa Inggeris universiti (EPT)",
     detailPageNote: "Lihat nota halaman butiran",
     feeMatchedOfficial: "Disahkan rasmi",
+    feeVerifiedBadge: "Disahkan rasmi",
     feeCalculatedOfficial: "Dikira daripada kadar dan tempoh rasmi",
     feeRateVerified: "Kadar rasmi disahkan",
     feeOfficialNonScalar: "Varian yuran rasmi disahkan",
@@ -70,8 +76,11 @@ const localizedFormatText = {
     yes: "是",
     no: "否",
     years: "年",
+    ieltsNotPublished: "官网未公布雅思",
+    eptRequired: "校内英语能力测试（EPT）",
     detailPageNote: "详情页查看说明",
     feeMatchedOfficial: "官方已核验",
+    feeVerifiedBadge: "官方核验",
     feeCalculatedOfficial: "按官方费率与学制计算",
     feeRateVerified: "官方费率已核验",
     feeOfficialNonScalar: "官方非单一费用已核验",
@@ -92,8 +101,11 @@ const localizedFormatText = {
     yes: "是",
     no: "否",
     years: "年",
+    ieltsNotPublished: "官網未公布雅思",
+    eptRequired: "校內英語能力測試（EPT）",
     detailPageNote: "詳情頁查看說明",
     feeMatchedOfficial: "官方已核驗",
+    feeVerifiedBadge: "官方核驗",
     feeCalculatedOfficial: "按官方費率與學制計算",
     feeRateVerified: "官方費率已核驗",
     feeOfficialNonScalar: "官方非單一費用已核驗",
@@ -430,6 +442,12 @@ const academicTermReplacements: Array<{ pattern: RegExp; labelKey: keyof typeof 
   { pattern: /\bduration\b/gi, labelKey: "duration" }
 ];
 
+const filterableFeeAuditStatuses = new Set<FeeAuditStatus>([
+  "matched-official",
+  "fee-sheet-verified",
+  "calculated-from-official-rate"
+]);
+
 const extraCategoryLabels = {
   hospitality: {
     en: "Hospitality",
@@ -710,7 +728,7 @@ function hasUnknownAcademicEnglish(value: string): boolean {
 
   const stripped = value
     .replace(/https?:\/\/\S+/gi, " ")
-    .replace(/\b(?:RM|CNY|USD|IELTS|TOEFL|GPA|QS|MQA|MUET|PTE)\b/gi, " ")
+    .replace(/\b(?:RM|CNY|USD|IELTS|TOEFL|GPA|QS|MQA|MUET|PTE|EPT|CEFR|SPM|AMAD|CELPAD|IIUM)\b/gi, " ")
     .replace(/\bnot\s+offered\s+for\s+the\s+academic\s+session\s+\d{4}\/\d{4}\b/gi, " ")
     .replace(/\bnot\s+offered\b/gi, " ")
     .replace(/\bsemester\s+\d+\s*\(\s*[A-Za-z]+\s*\)\s+intakes?\b/gi, " ")
@@ -925,11 +943,26 @@ function hasOfficialFeeEvidence(program: ProgramDisplayFields): boolean {
   );
 }
 
+export function hasVerifiedProgramFee(program: ProgramDisplayFields): boolean {
+  return Boolean(
+    program.hasVerifiedFee === true ||
+    program.feeConfidence === "verified" ||
+    finitePositiveNumber(program.filterableTuitionCny) ||
+    finitePositiveNumber(program.tuitionInfo?.filterableTuitionCny) ||
+    (filterableFeeAuditStatuses.has(program.officialFeeAuditStatus) && hasOfficialFeeEvidence(program))
+  );
+}
+
+export function formatProgramFeeVerifiedLabel(locale?: SupportedLocale): string {
+  return formatText("feeVerifiedBadge", locale);
+}
+
 export function formatProgramTuition(program: ProgramDisplayFields, fallback?: string, locale?: SupportedLocale): string {
   const actualFallback = fallback ?? officialPageFallback(locale);
   if (program.publicDisplayStatus === "not-available-for-international") return notAvailableForInternational(locale);
 
   const explicitDisplay = cleanDisplayText(program.tuitionDisplay || program.listTuitionText || program.tuitionInfo?.displayText, "", locale);
+  const hasVerifiedFee = hasVerifiedProgramFee(program);
   if (program.officialFeeAuditStatus === "official-rate-verified") {
     const note = String(program.tuitionInfo?.note || "");
     const noteRate = note.match(/full-time\s+(USD|MYR|RM|CNY)\s+([\d,]+(?:\.\d+)?)\s+per semester/i);
@@ -948,15 +981,30 @@ export function formatProgramTuition(program: ProgramDisplayFields, fallback?: s
     return formatText("feeRateVerified", locale);
   }
   if (program.officialFeeAuditStatus === "not-published") return formatText("feeNotPublished", locale);
-  if (program.officialFeeAuditStatus === "official-non-scalar") return formatText("feeOfficialNonScalar", locale);
+  if (program.officialFeeAuditStatus === "official-non-scalar" && !explicitDisplay) return formatText("feeOfficialNonScalar", locale);
+
+  if (explicitDisplay && !hasVerifiedFee && hasOfficialFeeEvidence(program)) {
+    const normalized = normalizeAcademicText(explicitDisplay, actualFallback, locale);
+    if (locale === "zh-CN") return normalized.replace(/\bper\s+个学期/gi, "/ 学期").replace(/\bper\s+学期/gi, "/ 学期");
+    if (locale === "zh-TW") return normalized.replace(/\bper\s+個學期/gi, "/ 學期").replace(/\bper\s+學期/gi, "/ 學期");
+    if (locale === "ms") return normalized.replace(/\bper\s+semester/gi, "/ semester");
+    return normalized;
+  }
 
   const officialMyr = finitePositiveNumber(program.officialTuitionMYR ?? program.tuitionInfo?.officialAmountMYR);
-  if (officialMyr) return `RM ${formatCurrency(officialMyr)}`;
+  if (officialMyr && hasVerifiedFee) return `RM ${formatCurrency(officialMyr)}`;
+
+  if (shouldUseExplicitReviewTuitionDisplay(program, explicitDisplay) && hasOfficialFeeEvidence(program)) {
+    const normalized = normalizeAcademicText(explicitDisplay, actualFallback, locale);
+    if (locale === "zh-CN") return normalized.replace(/\bper\s+个年/gi, "/ 年").replace(/\bper\s+年/gi, "/ 年");
+    if (locale === "zh-TW") return normalized.replace(/\bper\s+個年/gi, "/ 年").replace(/\bper\s+年/gi, "/ 年");
+    return normalized;
+  }
 
   const amount = finitePositiveNumber(program.tuitionAmount ?? program.tuitionInfo?.amount);
   const currency = program.tuitionCurrency || program.tuitionInfo?.currency;
   const prefix = currencyPrefix(currency);
-  if (amount && prefix) return `${prefix} ${formatCurrency(amount)}`;
+  if (amount && prefix && hasVerifiedFee) return `${prefix} ${formatCurrency(amount)}`;
 
   if (explicitDisplay && hasOfficialFeeEvidence(program)) {
     const normalized = normalizeAcademicText(explicitDisplay, actualFallback, locale);
@@ -967,6 +1015,15 @@ export function formatProgramTuition(program: ProgramDisplayFields, fallback?: s
   }
 
   return actualFallback;
+}
+
+function shouldUseExplicitReviewTuitionDisplay(program: ProgramDisplayFields, explicitDisplay: string): boolean {
+  return Boolean(
+    explicitDisplay &&
+    ["pending-review", "source-conflict", "conflict"].includes(String(program.officialFeeAuditStatus || "")) &&
+    finitePositiveNumber(program.tuitionAmount ?? program.tuitionInfo?.amount) &&
+    /\bper\s+year\b|\/\s*(?:year|年|年費|年费)/i.test(explicitDisplay)
+  );
 }
 
 export function formatProgramListTuition(
@@ -1023,16 +1080,120 @@ export function formatProgramListTuition(
   return `${prefix} ${amountLabel}`;
 }
 
-export function formatProgramDuration(program: ProgramDisplayFields, locale?: SupportedLocale): string {
+export interface ProgramDurationDisplay {
+  summary: string;
+  detail: string;
+  studySchedule: string;
+  badges: string[];
+  hasDetail: boolean;
+}
+
+function formatDurationNumber(value: number) {
+  return Number(value.toFixed(2)).toString();
+}
+
+function formatDurationYearsValue(years: number, locale?: SupportedLocale) {
+  const normalizedLocale = normalizeLocale(locale);
+  const value = formatDurationNumber(years);
+  const unit = formatText("years", normalizedLocale);
+  return isChineseLocale(normalizedLocale) ? `${value}${unit}` : `${value} ${unit}`;
+}
+
+function formatDurationYearsRange(minYears: number, maxYears: number, locale?: SupportedLocale) {
+  const normalizedLocale = normalizeLocale(locale);
+  if (minYears === maxYears) return formatDurationYearsValue(minYears, normalizedLocale);
+  const min = formatDurationNumber(minYears);
+  const max = formatDurationNumber(maxYears);
+  const unit = formatText("years", normalizedLocale);
+  if (isChineseLocale(normalizedLocale)) return `${min}至${max}${unit}`;
+  return `${min}-${max} ${unit}`;
+}
+
+function durationSummaryFromOfficial(value: unknown, locale?: SupportedLocale) {
+  const text = String(value || "").replace(/\s+/g, " ").trim();
+  if (!text) return "";
+
+  const semesterRange = text.match(/\b(\d+(?:\.\d+)?)\s*(?:-|–|—|to)\s*(\d+(?:\.\d+)?)\s*semesters?\b/i);
+  if (semesterRange) {
+    return formatDurationYearsRange(Number(semesterRange[1]) / 2, Number(semesterRange[2]) / 2, locale);
+  }
+
+  const semester = text.match(/\b(\d+(?:\.\d+)?)\s*semesters?\b/i);
+  if (semester) return formatDurationYearsValue(Number(semester[1]) / 2, locale);
+
+  const month = text.match(/\b(\d+(?:\.\d+)?)\s*months?\b/i);
+  if (month) return formatDurationYearsValue(Number(month[1]) / 12, locale);
+
+  const yearRange = text.match(/\b(\d+(?:\.\d+)?)\s*(?:-|–|—|to)\s*(\d+(?:\.\d+)?)\s*-?\s*years?\b/i);
+  if (yearRange) return formatDurationYearsRange(Number(yearRange[1]), Number(yearRange[2]), locale);
+
+  const year = text.match(/\b(\d+(?:\.\d+)?)\s*-?\s*years?\b/i);
+  if (year) return formatDurationYearsValue(Number(year[1]), locale);
+
+  return "";
+}
+
+function durationStudySchedule(value: unknown, locale?: SupportedLocale) {
+  const text = String(value || "");
+  const labels: string[] = [];
+  const add = (label: string) => {
+    if (label && !labels.includes(label)) labels.push(label);
+  };
+  const normalizedLocale = normalizeLocale(locale);
+  if (/full[-\s]?time/i.test(text)) add(normalizedLocale === "ms" ? "Sepenuh masa" : isChineseLocale(normalizedLocale) ? "全日制" : "Full-time");
+  if (/part[-\s]?time/i.test(text)) add(normalizedLocale === "ms" ? "Separuh masa" : isChineseLocale(normalizedLocale) ? "非全日制" : "Part-time");
+  if (/open and distance learning|odl/i.test(text)) {
+    add(normalizedLocale === "ms" ? "Pembelajaran terbuka dan jarak jauh" : isChineseLocale(normalizedLocale) ? "开放与远程学习" : "Open and distance learning");
+  }
+  return labels.join(" / ");
+}
+
+function durationBadges(value: unknown, locale?: SupportedLocale) {
+  const text = String(value || "");
+  const normalizedLocale = normalizeLocale(locale);
+  const badges: string[] = [];
+  const add = (label: string) => {
+    if (label && !badges.includes(label)) badges.push(label);
+  };
+  if (/clinical/i.test(text)) add(normalizedLocale === "ms" ? "Klinikal" : isChineseLocale(normalizedLocale) ? "临床" : "Clinical");
+  if (/mixed[-\s]?mode/i.test(text)) add(normalizedLocale === "ms" ? "Mod campuran" : isChineseLocale(normalizedLocale) ? "混合模式" : "Mixed mode");
+  if (/coursework/i.test(text)) add(normalizedLocale === "ms" ? "Kerja kursus" : isChineseLocale(normalizedLocale) ? "授课型" : "Coursework");
+  if (/research/i.test(text)) add(normalizedLocale === "ms" ? "Penyelidikan" : isChineseLocale(normalizedLocale) ? "研究型" : "Research");
+  return badges;
+}
+
+export function formatProgramDurationDisplay(program: ProgramDisplayFields, locale?: SupportedLocale): ProgramDurationDisplay {
   if (
     !finitePositiveNumber(program.durationYears) &&
     /(?:not published|pending|refer to the programme structure)/i.test(String(program.durationOfficial || ""))
   ) {
-    return officialConfirmationFallback(locale);
+    return {
+      summary: officialConfirmationFallback(locale),
+      detail: "",
+      studySchedule: "",
+      badges: [],
+      hasDetail: false
+    };
   }
-  if (hasDisplayText(program.durationOfficial)) return normalizeAcademicText(program.durationOfficial, undefined, locale);
+
   const years = finitePositiveNumber(program.durationYears);
-  return years ? `${years} ${formatText("years", locale)}` : officialConfirmationFallback(locale);
+  const summary = years
+    ? formatDurationYearsValue(years, locale)
+    : durationSummaryFromOfficial(program.durationOfficial, locale) || officialConfirmationFallback(locale);
+  const officialDetail = normalizeAcademicText(program.durationOfficial, "", locale);
+  const detail = officialDetail && officialDetail !== summary ? officialDetail : "";
+
+  return {
+    summary,
+    detail,
+    studySchedule: durationStudySchedule(program.durationOfficial, locale),
+    badges: durationBadges(program.durationOfficial, locale),
+    hasDetail: Boolean(detail)
+  };
+}
+
+export function formatProgramDuration(program: ProgramDisplayFields, locale?: SupportedLocale): string {
+  return formatProgramDurationDisplay(program, locale).summary;
 }
 
 function formatIelts(language?: LanguageRequirement | null): string {
@@ -1040,14 +1201,13 @@ function formatIelts(language?: LanguageRequirement | null): string {
   return ielts ? `IELTS ${ielts}+` : "";
 }
 
-function formatIeltsEquivalentRequirement(score: number, locale?: SupportedLocale): string {
-  const suffix = {
-    en: " equivalent",
-    ms: " setara",
-    "zh-CN": "（等效）",
-    "zh-TW": "（等效）"
-  } satisfies Record<SupportedLocale, string>;
-  return `IELTS ${score.toFixed(1)}+${suffix[normalizeLocale(locale)]}`;
+function formatIeltsEquivalentRequirement(score: number, _locale?: SupportedLocale): string {
+  return `IELTS ${score.toFixed(1)}`;
+}
+
+function formatIeltsEquivalentFromMuet(language?: LanguageRequirement | null, locale?: SupportedLocale): string {
+  const ielts = muetBandToIeltsEquivalent(language?.muet);
+  return ielts ? formatIeltsEquivalentRequirement(ielts, locale) : "";
 }
 
 function languageEquivalentEvidenceText(officialText: string): string {
@@ -1070,7 +1230,7 @@ function formatIeltsEquivalentFromLanguage(officialText: string, language?: Lang
   if (muet === 3 && /equivalent|同等|CEFR|Low\s*B2/i.test(source)) {
     return formatIeltsEquivalentRequirement(5.5, locale);
   }
-  return "";
+  return formatIeltsEquivalentFromMuet({ ielts: 0, muet }, locale);
 }
 
 function formatAlternativeLanguageScores(officialText: string, language?: LanguageRequirement | null): string {
@@ -1102,14 +1262,26 @@ function formatAlternativeLanguageScores(officialText: string, language?: Langua
 export function formatProgramLanguage(program: ProgramDisplayFields, fallback?: string, locale?: SupportedLocale): string {
   const actualFallback = fallback ?? officialPageFallback(locale);
   if (program.publicDisplayStatus === "not-available-for-international") return notAvailableForInternational(locale);
+  if (
+    program.publicDisplayStatus === "official-language-requirement-not-published" &&
+    !finitePositiveNumber(program.languageRequirement?.ielts)
+  ) {
+    return formatIeltsEquivalentFromMuet(program.languageRequirement, locale) || formatText("ieltsNotPublished", locale);
+  }
   const rawOfficialText = String(program.officialLanguageRequirement || "");
   const officialText = cleanDisplayText(rawOfficialText, "", locale);
+  const hasEptPathway = /\bEPT\b|English Proficiency Test|英语能力测试|英語能力測試/i.test(rawOfficialText || officialText);
   const match = officialText.match(/IELTS(?:\/IELTS Online|\s*\(Academic\)|\s+Academic)?(?:\s+minimum)?(?:\s*Band)?\s*(\d+(?:\.\d+)?)/i);
-  if (match) return `IELTS ${match[1]}+`;
+  if (match) return hasEptPathway ? `IELTS ${match[1]}+ / EPT` : `IELTS ${match[1]}+`;
   const compactRequirement = formatIelts(program.languageRequirement);
-  if (compactRequirement) return compactRequirement;
+  if (compactRequirement) return hasEptPathway ? `${compactRequirement} / EPT` : compactRequirement;
   const ieltsEquivalent = formatIeltsEquivalentFromLanguage(rawOfficialText || officialText, program.languageRequirement, locale);
   if (ieltsEquivalent) return ieltsEquivalent;
+  const muetEquivalent = formatIeltsEquivalentFromMuet(program.languageRequirement, locale);
+  if (muetEquivalent) return muetEquivalent;
+  if (hasEptPathway) {
+    return formatText("eptRequired", locale);
+  }
   const alternativeRequirement = formatAlternativeLanguageScores(rawOfficialText || officialText, program.languageRequirement);
   if (alternativeRequirement) return alternativeRequirement;
   if (officialText) return normalizeAcademicText(officialText, actualFallback, locale);

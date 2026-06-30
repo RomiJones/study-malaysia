@@ -1,4 +1,8 @@
 import {
+  normalizeQsRankDisplay,
+  normalizeProgramDetailLocalizedArray,
+  normalizeProgramDetailLocalizedText,
+  QS_WORLD_RANKING_YEAR,
   localizeUniversityImageUrl,
   localizeUniversityLogoUrl,
   type FeeAuditStatus,
@@ -14,9 +18,12 @@ import {
   type RequirementInfo,
   type TuitionCurrency,
   type TuitionInfo,
+  type QsWorldRankContext,
+  type QsWorldRankStatus,
   type UniversityListItem
 } from "@studymy/shared";
 import { translateArray } from "./i18n.js";
+import { getFilterableTuitionCny, resolveProgramFee } from "./fee-strategy.helper.js";
 import {
   ContentBlockEntity,
   PlannerProfileEntity,
@@ -54,6 +61,39 @@ function appendSourceLink(items: OfficialSourceLink[], link: OfficialSourceLink)
   return [...items, normalizeSourceLink(link)];
 }
 
+function asRecord(value: unknown): Record<string, unknown> {
+  return value && typeof value === "object" && !Array.isArray(value) ? value as Record<string, unknown> : {};
+}
+
+function optionalString(value: unknown): string | null {
+  return typeof value === "string" && value.trim() ? value.trim() : null;
+}
+
+function optionalNumber(value: unknown): number | null {
+  return typeof value === "number" && Number.isFinite(value) ? value : null;
+}
+
+function normalizeQsRankStatus(value: unknown): QsWorldRankStatus {
+  return value === "ranked" ? "ranked" : "not-ranked";
+}
+
+function normalizeQsRankContext(value: unknown): QsWorldRankContext {
+  return value === "malaysia-institution" || value === "parent-institution" ? value : "not-ranked";
+}
+
+function extractQsWorldRanking(entity: UniversityEntity) {
+  const profile = asRecord(entity.officialProfile);
+  const rankings = asRecord(profile.rankings);
+  const qsWorld = asRecord(rankings.qsWorld);
+  return {
+    qsRankDisplay: normalizeQsRankDisplay(entity.qsRank, optionalString(qsWorld.rankDisplay)),
+    qsRankYear: optionalNumber(qsWorld.year) || QS_WORLD_RANKING_YEAR,
+    qsRankStatus: normalizeQsRankStatus(qsWorld.status),
+    qsRankContext: normalizeQsRankContext(qsWorld.context),
+    qsRankSourceUrl: optionalString(qsWorld.sourceUrl)
+  };
+}
+
 export function normalizePublicDisplayStatus(status?: PublicDisplayStatus | null, isPublished = true): PublicDisplayStatus {
   if (!isPublished && (!status || status === "ready")) return "hidden-unverified";
   return status || "ready";
@@ -66,11 +106,15 @@ export function isReadyForPublicCatalog(entity: { isPublished: boolean; publicDi
 export function isVisibleInPublicCatalog(entity: { isPublished: boolean; publicDisplayStatus?: PublicDisplayStatus | null }) {
   if (!entity.isPublished) return false;
   const status = normalizePublicDisplayStatus(entity.publicDisplayStatus, entity.isPublished);
-  return status === "ready" || status === "not-available-for-international";
+  return status === "ready" ||
+    status === "current-cycle-not-open" ||
+    status === "official-language-requirement-not-published" ||
+    status === "not-available-for-international";
 }
 
 export function mapUniversity(entity: UniversityEntity): UniversityListItem {
   const officialWebsite = entity.officialWebsite || entity.website;
+  const qsWorldRanking = extractQsWorldRanking(entity);
   let officialSources = normalizeSourceLinks(entity.officialSources);
   officialSources = appendSourceLink(officialSources, {
     title: "Official website",
@@ -88,10 +132,11 @@ export function mapUniversity(entity: UniversityEntity): UniversityListItem {
     name: entity.name,
     shortName: entity.shortName,
     nameEn: entity.name.en,
-    logoUrl: localizeUniversityLogoUrl(entity.logoUrl),
-    imageUrl: localizeUniversityImageUrl(entity.imageUrl),
+    logoUrl: localizeUniversityLogoUrl(entity.logoUrl, entity.code),
+    imageUrl: localizeUniversityImageUrl(entity.imageUrl, entity.code),
     color: entity.color,
     qsRank: entity.qsRank,
+    ...qsWorldRanking,
     qsAsiaRank: entity.qsAsiaRank,
     location: entity.location,
     region: entity.region,
@@ -136,17 +181,15 @@ export function mapProgram(entity: ProgramEntity): ProgramListItem {
   const officialFeeAuditStatus: FeeAuditStatus = entity.officialFeeAuditStatus || "pending-review";
   const tuitionCurrency: TuitionCurrency = entity.tuitionCurrency || (entity.officialTuitionMYR ? "MYR" : "CNY");
   const tuitionAmount = entity.tuitionAmount == null ? null : Number(entity.tuitionAmount);
-  const hasNoOfficialTotal = ["official-rate-verified", "official-non-scalar", "not-published"].includes(officialFeeAuditStatus);
-  const tuitionDisplay =
-    entity.tuitionDisplay ||
-    entity.listTuitionText ||
-    (entity.officialTuitionMYR ? `RM ${entity.officialTuitionMYR.toLocaleString("en-US")}` : `CNY ${entity.annualTuitionCny.toLocaleString("en-US")} / year`);
+  const feeResolution = resolveProgramFee(entity);
+  const tuitionDisplay = feeResolution.displayText;
   const tuitionInfo: TuitionInfo = {
-    amount: hasNoOfficialTotal
-      ? null
-      : tuitionAmount ?? (tuitionCurrency === "MYR" ? entity.officialTuitionMYR : entity.annualTuitionCny),
+    amount: feeResolution.hasVerifiedFee
+      ? (tuitionAmount ?? (tuitionCurrency === "MYR" ? entity.officialTuitionMYR ?? null : feeResolution.filterableTuitionCny ?? entity.annualTuitionCny))
+      : null,
     currency: tuitionCurrency,
     displayText: tuitionDisplay,
+    filterableTuitionCny: feeResolution.filterableTuitionCny,
     officialAmountMYR: entity.officialTuitionMYR ?? null,
     sourceUrl: entity.officialFeeSourceUrl || null,
     secondarySourceUrl: entity.secondaryOfficialFeeSourceUrl || null,
@@ -213,6 +256,9 @@ export function mapProgram(entity: ProgramEntity): ProgramListItem {
     durationYears: entity.durationYears,
     durationOfficial: entity.durationOfficial || `${Number(entity.durationYears)} years`,
     annualTuitionCny: entity.annualTuitionCny,
+    filterableTuitionCny: feeResolution.filterableTuitionCny,
+    hasVerifiedFee: feeResolution.hasVerifiedFee,
+    feeConfidence: feeResolution.confidence,
     tuitionAmount,
     tuitionCurrency,
     tuitionDisplay,
@@ -229,11 +275,11 @@ export function mapProgram(entity: ProgramEntity): ProgramListItem {
     requirement: entity.requirement,
     officialAcademicRequirement: entity.officialAcademicRequirement || "",
     chinaStudentRequirement: entity.chinaStudentRequirement || "",
-    applicationDocs: entity.applicationDocs,
-    curriculum: entity.curriculum,
-    careers: entity.careers,
-    specializations: entity.specializations,
-    description: entity.description,
+    applicationDocs: normalizeProgramDetailLocalizedArray(entity.applicationDocs, "document"),
+    curriculum: normalizeProgramDetailLocalizedArray(entity.curriculum, "curriculum"),
+    careers: normalizeProgramDetailLocalizedArray(entity.careers, "career"),
+    specializations: normalizeProgramDetailLocalizedArray(entity.specializations, "specialization"),
+    description: normalizeProgramDetailLocalizedText(entity.description, "description"),
     officialAccreditationNote: entity.officialAccreditationNote || "",
     officialSourceUrl: entity.officialSourceUrl || "",
     officialEntryRequirementSourceUrl: entity.officialEntryRequirementSourceUrl || "",
@@ -308,7 +354,7 @@ export function mapPlannerMaterials(entity?: PlannerProfileEntity | null): Plann
           status: entity?.materialProgress?.studyplan ?? "draft"
         }
       ]
-    : profile.level === "master"
+    : profile.level === "master" || profile.level === "postgraduate-certificate" || profile.level === "postgraduate-diploma"
       ? [
           {
             key: "degree",
@@ -385,12 +431,13 @@ export function buildRecommendation(
   score: number,
   reasons: RecommendationResult["reasons"]
 ): RecommendationResult {
+  const filterableTuitionCny = getFilterableTuitionCny(program);
   return {
     score,
     reasons,
     university: mapUniversity(university),
     program: mapProgram(program),
-    annualCostCny: program.annualTuitionCny + university.livingCostCny
+    annualCostCny: filterableTuitionCny == null ? null : filterableTuitionCny + university.livingCostCny
   };
 }
 

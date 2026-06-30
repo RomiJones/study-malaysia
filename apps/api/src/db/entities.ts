@@ -57,6 +57,9 @@ export type RecommendationRequiredProfileFieldKey = SmartRecommendationRequiredP
 export type RecommendationOptionalProfileFieldKey = SmartRecommendationOptionalProfileField;
 export type PlannerProfileCompletenessStatus = "incomplete" | "complete" | "stale";
 export type RecommendationRunStatus = "blocked-profile-incomplete" | "generated" | "no-match" | "expired";
+export type QualityIssueEntityType = "university" | "program";
+export type QualityIssueSeverity = "high" | "medium" | "low";
+export type QualityIssueStatus = "open" | "resolved" | "ignored";
 
 export const RECOMMENDATION_REQUIRED_PROFILE_FIELDS: RecommendationRequiredProfileFieldKey[] = [
   ...SMART_RECOMMENDATION_REQUIRED_PROFILE_FIELDS
@@ -80,7 +83,7 @@ export interface RecommendationResultSnapshot {
   universityId: number;
   programId: number;
   score: number;
-  annualCostCny: number;
+  annualCostCny: number | null;
   tier: ApplicationTier;
   publicDisplayStatus: SmartRecommendationPublicDisplayStatus;
   reasons: LocalizedStringArray;
@@ -570,7 +573,7 @@ export class ProgramEntity {
   @Column({ type: "varchar", length: 255, default: "" })
   nameEnOfficial!: string;
 
-  @Column({ type: "varchar", length: 20 })
+  @Column({ type: "varchar", length: 40 })
   level!: DegreeLevel;
 
   @Column({ type: "varchar", length: 80 })
@@ -728,7 +731,7 @@ export class PlannerProfileEntity {
   @JoinColumn({ name: "userId" })
   user!: Relation<UserEntity>;
 
-  @Column({ type: "varchar", length: 20, default: "master" })
+  @Column({ type: "varchar", length: 40, default: "master" })
   level!: DegreeLevel;
 
   @Column({ type: "varchar", length: 80, default: "it" })
@@ -1171,6 +1174,73 @@ export class DictionaryItemEntity {
   updatedAt!: Date;
 }
 
+@Entity({ name: "quality_rules" })
+export class QualityRuleEntity {
+  @PrimaryGeneratedColumn()
+  id!: number;
+
+  @Index({ unique: true })
+  @Column({ type: "varchar", length: 40 })
+  ruleId!: string;
+
+  @Column({ type: "varchar", length: 120 })
+  name!: string;
+
+  @Column({ type: "text" })
+  description!: string;
+
+  @Column({ type: "varchar", length: 20 })
+  severity!: QualityIssueSeverity;
+
+  @Column({ type: "boolean", default: true })
+  enabled!: boolean;
+
+  @CreateDateColumn()
+  createdAt!: Date;
+
+  @UpdateDateColumn()
+  updatedAt!: Date;
+}
+
+@Entity({ name: "quality_issues" })
+@Index(["entityType", "entityId"])
+@Index(["ruleId", "status"])
+@Index(["severity", "status"])
+export class QualityIssueEntity {
+  @PrimaryGeneratedColumn()
+  id!: number;
+
+  @Column({ type: "varchar", length: 20 })
+  entityType!: QualityIssueEntityType;
+
+  @Column({ type: "int" })
+  entityId!: number;
+
+  @Column({ type: "varchar", length: 40 })
+  ruleId!: string;
+
+  @Column({ type: "varchar", length: 20 })
+  severity!: QualityIssueSeverity;
+
+  @Column({ type: "varchar", length: 500 })
+  message!: string;
+
+  @Column({ type: "varchar", length: 120, nullable: true })
+  fieldPath!: string | null;
+
+  @Column({ type: "varchar", length: 20, default: "open" })
+  status!: QualityIssueStatus;
+
+  @Column({ type: "datetime", nullable: true })
+  detectedAt!: Date | null;
+
+  @Column({ type: "datetime", nullable: true })
+  resolvedAt!: Date | null;
+
+  @Column({ type: "varchar", length: 80, nullable: true })
+  resolvedBy!: string | null;
+}
+
 @Entity({ name: "operation_logs" })
 export class OperationLogEntity {
   @PrimaryGeneratedColumn()
@@ -1232,5 +1302,7 @@ export const ALL_ENTITIES = [
   ApplicationFollowUpEntity,
   SystemConfigEntity,
   DictionaryItemEntity,
+  QualityRuleEntity,
+  QualityIssueEntity,
   OperationLogEntity
 ] as const;

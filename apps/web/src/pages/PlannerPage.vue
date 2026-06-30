@@ -338,6 +338,8 @@ function annualCost(universityId: number, programId: number) {
   const university = catalog.universities.find((item) => item.id === universityId);
   const program = catalog.programs.find((item) => item.id === programId);
   if (!university || !program) return officialConfirmationFallback(currentLocale.value);
-  return `CNY ${formatCurrency(university.livingCostCny + program.annualTuitionCny)}${t('common.perYear')}`;
+  const filterableTuitionCny = program.filterableTuitionCny ?? program.tuitionInfo?.filterableTuitionCny ?? null;
+  if (filterableTuitionCny == null) return officialConfirmationFallback(currentLocale.value);
+  return `CNY ${formatCurrency(university.livingCostCny + filterableTuitionCny)}${t('common.perYear')}`;
 }
 </script>

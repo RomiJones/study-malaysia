@@ -63,7 +63,8 @@
               <h3>{{ text(item.name) }}</h3>
               <p>{{ text(item.faculty) }}</p>
               <div class="favorite-program-card__chips">
-                <span class="chip chip-ink">CNY {{ formatCurrency(item.annualTuitionCny) }}{{ t('common.perYear') }}</span>
+                <span class="chip chip-ink">{{ formatProgramListTuition(item, undefined, currentLocale) }}</span>
+                <span v-if="hasVerifiedProgramFee(item)" class="chip chip-success">{{ formatProgramFeeVerifiedLabel(currentLocale) }}</span>
                 <span class="chip chip-teal">IELTS {{ item.languageRequirement.ielts }}+</span>
               </div>
             </div>
@@ -85,12 +86,12 @@ import { useI18n } from "vue-i18n";
 import { useLocaleText } from "../composables/useLocaleText";
 import { useCatalogStore } from "../stores/catalog";
 import { useSessionStore } from "../stores/session";
-import { formatCurrency } from "../utils/format";
+import { formatProgramFeeVerifiedLabel, formatProgramListTuition, hasVerifiedProgramFee } from "../utils/format";
 
 const catalog = useCatalogStore();
 const session = useSessionStore();
 const { t } = useI18n();
-const { text } = useLocaleText();
+const { currentLocale, text } = useLocaleText();
 const brokenLogoIds = ref(new Set<number>());
 
 const favoriteUniversities = computed(() => catalog.universities.filter((item) => catalog.favoriteState.universities.includes(item.id)));

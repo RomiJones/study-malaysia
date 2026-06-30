@@ -79,7 +79,8 @@
               <div class="rec-card__meta">{{ text(item.university.name) }} · QS #{{ item.university.qsRank }}</div>
               <div class="rec-card__chips">
                 <span class="chip" :class="tierChipClass(item.tier, index)">{{ tierLabel(item.tier, index) }}</span>
-                <span class="chip chip-ink">CNY {{ formatCurrency(item.annualCostCny) }}{{ t('common.perYear') }}</span>
+                <span class="chip chip-ink">{{ annualCostLabel(item.annualCostCny) }}</span>
+                <span v-if="hasVerifiedProgramFee(item.program)" class="chip chip-success">{{ formatProgramFeeVerifiedLabel(currentLocale) }}</span>
                 <span class="chip chip-teal">IELTS {{ item.program.languageRequirement.ielts }}+</span>
               </div>
               <div class="rec-card__notes">
@@ -119,7 +120,7 @@ import {
 import { useLocaleText } from "../composables/useLocaleText";
 import { useSessionStore } from "../stores/session";
 import { useSmartRecommendationsStore } from "../stores/recommendations";
-import { formatCurrency } from "../utils/format";
+import { formatCurrency, formatProgramFeeVerifiedLabel, hasVerifiedProgramFee, officialConfirmationFallback } from "../utils/format";
 
 const props = withDefaults(defineProps<{
   context?: "modal" | "planner";
@@ -149,6 +150,12 @@ const missingFieldLabels = computed(() => {
   const fields = smart.gate?.missingProfileFields || [];
   return fields.map((field) => profileFieldLabel(field));
 });
+
+function annualCostLabel(value: number | null) {
+  return value == null
+    ? officialConfirmationFallback(currentLocale.value)
+    : `CNY ${formatCurrency(value)}${t('common.perYear')}`;
+}
 
 onMounted(() => {
   void smart.load(currentLocale.value);
