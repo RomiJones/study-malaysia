@@ -239,8 +239,9 @@ function getUnsplashAssetKey(value: string): string {
   }
 }
 
-export type DegreeLevel = "bachelor" | "master" | "phd" | "postgraduate-certificate" | "postgraduate-diploma";
+export type DegreeLevel = "bachelor" | "master" | "phd" | "postgraduate-certificate" | "postgraduate-diploma" | "diploma";
 export const DEGREE_LEVEL_ORDER = [
+  "diploma",
   "bachelor",
   "master",
   "postgraduate-certificate",
@@ -506,6 +507,51 @@ export interface PlannerProfile {
   ielts: number;
   experience: string;
   acceptNoLanguage: boolean;
+  contactInfo?: PlannerContactInfo;
+  academicBackground?: PlannerAcademicBackground;
+  languageProfile?: PlannerLanguageProfile;
+  studyPreferences?: PlannerStudyPreferences;
+  serviceNeeds?: PlannerServiceNeeds;
+}
+
+export interface PlannerContactInfo {
+  fullName?: string;
+  phone?: string;
+  wechat?: string;
+  whatsapp?: string;
+  nationality?: string;
+  currentLocation?: string;
+}
+
+export interface PlannerAcademicBackground {
+  currentEducation?: string;
+  schoolName?: string;
+  majorName?: string;
+  gradingScale?: string;
+  averageScore?: string;
+  graduationYear?: string;
+}
+
+export interface PlannerLanguageProfile {
+  testType?: string;
+  overallScore?: string;
+  scoreBreakdown?: string;
+  testDate?: string;
+  plannedTestDate?: string;
+}
+
+export interface PlannerStudyPreferences {
+  intake?: string;
+  preferredCities?: string[];
+  preferredUniversityType?: string;
+  rankingPriority?: string;
+  scholarshipNeeded?: boolean;
+  accommodationNeeded?: boolean;
+}
+
+export interface PlannerServiceNeeds {
+  needs?: string[];
+  notes?: string;
 }
 
 export interface PlannerMaterialItem {
@@ -638,6 +684,12 @@ export interface AuthResponse {
 }
 
 export const DEGREE_LEVEL_LABELS: Record<DegreeLevel, LocalizedText> = {
+  diploma: {
+    en: "Diploma",
+    ms: "Diploma",
+    "zh-CN": "文凭",
+    "zh-TW": "文憑"
+  },
   bachelor: {
     en: "Bachelor",
     ms: "Ijazah Sarjana Muda",
