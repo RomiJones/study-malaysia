@@ -21,6 +21,48 @@ function createStorage() {
   };
 }
 
+function createDeferredResponse() {
+  let resolve!: (response: Response) => void;
+  const promise = new Promise<Response>((next) => {
+    resolve = next;
+  });
+  return { promise, resolve };
+}
+
+function createReadyResponse(userId: number) {
+  return {
+    schemaVersion: "2026-05-25",
+    status: "ready",
+    gate: {
+      status: "ready",
+      mode: "personalized-profile-match",
+      canShowRecommendations: true,
+      requiresAuthentication: false,
+      requiresCompleteProfile: false,
+      primaryAction: "view-results",
+      message: { en: "Ready", ms: "Ready", "zh-CN": "Ready", "zh-TW": "Ready" },
+      blockReasons: [],
+      missingProfileFields: []
+    },
+    profile: {
+      userId,
+      source: "saved-user-profile",
+      profileVersion: `profile-${userId}`,
+      updatedAt: "2026-05-25T00:00:00.000Z",
+      level: "master",
+      targetCategory: "business",
+      budgetCny: 120000,
+      gpa: 3.4,
+      ielts: 6.5,
+      acceptNoLanguage: false
+    },
+    profileCompleteness: null,
+    recommendations: [
+      { score: 91, program: { id: 101 }, university: { id: 1 } }
+    ]
+  };
+}
+
 beforeEach(() => {
   Object.defineProperty(globalThis, "localStorage", {
     value: createStorage(),
@@ -129,6 +171,87 @@ describe("smart recommendation store", () => {
     assert.equal((requests[0].init?.headers as Record<string, string>).Authorization, "Bearer token-2");
     assert.match(String(requests[0].init?.body), /personalized-profile-match/);
     assert.equal(smart.status, "no-match");
+  });
+
+  test("discards an in-flight load response after account switch", async () => {
+    localStorage.setItem("studymy_token", "token-a");
+    localStorage.setItem("studymy_user", JSON.stringify({ id: 1, role: "student", account: "student-a@example.com" }));
+    const pending = createDeferredResponse();
+    const requests: Array<{ input: RequestInfo | URL; init?: RequestInit }> = [];
+    globalThis.fetch = async (input: RequestInfo | URL, init?: RequestInit) => {
+      requests.push({ input, init });
+      return pending.promise;
+    };
+
+    const smart = useSmartRecommendationsStore();
+    const session = useSessionStore();
+
+    const loadPromise = smart.load("en");
+    assert.equal((requests[0].init?.headers as Record<string, string>).Authorization, "Bearer token-a");
+
+    session.token = "token-b";
+    session.user = { id: 2, role: "student", account: "student-b@example.com" };
+    pending.resolve(new Response(JSON.stringify(createReadyResponse(1)), { status: 200 }));
+    await loadPromise;
+
+    assert.equal(session.token, "token-b");
+    assert.equal(smart.status, "login-required");
+    assert.deepEqual(smart.recommendations, []);
+    assert.equal(smart.response, null);
+    assert.equal(smart.loading, false);
+  });
+
+  test("discards an in-flight refresh response after account switch", async () => {
+    localStorage.setItem("studymy_token", "token-a");
+    localStorage.setItem("studymy_user", JSON.stringify({ id: 1, role: "student", account: "student-a@example.com" }));
+    const pending = createDeferredResponse();
+    const requests: Array<{ input: RequestInfo | URL; init?: RequestInit }> = [];
+    globalThis.fetch = async (input: RequestInfo | URL, init?: RequestInit) => {
+      requests.push({ input, init });
+      return pending.promise;
+    };
+
+    const smart = useSmartRecommendationsStore();
+    const session = useSessionStore();
+
+    const refreshPromise = smart.refresh("en");
+    assert.equal((requests[0].init?.headers as Record<string, string>).Authorization, "Bearer token-a");
+
+    session.token = "token-b";
+    session.user = { id: 2, role: "student", account: "student-b@example.com" };
+    pending.resolve(new Response(JSON.stringify(createReadyResponse(1)), { status: 200 }));
+    await refreshPromise;
+
+    assert.equal(session.token, "token-b");
+    assert.equal(smart.status, "login-required");
+    assert.deepEqual(smart.recommendations, []);
+    assert.equal(smart.response, null);
+    assert.equal(smart.loading, false);
+  });
+
+  test("keeps the newest response when same-session requests finish out of order", async () => {
+    localStorage.setItem("studymy_token", "token-a");
+    localStorage.setItem("studymy_user", JSON.stringify({ id: 1, role: "student", account: "student-a@example.com" }));
+    const firstPending = createDeferredResponse();
+    const secondPending = createDeferredResponse();
+    const pendingResponses = [firstPending, secondPending];
+    let requestIndex = 0;
+    globalThis.fetch = async () => pendingResponses[requestIndex++].promise;
+
+    const smart = useSmartRecommendationsStore();
+    const firstLoad = smart.load("en");
+    const secondLoad = smart.load("en", { force: true });
+
+    secondPending.resolve(new Response(JSON.stringify(createReadyResponse(2)), { status: 200 }));
+    await secondLoad;
+    assert.equal(smart.response?.profile?.userId, 2);
+    assert.equal(smart.loading, false);
+
+    firstPending.resolve(new Response(JSON.stringify(createReadyResponse(1)), { status: 200 }));
+    await firstLoad;
+
+    assert.equal(smart.response?.profile?.userId, 2);
+    assert.equal(smart.loading, false);
   });
 
   test("hides cached recommendations after logout or account switch", async () => {
