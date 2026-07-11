@@ -7,9 +7,14 @@ import {
   FEE_AUDIT_STATUS_LABELS,
   HEADER_NAVIGATION_CONTRACT,
   LANGUAGE_SWITCHER_CONTRACT,
+  MUET_TO_IELTS_EQUIVALENT,
   OFFICIAL_SOURCE_STATUS_LABELS,
   PUBLIC_DISPLAY_STATUS_LABELS,
-  SUPPORTED_LOCALES
+  QS_UNRANKED_RANK,
+  SUPPORTED_LOCALES,
+  compareByQsWorldRank,
+  muetBandToIeltsEquivalent,
+  qsRankSortValue
 } from "../../packages/shared/src/index.ts";
 
 describe("shared catalog contracts", () => {
@@ -30,12 +35,33 @@ describe("shared catalog contracts", () => {
     assert.deepEqual(DEFAULT_PROGRAM_CATEGORY_OPTIONS.map((item) => item.sortOrder), [1, 2, 3, 4, 5, 6, 7]);
   });
 
+  test("keeps QS WUR ordering ahead of any featured or insertion order", () => {
+    const items = [
+      { code: "UM", qsRank: 56, name: { en: "Universiti Malaya", "zh-CN": "马来亚大学" } },
+      { code: "AIMST", qsRank: QS_UNRANKED_RANK, name: { en: "AIMST University", "zh-CN": "亚洲医药科技大学" } },
+      { code: "MONASH", qsRank: 31, name: { en: "Monash University Malaysia", "zh-CN": "莫纳什大学马来西亚校区" } },
+      { code: "USM", qsRank: 128, name: { en: "Universiti Sains Malaysia", "zh-CN": "马来西亚理科大学" } }
+    ];
+
+    assert.deepEqual([...items].sort(compareByQsWorldRank).map((item) => item.code), ["MONASH", "UM", "USM", "AIMST"]);
+    assert.equal(qsRankSortValue(QS_UNRANKED_RANK), Number.MAX_SAFE_INTEGER);
+  });
+
   test("keeps Chinese labels for public status and audit status values", () => {
     assert.equal(PUBLIC_DISPLAY_STATUS_LABELS.ready["zh-CN"], "可公开展示");
     assert.equal(OFFICIAL_SOURCE_STATUS_LABELS["missing-source"]["zh-CN"], "缺少官方来源");
-    assert.equal(FEE_AUDIT_STATUS_LABELS["matched-official"]["zh-CN"], "与官方来源一致");
-    assert.equal(FEE_AUDIT_STATUS_LABELS["official-rate-verified"]["zh-CN"], "官方费率已核验");
-    assert.equal(FEE_AUDIT_STATUS_LABELS["calculated-from-official-rate"]["zh-CN"], "按官方费率与学制计算");
+    assert.equal(FEE_AUDIT_STATUS_LABELS["matched-official"]["zh-CN"], "官方总学费一致");
+    assert.equal(FEE_AUDIT_STATUS_LABELS["official-rate-verified"]["zh-CN"], "仅官方费率已核验");
+    assert.equal(FEE_AUDIT_STATUS_LABELS["official-non-scalar"]["zh-CN"], "官方非单一金额");
+    assert.equal(FEE_AUDIT_STATUS_LABELS["calculated-from-official-rate"]["zh-CN"], "按官方费率计算总额");
+  });
+
+  test("exposes MUET to IELTS equivalent scores for display", () => {
+    assert.equal(MUET_TO_IELTS_EQUIVALENT["3.5"], 5.0);
+    assert.equal(muetBandToIeltsEquivalent(3.5), 5.0);
+    assert.equal(muetBandToIeltsEquivalent(4), 6.0);
+    assert.equal(muetBandToIeltsEquivalent(4.5), 6.5);
+    assert.equal(muetBandToIeltsEquivalent(null), null);
   });
 
   test("exposes the language switcher contract for every supported locale", () => {

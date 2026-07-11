@@ -585,7 +585,7 @@ function verifyIntiImportedRecordSet(
     summary.needsReviewRows !== 0 ||
     summary.publishedRows !== 107 ||
     summary.pendingFeeRows !== 0 ||
-    summary.officialApproximateFeeRows !== 91 ||
+    summary.officialApproximateFeeRows !== 107 ||
     summary.nonScalarApproximateFeeRows !== 16 ||
     summary.rowsWithApproximateFeeEvidence !== 107 ||
     summary.rowsWithOfficialSourceUrl !== 107 ||
@@ -648,12 +648,12 @@ function intiLanguageIsolationIssues(rows: Array<DeepPartial<ProgramEntity>>) {
 function intiFeeDisplayIssues(rows: Array<DeepPartial<ProgramEntity>>) {
   const issues: Array<{ slug: unknown; field: string; value: unknown }> = [];
   for (const row of rows) {
-    for (const field of ["tuitionDisplay", "listTuitionText"] as const) {
-      const value = row[field];
-      if (hasFeeRange(value)) issues.push({ slug: row.slug, field, value });
+    if (row.officialFeeAuditStatus !== "official-approximate") {
+      issues.push({ slug: row.slug, field: "officialFeeAuditStatus", value: row.officialFeeAuditStatus });
     }
-    if (row.officialFeeAuditStatus === "official-non-scalar" && row.tuitionAmount != null) {
-      issues.push({ slug: row.slug, field: "tuitionAmount", value: row.tuitionAmount });
+    if (row.tuitionAmount == null || Number(row.tuitionAmount) <= 0) issues.push({ slug: row.slug, field: "tuitionAmount", value: row.tuitionAmount });
+    if (hasFeeRange(row.tuitionDisplay) || hasFeeRange(row.listTuitionText)) {
+      issues.push({ slug: row.slug, field: "feeRangeDisplay", value: row.tuitionDisplay || row.listTuitionText });
     }
   }
   return issues;
@@ -679,43 +679,56 @@ function feePresentation(candidate: IntiCandidateProgramme): {
   evidenceText: string;
 } {
   const options = candidate.fee.feeOptions || [];
-  const amounts = options
-    .map((option) => Number(option.amount))
-    .filter((amount) => Number.isFinite(amount) && amount > 0);
-  const uniqueAmounts = [...new Set(amounts)].sort((a, b) => a - b);
-  const nonScalar = candidate.fee.status === "official-non-scalar-approximate-excluding-sst" && uniqueAmounts.length > 1;
-  const selectedAmount = uniqueAmounts.length === 1
-    ? uniqueAmounts[0]
-    : Number(candidate.fee.approximateTuitionAmount || 0) > 0
-      ? Number(candidate.fee.approximateTuitionAmount)
-      : null;
+  const selectedOption = selectMainCampusFeeOption(candidate);
+  const selectedAmount = Number(selectedOption?.amount || candidate.fee.approximateTuitionAmount || 0) > 0
+    ? Number(selectedOption?.amount || candidate.fee.approximateTuitionAmount)
+    : null;
   const evidenceText = options.length
     ? options.map((option) => `${option.label}: ${option.internationalFeeText}`).join(" / ")
     : candidate.fee.approximateTuitionDisplay || "Approximate official fee";
   const display = normalizeText(
-    (nonScalar ? "Official fee variants verified" : "") ||
+    selectedOption?.internationalFeeText ||
     candidate.fee.approximateTuitionDisplay ||
     (selectedAmount ? `Approx. RM ${selectedAmount.toLocaleString("en-US")}` : evidenceText || "Approximate official fee"),
     255
   );
-  const annualTuitionCny = Math.round(((selectedAmount || uniqueAmounts[0] || 0) * cnyPerMyr) / Math.max(normalizedDurationYears(candidate), 0.5));
+  const annualTuitionCny = Math.round(((selectedAmount || 0) * cnyPerMyr) / Math.max(normalizedDurationYears(candidate), 0.5));
   return {
     currency: "MYR",
-    amount: nonScalar ? null : selectedAmount,
+    amount: selectedAmount,
     annualTuitionCny,
     display,
     sourceUrl: candidate.fee.officialFeeSourceUrl,
-    auditStatus: nonScalar ? "official-non-scalar" : "official-approximate",
+    auditStatus: "official-approximate",
     evidenceText,
     note: normalizeLongText(
       [
-        nonScalar ? "Multiple official approximate fee options are published for this candidate." : "Official approximate fee evidence is published for this candidate.",
+        options.length > 1
+          ? "Multiple official approximate fee options are published for this candidate; StudyMY uses the main-campus or primary official option for the public tuition field."
+          : "Official approximate fee evidence is published for this candidate.",
+        selectedOption ? `Selected public tuition option: ${selectedOption.label}: ${selectedOption.internationalFeeText}.` : "",
         candidate.fee.notes,
         `Evidence: ${evidenceText}.`,
         "StudyMY displays the official approximate fee published by INTI; international student fees exclude 6% SST and the final payable amount should be confirmed with INTI."
       ].join(" ")
     )
   };
+}
+
+function selectMainCampusFeeOption(candidate: IntiCandidateProgramme) {
+  const options = candidate.fee.feeOptions || [];
+  if (!options.length) return null;
+  const priority = [
+    /INTI International University/i,
+    /INTI International College Subang/i,
+    /INTI International College Penang/i,
+    /INTI College Sabah/i
+  ];
+  for (const pattern of priority) {
+    const option = options.find((item) => pattern.test(item.label) && Number(item.amount) > 0);
+    if (option) return option;
+  }
+  return options.find((item) => Number(item.amount) > 0) || options[0];
 }
 
 function sourceLinks(candidate: IntiCandidateProgramme, fee: ReturnType<typeof feePresentation>): OfficialSourceLink[] {
@@ -1111,7 +1124,7 @@ async function main() {
           preserveExistingPublicInstitution: true,
           newInstitutionFallback: { isPublished: true, publicDisplayStatus: "ready" }
         },
-        programmes: { isPublished: true, publicDisplayStatus: "ready", officialFeeAuditStatus: "official-approximate-or-official-non-scalar" },
+        programmes: { isPublished: true, publicDisplayStatus: "ready", officialFeeAuditStatus: "official-approximate" },
         archiveLegacyRows: "Yes. Previous INTI review slug rows are removed when no longer part of the public programme set.",
         publicReadyRowsExpected: 107,
         feePolicy: "INTI Approx. RM amounts are imported as official approximate tuition. SST exclusion stays in programme detail notes, not list labels.",

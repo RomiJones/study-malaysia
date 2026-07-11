@@ -30,6 +30,7 @@
     "verify:task037:images": "node scripts/task037-verify-user-image-fields.mjs",
     "verify:task037:browser": "node scripts/task037-user-image-screenshots.mjs",
     "verify:task038:assets": "node scripts/task038-verify-small-assets.mjs",
+    "collect:university-logos": "node scripts/collect-university-logos.mjs",
     "verify:task039:images": "node scripts/task039-image-regression.mjs",
     "verify:task040:i18n": "tsx --tsconfig tsconfig.test.json scripts/task040-i18n-audit.ts",
     "verify:task041:i18n": "npm run verify:task040:i18n && tsx --tsconfig tsconfig.test.json scripts/task041-copy-audit.ts",

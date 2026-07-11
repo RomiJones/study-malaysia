@@ -143,10 +143,10 @@ export const seedRoles: SeedRole[] = [
     menus: ["dashboard", "schools", "programs", "content"]
   },
   {
-    code: "counselor",
-    name: "申请顾问",
-    description: "负责学生申请跟进与状态管理",
-    dataScope: "assigned",
+    code: "application-manager",
+    name: "业务主管",
+    description: "负责申请案件全局查看、分配、转交和团队工作量管理",
+    dataScope: "all",
     isSystem: true,
     permissions: [
       "dashboard:view",
@@ -155,10 +155,58 @@ export const seedRoles: SeedRole[] = [
       "application:assign",
       "application:followup",
       "application:export",
+      "admin-user:view",
+      "school:view",
+      "program:view"
+    ],
+    menus: ["dashboard", "applications", "access", "access-admins", "schools", "programs"]
+  },
+  {
+    code: "counselor",
+    name: "申请顾问",
+    description: "负责已分配学生申请的跟进、状态管理和学生沟通",
+    dataScope: "assigned",
+    isSystem: true,
+    permissions: [
+      "dashboard:view",
+      "application:view",
+      "application:update",
+      "application:followup",
+      "application:export",
       "school:view",
       "program:view"
     ],
     menus: ["dashboard", "schools", "programs", "applications"]
+  },
+  {
+    code: "material-auditor",
+    name: "材料审核员",
+    description: "负责已分配案件的材料审核、补件说明和材料阶段跟进",
+    dataScope: "assigned",
+    isSystem: true,
+    permissions: [
+      "dashboard:view",
+      "application:view",
+      "application:followup",
+      "school:view",
+      "program:view"
+    ],
+    menus: ["dashboard", "applications", "schools", "programs"]
+  },
+  {
+    code: "visa-specialist",
+    name: "签证专员",
+    description: "负责已分配案件的签证阶段跟进和完成归档",
+    dataScope: "assigned",
+    isSystem: true,
+    permissions: [
+      "dashboard:view",
+      "application:view",
+      "application:followup",
+      "school:view",
+      "program:view"
+    ],
+    menus: ["dashboard", "applications", "schools", "programs"]
   }
 ];
 
@@ -180,12 +228,36 @@ export const seedAdminUsers: SeedAdminUser[] = [
     roles: ["content-editor"]
   },
   {
+    username: "manager",
+    email: "manager@studymy.local",
+    displayName: "业务主管",
+    password: "Manager123!",
+    dataScope: "all",
+    roles: ["application-manager"]
+  },
+  {
     username: "counselor",
     email: "counselor@studymy.local",
     displayName: "申请顾问",
     password: "Counselor123!",
     dataScope: "assigned",
     roles: ["counselor"]
+  },
+  {
+    username: "auditor",
+    email: "auditor@studymy.local",
+    displayName: "材料审核员",
+    password: "Auditor123!",
+    dataScope: "assigned",
+    roles: ["material-auditor"]
+  },
+  {
+    username: "visa",
+    email: "visa@studymy.local",
+    displayName: "签证专员",
+    password: "Visa123!",
+    dataScope: "assigned",
+    roles: ["visa-specialist"]
   }
 ];
 
@@ -198,6 +270,23 @@ export const seedConfigs: SeedConfig[] = [
 ];
 
 export const seedDictionaryItems: SeedDictionaryItem[] = [
+  { dictType: "official_source_status", code: "official-verified", label: "官方来源已核验", sortOrder: 10 },
+  { dictType: "official_source_status", code: "official-page-verified-current-cycle-not-open", label: "官方页已核验但当前周期未开放", sortOrder: 20 },
+  { dictType: "official_source_status", code: "official-page-verified-international-not-available", label: "官方页已核验但不开放国际学生", sortOrder: 30 },
+  { dictType: "official_source_status", code: "needs-review", label: "待复核", sortOrder: 40 },
+  { dictType: "official_source_status", code: "source-conflict", label: "来源冲突", sortOrder: 50 },
+  { dictType: "official_source_status", code: "missing-source", label: "缺少官方来源", sortOrder: 60 },
+  { dictType: "official_source_status", code: "hidden-duplicate-superseded", label: "重复或已替代隐藏", sortOrder: 70 },
+  { dictType: "fee_audit_status", code: "matched-official", label: "官方总学费一致", sortOrder: 10 },
+  { dictType: "fee_audit_status", code: "fee-sheet-verified", label: "官方费用表已核验", sortOrder: 20 },
+  { dictType: "fee_audit_status", code: "official-approximate", label: "官方近似金额", sortOrder: 30 },
+  { dictType: "fee_audit_status", code: "official-rate-verified", label: "仅官方费率已核验", sortOrder: 40 },
+  { dictType: "fee_audit_status", code: "calculated-from-official-rate", label: "按官方费率计算总额", sortOrder: 50 },
+  { dictType: "fee_audit_status", code: "official-non-scalar", label: "官方非单一金额", sortOrder: 60 },
+  { dictType: "fee_audit_status", code: "conflict", label: "金额冲突", sortOrder: 70 },
+  { dictType: "fee_audit_status", code: "source-conflict", label: "费用来源冲突", sortOrder: 80 },
+  { dictType: "fee_audit_status", code: "pending-review", label: "费用待复核", sortOrder: 90 },
+  { dictType: "fee_audit_status", code: "not-published", label: "官网未公布费用", sortOrder: 100 },
   { dictType: "application_status", code: "draft", label: "待整理", sortOrder: 10 },
   { dictType: "application_status", code: "submitted", label: "已递交", sortOrder: 20 },
   { dictType: "application_status", code: "reviewing", label: "审核中", sortOrder: 30 },

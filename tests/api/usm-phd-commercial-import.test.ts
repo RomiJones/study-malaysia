@@ -16,9 +16,9 @@ test("USM doctoral source keeps all 95 official identities and publishes the aud
   const rows = buildUsmPhdRows(source);
   const summary = summarizeUsmPhdRows(rows);
   assert.equal(rows.length, 95);
-  assert.equal(summary.ready, 93);
+  assert.equal(summary.ready, 95);
   assert.equal(summary.needsReview, 0);
-  assert.equal(summary.notAvailableForInternational, 2);
+  assert.equal(summary.notAvailableForInternational, 0);
   assert.equal(summary.feeMatched, 13);
   assert.equal(summary.feeRateVerified, 0);
   assert.equal(summary.feeCalculated, 62);
@@ -40,18 +40,44 @@ test("USM doctoral source keeps all 95 official identities and publishes the aud
     const normalized = name["zh-CN"].replace(/\b(?:USM|KL|KANITA|DBA)\b/gi, "");
     return !/[A-Za-z]{3,}/.test(normalized);
   }));
+  assert.ok(rows.some((row) =>
+    row.languageRequirement?.ielts === 5 &&
+    row.languageRequirement?.toefl === 40 &&
+    row.languageRequirement?.pte === 47 &&
+    row.languageRequirement?.muet === 3.5
+  ));
+  assert.ok(rows.some((row) =>
+    row.languageRequirement?.ielts === 6 &&
+    row.languageRequirement?.toefl === 60 &&
+    row.languageRequirement?.pte === 59 &&
+    row.languageRequirement?.muet === 4
+  ));
+  const researchRows = rows.filter((row) => row.studyMode === "research");
+  assert.ok(researchRows.length > 0);
+  assert.ok(researchRows.some((row) => row.officialIntake === "Open year-round application"));
+  assert.ok(researchRows.some((row) => /April|October/i.test(String(row.officialIntake))));
+  assert.ok(researchRows
+    .filter((row) => row.officialIntake === "Open year-round application")
+    .every((row) => row.intakeMonths?.length === 0 && /open year-round/i.test(String(row.officialIntakeNote))));
+  assert.ok(rows.some((row) => row.studyMode !== "research" && /April|October/i.test(String(row.officialIntake))));
   assert.ok(rows.filter((row) => row.publicDisplayStatus !== "ready").every((row) => row.isPublished === false));
 });
 
 test("USM doctoral importer preserves unpublished fields without inventing values", () => {
   const rows = buildUsmPhdRows(source);
   const dba = rows.find((row) => row.nameEnOfficial?.includes("BUSINESS ADMINISTRATION (DBA)"));
+  const curriculum = rows.find((row) => row.nameEnOfficial === "DOCTOR OF EDUCATION IN CURRICULUM & INSTRUCTION");
+  const tesol = rows.find((row) => row.nameEnOfficial === "DOCTOR OF EDUCATION IN TESOL");
   const neuroscience = rows.find((row) => row.nameEnOfficial === "DOCTOR OF NEUROSCIENCE");
   const research = rows.find((row) => row.studyMode === "research" && row.tuitionCurrency === "USD");
   const offshore = rows.find((row) => String(row.nameEnOfficial).includes("OFFSHORE"));
   assert.equal(dba?.durationYears, 3.5);
-  assert.equal(dba?.durationOfficial, "Full-Time Duration: 3.5-5 years; Part-Time Duration: 4.5-7 years");
+  assert.equal(dba?.durationOfficial, "Full time: 7 semesters to 10 semesters Part time: 10 semesters to 14 semesters");
   assert.equal(dba?.publicDisplayStatus, "ready");
+  assert.equal(curriculum?.publicDisplayStatus, "ready");
+  assert.equal(curriculum?.tuitionAmount, 18000);
+  assert.equal(tesol?.publicDisplayStatus, "ready");
+  assert.equal(tesol?.tuitionAmount, 18000);
   assert.equal(neuroscience?.durationYears, 3);
   assert.equal(neuroscience?.publicDisplayStatus, "ready");
   assert.equal(dba?.tuitionAmount, 16200);

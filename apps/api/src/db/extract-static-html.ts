@@ -19,7 +19,9 @@ function getCatalogLayer(value: string | null): StaticCatalogLayerName {
 const input = getArgValue("--input") || process.env.STATIC_HTML_PATH || undefined;
 const output = getArgValue("--out");
 const layer = getCatalogLayer(getArgValue("--layer") || process.env.STATIC_HTML_LAYER || null);
-const catalog = extractStaticCatalog(input, { layer });
+const universityCode = getArgValue("--university-code") || process.env.STATIC_HTML_UNIVERSITY_CODE || null;
+const universitySlug = getArgValue("--university-slug") || process.env.STATIC_HTML_UNIVERSITY_SLUG || null;
+const catalog = extractStaticCatalog(input, { layer, universityCode, universitySlug });
 const validation = validateStaticCatalog(catalog);
 
 if (output) {

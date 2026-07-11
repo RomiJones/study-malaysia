@@ -1,11 +1,15 @@
 import { Controller, Get, Param, Query, Inject } from "@nestjs/common";
 import { Transform } from "class-transformer";
 import { IsBoolean, IsNumber, IsOptional, IsString } from "class-validator";
-import { UniversitiesService } from "./universities.service.js";
+import { UniversitiesService, type UniversityQuery } from "./universities.service.js";
 
 function toArray(value: unknown): string[] | undefined {
   if (value == null || value === "") return undefined;
-  return String(value).split(",").map((item) => item.trim()).filter(Boolean);
+  const items = (Array.isArray(value) ? value : [value])
+    .flatMap((item) => String(item).split(","))
+    .map((item) => item.trim())
+    .filter(Boolean);
+  return items.length ? items : undefined;
 }
 
 function toNumber(value: unknown): number | undefined {
@@ -17,6 +21,37 @@ function toNumber(value: unknown): number | undefined {
 function toBoolean(value: unknown): boolean | undefined {
   if (value == null || value === "") return undefined;
   return value === true || value === "true";
+}
+
+function toStringValue(value: unknown): string | undefined {
+  if (value == null || value === "") return undefined;
+  const firstValue = Array.isArray(value) ? value[0] : value;
+  const text = String(firstValue).trim();
+  return text || undefined;
+}
+
+function toArrayQuery(query: Record<string, unknown>, key: string): string[] | undefined {
+  return toArray(query[key]) || toArray(query[`${key}[]`]);
+}
+
+function normalizeUniversitiesQuery(query: Record<string, unknown>): UniversityQuery {
+  return {
+    search: toStringValue(query.search),
+    categories: toArrayQuery(query, "categories"),
+    levels: toArrayQuery(query, "levels"),
+    ownerships: toArrayQuery(query, "ownerships"),
+    types: toArrayQuery(query, "types"),
+    institutionTypes: toArrayQuery(query, "institutionTypes"),
+    acceptNoLanguage: toBoolean(query.acceptNoLanguage),
+    qsRankMax: toNumber(query.qsRankMax),
+    tuitionMin: toNumber(query.tuitionMin),
+    tuitionMax: toNumber(query.tuitionMax),
+    budgetCny: toNumber(query.budgetCny),
+    ieltsMax: toNumber(query.ieltsMax),
+    page: toNumber(query.page),
+    pageSize: toNumber(query.pageSize),
+    includeMeta: toBoolean(query.includeMeta)
+  };
 }
 
 class UniversitiesQueryDto {
@@ -104,13 +139,18 @@ export class UniversitiesController {
   }
 
   @Get("meta/filters")
-  filters(@Query() query: UniversitiesQueryDto) {
-    return this.universitiesService.getFacets(query);
+  filters(@Query() query: Record<string, unknown>) {
+    return this.universitiesService.getFacets(normalizeUniversitiesQuery(query));
   }
 
   @Get()
-  list(@Query() query: UniversitiesQueryDto) {
-    return this.universitiesService.list(query);
+  list(@Query() query: Record<string, unknown>) {
+    return this.universitiesService.list(normalizeUniversitiesQuery(query));
+  }
+
+  @Get(":slug/review-preview")
+  reviewPreview(@Param("slug") slug: string, @Query("key") key?: string) {
+    return this.universitiesService.getReviewPreview(slug, key);
   }
 
   @Get(":slug")

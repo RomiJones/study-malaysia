@@ -122,10 +122,10 @@ function program(overrides: Record<string, unknown> = {}) {
   };
 }
 
-test("UTM public catalog exposes official bachelor rows that are closed to international applicants", async () => {
+test("UTM public catalog exposes official bachelor rows whose current cycle is not open", async () => {
   const readyUniversity = university();
   const readyProgram = program({ university: readyUniversity });
-  const unavailableProgram = program({
+  const currentCycleProgram = program({
     id: 802,
     slug: "utm-bachelor-management",
     code: "UTM-UG-041",
@@ -134,16 +134,17 @@ test("UTM public catalog exposes official bachelor rows that are closed to inter
     faculty: text("Faculty of Management", "管理学院"),
     facultyZh: "管理学院",
     officialIntake: "Not offered for both the September and February intakes for the 2026/2027 academic session",
-    durationOfficial: "UTM official international undergraduate directory marks this programme as not open to international applicants for the current cycle: Not offered for both the September and February intakes for the 2026/2027 academic session",
-    officialSourceStatus: "official-page-verified-international-not-available",
-    publicDisplayStatus: "not-available-for-international",
-    publicDisplayNote: "Published for official catalogue completeness. UTM marks this programme as not offered to international applicants for both September and February intakes in the 2026/2027 academic session.",
-    reviewReason: "Official UTM current-cycle status: not offered to international applicants.",
+    durationOfficial: "Study Duration: Minimum 3 years for full-time study; 6 years for part-time study.",
+    officialSourceStatus: "official-page-verified-current-cycle-not-open",
+    publicDisplayStatus: "current-cycle-not-open",
+    publicDisplayNote: "Published for official catalogue completeness. UTM marks this programme as not offered for both September and February intakes in the 2026/2027 academic session; official country-specific international entry requirements remain published separately.",
+    reviewReason: "Official UTM current-cycle intake status: Not offered for both the September and February intakes for the 2026/2027 academic session.",
+    chinaStudentRequirement: "中国申请路径：高中毕业证书；社科类要求任意 3 门认可科目成绩不低于 70%。 / China qualification route: scores of at least 70% in any three accepted subjects.",
     university: readyUniversity
   });
 
   const programsService = new ProgramsService(
-    { find: async () => [readyProgram, unavailableProgram] } as any,
+    { find: async () => [readyProgram, currentCycleProgram] } as any,
     { find: async () => [readyUniversity], findOneBy: async () => readyUniversity } as any,
     { getJson: async () => null, setJson: async () => undefined } as any
   );
@@ -151,33 +152,33 @@ test("UTM public catalog exposes official bachelor rows that are closed to inter
   const listResult = await programsService.list({ universityId: 8, levels: ["bachelor"] }) as any[];
 
   assert.deepEqual(listResult.map((item) => item.id), [801, 802]);
-  assert.equal(listResult[1].publicDisplayStatus, "not-available-for-international");
-  assert.equal(listResult[1].officialSourceStatus, "official-page-verified-international-not-available");
-  assert.match(listResult[1].publicDisplayNote, /not offered to international applicants/i);
+  assert.equal(listResult[1].publicDisplayStatus, "current-cycle-not-open");
+  assert.equal(listResult[1].officialSourceStatus, "official-page-verified-current-cycle-not-open");
+  assert.match(listResult[1].publicDisplayNote, /country-specific international entry requirements/i);
 });
 
-test("UTM university detail keeps closed international rows in the bachelor group", async () => {
+test("UTM university detail keeps current-cycle not-open rows in the bachelor group", async () => {
   const readyProgram = program();
-  const unavailableProgram = program({
+  const currentCycleProgram = program({
     id: 802,
     slug: "utm-bachelor-management",
     code: "UTM-UG-041",
     name: text("Bachelor of Management with Honours", "管理荣誉学士"),
     nameEnOfficial: "Bachelor of Management with Honours",
-    publicDisplayStatus: "not-available-for-international",
-    officialSourceStatus: "official-page-verified-international-not-available",
+    publicDisplayStatus: "current-cycle-not-open",
+    officialSourceStatus: "official-page-verified-current-cycle-not-open",
     officialIntake: "Not offered for both the September and February intakes for the 2026/2027 academic session",
-    publicDisplayNote: "Published for official catalogue completeness. UTM marks this programme as not offered to international applicants for both September and February intakes in the 2026/2027 academic session."
+    publicDisplayNote: "Published for official catalogue completeness. UTM marks this programme as not offered for both September and February intakes in the 2026/2027 academic session; official country-specific international entry requirements remain published separately."
   });
   const readyUniversity = university({
-    programs: [readyProgram, unavailableProgram],
+    programs: [readyProgram, currentCycleProgram],
     officialProfile: {
       catalogStatusSummary: {
-        all: { total: 44, ready: 40, needsReview: 0, notAvailableForInternational: 4 },
+        all: { total: 44, ready: 40, currentCycleNotOpen: 4, needsReview: 0, notAvailableForInternational: 0 },
         byLevel: {
-          bachelor: { total: 44, ready: 40, needsReview: 0, notAvailableForInternational: 4 },
-          master: { total: 0, ready: 0, needsReview: 0, notAvailableForInternational: 0 },
-          phd: { total: 0, ready: 0, needsReview: 0, notAvailableForInternational: 0 }
+          bachelor: { total: 44, ready: 40, currentCycleNotOpen: 4, needsReview: 0, notAvailableForInternational: 0 },
+          master: { total: 0, ready: 0, currentCycleNotOpen: 0, needsReview: 0, notAvailableForInternational: 0 },
+          phd: { total: 0, ready: 0, currentCycleNotOpen: 0, needsReview: 0, notAvailableForInternational: 0 }
         }
       }
     }
@@ -196,7 +197,8 @@ test("UTM university detail keeps closed international rows in the bachelor grou
   assert.deepEqual(detail.programs.map((item: any) => item.id), [801, 802]);
   assert.equal(detail.programGroups.find((group: any) => group.level === "bachelor").count, 2);
   assert.equal(detail.catalogStatusSummary.byLevel.bachelor.total, 44);
-  assert.equal(detail.catalogStatusSummary.byLevel.bachelor.notAvailableForInternational, 4);
-  assert.equal(detail.programs[1].publicDisplayStatus, "not-available-for-international");
-  assert.match(detail.programs[1].publicDisplayNote, /not offered to international applicants/i);
+  assert.equal(detail.catalogStatusSummary.byLevel.bachelor.currentCycleNotOpen, 4);
+  assert.equal(detail.catalogStatusSummary.byLevel.bachelor.notAvailableForInternational, 0);
+  assert.equal(detail.programs[1].publicDisplayStatus, "current-cycle-not-open");
+  assert.match(detail.programs[1].publicDisplayNote, /country-specific international entry requirements/i);
 });

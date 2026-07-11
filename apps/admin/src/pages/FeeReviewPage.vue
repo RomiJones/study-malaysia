@@ -91,6 +91,20 @@
             </div>
           </template>
         </el-table-column>
+        <el-table-column label="前台风险" min-width="310">
+          <template #default="scope">
+            <div class="quality-risk-cell quality-risk-cell--compact">
+              <div class="quality-risk-cell__title">
+                <el-tag size="small" :type="qualityRiskTagType(feeReviewFrontendRisk(scope.row.issueTypes))" effect="plain">
+                  {{ feeReviewFrontendRisk(scope.row.issueTypes).ability }}
+                </el-tag>
+                <strong>{{ feeReviewFrontendRisk(scope.row.issueTypes).title }}</strong>
+              </div>
+              <span>{{ feeReviewFrontendRisk(scope.row.issueTypes).summary }}</span>
+              <small>影响页面：{{ feeReviewFrontendRisk(scope.row.issueTypes).pages.join("、") }}</small>
+            </div>
+          </template>
+        </el-table-column>
         <el-table-column label="官方学费" min-width="170">
           <template #default="scope">
             <div>{{ scope.row.tuitionDisplay || formatMyr(scope.row.officialTuitionMYR) || "-" }}</div>
@@ -127,7 +141,7 @@
             <div class="table-actions">
               <el-button link type="primary" :disabled="!canUpdate" @click="openFeeDialog(scope.row)">复核</el-button>
               <RouterLink :to="{ path: '/programs', query: { editId: scope.row.id, focus: 'officialFeeAuditStatus' } }">
-                <el-button link>专业页</el-button>
+                <el-button link>去修复</el-button>
               </RouterLink>
             </div>
           </template>
@@ -198,6 +212,7 @@ import {
   type FeeReviewProgram
 } from "@/composables/useFeeReview";
 import { DEFAULT_OPTIONS, dictionaryOptions, optionLabel, statusTagType, type AdminOption, type DictionaryItem } from "@/utils/adminOptions";
+import { feeReviewFrontendRisk, qualityRiskTagType } from "@/utils/qualityRisk";
 import { useAuthStore } from "@/stores/auth";
 
 interface UniversityOption {

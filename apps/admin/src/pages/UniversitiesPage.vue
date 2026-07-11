@@ -85,6 +85,30 @@
             <strong>{{ item.value || "-" }}</strong>
           </div>
         </div>
+        <div class="frontend-impact-panel">
+          <div class="frontend-impact-panel__header">
+            <div>
+              <div class="frontend-impact-panel__title">前台影响说明</div>
+              <div class="frontend-impact-panel__subtitle">当前页签字段保存后，会影响以下前台页面和业务能力。</div>
+            </div>
+            <el-tag type="info" effect="plain">当前页签：{{ universityImpactTabLabel }}</el-tag>
+          </div>
+          <div class="frontend-impact-tags">
+            <el-tag v-for="page in universityImpactPages" :key="page" size="small" effect="plain">{{ page }}</el-tag>
+          </div>
+          <div class="frontend-impact-list">
+            <div v-for="item in visibleUniversityImpactItems" :key="item.title" class="frontend-impact-row">
+              <div class="frontend-impact-row__main">
+                <strong>{{ item.title }}</strong>
+                <span>{{ item.risk }}</span>
+              </div>
+              <div class="frontend-impact-row__meta">
+                <span>字段：{{ item.fields.join("、") }}</span>
+                <span>页面：{{ item.pages.join("、") }}</span>
+              </div>
+            </div>
+          </div>
+        </div>
         <el-skeleton v-if="entityIssueLoading" :rows="2" animated />
         <el-alert v-else-if="!entityIssues.length" title="当前条目暂无待处理质量问题" type="success" show-icon :closable="false" />
         <div v-else class="entity-issue-list">
@@ -94,8 +118,15 @@
               <strong>{{ issue.ruleName || issue.ruleId }}</strong>
               <span>{{ issue.message }}</span>
               <small>{{ issue.fieldPath || "-" }}</small>
+              <div class="quality-risk-inline">
+                <el-tag size="small" :type="qualityRiskTagType(qualityIssueFrontendRisk(issue))" effect="plain">
+                  前台风险 / {{ qualityIssueFrontendRisk(issue).ability }}
+                </el-tag>
+                <span>{{ qualityIssueFrontendRisk(issue).summary }}</span>
+                <small>影响页面：{{ qualityIssueFrontendRisk(issue).pages.join("、") }}</small>
+              </div>
             </div>
-            <el-button link type="primary" @click="focusUniversityIssue(issue.fieldPath)">定位字段</el-button>
+            <el-button link type="primary" @click="focusUniversityIssue(issue.fieldPath)">去修复</el-button>
           </div>
         </div>
       </section>
@@ -251,6 +282,7 @@ import LocaleTextTabs from "@/components/LocaleTextTabs.vue";
 import LocaleListTabs from "@/components/LocaleListTabs.vue";
 import { createLocaleArrayMap, createLocaleMap } from "@/utils/locale";
 import { useAccess } from "@/utils/access";
+import { qualityIssueFrontendRisk, qualityRiskTagType } from "@/utils/qualityRisk";
 import {
   createSourceLink,
   dictionaryOptions,
@@ -292,6 +324,93 @@ interface QualityIssueItem {
   message: string;
   fieldPath?: string | null;
 }
+
+interface FrontendImpactItem {
+  tab: string;
+  title: string;
+  fields: string[];
+  pages: string[];
+  risk: string;
+}
+
+const uniqueStrings = (items: string[]) => [...new Set(items)];
+
+const universityImpactTabLabels: Record<string, string> = {
+  base: "基础信息",
+  official: "官方档案",
+  application: "申请与费用",
+  audit: "发布与审计"
+};
+
+const universityImpactItems: FrontendImpactItem[] = [
+  {
+    tab: "base",
+    title: "名称、视觉与位置",
+    fields: ["name", "shortName", "logoUrl", "imageUrl", "location", "region", "description"],
+    pages: ["首页卡片", "院校详情", "收藏", "对比"],
+    risk: "缺失会导致卡片识别度下降，详情页、收藏和对比页出现空白或 fallback。"
+  },
+  {
+    tab: "base",
+    title: "排名、性质与规模",
+    fields: ["qsRank", "qsAsiaRank", "ownership", "institutionType", "students", "intlStudents", "foundedYear"],
+    pages: ["首页卡片", "院校详情", "专业列表", "对比", "推荐"],
+    risk: "影响院校筛选、排序、学校可信信息和推荐解释。"
+  },
+  {
+    tab: "base",
+    title: "多语言内容资产",
+    fields: ["name", "description", "location", "region", "highlights", "facilities"],
+    pages: ["院校详情", "收藏", "对比"],
+    risk: "四语言缺失时，英文或马来文界面可能触发 fallback 或混入中文。"
+  },
+  {
+    tab: "official",
+    title: "官方入口与来源",
+    fields: ["officialWebsite", "studyPortalUrl", "internationalPageUrl", "applicationPortalUrl", "officialSources"],
+    pages: ["院校详情", "规划", "会员申请"],
+    risk: "缺入口会影响用户跳转官方页面，也会影响顾问申请规划判断。"
+  },
+  {
+    tab: "official",
+    title: "官方档案",
+    fields: ["nameEnOfficial", "officialAddress", "officialProfile", "officialAuditSummary"],
+    pages: ["院校详情", "对比"],
+    risk: "官方档案缺失会降低详情页可信说明和对比页信息完整度。"
+  },
+  {
+    tab: "application",
+    title: "费用与预算",
+    fields: ["tuitionMinCny", "tuitionMaxCny", "livingCostCny", "livingCostOfficialNote"],
+    pages: ["首页卡片", "院校详情", "专业列表", "对比", "规划", "推荐"],
+    risk: "缺费用范围会影响预算筛选、年度成本估算和推荐匹配。"
+  },
+  {
+    tab: "application",
+    title: "申请要求与材料",
+    fields: ["applicationPeriods", "applicationFees", "applicationDocuments", "chinaStudentRequirements", "admissionEmail", "acceptNoLanguage", "minIelts"],
+    pages: ["院校详情", "规划", "会员申请", "推荐"],
+    risk: "缺材料、周期或语言门槛会影响申请规划和顾问案件判断。"
+  },
+  {
+    tab: "audit",
+    title: "公开发布门禁",
+    fields: ["isPublished", "publicDisplayStatus"],
+    pages: ["首页卡片", "院校详情", "专业列表", "收藏", "对比", "规划", "推荐"],
+    risk: "状态不满足 ready 时，学校和下属专业可能从公开目录隐藏。"
+  },
+  {
+    tab: "audit",
+    title: "来源核验状态",
+    fields: ["officialSourceStatus", "officialVerifiedAt", "csrCertified", "officialAuditSummary"],
+    pages: ["院校详情", "专业列表", "推荐", "会员申请"],
+    risk: "来源未核验会降低公开可信度，并可能阻断 ready 发布。"
+  }
+];
+
+const visibleUniversityImpactItems = computed(() => universityImpactItems.filter((item) => item.tab === activeTab.value));
+const universityImpactPages = computed(() => uniqueStrings(visibleUniversityImpactItems.value.flatMap((item) => item.pages)));
+const universityImpactTabLabel = computed(() => universityImpactTabLabels[activeTab.value] || "当前页签");
 
 const ownershipOptions = computed(() => dictionaryOptions(dictionaries.value, "institution_ownership"));
 const institutionTypeOptions = computed(() => dictionaryOptions(dictionaries.value, "institution_type"));

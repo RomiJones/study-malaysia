@@ -505,7 +505,7 @@
             </div>
           </div>
 
-          <div class="program-modal-actions">
+          <div v-if="selectedProgramApplicationReady" class="program-modal-actions">
             <button class="btn btn-primary" type="button" @click="goPlannerWithProgram">{{ t("program.addToPlanner") }}</button>
             <button class="btn btn-outline" type="button" @click="catalog.toggleFavoriteProgram(catalog.selectedProgramDetail.id)">
               {{ catalog.favoriteState.programs.includes(catalog.selectedProgramDetail.id) ? t("common.favorited") : t("program.favoriteProgram") }}
@@ -608,6 +608,10 @@ const reviewPreview = computed<ReviewPreview | undefined>(() => {
   if (route.query.review === "luc") return "luc";
   if (lucReviewPreviewSlugs.has(props.slug)) return "luc";
   return undefined;
+});
+const selectedProgramApplicationReady = computed(() => {
+  const program = catalog.selectedProgramDetail;
+  return Boolean(program && program.publicDisplayStatus === "ready" && !isReviewPreviewProgram(program));
 });
 
 const detailTabs = computed<Array<{ key: DetailTab; label: string }>>(() => [
@@ -912,14 +916,21 @@ function hideBrokenImage(event: Event) {
 }
 
 async function goPlannerWithProgram() {
-  if (catalog.selectedProgramDetail) {
+  if (catalog.selectedProgramDetail && selectedProgramApplicationReady.value) {
     await planner.addTask(catalog.selectedProgramDetail.university.id, catalog.selectedProgramDetail.id);
+    void router.push("/planner");
   }
-  void router.push("/planner");
 }
 
 function comparePrograms(a: ProgramListItem, b: ProgramListItem) {
   return (a.nameEnOfficial || a.nameEn).localeCompare(b.nameEnOfficial || b.nameEn);
+}
+
+function isReviewPreviewProgram(program: ProgramListItem | ProgramCatalogDetail) {
+  return Boolean((program as ProgramCatalogDetail & { reviewPreview?: unknown }).reviewPreview) ||
+    program.slug.startsWith("luc-official-20260630-row-") ||
+    program.slug.startsWith("luc-postgraduate-20260705-row-") ||
+    program.slug.startsWith("msu-review-");
 }
 
 function levelLabel(level: DegreeLevel) {

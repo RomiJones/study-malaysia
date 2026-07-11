@@ -44,6 +44,19 @@ interface OfficialFee {
   reason?: string;
 }
 
+interface ProgrammeContent {
+  status?: string;
+  overviewText?: string;
+  curriculumStructure?: string[];
+  courses?: string[];
+  specializations?: string[];
+  researchAreas?: string[];
+  internship?: string[];
+  project?: string[];
+  expertise?: string[];
+  sourceLocalPath?: string | null;
+}
+
 interface CandidateRecord {
   code: string;
   officialName: string;
@@ -53,6 +66,7 @@ interface CandidateRecord {
   delivery: string;
   internationalEligibility: string;
   overviewOfficial: string;
+  programmeContent?: ProgrammeContent;
   academicRequirement: { textEnOfficial: string; status: string; officialSourceUrl: string };
   languageRequirement: { textEnOfficial: string; status: string; officialSourceUrl: string };
   duration: { textEnOfficial: string; status: string };
@@ -174,8 +188,13 @@ const subjectTranslations: Array<[RegExp, string]> = [
   [/Sustainable Development Practice/gi, "可持续发展实践"],
   [/Educational Technology & Multimedia/gi, "教育技术与多媒体"],
   [/Curriculum & Instruction/gi, "课程与教学"],
+  [/Education Management and Administration/gi, "教育管理与行政"],
+  [/Educational Psychology/gi, "教育心理学"],
+  [/Educational Technology and Multimedia/gi, "教育技术与多媒体"],
+  [/Mathematics Education/gi, "数学教育"],
   [/Science Education/gi, "科学教育"],
-  [/\bTESOL\b/gi, "英语教学"],
+  [/English Language Education\/TESOL/gi, "英语教育／TESOL"],
+  [/(?<![／/])\bTESOL\b/gi, "英语教学"],
   [/Plastic Surgery/gi, "整形外科"],
   [/Neurosurgery/gi, "神经外科"],
   [/Social Work/gi, "社会工作"],
@@ -274,7 +293,6 @@ const subjectTranslations: Array<[RegExp, string]> = [
   [/Special Education/gi, "特殊教育"],
   [/Psychometrics and Educational Measurement/gi, "心理测量与教育测量"],
   [/Malay Language Education/gi, "马来语教育"],
-  [/English Language Education\/TESOL/gi, "英语教育／TESOL"],
   [/Early Childhood Education/gi, "幼儿教育"],
   [/Drama and Theatre/gi, "戏剧与剧场"],
   [/Civilization Studies/gi, "文明研究"],
@@ -290,6 +308,13 @@ const subjectTranslations: Array<[RegExp, string]> = [
   [/Business Administration/gi, "工商管理"],
   [/Business Analytics/gi, "商业分析"],
   [/Biomedical Science/gi, "生物医学科学"],
+  [/Enzymology\/Enzyme Technology\/Biocatalysts/gi, "酶学／酶技术／生物催化剂"],
+  [/Fermentation Technology/gi, "发酵技术"],
+  [/Waste Treatment via Bioprocess Technology/gi, "生物过程废弃物处理技术"],
+  [/Pharmaceutical Bioprocess Technology/gi, "制药生物过程技术"],
+  [/Biochemical\/Metabolite Technology/gi, "生化／代谢物技术"],
+  [/Process Control\/Automation/gi, "过程控制／自动化"],
+  [/Food\/Nutraceutical Bioprocess Technology/gi, "食品／营养制品生物过程技术"],
   [/Bioprocess Technology/gi, "生物过程技术"],
   [/Public Administration/gi, "公共管理"],
   [/Communication/gi, "传播学"],
@@ -371,7 +396,8 @@ export function translatedSubject(value: string) {
   const translated = subjectTranslations.reduce((current, [pattern, replacement]) => current.replace(pattern, replacement), original)
     .replace(/\s+/g, " ")
     .trim();
-  return /[\u3400-\u9fff]/.test(translated) && /[A-Za-z]{3,}/.test(translated) ? original : translated;
+  const acronymSafe = translated.replace(/\b(?:TESOL|MBA|MPA|EMPM|EMBIZ|MSc|USM|KL)\b/g, "");
+  return /[\u3400-\u9fff]/.test(translated) && /[A-Za-z]{3,}/.test(acronymSafe) ? original : translated;
 }
 
 function escapeRegExp(value: string) {
@@ -640,6 +666,34 @@ function extractIntakeMonths(text: string) {
   return months.filter((month) => new RegExp(month, "i").test(text));
 }
 
+function researchIntakePresentation(record: CandidateRecord) {
+  const official = normalizeEvidenceText(record.intake.textEnOfficial);
+  const programmeMonths = extractIntakeMonths(official);
+  const programmeSpecific = record.intake.status.startsWith("official-programme") && programmeMonths.length > 0;
+  if (programmeSpecific) {
+    return {
+      months: programmeMonths,
+      official,
+      note: `USM official programme page publishes ${programmeMonths.join(" / ")} intake for this research-mode programme.`
+    };
+  }
+  return {
+    months: [],
+    official: "Open year-round application",
+    note: "Research-mode postgraduate applications are treated as open year-round when USM does not publish a programme-specific fixed intake month; the reporting date follows the official offer and registration arrangement."
+  };
+}
+
+function intakePresentation(record: CandidateRecord) {
+  if (record.studyMode === "research") return researchIntakePresentation(record);
+  const official = normalizeEvidenceText(record.intake.textEnOfficial);
+  return {
+    months: extractIntakeMonths(official),
+    official,
+    note: `USM official intake schedule verified; source status: ${record.intake.status}.`
+  };
+}
+
 export function extractIelts(text: string) {
   const beforeIelts = text.match(/Band\s*(\d(?:\.\d+)?)\s*(?:for|in)\s*IELTS/i);
   if (beforeIelts) return Number(beforeIelts[1]);
@@ -649,8 +703,53 @@ export function extractIelts(text: string) {
   return Number(afterIelts?.[1] || 0);
 }
 
+function languageSegments(text: string) {
+  return text
+    .replace(/\s+/g, " ")
+    .split(/;\s*or\s+|;\s*|\bor\s+(?=A minimum)/i)
+    .map((segment) => segment.trim())
+    .filter(Boolean);
+}
+
+function firstNumber(segment: string) {
+  const score = segment.match(/(?:score|Band)\s*(?:of\s*)?(\d+(?:\.\d+)?)/i);
+  return Number(score?.[1] || segment.match(/(\d+(?:\.\d+)?)/)?.[1] || 0);
+}
+
+export function extractToeflIbt(text: string) {
+  const segment = languageSegments(text).find((item) =>
+    /TOEFL/i.test(item) && !/Essentials/i.test(item)
+  );
+  return segment ? firstNumber(segment) : 0;
+}
+
+export function extractPte(text: string) {
+  const segment = languageSegments(text).find((item) =>
+    /\bPTE\b|Pearson Test of English/i.test(item)
+  );
+  return segment ? firstNumber(segment) : 0;
+}
+
+export function extractMuet(text: string) {
+  const segment = languageSegments(text).find((item) =>
+    /\bMUET\b|Malaysian University English Test/i.test(item)
+  );
+  return segment ? firstNumber(segment) : 0;
+}
+
+export function extractLanguageScores(text: string) {
+  return {
+    ielts: extractIelts(text),
+    toefl: extractToeflIbt(text),
+    muet: extractMuet(text),
+    pte: extractPte(text)
+  };
+}
+
 export function extractCgpa(text: string) {
-  const match = text.match(/(?:CGPA|minimum of)\s*(\d\.\d{1,2})/i);
+  const match = text.match(
+    /(?:CGPA|minimum of)\s*(?:of\s*)?(?:at\s+least\s*)?(?:minimum\s*)?(\d(?:\.\d{1,2})?)/i
+  );
   return Number(match?.[1] || 0);
 }
 
@@ -770,6 +869,29 @@ function applicationDocuments(source: MasterCommercialSource, mode: StudyMode) {
 }
 
 function localizedSpecializations(record: CandidateRecord) {
+  if (record.code === "USM-PG-ARTICLE-342-733AE3B5") {
+    return localizedArray(
+      ["Child and Adolescents", "Marriage and Family", "Crisis", "Organization"],
+      ["Kanak-kanak dan Remaja", "Perkahwinan dan Keluarga", "Krisis", "Organisasi"],
+      ["儿童与青少年", "婚姻与家庭", "危机辅导", "组织辅导"],
+      ["兒童與青少年", "婚姻與家庭", "危機輔導", "組織輔導"]
+    );
+  }
+  const officialItems = [
+    ...(record.programmeContent?.specializations || []),
+    ...(
+      record.programmeContent?.specializations?.length
+        ? []
+        : record.programmeContent?.researchAreas || []
+    )
+  ]
+    .map((item) => sanitizeOfficialText(item))
+    .filter(Boolean);
+  if (officialItems.length) {
+    const uniqueItems = Array.from(new Set(officialItems));
+    const zh = uniqueItems.map((item) => translatedSubject(item));
+    return localizedArray(uniqueItems, uniqueItems, zh, zh.map(toTraditional));
+  }
   const en = record.specialisationOrVariantFees.map((fee) =>
     (fee.officialFeeName || "").replace(record.officialName, "").replace(/^[\s:–—-]+/, "").trim()
   ).filter(Boolean);
@@ -778,13 +900,211 @@ function localizedSpecializations(record: CandidateRecord) {
   return localizedArray(en, en, zh, zh.map(toTraditional));
 }
 
+function localizedProgrammeContentItems(record: CandidateRecord): LocalizedStringArray | null {
+  const content = record.programmeContent;
+  if (!content) return null;
+  const items: Array<{ en: string; zhPrefix: string; enPrefix: string }> = [];
+  for (const item of content.curriculumStructure || []) {
+    items.push({ en: item, zhPrefix: "课程结构", enPrefix: "Curriculum structure" });
+  }
+  for (const item of content.courses || []) {
+    items.push({ en: item, zhPrefix: "课程", enPrefix: "Course" });
+  }
+  for (const item of content.internship || []) {
+    items.push({ en: item, zhPrefix: "实习", enPrefix: "Internship" });
+  }
+  for (const item of content.project || []) {
+    items.push({ en: item, zhPrefix: "项目", enPrefix: "Project" });
+  }
+  if (!items.length) {
+    for (const item of content.researchAreas || []) {
+      items.push({ en: item, zhPrefix: "研究方向", enPrefix: "Research area" });
+    }
+  }
+  for (const item of content.expertise || []) {
+    items.push({ en: item, zhPrefix: "开设单位", enPrefix: "Expertise available" });
+  }
+  const unique = items
+    .map((item) => ({ ...item, en: sanitizeOfficialText(item.en) }))
+    .filter((item) => item.en)
+    .filter((item, index, all) => all.findIndex((other) => other.en.toLowerCase() === item.en.toLowerCase()) === index);
+  if (!unique.length) return null;
+  const en = unique.map((item) => `${item.enPrefix}: ${item.en}`);
+  const zh = unique.map((item) => `${item.zhPrefix}：${translatedSubject(item.en)}`);
+  return localizedArray(en, en, zh, zh.map(toTraditional));
+}
+
+function localizedCurriculum(record: CandidateRecord): LocalizedStringArray {
+  if (record.code === "USM-PG-ARTICLE-342-733AE3B5") {
+    return localizedArray(
+      [
+        "Specialization courses: candidates choose 2 courses, 6 units, from Child and Adolescents, Marriage and Family, Crisis, and Organization.",
+        "Application of Theory in Counselling Practice",
+        "Individual Counselling, Process, Strategy and Technique",
+        "Group Counselling Process, Strategy and Technique",
+        "Guidance and Career Counselling",
+        "Life Span Psychology",
+        "Multicultural Counseling",
+        "Ethics and Legal in Counselling",
+        "Individual Appraisal",
+        "Vocational Counselling",
+        "Practicum",
+        "Marriage and Family Counselling",
+        "Legal and Cultural Issues in Marriage and Family",
+        "Theory and Human Resource Development",
+        "Behavioural Issues in Organization",
+        "Psychology of Grief",
+        "Crisis Intervention",
+        "Child and Adolescent Psychology",
+        "Child and Adolescent Behavioural Issues",
+        "Internship: students carry out individual and group counselling sessions at a placement centre, practise counselling skills and techniques, manage cases, keep logs and case notes, and work with different client issues.",
+        "Project: candidates apply research methods and statistical plausible reasoning skills to conduct counselling research, evaluate counselling through research, and interpret findings to improve counselling techniques.",
+        "Expertise available in the School of Educational Studies."
+      ],
+      [
+        "Kursus pengkhususan: calon memilih 2 kursus, 6 unit, daripada Kanak-kanak dan Remaja, Perkahwinan dan Keluarga, Krisis, dan Organisasi.",
+        "Aplikasi Teori dalam Amalan Kaunseling",
+        "Kaunseling Individu, Proses, Strategi dan Teknik",
+        "Proses, Strategi dan Teknik Kaunseling Kelompok",
+        "Bimbingan dan Kaunseling Kerjaya",
+        "Psikologi Sepanjang Hayat",
+        "Kaunseling Pelbagai Budaya",
+        "Etika dan Perundangan dalam Kaunseling",
+        "Penilaian Individu",
+        "Kaunseling Vokasional",
+        "Praktikum",
+        "Kaunseling Perkahwinan dan Keluarga",
+        "Isu Perundangan dan Budaya dalam Perkahwinan dan Keluarga",
+        "Teori dan Pembangunan Sumber Manusia",
+        "Isu Tingkah Laku dalam Organisasi",
+        "Psikologi Kedukaan",
+        "Intervensi Krisis",
+        "Psikologi Kanak-kanak dan Remaja",
+        "Isu Tingkah Laku Kanak-kanak dan Remaja",
+        "Latihan industri: pelajar menjalankan sesi kaunseling individu dan kelompok di pusat penempatan, melatih kemahiran dan teknik kaunseling, mengurus kes, menyediakan log dan nota kes, serta berhadapan dengan pelbagai isu klien.",
+        "Projek: calon menggunakan kaedah penyelidikan dan kemahiran penaakulan statistik untuk menjalankan kajian dalam bidang kaunseling, menilai kaunseling melalui penyelidikan, dan mentafsir dapatan untuk menambah baik teknik kaunseling.",
+        "Kepakaran tersedia di Pusat Pengajian Ilmu Pendidikan."
+      ],
+      [
+        "专修课程：学生可在儿童与青少年、婚姻与家庭、危机、组织四个方向中选择 2 门，共 6 学分。",
+        "辅导实践理论应用",
+        "个人辅导：过程、策略与技巧",
+        "团体辅导：过程、策略与技巧",
+        "指导与职业辅导",
+        "毕生发展心理学",
+        "多元文化辅导",
+        "辅导伦理与法律",
+        "个体评估",
+        "职业辅导",
+        "实践课程",
+        "婚姻与家庭辅导",
+        "婚姻与家庭中的法律和文化议题",
+        "理论与人力资源发展",
+        "组织中的行为议题",
+        "哀伤心理学",
+        "危机干预",
+        "儿童与青少年心理学",
+        "儿童与青少年行为议题",
+        "实习：学生需在指定机构进行个人与团体辅导，训练辅导技能与技巧，管理辅导个案，记录日志和个案笔记，并接触不同来访者的问题与议题；课程也强调心理测验的使用与解释。",
+        "项目：学生需运用研究方法以及统计和合理推理技能开展辅导领域研究，理解并评估辅导研究，通过研究结果解读提升辅导技巧。",
+        "开设学院：教育研究学院（School of Educational Studies）。"
+      ],
+      [
+        "專修課程：學生可在兒童與青少年、婚姻與家庭、危機、組織四個方向中選擇 2 門，共 6 學分。",
+        "輔導實踐理論應用",
+        "個人輔導：過程、策略與技巧",
+        "團體輔導：過程、策略與技巧",
+        "指導與職業輔導",
+        "畢生發展心理學",
+        "多元文化輔導",
+        "輔導倫理與法律",
+        "個體評估",
+        "職業輔導",
+        "實踐課程",
+        "婚姻與家庭輔導",
+        "婚姻與家庭中的法律和文化議題",
+        "理論與人力資源發展",
+        "組織中的行為議題",
+        "哀傷心理學",
+        "危機干預",
+        "兒童與青少年心理學",
+        "兒童與青少年行為議題",
+        "實習：學生需在指定機構進行個人與團體輔導，訓練輔導技能與技巧，管理輔導個案，記錄日誌和個案筆記，並接觸不同來訪者的問題與議題；課程也強調心理測驗的使用與解釋。",
+        "專案：學生需運用研究方法以及統計和合理推理技能開展輔導領域研究，理解並評估輔導研究，通過研究結果解讀提升輔導技巧。",
+        "開設學院：教育研究學院（School of Educational Studies）。"
+      ]
+    );
+  }
+  const officialItems = localizedProgrammeContentItems(record);
+  if (officialItems) return officialItems;
+  return localizedArray(
+    [sanitizeOfficialText(record.overviewOfficial) || "Refer to the official programme page for curriculum details."],
+    ["Rujuk halaman rasmi program untuk struktur kurikulum."],
+    ["课程与研究方向以 USM 官方项目页为准。"],
+    ["課程與研究方向以 USM 官方項目頁為準。"]
+  );
+}
+
+function truncateOfficialText(value: string, maxLength = 700) {
+  const cleaned = sanitizeOfficialText(value);
+  if (cleaned.length <= maxLength) return cleaned;
+  return `${cleaned.slice(0, maxLength).replace(/\s+\S*$/, "")}...`;
+}
+
+function localizedDescription(record: CandidateRecord, descriptionZh: string): LocalizedText {
+  if (record.code === "USM-PG-ARTICLE-342-733AE3B5") {
+    return t(
+      "This coursework programme is designed for counselling teachers, private and public college lecturers in counselling and psychology, and practitioners experienced in counselling and psychology, especially guidance activities and helping processes. It covers counselling systems, administration, curriculum and related counselling issues, and candidates can specialize in four counselling areas.",
+      "Program kerja kursus ini direka untuk guru kaunseling, pensyarah kolej swasta dan awam dalam bidang kaunseling dan psikologi, serta pengamal berpengalaman dalam kaunseling dan psikologi, khususnya aktiviti bimbingan dan proses membantu. Program ini merangkumi sistem kaunseling, pentadbiran, kurikulum dan isu kaunseling berkaitan, dengan empat bidang pengkhususan.",
+      "该授课型辅导学硕士面向辅导教师、私立及公立学院辅导与心理学讲师，以及具有辅导与心理学经验、尤其参与指导活动和助人过程的申请人。课程涵盖辅导体系、行政管理、课程与相关辅导议题，并提供四个辅导专修方向。",
+      "該授課型輔導學碩士面向輔導教師、私立及公立學院輔導與心理學講師，以及具有輔導與心理學經驗、尤其參與指導活動和助人過程的申請人。課程涵蓋輔導體系、行政管理、課程與相關輔導議題，並提供四個輔導專修方向。"
+    );
+  }
+  const officialOverview = truncateOfficialText(record.programmeContent?.overviewText || record.overviewOfficial);
+  if (officialOverview) {
+    const zh = `${descriptionZh} USM 官方项目页概述已采集，课程、研究方向或项目结构见详情字段。`;
+    return t(
+      officialOverview,
+      officialOverview,
+      zh,
+      toTraditional(zh)
+    );
+  }
+  return t(
+    `${record.officialName} is a ${record.studyMode}-mode master's programme offered by ${record.faculty}. Refer to the linked USM sources for current admission, duration and fee terms.`,
+    `${record.officialName} ialah program sarjana mod ${record.studyMode} yang ditawarkan oleh ${record.faculty}. Rujuk sumber rasmi USM untuk syarat semasa.`,
+    descriptionZh,
+    toTraditional(descriptionZh)
+  );
+}
+
+function requirementNote(record: CandidateRecord): LocalizedText {
+  const academic = sanitizeOfficialText(record.academicRequirement.textEnOfficial);
+  if (record.code === "USM-PG-ARTICLE-342-733AE3B5") {
+    const zh =
+      "入学要求：申请人须具备相关领域本科学位，且满足以下任一条件：CGPA 不低于 2.75/4.00；或 CGPA 2.50-2.74/4.00，并具备至少 1 年研究经验、至少 1 年相关工作经验、至少 1 篇相关领域学术发表、主修/选修课程 Grade B，或毕业项目 Grade B+；或荣誉本科学位且 CGPA 2.00-2.49/4.00，并具备至少 5 年研究经验、至少 5 年相关工作经验且至少 1 篇相关领域学术发表、主修/选修课程 Grade B，或毕业项目 Grade B+。申请人还应具备心理学与辅导领域经验，尤其是参与指导活动和助人过程的经验；录取前需参加面试。语言要求：国际申请人须提交以下任一英语成绩：IELTS 5、TOEFL iBT 40、TOEFL Essentials 7.5、PTE 47、Cambridge English (CAE/CPE) 154、Linguaskill Online 154、CIEP Level (ELS) 107，或 MUET 3.5。若英语为申请人的母语或国家语言，或申请人毕业于英语授课的高等教育机构，可考虑豁免英语成绩。申请时必须提交上述英语成绩之一，材料不完整将被拒。";
+    return t(
+      academic,
+      "Syarat kemasukan dan bahasa adalah khusus kepada halaman rasmi program; pemohon antarabangsa mesti mengemukakan keputusan bahasa Inggeris semasa permohonan.",
+      zh,
+      toTraditional(zh)
+    );
+  }
+  return t(
+    academic,
+    "Ijazah sarjana muda yang berkaitan atau setaraf; rujuk syarat rasmi program.",
+    "相关本科学位或同等学历；具体要求以官方项目页为准。",
+    "相關本科學位或同等學歷；具體要求以官方項目頁為準。"
+  );
+}
+
 export function buildUsmMasterRows(source: MasterCommercialSource): Array<DeepPartial<ProgramEntity>> {
   return source.records.map((record) => {
     const duration = normalizeMasterDuration(record.duration.textEnOfficial, record.studyMode);
     const fee = feePresentation(record, duration);
     const name = localizeProgrammeName(record.officialName, record.faculty);
     const faculty = localizeFaculty(record.faculty);
-    const months = extractIntakeMonths(record.intake.textEnOfficial);
+    const intake = intakePresentation(record);
     const sourceLinks: OfficialSourceLink[] = [
       {
         title: "USM official programme page",
@@ -842,26 +1162,16 @@ export function buildUsmMasterRows(source: MasterCommercialSource): Array<DeepPa
       secondaryOfficialFeeSourceUrl: feeDirectoryUrl,
       officialFeeAuditStatus: fee.status,
       officialFeeAuditedAt: "2026-06-15",
-      intakeMonths: months,
-      officialIntake: normalizeEvidenceText(record.intake.textEnOfficial).slice(0, 255),
-      officialIntakeNote: `USM official intake schedule verified; source status: ${record.intake.status}.`,
-      languageRequirement: {
-        ielts: extractIelts(record.languageRequirement.textEnOfficial),
-        toefl: 0,
-        muet: 0,
-        pte: 0
-      },
+      intakeMonths: intake.months,
+      officialIntake: intake.official.slice(0, 255),
+      officialIntakeNote: intake.note,
+      languageRequirement: extractLanguageScores(record.languageRequirement.textEnOfficial),
       officialLanguageRequirement: sanitizeOfficialText(record.languageRequirement.textEnOfficial),
       requirement: {
         gpa: extractCgpa(record.academicRequirement.textEnOfficial),
         gaokaoRequired: false,
         huikaoRequired: false,
-        note: t(
-          sanitizeOfficialText(record.academicRequirement.textEnOfficial),
-          "Ijazah sarjana muda yang berkaitan atau setaraf; rujuk syarat rasmi program.",
-          "相关本科学位或同等学历；具体要求以官方项目页为准。",
-          "相關本科學位或同等學歷；具體要求以官方項目頁為準。"
-        )
+        note: requirementNote(record)
       },
       officialAcademicRequirement: sanitizeOfficialText(record.academicRequirement.textEnOfficial),
       chinaStudentRequirement: localOnly
@@ -875,12 +1185,7 @@ export function buildUsmMasterRows(source: MasterCommercialSource): Array<DeepPa
           ? "The public programme detail does not explicitly confirm international eligibility; retained for review and excluded from the ready international catalogue."
           : `International eligibility status: ${record.internationalEligibility}.`,
       applicationDocs: applicationDocuments(source, record.studyMode),
-      curriculum: localizedArray(
-        [sanitizeOfficialText(record.overviewOfficial) || "Refer to the official programme page for curriculum details."],
-        ["Rujuk halaman rasmi program untuk struktur kurikulum."],
-        ["课程与研究方向以 USM 官方项目页为准。"],
-        ["課程與研究方向以 USM 官方項目頁為準。"]
-      ),
+      curriculum: localizedCurriculum(record),
       careers: localizedArray(
         ["USM does not publish a structured career list for this programme."],
         ["USM tidak menerbitkan senarai kerjaya berstruktur untuk program ini."],
@@ -888,12 +1193,7 @@ export function buildUsmMasterRows(source: MasterCommercialSource): Array<DeepPa
         ["USM 官方未公布該項目的結構化職業方向列表。"]
       ),
       specializations: localizedSpecializations(record),
-      description: t(
-        `${record.officialName} is a ${record.studyMode}-mode master's programme offered by ${record.faculty}. Refer to the linked USM sources for current admission, duration and fee terms.`,
-        `${record.officialName} ialah program sarjana mod ${record.studyMode} yang ditawarkan oleh ${record.faculty}. Rujuk sumber rasmi USM untuk syarat semasa.`,
-        descriptionZh,
-        toTraditional(descriptionZh)
-      ),
+      description: localizedDescription(record, descriptionZh),
       officialAccreditationNote: "No programme-level accreditation claim is made without a dedicated official source.",
       officialSourceUrl: record.evidence.officialDirectoryUrl,
       officialEntryRequirementSourceUrl: record.academicRequirement.officialSourceUrl || record.evidence.officialDirectoryUrl,

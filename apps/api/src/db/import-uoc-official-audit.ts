@@ -31,8 +31,8 @@ export const DEFAULT_UOC_RELEASE_REPORT_PATH = resolve(uocImportDir, "03_release
 
 const verifiedAt = "2026-06-25";
 const myrToCny = 1.55;
-const expectedProgrammes = 42;
-const expectedByLevel = { bachelor: 21, master: 16, phd: 5 } as const;
+const expectedProgrammes = 38;
+const expectedByLevel = { bachelor: 19, master: 14, phd: 5 } as const;
 const publicCatalogProgramStatuses = ["ready", "current-cycle-not-open", "not-available-for-international"] as const;
 const feeUrl = "https://cyberjaya.edu.my/admission/fees/international-fees-structure";
 const applicationUrl = "https://cyberjaya.edu.my/admission/online-application";
@@ -730,7 +730,7 @@ function buildPublishPlan(
       mode: "publish-all-levels",
       upsertPrefix: UOC_PUBLIC_ALL_LEVEL_SLUG_PREFIX,
       universityRow: "upsert by code UOC or slug university-of-cyberjaya",
-      programmeRows: "upsert 42 current UoC public rows and archive non-current UoC rows",
+      programmeRows: "upsert 38 current UoC public rows and archive non-current UoC rows",
       transactional: true,
       backupRequired: true
     },

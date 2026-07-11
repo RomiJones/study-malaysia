@@ -10,7 +10,7 @@ import { ALL_ENTITIES, ProgramEntity, UniversityEntity } from "./entities.js";
 import {
   categoryFor,
   extractCgpa,
-  extractIelts,
+  extractLanguageScores,
   localizeFaculty,
   sanitizeOfficialText,
   toTraditional,
@@ -89,6 +89,39 @@ const localizedArray = (
   zhCN: string[],
   zhTW = zhCN.map(toTraditional)
 ): LocalizedStringArray => ({ en, ms, "zh-CN": zhCN, "zh-TW": zhTW });
+
+function extractIntakeMonths(text: string) {
+  const months = [
+    "January", "February", "March", "April", "May", "June",
+    "July", "August", "September", "October", "November", "December"
+  ];
+  return months.filter((month) => new RegExp(month, "i").test(text));
+}
+
+function intakePresentation(record: CandidateRecord) {
+  if (record.studyMode !== "research") {
+    return {
+      months: record.intakeMonths,
+      official: record.officialIntake,
+      note: record.officialIntake
+        ? "Programme-specific official intake is published."
+        : "USM does not publish a programme-specific intake for this directory entry."
+    };
+  }
+  const programmeMonths = extractIntakeMonths(record.officialIntake);
+  if (programmeMonths.length) {
+    return {
+      months: record.intakeMonths,
+      official: record.officialIntake,
+      note: `USM official programme page publishes ${programmeMonths.join(" / ")} intake for this research-mode programme.`
+    };
+  }
+  return {
+    months: [],
+    official: "Open year-round application",
+    note: "Research-mode postgraduate applications are treated as open year-round when USM does not publish a programme-specific fixed intake month; the reporting date follows the official offer and registration arrangement."
+  };
+}
 
 function programmeName(record: CandidateRecord): LocalizedText {
   const official = record.nameEnOfficial.replace(/\s+/g, " ").trim();
@@ -215,6 +248,7 @@ export function buildUsmPhdRows(source: PhdCommercialSource): Array<DeepPartial<
     const fee = feePresentation(record);
     const duration = record.durationValue;
     const publicStatus = record.publicDisplayStatus;
+    const intake = intakePresentation(record);
     const descriptionZh = `${faculty["zh-CN"]}开设的${record.studyMode === "research" ? "研究型" : record.studyMode === "coursework" ? "授课型" : record.studyMode === "online" ? "在线" : "混合型"}博士项目。申请条件、学制与费用以所列 USM 官方来源为准。`;
     const sourceLinks: OfficialSourceLink[] = [
       {
@@ -262,17 +296,10 @@ export function buildUsmPhdRows(source: PhdCommercialSource): Array<DeepPartial<
       secondaryOfficialFeeSourceUrl: feeDirectoryUrl,
       officialFeeAuditStatus: fee.status,
       officialFeeAuditedAt: "2026-06-15",
-      intakeMonths: record.intakeMonths,
-      officialIntake: record.officialIntake.slice(0, 255),
-      officialIntakeNote: record.officialIntake
-        ? "Programme-specific official intake is published."
-        : "USM does not publish a programme-specific intake for this directory entry.",
-      languageRequirement: {
-        ielts: extractIelts(record.officialLanguageRequirement),
-        toefl: 0,
-        muet: 0,
-        pte: 0
-      },
+      intakeMonths: intake.months,
+      officialIntake: intake.official.slice(0, 255),
+      officialIntakeNote: intake.note,
+      languageRequirement: extractLanguageScores(record.officialLanguageRequirement),
       officialLanguageRequirement: sanitizeOfficialText(record.officialLanguageRequirement),
       requirement: {
         gpa: extractCgpa(record.officialAcademicRequirement),
@@ -374,9 +401,9 @@ async function verifyRows(manager: EntityManager | DataSource, universityId: num
   const master = await repository.count({ where: { universityId, level: "master", isPublished: true, publicDisplayStatus: "ready" } });
   if (
     commercial.length !== 95 ||
-    ready.length !== 93 ||
+    ready.length !== 95 ||
     needsReview.length !== 0 ||
-    unavailable.length !== 2 ||
+    unavailable.length !== 0 ||
     leakedLegacy.length !== 0 ||
     bachelor !== 63 ||
     master !== 304
@@ -447,13 +474,13 @@ async function main() {
       writePolicy: {
         university: "USM",
         level: "phd",
-        canonicalRows: 95,
-        publishReadyRows: 93,
-        preserveReviewRows: 0,
-        preserveInternationalUnavailableRows: 2,
+        canonicalRows: summary.rows,
+        publishReadyRows: summary.ready,
+        preserveReviewRows: summary.needsReview,
+        preserveInternationalUnavailableRows: summary.notAvailableForInternational,
         archiveLegacyPublicDoctoralRows: true,
-        totalCanonicalRowsAfterImport: 463,
-        totalPublicRowsAfterImport: 460
+        totalCanonicalRowsAfterImport: 63 + 305 + summary.rows,
+        totalPublicRowsAfterImport: 63 + 304 + summary.ready
       }
     }, null, 2));
     return;
@@ -511,15 +538,29 @@ async function main() {
         }
         await repository.save(repository.create({ ...row, id: existing?.id, universityId: university.id }));
       }
-      university.programCount = 460;
+      const bachelorReady = 63;
+      const masterReady = 304;
+      const masterUnavailable = 1;
+      const totalPublicRows = bachelorReady + masterReady + summary.ready;
+      university.programCount = totalPublicRows;
       university.officialProfile = {
         ...(university.officialProfile || {}),
         catalogStatusSummary: {
-          all: { total: 463, ready: 460, needsReview: 0, notAvailableForInternational: 3 },
+          all: {
+            total: 463,
+            ready: totalPublicRows,
+            needsReview: summary.needsReview,
+            notAvailableForInternational: masterUnavailable + summary.notAvailableForInternational
+          },
           byLevel: {
             bachelor: { total: 63, ready: 63, needsReview: 0, notAvailableForInternational: 0 },
-            master: { total: 305, ready: 304, needsReview: 0, notAvailableForInternational: 1 },
-            phd: { total: 95, ready: 93, needsReview: 0, notAvailableForInternational: 2 }
+            master: { total: 305, ready: masterReady, needsReview: 0, notAvailableForInternational: masterUnavailable },
+            phd: {
+              total: summary.rows,
+              ready: summary.ready,
+              needsReview: summary.needsReview,
+              notAvailableForInternational: summary.notAvailableForInternational
+            }
           }
         }
       };
