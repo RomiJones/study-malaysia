@@ -28,8 +28,14 @@ if (!testFiles.length) {
 }
 
 const tsxBin = join(process.cwd(), "node_modules", ".bin", process.platform === "win32" ? "tsx.cmd" : "tsx");
+const fixturePreload = join(process.cwd(), "tests", "fixtures", "official-imports", "install-fixture-fallback.cjs");
+const nodeOptions = [process.env.NODE_OPTIONS, `--require=${fixturePreload}`].filter(Boolean).join(" ");
 const result = spawnSync(tsxBin, ["--tsconfig", "tsconfig.test.json", "--test", ...testFiles], {
   cwd: process.cwd(),
+  env: {
+    ...process.env,
+    NODE_OPTIONS: nodeOptions
+  },
   stdio: "inherit",
   shell: process.platform === "win32"
 });

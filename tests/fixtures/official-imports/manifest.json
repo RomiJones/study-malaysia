@@ -1,0 +1,232 @@
+{
+  "schemaVersion": 1,
+  "purpose": "Minimal deterministic fixtures for root tests whose operational inputs are excluded from the code baseline.",
+  "baselineParentHead": "c29e4ee0dbda958efe2591b018d4dd1cbde3b97d",
+  "compression": "gzip-level-9-mtime-0",
+  "entries": [
+    {
+      "sourcePath": "audits/APU_audit_doctoral_20260627.json",
+      "fixturePath": "audits/APU_audit_doctoral_20260627.json.gz",
+      "bytes": 124400,
+      "compressedBytes": 11669,
+      "sha256": "0ab17385cf82cd0dfa27111ac70afb164aec19cb319432c689e3e87e8530ca5d"
+    },
+    {
+      "sourcePath": "audits/APU_audit_master_20260626_reviewed_v1.json",
+      "fixturePath": "audits/APU_audit_master_20260626_reviewed_v1.json.gz",
+      "bytes": 591565,
+      "compressedBytes": 35004,
+      "sha256": "28770951dd9115638f23fb66d49f7e612a106c144e0ddf4378f503ad923c78aa"
+    },
+    {
+      "sourcePath": "audits/APU_audit_undergraduate_20260626_reviewed_v1.json",
+      "fixturePath": "audits/APU_audit_undergraduate_20260626_reviewed_v1.json.gz",
+      "bytes": 790899,
+      "compressedBytes": 45412,
+      "sha256": "acd6d689cd461dbe5f336699e523c5a63fc7d9a1d9873c7b8148116020f8a342"
+    },
+    {
+      "sourcePath": "audits/IIUM_audit_doctoral_20260629_verified_20260629.json",
+      "fixturePath": "audits/IIUM_audit_doctoral_20260629_verified_20260629.json.gz",
+      "bytes": 455249,
+      "compressedBytes": 28171,
+      "sha256": "a23f706ac9409a5495e036f368c865d4796157acb48fdedfa9d46bd459f0eb37"
+    },
+    {
+      "sourcePath": "audits/IIUM_audit_master_20260629_verified_20260629_r3.json",
+      "fixturePath": "audits/IIUM_audit_master_20260629_verified_20260629_r3.json.gz",
+      "bytes": 2078974,
+      "compressedBytes": 64611,
+      "sha256": "d7a7a8c97c5ea977666f0cf265c2f9bfdfb223858cd5a21e763ddf4682f72f59"
+    },
+    {
+      "sourcePath": "audits/LUC_audit_undergraduate_20260630_verified_20260630_r4.json",
+      "fixturePath": "audits/LUC_audit_undergraduate_20260630_verified_20260630_r4.json.gz",
+      "bytes": 878458,
+      "compressedBytes": 48320,
+      "sha256": "5535118b96c513a22ff114b89bfe32c008eb5cd57db3afa3a5ecec88fa65c615"
+    },
+    {
+      "sourcePath": "audits/MSU_audit_undergraduate_20260629_verified_20260629_v9.json",
+      "fixturePath": "audits/MSU_audit_undergraduate_20260629_verified_20260629_v9.json.gz",
+      "bytes": 2072252,
+      "compressedBytes": 143358,
+      "sha256": "1dd64ed3d465f659086f07ba1bd56a9eb86fdff991f55f70b3191f6f5670edf4"
+    },
+    {
+      "sourcePath": "audits/UCSI_audit_doctoral_20260625_reviewed_v2.json",
+      "fixturePath": "audits/UCSI_audit_doctoral_20260625_reviewed_v2.json.gz",
+      "bytes": 260635,
+      "compressedBytes": 25553,
+      "sha256": "ea2a570fb944d0f54612112fa00bbe19572e00bcd2ed0c3b44aef78d0e20079d"
+    },
+    {
+      "sourcePath": "audits/UMPSA_audit_doctoral_20260628_reviewed_v1.json",
+      "fixturePath": "audits/UMPSA_audit_doctoral_20260628_reviewed_v1.json.gz",
+      "bytes": 68748,
+      "compressedBytes": 9527,
+      "sha256": "ee4049c6ea90c292dd3add49e7a8296b4d534224afb6c6c1efea50c56f5eaceb"
+    },
+    {
+      "sourcePath": "audits/UMPSA_audit_master_20260628_reviewed_v4.json",
+      "fixturePath": "audits/UMPSA_audit_master_20260628_reviewed_v4.json.gz",
+      "bytes": 234590,
+      "compressedBytes": 20611,
+      "sha256": "a118101a0ad9c7110bb7ec42e4a6178678eb3fce059fe811d34bc128cb4daa9b"
+    },
+    {
+      "sourcePath": "audits/UMPSA_audit_undergraduate_20260627_reviewed_v8.json",
+      "fixturePath": "audits/UMPSA_audit_undergraduate_20260627_reviewed_v8.json.gz",
+      "bytes": 668037,
+      "compressedBytes": 40364,
+      "sha256": "ec357f0e22694967fc3ce5ea9287ea4c3319c0bfae830ccdb1950afa9a01922c"
+    },
+    {
+      "sourcePath": "audits/UNITEN_audit_doctoral_20260626_reviewed_v1.json",
+      "fixturePath": "audits/UNITEN_audit_doctoral_20260626_reviewed_v1.json.gz",
+      "bytes": 57983,
+      "compressedBytes": 8228,
+      "sha256": "1bb36d67eb95ba054eb28952f2043b1dc0a559629d6d09e3036eb0b3a83874a1"
+    },
+    {
+      "sourcePath": "audits/UNITEN_audit_master_20260626_reviewed_v5.json",
+      "fixturePath": "audits/UNITEN_audit_master_20260626_reviewed_v5.json.gz",
+      "bytes": 384985,
+      "compressedBytes": 26228,
+      "sha256": "c9b98c2ea2973ee29e1d4193dc1fa8eb3997d6eee6d9ea3757f969946bc23f26"
+    },
+    {
+      "sourcePath": "audits/UNITEN_audit_undergraduate_20260626_reviewed_v1.json",
+      "fixturePath": "audits/UNITEN_audit_undergraduate_20260626_reviewed_v1.json.gz",
+      "bytes": 256729,
+      "compressedBytes": 21301,
+      "sha256": "e9840ffde8f68469ce4931309386399412b5600435488ba3c9bf32677e3eeaa4"
+    },
+    {
+      "sourcePath": "audits/UUM_audit_doctoral_20260628_reviewed_v3.json",
+      "fixturePath": "audits/UUM_audit_doctoral_20260628_reviewed_v3.json.gz",
+      "bytes": 118556,
+      "compressedBytes": 15443,
+      "sha256": "649c2c29a8605fd2ea2ae5165c14e28bb9a40386e4d39718835dcb0564203bf4"
+    },
+    {
+      "sourcePath": "audits/UUM_audit_master_20260628_reviewed_v7.json",
+      "fixturePath": "audits/UUM_audit_master_20260628_reviewed_v7.json.gz",
+      "bytes": 1531707,
+      "compressedBytes": 79337,
+      "sha256": "6adc9208fe051796954ce46239bf3c0bd6c5bed87bc271813a41d0f3284ba7f0"
+    },
+    {
+      "sourcePath": "audits/UUM_audit_undergraduate_20260627_reviewed_v6.json",
+      "fixturePath": "audits/UUM_audit_undergraduate_20260627_reviewed_v6.json.gz",
+      "bytes": 662450,
+      "compressedBytes": 54311,
+      "sha256": "0603c51564957e26c69d131508ea3d40b5730d6464f6672b8d952c9976d732eb"
+    },
+    {
+      "sourcePath": "audits/UiTM_audit_doctoral_20260628_reviewed_v1.json",
+      "fixturePath": "audits/UiTM_audit_doctoral_20260628_reviewed_v1.json.gz",
+      "bytes": 895644,
+      "compressedBytes": 38418,
+      "sha256": "be81ebef2aa4521e94ca0efe3e5509a9bfa0132f787f3e108724392dacfa0821"
+    },
+    {
+      "sourcePath": "audits/UiTM_audit_master_20260628_reviewed_v3.json",
+      "fixturePath": "audits/UiTM_audit_master_20260628_reviewed_v3.json.gz",
+      "bytes": 2462520,
+      "compressedBytes": 136141,
+      "sha256": "be3d9b419ea96f7508d8e7fc17bfd5fe422836443b91eada6d3405d61bc55e65"
+    },
+    {
+      "sourcePath": "audits/UiTM_audit_undergraduate_20260627_reviewed_v4.json",
+      "fixturePath": "audits/UiTM_audit_undergraduate_20260627_reviewed_v4.json.gz",
+      "bytes": 1625352,
+      "compressedBytes": 60958,
+      "sha256": "f78d8ac85f3889080ad8cb22a8c047625912a23593b5a247e14a8067e4a90dfe"
+    },
+    {
+      "sourcePath": "data/imports/iiu/2026-06-20/iiu-20260620/02_official_source_registry.json",
+      "fixturePath": "data/imports/iiu/2026-06-20/iiu-20260620/02_official_source_registry.json.gz",
+      "bytes": 143694,
+      "compressedBytes": 16068,
+      "sha256": "ad34e0331af2996f37426df977f8f92b86f0f149f09636f43c1c4862a4ce10b9"
+    },
+    {
+      "sourcePath": "data/imports/iiu/2026-06-20/iiu-20260620/08_candidate_dataset.json",
+      "fixturePath": "data/imports/iiu/2026-06-20/iiu-20260620/08_candidate_dataset.json.gz",
+      "bytes": 2272882,
+      "compressedBytes": 166777,
+      "sha256": "f80836efdeef927dcab59db254e9a3cb9402768a1ec9a513f13b22863dfe4324"
+    },
+    {
+      "sourcePath": "data/imports/msu/2026-06-30/msu-2026-tuition-web-search-report.json",
+      "fixturePath": "data/imports/msu/2026-06-30/msu-2026-tuition-web-search-report.json.gz",
+      "bytes": 233959,
+      "compressedBytes": 11187,
+      "sha256": "70a01ab50a0a7612aaa54cdad6397f1989c907898054416759d0fb0a04cb3010"
+    },
+    {
+      "sourcePath": "data/imports/msu/2026-06-30/msu-postgraduate-2026-authorized-fee-candidates.json",
+      "fixturePath": "data/imports/msu/2026-06-30/msu-postgraduate-2026-authorized-fee-candidates.json.gz",
+      "bytes": 61569,
+      "compressedBytes": 5582,
+      "sha256": "36b8c7214376bed3de124fe2a017f4a5443c6e337731740cf354c59419034b4b"
+    },
+    {
+      "sourcePath": "data/imports/mum/2026-06-19/official-audit/08_candidate_dataset.json",
+      "fixturePath": "data/imports/mum/2026-06-19/official-audit/08_candidate_dataset.json.gz",
+      "bytes": 1813006,
+      "compressedBytes": 108348,
+      "sha256": "af0e9436f2184771529e09b8e6ecaddf63b28521621654024c3a572d304d08ce"
+    },
+    {
+      "sourcePath": "data/imports/sunway/2026-06-20/sunway-20260620/08_candidate_dataset.json",
+      "fixturePath": "data/imports/sunway/2026-06-20/sunway-20260620/08_candidate_dataset.json.gz",
+      "bytes": 1959761,
+      "compressedBytes": 163051,
+      "sha256": "dd3747c9e5a6a581701223998d497435386b9599f6d5df75d1d49f6fd03bfcbb"
+    },
+    {
+      "sourcePath": "data/imports/tsu/2026-06-20/tsu-20260620/08_candidate_dataset.json",
+      "fixturePath": "data/imports/tsu/2026-06-20/tsu-20260620/08_candidate_dataset.json.gz",
+      "bytes": 6356536,
+      "compressedBytes": 485778,
+      "sha256": "570d8a300938bac2fdd64e6af24abf20a732fa0d7b39944b9fce837a7e4b8b99"
+    },
+    {
+      "sourcePath": "data/imports/ucsi/2026-06-20/official-audit/08_candidate_dataset.json",
+      "fixturePath": "data/imports/ucsi/2026-06-20/official-audit/08_candidate_dataset.json.gz",
+      "bytes": 1475634,
+      "compressedBytes": 128517,
+      "sha256": "163c028c69a984019a1db87c2f6ff4b2e24d128bd885add0172e8697e39d90a3"
+    },
+    {
+      "sourcePath": "data/imports/unm/2026-06-19/official-audit/08_candidate_dataset.json",
+      "fixturePath": "data/imports/unm/2026-06-19/official-audit/08_candidate_dataset.json.gz",
+      "bytes": 1785029,
+      "compressedBytes": 118590,
+      "sha256": "1b839a1e1d93bd4ca35ff2170b39e9c48e06f41680a520395b9a642a0048fe69"
+    },
+    {
+      "sourcePath": "data/imports/utm/2026-06-18/phd/candidate-dataset.json",
+      "fixturePath": "data/imports/utm/2026-06-18/phd/candidate-dataset.json.gz",
+      "bytes": 619430,
+      "compressedBytes": 14930,
+      "sha256": "e7c436f043dc0565dbbc60d4e2139b53b6c5d5cff287c204acb46ea16c8a9e31"
+    },
+    {
+      "sourcePath": "data/imports/utm/2026-06-18/phd/skill-workflow-audit/04_official_row_disposal.json",
+      "fixturePath": "data/imports/utm/2026-06-18/phd/skill-workflow-audit/04_official_row_disposal.json.gz",
+      "bytes": 33190,
+      "compressedBytes": 2041,
+      "sha256": "6fffc198f1f31fda2379c9496cf14f00d2673afe420c774f25ed3af971646fca"
+    },
+    {
+      "sourcePath": "data/imports/utp/2026-06-19/official-audit/08_candidate_dataset.json",
+      "fixturePath": "data/imports/utp/2026-06-19/official-audit/08_candidate_dataset.json.gz",
+      "bytes": 757132,
+      "compressedBytes": 59860,
+      "sha256": "b9e8d31fa849a07ef7b7114e0c7ae5a8e5d374b9e855df0d29155255aaa99057"
+    }
+  ]
+}
