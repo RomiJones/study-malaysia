@@ -727,8 +727,8 @@ export function validateUtmMasterCandidate(dataset: UTMMasterCandidateDataset) {
     if (!record.officialSourceUrl) errors.push(`Row ${record.ordinal} has no official source URL.`);
     if (!record.fee.officialFeeSourceUrl) errors.push(`Row ${record.ordinal} has no official fee source URL.`);
     if (!(record.durationYears > 0)) errors.push(`Row ${record.ordinal} has no standardized duration years.`);
-    if (!/^Standardized duration:\s*1\.5 years\b/i.test(record.durationOfficial)) {
-      errors.push(`Row ${record.ordinal} duration is not standardized to 1.5 years.`);
+    if (Math.abs(record.durationYears - 1.5) > 0.01 || !/(?:3\s*semesters?|1\.5\s*years?)/i.test(record.durationOfficial)) {
+      errors.push(`Row ${record.ordinal} has no official evidence for the 1.5-year duration.`);
     }
     if (record.fee.status === "verified-official-total" && !record.fee.tuitionAmount) {
       errors.push(`Row ${record.ordinal} verified official total fee has no amount.`);

@@ -25,7 +25,10 @@ export const DEFAULT_UTM_UNDERGRADUATE_CANDIDATE_PATH = resolve(
 const verifiedAt = "2026-06-17";
 const cnyPerMyr = 1.55;
 
-type UTMCurrentCycleStatus = "ready-for-detail-enrichment" | "current-cycle-not-open";
+type UTMCurrentCycleStatus =
+  | "ready-for-detail-enrichment"
+  | "current-cycle-not-open"
+  | "international-unavailable-current-cycle";
 
 export interface UTMProgrammeCandidate {
   ordinal: number;
@@ -1163,7 +1166,9 @@ function isCurrentCycleReady(candidate: UTMProgrammeCandidate) {
 }
 
 function isCurrentCycleNotOpen(candidate: UTMProgrammeCandidate) {
-  return candidate.canonicalDecision.currentCycleStatus === "current-cycle-not-open";
+  return ["current-cycle-not-open", "international-unavailable-current-cycle"].includes(
+    candidate.canonicalDecision.currentCycleStatus
+  );
 }
 
 function chinaRequirementForCandidate(candidate: UTMProgrammeCandidate) {

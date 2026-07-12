@@ -2,7 +2,6 @@ export interface SeedAdminUser {
   username: string;
   email: string;
   displayName: string;
-  password: string;
   isActive?: boolean;
   dataScope?: "all" | "assigned" | "created";
   managedUniversityIds?: number[];
@@ -57,6 +56,14 @@ export interface SeedDictionaryItem {
   status?: "enabled" | "disabled";
   sortOrder: number;
   extra?: Record<string, unknown>;
+}
+
+export function requireSeedAdminPassword(env: NodeJS.ProcessEnv = process.env) {
+  const password = env.STUDYMY_SEED_ADMIN_PASSWORD?.trim();
+  if (!password || password.length < 12) {
+    throw new Error("STUDYMY_SEED_ADMIN_PASSWORD must be set to at least 12 characters before seeding admin users.");
+  }
+  return password;
 }
 
 export const seedPermissions: SeedPermission[] = [
@@ -215,7 +222,6 @@ export const seedAdminUsers: SeedAdminUser[] = [
     username: "superadmin",
     email: "superadmin@studymy.local",
     displayName: "系统超级管理员",
-    password: "Admin123!",
     dataScope: "all",
     roles: ["super-admin"]
   },
@@ -223,7 +229,6 @@ export const seedAdminUsers: SeedAdminUser[] = [
     username: "editor",
     email: "editor@studymy.local",
     displayName: "内容运营",
-    password: "Editor123!",
     dataScope: "assigned",
     roles: ["content-editor"]
   },
@@ -231,7 +236,6 @@ export const seedAdminUsers: SeedAdminUser[] = [
     username: "manager",
     email: "manager@studymy.local",
     displayName: "业务主管",
-    password: "Manager123!",
     dataScope: "all",
     roles: ["application-manager"]
   },
@@ -239,7 +243,6 @@ export const seedAdminUsers: SeedAdminUser[] = [
     username: "counselor",
     email: "counselor@studymy.local",
     displayName: "申请顾问",
-    password: "Counselor123!",
     dataScope: "assigned",
     roles: ["counselor"]
   },
@@ -247,7 +250,6 @@ export const seedAdminUsers: SeedAdminUser[] = [
     username: "auditor",
     email: "auditor@studymy.local",
     displayName: "材料审核员",
-    password: "Auditor123!",
     dataScope: "assigned",
     roles: ["material-auditor"]
   },
@@ -255,7 +257,6 @@ export const seedAdminUsers: SeedAdminUser[] = [
     username: "visa",
     email: "visa@studymy.local",
     displayName: "签证专员",
-    password: "Visa123!",
     dataScope: "assigned",
     roles: ["visa-specialist"]
   }

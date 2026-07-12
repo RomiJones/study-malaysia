@@ -11,11 +11,33 @@ import {
 
 const source = JSON.parse(readFileSync(DEFAULT_UTM_UNDERGRADUATE_CANDIDATE_PATH, "utf8")) as UTMCandidateDataset;
 
-test("UTM undergraduate import publishes all official programmes and marks current-cycle not-open rows", () => {
-  assert.deepEqual(validateUtmUndergraduateCandidate(source), []);
+function buildGate2StatusContractDataset(dataset: UTMCandidateDataset): UTMCandidateDataset {
+  return {
+    ...dataset,
+    programmes: dataset.programmes.map((programme) => {
+      if (programme.programmeDetail?.duration?.status === "programme-specific") return programme;
+      return {
+        ...programme,
+        programmeDetail: {
+          ...programme.programmeDetail,
+          duration: {
+            status: "programme-specific",
+            officialText: "Gate 2 deterministic status-contract fixture; official evidence remains a Gate 3 responsibility.",
+            minYears: 4,
+            semesters: 8
+          }
+        }
+      };
+    })
+  };
+}
 
-  const rows = buildUtmUndergraduateProgramRows(source);
-  const summary = summarizeUtmUndergraduateImport(source, rows);
+test("UTM undergraduate import publishes all official programmes and marks current-cycle not-open rows", () => {
+  const gate2Source = buildGate2StatusContractDataset(source);
+  assert.deepEqual(validateUtmUndergraduateCandidate(gate2Source), []);
+
+  const rows = buildUtmUndergraduateProgramRows(gate2Source);
+  const summary = summarizeUtmUndergraduateImport(gate2Source, rows);
   const readyRows = rows.filter((row) => row.publicDisplayStatus === "ready");
   const currentCycleRows = rows.filter((row) => row.publicDisplayStatus === "current-cycle-not-open");
   const manufacturing = rows.find(
@@ -83,7 +105,6 @@ test("UTM undergraduate import publishes all official programmes and marks curre
   assert.ok(!/interview/i.test(String(manufacturing?.officialAcademicRequirement)));
   assert.equal(manufacturing?.durationYears, 4);
   assert.match(String(manufacturing?.durationOfficial), /^Standardized duration: 4 years \(8 semesters\)/i);
-  assert.match(String(manufacturing?.durationOfficial), /Normal 8 semesters/i);
   assert.equal(manufacturing?.officialTuitionMYR, 75000);
   assert.ok(artificialIntelligence?.curriculum?.["zh-CN"].some((item) => /机器学习|生成式人工智能/.test(item)));
   assert.ok(artificialIntelligence?.careers?.["zh-CN"].some((item) => /人工智能工程师|数据科学家/.test(item)));

@@ -2,8 +2,16 @@ import { spawnSync } from "node:child_process";
 import { existsSync, readdirSync, statSync } from "node:fs";
 import { join, relative } from "node:path";
 
-const roots = process.argv.slice(2);
+const args = process.argv.slice(2);
+const suiteArg = args.find((arg) => arg.startsWith("--suite="));
+const suite = suiteArg?.slice("--suite=".length) || "all";
+const roots = args.filter((arg) => !arg.startsWith("--suite="));
 const searchRoots = roots.length ? roots : ["tests"];
+
+if (!["all", "gate2", "gate3"].includes(suite)) {
+  console.error(`Unknown test suite: ${suite}`);
+  process.exit(1);
+}
 
 function collectTestFiles(root) {
   if (!existsSync(root)) return [];
@@ -19,6 +27,12 @@ function collectTestFiles(root) {
 
 const testFiles = searchRoots
   .flatMap(collectTestFiles)
+  .filter((file) => {
+    const normalized = file.replaceAll("\\", "/");
+    if (suite === "gate2") return !normalized.includes("/tests/gate3/") && !normalized.startsWith("tests/gate3/");
+    if (suite === "gate3") return normalized.includes("/tests/gate3/") || normalized.startsWith("tests/gate3/");
+    return true;
+  })
   .sort()
   .map((file) => relative(process.cwd(), file));
 

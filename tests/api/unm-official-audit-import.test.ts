@@ -34,7 +34,8 @@ test("UNM official audit import publishes all official rows without merging PGCe
     master: 28,
     "postgraduate-certificate": 1,
     "postgraduate-diploma": 1,
-    phd: 15
+    phd: 15,
+    diploma: 0
   });
   assert.equal(summary.readyRows, 81);
   assert.equal(summary.needsReviewRows, 0);

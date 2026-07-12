@@ -149,13 +149,6 @@ export interface SeedContentBlock {
 
 export const seedUsers: SeedUser[] = [
   {
-    role: "admin",
-    method: "email",
-    account: "admin@studymy.local",
-    password: "Admin123!",
-    displayName: "StudyMY Admin"
-  },
-  {
     role: "student",
     method: "email",
     account: "demo@studymy.local",

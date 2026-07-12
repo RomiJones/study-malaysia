@@ -28,7 +28,7 @@ import {
   type RecommendationProfileSnapshot,
   type RecommendationResultSnapshot
 } from "./entities.js";
-import { seedAdminUsers, seedConfigs, seedDictionaryItems, seedMenus, seedPermissions, seedRoles } from "./admin-seed.js";
+import { requireSeedAdminPassword, seedAdminUsers, seedConfigs, seedDictionaryItems, seedMenus, seedPermissions, seedRoles } from "./admin-seed.js";
 import { seedContentBlocks, seedPrograms, seedUniversities, seedUsers } from "./seed-data.js";
 import { loadEnvFiles } from "../config/env.js";
 
@@ -156,6 +156,7 @@ export function buildDemoRecommendationSeedPayload(input: DemoRecommendationSeed
 }
 
 async function run() {
+  const seedAdminPassword = requireSeedAdminPassword();
   const dataSource = new DataSource({
     type: "mysql",
     host: process.env.MYSQL_HOST || "127.0.0.1",
@@ -431,7 +432,7 @@ async function run() {
       username: item.username,
       email: item.email,
       displayName: item.displayName,
-      passwordHash: await hash(item.password, 10),
+      passwordHash: await hash(seedAdminPassword, 10),
       isActive: item.isActive ?? true,
       dataScope: item.dataScope || "assigned",
       managedUniversityIds: item.managedUniversityIds || [],

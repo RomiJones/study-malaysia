@@ -841,7 +841,7 @@ async function saveCaseMessage() {
 async function downloadMaterial(material: any, versionId?: string, fileName?: string) {
   if (!currentId.value || !material.hasFile) return;
   const response = await adminApi.downloadApplicationMaterial(currentId.value, material.key, versionId);
-  const blob = new Blob([response.data], { type: response.headers?.["content-type"] || "application/octet-stream" });
+  const blob = new Blob([response.data], { type: headerContentType(response) || "application/octet-stream" });
   const url = URL.createObjectURL(blob);
   const link = document.createElement("a");
   link.href = url;

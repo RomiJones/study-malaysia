@@ -1,21 +1,22 @@
 ﻿import { createRouter, createWebHistory } from "vue-router";
 import { useAuthStore } from "@/stores/auth";
-import LoginPage from "@/pages/LoginPage.vue";
-import DashboardPage from "@/pages/DashboardPage.vue";
-import AdminUsersPage from "@/pages/AdminUsersPage.vue";
-import RolesPage from "@/pages/RolesPage.vue";
-import PermissionsPage from "@/pages/PermissionsPage.vue";
-import MenusPage from "@/pages/MenusPage.vue";
-import UniversitiesPage from "@/pages/UniversitiesPage.vue";
-import ProgramsPage from "@/pages/ProgramsPage.vue";
-import FeeReviewPage from "@/pages/FeeReviewPage.vue";
-import ContentPage from "@/pages/ContentPage.vue";
-import ApplicationsPage from "@/pages/ApplicationsPage.vue";
-import SettingsPage from "@/pages/SettingsPage.vue";
-import NotionTasksPage from "@/pages/NotionTasksPage.vue";
-import LocalizationPage from "@/pages/LocalizationPage.vue";
-import SmartRecommendationsPage from "@/pages/SmartRecommendationsPage.vue";
 import AdminLayout from "@/layouts/AdminLayout.vue";
+
+const LoginPage = () => import("@/pages/LoginPage.vue");
+const DashboardPage = () => import("@/pages/DashboardPage.vue");
+const AdminUsersPage = () => import("@/pages/AdminUsersPage.vue");
+const RolesPage = () => import("@/pages/RolesPage.vue");
+const PermissionsPage = () => import("@/pages/PermissionsPage.vue");
+const MenusPage = () => import("@/pages/MenusPage.vue");
+const UniversitiesPage = () => import("@/pages/UniversitiesPage.vue");
+const ProgramsPage = () => import("@/pages/ProgramsPage.vue");
+const FeeReviewPage = () => import("@/pages/FeeReviewPage.vue");
+const ContentPage = () => import("@/pages/ContentPage.vue");
+const ApplicationsPage = () => import("@/pages/ApplicationsPage.vue");
+const SettingsPage = () => import("@/pages/SettingsPage.vue");
+const NotionTasksPage = () => import("@/pages/NotionTasksPage.vue");
+const LocalizationPage = () => import("@/pages/LocalizationPage.vue");
+const SmartRecommendationsPage = () => import("@/pages/SmartRecommendationsPage.vue");
 
 const router = createRouter({
   history: createWebHistory(),

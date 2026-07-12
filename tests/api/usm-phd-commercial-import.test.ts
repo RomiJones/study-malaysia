@@ -16,9 +16,9 @@ test("USM doctoral source keeps all 95 official identities and publishes the aud
   const rows = buildUsmPhdRows(source);
   const summary = summarizeUsmPhdRows(rows);
   assert.equal(rows.length, 95);
-  assert.equal(summary.ready, 95);
+  assert.equal(summary.ready, 93);
   assert.equal(summary.needsReview, 0);
-  assert.equal(summary.notAvailableForInternational, 0);
+  assert.equal(summary.notAvailableForInternational, 2);
   assert.equal(summary.feeMatched, 13);
   assert.equal(summary.feeRateVerified, 0);
   assert.equal(summary.feeCalculated, 62);
@@ -66,17 +66,17 @@ test("USM doctoral source keeps all 95 official identities and publishes the aud
 test("USM doctoral importer preserves unpublished fields without inventing values", () => {
   const rows = buildUsmPhdRows(source);
   const dba = rows.find((row) => row.nameEnOfficial?.includes("BUSINESS ADMINISTRATION (DBA)"));
-  const curriculum = rows.find((row) => row.nameEnOfficial === "DOCTOR OF EDUCATION IN CURRICULUM & INSTRUCTION");
-  const tesol = rows.find((row) => row.nameEnOfficial === "DOCTOR OF EDUCATION IN TESOL");
+  const curriculum = rows.find((row) => row.nameEnOfficial?.startsWith("DOCTOR OF EDUCATION IN CURRICULUM & INSTRUCTION"));
+  const tesol = rows.find((row) => row.nameEnOfficial?.startsWith("DOCTOR OF EDUCATION IN TESOL"));
   const neuroscience = rows.find((row) => row.nameEnOfficial === "DOCTOR OF NEUROSCIENCE");
   const research = rows.find((row) => row.studyMode === "research" && row.tuitionCurrency === "USD");
   const offshore = rows.find((row) => String(row.nameEnOfficial).includes("OFFSHORE"));
   assert.equal(dba?.durationYears, 3.5);
-  assert.equal(dba?.durationOfficial, "Full time: 7 semesters to 10 semesters Part time: 10 semesters to 14 semesters");
+  assert.equal(dba?.durationOfficial, "Full-Time Duration: 3.5-5 years; Part-Time Duration: 4.5-7 years");
   assert.equal(dba?.publicDisplayStatus, "ready");
-  assert.equal(curriculum?.publicDisplayStatus, "ready");
+  assert.equal(curriculum?.publicDisplayStatus, "not-available-for-international");
   assert.equal(curriculum?.tuitionAmount, 18000);
-  assert.equal(tesol?.publicDisplayStatus, "ready");
+  assert.equal(tesol?.publicDisplayStatus, "not-available-for-international");
   assert.equal(tesol?.tuitionAmount, 18000);
   assert.equal(neuroscience?.durationYears, 3);
   assert.equal(neuroscience?.publicDisplayStatus, "ready");

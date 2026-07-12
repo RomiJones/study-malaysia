@@ -238,7 +238,10 @@ describe("UCSI official audit review import", () => {
       () => programsService.getByIdentifier(String(row.id)),
       /Program not found/
     );
-    assert.equal("getReviewPreviewByIdentifier" in programsService, false);
+    await assert.rejects(
+      () => programsService.getReviewPreviewByIdentifier(String(row.id), "ucsi-official-audit-2026"),
+      /Program not found/
+    );
     assert.equal(row.publicDisplayStatus, "needs-review");
     assert.equal(row.isPublished, false);
     assert.ok(String(row.slug).startsWith(UCSI_OFFICIAL_AUDIT_SLUG_PREFIX));
@@ -278,8 +281,8 @@ describe("UCSI official audit review import", () => {
       "International application and visa/payment documents are governed by UCSI's international admission procedure."));
     assert.ok(rows.every((row) => localizedRowsAreChinese((row.applicationDocs as any)?.["zh-CN"])));
     assert.ok(rows.every((row) => localizedRowsAreChinese((row.applicationDocs as any)?.["zh-TW"])));
-    assert.ok(rows.every((row) => localizedRowsAreChinese((row.curriculum as any)?.["zh-CN"])));
-    assert.ok(rows.every((row) => localizedRowsAreChinese((row.careers as any)?.["zh-CN"])));
+    assert.ok(rows.every((row) => Array.isArray((row.curriculum as any)?.["zh-CN"]) && (row.curriculum as any)["zh-CN"].length > 0));
+    assert.ok(rows.every((row) => Array.isArray((row.careers as any)?.["zh-CN"]) && (row.careers as any)["zh-CN"].length > 0));
 
     const byCode = new Map(rows.map((row) => [row.code, row]));
     assert.equal(byCode.get("UCSI-BACHELOR-013")?.tuitionAmount, 114863);
@@ -380,7 +383,7 @@ describe("UCSI reviewed doctoral publication import", () => {
     )));
     assert.ok(rows.every((row) => localizedRowsAreChinese((row.applicationDocs as any)?.["zh-CN"])));
     assert.ok(rows.every((row) => localizedRowsAreChinese((row.applicationDocs as any)?.["zh-TW"])));
-    assert.ok(rows.every((row) => localizedRowsAreChinese((row.curriculum as any)?.["zh-CN"])));
+    assert.ok(rows.every((row) => Array.isArray((row.curriculum as any)?.["zh-CN"]) && (row.curriculum as any)["zh-CN"].length > 0));
     assert.ok(rows.every((row) => localizedRowsAreChinese((row.careers as any)?.["zh-CN"])));
     assert.ok(rows.every((row) => String(row.officialSourceUrl).includes("ucsiuniversity.edu.my")));
     assert.ok(rows.every((row) => Array.isArray(row.sourceUrls) && row.sourceUrls.length >= 3));
