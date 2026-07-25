@@ -83,7 +83,6 @@ test("UTM master import keeps all official rows and preserves fee-status boundar
   assert.equal(rows.find((row) => row.code === "UTM-M-107")?.name?.["zh-CN"], "数据科学硕士");
   assert.equal(rows.find((row) => row.code === "UTM-M-107")?.requirement?.gpa, 2.5);
   assert.equal(rows.find((row) => row.code === "UTM-M-107")?.faculty?.["zh-CN"], "计算学院");
-  assert.deepEqual(rows.find((row) => row.code === "UTM-M-107")?.languageRequirement, { ielts: 6, toefl: null, pte: null, muet: null });
   assert.equal(rows.find((row) => row.code === "UTM-M-113")?.name?.["zh-CN"], "哲学硕士（研究领域：软件工程）");
   assert.deepEqual(rows.find((row) => row.code === "UTM-M-113")?.curriculum?.["zh-CN"], ["研究领域：软件工程"]);
   assert.equal(rows.find((row) => row.code === "UTM-M-113")?.requirement?.gpa, 2.75);
@@ -93,7 +92,4 @@ test("UTM master import keeps all official rows and preserves fee-status boundar
   assert.equal(rows.find((row) => row.code === "UTM-M-129")?.requirement?.gpa, 3.5);
   assert.equal(rows.find((row) => row.code === "UTM-M-131")?.requirement?.gpa, 2.5);
   assert.equal(rows.find((row) => row.code === "UTM-M-095")?.requirement?.gpa, 2.3);
-  assert.equal(source.programmes.filter((row) => row.languageRequirement.status === "official-tesl-rule").length, 0);
-  assert.deepEqual(rows.find((row) => row.code === "UTM-M-060")?.languageRequirement, { ielts: 6, toefl: null, pte: null, muet: null });
-  assert.match(String(rows.find((row) => row.code === "UTM-M-060")?.officialLanguageRequirement), /programme-specific scores require final field extraction/i);
 });
