@@ -1,0 +1,60 @@
+{
+  "status": "review-required",
+  "scope": {
+    "universityCode": "TSU",
+    "collectionScope": "full",
+    "levels": [
+      "bachelor",
+      "master",
+      "phd"
+    ],
+    "applicantScope": "international",
+    "academicSession": "2026"
+  },
+  "levels": [
+    "bachelor",
+    "master",
+    "phd"
+  ],
+  "authorization": "collect",
+  "counts": {
+    "directoryOccurrences": 95,
+    "uniqueOfficialEntries": 95,
+    "canonicalProgrammes": 89,
+    "ready": 0,
+    "needsReview": 89,
+    "notAvailableForInternational": 0,
+    "byLevel": {
+      "bachelor": 46,
+      "master": 28,
+      "phd": 15
+    },
+    "outOfScopeRows": 6
+  },
+  "coverageKeys": [
+    "academicPerformanceRequirement",
+    "academicRequirement",
+    "applicationDocuments",
+    "campus",
+    "deepSourceFieldExploration",
+    "duration",
+    "evidence",
+    "faculty",
+    "fee",
+    "identity",
+    "institutionProfile",
+    "intake",
+    "internationalEligibility",
+    "languageRequirement",
+    "languageScores",
+    "localization",
+    "studentFacingContentHygiene",
+    "studyMode"
+  ],
+  "sourceCount": 5,
+  "artifactCount": 15,
+  "blockingExceptionCount": 0,
+  "reviewExceptionCount": 2,
+  "issueCounts": {},
+  "issues": []
+}

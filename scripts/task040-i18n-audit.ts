@@ -139,11 +139,44 @@ function checkRuntimeDynamicTextLocalization() {
       }
     }
 
+    for (const sample of programIntakeEnglishFallbackSamples) {
+      const formatted = formatProgramIntake({
+        publicDisplayStatus: "ready",
+        officialIntake: sample,
+        intakeMonths: []
+      } as any, undefined, locale);
+      const fallback = officialPageFallback(locale);
+      if (formatted !== fallback) {
+        failures.push(`${locale} should fall back for incomplete English program intake text: ${sample}; received: ${formatted}`);
+      }
+    }
+
     for (const sample of localizedAcademicTextSamples) {
       const formatted = normalizeAcademicText(sample, undefined, locale);
       const fallback = officialPageFallback(locale);
-      if (formatted !== fallback && hasAcademicEnglishResidue(formatted, locale)) {
+      if (formatted === fallback) {
+        failures.push(`${locale} should localize academic text sample instead of fallback: ${sample}`);
+      } else if (hasAcademicEnglishResidue(formatted, locale)) {
         failures.push(`${locale} academic text keeps English residue: ${sample}; received: ${formatted}`);
+      }
+    }
+
+    for (const sample of programIntakeLocalizationSamples) {
+      const rawSample = sample.officialIntake || (sample.intakeMonths || []).join(" / ");
+      const normalized = normalizeAcademicText(rawSample, undefined, locale);
+      const expected = sample.expected[locale];
+      if (normalized !== expected) {
+        failures.push(`${locale} should normalize program intake sample ${sample.description}; received: ${normalized}`);
+      }
+      const formatted = formatProgramIntake({
+        publicDisplayStatus: "ready",
+        officialIntake: sample.officialIntake || "",
+        intakeMonths: sample.intakeMonths || []
+      } as any, undefined, locale);
+      if (formatted !== expected) {
+        failures.push(`${locale} should localize program intake sample ${sample.description}; received: ${formatted}`);
+      } else if (hasAcademicEnglishResidue(formatted, locale)) {
+        failures.push(`${locale} program intake keeps English residue: ${sample.description}; received: ${formatted}`);
       }
     }
 
@@ -159,8 +192,9 @@ function checkRuntimeDynamicTextLocalization() {
     if (formatProgramIntake(academicProgram, undefined, locale) !== fallback) {
       failures.push(`${locale} formatProgramIntake still exposes ordinary English academic text`);
     }
-    if (formatProgramDuration(academicProgram, locale) !== fallback) {
-      failures.push(`${locale} formatProgramDuration still exposes ordinary English academic text`);
+    const formattedDuration = formatProgramDuration(academicProgram, locale);
+    if (formattedDuration === fallback || hasAcademicEnglishResidue(formattedDuration, locale)) {
+      failures.push(`${locale} formatProgramDuration did not produce a clean localized duration`);
     }
     if (formatProgramLanguage(academicProgram, undefined, locale) !== fallback) {
       failures.push(`${locale} formatProgramLanguage still exposes ordinary English academic text`);
@@ -173,6 +207,22 @@ function checkRuntimeDynamicTextLocalization() {
     }
   }
 
+  for (const sample of programIntakeLocalizationSamples) {
+    const rawSample = sample.officialIntake || (sample.intakeMonths || []).join(" / ");
+    const normalized = normalizeAcademicText(rawSample, undefined, "en");
+    if (normalized !== sample.expected.en) {
+      failures.push(`en should normalize program intake sample ${sample.description}; received: ${normalized}`);
+    }
+    const formatted = formatProgramIntake({
+      publicDisplayStatus: "ready",
+      officialIntake: sample.officialIntake || "",
+      intakeMonths: sample.intakeMonths || []
+    } as any, undefined, "en");
+    if (formatted !== sample.expected.en) {
+      failures.push(`en should keep program intake sample ${sample.description}; received: ${formatted}`);
+    }
+  }
+
   const traditionalFormatted = formatRuntimeDisplayText(runtimeTraditionalTextSample, undefined, "zh-TW");
   const simplifiedResidues = ["翻译", "计划", "准备"].filter((sample) => traditionalFormatted.includes(sample));
   if (simplifiedResidues.length) {
@@ -182,7 +232,7 @@ function checkRuntimeDynamicTextLocalization() {
   assert(failures.length === 0, `runtime dynamic text localization failed:\n${failures.join("\n")}`);
   return {
     locales: nonEnglishLocales,
-    sampleCount: runtimeDynamicTextSamples.length + runtimeEnglishFallbackSamples.length + academicEnglishFallbackSamples.length + localizedAcademicTextSamples.length + 4,
+    sampleCount: runtimeDynamicTextSamples.length + runtimeEnglishFallbackSamples.length + academicEnglishFallbackSamples.length + programIntakeEnglishFallbackSamples.length + localizedAcademicTextSamples.length + programIntakeLocalizationSamples.length + 4,
     leakedEnglishRuntimeTextCount: 0
   };
 }
@@ -373,8 +423,16 @@ const runtimeEnglishFallbackSamples = [
   "March requirements are subject to change."
 ];
 
+const programIntakeEnglishFallbackSamples = [
+  "October intake only",
+  "October intake applications",
+  "February intake deadline",
+  "Applications for October intake"
+];
+
 const academicEnglishFallbackSamples = [
   "March requirements are subject to change.",
+  ...programIntakeEnglishFallbackSamples,
   "Full-Time Duration: 6 Semesters, (Clinical) — official page title is Doctor of Public Health (Mixed-Mode)",
   "Language requirements are subject to official review."
 ];
@@ -386,6 +444,57 @@ const localizedAcademicTextSamples = [
   "Coursework",
   "Mixed-Mode",
   "Rolling"
+];
+
+const monthProgramIntakeAuditSamples: Array<{
+  month: string;
+  expected: Record<SupportedLocale, string>;
+}> = [
+  { month: "January", expected: { en: "January", ms: "Januari", "zh-CN": "1月", "zh-TW": "1月" } },
+  { month: "February", expected: { en: "February", ms: "Februari", "zh-CN": "2月", "zh-TW": "2月" } },
+  { month: "March", expected: { en: "March", ms: "Mac", "zh-CN": "3月", "zh-TW": "3月" } },
+  { month: "April", expected: { en: "April", ms: "April", "zh-CN": "4月", "zh-TW": "4月" } },
+  { month: "May", expected: { en: "May", ms: "Mei", "zh-CN": "5月", "zh-TW": "5月" } },
+  { month: "June", expected: { en: "June", ms: "Jun", "zh-CN": "6月", "zh-TW": "6月" } },
+  { month: "July", expected: { en: "July", ms: "Julai", "zh-CN": "7月", "zh-TW": "7月" } },
+  { month: "August", expected: { en: "August", ms: "Ogos", "zh-CN": "8月", "zh-TW": "8月" } },
+  { month: "September", expected: { en: "September", ms: "September", "zh-CN": "9月", "zh-TW": "9月" } },
+  { month: "October", expected: { en: "October", ms: "Oktober", "zh-CN": "10月", "zh-TW": "10月" } },
+  { month: "November", expected: { en: "November", ms: "November", "zh-CN": "11月", "zh-TW": "11月" } },
+  { month: "December", expected: { en: "December", ms: "Disember", "zh-CN": "12月", "zh-TW": "12月" } }
+];
+
+const programIntakeLocalizationSamples: Array<{
+  description: string;
+  officialIntake?: string;
+  intakeMonths?: string[];
+  expected: Record<SupportedLocale, string>;
+}> = [
+  {
+    description: "February intake",
+    officialIntake: "February intake",
+    expected: { en: "February intake", ms: "Ambilan Februari", "zh-CN": "2月入学", "zh-TW": "2月入學" }
+  },
+  {
+    description: "October intake",
+    officialIntake: "October intake",
+    expected: { en: "October intake", ms: "Ambilan Oktober", "zh-CN": "10月入学", "zh-TW": "10月入學" }
+  },
+  {
+    description: "Multiple intakes",
+    officialIntake: "Multiple intakes",
+    expected: { en: "Multiple intakes", ms: "Beberapa ambilan", "zh-CN": "多批次入学", "zh-TW": "多批次入學" }
+  },
+  {
+    description: "January / February intake months",
+    intakeMonths: ["January", "February"],
+    expected: { en: "January / February", ms: "Januari / Februari", "zh-CN": "1月 / 2月", "zh-TW": "1月 / 2月" }
+  },
+  ...monthProgramIntakeAuditSamples.map((sample) => ({
+    description: `${sample.month} intake month`,
+    intakeMonths: [sample.month],
+    expected: sample.expected
+  }))
 ];
 
 const runtimeTraditionalTextSample = "中国学生需准备研究计划、公证翻译和补充材料。";

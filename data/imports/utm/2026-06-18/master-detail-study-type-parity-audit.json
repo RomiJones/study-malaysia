@@ -1,0 +1,60 @@
+{
+  "institution": "Universiti Teknologi Malaysia (UTM)",
+  "level": "master",
+  "auditedAt": "2026-06-18",
+  "scope": "153 UTM master programmes currently published through local API and detail endpoints",
+  "rule": "Display primary study type first (Coursework, Research, Mixed Mode), then secondary study arrangement such as Open and Distance Learning, full-time, or part-time.",
+  "summary": {
+    "totalRows": 153,
+    "modeCounts": {
+      "Coursework / Open and Distance Learning": 24,
+      "Research": 46,
+      "Coursework": 77,
+      "Mixed Mode": 6
+    },
+    "rowsWithSecondaryStudyArrangement": 24,
+    "scheduleOnlyRows": 0,
+    "rowsWithoutTeachingType": 0,
+    "rowsWithoutTuitionDisplay": 0,
+    "listDetailMismatches": 0
+  },
+  "examples": {
+    "educationChemistryOdl": {
+      "code": "UTM-M-073",
+      "slug": "utm-master-official-2026-073-master-in-education-specialization-chemistry",
+      "nameEnOfficial": "Master in Education Specialization : Chemistry",
+      "studyMode": "Coursework / Open and Distance Learning",
+      "interpretedTeachingType": "Coursework",
+      "interpretedStudyArrangement": "Open and Distance Learning",
+      "tuitionDisplay": "MYR 34,650 calculated total tuition",
+      "officialFeeAuditStatus": "calculated-from-official-rate",
+      "intakeMonths": [
+        "February",
+        "September"
+      ],
+      "gpa": 2.5
+    },
+    "chemistryEducationResearch": {
+      "code": "UTM-M-080",
+      "slug": "utm-master-official-2026-080-master-of-philosophy-field-of-research-chemistry-education",
+      "nameEnOfficial": "Master of Philosophy Field of Research : Chemistry Education",
+      "studyMode": "Research",
+      "interpretedTeachingType": "Research",
+      "interpretedStudyArrangement": "",
+      "tuitionDisplay": "MYR 25,400 total programme fee",
+      "officialFeeAuditStatus": "matched-official",
+      "intakeMonths": [
+        "February",
+        "September"
+      ],
+      "gpa": 2.75
+    }
+  },
+  "issueSamples": {
+    "scheduleOnlyRows": [],
+    "rowsWithoutTeachingType": [],
+    "rowsWithoutTuitionDisplay": [],
+    "listDetailMismatches": []
+  },
+  "decision": "No master data re-import required. Chinese display label is adjusted from 学习方式 to 学习安排 to reduce confusion; data remains governed by the audited studyMode field."
+}

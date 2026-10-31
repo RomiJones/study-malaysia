@@ -1,0 +1,162 @@
+[
+  {
+    "id": "user-task",
+    "instruction": "Use latest optimized standard workflow and dedicated StudyMY skill for Taylor's University bachelor/master/phd collection.",
+    "scope": "run",
+    "status": "completed",
+    "evidencePointer": "00_run_contract.json",
+    "reason": ""
+  },
+  {
+    "id": "read-agents",
+    "instruction": "Read AGENTS.md and project instructions.",
+    "scope": "run",
+    "status": "completed",
+    "evidencePointer": "AGENTS.md",
+    "reason": ""
+  },
+  {
+    "id": "read-chinese-task",
+    "instruction": "Read selected Chinese task page or record current instruction when no dedicated task page exists.",
+    "scope": "run",
+    "status": "completed",
+    "evidencePointer": "00_run_contract.json",
+    "reason": ""
+  },
+  {
+    "id": "read-prd-tech",
+    "instruction": "Read Chinese PRD and technical design.",
+    "scope": "run",
+    "status": "completed",
+    "evidencePointer": "docs/notion-snapshot/技术方案.md; docs/prd/TASK-096-data-models-data-preparation-requirement-boundary.md",
+    "reason": ""
+  },
+  {
+    "id": "source-registry",
+    "instruction": "Discover official source registry and accepted domains.",
+    "scope": "source",
+    "status": "completed",
+    "evidencePointer": "02_official_source_registry.json",
+    "reason": ""
+  },
+  {
+    "id": "baseline",
+    "instruction": "Lock official programme baseline by level before enrichment.",
+    "scope": "level",
+    "status": "completed",
+    "evidencePointer": "03_level_manifest.json",
+    "reason": ""
+  },
+  {
+    "id": "row-disposal",
+    "instruction": "Dispose every official row with a reviewed state.",
+    "scope": "level",
+    "status": "completed",
+    "evidencePointer": "04_official_row_disposal.json",
+    "reason": ""
+  },
+  {
+    "id": "source-cache",
+    "instruction": "Snapshot/cache official authorities with retrieval metadata and hash.",
+    "scope": "source",
+    "status": "completed",
+    "evidencePointer": "05_source_cache_index.json",
+    "reason": ""
+  },
+  {
+    "id": "page-options",
+    "instruction": "Inventory every programme detail page option, panel, selector, and same-programme link.",
+    "scope": "programme",
+    "status": "completed",
+    "evidencePointer": "06_page_option_inventory.json",
+    "reason": ""
+  },
+  {
+    "id": "runtime-continuity",
+    "instruction": "Keep Ian's running StudyMY project端 available during collection.",
+    "scope": "run",
+    "status": "completed",
+    "evidencePointer": "13_runtime_continuity_check.json",
+    "reason": ""
+  },
+  {
+    "id": "deep-source-field-audit",
+    "instruction": "Search official detail pages, panels, sublinks, PDFs, and admissions pages before unpublished/review states.",
+    "scope": "field",
+    "status": "completed",
+    "evidencePointer": "14_deep_source_field_audit.json",
+    "reason": ""
+  },
+  {
+    "id": "field-coverage",
+    "instruction": "Build field coverage matrix for material fields and canonical programmes.",
+    "scope": "field",
+    "status": "completed",
+    "evidencePointer": "07_field_coverage_matrix.json",
+    "reason": ""
+  },
+  {
+    "id": "candidate",
+    "instruction": "Build deterministic StudyMY candidate dataset.",
+    "scope": "programme",
+    "status": "completed",
+    "evidencePointer": "08_candidate_dataset.json",
+    "reason": ""
+  },
+  {
+    "id": "trace",
+    "instruction": "Trace ready public values to official evidence.",
+    "scope": "field",
+    "status": "completed",
+    "evidencePointer": "09_source_to_candidate_trace.json",
+    "reason": ""
+  },
+  {
+    "id": "public-display-hygiene",
+    "instruction": "Verify public Chinese fields need localization and contain no process/local-path leakage.",
+    "scope": "display",
+    "status": "completed",
+    "evidencePointer": "15_public_display_hygiene_audit.json",
+    "reason": ""
+  },
+  {
+    "id": "display-parity",
+    "instruction": "Verify institution, catalogue, list, detail, and leakage display parity.",
+    "scope": "display",
+    "status": "completed",
+    "evidencePointer": "10_display_parity_report.json",
+    "reason": ""
+  },
+  {
+    "id": "exceptions",
+    "instruction": "Record blocking/review exceptions with evidence and next action.",
+    "scope": "run",
+    "status": "completed",
+    "evidencePointer": "11_exception_queue.json",
+    "reason": ""
+  },
+  {
+    "id": "operator-report",
+    "instruction": "Generate Ian review report with counts, gaps, and validation results.",
+    "scope": "run",
+    "status": "completed",
+    "evidencePointer": "12_operator_review_report.md",
+    "reason": ""
+  },
+  {
+    "id": "database-write",
+    "instruction": "Do not import or publish because user authorized collection only.",
+    "scope": "publication",
+    "status": "not-applicable",
+    "evidencePointer": "collect authorization; no database writes",
+    "reason": "collect authorization; no database writes"
+  },
+  {
+    "id": "notion",
+    "instruction": "Update Chinese development notes or state Notion status.",
+    "scope": "run",
+    "status": "completed",
+    "evidencePointer": "docs/notion-snapshot/开发进度日志.md",
+    "reason": ""
+  }
+]

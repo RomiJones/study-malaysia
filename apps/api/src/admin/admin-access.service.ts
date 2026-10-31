@@ -192,11 +192,12 @@ export class AdminAccessService {
         entity.passwordHash = await hash(payload.password, 10);
       }
     } else {
+      if (!payload.password) throw new BadRequestException("Password is required when creating an admin user");
       entity = this.adminUsersRepository.create({
         username: payload.username,
         email: payload.email,
         displayName: payload.displayName,
-        passwordHash: await hash(payload.password || "Admin123!", 10),
+        passwordHash: await hash(payload.password, 10),
         isActive: payload.isActive ?? true,
         dataScope: payload.dataScope || "assigned",
         managedUniversityIds: payload.managedUniversityIds || [],

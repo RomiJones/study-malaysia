@@ -93,7 +93,7 @@ async function checkApi() {
     level,
     programmes.filter((row) => row.level === level).length
   ]));
-  const expectedLevels = { bachelor: 63, master: 304, phd: 93 };
+  const expectedLevels = { bachelor: 63, master: 304, phd: 95 };
   const summary = data.officialProfile?.catalogStatusSummary?.all;
   const feeStatusCounts = Object.fromEntries([
     "matched-official",
@@ -104,7 +104,7 @@ async function checkApi() {
     programmes.filter((row) => row.officialFeeAuditStatus === status).length
   ]));
   const expectedFeeStatuses = {
-    "matched-official": 194,
+    "matched-official": 196,
     "calculated-from-official-rate": 213,
     "not-published": 53
   };
@@ -124,13 +124,13 @@ async function checkApi() {
   );
   const nonReady = programmes.filter((row) => row.publicDisplayStatus !== "ready");
   if (
-    data.programCount !== 460
-    || programmes.length !== 460
+    data.programCount !== 462
+    || programmes.length !== 462
     || JSON.stringify(levelCounts) !== JSON.stringify(expectedLevels)
     || summary?.total !== 463
-    || summary?.ready !== 460
+    || summary?.ready !== 462
     || summary?.needsReview !== 0
-    || summary?.notAvailableForInternational !== 3
+    || summary?.notAvailableForInternational !== 1
     || JSON.stringify(feeStatusCounts) !== JSON.stringify(expectedFeeStatuses)
     || forbiddenFee.length
     || invalidCalculatedTotals.length
@@ -143,7 +143,7 @@ async function checkApi() {
     status: "passed",
     result: {
       canonical: 463,
-      public: 460,
+      public: 462,
       levelCounts,
       feeStatusCounts,
       forbiddenFee: 0,

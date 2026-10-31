@@ -1,0 +1,24 @@
+{
+  "status": "passed",
+  "recordKey": "programmes",
+  "baselineKey": "official_row_disposal",
+  "pageOptionKey": "page_option_inventory",
+  "coverageKey": "field_coverage_matrix",
+  "displayParityKey": "display_parity_report.surfaces",
+  "instructionLedgerKey": "instruction_execution_ledger",
+  "officialDomains": [
+    "utp.edu.my",
+    "utpdec.microsoftcrmportals.com"
+  ],
+  "recordCount": 63,
+  "baselineCount": 63,
+  "pageOptionCount": 63,
+  "coverageRowCount": 63,
+  "displayParityRowCount": 5,
+  "instructionLedgerCount": 13,
+  "recordsByPublicStatus": {
+    "needs-review": 63
+  },
+  "issueCounts": {},
+  "issues": []
+}

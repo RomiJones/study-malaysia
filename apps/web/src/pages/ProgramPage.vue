@@ -31,8 +31,8 @@
             <div class="text-xs font-bold uppercase tracking-[0.16em] text-slate-500">{{ t('common.faculty') }}</div>
             <div class="mt-3 text-lg font-bold text-slate-900">{{ text(catalog.programDetail.faculty) }}</div>
           </div>
-          <div class="flex flex-wrap gap-3">
-            <button class="primary-action" @click="planner.addTask(catalog.programDetail.university.id, catalog.programDetail.id)">{{ t('program.addToPlanner') }}</button>
+          <div v-if="programApplicationReady" class="flex flex-wrap gap-3">
+            <button class="primary-action" @click="addProgramToPlanner">{{ t('program.addToPlanner') }}</button>
             <button class="secondary-action" @click="catalog.toggleFavoriteProgram(catalog.programDetail.id)">{{ t('program.favoriteProgram') }}</button>
           </div>
         </div>
@@ -120,7 +120,12 @@ const reviewPreview = computed<ReviewPreview | undefined>(() => {
   if (route.query.review === "msu") return "msu";
   if (route.query.review === "luc") return "luc";
   if (props.slug.startsWith("luc-official-20260630-row-")) return "luc";
+  if (props.slug.startsWith("luc-postgraduate-20260705-row-")) return "luc";
   return undefined;
+});
+const programApplicationReady = computed(() => {
+  const program = catalog.programDetail;
+  return Boolean(program && program.publicDisplayStatus === "ready" && !isReviewPreviewProgram(program));
 });
 
 const levelLabel = computed(() => catalog.programDetail ? t(`degree.${catalog.programDetail.level}`) : "");
@@ -173,6 +178,18 @@ const specializationRows = computed(() => {
 
 function loadDetail() {
   void catalog.loadProgram(props.slug, reviewPreview.value ? { review: reviewPreview.value } : {}).catch(() => undefined);
+}
+
+function isReviewPreviewProgram(program: NonNullable<typeof catalog.programDetail>) {
+  return Boolean((program as typeof catalog.programDetail & { reviewPreview?: unknown }).reviewPreview) ||
+    program.slug.startsWith("luc-official-20260630-row-") ||
+    program.slug.startsWith("luc-postgraduate-20260705-row-") ||
+    program.slug.startsWith("msu-review-");
+}
+
+function addProgramToPlanner() {
+  if (!catalog.programDetail || !programApplicationReady.value) return;
+  void planner.addTask(catalog.programDetail.university.id, catalog.programDetail.id);
 }
 
 onMounted(loadDetail);

@@ -1,0 +1,103 @@
+{
+  "mode": "review-imported",
+  "universityId": 9,
+  "backupPath": "/Users/ian/Desktop/dev/study-malaysia/tmp/backups/sunway-official-audit-review-before-20260621-fee-policy-corrected.json",
+  "catalogCacheCleared": false,
+  "beforeVisibility": {
+    "exists": true,
+    "id": 9,
+    "slug": "sunway-university",
+    "code": "SUNWAY",
+    "isPublished": true,
+    "publicDisplayStatus": "ready",
+    "publicProgrammeCount": 0,
+    "publicDetailRouteAccessible": true
+  },
+  "afterVisibility": {
+    "exists": true,
+    "id": 9,
+    "slug": "sunway-university",
+    "code": "SUNWAY",
+    "isPublished": true,
+    "publicDisplayStatus": "ready",
+    "publicProgrammeCount": 0,
+    "publicDetailRouteAccessible": true
+  },
+  "preservationPolicy": "Existing public Sunway university row was preserved; review rows were added as non-public candidates.",
+  "summary": {
+    "candidateRows": 97,
+    "importRows": 97,
+    "byLevel": {
+      "bachelor": 48,
+      "master": 33,
+      "phd": 16
+    },
+    "readyRows": 0,
+    "needsReviewRows": 97,
+    "publishedRows": 0,
+    "uniqueSlugs": 97,
+    "pendingFeeRows": 0,
+    "notPublishedFeeRows": 7,
+    "officialDurationRows": 97,
+    "officialIntakeRows": 94,
+    "officialLanguageRows": 97,
+    "academicRequirementRows": 97,
+    "applicationDocumentRows": 97,
+    "courseSettingRows": 95,
+    "careerRows": 83,
+    "sourceLinkedRows": 97,
+    "publicDisplayStatusCounts": {
+      "needs-review": 97
+    },
+    "officialSourceStatusCounts": {
+      "needs-review": 97
+    },
+    "feeAuditStatusCounts": {
+      "official-rate-verified": 83,
+      "not-published": 7,
+      "matched-official": 7
+    }
+  },
+  "verification": {
+    "candidateRows": 97,
+    "importRows": 97,
+    "byLevel": {
+      "bachelor": 48,
+      "master": 33,
+      "phd": 16
+    },
+    "readyRows": 0,
+    "needsReviewRows": 97,
+    "publishedRows": 0,
+    "uniqueSlugs": 97,
+    "pendingFeeRows": 0,
+    "notPublishedFeeRows": 7,
+    "officialDurationRows": 97,
+    "officialIntakeRows": 94,
+    "officialLanguageRows": 97,
+    "academicRequirementRows": 97,
+    "applicationDocumentRows": 97,
+    "courseSettingRows": 95,
+    "careerRows": 83,
+    "sourceLinkedRows": 97,
+    "publicDisplayStatusCounts": {
+      "needs-review": 97
+    },
+    "officialSourceStatusCounts": {
+      "needs-review": 97
+    },
+    "feeAuditStatusCounts": {
+      "official-rate-verified": 83,
+      "not-published": 7,
+      "matched-official": 7
+    },
+    "universityPublicDisplayStatus": "ready",
+    "universityIsPublished": true,
+    "universityProgramCount": 8,
+    "importedPublicLeakageRows": 0,
+    "importedNeedsReviewRows": 97,
+    "legacyPublicRows": 0,
+    "publicProgrammeCount": 0,
+    "publicDetailRouteAccessible": true
+  }
+}

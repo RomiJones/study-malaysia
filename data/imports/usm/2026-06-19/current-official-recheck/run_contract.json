@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-06-19T06:35:39.701Z",
+  "institution": {
+    "code": "USM",
+    "name": "Universiti Sains Malaysia"
+  },
+  "collectionScope": "full",
+  "levels": [
+    "bachelor",
+    "master",
+    "phd"
+  ],
+  "applicantScope": "international",
+  "academicSession": "current official directory pages and 2025/2026 official postgraduate fees",
+  "currentAsOf": "2026-06-19",
+  "authorization": "publish-verification-recheck-no-new-database-write",
+  "selectedChineseTask": "docs/notion-snapshot/tasks/TASK-USM-FINAL-LANGUAGE-CONFIRMATION-20260616.md plus docs/prd/USM-all-level-official-publication-audit.md latest 2026-06-17 baseline",
+  "prdAndTechnicalDesign": [
+    "docs/prd/USM-all-level-official-publication-audit.md",
+    "docs/prd/USM-commercial-release-workflow.md",
+    "docs/prd/USM-master-official-collection-technical-design.md",
+    "docs/prd/USM-phd-official-collection-technical-design.md"
+  ],
+  "outputPaths": {
+    "batchDir": "data/imports/usm/2026-06-19/current-official-recheck",
+    "runContract": "data/imports/usm/2026-06-19/current-official-recheck/run_contract.json",
+    "instructionExecutionLedger": "data/imports/usm/2026-06-19/current-official-recheck/instruction_execution_ledger.json",
+    "sourceCacheIndex": "data/imports/usm/2026-06-19/current-official-recheck/source_cache_index.json",
+    "acceptanceRecheck": "data/imports/usm/2026-06-19/current-official-recheck/reports/acceptance_recheck.json",
+    "operatorReviewReport": "data/imports/usm/2026-06-19/current-official-recheck/operator_review_report.md",
+    "releaseGateReport": "tmp/reports/usm-commercial-release-gate-20260619-usm-recheck-final2.json"
+  },
+  "verificationCommands": [
+    "python3 scripts/verify-usm-master-commercial-candidate.py --manifest data/imports/usm/2026-06-14/master-commercial-candidate.json",
+    "python3 scripts/verify-usm-phd-candidate.py --manifest data/imports/usm/2026-06-14/phd-candidate.json",
+    "python3 scripts/audit-official-total-tuition.py data/imports/usm/2026-06-13/undergraduate-commercial-source.json data/imports/usm/2026-06-14/master-commercial-candidate.json data/imports/usm/2026-06-14/phd-candidate.json http://127.0.0.1:3000/api/universities/universiti-sains-malaysia-usm --summary-only",
+    "npm --workspace @studymy/api run verify:usm:undergraduate:commercial",
+    "npm --workspace @studymy/api run verify:usm:master:commercial",
+    "npm --workspace @studymy/api run verify:usm:phd:commercial",
+    "npm test",
+    "npm run build",
+    "npm run verify:task040:i18n",
+    "node scripts/verify-usm-commercial-release.mjs --web-url http://localhost:5173/universities/universiti-sains-malaysia-usm --report tmp/reports/usm-commercial-release-gate-20260619-usm-recheck-final2.json"
+  ],
+  "rollbackTarget": "No database import was performed in this recheck. Frontend changes can be reverted by the focused UI diff; generated recheck artifacts can be removed as a batch.",
+  "notionUpdate": "Writable Notion connector not available; local Chinese development note updated instead."
+}

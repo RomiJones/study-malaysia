@@ -860,12 +860,25 @@
     "relatedProgrammes": [
       "Bachelor of Mechanical Engineering with Honours",
       "Bachelor of Naval Architecture & Offshore Engineering with Honours",
-      "Bachelor of Mechanical Engineering (Aeronautics) with Honours"
+      "Bachelor of Mechanical Engineering (Aeronautics) with Honours",
+      "Bachelor of Mechanical Engineering (Manufacturing) with Honours"
     ],
     "pageWindows": [
       [
         1,
         40
+      ],
+      [
+        70,
+        85
+      ],
+      [
+        95,
+        106
+      ],
+      [
+        142,
+        153
       ]
     ]
   },

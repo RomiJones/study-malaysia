@@ -1,0 +1,19 @@
+{
+  "blocking": [],
+  "review": [],
+  "acceptedOfficialUnpublished": [
+    {
+      "id": "SUNWAY-OFFICIAL-UNPUBLISHED-FEE-2026",
+      "scope": "fee",
+      "affectedCount": 7,
+      "reason": "The official programme detail page did not publish a fee block. Display as official-unpublished rather than inferring or converting another amount.",
+      "evidence": "17_pre_import_gap_audit.json"
+    },
+    {
+      "id": "SUNWAY-OFFICIAL-UNPUBLISHED-OPTIONAL-FIELDS-2026",
+      "scope": "intake/careers/recognition/interview where absent",
+      "reason": "Absent optional facts remain explicit official-unpublished states in the gap audit and do not block controlled review import.",
+      "evidence": "07_field_coverage_matrix.json; 17_pre_import_gap_audit.json"
+    }
+  ]
+}

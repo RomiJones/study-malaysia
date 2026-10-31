@@ -1,0 +1,668 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-06-16T15:28:44Z",
+  "summary": {
+    "priorityCounts": {
+      "high": 71,
+      "medium": 20,
+      "low": 95
+    },
+    "issueCounts": {
+      "career_outcomes_official-unpublished": 95,
+      "tuition_total_missing_or_rate-only": 82,
+      "tuition_total_missing_or_unpublished": 20,
+      "intake_missing_or_unpublished": 72,
+      "academic_requirement_uses_general_rule_after_current-cache-check": 24,
+      "language_requirement_uses_general_rule_after_current-cache-check": 26,
+      "current_html_transport_failed_unique_urls": 71
+    },
+    "displayFieldCounts": {
+      "academicRequirementSpecificity:programme-or-current-page": 71,
+      "languageRequirementSpecificity:programme-or-current-page": 69,
+      "academicRequirementSource:official-programme-page-refreshed-2026-06-16": 21,
+      "languageRequirementSource:official-programme-page-refreshed-2026-06-16": 19,
+      "fee:official-total-ready": 13,
+      "fee:official-rate-ready": 62,
+      "fee:official-unpublished": 20,
+      "careers:official-unpublished": 95
+    }
+  },
+  "remainingGeneralRuleRecords": [
+    {
+      "code": "USM-PHD-ARTICLE-167-A219BB23",
+      "detailCode": "USM-PG-ARTICLE-167",
+      "officialName": "DOCTOR OF PHILOSOPHY (DUAL PHD KEELE UNIVERSITY,UK)",
+      "academicRequirementProvenance": "official-programme-page-refreshed-2026-06-16",
+      "languageRequirementProvenance": "general-rule",
+      "reason": "current official HTML was not retrievable or did not expose a parseable programme-level admission/language panel; USM official postgraduate general rule retained with provenance"
+    },
+    {
+      "code": "USM-PHD-ARTICLE-404-31FB99DD",
+      "detailCode": "USM-PG-ARTICLE-404",
+      "officialName": "DOCTOR OF PHILOSOPHY (ENGINEERING CAMPUS)",
+      "academicRequirementProvenance": "general-rule",
+      "languageRequirementProvenance": "general-rule",
+      "reason": "current official HTML was not retrievable or did not expose a parseable programme-level admission/language panel; USM official postgraduate general rule retained with provenance"
+    },
+    {
+      "code": "USM-PHD-ARTICLE-558-1A7EF8A8",
+      "detailCode": "USM-PG-ARTICLE-558",
+      "officialName": "DOCTOR OF PHILOSOPHY (FORENSIC SCIENCE)",
+      "academicRequirementProvenance": "general-rule",
+      "languageRequirementProvenance": "general-rule",
+      "reason": "current official HTML was not retrievable or did not expose a parseable programme-level admission/language panel; USM official postgraduate general rule retained with provenance"
+    },
+    {
+      "code": "USM-PHD-ARTICLE-555-1399FD12",
+      "detailCode": "USM-PG-ARTICLE-555",
+      "officialName": "DOCTOR OF PHILOSOPHY (HEALTH CAMPUS)",
+      "academicRequirementProvenance": "general-rule",
+      "languageRequirementProvenance": "general-rule",
+      "reason": "current official HTML was not retrievable or did not expose a parseable programme-level admission/language panel; USM official postgraduate general rule retained with provenance"
+    },
+    {
+      "code": "USM-PHD-ARTICLE-888-ABF3CB0A",
+      "detailCode": "USM-PG-ARTICLE-888",
+      "officialName": "DOCTOR OF PHILOSOPHY (JOINT PHD NEW CASTLE UNIVERSITY, UNITED KINGDOM)",
+      "academicRequirementProvenance": "general-rule",
+      "languageRequirementProvenance": "general-rule",
+      "reason": "current official HTML was not retrievable or did not expose a parseable programme-level admission/language panel; USM official postgraduate general rule retained with provenance"
+    },
+    {
+      "code": "USM-PHD-ARTICLE-244-F4A13D11",
+      "detailCode": "USM-PG-ARTICLE-244",
+      "officialName": "DOCTOR OF PHILOSOPHY (MAIN CAMPUS)",
+      "academicRequirementProvenance": "general-rule",
+      "languageRequirementProvenance": "general-rule",
+      "reason": "current official HTML was not retrievable or did not expose a parseable programme-level admission/language panel; USM official postgraduate general rule retained with provenance"
+    },
+    {
+      "code": "USM-PHD-ARTICLE-217-DDFFC688",
+      "detailCode": "USM-PG-ARTICLE-217",
+      "officialName": "DOCTOR OF PHILOSOPHY (MAIN CAMPUS)",
+      "academicRequirementProvenance": "general-rule",
+      "languageRequirementProvenance": "general-rule",
+      "reason": "current official HTML was not retrievable or did not expose a parseable programme-level admission/language panel; USM official postgraduate general rule retained with provenance"
+    },
+    {
+      "code": "USM-PHD-ARTICLE-273-EF8BB80C",
+      "detailCode": "USM-PG-ARTICLE-273",
+      "officialName": "DOCTOR OF PHILOSOPHY (MAIN CAMPUS)",
+      "academicRequirementProvenance": "general-rule",
+      "languageRequirementProvenance": "general-rule",
+      "reason": "current official HTML was not retrievable or did not expose a parseable programme-level admission/language panel; USM official postgraduate general rule retained with provenance"
+    },
+    {
+      "code": "USM-PHD-ARTICLE-219-DEE779E2",
+      "detailCode": "USM-PG-ARTICLE-219",
+      "officialName": "DOCTOR OF PHILOSOPHY (MAIN CAMPUS)",
+      "academicRequirementProvenance": "general-rule",
+      "languageRequirementProvenance": "general-rule",
+      "reason": "current official HTML was not retrievable or did not expose a parseable programme-level admission/language panel; USM official postgraduate general rule retained with provenance"
+    },
+    {
+      "code": "USM-PHD-ARTICLE-215-1208D3CA",
+      "detailCode": "USM-PG-ARTICLE-215",
+      "officialName": "DOCTOR OF PHILOSOPHY (MAIN CAMPUS)",
+      "academicRequirementProvenance": "general-rule",
+      "languageRequirementProvenance": "general-rule",
+      "reason": "current official HTML was not retrievable or did not expose a parseable programme-level admission/language panel; USM official postgraduate general rule retained with provenance"
+    },
+    {
+      "code": "USM-PHD-ARTICLE-888-0184C491",
+      "detailCode": "USM-PG-ARTICLE-888",
+      "officialName": "DOCTOR OF PHILOSOPHY (MAIN CAMPUS)",
+      "academicRequirementProvenance": "general-rule",
+      "languageRequirementProvenance": "general-rule",
+      "reason": "current official HTML was not retrievable or did not expose a parseable programme-level admission/language panel; USM official postgraduate general rule retained with provenance"
+    },
+    {
+      "code": "USM-PHD-ARTICLE-167-D16175AE",
+      "detailCode": "USM-PG-ARTICLE-167",
+      "officialName": "DOCTOR OF PHILOSOPHY (MAIN CAMPUS)",
+      "academicRequirementProvenance": "official-programme-page-refreshed-2026-06-16",
+      "languageRequirementProvenance": "general-rule",
+      "reason": "current official HTML was not retrievable or did not expose a parseable programme-level admission/language panel; USM official postgraduate general rule retained with provenance"
+    },
+    {
+      "code": "USM-PHD-ARTICLE-221-1C33BEF5",
+      "detailCode": "USM-PG-ARTICLE-221",
+      "officialName": "DOCTOR OF PHILOSOPHY (MAIN CAMPUS)",
+      "academicRequirementProvenance": "general-rule",
+      "languageRequirementProvenance": "general-rule",
+      "reason": "current official HTML was not retrievable or did not expose a parseable programme-level admission/language panel; USM official postgraduate general rule retained with provenance"
+    },
+    {
+      "code": "USM-PHD-ARTICLE-887-795F4413",
+      "detailCode": "USM-PG-ARTICLE-887",
+      "officialName": "DOCTOR OF PHILOSOPHY (MAIN CAMPUS)",
+      "academicRequirementProvenance": "general-rule",
+      "languageRequirementProvenance": "general-rule",
+      "reason": "current official HTML was not retrievable or did not expose a parseable programme-level admission/language panel; USM official postgraduate general rule retained with provenance"
+    },
+    {
+      "code": "USM-PHD-ARTICLE-145-B278876C",
+      "detailCode": "USM-PG-ARTICLE-145",
+      "officialName": "DOCTOR OF PHILOSOPHY (MAIN CAMPUS)",
+      "academicRequirementProvenance": "general-rule",
+      "languageRequirementProvenance": "general-rule",
+      "reason": "current official HTML was not retrievable or did not expose a parseable programme-level admission/language panel; USM official postgraduate general rule retained with provenance"
+    },
+    {
+      "code": "USM-PHD-ARTICLE-560-D920F911",
+      "detailCode": "USM-PG-ARTICLE-560",
+      "officialName": "DOCTOR OF PHILOSOPHY (NURSING)",
+      "academicRequirementProvenance": "general-rule",
+      "languageRequirementProvenance": "general-rule",
+      "reason": "current official HTML was not retrievable or did not expose a parseable programme-level admission/language panel; USM official postgraduate general rule retained with provenance"
+    },
+    {
+      "code": "USM-PHD-ARTICLE-1476-EDCE896B",
+      "detailCode": "USM-PG-ARTICLE-1476",
+      "officialName": "DOCTOR OF PHILOSOPHY (OFFSHORE EUROPEAN GLOBAL SCHOOL UNIVERSITY, ISTANBUL)",
+      "academicRequirementProvenance": "general-rule",
+      "languageRequirementProvenance": "general-rule",
+      "reason": "current official HTML was not retrievable or did not expose a parseable programme-level admission/language panel; USM official postgraduate general rule retained with provenance"
+    },
+    {
+      "code": "USM-PHD-ARTICLE-1474-13A979E2",
+      "detailCode": "USM-PG-ARTICLE-1474",
+      "officialName": "DOCTOR OF PHILOSOPHY (OFFSHORE EUROPEAN GLOBAL SCHOOL UNIVERSITY, ISTANBUL)",
+      "academicRequirementProvenance": "general-rule",
+      "languageRequirementProvenance": "general-rule",
+      "reason": "current official HTML was not retrievable or did not expose a parseable programme-level admission/language panel; USM official postgraduate general rule retained with provenance"
+    },
+    {
+      "code": "USM-PHD-ARTICLE-1501-AA166411",
+      "detailCode": "USM-PG-ARTICLE-1501",
+      "officialName": "DOCTOR OF PHILOSOPHY (OFFSHORE EUROPEAN GLOBAL SCHOOL UNIVERSITY, ISTANBUL)",
+      "academicRequirementProvenance": "general-rule",
+      "languageRequirementProvenance": "general-rule",
+      "reason": "current official HTML was not retrievable or did not expose a parseable programme-level admission/language panel; USM official postgraduate general rule retained with provenance"
+    },
+    {
+      "code": "USM-PHD-ARTICLE-1506-E0F6CDF0",
+      "detailCode": "USM-PG-ARTICLE-1506",
+      "officialName": "DOCTOR OF PHILOSOPHY (OFFSHORE EUROPEAN GLOBAL SCHOOL UNIVERSITY, ISTANBUL)",
+      "academicRequirementProvenance": "general-rule",
+      "languageRequirementProvenance": "general-rule",
+      "reason": "current official HTML was not retrievable or did not expose a parseable programme-level admission/language panel; USM official postgraduate general rule retained with provenance"
+    },
+    {
+      "code": "USM-PHD-ARTICLE-1515-A74EBF7B",
+      "detailCode": "USM-PG-ARTICLE-1515",
+      "officialName": "DOCTOR OF PHILOSOPHY (OFFSHORE EUROPEAN GLOBAL SCHOOL UNIVERSITY, ISTANBUL)",
+      "academicRequirementProvenance": "general-rule",
+      "languageRequirementProvenance": "general-rule",
+      "reason": "current official HTML was not retrievable or did not expose a parseable programme-level admission/language panel; USM official postgraduate general rule retained with provenance"
+    },
+    {
+      "code": "USM-PHD-ARTICLE-1490-21A1FFAC",
+      "detailCode": "USM-PG-ARTICLE-1490",
+      "officialName": "DOCTOR OF PHILOSOPHY (OFFSHORE EUROPEAN GLOBAL SCHOOL UNIVERSITY, ISTANBUL)",
+      "academicRequirementProvenance": "general-rule",
+      "languageRequirementProvenance": "general-rule",
+      "reason": "current official HTML was not retrievable or did not expose a parseable programme-level admission/language panel; USM official postgraduate general rule retained with provenance"
+    },
+    {
+      "code": "USM-PHD-ARTICLE-1516-5FCB065D",
+      "detailCode": "USM-PG-ARTICLE-1516",
+      "officialName": "DOCTOR OF PHILOSOPHY (OFFSHORE NORTHEASTERN UNIVERSITY, QINHUANGDAO)",
+      "academicRequirementProvenance": "general-rule",
+      "languageRequirementProvenance": "general-rule",
+      "reason": "current official HTML was not retrievable or did not expose a parseable programme-level admission/language panel; USM official postgraduate general rule retained with provenance"
+    },
+    {
+      "code": "USM-PHD-ARTICLE-1517-D53FD044",
+      "detailCode": "USM-PG-ARTICLE-1517",
+      "officialName": "DOCTOR OF PHILOSOPHY (OFFSHORE YANGTZE NORMAL UNIVERSITY)",
+      "academicRequirementProvenance": "general-rule",
+      "languageRequirementProvenance": "general-rule",
+      "reason": "current official HTML was not retrievable or did not expose a parseable programme-level admission/language panel; USM official postgraduate general rule retained with provenance"
+    },
+    {
+      "code": "USM-PHD-ARTICLE-232-7F458489",
+      "detailCode": "USM-PG-ARTICLE-232",
+      "officialName": "DOCTOR OF PHILOSOPHY (PROJECT MANAGEMENT)",
+      "academicRequirementProvenance": "general-rule",
+      "languageRequirementProvenance": "general-rule",
+      "reason": "current official HTML was not retrievable or did not expose a parseable programme-level admission/language panel; USM official postgraduate general rule retained with provenance"
+    },
+    {
+      "code": "USM-PHD-ARTICLE-1479-0BF3C6B6",
+      "detailCode": "USM-PG-ARTICLE-1479",
+      "officialName": "DOCTOR OF PHILOSOPHY - OFFSHORE EUROPEAN GLOBAL SCHOOL ISTANBUL GELISIM UNIVERSITY",
+      "academicRequirementProvenance": "general-rule",
+      "languageRequirementProvenance": "general-rule",
+      "reason": "current official HTML was not retrievable or did not expose a parseable programme-level admission/language panel; USM official postgraduate general rule retained with provenance"
+    }
+  ],
+  "transportExceptions": [
+    {
+      "articleId": "558",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=558&catid=55",
+      "status": "000",
+      "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+    },
+    {
+      "articleId": "555",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=555&catid=55",
+      "status": "000",
+      "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+    },
+    {
+      "articleId": "807",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=807&catid=55",
+      "status": "000",
+      "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+    },
+    {
+      "articleId": "233",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=233&catid=51",
+      "status": "000",
+      "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+    },
+    {
+      "articleId": "234",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=234&catid=51",
+      "status": "000",
+      "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+    },
+    {
+      "articleId": "888",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=888&catid=55",
+      "status": "000",
+      "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+    },
+    {
+      "articleId": "244",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=244&catid=51",
+      "status": "000",
+      "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+    },
+    {
+      "articleId": "169",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=169&catid=50",
+      "status": "000",
+      "error": "curl: (52) Empty reply from server\n"
+    },
+    {
+      "articleId": "217",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=217&catid=51",
+      "status": "000",
+      "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+    },
+    {
+      "articleId": "333",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=333&catid=52",
+      "status": "000",
+      "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+    },
+    {
+      "articleId": "372",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=372&catid=53",
+      "status": "000",
+      "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+    },
+    {
+      "articleId": "273",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=273&catid=52",
+      "status": "000",
+      "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+    },
+    {
+      "articleId": "170",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=170&catid=50",
+      "status": "000",
+      "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+    },
+    {
+      "articleId": "271",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=271&catid=52",
+      "status": "000",
+      "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+    },
+    {
+      "articleId": "809",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=809&catid=53",
+      "status": "000",
+      "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+    },
+    {
+      "articleId": "388",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=388&catid=54",
+      "status": "000",
+      "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+    },
+    {
+      "articleId": "219",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=219&catid=51",
+      "status": "000",
+      "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+    },
+    {
+      "articleId": "338",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=338&catid=53",
+      "status": "000",
+      "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+    },
+    {
+      "articleId": "510",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=510&catid=55",
+      "status": "000",
+      "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+    },
+    {
+      "articleId": "215",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=215&catid=51",
+      "status": "000",
+      "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+    },
+    {
+      "articleId": "218",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=218&catid=51",
+      "status": "000",
+      "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+    },
+    {
+      "articleId": "325",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=325&catid=52",
+      "status": "000",
+      "error": "curl: (28) Connection timed out after 25006 milliseconds\ncurl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+    },
+    {
+      "articleId": "220",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=220&catid=51",
+      "status": "000",
+      "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+    },
+    {
+      "articleId": "376",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=376&catid=53",
+      "status": "000",
+      "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+    },
+    {
+      "articleId": "375",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=375&catid=53",
+      "status": "000",
+      "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+    },
+    {
+      "articleId": "221",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=221&catid=51",
+      "status": "000",
+      "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+    },
+    {
+      "articleId": "361",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=361&catid=53",
+      "status": "000",
+      "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+    },
+    {
+      "articleId": "887",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=887&catid=52",
+      "status": "000",
+      "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+    },
+    {
+      "articleId": "243",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=243&catid=51",
+      "status": "000",
+      "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+    },
+    {
+      "articleId": "315",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=315&catid=52",
+      "status": "000",
+      "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+    },
+    {
+      "articleId": "378",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=378&catid=53",
+      "status": "000",
+      "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+    },
+    {
+      "articleId": "147",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=147&catid=50",
+      "status": "000",
+      "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+    },
+    {
+      "articleId": "241",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=241&catid=51",
+      "status": "000",
+      "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+    },
+    {
+      "articleId": "145",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=145&catid=50",
+      "status": "000",
+      "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+    },
+    {
+      "articleId": "326",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=326&catid=52",
+      "status": "000",
+      "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+    },
+    {
+      "articleId": "247",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=247&catid=51",
+      "status": "000",
+      "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+    },
+    {
+      "articleId": "313",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=313&catid=52",
+      "status": "000",
+      "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+    },
+    {
+      "articleId": "379",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=379&catid=53",
+      "status": "000",
+      "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+    },
+    {
+      "articleId": "561",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=561&catid=55",
+      "status": "000",
+      "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+    },
+    {
+      "articleId": "560",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=560&catid=55",
+      "status": "000",
+      "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+    },
+    {
+      "articleId": "559",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=559&catid=55",
+      "status": "000",
+      "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+    },
+    {
+      "articleId": "1475",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1475&catid=55",
+      "status": "000",
+      "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+    },
+    {
+      "articleId": "1476",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1476&catid=55",
+      "status": "000",
+      "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+    },
+    {
+      "articleId": "1474",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1474&catid=54",
+      "status": "000",
+      "error": "curl: (52) Empty reply from server\n"
+    },
+    {
+      "articleId": "1482",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1482&catid=50",
+      "status": "000",
+      "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+    },
+    {
+      "articleId": "1501",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1501&catid=54",
+      "status": "000",
+      "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+    },
+    {
+      "articleId": "1506",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1506&catid=55",
+      "status": "000",
+      "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+    },
+    {
+      "articleId": "1508",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1508&catid=52",
+      "status": "000",
+      "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+    },
+    {
+      "articleId": "1503",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1503&catid=54",
+      "status": "000",
+      "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+    },
+    {
+      "articleId": "1515",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1515&catid=52",
+      "status": "000",
+      "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+    },
+    {
+      "articleId": "1519",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1519&catid=52",
+      "status": "000",
+      "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+    },
+    {
+      "articleId": "1492",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1492&catid=53",
+      "status": "000",
+      "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+    },
+    {
+      "articleId": "1491",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1491&catid=50",
+      "status": "000",
+      "error": "curl: (52) Empty reply from server\n"
+    },
+    {
+      "articleId": "1490",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1490&catid=54",
+      "status": "000",
+      "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+    },
+    {
+      "articleId": "1487",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1487&catid=51",
+      "status": "000",
+      "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+    },
+    {
+      "articleId": "1486",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1486&catid=52",
+      "status": "000",
+      "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+    },
+    {
+      "articleId": "1493",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1493&catid=53",
+      "status": "000",
+      "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+    },
+    {
+      "articleId": "1516",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1516&catid=52",
+      "status": "000",
+      "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+    },
+    {
+      "articleId": "1494",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1494&catid=53",
+      "status": "000",
+      "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+    },
+    {
+      "articleId": "1517",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1517&catid=52",
+      "status": "000",
+      "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+    },
+    {
+      "articleId": "222",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=222&catid=51",
+      "status": "000",
+      "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+    },
+    {
+      "articleId": "232",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=232&catid=51",
+      "status": "000",
+      "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+    },
+    {
+      "articleId": "235",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=235&catid=51",
+      "status": "000",
+      "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+    },
+    {
+      "articleId": "556",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=556&catid=55",
+      "status": "000",
+      "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+    },
+    {
+      "articleId": "1479",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1479&catid=50",
+      "status": "000",
+      "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+    },
+    {
+      "articleId": "567",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=567&catid=59",
+      "status": "000",
+      "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+    },
+    {
+      "articleId": "566",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=566&catid=59",
+      "status": "000",
+      "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+    },
+    {
+      "articleId": "416",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=416&catid=55",
+      "status": "000",
+      "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+    },
+    {
+      "articleId": "417",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=417&catid=55",
+      "status": "000",
+      "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+    },
+    {
+      "articleId": "415",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=415&catid=55",
+      "status": "000",
+      "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+    },
+    {
+      "articleId": "420",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=420&catid=55",
+      "status": "000",
+      "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+    }
+  ]
+}

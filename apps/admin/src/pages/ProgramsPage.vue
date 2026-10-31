@@ -102,6 +102,30 @@
             <strong>{{ item.value || "-" }}</strong>
           </div>
         </div>
+        <div class="frontend-impact-panel">
+          <div class="frontend-impact-panel__header">
+            <div>
+              <div class="frontend-impact-panel__title">前台影响说明</div>
+              <div class="frontend-impact-panel__subtitle">当前页签字段保存后，会影响以下前台页面和业务能力。</div>
+            </div>
+            <el-tag type="info" effect="plain">当前页签：{{ programImpactTabLabel }}</el-tag>
+          </div>
+          <div class="frontend-impact-tags">
+            <el-tag v-for="page in programImpactPages" :key="page" size="small" effect="plain">{{ page }}</el-tag>
+          </div>
+          <div class="frontend-impact-list">
+            <div v-for="item in visibleProgramImpactItems" :key="item.title" class="frontend-impact-row">
+              <div class="frontend-impact-row__main">
+                <strong>{{ item.title }}</strong>
+                <span>{{ item.risk }}</span>
+              </div>
+              <div class="frontend-impact-row__meta">
+                <span>字段：{{ item.fields.join("、") }}</span>
+                <span>页面：{{ item.pages.join("、") }}</span>
+              </div>
+            </div>
+          </div>
+        </div>
         <el-skeleton v-if="entityIssueLoading" :rows="2" animated />
         <el-alert v-else-if="!entityIssues.length" title="当前条目暂无待处理质量问题" type="success" show-icon :closable="false" />
         <div v-else class="entity-issue-list">
@@ -111,8 +135,15 @@
               <strong>{{ issue.ruleName || issue.ruleId }}</strong>
               <span>{{ issue.message }}</span>
               <small>{{ issue.fieldPath || "-" }}</small>
+              <div class="quality-risk-inline">
+                <el-tag size="small" :type="qualityRiskTagType(qualityIssueFrontendRisk(issue))" effect="plain">
+                  前台风险 / {{ qualityIssueFrontendRisk(issue).ability }}
+                </el-tag>
+                <span>{{ qualityIssueFrontendRisk(issue).summary }}</span>
+                <small>影响页面：{{ qualityIssueFrontendRisk(issue).pages.join("、") }}</small>
+              </div>
             </div>
-            <el-button link type="primary" @click="focusProgramIssue(issue.fieldPath)">定位字段</el-button>
+            <el-button link type="primary" @click="focusProgramIssue(issue.fieldPath)">去修复</el-button>
           </div>
         </div>
       </section>
@@ -295,6 +326,7 @@ import LocaleTextTabs from "@/components/LocaleTextTabs.vue";
 import LocaleListTabs from "@/components/LocaleListTabs.vue";
 import { createLocaleArrayMap, createLocaleMap } from "@/utils/locale";
 import { useAccess } from "@/utils/access";
+import { qualityIssueFrontendRisk, qualityRiskTagType } from "@/utils/qualityRisk";
 import {
   createSourceLink,
   dictionaryOptions,
@@ -346,6 +378,93 @@ interface QualityIssueItem {
   message: string;
   fieldPath?: string | null;
 }
+
+interface FrontendImpactItem {
+  tab: string;
+  title: string;
+  fields: string[];
+  pages: string[];
+  risk: string;
+}
+
+const uniqueStrings = (items: string[]) => [...new Set(items)];
+
+const programImpactTabLabels: Record<string, string> = {
+  base: "基础信息",
+  fee: "费用与开学",
+  requirements: "要求与来源",
+  audit: "发布与审计"
+};
+
+const programImpactItems: FrontendImpactItem[] = [
+  {
+    tab: "base",
+    title: "专业识别与归属",
+    fields: ["universityId", "name", "nameEnOfficial", "level", "category", "faculty"],
+    pages: ["专业列表", "专业详情弹窗", "院校详情", "收藏", "对比", "推荐"],
+    risk: "影响专业搜索、分类筛选、详情标题、院校详情分组和推荐解释。"
+  },
+  {
+    tab: "base",
+    title: "详情内容深度",
+    fields: ["description", "applicationDocs", "curriculum", "careers", "specializations", "studyMode", "campus"],
+    pages: ["专业详情弹窗", "规划", "会员申请"],
+    risk: "缺内容会让详情弹窗信息不足，也会影响申请材料准备和规划说明。"
+  },
+  {
+    tab: "base",
+    title: "基础发布开关",
+    fields: ["isPublished"],
+    pages: ["专业列表", "院校详情", "收藏", "对比", "规划", "推荐"],
+    risk: "关闭后即使公开展示状态存在，专业也不会进入公开目录。"
+  },
+  {
+    tab: "fee",
+    title: "费用筛选与展示",
+    fields: ["annualTuitionCny", "tuitionAmount", "tuitionCurrency", "tuitionDisplay", "listTuitionText", "officialTuitionMYR", "officialFeeSourceUrl", "officialFeeAuditStatus"],
+    pages: ["专业列表", "专业详情弹窗", "对比", "规划", "推荐"],
+    risk: "缺官方费用或费用来源会导致预算筛选不可参与，推荐和成本估算置信度下降。"
+  },
+  {
+    tab: "fee",
+    title: "学制与开学",
+    fields: ["durationYears", "durationOfficial", "intakeMonths", "officialIntake", "officialIntakeNote"],
+    pages: ["专业列表", "专业详情弹窗", "规划", "会员申请"],
+    risk: "学制或开学缺失会影响列表展示、申请时间线和案件提交判断。"
+  },
+  {
+    tab: "requirements",
+    title: "入学与语言要求",
+    fields: ["languageRequirement", "officialLanguageRequirement", "requirement", "officialAcademicRequirement", "chinaStudentRequirement", "specialRequirementsNote"],
+    pages: ["专业列表", "专业详情弹窗", "规划", "推荐", "会员申请"],
+    risk: "缺语言或学术要求会影响匹配分、风险提示和顾问判断申请可行性。"
+  },
+  {
+    tab: "requirements",
+    title: "官方来源链",
+    fields: ["officialSourceUrl", "officialEntryRequirementSourceUrl", "officialAccreditationSourceUrl", "sourceUrls", "officialAccreditationNote"],
+    pages: ["专业详情弹窗", "推荐", "会员申请"],
+    risk: "来源链不完整会影响公开可信度、推荐追溯和申请材料核验。"
+  },
+  {
+    tab: "audit",
+    title: "专业公开状态",
+    fields: ["publicDisplayStatus", "publicDisplayNote", "reviewReason"],
+    pages: ["专业列表", "院校详情", "收藏", "对比", "规划", "推荐"],
+    risk: "状态不满足公开条件时，专业可能从列表、详情、推荐和规划入口隐藏。"
+  },
+  {
+    tab: "audit",
+    title: "核验与审计备注",
+    fields: ["officialSourceStatus", "officialVerifiedAt", "auditNote"],
+    pages: ["专业详情弹窗", "推荐", "会员申请"],
+    risk: "未核验或审计说明缺失会降低推荐可解释性，并影响顾问案件判断。"
+  }
+];
+
+const visibleProgramImpactItems = computed(() => programImpactItems.filter((item) => item.tab === activeTab.value));
+const programImpactPages = computed(() => uniqueStrings(visibleProgramImpactItems.value.flatMap((item) => item.pages)));
+const programImpactTabLabel = computed(() => programImpactTabLabels[activeTab.value] || "当前页签");
 
 const levelOptions = computed(() => dictionaryOptions(dictionaries.value, "degree_level"));
 const categoryOptions = computed(() => dictionaryOptions(dictionaries.value, "program_category"));

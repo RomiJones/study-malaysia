@@ -2,9 +2,9 @@ import { BadRequestException, Injectable, NotFoundException } from "@nestjs/comm
 import { InjectRepository } from "@nestjs/typeorm";
 import { In, Repository } from "typeorm";
 import { CompareItemEntity, UniversityEntity } from "../db/entities.js";
-import { mapUniversity } from "../common/mappers.js";
+import { isReadyForPublicCatalog, mapUniversity } from "../common/mappers.js";
 
-const MAX_COMPARE_ITEMS = 3;
+const MAX_COMPARE_ITEMS = 4;
 
 @Injectable()
 export class CompareService {
@@ -28,6 +28,7 @@ export class CompareService {
     const universities = items
       .map((item) => item.university)
       .filter((university): university is UniversityEntity => Boolean(university))
+      .filter(isReadyForPublicCatalog)
       .map(mapUniversity);
 
     return {
@@ -39,14 +40,15 @@ export class CompareService {
 
   async add(userId: number, universityId: number) {
     this.assertPositiveId(universityId, "University id is required");
-    const university = await this.universitiesRepository.findOneBy({ id: universityId });
+    const university = await this.universitiesRepository.findOneBy({ id: universityId, isPublished: true, publicDisplayStatus: "ready" });
     if (!university) throw new NotFoundException("University not found");
 
     const existing = await this.compareRepository.findOne({ where: { userId, universityId } });
     if (existing) return this.list(userId);
 
-    const current = await this.compareRepository.find({ where: { userId }, order: { sortOrder: "ASC", createdAt: "ASC" } });
-    if (current.length >= MAX_COMPARE_ITEMS) {
+    const current = await this.compareRepository.find({ where: { userId }, relations: { university: true }, order: { sortOrder: "ASC", createdAt: "ASC" } });
+    const readyCount = current.filter((item) => item.university && isReadyForPublicCatalog(item.university)).length;
+    if (readyCount >= MAX_COMPARE_ITEMS) {
       throw new BadRequestException(`Compare list supports up to ${MAX_COMPARE_ITEMS} universities`);
     }
 
@@ -75,18 +77,21 @@ export class CompareService {
 
   async merge(userId: number, universityIds: number[] = []) {
     const normalizedIds = this.normalizeIds(universityIds);
-    const universities = normalizedIds.length ? await this.universitiesRepository.findBy({ id: In(normalizedIds) }) : [];
+    const universities = normalizedIds.length
+      ? await this.universitiesRepository.findBy({ id: In(normalizedIds), isPublished: true, publicDisplayStatus: "ready" })
+      : [];
     const validIds = new Set(universities.map((university) => university.id));
     const skippedUniversityIds = normalizedIds.filter((id) => !validIds.has(id));
 
-    const current = await this.compareRepository.find({ where: { userId }, order: { sortOrder: "ASC", createdAt: "ASC" } });
+    const current = await this.compareRepository.find({ where: { userId }, relations: { university: true }, order: { sortOrder: "ASC", createdAt: "ASC" } });
     const existingIds = new Set(current.map((item) => item.universityId));
+    const readyCount = current.filter((item) => item.university && isReadyForPublicCatalog(item.university)).length;
     let nextSortOrder = current.reduce((max, item) => Math.max(max, item.sortOrder), -1) + 1;
     const additions: CompareItemEntity[] = [];
 
     for (const universityId of normalizedIds) {
       if (!validIds.has(universityId) || existingIds.has(universityId)) continue;
-      if (current.length + additions.length >= MAX_COMPARE_ITEMS) break;
+      if (readyCount + additions.length >= MAX_COMPARE_ITEMS) break;
       additions.push(this.compareRepository.create({ userId, universityId, sortOrder: nextSortOrder }));
       existingIds.add(universityId);
       nextSortOrder += 1;

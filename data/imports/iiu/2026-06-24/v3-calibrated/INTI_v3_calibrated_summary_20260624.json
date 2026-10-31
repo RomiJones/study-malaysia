@@ -1,0 +1,603 @@
+{
+  "generatedAt": "2026-06-24",
+  "sourceCandidateDataset": "data/imports/iiu/2026-06-20/iiu-20260620/08_candidate_dataset.json",
+  "officialDomain": "newinti.edu.my",
+  "outputs": [
+    {
+      "path": "data/imports/iiu/2026-06-24/v3-calibrated/INTI_audit_undergraduate_20260624.json",
+      "programmes": 74,
+      "ready": 0,
+      "needsReview": 74,
+      "exceptions": 16,
+      "sha256": "554b75476bb9683a5a1a81cc3fe4dbcae28de4f5f42e67c9137e3ffec7da1e32"
+    },
+    {
+      "path": "data/imports/iiu/2026-06-24/v3-calibrated/INTI_audit_master_20260624.json",
+      "programmes": 23,
+      "ready": 0,
+      "needsReview": 23,
+      "exceptions": 15,
+      "sha256": "2664d92b0537216d54178385a118589fcb9708223fd83c3a1f7ca4f9b58c9a90"
+    },
+    {
+      "path": "data/imports/iiu/2026-06-24/v3-calibrated/INTI_audit_doctoral_20260624.json",
+      "programmes": 10,
+      "ready": 0,
+      "needsReview": 10,
+      "exceptions": 10,
+      "sha256": "0bea1c6904668186ea04d2736fc1f1dddfbef6c7b913e1e139471d302dbfc332"
+    }
+  ],
+  "calibration": {
+    "scope": "undergraduate curriculum and career Chinese quality pass; master and doctoral copied after validation",
+    "changedFieldCount": 101,
+    "changedProgrammeCount": 61,
+    "undergraduateBadPatternWarningsBefore": 75,
+    "undergraduateBadPatternWarningsAfter": 0,
+    "remainingWarningSamples": [],
+    "actionsByField": {
+      "curriculum": 59,
+      "careerProspects": 42
+    },
+    "actionsByType": {
+      "human-calibrated": 19,
+      "cleaned-5-items": 3,
+      "cleaned-6-items": 7,
+      "cleaned-2-items": 12,
+      "cleaned-24-items": 1,
+      "cleaned-13-items": 3,
+      "cleaned-18-items": 1,
+      "cleaned-1-items": 7,
+      "cleaned-7-items": 6,
+      "cleaned-3-items": 7,
+      "cleaned-9-items": 4,
+      "cleaned-4-items": 3,
+      "cleaned-16-items": 3,
+      "cleaned-8-items": 4,
+      "cleaned-14-items": 2,
+      "cleaned-11-items": 3,
+      "downgraded-needs-review": 7,
+      "cleaned-10-items": 8,
+      "cleaned-12-items": 1
+    },
+    "changedItems": [
+      {
+        "programme": "Actuarial Science Program (American University Program)",
+        "field": "curriculum",
+        "action": "human-calibrated"
+      },
+      {
+        "programme": "Actuarial Science Program (American University Program)",
+        "field": "careerProspects",
+        "action": "human-calibrated"
+      },
+      {
+        "programme": "Australian Degree Transfer Programme (Commerce)",
+        "field": "curriculum",
+        "action": "cleaned-5-items"
+      },
+      {
+        "programme": "Australian Degree Transfer Programme (Science)",
+        "field": "curriculum",
+        "action": "cleaned-6-items"
+      },
+      {
+        "programme": "Australian Degree Transfer Programme (Science)",
+        "field": "careerProspects",
+        "action": "cleaned-2-items"
+      },
+      {
+        "programme": "B.Sc. (Hons) in Physiotherapy",
+        "field": "curriculum",
+        "action": "cleaned-24-items"
+      },
+      {
+        "programme": "B.Sc. (Hons) in Physiotherapy",
+        "field": "careerProspects",
+        "action": "human-calibrated"
+      },
+      {
+        "programme": "Bachelor in Music Production and Audio Technology (Honours)",
+        "field": "curriculum",
+        "action": "cleaned-13-items"
+      },
+      {
+        "programme": "Bachelor in Sports Management (Honours)",
+        "field": "curriculum",
+        "action": "human-calibrated"
+      },
+      {
+        "programme": "Bachelor of Accountancy (Honours)",
+        "field": "curriculum",
+        "action": "cleaned-18-items"
+      },
+      {
+        "programme": "Bachelor of Accountancy (Honours)",
+        "field": "careerProspects",
+        "action": "cleaned-1-items"
+      },
+      {
+        "programme": "Bachelor of Accounting & Finance (Honours)",
+        "field": "curriculum",
+        "action": "cleaned-7-items"
+      },
+      {
+        "programme": "Bachelor of Accounting & Finance (Honours)",
+        "field": "careerProspects",
+        "action": "cleaned-2-items"
+      },
+      {
+        "programme": "Bachelor of Arts (Honours) Accounting and Finance 3+0 in collaboration with University of Hertfordshire, UK",
+        "field": "curriculum",
+        "action": "cleaned-7-items"
+      },
+      {
+        "programme": "Bachelor of Arts (Honours) Accounting and Finance 3+0 in collaboration with University of Hertfordshire, UK",
+        "field": "careerProspects",
+        "action": "cleaned-3-items"
+      },
+      {
+        "programme": "Bachelor of Arts (Honours) Advertising and Digital Marketing 3+0 in collaboration with University of Hertfordshire, UK",
+        "field": "curriculum",
+        "action": "cleaned-9-items"
+      },
+      {
+        "programme": "Bachelor of Arts (Honours) Business Administration (3+0) in collaboration with University of Hertfordshire, UK",
+        "field": "curriculum",
+        "action": "cleaned-13-items"
+      },
+      {
+        "programme": "Bachelor of Arts (Honours) Business Administration (3+0) in collaboration with University of Hertfordshire, UK",
+        "field": "careerProspects",
+        "action": "cleaned-4-items"
+      },
+      {
+        "programme": "Bachelor of Arts (Honours) Digital Media",
+        "field": "curriculum",
+        "action": "cleaned-6-items"
+      },
+      {
+        "programme": "Bachelor of Arts (Honours) Finance 3+0 in collaboration with University of Hertfordshire, UK",
+        "field": "curriculum",
+        "action": "cleaned-9-items"
+      },
+      {
+        "programme": "Bachelor of Arts (Honours) Finance 3+0 in collaboration with University of Hertfordshire, UK",
+        "field": "careerProspects",
+        "action": "cleaned-5-items"
+      },
+      {
+        "programme": "Bachelor of Arts (Honours) Marketing (3+0) in collaboration with University of Hertfordshire, UK",
+        "field": "curriculum",
+        "action": "cleaned-9-items"
+      },
+      {
+        "programme": "Bachelor of Arts (Honours) Marketing (3+0) in collaboration with University of Hertfordshire, UK",
+        "field": "careerProspects",
+        "action": "cleaned-1-items"
+      },
+      {
+        "programme": "Bachelor of Arts (Honours) Mass Communications 3+0 in collaboration with the University of Hertfordshire, UK",
+        "field": "curriculum",
+        "action": "cleaned-16-items"
+      },
+      {
+        "programme": "Bachelor of Arts (Honours) Mass Communications 3+0 in collaboration with the University of Hertfordshire, UK",
+        "field": "careerProspects",
+        "action": "cleaned-2-items"
+      },
+      {
+        "programme": "Bachelor of Arts in Communication 4+0 in collaboration with Southern New Hampshire University, USA",
+        "field": "curriculum",
+        "action": "cleaned-6-items"
+      },
+      {
+        "programme": "Bachelor of Arts in Communication 4+0 in collaboration with Southern New Hampshire University, USA",
+        "field": "careerProspects",
+        "action": "cleaned-3-items"
+      },
+      {
+        "programme": "Bachelor of Arts in Psychology 4+0 in collaboration with Southern New Hampshire University, USA",
+        "field": "curriculum",
+        "action": "cleaned-8-items"
+      },
+      {
+        "programme": "Bachelor of Arts in Psychology 4+0 in collaboration with Southern New Hampshire University, USA",
+        "field": "careerProspects",
+        "action": "cleaned-3-items"
+      },
+      {
+        "programme": "Bachelor of Banking and Finance (Honours)",
+        "field": "curriculum",
+        "action": "cleaned-6-items"
+      },
+      {
+        "programme": "Bachelor of Banking and Finance (Honours)",
+        "field": "careerProspects",
+        "action": "cleaned-1-items"
+      },
+      {
+        "programme": "Bachelor of Biotechnology (Hons)",
+        "field": "curriculum",
+        "action": "cleaned-14-items"
+      },
+      {
+        "programme": "Bachelor of Biotechnology (Hons)",
+        "field": "careerProspects",
+        "action": "cleaned-3-items"
+      },
+      {
+        "programme": "Bachelor of Business (3+0) in collaboration with Swinburne University of Technology, Australia",
+        "field": "careerProspects",
+        "action": "cleaned-1-items"
+      },
+      {
+        "programme": "Bachelor of Business (Honours) Business Administration",
+        "field": "careerProspects",
+        "action": "cleaned-1-items"
+      },
+      {
+        "programme": "Bachelor of Business (Honours) Business Administration – Online Learning",
+        "field": "curriculum",
+        "action": "cleaned-8-items"
+      },
+      {
+        "programme": "Bachelor of Business (Honours) Business Administration – Online Learning",
+        "field": "careerProspects",
+        "action": "cleaned-2-items"
+      },
+      {
+        "programme": "Bachelor of Business (Honours) Human Resource Management",
+        "field": "careerProspects",
+        "action": "cleaned-2-items"
+      },
+      {
+        "programme": "Bachelor of Business (Honours) Human Resource Management – Online Learning",
+        "field": "curriculum",
+        "action": "cleaned-8-items"
+      },
+      {
+        "programme": "Bachelor of Business (Honours) Human Resource Management – Online Learning",
+        "field": "careerProspects",
+        "action": "cleaned-4-items"
+      },
+      {
+        "programme": "Bachelor of Business (Honours) in Entrepreneurship and Marketing",
+        "field": "curriculum",
+        "action": "cleaned-3-items"
+      },
+      {
+        "programme": "Bachelor of Business (Honours) in International Business and Logistics Supply Chain Management",
+        "field": "curriculum",
+        "action": "cleaned-11-items"
+      },
+      {
+        "programme": "Bachelor of Business (Honours) International Business – Online Learning",
+        "field": "curriculum",
+        "action": "cleaned-7-items"
+      },
+      {
+        "programme": "Bachelor of Business (Honours) International Business – Online Learning",
+        "field": "careerProspects",
+        "action": "cleaned-3-items"
+      },
+      {
+        "programme": "Bachelor of Business (Honours) Logistics and Supply Chain Management",
+        "field": "careerProspects",
+        "action": "cleaned-4-items"
+      },
+      {
+        "programme": "Bachelor of Business (Honours) Management",
+        "field": "curriculum",
+        "action": "cleaned-9-items"
+      },
+      {
+        "programme": "Bachelor of Business (Honours) Marketing – Online Learning",
+        "field": "curriculum",
+        "action": "cleaned-6-items"
+      },
+      {
+        "programme": "Bachelor of Civil Engineering with Honours",
+        "field": "curriculum",
+        "action": "cleaned-16-items"
+      },
+      {
+        "programme": "Bachelor of Civil Engineering with Honours",
+        "field": "careerProspects",
+        "action": "downgraded-needs-review"
+      },
+      {
+        "programme": "Bachelor of Computer Science (Hons)",
+        "field": "curriculum",
+        "action": "cleaned-10-items"
+      },
+      {
+        "programme": "Bachelor of Computer Science (Hons)",
+        "field": "careerProspects",
+        "action": "cleaned-2-items"
+      },
+      {
+        "programme": "Bachelor of Computer Science (Hons) major in Business Analytics",
+        "field": "curriculum",
+        "action": "cleaned-10-items"
+      },
+      {
+        "programme": "Bachelor of Computer Science (Hons) major in Business Analytics",
+        "field": "careerProspects",
+        "action": "cleaned-2-items"
+      },
+      {
+        "programme": "Bachelor of Computer Science (Hons) major in Cloud Computing",
+        "field": "curriculum",
+        "action": "cleaned-10-items"
+      },
+      {
+        "programme": "Bachelor of Computer Science (Hons) major in Cloud Computing",
+        "field": "careerProspects",
+        "action": "cleaned-1-items"
+      },
+      {
+        "programme": "Bachelor of Computer Science (Hons) major in Mobile Computing",
+        "field": "curriculum",
+        "action": "cleaned-10-items"
+      },
+      {
+        "programme": "Bachelor of Computer Science (Hons) major in Network and Security",
+        "field": "curriculum",
+        "action": "cleaned-10-items"
+      },
+      {
+        "programme": "Bachelor of Computer Science (Hons) major in Network and Security",
+        "field": "careerProspects",
+        "action": "cleaned-2-items"
+      },
+      {
+        "programme": "Bachelor of Computer Science (Hons) major in Software Development",
+        "field": "curriculum",
+        "action": "cleaned-10-items"
+      },
+      {
+        "programme": "Bachelor of Computer Science (Hons) major in Software Development",
+        "field": "careerProspects",
+        "action": "cleaned-3-items"
+      },
+      {
+        "programme": "Bachelor of Education (Honours) in Teaching Chinese as a Second Language",
+        "field": "curriculum",
+        "action": "cleaned-10-items"
+      },
+      {
+        "programme": "Bachelor of Food Service Management with Culinary Arts (Honours) 3+0 in collaboration with CY Cergy Paris Université, France",
+        "field": "curriculum",
+        "action": "cleaned-11-items"
+      },
+      {
+        "programme": "Bachelor of Food Service Management with Culinary Arts (Honours) 3+0 in collaboration with CY Cergy Paris Université, France",
+        "field": "curriculum",
+        "action": "downgraded-needs-review"
+      },
+      {
+        "programme": "Bachelor of Food Service Management with Culinary Arts (Honours) 3+0 in collaboration with CY Cergy Paris Université, France",
+        "field": "careerProspects",
+        "action": "downgraded-needs-review"
+      },
+      {
+        "programme": "Bachelor of Information Technology (Hons)",
+        "field": "curriculum",
+        "action": "cleaned-6-items"
+      },
+      {
+        "programme": "Bachelor of Information Technology (Hons) major in Business Analytics",
+        "field": "curriculum",
+        "action": "cleaned-6-items"
+      },
+      {
+        "programme": "Bachelor of Information Technology (Hons) major in Business Analytics",
+        "field": "careerProspects",
+        "action": "cleaned-2-items"
+      },
+      {
+        "programme": "Bachelor of Mass Communication (Honours)",
+        "field": "curriculum",
+        "action": "cleaned-14-items"
+      },
+      {
+        "programme": "Bachelor of Mass Communication (Honours)",
+        "field": "careerProspects",
+        "action": "downgraded-needs-review"
+      },
+      {
+        "programme": "Bachelor of Mass Communication (Hons)",
+        "field": "curriculum",
+        "action": "cleaned-12-items"
+      },
+      {
+        "programme": "Bachelor of Mass Communication (Hons)",
+        "field": "careerProspects",
+        "action": "downgraded-needs-review"
+      },
+      {
+        "programme": "Bachelor of Mechanical Engineering with Honours",
+        "field": "curriculum",
+        "action": "cleaned-16-items"
+      },
+      {
+        "programme": "Bachelor of Mechanical Engineering with Honours",
+        "field": "careerProspects",
+        "action": "cleaned-2-items"
+      },
+      {
+        "programme": "Bachelor of Science (Hons) Quantity Surveying",
+        "field": "curriculum",
+        "action": "cleaned-5-items"
+      },
+      {
+        "programme": "Bachelor of Science (Hons) Quantity Surveying",
+        "field": "careerProspects",
+        "action": "cleaned-2-items"
+      },
+      {
+        "programme": "Bachelor of Science in Business Administration 4+0 in collaboration with Southern New Hampshire University, USA",
+        "field": "curriculum",
+        "action": "cleaned-13-items"
+      },
+      {
+        "programme": "Bachelor of Science in Business Administration 4+0 in collaboration with Southern New Hampshire University, USA",
+        "field": "careerProspects",
+        "action": "cleaned-1-items"
+      },
+      {
+        "programme": "Bachelor of Science with Honours in Computer Science 3+0 in collaboration with Coventry University, UK",
+        "field": "curriculum",
+        "action": "cleaned-2-items"
+      },
+      {
+        "programme": "Bachelor of Technology (Honours) Data Science",
+        "field": "curriculum",
+        "action": "cleaned-11-items"
+      },
+      {
+        "programme": "Bachelor of Technology in Digital Construction Management",
+        "field": "curriculum",
+        "action": "cleaned-7-items"
+      },
+      {
+        "programme": "Bachelor of Technology in Intelligent Manufacturing",
+        "field": "curriculum",
+        "action": "cleaned-8-items"
+      },
+      {
+        "programme": "Bachelor of Technology in Intelligent Manufacturing",
+        "field": "curriculum",
+        "action": "downgraded-needs-review"
+      },
+      {
+        "programme": "Bachelor of Technology in Intelligent Process and Product Design",
+        "field": "curriculum",
+        "action": "cleaned-7-items"
+      },
+      {
+        "programme": "Bachelor of Technology in Intelligent Process and Product Design",
+        "field": "curriculum",
+        "action": "downgraded-needs-review"
+      },
+      {
+        "programme": "Bachelor of Traditional Chinese Medicine (Hons)",
+        "field": "careerProspects",
+        "action": "human-calibrated"
+      },
+      {
+        "programme": "Biosciences Degree Program (American University Program)",
+        "field": "curriculum",
+        "action": "human-calibrated"
+      },
+      {
+        "programme": "Biosciences Degree Program (American University Program)",
+        "field": "careerProspects",
+        "action": "human-calibrated"
+      },
+      {
+        "programme": "Business Degree Program (American Degree Transfer Program)",
+        "field": "curriculum",
+        "action": "human-calibrated"
+      },
+      {
+        "programme": "Business Degree Program (American Degree Transfer Program)",
+        "field": "careerProspects",
+        "action": "human-calibrated"
+      },
+      {
+        "programme": "Computer Science Degree Program (American Degree Transfer Program)",
+        "field": "curriculum",
+        "action": "human-calibrated"
+      },
+      {
+        "programme": "Computer Science Degree Program (American Degree Transfer Program)",
+        "field": "careerProspects",
+        "action": "human-calibrated"
+      },
+      {
+        "programme": "Engineering Degree Program (American University Program)",
+        "field": "curriculum",
+        "action": "human-calibrated"
+      },
+      {
+        "programme": "Engineering Degree Program (American University Program)",
+        "field": "careerProspects",
+        "action": "human-calibrated"
+      },
+      {
+        "programme": "Health & Applied Sciences Program (American University Program)",
+        "field": "curriculum",
+        "action": "human-calibrated"
+      },
+      {
+        "programme": "Health & Applied Sciences Program (American University Program)",
+        "field": "careerProspects",
+        "action": "human-calibrated"
+      },
+      {
+        "programme": "Mass Communication Degree Program (American Degree Transfer Program)",
+        "field": "curriculum",
+        "action": "human-calibrated"
+      },
+      {
+        "programme": "Mass Communication Degree Program (American Degree Transfer Program)",
+        "field": "careerProspects",
+        "action": "human-calibrated"
+      },
+      {
+        "programme": "Master of Engineering in Electrical and Electronic Engineering 4+0 in collaboration with Coventry University, UK",
+        "field": "curriculum",
+        "action": "cleaned-10-items"
+      },
+      {
+        "programme": "Master of Engineering in Mechanical Engineering 4+0 in collaboration with Coventry University, UK",
+        "field": "curriculum",
+        "action": "cleaned-7-items"
+      },
+      {
+        "programme": "Psychology Degree Program (American Degree Transfer Program)",
+        "field": "curriculum",
+        "action": "human-calibrated"
+      },
+      {
+        "programme": "Psychology Degree Program (American Degree Transfer Program)",
+        "field": "careerProspects",
+        "action": "human-calibrated"
+      }
+    ]
+  },
+  "officialLimitations": {
+    "exactInternationalTotalTuition": "not published; official pages use Approx. RM and exclude 6% SST for international students",
+    "allRecordsPublicReady": false,
+    "readyCount": 0,
+    "needsReviewCount": 107
+  },
+  "secondPass": {
+    "changedItems": [
+      {
+        "file": "v2-bachelor",
+        "programme": "Bachelor of Food Service Management with Culinary Arts (Honours) 3+0 in collaboration with CY Cergy Paris Université, France",
+        "field": "curriculum",
+        "oldEmpty": true,
+        "newCount": 58
+      },
+      {
+        "file": "v2-bachelor",
+        "programme": "Bachelor of Technology in Intelligent Manufacturing",
+        "field": "curriculum",
+        "oldEmpty": true,
+        "newCount": 40
+      },
+      {
+        "file": "v2-bachelor",
+        "programme": "Bachelor of Technology in Intelligent Process and Product Design",
+        "field": "curriculum",
+        "oldEmpty": true,
+        "newCount": 40
+      }
+    ],
+    "undergraduateCurriculumEmptyAfter": 0
+  }
+}

@@ -1,0 +1,106 @@
+[
+  {
+    "id": "user-task",
+    "instruction": "采集统计诺丁汉大学马来西亚校区的本硕博专业信息，使用 StudyMY official university collector skill 和验收标准，严格执行。",
+    "scope": "run",
+    "status": "completed",
+    "evidencePointer": "00_run_contract.json",
+    "reason": ""
+  },
+  {
+    "id": "run-contract",
+    "instruction": "Record run contract and one-input defaults.",
+    "scope": "run",
+    "status": "completed",
+    "evidencePointer": "00_run_contract.json",
+    "reason": ""
+  },
+  {
+    "id": "source-registry",
+    "instruction": "Discover official source registry and accepted domains.",
+    "scope": "source",
+    "status": "completed",
+    "evidencePointer": "02_official_source_registry.json",
+    "reason": ""
+  },
+  {
+    "id": "baseline",
+    "instruction": "Lock official programme baseline by level before enrichment.",
+    "scope": "level",
+    "status": "completed",
+    "evidencePointer": "03_level_manifest.json",
+    "reason": ""
+  },
+  {
+    "id": "row-disposal",
+    "instruction": "Dispose every official row with a reviewed state.",
+    "scope": "level",
+    "status": "completed",
+    "evidencePointer": "04_official_row_disposal.json",
+    "reason": ""
+  },
+  {
+    "id": "source-cache",
+    "instruction": "Snapshot/cache official authorities with retrieval metadata and hash.",
+    "scope": "source",
+    "status": "completed",
+    "evidencePointer": "05_source_cache_index.json",
+    "reason": ""
+  },
+  {
+    "id": "page-options",
+    "instruction": "Inventory every programme detail page option, panel, selector, and same-programme link.",
+    "scope": "programme",
+    "status": "completed",
+    "evidencePointer": "06_page_option_inventory.json",
+    "reason": ""
+  },
+  {
+    "id": "field-coverage",
+    "instruction": "Build field coverage matrix for every material field and canonical programme.",
+    "scope": "field",
+    "status": "completed",
+    "evidencePointer": "07_field_coverage_matrix.json",
+    "reason": ""
+  },
+  {
+    "id": "candidate",
+    "instruction": "Build deterministic StudyMY candidate dataset.",
+    "scope": "programme",
+    "status": "completed",
+    "evidencePointer": "08_candidate_dataset.json",
+    "reason": ""
+  },
+  {
+    "id": "trace",
+    "instruction": "Trace ready public values to official evidence.",
+    "scope": "field",
+    "status": "completed",
+    "evidencePointer": "09_source_to_candidate_trace.json",
+    "reason": ""
+  },
+  {
+    "id": "display-parity",
+    "instruction": "Verify institution, catalogue, list, detail, and leakage display parity.",
+    "scope": "display",
+    "status": "completed",
+    "evidencePointer": "10_display_parity_report.json",
+    "reason": ""
+  },
+  {
+    "id": "exceptions",
+    "instruction": "Record blocking/review exceptions with evidence and next action.",
+    "scope": "run",
+    "status": "completed",
+    "evidencePointer": "11_exception_queue.json",
+    "reason": ""
+  },
+  {
+    "id": "operator-report",
+    "instruction": "Generate Ian review report with counts, gaps, and validation results.",
+    "scope": "run",
+    "status": "completed",
+    "evidencePointer": "12_operator_review_report.md",
+    "reason": ""
+  }
+]

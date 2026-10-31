@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "surfaces": [
+    {
+      "surface": "institution profile",
+      "fields": {
+        "officialLinks": {
+          "state": "ready",
+          "evidencePointer": "source-cache-index.json"
+        }
+      }
+    },
+    {
+      "surface": "catalogue tabs and aggregate counts",
+      "fields": {
+        "masterCount": {
+          "state": "ready",
+          "evidencePointer": "existing master audit 153 rows"
+        },
+        "phdCount": {
+          "state": "ready",
+          "evidencePointer": "55 doctoral rows"
+        },
+        "reviewLeakage": {
+          "state": "ready",
+          "evidencePointer": "0 needs-review candidate rows"
+        }
+      }
+    },
+    {
+      "surface": "program-list rows",
+      "fields": {
+        "localizedName": {
+          "state": "ready",
+          "evidencePointer": "official English identity"
+        },
+        "faculty": {
+          "state": "ready",
+          "evidencePointer": "faculty programme pages"
+        },
+        "tuitionDisplay": {
+          "state": "ready",
+          "evidencePointer": "fee status partition retained"
+        }
+      }
+    },
+    {
+      "surface": "program-detail sections",
+      "fields": {
+        "officialAcademicRequirement": {
+          "state": "ready",
+          "evidencePointer": "entry requirement sources"
+        },
+        "officialLanguageRequirement": {
+          "state": "ready",
+          "evidencePointer": "English requirement source"
+        },
+        "curriculum": {
+          "state": "unpublished",
+          "reason": "Uniform programme-level curriculum is not published for every doctoral row."
+        },
+        "careers": {
+          "state": "unpublished",
+          "reason": "Structured programme-level career list is not published in collected source set."
+        }
+      }
+    },
+    {
+      "surface": "leakage and public filter checks",
+      "fields": {
+        "needsReviewLeakage": {
+          "state": "ready",
+          "evidencePointer": "0 needs-review doctoral candidates"
+        },
+        "duplicateLeakage": {
+          "state": "ready",
+          "evidencePointer": "DPP duplicate rows disposed as duplicate-of"
+        }
+      }
+    }
+  ]
+}

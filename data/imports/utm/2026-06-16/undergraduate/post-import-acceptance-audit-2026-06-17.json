@@ -1,75 +1,30 @@
 {
   "universityCode": "UTM",
   "scope": "undergraduate international bachelor",
-  "auditedAt": "2026-06-17",
-  "importStatus": "imported-and-verified-public-44",
-  "logicFix": "canonical programmes must be imported and published for catalogue completeness even when current-cycle international intake is closed; public pages expose all 44 official rows and clearly mark the 4 not-open-to-international rows.",
+  "auditedAt": "2026-06-18",
+  "importStatus": "imported-and-verified-public-44-current-cycle-corrected",
+  "logicFix": "Canonical programmes remain imported and published for catalogue completeness when UTM marks the current 2026/2027 September/February intake as not offered. This status is not treated as permanent international ineligibility; public pages expose all 44 official rows and clearly mark the 4 current-cycle-not-open rows while keeping fees and China-specific entry requirements visible.",
   "database": {
     "universityId": 8,
     "canonicalImportedRows": 44,
     "publicVisibleRows": 44,
     "publicReadyRows": 40,
     "publishedRows": 44,
-    "notAvailableForInternationalRows": 4,
+    "notAvailableForInternationalRows": 0,
     "legacyBachelorPublicRows": 0,
-    "latestBackupPath": "apps/api/tmp/backups/utm-undergraduate-before-2026-06-17T06-18-33-480Z.json"
+    "latestBackupPath": "apps/api/tmp/backups/utm-undergraduate-before-2026-06-17T06-18-33-480Z.json",
+    "currentCycleNotOpenRows": 4
   },
   "collection": {
     "canonicalRows": 44,
     "currentInternationalReadyRows": 40,
     "currentCycleUnavailableRows": 4,
-    "officialSourceCount": 45
+    "officialSourceCount": 45,
+    "currentCycleNotOpenRows": 4
   },
-  "unavailableRows": [
-    {
-      "ordinal": 15,
-      "nameEnOfficial": "Bachelor of Mechanical Engineering (Manufacturing) with Honours",
-      "facultyEn": "Faculty of Mechanical Engineering",
-      "status": "international-unavailable-current-cycle",
-      "intakeText": "Not offered for both the September and February intakes for the 2026/2027 academic session",
-      "publicDisplayStatus": "not-available-for-international",
-      "officialSourceStatus": "official-page-verified-international-not-available",
-      "isPublished": true,
-      "sourceUrl": "https://admission.utm.my/offered-allcourses-international/"
-    },
-    {
-      "ordinal": 18,
-      "nameEnOfficial": "Bachelor in Accounting with Honours",
-      "facultyEn": "Faculty of Management",
-      "status": "international-unavailable-current-cycle",
-      "intakeText": "Not offered for both the September and February intakes for the 2026/2027 academic session",
-      "publicDisplayStatus": "not-available-for-international",
-      "officialSourceStatus": "official-page-verified-international-not-available",
-      "isPublished": true,
-      "sourceUrl": "https://admission.utm.my/offered-allcourses-international/"
-    },
-    {
-      "ordinal": 19,
-      "nameEnOfficial": "Bachelor in Digital Marketing with Honours",
-      "facultyEn": "Faculty of Management",
-      "status": "international-unavailable-current-cycle",
-      "intakeText": "Not offered for both the September and February intakes for the 2026/2027 academic session",
-      "publicDisplayStatus": "not-available-for-international",
-      "officialSourceStatus": "official-page-verified-international-not-available",
-      "isPublished": true,
-      "sourceUrl": "https://admission.utm.my/offered-allcourses-international/"
-    },
-    {
-      "ordinal": 20,
-      "nameEnOfficial": "Bachelor of Management with Honours",
-      "facultyEn": "Faculty of Management",
-      "status": "international-unavailable-current-cycle",
-      "intakeText": "Not offered for both the September and February intakes for the 2026/2027 academic session",
-      "publicDisplayStatus": "not-available-for-international",
-      "officialSourceStatus": "official-page-verified-international-not-available",
-      "isPublished": true,
-      "sourceUrl": "https://admission.utm.my/offered-allcourses-international/"
-    }
-  ],
   "fieldCoverage": {
     "duration": {
-      "programme-specific": 40,
-      "not-open-current-cycle": 4
+      "programme-specific-or-detail": 44
     },
     "tuition": {
       "official-total": 44
@@ -99,19 +54,23 @@
     },
     "localization": {
       "pending-after-fact-lock": 40
+    },
+    "chinaEntryRequirements": {
+      "official-country-table-general-rule": 44,
+      "current-cycle-not-open-rows-covered": 4
     }
   },
   "gates": {
-    "canonicalPartition": "44 = 40 ready + 0 needs-review + 4 not-available-for-international",
+    "canonicalPartition": "44 = 40 ready + 4 current-cycle-not-open + 0 needs-review + 0 not-available-for-international",
     "publicDisplay": "public /api/universities/utm and /api/programs?universityId=8&levels=bachelor return 44 bachelor rows",
-    "closedRowDisclosure": "the 4 current-cycle closed rows are public with publicDisplayStatus=not-available-for-international and officialSourceStatus=official-page-verified-international-not-available",
-    "reviewVisibility": "database verifier requires 44 imported rows, 44 published rows, 40 ready rows, and 4 not-available rows"
+    "closedRowDisclosure": "the 4 current-cycle not-open rows are public with publicDisplayStatus=current-cycle-not-open and officialSourceStatus=official-page-verified-current-cycle-not-open; they are not labeled as permanent international-ineligible programmes",
+    "reviewVisibility": "database verifier requires 44 imported rows, 44 published rows, 40 ready rows, 4 current-cycle-not-open rows, and 0 not-available-for-international rows"
   },
   "residualNotes": [
-    "All canonical UTM undergraduate rows are now imported into the database and published in public catalogue/detail APIs.",
-    "The four current-cycle closed rows are visible publicly and use publicDisplayStatus=not-available-for-international plus officialSourceStatus=official-page-verified-international-not-available.",
-    "Duration has programme-specific official/detail/supplemental evidence for all 40 public ready rows.",
-    "Public programCount is now 44 because it represents the complete official UTM undergraduate catalogue; ready count remains 40 and not-available-for-international count remains 4."
+    "All canonical UTM undergraduate rows remain imported into the database and visible in public catalogue/detail APIs.",
+    "The four current-cycle not-open rows use publicDisplayStatus=current-cycle-not-open plus officialSourceStatus=official-page-verified-current-cycle-not-open.",
+    "The four rows retain official UTM total tuition, IELTS routes, and China country-specific entry requirement text; the blocked action is application planning for the current cycle, not catalogue visibility.",
+    "Public programCount is 44 because it represents the complete official UTM undergraduate catalogue; ready/currently open count is 40 and current-cycle-not-open count is 4."
   ],
   "keySourceUrls": [
     "https://admission.utm.my/offered-allcourses-international/",
@@ -129,5 +88,55 @@
     "npm --workspace @studymy/api run build",
     "npm --workspace @studymy/web run build",
     "node -e API verification for /api/universities/utm, /api/programs?universityId=8&levels=bachelor&includeMeta=true&pageSize=80, and a not-available programme detail"
+  ],
+  "currentCycleNotOpenRows": [
+    {
+      "ordinal": 15,
+      "nameEnOfficial": "Bachelor of Mechanical Engineering (Manufacturing) with Honours",
+      "facultyEn": "Faculty of Mechanical Engineering",
+      "status": "current-cycle-not-open",
+      "intakeText": "Not offered for both the September and February intakes for the 2026/2027 academic session",
+      "publicDisplayStatus": "current-cycle-not-open",
+      "officialSourceStatus": "official-page-verified-current-cycle-not-open",
+      "isPublished": true,
+      "sourceUrl": "https://admission.utm.my/offered-allcourses-international/",
+      "chinaRequirementEvidence": "China Engineering route: Senior Secondary School Graduation Certificate or vocational/technical/skilled-worker certificate; scores >= 70% in Mathematics and Physics plus Chemistry or Biology."
+    },
+    {
+      "ordinal": 18,
+      "nameEnOfficial": "Bachelor in Accounting with Honours",
+      "facultyEn": "Faculty of Management",
+      "status": "current-cycle-not-open",
+      "intakeText": "Not offered for both the September and February intakes for the 2026/2027 academic session",
+      "publicDisplayStatus": "current-cycle-not-open",
+      "officialSourceStatus": "official-page-verified-current-cycle-not-open",
+      "isPublished": true,
+      "sourceUrl": "https://admission.utm.my/offered-allcourses-international/",
+      "chinaRequirementEvidence": "China Social Science route: Senior Secondary School Graduation Certificate or vocational/technical/skilled-worker certificate; scores >= 70% in any three accepted subjects."
+    },
+    {
+      "ordinal": 19,
+      "nameEnOfficial": "Bachelor in Digital Marketing with Honours",
+      "facultyEn": "Faculty of Management",
+      "status": "current-cycle-not-open",
+      "intakeText": "Not offered for both the September and February intakes for the 2026/2027 academic session",
+      "publicDisplayStatus": "current-cycle-not-open",
+      "officialSourceStatus": "official-page-verified-current-cycle-not-open",
+      "isPublished": true,
+      "sourceUrl": "https://admission.utm.my/offered-allcourses-international/",
+      "chinaRequirementEvidence": "China Social Science route: Senior Secondary School Graduation Certificate or vocational/technical/skilled-worker certificate; scores >= 70% in any three accepted subjects."
+    },
+    {
+      "ordinal": 20,
+      "nameEnOfficial": "Bachelor of Management with Honours",
+      "facultyEn": "Faculty of Management",
+      "status": "current-cycle-not-open",
+      "intakeText": "Not offered for both the September and February intakes for the 2026/2027 academic session",
+      "publicDisplayStatus": "current-cycle-not-open",
+      "officialSourceStatus": "official-page-verified-current-cycle-not-open",
+      "isPublished": true,
+      "sourceUrl": "https://admission.utm.my/offered-allcourses-international/",
+      "chinaRequirementEvidence": "China Social Science route: Senior Secondary School Graduation Certificate or vocational/technical/skilled-worker certificate; scores >= 70% in any three accepted subjects."
+    }
   ]
 }

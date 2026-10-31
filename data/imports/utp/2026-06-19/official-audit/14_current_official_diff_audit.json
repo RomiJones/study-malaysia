@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "status": "blocked-for-public-release",
+  "currentAsOf": "2026-06-19",
+  "findings": [
+    {
+      "scope": "master/phd",
+      "finding": "Research fees are still officially published as annual rates/components, not unique full-duration total tuition; public release needs an approved calculated-from-official-rate policy."
+    },
+    {
+      "scope": "all",
+      "finding": "Resolved hard issues: bachelor 15-row coverage retained, MPhil uses working directory authority, Process Safety ODL canonical row confirmed, 5 pending fee rows moved to exact programme detail fee authority."
+    }
+  ]
+}

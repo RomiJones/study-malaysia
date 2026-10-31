@@ -1,9 +1,10 @@
-import { Body, Controller, Delete, Get, Param, Patch, Post, Query, Req, UseGuards, Inject } from "@nestjs/common";
-import { IsArray, IsBoolean, IsNumber, IsObject, IsOptional, IsString } from "class-validator";
+import { Body, Controller, Delete, Get, Param, Patch, Post, Query, Req, Res, UseGuards, Inject } from "@nestjs/common";
+import { IsArray, IsBoolean, IsIn, IsNumber, IsObject, IsOptional, IsString } from "class-validator";
 import { RequireAdminPermissions } from "../common/admin-permissions.js";
 import { AdminAuthGuard, AdminPermissionGuard, type AdminRequestUser } from "../common/guards.js";
 import { AdminApplicationsService } from "./admin-applications.service.js";
 import { AdminCmsService } from "./admin-cms.service.js";
+import { AdminRecommendationsService } from "./admin-recommendations.service.js";
 import { AdminSettingsService } from "./admin-settings.service.js";
 import { adminOk } from "./admin.response.js";
 
@@ -139,10 +140,51 @@ class SaveApplicationDto {
 class SaveFollowUpDto {
   @IsString() followUpType!: string;
   @IsString() content!: string;
+  @IsOptional() @IsIn(["internal", "student", "system"]) visibility?: "internal" | "student" | "system";
   @IsOptional() @IsString() nextStep?: string;
   @IsOptional() @IsString() nextFollowUpAt?: string;
   @IsOptional() @IsString() statusTo?: string;
   @IsOptional() @IsNumber() assignAdminId?: number | null;
+}
+
+class AssignApplicationDto {
+  @IsOptional() @IsNumber() assignedAdminId?: number | null;
+  @IsOptional() @IsString() note?: string;
+}
+
+class UpdateApplicationStatusDto {
+  @IsString() status!: string;
+  @IsOptional() @IsString() note?: string;
+  @IsOptional() @IsString() nextStep?: string;
+  @IsOptional() @IsString() nextFollowUpAt?: string;
+}
+
+class ReviewApplicationMaterialDto {
+  @IsIn(["pending-review", "approved", "needs-revision", "rejected"])
+  reviewStatus!: "pending-review" | "approved" | "needs-revision" | "rejected";
+  @IsOptional() @IsString() note?: string;
+  @IsOptional() @IsString() nextStep?: string;
+}
+
+class AdjustApplicationMaterialDto {
+  @IsIn(["add", "update", "waive", "reopen"])
+  action!: "add" | "update" | "waive" | "reopen";
+  @IsOptional() @IsString() key?: string;
+  @IsOptional() @IsString() title?: string;
+  @IsOptional() @IsString() note?: string;
+  @IsOptional() @IsString() category?: string;
+  @IsOptional() @IsString() group?: string;
+  @IsOptional() @IsIn(["required", "recommended", "conditional"]) requirementLevel?: "required" | "recommended" | "conditional";
+  @IsOptional() @IsIn(["school", "degree", "language", "scholarship", "visa", "profile", "staff"]) source?: "school" | "degree" | "language" | "scholarship" | "visa" | "profile" | "staff";
+  @IsOptional() @IsString() reason?: string;
+  @IsOptional() @IsArray() uploadTips?: string[];
+  @IsOptional() @IsBoolean() allowMultipleFiles?: boolean;
+  @IsOptional() @IsString() waiverReason?: string;
+}
+
+class SaveApplicationMessageDto {
+  @IsString() content!: string;
+  @IsOptional() @IsString() messageType?: "message" | "revision-request" | "material-upload" | "system";
 }
 
 class SaveConfigDto {
@@ -176,15 +218,18 @@ export class AdminController {
   private readonly cmsService: AdminCmsService;
   private readonly applicationsService: AdminApplicationsService;
   private readonly settingsService: AdminSettingsService;
+  private readonly recommendationsService: AdminRecommendationsService;
 
   constructor(
     @Inject(AdminCmsService) cmsService: AdminCmsService,
     @Inject(AdminApplicationsService) applicationsService: AdminApplicationsService,
-    @Inject(AdminSettingsService) settingsService: AdminSettingsService
+    @Inject(AdminSettingsService) settingsService: AdminSettingsService,
+    @Inject(AdminRecommendationsService) recommendationsService: AdminRecommendationsService
   ) {
     this.cmsService = cmsService;
     this.applicationsService = applicationsService;
     this.settingsService = settingsService;
+    this.recommendationsService = recommendationsService;
   }
 
   @RequireAdminPermissions("dashboard:view")
@@ -260,6 +305,80 @@ export class AdminController {
   }
 
   @RequireAdminPermissions("application:view")
+  @Get("applications-workload")
+  async applicationsWorkload(@Req() request: { adminUser: AdminRequestUser }) {
+    return adminOk(await this.applicationsService.workload(request.adminUser));
+  }
+
+  @RequireAdminPermissions("application:view")
+  @Get("application-notifications")
+  async applicationNotifications(@Req() request: { adminUser: AdminRequestUser }, @Query() query: Record<string, string>) {
+    return adminOk(await this.applicationsService.notifications(request.adminUser, query));
+  }
+
+  @RequireAdminPermissions("application:view")
+  @Get("applications-workbench")
+  async applicationsWorkbench(@Req() request: { adminUser: AdminRequestUser }) {
+    return adminOk(await this.applicationsService.workbench(request.adminUser));
+  }
+
+  @RequireAdminPermissions("application:view")
+  @Patch("application-notifications/:id/read")
+  async markApplicationNotificationRead(@Req() request: { adminUser: AdminRequestUser }, @Param("id") id: string) {
+    return adminOk(await this.applicationsService.markNotificationRead(request.adminUser, Number(id)));
+  }
+
+  @RequireAdminPermissions("application:view")
+  @Get("applications/:id/materials/:key/download")
+  async downloadApplicationMaterial(
+    @Req() request: { adminUser: AdminRequestUser },
+    @Param("id") id: string,
+    @Param("key") key: string,
+    @Query("versionId") versionId: string | undefined,
+    @Res() response: any
+  ) {
+    const file = await this.applicationsService.materialFile(request.adminUser, Number(id), key, versionId);
+    response.setHeader("Content-Type", file.mimeType);
+    response.setHeader("Content-Disposition", `attachment; filename*=UTF-8''${encodeURIComponent(file.fileName)}`);
+    file.stream.pipe(response);
+  }
+
+  @RequireAdminPermissions("application:assign")
+  @Patch("applications/:id/assign")
+  async assignApplication(@Req() request: { adminUser: AdminRequestUser }, @Param("id") id: string, @Body() payload: AssignApplicationDto) {
+    return adminOk(await this.applicationsService.assign(request.adminUser, Number(id), payload));
+  }
+
+  @RequireAdminPermissions("application:followup")
+  @Patch("applications/:id/status")
+  async updateApplicationStatus(@Req() request: { adminUser: AdminRequestUser }, @Param("id") id: string, @Body() payload: UpdateApplicationStatusDto) {
+    return adminOk(await this.applicationsService.updateStatus(request.adminUser, Number(id), payload));
+  }
+
+  @RequireAdminPermissions("application:followup")
+  @Patch("applications/:id/materials/:key/review")
+  async reviewApplicationMaterial(
+    @Req() request: { adminUser: AdminRequestUser },
+    @Param("id") id: string,
+    @Param("key") key: string,
+    @Body() payload: ReviewApplicationMaterialDto
+  ) {
+    return adminOk(await this.applicationsService.reviewMaterial(request.adminUser, Number(id), key, payload));
+  }
+
+  @RequireAdminPermissions("application:followup")
+  @Patch("applications/:id/materials/adjust")
+  async adjustApplicationMaterial(@Req() request: { adminUser: AdminRequestUser }, @Param("id") id: string, @Body() payload: AdjustApplicationMaterialDto) {
+    return adminOk(await this.applicationsService.adjustMaterialChecklist(request.adminUser, Number(id), payload));
+  }
+
+  @RequireAdminPermissions("application:followup")
+  @Post("applications/:id/messages")
+  async sendApplicationMessage(@Req() request: { adminUser: AdminRequestUser }, @Param("id") id: string, @Body() payload: SaveApplicationMessageDto) {
+    return adminOk(await this.applicationsService.sendMessage(request.adminUser, Number(id), payload as any));
+  }
+
+  @RequireAdminPermissions("application:view")
   @Get("applications/:id")
   async applicationDetail(@Req() request: { adminUser: AdminRequestUser }, @Param("id") id: string) {
     return adminOk(await this.applicationsService.detail(request.adminUser, Number(id)));
@@ -287,6 +406,12 @@ export class AdminController {
   @Get("settings/configs")
   async configs(@Query("category") category?: string) {
     return adminOk(await this.settingsService.listConfigs(category));
+  }
+
+  @RequireAdminPermissions("settings:view")
+  @Get("recommendation-runs")
+  async recommendationRuns(@Query() query: Record<string, string>) {
+    return adminOk(await this.recommendationsService.listRuns(query));
   }
 
   @RequireAdminPermissions("settings:view", "school:view", "program:view")

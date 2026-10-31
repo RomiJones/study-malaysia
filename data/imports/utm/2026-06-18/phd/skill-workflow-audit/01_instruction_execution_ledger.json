@@ -1,0 +1,44 @@
+[
+  {
+    "id": "latest-user-instruction",
+    "instruction": "严格执行标准，使用 StudyMY 专用 skill 对 UTM 理工大学博士专业信息进行采集。",
+    "scope": "run",
+    "status": "completed",
+    "evidencePointer": "run-contract.json; phd candidate-dataset.json"
+  },
+  {
+    "id": "authorization",
+    "instruction": "本轮为采集，不做数据库写入或发布。",
+    "scope": "run",
+    "status": "completed",
+    "evidencePointer": "run-contract.json authorization=collect"
+  },
+  {
+    "id": "scope-lock",
+    "instruction": "本轮只处理 UTM 博士层级；硕士、本科和其它院校不在本轮采集范围内。",
+    "scope": "level",
+    "status": "completed",
+    "evidencePointer": "run-contract.json level=phd"
+  },
+  {
+    "id": "phd-baseline",
+    "instruction": "锁定 UTM 博士官方目录、行处置和规范数量。",
+    "scope": "level",
+    "status": "completed",
+    "evidencePointer": "level-manifest.json; skill-workflow-audit/04_official_row_disposal.json"
+  },
+  {
+    "id": "anti-omission",
+    "instruction": "所有官方行、页面选项、字段覆盖和 ready 值必须有状态和证据。",
+    "scope": "run",
+    "status": "completed",
+    "evidencePointer": "skill-workflow-audit/06_page_option_inventory.json; 07_field_coverage_matrix.json; 09_source_to_candidate_trace.json"
+  },
+  {
+    "id": "notion-update",
+    "instruction": "更新中文开发记录或说明 Notion 未更新。",
+    "scope": "run",
+    "status": "completed",
+    "evidencePointer": "docs/notion-snapshot/开发进度日志.md"
+  }
+]

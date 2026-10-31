@@ -1,0 +1,9 @@
+{
+  "apiPrograms": 49,
+  "apiLocalPathLeak": false,
+  "apiOfficialSourceRows": 49,
+  "apiFeeSourceEmptyRows": 49,
+  "uiUsesProgramOfficialSourceUrl": true,
+  "uiUsesOfficialFeeSourceUrl": true,
+  "uiDeduplicatesLinks": true
+}

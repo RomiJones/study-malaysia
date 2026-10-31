@@ -1,0 +1,68 @@
+{
+  "status": "passed",
+  "checkedAt": "2026-06-24T08:45:31.199Z",
+  "baseUrl": "http://127.0.0.1:3000",
+  "universityRoute": {
+    "path": "/api/universities/inti-international-university",
+    "code": "INTI",
+    "slug": "inti-international-university",
+    "publicDisplayStatus": "ready",
+    "exposedProgrammes": 0,
+    "catalogStatusSummary": {
+      "all": {
+        "total": 0,
+        "ready": 0,
+        "needsReview": 0,
+        "notAvailableForInternational": 0
+      },
+      "byLevel": {
+        "bachelor": {
+          "total": 0,
+          "ready": 0,
+          "needsReview": 0,
+          "notAvailableForInternational": 0
+        },
+        "master": {
+          "total": 0,
+          "ready": 0,
+          "needsReview": 0,
+          "notAvailableForInternational": 0
+        },
+        "postgraduate-certificate": {
+          "total": 0,
+          "ready": 0,
+          "needsReview": 0,
+          "notAvailableForInternational": 0
+        },
+        "postgraduate-diploma": {
+          "total": 0,
+          "ready": 0,
+          "needsReview": 0,
+          "notAvailableForInternational": 0
+        },
+        "phd": {
+          "total": 0,
+          "ready": 0,
+          "needsReview": 0,
+          "notAvailableForInternational": 0
+        }
+      }
+    }
+  },
+  "publicProgramSearch": {
+    "path": "/api/programs?search=INTI&pageSize=200",
+    "itemCount": 6,
+    "reviewSlugMatches": 0
+  },
+  "publicProgramListByUniversity": {
+    "path": "/api/programs?universityId=13&pageSize=200",
+    "itemCount": 0,
+    "reviewSlugMatches": 0
+  },
+  "reviewDetailRoute": {
+    "path": "/api/programs/inti-official-2026-review-row-001-actuarial-science-program-american-university-program",
+    "status": 404
+  },
+  "conclusion": "INTI review-only rows are available for database/admin review while public student APIs keep review rows and review counts hidden.",
+  "issues": []
+}

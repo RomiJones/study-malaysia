@@ -1,0 +1,97 @@
+{
+  "schemaVersion": 1,
+  "surfaces": [
+    {
+      "surface": "institution profile",
+      "fields": {
+        "officialName": {
+          "state": "ready",
+          "sourceUrl": "https://www.monash.edu.my/"
+        },
+        "officialWebsite": {
+          "state": "ready",
+          "sourceUrl": "https://www.monash.edu.my/"
+        },
+        "localizedName": {
+          "state": "ready",
+          "sourceUrl": "https://www.monash.edu.my/"
+        }
+      }
+    },
+    {
+      "surface": "catalogue tabs and counts",
+      "fields": {
+        "bachelorCount": {
+          "state": "ready",
+          "value": 36,
+          "sourceUrl": "https://www.monash.edu.my/study/undergraduate"
+        },
+        "masterCount": {
+          "state": "ready",
+          "value": 17,
+          "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research"
+        },
+        "phdCount": {
+          "state": "ready",
+          "value": 7,
+          "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research"
+        }
+      }
+    },
+    {
+      "surface": "program-list rows",
+      "fields": {
+        "duration": {
+          "state": "ready",
+          "sourceUrl": "https://www.monash.edu.my/study"
+        },
+        "tuition": {
+          "state": "ready",
+          "sourceUrl": "https://www.monash.edu.my/study/undergraduate/fees",
+          "note": "51 rows use authorized rate-derived total tuition; 9 rows use official full-course totals."
+        },
+        "ielts": {
+          "state": "ready",
+          "sourceUrl": "https://www.monash.edu.my/study/entry-requirements/english/tests"
+        },
+        "intake": {
+          "state": "ready",
+          "sourceUrl": "https://www.monash.edu.my/study"
+        }
+      }
+    },
+    {
+      "surface": "program-detail sections",
+      "fields": {
+        "requirements": {
+          "state": "ready",
+          "sourceUrl": "https://www.monash.edu.my/study"
+        },
+        "courseSetting": {
+          "state": "ready",
+          "sourceUrl": "https://www.monash.edu.my/study",
+          "note": "Official-unpublished course-setting blocks show controlled labels."
+        },
+        "careerDirections": {
+          "state": "ready",
+          "sourceUrl": "https://www.monash.edu.my/study",
+          "note": "Official-unpublished career blocks show controlled labels."
+        },
+        "sourceLinks": {
+          "state": "ready",
+          "sourceUrl": "https://www.monash.edu.my/study"
+        }
+      }
+    },
+    {
+      "surface": "leakage public-filter",
+      "fields": {
+        "nonReadyLeakage": {
+          "state": "ready",
+          "sourceUrl": "https://www.monash.edu.my/study",
+          "note": "All 60 MUM scoped rows are ready/published; no needs-review rows are in the public set."
+        }
+      }
+    }
+  ]
+}

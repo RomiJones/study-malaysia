@@ -1,0 +1,122 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-06-20T12:55:00+08:00",
+  "universityCode": "UTP",
+  "institution": "Universiti Teknologi PETRONAS",
+  "verdict": {
+    "frontendAdminReview": "ready",
+    "publicStudentCatalogue": "not-ready",
+    "reason": "Controlled review import is complete and verified. Public student catalogue remains blocked because rows intentionally stay needs-review/isPublished=false until ready conversion and public API/UI release verification."
+  },
+  "counts": {
+    "canonicalProgrammes": 63,
+    "databaseRows": 63,
+    "byLevel": {
+      "bachelor": 15,
+      "master": 37,
+      "phd": 11
+    },
+    "needsReviewRows": 63,
+    "readyRows": 0,
+    "publishedRows": 0,
+    "publicLeakageRows": 0,
+    "officialTotalFeeRows": 41,
+    "officialAnnualRateFeeRows": 22,
+    "pendingFeeRows": 0,
+    "annualTuitionCnyZeroRows": 0,
+    "chineseFallbackRows": 0
+  },
+  "resolvedHardIssues": [
+    {
+      "id": "research-fee-international-amount-not-captured",
+      "affectedCount": 22,
+      "status": "resolved-for-review-import",
+      "evidence": {
+        "sourceUrl": "https://www.utp.edu.my/sites/Publishing/PublishingContent/2026/UCampus/Offer%20Package%20Document/Research%20%26%20Conventional/Admission%20Terms%20%26%20Conditions%20-%20International%20Postgraduate%20%28Research%20%26%20Conventional%29.pdf",
+        "localPath": "data/imports/utp/2026-06-19/official-audit/sources/pdf/admission-terms-international-postgraduate-research-conventional-2026.pdf",
+        "sha256": "6d4beec10675401c074eb82fa3e7595d392baaa28fdaeb35014a9567ab21714a",
+        "sourceText": "2026 official international postgraduate admission terms publish estimated yearly full-time research fees for MSc and PhD groups."
+      },
+      "decision": "Use the 2026 official international postgraduate admission terms PDF as fee authority for research-mode international annual/rate fees; keep tuitionAmount null in DB to avoid full-programme total misuse, but store officialTuitionMYR and annualTuitionCny."
+    },
+    {
+      "id": "public-cost-estimate-cny-policy-missing",
+      "affectedCount": 63,
+      "status": "resolved-for-frontend-review",
+      "decision": "Importer now writes non-zero annualTuitionCny for all 63 UTP rows using the fixed MYR-to-CNY policy."
+    },
+    {
+      "id": "chinese-localization-not-approved",
+      "affectedCount": 63,
+      "status": "resolved-as-studymy-localized-display",
+      "evidence": {
+        "artifact": "26_chinese_localization_audit.json"
+      },
+      "decision": "All 63 rows have zh-CN and zh-TW StudyMY display names; official English remains the source-of-truth title."
+    }
+  ],
+  "remainingPublicReleaseBlockers": [
+    {
+      "id": "all-records-review-status",
+      "affectedCount": 63,
+      "status": "intentionally-kept",
+      "reason": "The requested lane is direct frontend/admin review. Rows remain publicDisplayStatus=needs-review and isPublished=false until Ian approves ready/public conversion."
+    },
+    {
+      "id": "public-api-ui-release-not-run",
+      "affectedCount": 63,
+      "status": "not-applicable-before-public-conversion",
+      "reason": "Public API/UI verification must be run after rows are converted to ready/published; current verification target is controlled review import with zero public leakage."
+    }
+  ],
+  "verification": {
+    "unitTest": "passed: npm run test -- tests/api/utp-official-audit-import.test.ts",
+    "controlledImport": "passed: 28_public_release_remediation_post_import_audit.json",
+    "dbVerifyOnly": "passed: 29_public_release_remediation_verify_audit.json",
+    "dbFieldSpotCheck": "passed: annualTuitionCnyZeroRows=0; chineseFallbackRows=0; rateRowsWithTuitionAmount=0; publicLeakageRows=0",
+    "candidateIntegrity": "passed",
+    "deliveryAudit": "passed with status review-required and issueCounts={}",
+    "pipelineDeliveryReview": "passed",
+    "build": "passed: npm run build",
+    "publicApiLeakage": "passed: /api/universities/universiti-teknologi-petronas and exact UTP program public detail return 404",
+    "adminFrontend": "running: http://localhost:3001; API requires bearer token for /api/admin/*"
+  },
+  "officialEvidence": [
+    {
+      "title": "UTP postgraduate international tuition page",
+      "url": "https://www.utp.edu.my/Pages/Admission/Postgraduate/International-Applicants/Tuition-fees.aspx",
+      "localPath": "data/imports/utp/2026-06-19/official-audit/sources/html/postgraduate-international-tuition-current-2026-06-20.html",
+      "sha256": "10cefafd376e80feff7d199e5701c6eeeee2e72df6e63a5095d6546b7b8e06a1"
+    },
+    {
+      "title": "UTP 2026 international postgraduate admission terms PDF",
+      "url": "https://www.utp.edu.my/sites/Publishing/PublishingContent/2026/UCampus/Offer%20Package%20Document/Research%20%26%20Conventional/Admission%20Terms%20%26%20Conditions%20-%20International%20Postgraduate%20%28Research%20%26%20Conventional%29.pdf",
+      "localPath": "data/imports/utp/2026-06-19/official-audit/sources/pdf/admission-terms-international-postgraduate-research-conventional-2026.pdf",
+      "sha256": "6d4beec10675401c074eb82fa3e7595d392baaa28fdaeb35014a9567ab21714a"
+    },
+    {
+      "title": "UTP Master by Research directory",
+      "url": "https://www.utp.edu.my/Pages/Admission/Postgraduate/Master-by-Research.aspx"
+    },
+    {
+      "title": "UTP PhD directory",
+      "url": "https://www.utp.edu.my/Pages/Admission/Postgraduate/PhD.aspx"
+    }
+  ],
+  "localReviewUrls": {
+    "adminFrontend": "http://localhost:3001",
+    "apiHealth": "http://localhost:3000/health",
+    "publicWeb": "http://localhost:5173"
+  },
+  "artifacts": {
+    "postImport": "28_public_release_remediation_post_import_audit.json",
+    "verifyOnly": "29_public_release_remediation_verify_audit.json",
+    "candidateIntegrity": "30_candidate_integrity_after_remediation.json",
+    "pipelineDeliveryReview": "31_pipeline_delivery_review_after_remediation.json",
+    "delivery": "delivery.json"
+  },
+  "notes": [
+    "Poppler PDF visual rendering was unavailable in this environment; the 2026 official PDF was processed via text/table extraction and SHA-256 evidence.",
+    "Notion was not updated because no Notion write connector is available in this session; local audit artifacts were updated instead."
+  ]
+}

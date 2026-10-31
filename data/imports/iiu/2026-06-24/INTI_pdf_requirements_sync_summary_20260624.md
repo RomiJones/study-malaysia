@@ -1,0 +1,53 @@
+# INTI PDF 招生要求对比同步摘要
+- 执行时间：2026-06-24T17:57:51+08:00
+- 数据范围：INTI 官方公开专业 107 条。
+- 官方 PDF 来源：21 份 INTI 官方 brochure PDF。
+- 口径：PDF 作为招生要求、语言要求、学制、开学信息的官方依据；学费继续以最新官网 programme fee 页面为准，本轮未更新任何学费字段。
+## 结果
+- PDF 匹配：100/107
+- 未匹配：7/107
+- 有字段差异并已同步：100/107
+- 无需更新：7/107
+## 未匹配项目
+- INTI-B-019 Bachelor of Arts in Communication 4+0 in collaboration with Southern New Hampshire University, USA
+- INTI-B-020 Bachelor of Arts in Psychology 4+0 in collaboration with Southern New Hampshire University, USA
+- INTI-B-059 Bachelor of Science in Business Administration 4+0 in collaboration with Southern New Hampshire University, USA
+- INTI-B-066 Biosciences Degree Program (American University Program)
+- INTI-B-067 Business Degree Program (American Degree Transfer Program)
+- INTI-B-071 Mass Communication Degree Program (American Degree Transfer Program)
+- INTI-B-074 Psychology Degree Program (American Degree Transfer Program)
+## 代表性差异
+- INTI-B-001 Actuarial Science Program (American University Program): officialEntryRequirementSourceUrl set to official PDF
+- INTI-B-002 Australian Degree Transfer Programme (Commerce): durationOfficial updated from PDF; officialIntake updated from PDF; officialEntryRequirementSourceUrl set to official PDF
+- INTI-B-003 Australian Degree Transfer Programme (Science): officialEntryRequirementSourceUrl set to official PDF
+- INTI-B-004 B.A. (Hons) in Fashion Management and Communication 3+0 in collaboration with Sheffield Hallam University, UK: officialEntryRequirementSourceUrl set to official PDF
+- INTI-B-005 B.Sc. (Hons) in Physiotherapy: officialEntryRequirementSourceUrl set to official PDF
+- INTI-B-006 BA (Hons) Graphic Design 3+0 in collaboration with Sheffield Hallam University, UK: officialEntryRequirementSourceUrl set to official PDF
+- INTI-B-007 Bachelor in Music Production and Audio Technology (Honours): officialIntake updated from PDF; officialAcademicRequirement updated from PDF; requirement.gpa/note updated from PDF; officialEntryRequirementSourceUrl set to official PDF
+- INTI-B-008 Bachelor in Sports Management (Honours): officialIntake updated from PDF; officialAcademicRequirement updated from PDF; requirement.gpa/note updated from PDF; officialEntryRequirementSourceUrl set to official PDF
+- INTI-B-009 Bachelor of Accountancy (Honours): officialEntryRequirementSourceUrl set to official PDF
+- INTI-B-010 Bachelor of Accounting & Finance (Honours): officialEntryRequirementSourceUrl set to official PDF
+- INTI-B-011 Bachelor of Art (Honours) Interior Architecture & Design 3.5+0 in collaboration with Sheffield Hallam University, UK: officialEntryRequirementSourceUrl set to official PDF
+- INTI-B-012 Bachelor of Arts (Honours) Accounting and Finance 3+0 in collaboration with University of Hertfordshire, UK: officialEntryRequirementSourceUrl set to official PDF
+- INTI-B-013 Bachelor of Arts (Honours) Advertising and Digital Marketing 3+0 in collaboration with University of Hertfordshire, UK: officialEntryRequirementSourceUrl set to official PDF
+- INTI-B-014 Bachelor of Arts (Honours) Business Administration (3+0) in collaboration with University of Hertfordshire, UK: officialEntryRequirementSourceUrl set to official PDF
+- INTI-B-015 Bachelor of Arts (Honours) Digital Media: officialEntryRequirementSourceUrl set to official PDF
+- INTI-B-016 Bachelor of Arts (Honours) Finance 3+0 in collaboration with University of Hertfordshire, UK: officialEntryRequirementSourceUrl set to official PDF
+- INTI-B-017 Bachelor of Arts (Honours) Marketing (3+0) in collaboration with University of Hertfordshire, UK: officialEntryRequirementSourceUrl set to official PDF
+- INTI-B-018 Bachelor of Arts (Honours) Mass Communications 3+0 in collaboration with the University of Hertfordshire, UK: officialEntryRequirementSourceUrl set to official PDF
+- INTI-B-021 Bachelor of Banking and Finance (Honours): officialEntryRequirementSourceUrl set to official PDF
+- INTI-B-022 Bachelor of Biotechnology (Hons): officialEntryRequirementSourceUrl set to official PDF
+- INTI-B-023 Bachelor of Business (3+0) in collaboration with Swinburne University of Technology, Australia: officialEntryRequirementSourceUrl set to official PDF
+- INTI-B-024 Bachelor of Business (Honours) Accounting: officialEntryRequirementSourceUrl set to official PDF
+- INTI-B-025 Bachelor of Business (Honours) Business Administration: officialEntryRequirementSourceUrl set to official PDF
+- INTI-B-026 Bachelor of Business (Honours) Business Administration – Online Learning: officialEntryRequirementSourceUrl set to official PDF
+- INTI-B-027 Bachelor of Business (Honours) Digital Enterprise Management: officialEntryRequirementSourceUrl set to official PDF
+- INTI-B-028 Bachelor of Business (Honours) Finance: officialEntryRequirementSourceUrl set to official PDF
+- INTI-B-029 Bachelor of Business (Honours) Human Resource Management: officialEntryRequirementSourceUrl set to official PDF
+- INTI-B-030 Bachelor of Business (Honours) Human Resource Management – Online Learning: durationOfficial updated from PDF; officialIntake updated from PDF; officialAcademicRequirement updated from PDF; requirement.gpa/note updated from PDF; officialEntryRequirementSourceUrl set to official PDF
+- INTI-B-031 Bachelor of Business (Honours) in Entrepreneurship and Marketing: officialEntryRequirementSourceUrl set to official PDF
+- INTI-B-032 Bachelor of Business (Honours) in International Business and Logistics Supply Chain Management: officialEntryRequirementSourceUrl set to official PDF
+- 其余 70 条详见 JSON 报告。
+## 文件
+- JSON 报告：data/imports/iiu/2026-06-24/inti-pdf-requirements-sync-report-20260624.json
+- 数据备份：apps/api/tmp/backups/inti-official-rows-before-pdf-requirements-sync-20260624.json

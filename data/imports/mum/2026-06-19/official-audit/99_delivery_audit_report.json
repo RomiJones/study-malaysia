@@ -1,0 +1,59 @@
+{
+  "status": "published",
+  "scope": {
+    "universityCode": "MUM",
+    "collectionScope": "full",
+    "levels": [
+      "bachelor",
+      "master",
+      "phd"
+    ],
+    "applicantScope": "international",
+    "academicSession": "2026"
+  },
+  "levels": [
+    "bachelor",
+    "master",
+    "phd"
+  ],
+  "authorization": "publish",
+  "counts": {
+    "directoryOccurrences": 65,
+    "uniqueOfficialEntries": 60,
+    "canonicalProgrammes": 60,
+    "ready": 60,
+    "needsReview": 0,
+    "notAvailableForInternational": 0,
+    "byLevel": {
+      "bachelor": 36,
+      "master": 17,
+      "phd": 7
+    }
+  },
+  "coverageKeys": [
+    "academicRequirement",
+    "applicationDocuments",
+    "campus",
+    "careerDirections",
+    "courseSetting",
+    "duration",
+    "evidence",
+    "faculty",
+    "fee",
+    "identity",
+    "institutionProfile",
+    "intake",
+    "internationalEligibility",
+    "languageRequirement",
+    "localization",
+    "studyArrangement",
+    "studyMode",
+    "studyType"
+  ],
+  "sourceCount": 139,
+  "artifactCount": 14,
+  "blockingExceptionCount": 0,
+  "reviewExceptionCount": 0,
+  "issueCounts": {},
+  "issues": []
+}

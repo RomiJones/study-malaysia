@@ -60,8 +60,8 @@ def main() -> None:
         errors.append("Application documents are missing.")
     if any(not row.get("detailSha256") for row in records):
         errors.append("Evidence hash is missing.")
-    if sum(row["publicDisplayStatus"] == "not-available-for-international" for row in records) != 2:
-        errors.append("Expected exactly two Malaysian-only doctoral records.")
+    if sum(row["publicDisplayStatus"] == "not-available-for-international" for row in records) != 0:
+        errors.append("Expected no doctoral records to remain unavailable for international applicants after current-detail reconciliation.")
     if any(isinstance(row.get("fee", {}).get("tuitionAmount"), dict) for row in records):
         errors.append("Tuition amount ranges are forbidden.")
     if any(
@@ -137,9 +137,9 @@ def main() -> None:
     if audit.get("publicationDecision") != "publish-international-eligible-catalogue":
         errors.append("Publication decision must allow the audited international-eligible catalogue.")
     expected_statuses = {
-        "ready": 93,
+        "ready": 95,
         "needs-review": 0,
-        "not-available-for-international": 2,
+        "not-available-for-international": 0,
     }
     actual_statuses = {
         key: audit.get("statusCounts", {}).get(key, 0) for key in expected_statuses

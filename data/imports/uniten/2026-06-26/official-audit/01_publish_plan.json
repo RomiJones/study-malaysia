@@ -1,0 +1,132 @@
+{
+  "schemaVersion": 1,
+  "createdAt": "2026-06-26T07:50:50.255Z",
+  "institution": {
+    "code": "UNITEN",
+    "shortName": "UNITEN",
+    "name": "Universiti Tenaga Nasional (UNITEN)",
+    "slug": "universiti-tenaga-nasional"
+  },
+  "authorization": "operator-requested-publication-for-review",
+  "sourceInputs": {
+    "undergraduateAudit": "audits/UNITEN_audit_undergraduate_20260626_reviewed_v1.json",
+    "masterAudit": "audits/UNITEN_audit_master_20260626_reviewed_v5.json",
+    "doctoralAudit": "audits/UNITEN_audit_doctoral_20260626_reviewed_v1.json",
+    "sourceAuditSafeToImport": false,
+    "sourceAuditReason": "StudyMY audit JSON stays safe_to_import=false by contract; this importer publishes only after explicit operator command."
+  },
+  "writePolicy": {
+    "importer": "apps/api/src/db/import-uniten-official-audit.ts",
+    "mode": "publish-all-levels",
+    "upsertPrefix": "uniten-official-20260626-",
+    "universityRow": "upsert by code UNITEN or slug universiti-tenaga-nasional",
+    "programmeRows": "upsert 37 current UNITEN public rows and archive non-current UNITEN rows",
+    "transactional": true,
+    "backupRequired": true
+  },
+  "publicationHardGate": {
+    "result": "passed",
+    "standard": "docs/prd/StudyMY-official-programme-publication-hard-gate.md",
+    "rules": [
+      "Chinese programme name",
+      "Chinese faculty",
+      "IELTS-only list language",
+      "single official tuition",
+      "numeric duration years"
+    ]
+  },
+  "expectedSurface": {
+    "programmeCount": 37,
+    "byLevel": {
+      "bachelor": 18,
+      "master": 16,
+      "phd": 3
+    },
+    "summary": {
+      "importRows": 37,
+      "byLevel": {
+        "bachelor": 18,
+        "master": 16,
+        "phd": 3
+      },
+      "readyRows": 37,
+      "publishedRows": 37,
+      "uniqueSlugs": 37,
+      "officialFeeRows": 37,
+      "languageRows": 37,
+      "chineseNameRows": 37,
+      "chineseFacultyRows": 37,
+      "chineseCurriculumRows": 37,
+      "chineseCareerRows": 37,
+      "sourceRows": 37,
+      "publicDisplayStatusCounts": {
+        "ready": 37
+      },
+      "officialSourceStatusCounts": {
+        "official-verified": 37
+      },
+      "feeAuditStatusCounts": {
+        "matched-official": 37
+      }
+    },
+    "exceptions": [
+      {
+        "type": "official-source-expired",
+        "severity": "low",
+        "affectedProgramme": "Bachelor in Computer Science (Artificial Intelligence) (Honours)",
+        "affectedField": "tuitionMYR",
+        "description": "官方 international undergraduate prospectus 的 fee structure 页面未列 AI 本科专业，但当前官网总 Programme 页和 AI 专业详情页均已列出该专业；AI 专业详情页直接给出国际学生总费用 RM78,000。",
+        "evidence": [
+          {
+            "sourceUrl": "https://www.uniten.edu.my/programme/undergraduate/bachelor-in-computer-science-artificial-intelligence-honours/",
+            "value": "Total Programme Fee RM78,000 for International students"
+          },
+          {
+            "sourceUrl": "https://www.uniten.edu.my/media/p24klzbi/uniten-international-booklet-2025.pdf",
+            "value": "International Undergraduate fee structure page lists 17 bachelor rows and omits Bachelor in Computer Science (Artificial Intelligence) (Honours)."
+          }
+        ],
+        "recommendation": "后续验收可优先引用当前专业详情页作为 AI 专业费用权威来源；中央 prospectus 费用表作为滞后/未更新来源留痕。",
+        "status": "resolved-by-programme-detail-source"
+      },
+      {
+        "type": "official-source-expired",
+        "severity": "low",
+        "affectedProgramme": null,
+        "affectedField": "sourceRegistry.prospectus",
+        "description": "官方 Postgraduate Prospectus PDF 为 2024 版，内容较当前 postgraduate catalogue 与详情页滞后，部分当前目录专业（如 Artificial Intelligence、Data Science）不在该 PDF 中。",
+        "evidence": [
+          {
+            "sourceUrl": "https://www.uniten.edu.my/media/vrvge3hf/uniten-prospectus-pg-2024.pdf",
+            "value": "UNITEN Postgraduate Prospectus 2024 PDF"
+          },
+          {
+            "sourceUrl": "https://www.uniten.edu.my/programme/postgraduate/",
+            "value": "当前 postgraduate catalogue 列出 16 个硕士项目"
+          }
+        ],
+        "recommendation": "硕士项目以当前官方 programme catalogue 与各详情页为主，PG Prospectus 仅作为辅助证据；后续验收时保留此低严重度来源时效提醒。",
+        "status": "open"
+      },
+      {
+        "type": "official-source-expired",
+        "severity": "low",
+        "affectedProgramme": null,
+        "affectedField": "sourceRegistry.prospectus",
+        "description": "官方 Postgraduate Prospectus PDF 为 2024 版，部分日期和费用口径可能滞后于当前官网详情页。",
+        "evidence": [
+          {
+            "sourceUrl": "https://www.uniten.edu.my/media/vrvge3hf/uniten-prospectus-pg-2024.pdf",
+            "value": "UNITEN Postgraduate Prospectus 2024 PDF"
+          },
+          {
+            "sourceUrl": "https://www.uniten.edu.my/programme/postgraduate/",
+            "value": "当前 postgraduate catalogue 与博士详情页"
+          }
+        ],
+        "recommendation": "博士项目以当前官方目录与各博士详情页为主，PG Prospectus 仅作为辅助证据；后续验收保留此低严重度来源时效提醒。",
+        "status": "open"
+      }
+    ]
+  }
+}

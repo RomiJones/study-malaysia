@@ -1,0 +1,55 @@
+{
+  "mode": "dry-run",
+  "universityCode": "SUNWAY",
+  "candidatePath": "/Users/ian/Desktop/dev/study-malaysia/data/imports/sunway/2026-06-20/sunway-20260620/08_candidate_dataset.json",
+  "reportOutput": "/Users/ian/Desktop/dev/study-malaysia/data/imports/sunway/2026-06-20/sunway-20260620/18_review_import_dry_run.json",
+  "writePolicy": {
+    "authorization": "review-import",
+    "upsertPrefix": "sunway-official-2026-row-",
+    "importRows": 97,
+    "university": "Create or update Sunway as a non-public needs-review university only if it is not already public ready; preserve any existing public Sunway row.",
+    "programmes": {
+      "isPublished": false,
+      "publicDisplayStatus": "needs-review"
+    },
+    "archiveLegacyRows": "No. Review-only import does not archive existing non-prefix public Sunway rows.",
+    "backupRequired": true,
+    "publicLeakageExpected": 0,
+    "rollback": "Restore the scoped JSON backup written before --confirm-import, then rerun verify-only.",
+    "nextStep": "Review this dry-run, then rerun with --confirm-import to create a scoped backup and write transactionally."
+  },
+  "summary": {
+    "candidateRows": 97,
+    "importRows": 97,
+    "byLevel": {
+      "bachelor": 48,
+      "master": 33,
+      "phd": 16
+    },
+    "readyRows": 0,
+    "needsReviewRows": 97,
+    "publishedRows": 0,
+    "uniqueSlugs": 97,
+    "pendingFeeRows": 0,
+    "notPublishedFeeRows": 7,
+    "officialDurationRows": 97,
+    "officialIntakeRows": 94,
+    "officialLanguageRows": 97,
+    "academicRequirementRows": 97,
+    "applicationDocumentRows": 97,
+    "courseSettingRows": 95,
+    "careerRows": 83,
+    "sourceLinkedRows": 97,
+    "publicDisplayStatusCounts": {
+      "needs-review": 97
+    },
+    "officialSourceStatusCounts": {
+      "needs-review": 97
+    },
+    "feeAuditStatusCounts": {
+      "official-rate-verified": 83,
+      "not-published": 7,
+      "matched-official": 7
+    }
+  }
+}

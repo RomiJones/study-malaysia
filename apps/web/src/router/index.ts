@@ -6,6 +6,8 @@ import FavoritesPage from "../pages/FavoritesPage.vue";
 import ComparePage from "../pages/ComparePage.vue";
 import PlannerPage from "../pages/PlannerPage.vue";
 import MemberPage from "../pages/MemberPage.vue";
+import MemberApplicationDetailPage from "../pages/MemberApplicationDetailPage.vue";
+import ApplicationProfilePage from "../pages/ApplicationProfilePage.vue";
 
 export const router = createRouter({
   history: createWebHistory(),
@@ -17,6 +19,9 @@ export const router = createRouter({
     { path: "/favorites", component: FavoritesPage },
     { path: "/compare", component: ComparePage },
     { path: "/planner", component: PlannerPage },
-    { path: "/member", component: MemberPage }
+    { path: "/onboarding", component: ApplicationProfilePage },
+    { path: "/member", component: MemberPage },
+    { path: "/member/profile/edit", component: ApplicationProfilePage },
+    { path: "/member/applications/:id", component: MemberApplicationDetailPage }
   ]
 });

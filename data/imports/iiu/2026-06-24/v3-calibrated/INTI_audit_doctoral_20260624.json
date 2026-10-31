@@ -1,0 +1,937 @@
+{
+  "safe_to_import": false,
+  "import_approved_by": null,
+  "import_approved_at": null,
+  "auditMeta": {
+    "generatedBy": "Codex StudyMY Collector v3.0",
+    "generatedAt": "2026-06-24",
+    "targetUniversity": "INTI International University & Colleges",
+    "targetUniversityShortName": "INTI",
+    "targetLevel": "doctoral",
+    "sourceRegistryConfirmedAt": "2026-06-24",
+    "programmeBaselineConfirmedAt": "2026-06-24",
+    "totalProgrammesCollected": 10,
+    "totalProgrammesBaseline": 10,
+    "collectionCompleteness": "10/10",
+    "commercialDisplayAuditResult": "needs-review",
+    "exceptionCount": 10
+  },
+  "sourceRegistry": {
+    "universityName": "INTI International University & Colleges",
+    "shortName": "INTI",
+    "officialDomain": "newinti.edu.my",
+    "targetLevel": "doctoral",
+    "sources": {
+      "programmeCatalogueUrl": "https://newinti.edu.my/academic-programmes/postgraduate/doctorate/",
+      "feeUrl": "https://newinti.edu.my/academic-programmes/postgraduate/doctorate/",
+      "entryRequirementUrl": "https://newinti.edu.my/international-students/entry-requirements/",
+      "languageRequirementUrl": "https://newinti.edu.my/international-students/entry-requirements/",
+      "applicationIntakeUrl": "https://newinti.edu.my/international-students/how-to-apply/"
+    },
+    "sourceStatuses": [
+      {
+        "role": "internationalFee",
+        "status": "needs-manual-check",
+        "note": "官方专业详情页发布 Approx. RM 费用并注明不含 SST；未发现精确总学费 authority。"
+      }
+    ],
+    "registeredAt": "2026-06-24",
+    "registeredBy": "Codex StudyMY Collector v3"
+  },
+  "programmeBaseline": [
+    {
+      "sequence": 1,
+      "nameEn": "Doctor of Business Administration",
+      "faculty": "Business",
+      "detailUrl": "https://newinti.edu.my/programme/doctor-of-business-administration/",
+      "baselineStatus": "pending"
+    },
+    {
+      "sequence": 2,
+      "nameEn": "Doctor of Business Administration (Online Learning)",
+      "faculty": "Business",
+      "detailUrl": "https://newinti.edu.my/programme/doctor-of-business-administration-fully-online/",
+      "baselineStatus": "pending"
+    },
+    {
+      "sequence": 3,
+      "nameEn": "Doctor of Education",
+      "faculty": "Education",
+      "detailUrl": "https://newinti.edu.my/programme/doctor-of-education/",
+      "baselineStatus": "pending"
+    },
+    {
+      "sequence": 4,
+      "nameEn": "Doctor of Philosophy (Education) (by Research)",
+      "faculty": "Education",
+      "detailUrl": "https://newinti.edu.my/programme/doctor-of-philosophy-education-by-research/",
+      "baselineStatus": "pending"
+    },
+    {
+      "sequence": 5,
+      "nameEn": "Doctor of Philosophy (PhD) (Applied Physics) (by Research)",
+      "faculty": "INTI Programmes for Working Professionals",
+      "detailUrl": "https://newinti.edu.my/programme/doctor-of-philosophy-phd-in-applied-physics-by-research-2/",
+      "baselineStatus": "pending"
+    },
+    {
+      "sequence": 6,
+      "nameEn": "Doctor of Philosophy (PhD) (Financial Technology) (by Research)",
+      "faculty": "Business",
+      "detailUrl": "https://newinti.edu.my/programme/doctor-of-philosophy-phd-financial-technology/",
+      "baselineStatus": "pending"
+    },
+    {
+      "sequence": 7,
+      "nameEn": "Doctor of Philosophy (PhD) (Information Systems) (by Research)",
+      "faculty": "Computing & IT",
+      "detailUrl": "https://newinti.edu.my/programme/doctor-of-philosophy-phd-information-systems/",
+      "baselineStatus": "pending"
+    },
+    {
+      "sequence": 8,
+      "nameEn": "Doctor of Philosophy (PhD) (Innovation and Technology) (by Research)",
+      "faculty": "INTI Programmes for Working Professionals",
+      "detailUrl": "https://newinti.edu.my/programme/doctor-of-philosophy-phd-innovation-and-technology-2/",
+      "baselineStatus": "pending"
+    },
+    {
+      "sequence": 9,
+      "nameEn": "Doctor of Philosophy (PhD) (Management) (by Research)",
+      "faculty": "Business",
+      "detailUrl": "https://newinti.edu.my/programme/doctor-of-philosophy-phd-management/",
+      "baselineStatus": "pending"
+    },
+    {
+      "sequence": 10,
+      "nameEn": "Doctor of Philosophy (PhD) in Data Science (by Research)",
+      "faculty": "INTI Programmes for Working Professionals",
+      "detailUrl": "https://newinti.edu.my/programme/doctor-of-philosophy-phd-in-data-science/",
+      "baselineStatus": "pending"
+    }
+  ],
+  "programmes": [
+    {
+      "nameEn": "Doctor of Business Administration",
+      "name": "工商管理博士",
+      "faculty": "Business",
+      "facultyZh": "商学院",
+      "level": "doctoral",
+      "duration": 3,
+      "tuitionMYR": "official-total-unpublished",
+      "tuitionNote": "官网仅发布近似费用（INTI International University：约 RM 59,796），并注明公布费用不含 SST，国际学生费用另加 6% SST。未发现同一专业、同一国际学生口径的精确总学费。",
+      "feeStatus": "official-total-unpublished",
+      "intake": [
+        1,
+        5,
+        9
+      ],
+      "applicationDeadline": "official-unpublished",
+      "language": {
+        "ielts": 6,
+        "toefl": 550,
+        "otherRequirement": "MUET：4",
+        "waiver": "官方接受以英语授课的既有学位作为英语能力证明路径。 官方接受指定英语科目成绩作为英语能力证明路径。"
+      },
+      "curriculum": [
+        "第一年高级管理经济学",
+        "创新与技术管理",
+        "业务流程管理",
+        "高级统计与决策分析",
+        "决策会计与金融",
+        "高级市场营销管理",
+        "高级商业研究方法",
+        "战略人力资源管理",
+        "企业创业战略",
+        "高级战略管理",
+        "第二至第三年论文"
+      ],
+      "curriculumNote": "课程结构来自官方专业页面，已翻译为中文；术语仍需人工复核。",
+      "careerProspects": [
+        "工商管理和管理领域的高级专业人士",
+        "研究型管理者",
+        "商业决策与组织管理岗位"
+      ],
+      "officialFeeSourceUrl": "https://newinti.edu.my/programme/doctor-of-business-administration/",
+      "officialSourceUrl": "https://newinti.edu.my/programme/doctor-of-business-administration/",
+      "officialVerifiedAt": "2026-06-24",
+      "publicDisplayStatus": "needs-review",
+      "auditStatus": "needs-manual-review",
+      "fieldAuditResult": "FAIL",
+      "fieldAuditFailedItems": [
+        "fee-authority-ambiguous",
+        "collector-review-required"
+      ],
+      "entryRequirement": {
+        "minGPA": null,
+        "gpaScale": null,
+        "gpaNote": "官方原文包含多条 CGPA、内部评估、工作经验或先修课程路径；请以 officialAcademicRequirement 证据为准。",
+        "degreeLevel": "通常要求硕士学位或马来西亚政府认可的同等资格；具体路径以官方条目为准。",
+        "degreeRelevance": "open",
+        "workExperience": "部分非相关背景或较低 CGPA 路径需要相关工作经验、严格内部评估或先修课程，具体以官方条目为准。"
+      },
+      "studyMode": "research",
+      "studyModeNote": "full-time/part-time as published",
+      "thesisRequired": true,
+      "thesisNote": "官方课程结构包含：论文。",
+      "interviewRequired": "case-by-case",
+      "interviewNote": "官方入学路径提到严格内部评估，但未明确写成统一面试要求。",
+      "supervisorSystem": "needs-review",
+      "creditHours": "official-unpublished"
+    },
+    {
+      "nameEn": "Doctor of Business Administration (Online Learning)",
+      "name": "工商管理博士（在线学习）",
+      "faculty": "Business",
+      "facultyZh": "商学院",
+      "level": "doctoral",
+      "duration": 3,
+      "tuitionMYR": "official-total-unpublished",
+      "tuitionNote": "官网仅发布近似费用（INTI International University：约 RM 50,400），并注明公布费用不含 SST，国际学生费用另加 6% SST。未发现同一专业、同一国际学生口径的精确总学费。",
+      "feeStatus": "official-total-unpublished",
+      "intake": [
+        1,
+        3,
+        5,
+        8,
+        10
+      ],
+      "applicationDeadline": "official-unpublished",
+      "language": {
+        "ielts": 6,
+        "toefl": 550,
+        "otherRequirement": "MUET：4",
+        "waiver": "官方接受以英语授课的既有学位作为英语能力证明路径。 官方接受指定英语科目成绩作为英语能力证明路径。"
+      },
+      "curriculum": [
+        "高级商业研究方法",
+        "高级市场营销管理",
+        "决策会计与金融",
+        "创新与技术管理",
+        "高级统计与决策分析",
+        "业务流程管理",
+        "高级管理经济学",
+        "战略人力资源管理",
+        "企业创业战略",
+        "高级战略管理",
+        "论文"
+      ],
+      "curriculumNote": "课程结构来自官方专业页面，已翻译为中文；术语仍需人工复核。",
+      "careerProspects": [
+        "管理分析师",
+        "市场研究分析师",
+        "高校教师",
+        "商业或管理顾问"
+      ],
+      "officialFeeSourceUrl": "https://newinti.edu.my/programme/doctor-of-business-administration-fully-online/",
+      "officialSourceUrl": "https://newinti.edu.my/programme/doctor-of-business-administration-fully-online/",
+      "officialVerifiedAt": "2026-06-24",
+      "publicDisplayStatus": "needs-review",
+      "auditStatus": "needs-manual-review",
+      "fieldAuditResult": "FAIL",
+      "fieldAuditFailedItems": [
+        "fee-authority-ambiguous",
+        "collector-review-required"
+      ],
+      "entryRequirement": {
+        "minGPA": null,
+        "gpaScale": null,
+        "gpaNote": "官方原文包含多条 CGPA、内部评估、工作经验或先修课程路径；请以 officialAcademicRequirement 证据为准。",
+        "degreeLevel": "通常要求硕士学位或马来西亚政府认可的同等资格；具体路径以官方条目为准。",
+        "degreeRelevance": "open",
+        "workExperience": "部分非相关背景或较低 CGPA 路径需要相关工作经验、严格内部评估或先修课程，具体以官方条目为准。"
+      },
+      "studyMode": "research",
+      "studyModeNote": "在线学习",
+      "thesisRequired": true,
+      "thesisNote": "官方课程结构包含：论文。",
+      "interviewRequired": "case-by-case",
+      "interviewNote": "官方入学路径提到严格内部评估，但未明确写成统一面试要求。",
+      "supervisorSystem": "needs-review",
+      "creditHours": "official-unpublished"
+    },
+    {
+      "nameEn": "Doctor of Education",
+      "name": "教育博士",
+      "faculty": "Education",
+      "facultyZh": "教育学院",
+      "level": "doctoral",
+      "duration": 3,
+      "tuitionMYR": "official-total-unpublished",
+      "tuitionNote": "官网仅发布近似费用（INTI International University：约 RM 59,796），并注明公布费用不含 SST，国际学生费用另加 6% SST。未发现同一专业、同一国际学生口径的精确总学费。",
+      "feeStatus": "official-total-unpublished",
+      "intake": [
+        1,
+        5,
+        9
+      ],
+      "applicationDeadline": "official-unpublished",
+      "language": {
+        "ielts": 4,
+        "toefl": null,
+        "otherRequirement": "MUET：3",
+        "waiver": "官方接受以英语授课的既有学位作为英语能力证明路径。 官方接受指定英语科目成绩作为英语能力证明路径。"
+      },
+      "curriculum": [
+        "第一年学术写作理论与实践",
+        "课程理论与实施",
+        "教育行政与政策",
+        "教育创业领导力",
+        "国际教育与全球化",
+        "研究方法",
+        "第二年教育技术",
+        "教育评价与评估",
+        "专业发展与终身教育",
+        "战略课堂管理",
+        "博士论文",
+        "第三年博士论文"
+      ],
+      "curriculumNote": "课程结构来自官方专业页面，已翻译为中文；术语仍需人工复核。",
+      "careerProspects": [
+        "大学教授或讲师",
+        "学院院长",
+        "校长",
+        "教育顾问",
+        "企业培训师",
+        "学习专员",
+        "教育研究员",
+        "教育政策分析师",
+        "立法政策顾问"
+      ],
+      "officialFeeSourceUrl": "https://newinti.edu.my/programme/doctor-of-education/",
+      "officialSourceUrl": "https://newinti.edu.my/programme/doctor-of-education/",
+      "officialVerifiedAt": "2026-06-24",
+      "publicDisplayStatus": "needs-review",
+      "auditStatus": "needs-manual-review",
+      "fieldAuditResult": "FAIL",
+      "fieldAuditFailedItems": [
+        "fee-authority-ambiguous",
+        "collector-review-required"
+      ],
+      "entryRequirement": {
+        "minGPA": null,
+        "gpaScale": null,
+        "gpaNote": "官方原文包含多条 CGPA、内部评估、工作经验或先修课程路径；请以 officialAcademicRequirement 证据为准。",
+        "degreeLevel": "通常要求硕士学位或马来西亚政府认可的同等资格；具体路径以官方条目为准。",
+        "degreeRelevance": "not-confirmed",
+        "workExperience": null
+      },
+      "studyMode": "research",
+      "studyModeNote": "full-time/part-time as published",
+      "thesisRequired": true,
+      "thesisNote": "官方课程结构包含：论文。",
+      "interviewRequired": "official-unpublished",
+      "interviewNote": "官方页面未明确公布统一面试要求。",
+      "supervisorSystem": "needs-review",
+      "creditHours": "official-unpublished"
+    },
+    {
+      "nameEn": "Doctor of Philosophy (Education) (by Research)",
+      "name": "哲学博士（教育）（研究型）",
+      "faculty": "Education",
+      "facultyZh": "教育学院",
+      "level": "doctoral",
+      "duration": 3,
+      "tuitionMYR": "official-total-unpublished",
+      "tuitionNote": "官网仅发布近似费用（INTI International University：约 RM 59,796），并注明公布费用不含 SST，国际学生费用另加 6% SST。未发现同一专业、同一国际学生口径的精确总学费。",
+      "feeStatus": "official-total-unpublished",
+      "intake": [
+        1,
+        5,
+        9
+      ],
+      "applicationDeadline": "official-unpublished",
+      "language": {
+        "ielts": 4,
+        "toefl": null,
+        "otherRequirement": "MUET：3",
+        "waiver": "官方接受以英语授课的既有学位作为英语能力证明路径。 官方接受指定英语科目成绩作为英语能力证明路径。"
+      },
+      "curriculum": [
+        "研究方法论",
+        "开题答辩",
+        "研究论文",
+        "最终学年口试答辩",
+        "博士论文",
+        "课程与教学研究领域",
+        "指导与咨询研究领域",
+        "教育领导与管理研究领域",
+        "英语作为第二语言教学研究领域",
+        "特殊教育研究领域",
+        "幼儿教育研究领域"
+      ],
+      "curriculumNote": "课程结构来自官方专业页面，已翻译为中文；术语仍需人工复核。",
+      "careerProspects": [
+        "讲师",
+        "企业培训师",
+        "儿童照护主管",
+        "校长",
+        "顾问",
+        "媒体与技术专员",
+        "非政府组织或社会工作经理",
+        "部门主管",
+        "项目管理人员"
+      ],
+      "officialFeeSourceUrl": "https://newinti.edu.my/programme/doctor-of-philosophy-education-by-research/",
+      "officialSourceUrl": "https://newinti.edu.my/programme/doctor-of-philosophy-education-by-research/",
+      "officialVerifiedAt": "2026-06-24",
+      "publicDisplayStatus": "needs-review",
+      "auditStatus": "needs-manual-review",
+      "fieldAuditResult": "FAIL",
+      "fieldAuditFailedItems": [
+        "fee-authority-ambiguous",
+        "collector-review-required"
+      ],
+      "entryRequirement": {
+        "minGPA": null,
+        "gpaScale": null,
+        "gpaNote": "官方原文包含多条 CGPA、内部评估、工作经验或先修课程路径；请以 officialAcademicRequirement 证据为准。",
+        "degreeLevel": "通常要求硕士学位或马来西亚政府认可的同等资格；具体路径以官方条目为准。",
+        "degreeRelevance": "not-confirmed",
+        "workExperience": null
+      },
+      "studyMode": "research",
+      "studyModeNote": "full-time/part-time as published",
+      "thesisRequired": true,
+      "thesisNote": "官方课程结构包含：研究方法论、开题答辩、研究论文、论文、口试答辩。",
+      "interviewRequired": "official-unpublished",
+      "interviewNote": "官方页面未明确公布统一面试要求。",
+      "supervisorSystem": true,
+      "creditHours": "official-unpublished"
+    },
+    {
+      "nameEn": "Doctor of Philosophy (PhD) (Applied Physics) (by Research)",
+      "name": "哲学博士（应用物理）（研究型）",
+      "faculty": "INTI Programmes for Working Professionals",
+      "facultyZh": "英迪在职专业人士课程",
+      "level": "doctoral",
+      "duration": 3,
+      "tuitionMYR": "official-total-unpublished",
+      "tuitionNote": "官网仅发布近似费用（INTI International University：约 RM 59,796），并注明公布费用不含 SST，国际学生费用另加 6% SST。未发现同一专业、同一国际学生口径的精确总学费。",
+      "feeStatus": "official-total-unpublished",
+      "intake": [
+        1,
+        5,
+        9
+      ],
+      "applicationDeadline": "official-unpublished",
+      "language": {
+        "ielts": 6,
+        "toefl": 550,
+        "otherRequirement": "MUET：4",
+        "waiver": "官方接受以英语授课的既有学位作为英语能力证明路径。 官方接受指定英语科目成绩作为英语能力证明路径。"
+      },
+      "curriculum": [
+        "研究方法论",
+        "开题答辩",
+        "研究论文",
+        "研究指导",
+        "最终学年口试答辩",
+        "毕业论文",
+        "等离子体物理研究领域",
+        "脉冲功率技术研究领域",
+        "凝聚态物理研究领域",
+        "超导材料研究领域",
+        "光子学研究领域"
+      ],
+      "curriculumNote": "课程结构来自官方专业页面，已翻译为中文；术语仍需人工复核。",
+      "careerProspects": [
+        "科学与技术领域的学术机构",
+        "研究机构和国内外组织领导岗位"
+      ],
+      "officialFeeSourceUrl": "https://newinti.edu.my/programme/doctor-of-philosophy-phd-in-applied-physics-by-research-2/",
+      "officialSourceUrl": "https://newinti.edu.my/programme/doctor-of-philosophy-phd-in-applied-physics-by-research-2/",
+      "officialVerifiedAt": "2026-06-24",
+      "publicDisplayStatus": "needs-review",
+      "auditStatus": "needs-manual-review",
+      "fieldAuditResult": "FAIL",
+      "fieldAuditFailedItems": [
+        "fee-authority-ambiguous",
+        "collector-review-required"
+      ],
+      "entryRequirement": {
+        "minGPA": null,
+        "gpaScale": null,
+        "gpaNote": "官方原文包含多条 CGPA、内部评估、工作经验或先修课程路径；请以 officialAcademicRequirement 证据为准。",
+        "degreeLevel": "通常要求硕士学位或马来西亚政府认可的同等资格；具体路径以官方条目为准。",
+        "degreeRelevance": "preferred",
+        "workExperience": "部分非相关背景或较低 CGPA 路径需要相关工作经验、严格内部评估或先修课程，具体以官方条目为准。"
+      },
+      "studyMode": "research",
+      "studyModeNote": "full-time/part-time as published",
+      "thesisRequired": true,
+      "thesisNote": "官方课程结构包含：研究方法论、开题答辩、研究论文、论文、口试答辩。",
+      "interviewRequired": "official-unpublished",
+      "interviewNote": "官方页面未明确公布统一面试要求。",
+      "supervisorSystem": true,
+      "creditHours": "official-unpublished"
+    },
+    {
+      "nameEn": "Doctor of Philosophy (PhD) (Financial Technology) (by Research)",
+      "name": "哲学博士（金融科技）（研究型）",
+      "faculty": "Business",
+      "facultyZh": "商学院",
+      "level": "doctoral",
+      "duration": 3,
+      "tuitionMYR": "official-total-unpublished",
+      "tuitionNote": "官网仅发布近似费用（INTI International University：约 RM 59,796），并注明公布费用不含 SST，国际学生费用另加 6% SST。未发现同一专业、同一国际学生口径的精确总学费。",
+      "feeStatus": "official-total-unpublished",
+      "intake": [
+        1,
+        5,
+        9
+      ],
+      "applicationDeadline": "official-unpublished",
+      "language": {
+        "ielts": null,
+        "toefl": null,
+        "otherRequirement": "官方公布了语言要求文本，但未能稳定拆分为列表分数；需人工复核。",
+        "waiver": null
+      },
+      "curriculum": [
+        "研究方法论",
+        "开题答辩",
+        "研究论文",
+        "最终学年口试答辩",
+        "六万至十万字博士论文",
+        "会计与金融研究领域",
+        "金融人工智能研究领域",
+        "金融机器学习研究领域",
+        "金融数据科学与战略研究领域",
+        "区块链研究领域"
+      ],
+      "curriculumNote": "课程结构来自官方专业页面，已翻译为中文；术语仍需人工复核。",
+      "careerProspects": [
+        "区块链开发者",
+        "应用开发者",
+        "金融分析师",
+        "组织文化推动者",
+        "业务发展经理",
+        "数据专员"
+      ],
+      "officialFeeSourceUrl": "https://newinti.edu.my/programme/doctor-of-philosophy-phd-financial-technology/",
+      "officialSourceUrl": "https://newinti.edu.my/programme/doctor-of-philosophy-phd-financial-technology/",
+      "officialVerifiedAt": "2026-06-24",
+      "publicDisplayStatus": "needs-review",
+      "auditStatus": "needs-manual-review",
+      "fieldAuditResult": "FAIL",
+      "fieldAuditFailedItems": [
+        "fee-authority-ambiguous",
+        "collector-review-required"
+      ],
+      "entryRequirement": {
+        "minGPA": null,
+        "gpaScale": null,
+        "gpaNote": "官方原文包含多条 CGPA、内部评估、工作经验或先修课程路径；请以 officialAcademicRequirement 证据为准。",
+        "degreeLevel": "通常要求硕士学位或马来西亚政府认可的同等资格；具体路径以官方条目为准。",
+        "degreeRelevance": "preferred",
+        "workExperience": null
+      },
+      "studyMode": "research",
+      "studyModeNote": "full-time/part-time as published",
+      "thesisRequired": true,
+      "thesisNote": "官方课程结构包含：研究方法论、开题答辩、研究论文、论文、口试答辩。",
+      "interviewRequired": "official-unpublished",
+      "interviewNote": "官方页面未明确公布统一面试要求。",
+      "supervisorSystem": true,
+      "creditHours": "official-unpublished"
+    },
+    {
+      "nameEn": "Doctor of Philosophy (PhD) (Information Systems) (by Research)",
+      "name": "哲学博士（信息系统）（研究型）",
+      "faculty": "Computing & IT",
+      "facultyZh": "计算机与信息技术学院",
+      "level": "doctoral",
+      "duration": 3,
+      "tuitionMYR": "official-total-unpublished",
+      "tuitionNote": "官网仅发布近似费用（INTI International University：约 RM 59,796），并注明公布费用不含 SST，国际学生费用另加 6% SST。未发现同一专业、同一国际学生口径的精确总学费。",
+      "feeStatus": "official-total-unpublished",
+      "intake": [
+        1,
+        5,
+        9
+      ],
+      "applicationDeadline": "official-unpublished",
+      "language": {
+        "ielts": 6,
+        "toefl": null,
+        "otherRequirement": null,
+        "waiver": "官方接受以英语授课的既有学位作为英语能力证明路径。"
+      },
+      "curriculum": [
+        "研究方法论",
+        "开题答辩",
+        "研究论文",
+        "研究指导",
+        "至少四万字博士论文",
+        "最终学年口试答辩",
+        "物联网研究领域",
+        "搜索引擎优化研究领域",
+        "知识管理系统研究领域",
+        "云计算研究领域",
+        "商业分析研究领域",
+        "网络安全研究领域",
+        "软件工程研究领域"
+      ],
+      "curriculumNote": "课程结构来自官方专业页面，已翻译为中文；术语仍需人工复核。",
+      "careerProspects": [
+        "高校学术岗位",
+        "政府部门高级岗位",
+        "公私营机构高级岗位",
+        "信息系统咨询岗位"
+      ],
+      "officialFeeSourceUrl": "https://newinti.edu.my/programme/doctor-of-philosophy-phd-information-systems/",
+      "officialSourceUrl": "https://newinti.edu.my/programme/doctor-of-philosophy-phd-information-systems/",
+      "officialVerifiedAt": "2026-06-24",
+      "publicDisplayStatus": "needs-review",
+      "auditStatus": "needs-manual-review",
+      "fieldAuditResult": "FAIL",
+      "fieldAuditFailedItems": [
+        "fee-authority-ambiguous",
+        "collector-review-required"
+      ],
+      "entryRequirement": {
+        "minGPA": null,
+        "gpaScale": null,
+        "gpaNote": "官方原文包含多条 CGPA、内部评估、工作经验或先修课程路径；请以 officialAcademicRequirement 证据为准。",
+        "degreeLevel": "通常要求硕士学位或马来西亚政府认可的同等资格；具体路径以官方条目为准。",
+        "degreeRelevance": "preferred",
+        "workExperience": "部分非相关背景或较低 CGPA 路径需要相关工作经验、严格内部评估或先修课程，具体以官方条目为准。"
+      },
+      "studyMode": "research",
+      "studyModeNote": "full-time/part-time as published",
+      "thesisRequired": true,
+      "thesisNote": "官方课程结构包含：研究方法论、开题答辩、研究论文、论文、口试答辩。",
+      "interviewRequired": "official-unpublished",
+      "interviewNote": "官方页面未明确公布统一面试要求。",
+      "supervisorSystem": true,
+      "creditHours": "official-unpublished"
+    },
+    {
+      "nameEn": "Doctor of Philosophy (PhD) (Innovation and Technology) (by Research)",
+      "name": "哲学博士（创新与技术）（研究型）",
+      "faculty": "INTI Programmes for Working Professionals",
+      "facultyZh": "英迪在职专业人士课程",
+      "level": "doctoral",
+      "duration": 3,
+      "tuitionMYR": "official-total-unpublished",
+      "tuitionNote": "官网仅发布近似费用（INTI International University：约 RM 59,796），并注明公布费用不含 SST，国际学生费用另加 6% SST。未发现同一专业、同一国际学生口径的精确总学费。",
+      "feeStatus": "official-total-unpublished",
+      "intake": [
+        1,
+        5,
+        9
+      ],
+      "applicationDeadline": "official-unpublished",
+      "language": {
+        "ielts": 5,
+        "toefl": 500,
+        "otherRequirement": "MUET：3.5",
+        "waiver": "官方接受以英语授课的既有学位作为英语能力证明路径。 官方接受指定英语科目成绩作为英语能力证明路径。"
+      },
+      "curriculum": [
+        "研究方法论",
+        "开题答辩",
+        "研究论文",
+        "研究指导",
+        "最终学年口试答辩",
+        "毕业论文",
+        "逆向工程研究领域",
+        "智能制造研究领域",
+        "流程与生产优化研究领域",
+        "数据数字化研究领域",
+        "工业与环境技术研究领域",
+        "数字建造研究领域",
+        "增材制造研究领域",
+        "数据挖掘研究领域",
+        "人工智能研究领域",
+        "智慧医疗研究领域"
+      ],
+      "curriculumNote": "课程结构来自官方专业页面，已翻译为中文；术语仍需人工复核。",
+      "careerProspects": "official-unpublished",
+      "officialFeeSourceUrl": "https://newinti.edu.my/programme/doctor-of-philosophy-phd-innovation-and-technology-2/",
+      "officialSourceUrl": "https://newinti.edu.my/programme/doctor-of-philosophy-phd-innovation-and-technology-2/",
+      "officialVerifiedAt": "2026-06-24",
+      "publicDisplayStatus": "needs-review",
+      "auditStatus": "needs-manual-review",
+      "fieldAuditResult": "FAIL",
+      "fieldAuditFailedItems": [
+        "fee-authority-ambiguous",
+        "career-official-unpublished",
+        "collector-review-required"
+      ],
+      "entryRequirement": {
+        "minGPA": null,
+        "gpaScale": null,
+        "gpaNote": "官方原文包含多条 CGPA、内部评估、工作经验或先修课程路径；请以 officialAcademicRequirement 证据为准。",
+        "degreeLevel": "通常要求硕士学位或马来西亚政府认可的同等资格；具体路径以官方条目为准。",
+        "degreeRelevance": "preferred",
+        "workExperience": "部分非相关背景或较低 CGPA 路径需要相关工作经验、严格内部评估或先修课程，具体以官方条目为准。"
+      },
+      "studyMode": "research",
+      "studyModeNote": "full-time/part-time as published",
+      "thesisRequired": true,
+      "thesisNote": "官方课程结构包含：研究方法论、开题答辩、研究论文、论文、口试答辩。",
+      "interviewRequired": "official-unpublished",
+      "interviewNote": "官方页面未明确公布统一面试要求。",
+      "supervisorSystem": true,
+      "creditHours": "official-unpublished"
+    },
+    {
+      "nameEn": "Doctor of Philosophy (PhD) (Management) (by Research)",
+      "name": "哲学博士（管理）（研究型）",
+      "faculty": "Business",
+      "facultyZh": "商学院",
+      "level": "doctoral",
+      "duration": 3,
+      "tuitionMYR": "official-total-unpublished",
+      "tuitionNote": "官网仅发布近似费用（INTI International University：约 RM 59,796），并注明公布费用不含 SST，国际学生费用另加 6% SST。未发现同一专业、同一国际学生口径的精确总学费。",
+      "feeStatus": "official-total-unpublished",
+      "intake": [
+        1,
+        5,
+        9
+      ],
+      "applicationDeadline": "official-unpublished",
+      "language": {
+        "ielts": 6,
+        "toefl": 550,
+        "otherRequirement": "MUET：4",
+        "waiver": "官方接受以英语授课的既有学位作为英语能力证明路径。 官方接受指定英语科目成绩作为英语能力证明路径。"
+      },
+      "curriculum": [
+        "研究方法论",
+        "开题答辩",
+        "研究论文",
+        "研究指导",
+        "最终学年口试答辩",
+        "六万至十万字博士论文",
+        "商业管理研究领域",
+        "市场营销研究领域",
+        "人力资源管理研究领域",
+        "会计与金融研究领域",
+        "创业研究领域",
+        "产业与组织心理学研究领域",
+        "教育管理研究领域",
+        "新兴商业学科研究领域"
+      ],
+      "curriculumNote": "课程结构来自官方专业页面，已翻译为中文；术语仍需人工复核。",
+      "careerProspects": [
+        "高校学术岗位",
+        "政府部门",
+        "公私营机构",
+        "商业研究与管理咨询岗位"
+      ],
+      "officialFeeSourceUrl": "https://newinti.edu.my/programme/doctor-of-philosophy-phd-management/",
+      "officialSourceUrl": "https://newinti.edu.my/programme/doctor-of-philosophy-phd-management/",
+      "officialVerifiedAt": "2026-06-24",
+      "publicDisplayStatus": "needs-review",
+      "auditStatus": "needs-manual-review",
+      "fieldAuditResult": "FAIL",
+      "fieldAuditFailedItems": [
+        "fee-authority-ambiguous",
+        "collector-review-required"
+      ],
+      "entryRequirement": {
+        "minGPA": null,
+        "gpaScale": null,
+        "gpaNote": "官方原文包含多条 CGPA、内部评估、工作经验或先修课程路径；请以 officialAcademicRequirement 证据为准。",
+        "degreeLevel": "通常要求硕士学位或马来西亚政府认可的同等资格；具体路径以官方条目为准。",
+        "degreeRelevance": "preferred",
+        "workExperience": "部分非相关背景或较低 CGPA 路径需要相关工作经验、严格内部评估或先修课程，具体以官方条目为准。"
+      },
+      "studyMode": "research",
+      "studyModeNote": "full-time/part-time as published",
+      "thesisRequired": true,
+      "thesisNote": "官方课程结构包含：研究方法论、开题答辩、研究论文、论文、口试答辩。",
+      "interviewRequired": "case-by-case",
+      "interviewNote": "官方入学路径提到严格内部评估，但未明确写成统一面试要求。",
+      "supervisorSystem": true,
+      "creditHours": "official-unpublished"
+    },
+    {
+      "nameEn": "Doctor of Philosophy (PhD) in Data Science (by Research)",
+      "name": "哲学博士（数据科学）（研究型）",
+      "faculty": "INTI Programmes for Working Professionals",
+      "facultyZh": "英迪在职专业人士课程",
+      "level": "doctoral",
+      "duration": 3,
+      "tuitionMYR": "official-total-unpublished",
+      "tuitionNote": "官网仅发布近似费用（INTI International University：约 RM 59,796），并注明公布费用不含 SST，国际学生费用另加 6% SST。未发现同一专业、同一国际学生口径的精确总学费。",
+      "feeStatus": "official-total-unpublished",
+      "intake": [
+        1,
+        5,
+        9
+      ],
+      "applicationDeadline": "official-unpublished",
+      "language": {
+        "ielts": 6,
+        "toefl": null,
+        "otherRequirement": null,
+        "waiver": "官方接受以英语授课的既有学位作为英语能力证明路径。 官方接受指定英语科目成绩作为英语能力证明路径。"
+      },
+      "curriculum": [
+        "研究方法论",
+        "开题答辩",
+        "研究论文",
+        "研究指导",
+        "至少四万字博士论文",
+        "最终学年口试答辩"
+      ],
+      "curriculumNote": "课程结构来自官方专业页面，已翻译为中文；术语仍需人工复核。",
+      "careerProspects": [
+        "数据分析师",
+        "商业分析师",
+        "数据科学家",
+        "机器学习工程师",
+        "机器学习科学家",
+        "应用架构师",
+        "企业架构师",
+        "数据架构师",
+        "基础设施架构师",
+        "数据工程师",
+        "合规专员",
+        "商业研究顾问"
+      ],
+      "officialFeeSourceUrl": "https://newinti.edu.my/programme/doctor-of-philosophy-phd-in-data-science/",
+      "officialSourceUrl": "https://newinti.edu.my/programme/doctor-of-philosophy-phd-in-data-science/",
+      "officialVerifiedAt": "2026-06-24",
+      "publicDisplayStatus": "needs-review",
+      "auditStatus": "needs-manual-review",
+      "fieldAuditResult": "FAIL",
+      "fieldAuditFailedItems": [
+        "fee-authority-ambiguous",
+        "collector-review-required"
+      ],
+      "entryRequirement": {
+        "minGPA": null,
+        "gpaScale": null,
+        "gpaNote": "官方原文包含多条 CGPA、内部评估、工作经验或先修课程路径；请以 officialAcademicRequirement 证据为准。",
+        "degreeLevel": "通常要求硕士学位或马来西亚政府认可的同等资格；具体路径以官方条目为准。",
+        "degreeRelevance": "preferred",
+        "workExperience": "部分非相关背景或较低 CGPA 路径需要相关工作经验、严格内部评估或先修课程，具体以官方条目为准。"
+      },
+      "studyMode": "research",
+      "studyModeNote": "full-time/part-time as published",
+      "thesisRequired": true,
+      "thesisNote": "官方课程结构包含：研究方法论、开题答辩、研究论文、论文、口试答辩。",
+      "interviewRequired": "official-unpublished",
+      "interviewNote": "官方页面未明确公布统一面试要求。",
+      "supervisorSystem": true,
+      "creditHours": "official-unpublished"
+    }
+  ],
+  "exception_queue": [
+    {
+      "type": "fee-authority-ambiguous",
+      "severity": "high",
+      "affectedProgramme": null,
+      "affectedField": "tuitionMYR",
+      "description": "INTI 官方页面当前只发布近似费用，并注明国际学生费用另加 6% SST；未发现可证明精确国际学生总学费的官方 authority。",
+      "evidence": "https://newinti.edu.my/academic-programmes/postgraduate/doctorate/",
+      "recommendation": "保持 needs-review；除非 INTI 官方提供精确总学费或 Ian 批准近似费用展示策略，否则不得转 ready。",
+      "status": "open",
+      "createdAt": "2026-06-24"
+    },
+    {
+      "type": "field-format-violation",
+      "severity": "medium",
+      "affectedProgramme": null,
+      "affectedField": "curriculum",
+      "description": "官方课程结构为英文，本批次已提供中文课程数组，但专业术语仍需人工复核。",
+      "evidence": "https://newinti.edu.my/academic-programmes/postgraduate/doctorate/",
+      "recommendation": "公开前由 Ian 或人工审核者逐条确认课程中文翻译。",
+      "status": "open",
+      "createdAt": "2026-06-24"
+    },
+    {
+      "type": "collection-omission",
+      "severity": "low",
+      "affectedProgramme": "Doctor of Education",
+      "affectedField": "interviewRequired",
+      "description": "官方页面未明确统一面试要求。",
+      "evidence": "https://newinti.edu.my/programme/doctor-of-education/",
+      "recommendation": "字段保留 official-unpublished，不推断为否。",
+      "status": "open",
+      "createdAt": "2026-06-24"
+    },
+    {
+      "type": "collection-omission",
+      "severity": "low",
+      "affectedProgramme": "Doctor of Philosophy (Education) (by Research)",
+      "affectedField": "interviewRequired",
+      "description": "官方页面未明确统一面试要求。",
+      "evidence": "https://newinti.edu.my/programme/doctor-of-philosophy-education-by-research/",
+      "recommendation": "字段保留 official-unpublished，不推断为否。",
+      "status": "open",
+      "createdAt": "2026-06-24"
+    },
+    {
+      "type": "collection-omission",
+      "severity": "low",
+      "affectedProgramme": "Doctor of Philosophy (PhD) (Applied Physics) (by Research)",
+      "affectedField": "interviewRequired",
+      "description": "官方页面未明确统一面试要求。",
+      "evidence": "https://newinti.edu.my/programme/doctor-of-philosophy-phd-in-applied-physics-by-research-2/",
+      "recommendation": "字段保留 official-unpublished，不推断为否。",
+      "status": "open",
+      "createdAt": "2026-06-24"
+    },
+    {
+      "type": "collection-omission",
+      "severity": "low",
+      "affectedProgramme": "Doctor of Philosophy (PhD) (Financial Technology) (by Research)",
+      "affectedField": "interviewRequired",
+      "description": "官方页面未明确统一面试要求。",
+      "evidence": "https://newinti.edu.my/programme/doctor-of-philosophy-phd-financial-technology/",
+      "recommendation": "字段保留 official-unpublished，不推断为否。",
+      "status": "open",
+      "createdAt": "2026-06-24"
+    },
+    {
+      "type": "collection-omission",
+      "severity": "low",
+      "affectedProgramme": "Doctor of Philosophy (PhD) (Information Systems) (by Research)",
+      "affectedField": "interviewRequired",
+      "description": "官方页面未明确统一面试要求。",
+      "evidence": "https://newinti.edu.my/programme/doctor-of-philosophy-phd-information-systems/",
+      "recommendation": "字段保留 official-unpublished，不推断为否。",
+      "status": "open",
+      "createdAt": "2026-06-24"
+    },
+    {
+      "type": "collection-omission",
+      "severity": "low",
+      "affectedProgramme": "Doctor of Philosophy (PhD) (Innovation and Technology) (by Research)",
+      "affectedField": "careerProspects",
+      "description": "官方页面未发布该专业职业方向。",
+      "evidence": "https://newinti.edu.my/programme/doctor-of-philosophy-phd-innovation-and-technology-2/",
+      "recommendation": "字段保留 official-unpublished，不使用第三方就业方向补齐。",
+      "status": "open",
+      "createdAt": "2026-06-24"
+    },
+    {
+      "type": "collection-omission",
+      "severity": "low",
+      "affectedProgramme": "Doctor of Philosophy (PhD) (Innovation and Technology) (by Research)",
+      "affectedField": "interviewRequired",
+      "description": "官方页面未明确统一面试要求。",
+      "evidence": "https://newinti.edu.my/programme/doctor-of-philosophy-phd-innovation-and-technology-2/",
+      "recommendation": "字段保留 official-unpublished，不推断为否。",
+      "status": "open",
+      "createdAt": "2026-06-24"
+    },
+    {
+      "type": "collection-omission",
+      "severity": "low",
+      "affectedProgramme": "Doctor of Philosophy (PhD) in Data Science (by Research)",
+      "affectedField": "interviewRequired",
+      "description": "官方页面未明确统一面试要求。",
+      "evidence": "https://newinti.edu.my/programme/doctor-of-philosophy-phd-in-data-science/",
+      "recommendation": "字段保留 official-unpublished，不推断为否。",
+      "status": "open",
+      "createdAt": "2026-06-24"
+    }
+  ]
+}

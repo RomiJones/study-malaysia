@@ -30,7 +30,7 @@
               <span class="info-chip info-chip--blue">{{ t(`ownership.${university.ownership}`) }}</span>
               <span class="university-card__meta-dot">{{ text(university.location) }} · {{ t('common.foundedYear') }} {{ university.foundedYear }}</span>
             </div>
-            <h3 class="university-card__title" @click="router.push(`/universities/${university.slug}`)">{{ text(university.name) }}</h3>
+            <h3 class="university-card__title" @click="openDetail">{{ text(university.name) }}</h3>
             <p class="university-card__subtitle">{{ university.nameEn }}</p>
             <p class="university-card__description">{{ text(university.description) }}</p>
           </div>
@@ -53,10 +53,10 @@
           <div class="university-metric__label">{{ t('common.minIelts') }}</div>
           <div class="university-metric__value">{{ university.minIelts }}</div>
         </div>
-        <div class="university-metric">
-          <div class="university-metric__label">{{ t('common.programCount') }}</div>
-          <div class="university-metric__value">{{ university.programCount }}</div>
-        </div>
+          <div class="university-metric">
+            <div class="university-metric__label">{{ t('common.programCount') }}</div>
+            <div class="university-metric__value">{{ displayProgramCount }}</div>
+          </div>
         <div class="university-metric">
           <div class="university-metric__label">{{ t('common.intlStudents') }}</div>
           <div class="university-metric__value">{{ shortNumber(university.intlStudents) }}</div>
@@ -68,7 +68,7 @@
           v-for="program in topPrograms"
           :key="program.id"
           class="program-chip"
-          @click="router.push({ path: `/universities/${university.slug}`, query: { program: String(program.id) } })"
+          @click="openProgram(program.id)"
         >
           {{ text(program.name) }}
         </button>
@@ -102,7 +102,7 @@
               <span class="ui-icon ui-icon--compare" aria-hidden="true"></span>
             </button>
           </div>
-          <RouterLink class="primary-action" :to="`/universities/${university.slug}`">{{ t('common.viewDetails') }}</RouterLink>
+          <RouterLink class="primary-action" :to="detailRoute">{{ t('common.viewDetails') }}</RouterLink>
         </div>
       </div>
     </div>
@@ -127,8 +127,11 @@ const university = props.university;
 
 const levelOrder: Record<DegreeLevel, number> = {
   bachelor: 0,
-  master: 1,
-  phd: 2
+  diploma: 1,
+  master: 2,
+  "postgraduate-certificate": 3,
+  "postgraduate-diploma": 4,
+  phd: 5
 };
 
 const categoryOrder: Record<string, number> = {
@@ -145,6 +148,13 @@ const relatedPrograms = computed(() =>
   [...catalog.programs.filter((program) => program.universityId === university.id)].sort(comparePrograms)
 );
 const topPrograms = computed(() => relatedPrograms.value.slice(0, 4));
+const reviewProgrammeCount = computed(() => readReviewProgrammeCount());
+const shouldUseMsuReviewRoute = computed(() => university.code === "MSU" && reviewProgrammeCount.value > 0 && university.programCount === 0);
+const detailRoute = computed(() => ({
+  path: `/universities/${university.slug}`,
+  query: shouldUseMsuReviewRoute.value ? { review: "msu" } : undefined
+}));
+const displayProgramCount = computed(() => reviewProgrammeCount.value || university.programCount);
 const tuitionDisplay = computed(() => university.tuitionMinCny > 0 ? `CNY ${shortPrice(university.tuitionMinCny)}+` : officialPageFallback(currentLocale.value));
 const sourceStatusLabel = computed(() => formatOfficialSourceStatus(university.officialSourceStatus, currentLocale.value));
 const isFavorite = computed(() => catalog.favoriteState.universities.includes(university.id));
@@ -167,6 +177,38 @@ function comparePrograms(a: ProgramListItem, b: ProgramListItem) {
   if (categoryDiff !== 0) return categoryDiff;
 
   return a.nameEn.localeCompare(b.nameEn);
+}
+
+function readReviewProgrammeCount() {
+  const profile = university.officialProfile;
+  if (!profile || typeof profile !== "object" || Array.isArray(profile)) return 0;
+  const profileRecord = profile as Record<string, unknown>;
+  const total = readReviewImportCount(profileRecord.msuUndergraduateReviewImport) + readReviewImportCount(profileRecord.msuPostgraduateReviewImport);
+  return total > 0 ? total : 0;
+}
+
+function readReviewImportCount(review: unknown) {
+  if (!review || typeof review !== "object" || Array.isArray(review)) return 0;
+  const summary = (review as Record<string, unknown>).catalogStatusSummary;
+  if (!summary || typeof summary !== "object" || Array.isArray(summary)) return 0;
+  const all = (summary as Record<string, unknown>).all;
+  if (!all || typeof all !== "object" || Array.isArray(all)) return 0;
+  const total = Number((all as Record<string, unknown>).total || 0);
+  return Number.isFinite(total) && total > 0 ? total : 0;
+}
+
+function openDetail() {
+  void router.push(detailRoute.value);
+}
+
+function openProgram(programId: number) {
+  void router.push({
+    path: `/universities/${university.slug}`,
+    query: {
+      ...(shouldUseMsuReviewRoute.value ? { review: "msu" } : {}),
+      program: String(programId)
+    }
+  });
 }
 
 function shortPrice(value: number) {

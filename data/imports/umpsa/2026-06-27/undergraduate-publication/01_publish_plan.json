@@ -1,0 +1,325 @@
+{
+  "schemaVersion": 1,
+  "createdAt": "2026-06-27T16:55:19.136Z",
+  "institution": {
+    "code": "UMPSA",
+    "shortName": "UMPSA",
+    "name": "Universiti Malaysia Pahang Al-Sultan Abdullah",
+    "slug": "universiti-malaysia-pahang-al-sultan-abdullah-umpsa"
+  },
+  "authorization": "ian-approved-after-review-v7",
+  "sourceInputs": {
+    "undergraduateAudit": "audits/UMPSA_audit_undergraduate_20260627_reviewed_v7.json",
+    "sourceAuditSafeToImport": false,
+    "sourceAuditReason": "StudyMY audit JSON stays safe_to_import=false by contract; this importer publishes only after explicit operator command."
+  },
+  "writePolicy": {
+    "importer": "apps/api/src/db/import-umpsa-official-audit.ts",
+    "mode": "publish-undergraduate",
+    "upsertPrefix": "umpsa-undergraduate-20260627-",
+    "universityRow": "upsert by code UMPSA or slug universiti-malaysia-pahang-al-sultan-abdullah-umpsa",
+    "programmeRows": "upsert 34 current UMPSA undergraduate public rows and archive non-current UMPSA rows",
+    "transactional": true,
+    "backupRequired": true
+  },
+  "publicationHardGate": {
+    "result": "passed",
+    "standard": "docs/prd/StudyMY-official-programme-publication-hard-gate.md",
+    "rules": [
+      "Chinese bilingual programme name",
+      "Chinese faculty",
+      "direct IELTS list score",
+      "single official international tuition",
+      "numeric duration years",
+      "no programme-level pending issues"
+    ]
+  },
+  "expectedSurface": {
+    "programmeCount": 34,
+    "byLevel": {
+      "bachelor": 34
+    },
+    "summary": {
+      "importRows": 34,
+      "byLevel": {
+        "bachelor": 34
+      },
+      "readyRows": 34,
+      "publishedRows": 34,
+      "uniqueSlugs": 34,
+      "officialFeeRows": 34,
+      "languageRows": 34,
+      "chineseNameRows": 34,
+      "chineseFacultyRows": 34,
+      "chineseCurriculumRows": 34,
+      "chineseCareerRows": 34,
+      "englishPublicTextRows": 34,
+      "sourceRows": 34,
+      "officialUnpublishedCurriculumRows": 28,
+      "publicDisplayStatusCounts": {
+        "ready": 34
+      },
+      "officialSourceStatusCounts": {
+        "official-verified": 34
+      },
+      "feeAuditStatusCounts": {
+        "matched-official": 34
+      }
+    },
+    "validationMeta": {
+      "validatedBy": "study-audit-validator",
+      "validatedAt": "2026-06-27",
+      "originalAuditFile": "audits/UMPSA_audit_undergraduate_20260627.json",
+      "originalAuditDate": "2026-06-27",
+      "schemaStyle": "study-collector-current",
+      "validationVersion": "1.0.4",
+      "reviewVersion": 7,
+      "overallDecision": "PASS",
+      "qualityScore": {
+        "overall": 0.97,
+        "formatCompliance": 1,
+        "sourceValidity": 0.98,
+        "completeness": 0.92,
+        "safety": 0.99
+      },
+      "counts": {
+        "totalProgrammesValidated": 34,
+        "pass": 0,
+        "warn": 34,
+        "repair": 0,
+        "reject": 0,
+        "issuesFound": 17,
+        "issuesRepaired": 17,
+        "issuesPending": 0
+      },
+      "languageGateStats": {
+        "directIeltsRows": 34,
+        "noDirectIeltsRows": 0,
+        "languageSlotMismatchRows": 0,
+        "equivalentPathMisusedAsIeltsRows": 0,
+        "formOptionContaminationRows": 0,
+        "officialIeltsDistribution": {
+          "4.0": 31,
+          "5.0": 1,
+          "5.5": 1,
+          "6.0": 1
+        }
+      },
+      "programmeNameGateStats": {
+        "bilingualProgrammeNameRows": 34,
+        "pureEnglishNameRows": 0,
+        "pureChineseNameRows": 0,
+        "namePrefixContaminationRows": 0,
+        "bilingualScopeLeakRows": 0
+      },
+      "qualityRuleCandidates": [
+        "当官方详情页 title/H1 与 Overview、Career Path、Head of Programme 或 URL slug 暗示的专业身份不一致时，必须 source-conflict 并默认 needs-review。",
+        "由官方页面链接但托管于第三方平台的 prospectus/PDF，在未确认版本当前性前不得作为唯一课程权威。",
+        "by-program fee incentive 表未覆盖的 3U1I 专业，可记录官方总表金额，但应标记费用口径需复核，避免把 published fee 与 payable incentive fee 混用。",
+        "验收阶段必须逐专业回查语言要求，不得将同院校通用 IELTS/TOEFL/PTE/MUET 模板套用到 dual degree、management 或特殊项目。",
+        "当 admission 专业页与学院页/财务页在 IELTS 或费用金额出现多个官方口径时，必须标记 source-conflict，主学费与 IELTS scalar 不得自动二选一。",
+        "当官方来源冲突中同时出现 IELTS、MUET 与 or equivalent 时，必须逐项拆分 IELTS evidence、MUET evidence 与 excluded equivalent fragments；不得把 MUET 或 equivalent path 换算为 IELTS。",
+        "open-intake 页面若显示 Degree (DEG) 而非 Degree International (DEGI)，其费用和本地 MUET 路径不得覆盖国际学生 tuitionMYR 或 IELTS 字段，只能作为排除证据。",
+        "Ian 已确认本科商科类国际学生 IELTS 标准至少 5.5；若 FIM/商科学院官方页直接公布 IELTS 5.5，应优先采用该直接证据，并保留 admission 通用页较低 IELTS 作为 non-adopted source，而不是使用 MUET/equivalent 换算。",
+        "当同一专业官方费用来源冲突且 Ian 裁定以专业页面查询数据为准时，可采用专业页面直接展示的 International Student 金额作为 tuitionMYR，并将财务 PDF/open-intake 等不同金额保留为 non-adopted official fee sources。"
+      ]
+    },
+    "exceptionQueue": [
+      {
+        "type": "source-conflict",
+        "severity": "high",
+        "affectedProgramme": "Bachelor of Civil Engineering Technology (Building) With Honours",
+        "affectedField": "careerProspects",
+        "description": "官方详情页标题为 Building，但正文/职业路径提到 Energy and Environmental，需人工确认页面内容是否错配。",
+        "evidence": [
+          {
+            "sourceUrl": "https://admission.umpsa.edu.my/undergraduate-study/engineering-technology-international/btb-building-international-2",
+            "value": "官方详情页标题与 Overview/Career Path 内容不一致或疑似复用其他专业内容"
+          }
+        ],
+        "recommendation": "请 Ian 或 reviewer 复核 UMPSA 官方页面，确认是否采纳该页职业/简介内容或等待学校修正。",
+        "status": "resolved-in-reviewed-v2",
+        "resolutionNote": "P3 使用 UMPSA 官方学院页/课程结构图/PDF 与 Bendahari 财务总表补证；不再作为 pending issue。"
+      },
+      {
+        "type": "source-conflict",
+        "severity": "medium",
+        "affectedProgramme": "Bachelor of Civil Engineering Technology (Building) With Honours",
+        "affectedField": "tuitionMYR",
+        "description": "该 3U1I/engineering technology programme 只能在官方国际本科总表匹配 Published Programme Fee，未在 by-program incentive payable 表找到单独行。",
+        "evidence": [
+          {
+            "sourceUrl": "https://bendahari.umpsa.edu.my/index.php/filelink/fileman-files/Students%20Finance%20Division/OPEN%20CHANNEL/10.%20PORTAL%20INTERNATIONAL%20UG_V2.pdf",
+            "value": "Published Programme Fee RM83,795"
+          }
+        ],
+        "recommendation": "后续验收时确认是否应使用总表 Published Programme Fee，或向 UMPSA 财务页寻找更新后的 by-program incentive fee。",
+        "status": "resolved-in-reviewed-v2",
+        "resolutionNote": "P3 使用 UMPSA 官方学院页/课程结构图/PDF 与 Bendahari 财务总表补证；不再作为 pending issue。"
+      },
+      {
+        "type": "collection-omission",
+        "severity": "medium",
+        "affectedProgramme": "Bachelor of Manufacturing Engineering Technology (Industrial Automation) with Honours",
+        "affectedField": "tuitionMYR",
+        "description": "该 3U1I/engineering technology programme 只能在官方国际本科总表匹配 Published Programme Fee，未在 by-program incentive payable 表找到单独行。",
+        "evidence": [
+          {
+            "sourceUrl": "https://bendahari.umpsa.edu.my/index.php/filelink/fileman-files/Students%20Finance%20Division/OPEN%20CHANNEL/10.%20PORTAL%20INTERNATIONAL%20UG_V2.pdf",
+            "value": "Published Programme Fee RM83,795"
+          }
+        ],
+        "recommendation": "后续验收时确认是否应使用总表 Published Programme Fee，或向 UMPSA 财务页寻找更新后的 by-program incentive fee。",
+        "status": "resolved-in-reviewed-v2",
+        "resolutionNote": "P3 使用 UMPSA 官方学院页/课程结构图/PDF 与 Bendahari 财务总表补证；不再作为 pending issue。"
+      },
+      {
+        "type": "source-conflict",
+        "severity": "high",
+        "affectedProgramme": "Bachelor of Mechatronic Engineering Technology (Robotics) with Honours",
+        "affectedField": "careerProspects",
+        "description": "官方详情页职业路径内容疑似复用 Electrical Engineering Technology，且费用仅能匹配总表 3U1I Published Programme Fee。",
+        "evidence": [
+          {
+            "sourceUrl": "https://admission.umpsa.edu.my/undergraduate-study/engineering-technology-international/btr-robotics-international",
+            "value": "官方详情页标题与 Overview/Career Path 内容不一致或疑似复用其他专业内容"
+          }
+        ],
+        "recommendation": "请 Ian 或 reviewer 复核 UMPSA 官方页面，确认是否采纳该页职业/简介内容或等待学校修正。",
+        "status": "resolved-in-reviewed-v2",
+        "resolutionNote": "P3 使用 UMPSA 官方学院页/课程结构图/PDF 与 Bendahari 财务总表补证；不再作为 pending issue。"
+      },
+      {
+        "type": "source-conflict",
+        "severity": "medium",
+        "affectedProgramme": "Bachelor of Mechatronic Engineering Technology (Robotics) with Honours",
+        "affectedField": "tuitionMYR",
+        "description": "该 3U1I/engineering technology programme 只能在官方国际本科总表匹配 Published Programme Fee，未在 by-program incentive payable 表找到单独行。",
+        "evidence": [
+          {
+            "sourceUrl": "https://bendahari.umpsa.edu.my/index.php/filelink/fileman-files/Students%20Finance%20Division/OPEN%20CHANNEL/10.%20PORTAL%20INTERNATIONAL%20UG_V2.pdf",
+            "value": "Published Programme Fee RM83,795"
+          }
+        ],
+        "recommendation": "后续验收时确认是否应使用总表 Published Programme Fee，或向 UMPSA 财务页寻找更新后的 by-program incentive fee。",
+        "status": "resolved-in-reviewed-v2",
+        "resolutionNote": "P3 使用 UMPSA 官方学院页/课程结构图/PDF 与 Bendahari 财务总表补证；不再作为 pending issue。"
+      },
+      {
+        "type": "collection-omission",
+        "severity": "medium",
+        "affectedProgramme": "Bachelor of Mechanical Engineering Technology (Oil and Gas) with Honours",
+        "affectedField": "tuitionMYR",
+        "description": "该 3U1I/engineering technology programme 只能在官方国际本科总表匹配 Published Programme Fee，未在 by-program incentive payable 表找到单独行。",
+        "evidence": [
+          {
+            "sourceUrl": "https://bendahari.umpsa.edu.my/index.php/filelink/fileman-files/Students%20Finance%20Division/OPEN%20CHANNEL/10.%20PORTAL%20INTERNATIONAL%20UG_V2.pdf",
+            "value": "Published Programme Fee RM83,795"
+          }
+        ],
+        "recommendation": "后续验收时确认是否应使用总表 Published Programme Fee，或向 UMPSA 财务页寻找更新后的 by-program incentive fee。",
+        "status": "resolved-in-reviewed-v2",
+        "resolutionNote": "P3 使用 UMPSA 官方学院页/课程结构图/PDF 与 Bendahari 财务总表补证；不再作为 pending issue。"
+      },
+      {
+        "type": "collection-omission",
+        "severity": "medium",
+        "affectedProgramme": "Bachelor of Mechanical Engineering Technology (Design and Analysis) with Honours",
+        "affectedField": "tuitionMYR",
+        "description": "该 3U1I/engineering technology programme 只能在官方国际本科总表匹配 Published Programme Fee，未在 by-program incentive payable 表找到单独行。",
+        "evidence": [
+          {
+            "sourceUrl": "https://bendahari.umpsa.edu.my/index.php/filelink/fileman-files/Students%20Finance%20Division/OPEN%20CHANNEL/10.%20PORTAL%20INTERNATIONAL%20UG_V2.pdf",
+            "value": "Published Programme Fee RM83,795"
+          }
+        ],
+        "recommendation": "后续验收时确认是否应使用总表 Published Programme Fee，或向 UMPSA 财务页寻找更新后的 by-program incentive fee。",
+        "status": "resolved-in-reviewed-v2",
+        "resolutionNote": "P3 使用 UMPSA 官方学院页/课程结构图/PDF 与 Bendahari 财务总表补证；不再作为 pending issue。"
+      },
+      {
+        "type": "collection-omission",
+        "severity": "medium",
+        "affectedProgramme": "Bachelor of Mechanical Engineering Technology (Automotive) with Honours",
+        "affectedField": "tuitionMYR",
+        "description": "该 3U1I/engineering technology programme 只能在官方国际本科总表匹配 Published Programme Fee，未在 by-program incentive payable 表找到单独行。",
+        "evidence": [
+          {
+            "sourceUrl": "https://bendahari.umpsa.edu.my/index.php/filelink/fileman-files/Students%20Finance%20Division/OPEN%20CHANNEL/10.%20PORTAL%20INTERNATIONAL%20UG_V2.pdf",
+            "value": "Published Programme Fee RM83,795"
+          }
+        ],
+        "recommendation": "后续验收时确认是否应使用总表 Published Programme Fee，或向 UMPSA 财务页寻找更新后的 by-program incentive fee。",
+        "status": "resolved-in-reviewed-v2",
+        "resolutionNote": "P3 使用 UMPSA 官方学院页/课程结构图/PDF 与 Bendahari 财务总表补证；不再作为 pending issue。"
+      },
+      {
+        "type": "source-conflict",
+        "severity": "medium",
+        "affectedProgramme": "Bachelor of Business Analytics with Honours",
+        "affectedField": "tuitionMYR",
+        "description": "已按 Ian 裁定采用专业页面查询数据优先规则，Business Analytics 学费采用 FIM 专业页 International Student MYR 43,530。",
+        "evidence": [
+          {
+            "sourceUrl": "https://fim.umpsa.edu.my/index.php/programmes/undergraduate/bachelors-of-business-analytics-hons.html",
+            "value": "International Student MYR 43,530 adopted"
+          },
+          {
+            "sourceUrl": "https://bendahari.umpsa.edu.my/index.php/filelink/fileman-files/Students%20Finance%20Division/OPEN%20CHANNEL/INTERNATIONAL%20BY%20PROGRAM/5.%20UG%20INT%20OL_MGMT.pdf",
+            "value": "RM55,528 recorded as non-adopted official fee source"
+          },
+          {
+            "sourceUrl": "https://bendahari.umpsa.edu.my/index.php/filelink/fileman-files/Students%20Finance%20Division/OPEN%20CHANNEL/10.%20PORTAL%20INTERNATIONAL%20UG_V2.pdf",
+            "value": "RM77,795 recorded as non-adopted official fee source"
+          },
+          {
+            "sourceUrl": "https://open-intake.umpsa.edu.my/prog_details.php?prog_c=MQA%2FFA12547",
+            "value": "RM63,600 excluded as Degree (DEG), not Degree International"
+          }
+        ],
+        "recommendation": "无需继续阻断；后续若 UMPSA 更新专业页/财务页，可再复核。",
+        "status": "resolved-in-reviewed-v6",
+        "resolutionNote": "Ian 决定以专业页面查询数据为准。"
+      },
+      {
+        "type": "source-authority-ambiguous",
+        "severity": "medium",
+        "affectedProgramme": null,
+        "affectedField": "curriculum",
+        "description": "部分官方专业详情页曾链接 Google Drive prospectus；该第三方托管附件未作为字段来源，reviewed_v2 已从 crawlLog.pdfsChecked 和 evidence sourceUrl 中移除。",
+        "evidence": [
+          {
+            "sourceUrl": "https://admission.umpsa.edu.my/undergraduate-study/engineering-international/baa-civil-international",
+            "value": "Official page contained a third-party Google Drive prospectus link; excluded from field evidence."
+          },
+          {
+            "sourceUrl": "https://admission.umpsa.edu.my/undergraduate-study/engineering-international/bel-power-system-international",
+            "value": "Official page contained a third-party Google Drive prospectus link; excluded from field evidence."
+          }
+        ],
+        "recommendation": "保持第三方附件排除；如需课程结构，继续寻找 UMPSA 官方域名下的 faculty page、handbook 或 curriculum PDF。",
+        "status": "resolved-in-reviewed-v2",
+        "resolutionNote": "第三方 URL 已从 reviewed_v2 的字段证据与 crawlLog.pdfsChecked 移除。"
+      },
+      {
+        "type": "quality-rule-regression",
+        "severity": "medium",
+        "affectedProgramme": null,
+        "affectedField": "officialSourceUrl",
+        "description": "官方专业详情页存在标题与正文/职业路径疑似错配的模式，容易把其他专业内容误采为当前专业。",
+        "evidence": [
+          {
+            "sourceUrl": "https://admission.umpsa.edu.my/undergraduate-study/engineering-technology-international/btb-building-international-2",
+            "value": "Building title with Energy and Environmental body/career signals"
+          },
+          {
+            "sourceUrl": "https://admission.umpsa.edu.my/undergraduate-study/management-international/bpd-business-analytic-international",
+            "value": "Business Analytics title with Business Engineering body/career signals"
+          }
+        ],
+        "recommendation": "建议将“标题-正文-职业路径专业身份一致性”写入 collector/reviewer 的通用门禁。",
+        "status": "open"
+      }
+    ]
+  }
+}

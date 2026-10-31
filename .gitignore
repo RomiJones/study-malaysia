@@ -10,6 +10,8 @@ apps/api/uploads
 *.log
 .playwright-cli
 output
+/umt-*.png
+/umt-*.yaml
 
 # Local generated data, crawler outputs, and workspace snapshots.
 /tmp/
@@ -19,5 +21,4 @@ output
 /audits/
 /docs/notion-snapshot/
 .idea
-
 

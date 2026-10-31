@@ -1,0 +1,23 @@
+{
+  "status": "passed",
+  "recordKey": "programmes",
+  "baselineKey": "official_row_disposal",
+  "pageOptionKey": "page_option_inventory",
+  "coverageKey": "field_coverage_matrix",
+  "displayParityKey": "display_parity_report.surfaces",
+  "instructionLedgerKey": "instruction_execution_ledger",
+  "officialDomains": [
+    "nottingham.edu.my"
+  ],
+  "recordCount": 81,
+  "baselineCount": 81,
+  "pageOptionCount": 81,
+  "coverageRowCount": 81,
+  "displayParityRowCount": 5,
+  "instructionLedgerCount": 13,
+  "recordsByPublicStatus": {
+    "ready": 81
+  },
+  "issueCounts": {},
+  "issues": []
+}

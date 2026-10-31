@@ -1,0 +1,90 @@
+{
+  "schemaVersion": 1,
+  "scope": {
+    "institution": "Universiti Teknologi PETRONAS",
+    "levels": [
+      "bachelor",
+      "master",
+      "phd"
+    ],
+    "applicantScope": "international"
+  },
+  "summary": {
+    "canonicalProgrammes": 63,
+    "ready": 0,
+    "needsReview": 63,
+    "mainGapClasses": [
+      "research fee official-rate-only publication policy",
+      "course-setting or career official-unpublished states for some records",
+      "Chinese localization deferred",
+      "review-only import not public release"
+    ]
+  },
+  "gapsByLevel": {
+    "bachelor": 15,
+    "master": 37,
+    "phd": 11
+  },
+  "reviewExceptions": [
+    {
+      "id": "review-research-fee-rate-only",
+      "severity": "review",
+      "scope": "master/phd",
+      "title": "Research mode fees are annual/rate-based, not unique full-programme totals",
+      "affectedCount": 22,
+      "evidence": {
+        "sourceId": "pg-international-tuition",
+        "sourceUrl": "https://www.utp.edu.my/Pages/Admission/Postgraduate/International-Applicants/Tuition-fees.aspx",
+        "sourceText": "The above fees for Research are on an annual basis; duration sources publish 24-48 months for MPhil/MSc research and 36-96 months for PhD full-time routes."
+      },
+      "nextAction": "Public release requires explicit StudyMY authorization for calculated-from-official-rate display, including formula, duration basis, exclusions, and detail notes; otherwise keep research rows non-public."
+    }
+  ],
+  "resolvedHardIssues": [
+    {
+      "id": "resolved-ug-count-conflict",
+      "resolvedAt": "2026-06-19T23:59:00+08:00",
+      "decision": "Resolved for catalogue coverage: retain 15 bachelor rows.",
+      "evidence": {
+        "sourceUrl": "https://www.utp.edu.my/Pages/Home.aspx",
+        "sourceText": "UTP homepage publishes Fifteen programmes and lists the same 15 undergraduate programme labels; Undergraduate page text still says fourteen but its links list 15."
+      }
+    },
+    {
+      "id": "resolved-mphil-directory-authority",
+      "resolvedAt": "2026-06-19T23:59:00+08:00",
+      "decision": "Use working Master by Research directory as official source authority; keep blocked detail URL as secondary audit evidence.",
+      "evidence": {
+        "sourceUrl": "https://www.utp.edu.my/Pages/Admission/Postgraduate/Master-by-Research.aspx",
+        "sourceText": "Master of Philosophy row, MQA/SWA2158, intakes, duration and contact are published on the directory."
+      }
+    },
+    {
+      "id": "resolved-process-safety-odl-canonical",
+      "resolvedAt": "2026-06-19T23:59:00+08:00",
+      "decision": "MSc in Process Safety (ODL) remains a canonical candidate.",
+      "evidence": {
+        "sourceUrl": "https://www.utp.edu.my/Pages/Admission/Postgraduate/Master-by-Coursework/MSc-in-Process-Safety-%28ODL%29.aspx",
+        "sourceText": "ODL page and Master by Coursework ODL navigation publish MSc in Process Safety (ODL)."
+      }
+    },
+    {
+      "id": "resolved-mcw-fee-source-priority",
+      "resolvedAt": "2026-06-19T23:59:00+08:00",
+      "decision": "Four coursework/ODL pending fee rows use exact programme detail pages as source-priority fee authority for review import.",
+      "affectedCount": 4,
+      "evidence": {
+        "sourceText": "Exact programme detail pages publish scalar international Estimated Total Cost Fee values; central table conflicts or omits exact row."
+      }
+    },
+    {
+      "id": "resolved-materials-engineering-fee",
+      "resolvedAt": "2026-06-19T23:59:00+08:00",
+      "decision": "Materials Engineering uses the exact programme detail FAQ fee as official fee authority.",
+      "evidence": {
+        "sourceUrl": "https://www.utp.edu.my/Pages/Admission/Undergraduate/Bachelor-of-Materials-Engineering-with-Honours.aspx",
+        "sourceText": "Fee for international students: RM115,500."
+      }
+    }
+  ]
+}

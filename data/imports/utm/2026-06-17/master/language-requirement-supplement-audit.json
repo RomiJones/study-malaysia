@@ -1,0 +1,102 @@
+{
+  "schemaVersion": 1,
+  "universityCode": "UTM",
+  "institutionNameOfficial": "Universiti Teknologi Malaysia",
+  "level": "master",
+  "applicantScope": "international",
+  "academicSession": "2026/2027",
+  "currentAsOf": "2026-06-17",
+  "authorization": "collect",
+  "sourceAuthority": {
+    "sourceId": "english-language-requirements",
+    "sourceUrl": "https://admission.utm.my/english-language-requirements-3/",
+    "sourceRole": "field-authority",
+    "localPath": "data/imports/utm/2026-06-17/master/sources/english-language-requirements.html",
+    "sha256": "e4d7369fa14971cba295ff0cfb2e069c304738da9d73b2142f5ae3546eaf7fad",
+    "retrievedAt": "2026-06-19T03:59:54+00:00",
+    "status": "verified"
+  },
+  "summary": {
+    "candidateRows": 153,
+    "structuredLanguageRows": 153,
+    "ordinaryPostgraduateRows": 150,
+    "teslRows": 3,
+    "statusCounts": {
+      "official-postgraduate-rule": 150,
+      "official-tesl-rule": 3
+    }
+  },
+  "ordinaryPostgraduateRule": {
+    "state": "official-value",
+    "scores": {
+      "muet": 4.0,
+      "ielts": 6.0,
+      "toeflIbt": 60,
+      "pteAcademic": 59,
+      "cambridgeCeq": 169,
+      "ciepElsLevel": 109
+    },
+    "evidencePointer": "Postgraduate section of UTM English Language Requirements page."
+  },
+  "teslPostgraduateRule": {
+    "state": "official-value",
+    "scores": {
+      "muet": 5.0,
+      "ielts": 7.0,
+      "toeflIbt": 95,
+      "pteAcademic": 76,
+      "cambridgeCeq": 180,
+      "ciepElsLevel": null
+    },
+    "evidencePointer": "TESL postgraduate subsection of UTM English Language Requirements page."
+  },
+  "affectedTeslRows": [
+    {
+      "code": "UTM-M-060",
+      "nameEnOfficial": "Master of Education Teaching English as a Second Language (TESL)",
+      "facultyEn": "Faculty of Educational Sciences and Technology",
+      "languageRequirementStatus": "official-tesl-rule",
+      "scores": {
+        "muet": 5.0,
+        "ielts": 7.0,
+        "toeflIbt": 95,
+        "pteAcademic": 76,
+        "cambridgeCeq": 180,
+        "ciepElsLevel": null
+      },
+      "sourceUrl": "https://admission.utm.my/english-language-requirements-3/"
+    },
+    {
+      "code": "UTM-M-079",
+      "nameEnOfficial": "Master in Education Specialization : Teaching English as a Second Language",
+      "facultyEn": "Faculty of Educational Sciences and Technology",
+      "languageRequirementStatus": "official-tesl-rule",
+      "scores": {
+        "muet": 5.0,
+        "ielts": 7.0,
+        "toeflIbt": 95,
+        "pteAcademic": 76,
+        "cambridgeCeq": 180,
+        "ciepElsLevel": null
+      },
+      "sourceUrl": "https://admission.utm.my/english-language-requirements-3/"
+    },
+    {
+      "code": "UTM-M-092",
+      "nameEnOfficial": "Master of Philosophy Field of Research : Teaching English as a Second Language (TESL)",
+      "facultyEn": "Faculty of Educational Sciences and Technology",
+      "languageRequirementStatus": "official-tesl-rule",
+      "scores": {
+        "muet": 5.0,
+        "ielts": 7.0,
+        "toeflIbt": 95,
+        "pteAcademic": 76,
+        "cambridgeCeq": 180,
+        "ciepElsLevel": null
+      },
+      "sourceUrl": "https://admission.utm.my/english-language-requirements-3/"
+    }
+  ],
+  "decision": "candidate-language-requirements-structured",
+  "databaseMutation": "none"
+}

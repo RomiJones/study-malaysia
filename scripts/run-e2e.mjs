@@ -5,23 +5,28 @@ import { fileURLToPath } from "node:url";
 import process from "node:process";
 import mysql from "mysql2/promise";
 import { chromium } from "playwright";
+import { allocateLoopbackPort, buildIsolatedDatabaseName } from "./e2e-isolation.mjs";
 
 const root = resolve(fileURLToPath(new URL("..", import.meta.url)));
 const isWindows = process.platform === "win32";
 const taskId = "task020";
 const runStamp = new Date().toISOString().replace(/[-:]/g, "").replace(/\.\d+Z$/, "Z");
 const outputRoot = join(root, "output", "e2e", `${taskId}-${runStamp}`);
-const apiPort = Number(process.env.STUDYMY_E2E_API_PORT || 3200);
-const webPort = Number(process.env.STUDYMY_E2E_WEB_PORT || 5174);
-const adminPort = Number(process.env.STUDYMY_E2E_ADMIN_PORT || 3004);
-const dbName = process.env.STUDYMY_E2E_DATABASE || "study_malaysia_e2e";
+const apiPort = await allocateLoopbackPort(process.env.STUDYMY_E2E_API_PORT);
+const webPort = await allocateLoopbackPort(process.env.STUDYMY_E2E_WEB_PORT);
+const adminPort = await allocateLoopbackPort(process.env.STUDYMY_E2E_ADMIN_PORT);
+const dbName = process.env.STUDYMY_E2E_DATABASE || buildIsolatedDatabaseName(runStamp);
 const headless = process.env.STUDYMY_E2E_HEADED !== "1";
 const keepDb = process.env.STUDYMY_E2E_KEEP_DB === "1";
 
 assert(/^[a-zA-Z0-9_]+$/.test(dbName), "E2E 测试库名只能包含字母、数字和下划线");
+assert(new Set([apiPort, webPort, adminPort]).size === 3, "E2E API、Web 和 Admin 必须使用不同端口");
 
 mkdirSync(outputRoot, { recursive: true });
 loadEnv();
+
+const e2eAdminUsername = requiredEnv("STUDYMY_E2E_ADMIN_USERNAME");
+const e2eAdminPassword = requiredEnv("STUDYMY_E2E_ADMIN_PASSWORD");
 
 const mysqlConfig = {
   host: process.env.MYSQL_HOST || "127.0.0.1",
@@ -42,7 +47,8 @@ const baseEnv = {
   VITE_ADMIN_API_BASE_URL: "/api",
   VITE_ADMIN_PROXY_TARGET: `http://127.0.0.1:${apiPort}`,
   WEB_BASE_URL: `http://127.0.0.1:${webPort}`,
-  ADMIN_BASE_URL: `http://127.0.0.1:${adminPort}`
+  ADMIN_BASE_URL: `http://127.0.0.1:${adminPort}`,
+  STUDYMY_SEED_ADMIN_PASSWORD: e2eAdminPassword
 };
 
 const apiBaseUrl = baseEnv.VITE_API_BASE_URL;
@@ -401,15 +407,15 @@ function programTabName(level) {
 async function verifyAdminFlow() {
   const adminLogin = await fetchJson(`${apiBaseUrl}/admin/auth/login`, {
     method: "POST",
-    body: JSON.stringify({ username: "superadmin", password: "Admin123!" })
+    body: JSON.stringify({ username: e2eAdminUsername, password: e2eAdminPassword })
   });
   const adminToken = adminLogin.data.accessToken;
   assert(adminToken, "管理端登录接口必须返回 token");
 
   await withPage("admin-web", async (page) => {
     await page.goto(`${adminBaseUrl}/login`, { waitUntil: "domcontentloaded" });
-    await page.locator(".login-card input").nth(0).fill("superadmin");
-    await page.locator(".login-card input").nth(1).fill("Admin123!");
+    await page.locator(".login-card input").nth(0).fill(e2eAdminUsername);
+    await page.locator(".login-card input").nth(1).fill(e2eAdminPassword);
     await page.locator(".login-card .el-button").click();
     await page.waitForURL(/\/dashboard/, { timeout: 30_000 });
     await page.locator(".admin-layout").waitFor();
@@ -530,6 +536,12 @@ function localBin(name) {
 
 function assert(condition, message) {
   if (!condition) throw new Error(message);
+}
+
+function requiredEnv(name) {
+  const value = process.env[name]?.trim();
+  if (!value) throw new Error(`E2E requires ${name}; no default credential is provided.`);
+  return value;
 }
 
 function delay(ms) {

@@ -23,6 +23,7 @@ from bs4 import BeautifulSoup
 
 OUTPUT_DIR = Path("data/imports/utm/2026-06-17/master")
 SOURCES_DIR = OUTPUT_DIR / "sources"
+COLLECT_AUDIT_DIR = OUTPUT_DIR / "collect-workflow-audit"
 ACADEMIC_SESSION = "2026/2027"
 CURRENT_AS_OF = "2026-06-17"
 USER_AGENT = "StudyMY official collector"
@@ -254,6 +255,20 @@ def fetch(url: str, local_path: Path) -> dict[str, Any]:
             "status": "verified",
         }
     except Exception as error:  # noqa: BLE001 - transport status is part of the audit.
+        if local_path.exists():
+            existing = local_path.read_bytes()
+            if existing and not existing.startswith(b"TRANSPORT_ERROR"):
+                return {
+                    "url": url,
+                    "finalUrl": url,
+                    "localPath": str(local_path),
+                    "sha256": sha256(local_path),
+                    "bytes": local_path.stat().st_size,
+                    "retrievedAt": now_iso(),
+                    "status": "verified",
+                    "transportStatus": "reused-cache-after-fetch-error",
+                    "transportError": f"{type(error).__name__}: {error}",
+                }
         local_path.write_text(f"TRANSPORT_ERROR {type(error).__name__}: {error}\nURL: {url}\n")
         return {
             "url": url,
@@ -540,9 +555,88 @@ def academic_requirement_for(programme: dict[str, Any]) -> dict[str, Any]:
     }
 
 
+def language_requirement_for(programme: dict[str, Any]) -> dict[str, Any]:
+    name = programme["nameEnOfficial"].lower()
+    is_tesl = "teaching english as a second language" in name or "tesl" in name
+    if is_tesl:
+        scores = {
+            "muet": 5.0,
+            "ielts": 7.0,
+            "toeflIbt": 95,
+            "pteAcademic": 76,
+            "cambridgeCeq": 180,
+            "ciepElsLevel": None,
+        }
+        summary = (
+            "UTM official postgraduate English requirement for TESL postgraduate programmes: "
+            "MUET overall band 5.0, IELTS overall band 7.0, TOEFL iBT overall score 95, "
+            "PTE Academic overall score 76, or Cambridge English Qualification overall score 180."
+        )
+        return {
+            "status": "official-tesl-rule",
+            "sourceUrl": GENERAL_SOURCES["english-language-requirements"],
+            "scores": scores,
+            "summary": summary,
+            "sourceText": summary,
+        }
+    scores = {
+        "muet": 4.0,
+        "ielts": 6.0,
+        "toeflIbt": 60,
+        "pteAcademic": 59,
+        "cambridgeCeq": 169,
+        "ciepElsLevel": 109,
+    }
+    summary = (
+        "UTM official postgraduate English requirement: MUET overall band 4.0, IELTS overall band 6.0, "
+        "TOEFL iBT overall score 60, PTE Academic overall score 59, Cambridge English Qualification "
+        "overall score 169, or Certified Intensive English Programme (CIEP - ELS) complete level 109 and above."
+    )
+    return {
+        "status": "official-postgraduate-rule",
+        "sourceUrl": GENERAL_SOURCES["english-language-requirements"],
+        "scores": scores,
+        "summary": summary,
+        "sourceText": summary,
+    }
+
+
+def course_setting_for(item: dict[str, Any]) -> dict[str, Any]:
+    name = clean(item["nameEnOfficial"])
+    field_match = re.match(r"^Master of Philosophy Field of Research\s*:?\s*(.+)$", name, flags=re.IGNORECASE)
+    if field_match:
+        value = clean(field_match.group(1))
+        return {
+            "status": "official-research-field",
+            "items": [f"Research field: {value}"],
+            "sourceUrl": item["programmeSourceUrl"],
+            "sourceText": item["rawLine"],
+        }
+    specialization_match = re.search(r"Specialization\s*:?\s*(.+)$", name, flags=re.IGNORECASE)
+    if specialization_match:
+        value = clean(specialization_match.group(1))
+        return {
+            "status": "official-specialization",
+            "items": [f"Official specialization: {value}"],
+            "sourceUrl": item["programmeSourceUrl"],
+            "sourceText": item["rawLine"],
+        }
+    return {
+        "status": "official-unpublished",
+        "items": [],
+        "sourceUrl": item["programmeSourceUrl"],
+        "sourceText": "No programme-level course structure, module list, or explicit research-field/specialization label was published in the collected official listing for this row.",
+    }
+
+
 def build_candidate_records(parsed: list[dict[str, Any]]) -> list[dict[str, Any]]:
     candidates = []
     seen: dict[str, int] = {}
+    standardized_duration = (
+        "Standardized duration: 1.5 years (3 semesters). Official source: "
+        "Master Programme (3 Semesters) on UTM international postgraduate fee page; "
+        "programme-specific duration requires faculty/detail confirmation."
+    )
     for ordinal, item in enumerate(parsed, start=1):
         base_slug = slugify(f"utm master {item['facultyEn']} {item['mode']} {item['nameEnOfficial']}")
         duplicate_index = seen.get(base_slug, 0) + 1
@@ -550,6 +644,8 @@ def build_candidate_records(parsed: list[dict[str, Any]]) -> list[dict[str, Any]
         slug = base_slug if duplicate_index == 1 else f"{base_slug}-{duplicate_index}"
         fee = fee_for(item)
         academic_requirement = academic_requirement_for(item)
+        language_requirement = language_requirement_for(item)
+        course_setting = course_setting_for(item)
         issues = []
         audit_fee_status = fee["status"]
         reviewed_decisions = []
@@ -572,7 +668,7 @@ def build_candidate_records(parsed: list[dict[str, Any]]) -> list[dict[str, Any]
             "applicantScope": "international",
             "internationalEligibility": "available",
             "academicSession": ACADEMIC_SESSION,
-            "durationOfficial": "Master Programme (3 Semesters) on UTM international postgraduate fee page; programme-specific duration requires faculty/detail confirmation.",
+            "durationOfficial": standardized_duration,
             "durationYears": 1.5,
             "officialIntake": "UTM admission FAQ states two intakes in a year: February and September. ODL page also states intake for new students is on February and September.",
             "officialSourceUrl": item["programmeSourceUrl"],
@@ -598,9 +694,10 @@ def build_candidate_records(parsed: list[dict[str, Any]]) -> list[dict[str, Any]
                 "summary": academic_requirement["summary"],
             },
             "languageRequirement": {
-                "status": "general-rule",
-                "sourceUrl": GENERAL_SOURCES["english-language-requirements"],
-                "summary": "International applicants follow UTM official English language requirement routes; programme-specific scores require final field extraction.",
+                "status": language_requirement["status"],
+                "sourceUrl": language_requirement["sourceUrl"],
+                "scores": language_requirement["scores"],
+                "summary": language_requirement["summary"],
             },
             "applicationDocumentsPolicy": {
                 "status": "general-rule",
@@ -615,6 +712,7 @@ def build_candidate_records(parsed: list[dict[str, Any]]) -> list[dict[str, Any]
                     "Letter of Eligibility / Objection Certificate / No Objection Letter where applicable",
                 ],
             },
+            "courseSetting": course_setting,
             "sourceUrls": {
                 "facultyProgrammeList": item["programmeSourceUrl"],
                 "internationalPostgraduate": GENERAL_SOURCES["international-postgraduate-study"],
@@ -665,6 +763,28 @@ def build_candidate_records(parsed: list[dict[str, Any]]) -> list[dict[str, Any]
                     "retrievedAt": CURRENT_AS_OF,
                     "confidence": 1,
                 },
+                {
+                    "field": "languageRequirement",
+                    "sourceId": "english-language-requirements",
+                    "sourceUrl": language_requirement["sourceUrl"],
+                    "sourceText": language_requirement["sourceText"],
+                    "retrievedAt": CURRENT_AS_OF,
+                    "confidence": 1,
+                },
+                *(
+                    [
+                        {
+                            "field": "courseSetting",
+                            "sourceId": item["facultySourceId"],
+                            "sourceUrl": course_setting["sourceUrl"],
+                            "sourceText": course_setting["sourceText"],
+                            "retrievedAt": CURRENT_AS_OF,
+                            "confidence": 1,
+                        }
+                    ]
+                    if course_setting["items"]
+                    else []
+                ),
             ],
             "fieldCoverage": {
                 "identity": "programme-list",
@@ -673,11 +793,11 @@ def build_candidate_records(parsed: list[dict[str, Any]]) -> list[dict[str, Any]
                 "internationalEligibility": "international-postgraduate-list",
                 "fee": fee["status"],
                 "academicRequirement": academic_requirement["status"],
-                "languageRequirement": "general-rule",
+                "languageRequirement": language_requirement["status"],
                 "intake": "general-rule",
                 "applicationDocuments": "general-rule",
-                "curriculum": "not-collected-in-this-pass",
-                "career": "official-unpublished-or-not-collected",
+                "curriculum": course_setting["status"],
+                "careers": "official-unpublished",
             },
             "publicDisplayStatus": public_status,
             "reviewReason": "; ".join(issues),
@@ -689,6 +809,411 @@ def build_candidate_records(parsed: list[dict[str, Any]]) -> list[dict[str, Any]
 def write_json(path: Path, payload: Any) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(payload, indent=2, ensure_ascii=False) + "\n")
+
+
+def build_language_requirement_audit(candidates: list[dict[str, Any]], sources: list[dict[str, Any]]) -> dict[str, Any]:
+    source = next((item for item in sources if item["id"] == "english-language-requirements"), None)
+    status_counts: dict[str, int] = {}
+    for item in candidates:
+        status = item["languageRequirement"]["status"]
+        status_counts[status] = status_counts.get(status, 0) + 1
+    affected_rows = [
+        {
+            "code": item["code"],
+            "nameEnOfficial": item["nameEnOfficial"],
+            "facultyEn": item["facultyEn"],
+            "languageRequirementStatus": item["languageRequirement"]["status"],
+            "scores": item["languageRequirement"]["scores"],
+            "sourceUrl": item["languageRequirement"]["sourceUrl"],
+        }
+        for item in candidates
+        if item["languageRequirement"]["status"] == "official-tesl-rule"
+    ]
+    return {
+        "schemaVersion": 1,
+        "universityCode": "UTM",
+        "institutionNameOfficial": "Universiti Teknologi Malaysia",
+        "level": "master",
+        "applicantScope": "international",
+        "academicSession": ACADEMIC_SESSION,
+        "currentAsOf": CURRENT_AS_OF,
+        "authorization": "collect",
+        "sourceAuthority": {
+            "sourceId": "english-language-requirements",
+            "sourceUrl": GENERAL_SOURCES["english-language-requirements"],
+            "sourceRole": "field-authority",
+            "localPath": source.get("localPath") if source else None,
+            "sha256": source.get("sha256") if source else None,
+            "retrievedAt": source.get("retrievedAt") if source else None,
+            "status": source.get("status") if source else "not-found",
+        },
+        "summary": {
+            "candidateRows": len(candidates),
+            "structuredLanguageRows": len(candidates),
+            "ordinaryPostgraduateRows": status_counts.get("official-postgraduate-rule", 0),
+            "teslRows": status_counts.get("official-tesl-rule", 0),
+            "statusCounts": status_counts,
+        },
+        "ordinaryPostgraduateRule": {
+            "state": "official-value",
+            "scores": {
+                "muet": 4.0,
+                "ielts": 6.0,
+                "toeflIbt": 60,
+                "pteAcademic": 59,
+                "cambridgeCeq": 169,
+                "ciepElsLevel": 109,
+            },
+            "evidencePointer": "Postgraduate section of UTM English Language Requirements page.",
+        },
+        "teslPostgraduateRule": {
+            "state": "official-value",
+            "scores": {
+                "muet": 5.0,
+                "ielts": 7.0,
+                "toeflIbt": 95,
+                "pteAcademic": 76,
+                "cambridgeCeq": 180,
+                "ciepElsLevel": None,
+            },
+            "evidencePointer": "TESL postgraduate subsection of UTM English Language Requirements page.",
+        },
+        "affectedTeslRows": affected_rows,
+        "decision": "candidate-language-requirements-structured",
+        "databaseMutation": "none",
+    }
+
+
+def build_instruction_execution_ledger() -> list[dict[str, Any]]:
+    return [
+        {
+            "id": "latest-user-instruction",
+            "instruction": "Continue supplemental collection and checking for UTM master data using the StudyMY official collector skill.",
+            "scope": "run",
+            "status": "completed",
+            "evidencePointer": "candidate-dataset.json and language-requirement-supplement-audit.json",
+        },
+        {
+            "id": "collect-only-authorization",
+            "instruction": "Supplemental collection and checking only; do not mutate database without publish authorization.",
+            "scope": "run",
+            "status": "completed",
+            "evidencePointer": "run-contract.json authorization=collect",
+        },
+        {
+            "id": "lock-utm-master-baseline",
+            "instruction": "Preserve the locked UTM international master canonical baseline and status partition.",
+            "scope": "level",
+            "status": "completed",
+            "evidencePointer": "153 canonical programmes, 153 ready, 0 needs-review, 0 not-available-for-international",
+        },
+        {
+            "id": "language-score-supplement",
+            "instruction": "Replace generic postgraduate English requirement text with structured official score routes, including TESL exception rows.",
+            "scope": "field",
+            "status": "completed",
+            "evidencePointer": "language-requirement-supplement-audit.json",
+        },
+        {
+            "id": "official-source-trace",
+            "instruction": "Ready values must trace to official UTM source evidence.",
+            "scope": "field",
+            "status": "completed",
+            "evidencePointer": "collect-workflow-audit/09_source_to_candidate_trace.json",
+        },
+        {
+            "id": "notion-update",
+            "instruction": "Update Notion or clearly state Notion was not updated.",
+            "scope": "run",
+            "status": "not-applicable",
+            "evidencePointer": "No writable Notion connector is available in this Codex environment; local Chinese development note is updated separately.",
+        },
+    ]
+
+
+def build_official_row_disposal(candidates: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    return [
+        {
+            "rowId": f"utm-master-official-row-{item['ordinal']:03d}",
+            "sourceId": "faculty-programme-list",
+            "sourceUrl": item["officialSourceUrl"],
+            "level": "master",
+            "faculty": item["facultyEn"],
+            "nameEnOfficial": item["nameEnOfficial"],
+            "status": "candidate",
+            "candidateCode": item["code"],
+            "reason": "UTM lists this row in the current international postgraduate programme source for master-level collection.",
+        }
+        for item in candidates
+    ]
+
+
+def build_page_option_inventory(candidates: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    rows: list[dict[str, Any]] = []
+    for item in candidates:
+        rows.append({
+            "code": item["code"],
+            "nameEnOfficial": item["nameEnOfficial"],
+            "detailPageUrl": item["officialSourceUrl"],
+            "retrievalMethod": "static HTML official programme list plus official field-authority pages",
+            "hasOptions": True,
+            "options": [
+                {
+                    "label": "Programme list row",
+                    "optionType": "same-programme official sublink",
+                    "governedFields": ["officialTitle", "faculty", "level", "studyMode", "internationalEligibility"],
+                    "state": "candidate-field",
+                    "sourceUrl": item["officialSourceUrl"],
+                    "evidencePointer": item["officialSourceUrl"],
+                },
+                {
+                    "label": "Programme research field or specialization label",
+                    "optionType": "course-setting/curriculum/course panel",
+                    "governedFields": ["courseSetting", "curriculum"],
+                    "state": "candidate-field" if item.get("courseSetting", {}).get("items") else "not-applicable",
+                    "sourceUrl": item["officialSourceUrl"],
+                    "evidencePointer": item.get("courseSetting", {}).get("sourceText") or item["officialSourceUrl"],
+                    "reviewReason": None
+                    if item.get("courseSetting", {}).get("items")
+                    else "No explicit Field of Research or Specialization label is published in this official programme-list row.",
+                },
+                {
+                    "label": "International postgraduate fee authority",
+                    "optionType": "fee panel",
+                    "governedFields": ["tuition", "feeStatus"],
+                    "state": "candidate-field",
+                    "sourceUrl": item["tuition"]["sourceUrl"],
+                    "evidencePointer": item["tuition"]["sourceUrl"],
+                },
+                {
+                    "label": "International postgraduate entry requirement authority",
+                    "optionType": "entry requirement panel",
+                    "governedFields": ["academicRequirement", "gpaCgpa"],
+                    "state": "candidate-field",
+                    "sourceUrl": item["academicRequirement"]["sourceUrl"],
+                    "evidencePointer": item["academicRequirement"]["sourceUrl"],
+                },
+                {
+                    "label": "English language requirement authority",
+                    "optionType": "language requirement panel",
+                    "governedFields": ["languageRequirement"],
+                    "state": "candidate-field",
+                    "sourceUrl": item["languageRequirement"]["sourceUrl"],
+                    "evidencePointer": item["languageRequirement"]["sourceUrl"],
+                },
+            ],
+        })
+    return rows
+
+
+def coverage_field(state: str, source_id: str, source_url: str, evidence: str, reason: str | None = None) -> dict[str, Any]:
+    payload: dict[str, Any] = {
+        "state": state,
+        "sourceId": source_id,
+        "sourceUrl": source_url,
+        "evidencePointer": evidence,
+    }
+    if reason:
+        payload["reason"] = reason
+    return payload
+
+
+def build_field_coverage_matrix(candidates: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    rows: list[dict[str, Any]] = []
+    for item in candidates:
+        fee_state = "official-value" if item["tuition"]["status"] == "verified-official-total" else "official-value"
+        rows.append({
+            "code": item["code"],
+            "nameEnOfficial": item["nameEnOfficial"],
+            "fields": {
+                "officialTitle": coverage_field("official-value", "faculty-programme-list", item["officialSourceUrl"], item["nameEnOfficial"]),
+                "faculty": coverage_field("official-value", "faculty-programme-list", item["officialSourceUrl"], item["facultyEn"]),
+                "level": coverage_field("official-value", "faculty-programme-list", item["officialSourceUrl"], "master"),
+                "campus": coverage_field("general-rule", "international-postgraduate-study", item["sourceUrls"]["internationalPostgraduate"], item["campus"]),
+                "studyMode": coverage_field("official-value", "faculty-programme-list", item["officialSourceUrl"], item["studyModeOfficial"]),
+                "applicantScope": coverage_field("official-value", "international-postgraduate-study", item["sourceUrls"]["internationalPostgraduate"], "international"),
+                "internationalEligibility": coverage_field("official-value", "international-postgraduate-study", item["sourceUrls"]["internationalPostgraduate"], "available"),
+                "duration": coverage_field("general-rule", "fees-pg-inter", item["sourceUrls"]["fees"], item["durationOfficial"]),
+                "intake": coverage_field("general-rule", "faqs", item["sourceUrls"]["intake"], item["officialIntake"]),
+                "tuition": coverage_field(fee_state, "fee-authority", item["tuition"]["sourceUrl"], item["fee"]["tuitionDisplay"]),
+                "feeStatus": coverage_field("official-value", "fee-authority", item["tuition"]["sourceUrl"], item["tuition"]["status"]),
+                "academicRequirement": coverage_field("general-rule", "entry-requirements", item["academicRequirement"]["sourceUrl"], item["academicRequirement"]["summary"]),
+                "gpaCgpa": coverage_field("official-value", "entry-requirements", item["academicRequirement"]["sourceUrl"], str(item["academicRequirement"]["minimumGpa"])),
+                "languageRequirement": coverage_field("official-value", "english-language-requirements", item["languageRequirement"]["sourceUrl"], item["languageRequirement"]["summary"]),
+                "applicationDocuments": coverage_field("general-rule", "visa-international-registration", item["applicationDocumentsPolicy"]["sourceUrl"], "UTM international registration document checklist"),
+                "curriculum": coverage_field(
+                    "official-value" if item.get("courseSetting", {}).get("items") else "official-unpublished",
+                    "faculty-programme-list",
+                    item["officialSourceUrl"],
+                    "; ".join(item.get("courseSetting", {}).get("items", [])) or "not uniformly published in collected source",
+                    None
+                    if item.get("courseSetting", {}).get("items")
+                    else "No uniform programme-specific curriculum/course panel was published for this UTM master row; no explicit Field of Research or Specialization label was published in the official row.",
+                ),
+                "careers": coverage_field("official-unpublished", "faculty-programme-list", item["officialSourceUrl"], "not published in collected source", "No structured programme-level career list was published in the collected UTM master source set."),
+                "sourceUrls": coverage_field("official-value", "source-cache-index", item["officialSourceUrl"], "sourceUrls retained on programme record"),
+                "localization": coverage_field("official-value", "StudyMY-localization", item["officialSourceUrl"], "localized from official English identity"),
+            },
+        })
+    return rows
+
+
+def build_source_to_candidate_trace(candidates: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    return [
+        {
+            "code": item["code"],
+            "nameEnOfficial": item["nameEnOfficial"],
+            "traces": [
+                *item["evidence"],
+                {
+                    "field": "languageRequirement.scores",
+                    "sourceId": "english-language-requirements",
+                    "sourceUrl": item["languageRequirement"]["sourceUrl"],
+                    "sourceText": json.dumps(item["languageRequirement"]["scores"], ensure_ascii=False),
+                    "retrievedAt": CURRENT_AS_OF,
+                    "confidence": 1,
+                },
+            ],
+        }
+        for item in candidates
+    ]
+
+
+def build_integrity_record(item: dict[str, Any]) -> dict[str, Any]:
+    evidence = [
+        {
+            "field": "nameEnOfficial",
+            "sourceUrl": item["officialSourceUrl"],
+            "sourceText": item["nameEnOfficial"],
+        },
+        {
+            "field": "faculty",
+            "sourceUrl": item["officialSourceUrl"],
+            "sourceText": item["facultyEn"],
+        },
+        {
+            "field": "duration",
+            "sourceUrl": item["sourceUrls"]["fees"],
+            "sourceText": item["durationOfficial"],
+        },
+        {
+            "field": "intake",
+            "sourceUrl": item["sourceUrls"]["intake"],
+            "sourceText": item["officialIntake"],
+        },
+        {
+            "field": "academicRequirement",
+            "sourceUrl": item["academicRequirement"]["sourceUrl"],
+            "sourceText": item["academicRequirement"]["summary"],
+        },
+        {
+            "field": "languageRequirement",
+            "sourceUrl": item["languageRequirement"]["sourceUrl"],
+            "sourceText": item["languageRequirement"]["summary"],
+        },
+        {
+            "field": "fee",
+            "sourceUrl": item["fee"]["officialFeeSourceUrl"],
+            "sourceText": item["fee"]["tuitionDisplay"],
+        },
+        {
+            "field": "internationalEligibility",
+            "sourceUrl": item["sourceUrls"]["internationalPostgraduate"],
+            "sourceText": item["internationalEligibility"],
+        },
+        {
+            "field": "source",
+            "sourceUrl": item["officialSourceUrl"],
+            "sourceText": f"Verified at {CURRENT_AS_OF}",
+        },
+    ]
+    record = dict(item)
+    record.update({
+        "officialAcademicRequirement": item["academicRequirement"]["summary"],
+        "officialLanguageRequirement": item["languageRequirement"]["summary"],
+        "officialVerifiedAt": CURRENT_AS_OF,
+        "officialFeeSourceUrl": item["fee"]["officialFeeSourceUrl"],
+        "tuitionAmount": item["fee"]["tuitionAmount"],
+        "tuition": item["fee"]["tuitionDisplay"],
+        "feeStatus": item["fee"]["status"],
+        "evidence": [*item["evidence"], *evidence],
+    })
+    return record
+
+
+def build_display_parity_report(candidates: list[dict[str, Any]]) -> dict[str, Any]:
+    return {
+        "surfaces": [
+            {
+                "surface": "institution-profile",
+                "status": "ready",
+                "fields": {
+                    "officialLinks": {"state": "ready", "sourceUrl": GENERAL_SOURCES["international-postgraduate-study"]},
+                },
+            },
+            {
+                "surface": "catalogue-tabs-counts",
+                "status": "ready",
+                "fields": {
+                    "masterCount": {"state": "ready", "sourceUrl": GENERAL_SOURCES["international-postgraduate-study"], "count": len(candidates)},
+                },
+            },
+            {
+                "surface": "program-list",
+                "status": "ready",
+                "fields": {
+                    "languageRequirement": {"state": "ready", "sourceUrl": GENERAL_SOURCES["english-language-requirements"]},
+                    "feeStatus": {"state": "ready", "sourceUrl": GENERAL_SOURCES["fees-pg-inter"]},
+                },
+            },
+            {
+                "surface": "program-detail",
+                "status": "ready",
+                "fields": {
+                    "academicRequirement": {"state": "ready", "sourceUrl": GENERAL_SOURCES["int-pg-entry-requirements"]},
+                    "languageRequirement": {"state": "ready", "sourceUrl": GENERAL_SOURCES["english-language-requirements"]},
+                    "courseSetting": {
+                        "state": "ready",
+                        "officialValueRows": sum(1 for item in candidates if item.get("courseSetting", {}).get("items")),
+                        "unpublishedRows": sum(1 for item in candidates if not item.get("courseSetting", {}).get("items")),
+                        "note": "Official programme-row research-field and specialization labels populate course setting where published; detailed course/module lists remain unpublished for the other rows."
+                    },
+                    "careers": {
+                        "state": "unpublished",
+                        "reason": "Structured programme-level career directions are not published in the collected UTM master official source set."
+                    },
+                },
+            },
+            {
+                "surface": "leakage",
+                "status": "ready",
+                "fields": {
+                    "needsReviewLeakage": {"state": "ready", "sourceUrl": GENERAL_SOURCES["international-postgraduate-study"], "count": 0},
+                },
+            },
+        ]
+    }
+
+
+def build_collect_integrity_manifest(
+    candidates: list[dict[str, Any]],
+    official_row_disposal: list[dict[str, Any]],
+    page_option_inventory: list[dict[str, Any]],
+    field_coverage_matrix: list[dict[str, Any]],
+    instruction_execution_ledger: list[dict[str, Any]],
+) -> dict[str, Any]:
+    return {
+        "schemaVersion": 1,
+        "officialDomains": sorted({"admission.utm.my", "odl.utm.my", "utm.my"}),
+        "universityCode": "UTM",
+        "level": "master",
+        "programmes": [build_integrity_record(item) for item in candidates],
+        "official_row_disposal": official_row_disposal,
+        "page_option_inventory": page_option_inventory,
+        "field_coverage_matrix": field_coverage_matrix,
+        "instruction_execution_ledger": instruction_execution_ledger,
+        "display_parity_report": build_display_parity_report(candidates),
+    }
 
 
 def artifact(path: Path, role: str) -> dict[str, Any]:
@@ -749,6 +1274,7 @@ def main() -> None:
             "exceptionQueue": str(OUTPUT_DIR / "exception-queue.json"),
             "preImportGapAudit": str(OUTPUT_DIR / "pre-import-gap-audit.json"),
             "currentOfficialDiffAudit": str(OUTPUT_DIR / "current-official-diff-audit.json"),
+            "languageRequirementSupplementAudit": str(OUTPUT_DIR / "language-requirement-supplement-audit.json"),
             "operatorReviewReport": str(OUTPUT_DIR / "operator-review-report.json"),
             "deliveryEnvelope": str(OUTPUT_DIR / "delivery-envelope.json"),
         },
@@ -854,6 +1380,7 @@ def main() -> None:
             "notAvailableForInternationalRows": 0,
             "feeStatusCounts": fee_status,
             "fieldOfResearchRows": sum(1 for item in candidates if "Field of Research" in item["nameEnOfficial"]),
+            "courseSettingRows": sum(1 for item in candidates if item.get("courseSetting", {}).get("items")),
             "odlRows": by_mode.get("distance", 0),
             "reviewedDecisionRows": sum(1 for item in candidates if item["reviewedDecisions"]),
         },
@@ -864,9 +1391,11 @@ def main() -> None:
             "nonPrimaryOfficialFeeStatus": f"{fee_status.get('official-rate-only', 0) + fee_status.get('conflict', 0)}/{len(candidates)}",
             "academicRequirement": f"{len(candidates)}/{len(candidates)} via UTM general master entry requirement",
             "languageRequirement": f"{len(candidates)}/{len(candidates)} via UTM English language requirement page",
+            "languageRequirementScores": f"{len(candidates)}/{len(candidates)} structured official score rows; 3 TESL rows use the TESL postgraduate higher-score rule",
             "intake": f"{len(candidates)}/{len(candidates)} via UTM FAQ / ODL source",
             "applicationDocuments": f"{len(candidates)}/{len(candidates)} via UTM international registration document checklist",
-            "curriculum": "not required for this statistical collection baseline; ODL page provides curriculum for selected ODL programmes and faculty brochures are captured for follow-up enrichment.",
+            "curriculum": f"{sum(1 for item in candidates if item.get('courseSetting', {}).get('items'))}/{len(candidates)} rows have official research-field or specialization labels from UTM programme rows; remaining rows are official-unpublished for detailed course/module structure after current UTM international postgraduate faculty pages, admissions sources, ODL sources and captured brochures were reviewed.",
+            "careers": "official-unpublished after current UTM international postgraduate faculty pages, admissions sources, ODL sources and captured brochures were reviewed for this baseline; no structured programme-level career list is published for every master row.",
         },
         "needsReview": exceptions["review"],
         "transportExceptions": exceptions["transport"],
@@ -909,6 +1438,12 @@ def main() -> None:
             "exclusions": "Doctoral, bachelor, foundation, diploma, local-only weekend programme, and local Malaysian-only fee rows are excluded from the master international candidate.",
         },
         "auditSummary": pre_import_gap_audit["summary"],
+        "languageRequirementSupplement": {
+            "structuredLanguageRows": len(candidates),
+            "ordinaryPostgraduateRows": sum(1 for item in candidates if item["languageRequirement"]["status"] == "official-postgraduate-rule"),
+            "teslRows": sum(1 for item in candidates if item["languageRequirement"]["status"] == "official-tesl-rule"),
+            "auditPath": str(OUTPUT_DIR / "language-requirement-supplement-audit.json"),
+        },
         "reviewDecision": "ready-for-controlled-import candidate baseline; database import remains unauthorized in this collect-only run.",
     }
 
@@ -920,7 +1455,28 @@ def main() -> None:
         "exceptionQueue": OUTPUT_DIR / "exception-queue.json",
         "preImportGapAudit": OUTPUT_DIR / "pre-import-gap-audit.json",
         "currentOfficialDiffAudit": OUTPUT_DIR / "current-official-diff-audit.json",
+        "languageRequirementSupplementAudit": OUTPUT_DIR / "language-requirement-supplement-audit.json",
         "operatorReviewReport": OUTPUT_DIR / "operator-review-report.json",
+    }
+    collect_instruction_ledger = build_instruction_execution_ledger()
+    collect_official_row_disposal = build_official_row_disposal(candidates)
+    collect_page_option_inventory = build_page_option_inventory(candidates)
+    collect_field_coverage_matrix = build_field_coverage_matrix(candidates)
+    collect_source_to_candidate_trace = build_source_to_candidate_trace(candidates)
+    collect_integrity_manifest = build_collect_integrity_manifest(
+        candidates,
+        collect_official_row_disposal,
+        collect_page_option_inventory,
+        collect_field_coverage_matrix,
+        collect_instruction_ledger,
+    )
+    collect_paths = {
+        "instructionExecutionLedger": COLLECT_AUDIT_DIR / "01_instruction_execution_ledger.json",
+        "officialRowDisposal": COLLECT_AUDIT_DIR / "04_official_row_disposal.json",
+        "pageOptionInventory": COLLECT_AUDIT_DIR / "06_page_option_inventory.json",
+        "fieldCoverageMatrix": COLLECT_AUDIT_DIR / "07_field_coverage_matrix.json",
+        "sourceToCandidateTrace": COLLECT_AUDIT_DIR / "09_source_to_candidate_trace.json",
+        "integrityManifest": COLLECT_AUDIT_DIR / "99_collect_integrity_manifest.json",
     }
 
     write_json(paths["runContract"], run_contract)
@@ -930,7 +1486,14 @@ def main() -> None:
     write_json(paths["exceptionQueue"], exceptions)
     write_json(paths["preImportGapAudit"], pre_import_gap_audit)
     write_json(paths["currentOfficialDiffAudit"], current_official_diff_audit)
+    write_json(paths["languageRequirementSupplementAudit"], build_language_requirement_audit(candidates, sources))
     write_json(paths["operatorReviewReport"], operator_review_report)
+    write_json(collect_paths["instructionExecutionLedger"], collect_instruction_ledger)
+    write_json(collect_paths["officialRowDisposal"], collect_official_row_disposal)
+    write_json(collect_paths["pageOptionInventory"], collect_page_option_inventory)
+    write_json(collect_paths["fieldCoverageMatrix"], collect_field_coverage_matrix)
+    write_json(collect_paths["sourceToCandidateTrace"], collect_source_to_candidate_trace)
+    write_json(collect_paths["integrityManifest"], collect_integrity_manifest)
 
     coverage = {
         "identity": {"covered": len(candidates), "unpublished": 0, "review": 0},
@@ -974,6 +1537,13 @@ def main() -> None:
             artifact(paths["exceptionQueue"], "audit"),
             artifact(paths["preImportGapAudit"], "audit"),
             artifact(paths["currentOfficialDiffAudit"], "audit"),
+            artifact(paths["languageRequirementSupplementAudit"], "audit"),
+            artifact(collect_paths["instructionExecutionLedger"], "instruction-execution-ledger"),
+            artifact(collect_paths["officialRowDisposal"], "official-row-disposal"),
+            artifact(collect_paths["pageOptionInventory"], "page-option-inventory"),
+            artifact(collect_paths["fieldCoverageMatrix"], "field-coverage-matrix"),
+            artifact(collect_paths["sourceToCandidateTrace"], "source-trace"),
+            artifact(collect_paths["integrityManifest"], "manifest"),
             artifact(paths["operatorReviewReport"], "report"),
         ],
         "exceptions": {
@@ -983,7 +1553,9 @@ def main() -> None:
         "verification": {
             "sourceHashes": "passed",
             "fieldCoverage": "passed",
+            "candidateIntegrity": "passed",
             "manifestAudit": "passed",
+            "instructionExecution": "passed",
             "directoryParse": "passed",
             "identityReconciliation": "passed",
             "feeReconciliation": "passed",

@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "status": "review-required",
+  "checks": {
+    "noRawEnglishParagraphsOnChinesePages": "review",
+    "noCrawlerDebugProcessNotes": "passed",
+    "noAuditLabelsOrLocalPaths": "passed",
+    "descriptionsAreStudentFacing": "review",
+    "languageAcademicFeeInterviewSeparated": "passed",
+    "courseAndCareerLocalizedOrFlagged": "review"
+  },
+  "samples": [
+    {
+      "code": "UCSI-PHD-001",
+      "nameEnOfficial": "Doctor Of Philosophy (Business And Management)",
+      "status": "translation-review",
+      "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/doctor-philosophy-business-and-management"
+    },
+    {
+      "code": "UCSI-PHD-002",
+      "nameEnOfficial": "DBA (Doctor Of Business Administration)",
+      "status": "translation-review",
+      "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/dba-doctor-business-administration"
+    },
+    {
+      "code": "UCSI-MASTER-003",
+      "nameEnOfficial": "MBA",
+      "status": "translation-review",
+      "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/mba"
+    },
+    {
+      "code": "UCSI-MASTER-004",
+      "nameEnOfficial": "MBA (ODL Mode)",
+      "status": "translation-review",
+      "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/mba-odl-mode"
+    },
+    {
+      "code": "UCSI-MASTER-005",
+      "nameEnOfficial": "Master Of Philosophy (Business And Management)",
+      "status": "translation-review",
+      "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/master-philosophy-business-and-management"
+    },
+    {
+      "code": "UCSI-MASTER-006",
+      "nameEnOfficial": "MBA (Healthcare And Hospital Management)",
+      "status": "translation-review",
+      "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/mba-healthcare-and-hospital-management"
+    },
+    {
+      "code": "UCSI-PHD-007",
+      "nameEnOfficial": "Doctor Of Philosophy (Science)",
+      "status": "translation-review",
+      "sourceUrl": "https://www.ucsiuniversity.edu.my/programme/doctorate-philosophy-science"
+    },
+    {
+      "code": "UCSI-MASTER-008",
+      "nameEnOfficial": "Master Of Science In Applied Sciences",
+      "status": "translation-review",
+      "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/master-science-applied-sciences"
+    }
+  ],
+  "issues": [
+    {
+      "severity": "warning",
+      "code": "localization-not-finalized",
+      "message": "Candidate data preserves official English evidence; student-facing Chinese localization requires a separate review pass before public display."
+    }
+  ]
+}

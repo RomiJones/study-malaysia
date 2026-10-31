@@ -1,0 +1,92 @@
+{
+  "outDir": "/Users/ian/Desktop/dev/study-malaysia/data/imports/upsi/2026-07-08/doctoral",
+  "candidate": "/Users/ian/Desktop/dev/study-malaysia/data/imports/upsi/2026-07-08/doctoral/candidate-dataset.json",
+  "gapReport": "/Users/ian/Desktop/dev/study-malaysia/data/imports/upsi/2026-07-08/doctoral/gap-report.md",
+  "coverage": {
+    "programmeCount": 109,
+    "rawDirectoryRows": 109,
+    "dedupedDirectoryCodes": 109,
+    "facultyPdfMatched": 98,
+    "detailPageFetched": 109,
+    "studyModesConfirmedFromDetail": 109,
+    "durationInternationalParsed": 109,
+    "feeCategoryMapped": 98,
+    "feeCategoryNotMapped": 11,
+    "languageGeneralRule": 105,
+    "languageProgrammeSpecific": 4,
+    "doctoralKindCounts": {
+      "doctor_of_education": 1,
+      "doctor_of_psychology": 2,
+      "doctor_of_philosophy": 106
+    },
+    "studyModeCounts": {
+      "mixed": 1,
+      "research": 108
+    },
+    "facultyNotMatchedCodes": [
+      "PT054",
+      "PT056",
+      "PT150",
+      "PT151",
+      "PT152",
+      "PT153",
+      "PT154",
+      "PT155",
+      "PT156",
+      "PT157",
+      "PT167"
+    ],
+    "feeCategoryNotMappedCodes": [
+      "PJ01",
+      "PJ02",
+      "PT150",
+      "PT151",
+      "PT152",
+      "PT153",
+      "PT154",
+      "PT155",
+      "PT156",
+      "PT157",
+      "PT167"
+    ]
+  },
+  "directoryCodesNotInFacultyPdf": [
+    "PT054",
+    "PT056",
+    "PT150",
+    "PT151",
+    "PT152",
+    "PT153",
+    "PT154",
+    "PT155",
+    "PT156",
+    "PT157",
+    "PT167"
+  ],
+  "facultyPdfCodesNotInDirectory": [
+    "PT186",
+    "PT187",
+    "PT189",
+    "PT190",
+    "PT191",
+    "PT192",
+    "PT193",
+    "PT194",
+    "PT195",
+    "PT196",
+    "PT197",
+    "PT198",
+    "PT199",
+    "PT201",
+    "PT203",
+    "PT204",
+    "PT205",
+    "PT206",
+    "PT207",
+    "PT208",
+    "PT209",
+    "PT210",
+    "PT211"
+  ],
+  "duplicates": []
+}

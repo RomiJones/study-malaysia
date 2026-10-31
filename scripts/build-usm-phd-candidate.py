@@ -162,6 +162,68 @@ def clean_official_text(value: str | None) -> str:
     )
 
 
+def detail_html_path(html_cache: Path, code: str) -> Path | None:
+    article = re.search(r"USM-PG-ARTICLE-(\d+)", code)
+    if not article:
+        return None
+    path = html_cache / f"usm-pg-article-{article.group(1)}.html"
+    return path if path.exists() and path.stat().st_size > 1000 else None
+
+
+def programme_sections_from_html(html_text: str) -> dict[str, str]:
+    from bs4 import BeautifulSoup
+
+    target_headings = {
+        "OVERVIEW",
+        "ADMISSION REQUIREMENTS",
+        "LANGUAGE REQUIREMENTS",
+        "DURATION",
+        "SEMESTER INTAKE",
+    }
+    soup = BeautifulSoup(html_text, "html.parser")
+    sections: dict[str, str] = {}
+    h1 = soup.find("h1")
+    if h1:
+        sections["_TITLE"] = clean(h1.get_text(" ", strip=True))
+    for heading in soup.find_all(re.compile(r"^h[1-6]$")):
+        title = clean(heading.get_text(" ", strip=True)).upper()
+        if title not in target_headings:
+            continue
+        chunks: list[str] = []
+        for sibling in heading.find_next_siblings():
+            if sibling.name and re.fullmatch(r"h[1-6]", sibling.name, re.I):
+                break
+            text = clean(sibling.get_text(" ", strip=True))
+            if text:
+                chunks.append(text)
+        sections[title] = clean(" ".join(chunks))
+    return sections
+
+
+def semester_intake_from_html(html_text: str) -> str:
+    months = [
+        "January",
+        "February",
+        "March",
+        "April",
+        "May",
+        "June",
+        "July",
+        "August",
+        "September",
+        "October",
+        "November",
+        "December",
+    ]
+    sections = programme_sections_from_html(html_text)
+    text = sections.get("SEMESTER INTAKE", "")
+    found = []
+    for month in months:
+        if re.search(rf"\b{month}\b", text, re.I):
+            found.append(month)
+    return " & ".join(found)
+
+
 def detail_code(url: str) -> str:
     article_id = re.search(r"(?:[?&])id=(\d+)", url)
     if article_id:
@@ -394,29 +456,61 @@ def fee_for(record: dict, mode: str, fee_schedule: dict) -> dict:
     }
 
 
-def build_record(record: dict, detail: dict, source: dict, named_rows: dict) -> dict:
+def build_record(
+    record: dict,
+    detail: dict,
+    source: dict,
+    named_rows: dict,
+    current_html_sections: dict[str, str] | None = None,
+    current_html_intake: str = "",
+    current_html_sha256: str | None = None,
+) -> dict:
+    current_html_sections = current_html_sections or {}
     direct_fee = named_rows.get(
         DIRECT_FEE_TARGETS.get(record.get("detailCode", record["code"]), "")
     )
     mode, mode_provenance = infer_mode(record, direct_fee)
-    duration = duration_for(mode, detail)
+    detail_for_duration = detail
+    html_duration = clean_official_text(current_html_sections.get("DURATION"))
+    if html_duration:
+        detail_for_duration = {**detail, "durationOfficial": html_duration}
+    duration = duration_for(mode, detail_for_duration)
     if record.get("detailCode") == "USM-PG-ARTICLE-340":
         duration = {
             "durationValue": {"min": 3.5, "max": 5.0},
             "durationUnit": "year",
-            "durationOfficial": DBA_DURATION_OFFICIAL,
+            "durationOfficial": html_duration or DBA_DURATION_OFFICIAL,
             "fullTimeSemesters": {"min": 7, "max": 10},
             "partTimeSemesters": {"min": 9, "max": 14},
-            "provenance": "programme-specific-current-official-page",
+            "provenance": (
+                "official-programme-page-refreshed-2026-06-16"
+                if html_duration
+                else "programme-specific-current-official-page"
+            ),
         }
     fee = fee_for(record, mode, source["feeSchedule"])
-    title = record["nameEnOfficial"]
-    local_only = "malaysian candidate only" in title.lower()
+    raw_title = record["nameEnOfficial"]
+    html_title = clean_official_text(current_html_sections.get("_TITLE"))
+    title = (
+        html_title.upper()
+        if "malaysian candidate only" in raw_title.lower()
+        and html_title
+        and "malaysian candidate only" not in html_title.lower()
+        else raw_title
+    )
+    local_only = "malaysian candidate only" in raw_title.lower()
     fee_confirms_international_scope = fee["status"] in {
         "verified-current-official-fee",
         "official-rate-only",
     }
-    if local_only:
+    html_academic = clean_official_text(current_html_sections.get("ADMISSION REQUIREMENTS"))
+    html_language = clean_official_text(current_html_sections.get("LANGUAGE REQUIREMENTS"))
+    current_detail_confirms_international = bool(
+        html_language
+        and re.search(r"International Applicants?|IELTS|TOEFL|PTE|MUET", html_language, re.I)
+        and fee_confirms_international_scope
+    )
+    if local_only and not current_detail_confirms_international:
         eligibility = {
             "status": "not-available-for-international",
             "provenance": "programme-specific",
@@ -435,8 +529,17 @@ def build_record(record: dict, detail: dict, source: dict, named_rows: dict) -> 
     elif fee_confirms_international_scope:
         eligibility = {
             "status": "eligible",
-            "provenance": "programme-specific",
-            "evidenceText": "Current official fee authority publishes an international fee for this offering.",
+            "provenance": (
+                "current-programme-page-and-fee-table"
+                if current_detail_confirms_international
+                else "programme-specific"
+            ),
+            "evidenceText": (
+                "Current official programme page publishes international applicant language requirements "
+                "and the current official fee authority publishes an international fee for this offering."
+                if current_detail_confirms_international
+                else "Current official fee authority publishes an international fee for this offering."
+            ),
         }
     else:
         eligibility = {
@@ -445,13 +548,17 @@ def build_record(record: dict, detail: dict, source: dict, named_rows: dict) -> 
             "evidenceText": "",
         }
 
-    academic_text = clean_official_text(detail.get("officialAcademicRequirement")) or source[
-        "generalRequirements"
-    ]["officialAcademicRequirement"]
-    language_text = clean_official_text(detail.get("officialLanguageRequirement")) or source[
-        "generalRequirements"
-    ]["officialLanguageRequirement"]
-    intake_text = clean_official_text(detail.get("officialIntake"))
+    academic_text = (
+        html_academic
+        or clean_official_text(detail.get("officialAcademicRequirement"))
+        or source["generalRequirements"]["officialAcademicRequirement"]
+    )
+    language_text = (
+        html_language
+        or clean_official_text(detail.get("officialLanguageRequirement"))
+        or source["generalRequirements"]["officialLanguageRequirement"]
+    )
+    intake_text = current_html_intake or clean_official_text(detail.get("officialIntake"))
     intake = {
         "intakeMonths": [],
         "officialIntake": intake_text,
@@ -472,7 +579,7 @@ def build_record(record: dict, detail: dict, source: dict, named_rows: dict) -> 
     if detail.get("status") == "blocked":
         review_reasons.append("official detail page collection failed")
 
-    if local_only:
+    if local_only and not current_detail_confirms_international:
         public_status = "not-available-for-international"
     elif review_reasons:
         public_status = "needs-review"
@@ -510,6 +617,17 @@ def build_record(record: dict, detail: dict, source: dict, named_rows: dict) -> 
                 "confidence": 1,
             }
         )
+    if current_detail_confirms_international:
+        evidence.append(
+            {
+                "field": "internationalEligibility",
+                "sourceId": "usm-pg-directory-current",
+                "sourceUrl": record["officialSourceUrl"],
+                "sourceText": eligibility["evidenceText"],
+                "retrievedAt": source["retrievedAt"],
+                "confidence": 1,
+            }
+        )
     return {
         "code": record["code"].replace("USM-PG-", "USM-PHD-"),
         "sourceCode": record["code"],
@@ -532,16 +650,22 @@ def build_record(record: dict, detail: dict, source: dict, named_rows: dict) -> 
         "academicSession": "current-directory-and-2025/2026-fees",
         **duration,
         **intake,
+        "durationProvenance": duration.get("provenance"),
+        "intakeProvenance": intake.get("provenance"),
         "officialAcademicRequirement": academic_text,
         "academicRequirementProvenance": (
-            "programme-specific"
-            if detail.get("officialAcademicRequirement")
+            "official-programme-page-refreshed-2026-06-16"
+            if html_academic
+            else "programme-specific"
+            if clean_official_text(detail.get("officialAcademicRequirement"))
             else "general-rule"
         ),
         "officialLanguageRequirement": language_text,
         "languageRequirementProvenance": (
-            "programme-specific"
-            if detail.get("officialLanguageRequirement")
+            "official-programme-page-refreshed-2026-06-16"
+            if html_language
+            else "programme-specific"
+            if clean_official_text(detail.get("officialLanguageRequirement"))
             else "general-rule"
         ),
         "applicationDocuments": APPLICATION_DOCUMENTS,
@@ -557,7 +681,8 @@ def build_record(record: dict, detail: dict, source: dict, named_rows: dict) -> 
         "publicationWarnings": publication_warnings,
         "fee": fee,
         "evidence": evidence,
-        "detailSha256": detail_hash,
+        "detailSha256": current_html_sha256 or detail_hash,
+        "currentHtmlSha256": current_html_sha256,
     }
 
 
@@ -598,6 +723,7 @@ def main() -> None:
     parser.add_argument("--source", required=True, type=Path)
     parser.add_argument("--application-guide", required=True, type=Path)
     parser.add_argument("--coursework-mixed-html", required=True, type=Path)
+    parser.add_argument("--current-html-cache", type=Path, default=Path("tmp/usm-phd-current-html"))
     parser.add_argument("--output", required=True, type=Path)
     parser.add_argument("--audit-output", required=True, type=Path)
     parser.add_argument("--delivery-output", required=True, type=Path)
@@ -623,6 +749,17 @@ def main() -> None:
             details.get(normalized_official_url(record["officialSourceUrl"]), {}),
             source,
             named_rows,
+            programme_sections_from_html(
+                html_path.read_text(encoding="utf-8", errors="ignore")
+            )
+            if (html_path := detail_html_path(args.current_html_cache, record["detailCode"]))
+            else {},
+            semester_intake_from_html(
+                html_path.read_text(encoding="utf-8", errors="ignore")
+            )
+            if html_path
+            else "",
+            sha256(html_path) if html_path else None,
         )
         for record in current_records
     ]

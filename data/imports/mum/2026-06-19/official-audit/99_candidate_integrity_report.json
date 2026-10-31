@@ -1,0 +1,24 @@
+{
+  "status": "passed",
+  "recordKey": "programmes",
+  "baselineKey": "official_row_disposal",
+  "pageOptionKey": "page_option_inventory",
+  "coverageKey": "field_coverage_matrix",
+  "displayParityKey": "display_parity_report.surfaces",
+  "instructionLedgerKey": "instruction_execution_ledger",
+  "officialDomains": [
+    "monash.edu",
+    "monash.edu.my"
+  ],
+  "recordCount": 60,
+  "baselineCount": 65,
+  "pageOptionCount": 60,
+  "coverageRowCount": 60,
+  "displayParityRowCount": 5,
+  "instructionLedgerCount": 25,
+  "recordsByPublicStatus": {
+    "ready": 60
+  },
+  "issueCounts": {},
+  "issues": []
+}

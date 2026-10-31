@@ -1,0 +1,193 @@
+{
+  "schemaVersion": 1,
+  "createdAt": "2026-06-29T14:54:56.105Z",
+  "institution": {
+    "code": "IIUM",
+    "shortName": "IIUM",
+    "name": "International Islamic University Malaysia",
+    "slug": "international-islamic-university-malaysia"
+  },
+  "authorization": "operator-requested-publication-for-ian-review",
+  "sourceInputs": {
+    "doctoralAudit": "audits/IIUM_audit_doctoral_20260629_verified_20260629.json",
+    "sourceAuditSafeToImport": false,
+    "sourceAuditRecommendedForImport": false,
+    "sourceAuditWorkflowStatus": "validated_with_gaps",
+    "sourceAuditReason": "The StudyMY audit JSON remains validated_with_gaps and safe_to_import=false; this importer publishes a review surface only after explicit operator command."
+  },
+  "writePolicy": {
+    "importer": "apps/api/src/db/import-iium-doctoral-official.ts",
+    "mode": "publish-doctoral-for-review",
+    "upsertPrefix": "iium-doctoral-20260629-",
+    "universityRow": "upsert by code IIUM or slug international-islamic-university-malaysia",
+    "programmeRows": "upsert 35 current IIUM doctoral public rows and archive legacy visible IIUM doctoral rows only",
+    "preserveOtherLevels": true,
+    "transactional": true,
+    "backupRequired": true
+  },
+  "publicationGate": {
+    "result": "passed-for-review",
+    "rules": [
+      "35 doctoral rows",
+      "35 official IIUM Finance PhD PDF TOTAL tuition rows",
+      "35 direct IELTS rows from CPS/Kulliyyah language evidence",
+      "35 EPT details preserved as IIUM-administered test pathway",
+      "35 Chinese bilingual programme names",
+      "35 Chinese faculty names",
+      "35 official source URL rows",
+      "all rows publicDisplayStatus=ready only for Ian review"
+    ]
+  },
+  "acceptedGapsAndOpenIssues": {
+    "acceptedGaps": [
+      {
+        "issue_id": "PI-IIUM-DOCTORAL-20260629-001",
+        "accepted_by_instruction": "Ian",
+        "accepted_at": "2026-06-29",
+        "scope": "Ian instructed using total tuition only and using the latest official PDF/prospectus when the programme page does not display fees; this records an accepted data-source gap only and does not authorize import or set safe_to_import=true."
+      },
+      {
+        "issue_id": "EQ-IIUM-DOCTORAL-20260629-001",
+        "accepted_by_instruction": "Ian",
+        "accepted_at": "2026-06-29",
+        "scope": "Accepted as a review gap based on Ian instruction to use total fees from the latest official PDF when programme pages do not display fees; programme records remain needs-review."
+      },
+      {
+        "issue_id": "EQ-IIUM-DOCTORAL-20260629-009",
+        "accepted_by_instruction": "Ian",
+        "accepted_at": "2026-06-29",
+        "scope": "tuitionMYR schema is integer-only; AIKOL official RM 51,537.50 was rounded to 51,538 and the exact official amount is retained in tuitionNote/evidence."
+      }
+    ],
+    "openIssues": [
+      {
+        "issue_id": "PI-IIUM-DOCTORAL-20260629-002",
+        "status": "open",
+        "field": "generic/split doctoral programme rows",
+        "requiresIanDecision": true
+      },
+      {
+        "issue_id": "PI-IIUM-DOCTORAL-20260629-003",
+        "status": "open",
+        "field": "applicationDeadline",
+        "requiresIanDecision": true
+      },
+      {
+        "issue_id": "EQ-IIUM-DOCTORAL-20260629-002",
+        "status": "open",
+        "field": "programme_baseline/nameEn",
+        "requiresIanDecision": true
+      },
+      {
+        "issue_id": "EQ-IIUM-DOCTORAL-20260629-003",
+        "status": "open",
+        "field": "programme_baseline/nameEn",
+        "requiresIanDecision": true
+      },
+      {
+        "issue_id": "EQ-IIUM-DOCTORAL-20260629-004",
+        "status": "open",
+        "field": "nameEn/officialSourceUrl",
+        "requiresIanDecision": true
+      },
+      {
+        "issue_id": "EQ-IIUM-DOCTORAL-20260629-005",
+        "status": "open",
+        "field": "officialSourceUrl",
+        "requiresIanDecision": true
+      },
+      {
+        "issue_id": "EQ-IIUM-DOCTORAL-20260629-006",
+        "status": "open",
+        "field": "curriculum/fieldEvidence",
+        "requiresIanDecision": false
+      },
+      {
+        "issue_id": "EQ-IIUM-DOCTORAL-20260629-007",
+        "status": "open",
+        "field": "language.otherRequirement",
+        "requiresIanDecision": false
+      },
+      {
+        "issue_id": "EQ-IIUM-DOCTORAL-20260629-008",
+        "status": "open",
+        "field": "nameEn/applicationDeadline/tuitionMYR",
+        "requiresIanDecision": true
+      }
+    ],
+    "strictFeeGateStats": {
+      "primaryFeePolicy": "ian-approved-total-fee-from-current-official-finance-pdf-when-programme-page-has-no-direct-fee",
+      "totalProgrammesChecked": 35,
+      "programmePageDirectAmountRows": 0,
+      "programmePageDirectAmountMissRows": 35,
+      "supportingSourceOnlyRows": 35,
+      "officialDomainRows": 35,
+      "openHighFeeConflictRows": 0,
+      "pdfTotalFeeRowsPopulated": 35,
+      "grandTotalRowsExcluded": 35,
+      "integerRoundedRows": 1,
+      "approximateRows": 3,
+      "decision": "ACCEPTED_GAP_BY_IAN_POLICY_REQUIRES_IMPORT_REVIEW"
+    },
+    "languageGateStats": {
+      "directIeltsRows": 35,
+      "noDirectIeltsRows": 0,
+      "languageSlotMismatchRows": 0,
+      "equivalentPathMisusedAsIeltsRows": 0,
+      "formOptionContaminationRows": 0,
+      "officialIeltsDistribution": {
+        "3.0": 1,
+        "5.0": 12,
+        "6.0": 20,
+        "7.0": 2
+      },
+      "eptPolicy": "EPT is retained in language.otherRequirement as IIUM placement/proficiency pathway and is not converted into IELTS."
+    }
+  },
+  "expectedSurface": {
+    "programmeCount": 35,
+    "byLevel": {
+      "bachelor": 0,
+      "master": 0,
+      "phd": 35
+    },
+    "summary": {
+      "importRows": 35,
+      "byLevel": {
+        "bachelor": 0,
+        "master": 0,
+        "phd": 35
+      },
+      "readyRows": 35,
+      "publishedRows": 35,
+      "uniqueSlugs": 35,
+      "officialFeeRows": 35,
+      "directIeltsRows": 35,
+      "languageCoverageRows": 35,
+      "eptMentionRows": 35,
+      "chineseNameRows": 35,
+      "chineseFacultyRows": 35,
+      "curriculumDisplayRows": 35,
+      "officialCurriculumRows": 35,
+      "careerDisplayRows": 35,
+      "officialCareerRows": 35,
+      "inferredCareerRows": 0,
+      "sourceRows": 35,
+      "publicDisplayStatusCounts": {
+        "ready": 35
+      },
+      "feeAuditStatusCounts": {
+        "matched-official": 35
+      },
+      "officialSourceStatusCounts": {
+        "official-verified": 35
+      },
+      "studyModeCounts": {
+        "Research": 30,
+        "Mixed mode": 1,
+        "Mode pending faculty split review": 1,
+        "Clinical specialist training": 3
+      }
+    }
+  }
+}

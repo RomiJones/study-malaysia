@@ -425,6 +425,7 @@ function inferCategory(value: string): ProgramCategoryCode {
 
 function mapPublicDisplayStatus(value: string): PublicDisplayStatus {
   if (value === "ready") return "ready";
+  if (value === "current-cycle-not-open") return "current-cycle-not-open";
   if (value === "not-available-for-international") return "not-available-for-international";
   if (value === "hidden-unverified") return "hidden-unverified";
   if (value === "archived") return "archived";
@@ -433,6 +434,9 @@ function mapPublicDisplayStatus(value: string): PublicDisplayStatus {
 
 function mapOfficialSourceStatus(value: string): OfficialSourceStatus {
   if (value === "official-verified") return "official-verified";
+  if (value === "official-page-verified-current-cycle-not-open" || value.includes("current-cycle-not-open")) {
+    return "official-page-verified-current-cycle-not-open";
+  }
   if (value === "official-page-verified-international-not-available" || value.includes("international-not-available")) {
     return "official-page-verified-international-not-available";
   }
@@ -463,14 +467,24 @@ function mapTuitionCurrency(value: string, officialTuitionMYR: number | null): T
 }
 
 function parseDurationYears(record: RawRecord): number {
-  const direct = readNumber(record, "duration", Number.NaN);
-  if (Number.isFinite(direct) && direct > 0) return direct;
+  const directValue = record.duration;
+  if (typeof directValue === "number" && Number.isFinite(directValue) && directValue > 0) return directValue;
+  if (typeof directValue === "string") {
+    const parsedDirect = parseDurationYearsText(directValue);
+    if (parsedDirect) return parsedDirect;
+  }
   const source = readString(record, "officialDuration") || readString(record, "durationOfficial");
-  const match = source.match(/([0-9]+(?:\.[0-9]+)?)/);
-  if (!match) return 1;
-  const value = Number(match[1]);
-  if (/semester/i.test(source)) return Math.max(0.5, value / 2);
-  return value || 1;
+  return parseDurationYearsText(source) || 1;
+}
+
+function parseDurationYearsText(source: string): number | null {
+  const yearMatch = source.match(/([0-9]+(?:\.[0-9]+)?)(?:\s*[-–—]\s*[0-9]+(?:\.[0-9]+)?)?\s*(?:years?|yrs?|年)/i);
+  if (yearMatch) return Number(yearMatch[1]) || null;
+  const semesterMatch = source.match(/([0-9]+(?:\.[0-9]+)?)(?:\s*[-–—]\s*[0-9]+(?:\.[0-9]+)?)?\s*(?:semesters?|sems?|个学期|個學期|学期|學期)/i);
+  if (semesterMatch) return Math.max(0.5, (Number(semesterMatch[1]) || 0) / 2);
+  const monthMatch = source.match(/([0-9]+(?:\.[0-9]+)?)(?:\s*[-–—]\s*[0-9]+(?:\.[0-9]+)?)?\s*(?:months?|mos?|个月|個月)/i);
+  if (monthMatch) return Math.max(0.1, (Number(monthMatch[1]) || 0) / 12);
+  return null;
 }
 
 function getOfficialProfileDate(officialProfile: RawRecord): string | null {
@@ -532,6 +546,10 @@ function extractLiteral(html: string, name: string): string {
 
 function evaluateLiteral<T>(html: string, name: string): T {
   return Function(`return (${extractLiteral(html, name)});`)() as T;
+}
+
+function evaluateLiteralOr<T>(html: string, name: string, fallback: T): T {
+  return html.includes(`const ${name} =`) ? evaluateLiteral<T>(html, name) : fallback;
 }
 
 function mergeUniquePrograms(programLists: RawRecord[][] = []): RawRecord[] {
@@ -673,8 +691,8 @@ function applyOfficialPatches(universities: RawUniversity[], patches: Record<str
 
 function buildRawCatalogLayers(html: string): RawCatalogLayerCollection {
   const base = evaluateLiteral<RawUniversity[]>(html, "universitiesBase");
-  const supplement = evaluateLiteral<RawUniversity[]>(html, "universitiesSupplement");
-  const patches = evaluateLiteral<Record<string, RawRecord>>(html, "officialUniversityPatches");
+  const supplement = evaluateLiteralOr<RawUniversity[]>(html, "universitiesSupplement", []);
+  const patches = evaluateLiteralOr<Record<string, RawRecord>>(html, "officialUniversityPatches", {});
   const baseKeys = new Set(base.map(getUniversityDedupeKey));
   const duplicateUniversityKeys = Array.from(new Set(supplement.map(getUniversityDedupeKey).filter((key) => baseKeys.has(key)))).sort();
 
@@ -782,8 +800,8 @@ function mapUniversityRecord(raw: RawUniversity, usedCodes: Set<string>, usedSlu
     code,
     name: localizedText(nameEnOfficial, nameZh || nameEnOfficial),
     shortName,
-    logoUrl: localizeUniversityLogoUrl(readString(raw, "logo") || readString(raw, "logoUrl")),
-    imageUrl: localizeUniversityImageUrl(readString(raw, "image") || readString(raw, "imageUrl")),
+    logoUrl: localizeUniversityLogoUrl(readString(raw, "logo") || readString(raw, "logoUrl"), code),
+    imageUrl: localizeUniversityImageUrl(readString(raw, "image") || readString(raw, "imageUrl"), code),
     color: readString(raw, "color") || "#1B7A72",
     qsRank: readNumber(raw, "qsRank", 0),
     qsAsiaRank: hasValue(raw.qsAsiaRank) ? readNumber(raw, "qsAsiaRank", 0) : null,
@@ -874,7 +892,7 @@ function mapProgramRecord(raw: RawRecord, university: StaticUniversitySeed, inde
     category,
     faculty: localizedText(readString(raw, "faculty"), readString(raw, "facultyZh") || readString(raw, "faculty")),
     facultyZh: readString(raw, "facultyZh"),
-    studyMode: readString(raw, "studyMode") || readString(raw, "mode") || readString(raw, "programmeMode"),
+    studyMode: readString(raw, "programmeMode") || readString(raw, "mode") || readString(raw, "studyMode"),
     campus: readString(raw, "campus"),
     durationYears: parseDurationYears(raw),
     durationOfficial: readString(raw, "officialDuration") || readString(raw, "durationOfficial"),

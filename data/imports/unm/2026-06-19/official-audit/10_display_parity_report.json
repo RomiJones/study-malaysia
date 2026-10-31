@@ -1,0 +1,130 @@
+{
+  "schemaVersion": 1,
+  "surfaces": [
+    {
+      "surface": "institution",
+      "fields": {
+        "officialName": {
+          "state": "ready",
+          "sourceId": "homepage",
+          "sourceUrl": "https://www.nottingham.edu.my/"
+        },
+        "address": {
+          "state": "ready",
+          "sourceId": "history",
+          "sourceUrl": "https://www.nottingham.edu.my/AboutUs/History/MalaysiaHistory.aspx"
+        },
+        "officialWebsite": {
+          "state": "ready",
+          "sourceId": "homepage",
+          "sourceUrl": "https://www.nottingham.edu.my/"
+        },
+        "profileFacts": {
+          "state": "ready",
+          "sourceId": "history",
+          "sourceUrl": "https://www.nottingham.edu.my/AboutUs/History/MalaysiaHistory.aspx"
+        }
+      }
+    },
+    {
+      "surface": "catalogue",
+      "fields": {
+        "levelCounts": {
+          "state": "ready",
+          "sourceId": "03_level_manifest.json",
+          "sourceUrl": "https://www.nottingham.edu.my/Study/Undergraduate-courses/Find-an-undergraduate-course/Find-a-course.aspx"
+        },
+        "statusPartitions": {
+          "state": "ready",
+          "sourceId": "08_candidate_dataset.json",
+          "sourceUrl": "https://www.nottingham.edu.my/Study/Undergraduate-courses/Find-an-undergraduate-course/Find-a-course.aspx"
+        },
+        "facultyGrouping": {
+          "state": "ready",
+          "sourceId": "03_level_manifest.json",
+          "sourceUrl": "https://www.nottingham.edu.my/Study/Postgraduate-courses/Tuition-fees.aspx"
+        }
+      }
+    },
+    {
+      "surface": "program-list",
+      "fields": {
+        "programmeName": {
+          "state": "ready",
+          "sourceId": "08_candidate_dataset.json",
+          "sourceUrl": "https://www.nottingham.edu.my/Study/Undergraduate-courses/Find-an-undergraduate-course/Find-a-course.aspx"
+        },
+        "duration": {
+          "state": "ready",
+          "sourceId": "08_candidate_dataset.json",
+          "sourceUrl": "https://www.nottingham.edu.my/Study/Undergraduate-courses/Find-an-undergraduate-course/Find-a-course.aspx"
+        },
+        "totalTuition": {
+          "state": "ready",
+          "sourceId": "08_candidate_dataset.json",
+          "sourceUrl": "https://www.nottingham.edu.my/study/undergraduate-courses/tuition-fees.aspx"
+        },
+        "ieltsSummary": {
+          "state": "ready",
+          "sourceId": "08_candidate_dataset.json",
+          "sourceUrl": "https://www.nottingham.edu.my/Study/Postgraduate-courses/Tuition-fees.aspx"
+        },
+        "intakeMonths": {
+          "state": "ready",
+          "sourceId": "08_candidate_dataset.json",
+          "sourceUrl": "https://www.nottingham.edu.my/Study/Undergraduate-courses/Find-an-undergraduate-course/Find-a-course.aspx"
+        }
+      }
+    },
+    {
+      "surface": "program-detail",
+      "fields": {
+        "officialFacts": {
+          "state": "ready",
+          "sourceId": "08_candidate_dataset.json",
+          "sourceUrl": "https://www.nottingham.edu.my/Study/Undergraduate-courses/Find-an-undergraduate-course/Find-a-course.aspx"
+        },
+        "fees": {
+          "state": "ready",
+          "sourceId": "08_candidate_dataset.json",
+          "sourceUrl": "https://www.nottingham.edu.my/Study/Postgraduate-courses/Tuition-fees.aspx"
+        },
+        "requirements": {
+          "state": "ready",
+          "sourceId": "08_candidate_dataset.json",
+          "sourceUrl": "https://www.nottingham.edu.my/Study/Postgraduate-courses/Tuition-fees.aspx"
+        },
+        "applicationDocuments": {
+          "state": "ready",
+          "sourceId": "application-checklist",
+          "sourceUrl": "https://www.nottingham.edu.my/Study/How-to-apply/checklist-for-applications.aspx"
+        },
+        "courseSetting": {
+          "state": "ready",
+          "sourceId": "08_candidate_dataset.json",
+          "sourceUrl": "https://www.nottingham.edu.my/Study/Postgraduate-courses/Tuition-fees.aspx"
+        },
+        "careers": {
+          "state": "ready",
+          "sourceId": "08_candidate_dataset.json",
+          "sourceUrl": "https://www.nottingham.edu.my/Study/Postgraduate-courses/Tuition-fees.aspx"
+        }
+      }
+    },
+    {
+      "surface": "leakage",
+      "fields": {
+        "nonReadyRecordsExcludedFromPublicReadyList": {
+          "state": "ready",
+          "sourceId": "08_candidate_dataset.json",
+          "sourceUrl": "https://www.nottingham.edu.my/Study/Undergraduate-courses/Find-an-undergraduate-course/Find-a-course.aspx"
+        },
+        "officialPublishedRowsCollected": {
+          "state": "ready",
+          "sourceId": "04_official_row_disposal.json",
+          "sourceUrl": "https://www.nottingham.edu.my/Study/Postgraduate-courses/Tuition-fees.aspx"
+        }
+      }
+    }
+  ]
+}

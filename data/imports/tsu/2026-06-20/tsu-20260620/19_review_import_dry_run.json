@@ -1,0 +1,57 @@
+{
+  "mode": "dry-run",
+  "decision": "ready-for-review-import",
+  "universityCode": "TSU",
+  "candidatePath": "/Users/ian/Desktop/dev/study-malaysia/data/imports/tsu/2026-06-20/tsu-20260620/08_candidate_dataset.json",
+  "writePolicy": {
+    "authorization": "review-import",
+    "requestedMode": "review-import",
+    "upsertPrefix": "tsu-official-2026-row-",
+    "importRows": 89,
+    "university": {
+      "newInstitutionDefault": {
+        "isPublished": false,
+        "publicDisplayStatus": "needs-review"
+      },
+      "existingPublicInstitutionPolicy": "Preserve existing public university visibility and public rows; only stale non-public TSU review rows may be archived."
+    },
+    "programmes": {
+      "isPublished": false,
+      "publicDisplayStatus": "needs-review",
+      "officialSourceStatus": "official-verified"
+    },
+    "archivePolicy": "Archive stale non-public TSU bachelor/master/phd rows outside the TSU official-audit namespace; preserve any existing public visible TSU rows.",
+    "backupRequired": true,
+    "transactionRequired": true,
+    "rollbackTarget": "/Users/ian/Desktop/dev/study-malaysia/apps/api/tmp/backups/tsu-official-audit-review-before-2026-06-20T17-08-52-166Z.json",
+    "publicLeakageExpected": 0,
+    "nextStep": "Review this dry-run, then rerun with --confirm-review-import to create a scoped backup and write transactionally."
+  },
+  "summary": {
+    "candidateRows": 89,
+    "importRows": 89,
+    "byLevel": {
+      "bachelor": 46,
+      "master": 28,
+      "phd": 15
+    },
+    "readyRows": 0,
+    "needsReviewRows": 89,
+    "publishedRows": 0,
+    "uniqueSlugs": 89,
+    "officialTotalRows": 89,
+    "ieltsOfficialValueRows": 77,
+    "noIeltsScalarRows": 12,
+    "localizedNameRows": 89,
+    "localizedFacultyRows": 89,
+    "publicDisplayStatusCounts": {
+      "needs-review": 89
+    },
+    "officialSourceStatusCounts": {
+      "official-verified": 89
+    },
+    "feeAuditStatusCounts": {
+      "matched-official": 89
+    }
+  }
+}

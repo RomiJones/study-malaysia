@@ -1,0 +1,648 @@
+{
+  "schemaVersion": 2,
+  "universityCode": "SUNWAY",
+  "mode": "review-imported",
+  "generatedAtUtc": "2026-06-21T12:09:28Z",
+  "generatedAtLocal": "2026-06-21T20:09:28+08:00",
+  "authorization": "review-import",
+  "decision": "review-imported",
+  "scope": {
+    "levels": [
+      "bachelor",
+      "master",
+      "phd"
+    ],
+    "applicantScope": "international",
+    "academicSession": "Year 2026 fee/intake pages; current as of 2026-06-20, deep-reviewed and fee-policy corrected on 2026-06-21"
+  },
+  "importArtifacts": {
+    "dryRunReport": {
+      "path": "18_review_import_dry_run.json",
+      "sha256": "6ba171ec3791285c8ead1f9f3dc8ef783da7a6660e451a5ea7fb846c68aaccc2"
+    },
+    "confirmImportReport": {
+      "path": "18_review_import_report.json",
+      "sha256": "45d0494288c098338ed6736d3bb68b01c6494b1e9e12bbee7f42b35c9d07abf1"
+    },
+    "verifyOnlyReport": {
+      "path": "18_review_import_verify.json",
+      "sha256": "7ce643812b6327ecce19a13bc9e596de8c172aa2a3daa7b57b95c39003e87af2"
+    },
+    "backup": {
+      "path": "../../../../../tmp/backups/sunway-official-audit-review-before-20260621-fee-policy-corrected.json",
+      "absolutePath": "/Users/ian/Desktop/dev/study-malaysia/tmp/backups/sunway-official-audit-review-before-20260621-fee-policy-corrected.json",
+      "sha256": "a6706e11d96232ab107320b34e731b83960a305827ec83119272f391826dde87"
+    }
+  },
+  "databaseAudit": {
+    "universityId": 9,
+    "universityCode": "SUNWAY",
+    "universitySlug": "sunway-university",
+    "universityIsPublished": true,
+    "universityPublicDisplayStatus": "ready",
+    "importedRows": 97,
+    "importedNeedsReviewRows": 97,
+    "importedPublishedRows": 0,
+    "importedPublicLeakageRows": 0,
+    "publicProgrammeCount": 0,
+    "adminReviewRowsByLevel": {
+      "bachelor": 48,
+      "master": 33,
+      "phd": 16
+    },
+    "feeAuditStatusCounts": {
+      "official-rate-verified": 83,
+      "not-published": 7,
+      "matched-official": 7
+    },
+    "candidateFeeStatusCounts": {
+      "official-rate-only": 83,
+      "official-unpublished": 7,
+      "official-value": 7
+    }
+  },
+  "publicInstitutionPreservation": {
+    "before": {
+      "exists": true,
+      "id": 9,
+      "slug": "sunway-university",
+      "code": "SUNWAY",
+      "isPublished": true,
+      "publicDisplayStatus": "ready",
+      "publicProgrammeCount": 0,
+      "publicDetailRouteAccessible": true
+    },
+    "after": {
+      "exists": true,
+      "id": 9,
+      "slug": "sunway-university",
+      "code": "SUNWAY",
+      "isPublished": true,
+      "publicDisplayStatus": "ready",
+      "publicProgrammeCount": 0,
+      "publicDetailRouteAccessible": true
+    },
+    "result": "passed",
+    "note": "Existing public Sunway university row was preserved. Review rows were inserted as non-public programme candidates."
+  },
+  "publicApiAudit": {
+    "universityDetail": {
+      "url": "http://localhost:3000/api/universities/sunway-university",
+      "statusCode": 200,
+      "programCount": 0,
+      "programsCount": 0,
+      "catalogStatusSummary": {
+        "all": {
+          "total": 0,
+          "ready": 0,
+          "needsReview": 0,
+          "notAvailableForInternational": 0
+        },
+        "byLevel": {
+          "bachelor": {
+            "total": 0,
+            "ready": 0,
+            "needsReview": 0,
+            "notAvailableForInternational": 0
+          },
+          "master": {
+            "total": 0,
+            "ready": 0,
+            "needsReview": 0,
+            "notAvailableForInternational": 0
+          },
+          "phd": {
+            "total": 0,
+            "ready": 0,
+            "needsReview": 0,
+            "notAvailableForInternational": 0
+          }
+        }
+      },
+      "importedSlugLeakageRows": 0,
+      "reviewSummaryLeakageRows": 0
+    },
+    "programmeSearch": {
+      "url": "http://localhost:3000/api/programs?search=SUNWAY-BACHELOR&includeMeta=true&pageSize=100",
+      "statusCode": 200,
+      "total": 0,
+      "itemCount": 0
+    },
+    "universitySearch": {
+      "url": "http://localhost:3000/api/universities?search=Sunway&includeMeta=true&pageSize=100",
+      "statusCode": 200,
+      "sunwayVisible": true,
+      "sunwayProgramCount": 0,
+      "sunwayPublicDisplayStatus": "ready"
+    }
+  },
+  "adminReviewSurface": {
+    "status": "passed",
+    "evidence": "Database verification confirms 97 imported Sunway review rows by level with isPublished=false/publicDisplayStatus=needs-review.",
+    "rowsByLevel": {
+      "bachelor": 48,
+      "master": 33,
+      "phd": 16
+    }
+  },
+  "verificationCommands": [
+    {
+      "command": "python3 scripts/audit_pipeline_stage.py data/imports/sunway/2026-06-20/sunway-20260620 --stage delivery_review --summary-only",
+      "result": "passed"
+    },
+    {
+      "command": "python3 scripts/audit_candidate_integrity.py data/imports/sunway/2026-06-20/sunway-20260620/99_integrity_manifest.json --official-domain sunwayuniversity.edu.my --official-domain studyonline.sunwayuniversity.edu.my --require-instruction-ledger --summary-only",
+      "result": "passed"
+    },
+    {
+      "command": "python3 scripts/audit_delivery.py data/imports/sunway/2026-06-20/sunway-20260620/delivery.json --summary-only",
+      "result": "passed"
+    },
+    {
+      "command": "npm test -- tests/api/sunway-official-audit-import.test.ts",
+      "result": "passed"
+    },
+    {
+      "command": "npm --workspace @studymy/api run import:sunway:official-audit -- --report-output data/imports/sunway/2026-06-20/sunway-20260620/18_review_import_dry_run.json",
+      "result": "passed"
+    },
+    {
+      "command": "npm --workspace @studymy/api run import:sunway:official-audit -- --confirm-import --report-output data/imports/sunway/2026-06-20/sunway-20260620/18_review_import_report.json --backup-output tmp/backups/sunway-official-audit-review-before-20260621-fee-policy-corrected.json",
+      "result": "passed"
+    },
+    {
+      "command": "npm --workspace @studymy/api run verify:sunway:official-audit -- --report-output data/imports/sunway/2026-06-20/sunway-20260620/18_review_import_verify.json",
+      "result": "passed"
+    },
+    {
+      "command": "curl http://localhost:3000/api/universities/sunway-university",
+      "result": "passed"
+    },
+    {
+      "command": "curl 'http://localhost:3000/api/programs?search=SUNWAY-BACHELOR&includeMeta=true&pageSize=100'",
+      "result": "passed"
+    }
+  ],
+  "rollback": {
+    "backupPath": "/Users/ian/Desktop/dev/study-malaysia/tmp/backups/sunway-official-audit-review-before-20260621-fee-policy-corrected.json",
+    "strategy": "Use the scoped backup to restore Sunway university/program rows if review import needs to be reverted; rerun verify:sunway:official-audit after restore.",
+    "status": "available"
+  },
+  "remainingReviewReasons": [
+    "Direct public publication is not performed in this review-only lane; Ian approval is still required before public publishing.",
+    "7 programme pages do not publish a usable international fee amount and must display controlled official-unpublished labels.",
+    "Official-unpublished intake/career/recognition/interview fields remain visible in the gap audit and must not be replaced with inferred values."
+  ],
+  "gapSummary": {
+    "careers": {
+      "count": 14,
+      "byLevel": {
+        "bachelor": 2,
+        "phd": 3,
+        "master": 9
+      },
+      "states": {
+        "official-unpublished": 14
+      },
+      "samples": [
+        {
+          "code": "SUNWAY-BACHELOR-046",
+          "level": "bachelor",
+          "nameEnOfficial": "Doctor of Medicine (MD)",
+          "state": "official-unpublished",
+          "reason": "No career list found.",
+          "sourceUrl": "https://sunwayuniversity.edu.my/faculty-of-medical-and-life-sciences/courses/doctor-of-medicine"
+        },
+        {
+          "code": "SUNWAY-BACHELOR-047",
+          "level": "bachelor",
+          "nameEnOfficial": "Bachelor of Nursing (Honours)",
+          "state": "official-unpublished",
+          "reason": "No career list found.",
+          "sourceUrl": "https://sunwayuniversity.edu.my/faculty-of-medical-and-life-sciences/courses/bachelor-of-nursing-honours"
+        },
+        {
+          "code": "SUNWAY-PHD-003",
+          "level": "phd",
+          "nameEnOfficial": "Doctor of Philosophy (Computing)",
+          "state": "official-unpublished",
+          "reason": "No career list found.",
+          "sourceUrl": "https://sunwayuniversity.edu.my/faculty-of-engineering-and-technology/courses/doctor-of-philosophy-computing"
+        },
+        {
+          "code": "SUNWAY-PHD-014",
+          "level": "phd",
+          "nameEnOfficial": "Doctor of Computing",
+          "state": "official-unpublished",
+          "reason": "No career list found.",
+          "sourceUrl": "https://sunwayuniversity.edu.my/faculty-of-engineering-and-technology/courses/doctor-of-computing"
+        },
+        {
+          "code": "SUNWAY-PHD-016",
+          "level": "phd",
+          "nameEnOfficial": "Doctor of Engineering",
+          "state": "official-unpublished",
+          "reason": "No career list found.",
+          "sourceUrl": "https://sunwayuniversity.edu.my/faculty-of-engineering-and-technology/courses/doctor-of-engineering"
+        },
+        {
+          "code": "SUNWAY-MASTER-013",
+          "level": "master",
+          "nameEnOfficial": "Master of Science in Applied Mathematics",
+          "state": "official-unpublished",
+          "reason": "No career list found.",
+          "sourceUrl": "https://sunwayuniversity.edu.my/school-of-mathematical-sciences/courses/master-of-science-applied-mathematics"
+        },
+        {
+          "code": "SUNWAY-MASTER-020",
+          "level": "master",
+          "nameEnOfficial": "Master in Digital Engineering",
+          "state": "official-unpublished",
+          "reason": "No career list found.",
+          "sourceUrl": "https://sunwayuniversity.edu.my/faculty-of-engineering-and-technology/courses/master-digital-engineering"
+        },
+        {
+          "code": "SUNWAY-MASTER-027",
+          "level": "master",
+          "nameEnOfficial": "Master of Business Administration",
+          "state": "official-unpublished",
+          "reason": "No career list found.",
+          "sourceUrl": "https://studyonline.sunwayuniversity.edu.my/online-programmes/master-business-administration"
+        },
+        {
+          "code": "SUNWAY-MASTER-028",
+          "level": "master",
+          "nameEnOfficial": "Master of Business Analytics",
+          "state": "official-unpublished",
+          "reason": "No career list found.",
+          "sourceUrl": "https://studyonline.sunwayuniversity.edu.my/online-programmes/master-business-analytics"
+        },
+        {
+          "code": "SUNWAY-MASTER-029",
+          "level": "master",
+          "nameEnOfficial": "Master in Data Science",
+          "state": "official-unpublished",
+          "reason": "No career list found.",
+          "sourceUrl": "https://studyonline.sunwayuniversity.edu.my/ppc/master-data-science?utm_campaign=MDS-Brand-PM-Data-Science&utm_source=Google&utm"
+        },
+        {
+          "code": "SUNWAY-MASTER-030",
+          "level": "master",
+          "nameEnOfficial": "Master of Education",
+          "state": "official-unpublished",
+          "reason": "No career list found.",
+          "sourceUrl": "https://studyonline.sunwayuniversity.edu.my/online-programmes/master-education"
+        },
+        {
+          "code": "SUNWAY-MASTER-031",
+          "level": "master",
+          "nameEnOfficial": "Master of Finance",
+          "state": "official-unpublished",
+          "reason": "No career list found.",
+          "sourceUrl": "https://studyonline.sunwayuniversity.edu.my/online-programmes/master-finance"
+        }
+      ]
+    },
+    "intake": {
+      "count": 3,
+      "byLevel": {
+        "phd": 3
+      },
+      "states": {
+        "official-unpublished": 3
+      },
+      "samples": [
+        {
+          "code": "SUNWAY-PHD-004",
+          "level": "phd",
+          "nameEnOfficial": "Doctor of Philosophy in Creative Arts and Media",
+          "state": "official-unpublished",
+          "reason": "No intake found.",
+          "sourceUrl": "https://sunwayuniversity.edu.my/faculty-of-arts-and-social-sciences/courses/doctor-of-philosophy-creative-arts-and-media"
+        },
+        {
+          "code": "SUNWAY-PHD-005",
+          "level": "phd",
+          "nameEnOfficial": "Doctor of Philosophy in Education",
+          "state": "official-unpublished",
+          "reason": "No intake found.",
+          "sourceUrl": "https://sunwayuniversity.edu.my/school-of-education/courses/doctor-of-philosophy-education"
+        },
+        {
+          "code": "SUNWAY-PHD-006",
+          "level": "phd",
+          "nameEnOfficial": "Doctor of Philosophy in Hospitality and Tourism",
+          "state": "official-unpublished",
+          "reason": "No intake found.",
+          "sourceUrl": "https://sunwayuniversity.edu.my/school-of-hospitality-and-tourism-management/courses/doctor-of-philosophy-hospitality-and-tourism"
+        }
+      ]
+    },
+    "interview": {
+      "count": 90,
+      "byLevel": {
+        "bachelor": 45,
+        "phd": 15,
+        "master": 30
+      },
+      "states": {
+        "official-unpublished": 90
+      },
+      "samples": [
+        {
+          "code": "SUNWAY-BACHELOR-001",
+          "level": "bachelor",
+          "nameEnOfficial": "Bachelor of Science (Hons) in Accounting and Finance",
+          "state": "official-unpublished",
+          "reason": "No interview requirement published on detail page.",
+          "sourceUrl": "https://sunwayuniversity.edu.my/sunway-business-school/courses/bachelor-of-science-hons-accounting-and-finance"
+        },
+        {
+          "code": "SUNWAY-BACHELOR-002",
+          "level": "bachelor",
+          "nameEnOfficial": "Bachelor (Honours) in Finance",
+          "state": "official-unpublished",
+          "reason": "No interview requirement published on detail page.",
+          "sourceUrl": "https://sunwayuniversity.edu.my/sunway-business-school/courses/bachelor-honours-finance"
+        },
+        {
+          "code": "SUNWAY-BACHELOR-003",
+          "level": "bachelor",
+          "nameEnOfficial": "Bachelor of Science (Honours) Financial Analysis",
+          "state": "official-unpublished",
+          "reason": "No interview requirement published on detail page.",
+          "sourceUrl": "https://sunwayuniversity.edu.my/sunway-business-school/courses/bachelor-of-science-honours-financial-analysis"
+        },
+        {
+          "code": "SUNWAY-BACHELOR-004",
+          "level": "bachelor",
+          "nameEnOfficial": "Bachelor of Science (Honours) Financial Economics",
+          "state": "official-unpublished",
+          "reason": "No interview requirement published on detail page.",
+          "sourceUrl": "https://sunwayuniversity.edu.my/sunway-business-school/courses/bachelor-of-science-honours-financial-economics"
+        },
+        {
+          "code": "SUNWAY-BACHELOR-005",
+          "level": "bachelor",
+          "nameEnOfficial": "Bachelor of Science (Hons) in Actuarial Studies",
+          "state": "official-unpublished",
+          "reason": "No interview requirement published on detail page.",
+          "sourceUrl": "https://sunwayuniversity.edu.my/school-of-mathematical-sciences/courses/bachelor-of-science-hons-actuarial-studies"
+        },
+        {
+          "code": "SUNWAY-BACHELOR-006",
+          "level": "bachelor",
+          "nameEnOfficial": "Bachelor of Science (Honors) Computer Science (Artificial Intelligence)",
+          "state": "official-unpublished",
+          "reason": "No interview requirement published on detail page.",
+          "sourceUrl": "https://sunwayuniversity.edu.my/school-of-american-education/courses/bachelor-of-science-honors-computer-science-artificial"
+        },
+        {
+          "code": "SUNWAY-BACHELOR-007",
+          "level": "bachelor",
+          "nameEnOfficial": "Bachelor in Digital Communication (Advertising) with Honors",
+          "state": "official-unpublished",
+          "reason": "No interview requirement published on detail page.",
+          "sourceUrl": "https://sunwayuniversity.edu.my/school-of-american-education/courses/bachelor-digital-communication-advertising-honors"
+        },
+        {
+          "code": "SUNWAY-BACHELOR-008",
+          "level": "bachelor",
+          "nameEnOfficial": "Bachelor in Digital Media Design with Honors",
+          "state": "official-unpublished",
+          "reason": "No interview requirement published on detail page.",
+          "sourceUrl": "https://sunwayuniversity.edu.my/school-of-american-education/courses/bachelor-digital-media-design-honors"
+        },
+        {
+          "code": "SUNWAY-BACHELOR-009",
+          "level": "bachelor",
+          "nameEnOfficial": "Bachelor of Arts (Honors) Global Management",
+          "state": "official-unpublished",
+          "reason": "No interview requirement published on detail page.",
+          "sourceUrl": "https://sunwayuniversity.edu.my/school-of-american-education/courses/bachelor-of-arts-honors-global-management"
+        },
+        {
+          "code": "SUNWAY-BACHELOR-010",
+          "level": "bachelor",
+          "nameEnOfficial": "Bachelor of Arts in Psychology (Honors)",
+          "state": "official-unpublished",
+          "reason": "No interview requirement published on detail page.",
+          "sourceUrl": "https://sunwayuniversity.edu.my/school-of-american-education/courses/bachelor-of-arts-psychology-honors"
+        },
+        {
+          "code": "SUNWAY-BACHELOR-011",
+          "level": "bachelor",
+          "nameEnOfficial": "Bachelor of Science (Honours) in Statistical Data Modelling",
+          "state": "official-unpublished",
+          "reason": "No interview requirement published on detail page.",
+          "sourceUrl": "https://sunwayuniversity.edu.my/school-of-mathematical-sciences/courses/bachelor-of-science-honours-statistical-data-modelling"
+        },
+        {
+          "code": "SUNWAY-BACHELOR-012",
+          "level": "bachelor",
+          "nameEnOfficial": "Bachelor of Arts (Honours) in Architecture",
+          "state": "official-unpublished",
+          "reason": "No interview requirement published on detail page.",
+          "sourceUrl": "https://sunwayuniversity.edu.my/faculty-of-arts-and-social-sciences/courses/bachelor-of-arts-honours-architecture"
+        }
+      ]
+    },
+    "recognition": {
+      "count": 83,
+      "byLevel": {
+        "bachelor": 39,
+        "phd": 14,
+        "master": 30
+      },
+      "states": {
+        "official-unpublished": 83
+      },
+      "samples": [
+        {
+          "code": "SUNWAY-BACHELOR-002",
+          "level": "bachelor",
+          "nameEnOfficial": "Bachelor (Honours) in Finance",
+          "state": "official-unpublished",
+          "reason": "No recognition/accreditation text found in overview.",
+          "sourceUrl": "https://sunwayuniversity.edu.my/sunway-business-school/courses/bachelor-honours-finance"
+        },
+        {
+          "code": "SUNWAY-BACHELOR-003",
+          "level": "bachelor",
+          "nameEnOfficial": "Bachelor of Science (Honours) Financial Analysis",
+          "state": "official-unpublished",
+          "reason": "No recognition/accreditation text found in overview.",
+          "sourceUrl": "https://sunwayuniversity.edu.my/sunway-business-school/courses/bachelor-of-science-honours-financial-analysis"
+        },
+        {
+          "code": "SUNWAY-BACHELOR-004",
+          "level": "bachelor",
+          "nameEnOfficial": "Bachelor of Science (Honours) Financial Economics",
+          "state": "official-unpublished",
+          "reason": "No recognition/accreditation text found in overview.",
+          "sourceUrl": "https://sunwayuniversity.edu.my/sunway-business-school/courses/bachelor-of-science-honours-financial-economics"
+        },
+        {
+          "code": "SUNWAY-BACHELOR-006",
+          "level": "bachelor",
+          "nameEnOfficial": "Bachelor of Science (Honors) Computer Science (Artificial Intelligence)",
+          "state": "official-unpublished",
+          "reason": "No recognition/accreditation text found in overview.",
+          "sourceUrl": "https://sunwayuniversity.edu.my/school-of-american-education/courses/bachelor-of-science-honors-computer-science-artificial"
+        },
+        {
+          "code": "SUNWAY-BACHELOR-007",
+          "level": "bachelor",
+          "nameEnOfficial": "Bachelor in Digital Communication (Advertising) with Honors",
+          "state": "official-unpublished",
+          "reason": "No recognition/accreditation text found in overview.",
+          "sourceUrl": "https://sunwayuniversity.edu.my/school-of-american-education/courses/bachelor-digital-communication-advertising-honors"
+        },
+        {
+          "code": "SUNWAY-BACHELOR-008",
+          "level": "bachelor",
+          "nameEnOfficial": "Bachelor in Digital Media Design with Honors",
+          "state": "official-unpublished",
+          "reason": "No recognition/accreditation text found in overview.",
+          "sourceUrl": "https://sunwayuniversity.edu.my/school-of-american-education/courses/bachelor-digital-media-design-honors"
+        },
+        {
+          "code": "SUNWAY-BACHELOR-009",
+          "level": "bachelor",
+          "nameEnOfficial": "Bachelor of Arts (Honors) Global Management",
+          "state": "official-unpublished",
+          "reason": "No recognition/accreditation text found in overview.",
+          "sourceUrl": "https://sunwayuniversity.edu.my/school-of-american-education/courses/bachelor-of-arts-honors-global-management"
+        },
+        {
+          "code": "SUNWAY-BACHELOR-010",
+          "level": "bachelor",
+          "nameEnOfficial": "Bachelor of Arts in Psychology (Honors)",
+          "state": "official-unpublished",
+          "reason": "No recognition/accreditation text found in overview.",
+          "sourceUrl": "https://sunwayuniversity.edu.my/school-of-american-education/courses/bachelor-of-arts-psychology-honors"
+        },
+        {
+          "code": "SUNWAY-BACHELOR-011",
+          "level": "bachelor",
+          "nameEnOfficial": "Bachelor of Science (Honours) in Statistical Data Modelling",
+          "state": "official-unpublished",
+          "reason": "No recognition/accreditation text found in overview.",
+          "sourceUrl": "https://sunwayuniversity.edu.my/school-of-mathematical-sciences/courses/bachelor-of-science-honours-statistical-data-modelling"
+        },
+        {
+          "code": "SUNWAY-BACHELOR-012",
+          "level": "bachelor",
+          "nameEnOfficial": "Bachelor of Arts (Honours) in Architecture",
+          "state": "official-unpublished",
+          "reason": "No recognition/accreditation text found in overview.",
+          "sourceUrl": "https://sunwayuniversity.edu.my/faculty-of-arts-and-social-sciences/courses/bachelor-of-arts-honours-architecture"
+        },
+        {
+          "code": "SUNWAY-BACHELOR-013",
+          "level": "bachelor",
+          "nameEnOfficial": "Bachelor of Arts (Honours) Design Communication",
+          "state": "official-unpublished",
+          "reason": "No recognition/accreditation text found in overview.",
+          "sourceUrl": "https://sunwayuniversity.edu.my/faculty-of-arts-and-social-sciences/courses/bachelor-of-arts-honours-design-communication"
+        },
+        {
+          "code": "SUNWAY-BACHELOR-014",
+          "level": "bachelor",
+          "nameEnOfficial": "Bachelor of Arts (Honours) in Interior Architecture",
+          "state": "official-unpublished",
+          "reason": "No recognition/accreditation text found in overview.",
+          "sourceUrl": "https://sunwayuniversity.edu.my/faculty-of-arts-and-social-sciences/courses/bachelor-of-arts-honours-interior-architecture"
+        }
+      ]
+    },
+    "studyArrangement": {
+      "count": 1,
+      "byLevel": {
+        "master": 1
+      },
+      "states": {
+        "official-unpublished": 1
+      },
+      "samples": [
+        {
+          "code": "SUNWAY-MASTER-025",
+          "level": "master",
+          "nameEnOfficial": "Master in Sustainable Development Management",
+          "state": "official-unpublished",
+          "reason": "No separate attendance/delivery arrangement found on the official page.",
+          "sourceUrl": "https://sunwayuniversity.edu.my/jsc/courses/master-sustainable-development-management-0"
+        }
+      ]
+    },
+    "tuition": {
+      "count": 7,
+      "byLevel": {
+        "bachelor": 2,
+        "phd": 3,
+        "master": 2
+      },
+      "states": {
+        "official-unpublished": 7
+      },
+      "samples": [
+        {
+          "code": "SUNWAY-BACHELOR-020",
+          "level": "bachelor",
+          "nameEnOfficial": "Bachelor of Arts (Honours) in Digital Media Communication",
+          "state": "official-unpublished",
+          "reason": "No programme fee block was found on the official detail page.",
+          "sourceUrl": "https://sunwayuniversity.edu.my/faculty-of-arts-and-social-sciences/courses/bachelor-of-arts-honours-digital-media-communication"
+        },
+        {
+          "code": "SUNWAY-BACHELOR-028",
+          "level": "bachelor",
+          "nameEnOfficial": "Bachelor of Science (Honours) in Food Innovation",
+          "state": "official-unpublished",
+          "reason": "No programme fee block was found on the official detail page.",
+          "sourceUrl": "https://sunwayuniversity.edu.my/school-of-hospitality-and-tourism-management/courses/bachelor-of-science-honours-food-innovation"
+        },
+        {
+          "code": "SUNWAY-PHD-009",
+          "level": "phd",
+          "nameEnOfficial": "Doctor of Philosophy in Nursing",
+          "state": "official-unpublished",
+          "reason": "No programme fee block was found on the official detail page.",
+          "sourceUrl": "https://sunwayuniversity.edu.my/faculty-of-medical-and-life-sciences/courses/doctor-of-philosophy-nursing"
+        },
+        {
+          "code": "SUNWAY-PHD-014",
+          "level": "phd",
+          "nameEnOfficial": "Doctor of Computing",
+          "state": "official-unpublished",
+          "reason": "The official detail page has a fee section, but no usable programme fee amount was parsed.",
+          "sourceUrl": "https://sunwayuniversity.edu.my/faculty-of-engineering-and-technology/courses/doctor-of-computing"
+        },
+        {
+          "code": "SUNWAY-PHD-016",
+          "level": "phd",
+          "nameEnOfficial": "Doctor of Engineering",
+          "state": "official-unpublished",
+          "reason": "The official detail page has a fee section, but no usable programme fee amount was parsed.",
+          "sourceUrl": "https://sunwayuniversity.edu.my/faculty-of-engineering-and-technology/courses/doctor-of-engineering"
+        },
+        {
+          "code": "SUNWAY-MASTER-007",
+          "level": "master",
+          "nameEnOfficial": "Master in Nursing",
+          "state": "official-unpublished",
+          "reason": "No programme fee block was found on the official detail page.",
+          "sourceUrl": "https://sunwayuniversity.edu.my/faculty-of-medical-and-life-sciences/courses/master-nursing"
+        },
+        {
+          "code": "SUNWAY-MASTER-020",
+          "level": "master",
+          "nameEnOfficial": "Master in Digital Engineering",
+          "state": "official-unpublished",
+          "reason": "The official detail page has a fee section, but no usable programme fee amount was parsed.",
+          "sourceUrl": "https://sunwayuniversity.edu.my/faculty-of-engineering-and-technology/courses/master-digital-engineering"
+        }
+      ]
+    }
+  }
+}

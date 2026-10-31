@@ -1,0 +1,1981 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-06-16T17:03:59.222Z",
+  "sources": [
+    {
+      "id": "usm-pg-current-catalogue",
+      "title": "USM Current Postgraduate Programme Catalogue",
+      "url": "https://admission.usm.my/index.php/main/postgraduate",
+      "sourceType": "official-page",
+      "role": "canonical",
+      "retrievedAt": "2026-06-14T14:58:27.756Z",
+      "academicSession": null,
+      "status": "verified",
+      "localPath": "data/imports/usm/2026-06-14/phd-current-catalogue.json",
+      "sha256": "03be7bc3fadfbb2313e6ddefbdf02457481832041724176bccdd60ad878c9372",
+      "governedFields": [
+        "identity",
+        "faculty",
+        "mode",
+        "programmeCount"
+      ]
+    },
+    {
+      "id": "usm-pg-directory-current",
+      "title": "USM Postgraduate Programme Directory",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes",
+      "sourceType": "official-page",
+      "role": "cross-check",
+      "retrievedAt": "2026-06-14T15:01:36Z",
+      "academicSession": null,
+      "status": "verified",
+      "localPath": "data/imports/usm/2026-06-14/sources/pg-current-directory.md",
+      "sha256": "ccb852d13ccb650d2d80006c1ff18bf9129002fca83175db9158436d66f6be5f",
+      "governedFields": [
+        "cross-check"
+      ]
+    },
+    {
+      "id": "usm-pg-fee-page-current",
+      "title": "USM Postgraduate Fees",
+      "url": "https://admission.usm.my/index.php/postgraduate/fee-pg",
+      "sourceType": "official-page",
+      "role": "field-authority",
+      "retrievedAt": "2026-06-14T15:01:36Z",
+      "academicSession": "2025/2026",
+      "status": "verified",
+      "localPath": "data/imports/usm/2026-06-14/sources/pg-fee-page.md",
+      "sha256": "3597c8977755aa2f18fb3b389c813435989bd62cc54318f26b8e573c10401076",
+      "governedFields": [
+        "requirements",
+        "fees",
+        "documents",
+        "duration"
+      ]
+    },
+    {
+      "id": "usm-pg-fees-2025-2026",
+      "title": "USM Postgraduate Fees 2025/2026",
+      "url": "https://admission.usm.my/images/PG%20FEE%20-%20YURAN%20PG/PG%20FEES%2011.03.2025.pdf",
+      "sourceType": "official-pdf",
+      "role": "cross-check",
+      "retrievedAt": "2026-06-14T15:01:36Z",
+      "academicSession": "2025/2026",
+      "status": "verified",
+      "localPath": "data/imports/usm/2026-06-14/sources/pg-fees-2025-2026.pdf",
+      "sha256": "24bc178e7da6de039ff9e5cd866c580a5f3ed1c73db04d08b8f7ca42cb75bcef",
+      "governedFields": [
+        "cross-check"
+      ]
+    },
+    {
+      "id": "usm-pg-general-requirements",
+      "title": "USM General Entry Requirements",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?catid=48&id=785%3Ageneral-entry-requirement&view=article",
+      "sourceType": "official-page",
+      "role": "field-authority",
+      "retrievedAt": "2026-06-14T15:01:36Z",
+      "academicSession": null,
+      "status": "verified",
+      "localPath": "data/imports/usm/2026-06-14/sources/pg-current-directory.md",
+      "sha256": "ccb852d13ccb650d2d80006c1ff18bf9129002fca83175db9158436d66f6be5f",
+      "governedFields": [
+        "requirements",
+        "fees",
+        "documents",
+        "duration"
+      ]
+    },
+    {
+      "id": "usm-ips-admission-downloads",
+      "title": "USM IPS Admission and Registration Downloads",
+      "url": "https://ips.usm.my/index.php/download/admission",
+      "sourceType": "official-page",
+      "role": "cross-check",
+      "retrievedAt": "2026-06-14T15:01:36Z",
+      "academicSession": "2026/2027",
+      "status": "verified",
+      "localPath": "data/imports/usm/2026-06-14/sources/ips-admission-downloads.html",
+      "sha256": "8bc410b05fc4909de3d3bf6187cd6acd92bc760bfc293f0b2a2b3490476bec9c",
+      "governedFields": [
+        "cross-check"
+      ]
+    },
+    {
+      "id": "usm-ips-research-mode-registration",
+      "title": "USM IPS Research Mode Programme",
+      "url": "https://ips.usm.my/index.php/current-student-v2/candidature-matters/research-mode-programme",
+      "sourceType": "official-page",
+      "role": "cross-check",
+      "retrievedAt": "2026-06-14T15:01:36Z",
+      "academicSession": null,
+      "status": "verified",
+      "localPath": "data/imports/usm/2026-06-14/sources/ips-research-mode-registration.html",
+      "sha256": "604bd880c1a0c8528cb7c4233e86c08f80ba4075a126c14b15d46bb23eff2d3e",
+      "governedFields": [
+        "cross-check"
+      ]
+    },
+    {
+      "id": "usm-onlineips-application-guide-2026",
+      "title": "USM OnlineIPS Online Application Guideline",
+      "url": "https://onlineips.usm.my/images/ONLINE%20APPLICATION%20GUIDELINE%20012026%20v1.pdf",
+      "sourceType": "official-pdf",
+      "role": "field-authority",
+      "retrievedAt": "2026-06-14T15:01:36Z",
+      "academicSession": "2026",
+      "status": "verified",
+      "localPath": "data/imports/usm/2026-06-14/sources/online-application-guide-2026.pdf",
+      "sha256": "92559bbca13240e19d9cec7b761c7718eace5fa86648f3a13a0ea46fd443ece3",
+      "governedFields": [
+        "requirements",
+        "fees",
+        "documents",
+        "duration"
+      ]
+    },
+    {
+      "id": "usm-coursework-mixed-candidature",
+      "title": "USM Coursework and Mixed Mode Programme",
+      "url": "https://ips.usm.my/index.php/current-student-v2/candidature-matters/coursework-and-mixed-mode-programme",
+      "sourceType": "official-page",
+      "role": "field-authority",
+      "retrievedAt": "2026-06-14T15:01:36Z",
+      "academicSession": null,
+      "status": "verified",
+      "localPath": "data/imports/usm/2026-06-14/sources/coursework-mixed-candidature.html",
+      "sha256": "10a840d099c43a52c4dfaf7ab9b1173549eded928a2a55b8d9e987554afd77a0",
+      "governedFields": [
+        "requirements",
+        "fees",
+        "documents",
+        "duration"
+      ]
+    },
+    {
+      "id": "current-html-340",
+      "title": "USM current programme HTML 340",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=340&catid=53",
+      "sourceType": "official-html",
+      "role": "current-official-detail-panel",
+      "retrievedAt": "2026-06-16T15:34:00Z",
+      "academicSession": null,
+      "status": "verified",
+      "localPath": "tmp/usm-phd-current-html/usm-pg-article-340.html",
+      "sha256": "93d7d3b273db3aa8cf9c9de2f2ca76b1aac136730c4906091dda14fe5af2255a",
+      "transport": "existing-or-urllib",
+      "governedFields": [
+        "overview",
+        "admissionRequirements",
+        "languageRequirements",
+        "duration",
+        "intake"
+      ]
+    },
+    {
+      "id": "current-html-336",
+      "title": "USM current programme HTML 336",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=336&catid=53",
+      "sourceType": "official-html",
+      "role": "current-official-detail-panel",
+      "retrievedAt": "2026-06-16T15:34:00Z",
+      "academicSession": null,
+      "status": "verified",
+      "localPath": "tmp/usm-phd-current-html/usm-pg-article-336.html",
+      "sha256": "178c5efbc9ded5fc476877bd67a155ada3525108c195c7e5ea8a01e9a922308f",
+      "transport": "existing-or-urllib",
+      "governedFields": [
+        "overview",
+        "admissionRequirements",
+        "languageRequirements",
+        "duration",
+        "intake"
+      ]
+    },
+    {
+      "id": "current-html-348",
+      "title": "USM current programme HTML 348",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=348&catid=53",
+      "sourceType": "official-html",
+      "role": "current-official-detail-panel",
+      "retrievedAt": "2026-06-16T15:34:00Z",
+      "academicSession": null,
+      "status": "verified",
+      "localPath": "tmp/usm-phd-current-html/usm-pg-article-348.html",
+      "sha256": "eb3484cf0138d5ea801e1e8727b436641e11426a6e3bcdbc0ad6a7281f68aa64",
+      "transport": "existing-or-urllib",
+      "governedFields": [
+        "overview",
+        "admissionRequirements",
+        "languageRequirements",
+        "duration",
+        "intake"
+      ]
+    },
+    {
+      "id": "current-html-347",
+      "title": "USM current programme HTML 347",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=347&catid=53",
+      "sourceType": "official-html",
+      "role": "current-official-detail-panel",
+      "retrievedAt": "2026-06-16T15:34:00Z",
+      "academicSession": null,
+      "status": "verified",
+      "localPath": "tmp/usm-phd-current-html/usm-pg-article-347.html",
+      "sha256": "bed4b6bb0b75bc51b90045a6f81aa4558f43bda73caa6518306c39ef6fdfe455",
+      "transport": "existing-or-urllib",
+      "governedFields": [
+        "overview",
+        "admissionRequirements",
+        "languageRequirements",
+        "duration",
+        "intake"
+      ]
+    },
+    {
+      "id": "current-html-346",
+      "title": "USM current programme HTML 346",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=346&catid=53",
+      "sourceType": "official-html",
+      "role": "current-official-detail-panel",
+      "retrievedAt": "2026-06-16T15:34:00Z",
+      "academicSession": null,
+      "status": "verified",
+      "localPath": "tmp/usm-phd-current-html/usm-pg-article-346.html",
+      "sha256": "711a70c0ef6b1ede7990b873c98ea8d9b5100349f3c8598695c64f8a78f89e82",
+      "transport": "existing-or-urllib",
+      "governedFields": [
+        "overview",
+        "admissionRequirements",
+        "languageRequirements",
+        "duration",
+        "intake"
+      ]
+    },
+    {
+      "id": "current-html-349",
+      "title": "USM current programme HTML 349",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=349&catid=53",
+      "sourceType": "official-html",
+      "role": "current-official-detail-panel",
+      "retrievedAt": "2026-06-16T15:34:00Z",
+      "academicSession": null,
+      "status": "verified",
+      "localPath": "tmp/usm-phd-current-html/usm-pg-article-349.html",
+      "sha256": "cf90e6f430746aba0f43569fb47ec42362c445270e3f47a6b13f2137dd0dfa30",
+      "transport": "existing-or-urllib",
+      "governedFields": [
+        "overview",
+        "admissionRequirements",
+        "languageRequirements",
+        "duration",
+        "intake"
+      ]
+    },
+    {
+      "id": "current-html-413",
+      "title": "USM current programme HTML 413",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=413&catid=55",
+      "sourceType": "official-html",
+      "role": "current-official-detail-panel",
+      "retrievedAt": "2026-06-16T15:34:00Z",
+      "academicSession": null,
+      "status": "verified",
+      "localPath": "tmp/usm-phd-current-html/usm-pg-article-413.html",
+      "sha256": "111e0bf3f4954ef7a69a24271db60228c25ec699802fa3ec7379eb1cfd1ea491",
+      "transport": "existing-or-urllib",
+      "governedFields": [
+        "overview",
+        "admissionRequirements",
+        "languageRequirements",
+        "duration",
+        "intake"
+      ]
+    },
+    {
+      "id": "current-html-202",
+      "title": "USM current programme HTML 202",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=202&catid=51",
+      "sourceType": "official-html",
+      "role": "current-official-detail-panel",
+      "retrievedAt": "2026-06-16T15:34:00Z",
+      "academicSession": null,
+      "status": "verified",
+      "localPath": "tmp/usm-phd-current-html/usm-pg-article-202.html",
+      "sha256": "c4d365f42a9e7e1029de96b9e94c0dcac01bca4b221abab91bd07a1f3f2fb7a9",
+      "transport": "existing-or-urllib",
+      "governedFields": [
+        "overview",
+        "admissionRequirements",
+        "languageRequirements",
+        "duration",
+        "intake"
+      ]
+    },
+    {
+      "id": "current-html-557",
+      "title": "USM current programme HTML 557",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=557&catid=55",
+      "sourceType": "official-html",
+      "role": "current-official-detail-panel",
+      "retrievedAt": "2026-06-16T15:34:00Z",
+      "academicSession": null,
+      "status": "verified",
+      "localPath": "tmp/usm-phd-current-html/usm-pg-article-557.html",
+      "sha256": "5ff25b1cd5e34607362e45886d30b47f91002619bb6a212f7798d0df45011093",
+      "transport": "existing-or-urllib",
+      "governedFields": [
+        "overview",
+        "admissionRequirements",
+        "languageRequirements",
+        "duration",
+        "intake"
+      ]
+    },
+    {
+      "id": "current-html-246",
+      "title": "USM current programme HTML 246",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=246&catid=51",
+      "sourceType": "official-html",
+      "role": "current-official-detail-panel",
+      "retrievedAt": "2026-06-16T15:34:00Z",
+      "academicSession": null,
+      "status": "verified",
+      "localPath": "tmp/usm-phd-current-html/usm-pg-article-246.html",
+      "sha256": "baaeea84498ecff0668aeffe68d788eb0b1935cdf2dc155422a240052cf1cb4d",
+      "transport": "existing-or-urllib",
+      "governedFields": [
+        "overview",
+        "admissionRequirements",
+        "languageRequirements",
+        "duration",
+        "intake"
+      ]
+    },
+    {
+      "id": "current-html-200",
+      "title": "USM current programme HTML 200",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=200&catid=51",
+      "sourceType": "official-html",
+      "role": "current-official-detail-panel",
+      "retrievedAt": "2026-06-16T15:34:00Z",
+      "academicSession": null,
+      "status": "verified",
+      "localPath": "tmp/usm-phd-current-html/usm-pg-article-200.html",
+      "sha256": "25192b2f8e18150981ac4d7d2a23f9d0f17c2b8feea230f2fd8465c7d847f29f",
+      "transport": "existing-or-urllib",
+      "governedFields": [
+        "overview",
+        "admissionRequirements",
+        "languageRequirements",
+        "duration",
+        "intake"
+      ]
+    },
+    {
+      "id": "current-html-167",
+      "title": "USM current programme HTML 167",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=167&catid=50",
+      "sourceType": "official-html",
+      "role": "current-official-detail-panel",
+      "retrievedAt": "2026-06-16T15:34:00Z",
+      "academicSession": null,
+      "status": "verified",
+      "localPath": "tmp/usm-phd-current-html/usm-pg-article-167.html",
+      "sha256": "29708f307f95b5e7ea212e40e6e23bd9ef93dfdb4271209d1833769ce4f0ce23",
+      "transport": "existing-or-urllib",
+      "governedFields": [
+        "overview",
+        "admissionRequirements",
+        "languageRequirements",
+        "duration",
+        "intake"
+      ]
+    },
+    {
+      "id": "current-html-153",
+      "title": "USM current programme HTML 153",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=153&catid=50",
+      "sourceType": "official-html",
+      "role": "current-official-detail-panel",
+      "retrievedAt": "2026-06-16T15:34:00Z",
+      "academicSession": null,
+      "status": "verified",
+      "localPath": "tmp/usm-phd-current-html/usm-pg-article-153.html",
+      "sha256": "f6a2f3d3c5ca399952d1822caea6fcc467511eecf28306e31930e2e86f6d3c59",
+      "transport": "existing-or-urllib",
+      "governedFields": [
+        "overview",
+        "admissionRequirements",
+        "languageRequirements",
+        "duration",
+        "intake"
+      ]
+    },
+    {
+      "id": "current-html-390",
+      "title": "USM current programme HTML 390",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=390&catid=54",
+      "sourceType": "official-html",
+      "role": "current-official-detail-panel",
+      "retrievedAt": "2026-06-16T15:34:00Z",
+      "academicSession": null,
+      "status": "verified",
+      "localPath": "tmp/usm-phd-current-html/usm-pg-article-390.html",
+      "sha256": "664055ccc0c28ba633e66c2a0c348b649538b9c2c7a619b31aa373a8479e2dcb",
+      "transport": "existing-or-urllib",
+      "governedFields": [
+        "overview",
+        "admissionRequirements",
+        "languageRequirements",
+        "duration",
+        "intake"
+      ]
+    },
+    {
+      "id": "current-html-392",
+      "title": "USM current programme HTML 392",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=392&catid=54",
+      "sourceType": "official-html",
+      "role": "current-official-detail-panel",
+      "retrievedAt": "2026-06-16T15:34:00Z",
+      "academicSession": null,
+      "status": "verified",
+      "localPath": "tmp/usm-phd-current-html/usm-pg-article-392.html",
+      "sha256": "52917769b8d9adccf0a09feb1e687b4e94100fec99f42544dd6a2cbec2d4793a",
+      "transport": "existing-or-urllib",
+      "governedFields": [
+        "overview",
+        "admissionRequirements",
+        "languageRequirements",
+        "duration",
+        "intake"
+      ]
+    },
+    {
+      "id": "current-html-395",
+      "title": "USM current programme HTML 395",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=395&catid=54",
+      "sourceType": "official-html",
+      "role": "current-official-detail-panel",
+      "retrievedAt": "2026-06-16T15:34:00Z",
+      "academicSession": null,
+      "status": "verified",
+      "localPath": "tmp/usm-phd-current-html/usm-pg-article-395.html",
+      "sha256": "cfebc2b27f3dab9ad225330d7c0825cb788b3a7ed9d2c267fb82ee335d1a2de3",
+      "transport": "existing-or-urllib",
+      "governedFields": [
+        "overview",
+        "admissionRequirements",
+        "languageRequirements",
+        "duration",
+        "intake"
+      ]
+    },
+    {
+      "id": "current-html-402",
+      "title": "USM current programme HTML 402",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=402&catid=54",
+      "sourceType": "official-html",
+      "role": "current-official-detail-panel",
+      "retrievedAt": "2026-06-16T15:34:00Z",
+      "academicSession": null,
+      "status": "verified",
+      "localPath": "tmp/usm-phd-current-html/usm-pg-article-402.html",
+      "sha256": "bbcea0529cf7fd9b63f1ce33e6380ed3525a788e1f75b5adcad271db69975c0c",
+      "transport": "existing-or-urllib",
+      "governedFields": [
+        "overview",
+        "admissionRequirements",
+        "languageRequirements",
+        "duration",
+        "intake"
+      ]
+    },
+    {
+      "id": "current-html-403",
+      "title": "USM current programme HTML 403",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=403&catid=54",
+      "sourceType": "official-html",
+      "role": "current-official-detail-panel",
+      "retrievedAt": "2026-06-16T15:34:00Z",
+      "academicSession": null,
+      "status": "verified",
+      "localPath": "tmp/usm-phd-current-html/usm-pg-article-403.html",
+      "sha256": "2add729d77c8137d7b4363f1430a82e7fa00fde91efb778d2e4d1bbd7d4cd8f5",
+      "transport": "existing-or-urllib",
+      "governedFields": [
+        "overview",
+        "admissionRequirements",
+        "languageRequirements",
+        "duration",
+        "intake"
+      ]
+    },
+    {
+      "id": "current-html-407",
+      "title": "USM current programme HTML 407",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=407&catid=54",
+      "sourceType": "official-html",
+      "role": "current-official-detail-panel",
+      "retrievedAt": "2026-06-16T15:34:00Z",
+      "academicSession": null,
+      "status": "verified",
+      "localPath": "tmp/usm-phd-current-html/usm-pg-article-407.html",
+      "sha256": "a79210ee9f55282a4876eb4e80ecb92392f4a2ad0a2699edf87814691cd17279",
+      "transport": "existing-or-urllib",
+      "governedFields": [
+        "overview",
+        "admissionRequirements",
+        "languageRequirements",
+        "duration",
+        "intake"
+      ]
+    },
+    {
+      "id": "current-html-404",
+      "title": "USM current programme HTML 404",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=404&catid=54",
+      "sourceType": "official-html",
+      "role": "current-official-detail-panel",
+      "retrievedAt": "2026-06-16T15:34:00Z",
+      "academicSession": null,
+      "status": "verified",
+      "localPath": "tmp/usm-phd-current-html/usm-pg-article-404.html",
+      "sha256": "5c2e24d61474e062f7461098a15e0f87381b42609668c88c08c70b93f3bbe739",
+      "transport": "existing-or-urllib",
+      "governedFields": [
+        "overview",
+        "admissionRequirements",
+        "languageRequirements",
+        "duration",
+        "intake"
+      ]
+    },
+    {
+      "id": "current-html-558",
+      "title": "USM current programme HTML 558",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=558&catid=55",
+      "sourceType": "official-html",
+      "role": "current-official-detail-panel",
+      "retrievedAt": "2026-06-16T15:34:00Z",
+      "academicSession": null,
+      "status": "transport-exception",
+      "localPath": null,
+      "sha256": null,
+      "transport": "curl-http1.1",
+      "governedFields": [
+        "overview",
+        "admissionRequirements",
+        "languageRequirements",
+        "duration",
+        "intake"
+      ]
+    },
+    {
+      "id": "current-html-555",
+      "title": "USM current programme HTML 555",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=555&catid=55",
+      "sourceType": "official-html",
+      "role": "current-official-detail-panel",
+      "retrievedAt": "2026-06-16T15:34:00Z",
+      "academicSession": null,
+      "status": "transport-exception",
+      "localPath": null,
+      "sha256": null,
+      "transport": "curl-http1.1",
+      "governedFields": [
+        "overview",
+        "admissionRequirements",
+        "languageRequirements",
+        "duration",
+        "intake"
+      ]
+    },
+    {
+      "id": "current-html-807",
+      "title": "USM current programme HTML 807",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=807&catid=55",
+      "sourceType": "official-html",
+      "role": "current-official-detail-panel",
+      "retrievedAt": "2026-06-16T15:34:00Z",
+      "academicSession": null,
+      "status": "transport-exception",
+      "localPath": null,
+      "sha256": null,
+      "transport": "curl-http1.1",
+      "governedFields": [
+        "overview",
+        "admissionRequirements",
+        "languageRequirements",
+        "duration",
+        "intake"
+      ]
+    },
+    {
+      "id": "current-html-233",
+      "title": "USM current programme HTML 233",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=233&catid=51",
+      "sourceType": "official-html",
+      "role": "current-official-detail-panel",
+      "retrievedAt": "2026-06-16T15:34:00Z",
+      "academicSession": null,
+      "status": "transport-exception",
+      "localPath": null,
+      "sha256": null,
+      "transport": "curl-http1.1",
+      "governedFields": [
+        "overview",
+        "admissionRequirements",
+        "languageRequirements",
+        "duration",
+        "intake"
+      ]
+    },
+    {
+      "id": "current-html-234",
+      "title": "USM current programme HTML 234",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=234&catid=51",
+      "sourceType": "official-html",
+      "role": "current-official-detail-panel",
+      "retrievedAt": "2026-06-16T15:34:00Z",
+      "academicSession": null,
+      "status": "transport-exception",
+      "localPath": null,
+      "sha256": null,
+      "transport": "curl-http1.1",
+      "governedFields": [
+        "overview",
+        "admissionRequirements",
+        "languageRequirements",
+        "duration",
+        "intake"
+      ]
+    },
+    {
+      "id": "current-html-888",
+      "title": "USM current programme HTML 888",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=888&catid=55",
+      "sourceType": "official-html",
+      "role": "current-official-detail-panel",
+      "retrievedAt": "2026-06-16T15:34:00Z",
+      "academicSession": null,
+      "status": "transport-exception",
+      "localPath": null,
+      "sha256": null,
+      "transport": "curl-http1.1",
+      "governedFields": [
+        "overview",
+        "admissionRequirements",
+        "languageRequirements",
+        "duration",
+        "intake"
+      ]
+    },
+    {
+      "id": "current-html-244",
+      "title": "USM current programme HTML 244",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=244&catid=51",
+      "sourceType": "official-html",
+      "role": "current-official-detail-panel",
+      "retrievedAt": "2026-06-16T15:34:00Z",
+      "academicSession": null,
+      "status": "transport-exception",
+      "localPath": null,
+      "sha256": null,
+      "transport": "curl-http1.1",
+      "governedFields": [
+        "overview",
+        "admissionRequirements",
+        "languageRequirements",
+        "duration",
+        "intake"
+      ]
+    },
+    {
+      "id": "current-html-169",
+      "title": "USM current programme HTML 169",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=169&catid=50",
+      "sourceType": "official-html",
+      "role": "current-official-detail-panel",
+      "retrievedAt": "2026-06-16T15:34:00Z",
+      "academicSession": null,
+      "status": "transport-exception",
+      "localPath": null,
+      "sha256": null,
+      "transport": "curl-http1.1",
+      "governedFields": [
+        "overview",
+        "admissionRequirements",
+        "languageRequirements",
+        "duration",
+        "intake"
+      ]
+    },
+    {
+      "id": "current-html-217",
+      "title": "USM current programme HTML 217",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=217&catid=51",
+      "sourceType": "official-html",
+      "role": "current-official-detail-panel",
+      "retrievedAt": "2026-06-16T15:34:00Z",
+      "academicSession": null,
+      "status": "transport-exception",
+      "localPath": null,
+      "sha256": null,
+      "transport": "curl-http1.1",
+      "governedFields": [
+        "overview",
+        "admissionRequirements",
+        "languageRequirements",
+        "duration",
+        "intake"
+      ]
+    },
+    {
+      "id": "current-html-333",
+      "title": "USM current programme HTML 333",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=333&catid=52",
+      "sourceType": "official-html",
+      "role": "current-official-detail-panel",
+      "retrievedAt": "2026-06-16T15:34:00Z",
+      "academicSession": null,
+      "status": "transport-exception",
+      "localPath": null,
+      "sha256": null,
+      "transport": "curl-http1.1",
+      "governedFields": [
+        "overview",
+        "admissionRequirements",
+        "languageRequirements",
+        "duration",
+        "intake"
+      ]
+    },
+    {
+      "id": "current-html-372",
+      "title": "USM current programme HTML 372",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=372&catid=53",
+      "sourceType": "official-html",
+      "role": "current-official-detail-panel",
+      "retrievedAt": "2026-06-16T15:34:00Z",
+      "academicSession": null,
+      "status": "transport-exception",
+      "localPath": null,
+      "sha256": null,
+      "transport": "curl-http1.1",
+      "governedFields": [
+        "overview",
+        "admissionRequirements",
+        "languageRequirements",
+        "duration",
+        "intake"
+      ]
+    },
+    {
+      "id": "current-html-273",
+      "title": "USM current programme HTML 273",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=273&catid=52",
+      "sourceType": "official-html",
+      "role": "current-official-detail-panel",
+      "retrievedAt": "2026-06-16T15:34:00Z",
+      "academicSession": null,
+      "status": "transport-exception",
+      "localPath": null,
+      "sha256": null,
+      "transport": "curl-http1.1",
+      "governedFields": [
+        "overview",
+        "admissionRequirements",
+        "languageRequirements",
+        "duration",
+        "intake"
+      ]
+    },
+    {
+      "id": "current-html-170",
+      "title": "USM current programme HTML 170",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=170&catid=50",
+      "sourceType": "official-html",
+      "role": "current-official-detail-panel",
+      "retrievedAt": "2026-06-16T15:34:00Z",
+      "academicSession": null,
+      "status": "transport-exception",
+      "localPath": null,
+      "sha256": null,
+      "transport": "curl-http1.1",
+      "governedFields": [
+        "overview",
+        "admissionRequirements",
+        "languageRequirements",
+        "duration",
+        "intake"
+      ]
+    },
+    {
+      "id": "current-html-271",
+      "title": "USM current programme HTML 271",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=271&catid=52",
+      "sourceType": "official-html",
+      "role": "current-official-detail-panel",
+      "retrievedAt": "2026-06-16T15:34:00Z",
+      "academicSession": null,
+      "status": "transport-exception",
+      "localPath": null,
+      "sha256": null,
+      "transport": "curl-http1.1",
+      "governedFields": [
+        "overview",
+        "admissionRequirements",
+        "languageRequirements",
+        "duration",
+        "intake"
+      ]
+    },
+    {
+      "id": "current-html-809",
+      "title": "USM current programme HTML 809",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=809&catid=53",
+      "sourceType": "official-html",
+      "role": "current-official-detail-panel",
+      "retrievedAt": "2026-06-16T15:34:00Z",
+      "academicSession": null,
+      "status": "transport-exception",
+      "localPath": null,
+      "sha256": null,
+      "transport": "curl-http1.1",
+      "governedFields": [
+        "overview",
+        "admissionRequirements",
+        "languageRequirements",
+        "duration",
+        "intake"
+      ]
+    },
+    {
+      "id": "current-html-388",
+      "title": "USM current programme HTML 388",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=388&catid=54",
+      "sourceType": "official-html",
+      "role": "current-official-detail-panel",
+      "retrievedAt": "2026-06-16T15:34:00Z",
+      "academicSession": null,
+      "status": "transport-exception",
+      "localPath": null,
+      "sha256": null,
+      "transport": "curl-http1.1",
+      "governedFields": [
+        "overview",
+        "admissionRequirements",
+        "languageRequirements",
+        "duration",
+        "intake"
+      ]
+    },
+    {
+      "id": "current-html-219",
+      "title": "USM current programme HTML 219",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=219&catid=51",
+      "sourceType": "official-html",
+      "role": "current-official-detail-panel",
+      "retrievedAt": "2026-06-16T15:34:00Z",
+      "academicSession": null,
+      "status": "transport-exception",
+      "localPath": null,
+      "sha256": null,
+      "transport": "curl-http1.1",
+      "governedFields": [
+        "overview",
+        "admissionRequirements",
+        "languageRequirements",
+        "duration",
+        "intake"
+      ]
+    },
+    {
+      "id": "current-html-338",
+      "title": "USM current programme HTML 338",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=338&catid=53",
+      "sourceType": "official-html",
+      "role": "current-official-detail-panel",
+      "retrievedAt": "2026-06-16T15:34:00Z",
+      "academicSession": null,
+      "status": "transport-exception",
+      "localPath": null,
+      "sha256": null,
+      "transport": "curl-http1.1",
+      "governedFields": [
+        "overview",
+        "admissionRequirements",
+        "languageRequirements",
+        "duration",
+        "intake"
+      ]
+    },
+    {
+      "id": "current-html-510",
+      "title": "USM current programme HTML 510",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=510&catid=55",
+      "sourceType": "official-html",
+      "role": "current-official-detail-panel",
+      "retrievedAt": "2026-06-16T15:34:00Z",
+      "academicSession": null,
+      "status": "transport-exception",
+      "localPath": null,
+      "sha256": null,
+      "transport": "curl-http1.1",
+      "governedFields": [
+        "overview",
+        "admissionRequirements",
+        "languageRequirements",
+        "duration",
+        "intake"
+      ]
+    },
+    {
+      "id": "current-html-215",
+      "title": "USM current programme HTML 215",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=215&catid=51",
+      "sourceType": "official-html",
+      "role": "current-official-detail-panel",
+      "retrievedAt": "2026-06-16T15:34:00Z",
+      "academicSession": null,
+      "status": "transport-exception",
+      "localPath": null,
+      "sha256": null,
+      "transport": "curl-http1.1",
+      "governedFields": [
+        "overview",
+        "admissionRequirements",
+        "languageRequirements",
+        "duration",
+        "intake"
+      ]
+    },
+    {
+      "id": "current-html-218",
+      "title": "USM current programme HTML 218",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=218&catid=51",
+      "sourceType": "official-html",
+      "role": "current-official-detail-panel",
+      "retrievedAt": "2026-06-16T15:34:00Z",
+      "academicSession": null,
+      "status": "transport-exception",
+      "localPath": null,
+      "sha256": null,
+      "transport": "curl-http1.1",
+      "governedFields": [
+        "overview",
+        "admissionRequirements",
+        "languageRequirements",
+        "duration",
+        "intake"
+      ]
+    },
+    {
+      "id": "current-html-325",
+      "title": "USM current programme HTML 325",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=325&catid=52",
+      "sourceType": "official-html",
+      "role": "current-official-detail-panel",
+      "retrievedAt": "2026-06-16T15:34:00Z",
+      "academicSession": null,
+      "status": "transport-exception",
+      "localPath": null,
+      "sha256": null,
+      "transport": "curl-http1.1",
+      "governedFields": [
+        "overview",
+        "admissionRequirements",
+        "languageRequirements",
+        "duration",
+        "intake"
+      ]
+    },
+    {
+      "id": "current-html-220",
+      "title": "USM current programme HTML 220",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=220&catid=51",
+      "sourceType": "official-html",
+      "role": "current-official-detail-panel",
+      "retrievedAt": "2026-06-16T15:34:00Z",
+      "academicSession": null,
+      "status": "transport-exception",
+      "localPath": null,
+      "sha256": null,
+      "transport": "curl-http1.1",
+      "governedFields": [
+        "overview",
+        "admissionRequirements",
+        "languageRequirements",
+        "duration",
+        "intake"
+      ]
+    },
+    {
+      "id": "current-html-376",
+      "title": "USM current programme HTML 376",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=376&catid=53",
+      "sourceType": "official-html",
+      "role": "current-official-detail-panel",
+      "retrievedAt": "2026-06-16T15:34:00Z",
+      "academicSession": null,
+      "status": "transport-exception",
+      "localPath": null,
+      "sha256": null,
+      "transport": "curl-http1.1",
+      "governedFields": [
+        "overview",
+        "admissionRequirements",
+        "languageRequirements",
+        "duration",
+        "intake"
+      ]
+    },
+    {
+      "id": "current-html-375",
+      "title": "USM current programme HTML 375",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=375&catid=53",
+      "sourceType": "official-html",
+      "role": "current-official-detail-panel",
+      "retrievedAt": "2026-06-16T15:34:00Z",
+      "academicSession": null,
+      "status": "transport-exception",
+      "localPath": null,
+      "sha256": null,
+      "transport": "curl-http1.1",
+      "governedFields": [
+        "overview",
+        "admissionRequirements",
+        "languageRequirements",
+        "duration",
+        "intake"
+      ]
+    },
+    {
+      "id": "current-html-221",
+      "title": "USM current programme HTML 221",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=221&catid=51",
+      "sourceType": "official-html",
+      "role": "current-official-detail-panel",
+      "retrievedAt": "2026-06-16T15:34:00Z",
+      "academicSession": null,
+      "status": "transport-exception",
+      "localPath": null,
+      "sha256": null,
+      "transport": "curl-http1.1",
+      "governedFields": [
+        "overview",
+        "admissionRequirements",
+        "languageRequirements",
+        "duration",
+        "intake"
+      ]
+    },
+    {
+      "id": "current-html-361",
+      "title": "USM current programme HTML 361",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=361&catid=53",
+      "sourceType": "official-html",
+      "role": "current-official-detail-panel",
+      "retrievedAt": "2026-06-16T15:34:00Z",
+      "academicSession": null,
+      "status": "transport-exception",
+      "localPath": null,
+      "sha256": null,
+      "transport": "curl-http1.1",
+      "governedFields": [
+        "overview",
+        "admissionRequirements",
+        "languageRequirements",
+        "duration",
+        "intake"
+      ]
+    },
+    {
+      "id": "current-html-887",
+      "title": "USM current programme HTML 887",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=887&catid=52",
+      "sourceType": "official-html",
+      "role": "current-official-detail-panel",
+      "retrievedAt": "2026-06-16T15:34:00Z",
+      "academicSession": null,
+      "status": "transport-exception",
+      "localPath": null,
+      "sha256": null,
+      "transport": "curl-http1.1",
+      "governedFields": [
+        "overview",
+        "admissionRequirements",
+        "languageRequirements",
+        "duration",
+        "intake"
+      ]
+    },
+    {
+      "id": "current-html-243",
+      "title": "USM current programme HTML 243",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=243&catid=51",
+      "sourceType": "official-html",
+      "role": "current-official-detail-panel",
+      "retrievedAt": "2026-06-16T15:34:00Z",
+      "academicSession": null,
+      "status": "transport-exception",
+      "localPath": null,
+      "sha256": null,
+      "transport": "curl-http1.1",
+      "governedFields": [
+        "overview",
+        "admissionRequirements",
+        "languageRequirements",
+        "duration",
+        "intake"
+      ]
+    },
+    {
+      "id": "current-html-315",
+      "title": "USM current programme HTML 315",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=315&catid=52",
+      "sourceType": "official-html",
+      "role": "current-official-detail-panel",
+      "retrievedAt": "2026-06-16T15:34:00Z",
+      "academicSession": null,
+      "status": "transport-exception",
+      "localPath": null,
+      "sha256": null,
+      "transport": "curl-http1.1",
+      "governedFields": [
+        "overview",
+        "admissionRequirements",
+        "languageRequirements",
+        "duration",
+        "intake"
+      ]
+    },
+    {
+      "id": "current-html-378",
+      "title": "USM current programme HTML 378",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=378&catid=53",
+      "sourceType": "official-html",
+      "role": "current-official-detail-panel",
+      "retrievedAt": "2026-06-16T15:34:00Z",
+      "academicSession": null,
+      "status": "transport-exception",
+      "localPath": null,
+      "sha256": null,
+      "transport": "curl-http1.1",
+      "governedFields": [
+        "overview",
+        "admissionRequirements",
+        "languageRequirements",
+        "duration",
+        "intake"
+      ]
+    },
+    {
+      "id": "current-html-147",
+      "title": "USM current programme HTML 147",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=147&catid=50",
+      "sourceType": "official-html",
+      "role": "current-official-detail-panel",
+      "retrievedAt": "2026-06-16T15:34:00Z",
+      "academicSession": null,
+      "status": "transport-exception",
+      "localPath": null,
+      "sha256": null,
+      "transport": "curl-http1.1",
+      "governedFields": [
+        "overview",
+        "admissionRequirements",
+        "languageRequirements",
+        "duration",
+        "intake"
+      ]
+    },
+    {
+      "id": "current-html-241",
+      "title": "USM current programme HTML 241",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=241&catid=51",
+      "sourceType": "official-html",
+      "role": "current-official-detail-panel",
+      "retrievedAt": "2026-06-16T15:34:00Z",
+      "academicSession": null,
+      "status": "transport-exception",
+      "localPath": null,
+      "sha256": null,
+      "transport": "curl-http1.1",
+      "governedFields": [
+        "overview",
+        "admissionRequirements",
+        "languageRequirements",
+        "duration",
+        "intake"
+      ]
+    },
+    {
+      "id": "current-html-145",
+      "title": "USM current programme HTML 145",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=145&catid=50",
+      "sourceType": "official-html",
+      "role": "current-official-detail-panel",
+      "retrievedAt": "2026-06-16T15:34:00Z",
+      "academicSession": null,
+      "status": "transport-exception",
+      "localPath": null,
+      "sha256": null,
+      "transport": "curl-http1.1",
+      "governedFields": [
+        "overview",
+        "admissionRequirements",
+        "languageRequirements",
+        "duration",
+        "intake"
+      ]
+    },
+    {
+      "id": "current-html-326",
+      "title": "USM current programme HTML 326",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=326&catid=52",
+      "sourceType": "official-html",
+      "role": "current-official-detail-panel",
+      "retrievedAt": "2026-06-16T15:34:00Z",
+      "academicSession": null,
+      "status": "transport-exception",
+      "localPath": null,
+      "sha256": null,
+      "transport": "curl-http1.1",
+      "governedFields": [
+        "overview",
+        "admissionRequirements",
+        "languageRequirements",
+        "duration",
+        "intake"
+      ]
+    },
+    {
+      "id": "current-html-247",
+      "title": "USM current programme HTML 247",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=247&catid=51",
+      "sourceType": "official-html",
+      "role": "current-official-detail-panel",
+      "retrievedAt": "2026-06-16T15:34:00Z",
+      "academicSession": null,
+      "status": "transport-exception",
+      "localPath": null,
+      "sha256": null,
+      "transport": "curl-http1.1",
+      "governedFields": [
+        "overview",
+        "admissionRequirements",
+        "languageRequirements",
+        "duration",
+        "intake"
+      ]
+    },
+    {
+      "id": "current-html-313",
+      "title": "USM current programme HTML 313",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=313&catid=52",
+      "sourceType": "official-html",
+      "role": "current-official-detail-panel",
+      "retrievedAt": "2026-06-16T15:34:00Z",
+      "academicSession": null,
+      "status": "transport-exception",
+      "localPath": null,
+      "sha256": null,
+      "transport": "curl-http1.1",
+      "governedFields": [
+        "overview",
+        "admissionRequirements",
+        "languageRequirements",
+        "duration",
+        "intake"
+      ]
+    },
+    {
+      "id": "current-html-379",
+      "title": "USM current programme HTML 379",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=379&catid=53",
+      "sourceType": "official-html",
+      "role": "current-official-detail-panel",
+      "retrievedAt": "2026-06-16T15:34:00Z",
+      "academicSession": null,
+      "status": "transport-exception",
+      "localPath": null,
+      "sha256": null,
+      "transport": "curl-http1.1",
+      "governedFields": [
+        "overview",
+        "admissionRequirements",
+        "languageRequirements",
+        "duration",
+        "intake"
+      ]
+    },
+    {
+      "id": "current-html-561",
+      "title": "USM current programme HTML 561",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=561&catid=55",
+      "sourceType": "official-html",
+      "role": "current-official-detail-panel",
+      "retrievedAt": "2026-06-16T15:34:00Z",
+      "academicSession": null,
+      "status": "transport-exception",
+      "localPath": null,
+      "sha256": null,
+      "transport": "curl-http1.1",
+      "governedFields": [
+        "overview",
+        "admissionRequirements",
+        "languageRequirements",
+        "duration",
+        "intake"
+      ]
+    },
+    {
+      "id": "current-html-560",
+      "title": "USM current programme HTML 560",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=560&catid=55",
+      "sourceType": "official-html",
+      "role": "current-official-detail-panel",
+      "retrievedAt": "2026-06-16T15:34:00Z",
+      "academicSession": null,
+      "status": "transport-exception",
+      "localPath": null,
+      "sha256": null,
+      "transport": "curl-http1.1",
+      "governedFields": [
+        "overview",
+        "admissionRequirements",
+        "languageRequirements",
+        "duration",
+        "intake"
+      ]
+    },
+    {
+      "id": "current-html-559",
+      "title": "USM current programme HTML 559",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=559&catid=55",
+      "sourceType": "official-html",
+      "role": "current-official-detail-panel",
+      "retrievedAt": "2026-06-16T15:34:00Z",
+      "academicSession": null,
+      "status": "transport-exception",
+      "localPath": null,
+      "sha256": null,
+      "transport": "curl-http1.1",
+      "governedFields": [
+        "overview",
+        "admissionRequirements",
+        "languageRequirements",
+        "duration",
+        "intake"
+      ]
+    },
+    {
+      "id": "current-html-1475",
+      "title": "USM current programme HTML 1475",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1475&catid=55",
+      "sourceType": "official-html",
+      "role": "current-official-detail-panel",
+      "retrievedAt": "2026-06-16T15:34:00Z",
+      "academicSession": null,
+      "status": "transport-exception",
+      "localPath": null,
+      "sha256": null,
+      "transport": "curl-http1.1",
+      "governedFields": [
+        "overview",
+        "admissionRequirements",
+        "languageRequirements",
+        "duration",
+        "intake"
+      ]
+    },
+    {
+      "id": "current-html-1476",
+      "title": "USM current programme HTML 1476",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1476&catid=55",
+      "sourceType": "official-html",
+      "role": "current-official-detail-panel",
+      "retrievedAt": "2026-06-16T15:34:00Z",
+      "academicSession": null,
+      "status": "transport-exception",
+      "localPath": null,
+      "sha256": null,
+      "transport": "curl-http1.1",
+      "governedFields": [
+        "overview",
+        "admissionRequirements",
+        "languageRequirements",
+        "duration",
+        "intake"
+      ]
+    },
+    {
+      "id": "current-html-1474",
+      "title": "USM current programme HTML 1474",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1474&catid=54",
+      "sourceType": "official-html",
+      "role": "current-official-detail-panel",
+      "retrievedAt": "2026-06-16T15:34:00Z",
+      "academicSession": null,
+      "status": "transport-exception",
+      "localPath": null,
+      "sha256": null,
+      "transport": "curl-http1.1",
+      "governedFields": [
+        "overview",
+        "admissionRequirements",
+        "languageRequirements",
+        "duration",
+        "intake"
+      ]
+    },
+    {
+      "id": "current-html-1482",
+      "title": "USM current programme HTML 1482",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1482&catid=50",
+      "sourceType": "official-html",
+      "role": "current-official-detail-panel",
+      "retrievedAt": "2026-06-16T15:34:00Z",
+      "academicSession": null,
+      "status": "transport-exception",
+      "localPath": null,
+      "sha256": null,
+      "transport": "curl-http1.1",
+      "governedFields": [
+        "overview",
+        "admissionRequirements",
+        "languageRequirements",
+        "duration",
+        "intake"
+      ]
+    },
+    {
+      "id": "current-html-1501",
+      "title": "USM current programme HTML 1501",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1501&catid=54",
+      "sourceType": "official-html",
+      "role": "current-official-detail-panel",
+      "retrievedAt": "2026-06-16T15:34:00Z",
+      "academicSession": null,
+      "status": "transport-exception",
+      "localPath": null,
+      "sha256": null,
+      "transport": "curl-http1.1",
+      "governedFields": [
+        "overview",
+        "admissionRequirements",
+        "languageRequirements",
+        "duration",
+        "intake"
+      ]
+    },
+    {
+      "id": "current-html-1506",
+      "title": "USM current programme HTML 1506",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1506&catid=55",
+      "sourceType": "official-html",
+      "role": "current-official-detail-panel",
+      "retrievedAt": "2026-06-16T15:34:00Z",
+      "academicSession": null,
+      "status": "transport-exception",
+      "localPath": null,
+      "sha256": null,
+      "transport": "curl-http1.1",
+      "governedFields": [
+        "overview",
+        "admissionRequirements",
+        "languageRequirements",
+        "duration",
+        "intake"
+      ]
+    },
+    {
+      "id": "current-html-1508",
+      "title": "USM current programme HTML 1508",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1508&catid=52",
+      "sourceType": "official-html",
+      "role": "current-official-detail-panel",
+      "retrievedAt": "2026-06-16T15:34:00Z",
+      "academicSession": null,
+      "status": "transport-exception",
+      "localPath": null,
+      "sha256": null,
+      "transport": "curl-http1.1",
+      "governedFields": [
+        "overview",
+        "admissionRequirements",
+        "languageRequirements",
+        "duration",
+        "intake"
+      ]
+    },
+    {
+      "id": "current-html-1503",
+      "title": "USM current programme HTML 1503",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1503&catid=54",
+      "sourceType": "official-html",
+      "role": "current-official-detail-panel",
+      "retrievedAt": "2026-06-16T15:34:00Z",
+      "academicSession": null,
+      "status": "transport-exception",
+      "localPath": null,
+      "sha256": null,
+      "transport": "curl-http1.1",
+      "governedFields": [
+        "overview",
+        "admissionRequirements",
+        "languageRequirements",
+        "duration",
+        "intake"
+      ]
+    },
+    {
+      "id": "current-html-1515",
+      "title": "USM current programme HTML 1515",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1515&catid=52",
+      "sourceType": "official-html",
+      "role": "current-official-detail-panel",
+      "retrievedAt": "2026-06-16T15:34:00Z",
+      "academicSession": null,
+      "status": "transport-exception",
+      "localPath": null,
+      "sha256": null,
+      "transport": "curl-http1.1",
+      "governedFields": [
+        "overview",
+        "admissionRequirements",
+        "languageRequirements",
+        "duration",
+        "intake"
+      ]
+    },
+    {
+      "id": "current-html-1519",
+      "title": "USM current programme HTML 1519",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1519&catid=52",
+      "sourceType": "official-html",
+      "role": "current-official-detail-panel",
+      "retrievedAt": "2026-06-16T15:34:00Z",
+      "academicSession": null,
+      "status": "transport-exception",
+      "localPath": null,
+      "sha256": null,
+      "transport": "curl-http1.1",
+      "governedFields": [
+        "overview",
+        "admissionRequirements",
+        "languageRequirements",
+        "duration",
+        "intake"
+      ]
+    },
+    {
+      "id": "current-html-1492",
+      "title": "USM current programme HTML 1492",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1492&catid=53",
+      "sourceType": "official-html",
+      "role": "current-official-detail-panel",
+      "retrievedAt": "2026-06-16T15:34:00Z",
+      "academicSession": null,
+      "status": "transport-exception",
+      "localPath": null,
+      "sha256": null,
+      "transport": "curl-http1.1",
+      "governedFields": [
+        "overview",
+        "admissionRequirements",
+        "languageRequirements",
+        "duration",
+        "intake"
+      ]
+    },
+    {
+      "id": "current-html-1491",
+      "title": "USM current programme HTML 1491",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1491&catid=50",
+      "sourceType": "official-html",
+      "role": "current-official-detail-panel",
+      "retrievedAt": "2026-06-16T15:34:00Z",
+      "academicSession": null,
+      "status": "transport-exception",
+      "localPath": null,
+      "sha256": null,
+      "transport": "curl-http1.1",
+      "governedFields": [
+        "overview",
+        "admissionRequirements",
+        "languageRequirements",
+        "duration",
+        "intake"
+      ]
+    },
+    {
+      "id": "current-html-1490",
+      "title": "USM current programme HTML 1490",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1490&catid=54",
+      "sourceType": "official-html",
+      "role": "current-official-detail-panel",
+      "retrievedAt": "2026-06-16T15:34:00Z",
+      "academicSession": null,
+      "status": "transport-exception",
+      "localPath": null,
+      "sha256": null,
+      "transport": "curl-http1.1",
+      "governedFields": [
+        "overview",
+        "admissionRequirements",
+        "languageRequirements",
+        "duration",
+        "intake"
+      ]
+    },
+    {
+      "id": "current-html-1487",
+      "title": "USM current programme HTML 1487",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1487&catid=51",
+      "sourceType": "official-html",
+      "role": "current-official-detail-panel",
+      "retrievedAt": "2026-06-16T15:34:00Z",
+      "academicSession": null,
+      "status": "transport-exception",
+      "localPath": null,
+      "sha256": null,
+      "transport": "curl-http1.1",
+      "governedFields": [
+        "overview",
+        "admissionRequirements",
+        "languageRequirements",
+        "duration",
+        "intake"
+      ]
+    },
+    {
+      "id": "current-html-1486",
+      "title": "USM current programme HTML 1486",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1486&catid=52",
+      "sourceType": "official-html",
+      "role": "current-official-detail-panel",
+      "retrievedAt": "2026-06-16T15:34:00Z",
+      "academicSession": null,
+      "status": "transport-exception",
+      "localPath": null,
+      "sha256": null,
+      "transport": "curl-http1.1",
+      "governedFields": [
+        "overview",
+        "admissionRequirements",
+        "languageRequirements",
+        "duration",
+        "intake"
+      ]
+    },
+    {
+      "id": "current-html-1493",
+      "title": "USM current programme HTML 1493",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1493&catid=53",
+      "sourceType": "official-html",
+      "role": "current-official-detail-panel",
+      "retrievedAt": "2026-06-16T15:34:00Z",
+      "academicSession": null,
+      "status": "transport-exception",
+      "localPath": null,
+      "sha256": null,
+      "transport": "curl-http1.1",
+      "governedFields": [
+        "overview",
+        "admissionRequirements",
+        "languageRequirements",
+        "duration",
+        "intake"
+      ]
+    },
+    {
+      "id": "current-html-1516",
+      "title": "USM current programme HTML 1516",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1516&catid=52",
+      "sourceType": "official-html",
+      "role": "current-official-detail-panel",
+      "retrievedAt": "2026-06-16T15:34:00Z",
+      "academicSession": null,
+      "status": "transport-exception",
+      "localPath": null,
+      "sha256": null,
+      "transport": "curl-http1.1",
+      "governedFields": [
+        "overview",
+        "admissionRequirements",
+        "languageRequirements",
+        "duration",
+        "intake"
+      ]
+    },
+    {
+      "id": "current-html-1494",
+      "title": "USM current programme HTML 1494",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1494&catid=53",
+      "sourceType": "official-html",
+      "role": "current-official-detail-panel",
+      "retrievedAt": "2026-06-16T15:34:00Z",
+      "academicSession": null,
+      "status": "transport-exception",
+      "localPath": null,
+      "sha256": null,
+      "transport": "curl-http1.1",
+      "governedFields": [
+        "overview",
+        "admissionRequirements",
+        "languageRequirements",
+        "duration",
+        "intake"
+      ]
+    },
+    {
+      "id": "current-html-1517",
+      "title": "USM current programme HTML 1517",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1517&catid=52",
+      "sourceType": "official-html",
+      "role": "current-official-detail-panel",
+      "retrievedAt": "2026-06-16T15:34:00Z",
+      "academicSession": null,
+      "status": "transport-exception",
+      "localPath": null,
+      "sha256": null,
+      "transport": "curl-http1.1",
+      "governedFields": [
+        "overview",
+        "admissionRequirements",
+        "languageRequirements",
+        "duration",
+        "intake"
+      ]
+    },
+    {
+      "id": "current-html-222",
+      "title": "USM current programme HTML 222",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=222&catid=51",
+      "sourceType": "official-html",
+      "role": "current-official-detail-panel",
+      "retrievedAt": "2026-06-16T15:34:00Z",
+      "academicSession": null,
+      "status": "transport-exception",
+      "localPath": null,
+      "sha256": null,
+      "transport": "curl-http1.1",
+      "governedFields": [
+        "overview",
+        "admissionRequirements",
+        "languageRequirements",
+        "duration",
+        "intake"
+      ]
+    },
+    {
+      "id": "current-html-232",
+      "title": "USM current programme HTML 232",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=232&catid=51",
+      "sourceType": "official-html",
+      "role": "current-official-detail-panel",
+      "retrievedAt": "2026-06-16T15:34:00Z",
+      "academicSession": null,
+      "status": "transport-exception",
+      "localPath": null,
+      "sha256": null,
+      "transport": "curl-http1.1",
+      "governedFields": [
+        "overview",
+        "admissionRequirements",
+        "languageRequirements",
+        "duration",
+        "intake"
+      ]
+    },
+    {
+      "id": "current-html-235",
+      "title": "USM current programme HTML 235",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=235&catid=51",
+      "sourceType": "official-html",
+      "role": "current-official-detail-panel",
+      "retrievedAt": "2026-06-16T15:34:00Z",
+      "academicSession": null,
+      "status": "transport-exception",
+      "localPath": null,
+      "sha256": null,
+      "transport": "curl-http1.1",
+      "governedFields": [
+        "overview",
+        "admissionRequirements",
+        "languageRequirements",
+        "duration",
+        "intake"
+      ]
+    },
+    {
+      "id": "current-html-556",
+      "title": "USM current programme HTML 556",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=556&catid=55",
+      "sourceType": "official-html",
+      "role": "current-official-detail-panel",
+      "retrievedAt": "2026-06-16T15:34:00Z",
+      "academicSession": null,
+      "status": "transport-exception",
+      "localPath": null,
+      "sha256": null,
+      "transport": "curl-http1.1",
+      "governedFields": [
+        "overview",
+        "admissionRequirements",
+        "languageRequirements",
+        "duration",
+        "intake"
+      ]
+    },
+    {
+      "id": "current-html-1479",
+      "title": "USM current programme HTML 1479",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1479&catid=50",
+      "sourceType": "official-html",
+      "role": "current-official-detail-panel",
+      "retrievedAt": "2026-06-16T15:34:00Z",
+      "academicSession": null,
+      "status": "transport-exception",
+      "localPath": null,
+      "sha256": null,
+      "transport": "curl-http1.1",
+      "governedFields": [
+        "overview",
+        "admissionRequirements",
+        "languageRequirements",
+        "duration",
+        "intake"
+      ]
+    },
+    {
+      "id": "current-html-567",
+      "title": "USM current programme HTML 567",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=567&catid=59",
+      "sourceType": "official-html",
+      "role": "current-official-detail-panel",
+      "retrievedAt": "2026-06-16T15:34:00Z",
+      "academicSession": null,
+      "status": "transport-exception",
+      "localPath": null,
+      "sha256": null,
+      "transport": "curl-http1.1",
+      "governedFields": [
+        "overview",
+        "admissionRequirements",
+        "languageRequirements",
+        "duration",
+        "intake"
+      ]
+    },
+    {
+      "id": "current-html-566",
+      "title": "USM current programme HTML 566",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=566&catid=59",
+      "sourceType": "official-html",
+      "role": "current-official-detail-panel",
+      "retrievedAt": "2026-06-16T15:34:00Z",
+      "academicSession": null,
+      "status": "transport-exception",
+      "localPath": null,
+      "sha256": null,
+      "transport": "curl-http1.1",
+      "governedFields": [
+        "overview",
+        "admissionRequirements",
+        "languageRequirements",
+        "duration",
+        "intake"
+      ]
+    },
+    {
+      "id": "current-html-416",
+      "title": "USM current programme HTML 416",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=416&catid=55",
+      "sourceType": "official-html",
+      "role": "current-official-detail-panel",
+      "retrievedAt": "2026-06-16T15:34:00Z",
+      "academicSession": null,
+      "status": "transport-exception",
+      "localPath": null,
+      "sha256": null,
+      "transport": "curl-http1.1",
+      "governedFields": [
+        "overview",
+        "admissionRequirements",
+        "languageRequirements",
+        "duration",
+        "intake"
+      ]
+    },
+    {
+      "id": "current-html-417",
+      "title": "USM current programme HTML 417",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=417&catid=55",
+      "sourceType": "official-html",
+      "role": "current-official-detail-panel",
+      "retrievedAt": "2026-06-16T15:34:00Z",
+      "academicSession": null,
+      "status": "transport-exception",
+      "localPath": null,
+      "sha256": null,
+      "transport": "curl-http1.1",
+      "governedFields": [
+        "overview",
+        "admissionRequirements",
+        "languageRequirements",
+        "duration",
+        "intake"
+      ]
+    },
+    {
+      "id": "current-html-415",
+      "title": "USM current programme HTML 415",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=415&catid=55",
+      "sourceType": "official-html",
+      "role": "current-official-detail-panel",
+      "retrievedAt": "2026-06-16T15:34:00Z",
+      "academicSession": null,
+      "status": "transport-exception",
+      "localPath": null,
+      "sha256": null,
+      "transport": "curl-http1.1",
+      "governedFields": [
+        "overview",
+        "admissionRequirements",
+        "languageRequirements",
+        "duration",
+        "intake"
+      ]
+    },
+    {
+      "id": "current-html-420",
+      "title": "USM current programme HTML 420",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=420&catid=55",
+      "sourceType": "official-html",
+      "role": "current-official-detail-panel",
+      "retrievedAt": "2026-06-16T15:34:00Z",
+      "academicSession": null,
+      "status": "transport-exception",
+      "localPath": null,
+      "sha256": null,
+      "transport": "curl-http1.1",
+      "governedFields": [
+        "overview",
+        "admissionRequirements",
+        "languageRequirements",
+        "duration",
+        "intake"
+      ]
+    }
+  ],
+  "summary": {
+    "sourceCount": 100,
+    "currentHtmlSuccessUniqueUrls": 20,
+    "currentHtmlTransportFailures": 71
+  }
+}

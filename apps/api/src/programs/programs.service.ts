@@ -25,15 +25,24 @@ const visibleProgramStatuses = [
 const reviewPreviewConfigs = [
   {
     key: "msu-official-audit-2026",
-    slugPrefix: "msu-review-",
+    querySlugPrefix: "msu-review-",
+    allowedSlugPrefixes: ["msu-review-"],
     universityCode: "MSU",
     scope: "MSU official audit review"
   },
   {
     key: "luc-official-audit-2026",
-    slugPrefix: "luc-official-20260630-row-",
+    querySlugPrefix: "luc-",
+    allowedSlugPrefixes: ["luc-official-20260630-row-", "luc-postgraduate-20260705-row-"],
     universityCode: "LUC",
-    scope: "LUC undergraduate official audit review"
+    scope: "LUC official audit review"
+  },
+  {
+    key: "umt-undergraduate-audit-2026",
+    querySlugPrefix: "umt-",
+    allowedSlugPrefixes: ["umt-undergraduate-20260706-row-"],
+    universityCode: "UMT",
+    scope: "UMT undergraduate official audit review"
   }
 ] as const;
 
@@ -85,6 +94,10 @@ function getReviewPreviewConfig(key?: string | null) {
   const config = reviewPreviewConfigs.find((item) => item.key === key);
   if (!config) throw new NotFoundException("Program not found");
   return config;
+}
+
+function isReviewPreviewSlug(config: typeof reviewPreviewConfigs[number], slug: string) {
+  return config.allowedSlugPrefixes.some((slugPrefix) => slug.startsWith(slugPrefix));
 }
 
 @Injectable()
@@ -211,13 +224,13 @@ export class ProgramsService {
     const numericId = /^\d+$/.test(identifier) ? Number(identifier) : null;
     const program = await this.programsRepository.findOne({
       where: numericId
-        ? { id: numericId, slug: Like(`${config.slugPrefix}%`) }
+        ? { id: numericId, slug: Like(`${config.querySlugPrefix}%`) }
         : { slug: identifier },
       relations: { university: true }
     });
     if (
       !program ||
-      !program.slug.startsWith(config.slugPrefix) ||
+      !isReviewPreviewSlug(config, program.slug) ||
       program.university?.code !== config.universityCode ||
       !["needs-review", "ready"].includes(String(program.publicDisplayStatus))
     ) {

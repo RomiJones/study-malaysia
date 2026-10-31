@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "institutionIdentifier": "诺丁汉大学马来西亚校区 / University of Nottingham Malaysia",
+  "universityCode": "UNM",
+  "shortName": "UNM",
+  "collectionScope": "full",
+  "levels": [
+    "bachelor",
+    "master",
+    "phd",
+    "postgraduate-certificate",
+    "postgraduate-diploma"
+  ],
+  "applicantScope": "international",
+  "authorization": "collect",
+  "academicSession": "2026 intake",
+  "currentAsOf": "2026-06-19",
+  "taskInstruction": "采集统计诺丁汉大学马来西亚校区的所有官方公布专业信息，使用 StudyMY official university collector skill 和验收标准，严格执行；PGCert/PGDip 不合并。",
+  "officialDomains": [
+    "nottingham.edu.my"
+  ],
+  "selectedChineseTask": "docs/notion-snapshot/tasks/TASK-STUDYMY-COLLECTOR-SKILL-20260614.md",
+  "chinesePrd": "docs/notion-snapshot/产品需求文档.md",
+  "technicalDesign": "docs/notion-snapshot/技术方案.md",
+  "outputPath": "data/imports/unm/2026-06-19/official-audit",
+  "verificationCommands": [
+    "python3 scripts/audit_pipeline_stage.py data/imports/unm/2026-06-19/official-audit --stage discover_sources --summary-only",
+    "python3 scripts/audit_pipeline_stage.py data/imports/unm/2026-06-19/official-audit --stage delivery_review --summary-only",
+    "python3 scripts/audit_candidate_integrity.py data/imports/unm/2026-06-19/official-audit/99_integrity_manifest.json --official-domain nottingham.edu.my --require-instruction-ledger --summary-only"
+  ],
+  "rollbackTarget": "Not applicable: collect-only run; no database mutation.",
+  "notionOrLocalNotePath": "docs/notion-snapshot/开发进度日志.md",
+  "status": "collected-ready-for-controlled-import",
+  "publishedProgrammeTypes": [
+    "bachelor",
+    "master",
+    "phd",
+    "postgraduate-certificate",
+    "postgraduate-diploma"
+  ],
+  "notes": [
+    "No Nottingham-specific selected task page was present in the local Notion snapshot; latest user instruction requires every official published programme to be counted and collected.",
+    "PGCert/PGDip rows are official postgraduate rows and are included as published programme candidates.",
+    "UG and PGR fees are official per-year rates. Under the StudyMY acceptance workflow, total tuition is derived only where the official annual rate and official minimum full-time duration are both verified; formulas and original rate evidence are preserved."
+  ]
+}

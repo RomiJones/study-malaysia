@@ -2,7 +2,7 @@
 
 - **任务编号**: TASK-006
 - **任务标题**: 用户端页面结构与静态样式 1:1 还原
-- **状态**: 待评审
+- **状态**: 已阻塞
 - **优先级**: 高
 - **任务类型**: 前端
 - **负责人**: Codex
@@ -11,7 +11,7 @@
 - **实现说明**: 升级 apps/web，把静态 HTML 的页面结构和视觉风格迁移到 Vue 3 用户端，确保新页面外观与静态页面一致。
 - **测试计划**: 启动用户端和静态 HTML，使用浏览器截图对比桌面端和移动端关键区域。
 - **验证结果**: 已读取并分析静态 HTML `D:\mydev\StudyMY_UM_v58_na_display_tidy.html`；已结合旧系统 `D:\mydev\study-malaysia`；已新增中文规划文档 `docs/prd/TASK-006-user-web-static-style-restoration-plan.md`；已运行 `npm run build`，构建通过，管理端存在现有大 chunk 警告，不阻塞本任务。
-- **阻塞说明**: 未更新实际 Notion。`NOTION_PROJECT_HOME` 为空，Notion 搜索未定位到可安全更新的 TASK-006 页面；已更新本地中文文档与本地 Notion 快照。
+- **阻塞说明**: Review 未通过：本轮独立 Review 已读取 AGENTS.md、TASK-006 本地任务快照、TASK-006 规划文档、TASK-002 视觉基线、视觉回归脚本、最新视觉报告、Git 状态和 Review issue 记录；已复跑 `npm run verify:task028` 与 `npm run build`，两者均通过。静态视觉参考源可访问，但 TASK-006 仍存在任务口径与可追踪实现不一致、自动化记录重复且范围混杂、视觉脚本不能证明严格 1:1、移动端对比页仍有可见布局差异，因此不能通过。
 
 ## 依赖任务
 - TASK-002
@@ -81,3 +81,8 @@
   - 工具弹窗：`output\playwright\task028-20260524T124504Z\static-calculator-modal-desktop.png`、`output\playwright\task028-20260524T124504Z\web-calculator-modal-desktop.png`、`output\playwright\task028-20260524T124504Z\static-recommend-modal-mobile.png`、`output\playwright\task028-20260524T124504Z\web-recommend-modal-mobile.png`
 - **视觉结论**: 本轮复核证据已补齐 Review 要求的桌面端与移动端关键区域截图和自动差异结论；`TASK-006-REVIEW-002` 可关闭。由于本轮只修复测试证据缺失，任务级实现范围问题仍以 `TASK-006-REVIEW-001` 为准。
 - **Notion 更新**: 未更新实际 Notion；本轮只更新本地中文任务快照和本地中文规划文档。
+
+### 2026-05-24T22:19:40.489Z - 自动状态更新
+
+- **状态**: 已阻塞
+- **说明**: Review 未通过：本轮独立 Review 已读取 AGENTS.md、TASK-006 本地任务快照、TASK-006 规划文档、TASK-002 视觉基线、视觉回归脚本、最新视觉报告、Git 状态和 Review issue 记录；已复跑 `npm run verify:task028` 与 `npm run build`，两者均通过。静态视觉参考源可访问，但 TASK-006 仍存在任务口径与可追踪实现不一致、自动化记录重复且范围混杂、视觉脚本不能证明严格 1:1、移动端对比页仍有可见布局差异，因此不能通过。

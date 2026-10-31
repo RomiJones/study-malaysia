@@ -1,0 +1,56 @@
+[
+  {
+    "tags": [
+      {
+        "name": "january",
+        "title": "January"
+      },
+      {
+        "name": "february",
+        "title": "February"
+      },
+      {
+        "name": "march",
+        "title": "March"
+      },
+      {
+        "name": "april",
+        "title": "April"
+      },
+      {
+        "name": "may",
+        "title": "May"
+      },
+      {
+        "name": "june",
+        "title": "June"
+      },
+      {
+        "name": "july",
+        "title": "July"
+      },
+      {
+        "name": "august",
+        "title": "August"
+      },
+      {
+        "name": "september",
+        "title": "September"
+      },
+      {
+        "name": "october",
+        "title": "October"
+      },
+      {
+        "name": "november",
+        "title": "November"
+      },
+      {
+        "name": "december",
+        "title": "December"
+      }
+    ],
+    "name": "intake-month",
+    "title": "Intake Month"
+  }
+]

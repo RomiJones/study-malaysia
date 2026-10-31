@@ -1,0 +1,572 @@
+{
+  "Taylor's American Degree Transfer Program": [
+    {
+      "label": "Local Students (MYR)",
+      "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/school-of-liberal-arts-and-sciences/undergraduate/american-degree-transfer-program/taylors-fees-schedule-ug-adp-myr.pdf"
+    },
+    {
+      "label": "International Students (USD)",
+      "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/school-of-liberal-arts-and-sciences/undergraduate/american-degree-transfer-program/taylors-fees-schedule-ug-adp-usd.pdf"
+    }
+  ],
+  "School of Architecture, Building and Design": [
+    {
+      "label": "Local Students (MYR)",
+      "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/school-of-architecture-building-and-design/undergraduate/taylors-fees-schedule-ug-architecture-building-and-design-myr.pdf"
+    },
+    {
+      "label": "International Students (USD)",
+      "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/school-of-architecture-building-and-design/undergraduate/taylors-fees-schedule-ug-architecture-building-and-design-usd.pdf"
+    }
+  ],
+  "School of Biosciences": [
+    {
+      "label": "Local Students (MYR)",
+      "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/school-of-biosciences/undergraduate/taylors-fees-schedule-ug-biosciences-myr.pdf"
+    },
+    {
+      "label": "International Students (USD)",
+      "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/school-of-biosciences/undergraduate/taylors-fees-schedule-ug-biosciences-usd.pdf"
+    }
+  ],
+  "Taylor's Business School": [
+    {
+      "label": "Local Students (MYR)",
+      "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/taylors-business-school/undergraduate/taylors-fees-schedule-ug-business-myr.pdf"
+    },
+    {
+      "label": "International Students (USD)",
+      "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/taylors-business-school/undergraduate/taylors-fees-schedule-ug-business-usd.pdf"
+    }
+  ],
+  "School of Computer Science": [
+    {
+      "label": "Local Students (MYR)",
+      "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/school-of-computer-science/undergraduate/taylors-fees-schedule-ug-computer-science-myr.pdf"
+    },
+    {
+      "label": "International Students (USD)",
+      "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/school-of-computer-science/undergraduate/taylors-fees-schedule-ug-computer-science-usd.pdf"
+    }
+  ],
+  "The Design School at Taylor's": [
+    {
+      "label": "Local Students (MYR)",
+      "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/the-design-school-at-taylors/undergraduate/taylors-fees-schedule-ug-design-myr.pdf"
+    },
+    {
+      "label": "International Students (USD)",
+      "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/the-design-school-at-taylors/undergraduate/taylors-fees-schedule-ug-design-usd.pdf"
+    }
+  ],
+  "School of Education": [
+    {
+      "label": "Local Students (MYR)",
+      "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/school-of-education/undergraduate/taylors-fees-schedule-ug-education-myr.pdf"
+    },
+    {
+      "label": "International Students (USD)",
+      "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/school-of-education/undergraduate/taylors-fees-schedule-ug-education-usd.pdf"
+    }
+  ],
+  "School of Engineering": [
+    {
+      "label": "Local Student (MYR)",
+      "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/school-of-engineering/undergraduate/taylors-fees-schedule-ug-engineering-myr.pdf"
+    },
+    {
+      "label": "International Student (USD)",
+      "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/school-of-engineering/undergraduate/taylors-fees-schedule-ug-engineering-usd.pdf"
+    }
+  ],
+  "School of Hospitality, Tourism and Events": [
+    {
+      "label": "Local Students (MYR)",
+      "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/school-of-hospitality-tourism-and-events/undergraduate/taylors-fees-schedule-ug-hospitality-myr.pdf"
+    },
+    {
+      "label": "International Students (USD)",
+      "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/school-of-hospitality-tourism-and-events/undergraduate/taylors-fees-schedule-ug-hospitality-usd.pdf"
+    }
+  ],
+  "Taylor's Culinary Institute": [
+    {
+      "label": "Local Students (MYR)",
+      "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/taylors-culinary-institute/undergraduate/taylors-fees-schedule-ug-tci-myr.pdf"
+    },
+    {
+      "label": "International Students (USD)",
+      "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/taylors-culinary-institute/undergraduate/taylors-fees-schedule-ug-tci-usd.pdf"
+    }
+  ],
+  "School of Law and Governance": [
+    {
+      "label": "Local Students (MYR)",
+      "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/school-of-law-and-governance/undergraduate/taylors-fees-schedule-ug-law-and-governance-myr.pdf"
+    },
+    {
+      "label": "International Students (USD)",
+      "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/school-of-law-and-governance/undergraduate/taylors-fees-schedule-ug-law-and-governance-usd.pdf"
+    }
+  ],
+  "School of Liberal Arts and Sciences": [
+    {
+      "label": "Local Students (MYR)",
+      "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/school-of-liberal-arts-and-sciences/undergraduate/liberal-arts/taylors-fees-schedule-ug-liberal-arts-and-sciences-myr.pdf"
+    },
+    {
+      "label": "International Students (USD)",
+      "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/school-of-liberal-arts-and-sciences/undergraduate/liberal-arts/taylors-fees-schedule-ug-liberal-arts-and-sciences-usd.pdf"
+    }
+  ],
+  "School of General Studies and Languages": [
+    {
+      "label": "Local Students (MYR)",
+      "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/school-of-general-studies-and-languages/taylors-fees-schedule-ug-intensive-english-myr.pdf"
+    },
+    {
+      "label": "International Students (USD)",
+      "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/school-of-general-studies-and-languages/taylors-fees-schedule-ug-intensive-english-usd.pdf"
+    }
+  ],
+  "School of Media and Communication": [
+    {
+      "label": "Local Students (MYR)",
+      "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/school-of-media-and-communication/undergraduate/taylors-fees-schedule-ug-media-and-communication-myr.pdf"
+    },
+    {
+      "label": "International Students (USD)",
+      "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/school-of-media-and-communication/undergraduate/taylors-fees-schedule-ug-media-and-communication-usd.pdf"
+    }
+  ],
+  "School of Medicine": [
+    {
+      "label": "Local Students (MYR)",
+      "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/school-of-medicine/undergraduate/taylors-fees-schedule-ug-medicine-myr.pdf"
+    },
+    {
+      "label": "International Students (USD)",
+      "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/school-of-medicine/undergraduate/taylors-fees-schedule-ug-medicine-usd.pdf"
+    }
+  ],
+  "School of Pharmacy": [
+    {
+      "label": "Local Students (MYR)",
+      "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/school-of-pharmacy/undergraduate/taylors-fees-schedule-ug-pharmacy-myr.pdf"
+    },
+    {
+      "label": "International Students (USD)",
+      "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/school-of-pharmacy/undergraduate/taylors-fees-schedule-ug-pharmacy-usd.pdf"
+    }
+  ],
+  "Master of Architecture": [
+    {
+      "label": "Local Student (MYR)",
+      "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/school-of-architecture-building-and-design/postgraduate/taylors-fees-schedule-pg-master-of-architecture-and-master-of-science-in-virtual-design-and-construction-myr.pdf"
+    },
+    {
+      "label": "International Student (USD)",
+      "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/school-of-architecture-building-and-design/postgraduate/taylors-fees-schedule-pg-master-of-achitecture-usd.pdf"
+    }
+  ],
+  "Master of Science in Virtual Design and Construction": [
+    {
+      "label": "Local Student (MYR)",
+      "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/school-of-architecture-building-and-design/postgraduate/taylors-fees-schedule-pg-master-of-architecture-and-master-of-science-in-virtual-design-and-construction-myr.pdf"
+    },
+    {
+      "label": "International Student (USD)",
+      "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/school-of-architecture-building-and-design/postgraduate/taylors-fees-schedule-pg-master-of-science-in-virtual-design-construction-usd.pdf"
+    }
+  ],
+  "Doctor of Philosophy in Architecture": [
+    {
+      "label": "Local Student (MYR)",
+      "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/postgraduate-general/taylors-fees-schedule-pg-phd-research-myr.pdf"
+    },
+    {
+      "label": "International Student (USD)",
+      "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/postgraduate-general/taylors-fees-schedule-pg-phd-research-usd.pdf"
+    }
+  ],
+  "Master of Science": [
+    {
+      "label": "Local Student (MYR)",
+      "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/postgraduate-general/taylors-fees-schedule-pg-master-research-myr.pdf"
+    },
+    {
+      "label": "International Student (USD)",
+      "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/postgraduate-general/taylors-fees-schedule-pg-master-research-usd.pdf"
+    }
+  ],
+  "Doctor of Philosophy in Science": [
+    {
+      "label": "Local Student (MYR)",
+      "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/postgraduate-general/taylors-fees-schedule-pg-phd-research-myr.pdf"
+    },
+    {
+      "label": "International Student (USD)",
+      "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/postgraduate-general/taylors-fees-schedule-pg-phd-research-usd.pdf"
+    }
+  ],
+  "Master of Business Administration": [
+    {
+      "label": "Local Student (MYR)",
+      "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/taylors-business-school/postgraduate/taylors-fees-schedule-pg-master-of-business-administration-myr.pdf"
+    },
+    {
+      "label": "International Student (USD)",
+      "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/taylors-business-school/postgraduate/taylors-fees-schedule-pg-master-of-business-administration-and-master-of-management-usd.pdf"
+    }
+  ],
+  "Master of Management": [
+    {
+      "label": "Local Student (MYR)",
+      "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/online-postgraduate-programme/taylors-fees-schedule-online-postgraduate-programme-myr.pdf"
+    },
+    {
+      "label": "International Student (USD)",
+      "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/online-postgraduate-programme/taylors-fees-schedule-online-postgraduate-programme-usd.pdf"
+    }
+  ],
+  "Doctor of Philosophy in Business": [
+    {
+      "label": "Local Student (MYR)",
+      "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/postgraduate-general/taylors-fees-schedule-pg-phd-research-myr.pdf"
+    },
+    {
+      "label": "International Student (USD)",
+      "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/postgraduate-general/taylors-fees-schedule-pg-phd-research-usd.pdf"
+    }
+  ],
+  "Doctor of Business Administration": [
+    {
+      "label": "Local Student (MYR)",
+      "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/taylors-business-school/postgraduate/taylors-fees-schedule-pg-doctor-of-business-administration-myr.pdf"
+    },
+    {
+      "label": "International Student (USD)",
+      "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/taylors-business-school/postgraduate/taylors-fees-schedule-pg-doctor-of-business-administration-usd.pdf"
+    }
+  ],
+  "Master of Communication": [
+    {
+      "label": "Local Student (MYR)",
+      "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/school-of-media-and-communication/postgraduate/taylors-fees-schedule-pg-master-of-communication-myr.pdf"
+    },
+    {
+      "label": "International Student (USD)",
+      "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/school-of-media-and-communication/postgraduate/taylors-fees-schedule-pg-master-of-communication-usd.pdf"
+    }
+  ],
+  "Doctor of Philosophy in Media and Communication Studies": [
+    {
+      "label": "Local Student (MYR)",
+      "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/postgraduate-general/taylors-fees-schedule-pg-phd-research-myr.pdf"
+    },
+    {
+      "label": "International Student (USD)",
+      "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/postgraduate-general/taylors-fees-schedule-pg-phd-research-usd.pdf"
+    }
+  ],
+  "Master of Applied Computing (Coursework)": [
+    {
+      "label": "Local Student (MYR)",
+      "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/school-of-computer-science/postgraduate/taylors-fees-schedule-pg-master-of-applied-computing-myr.pdf"
+    },
+    {
+      "label": "International Student (USD)",
+      "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/school-of-computer-science/postgraduate/taylors-fees-schedule-pg-master-of-applied-computing-usd.pdf"
+    }
+  ],
+  "Master of Computer Science": [
+    {
+      "label": "Local Student (MYR)",
+      "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/postgraduate-general/taylors-fees-schedule-pg-master-research-myr.pdf"
+    },
+    {
+      "label": "International Student (USD)",
+      "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/postgraduate-general/taylors-fees-schedule-pg-master-research-usd.pdf"
+    }
+  ],
+  "Doctor of Philosophy in Computer Science": [
+    {
+      "label": "Local Student (MYR)",
+      "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/postgraduate-general/taylors-fees-schedule-pg-phd-research-myr.pdf"
+    },
+    {
+      "label": "International Student (USD)",
+      "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/postgraduate-general/taylors-fees-schedule-pg-phd-research-usd.pdf"
+    }
+  ],
+  "Master of Design": [
+    {
+      "label": "Local Student (MYR)",
+      "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/postgraduate-general/taylors-fees-schedule-pg-master-research-myr.pdf"
+    },
+    {
+      "label": "International Student (USD)",
+      "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/postgraduate-general/taylors-fees-schedule-pg-master-research-usd.pdf"
+    }
+  ],
+  "Doctor of Philosophy in Design Management": [
+    {
+      "label": "Local Student (MYR)",
+      "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/postgraduate-general/taylors-fees-schedule-pg-phd-research-myr.pdf"
+    },
+    {
+      "label": "International Student (USD)",
+      "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/postgraduate-general/taylors-fees-schedule-pg-phd-research-usd.pdf"
+    }
+  ],
+  "Master of Teaching and Learning": [
+    {
+      "label": "Local Student (MYR)",
+      "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/school-of-education/postgraduate/taylors-fees-schedule-pg-master-of-teaching-and-learning-myr.pdf"
+    },
+    {
+      "label": "International Student (USD)",
+      "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/school-of-education/postgraduate/taylors-fees-schedule-pg-master-of-teaching-and-learning-usd.pdf"
+    }
+  ],
+  "Master of Education": [
+    {
+      "label": "Local Student (MYR)",
+      "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/postgraduate-general/taylors-fees-schedule-pg-master-research-myr.pdf"
+    },
+    {
+      "label": "International Student (USD)",
+      "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/postgraduate-general/taylors-fees-schedule-pg-master-research-usd.pdf"
+    }
+  ],
+  "Doctor of Philosophy in Education": [
+    {
+      "label": "Local Student (MYR)",
+      "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/postgraduate-general/taylors-fees-schedule-pg-phd-research-myr.pdf"
+    },
+    {
+      "label": "International Student (USD)",
+      "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/postgraduate-general/taylors-fees-schedule-pg-phd-research-usd.pdf"
+    }
+  ],
+  "Master of Food Studies and Gastronomy": [
+    {
+      "label": "Local Student (MYR)",
+      "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/taylors-culinary-institute/postgraduate/taylors-fees-schedule-pg-master-of-food-studies-and-gastronomies-myr.pdf"
+    },
+    {
+      "label": "International Student (USD)",
+      "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/taylors-culinary-institute/postgraduate/taylors-fees-schedule-pg-master-of-food-studies-and-gastronomies-usd.pdf"
+    }
+  ],
+  "Master of Food Studies": [
+    {
+      "label": "Local Student (MYR)",
+      "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/postgraduate-general/taylors-fees-schedule-pg-master-research-myr.pdf"
+    },
+    {
+      "label": "International Student (USD)",
+      "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/postgraduate-general/taylors-fees-schedule-pg-master-research-usd.pdf"
+    }
+  ],
+  "Doctor of Philosophy in Food Studies": [
+    {
+      "label": "Local Student (MYR)",
+      "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/postgraduate-general/taylors-fees-schedule-pg-phd-research-myr.pdf"
+    },
+    {
+      "label": "International Student (USD)",
+      "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/postgraduate-general/taylors-fees-schedule-pg-phd-research-usd.pdf"
+    }
+  ],
+  "Master of International Hospitality Management": [
+    {
+      "label": "Local Student (MYR)",
+      "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/school-of-hospitality-tourism-and-events/postgraduate/taylors-fees-schedule-pg-master-of-international-hospitality-management-myr.pdf"
+    },
+    {
+      "label": "International Student (USD)",
+      "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/school-of-hospitality-tourism-and-events/postgraduate/taylors-fees-schedule-pg-master-of-international-hospitality-management-usd.pdf"
+    }
+  ],
+  "Master of Science in Tourism": [
+    {
+      "label": "Local Student (MYR)",
+      "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/postgraduate-general/taylors-fees-schedule-pg-master-research-myr.pdf"
+    },
+    {
+      "label": "International Student (USD)",
+      "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/postgraduate-general/taylors-fees-schedule-pg-master-research-usd.pdf"
+    }
+  ],
+  "Doctor of Philosophy in Hospitality and Tourism": [
+    {
+      "label": "Local Student (MYR)",
+      "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/postgraduate-general/taylors-fees-schedule-pg-phd-research-myr.pdf"
+    },
+    {
+      "label": "International Student (USD)",
+      "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/postgraduate-general/taylors-fees-schedule-pg-phd-research-usd.pdf"
+    }
+  ],
+  "Master of Laws": [
+    {
+      "label": "Local Student (MYR)",
+      "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/school-of-law-and-governance/postgraduate/taylors-fees-schedule-pg-master-of-law-and-master-of-laws-in-healthcare-and-medical-law-myr.pdf"
+    },
+    {
+      "label": "International Student (USD)",
+      "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/school-of-law-and-governance/postgraduate/taylors-fees-schedule-pg-master-of-law-and-master-of-laws-in-healthcare-and-medical-law-usd.pdf"
+    }
+  ],
+  "Master of Laws in Healthcare and Medical Law": [
+    {
+      "label": "Local Student (MYR)",
+      "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/school-of-law-and-governance/postgraduate/taylors-fees-schedule-pg-master-of-law-and-master-of-laws-in-healthcare-and-medical-law-myr.pdf"
+    },
+    {
+      "label": "International Student (USD)",
+      "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/school-of-law-and-governance/postgraduate/taylors-fees-schedule-pg-master-of-law-and-master-of-laws-in-healthcare-and-medical-law-usd.pdf"
+    }
+  ],
+  "Doctor of Philosophy in Law": [
+    {
+      "label": "Local Student (MYR)",
+      "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/postgraduate-general/taylors-fees-schedule-pg-phd-research-myr.pdf"
+    },
+    {
+      "label": "International Student (USD)",
+      "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/postgraduate-general/taylors-fees-schedule-pg-phd-research-usd.pdf"
+    }
+  ],
+  "Master of Clinical Psychology": [
+    {
+      "label": "Local Student (MYR)",
+      "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/school-of-liberal-arts-and-sciences/postgraduate/taylors-fees-schedule-pg-master-of-clinical-psychology-myr.pdf"
+    },
+    {
+      "label": "International Student (USD)",
+      "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/school-of-liberal-arts-and-sciences/postgraduate/taylors-fees-schedule-pg-master-of-clinical-psychology-usd.pdf"
+    }
+  ],
+  "Master of Counselling": [
+    {
+      "label": "Local Student (MYR)",
+      "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/school-of-liberal-arts-and-sciences/postgraduate/taylors-fees-schedule-pg-master-of-counselling-myr.pdf"
+    },
+    {
+      "label": "International Student (USD)",
+      "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/school-of-liberal-arts-and-sciences/postgraduate/taylors-fees-schedule-pg-master-of-counselling-usd.pdf"
+    }
+  ],
+  "Doctor of Philosophy in Social Sciences": [
+    {
+      "label": "Local Student (MYR)",
+      "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/postgraduate-general/taylors-fees-schedule-pg-phd-research-myr.pdf"
+    },
+    {
+      "label": "International Student (USD)",
+      "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/postgraduate-general/taylors-fees-schedule-pg-phd-research-usd.pdf"
+    }
+  ],
+  "Master of Science in Medical Science": [
+    {
+      "label": "Local Student (MYR)",
+      "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/postgraduate-general/taylors-fees-schedule-pg-master-research-myr.pdf"
+    },
+    {
+      "label": "International Student (USD)",
+      "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/postgraduate-general/taylors-fees-schedule-pg-master-research-usd.pdf"
+    }
+  ],
+  "Doctor of Philosophy in Medical Science": [
+    {
+      "label": "Local Student (MYR)",
+      "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/postgraduate-general/taylors-fees-schedule-pg-phd-research-myr.pdf"
+    },
+    {
+      "label": "International Student (USD)",
+      "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/postgraduate-general/taylors-fees-schedule-pg-phd-research-usd.pdf"
+    }
+  ],
+  "Master of Philosophy in Pharmaceutical Science": [
+    {
+      "label": "Local Student (MYR)",
+      "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/postgraduate-general/taylors-fees-schedule-pg-master-research-myr.pdf"
+    },
+    {
+      "label": "International Student (USD)",
+      "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/postgraduate-general/taylors-fees-schedule-pg-master-research-usd.pdf"
+    }
+  ],
+  "Master of Philosophy in Pharmacy": [
+    {
+      "label": "Local Student (MYR)",
+      "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/postgraduate-general/taylors-fees-schedule-pg-master-research-myr.pdf"
+    },
+    {
+      "label": "International Student (USD)",
+      "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/postgraduate-general/taylors-fees-schedule-pg-master-research-usd.pdf"
+    }
+  ],
+  "Doctor of Philosophy in Pharmaceutical Science": [
+    {
+      "label": "Local Student (MYR)",
+      "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/postgraduate-general/taylors-fees-schedule-pg-phd-research-myr.pdf"
+    },
+    {
+      "label": "International Student (USD)",
+      "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/postgraduate-general/taylors-fees-schedule-pg-phd-research-usd.pdf"
+    }
+  ],
+  "Master of Applied Computing": [
+    {
+      "label": "Local Student (MYR)",
+      "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/online-postgraduate-programme/taylors-fees-schedule-online-postgraduate-programme-myr.pdf"
+    },
+    {
+      "label": "International Student (USD)",
+      "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/online-postgraduate-programme/taylors-fees-schedule-online-postgraduate-programme-usd.pdf"
+    }
+  ],
+  "Master of Business Adminstration": [
+    {
+      "label": "Local Student (MYR)",
+      "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/online-postgraduate-programme/taylors-fees-schedule-online-postgraduate-programme-myr.pdf"
+    },
+    {
+      "label": "International Student (USD)",
+      "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/online-postgraduate-programme/taylors-fees-schedule-online-postgraduate-programme-usd.pdf"
+    }
+  ],
+  "Master of Global Hospitality Management": [
+    {
+      "label": "Local Student (MYR)",
+      "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/online-postgraduate-programme/taylors-fees-schedule-online-postgraduate-programme-myr.pdf"
+    },
+    {
+      "label": "International Student (USD)",
+      "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/online-postgraduate-programme/taylors-fees-schedule-online-postgraduate-programme-usd.pdf"
+    }
+  ],
+  "Master of Teaching & Learning": [
+    {
+      "label": "Local Student (MYR)",
+      "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/online-postgraduate-programme/taylors-fees-schedule-online-postgraduate-programme-myr.pdf"
+    },
+    {
+      "label": "International Student (USD)",
+      "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/online-postgraduate-programme/taylors-fees-schedule-online-postgraduate-programme-usd.pdf"
+    }
+  ],
+  "Postgraduate Certificate in Education": [
+    {
+      "label": "Local Student (MYR)",
+      "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/online-postgraduate-programme/taylors-fees-schedule-online-postgraduate-programme-myr.pdf"
+    },
+    {
+      "label": "International Student (USD)",
+      "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/online-postgraduate-programme/taylors-fees-schedule-online-postgraduate-programme-usd.pdf"
+    }
+  ]
+}

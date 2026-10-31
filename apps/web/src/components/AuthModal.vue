@@ -16,7 +16,27 @@
         <button class="auth-tab" :class="{ active: session.authMode === 'register' }" @click="session.authMode = 'register'">{{ t('auth.register') }}</button>
       </div>
 
-      <form class="auth-form" @submit.prevent="submit">
+      <div v-if="showTestAccount" class="auth-test-account">
+        <div class="auth-test-account__copy">
+          <strong>{{ t('auth.testAccountTitle') }}</strong>
+          <p>{{ t('auth.testAccountHint') }}</p>
+        </div>
+        <dl class="auth-test-account__grid">
+          <div>
+            <dt>{{ t('auth.account') }}</dt>
+            <dd>{{ memberTestAccount.account }}</dd>
+          </div>
+          <div>
+            <dt>{{ t('auth.password') }}</dt>
+            <dd>{{ memberTestAccount.password }}</dd>
+          </div>
+        </dl>
+        <button class="btn btn-secondary auth-test-account__button" type="button" :disabled="submitting" @click="loginWithTestAccount">
+          {{ submitting ? t('common.loading') : t('auth.testAccountLogin') }}
+        </button>
+      </div>
+
+      <form class="auth-form" @submit.prevent="submitForm">
         <label class="field-shell">
           <span>{{ t('auth.accountLabel') }}</span>
           <input v-model="form.account" required :placeholder="t('auth.accountPlaceholder')" />
@@ -55,6 +75,13 @@ const { t } = useI18n();
 const error = ref("");
 const submitting = ref(false);
 const syncNotice = ref("");
+const memberTestAccount = {
+  method: "email" as const,
+  account: "demo@studymy.local",
+  password: "Demo123!",
+  displayName: "Demo Student"
+};
+const showTestAccount = import.meta.env.VITE_HIDE_MEMBER_TEST_ACCOUNT !== "true";
 const form = reactive({
   method: "email" as "phone" | "email" | "wechat" | "qq",
   account: "",
@@ -62,12 +89,30 @@ const form = reactive({
   displayName: ""
 });
 
-async function submit() {
+function fillTestAccount() {
+  session.authMode = "login";
+  form.method = memberTestAccount.method;
+  form.account = memberTestAccount.account;
+  form.password = memberTestAccount.password;
+  form.displayName = memberTestAccount.displayName;
+}
+
+async function loginWithTestAccount() {
+  fillTestAccount();
+  await submit("login");
+}
+
+async function submitForm() {
+  await submit();
+}
+
+async function submit(modeOverride?: "login" | "register") {
+  if (submitting.value) return;
   error.value = "";
   submitting.value = true;
   syncNotice.value = "";
   try {
-    await session.submitAuth(session.authMode, form);
+    await session.submitAuth(modeOverride || session.authMode, form);
     syncNotice.value = t('auth.syncNotice');
     await Promise.all([catalog.mergeLocalState(), planner.mergeLocalState()]);
     session.closeAuth();

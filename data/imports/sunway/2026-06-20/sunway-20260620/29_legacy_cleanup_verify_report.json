@@ -1,0 +1,89 @@
+{
+  "mode": "published-verified",
+  "universityId": 9,
+  "databaseUniversityCode": "SUNWAY",
+  "summary": {
+    "candidateRows": 97,
+    "importRows": 97,
+    "byLevel": {
+      "bachelor": 48,
+      "master": 33,
+      "phd": 16
+    },
+    "readyRows": 97,
+    "needsReviewRows": 0,
+    "publishedRows": 97,
+    "uniqueSlugs": 97,
+    "pendingFeeRows": 0,
+    "notPublishedFeeRows": 4,
+    "officialDurationRows": 97,
+    "officialIntakeRows": 94,
+    "officialLanguageRows": 97,
+    "officialIeltsRows": 96,
+    "noOfficialIeltsRows": 1,
+    "minIelts": 5.5,
+    "academicRequirementRows": 97,
+    "applicationDocumentRows": 97,
+    "courseSettingRows": 95,
+    "careerRows": 83,
+    "sourceLinkedRows": 97,
+    "publicDisplayStatusCounts": {
+      "ready": 97
+    },
+    "officialSourceStatusCounts": {
+      "official-verified": 97
+    },
+    "feeAuditStatusCounts": {
+      "official-rate-verified": 83,
+      "not-published": 4,
+      "matched-official": 10
+    }
+  },
+  "verification": {
+    "candidateRows": 97,
+    "importRows": 97,
+    "byLevel": {
+      "bachelor": 48,
+      "master": 33,
+      "phd": 16
+    },
+    "readyRows": 97,
+    "needsReviewRows": 0,
+    "publishedRows": 97,
+    "uniqueSlugs": 97,
+    "pendingFeeRows": 0,
+    "notPublishedFeeRows": 4,
+    "officialDurationRows": 97,
+    "officialIntakeRows": 94,
+    "officialLanguageRows": 97,
+    "officialIeltsRows": 96,
+    "noOfficialIeltsRows": 1,
+    "minIelts": 5.5,
+    "academicRequirementRows": 97,
+    "applicationDocumentRows": 97,
+    "courseSettingRows": 95,
+    "careerRows": 83,
+    "sourceLinkedRows": 97,
+    "publicDisplayStatusCounts": {
+      "ready": 97
+    },
+    "officialSourceStatusCounts": {
+      "official-verified": 97
+    },
+    "feeAuditStatusCounts": {
+      "official-rate-verified": 83,
+      "not-published": 4,
+      "matched-official": 10
+    },
+    "universityPublicDisplayStatus": "ready",
+    "universityIsPublished": true,
+    "universityProgramCount": 97,
+    "importedPublicRows": 97,
+    "importedPublicLeakageRows": 0,
+    "importedNeedsReviewRows": 0,
+    "legacyPublicRows": 0,
+    "legacyActiveRows": 0,
+    "publicProgrammeCount": 97,
+    "publicDetailRouteAccessible": true
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "status": "passed",
+  "projectRuntimePolicy": "do-not-close-or-restart-without-ian-approval",
+  "observedEndpoints": [],
+  "interruptions": [],
+  "recoveryChecks": [],
+  "notes": [
+    "Collection used a separate Playwright browser process and batch output directory.",
+    "No StudyMY frontend/API/admin process was stopped, restarted, or occupied."
+  ]
+}

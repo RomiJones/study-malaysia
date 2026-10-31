@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-06-19T06:35:39.699Z",
+  "retrievalMethod": "curl with browser user-agent after plain curl returned HTTP 403",
+  "sources": [
+    {
+      "id": "usm-postgraduate-programmes-current-20260619",
+      "role": "programme-directory-and-general-requirements",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes",
+      "localPath": "sources/postgraduate-programmes.html",
+      "sha256": "b9f7b576c3291e7e0592cd2355998dc6abca474c9960c2f0cec80ece5bafbfc6",
+      "bytes": 566198,
+      "lastUpdate": "Thursday 18 June 2026",
+      "governedFields": [
+        "master/phd directory visibility",
+        "general academic requirements",
+        "general English requirements"
+      ]
+    },
+    {
+      "id": "usm-postgraduate-fees-current-20260619",
+      "role": "postgraduate-fee-authority",
+      "url": "https://admission.usm.my/index.php/postgraduate/fee-pg",
+      "localPath": "sources/postgraduate-fees.html",
+      "sha256": "e6ff281c050918c76ac31125079cf2b2b8093277892ec932054a15d8c1f81664",
+      "bytes": 75926,
+      "lastUpdate": "Thursday 18 June 2026",
+      "governedFields": [
+        "2025/2026 postgraduate fee tables",
+        "research mode per-semester rates",
+        "named programme totals"
+      ]
+    }
+  ]
+}

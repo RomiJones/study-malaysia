@@ -1,0 +1,124 @@
+{
+  "checkedAt": "2026-06-18T22:45:00+08:00",
+  "universityCode": "UTM",
+  "level": "bachelor",
+  "scope": "All UTM undergraduate international catalogue rows, including current-cycle not-open rows.",
+  "policy": {
+    "duration": "No default undergraduate duration is allowed. Programme duration must come from official programme detail or official supplemental handbook evidence. Semester-based duration is standardized as semesters / 2 years for public display.",
+    "fee": "Rows marked current-cycle-not-open remain public-visible and must still carry official international undergraduate total tuition. No not-applicable-for-international fee display is allowed."
+  },
+  "officialSources": [
+    {
+      "title": "UTM International Undergraduate Offered Courses",
+      "url": "https://admission.utm.my/offered-allcourses-international/",
+      "use": "Catalogue membership and current-cycle intake status."
+    },
+    {
+      "title": "UTM International Undergraduate Programme Fees",
+      "url": "https://admission.utm.my/programme-fees-ug-international/",
+      "use": "Official total international tuition by field/programme category."
+    },
+    {
+      "title": "UTM International Undergraduate Entry Requirements",
+      "url": "https://admission.utm.my/entry-requirements-ug-international/",
+      "use": "Country-specific China undergraduate requirement table."
+    },
+    {
+      "title": "UTM Faculty of Mechanical Engineering Undergraduate Handbook 2023/2024",
+      "url": "https://mech.utm.my/wp-content/uploads/2023/10/UNDERGRADUATE-HANDBOOK-FACULTY-OF-MECHANICAL-ENGINEERING-SESSION-20232024.pdf",
+      "use": "Supplemental official programme-specific duration evidence for Mechanical Engineering (Manufacturing): minimum 4 years, maximum 6 years, normal 8 semesters."
+    }
+  ],
+  "counts": {
+    "candidateRows": 44,
+    "readyRows": 40,
+    "currentCycleNotOpenRows": 4,
+    "notAvailableForInternationalRows": 0,
+    "officialDurationRows": 44,
+    "officialFeeRows": 44,
+    "durationWeakRows": 0
+  },
+  "currentCycleNotOpenRows": [
+    {
+      "ordinal": 15,
+      "nameEnOfficial": "Bachelor of Mechanical Engineering (Manufacturing) with Honours",
+      "currentCycleStatus": "current-cycle-not-open",
+      "intakeText": "Not offered for both the September and February intakes for the 2026/2027 academic session",
+      "tuitionMYR": 75000,
+      "feeCategory": "Engineering",
+      "durationYears": 4,
+      "semesters": 8,
+      "durationOfficialText": "The Bachelor of Mechanical Engineering (Manufacturing) with Honours Programme Specifications state: Study Duration Minimum: 4 years; Maximum: 6 years; Normal 8 semesters.",
+      "durationSourceUrl": "https://mech.utm.my/wp-content/uploads/2023/10/UNDERGRADUATE-HANDBOOK-FACULTY-OF-MECHANICAL-ENGINEERING-SESSION-20232024.pdf"
+    },
+    {
+      "ordinal": 18,
+      "nameEnOfficial": "Bachelor in Accounting with Honours",
+      "currentCycleStatus": "current-cycle-not-open",
+      "intakeText": "Not offered for both the September and February intakes for the 2026/2027 academic session",
+      "tuitionMYR": 63000,
+      "feeCategory": "Accountancy",
+      "durationYears": 4,
+      "semesters": 8,
+      "durationOfficialText": "Study Duration: Minimum 4 years (FT) / 6 years (PT); Maximum 6 years (FT) / 10 years (PT).",
+      "durationSourceUrl": "https://management.utm.my/accounting/"
+    },
+    {
+      "ordinal": 19,
+      "nameEnOfficial": "Bachelor in Digital Marketing with Honours",
+      "currentCycleStatus": "current-cycle-not-open",
+      "intakeText": "Not offered for both the September and February intakes for the 2026/2027 academic session",
+      "tuitionMYR": 63000,
+      "feeCategory": "HRD/ Management Technology",
+      "durationYears": 4,
+      "semesters": 8,
+      "durationOfficialText": "Study Duration: Minimum 4 years (FT) / 4.5 years (PT); Maximum 6 years (FT) / 10 years (PT).",
+      "durationSourceUrl": "https://management.utm.my/management-marketing/"
+    },
+    {
+      "ordinal": 20,
+      "nameEnOfficial": "Bachelor of Management with Honours",
+      "currentCycleStatus": "current-cycle-not-open",
+      "intakeText": "Not offered for both the September and February intakes for the 2026/2027 academic session",
+      "tuitionMYR": 45788,
+      "feeCategory": "Management",
+      "durationYears": 3,
+      "semesters": 6,
+      "durationOfficialText": "Study Duration: Minimum 3 years (FT) / 6 years (PT); Maximum 5 years (FT) / 10 years (PT).",
+      "durationSourceUrl": "https://management.utm.my/management-2/"
+    }
+  ],
+  "verification": {
+    "collectVerify": "python3 scripts/collect-utm-undergraduate-official.py --verify",
+    "tests": "npm run test -- tests/api/utm-undergraduate-import.test.ts tests/api/utm-public-catalog-display.test.ts tests/web/format.test.ts",
+    "apiBuild": "npm --workspace @studymy/api run build",
+    "webBuild": "npm --workspace @studymy/web run build",
+    "imports": [
+      "npm --workspace @studymy/api run import:utm:undergraduate -- --confirm-import",
+      "npm --workspace @studymy/api run import:utm:master -- --confirm-import",
+      "npm --workspace @studymy/api run import:utm:phd -- --confirm-import"
+    ],
+    "verifyImports": [
+      "npm --workspace @studymy/api run verify:utm:undergraduate",
+      "npm --workspace @studymy/api run verify:utm:master",
+      "npm --workspace @studymy/api run verify:utm:phd"
+    ],
+    "publicApi": {
+      "bachelorRows": 44,
+      "readyRows": 40,
+      "currentCycleNotOpenRows": 4,
+      "currentCycleBadFees": 0,
+      "universityProgramCount": 252,
+      "byLevel": {
+        "bachelor": 44,
+        "master": 153,
+        "phd": 55
+      }
+    },
+    "browser": {
+      "manufacturingDetail": "Pass: front-end detail page shows Manufacturing name, RM 75,000, 4-year duration, current-cycle not-open notice, and no not-applicable fee text.",
+      "universityPage": "Pass: front-end university page shows bachelor 44, master 153, phd 55."
+    }
+  },
+  "notionUpdate": "No live Notion write connector is available in this session; local Chinese development notes were updated instead."
+}

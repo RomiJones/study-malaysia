@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "mode": "uum-undergraduate-published",
+  "createdAt": "2026-06-27T15:47:13.838Z",
+  "institution": {
+    "code": "UUM",
+    "name": "Universiti Utara Malaysia",
+    "importedRows": 38,
+    "byLevel": {
+      "bachelor": 38
+    }
+  },
+  "database": {
+    "backupPath": "tmp/backups/uum-undergraduate-public-before-2026-06-27T15-47-13-679Z.json",
+    "transactionalImport": "passed",
+    "catalogCacheCleared": false,
+    "scopedRows": 38,
+    "activeSupersededRows": 0,
+    "legacyVisibleRows": 0,
+    "visibleCurrentRows": 38
+  },
+  "publicVisibility": {
+    "universityPublicDisplayStatus": "ready",
+    "universityIsPublished": true,
+    "universityProgramCount": 38,
+    "rowsPublished": 38,
+    "rowsReady": 1,
+    "rowsOfficialLanguageRequirementNotPublished": 37
+  },
+  "displayGate": {
+    "chineseNameRows": 38,
+    "chineseFacultyRows": 38,
+    "chineseCurriculumRows": 38,
+    "chineseCareerRows": 38,
+    "directIeltsRows": 1,
+    "missingDirectIeltsRows": 37,
+    "officialFeeRows": 38,
+    "durationKnownRows": 35,
+    "sourceRows": 38
+  }
+}

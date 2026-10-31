@@ -1,5 +1,5 @@
 import "reflect-metadata";
-import { DataSource, In, Not, type EntityManager, type Repository } from "typeorm";
+import { DataSource, In, Not, type DeepPartial, type EntityManager, type Repository } from "typeorm";
 import { loadEnvFiles } from "../config/env.js";
 import { ALL_ENTITIES, ProgramEntity, UniversityEntity } from "./entities.js";
 import type {
@@ -326,6 +326,22 @@ async function countStaleUniversities(
   return repository.count({ where: { code: Not(In(universityCodes)) } });
 }
 
+function asRecord(value: unknown): Record<string, unknown> {
+  return value && typeof value === "object" && !Array.isArray(value) ? value as Record<string, unknown> : {};
+}
+
+function preserveCurrentQsWorldProfile(incoming: unknown, current: UniversityEntity | null | undefined): Record<string, unknown> | null {
+  const incomingProfile = Object.keys(asRecord(incoming)).length ? { ...asRecord(incoming) } : null;
+  const currentQsWorld = asRecord(asRecord(asRecord(current?.officialProfile).rankings).qsWorld);
+  if (!Object.keys(currentQsWorld).length) return incomingProfile;
+  const profile = incomingProfile || {};
+  profile.rankings = {
+    ...asRecord(profile.rankings),
+    qsWorld: currentQsWorld
+  };
+  return profile;
+}
+
 export async function previewStaticCatalogImport(
   dataSource: StaticCatalogRepositoryProvider,
   catalog: StaticCatalog,
@@ -455,7 +471,14 @@ export async function importStaticCatalog(
     const current = await findExistingUniversity(universityRepository, item);
     const { sourceId, ...universityData } = item;
     void sourceId;
-    const saved = await universityRepository.save(universityRepository.create({ ...universityData, id: current?.id }));
+    const universityPayload: DeepPartial<UniversityEntity> = {
+      ...universityData,
+      id: current?.id,
+      qsRank: current?.qsRank ?? universityData.qsRank,
+      qsAsiaRank: current?.qsAsiaRank ?? universityData.qsAsiaRank,
+      officialProfile: preserveCurrentQsWorldProfile(universityData.officialProfile, current)
+    };
+    const saved = await universityRepository.save(universityRepository.create(universityPayload));
     savedUniversities.set(item.code, saved);
     if (current) summary.updatedUniversities += 1;
     else summary.createdUniversities += 1;

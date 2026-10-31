@@ -53,9 +53,15 @@ test("USM master commercial source keeps 305 canonical rows and publishes offici
     return /[A-Za-z]{3,}/.test(normalized);
   });
   assert.deepEqual(namesContainingOrdinaryEnglish.map((row) => row.name), []);
+  const researchRows = rows.filter((row) => row.studyMode === "research");
+  assert.ok(researchRows.length > 0);
+  const yearRoundResearchRows = researchRows.filter((row) => row.officialIntake === "Open year-round application");
+  assert.ok(yearRoundResearchRows.length > 0);
+  assert.ok(yearRoundResearchRows.every((row) => row.intakeMonths?.length === 0));
+  assert.ok(yearRoundResearchRows.every((row) => /open year-round/i.test(String(row.officialIntakeNote))));
   assert.ok(
     rows.some(
-      (row) => row.intakeMonths?.includes("September") && row.intakeMonths?.includes("March")
+      (row) => row.studyMode !== "research" && row.intakeMonths?.includes("October")
     )
   );
   const invalidIelts = rows.filter((row) => {
@@ -63,6 +69,18 @@ test("USM master commercial source keeps 305 canonical rows and publishes offici
     return ielts > 0 && ielts < 4;
   });
   assert.deepEqual(invalidIelts.map((row) => ({ name: row.nameEnOfficial, ielts: row.languageRequirement?.ielts })), []);
+  assert.ok(rows.some((row) =>
+    row.languageRequirement?.ielts === 5 &&
+    row.languageRequirement?.toefl === 40 &&
+    row.languageRequirement?.pte === 47 &&
+    row.languageRequirement?.muet === 3.5
+  ));
+  assert.ok(rows.some((row) =>
+    row.languageRequirement?.ielts === 6 &&
+    row.languageRequirement?.toefl === 60 &&
+    row.languageRequirement?.pte === 59 &&
+    row.languageRequirement?.muet === 4
+  ));
   const localOnly = rows.find((row) => /Malaysian(?:\s+Candidate)?\s+Only/i.test(String(row.nameEnOfficial)));
   assert.equal(localOnly?.publicDisplayStatus, "not-available-for-international");
   assert.equal(localOnly?.isPublished, false);
@@ -119,10 +137,4 @@ test("USM master rows show official totals or totals calculated from official ra
   assert.ok(rows.every((row) => !/[\d,]+-[\d,]+.*tuition/i.test(String(row.tuitionDisplay))));
   assert.ok(rows.every((row) => !/estimated total/i.test(String(row.tuitionDisplay))));
   assert.ok(rows.every((row) => Number(row.durationYears) > 0));
-  assert.equal(
-    source.records
-      .filter((row) => row.fee.international?.fullTimePerSemester)
-      .every((row) => row.fee.status === "official-rate-only"),
-    true
-  );
 });

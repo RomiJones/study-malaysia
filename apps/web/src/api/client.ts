@@ -4,10 +4,11 @@ export const API_BASE_URL = env.VITE_API_BASE_URL || "http://localhost:3000/api"
 
 export async function apiFetch<T>(path: string, options: RequestInit = {}, token?: string): Promise<T> {
   const { headers, ...requestOptions } = options;
+  const isFormData = typeof FormData !== "undefined" && requestOptions.body instanceof FormData;
   const response = await fetch(`${API_BASE_URL}${path}`, {
     ...requestOptions,
     headers: {
-      "Content-Type": "application/json",
+      ...(isFormData ? {} : { "Content-Type": "application/json" }),
       ...(token ? { Authorization: `Bearer ${token}` } : {}),
       ...(headers || {})
     }

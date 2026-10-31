@@ -1,0 +1,2398 @@
+<!DOCTYPE html>
+<html lang="en-gb" dir="ltr">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="/images/usm-c.png" sizes="any">
+                <link rel="apple-touch-icon" href="/images/Logo/Academia%20Fiesta%20logo.png">
+        <meta charset="utf-8">
+	<meta name="author" content="tatakelola">
+	<title>Admission USM - Fee PG </title>
+	<link href="/media/system/css/joomla-fontawesome.min.css?ver=4.4.16" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<link href="/media/vendor/joomla-custom-elements/css/joomla-alert.min.css?0.2.0" rel="stylesheet">
+	<link href="/templates/yootheme/css/theme.12.css?1781256478" rel="stylesheet">
+<script src="/media/vendor/jquery/js/jquery.min.js?3.7.1"></script>
+	<script src="/media/legacy/js/jquery-noconflict.min.js?504da4"></script>
+	<script type="application/json" class="joomla-script-options new">{"joomla.jtext":{"ERROR":"Error","MESSAGE":"Message","NOTICE":"Notice","WARNING":"Warning","JCLOSE":"Close","JOK":"OK","JOPEN":"Open"},"system.paths":{"root":"","rootFull":"https://admission.usm.my/","base":"","baseFull":"https://admission.usm.my/"},"csrf.token":"faece6d4d1b7db928208ededa194c6fb"}</script>
+	<script src="/media/system/js/core.min.js?2cb912"></script>
+	<script src="/media/system/js/messages.min.js?9a4811" type="module"></script>
+	<script src="https://cdn.gtranslate.net/widgets/latest/dropdown.js" data-gt-orig-url="/index.php/postgraduate/fee-pg" data-gt-orig-domain="admission.usm.my" data-gt-widget-id="139" defer></script>
+	<script src="/templates/yootheme/packages/theme-analytics/app/analytics.min.js?4.4.16" defer></script>
+	<script src="/templates/yootheme/vendor/assets/uikit/dist/js/uikit.min.js?4.4.16"></script>
+	<script src="/templates/yootheme/vendor/assets/uikit/dist/js/uikit-icons-creative-hub.min.js?4.4.16"></script>
+	<script src="/templates/yootheme/js/theme.js?4.4.16"></script>
+	<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://admission.usm.my/#/schema/Organization/base","name":"Admission USM","url":"https://admission.usm.my/"},{"@type":"WebSite","@id":"https://admission.usm.my/#/schema/WebSite/base","url":"https://admission.usm.my/","name":"Admission USM","publisher":{"@id":"https://admission.usm.my/#/schema/Organization/base"}},{"@type":"WebPage","@id":"https://admission.usm.my/#/schema/WebPage/base","url":"https://admission.usm.my/index.php/postgraduate/fee-pg","name":"Admission USM - Fee PG ","isPartOf":{"@id":"https://admission.usm.my/#/schema/WebSite/base"},"about":{"@id":"https://admission.usm.my/#/schema/Organization/base"},"inLanguage":"en-GB","breadcrumb":{"@id":"https://admission.usm.my/#/schema/BreadcrumbList/17"}},{"@type":"Article","@id":"https://admission.usm.my/#/schema/com_content/article/810","name":"Fee PG ","headline":"Fee PG ","inLanguage":"en-GB","isPartOf":{"@id":"https://admission.usm.my/#/schema/WebPage/base"}}]}</script>
+	<script>window.gtranslateSettings = window.gtranslateSettings || {};window.gtranslateSettings['139'] = {"default_language":"en","languages":["en","zh-CN","ms"],"url_structure":"sub_domain","wrapper_selector":"#gt-wrapper-139","globe_size":60,"flag_size":32,"flag_style":"2d","custom_domains":null,"float_switcher_open_direction":"top","switcher_open_direction":"top","native_language_names":1,"add_new_line":1,"select_language_label":"Select Language","detect_browser_language":0,"custom_css":"","alt_flags":[],"switcher_horizontal_position":"left","switcher_vertical_position":"bottom","horizontal_position":"inline","vertical_position":"inline"};</script>
+	<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?f0cbb9d70e83523e77456a524a78749c";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18091314783"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'AW-18091314783');
+</script>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/responsive/2.5.0/js/dataTables.responsive.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+
+<script>
+jQuery(function($) {
+    
+    // A. Page UPU (ID: #example)
+    if ($('#example').length) {
+        $.getScript('/images/js/upu_usm.js?v=' + new Date().getTime());
+    }
+    
+    // UPU Baru (ID: #upunew)
+    if ($('#upunew').length) {
+        $.getScript('/images/js/upunew.js?v=' + new Date().getTime());
+    }
+    
+    // B. Page USM+1 (ID: #usmnew1Table)
+    if ($('#usmnew1Table').length) {
+        $.getScript('/images/js/usmnew1.js?v=' + new Date().getTime());
+    }
+
+    // F. Page Alternative Baru (ID: #alternative)
+    if ($('#alternative').length) {
+        $.getScript('/images/js/alternative.js?v=' + new Date().getTime());
+    }
+    
+    // C. Page Postgraduate (LAMA - ID: #courseTable)
+    if ($('#courseTable').length) {
+        $.getScript('/images/js/programme-finder.js?v=' + new Date().getTime());
+    }
+
+    // D. Page Postgraduate-ODL (ID: #postgraduateTable)
+    if ($('#postgraduateTable').length) {
+        $.getScript('/images/js/postgraduate.js?v=' + new Date().getTime());
+    }
+    
+    // E. Page Postgraduate-Offshore (ID: #offshoreTable)
+    if ($('#offshoreTable').length) {
+        $.getScript('/images/js/postgraduate.js?v=' + new Date().getTime());
+    }
+
+    // NEW G. Page Postgraduate-USMKL (ID: #usmklTable)
+    if ($('#usmklTable').length) {
+        $.getScript('/images/js/postgraduate.js?v=' + new Date().getTime());
+    }
+    
+    // TAMBAH SEKSYEN INI UNTUK HALAMAN KHAS DEGREE
+    if ($('#degreeSpecialTable').length) {
+        $.getScript('/images/js/postgraduate.js?v=' + new Date().getTime());
+    }
+
+    // NEW H. Page Postgraduate-Utama/Full Data (ID: #fullpgTable)
+    if ($('#fullpgTable').length) {
+        $.getScript('/images/js/postgraduate.js?v=' + new Date().getTime());
+    }
+    
+    // Page PPJJ (ID: #ppjjTable)
+    if ($('#ppjjTable').length) {
+        $.getScript('/images/js/ppjj.js?v=' + new Date().getTime());
+    }
+    
+    // Page UG International (ID: #ugintTable) - DIPERBETULKAN KEPADA EJAAN RAPAT
+    if ($('#ugintTable').length) {
+        $.getScript('/images/js/uginternational.js?v=' + new Date().getTime());
+    }
+    
+    // Page Diploma (ID: #diplomaTable)
+    if ($('#diplomaTable').length) {
+        $.getScript('/images/js/diploma.js?v=' + new Date().getTime());
+    }
+});
+</script>
+	<script>window.yootheme ||= {}; var $theme = yootheme.theme = {"i18n":{"close":{"label":"Close"},"totop":{"label":"Back to top"},"marker":{"label":"Open"},"navbarToggleIcon":{"label":"Open menu"},"paginationPrevious":{"label":"Previous page"},"paginationNext":{"label":"Next page"},"searchIcon":{"toggle":"Open Search","submit":"Submit Search"},"slider":{"next":"Next slide","previous":"Previous slide","slideX":"Slide %s","slideLabel":"%s of %s"},"slideshow":{"next":"Next slide","previous":"Previous slide","slideX":"Slide %s","slideLabel":"%s of %s"},"lightboxPanel":{"next":"Next slide","previous":"Previous slide","slideLabel":"%s of %s","close":"Close"}},"google_analytics":"G-TQN7B8SZHC","google_analytics_anonymize":""};</script>
+
+    </head>
+    <body class="">
+
+        <div class="uk-hidden-visually uk-notification uk-notification-top-left uk-width-auto">
+            <div class="uk-notification-message">
+                <a href="#tm-main">Skip to main content</a>
+            </div>
+        </div>
+
+        
+        
+        <div class="tm-page">
+
+                        
+
+
+<header class="tm-header-mobile uk-hidden@m">
+
+
+    
+        <div class="uk-navbar-container">
+
+            <div class="uk-container uk-container-expand">
+                <nav class="uk-navbar" uk-navbar="{&quot;align&quot;:&quot;left&quot;,&quot;container&quot;:&quot;.tm-header-mobile&quot;,&quot;boundary&quot;:&quot;.tm-header-mobile .uk-navbar-container&quot;,&quot;target-y&quot;:&quot;.tm-header-mobile .uk-navbar-container&quot;,&quot;dropbar&quot;:true,&quot;dropbar-anchor&quot;:&quot;.tm-header-mobile .uk-navbar-container&quot;,&quot;dropbar-transparent-mode&quot;:&quot;remove&quot;}">
+
+                                        <div class="uk-navbar-left">
+
+                        
+                                                    <a uk-toggle href="#tm-dialog-mobile" class="uk-navbar-toggle">
+
+        
+        <div uk-navbar-toggle-icon></div>
+
+        
+    </a>
+                        
+                    </div>
+                    
+                                        <div class="uk-navbar-center">
+
+                                                    <a href="https://admission.usm.my/index.php" aria-label="Back to home" class="uk-logo uk-navbar-item">
+    <picture>
+<source type="image/webp" srcset="/templates/yootheme/cache/5a/usm-c-5a121b2c.webp 60w, /templates/yootheme/cache/50/usm-c-5091fda1.webp 120w" sizes="(min-width: 60px) 60px">
+<img alt loading="eager" src="/templates/yootheme/cache/90/usm-c-904bf74e.png" width="60" height="60">
+</picture></a>
+                        
+                        
+                    </div>
+                    
+                    
+                </nav>
+            </div>
+
+        </div>
+
+    
+
+
+
+        <div id="tm-dialog-mobile" uk-offcanvas="container: true; overlay: true" mode="slide">
+        <div class="uk-offcanvas-bar uk-flex uk-flex-column">
+
+                        <button class="uk-offcanvas-close uk-close-large" type="button" uk-close uk-toggle="cls: uk-close-large; mode: media; media: @s"></button>
+            
+                        <div class="uk-margin-auto-bottom">
+                
+<div class="uk-panel" id="module-menu-dialog-mobile">
+
+    
+    
+<ul class="uk-nav uk-nav-default">
+    
+	<li class="item-585 uk-active"><a href="/index.php">Postgraduate</a></li>
+	<li class="item-583"><a href="/index.php/undergraduate">Undergraduate</a></li>
+	<li class="item-671"><a href="/index.php/foundation">Foundation</a></li></ul>
+
+</div>
+
+            </div>
+            
+            
+        </div>
+    </div>
+    
+    
+    
+
+</header>
+
+
+<div class="tm-toolbar tm-toolbar-default uk-visible@m">
+    <div class="uk-container uk-flex uk-flex-middle">
+
+        
+                <div class="uk-margin-auto-left">
+            <div class="uk-grid-medium uk-child-width-auto uk-flex-middle" uk-grid="margin: uk-margin-small-top">
+                
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+<header class="tm-header uk-visible@m">
+
+
+
+        <div uk-sticky media="@m" show-on-up animation="uk-animation-slide-top" cls-active="uk-navbar-sticky" sel-target=".uk-navbar-container">
+    
+        <div class="uk-navbar-container">
+
+            <div class="uk-container">
+                <nav class="uk-navbar" uk-navbar="{&quot;align&quot;:&quot;left&quot;,&quot;container&quot;:&quot;.tm-header &gt; [uk-sticky]&quot;,&quot;boundary&quot;:&quot;.tm-header .uk-navbar-container&quot;,&quot;target-y&quot;:&quot;.tm-header .uk-navbar-container&quot;,&quot;dropbar&quot;:true,&quot;dropbar-anchor&quot;:&quot;.tm-header .uk-navbar-container&quot;,&quot;dropbar-transparent-mode&quot;:&quot;remove&quot;}">
+
+                                        <div class="uk-navbar-left">
+
+                                                    <a href="https://admission.usm.my/index.php" aria-label="Back to home" class="uk-logo uk-navbar-item">
+    <picture>
+<source type="image/webp" srcset="/templates/yootheme/cache/dc/USM-Apex-C-dc6e65ef.webp 205w, /templates/yootheme/cache/32/USM-Apex-C-32b3a0eb.webp 410w" sizes="(min-width: 205px) 205px">
+<img alt loading="eager" src="/templates/yootheme/cache/3a/USM-Apex-C-3a0c5d2e.png" width="205" height="50">
+</picture></a>
+                        
+                        
+                        
+                    </div>
+                    
+                    
+                                        <div class="uk-navbar-right">
+
+                                                    
+<ul class="uk-navbar-nav">
+    
+	<li class="item-585 uk-active"><a href="/index.php">Postgraduate</a></li>
+	<li class="item-583"><a href="/index.php/undergraduate">Undergraduate</a></li>
+	<li class="item-671"><a href="/index.php/foundation">Foundation</a></li></ul>
+
+                        
+                                                    
+                        
+                    </div>
+                    
+                </nav>
+            </div>
+
+        </div>
+
+        </div>
+    
+
+
+
+
+
+
+
+</header>
+
+            
+            
+<div id="module-149" class="builder"><!-- Builder #module-149 --><style class="uk-margin-remove-adjacent">#module-149\#0 .uk-section{padding-top: 5px; padding-bottom: 5px;}</style>
+<div id="module-149#0" class="uk-section-default">
+        <div data-src="/images/00%20admission%202024/black.jpg" data-sources="[{&quot;type&quot;:&quot;image\/webp&quot;,&quot;srcset&quot;:&quot;\/templates\/yootheme\/cache\/1c\/black-1c0d6144.webp 615w&quot;,&quot;sizes&quot;:&quot;(max-aspect-ratio: 615\/242) 254vh&quot;}]" uk-img class="uk-background-norepeat uk-background-cover uk-background-center-center uk-section uk-section-xsmall uk-padding-remove-top uk-padding-remove-bottom uk-flex uk-flex-middle" uk-height-viewport="offset-top: true; offset-bottom: 95;">    
+        
+        
+        
+                        <div class="uk-width-1-1">
+            
+                                <div class="uk-container">                
+                    <div class="uk-grid tm-grid-expand uk-child-width-1-1 uk-grid-margin">
+<div class="uk-width-1-1">
+    
+        
+            
+            
+            
+                
+                    
+<div class="uk-panel uk-text-right">
+    
+    <div class="gtranslate_wrapper" id="gt-wrapper-139"></div>
+</div>
+                
+            
+        
+    
+</div></div>
+                                </div>                
+                        </div>
+            
+        
+        </div>
+    
+</div></div>
+
+            <main id="tm-main" >
+
+                
+                <div id="system-message-container" aria-live="polite"></div>
+
+                <!-- Builder #page --><style class="uk-margin-remove-adjacent">#page\#0{font-family: 'Century Gothic'; text-shadow: 0 0 6px #000;}</style>
+<div class="uk-section-default">
+        <div data-src="/images/usm-photo/video-overlay-white.png" data-sources="[{&quot;type&quot;:&quot;image\/webp&quot;,&quot;srcset&quot;:&quot;\/templates\/yootheme\/cache\/b9\/video-overlay-white-b9a4399e.webp 4005w&quot;,&quot;sizes&quot;:&quot;(max-aspect-ratio: 4005\/2255) 178vh&quot;}]" uk-img class="uk-background-norepeat uk-background-cover uk-background-bottom-right uk-section uk-section-small" style="background-color: #4D1C6B;">    
+        
+        
+        
+            
+                                <div class="uk-container">                
+                    <div class="uk-grid tm-grid-expand uk-child-width-1-1 uk-grid-margin">
+<div class="uk-width-1-1">
+    
+        
+            
+            
+            
+                
+                    
+<h1 class="uk-heading-medium uk-text-warning" id="page#0">        Postgraduate    </h1><div class="uk-panel uk-margin"><div class="uk-grid tm-grid-expand uk-grid-column-small uk-grid-margin" uk-grid>
+<div class="uk-width-1-2@s uk-width-1-5@m">
+    
+        
+            
+            
+            
+                
+                    
+<div class="uk-margin">
+    
+    
+        
+        
+<a class="el-content uk-width-1-1 uk-button uk-button-primary" href="/index.php/postgraduate/programmes">
+    
+        Programmes    
+    
+</a>
+
+        
+    
+    
+</div>
+
+                
+            
+        
+    
+</div>
+<div class="uk-width-1-2@s uk-width-1-5@m">
+    
+        
+            
+            
+            
+                
+                    
+<div class="uk-margin">
+    
+    
+        
+        
+<a class="el-content uk-width-1-1 uk-button uk-button-primary" href="https://onlineips.usm.my/admission" target="_blank">
+    
+        Apply Now    
+    
+</a>
+
+        
+    
+    
+</div>
+
+                
+            
+        
+    
+</div>
+<div class="uk-width-1-3@s uk-width-1-5@m">
+    
+        
+            
+            
+            
+                
+                    
+<div class="uk-margin">
+    
+    
+        
+        
+<a class="el-content uk-width-1-1 uk-button uk-button-primary" href="/index.php/postgraduate/fee-pg">
+    
+        Fees    
+    
+</a>
+
+        
+    
+    
+</div>
+
+                
+            
+        
+    
+</div>
+<div class="uk-width-1-3@s uk-width-1-5@m">
+    
+        
+            
+            
+            
+                
+                    
+<div class="uk-margin">
+    
+    
+        
+        
+<a class="el-content uk-width-1-1 uk-button uk-button-primary" href="/index.php/postgraduate/financial-assistance">
+    
+        Financial Asisstance    
+    
+</a>
+
+        
+    
+    
+</div>
+
+                
+            
+        
+    
+</div>
+<div class="uk-width-1-3@s uk-width-1-5@m">
+    
+        
+            
+            
+            
+                
+                    
+<div class="uk-margin">
+    
+    
+        
+        
+<a class="el-content uk-width-1-1 uk-button uk-button-primary" href="https://experts.usm.my/" target="_blank">
+    
+        Potential Supervisor    
+    
+</a>
+
+        
+    
+    
+</div>
+
+                
+            
+        
+    
+</div></div></div>
+                
+            
+        
+    
+</div></div>
+                                </div>                
+            
+        
+        </div>
+    
+</div>
+<div class="uk-section-default">
+        <div data-src="/images/00%20admission%202024/BGND-Daun.png" data-sources="[{&quot;type&quot;:&quot;image\/webp&quot;,&quot;srcset&quot;:&quot;\/templates\/yootheme\/cache\/73\/BGND-Daun-736fe517.webp 5334w&quot;,&quot;sizes&quot;:&quot;(max-aspect-ratio: 5334\/3334) 160vh&quot;}]" uk-img class="uk-background-norepeat uk-background-cover uk-background-center-center uk-background-fixed uk-section uk-section-small">    
+        
+        
+        
+            
+                                <div class="uk-container">                
+                    <div class="uk-grid tm-grid-expand uk-grid-column-small uk-child-width-1-1 uk-grid-margin">
+<div class="uk-width-1-1">
+    
+        
+            
+            
+            
+                
+                    
+<h1 class="uk-heading-small">        Postgraduate Fees    </h1>
+
+    <div class="fs-switcher uk-margin">    <div id="uid-a63c6">    
+    
+        <div class="uk-child-width-expand" uk-grid>
+        <div class="uk-width-1-5@m">                        
+<ul class="el-nav uk-nav-default uk-tab-left" uk-tab="connect: #js-5; animation: uk-animation-fade; media: @m  ;">
+    <li data-id="1">        <a href="#" class="fs-switcher-nav-link">
+        <div>One-off fees</div>
+    </a>
+    </li>
+    <li data-id="2">        <a href="#" class="fs-switcher-nav-link">
+        <div>Mixed Mode Programmes</div>
+    </a>
+    </li>
+    <li data-id="3">        <a href="#" class="fs-switcher-nav-link">
+        <div>Coursework Mode Programmes</div>
+    </a>
+    </li>
+    <li data-id="4">        <a href="#" class="fs-switcher-nav-link">
+        <div>Clinical Programmes</div>
+    </a>
+    </li>
+    <li data-id="5">        <a href="#" class="fs-switcher-nav-link">
+        <div>Research Mode Programmes (PhD / MSc / MA)</div>
+    </a>
+    </li>
+    <li data-id="6">        <a href="#" class="fs-switcher-nav-link">
+        <div>How to calculate your fees</div>
+    </a>
+    </li></ul>
+                        </div>
+        <div>
+            <ul id="js-5" class="uk-switcher">                            <li class="el-item el-item-1 uk-margin-remove-first-child">                
+
+    
+
+
+
+
+
+
+
+
+    
+
+
+
+    <h3 class="el-title uk-margin-top uk-margin-remove-bottom">            One-off fees        </h3>
+
+
+
+
+
+
+
+    
+            
+            <div class="el-sublayout uk-margin-top uk-margin-remove-bottom">            <div class="uk-panel uk-margin"><div class="uk-grid tm-grid-expand uk-child-width-1-1 uk-grid-margin">
+<div class="uk-width-1-1">
+    
+        
+            
+            
+            
+                
+                    <div><!DOCTYPE html>
+<html>
+<head>
+<style>
+#customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4D1C6B;
+  color: white;
+}
+</style>
+</head>
+<body>
+<table id="customers">
+<tbody>
+<tr>
+<th><span style="color: #ff9900;">One-off fees</span></th>
+<th>Malaysian (MYR)</th>
+<th>International (USD)</th>
+</tr>
+<tr>
+<td>Registration fee<br />All programmes<br /><strong>Except</strong></td>
+<td>330.00</td>
+<td>225.00</td>
+</tr>
+<tr>
+<td>Master of Public Administration</td>
+<td>510.00</td>
+<td>275.00</td>
+</tr>
+<tr>
+<td>Master of Economic Management</td>
+<td>510.00</td>
+<td>275.00</td>
+</tr>
+<tr>
+<td>Master of Business Administration (Online)</td>
+<td>120.00</td>
+<td>210.00</td>
+</tr>
+<tr>
+<td>Personal Bond</td>
+<td>N/A</td>
+<td>1000.00</td>
+</tr>
+<tr>
+<td>Research Methodology</td>
+<td>320.00</td>
+<td>80.00</td>
+</tr>
+<tr>
+<td>Malay Language (LKM111)</td>
+<td>N/A</td>
+<td>No charge (new)<br />80.00 (repeat)</td>
+</tr>
+<tr>
+<td>Thesis Evaluation Fee</td>
+<td><br />800.00</td>
+<td><br />250.00</td>
+</tr>
+<tr>
+<td>Graduation Fee</td>
+<td>200.00 </td>
+<td>50.00</td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>	</div>
+                
+            
+        
+    
+</div></div></div>            </div>
+            
+
+
+
+
+
+    
+                </li>
+                            <li class="el-item el-item-2 uk-margin-remove-first-child">                
+
+    
+
+
+
+
+
+
+
+
+    
+
+
+
+    <h3 class="el-title uk-margin-top uk-margin-remove-bottom">            Mixed Mode Programmes        </h3>
+
+
+
+
+
+
+
+    
+            
+            <div class="el-sublayout uk-margin-top uk-margin-remove-bottom">            <div class="uk-panel uk-margin"><div class="uk-grid tm-grid-expand uk-child-width-1-1 uk-grid-margin">
+<div class="uk-width-1-1">
+    
+        
+            
+            
+            
+                
+                    <div class="uk-panel uk-margin"><p>Fees shown are the total per programme.</p>
+<table id="customers">
+<tbody>
+<tr>
+<th><span style="color: #ff9900;">Mixed Mode Programmes</span></th>
+<th style="text-align: center;">Malaysian (MYR)         </th>
+<th style="text-align: center;">International  (USD)</th>
+</tr>
+<tr>
+<td>Doctor of Business Administration</td>
+<td style="text-align: center;">42,525.00</td>
+<td style="text-align: center;">16,200.00</td>
+</tr>
+<tr>
+<td>Doctor of Business Administration (Online)</td>
+<td style="text-align: center;">48,600.00</td>
+<td style="text-align: center;">18,225.00</td>
+</tr>
+<tr>
+<td>Doctor of Neuroscience</td>
+<td style="text-align: center;">47,250.00</td>
+<td style="text-align: center;">36,000.00</td>
+</tr>
+<tr>
+<td>Doctor of Public Health (Environmental Health and Occupational)</td>
+<td style="text-align: center;">47,250.00</td>
+<td style="text-align: center;">36,000.00</td>
+</tr>
+<tr>
+<td>Doctor of Public Health (Epidemiology)</td>
+<td style="text-align: center;">47,250.00</td>
+<td style="text-align: center;">36,000.00</td>
+</tr>
+<tr>
+<td>Doctor of Public Health (Family Health)</td>
+<td style="text-align: center;">47,250.00</td>
+<td style="text-align: center;">36,000.00</td>
+</tr>
+<tr>
+<td>Doctor of Public Health (Health System Management)</td>
+<td style="text-align: center;">47,250.00</td>
+<td style="text-align: center;">36,000.00</td>
+</tr>
+<tr>
+<td>Master of Arts in Southeast Asian History</td>
+<td style="text-align: center;">18,000.00</td>
+<td style="text-align: center;">5,600.00</td>
+</tr>
+<tr>
+<td>Master in Biomedical Science</td>
+<td style="text-align: center;">18,000.00</td>
+<td style="text-align: center;">9,000.00</td>
+</tr>
+<tr>
+<td>Master in Forensic Science</td>
+<td style="text-align: center;">18,000.00</td>
+<td style="text-align: center;">9,000.00</td>
+</tr>
+<tr>
+<td>Master in Learning Design and Technology</td>
+<td style="text-align: center;">21,000.00</td>
+<td style="text-align: center;">8,000.00</td>
+</tr>
+<tr>
+<td>Master of Arts (Education) - Curriculum Studies</td>
+<td style="text-align: center;">18,000.00</td>
+<td style="text-align: center;">6,800.00</td>
+</tr>
+<tr>
+<td>Master of Arts (Education) - Early Childhood Education</td>
+<td style="text-align: center;">18,000.00</td>
+<td style="text-align: center;">6,800.00</td>
+</tr>
+<tr>
+<td>Master of Arts (Education) - Education Management and Administration</td>
+<td style="text-align: center;">18,000.00</td>
+<td style="text-align: center;">6,800.00</td>
+</tr>
+<tr>
+<td>Master of Arts (Education) - Educational Psychology</td>
+<td style="text-align: center;">18,000.00</td>
+<td style="text-align: center;">6,800.00</td>
+</tr>
+<tr>
+<td>Master of Arts (Education) - Educational Technology and Multimedia</td>
+<td style="text-align: center;">18,000.00</td>
+<td style="text-align: center;">6,800.00</td>
+</tr>
+<tr>
+<td>Master of Arts (Education) - English Language Education/TESOL</td>
+<td style="text-align: center;">18,000.00</td>
+<td style="text-align: center;">6,800.00</td>
+</tr>
+<tr>
+<td>Master of Arts (Education) - Malay Language Education</td>
+<td style="text-align: center;">18,000.00</td>
+<td style="text-align: center;">6,800.00</td>
+</tr>
+<tr>
+<td>Master of Arts (Education) - Mathematics Education</td>
+<td style="text-align: center;">18,000.00</td>
+<td style="text-align: center;">6,800.00</td>
+</tr>
+<tr>
+<td>Master of Arts (Education) - Psychometrics and Educational Measurement</td>
+<td style="text-align: center;">18,000.00</td>
+<td style="text-align: center;">6,800.00</td>
+</tr>
+<tr>
+<td>Master of Arts (Education) - Science Education</td>
+<td style="text-align: center;">18,000.00</td>
+<td style="text-align: center;">6,800.00</td>
+</tr>
+<tr>
+<td>Master of Arts (Education) - Special Education</td>
+<td style="text-align: center;">18,000.00</td>
+<td style="text-align: center;">6,800.00</td>
+</tr>
+<tr>
+<td>Master of Arts in Hadith</td>
+<td style="text-align: center;">19,800.00</td>
+<td style="text-align: center;">6,160.00</td>
+</tr>
+<tr>
+<td>Master of Arts in Linguistics and English Language Studies</td>
+<td style="text-align: center;">18,000.00</td>
+<td style="text-align: center;">6,800.00</td>
+</tr>
+<tr>
+<td>Master of Arts in Literature</td>
+<td style="text-align: center;">18,000.00</td>
+<td style="text-align: center;">5,600.00</td>
+</tr>
+<tr>
+<td>Master of Arts in Malay Linguistics</td>
+<td style="text-align: center;">18,000.00</td>
+<td style="text-align: center;">6,800.00</td>
+</tr>
+<tr>
+<td>Master of Communication</td>
+<td style="text-align: center;">20,000.00</td>
+<td style="text-align: center;">8,600.00</td>
+</tr>
+<tr>
+<td>Master of Computer Science</td>
+<td style="text-align: center;">19,200.00</td>
+<td style="text-align: center;">8,000.00</td>
+</tr>
+<tr>
+<td>Master of Management in Global Islamic Finance</td>
+<td style="text-align: center;">23,000.00</td>
+<td style="text-align: center;">7,500.00</td>
+</tr>
+<tr>
+<td>Master of Neuroscience</td>
+<td style="text-align: center;">22,600.00</td>
+<td style="text-align: center;">9,000.00</td>
+</tr>
+<tr>
+<td>Master of Science (Clinical Anatomy)</td>
+<td style="text-align: center;">22,600.00</td>
+<td style="text-align: center;">9,000.00</td>
+</tr>
+<tr>
+<td>Master of Science in Electronic Systems Design Engineering</td>
+<td style="text-align: center;">25,000.00</td>
+<td style="text-align: center;">8,600.00</td>
+</tr>
+<tr>
+<td>Master of Science in Electronic Systems Design Engineering - Industry</td>
+<td style="text-align: center;">29,600.00</td>
+<td style="text-align: center;">10,000.00</td>
+</tr>
+<tr>
+<td>Master of Science (Fire Safety Engineering)</td>
+<td style="text-align: center;">30,000.00</td>
+<td style="text-align: center;">11,400.00</td>
+</tr>
+<tr>
+<td>Master of Science (Medical Education)</td>
+<td style="text-align: center;">22,600.00</td>
+<td style="text-align: center;">9,000.00</td>
+</tr>
+<tr>
+<td>Master of Science (Medical Statistic)</td>
+<td style="text-align: center;">22,600.00</td>
+<td style="text-align: center;">9,000.00</td>
+</tr>
+<tr>
+<td>Master of Science (Microelectronic Engineering)</td>
+<td style="text-align: center;">22,600.00</td>
+<td style="text-align: center;">9,000.00</td>
+</tr>
+<tr>
+<td>Master of Science (Microelectronic Engineering) - Industry</td>
+<td style="text-align: center;">25,900.00</td>
+<td style="text-align: center;">-</td>
+</tr>
+<tr>
+<td>Master of Science (Solid State Physics) - Dual Degree Germany</td>
+<td style="text-align: center;">22,600.00</td>
+<td style="text-align: center;">9,000.00</td>
+</tr>
+<tr>
+<td>Master of Science in Applied Geophysics</td>
+<td style="text-align: center;">22,600.00</td>
+<td style="text-align: center;">9,000.00</td>
+</tr>
+<tr>
+<td>Master of Science in Bioprocess Technology</td>
+<td style="text-align: center;">19,800.00</td>
+<td style="text-align: center;">7,400.00</td>
+</tr>
+<tr>
+<td>Master of Science in Building Technology </td>
+<td style="text-align: center;">18,400.00</td>
+<td style="text-align: center;">9,400.00</td>
+</tr>
+<tr>
+<td>Master of Science in Chemical Instrumentation</td>
+<td style="text-align: center;">18,000.00</td>
+<td style="text-align: center;">7,600.00</td>
+</tr>
+<tr>
+<td>Master of Science in Materials Engineering</td>
+<td style="text-align: center;">18,000.00</td>
+<td style="text-align: center;">6,400.00</td>
+</tr>
+<tr>
+<td>Master of Science in Mathematics </td>
+<td style="text-align: center;">18,000.00</td>
+<td style="text-align: center;">7,400.00</td>
+</tr>
+<tr>
+<td>Master of Science in Molecular Medicine</td>
+<td style="text-align: center;">26,555.00</td>
+<td style="text-align: center;">19,270.00</td>
+</tr>
+<tr>
+<td>Master of Science in Nano-Optoelectronics </td>
+<td style="text-align: center;">22,600.00</td>
+<td style="text-align: center;">9,000.00</td>
+</tr>
+<tr>
+<td>Master of Science in Radiation Science</td>
+<td style="text-align: center;">22,600.00</td>
+<td style="text-align: center;">9,000.00</td>
+</tr>
+<tr>
+<td>Master of Science in Statistics</td>
+<td style="text-align: center;">18,000.00</td>
+<td style="text-align: center;">7,400.00</td>
+</tr>
+<tr>
+<td>Master of Science in Tourism Development </td>
+<td style="text-align: center;">18,040.00</td>
+<td style="text-align: center;">7,480.00</td>
+</tr>
+<tr>
+<td>Master of Science in Tropical Plant Disease Management</td>
+<td style="text-align: center;">20,000.00</td>
+<td style="text-align: center;">8,000.00</td>
+</tr>
+<tr>
+<td>Master of Social Sciences In Islamic-Based Development Management </td>
+<td style="text-align: center;">18,000.00</td>
+<td style="text-align: center;">6,800.00</td>
+</tr>
+<tr>
+<td>Master of Social Work</td>
+<td style="text-align: center;">22,000.00</td>
+<td style="text-align: center;">9,240.00</td>
+</tr>
+</tbody>
+</table>
+<p></p></div>
+                
+            
+        
+    
+</div></div></div>            </div>
+            
+
+
+
+
+
+    
+                </li>
+                            <li class="el-item el-item-3 uk-margin-remove-first-child">                
+
+    
+
+
+
+
+
+
+
+
+    
+
+
+
+    <h3 class="el-title uk-margin-top uk-margin-remove-bottom">            Coursework Mode Programmes        </h3>
+
+
+
+
+
+
+
+    
+            
+            <div class="el-sublayout uk-margin-top uk-margin-remove-bottom">            <div class="uk-panel uk-margin"><div class="uk-grid tm-grid-expand uk-child-width-1-1 uk-grid-margin">
+<div class="uk-width-1-1">
+    
+        
+            
+            
+            
+                
+                    <div class="uk-panel uk-margin"><p>Fees shown are the total per programme.</p>
+<table id="customers">
+<tbody>
+<tr>
+<th><span style="color: #ff9900;">Coursework Mode Programmes</span></th>
+<th style="text-align: center;">Malaysian (MYR)         </th>
+<th style="text-align: center;">International  (USD)</th>
+</tr>
+<tr>
+<td>Doctor of Education in Curriculum &amp; Instruction</td>
+<td style="text-align: center;">47,250.00</td>
+<td style="text-align: center;">18,000.00</td>
+</tr>
+<tr>
+<td>Doctor of Education in Educational Technology &amp; Multimedia</td>
+<td style="text-align: center;">47,250.00</td>
+<td style="text-align: center;">18,000.00</td>
+</tr>
+<tr>
+<td>Doctor of Education in Science Education </td>
+<td style="text-align: center;">47,250.00</td>
+<td style="text-align: center;">18,000.00</td>
+</tr>
+<tr>
+<td>Doctor of Education in TESOL</td>
+<td style="text-align: center;">47,250.00</td>
+<td style="text-align: center;">18,000.00</td>
+</tr>
+<tr>
+<td>Doctor of Psychology (Clinical Neuropsychology) - Joint Degree</td>
+<td style="text-align: center;">63,000.00</td>
+<td style="text-align: center;">63,000.00</td>
+</tr>
+<tr>
+<td>Doctor of Psychology (Clinical Psychology) - Joint Degree</td>
+<td style="text-align: center;">63,000.00</td>
+<td style="text-align: center;">63,000.00</td>
+</tr>
+<tr>
+<td>Master in Counseling</td>
+<td style="text-align: center;">23,850.00</td>
+<td style="text-align: center;">9,010.00</td>
+</tr>
+<tr>
+<td>Master in Dental Sciences</td>
+<td style="text-align: center;">46,000.00</td>
+<td style="text-align: center;">24,000.00</td>
+</tr>
+<tr>
+<td>Master in Global Islamic Finance</td>
+<td style="text-align: center;">23,000.00</td>
+<td style="text-align: center;">7,500.00</td>
+</tr>
+<tr>
+<td>Master of Architecture</td>
+<td style="text-align: center;">20,400.00</td>
+<td style="text-align: center;">9,000.00</td>
+</tr>
+<tr>
+<td>Master of Arts in Translation for Professionals</td>
+<td style="text-align: center;">18,000.00</td>
+<td style="text-align: center;">7,000.00</td>
+</tr>
+<tr>
+<td>Master of Business Administration</td>
+<td style="text-align: center;">23,760.00</td>
+<td style="text-align: center;">9,600.00</td>
+</tr>
+<tr>
+<td>Master of Business Administration - Double Degree UK</td>
+<td style="text-align: center;">Refer to website</td>
+<td style="text-align: center;">Refer to website</td>
+</tr>
+<tr>
+<td>Master of Business Administration - Dual Degree Indonesia</td>
+<td style="text-align: center;">Refer to website</td>
+<td style="text-align: center;">Refer to website</td>
+</tr>
+<tr>
+<td>Master of Business Administration (Online)</td>
+<td style="text-align: center;">28,800.00</td>
+<td style="text-align: center;">12,000.00</td>
+</tr>
+<tr>
+<td>Master of Business Administration (Online) - Dual Degree Indonesia</td>
+<td style="text-align: center;">Refer to website</td>
+<td style="text-align: center;">Refer to website</td>
+</tr>
+<tr>
+<td>Master of Business Analytics (also available in Online mode)</td>
+<td style="text-align: center;">18,900.00</td>
+<td style="text-align: center;">7,350.00</td>
+</tr>
+<tr>
+<td>Master of Cognitive Neurosciences</td>
+<td style="text-align: center;">29,900.00</td>
+<td style="text-align: center;">25,300.00</td>
+</tr>
+<tr>
+<td>Master of Communication in Integrated Marketing Communication</td>
+<td style="text-align: center;">18,900.00</td>
+<td style="text-align: center;">8,400.00</td>
+</tr>
+<tr>
+<td>Master of Data Science </td>
+<td style="text-align: center;">19,200.00</td>
+<td style="text-align: center;">8,000.00</td>
+</tr>
+<tr>
+<td>Master of Design in Creative Industry</td>
+<td style="text-align: center;">19,800.00</td>
+<td style="text-align: center;">6,400.00</td>
+</tr>
+<tr>
+<td>Master of Digital Transformation </td>
+<td style="text-align: center;">19,200.00</td>
+<td style="text-align: center;">8,000.00</td>
+</tr>
+<tr>
+<td>Master of Economics Management</td>
+<td style="text-align: center;">18,000.00</td>
+<td style="text-align: center;">8,600.00</td>
+</tr>
+<tr>
+<td>Master of Education in Curriculum Studies</td>
+<td style="text-align: center;">18,000.00</td>
+<td style="text-align: center;">6,800.00</td>
+</tr>
+<tr>
+<td>Master of Education in Education Management and Administration</td>
+<td style="text-align: center;">18,000.00</td>
+<td style="text-align: center;">6,800.00</td>
+</tr>
+<tr>
+<td>Master of Education in Educational Psychology</td>
+<td style="text-align: center;">18,000.00</td>
+<td style="text-align: center;">6,800.00</td>
+</tr>
+<tr>
+<td>Master of Education in Educational Technology</td>
+<td style="text-align: center;">18,000.00</td>
+<td style="text-align: center;">6,800.00</td>
+</tr>
+<tr>
+<td>Master of Education in English Language Education/TESOL</td>
+<td style="text-align: center;">18,000.00</td>
+<td style="text-align: center;">6,800.00</td>
+</tr>
+<tr>
+<td>Master of Education in Science Education</td>
+<td style="text-align: center;">18,000.00</td>
+<td style="text-align: center;">6,800.00</td>
+</tr>
+<tr>
+<td>Master of Environmental Science</td>
+<td style="text-align: center;">18,000.00</td>
+<td style="text-align: center;">6,400.00</td>
+</tr>
+<tr>
+<td>Master of Instructional Multimedia</td>
+<td style="text-align: center;">23,730.00</td>
+<td style="text-align: center;">9,450.00</td>
+</tr>
+<tr>
+<td>Master of Landscape Architecture (Track 1)</td>
+<td style="text-align: center;">18,000.00</td>
+<td style="text-align: center;">6,300.00</td>
+</tr>
+<tr>
+<td>Master of Landscape Architecture (Track 2)</td>
+<td style="text-align: center;">18,360.00</td>
+<td style="text-align: center;">7,560.00</td>
+</tr>
+<tr>
+<td>Master of Landscape Architecture (Track 3)</td>
+<td style="text-align: center;">22,780.00</td>
+<td style="text-align: center;">9,380.00</td>
+</tr>
+<tr>
+<td>Master of Pharmacy in Clinical Pharmacy</td>
+<td style="text-align: center;">18,000.00</td>
+<td style="text-align: center;">7,400.00</td>
+</tr>
+<tr>
+<td>Master of Professional Management (also available in Online mode)</td>
+<td style="text-align: center;">18,900.00</td>
+<td style="text-align: center;">7,350.00</td>
+</tr>
+<tr>
+<td>Master of Psychology (Clinical Psychology) - Joint Degree</td>
+<td style="text-align: center;">38,500.00</td>
+<td style="text-align: center;">38,500.00</td>
+</tr>
+<tr>
+<td>Master of Public Administration</td>
+<td style="text-align: center;">23,100.00</td>
+<td style="text-align: center;">8,800.00</td>
+</tr>
+<tr>
+<td>Master of Public Health</td>
+<td style="text-align: center;">22,600.00</td>
+<td style="text-align: center;">9,000.00</td>
+</tr>
+<tr>
+<td>Master of Science in Building Technology </td>
+<td style="text-align: center;">18,000.00</td>
+<td style="text-align: center;">7,800.00</td>
+</tr>
+<tr>
+<td>Master of Science in Cyber Security</td>
+<td style="text-align: center;">25,200.00</td>
+<td style="text-align: center;">9,450.00</td>
+</tr>
+<tr>
+<td>Master of Science in Clinical Exercise Science</td>
+<td style="text-align: center;">18,600.00</td>
+<td style="text-align: center;">9,000.00</td>
+</tr>
+<tr>
+<td>Master of Science in Geomatics for Disaster Risk Reduction</td>
+<td style="text-align: center;">27,000.00</td>
+<td style="text-align: center;">9,450.00</td>
+</tr>
+<tr>
+<td>Master of Science in Medical Physics</td>
+<td style="text-align: center;">22,600.00</td>
+<td style="text-align: center;">9,000.00</td>
+</tr>
+<tr>
+<td>Master of Science in Project Management </td>
+<td style="text-align: center;">18,040.00</td>
+<td style="text-align: center;">8,800.00</td>
+</tr>
+<tr>
+<td>Master of Science in Solid State Physics </td>
+<td style="text-align: center;">22,600.00</td>
+<td style="text-align: center;">9,000.00</td>
+</tr>
+<tr>
+<td>Master of Science in Teaching of Mathematics </td>
+<td style="text-align: center;">19,350.00</td>
+<td style="text-align: center;">7,955.00</td>
+</tr>
+<tr>
+<td>Masters in Sustainable Development Practice</td>
+<td style="text-align: center;">25,652.00</td>
+<td style="text-align: center;">9,680.00</td>
+</tr>
+</tbody>
+</table></div>
+                
+            
+        
+    
+</div></div></div>            </div>
+            
+
+
+
+
+
+    
+                </li>
+                            <li class="el-item el-item-4 uk-margin-remove-first-child">                
+
+    
+
+
+
+
+
+
+
+
+    
+
+
+
+    <h3 class="el-title uk-margin-top uk-margin-remove-bottom">            Clinical Programmes        </h3>
+
+
+
+
+
+
+
+    
+            
+            <div class="el-sublayout uk-margin-top uk-margin-remove-bottom">            <div class="uk-panel uk-margin"><div class="uk-grid tm-grid-expand uk-child-width-1-1 uk-grid-margin">
+<div class="uk-width-1-1">
+    
+        
+            
+            
+            
+                
+                    <div class="uk-panel uk-margin"><p>Fees shown are the total per programme.</p>
+<table id="customers">
+<tbody>
+<tr>
+<th><span style="color: #ff9900;">Clinical Programmes</span></th>
+<th style="text-align: center;">Malaysian (MYR)         </th>
+<th style="text-align: center;">International  (USD)</th>
+</tr>
+<tr>
+<td>Master of Medicine (Anaesthesiology and Critical Care)</td>
+<td style="text-align: center;">54,400.00</td>
+<td style="text-align: center;">60,000.00</td>
+</tr>
+<tr>
+<td>Master of Medicine (Emergency Medicine)</td>
+<td style="text-align: center;">54,400.00</td>
+<td style="text-align: center;">60,000.00</td>
+</tr>
+<tr>
+<td>Master of Medicine (Family Medicine)</td>
+<td style="text-align: center;">54,400.00</td>
+<td style="text-align: center;">60,000.00</td>
+</tr>
+<tr>
+<td>Master of Medicine (Internal Medicine)</td>
+<td style="text-align: center;">54,400.00</td>
+<td style="text-align: center;">60,000.00</td>
+</tr>
+<tr>
+<td>Master of Medicine (Obstetrics and Gynaecology)</td>
+<td style="text-align: center;">54,400.00</td>
+<td style="text-align: center;">60,000.00</td>
+</tr>
+<tr>
+<td>Master of Medicine (Ophthalmology)</td>
+<td style="text-align: center;">54,400.00</td>
+<td style="text-align: center;">60,000.00</td>
+</tr>
+<tr>
+<td>Master of Medicine (Orthopaedics)</td>
+<td style="text-align: center;">54,400.00</td>
+<td style="text-align: center;">60,000.00</td>
+</tr>
+<tr>
+<td>Master of Medicine (Otorinolaringology, Head and Neck Surgery)</td>
+<td style="text-align: center;">54,400.00</td>
+<td style="text-align: center;">60,000.00</td>
+</tr>
+<tr>
+<td>Master of Medicine (Paediatrics)</td>
+<td style="text-align: center;">54,400.00</td>
+<td style="text-align: center;">60,000.00</td>
+</tr>
+<tr>
+<td>Master of Medicine (Psychiatry)</td>
+<td style="text-align: center;">54,400.00</td>
+<td style="text-align: center;">60,000.00</td>
+</tr>
+<tr>
+<td>Master of Medicine (Radiology)</td>
+<td style="text-align: center;">54,400.00</td>
+<td style="text-align: center;">60,000.00</td>
+</tr>
+<tr>
+<td>Master of Medicine (Surgery)</td>
+<td style="text-align: center;">54,400.00</td>
+<td style="text-align: center;">60,000.00</td>
+</tr>
+<tr>
+<td>Master of Medicine in Nuclear Medicine</td>
+<td style="text-align: center;">54,400.00</td>
+<td style="text-align: center;">60,000.00</td>
+</tr>
+<tr>
+<td>Master of Medicine in Transfusion Medicine</td>
+<td style="text-align: center;">54,400.00</td>
+<td style="text-align: center;">60,000.00</td>
+</tr>
+<tr>
+<td>Master of Pathology (Anatomic Pathology)</td>
+<td style="text-align: center;">54,400.00</td>
+<td style="text-align: center;">60,000.00</td>
+</tr>
+<tr>
+<td>Master of Pathology (Chemical Pathology)</td>
+<td style="text-align: center;">54,400.00</td>
+<td style="text-align: center;">60,000.00</td>
+</tr>
+<tr>
+<td>Master of Pathology (Clinical Immunology)</td>
+<td style="text-align: center;">54,400.00</td>
+<td style="text-align: center;">60,000.00</td>
+</tr>
+<tr>
+<td>Master of Pathology (Haematology)</td>
+<td style="text-align: center;">54,400.00</td>
+<td style="text-align: center;">60,000.00</td>
+</tr>
+<tr>
+<td>Master of Pathology (Medical Genetics)</td>
+<td style="text-align: center;">54,400.00</td>
+<td style="text-align: center;">60,000.00</td>
+</tr>
+<tr>
+<td>Master of Pathology (Medical Microbiology)</td>
+<td style="text-align: center;">54,400.00</td>
+<td style="text-align: center;">60,000.00</td>
+</tr>
+<tr>
+<td>Master of Surgery (Neurosurgery)</td>
+<td style="text-align: center;">54,400.00</td>
+<td style="text-align: center;">60,000.00</td>
+</tr>
+<tr>
+<td>Master of Surgery (Plastic Surgery)</td>
+<td style="text-align: center;">54,400.00</td>
+<td style="text-align: center;">60,000.00</td>
+</tr>
+</tbody>
+</table></div>
+                
+            
+        
+    
+</div></div></div>            </div>
+            
+
+
+
+
+
+    
+                </li>
+                            <li class="el-item el-item-5 uk-margin-remove-first-child">                
+
+    
+
+
+
+
+
+
+
+
+    
+
+
+
+    <h3 class="el-title uk-margin-top uk-margin-remove-bottom">            Research Mode Programmes (PhD / MSc / MA)        </h3>
+
+
+
+
+
+
+
+    
+            
+            <div class="el-sublayout uk-margin-top uk-margin-remove-bottom">            <div class="uk-panel uk-margin"><div class="uk-grid tm-grid-expand uk-child-width-1-1 uk-grid-margin">
+<div class="uk-width-1-1">
+    
+        
+            
+            
+            
+                
+                    <div class="uk-panel uk-margin"><div style="overflow-x: auto;">
+<p>Fees shown are the total per semester.</p>
+<table id="customers">
+<tbody>
+<tr>
+<th rowspan="2"><span style="color: #ff9900;">Research Mode Programmes <br />(PhD / MSc / MA)</span></th>
+<th colspan="2" style="text-align: center;"><span style="color: #ff9900;">Malaysian (MYR)</span></th>
+<th colspan="2" style="text-align: center;"><span style="color: #ff9900;">International (USD)</span></th>
+</tr>
+<tr>
+<th style="text-align: center;">Full Time/sem</th>
+<th style="text-align: center;">Part Time/sem</th>
+<th style="text-align: center;">Full Time/sem</th>
+<th style="text-align: center;">Part Time/sem</th>
+</tr>
+<tr>
+<td>Advanced Medical and Dental Institute</td>
+<td style="text-align: center;">4,200.00</td>
+<td style="text-align: center;">3,585.00</td>
+<td style="text-align: center;">2,500.00</td>
+<td style="text-align: center;">2,130.00</td>
+</tr>
+<tr>
+<td>Analytical Biochemistry Research Centre</td>
+<td style="text-align: center;">4,200.00</td>
+<td style="text-align: center;">3,600.00</td>
+<td style="text-align: center;">1,800.00</td>
+<td style="text-align: center;">1,530.00</td>
+</tr>
+<tr>
+<td>Centre for Chemical Biology</td>
+<td style="text-align: center;">3,350.00</td>
+<td style="text-align: center;">2,775.00</td>
+<td style="text-align: center;">1,800.00</td>
+<td style="text-align: center;">1,530.00</td>
+</tr>
+<tr>
+<td>Centre for Drug Research</td>
+<td style="text-align: center;">4,150.00</td>
+<td style="text-align: center;">3,535.00</td>
+<td style="text-align: center;">2,500.00</td>
+<td style="text-align: center;">2,130.00</td>
+</tr>
+<tr>
+<td>Centre for Global Archaeological Research</td>
+<td style="text-align: center;">2,900.00</td>
+<td style="text-align: center;">2,385.00</td>
+<td style="text-align: center;">1,400.00</td>
+<td style="text-align: center;">1,190.00</td>
+</tr>
+<tr>
+<td>Centre for Global Sustainability Studies (Arts)</td>
+<td style="text-align: center;">3,050.00</td>
+<td style="text-align: center;">2,515.00</td>
+<td style="text-align: center;">1,400.00</td>
+<td style="text-align: center;">1,190.00</td>
+</tr>
+<tr>
+<td>Centre for Global Sustainability Studies (Sciences)</td>
+<td style="text-align: center;">3,550.00</td>
+<td style="text-align: center;">2,975.00</td>
+<td style="text-align: center;">1,850.00</td>
+<td style="text-align: center;">1,570.00</td>
+</tr>
+<tr>
+<td>Centre for Instructional Technology and Multimedia</td>
+<td style="text-align: center;">3,050.00</td>
+<td style="text-align: center;">2,515.00</td>
+<td style="text-align: center;">1,400.00</td>
+<td style="text-align: center;">1,190.00</td>
+</tr>
+<tr>
+<td>Centre for Islamic Development Management Studies</td>
+<td style="text-align: center;">2,900.00</td>
+<td style="text-align: center;">2,385.00</td>
+<td style="text-align: center;">1,400.00</td>
+<td style="text-align: center;">1,190.00</td>
+</tr>
+<tr>
+<td>Centre for Marine and Coastal Studies</td>
+<td style="text-align: center;">3,350.00</td>
+<td style="text-align: center;">2,775.00</td>
+<td style="text-align: center;">1,850.00</td>
+<td style="text-align: center;">1,570.00</td>
+</tr>
+<tr>
+<td>Centre for Policy Research </td>
+<td style="text-align: center;">2,900.00</td>
+<td style="text-align: center;">2,385.00</td>
+<td style="text-align: center;">1,400.00</td>
+<td style="text-align: center;">1,190.00</td>
+</tr>
+<tr>
+<td>Centre for Research on Women &amp; Gender</td>
+<td style="text-align: center;">3,050.00</td>
+<td style="text-align: center;">2,515.00</td>
+<td style="text-align: center;">1,400.00</td>
+<td style="text-align: center;">1,190.00</td>
+</tr>
+<tr>
+<td>Collaborative Microelectronic Design Excellence Centre</td>
+<td style="text-align: center;">3,700.00</td>
+<td style="text-align: center;">3,085.00</td>
+<td style="text-align: center;">1,850.00</td>
+<td style="text-align: center;">1,570.00</td>
+</tr>
+<tr>
+<td>Graduate School of Business</td>
+<td style="text-align: center;">3,910.00</td>
+<td style="text-align: center;">3,325.00</td>
+<td style="text-align: center;">1,600.00</td>
+<td style="text-align: center;">1,440.00</td>
+</tr>
+<tr>
+<td>Institute for Research in Molecular Medicine</td>
+<td style="text-align: center;">4,200.00</td>
+<td style="text-align: center;">3,585.00</td>
+<td style="text-align: center;">2,500.00</td>
+<td style="text-align: center;">2,130.00</td>
+</tr>
+<tr>
+<td>Institute of Nano-Optoelectronics Research &amp; Technology</td>
+<td style="text-align: center;">4,150.00</td>
+<td style="text-align: center;">3,535.00</td>
+<td style="text-align: center;">1,800.00</td>
+<td style="text-align: center;">1,530.00</td>
+</tr>
+<tr>
+<td>Malaysian Institute of Pharmaceuticals &amp; Nutraceuticals</td>
+<td style="text-align: center;">4,150.00</td>
+<td style="text-align: center;">3,535.00</td>
+<td style="text-align: center;">2,500.00</td>
+<td style="text-align: center;">2,130.00</td>
+</tr>
+<tr>
+<td>National Advanced IPv6 Centre</td>
+<td style="text-align: center;">4,150.00</td>
+<td style="text-align: center;">3,535.00</td>
+<td style="text-align: center;">1,850.00</td>
+<td style="text-align: center;">1,570.00</td>
+</tr>
+<tr>
+<td>National Higher Education Research Institute</td>
+<td style="text-align: center;">2,900.00</td>
+<td style="text-align: center;">2,385.00</td>
+<td style="text-align: center;">1,400.00</td>
+<td style="text-align: center;">1,190.00</td>
+</tr>
+<tr>
+<td>National Poison Centre</td>
+<td style="text-align: center;">4,150.00</td>
+<td style="text-align: center;">3,535.00</td>
+<td style="text-align: center;">2,500.00</td>
+<td style="text-align: center;">2,130.00</td>
+</tr>
+<tr>
+<td>River Engineering &amp; Urban Drainage Research Centre</td>
+<td style="text-align: center;">3,700.00</td>
+<td style="text-align: center;">3,085.00</td>
+<td style="text-align: center;">1,850.00</td>
+<td style="text-align: center;">1,570.00</td>
+</tr>
+<tr>
+<td>School of Aerospace Engineering</td>
+<td style="text-align: center;">3,700.00</td>
+<td style="text-align: center;">3,085.00</td>
+<td style="text-align: center;">1,850.00</td>
+<td style="text-align: center;">1,570.00</td>
+</tr>
+<tr>
+<td>School of Arts</td>
+<td style="text-align: center;">3,050.00</td>
+<td style="text-align: center;">2,515.00</td>
+<td style="text-align: center;">1,400.00</td>
+<td style="text-align: center;">1,190.00</td>
+</tr>
+<tr>
+<td>School of Biological Sciences</td>
+<td style="text-align: center;">3,350.00</td>
+<td style="text-align: center;">2,775.00</td>
+<td style="text-align: center;">1,800.00</td>
+<td style="text-align: center;">1,530.00</td>
+</tr>
+<tr>
+<td>School of Chemical Engineering</td>
+<td style="text-align: center;">3,700.00</td>
+<td style="text-align: center;">3,085.00</td>
+<td style="text-align: center;">1,850.00</td>
+<td style="text-align: center;">1,570.00</td>
+</tr>
+<tr>
+<td>School of Chemical Sciences</td>
+<td style="text-align: center;">3,350.00</td>
+<td style="text-align: center;">2,775.00</td>
+<td style="text-align: center;">1,800.00</td>
+<td style="text-align: center;">1,530.00</td>
+</tr>
+<tr>
+<td>School of Civil Engineering</td>
+<td style="text-align: center;">3,700.00</td>
+<td style="text-align: center;">3,085.00</td>
+<td style="text-align: center;">1,850.00</td>
+<td style="text-align: center;">1,570.00</td>
+</tr>
+<tr>
+<td>School of Communication</td>
+<td style="text-align: center;">3,050.00</td>
+<td style="text-align: center;">2,515.00</td>
+<td style="text-align: center;">1,400.00</td>
+<td style="text-align: center;">1,190.00</td>
+</tr>
+<tr>
+<td>School of Computer Sciences</td>
+<td style="text-align: center;">4,150.00</td>
+<td style="text-align: center;">3,535.00</td>
+<td style="text-align: center;">1,850.00</td>
+<td style="text-align: center;">1,570.00</td>
+</tr>
+<tr>
+<td>School of Dental Sciences</td>
+<td style="text-align: center;">6,000.00</td>
+<td style="text-align: center;">5,100.00</td>
+<td style="text-align: center;">2,850.00</td>
+<td style="text-align: center;">2,565.00</td>
+</tr>
+<tr>
+<td>School of Distance Education (Arts)</td>
+<td style="text-align: center;">2,900.00</td>
+<td style="text-align: center;">2,385.00</td>
+<td style="text-align: center;">1,400.00</td>
+<td style="text-align: center;">1,190.00</td>
+</tr>
+<tr>
+<td>School of Distance Education (Sciences)</td>
+<td style="text-align: center;">3,350.00</td>
+<td style="text-align: center;">2,775.00</td>
+<td style="text-align: center;">1,800.00</td>
+<td style="text-align: center;">1,530.00</td>
+</tr>
+<tr>
+<td>School of Educational Studies</td>
+<td style="text-align: center;">3,050.00</td>
+<td style="text-align: center;">2,515.00</td>
+<td style="text-align: center;">1,400.00</td>
+<td style="text-align: center;">1,190.00</td>
+</tr>
+<tr>
+<td>School of Electrical and Electronic Engineering</td>
+<td style="text-align: center;">4,650.00</td>
+<td style="text-align: center;">3,960.00</td>
+<td style="text-align: center;">2,050.00</td>
+<td style="text-align: center;">1,770.00</td>
+</tr>
+<tr>
+<td>School of Health Sciences</td>
+<td style="text-align: center;">4,100.00</td>
+<td style="text-align: center;">3,525.00</td>
+<td style="text-align: center;">2,500.00</td>
+<td style="text-align: center;">2,130.00</td>
+</tr>
+<tr>
+<td>School of Housing, Building and Planning</td>
+<td style="text-align: center;">3,550.00</td>
+<td style="text-align: center;">2,975.00</td>
+<td style="text-align: center;">1,850.00</td>
+<td style="text-align: center;">1,570.00</td>
+</tr>
+<tr>
+<td>School of Humanities</td>
+<td style="text-align: center;">2,900.00</td>
+<td style="text-align: center;">2,385.00</td>
+<td style="text-align: center;">1,400.00</td>
+<td style="text-align: center;">1,190.00</td>
+</tr>
+<tr>
+<td>School of Industrial Technology</td>
+<td style="text-align: center;">3,550.00</td>
+<td style="text-align: center;">2,975.00</td>
+<td style="text-align: center;">1,850.00</td>
+<td style="text-align: center;">1,570.00</td>
+</tr>
+<tr>
+<td>School of Languages, Literacies and Translation</td>
+<td style="text-align: center;">2,900.00</td>
+<td style="text-align: center;">2,385.00</td>
+<td style="text-align: center;">1,400.00 </td>
+<td style="text-align: center;">1,190.00</td>
+</tr>
+<tr>
+<td>School of Management</td>
+<td style="text-align: center;">3,400.00</td>
+<td style="text-align: center;">2,865.00</td>
+<td style="text-align: center;">1,400.00</td>
+<td style="text-align: center;">1,190.00</td>
+</tr>
+<tr>
+<td>School of Materials and Mineral Resources Engineering</td>
+<td style="text-align: center;">3,700.00</td>
+<td style="text-align: center;">3,085.00</td>
+<td style="text-align: center;">1,850.00</td>
+<td style="text-align: center;">1,570.00</td>
+</tr>
+<tr>
+<td>School of Mathematical Sciences</td>
+<td style="text-align: center;">3,350.00</td>
+<td style="text-align: center;">2,775.00</td>
+<td style="text-align: center;">1,800.00</td>
+<td style="text-align: center;">1,530.00</td>
+</tr>
+<tr>
+<td>School of Mechanical Engineering</td>
+<td style="text-align: center;">3,700.00</td>
+<td style="text-align: center;">3,085.00</td>
+<td style="text-align: center;">1,850.00</td>
+<td style="text-align: center;">1,570.00</td>
+</tr>
+<tr>
+<td>School of Medical Sciences</td>
+<td style="text-align: center;">4,200.00</td>
+<td style="text-align: center;">3,585.00</td>
+<td style="text-align: center;">2,500.00</td>
+<td style="text-align: center;">2,130.00</td>
+</tr>
+<tr>
+<td>School of Pharmaceutical Sciences</td>
+<td style="text-align: center;">4,150.00</td>
+<td style="text-align: center;">3,535.00</td>
+<td style="text-align: center;">2,500.00</td>
+<td style="text-align: center;">2,130.00</td>
+</tr>
+<tr>
+<td>School of Physics</td>
+<td style="text-align: center;">3,350.00</td>
+<td style="text-align: center;">2,775.00</td>
+<td style="text-align: center;">1,800.00</td>
+<td style="text-align: center;">1,530.00</td>
+</tr>
+<tr>
+<td>School of Social Sciences</td>
+<td style="text-align: center;">2,900.00</td>
+<td style="text-align: center;">2,385.00</td>
+<td style="text-align: center;">1,400.00</td>
+<td style="text-align: center;">1,190.00</td>
+</tr>
+</tbody>
+</table>
+</div></div>
+                
+            
+        
+    
+</div></div></div>            </div>
+            
+
+
+
+
+
+    
+                </li>
+                            <li class="el-item el-item-6 uk-margin-remove-first-child">                
+
+    
+
+
+
+
+
+
+
+
+    
+
+
+
+    <h3 class="el-title uk-margin-top uk-margin-remove-bottom">            How to calculate your fees        </h3>
+
+
+
+
+
+
+
+    
+            
+            <div class="el-sublayout uk-margin-top uk-margin-remove-bottom">            <div class="uk-panel uk-margin"><div class="uk-grid tm-grid-expand uk-child-width-1-1 uk-grid-margin">
+<div class="uk-width-1-1">
+    
+        
+            
+            
+            
+                
+                    <div class="uk-panel uk-margin"><div><strong> Example for r<span style="font-size: 1rem;">esearch mode programme</span></strong></div>
+<div style="overflow-x: auto;">
+<table id="customers">
+<tbody>
+<tr>
+<th rowspan="2"><span style="color: #ff9900;">Doctor of Philosophy at the School of Management</span></th>
+<th colspan="2" style="text-align: center;"><span style="color: #ff9900;">Malaysian (MYR)</span></th>
+<th colspan="2" style="text-align: center;"><span style="color: #ff9900;">International (USD)</span></th>
+</tr>
+<tr>
+<th style="text-align: center;">Full Time/Sem</th>
+<th style="text-align: center;">Part Time/sem</th>
+<th style="text-align: center;">Full Time/Sem</th>
+<th style="text-align: center;">Part Time/sem</th>
+</tr>
+<tr>
+<td>Estimated semesters to complete the programme</td>
+<td style="text-align: center;">7</td>
+<td style="text-align: center;">10</td>
+<td style="text-align: center;">7</td>
+<td style="text-align: center;">10</td>
+</tr>
+<tr>
+<td>Rate per semester</td>
+<td style="text-align: center;">3400.00</td>
+<td style="text-align: center;">2865.00</td>
+<td style="text-align: center;">1400.00</td>
+<td style="text-align: center;">1190.00</td>
+</tr>
+</tbody>
+</table>
+<p></p>
+<table id="customers">
+<tbody>
+<tr>
+<th rowspan="2"><span style="color: #ff9900;">First semester fees</span></th>
+<th colspan="2" style="text-align: center;"><span style="color: #ff9900;">Malaysian (MYR)</span></th>
+<th colspan="2" style="text-align: center;"><span style="color: #ff9900;">International (USD)</span></th>
+</tr>
+<tr>
+<th style="text-align: center;">Full Time/Sem</th>
+<th style="text-align: center;">Part Time/sem</th>
+<th style="text-align: center;">Full Time/Sem</th>
+<th style="text-align: center;">Part Time/sem</th>
+</tr>
+<tr>
+<td>Registration fee</td>
+<td style="text-align: center;">330.00</td>
+<td style="text-align: center;">330.00</td>
+<td style="text-align: center;">225.00</td>
+<td style="text-align: center;">225.00</td>
+</tr>
+<tr>
+<td>Personal Bond</td>
+<td style="text-align: center;">N/A</td>
+<td style="text-align: center;">N/A</td>
+<td style="text-align: center;">1000.00</td>
+<td style="text-align: center;">1000.00</td>
+</tr>
+<tr>
+<td>LKM111</td>
+<td style="text-align: center;">N/A</td>
+<td style="text-align: center;">N/A</td>
+<td style="text-align: center;">Not chargable <br />(first time)</td>
+<td style="text-align: center;">Not chargable <br />(first time)</td>
+</tr>
+<tr>
+<td>Research Methodology</td>
+<td style="text-align: center;">320.00</td>
+<td style="text-align: center;">320.00</td>
+<td style="text-align: center;">80.00</td>
+<td style="text-align: center;">80.00</td>
+</tr>
+<tr>
+<td>Graduation fee</td>
+<td style="text-align: center;">200.00</td>
+<td style="text-align: center;">200.00</td>
+<td style="text-align: center;">50.00</td>
+<td style="text-align: center;">50.00</td>
+</tr>
+<tr>
+<td>Tuition fee (rate per semester)</td>
+<td style="text-align: center;">3400.00</td>
+<td style="text-align: center;">2865.00</td>
+<td style="text-align: center;">1400.00</td>
+<td style="text-align: center;">1190.00</td>
+</tr>
+<tr>
+<td><strong><span style="color: #ff9900;">Fees to be paid during registration</span></strong></td>
+<td style="text-align: center;"><strong><span style="color: #ff9900;">4250.00</span></strong></td>
+<td style="text-align: center;"><strong><span style="color: #ff9900;">3715.00</span></strong></td>
+<td style="text-align: center;"><strong><span style="color: #ff9900;">2755.00</span></strong></td>
+<td style="text-align: center;"><strong><span style="color: #ff9900;">2545.00</span></strong></td>
+</tr>
+</tbody>
+</table>
+<p></p>
+<table id="customers">
+<tbody>
+<tr>
+<th rowspan="2"><span style="color: #ff9900;">Second semester fees onwards</span></th>
+<th colspan="2" style="text-align: center;"><span style="color: #ff9900;">Malaysian (MYR)</span></th>
+<th colspan="2" style="text-align: center;"><span style="color: #ff9900;">International (USD)</span></th>
+</tr>
+<tr>
+<th style="text-align: center;">Full Time/Sem</th>
+<th style="text-align: center;">Part Time/sem</th>
+<th style="text-align: center;">Full Time/Sem</th>
+<th style="text-align: center;">Part Time/sem</th>
+</tr>
+<tr>
+<td>Tuition fee (rate per semester)</td>
+<td style="text-align: center;">3400.00</td>
+<td style="text-align: center;">2865.00</td>
+<td style="text-align: center;">1400.00</td>
+<td style="text-align: center;">1190.00</td>
+</tr>
+<tr>
+<td><span style="color: #ff9900;"><strong>Fees to be paid during renewal of registration</strong></span></td>
+<td style="text-align: center;"><span style="color: #ff9900;"><strong>3400.00</strong></span></td>
+<td style="text-align: center;"><span style="color: #ff9900;"><strong>2865.00</strong></span></td>
+<td style="text-align: center;"><span style="color: #ff9900;"><strong>1400.00</strong></span></td>
+<td style="text-align: center;"><span style="color: #ff9900;"><strong>1190.00</strong></span></td>
+</tr>
+</tbody>
+</table>
+<p></p>
+<table id="customers">
+<tbody>
+<tr>
+<th rowspan="2"><span style="color: #ff9900;">Final semester fees</span></th>
+<th colspan="2" style="text-align: center;"><span style="color: #ff9900;">Malaysian (MYR)</span></th>
+<th colspan="2" style="text-align: center;"><span style="color: #ff9900;">International (USD)</span></th>
+</tr>
+<tr>
+<th style="text-align: center;">Full Time/Sem</th>
+<th style="text-align: center;">Part Time/sem</th>
+<th style="text-align: center;">Full Time/Sem</th>
+<th style="text-align: center;">Part Time/sem</th>
+</tr>
+<tr>
+<td>Tuition fee (rate per semester)</td>
+<td style="text-align: center;">3400.00</td>
+<td style="text-align: center;">2865.00</td>
+<td style="text-align: center;">1400.00</td>
+<td style="text-align: center;">1190.00</td>
+</tr>
+<tr>
+<td>Thesis Evaluation fee</td>
+<td style="text-align: center;">800.00</td>
+<td style="text-align: center;">800.00</td>
+<td style="text-align: center;">250.00</td>
+<td style="text-align: center;">250.00</td>
+</tr>
+<tr>
+<td><span style="color: #ff9900;"><strong>Fees to be paid during renewal of registration</strong></span></td>
+<td style="text-align: center;"><span style="color: #ff9900;"><strong>4200.00</strong></span></td>
+<td style="text-align: center;"><span style="color: #ff9900;"><strong>3665.00</strong></span></td>
+<td style="text-align: center;"><span style="color: #ff9900;"><strong>1650.00</strong></span></td>
+<td style="text-align: center;"><span style="color: #ff9900;"><strong>1440.00</strong></span></td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<div> <strong>Example for coursework/mixed <span style="font-size: 1rem;">mode programme</span></strong></div>
+<div>
+<table id="customers">
+<tbody>
+<tr>
+<th><span style="color: #ff9900;">Master of Business Analytics</span></th>
+<th style="text-align: center;"><span style="color: #ff9900;">Malaysian (MYR)</span></th>
+<th style="text-align: center;"><span style="color: #ff9900;">International (USD)</span></th>
+</tr>
+<tr>
+<td>Graduation units</td>
+<td colspan="2" style="text-align: center;">42 </td>
+</tr>
+<tr>
+<td>Minimum semester to graduate</td>
+<td colspan="2" style="text-align: center;">2 </td>
+</tr>
+<tr>
+<td>Rate per unit</td>
+<td style="text-align: center;">RM450.00</td>
+<td style="text-align: center;">USD175.00</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div> </div>
+<div>
+<table id="customers">
+<tbody>
+<tr>
+<th><span style="color: #ff9900;">First semester fees</span></th>
+<th style="text-align: center;"><span style="color: #ff9900;">Malaysian (MYR)</span></th>
+<th style="text-align: center;"><span style="color: #ff9900;">International (USD)</span></th>
+</tr>
+<tr>
+<td>Registration fee</td>
+<td style="text-align: center;">330.00</td>
+<td style="text-align: center;">225.00</td>
+</tr>
+<tr>
+<td>Personal Bond</td>
+<td style="text-align: center;">N/A</td>
+<td style="text-align: center;">1000.00</td>
+</tr>
+<tr>
+<td>LKM111</td>
+<td style="text-align: center;">N/A</td>
+<td style="text-align: center;">Not chargable <br />(first time)</td>
+</tr>
+<tr>
+<td>Graduation fee</td>
+<td style="text-align: center;">200.00</td>
+<td style="text-align: center;">50.00</td>
+</tr>
+<tr>
+<td>Tuition fee (rate per unit x 20 units)</td>
+<td style="text-align: center;">9000.00</td>
+<td style="text-align: center;">3500.00</td>
+</tr>
+<tr>
+<td><span style="color: #ff9900;"><strong>Fees to be paid during registration</strong></span></td>
+<td style="text-align: center;"><span style="color: #ff9900;"><strong>9530.00</strong></span></td>
+<td style="text-align: center;"><span style="color: #ff9900;"><strong>4775.00</strong></span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div> </div>
+<div>
+<table id="customers">
+<tbody>
+<tr>
+<th><span style="color: #ff9900;">Second (final) semester fees</span></th>
+<th style="text-align: center;"><span style="color: #ff9900;">Malaysian (MYR)</span></th>
+<th style="text-align: center;"><span style="color: #ff9900;">International (USD)</span></th>
+</tr>
+<tr>
+<td>Tuition fee (rate per unit x 22 units)</td>
+<td style="text-align: center;">9900.00</td>
+<td style="text-align: center;">3850.00</td>
+</tr>
+<tr>
+<td><span style="color: #ff9900;"><strong>Fees to be paid during <br />renewal of registration</strong></span></td>
+<td style="text-align: center;"><span style="color: #ff9900;"><strong>9900.00</strong></span></td>
+<td style="text-align: center;"><span style="color: #ff9900;"><strong>3850.00</strong></span></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div></div>
+                
+            
+        
+    
+</div></div></div>            </div>
+            
+
+
+
+
+
+    
+                </li>
+                        </ul>        </div>
+        </div>
+            </div>    </div>
+
+    
+<script type="text/javascript">
+<!--
+UIkit.util.ready(function() {
+	
+	let viewed 				= false;
+	let	init   				= setInterval(autoplayInit, 1000);
+	
+	function autoplayInit() {
+		
+		//wait once the browser tab become active
+		if(document.hidden === false && viewed === false) {
+			
+			viewed = true;
+			clearInterval(init);
+				
+			let {$, $$} 			= UIkit.util,
+				switcherElement 	= $("#uid-a63c6 ul.el-nav.uk-tab"),
+				switcherStyle     	= "tab";
+				switcherCustomNav	= document.querySelectorAll(".fs-switcher-toggle");
+				
+			function switcherToggle() {
+				if (switcherStyle === 'accordion'){UIkit.accordion(switcherElement).toggle(tabID);}
+				else if (switcherStyle === 'tab'){UIkit.tab(switcherElement).show(tabID);}
+				else {UIkit.switcher(switcherElement).show(tabID);};
+				
+				console.log(switcherElement);
+				
+			}
+			
+			if(document.location.hash){
+				if(switcherElement.querySelector('a[href="' + document.location.hash + '" i].fs-switcher-nav-link')){
+					tabID = switcherElement.querySelector('a[href="'+document.location.hash+'" i].fs-switcher-nav-link')?.parentNode.dataset.id-1;
+					switcherToggle();
+				}
+				
+			}
+			
+			switcherCustomNav.forEach((customNav, i) => {
+				customNav.querySelectorAll("a").forEach((link, i) => {
+					
+					//set uk-active class if url hash
+					if(document.location.hash && customNav.querySelector('a[href="'+document.location.hash+'" i]')){
+						customNav.querySelector('a[href="'+document.location.hash+'" i]').classList.add('uk-active');
+					}
+					
+					link.removeAttribute('uk-scroll');
+					link.addEventListener("click", function(e) {
+						
+						//toggle uk-active class
+						if(customNav.hasAttribute('id')){
+							
+							customNav.querySelectorAll("a").forEach((l, i) => {
+								l.classList.remove('uk-active');
+								
+								if(l.href === link.href){
+									l.classList.add('uk-active');
+									link.classList.add('uk-active');
+									
+									if(!customNav.classList.contains('fs-no-scroll')) {
+										setTimeout(function() {
+											let target = link.href.split("#")[1];
+											targetEL = switcherElement.querySelector('a[href="#'+target+'" i]');
+											UIkit.scroll('', {offset: 30}).scrollTo(targetEL);
+										}, 500);
+									}
+									
+								}
+								
+							});
+							
+						}
+						
+						else {
+							switcherCustomNav.forEach((customNav, i) => {
+								customNav.querySelectorAll("a").forEach((l, i) => {
+									l.classList.remove('uk-active');
+									
+									if(l.href === link.href){
+										l.classList.add('uk-active');
+										link.classList.add('uk-active');
+										
+										if(!customNav.classList.contains('fs-no-scroll')) {
+											setTimeout(function() {
+												let target = link.href.split("#")[1];
+												targetEL = switcherElement.querySelector('a[href="#'+target+'" i]');
+												UIkit.scroll('', {offset: 30}).scrollTo(targetEL);
+											}, 500);
+										}
+									}
+									
+								});
+							});
+						}
+						
+						customNavHash = "#"+link.href.split("#")[1];
+						
+						//checking if the custom nav has an id to connect a selected switcher
+						if(customNav.hasAttribute('id') && document.querySelector('#fs-' + customNav.getAttribute('id'))){
+							targetSwitcher = document.querySelector('#fs-' + customNav.getAttribute('id'));
+							if(targetSwitcher) {
+								tabID=targetSwitcher.querySelector('a[href="' +customNavHash+ '" i].fs-switcher-nav-link')?.parentNode.dataset.id - 1;
+								switcherToggle();
+							}
+						}
+						else{
+							switcherElement = $( "#uid-a63c6 ul.el-nav.uk-tab" );
+							tabID=switcherElement.querySelector('a[href="' +customNavHash+ '" i].fs-switcher-nav-link')?.parentNode.dataset.id - 1;
+							
+							if (!isNaN(tabID) && switcherElement.querySelector('a[href="' +customNavHash+ '" i].fs-switcher-nav-link')) {
+								switcherToggle();
+							}
+						}
+					
+					}, false);
+				});
+			}); //switcher custom nav
+			
+		}; //browser tab active
+	}; //autoplay init
+});
+//-->
+</script>
+
+<h1>        Disclaimers    </h1><div class="uk-panel uk-margin"><ul>
+<li>The above rates are effective from Academic Session 2025/2026.</li>
+<li>Fees are subject to change.</li>
+<li>Final fees should be confirmed before any commitment to be made.</li>
+<li>Any discrepancies on the fees, the correct amount by USM Bursary are to be used.</li>
+</ul></div>
+                
+            
+        
+    
+</div></div>
+                                </div>                
+            
+        
+        </div>
+    
+</div>
+
+                
+            </main>
+
+            
+<div id="module-129" class="builder"><!-- Builder #module-129 -->
+<div class="uk-section-default uk-preserve-color uk-light">
+        <div data-src="/images/admission/Footer-V2.png" data-sources="[{&quot;type&quot;:&quot;image\/webp&quot;,&quot;srcset&quot;:&quot;\/templates\/yootheme\/cache\/06\/Footer-V2-0673ad5d.webp 4005w&quot;,&quot;sizes&quot;:&quot;(max-aspect-ratio: 4005\/2255) 178vh&quot;}]" uk-img class="uk-background-norepeat uk-background-cover uk-background-center-center uk-section" style="background-color: #101010;">    
+        
+        
+        
+            
+                                <div class="uk-container">                
+                    <div class="uk-grid tm-grid-expand uk-grid-margin" uk-grid>
+<div class="uk-width-1-3@m">
+    
+        
+            
+            
+            
+                
+                    
+<h1 class="uk-h2 uk-font-default">        Postgraduate    </h1><div class="uk-panel uk-margin"><p><strong>Institute of Postgraduate Studies</strong> <br />Universiti Sains Malaysia, <br />11800 Penang, Malaysia. <br /><br />Tel: +604-653 6309 / 6027 / 2606 / 2946 / 2958<br />Fax: +604-653 2931</p></div>
+<div class="uk-margin">
+    
+    
+        
+        
+<a class="el-content uk-button uk-button-default" href="https://admission.usm.my/form/mandarin">
+    
+        Registration Form (Mandarin)    
+    
+</a>
+
+        
+    
+    
+</div>
+
+                
+            
+        
+    
+</div>
+<div class="uk-width-2-3@m">
+    
+        
+            
+            
+            
+                
+                    
+<h1 class="uk-h2">        Disclaimer    </h1><div class="uk-panel uk-margin uk-text-justify"><p>The institution shall not be held responsible for any discrepancies arising from the translations. Users are encouraged to refer to the official documents and seek clarification from the relevant authorities if necessary.In the event of any discrepancy or inconsistency between the English, Bahasa Melayu, and Mandarin versions of this website, the English version shall prevail.</p></div>
+<div class="uk-margin" uk-scrollspy="target: [uk-scrollspy-class];">    <ul class="uk-child-width-auto uk-grid-small uk-flex-inline uk-flex-middle" uk-grid>
+            <li class="el-item">
+<a class="el-link uk-icon-button" href="/admission_ips@usm.my" rel="noreferrer"><span uk-icon="icon: mail;"></span></a></li>
+            <li class="el-item">
+<a class="el-link uk-icon-button" href="https://www.facebook.com/USMforinternational" rel="noreferrer"><span uk-icon="icon: facebook;"></span></a></li>
+            <li class="el-item">
+<a class="el-link uk-icon-button" href="https://www.tiktok.com/@admissionsusm" rel="noreferrer"><span uk-icon="icon: tiktok;"></span></a></li>
+            <li class="el-item">
+<a class="el-link uk-icon-button" href="https://www.instagram.com/studentadmissionsusm/" rel="noreferrer"><span uk-icon="icon: instagram;"></span></a></li>
+            <li class="el-item">
+<a class="el-link uk-icon-button" href="/index.php/login-usm" rel="noreferrer"><span uk-icon="icon: cog;"></span></a></li>
+    
+    </ul></div>
+<div class="uk-panel uk-text-left">
+    
+    <div class="db8sitelastmodified">
+        Last Update: Thursday 18 June 2026.</div>
+
+</div>
+                
+            
+        
+    
+</div></div><div class="uk-grid tm-grid-expand uk-child-width-1-1 uk-grid-margin">
+<div class="uk-width-1-1">
+    
+        
+            
+            
+            
+                
+                    <div class="uk-panel uk-text-center"><p><span>All Rights Reserved © Universiti Sains Malaysia</span></p></div>
+                
+            
+        
+    
+</div></div>
+                                </div>                
+            
+        
+        </div>
+    
+</div></div>
+
+            
+        </div>
+
+        
+        
+
+    </body>
+</html>

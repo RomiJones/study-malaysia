@@ -1,0 +1,406 @@
+{
+  "auditName": "UTM postgraduate study type, study arrangement, tuition, GPA and intake display unification audit",
+  "checkedAt": "2026-06-18T13:15:53.591Z",
+  "apiBaseUrl": "http://localhost:3000/api",
+  "webBaseUrl": "http://127.0.0.1:5173",
+  "institution": {
+    "code": "UTM",
+    "name": "Universiti Teknologi Malaysia",
+    "universityId": 8,
+    "officialDomains": [
+      "utm.my",
+      "admission.utm.my"
+    ],
+    "applicantScope": "international postgraduate applicants",
+    "academicSession": "2026/2027 where published by UTM sources"
+  },
+  "normalizationPolicy": {
+    "teachingType": "Primary academic/programme mode. Public Chinese labels: 授课型, 研究型, 混合型.",
+    "studyArrangement": "Delivery/attendance arrangement only. Public Chinese labels include 开放与远程学习, 全日制, 非全日制. It must not replace the primary teaching type.",
+    "feePublicStatus": "Internal statuses matched-official, calculated-from-official-rate, official-rate-verified and official-non-scalar display publicly as 官方已核验. Formula and non-scalar explanations remain in detail notes.",
+    "doctoralGpa": "If UTM publishes a doctoral admission route without a unified numeric CGPA, the record is not treated as missing GPA as long as official academic requirement text is present."
+  },
+  "levels": {
+    "master": {
+      "level": "master",
+      "expectedFromApiTotal": 153,
+      "listRows": 153,
+      "detailRows": 153,
+      "publicDisplayStatusCounts": {
+        "ready": 153
+      },
+      "rawStudyModeCounts": {
+        "Coursework / Open and Distance Learning": 24,
+        "Research": 46,
+        "Coursework": 77,
+        "Mixed Mode": 6
+      },
+      "interpretedTeachingTypeCounts": {
+        "Coursework": 101,
+        "Research": 46,
+        "Mixed Mode": 6
+      },
+      "interpretedStudyArrangementCounts": {
+        "Open and Distance Learning": 24,
+        "none": 129
+      },
+      "internalFeeAuditStatusCounts": {
+        "official-non-scalar": 1,
+        "matched-official": 138,
+        "calculated-from-official-rate": 14
+      },
+      "publicFeeStatusZhCounts": {
+        "官方已核验": 153
+      },
+      "academicRequirementCoverage": {
+        "rowsWithOfficialAcademicRequirement": 153,
+        "rowsWithoutOfficialAcademicRequirement": 0,
+        "rowsWithNumericGpa": 153,
+        "rowsWithoutNumericGpa": 0,
+        "note": "UTM master records expose structured CGPA/GPA where the official rule provides a numeric threshold."
+      },
+      "intakeCoverage": {
+        "rowsWithIntakeMonths": 153,
+        "rowsWithoutIntakeMonths": 0
+      },
+      "parityChecks": {
+        "missingDetails": 0,
+        "rowsWithoutTeachingType": 0,
+        "scheduleOnlyRows": 0,
+        "rowsWithoutTuitionDisplay": 0,
+        "rowsWithoutOfficialAcademicRequirement": 0,
+        "listDetailMismatches": 0
+      },
+      "exceptions": {
+        "missingDetails": [],
+        "rowsWithoutTeachingType": [],
+        "scheduleOnlyRows": [],
+        "rowsWithoutTuitionDisplay": [],
+        "rowsWithoutAcademicRequirement": [],
+        "listDetailMismatches": []
+      },
+      "samples": [
+        {
+          "code": "UTM-M-073",
+          "slug": "utm-master-official-2026-073-master-in-education-specialization-chemistry",
+          "nameEn": "Master in Education Specialization : Chemistry",
+          "level": "master",
+          "rawStudyMode": "Coursework / Open and Distance Learning",
+          "teachingType": "Coursework",
+          "teachingTypeZh": "授课型",
+          "studyArrangement": "Open and Distance Learning",
+          "studyArrangementZh": "开放与远程学习",
+          "tuitionDisplay": "MYR 34,650 calculated total tuition",
+          "tuitionAmount": 34650,
+          "internalFeeAuditStatus": "calculated-from-official-rate",
+          "publicFeeStatusZh": "官方已核验",
+          "gpa": 2.5,
+          "hasOfficialAcademicRequirement": true,
+          "intakeMonths": [
+            "February",
+            "September"
+          ],
+          "officialSourceUrl": "https://admission.utm.my/int-postgraduate-school-of-education/",
+          "officialFeeSourceUrl": "https://odl.utm.my/fees-structure/"
+        },
+        {
+          "code": "UTM-M-124",
+          "slug": "utm-master-official-2026-124-master-of-science-in-engineering-mathematics",
+          "nameEn": "Master of Science in Engineering Mathematics",
+          "level": "master",
+          "rawStudyMode": "Mixed Mode",
+          "teachingType": "Mixed Mode",
+          "teachingTypeZh": "混合型",
+          "studyArrangement": "",
+          "studyArrangementZh": "",
+          "tuitionDisplay": "MYR 28,500 total programme fee",
+          "tuitionAmount": 28500,
+          "internalFeeAuditStatus": "matched-official",
+          "publicFeeStatusZh": "官方已核验",
+          "gpa": 2.75,
+          "hasOfficialAcademicRequirement": true,
+          "intakeMonths": [
+            "February",
+            "September"
+          ],
+          "officialSourceUrl": "https://admission.utm.my/int-faculty-of-science/",
+          "officialFeeSourceUrl": "https://admission.utm.my/fees-pg-inter/"
+        },
+        {
+          "code": "UTM-M-152",
+          "slug": "utm-master-official-2026-152-master-of-philosophy-generic",
+          "nameEn": "Master of Philosophy (Generic)",
+          "level": "master",
+          "rawStudyMode": "Research",
+          "teachingType": "Research",
+          "teachingTypeZh": "研究型",
+          "studyArrangement": "",
+          "studyArrangementZh": "",
+          "tuitionDisplay": "MYR 28,400 total programme fee",
+          "tuitionAmount": 28400,
+          "internalFeeAuditStatus": "matched-official",
+          "publicFeeStatusZh": "官方已核验",
+          "gpa": 2.75,
+          "hasOfficialAcademicRequirement": true,
+          "intakeMonths": [
+            "February",
+            "September"
+          ],
+          "officialSourceUrl": "https://admission.utm.my/int-malaysia-japan-international-institute-of-technology/",
+          "officialFeeSourceUrl": "https://admission.utm.my/fees-pg-inter/"
+        },
+        {
+          "code": "UTM-M-153",
+          "slug": "utm-master-official-2026-153-master-in-sustainable-systems",
+          "nameEn": "Master in Sustainable Systems",
+          "level": "master",
+          "rawStudyMode": "Coursework / Open and Distance Learning",
+          "teachingType": "Coursework",
+          "teachingTypeZh": "授课型",
+          "studyArrangement": "Open and Distance Learning",
+          "studyArrangementZh": "开放与远程学习",
+          "tuitionDisplay": "Official fee variants: MYR 31,440 / MYR 38,790",
+          "tuitionAmount": null,
+          "internalFeeAuditStatus": "official-non-scalar",
+          "publicFeeStatusZh": "官方已核验",
+          "gpa": 2.5,
+          "hasOfficialAcademicRequirement": true,
+          "intakeMonths": [
+            "February",
+            "September"
+          ],
+          "officialSourceUrl": "https://admission.utm.my/int-malaysia-japan-international-institute-of-technology/",
+          "officialFeeSourceUrl": "https://admission.utm.my/odl/"
+        }
+      ]
+    },
+    "phd": {
+      "level": "phd",
+      "expectedFromApiTotal": 55,
+      "listRows": 55,
+      "detailRows": 55,
+      "publicDisplayStatusCounts": {
+        "ready": 55
+      },
+      "rawStudyModeCounts": {
+        "Research": 49,
+        "Mixed Mode": 4,
+        "Mixed Mode / Full-Time / Part-Time": 1,
+        "Mixed mode / Open and Distance Learning": 1
+      },
+      "interpretedTeachingTypeCounts": {
+        "Research": 49,
+        "Mixed Mode": 6
+      },
+      "interpretedStudyArrangementCounts": {
+        "none": 53,
+        "Full-Time / Part-Time": 1,
+        "Open and Distance Learning": 1
+      },
+      "internalFeeAuditStatusCounts": {
+        "matched-official": 54,
+        "calculated-from-official-rate": 1
+      },
+      "publicFeeStatusZhCounts": {
+        "官方已核验": 55
+      },
+      "academicRequirementCoverage": {
+        "rowsWithOfficialAcademicRequirement": 55,
+        "rowsWithoutOfficialAcademicRequirement": 0,
+        "rowsWithNumericGpa": 0,
+        "rowsWithoutNumericGpa": 55,
+        "note": "UTM doctoral records publish official doctoral admission requirements as master-degree/research-route requirements; no unified numeric GPA is published in the current official evidence."
+      },
+      "intakeCoverage": {
+        "rowsWithIntakeMonths": 55,
+        "rowsWithoutIntakeMonths": 0
+      },
+      "parityChecks": {
+        "missingDetails": 0,
+        "rowsWithoutTeachingType": 0,
+        "scheduleOnlyRows": 0,
+        "rowsWithoutTuitionDisplay": 0,
+        "rowsWithoutOfficialAcademicRequirement": 0,
+        "listDetailMismatches": 0
+      },
+      "exceptions": {
+        "missingDetails": [],
+        "rowsWithoutTeachingType": [],
+        "scheduleOnlyRows": [],
+        "rowsWithoutTuitionDisplay": [],
+        "rowsWithoutAcademicRequirement": [],
+        "listDetailMismatches": []
+      },
+      "samples": [
+        {
+          "code": "UTM-PHD-005",
+          "slug": "utm-phd-official-2026-005-doctor-of-professional-practice-dpp",
+          "nameEn": "Doctor of Professional Practice (DPP)",
+          "level": "phd",
+          "rawStudyMode": "Mixed mode / Open and Distance Learning",
+          "teachingType": "Mixed Mode",
+          "teachingTypeZh": "混合型",
+          "studyArrangement": "Open and Distance Learning",
+          "studyArrangementZh": "开放与远程学习",
+          "tuitionDisplay": "MYR 71,490 calculated standard minimum total tuition",
+          "tuitionAmount": 71490,
+          "internalFeeAuditStatus": "calculated-from-official-rate",
+          "publicFeeStatusZh": "官方已核验",
+          "gpa": 0,
+          "hasOfficialAcademicRequirement": true,
+          "intakeMonths": [
+            "February",
+            "September"
+          ],
+          "officialSourceUrl": "https://admission.utm.my/odl/",
+          "officialFeeSourceUrl": "https://admission.utm.my/odl/"
+        },
+        {
+          "code": "UTM-PHD-023",
+          "slug": "utm-phd-official-2026-023-doctor-in-education-edd",
+          "nameEn": "Doctor in Education (EdD)",
+          "level": "phd",
+          "rawStudyMode": "Mixed Mode / Full-Time / Part-Time",
+          "teachingType": "Mixed Mode",
+          "teachingTypeZh": "混合型",
+          "studyArrangement": "Full-Time / Part-Time",
+          "studyArrangementZh": "全日制 / 非全日制",
+          "tuitionDisplay": "MYR 49,100 total programme fee",
+          "tuitionAmount": 49100,
+          "internalFeeAuditStatus": "matched-official",
+          "publicFeeStatusZh": "官方已核验",
+          "gpa": 0,
+          "hasOfficialAcademicRequirement": true,
+          "intakeMonths": [
+            "March",
+            "October"
+          ],
+          "officialSourceUrl": "https://fest.utm.my/edd-programmes/",
+          "officialFeeSourceUrl": "https://fest.utm.my/edd-programmes/"
+        },
+        {
+          "code": "UTM-PHD-001",
+          "slug": "utm-phd-official-2026-001-doctor-of-philosophy-generic",
+          "nameEn": "Doctor of Philosophy (Generic)",
+          "level": "phd",
+          "rawStudyMode": "Research",
+          "teachingType": "Research",
+          "teachingTypeZh": "研究型",
+          "studyArrangement": "",
+          "studyArrangementZh": "",
+          "tuitionDisplay": "MYR 51,600 total programme fee",
+          "tuitionAmount": 51600,
+          "internalFeeAuditStatus": "matched-official",
+          "publicFeeStatusZh": "官方已核验",
+          "gpa": 0,
+          "hasOfficialAcademicRequirement": true,
+          "intakeMonths": [
+            "February",
+            "September"
+          ],
+          "officialSourceUrl": "https://admission.utm.my/int-postgraduate-school-of-biomedical-engineering-health-science/",
+          "officialFeeSourceUrl": "https://admission.utm.my/fees-pg-inter/"
+        },
+        {
+          "code": "UTM-PHD-050",
+          "slug": "utm-phd-official-2026-050-doctor-of-business-administration",
+          "nameEn": "Doctor of Business Administration",
+          "level": "phd",
+          "rawStudyMode": "Mixed Mode",
+          "teachingType": "Mixed Mode",
+          "teachingTypeZh": "混合型",
+          "studyArrangement": "",
+          "studyArrangementZh": "",
+          "tuitionDisplay": "MYR 60,154 total programme fee",
+          "tuitionAmount": 60154,
+          "internalFeeAuditStatus": "matched-official",
+          "publicFeeStatusZh": "官方已核验",
+          "gpa": 0,
+          "hasOfficialAcademicRequirement": true,
+          "intakeMonths": [
+            "February",
+            "September"
+          ],
+          "officialSourceUrl": "https://admission.utm.my/int-azman-hashim-international-business-school/",
+          "officialFeeSourceUrl": "https://admission.utm.my/fees-pg-inter/"
+        }
+      ]
+    }
+  },
+  "combinedSummary": {
+    "totalRows": 208,
+    "masterRows": 153,
+    "phdRows": 55,
+    "rowsWithoutTeachingType": 0,
+    "scheduleOnlyRows": 0,
+    "rowsWithoutTuitionDisplay": 0,
+    "rowsWithoutOfficialAcademicRequirement": 0,
+    "listDetailMismatches": 0,
+    "publicReadyRows": 208,
+    "publicFeeStatusZhCounts": {
+      "官方已核验": 208,
+      "官方未公布": 0
+    }
+  },
+  "decision": {
+    "status": "passed",
+    "userFacingConclusion": "UTM 硕博专业详情页已按统一口径区分“就读类型”和“学习安排”；列表与详情的学费、费用状态、入学要求和开学月份字段一致，未发现 schedule-only 或详情缺失问题。"
+  },
+  "browserVerification": {
+    "checkedAt": "2026-06-18T13:19:40.700Z",
+    "locale": "zh-CN",
+    "pages": [
+      {
+        "slug": "utm-master-official-2026-073-master-in-education-specialization-chemistry",
+        "url": "http://127.0.0.1:5173/programs/utm-master-official-2026-073-master-in-education-specialization-chemistry",
+        "expectedVisibleText": [
+          "就读类型: 授课型",
+          "学习安排: 开放与远程学习",
+          "RM 34,650",
+          "费用状态: 官方已核验",
+          "建议 GPA: 2.5+",
+          "开学月份: 2月 / 9月",
+          "官网未公布"
+        ],
+        "obsoleteTextNotObserved": [
+          "待官方确认"
+        ]
+      },
+      {
+        "slug": "utm-phd-official-2026-005-doctor-of-professional-practice-dpp",
+        "url": "http://127.0.0.1:5173/programs/utm-phd-official-2026-005-doctor-of-professional-practice-dpp",
+        "expectedVisibleText": [
+          "就读类型: 混合型",
+          "学习安排: 开放与远程学习",
+          "RM 71,490",
+          "费用状态: 官方已核验",
+          "建议 GPA: 官网未公布具体 GPA/CGPA",
+          "开学月份: 2月 / 9月"
+        ],
+        "obsoleteTextNotObserved": [
+          "待官方确认"
+        ]
+      },
+      {
+        "slug": "utm-phd-official-2026-023-doctor-in-education-edd",
+        "url": "http://127.0.0.1:5173/programs/utm-phd-official-2026-023-doctor-in-education-edd",
+        "expectedVisibleText": [
+          "就读类型: 混合型",
+          "学习安排: 全日制 / 非全日制",
+          "RM 49,100",
+          "费用状态: 官方已核验",
+          "建议 GPA: 官网未公布具体 GPA/CGPA",
+          "开学月份: 3月 / 10月"
+        ],
+        "obsoleteTextNotObserved": [
+          "开放与远程学习 as EdD schedule",
+          "待官方确认"
+        ]
+      }
+    ]
+  },
+  "frontendDisplayFixes": [
+    "Chinese public label keeps 就读类型 for primary programme mode and 学习安排 for ODL/full-time/part-time delivery arrangement.",
+    "Program detail empty curriculum/career fallback now displays 官网未公布 instead of 待官方确认; empty specialization chips are not rendered."
+  ]
+}

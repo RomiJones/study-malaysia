@@ -1,0 +1,2523 @@
+{
+  "schemaVersion": 2,
+  "officialDomains": [
+    "monash.edu.my",
+    "monash.edu"
+  ],
+  "scope": {
+    "universityCode": "MUM",
+    "collectionScope": "full",
+    "levels": [
+      "bachelor",
+      "master",
+      "phd"
+    ],
+    "applicantScope": "international",
+    "academicSession": "2026"
+  },
+  "authorization": "publish",
+  "counts": {
+    "directoryOccurrences": 65,
+    "uniqueOfficialEntries": 60,
+    "canonicalProgrammes": 60,
+    "ready": 60,
+    "needsReview": 0,
+    "notAvailableForInternational": 0,
+    "byLevel": {
+      "bachelor": 36,
+      "master": 17,
+      "phd": 7
+    }
+  },
+  "coverage": {
+    "identity": {
+      "covered": 60,
+      "unpublished": 0,
+      "review": 0
+    },
+    "faculty": {
+      "covered": 60,
+      "unpublished": 0,
+      "review": 0
+    },
+    "studyMode": {
+      "covered": 60,
+      "unpublished": 0,
+      "review": 0
+    },
+    "campus": {
+      "covered": 60,
+      "unpublished": 0,
+      "review": 0
+    },
+    "duration": {
+      "covered": 60,
+      "unpublished": 0,
+      "review": 0
+    },
+    "intake": {
+      "covered": 60,
+      "unpublished": 0,
+      "review": 0
+    },
+    "internationalEligibility": {
+      "covered": 60,
+      "unpublished": 0,
+      "review": 0
+    },
+    "academicRequirement": {
+      "covered": 60,
+      "unpublished": 0,
+      "review": 0
+    },
+    "languageRequirement": {
+      "covered": 60,
+      "unpublished": 0,
+      "review": 0
+    },
+    "applicationDocuments": {
+      "covered": 60,
+      "unpublished": 0,
+      "review": 0
+    },
+    "fee": {
+      "covered": 60,
+      "unpublished": 0,
+      "review": 0
+    },
+    "evidence": {
+      "covered": 60,
+      "unpublished": 0,
+      "review": 0
+    },
+    "courseSetting": {
+      "covered": 50,
+      "unpublished": 10,
+      "review": 0
+    },
+    "careerDirections": {
+      "covered": 55,
+      "unpublished": 5,
+      "review": 0
+    },
+    "studyType": {
+      "covered": 60,
+      "unpublished": 0,
+      "review": 0
+    },
+    "studyArrangement": {
+      "covered": 60,
+      "unpublished": 0,
+      "review": 0
+    },
+    "localization": {
+      "covered": 60,
+      "unpublished": 0,
+      "review": 0
+    },
+    "institutionProfile": {
+      "covered": 1,
+      "unpublished": 0,
+      "review": 0
+    }
+  },
+  "sources": [
+    {
+      "id": "institution-homepage",
+      "url": "https://www.monash.edu.my/",
+      "sourceType": "official-page",
+      "role": "institution-authority",
+      "fields": [
+        "institution profile",
+        "official website"
+      ],
+      "retrievedAt": "2026-06-19T15:02:57Z",
+      "academicSession": "2026",
+      "status": "transport-blocked",
+      "localPath": "data/imports/mum/2026-06-19/official-audit/raw/institution-homepage.blocked.md",
+      "sha256": "212246758dbe40f5a491329a0c0826938c2a1fc5a3555c5f28598fa9235be592",
+      "transport": "jina-reader",
+      "parser": "tmp/collect_mum_official.py"
+    },
+    {
+      "id": "undergraduate-directory",
+      "url": "https://www.monash.edu.my/study/undergraduate",
+      "sourceType": "official-page",
+      "role": "canonical",
+      "fields": [
+        "bachelor programme directory"
+      ],
+      "retrievedAt": "2026-06-19T15:02:57Z",
+      "academicSession": "2026",
+      "status": "cached",
+      "localPath": "data/imports/mum/2026-06-19/official-audit/raw/undergraduate-directory.md",
+      "sha256": "84ba0545004f4b1a532485387ede1f78aaad2439fce8aebb95fdea67f8bf07dc",
+      "transport": "jina-reader",
+      "parser": "tmp/collect_mum_official.py"
+    },
+    {
+      "id": "postgraduate-directory",
+      "url": "https://www.monash.edu.my/study/postgraduate-and-research",
+      "sourceType": "official-page",
+      "role": "canonical",
+      "fields": [
+        "master and phd programme directory"
+      ],
+      "retrievedAt": "2026-06-19T15:02:57Z",
+      "academicSession": "2026",
+      "status": "cached",
+      "localPath": "data/imports/mum/2026-06-19/official-audit/raw/postgraduate-directory.md",
+      "sha256": "381b2afab655fe379b2cedeaafd95ec2da2803c1b6c7fce83b548c4919d66762",
+      "transport": "jina-reader",
+      "parser": "tmp/collect_mum_official.py"
+    },
+    {
+      "id": "undergraduate-fees",
+      "url": "https://www.monash.edu.my/study/undergraduate/fees",
+      "sourceType": "official-page",
+      "role": "field-authority",
+      "fields": [
+        "bachelor duration",
+        "bachelor fees"
+      ],
+      "retrievedAt": "2026-06-19T15:02:57Z",
+      "academicSession": "2026",
+      "status": "cached",
+      "localPath": "data/imports/mum/2026-06-19/official-audit/raw/undergraduate-fees.md",
+      "sha256": "a994aab47b875f71860d11713cf93cd1e0aca57cf71052675979b83140795471",
+      "transport": "jina-reader",
+      "parser": "tmp/collect_mum_official.py"
+    },
+    {
+      "id": "postgraduate-fees",
+      "url": "https://www.monash.edu.my/study/postgraduate-and-research/fees",
+      "sourceType": "official-page",
+      "role": "field-authority",
+      "fields": [
+        "master duration",
+        "phd duration",
+        "postgraduate fees"
+      ],
+      "retrievedAt": "2026-06-19T15:02:57Z",
+      "academicSession": "2026",
+      "status": "cached",
+      "localPath": "data/imports/mum/2026-06-19/official-audit/raw/postgraduate-fees.md",
+      "sha256": "dec2da34bd0a20ec1984ab76aedaacf6aad0cc55aeeb6aaa99d827db5c3120a0",
+      "transport": "jina-reader",
+      "parser": "tmp/collect_mum_official.py"
+    },
+    {
+      "id": "english-tests",
+      "url": "https://www.monash.edu.my/study/entry-requirements/english/tests",
+      "sourceType": "official-page",
+      "role": "field-authority",
+      "fields": [
+        "English proficiency tests"
+      ],
+      "retrievedAt": "2026-06-19T15:02:57Z",
+      "academicSession": "2026",
+      "status": "cached",
+      "localPath": "data/imports/mum/2026-06-19/official-audit/raw/english-tests.md",
+      "sha256": "070e7c83f2c2ff025e02c318bd3a47463a34a52cf553609834e05eaa4db4c64a",
+      "transport": "jina-reader",
+      "parser": "tmp/collect_mum_official.py"
+    },
+    {
+      "id": "postgraduate-coursework-requirements",
+      "url": "https://www.monash.edu.my/study/entry-requirements/academic/postgraduate-coursework",
+      "sourceType": "official-page",
+      "role": "field-authority",
+      "fields": [
+        "postgraduate coursework requirements"
+      ],
+      "retrievedAt": "2026-06-19T15:02:57Z",
+      "academicSession": "2026",
+      "status": "cached",
+      "localPath": "data/imports/mum/2026-06-19/official-audit/raw/postgraduate-coursework-requirements.md",
+      "sha256": "19a5389d194c4c638972122520c90d4ea77ade2ee36b9659fedd408730a31172",
+      "transport": "jina-reader",
+      "parser": "tmp/collect_mum_official.py"
+    },
+    {
+      "id": "international-students",
+      "url": "https://www.monash.edu.my/study/entry-requirements/international-students2",
+      "sourceType": "official-page",
+      "role": "field-authority",
+      "fields": [
+        "international applicant guidance"
+      ],
+      "retrievedAt": "2026-06-19T15:02:57Z",
+      "academicSession": "2026",
+      "status": "transport-blocked",
+      "localPath": "data/imports/mum/2026-06-19/official-audit/raw/international-students.blocked.md",
+      "sha256": "8de5d38fc81b8a7ee9d0441cd421906c3e8cbc0b53349f729bf36dd2c303e1b0",
+      "transport": "jina-reader",
+      "parser": "tmp/collect_mum_official.py"
+    },
+    {
+      "id": "application-form",
+      "url": "https://www.monash.edu.my/study/apply/application-form",
+      "sourceType": "official-page",
+      "role": "field-authority",
+      "fields": [
+        "application route"
+      ],
+      "retrievedAt": "2026-06-19T15:02:57Z",
+      "academicSession": "2026",
+      "status": "transport-blocked",
+      "localPath": "data/imports/mum/2026-06-19/official-audit/raw/application-form.blocked.md",
+      "sha256": "1974a2ad936ce1f236143157221406b392155bccc8b8b277a8142682076b76d3",
+      "transport": "jina-reader",
+      "parser": "tmp/collect_mum_official.py"
+    },
+    {
+      "id": "detail-mum-ug-arts-social-scienc-bachelor-of-arts-and-social-sciences-01",
+      "url": "https://www.monash.edu.my/study/undergraduate/arts-social-sciences/bachelor-arts-social-sciences",
+      "sourceType": "official-page",
+      "role": "field-authority",
+      "fields": [
+        "programme identity",
+        "duration",
+        "intake",
+        "fees",
+        "requirements",
+        "course setting",
+        "careers"
+      ],
+      "retrievedAt": "2026-06-19T15:02:57Z",
+      "academicSession": "2026",
+      "status": "cached",
+      "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ug-arts-social-scienc-bachelor-of-arts-and-social-sciences-01.md",
+      "sha256": "6a2b8d9e9f5da63cc9c757ee377ffc64182942189494808de2ccc5f15683d9cd",
+      "transport": "jina-reader",
+      "parser": "tmp/collect_mum_official.py"
+    },
+    {
+      "id": "detail-mum-ug-arts-social-scienc-bachelor-of-digital-media-and-communication-02",
+      "url": "https://www.monash.edu.my/study/undergraduate/arts-social-sciences/bachelor-of-digital-media-and-communication",
+      "sourceType": "official-page",
+      "role": "field-authority",
+      "fields": [
+        "programme identity",
+        "duration",
+        "intake",
+        "fees",
+        "requirements",
+        "course setting",
+        "careers"
+      ],
+      "retrievedAt": "2026-06-19T15:02:57Z",
+      "academicSession": "2026",
+      "status": "cached",
+      "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ug-arts-social-scienc-bachelor-of-digital-media-and-communication-02.md",
+      "sha256": "8512d5a6c9938eeb86506aa397c781c50075d8836d7fdd05f810e8fed29c304e",
+      "transport": "jina-reader",
+      "parser": "tmp/collect_mum_official.py"
+    },
+    {
+      "id": "detail-mum-ug-arts-social-scienc-bachelor-of-arts-honours-03",
+      "url": "https://www.monash.edu.my/study/undergraduate/arts-social-sciences/bachelor-arts-honours",
+      "sourceType": "official-page",
+      "role": "field-authority",
+      "fields": [
+        "programme identity",
+        "duration",
+        "intake",
+        "fees",
+        "requirements",
+        "course setting",
+        "careers"
+      ],
+      "retrievedAt": "2026-06-19T15:02:57Z",
+      "academicSession": "2026",
+      "status": "cached",
+      "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ug-arts-social-scienc-bachelor-of-arts-honours-03.md",
+      "sha256": "a2027afde5581cb7e8636af0db6eb8bc8e2d9830f89529aec4f66981e794892f",
+      "transport": "jina-reader",
+      "parser": "tmp/collect_mum_official.py"
+    },
+    {
+      "id": "detail-mum-ug-business-bachelor-of-business-and-commerce-04",
+      "url": "https://www.monash.edu.my/study/undergraduate/business/bachelor-business-commerce",
+      "sourceType": "official-page",
+      "role": "field-authority",
+      "fields": [
+        "programme identity",
+        "duration",
+        "intake",
+        "fees",
+        "requirements",
+        "course setting",
+        "careers"
+      ],
+      "retrievedAt": "2026-06-19T15:02:57Z",
+      "academicSession": "2026",
+      "status": "transport-blocked",
+      "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ug-business-bachelor-of-business-and-commerce-04.blocked.md",
+      "sha256": "9dccc0391268a1d94b068e849b9f855f9072da029f5a8964e6c769764da02f3c",
+      "transport": "jina-reader",
+      "parser": "tmp/collect_mum_official.py"
+    },
+    {
+      "id": "detail-mum-ug-business-bachelor-in-actuarial-analytics-05",
+      "url": "https://www.monash.edu.my/study/undergraduate/business/bachelor-in-actuarial-analytics",
+      "sourceType": "official-page",
+      "role": "field-authority",
+      "fields": [
+        "programme identity",
+        "duration",
+        "intake",
+        "fees",
+        "requirements",
+        "course setting",
+        "careers"
+      ],
+      "retrievedAt": "2026-06-19T15:02:57Z",
+      "academicSession": "2026",
+      "status": "cached",
+      "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ug-business-bachelor-in-actuarial-analytics-05.md",
+      "sha256": "c4e3b942d2e9ad8344412b5fbfbd9771547b3ccbb0a2cede17228c1b99b5fbe1",
+      "transport": "jina-reader",
+      "parser": "tmp/collect_mum_official.py"
+    },
+    {
+      "id": "detail-mum-ug-business-bachelor-of-digital-business-06",
+      "url": "https://www.monash.edu.my/study/undergraduate/business/bachelor-of-digital-business",
+      "sourceType": "official-page",
+      "role": "field-authority",
+      "fields": [
+        "programme identity",
+        "duration",
+        "intake",
+        "fees",
+        "requirements",
+        "course setting",
+        "careers"
+      ],
+      "retrievedAt": "2026-06-19T15:02:57Z",
+      "academicSession": "2026",
+      "status": "transport-blocked",
+      "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ug-business-bachelor-of-digital-business-06.blocked.md",
+      "sha256": "19670d6d6068dcb041b7bd4316188abf27a6e31ce414c11e83d68d470f17065f",
+      "transport": "jina-reader",
+      "parser": "tmp/collect_mum_official.py"
+    },
+    {
+      "id": "detail-mum-ug-business-bachelor-of-business-and-commerce-honours-07",
+      "url": "https://www.monash.edu.my/study/undergraduate/business/bachelor-business-commerce-honours",
+      "sourceType": "official-page",
+      "role": "field-authority",
+      "fields": [
+        "programme identity",
+        "duration",
+        "intake",
+        "fees",
+        "requirements",
+        "course setting",
+        "careers"
+      ],
+      "retrievedAt": "2026-06-19T15:02:57Z",
+      "academicSession": "2026",
+      "status": "cached",
+      "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ug-business-bachelor-of-business-and-commerce-honours-07.md",
+      "sha256": "4e3797585e4e2fc3cee1550d5b54f271888c46142b317a8b156ad785e6eeab3a",
+      "transport": "jina-reader",
+      "parser": "tmp/collect_mum_official.py"
+    },
+    {
+      "id": "detail-mum-ug-business-bachelor-of-business-and-commerce-and-bachel-08",
+      "url": "https://www.monash.edu.my/study/undergraduate/business/bachelor-business-commerce-bachelor-computer-science",
+      "sourceType": "official-page",
+      "role": "field-authority",
+      "fields": [
+        "programme identity",
+        "duration",
+        "intake",
+        "fees",
+        "requirements",
+        "course setting",
+        "careers"
+      ],
+      "retrievedAt": "2026-06-19T15:02:57Z",
+      "academicSession": "2026",
+      "status": "transport-blocked",
+      "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ug-business-bachelor-of-business-and-commerce-and-bachel-08.blocked.md",
+      "sha256": "bf3010cf5b30e60a889cc6d5f74fd57da73e04a1a6e2aae0c0959a536a005b1e",
+      "transport": "jina-reader",
+      "parser": "tmp/collect_mum_official.py"
+    },
+    {
+      "id": "detail-mum-ug-business-bachelor-of-business-and-commerce-and-bachel-09",
+      "url": "https://www.monash.edu.my/study/undergraduate/business/bachelor-business-commerce-bachelor-communication",
+      "sourceType": "official-page",
+      "role": "field-authority",
+      "fields": [
+        "programme identity",
+        "duration",
+        "intake",
+        "fees",
+        "requirements",
+        "course setting",
+        "careers"
+      ],
+      "retrievedAt": "2026-06-19T15:02:57Z",
+      "academicSession": "2026",
+      "status": "transport-blocked",
+      "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ug-business-bachelor-of-business-and-commerce-and-bachel-09.blocked.md",
+      "sha256": "303085784f8a1029bdd8648460d2eaf4a379beb068d00263a14a3b3fe10297c0",
+      "transport": "jina-reader",
+      "parser": "tmp/collect_mum_official.py"
+    },
+    {
+      "id": "detail-mum-ug-engineering-bachelor-of-biomedical-engineering-honours-10",
+      "url": "https://www.monash.edu.my/study/undergraduate/engineering/bachelor-of-biomedical-engineering-honours",
+      "sourceType": "official-page",
+      "role": "field-authority",
+      "fields": [
+        "programme identity",
+        "duration",
+        "intake",
+        "fees",
+        "requirements",
+        "course setting",
+        "careers"
+      ],
+      "retrievedAt": "2026-06-19T15:02:57Z",
+      "academicSession": "2026",
+      "status": "cached",
+      "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ug-engineering-bachelor-of-biomedical-engineering-honours-10.md",
+      "sha256": "ab648e05f3486c061ff589d8e97d1b5e94e8889ec045dc3ef14d40ce86f1b7de",
+      "transport": "jina-reader",
+      "parser": "tmp/collect_mum_official.py"
+    },
+    {
+      "id": "detail-mum-ug-engineering-bachelor-of-chemical-engineering-honours-11",
+      "url": "https://www.monash.edu.my/study/undergraduate/engineering/bachelor-of-engineering-honours-in-chemical-engineering",
+      "sourceType": "official-page",
+      "role": "field-authority",
+      "fields": [
+        "programme identity",
+        "duration",
+        "intake",
+        "fees",
+        "requirements",
+        "course setting",
+        "careers"
+      ],
+      "retrievedAt": "2026-06-19T15:02:57Z",
+      "academicSession": "2026",
+      "status": "cached",
+      "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ug-engineering-bachelor-of-chemical-engineering-honours-11.md",
+      "sha256": "8d8b63a8425a52b7571c86218dbd2e6e36708a084b7f5052fa236a85b786dcf6",
+      "transport": "jina-reader",
+      "parser": "tmp/collect_mum_official.py"
+    },
+    {
+      "id": "detail-mum-ug-engineering-bachelor-of-civil-engineering-honours-12",
+      "url": "https://www.monash.edu.my/study/undergraduate/engineering/bachelor-of-engineering-honours-in-civil-engineering",
+      "sourceType": "official-page",
+      "role": "field-authority",
+      "fields": [
+        "programme identity",
+        "duration",
+        "intake",
+        "fees",
+        "requirements",
+        "course setting",
+        "careers"
+      ],
+      "retrievedAt": "2026-06-19T15:02:57Z",
+      "academicSession": "2026",
+      "status": "cached",
+      "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ug-engineering-bachelor-of-civil-engineering-honours-12.md",
+      "sha256": "d376b3e3c5d54423ddd39643dc9fe75545b417a3778d0ba1b19a6f2b1b1a69fa",
+      "transport": "jina-reader",
+      "parser": "tmp/collect_mum_official.py"
+    },
+    {
+      "id": "detail-mum-ug-engineering-bachelor-of-electrical-and-computer-systems--13",
+      "url": "https://www.monash.edu.my/study/undergraduate/engineering/bachelor-of-engineering-honours-in-electrical-and-computer-systems-engineering",
+      "sourceType": "official-page",
+      "role": "field-authority",
+      "fields": [
+        "programme identity",
+        "duration",
+        "intake",
+        "fees",
+        "requirements",
+        "course setting",
+        "careers"
+      ],
+      "retrievedAt": "2026-06-19T15:02:57Z",
+      "academicSession": "2026",
+      "status": "cached",
+      "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ug-engineering-bachelor-of-electrical-and-computer-systems--13.md",
+      "sha256": "4ca01024fa316cbe2cd93e05a3de7525378cfea5c0e0780a19229af98d95946d",
+      "transport": "jina-reader",
+      "parser": "tmp/collect_mum_official.py"
+    },
+    {
+      "id": "detail-mum-ug-engineering-bachelor-of-materials-engineering-honours-14",
+      "url": "https://www.monash.edu.my/study/undergraduate/engineering/bachelor-of-materials-engineering-honours",
+      "sourceType": "official-page",
+      "role": "field-authority",
+      "fields": [
+        "programme identity",
+        "duration",
+        "intake",
+        "fees",
+        "requirements",
+        "course setting",
+        "careers"
+      ],
+      "retrievedAt": "2026-06-19T15:02:57Z",
+      "academicSession": "2026",
+      "status": "cached",
+      "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ug-engineering-bachelor-of-materials-engineering-honours-14.md",
+      "sha256": "085a961d17baa70d6dcf60ed3629135cca15420200a887a9b8e3b5529a5dc977",
+      "transport": "jina-reader",
+      "parser": "tmp/collect_mum_official.py"
+    },
+    {
+      "id": "detail-mum-ug-engineering-bachelor-of-mechanical-engineering-honours-15",
+      "url": "https://www.monash.edu.my/study/undergraduate/engineering/bachelor-of-engineering-honours-in-mechanical-engineering",
+      "sourceType": "official-page",
+      "role": "field-authority",
+      "fields": [
+        "programme identity",
+        "duration",
+        "intake",
+        "fees",
+        "requirements",
+        "course setting",
+        "careers"
+      ],
+      "retrievedAt": "2026-06-19T15:02:57Z",
+      "academicSession": "2026",
+      "status": "cached",
+      "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ug-engineering-bachelor-of-mechanical-engineering-honours-15.md",
+      "sha256": "146d32df2893796804c8f71e42e9d6718a83a38cc6ac04d74a8319c1765fc402",
+      "transport": "jina-reader",
+      "parser": "tmp/collect_mum_official.py"
+    },
+    {
+      "id": "detail-mum-ug-engineering-bachelor-of-robotics-and-mechatronics-engine-16",
+      "url": "https://www.monash.edu.my/study/undergraduate/engineering/bachelor-of-engineering-honours-in-mechatronics-engineering",
+      "sourceType": "official-page",
+      "role": "field-authority",
+      "fields": [
+        "programme identity",
+        "duration",
+        "intake",
+        "fees",
+        "requirements",
+        "course setting",
+        "careers"
+      ],
+      "retrievedAt": "2026-06-19T15:02:57Z",
+      "academicSession": "2026",
+      "status": "transport-blocked",
+      "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ug-engineering-bachelor-of-robotics-and-mechatronics-engine-16.blocked.md",
+      "sha256": "2b9faf749120f6a084342600851b8d670b51fa89c356c944b2722235ec9d79f2",
+      "transport": "jina-reader",
+      "parser": "tmp/collect_mum_official.py"
+    },
+    {
+      "id": "detail-mum-ug-engineering-bachelor-of-software-engineering-honours-17",
+      "url": "https://www.monash.edu.my/study/undergraduate/engineering/bachelor-of-software-engineering-honours",
+      "sourceType": "official-page",
+      "role": "field-authority",
+      "fields": [
+        "programme identity",
+        "duration",
+        "intake",
+        "fees",
+        "requirements",
+        "course setting",
+        "careers"
+      ],
+      "retrievedAt": "2026-06-19T15:02:57Z",
+      "academicSession": "2026",
+      "status": "transport-blocked",
+      "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ug-engineering-bachelor-of-software-engineering-honours-17.blocked.md",
+      "sha256": "e850e48132c99f36ac17dc6b2e54db72db2dff3649e1076b3cdcb79740df064d",
+      "transport": "jina-reader",
+      "parser": "tmp/collect_mum_official.py"
+    },
+    {
+      "id": "detail-mum-ug-information-techno-bachelor-of-computer-science-18",
+      "url": "https://www.monash.edu.my/study/undergraduate/information-technology/bachelor-computer-science",
+      "sourceType": "official-page",
+      "role": "field-authority",
+      "fields": [
+        "programme identity",
+        "duration",
+        "intake",
+        "fees",
+        "requirements",
+        "course setting",
+        "careers"
+      ],
+      "retrievedAt": "2026-06-19T15:02:57Z",
+      "academicSession": "2026",
+      "status": "cached",
+      "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ug-information-techno-bachelor-of-computer-science-18.md",
+      "sha256": "f13cf0bce1794697958fbd470892f02a8e4b465bc941a5a48df85a57388a47ba",
+      "transport": "jina-reader",
+      "parser": "tmp/collect_mum_official.py"
+    },
+    {
+      "id": "detail-mum-ug-information-techno-bachelor-of-computer-science-in-artificial-i-19",
+      "url": "https://www.monash.edu.my/study/undergraduate/information-technology/bachelor-of-computer-science-in-artificial-intelligence",
+      "sourceType": "official-page",
+      "role": "field-authority",
+      "fields": [
+        "programme identity",
+        "duration",
+        "intake",
+        "fees",
+        "requirements",
+        "course setting",
+        "careers"
+      ],
+      "retrievedAt": "2026-06-19T15:02:57Z",
+      "academicSession": "2026",
+      "status": "transport-blocked",
+      "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ug-information-techno-bachelor-of-computer-science-in-artificial-i-19.blocked.md",
+      "sha256": "f50e8f85af0a0efa42151eb92dbbf04b635e9d824a07f1ad470e4cea7971ebd0",
+      "transport": "jina-reader",
+      "parser": "tmp/collect_mum_official.py"
+    },
+    {
+      "id": "detail-mum-ug-information-techno-bachelor-of-computer-science-in-data-science-20",
+      "url": "https://www.monash.edu.my/study/undergraduate/information-technology/bachelor-of-computer-science-in-data-science",
+      "sourceType": "official-page",
+      "role": "field-authority",
+      "fields": [
+        "programme identity",
+        "duration",
+        "intake",
+        "fees",
+        "requirements",
+        "course setting",
+        "careers"
+      ],
+      "retrievedAt": "2026-06-19T15:02:57Z",
+      "academicSession": "2026",
+      "status": "transport-blocked",
+      "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ug-information-techno-bachelor-of-computer-science-in-data-science-20.blocked.md",
+      "sha256": "2225df877fc1aa387505be8eb56c4d29b17fddd91e47c66938089c99be931136",
+      "transport": "jina-reader",
+      "parser": "tmp/collect_mum_official.py"
+    },
+    {
+      "id": "detail-mum-ug-information-techno-bachelor-of-computer-science-honours-21",
+      "url": "https://www.monash.edu.my/study/undergraduate/information-technology/bachelor-of-computer-science-honours",
+      "sourceType": "official-page",
+      "role": "field-authority",
+      "fields": [
+        "programme identity",
+        "duration",
+        "intake",
+        "fees",
+        "requirements",
+        "course setting",
+        "careers"
+      ],
+      "retrievedAt": "2026-06-19T15:02:57Z",
+      "academicSession": "2026",
+      "status": "transport-blocked",
+      "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ug-information-techno-bachelor-of-computer-science-honours-21.blocked.md",
+      "sha256": "b73ce3891cbdc8fcecc8a1ad61003c407c4bf5a8b74dcb5b4bd6d0c129c3776c",
+      "transport": "jina-reader",
+      "parser": "tmp/collect_mum_official.py"
+    },
+    {
+      "id": "detail-mum-ug-medicine-and-healt-bachelor-of-medical-science-and-doctor-of-me-22",
+      "url": "https://www.monash.edu.my/study/undergraduate/jeffrey-cheah-school-medicine-health-sciences/bachelor-medical-science-doctor-medicine",
+      "sourceType": "official-page",
+      "role": "field-authority",
+      "fields": [
+        "programme identity",
+        "duration",
+        "intake",
+        "fees",
+        "requirements",
+        "course setting",
+        "careers"
+      ],
+      "retrievedAt": "2026-06-19T15:02:57Z",
+      "academicSession": "2026",
+      "status": "transport-blocked",
+      "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ug-medicine-and-healt-bachelor-of-medical-science-and-doctor-of-me-22.blocked.md",
+      "sha256": "2bebaeb23b98bb0e72dfd577005e247beb57fa2ff8965e7548dbd127751d141c",
+      "transport": "jina-reader",
+      "parser": "tmp/collect_mum_official.py"
+    },
+    {
+      "id": "detail-mum-ug-medicine-and-healt-bachelor-of-psychology-23",
+      "url": "https://www.monash.edu.my/study/undergraduate/jeffrey-cheah-school-medicine-health-sciences/bachelor-of-psychology",
+      "sourceType": "official-page",
+      "role": "field-authority",
+      "fields": [
+        "programme identity",
+        "duration",
+        "intake",
+        "fees",
+        "requirements",
+        "course setting",
+        "careers"
+      ],
+      "retrievedAt": "2026-06-19T15:02:57Z",
+      "academicSession": "2026",
+      "status": "transport-blocked",
+      "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ug-medicine-and-healt-bachelor-of-psychology-23.blocked.md",
+      "sha256": "4fd036f20e2ac8f96d75a2315fe6520099a938f1239122c7038b3ddeece2bf90",
+      "transport": "jina-reader",
+      "parser": "tmp/collect_mum_official.py"
+    },
+    {
+      "id": "detail-mum-ug-medicine-and-healt-bachelor-of-psychology-and-business-24",
+      "url": "https://www.monash.edu.my/study/undergraduate/jeffrey-cheah-school-medicine-health-sciences/bachelor-psychological-science-business",
+      "sourceType": "official-page",
+      "role": "field-authority",
+      "fields": [
+        "programme identity",
+        "duration",
+        "intake",
+        "fees",
+        "requirements",
+        "course setting",
+        "careers"
+      ],
+      "retrievedAt": "2026-06-19T15:02:57Z",
+      "academicSession": "2026",
+      "status": "transport-blocked",
+      "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ug-medicine-and-healt-bachelor-of-psychology-and-business-24.blocked.md",
+      "sha256": "7063fa5765bcd10cd1f94adb885938e1ccdc8da42e2683c02ca28eadff5f3383",
+      "transport": "jina-reader",
+      "parser": "tmp/collect_mum_official.py"
+    },
+    {
+      "id": "detail-mum-ug-medicine-and-healt-bachelor-of-human-nutrition-25",
+      "url": "https://www.monash.edu.my/study/undergraduate/jeffrey-cheah-school-medicine-health-sciences/bachelor-of-human-nutrition",
+      "sourceType": "official-page",
+      "role": "field-authority",
+      "fields": [
+        "programme identity",
+        "duration",
+        "intake",
+        "fees",
+        "requirements",
+        "course setting",
+        "careers"
+      ],
+      "retrievedAt": "2026-06-19T15:02:57Z",
+      "academicSession": "2026",
+      "status": "transport-blocked",
+      "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ug-medicine-and-healt-bachelor-of-human-nutrition-25.blocked.md",
+      "sha256": "77e0ee0827de1a4fc70271178df39cdfc02f96a907c189b77b0c0fcd5cc16e81",
+      "transport": "jina-reader",
+      "parser": "tmp/collect_mum_official.py"
+    },
+    {
+      "id": "detail-mum-ug-medicine-and-healt-bachelor-of-health-sciences-honours-26",
+      "url": "https://www.monash.edu.my/study/undergraduate/jeffrey-cheah-school-medicine-health-sciences/bachelor-of-health-sciences-honours",
+      "sourceType": "official-page",
+      "role": "field-authority",
+      "fields": [
+        "programme identity",
+        "duration",
+        "intake",
+        "fees",
+        "requirements",
+        "course setting",
+        "careers"
+      ],
+      "retrievedAt": "2026-06-19T15:02:57Z",
+      "academicSession": "2026",
+      "status": "transport-blocked",
+      "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ug-medicine-and-healt-bachelor-of-health-sciences-honours-26.blocked.md",
+      "sha256": "8c5781d4c0d87218d72a46a16ade516d57ddcaacd18d29cbbb9d2516804c35f4",
+      "transport": "jina-reader",
+      "parser": "tmp/collect_mum_official.py"
+    },
+    {
+      "id": "detail-mum-ug-medicine-and-healt-bachelor-of-medical-science-honours-27",
+      "url": "https://www.monash.edu.my/study/undergraduate/jeffrey-cheah-school-medicine-health-sciences/bachelor-medical-science-honours",
+      "sourceType": "official-page",
+      "role": "field-authority",
+      "fields": [
+        "programme identity",
+        "duration",
+        "intake",
+        "fees",
+        "requirements",
+        "course setting",
+        "careers"
+      ],
+      "retrievedAt": "2026-06-19T15:02:57Z",
+      "academicSession": "2026",
+      "status": "transport-blocked",
+      "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ug-medicine-and-healt-bachelor-of-medical-science-honours-27.blocked.md",
+      "sha256": "f291ccd3570c486afaa839500a149940f595b23bbd193d1c21d3fa8ad0321ea8",
+      "transport": "jina-reader",
+      "parser": "tmp/collect_mum_official.py"
+    },
+    {
+      "id": "detail-mum-ug-medicine-and-healt-bachelor-of-psychology-honours-28",
+      "url": "https://www.monash.edu.my/study/undergraduate/jeffrey-cheah-school-medicine-health-sciences/bachelor-psychology-honours",
+      "sourceType": "official-page",
+      "role": "field-authority",
+      "fields": [
+        "programme identity",
+        "duration",
+        "intake",
+        "fees",
+        "requirements",
+        "course setting",
+        "careers"
+      ],
+      "retrievedAt": "2026-06-19T15:02:57Z",
+      "academicSession": "2026",
+      "status": "transport-blocked",
+      "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ug-medicine-and-healt-bachelor-of-psychology-honours-28.blocked.md",
+      "sha256": "9f036fc7cc7ae4c571bdbc61227c1d4f76cc64d28bdf43d9f0feab31e40bf588",
+      "transport": "jina-reader",
+      "parser": "tmp/collect_mum_official.py"
+    },
+    {
+      "id": "detail-mum-ug-pharmacy-course-du-bachelor-of-pharmacy-honours-29",
+      "url": "https://www.monash.edu.my/study/undergraduate/pharmacy/bachelor-pharmacy",
+      "sourceType": "official-page",
+      "role": "field-authority",
+      "fields": [
+        "programme identity",
+        "duration",
+        "intake",
+        "fees",
+        "requirements",
+        "course setting",
+        "careers"
+      ],
+      "retrievedAt": "2026-06-19T15:02:57Z",
+      "academicSession": "2026",
+      "status": "transport-blocked",
+      "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ug-pharmacy-course-du-bachelor-of-pharmacy-honours-29.blocked.md",
+      "sha256": "93f7d3c56d610573dbe53f0caa5b2c2a86d47510c6faf284ecb8c58acc64a2cd",
+      "transport": "jina-reader",
+      "parser": "tmp/collect_mum_official.py"
+    },
+    {
+      "id": "detail-mum-ug-pharmacy-course-du-bachelor-of-pharmaceutical-science-30",
+      "url": "https://www.monash.edu.my/study/undergraduate/pharmacy/bachelor-of-pharmaceutical-science",
+      "sourceType": "official-page",
+      "role": "field-authority",
+      "fields": [
+        "programme identity",
+        "duration",
+        "intake",
+        "fees",
+        "requirements",
+        "course setting",
+        "careers"
+      ],
+      "retrievedAt": "2026-06-19T15:02:57Z",
+      "academicSession": "2026",
+      "status": "transport-blocked",
+      "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ug-pharmacy-course-du-bachelor-of-pharmaceutical-science-30.blocked.md",
+      "sha256": "00590533d3895826c0028c1553d35792bccb6594867cf9233dd94770608c4849",
+      "transport": "jina-reader",
+      "parser": "tmp/collect_mum_official.py"
+    },
+    {
+      "id": "detail-mum-ug-pharmacy-course-du-bachelor-of-pharmaceutical-science-honours-31",
+      "url": "https://www.monash.edu.my/study/undergraduate/pharmacy/bachelor-of-pharmaceutical-science-honours",
+      "sourceType": "official-page",
+      "role": "field-authority",
+      "fields": [
+        "programme identity",
+        "duration",
+        "intake",
+        "fees",
+        "requirements",
+        "course setting",
+        "careers"
+      ],
+      "retrievedAt": "2026-06-19T15:02:57Z",
+      "academicSession": "2026",
+      "status": "transport-blocked",
+      "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ug-pharmacy-course-du-bachelor-of-pharmaceutical-science-honours-31.blocked.md",
+      "sha256": "7517e38d7ea4a658953604ce923e64c36c95a7569d36603942495112bc9f34ae",
+      "transport": "jina-reader",
+      "parser": "tmp/collect_mum_official.py"
+    },
+    {
+      "id": "detail-mum-ug-science-course-dur-bachelor-of-science-32",
+      "url": "https://www.monash.edu.my/study/undergraduate/science/bachelor-science",
+      "sourceType": "official-page",
+      "role": "field-authority",
+      "fields": [
+        "programme identity",
+        "duration",
+        "intake",
+        "fees",
+        "requirements",
+        "course setting",
+        "careers"
+      ],
+      "retrievedAt": "2026-06-19T15:02:57Z",
+      "academicSession": "2026",
+      "status": "transport-blocked",
+      "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ug-science-course-dur-bachelor-of-science-32.blocked.md",
+      "sha256": "5a605092a23c15f8e2672f8e48c1032abc31428c6b2daa32f986aead532b7052",
+      "transport": "jina-reader",
+      "parser": "tmp/collect_mum_official.py"
+    },
+    {
+      "id": "detail-mum-ug-science-course-dur-bachelor-of-applied-data-science-33",
+      "url": "https://www.monash.edu.my/study/undergraduate/science/bachelor-of-applied-data-science",
+      "sourceType": "official-page",
+      "role": "field-authority",
+      "fields": [
+        "programme identity",
+        "duration",
+        "intake",
+        "fees",
+        "requirements",
+        "course setting",
+        "careers"
+      ],
+      "retrievedAt": "2026-06-19T15:02:57Z",
+      "academicSession": "2026",
+      "status": "transport-blocked",
+      "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ug-science-course-dur-bachelor-of-applied-data-science-33.blocked.md",
+      "sha256": "6e7c5411457b0afd1c0fdb014bb8b12259912b32b14e369fa71a1e9d75603921",
+      "transport": "jina-reader",
+      "parser": "tmp/collect_mum_official.py"
+    },
+    {
+      "id": "detail-mum-ug-science-course-dur-bachelor-of-food-science-and-technology-34",
+      "url": "https://www.monash.edu.my/study/undergraduate/science/bachelor-science-food-science-technology",
+      "sourceType": "official-page",
+      "role": "field-authority",
+      "fields": [
+        "programme identity",
+        "duration",
+        "intake",
+        "fees",
+        "requirements",
+        "course setting",
+        "careers"
+      ],
+      "retrievedAt": "2026-06-19T15:02:57Z",
+      "academicSession": "2026",
+      "status": "transport-blocked",
+      "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ug-science-course-dur-bachelor-of-food-science-and-technology-34.blocked.md",
+      "sha256": "58d6f8494c84dec6da86844c0f51803581038660cc4961ea31cffebd1c55319d",
+      "transport": "jina-reader",
+      "parser": "tmp/collect_mum_official.py"
+    },
+    {
+      "id": "detail-mum-ug-science-course-dur-bachelor-of-medical-bioscience-35",
+      "url": "https://www.monash.edu.my/study/undergraduate/science/bachelor-science-medical-bioscience",
+      "sourceType": "official-page",
+      "role": "field-authority",
+      "fields": [
+        "programme identity",
+        "duration",
+        "intake",
+        "fees",
+        "requirements",
+        "course setting",
+        "careers"
+      ],
+      "retrievedAt": "2026-06-19T15:02:57Z",
+      "academicSession": "2026",
+      "status": "transport-blocked",
+      "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ug-science-course-dur-bachelor-of-medical-bioscience-35.blocked.md",
+      "sha256": "098391f84a41faabd2dedc61d6c5e68119384cdcde18e3fc636f42fc0319a1c7",
+      "transport": "jina-reader",
+      "parser": "tmp/collect_mum_official.py"
+    },
+    {
+      "id": "detail-mum-ug-science-course-dur-bachelor-of-science-honours-36",
+      "url": "https://www.monash.edu.my/study/undergraduate/science/bachelor-science-honours",
+      "sourceType": "official-page",
+      "role": "field-authority",
+      "fields": [
+        "programme identity",
+        "duration",
+        "intake",
+        "fees",
+        "requirements",
+        "course setting",
+        "careers"
+      ],
+      "retrievedAt": "2026-06-19T15:02:57Z",
+      "academicSession": "2026",
+      "status": "transport-blocked",
+      "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ug-science-course-dur-bachelor-of-science-honours-36.blocked.md",
+      "sha256": "79faa6f3542461b67337ff8d7ab1f2ee28c126360dbbc7d1681293a5cab42a43",
+      "transport": "jina-reader",
+      "parser": "tmp/collect_mum_official.py"
+    },
+    {
+      "id": "detail-mum-ma-arts-and-social-sc-master-of-communications-and-media-studies-37",
+      "url": "https://www.monash.edu.my/study/postgraduate-and-research/arts-social-sciences/master-communications-media-studies",
+      "sourceType": "official-page",
+      "role": "field-authority",
+      "fields": [
+        "programme identity",
+        "duration",
+        "intake",
+        "fees",
+        "requirements",
+        "course setting",
+        "careers"
+      ],
+      "retrievedAt": "2026-06-19T15:02:57Z",
+      "academicSession": "2026",
+      "status": "cached",
+      "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ma-arts-and-social-sc-master-of-communications-and-media-studies-37.md",
+      "sha256": "c70bab8be6479c2033687d5430ee2b6cd5aa0878743a9399ce3058412d0d50e4",
+      "transport": "jina-reader",
+      "parser": "tmp/collect_mum_official.py"
+    },
+    {
+      "id": "detail-mum-phd-arts-and-social-sc-phd-phd-38",
+      "url": "https://www.monash.edu.my/study/postgraduate-and-research/arts-social-sciences/phd",
+      "sourceType": "official-page",
+      "role": "field-authority",
+      "fields": [
+        "programme identity",
+        "duration",
+        "intake",
+        "fees",
+        "requirements",
+        "course setting",
+        "careers"
+      ],
+      "retrievedAt": "2026-06-19T15:02:57Z",
+      "academicSession": "2026",
+      "status": "transport-blocked",
+      "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-phd-arts-and-social-sc-phd-phd-38.blocked.md",
+      "sha256": "72e4ae71f8f43e087c60b2981327afd33f26369a24826d8ebda8357782bc1645",
+      "transport": "jina-reader",
+      "parser": "tmp/collect_mum_official.py"
+    },
+    {
+      "id": "detail-mum-ma-business-master-of-international-business-39",
+      "url": "https://www.monash.edu.my/study/postgraduate-and-research/business/master-international-business",
+      "sourceType": "official-page",
+      "role": "field-authority",
+      "fields": [
+        "programme identity",
+        "duration",
+        "intake",
+        "fees",
+        "requirements",
+        "course setting",
+        "careers"
+      ],
+      "retrievedAt": "2026-06-19T15:02:57Z",
+      "academicSession": "2026",
+      "status": "cached",
+      "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ma-business-master-of-international-business-39.md",
+      "sha256": "9faede5f24a7ada4f773be84517a231c2ba6d1e6e96b6a1da1b85f05354000ed",
+      "transport": "jina-reader",
+      "parser": "tmp/collect_mum_official.py"
+    },
+    {
+      "id": "detail-mum-ma-business-master-of-digital-business-40",
+      "url": "https://www.monash.edu.my/study/postgraduate-and-research/business/master-of-digital-business",
+      "sourceType": "official-page",
+      "role": "field-authority",
+      "fields": [
+        "programme identity",
+        "duration",
+        "intake",
+        "fees",
+        "requirements",
+        "course setting",
+        "careers"
+      ],
+      "retrievedAt": "2026-06-19T15:02:57Z",
+      "academicSession": "2026",
+      "status": "transport-blocked",
+      "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ma-business-master-of-digital-business-40.blocked.md",
+      "sha256": "4ead5771fe66071360ed2d7fa8213e885a54352825837690e39f91ec21be862f",
+      "transport": "jina-reader",
+      "parser": "tmp/collect_mum_official.py"
+    },
+    {
+      "id": "detail-mum-ma-business-mphil-mphil-41",
+      "url": "https://www.monash.edu.my/study/postgraduate-and-research/business/master-philosophy",
+      "sourceType": "official-page",
+      "role": "field-authority",
+      "fields": [
+        "programme identity",
+        "duration",
+        "intake",
+        "fees",
+        "requirements",
+        "course setting",
+        "careers"
+      ],
+      "retrievedAt": "2026-06-19T15:02:57Z",
+      "academicSession": "2026",
+      "status": "cached",
+      "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ma-business-mphil-mphil-41.md",
+      "sha256": "c376376bfa15ed56ddce341864868919804f2d5d340024cb93cbf95fa98b473d",
+      "transport": "jina-reader",
+      "parser": "tmp/collect_mum_official.py"
+    },
+    {
+      "id": "detail-mum-phd-business-phd-phd-42",
+      "url": "https://www.monash.edu.my/study/postgraduate-and-research/business/phd",
+      "sourceType": "official-page",
+      "role": "field-authority",
+      "fields": [
+        "programme identity",
+        "duration",
+        "intake",
+        "fees",
+        "requirements",
+        "course setting",
+        "careers"
+      ],
+      "retrievedAt": "2026-06-19T15:02:57Z",
+      "academicSession": "2026",
+      "status": "cached",
+      "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-phd-business-phd-phd-42.md",
+      "sha256": "40081a515a28d1d9526e53aa6f40b93f7506314024d393af5b0bb6ad5f490409",
+      "transport": "jina-reader",
+      "parser": "tmp/collect_mum_official.py"
+    },
+    {
+      "id": "detail-mum-ma-engineering-master-of-applied-engineering-43",
+      "url": "https://www.monash.edu.my/study/postgraduate-and-research/engineering/master-of-applied-engineering",
+      "sourceType": "official-page",
+      "role": "field-authority",
+      "fields": [
+        "programme identity",
+        "duration",
+        "intake",
+        "fees",
+        "requirements",
+        "course setting",
+        "careers"
+      ],
+      "retrievedAt": "2026-06-19T15:02:57Z",
+      "academicSession": "2026",
+      "status": "transport-blocked",
+      "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ma-engineering-master-of-applied-engineering-43.blocked.md",
+      "sha256": "84a0ba64275179a70eab95ebba5cd9f87282aade76cfb8f41a5eb5b1e3f49ce9",
+      "transport": "jina-reader",
+      "parser": "tmp/collect_mum_official.py"
+    },
+    {
+      "id": "detail-mum-ma-engineering-master-of-engineering-science-research-44",
+      "url": "https://www.monash.edu.my/study/postgraduate-and-research/engineering/master-engineering-science-research",
+      "sourceType": "official-page",
+      "role": "field-authority",
+      "fields": [
+        "programme identity",
+        "duration",
+        "intake",
+        "fees",
+        "requirements",
+        "course setting",
+        "careers"
+      ],
+      "retrievedAt": "2026-06-19T15:02:57Z",
+      "academicSession": "2026",
+      "status": "cached",
+      "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ma-engineering-master-of-engineering-science-research-44.md",
+      "sha256": "3726d69f041165d3cb0da77f921a44766fa7652d9c531c953cf9bfd5aba3de9a",
+      "transport": "jina-reader",
+      "parser": "tmp/collect_mum_official.py"
+    },
+    {
+      "id": "detail-mum-phd-engineering-phd-phd-45",
+      "url": "https://www.monash.edu.my/study/postgraduate-and-research/engineering/phd",
+      "sourceType": "official-page",
+      "role": "field-authority",
+      "fields": [
+        "programme identity",
+        "duration",
+        "intake",
+        "fees",
+        "requirements",
+        "course setting",
+        "careers"
+      ],
+      "retrievedAt": "2026-06-19T15:02:57Z",
+      "academicSession": "2026",
+      "status": "cached",
+      "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-phd-engineering-phd-phd-45.md",
+      "sha256": "e8c9ecf04f17678e65f3b518374fb3bf18b71061e95b5ea9ccb4deb5aba595e9",
+      "transport": "jina-reader",
+      "parser": "tmp/collect_mum_official.py"
+    },
+    {
+      "id": "detail-mum-ma-information-techno-master-of-artificial-intelligence-46",
+      "url": "https://www.monash.edu.my/study/postgraduate-and-research/information-technology/master-of-artificial-intelligence",
+      "sourceType": "official-page",
+      "role": "field-authority",
+      "fields": [
+        "programme identity",
+        "duration",
+        "intake",
+        "fees",
+        "requirements",
+        "course setting",
+        "careers"
+      ],
+      "retrievedAt": "2026-06-19T15:02:57Z",
+      "academicSession": "2026",
+      "status": "transport-blocked",
+      "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ma-information-techno-master-of-artificial-intelligence-46.blocked.md",
+      "sha256": "72370a6164975626cff70df17a3f482bbba769c8b5d2b74a59223fb9e07d0559",
+      "transport": "jina-reader",
+      "parser": "tmp/collect_mum_official.py"
+    },
+    {
+      "id": "detail-mum-ma-information-techno-master-of-business-information-systems-47",
+      "url": "https://www.monash.edu.my/study/postgraduate-and-research/information-technology/master-business-information-systems",
+      "sourceType": "official-page",
+      "role": "field-authority",
+      "fields": [
+        "programme identity",
+        "duration",
+        "intake",
+        "fees",
+        "requirements",
+        "course setting",
+        "careers"
+      ],
+      "retrievedAt": "2026-06-19T15:02:57Z",
+      "academicSession": "2026",
+      "status": "cached",
+      "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ma-information-techno-master-of-business-information-systems-47.md",
+      "sha256": "8db25db2253f4f7a8c928a69ccf62ad1c7bbe2225247c5c5c7445de974771918",
+      "transport": "jina-reader",
+      "parser": "tmp/collect_mum_official.py"
+    },
+    {
+      "id": "detail-mum-ma-information-techno-master-of-data-science-48",
+      "url": "https://www.monash.edu.my/study/postgraduate-and-research/information-technology/master-of-data-science",
+      "sourceType": "official-page",
+      "role": "field-authority",
+      "fields": [
+        "programme identity",
+        "duration",
+        "intake",
+        "fees",
+        "requirements",
+        "course setting",
+        "careers"
+      ],
+      "retrievedAt": "2026-06-19T15:02:57Z",
+      "academicSession": "2026",
+      "status": "cached",
+      "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ma-information-techno-master-of-data-science-48.md",
+      "sha256": "593d6ef39ee807ca46c72a33f6ca64c58d6ab1796b0cc8d9812e20cecc1ec5e4",
+      "transport": "jina-reader",
+      "parser": "tmp/collect_mum_official.py"
+    },
+    {
+      "id": "detail-mum-ma-information-techno-mphil-mphil-49",
+      "url": "https://www.monash.edu.my/study/postgraduate-and-research/information-technology/master-philosophy",
+      "sourceType": "official-page",
+      "role": "field-authority",
+      "fields": [
+        "programme identity",
+        "duration",
+        "intake",
+        "fees",
+        "requirements",
+        "course setting",
+        "careers"
+      ],
+      "retrievedAt": "2026-06-19T15:02:57Z",
+      "academicSession": "2026",
+      "status": "cached",
+      "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ma-information-techno-mphil-mphil-49.md",
+      "sha256": "0a054fc85df8129e523c1c1c0f81b277320b680e3f5e4b3d750110b7f866d030",
+      "transport": "jina-reader",
+      "parser": "tmp/collect_mum_official.py"
+    },
+    {
+      "id": "detail-mum-phd-information-techno-phd-phd-50",
+      "url": "https://www.monash.edu.my/study/postgraduate-and-research/information-technology/phd",
+      "sourceType": "official-page",
+      "role": "field-authority",
+      "fields": [
+        "programme identity",
+        "duration",
+        "intake",
+        "fees",
+        "requirements",
+        "course setting",
+        "careers"
+      ],
+      "retrievedAt": "2026-06-19T15:02:57Z",
+      "academicSession": "2026",
+      "status": "transport-blocked",
+      "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-phd-information-techno-phd-phd-50.blocked.md",
+      "sha256": "46de32d450a36f0968d6ab12edc2f1fb6de614db687d42653fe04ec8fe9e1cda",
+      "transport": "jina-reader",
+      "parser": "tmp/collect_mum_official.py"
+    },
+    {
+      "id": "detail-mum-ma-medicine-and-healt-master-of-professional-counselling-51",
+      "url": "https://www.monash.edu.my/study/postgraduate-and-research/medicine-health-sciences/master-of-professional-counselling",
+      "sourceType": "official-page",
+      "role": "field-authority",
+      "fields": [
+        "programme identity",
+        "duration",
+        "intake",
+        "fees",
+        "requirements",
+        "course setting",
+        "careers"
+      ],
+      "retrievedAt": "2026-06-19T15:02:57Z",
+      "academicSession": "2026",
+      "status": "transport-blocked",
+      "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ma-medicine-and-healt-master-of-professional-counselling-51.blocked.md",
+      "sha256": "760603f9001101416bafecf4bf64fe3c450d7365e0fd14cfe5f481624e042266",
+      "transport": "jina-reader",
+      "parser": "tmp/collect_mum_official.py"
+    },
+    {
+      "id": "detail-mum-ma-medicine-and-healt-master-of-biomedical-science-52",
+      "url": "https://www.monash.edu.my/study/postgraduate-and-research/medicine-health-sciences/master-biomedical-science",
+      "sourceType": "official-page",
+      "role": "field-authority",
+      "fields": [
+        "programme identity",
+        "duration",
+        "intake",
+        "fees",
+        "requirements",
+        "course setting",
+        "careers"
+      ],
+      "retrievedAt": "2026-06-19T15:02:57Z",
+      "academicSession": "2026",
+      "status": "cached",
+      "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ma-medicine-and-healt-master-of-biomedical-science-52.md",
+      "sha256": "3524316be9e4e77841e366f37b3e9f1b457d70f2eba3b078c912a53c58b1efe3",
+      "transport": "jina-reader",
+      "parser": "tmp/collect_mum_official.py"
+    },
+    {
+      "id": "detail-mum-ma-medicine-and-healt-master-of-biotechnology-53",
+      "url": "https://www.monash.edu.my/study/postgraduate-and-research/medicine-health-sciences/master-of-biotechnology",
+      "sourceType": "official-page",
+      "role": "field-authority",
+      "fields": [
+        "programme identity",
+        "duration",
+        "intake",
+        "fees",
+        "requirements",
+        "course setting",
+        "careers"
+      ],
+      "retrievedAt": "2026-06-19T15:02:57Z",
+      "academicSession": "2026",
+      "status": "cached",
+      "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ma-medicine-and-healt-master-of-biotechnology-53.md",
+      "sha256": "8236ce59db813f5a8ef5a7c8920576c1d712dadcd7c50c4d4e3bfdb4a7f8421d",
+      "transport": "jina-reader",
+      "parser": "tmp/collect_mum_official.py"
+    },
+    {
+      "id": "detail-mum-ma-medicine-and-healt-master-of-clinical-psychology-54",
+      "url": "https://www.monash.edu.my/study/postgraduate-and-research/medicine-health-sciences/master-of-clinical-psychology",
+      "sourceType": "official-page",
+      "role": "field-authority",
+      "fields": [
+        "programme identity",
+        "duration",
+        "intake",
+        "fees",
+        "requirements",
+        "course setting",
+        "careers"
+      ],
+      "retrievedAt": "2026-06-19T15:02:57Z",
+      "academicSession": "2026",
+      "status": "transport-blocked",
+      "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ma-medicine-and-healt-master-of-clinical-psychology-54.blocked.md",
+      "sha256": "81fc7d0d067eaa3e482594edec07539518404256c38d483b47015ccc99923bb5",
+      "transport": "jina-reader",
+      "parser": "tmp/collect_mum_official.py"
+    },
+    {
+      "id": "detail-mum-phd-medicine-and-healt-phd-phd-55",
+      "url": "https://www.monash.edu.my/study/postgraduate-and-research/medicine-health-sciences/phd",
+      "sourceType": "official-page",
+      "role": "field-authority",
+      "fields": [
+        "programme identity",
+        "duration",
+        "intake",
+        "fees",
+        "requirements",
+        "course setting",
+        "careers"
+      ],
+      "retrievedAt": "2026-06-19T15:02:57Z",
+      "academicSession": "2026",
+      "status": "transport-blocked",
+      "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-phd-medicine-and-healt-phd-phd-55.blocked.md",
+      "sha256": "1034fb30f8f7c8afeb523fa76f308957b80333844f172196ca6b07a2723dfd11",
+      "transport": "jina-reader",
+      "parser": "tmp/collect_mum_official.py"
+    },
+    {
+      "id": "detail-mum-ma-pharmacy-master-of-pharmaceutical-science-56",
+      "url": "https://www.monash.edu.my/study/postgraduate-and-research/pharmacy/master-of-pharmaceutical-science",
+      "sourceType": "official-page",
+      "role": "field-authority",
+      "fields": [
+        "programme identity",
+        "duration",
+        "intake",
+        "fees",
+        "requirements",
+        "course setting",
+        "careers"
+      ],
+      "retrievedAt": "2026-06-19T15:02:57Z",
+      "academicSession": "2026",
+      "status": "transport-blocked",
+      "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ma-pharmacy-master-of-pharmaceutical-science-56.blocked.md",
+      "sha256": "470c6ae8572b4587b48e9b0af52ccc779b6519f4a368c79c6c07d86cc075aeca",
+      "transport": "jina-reader",
+      "parser": "tmp/collect_mum_official.py"
+    },
+    {
+      "id": "detail-mum-ma-pharmacy-mphil-57",
+      "url": "https://www.monash.edu.my/study/postgraduate-and-research/pharmacy/master-of-philosophy",
+      "sourceType": "official-page",
+      "role": "field-authority",
+      "fields": [
+        "programme identity",
+        "duration",
+        "intake",
+        "fees",
+        "requirements",
+        "course setting",
+        "careers"
+      ],
+      "retrievedAt": "2026-06-19T15:02:57Z",
+      "academicSession": "2026",
+      "status": "transport-blocked",
+      "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ma-pharmacy-mphil-57.blocked.md",
+      "sha256": "694757998edfdf6fcb177e26b1c04ce6fca395aa3a4186dd5500d2874726fced",
+      "transport": "jina-reader",
+      "parser": "tmp/collect_mum_official.py"
+    },
+    {
+      "id": "detail-mum-phd-pharmacy-phd-phd-58",
+      "url": "https://www.monash.edu.my/study/postgraduate-and-research/pharmacy/doctor-of-philosophy-phd",
+      "sourceType": "official-page",
+      "role": "field-authority",
+      "fields": [
+        "programme identity",
+        "duration",
+        "intake",
+        "fees",
+        "requirements",
+        "course setting",
+        "careers"
+      ],
+      "retrievedAt": "2026-06-19T15:02:57Z",
+      "academicSession": "2026",
+      "status": "transport-blocked",
+      "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-phd-pharmacy-phd-phd-58.blocked.md",
+      "sha256": "adf1365cd1b9829310de16ea556c25b36782ca2c5a136ebf1730d8e09c96b95d",
+      "transport": "jina-reader",
+      "parser": "tmp/collect_mum_official.py"
+    },
+    {
+      "id": "detail-mum-ma-science-master-of-science-59",
+      "url": "https://www.monash.edu.my/study/postgraduate-and-research/science/master-science",
+      "sourceType": "official-page",
+      "role": "field-authority",
+      "fields": [
+        "programme identity",
+        "duration",
+        "intake",
+        "fees",
+        "requirements",
+        "course setting",
+        "careers"
+      ],
+      "retrievedAt": "2026-06-19T15:02:57Z",
+      "academicSession": "2026",
+      "status": "transport-blocked",
+      "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ma-science-master-of-science-59.blocked.md",
+      "sha256": "07de6a1610fb88f1fce048ff8459050fb00249e1fc84316b64b24b3a416bd089",
+      "transport": "jina-reader",
+      "parser": "tmp/collect_mum_official.py"
+    },
+    {
+      "id": "detail-mum-phd-science-phd-phd-60",
+      "url": "https://www.monash.edu.my/study/postgraduate-and-research/science/phd",
+      "sourceType": "official-page",
+      "role": "field-authority",
+      "fields": [
+        "programme identity",
+        "duration",
+        "intake",
+        "fees",
+        "requirements",
+        "course setting",
+        "careers"
+      ],
+      "retrievedAt": "2026-06-19T15:02:57Z",
+      "academicSession": "2026",
+      "status": "transport-blocked",
+      "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-phd-science-phd-phd-60.blocked.md",
+      "sha256": "d421ff0329ec39288a33982ae1712a2a53a37ef9854a4bcef0d3da638db2acb3",
+      "transport": "jina-reader",
+      "parser": "tmp/collect_mum_official.py"
+    },
+    {
+      "id": "rendered-mum-ug-arts-social-scienc-bachelor-of-arts-and-social-sciences-01",
+      "url": "https://www.monash.edu.my/study/undergraduate/arts-social-sciences/bachelor-arts-social-sciences",
+      "role": "field-authority",
+      "title": "Bachelor of Arts and Social Sciences - Monash University Malaysia",
+      "retrievedAt": "2026-06-19T16:21:05.066Z",
+      "status": "rendered",
+      "localPath": "data/imports/mum/2026-06-19/official-audit/rendered/001-mum-ug-arts-social-scienc-bachelor-of-arts-and-social-sciences-01.json",
+      "sha256": "b98d505ce08269988f4d7bb81d462af6850b3004dba59716c4a7571bdce87e47",
+      "transport": "playwright-rendered-dom"
+    },
+    {
+      "id": "rendered-mum-ug-arts-social-scienc-bachelor-of-digital-media-and-communication-02",
+      "url": "https://www.monash.edu.my/study/undergraduate/arts-social-sciences/bachelor-of-digital-media-and-communication",
+      "role": "field-authority",
+      "title": "Bachelor of Digital Media and Communication - Malaysia",
+      "retrievedAt": "2026-06-19T16:15:08.012Z",
+      "status": "rendered",
+      "localPath": "data/imports/mum/2026-06-19/official-audit/rendered/002-mum-ug-arts-social-scienc-bachelor-of-digital-media-and-communication-02.json",
+      "sha256": "74c35fa5abab9a31ee5419e61de789e3282bbb2291419145fd0d75430fe7800b",
+      "transport": "playwright-rendered-dom"
+    },
+    {
+      "id": "rendered-mum-ug-arts-social-scienc-bachelor-of-arts-honours-03",
+      "url": "https://www.monash.edu.my/study/undergraduate/arts-social-sciences/bachelor-arts-honours",
+      "role": "field-authority",
+      "title": "Bachelor of Arts (Honours) - Monash University Malaysia",
+      "retrievedAt": "2026-06-19T16:15:12.802Z",
+      "status": "rendered",
+      "localPath": "data/imports/mum/2026-06-19/official-audit/rendered/003-mum-ug-arts-social-scienc-bachelor-of-arts-honours-03.json",
+      "sha256": "69e62657521954ff3cb20f08086706d3a55f917da8a52f0ca1491804b7b733ad",
+      "transport": "playwright-rendered-dom"
+    },
+    {
+      "id": "rendered-mum-ug-business-bachelor-of-business-and-commerce-04",
+      "url": "https://www.monash.edu.my/study/undergraduate/business/bachelor-business-commerce",
+      "role": "field-authority",
+      "title": "Bachelor of Business and Commerce - Monash Malaysia",
+      "retrievedAt": "2026-06-19T16:15:17.584Z",
+      "status": "rendered",
+      "localPath": "data/imports/mum/2026-06-19/official-audit/rendered/004-mum-ug-business-bachelor-of-business-and-commerce-04.json",
+      "sha256": "cc87e4d881a5f45529648e8247aabc6a033418c577ca83ac40450eb1af080b72",
+      "transport": "playwright-rendered-dom"
+    },
+    {
+      "id": "rendered-mum-ug-business-bachelor-in-actuarial-analytics-05",
+      "url": "https://www.monash.edu.my/study/undergraduate/business/bachelor-in-actuarial-analytics",
+      "role": "field-authority",
+      "title": "Bachelor in Actuarial Analytics - Malaysia",
+      "retrievedAt": "2026-06-19T16:15:22.398Z",
+      "status": "rendered",
+      "localPath": "data/imports/mum/2026-06-19/official-audit/rendered/005-mum-ug-business-bachelor-in-actuarial-analytics-05.json",
+      "sha256": "a5f0af53fd4d237c8c70f4c977834c4a528a2998cb52143925bd1fcdd2451555",
+      "transport": "playwright-rendered-dom"
+    },
+    {
+      "id": "rendered-mum-ug-business-bachelor-of-digital-business-06",
+      "url": "https://www.monash.edu.my/study/undergraduate/business/bachelor-of-digital-business",
+      "role": "field-authority",
+      "title": "Bachelor of Digital Business | Enrol Now",
+      "retrievedAt": "2026-06-19T16:15:27.277Z",
+      "status": "rendered",
+      "localPath": "data/imports/mum/2026-06-19/official-audit/rendered/006-mum-ug-business-bachelor-of-digital-business-06.json",
+      "sha256": "4d6c9c32ffd9c4d972f9bb880caa0e568b826c97540022a6ff947f42f95c5573",
+      "transport": "playwright-rendered-dom"
+    },
+    {
+      "id": "rendered-mum-ug-business-bachelor-of-business-and-commerce-honours-07",
+      "url": "https://www.monash.edu.my/study/undergraduate/business/bachelor-business-commerce-honours",
+      "role": "field-authority",
+      "title": "Bachelor of Business and Commerce (Honours) - Monash University Malaysia",
+      "retrievedAt": "2026-06-19T16:15:32.109Z",
+      "status": "rendered",
+      "localPath": "data/imports/mum/2026-06-19/official-audit/rendered/007-mum-ug-business-bachelor-of-business-and-commerce-honours-07.json",
+      "sha256": "bc522d9831c401dabd944b630c27f7bc5c6f93d08d3c1bf0a1776a026ce6d633",
+      "transport": "playwright-rendered-dom"
+    },
+    {
+      "id": "rendered-mum-ug-business-bachelor-of-business-and-commerce-and-bachel-08",
+      "url": "https://www.monash.edu.my/study/undergraduate/business/bachelor-business-commerce-bachelor-computer-science",
+      "role": "field-authority",
+      "title": "Bachelor of Business and Commerce and Bachelor of Computer Science - Malaysia",
+      "retrievedAt": "2026-06-19T16:15:37.111Z",
+      "status": "rendered",
+      "localPath": "data/imports/mum/2026-06-19/official-audit/rendered/008-mum-ug-business-bachelor-of-business-and-commerce-and-bachel-08.json",
+      "sha256": "59979a17800a3f0430cfbb99bb94f7fee2f1e083d17d8f626ad862b3ff202a4f",
+      "transport": "playwright-rendered-dom"
+    },
+    {
+      "id": "rendered-mum-ug-business-bachelor-of-business-and-commerce-and-bachel-09",
+      "url": "https://www.monash.edu.my/study/undergraduate/business/bachelor-business-commerce-bachelor-communication",
+      "role": "field-authority",
+      "title": "Bachelor of Business and Commerce and Bachelor of Digital Media and Communication - Monash University Malaysia",
+      "retrievedAt": "2026-06-19T16:15:42.755Z",
+      "status": "rendered",
+      "localPath": "data/imports/mum/2026-06-19/official-audit/rendered/009-mum-ug-business-bachelor-of-business-and-commerce-and-bachel-09.json",
+      "sha256": "df10cdb9c1550404825d82ad6fde3f8dd6c49c0d3bf8c6d1086214da329b246c",
+      "transport": "playwright-rendered-dom"
+    },
+    {
+      "id": "rendered-mum-ug-engineering-bachelor-of-biomedical-engineering-honours-10",
+      "url": "https://www.monash.edu.my/study/undergraduate/engineering/bachelor-of-biomedical-engineering-honours",
+      "role": "field-authority",
+      "title": "Bachelor of Biomedical Engineering (Honours) - Malaysia",
+      "retrievedAt": "2026-06-19T16:15:48.052Z",
+      "status": "rendered",
+      "localPath": "data/imports/mum/2026-06-19/official-audit/rendered/010-mum-ug-engineering-bachelor-of-biomedical-engineering-honours-10.json",
+      "sha256": "32ace4d2502ed1d33a6324c430ab682e1d134319ddb32bf58952bba4b6266f2c",
+      "transport": "playwright-rendered-dom"
+    },
+    {
+      "id": "rendered-mum-ug-engineering-bachelor-of-chemical-engineering-honours-11",
+      "url": "https://www.monash.edu.my/study/undergraduate/engineering/bachelor-of-engineering-honours-in-chemical-engineering",
+      "role": "field-authority",
+      "title": "Bachelor of Chemical Engineering (Honours) - Study Chemical Engineering Course in Malaysia",
+      "retrievedAt": "2026-06-19T16:15:53.474Z",
+      "status": "rendered",
+      "localPath": "data/imports/mum/2026-06-19/official-audit/rendered/011-mum-ug-engineering-bachelor-of-chemical-engineering-honours-11.json",
+      "sha256": "e6601085a5792395f2552d11f37da7670d3d0df2d7d1e3930fe0e97e4f0d2a73",
+      "transport": "playwright-rendered-dom"
+    },
+    {
+      "id": "rendered-mum-ug-engineering-bachelor-of-civil-engineering-honours-12",
+      "url": "https://www.monash.edu.my/study/undergraduate/engineering/bachelor-of-engineering-honours-in-civil-engineering",
+      "role": "field-authority",
+      "title": "Bachelor of Civil Engineering (Honours) - Monash Malaysia",
+      "retrievedAt": "2026-06-19T16:15:58.663Z",
+      "status": "rendered",
+      "localPath": "data/imports/mum/2026-06-19/official-audit/rendered/012-mum-ug-engineering-bachelor-of-civil-engineering-honours-12.json",
+      "sha256": "06370c6f853123036384e17717ec38f5cae0b9dbf3e1b180d1d6d9dc275cd2df",
+      "transport": "playwright-rendered-dom"
+    },
+    {
+      "id": "rendered-mum-ug-engineering-bachelor-of-electrical-and-computer-systems--13",
+      "url": "https://www.monash.edu.my/study/undergraduate/engineering/bachelor-of-engineering-honours-in-electrical-and-computer-systems-engineering",
+      "role": "field-authority",
+      "title": "Bachelor of Electrical and Computer Systems Engineering (Honours) - Monash",
+      "retrievedAt": "2026-06-19T16:16:03.679Z",
+      "status": "rendered",
+      "localPath": "data/imports/mum/2026-06-19/official-audit/rendered/013-mum-ug-engineering-bachelor-of-electrical-and-computer-systems-13.json",
+      "sha256": "f688df9856bc7e9e1992c9de5f4a6cc775ccd0927453785a85c10d002555aa2f",
+      "transport": "playwright-rendered-dom"
+    },
+    {
+      "id": "rendered-mum-ug-engineering-bachelor-of-materials-engineering-honours-14",
+      "url": "https://www.monash.edu.my/study/undergraduate/engineering/bachelor-of-materials-engineering-honours",
+      "role": "field-authority",
+      "title": "Bachelor of Materials Engineering (Honours) - Malaysia",
+      "retrievedAt": "2026-06-19T16:16:08.968Z",
+      "status": "rendered",
+      "localPath": "data/imports/mum/2026-06-19/official-audit/rendered/014-mum-ug-engineering-bachelor-of-materials-engineering-honours-14.json",
+      "sha256": "78aaff971e5ad57d01c7767520b17381854b2a3d207a60f9be76b5d6698ef5b6",
+      "transport": "playwright-rendered-dom"
+    },
+    {
+      "id": "rendered-mum-ug-engineering-bachelor-of-mechanical-engineering-honours-15",
+      "url": "https://www.monash.edu.my/study/undergraduate/engineering/bachelor-of-engineering-honours-in-mechanical-engineering",
+      "role": "field-authority",
+      "title": "Bachelor of Mechanical Engineering (Honours) | Monash Malaysia",
+      "retrievedAt": "2026-06-19T16:16:14.150Z",
+      "status": "rendered",
+      "localPath": "data/imports/mum/2026-06-19/official-audit/rendered/015-mum-ug-engineering-bachelor-of-mechanical-engineering-honours-15.json",
+      "sha256": "be500f306db440a4d7e9bf0ac411baf8cc60747f1531afe6d7219e5299816223",
+      "transport": "playwright-rendered-dom"
+    },
+    {
+      "id": "rendered-mum-ug-engineering-bachelor-of-robotics-and-mechatronics-engine-16",
+      "url": "https://www.monash.edu.my/study/undergraduate/engineering/bachelor-of-engineering-honours-in-mechatronics-engineering",
+      "role": "field-authority",
+      "title": "Bachelor of Robotics and Mechatronics Engineering (Honours) - Monash University Malaysia",
+      "retrievedAt": "2026-06-19T16:16:19.296Z",
+      "status": "rendered",
+      "localPath": "data/imports/mum/2026-06-19/official-audit/rendered/016-mum-ug-engineering-bachelor-of-robotics-and-mechatronics-engine-16.json",
+      "sha256": "63cfb1e37121d5ca738d3ec1b947fa63bc788a20837a3fe1ded50baab8eb9f99",
+      "transport": "playwright-rendered-dom"
+    },
+    {
+      "id": "rendered-mum-ug-engineering-bachelor-of-software-engineering-honours-17",
+      "url": "https://www.monash.edu.my/study/undergraduate/engineering/bachelor-of-software-engineering-honours",
+      "role": "field-authority",
+      "title": "Bachelor of SoftwBachelor of Software Engineering (Honours) - Study Malaysiaare Engineering (Honours) - Study Software Engineering Course in Malaysia",
+      "retrievedAt": "2026-06-19T16:16:24.347Z",
+      "status": "rendered",
+      "localPath": "data/imports/mum/2026-06-19/official-audit/rendered/017-mum-ug-engineering-bachelor-of-software-engineering-honours-17.json",
+      "sha256": "66763ae242fdf4cdb31158545e603df097e1379acac17f0132bc7e9045f77d89",
+      "transport": "playwright-rendered-dom"
+    },
+    {
+      "id": "rendered-mum-ug-information-techno-bachelor-of-computer-science-18",
+      "url": "https://www.monash.edu.my/study/undergraduate/information-technology/bachelor-computer-science",
+      "role": "field-authority",
+      "title": "Bachelor of Computer Science at Monash | Enroll Today",
+      "retrievedAt": "2026-06-19T16:16:29.268Z",
+      "status": "rendered",
+      "localPath": "data/imports/mum/2026-06-19/official-audit/rendered/018-mum-ug-information-techno-bachelor-of-computer-science-18.json",
+      "sha256": "096f5754544f8724a6ded036b6b62206954e844f89fbb5c88869be5fffd6258d",
+      "transport": "playwright-rendered-dom"
+    },
+    {
+      "id": "rendered-mum-ug-information-techno-bachelor-of-computer-science-in-artificial-i-19",
+      "url": "https://www.monash.edu.my/study/undergraduate/information-technology/bachelor-of-computer-science-in-artificial-intelligence",
+      "role": "field-authority",
+      "title": "Bachelor of Computer Science in Artificial Intelligence - Malaysia",
+      "retrievedAt": "2026-06-19T16:16:34.130Z",
+      "status": "rendered",
+      "localPath": "data/imports/mum/2026-06-19/official-audit/rendered/019-mum-ug-information-techno-bachelor-of-computer-science-in-artificial-i-19.json",
+      "sha256": "8d15c9ca5dbc1676eee504bcf388adca110c15499690f9778f97cfd21fdc5385",
+      "transport": "playwright-rendered-dom"
+    },
+    {
+      "id": "rendered-mum-ug-information-techno-bachelor-of-computer-science-in-data-science-20",
+      "url": "https://www.monash.edu.my/study/undergraduate/information-technology/bachelor-of-computer-science-in-data-science",
+      "role": "field-authority",
+      "title": "Bachelor of Computer Science in Data Science - Malaysia",
+      "retrievedAt": "2026-06-19T16:16:39.034Z",
+      "status": "rendered",
+      "localPath": "data/imports/mum/2026-06-19/official-audit/rendered/020-mum-ug-information-techno-bachelor-of-computer-science-in-data-science-20.json",
+      "sha256": "6a21dbef7b35cace1fe0f4562f69b0436555f0f62a637c76014121ca7f865aa4",
+      "transport": "playwright-rendered-dom"
+    },
+    {
+      "id": "rendered-mum-ug-information-techno-bachelor-of-computer-science-honours-21",
+      "url": "https://www.monash.edu.my/study/undergraduate/information-technology/bachelor-of-computer-science-honours",
+      "role": "field-authority",
+      "title": "Bachelor of Computer Science (Honours) - Monash University Malaysia",
+      "retrievedAt": "2026-06-19T16:16:43.944Z",
+      "status": "rendered",
+      "localPath": "data/imports/mum/2026-06-19/official-audit/rendered/021-mum-ug-information-techno-bachelor-of-computer-science-honours-21.json",
+      "sha256": "f7a90d63e7b97af3171f9dc433be512295185d64145864e9c111c5cb15cee492",
+      "transport": "playwright-rendered-dom"
+    },
+    {
+      "id": "rendered-mum-ug-medicine-and-healt-bachelor-of-medical-science-and-doctor-of-me-22",
+      "url": "https://www.monash.edu.my/study/undergraduate/jeffrey-cheah-school-medicine-health-sciences/bachelor-medical-science-doctor-medicine",
+      "role": "field-authority",
+      "title": "Bachelor of Medical Science and Doctor of Medicine - MBBS in Malaysia - Monash University",
+      "retrievedAt": "2026-06-19T16:16:49.140Z",
+      "status": "rendered",
+      "localPath": "data/imports/mum/2026-06-19/official-audit/rendered/022-mum-ug-medicine-and-healt-bachelor-of-medical-science-and-doctor-of-me-22.json",
+      "sha256": "eb57c43869d1544ff8cfa5424d89277be9e99ae2ae0592109b32bfa761a88a0f",
+      "transport": "playwright-rendered-dom"
+    },
+    {
+      "id": "rendered-mum-ug-medicine-and-healt-bachelor-of-psychology-23",
+      "url": "https://www.monash.edu.my/study/undergraduate/jeffrey-cheah-school-medicine-health-sciences/bachelor-of-psychology",
+      "role": "field-authority",
+      "title": "Bachelor of Psychology - Study Psychology Course in Malaysia",
+      "retrievedAt": "2026-06-19T16:16:54.107Z",
+      "status": "rendered",
+      "localPath": "data/imports/mum/2026-06-19/official-audit/rendered/023-mum-ug-medicine-and-healt-bachelor-of-psychology-23.json",
+      "sha256": "218484e188fa9ee225c5df7db616e7b168a1fdb8864eae392ba3fb10f14c1669",
+      "transport": "playwright-rendered-dom"
+    },
+    {
+      "id": "rendered-mum-ug-medicine-and-healt-bachelor-of-psychology-and-business-24",
+      "url": "https://www.monash.edu.my/study/undergraduate/jeffrey-cheah-school-medicine-health-sciences/bachelor-psychological-science-business",
+      "role": "field-authority",
+      "title": "Bachelor of Psychology and Business - Degree in Business Psychology Malaysia",
+      "retrievedAt": "2026-06-19T16:16:59.166Z",
+      "status": "rendered",
+      "localPath": "data/imports/mum/2026-06-19/official-audit/rendered/024-mum-ug-medicine-and-healt-bachelor-of-psychology-and-business-24.json",
+      "sha256": "3e97a11d43e487465aa08402accdbd8515ea7e6979c6a374d32620e92f2a5cc4",
+      "transport": "playwright-rendered-dom"
+    },
+    {
+      "id": "rendered-mum-ug-medicine-and-healt-bachelor-of-human-nutrition-25",
+      "url": "https://www.monash.edu.my/study/undergraduate/jeffrey-cheah-school-medicine-health-sciences/bachelor-of-human-nutrition",
+      "role": "field-authority",
+      "title": "Bachelor of Human Nutrition - Dietetics Course in malaysia",
+      "retrievedAt": "2026-06-19T16:17:04.146Z",
+      "status": "rendered",
+      "localPath": "data/imports/mum/2026-06-19/official-audit/rendered/025-mum-ug-medicine-and-healt-bachelor-of-human-nutrition-25.json",
+      "sha256": "2b705aa4de4700266103841ef0d70e2b1fd8853cfc82f15baa6b42804be63351",
+      "transport": "playwright-rendered-dom"
+    },
+    {
+      "id": "rendered-mum-ug-medicine-and-healt-bachelor-of-health-sciences-honours-26",
+      "url": "https://www.monash.edu.my/study/undergraduate/jeffrey-cheah-school-medicine-health-sciences/bachelor-of-health-sciences-honours",
+      "role": "field-authority",
+      "title": "Bachelor of Medical Science (Honours) - Medical Sciences Degree in Malaysia",
+      "retrievedAt": "2026-06-19T16:17:09.151Z",
+      "status": "rendered",
+      "localPath": "data/imports/mum/2026-06-19/official-audit/rendered/026-mum-ug-medicine-and-healt-bachelor-of-health-sciences-honours-26.json",
+      "sha256": "d8e194415e675df023fbb7f48875fcd5426d3ddbf5534c1efec285dd8f8d737e",
+      "transport": "playwright-rendered-dom"
+    },
+    {
+      "id": "rendered-mum-ug-medicine-and-healt-bachelor-of-medical-science-honours-27",
+      "url": "https://www.monash.edu.my/study/undergraduate/jeffrey-cheah-school-medicine-health-sciences/bachelor-medical-science-honours",
+      "role": "field-authority",
+      "title": "Bachelor of Medical Science (Honours) - Medical Sciences Degree in Malaysia",
+      "retrievedAt": "2026-06-19T16:17:14.064Z",
+      "status": "rendered",
+      "localPath": "data/imports/mum/2026-06-19/official-audit/rendered/027-mum-ug-medicine-and-healt-bachelor-of-medical-science-honours-27.json",
+      "sha256": "e95a09be27b76d1f6cd897b17281d609c5c467a869fbbc2b059c0f5e14930bf4",
+      "transport": "playwright-rendered-dom"
+    },
+    {
+      "id": "rendered-mum-ug-medicine-and-healt-bachelor-of-psychology-honours-28",
+      "url": "https://www.monash.edu.my/study/undergraduate/jeffrey-cheah-school-medicine-health-sciences/bachelor-psychology-honours",
+      "role": "field-authority",
+      "title": "Bachelor of Psychological Science (Honours) - Psychology Degree Malaysia",
+      "retrievedAt": "2026-06-19T16:17:18.943Z",
+      "status": "rendered",
+      "localPath": "data/imports/mum/2026-06-19/official-audit/rendered/028-mum-ug-medicine-and-healt-bachelor-of-psychology-honours-28.json",
+      "sha256": "373934586ea1516ec50c424c85f44d661a734546cadbb3e1f11f40d347f0eab4",
+      "transport": "playwright-rendered-dom"
+    },
+    {
+      "id": "rendered-mum-ug-pharmacy-course-du-bachelor-of-pharmacy-honours-29",
+      "url": "https://www.monash.edu.my/study/undergraduate/pharmacy/bachelor-pharmacy",
+      "role": "field-authority",
+      "title": "Bachelor of Pharmacy (Honours) - Study Pharmacy Course in Malaysia",
+      "retrievedAt": "2026-06-19T16:17:23.885Z",
+      "status": "rendered",
+      "localPath": "data/imports/mum/2026-06-19/official-audit/rendered/029-mum-ug-pharmacy-course-du-bachelor-of-pharmacy-honours-29.json",
+      "sha256": "5dfc9d3742ba421de0b9b44ec82bacae98e140c355d0f4f220bea7e73c451cdc",
+      "transport": "playwright-rendered-dom"
+    },
+    {
+      "id": "rendered-mum-ug-pharmacy-course-du-bachelor-of-pharmaceutical-science-30",
+      "url": "https://www.monash.edu.my/study/undergraduate/pharmacy/bachelor-of-pharmaceutical-science",
+      "role": "field-authority",
+      "title": "Bachelor of Pharmaceutical Science - Monash Malaysia",
+      "retrievedAt": "2026-06-19T16:17:28.888Z",
+      "status": "rendered",
+      "localPath": "data/imports/mum/2026-06-19/official-audit/rendered/030-mum-ug-pharmacy-course-du-bachelor-of-pharmaceutical-science-30.json",
+      "sha256": "9e7244051930beedf6dfbee9a36566eb851d253dbb9adc4ea123ad25720ee669",
+      "transport": "playwright-rendered-dom"
+    },
+    {
+      "id": "rendered-mum-ug-pharmacy-course-du-bachelor-of-pharmaceutical-science-honours-31",
+      "url": "https://www.monash.edu.my/study/undergraduate/pharmacy/bachelor-of-pharmaceutical-science-honours",
+      "role": "field-authority",
+      "title": "Bachelor of Pharmaceutical Science (Honours) - Malaysia",
+      "retrievedAt": "2026-06-19T16:17:33.914Z",
+      "status": "rendered",
+      "localPath": "data/imports/mum/2026-06-19/official-audit/rendered/031-mum-ug-pharmacy-course-du-bachelor-of-pharmaceutical-science-honours-31.json",
+      "sha256": "9e25bd860ed859368273bdb9c7d6405796e1db84df95c0ab9447ed7402539e03",
+      "transport": "playwright-rendered-dom"
+    },
+    {
+      "id": "rendered-mum-ug-science-course-dur-bachelor-of-science-32",
+      "url": "https://www.monash.edu.my/study/undergraduate/science/bachelor-science",
+      "role": "field-authority",
+      "title": "Bachelor of Science - Monash University Malaysia",
+      "retrievedAt": "2026-06-19T16:17:38.790Z",
+      "status": "rendered",
+      "localPath": "data/imports/mum/2026-06-19/official-audit/rendered/032-mum-ug-science-course-dur-bachelor-of-science-32.json",
+      "sha256": "cb43d132079803d5b5ac4c54a221712e79a1f35ec710d767a31766ec357024ff",
+      "transport": "playwright-rendered-dom"
+    },
+    {
+      "id": "rendered-mum-ug-science-course-dur-bachelor-of-applied-data-science-33",
+      "url": "https://www.monash.edu.my/study/undergraduate/science/bachelor-of-applied-data-science",
+      "role": "field-authority",
+      "title": "Bachelor of Applied Data Science - Malaysia",
+      "retrievedAt": "2026-06-19T16:17:43.695Z",
+      "status": "rendered",
+      "localPath": "data/imports/mum/2026-06-19/official-audit/rendered/033-mum-ug-science-course-dur-bachelor-of-applied-data-science-33.json",
+      "sha256": "5bf254f522c80a411ebe9ca7f40e6199e64963d3764b705910fcb4e6241ca40e",
+      "transport": "playwright-rendered-dom"
+    },
+    {
+      "id": "rendered-mum-ug-science-course-dur-bachelor-of-food-science-and-technology-34",
+      "url": "https://www.monash.edu.my/study/undergraduate/science/bachelor-science-food-science-technology",
+      "role": "field-authority",
+      "title": "Bachelor of Food Science and Technology - Monash University Malaysia",
+      "retrievedAt": "2026-06-19T16:17:48.541Z",
+      "status": "rendered",
+      "localPath": "data/imports/mum/2026-06-19/official-audit/rendered/034-mum-ug-science-course-dur-bachelor-of-food-science-and-technology-34.json",
+      "sha256": "530f9954cc4b2a7754a708662bddc6b0e62a196749dea7dc098c057d657021a1",
+      "transport": "playwright-rendered-dom"
+    },
+    {
+      "id": "rendered-mum-ug-science-course-dur-bachelor-of-medical-bioscience-35",
+      "url": "https://www.monash.edu.my/study/undergraduate/science/bachelor-science-medical-bioscience",
+      "role": "field-authority",
+      "title": "Bachelor of Medical Bioscience - Monash University Malaysia",
+      "retrievedAt": "2026-06-19T16:17:53.545Z",
+      "status": "rendered",
+      "localPath": "data/imports/mum/2026-06-19/official-audit/rendered/035-mum-ug-science-course-dur-bachelor-of-medical-bioscience-35.json",
+      "sha256": "3bd8cc8436adc5cf23fc8a87fa351119a2b1bca5e1bf92b22c7219a40c8e7877",
+      "transport": "playwright-rendered-dom"
+    },
+    {
+      "id": "rendered-mum-ug-science-course-dur-bachelor-of-science-honours-36",
+      "url": "https://www.monash.edu.my/study/undergraduate/science/bachelor-science-honours",
+      "role": "field-authority",
+      "title": "Bachelor of Science (Honours) - Monash University Malaysia",
+      "retrievedAt": "2026-06-19T16:17:58.543Z",
+      "status": "rendered",
+      "localPath": "data/imports/mum/2026-06-19/official-audit/rendered/036-mum-ug-science-course-dur-bachelor-of-science-honours-36.json",
+      "sha256": "36c3cca457356e067ef2218d8588f30bbc776cc485de584048759d127ca1682b",
+      "transport": "playwright-rendered-dom"
+    },
+    {
+      "id": "rendered-mum-ma-arts-and-social-sc-master-of-communications-and-media-studies-37",
+      "url": "https://www.monash.edu.my/study/postgraduate-and-research/arts-social-sciences/master-communications-media-studies",
+      "role": "field-authority",
+      "title": "Master of Communications and Media Studies - Monash University Malaysia",
+      "retrievedAt": "2026-06-19T16:18:03.517Z",
+      "status": "rendered",
+      "localPath": "data/imports/mum/2026-06-19/official-audit/rendered/037-mum-ma-arts-and-social-sc-master-of-communications-and-media-studies-37.json",
+      "sha256": "e31f0be0a05c50b885d8f3d2979b53867448da6c9eee1f84ed7895e366e2a9bb",
+      "transport": "playwright-rendered-dom"
+    },
+    {
+      "id": "rendered-mum-phd-arts-and-social-sc-phd-phd-38",
+      "url": "https://www.monash.edu.my/study/postgraduate-and-research/arts-social-sciences/phd",
+      "role": "field-authority",
+      "title": "Doctor of Philosophy (PhD) - Arts and Social Sciences - Monash University Malaysia",
+      "retrievedAt": "2026-06-19T16:18:08.488Z",
+      "status": "rendered",
+      "localPath": "data/imports/mum/2026-06-19/official-audit/rendered/038-mum-phd-arts-and-social-sc-phd-phd-38.json",
+      "sha256": "d1a1d97549435947bb1f52f17703d1d6d14097d533455b5c95e40d5cb1613137",
+      "transport": "playwright-rendered-dom"
+    },
+    {
+      "id": "rendered-mum-ma-business-master-of-international-business-39",
+      "url": "https://www.monash.edu.my/study/postgraduate-and-research/business/master-international-business",
+      "role": "field-authority",
+      "title": "Master of International Business - Monash University Malaysia",
+      "retrievedAt": "2026-06-19T16:18:13.401Z",
+      "status": "rendered",
+      "localPath": "data/imports/mum/2026-06-19/official-audit/rendered/039-mum-ma-business-master-of-international-business-39.json",
+      "sha256": "ddcedd12adedd48251ed64bec1e9df7c26e2af07d6a68123b4bae4d1f667d5c4",
+      "transport": "playwright-rendered-dom"
+    },
+    {
+      "id": "rendered-mum-ma-business-master-of-digital-business-40",
+      "url": "https://www.monash.edu.my/study/postgraduate-and-research/business/master-of-digital-business",
+      "role": "field-authority",
+      "title": "Master of Digital Business - Malaysia",
+      "retrievedAt": "2026-06-19T16:18:18.206Z",
+      "status": "rendered",
+      "localPath": "data/imports/mum/2026-06-19/official-audit/rendered/040-mum-ma-business-master-of-digital-business-40.json",
+      "sha256": "7b0a59937025adbb8414a7c08a61af1d6a68b8084050204f926cc22d623b70b3",
+      "transport": "playwright-rendered-dom"
+    },
+    {
+      "id": "rendered-mum-ma-business-mphil-mphil-41",
+      "url": "https://www.monash.edu.my/study/postgraduate-and-research/business/master-philosophy",
+      "role": "field-authority",
+      "title": "Master of Philosophy (Business) Monash Malaysia",
+      "retrievedAt": "2026-06-19T16:18:23.030Z",
+      "status": "rendered",
+      "localPath": "data/imports/mum/2026-06-19/official-audit/rendered/041-mum-ma-business-mphil-mphil-41.json",
+      "sha256": "8d6f5210c1a80df803066720b22110d9e91785666122f5179f0a6a0ffe1f2edd",
+      "transport": "playwright-rendered-dom"
+    },
+    {
+      "id": "rendered-mum-phd-business-phd-phd-42",
+      "url": "https://www.monash.edu.my/study/postgraduate-and-research/business/phd",
+      "role": "field-authority",
+      "title": "Doctor of Philosophy (PhD) - Business - Monash University Malaysia",
+      "retrievedAt": "2026-06-19T16:18:27.864Z",
+      "status": "rendered",
+      "localPath": "data/imports/mum/2026-06-19/official-audit/rendered/042-mum-phd-business-phd-phd-42.json",
+      "sha256": "e2422e6e28e63678e6515c03e83158e2c24e27b329f1fdf96303752f6b7c36a1",
+      "transport": "playwright-rendered-dom"
+    },
+    {
+      "id": "rendered-mum-ma-engineering-master-of-applied-engineering-43",
+      "url": "https://www.monash.edu.my/study/postgraduate-and-research/engineering/master-of-applied-engineering",
+      "role": "field-authority",
+      "title": "Master of Applied Engineering - Malaysia",
+      "retrievedAt": "2026-06-19T16:18:33.041Z",
+      "status": "rendered",
+      "localPath": "data/imports/mum/2026-06-19/official-audit/rendered/043-mum-ma-engineering-master-of-applied-engineering-43.json",
+      "sha256": "e3eac97c237a968c88435bfee356de14388bd10f5d13c89ad3f7823db14d6d93",
+      "transport": "playwright-rendered-dom"
+    },
+    {
+      "id": "rendered-mum-ma-engineering-master-of-engineering-science-research-44",
+      "url": "https://www.monash.edu.my/study/postgraduate-and-research/engineering/master-engineering-science-research",
+      "role": "field-authority",
+      "title": "Master of Engineering Science (Research) - Monash Malaysia",
+      "retrievedAt": "2026-06-19T16:18:37.923Z",
+      "status": "rendered",
+      "localPath": "data/imports/mum/2026-06-19/official-audit/rendered/044-mum-ma-engineering-master-of-engineering-science-research-44.json",
+      "sha256": "84400d335ed39a19ea166217b2fb87df2dc0a0331d373332f122b130d97cab47",
+      "transport": "playwright-rendered-dom"
+    },
+    {
+      "id": "rendered-mum-phd-engineering-phd-phd-45",
+      "url": "https://www.monash.edu.my/study/postgraduate-and-research/engineering/phd",
+      "role": "field-authority",
+      "title": "Doctor of Philosophy (PhD) - Engineering - Monash University Malaysia",
+      "retrievedAt": "2026-06-19T16:18:42.789Z",
+      "status": "rendered",
+      "localPath": "data/imports/mum/2026-06-19/official-audit/rendered/045-mum-phd-engineering-phd-phd-45.json",
+      "sha256": "e83b80792d2d46ed56786da71295d6870127e8da3ee8789afc777686b7d1cfdd",
+      "transport": "playwright-rendered-dom"
+    },
+    {
+      "id": "rendered-mum-ma-information-techno-master-of-artificial-intelligence-46",
+      "url": "https://www.monash.edu.my/study/postgraduate-and-research/information-technology/master-of-artificial-intelligence",
+      "role": "field-authority",
+      "title": "Master of Artificial Intelligence Course in Malaysia",
+      "retrievedAt": "2026-06-19T16:18:47.584Z",
+      "status": "rendered",
+      "localPath": "data/imports/mum/2026-06-19/official-audit/rendered/046-mum-ma-information-techno-master-of-artificial-intelligence-46.json",
+      "sha256": "a3cfa9f1f6410a339869905dcaf989ecaeee616cb95aeaea09c3b14721d1d642",
+      "transport": "playwright-rendered-dom"
+    },
+    {
+      "id": "rendered-mum-ma-information-techno-master-of-business-information-systems-47",
+      "url": "https://www.monash.edu.my/study/postgraduate-and-research/information-technology/master-business-information-systems",
+      "role": "field-authority",
+      "title": "Master of Business Information Systems",
+      "retrievedAt": "2026-06-19T16:18:52.416Z",
+      "status": "rendered",
+      "localPath": "data/imports/mum/2026-06-19/official-audit/rendered/047-mum-ma-information-techno-master-of-business-information-systems-47.json",
+      "sha256": "70f5b596d479baa4c3ec50a3373dbf7fa247ecfbe702e51bf7d30540b9c2f92e",
+      "transport": "playwright-rendered-dom"
+    },
+    {
+      "id": "rendered-mum-ma-information-techno-master-of-data-science-48",
+      "url": "https://www.monash.edu.my/study/postgraduate-and-research/information-technology/master-of-data-science",
+      "role": "field-authority",
+      "title": "Master of Data Science | Monash University Malaysia",
+      "retrievedAt": "2026-06-19T16:18:57.326Z",
+      "status": "rendered",
+      "localPath": "data/imports/mum/2026-06-19/official-audit/rendered/048-mum-ma-information-techno-master-of-data-science-48.json",
+      "sha256": "010c4b5173e90afe32feacd4c8de62529dbb69dc1ba42f3c967c9fe4d110ce8c",
+      "transport": "playwright-rendered-dom"
+    },
+    {
+      "id": "rendered-mum-ma-information-techno-mphil-mphil-49",
+      "url": "https://www.monash.edu.my/study/postgraduate-and-research/information-technology/master-philosophy",
+      "role": "field-authority",
+      "title": "Master of Philosophy - Information Technology - Monash University Malaysia",
+      "retrievedAt": "2026-06-19T16:19:02.387Z",
+      "status": "rendered",
+      "localPath": "data/imports/mum/2026-06-19/official-audit/rendered/049-mum-ma-information-techno-mphil-mphil-49.json",
+      "sha256": "009ac1a1378dd8224622a16bc601f15722ab2a418756585aee1f3e77704d7104",
+      "transport": "playwright-rendered-dom"
+    },
+    {
+      "id": "rendered-mum-phd-information-techno-phd-phd-50",
+      "url": "https://www.monash.edu.my/study/postgraduate-and-research/information-technology/phd",
+      "role": "field-authority",
+      "title": "Doctor of Philosophy (PhD) - Information Technology IT - Monash University Malaysia",
+      "retrievedAt": "2026-06-19T16:19:07.799Z",
+      "status": "rendered",
+      "localPath": "data/imports/mum/2026-06-19/official-audit/rendered/050-mum-phd-information-techno-phd-phd-50.json",
+      "sha256": "7af405d4be16465c8a730c6dbe11e6610a604ae45bb1a661eafd68d3c8eea5a5",
+      "transport": "playwright-rendered-dom"
+    },
+    {
+      "id": "rendered-mum-ma-medicine-and-healt-master-of-professional-counselling-51",
+      "url": "https://www.monash.edu.my/study/postgraduate-and-research/medicine-health-sciences/master-of-professional-counselling",
+      "role": "field-authority",
+      "title": "Master of Professional Counselling in Malaysia | Apply Now",
+      "retrievedAt": "2026-06-19T16:19:12.951Z",
+      "status": "rendered",
+      "localPath": "data/imports/mum/2026-06-19/official-audit/rendered/051-mum-ma-medicine-and-healt-master-of-professional-counselling-51.json",
+      "sha256": "92b8ad4f1359e91b538dec5d854ca7417d28aeb4a8bfad98ba39fd5780717636",
+      "transport": "playwright-rendered-dom"
+    },
+    {
+      "id": "rendered-mum-ma-medicine-and-healt-master-of-biomedical-science-52",
+      "url": "https://www.monash.edu.my/study/postgraduate-and-research/medicine-health-sciences/master-biomedical-science",
+      "role": "field-authority",
+      "title": "Master of Biomedical Science - Study Biomedical Science Degree in Malaysia",
+      "retrievedAt": "2026-06-19T16:19:17.905Z",
+      "status": "rendered",
+      "localPath": "data/imports/mum/2026-06-19/official-audit/rendered/052-mum-ma-medicine-and-healt-master-of-biomedical-science-52.json",
+      "sha256": "2753c5e7a4811738c36c6a786e3ad78dbebe5a54132402460b6535b24c021eb7",
+      "transport": "playwright-rendered-dom"
+    },
+    {
+      "id": "rendered-mum-ma-medicine-and-healt-master-of-biotechnology-53",
+      "url": "https://www.monash.edu.my/study/postgraduate-and-research/medicine-health-sciences/master-of-biotechnology",
+      "role": "field-authority",
+      "title": "Master of Biotechnology - Malaysia",
+      "retrievedAt": "2026-06-19T16:19:22.789Z",
+      "status": "rendered",
+      "localPath": "data/imports/mum/2026-06-19/official-audit/rendered/053-mum-ma-medicine-and-healt-master-of-biotechnology-53.json",
+      "sha256": "f573537beec611f0f6779469886eed3ea4e2e5f2d19ed3b719643fa2cfa9d09f",
+      "transport": "playwright-rendered-dom"
+    },
+    {
+      "id": "rendered-mum-ma-medicine-and-healt-master-of-clinical-psychology-54",
+      "url": "https://www.monash.edu.my/study/postgraduate-and-research/medicine-health-sciences/master-of-clinical-psychology",
+      "role": "field-authority",
+      "title": "Master of Clinical Psychology in Malaysia | Apply Now",
+      "retrievedAt": "2026-06-19T16:19:27.714Z",
+      "status": "rendered",
+      "localPath": "data/imports/mum/2026-06-19/official-audit/rendered/054-mum-ma-medicine-and-healt-master-of-clinical-psychology-54.json",
+      "sha256": "e7b3e7c509c16cde1976439ae1e0eaf467623d50a8ec0ed91d90b1d06f522376",
+      "transport": "playwright-rendered-dom"
+    },
+    {
+      "id": "rendered-mum-phd-medicine-and-healt-phd-phd-55",
+      "url": "https://www.monash.edu.my/study/postgraduate-and-research/medicine-health-sciences/phd",
+      "role": "field-authority",
+      "title": "Doctor of Philosophy (PhD) - Medicine and Health Sciences - PhD in Psychology Malaysia",
+      "retrievedAt": "2026-06-19T16:19:32.698Z",
+      "status": "rendered",
+      "localPath": "data/imports/mum/2026-06-19/official-audit/rendered/055-mum-phd-medicine-and-healt-phd-phd-55.json",
+      "sha256": "9bbff841343e6d2df4a0ea6b43aa720c49114c6853e1d5f749972d81ebc965ea",
+      "transport": "playwright-rendered-dom"
+    },
+    {
+      "id": "rendered-mum-ma-pharmacy-master-of-pharmaceutical-science-56",
+      "url": "https://www.monash.edu.my/study/postgraduate-and-research/pharmacy/master-of-pharmaceutical-science",
+      "role": "field-authority",
+      "title": "Master of Pharmaceutical Science | Monash Malaysia",
+      "retrievedAt": "2026-06-19T16:19:37.864Z",
+      "status": "rendered",
+      "localPath": "data/imports/mum/2026-06-19/official-audit/rendered/056-mum-ma-pharmacy-master-of-pharmaceutical-science-56.json",
+      "sha256": "effe00901e4299f85125f452eaa7a20a8835b5537afd57064102b2cb1a9dabd4",
+      "transport": "playwright-rendered-dom"
+    },
+    {
+      "id": "rendered-mum-ma-pharmacy-mphil-57",
+      "url": "https://www.monash.edu.my/study/postgraduate-and-research/pharmacy/master-of-philosophy",
+      "role": "field-authority",
+      "title": "Master of Philosophy - Pharmacy - Monash University Malaysia",
+      "retrievedAt": "2026-06-19T16:19:42.845Z",
+      "status": "rendered",
+      "localPath": "data/imports/mum/2026-06-19/official-audit/rendered/057-mum-ma-pharmacy-mphil-57.json",
+      "sha256": "33e4442c1c12bf35df9eee1a752728f5d273e367ac199df4439cb461d4c0ce19",
+      "transport": "playwright-rendered-dom"
+    },
+    {
+      "id": "rendered-mum-phd-pharmacy-phd-phd-58",
+      "url": "https://www.monash.edu.my/study/postgraduate-and-research/pharmacy/doctor-of-philosophy-phd",
+      "role": "field-authority",
+      "title": "Doctor of Philosophy (PhD) - Pharmacy - Monash University Malaysia",
+      "retrievedAt": "2026-06-19T16:19:47.784Z",
+      "status": "rendered",
+      "localPath": "data/imports/mum/2026-06-19/official-audit/rendered/058-mum-phd-pharmacy-phd-phd-58.json",
+      "sha256": "65c5104b074ec5274bd7406c2dca24cdf9be5f2480bfd9eeb08e2da6e8bc50b4",
+      "transport": "playwright-rendered-dom"
+    },
+    {
+      "id": "rendered-mum-ma-science-master-of-science-59",
+      "url": "https://www.monash.edu.my/study/postgraduate-and-research/science/master-science",
+      "role": "field-authority",
+      "title": "Master of Science (Research) Degree Program - Apply Now",
+      "retrievedAt": "2026-06-19T16:19:52.654Z",
+      "status": "rendered",
+      "localPath": "data/imports/mum/2026-06-19/official-audit/rendered/059-mum-ma-science-master-of-science-59.json",
+      "sha256": "1375168cac74e45ab6dff94cd2f364b53bcdde1f938d5e43ee41b9b30cd31f25",
+      "transport": "playwright-rendered-dom"
+    },
+    {
+      "id": "rendered-mum-phd-science-phd-phd-60",
+      "url": "https://www.monash.edu.my/study/postgraduate-and-research/science/phd",
+      "role": "field-authority",
+      "title": "Doctor of Philosophy (PhD) in Science - Monah Malaysia",
+      "retrievedAt": "2026-06-19T16:19:57.632Z",
+      "status": "rendered",
+      "localPath": "data/imports/mum/2026-06-19/official-audit/rendered/060-mum-phd-science-phd-phd-60.json",
+      "sha256": "b35fa71ff57de9ee3da8de4255dc99e3234bc3cf7b7955690e3c5a17dc1da3bf",
+      "transport": "playwright-rendered-dom"
+    },
+    {
+      "id": "rendered-source-application-form",
+      "url": "https://www.monash.edu.my/study/apply/application-form",
+      "role": "field-authority",
+      "title": "Complete the application details - Monash University Malaysia",
+      "retrievedAt": "2026-06-19T16:20:03.425Z",
+      "status": "rendered",
+      "localPath": "data/imports/mum/2026-06-19/official-audit/rendered/061-source-application-form.json",
+      "sha256": "1934cffd695fc8d2c005dd0a106854aa988e4f3a39d3d8b7d392f36a0acd8a3e",
+      "transport": "playwright-rendered-dom"
+    },
+    {
+      "id": "rendered-source-online-application",
+      "url": "https://www.monash.edu.my/study/apply/application-form/online-application",
+      "role": "field-authority",
+      "title": "Online application - Monash University Malaysia",
+      "retrievedAt": "2026-06-19T16:20:08.711Z",
+      "status": "rendered",
+      "localPath": "data/imports/mum/2026-06-19/official-audit/rendered/062-source-online-application.json",
+      "sha256": "dde3319c4a01fa8804f89c431b8cc4e2323e031bc8d1a43c8d86fe06cb07ab4f",
+      "transport": "playwright-rendered-dom"
+    },
+    {
+      "id": "rendered-source-undergraduate-academic",
+      "url": "https://www.monash.edu.my/study/entry-requirements/academic/undergraduate",
+      "role": "field-authority",
+      "title": "Undergraduate - Academic Entry Requirements - Monash University Malaysia",
+      "retrievedAt": "2026-06-19T16:20:13.650Z",
+      "status": "rendered",
+      "localPath": "data/imports/mum/2026-06-19/official-audit/rendered/063-source-undergraduate-academic.json",
+      "sha256": "977afd42cabfb4754f1c11cf28b02b9cc28baa2a8550fc7e92fac6d229bd3094",
+      "transport": "playwright-rendered-dom"
+    },
+    {
+      "id": "rendered-source-postgraduate-coursework-academic",
+      "url": "https://www.monash.edu.my/study/entry-requirements/academic/postgraduate-coursework",
+      "role": "field-authority",
+      "title": "Postgraduate coursework - Monash University Malaysia",
+      "retrievedAt": "2026-06-19T16:20:18.575Z",
+      "status": "rendered",
+      "localPath": "data/imports/mum/2026-06-19/official-audit/rendered/064-source-postgraduate-coursework-academic.json",
+      "sha256": "5dc1905684e396cbad375017262ed863fc129b079c72c3d27b907743360822c9",
+      "transport": "playwright-rendered-dom"
+    },
+    {
+      "id": "rendered-source-english-tests",
+      "url": "https://www.monash.edu.my/study/entry-requirements/english/tests",
+      "role": "field-authority",
+      "title": "English Proficiency Tests - Monash University Malaysia",
+      "retrievedAt": "2026-06-19T16:20:23.416Z",
+      "status": "rendered",
+      "localPath": "data/imports/mum/2026-06-19/official-audit/rendered/065-source-english-tests.json",
+      "sha256": "29140fcb594656eb83b7d54dfeccede8f3478b760237330b2f12ed89bf8a2acb",
+      "transport": "playwright-rendered-dom"
+    },
+    {
+      "id": "rendered-source-international-students",
+      "url": "https://www.monash.edu.my/study/entry-requirements/international-students2",
+      "role": "field-authority",
+      "title": "International students - Monash University Malaysia",
+      "retrievedAt": "2026-06-19T16:12:23.084Z",
+      "status": "rendered",
+      "localPath": "data/imports/mum/2026-06-19/official-audit/rendered/066-source-international-students.json",
+      "sha256": "d4adaaaba6341631ae595db19cef56692214e7a782e457a83c7043b76abe32b6",
+      "transport": "playwright-rendered-dom"
+    },
+    {
+      "id": "rendered-source-research-english",
+      "url": "https://www.monash.edu/graduate-research/study/apply/english-language-proficiency-requirements-for-admission",
+      "role": "field-authority",
+      "title": "English language proficiency requirements for admission - Graduate Research",
+      "retrievedAt": "2026-06-19T16:20:28.899Z",
+      "status": "rendered",
+      "localPath": "data/imports/mum/2026-06-19/official-audit/rendered/066-source-research-english.json",
+      "sha256": "27d02d14361bf8255d9a176b4e1c7bcd0000c8ae49cf65b2a3818e856069f5eb",
+      "transport": "playwright-rendered-dom"
+    },
+    {
+      "id": "rendered-source-institution-homepage",
+      "url": "https://www.monash.edu.my/",
+      "role": "institution-authority",
+      "title": "Monash University Malaysia | Top University in Malaysia",
+      "retrievedAt": "2026-06-19T16:12:27.833Z",
+      "status": "rendered",
+      "localPath": "data/imports/mum/2026-06-19/official-audit/rendered/067-source-institution-homepage.json",
+      "sha256": "bc70920d08c976c99c4313c3e30115255d0f90f8b13c90562c680b9453e7cb5a",
+      "transport": "playwright-rendered-dom"
+    },
+    {
+      "id": "rendered-source-international-students",
+      "url": "https://www.monash.edu.my/study/entry-requirements/international-students2",
+      "role": "field-authority",
+      "title": "International students - Monash University Malaysia",
+      "retrievedAt": "2026-06-19T16:20:33.727Z",
+      "status": "rendered",
+      "localPath": "data/imports/mum/2026-06-19/official-audit/rendered/067-source-international-students.json",
+      "sha256": "1222c9a263faef98d26c229f8d13b43cff29f04bcde26ce41ee31321fec04263",
+      "transport": "playwright-rendered-dom"
+    },
+    {
+      "id": "rendered-source-institution-homepage",
+      "url": "https://www.monash.edu.my/",
+      "role": "institution-authority",
+      "title": "Monash University Malaysia | Top University in Malaysia",
+      "retrievedAt": "2026-06-19T16:20:38.549Z",
+      "status": "rendered",
+      "localPath": "data/imports/mum/2026-06-19/official-audit/rendered/068-source-institution-homepage.json",
+      "sha256": "db2c704e47a274f0bf3f40be02d50c1a9ea16d90513b20178eca02b5f2858e15",
+      "transport": "playwright-rendered-dom"
+    },
+    {
+      "id": "rendered-source-graduate-research-admission-criteria",
+      "url": "https://www.monash.edu/graduate-research/study/apply/admission-criteria",
+      "role": "field-authority",
+      "title": "Academic entry requirements - Graduate Research",
+      "retrievedAt": "2026-06-19T17:23:00Z",
+      "status": "rendered",
+      "localPath": "data/imports/mum/2026-06-19/official-audit/rendered/069-source-graduate-research-admission-criteria.json",
+      "sha256": "bce8618d4556147518a4c36e66d2c70af6c57db1a26fe8acac35918e4ec73289",
+      "transport": "playwright-rendered-dom"
+    }
+  ],
+  "artifacts": [
+    {
+      "role": "manifest",
+      "path": "00_run_contract.json",
+      "sha256": "9301ecb44d50c6a21cb9dc28b69c156a18224da451c025db69d351a64cb143ca",
+      "description": "Run contract"
+    },
+    {
+      "role": "instruction-execution-ledger",
+      "path": "01_instruction_execution_ledger.json",
+      "sha256": "2839687274a1a8bd9437a6064aaa43a1f37c45a4d7344deabb459b1f599fba34",
+      "description": "Instruction ledger"
+    },
+    {
+      "role": "official-row-disposal",
+      "path": "04_official_row_disposal.json",
+      "sha256": "049828783d1ff2bf7c202b19eae427d1708c7f21bc2789f1a5afd895c1495fa7",
+      "description": "Official row disposal"
+    },
+    {
+      "role": "page-option-inventory",
+      "path": "06_page_option_inventory.json",
+      "sha256": "0d3ea67ffa0038541b349ff6a973f9e7f051a401ba74a5221f97f3fb30387fe1",
+      "description": "Page option inventory"
+    },
+    {
+      "role": "field-coverage-matrix",
+      "path": "07_field_coverage_matrix.json",
+      "sha256": "00ba6ac01cc546c47c5f87f20ba2919b6541c3a97a6630ae61fc8ee8ab27d199",
+      "description": "Field coverage matrix"
+    },
+    {
+      "role": "candidate",
+      "path": "08_candidate_dataset.json",
+      "sha256": "af0e9436f2184771529e09b8e6ecaddf63b28521621654024c3a572d304d08ce",
+      "description": "Candidate dataset"
+    },
+    {
+      "role": "source-trace",
+      "path": "09_source_to_candidate_trace.json",
+      "sha256": "617cdea22cb6731d30252596006c38e89dad35b0940b45e59c5c5fbea3397124",
+      "description": "Source to candidate trace"
+    },
+    {
+      "role": "display-parity-report",
+      "path": "10_display_parity_report.json",
+      "sha256": "8022eb2d75f1f9afba38456242bf665d7ad50b594ef975d0aac9fefecd1c36c4",
+      "description": "Display parity report"
+    },
+    {
+      "role": "audit",
+      "path": "12_operator_review_report.md",
+      "sha256": "d237cc5b1cd366bcf714a511c3357d6f169198fa2789b4b197ca8939e8dd1a1f",
+      "description": "Operator review report"
+    },
+    {
+      "role": "report",
+      "path": "tmp/dev-logs/2026-06-19-mum-official-audit.md",
+      "sha256": "f580aa015c844cb244e449d30f4aa25e59ed192aef44c412725ee4c2993cfab4",
+      "description": "Chinese local development note"
+    },
+    {
+      "role": "report",
+      "path": "14_publication_release_report.md",
+      "sha256": "82c7ca25ced6087b326c181b968287ef94f87aaa35a761e6700c81cc46b6f42d",
+      "description": "MUM public publication release report"
+    },
+    {
+      "role": "backup",
+      "path": "/Users/ian/Desktop/dev/study-malaysia/apps/api/tmp/backups/mum-official-audit-publish-before-2026-06-19T16-29-44-940Z.json",
+      "sha256": "bc592d1814c33894f70936b37533a91d8db37c67b2811d9a783c3a0d74822f1b",
+      "description": "Pre-publication database backup"
+    },
+    {
+      "role": "report",
+      "path": "/Users/ian/Desktop/dev/study-malaysia/output/playwright/mum-university-tabs-final.png",
+      "sha256": "875e1eca4ae1336da7e5a94854071b0b767f9bf18691681ee038f3b7e682b4cf",
+      "description": "Public university tabs screenshot"
+    },
+    {
+      "role": "report",
+      "path": "/Users/ian/Desktop/dev/study-malaysia/output/playwright/mum-program-phd-final.png",
+      "sha256": "2490a5bfd677501117a39f76f60c9bb4e451c99bea03fd1d81331383cec13859",
+      "description": "Public programme detail screenshot"
+    },
+    {
+      "role": "source-snapshot",
+      "path": "rendered/069-source-graduate-research-admission-criteria.json",
+      "sha256": "bce8618d4556147518a4c36e66d2c70af6c57db1a26fe8acac35918e4ec73289",
+      "description": "Monash Graduate Research admission criteria rendered evidence for PhD academic-performance requirement"
+    }
+  ],
+  "exceptions": {
+    "schemaVersion": 1,
+    "blocking": [],
+    "review": []
+  },
+  "verification": {
+    "candidateIntegrity": "passed",
+    "sourceHashes": "passed",
+    "fieldCoverage": "passed",
+    "manifestAudit": "passed",
+    "instructionExecution": "passed",
+    "directoryParse": "passed",
+    "identityReconciliation": "passed",
+    "feeReconciliation": "passed",
+    "displayParity": "passed",
+    "localizationAudit": "passed",
+    "localization": "passed",
+    "databaseBackup": "passed",
+    "importDryRun": "passed",
+    "transactionalImport": "passed",
+    "databaseWrite": "passed",
+    "databaseAudit": "passed",
+    "apiAudit": "passed",
+    "uiAudit": "passed",
+    "apiUiVerification": "passed",
+    "tests": "passed",
+    "builds": "passed",
+    "build": "passed",
+    "recordAudit": "passed",
+    "browserConsole": "passed",
+    "focusedDiff": "passed",
+    "feePolicy": "passed",
+    "publicInstitutionPreservation": "passed"
+  },
+  "decision": "published",
+  "acceptanceTarget": "commercial-display-ready",
+  "publishedAt": "2026-06-20T00:30:00+08:00",
+  "postImportAcceptance": {
+    "databaseUniversityId": 5,
+    "databaseUniversityCode": "MONASH",
+    "universityPublicDisplayStatus": "ready",
+    "universityIsPublished": true,
+    "programmeRows": 60,
+    "byLevel": {
+      "bachelor": 36,
+      "master": 17,
+      "phd": 7
+    },
+    "readyRows": 60,
+    "publishedRows": 60,
+    "calculatedFromOfficialRateRows": 51,
+    "officialTotalRows": 9,
+    "adminNeedsReviewRows": 0,
+    "legacyActiveRows": 0,
+    "latestBackup": "/Users/ian/Desktop/dev/study-malaysia/apps/api/tmp/backups/mum-official-audit-publish-before-2026-06-19T16-29-44-940Z.json"
+  }
+}

@@ -1,0 +1,3874 @@
+{
+  "generatedAt": "2026-06-24T17:57:51+08:00",
+  "tuitionPolicy": "Tuition fields are intentionally preserved from the latest official website programme pages. This PDF sync does not update tuitionAmount, tuitionDisplay, officialTuitionMYR, officialTuitionNote, annualTuitionCny, or fee source fields.",
+  "pdfSources": [
+    {
+      "id": "brochure-brochures-aup-pdf",
+      "url": "https://newinti.edu.my/brochures/aup.pdf",
+      "extractedTextPath": "data/imports/iiu/2026-06-20/iiu-20260620/sources/raw/brochure-brochures-aup-pdf.txt",
+      "published": "Published: MAY2026"
+    },
+    {
+      "id": "brochure-brochures-business-pdf",
+      "url": "https://newinti.edu.my/brochures/business.pdf",
+      "extractedTextPath": "data/imports/iiu/2026-06-20/iiu-20260620/sources/raw/brochure-brochures-business-pdf.txt",
+      "published": "Published: OCT2025"
+    },
+    {
+      "id": "brochure-brochures-biotechnology-pdf",
+      "url": "https://newinti.edu.my/brochures/biotechnology.pdf",
+      "extractedTextPath": "data/imports/iiu/2026-06-20/iiu-20260620/sources/raw/brochure-brochures-biotechnology-pdf.txt",
+      "published": "Published:MAY2026"
+    },
+    {
+      "id": "brochure-brochures-art-and-design-pdf",
+      "url": "https://newinti.edu.my/brochures/art-and-design.pdf",
+      "extractedTextPath": "data/imports/iiu/2026-06-20/iiu-20260620/sources/raw/brochure-brochures-art-and-design-pdf.txt",
+      "published": "Published: MAY2026"
+    },
+    {
+      "id": "brochure-brochures-physiotherapy-pdf",
+      "url": "https://newinti.edu.my/brochures/physiotherapy.pdf",
+      "extractedTextPath": "data/imports/iiu/2026-06-20/iiu-20260620/sources/raw/brochure-brochures-physiotherapy-pdf.txt",
+      "published": "Published: MAY2026"
+    },
+    {
+      "id": "brochure-brochures-bachelor-in-music-production-and-audio-technology-honours-pdf",
+      "url": "https://newinti.edu.my/brochures/Bachelor-in-Music-Production-and-Audio-Technology-(Honours).pdf",
+      "extractedTextPath": "data/imports/iiu/2026-06-20/iiu-20260620/sources/raw/brochure-brochures-bachelor-in-music-production-and-audio-technology-honours-pdf.txt",
+      "published": "All information provided in this guide is correct at the time of printing, and subject to change from time to time. Published: OCT 2025"
+    },
+    {
+      "id": "brochure-brochures-bachelor-in-sports-management-honours-pdf",
+      "url": "https://newinti.edu.my/brochures/Bachelor-in-Sports-Management-(Honours).pdf",
+      "extractedTextPath": "data/imports/iiu/2026-06-20/iiu-20260620/sources/raw/brochure-brochures-bachelor-in-sports-management-honours-pdf.txt",
+      "published": "All information provided in this guide is correct at the time of printing, and subject to change from time to time. Published: FEB 2026"
+    },
+    {
+      "id": "brochure-brochures-mass-communication-pdf",
+      "url": "https://newinti.edu.my/brochures/mass-communication.pdf",
+      "extractedTextPath": "data/imports/iiu/2026-06-20/iiu-20260620/sources/raw/brochure-brochures-mass-communication-pdf.txt",
+      "published": "Published: MAY2026"
+    },
+    {
+      "id": "brochure-brochures-snhu-pdf",
+      "url": "https://newinti.edu.my/brochures/snhu.pdf",
+      "extractedTextPath": "data/imports/iiu/2026-06-20/iiu-20260620/sources/raw/brochure-brochures-snhu-pdf.txt",
+      "published": ""
+    },
+    {
+      "id": "brochure-brochures-sut-pdf",
+      "url": "https://newinti.edu.my/brochures/sut.pdf",
+      "extractedTextPath": "data/imports/iiu/2026-06-20/iiu-20260620/sources/raw/brochure-brochures-sut-pdf.txt",
+      "published": ""
+    },
+    {
+      "id": "brochure-brochures-inti-wa-mba-booklet-pdf",
+      "url": "https://newinti.edu.my/brochures/INTI-WA-MBA-Booklet.pdf",
+      "extractedTextPath": "data/imports/iiu/2026-06-20/iiu-20260620/sources/raw/brochure-brochures-inti-wa-mba-booklet-pdf.txt",
+      "published": ""
+    },
+    {
+      "id": "brochure-brochures-engineering-pdf",
+      "url": "https://newinti.edu.my/brochures/engineering.pdf",
+      "extractedTextPath": "data/imports/iiu/2026-06-20/iiu-20260620/sources/raw/brochure-brochures-engineering-pdf.txt",
+      "published": "Published: MAY2026"
+    },
+    {
+      "id": "brochure-brochures-computing-pdf",
+      "url": "https://newinti.edu.my/brochures/computing.pdf",
+      "extractedTextPath": "data/imports/iiu/2026-06-20/iiu-20260620/sources/raw/brochure-brochures-computing-pdf.txt",
+      "published": "Published: MAY2026"
+    },
+    {
+      "id": "brochure-brochures-bachelor-of-education-honours-in-teaching-chinese-as-a-second-language-pdf",
+      "url": "https://newinti.edu.my/brochures/Bachelor-of-Education-(Honours)-in-Teaching-Chinese-as-a-Second-Language.pdf",
+      "extractedTextPath": "data/imports/iiu/2026-06-20/iiu-20260620/sources/raw/brochure-brochures-bachelor-of-education-honours-in-teaching-chinese-as-a-second-language-pdf.txt",
+      "published": "All information provided in this guide is correct at the time of printing, and subject to change from time to time. Published: JAN 2026"
+    },
+    {
+      "id": "brochure-brochures-hospitality-pdf",
+      "url": "https://newinti.edu.my/brochures/hospitality.pdf",
+      "extractedTextPath": "data/imports/iiu/2026-06-20/iiu-20260620/sources/raw/brochure-brochures-hospitality-pdf.txt",
+      "published": "Published: MAY2026"
+    },
+    {
+      "id": "brochure-brochures-traditional-chinese-medicine-pdf",
+      "url": "https://newinti.edu.my/brochures/traditional-chinese-medicine.pdf",
+      "extractedTextPath": "data/imports/iiu/2026-06-20/iiu-20260620/sources/raw/brochure-brochures-traditional-chinese-medicine-pdf.txt",
+      "published": "Published: MAY2026"
+    },
+    {
+      "id": "brochure-brochures-iicp-inti-iu-mba-pdf",
+      "url": "https://newinti.edu.my/brochures/IICP-INTI-IU-MBA.pdf",
+      "extractedTextPath": "data/imports/iiu/2026-06-20/iiu-20260620/sources/raw/brochure-brochures-iicp-inti-iu-mba-pdf.txt",
+      "published": "Published: OCT2025"
+    },
+    {
+      "id": "brochure-brochures-master-of-science-in-engineering-and-eco-innovation-by-research-pdf",
+      "url": "https://newinti.edu.my/brochures/Master-of-Science-in-Engineering-and-Eco-Innovation-(by-Research).pdf",
+      "extractedTextPath": "data/imports/iiu/2026-06-20/iiu-20260620/sources/raw/brochure-brochures-master-of-science-in-engineering-and-eco-innovation-by-research-pdf.txt",
+      "published": "All information provided in this guide is correct at the time of printing, and subject to change from time to time. Published: OCT 2025"
+    },
+    {
+      "id": "brochure-brochures-master-of-science-in-facility-management-online-learning-pdf",
+      "url": "https://newinti.edu.my/brochures/Master-of-Science-in-Facility-Management-(Online-Learning).pdf",
+      "extractedTextPath": "data/imports/iiu/2026-06-20/iiu-20260620/sources/raw/brochure-brochures-master-of-science-in-facility-management-online-learning-pdf.txt",
+      "published": "All information provided in this guide is correct at the time of printing, and subject to change from time to time. Published: MAY2026"
+    },
+    {
+      "id": "brochure-brochures-master-of-science-in-information-systems-by-research-pdf",
+      "url": "https://newinti.edu.my/brochures/Master-of-Science-in-Information-Systems-(by-Research).pdf",
+      "extractedTextPath": "data/imports/iiu/2026-06-20/iiu-20260620/sources/raw/brochure-brochures-master-of-science-in-information-systems-by-research-pdf.txt",
+      "published": "All information provided in this guide is correct at the time of printing, and subject to change from time to time. Published: OCT 2025"
+    },
+    {
+      "id": "brochure-brochures-master-of-science-in-intergrated-project-management-online-learning-pdf",
+      "url": "https://newinti.edu.my/brochures/Master-of-Science-in-Intergrated-Project-Management-(Online-Learning).pdf",
+      "extractedTextPath": "data/imports/iiu/2026-06-20/iiu-20260620/sources/raw/brochure-brochures-master-of-science-in-intergrated-project-management-online-learning-pdf.txt",
+      "published": "All information provided in this guide is correct at the time of printing, and subject to change from time to time. Published: MAY 2026"
+    }
+  ],
+  "totals": {
+    "programs": 107,
+    "pdfSources": 21,
+    "matched": 100,
+    "unmatched": 7,
+    "updated": 100,
+    "unchanged": 7
+  },
+  "rows": [
+    {
+      "code": "INTI-B-001",
+      "nameEnOfficial": "Actuarial Science Program (American University Program)",
+      "matched": true,
+      "sourceId": "brochure-brochures-aup-pdf",
+      "sourceUrl": "https://newinti.edu.my/brochures/aup.pdf",
+      "score": 3,
+      "matchedTokenRatio": 1,
+      "differences": [
+        "officialEntryRequirementSourceUrl set to official PDF"
+      ],
+      "extracted": {
+        "matched": true,
+        "score": 3,
+        "matchedTokenRatio": 1,
+        "sourceId": "brochure-brochures-aup-pdf",
+        "sourceUrl": "https://newinti.edu.my/brochures/aup.pdf",
+        "sourceTextPath": "data/imports/iiu/2026-06-20/iiu-20260620/sources/raw/brochure-brochures-aup-pdf.txt",
+        "lineStart": 288,
+        "lineEnd": 298,
+        "matchedTokens": [
+          "actuarial",
+          "science",
+          "american"
+        ],
+        "durationYears": null
+      }
+    },
+    {
+      "code": "INTI-B-002",
+      "nameEnOfficial": "Australian Degree Transfer Programme (Commerce)",
+      "matched": true,
+      "sourceId": "brochure-brochures-business-pdf",
+      "sourceUrl": "https://newinti.edu.my/brochures/business.pdf",
+      "score": 3,
+      "matchedTokenRatio": 1,
+      "differences": [
+        "durationOfficial updated from PDF",
+        "officialIntake updated from PDF",
+        "officialEntryRequirementSourceUrl set to official PDF"
+      ],
+      "extracted": {
+        "matched": true,
+        "score": 3,
+        "matchedTokenRatio": 1,
+        "sourceId": "brochure-brochures-business-pdf",
+        "sourceUrl": "https://newinti.edu.my/brochures/business.pdf",
+        "sourceTextPath": "data/imports/iiu/2026-06-20/iiu-20260620/sources/raw/brochure-brochures-business-pdf.txt",
+        "lineStart": 3630,
+        "lineEnd": 3696,
+        "matchedTokens": [
+          "australian",
+          "transfer",
+          "commerce"
+        ],
+        "durationYears": null,
+        "durationOfficial": "1 + 2 Years 2 + 1 Years",
+        "intakeMonths": [
+          "January",
+          "May",
+          "August"
+        ],
+        "officialIntake": "INTI International University (R3/0410/6/0007)(09/29)(A11302) INTAKES: JAN, MAY & AUG Duration 1 + 2 Years 2 + 1 Years Students can transfer to the following universities:"
+      }
+    },
+    {
+      "code": "INTI-B-003",
+      "nameEnOfficial": "Australian Degree Transfer Programme (Science)",
+      "matched": true,
+      "sourceId": "brochure-brochures-biotechnology-pdf",
+      "sourceUrl": "https://newinti.edu.my/brochures/biotechnology.pdf",
+      "score": 3,
+      "matchedTokenRatio": 1,
+      "differences": [
+        "officialEntryRequirementSourceUrl set to official PDF"
+      ],
+      "extracted": {
+        "matched": true,
+        "score": 3,
+        "matchedTokenRatio": 1,
+        "sourceId": "brochure-brochures-biotechnology-pdf",
+        "sourceUrl": "https://newinti.edu.my/brochures/biotechnology.pdf",
+        "sourceTextPath": "data/imports/iiu/2026-06-20/iiu-20260620/sources/raw/brochure-brochures-biotechnology-pdf.txt",
+        "lineStart": 256,
+        "lineEnd": 365,
+        "matchedTokens": [
+          "australian",
+          "transfer",
+          "science"
+        ],
+        "durationYears": null
+      }
+    },
+    {
+      "code": "INTI-B-004",
+      "nameEnOfficial": "B.A. (Hons) in Fashion Management and Communication 3+0 in collaboration with Sheffield Hallam University, UK",
+      "matched": true,
+      "sourceId": "brochure-brochures-art-and-design-pdf",
+      "sourceUrl": "https://newinti.edu.my/brochures/art-and-design.pdf",
+      "score": 7,
+      "matchedTokenRatio": 1,
+      "differences": [
+        "officialEntryRequirementSourceUrl set to official PDF"
+      ],
+      "extracted": {
+        "matched": true,
+        "score": 7,
+        "matchedTokenRatio": 1,
+        "sourceId": "brochure-brochures-art-and-design-pdf",
+        "sourceUrl": "https://newinti.edu.my/brochures/art-and-design.pdf",
+        "sourceTextPath": "data/imports/iiu/2026-06-20/iiu-20260620/sources/raw/brochure-brochures-art-and-design-pdf.txt",
+        "lineStart": 176,
+        "lineEnd": 196,
+        "matchedTokens": [
+          "bachelor",
+          "arts",
+          "fashion",
+          "management",
+          "communication",
+          "sheffield",
+          "hallam"
+        ],
+        "durationYears": null
+      }
+    },
+    {
+      "code": "INTI-B-005",
+      "nameEnOfficial": "B.Sc. (Hons) in Physiotherapy",
+      "matched": true,
+      "sourceId": "brochure-brochures-physiotherapy-pdf",
+      "sourceUrl": "https://newinti.edu.my/brochures/physiotherapy.pdf",
+      "score": 3,
+      "matchedTokenRatio": 1,
+      "differences": [
+        "officialEntryRequirementSourceUrl set to official PDF"
+      ],
+      "extracted": {
+        "matched": true,
+        "score": 3,
+        "matchedTokenRatio": 1,
+        "sourceId": "brochure-brochures-physiotherapy-pdf",
+        "sourceUrl": "https://newinti.edu.my/brochures/physiotherapy.pdf",
+        "sourceTextPath": "data/imports/iiu/2026-06-20/iiu-20260620/sources/raw/brochure-brochures-physiotherapy-pdf.txt",
+        "lineStart": 243,
+        "lineEnd": 346,
+        "matchedTokens": [
+          "bachelor",
+          "science",
+          "physiotherapy"
+        ],
+        "durationYears": null
+      }
+    },
+    {
+      "code": "INTI-B-006",
+      "nameEnOfficial": "BA (Hons) Graphic Design 3+0 in collaboration with Sheffield Hallam University, UK",
+      "matched": true,
+      "sourceId": "brochure-brochures-art-and-design-pdf",
+      "sourceUrl": "https://newinti.edu.my/brochures/art-and-design.pdf",
+      "score": 6,
+      "matchedTokenRatio": 1,
+      "differences": [
+        "officialEntryRequirementSourceUrl set to official PDF"
+      ],
+      "extracted": {
+        "matched": true,
+        "score": 6,
+        "matchedTokenRatio": 1,
+        "sourceId": "brochure-brochures-art-and-design-pdf",
+        "sourceUrl": "https://newinti.edu.my/brochures/art-and-design.pdf",
+        "sourceTextPath": "data/imports/iiu/2026-06-20/iiu-20260620/sources/raw/brochure-brochures-art-and-design-pdf.txt",
+        "lineStart": 176,
+        "lineEnd": 196,
+        "matchedTokens": [
+          "bachelor",
+          "arts",
+          "graphic",
+          "design",
+          "sheffield",
+          "hallam"
+        ],
+        "durationYears": null
+      }
+    },
+    {
+      "code": "INTI-B-007",
+      "nameEnOfficial": "Bachelor in Music Production and Audio Technology (Honours)",
+      "matched": true,
+      "sourceId": "brochure-brochures-bachelor-in-music-production-and-audio-technology-honours-pdf",
+      "sourceUrl": "https://newinti.edu.my/brochures/Bachelor-in-Music-Production-and-Audio-Technology-(Honours).pdf",
+      "score": 5,
+      "matchedTokenRatio": 1,
+      "differences": [
+        "officialIntake updated from PDF",
+        "officialAcademicRequirement updated from PDF",
+        "requirement.gpa/note updated from PDF",
+        "officialEntryRequirementSourceUrl set to official PDF"
+      ],
+      "extracted": {
+        "matched": true,
+        "score": 5,
+        "matchedTokenRatio": 1,
+        "sourceId": "brochure-brochures-bachelor-in-music-production-and-audio-technology-honours-pdf",
+        "sourceUrl": "https://newinti.edu.my/brochures/Bachelor-in-Music-Production-and-Audio-Technology-(Honours).pdf",
+        "sourceTextPath": "data/imports/iiu/2026-06-20/iiu-20260620/sources/raw/brochure-brochures-bachelor-in-music-production-and-audio-technology-honours-pdf.txt",
+        "lineStart": 53,
+        "lineEnd": 90,
+        "matchedTokens": [
+          "bachelor",
+          "music",
+          "production",
+          "audio",
+          "technology"
+        ],
+        "durationYears": 3,
+        "durationOfficial": "3 Years",
+        "intakeMonths": [
+          "January",
+          "May",
+          "September"
+        ],
+        "officialIntake": "INTI International University (N/0215/6/0010)(07/30)(MQA/PA18353) Intake (s) JAN, MAY, SEPT Duration 3 Years ENTRY REQUIREMENTS: STPM - Pass STPM with a minimum of Grade C (GPA 2.00) in any two (2) subjects",
+        "officialAcademicRequirement": "STPM - Pass STPM with a minimum of Grade C (GPA 2.00) in any two (2) subjects STAM - Pass STAM with a minimum grade of Jayyid"
+      }
+    },
+    {
+      "code": "INTI-B-008",
+      "nameEnOfficial": "Bachelor in Sports Management (Honours)",
+      "matched": true,
+      "sourceId": "brochure-brochures-bachelor-in-sports-management-honours-pdf",
+      "sourceUrl": "https://newinti.edu.my/brochures/Bachelor-in-Sports-Management-(Honours).pdf",
+      "score": 3,
+      "matchedTokenRatio": 1,
+      "differences": [
+        "officialIntake updated from PDF",
+        "officialAcademicRequirement updated from PDF",
+        "requirement.gpa/note updated from PDF",
+        "officialEntryRequirementSourceUrl set to official PDF"
+      ],
+      "extracted": {
+        "matched": true,
+        "score": 3,
+        "matchedTokenRatio": 1,
+        "sourceId": "brochure-brochures-bachelor-in-sports-management-honours-pdf",
+        "sourceUrl": "https://newinti.edu.my/brochures/Bachelor-in-Sports-Management-(Honours).pdf",
+        "sourceTextPath": "data/imports/iiu/2026-06-20/iiu-20260620/sources/raw/brochure-brochures-bachelor-in-sports-management-honours-pdf.txt",
+        "lineStart": 5,
+        "lineEnd": 41,
+        "matchedTokens": [
+          "bachelor",
+          "sports",
+          "management"
+        ],
+        "durationYears": 3,
+        "durationOfficial": "3 Years",
+        "intakeMonths": [
+          "January",
+          "May",
+          "September"
+        ],
+        "officialIntake": "INTI International University (N/0414/6/0393)(07/30)(MQA/PA18352) Intake (s) JAN, MAY & SEPT Duration 3 Years ENTRY REQUIREMENTS STPM - Pass STPM with at least Grade C (GP 2.0) in any TWO subjects.",
+        "officialAcademicRequirement": "STPM - Pass STPM with at least Grade C (GP 2.0) in any TWO subjects. STAM - Pass STAM with at least Grade Jayyid* and a pass in Mathematics and English at SPM level or equivalent qualifications. MATRICULATION/FOUNDATION - Matriculation or Foundation with at least CGPA of 2.00.",
+        "gpa": 2
+      }
+    },
+    {
+      "code": "INTI-B-009",
+      "nameEnOfficial": "Bachelor of Accountancy (Honours)",
+      "matched": true,
+      "sourceId": "brochure-brochures-business-pdf",
+      "sourceUrl": "https://newinti.edu.my/brochures/business.pdf",
+      "score": 2,
+      "matchedTokenRatio": 1,
+      "differences": [
+        "officialEntryRequirementSourceUrl set to official PDF"
+      ],
+      "extracted": {
+        "matched": true,
+        "score": 2,
+        "matchedTokenRatio": 1,
+        "sourceId": "brochure-brochures-business-pdf",
+        "sourceUrl": "https://newinti.edu.my/brochures/business.pdf",
+        "sourceTextPath": "data/imports/iiu/2026-06-20/iiu-20260620/sources/raw/brochure-brochures-business-pdf.txt",
+        "lineStart": 656,
+        "lineEnd": 691,
+        "matchedTokens": [
+          "bachelor",
+          "accountancy"
+        ],
+        "durationYears": null
+      }
+    },
+    {
+      "code": "INTI-B-010",
+      "nameEnOfficial": "Bachelor of Accounting & Finance (Honours)",
+      "matched": true,
+      "sourceId": "brochure-brochures-business-pdf",
+      "sourceUrl": "https://newinti.edu.my/brochures/business.pdf",
+      "score": 3,
+      "matchedTokenRatio": 1,
+      "differences": [
+        "officialEntryRequirementSourceUrl set to official PDF"
+      ],
+      "extracted": {
+        "matched": true,
+        "score": 3,
+        "matchedTokenRatio": 1,
+        "sourceId": "brochure-brochures-business-pdf",
+        "sourceUrl": "https://newinti.edu.my/brochures/business.pdf",
+        "sourceTextPath": "data/imports/iiu/2026-06-20/iiu-20260620/sources/raw/brochure-brochures-business-pdf.txt",
+        "lineStart": 538,
+        "lineEnd": 550,
+        "matchedTokens": [
+          "bachelor",
+          "accounting",
+          "finance"
+        ],
+        "durationYears": null
+      }
+    },
+    {
+      "code": "INTI-B-011",
+      "nameEnOfficial": "Bachelor of Art (Honours) Interior Architecture & Design 3.5+0 in collaboration with Sheffield Hallam University, UK",
+      "matched": true,
+      "sourceId": "brochure-brochures-art-and-design-pdf",
+      "sourceUrl": "https://newinti.edu.my/brochures/art-and-design.pdf",
+      "score": 7,
+      "matchedTokenRatio": 1,
+      "differences": [
+        "officialEntryRequirementSourceUrl set to official PDF"
+      ],
+      "extracted": {
+        "matched": true,
+        "score": 7,
+        "matchedTokenRatio": 1,
+        "sourceId": "brochure-brochures-art-and-design-pdf",
+        "sourceUrl": "https://newinti.edu.my/brochures/art-and-design.pdf",
+        "sourceTextPath": "data/imports/iiu/2026-06-20/iiu-20260620/sources/raw/brochure-brochures-art-and-design-pdf.txt",
+        "lineStart": 176,
+        "lineEnd": 196,
+        "matchedTokens": [
+          "bachelor",
+          "art",
+          "interior",
+          "architecture",
+          "design",
+          "sheffield",
+          "hallam"
+        ],
+        "durationYears": null
+      }
+    },
+    {
+      "code": "INTI-B-012",
+      "nameEnOfficial": "Bachelor of Arts (Honours) Accounting and Finance 3+0 in collaboration with University of Hertfordshire, UK",
+      "matched": true,
+      "sourceId": "brochure-brochures-business-pdf",
+      "sourceUrl": "https://newinti.edu.my/brochures/business.pdf",
+      "score": 5,
+      "matchedTokenRatio": 1,
+      "differences": [
+        "officialEntryRequirementSourceUrl set to official PDF"
+      ],
+      "extracted": {
+        "matched": true,
+        "score": 5,
+        "matchedTokenRatio": 1,
+        "sourceId": "brochure-brochures-business-pdf",
+        "sourceUrl": "https://newinti.edu.my/brochures/business.pdf",
+        "sourceTextPath": "data/imports/iiu/2026-06-20/iiu-20260620/sources/raw/brochure-brochures-business-pdf.txt",
+        "lineStart": 538,
+        "lineEnd": 550,
+        "matchedTokens": [
+          "bachelor",
+          "arts",
+          "accounting",
+          "finance",
+          "hertfordshire"
+        ],
+        "durationYears": null
+      }
+    },
+    {
+      "code": "INTI-B-013",
+      "nameEnOfficial": "Bachelor of Arts (Honours) Advertising and Digital Marketing 3+0 in collaboration with University of Hertfordshire, UK",
+      "matched": true,
+      "sourceId": "brochure-brochures-business-pdf",
+      "sourceUrl": "https://newinti.edu.my/brochures/business.pdf",
+      "score": 6,
+      "matchedTokenRatio": 1,
+      "differences": [
+        "officialEntryRequirementSourceUrl set to official PDF"
+      ],
+      "extracted": {
+        "matched": true,
+        "score": 6,
+        "matchedTokenRatio": 1,
+        "sourceId": "brochure-brochures-business-pdf",
+        "sourceUrl": "https://newinti.edu.my/brochures/business.pdf",
+        "sourceTextPath": "data/imports/iiu/2026-06-20/iiu-20260620/sources/raw/brochure-brochures-business-pdf.txt",
+        "lineStart": 527,
+        "lineEnd": 533,
+        "matchedTokens": [
+          "bachelor",
+          "arts",
+          "advertising",
+          "digital",
+          "marketing",
+          "hertfordshire"
+        ],
+        "durationYears": null
+      }
+    },
+    {
+      "code": "INTI-B-014",
+      "nameEnOfficial": "Bachelor of Arts (Honours) Business Administration (3+0) in collaboration with University of Hertfordshire, UK",
+      "matched": true,
+      "sourceId": "brochure-brochures-business-pdf",
+      "sourceUrl": "https://newinti.edu.my/brochures/business.pdf",
+      "score": 5,
+      "matchedTokenRatio": 1,
+      "differences": [
+        "officialEntryRequirementSourceUrl set to official PDF"
+      ],
+      "extracted": {
+        "matched": true,
+        "score": 5,
+        "matchedTokenRatio": 1,
+        "sourceId": "brochure-brochures-business-pdf",
+        "sourceUrl": "https://newinti.edu.my/brochures/business.pdf",
+        "sourceTextPath": "data/imports/iiu/2026-06-20/iiu-20260620/sources/raw/brochure-brochures-business-pdf.txt",
+        "lineStart": 535,
+        "lineEnd": 541,
+        "matchedTokens": [
+          "bachelor",
+          "arts",
+          "business",
+          "administration",
+          "hertfordshire"
+        ],
+        "durationYears": null
+      }
+    },
+    {
+      "code": "INTI-B-015",
+      "nameEnOfficial": "Bachelor of Arts (Honours) Digital Media",
+      "matched": true,
+      "sourceId": "brochure-brochures-mass-communication-pdf",
+      "sourceUrl": "https://newinti.edu.my/brochures/mass-communication.pdf",
+      "score": 4,
+      "matchedTokenRatio": 1,
+      "differences": [
+        "officialEntryRequirementSourceUrl set to official PDF"
+      ],
+      "extracted": {
+        "matched": true,
+        "score": 4,
+        "matchedTokenRatio": 1,
+        "sourceId": "brochure-brochures-mass-communication-pdf",
+        "sourceUrl": "https://newinti.edu.my/brochures/mass-communication.pdf",
+        "sourceTextPath": "data/imports/iiu/2026-06-20/iiu-20260620/sources/raw/brochure-brochures-mass-communication-pdf.txt",
+        "lineStart": 289,
+        "lineEnd": 311,
+        "matchedTokens": [
+          "bachelor",
+          "arts",
+          "digital",
+          "media"
+        ],
+        "durationYears": null
+      }
+    },
+    {
+      "code": "INTI-B-016",
+      "nameEnOfficial": "Bachelor of Arts (Honours) Finance 3+0 in collaboration with University of Hertfordshire, UK",
+      "matched": true,
+      "sourceId": "brochure-brochures-business-pdf",
+      "sourceUrl": "https://newinti.edu.my/brochures/business.pdf",
+      "score": 4,
+      "matchedTokenRatio": 1,
+      "differences": [
+        "officialEntryRequirementSourceUrl set to official PDF"
+      ],
+      "extracted": {
+        "matched": true,
+        "score": 4,
+        "matchedTokenRatio": 1,
+        "sourceId": "brochure-brochures-business-pdf",
+        "sourceUrl": "https://newinti.edu.my/brochures/business.pdf",
+        "sourceTextPath": "data/imports/iiu/2026-06-20/iiu-20260620/sources/raw/brochure-brochures-business-pdf.txt",
+        "lineStart": 542,
+        "lineEnd": 550,
+        "matchedTokens": [
+          "bachelor",
+          "arts",
+          "finance",
+          "hertfordshire"
+        ],
+        "durationYears": null
+      }
+    },
+    {
+      "code": "INTI-B-017",
+      "nameEnOfficial": "Bachelor of Arts (Honours) Marketing (3+0) in collaboration with University of Hertfordshire, UK",
+      "matched": true,
+      "sourceId": "brochure-brochures-business-pdf",
+      "sourceUrl": "https://newinti.edu.my/brochures/business.pdf",
+      "score": 4,
+      "matchedTokenRatio": 1,
+      "differences": [
+        "officialEntryRequirementSourceUrl set to official PDF"
+      ],
+      "extracted": {
+        "matched": true,
+        "score": 4,
+        "matchedTokenRatio": 1,
+        "sourceId": "brochure-brochures-business-pdf",
+        "sourceUrl": "https://newinti.edu.my/brochures/business.pdf",
+        "sourceTextPath": "data/imports/iiu/2026-06-20/iiu-20260620/sources/raw/brochure-brochures-business-pdf.txt",
+        "lineStart": 531,
+        "lineEnd": 537,
+        "matchedTokens": [
+          "bachelor",
+          "arts",
+          "marketing",
+          "hertfordshire"
+        ],
+        "durationYears": null
+      }
+    },
+    {
+      "code": "INTI-B-018",
+      "nameEnOfficial": "Bachelor of Arts (Honours) Mass Communications 3+0 in collaboration with the University of Hertfordshire, UK",
+      "matched": true,
+      "sourceId": "brochure-brochures-mass-communication-pdf",
+      "sourceUrl": "https://newinti.edu.my/brochures/mass-communication.pdf",
+      "score": 5,
+      "matchedTokenRatio": 1,
+      "differences": [
+        "officialEntryRequirementSourceUrl set to official PDF"
+      ],
+      "extracted": {
+        "matched": true,
+        "score": 5,
+        "matchedTokenRatio": 1,
+        "sourceId": "brochure-brochures-mass-communication-pdf",
+        "sourceUrl": "https://newinti.edu.my/brochures/mass-communication.pdf",
+        "sourceTextPath": "data/imports/iiu/2026-06-20/iiu-20260620/sources/raw/brochure-brochures-mass-communication-pdf.txt",
+        "lineStart": 289,
+        "lineEnd": 311,
+        "matchedTokens": [
+          "bachelor",
+          "arts",
+          "mass",
+          "communications",
+          "hertfordshire"
+        ],
+        "durationYears": null
+      }
+    },
+    {
+      "code": "INTI-B-019",
+      "nameEnOfficial": "Bachelor of Arts in Communication 4+0 in collaboration with Southern New Hampshire University, USA",
+      "matched": false,
+      "score": 0,
+      "matchedTokenRatio": 0,
+      "differences": [],
+      "extracted": {
+        "matched": false,
+        "score": 0,
+        "matchedTokenRatio": 0
+      }
+    },
+    {
+      "code": "INTI-B-020",
+      "nameEnOfficial": "Bachelor of Arts in Psychology 4+0 in collaboration with Southern New Hampshire University, USA",
+      "matched": false,
+      "score": 0,
+      "matchedTokenRatio": 0,
+      "differences": [],
+      "extracted": {
+        "matched": false,
+        "score": 0,
+        "matchedTokenRatio": 0
+      }
+    },
+    {
+      "code": "INTI-B-021",
+      "nameEnOfficial": "Bachelor of Banking and Finance (Honours)",
+      "matched": true,
+      "sourceId": "brochure-brochures-business-pdf",
+      "sourceUrl": "https://newinti.edu.my/brochures/business.pdf",
+      "score": 3,
+      "matchedTokenRatio": 1,
+      "differences": [
+        "officialEntryRequirementSourceUrl set to official PDF"
+      ],
+      "extracted": {
+        "matched": true,
+        "score": 3,
+        "matchedTokenRatio": 1,
+        "sourceId": "brochure-brochures-business-pdf",
+        "sourceUrl": "https://newinti.edu.my/brochures/business.pdf",
+        "sourceTextPath": "data/imports/iiu/2026-06-20/iiu-20260620/sources/raw/brochure-brochures-business-pdf.txt",
+        "lineStart": 706,
+        "lineEnd": 717,
+        "matchedTokens": [
+          "bachelor",
+          "banking",
+          "finance"
+        ],
+        "durationYears": null
+      }
+    },
+    {
+      "code": "INTI-B-022",
+      "nameEnOfficial": "Bachelor of Biotechnology (Hons)",
+      "matched": true,
+      "sourceId": "brochure-brochures-biotechnology-pdf",
+      "sourceUrl": "https://newinti.edu.my/brochures/biotechnology.pdf",
+      "score": 2,
+      "matchedTokenRatio": 1,
+      "differences": [
+        "officialEntryRequirementSourceUrl set to official PDF"
+      ],
+      "extracted": {
+        "matched": true,
+        "score": 2,
+        "matchedTokenRatio": 1,
+        "sourceId": "brochure-brochures-biotechnology-pdf",
+        "sourceUrl": "https://newinti.edu.my/brochures/biotechnology.pdf",
+        "sourceTextPath": "data/imports/iiu/2026-06-20/iiu-20260620/sources/raw/brochure-brochures-biotechnology-pdf.txt",
+        "lineStart": 252,
+        "lineEnd": 365,
+        "matchedTokens": [
+          "bachelor",
+          "biotechnology"
+        ],
+        "durationYears": null
+      }
+    },
+    {
+      "code": "INTI-B-023",
+      "nameEnOfficial": "Bachelor of Business (3+0) in collaboration with Swinburne University of Technology, Australia",
+      "matched": true,
+      "sourceId": "brochure-brochures-sut-pdf",
+      "sourceUrl": "https://newinti.edu.my/brochures/sut.pdf",
+      "score": 5,
+      "matchedTokenRatio": 1,
+      "differences": [
+        "officialEntryRequirementSourceUrl set to official PDF"
+      ],
+      "extracted": {
+        "matched": true,
+        "score": 5,
+        "matchedTokenRatio": 1,
+        "sourceId": "brochure-brochures-sut-pdf",
+        "sourceUrl": "https://newinti.edu.my/brochures/sut.pdf",
+        "sourceTextPath": "data/imports/iiu/2026-06-20/iiu-20260620/sources/raw/brochure-brochures-sut-pdf.txt",
+        "lineStart": 715,
+        "lineEnd": 807,
+        "matchedTokens": [
+          "bachelor",
+          "business",
+          "swinburne",
+          "technology",
+          "australia"
+        ],
+        "durationYears": null
+      }
+    },
+    {
+      "code": "INTI-B-024",
+      "nameEnOfficial": "Bachelor of Business (Honours) Accounting",
+      "matched": true,
+      "sourceId": "brochure-brochures-business-pdf",
+      "sourceUrl": "https://newinti.edu.my/brochures/business.pdf",
+      "score": 3,
+      "matchedTokenRatio": 1,
+      "differences": [
+        "officialEntryRequirementSourceUrl set to official PDF"
+      ],
+      "extracted": {
+        "matched": true,
+        "score": 3,
+        "matchedTokenRatio": 1,
+        "sourceId": "brochure-brochures-business-pdf",
+        "sourceUrl": "https://newinti.edu.my/brochures/business.pdf",
+        "sourceTextPath": "data/imports/iiu/2026-06-20/iiu-20260620/sources/raw/brochure-brochures-business-pdf.txt",
+        "lineStart": 535,
+        "lineEnd": 541,
+        "matchedTokens": [
+          "bachelor",
+          "business",
+          "accounting"
+        ],
+        "durationYears": null
+      }
+    },
+    {
+      "code": "INTI-B-025",
+      "nameEnOfficial": "Bachelor of Business (Honours) Business Administration",
+      "matched": true,
+      "sourceId": "brochure-brochures-business-pdf",
+      "sourceUrl": "https://newinti.edu.my/brochures/business.pdf",
+      "score": 3,
+      "matchedTokenRatio": 1,
+      "differences": [
+        "officialEntryRequirementSourceUrl set to official PDF"
+      ],
+      "extracted": {
+        "matched": true,
+        "score": 3,
+        "matchedTokenRatio": 1,
+        "sourceId": "brochure-brochures-business-pdf",
+        "sourceUrl": "https://newinti.edu.my/brochures/business.pdf",
+        "sourceTextPath": "data/imports/iiu/2026-06-20/iiu-20260620/sources/raw/brochure-brochures-business-pdf.txt",
+        "lineStart": 535,
+        "lineEnd": 541,
+        "matchedTokens": [
+          "bachelor",
+          "business",
+          "administration"
+        ],
+        "durationYears": null
+      }
+    },
+    {
+      "code": "INTI-B-026",
+      "nameEnOfficial": "Bachelor of Business (Honours) Business Administration – Online Learning",
+      "matched": true,
+      "sourceId": "brochure-brochures-inti-wa-mba-booklet-pdf",
+      "sourceUrl": "https://newinti.edu.my/brochures/INTI-WA-MBA-Booklet.pdf",
+      "score": 3,
+      "matchedTokenRatio": 0.75,
+      "differences": [
+        "officialEntryRequirementSourceUrl set to official PDF"
+      ],
+      "extracted": {
+        "matched": true,
+        "score": 3,
+        "matchedTokenRatio": 0.75,
+        "sourceId": "brochure-brochures-inti-wa-mba-booklet-pdf",
+        "sourceUrl": "https://newinti.edu.my/brochures/INTI-WA-MBA-Booklet.pdf",
+        "sourceTextPath": "data/imports/iiu/2026-06-20/iiu-20260620/sources/raw/brochure-brochures-inti-wa-mba-booklet-pdf.txt",
+        "lineStart": 207,
+        "lineEnd": 320,
+        "matchedTokens": [
+          "business",
+          "administration",
+          "learning"
+        ],
+        "durationYears": null
+      }
+    },
+    {
+      "code": "INTI-B-027",
+      "nameEnOfficial": "Bachelor of Business (Honours) Digital Enterprise Management",
+      "matched": true,
+      "sourceId": "brochure-brochures-business-pdf",
+      "sourceUrl": "https://newinti.edu.my/brochures/business.pdf",
+      "score": 5,
+      "matchedTokenRatio": 1,
+      "differences": [
+        "officialEntryRequirementSourceUrl set to official PDF"
+      ],
+      "extracted": {
+        "matched": true,
+        "score": 5,
+        "matchedTokenRatio": 1,
+        "sourceId": "brochure-brochures-business-pdf",
+        "sourceUrl": "https://newinti.edu.my/brochures/business.pdf",
+        "sourceTextPath": "data/imports/iiu/2026-06-20/iiu-20260620/sources/raw/brochure-brochures-business-pdf.txt",
+        "lineStart": 730,
+        "lineEnd": 741,
+        "matchedTokens": [
+          "bachelor",
+          "business",
+          "digital",
+          "enterprise",
+          "management"
+        ],
+        "durationYears": null
+      }
+    },
+    {
+      "code": "INTI-B-028",
+      "nameEnOfficial": "Bachelor of Business (Honours) Finance",
+      "matched": true,
+      "sourceId": "brochure-brochures-business-pdf",
+      "sourceUrl": "https://newinti.edu.my/brochures/business.pdf",
+      "score": 3,
+      "matchedTokenRatio": 1,
+      "differences": [
+        "officialEntryRequirementSourceUrl set to official PDF"
+      ],
+      "extracted": {
+        "matched": true,
+        "score": 3,
+        "matchedTokenRatio": 1,
+        "sourceId": "brochure-brochures-business-pdf",
+        "sourceUrl": "https://newinti.edu.my/brochures/business.pdf",
+        "sourceTextPath": "data/imports/iiu/2026-06-20/iiu-20260620/sources/raw/brochure-brochures-business-pdf.txt",
+        "lineStart": 535,
+        "lineEnd": 541,
+        "matchedTokens": [
+          "bachelor",
+          "business",
+          "finance"
+        ],
+        "durationYears": null
+      }
+    },
+    {
+      "code": "INTI-B-029",
+      "nameEnOfficial": "Bachelor of Business (Honours) Human Resource Management",
+      "matched": true,
+      "sourceId": "brochure-brochures-business-pdf",
+      "sourceUrl": "https://newinti.edu.my/brochures/business.pdf",
+      "score": 5,
+      "matchedTokenRatio": 1,
+      "differences": [
+        "officialEntryRequirementSourceUrl set to official PDF"
+      ],
+      "extracted": {
+        "matched": true,
+        "score": 5,
+        "matchedTokenRatio": 1,
+        "sourceId": "brochure-brochures-business-pdf",
+        "sourceUrl": "https://newinti.edu.my/brochures/business.pdf",
+        "sourceTextPath": "data/imports/iiu/2026-06-20/iiu-20260620/sources/raw/brochure-brochures-business-pdf.txt",
+        "lineStart": 732,
+        "lineEnd": 741,
+        "matchedTokens": [
+          "bachelor",
+          "business",
+          "human",
+          "resource",
+          "management"
+        ],
+        "durationYears": null
+      }
+    },
+    {
+      "code": "INTI-B-030",
+      "nameEnOfficial": "Bachelor of Business (Honours) Human Resource Management – Online Learning",
+      "matched": true,
+      "sourceId": "brochure-brochures-inti-wa-mba-booklet-pdf",
+      "sourceUrl": "https://newinti.edu.my/brochures/INTI-WA-MBA-Booklet.pdf",
+      "score": 3,
+      "matchedTokenRatio": 0.5,
+      "differences": [
+        "durationOfficial updated from PDF",
+        "officialIntake updated from PDF",
+        "officialAcademicRequirement updated from PDF",
+        "requirement.gpa/note updated from PDF",
+        "officialEntryRequirementSourceUrl set to official PDF"
+      ],
+      "extracted": {
+        "matched": true,
+        "score": 3,
+        "matchedTokenRatio": 0.5,
+        "sourceId": "brochure-brochures-inti-wa-mba-booklet-pdf",
+        "sourceUrl": "https://newinti.edu.my/brochures/INTI-WA-MBA-Booklet.pdf",
+        "sourceTextPath": "data/imports/iiu/2026-06-20/iiu-20260620/sources/raw/brochure-brochures-inti-wa-mba-booklet-pdf.txt",
+        "lineStart": 2971,
+        "lineEnd": 3142,
+        "matchedTokens": [
+          "bachelor",
+          "business",
+          "learning"
+        ],
+        "durationYears": 3,
+        "durationOfficial": "Full Time: 3 Years Part Time: 6 Years",
+        "intakeMonths": [
+          "January",
+          "March",
+          "May",
+          "August",
+          "October"
+        ],
+        "officialIntake": "Intake(s) JAN, MAR, MAY, AUG, OCT Entry Requirements",
+        "officialAcademicRequirement": "• UEC (Unified Examination Certificate): Pass UEC with 5 subjects at Grade B AND pass Mathematics and English • STPM: Pass with CGPA 2.0 (Grade C in any 2 subjects) AND pass Mathematics and English in SPM or equivalent • A Level: Pass A Level in 2 subjects; and Pass Mathematics and English in SPM, O-Level or equivalent • SACE: 4 or 5 passes with ATAR of 55 AND pass in Mathematics and English at SPM level or its equivalent • NSW (HSC): 10 units with ATAR of 55 AND pass in Mathematics and English at SPM level or its equivalent • Australian Year 12: 4 or 5 passes with ATAR of 55 AND pass in Mathematics and English at SPM level or its equivalent • Matriculation / Pre-University: Completion of matriculation / Pre-university programme with minimum CGPA of 2.0 • Diploma (Accredited): Completion of",
+        "gpa": 2
+      }
+    },
+    {
+      "code": "INTI-B-031",
+      "nameEnOfficial": "Bachelor of Business (Honours) in Entrepreneurship and Marketing",
+      "matched": true,
+      "sourceId": "brochure-brochures-business-pdf",
+      "sourceUrl": "https://newinti.edu.my/brochures/business.pdf",
+      "score": 4,
+      "matchedTokenRatio": 1,
+      "differences": [
+        "officialEntryRequirementSourceUrl set to official PDF"
+      ],
+      "extracted": {
+        "matched": true,
+        "score": 4,
+        "matchedTokenRatio": 1,
+        "sourceId": "brochure-brochures-business-pdf",
+        "sourceUrl": "https://newinti.edu.my/brochures/business.pdf",
+        "sourceTextPath": "data/imports/iiu/2026-06-20/iiu-20260620/sources/raw/brochure-brochures-business-pdf.txt",
+        "lineStart": 728,
+        "lineEnd": 741,
+        "matchedTokens": [
+          "bachelor",
+          "business",
+          "entrepreneurship",
+          "marketing"
+        ],
+        "durationYears": null
+      }
+    },
+    {
+      "code": "INTI-B-032",
+      "nameEnOfficial": "Bachelor of Business (Honours) in International Business and Logistics Supply Chain Management",
+      "matched": true,
+      "sourceId": "brochure-brochures-business-pdf",
+      "sourceUrl": "https://newinti.edu.my/brochures/business.pdf",
+      "score": 6,
+      "matchedTokenRatio": 1,
+      "differences": [
+        "officialEntryRequirementSourceUrl set to official PDF"
+      ],
+      "extracted": {
+        "matched": true,
+        "score": 6,
+        "matchedTokenRatio": 1,
+        "sourceId": "brochure-brochures-business-pdf",
+        "sourceUrl": "https://newinti.edu.my/brochures/business.pdf",
+        "sourceTextPath": "data/imports/iiu/2026-06-20/iiu-20260620/sources/raw/brochure-brochures-business-pdf.txt",
+        "lineStart": 732,
+        "lineEnd": 741,
+        "matchedTokens": [
+          "bachelor",
+          "business",
+          "logistics",
+          "supply",
+          "chain",
+          "management"
+        ],
+        "durationYears": null
+      }
+    },
+    {
+      "code": "INTI-B-033",
+      "nameEnOfficial": "Bachelor of Business (Honours) International Business",
+      "matched": true,
+      "sourceId": "brochure-brochures-business-pdf",
+      "sourceUrl": "https://newinti.edu.my/brochures/business.pdf",
+      "score": 2,
+      "matchedTokenRatio": 1,
+      "differences": [
+        "officialEntryRequirementSourceUrl set to official PDF"
+      ],
+      "extracted": {
+        "matched": true,
+        "score": 2,
+        "matchedTokenRatio": 1,
+        "sourceId": "brochure-brochures-business-pdf",
+        "sourceUrl": "https://newinti.edu.my/brochures/business.pdf",
+        "sourceTextPath": "data/imports/iiu/2026-06-20/iiu-20260620/sources/raw/brochure-brochures-business-pdf.txt",
+        "lineStart": 415,
+        "lineEnd": 426,
+        "matchedTokens": [
+          "bachelor",
+          "business"
+        ],
+        "durationYears": null
+      }
+    },
+    {
+      "code": "INTI-B-034",
+      "nameEnOfficial": "Bachelor of Business (Honours) International Business – Online Learning",
+      "matched": true,
+      "sourceId": "brochure-brochures-inti-wa-mba-booklet-pdf",
+      "sourceUrl": "https://newinti.edu.my/brochures/INTI-WA-MBA-Booklet.pdf",
+      "score": 3,
+      "matchedTokenRatio": 1,
+      "differences": [
+        "durationOfficial updated from PDF",
+        "officialIntake updated from PDF",
+        "officialAcademicRequirement updated from PDF",
+        "requirement.gpa/note updated from PDF",
+        "officialEntryRequirementSourceUrl set to official PDF"
+      ],
+      "extracted": {
+        "matched": true,
+        "score": 3,
+        "matchedTokenRatio": 1,
+        "sourceId": "brochure-brochures-inti-wa-mba-booklet-pdf",
+        "sourceUrl": "https://newinti.edu.my/brochures/INTI-WA-MBA-Booklet.pdf",
+        "sourceTextPath": "data/imports/iiu/2026-06-20/iiu-20260620/sources/raw/brochure-brochures-inti-wa-mba-booklet-pdf.txt",
+        "lineStart": 2971,
+        "lineEnd": 3142,
+        "matchedTokens": [
+          "bachelor",
+          "business",
+          "learning"
+        ],
+        "durationYears": 3,
+        "durationOfficial": "Full Time: 3 Years Part Time: 6 Years",
+        "intakeMonths": [
+          "January",
+          "March",
+          "May",
+          "August",
+          "October"
+        ],
+        "officialIntake": "Intake(s) JAN, MAR, MAY, AUG, OCT Entry Requirements",
+        "officialAcademicRequirement": "• UEC (Unified Examination Certificate): Pass UEC with 5 subjects at Grade B AND pass Mathematics and English • STPM: Pass with CGPA 2.0 (Grade C in any 2 subjects) AND pass Mathematics and English in SPM or equivalent • A Level: Pass A Level in 2 subjects; and Pass Mathematics and English in SPM, O-Level or equivalent • SACE: 4 or 5 passes with ATAR of 55 AND pass in Mathematics and English at SPM level or its equivalent • NSW (HSC): 10 units with ATAR of 55 AND pass in Mathematics and English at SPM level or its equivalent • Australian Year 12: 4 or 5 passes with ATAR of 55 AND pass in Mathematics and English at SPM level or its equivalent • Matriculation / Pre-University: Completion of matriculation / Pre-university programme with minimum CGPA of 2.0 • Diploma (Accredited): Completion of",
+        "gpa": 2
+      }
+    },
+    {
+      "code": "INTI-B-035",
+      "nameEnOfficial": "Bachelor of Business (Honours) Logistics and Supply Chain Management",
+      "matched": true,
+      "sourceId": "brochure-brochures-business-pdf",
+      "sourceUrl": "https://newinti.edu.my/brochures/business.pdf",
+      "score": 6,
+      "matchedTokenRatio": 1,
+      "differences": [
+        "officialEntryRequirementSourceUrl set to official PDF"
+      ],
+      "extracted": {
+        "matched": true,
+        "score": 6,
+        "matchedTokenRatio": 1,
+        "sourceId": "brochure-brochures-business-pdf",
+        "sourceUrl": "https://newinti.edu.my/brochures/business.pdf",
+        "sourceTextPath": "data/imports/iiu/2026-06-20/iiu-20260620/sources/raw/brochure-brochures-business-pdf.txt",
+        "lineStart": 732,
+        "lineEnd": 741,
+        "matchedTokens": [
+          "bachelor",
+          "business",
+          "logistics",
+          "supply",
+          "chain",
+          "management"
+        ],
+        "durationYears": null
+      }
+    },
+    {
+      "code": "INTI-B-036",
+      "nameEnOfficial": "Bachelor of Business (Honours) Management",
+      "matched": true,
+      "sourceId": "brochure-brochures-business-pdf",
+      "sourceUrl": "https://newinti.edu.my/brochures/business.pdf",
+      "score": 3,
+      "matchedTokenRatio": 1,
+      "differences": [
+        "officialEntryRequirementSourceUrl set to official PDF"
+      ],
+      "extracted": {
+        "matched": true,
+        "score": 3,
+        "matchedTokenRatio": 1,
+        "sourceId": "brochure-brochures-business-pdf",
+        "sourceUrl": "https://newinti.edu.my/brochures/business.pdf",
+        "sourceTextPath": "data/imports/iiu/2026-06-20/iiu-20260620/sources/raw/brochure-brochures-business-pdf.txt",
+        "lineStart": 732,
+        "lineEnd": 741,
+        "matchedTokens": [
+          "bachelor",
+          "business",
+          "management"
+        ],
+        "durationYears": null
+      }
+    },
+    {
+      "code": "INTI-B-037",
+      "nameEnOfficial": "Bachelor of Business (Honours) Marketing – Online Learning",
+      "matched": true,
+      "sourceId": "brochure-brochures-inti-wa-mba-booklet-pdf",
+      "sourceUrl": "https://newinti.edu.my/brochures/INTI-WA-MBA-Booklet.pdf",
+      "score": 3,
+      "matchedTokenRatio": 0.75,
+      "differences": [
+        "durationOfficial updated from PDF",
+        "officialIntake updated from PDF",
+        "officialEntryRequirementSourceUrl set to official PDF"
+      ],
+      "extracted": {
+        "matched": true,
+        "score": 3,
+        "matchedTokenRatio": 0.75,
+        "sourceId": "brochure-brochures-inti-wa-mba-booklet-pdf",
+        "sourceUrl": "https://newinti.edu.my/brochures/INTI-WA-MBA-Booklet.pdf",
+        "sourceTextPath": "data/imports/iiu/2026-06-20/iiu-20260620/sources/raw/brochure-brochures-inti-wa-mba-booklet-pdf.txt",
+        "lineStart": 2486,
+        "lineEnd": 2551,
+        "matchedTokens": [
+          "business",
+          "marketing",
+          "learning"
+        ],
+        "durationYears": 3,
+        "durationOfficial": "Full Time: 3 Years Part Time: 4 Years",
+        "intakeMonths": [
+          "January",
+          "March",
+          "May",
+          "August",
+          "October"
+        ],
+        "officialIntake": "INTI International University (N-DL/0414/8/0055)(11/2028)(MQA/PA15148) Intake (s) JAN, MAR, MAY, AUG, OCT Duration Full Time: 3 Years Part Time: 4 Years"
+      }
+    },
+    {
+      "code": "INTI-B-038",
+      "nameEnOfficial": "Bachelor of Business (Honours) with Psychology",
+      "matched": true,
+      "sourceId": "brochure-brochures-business-pdf",
+      "sourceUrl": "https://newinti.edu.my/brochures/business.pdf",
+      "score": 3,
+      "matchedTokenRatio": 1,
+      "differences": [
+        "officialEntryRequirementSourceUrl set to official PDF"
+      ],
+      "extracted": {
+        "matched": true,
+        "score": 3,
+        "matchedTokenRatio": 1,
+        "sourceId": "brochure-brochures-business-pdf",
+        "sourceUrl": "https://newinti.edu.my/brochures/business.pdf",
+        "sourceTextPath": "data/imports/iiu/2026-06-20/iiu-20260620/sources/raw/brochure-brochures-business-pdf.txt",
+        "lineStart": 732,
+        "lineEnd": 741,
+        "matchedTokens": [
+          "bachelor",
+          "business",
+          "psychology"
+        ],
+        "durationYears": null
+      }
+    },
+    {
+      "code": "INTI-B-039",
+      "nameEnOfficial": "Bachelor of Business Honours (Marketing)",
+      "matched": true,
+      "sourceId": "brochure-brochures-business-pdf",
+      "sourceUrl": "https://newinti.edu.my/brochures/business.pdf",
+      "score": 3,
+      "matchedTokenRatio": 1,
+      "differences": [
+        "officialEntryRequirementSourceUrl set to official PDF"
+      ],
+      "extracted": {
+        "matched": true,
+        "score": 3,
+        "matchedTokenRatio": 1,
+        "sourceId": "brochure-brochures-business-pdf",
+        "sourceUrl": "https://newinti.edu.my/brochures/business.pdf",
+        "sourceTextPath": "data/imports/iiu/2026-06-20/iiu-20260620/sources/raw/brochure-brochures-business-pdf.txt",
+        "lineStart": 531,
+        "lineEnd": 537,
+        "matchedTokens": [
+          "bachelor",
+          "business",
+          "marketing"
+        ],
+        "durationYears": null
+      }
+    },
+    {
+      "code": "INTI-B-040",
+      "nameEnOfficial": "Bachelor of Civil Engineering with Honours",
+      "matched": true,
+      "sourceId": "brochure-brochures-engineering-pdf",
+      "sourceUrl": "https://newinti.edu.my/brochures/engineering.pdf",
+      "score": 3,
+      "matchedTokenRatio": 1,
+      "differences": [
+        "officialIntake updated from PDF",
+        "officialEntryRequirementSourceUrl set to official PDF"
+      ],
+      "extracted": {
+        "matched": true,
+        "score": 3,
+        "matchedTokenRatio": 1,
+        "sourceId": "brochure-brochures-engineering-pdf",
+        "sourceUrl": "https://newinti.edu.my/brochures/engineering.pdf",
+        "sourceTextPath": "data/imports/iiu/2026-06-20/iiu-20260620/sources/raw/brochure-brochures-engineering-pdf.txt",
+        "lineStart": 1344,
+        "lineEnd": 1482,
+        "matchedTokens": [
+          "bachelor",
+          "civil",
+          "engineering"
+        ],
+        "durationYears": 4,
+        "durationOfficial": "4 Years",
+        "intakeMonths": [
+          "January",
+          "May",
+          "August"
+        ],
+        "officialIntake": "INTI International University (R3/0716/6/0010)(06/30)(MQA/FA4368) INTAKES: JAN, MAY & AUG Duration 4 Years Programme structure Year 1 • 0ROFESSIONAL $EVELOPMENT"
+      }
+    },
+    {
+      "code": "INTI-B-041",
+      "nameEnOfficial": "Bachelor of Computer Science (3+0) in collaboration with Swinburne University of Technology, Australia",
+      "matched": true,
+      "sourceId": "brochure-brochures-sut-pdf",
+      "sourceUrl": "https://newinti.edu.my/brochures/sut.pdf",
+      "score": 6,
+      "matchedTokenRatio": 1,
+      "differences": [
+        "officialEntryRequirementSourceUrl set to official PDF"
+      ],
+      "extracted": {
+        "matched": true,
+        "score": 6,
+        "matchedTokenRatio": 1,
+        "sourceId": "brochure-brochures-sut-pdf",
+        "sourceUrl": "https://newinti.edu.my/brochures/sut.pdf",
+        "sourceTextPath": "data/imports/iiu/2026-06-20/iiu-20260620/sources/raw/brochure-brochures-sut-pdf.txt",
+        "lineStart": 696,
+        "lineEnd": 704,
+        "matchedTokens": [
+          "bachelor",
+          "computer",
+          "science",
+          "swinburne",
+          "technology",
+          "australia"
+        ],
+        "durationYears": null
+      }
+    },
+    {
+      "code": "INTI-B-042",
+      "nameEnOfficial": "Bachelor of Computer Science (Honours) (Online Learning)",
+      "matched": true,
+      "sourceId": "brochure-brochures-inti-wa-mba-booklet-pdf",
+      "sourceUrl": "https://newinti.edu.my/brochures/INTI-WA-MBA-Booklet.pdf",
+      "score": 4,
+      "matchedTokenRatio": 1,
+      "differences": [
+        "durationOfficial updated from PDF",
+        "officialIntake updated from PDF",
+        "officialEntryRequirementSourceUrl set to official PDF"
+      ],
+      "extracted": {
+        "matched": true,
+        "score": 4,
+        "matchedTokenRatio": 1,
+        "sourceId": "brochure-brochures-inti-wa-mba-booklet-pdf",
+        "sourceUrl": "https://newinti.edu.my/brochures/INTI-WA-MBA-Booklet.pdf",
+        "sourceTextPath": "data/imports/iiu/2026-06-20/iiu-20260620/sources/raw/brochure-brochures-inti-wa-mba-booklet-pdf.txt",
+        "lineStart": 3150,
+        "lineEnd": 3367,
+        "matchedTokens": [
+          "bachelor",
+          "computer",
+          "science",
+          "learning"
+        ],
+        "durationYears": 3,
+        "durationOfficial": "Full Time: 3 Years Part Time: 6 Years",
+        "intakeMonths": [
+          "January",
+          "March",
+          "May",
+          "August",
+          "October"
+        ],
+        "officialIntake": "INTI International University (N-DL/0613/6/0007)(08/27)(MQA/PA15938) Intake (s) JAN, MAR, MAY, AUG, OCT Duration Full Time: 3 Years Part Time: 6 Years Programme structure"
+      }
+    },
+    {
+      "code": "INTI-B-043",
+      "nameEnOfficial": "Bachelor of Computer Science (Hons)",
+      "matched": true,
+      "sourceId": "brochure-brochures-computing-pdf",
+      "sourceUrl": "https://newinti.edu.my/brochures/computing.pdf",
+      "score": 3,
+      "matchedTokenRatio": 1,
+      "differences": [
+        "officialEntryRequirementSourceUrl set to official PDF"
+      ],
+      "extracted": {
+        "matched": true,
+        "score": 3,
+        "matchedTokenRatio": 1,
+        "sourceId": "brochure-brochures-computing-pdf",
+        "sourceUrl": "https://newinti.edu.my/brochures/computing.pdf",
+        "sourceTextPath": "data/imports/iiu/2026-06-20/iiu-20260620/sources/raw/brochure-brochures-computing-pdf.txt",
+        "lineStart": 355,
+        "lineEnd": 360,
+        "matchedTokens": [
+          "bachelor",
+          "computer",
+          "science"
+        ],
+        "durationYears": null
+      }
+    },
+    {
+      "code": "INTI-B-044",
+      "nameEnOfficial": "Bachelor of Computer Science (Hons) major in Business Analytics",
+      "matched": true,
+      "sourceId": "brochure-brochures-computing-pdf",
+      "sourceUrl": "https://newinti.edu.my/brochures/computing.pdf",
+      "score": 6,
+      "matchedTokenRatio": 1,
+      "differences": [
+        "intakeMonths: [\"January\",\"May\",\"August\"] -> [\"January\",\"May\",\"September\"]",
+        "officialIntake updated from PDF",
+        "officialEntryRequirementSourceUrl set to official PDF"
+      ],
+      "extracted": {
+        "matched": true,
+        "score": 6,
+        "matchedTokenRatio": 1,
+        "sourceId": "brochure-brochures-computing-pdf",
+        "sourceUrl": "https://newinti.edu.my/brochures/computing.pdf",
+        "sourceTextPath": "data/imports/iiu/2026-06-20/iiu-20260620/sources/raw/brochure-brochures-computing-pdf.txt",
+        "lineStart": 1598,
+        "lineEnd": 1795,
+        "matchedTokens": [
+          "bachelor",
+          "computer",
+          "science",
+          "major",
+          "business",
+          "analytics"
+        ],
+        "durationYears": 3,
+        "durationOfficial": "3 Years",
+        "intakeMonths": [
+          "January",
+          "May",
+          "September"
+        ],
+        "officialIntake": "INTI International University (R2/0613/6/0087)(02/28)(MQA/FA2990) INTAKES: JAN, MAY & SEPT Duration 3 Years Programme structure Level 1 • #OMPUTER !RCHITECTURE"
+      }
+    },
+    {
+      "code": "INTI-B-045",
+      "nameEnOfficial": "Bachelor of Computer Science (Hons) major in Cloud Computing",
+      "matched": true,
+      "sourceId": "brochure-brochures-computing-pdf",
+      "sourceUrl": "https://newinti.edu.my/brochures/computing.pdf",
+      "score": 5,
+      "matchedTokenRatio": 0.83,
+      "differences": [
+        "officialEntryRequirementSourceUrl set to official PDF"
+      ],
+      "extracted": {
+        "matched": true,
+        "score": 5,
+        "matchedTokenRatio": 0.83,
+        "sourceId": "brochure-brochures-computing-pdf",
+        "sourceUrl": "https://newinti.edu.my/brochures/computing.pdf",
+        "sourceTextPath": "data/imports/iiu/2026-06-20/iiu-20260620/sources/raw/brochure-brochures-computing-pdf.txt",
+        "lineStart": 831,
+        "lineEnd": 862,
+        "matchedTokens": [
+          "bachelor",
+          "computer",
+          "science",
+          "cloud",
+          "computing"
+        ],
+        "durationYears": null
+      }
+    },
+    {
+      "code": "INTI-B-046",
+      "nameEnOfficial": "Bachelor of Computer Science (Hons) major in Mobile Computing",
+      "matched": true,
+      "sourceId": "brochure-brochures-computing-pdf",
+      "sourceUrl": "https://newinti.edu.my/brochures/computing.pdf",
+      "score": 5,
+      "matchedTokenRatio": 0.83,
+      "differences": [
+        "officialEntryRequirementSourceUrl set to official PDF"
+      ],
+      "extracted": {
+        "matched": true,
+        "score": 5,
+        "matchedTokenRatio": 0.83,
+        "sourceId": "brochure-brochures-computing-pdf",
+        "sourceUrl": "https://newinti.edu.my/brochures/computing.pdf",
+        "sourceTextPath": "data/imports/iiu/2026-06-20/iiu-20260620/sources/raw/brochure-brochures-computing-pdf.txt",
+        "lineStart": 833,
+        "lineEnd": 862,
+        "matchedTokens": [
+          "bachelor",
+          "computer",
+          "science",
+          "mobile",
+          "computing"
+        ],
+        "durationYears": null
+      }
+    },
+    {
+      "code": "INTI-B-047",
+      "nameEnOfficial": "Bachelor of Computer Science (Hons) major in Network and Security",
+      "matched": true,
+      "sourceId": "brochure-brochures-computing-pdf",
+      "sourceUrl": "https://newinti.edu.my/brochures/computing.pdf",
+      "score": 5,
+      "matchedTokenRatio": 0.83,
+      "differences": [
+        "officialEntryRequirementSourceUrl set to official PDF"
+      ],
+      "extracted": {
+        "matched": true,
+        "score": 5,
+        "matchedTokenRatio": 0.83,
+        "sourceId": "brochure-brochures-computing-pdf",
+        "sourceUrl": "https://newinti.edu.my/brochures/computing.pdf",
+        "sourceTextPath": "data/imports/iiu/2026-06-20/iiu-20260620/sources/raw/brochure-brochures-computing-pdf.txt",
+        "lineStart": 835,
+        "lineEnd": 862,
+        "matchedTokens": [
+          "bachelor",
+          "computer",
+          "science",
+          "network",
+          "security"
+        ],
+        "durationYears": null
+      }
+    },
+    {
+      "code": "INTI-B-048",
+      "nameEnOfficial": "Bachelor of Computer Science (Hons) major in Software Development",
+      "matched": true,
+      "sourceId": "brochure-brochures-computing-pdf",
+      "sourceUrl": "https://newinti.edu.my/brochures/computing.pdf",
+      "score": 5,
+      "matchedTokenRatio": 0.83,
+      "differences": [
+        "officialEntryRequirementSourceUrl set to official PDF"
+      ],
+      "extracted": {
+        "matched": true,
+        "score": 5,
+        "matchedTokenRatio": 0.83,
+        "sourceId": "brochure-brochures-computing-pdf",
+        "sourceUrl": "https://newinti.edu.my/brochures/computing.pdf",
+        "sourceTextPath": "data/imports/iiu/2026-06-20/iiu-20260620/sources/raw/brochure-brochures-computing-pdf.txt",
+        "lineStart": 837,
+        "lineEnd": 862,
+        "matchedTokens": [
+          "bachelor",
+          "computer",
+          "science",
+          "software",
+          "development"
+        ],
+        "durationYears": null
+      }
+    },
+    {
+      "code": "INTI-B-049",
+      "nameEnOfficial": "Bachelor of Education (Honours) in Teaching Chinese as a Second Language",
+      "matched": true,
+      "sourceId": "brochure-brochures-bachelor-of-education-honours-in-teaching-chinese-as-a-second-language-pdf",
+      "sourceUrl": "https://newinti.edu.my/brochures/Bachelor-of-Education-(Honours)-in-Teaching-Chinese-as-a-Second-Language.pdf",
+      "score": 6,
+      "matchedTokenRatio": 1,
+      "differences": [
+        "durationOfficial updated from PDF",
+        "officialIntake updated from PDF",
+        "officialAcademicRequirement updated from PDF",
+        "requirement.gpa/note updated from PDF",
+        "officialEntryRequirementSourceUrl set to official PDF"
+      ],
+      "extracted": {
+        "matched": true,
+        "score": 6,
+        "matchedTokenRatio": 1,
+        "sourceId": "brochure-brochures-bachelor-of-education-honours-in-teaching-chinese-as-a-second-language-pdf",
+        "sourceUrl": "https://newinti.edu.my/brochures/Bachelor-of-Education-(Honours)-in-Teaching-Chinese-as-a-Second-Language.pdf",
+        "sourceTextPath": "data/imports/iiu/2026-06-20/iiu-20260620/sources/raw/brochure-brochures-bachelor-of-education-honours-in-teaching-chinese-as-a-second-language-pdf.txt",
+        "lineStart": 54,
+        "lineEnd": 89,
+        "matchedTokens": [
+          "bachelor",
+          "education",
+          "teaching",
+          "chinese",
+          "second",
+          "language"
+        ],
+        "durationYears": 3,
+        "durationOfficial": "3 years",
+        "intakeMonths": [
+          "January",
+          "May",
+          "September"
+        ],
+        "officialIntake": "INTI International University (N/0114/6/0036)(07/30)(MQA/PA18256) Intake (s) JAN, MAY & SEP Duration 3 years ENTRY REQUIREMENTS: STPM - Pass STPM with a minimum of Grade C (GPA 2.00) in any two (2) subjects",
+        "officialAcademicRequirement": "STPM - Pass STPM with a minimum of Grade C (GPA 2.00) in any two (2) subjects STAM - Pass STAM with a minimum grade of Jayyid"
+      }
+    },
+    {
+      "code": "INTI-B-050",
+      "nameEnOfficial": "Bachelor of Food Service Management with Culinary Arts (Honours) 3+0 in collaboration with CY Cergy Paris Université, France",
+      "matched": true,
+      "sourceId": "brochure-brochures-hospitality-pdf",
+      "sourceUrl": "https://newinti.edu.my/brochures/hospitality.pdf",
+      "score": 10,
+      "matchedTokenRatio": 1,
+      "differences": [
+        "officialEntryRequirementSourceUrl set to official PDF"
+      ],
+      "extracted": {
+        "matched": true,
+        "score": 10,
+        "matchedTokenRatio": 1,
+        "sourceId": "brochure-brochures-hospitality-pdf",
+        "sourceUrl": "https://newinti.edu.my/brochures/hospitality.pdf",
+        "sourceTextPath": "data/imports/iiu/2026-06-20/iiu-20260620/sources/raw/brochure-brochures-hospitality-pdf.txt",
+        "lineStart": 337,
+        "lineEnd": 346,
+        "matchedTokens": [
+          "bachelor",
+          "food",
+          "service",
+          "management",
+          "culinary",
+          "arts",
+          "cergy",
+          "paris",
+          "universit",
+          "france"
+        ],
+        "durationYears": null
+      }
+    },
+    {
+      "code": "INTI-B-051",
+      "nameEnOfficial": "Bachelor of Information and Communication Technology 3+0 in collaboration with Swinburne University of Technology, Australia",
+      "matched": true,
+      "sourceId": "brochure-brochures-sut-pdf",
+      "sourceUrl": "https://newinti.edu.my/brochures/sut.pdf",
+      "score": 6,
+      "matchedTokenRatio": 1,
+      "differences": [
+        "officialAcademicRequirement updated from PDF",
+        "requirement.gpa/note updated from PDF",
+        "officialEntryRequirementSourceUrl set to official PDF"
+      ],
+      "extracted": {
+        "matched": true,
+        "score": 6,
+        "matchedTokenRatio": 1,
+        "sourceId": "brochure-brochures-sut-pdf",
+        "sourceUrl": "https://newinti.edu.my/brochures/sut.pdf",
+        "sourceTextPath": "data/imports/iiu/2026-06-20/iiu-20260620/sources/raw/brochure-brochures-sut-pdf.txt",
+        "lineStart": 288,
+        "lineEnd": 296,
+        "matchedTokens": [
+          "bachelor",
+          "information",
+          "communication",
+          "technology",
+          "swinburne",
+          "australia"
+        ],
+        "durationYears": null,
+        "officialAcademicRequirement": "Having completed an INTI Diploma in Computing (Level 4, MQF) or its equivalent with an average of 60% (CGPA 2.50). Credit transfer up to the equivalent of 1 year. (Other diplomas are subject to Swinburne University's approval)",
+        "gpa": 2.5
+      }
+    },
+    {
+      "code": "INTI-B-052",
+      "nameEnOfficial": "Bachelor of Information Technology (Hons)",
+      "matched": true,
+      "sourceId": "brochure-brochures-computing-pdf",
+      "sourceUrl": "https://newinti.edu.my/brochures/computing.pdf",
+      "score": 3,
+      "matchedTokenRatio": 1,
+      "differences": [
+        "officialEntryRequirementSourceUrl set to official PDF"
+      ],
+      "extracted": {
+        "matched": true,
+        "score": 3,
+        "matchedTokenRatio": 1,
+        "sourceId": "brochure-brochures-computing-pdf",
+        "sourceUrl": "https://newinti.edu.my/brochures/computing.pdf",
+        "sourceTextPath": "data/imports/iiu/2026-06-20/iiu-20260620/sources/raw/brochure-brochures-computing-pdf.txt",
+        "lineStart": 400,
+        "lineEnd": 405,
+        "matchedTokens": [
+          "bachelor",
+          "information",
+          "technology"
+        ],
+        "durationYears": null
+      }
+    },
+    {
+      "code": "INTI-B-053",
+      "nameEnOfficial": "Bachelor of Information Technology (Hons) major in Business Analytics",
+      "matched": true,
+      "sourceId": "brochure-brochures-computing-pdf",
+      "sourceUrl": "https://newinti.edu.my/brochures/computing.pdf",
+      "score": 5,
+      "matchedTokenRatio": 0.83,
+      "differences": [
+        "officialEntryRequirementSourceUrl set to official PDF"
+      ],
+      "extracted": {
+        "matched": true,
+        "score": 5,
+        "matchedTokenRatio": 0.83,
+        "sourceId": "brochure-brochures-computing-pdf",
+        "sourceUrl": "https://newinti.edu.my/brochures/computing.pdf",
+        "sourceTextPath": "data/imports/iiu/2026-06-20/iiu-20260620/sources/raw/brochure-brochures-computing-pdf.txt",
+        "lineStart": 840,
+        "lineEnd": 862,
+        "matchedTokens": [
+          "bachelor",
+          "information",
+          "technology",
+          "business",
+          "analytics"
+        ],
+        "durationYears": null
+      }
+    },
+    {
+      "code": "INTI-B-054",
+      "nameEnOfficial": "Bachelor of Mass Communication (Honours)",
+      "matched": true,
+      "sourceId": "brochure-brochures-mass-communication-pdf",
+      "sourceUrl": "https://newinti.edu.my/brochures/mass-communication.pdf",
+      "score": 3,
+      "matchedTokenRatio": 1,
+      "differences": [
+        "officialEntryRequirementSourceUrl set to official PDF"
+      ],
+      "extracted": {
+        "matched": true,
+        "score": 3,
+        "matchedTokenRatio": 1,
+        "sourceId": "brochure-brochures-mass-communication-pdf",
+        "sourceUrl": "https://newinti.edu.my/brochures/mass-communication.pdf",
+        "sourceTextPath": "data/imports/iiu/2026-06-20/iiu-20260620/sources/raw/brochure-brochures-mass-communication-pdf.txt",
+        "lineStart": 353,
+        "lineEnd": 386,
+        "matchedTokens": [
+          "bachelor",
+          "mass",
+          "communication"
+        ],
+        "durationYears": null
+      }
+    },
+    {
+      "code": "INTI-B-055",
+      "nameEnOfficial": "Bachelor of Mass Communication (Hons)",
+      "matched": true,
+      "sourceId": "brochure-brochures-mass-communication-pdf",
+      "sourceUrl": "https://newinti.edu.my/brochures/mass-communication.pdf",
+      "score": 3,
+      "matchedTokenRatio": 1,
+      "differences": [
+        "officialEntryRequirementSourceUrl set to official PDF"
+      ],
+      "extracted": {
+        "matched": true,
+        "score": 3,
+        "matchedTokenRatio": 1,
+        "sourceId": "brochure-brochures-mass-communication-pdf",
+        "sourceUrl": "https://newinti.edu.my/brochures/mass-communication.pdf",
+        "sourceTextPath": "data/imports/iiu/2026-06-20/iiu-20260620/sources/raw/brochure-brochures-mass-communication-pdf.txt",
+        "lineStart": 353,
+        "lineEnd": 386,
+        "matchedTokens": [
+          "bachelor",
+          "mass",
+          "communication"
+        ],
+        "durationYears": null
+      }
+    },
+    {
+      "code": "INTI-B-056",
+      "nameEnOfficial": "Bachelor of Mechanical Engineering with Honours",
+      "matched": true,
+      "sourceId": "brochure-brochures-engineering-pdf",
+      "sourceUrl": "https://newinti.edu.my/brochures/engineering.pdf",
+      "score": 3,
+      "matchedTokenRatio": 1,
+      "differences": [
+        "officialIntake updated from PDF",
+        "officialEntryRequirementSourceUrl set to official PDF"
+      ],
+      "extracted": {
+        "matched": true,
+        "score": 3,
+        "matchedTokenRatio": 1,
+        "sourceId": "brochure-brochures-engineering-pdf",
+        "sourceUrl": "https://newinti.edu.my/brochures/engineering.pdf",
+        "sourceTextPath": "data/imports/iiu/2026-06-20/iiu-20260620/sources/raw/brochure-brochures-engineering-pdf.txt",
+        "lineStart": 1483,
+        "lineEnd": 1630,
+        "matchedTokens": [
+          "bachelor",
+          "mechanical",
+          "engineering"
+        ],
+        "durationYears": 4,
+        "durationOfficial": "4 Years",
+        "intakeMonths": [
+          "January",
+          "May",
+          "August"
+        ],
+        "officialIntake": "INTI International University (R3/0714/6/0035)(02/30)(MQA/FA4088) INTAKES: JAN, MAY & AUG Duration 4 Years Programme structure Year 1 • %LECTRICAL #IRCUITS"
+      }
+    },
+    {
+      "code": "INTI-B-057",
+      "nameEnOfficial": "Bachelor of Media and Communication (3+0) in collaboration with Swinburne University of Technology, Australia",
+      "matched": true,
+      "sourceId": "brochure-brochures-sut-pdf",
+      "sourceUrl": "https://newinti.edu.my/brochures/sut.pdf",
+      "score": 6,
+      "matchedTokenRatio": 1,
+      "differences": [
+        "officialEntryRequirementSourceUrl set to official PDF"
+      ],
+      "extracted": {
+        "matched": true,
+        "score": 6,
+        "matchedTokenRatio": 1,
+        "sourceId": "brochure-brochures-sut-pdf",
+        "sourceUrl": "https://newinti.edu.my/brochures/sut.pdf",
+        "sourceTextPath": "data/imports/iiu/2026-06-20/iiu-20260620/sources/raw/brochure-brochures-sut-pdf.txt",
+        "lineStart": 687,
+        "lineEnd": 695,
+        "matchedTokens": [
+          "bachelor",
+          "media",
+          "communication",
+          "swinburne",
+          "technology",
+          "australia"
+        ],
+        "durationYears": null
+      }
+    },
+    {
+      "code": "INTI-B-058",
+      "nameEnOfficial": "Bachelor of Science (Hons) Quantity Surveying",
+      "matched": true,
+      "sourceId": "brochure-brochures-engineering-pdf",
+      "sourceUrl": "https://newinti.edu.my/brochures/engineering.pdf",
+      "score": 4,
+      "matchedTokenRatio": 1,
+      "differences": [
+        "languageRequirement updated from PDF",
+        "officialLanguageRequirement updated from PDF",
+        "officialEntryRequirementSourceUrl set to official PDF"
+      ],
+      "extracted": {
+        "matched": true,
+        "score": 4,
+        "matchedTokenRatio": 1,
+        "sourceId": "brochure-brochures-engineering-pdf",
+        "sourceUrl": "https://newinti.edu.my/brochures/engineering.pdf",
+        "sourceTextPath": "data/imports/iiu/2026-06-20/iiu-20260620/sources/raw/brochure-brochures-engineering-pdf.txt",
+        "lineStart": 685,
+        "lineEnd": 733,
+        "matchedTokens": [
+          "bachelor",
+          "science",
+          "quantity",
+          "surveying"
+        ],
+        "durationYears": null,
+        "languageRequirement": {
+          "ielts": 5,
+          "toefl": null,
+          "pte": null,
+          "muet": 3.5
+        },
+        "officialLanguageRequirement": "English. (SPM is not required) General English Language Requirements* • #REDIT IN THE %NGLISH LANGUAGE SUBJECT AT SPM / UEC level; or MUET Band 3.5; or a score of 196 (computer-based) / 525 (writing-based) / 69-70 (internet-based) in TOEFL; or Band 5 in IELTS • )N THE EVENT THAT THE %NGLISH LANGUAGE requirements are not met, student may be required to undertake additional English module(s) prior to or concurrently with the undergraduate programme, based on the University’s decision. 1716"
+      }
+    },
+    {
+      "code": "INTI-B-059",
+      "nameEnOfficial": "Bachelor of Science in Business Administration 4+0 in collaboration with Southern New Hampshire University, USA",
+      "matched": false,
+      "score": 0,
+      "matchedTokenRatio": 0,
+      "differences": [],
+      "extracted": {
+        "matched": false,
+        "score": 0,
+        "matchedTokenRatio": 0
+      }
+    },
+    {
+      "code": "INTI-B-060",
+      "nameEnOfficial": "Bachelor of Science with Honours in Computer Science 3+0 in collaboration with Coventry University, UK",
+      "matched": true,
+      "sourceId": "brochure-brochures-computing-pdf",
+      "sourceUrl": "https://newinti.edu.my/brochures/computing.pdf",
+      "score": 4,
+      "matchedTokenRatio": 1,
+      "differences": [
+        "officialEntryRequirementSourceUrl set to official PDF"
+      ],
+      "extracted": {
+        "matched": true,
+        "score": 4,
+        "matchedTokenRatio": 1,
+        "sourceId": "brochure-brochures-computing-pdf",
+        "sourceUrl": "https://newinti.edu.my/brochures/computing.pdf",
+        "sourceTextPath": "data/imports/iiu/2026-06-20/iiu-20260620/sources/raw/brochure-brochures-computing-pdf.txt",
+        "lineStart": 684,
+        "lineEnd": 690,
+        "matchedTokens": [
+          "bachelor",
+          "science",
+          "computer",
+          "coventry"
+        ],
+        "durationYears": null
+      }
+    },
+    {
+      "code": "INTI-B-061",
+      "nameEnOfficial": "Bachelor of Technology (Honours) Data Science",
+      "matched": true,
+      "sourceId": "brochure-brochures-computing-pdf",
+      "sourceUrl": "https://newinti.edu.my/brochures/computing.pdf",
+      "score": 4,
+      "matchedTokenRatio": 1,
+      "differences": [
+        "officialEntryRequirementSourceUrl set to official PDF"
+      ],
+      "extracted": {
+        "matched": true,
+        "score": 4,
+        "matchedTokenRatio": 1,
+        "sourceId": "brochure-brochures-computing-pdf",
+        "sourceUrl": "https://newinti.edu.my/brochures/computing.pdf",
+        "sourceTextPath": "data/imports/iiu/2026-06-20/iiu-20260620/sources/raw/brochure-brochures-computing-pdf.txt",
+        "lineStart": 597,
+        "lineEnd": 612,
+        "matchedTokens": [
+          "bachelor",
+          "technology",
+          "data",
+          "science"
+        ],
+        "durationYears": null
+      }
+    },
+    {
+      "code": "INTI-B-062",
+      "nameEnOfficial": "Bachelor of Technology in Digital Construction Management",
+      "matched": true,
+      "sourceId": "brochure-brochures-engineering-pdf",
+      "sourceUrl": "https://newinti.edu.my/brochures/engineering.pdf",
+      "score": 5,
+      "matchedTokenRatio": 1,
+      "differences": [
+        "officialIntake updated from PDF",
+        "officialEntryRequirementSourceUrl set to official PDF"
+      ],
+      "extracted": {
+        "matched": true,
+        "score": 5,
+        "matchedTokenRatio": 1,
+        "sourceId": "brochure-brochures-engineering-pdf",
+        "sourceUrl": "https://newinti.edu.my/brochures/engineering.pdf",
+        "sourceTextPath": "data/imports/iiu/2026-06-20/iiu-20260620/sources/raw/brochure-brochures-engineering-pdf.txt",
+        "lineStart": 1961,
+        "lineEnd": 2075,
+        "matchedTokens": [
+          "bachelor",
+          "technology",
+          "digital",
+          "construction",
+          "management"
+        ],
+        "durationYears": 3,
+        "durationOfficial": "3 Years",
+        "intakeMonths": [
+          "January",
+          "May",
+          "August"
+        ],
+        "officialIntake": "INTI International University (N/0733/6/0005)(08/28)(MQA/PA16119) INTAKES: JAN, MAY & AUG Programme structure Year 1 • \"UILDING 3TRUCTURE • #ONSTRUCTION )#4 • #ONSTRUCTION -ATERIALS"
+      }
+    },
+    {
+      "code": "INTI-B-063",
+      "nameEnOfficial": "Bachelor of Technology in Intelligent Manufacturing",
+      "matched": true,
+      "sourceId": "brochure-brochures-engineering-pdf",
+      "sourceUrl": "https://newinti.edu.my/brochures/engineering.pdf",
+      "score": 4,
+      "matchedTokenRatio": 1,
+      "differences": [
+        "officialIntake updated from PDF",
+        "officialEntryRequirementSourceUrl set to official PDF"
+      ],
+      "extracted": {
+        "matched": true,
+        "score": 4,
+        "matchedTokenRatio": 1,
+        "sourceId": "brochure-brochures-engineering-pdf",
+        "sourceUrl": "https://newinti.edu.my/brochures/engineering.pdf",
+        "sourceTextPath": "data/imports/iiu/2026-06-20/iiu-20260620/sources/raw/brochure-brochures-engineering-pdf.txt",
+        "lineStart": 2079,
+        "lineEnd": 2185,
+        "matchedTokens": [
+          "bachelor",
+          "technology",
+          "intelligent",
+          "manufacturing"
+        ],
+        "durationYears": 3,
+        "durationOfficial": "3 Years",
+        "intakeMonths": [
+          "January",
+          "May",
+          "August"
+        ],
+        "officialIntake": "INTI International University (N/0720/6/0001)(07/28)(MQA/PA15493) INTAKES: JAN, MAY & AUG Programme structure Year 1 • #ODE OF %THICS • $ATA 3TRUCTURE AND !LGORITHMS • $RAWING"
+      }
+    },
+    {
+      "code": "INTI-B-064",
+      "nameEnOfficial": "Bachelor of Technology in Intelligent Process and Product Design",
+      "matched": true,
+      "sourceId": "brochure-brochures-engineering-pdf",
+      "sourceUrl": "https://newinti.edu.my/brochures/engineering.pdf",
+      "score": 6,
+      "matchedTokenRatio": 1,
+      "differences": [
+        "officialIntake updated from PDF",
+        "officialEntryRequirementSourceUrl set to official PDF"
+      ],
+      "extracted": {
+        "matched": true,
+        "score": 6,
+        "matchedTokenRatio": 1,
+        "sourceId": "brochure-brochures-engineering-pdf",
+        "sourceUrl": "https://newinti.edu.my/brochures/engineering.pdf",
+        "sourceTextPath": "data/imports/iiu/2026-06-20/iiu-20260620/sources/raw/brochure-brochures-engineering-pdf.txt",
+        "lineStart": 2189,
+        "lineEnd": 2303,
+        "matchedTokens": [
+          "bachelor",
+          "technology",
+          "intelligent",
+          "process",
+          "product",
+          "design"
+        ],
+        "durationYears": 3,
+        "durationOfficial": "3 Years",
+        "intakeMonths": [
+          "January",
+          "May",
+          "August"
+        ],
+        "officialIntake": "INTI International University (N/0720/6/0002)(07/28)(MQA/PA15494) INTAKES: JAN, MAY & AUG Programme structure Year 1 • #ODE OF %THICS • $ATA 3TRUCTURE AND !LGORITHMS • $RAWING"
+      }
+    },
+    {
+      "code": "INTI-B-065",
+      "nameEnOfficial": "Bachelor of Traditional Chinese Medicine (Hons)",
+      "matched": true,
+      "sourceId": "brochure-brochures-traditional-chinese-medicine-pdf",
+      "sourceUrl": "https://newinti.edu.my/brochures/traditional-chinese-medicine.pdf",
+      "score": 4,
+      "matchedTokenRatio": 1,
+      "differences": [
+        "officialEntryRequirementSourceUrl set to official PDF"
+      ],
+      "extracted": {
+        "matched": true,
+        "score": 4,
+        "matchedTokenRatio": 1,
+        "sourceId": "brochure-brochures-traditional-chinese-medicine-pdf",
+        "sourceUrl": "https://newinti.edu.my/brochures/traditional-chinese-medicine.pdf",
+        "sourceTextPath": "data/imports/iiu/2026-06-20/iiu-20260620/sources/raw/brochure-brochures-traditional-chinese-medicine-pdf.txt",
+        "lineStart": 298,
+        "lineEnd": 321,
+        "matchedTokens": [
+          "bachelor",
+          "traditional",
+          "chinese",
+          "medicine"
+        ],
+        "durationYears": null
+      }
+    },
+    {
+      "code": "INTI-B-066",
+      "nameEnOfficial": "Biosciences Degree Program (American University Program)",
+      "matched": false,
+      "score": 0,
+      "matchedTokenRatio": 0,
+      "differences": [],
+      "extracted": {
+        "matched": false,
+        "score": 0,
+        "matchedTokenRatio": 0
+      }
+    },
+    {
+      "code": "INTI-B-067",
+      "nameEnOfficial": "Business Degree Program (American Degree Transfer Program)",
+      "matched": false,
+      "score": 0,
+      "matchedTokenRatio": 0,
+      "differences": [],
+      "extracted": {
+        "matched": false,
+        "score": 0,
+        "matchedTokenRatio": 0
+      }
+    },
+    {
+      "code": "INTI-B-068",
+      "nameEnOfficial": "Computer Science Degree Program (American Degree Transfer Program)",
+      "matched": true,
+      "sourceId": "brochure-brochures-aup-pdf",
+      "sourceUrl": "https://newinti.edu.my/brochures/aup.pdf",
+      "score": 3,
+      "matchedTokenRatio": 0.75,
+      "differences": [
+        "officialEntryRequirementSourceUrl set to official PDF"
+      ],
+      "extracted": {
+        "matched": true,
+        "score": 3,
+        "matchedTokenRatio": 0.75,
+        "sourceId": "brochure-brochures-aup-pdf",
+        "sourceUrl": "https://newinti.edu.my/brochures/aup.pdf",
+        "sourceTextPath": "data/imports/iiu/2026-06-20/iiu-20260620/sources/raw/brochure-brochures-aup-pdf.txt",
+        "lineStart": 2669,
+        "lineEnd": 2680,
+        "matchedTokens": [
+          "science",
+          "american",
+          "transfer"
+        ],
+        "durationYears": null
+      }
+    },
+    {
+      "code": "INTI-B-069",
+      "nameEnOfficial": "Engineering Degree Program (American University Program)",
+      "matched": true,
+      "sourceId": "brochure-brochures-aup-pdf",
+      "sourceUrl": "https://newinti.edu.my/brochures/aup.pdf",
+      "score": 2,
+      "matchedTokenRatio": 1,
+      "differences": [
+        "officialEntryRequirementSourceUrl set to official PDF"
+      ],
+      "extracted": {
+        "matched": true,
+        "score": 2,
+        "matchedTokenRatio": 1,
+        "sourceId": "brochure-brochures-aup-pdf",
+        "sourceUrl": "https://newinti.edu.my/brochures/aup.pdf",
+        "sourceTextPath": "data/imports/iiu/2026-06-20/iiu-20260620/sources/raw/brochure-brochures-aup-pdf.txt",
+        "lineStart": 288,
+        "lineEnd": 298,
+        "matchedTokens": [
+          "engineering",
+          "american"
+        ],
+        "durationYears": null
+      }
+    },
+    {
+      "code": "INTI-B-070",
+      "nameEnOfficial": "Health & Applied Sciences Program (American University Program)",
+      "matched": true,
+      "sourceId": "brochure-brochures-aup-pdf",
+      "sourceUrl": "https://newinti.edu.my/brochures/aup.pdf",
+      "score": 3,
+      "matchedTokenRatio": 0.75,
+      "differences": [
+        "officialIntake updated from PDF",
+        "officialEntryRequirementSourceUrl set to official PDF"
+      ],
+      "extracted": {
+        "matched": true,
+        "score": 3,
+        "matchedTokenRatio": 0.75,
+        "sourceId": "brochure-brochures-aup-pdf",
+        "sourceUrl": "https://newinti.edu.my/brochures/aup.pdf",
+        "sourceTextPath": "data/imports/iiu/2026-06-20/iiu-20260620/sources/raw/brochure-brochures-aup-pdf.txt",
+        "lineStart": 1244,
+        "lineEnd": 1423,
+        "matchedTokens": [
+          "health",
+          "applied",
+          "sciences"
+        ],
+        "durationYears": null,
+        "durationOfficial": "1+3 or 1.5+2.5 or 2+2 Years",
+        "intakeMonths": [
+          "January",
+          "May",
+          "August"
+        ],
+        "officialIntake": "INTAKE: JAN, MAY & AUG Duration 1+3 or 1.5+2.5 or 2+2 Years"
+      }
+    },
+    {
+      "code": "INTI-B-071",
+      "nameEnOfficial": "Mass Communication Degree Program (American Degree Transfer Program)",
+      "matched": false,
+      "score": 0,
+      "matchedTokenRatio": 0,
+      "differences": [],
+      "extracted": {
+        "matched": false,
+        "score": 0,
+        "matchedTokenRatio": 0
+      }
+    },
+    {
+      "code": "INTI-B-072",
+      "nameEnOfficial": "Master of Engineering in Electrical and Electronic Engineering 4+0 in collaboration with Coventry University, UK",
+      "matched": true,
+      "sourceId": "brochure-brochures-engineering-pdf",
+      "sourceUrl": "https://newinti.edu.my/brochures/engineering.pdf",
+      "score": 5,
+      "matchedTokenRatio": 1,
+      "differences": [
+        "officialEntryRequirementSourceUrl set to official PDF"
+      ],
+      "extracted": {
+        "matched": true,
+        "score": 5,
+        "matchedTokenRatio": 1,
+        "sourceId": "brochure-brochures-engineering-pdf",
+        "sourceUrl": "https://newinti.edu.my/brochures/engineering.pdf",
+        "sourceTextPath": "data/imports/iiu/2026-06-20/iiu-20260620/sources/raw/brochure-brochures-engineering-pdf.txt",
+        "lineStart": 420,
+        "lineEnd": 446,
+        "matchedTokens": [
+          "master",
+          "engineering",
+          "electrical",
+          "electronic",
+          "coventry"
+        ],
+        "durationYears": null
+      }
+    },
+    {
+      "code": "INTI-B-073",
+      "nameEnOfficial": "Master of Engineering in Mechanical Engineering 4+0 in collaboration with Coventry University, UK",
+      "matched": true,
+      "sourceId": "brochure-brochures-engineering-pdf",
+      "sourceUrl": "https://newinti.edu.my/brochures/engineering.pdf",
+      "score": 4,
+      "matchedTokenRatio": 1,
+      "differences": [
+        "officialEntryRequirementSourceUrl set to official PDF"
+      ],
+      "extracted": {
+        "matched": true,
+        "score": 4,
+        "matchedTokenRatio": 1,
+        "sourceId": "brochure-brochures-engineering-pdf",
+        "sourceUrl": "https://newinti.edu.my/brochures/engineering.pdf",
+        "sourceTextPath": "data/imports/iiu/2026-06-20/iiu-20260620/sources/raw/brochure-brochures-engineering-pdf.txt",
+        "lineStart": 449,
+        "lineEnd": 458,
+        "matchedTokens": [
+          "master",
+          "engineering",
+          "mechanical",
+          "coventry"
+        ],
+        "durationYears": null
+      }
+    },
+    {
+      "code": "INTI-B-074",
+      "nameEnOfficial": "Psychology Degree Program (American Degree Transfer Program)",
+      "matched": false,
+      "score": 0,
+      "matchedTokenRatio": 0,
+      "differences": [],
+      "extracted": {
+        "matched": false,
+        "score": 0,
+        "matchedTokenRatio": 0
+      }
+    },
+    {
+      "code": "INTI-M-001",
+      "nameEnOfficial": "Master in Education Management",
+      "matched": true,
+      "sourceId": "brochure-brochures-inti-wa-mba-booklet-pdf",
+      "sourceUrl": "https://newinti.edu.my/brochures/INTI-WA-MBA-Booklet.pdf",
+      "score": 3,
+      "matchedTokenRatio": 1,
+      "differences": [
+        "durationOfficial updated from PDF",
+        "officialIntake updated from PDF",
+        "officialLanguageRequirement updated from PDF",
+        "officialAcademicRequirement updated from PDF",
+        "requirement.gpa/note updated from PDF",
+        "officialEntryRequirementSourceUrl set to official PDF"
+      ],
+      "extracted": {
+        "matched": true,
+        "score": 3,
+        "matchedTokenRatio": 1,
+        "sourceId": "brochure-brochures-inti-wa-mba-booklet-pdf",
+        "sourceUrl": "https://newinti.edu.my/brochures/INTI-WA-MBA-Booklet.pdf",
+        "sourceTextPath": "data/imports/iiu/2026-06-20/iiu-20260620/sources/raw/brochure-brochures-inti-wa-mba-booklet-pdf.txt",
+        "lineStart": 1516,
+        "lineEnd": 1592,
+        "matchedTokens": [
+          "master",
+          "education",
+          "management"
+        ],
+        "durationYears": 1,
+        "durationOfficial": "Full Time: 1 Year Part Time: 2 Years",
+        "intakeMonths": [
+          "January",
+          "May",
+          "September"
+        ],
+        "officialIntake": "INTI International University (R/0119/7/0002)(05/29)(MQA/FA11617) Intake (s) JAN, MAY & SEP Duration Full Time: 1 Year Part Time: 2 Years Entry Requirements",
+        "languageRequirement": {
+          "ielts": 4,
+          "toefl": null,
+          "pte": null,
+          "muet": 3
+        },
+        "officialLanguageRequirement": "vi. Candidates are required to achieve a minimum score of 4.0 in IELTS, Band 3 in MUET or its equivalent. 28 29 3130",
+        "officialAcademicRequirement": "i. A Bachelor’s Degree (Level 6, MQF) in education fields with a minimum CGPA of 2.50 or its equivalent, as accepted by the University Senate; OR ii. A Bachelor’s Degree in education fields, with a minimum CGPA of 2.00 can be accepted subject to rigorous internal assessment; OR iii. A Bachelor’s Degree with a minimum CGPA of 2.50 subject to passing prerequisite courses; OR iv. A Bachelor’s Degree with a minimum CGPA of 2.00 can be accepted subject to rigorous internal assessment AND passing prerequisite courses; OR v. Other qualifications equivalent to the above requirements and recognised by the Malaysian Government. vi. Candidates are required to achieve a minimum score of 4.0 in IELTS, Band 3 in MUET or its equivalent. 28 29 3130",
+        "gpa": 2.5
+      }
+    },
+    {
+      "code": "INTI-M-002",
+      "nameEnOfficial": "Master in Education Management (Online Learning)",
+      "matched": true,
+      "sourceId": "brochure-brochures-inti-wa-mba-booklet-pdf",
+      "sourceUrl": "https://newinti.edu.my/brochures/INTI-WA-MBA-Booklet.pdf",
+      "score": 4,
+      "matchedTokenRatio": 1,
+      "differences": [
+        "durationOfficial updated from PDF",
+        "officialIntake updated from PDF",
+        "officialLanguageRequirement updated from PDF",
+        "officialAcademicRequirement updated from PDF",
+        "requirement.gpa/note updated from PDF",
+        "officialEntryRequirementSourceUrl set to official PDF"
+      ],
+      "extracted": {
+        "matched": true,
+        "score": 4,
+        "matchedTokenRatio": 1,
+        "sourceId": "brochure-brochures-inti-wa-mba-booklet-pdf",
+        "sourceUrl": "https://newinti.edu.my/brochures/INTI-WA-MBA-Booklet.pdf",
+        "sourceTextPath": "data/imports/iiu/2026-06-20/iiu-20260620/sources/raw/brochure-brochures-inti-wa-mba-booklet-pdf.txt",
+        "lineStart": 2779,
+        "lineEnd": 2866,
+        "matchedTokens": [
+          "master",
+          "education",
+          "management",
+          "learning"
+        ],
+        "durationYears": 1,
+        "durationOfficial": "1 Year (Full-time) 2 Years (Part-time)",
+        "intakeMonths": [
+          "January",
+          "March",
+          "May",
+          "August",
+          "October"
+        ],
+        "officialIntake": "INTI International University (N-DL/0111/7/0007)(10/28)(MQA/PA16851) Intake (s) JAN, MAR, MAY, AUG, OCT Duration 1 Year (Full-time) 2 Years (Part-time) Entry Requirements",
+        "languageRequirement": {
+          "ielts": 4,
+          "toefl": null,
+          "pte": null,
+          "muet": 3
+        },
+        "officialLanguageRequirement": "Government. English Language Requirements • MUET Band 3, IELTS 4.0, or its equivalent 46",
+        "officialAcademicRequirement": "i. A Bachelor’s Degree (Level 6, MQF) in education fields with a minimum CGPA of 2.50 or its equivalent, as accepted by the University Senate; OR ii. A Bachelor’s Degree in education fields, with a minimum CGPA of 2.00 can be accepted subject to rigorous internal assessment; OR iii. A Bachelor’s Degree with a minimum CGPA of 2.50 subject to passing prerequisite courses; OR iv. A Bachelor’s Degree with a minimum CGPA of 2.00 can be accepted subject to rigorous internal assessment AND passing prerequisite courses; OR v. Other qualifications equivalent to the above requirements and recognised by the Malaysian Government.",
+        "gpa": 2.5
+      }
+    },
+    {
+      "code": "INTI-M-003",
+      "nameEnOfficial": "Master in Health Administration",
+      "matched": true,
+      "sourceId": "brochure-brochures-inti-wa-mba-booklet-pdf",
+      "sourceUrl": "https://newinti.edu.my/brochures/INTI-WA-MBA-Booklet.pdf",
+      "score": 3,
+      "matchedTokenRatio": 1,
+      "differences": [
+        "durationOfficial updated from PDF",
+        "officialIntake updated from PDF",
+        "languageRequirement updated from PDF",
+        "officialAcademicRequirement updated from PDF",
+        "requirement.gpa/note updated from PDF",
+        "officialEntryRequirementSourceUrl set to official PDF"
+      ],
+      "extracted": {
+        "matched": true,
+        "score": 3,
+        "matchedTokenRatio": 1,
+        "sourceId": "brochure-brochures-inti-wa-mba-booklet-pdf",
+        "sourceUrl": "https://newinti.edu.my/brochures/INTI-WA-MBA-Booklet.pdf",
+        "sourceTextPath": "data/imports/iiu/2026-06-20/iiu-20260620/sources/raw/brochure-brochures-inti-wa-mba-booklet-pdf.txt",
+        "lineStart": 2209,
+        "lineEnd": 2299,
+        "matchedTokens": [
+          "master",
+          "health",
+          "administration"
+        ],
+        "durationYears": 1,
+        "durationOfficial": "Full Time: 1 Year Part Time: 2 Years",
+        "intakeMonths": [
+          "January",
+          "May",
+          "September"
+        ],
+        "officialIntake": "INTI International University (N/0414/7/0014)(08/27)(MQA/FA15939) Intake (s) JAN, MAY & SEP Duration Full Time: 1 Year Part Time: 2 Years Entry Requirements",
+        "languageRequirement": {
+          "ielts": 6,
+          "toefl": null,
+          "pte": null,
+          "muet": 4
+        },
+        "officialAcademicRequirement": "i. A Bachelor’s Degree in related ﬁelds with a minimum CGPA of 2.50, as accepted by the University Senate; or ii. A Bachelor’s Degree in related ﬁelds with a minimum CGPA of 2.00 and not meeting CGPA of 2.50, can be accepted subject to rigorous internal assessment; or iii. A Bachelor’s Degree in non-related ﬁelds with a minimum CGPA of 2.00 as accepted by the university Senate and with relevant working experience, subject to a rigorous internal assessment; or iv. A Bachelor’s Degree in non-related ﬁelds with a minimum CGPA of 2.00 as accepted by the university and without relevant working experience, subject to passing prerequisite courses. Other equivalent / related qualiﬁcations to a Bachelor’s Degree recognised by the Malaysian Government. v. International students are required to achieve a minimum score of 6.0 in IELTS OR Band 4 in Malaysian University English Test (MUET) OR equivalent to Common European Framework of Reference for Languages (CEFR). , INTI reserves the right to revise at any time as deemed necessary 38 39",
+        "gpa": 2.5
+      }
+    },
+    {
+      "code": "INTI-M-004",
+      "nameEnOfficial": "Master in Health Sciences (Physiotherapy) (by Research)",
+      "matched": true,
+      "sourceId": "brochure-brochures-inti-wa-mba-booklet-pdf",
+      "sourceUrl": "https://newinti.edu.my/brochures/INTI-WA-MBA-Booklet.pdf",
+      "score": 5,
+      "matchedTokenRatio": 1,
+      "differences": [
+        "durationOfficial updated from PDF",
+        "officialIntake updated from PDF",
+        "languageRequirement updated from PDF",
+        "officialAcademicRequirement updated from PDF",
+        "requirement.gpa/note updated from PDF",
+        "officialEntryRequirementSourceUrl set to official PDF"
+      ],
+      "extracted": {
+        "matched": true,
+        "score": 5,
+        "matchedTokenRatio": 1,
+        "sourceId": "brochure-brochures-inti-wa-mba-booklet-pdf",
+        "sourceUrl": "https://newinti.edu.my/brochures/INTI-WA-MBA-Booklet.pdf",
+        "sourceTextPath": "data/imports/iiu/2026-06-20/iiu-20260620/sources/raw/brochure-brochures-inti-wa-mba-booklet-pdf.txt",
+        "lineStart": 2126,
+        "lineEnd": 2208,
+        "matchedTokens": [
+          "master",
+          "health",
+          "sciences",
+          "physiotherapy",
+          "research"
+        ],
+        "durationYears": 2,
+        "durationOfficial": "Full Time: 2 Years Part Time: 3 Years",
+        "intakeMonths": [
+          "January",
+          "May",
+          "September"
+        ],
+        "officialIntake": "INTI International University (N/0915/7/0002)(08/29)(MQA/PA15849) Intake (s) JAN, MAY & SEP Duration Full Time: 2 Years Part Time: 3 Years Entry Requirements",
+        "languageRequirement": {
+          "ielts": 5.5,
+          "toefl": null,
+          "pte": null,
+          "muet": 4
+        },
+        "officialAcademicRequirement": "i. A Bachelor’s Degree in Physiotherapy or related ﬁelds with a minimum CGPA of 2.75 or equivalent, as accepted by the University Senate; or ii. A Bachelor’s Degree in Physiotherapy or related ﬁelds or equivalent with a minimum CGPA of 2.50 and not meeting CGPA of 2.75, can be accepted subject to rigorous internal assessment; or iii. A Bachelor’s Degree in Physiotherapy or related ﬁelds or equivalent with minimum CGPA of 2.00 and not meeting CGPA of 2.50, can be accepted subject to a minimum of 5 years working experience in the relevant ﬁeld and rigorous internal assessment. iv. International students are required to achieve a minimum score of 5.5 in International English Language Testing System (IELTS) or Band 4 in Malaysian University English Test (MUET) or its equivalent. , INTI reserves the right to revise at any time as deemed necessary",
+        "gpa": 2.75
+      }
+    },
+    {
+      "code": "INTI-M-005",
+      "nameEnOfficial": "Master in Information Systems (MIS)",
+      "matched": true,
+      "sourceId": "brochure-brochures-inti-wa-mba-booklet-pdf",
+      "sourceUrl": "https://newinti.edu.my/brochures/INTI-WA-MBA-Booklet.pdf",
+      "score": 3,
+      "matchedTokenRatio": 0.75,
+      "differences": [
+        "durationOfficial updated from PDF",
+        "officialIntake updated from PDF",
+        "languageRequirement updated from PDF",
+        "officialLanguageRequirement updated from PDF",
+        "officialAcademicRequirement updated from PDF",
+        "requirement.gpa/note updated from PDF",
+        "officialEntryRequirementSourceUrl set to official PDF"
+      ],
+      "extracted": {
+        "matched": true,
+        "score": 3,
+        "matchedTokenRatio": 0.75,
+        "sourceId": "brochure-brochures-inti-wa-mba-booklet-pdf",
+        "sourceUrl": "https://newinti.edu.my/brochures/INTI-WA-MBA-Booklet.pdf",
+        "sourceTextPath": "data/imports/iiu/2026-06-20/iiu-20260620/sources/raw/brochure-brochures-inti-wa-mba-booklet-pdf.txt",
+        "lineStart": 1678,
+        "lineEnd": 1761,
+        "matchedTokens": [
+          "master",
+          "information",
+          "systems"
+        ],
+        "durationYears": 1,
+        "durationOfficial": "Full Time: 1 Year Part Time: 2 Years",
+        "intakeMonths": [
+          "January",
+          "May",
+          "September"
+        ],
+        "officialIntake": "INTI International University (R/0611/7/0007)(11/28)(MQA/FA11172) Intake (s) JAN, MAY & SEP Duration Full Time: 1 Year Part Time: 2 Years Programme Structure",
+        "languageRequirement": {
+          "ielts": 6,
+          "toefl": 550,
+          "pte": null,
+          "muet": null
+        },
+        "officialLanguageRequirement": "v. Candidates are required to achieve a minimum score of 6.0 in IELTS, 550 in TOEFL or its equivalent. Other Qualiﬁcations Applicants with non-Computing qualiﬁcations are required to take an additional course, namely Fundamental of Computing.",
+        "officialAcademicRequirement": "i. A Bachelor’s Degree (Level 6, MQF) in Computing or related ﬁelds with a minimum CGPA of 2.50, as accepted by the University Senate; OR ii. A Bachelor’s Degree (Level 6, MQF) in Computing or related ﬁelds with a minimum CGPA of 2.00 and not meeting a CGPA of 2.50 can be accepted subject to a thorough rigorous assessment as determined by the university; OR iii. A Bachelor’s Degree (Level 6, MQF) in non-Computing ﬁeld with a minimum CGPA of 2.00 can be accepted subject to appropriate prerequisite courses; OR iv. Other qualiﬁcations equivalent to a Bachelor’s Degree (Level 6, MQF) in Computing or related ﬁelds recognised by the Government of Malaysia must fulﬁl the requirement on item (i) or (ii). v. Candidates are required to achieve a minimum score of 6.0 in IELTS, 550 in TOEFL or its equivalent. Other Qualiﬁcations Applicants with non-Computing qualiﬁcations are required to take an additional course, namely Fundamental of Computing. , INTI reserves the right to revise at any time as deemed necessary 3332",
+        "gpa": 2.5
+      }
+    },
+    {
+      "code": "INTI-M-006",
+      "nameEnOfficial": "Master in Information Technology (MIT)",
+      "matched": true,
+      "sourceId": "brochure-brochures-inti-wa-mba-booklet-pdf",
+      "sourceUrl": "https://newinti.edu.my/brochures/INTI-WA-MBA-Booklet.pdf",
+      "score": 3,
+      "matchedTokenRatio": 0.75,
+      "differences": [
+        "durationOfficial updated from PDF",
+        "officialIntake updated from PDF",
+        "languageRequirement updated from PDF",
+        "officialLanguageRequirement updated from PDF",
+        "officialAcademicRequirement updated from PDF",
+        "requirement.gpa/note updated from PDF",
+        "officialEntryRequirementSourceUrl set to official PDF"
+      ],
+      "extracted": {
+        "matched": true,
+        "score": 3,
+        "matchedTokenRatio": 0.75,
+        "sourceId": "brochure-brochures-inti-wa-mba-booklet-pdf",
+        "sourceUrl": "https://newinti.edu.my/brochures/INTI-WA-MBA-Booklet.pdf",
+        "sourceTextPath": "data/imports/iiu/2026-06-20/iiu-20260620/sources/raw/brochure-brochures-inti-wa-mba-booklet-pdf.txt",
+        "lineStart": 1678,
+        "lineEnd": 1761,
+        "matchedTokens": [
+          "master",
+          "information",
+          "technology"
+        ],
+        "durationYears": 1,
+        "durationOfficial": "Full Time: 1 Year Part Time: 2 Years",
+        "intakeMonths": [
+          "January",
+          "May",
+          "September"
+        ],
+        "officialIntake": "INTI International University (R/0611/7/0007)(11/28)(MQA/FA11172) Intake (s) JAN, MAY & SEP Duration Full Time: 1 Year Part Time: 2 Years Programme Structure",
+        "languageRequirement": {
+          "ielts": 6,
+          "toefl": 550,
+          "pte": null,
+          "muet": null
+        },
+        "officialLanguageRequirement": "v. Candidates are required to achieve a minimum score of 6.0 in IELTS, 550 in TOEFL or its equivalent. Other Qualiﬁcations Applicants with non-Computing qualiﬁcations are required to take an additional course, namely Fundamental of Computing.",
+        "officialAcademicRequirement": "i. A Bachelor’s Degree (Level 6, MQF) in Computing or related ﬁelds with a minimum CGPA of 2.50, as accepted by the University Senate; OR ii. A Bachelor’s Degree (Level 6, MQF) in Computing or related ﬁelds with a minimum CGPA of 2.00 and not meeting a CGPA of 2.50 can be accepted subject to a thorough rigorous assessment as determined by the university; OR iii. A Bachelor’s Degree (Level 6, MQF) in non-Computing ﬁeld with a minimum CGPA of 2.00 can be accepted subject to appropriate prerequisite courses; OR iv. Other qualiﬁcations equivalent to a Bachelor’s Degree (Level 6, MQF) in Computing or related ﬁelds recognised by the Government of Malaysia must fulﬁl the requirement on item (i) or (ii). v. Candidates are required to achieve a minimum score of 6.0 in IELTS, 550 in TOEFL or its equivalent. Other Qualiﬁcations Applicants with non-Computing qualiﬁcations are required to take an additional course, namely Fundamental of Computing. , INTI reserves the right to revise at any time as deemed necessary 3332",
+        "gpa": 2.5
+      }
+    },
+    {
+      "code": "INTI-M-007",
+      "nameEnOfficial": "Master in Information Technology (Online Learning)",
+      "matched": true,
+      "sourceId": "brochure-brochures-inti-wa-mba-booklet-pdf",
+      "sourceUrl": "https://newinti.edu.my/brochures/INTI-WA-MBA-Booklet.pdf",
+      "score": 4,
+      "matchedTokenRatio": 1,
+      "differences": [
+        "officialEntryRequirementSourceUrl set to official PDF"
+      ],
+      "extracted": {
+        "matched": true,
+        "score": 4,
+        "matchedTokenRatio": 1,
+        "sourceId": "brochure-brochures-inti-wa-mba-booklet-pdf",
+        "sourceUrl": "https://newinti.edu.my/brochures/INTI-WA-MBA-Booklet.pdf",
+        "sourceTextPath": "data/imports/iiu/2026-06-20/iiu-20260620/sources/raw/brochure-brochures-inti-wa-mba-booklet-pdf.txt",
+        "lineStart": 2772,
+        "lineEnd": 2777,
+        "matchedTokens": [
+          "master",
+          "information",
+          "technology",
+          "learning"
+        ],
+        "durationYears": null
+      }
+    },
+    {
+      "code": "INTI-M-008",
+      "nameEnOfficial": "Master of Biotechnological Innovations and Application (by Research)",
+      "matched": true,
+      "sourceId": "brochure-brochures-inti-wa-mba-booklet-pdf",
+      "sourceUrl": "https://newinti.edu.my/brochures/INTI-WA-MBA-Booklet.pdf",
+      "score": 5,
+      "matchedTokenRatio": 1,
+      "differences": [
+        "durationOfficial updated from PDF",
+        "officialIntake updated from PDF",
+        "languageRequirement updated from PDF",
+        "officialAcademicRequirement updated from PDF",
+        "requirement.gpa/note updated from PDF",
+        "officialEntryRequirementSourceUrl set to official PDF"
+      ],
+      "extracted": {
+        "matched": true,
+        "score": 5,
+        "matchedTokenRatio": 1,
+        "sourceId": "brochure-brochures-inti-wa-mba-booklet-pdf",
+        "sourceUrl": "https://newinti.edu.my/brochures/INTI-WA-MBA-Booklet.pdf",
+        "sourceTextPath": "data/imports/iiu/2026-06-20/iiu-20260620/sources/raw/brochure-brochures-inti-wa-mba-booklet-pdf.txt",
+        "lineStart": 2302,
+        "lineEnd": 2381,
+        "matchedTokens": [
+          "master",
+          "biotechnological",
+          "innovations",
+          "application",
+          "research"
+        ],
+        "durationYears": 2,
+        "durationOfficial": "Full Time: 2 Years Part Time: 3 Years",
+        "intakeMonths": [
+          "January",
+          "May",
+          "September"
+        ],
+        "officialIntake": "INTI International University (N/0510/7/0001)(08/27)(MQA/PA15848) Intake (s) JAN, MAY & SEP Duration Full Time: 2 Years Part Time: 3 Years Entry Requirements",
+        "languageRequirement": {
+          "ielts": 5.5,
+          "toefl": null,
+          "pte": null,
+          "muet": 4
+        },
+        "officialAcademicRequirement": "i. A Bachelor’s Degree (Level 6, MQF) in Biotechnology or related ﬁeld with a minimum CGPA of 2.75, or its equivalent, as accepted by the University Senate; OR ii. A Bachelor’s Degree (Level 6, MQF) in Biotechnology or related ﬁeld with at least CGPA of 2.50 and has not achieved CGPA 2.75, or its equivalent can be accepted subject to a rigorous internal assessment; OR iii. A Bachelor’s Degree (Level 6, MQF) in Biotechnology or related ﬁeld but has not achieved CGPA of 2.50, or its equivalent can be accepted subject to a minimum of FIVE (5) years’ working experience in the relevant ﬁeld. iv. International students are required to achieve a minimum score of 5.5 in International English Language Testing System (IELTS) or Band 4 in Malaysian University English Test (MUET) or its equivalent. Note: Candidates without a qualiﬁcation in the related ﬁelds or relevant working experience must undergo appropriate prerequisite courses determined by the university and meet the minimum CGPA based on (i) to (iii). , INTI reserves the right to revise at any time as deemed necessary Awarded by INTI International University",
+        "gpa": 2.75
+      }
+    },
+    {
+      "code": "INTI-M-009",
+      "nameEnOfficial": "Master of Business Administration (Business Analytics)",
+      "matched": true,
+      "sourceId": "brochure-brochures-inti-wa-mba-booklet-pdf",
+      "sourceUrl": "https://newinti.edu.my/brochures/INTI-WA-MBA-Booklet.pdf",
+      "score": 4,
+      "matchedTokenRatio": 1,
+      "differences": [
+        "durationOfficial updated from PDF",
+        "officialIntake updated from PDF",
+        "officialLanguageRequirement updated from PDF",
+        "officialAcademicRequirement updated from PDF",
+        "requirement.gpa/note updated from PDF",
+        "officialEntryRequirementSourceUrl set to official PDF"
+      ],
+      "extracted": {
+        "matched": true,
+        "score": 4,
+        "matchedTokenRatio": 1,
+        "sourceId": "brochure-brochures-inti-wa-mba-booklet-pdf",
+        "sourceUrl": "https://newinti.edu.my/brochures/INTI-WA-MBA-Booklet.pdf",
+        "sourceTextPath": "data/imports/iiu/2026-06-20/iiu-20260620/sources/raw/brochure-brochures-inti-wa-mba-booklet-pdf.txt",
+        "lineStart": 1154,
+        "lineEnd": 1245,
+        "matchedTokens": [
+          "master",
+          "business",
+          "administration",
+          "analytics"
+        ],
+        "durationYears": 1,
+        "durationOfficial": "Full Time: 1 Year Part Time: 2 Years",
+        "intakeMonths": [
+          "January",
+          "May",
+          "September"
+        ],
+        "officialIntake": "INTI International University (N/0414/7/0026)(02/28)(MQA/FA16085) Intake (s) JAN, MAY & SEP Duration Full Time: 1 Year Part Time: 2 Years Entry Requirements",
+        "languageRequirement": {
+          "ielts": 6,
+          "toefl": null,
+          "pte": null,
+          "muet": null
+        },
+        "officialLanguageRequirement": "by the Malaysian Government English Language Requirements • IELTS 6.0 or equivalent. 24 25",
+        "officialAcademicRequirement": "i. A Bachelor’s Degree (Level 6, MQF) in related ﬁelds with a minimum CGPA of 2.50 as accepted by the University Senate; OR ii. A Bachelor’s Degree (Level 6, MQF) in related ﬁelds with a minimum CGPA of 2.00 and not meeting CGPA of 2.50 can be accepted, subject to a rigorous internal assessment; OR iii. A Bachelor’s Degree (Level 6, MQF) in non-related ﬁelds with a minimum CGPA of 2.00 as accepted by the Senate and with relevant working experience, subject to a rigorous internal assessment; OR iv. A Bachelor’s Degree (Level 6, MQF) in non-related ﬁelds with a minimum CGPA of 2.00 as accepted by the Senate and without relevant working experience, subject to passing prerequisite courses; OR v. Other equivalent/related qualiﬁcations to a Bachelor’s Degree (Level 6, MQF) recognised by the Malaysian Government",
+        "gpa": 2.5
+      }
+    },
+    {
+      "code": "INTI-M-010",
+      "nameEnOfficial": "Master of Business Administration (MBA)",
+      "matched": true,
+      "sourceId": "brochure-brochures-inti-wa-mba-booklet-pdf",
+      "sourceUrl": "https://newinti.edu.my/brochures/INTI-WA-MBA-Booklet.pdf",
+      "score": 3,
+      "matchedTokenRatio": 1,
+      "differences": [
+        "durationOfficial updated from PDF",
+        "officialIntake updated from PDF",
+        "officialLanguageRequirement updated from PDF",
+        "officialAcademicRequirement updated from PDF",
+        "requirement.gpa/note updated from PDF",
+        "officialEntryRequirementSourceUrl set to official PDF"
+      ],
+      "extracted": {
+        "matched": true,
+        "score": 3,
+        "matchedTokenRatio": 1,
+        "sourceId": "brochure-brochures-inti-wa-mba-booklet-pdf",
+        "sourceUrl": "https://newinti.edu.my/brochures/INTI-WA-MBA-Booklet.pdf",
+        "sourceTextPath": "data/imports/iiu/2026-06-20/iiu-20260620/sources/raw/brochure-brochures-inti-wa-mba-booklet-pdf.txt",
+        "lineStart": 1154,
+        "lineEnd": 1245,
+        "matchedTokens": [
+          "master",
+          "business",
+          "administration"
+        ],
+        "durationYears": 1,
+        "durationOfficial": "Full Time: 1 Year Part Time: 2 Years",
+        "intakeMonths": [
+          "January",
+          "May",
+          "September"
+        ],
+        "officialIntake": "INTI International University (N/0414/7/0026)(02/28)(MQA/FA16085) Intake (s) JAN, MAY & SEP Duration Full Time: 1 Year Part Time: 2 Years Entry Requirements",
+        "languageRequirement": {
+          "ielts": 6,
+          "toefl": null,
+          "pte": null,
+          "muet": null
+        },
+        "officialLanguageRequirement": "by the Malaysian Government English Language Requirements • IELTS 6.0 or equivalent. 24 25",
+        "officialAcademicRequirement": "i. A Bachelor’s Degree (Level 6, MQF) in related ﬁelds with a minimum CGPA of 2.50 as accepted by the University Senate; OR ii. A Bachelor’s Degree (Level 6, MQF) in related ﬁelds with a minimum CGPA of 2.00 and not meeting CGPA of 2.50 can be accepted, subject to a rigorous internal assessment; OR iii. A Bachelor’s Degree (Level 6, MQF) in non-related ﬁelds with a minimum CGPA of 2.00 as accepted by the Senate and with relevant working experience, subject to a rigorous internal assessment; OR iv. A Bachelor’s Degree (Level 6, MQF) in non-related ﬁelds with a minimum CGPA of 2.00 as accepted by the Senate and without relevant working experience, subject to passing prerequisite courses; OR v. Other equivalent/related qualiﬁcations to a Bachelor’s Degree (Level 6, MQF) recognised by the Malaysian Government",
+        "gpa": 2.5
+      }
+    },
+    {
+      "code": "INTI-M-011",
+      "nameEnOfficial": "Master of Business Administration (MBA) in collaboration with INTI International University",
+      "matched": true,
+      "sourceId": "brochure-brochures-iicp-inti-iu-mba-pdf",
+      "sourceUrl": "https://newinti.edu.my/brochures/IICP-INTI-IU-MBA.pdf",
+      "score": 3,
+      "matchedTokenRatio": 1,
+      "differences": [
+        "durationOfficial updated from PDF",
+        "officialIntake updated from PDF",
+        "officialLanguageRequirement updated from PDF",
+        "officialAcademicRequirement updated from PDF",
+        "requirement.gpa/note updated from PDF",
+        "officialEntryRequirementSourceUrl set to official PDF"
+      ],
+      "extracted": {
+        "matched": true,
+        "score": 3,
+        "matchedTokenRatio": 1,
+        "sourceId": "brochure-brochures-iicp-inti-iu-mba-pdf",
+        "sourceUrl": "https://newinti.edu.my/brochures/IICP-INTI-IU-MBA.pdf",
+        "sourceTextPath": "data/imports/iiu/2026-06-20/iiu-20260620/sources/raw/brochure-brochures-iicp-inti-iu-mba-pdf.txt",
+        "lineStart": 47,
+        "lineEnd": 226,
+        "matchedTokens": [
+          "master",
+          "business",
+          "administration"
+        ],
+        "durationYears": 1,
+        "durationOfficial": "Full-time: 1 Year",
+        "intakeMonths": [
+          "January",
+          "May",
+          "September"
+        ],
+        "officialIntake": "Intakes January, May, September Duration",
+        "languageRequirement": {
+          "ielts": 6,
+          "toefl": null,
+          "pte": null,
+          "muet": 4
+        },
+        "officialLanguageRequirement": "by the Malaysian Government. English Language Requirements: First Degree conducted in English (subject to acceptance by the University) or IELTS 6 / MUET 4. Key Highlights: • 100% coursework, no examination • Complete in 12 months • Curriculum developed in collaboration with industry, uses Problem- Based Learning and Project-Based Learning approaches. • A portfolio of critical management fields: - Accounting - Corporate Ethics and Law - Finance - Human Resource Management - Marketing - Management",
+        "officialAcademicRequirement": "i. A Bachelors Degree (Level 6, MQF) in related fields with a minimum CGPA of 2.50 as accepted by the University Senate; OR ii. A Bachelors Degree (Level 6, MQF) in related fields with a minimum CGPA of 2.00 and not meeting CGPA of 2.50 can be accepted, subject to a rigorous internal assessment; OR iii. A Bachelors Degree (Level 6, MQF) in non-related fields with a minimum CGPA of 2.00 as accepted by the Senate and with relevant working experience, subject to a rigorous internal assessment; OR iv. A Bachelors Degree (Level 6, MQF) in non-related fields with a minimum CGPA of 2.00 as accepted by the Senate and without relevant working experience, subject to passing prerequisite courses; OR v. Other equivalent/related qualifications to a Bachelors Degree (Level 6, MQF) recognised by the Malaysian Government.",
+        "gpa": 2.5
+      }
+    },
+    {
+      "code": "INTI-M-012",
+      "nameEnOfficial": "Master of Business Administration (Online Learning)",
+      "matched": true,
+      "sourceId": "brochure-brochures-inti-wa-mba-booklet-pdf",
+      "sourceUrl": "https://newinti.edu.my/brochures/INTI-WA-MBA-Booklet.pdf",
+      "score": 4,
+      "matchedTokenRatio": 1,
+      "differences": [
+        "officialEntryRequirementSourceUrl set to official PDF"
+      ],
+      "extracted": {
+        "matched": true,
+        "score": 4,
+        "matchedTokenRatio": 1,
+        "sourceId": "brochure-brochures-inti-wa-mba-booklet-pdf",
+        "sourceUrl": "https://newinti.edu.my/brochures/INTI-WA-MBA-Booklet.pdf",
+        "sourceTextPath": "data/imports/iiu/2026-06-20/iiu-20260620/sources/raw/brochure-brochures-inti-wa-mba-booklet-pdf.txt",
+        "lineStart": 207,
+        "lineEnd": 320,
+        "matchedTokens": [
+          "master",
+          "business",
+          "administration",
+          "learning"
+        ],
+        "durationYears": null
+      }
+    },
+    {
+      "code": "INTI-M-013",
+      "nameEnOfficial": "Master of Education in Learning, Design and Technology (by Research)",
+      "matched": true,
+      "sourceId": "brochure-brochures-inti-wa-mba-booklet-pdf",
+      "sourceUrl": "https://newinti.edu.my/brochures/INTI-WA-MBA-Booklet.pdf",
+      "score": 6,
+      "matchedTokenRatio": 1,
+      "differences": [
+        "durationOfficial updated from PDF",
+        "officialIntake updated from PDF",
+        "officialLanguageRequirement updated from PDF",
+        "officialAcademicRequirement updated from PDF",
+        "requirement.gpa/note updated from PDF",
+        "officialEntryRequirementSourceUrl set to official PDF"
+      ],
+      "extracted": {
+        "matched": true,
+        "score": 6,
+        "matchedTokenRatio": 1,
+        "sourceId": "brochure-brochures-inti-wa-mba-booklet-pdf",
+        "sourceUrl": "https://newinti.edu.my/brochures/INTI-WA-MBA-Booklet.pdf",
+        "sourceTextPath": "data/imports/iiu/2026-06-20/iiu-20260620/sources/raw/brochure-brochures-inti-wa-mba-booklet-pdf.txt",
+        "lineStart": 1449,
+        "lineEnd": 1514,
+        "matchedTokens": [
+          "master",
+          "education",
+          "learning",
+          "design",
+          "technology",
+          "research"
+        ],
+        "durationYears": null,
+        "durationOfficial": "Full Time: 2 - 4 Years Part Time: 3 - 6 Years",
+        "intakeMonths": [
+          "January",
+          "May",
+          "September"
+        ],
+        "officialIntake": "INTI International University (N/0111/7/0015)(11/2026)(MQA/PA15144) Intake (s) JAN, MAY & SEP Duration Full Time: 2 - 4 Years Part Time: 3 - 6 Years Entry Requirements",
+        "languageRequirement": {
+          "ielts": 4,
+          "toefl": null,
+          "pte": null,
+          "muet": 3
+        },
+        "officialLanguageRequirement": ". Candidates are required to achieve a minimum score of 4.0 in IELTS, Band 3 in MUET or its equivalent.",
+        "officialAcademicRequirement": "i. A Bachelor’s Degree (Level 6, MQF) in education fields with a minimum CGPA of 2.75 or its equivalent, as accepted by the University Senate; OR ii. A Bachelor’s Degree in education fields, with a minimum CGPA of 2.50 can be accepted subject to rigorous internal assessment; OR iii. A Bachelor’s Degree in education fields with a minimum CGPA of 2.00 can be accepted subject to a minimum THREE years of working experience in the education fields and rigorous internal assessment; OR iv. A Bachelor’s Degree with a minimum of 2.75, subject to passing prerequisite courses; OR v. A Bachelor’s Degree with a minimum CGPA of 2.50 can be accepted subject to rigorous internal assessment AND passing prerequisite courses; OR vi. A Bachelor’s Degree with a minimum CFPA of 2.00 can be accepted, subject to a minimum THREE years of working experience in the education fields. rigorous internal assessment, and passing prerequisite courses; OR vii. Other qualifications equivalent to the above requirements and recognised by the Malaysian Government. viii . Candidates are required to achieve a minimum score of 4.0 in IELTS, Band 3 in MUET or its equivalent. Awarded by INTI International University",
+        "gpa": 2.75
+      }
+    },
+    {
+      "code": "INTI-M-014",
+      "nameEnOfficial": "Master of Science in Construction Management (Building Information Modelling)",
+      "matched": true,
+      "sourceId": "brochure-brochures-inti-wa-mba-booklet-pdf",
+      "sourceUrl": "https://newinti.edu.my/brochures/INTI-WA-MBA-Booklet.pdf",
+      "score": 7,
+      "matchedTokenRatio": 1,
+      "differences": [
+        "durationOfficial updated from PDF",
+        "officialIntake updated from PDF",
+        "languageRequirement updated from PDF",
+        "officialLanguageRequirement updated from PDF",
+        "officialAcademicRequirement updated from PDF",
+        "requirement.gpa/note updated from PDF",
+        "officialEntryRequirementSourceUrl set to official PDF"
+      ],
+      "extracted": {
+        "matched": true,
+        "score": 7,
+        "matchedTokenRatio": 1,
+        "sourceId": "brochure-brochures-inti-wa-mba-booklet-pdf",
+        "sourceUrl": "https://newinti.edu.my/brochures/INTI-WA-MBA-Booklet.pdf",
+        "sourceTextPath": "data/imports/iiu/2026-06-20/iiu-20260620/sources/raw/brochure-brochures-inti-wa-mba-booklet-pdf.txt",
+        "lineStart": 2083,
+        "lineEnd": 2123,
+        "matchedTokens": [
+          "master",
+          "science",
+          "construction",
+          "management",
+          "building",
+          "information",
+          "modelling"
+        ],
+        "durationYears": 1,
+        "durationOfficial": "Full Time: 1 Year Part Time: 2 Years",
+        "intakeMonths": [
+          "January",
+          "May",
+          "September"
+        ],
+        "officialIntake": "INTI International University (R/0733/7/0008)(05/29)(MQA/FA11618) Intake (s) JAN, MAY & SEP Duration Full Time: 1 Year Part Time: 2 Years Note: Programme structure is subject to change from time to time, INTI reserves the right to revise a",
+        "languageRequirement": {
+          "ielts": 5,
+          "toefl": 500,
+          "pte": null,
+          "muet": 3.5
+        },
+        "officialLanguageRequirement": "iii. Candidates are required to achieve a minimum score of 5.0 in IELTS, 500 in TOEFL, Band 3.5 in MUET or its equivalent.",
+        "officialAcademicRequirement": "i. Bachelor’s Degree (Level 6 Malaysian Qualiﬁcation Framework, MQF) in Engineering / Engineering Technology / Construction Management / Architecture / Architectural Technology or its equivalent with a minimum CGPA of 2.5; OR ii. Bachelor’s Degree (Level 6 MQF) in Engineering / Engineering Technology / Construction Management / Architecture / Architectural Technology or its equivalent with CGPA above 2.0 but less than 2.5 may be admitted subject to a minimum of 5 years working experience in relevant ﬁeld. iii. Candidates are required to achieve a minimum score of 5.0 in IELTS, 500 in TOEFL, Band 3.5 in MUET or its equivalent. Note: Candidates with Bachelor’s Degree of Science or Technology degrees or their equivalents (non-Engineering / Engineering Technology / Construction Management / Architecture / Architectural Technology) are required to take 2 bridging courses before commencing the programme. MASTER OF SCIENCE IN CONSTRUCTION MANAGEMENT (BUILDING INFORMATION MODELLING) Awarded by INTI International University 3736",
+        "gpa": 2.5
+      }
+    },
+    {
+      "code": "INTI-M-015",
+      "nameEnOfficial": "Master of Science in Construction Management (Building Information Modelling) – (Online Learning)",
+      "matched": true,
+      "sourceId": "brochure-brochures-inti-wa-mba-booklet-pdf",
+      "sourceUrl": "https://newinti.edu.my/brochures/INTI-WA-MBA-Booklet.pdf",
+      "score": 8,
+      "matchedTokenRatio": 1,
+      "differences": [
+        "durationOfficial updated from PDF",
+        "officialIntake updated from PDF",
+        "languageRequirement updated from PDF",
+        "officialLanguageRequirement updated from PDF",
+        "officialAcademicRequirement updated from PDF",
+        "requirement.gpa/note updated from PDF",
+        "officialEntryRequirementSourceUrl set to official PDF"
+      ],
+      "extracted": {
+        "matched": true,
+        "score": 8,
+        "matchedTokenRatio": 1,
+        "sourceId": "brochure-brochures-inti-wa-mba-booklet-pdf",
+        "sourceUrl": "https://newinti.edu.my/brochures/INTI-WA-MBA-Booklet.pdf",
+        "sourceTextPath": "data/imports/iiu/2026-06-20/iiu-20260620/sources/raw/brochure-brochures-inti-wa-mba-booklet-pdf.txt",
+        "lineStart": 2735,
+        "lineEnd": 2777,
+        "matchedTokens": [
+          "master",
+          "science",
+          "construction",
+          "management",
+          "building",
+          "information",
+          "modelling",
+          "learning"
+        ],
+        "durationYears": 1,
+        "durationOfficial": "Full Time: 1 Year Part Time: 2 Years",
+        "intakeMonths": [
+          "January",
+          "March",
+          "May",
+          "August",
+          "October"
+        ],
+        "officialIntake": "INTI International University (N-DL/0733/7/0002)(05/27)(MQA/FA15726) Intake (s) JAN, MAR, MAY, AUG, OCT Duration Full Time: 1 Year Part Time: 2 Years Entry Requirements",
+        "languageRequirement": {
+          "ielts": 5,
+          "toefl": 500,
+          "pte": null,
+          "muet": 3.5
+        },
+        "officialLanguageRequirement": "iii. Candidates are required to achieve a minimum score of 5.0 in IELTS, 500 in TOEFL, Band 3.5 in MUET or its equivalent.",
+        "officialAcademicRequirement": "i. Bachelor’s Degree (Level 6 Malaysian Qualification Framework, MQF) in Engineering / Engineering Technology / Construction Management / Architecture / Architectural Technology or its equivalent with a minimum CGPA of 2.5 OR ii. Bachelor’s Degree (Level 6 MQF) in Engineering / Engineering Technology / Construction Management / Architecture / Architectural Technology or its equivalent with CGPA above 2.0 but less than 2.5 may be admitted subject to a minimum of 5 years working experience in relevant field. iii. Candidates are required to achieve a minimum score of 5.0 in IELTS, 500 in TOEFL, Band 3.5 in MUET or its equivalent. NOTE: Candidates with Bachelor’s Degree of Science or Technology or their equivalents (non-Engineering / Engineering Technology / Construction Management / Architecture / Architectural Technology) are required to take prerequisite modules in Engineering and Engineering Technology before commencing the programme. MASTER OF SCIENCE IN CONSTRUCTION MANAGEMENT (BUILDING INFORMATION MODELLING) Online Learning Awarded by INTI International University , INTI reserves the right to revise at any time as deemed necessary Awarded by INTI International University",
+        "gpa": 2.5
+      }
+    },
+    {
+      "code": "INTI-M-016",
+      "nameEnOfficial": "Master of Science in Construction Management (Facility Management)",
+      "matched": true,
+      "sourceId": "brochure-brochures-inti-wa-mba-booklet-pdf",
+      "sourceUrl": "https://newinti.edu.my/brochures/INTI-WA-MBA-Booklet.pdf",
+      "score": 5,
+      "matchedTokenRatio": 1,
+      "differences": [
+        "durationOfficial updated from PDF",
+        "officialIntake updated from PDF",
+        "languageRequirement updated from PDF",
+        "officialLanguageRequirement updated from PDF",
+        "officialAcademicRequirement updated from PDF",
+        "requirement.gpa/note updated from PDF",
+        "officialEntryRequirementSourceUrl set to official PDF"
+      ],
+      "extracted": {
+        "matched": true,
+        "score": 5,
+        "matchedTokenRatio": 1,
+        "sourceId": "brochure-brochures-inti-wa-mba-booklet-pdf",
+        "sourceUrl": "https://newinti.edu.my/brochures/INTI-WA-MBA-Booklet.pdf",
+        "sourceTextPath": "data/imports/iiu/2026-06-20/iiu-20260620/sources/raw/brochure-brochures-inti-wa-mba-booklet-pdf.txt",
+        "lineStart": 1953,
+        "lineEnd": 2117,
+        "matchedTokens": [
+          "master",
+          "science",
+          "construction",
+          "management",
+          "facility"
+        ],
+        "durationYears": 1,
+        "durationOfficial": "Full Time: 1 Year Part Time: 2 Years",
+        "intakeMonths": [
+          "January",
+          "May",
+          "September"
+        ],
+        "officialIntake": "INTI International University (R/0733/7/0009)(05/29)(MQA/FA11619) Intake (s) JAN, MAY & SEP Duration Full Time: 1 Year Part Time: 2 Years Entry Requirements",
+        "languageRequirement": {
+          "ielts": 5,
+          "toefl": 500,
+          "pte": null,
+          "muet": 3.5
+        },
+        "officialLanguageRequirement": "iii. Candidates are required to achieve a minimum score of 5.0 in IELTS, 500 in TOEFL, Band 3.5 in MUET or its equivalent.",
+        "officialAcademicRequirement": "i. Bachelor’s Degree (Level 6 Malaysian Qualiﬁcation Framework, MQF) in Engineering / Engineering Technology / Construction Management / Architecture / Architectural Technology or its equivalent with a minimum CGPA of 2.5; OR ii. Bachelor’s Degree (Level 6 MQF) in Engineering / Engineering Technology / Construction Management / Architecture / Architectural Technology or its equivalent with CGPA above 2.0 but less than 2.5 may be admitted subject to a minimum of 5 years working experience in relevant ﬁeld. iii. Candidates are required to achieve a minimum score of 5.0 in IELTS, 500 in TOEFL, Band 3.5 in MUET or its equivalent. Note: Candidates with Bachelor’s Degree of Science or Technology degrees or their equivalents (non-Engineering / Engineering Technology / Construction Management / Architecture / Architectural Technology) are required to take 2 bridging courses before commencing the programme. The MSc in Construction Management (Building Information Modelling) is designed to meet the needs of students who want to build a strong background in building information modelling systems and the application of information and communications technology in the construction industry. Every construction business worldwide has to invest in technology in order to maintain its competitive edge, with effective management of technological innovations as essential to daily construction operations as are construction costing or project monitoring. Construction companies today need managers who can understand how BIM technology can open new opportunities and restructure existing construction businesses. The MSc in Construction Management with Building Information Modelling programme is designed precisely with this in mind. Our curriculum combines technical knowledge courses with insightful courses focused on technology management in managing construction data.",
+        "gpa": 2.5
+      }
+    },
+    {
+      "code": "INTI-M-017",
+      "nameEnOfficial": "Master of Science in Data Science (by Research)",
+      "matched": true,
+      "sourceId": "brochure-brochures-inti-wa-mba-booklet-pdf",
+      "sourceUrl": "https://newinti.edu.my/brochures/INTI-WA-MBA-Booklet.pdf",
+      "score": 4,
+      "matchedTokenRatio": 1,
+      "differences": [
+        "durationOfficial updated from PDF",
+        "officialIntake updated from PDF",
+        "languageRequirement updated from PDF",
+        "officialLanguageRequirement updated from PDF",
+        "officialAcademicRequirement updated from PDF",
+        "requirement.gpa/note updated from PDF",
+        "officialEntryRequirementSourceUrl set to official PDF"
+      ],
+      "extracted": {
+        "matched": true,
+        "score": 4,
+        "matchedTokenRatio": 1,
+        "sourceId": "brochure-brochures-inti-wa-mba-booklet-pdf",
+        "sourceUrl": "https://newinti.edu.my/brochures/INTI-WA-MBA-Booklet.pdf",
+        "sourceTextPath": "data/imports/iiu/2026-06-20/iiu-20260620/sources/raw/brochure-brochures-inti-wa-mba-booklet-pdf.txt",
+        "lineStart": 1772,
+        "lineEnd": 1852,
+        "matchedTokens": [
+          "master",
+          "science",
+          "data",
+          "research"
+        ],
+        "durationYears": 2,
+        "durationOfficial": "Full Time: 2 Years Part Time: 3 Years",
+        "intakeMonths": [
+          "January",
+          "May",
+          "September"
+        ],
+        "officialIntake": "INTI International University (N/0613/7/0027)(12/26)(MQA/PA15143) Intake (s) JAN, MAY & SEP Duration Full Time: 2 Years Part Time: 3 Years Entry Requirements",
+        "languageRequirement": {
+          "ielts": 6,
+          "toefl": null,
+          "pte": null,
+          "muet": 4
+        },
+        "officialLanguageRequirement": "iv. Candidates are required to achieve a minimum score of 6.0 in IELTS, Band 4 in MUET or its equivalent.",
+        "officialAcademicRequirement": "i. A Bachelor’s Degree in Computing or in the area of science and technology or related to computing, with a minimum CGPA of 3.00; OR ii. A Bachelor’s Degree in Computing or in the area of science and technology or related to computing, with CGPA below 3.00 but above 2.50, can be accepted subject to rigorous internal assessment process; OR iii. A Bachelor’s Degree in Computing or in the area of science and technology or related to computing, with CGPA less than 2.50, with a minimum of 5 years working experience in a relevant ﬁeld may be accepted. iv. Candidates are required to achieve a minimum score of 6.0 in IELTS, Band 4 in MUET or its equivalent. Note: Candidates without a qualiﬁcation in the related ﬁelds or relevant working experience must undergo appropriate prerequisite courses determined by the university and meet the minimum CGPA based on (i) to (iii). , INTI reserves the right to revise at any time as deemed necessary Awarded by INTI International University",
+        "gpa": 3
+      }
+    },
+    {
+      "code": "INTI-M-018",
+      "nameEnOfficial": "Master of Science in Engineering and Eco-Innovation (by Research)",
+      "matched": true,
+      "sourceId": "brochure-brochures-master-of-science-in-engineering-and-eco-innovation-by-research-pdf",
+      "sourceUrl": "https://newinti.edu.my/brochures/Master-of-Science-in-Engineering-and-Eco-Innovation-(by-Research).pdf",
+      "score": 6,
+      "matchedTokenRatio": 1,
+      "differences": [
+        "officialAcademicRequirement updated from PDF",
+        "requirement.gpa/note updated from PDF",
+        "officialEntryRequirementSourceUrl set to official PDF"
+      ],
+      "extracted": {
+        "matched": true,
+        "score": 6,
+        "matchedTokenRatio": 1,
+        "sourceId": "brochure-brochures-master-of-science-in-engineering-and-eco-innovation-by-research-pdf",
+        "sourceUrl": "https://newinti.edu.my/brochures/Master-of-Science-in-Engineering-and-Eco-Innovation-(by-Research).pdf",
+        "sourceTextPath": "data/imports/iiu/2026-06-20/iiu-20260620/sources/raw/brochure-brochures-master-of-science-in-engineering-and-eco-innovation-by-research-pdf.txt",
+        "lineStart": 37,
+        "lineEnd": 64,
+        "matchedTokens": [
+          "master",
+          "science",
+          "engineering",
+          "eco",
+          "innovation",
+          "research"
+        ],
+        "durationYears": null,
+        "officialAcademicRequirement": "i. A Bachelor’s Degree in the field or related fields with a minimum CGPA of 2.75 or equivalent, as accepted by the University Senate; OR ii. A Bachelor’s Degree in the field or related fields or equivalent with a minimum CGPA of 2.50 and not meeting CGPA of 2.75, can be accepted subject to rigorous internal assessment; OR iii. A Bachelor’s Degree in the field or related fields or equivalent with minimum CGPA of 2.00 and not meeting CGPA of 2.50, can be accepted subject to a minimum of 5 years working experience in the relevant field and rigorous internal assessment. iv. Candidates without a qualification in the related fields or relevant working experience must undergo appropriate prerequisite courses determined by the university and meet the minimum CGPA based on (i) to (iii). NEWINTI.EDU.MY INTI INTERNATIONAL UNIVERSITY DU022(N) 06-798 2000 • Persiaran Perdana BBN, Putra Nilai, Bandar Baru Nilai, 71800 Nilai, Negeri Sembilan new",
+        "gpa": 2.75
+      }
+    },
+    {
+      "code": "INTI-M-019",
+      "nameEnOfficial": "Master of Science in Facilities Management (Online Learning)",
+      "matched": true,
+      "sourceId": "brochure-brochures-master-of-science-in-facility-management-online-learning-pdf",
+      "sourceUrl": "https://newinti.edu.my/brochures/Master-of-Science-in-Facility-Management-(Online-Learning).pdf",
+      "score": 5,
+      "matchedTokenRatio": 1,
+      "differences": [
+        "officialEntryRequirementSourceUrl set to official PDF"
+      ],
+      "extracted": {
+        "matched": true,
+        "score": 5,
+        "matchedTokenRatio": 1,
+        "sourceId": "brochure-brochures-master-of-science-in-facility-management-online-learning-pdf",
+        "sourceUrl": "https://newinti.edu.my/brochures/Master-of-Science-in-Facility-Management-(Online-Learning).pdf",
+        "sourceTextPath": "data/imports/iiu/2026-06-20/iiu-20260620/sources/raw/brochure-brochures-master-of-science-in-facility-management-online-learning-pdf.txt",
+        "lineStart": 46,
+        "lineEnd": 65,
+        "matchedTokens": [
+          "master",
+          "science",
+          "facilities",
+          "management",
+          "learning"
+        ],
+        "durationYears": null
+      }
+    },
+    {
+      "code": "INTI-M-020",
+      "nameEnOfficial": "Master of Science in Information Systems (by Research)",
+      "matched": true,
+      "sourceId": "brochure-brochures-master-of-science-in-information-systems-by-research-pdf",
+      "sourceUrl": "https://newinti.edu.my/brochures/Master-of-Science-in-Information-Systems-(by-Research).pdf",
+      "score": 5,
+      "matchedTokenRatio": 1,
+      "differences": [
+        "languageRequirement updated from PDF",
+        "officialLanguageRequirement updated from PDF",
+        "officialAcademicRequirement updated from PDF",
+        "requirement.gpa/note updated from PDF",
+        "officialEntryRequirementSourceUrl set to official PDF"
+      ],
+      "extracted": {
+        "matched": true,
+        "score": 5,
+        "matchedTokenRatio": 1,
+        "sourceId": "brochure-brochures-master-of-science-in-information-systems-by-research-pdf",
+        "sourceUrl": "https://newinti.edu.my/brochures/Master-of-Science-in-Information-Systems-(by-Research).pdf",
+        "sourceTextPath": "data/imports/iiu/2026-06-20/iiu-20260620/sources/raw/brochure-brochures-master-of-science-in-information-systems-by-research-pdf.txt",
+        "lineStart": 34,
+        "lineEnd": 63,
+        "matchedTokens": [
+          "master",
+          "science",
+          "information",
+          "systems",
+          "research"
+        ],
+        "durationYears": null,
+        "languageRequirement": {
+          "ielts": 5.5,
+          "toefl": 46,
+          "pte": null,
+          "muet": null
+        },
+        "officialLanguageRequirement": "requirement on item (i) or (ii). vi. Candidates are required to achieve a minimum score of 5.5 in IELTS, IBT 46 in TOEFL or its equivalent. NEWINTI.EDU.MY INTI INTERNATIONAL UNIVERSITY DU022(N) 06-798 2000 • Persiaran Perdana BBN, Putra Nilai, Bandar Baru Nilai, 71800 Nilai, Negeri Sembilan new",
+        "officialAcademicRequirement": "i. A Bachelor’s Degree (Level 6, MQF) in Computing or related fields with a minimum CGPA of 3.00, as accepted by the University Senate; OR ii. A Bachelor’s Degree (Level 6, MQF) in Computing or related fields with a minimum CGPA of 2.00 and not meeting a CGPA of 3.00 can be accepted, subject to a thorough rigorous assessment; OR iii. A Bachelor’s Degree (Level 6, MQF) in non-Computing field with a minimum CGPA of 2.50 can be accepted, subject to a thorough rigorous assessment as determined by the university to identify the appropriate prerequisite courses equivalent to their working experience in the Computing or related fields; OR iv. A Bachelor’s Degree (Level 6, MQF) in non-Computing field with a minimum CGPA of 2.50 can be accepted, subject to appropriate rerequisite courses; OR v. Other qualifications equivalent to a Bachelor’s Degree (Level 6, MQF) in Computing or related fields recognised by the Government of Malaysia must fulfil the requirement on item (i) or (ii). vi. Candidates are required to achieve a minimum score of 5.5 in IELTS, IBT 46 in TOEFL or its equivalent. NEWINTI.EDU.MY INTI INTERNATIONAL UNIVERSITY DU022(N) 06-798 2000 • Persiaran Perdana BBN, Putra Nilai, Bandar Baru Nilai, 71800 Nilai, Negeri Sembilan new",
+        "gpa": 3
+      }
+    },
+    {
+      "code": "INTI-M-021",
+      "nameEnOfficial": "Master of Science in Innovation and Technology (by Research)",
+      "matched": true,
+      "sourceId": "brochure-brochures-inti-wa-mba-booklet-pdf",
+      "sourceUrl": "https://newinti.edu.my/brochures/INTI-WA-MBA-Booklet.pdf",
+      "score": 5,
+      "matchedTokenRatio": 1,
+      "differences": [
+        "durationOfficial updated from PDF",
+        "officialIntake updated from PDF",
+        "officialLanguageRequirement updated from PDF",
+        "officialAcademicRequirement updated from PDF",
+        "requirement.gpa/note updated from PDF",
+        "officialEntryRequirementSourceUrl set to official PDF"
+      ],
+      "extracted": {
+        "matched": true,
+        "score": 5,
+        "matchedTokenRatio": 1,
+        "sourceId": "brochure-brochures-inti-wa-mba-booklet-pdf",
+        "sourceUrl": "https://newinti.edu.my/brochures/INTI-WA-MBA-Booklet.pdf",
+        "sourceTextPath": "data/imports/iiu/2026-06-20/iiu-20260620/sources/raw/brochure-brochures-inti-wa-mba-booklet-pdf.txt",
+        "lineStart": 1855,
+        "lineEnd": 1952,
+        "matchedTokens": [
+          "master",
+          "science",
+          "innovation",
+          "technology",
+          "research"
+        ],
+        "durationYears": null,
+        "durationOfficial": "Full Time: 2 - 4 years Part Time: 3 - 6 years",
+        "intakeMonths": [
+          "January",
+          "May",
+          "September"
+        ],
+        "officialIntake": "INTI International University (N/0700/7/0003)(11/26)(MQA/FA15104) Intake (s) JAN, MAY & SEP Duration Full Time: 2 - 4 years Part Time: 3 - 6 years Entry Requirements",
+        "languageRequirement": {
+          "ielts": 5,
+          "toefl": 500,
+          "pte": null,
+          "muet": 3.5
+        },
+        "officialLanguageRequirement": "Meet any of these English language requirements: i. A Bachelor’s Degree conducted in English*; OR ii. Credit 6 in MCE/SPM/GCE level; iii. MUET Band 3.5/TOEFL score of 500 / IELTS score of 5.0; OR iv. Equivalent score from any of the above obtained at undergraduate level at a recognised university* * A copy of the document from the university is required during submission as proof of English proﬁciency",
+        "officialAcademicRequirement": "i. A Bachelor’s Degree in the ﬁeld or related ﬁelds with a minimum CGPA of 2.75 or equivalent, as accepted by the University Senate; or ii. A Bachelor’s Degree in the ﬁeld or related ﬁelds or equivalent with a minimum CGPA of 2.50 and not meeting CGPA of 2.75, can be accepted subject to rigorous internal assessment; or iii. A Bachelor’s Degree in the ﬁeld or related ﬁelds or equivalent with minimum CGPA of 2.00 and not meeting CGPA of 2.50, can be accepted subject to a minimum of 5 years working experience in the relevant ﬁeld and rigorous internal assessment. Note: Candidates without a qualiﬁcation in the related ﬁelds or relevant working experience must undergo appropriate prerequisite courses determined by the university and meet the minimum CGPA based on (i) to (iii).",
+        "gpa": 2.75
+      }
+    },
+    {
+      "code": "INTI-M-022",
+      "nameEnOfficial": "Master of Science in Integrated Project Management (Online Learning)",
+      "matched": true,
+      "sourceId": "brochure-brochures-master-of-science-in-intergrated-project-management-online-learning-pdf",
+      "sourceUrl": "https://newinti.edu.my/brochures/Master-of-Science-in-Intergrated-Project-Management-(Online-Learning).pdf",
+      "score": 6,
+      "matchedTokenRatio": 1,
+      "differences": [
+        "languageRequirement updated from PDF",
+        "officialLanguageRequirement updated from PDF",
+        "officialAcademicRequirement updated from PDF",
+        "requirement.gpa/note updated from PDF",
+        "officialEntryRequirementSourceUrl set to official PDF"
+      ],
+      "extracted": {
+        "matched": true,
+        "score": 6,
+        "matchedTokenRatio": 1,
+        "sourceId": "brochure-brochures-master-of-science-in-intergrated-project-management-online-learning-pdf",
+        "sourceUrl": "https://newinti.edu.my/brochures/Master-of-Science-in-Intergrated-Project-Management-(Online-Learning).pdf",
+        "sourceTextPath": "data/imports/iiu/2026-06-20/iiu-20260620/sources/raw/brochure-brochures-master-of-science-in-intergrated-project-management-online-learning-pdf.txt",
+        "lineStart": 35,
+        "lineEnd": 75,
+        "matchedTokens": [
+          "master",
+          "science",
+          "integrated",
+          "project",
+          "management",
+          "learning"
+        ],
+        "durationYears": null,
+        "languageRequirement": {
+          "ielts": 5,
+          "toefl": 500,
+          "pte": null,
+          "muet": null
+        },
+        "officialLanguageRequirement": "by the university and meet the minimum CGPA based on (i) to (ii). English Language Requirements: Candidates are required to achieve a minimum score of 5.0 in IELTS, 500 in TOEFL or its equivalent. NEWINTI.EDU.MY INTI INTERNATIONAL UNIVERSITY DU022(N) 06-798 2000 • Persiaran Perdana BBN, Putra Nilai, Bandar Baru Nilai, 71800 Nilai, Negeri Sembilan new",
+        "officialAcademicRequirement": "i. Bachelor’s Degree (Level 6 Malaysian Qualifications Framework, MQF) in a relevant field with a minimum CGPA of 2.50; OR ii. Bachelor’s Degree (Level 6 MQF) with a CGPA of above 2.00 but less than 2.50 may be admitted, subject to relevant working experience. iii. Candidates without a qualification in the related fields or working experience in the relevant fields must undergo appropriate prerequisite courses determined by the university and meet the minimum CGPA based on (i) to (ii).",
+        "gpa": 2.5
+      }
+    },
+    {
+      "code": "INTI-M-023",
+      "nameEnOfficial": "Master of Traditional Chinese Medicine",
+      "matched": true,
+      "sourceId": "brochure-brochures-inti-wa-mba-booklet-pdf",
+      "sourceUrl": "https://newinti.edu.my/brochures/INTI-WA-MBA-Booklet.pdf",
+      "score": 4,
+      "matchedTokenRatio": 1,
+      "differences": [
+        "durationOfficial updated from PDF",
+        "officialIntake updated from PDF",
+        "languageRequirement updated from PDF",
+        "officialAcademicRequirement updated from PDF",
+        "requirement.gpa/note updated from PDF",
+        "officialEntryRequirementSourceUrl set to official PDF"
+      ],
+      "extracted": {
+        "matched": true,
+        "score": 4,
+        "matchedTokenRatio": 1,
+        "sourceId": "brochure-brochures-inti-wa-mba-booklet-pdf",
+        "sourceUrl": "https://newinti.edu.my/brochures/INTI-WA-MBA-Booklet.pdf",
+        "sourceTextPath": "data/imports/iiu/2026-06-20/iiu-20260620/sources/raw/brochure-brochures-inti-wa-mba-booklet-pdf.txt",
+        "lineStart": 2383,
+        "lineEnd": 2474,
+        "matchedTokens": [
+          "master",
+          "traditional",
+          "chinese",
+          "medicine"
+        ],
+        "durationYears": 2,
+        "durationOfficial": "Full Time: 2 Years Part Time: 3 Years",
+        "intakeMonths": [
+          "January",
+          "May",
+          "September"
+        ],
+        "officialIntake": "INTI International University (N/0917/7/0002)(10/31)(MQA/PA17530) Intake (s) JAN, MAY & SEP Duration Full Time: 2 Years Part Time: 3 Years Entry Requirements",
+        "languageRequirement": {
+          "ielts": 5,
+          "toefl": null,
+          "pte": null,
+          "muet": 3.5
+        },
+        "officialAcademicRequirement": "i. A Bachelor’s degree (Level 6, MQF) in Traditional Chinese Medicine, Acupuncture, Moxibustion or Tuina with minimum CGPA of 2.50 or equivalent, as accepted by the University Senate; or ii. A Bachelor’s degree (Level 6, MQF) in Traditional Chinese Medicine Acupuncture, Moxibustion, Tuina or equivalent with a minimum CGPA of 2.00 and not meeting CGPA of 2.50, can be accepted subject to rigorous internal assessment. iii. International students are required to achieve a minimum score of 5.0 in International English Language Testing System (IELTS) or Band 3.5 in Malaysian University English Test (MUET) or its equivalent. , INTI reserves the right to revise at any time as deemed necessary Awarded by INTI International University 4140 ONLINE LEARNING 42 43 , INTI reserves the right to revise at any time as deemed necessary Awarded by INTI International University",
+        "gpa": 2.5
+      }
+    },
+    {
+      "code": "INTI-P-001",
+      "nameEnOfficial": "Doctor of Business Administration",
+      "matched": true,
+      "sourceId": "brochure-brochures-inti-wa-mba-booklet-pdf",
+      "sourceUrl": "https://newinti.edu.my/brochures/INTI-WA-MBA-Booklet.pdf",
+      "score": 3,
+      "matchedTokenRatio": 1,
+      "differences": [
+        "durationOfficial updated from PDF",
+        "officialIntake updated from PDF",
+        "languageRequirement updated from PDF",
+        "officialLanguageRequirement updated from PDF",
+        "officialAcademicRequirement updated from PDF",
+        "requirement.gpa/note updated from PDF",
+        "officialEntryRequirementSourceUrl set to official PDF"
+      ],
+      "extracted": {
+        "matched": true,
+        "score": 3,
+        "matchedTokenRatio": 1,
+        "sourceId": "brochure-brochures-inti-wa-mba-booklet-pdf",
+        "sourceUrl": "https://newinti.edu.my/brochures/INTI-WA-MBA-Booklet.pdf",
+        "sourceTextPath": "data/imports/iiu/2026-06-20/iiu-20260620/sources/raw/brochure-brochures-inti-wa-mba-booklet-pdf.txt",
+        "lineStart": 346,
+        "lineEnd": 422,
+        "matchedTokens": [
+          "doctor",
+          "business",
+          "administration"
+        ],
+        "durationYears": 3,
+        "durationOfficial": "Full Time: 3 Years Part Time: 4 Years",
+        "intakeMonths": [
+          "January",
+          "May",
+          "September"
+        ],
+        "officialIntake": "INTI International University (N/0414/8/0054)(02/27)(MQA/PA12509) Intake (s) JAN, MAY & SEP Duration Full Time: 3 Years Part Time: 4 Years Entry Requirements",
+        "languageRequirement": {
+          "ielts": 4,
+          "toefl": 30,
+          "pte": null,
+          "muet": 3
+        },
+        "officialLanguageRequirement": "Meet any of these following English language requirements: i. A Master’s Degree conducted in English*; OR ii. Credit 6 in MCE / SPM / GCE level; OR iii. MUET Band 3 / TOEFL IBT (30-31) / IELTS 4.0; OR iv. Equivalent score from any of the above obtained at undergraduate level at a recognised university* *A copy of document from the university is required during submission as a proof of English proﬁciency",
+        "officialAcademicRequirement": "i. A Master’s Degree (Level 7, MQF) in related ﬁelds as accepted by the University Senate; OR ii. A Master’s Degree (Level 7, MQF) in non-related ﬁelds as accepted by the Senate, subject to having relevant working experience and rigorous internal assessment; OR iii. A Master’s Degree (Level 7, MQF) in non-related ﬁelds as accepted by the Senate and without relevant working experience, subject to passing prerequisite courses; OR iv. Other qualiﬁcations equivalent to a Master’s Degree (Level 7, MQF) recognised by the Malaysian Government."
+      }
+    },
+    {
+      "code": "INTI-P-002",
+      "nameEnOfficial": "Doctor of Business Administration (Online Learning)",
+      "matched": true,
+      "sourceId": "brochure-brochures-inti-wa-mba-booklet-pdf",
+      "sourceUrl": "https://newinti.edu.my/brochures/INTI-WA-MBA-Booklet.pdf",
+      "score": 4,
+      "matchedTokenRatio": 1,
+      "differences": [
+        "officialEntryRequirementSourceUrl set to official PDF"
+      ],
+      "extracted": {
+        "matched": true,
+        "score": 4,
+        "matchedTokenRatio": 1,
+        "sourceId": "brochure-brochures-inti-wa-mba-booklet-pdf",
+        "sourceUrl": "https://newinti.edu.my/brochures/INTI-WA-MBA-Booklet.pdf",
+        "sourceTextPath": "data/imports/iiu/2026-06-20/iiu-20260620/sources/raw/brochure-brochures-inti-wa-mba-booklet-pdf.txt",
+        "lineStart": 203,
+        "lineEnd": 320,
+        "matchedTokens": [
+          "doctor",
+          "business",
+          "administration",
+          "learning"
+        ],
+        "durationYears": null
+      }
+    },
+    {
+      "code": "INTI-P-003",
+      "nameEnOfficial": "Doctor of Education",
+      "matched": true,
+      "sourceId": "brochure-brochures-inti-wa-mba-booklet-pdf",
+      "sourceUrl": "https://newinti.edu.my/brochures/INTI-WA-MBA-Booklet.pdf",
+      "score": 2,
+      "matchedTokenRatio": 1,
+      "differences": [
+        "durationOfficial updated from PDF",
+        "officialIntake updated from PDF",
+        "languageRequirement updated from PDF",
+        "officialLanguageRequirement updated from PDF",
+        "officialAcademicRequirement updated from PDF",
+        "requirement.gpa/note updated from PDF",
+        "officialEntryRequirementSourceUrl set to official PDF"
+      ],
+      "extracted": {
+        "matched": true,
+        "score": 2,
+        "matchedTokenRatio": 1,
+        "sourceId": "brochure-brochures-inti-wa-mba-booklet-pdf",
+        "sourceUrl": "https://newinti.edu.my/brochures/INTI-WA-MBA-Booklet.pdf",
+        "sourceTextPath": "data/imports/iiu/2026-06-20/iiu-20260620/sources/raw/brochure-brochures-inti-wa-mba-booklet-pdf.txt",
+        "lineStart": 423,
+        "lineEnd": 527,
+        "matchedTokens": [
+          "doctor",
+          "education"
+        ],
+        "durationYears": 3,
+        "durationOfficial": "Full Time: 3 Years Part Time: 4 Years",
+        "intakeMonths": [
+          "January",
+          "May",
+          "September"
+        ],
+        "officialIntake": "INTI International University (N/0110/8/0012)(10/30)(MQA/PA16830) Intake(s) JAN, MAY & SEPT Duration Full Time: 3 Years Part Time: 4 Years Entry Requirements",
+        "languageRequirement": {
+          "ielts": 4,
+          "toefl": 30,
+          "pte": null,
+          "muet": 3
+        },
+        "officialLanguageRequirement": "Meet any of these following English language requirements: i. A Master’s Degree conducted in English*; OR ii. Credit 6 in MCE / SPM / GCE level; OR iii. MUET Band 3 / TOEFL IBT (30-31) / IELTS 4.0; OR iv. Equivalent score from any of the above obtained at undergraduate level at a recognised university* *A copy of document from the university is required during submission as a proof of English proﬁciency",
+        "officialAcademicRequirement": "i. A Master’s Degree (Level 7, MQF) in education ﬁelds as accepted by the University Senate; OR ii. A Master’s Degree (Level 7, MQF) in non-education ﬁelds subject to passing prerequisite courses; OR iii. Other qualiﬁcations equivalent to a Master’s Degree (Level 7, MQF) recognised by the Malaysian Government."
+      }
+    },
+    {
+      "code": "INTI-P-004",
+      "nameEnOfficial": "Doctor of Philosophy (Education) (by Research)",
+      "matched": true,
+      "sourceId": "brochure-brochures-inti-wa-mba-booklet-pdf",
+      "sourceUrl": "https://newinti.edu.my/brochures/INTI-WA-MBA-Booklet.pdf",
+      "score": 4,
+      "matchedTokenRatio": 1,
+      "differences": [
+        "durationOfficial updated from PDF",
+        "officialIntake updated from PDF",
+        "languageRequirement updated from PDF",
+        "officialLanguageRequirement updated from PDF",
+        "officialAcademicRequirement updated from PDF",
+        "requirement.gpa/note updated from PDF",
+        "officialEntryRequirementSourceUrl set to official PDF"
+      ],
+      "extracted": {
+        "matched": true,
+        "score": 4,
+        "matchedTokenRatio": 1,
+        "sourceId": "brochure-brochures-inti-wa-mba-booklet-pdf",
+        "sourceUrl": "https://newinti.edu.my/brochures/INTI-WA-MBA-Booklet.pdf",
+        "sourceTextPath": "data/imports/iiu/2026-06-20/iiu-20260620/sources/raw/brochure-brochures-inti-wa-mba-booklet-pdf.txt",
+        "lineStart": 724,
+        "lineEnd": 807,
+        "matchedTokens": [
+          "doctor",
+          "philosophy",
+          "education",
+          "research"
+        ],
+        "durationYears": 3,
+        "durationOfficial": "Full Time: 3 Years Part Time: 4 Years",
+        "intakeMonths": [
+          "January",
+          "May",
+          "September"
+        ],
+        "officialIntake": "INTI International University (N/0110/8/0005)(08/29)(MQA/PA15847) Intake (s) JAN, MAY & SEP Duration Full Time: 3 Years Part Time: 4 Years Entry Requirements",
+        "languageRequirement": {
+          "ielts": 4,
+          "toefl": 30,
+          "pte": null,
+          "muet": 3
+        },
+        "officialLanguageRequirement": "Meet any of these English language requirements: i. A Master’s Degree conducted in English*; OR ii. Credit 6 in MCE / SPM / GCE level; OR iii. MUET Band 3 / TOEFL IBT (30-31) / IELTS 4.0; OR iv. Equivalent score from any of the above obtained at undergraduate level at a recognised university* *A copy of document from the university is required during submission as a proof of English proﬁciency",
+        "officialAcademicRequirement": "i. A Master’s Degree (Level 7, MQF) in education ﬁelds, as accepted by the University Senate; OR ii. A Master’s Degree (Level 7, MQF) in non-education ﬁelds subject to passing prerequisite courses; OR iii. Other qualiﬁcations equivalent to the above requirements and recognised by the Malaysian Government."
+      }
+    },
+    {
+      "code": "INTI-P-005",
+      "nameEnOfficial": "Doctor of Philosophy (PhD) (Applied Physics) (by Research)",
+      "matched": true,
+      "sourceId": "brochure-brochures-inti-wa-mba-booklet-pdf",
+      "sourceUrl": "https://newinti.edu.my/brochures/INTI-WA-MBA-Booklet.pdf",
+      "score": 5,
+      "matchedTokenRatio": 1,
+      "differences": [
+        "durationOfficial updated from PDF",
+        "officialIntake updated from PDF",
+        "officialAcademicRequirement updated from PDF",
+        "requirement.gpa/note updated from PDF",
+        "officialEntryRequirementSourceUrl set to official PDF"
+      ],
+      "extracted": {
+        "matched": true,
+        "score": 5,
+        "matchedTokenRatio": 1,
+        "sourceId": "brochure-brochures-inti-wa-mba-booklet-pdf",
+        "sourceUrl": "https://newinti.edu.my/brochures/INTI-WA-MBA-Booklet.pdf",
+        "sourceTextPath": "data/imports/iiu/2026-06-20/iiu-20260620/sources/raw/brochure-brochures-inti-wa-mba-booklet-pdf.txt",
+        "lineStart": 528,
+        "lineEnd": 558,
+        "matchedTokens": [
+          "doctor",
+          "philosophy",
+          "applied",
+          "physics",
+          "research"
+        ],
+        "durationYears": 3,
+        "durationOfficial": "Full Time: 3 Years Part Time: 4 Years",
+        "intakeMonths": [
+          "January",
+          "May",
+          "September"
+        ],
+        "officialIntake": "INTI International University (R2/545/8/0001)(09/27)(MQA/FA0025) Intake (s) JAN, MAY & SEP Duration Full Time: 3 Years Part Time: 4 Years Entry Requirements",
+        "officialAcademicRequirement": "i. A Master’s Degree in the ﬁeld or related ﬁelds accepted by the University Senate; OR ii. Other qualiﬁcations equivalent to a"
+      }
+    },
+    {
+      "code": "INTI-P-006",
+      "nameEnOfficial": "Doctor of Philosophy (PhD) (Financial Technology) (by Research)",
+      "matched": true,
+      "sourceId": "brochure-brochures-inti-wa-mba-booklet-pdf",
+      "sourceUrl": "https://newinti.edu.my/brochures/INTI-WA-MBA-Booklet.pdf",
+      "score": 5,
+      "matchedTokenRatio": 1,
+      "differences": [
+        "durationOfficial updated from PDF",
+        "officialIntake updated from PDF",
+        "languageRequirement updated from PDF",
+        "officialAcademicRequirement updated from PDF",
+        "requirement.gpa/note updated from PDF",
+        "officialEntryRequirementSourceUrl set to official PDF"
+      ],
+      "extracted": {
+        "matched": true,
+        "score": 5,
+        "matchedTokenRatio": 1,
+        "sourceId": "brochure-brochures-inti-wa-mba-booklet-pdf",
+        "sourceUrl": "https://newinti.edu.my/brochures/INTI-WA-MBA-Booklet.pdf",
+        "sourceTextPath": "data/imports/iiu/2026-06-20/iiu-20260620/sources/raw/brochure-brochures-inti-wa-mba-booklet-pdf.txt",
+        "lineStart": 810,
+        "lineEnd": 875,
+        "matchedTokens": [
+          "doctor",
+          "philosophy",
+          "financial",
+          "technology",
+          "research"
+        ],
+        "durationYears": 3,
+        "durationOfficial": "Full Time: 3 Years Part Time: 4 Years",
+        "intakeMonths": [
+          "January",
+          "May",
+          "September"
+        ],
+        "officialIntake": "INTI International University (N/0412/8/0002)(11/29)(MQA/PA15937) Intake (s) JAN, MAY & SEP Duration Full Time: 3 Years Part Time: 4 Years Entry Requirements",
+        "languageRequirement": {
+          "ielts": 6.5,
+          "toefl": null,
+          "pte": null,
+          "muet": null
+        },
+        "officialAcademicRequirement": "• A Master’s Degree in Finance, Banking, Insurance or related ﬁeld as accepted by the University Senate. International students are required to achieve a minimum score of 6.5 in International English Language Testing System (IELTS) or its equivalent. , INTI reserves the right to revise at any time as deemed necessary 2120"
+      }
+    },
+    {
+      "code": "INTI-P-007",
+      "nameEnOfficial": "Doctor of Philosophy (PhD) (Information Systems) (by Research)",
+      "matched": true,
+      "sourceId": "brochure-brochures-inti-wa-mba-booklet-pdf",
+      "sourceUrl": "https://newinti.edu.my/brochures/INTI-WA-MBA-Booklet.pdf",
+      "score": 5,
+      "matchedTokenRatio": 1,
+      "differences": [
+        "durationOfficial updated from PDF",
+        "officialIntake updated from PDF",
+        "officialLanguageRequirement updated from PDF",
+        "officialAcademicRequirement updated from PDF",
+        "requirement.gpa/note updated from PDF",
+        "officialEntryRequirementSourceUrl set to official PDF"
+      ],
+      "extracted": {
+        "matched": true,
+        "score": 5,
+        "matchedTokenRatio": 1,
+        "sourceId": "brochure-brochures-inti-wa-mba-booklet-pdf",
+        "sourceUrl": "https://newinti.edu.my/brochures/INTI-WA-MBA-Booklet.pdf",
+        "sourceTextPath": "data/imports/iiu/2026-06-20/iiu-20260620/sources/raw/brochure-brochures-inti-wa-mba-booklet-pdf.txt",
+        "lineStart": 876,
+        "lineEnd": 971,
+        "matchedTokens": [
+          "doctor",
+          "philosophy",
+          "information",
+          "systems",
+          "research"
+        ],
+        "durationYears": 3,
+        "durationOfficial": "Full Time: 3 Years Part Time: 4 Years",
+        "intakeMonths": [
+          "January",
+          "May",
+          "September"
+        ],
+        "officialIntake": "INTI International University (R2/0611/7/0017)(10/27)(MQA/ FA0030) Intake (s) JAN, MAY & SEP Duration Full Time: 3 Years Part Time: 4 Years Entry Requirements",
+        "languageRequirement": {
+          "ielts": 6,
+          "toefl": null,
+          "pte": null,
+          "muet": null
+        },
+        "officialLanguageRequirement": "Meet any of these following English language requirements: i. A Master’s Degree conducted in English*; OR ii. IELTS score of 6.0; OR iii. Equivalent score from any of the above obtained at undergraduate level at a recognised university*. * A copy of the document from the university is required during submission as proof of English proﬁciency.",
+        "officialAcademicRequirement": "i. A Master’s Degree (Level 7, MQF) in Computing or related ﬁelds as accepted by the University Senate; OR ii. A Master’s Degree (Level 7, MQF) in non-Computing ﬁelds with a minimum of FIVE (5) years of working experience in Computing or related ﬁelds must undergo appropriate prerequisite courses as determined by the university; OR iii. A Master’s Degree (Level 7, MQF) in non-Computing ﬁelds with less than FIVE (5) years of working experience in Computing or related ﬁelds must undergo a thorough rigorous assessment as determined by the university to identify the appropriate prerequisite courses that equivalent to their working experience in the Computing or related ﬁelds; OR iv. Other qualiﬁcations equivalent to a Master’s Degree (Level 7, MQF) in Computing or related ﬁelds recognised by the Government of Malaysia as equivalent to the above requirement."
+      }
+    },
+    {
+      "code": "INTI-P-008",
+      "nameEnOfficial": "Doctor of Philosophy (PhD) (Innovation and Technology) (by Research)",
+      "matched": true,
+      "sourceId": "brochure-brochures-inti-wa-mba-booklet-pdf",
+      "sourceUrl": "https://newinti.edu.my/brochures/INTI-WA-MBA-Booklet.pdf",
+      "score": 5,
+      "matchedTokenRatio": 1,
+      "differences": [
+        "durationOfficial updated from PDF",
+        "officialIntake updated from PDF",
+        "officialAcademicRequirement updated from PDF",
+        "requirement.gpa/note updated from PDF",
+        "officialEntryRequirementSourceUrl set to official PDF"
+      ],
+      "extracted": {
+        "matched": true,
+        "score": 5,
+        "matchedTokenRatio": 1,
+        "sourceId": "brochure-brochures-inti-wa-mba-booklet-pdf",
+        "sourceUrl": "https://newinti.edu.my/brochures/INTI-WA-MBA-Booklet.pdf",
+        "sourceTextPath": "data/imports/iiu/2026-06-20/iiu-20260620/sources/raw/brochure-brochures-inti-wa-mba-booklet-pdf.txt",
+        "lineStart": 972,
+        "lineEnd": 1033,
+        "matchedTokens": [
+          "doctor",
+          "philosophy",
+          "innovation",
+          "technology",
+          "research"
+        ],
+        "durationYears": 3,
+        "durationOfficial": "Full Time: 3 Years Part Time: 4 Years",
+        "intakeMonths": [
+          "January",
+          "May",
+          "September"
+        ],
+        "officialIntake": "INTI International University (N/0700/8/0004)(02/27)(MQA/FA12510) Intake (s) JAN, MAY & SEP Duration Full Time: 3 Years Part Time: 4 Years Entry Requirements",
+        "officialAcademicRequirement": "i. A Master’s Degree in the ﬁeld or related ﬁelds accepted by the University Senate; OR ii. Other qualiﬁcations equivalent to a"
+      }
+    },
+    {
+      "code": "INTI-P-009",
+      "nameEnOfficial": "Doctor of Philosophy (PhD) (Management) (by Research)",
+      "matched": true,
+      "sourceId": "brochure-brochures-inti-wa-mba-booklet-pdf",
+      "sourceUrl": "https://newinti.edu.my/brochures/INTI-WA-MBA-Booklet.pdf",
+      "score": 4,
+      "matchedTokenRatio": 1,
+      "differences": [
+        "officialLanguageRequirement updated from PDF",
+        "officialEntryRequirementSourceUrl set to official PDF"
+      ],
+      "extracted": {
+        "matched": true,
+        "score": 4,
+        "matchedTokenRatio": 1,
+        "sourceId": "brochure-brochures-inti-wa-mba-booklet-pdf",
+        "sourceUrl": "https://newinti.edu.my/brochures/INTI-WA-MBA-Booklet.pdf",
+        "sourceTextPath": "data/imports/iiu/2026-06-20/iiu-20260620/sources/raw/brochure-brochures-inti-wa-mba-booklet-pdf.txt",
+        "lineStart": 1133,
+        "lineEnd": 1151,
+        "matchedTokens": [
+          "doctor",
+          "philosophy",
+          "management",
+          "research"
+        ],
+        "durationYears": null,
+        "languageRequirement": {
+          "ielts": 6,
+          "toefl": 550,
+          "pte": null,
+          "muet": 4
+        },
+        "officialLanguageRequirement": "Meet any of these following English language requirements: i. A Master’s Degree conducted in English*; OR ii. Credit 6 in MCE / SPM / GCE level; OR iii. MUET Band 4 / TOEFL score of 550 / IELTS score of 6.0; OR iv. Equivalent score from any of the above obtained at undergraduate level at a recognised university* *A copy of document from the university is required during submission as a proof of English proﬁciency"
+      }
+    },
+    {
+      "code": "INTI-P-010",
+      "nameEnOfficial": "Doctor of Philosophy (PhD) in Data Science (by Research)",
+      "matched": true,
+      "sourceId": "brochure-brochures-inti-wa-mba-booklet-pdf",
+      "sourceUrl": "https://newinti.edu.my/brochures/INTI-WA-MBA-Booklet.pdf",
+      "score": 5,
+      "matchedTokenRatio": 1,
+      "differences": [
+        "durationOfficial updated from PDF",
+        "officialIntake updated from PDF",
+        "officialLanguageRequirement updated from PDF",
+        "officialAcademicRequirement updated from PDF",
+        "requirement.gpa/note updated from PDF",
+        "officialEntryRequirementSourceUrl set to official PDF"
+      ],
+      "extracted": {
+        "matched": true,
+        "score": 5,
+        "matchedTokenRatio": 1,
+        "sourceId": "brochure-brochures-inti-wa-mba-booklet-pdf",
+        "sourceUrl": "https://newinti.edu.my/brochures/INTI-WA-MBA-Booklet.pdf",
+        "sourceTextPath": "data/imports/iiu/2026-06-20/iiu-20260620/sources/raw/brochure-brochures-inti-wa-mba-booklet-pdf.txt",
+        "lineStart": 619,
+        "lineEnd": 721,
+        "matchedTokens": [
+          "doctor",
+          "philosophy",
+          "data",
+          "science",
+          "research"
+        ],
+        "durationYears": 3,
+        "durationOfficial": "Full Time: 3 Years Part Time: 4 Years",
+        "intakeMonths": [
+          "January",
+          "May",
+          "September"
+        ],
+        "officialIntake": "INTI International University (N/0613/8/0001)(03/27)(MQA/PA15291) Intake (s) JAN, MAY & SEP Duration Full Time: 3 Years Part Time: 4 Years Entry Requirements",
+        "languageRequirement": {
+          "ielts": 6,
+          "toefl": null,
+          "pte": null,
+          "muet": null
+        },
+        "officialLanguageRequirement": "Meet any of these following English language requirements: i. A Master’s Degree conducted in English*; or ii. Credit 6 in MCE / SPM / GCE level; or iii. IELTS score of 6.0; or iv. Equivalent score from any of the above obtained at undergraduate level at a recognised university*. * A copy of the document from the university is required during submission as proof of English proﬁciency.",
+        "officialAcademicRequirement": "i. A Master’s Degree (Level 7, MQF) in Computing or related ﬁelds as accepted by the University Senate; OR ii. A Master’s Degree (Level 7, MQF) in non-Computing ﬁelds with a minimum of FIVE (5) years of working experience in Computing or related ﬁelds must undergo appropriate prerequisite courses as determined by the university; OR iii. A Master’s Degree (Level 7, MQF) in non-Computing ﬁelds with less than FIVE (5) years of working experience in Computing or related ﬁelds must undergo a thorough rigorous assessment as determined by the university to identify the appropriate prerequisite courses that equivalent to their working experience in the Computing or related ﬁelds; OR iv. Other qualiﬁcations equivalent to a Master’s Degree (Level 7, MQF) in Computing or related ﬁelds recognised by the Government of Malaysia as equivalent to the above requirement."
+      }
+    }
+  ]
+}

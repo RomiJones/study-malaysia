@@ -1,0 +1,140 @@
+{
+  "auditName": "UTM all-level duration year normalization audit",
+  "checkedAt": "2026-06-18T23:42:30+08:00",
+  "institution": {
+    "code": "UTM",
+    "nameOfficial": "Universiti Teknologi Malaysia"
+  },
+  "scope": {
+    "collectionScope": "programmes",
+    "levels": [
+      "bachelor",
+      "master",
+      "phd"
+    ],
+    "applicantScope": "international",
+    "academicSession": "2026/2027",
+    "authorization": "publish-data-calibration"
+  },
+  "policy": {
+    "primaryDisplayUnit": "years",
+    "conversion": "semester count divided by 2",
+    "sourceRetention": "Official semester text is retained after the standardized year value as source evidence.",
+    "bachelor": "Programme-specific official years are used when published; semester-only evidence is converted to years.",
+    "master": "UTM postgraduate fee page Master Programme (3 Semesters) is standardized to 1.5 years for all 153 master rows.",
+    "phd": "UTM PhD Programme (6 Semesters) is standardized to 3 years; DPP and EdD 6-16 semester ranges are standardized to 3-8 years."
+  },
+  "counts": {
+    "totalProgrammes": 252,
+    "bachelor": {
+      "candidateRows": 44,
+      "rowsWithOfficialDurationEvidence": 44,
+      "rowsWithSemesterEvidenceConverted": 8,
+      "standardizedPreviewRows": 44
+    },
+    "master": {
+      "candidateRows": 153,
+      "standardizedYearRows": 153,
+      "durationYearsRows": 153
+    },
+    "phd": {
+      "candidateRows": 55,
+      "standardizedYearRows": 55,
+      "durationYearsRows": 55,
+      "rangeRows": 2
+    }
+  },
+  "samples": {
+    "bachelor": [
+      {
+        "code": "UTM-UG-009",
+        "nameEnOfficial": "Bachelor of Computer Science (Computer Networks and Security) with Honours",
+        "sourceText": "Programme Specification Study Duration: Minimum 8 Semesters / Maximum 12 Semesters.",
+        "durationYears": 4,
+        "standardizedPreview": "Standardized duration: 4 years (8 semesters)."
+      },
+      {
+        "code": "UTM-UG-010",
+        "nameEnOfficial": "Bachelor of Computer Science (Graphics and Multimedia Software) with Honours",
+        "sourceText": "Study Duration: Minimum 8 Semesters / Maximum 12 Semesters",
+        "durationYears": 4,
+        "standardizedPreview": "Standardized duration: 4 years (8 semesters)."
+      },
+      {
+        "code": "UTM-UG-015",
+        "nameEnOfficial": "Bachelor of Mechanical Engineering (Manufacturing) with Honours",
+        "sourceText": "The Bachelor of Mechanical Engineering (Manufacturing) with Honours Programme Specifications state: Study Duration Minimum: 4 years; Maximum: 6 years; Normal 8 semesters.",
+        "durationYears": 4,
+        "standardizedPreview": "Standardized duration: 4 years (8 semesters)."
+      },
+      {
+        "code": "UTM-UG-027",
+        "nameEnOfficial": "Bachelor of Science in Geoinformatics with Honours",
+        "sourceText": "8 Semesters",
+        "durationYears": 4,
+        "standardizedPreview": "Standardized duration: 4 years (8 semesters)."
+      },
+      {
+        "code": "UTM-UG-028",
+        "nameEnOfficial": "Bachelor of Science in Land Administration and Development with Honours",
+        "sourceText": "8 semesters",
+        "durationYears": 4,
+        "standardizedPreview": "Standardized duration: 4 years (8 semesters)."
+      }
+    ],
+    "master": [
+      {
+        "code": "UTM-M-001",
+        "nameEnOfficial": "Master of Philosophy (Generic)",
+        "durationYears": 1.5,
+        "durationOfficial": "Standardized duration: 1.5 years (3 semesters). Official source: Master Programme (3 Semesters) on UTM international postgraduate fee page; programme-specific duration requires faculty/detail confirmation."
+      },
+      {
+        "code": "UTM-M-002",
+        "nameEnOfficial": "Master of Philosophy ( Engineering Education)",
+        "durationYears": 1.5,
+        "durationOfficial": "Standardized duration: 1.5 years (3 semesters). Official source: Master Programme (3 Semesters) on UTM international postgraduate fee page; programme-specific duration requires faculty/detail confirmation."
+      },
+      {
+        "code": "UTM-M-003",
+        "nameEnOfficial": "Master of Engineering (Civil)",
+        "durationYears": 1.5,
+        "durationOfficial": "Standardized duration: 1.5 years (3 semesters). Official source: Master Programme (3 Semesters) on UTM international postgraduate fee page; programme-specific duration requires faculty/detail confirmation."
+      }
+    ],
+    "phd": [
+      {
+        "code": "UTM-PHD-001",
+        "nameEnOfficial": "Doctor of Philosophy (Generic)",
+        "durationYears": 3,
+        "durationOfficial": "Standardized duration: 3 years (6 semesters). Official source: PhD Programme (6 Semesters) on UTM international postgraduate fee page."
+      },
+      {
+        "code": "UTM-PHD-005",
+        "nameEnOfficial": "Doctor of Professional Practice (DPP)",
+        "durationYears": 3,
+        "durationOfficial": "Standardized duration: 3-8 years (6-16 semesters). Official source: UTM ODL DPP duration is published as 6-16 semesters."
+      },
+      {
+        "code": "UTM-PHD-023",
+        "nameEnOfficial": "Doctor in Education (EdD)",
+        "durationYears": 3,
+        "durationOfficial": "Standardized duration: 3-8 years (6-16 semesters). Official source: Mode: Mixed mode (coursework and dissertation). Minimum duration: 6 semesters (3 years). Maximum duration: 16 semesters (8 years)."
+      }
+    ]
+  },
+  "verificationPlan": [
+    "python3 scripts/collect-utm-undergraduate-official.py --verify",
+    "python3 -m py_compile scripts/collect-utm-master-official.py scripts/collect-utm-phd-official.py",
+    "npm run test -- tests/api/utm-undergraduate-import.test.ts tests/api/utm-master-import.test.ts tests/api/utm-phd-import.test.ts tests/web/format.test.ts",
+    "npm --workspace @studymy/api run build",
+    "npm --workspace @studymy/web run build",
+    "npm --workspace @studymy/api run import:utm:undergraduate -- --confirm-import",
+    "npm --workspace @studymy/api run import:utm:master -- --confirm-import",
+    "npm --workspace @studymy/api run import:utm:phd -- --confirm-import",
+    "npm --workspace @studymy/api run verify:utm:undergraduate",
+    "npm --workspace @studymy/api run verify:utm:master",
+    "npm --workspace @studymy/api run verify:utm:phd"
+  ],
+  "notionUpdate": "真实 Notion 暂无可写连接；本轮更新本地中文开发进度日志。"
+}

@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "universityCode": "UTM",
+  "level": "phd",
+  "authorization": "collect",
+  "summary": {
+    "directoryOccurrences": 62,
+    "canonicalProgrammes": 55,
+    "readyRows": 55,
+    "needsReviewRows": 0,
+    "feeStatusCounts": {
+      "verified-official-total": 54,
+      "official-rate-only": 1
+    },
+    "duplicateRows": 7,
+    "feeOnlyReviewRows": 1
+  },
+  "coverage": {
+    "identity": "55/55",
+    "strictOfficialTotalFee": "54/55",
+    "officialRateOnlyFee": "1/55",
+    "academicRequirement": "55/55",
+    "languageRequirement": "55/55"
+  },
+  "needsReview": [
+    {
+      "rowId": "utm-phd-fee-only-doctor-of-software-engineering",
+      "sourceId": "fees-pg-inter",
+      "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+      "level": "phd",
+      "faculty": "Faculty of Artificial Intelligence",
+      "nameEnOfficial": "Doctor of Software Engineering",
+      "status": "needs-review",
+      "reason": "UTM fee page publishes a named doctoral fee row, but the current collected international doctoral programme directory did not expose a matching programme row."
+    }
+  ],
+  "transportExceptions": []
+}

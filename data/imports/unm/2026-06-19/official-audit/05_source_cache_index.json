@@ -1,0 +1,1097 @@
+[
+  {
+    "id": "homepage",
+    "url": "https://www.nottingham.edu.my/",
+    "sourceType": "official-page",
+    "role": "cross-check",
+    "fields": [
+      "rawSnapshot"
+    ],
+    "retrievedAt": "2026-06-19T15:53:18+00:00",
+    "academicSession": "2026 intake",
+    "status": "http-200",
+    "localPath": "data/imports/unm/2026-06-19/official-audit/sources/raw/homepage.html",
+    "sha256": "95f01b5aa8f486aa2df7953ab3135ef37c6b9ea951285cb766ba4bb5cbd40291",
+    "byteLength": 341683
+  },
+  {
+    "id": "history",
+    "url": "https://www.nottingham.edu.my/AboutUs/History/MalaysiaHistory.aspx",
+    "sourceType": "official-page",
+    "role": "cross-check",
+    "fields": [
+      "rawSnapshot"
+    ],
+    "retrievedAt": "2026-06-19T15:53:18+00:00",
+    "academicSession": "2026 intake",
+    "status": "http-200",
+    "localPath": "data/imports/unm/2026-06-19/official-audit/sources/raw/history.html",
+    "sha256": "7416467d7435037550d75d971fa8c559b168565f43bb9cf77381ba9ce0e89b1a",
+    "byteLength": 22012
+  },
+  {
+    "id": "undergraduate-directory",
+    "url": "https://www.nottingham.edu.my/Study/Undergraduate-courses/Find-an-undergraduate-course/Find-a-course.aspx",
+    "sourceType": "official-page",
+    "role": "cross-check",
+    "fields": [
+      "rawSnapshot"
+    ],
+    "retrievedAt": "2026-06-19T15:53:18+00:00",
+    "academicSession": "2026 intake",
+    "status": "http-200",
+    "localPath": "data/imports/unm/2026-06-19/official-audit/sources/raw/undergraduate-directory.html",
+    "sha256": "dda6202fcb9096c250f9d9021e11ea14fa16c89c5f928b485d6f573572cac4f8",
+    "byteLength": 320078
+  },
+  {
+    "id": "undergraduate-fees",
+    "url": "https://www.nottingham.edu.my/study/undergraduate-courses/tuition-fees.aspx",
+    "sourceType": "official-page",
+    "role": "cross-check",
+    "fields": [
+      "rawSnapshot"
+    ],
+    "retrievedAt": "2026-06-19T15:53:18+00:00",
+    "academicSession": "2026 intake",
+    "status": "http-200",
+    "localPath": "data/imports/unm/2026-06-19/official-audit/sources/raw/undergraduate-fees.html",
+    "sha256": "12d17d79f3aaf4d84edd3c56dc7976ff88ed198ca55ba6148d11698d7d765349",
+    "byteLength": 298413
+  },
+  {
+    "id": "postgraduate-entry",
+    "url": "https://www.nottingham.edu.my/Study/Postgraduate-courses/Postgraduate-courses.aspx",
+    "sourceType": "official-page",
+    "role": "cross-check",
+    "fields": [
+      "rawSnapshot"
+    ],
+    "retrievedAt": "2026-06-19T15:53:18+00:00",
+    "academicSession": "2026 intake",
+    "status": "http-200",
+    "localPath": "data/imports/unm/2026-06-19/official-audit/sources/raw/postgraduate-entry.html",
+    "sha256": "cdf2e229a52b8b1118c9226b4d96be6ec8543c16d4ee60dff83b52ad27e97113",
+    "byteLength": 338176
+  },
+  {
+    "id": "postgraduate-fees",
+    "url": "https://www.nottingham.edu.my/Study/Postgraduate-courses/Tuition-fees.aspx",
+    "sourceType": "official-page",
+    "role": "cross-check",
+    "fields": [
+      "rawSnapshot"
+    ],
+    "retrievedAt": "2026-06-19T15:53:18+00:00",
+    "academicSession": "2026 intake",
+    "status": "http-200",
+    "localPath": "data/imports/unm/2026-06-19/official-audit/sources/raw/postgraduate-fees.html",
+    "sha256": "e305908eb8d6e6bcc4af90792f12d02b61be603bce4b9de178cf58159d9e208a",
+    "byteLength": 279380
+  },
+  {
+    "id": "how-to-apply",
+    "url": "https://www.nottingham.edu.my/Study/How-to-apply/how-to-apply.aspx",
+    "sourceType": "official-page",
+    "role": "cross-check",
+    "fields": [
+      "rawSnapshot"
+    ],
+    "retrievedAt": "2026-06-19T15:53:18+00:00",
+    "academicSession": "2026 intake",
+    "status": "http-200",
+    "localPath": "data/imports/unm/2026-06-19/official-audit/sources/raw/how-to-apply.html",
+    "sha256": "75e94bfd8d7fe7fb33ffaa7a0f12312ad793a5426cecc96a66eabbe13cb77d39",
+    "byteLength": 251886
+  },
+  {
+    "id": "application-checklist",
+    "url": "https://www.nottingham.edu.my/Study/How-to-apply/checklist-for-applications.aspx",
+    "sourceType": "official-page",
+    "role": "cross-check",
+    "fields": [
+      "rawSnapshot"
+    ],
+    "retrievedAt": "2026-06-19T15:53:20+00:00",
+    "academicSession": "2026 intake",
+    "status": "http-200",
+    "localPath": "data/imports/unm/2026-06-19/official-audit/sources/raw/application-checklist.html",
+    "sha256": "a34e0eafdbd4e7cee5ea0ece04095391f176844e60821bf44c2f2f2136d066fe",
+    "byteLength": 238653
+  },
+  {
+    "id": "fee-structure",
+    "url": "https://www.nottingham.edu.my/Study/Offer-holders/Paying-your-fees/UNM-Finance/Tuition-fee-structure.aspx",
+    "sourceType": "official-page",
+    "role": "cross-check",
+    "fields": [
+      "rawSnapshot"
+    ],
+    "retrievedAt": "2026-06-19T15:53:20+00:00",
+    "academicSession": "2026 intake",
+    "status": "http-200",
+    "localPath": "data/imports/unm/2026-06-19/official-audit/sources/raw/fee-structure.html",
+    "sha256": "01ac0b7ddd98281faf7eb4abf722507a04ae9a6c50f1d2df48fe40be4c633714",
+    "byteLength": 37071
+  },
+  {
+    "id": "detail-ug-001-www-nottingham-edu-my-ugstudy-course-business-economics-and-finance-bsc-hons",
+    "url": "https://www.nottingham.edu.my/ugstudy/course/business-economics-and-finance-bsc-hons",
+    "sourceType": "official-page",
+    "role": "cross-check",
+    "fields": [
+      "rawSnapshot"
+    ],
+    "retrievedAt": "2026-06-19T15:53:20+00:00",
+    "academicSession": "2026 intake",
+    "status": "http-200",
+    "localPath": "data/imports/unm/2026-06-19/official-audit/sources/raw/detail-ug-001-www-nottingham-edu-my-ugstudy-course-business-economics-and-finance-bsc-hons.html",
+    "sha256": "8946812d9335a95afca66c2e7088006098ed0ee372a7c359574660398ce36656",
+    "byteLength": 468548
+  },
+  {
+    "id": "detail-ug-002-www-nottingham-edu-my-ugstudy-course-finance-accounting-and-management-bsc-hons",
+    "url": "https://www.nottingham.edu.my/ugstudy/course/finance-accounting-and-management-bsc-hons",
+    "sourceType": "official-page",
+    "role": "cross-check",
+    "fields": [
+      "rawSnapshot"
+    ],
+    "retrievedAt": "2026-06-19T15:53:20+00:00",
+    "academicSession": "2026 intake",
+    "status": "http-200",
+    "localPath": "data/imports/unm/2026-06-19/official-audit/sources/raw/detail-ug-002-www-nottingham-edu-my-ugstudy-course-finance-accounting-and-management-bsc-hons.html",
+    "sha256": "4c55835bd044caa42a9483eb6ddd388fde6db44c78de16bddfa64f9ed86540a9",
+    "byteLength": 444057
+  },
+  {
+    "id": "detail-ug-003-www-nottingham-edu-my-ugstudy-course-finance-management-and-business-analytics-bsc-hons",
+    "url": "https://www.nottingham.edu.my/ugstudy/course/finance-management-and-business-analytics-bsc-hons",
+    "sourceType": "official-page",
+    "role": "cross-check",
+    "fields": [
+      "rawSnapshot"
+    ],
+    "retrievedAt": "2026-06-19T15:53:20+00:00",
+    "academicSession": "2026 intake",
+    "status": "http-200",
+    "localPath": "data/imports/unm/2026-06-19/official-audit/sources/raw/detail-ug-003-www-nottingham-edu-my-ugstudy-course-finance-management-and-business-analytics-bsc-hons.html",
+    "sha256": "0240aa08be04538ea50517e5b633b10edc180f9fea7b8648665dd3aa58ea71eb",
+    "byteLength": 417014
+  },
+  {
+    "id": "detail-ug-004-www-nottingham-edu-my-ugstudy-course-international-business-management-bsc-hons",
+    "url": "https://www.nottingham.edu.my/ugstudy/course/international-business-management-bsc-hons",
+    "sourceType": "official-page",
+    "role": "cross-check",
+    "fields": [
+      "rawSnapshot"
+    ],
+    "retrievedAt": "2026-06-19T15:53:20+00:00",
+    "academicSession": "2026 intake",
+    "status": "http-200",
+    "localPath": "data/imports/unm/2026-06-19/official-audit/sources/raw/detail-ug-004-www-nottingham-edu-my-ugstudy-course-international-business-management-bsc-hons.html",
+    "sha256": "5a5a870e8f31867cb36fb7b2916cd2c6f4ffe9a98b7949f31bca7b1527c3b9f2",
+    "byteLength": 429244
+  },
+  {
+    "id": "detail-ug-005-www-nottingham-edu-my-ugstudy-course-economics-bsc-hons",
+    "url": "https://www.nottingham.edu.my/ugstudy/course/economics-bsc-hons",
+    "sourceType": "official-page",
+    "role": "cross-check",
+    "fields": [
+      "rawSnapshot"
+    ],
+    "retrievedAt": "2026-06-19T15:53:20+00:00",
+    "academicSession": "2026 intake",
+    "status": "http-200",
+    "localPath": "data/imports/unm/2026-06-19/official-audit/sources/raw/detail-ug-005-www-nottingham-edu-my-ugstudy-course-economics-bsc-hons.html",
+    "sha256": "fb60d2e54183d25d90c87d993396d807aef6ec49a24f4fe7b56fd9b89aabae34",
+    "byteLength": 447627
+  },
+  {
+    "id": "detail-ug-006-www-nottingham-edu-my-ugstudy-course-economics-and-international-economics-bsc-hons",
+    "url": "https://www.nottingham.edu.my/ugstudy/course/economics-and-international-economics-bsc-hons",
+    "sourceType": "official-page",
+    "role": "cross-check",
+    "fields": [
+      "rawSnapshot"
+    ],
+    "retrievedAt": "2026-06-19T15:53:20+00:00",
+    "academicSession": "2026 intake",
+    "status": "http-200",
+    "localPath": "data/imports/unm/2026-06-19/official-audit/sources/raw/detail-ug-006-www-nottingham-edu-my-ugstudy-course-economics-and-international-economics-bsc-hons.html",
+    "sha256": "bcba8cf6a70102c303ef34bcd7c723cc90f7f966568a5474a44af900336da3f1",
+    "byteLength": 442611
+  },
+  {
+    "id": "detail-ug-007-www-nottingham-edu-my-ugstudy-course-education-ba-hons",
+    "url": "https://www.nottingham.edu.my/ugstudy/course/education-ba-hons",
+    "sourceType": "official-page",
+    "role": "cross-check",
+    "fields": [
+      "rawSnapshot"
+    ],
+    "retrievedAt": "2026-06-19T15:53:20+00:00",
+    "academicSession": "2026 intake",
+    "status": "http-200",
+    "localPath": "data/imports/unm/2026-06-19/official-audit/sources/raw/detail-ug-007-www-nottingham-edu-my-ugstudy-course-education-ba-hons.html",
+    "sha256": "b7a7f92d184dc77c2235f8bf6bc350dd469f7fdb77448e849e406a251d4ab86c",
+    "byteLength": 386672
+  },
+  {
+    "id": "detail-ug-008-www-nottingham-edu-my-ugstudy-course-education-bed-hons",
+    "url": "https://www.nottingham.edu.my/ugstudy/course/education-bed-hons",
+    "sourceType": "official-page",
+    "role": "cross-check",
+    "fields": [
+      "rawSnapshot"
+    ],
+    "retrievedAt": "2026-06-19T15:53:21+00:00",
+    "academicSession": "2026 intake",
+    "status": "http-200",
+    "localPath": "data/imports/unm/2026-06-19/official-audit/sources/raw/detail-ug-008-www-nottingham-edu-my-ugstudy-course-education-bed-hons.html",
+    "sha256": "a9847eb36f566722dcbce0c37facac2139e403eb03dd211bde1bf6e932d79f70",
+    "byteLength": 437703
+  },
+  {
+    "id": "detail-ug-009-www-nottingham-edu-my-ugstudy-course-english-language-and-literature-ba-hons",
+    "url": "https://www.nottingham.edu.my/ugstudy/course/english-language-and-literature-ba-hons",
+    "sourceType": "official-page",
+    "role": "cross-check",
+    "fields": [
+      "rawSnapshot"
+    ],
+    "retrievedAt": "2026-06-19T15:53:21+00:00",
+    "academicSession": "2026 intake",
+    "status": "http-200",
+    "localPath": "data/imports/unm/2026-06-19/official-audit/sources/raw/detail-ug-009-www-nottingham-edu-my-ugstudy-course-english-language-and-literature-ba-hons.html",
+    "sha256": "8ac284658a5e72a8fe56bf70f0dffcc490ff0532e012b05d1e0084a6f9a2006b",
+    "byteLength": 431960
+  },
+  {
+    "id": "detail-ug-010-www-nottingham-edu-my-ugstudy-course-english-with-creative-writing-ba-hons",
+    "url": "https://www.nottingham.edu.my/ugstudy/course/english-with-creative-writing-ba-hons",
+    "sourceType": "official-page",
+    "role": "cross-check",
+    "fields": [
+      "rawSnapshot"
+    ],
+    "retrievedAt": "2026-06-19T15:53:21+00:00",
+    "academicSession": "2026 intake",
+    "status": "http-200",
+    "localPath": "data/imports/unm/2026-06-19/official-audit/sources/raw/detail-ug-010-www-nottingham-edu-my-ugstudy-course-english-with-creative-writing-ba-hons.html",
+    "sha256": "fbe4498f442396056871d1374a6ee67c737a4aa4af2378719e4761ba82e46a1c",
+    "byteLength": 461484
+  },
+  {
+    "id": "detail-ug-011-www-nottingham-edu-my-ugstudy-course-international-communication-studies-ba-hons",
+    "url": "https://www.nottingham.edu.my/ugstudy/course/international-communication-studies-ba-hons",
+    "sourceType": "official-page",
+    "role": "cross-check",
+    "fields": [
+      "rawSnapshot"
+    ],
+    "retrievedAt": "2026-06-19T15:53:21+00:00",
+    "academicSession": "2026 intake",
+    "status": "http-200",
+    "localPath": "data/imports/unm/2026-06-19/official-audit/sources/raw/detail-ug-011-www-nottingham-edu-my-ugstudy-course-international-communication-studies-ba-hons.html",
+    "sha256": "eff526effff6fd0603d9dd8486dab85dc230d08189d5a50485a2176dac09126c",
+    "byteLength": 442867
+  },
+  {
+    "id": "detail-ug-012-www-nottingham-edu-my-ugstudy-course-international-communication-studies-with-english-language-and-literature",
+    "url": "https://www.nottingham.edu.my/ugstudy/course/international-communication-studies-with-english-language-and-literature-ba-hons",
+    "sourceType": "official-page",
+    "role": "cross-check",
+    "fields": [
+      "rawSnapshot"
+    ],
+    "retrievedAt": "2026-06-19T15:53:21+00:00",
+    "academicSession": "2026 intake",
+    "status": "http-200",
+    "localPath": "data/imports/unm/2026-06-19/official-audit/sources/raw/detail-ug-012-www-nottingham-edu-my-ugstudy-course-international-communication-studies-with-english-language-and-literature.html",
+    "sha256": "97f9ce39cc57b7da4c5931dc26e2c3a3a7cf746efdf248aeaad6768f20da7291",
+    "byteLength": 438356
+  },
+  {
+    "id": "detail-ug-013-www-nottingham-edu-my-ugstudy-course-international-communication-studies-with-film-and-television-studies-ba-h",
+    "url": "https://www.nottingham.edu.my/ugstudy/course/international-communication-studies-with-film-and-television-studies-ba-hons",
+    "sourceType": "official-page",
+    "role": "cross-check",
+    "fields": [
+      "rawSnapshot"
+    ],
+    "retrievedAt": "2026-06-19T15:53:21+00:00",
+    "academicSession": "2026 intake",
+    "status": "http-200",
+    "localPath": "data/imports/unm/2026-06-19/official-audit/sources/raw/detail-ug-013-www-nottingham-edu-my-ugstudy-course-international-communication-studies-with-film-and-television-studies-ba-h.html",
+    "sha256": "ddb29b2216ffdea163eb1428ef9e691e06ba881163b6f0dc6a9913f1f600b9f8",
+    "byteLength": 455848
+  },
+  {
+    "id": "detail-ug-014-www-nottingham-edu-my-ugstudy-course-international-communication-studies-with-performing-arts-ba-hons",
+    "url": "https://www.nottingham.edu.my/ugstudy/course/international-communication-studies-with-performing-arts-ba-hons",
+    "sourceType": "official-page",
+    "role": "cross-check",
+    "fields": [
+      "rawSnapshot"
+    ],
+    "retrievedAt": "2026-06-19T15:53:21+00:00",
+    "academicSession": "2026 intake",
+    "status": "http-200",
+    "localPath": "data/imports/unm/2026-06-19/official-audit/sources/raw/detail-ug-014-www-nottingham-edu-my-ugstudy-course-international-communication-studies-with-performing-arts-ba-hons.html",
+    "sha256": "1bc3ea0b8ef2929f7d51147bce7a815504ccfcfda39c03c1f8f805b288d22cd2",
+    "byteLength": 390042
+  },
+  {
+    "id": "detail-ug-015-www-nottingham-edu-my-ugstudy-course-international-relations-ba-hons",
+    "url": "https://www.nottingham.edu.my/ugstudy/course/international-relations-ba-hons",
+    "sourceType": "official-page",
+    "role": "cross-check",
+    "fields": [
+      "rawSnapshot"
+    ],
+    "retrievedAt": "2026-06-19T15:53:21+00:00",
+    "academicSession": "2026 intake",
+    "status": "http-200",
+    "localPath": "data/imports/unm/2026-06-19/official-audit/sources/raw/detail-ug-015-www-nottingham-edu-my-ugstudy-course-international-relations-ba-hons.html",
+    "sha256": "31937ceb4a4136a254598014236294cb96dfe197775c6000ca951907d42c69f1",
+    "byteLength": 549065
+  },
+  {
+    "id": "detail-ug-016-www-nottingham-edu-my-ugstudy-course-international-relations-with-french-ba-hons",
+    "url": "https://www.nottingham.edu.my/ugstudy/course/international-relations-with-french-ba-hons",
+    "sourceType": "official-page",
+    "role": "cross-check",
+    "fields": [
+      "rawSnapshot"
+    ],
+    "retrievedAt": "2026-06-19T15:53:21+00:00",
+    "academicSession": "2026 intake",
+    "status": "http-200",
+    "localPath": "data/imports/unm/2026-06-19/official-audit/sources/raw/detail-ug-016-www-nottingham-edu-my-ugstudy-course-international-relations-with-french-ba-hons.html",
+    "sha256": "32979e1fd4474cedd2a74b8371840c3c8c5bde4fb0c66700cad56d5b01767f41",
+    "byteLength": 558121
+  },
+  {
+    "id": "detail-ug-017-www-nottingham-edu-my-ugstudy-course-international-relations-with-spanish-ba-hons",
+    "url": "https://www.nottingham.edu.my/ugstudy/course/international-relations-with-spanish-ba-hons",
+    "sourceType": "official-page",
+    "role": "cross-check",
+    "fields": [
+      "rawSnapshot"
+    ],
+    "retrievedAt": "2026-06-19T15:53:21+00:00",
+    "academicSession": "2026 intake",
+    "status": "http-200",
+    "localPath": "data/imports/unm/2026-06-19/official-audit/sources/raw/detail-ug-017-www-nottingham-edu-my-ugstudy-course-international-relations-with-spanish-ba-hons.html",
+    "sha256": "7b5889dc7b40f6e79fcc8866173d0b3a9d5840687103a7a9d7bb20c36cf09acc",
+    "byteLength": 558273
+  },
+  {
+    "id": "detail-ug-018-www-nottingham-edu-my-ugstudy-course-chemical-engineering-meng-hons",
+    "url": "https://www.nottingham.edu.my/ugstudy/course/chemical-engineering-meng-hons",
+    "sourceType": "official-page",
+    "role": "cross-check",
+    "fields": [
+      "rawSnapshot"
+    ],
+    "retrievedAt": "2026-06-19T15:53:21+00:00",
+    "academicSession": "2026 intake",
+    "status": "http-200",
+    "localPath": "data/imports/unm/2026-06-19/official-audit/sources/raw/detail-ug-018-www-nottingham-edu-my-ugstudy-course-chemical-engineering-meng-hons.html",
+    "sha256": "3c88db56982bc6a4fa44b6992dc6a7ecd64b52309f84cfd87f8fbae50ad8faf8",
+    "byteLength": 339509
+  },
+  {
+    "id": "detail-ug-019-www-nottingham-edu-my-ugstudy-course-chemical-engineering-with-environmental-engineering-meng-hons",
+    "url": "https://www.nottingham.edu.my/ugstudy/course/chemical-engineering-with-environmental-engineering-meng-hons",
+    "sourceType": "official-page",
+    "role": "cross-check",
+    "fields": [
+      "rawSnapshot"
+    ],
+    "retrievedAt": "2026-06-19T15:53:21+00:00",
+    "academicSession": "2026 intake",
+    "status": "http-200",
+    "localPath": "data/imports/unm/2026-06-19/official-audit/sources/raw/detail-ug-019-www-nottingham-edu-my-ugstudy-course-chemical-engineering-with-environmental-engineering-meng-hons.html",
+    "sha256": "ced0be8a4b50b993b7c458b259fd262fa589a76ba691b3453f59ffca55badcd1",
+    "byteLength": 301151
+  },
+  {
+    "id": "detail-ug-020-www-nottingham-edu-my-ugstudy-course-civil-engineering-meng-hons",
+    "url": "https://www.nottingham.edu.my/ugstudy/course/civil-engineering-meng-hons",
+    "sourceType": "official-page",
+    "role": "cross-check",
+    "fields": [
+      "rawSnapshot"
+    ],
+    "retrievedAt": "2026-06-19T15:53:21+00:00",
+    "academicSession": "2026 intake",
+    "status": "http-200",
+    "localPath": "data/imports/unm/2026-06-19/official-audit/sources/raw/detail-ug-020-www-nottingham-edu-my-ugstudy-course-civil-engineering-meng-hons.html",
+    "sha256": "bc6727bf95cd2f200e25ed917fa1695277239f049042301768e5e304c6f95b06",
+    "byteLength": 326391
+  },
+  {
+    "id": "detail-ug-021-www-nottingham-edu-my-ugstudy-course-electrical-and-electronic-engineering-meng-hons",
+    "url": "https://www.nottingham.edu.my/ugstudy/course/electrical-and-electronic-engineering-meng-hons",
+    "sourceType": "official-page",
+    "role": "cross-check",
+    "fields": [
+      "rawSnapshot"
+    ],
+    "retrievedAt": "2026-06-19T15:53:21+00:00",
+    "academicSession": "2026 intake",
+    "status": "http-200",
+    "localPath": "data/imports/unm/2026-06-19/official-audit/sources/raw/detail-ug-021-www-nottingham-edu-my-ugstudy-course-electrical-and-electronic-engineering-meng-hons.html",
+    "sha256": "baad2802f00e19378fd4adfd78fd6b1e76fe4b488977b53fae1243aa6270bfdf",
+    "byteLength": 344699
+  },
+  {
+    "id": "detail-ug-022-www-nottingham-edu-my-ugstudy-course-mechatronic-engineering-meng-hons",
+    "url": "https://www.nottingham.edu.my/ugstudy/course/mechatronic-engineering-meng-hons",
+    "sourceType": "official-page",
+    "role": "cross-check",
+    "fields": [
+      "rawSnapshot"
+    ],
+    "retrievedAt": "2026-06-19T15:53:21+00:00",
+    "academicSession": "2026 intake",
+    "status": "http-200",
+    "localPath": "data/imports/unm/2026-06-19/official-audit/sources/raw/detail-ug-022-www-nottingham-edu-my-ugstudy-course-mechatronic-engineering-meng-hons.html",
+    "sha256": "ee9f7f5ced357ee9eb3d8e7c29f28a0b755ff04f8e6426a50c6f3ee05f1b76c4",
+    "byteLength": 297290
+  },
+  {
+    "id": "detail-ug-023-www-nottingham-edu-my-ugstudy-course-mechanical-engineering-meng-hons",
+    "url": "https://www.nottingham.edu.my/ugstudy/course/mechanical-engineering-meng-hons",
+    "sourceType": "official-page",
+    "role": "cross-check",
+    "fields": [
+      "rawSnapshot"
+    ],
+    "retrievedAt": "2026-06-19T15:53:21+00:00",
+    "academicSession": "2026 intake",
+    "status": "http-200",
+    "localPath": "data/imports/unm/2026-06-19/official-audit/sources/raw/detail-ug-023-www-nottingham-edu-my-ugstudy-course-mechanical-engineering-meng-hons.html",
+    "sha256": "a0b2bfe0ddabeec7000ce7e134972ce23cc98de5733d9e032c521bed2d14e9ca",
+    "byteLength": 338912
+  },
+  {
+    "id": "detail-ug-024-www-nottingham-edu-my-ugstudy-course-biotechnology-bsc-hons",
+    "url": "https://www.nottingham.edu.my/ugstudy/course/biotechnology-bsc-hons",
+    "sourceType": "official-page",
+    "role": "cross-check",
+    "fields": [
+      "rawSnapshot"
+    ],
+    "retrievedAt": "2026-06-19T15:53:21+00:00",
+    "academicSession": "2026 intake",
+    "status": "http-200",
+    "localPath": "data/imports/unm/2026-06-19/official-audit/sources/raw/detail-ug-024-www-nottingham-edu-my-ugstudy-course-biotechnology-bsc-hons.html",
+    "sha256": "dbce9636989f2819abd30ef3c6a18fec01a83c285e9a7a769e247a2fdf09faf9",
+    "byteLength": 375820
+  },
+  {
+    "id": "detail-ug-025-www-nottingham-edu-my-ugstudy-course-environmental-science-bsc-hons",
+    "url": "https://www.nottingham.edu.my/ugstudy/course/environmental-science-bsc-hons",
+    "sourceType": "official-page",
+    "role": "cross-check",
+    "fields": [
+      "rawSnapshot"
+    ],
+    "retrievedAt": "2026-06-19T15:53:21+00:00",
+    "academicSession": "2026 intake",
+    "status": "http-200",
+    "localPath": "data/imports/unm/2026-06-19/official-audit/sources/raw/detail-ug-025-www-nottingham-edu-my-ugstudy-course-environmental-science-bsc-hons.html",
+    "sha256": "d996c043e006cfb5f095e08e13b6a33c6d3f9918e21530b5cc36df07c9051241",
+    "byteLength": 298398
+  },
+  {
+    "id": "detail-ug-026-www-nottingham-edu-my-ugstudy-course-nutrition-bsc-hons",
+    "url": "https://www.nottingham.edu.my/ugstudy/course/nutrition-bsc-hons",
+    "sourceType": "official-page",
+    "role": "cross-check",
+    "fields": [
+      "rawSnapshot"
+    ],
+    "retrievedAt": "2026-06-19T15:53:21+00:00",
+    "academicSession": "2026 intake",
+    "status": "http-200",
+    "localPath": "data/imports/unm/2026-06-19/official-audit/sources/raw/detail-ug-026-www-nottingham-edu-my-ugstudy-course-nutrition-bsc-hons.html",
+    "sha256": "91bd9fc44e27eb6b96cb58b37f0f2d02de14a9d211d914f5f8fb3a16e8b24deb",
+    "byteLength": 327829
+  },
+  {
+    "id": "detail-ug-027-www-nottingham-edu-my-ugstudy-course-computer-science-bsc-hons",
+    "url": "https://www.nottingham.edu.my/ugstudy/course/computer-science-bsc-hons",
+    "sourceType": "official-page",
+    "role": "cross-check",
+    "fields": [
+      "rawSnapshot"
+    ],
+    "retrievedAt": "2026-06-19T15:53:21+00:00",
+    "academicSession": "2026 intake",
+    "status": "http-200",
+    "localPath": "data/imports/unm/2026-06-19/official-audit/sources/raw/detail-ug-027-www-nottingham-edu-my-ugstudy-course-computer-science-bsc-hons.html",
+    "sha256": "a8ecc833e33b776513cd821c27da55f678d02275e9d31d568f9dc00e79391911",
+    "byteLength": 334966
+  },
+  {
+    "id": "detail-ug-028-www-nottingham-edu-my-ugstudy-course-computer-science-with-artificial-intelligence-bsc-hons",
+    "url": "https://www.nottingham.edu.my/ugstudy/course/computer-science-with-artificial-intelligence-bsc-hons",
+    "sourceType": "official-page",
+    "role": "cross-check",
+    "fields": [
+      "rawSnapshot"
+    ],
+    "retrievedAt": "2026-06-19T15:53:21+00:00",
+    "academicSession": "2026 intake",
+    "status": "http-200",
+    "localPath": "data/imports/unm/2026-06-19/official-audit/sources/raw/detail-ug-028-www-nottingham-edu-my-ugstudy-course-computer-science-with-artificial-intelligence-bsc-hons.html",
+    "sha256": "89b770b33c49cfa73a6d3877f6ec7f6765e15aecd98bd4ef2b7fea10c5d44afa",
+    "byteLength": 338168
+  },
+  {
+    "id": "detail-ug-029-www-nottingham-edu-my-ugstudy-course-mathematics-and-data-science-bsc-hons",
+    "url": "https://www.nottingham.edu.my/ugstudy/course/mathematics-and-data-science-bsc-hons",
+    "sourceType": "official-page",
+    "role": "cross-check",
+    "fields": [
+      "rawSnapshot"
+    ],
+    "retrievedAt": "2026-06-19T15:53:22+00:00",
+    "academicSession": "2026 intake",
+    "status": "http-200",
+    "localPath": "data/imports/unm/2026-06-19/official-audit/sources/raw/detail-ug-029-www-nottingham-edu-my-ugstudy-course-mathematics-and-data-science-bsc-hons.html",
+    "sha256": "7504d5e0511b7fd9dfb290c386028aae77a5b2fb807a968dc3598cf6cfbcaf12",
+    "byteLength": 346168
+  },
+  {
+    "id": "detail-ug-030-www-nottingham-edu-my-ugstudy-course-biomedical-science-bsc-hons",
+    "url": "https://www.nottingham.edu.my/ugstudy/course/biomedical-science-bsc-hons",
+    "sourceType": "official-page",
+    "role": "cross-check",
+    "fields": [
+      "rawSnapshot"
+    ],
+    "retrievedAt": "2026-06-19T15:53:22+00:00",
+    "academicSession": "2026 intake",
+    "status": "http-200",
+    "localPath": "data/imports/unm/2026-06-19/official-audit/sources/raw/detail-ug-030-www-nottingham-edu-my-ugstudy-course-biomedical-science-bsc-hons.html",
+    "sha256": "ebc459e83d061d08dc1b88cc527c9f0930e08a8536847c321f7aef412bfb627c",
+    "byteLength": 329350
+  },
+  {
+    "id": "detail-ug-031-www-nottingham-edu-my-ugstudy-course-pharmaceutical-and-health-sciences-bsc-hons",
+    "url": "https://www.nottingham.edu.my/ugstudy/course/pharmaceutical-and-health-sciences-bsc-hons",
+    "sourceType": "official-page",
+    "role": "cross-check",
+    "fields": [
+      "rawSnapshot"
+    ],
+    "retrievedAt": "2026-06-19T15:53:22+00:00",
+    "academicSession": "2026 intake",
+    "status": "http-200",
+    "localPath": "data/imports/unm/2026-06-19/official-audit/sources/raw/detail-ug-031-www-nottingham-edu-my-ugstudy-course-pharmaceutical-and-health-sciences-bsc-hons.html",
+    "sha256": "db15f548f34d4e5e4d27e4079a00645c556fc194df172c88db950d654578024a",
+    "byteLength": 338411
+  },
+  {
+    "id": "detail-ug-032-www-nottingham-edu-my-ugstudy-course-pharmacy-bpharm-hons",
+    "url": "https://www.nottingham.edu.my/ugstudy/course/pharmacy-bpharm-hons",
+    "sourceType": "official-page",
+    "role": "cross-check",
+    "fields": [
+      "rawSnapshot"
+    ],
+    "retrievedAt": "2026-06-19T15:53:22+00:00",
+    "academicSession": "2026 intake",
+    "status": "http-200",
+    "localPath": "data/imports/unm/2026-06-19/official-audit/sources/raw/detail-ug-032-www-nottingham-edu-my-ugstudy-course-pharmacy-bpharm-hons.html",
+    "sha256": "bf0e5582ffe09ef92456ad0efc1f6dad39e923b0a49cab430dc0c45f1c1981c4",
+    "byteLength": 336579
+  },
+  {
+    "id": "detail-ug-033-www-nottingham-edu-my-ugstudy-course-pharmacy-mpharm-hons",
+    "url": "https://www.nottingham.edu.my/ugstudy/course/pharmacy-mpharm-hons",
+    "sourceType": "official-page",
+    "role": "cross-check",
+    "fields": [
+      "rawSnapshot"
+    ],
+    "retrievedAt": "2026-06-19T15:53:22+00:00",
+    "academicSession": "2026 intake",
+    "status": "http-200",
+    "localPath": "data/imports/unm/2026-06-19/official-audit/sources/raw/detail-ug-033-www-nottingham-edu-my-ugstudy-course-pharmacy-mpharm-hons.html",
+    "sha256": "64c636445613d6087b04d10dc40e9f1ae699f46b4be41c7582df15eb13bb8f9e",
+    "byteLength": 322572
+  },
+  {
+    "id": "detail-ug-034-www-nottingham-edu-my-ugstudy-course-applied-psychology-and-management-bsc-hons",
+    "url": "https://www.nottingham.edu.my/ugstudy/course/applied-psychology-and-management-bsc-hons",
+    "sourceType": "official-page",
+    "role": "cross-check",
+    "fields": [
+      "rawSnapshot"
+    ],
+    "retrievedAt": "2026-06-19T15:53:22+00:00",
+    "academicSession": "2026 intake",
+    "status": "http-200",
+    "localPath": "data/imports/unm/2026-06-19/official-audit/sources/raw/detail-ug-034-www-nottingham-edu-my-ugstudy-course-applied-psychology-and-management-bsc-hons.html",
+    "sha256": "713362e2b5b920ae743a482c735114ba8cfa8eafc2c79129667e7064e19c79f4",
+    "byteLength": 503954
+  },
+  {
+    "id": "detail-ug-035-www-nottingham-edu-my-ugstudy-course-psychology-bsc-hons",
+    "url": "https://www.nottingham.edu.my/ugstudy/course/psychology-bsc-hons",
+    "sourceType": "official-page",
+    "role": "cross-check",
+    "fields": [
+      "rawSnapshot"
+    ],
+    "retrievedAt": "2026-06-19T15:53:22+00:00",
+    "academicSession": "2026 intake",
+    "status": "http-200",
+    "localPath": "data/imports/unm/2026-06-19/official-audit/sources/raw/detail-ug-035-www-nottingham-edu-my-ugstudy-course-psychology-bsc-hons.html",
+    "sha256": "1d0cc2b217ce6f67e9568ca139053412a7a2cb7c8225f2abea08bed46d130fa2",
+    "byteLength": 286922
+  },
+  {
+    "id": "detail-ug-036-www-nottingham-edu-my-ugstudy-course-psychology-and-cognitive-neuroscience-bsc-hons",
+    "url": "https://www.nottingham.edu.my/ugstudy/course/psychology-and-cognitive-neuroscience-bsc-hons",
+    "sourceType": "official-page",
+    "role": "cross-check",
+    "fields": [
+      "rawSnapshot"
+    ],
+    "retrievedAt": "2026-06-19T15:53:22+00:00",
+    "academicSession": "2026 intake",
+    "status": "http-200",
+    "localPath": "data/imports/unm/2026-06-19/official-audit/sources/raw/detail-ug-036-www-nottingham-edu-my-ugstudy-course-psychology-and-cognitive-neuroscience-bsc-hons.html",
+    "sha256": "f128ecd1f6f23388cbc1387439b3d774e80cd55297f4f25ad2bf64de292f729b",
+    "byteLength": 284724
+  },
+  {
+    "id": "detail-pg-001-www-nottingham-edu-my-pgstudy-course-taught-organisational-psychology-msc",
+    "url": "https://www.nottingham.edu.my/pgstudy/course/taught/organisational-psychology-msc",
+    "sourceType": "official-page",
+    "role": "cross-check",
+    "fields": [
+      "rawSnapshot"
+    ],
+    "retrievedAt": "2026-06-19T15:53:22+00:00",
+    "academicSession": "2026 intake",
+    "status": "http-200",
+    "localPath": "data/imports/unm/2026-06-19/official-audit/sources/raw/detail-pg-001-www-nottingham-edu-my-pgstudy-course-taught-organisational-psychology-msc.html",
+    "sha256": "a78f1affd141ada743cbbecf1c25f988771d24154006e2525e8ea374958bb024",
+    "byteLength": 261214
+  },
+  {
+    "id": "detail-pg-002-www-nottingham-edu-my-pgstudy-course-research-applied-psychology-mphil-phd",
+    "url": "https://www.nottingham.edu.my/pgstudy/course/research/applied-psychology-mphil-phd",
+    "sourceType": "official-page",
+    "role": "cross-check",
+    "fields": [
+      "rawSnapshot"
+    ],
+    "retrievedAt": "2026-06-19T15:53:22+00:00",
+    "academicSession": "2026 intake",
+    "status": "http-200",
+    "localPath": "data/imports/unm/2026-06-19/official-audit/sources/raw/detail-pg-002-www-nottingham-edu-my-pgstudy-course-research-applied-psychology-mphil-phd.html",
+    "sha256": "537e162402db517702beb5d5214a152918fcb8674865738e6d66d1ee95edf4cd",
+    "byteLength": 227463
+  },
+  {
+    "id": "detail-pg-003-www-nottingham-edu-my-pgstudy-course-taught-executive-master-of-business-administration-emba",
+    "url": "https://www.nottingham.edu.my/pgstudy/course/taught/executive-master-of-business-administration-emba",
+    "sourceType": "official-page",
+    "role": "cross-check",
+    "fields": [
+      "rawSnapshot"
+    ],
+    "retrievedAt": "2026-06-19T15:53:22+00:00",
+    "academicSession": "2026 intake",
+    "status": "http-200",
+    "localPath": "data/imports/unm/2026-06-19/official-audit/sources/raw/detail-pg-003-www-nottingham-edu-my-pgstudy-course-taught-executive-master-of-business-administration-emba.html",
+    "sha256": "4f77228e87d437df164b8c9b37f55a4e18f63c76743f3ea7379004baceed7d45",
+    "byteLength": 425941
+  },
+  {
+    "id": "detail-pg-004-www-nottingham-edu-my-pgstudy-course-taught-business-international-management-msc",
+    "url": "https://www.nottingham.edu.my/pgstudy/course/taught/business-international-management-msc",
+    "sourceType": "official-page",
+    "role": "cross-check",
+    "fields": [
+      "rawSnapshot"
+    ],
+    "retrievedAt": "2026-06-19T15:53:22+00:00",
+    "academicSession": "2026 intake",
+    "status": "http-200",
+    "localPath": "data/imports/unm/2026-06-19/official-audit/sources/raw/detail-pg-004-www-nottingham-edu-my-pgstudy-course-taught-business-international-management-msc.html",
+    "sha256": "858030a2b37cf70c31ddac77e26e3e3f4e74bee5979172febd8afc95448687ca",
+    "byteLength": 244443
+  },
+  {
+    "id": "detail-pg-005-www-nottingham-edu-my-pgstudy-course-research-business-and-management-mphil-phd",
+    "url": "https://www.nottingham.edu.my/pgstudy/course/research/business-and-management-mphil-phd",
+    "sourceType": "official-page",
+    "role": "cross-check",
+    "fields": [
+      "rawSnapshot"
+    ],
+    "retrievedAt": "2026-06-19T15:53:22+00:00",
+    "academicSession": "2026 intake",
+    "status": "http-200",
+    "localPath": "data/imports/unm/2026-06-19/official-audit/sources/raw/detail-pg-005-www-nottingham-edu-my-pgstudy-course-research-business-and-management-mphil-phd.html",
+    "sha256": "114bf6f4244fcb57bfc2d1c99128a037511ab91017d1dd2f01a1c60c151714fc",
+    "byteLength": 263588
+  },
+  {
+    "id": "detail-pg-006-www-nottingham-edu-my-pgstudy-course-research-economics-phd",
+    "url": "https://www.nottingham.edu.my/pgstudy/course/research/economics-phd",
+    "sourceType": "official-page",
+    "role": "cross-check",
+    "fields": [
+      "rawSnapshot"
+    ],
+    "retrievedAt": "2026-06-19T15:53:22+00:00",
+    "academicSession": "2026 intake",
+    "status": "http-200",
+    "localPath": "data/imports/unm/2026-06-19/official-audit/sources/raw/detail-pg-006-www-nottingham-edu-my-pgstudy-course-research-economics-phd.html",
+    "sha256": "4359916c2e96a30efc82fb154523af43202c915f970618f71f3ef2eb0b2cba71",
+    "byteLength": 235203
+  },
+  {
+    "id": "detail-pg-007-www-nottingham-edu-my-pgstudy-course-taught-education-pgcert",
+    "url": "https://www.nottingham.edu.my/pgstudy/course/taught/education-pgcert",
+    "sourceType": "official-page",
+    "role": "cross-check",
+    "fields": [
+      "rawSnapshot"
+    ],
+    "retrievedAt": "2026-06-19T15:53:22+00:00",
+    "academicSession": "2026 intake",
+    "status": "http-200",
+    "localPath": "data/imports/unm/2026-06-19/official-audit/sources/raw/detail-pg-007-www-nottingham-edu-my-pgstudy-course-taught-education-pgcert.html",
+    "sha256": "970f72713351c6d30722f46618bf9151d22b1f52e4b55f64adc6100f3f4307ac",
+    "byteLength": 317942
+  },
+  {
+    "id": "detail-pg-008-www-nottingham-edu-my-pgstudy-course-taught-education-pgdip",
+    "url": "https://www.nottingham.edu.my/pgstudy/course/taught/education-pgdip",
+    "sourceType": "official-page",
+    "role": "cross-check",
+    "fields": [
+      "rawSnapshot"
+    ],
+    "retrievedAt": "2026-06-19T15:53:22+00:00",
+    "academicSession": "2026 intake",
+    "status": "http-200",
+    "localPath": "data/imports/unm/2026-06-19/official-audit/sources/raw/detail-pg-008-www-nottingham-edu-my-pgstudy-course-taught-education-pgdip.html",
+    "sha256": "a33c17460178d025e22bdb21763aa70fd1b0622413031ddac962cc72d901fe59",
+    "byteLength": 316922
+  },
+  {
+    "id": "detail-pg-009-www-nottingham-edu-my-pgstudy-course-taught-education-ma",
+    "url": "https://www.nottingham.edu.my/pgstudy/course/taught/education-ma",
+    "sourceType": "official-page",
+    "role": "cross-check",
+    "fields": [
+      "rawSnapshot"
+    ],
+    "retrievedAt": "2026-06-19T15:53:22+00:00",
+    "academicSession": "2026 intake",
+    "status": "http-200",
+    "localPath": "data/imports/unm/2026-06-19/official-audit/sources/raw/detail-pg-009-www-nottingham-edu-my-pgstudy-course-taught-education-ma.html",
+    "sha256": "961f4149a94197e068f2cd5ef701f883beda2dd4700a5c8d02fe6083b998c880",
+    "byteLength": 322375
+  },
+  {
+    "id": "detail-pg-010-www-nottingham-edu-my-pgstudy-course-taught-special-and-inclusive-education-ma",
+    "url": "https://www.nottingham.edu.my/pgstudy/course/taught/special-and-inclusive-education-ma",
+    "sourceType": "official-page",
+    "role": "cross-check",
+    "fields": [
+      "rawSnapshot"
+    ],
+    "retrievedAt": "2026-06-19T15:53:22+00:00",
+    "academicSession": "2026 intake",
+    "status": "http-200",
+    "localPath": "data/imports/unm/2026-06-19/official-audit/sources/raw/detail-pg-010-www-nottingham-edu-my-pgstudy-course-taught-special-and-inclusive-education-ma.html",
+    "sha256": "7cf51b57a59abb279e03bd15c406e46c4ea30377e45e05585cf7e042cafa459f",
+    "byteLength": 275611
+  },
+  {
+    "id": "detail-pg-011-www-nottingham-edu-my-pgstudy-course-taught-tesol-ma",
+    "url": "https://www.nottingham.edu.my/pgstudy/course/taught/tesol-ma",
+    "sourceType": "official-page",
+    "role": "cross-check",
+    "fields": [
+      "rawSnapshot"
+    ],
+    "retrievedAt": "2026-06-19T15:53:22+00:00",
+    "academicSession": "2026 intake",
+    "status": "http-200",
+    "localPath": "data/imports/unm/2026-06-19/official-audit/sources/raw/detail-pg-011-www-nottingham-edu-my-pgstudy-course-taught-tesol-ma.html",
+    "sha256": "e4b8bfe171f89be31f48f56b9f02fb984094aaec24c8b3c32483555f99f9e4cb",
+    "byteLength": 278463
+  },
+  {
+    "id": "detail-pg-012-www-nottingham-edu-my-pgstudy-course-research-education-mphil-phd",
+    "url": "https://www.nottingham.edu.my/pgstudy/course/research/education-mphil-phd",
+    "sourceType": "official-page",
+    "role": "cross-check",
+    "fields": [
+      "rawSnapshot"
+    ],
+    "retrievedAt": "2026-06-19T15:53:22+00:00",
+    "academicSession": "2026 intake",
+    "status": "http-200",
+    "localPath": "data/imports/unm/2026-06-19/official-audit/sources/raw/detail-pg-012-www-nottingham-edu-my-pgstudy-course-research-education-mphil-phd.html",
+    "sha256": "9002256c30880154dea87c71dd6e1b313a2351989b86e56267de3cd5eb155c14",
+    "byteLength": 254597
+  },
+  {
+    "id": "detail-pg-013-www-nottingham-edu-my-pgstudy-course-taught-english-language-and-literature-ma",
+    "url": "https://www.nottingham.edu.my/pgstudy/course/taught/english-language-and-literature-ma",
+    "sourceType": "official-page",
+    "role": "cross-check",
+    "fields": [
+      "rawSnapshot"
+    ],
+    "retrievedAt": "2026-06-19T15:53:22+00:00",
+    "academicSession": "2026 intake",
+    "status": "http-200",
+    "localPath": "data/imports/unm/2026-06-19/official-audit/sources/raw/detail-pg-013-www-nottingham-edu-my-pgstudy-course-taught-english-language-and-literature-ma.html",
+    "sha256": "101927a16bacf927a6d740e7c7180c5c4be74d600f56d89e5eab592085c30e2e",
+    "byteLength": 288262
+  },
+  {
+    "id": "detail-pg-014-www-nottingham-edu-my-pgstudy-course-taught-english-with-creative-writing-ma",
+    "url": "https://www.nottingham.edu.my/pgstudy/course/taught/english-with-creative-writing-ma",
+    "sourceType": "official-page",
+    "role": "cross-check",
+    "fields": [
+      "rawSnapshot"
+    ],
+    "retrievedAt": "2026-06-19T15:53:22+00:00",
+    "academicSession": "2026 intake",
+    "status": "http-200",
+    "localPath": "data/imports/unm/2026-06-19/official-audit/sources/raw/detail-pg-014-www-nottingham-edu-my-pgstudy-course-taught-english-with-creative-writing-ma.html",
+    "sha256": "abc37881616cf757df52f07ed491bf5f6d5f1cf42b4f678166caacafecfce8c6",
+    "byteLength": 294859
+  },
+  {
+    "id": "detail-pg-015-www-nottingham-edu-my-pgstudy-course-taught-media-communications-and-culture-ma",
+    "url": "https://www.nottingham.edu.my/pgstudy/course/taught/media-communications-and-culture-ma",
+    "sourceType": "official-page",
+    "role": "cross-check",
+    "fields": [
+      "rawSnapshot"
+    ],
+    "retrievedAt": "2026-06-19T15:53:22+00:00",
+    "academicSession": "2026 intake",
+    "status": "http-200",
+    "localPath": "data/imports/unm/2026-06-19/official-audit/sources/raw/detail-pg-015-www-nottingham-edu-my-pgstudy-course-taught-media-communications-and-culture-ma.html",
+    "sha256": "0241b31dea75ee14ace8303101c97bd4870dceb549c4df6dff7ba6e16dcb8228",
+    "byteLength": 242114
+  },
+  {
+    "id": "detail-pg-016-www-nottingham-edu-my-pgstudy-course-research-english-mphil-phd",
+    "url": "https://www.nottingham.edu.my/pgstudy/course/research/english-mphil-phd",
+    "sourceType": "official-page",
+    "role": "cross-check",
+    "fields": [
+      "rawSnapshot"
+    ],
+    "retrievedAt": "2026-06-19T15:53:23+00:00",
+    "academicSession": "2026 intake",
+    "status": "http-200",
+    "localPath": "data/imports/unm/2026-06-19/official-audit/sources/raw/detail-pg-016-www-nottingham-edu-my-pgstudy-course-research-english-mphil-phd.html",
+    "sha256": "82ed56901cea1b102d29a27ab2129c45d03c49a42a9a978e7ab3f2b3efd4ba3b",
+    "byteLength": 240432
+  },
+  {
+    "id": "detail-pg-017-www-nottingham-edu-my-pgstudy-course-research-media-languages-and-cultures-mphil-mres-phd",
+    "url": "https://www.nottingham.edu.my/pgstudy/course/research/media-languages-and-cultures-mphil-mres-phd",
+    "sourceType": "official-page",
+    "role": "cross-check",
+    "fields": [
+      "rawSnapshot"
+    ],
+    "retrievedAt": "2026-06-19T15:53:23+00:00",
+    "academicSession": "2026 intake",
+    "status": "http-200",
+    "localPath": "data/imports/unm/2026-06-19/official-audit/sources/raw/detail-pg-017-www-nottingham-edu-my-pgstudy-course-research-media-languages-and-cultures-mphil-mres-phd.html",
+    "sha256": "27d229a16f8c72bea3fff4980e35b22c2ddf941cd6b4bff2822ccf42ceb69c63",
+    "byteLength": 254306
+  },
+  {
+    "id": "detail-pg-018-www-nottingham-edu-my-pgstudy-course-research-politics-history-development-and-international-relations-phd",
+    "url": "https://www.nottingham.edu.my/pgstudy/course/research/politics-history-development-and-international-relations-phd",
+    "sourceType": "official-page",
+    "role": "cross-check",
+    "fields": [
+      "rawSnapshot"
+    ],
+    "retrievedAt": "2026-06-19T15:53:23+00:00",
+    "academicSession": "2026 intake",
+    "status": "http-200",
+    "localPath": "data/imports/unm/2026-06-19/official-audit/sources/raw/detail-pg-018-www-nottingham-edu-my-pgstudy-course-research-politics-history-development-and-international-relations-phd.html",
+    "sha256": "8698aeaec7ba477591d50e37cef45004ef552a9c279abf0ccfdb5d78c9b13e6a",
+    "byteLength": 233658
+  },
+  {
+    "id": "detail-pg-019-www-nottingham-edu-my-pgstudy-course-taught-environmental-engineering-msc",
+    "url": "https://www.nottingham.edu.my/pgstudy/course/taught/environmental-engineering-msc",
+    "sourceType": "official-page",
+    "role": "cross-check",
+    "fields": [
+      "rawSnapshot"
+    ],
+    "retrievedAt": "2026-06-19T15:53:23+00:00",
+    "academicSession": "2026 intake",
+    "status": "http-200",
+    "localPath": "data/imports/unm/2026-06-19/official-audit/sources/raw/detail-pg-019-www-nottingham-edu-my-pgstudy-course-taught-environmental-engineering-msc.html",
+    "sha256": "48c79c2d8556af975aa2dd2e721d0e7c8d16c8c4fa5bab5b6e134fd5bd02665c",
+    "byteLength": 253197
+  },
+  {
+    "id": "detail-pg-020-www-nottingham-edu-my-pgstudy-course-research-engineering-mphil-phd",
+    "url": "https://www.nottingham.edu.my/pgstudy/course/research/engineering-mphil-phd",
+    "sourceType": "official-page",
+    "role": "cross-check",
+    "fields": [
+      "rawSnapshot"
+    ],
+    "retrievedAt": "2026-06-19T15:53:23+00:00",
+    "academicSession": "2026 intake",
+    "status": "http-200",
+    "localPath": "data/imports/unm/2026-06-19/official-audit/sources/raw/detail-pg-020-www-nottingham-edu-my-pgstudy-course-research-engineering-mphil-phd.html",
+    "sha256": "01c69406400612d838d4b1ea5076ea1faa50b27f93dcee001f153808950191f7",
+    "byteLength": 244403
+  },
+  {
+    "id": "detail-pg-021-www-nottingham-edu-my-pgstudy-course-research-biomedical-sciences-mphil-phd",
+    "url": "https://www.nottingham.edu.my/pgstudy/course/research/biomedical-sciences-mphil-phd",
+    "sourceType": "official-page",
+    "role": "cross-check",
+    "fields": [
+      "rawSnapshot"
+    ],
+    "retrievedAt": "2026-06-19T15:53:23+00:00",
+    "academicSession": "2026 intake",
+    "status": "http-200",
+    "localPath": "data/imports/unm/2026-06-19/official-audit/sources/raw/detail-pg-021-www-nottingham-edu-my-pgstudy-course-research-biomedical-sciences-mphil-phd.html",
+    "sha256": "4ea8fce78fbdf5c61f0c06d487096f7eef264c85b7fe07327bd5ae104ca6cb14",
+    "byteLength": 233031
+  },
+  {
+    "id": "detail-pg-022-www-nottingham-edu-my-pgstudy-course-research-biosciences-mres-mphil-phd",
+    "url": "https://www.nottingham.edu.my/pgstudy/course/research/biosciences-mres-mphil-phd",
+    "sourceType": "official-page",
+    "role": "cross-check",
+    "fields": [
+      "rawSnapshot"
+    ],
+    "retrievedAt": "2026-06-19T15:53:23+00:00",
+    "academicSession": "2026 intake",
+    "status": "http-200",
+    "localPath": "data/imports/unm/2026-06-19/official-audit/sources/raw/detail-pg-022-www-nottingham-edu-my-pgstudy-course-research-biosciences-mres-mphil-phd.html",
+    "sha256": "2406f7751b6b4648308a1ec787ade7b1311d15c1beb925fdccd8d7b5469b3d3d",
+    "byteLength": 245952
+  },
+  {
+    "id": "detail-pg-023-www-nottingham-edu-my-pgstudy-course-research-computer-science-mphil-phd",
+    "url": "https://www.nottingham.edu.my/pgstudy/course/research/computer-science-mphil-phd",
+    "sourceType": "official-page",
+    "role": "cross-check",
+    "fields": [
+      "rawSnapshot"
+    ],
+    "retrievedAt": "2026-06-19T15:53:23+00:00",
+    "academicSession": "2026 intake",
+    "status": "http-200",
+    "localPath": "data/imports/unm/2026-06-19/official-audit/sources/raw/detail-pg-023-www-nottingham-edu-my-pgstudy-course-research-computer-science-mphil-phd.html",
+    "sha256": "beeba2cc72a6abce53591f67e301420ed39f7888b77282c7b58af43ff3897e67",
+    "byteLength": 235197
+  },
+  {
+    "id": "detail-pg-024-www-nottingham-edu-my-pgstudy-course-research-environmental-and-geographical-sciences-mphil-mres-phd",
+    "url": "https://www.nottingham.edu.my/pgstudy/course/research/environmental-and-geographical-sciences-mphil-mres-phd",
+    "sourceType": "official-page",
+    "role": "cross-check",
+    "fields": [
+      "rawSnapshot"
+    ],
+    "retrievedAt": "2026-06-19T15:53:23+00:00",
+    "academicSession": "2026 intake",
+    "status": "http-200",
+    "localPath": "data/imports/unm/2026-06-19/official-audit/sources/raw/detail-pg-024-www-nottingham-edu-my-pgstudy-course-research-environmental-and-geographical-sciences-mphil-mres-phd.html",
+    "sha256": "809bfa4deabafe053633d31cf46de214b29362113fb9f10a292db8253beba1ca",
+    "byteLength": 253574
+  },
+  {
+    "id": "detail-pg-025-www-nottingham-edu-my-pgstudy-course-research-mathematical-sciences-mphil-phd",
+    "url": "https://www.nottingham.edu.my/pgstudy/course/research/mathematical-sciences-mphil-phd",
+    "sourceType": "official-page",
+    "role": "cross-check",
+    "fields": [
+      "rawSnapshot"
+    ],
+    "retrievedAt": "2026-06-19T15:53:23+00:00",
+    "academicSession": "2026 intake",
+    "status": "http-200",
+    "localPath": "data/imports/unm/2026-06-19/official-audit/sources/raw/detail-pg-025-www-nottingham-edu-my-pgstudy-course-research-mathematical-sciences-mphil-phd.html",
+    "sha256": "ee2546b247a18e58c4942f4d5a427023f72f49fe68b3bbf3c4a85d781f309183",
+    "byteLength": 262639
+  },
+  {
+    "id": "detail-pg-026-www-nottingham-edu-my-pgstudy-course-research-pharmacy-mphil-phd",
+    "url": "https://www.nottingham.edu.my/pgstudy/course/research/pharmacy-mphil-phd",
+    "sourceType": "official-page",
+    "role": "cross-check",
+    "fields": [
+      "rawSnapshot"
+    ],
+    "retrievedAt": "2026-06-19T15:53:23+00:00",
+    "academicSession": "2026 intake",
+    "status": "http-200",
+    "localPath": "data/imports/unm/2026-06-19/official-audit/sources/raw/detail-pg-026-www-nottingham-edu-my-pgstudy-course-research-pharmacy-mphil-phd.html",
+    "sha256": "d5d5e1bdbaac7d8ad1add206e14bbb745d5cae9b520c6fdaa2e979b9fc67d958",
+    "byteLength": 234094
+  },
+  {
+    "id": "detail-pg-027-www-nottingham-edu-my-pgstudy-course-taught-developmental-disorders-msc",
+    "url": "https://www.nottingham.edu.my/pgstudy/course/taught/developmental-disorders-msc",
+    "sourceType": "official-page",
+    "role": "cross-check",
+    "fields": [
+      "rawSnapshot"
+    ],
+    "retrievedAt": "2026-06-19T15:53:23+00:00",
+    "academicSession": "2026 intake",
+    "status": "http-200",
+    "localPath": "data/imports/unm/2026-06-19/official-audit/sources/raw/detail-pg-027-www-nottingham-edu-my-pgstudy-course-taught-developmental-disorders-msc.html",
+    "sha256": "80cc802d4e7c8db0df290173f8c206721506fee2f22ed189a1547c9809edd441",
+    "byteLength": 251888
+  },
+  {
+    "id": "detail-pg-028-www-nottingham-edu-my-pgstudy-course-research-psychology-mres-mphil-phd",
+    "url": "https://www.nottingham.edu.my/pgstudy/course/research/psychology-mres-mphil-phd",
+    "sourceType": "official-page",
+    "role": "cross-check",
+    "fields": [
+      "rawSnapshot"
+    ],
+    "retrievedAt": "2026-06-19T15:53:23+00:00",
+    "academicSession": "2026 intake",
+    "status": "http-200",
+    "localPath": "data/imports/unm/2026-06-19/official-audit/sources/raw/detail-pg-028-www-nottingham-edu-my-pgstudy-course-research-psychology-mres-mphil-phd.html",
+    "sha256": "ffa40455d14536a186687490b330bc991f20e87256ebb6f975546b5d076386e4",
+    "byteLength": 241876
+  }
+]

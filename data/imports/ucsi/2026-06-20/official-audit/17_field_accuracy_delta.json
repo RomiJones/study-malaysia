@@ -1,0 +1,3093 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-06-21T00:28:54.298+08:00",
+  "status": "review-required",
+  "institution": "UCSI University",
+  "officialDomains": [
+    "ucsiuniversity.edu.my"
+  ],
+  "academicSession": "current official UCSI website as of 2026-06-20",
+  "correctionsApplied": [
+    {
+      "id": "ucsi-source-url-about-blank",
+      "status": "fixed",
+      "evidence": "All 118 candidate officialSourceUrl values now resolve to https://www.ucsiuniversity.edu.my/ programme pages; about:blank count is 0."
+    },
+    {
+      "id": "ucsi-postgraduate-office-hash-anchor-false-positive",
+      "status": "fixed",
+      "evidence": "The directory parser now filters page-internal #collapse anchors. The former UCSI-PHD-119 directory-page pseudo-candidate is no longer present."
+    },
+    {
+      "id": "ucsi-delivery-coverage-overstatement",
+      "status": "fixed",
+      "evidence": "delivery.coverage is now summarized from 07_field_coverage_matrix.json: languageRequirement has 115 covered and 3 review; fee, internationalEligibility, deepSourceFieldExploration, and studentFacingContentHygiene remain review for all 118 records."
+    }
+  ],
+  "counts": {
+    "canonicalProgrammes": 118,
+    "byLevel": {
+      "phd": 18,
+      "master": 40,
+      "bachelor": 60
+    },
+    "publicDisplayStatus": {
+      "needs-review": 118
+    },
+    "rowDisposal": {
+      "candidate": 118,
+      "out-of-scope": 59,
+      "duplicate-of": 53
+    }
+  },
+  "sourceUrlIntegrity": {
+    "candidateCount": 118,
+    "officialUrlValid": 118,
+    "aboutBlank": 0,
+    "sourceCacheFound": 118,
+    "rawSnapshotExists": 118,
+    "sha256Matches": 118,
+    "issues": []
+  },
+  "missingByField": {
+    "durationOfficial": [],
+    "officialIntake": [],
+    "officialAcademicRequirement": [],
+    "officialLanguageRequirement": [
+      {
+        "code": "UCSI-PHD-019",
+        "level": "phd",
+        "nameEnOfficial": "Doctor Of Philosophy (Science) By Prior Publication",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/doctor-philosophy-science-prior-publication",
+        "sourceId": "detail-019-item"
+      },
+      {
+        "code": "UCSI-BACHELOR-052",
+        "level": "bachelor",
+        "nameEnOfficial": "Bachelor Of Mechatronics Engineering With Honours",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-mechatronics-engineering-honours",
+        "sourceId": "detail-052-item"
+      },
+      {
+        "code": "UCSI-BACHELOR-073",
+        "level": "bachelor",
+        "nameEnOfficial": "Bachelor Of Pharmacy (Honours)",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-pharmacy-honours",
+        "sourceId": "detail-073-item"
+      }
+    ],
+    "courseSettingOfficial": [],
+    "careerDirectionsOfficial": [
+      {
+        "code": "UCSI-MASTER-003",
+        "level": "master",
+        "nameEnOfficial": "MBA",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/mba",
+        "sourceId": "detail-003-item"
+      },
+      {
+        "code": "UCSI-MASTER-004",
+        "level": "master",
+        "nameEnOfficial": "MBA (ODL Mode)",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/mba-odl-mode",
+        "sourceId": "detail-004-item"
+      },
+      {
+        "code": "UCSI-MASTER-083",
+        "level": "master",
+        "nameEnOfficial": "Master Of Arts And Design",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/master-arts-and-design",
+        "sourceId": "detail-083-item"
+      },
+      {
+        "code": "UCSI-PHD-101",
+        "level": "phd",
+        "nameEnOfficial": "Doctor Of Philosophy In Music Performance",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/doctor-philosophy-music-performance",
+        "sourceId": "detail-101-item"
+      },
+      {
+        "code": "UCSI-PHD-102",
+        "level": "phd",
+        "nameEnOfficial": "Doctor Of Philosophy In Music",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/doctor-philosophy-music",
+        "sourceId": "detail-102-item"
+      }
+    ],
+    "studyMode": [],
+    "studyType": []
+  },
+  "feeClassification": {
+    "counts": {
+      "needs-manual-table-review": 113,
+      "fee-like-ambiguous": 5
+    },
+    "records": [
+      {
+        "code": "UCSI-PHD-001",
+        "level": "phd",
+        "nameEnOfficial": "Doctor Of Philosophy (Business And Management)",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/doctor-philosophy-business-and-management",
+        "snippetCount": 4,
+        "classification": "needs-manual-table-review",
+        "reason": "Rendered page exposes official RM amount snippets, but the parser has not reconciled exact international full-duration tuition, applicant scope, basis, and variant."
+      },
+      {
+        "code": "UCSI-PHD-002",
+        "level": "phd",
+        "nameEnOfficial": "DBA (Doctor Of Business Administration)",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/dba-doctor-business-administration",
+        "snippetCount": 4,
+        "classification": "needs-manual-table-review",
+        "reason": "Rendered page exposes official RM amount snippets, but the parser has not reconciled exact international full-duration tuition, applicant scope, basis, and variant."
+      },
+      {
+        "code": "UCSI-MASTER-003",
+        "level": "master",
+        "nameEnOfficial": "MBA",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/mba",
+        "snippetCount": 4,
+        "classification": "needs-manual-table-review",
+        "reason": "Rendered page exposes official RM amount snippets, but the parser has not reconciled exact international full-duration tuition, applicant scope, basis, and variant."
+      },
+      {
+        "code": "UCSI-MASTER-004",
+        "level": "master",
+        "nameEnOfficial": "MBA (ODL Mode)",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/mba-odl-mode",
+        "snippetCount": 4,
+        "classification": "needs-manual-table-review",
+        "reason": "Rendered page exposes official RM amount snippets, but the parser has not reconciled exact international full-duration tuition, applicant scope, basis, and variant."
+      },
+      {
+        "code": "UCSI-MASTER-005",
+        "level": "master",
+        "nameEnOfficial": "Master Of Philosophy (Business And Management)",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/master-philosophy-business-and-management",
+        "snippetCount": 2,
+        "classification": "needs-manual-table-review",
+        "reason": "Rendered page exposes official RM amount snippets, but the parser has not reconciled exact international full-duration tuition, applicant scope, basis, and variant."
+      },
+      {
+        "code": "UCSI-MASTER-006",
+        "level": "master",
+        "nameEnOfficial": "MBA (Healthcare And Hospital Management)",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/mba-healthcare-and-hospital-management",
+        "snippetCount": 2,
+        "classification": "needs-manual-table-review",
+        "reason": "Rendered page exposes official RM amount snippets, but the parser has not reconciled exact international full-duration tuition, applicant scope, basis, and variant."
+      },
+      {
+        "code": "UCSI-PHD-007",
+        "level": "phd",
+        "nameEnOfficial": "Doctor Of Philosophy (Science)",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programme/doctorate-philosophy-science",
+        "snippetCount": 5,
+        "classification": "fee-like-ambiguous",
+        "reason": "At least one RM snippet is embedded in non-tuition prose or a mixed fee note, so it cannot be treated as the primary tuition value."
+      },
+      {
+        "code": "UCSI-MASTER-008",
+        "level": "master",
+        "nameEnOfficial": "Master Of Science In Applied Sciences",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/master-science-applied-sciences",
+        "snippetCount": 2,
+        "classification": "needs-manual-table-review",
+        "reason": "Rendered page exposes official RM amount snippets, but the parser has not reconciled exact international full-duration tuition, applicant scope, basis, and variant."
+      },
+      {
+        "code": "UCSI-MASTER-009",
+        "level": "master",
+        "nameEnOfficial": "Master Of Science Biotechnology",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/master-science-biotechnology",
+        "snippetCount": 4,
+        "classification": "needs-manual-table-review",
+        "reason": "Rendered page exposes official RM amount snippets, but the parser has not reconciled exact international full-duration tuition, applicant scope, basis, and variant."
+      },
+      {
+        "code": "UCSI-MASTER-010",
+        "level": "master",
+        "nameEnOfficial": "Master Of Science In Biotechnology With Business Management",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/master-science-biotechnology-business-management",
+        "snippetCount": 4,
+        "classification": "needs-manual-table-review",
+        "reason": "Rendered page exposes official RM amount snippets, but the parser has not reconciled exact international full-duration tuition, applicant scope, basis, and variant."
+      },
+      {
+        "code": "UCSI-MASTER-011",
+        "level": "master",
+        "nameEnOfficial": "Master Of Science Food Science With Business Management",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/master-science-food-science-business-management",
+        "snippetCount": 4,
+        "classification": "needs-manual-table-review",
+        "reason": "Rendered page exposes official RM amount snippets, but the parser has not reconciled exact international full-duration tuition, applicant scope, basis, and variant."
+      },
+      {
+        "code": "UCSI-MASTER-012",
+        "level": "master",
+        "nameEnOfficial": "Master Of Science In Nutrition With Management",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/msc-nutrition-management",
+        "snippetCount": 4,
+        "classification": "needs-manual-table-review",
+        "reason": "Rendered page exposes official RM amount snippets, but the parser has not reconciled exact international full-duration tuition, applicant scope, basis, and variant."
+      },
+      {
+        "code": "UCSI-BACHELOR-013",
+        "level": "bachelor",
+        "nameEnOfficial": "Bachelor Of Science (Honours) Applied Microbiology",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-science-honours-applied-microbiology",
+        "snippetCount": 2,
+        "classification": "needs-manual-table-review",
+        "reason": "Rendered page exposes official RM amount snippets, but the parser has not reconciled exact international full-duration tuition, applicant scope, basis, and variant."
+      },
+      {
+        "code": "UCSI-BACHELOR-014",
+        "level": "bachelor",
+        "nameEnOfficial": "Bachelor Of Science (Honours) Aquatic Science",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-science-honours-aquatic-science",
+        "snippetCount": 2,
+        "classification": "needs-manual-table-review",
+        "reason": "Rendered page exposes official RM amount snippets, but the parser has not reconciled exact international full-duration tuition, applicant scope, basis, and variant."
+      },
+      {
+        "code": "UCSI-BACHELOR-015",
+        "level": "bachelor",
+        "nameEnOfficial": "Bachelor Of Science (Honours) In Biotechnology",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-science-honours-biotechnology",
+        "snippetCount": 2,
+        "classification": "needs-manual-table-review",
+        "reason": "Rendered page exposes official RM amount snippets, but the parser has not reconciled exact international full-duration tuition, applicant scope, basis, and variant."
+      },
+      {
+        "code": "UCSI-BACHELOR-016",
+        "level": "bachelor",
+        "nameEnOfficial": "Bachelor Of Science (Honours) Food Science With Nutrition",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-science-honours-food-science-nutrition",
+        "snippetCount": 2,
+        "classification": "needs-manual-table-review",
+        "reason": "Rendered page exposes official RM amount snippets, but the parser has not reconciled exact international full-duration tuition, applicant scope, basis, and variant."
+      },
+      {
+        "code": "UCSI-BACHELOR-017",
+        "level": "bachelor",
+        "nameEnOfficial": "Bachelor Of Science (Honours) Forensic Science",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-science-honours-forensic-science",
+        "snippetCount": 2,
+        "classification": "needs-manual-table-review",
+        "reason": "Rendered page exposes official RM amount snippets, but the parser has not reconciled exact international full-duration tuition, applicant scope, basis, and variant."
+      },
+      {
+        "code": "UCSI-BACHELOR-018",
+        "level": "bachelor",
+        "nameEnOfficial": "Bachelor Of Science (Honours) Nutrition With Wellness",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-science-honours-nutrition-wellness",
+        "snippetCount": 2,
+        "classification": "needs-manual-table-review",
+        "reason": "Rendered page exposes official RM amount snippets, but the parser has not reconciled exact international full-duration tuition, applicant scope, basis, and variant."
+      },
+      {
+        "code": "UCSI-PHD-019",
+        "level": "phd",
+        "nameEnOfficial": "Doctor Of Philosophy (Science) By Prior Publication",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/doctor-philosophy-science-prior-publication",
+        "snippetCount": 2,
+        "classification": "needs-manual-table-review",
+        "reason": "Rendered page exposes official RM amount snippets, but the parser has not reconciled exact international full-duration tuition, applicant scope, basis, and variant."
+      },
+      {
+        "code": "UCSI-MASTER-020",
+        "level": "master",
+        "nameEnOfficial": "Master In Logistics And Supply Chain Management",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/master-logistics-and-supply-chain-management",
+        "snippetCount": 4,
+        "classification": "needs-manual-table-review",
+        "reason": "Rendered page exposes official RM amount snippets, but the parser has not reconciled exact international full-duration tuition, applicant scope, basis, and variant."
+      },
+      {
+        "code": "UCSI-BACHELOR-021",
+        "level": "bachelor",
+        "nameEnOfficial": "Bachelor Of Arts (Hons) Accounting",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-arts-hons-accounting",
+        "snippetCount": 2,
+        "classification": "needs-manual-table-review",
+        "reason": "Rendered page exposes official RM amount snippets, but the parser has not reconciled exact international full-duration tuition, applicant scope, basis, and variant."
+      },
+      {
+        "code": "UCSI-BACHELOR-022",
+        "level": "bachelor",
+        "nameEnOfficial": "Bachelor Of Arts (Hons) Accounting And Finance",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-arts-hons-accounting-and-finance",
+        "snippetCount": 2,
+        "classification": "needs-manual-table-review",
+        "reason": "Rendered page exposes official RM amount snippets, but the parser has not reconciled exact international full-duration tuition, applicant scope, basis, and variant."
+      },
+      {
+        "code": "UCSI-BACHELOR-023",
+        "level": "bachelor",
+        "nameEnOfficial": "Bachelor Of Arts (Hons) Entrepreneurship",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-arts-hons-entrepreneurship",
+        "snippetCount": 2,
+        "classification": "needs-manual-table-review",
+        "reason": "Rendered page exposes official RM amount snippets, but the parser has not reconciled exact international full-duration tuition, applicant scope, basis, and variant."
+      },
+      {
+        "code": "UCSI-BACHELOR-024",
+        "level": "bachelor",
+        "nameEnOfficial": "Bachelor Of Arts (Hons) In Branding And Advertising",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-arts-hons-branding-and-advertising",
+        "snippetCount": 2,
+        "classification": "needs-manual-table-review",
+        "reason": "Rendered page exposes official RM amount snippets, but the parser has not reconciled exact international full-duration tuition, applicant scope, basis, and variant."
+      },
+      {
+        "code": "UCSI-BACHELOR-025",
+        "level": "bachelor",
+        "nameEnOfficial": "Bachelor Of Arts (Hons) In Business Administration",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-arts-hons-business-administration",
+        "snippetCount": 2,
+        "classification": "needs-manual-table-review",
+        "reason": "Rendered page exposes official RM amount snippets, but the parser has not reconciled exact international full-duration tuition, applicant scope, basis, and variant."
+      },
+      {
+        "code": "UCSI-BACHELOR-026",
+        "level": "bachelor",
+        "nameEnOfficial": "Bachelor Of Arts (Hons) In Marketing",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-arts-hons-marketing",
+        "snippetCount": 2,
+        "classification": "needs-manual-table-review",
+        "reason": "Rendered page exposes official RM amount snippets, but the parser has not reconciled exact international full-duration tuition, applicant scope, basis, and variant."
+      },
+      {
+        "code": "UCSI-BACHELOR-027",
+        "level": "bachelor",
+        "nameEnOfficial": "Bachelor Of Arts (Hons) Logistics Management",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-arts-hons-logistics-management",
+        "snippetCount": 2,
+        "classification": "needs-manual-table-review",
+        "reason": "Rendered page exposes official RM amount snippets, but the parser has not reconciled exact international full-duration tuition, applicant scope, basis, and variant."
+      },
+      {
+        "code": "UCSI-BACHELOR-028",
+        "level": "bachelor",
+        "nameEnOfficial": "Bachelor Of Arts (Honours) Supply Chain Operations Management",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-arts-honours-supply-chain-operations-management",
+        "snippetCount": 2,
+        "classification": "needs-manual-table-review",
+        "reason": "Rendered page exposes official RM amount snippets, but the parser has not reconciled exact international full-duration tuition, applicant scope, basis, and variant."
+      },
+      {
+        "code": "UCSI-BACHELOR-029",
+        "level": "bachelor",
+        "nameEnOfficial": "Bachelor In Human Capital Management (Honours)",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-human-capital-management-honours",
+        "snippetCount": 2,
+        "classification": "needs-manual-table-review",
+        "reason": "Rendered page exposes official RM amount snippets, but the parser has not reconciled exact international full-duration tuition, applicant scope, basis, and variant."
+      },
+      {
+        "code": "UCSI-BACHELOR-030",
+        "level": "bachelor",
+        "nameEnOfficial": "Bachelor Of Business Analytics (Honours)",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-business-analytics-honours",
+        "snippetCount": 2,
+        "classification": "needs-manual-table-review",
+        "reason": "Rendered page exposes official RM amount snippets, but the parser has not reconciled exact international full-duration tuition, applicant scope, basis, and variant."
+      },
+      {
+        "code": "UCSI-BACHELOR-031",
+        "level": "bachelor",
+        "nameEnOfficial": "Bachelor Of Financial Economics (Hons)",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-financial-economics-hons",
+        "snippetCount": 2,
+        "classification": "needs-manual-table-review",
+        "reason": "Rendered page exposes official RM amount snippets, but the parser has not reconciled exact international full-duration tuition, applicant scope, basis, and variant."
+      },
+      {
+        "code": "UCSI-BACHELOR-032",
+        "level": "bachelor",
+        "nameEnOfficial": "Bachelor Of Financial Technology (Honours)",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-financial-technology-honours",
+        "snippetCount": 2,
+        "classification": "needs-manual-table-review",
+        "reason": "Rendered page exposes official RM amount snippets, but the parser has not reconciled exact international full-duration tuition, applicant scope, basis, and variant."
+      },
+      {
+        "code": "UCSI-BACHELOR-033",
+        "level": "bachelor",
+        "nameEnOfficial": "Bachelor Of International And Sustainable Business (Honours)",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-international-and-sustainable-business-honours",
+        "snippetCount": 2,
+        "classification": "needs-manual-table-review",
+        "reason": "Rendered page exposes official RM amount snippets, but the parser has not reconciled exact international full-duration tuition, applicant scope, basis, and variant."
+      },
+      {
+        "code": "UCSI-BACHELOR-034",
+        "level": "bachelor",
+        "nameEnOfficial": "Bachelor Of Science (Honours) Finance And Investment",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-science-honours-finance-and-investment",
+        "snippetCount": 2,
+        "classification": "needs-manual-table-review",
+        "reason": "Rendered page exposes official RM amount snippets, but the parser has not reconciled exact international full-duration tuition, applicant scope, basis, and variant."
+      },
+      {
+        "code": "UCSI-PHD-035",
+        "level": "phd",
+        "nameEnOfficial": "Doctor Of Philosophy In Architecture",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/doctor-philosophy-architecture",
+        "snippetCount": 4,
+        "classification": "needs-manual-table-review",
+        "reason": "Rendered page exposes official RM amount snippets, but the parser has not reconciled exact international full-duration tuition, applicant scope, basis, and variant."
+      },
+      {
+        "code": "UCSI-PHD-036",
+        "level": "phd",
+        "nameEnOfficial": "Doctor Of Philosophy (Engineering)",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/doctor-philosophy-engineering",
+        "snippetCount": 4,
+        "classification": "needs-manual-table-review",
+        "reason": "Rendered page exposes official RM amount snippets, but the parser has not reconciled exact international full-duration tuition, applicant scope, basis, and variant."
+      },
+      {
+        "code": "UCSI-PHD-037",
+        "level": "phd",
+        "nameEnOfficial": "Doctor Of Philosophy (Engineering) By Prior Publication",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/doctor-philosophy-engineering-prior-publication",
+        "snippetCount": 4,
+        "classification": "needs-manual-table-review",
+        "reason": "Rendered page exposes official RM amount snippets, but the parser has not reconciled exact international full-duration tuition, applicant scope, basis, and variant."
+      },
+      {
+        "code": "UCSI-PHD-038",
+        "level": "phd",
+        "nameEnOfficial": "Industrial PhD In Engineering",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/industrial-phd-engineering",
+        "snippetCount": 4,
+        "classification": "needs-manual-table-review",
+        "reason": "Rendered page exposes official RM amount snippets, but the parser has not reconciled exact international full-duration tuition, applicant scope, basis, and variant."
+      },
+      {
+        "code": "UCSI-MASTER-039",
+        "level": "master",
+        "nameEnOfficial": "Master In Engineering (Smart Engineering Management)",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/master-engineering-smart-engineering-management",
+        "snippetCount": 4,
+        "classification": "needs-manual-table-review",
+        "reason": "Rendered page exposes official RM amount snippets, but the parser has not reconciled exact international full-duration tuition, applicant scope, basis, and variant."
+      },
+      {
+        "code": "UCSI-MASTER-040",
+        "level": "master",
+        "nameEnOfficial": "Master Of Architecture",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/master-architecture",
+        "snippetCount": 2,
+        "classification": "needs-manual-table-review",
+        "reason": "Rendered page exposes official RM amount snippets, but the parser has not reconciled exact international full-duration tuition, applicant scope, basis, and variant."
+      },
+      {
+        "code": "UCSI-MASTER-041",
+        "level": "master",
+        "nameEnOfficial": "Master Of Petroleum Engineering",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/master-petroleum-engineering",
+        "snippetCount": 4,
+        "classification": "needs-manual-table-review",
+        "reason": "Rendered page exposes official RM amount snippets, but the parser has not reconciled exact international full-duration tuition, applicant scope, basis, and variant."
+      },
+      {
+        "code": "UCSI-MASTER-042",
+        "level": "master",
+        "nameEnOfficial": "Master Of Philosophy In Built Environment",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/master-philosophy-built-environment",
+        "snippetCount": 4,
+        "classification": "needs-manual-table-review",
+        "reason": "Rendered page exposes official RM amount snippets, but the parser has not reconciled exact international full-duration tuition, applicant scope, basis, and variant."
+      },
+      {
+        "code": "UCSI-MASTER-043",
+        "level": "master",
+        "nameEnOfficial": "Master Of Philosophy In Engineering",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/master-philosophy-engineering",
+        "snippetCount": 4,
+        "classification": "needs-manual-table-review",
+        "reason": "Rendered page exposes official RM amount snippets, but the parser has not reconciled exact international full-duration tuition, applicant scope, basis, and variant."
+      },
+      {
+        "code": "UCSI-BACHELOR-044",
+        "level": "bachelor",
+        "nameEnOfficial": "Bachelor Of Arts (Hons) In Interior Architecture",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-arts-hons-interior-architecture",
+        "snippetCount": 2,
+        "classification": "needs-manual-table-review",
+        "reason": "Rendered page exposes official RM amount snippets, but the parser has not reconciled exact international full-duration tuition, applicant scope, basis, and variant."
+      },
+      {
+        "code": "UCSI-BACHELOR-045",
+        "level": "bachelor",
+        "nameEnOfficial": "Bachelor Of Chemical Engineering With Honours",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-chemical-engineering-honours",
+        "snippetCount": 4,
+        "classification": "needs-manual-table-review",
+        "reason": "Rendered page exposes official RM amount snippets, but the parser has not reconciled exact international full-duration tuition, applicant scope, basis, and variant."
+      },
+      {
+        "code": "UCSI-BACHELOR-046",
+        "level": "bachelor",
+        "nameEnOfficial": "Bachelor Of Civil Engineering With Honours",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-civil-engineering-honours",
+        "snippetCount": 4,
+        "classification": "needs-manual-table-review",
+        "reason": "Rendered page exposes official RM amount snippets, but the parser has not reconciled exact international full-duration tuition, applicant scope, basis, and variant."
+      },
+      {
+        "code": "UCSI-BACHELOR-047",
+        "level": "bachelor",
+        "nameEnOfficial": "Bachelor Of Computer Engineering (Artificial Intelligence) With Honours",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-computer-engineering-artificial-intelligence-honours",
+        "snippetCount": 4,
+        "classification": "needs-manual-table-review",
+        "reason": "Rendered page exposes official RM amount snippets, but the parser has not reconciled exact international full-duration tuition, applicant scope, basis, and variant."
+      },
+      {
+        "code": "UCSI-BACHELOR-048",
+        "level": "bachelor",
+        "nameEnOfficial": "Bachelor Of Digital Mechanical Technology With Honours",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-digital-mechanical-technology-honours",
+        "snippetCount": 4,
+        "classification": "needs-manual-table-review",
+        "reason": "Rendered page exposes official RM amount snippets, but the parser has not reconciled exact international full-duration tuition, applicant scope, basis, and variant."
+      },
+      {
+        "code": "UCSI-BACHELOR-049",
+        "level": "bachelor",
+        "nameEnOfficial": "Bachelor Of Electrical And Electronics Engineering With Honours",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-electrical-and-electronics-engineering-honours",
+        "snippetCount": 4,
+        "classification": "needs-manual-table-review",
+        "reason": "Rendered page exposes official RM amount snippets, but the parser has not reconciled exact international full-duration tuition, applicant scope, basis, and variant."
+      },
+      {
+        "code": "UCSI-BACHELOR-050",
+        "level": "bachelor",
+        "nameEnOfficial": "Bachelor Of Energy Engineering With Honours",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-energy-engineering-honours",
+        "snippetCount": 4,
+        "classification": "needs-manual-table-review",
+        "reason": "Rendered page exposes official RM amount snippets, but the parser has not reconciled exact international full-duration tuition, applicant scope, basis, and variant."
+      },
+      {
+        "code": "UCSI-BACHELOR-051",
+        "level": "bachelor",
+        "nameEnOfficial": "Bachelor Of Mechanical Engineering With Honours",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-mechanical-engineering-honours",
+        "snippetCount": 4,
+        "classification": "needs-manual-table-review",
+        "reason": "Rendered page exposes official RM amount snippets, but the parser has not reconciled exact international full-duration tuition, applicant scope, basis, and variant."
+      },
+      {
+        "code": "UCSI-BACHELOR-052",
+        "level": "bachelor",
+        "nameEnOfficial": "Bachelor Of Mechatronics Engineering With Honours",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-mechatronics-engineering-honours",
+        "snippetCount": 4,
+        "classification": "needs-manual-table-review",
+        "reason": "Rendered page exposes official RM amount snippets, but the parser has not reconciled exact international full-duration tuition, applicant scope, basis, and variant."
+      },
+      {
+        "code": "UCSI-BACHELOR-053",
+        "level": "bachelor",
+        "nameEnOfficial": "Bachelor Of Microelectronic Technology With Honours",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-microelectronic-technology-honours",
+        "snippetCount": 4,
+        "classification": "needs-manual-table-review",
+        "reason": "Rendered page exposes official RM amount snippets, but the parser has not reconciled exact international full-duration tuition, applicant scope, basis, and variant."
+      },
+      {
+        "code": "UCSI-BACHELOR-054",
+        "level": "bachelor",
+        "nameEnOfficial": "Bachelor Of Petroleum Engineering With Honours",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-petroleum-engineering-honours",
+        "snippetCount": 4,
+        "classification": "needs-manual-table-review",
+        "reason": "Rendered page exposes official RM amount snippets, but the parser has not reconciled exact international full-duration tuition, applicant scope, basis, and variant."
+      },
+      {
+        "code": "UCSI-BACHELOR-055",
+        "level": "bachelor",
+        "nameEnOfficial": "Bachelor Of Quantity Surveying (Hons)",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-quantity-surveying-hons",
+        "snippetCount": 2,
+        "classification": "needs-manual-table-review",
+        "reason": "Rendered page exposes official RM amount snippets, but the parser has not reconciled exact international full-duration tuition, applicant scope, basis, and variant."
+      },
+      {
+        "code": "UCSI-BACHELOR-056",
+        "level": "bachelor",
+        "nameEnOfficial": "Bachelor Of Science (Hons) In Architecture",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-science-hons-architecture",
+        "snippetCount": 2,
+        "classification": "needs-manual-table-review",
+        "reason": "Rendered page exposes official RM amount snippets, but the parser has not reconciled exact international full-duration tuition, applicant scope, basis, and variant."
+      },
+      {
+        "code": "UCSI-MASTER-057",
+        "level": "master",
+        "nameEnOfficial": "Master Of Sustainable Built Environment",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/master-sustainable-built-environment",
+        "snippetCount": 2,
+        "classification": "needs-manual-table-review",
+        "reason": "Rendered page exposes official RM amount snippets, but the parser has not reconciled exact international full-duration tuition, applicant scope, basis, and variant."
+      },
+      {
+        "code": "UCSI-MASTER-058",
+        "level": "master",
+        "nameEnOfficial": "Master In Engineering (Applied Artificial Intelligence)",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/master-engineering-applied-artificial-intelligence",
+        "snippetCount": 4,
+        "classification": "needs-manual-table-review",
+        "reason": "Rendered page exposes official RM amount snippets, but the parser has not reconciled exact international full-duration tuition, applicant scope, basis, and variant."
+      },
+      {
+        "code": "UCSI-PHD-059",
+        "level": "phd",
+        "nameEnOfficial": "Doctor Of Philosophy (Hospitality And Tourism)",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/doctor-philosophy-hospitality-and-tourism",
+        "snippetCount": 4,
+        "classification": "needs-manual-table-review",
+        "reason": "Rendered page exposes official RM amount snippets, but the parser has not reconciled exact international full-duration tuition, applicant scope, basis, and variant."
+      },
+      {
+        "code": "UCSI-MASTER-060",
+        "level": "master",
+        "nameEnOfficial": "Master In International Hospitality Management",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/master-international-hospitality-management",
+        "snippetCount": 8,
+        "classification": "needs-manual-table-review",
+        "reason": "Rendered page exposes official RM amount snippets, but the parser has not reconciled exact international full-duration tuition, applicant scope, basis, and variant."
+      },
+      {
+        "code": "UCSI-MASTER-061",
+        "level": "master",
+        "nameEnOfficial": "Master Of Science In Gastronomy",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/master-science-gastronomy",
+        "snippetCount": 2,
+        "classification": "needs-manual-table-review",
+        "reason": "Rendered page exposes official RM amount snippets, but the parser has not reconciled exact international full-duration tuition, applicant scope, basis, and variant."
+      },
+      {
+        "code": "UCSI-BACHELOR-062",
+        "level": "bachelor",
+        "nameEnOfficial": "Bachelor Of Arts (Honours) In Culinary Management",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-arts-honours-culinary-management",
+        "snippetCount": 2,
+        "classification": "needs-manual-table-review",
+        "reason": "Rendered page exposes official RM amount snippets, but the parser has not reconciled exact international full-duration tuition, applicant scope, basis, and variant."
+      },
+      {
+        "code": "UCSI-BACHELOR-063",
+        "level": "bachelor",
+        "nameEnOfficial": "Bachelor Of Arts (Honours) In Global Sustainable Tourism",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-arts-honours-global-sustainable-tourism",
+        "snippetCount": 2,
+        "classification": "needs-manual-table-review",
+        "reason": "Rendered page exposes official RM amount snippets, but the parser has not reconciled exact international full-duration tuition, applicant scope, basis, and variant."
+      },
+      {
+        "code": "UCSI-BACHELOR-064",
+        "level": "bachelor",
+        "nameEnOfficial": "Bachelor Of Hospitality Administration",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-hospitality-administration",
+        "snippetCount": 2,
+        "classification": "needs-manual-table-review",
+        "reason": "Rendered page exposes official RM amount snippets, but the parser has not reconciled exact international full-duration tuition, applicant scope, basis, and variant."
+      },
+      {
+        "code": "UCSI-MASTER-065",
+        "level": "master",
+        "nameEnOfficial": "MSc (Healthy Aging, Medical Aesthetic And Regenerative Medicine)",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/msc-healthy-aging-medical-aesthetic-and-regenerative-medicine",
+        "snippetCount": 2,
+        "classification": "needs-manual-table-review",
+        "reason": "Rendered page exposes official RM amount snippets, but the parser has not reconciled exact international full-duration tuition, applicant scope, basis, and variant."
+      },
+      {
+        "code": "UCSI-BACHELOR-066",
+        "level": "bachelor",
+        "nameEnOfficial": "Bachelor Of Optometry (Hons)",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-optometry-hons",
+        "snippetCount": 2,
+        "classification": "needs-manual-table-review",
+        "reason": "Rendered page exposes official RM amount snippets, but the parser has not reconciled exact international full-duration tuition, applicant scope, basis, and variant."
+      },
+      {
+        "code": "UCSI-PHD-067",
+        "level": "phd",
+        "nameEnOfficial": "Doctor Of Philosophy (Pharmaceutical Sciences)",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/doctor-philosophy-pharmaceutical-sciences",
+        "snippetCount": 2,
+        "classification": "needs-manual-table-review",
+        "reason": "Rendered page exposes official RM amount snippets, but the parser has not reconciled exact international full-duration tuition, applicant scope, basis, and variant."
+      },
+      {
+        "code": "UCSI-MASTER-068",
+        "level": "master",
+        "nameEnOfficial": "Master Of Clinical Pharmacy Practice",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/master-clinical-pharmacy-practice",
+        "snippetCount": 2,
+        "classification": "needs-manual-table-review",
+        "reason": "Rendered page exposes official RM amount snippets, but the parser has not reconciled exact international full-duration tuition, applicant scope, basis, and variant."
+      },
+      {
+        "code": "UCSI-MASTER-069",
+        "level": "master",
+        "nameEnOfficial": "Master Of Science (Pharmaceutical Sciences)",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/master-science-pharmaceutical-sciences",
+        "snippetCount": 2,
+        "classification": "needs-manual-table-review",
+        "reason": "Rendered page exposes official RM amount snippets, but the parser has not reconciled exact international full-duration tuition, applicant scope, basis, and variant."
+      },
+      {
+        "code": "UCSI-MASTER-070",
+        "level": "master",
+        "nameEnOfficial": "MSc Pharmaceutical Chemistry",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/msc-pharmaceutical-chemistry",
+        "snippetCount": 2,
+        "classification": "needs-manual-table-review",
+        "reason": "Rendered page exposes official RM amount snippets, but the parser has not reconciled exact international full-duration tuition, applicant scope, basis, and variant."
+      },
+      {
+        "code": "UCSI-MASTER-071",
+        "level": "master",
+        "nameEnOfficial": "MSc Pharmaceutical Technology",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/msc-pharmaceutical-technology",
+        "snippetCount": 2,
+        "classification": "needs-manual-table-review",
+        "reason": "Rendered page exposes official RM amount snippets, but the parser has not reconciled exact international full-duration tuition, applicant scope, basis, and variant."
+      },
+      {
+        "code": "UCSI-BACHELOR-072",
+        "level": "bachelor",
+        "nameEnOfficial": "Bachelor In Formulation Science (Honours)",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-formulation-science-honours",
+        "snippetCount": 4,
+        "classification": "needs-manual-table-review",
+        "reason": "Rendered page exposes official RM amount snippets, but the parser has not reconciled exact international full-duration tuition, applicant scope, basis, and variant."
+      },
+      {
+        "code": "UCSI-BACHELOR-073",
+        "level": "bachelor",
+        "nameEnOfficial": "Bachelor Of Pharmacy (Honours)",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-pharmacy-honours",
+        "snippetCount": 2,
+        "classification": "needs-manual-table-review",
+        "reason": "Rendered page exposes official RM amount snippets, but the parser has not reconciled exact international full-duration tuition, applicant scope, basis, and variant."
+      },
+      {
+        "code": "UCSI-PHD-074",
+        "level": "phd",
+        "nameEnOfficial": "Doctor Of Philosophy (Education)",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/doctor-philosophy-education",
+        "snippetCount": 7,
+        "classification": "fee-like-ambiguous",
+        "reason": "At least one RM snippet is embedded in non-tuition prose or a mixed fee note, so it cannot be treated as the primary tuition value."
+      },
+      {
+        "code": "UCSI-PHD-075",
+        "level": "phd",
+        "nameEnOfficial": "Doctor Of Philosophy In Psychology",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/doctor-philosophy-psychology",
+        "snippetCount": 2,
+        "classification": "needs-manual-table-review",
+        "reason": "Rendered page exposes official RM amount snippets, but the parser has not reconciled exact international full-duration tuition, applicant scope, basis, and variant."
+      },
+      {
+        "code": "UCSI-MASTER-076",
+        "level": "master",
+        "nameEnOfficial": "Master Of Child Psychology",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/master-child-psychology",
+        "snippetCount": 6,
+        "classification": "fee-like-ambiguous",
+        "reason": "At least one RM snippet is embedded in non-tuition prose or a mixed fee note, so it cannot be treated as the primary tuition value."
+      },
+      {
+        "code": "UCSI-MASTER-077",
+        "level": "master",
+        "nameEnOfficial": "Master Of Clinical Psychology",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/master-clinical-psychology",
+        "snippetCount": 3,
+        "classification": "fee-like-ambiguous",
+        "reason": "At least one RM snippet is embedded in non-tuition prose or a mixed fee note, so it cannot be treated as the primary tuition value."
+      },
+      {
+        "code": "UCSI-MASTER-078",
+        "level": "master",
+        "nameEnOfficial": "Master Of Education",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/master-education",
+        "snippetCount": 4,
+        "classification": "needs-manual-table-review",
+        "reason": "Rendered page exposes official RM amount snippets, but the parser has not reconciled exact international full-duration tuition, applicant scope, basis, and variant."
+      },
+      {
+        "code": "UCSI-MASTER-079",
+        "level": "master",
+        "nameEnOfficial": "Master In Strategic Communication",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/master-strategic-communication",
+        "snippetCount": 4,
+        "classification": "needs-manual-table-review",
+        "reason": "Rendered page exposes official RM amount snippets, but the parser has not reconciled exact international full-duration tuition, applicant scope, basis, and variant."
+      },
+      {
+        "code": "UCSI-BACHELOR-080",
+        "level": "bachelor",
+        "nameEnOfficial": "Bachelor Of Early Childhood Education (Honours)",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-early-childhood-education-honours",
+        "snippetCount": 2,
+        "classification": "needs-manual-table-review",
+        "reason": "Rendered page exposes official RM amount snippets, but the parser has not reconciled exact international full-duration tuition, applicant scope, basis, and variant."
+      },
+      {
+        "code": "UCSI-BACHELOR-081",
+        "level": "bachelor",
+        "nameEnOfficial": "Bachelor Of Digital Media Production And Broadcasting (Honours)",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-digital-media-production-and-broadcasting-honours",
+        "snippetCount": 2,
+        "classification": "needs-manual-table-review",
+        "reason": "Rendered page exposes official RM amount snippets, but the parser has not reconciled exact international full-duration tuition, applicant scope, basis, and variant."
+      },
+      {
+        "code": "UCSI-PHD-082",
+        "level": "phd",
+        "nameEnOfficial": "Doctor Of Philosophy In Art, Design And Creative Media",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/doctor-philosophy-art-design-and-creative-media",
+        "snippetCount": 2,
+        "classification": "needs-manual-table-review",
+        "reason": "Rendered page exposes official RM amount snippets, but the parser has not reconciled exact international full-duration tuition, applicant scope, basis, and variant."
+      },
+      {
+        "code": "UCSI-MASTER-083",
+        "level": "master",
+        "nameEnOfficial": "Master Of Arts And Design",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/master-arts-and-design",
+        "snippetCount": 4,
+        "classification": "needs-manual-table-review",
+        "reason": "Rendered page exposes official RM amount snippets, but the parser has not reconciled exact international full-duration tuition, applicant scope, basis, and variant."
+      },
+      {
+        "code": "UCSI-MASTER-084",
+        "level": "master",
+        "nameEnOfficial": "Master Of Art, Design And Creative Media",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/master-art-design-and-creative-media",
+        "snippetCount": 2,
+        "classification": "needs-manual-table-review",
+        "reason": "Rendered page exposes official RM amount snippets, but the parser has not reconciled exact international full-duration tuition, applicant scope, basis, and variant."
+      },
+      {
+        "code": "UCSI-PHD-085",
+        "level": "phd",
+        "nameEnOfficial": "Doctor Of Philosophy In Mathematical Sciences",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/doctor-philosophy-mathematical-sciences",
+        "snippetCount": 2,
+        "classification": "needs-manual-table-review",
+        "reason": "Rendered page exposes official RM amount snippets, but the parser has not reconciled exact international full-duration tuition, applicant scope, basis, and variant."
+      },
+      {
+        "code": "UCSI-MASTER-086",
+        "level": "master",
+        "nameEnOfficial": "Master Of Science (Actuarial Management) - (Mixed Mode Or Coursework)",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/master-science-actuarial-management-mixed-mode-or-coursework",
+        "snippetCount": 8,
+        "classification": "needs-manual-table-review",
+        "reason": "Rendered page exposes official RM amount snippets, but the parser has not reconciled exact international full-duration tuition, applicant scope, basis, and variant."
+      },
+      {
+        "code": "UCSI-MASTER-087",
+        "level": "master",
+        "nameEnOfficial": "Master Of Science In Mathematical Sciences",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/master-science-mathematical-sciences",
+        "snippetCount": 2,
+        "classification": "needs-manual-table-review",
+        "reason": "Rendered page exposes official RM amount snippets, but the parser has not reconciled exact international full-duration tuition, applicant scope, basis, and variant."
+      },
+      {
+        "code": "UCSI-BACHELOR-088",
+        "level": "bachelor",
+        "nameEnOfficial": "Bachelor Of Science (Honours) Actuarial Science",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-science-honours-actuarial-science",
+        "snippetCount": 2,
+        "classification": "needs-manual-table-review",
+        "reason": "Rendered page exposes official RM amount snippets, but the parser has not reconciled exact international full-duration tuition, applicant scope, basis, and variant."
+      },
+      {
+        "code": "UCSI-BACHELOR-089",
+        "level": "bachelor",
+        "nameEnOfficial": "Bachelor Of Science (Honours) Actuarial Science And Finance",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-science-honours-actuarial-science-and-finance",
+        "snippetCount": 2,
+        "classification": "needs-manual-table-review",
+        "reason": "Rendered page exposes official RM amount snippets, but the parser has not reconciled exact international full-duration tuition, applicant scope, basis, and variant."
+      },
+      {
+        "code": "UCSI-BACHELOR-090",
+        "level": "bachelor",
+        "nameEnOfficial": "Bachelor Of Science (Honours) Actuarial Science With Data Analytics",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-science-honours-actuarial-science-data-analytics",
+        "snippetCount": 2,
+        "classification": "needs-manual-table-review",
+        "reason": "Rendered page exposes official RM amount snippets, but the parser has not reconciled exact international full-duration tuition, applicant scope, basis, and variant."
+      },
+      {
+        "code": "UCSI-PHD-091",
+        "level": "phd",
+        "nameEnOfficial": "Doctor Of Philosophy In Computer Science",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/doctor-philosophy-computer-science",
+        "snippetCount": 4,
+        "classification": "needs-manual-table-review",
+        "reason": "Rendered page exposes official RM amount snippets, but the parser has not reconciled exact international full-duration tuition, applicant scope, basis, and variant."
+      },
+      {
+        "code": "UCSI-MASTER-092",
+        "level": "master",
+        "nameEnOfficial": "Master Of Science In Computer Science",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/master-science-computer-science",
+        "snippetCount": 4,
+        "classification": "needs-manual-table-review",
+        "reason": "Rendered page exposes official RM amount snippets, but the parser has not reconciled exact international full-duration tuition, applicant scope, basis, and variant."
+      },
+      {
+        "code": "UCSI-MASTER-093",
+        "level": "master",
+        "nameEnOfficial": "Master Of Science In Digital Technology And Analytics",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/master-science-digital-technology-and-analytics",
+        "snippetCount": 4,
+        "classification": "needs-manual-table-review",
+        "reason": "Rendered page exposes official RM amount snippets, but the parser has not reconciled exact international full-duration tuition, applicant scope, basis, and variant."
+      },
+      {
+        "code": "UCSI-MASTER-094",
+        "level": "master",
+        "nameEnOfficial": "MSc In Technopreneurship",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/msc-technopreneurship",
+        "snippetCount": 4,
+        "classification": "needs-manual-table-review",
+        "reason": "Rendered page exposes official RM amount snippets, but the parser has not reconciled exact international full-duration tuition, applicant scope, basis, and variant."
+      },
+      {
+        "code": "UCSI-BACHELOR-095",
+        "level": "bachelor",
+        "nameEnOfficial": "Bachelor Of Computer Science (Honours)",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-computer-science-honours",
+        "snippetCount": 8,
+        "classification": "needs-manual-table-review",
+        "reason": "Rendered page exposes official RM amount snippets, but the parser has not reconciled exact international full-duration tuition, applicant scope, basis, and variant."
+      },
+      {
+        "code": "UCSI-BACHELOR-096",
+        "level": "bachelor",
+        "nameEnOfficial": "Bachelor Of Computer Science In Artificial Intelligence With Honours",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-computer-science-artificial-intelligence-honours",
+        "snippetCount": 4,
+        "classification": "needs-manual-table-review",
+        "reason": "Rendered page exposes official RM amount snippets, but the parser has not reconciled exact international full-duration tuition, applicant scope, basis, and variant."
+      },
+      {
+        "code": "UCSI-BACHELOR-097",
+        "level": "bachelor",
+        "nameEnOfficial": "Bachelor Of Computer Science In Cyber Security With Honours",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-computer-science-cyber-security-honours",
+        "snippetCount": 4,
+        "classification": "needs-manual-table-review",
+        "reason": "Rendered page exposes official RM amount snippets, but the parser has not reconciled exact international full-duration tuition, applicant scope, basis, and variant."
+      },
+      {
+        "code": "UCSI-BACHELOR-098",
+        "level": "bachelor",
+        "nameEnOfficial": "Bachelor Of Computer Science (Hons) Mobile Computing And Networking",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-computer-science-hons-mobile-computing-and-networking",
+        "snippetCount": 4,
+        "classification": "needs-manual-table-review",
+        "reason": "Rendered page exposes official RM amount snippets, but the parser has not reconciled exact international full-duration tuition, applicant scope, basis, and variant."
+      },
+      {
+        "code": "UCSI-BACHELOR-099",
+        "level": "bachelor",
+        "nameEnOfficial": "Bachelor Of Computer Science In Data Science With Honours",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-computer-science-data-science-honours",
+        "snippetCount": 4,
+        "classification": "needs-manual-table-review",
+        "reason": "Rendered page exposes official RM amount snippets, but the parser has not reconciled exact international full-duration tuition, applicant scope, basis, and variant."
+      },
+      {
+        "code": "UCSI-BACHELOR-100",
+        "level": "bachelor",
+        "nameEnOfficial": "Bachelor Of Science In Business Information Systems (Honours)",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-science-business-information-systems-honours",
+        "snippetCount": 4,
+        "classification": "needs-manual-table-review",
+        "reason": "Rendered page exposes official RM amount snippets, but the parser has not reconciled exact international full-duration tuition, applicant scope, basis, and variant."
+      },
+      {
+        "code": "UCSI-PHD-101",
+        "level": "phd",
+        "nameEnOfficial": "Doctor Of Philosophy In Music Performance",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/doctor-philosophy-music-performance",
+        "snippetCount": 2,
+        "classification": "needs-manual-table-review",
+        "reason": "Rendered page exposes official RM amount snippets, but the parser has not reconciled exact international full-duration tuition, applicant scope, basis, and variant."
+      },
+      {
+        "code": "UCSI-PHD-102",
+        "level": "phd",
+        "nameEnOfficial": "Doctor Of Philosophy In Music",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/doctor-philosophy-music",
+        "snippetCount": 2,
+        "classification": "needs-manual-table-review",
+        "reason": "Rendered page exposes official RM amount snippets, but the parser has not reconciled exact international full-duration tuition, applicant scope, basis, and variant."
+      },
+      {
+        "code": "UCSI-MASTER-103",
+        "level": "master",
+        "nameEnOfficial": "Master Of Music (Performance Studies)",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/mmus-performance-studies",
+        "snippetCount": 2,
+        "classification": "needs-manual-table-review",
+        "reason": "Rendered page exposes official RM amount snippets, but the parser has not reconciled exact international full-duration tuition, applicant scope, basis, and variant."
+      },
+      {
+        "code": "UCSI-BACHELOR-104",
+        "level": "bachelor",
+        "nameEnOfficial": "Bachelor Of Classical Music (Hons.)",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-classical-music-hons",
+        "snippetCount": 2,
+        "classification": "needs-manual-table-review",
+        "reason": "Rendered page exposes official RM amount snippets, but the parser has not reconciled exact international full-duration tuition, applicant scope, basis, and variant."
+      },
+      {
+        "code": "UCSI-BACHELOR-105",
+        "level": "bachelor",
+        "nameEnOfficial": "Bachelor Of Contemporary Music (Hons.)",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-contemporary-music-hons",
+        "snippetCount": 2,
+        "classification": "needs-manual-table-review",
+        "reason": "Rendered page exposes official RM amount snippets, but the parser has not reconciled exact international full-duration tuition, applicant scope, basis, and variant."
+      },
+      {
+        "code": "UCSI-MASTER-106",
+        "level": "master",
+        "nameEnOfficial": "Master Of Science Policy And Communication",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/master-science-policy-and-communication",
+        "snippetCount": 2,
+        "classification": "needs-manual-table-review",
+        "reason": "Rendered page exposes official RM amount snippets, but the parser has not reconciled exact international full-duration tuition, applicant scope, basis, and variant."
+      },
+      {
+        "code": "UCSI-MASTER-107",
+        "level": "master",
+        "nameEnOfficial": "Master In Science Diplomacy",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/master-science-diplomacy",
+        "snippetCount": 2,
+        "classification": "needs-manual-table-review",
+        "reason": "Rendered page exposes official RM amount snippets, but the parser has not reconciled exact international full-duration tuition, applicant scope, basis, and variant."
+      },
+      {
+        "code": "UCSI-MASTER-108",
+        "level": "master",
+        "nameEnOfficial": "Master In Environmental, Social And Governance Leadership",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/master-environmental-social-and-governance-leadership",
+        "snippetCount": 2,
+        "classification": "needs-manual-table-review",
+        "reason": "Rendered page exposes official RM amount snippets, but the parser has not reconciled exact international full-duration tuition, applicant scope, basis, and variant."
+      },
+      {
+        "code": "UCSI-MASTER-109",
+        "level": "master",
+        "nameEnOfficial": "Master Of Business Administration (Blue Ocean Strategy)",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/master-business-administration-blue-ocean-strategy",
+        "snippetCount": 4,
+        "classification": "needs-manual-table-review",
+        "reason": "Rendered page exposes official RM amount snippets, but the parser has not reconciled exact international full-duration tuition, applicant scope, basis, and variant."
+      },
+      {
+        "code": "UCSI-BACHELOR-110",
+        "level": "bachelor",
+        "nameEnOfficial": "Bachelor In Business Management (Honours)",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-business-management-honours",
+        "snippetCount": 2,
+        "classification": "needs-manual-table-review",
+        "reason": "Rendered page exposes official RM amount snippets, but the parser has not reconciled exact international full-duration tuition, applicant scope, basis, and variant."
+      },
+      {
+        "code": "UCSI-BACHELOR-111",
+        "level": "bachelor",
+        "nameEnOfficial": "Bachelor In International Business (Honours)",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-international-business-honours",
+        "snippetCount": 2,
+        "classification": "needs-manual-table-review",
+        "reason": "Rendered page exposes official RM amount snippets, but the parser has not reconciled exact international full-duration tuition, applicant scope, basis, and variant."
+      },
+      {
+        "code": "UCSI-BACHELOR-112",
+        "level": "bachelor",
+        "nameEnOfficial": "Bachelor Of Commerce (Hons) In Accounting And Finance",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-commerce-hons-accounting-and-finance-kuching-campus",
+        "snippetCount": 2,
+        "classification": "needs-manual-table-review",
+        "reason": "Rendered page exposes official RM amount snippets, but the parser has not reconciled exact international full-duration tuition, applicant scope, basis, and variant."
+      },
+      {
+        "code": "UCSI-BACHELOR-113",
+        "level": "bachelor",
+        "nameEnOfficial": "Bachelor Of Commerce (Hons) In Marketing",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-commerce-hons-marketing",
+        "snippetCount": 2,
+        "classification": "needs-manual-table-review",
+        "reason": "Rendered page exposes official RM amount snippets, but the parser has not reconciled exact international full-duration tuition, applicant scope, basis, and variant."
+      },
+      {
+        "code": "UCSI-BACHELOR-114",
+        "level": "bachelor",
+        "nameEnOfficial": "Bachelor Of Arts (Honours) In Culinary Management",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-arts-honours-culinary-management-kuching-campus",
+        "snippetCount": 2,
+        "classification": "needs-manual-table-review",
+        "reason": "Rendered page exposes official RM amount snippets, but the parser has not reconciled exact international full-duration tuition, applicant scope, basis, and variant."
+      },
+      {
+        "code": "UCSI-PHD-115",
+        "level": "phd",
+        "nameEnOfficial": "Doctor Of Philosophy (Medical Sciences)",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/doctor-philosophy-medical-sciences",
+        "snippetCount": 3,
+        "classification": "fee-like-ambiguous",
+        "reason": "At least one RM snippet is embedded in non-tuition prose or a mixed fee note, so it cannot be treated as the primary tuition value."
+      },
+      {
+        "code": "UCSI-BACHELOR-116",
+        "level": "bachelor",
+        "nameEnOfficial": "Doctor Of Medicine (MD)",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/doctor-medicine-md",
+        "snippetCount": 2,
+        "classification": "needs-manual-table-review",
+        "reason": "Rendered page exposes official RM amount snippets, but the parser has not reconciled exact international full-duration tuition, applicant scope, basis, and variant."
+      },
+      {
+        "code": "UCSI-BACHELOR-117",
+        "level": "bachelor",
+        "nameEnOfficial": "Bachelor Of Nursing (Hons)",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-nursing-hons",
+        "snippetCount": 2,
+        "classification": "needs-manual-table-review",
+        "reason": "Rendered page exposes official RM amount snippets, but the parser has not reconciled exact international full-duration tuition, applicant scope, basis, and variant."
+      },
+      {
+        "code": "UCSI-BACHELOR-118",
+        "level": "bachelor",
+        "nameEnOfficial": "Bachelor Of Arts (Honours) In Hospitality Management",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-arts-honours-hospitality-management",
+        "snippetCount": 2,
+        "classification": "needs-manual-table-review",
+        "reason": "Rendered page exposes official RM amount snippets, but the parser has not reconciled exact international full-duration tuition, applicant scope, basis, and variant."
+      }
+    ]
+  },
+  "internationalEligibilityClassification": {
+    "counts": {
+      "general-route-plus-programme-requirement-evidence": 115,
+      "general-route-only": 3
+    },
+    "records": [
+      {
+        "code": "UCSI-PHD-001",
+        "level": "phd",
+        "nameEnOfficial": "Doctor Of Philosophy (Business And Management)",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/doctor-philosophy-business-and-management",
+        "classification": "general-route-plus-programme-requirement-evidence",
+        "reason": "Programme detail page includes international/language-route evidence, but the official application route still has to confirm programme-level availability."
+      },
+      {
+        "code": "UCSI-PHD-002",
+        "level": "phd",
+        "nameEnOfficial": "DBA (Doctor Of Business Administration)",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/dba-doctor-business-administration",
+        "classification": "general-route-plus-programme-requirement-evidence",
+        "reason": "Programme detail page includes international/language-route evidence, but the official application route still has to confirm programme-level availability."
+      },
+      {
+        "code": "UCSI-MASTER-003",
+        "level": "master",
+        "nameEnOfficial": "MBA",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/mba",
+        "classification": "general-route-plus-programme-requirement-evidence",
+        "reason": "Programme detail page includes international/language-route evidence, but the official application route still has to confirm programme-level availability."
+      },
+      {
+        "code": "UCSI-MASTER-004",
+        "level": "master",
+        "nameEnOfficial": "MBA (ODL Mode)",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/mba-odl-mode",
+        "classification": "general-route-plus-programme-requirement-evidence",
+        "reason": "Programme detail page includes international/language-route evidence, but the official application route still has to confirm programme-level availability."
+      },
+      {
+        "code": "UCSI-MASTER-005",
+        "level": "master",
+        "nameEnOfficial": "Master Of Philosophy (Business And Management)",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/master-philosophy-business-and-management",
+        "classification": "general-route-plus-programme-requirement-evidence",
+        "reason": "Programme detail page includes international/language-route evidence, but the official application route still has to confirm programme-level availability."
+      },
+      {
+        "code": "UCSI-MASTER-006",
+        "level": "master",
+        "nameEnOfficial": "MBA (Healthcare And Hospital Management)",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/mba-healthcare-and-hospital-management",
+        "classification": "general-route-plus-programme-requirement-evidence",
+        "reason": "Programme detail page includes international/language-route evidence, but the official application route still has to confirm programme-level availability."
+      },
+      {
+        "code": "UCSI-PHD-007",
+        "level": "phd",
+        "nameEnOfficial": "Doctor Of Philosophy (Science)",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programme/doctorate-philosophy-science",
+        "classification": "general-route-plus-programme-requirement-evidence",
+        "reason": "Programme detail page includes international/language-route evidence, but the official application route still has to confirm programme-level availability."
+      },
+      {
+        "code": "UCSI-MASTER-008",
+        "level": "master",
+        "nameEnOfficial": "Master Of Science In Applied Sciences",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/master-science-applied-sciences",
+        "classification": "general-route-plus-programme-requirement-evidence",
+        "reason": "Programme detail page includes international/language-route evidence, but the official application route still has to confirm programme-level availability."
+      },
+      {
+        "code": "UCSI-MASTER-009",
+        "level": "master",
+        "nameEnOfficial": "Master Of Science Biotechnology",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/master-science-biotechnology",
+        "classification": "general-route-plus-programme-requirement-evidence",
+        "reason": "Programme detail page includes international/language-route evidence, but the official application route still has to confirm programme-level availability."
+      },
+      {
+        "code": "UCSI-MASTER-010",
+        "level": "master",
+        "nameEnOfficial": "Master Of Science In Biotechnology With Business Management",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/master-science-biotechnology-business-management",
+        "classification": "general-route-plus-programme-requirement-evidence",
+        "reason": "Programme detail page includes international/language-route evidence, but the official application route still has to confirm programme-level availability."
+      },
+      {
+        "code": "UCSI-MASTER-011",
+        "level": "master",
+        "nameEnOfficial": "Master Of Science Food Science With Business Management",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/master-science-food-science-business-management",
+        "classification": "general-route-plus-programme-requirement-evidence",
+        "reason": "Programme detail page includes international/language-route evidence, but the official application route still has to confirm programme-level availability."
+      },
+      {
+        "code": "UCSI-MASTER-012",
+        "level": "master",
+        "nameEnOfficial": "Master Of Science In Nutrition With Management",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/msc-nutrition-management",
+        "classification": "general-route-plus-programme-requirement-evidence",
+        "reason": "Programme detail page includes international/language-route evidence, but the official application route still has to confirm programme-level availability."
+      },
+      {
+        "code": "UCSI-BACHELOR-013",
+        "level": "bachelor",
+        "nameEnOfficial": "Bachelor Of Science (Honours) Applied Microbiology",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-science-honours-applied-microbiology",
+        "classification": "general-route-plus-programme-requirement-evidence",
+        "reason": "Programme detail page includes international/language-route evidence, but the official application route still has to confirm programme-level availability."
+      },
+      {
+        "code": "UCSI-BACHELOR-014",
+        "level": "bachelor",
+        "nameEnOfficial": "Bachelor Of Science (Honours) Aquatic Science",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-science-honours-aquatic-science",
+        "classification": "general-route-plus-programme-requirement-evidence",
+        "reason": "Programme detail page includes international/language-route evidence, but the official application route still has to confirm programme-level availability."
+      },
+      {
+        "code": "UCSI-BACHELOR-015",
+        "level": "bachelor",
+        "nameEnOfficial": "Bachelor Of Science (Honours) In Biotechnology",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-science-honours-biotechnology",
+        "classification": "general-route-plus-programme-requirement-evidence",
+        "reason": "Programme detail page includes international/language-route evidence, but the official application route still has to confirm programme-level availability."
+      },
+      {
+        "code": "UCSI-BACHELOR-016",
+        "level": "bachelor",
+        "nameEnOfficial": "Bachelor Of Science (Honours) Food Science With Nutrition",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-science-honours-food-science-nutrition",
+        "classification": "general-route-plus-programme-requirement-evidence",
+        "reason": "Programme detail page includes international/language-route evidence, but the official application route still has to confirm programme-level availability."
+      },
+      {
+        "code": "UCSI-BACHELOR-017",
+        "level": "bachelor",
+        "nameEnOfficial": "Bachelor Of Science (Honours) Forensic Science",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-science-honours-forensic-science",
+        "classification": "general-route-plus-programme-requirement-evidence",
+        "reason": "Programme detail page includes international/language-route evidence, but the official application route still has to confirm programme-level availability."
+      },
+      {
+        "code": "UCSI-BACHELOR-018",
+        "level": "bachelor",
+        "nameEnOfficial": "Bachelor Of Science (Honours) Nutrition With Wellness",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-science-honours-nutrition-wellness",
+        "classification": "general-route-plus-programme-requirement-evidence",
+        "reason": "Programme detail page includes international/language-route evidence, but the official application route still has to confirm programme-level availability."
+      },
+      {
+        "code": "UCSI-PHD-019",
+        "level": "phd",
+        "nameEnOfficial": "Doctor Of Philosophy (Science) By Prior Publication",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/doctor-philosophy-science-prior-publication",
+        "classification": "general-route-only",
+        "reason": "Only institution-level international admission route is available in this batch; programme-level international availability remains unclosed."
+      },
+      {
+        "code": "UCSI-MASTER-020",
+        "level": "master",
+        "nameEnOfficial": "Master In Logistics And Supply Chain Management",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/master-logistics-and-supply-chain-management",
+        "classification": "general-route-plus-programme-requirement-evidence",
+        "reason": "Programme detail page includes international/language-route evidence, but the official application route still has to confirm programme-level availability."
+      },
+      {
+        "code": "UCSI-BACHELOR-021",
+        "level": "bachelor",
+        "nameEnOfficial": "Bachelor Of Arts (Hons) Accounting",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-arts-hons-accounting",
+        "classification": "general-route-plus-programme-requirement-evidence",
+        "reason": "Programme detail page includes international/language-route evidence, but the official application route still has to confirm programme-level availability."
+      },
+      {
+        "code": "UCSI-BACHELOR-022",
+        "level": "bachelor",
+        "nameEnOfficial": "Bachelor Of Arts (Hons) Accounting And Finance",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-arts-hons-accounting-and-finance",
+        "classification": "general-route-plus-programme-requirement-evidence",
+        "reason": "Programme detail page includes international/language-route evidence, but the official application route still has to confirm programme-level availability."
+      },
+      {
+        "code": "UCSI-BACHELOR-023",
+        "level": "bachelor",
+        "nameEnOfficial": "Bachelor Of Arts (Hons) Entrepreneurship",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-arts-hons-entrepreneurship",
+        "classification": "general-route-plus-programme-requirement-evidence",
+        "reason": "Programme detail page includes international/language-route evidence, but the official application route still has to confirm programme-level availability."
+      },
+      {
+        "code": "UCSI-BACHELOR-024",
+        "level": "bachelor",
+        "nameEnOfficial": "Bachelor Of Arts (Hons) In Branding And Advertising",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-arts-hons-branding-and-advertising",
+        "classification": "general-route-plus-programme-requirement-evidence",
+        "reason": "Programme detail page includes international/language-route evidence, but the official application route still has to confirm programme-level availability."
+      },
+      {
+        "code": "UCSI-BACHELOR-025",
+        "level": "bachelor",
+        "nameEnOfficial": "Bachelor Of Arts (Hons) In Business Administration",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-arts-hons-business-administration",
+        "classification": "general-route-plus-programme-requirement-evidence",
+        "reason": "Programme detail page includes international/language-route evidence, but the official application route still has to confirm programme-level availability."
+      },
+      {
+        "code": "UCSI-BACHELOR-026",
+        "level": "bachelor",
+        "nameEnOfficial": "Bachelor Of Arts (Hons) In Marketing",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-arts-hons-marketing",
+        "classification": "general-route-plus-programme-requirement-evidence",
+        "reason": "Programme detail page includes international/language-route evidence, but the official application route still has to confirm programme-level availability."
+      },
+      {
+        "code": "UCSI-BACHELOR-027",
+        "level": "bachelor",
+        "nameEnOfficial": "Bachelor Of Arts (Hons) Logistics Management",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-arts-hons-logistics-management",
+        "classification": "general-route-plus-programme-requirement-evidence",
+        "reason": "Programme detail page includes international/language-route evidence, but the official application route still has to confirm programme-level availability."
+      },
+      {
+        "code": "UCSI-BACHELOR-028",
+        "level": "bachelor",
+        "nameEnOfficial": "Bachelor Of Arts (Honours) Supply Chain Operations Management",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-arts-honours-supply-chain-operations-management",
+        "classification": "general-route-plus-programme-requirement-evidence",
+        "reason": "Programme detail page includes international/language-route evidence, but the official application route still has to confirm programme-level availability."
+      },
+      {
+        "code": "UCSI-BACHELOR-029",
+        "level": "bachelor",
+        "nameEnOfficial": "Bachelor In Human Capital Management (Honours)",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-human-capital-management-honours",
+        "classification": "general-route-plus-programme-requirement-evidence",
+        "reason": "Programme detail page includes international/language-route evidence, but the official application route still has to confirm programme-level availability."
+      },
+      {
+        "code": "UCSI-BACHELOR-030",
+        "level": "bachelor",
+        "nameEnOfficial": "Bachelor Of Business Analytics (Honours)",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-business-analytics-honours",
+        "classification": "general-route-plus-programme-requirement-evidence",
+        "reason": "Programme detail page includes international/language-route evidence, but the official application route still has to confirm programme-level availability."
+      },
+      {
+        "code": "UCSI-BACHELOR-031",
+        "level": "bachelor",
+        "nameEnOfficial": "Bachelor Of Financial Economics (Hons)",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-financial-economics-hons",
+        "classification": "general-route-plus-programme-requirement-evidence",
+        "reason": "Programme detail page includes international/language-route evidence, but the official application route still has to confirm programme-level availability."
+      },
+      {
+        "code": "UCSI-BACHELOR-032",
+        "level": "bachelor",
+        "nameEnOfficial": "Bachelor Of Financial Technology (Honours)",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-financial-technology-honours",
+        "classification": "general-route-plus-programme-requirement-evidence",
+        "reason": "Programme detail page includes international/language-route evidence, but the official application route still has to confirm programme-level availability."
+      },
+      {
+        "code": "UCSI-BACHELOR-033",
+        "level": "bachelor",
+        "nameEnOfficial": "Bachelor Of International And Sustainable Business (Honours)",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-international-and-sustainable-business-honours",
+        "classification": "general-route-plus-programme-requirement-evidence",
+        "reason": "Programme detail page includes international/language-route evidence, but the official application route still has to confirm programme-level availability."
+      },
+      {
+        "code": "UCSI-BACHELOR-034",
+        "level": "bachelor",
+        "nameEnOfficial": "Bachelor Of Science (Honours) Finance And Investment",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-science-honours-finance-and-investment",
+        "classification": "general-route-plus-programme-requirement-evidence",
+        "reason": "Programme detail page includes international/language-route evidence, but the official application route still has to confirm programme-level availability."
+      },
+      {
+        "code": "UCSI-PHD-035",
+        "level": "phd",
+        "nameEnOfficial": "Doctor Of Philosophy In Architecture",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/doctor-philosophy-architecture",
+        "classification": "general-route-plus-programme-requirement-evidence",
+        "reason": "Programme detail page includes international/language-route evidence, but the official application route still has to confirm programme-level availability."
+      },
+      {
+        "code": "UCSI-PHD-036",
+        "level": "phd",
+        "nameEnOfficial": "Doctor Of Philosophy (Engineering)",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/doctor-philosophy-engineering",
+        "classification": "general-route-plus-programme-requirement-evidence",
+        "reason": "Programme detail page includes international/language-route evidence, but the official application route still has to confirm programme-level availability."
+      },
+      {
+        "code": "UCSI-PHD-037",
+        "level": "phd",
+        "nameEnOfficial": "Doctor Of Philosophy (Engineering) By Prior Publication",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/doctor-philosophy-engineering-prior-publication",
+        "classification": "general-route-plus-programme-requirement-evidence",
+        "reason": "Programme detail page includes international/language-route evidence, but the official application route still has to confirm programme-level availability."
+      },
+      {
+        "code": "UCSI-PHD-038",
+        "level": "phd",
+        "nameEnOfficial": "Industrial PhD In Engineering",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/industrial-phd-engineering",
+        "classification": "general-route-plus-programme-requirement-evidence",
+        "reason": "Programme detail page includes international/language-route evidence, but the official application route still has to confirm programme-level availability."
+      },
+      {
+        "code": "UCSI-MASTER-039",
+        "level": "master",
+        "nameEnOfficial": "Master In Engineering (Smart Engineering Management)",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/master-engineering-smart-engineering-management",
+        "classification": "general-route-plus-programme-requirement-evidence",
+        "reason": "Programme detail page includes international/language-route evidence, but the official application route still has to confirm programme-level availability."
+      },
+      {
+        "code": "UCSI-MASTER-040",
+        "level": "master",
+        "nameEnOfficial": "Master Of Architecture",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/master-architecture",
+        "classification": "general-route-plus-programme-requirement-evidence",
+        "reason": "Programme detail page includes international/language-route evidence, but the official application route still has to confirm programme-level availability."
+      },
+      {
+        "code": "UCSI-MASTER-041",
+        "level": "master",
+        "nameEnOfficial": "Master Of Petroleum Engineering",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/master-petroleum-engineering",
+        "classification": "general-route-plus-programme-requirement-evidence",
+        "reason": "Programme detail page includes international/language-route evidence, but the official application route still has to confirm programme-level availability."
+      },
+      {
+        "code": "UCSI-MASTER-042",
+        "level": "master",
+        "nameEnOfficial": "Master Of Philosophy In Built Environment",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/master-philosophy-built-environment",
+        "classification": "general-route-plus-programme-requirement-evidence",
+        "reason": "Programme detail page includes international/language-route evidence, but the official application route still has to confirm programme-level availability."
+      },
+      {
+        "code": "UCSI-MASTER-043",
+        "level": "master",
+        "nameEnOfficial": "Master Of Philosophy In Engineering",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/master-philosophy-engineering",
+        "classification": "general-route-plus-programme-requirement-evidence",
+        "reason": "Programme detail page includes international/language-route evidence, but the official application route still has to confirm programme-level availability."
+      },
+      {
+        "code": "UCSI-BACHELOR-044",
+        "level": "bachelor",
+        "nameEnOfficial": "Bachelor Of Arts (Hons) In Interior Architecture",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-arts-hons-interior-architecture",
+        "classification": "general-route-plus-programme-requirement-evidence",
+        "reason": "Programme detail page includes international/language-route evidence, but the official application route still has to confirm programme-level availability."
+      },
+      {
+        "code": "UCSI-BACHELOR-045",
+        "level": "bachelor",
+        "nameEnOfficial": "Bachelor Of Chemical Engineering With Honours",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-chemical-engineering-honours",
+        "classification": "general-route-plus-programme-requirement-evidence",
+        "reason": "Programme detail page includes international/language-route evidence, but the official application route still has to confirm programme-level availability."
+      },
+      {
+        "code": "UCSI-BACHELOR-046",
+        "level": "bachelor",
+        "nameEnOfficial": "Bachelor Of Civil Engineering With Honours",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-civil-engineering-honours",
+        "classification": "general-route-plus-programme-requirement-evidence",
+        "reason": "Programme detail page includes international/language-route evidence, but the official application route still has to confirm programme-level availability."
+      },
+      {
+        "code": "UCSI-BACHELOR-047",
+        "level": "bachelor",
+        "nameEnOfficial": "Bachelor Of Computer Engineering (Artificial Intelligence) With Honours",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-computer-engineering-artificial-intelligence-honours",
+        "classification": "general-route-plus-programme-requirement-evidence",
+        "reason": "Programme detail page includes international/language-route evidence, but the official application route still has to confirm programme-level availability."
+      },
+      {
+        "code": "UCSI-BACHELOR-048",
+        "level": "bachelor",
+        "nameEnOfficial": "Bachelor Of Digital Mechanical Technology With Honours",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-digital-mechanical-technology-honours",
+        "classification": "general-route-plus-programme-requirement-evidence",
+        "reason": "Programme detail page includes international/language-route evidence, but the official application route still has to confirm programme-level availability."
+      },
+      {
+        "code": "UCSI-BACHELOR-049",
+        "level": "bachelor",
+        "nameEnOfficial": "Bachelor Of Electrical And Electronics Engineering With Honours",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-electrical-and-electronics-engineering-honours",
+        "classification": "general-route-plus-programme-requirement-evidence",
+        "reason": "Programme detail page includes international/language-route evidence, but the official application route still has to confirm programme-level availability."
+      },
+      {
+        "code": "UCSI-BACHELOR-050",
+        "level": "bachelor",
+        "nameEnOfficial": "Bachelor Of Energy Engineering With Honours",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-energy-engineering-honours",
+        "classification": "general-route-plus-programme-requirement-evidence",
+        "reason": "Programme detail page includes international/language-route evidence, but the official application route still has to confirm programme-level availability."
+      },
+      {
+        "code": "UCSI-BACHELOR-051",
+        "level": "bachelor",
+        "nameEnOfficial": "Bachelor Of Mechanical Engineering With Honours",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-mechanical-engineering-honours",
+        "classification": "general-route-plus-programme-requirement-evidence",
+        "reason": "Programme detail page includes international/language-route evidence, but the official application route still has to confirm programme-level availability."
+      },
+      {
+        "code": "UCSI-BACHELOR-052",
+        "level": "bachelor",
+        "nameEnOfficial": "Bachelor Of Mechatronics Engineering With Honours",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-mechatronics-engineering-honours",
+        "classification": "general-route-plus-programme-requirement-evidence",
+        "reason": "Programme detail page includes international/language-route evidence, but the official application route still has to confirm programme-level availability."
+      },
+      {
+        "code": "UCSI-BACHELOR-053",
+        "level": "bachelor",
+        "nameEnOfficial": "Bachelor Of Microelectronic Technology With Honours",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-microelectronic-technology-honours",
+        "classification": "general-route-plus-programme-requirement-evidence",
+        "reason": "Programme detail page includes international/language-route evidence, but the official application route still has to confirm programme-level availability."
+      },
+      {
+        "code": "UCSI-BACHELOR-054",
+        "level": "bachelor",
+        "nameEnOfficial": "Bachelor Of Petroleum Engineering With Honours",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-petroleum-engineering-honours",
+        "classification": "general-route-plus-programme-requirement-evidence",
+        "reason": "Programme detail page includes international/language-route evidence, but the official application route still has to confirm programme-level availability."
+      },
+      {
+        "code": "UCSI-BACHELOR-055",
+        "level": "bachelor",
+        "nameEnOfficial": "Bachelor Of Quantity Surveying (Hons)",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-quantity-surveying-hons",
+        "classification": "general-route-plus-programme-requirement-evidence",
+        "reason": "Programme detail page includes international/language-route evidence, but the official application route still has to confirm programme-level availability."
+      },
+      {
+        "code": "UCSI-BACHELOR-056",
+        "level": "bachelor",
+        "nameEnOfficial": "Bachelor Of Science (Hons) In Architecture",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-science-hons-architecture",
+        "classification": "general-route-plus-programme-requirement-evidence",
+        "reason": "Programme detail page includes international/language-route evidence, but the official application route still has to confirm programme-level availability."
+      },
+      {
+        "code": "UCSI-MASTER-057",
+        "level": "master",
+        "nameEnOfficial": "Master Of Sustainable Built Environment",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/master-sustainable-built-environment",
+        "classification": "general-route-plus-programme-requirement-evidence",
+        "reason": "Programme detail page includes international/language-route evidence, but the official application route still has to confirm programme-level availability."
+      },
+      {
+        "code": "UCSI-MASTER-058",
+        "level": "master",
+        "nameEnOfficial": "Master In Engineering (Applied Artificial Intelligence)",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/master-engineering-applied-artificial-intelligence",
+        "classification": "general-route-plus-programme-requirement-evidence",
+        "reason": "Programme detail page includes international/language-route evidence, but the official application route still has to confirm programme-level availability."
+      },
+      {
+        "code": "UCSI-PHD-059",
+        "level": "phd",
+        "nameEnOfficial": "Doctor Of Philosophy (Hospitality And Tourism)",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/doctor-philosophy-hospitality-and-tourism",
+        "classification": "general-route-plus-programme-requirement-evidence",
+        "reason": "Programme detail page includes international/language-route evidence, but the official application route still has to confirm programme-level availability."
+      },
+      {
+        "code": "UCSI-MASTER-060",
+        "level": "master",
+        "nameEnOfficial": "Master In International Hospitality Management",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/master-international-hospitality-management",
+        "classification": "general-route-plus-programme-requirement-evidence",
+        "reason": "Programme detail page includes international/language-route evidence, but the official application route still has to confirm programme-level availability."
+      },
+      {
+        "code": "UCSI-MASTER-061",
+        "level": "master",
+        "nameEnOfficial": "Master Of Science In Gastronomy",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/master-science-gastronomy",
+        "classification": "general-route-plus-programme-requirement-evidence",
+        "reason": "Programme detail page includes international/language-route evidence, but the official application route still has to confirm programme-level availability."
+      },
+      {
+        "code": "UCSI-BACHELOR-062",
+        "level": "bachelor",
+        "nameEnOfficial": "Bachelor Of Arts (Honours) In Culinary Management",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-arts-honours-culinary-management",
+        "classification": "general-route-plus-programme-requirement-evidence",
+        "reason": "Programme detail page includes international/language-route evidence, but the official application route still has to confirm programme-level availability."
+      },
+      {
+        "code": "UCSI-BACHELOR-063",
+        "level": "bachelor",
+        "nameEnOfficial": "Bachelor Of Arts (Honours) In Global Sustainable Tourism",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-arts-honours-global-sustainable-tourism",
+        "classification": "general-route-plus-programme-requirement-evidence",
+        "reason": "Programme detail page includes international/language-route evidence, but the official application route still has to confirm programme-level availability."
+      },
+      {
+        "code": "UCSI-BACHELOR-064",
+        "level": "bachelor",
+        "nameEnOfficial": "Bachelor Of Hospitality Administration",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-hospitality-administration",
+        "classification": "general-route-plus-programme-requirement-evidence",
+        "reason": "Programme detail page includes international/language-route evidence, but the official application route still has to confirm programme-level availability."
+      },
+      {
+        "code": "UCSI-MASTER-065",
+        "level": "master",
+        "nameEnOfficial": "MSc (Healthy Aging, Medical Aesthetic And Regenerative Medicine)",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/msc-healthy-aging-medical-aesthetic-and-regenerative-medicine",
+        "classification": "general-route-plus-programme-requirement-evidence",
+        "reason": "Programme detail page includes international/language-route evidence, but the official application route still has to confirm programme-level availability."
+      },
+      {
+        "code": "UCSI-BACHELOR-066",
+        "level": "bachelor",
+        "nameEnOfficial": "Bachelor Of Optometry (Hons)",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-optometry-hons",
+        "classification": "general-route-plus-programme-requirement-evidence",
+        "reason": "Programme detail page includes international/language-route evidence, but the official application route still has to confirm programme-level availability."
+      },
+      {
+        "code": "UCSI-PHD-067",
+        "level": "phd",
+        "nameEnOfficial": "Doctor Of Philosophy (Pharmaceutical Sciences)",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/doctor-philosophy-pharmaceutical-sciences",
+        "classification": "general-route-plus-programme-requirement-evidence",
+        "reason": "Programme detail page includes international/language-route evidence, but the official application route still has to confirm programme-level availability."
+      },
+      {
+        "code": "UCSI-MASTER-068",
+        "level": "master",
+        "nameEnOfficial": "Master Of Clinical Pharmacy Practice",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/master-clinical-pharmacy-practice",
+        "classification": "general-route-plus-programme-requirement-evidence",
+        "reason": "Programme detail page includes international/language-route evidence, but the official application route still has to confirm programme-level availability."
+      },
+      {
+        "code": "UCSI-MASTER-069",
+        "level": "master",
+        "nameEnOfficial": "Master Of Science (Pharmaceutical Sciences)",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/master-science-pharmaceutical-sciences",
+        "classification": "general-route-plus-programme-requirement-evidence",
+        "reason": "Programme detail page includes international/language-route evidence, but the official application route still has to confirm programme-level availability."
+      },
+      {
+        "code": "UCSI-MASTER-070",
+        "level": "master",
+        "nameEnOfficial": "MSc Pharmaceutical Chemistry",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/msc-pharmaceutical-chemistry",
+        "classification": "general-route-plus-programme-requirement-evidence",
+        "reason": "Programme detail page includes international/language-route evidence, but the official application route still has to confirm programme-level availability."
+      },
+      {
+        "code": "UCSI-MASTER-071",
+        "level": "master",
+        "nameEnOfficial": "MSc Pharmaceutical Technology",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/msc-pharmaceutical-technology",
+        "classification": "general-route-plus-programme-requirement-evidence",
+        "reason": "Programme detail page includes international/language-route evidence, but the official application route still has to confirm programme-level availability."
+      },
+      {
+        "code": "UCSI-BACHELOR-072",
+        "level": "bachelor",
+        "nameEnOfficial": "Bachelor In Formulation Science (Honours)",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-formulation-science-honours",
+        "classification": "general-route-plus-programme-requirement-evidence",
+        "reason": "Programme detail page includes international/language-route evidence, but the official application route still has to confirm programme-level availability."
+      },
+      {
+        "code": "UCSI-BACHELOR-073",
+        "level": "bachelor",
+        "nameEnOfficial": "Bachelor Of Pharmacy (Honours)",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-pharmacy-honours",
+        "classification": "general-route-only",
+        "reason": "Only institution-level international admission route is available in this batch; programme-level international availability remains unclosed."
+      },
+      {
+        "code": "UCSI-PHD-074",
+        "level": "phd",
+        "nameEnOfficial": "Doctor Of Philosophy (Education)",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/doctor-philosophy-education",
+        "classification": "general-route-plus-programme-requirement-evidence",
+        "reason": "Programme detail page includes international/language-route evidence, but the official application route still has to confirm programme-level availability."
+      },
+      {
+        "code": "UCSI-PHD-075",
+        "level": "phd",
+        "nameEnOfficial": "Doctor Of Philosophy In Psychology",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/doctor-philosophy-psychology",
+        "classification": "general-route-plus-programme-requirement-evidence",
+        "reason": "Programme detail page includes international/language-route evidence, but the official application route still has to confirm programme-level availability."
+      },
+      {
+        "code": "UCSI-MASTER-076",
+        "level": "master",
+        "nameEnOfficial": "Master Of Child Psychology",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/master-child-psychology",
+        "classification": "general-route-plus-programme-requirement-evidence",
+        "reason": "Programme detail page includes international/language-route evidence, but the official application route still has to confirm programme-level availability."
+      },
+      {
+        "code": "UCSI-MASTER-077",
+        "level": "master",
+        "nameEnOfficial": "Master Of Clinical Psychology",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/master-clinical-psychology",
+        "classification": "general-route-plus-programme-requirement-evidence",
+        "reason": "Programme detail page includes international/language-route evidence, but the official application route still has to confirm programme-level availability."
+      },
+      {
+        "code": "UCSI-MASTER-078",
+        "level": "master",
+        "nameEnOfficial": "Master Of Education",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/master-education",
+        "classification": "general-route-plus-programme-requirement-evidence",
+        "reason": "Programme detail page includes international/language-route evidence, but the official application route still has to confirm programme-level availability."
+      },
+      {
+        "code": "UCSI-MASTER-079",
+        "level": "master",
+        "nameEnOfficial": "Master In Strategic Communication",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/master-strategic-communication",
+        "classification": "general-route-plus-programme-requirement-evidence",
+        "reason": "Programme detail page includes international/language-route evidence, but the official application route still has to confirm programme-level availability."
+      },
+      {
+        "code": "UCSI-BACHELOR-080",
+        "level": "bachelor",
+        "nameEnOfficial": "Bachelor Of Early Childhood Education (Honours)",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-early-childhood-education-honours",
+        "classification": "general-route-plus-programme-requirement-evidence",
+        "reason": "Programme detail page includes international/language-route evidence, but the official application route still has to confirm programme-level availability."
+      },
+      {
+        "code": "UCSI-BACHELOR-081",
+        "level": "bachelor",
+        "nameEnOfficial": "Bachelor Of Digital Media Production And Broadcasting (Honours)",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-digital-media-production-and-broadcasting-honours",
+        "classification": "general-route-plus-programme-requirement-evidence",
+        "reason": "Programme detail page includes international/language-route evidence, but the official application route still has to confirm programme-level availability."
+      },
+      {
+        "code": "UCSI-PHD-082",
+        "level": "phd",
+        "nameEnOfficial": "Doctor Of Philosophy In Art, Design And Creative Media",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/doctor-philosophy-art-design-and-creative-media",
+        "classification": "general-route-plus-programme-requirement-evidence",
+        "reason": "Programme detail page includes international/language-route evidence, but the official application route still has to confirm programme-level availability."
+      },
+      {
+        "code": "UCSI-MASTER-083",
+        "level": "master",
+        "nameEnOfficial": "Master Of Arts And Design",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/master-arts-and-design",
+        "classification": "general-route-plus-programme-requirement-evidence",
+        "reason": "Programme detail page includes international/language-route evidence, but the official application route still has to confirm programme-level availability."
+      },
+      {
+        "code": "UCSI-MASTER-084",
+        "level": "master",
+        "nameEnOfficial": "Master Of Art, Design And Creative Media",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/master-art-design-and-creative-media",
+        "classification": "general-route-plus-programme-requirement-evidence",
+        "reason": "Programme detail page includes international/language-route evidence, but the official application route still has to confirm programme-level availability."
+      },
+      {
+        "code": "UCSI-PHD-085",
+        "level": "phd",
+        "nameEnOfficial": "Doctor Of Philosophy In Mathematical Sciences",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/doctor-philosophy-mathematical-sciences",
+        "classification": "general-route-plus-programme-requirement-evidence",
+        "reason": "Programme detail page includes international/language-route evidence, but the official application route still has to confirm programme-level availability."
+      },
+      {
+        "code": "UCSI-MASTER-086",
+        "level": "master",
+        "nameEnOfficial": "Master Of Science (Actuarial Management) - (Mixed Mode Or Coursework)",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/master-science-actuarial-management-mixed-mode-or-coursework",
+        "classification": "general-route-plus-programme-requirement-evidence",
+        "reason": "Programme detail page includes international/language-route evidence, but the official application route still has to confirm programme-level availability."
+      },
+      {
+        "code": "UCSI-MASTER-087",
+        "level": "master",
+        "nameEnOfficial": "Master Of Science In Mathematical Sciences",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/master-science-mathematical-sciences",
+        "classification": "general-route-plus-programme-requirement-evidence",
+        "reason": "Programme detail page includes international/language-route evidence, but the official application route still has to confirm programme-level availability."
+      },
+      {
+        "code": "UCSI-BACHELOR-088",
+        "level": "bachelor",
+        "nameEnOfficial": "Bachelor Of Science (Honours) Actuarial Science",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-science-honours-actuarial-science",
+        "classification": "general-route-plus-programme-requirement-evidence",
+        "reason": "Programme detail page includes international/language-route evidence, but the official application route still has to confirm programme-level availability."
+      },
+      {
+        "code": "UCSI-BACHELOR-089",
+        "level": "bachelor",
+        "nameEnOfficial": "Bachelor Of Science (Honours) Actuarial Science And Finance",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-science-honours-actuarial-science-and-finance",
+        "classification": "general-route-plus-programme-requirement-evidence",
+        "reason": "Programme detail page includes international/language-route evidence, but the official application route still has to confirm programme-level availability."
+      },
+      {
+        "code": "UCSI-BACHELOR-090",
+        "level": "bachelor",
+        "nameEnOfficial": "Bachelor Of Science (Honours) Actuarial Science With Data Analytics",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-science-honours-actuarial-science-data-analytics",
+        "classification": "general-route-plus-programme-requirement-evidence",
+        "reason": "Programme detail page includes international/language-route evidence, but the official application route still has to confirm programme-level availability."
+      },
+      {
+        "code": "UCSI-PHD-091",
+        "level": "phd",
+        "nameEnOfficial": "Doctor Of Philosophy In Computer Science",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/doctor-philosophy-computer-science",
+        "classification": "general-route-plus-programme-requirement-evidence",
+        "reason": "Programme detail page includes international/language-route evidence, but the official application route still has to confirm programme-level availability."
+      },
+      {
+        "code": "UCSI-MASTER-092",
+        "level": "master",
+        "nameEnOfficial": "Master Of Science In Computer Science",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/master-science-computer-science",
+        "classification": "general-route-plus-programme-requirement-evidence",
+        "reason": "Programme detail page includes international/language-route evidence, but the official application route still has to confirm programme-level availability."
+      },
+      {
+        "code": "UCSI-MASTER-093",
+        "level": "master",
+        "nameEnOfficial": "Master Of Science In Digital Technology And Analytics",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/master-science-digital-technology-and-analytics",
+        "classification": "general-route-plus-programme-requirement-evidence",
+        "reason": "Programme detail page includes international/language-route evidence, but the official application route still has to confirm programme-level availability."
+      },
+      {
+        "code": "UCSI-MASTER-094",
+        "level": "master",
+        "nameEnOfficial": "MSc In Technopreneurship",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/msc-technopreneurship",
+        "classification": "general-route-plus-programme-requirement-evidence",
+        "reason": "Programme detail page includes international/language-route evidence, but the official application route still has to confirm programme-level availability."
+      },
+      {
+        "code": "UCSI-BACHELOR-095",
+        "level": "bachelor",
+        "nameEnOfficial": "Bachelor Of Computer Science (Honours)",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-computer-science-honours",
+        "classification": "general-route-plus-programme-requirement-evidence",
+        "reason": "Programme detail page includes international/language-route evidence, but the official application route still has to confirm programme-level availability."
+      },
+      {
+        "code": "UCSI-BACHELOR-096",
+        "level": "bachelor",
+        "nameEnOfficial": "Bachelor Of Computer Science In Artificial Intelligence With Honours",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-computer-science-artificial-intelligence-honours",
+        "classification": "general-route-plus-programme-requirement-evidence",
+        "reason": "Programme detail page includes international/language-route evidence, but the official application route still has to confirm programme-level availability."
+      },
+      {
+        "code": "UCSI-BACHELOR-097",
+        "level": "bachelor",
+        "nameEnOfficial": "Bachelor Of Computer Science In Cyber Security With Honours",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-computer-science-cyber-security-honours",
+        "classification": "general-route-plus-programme-requirement-evidence",
+        "reason": "Programme detail page includes international/language-route evidence, but the official application route still has to confirm programme-level availability."
+      },
+      {
+        "code": "UCSI-BACHELOR-098",
+        "level": "bachelor",
+        "nameEnOfficial": "Bachelor Of Computer Science (Hons) Mobile Computing And Networking",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-computer-science-hons-mobile-computing-and-networking",
+        "classification": "general-route-plus-programme-requirement-evidence",
+        "reason": "Programme detail page includes international/language-route evidence, but the official application route still has to confirm programme-level availability."
+      },
+      {
+        "code": "UCSI-BACHELOR-099",
+        "level": "bachelor",
+        "nameEnOfficial": "Bachelor Of Computer Science In Data Science With Honours",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-computer-science-data-science-honours",
+        "classification": "general-route-plus-programme-requirement-evidence",
+        "reason": "Programme detail page includes international/language-route evidence, but the official application route still has to confirm programme-level availability."
+      },
+      {
+        "code": "UCSI-BACHELOR-100",
+        "level": "bachelor",
+        "nameEnOfficial": "Bachelor Of Science In Business Information Systems (Honours)",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-science-business-information-systems-honours",
+        "classification": "general-route-plus-programme-requirement-evidence",
+        "reason": "Programme detail page includes international/language-route evidence, but the official application route still has to confirm programme-level availability."
+      },
+      {
+        "code": "UCSI-PHD-101",
+        "level": "phd",
+        "nameEnOfficial": "Doctor Of Philosophy In Music Performance",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/doctor-philosophy-music-performance",
+        "classification": "general-route-plus-programme-requirement-evidence",
+        "reason": "Programme detail page includes international/language-route evidence, but the official application route still has to confirm programme-level availability."
+      },
+      {
+        "code": "UCSI-PHD-102",
+        "level": "phd",
+        "nameEnOfficial": "Doctor Of Philosophy In Music",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/doctor-philosophy-music",
+        "classification": "general-route-plus-programme-requirement-evidence",
+        "reason": "Programme detail page includes international/language-route evidence, but the official application route still has to confirm programme-level availability."
+      },
+      {
+        "code": "UCSI-MASTER-103",
+        "level": "master",
+        "nameEnOfficial": "Master Of Music (Performance Studies)",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/mmus-performance-studies",
+        "classification": "general-route-only",
+        "reason": "Only institution-level international admission route is available in this batch; programme-level international availability remains unclosed."
+      },
+      {
+        "code": "UCSI-BACHELOR-104",
+        "level": "bachelor",
+        "nameEnOfficial": "Bachelor Of Classical Music (Hons.)",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-classical-music-hons",
+        "classification": "general-route-plus-programme-requirement-evidence",
+        "reason": "Programme detail page includes international/language-route evidence, but the official application route still has to confirm programme-level availability."
+      },
+      {
+        "code": "UCSI-BACHELOR-105",
+        "level": "bachelor",
+        "nameEnOfficial": "Bachelor Of Contemporary Music (Hons.)",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-contemporary-music-hons",
+        "classification": "general-route-plus-programme-requirement-evidence",
+        "reason": "Programme detail page includes international/language-route evidence, but the official application route still has to confirm programme-level availability."
+      },
+      {
+        "code": "UCSI-MASTER-106",
+        "level": "master",
+        "nameEnOfficial": "Master Of Science Policy And Communication",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/master-science-policy-and-communication",
+        "classification": "general-route-plus-programme-requirement-evidence",
+        "reason": "Programme detail page includes international/language-route evidence, but the official application route still has to confirm programme-level availability."
+      },
+      {
+        "code": "UCSI-MASTER-107",
+        "level": "master",
+        "nameEnOfficial": "Master In Science Diplomacy",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/master-science-diplomacy",
+        "classification": "general-route-plus-programme-requirement-evidence",
+        "reason": "Programme detail page includes international/language-route evidence, but the official application route still has to confirm programme-level availability."
+      },
+      {
+        "code": "UCSI-MASTER-108",
+        "level": "master",
+        "nameEnOfficial": "Master In Environmental, Social And Governance Leadership",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/master-environmental-social-and-governance-leadership",
+        "classification": "general-route-plus-programme-requirement-evidence",
+        "reason": "Programme detail page includes international/language-route evidence, but the official application route still has to confirm programme-level availability."
+      },
+      {
+        "code": "UCSI-MASTER-109",
+        "level": "master",
+        "nameEnOfficial": "Master Of Business Administration (Blue Ocean Strategy)",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/master-business-administration-blue-ocean-strategy",
+        "classification": "general-route-plus-programme-requirement-evidence",
+        "reason": "Programme detail page includes international/language-route evidence, but the official application route still has to confirm programme-level availability."
+      },
+      {
+        "code": "UCSI-BACHELOR-110",
+        "level": "bachelor",
+        "nameEnOfficial": "Bachelor In Business Management (Honours)",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-business-management-honours",
+        "classification": "general-route-plus-programme-requirement-evidence",
+        "reason": "Programme detail page includes international/language-route evidence, but the official application route still has to confirm programme-level availability."
+      },
+      {
+        "code": "UCSI-BACHELOR-111",
+        "level": "bachelor",
+        "nameEnOfficial": "Bachelor In International Business (Honours)",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-international-business-honours",
+        "classification": "general-route-plus-programme-requirement-evidence",
+        "reason": "Programme detail page includes international/language-route evidence, but the official application route still has to confirm programme-level availability."
+      },
+      {
+        "code": "UCSI-BACHELOR-112",
+        "level": "bachelor",
+        "nameEnOfficial": "Bachelor Of Commerce (Hons) In Accounting And Finance",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-commerce-hons-accounting-and-finance-kuching-campus",
+        "classification": "general-route-plus-programme-requirement-evidence",
+        "reason": "Programme detail page includes international/language-route evidence, but the official application route still has to confirm programme-level availability."
+      },
+      {
+        "code": "UCSI-BACHELOR-113",
+        "level": "bachelor",
+        "nameEnOfficial": "Bachelor Of Commerce (Hons) In Marketing",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-commerce-hons-marketing",
+        "classification": "general-route-plus-programme-requirement-evidence",
+        "reason": "Programme detail page includes international/language-route evidence, but the official application route still has to confirm programme-level availability."
+      },
+      {
+        "code": "UCSI-BACHELOR-114",
+        "level": "bachelor",
+        "nameEnOfficial": "Bachelor Of Arts (Honours) In Culinary Management",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-arts-honours-culinary-management-kuching-campus",
+        "classification": "general-route-plus-programme-requirement-evidence",
+        "reason": "Programme detail page includes international/language-route evidence, but the official application route still has to confirm programme-level availability."
+      },
+      {
+        "code": "UCSI-PHD-115",
+        "level": "phd",
+        "nameEnOfficial": "Doctor Of Philosophy (Medical Sciences)",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/doctor-philosophy-medical-sciences",
+        "classification": "general-route-plus-programme-requirement-evidence",
+        "reason": "Programme detail page includes international/language-route evidence, but the official application route still has to confirm programme-level availability."
+      },
+      {
+        "code": "UCSI-BACHELOR-116",
+        "level": "bachelor",
+        "nameEnOfficial": "Doctor Of Medicine (MD)",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/doctor-medicine-md",
+        "classification": "general-route-plus-programme-requirement-evidence",
+        "reason": "Programme detail page includes international/language-route evidence, but the official application route still has to confirm programme-level availability."
+      },
+      {
+        "code": "UCSI-BACHELOR-117",
+        "level": "bachelor",
+        "nameEnOfficial": "Bachelor Of Nursing (Hons)",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-nursing-hons",
+        "classification": "general-route-plus-programme-requirement-evidence",
+        "reason": "Programme detail page includes international/language-route evidence, but the official application route still has to confirm programme-level availability."
+      },
+      {
+        "code": "UCSI-BACHELOR-118",
+        "level": "bachelor",
+        "nameEnOfficial": "Bachelor Of Arts (Honours) In Hospitality Management",
+        "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-arts-honours-hospitality-management",
+        "classification": "general-route-plus-programme-requirement-evidence",
+        "reason": "Programme detail page includes international/language-route evidence, but the official application route still has to confirm programme-level availability."
+      }
+    ]
+  },
+  "duplicateAudit": {
+    "duplicateRows": 53,
+    "canonicalGroupsWithDuplicates": 52,
+    "allDuplicateGroupsUseSameDetailUrl": true,
+    "groupsWithMultipleActualCampuses": [
+      {
+        "code": "UCSI-MASTER-060",
+        "occurrenceCount": 3,
+        "duplicateRows": 2,
+        "sameDetailUrl": true,
+        "detailUrls": [
+          "https://www.ucsiuniversity.edu.my/programmes/master-international-hospitality-management"
+        ],
+        "actualCampuses": [
+          "Kuala Lumpur",
+          "Kuching"
+        ],
+        "sourceCampuses": [
+          "Kuala Lumpur",
+          "Kuching",
+          "Office of Research and Postgraduate Studies"
+        ],
+        "note": "Same official detail URL appears under more than one campus directory; retained as one candidate with occurrence evidence because the detail page governs the offering."
+      }
+    ],
+    "records": [
+      {
+        "code": "UCSI-PHD-001",
+        "occurrenceCount": 2,
+        "duplicateRows": 1,
+        "sameDetailUrl": true,
+        "detailUrls": [
+          "https://www.ucsiuniversity.edu.my/programmes/doctor-philosophy-business-and-management"
+        ],
+        "actualCampuses": [
+          "Kuala Lumpur"
+        ],
+        "sourceCampuses": [
+          "Kuala Lumpur",
+          "Office of Research and Postgraduate Studies"
+        ],
+        "note": "Same official detail URL appears in multiple official contexts; retained as one canonical candidate with duplicate occurrence evidence."
+      },
+      {
+        "code": "UCSI-PHD-002",
+        "occurrenceCount": 2,
+        "duplicateRows": 1,
+        "sameDetailUrl": true,
+        "detailUrls": [
+          "https://www.ucsiuniversity.edu.my/programmes/dba-doctor-business-administration"
+        ],
+        "actualCampuses": [
+          "Kuala Lumpur"
+        ],
+        "sourceCampuses": [
+          "Kuala Lumpur",
+          "Office of Research and Postgraduate Studies"
+        ],
+        "note": "Same official detail URL appears in multiple official contexts; retained as one canonical candidate with duplicate occurrence evidence."
+      },
+      {
+        "code": "UCSI-MASTER-003",
+        "occurrenceCount": 2,
+        "duplicateRows": 1,
+        "sameDetailUrl": true,
+        "detailUrls": [
+          "https://www.ucsiuniversity.edu.my/programmes/mba"
+        ],
+        "actualCampuses": [
+          "Kuala Lumpur"
+        ],
+        "sourceCampuses": [
+          "Kuala Lumpur",
+          "Office of Research and Postgraduate Studies"
+        ],
+        "note": "Same official detail URL appears in multiple official contexts; retained as one canonical candidate with duplicate occurrence evidence."
+      },
+      {
+        "code": "UCSI-MASTER-004",
+        "occurrenceCount": 2,
+        "duplicateRows": 1,
+        "sameDetailUrl": true,
+        "detailUrls": [
+          "https://www.ucsiuniversity.edu.my/programmes/mba-odl-mode"
+        ],
+        "actualCampuses": [
+          "Kuala Lumpur"
+        ],
+        "sourceCampuses": [
+          "Kuala Lumpur",
+          "Office of Research and Postgraduate Studies"
+        ],
+        "note": "Same official detail URL appears in multiple official contexts; retained as one canonical candidate with duplicate occurrence evidence."
+      },
+      {
+        "code": "UCSI-MASTER-005",
+        "occurrenceCount": 2,
+        "duplicateRows": 1,
+        "sameDetailUrl": true,
+        "detailUrls": [
+          "https://www.ucsiuniversity.edu.my/programmes/master-philosophy-business-and-management"
+        ],
+        "actualCampuses": [
+          "Kuala Lumpur"
+        ],
+        "sourceCampuses": [
+          "Kuala Lumpur",
+          "Office of Research and Postgraduate Studies"
+        ],
+        "note": "Same official detail URL appears in multiple official contexts; retained as one canonical candidate with duplicate occurrence evidence."
+      },
+      {
+        "code": "UCSI-MASTER-006",
+        "occurrenceCount": 2,
+        "duplicateRows": 1,
+        "sameDetailUrl": true,
+        "detailUrls": [
+          "https://www.ucsiuniversity.edu.my/programmes/mba-healthcare-and-hospital-management"
+        ],
+        "actualCampuses": [
+          "Kuala Lumpur"
+        ],
+        "sourceCampuses": [
+          "Kuala Lumpur",
+          "Office of Research and Postgraduate Studies"
+        ],
+        "note": "Same official detail URL appears in multiple official contexts; retained as one canonical candidate with duplicate occurrence evidence."
+      },
+      {
+        "code": "UCSI-PHD-007",
+        "occurrenceCount": 2,
+        "duplicateRows": 1,
+        "sameDetailUrl": true,
+        "detailUrls": [
+          "https://www.ucsiuniversity.edu.my/programme/doctorate-philosophy-science"
+        ],
+        "actualCampuses": [
+          "Kuala Lumpur"
+        ],
+        "sourceCampuses": [
+          "Kuala Lumpur",
+          "Office of Research and Postgraduate Studies"
+        ],
+        "note": "Same official detail URL appears in multiple official contexts; retained as one canonical candidate with duplicate occurrence evidence."
+      },
+      {
+        "code": "UCSI-MASTER-008",
+        "occurrenceCount": 2,
+        "duplicateRows": 1,
+        "sameDetailUrl": true,
+        "detailUrls": [
+          "https://www.ucsiuniversity.edu.my/programmes/master-science-applied-sciences"
+        ],
+        "actualCampuses": [
+          "Kuala Lumpur"
+        ],
+        "sourceCampuses": [
+          "Kuala Lumpur",
+          "Office of Research and Postgraduate Studies"
+        ],
+        "note": "Same official detail URL appears in multiple official contexts; retained as one canonical candidate with duplicate occurrence evidence."
+      },
+      {
+        "code": "UCSI-MASTER-009",
+        "occurrenceCount": 2,
+        "duplicateRows": 1,
+        "sameDetailUrl": true,
+        "detailUrls": [
+          "https://www.ucsiuniversity.edu.my/programmes/master-science-biotechnology"
+        ],
+        "actualCampuses": [
+          "Kuala Lumpur"
+        ],
+        "sourceCampuses": [
+          "Kuala Lumpur",
+          "Office of Research and Postgraduate Studies"
+        ],
+        "note": "Same official detail URL appears in multiple official contexts; retained as one canonical candidate with duplicate occurrence evidence."
+      },
+      {
+        "code": "UCSI-MASTER-010",
+        "occurrenceCount": 2,
+        "duplicateRows": 1,
+        "sameDetailUrl": true,
+        "detailUrls": [
+          "https://www.ucsiuniversity.edu.my/programmes/master-science-biotechnology-business-management"
+        ],
+        "actualCampuses": [
+          "Kuala Lumpur"
+        ],
+        "sourceCampuses": [
+          "Kuala Lumpur",
+          "Office of Research and Postgraduate Studies"
+        ],
+        "note": "Same official detail URL appears in multiple official contexts; retained as one canonical candidate with duplicate occurrence evidence."
+      },
+      {
+        "code": "UCSI-MASTER-011",
+        "occurrenceCount": 2,
+        "duplicateRows": 1,
+        "sameDetailUrl": true,
+        "detailUrls": [
+          "https://www.ucsiuniversity.edu.my/programmes/master-science-food-science-business-management"
+        ],
+        "actualCampuses": [
+          "Kuala Lumpur"
+        ],
+        "sourceCampuses": [
+          "Kuala Lumpur",
+          "Office of Research and Postgraduate Studies"
+        ],
+        "note": "Same official detail URL appears in multiple official contexts; retained as one canonical candidate with duplicate occurrence evidence."
+      },
+      {
+        "code": "UCSI-MASTER-012",
+        "occurrenceCount": 2,
+        "duplicateRows": 1,
+        "sameDetailUrl": true,
+        "detailUrls": [
+          "https://www.ucsiuniversity.edu.my/programmes/msc-nutrition-management"
+        ],
+        "actualCampuses": [
+          "Kuala Lumpur"
+        ],
+        "sourceCampuses": [
+          "Kuala Lumpur",
+          "Office of Research and Postgraduate Studies"
+        ],
+        "note": "Same official detail URL appears in multiple official contexts; retained as one canonical candidate with duplicate occurrence evidence."
+      },
+      {
+        "code": "UCSI-PHD-019",
+        "occurrenceCount": 2,
+        "duplicateRows": 1,
+        "sameDetailUrl": true,
+        "detailUrls": [
+          "https://www.ucsiuniversity.edu.my/programmes/doctor-philosophy-science-prior-publication"
+        ],
+        "actualCampuses": [
+          "Kuala Lumpur"
+        ],
+        "sourceCampuses": [
+          "Kuala Lumpur",
+          "Office of Research and Postgraduate Studies"
+        ],
+        "note": "Same official detail URL appears in multiple official contexts; retained as one canonical candidate with duplicate occurrence evidence."
+      },
+      {
+        "code": "UCSI-MASTER-020",
+        "occurrenceCount": 2,
+        "duplicateRows": 1,
+        "sameDetailUrl": true,
+        "detailUrls": [
+          "https://www.ucsiuniversity.edu.my/programmes/master-logistics-and-supply-chain-management"
+        ],
+        "actualCampuses": [
+          "Kuala Lumpur"
+        ],
+        "sourceCampuses": [
+          "Kuala Lumpur",
+          "Office of Research and Postgraduate Studies"
+        ],
+        "note": "Same official detail URL appears in multiple official contexts; retained as one canonical candidate with duplicate occurrence evidence."
+      },
+      {
+        "code": "UCSI-PHD-035",
+        "occurrenceCount": 2,
+        "duplicateRows": 1,
+        "sameDetailUrl": true,
+        "detailUrls": [
+          "https://www.ucsiuniversity.edu.my/programmes/doctor-philosophy-architecture"
+        ],
+        "actualCampuses": [
+          "Kuala Lumpur"
+        ],
+        "sourceCampuses": [
+          "Kuala Lumpur",
+          "Office of Research and Postgraduate Studies"
+        ],
+        "note": "Same official detail URL appears in multiple official contexts; retained as one canonical candidate with duplicate occurrence evidence."
+      },
+      {
+        "code": "UCSI-PHD-036",
+        "occurrenceCount": 2,
+        "duplicateRows": 1,
+        "sameDetailUrl": true,
+        "detailUrls": [
+          "https://www.ucsiuniversity.edu.my/programmes/doctor-philosophy-engineering"
+        ],
+        "actualCampuses": [
+          "Kuala Lumpur"
+        ],
+        "sourceCampuses": [
+          "Kuala Lumpur",
+          "Office of Research and Postgraduate Studies"
+        ],
+        "note": "Same official detail URL appears in multiple official contexts; retained as one canonical candidate with duplicate occurrence evidence."
+      },
+      {
+        "code": "UCSI-PHD-037",
+        "occurrenceCount": 2,
+        "duplicateRows": 1,
+        "sameDetailUrl": true,
+        "detailUrls": [
+          "https://www.ucsiuniversity.edu.my/programmes/doctor-philosophy-engineering-prior-publication"
+        ],
+        "actualCampuses": [
+          "Kuala Lumpur"
+        ],
+        "sourceCampuses": [
+          "Kuala Lumpur",
+          "Office of Research and Postgraduate Studies"
+        ],
+        "note": "Same official detail URL appears in multiple official contexts; retained as one canonical candidate with duplicate occurrence evidence."
+      },
+      {
+        "code": "UCSI-PHD-038",
+        "occurrenceCount": 2,
+        "duplicateRows": 1,
+        "sameDetailUrl": true,
+        "detailUrls": [
+          "https://www.ucsiuniversity.edu.my/programmes/industrial-phd-engineering"
+        ],
+        "actualCampuses": [
+          "Kuala Lumpur"
+        ],
+        "sourceCampuses": [
+          "Kuala Lumpur",
+          "Office of Research and Postgraduate Studies"
+        ],
+        "note": "Same official detail URL appears in multiple official contexts; retained as one canonical candidate with duplicate occurrence evidence."
+      },
+      {
+        "code": "UCSI-MASTER-039",
+        "occurrenceCount": 2,
+        "duplicateRows": 1,
+        "sameDetailUrl": true,
+        "detailUrls": [
+          "https://www.ucsiuniversity.edu.my/programmes/master-engineering-smart-engineering-management"
+        ],
+        "actualCampuses": [
+          "Kuala Lumpur"
+        ],
+        "sourceCampuses": [
+          "Kuala Lumpur",
+          "Office of Research and Postgraduate Studies"
+        ],
+        "note": "Same official detail URL appears in multiple official contexts; retained as one canonical candidate with duplicate occurrence evidence."
+      },
+      {
+        "code": "UCSI-MASTER-040",
+        "occurrenceCount": 2,
+        "duplicateRows": 1,
+        "sameDetailUrl": true,
+        "detailUrls": [
+          "https://www.ucsiuniversity.edu.my/programmes/master-architecture"
+        ],
+        "actualCampuses": [
+          "Kuala Lumpur"
+        ],
+        "sourceCampuses": [
+          "Kuala Lumpur",
+          "Office of Research and Postgraduate Studies"
+        ],
+        "note": "Same official detail URL appears in multiple official contexts; retained as one canonical candidate with duplicate occurrence evidence."
+      },
+      {
+        "code": "UCSI-MASTER-042",
+        "occurrenceCount": 2,
+        "duplicateRows": 1,
+        "sameDetailUrl": true,
+        "detailUrls": [
+          "https://www.ucsiuniversity.edu.my/programmes/master-philosophy-built-environment"
+        ],
+        "actualCampuses": [
+          "Kuala Lumpur"
+        ],
+        "sourceCampuses": [
+          "Kuala Lumpur",
+          "Office of Research and Postgraduate Studies"
+        ],
+        "note": "Same official detail URL appears in multiple official contexts; retained as one canonical candidate with duplicate occurrence evidence."
+      },
+      {
+        "code": "UCSI-MASTER-043",
+        "occurrenceCount": 2,
+        "duplicateRows": 1,
+        "sameDetailUrl": true,
+        "detailUrls": [
+          "https://www.ucsiuniversity.edu.my/programmes/master-philosophy-engineering"
+        ],
+        "actualCampuses": [
+          "Kuala Lumpur"
+        ],
+        "sourceCampuses": [
+          "Kuala Lumpur",
+          "Office of Research and Postgraduate Studies"
+        ],
+        "note": "Same official detail URL appears in multiple official contexts; retained as one canonical candidate with duplicate occurrence evidence."
+      },
+      {
+        "code": "UCSI-PHD-059",
+        "occurrenceCount": 2,
+        "duplicateRows": 1,
+        "sameDetailUrl": true,
+        "detailUrls": [
+          "https://www.ucsiuniversity.edu.my/programmes/doctor-philosophy-hospitality-and-tourism"
+        ],
+        "actualCampuses": [
+          "Kuala Lumpur"
+        ],
+        "sourceCampuses": [
+          "Kuala Lumpur",
+          "Office of Research and Postgraduate Studies"
+        ],
+        "note": "Same official detail URL appears in multiple official contexts; retained as one canonical candidate with duplicate occurrence evidence."
+      },
+      {
+        "code": "UCSI-MASTER-060",
+        "occurrenceCount": 3,
+        "duplicateRows": 2,
+        "sameDetailUrl": true,
+        "detailUrls": [
+          "https://www.ucsiuniversity.edu.my/programmes/master-international-hospitality-management"
+        ],
+        "actualCampuses": [
+          "Kuala Lumpur",
+          "Kuching"
+        ],
+        "sourceCampuses": [
+          "Kuala Lumpur",
+          "Kuching",
+          "Office of Research and Postgraduate Studies"
+        ],
+        "note": "Same official detail URL appears under more than one campus directory; retained as one candidate with occurrence evidence because the detail page governs the offering."
+      },
+      {
+        "code": "UCSI-MASTER-061",
+        "occurrenceCount": 2,
+        "duplicateRows": 1,
+        "sameDetailUrl": true,
+        "detailUrls": [
+          "https://www.ucsiuniversity.edu.my/programmes/master-science-gastronomy"
+        ],
+        "actualCampuses": [
+          "Kuala Lumpur"
+        ],
+        "sourceCampuses": [
+          "Kuala Lumpur",
+          "Office of Research and Postgraduate Studies"
+        ],
+        "note": "Same official detail URL appears in multiple official contexts; retained as one canonical candidate with duplicate occurrence evidence."
+      },
+      {
+        "code": "UCSI-MASTER-065",
+        "occurrenceCount": 2,
+        "duplicateRows": 1,
+        "sameDetailUrl": true,
+        "detailUrls": [
+          "https://www.ucsiuniversity.edu.my/programmes/msc-healthy-aging-medical-aesthetic-and-regenerative-medicine"
+        ],
+        "actualCampuses": [
+          "Kuala Lumpur"
+        ],
+        "sourceCampuses": [
+          "Kuala Lumpur",
+          "Office of Research and Postgraduate Studies"
+        ],
+        "note": "Same official detail URL appears in multiple official contexts; retained as one canonical candidate with duplicate occurrence evidence."
+      },
+      {
+        "code": "UCSI-PHD-067",
+        "occurrenceCount": 2,
+        "duplicateRows": 1,
+        "sameDetailUrl": true,
+        "detailUrls": [
+          "https://www.ucsiuniversity.edu.my/programmes/doctor-philosophy-pharmaceutical-sciences"
+        ],
+        "actualCampuses": [
+          "Kuala Lumpur"
+        ],
+        "sourceCampuses": [
+          "Kuala Lumpur",
+          "Office of Research and Postgraduate Studies"
+        ],
+        "note": "Same official detail URL appears in multiple official contexts; retained as one canonical candidate with duplicate occurrence evidence."
+      },
+      {
+        "code": "UCSI-MASTER-068",
+        "occurrenceCount": 2,
+        "duplicateRows": 1,
+        "sameDetailUrl": true,
+        "detailUrls": [
+          "https://www.ucsiuniversity.edu.my/programmes/master-clinical-pharmacy-practice"
+        ],
+        "actualCampuses": [
+          "Kuala Lumpur"
+        ],
+        "sourceCampuses": [
+          "Kuala Lumpur",
+          "Office of Research and Postgraduate Studies"
+        ],
+        "note": "Same official detail URL appears in multiple official contexts; retained as one canonical candidate with duplicate occurrence evidence."
+      },
+      {
+        "code": "UCSI-MASTER-069",
+        "occurrenceCount": 2,
+        "duplicateRows": 1,
+        "sameDetailUrl": true,
+        "detailUrls": [
+          "https://www.ucsiuniversity.edu.my/programmes/master-science-pharmaceutical-sciences"
+        ],
+        "actualCampuses": [
+          "Kuala Lumpur"
+        ],
+        "sourceCampuses": [
+          "Kuala Lumpur",
+          "Office of Research and Postgraduate Studies"
+        ],
+        "note": "Same official detail URL appears in multiple official contexts; retained as one canonical candidate with duplicate occurrence evidence."
+      },
+      {
+        "code": "UCSI-MASTER-070",
+        "occurrenceCount": 2,
+        "duplicateRows": 1,
+        "sameDetailUrl": true,
+        "detailUrls": [
+          "https://www.ucsiuniversity.edu.my/programmes/msc-pharmaceutical-chemistry"
+        ],
+        "actualCampuses": [
+          "Kuala Lumpur"
+        ],
+        "sourceCampuses": [
+          "Kuala Lumpur",
+          "Office of Research and Postgraduate Studies"
+        ],
+        "note": "Same official detail URL appears in multiple official contexts; retained as one canonical candidate with duplicate occurrence evidence."
+      },
+      {
+        "code": "UCSI-MASTER-071",
+        "occurrenceCount": 2,
+        "duplicateRows": 1,
+        "sameDetailUrl": true,
+        "detailUrls": [
+          "https://www.ucsiuniversity.edu.my/programmes/msc-pharmaceutical-technology"
+        ],
+        "actualCampuses": [
+          "Kuala Lumpur"
+        ],
+        "sourceCampuses": [
+          "Kuala Lumpur",
+          "Office of Research and Postgraduate Studies"
+        ],
+        "note": "Same official detail URL appears in multiple official contexts; retained as one canonical candidate with duplicate occurrence evidence."
+      },
+      {
+        "code": "UCSI-PHD-074",
+        "occurrenceCount": 2,
+        "duplicateRows": 1,
+        "sameDetailUrl": true,
+        "detailUrls": [
+          "https://www.ucsiuniversity.edu.my/programmes/doctor-philosophy-education"
+        ],
+        "actualCampuses": [
+          "Kuala Lumpur"
+        ],
+        "sourceCampuses": [
+          "Kuala Lumpur",
+          "Office of Research and Postgraduate Studies"
+        ],
+        "note": "Same official detail URL appears in multiple official contexts; retained as one canonical candidate with duplicate occurrence evidence."
+      },
+      {
+        "code": "UCSI-PHD-075",
+        "occurrenceCount": 2,
+        "duplicateRows": 1,
+        "sameDetailUrl": true,
+        "detailUrls": [
+          "https://www.ucsiuniversity.edu.my/programmes/doctor-philosophy-psychology"
+        ],
+        "actualCampuses": [
+          "Kuala Lumpur"
+        ],
+        "sourceCampuses": [
+          "Kuala Lumpur",
+          "Office of Research and Postgraduate Studies"
+        ],
+        "note": "Same official detail URL appears in multiple official contexts; retained as one canonical candidate with duplicate occurrence evidence."
+      },
+      {
+        "code": "UCSI-MASTER-076",
+        "occurrenceCount": 2,
+        "duplicateRows": 1,
+        "sameDetailUrl": true,
+        "detailUrls": [
+          "https://www.ucsiuniversity.edu.my/programmes/master-child-psychology"
+        ],
+        "actualCampuses": [
+          "Kuala Lumpur"
+        ],
+        "sourceCampuses": [
+          "Kuala Lumpur",
+          "Office of Research and Postgraduate Studies"
+        ],
+        "note": "Same official detail URL appears in multiple official contexts; retained as one canonical candidate with duplicate occurrence evidence."
+      },
+      {
+        "code": "UCSI-MASTER-077",
+        "occurrenceCount": 2,
+        "duplicateRows": 1,
+        "sameDetailUrl": true,
+        "detailUrls": [
+          "https://www.ucsiuniversity.edu.my/programmes/master-clinical-psychology"
+        ],
+        "actualCampuses": [
+          "Kuala Lumpur"
+        ],
+        "sourceCampuses": [
+          "Kuala Lumpur",
+          "Office of Research and Postgraduate Studies"
+        ],
+        "note": "Same official detail URL appears in multiple official contexts; retained as one canonical candidate with duplicate occurrence evidence."
+      },
+      {
+        "code": "UCSI-MASTER-078",
+        "occurrenceCount": 2,
+        "duplicateRows": 1,
+        "sameDetailUrl": true,
+        "detailUrls": [
+          "https://www.ucsiuniversity.edu.my/programmes/master-education"
+        ],
+        "actualCampuses": [
+          "Kuala Lumpur"
+        ],
+        "sourceCampuses": [
+          "Kuala Lumpur",
+          "Office of Research and Postgraduate Studies"
+        ],
+        "note": "Same official detail URL appears in multiple official contexts; retained as one canonical candidate with duplicate occurrence evidence."
+      },
+      {
+        "code": "UCSI-MASTER-079",
+        "occurrenceCount": 2,
+        "duplicateRows": 1,
+        "sameDetailUrl": true,
+        "detailUrls": [
+          "https://www.ucsiuniversity.edu.my/programmes/master-strategic-communication"
+        ],
+        "actualCampuses": [
+          "Kuala Lumpur"
+        ],
+        "sourceCampuses": [
+          "Kuala Lumpur",
+          "Office of Research and Postgraduate Studies"
+        ],
+        "note": "Same official detail URL appears in multiple official contexts; retained as one canonical candidate with duplicate occurrence evidence."
+      },
+      {
+        "code": "UCSI-PHD-082",
+        "occurrenceCount": 2,
+        "duplicateRows": 1,
+        "sameDetailUrl": true,
+        "detailUrls": [
+          "https://www.ucsiuniversity.edu.my/programmes/doctor-philosophy-art-design-and-creative-media"
+        ],
+        "actualCampuses": [
+          "Kuala Lumpur"
+        ],
+        "sourceCampuses": [
+          "Kuala Lumpur",
+          "Office of Research and Postgraduate Studies"
+        ],
+        "note": "Same official detail URL appears in multiple official contexts; retained as one canonical candidate with duplicate occurrence evidence."
+      },
+      {
+        "code": "UCSI-MASTER-083",
+        "occurrenceCount": 2,
+        "duplicateRows": 1,
+        "sameDetailUrl": true,
+        "detailUrls": [
+          "https://www.ucsiuniversity.edu.my/programmes/master-arts-and-design"
+        ],
+        "actualCampuses": [
+          "Kuala Lumpur"
+        ],
+        "sourceCampuses": [
+          "Kuala Lumpur",
+          "Office of Research and Postgraduate Studies"
+        ],
+        "note": "Same official detail URL appears in multiple official contexts; retained as one canonical candidate with duplicate occurrence evidence."
+      },
+      {
+        "code": "UCSI-MASTER-084",
+        "occurrenceCount": 2,
+        "duplicateRows": 1,
+        "sameDetailUrl": true,
+        "detailUrls": [
+          "https://www.ucsiuniversity.edu.my/programmes/master-art-design-and-creative-media"
+        ],
+        "actualCampuses": [
+          "Kuala Lumpur"
+        ],
+        "sourceCampuses": [
+          "Kuala Lumpur",
+          "Office of Research and Postgraduate Studies"
+        ],
+        "note": "Same official detail URL appears in multiple official contexts; retained as one canonical candidate with duplicate occurrence evidence."
+      },
+      {
+        "code": "UCSI-PHD-085",
+        "occurrenceCount": 2,
+        "duplicateRows": 1,
+        "sameDetailUrl": true,
+        "detailUrls": [
+          "https://www.ucsiuniversity.edu.my/programmes/doctor-philosophy-mathematical-sciences"
+        ],
+        "actualCampuses": [
+          "Kuala Lumpur"
+        ],
+        "sourceCampuses": [
+          "Kuala Lumpur",
+          "Office of Research and Postgraduate Studies"
+        ],
+        "note": "Same official detail URL appears in multiple official contexts; retained as one canonical candidate with duplicate occurrence evidence."
+      },
+      {
+        "code": "UCSI-MASTER-086",
+        "occurrenceCount": 2,
+        "duplicateRows": 1,
+        "sameDetailUrl": true,
+        "detailUrls": [
+          "https://www.ucsiuniversity.edu.my/programmes/master-science-actuarial-management-mixed-mode-or-coursework"
+        ],
+        "actualCampuses": [
+          "Kuala Lumpur"
+        ],
+        "sourceCampuses": [
+          "Kuala Lumpur",
+          "Office of Research and Postgraduate Studies"
+        ],
+        "note": "Same official detail URL appears in multiple official contexts; retained as one canonical candidate with duplicate occurrence evidence."
+      },
+      {
+        "code": "UCSI-MASTER-087",
+        "occurrenceCount": 2,
+        "duplicateRows": 1,
+        "sameDetailUrl": true,
+        "detailUrls": [
+          "https://www.ucsiuniversity.edu.my/programmes/master-science-mathematical-sciences"
+        ],
+        "actualCampuses": [
+          "Kuala Lumpur"
+        ],
+        "sourceCampuses": [
+          "Kuala Lumpur",
+          "Office of Research and Postgraduate Studies"
+        ],
+        "note": "Same official detail URL appears in multiple official contexts; retained as one canonical candidate with duplicate occurrence evidence."
+      },
+      {
+        "code": "UCSI-PHD-091",
+        "occurrenceCount": 2,
+        "duplicateRows": 1,
+        "sameDetailUrl": true,
+        "detailUrls": [
+          "https://www.ucsiuniversity.edu.my/programmes/doctor-philosophy-computer-science"
+        ],
+        "actualCampuses": [
+          "Kuala Lumpur"
+        ],
+        "sourceCampuses": [
+          "Kuala Lumpur",
+          "Office of Research and Postgraduate Studies"
+        ],
+        "note": "Same official detail URL appears in multiple official contexts; retained as one canonical candidate with duplicate occurrence evidence."
+      },
+      {
+        "code": "UCSI-MASTER-092",
+        "occurrenceCount": 2,
+        "duplicateRows": 1,
+        "sameDetailUrl": true,
+        "detailUrls": [
+          "https://www.ucsiuniversity.edu.my/programmes/master-science-computer-science"
+        ],
+        "actualCampuses": [
+          "Kuala Lumpur"
+        ],
+        "sourceCampuses": [
+          "Kuala Lumpur",
+          "Office of Research and Postgraduate Studies"
+        ],
+        "note": "Same official detail URL appears in multiple official contexts; retained as one canonical candidate with duplicate occurrence evidence."
+      },
+      {
+        "code": "UCSI-MASTER-094",
+        "occurrenceCount": 2,
+        "duplicateRows": 1,
+        "sameDetailUrl": true,
+        "detailUrls": [
+          "https://www.ucsiuniversity.edu.my/programmes/msc-technopreneurship"
+        ],
+        "actualCampuses": [
+          "Kuala Lumpur"
+        ],
+        "sourceCampuses": [
+          "Kuala Lumpur",
+          "Office of Research and Postgraduate Studies"
+        ],
+        "note": "Same official detail URL appears in multiple official contexts; retained as one canonical candidate with duplicate occurrence evidence."
+      },
+      {
+        "code": "UCSI-PHD-101",
+        "occurrenceCount": 2,
+        "duplicateRows": 1,
+        "sameDetailUrl": true,
+        "detailUrls": [
+          "https://www.ucsiuniversity.edu.my/programmes/doctor-philosophy-music-performance"
+        ],
+        "actualCampuses": [
+          "Kuala Lumpur"
+        ],
+        "sourceCampuses": [
+          "Kuala Lumpur",
+          "Office of Research and Postgraduate Studies"
+        ],
+        "note": "Same official detail URL appears in multiple official contexts; retained as one canonical candidate with duplicate occurrence evidence."
+      },
+      {
+        "code": "UCSI-PHD-102",
+        "occurrenceCount": 2,
+        "duplicateRows": 1,
+        "sameDetailUrl": true,
+        "detailUrls": [
+          "https://www.ucsiuniversity.edu.my/programmes/doctor-philosophy-music"
+        ],
+        "actualCampuses": [
+          "Kuala Lumpur"
+        ],
+        "sourceCampuses": [
+          "Kuala Lumpur",
+          "Office of Research and Postgraduate Studies"
+        ],
+        "note": "Same official detail URL appears in multiple official contexts; retained as one canonical candidate with duplicate occurrence evidence."
+      },
+      {
+        "code": "UCSI-MASTER-103",
+        "occurrenceCount": 2,
+        "duplicateRows": 1,
+        "sameDetailUrl": true,
+        "detailUrls": [
+          "https://www.ucsiuniversity.edu.my/programmes/mmus-performance-studies"
+        ],
+        "actualCampuses": [
+          "Kuala Lumpur"
+        ],
+        "sourceCampuses": [
+          "Kuala Lumpur",
+          "Office of Research and Postgraduate Studies"
+        ],
+        "note": "Same official detail URL appears in multiple official contexts; retained as one canonical candidate with duplicate occurrence evidence."
+      },
+      {
+        "code": "UCSI-MASTER-106",
+        "occurrenceCount": 2,
+        "duplicateRows": 1,
+        "sameDetailUrl": true,
+        "detailUrls": [
+          "https://www.ucsiuniversity.edu.my/programmes/master-science-policy-and-communication"
+        ],
+        "actualCampuses": [
+          "Kuala Lumpur"
+        ],
+        "sourceCampuses": [
+          "Kuala Lumpur",
+          "Office of Research and Postgraduate Studies"
+        ],
+        "note": "Same official detail URL appears in multiple official contexts; retained as one canonical candidate with duplicate occurrence evidence."
+      },
+      {
+        "code": "UCSI-MASTER-109",
+        "occurrenceCount": 2,
+        "duplicateRows": 1,
+        "sameDetailUrl": true,
+        "detailUrls": [
+          "https://www.ucsiuniversity.edu.my/programmes/master-business-administration-blue-ocean-strategy"
+        ],
+        "actualCampuses": [
+          "Kuching"
+        ],
+        "sourceCampuses": [
+          "Kuching",
+          "Office of Research and Postgraduate Studies"
+        ],
+        "note": "Same official detail URL appears in multiple official contexts; retained as one canonical candidate with duplicate occurrence evidence."
+      },
+      {
+        "code": "UCSI-PHD-115",
+        "occurrenceCount": 2,
+        "duplicateRows": 1,
+        "sameDetailUrl": true,
+        "detailUrls": [
+          "https://www.ucsiuniversity.edu.my/programmes/doctor-philosophy-medical-sciences"
+        ],
+        "actualCampuses": [
+          "Springhill (Lukut)"
+        ],
+        "sourceCampuses": [
+          "Office of Research and Postgraduate Studies",
+          "Springhill (Lukut)"
+        ],
+        "note": "Same official detail URL appears in multiple official contexts; retained as one canonical candidate with duplicate occurrence evidence."
+      }
+    ]
+  },
+  "specialLevelDecisions": [
+    {
+      "code": "UCSI-PHD-002",
+      "nameEnOfficial": "DBA (Doctor Of Business Administration)",
+      "level": "phd",
+      "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/dba-doctor-business-administration",
+      "decision": "Retained as phd because the official title is doctorate/PhD/DBA/Industrial PhD/Prior Publication."
+    },
+    {
+      "code": "UCSI-PHD-019",
+      "nameEnOfficial": "Doctor Of Philosophy (Science) By Prior Publication",
+      "level": "phd",
+      "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/doctor-philosophy-science-prior-publication",
+      "decision": "Retained as phd because the official title is doctorate/PhD/DBA/Industrial PhD/Prior Publication."
+    },
+    {
+      "code": "UCSI-PHD-037",
+      "nameEnOfficial": "Doctor Of Philosophy (Engineering) By Prior Publication",
+      "level": "phd",
+      "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/doctor-philosophy-engineering-prior-publication",
+      "decision": "Retained as phd because the official title is doctorate/PhD/DBA/Industrial PhD/Prior Publication."
+    },
+    {
+      "code": "UCSI-PHD-038",
+      "nameEnOfficial": "Industrial PhD In Engineering",
+      "level": "phd",
+      "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/industrial-phd-engineering",
+      "decision": "Retained as phd because the official title is doctorate/PhD/DBA/Industrial PhD/Prior Publication."
+    },
+    {
+      "code": "UCSI-BACHELOR-116",
+      "nameEnOfficial": "Doctor Of Medicine (MD)",
+      "level": "bachelor",
+      "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/doctor-medicine-md",
+      "decision": "Retained as bachelor because UCSI publishes the MD page in an undergraduate/Springhill bachelor context and the detail page duration/mode behaves as a first professional degree."
+    }
+  ]
+}

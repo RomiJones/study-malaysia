@@ -9,6 +9,22 @@ loadEnvFiles();
 async function bootstrap() {
   const app = await NestFactory.create(AppModule, { cors: true });
   app.setGlobalPrefix("api");
+  const rootInfo = {
+    name: "StudyMY API",
+    status: "ok",
+    apiBase: "/api",
+    endpoints: ["/api/status", "/api/universities", "/api/programs"]
+  };
+  const expressApp = app.getHttpAdapter().getInstance();
+  expressApp.get("/", (_request: unknown, response: { json: (body: unknown) => void }) => {
+    response.json(rootInfo);
+  });
+  expressApp.get("/health", (_request: unknown, response: { json: (body: unknown) => void }) => {
+    response.json({
+      status: "ok",
+      service: "studymy-api"
+    });
+  });
   app.useGlobalPipes(
     new ValidationPipe({
       whitelist: true,

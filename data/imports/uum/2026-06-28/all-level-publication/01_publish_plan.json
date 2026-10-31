@@ -1,0 +1,567 @@
+{
+  "schemaVersion": 1,
+  "createdAt": "2026-06-28T10:33:38.847Z",
+  "institution": {
+    "code": "UUM",
+    "shortName": "UUM",
+    "name": "Universiti Utara Malaysia",
+    "slug": "universiti-utara-malaysia-uum"
+  },
+  "authorization": "ian-requested-all-level-publication-after-review",
+  "sourceInputs": {
+    "undergraduateAudit": "audits/UUM_audit_undergraduate_20260627_reviewed_v6.json",
+    "masterAudit": "audits/UUM_audit_master_20260628_reviewed_v7.json",
+    "doctoralAudit": "audits/UUM_audit_doctoral_20260628_reviewed_v3.json",
+    "sourceAuditSafeToImport": false,
+    "sourceAuditReason": "StudyMY audit JSON stays safe_to_import=false by contract; this importer publishes only after Ian's explicit operator command."
+  },
+  "writePolicy": {
+    "importer": "apps/api/src/db/import-uum-official-all-level.ts",
+    "mode": "publish-all-level",
+    "upsertPrefix": "uum-public-20260628-",
+    "universityRow": "upsert by code UUM or slug universiti-utara-malaysia-uum",
+    "programmeRows": "upsert 105 current UUM all-level public rows and archive non-current UUM rows",
+    "transactional": true,
+    "backupRequired": true,
+    "frontendDesignPolicy": "data-only publication; no web component, style or layout edits"
+  },
+  "publicationPolicy": {
+    "readyRows": 105,
+    "undergraduateEquivalentIeltsRows": 37,
+    "officialTotalFeeRows": 38,
+    "calculatedFromOfficialRateRows": 67,
+    "officialRateFeeRows": 0,
+    "scalarTuitionRows": 105,
+    "rateOnlyDisplayRows": 0,
+    "durationKnownRows": 105,
+    "durationOfficialUnpublishedRows": 0,
+    "rationale": "UUM undergraduate list IELTS follows Ian's MUET-equivalent display instruction; UUM duration display uses official full-time/minimum duration evidence; UUM public tuition display now uses scalar total tuition only. Undergraduate rows use official HEA total fees; postgraduate rows use UUM official rates calculated against official duration or official credit-hour evidence, with mode-specific fee notes preserved in details.",
+    "undergraduateLanguageGateStats": {
+      "directIeltsRows": 1,
+      "noDirectIeltsRows": 37,
+      "languageSlotMismatchRows": 0,
+      "equivalentPathMisusedAsIeltsRows": 0,
+      "formOptionContaminationRows": 0,
+      "officialIeltsDistribution": {
+        "5.5": 1
+      }
+    },
+    "masterStrictFeeGateStats": {
+      "primaryFeePolicy": "public list/main tuition must be scalar total tuition; postgraduate totals are calculated from official UUM fee rates plus current official programme credit hours or official full-time minimum duration, with mode-specific fees preserved in details",
+      "totalProgrammesChecked": 61,
+      "programmePageDirectAmountRows": 0,
+      "programmePageDirectAmountMissRows": 61,
+      "supportingSourceOnlyRows": 61,
+      "officialDomainRows": 61,
+      "openHighFeeConflictRows": 0,
+      "readyWithSingleTuitionRows": 61,
+      "readyWithOfficialFeeRateNoteRows": 0,
+      "multiModeResolvedByIanPolicyRows": 61,
+      "decision": "PASS",
+      "calculatedFromOfficialRateRows": 61,
+      "newlyCalculatedTotalRows": 24
+    },
+    "doctoralStrictFeeGateStats": {
+      "primaryFeePolicy": "public list/main tuition must be scalar total tuition; doctoral totals are calculated from official UUM semester rates plus official full-time minimum duration, with coursework/pre-requisite/viva notes preserved in details",
+      "totalProgrammesChecked": 6,
+      "programmePageDirectAmountRows": 0,
+      "programmePageDirectAmountMissRows": 6,
+      "supportingSourceOnlyRows": 6,
+      "officialDomainRows": 6,
+      "openHighFeeConflictRows": 0,
+      "readyWithSingleTuitionRows": 6,
+      "readyWithOfficialFeeRateNoteRows": 0,
+      "excludedNotAvailableInternationalRows": 1,
+      "decision": "PASS",
+      "calculatedFromOfficialRateRows": 6,
+      "newlyCalculatedTotalRows": 6
+    }
+  },
+  "expectedSurface": {
+    "programmeCount": 105,
+    "byLevel": {
+      "bachelor": 38,
+      "master": 61,
+      "phd": 6
+    },
+    "summary": {
+      "importRows": 105,
+      "byLevel": {
+        "bachelor": 38,
+        "master": 61,
+        "phd": 6
+      },
+      "readyRows": 105,
+      "publishedRows": 105,
+      "uniqueSlugs": 105,
+      "officialTotalFeeRows": 38,
+      "calculatedFromOfficialRateRows": 67,
+      "officialRateFeeRows": 0,
+      "scalarTuitionRows": 105,
+      "rateOnlyDisplayRows": 0,
+      "languageRows": 105,
+      "undergraduateEquivalentIeltsRows": 37,
+      "durationKnownRows": 105,
+      "durationOfficialUnpublishedRows": 0,
+      "chineseNameRows": 105,
+      "chineseFacultyRows": 105,
+      "chineseCurriculumRows": 105,
+      "chineseCareerRows": 105,
+      "sourceRows": 105,
+      "publicDisplayStatusCounts": {
+        "ready": 105
+      },
+      "officialSourceStatusCounts": {
+        "official-verified": 105
+      },
+      "feeAuditStatusCounts": {
+        "matched-official": 38,
+        "calculated-from-official-rate": 67
+      }
+    },
+    "validationMeta": {
+      "undergraduate": {
+        "validatedBy": "study-audit-validator",
+        "validatedAt": "2026-06-27",
+        "originalAuditFile": "/Users/ian/Desktop/dev/study-malaysia/audits/UUM_audit_undergraduate_20260627.json",
+        "originalAuditDate": "2026-06-27",
+        "schemaStyle": "study-collector-current",
+        "validationVersion": "1.0.4",
+        "reviewVersion": 6,
+        "overallDecision": "PASS-WITH-EXCEPTIONS",
+        "qualityScore": {
+          "overall": 0.995,
+          "formatCompliance": 1,
+          "sourceValidity": 0.99,
+          "completeness": 0.995,
+          "safety": 1
+        },
+        "counts": {
+          "totalProgrammesValidated": 38,
+          "pass": 38,
+          "warn": 0,
+          "repair": 0,
+          "reject": 0,
+          "issuesFound": 15,
+          "issuesRepaired": 36,
+          "issuesPending": 2
+        },
+        "originalCounts": {
+          "ready": 12,
+          "needsReview": 26,
+          "exceptionQueue": 10
+        },
+        "reviewedCounts": {
+          "ready": 38,
+          "needsReview": 0,
+          "exceptionQueue": 10,
+          "pendingIssues": 2
+        },
+        "languageGateStats": {
+          "directIeltsRows": 1,
+          "noDirectIeltsRows": 37,
+          "languageSlotMismatchRows": 0,
+          "equivalentPathMisusedAsIeltsRows": 0,
+          "formOptionContaminationRows": 0,
+          "officialIeltsDistribution": {
+            "5.5": 1
+          }
+        },
+        "programmeNameGateStats": {
+          "bilingualProgrammeNameRows": 38,
+          "pureEnglishNameRows": 0,
+          "pureChineseNameRows": 0,
+          "namePrefixContaminationRows": 0,
+          "bilingualScopeLeakRows": 0
+        },
+        "qualityRuleCandidates": [
+          {
+            "ruleName": "Do not use MUET equivalence table as direct IELTS evidence",
+            "description": "When a university page has programme-specific MUET requirements plus a separate MUET-to-IELTS equivalence table, language.ielts must remain null unless the programme requirement itself directly states IELTS.",
+            "triggeredBy": "UUM HEA English Language Requirements page and SOC generic IELTS wording"
+          },
+          {
+            "ruleName": "Differentiate academic duration from fee charging semesters",
+            "description": "When official fee PDFs list chargeable semesters and programme pages list academic duration, do not overwrite duration without source-conflict review.",
+            "triggeredBy": "UUM local detail pages vs international fee PDF semester differences"
+          },
+          {
+            "ruleName": "Ready curriculum must not contain structure labels",
+            "description": "For publicDisplayStatus=ready, curriculum must contain actual Chinese course items or an official-unpublished status; section headings such as core/elective/major/track labels cannot be displayed as courses.",
+            "triggeredBy": "UUM undergraduate reviewed rows UU6210001, UU6224001, UU6222001, UU6222002 and UU6213001"
+          },
+          {
+            "ruleName": "Direct programme-page IELTS evidence can override equivalence-table caution only when slot evidence is explicit",
+            "description": "If a programme detail page directly states IELTS and TOEFL requirements in an admission language paragraph, IELTS may be written to language.ielts while MUET remains in language.muet; equivalence tables remain excluded.",
+            "triggeredBy": "UUM UU6481001 SOC programme page direct IELTS 5.5 evidence"
+          },
+          {
+            "ruleName": "Treat fee-table semesters as fee charging evidence, not academic duration",
+            "description": "When a fee PDF lists chargeable semesters and a school/faculty programme page or brochure lists academic duration/semester structure, use the school/faculty academic evidence for duration and keep fee semesters only in tuition notes.",
+            "triggeredBy": "UUM reviewed_v3 duration repairs for SMMTC, SQS, SBM and STHEM programmes"
+          },
+          {
+            "ruleName": "Programme-page intake months override academic-calendar registration months",
+            "description": "For programme-level intake data, use explicit intake months from the programme page; central academic-calendar registration dates should be recorded as calendar context and not overwrite programme intake.",
+            "triggeredBy": "UUM STHEM Hospitality/Tourism/Event programme pages"
+          },
+          {
+            "ruleName": "Official-unpublished detail fields may pass ready with explicit fieldStatus",
+            "description": "If official programme pages publish programme identity/admission/fee data but no curriculum or career detail after deep crawl, ready rows may keep empty arrays with fieldStatus official-unpublished so public UI displays 官网未公布 rather than invented data.",
+            "triggeredBy": "UUM SAPSP, STML and SCIMPA reviewed_v4 repairs"
+          },
+          {
+            "ruleName": "HEA international catalogue is identity source of truth for international undergraduate audit",
+            "description": "When faculty pages contain old/alternate codes but HEA international catalogue and fee PDF agree on code/name, use HEA for programme identity and retain faculty page only as supplementary curriculum source.",
+            "triggeredBy": "UUM UU6462002 reviewed_v4 repair"
+          },
+          {
+            "ruleName": "Official flyer SUBJECTS/SPECIALIZATION can be used as public curriculum topics with note",
+            "description": "When an official faculty flyer publishes a SUBJECTS or SPECIALIZATION list but no handbook-level full curriculum, use those items as curriculum topics with curriculumNote and fieldEvidence instead of blocking indefinitely.",
+            "triggeredBy": "UUM SEFB reviewed_v4 repairs"
+          },
+          {
+            "ruleName": "Official scanned or flipbook pages may be used after visual review with explicit evidence note",
+            "description": "When official PDFs or official-page-linked flipbooks are image-based and machine text extraction fails, rendered page visual review can repair curriculum fields if the reviewed pages are recorded; do not claim OCR/text extraction success.",
+            "triggeredBy": "UUM SoIS scanned academic handbooks and SOL official FlipHTML5 LL.B handbook"
+          }
+        ],
+        "repairPolicy": "No invented curriculum values. Official flyer SUBJECTS, scanned PDF visual review and official FlipHTML5 page images were used only when tied to official university pages; unknown public fields remain official-unpublished.",
+        "repairRound": 5,
+        "round2RepairSummary": {
+          "curriculumRowsRestoredToReady": [
+            "UU6213001",
+            "UU6222001",
+            "UU6222002",
+            "UU6224001"
+          ],
+          "languageRowsRestoredToReady": [
+            "UU6481001"
+          ],
+          "remainingNeedsReviewReason": "official source conflicts, official unpublished fields, incomplete curriculum evidence, OCR/source-authority blockers or Ian decision required"
+        },
+        "round3RepairSummary": {
+          "durationRowsRestoredToReady": [
+            "UU6321001",
+            "UU6461001",
+            "UU6462001",
+            "UU6345003",
+            "UU6345011"
+          ],
+          "durationAndIntakeRowsRestoredToReady": [
+            "UU6811001",
+            "UU6812001",
+            "UU6812002"
+          ],
+          "remainingNeedsReviewReason": "official unpublished fields, incomplete curriculum evidence, OCR/FlipHTML5 blockers, programme identity/source conflict, or curriculum category-only evidence"
+        },
+        "round4RepairSummary": {
+          "officialUnpublishedRowsRestoredToReady": [
+            "UU6762001",
+            "UU6762002",
+            "UU6210001",
+            "UU6481002",
+            "UU6840001",
+            "UU6345012"
+          ],
+          "identityOrCurriculumConflictRowsRestoredToReady": [
+            "UU6462002",
+            "UU6343002"
+          ],
+          "sefbRowsRestoredToReady": [
+            "UU6314001",
+            "UU6343001",
+            "UU6343004"
+          ],
+          "accountingRowsRestoredToReady": [
+            "UU6344001",
+            "UU6344002"
+          ],
+          "remainingNeedsReview": [
+            "UU6343003",
+            "UU6345004",
+            "UU6345006",
+            "UU6345007",
+            "UU6380001"
+          ]
+        },
+        "round5RepairSummary": {
+          "sefbRowsRestoredToReady": [
+            "UU6343003",
+            "UU6345004"
+          ],
+          "soisRowsRestoredToReadyByVisualPdfReview": [
+            "UU6345006",
+            "UU6345007"
+          ],
+          "solRowsRestoredToReadyByFliphtml5VisualReview": [
+            "UU6380001"
+          ],
+          "remainingNeedsReview": [],
+          "remainingPendingIssues": [
+            "EXCEPTION-01",
+            "EXCEPTION-02"
+          ],
+          "note": "All 38 undergraduate programmes are publicDisplayStatus=ready. Remaining pending issues are global quality/source caveats and do not represent programme-level needs-review rows."
+        },
+        "durationRepairReviewedAt": "2026-06-28",
+        "durationRepairPolicy": "Official-only duration repair. Direct year values are adopted from official programme guide pages; official semester counts are normalized to years for StudyMY list display."
+      },
+      "master": {
+        "validatedBy": "study-audit-validator",
+        "validatedAt": "2026-06-28",
+        "originalAuditFile": "audits/UUM_audit_master_20260628_reviewed_v4.json",
+        "originalAuditDate": "2026-06-28",
+        "schemaStyle": "study-collector-current",
+        "validationVersion": "1.0.5",
+        "reviewVersion": 6,
+        "overallDecision": "PASS",
+        "qualityScore": {
+          "overall": 0.99,
+          "formatCompliance": 1,
+          "sourceValidity": 0.98,
+          "completeness": 1,
+          "safety": 1
+        },
+        "counts": {
+          "totalProgrammesValidated": 61,
+          "pass": 61,
+          "warn": 0,
+          "repair": 0,
+          "reject": 0,
+          "issuesFound": 28,
+          "issuesRepaired": 210,
+          "issuesPending": 0
+        },
+        "languageGateStats": {
+          "directIeltsRows": 61,
+          "noDirectIeltsRows": 0,
+          "languageSlotMismatchRows": 0,
+          "equivalentPathMisusedAsIeltsRows": 0,
+          "formOptionContaminationRows": 0,
+          "officialIeltsDistribution": {
+            "6": 20,
+            "5.5": 41
+          }
+        },
+        "programmeNameGateStats": {
+          "bilingualProgrammeNameRows": 61,
+          "pureEnglishNameRows": 0,
+          "pureChineseNameRows": 0,
+          "namePrefixContaminationRows": 0,
+          "bilingualScopeLeakRows": 0
+        },
+        "qualityRuleCandidates": [
+          {
+            "issuePattern": "课程中文字段出现“相关专题”等机器占位翻译，形式上是中文但不具备公开展示质量。",
+            "evidence": "UUM master audit validation found placeholder strings in 38 programme curriculum arrays.",
+            "proposedGate": "V56 应增加占位词扫描：相关专题、翻译待补充、localization pending、纯英文课程项、异常括号残片均不得 ready。",
+            "affectedSkillReference": "study-audit-validator V56 / study-collector field-rules curriculum"
+          },
+          {
+            "issuePattern": "UUM Project Paper 标题、课程代码与总学分存在口径冲突时，费用不能按单一 credit-hour 公式计算。",
+            "evidence": "Rows 47/48/50 show Project Paper (6 credit hours) but BPMZ69912 Research Paper and 42 total credits.",
+            "proposedGate": "V55 应阻断 project/research paper 学分冲突导致的 tuitionMYR 自动计算。",
+            "affectedSkillReference": "study-audit-validator V55 / study-collector fee rules"
+          },
+          {
+            "issuePattern": "官方硕士多模式/研究型项目无法压成单一全程学费，但用户业务规则允许详情页展示不同模式费率说明。",
+            "evidence": "Ian confirmed policy in Codex thread on 2026-06-28.",
+            "proposedGate": "Validator 应区分 “commercial ready with single tuitionMYR” 与 “ready with official fee-rate note”，不要把非单一官方费率一律判为采集失败。",
+            "affectedSkillReference": "study-audit-validator V55 / StudyMY public detail fee display"
+          },
+          {
+            "issuePattern": "中文列表学院字段含英文缩写或英文学院名，虽然不是完整英文句子但仍违反学院只显示中文规则。",
+            "evidence": "UUM master reviewed_v2 contained facultyZh = UUM 商学院研究生事务部.",
+            "proposedGate": "V54/V59-V62 应将 facultyZh 中的英文缩写和英文机构名视为中文列表学院泄漏，除非 Ian 明确允许品牌缩写。",
+            "affectedSkillReference": "study-audit-validator V54 / V59-V62 multilingual interface isolation"
+          },
+          {
+            "issuePattern": "多模式专业课程应以中文扁平数组保留所有官方可见课程项，不把 Mode/Core/Elective 等源站结构写入 public 字段。",
+            "evidence": "UUM master reviewed_v4 repaired remaining 25 curriculum rows from official Programme Structure pages.",
+            "proposedGate": "collector 和 validator 均应在课程字段输出前扫描源站分组标签与占位词。",
+            "affectedSkillReference": "study-collector field-rules curriculum / study-audit-validator V56"
+          }
+        ],
+        "policyDecisions": [
+          {
+            "decidedBy": "Ian",
+            "decidedAt": "2026-06-28",
+            "scope": "UUM master multi-mode/research tuition",
+            "decision": "Ian 业务规则确认：多模式专业可在详情页标注不同模式与费用口径，不再因存在多个模式自动阻断；费用/课程页面内部口径冲突时，以最新官方专业介绍页明示文字和年份为优先。",
+            "application": "Resolved tuition/studyMode pending blockers; curriculum pending remains separate."
+          },
+          {
+            "decidedBy": "Ian",
+            "decidedAt": "2026-06-28",
+            "scope": "StudyMY Chinese programme list display",
+            "decision": "专业列表中专业名称需要中英文双语；学院只显示中文，不显示英文学院名或中英双语学院名。",
+            "application": "facultyZh must be Chinese-only for zh-CN/zh-TW list display; faculty remains official English for en/ms display."
+          }
+        ],
+        "strictFeeGateStats": {
+          "primaryFeePolicy": "public list/main tuition must be scalar total tuition; postgraduate totals are calculated from official UUM fee rates plus current official programme credit hours or official full-time minimum duration, with mode-specific fees preserved in details",
+          "totalProgrammesChecked": 61,
+          "programmePageDirectAmountRows": 0,
+          "programmePageDirectAmountMissRows": 61,
+          "supportingSourceOnlyRows": 61,
+          "officialDomainRows": 61,
+          "openHighFeeConflictRows": 0,
+          "readyWithSingleTuitionRows": 61,
+          "readyWithOfficialFeeRateNoteRows": 0,
+          "multiModeResolvedByIanPolicyRows": 61,
+          "decision": "PASS",
+          "calculatedFromOfficialRateRows": 61,
+          "newlyCalculatedTotalRows": 24
+        },
+        "durationRepairReviewedAt": "2026-06-28",
+        "durationRepairPolicy": "UUM Postgraduate Academic Handbook 2026 section 10 is the duration authority. StudyMY list uses the official full-time minimum numeric duration; mode/range notes remain in details.",
+        "durationRepairStats": {
+          "totalDurationRepaired": 61,
+          "masterResearchRows": 19,
+          "masterCourseworkMixedRows": 42,
+          "readyDurationRows": 61
+        }
+      },
+      "doctoral": {
+        "validatedBy": "study-audit-validator",
+        "validatedAt": "2026-06-28",
+        "originalAuditFile": "audits/UUM_audit_doctoral_20260628.json",
+        "originalAuditDate": "2026-06-28",
+        "schemaStyle": "study-collector-current",
+        "validationVersion": "1.0.5",
+        "reviewVersion": 2,
+        "overallDecision": "PASS",
+        "qualityScore": {
+          "overall": 0.99,
+          "formatCompliance": 1,
+          "sourceValidity": 0.99,
+          "completeness": 1,
+          "safety": 1
+        },
+        "counts": {
+          "totalProgrammesValidated": 6,
+          "pass": 6,
+          "warn": 0,
+          "repair": 0,
+          "reject": 0,
+          "issuesFound": 1,
+          "issuesRepaired": 1,
+          "issuesPending": 0
+        },
+        "languageGateStats": {
+          "directIeltsRows": 6,
+          "noDirectIeltsRows": 0,
+          "languageSlotMismatchRows": 0,
+          "equivalentPathMisusedAsIeltsRows": 0,
+          "formOptionContaminationRows": 0,
+          "officialIeltsDistribution": {
+            "6": 4,
+            "5.5": 2
+          }
+        },
+        "programmeNameGateStats": {
+          "bilingualProgrammeNameRows": 6,
+          "pureEnglishNameRows": 0,
+          "pureChineseNameRows": 0,
+          "namePrefixContaminationRows": 0,
+          "bilingualScopeLeakRows": 0
+        },
+        "strictFeeGateStats": {
+          "primaryFeePolicy": "public list/main tuition must be scalar total tuition; doctoral totals are calculated from official UUM semester rates plus official full-time minimum duration, with coursework/pre-requisite/viva notes preserved in details",
+          "totalProgrammesChecked": 6,
+          "programmePageDirectAmountRows": 0,
+          "programmePageDirectAmountMissRows": 6,
+          "supportingSourceOnlyRows": 6,
+          "officialDomainRows": 6,
+          "openHighFeeConflictRows": 0,
+          "readyWithSingleTuitionRows": 6,
+          "readyWithOfficialFeeRateNoteRows": 0,
+          "excludedNotAvailableInternationalRows": 1,
+          "decision": "PASS",
+          "calculatedFromOfficialRateRows": 6,
+          "newlyCalculatedTotalRows": 6
+        },
+        "qualityRuleCandidates": [
+          {
+            "issuePattern": "博士专业页含国际申请信号，但官方费用表标注 Malaysian only 或无 Non-Malaysian fee row。",
+            "evidence": "UUM Doctor of Management page/OYAGSB page has general international application signals; 2026 handbook fee table says Doctor of Management (Full-time & Malaysian only).",
+            "proposedGate": "Doctoral fee gate 应阻断把本地费用、普通 PhD 费率或其他博士类别费率套用到该专业国际学生费用；必须 needs-review 等待 Ian/学校确认。",
+            "affectedSkillReference": "study-collector fee rules / quality-gate Q17,Q24"
+          },
+          {
+            "issuePattern": "官方年度 handbook 与旧专业页面课程结构不一致时，需优先采用最新年度 handbook 或最新专业介绍页。",
+            "evidence": "UUM DBA central page contains older course list, while 2026 handbook updates DBA to Business Fields 18 credits + Research Method 15 credits + Dissertation 49 credits.",
+            "proposedGate": "Phase 3 应记录 sourcePriorityPolicy，并把非采纳旧结构写入 fieldEvidence 或 remarks，避免旧页面覆盖年度手册。",
+            "affectedSkillReference": "study-collector deep-crawl-protocol / field-rules curriculum"
+          },
+          {
+            "issuePattern": "官方博士项目费用表明确 Malaysian only 时，应排除出国际学生公开 baseline，而不是保留为缺失费用 needs-review。",
+            "evidence": "UUM Doctor of Management: UUM Postgraduate Fees and 2026 Postgraduate Academic Handbook both label the fee row as Full-time & Malaysian only.",
+            "proposedGate": "collector/reviewer 应支持 not-available-international exclusion decision，并在 sourceRegistry.excludedProgrammeRows 保留证据。",
+            "affectedSkillReference": "study-collector programme-baseline / study-audit-validator strictFeeGateStats"
+          }
+        ],
+        "policyDecisions": [
+          {
+            "decidedBy": "Ian",
+            "decidedAt": "2026-06-28",
+            "scope": "UUM Doctor of Management international eligibility",
+            "decision": "标准不适用国际学生。",
+            "application": "Excluded from international doctoral programmes; no longer counted as needs-review."
+          }
+        ],
+        "durationRepairReviewedAt": "2026-06-28",
+        "durationRepairPolicy": "UUM Postgraduate Academic Handbook 2026 section 10.4 is the duration authority for doctoral mixed-mode/research rows. Ed.D retains its official page rule; details preserve source notes.",
+        "durationRepairStats": {
+          "totalDurationRepaired": 5,
+          "readyDurationRows": 6
+        }
+      }
+    },
+    "pendingIssues": {
+      "undergraduate": [
+        {
+          "issueId": "EXCEPTION-01",
+          "programmeIndex": null,
+          "programmeNameEn": null,
+          "field": "language.ielts",
+          "issueType": "quality-rule-regression",
+          "priority": "P2",
+          "description": "HEA 页面同时存在逐专业 MUET 表、EPC IELTS 说明和 MUET-to-IELTS equivalence table；采集时必须阻断把等效表或 EPC 说明写入 IELTS。",
+          "requiresIanDecision": true,
+          "suggestedAction": "该模式已命中 skill 的语言成绩不得串字段门禁；后续验收继续检查 IELTS 必须为 null。",
+          "evidence": [
+            {
+              "sourceUrl": "http://hea.uum.edu.my/index.php/undergraduate-international#english",
+              "value": "Programme table gives MUET Band; equivalence table lists IELTS values separately."
+            }
+          ]
+        },
+        {
+          "issueId": "EXCEPTION-02",
+          "programmeIndex": null,
+          "programmeNameEn": null,
+          "field": "officialFeeSourceUrl",
+          "issueType": "source-authority-ambiguous",
+          "priority": "P3",
+          "description": "国际本科费用 PDF 由 HEA 官方页面链接，但托管在 Google Drive。",
+          "requiresIanDecision": false,
+          "suggestedAction": "保留为官方页面外链证据；验收时可确认是否接受 Google Drive 托管的 HEA 外链。",
+          "evidence": [
+            {
+              "sourceUrl": "http://hea.uum.edu.my/index.php/undergraduate-international#fees",
+              "value": "Click here links to Google Drive fee PDF"
+            },
+            {
+              "sourceUrl": "https://drive.google.com/file/d/1ZBVne2hdOeI7gqIGaaGLyklMKNMRppOE/view?usp=drive_link",
+              "value": "Official fee PDF"
+            }
+          ]
+        }
+      ],
+      "master": [],
+      "doctoral": []
+    }
+  }
+}

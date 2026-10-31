@@ -48,13 +48,17 @@
         "academicRequirementSummary": "A Senior High School Certificate or equivalent pre – university qualifications. See more details for the entry requirements based on country; and Pass the English Proficiency requirements; and Pass the UTM interview (for Bachelor of Architecture & Bachelor of Science Industrial Design).",
         "languageRequirementStatus": "official-linked-page-not-parsed",
         "countryRequirementStatus": "official-country-table-present",
-        "healthRequirementStatus": "official-linked-form-present"
+        "healthRequirementStatus": "official-linked-form-present",
+        "chinaRequirementByField": {
+          "Engineering": "Senior Secondary School Graduation Certificate, or Graduation Certificate from a Vocational / Technical Secondary School (Zhixiao / Zhigao) or Skilled Worker School (Jixiao); scores of at least 70% in Mathematics and Physics, plus Chemistry or Biology.",
+          "Social Science": "Senior Secondary School Graduation Certificate, or Graduation Certificate from a Vocational / Technical Secondary School (Zhixiao / Zhigao) or Skilled Worker School (Jixiao); scores of at least 70% in any three accepted subjects, including Mathematics, Physics, Biology, Chemistry, Geography, Economy, Accounting, Business Management, ICT, Computer Science, Programming, Computing, Art and Design, or Visual Arts."
+        }
       },
       "languageRequirements": {
         "status": "official-general-rule",
         "sourceText": "Undergraduate candidates joining UTM from September 2023 must meet one English language route; the general undergraduate table applies to all programmes except TESL.",
         "scores": {
-          "MUET": 4.0,
+          "MUET": 4,
           "IELTS": 5.5,
           "TOEFL_iBT": 46,
           "PTE_Academic": 51,
@@ -88,14 +92,14 @@
         "sourceId": "programme-detail-013",
         "sourceUrl": "https://fke.utm.my/undergraduate/",
         "sourcePath": "data/imports/utm/2026-06-16/undergraduate/sources/programme-details/013-fke-utm-my-undergraduate.html",
-        "anchorScore": 1.0,
+        "anchorScore": 1,
         "officialDetailTitle": "Undergraduate Programme | Faculty of Electrical Engineering UTM",
         "overviewText": "The Bachelor of Biomedical Engineering with Honours programme is designed to provide a comprehensive academic study that aim to equip and train the students with theoretical knowledge and practical skills in order to help",
         "duration": {
           "status": "programme-specific",
           "officialText": "Minimum 4 years, Maximum 6 years",
-          "minYears": 4.0,
-          "maxYears": 6.0,
+          "minYears": 4,
+          "maxYears": 6,
           "sourceId": "fke-biomedical-booklet-2025-2026",
           "sourceUrl": "https://fke.utm.my/wp-content/uploads/2025/09/SKEB-Booklet-20252026-Both-Intake.pdf",
           "sourcePath": "data/imports/utm/2026-06-16/undergraduate/sources/supplemental-pdfs/SKEB-Booklet-20252026-Both-Intake.pdf"
@@ -153,13 +157,17 @@
         "academicRequirementSummary": "A Senior High School Certificate or equivalent pre – university qualifications. See more details for the entry requirements based on country; and Pass the English Proficiency requirements; and Pass the UTM interview (for Bachelor of Architecture & Bachelor of Science Industrial Design).",
         "languageRequirementStatus": "official-linked-page-not-parsed",
         "countryRequirementStatus": "official-country-table-present",
-        "healthRequirementStatus": "official-linked-form-present"
+        "healthRequirementStatus": "official-linked-form-present",
+        "chinaRequirementByField": {
+          "Engineering": "Senior Secondary School Graduation Certificate, or Graduation Certificate from a Vocational / Technical Secondary School (Zhixiao / Zhigao) or Skilled Worker School (Jixiao); scores of at least 70% in Mathematics and Physics, plus Chemistry or Biology.",
+          "Social Science": "Senior Secondary School Graduation Certificate, or Graduation Certificate from a Vocational / Technical Secondary School (Zhixiao / Zhigao) or Skilled Worker School (Jixiao); scores of at least 70% in any three accepted subjects, including Mathematics, Physics, Biology, Chemistry, Geography, Economy, Accounting, Business Management, ICT, Computer Science, Programming, Computing, Art and Design, or Visual Arts."
+        }
       },
       "languageRequirements": {
         "status": "official-general-rule",
         "sourceText": "Undergraduate candidates joining UTM from September 2023 must meet one English language route; the general undergraduate table applies to all programmes except TESL.",
         "scores": {
-          "MUET": 4.0,
+          "MUET": 4,
           "IELTS": 5.5,
           "TOEFL_iBT": 46,
           "PTE_Academic": 51,
@@ -193,14 +201,14 @@
         "sourceId": "programme-detail-014",
         "sourceUrl": "https://fkt.utm.my/bachelor-of-chemical-engineering-2/",
         "sourcePath": "data/imports/utm/2026-06-16/undergraduate/sources/programme-details/014-fkt-utm-my-bachelor-of-chemical-engineering-2.html",
-        "anchorScore": 1.0,
+        "anchorScore": 1,
         "officialDetailTitle": "Bachelor of Engineering (Chemical) | Faculty of Chemical & Energy Engineering",
         "overviewText": "Apart from chemical engineering theories, students are also exposed to practical aspects of the field. Every area mentioned before has its own practical or laboratory sessions. The students are also required to prepare a project report to train them to integrate technical knowledge with communication and management in carrying out a task. For the group exercise, the students are required to complete a plant design as mentioned before. In addition, students will also carry out a bachelor’s level research project, in which they will individually work under the supervision of a lecturer. At the end of the design and research work, the students are required to prepare a thesis and give an oral presentation, which will be evaluated by internal and external examiners.",
         "duration": {
           "status": "programme-specific",
           "officialText": "Minimum : 4 yrs Maximum : 6 yrs",
-          "minYears": 4.0,
-          "maxYears": 6.0
+          "minYears": 4,
+          "maxYears": 6
         },
         "studyMode": "Full Time",
         "languageOfInstruction": "English and Bahasa Melayu",
@@ -252,13 +260,17 @@
         "academicRequirementSummary": "A Senior High School Certificate or equivalent pre – university qualifications. See more details for the entry requirements based on country; and Pass the English Proficiency requirements; and Pass the UTM interview (for Bachelor of Architecture & Bachelor of Science Industrial Design).",
         "languageRequirementStatus": "official-linked-page-not-parsed",
         "countryRequirementStatus": "official-country-table-present",
-        "healthRequirementStatus": "official-linked-form-present"
+        "healthRequirementStatus": "official-linked-form-present",
+        "chinaRequirementByField": {
+          "Engineering": "Senior Secondary School Graduation Certificate, or Graduation Certificate from a Vocational / Technical Secondary School (Zhixiao / Zhigao) or Skilled Worker School (Jixiao); scores of at least 70% in Mathematics and Physics, plus Chemistry or Biology.",
+          "Social Science": "Senior Secondary School Graduation Certificate, or Graduation Certificate from a Vocational / Technical Secondary School (Zhixiao / Zhigao) or Skilled Worker School (Jixiao); scores of at least 70% in any three accepted subjects, including Mathematics, Physics, Biology, Chemistry, Geography, Economy, Accounting, Business Management, ICT, Computer Science, Programming, Computing, Art and Design, or Visual Arts."
+        }
       },
       "languageRequirements": {
         "status": "official-general-rule",
         "sourceText": "Undergraduate candidates joining UTM from September 2023 must meet one English language route; the general undergraduate table applies to all programmes except TESL.",
         "scores": {
-          "MUET": 4.0,
+          "MUET": 4,
           "IELTS": 5.5,
           "TOEFL_iBT": 46,
           "PTE_Academic": 51,
@@ -292,14 +304,14 @@
         "sourceId": "programme-detail-017",
         "sourceUrl": "https://fkt.utm.my/bachelor-of-nuclear-engineering-2/",
         "sourcePath": "data/imports/utm/2026-06-16/undergraduate/sources/programme-details/017-fkt-utm-my-bachelor-of-nuclear-engineering-2.html",
-        "anchorScore": 1.0,
+        "anchorScore": 1,
         "officialDetailTitle": "Bachelor of Nuclear Engineering | Faculty of Chemical & Energy Engineering",
         "overviewText": "Nuclear engineering deals with the practical applications of nuclear processes. The main objective of this programme is to train and prepare students to become nuclear engineers with the capability in designing, producing and constructing in the aspects of research and development (R&D), maintenance, sales, consultancy, education, and training. Nuclear engineering is based upon the extensive use of mathematics and physical principles. These principles are applied to radioactivity, nuclear interactions and the interaction of radiation with materials. Further applications require the knowledge of energy removal and conversion, materials science, instrumentation and control, and chemistry. The programme is designed such that the graduates are be able to perform tasks and functions for nuclear power related fields which primarily require nuclear-related qualifications in both design and construction in the operation of a nuclear power plant and in other nuclear related industries.",
         "duration": {
           "status": "programme-specific",
           "officialText": "Minimum : 4 yrs Maximum : 6 yrs",
-          "minYears": 4.0,
-          "maxYears": 6.0
+          "minYears": 4,
+          "maxYears": 6
         },
         "studyMode": "Full Time",
         "languageOfInstruction": "English and Bahasa Melayu",
@@ -351,13 +363,17 @@
         "academicRequirementSummary": "A Senior High School Certificate or equivalent pre – university qualifications. See more details for the entry requirements based on country; and Pass the English Proficiency requirements; and Pass the UTM interview (for Bachelor of Architecture & Bachelor of Science Industrial Design).",
         "languageRequirementStatus": "official-linked-page-not-parsed",
         "countryRequirementStatus": "official-country-table-present",
-        "healthRequirementStatus": "official-linked-form-present"
+        "healthRequirementStatus": "official-linked-form-present",
+        "chinaRequirementByField": {
+          "Engineering": "Senior Secondary School Graduation Certificate, or Graduation Certificate from a Vocational / Technical Secondary School (Zhixiao / Zhigao) or Skilled Worker School (Jixiao); scores of at least 70% in Mathematics and Physics, plus Chemistry or Biology.",
+          "Social Science": "Senior Secondary School Graduation Certificate, or Graduation Certificate from a Vocational / Technical Secondary School (Zhixiao / Zhigao) or Skilled Worker School (Jixiao); scores of at least 70% in any three accepted subjects, including Mathematics, Physics, Biology, Chemistry, Geography, Economy, Accounting, Business Management, ICT, Computer Science, Programming, Computing, Art and Design, or Visual Arts."
+        }
       },
       "languageRequirements": {
         "status": "official-general-rule",
         "sourceText": "Undergraduate candidates joining UTM from September 2023 must meet one English language route; the general undergraduate table applies to all programmes except TESL.",
         "scores": {
-          "MUET": 4.0,
+          "MUET": 4,
           "IELTS": 5.5,
           "TOEFL_iBT": 46,
           "PTE_Academic": 51,
@@ -391,14 +407,14 @@
         "sourceId": "programme-detail-016",
         "sourceUrl": "https://fkt.utm.my/bachelor-of-engineering-chemical-bioprocess-2/",
         "sourcePath": "data/imports/utm/2026-06-16/undergraduate/sources/programme-details/016-fkt-utm-my-bachelor-of-engineering-chemical-bioprocess-2.html",
-        "anchorScore": 1.0,
+        "anchorScore": 1,
         "officialDetailTitle": "Bachelor of Engineering (Chemical-Bioprocess) | Faculty of Chemical & Energy Engineering",
         "overviewText": "is an engineering dicipline where biotechnology and natural based products research are being transformed to industrial setting to fuel the current and future world economic powerhouses. In this program, various engineering principles especially chemical and bioprocess are applied to design, develop and evaluate processes that utilize biological based materials (eg:animals, plants, microorganisms) to produce products. Throughout our four years of intensive training and industrial exposure, students will experience state-of-the-art-technologies that will pave the way for professional bioprocess engineering qualifications. The graduates will be well versed in mathematical-based engineering analysis that will be enable them to explain the physical, biological and chemical processes of complex biological systems and design processes that will yield products which could create wealth, promote health and promote sustainability. The sectors served by bioprocess engineers are in the area of medical, food, environment, agriculture and many more.",
         "duration": {
           "status": "programme-specific",
           "officialText": "Minimum : 4 yrs Maximum : 6 yrs",
-          "minYears": 4.0,
-          "maxYears": 6.0
+          "minYears": 4,
+          "maxYears": 6
         },
         "studyMode": "Full Time",
         "languageOfInstruction": "English and Bahasa Melayu",
@@ -450,13 +466,17 @@
         "academicRequirementSummary": "A Senior High School Certificate or equivalent pre – university qualifications. See more details for the entry requirements based on country; and Pass the English Proficiency requirements; and Pass the UTM interview (for Bachelor of Architecture & Bachelor of Science Industrial Design).",
         "languageRequirementStatus": "official-linked-page-not-parsed",
         "countryRequirementStatus": "official-country-table-present",
-        "healthRequirementStatus": "official-linked-form-present"
+        "healthRequirementStatus": "official-linked-form-present",
+        "chinaRequirementByField": {
+          "Engineering": "Senior Secondary School Graduation Certificate, or Graduation Certificate from a Vocational / Technical Secondary School (Zhixiao / Zhigao) or Skilled Worker School (Jixiao); scores of at least 70% in Mathematics and Physics, plus Chemistry or Biology.",
+          "Social Science": "Senior Secondary School Graduation Certificate, or Graduation Certificate from a Vocational / Technical Secondary School (Zhixiao / Zhigao) or Skilled Worker School (Jixiao); scores of at least 70% in any three accepted subjects, including Mathematics, Physics, Biology, Chemistry, Geography, Economy, Accounting, Business Management, ICT, Computer Science, Programming, Computing, Art and Design, or Visual Arts."
+        }
       },
       "languageRequirements": {
         "status": "official-general-rule",
         "sourceText": "Undergraduate candidates joining UTM from September 2023 must meet one English language route; the general undergraduate table applies to all programmes except TESL.",
         "scores": {
-          "MUET": 4.0,
+          "MUET": 4,
           "IELTS": 5.5,
           "TOEFL_iBT": 46,
           "PTE_Academic": 51,
@@ -490,14 +510,14 @@
         "sourceId": "programme-detail-015",
         "sourceUrl": "https://fkt.utm.my/bachelor-of-chemical-gas-2/",
         "sourcePath": "data/imports/utm/2026-06-16/undergraduate/sources/programme-details/015-fkt-utm-my-bachelor-of-chemical-gas-2.html",
-        "anchorScore": 1.0,
+        "anchorScore": 1,
         "officialDetailTitle": "Bachelor of Engineering (Chemical-Gas) | Faculty of Chemical & Energy Engineering",
         "overviewText": "Knowledge in chemical engineering will enable the graduates to also work in petrochemical industries, oleo chemical industries, manufacturing industries, governmental and private sectors. Our graduates can apply to company such as PETRONAS, SHELL, EXXONMOBIL, Energy Commission of Malaysia, Gas Malaysia Sdn Bhd, SIRIM, DOSH, NIOSH, Consultant company and service industry. Chemical (gas) graduates can also involve in teaching and R&D at higher learning institutions and research centers.",
         "duration": {
           "status": "programme-specific",
           "officialText": "Minimum : 4 yrs Maximum : 6 yrs",
-          "minYears": 4.0,
-          "maxYears": 6.0
+          "minYears": 4,
+          "maxYears": 6
         },
         "studyMode": "Full Time",
         "languageOfInstruction": "English and Bahasa Melayu",
@@ -549,13 +569,17 @@
         "academicRequirementSummary": "A Senior High School Certificate or equivalent pre – university qualifications. See more details for the entry requirements based on country; and Pass the English Proficiency requirements; and Pass the UTM interview (for Bachelor of Architecture & Bachelor of Science Industrial Design).",
         "languageRequirementStatus": "official-linked-page-not-parsed",
         "countryRequirementStatus": "official-country-table-present",
-        "healthRequirementStatus": "official-linked-form-present"
+        "healthRequirementStatus": "official-linked-form-present",
+        "chinaRequirementByField": {
+          "Engineering": "Senior Secondary School Graduation Certificate, or Graduation Certificate from a Vocational / Technical Secondary School (Zhixiao / Zhigao) or Skilled Worker School (Jixiao); scores of at least 70% in Mathematics and Physics, plus Chemistry or Biology.",
+          "Social Science": "Senior Secondary School Graduation Certificate, or Graduation Certificate from a Vocational / Technical Secondary School (Zhixiao / Zhigao) or Skilled Worker School (Jixiao); scores of at least 70% in any three accepted subjects, including Mathematics, Physics, Biology, Chemistry, Geography, Economy, Accounting, Business Management, ICT, Computer Science, Programming, Computing, Art and Design, or Visual Arts."
+        }
       },
       "languageRequirements": {
         "status": "official-general-rule",
         "sourceText": "Undergraduate candidates joining UTM from September 2023 must meet one English language route; the general undergraduate table applies to all programmes except TESL.",
         "scores": {
-          "MUET": 4.0,
+          "MUET": 4,
           "IELTS": 5.5,
           "TOEFL_iBT": 46,
           "PTE_Academic": 51,
@@ -589,14 +613,14 @@
         "sourceId": "programme-detail-018",
         "sourceUrl": "https://fkt.utm.my/bachelor-of-petroleum-eng/",
         "sourcePath": "data/imports/utm/2026-06-16/undergraduate/sources/programme-details/018-fkt-utm-my-bachelor-of-petroleum-eng.html",
-        "anchorScore": 1.0,
+        "anchorScore": 1,
         "officialDetailTitle": "Bachelor of Engineering (Petroleum) | Faculty of Chemical & Energy Engineering",
         "overviewText": "Over the years, we have been assisted by experienced advisory panels from oil and gas industry and renowned universities in improving our academic curriculum so that it is of high quality and relevant to the needs of oil and gas industry. Industry practitioners are invited every semester to give professional talks to all petroleum students on latest technology and contemporary oil and gas related issues. There are numerous opportunities for our students to participate in student organizations. The Society of Petroleum Engineers’ Student Chapter (SPE-UTM) has been among the most active in the Asia-Pacific region over the past few years. The presence of international students from Kazakhstan, Yemen, Somalia, Singapore, Nigeria, China, Sudan, Indonesia, Iran, Uganda, Indonesia, etc. at the Department of Petroleum Engineering has further complemented our effort in producing well-rounded petroleum graduates who are ready to face the challenges in global oil and gas industry.",
         "duration": {
           "status": "programme-specific",
           "officialText": "Minimum : 4 yrs Maximum : 6 yrs",
-          "minYears": 4.0,
-          "maxYears": 6.0
+          "minYears": 4,
+          "maxYears": 6
         },
         "studyMode": "Full Time",
         "languageOfInstruction": "English and Malay",
@@ -649,13 +673,17 @@
         "academicRequirementSummary": "A Senior High School Certificate or equivalent pre – university qualifications. See more details for the entry requirements based on country; and Pass the English Proficiency requirements; and Pass the UTM interview (for Bachelor of Architecture & Bachelor of Science Industrial Design).",
         "languageRequirementStatus": "official-linked-page-not-parsed",
         "countryRequirementStatus": "official-country-table-present",
-        "healthRequirementStatus": "official-linked-form-present"
+        "healthRequirementStatus": "official-linked-form-present",
+        "chinaRequirementByField": {
+          "Engineering": "Senior Secondary School Graduation Certificate, or Graduation Certificate from a Vocational / Technical Secondary School (Zhixiao / Zhigao) or Skilled Worker School (Jixiao); scores of at least 70% in Mathematics and Physics, plus Chemistry or Biology.",
+          "Social Science": "Senior Secondary School Graduation Certificate, or Graduation Certificate from a Vocational / Technical Secondary School (Zhixiao / Zhigao) or Skilled Worker School (Jixiao); scores of at least 70% in any three accepted subjects, including Mathematics, Physics, Biology, Chemistry, Geography, Economy, Accounting, Business Management, ICT, Computer Science, Programming, Computing, Art and Design, or Visual Arts."
+        }
       },
       "languageRequirements": {
         "status": "official-general-rule",
         "sourceText": "Undergraduate candidates joining UTM from September 2023 must meet one English language route; the general undergraduate table applies to all programmes except TESL.",
         "scores": {
-          "MUET": 4.0,
+          "MUET": 4,
           "IELTS": 5.5,
           "TOEFL_iBT": 46,
           "PTE_Academic": 51,
@@ -689,7 +717,7 @@
         "sourceId": "programme-detail-009",
         "sourceUrl": "https://civil.utm.my/undergraduate/",
         "sourcePath": "data/imports/utm/2026-06-16/undergraduate/sources/programme-details/009-civil-utm-my-undergraduate.html",
-        "anchorScore": 1.0,
+        "anchorScore": 1,
         "officialDetailTitle": "Undergraduate Studies | Faculty of Civil Engineering | ALWAYS AHEAD | The Best Civil Engineering Program in Malaysia",
         "overviewText": "Our Curriculum is designed to foster holistic development, blending academic excellence with practical skills to prepare students for future challenges",
         "duration": {
@@ -750,13 +778,17 @@
         "academicRequirementSummary": "A Senior High School Certificate or equivalent pre – university qualifications. See more details for the entry requirements based on country; and Pass the English Proficiency requirements; and Pass the UTM interview (for Bachelor of Architecture & Bachelor of Science Industrial Design).",
         "languageRequirementStatus": "official-linked-page-not-parsed",
         "countryRequirementStatus": "official-country-table-present",
-        "healthRequirementStatus": "official-linked-form-present"
+        "healthRequirementStatus": "official-linked-form-present",
+        "chinaRequirementByField": {
+          "Engineering": "Senior Secondary School Graduation Certificate, or Graduation Certificate from a Vocational / Technical Secondary School (Zhixiao / Zhigao) or Skilled Worker School (Jixiao); scores of at least 70% in Mathematics and Physics, plus Chemistry or Biology.",
+          "Social Science": "Senior Secondary School Graduation Certificate, or Graduation Certificate from a Vocational / Technical Secondary School (Zhixiao / Zhigao) or Skilled Worker School (Jixiao); scores of at least 70% in any three accepted subjects, including Mathematics, Physics, Biology, Chemistry, Geography, Economy, Accounting, Business Management, ICT, Computer Science, Programming, Computing, Art and Design, or Visual Arts."
+        }
       },
       "languageRequirements": {
         "status": "official-general-rule",
         "sourceText": "Undergraduate candidates joining UTM from September 2023 must meet one English language route; the general undergraduate table applies to all programmes except TESL.",
         "scores": {
-          "MUET": 4.0,
+          "MUET": 4,
           "IELTS": 5.5,
           "TOEFL_iBT": 46,
           "PTE_Academic": 51,
@@ -790,14 +822,14 @@
         "sourceId": "programme-detail-010",
         "sourceUrl": "https://comp.utm.my/undergraduate/",
         "sourcePath": "data/imports/utm/2026-06-16/undergraduate/sources/programme-details/010-comp-utm-my-undergraduate.html",
-        "anchorScore": 1.0,
+        "anchorScore": 1,
         "officialDetailTitle": "Undergraduate – Faculty of Computing",
         "overviewText": "This program is an industry-infused program that integrates real-world practices and industry standards into its curriculum, ensuring students gain practical skills directly applicable to the industry. The program emphasizes agile methodologies, software development lifecycle management, and the use of cutting-edge technologies in areas such as cloud computing, cybersecurity, and artificial intelligence.",
         "duration": {
           "status": "programme-specific",
           "officialText": "Minimum: 4 years, Maximum: 6 years",
-          "minYears": 4.0,
-          "maxYears": 6.0,
+          "minYears": 4,
+          "maxYears": 6,
           "sourceId": "mjiit-undergraduate-guideline-2025-2026",
           "sourceUrl": "https://mjiit.utm.my/wp-content/uploads/2025/09/Final-Guideline-Book-UG-20252026.pdf",
           "sourcePath": "data/imports/utm/2026-06-16/undergraduate/sources/supplemental-pdfs/Final-Guideline-Book-UG-20252026.pdf"
@@ -855,13 +887,17 @@
         "academicRequirementSummary": "A Senior High School Certificate or equivalent pre – university qualifications. See more details for the entry requirements based on country; and Pass the English Proficiency requirements; and Pass the UTM interview (for Bachelor of Architecture & Bachelor of Science Industrial Design).",
         "languageRequirementStatus": "official-linked-page-not-parsed",
         "countryRequirementStatus": "official-country-table-present",
-        "healthRequirementStatus": "official-linked-form-present"
+        "healthRequirementStatus": "official-linked-form-present",
+        "chinaRequirementByField": {
+          "Engineering": "Senior Secondary School Graduation Certificate, or Graduation Certificate from a Vocational / Technical Secondary School (Zhixiao / Zhigao) or Skilled Worker School (Jixiao); scores of at least 70% in Mathematics and Physics, plus Chemistry or Biology.",
+          "Social Science": "Senior Secondary School Graduation Certificate, or Graduation Certificate from a Vocational / Technical Secondary School (Zhixiao / Zhigao) or Skilled Worker School (Jixiao); scores of at least 70% in any three accepted subjects, including Mathematics, Physics, Biology, Chemistry, Geography, Economy, Accounting, Business Management, ICT, Computer Science, Programming, Computing, Art and Design, or Visual Arts."
+        }
       },
       "languageRequirements": {
         "status": "official-general-rule",
         "sourceText": "Undergraduate candidates joining UTM from September 2023 must meet one English language route; the general undergraduate table applies to all programmes except TESL.",
         "scores": {
-          "MUET": 4.0,
+          "MUET": 4,
           "IELTS": 5.5,
           "TOEFL_iBT": 46,
           "PTE_Academic": 51,
@@ -895,7 +931,7 @@
         "sourceId": "programme-detail-010",
         "sourceUrl": "https://comp.utm.my/undergraduate/",
         "sourcePath": "data/imports/utm/2026-06-16/undergraduate/sources/programme-details/010-comp-utm-my-undergraduate.html",
-        "anchorScore": 1.0,
+        "anchorScore": 1,
         "officialDetailTitle": "Undergraduate – Faculty of Computing",
         "overviewText": "Knowledge workers in network and security are needed to ensure that these activities can be conducted in an efficient and secure manner.",
         "duration": {
@@ -962,13 +998,17 @@
         "academicRequirementSummary": "A Senior High School Certificate or equivalent pre – university qualifications. See more details for the entry requirements based on country; and Pass the English Proficiency requirements; and Pass the UTM interview (for Bachelor of Architecture & Bachelor of Science Industrial Design).",
         "languageRequirementStatus": "official-linked-page-not-parsed",
         "countryRequirementStatus": "official-country-table-present",
-        "healthRequirementStatus": "official-linked-form-present"
+        "healthRequirementStatus": "official-linked-form-present",
+        "chinaRequirementByField": {
+          "Engineering": "Senior Secondary School Graduation Certificate, or Graduation Certificate from a Vocational / Technical Secondary School (Zhixiao / Zhigao) or Skilled Worker School (Jixiao); scores of at least 70% in Mathematics and Physics, plus Chemistry or Biology.",
+          "Social Science": "Senior Secondary School Graduation Certificate, or Graduation Certificate from a Vocational / Technical Secondary School (Zhixiao / Zhigao) or Skilled Worker School (Jixiao); scores of at least 70% in any three accepted subjects, including Mathematics, Physics, Biology, Chemistry, Geography, Economy, Accounting, Business Management, ICT, Computer Science, Programming, Computing, Art and Design, or Visual Arts."
+        }
       },
       "languageRequirements": {
         "status": "official-general-rule",
         "sourceText": "Undergraduate candidates joining UTM from September 2023 must meet one English language route; the general undergraduate table applies to all programmes except TESL.",
         "scores": {
-          "MUET": 4.0,
+          "MUET": 4,
           "IELTS": 5.5,
           "TOEFL_iBT": 46,
           "PTE_Academic": 51,
@@ -1002,15 +1042,15 @@
         "sourceId": "programme-detail-010",
         "sourceUrl": "https://comp.utm.my/undergraduate/",
         "sourcePath": "data/imports/utm/2026-06-16/undergraduate/sources/programme-details/010-comp-utm-my-undergraduate.html",
-        "anchorScore": 1.0,
+        "anchorScore": 1,
         "officialDetailTitle": "Undergraduate – Faculty of Computing",
         "overviewText": "This program provides students with a thorough treatment in the field of computer graphics, multimedia as well as in simulation and virtual reality.",
         "duration": {
           "status": "programme-specific",
           "officialText": "Study Duration: Minimum 8 Semesters / Maximum 12 Semesters",
           "semesters": 8,
-          "minYears": 4.0,
-          "maxYears": 6.0
+          "minYears": 4,
+          "maxYears": 6
         },
         "studyMode": "not-confirmed",
         "languageOfInstruction": "not-confirmed",
@@ -1064,13 +1104,17 @@
         "academicRequirementSummary": "A Senior High School Certificate or equivalent pre – university qualifications. See more details for the entry requirements based on country; and Pass the English Proficiency requirements; and Pass the UTM interview (for Bachelor of Architecture & Bachelor of Science Industrial Design).",
         "languageRequirementStatus": "official-linked-page-not-parsed",
         "countryRequirementStatus": "official-country-table-present",
-        "healthRequirementStatus": "official-linked-form-present"
+        "healthRequirementStatus": "official-linked-form-present",
+        "chinaRequirementByField": {
+          "Engineering": "Senior Secondary School Graduation Certificate, or Graduation Certificate from a Vocational / Technical Secondary School (Zhixiao / Zhigao) or Skilled Worker School (Jixiao); scores of at least 70% in Mathematics and Physics, plus Chemistry or Biology.",
+          "Social Science": "Senior Secondary School Graduation Certificate, or Graduation Certificate from a Vocational / Technical Secondary School (Zhixiao / Zhigao) or Skilled Worker School (Jixiao); scores of at least 70% in any three accepted subjects, including Mathematics, Physics, Biology, Chemistry, Geography, Economy, Accounting, Business Management, ICT, Computer Science, Programming, Computing, Art and Design, or Visual Arts."
+        }
       },
       "languageRequirements": {
         "status": "official-general-rule",
         "sourceText": "Undergraduate candidates joining UTM from September 2023 must meet one English language route; the general undergraduate table applies to all programmes except TESL.",
         "scores": {
-          "MUET": 4.0,
+          "MUET": 4,
           "IELTS": 5.5,
           "TOEFL_iBT": 46,
           "PTE_Academic": 51,
@@ -1104,7 +1148,7 @@
         "sourceId": "programme-detail-013",
         "sourceUrl": "https://fke.utm.my/undergraduate/",
         "sourcePath": "data/imports/utm/2026-06-16/undergraduate/sources/programme-details/013-fke-utm-my-undergraduate.html",
-        "anchorScore": 1.0,
+        "anchorScore": 1,
         "officialDetailTitle": "Undergraduate Programme | Faculty of Electrical Engineering UTM",
         "overviewText": "Mechatronic Engineering is anengineering field which combines engineering fields such as Electronic, Electric, Mechanical, Control, Software, Computer and Information Technology.",
         "duration": {
@@ -1170,13 +1214,17 @@
         "academicRequirementSummary": "A Senior High School Certificate or equivalent pre – university qualifications. See more details for the entry requirements based on country; and Pass the English Proficiency requirements; and Pass the UTM interview (for Bachelor of Architecture & Bachelor of Science Industrial Design).",
         "languageRequirementStatus": "official-linked-page-not-parsed",
         "countryRequirementStatus": "official-country-table-present",
-        "healthRequirementStatus": "official-linked-form-present"
+        "healthRequirementStatus": "official-linked-form-present",
+        "chinaRequirementByField": {
+          "Engineering": "Senior Secondary School Graduation Certificate, or Graduation Certificate from a Vocational / Technical Secondary School (Zhixiao / Zhigao) or Skilled Worker School (Jixiao); scores of at least 70% in Mathematics and Physics, plus Chemistry or Biology.",
+          "Social Science": "Senior Secondary School Graduation Certificate, or Graduation Certificate from a Vocational / Technical Secondary School (Zhixiao / Zhigao) or Skilled Worker School (Jixiao); scores of at least 70% in any three accepted subjects, including Mathematics, Physics, Biology, Chemistry, Geography, Economy, Accounting, Business Management, ICT, Computer Science, Programming, Computing, Art and Design, or Visual Arts."
+        }
       },
       "languageRequirements": {
         "status": "official-general-rule",
         "sourceText": "Undergraduate candidates joining UTM from September 2023 must meet one English language route; the general undergraduate table applies to all programmes except TESL.",
         "scores": {
-          "MUET": 4.0,
+          "MUET": 4,
           "IELTS": 5.5,
           "TOEFL_iBT": 46,
           "PTE_Academic": 51,
@@ -1210,7 +1258,7 @@
         "sourceId": "programme-detail-013",
         "sourceUrl": "https://fke.utm.my/undergraduate/",
         "sourcePath": "data/imports/utm/2026-06-16/undergraduate/sources/programme-details/013-fke-utm-my-undergraduate.html",
-        "anchorScore": 1.0,
+        "anchorScore": 1,
         "officialDetailTitle": "Undergraduate Programme | Faculty of Electrical Engineering UTM",
         "overviewText": "Bachelor of Engineering (Electrical-Mechatronic) is a program with honours that has been established and offered for more than two decades by UTM. The program is a four-year program completed with one year final year project.",
         "duration": {
@@ -1266,13 +1314,17 @@
         "academicRequirementSummary": "A Senior High School Certificate or equivalent pre – university qualifications. See more details for the entry requirements based on country; and Pass the English Proficiency requirements; and Pass the UTM interview (for Bachelor of Architecture & Bachelor of Science Industrial Design).",
         "languageRequirementStatus": "official-linked-page-not-parsed",
         "countryRequirementStatus": "official-country-table-present",
-        "healthRequirementStatus": "official-linked-form-present"
+        "healthRequirementStatus": "official-linked-form-present",
+        "chinaRequirementByField": {
+          "Engineering": "Senior Secondary School Graduation Certificate, or Graduation Certificate from a Vocational / Technical Secondary School (Zhixiao / Zhigao) or Skilled Worker School (Jixiao); scores of at least 70% in Mathematics and Physics, plus Chemistry or Biology.",
+          "Social Science": "Senior Secondary School Graduation Certificate, or Graduation Certificate from a Vocational / Technical Secondary School (Zhixiao / Zhigao) or Skilled Worker School (Jixiao); scores of at least 70% in any three accepted subjects, including Mathematics, Physics, Biology, Chemistry, Geography, Economy, Accounting, Business Management, ICT, Computer Science, Programming, Computing, Art and Design, or Visual Arts."
+        }
       },
       "languageRequirements": {
         "status": "official-general-rule",
         "sourceText": "Undergraduate candidates joining UTM from September 2023 must meet one English language route; the general undergraduate table applies to all programmes except TESL.",
         "scores": {
-          "MUET": 4.0,
+          "MUET": 4,
           "IELTS": 5.5,
           "TOEFL_iBT": 46,
           "PTE_Academic": 51,
@@ -1361,13 +1413,17 @@
         "academicRequirementSummary": "A Senior High School Certificate or equivalent pre – university qualifications. See more details for the entry requirements based on country; and Pass the English Proficiency requirements; and Pass the UTM interview (for Bachelor of Architecture & Bachelor of Science Industrial Design).",
         "languageRequirementStatus": "official-linked-page-not-parsed",
         "countryRequirementStatus": "official-country-table-present",
-        "healthRequirementStatus": "official-linked-form-present"
+        "healthRequirementStatus": "official-linked-form-present",
+        "chinaRequirementByField": {
+          "Engineering": "Senior Secondary School Graduation Certificate, or Graduation Certificate from a Vocational / Technical Secondary School (Zhixiao / Zhigao) or Skilled Worker School (Jixiao); scores of at least 70% in Mathematics and Physics, plus Chemistry or Biology.",
+          "Social Science": "Senior Secondary School Graduation Certificate, or Graduation Certificate from a Vocational / Technical Secondary School (Zhixiao / Zhigao) or Skilled Worker School (Jixiao); scores of at least 70% in any three accepted subjects, including Mathematics, Physics, Biology, Chemistry, Geography, Economy, Accounting, Business Management, ICT, Computer Science, Programming, Computing, Art and Design, or Visual Arts."
+        }
       },
       "languageRequirements": {
         "status": "official-general-rule",
         "sourceText": "Undergraduate candidates joining UTM from September 2023 must meet one English language route; the general undergraduate table applies to all programmes except TESL.",
         "scores": {
-          "MUET": 4.0,
+          "MUET": 4,
           "IELTS": 5.5,
           "TOEFL_iBT": 46,
           "PTE_Academic": 51,
@@ -1401,14 +1457,14 @@
         "sourceId": "programme-detail-021",
         "sourceUrl": "https://mech.utm.my/ug-programme/",
         "sourcePath": "data/imports/utm/2026-06-16/undergraduate/sources/programme-details/021-mech-utm-my-ug-programme.html",
-        "anchorScore": 1.0,
+        "anchorScore": 1,
         "officialDetailTitle": "Undergraduate Programme | Faculty of Mechanical Engineering",
         "overviewText": "Copyright©2026 I Faculty of Mechanical Engineering, Universiti Teknologi Malaysia, 81310 UTM Johor Bahru, Johor Darul Takzim, Malaysia",
         "duration": {
           "status": "programme-specific",
           "officialText": "Minimum : 4 years Maximum : 6 years",
-          "minYears": 4.0,
-          "maxYears": 6.0,
+          "minYears": 4,
+          "maxYears": 6,
           "sourceId": "mechanical-undergraduate-handbook-2023-2024",
           "sourceUrl": "https://mech.utm.my/wp-content/uploads/2023/10/UNDERGRADUATE-HANDBOOK-FACULTY-OF-MECHANICAL-ENGINEERING-SESSION-20232024.pdf",
           "sourcePath": "data/imports/utm/2026-06-16/undergraduate/sources/supplemental-pdfs/UNDERGRADUATE-HANDBOOK-FACULTY-OF-MECHANICAL-ENGINEERING-SESSION-20232024.pdf"
@@ -1447,7 +1503,7 @@
       "applicantScope": "international",
       "canonicalDecision": {
         "isCanonicalProgramme": true,
-        "currentCycleStatus": "international-unavailable-current-cycle",
+        "currentCycleStatus": "current-cycle-not-open",
         "campuses": [
           "UTM Johor Bahru"
         ],
@@ -1465,13 +1521,17 @@
         "academicRequirementSummary": "A Senior High School Certificate or equivalent pre – university qualifications. See more details for the entry requirements based on country; and Pass the English Proficiency requirements; and Pass the UTM interview (for Bachelor of Architecture & Bachelor of Science Industrial Design).",
         "languageRequirementStatus": "official-linked-page-not-parsed",
         "countryRequirementStatus": "official-country-table-present",
-        "healthRequirementStatus": "official-linked-form-present"
+        "healthRequirementStatus": "official-linked-form-present",
+        "chinaRequirementByField": {
+          "Engineering": "Senior Secondary School Graduation Certificate, or Graduation Certificate from a Vocational / Technical Secondary School (Zhixiao / Zhigao) or Skilled Worker School (Jixiao); scores of at least 70% in Mathematics and Physics, plus Chemistry or Biology.",
+          "Social Science": "Senior Secondary School Graduation Certificate, or Graduation Certificate from a Vocational / Technical Secondary School (Zhixiao / Zhigao) or Skilled Worker School (Jixiao); scores of at least 70% in any three accepted subjects, including Mathematics, Physics, Biology, Chemistry, Geography, Economy, Accounting, Business Management, ICT, Computer Science, Programming, Computing, Art and Design, or Visual Arts."
+        }
       },
       "languageRequirements": {
         "status": "official-general-rule",
         "sourceText": "Undergraduate candidates joining UTM from September 2023 must meet one English language route; the general undergraduate table applies to all programmes except TESL.",
         "scores": {
-          "MUET": 4.0,
+          "MUET": 4,
           "IELTS": 5.5,
           "TOEFL_iBT": 46,
           "PTE_Academic": 51,
@@ -1496,29 +1556,41 @@
         "curriculum": "official-unpublished",
         "careers": "official-unpublished",
         "localization": "pending-after-fact-lock",
-        "duration": "not-confirmed",
+        "duration": "programme-specific",
         "languageOfInstruction": "official-unpublished",
         "programmeSpecificAcademicRequirements": "general-rule"
       },
       "programmeDetail": {
         "status": "official-detail-parsed",
+        "mqaCodes": [],
+        "accreditation": [],
         "sourceId": "programme-detail-021",
         "sourceUrl": "https://mech.utm.my/ug-programme/",
         "sourcePath": "data/imports/utm/2026-06-16/undergraduate/sources/programme-details/021-mech-utm-my-ug-programme.html",
-        "anchorScore": 1.0,
         "officialDetailTitle": "Undergraduate Programme | Faculty of Mechanical Engineering",
-        "overviewText": null,
+        "overviewText": "The Faculty of Mechanical Engineering offers accredited mechanical engineering-based undergraduate programmes; students spend the first two years taking basic mechanical engineering courses and the last two years doing specialization courses.",
         "duration": {
-          "status": "not-confirmed"
+          "status": "programme-specific",
+          "officialText": "The Bachelor of Mechanical Engineering (Manufacturing) with Honours Programme Specifications state: Study Duration Minimum: 4 years; Maximum: 6 years; Normal 8 semesters.",
+          "semesters": 8,
+          "minYears": 4,
+          "maxYears": 6,
+          "sourceId": "mechanical-undergraduate-handbook-2023-2024",
+          "sourceUrl": "https://mech.utm.my/wp-content/uploads/2023/10/UNDERGRADUATE-HANDBOOK-FACULTY-OF-MECHANICAL-ENGINEERING-SESSION-20232024.pdf",
+          "sourcePath": "data/imports/utm/2026-06-16/undergraduate/sources/supplemental-pdfs/UNDERGRADUATE-HANDBOOK-FACULTY-OF-MECHANICAL-ENGINEERING-SESSION-20232024.pdf"
         },
-        "studyMode": "not-confirmed",
+        "studyMode": "full-time",
         "languageOfInstruction": "not-confirmed",
-        "mqaCodes": [],
-        "accreditation": [],
         "entryRequirementText": null,
         "curriculumText": null,
         "careerText": null,
-        "evidenceText": "Bachelor of Mechanical Engineering (Manufacturing) with Honours"
+        "evidenceText": "Bachelor of Mechanical Engineering (Manufacturing) with Honours",
+        "supplementalDurationEvidence": {
+          "sourceId": "mechanical-undergraduate-handbook-2023-2024",
+          "sourceUrl": "https://mech.utm.my/wp-content/uploads/2023/10/UNDERGRADUATE-HANDBOOK-FACULTY-OF-MECHANICAL-ENGINEERING-SESSION-20232024.pdf",
+          "sourcePath": "data/imports/utm/2026-06-16/undergraduate/sources/supplemental-pdfs/UNDERGRADUATE-HANDBOOK-FACULTY-OF-MECHANICAL-ENGINEERING-SESSION-20232024.pdf",
+          "sourceRole": "supplemental-programme-handbook"
+        }
       }
     },
     {
@@ -1558,13 +1630,17 @@
         "academicRequirementSummary": "A Senior High School Certificate or equivalent pre – university qualifications. See more details for the entry requirements based on country; and Pass the English Proficiency requirements; and Pass the UTM interview (for Bachelor of Architecture & Bachelor of Science Industrial Design).",
         "languageRequirementStatus": "official-linked-page-not-parsed",
         "countryRequirementStatus": "official-country-table-present",
-        "healthRequirementStatus": "official-linked-form-present"
+        "healthRequirementStatus": "official-linked-form-present",
+        "chinaRequirementByField": {
+          "Engineering": "Senior Secondary School Graduation Certificate, or Graduation Certificate from a Vocational / Technical Secondary School (Zhixiao / Zhigao) or Skilled Worker School (Jixiao); scores of at least 70% in Mathematics and Physics, plus Chemistry or Biology.",
+          "Social Science": "Senior Secondary School Graduation Certificate, or Graduation Certificate from a Vocational / Technical Secondary School (Zhixiao / Zhigao) or Skilled Worker School (Jixiao); scores of at least 70% in any three accepted subjects, including Mathematics, Physics, Biology, Chemistry, Geography, Economy, Accounting, Business Management, ICT, Computer Science, Programming, Computing, Art and Design, or Visual Arts."
+        }
       },
       "languageRequirements": {
         "status": "official-general-rule",
         "sourceText": "Undergraduate candidates joining UTM from September 2023 must meet one English language route; the general undergraduate table applies to all programmes except TESL.",
         "scores": {
-          "MUET": 4.0,
+          "MUET": 4,
           "IELTS": 5.5,
           "TOEFL_iBT": 46,
           "PTE_Academic": 51,
@@ -1598,14 +1674,14 @@
         "sourceId": "programme-detail-021",
         "sourceUrl": "https://mech.utm.my/ug-programme/",
         "sourcePath": "data/imports/utm/2026-06-16/undergraduate/sources/programme-details/021-mech-utm-my-ug-programme.html",
-        "anchorScore": 1.0,
+        "anchorScore": 1,
         "officialDetailTitle": "Undergraduate Programme | Faculty of Mechanical Engineering",
         "overviewText": null,
         "duration": {
           "status": "programme-specific",
           "officialText": "Minimum : 4 years Maximum : 6 years",
-          "minYears": 4.0,
-          "maxYears": 6.0,
+          "minYears": 4,
+          "maxYears": 6,
           "sourceId": "mechanical-undergraduate-handbook-2023-2024",
           "sourceUrl": "https://mech.utm.my/wp-content/uploads/2023/10/UNDERGRADUATE-HANDBOOK-FACULTY-OF-MECHANICAL-ENGINEERING-SESSION-20232024.pdf",
           "sourcePath": "data/imports/utm/2026-06-16/undergraduate/sources/supplemental-pdfs/UNDERGRADUATE-HANDBOOK-FACULTY-OF-MECHANICAL-ENGINEERING-SESSION-20232024.pdf"
@@ -1663,13 +1739,17 @@
         "academicRequirementSummary": "A Senior High School Certificate or equivalent pre – university qualifications. See more details for the entry requirements based on country; and Pass the English Proficiency requirements; and Pass the UTM interview (for Bachelor of Architecture & Bachelor of Science Industrial Design).",
         "languageRequirementStatus": "official-linked-page-not-parsed",
         "countryRequirementStatus": "official-country-table-present",
-        "healthRequirementStatus": "official-linked-form-present"
+        "healthRequirementStatus": "official-linked-form-present",
+        "chinaRequirementByField": {
+          "Engineering": "Senior Secondary School Graduation Certificate, or Graduation Certificate from a Vocational / Technical Secondary School (Zhixiao / Zhigao) or Skilled Worker School (Jixiao); scores of at least 70% in Mathematics and Physics, plus Chemistry or Biology.",
+          "Social Science": "Senior Secondary School Graduation Certificate, or Graduation Certificate from a Vocational / Technical Secondary School (Zhixiao / Zhigao) or Skilled Worker School (Jixiao); scores of at least 70% in any three accepted subjects, including Mathematics, Physics, Biology, Chemistry, Geography, Economy, Accounting, Business Management, ICT, Computer Science, Programming, Computing, Art and Design, or Visual Arts."
+        }
       },
       "languageRequirements": {
         "status": "official-general-rule",
         "sourceText": "Undergraduate candidates joining UTM from September 2023 must meet one English language route; the general undergraduate table applies to all programmes except TESL.",
         "scores": {
-          "MUET": 4.0,
+          "MUET": 4,
           "IELTS": 5.5,
           "TOEFL_iBT": 46,
           "PTE_Academic": 51,
@@ -1703,14 +1783,14 @@
         "sourceId": "programme-detail-021",
         "sourceUrl": "https://mech.utm.my/ug-programme/",
         "sourcePath": "data/imports/utm/2026-06-16/undergraduate/sources/programme-details/021-mech-utm-my-ug-programme.html",
-        "anchorScore": 1.0,
+        "anchorScore": 1,
         "officialDetailTitle": "Undergraduate Programme | Faculty of Mechanical Engineering",
         "overviewText": "Copyright©2026 I Faculty of Mechanical Engineering, Universiti Teknologi Malaysia, 81310 UTM Johor Bahru, Johor Darul Takzim, Malaysia",
         "duration": {
           "status": "programme-specific",
           "officialText": "Minimum : 4 years Maximum : 6 years",
-          "minYears": 4.0,
-          "maxYears": 6.0,
+          "minYears": 4,
+          "maxYears": 6,
           "sourceId": "mechanical-undergraduate-handbook-2023-2024",
           "sourceUrl": "https://mech.utm.my/wp-content/uploads/2023/10/UNDERGRADUATE-HANDBOOK-FACULTY-OF-MECHANICAL-ENGINEERING-SESSION-20232024.pdf",
           "sourcePath": "data/imports/utm/2026-06-16/undergraduate/sources/supplemental-pdfs/UNDERGRADUATE-HANDBOOK-FACULTY-OF-MECHANICAL-ENGINEERING-SESSION-20232024.pdf"
@@ -1741,7 +1821,7 @@
         "February"
       ],
       "applicationStatus": "closed",
-      "detailUrl": "https://management.utm.my/undergraduates/",
+      "detailUrl": "https://management.utm.my/accounting/",
       "applicationUrl": "http://smart.utm.my/admission/",
       "sourceRole": "official-all-courses-row",
       "slug": "utm-bachelor-bachelor-in-accounting-with-honours",
@@ -1749,7 +1829,7 @@
       "applicantScope": "international",
       "canonicalDecision": {
         "isCanonicalProgramme": true,
-        "currentCycleStatus": "international-unavailable-current-cycle",
+        "currentCycleStatus": "current-cycle-not-open",
         "campuses": [
           "UTM Johor Bahru"
         ],
@@ -1767,13 +1847,17 @@
         "academicRequirementSummary": "A Senior High School Certificate or equivalent pre – university qualifications. See more details for the entry requirements based on country; and Pass the English Proficiency requirements; and Pass the UTM interview (for Bachelor of Architecture & Bachelor of Science Industrial Design).",
         "languageRequirementStatus": "official-linked-page-not-parsed",
         "countryRequirementStatus": "official-country-table-present",
-        "healthRequirementStatus": "official-linked-form-present"
+        "healthRequirementStatus": "official-linked-form-present",
+        "chinaRequirementByField": {
+          "Engineering": "Senior Secondary School Graduation Certificate, or Graduation Certificate from a Vocational / Technical Secondary School (Zhixiao / Zhigao) or Skilled Worker School (Jixiao); scores of at least 70% in Mathematics and Physics, plus Chemistry or Biology.",
+          "Social Science": "Senior Secondary School Graduation Certificate, or Graduation Certificate from a Vocational / Technical Secondary School (Zhixiao / Zhigao) or Skilled Worker School (Jixiao); scores of at least 70% in any three accepted subjects, including Mathematics, Physics, Biology, Chemistry, Geography, Economy, Accounting, Business Management, ICT, Computer Science, Programming, Computing, Art and Design, or Visual Arts."
+        }
       },
       "languageRequirements": {
         "status": "official-general-rule",
         "sourceText": "Undergraduate candidates joining UTM from September 2023 must meet one English language route; the general undergraduate table applies to all programmes except TESL.",
         "scores": {
-          "MUET": 4.0,
+          "MUET": 4,
           "IELTS": 5.5,
           "TOEFL_iBT": 46,
           "PTE_Academic": 51,
@@ -1787,23 +1871,48 @@
         "fees": "https://admission.utm.my/programme-fees-ug-international/",
         "entryRequirements": "https://admission.utm.my/entry-requirements-ug-international/",
         "languageRequirements": "https://admission.utm.my/english-language-requirements-3/",
-        "detail": "https://management.utm.my/undergraduates/"
+        "detail": "https://management.utm.my/accounting/"
       },
       "fieldCoverage": {
         "identity": "official-catalogue-and-current-intake-pdf",
-        "detailPage": "detail-url-missing",
+        "detailPage": "official-detail-parsed",
         "tuition": "official-total",
         "entryRequirements": "general-rule-and-country-table-present",
         "languageRequirements": "official-general-rule",
-        "curriculum": "official-unpublished",
-        "careers": "official-unpublished",
+        "curriculum": "programme-specific",
+        "careers": "programme-specific",
         "localization": "pending-after-fact-lock",
-        "duration": "not-confirmed",
+        "duration": "programme-specific",
         "languageOfInstruction": "official-unpublished",
         "programmeSpecificAcademicRequirements": "general-rule"
       },
       "programmeDetail": {
-        "status": "detail-url-missing"
+        "status": "official-detail-parsed",
+        "mqaCodes": [],
+        "accreditation": [
+          "MQA",
+          "ACCA",
+          "MICPA",
+          "ICAEW",
+          "MIA accreditation evidence is published on the official programme page."
+        ],
+        "sourceId": "programme-detail-management-accounting",
+        "sourceUrl": "https://management.utm.my/accounting/",
+        "officialDetailTitle": "Bachelor in Accounting | Faculty of Management",
+        "overviewText": "The course is offered in full-time mode comprising eight regular semesters and in part-time mode comprising twelve regular semesters. Full-time students undergo six months of industrial training during the seventh semester.",
+        "duration": {
+          "status": "programme-specific",
+          "officialText": "Study Duration: Minimum 4 years (FT) / 6 years (PT); Maximum 6 years (FT) / 10 years (PT).",
+          "minYears": 4,
+          "maxYears": 6,
+          "semesters": 8
+        },
+        "studyMode": "Full Time and Part Time",
+        "languageOfInstruction": "not-confirmed",
+        "entryRequirementText": "The official programme page links international applicants to the UTM international undergraduate entry requirements page.",
+        "curriculumText": "The course comprises eight regular semesters in full-time mode; assessment uses formative and summative evaluation, with a maximum of 60% final examination and remaining marks allocated to coursework. Students must complete industrial training during the seventh semester.",
+        "careerText": "Graduates may work as accountants, auditors, finance officers, tax officers, tax consultants, entrepreneurs, business consultants, insurance advisors, company secretaries, bank officers, risk managers, chief executive officers, and related roles.",
+        "evidenceText": "Bachelor in Accounting with Honours; Entry Requirements for International Students; Study Duration; Career Prospects."
       }
     },
     {
@@ -1816,7 +1925,7 @@
         "February"
       ],
       "applicationStatus": "closed",
-      "detailUrl": "https://management.utm.my/undergraduates/",
+      "detailUrl": "https://management.utm.my/management-marketing/",
       "applicationUrl": "http://smart.utm.my/admission/",
       "sourceRole": "official-all-courses-row",
       "slug": "utm-bachelor-bachelor-in-digital-marketing-with-honours",
@@ -1824,7 +1933,7 @@
       "applicantScope": "international",
       "canonicalDecision": {
         "isCanonicalProgramme": true,
-        "currentCycleStatus": "international-unavailable-current-cycle",
+        "currentCycleStatus": "current-cycle-not-open",
         "campuses": [
           "UTM Johor Bahru"
         ],
@@ -1842,13 +1951,17 @@
         "academicRequirementSummary": "A Senior High School Certificate or equivalent pre – university qualifications. See more details for the entry requirements based on country; and Pass the English Proficiency requirements; and Pass the UTM interview (for Bachelor of Architecture & Bachelor of Science Industrial Design).",
         "languageRequirementStatus": "official-linked-page-not-parsed",
         "countryRequirementStatus": "official-country-table-present",
-        "healthRequirementStatus": "official-linked-form-present"
+        "healthRequirementStatus": "official-linked-form-present",
+        "chinaRequirementByField": {
+          "Engineering": "Senior Secondary School Graduation Certificate, or Graduation Certificate from a Vocational / Technical Secondary School (Zhixiao / Zhigao) or Skilled Worker School (Jixiao); scores of at least 70% in Mathematics and Physics, plus Chemistry or Biology.",
+          "Social Science": "Senior Secondary School Graduation Certificate, or Graduation Certificate from a Vocational / Technical Secondary School (Zhixiao / Zhigao) or Skilled Worker School (Jixiao); scores of at least 70% in any three accepted subjects, including Mathematics, Physics, Biology, Chemistry, Geography, Economy, Accounting, Business Management, ICT, Computer Science, Programming, Computing, Art and Design, or Visual Arts."
+        }
       },
       "languageRequirements": {
         "status": "official-general-rule",
         "sourceText": "Undergraduate candidates joining UTM from September 2023 must meet one English language route; the general undergraduate table applies to all programmes except TESL.",
         "scores": {
-          "MUET": 4.0,
+          "MUET": 4,
           "IELTS": 5.5,
           "TOEFL_iBT": 46,
           "PTE_Academic": 51,
@@ -1862,23 +1975,42 @@
         "fees": "https://admission.utm.my/programme-fees-ug-international/",
         "entryRequirements": "https://admission.utm.my/entry-requirements-ug-international/",
         "languageRequirements": "https://admission.utm.my/english-language-requirements-3/",
-        "detail": "https://management.utm.my/undergraduates/"
+        "detail": "https://management.utm.my/management-marketing/"
       },
       "fieldCoverage": {
         "identity": "official-catalogue-and-current-intake-pdf",
-        "detailPage": "detail-url-missing",
+        "detailPage": "official-detail-parsed",
         "tuition": "official-total",
         "entryRequirements": "general-rule-and-country-table-present",
         "languageRequirements": "official-general-rule",
-        "curriculum": "official-unpublished",
-        "careers": "official-unpublished",
+        "curriculum": "programme-specific",
+        "careers": "programme-specific",
         "localization": "pending-after-fact-lock",
-        "duration": "not-confirmed",
+        "duration": "programme-specific",
         "languageOfInstruction": "official-unpublished",
         "programmeSpecificAcademicRequirements": "general-rule"
       },
       "programmeDetail": {
-        "status": "detail-url-missing"
+        "status": "official-detail-parsed",
+        "mqaCodes": [],
+        "accreditation": [],
+        "sourceId": "programme-detail-management-marketing",
+        "sourceUrl": "https://management.utm.my/management-marketing/",
+        "officialDetailTitle": "Bachelor of Management (Marketing) | Faculty of Management",
+        "overviewText": "The official Faculty of Management marketing page describes a full-time programme based on two-semester academic sessions, with subjects distributed from basic to advanced levels and assessed throughout the semester.",
+        "duration": {
+          "status": "programme-specific",
+          "officialText": "Study Duration: Minimum 4 years (FT) / 4.5 years (PT); Maximum 6 years (FT) / 10 years (PT).",
+          "minYears": 4,
+          "maxYears": 6,
+          "semesters": 8
+        },
+        "studyMode": "Full Time and Part Time",
+        "languageOfInstruction": "not-confirmed",
+        "entryRequirementText": "The official programme page links international applicants to the UTM international undergraduate entry requirements page.",
+        "curriculumText": "The course is offered on full-time mode and is based on two-semester academic sessions. Subjects are distributed and sequenced from basic to advanced levels, and assessment is based on formative and summative evaluation throughout the semester.",
+        "careerText": "Graduates may work as product marketing managers, marketing assistants or executives, purchasing and administration executives, or management and marketing related posts in ICT environments and ICT-based organisations.",
+        "evidenceText": "Bachelor of Management (Marketing) with Honours; Entry Requirements for International Students; Study Duration; Career Prospects."
       }
     },
     {
@@ -1891,7 +2023,7 @@
         "February"
       ],
       "applicationStatus": "closed",
-      "detailUrl": "https://management.utm.my/undergraduates/",
+      "detailUrl": "https://management.utm.my/management-2/",
       "applicationUrl": "http://smart.utm.my/admission/",
       "sourceRole": "official-all-courses-row",
       "slug": "utm-bachelor-bachelor-of-management-with-honours",
@@ -1899,7 +2031,7 @@
       "applicantScope": "international",
       "canonicalDecision": {
         "isCanonicalProgramme": true,
-        "currentCycleStatus": "international-unavailable-current-cycle",
+        "currentCycleStatus": "current-cycle-not-open",
         "campuses": [
           "UTM Johor Bahru"
         ],
@@ -1917,13 +2049,17 @@
         "academicRequirementSummary": "A Senior High School Certificate or equivalent pre – university qualifications. See more details for the entry requirements based on country; and Pass the English Proficiency requirements; and Pass the UTM interview (for Bachelor of Architecture & Bachelor of Science Industrial Design).",
         "languageRequirementStatus": "official-linked-page-not-parsed",
         "countryRequirementStatus": "official-country-table-present",
-        "healthRequirementStatus": "official-linked-form-present"
+        "healthRequirementStatus": "official-linked-form-present",
+        "chinaRequirementByField": {
+          "Engineering": "Senior Secondary School Graduation Certificate, or Graduation Certificate from a Vocational / Technical Secondary School (Zhixiao / Zhigao) or Skilled Worker School (Jixiao); scores of at least 70% in Mathematics and Physics, plus Chemistry or Biology.",
+          "Social Science": "Senior Secondary School Graduation Certificate, or Graduation Certificate from a Vocational / Technical Secondary School (Zhixiao / Zhigao) or Skilled Worker School (Jixiao); scores of at least 70% in any three accepted subjects, including Mathematics, Physics, Biology, Chemistry, Geography, Economy, Accounting, Business Management, ICT, Computer Science, Programming, Computing, Art and Design, or Visual Arts."
+        }
       },
       "languageRequirements": {
         "status": "official-general-rule",
         "sourceText": "Undergraduate candidates joining UTM from September 2023 must meet one English language route; the general undergraduate table applies to all programmes except TESL.",
         "scores": {
-          "MUET": 4.0,
+          "MUET": 4,
           "IELTS": 5.5,
           "TOEFL_iBT": 46,
           "PTE_Academic": 51,
@@ -1937,23 +2073,42 @@
         "fees": "https://admission.utm.my/programme-fees-ug-international/",
         "entryRequirements": "https://admission.utm.my/entry-requirements-ug-international/",
         "languageRequirements": "https://admission.utm.my/english-language-requirements-3/",
-        "detail": "https://management.utm.my/undergraduates/"
+        "detail": "https://management.utm.my/management-2/"
       },
       "fieldCoverage": {
         "identity": "official-catalogue-and-current-intake-pdf",
-        "detailPage": "detail-url-missing",
+        "detailPage": "official-detail-parsed",
         "tuition": "official-total",
         "entryRequirements": "general-rule-and-country-table-present",
         "languageRequirements": "official-general-rule",
-        "curriculum": "official-unpublished",
-        "careers": "official-unpublished",
+        "curriculum": "programme-specific",
+        "careers": "programme-specific",
         "localization": "pending-after-fact-lock",
-        "duration": "not-confirmed",
-        "languageOfInstruction": "official-unpublished",
+        "duration": "programme-specific",
+        "languageOfInstruction": "programme-specific",
         "programmeSpecificAcademicRequirements": "general-rule"
       },
       "programmeDetail": {
-        "status": "detail-url-missing"
+        "status": "official-detail-parsed",
+        "mqaCodes": [],
+        "accreditation": [],
+        "sourceId": "programme-detail-management-technology",
+        "sourceUrl": "https://management.utm.my/management-2/",
+        "officialDetailTitle": "Bachelor of Management with Honours | Faculty of Management",
+        "overviewText": "The programme is offered in full-time mode. Each academic year comprises three semesters for Year 1 and Year 2 and two semesters for Year 3, with operation or innovation concentration choices in the second year.",
+        "duration": {
+          "status": "programme-specific",
+          "officialText": "Study Duration: Minimum 3 years (FT) / 6 years (PT); Maximum 5 years (FT) / 10 years (PT).",
+          "minYears": 3,
+          "maxYears": 5,
+          "semesters": 6
+        },
+        "studyMode": "Full Time and Part Time",
+        "languageOfInstruction": "Bahasa Melayu and English",
+        "entryRequirementText": "The official programme page links international applicants to the UTM international undergraduate entry requirements page.",
+        "curriculumText": "Students choose either operation concentration or innovation concentration in the second year, may choose electives from other concentrations, and complete industrial training in the eighth semester.",
+        "careerText": "Graduates may work as technology commercialization associates, technology transfer officers, technology licensing associates, venture capital investment analysts, production controllers, logistic officers, procurement officers, supply chain officers, operations executives, quality control officers, project management officers, customer service officers, corporate planners, or business consultants.",
+        "evidenceText": "Bachelor of Management with Honours; Entry Requirements for International Students; Study Duration; Career Prospects."
       }
     },
     {
@@ -1993,13 +2148,17 @@
         "academicRequirementSummary": "A Senior High School Certificate or equivalent pre – university qualifications. See more details for the entry requirements based on country; and Pass the English Proficiency requirements; and Pass the UTM interview (for Bachelor of Architecture & Bachelor of Science Industrial Design).",
         "languageRequirementStatus": "official-linked-page-not-parsed",
         "countryRequirementStatus": "official-country-table-present",
-        "healthRequirementStatus": "official-linked-form-present"
+        "healthRequirementStatus": "official-linked-form-present",
+        "chinaRequirementByField": {
+          "Engineering": "Senior Secondary School Graduation Certificate, or Graduation Certificate from a Vocational / Technical Secondary School (Zhixiao / Zhigao) or Skilled Worker School (Jixiao); scores of at least 70% in Mathematics and Physics, plus Chemistry or Biology.",
+          "Social Science": "Senior Secondary School Graduation Certificate, or Graduation Certificate from a Vocational / Technical Secondary School (Zhixiao / Zhigao) or Skilled Worker School (Jixiao); scores of at least 70% in any three accepted subjects, including Mathematics, Physics, Biology, Chemistry, Geography, Economy, Accounting, Business Management, ICT, Computer Science, Programming, Computing, Art and Design, or Visual Arts."
+        }
       },
       "languageRequirements": {
         "status": "official-general-rule",
         "sourceText": "Undergraduate candidates joining UTM from September 2023 must meet one English language route; the general undergraduate table applies to all programmes except TESL.",
         "scores": {
-          "MUET": 4.0,
+          "MUET": 4,
           "IELTS": 5.5,
           "TOEFL_iBT": 46,
           "PTE_Academic": 51,
@@ -2033,14 +2192,14 @@
         "sourceId": "programme-detail-005",
         "sourceUrl": "https://builtsurvey.utm.my/academic/architecture/",
         "sourcePath": "data/imports/utm/2026-06-16/undergraduate/sources/programme-details/005-builtsurvey-utm-my-academic-architecture.html",
-        "anchorScore": 1.0,
+        "anchorScore": 1,
         "officialDetailTitle": "Bachelor of Science in Architecture | Faculty of Built Environment & Surveying",
         "overviewText": "The aim of the programme is to train and produce qualified professional architects (LAM Part I) with a degree of Bachelor of Science in Architecture. The program provides essential knowledge and skills in the core areas of design, communication, technology, environment, culture and practice; while committed to develop students’ creative, innovative and versatile qualities with the essential generic skills and ethics required.",
         "duration": {
           "status": "programme-specific",
           "officialText": "Minimum Duration : 3 years Maximum Duration : 5 years",
-          "minYears": 3.0,
-          "maxYears": 5.0
+          "minYears": 3,
+          "maxYears": 5
         },
         "studyMode": "not-confirmed",
         "languageOfInstruction": "not-confirmed",
@@ -2089,13 +2248,17 @@
         "academicRequirementSummary": "A Senior High School Certificate or equivalent pre – university qualifications. See more details for the entry requirements based on country; and Pass the English Proficiency requirements; and Pass the UTM interview (for Bachelor of Architecture & Bachelor of Science Industrial Design).",
         "languageRequirementStatus": "official-linked-page-not-parsed",
         "countryRequirementStatus": "official-country-table-present",
-        "healthRequirementStatus": "official-linked-form-present"
+        "healthRequirementStatus": "official-linked-form-present",
+        "chinaRequirementByField": {
+          "Engineering": "Senior Secondary School Graduation Certificate, or Graduation Certificate from a Vocational / Technical Secondary School (Zhixiao / Zhigao) or Skilled Worker School (Jixiao); scores of at least 70% in Mathematics and Physics, plus Chemistry or Biology.",
+          "Social Science": "Senior Secondary School Graduation Certificate, or Graduation Certificate from a Vocational / Technical Secondary School (Zhixiao / Zhigao) or Skilled Worker School (Jixiao); scores of at least 70% in any three accepted subjects, including Mathematics, Physics, Biology, Chemistry, Geography, Economy, Accounting, Business Management, ICT, Computer Science, Programming, Computing, Art and Design, or Visual Arts."
+        }
       },
       "languageRequirements": {
         "status": "official-general-rule",
         "sourceText": "Undergraduate candidates joining UTM from September 2023 must meet one English language route; the general undergraduate table applies to all programmes except TESL.",
         "scores": {
-          "MUET": 4.0,
+          "MUET": 4,
           "IELTS": 5.5,
           "TOEFL_iBT": 46,
           "PTE_Academic": 51,
@@ -2129,14 +2292,14 @@
         "sourceId": "programme-detail-004",
         "sourceUrl": "http://builtsurvey.utm.my/academics/undergraduate/quantity-surveying/",
         "sourcePath": "data/imports/utm/2026-06-16/undergraduate/sources/programme-details/004-builtsurvey-utm-my-academics-undergraduate-quantity-surveying.html",
-        "anchorScore": 1.0,
+        "anchorScore": 1,
         "officialDetailTitle": "Bachelor of Quantity Surveying | Faculty of Built Environment & Surveying",
         "overviewText": "The aim of the programme is to produce Quantity Surveying graduates who are creative, innovative and versatile with a sound knowledge in construction cost management, administration of tender and construction contracts, and quantification and documentation of construction works; as well as meeting the needs of the nation and able to compete globally.",
         "duration": {
           "status": "programme-specific",
           "officialText": "Minimum Duration : 4 years Maximum Duration : 6 years",
-          "minYears": 4.0,
-          "maxYears": 6.0
+          "minYears": 4,
+          "maxYears": 6
         },
         "studyMode": "not-confirmed",
         "languageOfInstruction": "not-confirmed",
@@ -2185,13 +2348,17 @@
         "academicRequirementSummary": "A Senior High School Certificate or equivalent pre – university qualifications. See more details for the entry requirements based on country; and Pass the English Proficiency requirements; and Pass the UTM interview (for Bachelor of Architecture & Bachelor of Science Industrial Design).",
         "languageRequirementStatus": "official-linked-page-not-parsed",
         "countryRequirementStatus": "official-country-table-present",
-        "healthRequirementStatus": "official-linked-form-present"
+        "healthRequirementStatus": "official-linked-form-present",
+        "chinaRequirementByField": {
+          "Engineering": "Senior Secondary School Graduation Certificate, or Graduation Certificate from a Vocational / Technical Secondary School (Zhixiao / Zhigao) or Skilled Worker School (Jixiao); scores of at least 70% in Mathematics and Physics, plus Chemistry or Biology.",
+          "Social Science": "Senior Secondary School Graduation Certificate, or Graduation Certificate from a Vocational / Technical Secondary School (Zhixiao / Zhigao) or Skilled Worker School (Jixiao); scores of at least 70% in any three accepted subjects, including Mathematics, Physics, Biology, Chemistry, Geography, Economy, Accounting, Business Management, ICT, Computer Science, Programming, Computing, Art and Design, or Visual Arts."
+        }
       },
       "languageRequirements": {
         "status": "official-general-rule",
         "sourceText": "Undergraduate candidates joining UTM from September 2023 must meet one English language route; the general undergraduate table applies to all programmes except TESL.",
         "scores": {
-          "MUET": 4.0,
+          "MUET": 4,
           "IELTS": 5.5,
           "TOEFL_iBT": 46,
           "PTE_Academic": 51,
@@ -2225,14 +2392,14 @@
         "sourceId": "programme-detail-002",
         "sourceUrl": "http://builtsurvey.utm.my/academics/undergraduate/construction/",
         "sourcePath": "data/imports/utm/2026-06-16/undergraduate/sources/programme-details/002-builtsurvey-utm-my-academics-undergraduate-construction.html",
-        "anchorScore": 1.0,
+        "anchorScore": 1,
         "officialDetailTitle": "Bachelor of Science in Construction | Faculty of Built Environment & Surveying",
         "overviewText": "The Bachelor of Science in Construction curriculum is designed to provide a solid academic base and professional expertise in the discipline of construction management, and to critically address the present and evolving needs of the construction industry. In order to perform successfully in the construction industry, students must develop an understanding of the technical aspects of construction while applying construction management practices and tools to maintain control and provide informed, optimal decisions. The programme focuses on the understanding of construction technology, construction management and production management processes. The programme also addresses the generic skills and capabilities necessary to compete in the employment market.",
         "duration": {
           "status": "programme-specific",
           "officialText": "Minimum Duration : 4 years Maximum Duration : 6 years",
-          "minYears": 4.0,
-          "maxYears": 6.0
+          "minYears": 4,
+          "maxYears": 6
         },
         "studyMode": "not-confirmed",
         "languageOfInstruction": "not-confirmed",
@@ -2281,13 +2448,17 @@
         "academicRequirementSummary": "A Senior High School Certificate or equivalent pre – university qualifications. See more details for the entry requirements based on country; and Pass the English Proficiency requirements; and Pass the UTM interview (for Bachelor of Architecture & Bachelor of Science Industrial Design).",
         "languageRequirementStatus": "official-linked-page-not-parsed",
         "countryRequirementStatus": "official-country-table-present",
-        "healthRequirementStatus": "official-linked-form-present"
+        "healthRequirementStatus": "official-linked-form-present",
+        "chinaRequirementByField": {
+          "Engineering": "Senior Secondary School Graduation Certificate, or Graduation Certificate from a Vocational / Technical Secondary School (Zhixiao / Zhigao) or Skilled Worker School (Jixiao); scores of at least 70% in Mathematics and Physics, plus Chemistry or Biology.",
+          "Social Science": "Senior Secondary School Graduation Certificate, or Graduation Certificate from a Vocational / Technical Secondary School (Zhixiao / Zhigao) or Skilled Worker School (Jixiao); scores of at least 70% in any three accepted subjects, including Mathematics, Physics, Biology, Chemistry, Geography, Economy, Accounting, Business Management, ICT, Computer Science, Programming, Computing, Art and Design, or Visual Arts."
+        }
       },
       "languageRequirements": {
         "status": "official-general-rule",
         "sourceText": "Undergraduate candidates joining UTM from September 2023 must meet one English language route; the general undergraduate table applies to all programmes except TESL.",
         "scores": {
-          "MUET": 4.0,
+          "MUET": 4,
           "IELTS": 5.5,
           "TOEFL_iBT": 46,
           "PTE_Academic": 51,
@@ -2321,14 +2492,14 @@
         "sourceId": "programme-detail-007",
         "sourceUrl": "https://builtsurvey.utm.my/academic/undergraduate/urban-regional-planning/",
         "sourcePath": "data/imports/utm/2026-06-16/undergraduate/sources/programme-details/007-builtsurvey-utm-my-academic-undergraduate-urban-regional-planning.html",
-        "anchorScore": 1.0,
+        "anchorScore": 1,
         "officialDetailTitle": "Bachelor of Urban and Regional Planning | Faculty of Built Environment & Surveying",
         "overviewText": "The programme aims to produce competent graduates equipped with essential knowledge and skills for a professional career in urban and regional planning and various related fields.",
         "duration": {
           "status": "programme-specific",
           "officialText": "Minimum Duration : 4 years Maximum Duration : 6 years",
-          "minYears": 4.0,
-          "maxYears": 6.0
+          "minYears": 4,
+          "maxYears": 6
         },
         "studyMode": "not-confirmed",
         "languageOfInstruction": "not-confirmed",
@@ -2377,13 +2548,17 @@
         "academicRequirementSummary": "A Senior High School Certificate or equivalent pre – university qualifications. See more details for the entry requirements based on country; and Pass the English Proficiency requirements; and Pass the UTM interview (for Bachelor of Architecture & Bachelor of Science Industrial Design).",
         "languageRequirementStatus": "official-linked-page-not-parsed",
         "countryRequirementStatus": "official-country-table-present",
-        "healthRequirementStatus": "official-linked-form-present"
+        "healthRequirementStatus": "official-linked-form-present",
+        "chinaRequirementByField": {
+          "Engineering": "Senior Secondary School Graduation Certificate, or Graduation Certificate from a Vocational / Technical Secondary School (Zhixiao / Zhigao) or Skilled Worker School (Jixiao); scores of at least 70% in Mathematics and Physics, plus Chemistry or Biology.",
+          "Social Science": "Senior Secondary School Graduation Certificate, or Graduation Certificate from a Vocational / Technical Secondary School (Zhixiao / Zhigao) or Skilled Worker School (Jixiao); scores of at least 70% in any three accepted subjects, including Mathematics, Physics, Biology, Chemistry, Geography, Economy, Accounting, Business Management, ICT, Computer Science, Programming, Computing, Art and Design, or Visual Arts."
+        }
       },
       "languageRequirements": {
         "status": "official-general-rule",
         "sourceText": "Undergraduate candidates joining UTM from September 2023 must meet one English language route; the general undergraduate table applies to all programmes except TESL.",
         "scores": {
-          "MUET": 4.0,
+          "MUET": 4,
           "IELTS": 5.5,
           "TOEFL_iBT": 46,
           "PTE_Academic": 51,
@@ -2417,14 +2592,14 @@
         "sourceId": "programme-detail-003",
         "sourceUrl": "http://builtsurvey.utm.my/academics/undergraduate/landscape-architecture/",
         "sourcePath": "data/imports/utm/2026-06-16/undergraduate/sources/programme-details/003-builtsurvey-utm-my-academics-undergraduate-landscape-architecture.html",
-        "anchorScore": 1.0,
+        "anchorScore": 1,
         "officialDetailTitle": "Bachelor of Landscape Architecture | Faculty of Built Environment & Surveying",
         "overviewText": "To educate and produce graduates in landscape architecture who are able to plan, design and manage landscape works.",
         "duration": {
           "status": "programme-specific",
           "officialText": "Minimum Duration : 4 years Maximum Duration : 6 years",
-          "minYears": 4.0,
-          "maxYears": 6.0
+          "minYears": 4,
+          "maxYears": 6
         },
         "studyMode": "not-confirmed",
         "languageOfInstruction": "not-confirmed",
@@ -2473,13 +2648,17 @@
         "academicRequirementSummary": "A Senior High School Certificate or equivalent pre – university qualifications. See more details for the entry requirements based on country; and Pass the English Proficiency requirements; and Pass the UTM interview (for Bachelor of Architecture & Bachelor of Science Industrial Design).",
         "languageRequirementStatus": "official-linked-page-not-parsed",
         "countryRequirementStatus": "official-country-table-present",
-        "healthRequirementStatus": "official-linked-form-present"
+        "healthRequirementStatus": "official-linked-form-present",
+        "chinaRequirementByField": {
+          "Engineering": "Senior Secondary School Graduation Certificate, or Graduation Certificate from a Vocational / Technical Secondary School (Zhixiao / Zhigao) or Skilled Worker School (Jixiao); scores of at least 70% in Mathematics and Physics, plus Chemistry or Biology.",
+          "Social Science": "Senior Secondary School Graduation Certificate, or Graduation Certificate from a Vocational / Technical Secondary School (Zhixiao / Zhigao) or Skilled Worker School (Jixiao); scores of at least 70% in any three accepted subjects, including Mathematics, Physics, Biology, Chemistry, Geography, Economy, Accounting, Business Management, ICT, Computer Science, Programming, Computing, Art and Design, or Visual Arts."
+        }
       },
       "languageRequirements": {
         "status": "official-general-rule",
         "sourceText": "Undergraduate candidates joining UTM from September 2023 must meet one English language route; the general undergraduate table applies to all programmes except TESL.",
         "scores": {
-          "MUET": 4.0,
+          "MUET": 4,
           "IELTS": 5.5,
           "TOEFL_iBT": 46,
           "PTE_Academic": 51,
@@ -2513,14 +2692,14 @@
         "sourceId": "programme-detail-006",
         "sourceUrl": "https://builtsurvey.utm.my/academic/bachelor-of-geomatics-engineering/",
         "sourcePath": "data/imports/utm/2026-06-16/undergraduate/sources/programme-details/006-builtsurvey-utm-my-academic-bachelor-of-geomatics-engineering.html",
-        "anchorScore": 1.0,
+        "anchorScore": 1,
         "officialDetailTitle": "Bachelor of Geomatics Engineering with Honours | Faculty of Built Environment & Surveying",
         "overviewText": "Bachelor of Geomatics Engineering with Honours is a professionally accredited degree by the",
         "duration": {
           "status": "programme-specific",
           "officialText": "Minimum Duration: 4 years Maximum Duration: 6 years",
-          "minYears": 4.0,
-          "maxYears": 6.0
+          "minYears": 4,
+          "maxYears": 6
         },
         "studyMode": "not-confirmed",
         "languageOfInstruction": "not-confirmed",
@@ -2571,13 +2750,17 @@
         "academicRequirementSummary": "A Senior High School Certificate or equivalent pre – university qualifications. See more details for the entry requirements based on country; and Pass the English Proficiency requirements; and Pass the UTM interview (for Bachelor of Architecture & Bachelor of Science Industrial Design).",
         "languageRequirementStatus": "official-linked-page-not-parsed",
         "countryRequirementStatus": "official-country-table-present",
-        "healthRequirementStatus": "official-linked-form-present"
+        "healthRequirementStatus": "official-linked-form-present",
+        "chinaRequirementByField": {
+          "Engineering": "Senior Secondary School Graduation Certificate, or Graduation Certificate from a Vocational / Technical Secondary School (Zhixiao / Zhigao) or Skilled Worker School (Jixiao); scores of at least 70% in Mathematics and Physics, plus Chemistry or Biology.",
+          "Social Science": "Senior Secondary School Graduation Certificate, or Graduation Certificate from a Vocational / Technical Secondary School (Zhixiao / Zhigao) or Skilled Worker School (Jixiao); scores of at least 70% in any three accepted subjects, including Mathematics, Physics, Biology, Chemistry, Geography, Economy, Accounting, Business Management, ICT, Computer Science, Programming, Computing, Art and Design, or Visual Arts."
+        }
       },
       "languageRequirements": {
         "status": "official-general-rule",
         "sourceText": "Undergraduate candidates joining UTM from September 2023 must meet one English language route; the general undergraduate table applies to all programmes except TESL.",
         "scores": {
-          "MUET": 4.0,
+          "MUET": 4,
           "IELTS": 5.5,
           "TOEFL_iBT": 46,
           "PTE_Academic": 51,
@@ -2611,14 +2794,14 @@
         "sourceId": "programme-detail-006",
         "sourceUrl": "https://builtsurvey.utm.my/academic/bachelor-of-geomatics-engineering/",
         "sourcePath": "data/imports/utm/2026-06-16/undergraduate/sources/programme-details/006-builtsurvey-utm-my-academic-bachelor-of-geomatics-engineering.html",
-        "anchorScore": 1.0,
+        "anchorScore": 1,
         "officialDetailTitle": "Bachelor of Geomatics Engineering with Honours | Faculty of Built Environment & Surveying",
         "overviewText": "is an academic discipline that concerns on acquisition, analysis, and interpretation of mainly geospatial data, relating to the Earth, its physical features and the built environment. It comprises tools and techniques of measuring, managing, presenting and analysing geospatial data from diverse sources with well-defined characteristics on accuracy and continuity; and in the form of digital format. Geospatial data are obtained from a wide range of technologically advanced tools like total station, Global Positioning System (GPS) / Global Navigation Satellite System (GNSS) equipment, digital aerial imagery (from both satellite and airborne), Terrestrial Laser Scanner (TLS), Unmanned Aerial Vehicle (UAV), echo sounder and Ground Penetrating Radar (GPR). These data are processed and manipulated by using a computer and the latest software. Also included in the area of geospatial are computer-based Geographic Information Systems (GIS) and remote sensing for monitoring the environment.",
         "duration": {
           "status": "programme-specific",
           "officialText": "8 Semesters",
           "semesters": 8,
-          "minYears": 4.0,
+          "minYears": 4,
           "sourceId": "utm-admission-undergraduate-international-brochure-2025",
           "sourceUrl": "https://admission.utm.my/wp-content/uploads/sites/461/2025/09/FINAL-APPROVED-NEW-BROCHURE-UG-INTER-8-x-8-in-1.pdf",
           "sourcePath": "data/imports/utm/2026-06-16/undergraduate/sources/supplemental-pdfs/FINAL-APPROVED-NEW-BROCHURE-UG-INTER-8-x-8-in-1.pdf"
@@ -2676,13 +2859,17 @@
         "academicRequirementSummary": "A Senior High School Certificate or equivalent pre – university qualifications. See more details for the entry requirements based on country; and Pass the English Proficiency requirements; and Pass the UTM interview (for Bachelor of Architecture & Bachelor of Science Industrial Design).",
         "languageRequirementStatus": "official-linked-page-not-parsed",
         "countryRequirementStatus": "official-country-table-present",
-        "healthRequirementStatus": "official-linked-form-present"
+        "healthRequirementStatus": "official-linked-form-present",
+        "chinaRequirementByField": {
+          "Engineering": "Senior Secondary School Graduation Certificate, or Graduation Certificate from a Vocational / Technical Secondary School (Zhixiao / Zhigao) or Skilled Worker School (Jixiao); scores of at least 70% in Mathematics and Physics, plus Chemistry or Biology.",
+          "Social Science": "Senior Secondary School Graduation Certificate, or Graduation Certificate from a Vocational / Technical Secondary School (Zhixiao / Zhigao) or Skilled Worker School (Jixiao); scores of at least 70% in any three accepted subjects, including Mathematics, Physics, Biology, Chemistry, Geography, Economy, Accounting, Business Management, ICT, Computer Science, Programming, Computing, Art and Design, or Visual Arts."
+        }
       },
       "languageRequirements": {
         "status": "official-general-rule",
         "sourceText": "Undergraduate candidates joining UTM from September 2023 must meet one English language route; the general undergraduate table applies to all programmes except TESL.",
         "scores": {
-          "MUET": 4.0,
+          "MUET": 4,
           "IELTS": 5.5,
           "TOEFL_iBT": 46,
           "PTE_Academic": 51,
@@ -2716,14 +2903,14 @@
         "sourceId": "programme-detail-001",
         "sourceUrl": "http://builtsurvey.utm.my/academic/bachelor-of-science-land-administration-development/",
         "sourcePath": "data/imports/utm/2026-06-16/undergraduate/sources/programme-details/001-builtsurvey-utm-my-academic-bachelor-of-science-land-administration-development.html",
-        "anchorScore": 1.0,
+        "anchorScore": 1,
         "officialDetailTitle": "Bachelor of Science Land Administration & Development with Honours | Faculty of Built Environment & Surveying",
         "overviewText": "The objectives of the programme is to produce graduates: i) Who are competent and able to solve land related matters diligently, critically and logically. ii) Who possess leadership and professional qualities as well as able to contribute to the administration, management and development of land locally and globally. iii) Who are able to work in societies with different background and cultures as to achieve common goals in land related activities. iv) Who are able to communicate ef ciently across a range of contexts and audiences within the land related profession. v) Who are able to respond and adapt readily to changing situations and able to instil lifelong learning ability as well as ability to acquire knowledge and skills independently. vi) Who are responsible and are highly dedicated to serve Allah, the Community and the Nation.",
         "duration": {
           "status": "programme-specific",
           "officialText": "8 semesters",
           "semesters": 8,
-          "minYears": 4.0
+          "minYears": 4
         },
         "studyMode": "Full Time",
         "languageOfInstruction": "not-confirmed",
@@ -2772,13 +2959,17 @@
         "academicRequirementSummary": "A Senior High School Certificate or equivalent pre – university qualifications. See more details for the entry requirements based on country; and Pass the English Proficiency requirements; and Pass the UTM interview (for Bachelor of Architecture & Bachelor of Science Industrial Design).",
         "languageRequirementStatus": "official-linked-page-not-parsed",
         "countryRequirementStatus": "official-country-table-present",
-        "healthRequirementStatus": "official-linked-form-present"
+        "healthRequirementStatus": "official-linked-form-present",
+        "chinaRequirementByField": {
+          "Engineering": "Senior Secondary School Graduation Certificate, or Graduation Certificate from a Vocational / Technical Secondary School (Zhixiao / Zhigao) or Skilled Worker School (Jixiao); scores of at least 70% in Mathematics and Physics, plus Chemistry or Biology.",
+          "Social Science": "Senior Secondary School Graduation Certificate, or Graduation Certificate from a Vocational / Technical Secondary School (Zhixiao / Zhigao) or Skilled Worker School (Jixiao); scores of at least 70% in any three accepted subjects, including Mathematics, Physics, Biology, Chemistry, Geography, Economy, Accounting, Business Management, ICT, Computer Science, Programming, Computing, Art and Design, or Visual Arts."
+        }
       },
       "languageRequirements": {
         "status": "official-general-rule",
         "sourceText": "Undergraduate candidates joining UTM from September 2023 must meet one English language route; the general undergraduate table applies to all programmes except TESL.",
         "scores": {
-          "MUET": 4.0,
+          "MUET": 4,
           "IELTS": 5.5,
           "TOEFL_iBT": 46,
           "PTE_Academic": 51,
@@ -2812,14 +3003,14 @@
         "sourceId": "programme-detail-008",
         "sourceUrl": "https://builtsurvey.utm.my/fabu2024/academic/bachelor-of-property-management/",
         "sourcePath": "data/imports/utm/2026-06-16/undergraduate/sources/programme-details/008-builtsurvey-utm-my-fabu2024-academic-bachelor-of-property-management.html",
-        "anchorScore": 1.0,
+        "anchorScore": 1,
         "officialDetailTitle": "Bachelor of Science Property Management with Honours | Faculty of Built Environment and Surveying",
         "overviewText": "Candidates are required to ful ll the University General Requirement and the Program Special Requirements. University General Requirements Possessed Sijil Pelajaran Malaysia (SPM) with credit in Bahasa Melayu/Bahasa Malaysia or credit in Bahasa Melayu/Bahasa Malaysia July Paper.",
         "duration": {
           "status": "programme-specific",
           "officialText": "10 semesters",
           "semesters": 10,
-          "minYears": 5.0
+          "minYears": 5
         },
         "studyMode": "not-confirmed",
         "languageOfInstruction": "not-confirmed",
@@ -2870,13 +3061,17 @@
         "academicRequirementSummary": "A Senior High School Certificate or equivalent pre – university qualifications. See more details for the entry requirements based on country; and Pass the English Proficiency requirements; and Pass the UTM interview (for Bachelor of Architecture & Bachelor of Science Industrial Design).",
         "languageRequirementStatus": "official-linked-page-not-parsed",
         "countryRequirementStatus": "official-country-table-present",
-        "healthRequirementStatus": "official-linked-form-present"
+        "healthRequirementStatus": "official-linked-form-present",
+        "chinaRequirementByField": {
+          "Engineering": "Senior Secondary School Graduation Certificate, or Graduation Certificate from a Vocational / Technical Secondary School (Zhixiao / Zhigao) or Skilled Worker School (Jixiao); scores of at least 70% in Mathematics and Physics, plus Chemistry or Biology.",
+          "Social Science": "Senior Secondary School Graduation Certificate, or Graduation Certificate from a Vocational / Technical Secondary School (Zhixiao / Zhigao) or Skilled Worker School (Jixiao); scores of at least 70% in any three accepted subjects, including Mathematics, Physics, Biology, Chemistry, Geography, Economy, Accounting, Business Management, ICT, Computer Science, Programming, Computing, Art and Design, or Visual Arts."
+        }
       },
       "languageRequirements": {
         "status": "official-general-rule",
         "sourceText": "Undergraduate candidates joining UTM from September 2023 must meet one English language route; the general undergraduate table applies to all programmes except TESL.",
         "scores": {
-          "MUET": 4.0,
+          "MUET": 4,
           "IELTS": 5.5,
           "TOEFL_iBT": 46,
           "PTE_Academic": 51,
@@ -2910,13 +3105,13 @@
         "sourceId": "programme-detail-011",
         "sourceUrl": "https://fai.utm.my/bachelor-in-artificial-intelligence-with-honours/",
         "sourcePath": "data/imports/utm/2026-06-16/undergraduate/sources/programme-details/011-fai-utm-my-bachelor-in-artificial-intelligence-with-honours.html",
-        "anchorScore": 1.0,
+        "anchorScore": 1,
         "officialDetailTitle": "Bachelor In Artificial Intelligence with Honours – FACULTY OF ARTIFICIAL INTELLIGENCE",
         "overviewText": "Bachelor in Artificial Intelligence with honours offers in Faculty of Artificial Intelligence, UTM is a 3-year program and is designed to provide students with a broad background in the principles, methodologies, and applications of AI. The program gives students the knowledge and skills to overcome and cope with the problems and opportunities of the emerging field of AI. The curriculum will provide a foundational course in mathematics and computer science and core AI courses. This comprises a set of courses that will particularly concentrate on the field of AI, including machine learning, deep learning, natural language processing, computer vision, generative AI, Responsible AI, and ethics and many more. Elective courses cover advanced topics in AI and AI applications in different domains. Students can choose up to 11 elective courses as per their interest or aspiration. The program emphasizes industry infused and hands-on experience via practical training, projects, and internships. Through this, the students will get a chance to apply AI techniques to real-world problems. Such hands-on experience will surely help the students gain critical thinking, problem-solving, and teamwork skills. Upon completion of the Bachelor in Artificial Intelligence with Honours program at UTM, graduates are well-equipped to pursue careers in various sectors such as technology, healthcare, finance, manufacturing, and more. They may work as AI engineers, data scientists, machine learning specialists, research scientists, AI consultants, or pursue further studies at the graduate level. The program aims to produce graduates capable of contributing to the development and application of AI technologies to address societal challenges and drive innovation.",
         "duration": {
           "status": "programme-specific",
           "officialText": "3-year program",
-          "minYears": 3.0
+          "minYears": 3
         },
         "studyMode": "Full Time",
         "languageOfInstruction": "not-confirmed",
@@ -2967,13 +3162,17 @@
         "academicRequirementSummary": "A Senior High School Certificate or equivalent pre – university qualifications. See more details for the entry requirements based on country; and Pass the English Proficiency requirements; and Pass the UTM interview (for Bachelor of Architecture & Bachelor of Science Industrial Design).",
         "languageRequirementStatus": "official-linked-page-not-parsed",
         "countryRequirementStatus": "official-country-table-present",
-        "healthRequirementStatus": "official-linked-form-present"
+        "healthRequirementStatus": "official-linked-form-present",
+        "chinaRequirementByField": {
+          "Engineering": "Senior Secondary School Graduation Certificate, or Graduation Certificate from a Vocational / Technical Secondary School (Zhixiao / Zhigao) or Skilled Worker School (Jixiao); scores of at least 70% in Mathematics and Physics, plus Chemistry or Biology.",
+          "Social Science": "Senior Secondary School Graduation Certificate, or Graduation Certificate from a Vocational / Technical Secondary School (Zhixiao / Zhigao) or Skilled Worker School (Jixiao); scores of at least 70% in any three accepted subjects, including Mathematics, Physics, Biology, Chemistry, Geography, Economy, Accounting, Business Management, ICT, Computer Science, Programming, Computing, Art and Design, or Visual Arts."
+        }
       },
       "languageRequirements": {
         "status": "official-general-rule",
         "sourceText": "Undergraduate candidates joining UTM from September 2023 must meet one English language route; the general undergraduate table applies to all programmes except TESL.",
         "scores": {
-          "MUET": 4.0,
+          "MUET": 4,
           "IELTS": 5.5,
           "TOEFL_iBT": 46,
           "PTE_Academic": 51,
@@ -3007,14 +3206,14 @@
         "sourceId": "programme-detail-029",
         "sourceUrl": "https://science.utm.my/undergraduate/b-sc-in-physics/",
         "sourcePath": "data/imports/utm/2026-06-16/undergraduate/sources/programme-details/029-science-utm-my-undergraduate-b-sc-in-physics.html",
-        "anchorScore": 1.0,
+        "anchorScore": 1,
         "officialDetailTitle": "B. Sc. in Physics | Undergraduate Studies",
         "overviewText": "The objectives of the B.Sc. (Physics) with Honours program are to provide the knowledge, skills and attributes that should be achieved by the graduates for a successful career.",
         "duration": {
           "status": "programme-specific",
           "officialText": "Minimum: 4 years 11. Study Duration Maximum: 6 years",
-          "minYears": 4.0,
-          "maxYears": 6.0,
+          "minYears": 4,
+          "maxYears": 6,
           "sourceId": "science-academic-handbook-2025-2026",
           "sourceUrl": "https://science.utm.my/undergraduate/wp-content/uploads/sites/584/2025/09/UGFS-Academic-Handbook-20252026-v2.pdf",
           "sourcePath": "data/imports/utm/2026-06-16/undergraduate/sources/supplemental-pdfs/UGFS-Academic-Handbook-20252026-v2.pdf"
@@ -3074,13 +3273,17 @@
         "academicRequirementSummary": "A Senior High School Certificate or equivalent pre – university qualifications. See more details for the entry requirements based on country; and Pass the English Proficiency requirements; and Pass the UTM interview (for Bachelor of Architecture & Bachelor of Science Industrial Design).",
         "languageRequirementStatus": "official-linked-page-not-parsed",
         "countryRequirementStatus": "official-country-table-present",
-        "healthRequirementStatus": "official-linked-form-present"
+        "healthRequirementStatus": "official-linked-form-present",
+        "chinaRequirementByField": {
+          "Engineering": "Senior Secondary School Graduation Certificate, or Graduation Certificate from a Vocational / Technical Secondary School (Zhixiao / Zhigao) or Skilled Worker School (Jixiao); scores of at least 70% in Mathematics and Physics, plus Chemistry or Biology.",
+          "Social Science": "Senior Secondary School Graduation Certificate, or Graduation Certificate from a Vocational / Technical Secondary School (Zhixiao / Zhigao) or Skilled Worker School (Jixiao); scores of at least 70% in any three accepted subjects, including Mathematics, Physics, Biology, Chemistry, Geography, Economy, Accounting, Business Management, ICT, Computer Science, Programming, Computing, Art and Design, or Visual Arts."
+        }
       },
       "languageRequirements": {
         "status": "official-general-rule",
         "sourceText": "Undergraduate candidates joining UTM from September 2023 must meet one English language route; the general undergraduate table applies to all programmes except TESL.",
         "scores": {
-          "MUET": 4.0,
+          "MUET": 4,
           "IELTS": 5.5,
           "TOEFL_iBT": 46,
           "PTE_Academic": 51,
@@ -3114,14 +3317,14 @@
         "sourceId": "programme-detail-027",
         "sourceUrl": "https://science.utm.my/undergraduate/b-sc-in-industrial-physics/",
         "sourcePath": "data/imports/utm/2026-06-16/undergraduate/sources/programme-details/027-science-utm-my-undergraduate-b-sc-in-industrial-physics.html",
-        "anchorScore": 1.0,
+        "anchorScore": 1,
         "officialDetailTitle": "B. Sc. in Industrial Physics | Undergraduate Studies",
         "overviewText": "The objectives of B.Sc. (Industrial Physics) program are to provide knowledge, skills, and attributes needed for a successful career. It is therefore anticipated that, graduates of the program will:",
         "duration": {
           "status": "programme-specific",
           "officialText": "Minimum: 4 years 11. Study Duration Maximum: 6 years",
-          "minYears": 4.0,
-          "maxYears": 6.0,
+          "minYears": 4,
+          "maxYears": 6,
           "sourceId": "science-academic-handbook-2025-2026",
           "sourceUrl": "https://science.utm.my/undergraduate/wp-content/uploads/sites/584/2025/09/UGFS-Academic-Handbook-20252026-v2.pdf",
           "sourcePath": "data/imports/utm/2026-06-16/undergraduate/sources/supplemental-pdfs/UGFS-Academic-Handbook-20252026-v2.pdf"
@@ -3179,13 +3382,17 @@
         "academicRequirementSummary": "A Senior High School Certificate or equivalent pre – university qualifications. See more details for the entry requirements based on country; and Pass the English Proficiency requirements; and Pass the UTM interview (for Bachelor of Architecture & Bachelor of Science Industrial Design).",
         "languageRequirementStatus": "official-linked-page-not-parsed",
         "countryRequirementStatus": "official-country-table-present",
-        "healthRequirementStatus": "official-linked-form-present"
+        "healthRequirementStatus": "official-linked-form-present",
+        "chinaRequirementByField": {
+          "Engineering": "Senior Secondary School Graduation Certificate, or Graduation Certificate from a Vocational / Technical Secondary School (Zhixiao / Zhigao) or Skilled Worker School (Jixiao); scores of at least 70% in Mathematics and Physics, plus Chemistry or Biology.",
+          "Social Science": "Senior Secondary School Graduation Certificate, or Graduation Certificate from a Vocational / Technical Secondary School (Zhixiao / Zhigao) or Skilled Worker School (Jixiao); scores of at least 70% in any three accepted subjects, including Mathematics, Physics, Biology, Chemistry, Geography, Economy, Accounting, Business Management, ICT, Computer Science, Programming, Computing, Art and Design, or Visual Arts."
+        }
       },
       "languageRequirements": {
         "status": "official-general-rule",
         "sourceText": "Undergraduate candidates joining UTM from September 2023 must meet one English language route; the general undergraduate table applies to all programmes except TESL.",
         "scores": {
-          "MUET": 4.0,
+          "MUET": 4,
           "IELTS": 5.5,
           "TOEFL_iBT": 46,
           "PTE_Academic": 51,
@@ -3219,14 +3426,14 @@
         "sourceId": "programme-detail-024",
         "sourceUrl": "https://science.utm.my/undergraduate/b-sc-in-chemistry/",
         "sourcePath": "data/imports/utm/2026-06-16/undergraduate/sources/programme-details/024-science-utm-my-undergraduate-b-sc-in-chemistry.html",
-        "anchorScore": 1.0,
+        "anchorScore": 1,
         "officialDetailTitle": "B. Sc. in Chemistry | Undergraduate Studies",
         "overviewText": "The objectives of the B.Sc. (Chemistry) with Honours program are to provide the knowledge, skills and attributes that should be achieved by the graduates for a successful career. It is therefore anticipated that, graduates of the program who are:",
         "duration": {
           "status": "programme-specific",
           "officialText": "Minimum: 4 years 11. Study Duration Maximum: 6 years",
-          "minYears": 4.0,
-          "maxYears": 6.0,
+          "minYears": 4,
+          "maxYears": 6,
           "sourceId": "science-academic-handbook-2025-2026",
           "sourceUrl": "https://science.utm.my/undergraduate/wp-content/uploads/sites/584/2025/09/UGFS-Academic-Handbook-20252026-v2.pdf",
           "sourcePath": "data/imports/utm/2026-06-16/undergraduate/sources/supplemental-pdfs/UGFS-Academic-Handbook-20252026-v2.pdf"
@@ -3288,13 +3495,17 @@
         "academicRequirementSummary": "A Senior High School Certificate or equivalent pre – university qualifications. See more details for the entry requirements based on country; and Pass the English Proficiency requirements; and Pass the UTM interview (for Bachelor of Architecture & Bachelor of Science Industrial Design).",
         "languageRequirementStatus": "official-linked-page-not-parsed",
         "countryRequirementStatus": "official-country-table-present",
-        "healthRequirementStatus": "official-linked-form-present"
+        "healthRequirementStatus": "official-linked-form-present",
+        "chinaRequirementByField": {
+          "Engineering": "Senior Secondary School Graduation Certificate, or Graduation Certificate from a Vocational / Technical Secondary School (Zhixiao / Zhigao) or Skilled Worker School (Jixiao); scores of at least 70% in Mathematics and Physics, plus Chemistry or Biology.",
+          "Social Science": "Senior Secondary School Graduation Certificate, or Graduation Certificate from a Vocational / Technical Secondary School (Zhixiao / Zhigao) or Skilled Worker School (Jixiao); scores of at least 70% in any three accepted subjects, including Mathematics, Physics, Biology, Chemistry, Geography, Economy, Accounting, Business Management, ICT, Computer Science, Programming, Computing, Art and Design, or Visual Arts."
+        }
       },
       "languageRequirements": {
         "status": "official-general-rule",
         "sourceText": "Undergraduate candidates joining UTM from September 2023 must meet one English language route; the general undergraduate table applies to all programmes except TESL.",
         "scores": {
-          "MUET": 4.0,
+          "MUET": 4,
           "IELTS": 5.5,
           "TOEFL_iBT": 46,
           "PTE_Academic": 51,
@@ -3328,14 +3539,14 @@
         "sourceId": "programme-detail-025",
         "sourceUrl": "https://science.utm.my/undergraduate/b-sc-in-industrial-chemistry/",
         "sourcePath": "data/imports/utm/2026-06-16/undergraduate/sources/programme-details/025-science-utm-my-undergraduate-b-sc-in-industrial-chemistry.html",
-        "anchorScore": 1.0,
+        "anchorScore": 1,
         "officialDetailTitle": "B. Sc. in Industrial Chemistry | Undergraduate Studies",
         "overviewText": "The objectives of the B.Sc. (Industrial Chemistry) with Honours program are to provide the knowledge, skills and attributes that should be achieved by the graduates for a successful career. The graduate should be:",
         "duration": {
           "status": "programme-specific",
           "officialText": "Minimum: 4 years 11. Study Duration Maximum: 6 years",
-          "minYears": 4.0,
-          "maxYears": 6.0,
+          "minYears": 4,
+          "maxYears": 6,
           "sourceId": "science-academic-handbook-2025-2026",
           "sourceUrl": "https://science.utm.my/undergraduate/wp-content/uploads/sites/584/2025/09/UGFS-Academic-Handbook-20252026-v2.pdf",
           "sourcePath": "data/imports/utm/2026-06-16/undergraduate/sources/supplemental-pdfs/UGFS-Academic-Handbook-20252026-v2.pdf"
@@ -3397,13 +3608,17 @@
         "academicRequirementSummary": "A Senior High School Certificate or equivalent pre – university qualifications. See more details for the entry requirements based on country; and Pass the English Proficiency requirements; and Pass the UTM interview (for Bachelor of Architecture & Bachelor of Science Industrial Design).",
         "languageRequirementStatus": "official-linked-page-not-parsed",
         "countryRequirementStatus": "official-country-table-present",
-        "healthRequirementStatus": "official-linked-form-present"
+        "healthRequirementStatus": "official-linked-form-present",
+        "chinaRequirementByField": {
+          "Engineering": "Senior Secondary School Graduation Certificate, or Graduation Certificate from a Vocational / Technical Secondary School (Zhixiao / Zhigao) or Skilled Worker School (Jixiao); scores of at least 70% in Mathematics and Physics, plus Chemistry or Biology.",
+          "Social Science": "Senior Secondary School Graduation Certificate, or Graduation Certificate from a Vocational / Technical Secondary School (Zhixiao / Zhigao) or Skilled Worker School (Jixiao); scores of at least 70% in any three accepted subjects, including Mathematics, Physics, Biology, Chemistry, Geography, Economy, Accounting, Business Management, ICT, Computer Science, Programming, Computing, Art and Design, or Visual Arts."
+        }
       },
       "languageRequirements": {
         "status": "official-general-rule",
         "sourceText": "Undergraduate candidates joining UTM from September 2023 must meet one English language route; the general undergraduate table applies to all programmes except TESL.",
         "scores": {
-          "MUET": 4.0,
+          "MUET": 4,
           "IELTS": 5.5,
           "TOEFL_iBT": 46,
           "PTE_Academic": 51,
@@ -3437,14 +3652,14 @@
         "sourceId": "programme-detail-028",
         "sourceUrl": "https://science.utm.my/undergraduate/b-sc-in-mathematics/",
         "sourcePath": "data/imports/utm/2026-06-16/undergraduate/sources/programme-details/028-science-utm-my-undergraduate-b-sc-in-mathematics.html",
-        "anchorScore": 1.0,
+        "anchorScore": 1,
         "officialDetailTitle": "B.Sc. in Mathematics | Undergraduate Studies",
         "overviewText": "The objectives of the B.Sc. (Mathematics) with Honours program are to provide the knowledge, skills and attributes that should be achieved by the graduates for a successful career. It is therefore anticipated that, graduates of the program will become:",
         "duration": {
           "status": "programme-specific",
           "officialText": "Minimum: 4 years 11. Study Duration Maximum: 6 years",
-          "minYears": 4.0,
-          "maxYears": 6.0,
+          "minYears": 4,
+          "maxYears": 6,
           "sourceId": "science-academic-handbook-2025-2026",
           "sourceUrl": "https://science.utm.my/undergraduate/wp-content/uploads/sites/584/2025/09/UGFS-Academic-Handbook-20252026-v2.pdf",
           "sourcePath": "data/imports/utm/2026-06-16/undergraduate/sources/supplemental-pdfs/UGFS-Academic-Handbook-20252026-v2.pdf"
@@ -3508,13 +3723,17 @@
         "academicRequirementSummary": "A Senior High School Certificate or equivalent pre – university qualifications. See more details for the entry requirements based on country; and Pass the English Proficiency requirements; and Pass the UTM interview (for Bachelor of Architecture & Bachelor of Science Industrial Design).",
         "languageRequirementStatus": "official-linked-page-not-parsed",
         "countryRequirementStatus": "official-country-table-present",
-        "healthRequirementStatus": "official-linked-form-present"
+        "healthRequirementStatus": "official-linked-form-present",
+        "chinaRequirementByField": {
+          "Engineering": "Senior Secondary School Graduation Certificate, or Graduation Certificate from a Vocational / Technical Secondary School (Zhixiao / Zhigao) or Skilled Worker School (Jixiao); scores of at least 70% in Mathematics and Physics, plus Chemistry or Biology.",
+          "Social Science": "Senior Secondary School Graduation Certificate, or Graduation Certificate from a Vocational / Technical Secondary School (Zhixiao / Zhigao) or Skilled Worker School (Jixiao); scores of at least 70% in any three accepted subjects, including Mathematics, Physics, Biology, Chemistry, Geography, Economy, Accounting, Business Management, ICT, Computer Science, Programming, Computing, Art and Design, or Visual Arts."
+        }
       },
       "languageRequirements": {
         "status": "official-general-rule",
         "sourceText": "Undergraduate candidates joining UTM from September 2023 must meet one English language route; the general undergraduate table applies to all programmes except TESL.",
         "scores": {
-          "MUET": 4.0,
+          "MUET": 4,
           "IELTS": 5.5,
           "TOEFL_iBT": 46,
           "PTE_Academic": 51,
@@ -3548,14 +3767,14 @@
         "sourceId": "programme-detail-026",
         "sourceUrl": "https://science.utm.my/undergraduate/b-sc-in-industrial-mathematics/",
         "sourcePath": "data/imports/utm/2026-06-16/undergraduate/sources/programme-details/026-science-utm-my-undergraduate-b-sc-in-industrial-mathematics.html",
-        "anchorScore": 1.0,
+        "anchorScore": 1,
         "officialDetailTitle": "B.Sc. in Industrial Mathematics | Undergraduate Studies",
         "overviewText": "The objectives of the BSc (Industrial Mathematics) with Honours program are to provide the knowledge, skills and attributes that should be achieved by the graduates for a successful career. It is therefore anticipated that, graduates of the program will become:",
         "duration": {
           "status": "programme-specific",
           "officialText": "Minimum: 4 years, Maximum: 6 years",
-          "minYears": 4.0,
-          "maxYears": 6.0,
+          "minYears": 4,
+          "maxYears": 6,
           "sourceId": "mjiit-undergraduate-guideline-2025-2026",
           "sourceUrl": "https://mjiit.utm.my/wp-content/uploads/2025/09/Final-Guideline-Book-UG-20252026.pdf",
           "sourcePath": "data/imports/utm/2026-06-16/undergraduate/sources/supplemental-pdfs/Final-Guideline-Book-UG-20252026.pdf"
@@ -3617,13 +3836,17 @@
         "academicRequirementSummary": "A Senior High School Certificate or equivalent pre – university qualifications. See more details for the entry requirements based on country; and Pass the English Proficiency requirements; and Pass the UTM interview (for Bachelor of Architecture & Bachelor of Science Industrial Design).",
         "languageRequirementStatus": "official-linked-page-not-parsed",
         "countryRequirementStatus": "official-country-table-present",
-        "healthRequirementStatus": "official-linked-form-present"
+        "healthRequirementStatus": "official-linked-form-present",
+        "chinaRequirementByField": {
+          "Engineering": "Senior Secondary School Graduation Certificate, or Graduation Certificate from a Vocational / Technical Secondary School (Zhixiao / Zhigao) or Skilled Worker School (Jixiao); scores of at least 70% in Mathematics and Physics, plus Chemistry or Biology.",
+          "Social Science": "Senior Secondary School Graduation Certificate, or Graduation Certificate from a Vocational / Technical Secondary School (Zhixiao / Zhigao) or Skilled Worker School (Jixiao); scores of at least 70% in any three accepted subjects, including Mathematics, Physics, Biology, Chemistry, Geography, Economy, Accounting, Business Management, ICT, Computer Science, Programming, Computing, Art and Design, or Visual Arts."
+        }
       },
       "languageRequirements": {
         "status": "official-general-rule",
         "sourceText": "Undergraduate candidates joining UTM from September 2023 must meet one English language route; the general undergraduate table applies to all programmes except TESL.",
         "scores": {
-          "MUET": 4.0,
+          "MUET": 4,
           "IELTS": 5.5,
           "TOEFL_iBT": 46,
           "PTE_Academic": 51,
@@ -3657,14 +3880,14 @@
         "sourceId": "programme-detail-023",
         "sourceUrl": "https://science.utm.my/undergraduate/b-sc-biology/",
         "sourcePath": "data/imports/utm/2026-06-16/undergraduate/sources/programme-details/023-science-utm-my-undergraduate-b-sc-biology.html",
-        "anchorScore": 1.0,
+        "anchorScore": 1,
         "officialDetailTitle": "B. Sc. ( Biology ) | Undergraduate Studies",
         "overviewText": "The B.Sc.Biology with Honours degree programme consists of a combination of basic core requirements and a wide variety of electives with the goals of preparing graduates who:",
         "duration": {
           "status": "programme-specific",
           "officialText": "Minimum: 4 years 11. Study Duration Maximum: 6 years",
-          "minYears": 4.0,
-          "maxYears": 6.0,
+          "minYears": 4,
+          "maxYears": 6,
           "sourceId": "science-academic-handbook-2025-2026",
           "sourceUrl": "https://science.utm.my/undergraduate/wp-content/uploads/sites/584/2025/09/UGFS-Academic-Handbook-20252026-v2.pdf",
           "sourcePath": "data/imports/utm/2026-06-16/undergraduate/sources/supplemental-pdfs/UGFS-Academic-Handbook-20252026-v2.pdf"
@@ -3722,13 +3945,17 @@
         "academicRequirementSummary": "A Senior High School Certificate or equivalent pre – university qualifications. See more details for the entry requirements based on country; and Pass the English Proficiency requirements; and Pass the UTM interview (for Bachelor of Architecture & Bachelor of Science Industrial Design).",
         "languageRequirementStatus": "official-linked-page-not-parsed",
         "countryRequirementStatus": "official-country-table-present",
-        "healthRequirementStatus": "official-linked-form-present"
+        "healthRequirementStatus": "official-linked-form-present",
+        "chinaRequirementByField": {
+          "Engineering": "Senior Secondary School Graduation Certificate, or Graduation Certificate from a Vocational / Technical Secondary School (Zhixiao / Zhigao) or Skilled Worker School (Jixiao); scores of at least 70% in Mathematics and Physics, plus Chemistry or Biology.",
+          "Social Science": "Senior Secondary School Graduation Certificate, or Graduation Certificate from a Vocational / Technical Secondary School (Zhixiao / Zhigao) or Skilled Worker School (Jixiao); scores of at least 70% in any three accepted subjects, including Mathematics, Physics, Biology, Chemistry, Geography, Economy, Accounting, Business Management, ICT, Computer Science, Programming, Computing, Art and Design, or Visual Arts."
+        }
       },
       "languageRequirements": {
         "status": "official-general-rule",
         "sourceText": "Undergraduate candidates joining UTM from September 2023 must meet one English language route; the general undergraduate table applies to all programmes except TESL.",
         "scores": {
-          "MUET": 4.0,
+          "MUET": 4,
           "IELTS": 5.5,
           "TOEFL_iBT": 46,
           "PTE_Academic": 51,
@@ -3762,14 +3989,14 @@
         "sourceId": "programme-detail-030",
         "sourceUrl": "https://science.utm.my/undergraduate/bachelor-of-science-biotechnology/",
         "sourcePath": "data/imports/utm/2026-06-16/undergraduate/sources/programme-details/030-science-utm-my-undergraduate-bachelor-of-science-biotechnology.html",
-        "anchorScore": 1.0,
+        "anchorScore": 1,
         "officialDetailTitle": "Bachelor of Science Biotechnology | Undergraduate Studies",
         "overviewText": "The B.Sc.Biotechnology with Honours degree programme consists of a combination of basic core requirements and a wide variety of electives with the goals of preparing graduates who:",
         "duration": {
           "status": "programme-specific",
           "officialText": "Minimum: 4 years 11. Study Duration Maximum: 6 years",
-          "minYears": 4.0,
-          "maxYears": 6.0,
+          "minYears": 4,
+          "maxYears": 6,
           "sourceId": "science-academic-handbook-2025-2026",
           "sourceUrl": "https://science.utm.my/undergraduate/wp-content/uploads/sites/584/2025/09/UGFS-Academic-Handbook-20252026-v2.pdf",
           "sourcePath": "data/imports/utm/2026-06-16/undergraduate/sources/supplemental-pdfs/UGFS-Academic-Handbook-20252026-v2.pdf"
@@ -3827,13 +4054,17 @@
         "academicRequirementSummary": "A Senior High School Certificate or equivalent pre – university qualifications. See more details for the entry requirements based on country; and Pass the English Proficiency requirements; and Pass the UTM interview (for Bachelor of Architecture & Bachelor of Science Industrial Design).",
         "languageRequirementStatus": "official-linked-page-not-parsed",
         "countryRequirementStatus": "official-country-table-present",
-        "healthRequirementStatus": "official-linked-form-present"
+        "healthRequirementStatus": "official-linked-form-present",
+        "chinaRequirementByField": {
+          "Engineering": "Senior Secondary School Graduation Certificate, or Graduation Certificate from a Vocational / Technical Secondary School (Zhixiao / Zhigao) or Skilled Worker School (Jixiao); scores of at least 70% in Mathematics and Physics, plus Chemistry or Biology.",
+          "Social Science": "Senior Secondary School Graduation Certificate, or Graduation Certificate from a Vocational / Technical Secondary School (Zhixiao / Zhigao) or Skilled Worker School (Jixiao); scores of at least 70% in any three accepted subjects, including Mathematics, Physics, Biology, Chemistry, Geography, Economy, Accounting, Business Management, ICT, Computer Science, Programming, Computing, Art and Design, or Visual Arts."
+        }
       },
       "languageRequirements": {
         "status": "official-general-rule",
         "sourceText": "Undergraduate candidates joining UTM from September 2023 must meet one English language route; the general undergraduate table applies to all programmes except TESL.",
         "scores": {
-          "MUET": 4.0,
+          "MUET": 4,
           "IELTS": 5.5,
           "TOEFL_iBT": 46,
           "PTE_Academic": 51,
@@ -3867,14 +4098,14 @@
         "sourceId": "programme-detail-020",
         "sourceUrl": "https://humanities.utm.my/sharps/bachelor-of-science-human-resource-development/",
         "sourcePath": "data/imports/utm/2026-06-16/undergraduate/sources/programme-details/020-humanities-utm-my-sharps-bachelor-of-science-human-resource-development.html",
-        "anchorScore": 1.0,
+        "anchorScore": 1,
         "officialDetailTitle": "BACHELOR OF SCIENCE (HUMAN RESOURCE DEVELOPMENT) WITH HONOURS (SHMRH) | School of Human Resource Development & Psychology",
         "overviewText": "(A) Matriculation / Foundation of Science (https://admission.utm.my/files/2020/02/LEPASANMATRIK-ASASI.pdf retrieved on 20/09/2020)",
         "duration": {
           "status": "programme-specific",
           "officialText": "Minimum:4 yrs (FT) / 5 yrs (PT) Maximum:6 yrs",
-          "minYears": 4.0,
-          "maxYears": 6.0
+          "minYears": 4,
+          "maxYears": 6
         },
         "studyMode": "not-confirmed",
         "languageOfInstruction": "not-confirmed",
@@ -3925,13 +4156,17 @@
         "academicRequirementSummary": "A Senior High School Certificate or equivalent pre – university qualifications. See more details for the entry requirements based on country; and Pass the English Proficiency requirements; and Pass the UTM interview (for Bachelor of Architecture & Bachelor of Science Industrial Design).",
         "languageRequirementStatus": "official-linked-page-not-parsed",
         "countryRequirementStatus": "official-country-table-present",
-        "healthRequirementStatus": "official-linked-form-present"
+        "healthRequirementStatus": "official-linked-form-present",
+        "chinaRequirementByField": {
+          "Engineering": "Senior Secondary School Graduation Certificate, or Graduation Certificate from a Vocational / Technical Secondary School (Zhixiao / Zhigao) or Skilled Worker School (Jixiao); scores of at least 70% in Mathematics and Physics, plus Chemistry or Biology.",
+          "Social Science": "Senior Secondary School Graduation Certificate, or Graduation Certificate from a Vocational / Technical Secondary School (Zhixiao / Zhigao) or Skilled Worker School (Jixiao); scores of at least 70% in any three accepted subjects, including Mathematics, Physics, Biology, Chemistry, Geography, Economy, Accounting, Business Management, ICT, Computer Science, Programming, Computing, Art and Design, or Visual Arts."
+        }
       },
       "languageRequirements": {
         "status": "official-general-rule",
         "sourceText": "Undergraduate candidates joining UTM from September 2023 must meet one English language route; the general undergraduate table applies to all programmes except TESL.",
         "scores": {
-          "MUET": 4.0,
+          "MUET": 4,
           "IELTS": 5.5,
           "TOEFL_iBT": 46,
           "PTE_Academic": 51,
@@ -3965,7 +4200,7 @@
         "sourceId": "programme-detail-019",
         "sourceUrl": "https://humanities.utm.my/sharps/bachelor-of-psychology-with-human-resource-development/",
         "sourcePath": "data/imports/utm/2026-06-16/undergraduate/sources/programme-details/019-humanities-utm-my-sharps-bachelor-of-psychology-with-human-resource-development.html",
-        "anchorScore": 1.0,
+        "anchorScore": 1,
         "officialDetailTitle": "Bachelor of Psychology with Human Resource Development | School of Human Resource Development & Psychology",
         "overviewText": "Become a psychology officer or professional with a broad knowledge of the fundamental principles in psychology and human resource development with the abilities to manage human problems within individual, organizational and societal contexts.",
         "duration": {
@@ -4021,13 +4256,17 @@
         "academicRequirementSummary": "A Senior High School Certificate or equivalent pre – university qualifications. See more details for the entry requirements based on country; and Pass the English Proficiency requirements; and Pass the UTM interview (for Bachelor of Architecture & Bachelor of Science Industrial Design).",
         "languageRequirementStatus": "official-linked-page-not-parsed",
         "countryRequirementStatus": "official-country-table-present",
-        "healthRequirementStatus": "official-linked-form-present"
+        "healthRequirementStatus": "official-linked-form-present",
+        "chinaRequirementByField": {
+          "Engineering": "Senior Secondary School Graduation Certificate, or Graduation Certificate from a Vocational / Technical Secondary School (Zhixiao / Zhigao) or Skilled Worker School (Jixiao); scores of at least 70% in Mathematics and Physics, plus Chemistry or Biology.",
+          "Social Science": "Senior Secondary School Graduation Certificate, or Graduation Certificate from a Vocational / Technical Secondary School (Zhixiao / Zhigao) or Skilled Worker School (Jixiao); scores of at least 70% in any three accepted subjects, including Mathematics, Physics, Biology, Chemistry, Geography, Economy, Accounting, Business Management, ICT, Computer Science, Programming, Computing, Art and Design, or Visual Arts."
+        }
       },
       "languageRequirements": {
         "status": "official-general-rule",
         "sourceText": "Undergraduate candidates joining UTM from September 2023 must meet one English language route; the general undergraduate table applies to all programmes except TESL.",
         "scores": {
-          "MUET": 4.0,
+          "MUET": 4,
           "IELTS": 5.5,
           "TOEFL_iBT": 46,
           "PTE_Academic": 51,
@@ -4061,7 +4300,7 @@
         "sourceId": "programme-detail-012",
         "sourceUrl": "https://fai.utm.my/bachelor-of-science-with-honours-industrial-design/",
         "sourcePath": "data/imports/utm/2026-06-16/undergraduate/sources/programme-details/012-fai-utm-my-bachelor-of-science-with-honours-industrial-design.html",
-        "anchorScore": 1.0,
+        "anchorScore": 1,
         "officialDetailTitle": "Bachelor of Science with Honours (Industrial Design) – FACULTY OF ARTIFICIAL INTELLIGENCE",
         "overviewText": "Industrial design is the integration of aesthetics, technology, ergonomics and marketing – know- how into new products, in which the needs of people are transformed into potentially commercial products.",
         "duration": {
@@ -4119,13 +4358,17 @@
         "academicRequirementSummary": "A Senior High School Certificate or equivalent pre – university qualifications. See more details for the entry requirements based on country; and Pass the English Proficiency requirements; and Pass the UTM interview (for Bachelor of Architecture & Bachelor of Science Industrial Design).",
         "languageRequirementStatus": "official-linked-page-not-parsed",
         "countryRequirementStatus": "official-country-table-present",
-        "healthRequirementStatus": "official-linked-form-present"
+        "healthRequirementStatus": "official-linked-form-present",
+        "chinaRequirementByField": {
+          "Engineering": "Senior Secondary School Graduation Certificate, or Graduation Certificate from a Vocational / Technical Secondary School (Zhixiao / Zhigao) or Skilled Worker School (Jixiao); scores of at least 70% in Mathematics and Physics, plus Chemistry or Biology.",
+          "Social Science": "Senior Secondary School Graduation Certificate, or Graduation Certificate from a Vocational / Technical Secondary School (Zhixiao / Zhigao) or Skilled Worker School (Jixiao); scores of at least 70% in any three accepted subjects, including Mathematics, Physics, Biology, Chemistry, Geography, Economy, Accounting, Business Management, ICT, Computer Science, Programming, Computing, Art and Design, or Visual Arts."
+        }
       },
       "languageRequirements": {
         "status": "official-general-rule",
         "sourceText": "Undergraduate candidates joining UTM from September 2023 must meet one English language route; the general undergraduate table applies to all programmes except TESL.",
         "scores": {
-          "MUET": 4.0,
+          "MUET": 4,
           "IELTS": 5.5,
           "TOEFL_iBT": 46,
           "PTE_Academic": 51,
@@ -4159,14 +4402,14 @@
         "sourceId": "programme-detail-022",
         "sourceUrl": "https://mjiit.utm.my/undergraduate/",
         "sourcePath": "data/imports/utm/2026-06-16/undergraduate/sources/programme-details/022-mjiit-utm-my-undergraduate.html",
-        "anchorScore": 1.0,
+        "anchorScore": 1,
         "officialDetailTitle": "Undergraduate | Malaysia Japan International Institute of Technology",
         "overviewText": "The Electronic Systems Engineering programme is designed for students who wish to acquire a solid foundation in electronic engineering at system level covering a broad engineering field that encompasses many subfields including those deal with power electronics, instrumentation, telecommunications, robotics and automations, semiconductor materials, IC design, advanced programming, AI & IoT applications, and many others.",
         "duration": {
           "status": "programme-specific",
           "officialText": "Minimum: 4 years, Maximum: 6 years",
-          "minYears": 4.0,
-          "maxYears": 6.0,
+          "minYears": 4,
+          "maxYears": 6,
           "sourceId": "mjiit-undergraduate-guideline-2025-2026",
           "sourceUrl": "https://mjiit.utm.my/wp-content/uploads/2025/09/Final-Guideline-Book-UG-20252026.pdf",
           "sourcePath": "data/imports/utm/2026-06-16/undergraduate/sources/supplemental-pdfs/Final-Guideline-Book-UG-20252026.pdf"
@@ -4225,13 +4468,17 @@
         "academicRequirementSummary": "A Senior High School Certificate or equivalent pre – university qualifications. See more details for the entry requirements based on country; and Pass the English Proficiency requirements; and Pass the UTM interview (for Bachelor of Architecture & Bachelor of Science Industrial Design).",
         "languageRequirementStatus": "official-linked-page-not-parsed",
         "countryRequirementStatus": "official-country-table-present",
-        "healthRequirementStatus": "official-linked-form-present"
+        "healthRequirementStatus": "official-linked-form-present",
+        "chinaRequirementByField": {
+          "Engineering": "Senior Secondary School Graduation Certificate, or Graduation Certificate from a Vocational / Technical Secondary School (Zhixiao / Zhigao) or Skilled Worker School (Jixiao); scores of at least 70% in Mathematics and Physics, plus Chemistry or Biology.",
+          "Social Science": "Senior Secondary School Graduation Certificate, or Graduation Certificate from a Vocational / Technical Secondary School (Zhixiao / Zhigao) or Skilled Worker School (Jixiao); scores of at least 70% in any three accepted subjects, including Mathematics, Physics, Biology, Chemistry, Geography, Economy, Accounting, Business Management, ICT, Computer Science, Programming, Computing, Art and Design, or Visual Arts."
+        }
       },
       "languageRequirements": {
         "status": "official-general-rule",
         "sourceText": "Undergraduate candidates joining UTM from September 2023 must meet one English language route; the general undergraduate table applies to all programmes except TESL.",
         "scores": {
-          "MUET": 4.0,
+          "MUET": 4,
           "IELTS": 5.5,
           "TOEFL_iBT": 46,
           "PTE_Academic": 51,
@@ -4265,14 +4512,14 @@
         "sourceId": "programme-detail-022",
         "sourceUrl": "https://mjiit.utm.my/undergraduate/",
         "sourcePath": "data/imports/utm/2026-06-16/undergraduate/sources/programme-details/022-mjiit-utm-my-undergraduate.html",
-        "anchorScore": 1.0,
+        "anchorScore": 1,
         "officialDetailTitle": "Undergraduate | Malaysia Japan International Institute of Technology",
         "overviewText": "The Mechanical Precision Engineering programme is designed for students who wish to acquire a solid foundation in mechanical engineering with deep knowledge of the principles and practices of precision engineering.",
         "duration": {
           "status": "programme-specific",
           "officialText": "Minimum: 4 years, Maximum: 6 years",
-          "minYears": 4.0,
-          "maxYears": 6.0,
+          "minYears": 4,
+          "maxYears": 6,
           "sourceId": "mjiit-undergraduate-guideline-2025-2026",
           "sourceUrl": "https://mjiit.utm.my/wp-content/uploads/2025/09/Final-Guideline-Book-UG-20252026.pdf",
           "sourcePath": "data/imports/utm/2026-06-16/undergraduate/sources/supplemental-pdfs/Final-Guideline-Book-UG-20252026.pdf"
@@ -4331,13 +4578,17 @@
         "academicRequirementSummary": "A Senior High School Certificate or equivalent pre – university qualifications. See more details for the entry requirements based on country; and Pass the English Proficiency requirements; and Pass the UTM interview (for Bachelor of Architecture & Bachelor of Science Industrial Design).",
         "languageRequirementStatus": "official-linked-page-not-parsed",
         "countryRequirementStatus": "official-country-table-present",
-        "healthRequirementStatus": "official-linked-form-present"
+        "healthRequirementStatus": "official-linked-form-present",
+        "chinaRequirementByField": {
+          "Engineering": "Senior Secondary School Graduation Certificate, or Graduation Certificate from a Vocational / Technical Secondary School (Zhixiao / Zhigao) or Skilled Worker School (Jixiao); scores of at least 70% in Mathematics and Physics, plus Chemistry or Biology.",
+          "Social Science": "Senior Secondary School Graduation Certificate, or Graduation Certificate from a Vocational / Technical Secondary School (Zhixiao / Zhigao) or Skilled Worker School (Jixiao); scores of at least 70% in any three accepted subjects, including Mathematics, Physics, Biology, Chemistry, Geography, Economy, Accounting, Business Management, ICT, Computer Science, Programming, Computing, Art and Design, or Visual Arts."
+        }
       },
       "languageRequirements": {
         "status": "official-general-rule",
         "sourceText": "Undergraduate candidates joining UTM from September 2023 must meet one English language route; the general undergraduate table applies to all programmes except TESL.",
         "scores": {
-          "MUET": 4.0,
+          "MUET": 4,
           "IELTS": 5.5,
           "TOEFL_iBT": 46,
           "PTE_Academic": 51,
@@ -4371,14 +4622,14 @@
         "sourceId": "programme-detail-022",
         "sourceUrl": "https://mjiit.utm.my/undergraduate/",
         "sourcePath": "data/imports/utm/2026-06-16/undergraduate/sources/programme-details/022-mjiit-utm-my-undergraduate.html",
-        "anchorScore": 1.0,
+        "anchorScore": 1,
         "officialDetailTitle": "Undergraduate | Malaysia Japan International Institute of Technology",
         "overviewText": "The Bachelor of Chemical Process Engineering with Honours (SMJCH) has been designed with a balanced curriculum to give students the knowledge and competency to work professionally as engineers. The curriculum covers basic engineering emphasis and specialisation in chemical engineering. The humanities elements are also embedded in producing well-rounded, morally sound, ethical engineers who communicate effectively. The Chemical Process Engineering program was designed for students who wish to acquire a solid foundation in chemical engineering with deep knowledge of the principles and practices of chemical engineering. This academic program is accredited by the Malaysian Qualifications Agency (MQA/FA9197) and the Board of Engineers Malaysia (2017-2028). It complies with engineering content defined by the Engineering Accreditation Council (EAC) and the Washington Accord.",
         "duration": {
           "status": "programme-specific",
           "officialText": "8 semesters",
           "semesters": 8,
-          "minYears": 4.0
+          "minYears": 4
         },
         "studyMode": "not-confirmed",
         "languageOfInstruction": "not-confirmed",

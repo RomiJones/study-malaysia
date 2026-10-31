@@ -1,0 +1,61 @@
+{
+  "status": "published",
+  "scope": {
+    "universityCode": "UNM",
+    "collectionScope": "full",
+    "levels": [
+      "bachelor",
+      "master",
+      "phd",
+      "postgraduate-certificate",
+      "postgraduate-diploma"
+    ],
+    "applicantScope": "international",
+    "academicSession": "2026 intake"
+  },
+  "levels": [
+    "bachelor",
+    "master",
+    "phd",
+    "postgraduate-certificate",
+    "postgraduate-diploma"
+  ],
+  "authorization": "publish",
+  "counts": {
+    "directoryOccurrences": 64,
+    "uniqueOfficialEntries": 64,
+    "canonicalProgrammes": 81,
+    "ready": 81,
+    "needsReview": 0,
+    "notAvailableForInternational": 0,
+    "byLevel": {
+      "bachelor": 36,
+      "master": 28,
+      "phd": 15,
+      "postgraduate-certificate": 1,
+      "postgraduate-diploma": 1
+    }
+  },
+  "coverageKeys": [
+    "academicRequirement",
+    "applicationDocuments",
+    "campus",
+    "duration",
+    "evidence",
+    "faculty",
+    "fee",
+    "identity",
+    "institutionProfile",
+    "intake",
+    "internationalEligibility",
+    "languageRequirement",
+    "localization",
+    "studyMode"
+  ],
+  "sourceCount": 73,
+  "artifactCount": 14,
+  "blockingExceptionCount": 0,
+  "reviewExceptionCount": 0,
+  "issueCounts": {},
+  "issues": []
+}

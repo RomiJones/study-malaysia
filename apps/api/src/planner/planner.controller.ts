@@ -52,6 +52,26 @@ class UpdateProfileDto {
   @IsOptional()
   @IsBoolean()
   acceptNoLanguage?: boolean;
+
+  @IsOptional()
+  @IsObject()
+  contactInfo?: Record<string, unknown>;
+
+  @IsOptional()
+  @IsObject()
+  academicBackground?: Record<string, unknown>;
+
+  @IsOptional()
+  @IsObject()
+  languageProfile?: Record<string, unknown>;
+
+  @IsOptional()
+  @IsObject()
+  studyPreferences?: Record<string, unknown>;
+
+  @IsOptional()
+  @IsObject()
+  serviceNeeds?: Record<string, unknown>;
 }
 
 class UpdateMaterialDto {

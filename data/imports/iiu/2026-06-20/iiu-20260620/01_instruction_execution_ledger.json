@@ -1,0 +1,65 @@
+[
+  {
+    "id": "user-instruction-001",
+    "instruction": "对已采集的英迪大学本硕博专业信息按标准工作流深挖校对准确性",
+    "scope": "run",
+    "status": "completed",
+    "evidencePointer": "16_acceptance_gap_audit.md"
+  },
+  {
+    "id": "run-contract",
+    "instruction": "Record run contract before collection.",
+    "scope": "run",
+    "status": "completed",
+    "evidencePointer": "00_run_contract.json"
+  },
+  {
+    "id": "official-source-graph",
+    "instruction": "Build official source graph from institution, level catalogues, detail pages, requirements and application sources.",
+    "scope": "source",
+    "status": "completed",
+    "evidencePointer": "02_official_source_registry.json"
+  },
+  {
+    "id": "row-disposal",
+    "instruction": "Dispose every official directory row before enrichment.",
+    "scope": "level",
+    "status": "completed",
+    "evidencePointer": "04_official_row_disposal.json"
+  },
+  {
+    "id": "detail-page-inventory",
+    "instruction": "Inventory every official programme detail page option/panel.",
+    "scope": "programme",
+    "status": "completed",
+    "evidencePointer": "06_page_option_inventory.json"
+  },
+  {
+    "id": "field-coverage",
+    "instruction": "Create field coverage matrix for every canonical programme.",
+    "scope": "field",
+    "status": "completed",
+    "evidencePointer": "07_field_coverage_matrix.json"
+  },
+  {
+    "id": "runtime-continuity",
+    "instruction": "Do not close or restart Ian's running StudyMY project端 during collection.",
+    "scope": "run",
+    "status": "completed",
+    "evidencePointer": "13_runtime_continuity_check.json"
+  },
+  {
+    "id": "collect-only-boundary",
+    "instruction": "采集 means audited candidate only; do not mutate database.",
+    "scope": "publication",
+    "status": "completed",
+    "evidencePointer": "delivery.json"
+  },
+  {
+    "id": "deep-accuracy-recheck",
+    "instruction": "Deep-check collected data for fee precision, language parsing, duration normalization, route-specific requirements, China route, and public-display localization gaps.",
+    "scope": "field",
+    "status": "completed",
+    "evidencePointer": "16_acceptance_gap_audit.md"
+  }
+]

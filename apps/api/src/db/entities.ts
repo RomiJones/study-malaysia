@@ -48,9 +48,25 @@ import type {
 
 export type AdminDataScope = "all" | "assigned" | "created";
 export type AdminMenuType = "directory" | "menu" | "action";
-export type ApplicationStatus = "draft" | "submitted" | "reviewing" | "offer" | "visa" | "done" | "closed";
+export type ApplicationStatus =
+  | "draft"
+  | "submitted"
+  | "reviewing"
+  | "need-info"
+  | "platform-approved"
+  | "school-submitted"
+  | "school-reviewing"
+  | "offered"
+  | "offer"
+  | "rejected"
+  | "visa"
+  | "done"
+  | "closed";
 export type VisaStatus = "not-started" | "preparing" | "submitted" | "approved" | "rejected";
 export type FollowUpType = "note" | "status" | "assign" | "material" | "visa";
+export type ApplicationFollowUpVisibility = "internal" | "student" | "system";
+export type ApplicationMessageSenderType = "student" | "admin" | "system";
+export type ApplicationMessageType = "message" | "revision-request" | "material-upload" | "system";
 export type UserLocalePreferenceSource = "default" | "browser" | "local-storage" | "query-param" | "user-account";
 export type RecommendationProfileFieldKey = SmartRecommendationProfileField;
 export type RecommendationRequiredProfileFieldKey = SmartRecommendationRequiredProfileField;
@@ -145,6 +161,9 @@ export class UserEntity {
 
   @OneToMany(() => StudentApplicationEntity, (application) => application.student)
   applications?: Relation<StudentApplicationEntity[]>;
+
+  @OneToMany(() => StudentMaterialLibraryEntity, (material) => material.student)
+  materialLibrary?: Relation<StudentMaterialLibraryEntity[]>;
 }
 
 @Entity({ name: "admin_users" })
@@ -193,6 +212,9 @@ export class AdminUserEntity {
 
   @OneToMany(() => ApplicationFollowUpEntity, (followUp) => followUp.adminUser)
   followUps?: Relation<ApplicationFollowUpEntity[]>;
+
+  @OneToMany(() => AdminNotificationEntity, (notification) => notification.adminUser)
+  notifications?: Relation<AdminNotificationEntity[]>;
 
   @OneToMany(() => OperationLogEntity, (log) => log.adminUser)
   operationLogs?: Relation<OperationLogEntity[]>;
@@ -752,6 +774,21 @@ export class PlannerProfileEntity {
   @Column({ type: "boolean", default: true })
   acceptNoLanguage!: boolean;
 
+  @Column({ type: "json", nullable: true })
+  contactInfo!: Record<string, unknown> | null;
+
+  @Column({ type: "json", nullable: true })
+  academicBackground!: Record<string, unknown> | null;
+
+  @Column({ type: "json", nullable: true })
+  languageProfile!: Record<string, unknown> | null;
+
+  @Column({ type: "json", nullable: true })
+  studyPreferences!: Record<string, unknown> | null;
+
+  @Column({ type: "json", nullable: true })
+  serviceNeeds!: Record<string, unknown> | null;
+
   @Column({ type: "int", default: 1 })
   profileVersion!: number;
 
@@ -1061,6 +1098,56 @@ export class StudentApplicationEntity {
   @OneToMany(() => ApplicationFollowUpEntity, (followUp) => followUp.application)
   followUps?: Relation<ApplicationFollowUpEntity[]>;
 
+  @OneToMany(() => ApplicationMessageEntity, (message) => message.application)
+  messages?: Relation<ApplicationMessageEntity[]>;
+
+  @CreateDateColumn()
+  createdAt!: Date;
+
+  @UpdateDateColumn()
+  updatedAt!: Date;
+}
+
+@Entity({ name: "student_material_library" })
+@Index(["studentId", "materialType"])
+export class StudentMaterialLibraryEntity {
+  @PrimaryGeneratedColumn()
+  id!: number;
+
+  @Column({ type: "int" })
+  studentId!: number;
+
+  @ManyToOne(() => UserEntity, (user) => user.materialLibrary, { onDelete: "CASCADE" })
+  @JoinColumn({ name: "studentId" })
+  student!: Relation<UserEntity>;
+
+  @Column({ type: "varchar", length: 80 })
+  materialType!: string;
+
+  @Column({ type: "varchar", length: 180 })
+  title!: string;
+
+  @Column({ type: "varchar", length: 255 })
+  fileName!: string;
+
+  @Column({ type: "varchar", length: 120, default: "" })
+  mimeType!: string;
+
+  @Column({ type: "int", default: 0 })
+  size!: number;
+
+  @Column({ type: "varchar", length: 500 })
+  storagePath!: string;
+
+  @Column({ type: "varchar", length: 80 })
+  currentVersionId!: string;
+
+  @Column({ type: "int", default: 1 })
+  version!: number;
+
+  @Column({ type: "json", nullable: true })
+  metadata!: Record<string, unknown> | null;
+
   @CreateDateColumn()
   createdAt!: Date;
 
@@ -1090,6 +1177,9 @@ export class ApplicationFollowUpEntity {
   @Column({ type: "varchar", length: 20, default: "note" })
   followUpType!: FollowUpType;
 
+  @Column({ type: "varchar", length: 20, default: "internal" })
+  visibility!: ApplicationFollowUpVisibility;
+
   @Column({ type: "varchar", length: 30, nullable: true })
   statusFrom!: string | null;
 
@@ -1104,6 +1194,96 @@ export class ApplicationFollowUpEntity {
 
   @Column({ type: "datetime", nullable: true })
   nextFollowUpAt!: Date | null;
+
+  @CreateDateColumn()
+  createdAt!: Date;
+}
+
+@Entity({ name: "application_messages" })
+@Index(["applicationId", "createdAt"])
+export class ApplicationMessageEntity {
+  @PrimaryGeneratedColumn()
+  id!: number;
+
+  @Column({ type: "int" })
+  applicationId!: number;
+
+  @ManyToOne(() => StudentApplicationEntity, (application) => application.messages, { onDelete: "CASCADE" })
+  @JoinColumn({ name: "applicationId" })
+  application!: Relation<StudentApplicationEntity>;
+
+  @Column({ type: "int", nullable: true })
+  studentId!: number | null;
+
+  @ManyToOne(() => UserEntity, { onDelete: "SET NULL" })
+  @JoinColumn({ name: "studentId" })
+  student?: Relation<UserEntity>;
+
+  @Column({ type: "int", nullable: true })
+  adminUserId!: number | null;
+
+  @ManyToOne(() => AdminUserEntity, { onDelete: "SET NULL" })
+  @JoinColumn({ name: "adminUserId" })
+  adminUser?: Relation<AdminUserEntity>;
+
+  @Column({ type: "varchar", length: 20, default: "student" })
+  senderType!: ApplicationMessageSenderType;
+
+  @Column({ type: "varchar", length: 30, default: "message" })
+  messageType!: ApplicationMessageType;
+
+  @Column({ type: "text" })
+  content!: string;
+
+  @Column({ type: "json", nullable: true })
+  metadata!: Record<string, unknown> | null;
+
+  @Column({ type: "boolean", default: false })
+  isReadByStudent!: boolean;
+
+  @Column({ type: "boolean", default: false })
+  isReadByAdmin!: boolean;
+
+  @CreateDateColumn()
+  createdAt!: Date;
+}
+
+@Entity({ name: "admin_notifications" })
+@Index(["adminUserId", "isRead"])
+export class AdminNotificationEntity {
+  @PrimaryGeneratedColumn()
+  id!: number;
+
+  @Column({ type: "int" })
+  adminUserId!: number;
+
+  @ManyToOne(() => AdminUserEntity, (adminUser) => adminUser.notifications, { onDelete: "CASCADE" })
+  @JoinColumn({ name: "adminUserId" })
+  adminUser!: Relation<AdminUserEntity>;
+
+  @Column({ type: "varchar", length: 80, default: "application" })
+  notificationType!: string;
+
+  @Column({ type: "varchar", length: 60, default: "application" })
+  targetType!: string;
+
+  @Column({ type: "varchar", length: 60, default: "" })
+  targetId!: string;
+
+  @Column({ type: "varchar", length: 160 })
+  title!: string;
+
+  @Column({ type: "varchar", length: 500, default: "" })
+  body!: string;
+
+  @Column({ type: "boolean", default: false })
+  isRead!: boolean;
+
+  @Column({ type: "json", nullable: true })
+  metadata!: Record<string, unknown> | null;
+
+  @Column({ type: "datetime", nullable: true })
+  readAt!: Date | null;
 
   @CreateDateColumn()
   createdAt!: Date;
@@ -1299,7 +1479,10 @@ export const ALL_ENTITIES = [
   PlannerTaskEntity,
   ContentBlockEntity,
   StudentApplicationEntity,
+  StudentMaterialLibraryEntity,
   ApplicationFollowUpEntity,
+  ApplicationMessageEntity,
+  AdminNotificationEntity,
   SystemConfigEntity,
   DictionaryItemEntity,
   QualityRuleEntity,

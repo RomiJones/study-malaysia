@@ -51,3 +51,18 @@
 - **剩余风险**: 当前工作区存在大量非本任务未提交改动，本轮未回滚也未纳入 TASK-046 修复范围；视觉截图脚本使用 mock API 与静态 HTML 对照，仍建议后续发布前在真实数据环境抽查一次。
 - **后续建议**: 后续 TASK-047 至 TASK-050 处理专业列表长字段和模态框样式时，应继续复用本轮 Playwright 交互检查方式，避免影响学校详情页 tab 区域。
 - **Notion 更新**: 未更新真实 Notion；本轮只更新本地 Notion 快照任务页，原因是运行上下文未提供可安全写入的 Notion 页面 ID 或项目首页。
+
+### 2026-05-24T21:42:12.018Z - 自动状态更新
+
+- **状态**: 待评审
+- **说明**: Codex 已完成实现并返回完成状态。
+
+### 2026-05-24T22:05:32.855Z - 自动状态更新
+
+- **状态**: 已完成
+- **说明**: Review 通过：Review 通过。已复核当前 HEAD 6097a47 的学校详情页 tab 修复：6 个 tab 与 6 个稳定 tabpanel 的 ARIA 关联完整，键盘 Arrow/Home/End 切换、tabpanel 可见焦点、桌面与 900px 马来文响应式布局均满足当前新增需求。TASK-046-REVIEW-001 已在 review-issues.json 标记为 fixed。
+
+### 2026-05-24T22:05:32.885Z - 自动状态更新
+
+- **状态**: 已完成
+- **说明**: Review 通过：Review 通过。已复核当前 HEAD 6097a47 的学校详情页 tab 修复：6 个 tab 与 6 个稳定 tabpanel 的 ARIA 关联完整，键盘 Arrow/Home/End 切换、tabpanel 可见焦点、桌面与 900px 马来文响应式布局均满足当前新增需求。TASK-046-REVIEW-001 已在 review-issues.json 标记为 fixed。

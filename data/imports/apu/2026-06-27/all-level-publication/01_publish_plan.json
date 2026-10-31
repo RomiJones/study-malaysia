@@ -1,0 +1,76 @@
+{
+  "schemaVersion": 1,
+  "createdAt": "2026-06-26T16:57:13.289Z",
+  "institution": {
+    "code": "APU",
+    "shortName": "APU",
+    "name": "Asia Pacific University of Technology & Innovation",
+    "slug": "asia-pacific-university"
+  },
+  "authorization": "operator-requested-publication",
+  "sourceInputs": {
+    "undergraduateAudit": "audits/APU_audit_undergraduate_20260626_reviewed_v1.json",
+    "masterAudit": "audits/APU_audit_master_20260626_reviewed_v1.json",
+    "doctoralAudit": "audits/APU_audit_doctoral_20260627.json",
+    "sourceAuditSafeToImport": false,
+    "sourceAuditReason": "StudyMY audit JSON stays safe_to_import=false by contract; this importer publishes only after explicit operator command."
+  },
+  "writePolicy": {
+    "importer": "apps/api/src/db/import-apu-official-audit.ts",
+    "mode": "publish-all-levels",
+    "upsertPrefix": "apu-public-20260627-",
+    "universityRow": "upsert by code APU or slug asia-pacific-university",
+    "programmeRows": "upsert 107 current APU public rows and archive non-current APU rows",
+    "transactional": true,
+    "backupRequired": true
+  },
+  "publicationHardGate": {
+    "result": "passed",
+    "standard": "docs/prd/StudyMY-official-programme-publication-hard-gate.md",
+    "rules": [
+      "Chinese programme name",
+      "Chinese faculty",
+      "IELTS list score",
+      "single official international tuition",
+      "numeric duration years",
+      "official-unpublished fields do not leak English placeholders"
+    ]
+  },
+  "expectedSurface": {
+    "programmeCount": 107,
+    "byLevel": {
+      "bachelor": 56,
+      "master": 42,
+      "phd": 9
+    },
+    "summary": {
+      "importRows": 107,
+      "byLevel": {
+        "bachelor": 56,
+        "master": 42,
+        "phd": 9
+      },
+      "readyRows": 107,
+      "publishedRows": 107,
+      "uniqueSlugs": 107,
+      "officialFeeRows": 107,
+      "languageRows": 107,
+      "chineseNameRows": 107,
+      "chineseFacultyRows": 107,
+      "chineseCurriculumRows": 107,
+      "chineseCareerRows": 107,
+      "sourceRows": 107,
+      "officialUnpublishedCareerRows": 8,
+      "publicDisplayStatusCounts": {
+        "ready": 107
+      },
+      "officialSourceStatusCounts": {
+        "official-verified": 107
+      },
+      "feeAuditStatusCounts": {
+        "matched-official": 107
+      }
+    },
+    "exceptions": []
+  }
+}

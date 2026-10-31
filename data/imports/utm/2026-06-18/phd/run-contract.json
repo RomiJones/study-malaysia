@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 1,
+  "institutionIdentifier": "UTM",
+  "institutionNameOfficial": "Universiti Teknologi Malaysia",
+  "collectionScope": "programmes",
+  "levels": [
+    "phd"
+  ],
+  "level": "phd",
+  "applicantScope": "international",
+  "academicSession": "2026/2027",
+  "currentAsOf": "2026-06-18",
+  "authorization": "collect",
+  "selectedChineseTask": "当前用户指令：严格执行标准，使用专用 skill 对 UTM 理工大学博士专业信息进行采集。",
+  "selectedChineseTaskStatus": "未发现专门 UTM 博士 Notion task snapshot；本轮以当前用户指令和项目/skill 中文验收口径为准。",
+  "prdOrTechnicalDesign": [
+    "docs/notion-snapshot/复盘总结.md",
+    "docs/prd/USM-commercial-release-workflow.md",
+    "studymy-official-university-collector references"
+  ],
+  "outputPaths": {
+    "runContract": "data/imports/utm/2026-06-18/phd/run-contract.json",
+    "levelManifest": "data/imports/utm/2026-06-18/phd/level-manifest.json",
+    "sourceCacheIndex": "data/imports/utm/2026-06-18/phd/source-cache-index.json",
+    "candidateDataset": "data/imports/utm/2026-06-18/phd/candidate-dataset.json",
+    "exceptionQueue": "data/imports/utm/2026-06-18/phd/exception-queue.json",
+    "preImportGapAudit": "data/imports/utm/2026-06-18/phd/pre-import-gap-audit.json",
+    "currentOfficialDiffAudit": "data/imports/utm/2026-06-18/phd/current-official-diff-audit.json",
+    "operatorReviewReport": "data/imports/utm/2026-06-18/phd/operator-review-report.json",
+    "deliveryEnvelope": "data/imports/utm/2026-06-18/phd/delivery-envelope.json",
+    "instructionLedger": "data/imports/utm/2026-06-18/phd/skill-workflow-audit/01_instruction_execution_ledger.json",
+    "sourceRegistry": "data/imports/utm/2026-06-18/phd/skill-workflow-audit/02_official_source_registry.json",
+    "officialRowDisposal": "data/imports/utm/2026-06-18/phd/skill-workflow-audit/04_official_row_disposal.json",
+    "sourceCacheIndexWorkflow": "data/imports/utm/2026-06-18/phd/skill-workflow-audit/05_source_cache_index.json",
+    "pageOptionInventory": "data/imports/utm/2026-06-18/phd/skill-workflow-audit/06_page_option_inventory.json",
+    "fieldCoverageMatrix": "data/imports/utm/2026-06-18/phd/skill-workflow-audit/07_field_coverage_matrix.json",
+    "candidateDatasetWorkflow": "data/imports/utm/2026-06-18/phd/skill-workflow-audit/08_candidate_dataset.json",
+    "sourceToCandidateTrace": "data/imports/utm/2026-06-18/phd/skill-workflow-audit/09_source_to_candidate_trace.json",
+    "displayParityReport": "data/imports/utm/2026-06-18/phd/skill-workflow-audit/10_display_parity_report.json",
+    "exceptionQueueWorkflow": "data/imports/utm/2026-06-18/phd/skill-workflow-audit/11_exception_queue.json",
+    "operatorReviewMarkdown": "data/imports/utm/2026-06-18/phd/skill-workflow-audit/12_operator_review_report.md",
+    "integrityManifest": "data/imports/utm/2026-06-18/phd/skill-workflow-audit/99_integrity_manifest.json"
+  },
+  "verificationCommands": [
+    "python3 -m py_compile scripts/collect-utm-phd-official.py",
+    "python3 scripts/collect-utm-phd-official.py",
+    "python3 scripts/audit_delivery.py data/imports/utm/2026-06-18/phd/delivery-envelope.json --summary-only"
+  ],
+  "rollbackTarget": "Not applicable: collect-only run does not mutate database.",
+  "notionOrLocalNotePath": "docs/notion-snapshot/开发进度日志.md",
+  "retrievedAt": "2026-06-19T03:59:45+00:00"
+}

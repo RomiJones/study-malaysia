@@ -1,0 +1,2733 @@
+{
+  "schemaVersion": 1,
+  "status": "review-required",
+  "requiredFieldGroups": [
+    "languageRequirement",
+    "interviewRequirement",
+    "courseSetting",
+    "curriculumModules",
+    "applicationDocuments",
+    "chinaSpecificRoute",
+    "careerDirections",
+    "recognition",
+    "tuition",
+    "intake",
+    "studyTypeAndArrangement"
+  ],
+  "records": [
+    {
+      "candidateCode": "UCSI-PHD-001",
+      "nameEnOfficial": "Doctor Of Philosophy (Business And Management)",
+      "checkedRoutes": [
+        "https://www.ucsiuniversity.edu.my/programmes/doctor-philosophy-business-and-management",
+        "https://www.ucsiuniversity.edu.my/international-students",
+        "https://www.ucsiuniversity.edu.my/admission-procedure/international/Kuala-lumpur"
+      ],
+      "fields": {
+        "languageRequirement": "official-value",
+        "interviewRequirement": "not-confirmed",
+        "courseSetting": "official-value",
+        "curriculumModules": "official-value",
+        "applicationDocuments": "general-rule",
+        "chinaSpecificRoute": "not-confirmed",
+        "careerDirections": "official-value",
+        "recognition": "official-value",
+        "tuition": "needs-review",
+        "intake": "official-value",
+        "studyTypeAndArrangement": "official-value"
+      },
+      "reviewReason": "Rendered programme pages were captured; secondary PDFs, downloadable brochures, and official application route screens still need a deeper pass before ready status."
+    },
+    {
+      "candidateCode": "UCSI-PHD-002",
+      "nameEnOfficial": "DBA (Doctor Of Business Administration)",
+      "checkedRoutes": [
+        "https://www.ucsiuniversity.edu.my/programmes/dba-doctor-business-administration",
+        "https://www.ucsiuniversity.edu.my/international-students",
+        "https://www.ucsiuniversity.edu.my/admission-procedure/international/Kuala-lumpur"
+      ],
+      "fields": {
+        "languageRequirement": "official-value",
+        "interviewRequirement": "not-confirmed",
+        "courseSetting": "official-value",
+        "curriculumModules": "official-value",
+        "applicationDocuments": "general-rule",
+        "chinaSpecificRoute": "not-confirmed",
+        "careerDirections": "official-value",
+        "recognition": "official-value",
+        "tuition": "needs-review",
+        "intake": "official-value",
+        "studyTypeAndArrangement": "official-value"
+      },
+      "reviewReason": "Rendered programme pages were captured; secondary PDFs, downloadable brochures, and official application route screens still need a deeper pass before ready status."
+    },
+    {
+      "candidateCode": "UCSI-MASTER-003",
+      "nameEnOfficial": "MBA",
+      "checkedRoutes": [
+        "https://www.ucsiuniversity.edu.my/programmes/mba",
+        "https://www.ucsiuniversity.edu.my/international-students",
+        "https://www.ucsiuniversity.edu.my/admission-procedure/international/Kuala-lumpur"
+      ],
+      "fields": {
+        "languageRequirement": "official-value",
+        "interviewRequirement": "not-confirmed",
+        "courseSetting": "official-value",
+        "curriculumModules": "official-value",
+        "applicationDocuments": "general-rule",
+        "chinaSpecificRoute": "not-confirmed",
+        "careerDirections": "needs-review",
+        "recognition": "official-value",
+        "tuition": "needs-review",
+        "intake": "official-value",
+        "studyTypeAndArrangement": "official-value"
+      },
+      "reviewReason": "Rendered programme pages were captured; secondary PDFs, downloadable brochures, and official application route screens still need a deeper pass before ready status."
+    },
+    {
+      "candidateCode": "UCSI-MASTER-004",
+      "nameEnOfficial": "MBA (ODL Mode)",
+      "checkedRoutes": [
+        "https://www.ucsiuniversity.edu.my/programmes/mba-odl-mode",
+        "https://www.ucsiuniversity.edu.my/international-students",
+        "https://www.ucsiuniversity.edu.my/admission-procedure/international/Kuala-lumpur"
+      ],
+      "fields": {
+        "languageRequirement": "official-value",
+        "interviewRequirement": "not-confirmed",
+        "courseSetting": "official-value",
+        "curriculumModules": "official-value",
+        "applicationDocuments": "general-rule",
+        "chinaSpecificRoute": "not-confirmed",
+        "careerDirections": "needs-review",
+        "recognition": "official-value",
+        "tuition": "needs-review",
+        "intake": "official-value",
+        "studyTypeAndArrangement": "official-value"
+      },
+      "reviewReason": "Rendered programme pages were captured; secondary PDFs, downloadable brochures, and official application route screens still need a deeper pass before ready status."
+    },
+    {
+      "candidateCode": "UCSI-MASTER-005",
+      "nameEnOfficial": "Master Of Philosophy (Business And Management)",
+      "checkedRoutes": [
+        "https://www.ucsiuniversity.edu.my/programmes/master-philosophy-business-and-management",
+        "https://www.ucsiuniversity.edu.my/international-students",
+        "https://www.ucsiuniversity.edu.my/admission-procedure/international/Kuala-lumpur"
+      ],
+      "fields": {
+        "languageRequirement": "official-value",
+        "interviewRequirement": "not-confirmed",
+        "courseSetting": "official-value",
+        "curriculumModules": "official-value",
+        "applicationDocuments": "general-rule",
+        "chinaSpecificRoute": "not-confirmed",
+        "careerDirections": "official-value",
+        "recognition": "official-value",
+        "tuition": "needs-review",
+        "intake": "official-value",
+        "studyTypeAndArrangement": "official-value"
+      },
+      "reviewReason": "Rendered programme pages were captured; secondary PDFs, downloadable brochures, and official application route screens still need a deeper pass before ready status."
+    },
+    {
+      "candidateCode": "UCSI-MASTER-006",
+      "nameEnOfficial": "MBA (Healthcare And Hospital Management)",
+      "checkedRoutes": [
+        "https://www.ucsiuniversity.edu.my/programmes/mba-healthcare-and-hospital-management",
+        "https://www.ucsiuniversity.edu.my/international-students",
+        "https://www.ucsiuniversity.edu.my/admission-procedure/international/Kuala-lumpur"
+      ],
+      "fields": {
+        "languageRequirement": "official-value",
+        "interviewRequirement": "not-confirmed",
+        "courseSetting": "official-value",
+        "curriculumModules": "official-value",
+        "applicationDocuments": "general-rule",
+        "chinaSpecificRoute": "not-confirmed",
+        "careerDirections": "official-value",
+        "recognition": "official-value",
+        "tuition": "needs-review",
+        "intake": "official-value",
+        "studyTypeAndArrangement": "official-value"
+      },
+      "reviewReason": "Rendered programme pages were captured; secondary PDFs, downloadable brochures, and official application route screens still need a deeper pass before ready status."
+    },
+    {
+      "candidateCode": "UCSI-PHD-007",
+      "nameEnOfficial": "Doctor Of Philosophy (Science)",
+      "checkedRoutes": [
+        "https://www.ucsiuniversity.edu.my/programme/doctorate-philosophy-science",
+        "https://www.ucsiuniversity.edu.my/international-students",
+        "https://www.ucsiuniversity.edu.my/admission-procedure/international/Kuala-lumpur"
+      ],
+      "fields": {
+        "languageRequirement": "official-value",
+        "interviewRequirement": "not-confirmed",
+        "courseSetting": "official-value",
+        "curriculumModules": "official-value",
+        "applicationDocuments": "general-rule",
+        "chinaSpecificRoute": "not-confirmed",
+        "careerDirections": "official-value",
+        "recognition": "official-value",
+        "tuition": "needs-review",
+        "intake": "official-value",
+        "studyTypeAndArrangement": "official-value"
+      },
+      "reviewReason": "Rendered programme pages were captured; secondary PDFs, downloadable brochures, and official application route screens still need a deeper pass before ready status."
+    },
+    {
+      "candidateCode": "UCSI-MASTER-008",
+      "nameEnOfficial": "Master Of Science In Applied Sciences",
+      "checkedRoutes": [
+        "https://www.ucsiuniversity.edu.my/programmes/master-science-applied-sciences",
+        "https://www.ucsiuniversity.edu.my/international-students",
+        "https://www.ucsiuniversity.edu.my/admission-procedure/international/Kuala-lumpur"
+      ],
+      "fields": {
+        "languageRequirement": "official-value",
+        "interviewRequirement": "not-confirmed",
+        "courseSetting": "official-value",
+        "curriculumModules": "official-value",
+        "applicationDocuments": "general-rule",
+        "chinaSpecificRoute": "not-confirmed",
+        "careerDirections": "official-value",
+        "recognition": "official-value",
+        "tuition": "needs-review",
+        "intake": "official-value",
+        "studyTypeAndArrangement": "official-value"
+      },
+      "reviewReason": "Rendered programme pages were captured; secondary PDFs, downloadable brochures, and official application route screens still need a deeper pass before ready status."
+    },
+    {
+      "candidateCode": "UCSI-MASTER-009",
+      "nameEnOfficial": "Master Of Science Biotechnology",
+      "checkedRoutes": [
+        "https://www.ucsiuniversity.edu.my/programmes/master-science-biotechnology",
+        "https://www.ucsiuniversity.edu.my/international-students",
+        "https://www.ucsiuniversity.edu.my/admission-procedure/international/Kuala-lumpur"
+      ],
+      "fields": {
+        "languageRequirement": "official-value",
+        "interviewRequirement": "not-confirmed",
+        "courseSetting": "official-value",
+        "curriculumModules": "official-value",
+        "applicationDocuments": "general-rule",
+        "chinaSpecificRoute": "not-confirmed",
+        "careerDirections": "official-value",
+        "recognition": "official-value",
+        "tuition": "needs-review",
+        "intake": "official-value",
+        "studyTypeAndArrangement": "official-value"
+      },
+      "reviewReason": "Rendered programme pages were captured; secondary PDFs, downloadable brochures, and official application route screens still need a deeper pass before ready status."
+    },
+    {
+      "candidateCode": "UCSI-MASTER-010",
+      "nameEnOfficial": "Master Of Science In Biotechnology With Business Management",
+      "checkedRoutes": [
+        "https://www.ucsiuniversity.edu.my/programmes/master-science-biotechnology-business-management",
+        "https://www.ucsiuniversity.edu.my/international-students",
+        "https://www.ucsiuniversity.edu.my/admission-procedure/international/Kuala-lumpur"
+      ],
+      "fields": {
+        "languageRequirement": "official-value",
+        "interviewRequirement": "not-confirmed",
+        "courseSetting": "official-value",
+        "curriculumModules": "official-value",
+        "applicationDocuments": "general-rule",
+        "chinaSpecificRoute": "not-confirmed",
+        "careerDirections": "official-value",
+        "recognition": "official-value",
+        "tuition": "needs-review",
+        "intake": "official-value",
+        "studyTypeAndArrangement": "official-value"
+      },
+      "reviewReason": "Rendered programme pages were captured; secondary PDFs, downloadable brochures, and official application route screens still need a deeper pass before ready status."
+    },
+    {
+      "candidateCode": "UCSI-MASTER-011",
+      "nameEnOfficial": "Master Of Science Food Science With Business Management",
+      "checkedRoutes": [
+        "https://www.ucsiuniversity.edu.my/programmes/master-science-food-science-business-management",
+        "https://www.ucsiuniversity.edu.my/international-students",
+        "https://www.ucsiuniversity.edu.my/admission-procedure/international/Kuala-lumpur"
+      ],
+      "fields": {
+        "languageRequirement": "official-value",
+        "interviewRequirement": "not-confirmed",
+        "courseSetting": "official-value",
+        "curriculumModules": "official-value",
+        "applicationDocuments": "general-rule",
+        "chinaSpecificRoute": "not-confirmed",
+        "careerDirections": "official-value",
+        "recognition": "official-value",
+        "tuition": "needs-review",
+        "intake": "official-value",
+        "studyTypeAndArrangement": "official-value"
+      },
+      "reviewReason": "Rendered programme pages were captured; secondary PDFs, downloadable brochures, and official application route screens still need a deeper pass before ready status."
+    },
+    {
+      "candidateCode": "UCSI-MASTER-012",
+      "nameEnOfficial": "Master Of Science In Nutrition With Management",
+      "checkedRoutes": [
+        "https://www.ucsiuniversity.edu.my/programmes/msc-nutrition-management",
+        "https://www.ucsiuniversity.edu.my/international-students",
+        "https://www.ucsiuniversity.edu.my/admission-procedure/international/Kuala-lumpur"
+      ],
+      "fields": {
+        "languageRequirement": "official-value",
+        "interviewRequirement": "not-confirmed",
+        "courseSetting": "official-value",
+        "curriculumModules": "official-value",
+        "applicationDocuments": "general-rule",
+        "chinaSpecificRoute": "not-confirmed",
+        "careerDirections": "official-value",
+        "recognition": "official-value",
+        "tuition": "needs-review",
+        "intake": "official-value",
+        "studyTypeAndArrangement": "official-value"
+      },
+      "reviewReason": "Rendered programme pages were captured; secondary PDFs, downloadable brochures, and official application route screens still need a deeper pass before ready status."
+    },
+    {
+      "candidateCode": "UCSI-BACHELOR-013",
+      "nameEnOfficial": "Bachelor Of Science (Honours) Applied Microbiology",
+      "checkedRoutes": [
+        "https://www.ucsiuniversity.edu.my/programmes/bachelor-science-honours-applied-microbiology",
+        "https://www.ucsiuniversity.edu.my/international-students",
+        "https://www.ucsiuniversity.edu.my/admission-procedure/international/Kuala-lumpur"
+      ],
+      "fields": {
+        "languageRequirement": "official-value",
+        "interviewRequirement": "not-confirmed",
+        "courseSetting": "official-value",
+        "curriculumModules": "official-value",
+        "applicationDocuments": "general-rule",
+        "chinaSpecificRoute": "not-confirmed",
+        "careerDirections": "official-value",
+        "recognition": "official-value",
+        "tuition": "needs-review",
+        "intake": "official-value",
+        "studyTypeAndArrangement": "official-value"
+      },
+      "reviewReason": "Rendered programme pages were captured; secondary PDFs, downloadable brochures, and official application route screens still need a deeper pass before ready status."
+    },
+    {
+      "candidateCode": "UCSI-BACHELOR-014",
+      "nameEnOfficial": "Bachelor Of Science (Honours) Aquatic Science",
+      "checkedRoutes": [
+        "https://www.ucsiuniversity.edu.my/programmes/bachelor-science-honours-aquatic-science",
+        "https://www.ucsiuniversity.edu.my/international-students",
+        "https://www.ucsiuniversity.edu.my/admission-procedure/international/Kuala-lumpur"
+      ],
+      "fields": {
+        "languageRequirement": "official-value",
+        "interviewRequirement": "not-confirmed",
+        "courseSetting": "official-value",
+        "curriculumModules": "official-value",
+        "applicationDocuments": "general-rule",
+        "chinaSpecificRoute": "not-confirmed",
+        "careerDirections": "official-value",
+        "recognition": "official-value",
+        "tuition": "needs-review",
+        "intake": "official-value",
+        "studyTypeAndArrangement": "official-value"
+      },
+      "reviewReason": "Rendered programme pages were captured; secondary PDFs, downloadable brochures, and official application route screens still need a deeper pass before ready status."
+    },
+    {
+      "candidateCode": "UCSI-BACHELOR-015",
+      "nameEnOfficial": "Bachelor Of Science (Honours) In Biotechnology",
+      "checkedRoutes": [
+        "https://www.ucsiuniversity.edu.my/programmes/bachelor-science-honours-biotechnology",
+        "https://www.ucsiuniversity.edu.my/international-students",
+        "https://www.ucsiuniversity.edu.my/admission-procedure/international/Kuala-lumpur"
+      ],
+      "fields": {
+        "languageRequirement": "official-value",
+        "interviewRequirement": "not-confirmed",
+        "courseSetting": "official-value",
+        "curriculumModules": "official-value",
+        "applicationDocuments": "general-rule",
+        "chinaSpecificRoute": "not-confirmed",
+        "careerDirections": "official-value",
+        "recognition": "official-value",
+        "tuition": "needs-review",
+        "intake": "official-value",
+        "studyTypeAndArrangement": "official-value"
+      },
+      "reviewReason": "Rendered programme pages were captured; secondary PDFs, downloadable brochures, and official application route screens still need a deeper pass before ready status."
+    },
+    {
+      "candidateCode": "UCSI-BACHELOR-016",
+      "nameEnOfficial": "Bachelor Of Science (Honours) Food Science With Nutrition",
+      "checkedRoutes": [
+        "https://www.ucsiuniversity.edu.my/programmes/bachelor-science-honours-food-science-nutrition",
+        "https://www.ucsiuniversity.edu.my/international-students",
+        "https://www.ucsiuniversity.edu.my/admission-procedure/international/Kuala-lumpur"
+      ],
+      "fields": {
+        "languageRequirement": "official-value",
+        "interviewRequirement": "not-confirmed",
+        "courseSetting": "official-value",
+        "curriculumModules": "official-value",
+        "applicationDocuments": "general-rule",
+        "chinaSpecificRoute": "not-confirmed",
+        "careerDirections": "official-value",
+        "recognition": "official-value",
+        "tuition": "needs-review",
+        "intake": "official-value",
+        "studyTypeAndArrangement": "official-value"
+      },
+      "reviewReason": "Rendered programme pages were captured; secondary PDFs, downloadable brochures, and official application route screens still need a deeper pass before ready status."
+    },
+    {
+      "candidateCode": "UCSI-BACHELOR-017",
+      "nameEnOfficial": "Bachelor Of Science (Honours) Forensic Science",
+      "checkedRoutes": [
+        "https://www.ucsiuniversity.edu.my/programmes/bachelor-science-honours-forensic-science",
+        "https://www.ucsiuniversity.edu.my/international-students",
+        "https://www.ucsiuniversity.edu.my/admission-procedure/international/Kuala-lumpur"
+      ],
+      "fields": {
+        "languageRequirement": "official-value",
+        "interviewRequirement": "not-confirmed",
+        "courseSetting": "official-value",
+        "curriculumModules": "official-value",
+        "applicationDocuments": "general-rule",
+        "chinaSpecificRoute": "not-confirmed",
+        "careerDirections": "official-value",
+        "recognition": "official-value",
+        "tuition": "needs-review",
+        "intake": "official-value",
+        "studyTypeAndArrangement": "official-value"
+      },
+      "reviewReason": "Rendered programme pages were captured; secondary PDFs, downloadable brochures, and official application route screens still need a deeper pass before ready status."
+    },
+    {
+      "candidateCode": "UCSI-BACHELOR-018",
+      "nameEnOfficial": "Bachelor Of Science (Honours) Nutrition With Wellness",
+      "checkedRoutes": [
+        "https://www.ucsiuniversity.edu.my/programmes/bachelor-science-honours-nutrition-wellness",
+        "https://www.ucsiuniversity.edu.my/international-students",
+        "https://www.ucsiuniversity.edu.my/admission-procedure/international/Kuala-lumpur"
+      ],
+      "fields": {
+        "languageRequirement": "official-value",
+        "interviewRequirement": "not-confirmed",
+        "courseSetting": "official-value",
+        "curriculumModules": "official-value",
+        "applicationDocuments": "general-rule",
+        "chinaSpecificRoute": "not-confirmed",
+        "careerDirections": "official-value",
+        "recognition": "official-value",
+        "tuition": "needs-review",
+        "intake": "official-value",
+        "studyTypeAndArrangement": "official-value"
+      },
+      "reviewReason": "Rendered programme pages were captured; secondary PDFs, downloadable brochures, and official application route screens still need a deeper pass before ready status."
+    },
+    {
+      "candidateCode": "UCSI-PHD-019",
+      "nameEnOfficial": "Doctor Of Philosophy (Science) By Prior Publication",
+      "checkedRoutes": [
+        "https://www.ucsiuniversity.edu.my/programmes/doctor-philosophy-science-prior-publication",
+        "https://www.ucsiuniversity.edu.my/international-students",
+        "https://www.ucsiuniversity.edu.my/admission-procedure/international/Kuala-lumpur"
+      ],
+      "fields": {
+        "languageRequirement": "needs-review",
+        "interviewRequirement": "not-confirmed",
+        "courseSetting": "official-value",
+        "curriculumModules": "official-value",
+        "applicationDocuments": "general-rule",
+        "chinaSpecificRoute": "not-confirmed",
+        "careerDirections": "official-value",
+        "recognition": "official-value",
+        "tuition": "needs-review",
+        "intake": "official-value",
+        "studyTypeAndArrangement": "official-value"
+      },
+      "reviewReason": "Rendered programme pages were captured; secondary PDFs, downloadable brochures, and official application route screens still need a deeper pass before ready status."
+    },
+    {
+      "candidateCode": "UCSI-MASTER-020",
+      "nameEnOfficial": "Master In Logistics And Supply Chain Management",
+      "checkedRoutes": [
+        "https://www.ucsiuniversity.edu.my/programmes/master-logistics-and-supply-chain-management",
+        "https://www.ucsiuniversity.edu.my/international-students",
+        "https://www.ucsiuniversity.edu.my/admission-procedure/international/Kuala-lumpur"
+      ],
+      "fields": {
+        "languageRequirement": "official-value",
+        "interviewRequirement": "not-confirmed",
+        "courseSetting": "official-value",
+        "curriculumModules": "official-value",
+        "applicationDocuments": "general-rule",
+        "chinaSpecificRoute": "not-confirmed",
+        "careerDirections": "official-value",
+        "recognition": "official-value",
+        "tuition": "needs-review",
+        "intake": "official-value",
+        "studyTypeAndArrangement": "official-value"
+      },
+      "reviewReason": "Rendered programme pages were captured; secondary PDFs, downloadable brochures, and official application route screens still need a deeper pass before ready status."
+    },
+    {
+      "candidateCode": "UCSI-BACHELOR-021",
+      "nameEnOfficial": "Bachelor Of Arts (Hons) Accounting",
+      "checkedRoutes": [
+        "https://www.ucsiuniversity.edu.my/programmes/bachelor-arts-hons-accounting",
+        "https://www.ucsiuniversity.edu.my/international-students",
+        "https://www.ucsiuniversity.edu.my/admission-procedure/international/Kuala-lumpur"
+      ],
+      "fields": {
+        "languageRequirement": "official-value",
+        "interviewRequirement": "not-confirmed",
+        "courseSetting": "official-value",
+        "curriculumModules": "official-value",
+        "applicationDocuments": "general-rule",
+        "chinaSpecificRoute": "not-confirmed",
+        "careerDirections": "official-value",
+        "recognition": "official-value",
+        "tuition": "needs-review",
+        "intake": "official-value",
+        "studyTypeAndArrangement": "official-value"
+      },
+      "reviewReason": "Rendered programme pages were captured; secondary PDFs, downloadable brochures, and official application route screens still need a deeper pass before ready status."
+    },
+    {
+      "candidateCode": "UCSI-BACHELOR-022",
+      "nameEnOfficial": "Bachelor Of Arts (Hons) Accounting And Finance",
+      "checkedRoutes": [
+        "https://www.ucsiuniversity.edu.my/programmes/bachelor-arts-hons-accounting-and-finance",
+        "https://www.ucsiuniversity.edu.my/international-students",
+        "https://www.ucsiuniversity.edu.my/admission-procedure/international/Kuala-lumpur"
+      ],
+      "fields": {
+        "languageRequirement": "official-value",
+        "interviewRequirement": "not-confirmed",
+        "courseSetting": "official-value",
+        "curriculumModules": "official-value",
+        "applicationDocuments": "general-rule",
+        "chinaSpecificRoute": "not-confirmed",
+        "careerDirections": "official-value",
+        "recognition": "official-value",
+        "tuition": "needs-review",
+        "intake": "official-value",
+        "studyTypeAndArrangement": "official-value"
+      },
+      "reviewReason": "Rendered programme pages were captured; secondary PDFs, downloadable brochures, and official application route screens still need a deeper pass before ready status."
+    },
+    {
+      "candidateCode": "UCSI-BACHELOR-023",
+      "nameEnOfficial": "Bachelor Of Arts (Hons) Entrepreneurship",
+      "checkedRoutes": [
+        "https://www.ucsiuniversity.edu.my/programmes/bachelor-arts-hons-entrepreneurship",
+        "https://www.ucsiuniversity.edu.my/international-students",
+        "https://www.ucsiuniversity.edu.my/admission-procedure/international/Kuala-lumpur"
+      ],
+      "fields": {
+        "languageRequirement": "official-value",
+        "interviewRequirement": "not-confirmed",
+        "courseSetting": "official-value",
+        "curriculumModules": "official-value",
+        "applicationDocuments": "general-rule",
+        "chinaSpecificRoute": "not-confirmed",
+        "careerDirections": "official-value",
+        "recognition": "official-value",
+        "tuition": "needs-review",
+        "intake": "official-value",
+        "studyTypeAndArrangement": "official-value"
+      },
+      "reviewReason": "Rendered programme pages were captured; secondary PDFs, downloadable brochures, and official application route screens still need a deeper pass before ready status."
+    },
+    {
+      "candidateCode": "UCSI-BACHELOR-024",
+      "nameEnOfficial": "Bachelor Of Arts (Hons) In Branding And Advertising",
+      "checkedRoutes": [
+        "https://www.ucsiuniversity.edu.my/programmes/bachelor-arts-hons-branding-and-advertising",
+        "https://www.ucsiuniversity.edu.my/international-students",
+        "https://www.ucsiuniversity.edu.my/admission-procedure/international/Kuala-lumpur"
+      ],
+      "fields": {
+        "languageRequirement": "official-value",
+        "interviewRequirement": "not-confirmed",
+        "courseSetting": "official-value",
+        "curriculumModules": "official-value",
+        "applicationDocuments": "general-rule",
+        "chinaSpecificRoute": "not-confirmed",
+        "careerDirections": "official-value",
+        "recognition": "official-value",
+        "tuition": "needs-review",
+        "intake": "official-value",
+        "studyTypeAndArrangement": "official-value"
+      },
+      "reviewReason": "Rendered programme pages were captured; secondary PDFs, downloadable brochures, and official application route screens still need a deeper pass before ready status."
+    },
+    {
+      "candidateCode": "UCSI-BACHELOR-025",
+      "nameEnOfficial": "Bachelor Of Arts (Hons) In Business Administration",
+      "checkedRoutes": [
+        "https://www.ucsiuniversity.edu.my/programmes/bachelor-arts-hons-business-administration",
+        "https://www.ucsiuniversity.edu.my/international-students",
+        "https://www.ucsiuniversity.edu.my/admission-procedure/international/Kuala-lumpur"
+      ],
+      "fields": {
+        "languageRequirement": "official-value",
+        "interviewRequirement": "not-confirmed",
+        "courseSetting": "official-value",
+        "curriculumModules": "official-value",
+        "applicationDocuments": "general-rule",
+        "chinaSpecificRoute": "not-confirmed",
+        "careerDirections": "official-value",
+        "recognition": "official-value",
+        "tuition": "needs-review",
+        "intake": "official-value",
+        "studyTypeAndArrangement": "official-value"
+      },
+      "reviewReason": "Rendered programme pages were captured; secondary PDFs, downloadable brochures, and official application route screens still need a deeper pass before ready status."
+    },
+    {
+      "candidateCode": "UCSI-BACHELOR-026",
+      "nameEnOfficial": "Bachelor Of Arts (Hons) In Marketing",
+      "checkedRoutes": [
+        "https://www.ucsiuniversity.edu.my/programmes/bachelor-arts-hons-marketing",
+        "https://www.ucsiuniversity.edu.my/international-students",
+        "https://www.ucsiuniversity.edu.my/admission-procedure/international/Kuala-lumpur"
+      ],
+      "fields": {
+        "languageRequirement": "official-value",
+        "interviewRequirement": "not-confirmed",
+        "courseSetting": "official-value",
+        "curriculumModules": "official-value",
+        "applicationDocuments": "general-rule",
+        "chinaSpecificRoute": "not-confirmed",
+        "careerDirections": "official-value",
+        "recognition": "official-value",
+        "tuition": "needs-review",
+        "intake": "official-value",
+        "studyTypeAndArrangement": "official-value"
+      },
+      "reviewReason": "Rendered programme pages were captured; secondary PDFs, downloadable brochures, and official application route screens still need a deeper pass before ready status."
+    },
+    {
+      "candidateCode": "UCSI-BACHELOR-027",
+      "nameEnOfficial": "Bachelor Of Arts (Hons) Logistics Management",
+      "checkedRoutes": [
+        "https://www.ucsiuniversity.edu.my/programmes/bachelor-arts-hons-logistics-management",
+        "https://www.ucsiuniversity.edu.my/international-students",
+        "https://www.ucsiuniversity.edu.my/admission-procedure/international/Kuala-lumpur"
+      ],
+      "fields": {
+        "languageRequirement": "official-value",
+        "interviewRequirement": "not-confirmed",
+        "courseSetting": "official-value",
+        "curriculumModules": "official-value",
+        "applicationDocuments": "general-rule",
+        "chinaSpecificRoute": "not-confirmed",
+        "careerDirections": "official-value",
+        "recognition": "official-value",
+        "tuition": "needs-review",
+        "intake": "official-value",
+        "studyTypeAndArrangement": "official-value"
+      },
+      "reviewReason": "Rendered programme pages were captured; secondary PDFs, downloadable brochures, and official application route screens still need a deeper pass before ready status."
+    },
+    {
+      "candidateCode": "UCSI-BACHELOR-028",
+      "nameEnOfficial": "Bachelor Of Arts (Honours) Supply Chain Operations Management",
+      "checkedRoutes": [
+        "https://www.ucsiuniversity.edu.my/programmes/bachelor-arts-honours-supply-chain-operations-management",
+        "https://www.ucsiuniversity.edu.my/international-students",
+        "https://www.ucsiuniversity.edu.my/admission-procedure/international/Kuala-lumpur"
+      ],
+      "fields": {
+        "languageRequirement": "official-value",
+        "interviewRequirement": "not-confirmed",
+        "courseSetting": "official-value",
+        "curriculumModules": "official-value",
+        "applicationDocuments": "general-rule",
+        "chinaSpecificRoute": "not-confirmed",
+        "careerDirections": "official-value",
+        "recognition": "official-value",
+        "tuition": "needs-review",
+        "intake": "official-value",
+        "studyTypeAndArrangement": "official-value"
+      },
+      "reviewReason": "Rendered programme pages were captured; secondary PDFs, downloadable brochures, and official application route screens still need a deeper pass before ready status."
+    },
+    {
+      "candidateCode": "UCSI-BACHELOR-029",
+      "nameEnOfficial": "Bachelor In Human Capital Management (Honours)",
+      "checkedRoutes": [
+        "https://www.ucsiuniversity.edu.my/programmes/bachelor-human-capital-management-honours",
+        "https://www.ucsiuniversity.edu.my/international-students",
+        "https://www.ucsiuniversity.edu.my/admission-procedure/international/Kuala-lumpur"
+      ],
+      "fields": {
+        "languageRequirement": "official-value",
+        "interviewRequirement": "not-confirmed",
+        "courseSetting": "official-value",
+        "curriculumModules": "official-value",
+        "applicationDocuments": "general-rule",
+        "chinaSpecificRoute": "not-confirmed",
+        "careerDirections": "official-value",
+        "recognition": "official-value",
+        "tuition": "needs-review",
+        "intake": "official-value",
+        "studyTypeAndArrangement": "official-value"
+      },
+      "reviewReason": "Rendered programme pages were captured; secondary PDFs, downloadable brochures, and official application route screens still need a deeper pass before ready status."
+    },
+    {
+      "candidateCode": "UCSI-BACHELOR-030",
+      "nameEnOfficial": "Bachelor Of Business Analytics (Honours)",
+      "checkedRoutes": [
+        "https://www.ucsiuniversity.edu.my/programmes/bachelor-business-analytics-honours",
+        "https://www.ucsiuniversity.edu.my/international-students",
+        "https://www.ucsiuniversity.edu.my/admission-procedure/international/Kuala-lumpur"
+      ],
+      "fields": {
+        "languageRequirement": "official-value",
+        "interviewRequirement": "not-confirmed",
+        "courseSetting": "official-value",
+        "curriculumModules": "official-value",
+        "applicationDocuments": "general-rule",
+        "chinaSpecificRoute": "not-confirmed",
+        "careerDirections": "official-value",
+        "recognition": "official-value",
+        "tuition": "needs-review",
+        "intake": "official-value",
+        "studyTypeAndArrangement": "official-value"
+      },
+      "reviewReason": "Rendered programme pages were captured; secondary PDFs, downloadable brochures, and official application route screens still need a deeper pass before ready status."
+    },
+    {
+      "candidateCode": "UCSI-BACHELOR-031",
+      "nameEnOfficial": "Bachelor Of Financial Economics (Hons)",
+      "checkedRoutes": [
+        "https://www.ucsiuniversity.edu.my/programmes/bachelor-financial-economics-hons",
+        "https://www.ucsiuniversity.edu.my/international-students",
+        "https://www.ucsiuniversity.edu.my/admission-procedure/international/Kuala-lumpur"
+      ],
+      "fields": {
+        "languageRequirement": "official-value",
+        "interviewRequirement": "not-confirmed",
+        "courseSetting": "official-value",
+        "curriculumModules": "official-value",
+        "applicationDocuments": "general-rule",
+        "chinaSpecificRoute": "not-confirmed",
+        "careerDirections": "official-value",
+        "recognition": "official-value",
+        "tuition": "needs-review",
+        "intake": "official-value",
+        "studyTypeAndArrangement": "official-value"
+      },
+      "reviewReason": "Rendered programme pages were captured; secondary PDFs, downloadable brochures, and official application route screens still need a deeper pass before ready status."
+    },
+    {
+      "candidateCode": "UCSI-BACHELOR-032",
+      "nameEnOfficial": "Bachelor Of Financial Technology (Honours)",
+      "checkedRoutes": [
+        "https://www.ucsiuniversity.edu.my/programmes/bachelor-financial-technology-honours",
+        "https://www.ucsiuniversity.edu.my/international-students",
+        "https://www.ucsiuniversity.edu.my/admission-procedure/international/Kuala-lumpur"
+      ],
+      "fields": {
+        "languageRequirement": "official-value",
+        "interviewRequirement": "not-confirmed",
+        "courseSetting": "official-value",
+        "curriculumModules": "official-value",
+        "applicationDocuments": "general-rule",
+        "chinaSpecificRoute": "not-confirmed",
+        "careerDirections": "official-value",
+        "recognition": "official-value",
+        "tuition": "needs-review",
+        "intake": "official-value",
+        "studyTypeAndArrangement": "official-value"
+      },
+      "reviewReason": "Rendered programme pages were captured; secondary PDFs, downloadable brochures, and official application route screens still need a deeper pass before ready status."
+    },
+    {
+      "candidateCode": "UCSI-BACHELOR-033",
+      "nameEnOfficial": "Bachelor Of International And Sustainable Business (Honours)",
+      "checkedRoutes": [
+        "https://www.ucsiuniversity.edu.my/programmes/bachelor-international-and-sustainable-business-honours",
+        "https://www.ucsiuniversity.edu.my/international-students",
+        "https://www.ucsiuniversity.edu.my/admission-procedure/international/Kuala-lumpur"
+      ],
+      "fields": {
+        "languageRequirement": "official-value",
+        "interviewRequirement": "not-confirmed",
+        "courseSetting": "official-value",
+        "curriculumModules": "official-value",
+        "applicationDocuments": "general-rule",
+        "chinaSpecificRoute": "not-confirmed",
+        "careerDirections": "official-value",
+        "recognition": "official-value",
+        "tuition": "needs-review",
+        "intake": "official-value",
+        "studyTypeAndArrangement": "official-value"
+      },
+      "reviewReason": "Rendered programme pages were captured; secondary PDFs, downloadable brochures, and official application route screens still need a deeper pass before ready status."
+    },
+    {
+      "candidateCode": "UCSI-BACHELOR-034",
+      "nameEnOfficial": "Bachelor Of Science (Honours) Finance And Investment",
+      "checkedRoutes": [
+        "https://www.ucsiuniversity.edu.my/programmes/bachelor-science-honours-finance-and-investment",
+        "https://www.ucsiuniversity.edu.my/international-students",
+        "https://www.ucsiuniversity.edu.my/admission-procedure/international/Kuala-lumpur"
+      ],
+      "fields": {
+        "languageRequirement": "official-value",
+        "interviewRequirement": "not-confirmed",
+        "courseSetting": "official-value",
+        "curriculumModules": "official-value",
+        "applicationDocuments": "general-rule",
+        "chinaSpecificRoute": "not-confirmed",
+        "careerDirections": "official-value",
+        "recognition": "official-value",
+        "tuition": "needs-review",
+        "intake": "official-value",
+        "studyTypeAndArrangement": "official-value"
+      },
+      "reviewReason": "Rendered programme pages were captured; secondary PDFs, downloadable brochures, and official application route screens still need a deeper pass before ready status."
+    },
+    {
+      "candidateCode": "UCSI-PHD-035",
+      "nameEnOfficial": "Doctor Of Philosophy In Architecture",
+      "checkedRoutes": [
+        "https://www.ucsiuniversity.edu.my/programmes/doctor-philosophy-architecture",
+        "https://www.ucsiuniversity.edu.my/international-students",
+        "https://www.ucsiuniversity.edu.my/admission-procedure/international/Kuala-lumpur"
+      ],
+      "fields": {
+        "languageRequirement": "official-value",
+        "interviewRequirement": "not-confirmed",
+        "courseSetting": "official-value",
+        "curriculumModules": "official-value",
+        "applicationDocuments": "general-rule",
+        "chinaSpecificRoute": "not-confirmed",
+        "careerDirections": "official-value",
+        "recognition": "official-value",
+        "tuition": "needs-review",
+        "intake": "official-value",
+        "studyTypeAndArrangement": "official-value"
+      },
+      "reviewReason": "Rendered programme pages were captured; secondary PDFs, downloadable brochures, and official application route screens still need a deeper pass before ready status."
+    },
+    {
+      "candidateCode": "UCSI-PHD-036",
+      "nameEnOfficial": "Doctor Of Philosophy (Engineering)",
+      "checkedRoutes": [
+        "https://www.ucsiuniversity.edu.my/programmes/doctor-philosophy-engineering",
+        "https://www.ucsiuniversity.edu.my/international-students",
+        "https://www.ucsiuniversity.edu.my/admission-procedure/international/Kuala-lumpur"
+      ],
+      "fields": {
+        "languageRequirement": "official-value",
+        "interviewRequirement": "not-confirmed",
+        "courseSetting": "official-value",
+        "curriculumModules": "official-value",
+        "applicationDocuments": "general-rule",
+        "chinaSpecificRoute": "not-confirmed",
+        "careerDirections": "official-value",
+        "recognition": "official-value",
+        "tuition": "needs-review",
+        "intake": "official-value",
+        "studyTypeAndArrangement": "official-value"
+      },
+      "reviewReason": "Rendered programme pages were captured; secondary PDFs, downloadable brochures, and official application route screens still need a deeper pass before ready status."
+    },
+    {
+      "candidateCode": "UCSI-PHD-037",
+      "nameEnOfficial": "Doctor Of Philosophy (Engineering) By Prior Publication",
+      "checkedRoutes": [
+        "https://www.ucsiuniversity.edu.my/programmes/doctor-philosophy-engineering-prior-publication",
+        "https://www.ucsiuniversity.edu.my/international-students",
+        "https://www.ucsiuniversity.edu.my/admission-procedure/international/Kuala-lumpur"
+      ],
+      "fields": {
+        "languageRequirement": "official-value",
+        "interviewRequirement": "not-confirmed",
+        "courseSetting": "official-value",
+        "curriculumModules": "official-value",
+        "applicationDocuments": "general-rule",
+        "chinaSpecificRoute": "not-confirmed",
+        "careerDirections": "official-value",
+        "recognition": "official-value",
+        "tuition": "needs-review",
+        "intake": "official-value",
+        "studyTypeAndArrangement": "official-value"
+      },
+      "reviewReason": "Rendered programme pages were captured; secondary PDFs, downloadable brochures, and official application route screens still need a deeper pass before ready status."
+    },
+    {
+      "candidateCode": "UCSI-PHD-038",
+      "nameEnOfficial": "Industrial PhD In Engineering",
+      "checkedRoutes": [
+        "https://www.ucsiuniversity.edu.my/programmes/industrial-phd-engineering",
+        "https://www.ucsiuniversity.edu.my/international-students",
+        "https://www.ucsiuniversity.edu.my/admission-procedure/international/Kuala-lumpur"
+      ],
+      "fields": {
+        "languageRequirement": "official-value",
+        "interviewRequirement": "not-confirmed",
+        "courseSetting": "official-value",
+        "curriculumModules": "official-value",
+        "applicationDocuments": "general-rule",
+        "chinaSpecificRoute": "not-confirmed",
+        "careerDirections": "official-value",
+        "recognition": "official-value",
+        "tuition": "needs-review",
+        "intake": "official-value",
+        "studyTypeAndArrangement": "official-value"
+      },
+      "reviewReason": "Rendered programme pages were captured; secondary PDFs, downloadable brochures, and official application route screens still need a deeper pass before ready status."
+    },
+    {
+      "candidateCode": "UCSI-MASTER-039",
+      "nameEnOfficial": "Master In Engineering (Smart Engineering Management)",
+      "checkedRoutes": [
+        "https://www.ucsiuniversity.edu.my/programmes/master-engineering-smart-engineering-management",
+        "https://www.ucsiuniversity.edu.my/international-students",
+        "https://www.ucsiuniversity.edu.my/admission-procedure/international/Kuala-lumpur"
+      ],
+      "fields": {
+        "languageRequirement": "official-value",
+        "interviewRequirement": "not-confirmed",
+        "courseSetting": "official-value",
+        "curriculumModules": "official-value",
+        "applicationDocuments": "general-rule",
+        "chinaSpecificRoute": "not-confirmed",
+        "careerDirections": "official-value",
+        "recognition": "official-value",
+        "tuition": "needs-review",
+        "intake": "official-value",
+        "studyTypeAndArrangement": "official-value"
+      },
+      "reviewReason": "Rendered programme pages were captured; secondary PDFs, downloadable brochures, and official application route screens still need a deeper pass before ready status."
+    },
+    {
+      "candidateCode": "UCSI-MASTER-040",
+      "nameEnOfficial": "Master Of Architecture",
+      "checkedRoutes": [
+        "https://www.ucsiuniversity.edu.my/programmes/master-architecture",
+        "https://www.ucsiuniversity.edu.my/international-students",
+        "https://www.ucsiuniversity.edu.my/admission-procedure/international/Kuala-lumpur"
+      ],
+      "fields": {
+        "languageRequirement": "official-value",
+        "interviewRequirement": "not-confirmed",
+        "courseSetting": "official-value",
+        "curriculumModules": "official-value",
+        "applicationDocuments": "general-rule",
+        "chinaSpecificRoute": "not-confirmed",
+        "careerDirections": "official-value",
+        "recognition": "official-value",
+        "tuition": "needs-review",
+        "intake": "official-value",
+        "studyTypeAndArrangement": "official-value"
+      },
+      "reviewReason": "Rendered programme pages were captured; secondary PDFs, downloadable brochures, and official application route screens still need a deeper pass before ready status."
+    },
+    {
+      "candidateCode": "UCSI-MASTER-041",
+      "nameEnOfficial": "Master Of Petroleum Engineering",
+      "checkedRoutes": [
+        "https://www.ucsiuniversity.edu.my/programmes/master-petroleum-engineering",
+        "https://www.ucsiuniversity.edu.my/international-students",
+        "https://www.ucsiuniversity.edu.my/admission-procedure/international/Kuala-lumpur"
+      ],
+      "fields": {
+        "languageRequirement": "official-value",
+        "interviewRequirement": "not-confirmed",
+        "courseSetting": "official-value",
+        "curriculumModules": "official-value",
+        "applicationDocuments": "general-rule",
+        "chinaSpecificRoute": "not-confirmed",
+        "careerDirections": "official-value",
+        "recognition": "official-value",
+        "tuition": "needs-review",
+        "intake": "official-value",
+        "studyTypeAndArrangement": "official-value"
+      },
+      "reviewReason": "Rendered programme pages were captured; secondary PDFs, downloadable brochures, and official application route screens still need a deeper pass before ready status."
+    },
+    {
+      "candidateCode": "UCSI-MASTER-042",
+      "nameEnOfficial": "Master Of Philosophy In Built Environment",
+      "checkedRoutes": [
+        "https://www.ucsiuniversity.edu.my/programmes/master-philosophy-built-environment",
+        "https://www.ucsiuniversity.edu.my/international-students",
+        "https://www.ucsiuniversity.edu.my/admission-procedure/international/Kuala-lumpur"
+      ],
+      "fields": {
+        "languageRequirement": "official-value",
+        "interviewRequirement": "not-confirmed",
+        "courseSetting": "official-value",
+        "curriculumModules": "official-value",
+        "applicationDocuments": "general-rule",
+        "chinaSpecificRoute": "not-confirmed",
+        "careerDirections": "official-value",
+        "recognition": "official-value",
+        "tuition": "needs-review",
+        "intake": "official-value",
+        "studyTypeAndArrangement": "official-value"
+      },
+      "reviewReason": "Rendered programme pages were captured; secondary PDFs, downloadable brochures, and official application route screens still need a deeper pass before ready status."
+    },
+    {
+      "candidateCode": "UCSI-MASTER-043",
+      "nameEnOfficial": "Master Of Philosophy In Engineering",
+      "checkedRoutes": [
+        "https://www.ucsiuniversity.edu.my/programmes/master-philosophy-engineering",
+        "https://www.ucsiuniversity.edu.my/international-students",
+        "https://www.ucsiuniversity.edu.my/admission-procedure/international/Kuala-lumpur"
+      ],
+      "fields": {
+        "languageRequirement": "official-value",
+        "interviewRequirement": "not-confirmed",
+        "courseSetting": "official-value",
+        "curriculumModules": "official-value",
+        "applicationDocuments": "general-rule",
+        "chinaSpecificRoute": "not-confirmed",
+        "careerDirections": "official-value",
+        "recognition": "official-value",
+        "tuition": "needs-review",
+        "intake": "official-value",
+        "studyTypeAndArrangement": "official-value"
+      },
+      "reviewReason": "Rendered programme pages were captured; secondary PDFs, downloadable brochures, and official application route screens still need a deeper pass before ready status."
+    },
+    {
+      "candidateCode": "UCSI-BACHELOR-044",
+      "nameEnOfficial": "Bachelor Of Arts (Hons) In Interior Architecture",
+      "checkedRoutes": [
+        "https://www.ucsiuniversity.edu.my/programmes/bachelor-arts-hons-interior-architecture",
+        "https://www.ucsiuniversity.edu.my/international-students",
+        "https://www.ucsiuniversity.edu.my/admission-procedure/international/Kuala-lumpur"
+      ],
+      "fields": {
+        "languageRequirement": "official-value",
+        "interviewRequirement": "not-confirmed",
+        "courseSetting": "official-value",
+        "curriculumModules": "official-value",
+        "applicationDocuments": "general-rule",
+        "chinaSpecificRoute": "not-confirmed",
+        "careerDirections": "official-value",
+        "recognition": "official-value",
+        "tuition": "needs-review",
+        "intake": "official-value",
+        "studyTypeAndArrangement": "official-value"
+      },
+      "reviewReason": "Rendered programme pages were captured; secondary PDFs, downloadable brochures, and official application route screens still need a deeper pass before ready status."
+    },
+    {
+      "candidateCode": "UCSI-BACHELOR-045",
+      "nameEnOfficial": "Bachelor Of Chemical Engineering With Honours",
+      "checkedRoutes": [
+        "https://www.ucsiuniversity.edu.my/programmes/bachelor-chemical-engineering-honours",
+        "https://www.ucsiuniversity.edu.my/international-students",
+        "https://www.ucsiuniversity.edu.my/admission-procedure/international/Kuala-lumpur"
+      ],
+      "fields": {
+        "languageRequirement": "official-value",
+        "interviewRequirement": "not-confirmed",
+        "courseSetting": "official-value",
+        "curriculumModules": "official-value",
+        "applicationDocuments": "general-rule",
+        "chinaSpecificRoute": "not-confirmed",
+        "careerDirections": "official-value",
+        "recognition": "official-value",
+        "tuition": "needs-review",
+        "intake": "official-value",
+        "studyTypeAndArrangement": "official-value"
+      },
+      "reviewReason": "Rendered programme pages were captured; secondary PDFs, downloadable brochures, and official application route screens still need a deeper pass before ready status."
+    },
+    {
+      "candidateCode": "UCSI-BACHELOR-046",
+      "nameEnOfficial": "Bachelor Of Civil Engineering With Honours",
+      "checkedRoutes": [
+        "https://www.ucsiuniversity.edu.my/programmes/bachelor-civil-engineering-honours",
+        "https://www.ucsiuniversity.edu.my/international-students",
+        "https://www.ucsiuniversity.edu.my/admission-procedure/international/Kuala-lumpur"
+      ],
+      "fields": {
+        "languageRequirement": "official-value",
+        "interviewRequirement": "not-confirmed",
+        "courseSetting": "official-value",
+        "curriculumModules": "official-value",
+        "applicationDocuments": "general-rule",
+        "chinaSpecificRoute": "not-confirmed",
+        "careerDirections": "official-value",
+        "recognition": "official-value",
+        "tuition": "needs-review",
+        "intake": "official-value",
+        "studyTypeAndArrangement": "official-value"
+      },
+      "reviewReason": "Rendered programme pages were captured; secondary PDFs, downloadable brochures, and official application route screens still need a deeper pass before ready status."
+    },
+    {
+      "candidateCode": "UCSI-BACHELOR-047",
+      "nameEnOfficial": "Bachelor Of Computer Engineering (Artificial Intelligence) With Honours",
+      "checkedRoutes": [
+        "https://www.ucsiuniversity.edu.my/programmes/bachelor-computer-engineering-artificial-intelligence-honours",
+        "https://www.ucsiuniversity.edu.my/international-students",
+        "https://www.ucsiuniversity.edu.my/admission-procedure/international/Kuala-lumpur"
+      ],
+      "fields": {
+        "languageRequirement": "official-value",
+        "interviewRequirement": "not-confirmed",
+        "courseSetting": "official-value",
+        "curriculumModules": "official-value",
+        "applicationDocuments": "general-rule",
+        "chinaSpecificRoute": "not-confirmed",
+        "careerDirections": "official-value",
+        "recognition": "official-value",
+        "tuition": "needs-review",
+        "intake": "official-value",
+        "studyTypeAndArrangement": "official-value"
+      },
+      "reviewReason": "Rendered programme pages were captured; secondary PDFs, downloadable brochures, and official application route screens still need a deeper pass before ready status."
+    },
+    {
+      "candidateCode": "UCSI-BACHELOR-048",
+      "nameEnOfficial": "Bachelor Of Digital Mechanical Technology With Honours",
+      "checkedRoutes": [
+        "https://www.ucsiuniversity.edu.my/programmes/bachelor-digital-mechanical-technology-honours",
+        "https://www.ucsiuniversity.edu.my/international-students",
+        "https://www.ucsiuniversity.edu.my/admission-procedure/international/Kuala-lumpur"
+      ],
+      "fields": {
+        "languageRequirement": "official-value",
+        "interviewRequirement": "not-confirmed",
+        "courseSetting": "official-value",
+        "curriculumModules": "official-value",
+        "applicationDocuments": "general-rule",
+        "chinaSpecificRoute": "not-confirmed",
+        "careerDirections": "official-value",
+        "recognition": "official-value",
+        "tuition": "needs-review",
+        "intake": "official-value",
+        "studyTypeAndArrangement": "official-value"
+      },
+      "reviewReason": "Rendered programme pages were captured; secondary PDFs, downloadable brochures, and official application route screens still need a deeper pass before ready status."
+    },
+    {
+      "candidateCode": "UCSI-BACHELOR-049",
+      "nameEnOfficial": "Bachelor Of Electrical And Electronics Engineering With Honours",
+      "checkedRoutes": [
+        "https://www.ucsiuniversity.edu.my/programmes/bachelor-electrical-and-electronics-engineering-honours",
+        "https://www.ucsiuniversity.edu.my/international-students",
+        "https://www.ucsiuniversity.edu.my/admission-procedure/international/Kuala-lumpur"
+      ],
+      "fields": {
+        "languageRequirement": "official-value",
+        "interviewRequirement": "not-confirmed",
+        "courseSetting": "official-value",
+        "curriculumModules": "official-value",
+        "applicationDocuments": "general-rule",
+        "chinaSpecificRoute": "not-confirmed",
+        "careerDirections": "official-value",
+        "recognition": "official-value",
+        "tuition": "needs-review",
+        "intake": "official-value",
+        "studyTypeAndArrangement": "official-value"
+      },
+      "reviewReason": "Rendered programme pages were captured; secondary PDFs, downloadable brochures, and official application route screens still need a deeper pass before ready status."
+    },
+    {
+      "candidateCode": "UCSI-BACHELOR-050",
+      "nameEnOfficial": "Bachelor Of Energy Engineering With Honours",
+      "checkedRoutes": [
+        "https://www.ucsiuniversity.edu.my/programmes/bachelor-energy-engineering-honours",
+        "https://www.ucsiuniversity.edu.my/international-students",
+        "https://www.ucsiuniversity.edu.my/admission-procedure/international/Kuala-lumpur"
+      ],
+      "fields": {
+        "languageRequirement": "official-value",
+        "interviewRequirement": "not-confirmed",
+        "courseSetting": "official-value",
+        "curriculumModules": "official-value",
+        "applicationDocuments": "general-rule",
+        "chinaSpecificRoute": "not-confirmed",
+        "careerDirections": "official-value",
+        "recognition": "official-value",
+        "tuition": "needs-review",
+        "intake": "official-value",
+        "studyTypeAndArrangement": "official-value"
+      },
+      "reviewReason": "Rendered programme pages were captured; secondary PDFs, downloadable brochures, and official application route screens still need a deeper pass before ready status."
+    },
+    {
+      "candidateCode": "UCSI-BACHELOR-051",
+      "nameEnOfficial": "Bachelor Of Mechanical Engineering With Honours",
+      "checkedRoutes": [
+        "https://www.ucsiuniversity.edu.my/programmes/bachelor-mechanical-engineering-honours",
+        "https://www.ucsiuniversity.edu.my/international-students",
+        "https://www.ucsiuniversity.edu.my/admission-procedure/international/Kuala-lumpur"
+      ],
+      "fields": {
+        "languageRequirement": "official-value",
+        "interviewRequirement": "not-confirmed",
+        "courseSetting": "official-value",
+        "curriculumModules": "official-value",
+        "applicationDocuments": "general-rule",
+        "chinaSpecificRoute": "not-confirmed",
+        "careerDirections": "official-value",
+        "recognition": "official-value",
+        "tuition": "needs-review",
+        "intake": "official-value",
+        "studyTypeAndArrangement": "official-value"
+      },
+      "reviewReason": "Rendered programme pages were captured; secondary PDFs, downloadable brochures, and official application route screens still need a deeper pass before ready status."
+    },
+    {
+      "candidateCode": "UCSI-BACHELOR-052",
+      "nameEnOfficial": "Bachelor Of Mechatronics Engineering With Honours",
+      "checkedRoutes": [
+        "https://www.ucsiuniversity.edu.my/programmes/bachelor-mechatronics-engineering-honours",
+        "https://www.ucsiuniversity.edu.my/international-students",
+        "https://www.ucsiuniversity.edu.my/admission-procedure/international/Kuala-lumpur"
+      ],
+      "fields": {
+        "languageRequirement": "needs-review",
+        "interviewRequirement": "not-confirmed",
+        "courseSetting": "official-value",
+        "curriculumModules": "official-value",
+        "applicationDocuments": "general-rule",
+        "chinaSpecificRoute": "not-confirmed",
+        "careerDirections": "official-value",
+        "recognition": "official-value",
+        "tuition": "needs-review",
+        "intake": "official-value",
+        "studyTypeAndArrangement": "official-value"
+      },
+      "reviewReason": "Rendered programme pages were captured; secondary PDFs, downloadable brochures, and official application route screens still need a deeper pass before ready status."
+    },
+    {
+      "candidateCode": "UCSI-BACHELOR-053",
+      "nameEnOfficial": "Bachelor Of Microelectronic Technology With Honours",
+      "checkedRoutes": [
+        "https://www.ucsiuniversity.edu.my/programmes/bachelor-microelectronic-technology-honours",
+        "https://www.ucsiuniversity.edu.my/international-students",
+        "https://www.ucsiuniversity.edu.my/admission-procedure/international/Kuala-lumpur"
+      ],
+      "fields": {
+        "languageRequirement": "official-value",
+        "interviewRequirement": "not-confirmed",
+        "courseSetting": "official-value",
+        "curriculumModules": "official-value",
+        "applicationDocuments": "general-rule",
+        "chinaSpecificRoute": "not-confirmed",
+        "careerDirections": "official-value",
+        "recognition": "official-value",
+        "tuition": "needs-review",
+        "intake": "official-value",
+        "studyTypeAndArrangement": "official-value"
+      },
+      "reviewReason": "Rendered programme pages were captured; secondary PDFs, downloadable brochures, and official application route screens still need a deeper pass before ready status."
+    },
+    {
+      "candidateCode": "UCSI-BACHELOR-054",
+      "nameEnOfficial": "Bachelor Of Petroleum Engineering With Honours",
+      "checkedRoutes": [
+        "https://www.ucsiuniversity.edu.my/programmes/bachelor-petroleum-engineering-honours",
+        "https://www.ucsiuniversity.edu.my/international-students",
+        "https://www.ucsiuniversity.edu.my/admission-procedure/international/Kuala-lumpur"
+      ],
+      "fields": {
+        "languageRequirement": "official-value",
+        "interviewRequirement": "not-confirmed",
+        "courseSetting": "official-value",
+        "curriculumModules": "official-value",
+        "applicationDocuments": "general-rule",
+        "chinaSpecificRoute": "not-confirmed",
+        "careerDirections": "official-value",
+        "recognition": "official-value",
+        "tuition": "needs-review",
+        "intake": "official-value",
+        "studyTypeAndArrangement": "official-value"
+      },
+      "reviewReason": "Rendered programme pages were captured; secondary PDFs, downloadable brochures, and official application route screens still need a deeper pass before ready status."
+    },
+    {
+      "candidateCode": "UCSI-BACHELOR-055",
+      "nameEnOfficial": "Bachelor Of Quantity Surveying (Hons)",
+      "checkedRoutes": [
+        "https://www.ucsiuniversity.edu.my/programmes/bachelor-quantity-surveying-hons",
+        "https://www.ucsiuniversity.edu.my/international-students",
+        "https://www.ucsiuniversity.edu.my/admission-procedure/international/Kuala-lumpur"
+      ],
+      "fields": {
+        "languageRequirement": "official-value",
+        "interviewRequirement": "not-confirmed",
+        "courseSetting": "official-value",
+        "curriculumModules": "official-value",
+        "applicationDocuments": "general-rule",
+        "chinaSpecificRoute": "not-confirmed",
+        "careerDirections": "official-value",
+        "recognition": "official-value",
+        "tuition": "needs-review",
+        "intake": "official-value",
+        "studyTypeAndArrangement": "official-value"
+      },
+      "reviewReason": "Rendered programme pages were captured; secondary PDFs, downloadable brochures, and official application route screens still need a deeper pass before ready status."
+    },
+    {
+      "candidateCode": "UCSI-BACHELOR-056",
+      "nameEnOfficial": "Bachelor Of Science (Hons) In Architecture",
+      "checkedRoutes": [
+        "https://www.ucsiuniversity.edu.my/programmes/bachelor-science-hons-architecture",
+        "https://www.ucsiuniversity.edu.my/international-students",
+        "https://www.ucsiuniversity.edu.my/admission-procedure/international/Kuala-lumpur"
+      ],
+      "fields": {
+        "languageRequirement": "official-value",
+        "interviewRequirement": "not-confirmed",
+        "courseSetting": "official-value",
+        "curriculumModules": "official-value",
+        "applicationDocuments": "general-rule",
+        "chinaSpecificRoute": "not-confirmed",
+        "careerDirections": "official-value",
+        "recognition": "official-value",
+        "tuition": "needs-review",
+        "intake": "official-value",
+        "studyTypeAndArrangement": "official-value"
+      },
+      "reviewReason": "Rendered programme pages were captured; secondary PDFs, downloadable brochures, and official application route screens still need a deeper pass before ready status."
+    },
+    {
+      "candidateCode": "UCSI-MASTER-057",
+      "nameEnOfficial": "Master Of Sustainable Built Environment",
+      "checkedRoutes": [
+        "https://www.ucsiuniversity.edu.my/programmes/master-sustainable-built-environment",
+        "https://www.ucsiuniversity.edu.my/international-students",
+        "https://www.ucsiuniversity.edu.my/admission-procedure/international/Kuala-lumpur"
+      ],
+      "fields": {
+        "languageRequirement": "official-value",
+        "interviewRequirement": "not-confirmed",
+        "courseSetting": "official-value",
+        "curriculumModules": "official-value",
+        "applicationDocuments": "general-rule",
+        "chinaSpecificRoute": "not-confirmed",
+        "careerDirections": "official-value",
+        "recognition": "official-value",
+        "tuition": "needs-review",
+        "intake": "official-value",
+        "studyTypeAndArrangement": "official-value"
+      },
+      "reviewReason": "Rendered programme pages were captured; secondary PDFs, downloadable brochures, and official application route screens still need a deeper pass before ready status."
+    },
+    {
+      "candidateCode": "UCSI-MASTER-058",
+      "nameEnOfficial": "Master In Engineering (Applied Artificial Intelligence)",
+      "checkedRoutes": [
+        "https://www.ucsiuniversity.edu.my/programmes/master-engineering-applied-artificial-intelligence",
+        "https://www.ucsiuniversity.edu.my/international-students",
+        "https://www.ucsiuniversity.edu.my/admission-procedure/international/Kuala-lumpur"
+      ],
+      "fields": {
+        "languageRequirement": "official-value",
+        "interviewRequirement": "not-confirmed",
+        "courseSetting": "official-value",
+        "curriculumModules": "official-value",
+        "applicationDocuments": "general-rule",
+        "chinaSpecificRoute": "not-confirmed",
+        "careerDirections": "official-value",
+        "recognition": "official-value",
+        "tuition": "needs-review",
+        "intake": "official-value",
+        "studyTypeAndArrangement": "official-value"
+      },
+      "reviewReason": "Rendered programme pages were captured; secondary PDFs, downloadable brochures, and official application route screens still need a deeper pass before ready status."
+    },
+    {
+      "candidateCode": "UCSI-PHD-059",
+      "nameEnOfficial": "Doctor Of Philosophy (Hospitality And Tourism)",
+      "checkedRoutes": [
+        "https://www.ucsiuniversity.edu.my/programmes/doctor-philosophy-hospitality-and-tourism",
+        "https://www.ucsiuniversity.edu.my/international-students",
+        "https://www.ucsiuniversity.edu.my/admission-procedure/international/Kuala-lumpur"
+      ],
+      "fields": {
+        "languageRequirement": "official-value",
+        "interviewRequirement": "not-confirmed",
+        "courseSetting": "official-value",
+        "curriculumModules": "official-value",
+        "applicationDocuments": "general-rule",
+        "chinaSpecificRoute": "not-confirmed",
+        "careerDirections": "official-value",
+        "recognition": "official-value",
+        "tuition": "needs-review",
+        "intake": "official-value",
+        "studyTypeAndArrangement": "official-value"
+      },
+      "reviewReason": "Rendered programme pages were captured; secondary PDFs, downloadable brochures, and official application route screens still need a deeper pass before ready status."
+    },
+    {
+      "candidateCode": "UCSI-MASTER-060",
+      "nameEnOfficial": "Master In International Hospitality Management",
+      "checkedRoutes": [
+        "https://www.ucsiuniversity.edu.my/programmes/master-international-hospitality-management",
+        "https://www.ucsiuniversity.edu.my/international-students",
+        "https://www.ucsiuniversity.edu.my/admission-procedure/international/Kuala-lumpur"
+      ],
+      "fields": {
+        "languageRequirement": "official-value",
+        "interviewRequirement": "not-confirmed",
+        "courseSetting": "official-value",
+        "curriculumModules": "official-value",
+        "applicationDocuments": "general-rule",
+        "chinaSpecificRoute": "not-confirmed",
+        "careerDirections": "official-value",
+        "recognition": "official-value",
+        "tuition": "needs-review",
+        "intake": "official-value",
+        "studyTypeAndArrangement": "official-value"
+      },
+      "reviewReason": "Rendered programme pages were captured; secondary PDFs, downloadable brochures, and official application route screens still need a deeper pass before ready status."
+    },
+    {
+      "candidateCode": "UCSI-MASTER-061",
+      "nameEnOfficial": "Master Of Science In Gastronomy",
+      "checkedRoutes": [
+        "https://www.ucsiuniversity.edu.my/programmes/master-science-gastronomy",
+        "https://www.ucsiuniversity.edu.my/international-students",
+        "https://www.ucsiuniversity.edu.my/admission-procedure/international/Kuala-lumpur"
+      ],
+      "fields": {
+        "languageRequirement": "official-value",
+        "interviewRequirement": "not-confirmed",
+        "courseSetting": "official-value",
+        "curriculumModules": "official-value",
+        "applicationDocuments": "general-rule",
+        "chinaSpecificRoute": "not-confirmed",
+        "careerDirections": "official-value",
+        "recognition": "official-value",
+        "tuition": "needs-review",
+        "intake": "official-value",
+        "studyTypeAndArrangement": "official-value"
+      },
+      "reviewReason": "Rendered programme pages were captured; secondary PDFs, downloadable brochures, and official application route screens still need a deeper pass before ready status."
+    },
+    {
+      "candidateCode": "UCSI-BACHELOR-062",
+      "nameEnOfficial": "Bachelor Of Arts (Honours) In Culinary Management",
+      "checkedRoutes": [
+        "https://www.ucsiuniversity.edu.my/programmes/bachelor-arts-honours-culinary-management",
+        "https://www.ucsiuniversity.edu.my/international-students",
+        "https://www.ucsiuniversity.edu.my/admission-procedure/international/Kuala-lumpur"
+      ],
+      "fields": {
+        "languageRequirement": "official-value",
+        "interviewRequirement": "not-confirmed",
+        "courseSetting": "official-value",
+        "curriculumModules": "official-value",
+        "applicationDocuments": "general-rule",
+        "chinaSpecificRoute": "not-confirmed",
+        "careerDirections": "official-value",
+        "recognition": "official-value",
+        "tuition": "needs-review",
+        "intake": "official-value",
+        "studyTypeAndArrangement": "official-value"
+      },
+      "reviewReason": "Rendered programme pages were captured; secondary PDFs, downloadable brochures, and official application route screens still need a deeper pass before ready status."
+    },
+    {
+      "candidateCode": "UCSI-BACHELOR-063",
+      "nameEnOfficial": "Bachelor Of Arts (Honours) In Global Sustainable Tourism",
+      "checkedRoutes": [
+        "https://www.ucsiuniversity.edu.my/programmes/bachelor-arts-honours-global-sustainable-tourism",
+        "https://www.ucsiuniversity.edu.my/international-students",
+        "https://www.ucsiuniversity.edu.my/admission-procedure/international/Kuala-lumpur"
+      ],
+      "fields": {
+        "languageRequirement": "official-value",
+        "interviewRequirement": "not-confirmed",
+        "courseSetting": "official-value",
+        "curriculumModules": "official-value",
+        "applicationDocuments": "general-rule",
+        "chinaSpecificRoute": "not-confirmed",
+        "careerDirections": "official-value",
+        "recognition": "official-value",
+        "tuition": "needs-review",
+        "intake": "official-value",
+        "studyTypeAndArrangement": "official-value"
+      },
+      "reviewReason": "Rendered programme pages were captured; secondary PDFs, downloadable brochures, and official application route screens still need a deeper pass before ready status."
+    },
+    {
+      "candidateCode": "UCSI-BACHELOR-064",
+      "nameEnOfficial": "Bachelor Of Hospitality Administration",
+      "checkedRoutes": [
+        "https://www.ucsiuniversity.edu.my/programmes/bachelor-hospitality-administration",
+        "https://www.ucsiuniversity.edu.my/international-students",
+        "https://www.ucsiuniversity.edu.my/admission-procedure/international/Kuala-lumpur"
+      ],
+      "fields": {
+        "languageRequirement": "official-value",
+        "interviewRequirement": "not-confirmed",
+        "courseSetting": "official-value",
+        "curriculumModules": "official-value",
+        "applicationDocuments": "general-rule",
+        "chinaSpecificRoute": "not-confirmed",
+        "careerDirections": "official-value",
+        "recognition": "official-value",
+        "tuition": "needs-review",
+        "intake": "official-value",
+        "studyTypeAndArrangement": "official-value"
+      },
+      "reviewReason": "Rendered programme pages were captured; secondary PDFs, downloadable brochures, and official application route screens still need a deeper pass before ready status."
+    },
+    {
+      "candidateCode": "UCSI-MASTER-065",
+      "nameEnOfficial": "MSc (Healthy Aging, Medical Aesthetic And Regenerative Medicine)",
+      "checkedRoutes": [
+        "https://www.ucsiuniversity.edu.my/programmes/msc-healthy-aging-medical-aesthetic-and-regenerative-medicine",
+        "https://www.ucsiuniversity.edu.my/international-students",
+        "https://www.ucsiuniversity.edu.my/admission-procedure/international/Kuala-lumpur"
+      ],
+      "fields": {
+        "languageRequirement": "official-value",
+        "interviewRequirement": "not-confirmed",
+        "courseSetting": "official-value",
+        "curriculumModules": "official-value",
+        "applicationDocuments": "general-rule",
+        "chinaSpecificRoute": "not-confirmed",
+        "careerDirections": "official-value",
+        "recognition": "official-value",
+        "tuition": "needs-review",
+        "intake": "official-value",
+        "studyTypeAndArrangement": "official-value"
+      },
+      "reviewReason": "Rendered programme pages were captured; secondary PDFs, downloadable brochures, and official application route screens still need a deeper pass before ready status."
+    },
+    {
+      "candidateCode": "UCSI-BACHELOR-066",
+      "nameEnOfficial": "Bachelor Of Optometry (Hons)",
+      "checkedRoutes": [
+        "https://www.ucsiuniversity.edu.my/programmes/bachelor-optometry-hons",
+        "https://www.ucsiuniversity.edu.my/international-students",
+        "https://www.ucsiuniversity.edu.my/admission-procedure/international/Kuala-lumpur"
+      ],
+      "fields": {
+        "languageRequirement": "official-value",
+        "interviewRequirement": "not-confirmed",
+        "courseSetting": "official-value",
+        "curriculumModules": "official-value",
+        "applicationDocuments": "general-rule",
+        "chinaSpecificRoute": "not-confirmed",
+        "careerDirections": "official-value",
+        "recognition": "official-value",
+        "tuition": "needs-review",
+        "intake": "official-value",
+        "studyTypeAndArrangement": "official-value"
+      },
+      "reviewReason": "Rendered programme pages were captured; secondary PDFs, downloadable brochures, and official application route screens still need a deeper pass before ready status."
+    },
+    {
+      "candidateCode": "UCSI-PHD-067",
+      "nameEnOfficial": "Doctor Of Philosophy (Pharmaceutical Sciences)",
+      "checkedRoutes": [
+        "https://www.ucsiuniversity.edu.my/programmes/doctor-philosophy-pharmaceutical-sciences",
+        "https://www.ucsiuniversity.edu.my/international-students",
+        "https://www.ucsiuniversity.edu.my/admission-procedure/international/Kuala-lumpur"
+      ],
+      "fields": {
+        "languageRequirement": "official-value",
+        "interviewRequirement": "not-confirmed",
+        "courseSetting": "official-value",
+        "curriculumModules": "official-value",
+        "applicationDocuments": "general-rule",
+        "chinaSpecificRoute": "not-confirmed",
+        "careerDirections": "official-value",
+        "recognition": "official-value",
+        "tuition": "needs-review",
+        "intake": "official-value",
+        "studyTypeAndArrangement": "official-value"
+      },
+      "reviewReason": "Rendered programme pages were captured; secondary PDFs, downloadable brochures, and official application route screens still need a deeper pass before ready status."
+    },
+    {
+      "candidateCode": "UCSI-MASTER-068",
+      "nameEnOfficial": "Master Of Clinical Pharmacy Practice",
+      "checkedRoutes": [
+        "https://www.ucsiuniversity.edu.my/programmes/master-clinical-pharmacy-practice",
+        "https://www.ucsiuniversity.edu.my/international-students",
+        "https://www.ucsiuniversity.edu.my/admission-procedure/international/Kuala-lumpur"
+      ],
+      "fields": {
+        "languageRequirement": "official-value",
+        "interviewRequirement": "not-confirmed",
+        "courseSetting": "official-value",
+        "curriculumModules": "official-value",
+        "applicationDocuments": "general-rule",
+        "chinaSpecificRoute": "not-confirmed",
+        "careerDirections": "official-value",
+        "recognition": "official-value",
+        "tuition": "needs-review",
+        "intake": "official-value",
+        "studyTypeAndArrangement": "official-value"
+      },
+      "reviewReason": "Rendered programme pages were captured; secondary PDFs, downloadable brochures, and official application route screens still need a deeper pass before ready status."
+    },
+    {
+      "candidateCode": "UCSI-MASTER-069",
+      "nameEnOfficial": "Master Of Science (Pharmaceutical Sciences)",
+      "checkedRoutes": [
+        "https://www.ucsiuniversity.edu.my/programmes/master-science-pharmaceutical-sciences",
+        "https://www.ucsiuniversity.edu.my/international-students",
+        "https://www.ucsiuniversity.edu.my/admission-procedure/international/Kuala-lumpur"
+      ],
+      "fields": {
+        "languageRequirement": "official-value",
+        "interviewRequirement": "not-confirmed",
+        "courseSetting": "official-value",
+        "curriculumModules": "official-value",
+        "applicationDocuments": "general-rule",
+        "chinaSpecificRoute": "not-confirmed",
+        "careerDirections": "official-value",
+        "recognition": "official-value",
+        "tuition": "needs-review",
+        "intake": "official-value",
+        "studyTypeAndArrangement": "official-value"
+      },
+      "reviewReason": "Rendered programme pages were captured; secondary PDFs, downloadable brochures, and official application route screens still need a deeper pass before ready status."
+    },
+    {
+      "candidateCode": "UCSI-MASTER-070",
+      "nameEnOfficial": "MSc Pharmaceutical Chemistry",
+      "checkedRoutes": [
+        "https://www.ucsiuniversity.edu.my/programmes/msc-pharmaceutical-chemistry",
+        "https://www.ucsiuniversity.edu.my/international-students",
+        "https://www.ucsiuniversity.edu.my/admission-procedure/international/Kuala-lumpur"
+      ],
+      "fields": {
+        "languageRequirement": "official-value",
+        "interviewRequirement": "not-confirmed",
+        "courseSetting": "official-value",
+        "curriculumModules": "official-value",
+        "applicationDocuments": "general-rule",
+        "chinaSpecificRoute": "not-confirmed",
+        "careerDirections": "official-value",
+        "recognition": "official-value",
+        "tuition": "needs-review",
+        "intake": "official-value",
+        "studyTypeAndArrangement": "official-value"
+      },
+      "reviewReason": "Rendered programme pages were captured; secondary PDFs, downloadable brochures, and official application route screens still need a deeper pass before ready status."
+    },
+    {
+      "candidateCode": "UCSI-MASTER-071",
+      "nameEnOfficial": "MSc Pharmaceutical Technology",
+      "checkedRoutes": [
+        "https://www.ucsiuniversity.edu.my/programmes/msc-pharmaceutical-technology",
+        "https://www.ucsiuniversity.edu.my/international-students",
+        "https://www.ucsiuniversity.edu.my/admission-procedure/international/Kuala-lumpur"
+      ],
+      "fields": {
+        "languageRequirement": "official-value",
+        "interviewRequirement": "not-confirmed",
+        "courseSetting": "official-value",
+        "curriculumModules": "official-value",
+        "applicationDocuments": "general-rule",
+        "chinaSpecificRoute": "not-confirmed",
+        "careerDirections": "official-value",
+        "recognition": "official-value",
+        "tuition": "needs-review",
+        "intake": "official-value",
+        "studyTypeAndArrangement": "official-value"
+      },
+      "reviewReason": "Rendered programme pages were captured; secondary PDFs, downloadable brochures, and official application route screens still need a deeper pass before ready status."
+    },
+    {
+      "candidateCode": "UCSI-BACHELOR-072",
+      "nameEnOfficial": "Bachelor In Formulation Science (Honours)",
+      "checkedRoutes": [
+        "https://www.ucsiuniversity.edu.my/programmes/bachelor-formulation-science-honours",
+        "https://www.ucsiuniversity.edu.my/international-students",
+        "https://www.ucsiuniversity.edu.my/admission-procedure/international/Kuala-lumpur"
+      ],
+      "fields": {
+        "languageRequirement": "official-value",
+        "interviewRequirement": "not-confirmed",
+        "courseSetting": "official-value",
+        "curriculumModules": "official-value",
+        "applicationDocuments": "general-rule",
+        "chinaSpecificRoute": "not-confirmed",
+        "careerDirections": "official-value",
+        "recognition": "official-value",
+        "tuition": "needs-review",
+        "intake": "official-value",
+        "studyTypeAndArrangement": "official-value"
+      },
+      "reviewReason": "Rendered programme pages were captured; secondary PDFs, downloadable brochures, and official application route screens still need a deeper pass before ready status."
+    },
+    {
+      "candidateCode": "UCSI-BACHELOR-073",
+      "nameEnOfficial": "Bachelor Of Pharmacy (Honours)",
+      "checkedRoutes": [
+        "https://www.ucsiuniversity.edu.my/programmes/bachelor-pharmacy-honours",
+        "https://www.ucsiuniversity.edu.my/international-students",
+        "https://www.ucsiuniversity.edu.my/admission-procedure/international/Kuala-lumpur"
+      ],
+      "fields": {
+        "languageRequirement": "needs-review",
+        "interviewRequirement": "not-confirmed",
+        "courseSetting": "official-value",
+        "curriculumModules": "official-value",
+        "applicationDocuments": "general-rule",
+        "chinaSpecificRoute": "not-confirmed",
+        "careerDirections": "official-value",
+        "recognition": "official-value",
+        "tuition": "needs-review",
+        "intake": "official-value",
+        "studyTypeAndArrangement": "official-value"
+      },
+      "reviewReason": "Rendered programme pages were captured; secondary PDFs, downloadable brochures, and official application route screens still need a deeper pass before ready status."
+    },
+    {
+      "candidateCode": "UCSI-PHD-074",
+      "nameEnOfficial": "Doctor Of Philosophy (Education)",
+      "checkedRoutes": [
+        "https://www.ucsiuniversity.edu.my/programmes/doctor-philosophy-education",
+        "https://www.ucsiuniversity.edu.my/international-students",
+        "https://www.ucsiuniversity.edu.my/admission-procedure/international/Kuala-lumpur"
+      ],
+      "fields": {
+        "languageRequirement": "official-value",
+        "interviewRequirement": "not-confirmed",
+        "courseSetting": "official-value",
+        "curriculumModules": "official-value",
+        "applicationDocuments": "general-rule",
+        "chinaSpecificRoute": "not-confirmed",
+        "careerDirections": "official-value",
+        "recognition": "official-value",
+        "tuition": "needs-review",
+        "intake": "official-value",
+        "studyTypeAndArrangement": "official-value"
+      },
+      "reviewReason": "Rendered programme pages were captured; secondary PDFs, downloadable brochures, and official application route screens still need a deeper pass before ready status."
+    },
+    {
+      "candidateCode": "UCSI-PHD-075",
+      "nameEnOfficial": "Doctor Of Philosophy In Psychology",
+      "checkedRoutes": [
+        "https://www.ucsiuniversity.edu.my/programmes/doctor-philosophy-psychology",
+        "https://www.ucsiuniversity.edu.my/international-students",
+        "https://www.ucsiuniversity.edu.my/admission-procedure/international/Kuala-lumpur"
+      ],
+      "fields": {
+        "languageRequirement": "official-value",
+        "interviewRequirement": "not-confirmed",
+        "courseSetting": "official-value",
+        "curriculumModules": "official-value",
+        "applicationDocuments": "general-rule",
+        "chinaSpecificRoute": "not-confirmed",
+        "careerDirections": "official-value",
+        "recognition": "official-value",
+        "tuition": "needs-review",
+        "intake": "official-value",
+        "studyTypeAndArrangement": "official-value"
+      },
+      "reviewReason": "Rendered programme pages were captured; secondary PDFs, downloadable brochures, and official application route screens still need a deeper pass before ready status."
+    },
+    {
+      "candidateCode": "UCSI-MASTER-076",
+      "nameEnOfficial": "Master Of Child Psychology",
+      "checkedRoutes": [
+        "https://www.ucsiuniversity.edu.my/programmes/master-child-psychology",
+        "https://www.ucsiuniversity.edu.my/international-students",
+        "https://www.ucsiuniversity.edu.my/admission-procedure/international/Kuala-lumpur"
+      ],
+      "fields": {
+        "languageRequirement": "official-value",
+        "interviewRequirement": "not-confirmed",
+        "courseSetting": "official-value",
+        "curriculumModules": "official-value",
+        "applicationDocuments": "general-rule",
+        "chinaSpecificRoute": "not-confirmed",
+        "careerDirections": "official-value",
+        "recognition": "official-value",
+        "tuition": "needs-review",
+        "intake": "official-value",
+        "studyTypeAndArrangement": "official-value"
+      },
+      "reviewReason": "Rendered programme pages were captured; secondary PDFs, downloadable brochures, and official application route screens still need a deeper pass before ready status."
+    },
+    {
+      "candidateCode": "UCSI-MASTER-077",
+      "nameEnOfficial": "Master Of Clinical Psychology",
+      "checkedRoutes": [
+        "https://www.ucsiuniversity.edu.my/programmes/master-clinical-psychology",
+        "https://www.ucsiuniversity.edu.my/international-students",
+        "https://www.ucsiuniversity.edu.my/admission-procedure/international/Kuala-lumpur"
+      ],
+      "fields": {
+        "languageRequirement": "official-value",
+        "interviewRequirement": "not-confirmed",
+        "courseSetting": "official-value",
+        "curriculumModules": "official-value",
+        "applicationDocuments": "general-rule",
+        "chinaSpecificRoute": "not-confirmed",
+        "careerDirections": "official-value",
+        "recognition": "official-value",
+        "tuition": "needs-review",
+        "intake": "official-value",
+        "studyTypeAndArrangement": "official-value"
+      },
+      "reviewReason": "Rendered programme pages were captured; secondary PDFs, downloadable brochures, and official application route screens still need a deeper pass before ready status."
+    },
+    {
+      "candidateCode": "UCSI-MASTER-078",
+      "nameEnOfficial": "Master Of Education",
+      "checkedRoutes": [
+        "https://www.ucsiuniversity.edu.my/programmes/master-education",
+        "https://www.ucsiuniversity.edu.my/international-students",
+        "https://www.ucsiuniversity.edu.my/admission-procedure/international/Kuala-lumpur"
+      ],
+      "fields": {
+        "languageRequirement": "official-value",
+        "interviewRequirement": "not-confirmed",
+        "courseSetting": "official-value",
+        "curriculumModules": "official-value",
+        "applicationDocuments": "general-rule",
+        "chinaSpecificRoute": "not-confirmed",
+        "careerDirections": "official-value",
+        "recognition": "official-value",
+        "tuition": "needs-review",
+        "intake": "official-value",
+        "studyTypeAndArrangement": "official-value"
+      },
+      "reviewReason": "Rendered programme pages were captured; secondary PDFs, downloadable brochures, and official application route screens still need a deeper pass before ready status."
+    },
+    {
+      "candidateCode": "UCSI-MASTER-079",
+      "nameEnOfficial": "Master In Strategic Communication",
+      "checkedRoutes": [
+        "https://www.ucsiuniversity.edu.my/programmes/master-strategic-communication",
+        "https://www.ucsiuniversity.edu.my/international-students",
+        "https://www.ucsiuniversity.edu.my/admission-procedure/international/Kuala-lumpur"
+      ],
+      "fields": {
+        "languageRequirement": "official-value",
+        "interviewRequirement": "not-confirmed",
+        "courseSetting": "official-value",
+        "curriculumModules": "official-value",
+        "applicationDocuments": "general-rule",
+        "chinaSpecificRoute": "not-confirmed",
+        "careerDirections": "official-value",
+        "recognition": "official-value",
+        "tuition": "needs-review",
+        "intake": "official-value",
+        "studyTypeAndArrangement": "official-value"
+      },
+      "reviewReason": "Rendered programme pages were captured; secondary PDFs, downloadable brochures, and official application route screens still need a deeper pass before ready status."
+    },
+    {
+      "candidateCode": "UCSI-BACHELOR-080",
+      "nameEnOfficial": "Bachelor Of Early Childhood Education (Honours)",
+      "checkedRoutes": [
+        "https://www.ucsiuniversity.edu.my/programmes/bachelor-early-childhood-education-honours",
+        "https://www.ucsiuniversity.edu.my/international-students",
+        "https://www.ucsiuniversity.edu.my/admission-procedure/international/Kuala-lumpur"
+      ],
+      "fields": {
+        "languageRequirement": "official-value",
+        "interviewRequirement": "not-confirmed",
+        "courseSetting": "official-value",
+        "curriculumModules": "official-value",
+        "applicationDocuments": "general-rule",
+        "chinaSpecificRoute": "not-confirmed",
+        "careerDirections": "official-value",
+        "recognition": "official-value",
+        "tuition": "needs-review",
+        "intake": "official-value",
+        "studyTypeAndArrangement": "official-value"
+      },
+      "reviewReason": "Rendered programme pages were captured; secondary PDFs, downloadable brochures, and official application route screens still need a deeper pass before ready status."
+    },
+    {
+      "candidateCode": "UCSI-BACHELOR-081",
+      "nameEnOfficial": "Bachelor Of Digital Media Production And Broadcasting (Honours)",
+      "checkedRoutes": [
+        "https://www.ucsiuniversity.edu.my/programmes/bachelor-digital-media-production-and-broadcasting-honours",
+        "https://www.ucsiuniversity.edu.my/international-students",
+        "https://www.ucsiuniversity.edu.my/admission-procedure/international/Kuala-lumpur"
+      ],
+      "fields": {
+        "languageRequirement": "official-value",
+        "interviewRequirement": "not-confirmed",
+        "courseSetting": "official-value",
+        "curriculumModules": "official-value",
+        "applicationDocuments": "general-rule",
+        "chinaSpecificRoute": "not-confirmed",
+        "careerDirections": "official-value",
+        "recognition": "official-value",
+        "tuition": "needs-review",
+        "intake": "official-value",
+        "studyTypeAndArrangement": "official-value"
+      },
+      "reviewReason": "Rendered programme pages were captured; secondary PDFs, downloadable brochures, and official application route screens still need a deeper pass before ready status."
+    },
+    {
+      "candidateCode": "UCSI-PHD-082",
+      "nameEnOfficial": "Doctor Of Philosophy In Art, Design And Creative Media",
+      "checkedRoutes": [
+        "https://www.ucsiuniversity.edu.my/programmes/doctor-philosophy-art-design-and-creative-media",
+        "https://www.ucsiuniversity.edu.my/international-students",
+        "https://www.ucsiuniversity.edu.my/admission-procedure/international/Kuala-lumpur"
+      ],
+      "fields": {
+        "languageRequirement": "official-value",
+        "interviewRequirement": "not-confirmed",
+        "courseSetting": "official-value",
+        "curriculumModules": "official-value",
+        "applicationDocuments": "general-rule",
+        "chinaSpecificRoute": "not-confirmed",
+        "careerDirections": "official-value",
+        "recognition": "official-value",
+        "tuition": "needs-review",
+        "intake": "official-value",
+        "studyTypeAndArrangement": "official-value"
+      },
+      "reviewReason": "Rendered programme pages were captured; secondary PDFs, downloadable brochures, and official application route screens still need a deeper pass before ready status."
+    },
+    {
+      "candidateCode": "UCSI-MASTER-083",
+      "nameEnOfficial": "Master Of Arts And Design",
+      "checkedRoutes": [
+        "https://www.ucsiuniversity.edu.my/programmes/master-arts-and-design",
+        "https://www.ucsiuniversity.edu.my/international-students",
+        "https://www.ucsiuniversity.edu.my/admission-procedure/international/Kuala-lumpur"
+      ],
+      "fields": {
+        "languageRequirement": "official-value",
+        "interviewRequirement": "not-confirmed",
+        "courseSetting": "official-value",
+        "curriculumModules": "official-value",
+        "applicationDocuments": "general-rule",
+        "chinaSpecificRoute": "not-confirmed",
+        "careerDirections": "needs-review",
+        "recognition": "official-value",
+        "tuition": "needs-review",
+        "intake": "official-value",
+        "studyTypeAndArrangement": "official-value"
+      },
+      "reviewReason": "Rendered programme pages were captured; secondary PDFs, downloadable brochures, and official application route screens still need a deeper pass before ready status."
+    },
+    {
+      "candidateCode": "UCSI-MASTER-084",
+      "nameEnOfficial": "Master Of Art, Design And Creative Media",
+      "checkedRoutes": [
+        "https://www.ucsiuniversity.edu.my/programmes/master-art-design-and-creative-media",
+        "https://www.ucsiuniversity.edu.my/international-students",
+        "https://www.ucsiuniversity.edu.my/admission-procedure/international/Kuala-lumpur"
+      ],
+      "fields": {
+        "languageRequirement": "official-value",
+        "interviewRequirement": "not-confirmed",
+        "courseSetting": "official-value",
+        "curriculumModules": "official-value",
+        "applicationDocuments": "general-rule",
+        "chinaSpecificRoute": "not-confirmed",
+        "careerDirections": "official-value",
+        "recognition": "official-value",
+        "tuition": "needs-review",
+        "intake": "official-value",
+        "studyTypeAndArrangement": "official-value"
+      },
+      "reviewReason": "Rendered programme pages were captured; secondary PDFs, downloadable brochures, and official application route screens still need a deeper pass before ready status."
+    },
+    {
+      "candidateCode": "UCSI-PHD-085",
+      "nameEnOfficial": "Doctor Of Philosophy In Mathematical Sciences",
+      "checkedRoutes": [
+        "https://www.ucsiuniversity.edu.my/programmes/doctor-philosophy-mathematical-sciences",
+        "https://www.ucsiuniversity.edu.my/international-students",
+        "https://www.ucsiuniversity.edu.my/admission-procedure/international/Kuala-lumpur"
+      ],
+      "fields": {
+        "languageRequirement": "official-value",
+        "interviewRequirement": "not-confirmed",
+        "courseSetting": "official-value",
+        "curriculumModules": "official-value",
+        "applicationDocuments": "general-rule",
+        "chinaSpecificRoute": "not-confirmed",
+        "careerDirections": "official-value",
+        "recognition": "official-value",
+        "tuition": "needs-review",
+        "intake": "official-value",
+        "studyTypeAndArrangement": "official-value"
+      },
+      "reviewReason": "Rendered programme pages were captured; secondary PDFs, downloadable brochures, and official application route screens still need a deeper pass before ready status."
+    },
+    {
+      "candidateCode": "UCSI-MASTER-086",
+      "nameEnOfficial": "Master Of Science (Actuarial Management) - (Mixed Mode Or Coursework)",
+      "checkedRoutes": [
+        "https://www.ucsiuniversity.edu.my/programmes/master-science-actuarial-management-mixed-mode-or-coursework",
+        "https://www.ucsiuniversity.edu.my/international-students",
+        "https://www.ucsiuniversity.edu.my/admission-procedure/international/Kuala-lumpur"
+      ],
+      "fields": {
+        "languageRequirement": "official-value",
+        "interviewRequirement": "not-confirmed",
+        "courseSetting": "official-value",
+        "curriculumModules": "official-value",
+        "applicationDocuments": "general-rule",
+        "chinaSpecificRoute": "not-confirmed",
+        "careerDirections": "official-value",
+        "recognition": "official-value",
+        "tuition": "needs-review",
+        "intake": "official-value",
+        "studyTypeAndArrangement": "official-value"
+      },
+      "reviewReason": "Rendered programme pages were captured; secondary PDFs, downloadable brochures, and official application route screens still need a deeper pass before ready status."
+    },
+    {
+      "candidateCode": "UCSI-MASTER-087",
+      "nameEnOfficial": "Master Of Science In Mathematical Sciences",
+      "checkedRoutes": [
+        "https://www.ucsiuniversity.edu.my/programmes/master-science-mathematical-sciences",
+        "https://www.ucsiuniversity.edu.my/international-students",
+        "https://www.ucsiuniversity.edu.my/admission-procedure/international/Kuala-lumpur"
+      ],
+      "fields": {
+        "languageRequirement": "official-value",
+        "interviewRequirement": "not-confirmed",
+        "courseSetting": "official-value",
+        "curriculumModules": "official-value",
+        "applicationDocuments": "general-rule",
+        "chinaSpecificRoute": "not-confirmed",
+        "careerDirections": "official-value",
+        "recognition": "official-value",
+        "tuition": "needs-review",
+        "intake": "official-value",
+        "studyTypeAndArrangement": "official-value"
+      },
+      "reviewReason": "Rendered programme pages were captured; secondary PDFs, downloadable brochures, and official application route screens still need a deeper pass before ready status."
+    },
+    {
+      "candidateCode": "UCSI-BACHELOR-088",
+      "nameEnOfficial": "Bachelor Of Science (Honours) Actuarial Science",
+      "checkedRoutes": [
+        "https://www.ucsiuniversity.edu.my/programmes/bachelor-science-honours-actuarial-science",
+        "https://www.ucsiuniversity.edu.my/international-students",
+        "https://www.ucsiuniversity.edu.my/admission-procedure/international/Kuala-lumpur"
+      ],
+      "fields": {
+        "languageRequirement": "official-value",
+        "interviewRequirement": "not-confirmed",
+        "courseSetting": "official-value",
+        "curriculumModules": "official-value",
+        "applicationDocuments": "general-rule",
+        "chinaSpecificRoute": "not-confirmed",
+        "careerDirections": "official-value",
+        "recognition": "official-value",
+        "tuition": "needs-review",
+        "intake": "official-value",
+        "studyTypeAndArrangement": "official-value"
+      },
+      "reviewReason": "Rendered programme pages were captured; secondary PDFs, downloadable brochures, and official application route screens still need a deeper pass before ready status."
+    },
+    {
+      "candidateCode": "UCSI-BACHELOR-089",
+      "nameEnOfficial": "Bachelor Of Science (Honours) Actuarial Science And Finance",
+      "checkedRoutes": [
+        "https://www.ucsiuniversity.edu.my/programmes/bachelor-science-honours-actuarial-science-and-finance",
+        "https://www.ucsiuniversity.edu.my/international-students",
+        "https://www.ucsiuniversity.edu.my/admission-procedure/international/Kuala-lumpur"
+      ],
+      "fields": {
+        "languageRequirement": "official-value",
+        "interviewRequirement": "not-confirmed",
+        "courseSetting": "official-value",
+        "curriculumModules": "official-value",
+        "applicationDocuments": "general-rule",
+        "chinaSpecificRoute": "not-confirmed",
+        "careerDirections": "official-value",
+        "recognition": "official-value",
+        "tuition": "needs-review",
+        "intake": "official-value",
+        "studyTypeAndArrangement": "official-value"
+      },
+      "reviewReason": "Rendered programme pages were captured; secondary PDFs, downloadable brochures, and official application route screens still need a deeper pass before ready status."
+    },
+    {
+      "candidateCode": "UCSI-BACHELOR-090",
+      "nameEnOfficial": "Bachelor Of Science (Honours) Actuarial Science With Data Analytics",
+      "checkedRoutes": [
+        "https://www.ucsiuniversity.edu.my/programmes/bachelor-science-honours-actuarial-science-data-analytics",
+        "https://www.ucsiuniversity.edu.my/international-students",
+        "https://www.ucsiuniversity.edu.my/admission-procedure/international/Kuala-lumpur"
+      ],
+      "fields": {
+        "languageRequirement": "official-value",
+        "interviewRequirement": "not-confirmed",
+        "courseSetting": "official-value",
+        "curriculumModules": "official-value",
+        "applicationDocuments": "general-rule",
+        "chinaSpecificRoute": "not-confirmed",
+        "careerDirections": "official-value",
+        "recognition": "official-value",
+        "tuition": "needs-review",
+        "intake": "official-value",
+        "studyTypeAndArrangement": "official-value"
+      },
+      "reviewReason": "Rendered programme pages were captured; secondary PDFs, downloadable brochures, and official application route screens still need a deeper pass before ready status."
+    },
+    {
+      "candidateCode": "UCSI-PHD-091",
+      "nameEnOfficial": "Doctor Of Philosophy In Computer Science",
+      "checkedRoutes": [
+        "https://www.ucsiuniversity.edu.my/programmes/doctor-philosophy-computer-science",
+        "https://www.ucsiuniversity.edu.my/international-students",
+        "https://www.ucsiuniversity.edu.my/admission-procedure/international/Kuala-lumpur"
+      ],
+      "fields": {
+        "languageRequirement": "official-value",
+        "interviewRequirement": "not-confirmed",
+        "courseSetting": "official-value",
+        "curriculumModules": "official-value",
+        "applicationDocuments": "general-rule",
+        "chinaSpecificRoute": "not-confirmed",
+        "careerDirections": "official-value",
+        "recognition": "official-value",
+        "tuition": "needs-review",
+        "intake": "official-value",
+        "studyTypeAndArrangement": "official-value"
+      },
+      "reviewReason": "Rendered programme pages were captured; secondary PDFs, downloadable brochures, and official application route screens still need a deeper pass before ready status."
+    },
+    {
+      "candidateCode": "UCSI-MASTER-092",
+      "nameEnOfficial": "Master Of Science In Computer Science",
+      "checkedRoutes": [
+        "https://www.ucsiuniversity.edu.my/programmes/master-science-computer-science",
+        "https://www.ucsiuniversity.edu.my/international-students",
+        "https://www.ucsiuniversity.edu.my/admission-procedure/international/Kuala-lumpur"
+      ],
+      "fields": {
+        "languageRequirement": "official-value",
+        "interviewRequirement": "not-confirmed",
+        "courseSetting": "official-value",
+        "curriculumModules": "official-value",
+        "applicationDocuments": "general-rule",
+        "chinaSpecificRoute": "not-confirmed",
+        "careerDirections": "official-value",
+        "recognition": "official-value",
+        "tuition": "needs-review",
+        "intake": "official-value",
+        "studyTypeAndArrangement": "official-value"
+      },
+      "reviewReason": "Rendered programme pages were captured; secondary PDFs, downloadable brochures, and official application route screens still need a deeper pass before ready status."
+    },
+    {
+      "candidateCode": "UCSI-MASTER-093",
+      "nameEnOfficial": "Master Of Science In Digital Technology And Analytics",
+      "checkedRoutes": [
+        "https://www.ucsiuniversity.edu.my/programmes/master-science-digital-technology-and-analytics",
+        "https://www.ucsiuniversity.edu.my/international-students",
+        "https://www.ucsiuniversity.edu.my/admission-procedure/international/Kuala-lumpur"
+      ],
+      "fields": {
+        "languageRequirement": "official-value",
+        "interviewRequirement": "not-confirmed",
+        "courseSetting": "official-value",
+        "curriculumModules": "official-value",
+        "applicationDocuments": "general-rule",
+        "chinaSpecificRoute": "not-confirmed",
+        "careerDirections": "official-value",
+        "recognition": "official-value",
+        "tuition": "needs-review",
+        "intake": "official-value",
+        "studyTypeAndArrangement": "official-value"
+      },
+      "reviewReason": "Rendered programme pages were captured; secondary PDFs, downloadable brochures, and official application route screens still need a deeper pass before ready status."
+    },
+    {
+      "candidateCode": "UCSI-MASTER-094",
+      "nameEnOfficial": "MSc In Technopreneurship",
+      "checkedRoutes": [
+        "https://www.ucsiuniversity.edu.my/programmes/msc-technopreneurship",
+        "https://www.ucsiuniversity.edu.my/international-students",
+        "https://www.ucsiuniversity.edu.my/admission-procedure/international/Kuala-lumpur"
+      ],
+      "fields": {
+        "languageRequirement": "official-value",
+        "interviewRequirement": "not-confirmed",
+        "courseSetting": "official-value",
+        "curriculumModules": "official-value",
+        "applicationDocuments": "general-rule",
+        "chinaSpecificRoute": "not-confirmed",
+        "careerDirections": "official-value",
+        "recognition": "official-value",
+        "tuition": "needs-review",
+        "intake": "official-value",
+        "studyTypeAndArrangement": "official-value"
+      },
+      "reviewReason": "Rendered programme pages were captured; secondary PDFs, downloadable brochures, and official application route screens still need a deeper pass before ready status."
+    },
+    {
+      "candidateCode": "UCSI-BACHELOR-095",
+      "nameEnOfficial": "Bachelor Of Computer Science (Honours)",
+      "checkedRoutes": [
+        "https://www.ucsiuniversity.edu.my/programmes/bachelor-computer-science-honours",
+        "https://www.ucsiuniversity.edu.my/international-students",
+        "https://www.ucsiuniversity.edu.my/admission-procedure/international/Kuala-lumpur"
+      ],
+      "fields": {
+        "languageRequirement": "official-value",
+        "interviewRequirement": "not-confirmed",
+        "courseSetting": "official-value",
+        "curriculumModules": "official-value",
+        "applicationDocuments": "general-rule",
+        "chinaSpecificRoute": "not-confirmed",
+        "careerDirections": "official-value",
+        "recognition": "official-value",
+        "tuition": "needs-review",
+        "intake": "official-value",
+        "studyTypeAndArrangement": "official-value"
+      },
+      "reviewReason": "Rendered programme pages were captured; secondary PDFs, downloadable brochures, and official application route screens still need a deeper pass before ready status."
+    },
+    {
+      "candidateCode": "UCSI-BACHELOR-096",
+      "nameEnOfficial": "Bachelor Of Computer Science In Artificial Intelligence With Honours",
+      "checkedRoutes": [
+        "https://www.ucsiuniversity.edu.my/programmes/bachelor-computer-science-artificial-intelligence-honours",
+        "https://www.ucsiuniversity.edu.my/international-students",
+        "https://www.ucsiuniversity.edu.my/admission-procedure/international/Kuala-lumpur"
+      ],
+      "fields": {
+        "languageRequirement": "official-value",
+        "interviewRequirement": "not-confirmed",
+        "courseSetting": "official-value",
+        "curriculumModules": "official-value",
+        "applicationDocuments": "general-rule",
+        "chinaSpecificRoute": "not-confirmed",
+        "careerDirections": "official-value",
+        "recognition": "official-value",
+        "tuition": "needs-review",
+        "intake": "official-value",
+        "studyTypeAndArrangement": "official-value"
+      },
+      "reviewReason": "Rendered programme pages were captured; secondary PDFs, downloadable brochures, and official application route screens still need a deeper pass before ready status."
+    },
+    {
+      "candidateCode": "UCSI-BACHELOR-097",
+      "nameEnOfficial": "Bachelor Of Computer Science In Cyber Security With Honours",
+      "checkedRoutes": [
+        "https://www.ucsiuniversity.edu.my/programmes/bachelor-computer-science-cyber-security-honours",
+        "https://www.ucsiuniversity.edu.my/international-students",
+        "https://www.ucsiuniversity.edu.my/admission-procedure/international/Kuala-lumpur"
+      ],
+      "fields": {
+        "languageRequirement": "official-value",
+        "interviewRequirement": "not-confirmed",
+        "courseSetting": "official-value",
+        "curriculumModules": "official-value",
+        "applicationDocuments": "general-rule",
+        "chinaSpecificRoute": "not-confirmed",
+        "careerDirections": "official-value",
+        "recognition": "official-value",
+        "tuition": "needs-review",
+        "intake": "official-value",
+        "studyTypeAndArrangement": "official-value"
+      },
+      "reviewReason": "Rendered programme pages were captured; secondary PDFs, downloadable brochures, and official application route screens still need a deeper pass before ready status."
+    },
+    {
+      "candidateCode": "UCSI-BACHELOR-098",
+      "nameEnOfficial": "Bachelor Of Computer Science (Hons) Mobile Computing And Networking",
+      "checkedRoutes": [
+        "https://www.ucsiuniversity.edu.my/programmes/bachelor-computer-science-hons-mobile-computing-and-networking",
+        "https://www.ucsiuniversity.edu.my/international-students",
+        "https://www.ucsiuniversity.edu.my/admission-procedure/international/Kuala-lumpur"
+      ],
+      "fields": {
+        "languageRequirement": "official-value",
+        "interviewRequirement": "not-confirmed",
+        "courseSetting": "official-value",
+        "curriculumModules": "official-value",
+        "applicationDocuments": "general-rule",
+        "chinaSpecificRoute": "not-confirmed",
+        "careerDirections": "official-value",
+        "recognition": "official-value",
+        "tuition": "needs-review",
+        "intake": "official-value",
+        "studyTypeAndArrangement": "official-value"
+      },
+      "reviewReason": "Rendered programme pages were captured; secondary PDFs, downloadable brochures, and official application route screens still need a deeper pass before ready status."
+    },
+    {
+      "candidateCode": "UCSI-BACHELOR-099",
+      "nameEnOfficial": "Bachelor Of Computer Science In Data Science With Honours",
+      "checkedRoutes": [
+        "https://www.ucsiuniversity.edu.my/programmes/bachelor-computer-science-data-science-honours",
+        "https://www.ucsiuniversity.edu.my/international-students",
+        "https://www.ucsiuniversity.edu.my/admission-procedure/international/Kuala-lumpur"
+      ],
+      "fields": {
+        "languageRequirement": "official-value",
+        "interviewRequirement": "not-confirmed",
+        "courseSetting": "official-value",
+        "curriculumModules": "official-value",
+        "applicationDocuments": "general-rule",
+        "chinaSpecificRoute": "not-confirmed",
+        "careerDirections": "official-value",
+        "recognition": "official-value",
+        "tuition": "needs-review",
+        "intake": "official-value",
+        "studyTypeAndArrangement": "official-value"
+      },
+      "reviewReason": "Rendered programme pages were captured; secondary PDFs, downloadable brochures, and official application route screens still need a deeper pass before ready status."
+    },
+    {
+      "candidateCode": "UCSI-BACHELOR-100",
+      "nameEnOfficial": "Bachelor Of Science In Business Information Systems (Honours)",
+      "checkedRoutes": [
+        "https://www.ucsiuniversity.edu.my/programmes/bachelor-science-business-information-systems-honours",
+        "https://www.ucsiuniversity.edu.my/international-students",
+        "https://www.ucsiuniversity.edu.my/admission-procedure/international/Kuala-lumpur"
+      ],
+      "fields": {
+        "languageRequirement": "official-value",
+        "interviewRequirement": "not-confirmed",
+        "courseSetting": "official-value",
+        "curriculumModules": "official-value",
+        "applicationDocuments": "general-rule",
+        "chinaSpecificRoute": "not-confirmed",
+        "careerDirections": "official-value",
+        "recognition": "official-value",
+        "tuition": "needs-review",
+        "intake": "official-value",
+        "studyTypeAndArrangement": "official-value"
+      },
+      "reviewReason": "Rendered programme pages were captured; secondary PDFs, downloadable brochures, and official application route screens still need a deeper pass before ready status."
+    },
+    {
+      "candidateCode": "UCSI-PHD-101",
+      "nameEnOfficial": "Doctor Of Philosophy In Music Performance",
+      "checkedRoutes": [
+        "https://www.ucsiuniversity.edu.my/programmes/doctor-philosophy-music-performance",
+        "https://www.ucsiuniversity.edu.my/international-students",
+        "https://www.ucsiuniversity.edu.my/admission-procedure/international/Kuala-lumpur"
+      ],
+      "fields": {
+        "languageRequirement": "official-value",
+        "interviewRequirement": "not-confirmed",
+        "courseSetting": "official-value",
+        "curriculumModules": "official-value",
+        "applicationDocuments": "general-rule",
+        "chinaSpecificRoute": "not-confirmed",
+        "careerDirections": "needs-review",
+        "recognition": "official-value",
+        "tuition": "needs-review",
+        "intake": "official-value",
+        "studyTypeAndArrangement": "official-value"
+      },
+      "reviewReason": "Rendered programme pages were captured; secondary PDFs, downloadable brochures, and official application route screens still need a deeper pass before ready status."
+    },
+    {
+      "candidateCode": "UCSI-PHD-102",
+      "nameEnOfficial": "Doctor Of Philosophy In Music",
+      "checkedRoutes": [
+        "https://www.ucsiuniversity.edu.my/programmes/doctor-philosophy-music",
+        "https://www.ucsiuniversity.edu.my/international-students",
+        "https://www.ucsiuniversity.edu.my/admission-procedure/international/Kuala-lumpur"
+      ],
+      "fields": {
+        "languageRequirement": "official-value",
+        "interviewRequirement": "not-confirmed",
+        "courseSetting": "official-value",
+        "curriculumModules": "official-value",
+        "applicationDocuments": "general-rule",
+        "chinaSpecificRoute": "not-confirmed",
+        "careerDirections": "needs-review",
+        "recognition": "official-value",
+        "tuition": "needs-review",
+        "intake": "official-value",
+        "studyTypeAndArrangement": "official-value"
+      },
+      "reviewReason": "Rendered programme pages were captured; secondary PDFs, downloadable brochures, and official application route screens still need a deeper pass before ready status."
+    },
+    {
+      "candidateCode": "UCSI-MASTER-103",
+      "nameEnOfficial": "Master Of Music (Performance Studies)",
+      "checkedRoutes": [
+        "https://www.ucsiuniversity.edu.my/programmes/mmus-performance-studies",
+        "https://www.ucsiuniversity.edu.my/international-students",
+        "https://www.ucsiuniversity.edu.my/admission-procedure/international/Kuala-lumpur"
+      ],
+      "fields": {
+        "languageRequirement": "official-value",
+        "interviewRequirement": "not-confirmed",
+        "courseSetting": "official-value",
+        "curriculumModules": "official-value",
+        "applicationDocuments": "general-rule",
+        "chinaSpecificRoute": "not-confirmed",
+        "careerDirections": "official-value",
+        "recognition": "official-value",
+        "tuition": "needs-review",
+        "intake": "official-value",
+        "studyTypeAndArrangement": "official-value"
+      },
+      "reviewReason": "Rendered programme pages were captured; secondary PDFs, downloadable brochures, and official application route screens still need a deeper pass before ready status."
+    },
+    {
+      "candidateCode": "UCSI-BACHELOR-104",
+      "nameEnOfficial": "Bachelor Of Classical Music (Hons.)",
+      "checkedRoutes": [
+        "https://www.ucsiuniversity.edu.my/programmes/bachelor-classical-music-hons",
+        "https://www.ucsiuniversity.edu.my/international-students",
+        "https://www.ucsiuniversity.edu.my/admission-procedure/international/Kuala-lumpur"
+      ],
+      "fields": {
+        "languageRequirement": "official-value",
+        "interviewRequirement": "not-confirmed",
+        "courseSetting": "official-value",
+        "curriculumModules": "official-value",
+        "applicationDocuments": "general-rule",
+        "chinaSpecificRoute": "not-confirmed",
+        "careerDirections": "official-value",
+        "recognition": "official-value",
+        "tuition": "needs-review",
+        "intake": "official-value",
+        "studyTypeAndArrangement": "official-value"
+      },
+      "reviewReason": "Rendered programme pages were captured; secondary PDFs, downloadable brochures, and official application route screens still need a deeper pass before ready status."
+    },
+    {
+      "candidateCode": "UCSI-BACHELOR-105",
+      "nameEnOfficial": "Bachelor Of Contemporary Music (Hons.)",
+      "checkedRoutes": [
+        "https://www.ucsiuniversity.edu.my/programmes/bachelor-contemporary-music-hons",
+        "https://www.ucsiuniversity.edu.my/international-students",
+        "https://www.ucsiuniversity.edu.my/admission-procedure/international/Kuala-lumpur"
+      ],
+      "fields": {
+        "languageRequirement": "official-value",
+        "interviewRequirement": "not-confirmed",
+        "courseSetting": "official-value",
+        "curriculumModules": "official-value",
+        "applicationDocuments": "general-rule",
+        "chinaSpecificRoute": "not-confirmed",
+        "careerDirections": "official-value",
+        "recognition": "official-value",
+        "tuition": "needs-review",
+        "intake": "official-value",
+        "studyTypeAndArrangement": "official-value"
+      },
+      "reviewReason": "Rendered programme pages were captured; secondary PDFs, downloadable brochures, and official application route screens still need a deeper pass before ready status."
+    },
+    {
+      "candidateCode": "UCSI-MASTER-106",
+      "nameEnOfficial": "Master Of Science Policy And Communication",
+      "checkedRoutes": [
+        "https://www.ucsiuniversity.edu.my/programmes/master-science-policy-and-communication",
+        "https://www.ucsiuniversity.edu.my/international-students",
+        "https://www.ucsiuniversity.edu.my/admission-procedure/international/Kuala-lumpur"
+      ],
+      "fields": {
+        "languageRequirement": "official-value",
+        "interviewRequirement": "not-confirmed",
+        "courseSetting": "official-value",
+        "curriculumModules": "official-value",
+        "applicationDocuments": "general-rule",
+        "chinaSpecificRoute": "not-confirmed",
+        "careerDirections": "official-value",
+        "recognition": "official-value",
+        "tuition": "needs-review",
+        "intake": "official-value",
+        "studyTypeAndArrangement": "official-value"
+      },
+      "reviewReason": "Rendered programme pages were captured; secondary PDFs, downloadable brochures, and official application route screens still need a deeper pass before ready status."
+    },
+    {
+      "candidateCode": "UCSI-MASTER-107",
+      "nameEnOfficial": "Master In Science Diplomacy",
+      "checkedRoutes": [
+        "https://www.ucsiuniversity.edu.my/programmes/master-science-diplomacy",
+        "https://www.ucsiuniversity.edu.my/international-students",
+        "https://www.ucsiuniversity.edu.my/admission-procedure/international/Kuala-lumpur"
+      ],
+      "fields": {
+        "languageRequirement": "official-value",
+        "interviewRequirement": "not-confirmed",
+        "courseSetting": "official-value",
+        "curriculumModules": "official-value",
+        "applicationDocuments": "general-rule",
+        "chinaSpecificRoute": "not-confirmed",
+        "careerDirections": "official-value",
+        "recognition": "official-value",
+        "tuition": "needs-review",
+        "intake": "official-value",
+        "studyTypeAndArrangement": "official-value"
+      },
+      "reviewReason": "Rendered programme pages were captured; secondary PDFs, downloadable brochures, and official application route screens still need a deeper pass before ready status."
+    },
+    {
+      "candidateCode": "UCSI-MASTER-108",
+      "nameEnOfficial": "Master In Environmental, Social And Governance Leadership",
+      "checkedRoutes": [
+        "https://www.ucsiuniversity.edu.my/programmes/master-environmental-social-and-governance-leadership",
+        "https://www.ucsiuniversity.edu.my/international-students",
+        "https://www.ucsiuniversity.edu.my/admission-procedure/international/Kuala-lumpur"
+      ],
+      "fields": {
+        "languageRequirement": "official-value",
+        "interviewRequirement": "not-confirmed",
+        "courseSetting": "official-value",
+        "curriculumModules": "official-value",
+        "applicationDocuments": "general-rule",
+        "chinaSpecificRoute": "not-confirmed",
+        "careerDirections": "official-value",
+        "recognition": "official-value",
+        "tuition": "needs-review",
+        "intake": "official-value",
+        "studyTypeAndArrangement": "official-value"
+      },
+      "reviewReason": "Rendered programme pages were captured; secondary PDFs, downloadable brochures, and official application route screens still need a deeper pass before ready status."
+    },
+    {
+      "candidateCode": "UCSI-MASTER-109",
+      "nameEnOfficial": "Master Of Business Administration (Blue Ocean Strategy)",
+      "checkedRoutes": [
+        "https://www.ucsiuniversity.edu.my/programmes/master-business-administration-blue-ocean-strategy",
+        "https://www.ucsiuniversity.edu.my/international-students",
+        "https://www.ucsiuniversity.edu.my/admission-procedure/international/Kuala-lumpur"
+      ],
+      "fields": {
+        "languageRequirement": "official-value",
+        "interviewRequirement": "not-confirmed",
+        "courseSetting": "official-value",
+        "curriculumModules": "official-value",
+        "applicationDocuments": "general-rule",
+        "chinaSpecificRoute": "not-confirmed",
+        "careerDirections": "official-value",
+        "recognition": "official-value",
+        "tuition": "needs-review",
+        "intake": "official-value",
+        "studyTypeAndArrangement": "official-value"
+      },
+      "reviewReason": "Rendered programme pages were captured; secondary PDFs, downloadable brochures, and official application route screens still need a deeper pass before ready status."
+    },
+    {
+      "candidateCode": "UCSI-BACHELOR-110",
+      "nameEnOfficial": "Bachelor In Business Management (Honours)",
+      "checkedRoutes": [
+        "https://www.ucsiuniversity.edu.my/programmes/bachelor-business-management-honours",
+        "https://www.ucsiuniversity.edu.my/international-students",
+        "https://www.ucsiuniversity.edu.my/admission-procedure/international/Kuala-lumpur"
+      ],
+      "fields": {
+        "languageRequirement": "official-value",
+        "interviewRequirement": "not-confirmed",
+        "courseSetting": "official-value",
+        "curriculumModules": "official-value",
+        "applicationDocuments": "general-rule",
+        "chinaSpecificRoute": "not-confirmed",
+        "careerDirections": "official-value",
+        "recognition": "official-value",
+        "tuition": "needs-review",
+        "intake": "official-value",
+        "studyTypeAndArrangement": "official-value"
+      },
+      "reviewReason": "Rendered programme pages were captured; secondary PDFs, downloadable brochures, and official application route screens still need a deeper pass before ready status."
+    },
+    {
+      "candidateCode": "UCSI-BACHELOR-111",
+      "nameEnOfficial": "Bachelor In International Business (Honours)",
+      "checkedRoutes": [
+        "https://www.ucsiuniversity.edu.my/programmes/bachelor-international-business-honours",
+        "https://www.ucsiuniversity.edu.my/international-students",
+        "https://www.ucsiuniversity.edu.my/admission-procedure/international/Kuala-lumpur"
+      ],
+      "fields": {
+        "languageRequirement": "official-value",
+        "interviewRequirement": "not-confirmed",
+        "courseSetting": "official-value",
+        "curriculumModules": "official-value",
+        "applicationDocuments": "general-rule",
+        "chinaSpecificRoute": "not-confirmed",
+        "careerDirections": "official-value",
+        "recognition": "official-value",
+        "tuition": "needs-review",
+        "intake": "official-value",
+        "studyTypeAndArrangement": "official-value"
+      },
+      "reviewReason": "Rendered programme pages were captured; secondary PDFs, downloadable brochures, and official application route screens still need a deeper pass before ready status."
+    },
+    {
+      "candidateCode": "UCSI-BACHELOR-112",
+      "nameEnOfficial": "Bachelor Of Commerce (Hons) In Accounting And Finance",
+      "checkedRoutes": [
+        "https://www.ucsiuniversity.edu.my/programmes/bachelor-commerce-hons-accounting-and-finance-kuching-campus",
+        "https://www.ucsiuniversity.edu.my/international-students",
+        "https://www.ucsiuniversity.edu.my/admission-procedure/international/Kuala-lumpur"
+      ],
+      "fields": {
+        "languageRequirement": "official-value",
+        "interviewRequirement": "not-confirmed",
+        "courseSetting": "official-value",
+        "curriculumModules": "official-value",
+        "applicationDocuments": "general-rule",
+        "chinaSpecificRoute": "not-confirmed",
+        "careerDirections": "official-value",
+        "recognition": "official-value",
+        "tuition": "needs-review",
+        "intake": "official-value",
+        "studyTypeAndArrangement": "official-value"
+      },
+      "reviewReason": "Rendered programme pages were captured; secondary PDFs, downloadable brochures, and official application route screens still need a deeper pass before ready status."
+    },
+    {
+      "candidateCode": "UCSI-BACHELOR-113",
+      "nameEnOfficial": "Bachelor Of Commerce (Hons) In Marketing",
+      "checkedRoutes": [
+        "https://www.ucsiuniversity.edu.my/programmes/bachelor-commerce-hons-marketing",
+        "https://www.ucsiuniversity.edu.my/international-students",
+        "https://www.ucsiuniversity.edu.my/admission-procedure/international/Kuala-lumpur"
+      ],
+      "fields": {
+        "languageRequirement": "official-value",
+        "interviewRequirement": "not-confirmed",
+        "courseSetting": "official-value",
+        "curriculumModules": "official-value",
+        "applicationDocuments": "general-rule",
+        "chinaSpecificRoute": "not-confirmed",
+        "careerDirections": "official-value",
+        "recognition": "official-value",
+        "tuition": "needs-review",
+        "intake": "official-value",
+        "studyTypeAndArrangement": "official-value"
+      },
+      "reviewReason": "Rendered programme pages were captured; secondary PDFs, downloadable brochures, and official application route screens still need a deeper pass before ready status."
+    },
+    {
+      "candidateCode": "UCSI-BACHELOR-114",
+      "nameEnOfficial": "Bachelor Of Arts (Honours) In Culinary Management",
+      "checkedRoutes": [
+        "https://www.ucsiuniversity.edu.my/programmes/bachelor-arts-honours-culinary-management-kuching-campus",
+        "https://www.ucsiuniversity.edu.my/international-students",
+        "https://www.ucsiuniversity.edu.my/admission-procedure/international/Kuala-lumpur"
+      ],
+      "fields": {
+        "languageRequirement": "official-value",
+        "interviewRequirement": "not-confirmed",
+        "courseSetting": "official-value",
+        "curriculumModules": "official-value",
+        "applicationDocuments": "general-rule",
+        "chinaSpecificRoute": "not-confirmed",
+        "careerDirections": "official-value",
+        "recognition": "official-value",
+        "tuition": "needs-review",
+        "intake": "official-value",
+        "studyTypeAndArrangement": "official-value"
+      },
+      "reviewReason": "Rendered programme pages were captured; secondary PDFs, downloadable brochures, and official application route screens still need a deeper pass before ready status."
+    },
+    {
+      "candidateCode": "UCSI-PHD-115",
+      "nameEnOfficial": "Doctor Of Philosophy (Medical Sciences)",
+      "checkedRoutes": [
+        "https://www.ucsiuniversity.edu.my/programmes/doctor-philosophy-medical-sciences",
+        "https://www.ucsiuniversity.edu.my/international-students",
+        "https://www.ucsiuniversity.edu.my/admission-procedure/international/Kuala-lumpur"
+      ],
+      "fields": {
+        "languageRequirement": "official-value",
+        "interviewRequirement": "not-confirmed",
+        "courseSetting": "official-value",
+        "curriculumModules": "official-value",
+        "applicationDocuments": "general-rule",
+        "chinaSpecificRoute": "not-confirmed",
+        "careerDirections": "official-value",
+        "recognition": "official-value",
+        "tuition": "needs-review",
+        "intake": "official-value",
+        "studyTypeAndArrangement": "official-value"
+      },
+      "reviewReason": "Rendered programme pages were captured; secondary PDFs, downloadable brochures, and official application route screens still need a deeper pass before ready status."
+    },
+    {
+      "candidateCode": "UCSI-BACHELOR-116",
+      "nameEnOfficial": "Doctor Of Medicine (MD)",
+      "checkedRoutes": [
+        "https://www.ucsiuniversity.edu.my/programmes/doctor-medicine-md",
+        "https://www.ucsiuniversity.edu.my/international-students",
+        "https://www.ucsiuniversity.edu.my/admission-procedure/international/Kuala-lumpur"
+      ],
+      "fields": {
+        "languageRequirement": "official-value",
+        "interviewRequirement": "not-confirmed",
+        "courseSetting": "official-value",
+        "curriculumModules": "official-value",
+        "applicationDocuments": "general-rule",
+        "chinaSpecificRoute": "not-confirmed",
+        "careerDirections": "official-value",
+        "recognition": "official-value",
+        "tuition": "needs-review",
+        "intake": "official-value",
+        "studyTypeAndArrangement": "official-value"
+      },
+      "reviewReason": "Rendered programme pages were captured; secondary PDFs, downloadable brochures, and official application route screens still need a deeper pass before ready status."
+    },
+    {
+      "candidateCode": "UCSI-BACHELOR-117",
+      "nameEnOfficial": "Bachelor Of Nursing (Hons)",
+      "checkedRoutes": [
+        "https://www.ucsiuniversity.edu.my/programmes/bachelor-nursing-hons",
+        "https://www.ucsiuniversity.edu.my/international-students",
+        "https://www.ucsiuniversity.edu.my/admission-procedure/international/Kuala-lumpur"
+      ],
+      "fields": {
+        "languageRequirement": "official-value",
+        "interviewRequirement": "not-confirmed",
+        "courseSetting": "official-value",
+        "curriculumModules": "official-value",
+        "applicationDocuments": "general-rule",
+        "chinaSpecificRoute": "not-confirmed",
+        "careerDirections": "official-value",
+        "recognition": "official-value",
+        "tuition": "needs-review",
+        "intake": "official-value",
+        "studyTypeAndArrangement": "official-value"
+      },
+      "reviewReason": "Rendered programme pages were captured; secondary PDFs, downloadable brochures, and official application route screens still need a deeper pass before ready status."
+    },
+    {
+      "candidateCode": "UCSI-BACHELOR-118",
+      "nameEnOfficial": "Bachelor Of Arts (Honours) In Hospitality Management",
+      "checkedRoutes": [
+        "https://www.ucsiuniversity.edu.my/programmes/bachelor-arts-honours-hospitality-management",
+        "https://www.ucsiuniversity.edu.my/international-students",
+        "https://www.ucsiuniversity.edu.my/admission-procedure/international/Kuala-lumpur"
+      ],
+      "fields": {
+        "languageRequirement": "official-value",
+        "interviewRequirement": "not-confirmed",
+        "courseSetting": "official-value",
+        "curriculumModules": "official-value",
+        "applicationDocuments": "general-rule",
+        "chinaSpecificRoute": "not-confirmed",
+        "careerDirections": "official-value",
+        "recognition": "official-value",
+        "tuition": "needs-review",
+        "intake": "official-value",
+        "studyTypeAndArrangement": "official-value"
+      },
+      "reviewReason": "Rendered programme pages were captured; secondary PDFs, downloadable brochures, and official application route screens still need a deeper pass before ready status."
+    }
+  ]
+}

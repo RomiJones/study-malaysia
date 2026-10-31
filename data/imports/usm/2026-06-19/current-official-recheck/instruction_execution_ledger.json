@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-06-19T06:35:39.701Z",
+  "items": [
+    {
+      "id": "user-usm-recheck",
+      "instruction": "对理科大学 USM 进行校对和补充完善",
+      "scope": "run",
+      "status": "completed",
+      "evidence": "data/imports/usm/2026-06-19/current-official-recheck/reports/acceptance_recheck.json"
+    },
+    {
+      "id": "use-skill",
+      "instruction": "使用 studymy-official-university-collector skill 与标准化流程",
+      "scope": "workflow",
+      "status": "completed",
+      "evidence": "Skill instructions and required references read before implementation."
+    },
+    {
+      "id": "read-agents",
+      "instruction": "读取 AGENTS.md",
+      "scope": "workflow",
+      "status": "completed",
+      "evidence": "AGENTS.md read in session."
+    },
+    {
+      "id": "read-task-prd-td",
+      "instruction": "读取中文任务页、PRD 与技术方案",
+      "scope": "workflow",
+      "status": "completed",
+      "evidence": "docs/prd/USM-all-level-official-publication-audit.md; docs/prd/USM-commercial-release-workflow.md; docs/prd/USM-master-official-collection-technical-design.md; docs/prd/USM-phd-official-collection-technical-design.md"
+    },
+    {
+      "id": "one-task-only",
+      "instruction": "只实现一个任务",
+      "scope": "workflow",
+      "status": "completed",
+      "evidence": "Implemented one USM current official recheck/display parity task."
+    },
+    {
+      "id": "official-current-source",
+      "instruction": "复核当前官方来源",
+      "scope": "source",
+      "status": "completed",
+      "evidence": "data/imports/usm/2026-06-19/current-official-recheck/source_cache_index.json"
+    },
+    {
+      "id": "candidate-db-api-ui-gates",
+      "instruction": "运行候选、数据库、API、测试、构建和四语页面门禁",
+      "scope": "verification",
+      "status": "completed",
+      "evidence": "tmp/reports/usm-commercial-release-gate-20260619-usm-recheck-final2.json"
+    },
+    {
+      "id": "notion-update",
+      "instruction": "更新中文开发 notes 或说明 Notion 未更新",
+      "scope": "documentation",
+      "status": "completed",
+      "evidence": "docs/notion-snapshot/开发进度日志.md; Notion not writable."
+    },
+    {
+      "id": "commit-after-verification",
+      "instruction": "验证通过后提交",
+      "scope": "git",
+      "status": "blocked",
+      "evidence": "Working tree had extensive pre-existing unrelated modifications, including files touched by this recheck; no safe focused commit was created without risking unrelated user changes."
+    }
+  ]
+}

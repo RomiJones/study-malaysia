@@ -1,0 +1,122 @@
+{
+  "blocking": [],
+  "resolved": [
+    {
+      "id": "ucsi-source-url-about-blank",
+      "scope": "source-trace",
+      "affectedCount": 118,
+      "resolution": "Generator now writes the official detail target URL instead of Playwright page.url() during cache replay."
+    },
+    {
+      "id": "ucsi-postgraduate-office-hash-anchor-false-positive",
+      "scope": "identity",
+      "affectedCount": 1,
+      "resolution": "Directory parser filters page-internal #collapse anchors; the pseudo-candidate was removed from the canonical count."
+    }
+  ],
+  "review": [
+    {
+      "id": "ucsi-fee-reconciliation",
+      "scope": "field",
+      "affectedCount": 118,
+      "classificationCounts": {
+        "needs-manual-table-review": 113,
+        "fee-like-ambiguous": 5
+      },
+      "reason": "Official RM snippets exist, but exact international full-duration tuition has not been reconciled against fee table basis, applicant scope, and variants.",
+      "nextAction": "Follow official fee panels, brochures, PDFs, or application-route fee screens and map a unique international full-duration tuition value only when the source is exact."
+    },
+    {
+      "id": "ucsi-international-eligibility",
+      "scope": "field",
+      "affectedCount": 118,
+      "classificationCounts": {
+        "general-route-plus-programme-requirement-evidence": 115,
+        "general-route-only": 3
+      },
+      "reason": "Institution-level international admission evidence exists, but programme-level international availability remains unclosed.",
+      "nextAction": "Verify each candidate through official international application/admissions route evidence before ready status."
+    },
+    {
+      "id": "ucsi-language-requirement-missing",
+      "scope": "field",
+      "affectedCount": 3,
+      "records": [
+        {
+          "code": "UCSI-PHD-019",
+          "level": "phd",
+          "nameEnOfficial": "Doctor Of Philosophy (Science) By Prior Publication",
+          "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/doctor-philosophy-science-prior-publication",
+          "sourceId": "detail-019-item"
+        },
+        {
+          "code": "UCSI-BACHELOR-052",
+          "level": "bachelor",
+          "nameEnOfficial": "Bachelor Of Mechatronics Engineering With Honours",
+          "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-mechatronics-engineering-honours",
+          "sourceId": "detail-052-item"
+        },
+        {
+          "code": "UCSI-BACHELOR-073",
+          "level": "bachelor",
+          "nameEnOfficial": "Bachelor Of Pharmacy (Honours)",
+          "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-pharmacy-honours",
+          "sourceId": "detail-073-item"
+        }
+      ],
+      "reason": "Rendered detail page did not expose English language requirements for these records.",
+      "nextAction": "Check linked official subpages, brochures, PDFs, and admissions pages before marking unpublished."
+    },
+    {
+      "id": "ucsi-career-directions-missing",
+      "scope": "field",
+      "affectedCount": 5,
+      "records": [
+        {
+          "code": "UCSI-MASTER-003",
+          "level": "master",
+          "nameEnOfficial": "MBA",
+          "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/mba",
+          "sourceId": "detail-003-item"
+        },
+        {
+          "code": "UCSI-MASTER-004",
+          "level": "master",
+          "nameEnOfficial": "MBA (ODL Mode)",
+          "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/mba-odl-mode",
+          "sourceId": "detail-004-item"
+        },
+        {
+          "code": "UCSI-MASTER-083",
+          "level": "master",
+          "nameEnOfficial": "Master Of Arts And Design",
+          "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/master-arts-and-design",
+          "sourceId": "detail-083-item"
+        },
+        {
+          "code": "UCSI-PHD-101",
+          "level": "phd",
+          "nameEnOfficial": "Doctor Of Philosophy In Music Performance",
+          "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/doctor-philosophy-music-performance",
+          "sourceId": "detail-101-item"
+        },
+        {
+          "code": "UCSI-PHD-102",
+          "level": "phd",
+          "nameEnOfficial": "Doctor Of Philosophy In Music",
+          "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/doctor-philosophy-music",
+          "sourceId": "detail-102-item"
+        }
+      ],
+      "reason": "Rendered detail page did not expose career directions for these records.",
+      "nextAction": "Check brochures, faculty pages, and programme linked resources before marking unpublished."
+    },
+    {
+      "id": "ucsi-localization",
+      "scope": "display",
+      "affectedCount": 118,
+      "reason": "Chinese/Traditional Chinese/Malay student-facing localization has not been finalized; official English evidence must not be copied directly into public Chinese pages.",
+      "nextAction": "Localize course setting, careers, requirement summaries, intake, fee notes, and official source labels only after fee and eligibility facts are stable."
+    }
+  ]
+}

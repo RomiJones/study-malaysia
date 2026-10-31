@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "institutionIdentifier": "Monash University Malaysia",
+  "universityCode": "MUM",
+  "shortName": "MUM",
+  "collectionScope": "full",
+  "levels": [
+    "bachelor",
+    "master",
+    "phd"
+  ],
+  "applicantScope": "international",
+  "authorization": "collect",
+  "academicSession": "current-official-session-to-discover",
+  "currentAsOf": "2026-06-19",
+  "taskInstruction": "采集统计莫纳什大学马来西亚校区的本硕博专业信息，使用 StudyMY official university collector skill 和验收标准，严格执行；仅采集统计，不入库不发布。",
+  "officialDomains": [],
+  "status": "initialized",
+  "notes": [
+    "Discover official name, domains, session, and programme counts from official sources.",
+    "Do not mark candidates ready until required gates pass."
+  ]
+}

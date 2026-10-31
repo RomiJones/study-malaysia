@@ -29,6 +29,8 @@ import { FavoritesController } from "./favorites/favorites.controller.js";
 import { FavoritesService } from "./favorites/favorites.service.js";
 import { CompareController } from "./compare/compare.controller.js";
 import { CompareService } from "./compare/compare.service.js";
+import { ApplicationsController } from "./applications/applications.controller.js";
+import { ApplicationsService } from "./applications/applications.service.js";
 import { CatalogController } from "./catalog/catalog.controller.js";
 import { AdminController } from "./admin/admin.controller.js";
 import { AdminAuthController } from "./admin/admin-auth.controller.js";
@@ -37,6 +39,7 @@ import { AdminAccessController } from "./admin/admin-access.controller.js";
 import { AdminAccessService } from "./admin/admin-access.service.js";
 import { AdminCmsService } from "./admin/admin-cms.service.js";
 import { AdminApplicationsService } from "./admin/admin-applications.service.js";
+import { AdminRecommendationsService } from "./admin/admin-recommendations.service.js";
 import { AdminSettingsService } from "./admin/admin-settings.service.js";
 import { AdminLogService } from "./admin/admin-log.service.js";
 import { QualityEngineService } from "./admin/quality-engine.service.js";
@@ -83,6 +86,7 @@ loadEnvFiles();
     PlannerController,
     FavoritesController,
     CompareController,
+    ApplicationsController,
     CatalogController,
     AdminController,
     FeeReviewController,
@@ -104,10 +108,12 @@ loadEnvFiles();
     PlannerService,
     FavoritesService,
     CompareService,
+    ApplicationsService,
     AdminAuthService,
     AdminAccessService,
     AdminCmsService,
     AdminApplicationsService,
+    AdminRecommendationsService,
     AdminSettingsService,
     AdminLogService,
     QualityEngineService,

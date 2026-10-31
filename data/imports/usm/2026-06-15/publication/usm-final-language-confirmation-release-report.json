@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "gate": "usm-commercial-release",
-  "startedAt": "2026-06-16T09:59:54.523Z",
+  "startedAt": "2026-06-16T11:33:12.120Z",
   "apiUrl": "http://127.0.0.1:3000/api/universities/universiti-sains-malaysia-usm",
   "webUrl": "http://127.0.0.1:5173/universities/universiti-sains-malaysia-usm",
   "checks": [
@@ -82,5 +82,5 @@
   ],
   "status": "passed",
   "decision": "commercial-release-ready",
-  "finishedAt": "2026-06-16T10:00:16.402Z"
+  "finishedAt": "2026-06-16T11:33:34.192Z"
 }

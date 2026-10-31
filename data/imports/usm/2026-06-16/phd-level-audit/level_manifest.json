@@ -1,0 +1,1009 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-06-16T15:28:44Z",
+  "runMode": "collect-audit-no-import",
+  "institution": {
+    "code": "USM",
+    "name": "Universiti Sains Malaysia"
+  },
+  "level": "phd",
+  "applicantScope": "international",
+  "officialLevelSource": {
+    "url": "https://admission.usm.my/index.php/postgraduate/programmes",
+    "role": "official-postgraduate-programme-directory",
+    "lastKnownOfficialPageUpdate": "Friday 12 June 2026 from task snapshot"
+  },
+  "sourceCandidate": "data/imports/usm/2026-06-14/phd-candidate.json",
+  "officialSource": "data/imports/usm/2026-06-14/phd-official-source.json",
+  "officialCounts": {
+    "currentOfficialDoctoralCatalogueRows": 95,
+    "currentOfficialUniqueUrls": 91,
+    "candidateRecords": 95,
+    "modeCounts": {
+      "mixed": 6,
+      "online": 1,
+      "coursework": 6,
+      "research": 82
+    },
+    "statusCounts": {
+      "ready": 93,
+      "not-available-for-international": 2
+    },
+    "feeStatusCounts": {
+      "verified-current-official-fee": 13,
+      "official-rate-only": 62,
+      "official-unpublished": 20
+    },
+    "academicRequirementStatusCounts": {
+      "official-programme-page-refreshed-2026-06-16": 21,
+      "general-rule": 24,
+      "programme-specific": 50
+    },
+    "languageRequirementStatusCounts": {
+      "official-programme-page-refreshed-2026-06-16": 19,
+      "general-rule": 26,
+      "programme-specific": 50
+    },
+    "durationStatusCounts": {
+      "official-programme-page-refreshed-2026-06-16": 1,
+      "programme-specific": 67,
+      "general-rule": 27
+    },
+    "intakeStatusCounts": {
+      "programme-specific": 23,
+      "official-unpublished": 72
+    }
+  },
+  "programmeOrder": [
+    {
+      "order": 1,
+      "code": "USM-PHD-ARTICLE-340-F6B2DBBE",
+      "detailCode": "USM-PG-ARTICLE-340",
+      "officialName": "DOCTOR OF BUSINESS ADMINISTRATION (DBA)",
+      "faculty": "Graduate School of Business",
+      "studyMode": "mixed",
+      "officialUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=340&catid=53",
+      "collectionStatus": "candidate-present"
+    },
+    {
+      "order": 2,
+      "code": "USM-PHD-ARTICLE-336-17719538",
+      "detailCode": "USM-PG-ARTICLE-336",
+      "officialName": "DOCTOR OF BUSINESS ADMINISTRATION (E-DBA)",
+      "faculty": "Graduate School of Business",
+      "studyMode": "online",
+      "officialUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=336&catid=53",
+      "collectionStatus": "candidate-present"
+    },
+    {
+      "order": 3,
+      "code": "USM-PHD-ARTICLE-348-5EFB3077",
+      "detailCode": "USM-PG-ARTICLE-348",
+      "officialName": "DOCTOR OF EDUCATION IN CURRICULUM & INSTRUCTION *MALAYSIAN CANDIDATE ONLY",
+      "faculty": "School of Educational Studies",
+      "studyMode": "coursework",
+      "officialUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=348&catid=53",
+      "collectionStatus": "candidate-present"
+    },
+    {
+      "order": 4,
+      "code": "USM-PHD-ARTICLE-347-47B82317",
+      "detailCode": "USM-PG-ARTICLE-347",
+      "officialName": "DOCTOR OF EDUCATION IN EDUCATIONAL TECHNOLOGY & MULTIMEDIA",
+      "faculty": "School of Educational Studies",
+      "studyMode": "coursework",
+      "officialUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=347&catid=53",
+      "collectionStatus": "candidate-present"
+    },
+    {
+      "order": 5,
+      "code": "USM-PHD-ARTICLE-346-76524312",
+      "detailCode": "USM-PG-ARTICLE-346",
+      "officialName": "DOCTOR OF EDUCATION IN SCIENCE EDUCATION",
+      "faculty": "School of Educational Studies",
+      "studyMode": "coursework",
+      "officialUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=346&catid=53",
+      "collectionStatus": "candidate-present"
+    },
+    {
+      "order": 6,
+      "code": "USM-PHD-ARTICLE-349-8BE97FAD",
+      "detailCode": "USM-PG-ARTICLE-349",
+      "officialName": "DOCTOR OF EDUCATION IN TESOL - MALAYSIAN CANDIDATE ONLY",
+      "faculty": "School of Educational Studies",
+      "studyMode": "coursework",
+      "officialUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=349&catid=53",
+      "collectionStatus": "candidate-present"
+    },
+    {
+      "order": 7,
+      "code": "USM-PHD-ARTICLE-413-F4FF207B",
+      "detailCode": "USM-PG-ARTICLE-413",
+      "officialName": "DOCTOR OF NEUROSCIENCE",
+      "faculty": "School of Medical Sciences",
+      "studyMode": "mixed",
+      "officialUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=413&catid=55",
+      "collectionStatus": "candidate-present"
+    },
+    {
+      "order": 8,
+      "code": "USM-PHD-ARTICLE-202-F908C6C4",
+      "detailCode": "USM-PG-ARTICLE-202",
+      "officialName": "DOCTOR OF PHILOSOPHY (ARCHITECTURE)",
+      "faculty": "School of Housing, Building and Planning",
+      "studyMode": "research",
+      "officialUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=202&catid=51",
+      "collectionStatus": "candidate-present"
+    },
+    {
+      "order": 9,
+      "code": "USM-PHD-ARTICLE-557-7081B653",
+      "detailCode": "USM-PG-ARTICLE-557",
+      "officialName": "DOCTOR OF PHILOSOPHY (BIOMEDICINE)",
+      "faculty": "School of Health Sciences",
+      "studyMode": "research",
+      "officialUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=557&catid=55",
+      "collectionStatus": "candidate-present"
+    },
+    {
+      "order": 10,
+      "code": "USM-PHD-ARTICLE-246-D78D9DD2",
+      "detailCode": "USM-PG-ARTICLE-246",
+      "officialName": "DOCTOR OF PHILOSOPHY (BUILDING SURVEYING)",
+      "faculty": "School of Housing, Building and Planning",
+      "studyMode": "research",
+      "officialUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=246&catid=51",
+      "collectionStatus": "candidate-present"
+    },
+    {
+      "order": 11,
+      "code": "USM-PHD-ARTICLE-200-2C6B8775",
+      "detailCode": "USM-PG-ARTICLE-200",
+      "officialName": "DOCTOR OF PHILOSOPHY (BUILDING TECHNOLOGY)",
+      "faculty": "School of Housing, Building and Planning",
+      "studyMode": "research",
+      "officialUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=200&catid=51",
+      "collectionStatus": "candidate-present"
+    },
+    {
+      "order": 12,
+      "code": "USM-PHD-ARTICLE-167-A219BB23",
+      "detailCode": "USM-PG-ARTICLE-167",
+      "officialName": "DOCTOR OF PHILOSOPHY (DUAL PHD KEELE UNIVERSITY,UK)",
+      "faculty": "School of Biological Sciences",
+      "studyMode": "research",
+      "officialUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=167&catid=50",
+      "collectionStatus": "candidate-present"
+    },
+    {
+      "order": 13,
+      "code": "USM-PHD-ARTICLE-153-1C328CB2",
+      "detailCode": "USM-PG-ARTICLE-153",
+      "officialName": "DOCTOR OF PHILOSOPHY (DUAL PHD NATIONAL TSING HUA UNIVERSITY,TAIWAN)",
+      "faculty": "School of Chemical Sciences",
+      "studyMode": "research",
+      "officialUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=153&catid=50",
+      "collectionStatus": "candidate-present"
+    },
+    {
+      "order": 14,
+      "code": "USM-PHD-ARTICLE-390-61D17A58",
+      "detailCode": "USM-PG-ARTICLE-390",
+      "officialName": "DOCTOR OF PHILOSOPHY (ENGINEERING CAMPUS)",
+      "faculty": "River Engineering and Urban Drainage Research Centre",
+      "studyMode": "research",
+      "officialUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=390&catid=54",
+      "collectionStatus": "candidate-present"
+    },
+    {
+      "order": 15,
+      "code": "USM-PHD-ARTICLE-392-11B9FC72",
+      "detailCode": "USM-PG-ARTICLE-392",
+      "officialName": "DOCTOR OF PHILOSOPHY (ENGINEERING CAMPUS)",
+      "faculty": "School of Aerospace Engineering",
+      "studyMode": "research",
+      "officialUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=392&catid=54",
+      "collectionStatus": "candidate-present"
+    },
+    {
+      "order": 16,
+      "code": "USM-PHD-ARTICLE-395-92654AFA",
+      "detailCode": "USM-PG-ARTICLE-395",
+      "officialName": "DOCTOR OF PHILOSOPHY (ENGINEERING CAMPUS)",
+      "faculty": "School of Chemical Engineering",
+      "studyMode": "research",
+      "officialUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=395&catid=54",
+      "collectionStatus": "candidate-present"
+    },
+    {
+      "order": 17,
+      "code": "USM-PHD-ARTICLE-402-9D4FB379",
+      "detailCode": "USM-PG-ARTICLE-402",
+      "officialName": "DOCTOR OF PHILOSOPHY (ENGINEERING CAMPUS)",
+      "faculty": "School of Civil Engineering",
+      "studyMode": "research",
+      "officialUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=402&catid=54",
+      "collectionStatus": "candidate-present"
+    },
+    {
+      "order": 18,
+      "code": "USM-PHD-ARTICLE-403-02497E18",
+      "detailCode": "USM-PG-ARTICLE-403",
+      "officialName": "DOCTOR OF PHILOSOPHY (ENGINEERING CAMPUS)",
+      "faculty": "School of Electrical and Electronic Engineering",
+      "studyMode": "research",
+      "officialUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=403&catid=54",
+      "collectionStatus": "candidate-present"
+    },
+    {
+      "order": 19,
+      "code": "USM-PHD-ARTICLE-407-B0241583",
+      "detailCode": "USM-PG-ARTICLE-407",
+      "officialName": "DOCTOR OF PHILOSOPHY (ENGINEERING CAMPUS)",
+      "faculty": "School of Materials and Mineral Resources Engineering",
+      "studyMode": "research",
+      "officialUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=407&catid=54",
+      "collectionStatus": "candidate-present"
+    },
+    {
+      "order": 20,
+      "code": "USM-PHD-ARTICLE-404-31FB99DD",
+      "detailCode": "USM-PG-ARTICLE-404",
+      "officialName": "DOCTOR OF PHILOSOPHY (ENGINEERING CAMPUS)",
+      "faculty": "School of Mechanical Engineering",
+      "studyMode": "research",
+      "officialUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=404&catid=54",
+      "collectionStatus": "candidate-present"
+    },
+    {
+      "order": 21,
+      "code": "USM-PHD-ARTICLE-558-1A7EF8A8",
+      "detailCode": "USM-PG-ARTICLE-558",
+      "officialName": "DOCTOR OF PHILOSOPHY (FORENSIC SCIENCE)",
+      "faculty": "School of Health Sciences",
+      "studyMode": "research",
+      "officialUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=558&catid=55",
+      "collectionStatus": "candidate-present"
+    },
+    {
+      "order": 22,
+      "code": "USM-PHD-ARTICLE-555-1399FD12",
+      "detailCode": "USM-PG-ARTICLE-555",
+      "officialName": "DOCTOR OF PHILOSOPHY (HEALTH CAMPUS)",
+      "faculty": "School of Dental Sciences",
+      "studyMode": "research",
+      "officialUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=555&catid=55",
+      "collectionStatus": "candidate-present"
+    },
+    {
+      "order": 23,
+      "code": "USM-PHD-ARTICLE-807-331F9B3B",
+      "detailCode": "USM-PG-ARTICLE-807",
+      "officialName": "DOCTOR OF PHILOSOPHY (HEALTH CAMPUS)",
+      "faculty": "School of Medical Sciences",
+      "studyMode": "research",
+      "officialUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=807&catid=55",
+      "collectionStatus": "candidate-present"
+    },
+    {
+      "order": 24,
+      "code": "USM-PHD-ARTICLE-233-F8F04AED",
+      "detailCode": "USM-PG-ARTICLE-233",
+      "officialName": "DOCTOR OF PHILOSOPHY (HOUSING)",
+      "faculty": "School of Housing, Building and Planning",
+      "studyMode": "research",
+      "officialUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=233&catid=51",
+      "collectionStatus": "candidate-present"
+    },
+    {
+      "order": 25,
+      "code": "USM-PHD-ARTICLE-234-A49B2AC1",
+      "detailCode": "USM-PG-ARTICLE-234",
+      "officialName": "DOCTOR OF PHILOSOPHY (INTERIOR DESIGN)",
+      "faculty": "School of Housing, Building and Planning",
+      "studyMode": "research",
+      "officialUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=234&catid=51",
+      "collectionStatus": "candidate-present"
+    },
+    {
+      "order": 26,
+      "code": "USM-PHD-ARTICLE-888-ABF3CB0A",
+      "detailCode": "USM-PG-ARTICLE-888",
+      "officialName": "DOCTOR OF PHILOSOPHY (JOINT PHD NEW CASTLE UNIVERSITY, UNITED KINGDOM)",
+      "faculty": "Pusat Kanser Tun Abdullah Ahmad Badawi",
+      "studyMode": "research",
+      "officialUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=888&catid=55",
+      "collectionStatus": "candidate-present"
+    },
+    {
+      "order": 27,
+      "code": "USM-PHD-ARTICLE-244-F4A13D11",
+      "detailCode": "USM-PG-ARTICLE-244",
+      "officialName": "DOCTOR OF PHILOSOPHY (MAIN CAMPUS)",
+      "faculty": "Analytical Biochemistry Research Centre",
+      "studyMode": "research",
+      "officialUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=244&catid=51",
+      "collectionStatus": "candidate-present"
+    },
+    {
+      "order": 28,
+      "code": "USM-PHD-ARTICLE-169-C35B2022",
+      "detailCode": "USM-PG-ARTICLE-169",
+      "officialName": "DOCTOR OF PHILOSOPHY (MAIN CAMPUS)",
+      "faculty": "Centre for Chemical Biology",
+      "studyMode": "research",
+      "officialUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=169&catid=50",
+      "collectionStatus": "candidate-present"
+    },
+    {
+      "order": 29,
+      "code": "USM-PHD-ARTICLE-217-DDFFC688",
+      "detailCode": "USM-PG-ARTICLE-217",
+      "officialName": "DOCTOR OF PHILOSOPHY (MAIN CAMPUS)",
+      "faculty": "Centre for Drug Research",
+      "studyMode": "research",
+      "officialUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=217&catid=51",
+      "collectionStatus": "candidate-present"
+    },
+    {
+      "order": 30,
+      "code": "USM-PHD-ARTICLE-333-204B8FF5",
+      "detailCode": "USM-PG-ARTICLE-333",
+      "officialName": "DOCTOR OF PHILOSOPHY (MAIN CAMPUS)",
+      "faculty": "Centre for Global Archaeological Research",
+      "studyMode": "research",
+      "officialUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=333&catid=52",
+      "collectionStatus": "candidate-present"
+    },
+    {
+      "order": 31,
+      "code": "USM-PHD-ARTICLE-372-672DB387",
+      "detailCode": "USM-PG-ARTICLE-372",
+      "officialName": "DOCTOR OF PHILOSOPHY (MAIN CAMPUS)",
+      "faculty": "Centre for Instructional Technology and Multimedia",
+      "studyMode": "research",
+      "officialUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=372&catid=53",
+      "collectionStatus": "candidate-present"
+    },
+    {
+      "order": 32,
+      "code": "USM-PHD-ARTICLE-273-EF8BB80C",
+      "detailCode": "USM-PG-ARTICLE-273",
+      "officialName": "DOCTOR OF PHILOSOPHY (MAIN CAMPUS)",
+      "faculty": "Centre for Islamic Development Management Studies",
+      "studyMode": "research",
+      "officialUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=273&catid=52",
+      "collectionStatus": "candidate-present"
+    },
+    {
+      "order": 33,
+      "code": "USM-PHD-ARTICLE-170-8655C53B",
+      "detailCode": "USM-PG-ARTICLE-170",
+      "officialName": "DOCTOR OF PHILOSOPHY (MAIN CAMPUS)",
+      "faculty": "Centre for Marine and Coastal Studies",
+      "studyMode": "research",
+      "officialUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=170&catid=50",
+      "collectionStatus": "candidate-present"
+    },
+    {
+      "order": 34,
+      "code": "USM-PHD-ARTICLE-271-7F5394A0",
+      "detailCode": "USM-PG-ARTICLE-271",
+      "officialName": "DOCTOR OF PHILOSOPHY (MAIN CAMPUS)",
+      "faculty": "Centre for Policy Research",
+      "studyMode": "research",
+      "officialUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=271&catid=52",
+      "collectionStatus": "candidate-present"
+    },
+    {
+      "order": 35,
+      "code": "USM-PHD-ARTICLE-809-4DB1B238",
+      "detailCode": "USM-PG-ARTICLE-809",
+      "officialName": "DOCTOR OF PHILOSOPHY (MAIN CAMPUS)",
+      "faculty": "Centre for Research On Women and Gender (KANITA)",
+      "studyMode": "research",
+      "officialUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=809&catid=53",
+      "collectionStatus": "candidate-present"
+    },
+    {
+      "order": 36,
+      "code": "USM-PHD-ARTICLE-388-4B3FE108",
+      "detailCode": "USM-PG-ARTICLE-388",
+      "officialName": "DOCTOR OF PHILOSOPHY (MAIN CAMPUS)",
+      "faculty": "Collaborative Microelectronic Design Excellence Centre",
+      "studyMode": "research",
+      "officialUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=388&catid=54",
+      "collectionStatus": "candidate-present"
+    },
+    {
+      "order": 37,
+      "code": "USM-PHD-ARTICLE-219-DEE779E2",
+      "detailCode": "USM-PG-ARTICLE-219",
+      "officialName": "DOCTOR OF PHILOSOPHY (MAIN CAMPUS)",
+      "faculty": "Cybersecurity Research Centre",
+      "studyMode": "research",
+      "officialUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=219&catid=51",
+      "collectionStatus": "candidate-present"
+    },
+    {
+      "order": 38,
+      "code": "USM-PHD-ARTICLE-338-A89E7B8C",
+      "detailCode": "USM-PG-ARTICLE-338",
+      "officialName": "DOCTOR OF PHILOSOPHY (MAIN CAMPUS)",
+      "faculty": "Graduate School of Business",
+      "studyMode": "research",
+      "officialUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=338&catid=53",
+      "collectionStatus": "candidate-present"
+    },
+    {
+      "order": 39,
+      "code": "USM-PHD-ARTICLE-510-30AB87BE",
+      "detailCode": "USM-PG-ARTICLE-510",
+      "officialName": "DOCTOR OF PHILOSOPHY (MAIN CAMPUS)",
+      "faculty": "Institute for Research in Molecular Medicine",
+      "studyMode": "research",
+      "officialUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=510&catid=55",
+      "collectionStatus": "candidate-present"
+    },
+    {
+      "order": 40,
+      "code": "USM-PHD-ARTICLE-215-1208D3CA",
+      "detailCode": "USM-PG-ARTICLE-215",
+      "officialName": "DOCTOR OF PHILOSOPHY (MAIN CAMPUS)",
+      "faculty": "Institute of Nano-Optoelectronics Research and Technology",
+      "studyMode": "research",
+      "officialUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=215&catid=51",
+      "collectionStatus": "candidate-present"
+    },
+    {
+      "order": 41,
+      "code": "USM-PHD-ARTICLE-218-B3A10FF2",
+      "detailCode": "USM-PG-ARTICLE-218",
+      "officialName": "DOCTOR OF PHILOSOPHY (MAIN CAMPUS)",
+      "faculty": "Malaysian Institute of Pharmaceuticals and Nutraceuticals",
+      "studyMode": "research",
+      "officialUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=218&catid=51",
+      "collectionStatus": "candidate-present"
+    },
+    {
+      "order": 42,
+      "code": "USM-PHD-ARTICLE-325-B8B6326F",
+      "detailCode": "USM-PG-ARTICLE-325",
+      "officialName": "DOCTOR OF PHILOSOPHY (MAIN CAMPUS)",
+      "faculty": "National Higher Education Research Institute",
+      "studyMode": "research",
+      "officialUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=325&catid=52",
+      "collectionStatus": "candidate-present"
+    },
+    {
+      "order": 43,
+      "code": "USM-PHD-ARTICLE-220-E1BD8F32",
+      "detailCode": "USM-PG-ARTICLE-220",
+      "officialName": "DOCTOR OF PHILOSOPHY (MAIN CAMPUS)",
+      "faculty": "National Poison Centre",
+      "studyMode": "research",
+      "officialUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=220&catid=51",
+      "collectionStatus": "candidate-present"
+    },
+    {
+      "order": 44,
+      "code": "USM-PHD-ARTICLE-888-0184C491",
+      "detailCode": "USM-PG-ARTICLE-888",
+      "officialName": "DOCTOR OF PHILOSOPHY (MAIN CAMPUS)",
+      "faculty": "Pusat Kanser Tun Abdullah Ahmad Badawi",
+      "studyMode": "research",
+      "officialUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=888&catid=55",
+      "collectionStatus": "candidate-present"
+    },
+    {
+      "order": 45,
+      "code": "USM-PHD-ARTICLE-376-E4CF4C2E",
+      "detailCode": "USM-PG-ARTICLE-376",
+      "officialName": "DOCTOR OF PHILOSOPHY (MAIN CAMPUS)",
+      "faculty": "School of Arts",
+      "studyMode": "research",
+      "officialUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=376&catid=53",
+      "collectionStatus": "candidate-present"
+    },
+    {
+      "order": 46,
+      "code": "USM-PHD-ARTICLE-167-D16175AE",
+      "detailCode": "USM-PG-ARTICLE-167",
+      "officialName": "DOCTOR OF PHILOSOPHY (MAIN CAMPUS)",
+      "faculty": "School of Biological Sciences",
+      "studyMode": "research",
+      "officialUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=167&catid=50",
+      "collectionStatus": "candidate-present"
+    },
+    {
+      "order": 47,
+      "code": "USM-PHD-ARTICLE-153-A3B106C5",
+      "detailCode": "USM-PG-ARTICLE-153",
+      "officialName": "DOCTOR OF PHILOSOPHY (MAIN CAMPUS)",
+      "faculty": "School of Chemical Sciences",
+      "studyMode": "research",
+      "officialUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=153&catid=50",
+      "collectionStatus": "candidate-present"
+    },
+    {
+      "order": 48,
+      "code": "USM-PHD-ARTICLE-375-4579FD96",
+      "detailCode": "USM-PG-ARTICLE-375",
+      "officialName": "DOCTOR OF PHILOSOPHY (MAIN CAMPUS)",
+      "faculty": "School of Communication",
+      "studyMode": "research",
+      "officialUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=375&catid=53",
+      "collectionStatus": "candidate-present"
+    },
+    {
+      "order": 49,
+      "code": "USM-PHD-ARTICLE-221-1C33BEF5",
+      "detailCode": "USM-PG-ARTICLE-221",
+      "officialName": "DOCTOR OF PHILOSOPHY (MAIN CAMPUS)",
+      "faculty": "School of Computer Sciences",
+      "studyMode": "research",
+      "officialUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=221&catid=51",
+      "collectionStatus": "candidate-present"
+    },
+    {
+      "order": 50,
+      "code": "USM-PHD-ARTICLE-361-F93DBDBA",
+      "detailCode": "USM-PG-ARTICLE-361",
+      "officialName": "DOCTOR OF PHILOSOPHY (MAIN CAMPUS)",
+      "faculty": "School of Educational Studies",
+      "studyMode": "research",
+      "officialUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=361&catid=53",
+      "collectionStatus": "candidate-present"
+    },
+    {
+      "order": 51,
+      "code": "USM-PHD-ARTICLE-887-795F4413",
+      "detailCode": "USM-PG-ARTICLE-887",
+      "officialName": "DOCTOR OF PHILOSOPHY (MAIN CAMPUS)",
+      "faculty": "School of Humanities",
+      "studyMode": "research",
+      "officialUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=887&catid=52",
+      "collectionStatus": "candidate-present"
+    },
+    {
+      "order": 52,
+      "code": "USM-PHD-ARTICLE-243-E1524B43",
+      "detailCode": "USM-PG-ARTICLE-243",
+      "officialName": "DOCTOR OF PHILOSOPHY (MAIN CAMPUS)",
+      "faculty": "School of Industrial Technology",
+      "studyMode": "research",
+      "officialUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=243&catid=51",
+      "collectionStatus": "candidate-present"
+    },
+    {
+      "order": 53,
+      "code": "USM-PHD-ARTICLE-315-5BE5C9C6",
+      "detailCode": "USM-PG-ARTICLE-315",
+      "officialName": "DOCTOR OF PHILOSOPHY (MAIN CAMPUS)",
+      "faculty": "School of Languages, Literacies and Translation",
+      "studyMode": "research",
+      "officialUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=315&catid=52",
+      "collectionStatus": "candidate-present"
+    },
+    {
+      "order": 54,
+      "code": "USM-PHD-ARTICLE-378-5ECECE3E",
+      "detailCode": "USM-PG-ARTICLE-378",
+      "officialName": "DOCTOR OF PHILOSOPHY (MAIN CAMPUS)",
+      "faculty": "School of Management",
+      "studyMode": "research",
+      "officialUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=378&catid=53",
+      "collectionStatus": "candidate-present"
+    },
+    {
+      "order": 55,
+      "code": "USM-PHD-ARTICLE-147-922EA0D1",
+      "detailCode": "USM-PG-ARTICLE-147",
+      "officialName": "DOCTOR OF PHILOSOPHY (MAIN CAMPUS)",
+      "faculty": "School of Mathematical Sciences",
+      "studyMode": "research",
+      "officialUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=147&catid=50",
+      "collectionStatus": "candidate-present"
+    },
+    {
+      "order": 56,
+      "code": "USM-PHD-ARTICLE-241-7E0BAB3B",
+      "detailCode": "USM-PG-ARTICLE-241",
+      "officialName": "DOCTOR OF PHILOSOPHY (MAIN CAMPUS)",
+      "faculty": "School of Pharmaceutical Sciences",
+      "studyMode": "research",
+      "officialUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=241&catid=51",
+      "collectionStatus": "candidate-present"
+    },
+    {
+      "order": 57,
+      "code": "USM-PHD-ARTICLE-145-B278876C",
+      "detailCode": "USM-PG-ARTICLE-145",
+      "officialName": "DOCTOR OF PHILOSOPHY (MAIN CAMPUS)",
+      "faculty": "School of Physics",
+      "studyMode": "research",
+      "officialUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=145&catid=50",
+      "collectionStatus": "candidate-present"
+    },
+    {
+      "order": 58,
+      "code": "USM-PHD-ARTICLE-326-FC5BC872",
+      "detailCode": "USM-PG-ARTICLE-326",
+      "officialName": "DOCTOR OF PHILOSOPHY (MAIN CAMPUS)",
+      "faculty": "School of Social Sciences",
+      "studyMode": "research",
+      "officialUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=326&catid=52",
+      "collectionStatus": "candidate-present"
+    },
+    {
+      "order": 59,
+      "code": "USM-PHD-ARTICLE-247-95E84700",
+      "detailCode": "USM-PG-ARTICLE-247",
+      "officialName": "DOCTOR OF PHILOSOPHY (MAIN CAMPUS)- SCIENCE",
+      "faculty": "Centre for Global Sustainability Studies",
+      "studyMode": "research",
+      "officialUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=247&catid=51",
+      "collectionStatus": "candidate-present"
+    },
+    {
+      "order": 60,
+      "code": "USM-PHD-ARTICLE-313-217C82B7",
+      "detailCode": "USM-PG-ARTICLE-313",
+      "officialName": "DOCTOR OF PHILOSOPHY (MAIN CAMPUS)- SCIENCE",
+      "faculty": "School of Distance Education",
+      "studyMode": "research",
+      "officialUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=313&catid=52",
+      "collectionStatus": "candidate-present"
+    },
+    {
+      "order": 61,
+      "code": "USM-PHD-ARTICLE-379-63462EB7",
+      "detailCode": "USM-PG-ARTICLE-379",
+      "officialName": "DOCTOR OF PHILOSOPHY (MAIN CAMPUS)-ART",
+      "faculty": "Centre for Global Sustainability Studies",
+      "studyMode": "research",
+      "officialUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=379&catid=53",
+      "collectionStatus": "candidate-present"
+    },
+    {
+      "order": 62,
+      "code": "USM-PHD-ARTICLE-313-737A86AF",
+      "detailCode": "USM-PG-ARTICLE-313",
+      "officialName": "DOCTOR OF PHILOSOPHY (MAIN CAMPUS)-ART",
+      "faculty": "School of Distance Education",
+      "studyMode": "research",
+      "officialUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=313&catid=52",
+      "collectionStatus": "candidate-present"
+    },
+    {
+      "order": 63,
+      "code": "USM-PHD-ARTICLE-561-1A146DC4",
+      "detailCode": "USM-PG-ARTICLE-561",
+      "officialName": "DOCTOR OF PHILOSOPHY (MEDICAL RADIATION)",
+      "faculty": "School of Health Sciences",
+      "studyMode": "research",
+      "officialUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=561&catid=55",
+      "collectionStatus": "candidate-present"
+    },
+    {
+      "order": 64,
+      "code": "USM-PHD-ARTICLE-560-D920F911",
+      "detailCode": "USM-PG-ARTICLE-560",
+      "officialName": "DOCTOR OF PHILOSOPHY (NURSING)",
+      "faculty": "School of Health Sciences",
+      "studyMode": "research",
+      "officialUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=560&catid=55",
+      "collectionStatus": "candidate-present"
+    },
+    {
+      "order": 65,
+      "code": "USM-PHD-ARTICLE-559-C64343D5",
+      "detailCode": "USM-PG-ARTICLE-559",
+      "officialName": "DOCTOR OF PHILOSOPHY (NUTRITION)",
+      "faculty": "School of Health Sciences",
+      "studyMode": "research",
+      "officialUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=559&catid=55",
+      "collectionStatus": "candidate-present"
+    },
+    {
+      "order": 66,
+      "code": "USM-PHD-ARTICLE-1475-DFD9E09D",
+      "detailCode": "USM-PG-ARTICLE-1475",
+      "officialName": "DOCTOR OF PHILOSOPHY (OFFSHORE EUROPEAN GLOBAL SCHOOL UNIVERSITY, ISTANBUL)",
+      "faculty": "Institute for Research in Molecular Medicine",
+      "studyMode": "research",
+      "officialUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1475&catid=55",
+      "collectionStatus": "candidate-present"
+    },
+    {
+      "order": 67,
+      "code": "USM-PHD-ARTICLE-1476-EDCE896B",
+      "detailCode": "USM-PG-ARTICLE-1476",
+      "officialName": "DOCTOR OF PHILOSOPHY (OFFSHORE EUROPEAN GLOBAL SCHOOL UNIVERSITY, ISTANBUL)",
+      "faculty": "Pusat Kanser Tun Abdullah Ahmad Badawi",
+      "studyMode": "research",
+      "officialUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1476&catid=55",
+      "collectionStatus": "candidate-present"
+    },
+    {
+      "order": 68,
+      "code": "USM-PHD-ARTICLE-1474-13A979E2",
+      "detailCode": "USM-PG-ARTICLE-1474",
+      "officialName": "DOCTOR OF PHILOSOPHY (OFFSHORE EUROPEAN GLOBAL SCHOOL UNIVERSITY, ISTANBUL)",
+      "faculty": "School of Aerospace Engineering",
+      "studyMode": "research",
+      "officialUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1474&catid=54",
+      "collectionStatus": "candidate-present"
+    },
+    {
+      "order": 69,
+      "code": "USM-PHD-ARTICLE-1482-71AFD600",
+      "detailCode": "USM-PG-ARTICLE-1482",
+      "officialName": "DOCTOR OF PHILOSOPHY (OFFSHORE EUROPEAN GLOBAL SCHOOL UNIVERSITY, ISTANBUL)",
+      "faculty": "School of Chemical Sciences",
+      "studyMode": "research",
+      "officialUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1482&catid=50",
+      "collectionStatus": "candidate-present"
+    },
+    {
+      "order": 70,
+      "code": "USM-PHD-ARTICLE-1501-AA166411",
+      "detailCode": "USM-PG-ARTICLE-1501",
+      "officialName": "DOCTOR OF PHILOSOPHY (OFFSHORE EUROPEAN GLOBAL SCHOOL UNIVERSITY, ISTANBUL)",
+      "faculty": "School of Civil Engineering",
+      "studyMode": "research",
+      "officialUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1501&catid=54",
+      "collectionStatus": "candidate-present"
+    },
+    {
+      "order": 71,
+      "code": "USM-PHD-ARTICLE-1506-E0F6CDF0",
+      "detailCode": "USM-PG-ARTICLE-1506",
+      "officialName": "DOCTOR OF PHILOSOPHY (OFFSHORE EUROPEAN GLOBAL SCHOOL UNIVERSITY, ISTANBUL)",
+      "faculty": "School of Dental Sciences",
+      "studyMode": "research",
+      "officialUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1506&catid=55",
+      "collectionStatus": "candidate-present"
+    },
+    {
+      "order": 72,
+      "code": "USM-PHD-ARTICLE-1508-17AAC296",
+      "detailCode": "USM-PG-ARTICLE-1508",
+      "officialName": "DOCTOR OF PHILOSOPHY (OFFSHORE EUROPEAN GLOBAL SCHOOL UNIVERSITY, ISTANBUL)",
+      "faculty": "School of Distance Education",
+      "studyMode": "research",
+      "officialUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1508&catid=52",
+      "collectionStatus": "candidate-present"
+    },
+    {
+      "order": 73,
+      "code": "USM-PHD-ARTICLE-1503-7E2AA05C",
+      "detailCode": "USM-PG-ARTICLE-1503",
+      "officialName": "DOCTOR OF PHILOSOPHY (OFFSHORE EUROPEAN GLOBAL SCHOOL UNIVERSITY, ISTANBUL)",
+      "faculty": "School of Electrical and Electronic Engineering",
+      "studyMode": "research",
+      "officialUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1503&catid=54",
+      "collectionStatus": "candidate-present"
+    },
+    {
+      "order": 74,
+      "code": "USM-PHD-ARTICLE-1515-A74EBF7B",
+      "detailCode": "USM-PG-ARTICLE-1515",
+      "officialName": "DOCTOR OF PHILOSOPHY (OFFSHORE EUROPEAN GLOBAL SCHOOL UNIVERSITY, ISTANBUL)",
+      "faculty": "School of Humanities",
+      "studyMode": "research",
+      "officialUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1515&catid=52",
+      "collectionStatus": "candidate-present"
+    },
+    {
+      "order": 75,
+      "code": "USM-PHD-ARTICLE-1519-B908433A",
+      "detailCode": "USM-PG-ARTICLE-1519",
+      "officialName": "DOCTOR OF PHILOSOPHY (OFFSHORE EUROPEAN GLOBAL SCHOOL UNIVERSITY, ISTANBUL)",
+      "faculty": "School of Languages, Literacies and Translation",
+      "studyMode": "research",
+      "officialUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1519&catid=52",
+      "collectionStatus": "candidate-present"
+    },
+    {
+      "order": 76,
+      "code": "USM-PHD-ARTICLE-1492-B74C2ACF",
+      "detailCode": "USM-PG-ARTICLE-1492",
+      "officialName": "DOCTOR OF PHILOSOPHY (OFFSHORE EUROPEAN GLOBAL SCHOOL UNIVERSITY, ISTANBUL)",
+      "faculty": "School of Management",
+      "studyMode": "research",
+      "officialUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1492&catid=53",
+      "collectionStatus": "candidate-present"
+    },
+    {
+      "order": 77,
+      "code": "USM-PHD-ARTICLE-1491-B0781791",
+      "detailCode": "USM-PG-ARTICLE-1491",
+      "officialName": "DOCTOR OF PHILOSOPHY (OFFSHORE EUROPEAN GLOBAL SCHOOL UNIVERSITY, ISTANBUL)",
+      "faculty": "School of Mathematical Sciences",
+      "studyMode": "research",
+      "officialUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1491&catid=50",
+      "collectionStatus": "candidate-present"
+    },
+    {
+      "order": 78,
+      "code": "USM-PHD-ARTICLE-1490-21A1FFAC",
+      "detailCode": "USM-PG-ARTICLE-1490",
+      "officialName": "DOCTOR OF PHILOSOPHY (OFFSHORE EUROPEAN GLOBAL SCHOOL UNIVERSITY, ISTANBUL)",
+      "faculty": "School of Mechanical Engineering",
+      "studyMode": "research",
+      "officialUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1490&catid=54",
+      "collectionStatus": "candidate-present"
+    },
+    {
+      "order": 79,
+      "code": "USM-PHD-ARTICLE-1487-68D66E5A",
+      "detailCode": "USM-PG-ARTICLE-1487",
+      "officialName": "DOCTOR OF PHILOSOPHY (OFFSHORE EUROPEAN GLOBAL SCHOOL UNIVERSITY, ISTANBUL)",
+      "faculty": "School of Pharmaceutical Sciences",
+      "studyMode": "research",
+      "officialUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1487&catid=51",
+      "collectionStatus": "candidate-present"
+    },
+    {
+      "order": 80,
+      "code": "USM-PHD-ARTICLE-1486-350D1D27",
+      "detailCode": "USM-PG-ARTICLE-1486",
+      "officialName": "DOCTOR OF PHILOSOPHY (OFFSHORE EUROPEAN GLOBAL SCHOOL UNIVERSITY, ISTANBUL)",
+      "faculty": "School of Social Sciences",
+      "studyMode": "research",
+      "officialUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1486&catid=52",
+      "collectionStatus": "candidate-present"
+    },
+    {
+      "order": 81,
+      "code": "USM-PHD-ARTICLE-1493-9DF5CFA5",
+      "detailCode": "USM-PG-ARTICLE-1493",
+      "officialName": "DOCTOR OF PHILOSOPHY (OFFSHORE MINJIANG UNIVERSITY)",
+      "faculty": "School of Management",
+      "studyMode": "research",
+      "officialUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1493&catid=53",
+      "collectionStatus": "candidate-present"
+    },
+    {
+      "order": 82,
+      "code": "USM-PHD-ARTICLE-1516-5FCB065D",
+      "detailCode": "USM-PG-ARTICLE-1516",
+      "officialName": "DOCTOR OF PHILOSOPHY (OFFSHORE NORTHEASTERN UNIVERSITY, QINHUANGDAO)",
+      "faculty": "School of Humanities",
+      "studyMode": "research",
+      "officialUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1516&catid=52",
+      "collectionStatus": "candidate-present"
+    },
+    {
+      "order": 83,
+      "code": "USM-PHD-ARTICLE-1494-9A5B9F7D",
+      "detailCode": "USM-PG-ARTICLE-1494",
+      "officialName": "DOCTOR OF PHILOSOPHY (OFFSHORE UNIVERSITAS INDONESIA)",
+      "faculty": "School of Management",
+      "studyMode": "research",
+      "officialUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1494&catid=53",
+      "collectionStatus": "candidate-present"
+    },
+    {
+      "order": 84,
+      "code": "USM-PHD-ARTICLE-1517-D53FD044",
+      "detailCode": "USM-PG-ARTICLE-1517",
+      "officialName": "DOCTOR OF PHILOSOPHY (OFFSHORE YANGTZE NORMAL UNIVERSITY)",
+      "faculty": "School of Humanities",
+      "studyMode": "research",
+      "officialUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1517&catid=52",
+      "collectionStatus": "candidate-present"
+    },
+    {
+      "order": 85,
+      "code": "USM-PHD-ARTICLE-222-3C8B9B11",
+      "detailCode": "USM-PG-ARTICLE-222",
+      "officialName": "DOCTOR OF PHILOSOPHY (PLANNING STUDIES)",
+      "faculty": "School of Housing, Building and Planning",
+      "studyMode": "research",
+      "officialUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=222&catid=51",
+      "collectionStatus": "candidate-present"
+    },
+    {
+      "order": 86,
+      "code": "USM-PHD-ARTICLE-232-7F458489",
+      "detailCode": "USM-PG-ARTICLE-232",
+      "officialName": "DOCTOR OF PHILOSOPHY (PROJECT MANAGEMENT)",
+      "faculty": "School of Housing, Building and Planning",
+      "studyMode": "research",
+      "officialUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=232&catid=51",
+      "collectionStatus": "candidate-present"
+    },
+    {
+      "order": 87,
+      "code": "USM-PHD-ARTICLE-235-AE06FB17",
+      "detailCode": "USM-PG-ARTICLE-235",
+      "officialName": "DOCTOR OF PHILOSOPHY (QUANTITY SURVEYING)",
+      "faculty": "School of Housing, Building and Planning",
+      "studyMode": "research",
+      "officialUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=235&catid=51",
+      "collectionStatus": "candidate-present"
+    },
+    {
+      "order": 88,
+      "code": "USM-PHD-ARTICLE-556-D76B8766",
+      "detailCode": "USM-PG-ARTICLE-556",
+      "officialName": "DOCTOR OF PHILOSOPHY (SPORTS SCIENCE)",
+      "faculty": "School of Health Sciences",
+      "studyMode": "research",
+      "officialUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=556&catid=55",
+      "collectionStatus": "candidate-present"
+    },
+    {
+      "order": 89,
+      "code": "USM-PHD-ARTICLE-1479-0BF3C6B6",
+      "detailCode": "USM-PG-ARTICLE-1479",
+      "officialName": "DOCTOR OF PHILOSOPHY - OFFSHORE EUROPEAN GLOBAL SCHOOL ISTANBUL GELISIM UNIVERSITY",
+      "faculty": "School of Biological Sciences",
+      "studyMode": "research",
+      "officialUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1479&catid=50",
+      "collectionStatus": "candidate-present"
+    },
+    {
+      "order": 90,
+      "code": "USM-PHD-ARTICLE-567-53D6AD8C",
+      "detailCode": "USM-PG-ARTICLE-567",
+      "officialName": "DOCTOR OF PSYCHOLOGY (CLINICAL NEUROPSYCHOLOGY) - JOINT DEGREE *USM@KL",
+      "faculty": "School of Medical Sciences",
+      "studyMode": "coursework",
+      "officialUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=567&catid=59",
+      "collectionStatus": "candidate-present"
+    },
+    {
+      "order": 91,
+      "code": "USM-PHD-ARTICLE-566-3FD53C9A",
+      "detailCode": "USM-PG-ARTICLE-566",
+      "officialName": "DOCTOR OF PSYCHOLOGY (CLINICAL PSYCHOLOGY) - JOINT DEGREE *USM@KL",
+      "faculty": "School of Medical Sciences",
+      "studyMode": "coursework",
+      "officialUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=566&catid=59",
+      "collectionStatus": "candidate-present"
+    },
+    {
+      "order": 92,
+      "code": "USM-PHD-ARTICLE-416-2BA54A8C",
+      "detailCode": "USM-PG-ARTICLE-416",
+      "officialName": "DOCTOR OF PUBLIC HEALTH (ENVIRONMENTAL HEALTH AND OCCUPATIONAL)",
+      "faculty": "School of Medical Sciences",
+      "studyMode": "mixed",
+      "officialUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=416&catid=55",
+      "collectionStatus": "candidate-present"
+    },
+    {
+      "order": 93,
+      "code": "USM-PHD-ARTICLE-417-7F433441",
+      "detailCode": "USM-PG-ARTICLE-417",
+      "officialName": "DOCTOR OF PUBLIC HEALTH (EPIDEMIOLOGY)",
+      "faculty": "School of Medical Sciences",
+      "studyMode": "mixed",
+      "officialUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=417&catid=55",
+      "collectionStatus": "candidate-present"
+    },
+    {
+      "order": 94,
+      "code": "USM-PHD-ARTICLE-415-7F193A03",
+      "detailCode": "USM-PG-ARTICLE-415",
+      "officialName": "DOCTOR OF PUBLIC HEALTH (FAMILY HEALTH)",
+      "faculty": "School of Medical Sciences",
+      "studyMode": "mixed",
+      "officialUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=415&catid=55",
+      "collectionStatus": "candidate-present"
+    },
+    {
+      "order": 95,
+      "code": "USM-PHD-ARTICLE-420-BADCD032",
+      "detailCode": "USM-PG-ARTICLE-420",
+      "officialName": "DOCTOR OF PUBLIC HEALTH (HEALTH SYSTEM MANAGEMENT)",
+      "faculty": "School of Medical Sciences",
+      "studyMode": "mixed",
+      "officialUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=420&catid=55",
+      "collectionStatus": "candidate-present"
+    }
+  ]
+}

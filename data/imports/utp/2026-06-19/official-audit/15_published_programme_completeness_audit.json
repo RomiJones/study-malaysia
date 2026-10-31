@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "institution": "Universiti Teknologi PETRONAS",
+  "currentAsOf": "2026-06-19",
+  "purpose": "Confirm every officially published programme URL/row discovered from UTP official pages is present in the candidate dataset.",
+  "officialPublishedCounts": {
+    "bachelorUniqueUrlsFromUndergraduateHomeAndProgrammeOffered": 15,
+    "masterCourseworkOdlUniqueUrlsIncludingProgrammeOfferedProcessSafetyOdl": 26,
+    "masterResearchUniqueUrls": 11,
+    "phdUniqueUrls": 11,
+    "totalUniquePublishedProgrammeUrls": 63
+  },
+  "candidateCounts": {
+    "bachelor": 15,
+    "master": 37,
+    "phd": 11,
+    "total": 63
+  },
+  "urlCoverage": {
+    "missingOfficialProgrammeUrlsInCandidateOfficialSourceUrl": [],
+    "extraCandidateOfficialSourceUrlsOutsidePublishedSet": [],
+    "coverageStatus": "passed"
+  },
+  "knownOfficialCountConflict": {
+    "bachelorOverviewTextCount": 14,
+    "bachelorPublishedUniqueUrlsCaptured": 15,
+    "decision": "Retain all 15 published bachelor URLs; UTP homepage currently says Fifteen programmes and the undergraduate page links list 15, while the undergraduate overview sentence still says fourteen.",
+    "resolutionStatus": "resolved-for-catalogue-coverage-not-a-missing-programme"
+  },
+  "specialDisposal": [
+    {
+      "programme": "MSc in Process Safety (ODL)",
+      "decision": "included",
+      "reason": "Distinct official URL appears in Programme Offered; Master by Coursework page text lists ODL row but link extraction exposes only 25 URLs."
+    },
+    {
+      "programme": "Master of Philosophy",
+      "decision": "included",
+      "reason": "Official Master by Research directory publishes row; detail URL returned 401 but row is not dropped."
+    },
+    {
+      "programme": "Bachelor of Materials Engineering with Honours",
+      "decision": "fee-resolved",
+      "reason": "Exact programme detail FAQ publishes international fee RM115,500; central undergraduate international fee table does not separately name Materials Engineering."
+    }
+  ],
+  "sourceRolesChecked": [
+    "Undergraduate home programme links",
+    "Programme Offered page",
+    "Master by Coursework page plus Programme Offered ODL URL",
+    "Master by Research page",
+    "PhD page"
+  ]
+}

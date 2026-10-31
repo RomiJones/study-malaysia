@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "mode": "uniten-all-level-published-for-review",
+  "createdAt": "2026-06-26T07:50:37.941Z",
+  "institution": {
+    "code": "UNITEN",
+    "name": "Universiti Tenaga Nasional (UNITEN)",
+    "importedRows": 37,
+    "byLevel": {
+      "bachelor": 18,
+      "master": 16,
+      "phd": 3
+    }
+  },
+  "database": {
+    "backupPath": "tmp/backups/uniten-all-level-public-before-2026-06-26T07-50-37-757Z.json",
+    "transactionalImport": "passed",
+    "catalogCacheCleared": false,
+    "scopedRows": 37,
+    "activeSupersededRows": 0,
+    "legacyVisibleRows": 0,
+    "visibleCurrentRows": 37
+  },
+  "publicVisibility": {
+    "universityPublicDisplayStatus": "ready",
+    "universityIsPublished": true,
+    "universityProgramCount": 37,
+    "rowsPublished": 37,
+    "rowsReady": 37
+  },
+  "displayHardGate": {
+    "chineseNameRows": 37,
+    "chineseFacultyRows": 37,
+    "chineseCurriculumRows": 37,
+    "chineseCareerRows": 37,
+    "languageRows": 37,
+    "officialFeeRows": 37,
+    "sourceRows": 37
+  }
+}

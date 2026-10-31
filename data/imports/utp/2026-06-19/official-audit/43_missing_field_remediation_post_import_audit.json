@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-06-20T14:09:29+08:00",
+  "operation": "UTP missing-field remediation transactional import",
+  "command": "npm --workspace @studymy/api run import:utp:official-audit -- --confirm-publish --publish --allow-rate-derived",
+  "backupPath": "/Users/ian/Desktop/dev/study-malaysia/apps/api/tmp/backups/utp-official-audit-publish-before-2026-06-20T06-09-29-459Z.json",
+  "backupArtifact": "44_missing_field_remediation_database_backup_before_import.json",
+  "result": {
+    "mode": "imported",
+    "universityId": 54,
+    "databaseUniversityCode": "UTP",
+    "summary": {
+      "candidateRows": 63,
+      "importRows": 63,
+      "byLevel": {
+        "bachelor": 15,
+        "master": 37,
+        "phd": 11
+      },
+      "readyRows": 63,
+      "needsReviewRows": 0,
+      "publishedRows": 63,
+      "uniqueSlugs": 63,
+      "officialTotalRows": 41,
+      "officialRateRows": 0,
+      "calculatedFromOfficialRateRows": 22,
+      "pendingFeeRows": 0,
+      "publicDisplayStatusCounts": {
+        "ready": 63
+      },
+      "officialSourceStatusCounts": {
+        "official-verified": 63
+      },
+      "feeAuditStatusCounts": {
+        "matched-official": 41,
+        "calculated-from-official-rate": 22
+      }
+    },
+    "verification": {
+      "universityPublicDisplayStatus": "ready",
+      "universityIsPublished": true,
+      "universityProgramCount": 63,
+      "universityQsRank": 261,
+      "universityQsRankDisplay": "=261",
+      "publicLeakageRows": 0,
+      "adminNeedsReviewRows": 0,
+      "legacyActiveRows": 0
+    }
+  },
+  "remediatedHardIssues": [
+    "Importer now extracts numeric CGPA from official academic requirement text instead of storing all UTP programme GPA values as 0.",
+    "MSc in Process Safety (ODL) academic requirement navigation noise replaced with official postgraduate international CGPA rule.",
+    "Integrated Engineering official curriculum/career/reasons subpages captured and linked to candidate fields.",
+    "Electronic Systems Engineering ODL curriculum text separated from careers.",
+    "Research rows expose official research-area course setting parity; PhD academic threshold remains official non-numeric Master degree rule without invented CGPA."
+  ]
+}

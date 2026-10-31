@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "institutionIdentifier": "双威大学 / Sunway University",
+  "universityCode": "SUNWAY",
+  "shortName": "SUNWAY",
+  "collectionScope": "full",
+  "levels": [
+    "bachelor",
+    "master",
+    "phd"
+  ],
+  "applicantScope": "international",
+  "authorization": "collect",
+  "academicSession": "Year 2026 fee/intake pages; current as of 2026-06-20, deep-reviewed and fee-policy corrected on 2026-06-21",
+  "currentAsOf": "2026-06-21",
+  "taskInstruction": "采用最新优化的标准化流程和 StudyMY 专用 skill，对双威大学面向国际申请人的本科、硕士、博士专业信息进行官方来源深挖采集，按用户确认的官网 USD 原样展示规则完成受控入库审查候选包。",
+  "officialNameDiscovered": "Sunway University",
+  "officialDomains": [
+    "sunwayuniversity.edu.my",
+    "studyonline.sunwayuniversity.edu.my"
+  ],
+  "selectedChineseTaskPage": "docs/notion-snapshot/tasks/TASK-STUDYMY-COLLECTOR-SKILL-20260614.md",
+  "prdAndTechnicalDesign": [
+    "docs/notion-snapshot/产品需求文档.md",
+    "docs/notion-snapshot/技术方案.md"
+  ],
+  "outputPath": "data/imports/sunway/2026-06-20/sunway-20260620",
+  "verificationCommands": [
+    "python3 scripts/audit_pipeline_stage.py data/imports/sunway/2026-06-20/sunway-20260620 --stage delivery_review --summary-only",
+    "python3 scripts/audit_candidate_integrity.py data/imports/sunway/2026-06-20/sunway-20260620/99_integrity_manifest.json --official-domain sunwayuniversity.edu.my --require-instruction-ledger --summary-only",
+    "python3 scripts/audit_delivery.py data/imports/sunway/2026-06-20/sunway-20260620/delivery.json --summary-only"
+  ],
+  "rollbackTarget": "Candidate artifact generation performs no database writes; remove this batch directory to roll back artifacts. Review-only database import has its own scoped backup when executed.",
+  "notionStatus": "No writable Notion connector is available in this Codex session; local Chinese dev log was written instead.",
+  "status": "ready-for-controlled-import"
+}

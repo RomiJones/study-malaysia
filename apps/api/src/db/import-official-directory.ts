@@ -2,13 +2,15 @@ import "reflect-metadata";
 import { createHash } from "node:crypto";
 import { loadEnvFiles } from "../config/env.js";
 import { DataSource, In } from "typeorm";
-import type {
-  DegreeLevel,
-  InstitutionOwnership,
-  InstitutionType,
-  LocalizedStringArray,
-  LocalizedText,
-  ProgramCategory
+import {
+  QS_UNRANKED_RANK,
+  qsRankSortValue,
+  type DegreeLevel,
+  type InstitutionOwnership,
+  type InstitutionType,
+  type LocalizedStringArray,
+  type LocalizedText,
+  type ProgramCategory
 } from "@studymy/shared";
 import { ALL_ENTITIES, ProgramEntity, UniversityEntity } from "./entities.js";
 
@@ -577,7 +579,7 @@ async function upsertUniversities(
       logoUrl: profile.official.logoUrl || profile.logoUrl || current?.logoUrl || "",
       imageUrl: profile.imageUrl || current?.imageUrl || "",
       color: current?.color || hashColor(profile.officialWebsite || profile.term.slug),
-      qsRank: profile.qsRank || current?.qsRank || 0,
+      qsRank: profile.qsRank || current?.qsRank || QS_UNRANKED_RANK,
       qsAsiaRank: profile.qsAsiaRank ?? current?.qsAsiaRank ?? null,
       location: localizedText(profile.location || profile.region || current?.location?.en || "Malaysia"),
       region: localizedText(profile.region || current?.region?.en || "Malaysia"),
@@ -615,8 +617,8 @@ async function replaceProgramsForTopUniversities(dataSource: DataSource, univers
   const top = universities
     .filter((item) => item.website)
     .sort((a, b) => {
-      const left = a.qsRank || Number.MAX_SAFE_INTEGER;
-      const right = b.qsRank || Number.MAX_SAFE_INTEGER;
+      const left = qsRankSortValue(a.qsRank);
+      const right = qsRankSortValue(b.qsRank);
       return left - right;
     })
     .slice(0, 10);

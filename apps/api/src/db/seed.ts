@@ -28,7 +28,7 @@ import {
   type RecommendationProfileSnapshot,
   type RecommendationResultSnapshot
 } from "./entities.js";
-import { seedAdminUsers, seedConfigs, seedDictionaryItems, seedMenus, seedPermissions, seedRoles } from "./admin-seed.js";
+import { requireSeedAdminPassword, seedAdminUsers, seedConfigs, seedDictionaryItems, seedMenus, seedPermissions, seedRoles } from "./admin-seed.js";
 import { seedContentBlocks, seedPrograms, seedUniversities, seedUsers } from "./seed-data.js";
 import { loadEnvFiles } from "../config/env.js";
 
@@ -156,6 +156,7 @@ export function buildDemoRecommendationSeedPayload(input: DemoRecommendationSeed
 }
 
 async function run() {
+  const seedAdminPassword = requireSeedAdminPassword();
   const dataSource = new DataSource({
     type: "mysql",
     host: process.env.MYSQL_HOST || "127.0.0.1",
@@ -277,19 +278,51 @@ async function run() {
       slug: item.slug,
       code: item.code,
       name: item.name,
+      nameEnOfficial: item.nameEnOfficial ?? item.name.en,
       level: item.level,
       category: item.category,
       faculty: item.faculty,
+      facultyZh: item.facultyZh ?? item.faculty["zh-CN"] ?? "",
+      studyMode: item.studyMode ?? "",
+      campus: item.campus ?? "",
       durationYears: item.durationYears,
+      durationOfficial: item.durationOfficial ?? "",
       annualTuitionCny: item.annualTuitionCny,
+      tuitionAmount: item.tuitionAmount ?? null,
+      tuitionCurrency: item.tuitionCurrency ?? "CNY",
+      tuitionDisplay: item.tuitionDisplay ?? "",
+      officialTuitionMYR: item.officialTuitionMYR ?? null,
+      officialTuitionNote: item.officialTuitionNote ?? null,
+      officialFeeSourceUrl: item.officialFeeSourceUrl ?? "",
+      secondaryOfficialFeeSourceUrl: item.secondaryOfficialFeeSourceUrl ?? "",
+      officialFeeAuditStatus: item.officialFeeAuditStatus ?? "pending-review",
+      officialFeeAuditedAt: item.officialFeeAuditedAt ?? null,
       intakeMonths: item.intakeMonths,
+      officialIntake: item.officialIntake ?? item.intakeMonths.join(", "),
+      officialIntakeNote: item.officialIntakeNote ?? null,
       languageRequirement: item.languageRequirement,
+      officialLanguageRequirement: item.officialLanguageRequirement ?? null,
       requirement: item.requirement,
+      officialAcademicRequirement: item.officialAcademicRequirement ?? null,
+      chinaStudentRequirement: item.chinaStudentRequirement ?? null,
+      specialRequirementsNote: item.specialRequirementsNote ?? null,
       applicationDocs: item.applicationDocs,
       curriculum: item.curriculum,
       careers: item.careers,
       specializations: item.specializations,
       description: item.description,
+      officialAccreditationNote: item.officialAccreditationNote ?? null,
+      officialSourceUrl: item.officialSourceUrl ?? "",
+      officialEntryRequirementSourceUrl: item.officialEntryRequirementSourceUrl ?? "",
+      officialAccreditationSourceUrl: item.officialAccreditationSourceUrl ?? "",
+      sourceUrls: item.sourceUrls ?? null,
+      officialVerifiedAt: item.officialVerifiedAt ?? null,
+      officialSourceStatus: item.officialSourceStatus ?? "needs-review",
+      publicDisplayStatus: item.publicDisplayStatus ?? "ready",
+      publicDisplayNote: item.publicDisplayNote ?? null,
+      reviewReason: item.reviewReason ?? null,
+      auditNote: item.auditNote ?? null,
+      listTuitionText: item.listTuitionText ?? item.tuitionDisplay ?? "",
       isPublished: true
     }));
     savedPrograms.push(saved);
@@ -399,7 +432,7 @@ async function run() {
       username: item.username,
       email: item.email,
       displayName: item.displayName,
-      passwordHash: await hash(item.password, 10),
+      passwordHash: await hash(seedAdminPassword, 10),
       isActive: item.isActive ?? true,
       dataScope: item.dataScope || "assigned",
       managedUniversityIds: item.managedUniversityIds || [],

@@ -1,0 +1,2424 @@
+{
+  "retrievedAt": "2026-07-08",
+  "scope": "UPSI master fee category mapping only; no database import",
+  "sourceBasis": {
+    "tuitionPage": "https://ips.upsi.edu.my/home/information/tuition-fees/",
+    "internationalPostgraduateFeePdf": "https://ips.upsi.edu.my/wp-content/uploads/2025/05/Terkini_Kadar-Yuran-Pelajar-Antarabangsa_MAC-2026-INTAKE.pdf",
+    "feeCategoryImage": "https://ips.upsi.edu.my/wp-content/uploads/2020/09/Kategori-Yuran.png",
+    "gcInternationalFeePdf": "https://ips.upsi.edu.my/wp-content/uploads/2022/04/TUITION-FEES-FOR-MASTER-OF-EDUCATION-GC-International_.pdf",
+    "modeBNoCodeMappingPdf": "https://ips.upsi.edu.my/wp-content/uploads/2025/04/FINAL-EDITED-V2-18032025_TUITION-FEES-FOR-MASTER-MODE-B_.pdf",
+    "clinicalMentalHealthLocalOnlyPdf": "https://ips.upsi.edu.my/wp-content/uploads/2023/11/fee-master-klinikal_.pdf"
+  },
+  "rules": [
+    "Use only exact official fee category image rules, programme-specific official fee sheets, and confirmed faculty mapping from official faculty master PDFs.",
+    "Do not use similar programme, local-student fee, old third-party source, or display-with-caveat faculty fallback to assign fees.",
+    "If category cannot be determined under those rules, mark category as not-mapped and canImport=false."
+  ],
+  "counts": {
+    "totalProgrammes": 140,
+    "mapped": 136,
+    "notMapped": 4,
+    "canImport": 136,
+    "highConfidence": 126,
+    "mediumConfidence": 10,
+    "blocked": 4
+  },
+  "notMappedCodes": [
+    "MJ01",
+    "MT022",
+    "MT138",
+    "MT199"
+  ],
+  "rows": [
+    {
+      "code": "MJ01",
+      "nameEnOfficial": "MASTER OF PSYCHOLOGY (CLINICAL)",
+      "facultyEn": "Faculty of Human Development",
+      "facultyStatus": "display-with-caveat",
+      "category": "not-mapped",
+      "totalTuitionMYR": null,
+      "amountDisplay": "not-mapped",
+      "categorySource": "not-mapped",
+      "tuitionSourceUrl": null,
+      "sourcePage": null,
+      "confidence": "blocked",
+      "canImport": false,
+      "notes": [
+        "No exact official category mapping under the strict fee-only rule."
+      ]
+    },
+    {
+      "code": "MT001",
+      "nameEnOfficial": "MASTER OF EDUCATION (MALAY LANGUAGE)",
+      "facultyEn": "Faculty of Language and Communication",
+      "facultyStatus": "confirmed",
+      "category": "Non Science & Technical",
+      "totalTuitionMYR": 22180,
+      "amountDisplay": "RM 22,180",
+      "categorySource": "https://ips.upsi.edu.my/wp-content/uploads/2020/09/Kategori-Yuran.png",
+      "tuitionSourceUrl": "https://ips.upsi.edu.my/wp-content/uploads/2025/05/Terkini_Kadar-Yuran-Pelajar-Antarabangsa_MAC-2026-INTAKE.pdf",
+      "sourcePage": "International postgraduate fee PDF page 1; fee category image on tuition page",
+      "confidence": "high",
+      "canImport": true,
+      "notes": [
+        "Confirmed faculty is listed under Non Science and Technical in the official fee category image."
+      ]
+    },
+    {
+      "code": "MT002",
+      "nameEnOfficial": "MASTER OF EDUCATION (MALAY LITERATURE)",
+      "facultyEn": "Faculty of Language and Communication",
+      "facultyStatus": "confirmed",
+      "category": "Non Science & Technical",
+      "totalTuitionMYR": 22180,
+      "amountDisplay": "RM 22,180",
+      "categorySource": "https://ips.upsi.edu.my/wp-content/uploads/2020/09/Kategori-Yuran.png",
+      "tuitionSourceUrl": "https://ips.upsi.edu.my/wp-content/uploads/2025/05/Terkini_Kadar-Yuran-Pelajar-Antarabangsa_MAC-2026-INTAKE.pdf",
+      "sourcePage": "International postgraduate fee PDF page 1; fee category image on tuition page",
+      "confidence": "high",
+      "canImport": true,
+      "notes": [
+        "Confirmed faculty is listed under Non Science and Technical in the official fee category image."
+      ]
+    },
+    {
+      "code": "MT003",
+      "nameEnOfficial": "MASTER OF EDUCATION (TEACHING ENGLISH AS A SECOND LANGUAGE)",
+      "facultyEn": "Faculty of Language and Communication",
+      "facultyStatus": "confirmed",
+      "category": "Non Science & Technical",
+      "totalTuitionMYR": 22180,
+      "amountDisplay": "RM 22,180",
+      "categorySource": "https://ips.upsi.edu.my/wp-content/uploads/2020/09/Kategori-Yuran.png",
+      "tuitionSourceUrl": "https://ips.upsi.edu.my/wp-content/uploads/2025/05/Terkini_Kadar-Yuran-Pelajar-Antarabangsa_MAC-2026-INTAKE.pdf",
+      "sourcePage": "International postgraduate fee PDF page 1; fee category image on tuition page",
+      "confidence": "high",
+      "canImport": true,
+      "notes": [
+        "Confirmed faculty is listed under Non Science and Technical in the official fee category image."
+      ]
+    },
+    {
+      "code": "MT010",
+      "nameEnOfficial": "MASTER OF EDUCATION (CURRICULUM STUDIES)",
+      "facultyEn": "Faculty of Human Development",
+      "facultyStatus": "confirmed",
+      "category": "Non Science & Technical",
+      "totalTuitionMYR": 22180,
+      "amountDisplay": "RM 22,180",
+      "categorySource": "https://ips.upsi.edu.my/wp-content/uploads/2020/09/Kategori-Yuran.png",
+      "tuitionSourceUrl": "https://ips.upsi.edu.my/wp-content/uploads/2025/05/Terkini_Kadar-Yuran-Pelajar-Antarabangsa_MAC-2026-INTAKE.pdf",
+      "sourcePage": "International postgraduate fee PDF page 1; fee category image on tuition page",
+      "confidence": "high",
+      "canImport": true,
+      "notes": [
+        "Confirmed faculty is listed under Non Science and Technical in the official fee category image."
+      ]
+    },
+    {
+      "code": "MT011",
+      "nameEnOfficial": "MASTER OF EDUCATION (EDUCATIONAL MANAGEMENT)",
+      "facultyEn": "Faculty of Management and Economic",
+      "facultyStatus": "confirmed",
+      "category": "Non Science & Technical",
+      "totalTuitionMYR": 22180,
+      "amountDisplay": "RM 22,180",
+      "categorySource": "https://ips.upsi.edu.my/wp-content/uploads/2020/09/Kategori-Yuran.png",
+      "tuitionSourceUrl": "https://ips.upsi.edu.my/wp-content/uploads/2025/05/Terkini_Kadar-Yuran-Pelajar-Antarabangsa_MAC-2026-INTAKE.pdf",
+      "sourcePage": "International postgraduate fee PDF page 1; fee category image on tuition page",
+      "confidence": "high",
+      "canImport": true,
+      "notes": [
+        "Confirmed faculty is listed under Non Science and Technical in the official fee category image."
+      ]
+    },
+    {
+      "code": "MT012",
+      "nameEnOfficial": "MASTER OF EDUCATION (EDUCATIONAL PSYCHOLOGY)",
+      "facultyEn": "Faculty of Human Development",
+      "facultyStatus": "confirmed",
+      "category": "Non Science & Technical",
+      "totalTuitionMYR": 22180,
+      "amountDisplay": "RM 22,180",
+      "categorySource": "https://ips.upsi.edu.my/wp-content/uploads/2020/09/Kategori-Yuran.png",
+      "tuitionSourceUrl": "https://ips.upsi.edu.my/wp-content/uploads/2025/05/Terkini_Kadar-Yuran-Pelajar-Antarabangsa_MAC-2026-INTAKE.pdf",
+      "sourcePage": "International postgraduate fee PDF page 1; fee category image on tuition page",
+      "confidence": "high",
+      "canImport": true,
+      "notes": [
+        "Confirmed faculty is listed under Non Science and Technical in the official fee category image."
+      ]
+    },
+    {
+      "code": "MT013",
+      "nameEnOfficial": "MASTER OF EDUCATION (PEDAGOGY)",
+      "facultyEn": "Faculty of Human Development",
+      "facultyStatus": "confirmed",
+      "category": "Non Science & Technical",
+      "totalTuitionMYR": 22180,
+      "amountDisplay": "RM 22,180",
+      "categorySource": "https://ips.upsi.edu.my/wp-content/uploads/2020/09/Kategori-Yuran.png",
+      "tuitionSourceUrl": "https://ips.upsi.edu.my/wp-content/uploads/2025/05/Terkini_Kadar-Yuran-Pelajar-Antarabangsa_MAC-2026-INTAKE.pdf",
+      "sourcePage": "International postgraduate fee PDF page 1; fee category image on tuition page",
+      "confidence": "high",
+      "canImport": true,
+      "notes": [
+        "Confirmed faculty is listed under Non Science and Technical in the official fee category image."
+      ]
+    },
+    {
+      "code": "MT014",
+      "nameEnOfficial": "MASTER OF EDUCATION (EDUCATIONAL EVALUATION)",
+      "facultyEn": "Faculty of Human Development",
+      "facultyStatus": "confirmed",
+      "category": "Non Science & Technical",
+      "totalTuitionMYR": 22180,
+      "amountDisplay": "RM 22,180",
+      "categorySource": "https://ips.upsi.edu.my/wp-content/uploads/2020/09/Kategori-Yuran.png",
+      "tuitionSourceUrl": "https://ips.upsi.edu.my/wp-content/uploads/2025/05/Terkini_Kadar-Yuran-Pelajar-Antarabangsa_MAC-2026-INTAKE.pdf",
+      "sourcePage": "International postgraduate fee PDF page 1; fee category image on tuition page",
+      "confidence": "high",
+      "canImport": true,
+      "notes": [
+        "Confirmed faculty is listed under Non Science and Technical in the official fee category image."
+      ]
+    },
+    {
+      "code": "MT014C",
+      "nameEnOfficial": "MASTER OF EDUCATION (EDUCATIONAL MEASUREMENT AND EVALUATION)",
+      "facultyEn": "Faculty of Human Development",
+      "facultyStatus": "confirmed",
+      "category": "Non Science & Technical",
+      "totalTuitionMYR": 22180,
+      "amountDisplay": "RM 22,180",
+      "categorySource": "https://ips.upsi.edu.my/wp-content/uploads/2020/09/Kategori-Yuran.png",
+      "tuitionSourceUrl": "https://ips.upsi.edu.my/wp-content/uploads/2025/05/Terkini_Kadar-Yuran-Pelajar-Antarabangsa_MAC-2026-INTAKE.pdf",
+      "sourcePage": "International postgraduate fee PDF page 1; fee category image on tuition page",
+      "confidence": "high",
+      "canImport": true,
+      "notes": [
+        "Confirmed faculty is listed under Non Science and Technical in the official fee category image."
+      ]
+    },
+    {
+      "code": "MT015",
+      "nameEnOfficial": "MASTER OF EDUCATION (INSTRUCTIONAL TECHNOLOGY)",
+      "facultyEn": "Faculty of Human Development",
+      "facultyStatus": "confirmed",
+      "category": "Non Science & Technical",
+      "totalTuitionMYR": 22180,
+      "amountDisplay": "RM 22,180",
+      "categorySource": "https://ips.upsi.edu.my/wp-content/uploads/2020/09/Kategori-Yuran.png",
+      "tuitionSourceUrl": "https://ips.upsi.edu.my/wp-content/uploads/2025/05/Terkini_Kadar-Yuran-Pelajar-Antarabangsa_MAC-2026-INTAKE.pdf",
+      "sourcePage": "International postgraduate fee PDF page 1; fee category image on tuition page",
+      "confidence": "high",
+      "canImport": true,
+      "notes": [
+        "Confirmed faculty is listed under Non Science and Technical in the official fee category image."
+      ]
+    },
+    {
+      "code": "MT016",
+      "nameEnOfficial": "MASTER OF EDUCATION (SPORTS SCIENCE)",
+      "facultyEn": "Faculty of Sports Science and Coaching",
+      "facultyStatus": "confirmed",
+      "category": "Science & Technical",
+      "totalTuitionMYR": 23160,
+      "amountDisplay": "RM 23,160",
+      "categorySource": "https://ips.upsi.edu.my/wp-content/uploads/2020/09/Kategori-Yuran.png",
+      "tuitionSourceUrl": "https://ips.upsi.edu.my/wp-content/uploads/2025/05/Terkini_Kadar-Yuran-Pelajar-Antarabangsa_MAC-2026-INTAKE.pdf",
+      "sourcePage": "International postgraduate fee PDF page 1; fee category image on tuition page",
+      "confidence": "high",
+      "canImport": true,
+      "notes": [
+        "Confirmed faculty is listed under Science and Technical in the official fee category image."
+      ]
+    },
+    {
+      "code": "MT017",
+      "nameEnOfficial": "MASTER OF EDUCATION (EARLY CHILDHOOD EDUCATION)",
+      "facultyEn": "Faculty of Human Development",
+      "facultyStatus": "confirmed",
+      "category": "Non Science & Technical",
+      "totalTuitionMYR": 22180,
+      "amountDisplay": "RM 22,180",
+      "categorySource": "https://ips.upsi.edu.my/wp-content/uploads/2020/09/Kategori-Yuran.png",
+      "tuitionSourceUrl": "https://ips.upsi.edu.my/wp-content/uploads/2025/05/Terkini_Kadar-Yuran-Pelajar-Antarabangsa_MAC-2026-INTAKE.pdf",
+      "sourcePage": "International postgraduate fee PDF page 1; fee category image on tuition page",
+      "confidence": "high",
+      "canImport": true,
+      "notes": [
+        "Confirmed faculty is listed under Non Science and Technical in the official fee category image."
+      ]
+    },
+    {
+      "code": "MT017R",
+      "nameEnOfficial": "MASTER OF EDUCATION (EARLY CHILDHOOD EDUCATION)",
+      "facultyEn": "National Child Development Research Centre",
+      "facultyStatus": "confirmed",
+      "category": "Non Science & Technical",
+      "totalTuitionMYR": 22180,
+      "amountDisplay": "RM 22,180",
+      "categorySource": "https://ips.upsi.edu.my/wp-content/uploads/2020/09/Kategori-Yuran.png",
+      "tuitionSourceUrl": "https://ips.upsi.edu.my/wp-content/uploads/2025/05/Terkini_Kadar-Yuran-Pelajar-Antarabangsa_MAC-2026-INTAKE.pdf",
+      "sourcePage": "International postgraduate fee PDF page 1; fee category image on tuition page",
+      "confidence": "high",
+      "canImport": true,
+      "notes": [
+        "Confirmed faculty is listed under Non Science and Technical in the official fee category image."
+      ]
+    },
+    {
+      "code": "MT018",
+      "nameEnOfficial": "MASTER OF EDUCATION (SPECIAL EDUCATION)",
+      "facultyEn": "Faculty of Human Development",
+      "facultyStatus": "confirmed",
+      "category": "Non Science & Technical",
+      "totalTuitionMYR": 22180,
+      "amountDisplay": "RM 22,180",
+      "categorySource": "https://ips.upsi.edu.my/wp-content/uploads/2020/09/Kategori-Yuran.png",
+      "tuitionSourceUrl": "https://ips.upsi.edu.my/wp-content/uploads/2025/05/Terkini_Kadar-Yuran-Pelajar-Antarabangsa_MAC-2026-INTAKE.pdf",
+      "sourcePage": "International postgraduate fee PDF page 1; fee category image on tuition page",
+      "confidence": "high",
+      "canImport": true,
+      "notes": [
+        "Confirmed faculty is listed under Non Science and Technical in the official fee category image."
+      ]
+    },
+    {
+      "code": "MT019",
+      "nameEnOfficial": "MASTER OF EDUCATION (BUSINESS MANAGEMENT)",
+      "facultyEn": "Faculty of Management and Economic",
+      "facultyStatus": "confirmed",
+      "category": "Non Science & Technical",
+      "totalTuitionMYR": 22180,
+      "amountDisplay": "RM 22,180",
+      "categorySource": "https://ips.upsi.edu.my/wp-content/uploads/2020/09/Kategori-Yuran.png",
+      "tuitionSourceUrl": "https://ips.upsi.edu.my/wp-content/uploads/2025/05/Terkini_Kadar-Yuran-Pelajar-Antarabangsa_MAC-2026-INTAKE.pdf",
+      "sourcePage": "International postgraduate fee PDF page 1; fee category image on tuition page",
+      "confidence": "high",
+      "canImport": true,
+      "notes": [
+        "Confirmed faculty is listed under Non Science and Technical in the official fee category image."
+      ]
+    },
+    {
+      "code": "MT020",
+      "nameEnOfficial": "MASTER OF EDUCATION (ECONOMICS)",
+      "facultyEn": "Faculty of Management and Economic",
+      "facultyStatus": "confirmed",
+      "category": "Non Science & Technical",
+      "totalTuitionMYR": 22180,
+      "amountDisplay": "RM 22,180",
+      "categorySource": "https://ips.upsi.edu.my/wp-content/uploads/2020/09/Kategori-Yuran.png",
+      "tuitionSourceUrl": "https://ips.upsi.edu.my/wp-content/uploads/2025/05/Terkini_Kadar-Yuran-Pelajar-Antarabangsa_MAC-2026-INTAKE.pdf",
+      "sourcePage": "International postgraduate fee PDF page 1; fee category image on tuition page",
+      "confidence": "high",
+      "canImport": true,
+      "notes": [
+        "Confirmed faculty is listed under Non Science and Technical in the official fee category image."
+      ]
+    },
+    {
+      "code": "MT021",
+      "nameEnOfficial": "MASTER OF EDUCATION (PRIMARY SCHOOL EDUCATION)",
+      "facultyEn": "Faculty of Human Development",
+      "facultyStatus": "confirmed",
+      "category": "Non Science & Technical",
+      "totalTuitionMYR": 22180,
+      "amountDisplay": "RM 22,180",
+      "categorySource": "https://ips.upsi.edu.my/wp-content/uploads/2020/09/Kategori-Yuran.png",
+      "tuitionSourceUrl": "https://ips.upsi.edu.my/wp-content/uploads/2025/05/Terkini_Kadar-Yuran-Pelajar-Antarabangsa_MAC-2026-INTAKE.pdf",
+      "sourcePage": "International postgraduate fee PDF page 1; fee category image on tuition page",
+      "confidence": "high",
+      "canImport": true,
+      "notes": [
+        "Confirmed faculty is listed under Non Science and Technical in the official fee category image."
+      ]
+    },
+    {
+      "code": "MT022",
+      "nameEnOfficial": "MASTER OF EDUCATION (GUIDANCE AND COUNSELING)",
+      "facultyEn": "Faculty of Human Development",
+      "facultyStatus": "display-with-caveat",
+      "category": "not-mapped",
+      "totalTuitionMYR": null,
+      "amountDisplay": "not-mapped",
+      "categorySource": "not-mapped",
+      "tuitionSourceUrl": null,
+      "sourcePage": null,
+      "confidence": "blocked",
+      "canImport": false,
+      "notes": [
+        "No exact official category mapping under the strict fee-only rule."
+      ]
+    },
+    {
+      "code": "MT022C",
+      "nameEnOfficial": "MASTER OF EDUCATION (GUIDANCE AND COUNSELING)",
+      "facultyEn": "Faculty of Human Development",
+      "facultyStatus": "confirmed",
+      "category": "Master of Education (Guidance and Counselling) - Coursework Mode C",
+      "totalTuitionMYR": 14680,
+      "amountDisplay": "RM 14,680",
+      "categorySource": "programme-specific official fee sheet",
+      "tuitionSourceUrl": "https://ips.upsi.edu.my/wp-content/uploads/2022/04/TUITION-FEES-FOR-MASTER-OF-EDUCATION-GC-International_.pdf",
+      "sourcePage": "GC international fee PDF page 1",
+      "confidence": "high",
+      "canImport": true,
+      "notes": [
+        "Programme-specific official international fee sheet gives Grand Total RM14,680."
+      ]
+    },
+    {
+      "code": "MT023",
+      "nameEnOfficial": "MASTER OF EDUCATION (ACCOUNTING)",
+      "facultyEn": "Faculty of Management and Economic",
+      "facultyStatus": "confirmed",
+      "category": "Non Science & Technical",
+      "totalTuitionMYR": 22180,
+      "amountDisplay": "RM 22,180",
+      "categorySource": "https://ips.upsi.edu.my/wp-content/uploads/2020/09/Kategori-Yuran.png",
+      "tuitionSourceUrl": "https://ips.upsi.edu.my/wp-content/uploads/2025/05/Terkini_Kadar-Yuran-Pelajar-Antarabangsa_MAC-2026-INTAKE.pdf",
+      "sourcePage": "International postgraduate fee PDF page 1; fee category image on tuition page",
+      "confidence": "high",
+      "canImport": true,
+      "notes": [
+        "Confirmed faculty is listed under Non Science and Technical in the official fee category image."
+      ]
+    },
+    {
+      "code": "MT024",
+      "nameEnOfficial": "MASTER OF EDUCATION (EDUCATIONAL SOCIOLOGY)",
+      "facultyEn": "Faculty of Human Development",
+      "facultyStatus": "confirmed",
+      "category": "Non Science & Technical",
+      "totalTuitionMYR": 22180,
+      "amountDisplay": "RM 22,180",
+      "categorySource": "https://ips.upsi.edu.my/wp-content/uploads/2020/09/Kategori-Yuran.png",
+      "tuitionSourceUrl": "https://ips.upsi.edu.my/wp-content/uploads/2025/05/Terkini_Kadar-Yuran-Pelajar-Antarabangsa_MAC-2026-INTAKE.pdf",
+      "sourcePage": "International postgraduate fee PDF page 1; fee category image on tuition page",
+      "confidence": "high",
+      "canImport": true,
+      "notes": [
+        "Confirmed faculty is listed under Non Science and Technical in the official fee category image."
+      ]
+    },
+    {
+      "code": "MT030",
+      "nameEnOfficial": "MASTER OF EDUCATION (MULTIMEDIA)",
+      "facultyEn": "Faculty of Computing and Meta-Technology",
+      "facultyStatus": "confirmed",
+      "category": "Science & Technical",
+      "totalTuitionMYR": 23160,
+      "amountDisplay": "RM 23,160",
+      "categorySource": "https://ips.upsi.edu.my/wp-content/uploads/2020/09/Kategori-Yuran.png",
+      "tuitionSourceUrl": "https://ips.upsi.edu.my/wp-content/uploads/2025/05/Terkini_Kadar-Yuran-Pelajar-Antarabangsa_MAC-2026-INTAKE.pdf",
+      "sourcePage": "International postgraduate fee PDF page 1; fee category image on tuition page",
+      "confidence": "high",
+      "canImport": true,
+      "notes": [
+        "Confirmed faculty is listed under Science and Technical in the official fee category image."
+      ]
+    },
+    {
+      "code": "MT031",
+      "nameEnOfficial": "MASTER OF EDUCATION (PHYSICS)",
+      "facultyEn": "Faculty of Science and Mathematics",
+      "facultyStatus": "confirmed",
+      "category": "Science & Technical",
+      "totalTuitionMYR": 23160,
+      "amountDisplay": "RM 23,160",
+      "categorySource": "https://ips.upsi.edu.my/wp-content/uploads/2020/09/Kategori-Yuran.png",
+      "tuitionSourceUrl": "https://ips.upsi.edu.my/wp-content/uploads/2025/05/Terkini_Kadar-Yuran-Pelajar-Antarabangsa_MAC-2026-INTAKE.pdf",
+      "sourcePage": "International postgraduate fee PDF page 1; fee category image on tuition page",
+      "confidence": "high",
+      "canImport": true,
+      "notes": [
+        "FSM code is explicitly listed under Science and Technical in the official fee category image."
+      ]
+    },
+    {
+      "code": "MT032",
+      "nameEnOfficial": "MASTER OF EDUCATION (CHEMISTRY)",
+      "facultyEn": "Faculty of Science and Mathematics",
+      "facultyStatus": "confirmed",
+      "category": "Science & Technical",
+      "totalTuitionMYR": 23160,
+      "amountDisplay": "RM 23,160",
+      "categorySource": "https://ips.upsi.edu.my/wp-content/uploads/2020/09/Kategori-Yuran.png",
+      "tuitionSourceUrl": "https://ips.upsi.edu.my/wp-content/uploads/2025/05/Terkini_Kadar-Yuran-Pelajar-Antarabangsa_MAC-2026-INTAKE.pdf",
+      "sourcePage": "International postgraduate fee PDF page 1; fee category image on tuition page",
+      "confidence": "high",
+      "canImport": true,
+      "notes": [
+        "FSM code is explicitly listed under Science and Technical in the official fee category image."
+      ]
+    },
+    {
+      "code": "MT033",
+      "nameEnOfficial": "MASTER OF EDUCATION (BIOLOGY)",
+      "facultyEn": "Faculty of Science and Mathematics",
+      "facultyStatus": "confirmed",
+      "category": "Science & Technical",
+      "totalTuitionMYR": 23160,
+      "amountDisplay": "RM 23,160",
+      "categorySource": "https://ips.upsi.edu.my/wp-content/uploads/2020/09/Kategori-Yuran.png",
+      "tuitionSourceUrl": "https://ips.upsi.edu.my/wp-content/uploads/2025/05/Terkini_Kadar-Yuran-Pelajar-Antarabangsa_MAC-2026-INTAKE.pdf",
+      "sourcePage": "International postgraduate fee PDF page 1; fee category image on tuition page",
+      "confidence": "high",
+      "canImport": true,
+      "notes": [
+        "FSM code is explicitly listed under Science and Technical in the official fee category image."
+      ]
+    },
+    {
+      "code": "MT034",
+      "nameEnOfficial": "MASTER OF EDUCATION (MATHEMATICS)",
+      "facultyEn": "Faculty of Science and Mathematics",
+      "facultyStatus": "confirmed",
+      "category": "Non Science & Technical",
+      "totalTuitionMYR": 22180,
+      "amountDisplay": "RM 22,180",
+      "categorySource": "https://ips.upsi.edu.my/wp-content/uploads/2020/09/Kategori-Yuran.png",
+      "tuitionSourceUrl": "https://ips.upsi.edu.my/wp-content/uploads/2025/05/Terkini_Kadar-Yuran-Pelajar-Antarabangsa_MAC-2026-INTAKE.pdf",
+      "sourcePage": "International postgraduate fee PDF page 1; fee category image on tuition page",
+      "confidence": "high",
+      "canImport": true,
+      "notes": [
+        "FSM code is explicitly listed under Non Science and Technical in the official fee category image."
+      ]
+    },
+    {
+      "code": "MT036",
+      "nameEnOfficial": "MASTER OF EDUCATION (INFORMATION TECHNOLOGY)",
+      "facultyEn": "Faculty of Computing and Meta-Technology",
+      "facultyStatus": "confirmed",
+      "category": "Science & Technical",
+      "totalTuitionMYR": 23160,
+      "amountDisplay": "RM 23,160",
+      "categorySource": "https://ips.upsi.edu.my/wp-content/uploads/2020/09/Kategori-Yuran.png",
+      "tuitionSourceUrl": "https://ips.upsi.edu.my/wp-content/uploads/2025/05/Terkini_Kadar-Yuran-Pelajar-Antarabangsa_MAC-2026-INTAKE.pdf",
+      "sourcePage": "International postgraduate fee PDF page 1; fee category image on tuition page",
+      "confidence": "high",
+      "canImport": true,
+      "notes": [
+        "Confirmed faculty is listed under Science and Technical in the official fee category image."
+      ]
+    },
+    {
+      "code": "MT037",
+      "nameEnOfficial": "MASTER OF EDUCATION (INTERNET COMPUTING)",
+      "facultyEn": "Faculty of Computing and Meta-Technology",
+      "facultyStatus": "confirmed",
+      "category": "Science & Technical",
+      "totalTuitionMYR": 23160,
+      "amountDisplay": "RM 23,160",
+      "categorySource": "https://ips.upsi.edu.my/wp-content/uploads/2020/09/Kategori-Yuran.png",
+      "tuitionSourceUrl": "https://ips.upsi.edu.my/wp-content/uploads/2025/05/Terkini_Kadar-Yuran-Pelajar-Antarabangsa_MAC-2026-INTAKE.pdf",
+      "sourcePage": "International postgraduate fee PDF page 1; fee category image on tuition page",
+      "confidence": "high",
+      "canImport": true,
+      "notes": [
+        "Confirmed faculty is listed under Science and Technical in the official fee category image."
+      ]
+    },
+    {
+      "code": "MT040",
+      "nameEnOfficial": "MASTER OF EDUCATION (MUSIC)",
+      "facultyEn": "Faculty of Music and Performing Arts",
+      "facultyStatus": "confirmed",
+      "category": "Science & Technical",
+      "totalTuitionMYR": 23160,
+      "amountDisplay": "RM 23,160",
+      "categorySource": "https://ips.upsi.edu.my/wp-content/uploads/2020/09/Kategori-Yuran.png",
+      "tuitionSourceUrl": "https://ips.upsi.edu.my/wp-content/uploads/2025/05/Terkini_Kadar-Yuran-Pelajar-Antarabangsa_MAC-2026-INTAKE.pdf",
+      "sourcePage": "International postgraduate fee PDF page 1; fee category image on tuition page",
+      "confidence": "high",
+      "canImport": true,
+      "notes": [
+        "Confirmed faculty is listed under Science and Technical in the official fee category image."
+      ]
+    },
+    {
+      "code": "MT041",
+      "nameEnOfficial": "MASTER OF EDUCATION (ARTS)",
+      "facultyEn": "Faculty Art, Sustainability and Creative Industry",
+      "facultyStatus": "confirmed",
+      "category": "Science & Technical",
+      "totalTuitionMYR": 23160,
+      "amountDisplay": "RM 23,160",
+      "categorySource": "https://ips.upsi.edu.my/wp-content/uploads/2020/09/Kategori-Yuran.png",
+      "tuitionSourceUrl": "https://ips.upsi.edu.my/wp-content/uploads/2025/05/Terkini_Kadar-Yuran-Pelajar-Antarabangsa_MAC-2026-INTAKE.pdf",
+      "sourcePage": "International postgraduate fee PDF page 1; fee category image on tuition page",
+      "confidence": "high",
+      "canImport": true,
+      "notes": [
+        "Confirmed faculty is listed under Science and Technical in the official fee category image."
+      ]
+    },
+    {
+      "code": "MT051",
+      "nameEnOfficial": "MASTER OF ART (COMMUNICATION)",
+      "facultyEn": "Faculty of Language and Communication",
+      "facultyStatus": "confirmed",
+      "category": "Non Science & Technical",
+      "totalTuitionMYR": 22180,
+      "amountDisplay": "RM 22,180",
+      "categorySource": "https://ips.upsi.edu.my/wp-content/uploads/2020/09/Kategori-Yuran.png",
+      "tuitionSourceUrl": "https://ips.upsi.edu.my/wp-content/uploads/2025/05/Terkini_Kadar-Yuran-Pelajar-Antarabangsa_MAC-2026-INTAKE.pdf",
+      "sourcePage": "International postgraduate fee PDF page 1; fee category image on tuition page",
+      "confidence": "high",
+      "canImport": true,
+      "notes": [
+        "Confirmed faculty is listed under Non Science and Technical in the official fee category image."
+      ]
+    },
+    {
+      "code": "MT062",
+      "nameEnOfficial": "MASTER OF SCIENCE (INSTRUCTIONAL TECHNOLOGY)",
+      "facultyEn": "Faculty of Computing and Meta-Technology",
+      "facultyStatus": "confirmed",
+      "category": "Science & Technical",
+      "totalTuitionMYR": 23160,
+      "amountDisplay": "RM 23,160",
+      "categorySource": "https://ips.upsi.edu.my/wp-content/uploads/2020/09/Kategori-Yuran.png",
+      "tuitionSourceUrl": "https://ips.upsi.edu.my/wp-content/uploads/2025/05/Terkini_Kadar-Yuran-Pelajar-Antarabangsa_MAC-2026-INTAKE.pdf",
+      "sourcePage": "International postgraduate fee PDF page 1; fee category image on tuition page",
+      "confidence": "high",
+      "canImport": true,
+      "notes": [
+        "Confirmed faculty is listed under Science and Technical in the official fee category image."
+      ]
+    },
+    {
+      "code": "MT064",
+      "nameEnOfficial": "MASTER OF SCIENCE (ENVIRONMENTAL BIOTECHNOLOGY)",
+      "facultyEn": "Faculty of Science and Mathematics",
+      "facultyStatus": "display-with-caveat",
+      "category": "Science Stream - Faculty of Science and Mathematics",
+      "totalTuitionMYR": 26160,
+      "amountDisplay": "RM 26,160",
+      "categorySource": "https://ips.upsi.edu.my/wp-content/uploads/2020/09/Kategori-Yuran.png",
+      "tuitionSourceUrl": "https://ips.upsi.edu.my/wp-content/uploads/2025/05/Terkini_Kadar-Yuran-Pelajar-Antarabangsa_MAC-2026-INTAKE.pdf",
+      "sourcePage": "International postgraduate fee PDF page 1; fee category image on tuition page",
+      "confidence": "high",
+      "canImport": true,
+      "notes": [
+        "FSM code is explicitly listed under Science Stream in the official fee category image."
+      ]
+    },
+    {
+      "code": "MT067",
+      "nameEnOfficial": "MASTER OF SCIENCE (ANALYTICAL CHEMISTRY)",
+      "facultyEn": "Faculty of Science and Mathematics",
+      "facultyStatus": "confirmed",
+      "category": "Science Stream - Faculty of Science and Mathematics",
+      "totalTuitionMYR": 26160,
+      "amountDisplay": "RM 26,160",
+      "categorySource": "https://ips.upsi.edu.my/wp-content/uploads/2020/09/Kategori-Yuran.png",
+      "tuitionSourceUrl": "https://ips.upsi.edu.my/wp-content/uploads/2025/05/Terkini_Kadar-Yuran-Pelajar-Antarabangsa_MAC-2026-INTAKE.pdf",
+      "sourcePage": "International postgraduate fee PDF page 1; fee category image on tuition page",
+      "confidence": "high",
+      "canImport": true,
+      "notes": [
+        "FSM code is explicitly listed under Science Stream in the official fee category image."
+      ]
+    },
+    {
+      "code": "MT068",
+      "nameEnOfficial": "MASTER OF SCIENCE (NATURAL PRODUCTS)",
+      "facultyEn": "Faculty of Science and Mathematics",
+      "facultyStatus": "confirmed",
+      "category": "Science Stream - Faculty of Science and Mathematics",
+      "totalTuitionMYR": 26160,
+      "amountDisplay": "RM 26,160",
+      "categorySource": "https://ips.upsi.edu.my/wp-content/uploads/2020/09/Kategori-Yuran.png",
+      "tuitionSourceUrl": "https://ips.upsi.edu.my/wp-content/uploads/2025/05/Terkini_Kadar-Yuran-Pelajar-Antarabangsa_MAC-2026-INTAKE.pdf",
+      "sourcePage": "International postgraduate fee PDF page 1; fee category image on tuition page",
+      "confidence": "high",
+      "canImport": true,
+      "notes": [
+        "FSM code is explicitly listed under Science Stream in the official fee category image."
+      ]
+    },
+    {
+      "code": "MT071",
+      "nameEnOfficial": "MASTER OF SCIENCE (APPLIED STATISTICS)",
+      "facultyEn": "Faculty of Science and Mathematics",
+      "facultyStatus": "display-with-caveat",
+      "category": "Non Science & Technical",
+      "totalTuitionMYR": 22180,
+      "amountDisplay": "RM 22,180",
+      "categorySource": "https://ips.upsi.edu.my/wp-content/uploads/2020/09/Kategori-Yuran.png",
+      "tuitionSourceUrl": "https://ips.upsi.edu.my/wp-content/uploads/2025/05/Terkini_Kadar-Yuran-Pelajar-Antarabangsa_MAC-2026-INTAKE.pdf",
+      "sourcePage": "International postgraduate fee PDF page 1; fee category image on tuition page",
+      "confidence": "high",
+      "canImport": true,
+      "notes": [
+        "FSM code is explicitly listed under Non Science and Technical in the official fee category image."
+      ]
+    },
+    {
+      "code": "MT073",
+      "nameEnOfficial": "MASTER OF SCIENCE (INSTRUMENTATION)",
+      "facultyEn": "Faculty of Science and Mathematics",
+      "facultyStatus": "confirmed",
+      "category": "Science Stream - Faculty of Science and Mathematics",
+      "totalTuitionMYR": 26160,
+      "amountDisplay": "RM 26,160",
+      "categorySource": "https://ips.upsi.edu.my/wp-content/uploads/2020/09/Kategori-Yuran.png",
+      "tuitionSourceUrl": "https://ips.upsi.edu.my/wp-content/uploads/2025/05/Terkini_Kadar-Yuran-Pelajar-Antarabangsa_MAC-2026-INTAKE.pdf",
+      "sourcePage": "International postgraduate fee PDF page 1; fee category image on tuition page",
+      "confidence": "high",
+      "canImport": true,
+      "notes": [
+        "FSM code is explicitly listed under Science Stream in the official fee category image."
+      ]
+    },
+    {
+      "code": "MT075",
+      "nameEnOfficial": "MASTER OF SCIENCE (MATERIAL PHYSICS)",
+      "facultyEn": "Faculty of Science and Mathematics",
+      "facultyStatus": "confirmed",
+      "category": "Science Stream - Faculty of Science and Mathematics",
+      "totalTuitionMYR": 26160,
+      "amountDisplay": "RM 26,160",
+      "categorySource": "https://ips.upsi.edu.my/wp-content/uploads/2020/09/Kategori-Yuran.png",
+      "tuitionSourceUrl": "https://ips.upsi.edu.my/wp-content/uploads/2025/05/Terkini_Kadar-Yuran-Pelajar-Antarabangsa_MAC-2026-INTAKE.pdf",
+      "sourcePage": "International postgraduate fee PDF page 1; fee category image on tuition page",
+      "confidence": "high",
+      "canImport": true,
+      "notes": [
+        "FSM code is explicitly listed under Science Stream in the official fee category image."
+      ]
+    },
+    {
+      "code": "MT076",
+      "nameEnOfficial": "MASTER OF SCIENCE (RENEWABLE ENERGY)",
+      "facultyEn": "Faculty of Science and Mathematics",
+      "facultyStatus": "confirmed",
+      "category": "Science Stream - Faculty of Science and Mathematics",
+      "totalTuitionMYR": 26160,
+      "amountDisplay": "RM 26,160",
+      "categorySource": "https://ips.upsi.edu.my/wp-content/uploads/2020/09/Kategori-Yuran.png",
+      "tuitionSourceUrl": "https://ips.upsi.edu.my/wp-content/uploads/2025/05/Terkini_Kadar-Yuran-Pelajar-Antarabangsa_MAC-2026-INTAKE.pdf",
+      "sourcePage": "International postgraduate fee PDF page 1; fee category image on tuition page",
+      "confidence": "high",
+      "canImport": true,
+      "notes": [
+        "FSM code is explicitly listed under Science Stream in the official fee category image."
+      ]
+    },
+    {
+      "code": "MT077",
+      "nameEnOfficial": "MASTER OF MANAGEMENT (ENTREPRENEURSHIP)",
+      "facultyEn": "Faculty of Management and Economic",
+      "facultyStatus": "confirmed",
+      "category": "Non Science & Technical",
+      "totalTuitionMYR": 22180,
+      "amountDisplay": "RM 22,180",
+      "categorySource": "https://ips.upsi.edu.my/wp-content/uploads/2020/09/Kategori-Yuran.png",
+      "tuitionSourceUrl": "https://ips.upsi.edu.my/wp-content/uploads/2025/05/Terkini_Kadar-Yuran-Pelajar-Antarabangsa_MAC-2026-INTAKE.pdf",
+      "sourcePage": "International postgraduate fee PDF page 1; fee category image on tuition page",
+      "confidence": "high",
+      "canImport": true,
+      "notes": [
+        "Confirmed faculty is listed under Non Science and Technical in the official fee category image."
+      ]
+    },
+    {
+      "code": "MT078",
+      "nameEnOfficial": "MASTER OF MANAGEMENT (MARKETING)",
+      "facultyEn": "Faculty of Management and Economic",
+      "facultyStatus": "confirmed",
+      "category": "Non Science & Technical",
+      "totalTuitionMYR": 22180,
+      "amountDisplay": "RM 22,180",
+      "categorySource": "https://ips.upsi.edu.my/wp-content/uploads/2020/09/Kategori-Yuran.png",
+      "tuitionSourceUrl": "https://ips.upsi.edu.my/wp-content/uploads/2025/05/Terkini_Kadar-Yuran-Pelajar-Antarabangsa_MAC-2026-INTAKE.pdf",
+      "sourcePage": "International postgraduate fee PDF page 1; fee category image on tuition page",
+      "confidence": "high",
+      "canImport": true,
+      "notes": [
+        "Confirmed faculty is listed under Non Science and Technical in the official fee category image."
+      ]
+    },
+    {
+      "code": "MT079",
+      "nameEnOfficial": "MASTER OF MANAGEMENT (STRATEGIC MANAGEMENT)",
+      "facultyEn": "Faculty of Management and Economic",
+      "facultyStatus": "confirmed",
+      "category": "Non Science & Technical",
+      "totalTuitionMYR": 22180,
+      "amountDisplay": "RM 22,180",
+      "categorySource": "https://ips.upsi.edu.my/wp-content/uploads/2020/09/Kategori-Yuran.png",
+      "tuitionSourceUrl": "https://ips.upsi.edu.my/wp-content/uploads/2025/05/Terkini_Kadar-Yuran-Pelajar-Antarabangsa_MAC-2026-INTAKE.pdf",
+      "sourcePage": "International postgraduate fee PDF page 1; fee category image on tuition page",
+      "confidence": "high",
+      "canImport": true,
+      "notes": [
+        "Confirmed faculty is listed under Non Science and Technical in the official fee category image."
+      ]
+    },
+    {
+      "code": "MT080",
+      "nameEnOfficial": "MASTER OF MANAGEMENT (HUMAN RESOURCE MANAGEMENT)",
+      "facultyEn": "Faculty of Management and Economic",
+      "facultyStatus": "confirmed",
+      "category": "Non Science & Technical",
+      "totalTuitionMYR": 22180,
+      "amountDisplay": "RM 22,180",
+      "categorySource": "https://ips.upsi.edu.my/wp-content/uploads/2020/09/Kategori-Yuran.png",
+      "tuitionSourceUrl": "https://ips.upsi.edu.my/wp-content/uploads/2025/05/Terkini_Kadar-Yuran-Pelajar-Antarabangsa_MAC-2026-INTAKE.pdf",
+      "sourcePage": "International postgraduate fee PDF page 1; fee category image on tuition page",
+      "confidence": "high",
+      "canImport": true,
+      "notes": [
+        "Confirmed faculty is listed under Non Science and Technical in the official fee category image."
+      ]
+    },
+    {
+      "code": "MT081",
+      "nameEnOfficial": "MASTER OF MANAGEMENT (HUMAN RESOURCE DEVELOPMENT)",
+      "facultyEn": "Faculty of Management and Economic",
+      "facultyStatus": "confirmed",
+      "category": "Non Science & Technical",
+      "totalTuitionMYR": 22180,
+      "amountDisplay": "RM 22,180",
+      "categorySource": "https://ips.upsi.edu.my/wp-content/uploads/2020/09/Kategori-Yuran.png",
+      "tuitionSourceUrl": "https://ips.upsi.edu.my/wp-content/uploads/2025/05/Terkini_Kadar-Yuran-Pelajar-Antarabangsa_MAC-2026-INTAKE.pdf",
+      "sourcePage": "International postgraduate fee PDF page 1; fee category image on tuition page",
+      "confidence": "high",
+      "canImport": true,
+      "notes": [
+        "Confirmed faculty is listed under Non Science and Technical in the official fee category image."
+      ]
+    },
+    {
+      "code": "MT082",
+      "nameEnOfficial": "MASTER OF ACCOUNTING (ISLAMIC FINANCE)",
+      "facultyEn": "Faculty of Management and Economic",
+      "facultyStatus": "confirmed",
+      "category": "Non Science & Technical",
+      "totalTuitionMYR": 22180,
+      "amountDisplay": "RM 22,180",
+      "categorySource": "https://ips.upsi.edu.my/wp-content/uploads/2020/09/Kategori-Yuran.png",
+      "tuitionSourceUrl": "https://ips.upsi.edu.my/wp-content/uploads/2025/05/Terkini_Kadar-Yuran-Pelajar-Antarabangsa_MAC-2026-INTAKE.pdf",
+      "sourcePage": "International postgraduate fee PDF page 1; fee category image on tuition page",
+      "confidence": "high",
+      "canImport": true,
+      "notes": [
+        "Confirmed faculty is listed under Non Science and Technical in the official fee category image."
+      ]
+    },
+    {
+      "code": "MT083",
+      "nameEnOfficial": "MASTER OF ECONOMICS (DEVELOPMENT ECONOMICS)",
+      "facultyEn": "Faculty of Management and Economic",
+      "facultyStatus": "confirmed",
+      "category": "Non Science & Technical",
+      "totalTuitionMYR": 22180,
+      "amountDisplay": "RM 22,180",
+      "categorySource": "https://ips.upsi.edu.my/wp-content/uploads/2020/09/Kategori-Yuran.png",
+      "tuitionSourceUrl": "https://ips.upsi.edu.my/wp-content/uploads/2025/05/Terkini_Kadar-Yuran-Pelajar-Antarabangsa_MAC-2026-INTAKE.pdf",
+      "sourcePage": "International postgraduate fee PDF page 1; fee category image on tuition page",
+      "confidence": "high",
+      "canImport": true,
+      "notes": [
+        "Confirmed faculty is listed under Non Science and Technical in the official fee category image."
+      ]
+    },
+    {
+      "code": "MT084",
+      "nameEnOfficial": "MASTER OF ECONOMICS (FINANCIAL ECONOMICS)",
+      "facultyEn": "Faculty of Management and Economic",
+      "facultyStatus": "confirmed",
+      "category": "Non Science & Technical",
+      "totalTuitionMYR": 22180,
+      "amountDisplay": "RM 22,180",
+      "categorySource": "https://ips.upsi.edu.my/wp-content/uploads/2020/09/Kategori-Yuran.png",
+      "tuitionSourceUrl": "https://ips.upsi.edu.my/wp-content/uploads/2025/05/Terkini_Kadar-Yuran-Pelajar-Antarabangsa_MAC-2026-INTAKE.pdf",
+      "sourcePage": "International postgraduate fee PDF page 1; fee category image on tuition page",
+      "confidence": "high",
+      "canImport": true,
+      "notes": [
+        "Confirmed faculty is listed under Non Science and Technical in the official fee category image."
+      ]
+    },
+    {
+      "code": "MT085",
+      "nameEnOfficial": "MASTER OF ART (FINE ART STUDIES)",
+      "facultyEn": "Faculty Art, Sustainability and Creative Industry",
+      "facultyStatus": "confirmed",
+      "category": "Science & Technical",
+      "totalTuitionMYR": 23160,
+      "amountDisplay": "RM 23,160",
+      "categorySource": "https://ips.upsi.edu.my/wp-content/uploads/2020/09/Kategori-Yuran.png",
+      "tuitionSourceUrl": "https://ips.upsi.edu.my/wp-content/uploads/2025/05/Terkini_Kadar-Yuran-Pelajar-Antarabangsa_MAC-2026-INTAKE.pdf",
+      "sourcePage": "International postgraduate fee PDF page 1; fee category image on tuition page",
+      "confidence": "high",
+      "canImport": true,
+      "notes": [
+        "Confirmed faculty is listed under Science and Technical in the official fee category image."
+      ]
+    },
+    {
+      "code": "MT086",
+      "nameEnOfficial": "MASTER OF ART (ART HISTORY STUDIES)",
+      "facultyEn": "Faculty Art, Sustainability and Creative Industry",
+      "facultyStatus": "confirmed",
+      "category": "Science & Technical",
+      "totalTuitionMYR": 23160,
+      "amountDisplay": "RM 23,160",
+      "categorySource": "https://ips.upsi.edu.my/wp-content/uploads/2020/09/Kategori-Yuran.png",
+      "tuitionSourceUrl": "https://ips.upsi.edu.my/wp-content/uploads/2025/05/Terkini_Kadar-Yuran-Pelajar-Antarabangsa_MAC-2026-INTAKE.pdf",
+      "sourcePage": "International postgraduate fee PDF page 1; fee category image on tuition page",
+      "confidence": "high",
+      "canImport": true,
+      "notes": [
+        "Confirmed faculty is listed under Science and Technical in the official fee category image."
+      ]
+    },
+    {
+      "code": "MT087",
+      "nameEnOfficial": "MASTER OF ART (VISUAL COMMUNICATION STUDIES)",
+      "facultyEn": "Faculty Art, Sustainability and Creative Industry",
+      "facultyStatus": "confirmed",
+      "category": "Science & Technical",
+      "totalTuitionMYR": 23160,
+      "amountDisplay": "RM 23,160",
+      "categorySource": "https://ips.upsi.edu.my/wp-content/uploads/2020/09/Kategori-Yuran.png",
+      "tuitionSourceUrl": "https://ips.upsi.edu.my/wp-content/uploads/2025/05/Terkini_Kadar-Yuran-Pelajar-Antarabangsa_MAC-2026-INTAKE.pdf",
+      "sourcePage": "International postgraduate fee PDF page 1; fee category image on tuition page",
+      "confidence": "high",
+      "canImport": true,
+      "notes": [
+        "Confirmed faculty is listed under Science and Technical in the official fee category image."
+      ]
+    },
+    {
+      "code": "MT088",
+      "nameEnOfficial": "MASTER OF ART (DESIGN STUDIES)",
+      "facultyEn": "Faculty Art, Sustainability and Creative Industry",
+      "facultyStatus": "confirmed",
+      "category": "Science & Technical",
+      "totalTuitionMYR": 23160,
+      "amountDisplay": "RM 23,160",
+      "categorySource": "https://ips.upsi.edu.my/wp-content/uploads/2020/09/Kategori-Yuran.png",
+      "tuitionSourceUrl": "https://ips.upsi.edu.my/wp-content/uploads/2025/05/Terkini_Kadar-Yuran-Pelajar-Antarabangsa_MAC-2026-INTAKE.pdf",
+      "sourcePage": "International postgraduate fee PDF page 1; fee category image on tuition page",
+      "confidence": "high",
+      "canImport": true,
+      "notes": [
+        "Confirmed faculty is listed under Science and Technical in the official fee category image."
+      ]
+    },
+    {
+      "code": "MT089",
+      "nameEnOfficial": "MASTER OF ART (CRAFT STUDIES)",
+      "facultyEn": "Faculty Art, Sustainability and Creative Industry",
+      "facultyStatus": "confirmed",
+      "category": "Science & Technical",
+      "totalTuitionMYR": 23160,
+      "amountDisplay": "RM 23,160",
+      "categorySource": "https://ips.upsi.edu.my/wp-content/uploads/2020/09/Kategori-Yuran.png",
+      "tuitionSourceUrl": "https://ips.upsi.edu.my/wp-content/uploads/2025/05/Terkini_Kadar-Yuran-Pelajar-Antarabangsa_MAC-2026-INTAKE.pdf",
+      "sourcePage": "International postgraduate fee PDF page 1; fee category image on tuition page",
+      "confidence": "high",
+      "canImport": true,
+      "notes": [
+        "Confirmed faculty is listed under Science and Technical in the official fee category image."
+      ]
+    },
+    {
+      "code": "MT090",
+      "nameEnOfficial": "MASTER OF ART (CULTURAL STUDIES)",
+      "facultyEn": "Faculty Art, Sustainability and Creative Industry",
+      "facultyStatus": "confirmed",
+      "category": "Science & Technical",
+      "totalTuitionMYR": 23160,
+      "amountDisplay": "RM 23,160",
+      "categorySource": "https://ips.upsi.edu.my/wp-content/uploads/2020/09/Kategori-Yuran.png",
+      "tuitionSourceUrl": "https://ips.upsi.edu.my/wp-content/uploads/2025/05/Terkini_Kadar-Yuran-Pelajar-Antarabangsa_MAC-2026-INTAKE.pdf",
+      "sourcePage": "International postgraduate fee PDF page 1; fee category image on tuition page",
+      "confidence": "high",
+      "canImport": true,
+      "notes": [
+        "Confirmed faculty is listed under Science and Technical in the official fee category image."
+      ]
+    },
+    {
+      "code": "MT091",
+      "nameEnOfficial": "MASTER OF ART (ETHNOMUSICOLOGY)",
+      "facultyEn": "Faculty of Music and Performing Arts",
+      "facultyStatus": "confirmed",
+      "category": "Science & Technical",
+      "totalTuitionMYR": 23160,
+      "amountDisplay": "RM 23,160",
+      "categorySource": "https://ips.upsi.edu.my/wp-content/uploads/2020/09/Kategori-Yuran.png",
+      "tuitionSourceUrl": "https://ips.upsi.edu.my/wp-content/uploads/2025/05/Terkini_Kadar-Yuran-Pelajar-Antarabangsa_MAC-2026-INTAKE.pdf",
+      "sourcePage": "International postgraduate fee PDF page 1; fee category image on tuition page",
+      "confidence": "high",
+      "canImport": true,
+      "notes": [
+        "Confirmed faculty is listed under Science and Technical in the official fee category image."
+      ]
+    },
+    {
+      "code": "MT093",
+      "nameEnOfficial": "MASTER OF MUSIC (COMPOSITION)",
+      "facultyEn": "Faculty of Music and Performing Arts",
+      "facultyStatus": "confirmed",
+      "category": "Science & Technical",
+      "totalTuitionMYR": 23160,
+      "amountDisplay": "RM 23,160",
+      "categorySource": "https://ips.upsi.edu.my/wp-content/uploads/2020/09/Kategori-Yuran.png",
+      "tuitionSourceUrl": "https://ips.upsi.edu.my/wp-content/uploads/2025/05/Terkini_Kadar-Yuran-Pelajar-Antarabangsa_MAC-2026-INTAKE.pdf",
+      "sourcePage": "International postgraduate fee PDF page 1; fee category image on tuition page",
+      "confidence": "high",
+      "canImport": true,
+      "notes": [
+        "Confirmed faculty is listed under Science and Technical in the official fee category image."
+      ]
+    },
+    {
+      "code": "MT095",
+      "nameEnOfficial": "MASTER OF MUSIC (PERFORMANCE)",
+      "facultyEn": "Faculty of Music and Performing Arts",
+      "facultyStatus": "confirmed",
+      "category": "Science & Technical",
+      "totalTuitionMYR": 23160,
+      "amountDisplay": "RM 23,160",
+      "categorySource": "https://ips.upsi.edu.my/wp-content/uploads/2020/09/Kategori-Yuran.png",
+      "tuitionSourceUrl": "https://ips.upsi.edu.my/wp-content/uploads/2025/05/Terkini_Kadar-Yuran-Pelajar-Antarabangsa_MAC-2026-INTAKE.pdf",
+      "sourcePage": "International postgraduate fee PDF page 1; fee category image on tuition page",
+      "confidence": "high",
+      "canImport": true,
+      "notes": [
+        "Confirmed faculty is listed under Science and Technical in the official fee category image."
+      ]
+    },
+    {
+      "code": "MT096",
+      "nameEnOfficial": "MASTER OF SCIENCE (SPORT PSYCHOLOGY)",
+      "facultyEn": "Faculty of Sports Science and Coaching",
+      "facultyStatus": "confirmed",
+      "category": "Science & Technical",
+      "totalTuitionMYR": 23160,
+      "amountDisplay": "RM 23,160",
+      "categorySource": "https://ips.upsi.edu.my/wp-content/uploads/2020/09/Kategori-Yuran.png",
+      "tuitionSourceUrl": "https://ips.upsi.edu.my/wp-content/uploads/2025/05/Terkini_Kadar-Yuran-Pelajar-Antarabangsa_MAC-2026-INTAKE.pdf",
+      "sourcePage": "International postgraduate fee PDF page 1; fee category image on tuition page",
+      "confidence": "high",
+      "canImport": true,
+      "notes": [
+        "Confirmed faculty is listed under Science and Technical in the official fee category image."
+      ]
+    },
+    {
+      "code": "MT097",
+      "nameEnOfficial": "MASTER OF SCIENCE (SPORTS COACHING)",
+      "facultyEn": "Faculty of Sports Science and Coaching",
+      "facultyStatus": "confirmed",
+      "category": "Science & Technical",
+      "totalTuitionMYR": 23160,
+      "amountDisplay": "RM 23,160",
+      "categorySource": "https://ips.upsi.edu.my/wp-content/uploads/2020/09/Kategori-Yuran.png",
+      "tuitionSourceUrl": "https://ips.upsi.edu.my/wp-content/uploads/2025/05/Terkini_Kadar-Yuran-Pelajar-Antarabangsa_MAC-2026-INTAKE.pdf",
+      "sourcePage": "International postgraduate fee PDF page 1; fee category image on tuition page",
+      "confidence": "high",
+      "canImport": true,
+      "notes": [
+        "Confirmed faculty is listed under Science and Technical in the official fee category image."
+      ]
+    },
+    {
+      "code": "MT099",
+      "nameEnOfficial": "MASTER OF SCIENCE (COMPUTER GRAPHICS AND ANIMATION)",
+      "facultyEn": "Faculty of Computing and Meta-Technology",
+      "facultyStatus": "confirmed",
+      "category": "Science & Technical",
+      "totalTuitionMYR": 23160,
+      "amountDisplay": "RM 23,160",
+      "categorySource": "https://ips.upsi.edu.my/wp-content/uploads/2020/09/Kategori-Yuran.png",
+      "tuitionSourceUrl": "https://ips.upsi.edu.my/wp-content/uploads/2025/05/Terkini_Kadar-Yuran-Pelajar-Antarabangsa_MAC-2026-INTAKE.pdf",
+      "sourcePage": "International postgraduate fee PDF page 1; fee category image on tuition page",
+      "confidence": "high",
+      "canImport": true,
+      "notes": [
+        "Confirmed faculty is listed under Science and Technical in the official fee category image."
+      ]
+    },
+    {
+      "code": "MT100",
+      "nameEnOfficial": "MASTER OF ART (HISTORY OF MALAYSIA)",
+      "facultyEn": "Faculty of Human Sciences",
+      "facultyStatus": "confirmed",
+      "category": "Non Science & Technical",
+      "totalTuitionMYR": 22180,
+      "amountDisplay": "RM 22,180",
+      "categorySource": "https://ips.upsi.edu.my/wp-content/uploads/2020/09/Kategori-Yuran.png",
+      "tuitionSourceUrl": "https://ips.upsi.edu.my/wp-content/uploads/2025/05/Terkini_Kadar-Yuran-Pelajar-Antarabangsa_MAC-2026-INTAKE.pdf",
+      "sourcePage": "International postgraduate fee PDF page 1; fee category image on tuition page",
+      "confidence": "high",
+      "canImport": true,
+      "notes": [
+        "Confirmed faculty is listed under Non Science and Technical in the official fee category image."
+      ]
+    },
+    {
+      "code": "MT101",
+      "nameEnOfficial": "MASTER OF ART (HISTORY OF SOUTH EAST ASIA)",
+      "facultyEn": "Faculty of Human Sciences",
+      "facultyStatus": "confirmed",
+      "category": "Non Science & Technical",
+      "totalTuitionMYR": 22180,
+      "amountDisplay": "RM 22,180",
+      "categorySource": "https://ips.upsi.edu.my/wp-content/uploads/2020/09/Kategori-Yuran.png",
+      "tuitionSourceUrl": "https://ips.upsi.edu.my/wp-content/uploads/2025/05/Terkini_Kadar-Yuran-Pelajar-Antarabangsa_MAC-2026-INTAKE.pdf",
+      "sourcePage": "International postgraduate fee PDF page 1; fee category image on tuition page",
+      "confidence": "high",
+      "canImport": true,
+      "notes": [
+        "Confirmed faculty is listed under Non Science and Technical in the official fee category image."
+      ]
+    },
+    {
+      "code": "MT102",
+      "nameEnOfficial": "MASTER OF ART (GEOGRAPHY)",
+      "facultyEn": "Faculty of Human Sciences",
+      "facultyStatus": "confirmed",
+      "category": "Non Science & Technical",
+      "totalTuitionMYR": 22180,
+      "amountDisplay": "RM 22,180",
+      "categorySource": "https://ips.upsi.edu.my/wp-content/uploads/2020/09/Kategori-Yuran.png",
+      "tuitionSourceUrl": "https://ips.upsi.edu.my/wp-content/uploads/2025/05/Terkini_Kadar-Yuran-Pelajar-Antarabangsa_MAC-2026-INTAKE.pdf",
+      "sourcePage": "International postgraduate fee PDF page 1; fee category image on tuition page",
+      "confidence": "high",
+      "canImport": true,
+      "notes": [
+        "Confirmed faculty is listed under Non Science and Technical in the official fee category image."
+      ]
+    },
+    {
+      "code": "MT103",
+      "nameEnOfficial": "MASTER OF ART (SYARIAH)",
+      "facultyEn": "Faculty of Human Sciences",
+      "facultyStatus": "confirmed",
+      "category": "Non Science & Technical",
+      "totalTuitionMYR": 22180,
+      "amountDisplay": "RM 22,180",
+      "categorySource": "https://ips.upsi.edu.my/wp-content/uploads/2020/09/Kategori-Yuran.png",
+      "tuitionSourceUrl": "https://ips.upsi.edu.my/wp-content/uploads/2025/05/Terkini_Kadar-Yuran-Pelajar-Antarabangsa_MAC-2026-INTAKE.pdf",
+      "sourcePage": "International postgraduate fee PDF page 1; fee category image on tuition page",
+      "confidence": "high",
+      "canImport": true,
+      "notes": [
+        "Confirmed faculty is listed under Non Science and Technical in the official fee category image."
+      ]
+    },
+    {
+      "code": "MT104",
+      "nameEnOfficial": "MASTER OF ART (USULUDDIN)",
+      "facultyEn": "Faculty of Human Sciences",
+      "facultyStatus": "confirmed",
+      "category": "Non Science & Technical",
+      "totalTuitionMYR": 22180,
+      "amountDisplay": "RM 22,180",
+      "categorySource": "https://ips.upsi.edu.my/wp-content/uploads/2020/09/Kategori-Yuran.png",
+      "tuitionSourceUrl": "https://ips.upsi.edu.my/wp-content/uploads/2025/05/Terkini_Kadar-Yuran-Pelajar-Antarabangsa_MAC-2026-INTAKE.pdf",
+      "sourcePage": "International postgraduate fee PDF page 1; fee category image on tuition page",
+      "confidence": "high",
+      "canImport": true,
+      "notes": [
+        "Confirmed faculty is listed under Non Science and Technical in the official fee category image."
+      ]
+    },
+    {
+      "code": "MT106",
+      "nameEnOfficial": "MASTER OF SCIENCE (INFORMATION SYSTEM AND MANAGEMENT)",
+      "facultyEn": "Faculty of Computing and Meta-Technology",
+      "facultyStatus": "confirmed",
+      "category": "Science & Technical",
+      "totalTuitionMYR": 23160,
+      "amountDisplay": "RM 23,160",
+      "categorySource": "https://ips.upsi.edu.my/wp-content/uploads/2020/09/Kategori-Yuran.png",
+      "tuitionSourceUrl": "https://ips.upsi.edu.my/wp-content/uploads/2025/05/Terkini_Kadar-Yuran-Pelajar-Antarabangsa_MAC-2026-INTAKE.pdf",
+      "sourcePage": "International postgraduate fee PDF page 1; fee category image on tuition page",
+      "confidence": "high",
+      "canImport": true,
+      "notes": [
+        "Confirmed faculty is listed under Science and Technical in the official fee category image."
+      ]
+    },
+    {
+      "code": "MT107",
+      "nameEnOfficial": "MASTER OF SCIENCE (SOFTWARE ENGINEERING)",
+      "facultyEn": "Faculty of Computing and Meta-Technology",
+      "facultyStatus": "confirmed",
+      "category": "Science & Technical",
+      "totalTuitionMYR": 23160,
+      "amountDisplay": "RM 23,160",
+      "categorySource": "https://ips.upsi.edu.my/wp-content/uploads/2020/09/Kategori-Yuran.png",
+      "tuitionSourceUrl": "https://ips.upsi.edu.my/wp-content/uploads/2025/05/Terkini_Kadar-Yuran-Pelajar-Antarabangsa_MAC-2026-INTAKE.pdf",
+      "sourcePage": "International postgraduate fee PDF page 1; fee category image on tuition page",
+      "confidence": "high",
+      "canImport": true,
+      "notes": [
+        "Confirmed faculty is listed under Science and Technical in the official fee category image."
+      ]
+    },
+    {
+      "code": "MT108",
+      "nameEnOfficial": "MASTER OF SCIENCE (INTERNET AND WEB COMPUTING)",
+      "facultyEn": "Faculty of Computing and Meta-Technology",
+      "facultyStatus": "confirmed",
+      "category": "Science & Technical",
+      "totalTuitionMYR": 23160,
+      "amountDisplay": "RM 23,160",
+      "categorySource": "https://ips.upsi.edu.my/wp-content/uploads/2020/09/Kategori-Yuran.png",
+      "tuitionSourceUrl": "https://ips.upsi.edu.my/wp-content/uploads/2025/05/Terkini_Kadar-Yuran-Pelajar-Antarabangsa_MAC-2026-INTAKE.pdf",
+      "sourcePage": "International postgraduate fee PDF page 1; fee category image on tuition page",
+      "confidence": "high",
+      "canImport": true,
+      "notes": [
+        "Confirmed faculty is listed under Science and Technical in the official fee category image."
+      ]
+    },
+    {
+      "code": "MT109",
+      "nameEnOfficial": "MASTER OF ART (MALAY CIVILIZATION)",
+      "facultyEn": "Institute of Malay Civilization",
+      "facultyStatus": "confirmed",
+      "category": "Non Science & Technical",
+      "totalTuitionMYR": 22180,
+      "amountDisplay": "RM 22,180",
+      "categorySource": "https://ips.upsi.edu.my/wp-content/uploads/2020/09/Kategori-Yuran.png",
+      "tuitionSourceUrl": "https://ips.upsi.edu.my/wp-content/uploads/2025/05/Terkini_Kadar-Yuran-Pelajar-Antarabangsa_MAC-2026-INTAKE.pdf",
+      "sourcePage": "International postgraduate fee PDF page 1; fee category image on tuition page",
+      "confidence": "high",
+      "canImport": true,
+      "notes": [
+        "Confirmed faculty is listed under Non Science and Technical in the official fee category image."
+      ]
+    },
+    {
+      "code": "MT114",
+      "nameEnOfficial": "MASTER OF ACCOUNTING (FINANCIAL ACCOUNTING)",
+      "facultyEn": "Faculty of Management and Economic",
+      "facultyStatus": "confirmed",
+      "category": "Non Science & Technical",
+      "totalTuitionMYR": 22180,
+      "amountDisplay": "RM 22,180",
+      "categorySource": "https://ips.upsi.edu.my/wp-content/uploads/2020/09/Kategori-Yuran.png",
+      "tuitionSourceUrl": "https://ips.upsi.edu.my/wp-content/uploads/2025/05/Terkini_Kadar-Yuran-Pelajar-Antarabangsa_MAC-2026-INTAKE.pdf",
+      "sourcePage": "International postgraduate fee PDF page 1; fee category image on tuition page",
+      "confidence": "high",
+      "canImport": true,
+      "notes": [
+        "Confirmed faculty is listed under Non Science and Technical in the official fee category image."
+      ]
+    },
+    {
+      "code": "MT115",
+      "nameEnOfficial": "MASTER OF ACCOUNTING (MANAGEMENT ACCOUNTING)",
+      "facultyEn": "Faculty of Management and Economic",
+      "facultyStatus": "confirmed",
+      "category": "Non Science & Technical",
+      "totalTuitionMYR": 22180,
+      "amountDisplay": "RM 22,180",
+      "categorySource": "https://ips.upsi.edu.my/wp-content/uploads/2020/09/Kategori-Yuran.png",
+      "tuitionSourceUrl": "https://ips.upsi.edu.my/wp-content/uploads/2025/05/Terkini_Kadar-Yuran-Pelajar-Antarabangsa_MAC-2026-INTAKE.pdf",
+      "sourcePage": "International postgraduate fee PDF page 1; fee category image on tuition page",
+      "confidence": "high",
+      "canImport": true,
+      "notes": [
+        "Confirmed faculty is listed under Non Science and Technical in the official fee category image."
+      ]
+    },
+    {
+      "code": "MT116",
+      "nameEnOfficial": "MASTER OF EDUCATION (PRIMARY MATHEMATICS)",
+      "facultyEn": "Faculty of Human Development",
+      "facultyStatus": "confirmed",
+      "category": "Non Science & Technical",
+      "totalTuitionMYR": 22180,
+      "amountDisplay": "RM 22,180",
+      "categorySource": "https://ips.upsi.edu.my/wp-content/uploads/2020/09/Kategori-Yuran.png",
+      "tuitionSourceUrl": "https://ips.upsi.edu.my/wp-content/uploads/2025/05/Terkini_Kadar-Yuran-Pelajar-Antarabangsa_MAC-2026-INTAKE.pdf",
+      "sourcePage": "International postgraduate fee PDF page 1; fee category image on tuition page",
+      "confidence": "high",
+      "canImport": true,
+      "notes": [
+        "Confirmed faculty is listed under Non Science and Technical in the official fee category image."
+      ]
+    },
+    {
+      "code": "MT117",
+      "nameEnOfficial": "MASTER OF EDUCATION (PRIMARY SCIENCES)",
+      "facultyEn": "Faculty of Human Development",
+      "facultyStatus": "confirmed",
+      "category": "Non Science & Technical",
+      "totalTuitionMYR": 22180,
+      "amountDisplay": "RM 22,180",
+      "categorySource": "https://ips.upsi.edu.my/wp-content/uploads/2020/09/Kategori-Yuran.png",
+      "tuitionSourceUrl": "https://ips.upsi.edu.my/wp-content/uploads/2025/05/Terkini_Kadar-Yuran-Pelajar-Antarabangsa_MAC-2026-INTAKE.pdf",
+      "sourcePage": "International postgraduate fee PDF page 1; fee category image on tuition page",
+      "confidence": "high",
+      "canImport": true,
+      "notes": [
+        "Confirmed faculty is listed under Non Science and Technical in the official fee category image."
+      ]
+    },
+    {
+      "code": "MT118",
+      "nameEnOfficial": "MASTER OF EDUCATION (ISLAMIC EDUCATION)",
+      "facultyEn": "Faculty of Human Sciences",
+      "facultyStatus": "confirmed",
+      "category": "Non Science & Technical",
+      "totalTuitionMYR": 22180,
+      "amountDisplay": "RM 22,180",
+      "categorySource": "https://ips.upsi.edu.my/wp-content/uploads/2020/09/Kategori-Yuran.png",
+      "tuitionSourceUrl": "https://ips.upsi.edu.my/wp-content/uploads/2025/05/Terkini_Kadar-Yuran-Pelajar-Antarabangsa_MAC-2026-INTAKE.pdf",
+      "sourcePage": "International postgraduate fee PDF page 1; fee category image on tuition page",
+      "confidence": "high",
+      "canImport": true,
+      "notes": [
+        "Confirmed faculty is listed under Non Science and Technical in the official fee category image."
+      ]
+    },
+    {
+      "code": "MT119",
+      "nameEnOfficial": "MASTER OF SCIENCE (BIOLOGY)",
+      "facultyEn": "Faculty of Science and Mathematics",
+      "facultyStatus": "confirmed",
+      "category": "Science Stream - Faculty of Science and Mathematics",
+      "totalTuitionMYR": 26160,
+      "amountDisplay": "RM 26,160",
+      "categorySource": "https://ips.upsi.edu.my/wp-content/uploads/2020/09/Kategori-Yuran.png",
+      "tuitionSourceUrl": "https://ips.upsi.edu.my/wp-content/uploads/2025/05/Terkini_Kadar-Yuran-Pelajar-Antarabangsa_MAC-2026-INTAKE.pdf",
+      "sourcePage": "International postgraduate fee PDF page 1; fee category image on tuition page",
+      "confidence": "high",
+      "canImport": true,
+      "notes": [
+        "FSM code is explicitly listed under Science Stream in the official fee category image."
+      ]
+    },
+    {
+      "code": "MT121",
+      "nameEnOfficial": "MASTER OF SCIENCE (CHEMISTRY)",
+      "facultyEn": "Faculty of Science and Mathematics",
+      "facultyStatus": "confirmed",
+      "category": "Science Stream - Faculty of Science and Mathematics",
+      "totalTuitionMYR": 26160,
+      "amountDisplay": "RM 26,160",
+      "categorySource": "https://ips.upsi.edu.my/wp-content/uploads/2020/09/Kategori-Yuran.png",
+      "tuitionSourceUrl": "https://ips.upsi.edu.my/wp-content/uploads/2025/05/Terkini_Kadar-Yuran-Pelajar-Antarabangsa_MAC-2026-INTAKE.pdf",
+      "sourcePage": "International postgraduate fee PDF page 1; fee category image on tuition page",
+      "confidence": "high",
+      "canImport": true,
+      "notes": [
+        "FSM code is explicitly listed under Science Stream in the official fee category image."
+      ]
+    },
+    {
+      "code": "MT122",
+      "nameEnOfficial": "MASTER OF SCIENCE (PHYSICS)",
+      "facultyEn": "Faculty of Science and Mathematics",
+      "facultyStatus": "confirmed",
+      "category": "Science Stream - Faculty of Science and Mathematics",
+      "totalTuitionMYR": 26160,
+      "amountDisplay": "RM 26,160",
+      "categorySource": "https://ips.upsi.edu.my/wp-content/uploads/2020/09/Kategori-Yuran.png",
+      "tuitionSourceUrl": "https://ips.upsi.edu.my/wp-content/uploads/2025/05/Terkini_Kadar-Yuran-Pelajar-Antarabangsa_MAC-2026-INTAKE.pdf",
+      "sourcePage": "International postgraduate fee PDF page 1; fee category image on tuition page",
+      "confidence": "high",
+      "canImport": true,
+      "notes": [
+        "FSM code is explicitly listed under Science Stream in the official fee category image."
+      ]
+    },
+    {
+      "code": "MT123",
+      "nameEnOfficial": "MASTER OF SCIENCE (MATHEMATICS)",
+      "facultyEn": "Faculty of Science and Mathematics",
+      "facultyStatus": "confirmed",
+      "category": "Non Science & Technical",
+      "totalTuitionMYR": 22180,
+      "amountDisplay": "RM 22,180",
+      "categorySource": "https://ips.upsi.edu.my/wp-content/uploads/2020/09/Kategori-Yuran.png",
+      "tuitionSourceUrl": "https://ips.upsi.edu.my/wp-content/uploads/2025/05/Terkini_Kadar-Yuran-Pelajar-Antarabangsa_MAC-2026-INTAKE.pdf",
+      "sourcePage": "International postgraduate fee PDF page 1; fee category image on tuition page",
+      "confidence": "high",
+      "canImport": true,
+      "notes": [
+        "FSM code is explicitly listed under Non Science and Technical in the official fee category image."
+      ]
+    },
+    {
+      "code": "MT126",
+      "nameEnOfficial": "MASTER OF SCIENCE (STATISTICS)",
+      "facultyEn": "Faculty of Science and Mathematics",
+      "facultyStatus": "confirmed",
+      "category": "Non Science & Technical",
+      "totalTuitionMYR": 22180,
+      "amountDisplay": "RM 22,180",
+      "categorySource": "https://ips.upsi.edu.my/wp-content/uploads/2020/09/Kategori-Yuran.png",
+      "tuitionSourceUrl": "https://ips.upsi.edu.my/wp-content/uploads/2025/05/Terkini_Kadar-Yuran-Pelajar-Antarabangsa_MAC-2026-INTAKE.pdf",
+      "sourcePage": "International postgraduate fee PDF page 1; fee category image on tuition page",
+      "confidence": "high",
+      "canImport": true,
+      "notes": [
+        "FSM code is explicitly listed under Non Science and Technical in the official fee category image."
+      ]
+    },
+    {
+      "code": "MT127",
+      "nameEnOfficial": "MASTER OF SCIENCE (TECHNICAL AND VOCATIONAL EDUCATION)",
+      "facultyEn": "Faculty of Technical and Vocational",
+      "facultyStatus": "confirmed",
+      "category": "Science & Technical",
+      "totalTuitionMYR": 23160,
+      "amountDisplay": "RM 23,160",
+      "categorySource": "https://ips.upsi.edu.my/wp-content/uploads/2020/09/Kategori-Yuran.png",
+      "tuitionSourceUrl": "https://ips.upsi.edu.my/wp-content/uploads/2025/05/Terkini_Kadar-Yuran-Pelajar-Antarabangsa_MAC-2026-INTAKE.pdf",
+      "sourcePage": "International postgraduate fee PDF page 1; fee category image on tuition page",
+      "confidence": "high",
+      "canImport": true,
+      "notes": [
+        "Confirmed faculty is listed under Science and Technical in the official fee category image."
+      ]
+    },
+    {
+      "code": "MT128",
+      "nameEnOfficial": "MASTER OF SCIENCE (AGRICULTURAL SCIENCE)",
+      "facultyEn": "Faculty of Technical and Vocational",
+      "facultyStatus": "confirmed",
+      "category": "Science & Technical",
+      "totalTuitionMYR": 23160,
+      "amountDisplay": "RM 23,160",
+      "categorySource": "https://ips.upsi.edu.my/wp-content/uploads/2020/09/Kategori-Yuran.png",
+      "tuitionSourceUrl": "https://ips.upsi.edu.my/wp-content/uploads/2025/05/Terkini_Kadar-Yuran-Pelajar-Antarabangsa_MAC-2026-INTAKE.pdf",
+      "sourcePage": "International postgraduate fee PDF page 1; fee category image on tuition page",
+      "confidence": "high",
+      "canImport": true,
+      "notes": [
+        "Confirmed faculty is listed under Science and Technical in the official fee category image."
+      ]
+    },
+    {
+      "code": "MT129",
+      "nameEnOfficial": "MASTER OF ART (FINE ART STUDIO)",
+      "facultyEn": "Faculty Art, Sustainability and Creative Industry",
+      "facultyStatus": "confirmed",
+      "category": "Science & Technical",
+      "totalTuitionMYR": 23160,
+      "amountDisplay": "RM 23,160",
+      "categorySource": "https://ips.upsi.edu.my/wp-content/uploads/2020/09/Kategori-Yuran.png",
+      "tuitionSourceUrl": "https://ips.upsi.edu.my/wp-content/uploads/2025/05/Terkini_Kadar-Yuran-Pelajar-Antarabangsa_MAC-2026-INTAKE.pdf",
+      "sourcePage": "International postgraduate fee PDF page 1; fee category image on tuition page",
+      "confidence": "high",
+      "canImport": true,
+      "notes": [
+        "Confirmed faculty is listed under Science and Technical in the official fee category image."
+      ]
+    },
+    {
+      "code": "MT130",
+      "nameEnOfficial": "MASTER OF ART (ARABIC LANGUAGE)",
+      "facultyEn": "Faculty of Language and Communication",
+      "facultyStatus": "confirmed",
+      "category": "Non Science & Technical",
+      "totalTuitionMYR": 22180,
+      "amountDisplay": "RM 22,180",
+      "categorySource": "https://ips.upsi.edu.my/wp-content/uploads/2020/09/Kategori-Yuran.png",
+      "tuitionSourceUrl": "https://ips.upsi.edu.my/wp-content/uploads/2025/05/Terkini_Kadar-Yuran-Pelajar-Antarabangsa_MAC-2026-INTAKE.pdf",
+      "sourcePage": "International postgraduate fee PDF page 1; fee category image on tuition page",
+      "confidence": "medium",
+      "canImport": true,
+      "notes": [
+        "Confirmed faculty is listed under Non Science and Technical in the official fee category image.",
+        "FBK 2025/09 PDF shows newer codes for related fields; current LIST OF code remains mapped through official 2025/05 FBK master PDF and fee category image."
+      ]
+    },
+    {
+      "code": "MT131",
+      "nameEnOfficial": "MASTER OF ART (CHINESE LANGUAGE)",
+      "facultyEn": "Faculty of Language and Communication",
+      "facultyStatus": "confirmed",
+      "category": "Non Science & Technical",
+      "totalTuitionMYR": 22180,
+      "amountDisplay": "RM 22,180",
+      "categorySource": "https://ips.upsi.edu.my/wp-content/uploads/2020/09/Kategori-Yuran.png",
+      "tuitionSourceUrl": "https://ips.upsi.edu.my/wp-content/uploads/2025/05/Terkini_Kadar-Yuran-Pelajar-Antarabangsa_MAC-2026-INTAKE.pdf",
+      "sourcePage": "International postgraduate fee PDF page 1; fee category image on tuition page",
+      "confidence": "medium",
+      "canImport": true,
+      "notes": [
+        "Confirmed faculty is listed under Non Science and Technical in the official fee category image.",
+        "FBK 2025/09 PDF shows newer codes for related fields; current LIST OF code remains mapped through official 2025/05 FBK master PDF and fee category image."
+      ]
+    },
+    {
+      "code": "MT132",
+      "nameEnOfficial": "MASTER OF ART (TAMIL LITERATURE)",
+      "facultyEn": "Faculty of Language and Communication",
+      "facultyStatus": "confirmed",
+      "category": "Non Science & Technical",
+      "totalTuitionMYR": 22180,
+      "amountDisplay": "RM 22,180",
+      "categorySource": "https://ips.upsi.edu.my/wp-content/uploads/2020/09/Kategori-Yuran.png",
+      "tuitionSourceUrl": "https://ips.upsi.edu.my/wp-content/uploads/2025/05/Terkini_Kadar-Yuran-Pelajar-Antarabangsa_MAC-2026-INTAKE.pdf",
+      "sourcePage": "International postgraduate fee PDF page 1; fee category image on tuition page",
+      "confidence": "medium",
+      "canImport": true,
+      "notes": [
+        "Confirmed faculty is listed under Non Science and Technical in the official fee category image.",
+        "FBK 2025/09 PDF shows newer codes for related fields; current LIST OF code remains mapped through official 2025/05 FBK master PDF and fee category image."
+      ]
+    },
+    {
+      "code": "MT133",
+      "nameEnOfficial": "MASTER OF EDUCATION (PLANNING AND EDUCATIONAL POLICY)",
+      "facultyEn": "Faculty of Management and Economic",
+      "facultyStatus": "confirmed",
+      "category": "Non Science & Technical",
+      "totalTuitionMYR": 22180,
+      "amountDisplay": "RM 22,180",
+      "categorySource": "https://ips.upsi.edu.my/wp-content/uploads/2020/09/Kategori-Yuran.png",
+      "tuitionSourceUrl": "https://ips.upsi.edu.my/wp-content/uploads/2025/05/Terkini_Kadar-Yuran-Pelajar-Antarabangsa_MAC-2026-INTAKE.pdf",
+      "sourcePage": "International postgraduate fee PDF page 1; fee category image on tuition page",
+      "confidence": "high",
+      "canImport": true,
+      "notes": [
+        "Confirmed faculty is listed under Non Science and Technical in the official fee category image."
+      ]
+    },
+    {
+      "code": "MT134",
+      "nameEnOfficial": "MASTER OF ART (HISTORY)",
+      "facultyEn": "Faculty of Human Sciences",
+      "facultyStatus": "confirmed",
+      "category": "Non Science & Technical",
+      "totalTuitionMYR": 22180,
+      "amountDisplay": "RM 22,180",
+      "categorySource": "https://ips.upsi.edu.my/wp-content/uploads/2020/09/Kategori-Yuran.png",
+      "tuitionSourceUrl": "https://ips.upsi.edu.my/wp-content/uploads/2025/05/Terkini_Kadar-Yuran-Pelajar-Antarabangsa_MAC-2026-INTAKE.pdf",
+      "sourcePage": "International postgraduate fee PDF page 1; fee category image on tuition page",
+      "confidence": "high",
+      "canImport": true,
+      "notes": [
+        "Confirmed faculty is listed under Non Science and Technical in the official fee category image."
+      ]
+    },
+    {
+      "code": "MT135",
+      "nameEnOfficial": "MASTER OF ART (MALAYSIA STUDIES)",
+      "facultyEn": "Faculty of Human Sciences",
+      "facultyStatus": "confirmed",
+      "category": "Non Science & Technical",
+      "totalTuitionMYR": 22180,
+      "amountDisplay": "RM 22,180",
+      "categorySource": "https://ips.upsi.edu.my/wp-content/uploads/2020/09/Kategori-Yuran.png",
+      "tuitionSourceUrl": "https://ips.upsi.edu.my/wp-content/uploads/2025/05/Terkini_Kadar-Yuran-Pelajar-Antarabangsa_MAC-2026-INTAKE.pdf",
+      "sourcePage": "International postgraduate fee PDF page 1; fee category image on tuition page",
+      "confidence": "high",
+      "canImport": true,
+      "notes": [
+        "Confirmed faculty is listed under Non Science and Technical in the official fee category image."
+      ]
+    },
+    {
+      "code": "MT136",
+      "nameEnOfficial": "MASTER OF ART (MORAL EDUCATION)",
+      "facultyEn": "Faculty of Human Sciences",
+      "facultyStatus": "confirmed",
+      "category": "Non Science & Technical",
+      "totalTuitionMYR": 22180,
+      "amountDisplay": "RM 22,180",
+      "categorySource": "https://ips.upsi.edu.my/wp-content/uploads/2020/09/Kategori-Yuran.png",
+      "tuitionSourceUrl": "https://ips.upsi.edu.my/wp-content/uploads/2025/05/Terkini_Kadar-Yuran-Pelajar-Antarabangsa_MAC-2026-INTAKE.pdf",
+      "sourcePage": "International postgraduate fee PDF page 1; fee category image on tuition page",
+      "confidence": "high",
+      "canImport": true,
+      "notes": [
+        "Confirmed faculty is listed under Non Science and Technical in the official fee category image."
+      ]
+    },
+    {
+      "code": "MT137",
+      "nameEnOfficial": "MASTER OF SCIENCE (PSYCHOLOGY)",
+      "facultyEn": "Faculty of Human Development",
+      "facultyStatus": "confirmed",
+      "category": "Non Science & Technical",
+      "totalTuitionMYR": 22180,
+      "amountDisplay": "RM 22,180",
+      "categorySource": "https://ips.upsi.edu.my/wp-content/uploads/2020/09/Kategori-Yuran.png",
+      "tuitionSourceUrl": "https://ips.upsi.edu.my/wp-content/uploads/2025/05/Terkini_Kadar-Yuran-Pelajar-Antarabangsa_MAC-2026-INTAKE.pdf",
+      "sourcePage": "International postgraduate fee PDF page 1; fee category image on tuition page",
+      "confidence": "high",
+      "canImport": true,
+      "notes": [
+        "Confirmed faculty is listed under Non Science and Technical in the official fee category image."
+      ]
+    },
+    {
+      "code": "MT138",
+      "nameEnOfficial": "MASTER OF BUSINESS ADMINISTRATION (BUSINESS ADMINISTRATION)",
+      "facultyEn": "Faculty of Management and Economic",
+      "facultyStatus": "display-with-caveat",
+      "category": "not-mapped",
+      "totalTuitionMYR": null,
+      "amountDisplay": "not-mapped",
+      "categorySource": "not-mapped",
+      "tuitionSourceUrl": null,
+      "sourcePage": null,
+      "confidence": "blocked",
+      "canImport": false,
+      "notes": [
+        "No exact official category mapping under the strict fee-only rule."
+      ]
+    },
+    {
+      "code": "MT141",
+      "nameEnOfficial": "MASTER OF ACCOUNTING (ACCOUNTING)",
+      "facultyEn": "Faculty of Management and Economic",
+      "facultyStatus": "confirmed",
+      "category": "Non Science & Technical",
+      "totalTuitionMYR": 22180,
+      "amountDisplay": "RM 22,180",
+      "categorySource": "https://ips.upsi.edu.my/wp-content/uploads/2020/09/Kategori-Yuran.png",
+      "tuitionSourceUrl": "https://ips.upsi.edu.my/wp-content/uploads/2025/05/Terkini_Kadar-Yuran-Pelajar-Antarabangsa_MAC-2026-INTAKE.pdf",
+      "sourcePage": "International postgraduate fee PDF page 1; fee category image on tuition page",
+      "confidence": "high",
+      "canImport": true,
+      "notes": [
+        "Confirmed faculty is listed under Non Science and Technical in the official fee category image."
+      ]
+    },
+    {
+      "code": "MT142",
+      "nameEnOfficial": "MASTER OF FINANCE (FINANCIAL MANAGEMENT)",
+      "facultyEn": "Faculty of Management and Economic",
+      "facultyStatus": "confirmed",
+      "category": "Non Science & Technical",
+      "totalTuitionMYR": 22180,
+      "amountDisplay": "RM 22,180",
+      "categorySource": "https://ips.upsi.edu.my/wp-content/uploads/2020/09/Kategori-Yuran.png",
+      "tuitionSourceUrl": "https://ips.upsi.edu.my/wp-content/uploads/2025/05/Terkini_Kadar-Yuran-Pelajar-Antarabangsa_MAC-2026-INTAKE.pdf",
+      "sourcePage": "International postgraduate fee PDF page 1; fee category image on tuition page",
+      "confidence": "high",
+      "canImport": true,
+      "notes": [
+        "Confirmed faculty is listed under Non Science and Technical in the official fee category image."
+      ]
+    },
+    {
+      "code": "MT143",
+      "nameEnOfficial": "MASTER OF ECONOMICS (ECONOMICS)",
+      "facultyEn": "Faculty of Management and Economic",
+      "facultyStatus": "confirmed",
+      "category": "Non Science & Technical",
+      "totalTuitionMYR": 22180,
+      "amountDisplay": "RM 22,180",
+      "categorySource": "https://ips.upsi.edu.my/wp-content/uploads/2020/09/Kategori-Yuran.png",
+      "tuitionSourceUrl": "https://ips.upsi.edu.my/wp-content/uploads/2025/05/Terkini_Kadar-Yuran-Pelajar-Antarabangsa_MAC-2026-INTAKE.pdf",
+      "sourcePage": "International postgraduate fee PDF page 1; fee category image on tuition page",
+      "confidence": "high",
+      "canImport": true,
+      "notes": [
+        "Confirmed faculty is listed under Non Science and Technical in the official fee category image."
+      ]
+    },
+    {
+      "code": "MT144",
+      "nameEnOfficial": "MASTER OF ECONOMICS (ECONOMETRICS)",
+      "facultyEn": "Faculty of Management and Economic",
+      "facultyStatus": "confirmed",
+      "category": "Non Science & Technical",
+      "totalTuitionMYR": 22180,
+      "amountDisplay": "RM 22,180",
+      "categorySource": "https://ips.upsi.edu.my/wp-content/uploads/2020/09/Kategori-Yuran.png",
+      "tuitionSourceUrl": "https://ips.upsi.edu.my/wp-content/uploads/2025/05/Terkini_Kadar-Yuran-Pelajar-Antarabangsa_MAC-2026-INTAKE.pdf",
+      "sourcePage": "International postgraduate fee PDF page 1; fee category image on tuition page",
+      "confidence": "high",
+      "canImport": true,
+      "notes": [
+        "Confirmed faculty is listed under Non Science and Technical in the official fee category image."
+      ]
+    },
+    {
+      "code": "MT148",
+      "nameEnOfficial": "MASTER OF MANAGEMENT (BUSINESS MANAGEMENT)",
+      "facultyEn": "Faculty of Management and Economic",
+      "facultyStatus": "confirmed",
+      "category": "Non Science & Technical",
+      "totalTuitionMYR": 22180,
+      "amountDisplay": "RM 22,180",
+      "categorySource": "https://ips.upsi.edu.my/wp-content/uploads/2020/09/Kategori-Yuran.png",
+      "tuitionSourceUrl": "https://ips.upsi.edu.my/wp-content/uploads/2025/05/Terkini_Kadar-Yuran-Pelajar-Antarabangsa_MAC-2026-INTAKE.pdf",
+      "sourcePage": "International postgraduate fee PDF page 1; fee category image on tuition page",
+      "confidence": "high",
+      "canImport": true,
+      "notes": [
+        "Confirmed faculty is listed under Non Science and Technical in the official fee category image."
+      ]
+    },
+    {
+      "code": "MT149",
+      "nameEnOfficial": "MASTER OF MANAGEMENT (INFORMATION SYSTEM MANAGEMENT)",
+      "facultyEn": "Faculty of Management and Economic",
+      "facultyStatus": "confirmed",
+      "category": "Non Science & Technical",
+      "totalTuitionMYR": 22180,
+      "amountDisplay": "RM 22,180",
+      "categorySource": "https://ips.upsi.edu.my/wp-content/uploads/2020/09/Kategori-Yuran.png",
+      "tuitionSourceUrl": "https://ips.upsi.edu.my/wp-content/uploads/2025/05/Terkini_Kadar-Yuran-Pelajar-Antarabangsa_MAC-2026-INTAKE.pdf",
+      "sourcePage": "International postgraduate fee PDF page 1; fee category image on tuition page",
+      "confidence": "high",
+      "canImport": true,
+      "notes": [
+        "Confirmed faculty is listed under Non Science and Technical in the official fee category image."
+      ]
+    },
+    {
+      "code": "MT150",
+      "nameEnOfficial": "MASTER OF DESIGN (MULTIMEDIA APPLICATION)",
+      "facultyEn": "Faculty Art, Sustainability and Creative Industry",
+      "facultyStatus": "confirmed",
+      "category": "Science & Technical",
+      "totalTuitionMYR": 23160,
+      "amountDisplay": "RM 23,160",
+      "categorySource": "https://ips.upsi.edu.my/wp-content/uploads/2020/09/Kategori-Yuran.png",
+      "tuitionSourceUrl": "https://ips.upsi.edu.my/wp-content/uploads/2025/05/Terkini_Kadar-Yuran-Pelajar-Antarabangsa_MAC-2026-INTAKE.pdf",
+      "sourcePage": "International postgraduate fee PDF page 1; fee category image on tuition page",
+      "confidence": "high",
+      "canImport": true,
+      "notes": [
+        "Confirmed faculty is listed under Science and Technical in the official fee category image."
+      ]
+    },
+    {
+      "code": "MT151",
+      "nameEnOfficial": "MASTER OF DESIGN (CREATIVE BRANDING)",
+      "facultyEn": "Faculty Art, Sustainability and Creative Industry",
+      "facultyStatus": "confirmed",
+      "category": "Science & Technical",
+      "totalTuitionMYR": 23160,
+      "amountDisplay": "RM 23,160",
+      "categorySource": "https://ips.upsi.edu.my/wp-content/uploads/2020/09/Kategori-Yuran.png",
+      "tuitionSourceUrl": "https://ips.upsi.edu.my/wp-content/uploads/2025/05/Terkini_Kadar-Yuran-Pelajar-Antarabangsa_MAC-2026-INTAKE.pdf",
+      "sourcePage": "International postgraduate fee PDF page 1; fee category image on tuition page",
+      "confidence": "high",
+      "canImport": true,
+      "notes": [
+        "Confirmed faculty is listed under Science and Technical in the official fee category image."
+      ]
+    },
+    {
+      "code": "MT152",
+      "nameEnOfficial": "MASTER OF DESIGN (ADVERTISING)",
+      "facultyEn": "Faculty Art, Sustainability and Creative Industry",
+      "facultyStatus": "confirmed",
+      "category": "Science & Technical",
+      "totalTuitionMYR": 23160,
+      "amountDisplay": "RM 23,160",
+      "categorySource": "https://ips.upsi.edu.my/wp-content/uploads/2020/09/Kategori-Yuran.png",
+      "tuitionSourceUrl": "https://ips.upsi.edu.my/wp-content/uploads/2025/05/Terkini_Kadar-Yuran-Pelajar-Antarabangsa_MAC-2026-INTAKE.pdf",
+      "sourcePage": "International postgraduate fee PDF page 1; fee category image on tuition page",
+      "confidence": "high",
+      "canImport": true,
+      "notes": [
+        "Confirmed faculty is listed under Science and Technical in the official fee category image."
+      ]
+    },
+    {
+      "code": "MT154",
+      "nameEnOfficial": "MASTER OF DESIGN (INSTRUCTIONAL MEDIA)",
+      "facultyEn": "Faculty Art, Sustainability and Creative Industry",
+      "facultyStatus": "confirmed",
+      "category": "Science & Technical",
+      "totalTuitionMYR": 23160,
+      "amountDisplay": "RM 23,160",
+      "categorySource": "https://ips.upsi.edu.my/wp-content/uploads/2020/09/Kategori-Yuran.png",
+      "tuitionSourceUrl": "https://ips.upsi.edu.my/wp-content/uploads/2025/05/Terkini_Kadar-Yuran-Pelajar-Antarabangsa_MAC-2026-INTAKE.pdf",
+      "sourcePage": "International postgraduate fee PDF page 1; fee category image on tuition page",
+      "confidence": "high",
+      "canImport": true,
+      "notes": [
+        "Confirmed faculty is listed under Science and Technical in the official fee category image."
+      ]
+    },
+    {
+      "code": "MT155",
+      "nameEnOfficial": "MASTER OF DESIGN (NEW MEDIA)",
+      "facultyEn": "Faculty Art, Sustainability and Creative Industry",
+      "facultyStatus": "confirmed",
+      "category": "Science & Technical",
+      "totalTuitionMYR": 23160,
+      "amountDisplay": "RM 23,160",
+      "categorySource": "https://ips.upsi.edu.my/wp-content/uploads/2020/09/Kategori-Yuran.png",
+      "tuitionSourceUrl": "https://ips.upsi.edu.my/wp-content/uploads/2025/05/Terkini_Kadar-Yuran-Pelajar-Antarabangsa_MAC-2026-INTAKE.pdf",
+      "sourcePage": "International postgraduate fee PDF page 1; fee category image on tuition page",
+      "confidence": "high",
+      "canImport": true,
+      "notes": [
+        "Confirmed faculty is listed under Science and Technical in the official fee category image."
+      ]
+    },
+    {
+      "code": "MT156",
+      "nameEnOfficial": "MASTER OF DESIGN (DIGITAL GAMES)",
+      "facultyEn": "Faculty Art, Sustainability and Creative Industry",
+      "facultyStatus": "confirmed",
+      "category": "Science & Technical",
+      "totalTuitionMYR": 23160,
+      "amountDisplay": "RM 23,160",
+      "categorySource": "https://ips.upsi.edu.my/wp-content/uploads/2020/09/Kategori-Yuran.png",
+      "tuitionSourceUrl": "https://ips.upsi.edu.my/wp-content/uploads/2025/05/Terkini_Kadar-Yuran-Pelajar-Antarabangsa_MAC-2026-INTAKE.pdf",
+      "sourcePage": "International postgraduate fee PDF page 1; fee category image on tuition page",
+      "confidence": "high",
+      "canImport": true,
+      "notes": [
+        "Confirmed faculty is listed under Science and Technical in the official fee category image."
+      ]
+    },
+    {
+      "code": "MT157",
+      "nameEnOfficial": "MASTER OF DESIGN (GAME-BASED-LEARNING)",
+      "facultyEn": "Faculty Art, Sustainability and Creative Industry",
+      "facultyStatus": "confirmed",
+      "category": "Science & Technical",
+      "totalTuitionMYR": 23160,
+      "amountDisplay": "RM 23,160",
+      "categorySource": "https://ips.upsi.edu.my/wp-content/uploads/2020/09/Kategori-Yuran.png",
+      "tuitionSourceUrl": "https://ips.upsi.edu.my/wp-content/uploads/2025/05/Terkini_Kadar-Yuran-Pelajar-Antarabangsa_MAC-2026-INTAKE.pdf",
+      "sourcePage": "International postgraduate fee PDF page 1; fee category image on tuition page",
+      "confidence": "high",
+      "canImport": true,
+      "notes": [
+        "Confirmed faculty is listed under Science and Technical in the official fee category image."
+      ]
+    },
+    {
+      "code": "MT161",
+      "nameEnOfficial": "MASTER OF ART (ENGLISH LITERATURE)",
+      "facultyEn": "Faculty of Language and Communication",
+      "facultyStatus": "confirmed",
+      "category": "Non Science & Technical",
+      "totalTuitionMYR": 22180,
+      "amountDisplay": "RM 22,180",
+      "categorySource": "https://ips.upsi.edu.my/wp-content/uploads/2020/09/Kategori-Yuran.png",
+      "tuitionSourceUrl": "https://ips.upsi.edu.my/wp-content/uploads/2025/05/Terkini_Kadar-Yuran-Pelajar-Antarabangsa_MAC-2026-INTAKE.pdf",
+      "sourcePage": "International postgraduate fee PDF page 1; fee category image on tuition page",
+      "confidence": "medium",
+      "canImport": true,
+      "notes": [
+        "Confirmed faculty is listed under Non Science and Technical in the official fee category image.",
+        "FBK 2025/09 PDF shows newer codes for related fields; current LIST OF code remains mapped through official 2025/05 FBK master PDF and fee category image."
+      ]
+    },
+    {
+      "code": "MT162",
+      "nameEnOfficial": "MASTER OF ART (IBAN LANGUAGE)",
+      "facultyEn": "Faculty of Language and Communication",
+      "facultyStatus": "confirmed",
+      "category": "Non Science & Technical",
+      "totalTuitionMYR": 22180,
+      "amountDisplay": "RM 22,180",
+      "categorySource": "https://ips.upsi.edu.my/wp-content/uploads/2020/09/Kategori-Yuran.png",
+      "tuitionSourceUrl": "https://ips.upsi.edu.my/wp-content/uploads/2025/05/Terkini_Kadar-Yuran-Pelajar-Antarabangsa_MAC-2026-INTAKE.pdf",
+      "sourcePage": "International postgraduate fee PDF page 1; fee category image on tuition page",
+      "confidence": "medium",
+      "canImport": true,
+      "notes": [
+        "Confirmed faculty is listed under Non Science and Technical in the official fee category image.",
+        "FBK 2025/09 PDF shows newer codes for related fields; current LIST OF code remains mapped through official 2025/05 FBK master PDF and fee category image."
+      ]
+    },
+    {
+      "code": "MT163",
+      "nameEnOfficial": "MASTER OF ECONOMICS (ISLAMIC ECONOMICS)",
+      "facultyEn": "Faculty of Management and Economic",
+      "facultyStatus": "confirmed",
+      "category": "Non Science & Technical",
+      "totalTuitionMYR": 22180,
+      "amountDisplay": "RM 22,180",
+      "categorySource": "https://ips.upsi.edu.my/wp-content/uploads/2020/09/Kategori-Yuran.png",
+      "tuitionSourceUrl": "https://ips.upsi.edu.my/wp-content/uploads/2025/05/Terkini_Kadar-Yuran-Pelajar-Antarabangsa_MAC-2026-INTAKE.pdf",
+      "sourcePage": "International postgraduate fee PDF page 1; fee category image on tuition page",
+      "confidence": "high",
+      "canImport": true,
+      "notes": [
+        "Confirmed faculty is listed under Non Science and Technical in the official fee category image."
+      ]
+    },
+    {
+      "code": "MT164",
+      "nameEnOfficial": "MASTER OF MUSIC (CREATIVE MUSIC TECHNOLOGY)",
+      "facultyEn": "Faculty of Music and Performing Arts",
+      "facultyStatus": "confirmed",
+      "category": "Science & Technical",
+      "totalTuitionMYR": 23160,
+      "amountDisplay": "RM 23,160",
+      "categorySource": "https://ips.upsi.edu.my/wp-content/uploads/2020/09/Kategori-Yuran.png",
+      "tuitionSourceUrl": "https://ips.upsi.edu.my/wp-content/uploads/2025/05/Terkini_Kadar-Yuran-Pelajar-Antarabangsa_MAC-2026-INTAKE.pdf",
+      "sourcePage": "International postgraduate fee PDF page 1; fee category image on tuition page",
+      "confidence": "high",
+      "canImport": true,
+      "notes": [
+        "Confirmed faculty is listed under Science and Technical in the official fee category image."
+      ]
+    },
+    {
+      "code": "MT165",
+      "nameEnOfficial": "MASTER OF EDUCATION (CHINESE LANGUAGE)",
+      "facultyEn": "Faculty of Language and Communication",
+      "facultyStatus": "confirmed",
+      "category": "Non Science & Technical",
+      "totalTuitionMYR": 22180,
+      "amountDisplay": "RM 22,180",
+      "categorySource": "https://ips.upsi.edu.my/wp-content/uploads/2020/09/Kategori-Yuran.png",
+      "tuitionSourceUrl": "https://ips.upsi.edu.my/wp-content/uploads/2025/05/Terkini_Kadar-Yuran-Pelajar-Antarabangsa_MAC-2026-INTAKE.pdf",
+      "sourcePage": "International postgraduate fee PDF page 1; fee category image on tuition page",
+      "confidence": "high",
+      "canImport": true,
+      "notes": [
+        "Confirmed faculty is listed under Non Science and Technical in the official fee category image."
+      ]
+    },
+    {
+      "code": "MT166",
+      "nameEnOfficial": "MASTER OF SCIENCE (HUMAN-COMPUTER INTERACTION)",
+      "facultyEn": "Faculty of Computing and Meta-Technology",
+      "facultyStatus": "confirmed",
+      "category": "Science & Technical",
+      "totalTuitionMYR": 23160,
+      "amountDisplay": "RM 23,160",
+      "categorySource": "https://ips.upsi.edu.my/wp-content/uploads/2020/09/Kategori-Yuran.png",
+      "tuitionSourceUrl": "https://ips.upsi.edu.my/wp-content/uploads/2025/05/Terkini_Kadar-Yuran-Pelajar-Antarabangsa_MAC-2026-INTAKE.pdf",
+      "sourcePage": "International postgraduate fee PDF page 1; fee category image on tuition page",
+      "confidence": "high",
+      "canImport": true,
+      "notes": [
+        "Confirmed faculty is listed under Science and Technical in the official fee category image."
+      ]
+    },
+    {
+      "code": "MT167",
+      "nameEnOfficial": "MASTER OF SCIENCE (ARTIFICIAL INTELLIGENT)",
+      "facultyEn": "Faculty of Computing and Meta-Technology",
+      "facultyStatus": "confirmed",
+      "category": "Science & Technical",
+      "totalTuitionMYR": 23160,
+      "amountDisplay": "RM 23,160",
+      "categorySource": "https://ips.upsi.edu.my/wp-content/uploads/2020/09/Kategori-Yuran.png",
+      "tuitionSourceUrl": "https://ips.upsi.edu.my/wp-content/uploads/2025/05/Terkini_Kadar-Yuran-Pelajar-Antarabangsa_MAC-2026-INTAKE.pdf",
+      "sourcePage": "International postgraduate fee PDF page 1; fee category image on tuition page",
+      "confidence": "high",
+      "canImport": true,
+      "notes": [
+        "Confirmed faculty is listed under Science and Technical in the official fee category image."
+      ]
+    },
+    {
+      "code": "MT168",
+      "nameEnOfficial": "MASTER OF EDUCATION (IBAN LANGUAGE)",
+      "facultyEn": "Faculty of Language and Communication",
+      "facultyStatus": "confirmed",
+      "category": "Non Science & Technical",
+      "totalTuitionMYR": 22180,
+      "amountDisplay": "RM 22,180",
+      "categorySource": "https://ips.upsi.edu.my/wp-content/uploads/2020/09/Kategori-Yuran.png",
+      "tuitionSourceUrl": "https://ips.upsi.edu.my/wp-content/uploads/2025/05/Terkini_Kadar-Yuran-Pelajar-Antarabangsa_MAC-2026-INTAKE.pdf",
+      "sourcePage": "International postgraduate fee PDF page 1; fee category image on tuition page",
+      "confidence": "high",
+      "canImport": true,
+      "notes": [
+        "Confirmed faculty is listed under Non Science and Technical in the official fee category image."
+      ]
+    },
+    {
+      "code": "MT169",
+      "nameEnOfficial": "MASTER OF EDUCATION (PHYSICAL EDUCATION)",
+      "facultyEn": "Faculty of Sports Science and Coaching",
+      "facultyStatus": "confirmed",
+      "category": "Science & Technical",
+      "totalTuitionMYR": 23160,
+      "amountDisplay": "RM 23,160",
+      "categorySource": "https://ips.upsi.edu.my/wp-content/uploads/2020/09/Kategori-Yuran.png",
+      "tuitionSourceUrl": "https://ips.upsi.edu.my/wp-content/uploads/2025/05/Terkini_Kadar-Yuran-Pelajar-Antarabangsa_MAC-2026-INTAKE.pdf",
+      "sourcePage": "International postgraduate fee PDF page 1; fee category image on tuition page",
+      "confidence": "high",
+      "canImport": true,
+      "notes": [
+        "Confirmed faculty is listed under Science and Technical in the official fee category image."
+      ]
+    },
+    {
+      "code": "MT170",
+      "nameEnOfficial": "MASTER OF EDUCATION (HEALTH EDUCATION)",
+      "facultyEn": "Faculty of Sports Science and Coaching",
+      "facultyStatus": "confirmed",
+      "category": "Science & Technical",
+      "totalTuitionMYR": 23160,
+      "amountDisplay": "RM 23,160",
+      "categorySource": "https://ips.upsi.edu.my/wp-content/uploads/2020/09/Kategori-Yuran.png",
+      "tuitionSourceUrl": "https://ips.upsi.edu.my/wp-content/uploads/2025/05/Terkini_Kadar-Yuran-Pelajar-Antarabangsa_MAC-2026-INTAKE.pdf",
+      "sourcePage": "International postgraduate fee PDF page 1; fee category image on tuition page",
+      "confidence": "high",
+      "canImport": true,
+      "notes": [
+        "Confirmed faculty is listed under Science and Technical in the official fee category image."
+      ]
+    },
+    {
+      "code": "MT171",
+      "nameEnOfficial": "MASTER OF DESIGN (CREATIVE STUDIES)",
+      "facultyEn": "Faculty Art, Sustainability and Creative Industry",
+      "facultyStatus": "confirmed",
+      "category": "Science & Technical",
+      "totalTuitionMYR": 23160,
+      "amountDisplay": "RM 23,160",
+      "categorySource": "https://ips.upsi.edu.my/wp-content/uploads/2020/09/Kategori-Yuran.png",
+      "tuitionSourceUrl": "https://ips.upsi.edu.my/wp-content/uploads/2025/05/Terkini_Kadar-Yuran-Pelajar-Antarabangsa_MAC-2026-INTAKE.pdf",
+      "sourcePage": "International postgraduate fee PDF page 1; fee category image on tuition page",
+      "confidence": "high",
+      "canImport": true,
+      "notes": [
+        "Confirmed faculty is listed under Science and Technical in the official fee category image."
+      ]
+    },
+    {
+      "code": "MT173",
+      "nameEnOfficial": "MASTER OF SCIENCE (COUNSELING)",
+      "facultyEn": "Faculty of Human Development",
+      "facultyStatus": "confirmed",
+      "category": "Non Science & Technical",
+      "totalTuitionMYR": 22180,
+      "amountDisplay": "RM 22,180",
+      "categorySource": "https://ips.upsi.edu.my/wp-content/uploads/2020/09/Kategori-Yuran.png",
+      "tuitionSourceUrl": "https://ips.upsi.edu.my/wp-content/uploads/2025/05/Terkini_Kadar-Yuran-Pelajar-Antarabangsa_MAC-2026-INTAKE.pdf",
+      "sourcePage": "International postgraduate fee PDF page 1; fee category image on tuition page",
+      "confidence": "high",
+      "canImport": true,
+      "notes": [
+        "Confirmed faculty is listed under Non Science and Technical in the official fee category image."
+      ]
+    },
+    {
+      "code": "MT174",
+      "nameEnOfficial": "MASTER OF ARTS (PERFORMANCE STUDIES)",
+      "facultyEn": "Faculty of Music and Performing Arts",
+      "facultyStatus": "confirmed",
+      "category": "Science & Technical",
+      "totalTuitionMYR": 23160,
+      "amountDisplay": "RM 23,160",
+      "categorySource": "https://ips.upsi.edu.my/wp-content/uploads/2020/09/Kategori-Yuran.png",
+      "tuitionSourceUrl": "https://ips.upsi.edu.my/wp-content/uploads/2025/05/Terkini_Kadar-Yuran-Pelajar-Antarabangsa_MAC-2026-INTAKE.pdf",
+      "sourcePage": "International postgraduate fee PDF page 1; fee category image on tuition page",
+      "confidence": "high",
+      "canImport": true,
+      "notes": [
+        "Confirmed faculty is listed under Science and Technical in the official fee category image."
+      ]
+    },
+    {
+      "code": "MT175",
+      "nameEnOfficial": "MASTER OF ART (KADAZANDUSUN LANGUAGE)",
+      "facultyEn": "Faculty of Language and Communication",
+      "facultyStatus": "confirmed",
+      "category": "Non Science & Technical",
+      "totalTuitionMYR": 22180,
+      "amountDisplay": "RM 22,180",
+      "categorySource": "https://ips.upsi.edu.my/wp-content/uploads/2020/09/Kategori-Yuran.png",
+      "tuitionSourceUrl": "https://ips.upsi.edu.my/wp-content/uploads/2025/05/Terkini_Kadar-Yuran-Pelajar-Antarabangsa_MAC-2026-INTAKE.pdf",
+      "sourcePage": "International postgraduate fee PDF page 1; fee category image on tuition page",
+      "confidence": "medium",
+      "canImport": true,
+      "notes": [
+        "Confirmed faculty is listed under Non Science and Technical in the official fee category image.",
+        "FBK 2025/09 PDF shows newer codes for related fields; current LIST OF code remains mapped through official 2025/05 FBK master PDF and fee category image."
+      ]
+    },
+    {
+      "code": "MT176",
+      "nameEnOfficial": "MASTER OF EDUCATION (KADAZANDUSUN LANGUAGE)",
+      "facultyEn": "Faculty of Language and Communication",
+      "facultyStatus": "confirmed",
+      "category": "Non Science & Technical",
+      "totalTuitionMYR": 22180,
+      "amountDisplay": "RM 22,180",
+      "categorySource": "https://ips.upsi.edu.my/wp-content/uploads/2020/09/Kategori-Yuran.png",
+      "tuitionSourceUrl": "https://ips.upsi.edu.my/wp-content/uploads/2025/05/Terkini_Kadar-Yuran-Pelajar-Antarabangsa_MAC-2026-INTAKE.pdf",
+      "sourcePage": "International postgraduate fee PDF page 1; fee category image on tuition page",
+      "confidence": "high",
+      "canImport": true,
+      "notes": [
+        "Confirmed faculty is listed under Non Science and Technical in the official fee category image."
+      ]
+    },
+    {
+      "code": "MT177",
+      "nameEnOfficial": "MASTER OF EDUCATION (CRITICAL AND CREATIVE THINKING)",
+      "facultyEn": "Faculty of Human Development",
+      "facultyStatus": "confirmed",
+      "category": "Non Science & Technical",
+      "totalTuitionMYR": 22180,
+      "amountDisplay": "RM 22,180",
+      "categorySource": "https://ips.upsi.edu.my/wp-content/uploads/2020/09/Kategori-Yuran.png",
+      "tuitionSourceUrl": "https://ips.upsi.edu.my/wp-content/uploads/2025/05/Terkini_Kadar-Yuran-Pelajar-Antarabangsa_MAC-2026-INTAKE.pdf",
+      "sourcePage": "International postgraduate fee PDF page 1; fee category image on tuition page",
+      "confidence": "high",
+      "canImport": true,
+      "notes": [
+        "Confirmed faculty is listed under Non Science and Technical in the official fee category image."
+      ]
+    },
+    {
+      "code": "MT179",
+      "nameEnOfficial": "MASTER OF SCIENCE (ENGINEERING TECHNOLOGY)",
+      "facultyEn": "Faculty of Technical and Vocational",
+      "facultyStatus": "confirmed",
+      "category": "Science & Technical",
+      "totalTuitionMYR": 23160,
+      "amountDisplay": "RM 23,160",
+      "categorySource": "https://ips.upsi.edu.my/wp-content/uploads/2020/09/Kategori-Yuran.png",
+      "tuitionSourceUrl": "https://ips.upsi.edu.my/wp-content/uploads/2025/05/Terkini_Kadar-Yuran-Pelajar-Antarabangsa_MAC-2026-INTAKE.pdf",
+      "sourcePage": "International postgraduate fee PDF page 1; fee category image on tuition page",
+      "confidence": "high",
+      "canImport": true,
+      "notes": [
+        "Confirmed faculty is listed under Science and Technical in the official fee category image."
+      ]
+    },
+    {
+      "code": "MT180",
+      "nameEnOfficial": "MASTER OF ART (DANCE STUDIES)",
+      "facultyEn": "Faculty of Music and Performing Arts",
+      "facultyStatus": "confirmed",
+      "category": "Science & Technical",
+      "totalTuitionMYR": 23160,
+      "amountDisplay": "RM 23,160",
+      "categorySource": "https://ips.upsi.edu.my/wp-content/uploads/2020/09/Kategori-Yuran.png",
+      "tuitionSourceUrl": "https://ips.upsi.edu.my/wp-content/uploads/2025/05/Terkini_Kadar-Yuran-Pelajar-Antarabangsa_MAC-2026-INTAKE.pdf",
+      "sourcePage": "International postgraduate fee PDF page 1; fee category image on tuition page",
+      "confidence": "high",
+      "canImport": true,
+      "notes": [
+        "Confirmed faculty is listed under Science and Technical in the official fee category image."
+      ]
+    },
+    {
+      "code": "MT181",
+      "nameEnOfficial": "MASTER OF ART (THEATER IN EDUCATION)",
+      "facultyEn": "Faculty of Music and Performing Arts",
+      "facultyStatus": "confirmed",
+      "category": "Science & Technical",
+      "totalTuitionMYR": 23160,
+      "amountDisplay": "RM 23,160",
+      "categorySource": "https://ips.upsi.edu.my/wp-content/uploads/2020/09/Kategori-Yuran.png",
+      "tuitionSourceUrl": "https://ips.upsi.edu.my/wp-content/uploads/2025/05/Terkini_Kadar-Yuran-Pelajar-Antarabangsa_MAC-2026-INTAKE.pdf",
+      "sourcePage": "International postgraduate fee PDF page 1; fee category image on tuition page",
+      "confidence": "high",
+      "canImport": true,
+      "notes": [
+        "Confirmed faculty is listed under Science and Technical in the official fee category image."
+      ]
+    },
+    {
+      "code": "MT183",
+      "nameEnOfficial": "MASTER OF PERFORMANCE STUDIES (PERFORMANCE STUDIES)",
+      "facultyEn": "Faculty of Music and Performing Arts",
+      "facultyStatus": "confirmed",
+      "category": "Science & Technical",
+      "totalTuitionMYR": 23160,
+      "amountDisplay": "RM 23,160",
+      "categorySource": "https://ips.upsi.edu.my/wp-content/uploads/2020/09/Kategori-Yuran.png",
+      "tuitionSourceUrl": "https://ips.upsi.edu.my/wp-content/uploads/2025/05/Terkini_Kadar-Yuran-Pelajar-Antarabangsa_MAC-2026-INTAKE.pdf",
+      "sourcePage": "International postgraduate fee PDF page 1; fee category image on tuition page",
+      "confidence": "high",
+      "canImport": true,
+      "notes": [
+        "Confirmed faculty is listed under Science and Technical in the official fee category image."
+      ]
+    },
+    {
+      "code": "MT184",
+      "nameEnOfficial": "MASTER OF ART (MALAY LANGUAGE)",
+      "facultyEn": "Faculty of Language and Communication",
+      "facultyStatus": "confirmed",
+      "category": "Non Science & Technical",
+      "totalTuitionMYR": 22180,
+      "amountDisplay": "RM 22,180",
+      "categorySource": "https://ips.upsi.edu.my/wp-content/uploads/2020/09/Kategori-Yuran.png",
+      "tuitionSourceUrl": "https://ips.upsi.edu.my/wp-content/uploads/2025/05/Terkini_Kadar-Yuran-Pelajar-Antarabangsa_MAC-2026-INTAKE.pdf",
+      "sourcePage": "International postgraduate fee PDF page 1; fee category image on tuition page",
+      "confidence": "medium",
+      "canImport": true,
+      "notes": [
+        "Confirmed faculty is listed under Non Science and Technical in the official fee category image.",
+        "FBK 2025/09 PDF shows newer codes for related fields; current LIST OF code remains mapped through official 2025/05 FBK master PDF and fee category image."
+      ]
+    },
+    {
+      "code": "MT185",
+      "nameEnOfficial": "MASTER OF ART (MALAY LITERATURE)",
+      "facultyEn": "Faculty of Language and Communication",
+      "facultyStatus": "confirmed",
+      "category": "Non Science & Technical",
+      "totalTuitionMYR": 22180,
+      "amountDisplay": "RM 22,180",
+      "categorySource": "https://ips.upsi.edu.my/wp-content/uploads/2020/09/Kategori-Yuran.png",
+      "tuitionSourceUrl": "https://ips.upsi.edu.my/wp-content/uploads/2025/05/Terkini_Kadar-Yuran-Pelajar-Antarabangsa_MAC-2026-INTAKE.pdf",
+      "sourcePage": "International postgraduate fee PDF page 1; fee category image on tuition page",
+      "confidence": "medium",
+      "canImport": true,
+      "notes": [
+        "Confirmed faculty is listed under Non Science and Technical in the official fee category image.",
+        "FBK 2025/09 PDF shows newer codes for related fields; current LIST OF code remains mapped through official 2025/05 FBK master PDF and fee category image."
+      ]
+    },
+    {
+      "code": "MT186",
+      "nameEnOfficial": "MASTER OF DESIGN (GAME-BASED-LEARNING)",
+      "facultyEn": "Faculty of Computing and Meta-Technology",
+      "facultyStatus": "confirmed",
+      "category": "Science & Technical",
+      "totalTuitionMYR": 23160,
+      "amountDisplay": "RM 23,160",
+      "categorySource": "https://ips.upsi.edu.my/wp-content/uploads/2020/09/Kategori-Yuran.png",
+      "tuitionSourceUrl": "https://ips.upsi.edu.my/wp-content/uploads/2025/05/Terkini_Kadar-Yuran-Pelajar-Antarabangsa_MAC-2026-INTAKE.pdf",
+      "sourcePage": "International postgraduate fee PDF page 1; fee category image on tuition page",
+      "confidence": "high",
+      "canImport": true,
+      "notes": [
+        "Confirmed faculty is listed under Science and Technical in the official fee category image."
+      ]
+    },
+    {
+      "code": "MT187",
+      "nameEnOfficial": "MASTER OF COUNSELLING (CLINICAL MENTAL HEALTH)",
+      "facultyEn": "Faculty of Human Development",
+      "facultyStatus": "confirmed",
+      "category": "Non Science & Technical",
+      "totalTuitionMYR": 22180,
+      "amountDisplay": "RM 22,180",
+      "categorySource": "https://ips.upsi.edu.my/wp-content/uploads/2020/09/Kategori-Yuran.png",
+      "tuitionSourceUrl": "https://ips.upsi.edu.my/wp-content/uploads/2025/05/Terkini_Kadar-Yuran-Pelajar-Antarabangsa_MAC-2026-INTAKE.pdf",
+      "sourcePage": "International postgraduate fee PDF page 1; fee category image on tuition page",
+      "confidence": "medium",
+      "canImport": true,
+      "notes": [
+        "Confirmed faculty is listed under Non Science and Technical in the official fee category image.",
+        "Tuition page has a programme-specific clinical mental health fee PDF, but extracted PDF is local-student only; international mapping uses the confirmed FPM category from the official category image."
+      ]
+    },
+    {
+      "code": "MT188",
+      "nameEnOfficial": "MASTER OF TECHNICAL AND VOCATIONAL EDUCATION (HOME ECONOMICS)",
+      "facultyEn": "Faculty of Technical and Vocational",
+      "facultyStatus": "confirmed",
+      "category": "Science & Technical",
+      "totalTuitionMYR": 23160,
+      "amountDisplay": "RM 23,160",
+      "categorySource": "https://ips.upsi.edu.my/wp-content/uploads/2020/09/Kategori-Yuran.png",
+      "tuitionSourceUrl": "https://ips.upsi.edu.my/wp-content/uploads/2025/05/Terkini_Kadar-Yuran-Pelajar-Antarabangsa_MAC-2026-INTAKE.pdf",
+      "sourcePage": "International postgraduate fee PDF page 1; fee category image on tuition page",
+      "confidence": "high",
+      "canImport": true,
+      "notes": [
+        "Confirmed faculty is listed under Science and Technical in the official fee category image."
+      ]
+    },
+    {
+      "code": "MT189",
+      "nameEnOfficial": "MASTER OF TECHNICAL AND VOCATIONAL EDUCATION (AGRICULTURAL SCIENCE)",
+      "facultyEn": "Faculty of Technical and Vocational",
+      "facultyStatus": "confirmed",
+      "category": "Science & Technical",
+      "totalTuitionMYR": 23160,
+      "amountDisplay": "RM 23,160",
+      "categorySource": "https://ips.upsi.edu.my/wp-content/uploads/2020/09/Kategori-Yuran.png",
+      "tuitionSourceUrl": "https://ips.upsi.edu.my/wp-content/uploads/2025/05/Terkini_Kadar-Yuran-Pelajar-Antarabangsa_MAC-2026-INTAKE.pdf",
+      "sourcePage": "International postgraduate fee PDF page 1; fee category image on tuition page",
+      "confidence": "high",
+      "canImport": true,
+      "notes": [
+        "Confirmed faculty is listed under Science and Technical in the official fee category image."
+      ]
+    },
+    {
+      "code": "MT190",
+      "nameEnOfficial": "MASTER OF TECHNICAL AND VOCATIONAL EDUCATION (ENGINEERING TECHNOLOGY)",
+      "facultyEn": "Faculty of Technical and Vocational",
+      "facultyStatus": "confirmed",
+      "category": "Science & Technical",
+      "totalTuitionMYR": 23160,
+      "amountDisplay": "RM 23,160",
+      "categorySource": "https://ips.upsi.edu.my/wp-content/uploads/2020/09/Kategori-Yuran.png",
+      "tuitionSourceUrl": "https://ips.upsi.edu.my/wp-content/uploads/2025/05/Terkini_Kadar-Yuran-Pelajar-Antarabangsa_MAC-2026-INTAKE.pdf",
+      "sourcePage": "International postgraduate fee PDF page 1; fee category image on tuition page",
+      "confidence": "high",
+      "canImport": true,
+      "notes": [
+        "Confirmed faculty is listed under Science and Technical in the official fee category image."
+      ]
+    },
+    {
+      "code": "MT192",
+      "nameEnOfficial": "MASTER OF ARTS (ENGLISH LANGUAGE)",
+      "facultyEn": "Faculty of Language and Communication",
+      "facultyStatus": "confirmed",
+      "category": "Non Science & Technical",
+      "totalTuitionMYR": 22180,
+      "amountDisplay": "RM 22,180",
+      "categorySource": "https://ips.upsi.edu.my/wp-content/uploads/2020/09/Kategori-Yuran.png",
+      "tuitionSourceUrl": "https://ips.upsi.edu.my/wp-content/uploads/2025/05/Terkini_Kadar-Yuran-Pelajar-Antarabangsa_MAC-2026-INTAKE.pdf",
+      "sourcePage": "International postgraduate fee PDF page 1; fee category image on tuition page",
+      "confidence": "medium",
+      "canImport": true,
+      "notes": [
+        "Confirmed faculty is listed under Non Science and Technical in the official fee category image.",
+        "FBK 2025/09 PDF shows newer codes for related fields; current LIST OF code remains mapped through official 2025/05 FBK master PDF and fee category image."
+      ]
+    },
+    {
+      "code": "MT196",
+      "nameEnOfficial": "MASTER OF SCIENCE (EXERCISE AND HEALTH)",
+      "facultyEn": "Faculty of Sports Science and Coaching",
+      "facultyStatus": "confirmed",
+      "category": "Science & Technical",
+      "totalTuitionMYR": 23160,
+      "amountDisplay": "RM 23,160",
+      "categorySource": "https://ips.upsi.edu.my/wp-content/uploads/2020/09/Kategori-Yuran.png",
+      "tuitionSourceUrl": "https://ips.upsi.edu.my/wp-content/uploads/2025/05/Terkini_Kadar-Yuran-Pelajar-Antarabangsa_MAC-2026-INTAKE.pdf",
+      "sourcePage": "International postgraduate fee PDF page 1; fee category image on tuition page",
+      "confidence": "high",
+      "canImport": true,
+      "notes": [
+        "Confirmed faculty is listed under Science and Technical in the official fee category image."
+      ]
+    },
+    {
+      "code": "MT197",
+      "nameEnOfficial": "MASTER OF EDUCATION IN ARABIC LANGUAGE",
+      "facultyEn": "Faculty of Language and Communication",
+      "facultyStatus": "confirmed",
+      "category": "Non Science & Technical",
+      "totalTuitionMYR": 22180,
+      "amountDisplay": "RM 22,180",
+      "categorySource": "https://ips.upsi.edu.my/wp-content/uploads/2020/09/Kategori-Yuran.png",
+      "tuitionSourceUrl": "https://ips.upsi.edu.my/wp-content/uploads/2025/05/Terkini_Kadar-Yuran-Pelajar-Antarabangsa_MAC-2026-INTAKE.pdf",
+      "sourcePage": "International postgraduate fee PDF page 1; fee category image on tuition page",
+      "confidence": "high",
+      "canImport": true,
+      "notes": [
+        "Confirmed faculty is listed under Non Science and Technical in the official fee category image."
+      ]
+    },
+    {
+      "code": "MT198",
+      "nameEnOfficial": "MASTER OF EDUCATION(MORAL AND CITIZENSHIP STUDIES)",
+      "facultyEn": "Faculty of Human Sciences",
+      "facultyStatus": "confirmed",
+      "category": "Non Science & Technical",
+      "totalTuitionMYR": 22180,
+      "amountDisplay": "RM 22,180",
+      "categorySource": "https://ips.upsi.edu.my/wp-content/uploads/2020/09/Kategori-Yuran.png",
+      "tuitionSourceUrl": "https://ips.upsi.edu.my/wp-content/uploads/2025/05/Terkini_Kadar-Yuran-Pelajar-Antarabangsa_MAC-2026-INTAKE.pdf",
+      "sourcePage": "International postgraduate fee PDF page 1; fee category image on tuition page",
+      "confidence": "high",
+      "canImport": true,
+      "notes": [
+        "Confirmed faculty is listed under Non Science and Technical in the official fee category image."
+      ]
+    },
+    {
+      "code": "MT199",
+      "nameEnOfficial": "MASTER OF EDUCATION (DATA SCIENCE)",
+      "facultyEn": "Faculty of Science and Mathematics",
+      "facultyStatus": "confirmed",
+      "category": "not-mapped",
+      "totalTuitionMYR": null,
+      "amountDisplay": "not-mapped",
+      "categorySource": "not-mapped",
+      "tuitionSourceUrl": null,
+      "sourcePage": null,
+      "confidence": "blocked",
+      "canImport": false,
+      "notes": [
+        "No exact official category mapping under the strict fee-only rule."
+      ]
+    },
+    {
+      "code": "MT201",
+      "nameEnOfficial": "MASTER OF EDUCATION (TAMIL LANGUAGE)",
+      "facultyEn": "Faculty of Language and Communication",
+      "facultyStatus": "confirmed",
+      "category": "Non Science & Technical",
+      "totalTuitionMYR": 22180,
+      "amountDisplay": "RM 22,180",
+      "categorySource": "https://ips.upsi.edu.my/wp-content/uploads/2020/09/Kategori-Yuran.png",
+      "tuitionSourceUrl": "https://ips.upsi.edu.my/wp-content/uploads/2025/05/Terkini_Kadar-Yuran-Pelajar-Antarabangsa_MAC-2026-INTAKE.pdf",
+      "sourcePage": "International postgraduate fee PDF page 1; fee category image on tuition page",
+      "confidence": "high",
+      "canImport": true,
+      "notes": [
+        "Confirmed faculty is listed under Non Science and Technical in the official fee category image."
+      ]
+    },
+    {
+      "code": "MT204",
+      "nameEnOfficial": "MASTER OF EDUCATION (GEOGRAPHY)",
+      "facultyEn": "Faculty of Human Sciences",
+      "facultyStatus": "confirmed",
+      "category": "Non Science & Technical",
+      "totalTuitionMYR": 22180,
+      "amountDisplay": "RM 22,180",
+      "categorySource": "https://ips.upsi.edu.my/wp-content/uploads/2020/09/Kategori-Yuran.png",
+      "tuitionSourceUrl": "https://ips.upsi.edu.my/wp-content/uploads/2025/05/Terkini_Kadar-Yuran-Pelajar-Antarabangsa_MAC-2026-INTAKE.pdf",
+      "sourcePage": "International postgraduate fee PDF page 1; fee category image on tuition page",
+      "confidence": "high",
+      "canImport": true,
+      "notes": [
+        "Confirmed faculty is listed under Non Science and Technical in the official fee category image."
+      ]
+    },
+    {
+      "code": "MT205",
+      "nameEnOfficial": "MASTER OF COMMUNICATION (CONTEMPORARY MEDIA STUDIES)",
+      "facultyEn": "Faculty of Language and Communication",
+      "facultyStatus": "confirmed",
+      "category": "Non Science & Technical",
+      "totalTuitionMYR": 22180,
+      "amountDisplay": "RM 22,180",
+      "categorySource": "https://ips.upsi.edu.my/wp-content/uploads/2020/09/Kategori-Yuran.png",
+      "tuitionSourceUrl": "https://ips.upsi.edu.my/wp-content/uploads/2025/05/Terkini_Kadar-Yuran-Pelajar-Antarabangsa_MAC-2026-INTAKE.pdf",
+      "sourcePage": "International postgraduate fee PDF page 1; fee category image on tuition page",
+      "confidence": "high",
+      "canImport": true,
+      "notes": [
+        "Confirmed faculty is listed under Non Science and Technical in the official fee category image."
+      ]
+    },
+    {
+      "code": "MT207",
+      "nameEnOfficial": "MASTER OF POLITICS AND GOVERNANCE",
+      "facultyEn": "Faculty of Human Sciences",
+      "facultyStatus": "confirmed",
+      "category": "Non Science & Technical",
+      "totalTuitionMYR": 22180,
+      "amountDisplay": "RM 22,180",
+      "categorySource": "https://ips.upsi.edu.my/wp-content/uploads/2020/09/Kategori-Yuran.png",
+      "tuitionSourceUrl": "https://ips.upsi.edu.my/wp-content/uploads/2025/05/Terkini_Kadar-Yuran-Pelajar-Antarabangsa_MAC-2026-INTAKE.pdf",
+      "sourcePage": "International postgraduate fee PDF page 1; fee category image on tuition page",
+      "confidence": "high",
+      "canImport": true,
+      "notes": [
+        "Confirmed faculty is listed under Non Science and Technical in the official fee category image."
+      ]
+    }
+  ]
+}

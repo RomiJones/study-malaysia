@@ -1,0 +1,3005 @@
+{
+  "schemaVersion": 3,
+  "officialDomains": [
+    "newinti.edu.my"
+  ],
+  "scope": {
+    "universityCode": "INTI",
+    "collectionScope": "full",
+    "levels": [
+      "bachelor",
+      "master",
+      "phd"
+    ],
+    "applicantScope": "international",
+    "academicSession": "Current official programme pages rechecked 2026-06-21"
+  },
+  "authorization": "collect",
+  "counts": {
+    "directoryOccurrences": 151,
+    "uniqueOfficialEntries": 151,
+    "canonicalProgrammes": 107,
+    "ready": 0,
+    "needsReview": 107,
+    "notAvailableForInternational": 0,
+    "byLevel": {
+      "bachelor": 74,
+      "master": 23,
+      "phd": 10
+    }
+  },
+  "coverage": {
+    "institutionProfile": {
+      "covered": 1,
+      "unpublished": 0,
+      "review": 0
+    },
+    "identity": {
+      "covered": 107,
+      "unpublished": 0,
+      "review": 0
+    },
+    "faculty": {
+      "covered": 107,
+      "unpublished": 0,
+      "review": 0
+    },
+    "studyMode": {
+      "covered": 107,
+      "unpublished": 0,
+      "review": 0
+    },
+    "campus": {
+      "covered": 107,
+      "unpublished": 0,
+      "review": 0
+    },
+    "duration": {
+      "covered": 107,
+      "unpublished": 0,
+      "review": 0
+    },
+    "listDurationYears": {
+      "covered": 106,
+      "unpublished": 0,
+      "review": 1
+    },
+    "intake": {
+      "covered": 107,
+      "unpublished": 0,
+      "review": 0
+    },
+    "internationalEligibility": {
+      "covered": 107,
+      "unpublished": 0,
+      "review": 0
+    },
+    "academicRequirement": {
+      "covered": 107,
+      "unpublished": 0,
+      "review": 0
+    },
+    "languageRequirement": {
+      "covered": 93,
+      "unpublished": 0,
+      "review": 14
+    },
+    "listIeltsSummary": {
+      "covered": 81,
+      "unpublished": 0,
+      "review": 26
+    },
+    "applicationDocuments": {
+      "covered": 107,
+      "unpublished": 0,
+      "review": 0
+    },
+    "fee": {
+      "covered": 0,
+      "unpublished": 0,
+      "review": 107
+    },
+    "chinaSpecificRequirement": {
+      "covered": 107,
+      "unpublished": 0,
+      "review": 0
+    },
+    "routeSpecificRequirements": {
+      "covered": 91,
+      "unpublished": 16,
+      "review": 0
+    },
+    "evidence": {
+      "covered": 107,
+      "unpublished": 0,
+      "review": 0
+    },
+    "deepSourceFieldExploration": {
+      "covered": 107,
+      "unpublished": 0,
+      "review": 0
+    },
+    "studentFacingContentHygiene": {
+      "covered": 107,
+      "unpublished": 0,
+      "review": 0
+    },
+    "localization": {
+      "covered": 0,
+      "unpublished": 0,
+      "review": 107
+    }
+  },
+  "sources": [
+    {
+      "id": "homepage",
+      "url": "https://newinti.edu.my/",
+      "role": "institution-authority",
+      "sourceType": "official-page",
+      "fields": [
+        "institution profile"
+      ],
+      "sha256": "352776cbed2fbcef5a9e21677fa3b29b11f5708e41945662fb528a17b819e0ff"
+    },
+    {
+      "id": "campuses",
+      "url": "https://newinti.edu.my/campuses/",
+      "role": "institution-authority",
+      "sourceType": "official-page",
+      "fields": [
+        "institution profile"
+      ],
+      "sha256": "01fba5160a2939765c15f7259e7cbcb724ff60ff144edeb8455ab6545470f700"
+    },
+    {
+      "id": "campus-inti-international-university",
+      "url": "https://newinti.edu.my/campuses/inti-international-university/",
+      "role": "institution-authority",
+      "sourceType": "official-page",
+      "fields": [
+        "institution profile"
+      ],
+      "sha256": "e8c37f1190d4c999319a164021f67b5b3fe3eafa4d1da37f54f55467ed0c674c"
+    },
+    {
+      "id": "history",
+      "url": "https://newinti.edu.my/why-inti/our-history/",
+      "role": "institution-authority",
+      "sourceType": "official-page",
+      "fields": [
+        "institution profile"
+      ],
+      "sha256": "d1b85fe6eaba8a441a5685953b7100c3352d170422f78d377c84cd10d792e354"
+    },
+    {
+      "id": "international-students",
+      "url": "https://newinti.edu.my/international-students/",
+      "role": "institution-authority",
+      "sourceType": "official-page",
+      "fields": [
+        "institution profile"
+      ],
+      "sha256": "3b05472d57977653a3eb54b607db4be342899028060bf14ca6a0e14656ecef5a"
+    },
+    {
+      "id": "international-how-to-apply",
+      "url": "https://newinti.edu.my/international-students/how-to-apply/",
+      "role": "field-authority",
+      "sourceType": "official-page",
+      "fields": [
+        "programme identity",
+        "programme fields"
+      ],
+      "sha256": "d259bededa92c2222cf099b7d1d5899f8750350d94139df5f743abcda0428231"
+    },
+    {
+      "id": "international-entry-requirements",
+      "url": "https://newinti.edu.my/international-students/entry-requirements/",
+      "role": "field-authority",
+      "sourceType": "official-page",
+      "fields": [
+        "programme identity",
+        "programme fields"
+      ],
+      "sha256": "5df7f2b0f19da02edf91ee63f9c2b29b1daba0a6531ff6c9d52eb3bfebceac7b"
+    },
+    {
+      "id": "academic-programmes",
+      "url": "https://newinti.edu.my/academic-programmes/",
+      "role": "canonical",
+      "sourceType": "official-page",
+      "fields": [
+        "programme identity",
+        "programme fields"
+      ],
+      "sha256": "6483e8dddf4f73b75c05c753de0737064e431b331afa3f7091ecd989e206a0d2"
+    },
+    {
+      "id": "degree-taxonomy",
+      "url": "https://newinti.edu.my/certifications/degree/",
+      "role": "canonical",
+      "sourceType": "official-page",
+      "fields": [
+        "programme identity",
+        "programme fields"
+      ],
+      "sha256": "131479584bbdcffbbea5caaaef0013b96a6f269fc13fc0a1ffa3d3b496b1d247"
+    },
+    {
+      "id": "masters-taxonomy",
+      "url": "https://newinti.edu.my/certifications/masters/",
+      "role": "canonical",
+      "sourceType": "official-page",
+      "fields": [
+        "programme identity",
+        "programme fields"
+      ],
+      "sha256": "f186c78c61e51feeec7910c208cc8eccdf7e63eb777f08514994c32da9e5fcf8"
+    },
+    {
+      "id": "phd-taxonomy",
+      "url": "https://newinti.edu.my/certifications/phd/",
+      "role": "canonical",
+      "sourceType": "official-page",
+      "fields": [
+        "programme identity",
+        "programme fields"
+      ],
+      "sha256": "25c8573f92ba1606a2dbe196e63ded10259d0c31b3b495a4541c75852ed1423b"
+    },
+    {
+      "id": "degree-taxonomy-page-2",
+      "url": "https://newinti.edu.my/certifications/degree/page/2/",
+      "role": "canonical",
+      "sourceType": "official-page",
+      "fields": [
+        "programme identity",
+        "level baseline"
+      ],
+      "sha256": "d23d80a0660eaf1c711fa13a4db1a506d482adf6c90f36f6068eceabb773bfe6"
+    },
+    {
+      "id": "degree-taxonomy-page-3",
+      "url": "https://newinti.edu.my/certifications/degree/page/3/",
+      "role": "canonical",
+      "sourceType": "official-page",
+      "fields": [
+        "programme identity",
+        "level baseline"
+      ],
+      "sha256": "445d32ea7d306b7cefb86c27733ecd7584164e0d214f3f540c247b7fd7750678"
+    },
+    {
+      "id": "degree-taxonomy-page-4",
+      "url": "https://newinti.edu.my/certifications/degree/page/4/",
+      "role": "canonical",
+      "sourceType": "official-page",
+      "fields": [
+        "programme identity",
+        "level baseline"
+      ],
+      "sha256": "a308878eab4eabd36a7a9d665487f71a7de9e54b5cf7108b76f854c0e86d5d4c"
+    },
+    {
+      "id": "degree-taxonomy-page-5",
+      "url": "https://newinti.edu.my/certifications/degree/page/5/",
+      "role": "canonical",
+      "sourceType": "official-page",
+      "fields": [
+        "programme identity",
+        "level baseline"
+      ],
+      "sha256": "fdb7a9ef93588e43eb653c0c35b972d547b61303fee33ba2ae0e128cbdb3d5fa"
+    },
+    {
+      "id": "degree-taxonomy-page-6",
+      "url": "https://newinti.edu.my/certifications/degree/",
+      "role": "canonical",
+      "sourceType": "official-page",
+      "fields": [
+        "programme identity",
+        "level baseline"
+      ],
+      "sha256": "78296ef04741b1ff82239743cbad0b69e44cac9474c1cf7591c6215e427b60a4"
+    },
+    {
+      "id": "masters-taxonomy-page-2",
+      "url": "https://newinti.edu.my/certifications/masters/page/2/",
+      "role": "canonical",
+      "sourceType": "official-page",
+      "fields": [
+        "programme identity",
+        "level baseline"
+      ],
+      "sha256": "a6df2deeecdd6cb44f37ddb214d827ceaf5768bf8cbafff545b2c641aca8d579"
+    },
+    {
+      "id": "masters-taxonomy-page-3",
+      "url": "https://newinti.edu.my/certifications/masters/",
+      "role": "canonical",
+      "sourceType": "official-page",
+      "fields": [
+        "programme identity",
+        "level baseline"
+      ],
+      "sha256": "f186c78c61e51feeec7910c208cc8eccdf7e63eb777f08514994c32da9e5fcf8"
+    },
+    {
+      "id": "programme-001-programme-actuarial-science-american-university",
+      "url": "https://newinti.edu.my/programme/actuarial-science-american-university/",
+      "role": "field-authority",
+      "sourceType": "official-page",
+      "fields": [
+        "programme detail",
+        "fees",
+        "requirements",
+        "intake",
+        "course setting",
+        "career"
+      ],
+      "sha256": "a37c031c1810b9830fb4cf4ccc37c410eaaff2e2f733b2bdd5f9f0db375d1770"
+    },
+    {
+      "id": "brochure-brochures-aup-pdf",
+      "url": "https://newinti.edu.my/brochures/aup.pdf",
+      "role": "field-authority",
+      "sourceType": "official-pdf",
+      "fields": [
+        "programme brochure",
+        "requirements",
+        "language",
+        "course setting",
+        "career"
+      ],
+      "sha256": "a51b2d4e07c4dbffb8662a566fce8fc203000d13029943273fc22695c3ee206d"
+    },
+    {
+      "id": "programme-002-programme-australian-degree-transfer-programme-commerce",
+      "url": "https://newinti.edu.my/programme/australian-degree-transfer-programme-commerce/",
+      "role": "field-authority",
+      "sourceType": "official-page",
+      "fields": [
+        "programme detail",
+        "fees",
+        "requirements",
+        "intake",
+        "course setting",
+        "career"
+      ],
+      "sha256": "c5fbd1da3903ae87000fbce36b97b9b907579dad950c0f2346649549472c1b0a"
+    },
+    {
+      "id": "brochure-brochures-business-pdf",
+      "url": "https://newinti.edu.my/brochures/business.pdf",
+      "role": "field-authority",
+      "sourceType": "official-pdf",
+      "fields": [
+        "programme brochure",
+        "requirements",
+        "language",
+        "course setting",
+        "career"
+      ],
+      "sha256": "959e304541c8edc9b4b11d5f683bd027270d250e479a05eac40fbb259dd0c5ff"
+    },
+    {
+      "id": "programme-003-programme-australian-degree-transfer-programme-science",
+      "url": "https://newinti.edu.my/programme/australian-degree-transfer-programme-science/",
+      "role": "field-authority",
+      "sourceType": "official-page",
+      "fields": [
+        "programme detail",
+        "fees",
+        "requirements",
+        "intake",
+        "course setting",
+        "career"
+      ],
+      "sha256": "ec69ceb42c2c1f063214266ba68fb3053f8717910b8a6e5702de24505ddb077f"
+    },
+    {
+      "id": "brochure-brochures-biotechnology-pdf",
+      "url": "https://newinti.edu.my/brochures/biotechnology.pdf",
+      "role": "field-authority",
+      "sourceType": "official-pdf",
+      "fields": [
+        "programme brochure",
+        "requirements",
+        "language",
+        "course setting",
+        "career"
+      ],
+      "sha256": "fa9e1a7b35e34f3328d492f7fc7a291936fdb1cd52cab98346536a954bd03259"
+    },
+    {
+      "id": "programme-004-programme-b-a-hons-in-fashion-management-and-communication-30-in-collaboration-with-sheffield-hallam-university-uk",
+      "url": "https://newinti.edu.my/programme/b-a-hons-in-fashion-management-and-communication-30-in-collaboration-with-sheffield-hallam-university-uk/",
+      "role": "field-authority",
+      "sourceType": "official-page",
+      "fields": [
+        "programme detail",
+        "fees",
+        "requirements",
+        "intake",
+        "course setting",
+        "career"
+      ],
+      "sha256": "cd133e37ee401d316cf9f6d5605d00c758792823fb805fa0c8c13eef5c866dca"
+    },
+    {
+      "id": "brochure-brochures-art-and-design-pdf",
+      "url": "https://newinti.edu.my/brochures/art-and-design.pdf",
+      "role": "field-authority",
+      "sourceType": "official-pdf",
+      "fields": [
+        "programme brochure",
+        "requirements",
+        "language",
+        "course setting",
+        "career"
+      ],
+      "sha256": "e278688933d094ad2c763c7ca11079fb4b66062c0a62cee45c19f7df70a0d57f"
+    },
+    {
+      "id": "programme-005-programme-bsc-hons-physiotherapy",
+      "url": "https://newinti.edu.my/programme/bsc-hons-physiotherapy/",
+      "role": "field-authority",
+      "sourceType": "official-page",
+      "fields": [
+        "programme detail",
+        "fees",
+        "requirements",
+        "intake",
+        "course setting",
+        "career"
+      ],
+      "sha256": "f59ef24016e8b8b42560565bc794662a2fee1e9237f878e8fefe7770cb06174e"
+    },
+    {
+      "id": "brochure-brochures-physiotherapy-pdf",
+      "url": "https://newinti.edu.my/brochures/physiotherapy.pdf",
+      "role": "field-authority",
+      "sourceType": "official-pdf",
+      "fields": [
+        "programme brochure",
+        "requirements",
+        "language",
+        "course setting",
+        "career"
+      ],
+      "sha256": "a5b735544e45b264199597bd5ec472b1b3006d0464cd8d0a088ab1141db5698c"
+    },
+    {
+      "id": "programme-006-programme-ba-hons-graphic-design-3-0-sheffield-hallam-uk",
+      "url": "https://newinti.edu.my/programme/ba-hons-graphic-design-3-0-sheffield-hallam-uk/",
+      "role": "field-authority",
+      "sourceType": "official-page",
+      "fields": [
+        "programme detail",
+        "fees",
+        "requirements",
+        "intake",
+        "course setting",
+        "career"
+      ],
+      "sha256": "9842538022310a065bc38667f5001f226dfe799d08035decf0c970b36f0165ff"
+    },
+    {
+      "id": "programme-007-programme-bachelor-in-music-production-and-audio-technology-honours",
+      "url": "https://newinti.edu.my/programme/bachelor-in-music-production-and-audio-technology-honours/",
+      "role": "field-authority",
+      "sourceType": "official-page",
+      "fields": [
+        "programme detail",
+        "fees",
+        "requirements",
+        "intake",
+        "course setting",
+        "career"
+      ],
+      "sha256": "51ed820b5ac7dba300e891fe5e536f9a03f0c4487107648c21c6aff1e65967d8"
+    },
+    {
+      "id": "brochure-brochures-bachelor-in-music-production-and-audio-technology-honours-pdf",
+      "url": "https://newinti.edu.my/brochures/Bachelor-in-Music-Production-and-Audio-Technology-(Honours).pdf",
+      "role": "field-authority",
+      "sourceType": "official-pdf",
+      "fields": [
+        "programme brochure",
+        "requirements",
+        "language",
+        "course setting",
+        "career"
+      ],
+      "sha256": "e4dec88932e3e7efe69ea6f97520a1b1c1488c2b290bb1687fdf3985034de77e"
+    },
+    {
+      "id": "programme-008-programme-bachelor-in-sports-management-honours",
+      "url": "https://newinti.edu.my/programme/bachelor-in-sports-management-honours/",
+      "role": "field-authority",
+      "sourceType": "official-page",
+      "fields": [
+        "programme detail",
+        "fees",
+        "requirements",
+        "intake",
+        "course setting",
+        "career"
+      ],
+      "sha256": "c99497c4f8db2a3755ad11c87bd444b90b60951d597e6263a859957414731b7a"
+    },
+    {
+      "id": "brochure-brochures-bachelor-in-sports-management-honours-pdf",
+      "url": "https://newinti.edu.my/brochures/Bachelor-in-Sports-Management-(Honours).pdf",
+      "role": "field-authority",
+      "sourceType": "official-pdf",
+      "fields": [
+        "programme brochure",
+        "requirements",
+        "language",
+        "course setting",
+        "career"
+      ],
+      "sha256": "5161553a21bf4542105afbecf3be80847953fac501227252f88d202d0c746068"
+    },
+    {
+      "id": "programme-009-programme-bachelor-of-accountancy-hons",
+      "url": "https://newinti.edu.my/programme/bachelor-of-accountancy-hons/",
+      "role": "field-authority",
+      "sourceType": "official-page",
+      "fields": [
+        "programme detail",
+        "fees",
+        "requirements",
+        "intake",
+        "course setting",
+        "career"
+      ],
+      "sha256": "70e8c418180e9a3812a0a20a4d8e2e57affb28ad8860140b7380840f2244a715"
+    },
+    {
+      "id": "programme-010-programme-bachelor-of-accounting-finance-hons",
+      "url": "https://newinti.edu.my/programme/bachelor-of-accounting-finance-hons/",
+      "role": "field-authority",
+      "sourceType": "official-page",
+      "fields": [
+        "programme detail",
+        "fees",
+        "requirements",
+        "intake",
+        "course setting",
+        "career"
+      ],
+      "sha256": "b37841a7c470fc61fdc2544398bd891e6a8641d12429ac7e0fc7d58a387ca139"
+    },
+    {
+      "id": "programme-011-programme-bachelor-of-art-honours-interior-architecture-design-3-5-0-sheffield-hallam-uk",
+      "url": "https://newinti.edu.my/programme/bachelor-of-art-honours-interior-architecture-design-3-5-0-sheffield-hallam-uk/",
+      "role": "field-authority",
+      "sourceType": "official-page",
+      "fields": [
+        "programme detail",
+        "fees",
+        "requirements",
+        "intake",
+        "course setting",
+        "career"
+      ],
+      "sha256": "585fcba6168cd3a8dfd4b6cf91c7701397ba89383c13c7c5f3d5e6001ed07e1e"
+    },
+    {
+      "id": "programme-012-programme-ba-hons-accounting-and-finance-3-0-hertfordshire-uk",
+      "url": "https://newinti.edu.my/programme/ba-hons-accounting-and-finance-3-0-hertfordshire-uk/",
+      "role": "field-authority",
+      "sourceType": "official-page",
+      "fields": [
+        "programme detail",
+        "fees",
+        "requirements",
+        "intake",
+        "course setting",
+        "career"
+      ],
+      "sha256": "0c7b1883ee370433cb8c13148fc86cf47a11a90b47d258dcef7b22c39afec1c1"
+    },
+    {
+      "id": "programme-013-programme-bachelor-of-arts-honours-advertising-and-digital-marketing-30-in-collaboration-with-university-of-hertfordshir",
+      "url": "https://newinti.edu.my/programme/bachelor-of-arts-honours-advertising-and-digital-marketing-30-in-collaboration-with-university-of-hertfordshire-uk/",
+      "role": "field-authority",
+      "sourceType": "official-page",
+      "fields": [
+        "programme detail",
+        "fees",
+        "requirements",
+        "intake",
+        "course setting",
+        "career"
+      ],
+      "sha256": "f8b85c13226a582ba152fe92c34736719eabb2f3c91c79ec31b8ef146b1773d1"
+    },
+    {
+      "id": "programme-014-programme-ba-hons-business-administration-3-0-in-university-of-hertfordshire-uk",
+      "url": "https://newinti.edu.my/programme/ba-hons-business-administration-3-0-in-university-of-hertfordshire-uk/",
+      "role": "field-authority",
+      "sourceType": "official-page",
+      "fields": [
+        "programme detail",
+        "fees",
+        "requirements",
+        "intake",
+        "course setting",
+        "career"
+      ],
+      "sha256": "a48cacbf7ce7d7d7e83944dfdfe5e23544d857871e17b92215ec87f062db4658"
+    },
+    {
+      "id": "programme-015-programme-bachelor-of-arts-honours-digital-media",
+      "url": "https://newinti.edu.my/programme/bachelor-of-arts-honours-digital-media/",
+      "role": "field-authority",
+      "sourceType": "official-page",
+      "fields": [
+        "programme detail",
+        "fees",
+        "requirements",
+        "intake",
+        "course setting",
+        "career"
+      ],
+      "sha256": "502a46f8b35fb4ae820501ef8bf99d264eff8aafda90368d000222668416674e"
+    },
+    {
+      "id": "brochure-brochures-mass-communication-pdf",
+      "url": "https://newinti.edu.my/brochures/mass-communication.pdf",
+      "role": "field-authority",
+      "sourceType": "official-pdf",
+      "fields": [
+        "programme brochure",
+        "requirements",
+        "language",
+        "course setting",
+        "career"
+      ],
+      "sha256": "c9743cefdbfc86868d2b8818275ebc7e5475fb1ca8f6d1d38fc397de09c271d1"
+    },
+    {
+      "id": "programme-016-programme-ba-hons-finance-30in-collaboration-with-university-of-hertfordshire-uk",
+      "url": "https://newinti.edu.my/programme/ba-hons-finance-30in-collaboration-with-university-of-hertfordshire-uk/",
+      "role": "field-authority",
+      "sourceType": "official-page",
+      "fields": [
+        "programme detail",
+        "fees",
+        "requirements",
+        "intake",
+        "course setting",
+        "career"
+      ],
+      "sha256": "f617a796a27e856d4c834daae57e53735d97a299a219949a0e75b73d27da20c1"
+    },
+    {
+      "id": "programme-017-programme-ba-hons-marketing-30-university-of-hertfordshire-uk",
+      "url": "https://newinti.edu.my/programme/ba-hons-marketing-30-university-of-hertfordshire-uk/",
+      "role": "field-authority",
+      "sourceType": "official-page",
+      "fields": [
+        "programme detail",
+        "fees",
+        "requirements",
+        "intake",
+        "course setting",
+        "career"
+      ],
+      "sha256": "64ca2bae40a8496d53896bad042addb56d286fc86a2f54336acf903a71b817a2"
+    },
+    {
+      "id": "programme-018-programme-3-0-ba-hons-mass-communications-collaboration-university-hertfordshire-uk",
+      "url": "https://newinti.edu.my/programme/3-0-ba-hons-mass-communications-collaboration-university-hertfordshire-uk/",
+      "role": "field-authority",
+      "sourceType": "official-page",
+      "fields": [
+        "programme detail",
+        "fees",
+        "requirements",
+        "intake",
+        "course setting",
+        "career"
+      ],
+      "sha256": "74fe0105961f65ba3f38e17208ac0bc57716e464becf73f55b250d7a8d552b9a"
+    },
+    {
+      "id": "programme-019-programme-4-0-bachelor-arts-communication-collaboration-southern-new-hampshire-university-usa",
+      "url": "https://newinti.edu.my/programme/4-0-bachelor-arts-communication-collaboration-southern-new-hampshire-university-usa/",
+      "role": "field-authority",
+      "sourceType": "official-page",
+      "fields": [
+        "programme detail",
+        "fees",
+        "requirements",
+        "intake",
+        "course setting",
+        "career"
+      ],
+      "sha256": "2c8af0b39e8567c6910acc5f517af7ab181ca4514ed1ec0219f0ffc5a81698b6"
+    },
+    {
+      "id": "brochure-brochures-snhu-pdf",
+      "url": "https://newinti.edu.my/brochures/snhu.pdf",
+      "role": "field-authority",
+      "sourceType": "official-pdf",
+      "fields": [
+        "programme brochure",
+        "requirements",
+        "language",
+        "course setting",
+        "career"
+      ],
+      "sha256": "b6e25c1704a96b07404b5519309e7446b11947b6a3e23f8fccfa2c206ccf54d6"
+    },
+    {
+      "id": "programme-020-programme-4-0-bachelor-arts-psychology-collaboration-southern-new-hampshire-university-usa",
+      "url": "https://newinti.edu.my/programme/4-0-bachelor-arts-psychology-collaboration-southern-new-hampshire-university-usa/",
+      "role": "field-authority",
+      "sourceType": "official-page",
+      "fields": [
+        "programme detail",
+        "fees",
+        "requirements",
+        "intake",
+        "course setting",
+        "career"
+      ],
+      "sha256": "ecdda15aa3ba7db3e63ca5be210095e698fdd62511ee6136141d8dd08544dc91"
+    },
+    {
+      "id": "programme-021-programme-bachelor-of-banking-and-finance-hons",
+      "url": "https://newinti.edu.my/programme/bachelor-of-banking-and-finance-hons/",
+      "role": "field-authority",
+      "sourceType": "official-page",
+      "fields": [
+        "programme detail",
+        "fees",
+        "requirements",
+        "intake",
+        "course setting",
+        "career"
+      ],
+      "sha256": "556a350fd19f8ca68a8ef72ff6301aa689cac7e182638c2d381012440a4539f4"
+    },
+    {
+      "id": "programme-022-programme-bachelor-of-biotechnology-hons",
+      "url": "https://newinti.edu.my/programme/bachelor-of-biotechnology-hons/",
+      "role": "field-authority",
+      "sourceType": "official-page",
+      "fields": [
+        "programme detail",
+        "fees",
+        "requirements",
+        "intake",
+        "course setting",
+        "career"
+      ],
+      "sha256": "02cd9ff28737c802ead34010e7495686f4df6ad8f6be7302362e7581f3354940"
+    },
+    {
+      "id": "programme-023-programme-bachelor-of-business-30-in-collaboration-with-swinburne-university-of-technology-australia",
+      "url": "https://newinti.edu.my/programme/bachelor-of-business-30-in-collaboration-with-swinburne-university-of-technology-australia/",
+      "role": "field-authority",
+      "sourceType": "official-page",
+      "fields": [
+        "programme detail",
+        "fees",
+        "requirements",
+        "intake",
+        "course setting",
+        "career"
+      ],
+      "sha256": "584818c511676cda216f6c1cb196404759ef5280bade2165f857f679e119db62"
+    },
+    {
+      "id": "brochure-brochures-sut-pdf",
+      "url": "https://newinti.edu.my/brochures/sut.pdf",
+      "role": "field-authority",
+      "sourceType": "official-pdf",
+      "fields": [
+        "programme brochure",
+        "requirements",
+        "language",
+        "course setting",
+        "career"
+      ],
+      "sha256": "2fd62a80c26d4d69de30c0d2d5d88a7cc596762689d5ad3de1e1f0ca638c138d"
+    },
+    {
+      "id": "programme-024-programme-bachelor-of-business-hons-in-accounting",
+      "url": "https://newinti.edu.my/programme/bachelor-of-business-hons-in-accounting/",
+      "role": "field-authority",
+      "sourceType": "official-page",
+      "fields": [
+        "programme detail",
+        "fees",
+        "requirements",
+        "intake",
+        "course setting",
+        "career"
+      ],
+      "sha256": "19c7924db44de936ca0ba49bfc63d4d15a7549a3696724d1a06c8fbf379761fa"
+    },
+    {
+      "id": "programme-025-programme-bachelor-of-business-hons-in-business-administration",
+      "url": "https://newinti.edu.my/programme/bachelor-of-business-hons-in-business-administration/",
+      "role": "field-authority",
+      "sourceType": "official-page",
+      "fields": [
+        "programme detail",
+        "fees",
+        "requirements",
+        "intake",
+        "course setting",
+        "career"
+      ],
+      "sha256": "cbd6a03f5eb05e78fbc1ab9c8a994a9134a16a6eb07e3732b379abb1a89c0d3b"
+    },
+    {
+      "id": "programme-026-programme-bachelor-of-business-hons-business-administration-learning-simplified",
+      "url": "https://newinti.edu.my/programme/bachelor-of-business-hons-business-administration-learning-simplified/",
+      "role": "field-authority",
+      "sourceType": "official-page",
+      "fields": [
+        "programme detail",
+        "fees",
+        "requirements",
+        "intake",
+        "course setting",
+        "career"
+      ],
+      "sha256": "16cf88c22cd6219441fa05f14e6e55bb196ef031447dbfce557bfa6ff41e318b"
+    },
+    {
+      "id": "brochure-brochures-inti-wa-mba-booklet-pdf",
+      "url": "https://newinti.edu.my/brochures/INTI-WA-MBA-Booklet.pdf",
+      "role": "field-authority",
+      "sourceType": "official-pdf",
+      "fields": [
+        "programme brochure",
+        "requirements",
+        "language",
+        "course setting",
+        "career"
+      ],
+      "sha256": "cc3ff3c771306264d46e821a58d9e22b8f1f4f8af72c82c18a4de08dae5f5c12"
+    },
+    {
+      "id": "programme-027-programme-bachelor-of-business-honours-digital-enterprise-management",
+      "url": "https://newinti.edu.my/programme/bachelor-of-business-honours-digital-enterprise-management/",
+      "role": "field-authority",
+      "sourceType": "official-page",
+      "fields": [
+        "programme detail",
+        "fees",
+        "requirements",
+        "intake",
+        "course setting",
+        "career"
+      ],
+      "sha256": "7199bc7969dfb1aa2068b3eae67fe72cea9cf3c6c6d4f8038ca04d0750a1bd68"
+    },
+    {
+      "id": "programme-028-programme-bachelor-of-business-hons-in-finance",
+      "url": "https://newinti.edu.my/programme/bachelor-of-business-hons-in-finance/",
+      "role": "field-authority",
+      "sourceType": "official-page",
+      "fields": [
+        "programme detail",
+        "fees",
+        "requirements",
+        "intake",
+        "course setting",
+        "career"
+      ],
+      "sha256": "7d2e33acec1a33b8dc6eaa18ef793a6fb5b1714b31ca2a135d09f03606fd37cf"
+    },
+    {
+      "id": "programme-029-programme-bachelor-of-business-hons-in-human-resource-management",
+      "url": "https://newinti.edu.my/programme/bachelor-of-business-hons-in-human-resource-management/",
+      "role": "field-authority",
+      "sourceType": "official-page",
+      "fields": [
+        "programme detail",
+        "fees",
+        "requirements",
+        "intake",
+        "course setting",
+        "career"
+      ],
+      "sha256": "23f84b3a9a604545b967389c39bd25a79207198414e685730e3291820bf43c62"
+    },
+    {
+      "id": "programme-030-programme-bachelor-business-hons-human-resource-management-learning-simplified",
+      "url": "https://newinti.edu.my/programme/bachelor-business-hons-human-resource-management-learning-simplified/",
+      "role": "field-authority",
+      "sourceType": "official-page",
+      "fields": [
+        "programme detail",
+        "fees",
+        "requirements",
+        "intake",
+        "course setting",
+        "career"
+      ],
+      "sha256": "8ebc205d3efa581988870042b0f332859cc501b9e7142650441db6989a306968"
+    },
+    {
+      "id": "programme-031-programme-bachelor-of-business-honours-in-entrepreneurship-and-marketing",
+      "url": "https://newinti.edu.my/programme/bachelor-of-business-honours-in-entrepreneurship-and-marketing/",
+      "role": "field-authority",
+      "sourceType": "official-page",
+      "fields": [
+        "programme detail",
+        "fees",
+        "requirements",
+        "intake",
+        "course setting",
+        "career"
+      ],
+      "sha256": "a2dfe98f526e2cff7725fa8b0f766224266f8f28c96dc23316174caeb0fe41f0"
+    },
+    {
+      "id": "programme-032-programme-bachelor-of-business-honours-in-international-business-and-logistics-supply-chain-management",
+      "url": "https://newinti.edu.my/programme/bachelor-of-business-honours-in-international-business-and-logistics-supply-chain-management/",
+      "role": "field-authority",
+      "sourceType": "official-page",
+      "fields": [
+        "programme detail",
+        "fees",
+        "requirements",
+        "intake",
+        "course setting",
+        "career"
+      ],
+      "sha256": "5ac860cb3b2d4b00c85e76101e6b5c197e0cd5a6134c9f20b63de783cc08c379"
+    },
+    {
+      "id": "programme-033-programme-bachelor-of-business-hons-international-business",
+      "url": "https://newinti.edu.my/programme/bachelor-of-business-hons-international-business/",
+      "role": "field-authority",
+      "sourceType": "official-page",
+      "fields": [
+        "programme detail",
+        "fees",
+        "requirements",
+        "intake",
+        "course setting",
+        "career"
+      ],
+      "sha256": "28d6ba9043d7313dd736acc16b3095900774f8abbe3f80c98c967587742146fc"
+    },
+    {
+      "id": "programme-034-programme-bachelor-business-hons-international-business-learning-simplified",
+      "url": "https://newinti.edu.my/programme/bachelor-business-hons-international-business-learning-simplified/",
+      "role": "field-authority",
+      "sourceType": "official-page",
+      "fields": [
+        "programme detail",
+        "fees",
+        "requirements",
+        "intake",
+        "course setting",
+        "career"
+      ],
+      "sha256": "8796fee81dd6014350e87428ac6127a8efdd3e2292c4f5b9db9c4dde9a8b4e5f"
+    },
+    {
+      "id": "programme-035-programme-bachelor-of-business-hons-logistics-and-supply-chain-management",
+      "url": "https://newinti.edu.my/programme/bachelor-of-business-hons-logistics-and-supply-chain-management/",
+      "role": "field-authority",
+      "sourceType": "official-page",
+      "fields": [
+        "programme detail",
+        "fees",
+        "requirements",
+        "intake",
+        "course setting",
+        "career"
+      ],
+      "sha256": "a92b657cad3177f6e2acd3d4522a43f518973a5b751db29bc3d9db545907a0a8"
+    },
+    {
+      "id": "programme-036-programme-bachelor-of-business-hons-management",
+      "url": "https://newinti.edu.my/programme/bachelor-of-business-hons-management/",
+      "role": "field-authority",
+      "sourceType": "official-page",
+      "fields": [
+        "programme detail",
+        "fees",
+        "requirements",
+        "intake",
+        "course setting",
+        "career"
+      ],
+      "sha256": "0e00f01db2021d2cc3f077908d9f004cc1f9445baea38855aef876dccee7cd00"
+    },
+    {
+      "id": "programme-037-programme-bachelor-of-business-hons-marketing-learning-simplified",
+      "url": "https://newinti.edu.my/programme/bachelor-of-business-hons-marketing-learning-simplified/",
+      "role": "field-authority",
+      "sourceType": "official-page",
+      "fields": [
+        "programme detail",
+        "fees",
+        "requirements",
+        "intake",
+        "course setting",
+        "career"
+      ],
+      "sha256": "59cf7c36a0416ff278ffce36c9da06a90e61949a3575625073e1405bb5e4bd41"
+    },
+    {
+      "id": "programme-038-programme-bachelor-of-business-hons-with-psychology",
+      "url": "https://newinti.edu.my/programme/bachelor-of-business-hons-with-psychology/",
+      "role": "field-authority",
+      "sourceType": "official-page",
+      "fields": [
+        "programme detail",
+        "fees",
+        "requirements",
+        "intake",
+        "course setting",
+        "career"
+      ],
+      "sha256": "d978148502bd7bc19ba957fa3d4faacc433fc6350bf56a5a3feefe03f8939437"
+    },
+    {
+      "id": "programme-039-programme-bachelor-of-business-hons-in-marketing",
+      "url": "https://newinti.edu.my/programme/bachelor-of-business-hons-in-marketing/",
+      "role": "field-authority",
+      "sourceType": "official-page",
+      "fields": [
+        "programme detail",
+        "fees",
+        "requirements",
+        "intake",
+        "course setting",
+        "career"
+      ],
+      "sha256": "95bc31075a0e3c4dc80da4b8938ba6c0a1d470738e099abb47b8a5520b25a8a4"
+    },
+    {
+      "id": "programme-040-programme-bachelor-of-engineering-hons-in-civil-engineering",
+      "url": "https://newinti.edu.my/programme/bachelor-of-engineering-hons-in-civil-engineering/",
+      "role": "field-authority",
+      "sourceType": "official-page",
+      "fields": [
+        "programme detail",
+        "fees",
+        "requirements",
+        "intake",
+        "course setting",
+        "career"
+      ],
+      "sha256": "4c61a86e13780b95ab49dd54e685e9013786bf396c9e7d23c982b5a9374f01bc"
+    },
+    {
+      "id": "brochure-brochures-engineering-pdf",
+      "url": "https://newinti.edu.my/brochures/engineering.pdf",
+      "role": "field-authority",
+      "sourceType": "official-pdf",
+      "fields": [
+        "programme brochure",
+        "requirements",
+        "language",
+        "course setting",
+        "career"
+      ],
+      "sha256": "2ce116113202a7bdf992275aefea18c3c718f189dcff4c565621a12097d4c9b7"
+    },
+    {
+      "id": "programme-041-programme-bachelor-of-computer-science-30-in-collaboration-with-swinburne-university-of-technology-australia",
+      "url": "https://newinti.edu.my/programme/bachelor-of-computer-science-30-in-collaboration-with-swinburne-university-of-technology-australia/",
+      "role": "field-authority",
+      "sourceType": "official-page",
+      "fields": [
+        "programme detail",
+        "fees",
+        "requirements",
+        "intake",
+        "course setting",
+        "career"
+      ],
+      "sha256": "b07e7917db627178b82c16e0c593462c70954336f460014c3d8a45ab69ce5164"
+    },
+    {
+      "id": "programme-042-programme-bachelor-of-computer-science-online-learning",
+      "url": "https://newinti.edu.my/programme/bachelor-of-computer-science-online-learning/",
+      "role": "field-authority",
+      "sourceType": "official-page",
+      "fields": [
+        "programme detail",
+        "fees",
+        "requirements",
+        "intake",
+        "course setting",
+        "career"
+      ],
+      "sha256": "305a8e9abe5d39e9e4de1b2527ce376471146d32171a1d9ff31debb270cf9d27"
+    },
+    {
+      "id": "programme-043-programme-bachelor-of-computer-science-hons-coventry-uk",
+      "url": "https://newinti.edu.my/programme/bachelor-of-computer-science-hons-coventry-uk/",
+      "role": "field-authority",
+      "sourceType": "official-page",
+      "fields": [
+        "programme detail",
+        "fees",
+        "requirements",
+        "intake",
+        "course setting",
+        "career"
+      ],
+      "sha256": "9fc98e3c6cf73faf611803b0dc35ca65ad4764e0c582035d71e750cdf5471ba6"
+    },
+    {
+      "id": "brochure-brochures-computing-pdf",
+      "url": "https://newinti.edu.my/brochures/computing.pdf",
+      "role": "field-authority",
+      "sourceType": "official-pdf",
+      "fields": [
+        "programme brochure",
+        "requirements",
+        "language",
+        "course setting",
+        "career"
+      ],
+      "sha256": "4b14ac77e9f8782595ec6f26f4a15aae0411d8c670205f6d9841d49f984b0246"
+    },
+    {
+      "id": "programme-044-programme-bachelor-computer-science-hons-business-analytics",
+      "url": "https://newinti.edu.my/programme/bachelor-computer-science-hons-business-analytics/",
+      "role": "field-authority",
+      "sourceType": "official-page",
+      "fields": [
+        "programme detail",
+        "fees",
+        "requirements",
+        "intake",
+        "course setting",
+        "career"
+      ],
+      "sha256": "c586605330770c92c93ec8fabaf0d69d98c4e8e28d4b03b6c691a63f9a0dfeb6"
+    },
+    {
+      "id": "programme-045-programme-bachelor-computer-science-hons-cloud-computing",
+      "url": "https://newinti.edu.my/programme/bachelor-computer-science-hons-cloud-computing/",
+      "role": "field-authority",
+      "sourceType": "official-page",
+      "fields": [
+        "programme detail",
+        "fees",
+        "requirements",
+        "intake",
+        "course setting",
+        "career"
+      ],
+      "sha256": "a66d5c65956c629774dc1e7b22d2204b4f657cf3b1dc4250dc1acab143fcbd13"
+    },
+    {
+      "id": "programme-046-programme-bachelor-of-computer-science-hons-in-network-and-mobile-computing-coventry-uk",
+      "url": "https://newinti.edu.my/programme/bachelor-of-computer-science-hons-in-network-and-mobile-computing-coventry-uk/",
+      "role": "field-authority",
+      "sourceType": "official-page",
+      "fields": [
+        "programme detail",
+        "fees",
+        "requirements",
+        "intake",
+        "course setting",
+        "career"
+      ],
+      "sha256": "6b08fa2d5f7d7412de9614ed87d794141fcb14d70f820a5ff608005388c3c492"
+    },
+    {
+      "id": "programme-047-programme-bachelor-of-computer-science-hons-in-network-security-coventry-uk",
+      "url": "https://newinti.edu.my/programme/bachelor-of-computer-science-hons-in-network-security-coventry-uk/",
+      "role": "field-authority",
+      "sourceType": "official-page",
+      "fields": [
+        "programme detail",
+        "fees",
+        "requirements",
+        "intake",
+        "course setting",
+        "career"
+      ],
+      "sha256": "4f094f81b7723606ef563ae170a35c8eff819bea83520dddaead5b204463826d"
+    },
+    {
+      "id": "programme-048-programme-bachelor-of-computer-science-hons-in-software-development-coventry-uk",
+      "url": "https://newinti.edu.my/programme/bachelor-of-computer-science-hons-in-software-development-coventry-uk/",
+      "role": "field-authority",
+      "sourceType": "official-page",
+      "fields": [
+        "programme detail",
+        "fees",
+        "requirements",
+        "intake",
+        "course setting",
+        "career"
+      ],
+      "sha256": "8a639d9a4a77a19f178e338582f945696c13abd4f738a377280bfdec9f6c6036"
+    },
+    {
+      "id": "programme-049-programme-bachelor-of-education-honours-in-teaching-chinese-as-a-second-language",
+      "url": "https://newinti.edu.my/programme/bachelor-of-education-honours-in-teaching-chinese-as-a-second-language/",
+      "role": "field-authority",
+      "sourceType": "official-page",
+      "fields": [
+        "programme detail",
+        "fees",
+        "requirements",
+        "intake",
+        "course setting",
+        "career"
+      ],
+      "sha256": "4dc059ebf945d1bb4e69b6aafb2813ef236a41a8ac4d13a8b866112354ca45c1"
+    },
+    {
+      "id": "brochure-brochures-bachelor-of-education-honours-in-teaching-chinese-as-a-second-language-pdf",
+      "url": "https://newinti.edu.my/brochures/Bachelor-of-Education-(Honours)-in-Teaching-Chinese-as-a-Second-Language.pdf",
+      "role": "field-authority",
+      "sourceType": "official-pdf",
+      "fields": [
+        "programme brochure",
+        "requirements",
+        "language",
+        "course setting",
+        "career"
+      ],
+      "sha256": "b60e6edab1d30d0c6f95f777423349a3b3bf28ff33cbf8c936319526188417db"
+    },
+    {
+      "id": "programme-050-programme-bachelor-of-food-service-management-with-culinary-arts-honours-30",
+      "url": "https://newinti.edu.my/programme/bachelor-of-food-service-management-with-culinary-arts-honours-30/",
+      "role": "field-authority",
+      "sourceType": "official-page",
+      "fields": [
+        "programme detail",
+        "fees",
+        "requirements",
+        "intake",
+        "course setting",
+        "career"
+      ],
+      "sha256": "c4d54296f4933152322ec6edece212d17d54de2f8288a1563206bb65e8633af4"
+    },
+    {
+      "id": "brochure-brochures-hospitality-pdf",
+      "url": "https://newinti.edu.my/brochures/hospitality.pdf",
+      "role": "field-authority",
+      "sourceType": "official-pdf",
+      "fields": [
+        "programme brochure",
+        "requirements",
+        "language",
+        "course setting",
+        "career"
+      ],
+      "sha256": "f8d13f992e0b12ca177abd94ed2a986cd58f8aac2d7c4a450656a7930dce307f"
+    },
+    {
+      "id": "programme-051-programme-bachelor-of-information-and-communication-technology-30-in-collaboration-with-swinburne-university-of-technolo",
+      "url": "https://newinti.edu.my/programme/bachelor-of-information-and-communication-technology-30-in-collaboration-with-swinburne-university-of-technology-australia/",
+      "role": "field-authority",
+      "sourceType": "official-page",
+      "fields": [
+        "programme detail",
+        "fees",
+        "requirements",
+        "intake",
+        "course setting",
+        "career"
+      ],
+      "sha256": "9af8973b6f745b7807b4dacfa5f2fcd0a7111c1f5d278a0e5ca2c0b650cdadfd"
+    },
+    {
+      "id": "programme-052-programme-bachelor-of-information-technology-hons-coventry-uk",
+      "url": "https://newinti.edu.my/programme/bachelor-of-information-technology-hons-coventry-uk/",
+      "role": "field-authority",
+      "sourceType": "official-page",
+      "fields": [
+        "programme detail",
+        "fees",
+        "requirements",
+        "intake",
+        "course setting",
+        "career"
+      ],
+      "sha256": "31c4cbf34a5db847f7bebe5f0d544e40f7da32d5389dc8466704561deac6f5c4"
+    },
+    {
+      "id": "programme-053-programme-bachelor-information-technology-hons-business-analytics",
+      "url": "https://newinti.edu.my/programme/bachelor-information-technology-hons-business-analytics/",
+      "role": "field-authority",
+      "sourceType": "official-page",
+      "fields": [
+        "programme detail",
+        "fees",
+        "requirements",
+        "intake",
+        "course setting",
+        "career"
+      ],
+      "sha256": "92ca2ca643eef8196b592aa6a3ad32be5769abe312e725cbc66c2ab66e9961c7"
+    },
+    {
+      "id": "programme-054-programme-bachelor-of-mass-communication-honours",
+      "url": "https://newinti.edu.my/programme/bachelor-of-mass-communication-honours/",
+      "role": "field-authority",
+      "sourceType": "official-page",
+      "fields": [
+        "programme detail",
+        "fees",
+        "requirements",
+        "intake",
+        "course setting",
+        "career"
+      ],
+      "sha256": "a4a2df05d24d3e53072841822e573581a7d6721a5b45b03d1f063f8b6df8f8ac"
+    },
+    {
+      "id": "programme-055-programme-bachelor-mass-communication-hons-collaboration-university-hertfordshire-uk",
+      "url": "https://newinti.edu.my/programme/bachelor-mass-communication-hons-collaboration-university-hertfordshire-uk/",
+      "role": "field-authority",
+      "sourceType": "official-page",
+      "fields": [
+        "programme detail",
+        "fees",
+        "requirements",
+        "intake",
+        "course setting",
+        "career"
+      ],
+      "sha256": "7c17ce2140fc79e42b5c082a46638af1746932aa91b6f7b823311182ace1886f"
+    },
+    {
+      "id": "programme-056-programme-bachelor-of-engineering-hons-in-mechanical-engineering",
+      "url": "https://newinti.edu.my/programme/bachelor-of-engineering-hons-in-mechanical-engineering/",
+      "role": "field-authority",
+      "sourceType": "official-page",
+      "fields": [
+        "programme detail",
+        "fees",
+        "requirements",
+        "intake",
+        "course setting",
+        "career"
+      ],
+      "sha256": "157b65eb0ce2ca27b83736bbdfe34d1fb560a9d579210be1eaba0724280bb4d1"
+    },
+    {
+      "id": "programme-057-programme-bachelor-of-media-and-communication-30-in-collaboration-with-swinburne-university-of-technology-australia",
+      "url": "https://newinti.edu.my/programme/bachelor-of-media-and-communication-30-in-collaboration-with-swinburne-university-of-technology-australia/",
+      "role": "field-authority",
+      "sourceType": "official-page",
+      "fields": [
+        "programme detail",
+        "fees",
+        "requirements",
+        "intake",
+        "course setting",
+        "career"
+      ],
+      "sha256": "c00385d0ecf23a5444d3477d33c48683a98ffcc1c3ea00d73cae3a56aea761ac"
+    },
+    {
+      "id": "programme-058-programme-bsc-hons-quantity-surveying",
+      "url": "https://newinti.edu.my/programme/bsc-hons-quantity-surveying/",
+      "role": "field-authority",
+      "sourceType": "official-page",
+      "fields": [
+        "programme detail",
+        "fees",
+        "requirements",
+        "intake",
+        "course setting",
+        "career"
+      ],
+      "sha256": "b1ceaf2cd92c2cfbf3b8eb15b6b4b561a4f2ea8d2e79e3f9261f3c381c0f2ae7"
+    },
+    {
+      "id": "programme-059-programme-4-0-bachelor-science-business-studies-collaboration-southern-new-hampshire-university-usa",
+      "url": "https://newinti.edu.my/programme/4-0-bachelor-science-business-studies-collaboration-southern-new-hampshire-university-usa/",
+      "role": "field-authority",
+      "sourceType": "official-page",
+      "fields": [
+        "programme detail",
+        "fees",
+        "requirements",
+        "intake",
+        "course setting",
+        "career"
+      ],
+      "sha256": "36de11606aa86e6765f8f76c2b7c7bd2df7ea8a31864eb5a2fa3b219049f8300"
+    },
+    {
+      "id": "programme-060-programme-3-0-bachelor-of-science-hons-in-computer-science-in-collaboration-with-coventry-uk",
+      "url": "https://newinti.edu.my/programme/3-0-bachelor-of-science-hons-in-computer-science-in-collaboration-with-coventry-uk/",
+      "role": "field-authority",
+      "sourceType": "official-page",
+      "fields": [
+        "programme detail",
+        "fees",
+        "requirements",
+        "intake",
+        "course setting",
+        "career"
+      ],
+      "sha256": "ab95d5c090b7dbed6db6e2daf469f4b2b3db41f5ec10d894e0e9bfb5c3ea2590"
+    },
+    {
+      "id": "programme-061-programme-bachelor-of-technology-honours-data-science",
+      "url": "https://newinti.edu.my/programme/bachelor-of-technology-honours-data-science/",
+      "role": "field-authority",
+      "sourceType": "official-page",
+      "fields": [
+        "programme detail",
+        "fees",
+        "requirements",
+        "intake",
+        "course setting",
+        "career"
+      ],
+      "sha256": "d7fcfd20f1f3ad67a19539e8709139186bb9b9c0a03525aaca1fef06d5467662"
+    },
+    {
+      "id": "programme-062-programme-bachelor-of-technology-in-digital-construction-management",
+      "url": "https://newinti.edu.my/programme/bachelor-of-technology-in-digital-construction-management/",
+      "role": "field-authority",
+      "sourceType": "official-page",
+      "fields": [
+        "programme detail",
+        "fees",
+        "requirements",
+        "intake",
+        "course setting",
+        "career"
+      ],
+      "sha256": "0ea7463b9d0b94bf506e347facd27c662ef670eb5490997b3cb470e96444e286"
+    },
+    {
+      "id": "programme-063-programme-bachelor-of-technology-in-intelligent-manufacturing",
+      "url": "https://newinti.edu.my/programme/bachelor-of-technology-in-intelligent-manufacturing/",
+      "role": "field-authority",
+      "sourceType": "official-page",
+      "fields": [
+        "programme detail",
+        "fees",
+        "requirements",
+        "intake",
+        "course setting",
+        "career"
+      ],
+      "sha256": "64af7fc8741a81982144c43c8c6910d1588c9dfd2a466d7a3cb5232825771295"
+    },
+    {
+      "id": "programme-064-programme-bachelor-of-technology-in-intelligent-process-and-product-design",
+      "url": "https://newinti.edu.my/programme/bachelor-of-technology-in-intelligent-process-and-product-design/",
+      "role": "field-authority",
+      "sourceType": "official-page",
+      "fields": [
+        "programme detail",
+        "fees",
+        "requirements",
+        "intake",
+        "course setting",
+        "career"
+      ],
+      "sha256": "7d573356727e9654b84d42f498a5cf570ad4cdf763e15c5cd9e192e343213017"
+    },
+    {
+      "id": "programme-065-programme-bachelor-of-traditional-chinese-medicine-hons",
+      "url": "https://newinti.edu.my/programme/bachelor-of-traditional-chinese-medicine-hons/",
+      "role": "field-authority",
+      "sourceType": "official-page",
+      "fields": [
+        "programme detail",
+        "fees",
+        "requirements",
+        "intake",
+        "course setting",
+        "career"
+      ],
+      "sha256": "daa0fe13db7d62f60986f9a1e43153782011511aebeee8bf8594809cd01466b3"
+    },
+    {
+      "id": "brochure-brochures-traditional-chinese-medicine-pdf",
+      "url": "https://newinti.edu.my/brochures/traditional-chinese-medicine.pdf",
+      "role": "field-authority",
+      "sourceType": "official-pdf",
+      "fields": [
+        "programme brochure",
+        "requirements",
+        "language",
+        "course setting",
+        "career"
+      ],
+      "sha256": "49da1db9af55ebdf1081c6e22be00ab8707123cb93a3e75a4f26211b295b343e"
+    },
+    {
+      "id": "programme-066-programme-biosciences-american-university",
+      "url": "https://newinti.edu.my/programme/biosciences-american-university/",
+      "role": "field-authority",
+      "sourceType": "official-page",
+      "fields": [
+        "programme detail",
+        "fees",
+        "requirements",
+        "intake",
+        "course setting",
+        "career"
+      ],
+      "sha256": "51d268a38e91eb28ac9fde8208344aaa96af91ecf9ed575a7beb11642030f702"
+    },
+    {
+      "id": "programme-067-programme-business-american-university",
+      "url": "https://newinti.edu.my/programme/business-american-university/",
+      "role": "field-authority",
+      "sourceType": "official-page",
+      "fields": [
+        "programme detail",
+        "fees",
+        "requirements",
+        "intake",
+        "course setting",
+        "career"
+      ],
+      "sha256": "26cc978a08715cb3eaca14b67f5a854e4235cfdcf800081e037e9b372eda44c2"
+    },
+    {
+      "id": "programme-068-programme-computer-science-american-university",
+      "url": "https://newinti.edu.my/programme/computer-science-american-university/",
+      "role": "field-authority",
+      "sourceType": "official-page",
+      "fields": [
+        "programme detail",
+        "fees",
+        "requirements",
+        "intake",
+        "course setting",
+        "career"
+      ],
+      "sha256": "595b3859f77d3e17485f73c4f2d17132ec06fd2f5d3355d729e6dc48f5414d57"
+    },
+    {
+      "id": "programme-069-programme-doctor-of-business-administration",
+      "url": "https://newinti.edu.my/programme/doctor-of-business-administration/",
+      "role": "field-authority",
+      "sourceType": "official-page",
+      "fields": [
+        "programme detail",
+        "fees",
+        "requirements",
+        "intake",
+        "course setting",
+        "career"
+      ],
+      "sha256": "5d23bdd147b78fd09f73204e42b3bece401729464089ba79140972be8b5b8799"
+    },
+    {
+      "id": "programme-070-programme-doctor-of-business-administration-fully-online",
+      "url": "https://newinti.edu.my/programme/doctor-of-business-administration-fully-online/",
+      "role": "field-authority",
+      "sourceType": "official-page",
+      "fields": [
+        "programme detail",
+        "fees",
+        "requirements",
+        "intake",
+        "course setting",
+        "career"
+      ],
+      "sha256": "ab4102bf029a1f4ff9c839da46b1fb07dae40385d8fd98b0423e69d6f9e24efc"
+    },
+    {
+      "id": "programme-071-programme-doctor-of-education",
+      "url": "https://newinti.edu.my/programme/doctor-of-education/",
+      "role": "field-authority",
+      "sourceType": "official-page",
+      "fields": [
+        "programme detail",
+        "fees",
+        "requirements",
+        "intake",
+        "course setting",
+        "career"
+      ],
+      "sha256": "13cf072d6bb28844b9ab18f2c82506b0e62d3136df41b613b1bd3b5a58b02bd4"
+    },
+    {
+      "id": "programme-072-programme-doctor-of-philosophy-education-by-research",
+      "url": "https://newinti.edu.my/programme/doctor-of-philosophy-education-by-research/",
+      "role": "field-authority",
+      "sourceType": "official-page",
+      "fields": [
+        "programme detail",
+        "fees",
+        "requirements",
+        "intake",
+        "course setting",
+        "career"
+      ],
+      "sha256": "f5bff52242f2da668e11cfba9fb94feb40d133d7da59498c52aed9547f6b2ff5"
+    },
+    {
+      "id": "programme-073-programme-doctor-of-philosophy-phd-in-applied-physics-by-research-2",
+      "url": "https://newinti.edu.my/programme/doctor-of-philosophy-phd-in-applied-physics-by-research-2/",
+      "role": "field-authority",
+      "sourceType": "official-page",
+      "fields": [
+        "programme detail",
+        "fees",
+        "requirements",
+        "intake",
+        "course setting",
+        "career"
+      ],
+      "sha256": "20ae2bcc2be10a2b2fc4aacde22cc2207f4ff7704a7bb8e70a5f2971bad20c87"
+    },
+    {
+      "id": "programme-074-programme-doctor-of-philosophy-phd-financial-technology",
+      "url": "https://newinti.edu.my/programme/doctor-of-philosophy-phd-financial-technology/",
+      "role": "field-authority",
+      "sourceType": "official-page",
+      "fields": [
+        "programme detail",
+        "fees",
+        "requirements",
+        "intake",
+        "course setting",
+        "career"
+      ],
+      "sha256": "59c235a0fe7946dc6eb15421fd7ff753f197171d7fe0a3f417bd497e5190c832"
+    },
+    {
+      "id": "programme-075-programme-doctor-of-philosophy-phd-information-systems",
+      "url": "https://newinti.edu.my/programme/doctor-of-philosophy-phd-information-systems/",
+      "role": "field-authority",
+      "sourceType": "official-page",
+      "fields": [
+        "programme detail",
+        "fees",
+        "requirements",
+        "intake",
+        "course setting",
+        "career"
+      ],
+      "sha256": "e3600735aff73bb47bc51fc8feca672d2314169d784ae200c08b979761ac487e"
+    },
+    {
+      "id": "programme-076-programme-doctor-of-philosophy-phd-innovation-and-technology-2",
+      "url": "https://newinti.edu.my/programme/doctor-of-philosophy-phd-innovation-and-technology-2/",
+      "role": "field-authority",
+      "sourceType": "official-page",
+      "fields": [
+        "programme detail",
+        "fees",
+        "requirements",
+        "intake",
+        "course setting",
+        "career"
+      ],
+      "sha256": "c86aebbf814f7547225f67d698b26fe08e0f296c68314b8a1b44bfa867589fa9"
+    },
+    {
+      "id": "programme-077-programme-doctor-of-philosophy-phd-management",
+      "url": "https://newinti.edu.my/programme/doctor-of-philosophy-phd-management/",
+      "role": "field-authority",
+      "sourceType": "official-page",
+      "fields": [
+        "programme detail",
+        "fees",
+        "requirements",
+        "intake",
+        "course setting",
+        "career"
+      ],
+      "sha256": "e5ff992c41d52673a357410335b77a5f22b9b918bbb51e6469a6c788a4e27f51"
+    },
+    {
+      "id": "programme-078-programme-doctor-of-philosophy-phd-in-data-science",
+      "url": "https://newinti.edu.my/programme/doctor-of-philosophy-phd-in-data-science/",
+      "role": "field-authority",
+      "sourceType": "official-page",
+      "fields": [
+        "programme detail",
+        "fees",
+        "requirements",
+        "intake",
+        "course setting",
+        "career"
+      ],
+      "sha256": "8bbb0221ec197055cd5d38357b93ea118dee56137cc8d67893f29b37e408ca1f"
+    },
+    {
+      "id": "programme-079-programme-engineering-american-university",
+      "url": "https://newinti.edu.my/programme/engineering-american-university/",
+      "role": "field-authority",
+      "sourceType": "official-page",
+      "fields": [
+        "programme detail",
+        "fees",
+        "requirements",
+        "intake",
+        "course setting",
+        "career"
+      ],
+      "sha256": "0c9af3048e226bc4b110fbfe5956abf51eb63fe1a384097ad5d659f26d753a91"
+    },
+    {
+      "id": "programme-080-programme-health-applied-sciences-american-university",
+      "url": "https://newinti.edu.my/programme/health-applied-sciences-american-university/",
+      "role": "field-authority",
+      "sourceType": "official-page",
+      "fields": [
+        "programme detail",
+        "fees",
+        "requirements",
+        "intake",
+        "course setting",
+        "career"
+      ],
+      "sha256": "576d4a6e416d38479ea6a58a18b66712a51288ba1f863fd39172aaba118fa636"
+    },
+    {
+      "id": "programme-081-programme-mass-communication-american-university",
+      "url": "https://newinti.edu.my/programme/mass-communication-american-university/",
+      "role": "field-authority",
+      "sourceType": "official-page",
+      "fields": [
+        "programme detail",
+        "fees",
+        "requirements",
+        "intake",
+        "course setting",
+        "career"
+      ],
+      "sha256": "32c2a9fafe2174d6aefe29d9e8bb1f72325bc827b0c5e547110caeae83251f80"
+    },
+    {
+      "id": "programme-082-programme-master-in-education-management",
+      "url": "https://newinti.edu.my/programme/master-in-education-management/",
+      "role": "field-authority",
+      "sourceType": "official-page",
+      "fields": [
+        "programme detail",
+        "fees",
+        "requirements",
+        "intake",
+        "course setting",
+        "career"
+      ],
+      "sha256": "07f3effde8fd1a9bfa2109cae4617914a7e1f680efa9d3092f0b5d0eef4d2082"
+    },
+    {
+      "id": "programme-083-programme-master-in-education-management-online-learning",
+      "url": "https://newinti.edu.my/programme/master-in-education-management-online-learning/",
+      "role": "field-authority",
+      "sourceType": "official-page",
+      "fields": [
+        "programme detail",
+        "fees",
+        "requirements",
+        "intake",
+        "course setting",
+        "career"
+      ],
+      "sha256": "e40e79f7e2ad73a231aa2e532921351413cad85191fb5f3654c7d046fd8e082b"
+    },
+    {
+      "id": "programme-084-programme-master-in-health-administration",
+      "url": "https://newinti.edu.my/programme/master-in-health-administration/",
+      "role": "field-authority",
+      "sourceType": "official-page",
+      "fields": [
+        "programme detail",
+        "fees",
+        "requirements",
+        "intake",
+        "course setting",
+        "career"
+      ],
+      "sha256": "6befc21c6dbdaa9fdfe37294a39f52470c205116d6b4ff82f63a5989caa436dc"
+    },
+    {
+      "id": "programme-085-programme-master-in-health-sciences-physiotherapy-by-research",
+      "url": "https://newinti.edu.my/programme/master-in-health-sciences-physiotherapy-by-research/",
+      "role": "field-authority",
+      "sourceType": "official-page",
+      "fields": [
+        "programme detail",
+        "fees",
+        "requirements",
+        "intake",
+        "course setting",
+        "career"
+      ],
+      "sha256": "3e7985af8e0a4282b9ba4e43a66ea12dd0881e36d37bdfda55ab6241fd3525bf"
+    },
+    {
+      "id": "programme-086-programme-master-in-information-systems-mis",
+      "url": "https://newinti.edu.my/programme/master-in-information-systems-mis/",
+      "role": "field-authority",
+      "sourceType": "official-page",
+      "fields": [
+        "programme detail",
+        "fees",
+        "requirements",
+        "intake",
+        "course setting",
+        "career"
+      ],
+      "sha256": "a68d4cd3f0df33e276f90b53863a66a258f6b278ccb4a300985307d0cccad0fc"
+    },
+    {
+      "id": "programme-087-programme-master-in-information-technology-mit",
+      "url": "https://newinti.edu.my/programme/master-in-information-technology-mit/",
+      "role": "field-authority",
+      "sourceType": "official-page",
+      "fields": [
+        "programme detail",
+        "fees",
+        "requirements",
+        "intake",
+        "course setting",
+        "career"
+      ],
+      "sha256": "e8ab9ca121363ce5e06251c86a0309a6d64cf7590a19c20415b35c0e08629043"
+    },
+    {
+      "id": "programme-088-programme-master-in-information-technology-fully-online-learning-simplified",
+      "url": "https://newinti.edu.my/programme/master-in-information-technology-fully-online-learning-simplified/",
+      "role": "field-authority",
+      "sourceType": "official-page",
+      "fields": [
+        "programme detail",
+        "fees",
+        "requirements",
+        "intake",
+        "course setting",
+        "career"
+      ],
+      "sha256": "65a059fbcf50ba389fa9f44fc6c54574ed8be67475f3d13d3c7210554cbdd464"
+    },
+    {
+      "id": "programme-089-programme-master-of-biotechnological-innovations-and-application-by-research",
+      "url": "https://newinti.edu.my/programme/master-of-biotechnological-innovations-and-application-by-research/",
+      "role": "field-authority",
+      "sourceType": "official-page",
+      "fields": [
+        "programme detail",
+        "fees",
+        "requirements",
+        "intake",
+        "course setting",
+        "career"
+      ],
+      "sha256": "f09fc1084d60802a8de1e36262e725db69f9a4b0cf9fba2e311262379cc4ffdf"
+    },
+    {
+      "id": "programme-090-programme-master-of-business-administration-business-analytics",
+      "url": "https://newinti.edu.my/programme/master-of-business-administration-business-analytics/",
+      "role": "field-authority",
+      "sourceType": "official-page",
+      "fields": [
+        "programme detail",
+        "fees",
+        "requirements",
+        "intake",
+        "course setting",
+        "career"
+      ],
+      "sha256": "5201b889cbfc26861dfe48c5ed1e954f00b2d90a2ee078ace59cb388178384c1"
+    },
+    {
+      "id": "programme-091-programme-master-of-business-administration-mba-by-inti-international-university-1",
+      "url": "https://newinti.edu.my/programme/master-of-business-administration-mba-by-inti-international-university_1/",
+      "role": "field-authority",
+      "sourceType": "official-page",
+      "fields": [
+        "programme detail",
+        "fees",
+        "requirements",
+        "intake",
+        "course setting",
+        "career"
+      ],
+      "sha256": "c33006acf87bcb91c4f8dd995c8099318371c05ce6b89a5b292d4fb4751c0563"
+    },
+    {
+      "id": "programme-092-programme-master-of-business-administration-mba-in-collaboration-with-inti-international-university",
+      "url": "https://newinti.edu.my/programme/master-of-business-administration-mba-in-collaboration-with-inti-international-university/",
+      "role": "field-authority",
+      "sourceType": "official-page",
+      "fields": [
+        "programme detail",
+        "fees",
+        "requirements",
+        "intake",
+        "course setting",
+        "career"
+      ],
+      "sha256": "1afc74effe822d7a7f4c8fe1847f736cac1a1139a1b919b5ec8b8275cc51f89b"
+    },
+    {
+      "id": "brochure-brochures-iicp-inti-iu-mba-pdf",
+      "url": "https://newinti.edu.my/brochures/IICP-INTI-IU-MBA.pdf",
+      "role": "field-authority",
+      "sourceType": "official-pdf",
+      "fields": [
+        "programme brochure",
+        "requirements",
+        "language",
+        "course setting",
+        "career"
+      ],
+      "sha256": "8a2971f3e124b6388d0635073639af09b668245b57a3872b769cd36dced3318a"
+    },
+    {
+      "id": "programme-093-programme-master-of-business-administration-mba-learning-simplified",
+      "url": "https://newinti.edu.my/programme/master-of-business-administration-mba-learning-simplified/",
+      "role": "field-authority",
+      "sourceType": "official-page",
+      "fields": [
+        "programme detail",
+        "fees",
+        "requirements",
+        "intake",
+        "course setting",
+        "career"
+      ],
+      "sha256": "421c004b6f9f8ef35dcd4ea63b5a7450b671d570c238a553c3691030b4d09ace"
+    },
+    {
+      "id": "programme-094-programme-master-of-education-in-learning-design-and-technology",
+      "url": "https://newinti.edu.my/programme/master-of-education-in-learning-design-and-technology/",
+      "role": "field-authority",
+      "sourceType": "official-page",
+      "fields": [
+        "programme detail",
+        "fees",
+        "requirements",
+        "intake",
+        "course setting",
+        "career"
+      ],
+      "sha256": "d9698fbaeec9a998207b84f2867d753c7435608c6655e6a7abe9228227214e6a"
+    },
+    {
+      "id": "programme-095-programme-master-of-engineering-in-electrical-and-electronic-engineering-40-in-collaboration-with-coventry-university-uk",
+      "url": "https://newinti.edu.my/programme/master-of-engineering-in-electrical-and-electronic-engineering-40-in-collaboration-with-coventry-university-uk/",
+      "role": "field-authority",
+      "sourceType": "official-page",
+      "fields": [
+        "programme detail",
+        "fees",
+        "requirements",
+        "intake",
+        "course setting",
+        "career"
+      ],
+      "sha256": "b75cf85b004a18a50906dd2ac64269313cba3cf1e86d25567a816d2fc5a4c7f9"
+    },
+    {
+      "id": "programme-096-programme-master-of-engineering-in-mechanical-engineering-40-in-collaboration-with-coventry-university-uk",
+      "url": "https://newinti.edu.my/programme/master-of-engineering-in-mechanical-engineering-40-in-collaboration-with-coventry-university-uk/",
+      "role": "field-authority",
+      "sourceType": "official-page",
+      "fields": [
+        "programme detail",
+        "fees",
+        "requirements",
+        "intake",
+        "course setting",
+        "career"
+      ],
+      "sha256": "10eb3b7fee67edf168705d0d032dc5b9c182da725094ae6b4e285ab3ad74cad6"
+    },
+    {
+      "id": "programme-097-programme-master-of-science-in-construction-management-building-information-modelling",
+      "url": "https://newinti.edu.my/programme/master-of-science-in-construction-management-building-information-modelling/",
+      "role": "field-authority",
+      "sourceType": "official-page",
+      "fields": [
+        "programme detail",
+        "fees",
+        "requirements",
+        "intake",
+        "course setting",
+        "career"
+      ],
+      "sha256": "f1d1bd18331931bc6905b2983842b9c90298e422a5c039ff34c106ff4f118329"
+    },
+    {
+      "id": "programme-098-programme-master-of-science-in-construction-management-building-information-modelling-fully-online",
+      "url": "https://newinti.edu.my/programme/master-of-science-in-construction-management-building-information-modelling-fully-online/",
+      "role": "field-authority",
+      "sourceType": "official-page",
+      "fields": [
+        "programme detail",
+        "fees",
+        "requirements",
+        "intake",
+        "course setting",
+        "career"
+      ],
+      "sha256": "874dd3838b840494dceb7c1da561a9cb03b0095cb5badbb580b6bfebc9f6f1ae"
+    },
+    {
+      "id": "programme-099-programme-master-of-science-in-construction-management-with-facility-management",
+      "url": "https://newinti.edu.my/programme/master-of-science-in-construction-management-with-facility-management/",
+      "role": "field-authority",
+      "sourceType": "official-page",
+      "fields": [
+        "programme detail",
+        "fees",
+        "requirements",
+        "intake",
+        "course setting",
+        "career"
+      ],
+      "sha256": "729864392e25eac8fd62c80d22b82e0b91d35cd5b8c92b3893a55c132405df0c"
+    },
+    {
+      "id": "programme-100-programme-master-of-science-in-data-science",
+      "url": "https://newinti.edu.my/programme/master-of-science-in-data-science/",
+      "role": "field-authority",
+      "sourceType": "official-page",
+      "fields": [
+        "programme detail",
+        "fees",
+        "requirements",
+        "intake",
+        "course setting",
+        "career"
+      ],
+      "sha256": "684431eb9112c65055be1ff5ca284de48f16a6a3e5fa454911cc1cb83666f476"
+    },
+    {
+      "id": "programme-101-programme-master-of-science-in-engineering-and-eco-innovation-by-research",
+      "url": "https://newinti.edu.my/programme/master-of-science-in-engineering-and-eco-innovation-by-research/",
+      "role": "field-authority",
+      "sourceType": "official-page",
+      "fields": [
+        "programme detail",
+        "fees",
+        "requirements",
+        "intake",
+        "course setting",
+        "career"
+      ],
+      "sha256": "13eeb393a9677fb02752f68aaf6434769551ccea33e1a99fa18d6b1fc93b7620"
+    },
+    {
+      "id": "brochure-brochures-master-of-science-in-engineering-and-eco-innovation-by-research-pdf",
+      "url": "https://newinti.edu.my/brochures/Master-of-Science-in-Engineering-and-Eco-Innovation-(by-Research).pdf",
+      "role": "field-authority",
+      "sourceType": "official-pdf",
+      "fields": [
+        "programme brochure",
+        "requirements",
+        "language",
+        "course setting",
+        "career"
+      ],
+      "sha256": "ae00def16ac2669b6a44281b12351f15eb07785d1b12ba0df18cb36b76fb1a5b"
+    },
+    {
+      "id": "programme-102-programme-master-of-science-in-facilities-management-online-learning",
+      "url": "https://newinti.edu.my/programme/master-of-science-in-facilities-management-online-learning/",
+      "role": "field-authority",
+      "sourceType": "official-page",
+      "fields": [
+        "programme detail",
+        "fees",
+        "requirements",
+        "intake",
+        "course setting",
+        "career"
+      ],
+      "sha256": "33af8ca9e28ca61950c7397becdca3d29224386018c1e5b01c014b772dcb247f"
+    },
+    {
+      "id": "brochure-brochures-master-of-science-in-facility-management-online-learning-pdf",
+      "url": "https://newinti.edu.my/brochures/Master-of-Science-in-Facility-Management-(Online-Learning).pdf",
+      "role": "field-authority",
+      "sourceType": "official-pdf",
+      "fields": [
+        "programme brochure",
+        "requirements",
+        "language",
+        "course setting",
+        "career"
+      ],
+      "sha256": "19e15258b2721df798f923fc36aa986b645fa983c6875277c69d2ad9b272f3bf"
+    },
+    {
+      "id": "programme-103-programme-master-of-science-in-information-systems-by-research",
+      "url": "https://newinti.edu.my/programme/master-of-science-in-information-systems-by-research/",
+      "role": "field-authority",
+      "sourceType": "official-page",
+      "fields": [
+        "programme detail",
+        "fees",
+        "requirements",
+        "intake",
+        "course setting",
+        "career"
+      ],
+      "sha256": "e13625f8c0cd867927116714bf9cbe6c486efc6e518c8056085f885983c1674f"
+    },
+    {
+      "id": "brochure-brochures-master-of-science-in-information-systems-by-research-pdf",
+      "url": "https://newinti.edu.my/brochures/Master-of-Science-in-Information-Systems-(by-Research).pdf",
+      "role": "field-authority",
+      "sourceType": "official-pdf",
+      "fields": [
+        "programme brochure",
+        "requirements",
+        "language",
+        "course setting",
+        "career"
+      ],
+      "sha256": "a394f221efb7ba7668a396b7d795faa39b01362ea40209df7c63ef1f3d022f42"
+    },
+    {
+      "id": "programme-104-programme-master-of-science-in-innovation-and-technology",
+      "url": "https://newinti.edu.my/programme/master-of-science-in-innovation-and-technology/",
+      "role": "field-authority",
+      "sourceType": "official-page",
+      "fields": [
+        "programme detail",
+        "fees",
+        "requirements",
+        "intake",
+        "course setting",
+        "career"
+      ],
+      "sha256": "db4c0d64fbb620b042eaf221d605a7974bf5981ca90a7b89d9cb89b0435d45b0"
+    },
+    {
+      "id": "programme-105-programme-master-of-science-in-integrated-project-management-online-learning",
+      "url": "https://newinti.edu.my/programme/master-of-science-in-integrated-project-management-online-learning/",
+      "role": "field-authority",
+      "sourceType": "official-page",
+      "fields": [
+        "programme detail",
+        "fees",
+        "requirements",
+        "intake",
+        "course setting",
+        "career"
+      ],
+      "sha256": "c0725e32ab504cd96ae62eda98c4a8aa91d78628c20dce1342aff69c624bc5b1"
+    },
+    {
+      "id": "brochure-brochures-master-of-science-in-intergrated-project-management-online-learning-pdf",
+      "url": "https://newinti.edu.my/brochures/Master-of-Science-in-Intergrated-Project-Management-(Online-Learning).pdf",
+      "role": "field-authority",
+      "sourceType": "official-pdf",
+      "fields": [
+        "programme brochure",
+        "requirements",
+        "language",
+        "course setting",
+        "career"
+      ],
+      "sha256": "488adb18c2f1b0832d7f52289e0a720f102a436c6c064f65673c1f8f0f25ef17"
+    },
+    {
+      "id": "programme-106-programme-master-of-traditional-chinese-medicine",
+      "url": "https://newinti.edu.my/programme/master-of-traditional-chinese-medicine/",
+      "role": "field-authority",
+      "sourceType": "official-page",
+      "fields": [
+        "programme detail",
+        "fees",
+        "requirements",
+        "intake",
+        "course setting",
+        "career"
+      ],
+      "sha256": "4a8148d7f95af1f6d474dc954a582bcbcb6b7b0c4963d00b7e1a979c5225d225"
+    },
+    {
+      "id": "programme-107-programme-psychology-american-university",
+      "url": "https://newinti.edu.my/programme/psychology-american-university/",
+      "role": "field-authority",
+      "sourceType": "official-page",
+      "fields": [
+        "programme detail",
+        "fees",
+        "requirements",
+        "intake",
+        "course setting",
+        "career"
+      ],
+      "sha256": "845644622331e7e665eaac3048d6ba87b8fd56eec46bec9cda88fd1b10b6b54a"
+    }
+  ],
+  "artifacts": [
+    {
+      "role": "manifest",
+      "path": "00_run_contract.json",
+      "sha256": "16d22b5a426524916cbfb5a1f1ea7cf266dcbbe3913193bbdd2896e0d9ece82d",
+      "description": "Run contract"
+    },
+    {
+      "role": "instruction-execution-ledger",
+      "path": "01_instruction_execution_ledger.json",
+      "sha256": "8dad098a96bfa4afd221d5acda3b65415c8e9aba0d2b93151e0f546b6f449f6f",
+      "description": "Instruction execution ledger"
+    },
+    {
+      "role": "audit",
+      "path": "02_official_source_registry.json",
+      "sha256": "ad34e0331af2996f37426df977f8f92b86f0f149f09636f43c1c4862a4ce10b9",
+      "description": "Official source registry"
+    },
+    {
+      "role": "manifest",
+      "path": "03_level_manifest.json",
+      "sha256": "99f04ef9db318e99d5ed396c761f2bd1b6946a6f185eac935d0d7a54701a5a4f",
+      "description": "Level manifest"
+    },
+    {
+      "role": "official-row-disposal",
+      "path": "04_official_row_disposal.json",
+      "sha256": "f6a8fd6ad0a43dce9d0401adfa6bc2a6a449acb76de3341395e3c44b20d7ae30",
+      "description": "Official row disposal"
+    },
+    {
+      "role": "source-snapshot",
+      "path": "05_source_cache_index.json",
+      "sha256": "2a2944b2aa67029f4054d13624348d85a7222af0bdf31ae0af8aae2bd7dac5cf",
+      "description": "Source cache index"
+    },
+    {
+      "role": "page-option-inventory",
+      "path": "06_page_option_inventory.json",
+      "sha256": "4c6182550475c615520bcebdc072191ce1b5047fcb56438f618a956b6e0fc582",
+      "description": "Programme page option inventory"
+    },
+    {
+      "role": "field-coverage-matrix",
+      "path": "07_field_coverage_matrix.json",
+      "sha256": "e13cad5741ea25f7c1865536466342af4154d5821a52e2bab6615473c1fbc786",
+      "description": "Field coverage matrix"
+    },
+    {
+      "role": "candidate",
+      "path": "08_candidate_dataset.json",
+      "sha256": "f80836efdeef927dcab59db254e9a3cb9402768a1ec9a513f13b22863dfe4324",
+      "description": "Candidate dataset"
+    },
+    {
+      "role": "source-trace",
+      "path": "09_source_to_candidate_trace.json",
+      "sha256": "cc9e669f8d28f5cd58d7d58ca5986308657e89112408a91a1185f4614d9807ab",
+      "description": "Source-to-candidate trace"
+    },
+    {
+      "role": "display-parity-report",
+      "path": "10_display_parity_report.json",
+      "sha256": "1cd124245c0b742c40fc2efbe4a8feeeb93f13005f5e1b40642b34ce8f076ea1",
+      "description": "Display parity report"
+    },
+    {
+      "role": "audit",
+      "path": "11_exception_queue.json",
+      "sha256": "e61cc5d0011de0e9915c542abe188aa444e8b2764699ef31d5994b69f9ea1dda",
+      "description": "Exception queue"
+    },
+    {
+      "role": "report",
+      "path": "12_operator_review_report.md",
+      "sha256": "fd48a89b86a2dc6017bd533b7a43256f6864a729cecfe83fac3e9af182acd26d",
+      "description": "Operator review report"
+    },
+    {
+      "role": "runtime-continuity-check",
+      "path": "13_runtime_continuity_check.json",
+      "sha256": "57ced49025bb476774d670bfe414b613e01da5d83a1a19cf3bbbdd77f5d16802",
+      "description": "Runtime continuity check"
+    },
+    {
+      "role": "deep-source-field-audit",
+      "path": "14_deep_source_field_audit.json",
+      "sha256": "4f917ea775fe5af0f1722fc4e349f1055d35ea45438f3ac50731f82eed211720",
+      "description": "Deep-source field audit"
+    },
+    {
+      "role": "public-display-hygiene-audit",
+      "path": "15_public_display_hygiene_audit.json",
+      "sha256": "a2e1c960f4e7754f46e5435977fa32b723b638cc39735f6e23ec345567e2406a",
+      "description": "Public display hygiene audit"
+    },
+    {
+      "role": "report",
+      "path": "16_acceptance_gap_audit.md",
+      "sha256": "958bbf76a4f47694af5b4c825d685e18b9aac1f03c05c18585b0d286b77ec179",
+      "description": "Acceptance gap audit"
+    },
+    {
+      "role": "audit",
+      "path": "17_current_official_diff_audit.json",
+      "sha256": "f88bd14e077e63b9da0c0421704012fe91291c6bc46f2edce3a93187c75edda8",
+      "description": "Current official source diff audit"
+    },
+    {
+      "role": "single-institution-collection-audit",
+      "path": "18_single_institution_collection_audit.json",
+      "sha256": "1e648a4f37271133fb12d8bb0941183f0b038e4e7871af8ea232c6ed00c6f0c2",
+      "description": "Single-institution data-only boundary audit"
+    }
+  ],
+  "exceptions": {
+    "blocking": [],
+    "review": [
+      {
+        "code": "INTI-B-001",
+        "nameEnOfficial": "Actuarial Science Program (American University Program)",
+        "level": "bachelor",
+        "reason": "Official fee is approximate and excludes SST; no exact final international total was selected.; StudyMY Chinese/Traditional Chinese/Malay localization is not yet finalized for public display."
+      },
+      {
+        "code": "INTI-B-002",
+        "nameEnOfficial": "Australian Degree Transfer Programme (Commerce)",
+        "level": "bachelor",
+        "reason": "Official detail page did not publish a parseable English/language requirement in the captured entry panel.; Official fee is approximate and excludes SST; no exact final international total was selected.; StudyMY Chinese/Traditional Chinese/Malay localization is not yet finalized for public display."
+      },
+      {
+        "code": "INTI-B-003",
+        "nameEnOfficial": "Australian Degree Transfer Programme (Science)",
+        "level": "bachelor",
+        "reason": "Official detail page did not publish a parseable English/language requirement in the captured entry panel.; Official fee is approximate and excludes SST; no exact final international total was selected.; Official duration was captured but could not be normalized into a stable years-only list value.; StudyMY Chinese/Traditional Chinese/Malay localization is not yet finalized for public display."
+      },
+      {
+        "code": "INTI-B-004",
+        "nameEnOfficial": "B.A. (Hons) in Fashion Management and Communication 3+0 in collaboration with Sheffield Hallam University, UK",
+        "level": "bachelor",
+        "reason": "Official detail page did not publish a parseable English/language requirement in the captured entry panel.; Official fee is approximate and excludes SST; no exact final international total was selected.; StudyMY Chinese/Traditional Chinese/Malay localization is not yet finalized for public display."
+      },
+      {
+        "code": "INTI-B-005",
+        "nameEnOfficial": "B.Sc. (Hons) in Physiotherapy",
+        "level": "bachelor",
+        "reason": "Official fee is approximate and excludes SST; no exact final international total was selected.; StudyMY Chinese/Traditional Chinese/Malay localization is not yet finalized for public display."
+      },
+      {
+        "code": "INTI-B-006",
+        "nameEnOfficial": "BA (Hons) Graphic Design 3+0 in collaboration with Sheffield Hallam University, UK",
+        "level": "bachelor",
+        "reason": "Official fee is approximate and excludes SST; no exact final international total was selected.; StudyMY Chinese/Traditional Chinese/Malay localization is not yet finalized for public display."
+      },
+      {
+        "code": "INTI-B-007",
+        "nameEnOfficial": "Bachelor in Music Production and Audio Technology (Honours)",
+        "level": "bachelor",
+        "reason": "Official fee is approximate and excludes SST; no exact final international total was selected.; StudyMY Chinese/Traditional Chinese/Malay localization is not yet finalized for public display."
+      },
+      {
+        "code": "INTI-B-008",
+        "nameEnOfficial": "Bachelor in Sports Management (Honours)",
+        "level": "bachelor",
+        "reason": "Official language text was captured but no stable IELTS list summary was parsed.; Official fee is approximate and excludes SST; no exact final international total was selected.; StudyMY Chinese/Traditional Chinese/Malay localization is not yet finalized for public display."
+      },
+      {
+        "code": "INTI-B-009",
+        "nameEnOfficial": "Bachelor of Accountancy (Honours)",
+        "level": "bachelor",
+        "reason": "Official detail page did not publish a parseable English/language requirement in the captured entry panel.; Official fee is approximate and excludes SST; no exact final international total was selected.; StudyMY Chinese/Traditional Chinese/Malay localization is not yet finalized for public display."
+      },
+      {
+        "code": "INTI-B-010",
+        "nameEnOfficial": "Bachelor of Accounting & Finance (Honours)",
+        "level": "bachelor",
+        "reason": "Official fee is approximate and excludes SST; no exact final international total was selected.; StudyMY Chinese/Traditional Chinese/Malay localization is not yet finalized for public display."
+      },
+      {
+        "code": "INTI-B-011",
+        "nameEnOfficial": "Bachelor of Art (Honours) Interior Architecture & Design 3.5+0 in collaboration with Sheffield Hallam University, UK",
+        "level": "bachelor",
+        "reason": "Official fee is approximate and excludes SST; no exact final international total was selected.; StudyMY Chinese/Traditional Chinese/Malay localization is not yet finalized for public display."
+      },
+      {
+        "code": "INTI-B-012",
+        "nameEnOfficial": "Bachelor of Arts (Honours) Accounting and Finance 3+0 in collaboration with University of Hertfordshire, UK",
+        "level": "bachelor",
+        "reason": "Official fee is approximate and excludes SST; no exact final international total was selected.; StudyMY Chinese/Traditional Chinese/Malay localization is not yet finalized for public display."
+      },
+      {
+        "code": "INTI-B-013",
+        "nameEnOfficial": "Bachelor of Arts (Honours) Advertising and Digital Marketing 3+0 in collaboration with University of Hertfordshire, UK",
+        "level": "bachelor",
+        "reason": "Official fee is approximate and excludes SST; no exact final international total was selected.; StudyMY Chinese/Traditional Chinese/Malay localization is not yet finalized for public display."
+      },
+      {
+        "code": "INTI-B-014",
+        "nameEnOfficial": "Bachelor of Arts (Honours) Business Administration (3+0) in collaboration with University of Hertfordshire, UK",
+        "level": "bachelor",
+        "reason": "Official fee is approximate and excludes SST; no exact final international total was selected.; StudyMY Chinese/Traditional Chinese/Malay localization is not yet finalized for public display."
+      },
+      {
+        "code": "INTI-B-015",
+        "nameEnOfficial": "Bachelor of Arts (Honours) Digital Media",
+        "level": "bachelor",
+        "reason": "Official detail page did not publish a parseable English/language requirement in the captured entry panel.; Official fee is approximate and excludes SST; no exact final international total was selected.; StudyMY Chinese/Traditional Chinese/Malay localization is not yet finalized for public display."
+      },
+      {
+        "code": "INTI-B-016",
+        "nameEnOfficial": "Bachelor of Arts (Honours) Finance 3+0 in collaboration with University of Hertfordshire, UK",
+        "level": "bachelor",
+        "reason": "Official fee is approximate and excludes SST; no exact final international total was selected.; StudyMY Chinese/Traditional Chinese/Malay localization is not yet finalized for public display."
+      },
+      {
+        "code": "INTI-B-017",
+        "nameEnOfficial": "Bachelor of Arts (Honours) Marketing (3+0) in collaboration with University of Hertfordshire, UK",
+        "level": "bachelor",
+        "reason": "Official fee is approximate and excludes SST; no exact final international total was selected.; StudyMY Chinese/Traditional Chinese/Malay localization is not yet finalized for public display."
+      },
+      {
+        "code": "INTI-B-018",
+        "nameEnOfficial": "Bachelor of Arts (Honours) Mass Communications 3+0 in collaboration with the University of Hertfordshire, UK",
+        "level": "bachelor",
+        "reason": "Official fee is approximate and excludes SST; no exact final international total was selected.; StudyMY Chinese/Traditional Chinese/Malay localization is not yet finalized for public display."
+      },
+      {
+        "code": "INTI-B-019",
+        "nameEnOfficial": "Bachelor of Arts in Communication 4+0 in collaboration with Southern New Hampshire University, USA",
+        "level": "bachelor",
+        "reason": "Official fee is approximate and excludes SST; no exact final international total was selected.; StudyMY Chinese/Traditional Chinese/Malay localization is not yet finalized for public display."
+      },
+      {
+        "code": "INTI-B-020",
+        "nameEnOfficial": "Bachelor of Arts in Psychology 4+0 in collaboration with Southern New Hampshire University, USA",
+        "level": "bachelor",
+        "reason": "Official fee is approximate and excludes SST; no exact final international total was selected.; StudyMY Chinese/Traditional Chinese/Malay localization is not yet finalized for public display."
+      },
+      {
+        "code": "INTI-B-021",
+        "nameEnOfficial": "Bachelor of Banking and Finance (Honours)",
+        "level": "bachelor",
+        "reason": "Official detail page did not publish a parseable English/language requirement in the captured entry panel.; Official fee is approximate and excludes SST; no exact final international total was selected.; StudyMY Chinese/Traditional Chinese/Malay localization is not yet finalized for public display."
+      },
+      {
+        "code": "INTI-B-022",
+        "nameEnOfficial": "Bachelor of Biotechnology (Hons)",
+        "level": "bachelor",
+        "reason": "Official detail page did not publish a parseable English/language requirement in the captured entry panel.; Official fee is approximate and excludes SST; no exact final international total was selected.; StudyMY Chinese/Traditional Chinese/Malay localization is not yet finalized for public display."
+      },
+      {
+        "code": "INTI-B-023",
+        "nameEnOfficial": "Bachelor of Business (3+0) in collaboration with Swinburne University of Technology, Australia",
+        "level": "bachelor",
+        "reason": "Official fee is approximate and excludes SST; no exact final international total was selected.; StudyMY Chinese/Traditional Chinese/Malay localization is not yet finalized for public display."
+      },
+      {
+        "code": "INTI-B-024",
+        "nameEnOfficial": "Bachelor of Business (Honours) Accounting",
+        "level": "bachelor",
+        "reason": "Official fee is approximate and excludes SST; no exact final international total was selected.; StudyMY Chinese/Traditional Chinese/Malay localization is not yet finalized for public display."
+      },
+      {
+        "code": "INTI-B-025",
+        "nameEnOfficial": "Bachelor of Business (Honours) Business Administration",
+        "level": "bachelor",
+        "reason": "Official language text was captured but no stable IELTS list summary was parsed.; Official fee is approximate and excludes SST; no exact final international total was selected.; StudyMY Chinese/Traditional Chinese/Malay localization is not yet finalized for public display."
+      },
+      {
+        "code": "INTI-B-026",
+        "nameEnOfficial": "Bachelor of Business (Honours) Business Administration – Online Learning",
+        "level": "bachelor",
+        "reason": "Official language text was captured but no stable IELTS list summary was parsed.; Official fee is approximate and excludes SST; no exact final international total was selected.; StudyMY Chinese/Traditional Chinese/Malay localization is not yet finalized for public display."
+      },
+      {
+        "code": "INTI-B-027",
+        "nameEnOfficial": "Bachelor of Business (Honours) Digital Enterprise Management",
+        "level": "bachelor",
+        "reason": "Official detail page did not publish a parseable English/language requirement in the captured entry panel.; Official fee is approximate and excludes SST; no exact final international total was selected.; StudyMY Chinese/Traditional Chinese/Malay localization is not yet finalized for public display."
+      },
+      {
+        "code": "INTI-B-028",
+        "nameEnOfficial": "Bachelor of Business (Honours) Finance",
+        "level": "bachelor",
+        "reason": "Official fee is approximate and excludes SST; no exact final international total was selected.; StudyMY Chinese/Traditional Chinese/Malay localization is not yet finalized for public display."
+      },
+      {
+        "code": "INTI-B-029",
+        "nameEnOfficial": "Bachelor of Business (Honours) Human Resource Management",
+        "level": "bachelor",
+        "reason": "Official fee is approximate and excludes SST; no exact final international total was selected.; StudyMY Chinese/Traditional Chinese/Malay localization is not yet finalized for public display."
+      },
+      {
+        "code": "INTI-B-030",
+        "nameEnOfficial": "Bachelor of Business (Honours) Human Resource Management – Online Learning",
+        "level": "bachelor",
+        "reason": "Official fee is approximate and excludes SST; no exact final international total was selected.; StudyMY Chinese/Traditional Chinese/Malay localization is not yet finalized for public display."
+      },
+      {
+        "code": "INTI-B-031",
+        "nameEnOfficial": "Bachelor of Business (Honours) in Entrepreneurship and Marketing",
+        "level": "bachelor",
+        "reason": "Official language text was captured but no stable IELTS list summary was parsed.; Official fee is approximate and excludes SST; no exact final international total was selected.; StudyMY Chinese/Traditional Chinese/Malay localization is not yet finalized for public display."
+      },
+      {
+        "code": "INTI-B-032",
+        "nameEnOfficial": "Bachelor of Business (Honours) in International Business and Logistics Supply Chain Management",
+        "level": "bachelor",
+        "reason": "Official language text was captured but no stable IELTS list summary was parsed.; Official fee is approximate and excludes SST; no exact final international total was selected.; StudyMY Chinese/Traditional Chinese/Malay localization is not yet finalized for public display."
+      },
+      {
+        "code": "INTI-B-033",
+        "nameEnOfficial": "Bachelor of Business (Honours) International Business",
+        "level": "bachelor",
+        "reason": "Official language text was captured but no stable IELTS list summary was parsed.; Official fee is approximate and excludes SST; no exact final international total was selected.; StudyMY Chinese/Traditional Chinese/Malay localization is not yet finalized for public display."
+      },
+      {
+        "code": "INTI-B-034",
+        "nameEnOfficial": "Bachelor of Business (Honours) International Business – Online Learning",
+        "level": "bachelor",
+        "reason": "Official language text was captured but no stable IELTS list summary was parsed.; Official fee is approximate and excludes SST; no exact final international total was selected.; StudyMY Chinese/Traditional Chinese/Malay localization is not yet finalized for public display."
+      },
+      {
+        "code": "INTI-B-035",
+        "nameEnOfficial": "Bachelor of Business (Honours) Logistics and Supply Chain Management",
+        "level": "bachelor",
+        "reason": "Official fee is approximate and excludes SST; no exact final international total was selected.; StudyMY Chinese/Traditional Chinese/Malay localization is not yet finalized for public display."
+      },
+      {
+        "code": "INTI-B-036",
+        "nameEnOfficial": "Bachelor of Business (Honours) Management",
+        "level": "bachelor",
+        "reason": "Official detail page did not publish a parseable English/language requirement in the captured entry panel.; Official fee is approximate and excludes SST; no exact final international total was selected.; StudyMY Chinese/Traditional Chinese/Malay localization is not yet finalized for public display."
+      },
+      {
+        "code": "INTI-B-037",
+        "nameEnOfficial": "Bachelor of Business (Honours) Marketing – Online Learning",
+        "level": "bachelor",
+        "reason": "Official language text was captured but no stable IELTS list summary was parsed.; Official fee is approximate and excludes SST; no exact final international total was selected.; StudyMY Chinese/Traditional Chinese/Malay localization is not yet finalized for public display."
+      },
+      {
+        "code": "INTI-B-038",
+        "nameEnOfficial": "Bachelor of Business (Honours) with Psychology",
+        "level": "bachelor",
+        "reason": "Official fee is approximate and excludes SST; no exact final international total was selected.; StudyMY Chinese/Traditional Chinese/Malay localization is not yet finalized for public display."
+      },
+      {
+        "code": "INTI-B-039",
+        "nameEnOfficial": "Bachelor of Business Honours (Marketing)",
+        "level": "bachelor",
+        "reason": "Official fee is approximate and excludes SST; no exact final international total was selected.; StudyMY Chinese/Traditional Chinese/Malay localization is not yet finalized for public display."
+      },
+      {
+        "code": "INTI-B-040",
+        "nameEnOfficial": "Bachelor of Civil Engineering with Honours",
+        "level": "bachelor",
+        "reason": "Official detail page did not publish a parseable English/language requirement in the captured entry panel.; Official fee is approximate and excludes SST; no exact final international total was selected.; StudyMY Chinese/Traditional Chinese/Malay localization is not yet finalized for public display."
+      },
+      {
+        "code": "INTI-B-041",
+        "nameEnOfficial": "Bachelor of Computer Science (3+0) in collaboration with Swinburne University of Technology, Australia",
+        "level": "bachelor",
+        "reason": "Official fee is approximate and excludes SST; no exact final international total was selected.; StudyMY Chinese/Traditional Chinese/Malay localization is not yet finalized for public display."
+      },
+      {
+        "code": "INTI-B-042",
+        "nameEnOfficial": "Bachelor of Computer Science (Honours) (Online Learning)",
+        "level": "bachelor",
+        "reason": "Official fee is approximate and excludes SST; no exact final international total was selected.; StudyMY Chinese/Traditional Chinese/Malay localization is not yet finalized for public display."
+      },
+      {
+        "code": "INTI-B-043",
+        "nameEnOfficial": "Bachelor of Computer Science (Hons)",
+        "level": "bachelor",
+        "reason": "Official detail page did not publish a parseable English/language requirement in the captured entry panel.; Official fee is approximate and excludes SST; no exact final international total was selected.; StudyMY Chinese/Traditional Chinese/Malay localization is not yet finalized for public display."
+      },
+      {
+        "code": "INTI-B-044",
+        "nameEnOfficial": "Bachelor of Computer Science (Hons) major in Business Analytics",
+        "level": "bachelor",
+        "reason": "Official fee is approximate and excludes SST; no exact final international total was selected.; StudyMY Chinese/Traditional Chinese/Malay localization is not yet finalized for public display."
+      },
+      {
+        "code": "INTI-B-045",
+        "nameEnOfficial": "Bachelor of Computer Science (Hons) major in Cloud Computing",
+        "level": "bachelor",
+        "reason": "Official fee is approximate and excludes SST; no exact final international total was selected.; StudyMY Chinese/Traditional Chinese/Malay localization is not yet finalized for public display."
+      },
+      {
+        "code": "INTI-B-046",
+        "nameEnOfficial": "Bachelor of Computer Science (Hons) major in Mobile Computing",
+        "level": "bachelor",
+        "reason": "Official fee is approximate and excludes SST; no exact final international total was selected.; StudyMY Chinese/Traditional Chinese/Malay localization is not yet finalized for public display."
+      },
+      {
+        "code": "INTI-B-047",
+        "nameEnOfficial": "Bachelor of Computer Science (Hons) major in Network and Security",
+        "level": "bachelor",
+        "reason": "Official fee is approximate and excludes SST; no exact final international total was selected.; StudyMY Chinese/Traditional Chinese/Malay localization is not yet finalized for public display."
+      },
+      {
+        "code": "INTI-B-048",
+        "nameEnOfficial": "Bachelor of Computer Science (Hons) major in Software Development",
+        "level": "bachelor",
+        "reason": "Official fee is approximate and excludes SST; no exact final international total was selected.; StudyMY Chinese/Traditional Chinese/Malay localization is not yet finalized for public display."
+      },
+      {
+        "code": "INTI-B-049",
+        "nameEnOfficial": "Bachelor of Education (Honours) in Teaching Chinese as a Second Language",
+        "level": "bachelor",
+        "reason": "Official fee is approximate and excludes SST; no exact final international total was selected.; StudyMY Chinese/Traditional Chinese/Malay localization is not yet finalized for public display."
+      },
+      {
+        "code": "INTI-B-050",
+        "nameEnOfficial": "Bachelor of Food Service Management with Culinary Arts (Honours) 3+0 in collaboration with CY Cergy Paris Université, France",
+        "level": "bachelor",
+        "reason": "Official fee is approximate and excludes SST; no exact final international total was selected.; StudyMY Chinese/Traditional Chinese/Malay localization is not yet finalized for public display."
+      },
+      {
+        "code": "INTI-B-051",
+        "nameEnOfficial": "Bachelor of Information and Communication Technology 3+0 in collaboration with Swinburne University of Technology, Australia",
+        "level": "bachelor",
+        "reason": "Official fee is approximate and excludes SST; no exact final international total was selected.; StudyMY Chinese/Traditional Chinese/Malay localization is not yet finalized for public display."
+      },
+      {
+        "code": "INTI-B-052",
+        "nameEnOfficial": "Bachelor of Information Technology (Hons)",
+        "level": "bachelor",
+        "reason": "Official fee is approximate and excludes SST; no exact final international total was selected.; StudyMY Chinese/Traditional Chinese/Malay localization is not yet finalized for public display."
+      },
+      {
+        "code": "INTI-B-053",
+        "nameEnOfficial": "Bachelor of Information Technology (Hons) major in Business Analytics",
+        "level": "bachelor",
+        "reason": "Official fee is approximate and excludes SST; no exact final international total was selected.; StudyMY Chinese/Traditional Chinese/Malay localization is not yet finalized for public display."
+      },
+      {
+        "code": "INTI-B-054",
+        "nameEnOfficial": "Bachelor of Mass Communication (Honours)",
+        "level": "bachelor",
+        "reason": "Official fee is approximate and excludes SST; no exact final international total was selected.; StudyMY Chinese/Traditional Chinese/Malay localization is not yet finalized for public display."
+      },
+      {
+        "code": "INTI-B-055",
+        "nameEnOfficial": "Bachelor of Mass Communication (Hons)",
+        "level": "bachelor",
+        "reason": "Official fee is approximate and excludes SST; no exact final international total was selected.; StudyMY Chinese/Traditional Chinese/Malay localization is not yet finalized for public display."
+      },
+      {
+        "code": "INTI-B-056",
+        "nameEnOfficial": "Bachelor of Mechanical Engineering with Honours",
+        "level": "bachelor",
+        "reason": "Official detail page did not publish a parseable English/language requirement in the captured entry panel.; Official fee is approximate and excludes SST; no exact final international total was selected.; StudyMY Chinese/Traditional Chinese/Malay localization is not yet finalized for public display."
+      },
+      {
+        "code": "INTI-B-057",
+        "nameEnOfficial": "Bachelor of Media and Communication (3+0) in collaboration with Swinburne University of Technology, Australia",
+        "level": "bachelor",
+        "reason": "Official language text was captured but no stable IELTS list summary was parsed.; Official fee is approximate and excludes SST; no exact final international total was selected.; StudyMY Chinese/Traditional Chinese/Malay localization is not yet finalized for public display."
+      },
+      {
+        "code": "INTI-B-058",
+        "nameEnOfficial": "Bachelor of Science (Hons) Quantity Surveying",
+        "level": "bachelor",
+        "reason": "Official fee is approximate and excludes SST; no exact final international total was selected.; StudyMY Chinese/Traditional Chinese/Malay localization is not yet finalized for public display."
+      },
+      {
+        "code": "INTI-B-059",
+        "nameEnOfficial": "Bachelor of Science in Business Administration 4+0 in collaboration with Southern New Hampshire University, USA",
+        "level": "bachelor",
+        "reason": "Official fee is approximate and excludes SST; no exact final international total was selected.; StudyMY Chinese/Traditional Chinese/Malay localization is not yet finalized for public display."
+      },
+      {
+        "code": "INTI-B-060",
+        "nameEnOfficial": "Bachelor of Science with Honours in Computer Science 3+0 in collaboration with Coventry University, UK",
+        "level": "bachelor",
+        "reason": "Official fee is approximate and excludes SST; no exact final international total was selected.; StudyMY Chinese/Traditional Chinese/Malay localization is not yet finalized for public display."
+      },
+      {
+        "code": "INTI-B-061",
+        "nameEnOfficial": "Bachelor of Technology (Honours) Data Science",
+        "level": "bachelor",
+        "reason": "Official fee is approximate and excludes SST; no exact final international total was selected.; StudyMY Chinese/Traditional Chinese/Malay localization is not yet finalized for public display."
+      },
+      {
+        "code": "INTI-B-062",
+        "nameEnOfficial": "Bachelor of Technology in Digital Construction Management",
+        "level": "bachelor",
+        "reason": "Official fee is approximate and excludes SST; no exact final international total was selected.; StudyMY Chinese/Traditional Chinese/Malay localization is not yet finalized for public display."
+      },
+      {
+        "code": "INTI-B-063",
+        "nameEnOfficial": "Bachelor of Technology in Intelligent Manufacturing",
+        "level": "bachelor",
+        "reason": "Official fee is approximate and excludes SST; no exact final international total was selected.; StudyMY Chinese/Traditional Chinese/Malay localization is not yet finalized for public display."
+      },
+      {
+        "code": "INTI-B-064",
+        "nameEnOfficial": "Bachelor of Technology in Intelligent Process and Product Design",
+        "level": "bachelor",
+        "reason": "Official fee is approximate and excludes SST; no exact final international total was selected.; StudyMY Chinese/Traditional Chinese/Malay localization is not yet finalized for public display."
+      },
+      {
+        "code": "INTI-B-065",
+        "nameEnOfficial": "Bachelor of Traditional Chinese Medicine (Hons)",
+        "level": "bachelor",
+        "reason": "Official fee is approximate and excludes SST; no exact final international total was selected.; StudyMY Chinese/Traditional Chinese/Malay localization is not yet finalized for public display."
+      },
+      {
+        "code": "INTI-B-066",
+        "nameEnOfficial": "Biosciences Degree Program (American University Program)",
+        "level": "bachelor",
+        "reason": "Official fee is approximate and excludes SST; no exact final international total was selected.; StudyMY Chinese/Traditional Chinese/Malay localization is not yet finalized for public display."
+      },
+      {
+        "code": "INTI-B-067",
+        "nameEnOfficial": "Business Degree Program (American Degree Transfer Program)",
+        "level": "bachelor",
+        "reason": "Official fee is approximate and excludes SST; no exact final international total was selected.; StudyMY Chinese/Traditional Chinese/Malay localization is not yet finalized for public display."
+      },
+      {
+        "code": "INTI-B-068",
+        "nameEnOfficial": "Computer Science Degree Program (American Degree Transfer Program)",
+        "level": "bachelor",
+        "reason": "Official fee is approximate and excludes SST; no exact final international total was selected.; StudyMY Chinese/Traditional Chinese/Malay localization is not yet finalized for public display."
+      },
+      {
+        "code": "INTI-P-001",
+        "nameEnOfficial": "Doctor of Business Administration",
+        "level": "phd",
+        "reason": "Official fee is approximate and excludes SST; no exact final international total was selected.; StudyMY Chinese/Traditional Chinese/Malay localization is not yet finalized for public display."
+      },
+      {
+        "code": "INTI-P-002",
+        "nameEnOfficial": "Doctor of Business Administration (Online Learning)",
+        "level": "phd",
+        "reason": "Official fee is approximate and excludes SST; no exact final international total was selected.; StudyMY Chinese/Traditional Chinese/Malay localization is not yet finalized for public display."
+      },
+      {
+        "code": "INTI-P-003",
+        "nameEnOfficial": "Doctor of Education",
+        "level": "phd",
+        "reason": "Official fee is approximate and excludes SST; no exact final international total was selected.; StudyMY Chinese/Traditional Chinese/Malay localization is not yet finalized for public display."
+      },
+      {
+        "code": "INTI-P-004",
+        "nameEnOfficial": "Doctor of Philosophy (Education) (by Research)",
+        "level": "phd",
+        "reason": "Official fee is approximate and excludes SST; no exact final international total was selected.; StudyMY Chinese/Traditional Chinese/Malay localization is not yet finalized for public display."
+      },
+      {
+        "code": "INTI-P-005",
+        "nameEnOfficial": "Doctor of Philosophy (PhD) (Applied Physics) (by Research)",
+        "level": "phd",
+        "reason": "Official fee is approximate and excludes SST; no exact final international total was selected.; StudyMY Chinese/Traditional Chinese/Malay localization is not yet finalized for public display."
+      },
+      {
+        "code": "INTI-P-006",
+        "nameEnOfficial": "Doctor of Philosophy (PhD) (Financial Technology) (by Research)",
+        "level": "phd",
+        "reason": "Official language text was captured but no stable IELTS list summary was parsed.; Official fee is approximate and excludes SST; no exact final international total was selected.; StudyMY Chinese/Traditional Chinese/Malay localization is not yet finalized for public display."
+      },
+      {
+        "code": "INTI-P-007",
+        "nameEnOfficial": "Doctor of Philosophy (PhD) (Information Systems) (by Research)",
+        "level": "phd",
+        "reason": "Official fee is approximate and excludes SST; no exact final international total was selected.; StudyMY Chinese/Traditional Chinese/Malay localization is not yet finalized for public display."
+      },
+      {
+        "code": "INTI-P-008",
+        "nameEnOfficial": "Doctor of Philosophy (PhD) (Innovation and Technology) (by Research)",
+        "level": "phd",
+        "reason": "Official fee is approximate and excludes SST; no exact final international total was selected.; StudyMY Chinese/Traditional Chinese/Malay localization is not yet finalized for public display."
+      },
+      {
+        "code": "INTI-P-009",
+        "nameEnOfficial": "Doctor of Philosophy (PhD) (Management) (by Research)",
+        "level": "phd",
+        "reason": "Official fee is approximate and excludes SST; no exact final international total was selected.; StudyMY Chinese/Traditional Chinese/Malay localization is not yet finalized for public display."
+      },
+      {
+        "code": "INTI-P-010",
+        "nameEnOfficial": "Doctor of Philosophy (PhD) in Data Science (by Research)",
+        "level": "phd",
+        "reason": "Official fee is approximate and excludes SST; no exact final international total was selected.; StudyMY Chinese/Traditional Chinese/Malay localization is not yet finalized for public display."
+      },
+      {
+        "code": "INTI-B-069",
+        "nameEnOfficial": "Engineering Degree Program (American University Program)",
+        "level": "bachelor",
+        "reason": "Official fee is approximate and excludes SST; no exact final international total was selected.; StudyMY Chinese/Traditional Chinese/Malay localization is not yet finalized for public display."
+      },
+      {
+        "code": "INTI-B-070",
+        "nameEnOfficial": "Health & Applied Sciences Program (American University Program)",
+        "level": "bachelor",
+        "reason": "Official fee is approximate and excludes SST; no exact final international total was selected.; StudyMY Chinese/Traditional Chinese/Malay localization is not yet finalized for public display."
+      },
+      {
+        "code": "INTI-B-071",
+        "nameEnOfficial": "Mass Communication Degree Program (American Degree Transfer Program)",
+        "level": "bachelor",
+        "reason": "Official fee is approximate and excludes SST; no exact final international total was selected.; StudyMY Chinese/Traditional Chinese/Malay localization is not yet finalized for public display."
+      },
+      {
+        "code": "INTI-M-001",
+        "nameEnOfficial": "Master in Education Management",
+        "level": "master",
+        "reason": "Official fee is approximate and excludes SST; no exact final international total was selected.; StudyMY Chinese/Traditional Chinese/Malay localization is not yet finalized for public display."
+      },
+      {
+        "code": "INTI-M-002",
+        "nameEnOfficial": "Master in Education Management (Online Learning)",
+        "level": "master",
+        "reason": "Official fee is approximate and excludes SST; no exact final international total was selected.; StudyMY Chinese/Traditional Chinese/Malay localization is not yet finalized for public display."
+      },
+      {
+        "code": "INTI-M-003",
+        "nameEnOfficial": "Master in Health Administration",
+        "level": "master",
+        "reason": "Official fee is approximate and excludes SST; no exact final international total was selected.; StudyMY Chinese/Traditional Chinese/Malay localization is not yet finalized for public display."
+      },
+      {
+        "code": "INTI-M-004",
+        "nameEnOfficial": "Master in Health Sciences (Physiotherapy) (by Research)",
+        "level": "master",
+        "reason": "Official language text was captured but no stable IELTS list summary was parsed.; Official fee is approximate and excludes SST; no exact final international total was selected.; StudyMY Chinese/Traditional Chinese/Malay localization is not yet finalized for public display."
+      },
+      {
+        "code": "INTI-M-005",
+        "nameEnOfficial": "Master in Information Systems (MIS)",
+        "level": "master",
+        "reason": "Official fee is approximate and excludes SST; no exact final international total was selected.; StudyMY Chinese/Traditional Chinese/Malay localization is not yet finalized for public display."
+      },
+      {
+        "code": "INTI-M-006",
+        "nameEnOfficial": "Master in Information Technology (MIT)",
+        "level": "master",
+        "reason": "Official fee is approximate and excludes SST; no exact final international total was selected.; StudyMY Chinese/Traditional Chinese/Malay localization is not yet finalized for public display."
+      },
+      {
+        "code": "INTI-M-007",
+        "nameEnOfficial": "Master in Information Technology (Online Learning)",
+        "level": "master",
+        "reason": "Official fee is approximate and excludes SST; no exact final international total was selected.; StudyMY Chinese/Traditional Chinese/Malay localization is not yet finalized for public display."
+      },
+      {
+        "code": "INTI-M-008",
+        "nameEnOfficial": "Master of Biotechnological Innovations and Application (by Research)",
+        "level": "master",
+        "reason": "Official language text was captured but no stable IELTS list summary was parsed.; Official fee is approximate and excludes SST; no exact final international total was selected.; StudyMY Chinese/Traditional Chinese/Malay localization is not yet finalized for public display."
+      },
+      {
+        "code": "INTI-M-009",
+        "nameEnOfficial": "Master of Business Administration (Business Analytics)",
+        "level": "master",
+        "reason": "Official fee is approximate and excludes SST; no exact final international total was selected.; StudyMY Chinese/Traditional Chinese/Malay localization is not yet finalized for public display."
+      },
+      {
+        "code": "INTI-M-010",
+        "nameEnOfficial": "Master of Business Administration (MBA)",
+        "level": "master",
+        "reason": "Official fee is approximate and excludes SST; no exact final international total was selected.; StudyMY Chinese/Traditional Chinese/Malay localization is not yet finalized for public display."
+      },
+      {
+        "code": "INTI-M-011",
+        "nameEnOfficial": "Master of Business Administration (MBA) in collaboration with INTI International University",
+        "level": "master",
+        "reason": "Official fee is approximate and excludes SST; no exact final international total was selected.; StudyMY Chinese/Traditional Chinese/Malay localization is not yet finalized for public display."
+      },
+      {
+        "code": "INTI-M-012",
+        "nameEnOfficial": "Master of Business Administration (Online Learning)",
+        "level": "master",
+        "reason": "Official fee is approximate and excludes SST; no exact final international total was selected.; StudyMY Chinese/Traditional Chinese/Malay localization is not yet finalized for public display."
+      },
+      {
+        "code": "INTI-M-013",
+        "nameEnOfficial": "Master of Education in Learning, Design and Technology (by Research)",
+        "level": "master",
+        "reason": "Official fee is approximate and excludes SST; no exact final international total was selected.; StudyMY Chinese/Traditional Chinese/Malay localization is not yet finalized for public display."
+      },
+      {
+        "code": "INTI-B-072",
+        "nameEnOfficial": "Master of Engineering in Electrical and Electronic Engineering 4+0 in collaboration with Coventry University, UK",
+        "level": "bachelor",
+        "reason": "Official fee is approximate and excludes SST; no exact final international total was selected.; StudyMY Chinese/Traditional Chinese/Malay localization is not yet finalized for public display.; Official level tag is Degree but award title starts with Master of Engineering; product level mapping needs human review."
+      },
+      {
+        "code": "INTI-B-073",
+        "nameEnOfficial": "Master of Engineering in Mechanical Engineering 4+0 in collaboration with Coventry University, UK",
+        "level": "bachelor",
+        "reason": "Official fee is approximate and excludes SST; no exact final international total was selected.; StudyMY Chinese/Traditional Chinese/Malay localization is not yet finalized for public display.; Official level tag is Degree but award title starts with Master of Engineering; product level mapping needs human review."
+      },
+      {
+        "code": "INTI-M-014",
+        "nameEnOfficial": "Master of Science in Construction Management (Building Information Modelling)",
+        "level": "master",
+        "reason": "Official fee is approximate and excludes SST; no exact final international total was selected.; StudyMY Chinese/Traditional Chinese/Malay localization is not yet finalized for public display."
+      },
+      {
+        "code": "INTI-M-015",
+        "nameEnOfficial": "Master of Science in Construction Management (Building Information Modelling) – (Online Learning)",
+        "level": "master",
+        "reason": "Official fee is approximate and excludes SST; no exact final international total was selected.; StudyMY Chinese/Traditional Chinese/Malay localization is not yet finalized for public display."
+      },
+      {
+        "code": "INTI-M-016",
+        "nameEnOfficial": "Master of Science in Construction Management (Facility Management)",
+        "level": "master",
+        "reason": "Official fee is approximate and excludes SST; no exact final international total was selected.; StudyMY Chinese/Traditional Chinese/Malay localization is not yet finalized for public display."
+      },
+      {
+        "code": "INTI-M-017",
+        "nameEnOfficial": "Master of Science in Data Science (by Research)",
+        "level": "master",
+        "reason": "Official fee is approximate and excludes SST; no exact final international total was selected.; StudyMY Chinese/Traditional Chinese/Malay localization is not yet finalized for public display."
+      },
+      {
+        "code": "INTI-M-018",
+        "nameEnOfficial": "Master of Science in Engineering and Eco-Innovation (by Research)",
+        "level": "master",
+        "reason": "Official detail page did not publish a parseable English/language requirement in the captured entry panel.; Official fee is approximate and excludes SST; no exact final international total was selected.; StudyMY Chinese/Traditional Chinese/Malay localization is not yet finalized for public display."
+      },
+      {
+        "code": "INTI-M-019",
+        "nameEnOfficial": "Master of Science in Facilities Management (Online Learning)",
+        "level": "master",
+        "reason": "Official detail page did not publish a parseable English/language requirement in the captured entry panel.; Official fee is approximate and excludes SST; no exact final international total was selected.; StudyMY Chinese/Traditional Chinese/Malay localization is not yet finalized for public display."
+      },
+      {
+        "code": "INTI-M-020",
+        "nameEnOfficial": "Master of Science in Information Systems (by Research)",
+        "level": "master",
+        "reason": "Official fee is approximate and excludes SST; no exact final international total was selected.; StudyMY Chinese/Traditional Chinese/Malay localization is not yet finalized for public display."
+      },
+      {
+        "code": "INTI-M-021",
+        "nameEnOfficial": "Master of Science in Innovation and Technology (by Research)",
+        "level": "master",
+        "reason": "Official fee is approximate and excludes SST; no exact final international total was selected.; StudyMY Chinese/Traditional Chinese/Malay localization is not yet finalized for public display."
+      },
+      {
+        "code": "INTI-M-022",
+        "nameEnOfficial": "Master of Science in Integrated Project Management (Online Learning)",
+        "level": "master",
+        "reason": "Official fee is approximate and excludes SST; no exact final international total was selected.; StudyMY Chinese/Traditional Chinese/Malay localization is not yet finalized for public display."
+      },
+      {
+        "code": "INTI-M-023",
+        "nameEnOfficial": "Master of Traditional Chinese Medicine",
+        "level": "master",
+        "reason": "Official fee is approximate and excludes SST; no exact final international total was selected.; StudyMY Chinese/Traditional Chinese/Malay localization is not yet finalized for public display."
+      },
+      {
+        "code": "INTI-B-074",
+        "nameEnOfficial": "Psychology Degree Program (American Degree Transfer Program)",
+        "level": "bachelor",
+        "reason": "Official fee is approximate and excludes SST; no exact final international total was selected.; StudyMY Chinese/Traditional Chinese/Malay localization is not yet finalized for public display."
+      }
+    ]
+  },
+  "verification": {
+    "instructionExecution": "passed",
+    "runtimeContinuity": "passed",
+    "candidateIntegrity": "passed",
+    "deepSourceFieldExploration": "passed",
+    "publicDisplayHygiene": "passed",
+    "sourceHashes": "passed",
+    "fieldCoverage": "passed",
+    "manifestAudit": "passed",
+    "directoryParse": "passed",
+    "identityReconciliation": "passed",
+    "feeReconciliation": "passed",
+    "singleInstitutionBoundary": "passed"
+  },
+  "decision": "review-required"
+}

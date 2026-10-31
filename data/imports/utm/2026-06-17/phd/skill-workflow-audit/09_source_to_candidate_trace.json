@@ -1,0 +1,2532 @@
+[
+  {
+    "code": "UTM-PHD-001",
+    "nameEnOfficial": "Doctor of Philosophy (Generic)",
+    "traces": [
+      {
+        "field": "nameEnOfficial",
+        "sourceId": "faculty-engineering-education-generic-programmes",
+        "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-biomedical-engineering-health-science/",
+        "sourceText": "Doctor of Philosophy (Generic)",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "fee",
+        "sourceId": "fees-pg-inter",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "sourceText": "Mapped to UTM international postgraduate mainstream Engineering doctoral research fee.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "duration",
+        "sourceId": "fees-pg-inter",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "sourceText": "Standardized duration: 3 years (6 semesters). Official source: PhD Programme (6 Semesters) on UTM international postgraduate fee page.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "academicRequirement",
+        "sourceId": "int-pg-entry-requirements",
+        "sourceUrl": "https://admission.utm.my/int-pg-entry-requirements/",
+        "sourceText": "UTM official entry requirement for Doctoral Degree by Mixed-Mode and Research: a Master's Degree from UTM or any other higher learning institution recognised by the Senate, or other equivalent qualification and relevant experience recognised by the Senate.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "languageRequirement",
+        "sourceId": "english-language-requirements",
+        "sourceUrl": "https://admission.utm.my/english-language-requirements-3/",
+        "sourceText": "UTM official postgraduate English requirement: MUET band 4.0, IELTS 6.0, TOEFL iBT 60, PTE Academic 59, Cambridge English Qualification 169, or Certified Intensive English Programme level 109 and above.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      }
+    ]
+  },
+  {
+    "code": "UTM-PHD-002",
+    "nameEnOfficial": "Doctor of Philosophy (Engineering Education)",
+    "traces": [
+      {
+        "field": "nameEnOfficial",
+        "sourceId": "faculty-engineering-education-generic-programmes",
+        "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-biomedical-engineering-health-science/",
+        "sourceText": "Doctor of Philosophy (Engineering Education)",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "fee",
+        "sourceId": "fees-pg-inter",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "sourceText": "Mapped to UTM international postgraduate mainstream Engineering doctoral research fee.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "duration",
+        "sourceId": "fees-pg-inter",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "sourceText": "Standardized duration: 3 years (6 semesters). Official source: PhD Programme (6 Semesters) on UTM international postgraduate fee page.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "academicRequirement",
+        "sourceId": "int-pg-entry-requirements",
+        "sourceUrl": "https://admission.utm.my/int-pg-entry-requirements/",
+        "sourceText": "UTM official entry requirement for Doctoral Degree by Mixed-Mode and Research: a Master's Degree from UTM or any other higher learning institution recognised by the Senate, or other equivalent qualification and relevant experience recognised by the Senate.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "languageRequirement",
+        "sourceId": "english-language-requirements",
+        "sourceUrl": "https://admission.utm.my/english-language-requirements-3/",
+        "sourceText": "UTM official postgraduate English requirement: MUET band 4.0, IELTS 6.0, TOEFL iBT 60, PTE Academic 59, Cambridge English Qualification 169, or Certified Intensive English Programme level 109 and above.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      }
+    ]
+  },
+  {
+    "code": "UTM-PHD-003",
+    "nameEnOfficial": "Doctor of Engineering Specialization : Construction Technology and Management",
+    "traces": [
+      {
+        "field": "nameEnOfficial",
+        "sourceId": "faculty-civil-engineering",
+        "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-civil-engineering/",
+        "sourceText": "Doctor of Engineering Specialization : Construction Technology and Management",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "fee",
+        "sourceId": "fees-pg-inter",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "sourceText": "Mapped to UTM international postgraduate mainstream Engineering doctoral mixed fee.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "duration",
+        "sourceId": "fees-pg-inter",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "sourceText": "Standardized duration: 3 years (6 semesters). Official source: PhD Programme (6 Semesters) on UTM international postgraduate fee page.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "academicRequirement",
+        "sourceId": "int-pg-entry-requirements",
+        "sourceUrl": "https://admission.utm.my/int-pg-entry-requirements/",
+        "sourceText": "UTM official entry requirement for Doctoral Degree by Mixed-Mode and Research: a Master's Degree from UTM or any other higher learning institution recognised by the Senate, or other equivalent qualification and relevant experience recognised by the Senate.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "languageRequirement",
+        "sourceId": "english-language-requirements",
+        "sourceUrl": "https://admission.utm.my/english-language-requirements-3/",
+        "sourceText": "UTM official postgraduate English requirement: MUET band 4.0, IELTS 6.0, TOEFL iBT 60, PTE Academic 59, Cambridge English Qualification 169, or Certified Intensive English Programme level 109 and above.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      }
+    ]
+  },
+  {
+    "code": "UTM-PHD-004",
+    "nameEnOfficial": "Doctor of Philosophy",
+    "traces": [
+      {
+        "field": "nameEnOfficial",
+        "sourceId": "faculty-civil-engineering",
+        "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-civil-engineering/",
+        "sourceText": "Doctor of Philosophy",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "fee",
+        "sourceId": "fees-pg-inter",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "sourceText": "Mapped to UTM international postgraduate mainstream Engineering doctoral research fee.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "duration",
+        "sourceId": "fees-pg-inter",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "sourceText": "Standardized duration: 3 years (6 semesters). Official source: PhD Programme (6 Semesters) on UTM international postgraduate fee page.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "academicRequirement",
+        "sourceId": "int-pg-entry-requirements",
+        "sourceUrl": "https://admission.utm.my/int-pg-entry-requirements/",
+        "sourceText": "UTM official entry requirement for Doctoral Degree by Mixed-Mode and Research: a Master's Degree from UTM or any other higher learning institution recognised by the Senate, or other equivalent qualification and relevant experience recognised by the Senate.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "languageRequirement",
+        "sourceId": "english-language-requirements",
+        "sourceUrl": "https://admission.utm.my/english-language-requirements-3/",
+        "sourceText": "UTM official postgraduate English requirement: MUET band 4.0, IELTS 6.0, TOEFL iBT 60, PTE Academic 59, Cambridge English Qualification 169, or Certified Intensive English Programme level 109 and above.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      }
+    ]
+  },
+  {
+    "code": "UTM-PHD-005",
+    "nameEnOfficial": "Doctor of Professional Practice (DPP)",
+    "traces": [
+      {
+        "field": "nameEnOfficial",
+        "sourceId": "faculty-civil-engineering",
+        "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-civil-engineering/",
+        "sourceText": "Doctor of Professional Practice (DPP)",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "fee",
+        "sourceId": "odl-fees-structure",
+        "sourceUrl": "https://odl.utm.my/fees-structure/",
+        "sourceText": "UTM ODL official fee structure publishes international DPP study fee MYR 750 for 1 credit plus registration and service fees; no unique scalar total is written because enrolment credits and 6-16 semester duration can vary.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 0.8
+      },
+      {
+        "field": "duration",
+        "sourceId": "odl-admission",
+        "sourceUrl": "https://admission.utm.my/odl/",
+        "sourceText": "Standardized duration: 3-8 years (6-16 semesters). Official source: UTM ODL DPP duration is published as 6-16 semesters.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "academicRequirement",
+        "sourceId": "odl-admission",
+        "sourceUrl": "https://admission.utm.my/odl/",
+        "sourceText": "UTM ODL DPP official admission requirements include a master's degree from UTM or another Senate-recognised institution, other equivalent qualifications and relevant experience, or approved conversion from a registered UTM master's programme; minimum 3 years working experience in a related field.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "languageRequirement",
+        "sourceId": "english-language-requirements",
+        "sourceUrl": "https://admission.utm.my/english-language-requirements-3/",
+        "sourceText": "UTM official postgraduate English requirement: MUET band 4.0, IELTS 6.0, TOEFL iBT 60, PTE Academic 59, Cambridge English Qualification 169, or Certified Intensive English Programme level 109 and above.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      }
+    ]
+  },
+  {
+    "code": "UTM-PHD-006",
+    "nameEnOfficial": "Doctor of Engineering Specialization : Process Plant Management",
+    "traces": [
+      {
+        "field": "nameEnOfficial",
+        "sourceId": "faculty-chemical-energy-engineering",
+        "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-chemical-energy-engineering/",
+        "sourceText": "Doctor of Engineering Specialization: Process Plant Management",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "fee",
+        "sourceId": "fees-pg-inter",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "sourceText": "Mapped to UTM international postgraduate mainstream Engineering doctoral mixed fee.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "duration",
+        "sourceId": "fees-pg-inter",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "sourceText": "Standardized duration: 3 years (6 semesters). Official source: PhD Programme (6 Semesters) on UTM international postgraduate fee page.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "academicRequirement",
+        "sourceId": "int-pg-entry-requirements",
+        "sourceUrl": "https://admission.utm.my/int-pg-entry-requirements/",
+        "sourceText": "UTM official entry requirement for Doctoral Degree by Mixed-Mode and Research: a Master's Degree from UTM or any other higher learning institution recognised by the Senate, or other equivalent qualification and relevant experience recognised by the Senate.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "languageRequirement",
+        "sourceId": "english-language-requirements",
+        "sourceUrl": "https://admission.utm.my/english-language-requirements-3/",
+        "sourceText": "UTM official postgraduate English requirement: MUET band 4.0, IELTS 6.0, TOEFL iBT 60, PTE Academic 59, Cambridge English Qualification 169, or Certified Intensive English Programme level 109 and above.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      }
+    ]
+  },
+  {
+    "code": "UTM-PHD-007",
+    "nameEnOfficial": "Doctor of Philosophy Field of Research : Chemical Engineering",
+    "traces": [
+      {
+        "field": "nameEnOfficial",
+        "sourceId": "faculty-chemical-energy-engineering",
+        "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-chemical-energy-engineering/",
+        "sourceText": "Master / Doctor of Philosophy Field of Research : Chemical Engineering",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "fee",
+        "sourceId": "fees-pg-inter",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "sourceText": "Mapped to UTM international postgraduate mainstream Engineering doctoral research fee.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "duration",
+        "sourceId": "fees-pg-inter",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "sourceText": "Standardized duration: 3 years (6 semesters). Official source: PhD Programme (6 Semesters) on UTM international postgraduate fee page.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "academicRequirement",
+        "sourceId": "int-pg-entry-requirements",
+        "sourceUrl": "https://admission.utm.my/int-pg-entry-requirements/",
+        "sourceText": "UTM official entry requirement for Doctoral Degree by Mixed-Mode and Research: a Master's Degree from UTM or any other higher learning institution recognised by the Senate, or other equivalent qualification and relevant experience recognised by the Senate.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "languageRequirement",
+        "sourceId": "english-language-requirements",
+        "sourceUrl": "https://admission.utm.my/english-language-requirements-3/",
+        "sourceText": "UTM official postgraduate English requirement: MUET band 4.0, IELTS 6.0, TOEFL iBT 60, PTE Academic 59, Cambridge English Qualification 169, or Certified Intensive English Programme level 109 and above.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      }
+    ]
+  },
+  {
+    "code": "UTM-PHD-008",
+    "nameEnOfficial": "Doctor of Philosophy Field of Research : Bioprocess Engineering",
+    "traces": [
+      {
+        "field": "nameEnOfficial",
+        "sourceId": "faculty-chemical-energy-engineering",
+        "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-chemical-energy-engineering/",
+        "sourceText": "Master / Doctor of Philosophy Field of Research : Bioprocess Engineering",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "fee",
+        "sourceId": "fees-pg-inter",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "sourceText": "Mapped to UTM international postgraduate mainstream Engineering doctoral research fee.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "duration",
+        "sourceId": "fees-pg-inter",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "sourceText": "Standardized duration: 3 years (6 semesters). Official source: PhD Programme (6 Semesters) on UTM international postgraduate fee page.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "academicRequirement",
+        "sourceId": "int-pg-entry-requirements",
+        "sourceUrl": "https://admission.utm.my/int-pg-entry-requirements/",
+        "sourceText": "UTM official entry requirement for Doctoral Degree by Mixed-Mode and Research: a Master's Degree from UTM or any other higher learning institution recognised by the Senate, or other equivalent qualification and relevant experience recognised by the Senate.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "languageRequirement",
+        "sourceId": "english-language-requirements",
+        "sourceUrl": "https://admission.utm.my/english-language-requirements-3/",
+        "sourceText": "UTM official postgraduate English requirement: MUET band 4.0, IELTS 6.0, TOEFL iBT 60, PTE Academic 59, Cambridge English Qualification 169, or Certified Intensive English Programme level 109 and above.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      }
+    ]
+  },
+  {
+    "code": "UTM-PHD-009",
+    "nameEnOfficial": "Doctor of Philosophy Field of Research : Gas Engineering",
+    "traces": [
+      {
+        "field": "nameEnOfficial",
+        "sourceId": "faculty-chemical-energy-engineering",
+        "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-chemical-energy-engineering/",
+        "sourceText": "Master / Doctor of Philosophy Field of Research : Gas Engineering",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "fee",
+        "sourceId": "fees-pg-inter",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "sourceText": "Mapped to UTM international postgraduate mainstream Engineering doctoral research fee.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "duration",
+        "sourceId": "fees-pg-inter",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "sourceText": "Standardized duration: 3 years (6 semesters). Official source: PhD Programme (6 Semesters) on UTM international postgraduate fee page.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "academicRequirement",
+        "sourceId": "int-pg-entry-requirements",
+        "sourceUrl": "https://admission.utm.my/int-pg-entry-requirements/",
+        "sourceText": "UTM official entry requirement for Doctoral Degree by Mixed-Mode and Research: a Master's Degree from UTM or any other higher learning institution recognised by the Senate, or other equivalent qualification and relevant experience recognised by the Senate.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "languageRequirement",
+        "sourceId": "english-language-requirements",
+        "sourceUrl": "https://admission.utm.my/english-language-requirements-3/",
+        "sourceText": "UTM official postgraduate English requirement: MUET band 4.0, IELTS 6.0, TOEFL iBT 60, PTE Academic 59, Cambridge English Qualification 169, or Certified Intensive English Programme level 109 and above.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      }
+    ]
+  },
+  {
+    "code": "UTM-PHD-010",
+    "nameEnOfficial": "Doctor of Philosophy Field of Research : Petroleum Engineering",
+    "traces": [
+      {
+        "field": "nameEnOfficial",
+        "sourceId": "faculty-chemical-energy-engineering",
+        "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-chemical-energy-engineering/",
+        "sourceText": "Master / Doctor of Philosophy Field of Research : Petroleum Engineering",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "fee",
+        "sourceId": "fees-pg-inter",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "sourceText": "Mapped to UTM international postgraduate mainstream Engineering doctoral research fee.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "duration",
+        "sourceId": "fees-pg-inter",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "sourceText": "Standardized duration: 3 years (6 semesters). Official source: PhD Programme (6 Semesters) on UTM international postgraduate fee page.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "academicRequirement",
+        "sourceId": "int-pg-entry-requirements",
+        "sourceUrl": "https://admission.utm.my/int-pg-entry-requirements/",
+        "sourceText": "UTM official entry requirement for Doctoral Degree by Mixed-Mode and Research: a Master's Degree from UTM or any other higher learning institution recognised by the Senate, or other equivalent qualification and relevant experience recognised by the Senate.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "languageRequirement",
+        "sourceId": "english-language-requirements",
+        "sourceUrl": "https://admission.utm.my/english-language-requirements-3/",
+        "sourceText": "UTM official postgraduate English requirement: MUET band 4.0, IELTS 6.0, TOEFL iBT 60, PTE Academic 59, Cambridge English Qualification 169, or Certified Intensive English Programme level 109 and above.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      }
+    ]
+  },
+  {
+    "code": "UTM-PHD-011",
+    "nameEnOfficial": "Doctor of Philosophy Field of Research : Polymer Engineering",
+    "traces": [
+      {
+        "field": "nameEnOfficial",
+        "sourceId": "faculty-chemical-energy-engineering",
+        "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-chemical-energy-engineering/",
+        "sourceText": "Master / Doctor of Philosophy Field of Research : Polymer Engineering",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "fee",
+        "sourceId": "fees-pg-inter",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "sourceText": "Mapped to UTM international postgraduate mainstream Engineering doctoral research fee.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "duration",
+        "sourceId": "fees-pg-inter",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "sourceText": "Standardized duration: 3 years (6 semesters). Official source: PhD Programme (6 Semesters) on UTM international postgraduate fee page.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "academicRequirement",
+        "sourceId": "int-pg-entry-requirements",
+        "sourceUrl": "https://admission.utm.my/int-pg-entry-requirements/",
+        "sourceText": "UTM official entry requirement for Doctoral Degree by Mixed-Mode and Research: a Master's Degree from UTM or any other higher learning institution recognised by the Senate, or other equivalent qualification and relevant experience recognised by the Senate.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "languageRequirement",
+        "sourceId": "english-language-requirements",
+        "sourceUrl": "https://admission.utm.my/english-language-requirements-3/",
+        "sourceText": "UTM official postgraduate English requirement: MUET band 4.0, IELTS 6.0, TOEFL iBT 60, PTE Academic 59, Cambridge English Qualification 169, or Certified Intensive English Programme level 109 and above.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      }
+    ]
+  },
+  {
+    "code": "UTM-PHD-012",
+    "nameEnOfficial": "Doctor of Philosophy Field of Research : Environmental Engineering",
+    "traces": [
+      {
+        "field": "nameEnOfficial",
+        "sourceId": "faculty-chemical-energy-engineering",
+        "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-chemical-energy-engineering/",
+        "sourceText": "Master / Doctor of Philosophy Field of Research : Environmental Engineering",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "fee",
+        "sourceId": "fees-pg-inter",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "sourceText": "Mapped to UTM international postgraduate mainstream Engineering doctoral research fee.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "duration",
+        "sourceId": "fees-pg-inter",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "sourceText": "Standardized duration: 3 years (6 semesters). Official source: PhD Programme (6 Semesters) on UTM international postgraduate fee page.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "academicRequirement",
+        "sourceId": "int-pg-entry-requirements",
+        "sourceUrl": "https://admission.utm.my/int-pg-entry-requirements/",
+        "sourceText": "UTM official entry requirement for Doctoral Degree by Mixed-Mode and Research: a Master's Degree from UTM or any other higher learning institution recognised by the Senate, or other equivalent qualification and relevant experience recognised by the Senate.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "languageRequirement",
+        "sourceId": "english-language-requirements",
+        "sourceUrl": "https://admission.utm.my/english-language-requirements-3/",
+        "sourceText": "UTM official postgraduate English requirement: MUET band 4.0, IELTS 6.0, TOEFL iBT 60, PTE Academic 59, Cambridge English Qualification 169, or Certified Intensive English Programme level 109 and above.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      }
+    ]
+  },
+  {
+    "code": "UTM-PHD-013",
+    "nameEnOfficial": "Doctor of Philosophy Field of Research : Biomedical Engineering",
+    "traces": [
+      {
+        "field": "nameEnOfficial",
+        "sourceId": "faculty-electrical-engineering",
+        "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-electrical-engineering/",
+        "sourceText": "Doctor of Philosophy Field of Research : Biomedical Engineering",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "fee",
+        "sourceId": "fees-pg-inter",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "sourceText": "Mapped to UTM international postgraduate mainstream Engineering doctoral research fee.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "duration",
+        "sourceId": "fees-pg-inter",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "sourceText": "Standardized duration: 3 years (6 semesters). Official source: PhD Programme (6 Semesters) on UTM international postgraduate fee page.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "academicRequirement",
+        "sourceId": "int-pg-entry-requirements",
+        "sourceUrl": "https://admission.utm.my/int-pg-entry-requirements/",
+        "sourceText": "UTM official entry requirement for Doctoral Degree by Mixed-Mode and Research: a Master's Degree from UTM or any other higher learning institution recognised by the Senate, or other equivalent qualification and relevant experience recognised by the Senate.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "languageRequirement",
+        "sourceId": "english-language-requirements",
+        "sourceUrl": "https://admission.utm.my/english-language-requirements-3/",
+        "sourceText": "UTM official postgraduate English requirement: MUET band 4.0, IELTS 6.0, TOEFL iBT 60, PTE Academic 59, Cambridge English Qualification 169, or Certified Intensive English Programme level 109 and above.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      }
+    ]
+  },
+  {
+    "code": "UTM-PHD-014",
+    "nameEnOfficial": "Doctor of Philosophy Field of Research : Electrical Engineering",
+    "traces": [
+      {
+        "field": "nameEnOfficial",
+        "sourceId": "faculty-electrical-engineering",
+        "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-electrical-engineering/",
+        "sourceText": "Doctor of Philosophy Field of Research : Electrical Engineering",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "fee",
+        "sourceId": "fees-pg-inter",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "sourceText": "Mapped to UTM international postgraduate mainstream Engineering doctoral research fee.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "duration",
+        "sourceId": "fees-pg-inter",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "sourceText": "Standardized duration: 3 years (6 semesters). Official source: PhD Programme (6 Semesters) on UTM international postgraduate fee page.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "academicRequirement",
+        "sourceId": "int-pg-entry-requirements",
+        "sourceUrl": "https://admission.utm.my/int-pg-entry-requirements/",
+        "sourceText": "UTM official entry requirement for Doctoral Degree by Mixed-Mode and Research: a Master's Degree from UTM or any other higher learning institution recognised by the Senate, or other equivalent qualification and relevant experience recognised by the Senate.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "languageRequirement",
+        "sourceId": "english-language-requirements",
+        "sourceUrl": "https://admission.utm.my/english-language-requirements-3/",
+        "sourceText": "UTM official postgraduate English requirement: MUET band 4.0, IELTS 6.0, TOEFL iBT 60, PTE Academic 59, Cambridge English Qualification 169, or Certified Intensive English Programme level 109 and above.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      }
+    ]
+  },
+  {
+    "code": "UTM-PHD-015",
+    "nameEnOfficial": "Doctor of Philosophy Field of Research : Health Science",
+    "traces": [
+      {
+        "field": "nameEnOfficial",
+        "sourceId": "faculty-electrical-engineering",
+        "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-electrical-engineering/",
+        "sourceText": "Doctor of Philosophy Field of Research : Health Science",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "fee",
+        "sourceId": "fees-pg-inter",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "sourceText": "Mapped to UTM international postgraduate mainstream Engineering doctoral research fee.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "duration",
+        "sourceId": "fees-pg-inter",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "sourceText": "Standardized duration: 3 years (6 semesters). Official source: PhD Programme (6 Semesters) on UTM international postgraduate fee page.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "academicRequirement",
+        "sourceId": "int-pg-entry-requirements",
+        "sourceUrl": "https://admission.utm.my/int-pg-entry-requirements/",
+        "sourceText": "UTM official entry requirement for Doctoral Degree by Mixed-Mode and Research: a Master's Degree from UTM or any other higher learning institution recognised by the Senate, or other equivalent qualification and relevant experience recognised by the Senate.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "languageRequirement",
+        "sourceId": "english-language-requirements",
+        "sourceUrl": "https://admission.utm.my/english-language-requirements-3/",
+        "sourceText": "UTM official postgraduate English requirement: MUET band 4.0, IELTS 6.0, TOEFL iBT 60, PTE Academic 59, Cambridge English Qualification 169, or Certified Intensive English Programme level 109 and above.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      }
+    ]
+  },
+  {
+    "code": "UTM-PHD-016",
+    "nameEnOfficial": "Doctor of Philosophy Field of Research : Mechanical Engineering",
+    "traces": [
+      {
+        "field": "nameEnOfficial",
+        "sourceId": "faculty-mechanical-engineering",
+        "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-mechanical-engineering/",
+        "sourceText": "Doctor of Philosophy Field of Research : Mechanical Engineering",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "fee",
+        "sourceId": "fees-pg-inter",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "sourceText": "Mapped to UTM international postgraduate mainstream Engineering doctoral research fee.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "duration",
+        "sourceId": "fees-pg-inter",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "sourceText": "Standardized duration: 3 years (6 semesters). Official source: PhD Programme (6 Semesters) on UTM international postgraduate fee page.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "academicRequirement",
+        "sourceId": "int-pg-entry-requirements",
+        "sourceUrl": "https://admission.utm.my/int-pg-entry-requirements/",
+        "sourceText": "UTM official entry requirement for Doctoral Degree by Mixed-Mode and Research: a Master's Degree from UTM or any other higher learning institution recognised by the Senate, or other equivalent qualification and relevant experience recognised by the Senate.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "languageRequirement",
+        "sourceId": "english-language-requirements",
+        "sourceUrl": "https://admission.utm.my/english-language-requirements-3/",
+        "sourceText": "UTM official postgraduate English requirement: MUET band 4.0, IELTS 6.0, TOEFL iBT 60, PTE Academic 59, Cambridge English Qualification 169, or Certified Intensive English Programme level 109 and above.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      }
+    ]
+  },
+  {
+    "code": "UTM-PHD-017",
+    "nameEnOfficial": "Doctor of Philosophy",
+    "traces": [
+      {
+        "field": "nameEnOfficial",
+        "sourceId": "faculty-social-science-humanities",
+        "sourceUrl": "https://admission.utm.my/int-faculty-of-social-science-and-humanities/",
+        "sourceText": "Doctor of Philosophy",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "fee",
+        "sourceId": "fees-pg-inter",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "sourceText": "Mapped to UTM international postgraduate mainstream Humanities & Social Sciences doctoral research fee.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "duration",
+        "sourceId": "fees-pg-inter",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "sourceText": "Standardized duration: 3 years (6 semesters). Official source: PhD Programme (6 Semesters) on UTM international postgraduate fee page.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "academicRequirement",
+        "sourceId": "int-pg-entry-requirements",
+        "sourceUrl": "https://admission.utm.my/int-pg-entry-requirements/",
+        "sourceText": "UTM official entry requirement for Doctoral Degree by Mixed-Mode and Research: a Master's Degree from UTM or any other higher learning institution recognised by the Senate, or other equivalent qualification and relevant experience recognised by the Senate.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "languageRequirement",
+        "sourceId": "english-language-requirements",
+        "sourceUrl": "https://admission.utm.my/english-language-requirements-3/",
+        "sourceText": "UTM official postgraduate English requirement: MUET band 4.0, IELTS 6.0, TOEFL iBT 60, PTE Academic 59, Cambridge English Qualification 169, or Certified Intensive English Programme level 109 and above.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      }
+    ]
+  },
+  {
+    "code": "UTM-PHD-018",
+    "nameEnOfficial": "Doctor of Philosophy Field of Research : Policy Studies",
+    "traces": [
+      {
+        "field": "nameEnOfficial",
+        "sourceId": "faculty-social-science-humanities",
+        "sourceUrl": "https://admission.utm.my/int-faculty-of-social-science-and-humanities/",
+        "sourceText": "Doctor of Philosophy Field of Research : Policy Studies",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "fee",
+        "sourceId": "fees-pg-inter",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "sourceText": "Mapped to UTM international postgraduate mainstream Humanities & Social Sciences doctoral research fee.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "duration",
+        "sourceId": "fees-pg-inter",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "sourceText": "Standardized duration: 3 years (6 semesters). Official source: PhD Programme (6 Semesters) on UTM international postgraduate fee page.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "academicRequirement",
+        "sourceId": "int-pg-entry-requirements",
+        "sourceUrl": "https://admission.utm.my/int-pg-entry-requirements/",
+        "sourceText": "UTM official entry requirement for Doctoral Degree by Mixed-Mode and Research: a Master's Degree from UTM or any other higher learning institution recognised by the Senate, or other equivalent qualification and relevant experience recognised by the Senate.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "languageRequirement",
+        "sourceId": "english-language-requirements",
+        "sourceUrl": "https://admission.utm.my/english-language-requirements-3/",
+        "sourceText": "UTM official postgraduate English requirement: MUET band 4.0, IELTS 6.0, TOEFL iBT 60, PTE Academic 59, Cambridge English Qualification 169, or Certified Intensive English Programme level 109 and above.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      }
+    ]
+  },
+  {
+    "code": "UTM-PHD-019",
+    "nameEnOfficial": "Doctor of Philosophy (Generic)",
+    "traces": [
+      {
+        "field": "nameEnOfficial",
+        "sourceId": "faculty-hrd-psychology",
+        "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-hrd-psycohology/",
+        "sourceText": "Doctor of Philosophy (Generic)",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "fee",
+        "sourceId": "fees-pg-inter",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "sourceText": "Mapped to UTM international postgraduate mainstream Humanities & Social Sciences doctoral research fee.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "duration",
+        "sourceId": "fees-pg-inter",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "sourceText": "Standardized duration: 3 years (6 semesters). Official source: PhD Programme (6 Semesters) on UTM international postgraduate fee page.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "academicRequirement",
+        "sourceId": "int-pg-entry-requirements",
+        "sourceUrl": "https://admission.utm.my/int-pg-entry-requirements/",
+        "sourceText": "UTM official entry requirement for Doctoral Degree by Mixed-Mode and Research: a Master's Degree from UTM or any other higher learning institution recognised by the Senate, or other equivalent qualification and relevant experience recognised by the Senate.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "languageRequirement",
+        "sourceId": "english-language-requirements",
+        "sourceUrl": "https://admission.utm.my/english-language-requirements-3/",
+        "sourceText": "UTM official postgraduate English requirement: MUET band 4.0, IELTS 6.0, TOEFL iBT 60, PTE Academic 59, Cambridge English Qualification 169, or Certified Intensive English Programme level 109 and above.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      }
+    ]
+  },
+  {
+    "code": "UTM-PHD-020",
+    "nameEnOfficial": "Doctor of Philosophy (Generic)",
+    "traces": [
+      {
+        "field": "nameEnOfficial",
+        "sourceId": "faculty-islamic-civilization-academy",
+        "sourceUrl": "https://admission.utm.my/int-postgraduate-islamic-civilisation-academic/",
+        "sourceText": "Doctor of Philosophy (Generic)",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "fee",
+        "sourceId": "fees-pg-inter",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "sourceText": "Mapped to UTM international postgraduate mainstream Humanities & Social Sciences doctoral research fee.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "duration",
+        "sourceId": "fees-pg-inter",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "sourceText": "Standardized duration: 3 years (6 semesters). Official source: PhD Programme (6 Semesters) on UTM international postgraduate fee page.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "academicRequirement",
+        "sourceId": "int-pg-entry-requirements",
+        "sourceUrl": "https://admission.utm.my/int-pg-entry-requirements/",
+        "sourceText": "UTM official entry requirement for Doctoral Degree by Mixed-Mode and Research: a Master's Degree from UTM or any other higher learning institution recognised by the Senate, or other equivalent qualification and relevant experience recognised by the Senate.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "languageRequirement",
+        "sourceId": "english-language-requirements",
+        "sourceUrl": "https://admission.utm.my/english-language-requirements-3/",
+        "sourceText": "UTM official postgraduate English requirement: MUET band 4.0, IELTS 6.0, TOEFL iBT 60, PTE Academic 59, Cambridge English Qualification 169, or Certified Intensive English Programme level 109 and above.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      }
+    ]
+  },
+  {
+    "code": "UTM-PHD-021",
+    "nameEnOfficial": "Doctor of Philosophy Field of Research : Fiqh Science and Technology",
+    "traces": [
+      {
+        "field": "nameEnOfficial",
+        "sourceId": "faculty-islamic-civilization-academy",
+        "sourceUrl": "https://admission.utm.my/int-postgraduate-islamic-civilisation-academic/",
+        "sourceText": "Doctor of Philosophy Field of Research : Fiqh Science and Technology",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "fee",
+        "sourceId": "fees-pg-inter",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "sourceText": "Mapped to UTM international postgraduate mainstream Humanities & Social Sciences doctoral research fee.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "duration",
+        "sourceId": "fees-pg-inter",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "sourceText": "Standardized duration: 3 years (6 semesters). Official source: PhD Programme (6 Semesters) on UTM international postgraduate fee page.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "academicRequirement",
+        "sourceId": "int-pg-entry-requirements",
+        "sourceUrl": "https://admission.utm.my/int-pg-entry-requirements/",
+        "sourceText": "UTM official entry requirement for Doctoral Degree by Mixed-Mode and Research: a Master's Degree from UTM or any other higher learning institution recognised by the Senate, or other equivalent qualification and relevant experience recognised by the Senate.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "languageRequirement",
+        "sourceId": "english-language-requirements",
+        "sourceUrl": "https://admission.utm.my/english-language-requirements-3/",
+        "sourceText": "UTM official postgraduate English requirement: MUET band 4.0, IELTS 6.0, TOEFL iBT 60, PTE Academic 59, Cambridge English Qualification 169, or Certified Intensive English Programme level 109 and above.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      }
+    ]
+  },
+  {
+    "code": "UTM-PHD-022",
+    "nameEnOfficial": "Doctor of Philosophy (Generic)",
+    "traces": [
+      {
+        "field": "nameEnOfficial",
+        "sourceId": "faculty-language-academy",
+        "sourceUrl": "https://admission.utm.my/int-postgraduate-language-academy/",
+        "sourceText": "Doctor of Philosophy (Generic)",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "fee",
+        "sourceId": "fees-pg-inter",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "sourceText": "Mapped to UTM international postgraduate mainstream Humanities & Social Sciences doctoral research fee.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "duration",
+        "sourceId": "fees-pg-inter",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "sourceText": "Standardized duration: 3 years (6 semesters). Official source: PhD Programme (6 Semesters) on UTM international postgraduate fee page.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "academicRequirement",
+        "sourceId": "int-pg-entry-requirements",
+        "sourceUrl": "https://admission.utm.my/int-pg-entry-requirements/",
+        "sourceText": "UTM official entry requirement for Doctoral Degree by Mixed-Mode and Research: a Master's Degree from UTM or any other higher learning institution recognised by the Senate, or other equivalent qualification and relevant experience recognised by the Senate.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "languageRequirement",
+        "sourceId": "english-language-requirements",
+        "sourceUrl": "https://admission.utm.my/english-language-requirements-3/",
+        "sourceText": "UTM official postgraduate English requirement: MUET band 4.0, IELTS 6.0, TOEFL iBT 60, PTE Academic 59, Cambridge English Qualification 169, or Certified Intensive English Programme level 109 and above.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      }
+    ]
+  },
+  {
+    "code": "UTM-PHD-023",
+    "nameEnOfficial": "Doctor in Education (EdD)",
+    "traces": [
+      {
+        "field": "nameEnOfficial",
+        "sourceId": "faculty-educational-sciences-technology",
+        "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-education/",
+        "sourceText": "Doctor In Education (EdD)",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "fee",
+        "sourceId": "fees-pg-inter",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "sourceText": "Mapped to UTM international postgraduate mainstream Education doctoral distance fee.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "duration",
+        "sourceId": "fees-pg-inter",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "sourceText": "Standardized duration: 3 years (6 semesters). Official source: PhD Programme (6 Semesters) on UTM international postgraduate fee page.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "academicRequirement",
+        "sourceId": "int-pg-entry-requirements",
+        "sourceUrl": "https://admission.utm.my/int-pg-entry-requirements/",
+        "sourceText": "UTM official entry requirement for Doctoral Degree by Mixed-Mode and Research: a Master's Degree from UTM or any other higher learning institution recognised by the Senate, or other equivalent qualification and relevant experience recognised by the Senate.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "languageRequirement",
+        "sourceId": "english-language-requirements",
+        "sourceUrl": "https://admission.utm.my/english-language-requirements-3/",
+        "sourceText": "UTM official postgraduate English requirement: MUET band 4.0, IELTS 6.0, TOEFL iBT 60, PTE Academic 59, Cambridge English Qualification 169, or Certified Intensive English Programme level 109 and above.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      }
+    ]
+  },
+  {
+    "code": "UTM-PHD-024",
+    "nameEnOfficial": "Doctor of Philosophy Field of Research : Chemistry Education",
+    "traces": [
+      {
+        "field": "nameEnOfficial",
+        "sourceId": "faculty-educational-sciences-technology",
+        "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-education/",
+        "sourceText": "Master / Doctor of Philosophy Field of Research : Chemistry Education",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "fee",
+        "sourceId": "fees-pg-inter",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "sourceText": "Mapped to UTM international postgraduate mainstream Education doctoral research fee.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "duration",
+        "sourceId": "fees-pg-inter",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "sourceText": "Standardized duration: 3 years (6 semesters). Official source: PhD Programme (6 Semesters) on UTM international postgraduate fee page.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "academicRequirement",
+        "sourceId": "int-pg-entry-requirements",
+        "sourceUrl": "https://admission.utm.my/int-pg-entry-requirements/",
+        "sourceText": "UTM official entry requirement for Doctoral Degree by Mixed-Mode and Research: a Master's Degree from UTM or any other higher learning institution recognised by the Senate, or other equivalent qualification and relevant experience recognised by the Senate.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "languageRequirement",
+        "sourceId": "english-language-requirements",
+        "sourceUrl": "https://admission.utm.my/english-language-requirements-3/",
+        "sourceText": "UTM official postgraduate English requirement: MUET band 4.0, IELTS 6.0, TOEFL iBT 60, PTE Academic 59, Cambridge English Qualification 169, or Certified Intensive English Programme level 109 and above.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      }
+    ]
+  },
+  {
+    "code": "UTM-PHD-025",
+    "nameEnOfficial": "Doctor of Philosophy Field of Research : Curriculum and Instruction",
+    "traces": [
+      {
+        "field": "nameEnOfficial",
+        "sourceId": "faculty-educational-sciences-technology",
+        "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-education/",
+        "sourceText": "Master / Doctor of Philosophy Field of Research : Curriculum and Instruction",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "fee",
+        "sourceId": "fees-pg-inter",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "sourceText": "Mapped to UTM international postgraduate mainstream Education doctoral research fee.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "duration",
+        "sourceId": "fees-pg-inter",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "sourceText": "Standardized duration: 3 years (6 semesters). Official source: PhD Programme (6 Semesters) on UTM international postgraduate fee page.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "academicRequirement",
+        "sourceId": "int-pg-entry-requirements",
+        "sourceUrl": "https://admission.utm.my/int-pg-entry-requirements/",
+        "sourceText": "UTM official entry requirement for Doctoral Degree by Mixed-Mode and Research: a Master's Degree from UTM or any other higher learning institution recognised by the Senate, or other equivalent qualification and relevant experience recognised by the Senate.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "languageRequirement",
+        "sourceId": "english-language-requirements",
+        "sourceUrl": "https://admission.utm.my/english-language-requirements-3/",
+        "sourceText": "UTM official postgraduate English requirement: MUET band 4.0, IELTS 6.0, TOEFL iBT 60, PTE Academic 59, Cambridge English Qualification 169, or Certified Intensive English Programme level 109 and above.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      }
+    ]
+  },
+  {
+    "code": "UTM-PHD-026",
+    "nameEnOfficial": "Doctor of Philosophy Field of Research : Education and Development",
+    "traces": [
+      {
+        "field": "nameEnOfficial",
+        "sourceId": "faculty-educational-sciences-technology",
+        "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-education/",
+        "sourceText": "Master / Doctor of Philosophy Field of Research : Education and Development",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "fee",
+        "sourceId": "fees-pg-inter",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "sourceText": "Mapped to UTM international postgraduate mainstream Education doctoral research fee.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "duration",
+        "sourceId": "fees-pg-inter",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "sourceText": "Standardized duration: 3 years (6 semesters). Official source: PhD Programme (6 Semesters) on UTM international postgraduate fee page.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "academicRequirement",
+        "sourceId": "int-pg-entry-requirements",
+        "sourceUrl": "https://admission.utm.my/int-pg-entry-requirements/",
+        "sourceText": "UTM official entry requirement for Doctoral Degree by Mixed-Mode and Research: a Master's Degree from UTM or any other higher learning institution recognised by the Senate, or other equivalent qualification and relevant experience recognised by the Senate.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "languageRequirement",
+        "sourceId": "english-language-requirements",
+        "sourceUrl": "https://admission.utm.my/english-language-requirements-3/",
+        "sourceText": "UTM official postgraduate English requirement: MUET band 4.0, IELTS 6.0, TOEFL iBT 60, PTE Academic 59, Cambridge English Qualification 169, or Certified Intensive English Programme level 109 and above.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      }
+    ]
+  },
+  {
+    "code": "UTM-PHD-027",
+    "nameEnOfficial": "Doctor of Philosophy Field of Research : Educational Psychology",
+    "traces": [
+      {
+        "field": "nameEnOfficial",
+        "sourceId": "faculty-educational-sciences-technology",
+        "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-education/",
+        "sourceText": "Master / Doctor of Philosophy Field of Research : Educational Psychology",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "fee",
+        "sourceId": "fees-pg-inter",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "sourceText": "Mapped to UTM international postgraduate mainstream Education doctoral research fee.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "duration",
+        "sourceId": "fees-pg-inter",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "sourceText": "Standardized duration: 3 years (6 semesters). Official source: PhD Programme (6 Semesters) on UTM international postgraduate fee page.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "academicRequirement",
+        "sourceId": "int-pg-entry-requirements",
+        "sourceUrl": "https://admission.utm.my/int-pg-entry-requirements/",
+        "sourceText": "UTM official entry requirement for Doctoral Degree by Mixed-Mode and Research: a Master's Degree from UTM or any other higher learning institution recognised by the Senate, or other equivalent qualification and relevant experience recognised by the Senate.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "languageRequirement",
+        "sourceId": "english-language-requirements",
+        "sourceUrl": "https://admission.utm.my/english-language-requirements-3/",
+        "sourceText": "UTM official postgraduate English requirement: MUET band 4.0, IELTS 6.0, TOEFL iBT 60, PTE Academic 59, Cambridge English Qualification 169, or Certified Intensive English Programme level 109 and above.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      }
+    ]
+  },
+  {
+    "code": "UTM-PHD-028",
+    "nameEnOfficial": "Doctor of Philosophy Field of Research : Educational Technology",
+    "traces": [
+      {
+        "field": "nameEnOfficial",
+        "sourceId": "faculty-educational-sciences-technology",
+        "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-education/",
+        "sourceText": "Master / Doctor of Philosophy Field of Research : Educational Technology",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "fee",
+        "sourceId": "fees-pg-inter",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "sourceText": "Mapped to UTM international postgraduate mainstream Education doctoral research fee.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "duration",
+        "sourceId": "fees-pg-inter",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "sourceText": "Standardized duration: 3 years (6 semesters). Official source: PhD Programme (6 Semesters) on UTM international postgraduate fee page.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "academicRequirement",
+        "sourceId": "int-pg-entry-requirements",
+        "sourceUrl": "https://admission.utm.my/int-pg-entry-requirements/",
+        "sourceText": "UTM official entry requirement for Doctoral Degree by Mixed-Mode and Research: a Master's Degree from UTM or any other higher learning institution recognised by the Senate, or other equivalent qualification and relevant experience recognised by the Senate.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "languageRequirement",
+        "sourceId": "english-language-requirements",
+        "sourceUrl": "https://admission.utm.my/english-language-requirements-3/",
+        "sourceText": "UTM official postgraduate English requirement: MUET band 4.0, IELTS 6.0, TOEFL iBT 60, PTE Academic 59, Cambridge English Qualification 169, or Certified Intensive English Programme level 109 and above.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      }
+    ]
+  },
+  {
+    "code": "UTM-PHD-029",
+    "nameEnOfficial": "Doctor of Philosophy Field of Research : Guidance and Counselling in Education",
+    "traces": [
+      {
+        "field": "nameEnOfficial",
+        "sourceId": "faculty-educational-sciences-technology",
+        "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-education/",
+        "sourceText": "Master / Doctor of Philosophy Field of Research : Guidance and Counselling in Education",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "fee",
+        "sourceId": "fees-pg-inter",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "sourceText": "Mapped to UTM international postgraduate mainstream Education doctoral research fee.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "duration",
+        "sourceId": "fees-pg-inter",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "sourceText": "Standardized duration: 3 years (6 semesters). Official source: PhD Programme (6 Semesters) on UTM international postgraduate fee page.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "academicRequirement",
+        "sourceId": "int-pg-entry-requirements",
+        "sourceUrl": "https://admission.utm.my/int-pg-entry-requirements/",
+        "sourceText": "UTM official entry requirement for Doctoral Degree by Mixed-Mode and Research: a Master's Degree from UTM or any other higher learning institution recognised by the Senate, or other equivalent qualification and relevant experience recognised by the Senate.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "languageRequirement",
+        "sourceId": "english-language-requirements",
+        "sourceUrl": "https://admission.utm.my/english-language-requirements-3/",
+        "sourceText": "UTM official postgraduate English requirement: MUET band 4.0, IELTS 6.0, TOEFL iBT 60, PTE Academic 59, Cambridge English Qualification 169, or Certified Intensive English Programme level 109 and above.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      }
+    ]
+  },
+  {
+    "code": "UTM-PHD-030",
+    "nameEnOfficial": "Doctor of Philosophy Field of Research : Management and Administration in Education",
+    "traces": [
+      {
+        "field": "nameEnOfficial",
+        "sourceId": "faculty-educational-sciences-technology",
+        "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-education/",
+        "sourceText": "Master / Doctor of Philosophy Field of Research : Management and Administration in Education",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "fee",
+        "sourceId": "fees-pg-inter",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "sourceText": "Mapped to UTM international postgraduate mainstream Education doctoral research fee.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "duration",
+        "sourceId": "fees-pg-inter",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "sourceText": "Standardized duration: 3 years (6 semesters). Official source: PhD Programme (6 Semesters) on UTM international postgraduate fee page.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "academicRequirement",
+        "sourceId": "int-pg-entry-requirements",
+        "sourceUrl": "https://admission.utm.my/int-pg-entry-requirements/",
+        "sourceText": "UTM official entry requirement for Doctoral Degree by Mixed-Mode and Research: a Master's Degree from UTM or any other higher learning institution recognised by the Senate, or other equivalent qualification and relevant experience recognised by the Senate.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "languageRequirement",
+        "sourceId": "english-language-requirements",
+        "sourceUrl": "https://admission.utm.my/english-language-requirements-3/",
+        "sourceText": "UTM official postgraduate English requirement: MUET band 4.0, IELTS 6.0, TOEFL iBT 60, PTE Academic 59, Cambridge English Qualification 169, or Certified Intensive English Programme level 109 and above.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      }
+    ]
+  },
+  {
+    "code": "UTM-PHD-031",
+    "nameEnOfficial": "Doctor of Philosophy Field of Research : Mathematics Education",
+    "traces": [
+      {
+        "field": "nameEnOfficial",
+        "sourceId": "faculty-educational-sciences-technology",
+        "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-education/",
+        "sourceText": "Master / Doctor of Philosophy Field of Research : Mathematics Education",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "fee",
+        "sourceId": "fees-pg-inter",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "sourceText": "Mapped to UTM international postgraduate mainstream Education doctoral research fee.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "duration",
+        "sourceId": "fees-pg-inter",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "sourceText": "Standardized duration: 3 years (6 semesters). Official source: PhD Programme (6 Semesters) on UTM international postgraduate fee page.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "academicRequirement",
+        "sourceId": "int-pg-entry-requirements",
+        "sourceUrl": "https://admission.utm.my/int-pg-entry-requirements/",
+        "sourceText": "UTM official entry requirement for Doctoral Degree by Mixed-Mode and Research: a Master's Degree from UTM or any other higher learning institution recognised by the Senate, or other equivalent qualification and relevant experience recognised by the Senate.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "languageRequirement",
+        "sourceId": "english-language-requirements",
+        "sourceUrl": "https://admission.utm.my/english-language-requirements-3/",
+        "sourceText": "UTM official postgraduate English requirement: MUET band 4.0, IELTS 6.0, TOEFL iBT 60, PTE Academic 59, Cambridge English Qualification 169, or Certified Intensive English Programme level 109 and above.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      }
+    ]
+  },
+  {
+    "code": "UTM-PHD-032",
+    "nameEnOfficial": "Doctor of Philosophy Field of Research : Measurement and Evaluation in Education",
+    "traces": [
+      {
+        "field": "nameEnOfficial",
+        "sourceId": "faculty-educational-sciences-technology",
+        "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-education/",
+        "sourceText": "Master / Doctor of Philosophy Field of Research : Measurement and Evaluation in Education",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "fee",
+        "sourceId": "fees-pg-inter",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "sourceText": "Mapped to UTM international postgraduate mainstream Education doctoral research fee.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "duration",
+        "sourceId": "fees-pg-inter",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "sourceText": "Standardized duration: 3 years (6 semesters). Official source: PhD Programme (6 Semesters) on UTM international postgraduate fee page.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "academicRequirement",
+        "sourceId": "int-pg-entry-requirements",
+        "sourceUrl": "https://admission.utm.my/int-pg-entry-requirements/",
+        "sourceText": "UTM official entry requirement for Doctoral Degree by Mixed-Mode and Research: a Master's Degree from UTM or any other higher learning institution recognised by the Senate, or other equivalent qualification and relevant experience recognised by the Senate.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "languageRequirement",
+        "sourceId": "english-language-requirements",
+        "sourceUrl": "https://admission.utm.my/english-language-requirements-3/",
+        "sourceText": "UTM official postgraduate English requirement: MUET band 4.0, IELTS 6.0, TOEFL iBT 60, PTE Academic 59, Cambridge English Qualification 169, or Certified Intensive English Programme level 109 and above.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      }
+    ]
+  },
+  {
+    "code": "UTM-PHD-033",
+    "nameEnOfficial": "Doctor of Philosophy Field of Research : Multimedia in Education",
+    "traces": [
+      {
+        "field": "nameEnOfficial",
+        "sourceId": "faculty-educational-sciences-technology",
+        "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-education/",
+        "sourceText": "Master / Doctor of Philosophy Field of Research : Multimedia in Education",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "fee",
+        "sourceId": "fees-pg-inter",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "sourceText": "Mapped to UTM international postgraduate mainstream Education doctoral research fee.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "duration",
+        "sourceId": "fees-pg-inter",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "sourceText": "Standardized duration: 3 years (6 semesters). Official source: PhD Programme (6 Semesters) on UTM international postgraduate fee page.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "academicRequirement",
+        "sourceId": "int-pg-entry-requirements",
+        "sourceUrl": "https://admission.utm.my/int-pg-entry-requirements/",
+        "sourceText": "UTM official entry requirement for Doctoral Degree by Mixed-Mode and Research: a Master's Degree from UTM or any other higher learning institution recognised by the Senate, or other equivalent qualification and relevant experience recognised by the Senate.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "languageRequirement",
+        "sourceId": "english-language-requirements",
+        "sourceUrl": "https://admission.utm.my/english-language-requirements-3/",
+        "sourceText": "UTM official postgraduate English requirement: MUET band 4.0, IELTS 6.0, TOEFL iBT 60, PTE Academic 59, Cambridge English Qualification 169, or Certified Intensive English Programme level 109 and above.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      }
+    ]
+  },
+  {
+    "code": "UTM-PHD-034",
+    "nameEnOfficial": "Doctor of Philosophy Field of Research : Physical Education and Sports Science",
+    "traces": [
+      {
+        "field": "nameEnOfficial",
+        "sourceId": "faculty-educational-sciences-technology",
+        "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-education/",
+        "sourceText": "Master / Doctor of Philosophy Field of Research : Physical Education and Sports Science",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "fee",
+        "sourceId": "fees-pg-inter",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "sourceText": "Mapped to UTM international postgraduate mainstream Education doctoral research fee.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "duration",
+        "sourceId": "fees-pg-inter",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "sourceText": "Standardized duration: 3 years (6 semesters). Official source: PhD Programme (6 Semesters) on UTM international postgraduate fee page.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "academicRequirement",
+        "sourceId": "int-pg-entry-requirements",
+        "sourceUrl": "https://admission.utm.my/int-pg-entry-requirements/",
+        "sourceText": "UTM official entry requirement for Doctoral Degree by Mixed-Mode and Research: a Master's Degree from UTM or any other higher learning institution recognised by the Senate, or other equivalent qualification and relevant experience recognised by the Senate.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "languageRequirement",
+        "sourceId": "english-language-requirements",
+        "sourceUrl": "https://admission.utm.my/english-language-requirements-3/",
+        "sourceText": "UTM official postgraduate English requirement: MUET band 4.0, IELTS 6.0, TOEFL iBT 60, PTE Academic 59, Cambridge English Qualification 169, or Certified Intensive English Programme level 109 and above.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      }
+    ]
+  },
+  {
+    "code": "UTM-PHD-035",
+    "nameEnOfficial": "Doctor of Philosophy Field of Research : Physics Education",
+    "traces": [
+      {
+        "field": "nameEnOfficial",
+        "sourceId": "faculty-educational-sciences-technology",
+        "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-education/",
+        "sourceText": "Master / Doctor of Philosophy Field of Research : Physics Education",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "fee",
+        "sourceId": "fees-pg-inter",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "sourceText": "Mapped to UTM international postgraduate mainstream Education doctoral research fee.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "duration",
+        "sourceId": "fees-pg-inter",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "sourceText": "Standardized duration: 3 years (6 semesters). Official source: PhD Programme (6 Semesters) on UTM international postgraduate fee page.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "academicRequirement",
+        "sourceId": "int-pg-entry-requirements",
+        "sourceUrl": "https://admission.utm.my/int-pg-entry-requirements/",
+        "sourceText": "UTM official entry requirement for Doctoral Degree by Mixed-Mode and Research: a Master's Degree from UTM or any other higher learning institution recognised by the Senate, or other equivalent qualification and relevant experience recognised by the Senate.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "languageRequirement",
+        "sourceId": "english-language-requirements",
+        "sourceUrl": "https://admission.utm.my/english-language-requirements-3/",
+        "sourceText": "UTM official postgraduate English requirement: MUET band 4.0, IELTS 6.0, TOEFL iBT 60, PTE Academic 59, Cambridge English Qualification 169, or Certified Intensive English Programme level 109 and above.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      }
+    ]
+  },
+  {
+    "code": "UTM-PHD-036",
+    "nameEnOfficial": "Doctor of Philosophy Field of Research : Teaching English as a Second Language (TESL)",
+    "traces": [
+      {
+        "field": "nameEnOfficial",
+        "sourceId": "faculty-educational-sciences-technology",
+        "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-education/",
+        "sourceText": "Master / Doctor of Philosophy Field of Research : Teaching English as a Second Language (TESL)",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "fee",
+        "sourceId": "fees-pg-inter",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "sourceText": "Mapped to UTM international postgraduate mainstream Education doctoral research fee.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "duration",
+        "sourceId": "fees-pg-inter",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "sourceText": "Standardized duration: 3 years (6 semesters). Official source: PhD Programme (6 Semesters) on UTM international postgraduate fee page.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "academicRequirement",
+        "sourceId": "int-pg-entry-requirements",
+        "sourceUrl": "https://admission.utm.my/int-pg-entry-requirements/",
+        "sourceText": "UTM official entry requirement for Doctoral Degree by Mixed-Mode and Research: a Master's Degree from UTM or any other higher learning institution recognised by the Senate, or other equivalent qualification and relevant experience recognised by the Senate.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "languageRequirement",
+        "sourceId": "english-language-requirements",
+        "sourceUrl": "https://admission.utm.my/english-language-requirements-3/",
+        "sourceText": "UTM official postgraduate English requirement for TESL postgraduate programmes: MUET band 5.0, IELTS 7.0, TOEFL iBT 95, PTE Academic 76, or Cambridge English Qualification 180.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      }
+    ]
+  },
+  {
+    "code": "UTM-PHD-037",
+    "nameEnOfficial": "Doctor of Philosophy Field of Research : Technical and Vocational Education",
+    "traces": [
+      {
+        "field": "nameEnOfficial",
+        "sourceId": "faculty-educational-sciences-technology",
+        "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-education/",
+        "sourceText": "Master / Doctor of Philosophy Field of Research : Technical and Vocational Education",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "fee",
+        "sourceId": "fees-pg-inter",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "sourceText": "Mapped to UTM international postgraduate mainstream Education doctoral research fee.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "duration",
+        "sourceId": "fees-pg-inter",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "sourceText": "Standardized duration: 3 years (6 semesters). Official source: PhD Programme (6 Semesters) on UTM international postgraduate fee page.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "academicRequirement",
+        "sourceId": "int-pg-entry-requirements",
+        "sourceUrl": "https://admission.utm.my/int-pg-entry-requirements/",
+        "sourceText": "UTM official entry requirement for Doctoral Degree by Mixed-Mode and Research: a Master's Degree from UTM or any other higher learning institution recognised by the Senate, or other equivalent qualification and relevant experience recognised by the Senate.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "languageRequirement",
+        "sourceId": "english-language-requirements",
+        "sourceUrl": "https://admission.utm.my/english-language-requirements-3/",
+        "sourceText": "UTM official postgraduate English requirement: MUET band 4.0, IELTS 6.0, TOEFL iBT 60, PTE Academic 59, Cambridge English Qualification 169, or Certified Intensive English Programme level 109 and above.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      }
+    ]
+  },
+  {
+    "code": "UTM-PHD-038",
+    "nameEnOfficial": "Doctor of Philosophy Field of Research : Online Learning",
+    "traces": [
+      {
+        "field": "nameEnOfficial",
+        "sourceId": "faculty-educational-sciences-technology",
+        "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-education/",
+        "sourceText": "Master / Doctor of Philosophy Field of Research : Online Learning",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "fee",
+        "sourceId": "fees-pg-inter",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "sourceText": "Mapped to UTM international postgraduate mainstream Education doctoral research fee.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "duration",
+        "sourceId": "fees-pg-inter",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "sourceText": "Standardized duration: 3 years (6 semesters). Official source: PhD Programme (6 Semesters) on UTM international postgraduate fee page.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "academicRequirement",
+        "sourceId": "int-pg-entry-requirements",
+        "sourceUrl": "https://admission.utm.my/int-pg-entry-requirements/",
+        "sourceText": "UTM official entry requirement for Doctoral Degree by Mixed-Mode and Research: a Master's Degree from UTM or any other higher learning institution recognised by the Senate, or other equivalent qualification and relevant experience recognised by the Senate.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "languageRequirement",
+        "sourceId": "english-language-requirements",
+        "sourceUrl": "https://admission.utm.my/english-language-requirements-3/",
+        "sourceText": "UTM official postgraduate English requirement: MUET band 4.0, IELTS 6.0, TOEFL iBT 60, PTE Academic 59, Cambridge English Qualification 169, or Certified Intensive English Programme level 109 and above.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      }
+    ]
+  },
+  {
+    "code": "UTM-PHD-039",
+    "nameEnOfficial": "Doctor of Philosophy Field of Research : Early Childhood Education",
+    "traces": [
+      {
+        "field": "nameEnOfficial",
+        "sourceId": "faculty-educational-sciences-technology",
+        "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-education/",
+        "sourceText": "Doctor of Philosophy Field of Research : Early Childhood Education",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "fee",
+        "sourceId": "fees-pg-inter",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "sourceText": "Mapped to UTM international postgraduate mainstream Education doctoral research fee.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "duration",
+        "sourceId": "fees-pg-inter",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "sourceText": "Standardized duration: 3 years (6 semesters). Official source: PhD Programme (6 Semesters) on UTM international postgraduate fee page.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "academicRequirement",
+        "sourceId": "int-pg-entry-requirements",
+        "sourceUrl": "https://admission.utm.my/int-pg-entry-requirements/",
+        "sourceText": "UTM official entry requirement for Doctoral Degree by Mixed-Mode and Research: a Master's Degree from UTM or any other higher learning institution recognised by the Senate, or other equivalent qualification and relevant experience recognised by the Senate.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "languageRequirement",
+        "sourceId": "english-language-requirements",
+        "sourceUrl": "https://admission.utm.my/english-language-requirements-3/",
+        "sourceText": "UTM official postgraduate English requirement: MUET band 4.0, IELTS 6.0, TOEFL iBT 60, PTE Academic 59, Cambridge English Qualification 169, or Certified Intensive English Programme level 109 and above.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      }
+    ]
+  },
+  {
+    "code": "UTM-PHD-040",
+    "nameEnOfficial": "Doctor of Philosophy Field of Research",
+    "traces": [
+      {
+        "field": "nameEnOfficial",
+        "sourceId": "faculty-built-environment-surveying",
+        "sourceUrl": "https://admission.utm.my/int-faculty-of-built-environment-surveying/",
+        "sourceText": "Doctor of Philosophy Field of Research",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "fee",
+        "sourceId": "fees-pg-inter",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "sourceText": "Mapped to UTM international postgraduate mainstream Architecture doctoral research fee.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "duration",
+        "sourceId": "fees-pg-inter",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "sourceText": "Standardized duration: 3 years (6 semesters). Official source: PhD Programme (6 Semesters) on UTM international postgraduate fee page.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "academicRequirement",
+        "sourceId": "int-pg-entry-requirements",
+        "sourceUrl": "https://admission.utm.my/int-pg-entry-requirements/",
+        "sourceText": "UTM official entry requirement for Doctoral Degree by Mixed-Mode and Research: a Master's Degree from UTM or any other higher learning institution recognised by the Senate, or other equivalent qualification and relevant experience recognised by the Senate.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "languageRequirement",
+        "sourceId": "english-language-requirements",
+        "sourceUrl": "https://admission.utm.my/english-language-requirements-3/",
+        "sourceText": "UTM official postgraduate English requirement: MUET band 4.0, IELTS 6.0, TOEFL iBT 60, PTE Academic 59, Cambridge English Qualification 169, or Certified Intensive English Programme level 109 and above.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      }
+    ]
+  },
+  {
+    "code": "UTM-PHD-041",
+    "nameEnOfficial": "Doctor of Philosophy Field of Research : Software Engineering",
+    "traces": [
+      {
+        "field": "nameEnOfficial",
+        "sourceId": "faculty-computing",
+        "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-computing/",
+        "sourceText": "Doctor of Philosophy Field of Research : Software Engineering",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "fee",
+        "sourceId": "fees-pg-inter",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "sourceText": "Mapped to UTM international postgraduate mainstream Computing/ IT doctoral research fee.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "duration",
+        "sourceId": "fees-pg-inter",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "sourceText": "Standardized duration: 3 years (6 semesters). Official source: PhD Programme (6 Semesters) on UTM international postgraduate fee page.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "academicRequirement",
+        "sourceId": "int-pg-entry-requirements",
+        "sourceUrl": "https://admission.utm.my/int-pg-entry-requirements/",
+        "sourceText": "UTM official entry requirement for Doctoral Degree by Mixed-Mode and Research: a Master's Degree from UTM or any other higher learning institution recognised by the Senate, or other equivalent qualification and relevant experience recognised by the Senate.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "languageRequirement",
+        "sourceId": "english-language-requirements",
+        "sourceUrl": "https://admission.utm.my/english-language-requirements-3/",
+        "sourceText": "UTM official postgraduate English requirement: MUET band 4.0, IELTS 6.0, TOEFL iBT 60, PTE Academic 59, Cambridge English Qualification 169, or Certified Intensive English Programme level 109 and above.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      }
+    ]
+  },
+  {
+    "code": "UTM-PHD-042",
+    "nameEnOfficial": "Doctor of Philosophy Field of Research : Computer Science",
+    "traces": [
+      {
+        "field": "nameEnOfficial",
+        "sourceId": "faculty-computing",
+        "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-computing/",
+        "sourceText": "Doctor of Philosophy Field of Research : Computer Science",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "fee",
+        "sourceId": "fees-pg-inter",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "sourceText": "Mapped to UTM international postgraduate mainstream Computing/ IT doctoral research fee.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "duration",
+        "sourceId": "fees-pg-inter",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "sourceText": "Standardized duration: 3 years (6 semesters). Official source: PhD Programme (6 Semesters) on UTM international postgraduate fee page.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "academicRequirement",
+        "sourceId": "int-pg-entry-requirements",
+        "sourceUrl": "https://admission.utm.my/int-pg-entry-requirements/",
+        "sourceText": "UTM official entry requirement for Doctoral Degree by Mixed-Mode and Research: a Master's Degree from UTM or any other higher learning institution recognised by the Senate, or other equivalent qualification and relevant experience recognised by the Senate.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "languageRequirement",
+        "sourceId": "english-language-requirements",
+        "sourceUrl": "https://admission.utm.my/english-language-requirements-3/",
+        "sourceText": "UTM official postgraduate English requirement: MUET band 4.0, IELTS 6.0, TOEFL iBT 60, PTE Academic 59, Cambridge English Qualification 169, or Certified Intensive English Programme level 109 and above.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      }
+    ]
+  },
+  {
+    "code": "UTM-PHD-043",
+    "nameEnOfficial": "Doctor of Philosophy Field of Research : Informatics Engineering",
+    "traces": [
+      {
+        "field": "nameEnOfficial",
+        "sourceId": "faculty-computing",
+        "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-computing/",
+        "sourceText": "Doctor of Philosophy Field of Research : Informatics Engineering",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "fee",
+        "sourceId": "fees-pg-inter",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "sourceText": "Mapped to UTM international postgraduate mainstream Computing/ IT doctoral research fee.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "duration",
+        "sourceId": "fees-pg-inter",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "sourceText": "Standardized duration: 3 years (6 semesters). Official source: PhD Programme (6 Semesters) on UTM international postgraduate fee page.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "academicRequirement",
+        "sourceId": "int-pg-entry-requirements",
+        "sourceUrl": "https://admission.utm.my/int-pg-entry-requirements/",
+        "sourceText": "UTM official entry requirement for Doctoral Degree by Mixed-Mode and Research: a Master's Degree from UTM or any other higher learning institution recognised by the Senate, or other equivalent qualification and relevant experience recognised by the Senate.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "languageRequirement",
+        "sourceId": "english-language-requirements",
+        "sourceUrl": "https://admission.utm.my/english-language-requirements-3/",
+        "sourceText": "UTM official postgraduate English requirement: MUET band 4.0, IELTS 6.0, TOEFL iBT 60, PTE Academic 59, Cambridge English Qualification 169, or Certified Intensive English Programme level 109 and above.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      }
+    ]
+  },
+  {
+    "code": "UTM-PHD-044",
+    "nameEnOfficial": "Doctor of Philosophy Field of Research : Management",
+    "traces": [
+      {
+        "field": "nameEnOfficial",
+        "sourceId": "faculty-management",
+        "sourceUrl": "https://admission.utm.my/int-faculty-of-management/",
+        "sourceText": "Doctor of Philosophy Field of Research : Management",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "fee",
+        "sourceId": "fees-pg-inter",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "sourceText": "Mapped to UTM international postgraduate mainstream Business & Management doctoral research fee.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "duration",
+        "sourceId": "fees-pg-inter",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "sourceText": "Standardized duration: 3 years (6 semesters). Official source: PhD Programme (6 Semesters) on UTM international postgraduate fee page.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "academicRequirement",
+        "sourceId": "int-pg-entry-requirements",
+        "sourceUrl": "https://admission.utm.my/int-pg-entry-requirements/",
+        "sourceText": "UTM official entry requirement for Doctoral Degree by Mixed-Mode and Research: a Master's Degree from UTM or any other higher learning institution recognised by the Senate, or other equivalent qualification and relevant experience recognised by the Senate.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "languageRequirement",
+        "sourceId": "english-language-requirements",
+        "sourceUrl": "https://admission.utm.my/english-language-requirements-3/",
+        "sourceText": "UTM official postgraduate English requirement: MUET band 4.0, IELTS 6.0, TOEFL iBT 60, PTE Academic 59, Cambridge English Qualification 169, or Certified Intensive English Programme level 109 and above.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      }
+    ]
+  },
+  {
+    "code": "UTM-PHD-045",
+    "nameEnOfficial": "Doctor of Philosophy (Generic)",
+    "traces": [
+      {
+        "field": "nameEnOfficial",
+        "sourceId": "faculty-science",
+        "sourceUrl": "https://admission.utm.my/int-faculty-of-science/",
+        "sourceText": "Doctor of Philosophy (Generic)",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "fee",
+        "sourceId": "fees-pg-inter",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "sourceText": "Mapped to UTM international postgraduate mainstream Science doctoral research fee.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "duration",
+        "sourceId": "fees-pg-inter",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "sourceText": "Standardized duration: 3 years (6 semesters). Official source: PhD Programme (6 Semesters) on UTM international postgraduate fee page.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "academicRequirement",
+        "sourceId": "int-pg-entry-requirements",
+        "sourceUrl": "https://admission.utm.my/int-pg-entry-requirements/",
+        "sourceText": "UTM official entry requirement for Doctoral Degree by Mixed-Mode and Research: a Master's Degree from UTM or any other higher learning institution recognised by the Senate, or other equivalent qualification and relevant experience recognised by the Senate.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "languageRequirement",
+        "sourceId": "english-language-requirements",
+        "sourceUrl": "https://admission.utm.my/english-language-requirements-3/",
+        "sourceText": "UTM official postgraduate English requirement: MUET band 4.0, IELTS 6.0, TOEFL iBT 60, PTE Academic 59, Cambridge English Qualification 169, or Certified Intensive English Programme level 109 and above.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      }
+    ]
+  },
+  {
+    "code": "UTM-PHD-046",
+    "nameEnOfficial": "Doctor of Philosophy Field of Research : Chemistry",
+    "traces": [
+      {
+        "field": "nameEnOfficial",
+        "sourceId": "faculty-science",
+        "sourceUrl": "https://admission.utm.my/int-faculty-of-science/",
+        "sourceText": "Master / Doctor of Philosophy Field of Research : Chemistry",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "fee",
+        "sourceId": "fees-pg-inter",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "sourceText": "Mapped to UTM international postgraduate mainstream Science doctoral research fee.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "duration",
+        "sourceId": "fees-pg-inter",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "sourceText": "Standardized duration: 3 years (6 semesters). Official source: PhD Programme (6 Semesters) on UTM international postgraduate fee page.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "academicRequirement",
+        "sourceId": "int-pg-entry-requirements",
+        "sourceUrl": "https://admission.utm.my/int-pg-entry-requirements/",
+        "sourceText": "UTM official entry requirement for Doctoral Degree by Mixed-Mode and Research: a Master's Degree from UTM or any other higher learning institution recognised by the Senate, or other equivalent qualification and relevant experience recognised by the Senate.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "languageRequirement",
+        "sourceId": "english-language-requirements",
+        "sourceUrl": "https://admission.utm.my/english-language-requirements-3/",
+        "sourceText": "UTM official postgraduate English requirement: MUET band 4.0, IELTS 6.0, TOEFL iBT 60, PTE Academic 59, Cambridge English Qualification 169, or Certified Intensive English Programme level 109 and above.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      }
+    ]
+  },
+  {
+    "code": "UTM-PHD-047",
+    "nameEnOfficial": "Doctor of Philosophy Field of Research : Physics",
+    "traces": [
+      {
+        "field": "nameEnOfficial",
+        "sourceId": "faculty-science",
+        "sourceUrl": "https://admission.utm.my/int-faculty-of-science/",
+        "sourceText": "Master / Doctor of Philosophy Field of Research : Physics",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "fee",
+        "sourceId": "fees-pg-inter",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "sourceText": "Mapped to UTM international postgraduate mainstream Science doctoral research fee.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "duration",
+        "sourceId": "fees-pg-inter",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "sourceText": "Standardized duration: 3 years (6 semesters). Official source: PhD Programme (6 Semesters) on UTM international postgraduate fee page.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "academicRequirement",
+        "sourceId": "int-pg-entry-requirements",
+        "sourceUrl": "https://admission.utm.my/int-pg-entry-requirements/",
+        "sourceText": "UTM official entry requirement for Doctoral Degree by Mixed-Mode and Research: a Master's Degree from UTM or any other higher learning institution recognised by the Senate, or other equivalent qualification and relevant experience recognised by the Senate.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "languageRequirement",
+        "sourceId": "english-language-requirements",
+        "sourceUrl": "https://admission.utm.my/english-language-requirements-3/",
+        "sourceText": "UTM official postgraduate English requirement: MUET band 4.0, IELTS 6.0, TOEFL iBT 60, PTE Academic 59, Cambridge English Qualification 169, or Certified Intensive English Programme level 109 and above.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      }
+    ]
+  },
+  {
+    "code": "UTM-PHD-048",
+    "nameEnOfficial": "Doctor of Philosophy Field of Research : Mathematics",
+    "traces": [
+      {
+        "field": "nameEnOfficial",
+        "sourceId": "faculty-science",
+        "sourceUrl": "https://admission.utm.my/int-faculty-of-science/",
+        "sourceText": "Master / Doctor of Philosophy Field of Research : Mathematics",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "fee",
+        "sourceId": "fees-pg-inter",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "sourceText": "Mapped to UTM international postgraduate mainstream Science doctoral research fee.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "duration",
+        "sourceId": "fees-pg-inter",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "sourceText": "Standardized duration: 3 years (6 semesters). Official source: PhD Programme (6 Semesters) on UTM international postgraduate fee page.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "academicRequirement",
+        "sourceId": "int-pg-entry-requirements",
+        "sourceUrl": "https://admission.utm.my/int-pg-entry-requirements/",
+        "sourceText": "UTM official entry requirement for Doctoral Degree by Mixed-Mode and Research: a Master's Degree from UTM or any other higher learning institution recognised by the Senate, or other equivalent qualification and relevant experience recognised by the Senate.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "languageRequirement",
+        "sourceId": "english-language-requirements",
+        "sourceUrl": "https://admission.utm.my/english-language-requirements-3/",
+        "sourceText": "UTM official postgraduate English requirement: MUET band 4.0, IELTS 6.0, TOEFL iBT 60, PTE Academic 59, Cambridge English Qualification 169, or Certified Intensive English Programme level 109 and above.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      }
+    ]
+  },
+  {
+    "code": "UTM-PHD-049",
+    "nameEnOfficial": "Doctor of Philosophy Field of Research : Bioscience",
+    "traces": [
+      {
+        "field": "nameEnOfficial",
+        "sourceId": "faculty-science",
+        "sourceUrl": "https://admission.utm.my/int-faculty-of-science/",
+        "sourceText": "Master / Doctor of Philosophy Field of Research : Bioscience",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "fee",
+        "sourceId": "fees-pg-inter",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "sourceText": "Mapped to UTM international postgraduate mainstream Science doctoral research fee.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "duration",
+        "sourceId": "fees-pg-inter",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "sourceText": "Standardized duration: 3 years (6 semesters). Official source: PhD Programme (6 Semesters) on UTM international postgraduate fee page.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "academicRequirement",
+        "sourceId": "int-pg-entry-requirements",
+        "sourceUrl": "https://admission.utm.my/int-pg-entry-requirements/",
+        "sourceText": "UTM official entry requirement for Doctoral Degree by Mixed-Mode and Research: a Master's Degree from UTM or any other higher learning institution recognised by the Senate, or other equivalent qualification and relevant experience recognised by the Senate.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "languageRequirement",
+        "sourceId": "english-language-requirements",
+        "sourceUrl": "https://admission.utm.my/english-language-requirements-3/",
+        "sourceText": "UTM official postgraduate English requirement: MUET band 4.0, IELTS 6.0, TOEFL iBT 60, PTE Academic 59, Cambridge English Qualification 169, or Certified Intensive English Programme level 109 and above.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      }
+    ]
+  },
+  {
+    "code": "UTM-PHD-050",
+    "nameEnOfficial": "Doctor of Business Administration",
+    "traces": [
+      {
+        "field": "nameEnOfficial",
+        "sourceId": "faculty-ahibs",
+        "sourceUrl": "https://admission.utm.my/int-azman-hashim-international-business-school/",
+        "sourceText": "Doctor of Business Administration",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "fee",
+        "sourceId": "fees-pg-inter",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "sourceText": "Matched named doctoral programme total in UTM international postgraduate fee page.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "duration",
+        "sourceId": "fees-pg-inter",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "sourceText": "Standardized duration: 3 years (6 semesters). Official source: PhD Programme (6 Semesters) on UTM international postgraduate fee page.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "academicRequirement",
+        "sourceId": "int-pg-entry-requirements",
+        "sourceUrl": "https://admission.utm.my/int-pg-entry-requirements/",
+        "sourceText": "UTM official entry requirement for Doctoral Degree by Mixed-Mode and Research: a Master's Degree from UTM or any other higher learning institution recognised by the Senate, or other equivalent qualification and relevant experience recognised by the Senate.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "languageRequirement",
+        "sourceId": "english-language-requirements",
+        "sourceUrl": "https://admission.utm.my/english-language-requirements-3/",
+        "sourceText": "UTM official postgraduate English requirement: MUET band 4.0, IELTS 6.0, TOEFL iBT 60, PTE Academic 59, Cambridge English Qualification 169, or Certified Intensive English Programme level 109 and above.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      }
+    ]
+  },
+  {
+    "code": "UTM-PHD-051",
+    "nameEnOfficial": "Doctor of Philosophy (Generic)",
+    "traces": [
+      {
+        "field": "nameEnOfficial",
+        "sourceId": "faculty-ahibs",
+        "sourceUrl": "https://admission.utm.my/int-azman-hashim-international-business-school/",
+        "sourceText": "Doctor of Philosophy (Generic)",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "fee",
+        "sourceId": "fees-pg-inter",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "sourceText": "Mapped to UTM international postgraduate mainstream Business & Management doctoral research fee.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "duration",
+        "sourceId": "fees-pg-inter",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "sourceText": "Standardized duration: 3 years (6 semesters). Official source: PhD Programme (6 Semesters) on UTM international postgraduate fee page.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "academicRequirement",
+        "sourceId": "int-pg-entry-requirements",
+        "sourceUrl": "https://admission.utm.my/int-pg-entry-requirements/",
+        "sourceText": "UTM official entry requirement for Doctoral Degree by Mixed-Mode and Research: a Master's Degree from UTM or any other higher learning institution recognised by the Senate, or other equivalent qualification and relevant experience recognised by the Senate.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "languageRequirement",
+        "sourceId": "english-language-requirements",
+        "sourceUrl": "https://admission.utm.my/english-language-requirements-3/",
+        "sourceText": "UTM official postgraduate English requirement: MUET band 4.0, IELTS 6.0, TOEFL iBT 60, PTE Academic 59, Cambridge English Qualification 169, or Certified Intensive English Programme level 109 and above.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      }
+    ]
+  },
+  {
+    "code": "UTM-PHD-052",
+    "nameEnOfficial": "Doctor of Engineering in Engineering Business Management",
+    "traces": [
+      {
+        "field": "nameEnOfficial",
+        "sourceId": "faculty-artificial-intelligence",
+        "sourceUrl": "https://admission.utm.my/int-razak-faculty-of-technology-informatics/",
+        "sourceText": "Doctor of Engineering in Engineering Business Management",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "fee",
+        "sourceId": "fees-pg-inter",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "sourceText": "Matched named doctoral programme total in UTM international postgraduate fee page.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "duration",
+        "sourceId": "fees-pg-inter",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "sourceText": "Standardized duration: 3 years (6 semesters). Official source: PhD Programme (6 Semesters) on UTM international postgraduate fee page.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "academicRequirement",
+        "sourceId": "int-pg-entry-requirements",
+        "sourceUrl": "https://admission.utm.my/int-pg-entry-requirements/",
+        "sourceText": "UTM official entry requirement for Doctoral Degree by Mixed-Mode and Research: a Master's Degree from UTM or any other higher learning institution recognised by the Senate, or other equivalent qualification and relevant experience recognised by the Senate.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "languageRequirement",
+        "sourceId": "english-language-requirements",
+        "sourceUrl": "https://admission.utm.my/english-language-requirements-3/",
+        "sourceText": "UTM official postgraduate English requirement: MUET band 4.0, IELTS 6.0, TOEFL iBT 60, PTE Academic 59, Cambridge English Qualification 169, or Certified Intensive English Programme level 109 and above.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      }
+    ]
+  },
+  {
+    "code": "UTM-PHD-053",
+    "nameEnOfficial": "Doctor of Philosophy (Generic)",
+    "traces": [
+      {
+        "field": "nameEnOfficial",
+        "sourceId": "faculty-artificial-intelligence",
+        "sourceUrl": "https://admission.utm.my/int-razak-faculty-of-technology-informatics/",
+        "sourceText": "Doctor of Philosophy (Generic)",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "fee",
+        "sourceId": "fees-pg-inter",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "sourceText": "Mapped to UTM international postgraduate mainstream Engineering doctoral research fee.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "duration",
+        "sourceId": "fees-pg-inter",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "sourceText": "Standardized duration: 3 years (6 semesters). Official source: PhD Programme (6 Semesters) on UTM international postgraduate fee page.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "academicRequirement",
+        "sourceId": "int-pg-entry-requirements",
+        "sourceUrl": "https://admission.utm.my/int-pg-entry-requirements/",
+        "sourceText": "UTM official entry requirement for Doctoral Degree by Mixed-Mode and Research: a Master's Degree from UTM or any other higher learning institution recognised by the Senate, or other equivalent qualification and relevant experience recognised by the Senate.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "languageRequirement",
+        "sourceId": "english-language-requirements",
+        "sourceUrl": "https://admission.utm.my/english-language-requirements-3/",
+        "sourceText": "UTM official postgraduate English requirement: MUET band 4.0, IELTS 6.0, TOEFL iBT 60, PTE Academic 59, Cambridge English Qualification 169, or Certified Intensive English Programme level 109 and above.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      }
+    ]
+  },
+  {
+    "code": "UTM-PHD-054",
+    "nameEnOfficial": "Doctor of Philosophy (Generic)",
+    "traces": [
+      {
+        "field": "nameEnOfficial",
+        "sourceId": "faculty-mjiit",
+        "sourceUrl": "https://admission.utm.my/int-malaysia-japan-international-institute-of-technology/",
+        "sourceText": "Master/ Doctor of Philosophy (Generic)",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "fee",
+        "sourceId": "fees-pg-inter",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "sourceText": "Mapped to UTM international postgraduate mainstream Engineering doctoral research fee.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "duration",
+        "sourceId": "fees-pg-inter",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "sourceText": "Standardized duration: 3 years (6 semesters). Official source: PhD Programme (6 Semesters) on UTM international postgraduate fee page.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "academicRequirement",
+        "sourceId": "int-pg-entry-requirements",
+        "sourceUrl": "https://admission.utm.my/int-pg-entry-requirements/",
+        "sourceText": "UTM official entry requirement for Doctoral Degree by Mixed-Mode and Research: a Master's Degree from UTM or any other higher learning institution recognised by the Senate, or other equivalent qualification and relevant experience recognised by the Senate.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "languageRequirement",
+        "sourceId": "english-language-requirements",
+        "sourceUrl": "https://admission.utm.my/english-language-requirements-3/",
+        "sourceText": "UTM official postgraduate English requirement: MUET band 4.0, IELTS 6.0, TOEFL iBT 60, PTE Academic 59, Cambridge English Qualification 169, or Certified Intensive English Programme level 109 and above.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      }
+    ]
+  },
+  {
+    "code": "UTM-PHD-055",
+    "nameEnOfficial": "Doctor of Philosophy Field of Research : Engineering Education",
+    "traces": [
+      {
+        "field": "nameEnOfficial",
+        "sourceId": "faculty-mjiit",
+        "sourceUrl": "https://admission.utm.my/int-malaysia-japan-international-institute-of-technology/",
+        "sourceText": "Doctor of Philosophy Field of Research : Engineering Education",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "fee",
+        "sourceId": "fees-pg-inter",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "sourceText": "Mapped to UTM international postgraduate mainstream Engineering doctoral research fee.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "duration",
+        "sourceId": "fees-pg-inter",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "sourceText": "Standardized duration: 3 years (6 semesters). Official source: PhD Programme (6 Semesters) on UTM international postgraduate fee page.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "academicRequirement",
+        "sourceId": "int-pg-entry-requirements",
+        "sourceUrl": "https://admission.utm.my/int-pg-entry-requirements/",
+        "sourceText": "UTM official entry requirement for Doctoral Degree by Mixed-Mode and Research: a Master's Degree from UTM or any other higher learning institution recognised by the Senate, or other equivalent qualification and relevant experience recognised by the Senate.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      },
+      {
+        "field": "languageRequirement",
+        "sourceId": "english-language-requirements",
+        "sourceUrl": "https://admission.utm.my/english-language-requirements-3/",
+        "sourceText": "UTM official postgraduate English requirement: MUET band 4.0, IELTS 6.0, TOEFL iBT 60, PTE Academic 59, Cambridge English Qualification 169, or Certified Intensive English Programme level 109 and above.",
+        "retrievedAt": "2026-06-17",
+        "confidence": 1
+      }
+    ]
+  }
+]

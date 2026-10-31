@@ -1,0 +1,64 @@
+{
+  "outDir": "/Users/ian/Desktop/dev/study-malaysia/data/imports/upsi/2026-07-08/master",
+  "candidate": "/Users/ian/Desktop/dev/study-malaysia/data/imports/upsi/2026-07-08/master/candidate-dataset.json",
+  "gapReport": "/Users/ian/Desktop/dev/study-malaysia/data/imports/upsi/2026-07-08/master/gap-report.md",
+  "coverage": {
+    "programmeCount": 140,
+    "rawDirectoryRows": 141,
+    "dedupedDirectoryCodes": 140,
+    "facultyPdfMatched": 135,
+    "detailPageFetched": 140,
+    "studyModesConfirmedFromDetail": 140,
+    "durationInternationalParsed": 140,
+    "feeCategoryMapped": 138,
+    "feeCategoryBlocked": 1,
+    "languageGeneralRule": 137,
+    "languageProgrammeSpecific": 3,
+    "facultyNotMatchedCodes": [
+      "MJ01",
+      "MT022",
+      "MT064",
+      "MT071",
+      "MT138"
+    ],
+    "feeCategoryBlockedCodes": [
+      "MT199"
+    ]
+  },
+  "directoryCodesNotInFacultyPdf": [
+    "MJ01",
+    "MT022",
+    "MT064",
+    "MT071",
+    "MT138"
+  ],
+  "facultyPdfCodesNotInDirectory": [
+    "MJ02",
+    "MT140",
+    "MT191",
+    "MT193",
+    "MT194",
+    "MT195",
+    "MT200",
+    "MT206",
+    "MT208",
+    "MT209",
+    "MT210",
+    "MT211",
+    "MT212",
+    "MT213",
+    "MT214",
+    "MT216",
+    "MT218",
+    "MT219"
+  ],
+  "duplicates": [
+    {
+      "code": "MT196",
+      "keptUrl": "https://ips.upsi.edu.my/mt196-master-of-science-exercise-and-health-2/",
+      "duplicateUrl": "https://ips.upsi.edu.my/programmes-offered/mt196-master-of-science-exercise-and-health/",
+      "name": "MASTER OF SCIENCE (EXERCISE AND HEALTH)",
+      "note": "Both URLs are official; candidate keeps the programmes-offered URL as canonical when available."
+    }
+  ]
+}

@@ -1,0 +1,1451 @@
+{
+  "safe_to_import": false,
+  "import_approved_by": null,
+  "import_approved_at": null,
+  "audit_metadata": {
+    "university": "INTI International University & Colleges",
+    "universityShortName": "INTI",
+    "level": "master",
+    "auditDate": "2026-06-24",
+    "auditor": "codex-collector-v2-calibrated",
+    "officialDomain": "newinti.edu.my",
+    "sourceRegistry": {
+      "programmeCatalogUrl": "https://newinti.edu.my/academic-programmes/postgraduate/masters/",
+      "feeInfoUrl": "https://newinti.edu.my/academic-programmes/postgraduate/masters/",
+      "entryReqUrl": "https://newinti.edu.my/international-students/entry-requirements/",
+      "languageReqUrl": "https://newinti.edu.my/international-students/entry-requirements/",
+      "otherUrls": [
+        "https://newinti.edu.my/international-students/",
+        "https://newinti.edu.my/international-students/how-to-apply/",
+        "https://newinti.edu.my/international-students/brochures/"
+      ]
+    },
+    "inventoryCount": 23,
+    "collectedCount": 23,
+    "skippedCount": 0,
+    "readyCount": 0,
+    "needsReviewCount": 23,
+    "calibrationSource": "data/imports/iiu/2026-06-24/v3-calibrated/INTI_audit_master_20260624.json"
+  },
+  "programmes": [
+    {
+      "nameEn": "Master in Education Management",
+      "name": "教育管理硕士",
+      "faculty": "Education",
+      "level": "master",
+      "duration": 1,
+      "tuitionMYR": null,
+      "intake": [
+        1,
+        5,
+        9
+      ],
+      "ielts": 4.0,
+      "curriculum": [
+        "教育管理者财务基础",
+        "教育心理学",
+        "教育分析",
+        "组织管理",
+        "教育研究方法",
+        "创新与知识管理",
+        "统计与决策分析",
+        "课程开发与管理",
+        "新兴技术赋能教育转型",
+        "教育政策与咨询角色",
+        "最终项目"
+      ],
+      "curriculumTotal": 11,
+      "studyMode": "coursework",
+      "gpaRequirement": "i. A Bachelor’s Degree (Level 6, MQF) in education fields with a minimum CGPA of 2.50 or its equivalent, as accepted by the University Senate; OR ii. A Bachelor’s Degree in education fields with a minimum CGPA of 2.00 can be accepted subject to rigorous internal assessment; OR iii. A Bachelor’s Degree with a minimum CGPA of 2.50 subject to passing prerequisite courses; OR iv. A Bachelor’s Degree with a minimum CGPA of 2.00 can be accepted subject to rigorous internal assessment AND passing prerequisite courses; OR v. Other qualifications equivalent to the above requirements and recognised by the Malaysian Government English Language Requirements MUET Band 3 / IELTS 4.0 or its equivalent Note: International students are subject to meet entry requirements that reflect similar qualifications and experience as stated above. To find country-specific entry requirements visit our international entry requirement page",
+      "interviewRequired": null,
+      "careerProspects": null,
+      "otherLanguageReqs": {
+        "muet": 3
+      },
+      "otherEntryReqs": [
+        "国际学生须满足与官方页面列出的同等学历和经验要求。",
+        "中国学生资格参照官方国际入学要求页面中的高中、职业技术学校、专科或技工学校等条目。"
+      ],
+      "remarks": "官方学制文本为“Full time: 1 year | Part time: 2 years”，本次按全日制路径或官方区间上限规范为1年。官方费用列出国际学生近似金额：INTI International University：约马币41,415令吉。官网费用为近似金额且注明国际学生费用另受销售与服务税影响，需人工复核后才可公开。官网课程结构为英文，本次已生成中文课程数组，术语翻译需人工复核。四语公开本地化尚未完成，本条保持待复核。官方未公布可作为公开上线依据的精确国际学生总学费；官网费用为近似金额或多费用选项且不含 SST，tuitionMYR 按默认采集标准置为 null。官网仅发布近似费用（INTI International University：约 RM 41,415），并注明公布费用不含 SST，国际学生费用另加 6% SST。未发现同一专业、同一国际学生口径的精确总学费。课程和职业中文公开前仍需 Ian 终审。官方职业方向未公布或中文字段仍需人工复核，careerProspects 保持 null。",
+      "officialFeeSourceUrl": "https://newinti.edu.my/programme/master-in-education-management/",
+      "officialSourceUrl": "https://newinti.edu.my/programme/master-in-education-management/",
+      "officialVerifiedAt": "2026-06-24",
+      "publicDisplayStatus": "needs-review",
+      "auditStatus": "needs-manual-review"
+    },
+    {
+      "nameEn": "Master in Education Management (Online Learning)",
+      "name": "教育管理硕士（在线学习）",
+      "faculty": "Education",
+      "level": "master",
+      "duration": 1,
+      "tuitionMYR": null,
+      "intake": [
+        1,
+        3,
+        5,
+        8,
+        10
+      ],
+      "ielts": 4.0,
+      "curriculum": [
+        "课程开发与管理",
+        "教育分析",
+        "教育政策与咨询角色",
+        "教育心理学",
+        "教育管理者财务基础",
+        "创新与知识管理",
+        "组织行为",
+        "教育研究方法",
+        "统计与决策分析",
+        "新兴技术赋能教育转型",
+        "项目"
+      ],
+      "curriculumTotal": 11,
+      "studyMode": "coursework",
+      "gpaRequirement": "i. A Bachelor’s Degree (Level 6, MQF) in education fields with a minimum CGPA of 2.50 or its equivalent, as accepted by the University Senate; OR ii. A Bachelor’s Degree in education fields with a minimum CGPA of 2.00 can be accepted subject to rigorous internal assessment; OR iii. A Bachelor’s Degree with a minimum CGPA of 2.50 subject to passing prerequisite courses; OR iv. A Bachelor’s Degree with a minimum CGPA of 2.00 can be accepted subject to rigorous internal assessment AND passing prerequisite courses; OR v. Other qualifications equivalent to the above requirements and recognised by the Malaysian Government English Language Requirements MUET Band 3 / IELTS 4.0 or its equivalent Note: International students are subject to meet entry requirements that reflect similar qualifications and experience as stated above. To find country-specific entry requirements visit our international entry requirement page",
+      "interviewRequired": null,
+      "careerProspects": "教育行业部门主管、中心负责人、运营负责人、教师、讲师、培训人员",
+      "otherLanguageReqs": {
+        "muet": 3
+      },
+      "otherEntryReqs": [
+        "国际学生须满足与官方页面列出的同等学历和经验要求。",
+        "中国学生资格参照官方国际入学要求页面中的高中、职业技术学校、专科或技工学校等条目。"
+      ],
+      "remarks": "官方学制文本为“Full time: 1 Year | Part time: 2 Years”，本次按全日制路径或官方区间上限规范为1年。官方费用列出国际学生近似金额：INTI International University：约马币33,220令吉。官网费用为近似金额且注明国际学生费用另受销售与服务税影响，需人工复核后才可公开。官网课程结构为英文，本次已生成中文课程数组，术语翻译需人工复核。四语公开本地化尚未完成，本条保持待复核。官方未公布可作为公开上线依据的精确国际学生总学费；官网费用为近似金额或多费用选项且不含 SST，tuitionMYR 按默认采集标准置为 null。官网仅发布近似费用（INTI International University：约 RM 33,220），并注明公布费用不含 SST，国际学生费用另加 6% SST。未发现同一专业、同一国际学生口径的精确总学费。课程和职业中文公开前仍需 Ian 终审。",
+      "officialFeeSourceUrl": "https://newinti.edu.my/programme/master-in-education-management-online-learning/",
+      "officialSourceUrl": "https://newinti.edu.my/programme/master-in-education-management-online-learning/",
+      "officialVerifiedAt": "2026-06-24",
+      "publicDisplayStatus": "needs-review",
+      "auditStatus": "needs-manual-review"
+    },
+    {
+      "nameEn": "Master in Health Administration",
+      "name": "健康管理硕士",
+      "faculty": "Health Sciences",
+      "level": "master",
+      "duration": 1,
+      "tuitionMYR": null,
+      "intake": [
+        1,
+        5,
+        9
+      ],
+      "ielts": 6.0,
+      "curriculum": [
+        "商业研究方法",
+        "创业管理",
+        "全球商业议题",
+        "电子商务",
+        "商业经济学",
+        "组织行为",
+        "医疗卫生质量与安全管理",
+        "医疗卫生技术与支持服务",
+        "市场营销管理",
+        "商业会计与金融",
+        "战略人力资源管理",
+        "战略管理",
+        "医疗法律、法规与伦理",
+        "工商管理项目"
+      ],
+      "curriculumTotal": 14,
+      "studyMode": "coursework",
+      "gpaRequirement": "A Bachelor's Degree in related fields with a minimum CGPA of 2.50, as accepted by the University Senate; or A Bachelor's Degree in related fields with a minimum CGPA of 2.00 and not meeting CGPA of 2.50, can be accepted subject to rigorous internal assessment; or A Bachelor’s Degree in non-related fields with a minimum CGPA of 2.00 as accepted by the Senate and with relevant working experience, subject to a rigorous internal assessment; or A Bachelor's Degree in non-related fields with a minimum CGPA of 2.00 as accepted by the Senate and without relevant working experience, subject to passing prerequisite courses Other equivalent / related qualifications to a Bachelor’s Degree recognised by the Malaysian Government. International students are required to achieve a minimum score of 6.0 in IELTS OR Band 4 in Malaysian University English Test (MUET) OR equivalent to Common European Framework of Reference for Languages (CEFR). Note: International students are subject to meet entry requirements that reflect similar qualifications and experience as stated above. To find country-specific entry requirements visit our international entry requirement page",
+      "interviewRequired": null,
+      "careerProspects": "医院运营总监、诊所经理、患者安全总监、业务发展总监、首席官员、首席执行官",
+      "otherLanguageReqs": null,
+      "otherEntryReqs": [
+        "国际学生须满足与官方页面列出的同等学历和经验要求。",
+        "中国学生资格参照官方国际入学要求页面中的高中、职业技术学校、专科或技工学校等条目。",
+        "部分非相关背景路径可能需要相关工作经验、严格内部评估或先修课程。",
+        "健康、医疗或设施相关路径可能涉及官方页面列出的专业或实践要求。",
+        "部分路径可能涉及内部评估、测试或补充课程要求。"
+      ],
+      "remarks": "官方学制文本为“2 years (PT), 1 years (FT)”，本次按全日制路径或官方区间上限规范为1年。官方费用列出国际学生近似金额：INTI International University：约马币41,398令吉。官网费用为近似金额且注明国际学生费用另受销售与服务税影响，需人工复核后才可公开。官网课程结构为英文，本次已生成中文课程数组，术语翻译需人工复核。四语公开本地化尚未完成，本条保持待复核。官方未公布可作为公开上线依据的精确国际学生总学费；官网费用为近似金额或多费用选项且不含 SST，tuitionMYR 按默认采集标准置为 null。官网仅发布近似费用（INTI International University：约 RM 41,398），并注明公布费用不含 SST，国际学生费用另加 6% SST。未发现同一专业、同一国际学生口径的精确总学费。课程和职业中文公开前仍需 Ian 终审。",
+      "officialFeeSourceUrl": "https://newinti.edu.my/programme/master-in-health-administration/",
+      "officialSourceUrl": "https://newinti.edu.my/programme/master-in-health-administration/",
+      "officialVerifiedAt": "2026-06-24",
+      "publicDisplayStatus": "needs-review",
+      "auditStatus": "needs-manual-review"
+    },
+    {
+      "nameEn": "Master in Health Sciences (Physiotherapy) (by Research)",
+      "name": "健康科学硕士（物理治疗）（研究型）",
+      "faculty": "Health Sciences",
+      "level": "master",
+      "duration": 2,
+      "tuitionMYR": null,
+      "intake": [
+        1,
+        5,
+        9
+      ],
+      "ielts": null,
+      "curriculum": [
+        "研究方法论",
+        "开题答辩",
+        "研究论文",
+        "最终学年口试答辩",
+        "毕业论文"
+      ],
+      "curriculumTotal": 5,
+      "studyMode": "research",
+      "gpaRequirement": "A Bachelor’s Degree in Physiotherapy or related fields with a minimum CGPA of 2.75 or equivalent, as accepted by the University Senate; or A Bachelor’s Degree in Physiotherapy or related fields or equivalent with a minimum CGPA of 2.50 and not meeting CGPA of 2.75, can be accepted subject to rigorous internal assessment; or A Bachelor’s Degree in Physiotherapy or related fields or equivalent with minimum CGPA of 2.00 and not meeting CGPA of 2.50, can be accepted subject to a minimum of 5 years working experience in the relevant field and rigorous internal assessment. International students are required to achieve a minimum score of 5.5 in International English Language Testing System (IELTS) or Band 4 in Malaysian University English Test (MUET) or its equivalent. Note: International students are subject to meet entry requirements that reflect similar qualifications and experience as stated above. To find country-specific entry requirements visit our international entry requirement page",
+      "interviewRequired": null,
+      "careerProspects": "物理治疗师、讲师、学术研究员、创业者、中心经理、临床研究员",
+      "otherLanguageReqs": null,
+      "otherEntryReqs": [
+        "国际学生须满足与官方页面列出的同等学历和经验要求。",
+        "中国学生资格参照官方国际入学要求页面中的高中、职业技术学校、专科或技工学校等条目。",
+        "部分非相关背景路径可能需要相关工作经验、严格内部评估或先修课程。",
+        "研究型路径可能需要开题、研究指导或论文相关要求。",
+        "健康、医疗或设施相关路径可能涉及官方页面列出的专业或实践要求。",
+        "部分路径可能涉及内部评估、测试或补充课程要求。"
+      ],
+      "remarks": "官方学制文本为“3 years (PT), 2 years (FT)”，本次按全日制路径或官方区间上限规范为2年。官方费用列出国际学生近似金额：INTI International University：约马币39,600令吉。官网费用为近似金额且注明国际学生费用另受销售与服务税影响，需人工复核后才可公开。官方页面未解析到稳定雅思分数，列表级雅思保持空值。官网课程结构为英文，本次已生成中文课程数组，术语翻译需人工复核。四语公开本地化尚未完成，本条保持待复核。官方未公布可作为公开上线依据的精确国际学生总学费；官网费用为近似金额或多费用选项且不含 SST，tuitionMYR 按默认采集标准置为 null。官网仅发布近似费用（INTI International University：约 RM 39,600），并注明公布费用不含 SST，国际学生费用另加 6% SST。未发现同一专业、同一国际学生口径的精确总学费。课程和职业中文公开前仍需 Ian 终审。",
+      "officialFeeSourceUrl": "https://newinti.edu.my/programme/master-in-health-sciences-physiotherapy-by-research/",
+      "officialSourceUrl": "https://newinti.edu.my/programme/master-in-health-sciences-physiotherapy-by-research/",
+      "officialVerifiedAt": "2026-06-24",
+      "publicDisplayStatus": "needs-review",
+      "auditStatus": "needs-manual-review"
+    },
+    {
+      "nameEn": "Master in Information Systems (MIS)",
+      "name": "信息系统硕士",
+      "faculty": "Computing & IT",
+      "level": "master",
+      "duration": 1,
+      "tuitionMYR": null,
+      "intake": [
+        1,
+        5,
+        9
+      ],
+      "ielts": 6.0,
+      "curriculum": [
+        "智能决策支持系统",
+        "未来信息学",
+        "计算研究方法",
+        "系统开发工具与技术",
+        "创新与知识管理",
+        "信息技术战略项目",
+        "企业系统",
+        "大数据应用",
+        "商业模拟"
+      ],
+      "curriculumTotal": 9,
+      "studyMode": "coursework",
+      "gpaRequirement": "i. A Bachelor’s Degree (Level 6, MQF) in Computing or related fields with a minimum CGPA of 2.50, as accepted by the University Senate; OR ii. A Bachelor’s Degree (Level 6, MQF) in Computing or related fields with a minimum CGPA of 2.00 and not meeting a CGPA of 2.50 can be accepted subject to a thorough rigorous assessment as determined by the university; OR iii. A Bachelor’s Degree (Level 6, MQF) in non-Computing field with a minimum CGPA of 2.00 can be accepted subject to appropriate prerequisite courses; OR iv. Other qualifications equivalent to a Bachelor’s Degree (Level 6, MQF) in Computing or related fields recognised by the Government of Malaysia must fulfil the requirement on item (i) or (ii). English Language Requirements • Candidates are required to achieve a minimum score of 6.0 in IELTS, 550 in TOEFL or its equivalent. Other Qualifications Applicants with non-Computing qualifications are required to take an additional course, namely Fundamental of Computing. Note: International students are subject to meet entry requirements that reflect similar qualifications and experience as stated above. To find country-specific entry requirements visit our international entry requirement page",
+      "interviewRequired": null,
+      "careerProspects": "技术管理、数字化业务领导、企业系统、大数据与商业模拟相关岗位",
+      "otherLanguageReqs": null,
+      "otherEntryReqs": [
+        "国际学生须满足与官方页面列出的同等学历和经验要求。",
+        "中国学生资格参照官方国际入学要求页面中的高中、职业技术学校、专科或技工学校等条目。"
+      ],
+      "remarks": "官方学制文本为“Full time: 1 year | Part time: 2 years”，本次按全日制路径或官方区间上限规范为1年。官方费用列出国际学生近似金额：INTI International University：约马币41,410令吉。官网费用为近似金额且注明国际学生费用另受销售与服务税影响，需人工复核后才可公开。官网课程结构为英文，本次已生成中文课程数组，术语翻译需人工复核。四语公开本地化尚未完成，本条保持待复核。官方未公布可作为公开上线依据的精确国际学生总学费；官网费用为近似金额或多费用选项且不含 SST，tuitionMYR 按默认采集标准置为 null。官网仅发布近似费用（INTI International University：约 RM 41,410），并注明公布费用不含 SST，国际学生费用另加 6% SST。未发现同一专业、同一国际学生口径的精确总学费。课程和职业中文公开前仍需 Ian 终审。",
+      "officialFeeSourceUrl": "https://newinti.edu.my/programme/master-in-information-systems-mis/",
+      "officialSourceUrl": "https://newinti.edu.my/programme/master-in-information-systems-mis/",
+      "officialVerifiedAt": "2026-06-24",
+      "publicDisplayStatus": "needs-review",
+      "auditStatus": "needs-manual-review"
+    },
+    {
+      "nameEn": "Master in Information Technology (MIT)",
+      "name": "信息技术硕士",
+      "faculty": "Computing & IT",
+      "level": "master",
+      "duration": 1,
+      "tuitionMYR": null,
+      "intake": [
+        1,
+        5,
+        9
+      ],
+      "ielts": 6.0,
+      "curriculum": [
+        "智能决策支持系统",
+        "未来信息学",
+        "计算研究方法",
+        "系统开发工具与技术",
+        "创新与知识管理",
+        "信息技术战略项目",
+        "网络安全",
+        "信息技术项目管理",
+        "泛在计算"
+      ],
+      "curriculumTotal": 9,
+      "studyMode": "coursework",
+      "gpaRequirement": "i. A Bachelor’s Degree (Level 6, MQF) in Computing or related fields with a minimum CGPA of 2.50, as accepted by the University Senate; OR ii. A Bachelor’s Degree (Level 6, MQF) in Computing or related fields with a minimum CGPA of 2.00 and not meeting a CGPA of 2.50 can be accepted subject to a thorough rigorous assessment as determined by the university; OR iii. A Bachelor’s Degree (Level 6, MQF) in non-Computing field with a minimum CGPA of 2.00 can be accepted subject to appropriate prerequisite courses; OR iv. Other qualifications equivalent to a Bachelor’s Degree (Level 6, MQF) in Computing or related fields recognised by the Government of Malaysia must fulfil the requirement on item (i) or (ii). English Language Requirements • Candidates are required to achieve a minimum score of 6.0 in IELTS, 550 in TOEFL or its equivalent. Other Qualifications Applicants with non-Computing qualifications are required to take an additional course, namely Fundamental of Computing. Note: International students are subject to meet entry requirements that reflect similar qualifications and experience as stated above. To find country-specific entry requirements visit our international entry requirement page",
+      "interviewRequired": null,
+      "careerProspects": "计算、分布式计算、空间信息、人机交互、人工智能、数据分析与信息技术管理相关岗位",
+      "otherLanguageReqs": null,
+      "otherEntryReqs": [
+        "国际学生须满足与官方页面列出的同等学历和经验要求。",
+        "中国学生资格参照官方国际入学要求页面中的高中、职业技术学校、专科或技工学校等条目。"
+      ],
+      "remarks": "官方学制文本为“Full time: 1 year | Part time: 2 years”，本次按全日制路径或官方区间上限规范为1年。官方费用列出国际学生近似金额：INTI International University：约马币41,410令吉。官网费用为近似金额且注明国际学生费用另受销售与服务税影响，需人工复核后才可公开。官网课程结构为英文，本次已生成中文课程数组，术语翻译需人工复核。四语公开本地化尚未完成，本条保持待复核。官方未公布可作为公开上线依据的精确国际学生总学费；官网费用为近似金额或多费用选项且不含 SST，tuitionMYR 按默认采集标准置为 null。官网仅发布近似费用（INTI International University：约 RM 41,410），并注明公布费用不含 SST，国际学生费用另加 6% SST。未发现同一专业、同一国际学生口径的精确总学费。课程和职业中文公开前仍需 Ian 终审。",
+      "officialFeeSourceUrl": "https://newinti.edu.my/programme/master-in-information-technology-mit/",
+      "officialSourceUrl": "https://newinti.edu.my/programme/master-in-information-technology-mit/",
+      "officialVerifiedAt": "2026-06-24",
+      "publicDisplayStatus": "needs-review",
+      "auditStatus": "needs-manual-review"
+    },
+    {
+      "nameEn": "Master in Information Technology (Online Learning)",
+      "name": "信息技术硕士（在线学习）",
+      "faculty": "Computing & IT",
+      "level": "master",
+      "duration": 1,
+      "tuitionMYR": null,
+      "intake": [
+        1,
+        3,
+        5,
+        8,
+        10
+      ],
+      "ielts": 6.0,
+      "curriculum": [
+        "智能决策支持系统",
+        "未来信息学",
+        "计算研究方法",
+        "系统开发工具与技术",
+        "创新与知识管理",
+        "信息技术战略项目",
+        "网络安全",
+        "信息技术项目管理",
+        "泛在计算"
+      ],
+      "curriculumTotal": 9,
+      "studyMode": "coursework",
+      "gpaRequirement": "i. A Bachelor’s Degree (Level 6, MQF) in Computing or related fields with a minimum CGPA of 2.50, as accepted by the University Senate; OR ii. A Bachelor’s Degree (Level 6, MQF) in Computing or related fields with a minimum CGPA of 2.00 and not meeting a CGPA of 2.50 can be accepted subject to a thorough rigorous assessment as determined by the university; OR iii. A Bachelor’s Degree (Level 6, MQF) in non-Computing field with a minimum CGPA of 2.00 can be accepted subject to appropriate prerequisite courses; OR iv. iv. Other qualifications equivalent to a Bachelor’s Degree (Level 6, MQF) in Computing or related fields recognised by the Government of Malaysia must fulfil the requirement on item (i) or (ii). v. Candidates are required to achieve a minimum score of 6.0 in IELTS, 550 in TOEFL or its equivalent. Other Qualifications Applicants with non-Computing qualifications are required to take an additional course, namely Fundamental of Computing. Note: International students are subject to meet entry requirements that reflect similar qualifications and experience as stated above. To find country-specific entry requirements visit our international entry requirement page",
+      "interviewRequired": null,
+      "careerProspects": "计算机系统管理、信息技术实施、行业学习项目、信息技术团队协作与技术管理相关岗位",
+      "otherLanguageReqs": null,
+      "otherEntryReqs": [
+        "国际学生须满足与官方页面列出的同等学历和经验要求。",
+        "中国学生资格参照官方国际入学要求页面中的高中、职业技术学校、专科或技工学校等条目。"
+      ],
+      "remarks": "官方学制文本为“Full time: 1 Year | Part time: 2 Years”，本次按全日制路径或官方区间上限规范为1年。官方费用列出国际学生近似金额：INTI International University：约马币33,330令吉。官网费用为近似金额且注明国际学生费用另受销售与服务税影响，需人工复核后才可公开。官网课程结构为英文，本次已生成中文课程数组，术语翻译需人工复核。四语公开本地化尚未完成，本条保持待复核。官方未公布可作为公开上线依据的精确国际学生总学费；官网费用为近似金额或多费用选项且不含 SST，tuitionMYR 按默认采集标准置为 null。官网仅发布近似费用（INTI International University：约 RM 33,330），并注明公布费用不含 SST，国际学生费用另加 6% SST。未发现同一专业、同一国际学生口径的精确总学费。课程和职业中文公开前仍需 Ian 终审。",
+      "officialFeeSourceUrl": "https://newinti.edu.my/programme/master-in-information-technology-fully-online-learning-simplified/",
+      "officialSourceUrl": "https://newinti.edu.my/programme/master-in-information-technology-fully-online-learning-simplified/",
+      "officialVerifiedAt": "2026-06-24",
+      "publicDisplayStatus": "needs-review",
+      "auditStatus": "needs-manual-review"
+    },
+    {
+      "nameEn": "Master of Biotechnological Innovations and Application (by Research)",
+      "name": "生物技术创新与应用硕士（研究型）",
+      "faculty": "Biotechnology & Life Sciences",
+      "level": "master",
+      "duration": 2,
+      "tuitionMYR": null,
+      "intake": [
+        1,
+        5,
+        9
+      ],
+      "ielts": null,
+      "curriculum": [
+        "研究方法论",
+        "开题答辩",
+        "研究论文",
+        "最终学年口试答辩",
+        "毕业论文"
+      ],
+      "curriculumTotal": 5,
+      "studyMode": "research",
+      "gpaRequirement": "A Bachelor’s Degree (Level 6, MQF) in Biotechnology or related field with a minimum CGPA of 2.75, or its equivalent, as accepted by the University Senate; OR A Bachelor’s Degree (Level 6, MQF) in Biotechnology or related field with at least CGPA of 2.50 and has not achieved CGPA 2.75, or its equivalent can be accepted subject to a rigorous internal assessment; OR A Bachelor’s Degree (Level 6, MQF) in Biotechnology or related field but has not achieved CGPA of 2.50, or its equivalent can be accepted subject to a minimum of FIVE (5) years’ working experience in the relevant field. International students are required to achieve a minimum score of 5.5 in International English Language Testing System (IELTS) or Band 4 in Malaysian University English Test (MUET) or its equivalent. Note: Candidates without a qualification in the related fields or relevant working experience must undergo appropriate prerequisite courses determined by the university and meet the minimum CGPA based on (i) to (iii). Note: International students are subject to meet entry requirements that reflect similar qualifications and experience as stated above. To find country-specific entry requirements visit our international entry requirement page",
+      "interviewRequired": null,
+      "careerProspects": "高校教师、生物技术产品专员、微生物学家、研发经理、生物技术产品分析师、工艺开发科学家",
+      "otherLanguageReqs": null,
+      "otherEntryReqs": [
+        "国际学生须满足与官方页面列出的同等学历和经验要求。",
+        "中国学生资格参照官方国际入学要求页面中的高中、职业技术学校、专科或技工学校等条目。",
+        "部分非相关背景路径可能需要相关工作经验、严格内部评估或先修课程。",
+        "研究型路径可能需要开题、研究指导或论文相关要求。",
+        "部分路径可能涉及内部评估、测试或补充课程要求。"
+      ],
+      "remarks": "官方学制文本为“3 years (PT), 2 years (FT)”，本次按全日制路径或官方区间上限规范为2年。官方费用列出国际学生近似金额：INTI International University：约马币39,600令吉。官网费用为近似金额且注明国际学生费用另受销售与服务税影响，需人工复核后才可公开。官方页面未解析到稳定雅思分数，列表级雅思保持空值。官网课程结构为英文，本次已生成中文课程数组，术语翻译需人工复核。四语公开本地化尚未完成，本条保持待复核。官方未公布可作为公开上线依据的精确国际学生总学费；官网费用为近似金额或多费用选项且不含 SST，tuitionMYR 按默认采集标准置为 null。官网仅发布近似费用（INTI International University：约 RM 39,600），并注明公布费用不含 SST，国际学生费用另加 6% SST。未发现同一专业、同一国际学生口径的精确总学费。课程和职业中文公开前仍需 Ian 终审。",
+      "officialFeeSourceUrl": "https://newinti.edu.my/programme/master-of-biotechnological-innovations-and-application-by-research/",
+      "officialSourceUrl": "https://newinti.edu.my/programme/master-of-biotechnological-innovations-and-application-by-research/",
+      "officialVerifiedAt": "2026-06-24",
+      "publicDisplayStatus": "needs-review",
+      "auditStatus": "needs-manual-review"
+    },
+    {
+      "nameEn": "Master of Business Administration (Business Analytics)",
+      "name": "工商管理硕士（商业分析）",
+      "faculty": "Business",
+      "level": "master",
+      "duration": 1,
+      "tuitionMYR": null,
+      "intake": [
+        1,
+        5,
+        9
+      ],
+      "ielts": 6.0,
+      "curriculum": [
+        "大数据应用",
+        "商业会计与金融",
+        "商业经济学",
+        "商业研究方法",
+        "数据科学分析",
+        "未来信息学",
+        "管理信息系统",
+        "市场营销管理",
+        "运营管理",
+        "组织行为",
+        "战略人力资源",
+        "战略管理",
+        "统计与决策分析",
+        "项目"
+      ],
+      "curriculumTotal": 14,
+      "studyMode": "coursework",
+      "gpaRequirement": "A Bachelor’s Degree in related fields or its equivalent, with a minimum CGPA of 2.50, as accepted by the University Senate; OR A Bachelor’s Degree in related fields or its equivalent, with a minimum CGPA of 2.00 and not meeting a CGPA of 2.50, can be accepted subject to rigorous internal assessment; OR A Bachelor’s Degree in non-related fields or its equivalent, with a minimum CGPA of 2.00 and relevant working experience, as accepted by the Senate, can be accepted subject to rigorous internal assessment; OR Other qualifications equivalent to a Bachelor’s Degree recognised by the Malaysian Government; OR ACCA Professional Level (passed 9 Papers at Fundamental Level AND passed 5 Papers at Professional Level) Note: Candidates without a qualification in the related fields or relevant working experience must undergo appropriate prerequisite courses determined by the Senate and meet the minimum CGPA based on (i) to (ii). English Language Requirements IELTS 6.0 or equivalent. Note: International students are subject to meet entry requirements that reflect similar qualifications and experience as stated above. To find country-specific entry requirements visit our international entry requirement page",
+      "interviewRequired": null,
+      "careerProspects": "商业分析师、大数据分析岗位、数据驱动业务顾问、战略与领导力相关管理岗位",
+      "otherLanguageReqs": null,
+      "otherEntryReqs": [
+        "国际学生须满足与官方页面列出的同等学历和经验要求。",
+        "中国学生资格参照官方国际入学要求页面中的高中、职业技术学校、专科或技工学校等条目。",
+        "部分非相关背景路径可能需要相关工作经验、严格内部评估或先修课程。"
+      ],
+      "remarks": "官方学制文本为“FT: 1 Year, PT: 2 Years”，本次按全日制路径或官方区间上限规范为1年。官方费用列出国际学生近似金额：INTI International University：约马币41,412令吉。官网费用为近似金额且注明国际学生费用另受销售与服务税影响，需人工复核后才可公开。官网课程结构为英文，本次已生成中文课程数组，术语翻译需人工复核。四语公开本地化尚未完成，本条保持待复核。官方未公布可作为公开上线依据的精确国际学生总学费；官网费用为近似金额或多费用选项且不含 SST，tuitionMYR 按默认采集标准置为 null。官网仅发布近似费用（INTI International University：约 RM 41,412），并注明公布费用不含 SST，国际学生费用另加 6% SST。未发现同一专业、同一国际学生口径的精确总学费。课程和职业中文公开前仍需 Ian 终审。",
+      "officialFeeSourceUrl": "https://newinti.edu.my/programme/master-of-business-administration-business-analytics/",
+      "officialSourceUrl": "https://newinti.edu.my/programme/master-of-business-administration-business-analytics/",
+      "officialVerifiedAt": "2026-06-24",
+      "publicDisplayStatus": "needs-review",
+      "auditStatus": "needs-manual-review"
+    },
+    {
+      "nameEn": "Master of Business Administration (MBA)",
+      "name": "工商管理硕士",
+      "faculty": "Business",
+      "level": "master",
+      "duration": 1,
+      "tuitionMYR": null,
+      "intake": [
+        1,
+        5,
+        9
+      ],
+      "ielts": 6.0,
+      "curriculum": [
+        "商业会计与金融",
+        "商业经济学",
+        "商业伦理与法律",
+        "商业研究方法",
+        "全球数字创业",
+        "管理信息系统",
+        "市场营销管理",
+        "运营管理",
+        "组织行为",
+        "项目",
+        "战略管理",
+        "战略人力资源管理",
+        "统计与决策分析"
+      ],
+      "curriculumTotal": 13,
+      "studyMode": "coursework",
+      "gpaRequirement": "i. A Bachelor’s Degree (Level 6, MQF) in related fields with a minimum CGPA of 2.50 as accepted by the University Senate; OR ii. A Bachelor’s Degree (Level 6, MQF) in related fields with a minimum CGPA of 2.00 and not meeting CGPA of 2.50 can be accepted, subject to a rigorous internal assessment; OR iii. A Bachelor’s Degree (Level 6, MQF) in non-related fields with a minimum CGPA of 2.00 as accepted by the Senate and with relevant working experience, subject to a rigorous internal assessment; OR iv. A Bachelor’s Degree (Level 6, MQF) in non-related fields with a minimum CGPA of 2.00 as accepted by the Senate and without relevant working experience, subject to passing prerequisite courses; OR v. Other equivalent/related qualifications to a Bachelor’s Degree (Level 6, MQF) recognised by the Malaysian Government. English Language Requirements • First Degree conducted in English (subject to the acceptance by the University); OR • IELTS 6 /MUET 4 Note: International students are subject to meet entry requirements that reflect similar qualifications and experience as stated above. To find country-specific entry requirements visit our international entry requirement page",
+      "interviewRequired": null,
+      "careerProspects": "市场经理、财务经理、首席技术官、投资银行从业者、销售经理、管理顾问",
+      "otherLanguageReqs": {
+        "muet": 4
+      },
+      "otherEntryReqs": [
+        "国际学生须满足与官方页面列出的同等学历和经验要求。",
+        "中国学生资格参照官方国际入学要求页面中的高中、职业技术学校、专科或技工学校等条目。",
+        "部分非相关背景路径可能需要相关工作经验、严格内部评估或先修课程。"
+      ],
+      "remarks": "官方学制文本为“Full time: 1 year | Part time: 2 years”，本次按全日制路径或官方区间上限规范为1年。官方费用列出国际学生近似金额：INTI International University - Dual Award：约马币47,112令吉；INTI International University - Single Award：约马币41,405令吉。官网费用为近似金额且注明国际学生费用另受销售与服务税影响，需人工复核后才可公开。官网存在多个国际学生费用选项，本次按可解析最高金额写入。官网课程结构为英文，本次已生成中文课程数组，术语翻译需人工复核。四语公开本地化尚未完成，本条保持待复核。官方未公布可作为公开上线依据的精确国际学生总学费；官网费用为近似金额或多费用选项且不含 SST，tuitionMYR 按默认采集标准置为 null。官网仅发布近似费用（INTI International University - Dual Award：约 RM 47,112；INTI International University - Single Award：约 RM 41,405），并注明公布费用不含 SST，国际学生费用另加 6% SST。该专业还有多个校区、授予路径或学习模式费用选项，未能证明唯一精确国际学生总学费。课程和职业中文公开前仍需 Ian 终审。",
+      "officialFeeSourceUrl": "https://newinti.edu.my/programme/master-of-business-administration-mba-by-inti-international-university_1/",
+      "officialSourceUrl": "https://newinti.edu.my/programme/master-of-business-administration-mba-by-inti-international-university_1/",
+      "officialVerifiedAt": "2026-06-24",
+      "publicDisplayStatus": "needs-review",
+      "auditStatus": "needs-manual-review"
+    },
+    {
+      "nameEn": "Master of Business Administration (MBA) in collaboration with INTI International University",
+      "name": "工商管理硕士（与英迪国际大学合作）",
+      "faculty": "Business",
+      "level": "master",
+      "duration": 1,
+      "tuitionMYR": null,
+      "intake": [
+        1,
+        5,
+        9
+      ],
+      "ielts": 6.0,
+      "curriculum": [
+        "商业会计与金融",
+        "商业经济学",
+        "商业伦理与法律",
+        "商业研究方法",
+        "全球数字创业",
+        "管理信息系统",
+        "市场营销管理",
+        "运营管理",
+        "组织行为",
+        "项目",
+        "战略管理",
+        "战略人力资源管理",
+        "统计与决策分析"
+      ],
+      "curriculumTotal": 13,
+      "studyMode": "coursework",
+      "gpaRequirement": "i. A Bachelor’s Degree (Level 6, MQF) in related fields with a minimum CGPA of 2.50 as accepted by the University Senate; OR ii. A Bachelor’s Degree (Level 6, MQF) in related fields with a minimum CGPA of 2.00 and not meeting CGPA of 2.50 can be accepted, subject to a rigorous internal assessment; OR iii. A Bachelor’s Degree (Level 6, MQF) in non-related fields with a minimum CGPA of 2.00 as accepted by the Senate and with relevant working experience, subject to a rigorous internal assessment; OR iv. A Bachelor’s Degree (Level 6, MQF) in non-related fields with a minimum CGPA of 2.00 as accepted by the Senate and without relevant working experience, subject to passing prerequisite courses; OR v. Other equivalent/related qualifications to a Bachelor’s Degree (Level 6, MQF) recognised by the Malaysian Government. English Language Requirements • First Degree conducted in English (subject to acceptance by the University); OR • IELTS 6 / MUET 4 Note: International students are subject to meet entry requirements that reflect similar qualifications and experience as stated above. To find country-specific entry requirements visit our international entry requirement page",
+      "interviewRequired": null,
+      "careerProspects": "市场经理、财务经理、首席技术官、投资银行从业者、销售经理、管理顾问",
+      "otherLanguageReqs": {
+        "muet": 4
+      },
+      "otherEntryReqs": [
+        "国际学生须满足与官方页面列出的同等学历和经验要求。",
+        "中国学生资格参照官方国际入学要求页面中的高中、职业技术学校、专科或技工学校等条目。",
+        "部分非相关背景路径可能需要相关工作经验、严格内部评估或先修课程。"
+      ],
+      "remarks": "官方学制文本为“Full time: 1 year | Part time: 2 years”，本次按全日制路径或官方区间上限规范为1年。官方费用列出国际学生近似金额：INTI International College Subang：约马币41,405令吉；INTI International College Penang：约马币35,009令吉。官网费用为近似金额且注明国际学生费用另受销售与服务税影响，需人工复核后才可公开。官网存在多个国际学生费用选项，本次按可解析最高金额写入。官网课程结构为英文，本次已生成中文课程数组，术语翻译需人工复核。四语公开本地化尚未完成，本条保持待复核。官方未公布可作为公开上线依据的精确国际学生总学费；官网费用为近似金额或多费用选项且不含 SST，tuitionMYR 按默认采集标准置为 null。官网仅发布近似费用（INTI International College Subang：约 RM 41,405；INTI International College Penang：约 RM 35,009），并注明公布费用不含 SST，国际学生费用另加 6% SST。该专业还有多个校区、授予路径或学习模式费用选项，未能证明唯一精确国际学生总学费。课程和职业中文公开前仍需 Ian 终审。",
+      "officialFeeSourceUrl": "https://newinti.edu.my/programme/master-of-business-administration-mba-in-collaboration-with-inti-international-university/",
+      "officialSourceUrl": "https://newinti.edu.my/programme/master-of-business-administration-mba-in-collaboration-with-inti-international-university/",
+      "officialVerifiedAt": "2026-06-24",
+      "publicDisplayStatus": "needs-review",
+      "auditStatus": "needs-manual-review"
+    },
+    {
+      "nameEn": "Master of Business Administration (Online Learning)",
+      "name": "工商管理硕士（在线学习）",
+      "faculty": "Business",
+      "level": "master",
+      "duration": 1,
+      "tuitionMYR": null,
+      "intake": [
+        1,
+        3,
+        5,
+        8,
+        10
+      ],
+      "ielts": 6.0,
+      "curriculum": [
+        "商业会计与金融",
+        "商业经济学",
+        "商业伦理与法律",
+        "商业研究方法",
+        "全球数字创业",
+        "管理信息系统",
+        "组织行为",
+        "市场营销管理",
+        "运营管理",
+        "统计与决策分析",
+        "战略人力资源管理",
+        "战略管理",
+        "项目或论文"
+      ],
+      "curriculumTotal": 13,
+      "studyMode": "coursework",
+      "gpaRequirement": "i. A Bachelor’s Degree (Level 6, MQF) in related fields with a minimum CGPA of 2.50 as accepted by the University Senate; OR ii. A Bachelor’s Degree (Level 6, MQF) in related fields with a minimum CGPA of 2.00 and not meeting CGPA of 2.50 can be accepted, subject to a rigorous internal assessment; OR iii. A Bachelor’s Degree (Level 6, MQF) in non-related fields with a minimum CGPA of 2.00 as accepted by the Senate and with relevant working experience, subject to a rigorous internal assessment; OR iv. A Bachelor’s Degree (Level 6, MQF) in non-related fields with a minimum CGPA of 2.00 as accepted by the Senate and without relevant working experience, subject to passing prerequisite courses; OR v. Other equivalent/related qualifications to a Bachelor’s Degree (Level 6, MQF) recognised by the Malaysian Government English Language Requirements First Degree conducted in English (subject to the acceptance by the University) or IELTS 6 or Band 4 in Malaysian University English Test (MUET) or its equivalent Note: International students are subject to meet entry requirements that reflect similar qualifications and experience as stated above. To find country-specific entry requirements visit our international entry requirement page",
+      "interviewRequired": null,
+      "careerProspects": "在职专业人士的工商管理、运营管理、战略管理与组织管理相关岗位",
+      "otherLanguageReqs": null,
+      "otherEntryReqs": [
+        "国际学生须满足与官方页面列出的同等学历和经验要求。",
+        "中国学生资格参照官方国际入学要求页面中的高中、职业技术学校、专科或技工学校等条目。",
+        "部分非相关背景路径可能需要相关工作经验、严格内部评估或先修课程。",
+        "部分路径可能涉及内部评估、测试或补充课程要求。"
+      ],
+      "remarks": "官方学制文本为“FT: 1 Year, PT: 2 Years”，本次按全日制路径或官方区间上限规范为1年。官方费用列出国际学生近似金额：INTI International University：约马币33,228令吉。官网费用为近似金额且注明国际学生费用另受销售与服务税影响，需人工复核后才可公开。官网课程结构为英文，本次已生成中文课程数组，术语翻译需人工复核。四语公开本地化尚未完成，本条保持待复核。官方未公布可作为公开上线依据的精确国际学生总学费；官网费用为近似金额或多费用选项且不含 SST，tuitionMYR 按默认采集标准置为 null。官网仅发布近似费用（INTI International University：约 RM 33,228），并注明公布费用不含 SST，国际学生费用另加 6% SST。未发现同一专业、同一国际学生口径的精确总学费。课程和职业中文公开前仍需 Ian 终审。",
+      "officialFeeSourceUrl": "https://newinti.edu.my/programme/master-of-business-administration-mba-learning-simplified/",
+      "officialSourceUrl": "https://newinti.edu.my/programme/master-of-business-administration-mba-learning-simplified/",
+      "officialVerifiedAt": "2026-06-24",
+      "publicDisplayStatus": "needs-review",
+      "auditStatus": "needs-manual-review"
+    },
+    {
+      "nameEn": "Master of Education in Learning, Design and Technology (by Research)",
+      "name": "教育硕士（学习、设计与技术）（研究型）",
+      "faculty": "Education",
+      "level": "master",
+      "duration": 4,
+      "tuitionMYR": null,
+      "intake": [
+        1,
+        5,
+        9
+      ],
+      "ielts": 4.0,
+      "curriculum": [
+        "第一年研究方法与论文",
+        "第二年论文"
+      ],
+      "curriculumTotal": 2,
+      "studyMode": "research",
+      "gpaRequirement": "Entry Requirements A Bachelor’s Degree (Level 6, MQF) in education fields with a minimum CGPA of 2.75 or its equivalent, as accepted by the University Senate; OR A Bachelor’s Degree in education fields with a minimum CGPA of 2.50 can be accepted subject to rigorous internal assessment; OR A Bachelor’s Degree in education fields with a minimum CGPA of 2.00 can be accepted subject to a minimum THREE years of working experience in the education fields and rigorous internal assessment; OR A Bachelor’s Degree with a minimum CGPA of 2.75, subject to passing prerequisite courses; OR A Bachelor’s Degree with a minimum CGPA of 2.50 can be accepted subject to rigorous internal assessment AND passing prerequisite courses; OR A Bachelor’s Degree with a minimum CGPA of 2.00 can be accepted, subject to a minimum THREE years of working experience in the education fields, rigorous internal assessment, and passing prerequisite courses; OR Other qualifications equivalent to the above requirements and recognised by the Malaysian Government. English Language Requirements MUET Band 3 / IELTS 4.0 or its equivalent. Note: International students are subject to meet entry requirements that reflect similar qualifications and experience as stated above. To find country-specific entry requirements visit our international entry requirement page",
+      "interviewRequired": null,
+      "careerProspects": "教育项目设计师、学习策略师、教学设计与评估专员、绩效评估经理、培训总监、远程学习总监、教育总监",
+      "otherLanguageReqs": {
+        "muet": 3
+      },
+      "otherEntryReqs": [
+        "国际学生须满足与官方页面列出的同等学历和经验要求。",
+        "中国学生资格参照官方国际入学要求页面中的高中、职业技术学校、专科或技工学校等条目。",
+        "部分非相关背景路径可能需要相关工作经验、严格内部评估或先修课程。"
+      ],
+      "remarks": "官方学制文本为“Full Time: 2 - 4 years | Part Time: 3 - 6 years”，本次按全日制路径或官方区间上限规范为4年。官方费用列出国际学生近似金额：INTI International University：约马币38,178令吉。官网费用为近似金额且注明国际学生费用另受销售与服务税影响，需人工复核后才可公开。官网课程结构为英文，本次已生成中文课程数组，术语翻译需人工复核。四语公开本地化尚未完成，本条保持待复核。官方未公布可作为公开上线依据的精确国际学生总学费；官网费用为近似金额或多费用选项且不含 SST，tuitionMYR 按默认采集标准置为 null。官网仅发布近似费用（INTI International University：约 RM 38,178），并注明公布费用不含 SST，国际学生费用另加 6% SST。未发现同一专业、同一国际学生口径的精确总学费。课程和职业中文公开前仍需 Ian 终审。",
+      "officialFeeSourceUrl": "https://newinti.edu.my/programme/master-of-education-in-learning-design-and-technology/",
+      "officialSourceUrl": "https://newinti.edu.my/programme/master-of-education-in-learning-design-and-technology/",
+      "officialVerifiedAt": "2026-06-24",
+      "publicDisplayStatus": "needs-review",
+      "auditStatus": "needs-manual-review"
+    },
+    {
+      "nameEn": "Master of Science in Construction Management (Building Information Modelling)",
+      "name": "建筑管理理学硕士（建筑信息模型）",
+      "faculty": "Engineering",
+      "level": "master",
+      "duration": 1,
+      "tuitionMYR": null,
+      "intake": [
+        1,
+        5,
+        9
+      ],
+      "ielts": 5.0,
+      "curriculum": [
+        "建筑信息模型理论与实践",
+        "职业安全与健康",
+        "高级建设项目管理",
+        "研究方法",
+        "建设管理战略管理",
+        "建设管理组织管理",
+        "综合模拟项目",
+        "建筑信息模型应用",
+        "基于建筑信息模型的电子采购",
+        "建筑信息模型管理"
+      ],
+      "curriculumTotal": 10,
+      "studyMode": "coursework",
+      "gpaRequirement": "Bachelor’s Degree (Level 6 Malaysian Qualification Framework, MQF) in Engineering / Engineering Technology / Construction Management / Architecture / Architectural Technology or its equivalent with a minimum CGPA of 2.5; OR Bachelor’s Degree (Level 6 MQF) in Engineering / Engineering Technology / Construction Management / Architecture / Architectural Technology or its equivalent with CGPA above 2.0 but less than 2.5 may be admitted subject to a minimum of 5 years working experience in relevant field. Candidates are required to achieve a minimum score of 5.0 in IELTS, 500 in TOEFL, Band 3.5 in MUET or its equivalent. Note: Candidates with Bachelor’s Degree of Science or Technology degrees or their equivalents (non-Engineering / Engineering Technology / Construction Management / Architecture / Architectural Technology) are required to take 2 bridging courses before commencing the programme. Note: International students are subject to meet entry requirements that reflect similar qualifications and experience as stated above. To find country-specific entry requirements visit our international entry requirement page",
+      "interviewRequired": null,
+      "careerProspects": "建设行业数字化管理、建筑信息模型管理、建设项目管理与施工业务领导岗位",
+      "otherLanguageReqs": null,
+      "otherEntryReqs": [
+        "国际学生须满足与官方页面列出的同等学历和经验要求。",
+        "中国学生资格参照官方国际入学要求页面中的高中、职业技术学校、专科或技工学校等条目。",
+        "部分非相关背景路径可能需要相关工作经验、严格内部评估或先修课程。",
+        "健康、医疗或设施相关路径可能涉及官方页面列出的专业或实践要求。"
+      ],
+      "remarks": "官方学制文本为“Full time: 1 year | Part time: 2 years”，本次按全日制路径或官方区间上限规范为1年。官方费用列出国际学生近似金额：INTI International University：约马币41,415令吉。官网费用为近似金额且注明国际学生费用另受销售与服务税影响，需人工复核后才可公开。官网课程结构为英文，本次已生成中文课程数组，术语翻译需人工复核。四语公开本地化尚未完成，本条保持待复核。官方未公布可作为公开上线依据的精确国际学生总学费；官网费用为近似金额或多费用选项且不含 SST，tuitionMYR 按默认采集标准置为 null。官网仅发布近似费用（INTI International University：约 RM 41,415），并注明公布费用不含 SST，国际学生费用另加 6% SST。未发现同一专业、同一国际学生口径的精确总学费。课程和职业中文公开前仍需 Ian 终审。",
+      "officialFeeSourceUrl": "https://newinti.edu.my/programme/master-of-science-in-construction-management-building-information-modelling/",
+      "officialSourceUrl": "https://newinti.edu.my/programme/master-of-science-in-construction-management-building-information-modelling/",
+      "officialVerifiedAt": "2026-06-24",
+      "publicDisplayStatus": "needs-review",
+      "auditStatus": "needs-manual-review"
+    },
+    {
+      "nameEn": "Master of Science in Construction Management (Building Information Modelling) – (Online Learning)",
+      "name": "建筑管理理学硕士（建筑信息模型）（在线学习）",
+      "faculty": "Engineering",
+      "level": "master",
+      "duration": 1,
+      "tuitionMYR": null,
+      "intake": [
+        1,
+        3,
+        5,
+        8,
+        10
+      ],
+      "ielts": 5.0,
+      "curriculum": [
+        "高级建设项目管理",
+        "建筑信息模型应用",
+        "基于建筑信息模型的电子采购",
+        "建筑信息模型管理",
+        "建筑信息模型理论与实践",
+        "综合模拟项目",
+        "建设管理组织管理",
+        "职业安全与健康",
+        "研究方法",
+        "建设管理战略管理",
+        "项目第一部分",
+        "项目第二部分"
+      ],
+      "curriculumTotal": 12,
+      "studyMode": "coursework",
+      "gpaRequirement": "Bachelor’s Degree (Level 6 Malaysian Qualification Framework, MQF) in Engineering / Engineering Technology / Construction Management / Architecture / Architectural Technology or its equivalent with a minimum CGPA of 2.5 OR Bachelor’s Degree (Level 6 MQF) in Engineering / Engineering Technology / Construction Management / Architecture / Architectural Technology or its equivalent with CGPA above 2.0 but less than 2.5 may be admitted subject to a minimum of 5 years working experience in relevant field. Candidates are required to achieve a minimum score of 5.0 in IELTS, 500 in TOEFL, Band 3.5 in MUET or its equivalent. NOTE: Candidates with Bachelor’s Degree of Science or Technology or their equivalents (non-Engineering / Engineering Technology / Construction Management / Architecture / Architectural Technology) are required to take prerequisite modules in Engineering and Engineering Technology before commencing the programme. Note: International students are subject to meet entry requirements that reflect similar qualifications and experience as stated above. To find country-specific entry requirements visit our international entry requirement page",
+      "interviewRequired": null,
+      "careerProspects": "建筑信息模型经理、模型师、顾问、设计师、设计工程师、项目经理、建设管理主管",
+      "otherLanguageReqs": null,
+      "otherEntryReqs": [
+        "国际学生须满足与官方页面列出的同等学历和经验要求。",
+        "中国学生资格参照官方国际入学要求页面中的高中、职业技术学校、专科或技工学校等条目。",
+        "部分非相关背景路径可能需要相关工作经验、严格内部评估或先修课程。",
+        "健康、医疗或设施相关路径可能涉及官方页面列出的专业或实践要求。"
+      ],
+      "remarks": "官方学制文本为“Full time: 1 year | Part time: 2 years”，本次按全日制路径或官方区间上限规范为1年。官方费用列出国际学生近似金额：INTI International University：约马币33,228令吉。官网费用为近似金额且注明国际学生费用另受销售与服务税影响，需人工复核后才可公开。官网课程结构为英文，本次已生成中文课程数组，术语翻译需人工复核。四语公开本地化尚未完成，本条保持待复核。官方未公布可作为公开上线依据的精确国际学生总学费；官网费用为近似金额或多费用选项且不含 SST，tuitionMYR 按默认采集标准置为 null。官网仅发布近似费用（INTI International University：约 RM 33,228），并注明公布费用不含 SST，国际学生费用另加 6% SST。未发现同一专业、同一国际学生口径的精确总学费。课程和职业中文公开前仍需 Ian 终审。",
+      "officialFeeSourceUrl": "https://newinti.edu.my/programme/master-of-science-in-construction-management-building-information-modelling-fully-online/",
+      "officialSourceUrl": "https://newinti.edu.my/programme/master-of-science-in-construction-management-building-information-modelling-fully-online/",
+      "officialVerifiedAt": "2026-06-24",
+      "publicDisplayStatus": "needs-review",
+      "auditStatus": "needs-manual-review"
+    },
+    {
+      "nameEn": "Master of Science in Construction Management (Facility Management)",
+      "name": "建筑管理理学硕士（设施管理）",
+      "faculty": "Engineering",
+      "level": "master",
+      "duration": 1,
+      "tuitionMYR": null,
+      "intake": [
+        1,
+        5,
+        9
+      ],
+      "ielts": 5.0,
+      "curriculum": [
+        "建筑信息模型理论与实践",
+        "职业安全与健康",
+        "研究方法",
+        "建设管理战略管理",
+        "建设管理组织管理",
+        "综合模拟项目",
+        "设施规划与应急准备计划",
+        "建筑病理与改造",
+        "设施管理专业实践",
+        "建筑规范与法规"
+      ],
+      "curriculumTotal": 10,
+      "studyMode": "coursework",
+      "gpaRequirement": "Bachelor’s Degree (Level 6 Malaysian Qualification Framework, MQF) in Engineering / Engineering Technology / Construction Management / Architecture / Architectural Technology or its equivalent with a minimum CGPA of 2.5; OR Bachelor’s Degree (Level 6 MQF) in Engineering / Engineering Technology / Construction Management / Architecture / Architectural Technology or its equivalent with CGPA above 2.0 but less than 2.5 may be admitted subject to a minimum of 5 years working experience in relevant field. Candidates are required to achieve a minimum score of 5.0 in IELTS, 500 in TOEFL, Band 3.5 in MUET or its equivalent. Note: Candidates with Bachelor’s Degree of Science or Technology degrees or their equivalents (non-Engineering / Engineering Technology / Construction Management / Architecture / Architectural Technology) are required to take 2 bridging courses before commencing the programme. Note: International students are subject to meet entry requirements that reflect similar qualifications and experience as stated above. To find country-specific entry requirements visit our international entry requirement page",
+      "interviewRequired": null,
+      "careerProspects": "房地产开发、住房、咨询、金融、项目管理、设施管理与建筑维护相关岗位",
+      "otherLanguageReqs": null,
+      "otherEntryReqs": [
+        "国际学生须满足与官方页面列出的同等学历和经验要求。",
+        "中国学生资格参照官方国际入学要求页面中的高中、职业技术学校、专科或技工学校等条目。",
+        "部分非相关背景路径可能需要相关工作经验、严格内部评估或先修课程。",
+        "健康、医疗或设施相关路径可能涉及官方页面列出的专业或实践要求。"
+      ],
+      "remarks": "官方学制文本为“Full time: 1 year | Part time: 2 years”，本次按全日制路径或官方区间上限规范为1年。官方费用列出国际学生近似金额：INTI International University：约马币41,415令吉。官网费用为近似金额且注明国际学生费用另受销售与服务税影响，需人工复核后才可公开。官网课程结构为英文，本次已生成中文课程数组，术语翻译需人工复核。四语公开本地化尚未完成，本条保持待复核。官方未公布可作为公开上线依据的精确国际学生总学费；官网费用为近似金额或多费用选项且不含 SST，tuitionMYR 按默认采集标准置为 null。官网仅发布近似费用（INTI International University：约 RM 41,415），并注明公布费用不含 SST，国际学生费用另加 6% SST。未发现同一专业、同一国际学生口径的精确总学费。课程和职业中文公开前仍需 Ian 终审。",
+      "officialFeeSourceUrl": "https://newinti.edu.my/programme/master-of-science-in-construction-management-with-facility-management/",
+      "officialSourceUrl": "https://newinti.edu.my/programme/master-of-science-in-construction-management-with-facility-management/",
+      "officialVerifiedAt": "2026-06-24",
+      "publicDisplayStatus": "needs-review",
+      "auditStatus": "needs-manual-review"
+    },
+    {
+      "nameEn": "Master of Science in Data Science (by Research)",
+      "name": "数据科学理学硕士（研究型）",
+      "faculty": "Computing & IT",
+      "level": "master",
+      "duration": 2,
+      "tuitionMYR": null,
+      "intake": [
+        1,
+        5,
+        9
+      ],
+      "ielts": 6.0,
+      "curriculum": [
+        "研究方法论",
+        "开题答辩",
+        "研究论文",
+        "研究指导",
+        "最终学年口试答辩",
+        "毕业论文"
+      ],
+      "curriculumTotal": 6,
+      "studyMode": "research",
+      "gpaRequirement": "A Bachelor’s Degree in Computing or in the area of science and technology or related to computing, with a minimum CGPA of 3.00; OR A Bachelor’s Degree in Computing or in the area of science and technology or related to computing, with CGPA below 3.00 but above 2.50, can be accepted subject to rigorous internal assessment process; OR A Bachelor’s Degree in Computing or in the area of science and technology or related to computing, with CGPA less than 2.50, with a minimum of 5 years working experience in a relevant field may be accepted English Language Requirements Candidates are required to achieve a minimum score of 6.0 in IELTS, Band 4 in MUET or its equivalent. Note: Candidates without a qualification in the related fields or relevant working experience must undergo appropriate prerequisite courses determined by the university and meet the minimum CGPA based on (i) to (iii). Note: International students are subject to meet entry requirements that reflect similar qualifications and experience as stated above. To find country-specific entry requirements visit our international entry requirement page",
+      "interviewRequired": null,
+      "careerProspects": "数据分析师、商业分析师、项目经理、系统工程师、企业经理、数据科学家、机器学习工程师、应用架构师、企业架构师、数据架构师、基础设施架构师、数据工程师、合规专员、商业研究顾问",
+      "otherLanguageReqs": null,
+      "otherEntryReqs": [
+        "国际学生须满足与官方页面列出的同等学历和经验要求。",
+        "中国学生资格参照官方国际入学要求页面中的高中、职业技术学校、专科或技工学校等条目。",
+        "部分非相关背景路径可能需要相关工作经验、严格内部评估或先修课程。",
+        "研究型路径可能需要开题、研究指导或论文相关要求。"
+      ],
+      "remarks": "官方学制文本为“Full time: 2 years | Part time: 3 years”，本次按全日制路径或官方区间上限规范为2年。官方费用列出国际学生近似金额：INTI International University：约马币32,310令吉。官网费用为近似金额且注明国际学生费用另受销售与服务税影响，需人工复核后才可公开。官网课程结构为英文，本次已生成中文课程数组，术语翻译需人工复核。四语公开本地化尚未完成，本条保持待复核。官方未公布可作为公开上线依据的精确国际学生总学费；官网费用为近似金额或多费用选项且不含 SST，tuitionMYR 按默认采集标准置为 null。官网仅发布近似费用（INTI International University：约 RM 32,310），并注明公布费用不含 SST，国际学生费用另加 6% SST。未发现同一专业、同一国际学生口径的精确总学费。课程和职业中文公开前仍需 Ian 终审。",
+      "officialFeeSourceUrl": "https://newinti.edu.my/programme/master-of-science-in-data-science/",
+      "officialSourceUrl": "https://newinti.edu.my/programme/master-of-science-in-data-science/",
+      "officialVerifiedAt": "2026-06-24",
+      "publicDisplayStatus": "needs-review",
+      "auditStatus": "needs-manual-review"
+    },
+    {
+      "nameEn": "Master of Science in Engineering and Eco-Innovation (by Research)",
+      "name": "工程与生态创新理学硕士（研究型）",
+      "faculty": "Engineering",
+      "level": "master",
+      "duration": 2,
+      "tuitionMYR": null,
+      "intake": [
+        1,
+        5,
+        9
+      ],
+      "ielts": null,
+      "curriculum": [
+        "第一年研究方法论",
+        "第一年研究论文",
+        "第二年研究论文"
+      ],
+      "curriculumTotal": 3,
+      "studyMode": "research",
+      "gpaRequirement": "i. A Bachelor’s Degree in the field or related fields with a minimum CGPA of 2.75 or equivalent, as accepted by the University Senate; OR ii. A Bachelor’s Degree in the field or related fields or equivalent with a minimum CGPA of 2.50 and not meeting CGPA of 2.75, can be accepted subject to rigorous internal assessment; OR iii. A Bachelor’s Degree in the field or related fields or equivalent with minimum CGPA of 2.00 and not meeting CGPA of 2.50, can be accepted subject to a minimum of 5 years working experience in the relevant field and rigorous internal assessment. iv. Candidates without a qualification in the related fields or relevant working experience must undergo appropriate prerequisite courses determined by the university and meet the minimum CGPA based on (i) to (iii). Note: International students are subject to meet entry requirements that reflect similar qualifications and experience as stated above. To find country-specific entry requirements visit our international entry requirement page",
+      "interviewRequired": null,
+      "careerProspects": "生态创新工程师、环境或绿色技术工程师、环境政策顾问或分析师、产品生命周期分析师、可持续产品研发工程师、可持续发展工程师",
+      "otherLanguageReqs": null,
+      "otherEntryReqs": [
+        "国际学生须满足与官方页面列出的同等学历和经验要求。",
+        "中国学生资格参照官方国际入学要求页面中的高中、职业技术学校、专科或技工学校等条目。",
+        "部分非相关背景路径可能需要相关工作经验、严格内部评估或先修课程。"
+      ],
+      "remarks": "官方学制文本为“Full time: 2 years | Part time: 3 years”，本次按全日制路径或官方区间上限规范为2年。官方费用列出国际学生近似金额：INTI International University：约马币38,178令吉。官网费用为近似金额且注明国际学生费用另受销售与服务税影响，需人工复核后才可公开。官方页面未解析到稳定雅思分数，列表级雅思保持空值。官网课程结构为英文，本次已生成中文课程数组，术语翻译需人工复核。四语公开本地化尚未完成，本条保持待复核。官方未公布可作为公开上线依据的精确国际学生总学费；官网费用为近似金额或多费用选项且不含 SST，tuitionMYR 按默认采集标准置为 null。官网仅发布近似费用（INTI International University：约 RM 38,178），并注明公布费用不含 SST，国际学生费用另加 6% SST。未发现同一专业、同一国际学生口径的精确总学费。课程和职业中文公开前仍需 Ian 终审。",
+      "officialFeeSourceUrl": "https://newinti.edu.my/programme/master-of-science-in-engineering-and-eco-innovation-by-research/",
+      "officialSourceUrl": "https://newinti.edu.my/programme/master-of-science-in-engineering-and-eco-innovation-by-research/",
+      "officialVerifiedAt": "2026-06-24",
+      "publicDisplayStatus": "needs-review",
+      "auditStatus": "needs-manual-review"
+    },
+    {
+      "nameEn": "Master of Science in Facilities Management (Online Learning)",
+      "name": "设施管理理学硕士（在线学习）",
+      "faculty": "Engineering",
+      "level": "master",
+      "duration": 1,
+      "tuitionMYR": null,
+      "intake": [
+        1,
+        3,
+        5,
+        8,
+        10
+      ],
+      "ielts": null,
+      "curriculum": [
+        "建筑规范与法规",
+        "建筑病理与改造",
+        "设施规划与应急准备计划",
+        "财务管理",
+        "组织管理",
+        "职业安全与健康",
+        "设施管理专业实践",
+        "研究方法",
+        "战略管理",
+        "综合模拟项目",
+        "项目一",
+        "项目二"
+      ],
+      "curriculumTotal": 12,
+      "studyMode": "coursework",
+      "gpaRequirement": "i. Bachelor’s Degree (Level 6 Malaysian Qualification Framework, MQF) in relevant fields with a minimum CGPA of 2.5; OR ii. Bachelor’s Degree (Level 6 MQF) with CGPA above 2.0 but less than 2.5 may be admitted subject to having working experience in relevant fields. Note: International students are subject to meet entry requirements that reflect similar qualifications and experience as stated above. To find country-specific entry requirements visit our international entry requirement page",
+      "interviewRequired": null,
+      "careerProspects": "建筑性能分析师、施工经理、设施经理、维护经理、项目经理、可持续发展顾问",
+      "otherLanguageReqs": null,
+      "otherEntryReqs": [
+        "国际学生须满足与官方页面列出的同等学历和经验要求。",
+        "中国学生资格参照官方国际入学要求页面中的高中、职业技术学校、专科或技工学校等条目。",
+        "部分非相关背景路径可能需要相关工作经验、严格内部评估或先修课程。",
+        "健康、医疗或设施相关路径可能涉及官方页面列出的专业或实践要求。"
+      ],
+      "remarks": "官方学制文本为“Full time: 1 year | Part time: 2 years”，本次按全日制路径或官方区间上限规范为1年。官方费用列出国际学生近似金额：INTI International University：约马币33,220令吉。官网费用为近似金额且注明国际学生费用另受销售与服务税影响，需人工复核后才可公开。官方页面未解析到稳定雅思分数，列表级雅思保持空值。官网课程结构为英文，本次已生成中文课程数组，术语翻译需人工复核。四语公开本地化尚未完成，本条保持待复核。官方未公布可作为公开上线依据的精确国际学生总学费；官网费用为近似金额或多费用选项且不含 SST，tuitionMYR 按默认采集标准置为 null。官网仅发布近似费用（INTI International University：约 RM 33,220），并注明公布费用不含 SST，国际学生费用另加 6% SST。未发现同一专业、同一国际学生口径的精确总学费。课程和职业中文公开前仍需 Ian 终审。",
+      "officialFeeSourceUrl": "https://newinti.edu.my/programme/master-of-science-in-facilities-management-online-learning/",
+      "officialSourceUrl": "https://newinti.edu.my/programme/master-of-science-in-facilities-management-online-learning/",
+      "officialVerifiedAt": "2026-06-24",
+      "publicDisplayStatus": "needs-review",
+      "auditStatus": "needs-manual-review"
+    },
+    {
+      "nameEn": "Master of Science in Information Systems (by Research)",
+      "name": "信息系统理学硕士（研究型）",
+      "faculty": "Computing & IT",
+      "level": "master",
+      "duration": 2,
+      "tuitionMYR": null,
+      "intake": [
+        1,
+        5,
+        9
+      ],
+      "ielts": 5.5,
+      "curriculum": [
+        "第一年研究方法论",
+        "第一年论文",
+        "第二年论文"
+      ],
+      "curriculumTotal": 3,
+      "studyMode": "research",
+      "gpaRequirement": "i. A Bachelor’s Degree (Level 6, MQF) in Computing or related fields with a minimum CGPA of 3.00, as accepted by the University Senate; OR ii. A Bachelor’s Degree (Level 6, MQF) in Computing or related fields with a minimum CGPA of 2.00 and not meeting a CGPA of 3.00 can be accepted, subject to a thorough rigorous assessment; OR iii. A Bachelor’s Degree (Level 6, MQF) in non-Computing field with a minimum CGPA of 2.50 can be accepted, subject to a thorough rigorous assessment as determined by the university to identify the appropriate prerequisite courses equivalent to their working experience in the Computing or related fields; OR iv. A Bachelor’s Degree (Level 6, MQF) in non-Computing field with a minimum CGPA of 2.50 can be accepted, subject to appropriate rerequisite courses; OR v. Other qualifications equivalent to a Bachelor’s Degree (Level 6, MQF) in Computing or related fields recognised by the Government of Malaysia must fulfil the requirement on item (i) or (ii). vi. Candidates are required to achieve a minimum score of 5.5 in IELTS, IBT 46 in TOEFL or its equivalent. Note: International students are subject to meet entry requirements that reflect similar qualifications and experience as stated above. To find country-specific entry requirements visit our international entry requirement page",
+      "interviewRequired": null,
+      "careerProspects": "软件工程师、数据工程师、嵌入式系统工程师、系统分析师、信息技术顾问、数字创新经理、数据治理专员、人工智能产品经理",
+      "otherLanguageReqs": null,
+      "otherEntryReqs": [
+        "国际学生须满足与官方页面列出的同等学历和经验要求。",
+        "中国学生资格参照官方国际入学要求页面中的高中、职业技术学校、专科或技工学校等条目。",
+        "部分非相关背景路径可能需要相关工作经验、严格内部评估或先修课程。"
+      ],
+      "remarks": "官方学制文本为“Full Time: 2 years | Part Time: 3 years”，本次按全日制路径或官方区间上限规范为2年。官方费用列出国际学生近似金额：INTI International University：约马币38,178令吉。官网费用为近似金额且注明国际学生费用另受销售与服务税影响，需人工复核后才可公开。官网课程结构为英文，本次已生成中文课程数组，术语翻译需人工复核。四语公开本地化尚未完成，本条保持待复核。官方未公布可作为公开上线依据的精确国际学生总学费；官网费用为近似金额或多费用选项且不含 SST，tuitionMYR 按默认采集标准置为 null。官网仅发布近似费用（INTI International University：约 RM 38,178），并注明公布费用不含 SST，国际学生费用另加 6% SST。未发现同一专业、同一国际学生口径的精确总学费。课程和职业中文公开前仍需 Ian 终审。",
+      "officialFeeSourceUrl": "https://newinti.edu.my/programme/master-of-science-in-information-systems-by-research/",
+      "officialSourceUrl": "https://newinti.edu.my/programme/master-of-science-in-information-systems-by-research/",
+      "officialVerifiedAt": "2026-06-24",
+      "publicDisplayStatus": "needs-review",
+      "auditStatus": "needs-manual-review"
+    },
+    {
+      "nameEn": "Master of Science in Innovation and Technology (by Research)",
+      "name": "创新与技术理学硕士（研究型）",
+      "faculty": "Engineering",
+      "level": "master",
+      "duration": 4,
+      "tuitionMYR": null,
+      "intake": [
+        1,
+        5,
+        9
+      ],
+      "ielts": 5.0,
+      "curriculum": [
+        "第一年研究方法与论文",
+        "第二年论文"
+      ],
+      "curriculumTotal": 2,
+      "studyMode": "research",
+      "gpaRequirement": "A Bachelor’s Degree in the field or related fields with a minimum CGPA of 2.75 or equivalent, as accepted by the University Senate; or A Bachelor’s Degree in the field or related fields or equivalent with a minimum CGPA of 2.50 and not meeting CGPA of 2.75, can be accepted subject to rigorous internal assessment; or A Bachelor’s Degree in the field or related fields or equivalent with minimum CGPA of 2.00 and not meeting CGPA of 2.50, can be accepted subject to a minimum of 5 years working experience in the relevant field and rigorous internal assessment. Note: Candidates without a qualification in the related fields or relevant working experience must undergo appropriate prerequisite courses determined by the university and meet the minimum CGPA based on (i) to (iii). Meet any of these English language requirements: A Bachelor’s Degree conducted in English*; OR Credit 6 in MCE/SPM/GCE level; MUET Band 3.5/TOEFL score of 500 / IELTS score of 5.0; OR Equivalent score from any of the above obtained at undergraduate level at a recognised university* * A copy of the document from the university is required during submission as proof of English proficiency Note: International students are subject to meet entry requirements that reflect similar qualifications and experience as stated above. To find country-specific entry requirements visit our international entry requirement page",
+      "interviewRequired": null,
+      "careerProspects": "技术分析师、工程科学家、商业与管理战略师、健康与诊断设计师、生命科学专员、创新推动者、流程专员、数字化转型专家、科技企业管理与咨询岗位",
+      "otherLanguageReqs": {
+        "toefl": 500,
+        "muet": 3.5
+      },
+      "otherEntryReqs": [
+        "国际学生须满足与官方页面列出的同等学历和经验要求。",
+        "中国学生资格参照官方国际入学要求页面中的高中、职业技术学校、专科或技工学校等条目。",
+        "部分非相关背景路径可能需要相关工作经验、严格内部评估或先修课程。",
+        "健康、医疗或设施相关路径可能涉及官方页面列出的专业或实践要求。"
+      ],
+      "remarks": "官方学制文本为“Full Time: 2 - 4 years | Part Time: 3 - 6 years”，本次按全日制路径或官方区间上限规范为4年。官方费用列出国际学生近似金额：INTI International University：约马币38,178令吉。官网费用为近似金额且注明国际学生费用另受销售与服务税影响，需人工复核后才可公开。官网课程结构为英文，本次已生成中文课程数组，术语翻译需人工复核。四语公开本地化尚未完成，本条保持待复核。官方未公布可作为公开上线依据的精确国际学生总学费；官网费用为近似金额或多费用选项且不含 SST，tuitionMYR 按默认采集标准置为 null。官网仅发布近似费用（INTI International University：约 RM 38,178），并注明公布费用不含 SST，国际学生费用另加 6% SST。未发现同一专业、同一国际学生口径的精确总学费。课程和职业中文公开前仍需 Ian 终审。",
+      "officialFeeSourceUrl": "https://newinti.edu.my/programme/master-of-science-in-innovation-and-technology/",
+      "officialSourceUrl": "https://newinti.edu.my/programme/master-of-science-in-innovation-and-technology/",
+      "officialVerifiedAt": "2026-06-24",
+      "publicDisplayStatus": "needs-review",
+      "auditStatus": "needs-manual-review"
+    },
+    {
+      "nameEn": "Master of Science in Integrated Project Management (Online Learning)",
+      "name": "综合项目管理理学硕士（在线学习）",
+      "faculty": "Engineering",
+      "level": "master",
+      "duration": 1,
+      "tuitionMYR": null,
+      "intake": [
+        1,
+        3,
+        5,
+        8,
+        10
+      ],
+      "ielts": 5.0,
+      "curriculum": [
+        "合同与采购管理",
+        "财务管理",
+        "综合模拟项目",
+        "组织与领导管理",
+        "职业安全与健康",
+        "可持续项目管理实践原则",
+        "项目管理理论与实践",
+        "研究方法",
+        "风险与质量管理",
+        "战略管理与决策",
+        "项目一",
+        "项目二"
+      ],
+      "curriculumTotal": 12,
+      "studyMode": "coursework",
+      "gpaRequirement": "i. Bachelor’s Degree (Level 6 Malaysian Qualifications Framework, MQF) in a relevant field with a minimum CGPA of 2.50; OR ii. Bachelor’s Degree (Level 6 MQF) with a CGPA of above 2.00 but less than 2.50 may be admitted, subject to relevant working experience. iii. Candidates without a qualification in the related fields or working experience in the relevant fields must undergo appropriate prerequisite courses determined by the university and meet the minimum CGPA based on (i) to (ii). English Language Requirements: Candidates are required to achieve a minimum score of 5.0 in IELTS, 500 in TOEFL or its equivalent. Note: International students are subject to meet entry requirements that reflect similar qualifications and experience as stated above. To find country-specific entry requirements visit our international entry requirement page",
+      "interviewRequired": null,
+      "careerProspects": null,
+      "otherLanguageReqs": null,
+      "otherEntryReqs": [
+        "国际学生须满足与官方页面列出的同等学历和经验要求。",
+        "中国学生资格参照官方国际入学要求页面中的高中、职业技术学校、专科或技工学校等条目。",
+        "部分非相关背景路径可能需要相关工作经验、严格内部评估或先修课程。",
+        "健康、医疗或设施相关路径可能涉及官方页面列出的专业或实践要求。"
+      ],
+      "remarks": "官方学制文本为“Full time: 1 year | Part time: 2 years”，本次按全日制路径或官方区间上限规范为1年。官方费用列出国际学生近似金额：INTI International University：约马币33,220令吉。官网费用为近似金额且注明国际学生费用另受销售与服务税影响，需人工复核后才可公开。官网课程结构为英文，本次已生成中文课程数组，术语翻译需人工复核。四语公开本地化尚未完成，本条保持待复核。官方未公布可作为公开上线依据的精确国际学生总学费；官网费用为近似金额或多费用选项且不含 SST，tuitionMYR 按默认采集标准置为 null。官网仅发布近似费用（INTI International University：约 RM 33,220），并注明公布费用不含 SST，国际学生费用另加 6% SST。未发现同一专业、同一国际学生口径的精确总学费。课程和职业中文公开前仍需 Ian 终审。官方职业方向未公布或中文字段仍需人工复核，careerProspects 保持 null。",
+      "officialFeeSourceUrl": "https://newinti.edu.my/programme/master-of-science-in-integrated-project-management-online-learning/",
+      "officialSourceUrl": "https://newinti.edu.my/programme/master-of-science-in-integrated-project-management-online-learning/",
+      "officialVerifiedAt": "2026-06-24",
+      "publicDisplayStatus": "needs-review",
+      "auditStatus": "needs-manual-review"
+    },
+    {
+      "nameEn": "Master of Traditional Chinese Medicine",
+      "name": "中医硕士",
+      "faculty": "Health Sciences",
+      "level": "master",
+      "duration": 2,
+      "tuitionMYR": null,
+      "intake": [
+        1,
+        5,
+        9
+      ],
+      "ielts": 5.0,
+      "curriculum": [
+        "第一年研究方法论",
+        "中医经典选读",
+        "仲景理论选读",
+        "针灸方向文献报告",
+        "历代针灸医案",
+        "推拿方向文献报告",
+        "历代推拿医案",
+        "妇科方向文献报告",
+        "历代妇科医案",
+        "内科方向文献报告",
+        "历代内科医案",
+        "临床一",
+        "第二年临床二",
+        "临床三",
+        "中医项目",
+        "选修课"
+      ],
+      "curriculumTotal": 16,
+      "studyMode": "coursework",
+      "gpaRequirement": "A Bachelor's degree (Level 6, MQF) in Traditional Chinese Medicine, Acupuncture, Moxibustion or Tuina with minimum CGPA of 2.50 or equivalent, as accepted by the University Senate; or A Bachelor's degree (Level 6, MQF) in Traditional Chinese Medicine Acupuncture, Moxibustion, Tuina or equivalent with a minimum CGPA of 2.00 and not meeting CGPA of 2.50, can be accepted subject to rigorous internal assessment. English Language Requirement IELTS 5.0 or equivalent Note: International students are subject to meet entry requirements that reflect similar qualifications and experience as stated above. To find country-specific entry requirements visit our international entry requirement page",
+      "interviewRequired": null,
+      "careerProspects": "执业中医师、中医讲师或教授、医疗机构管理人员、中医政策顾问、健康管理专员",
+      "otherLanguageReqs": null,
+      "otherEntryReqs": [
+        "国际学生须满足与官方页面列出的同等学历和经验要求。",
+        "中国学生资格参照官方国际入学要求页面中的高中、职业技术学校、专科或技工学校等条目。",
+        "健康、医疗或设施相关路径可能涉及官方页面列出的专业或实践要求。"
+      ],
+      "remarks": "官方学制文本为“2 Years (Full-Time), 3 Years (Part-Time)”，本次按全日制路径或官方区间上限规范为2年。官方费用列出国际学生近似金额：INTI International University：约马币70,002令吉。官网费用为近似金额且注明国际学生费用另受销售与服务税影响，需人工复核后才可公开。官网课程结构为英文，本次已生成中文课程数组，术语翻译需人工复核。四语公开本地化尚未完成，本条保持待复核。官方未公布可作为公开上线依据的精确国际学生总学费；官网费用为近似金额或多费用选项且不含 SST，tuitionMYR 按默认采集标准置为 null。官网仅发布近似费用（INTI International University：约 RM 70,002），并注明公布费用不含 SST，国际学生费用另加 6% SST。未发现同一专业、同一国际学生口径的精确总学费。课程和职业中文公开前仍需 Ian 终审。",
+      "officialFeeSourceUrl": "https://newinti.edu.my/programme/master-of-traditional-chinese-medicine/",
+      "officialSourceUrl": "https://newinti.edu.my/programme/master-of-traditional-chinese-medicine/",
+      "officialVerifiedAt": "2026-06-24",
+      "publicDisplayStatus": "needs-review",
+      "auditStatus": "needs-manual-review"
+    }
+  ],
+  "exception_queue": [
+    {
+      "type": "fee-authority-ambiguous",
+      "severity": "high",
+      "affectedProgramme": null,
+      "affectedField": "tuitionMYR",
+      "description": "INTI 官方页面当前只发布近似费用或多费用选项，并注明国际学生费用另加 6% SST；默认 v2 calibrated 输出不得把近似金额写成精确总学费。",
+      "evidence": "https://newinti.edu.my/academic-programmes/postgraduate/masters/",
+      "recommendation": "保持 needs-review；除非 INTI 官方提供精确总学费或 Ian 批准近似费用展示策略，否则不得转 ready。",
+      "status": "open",
+      "createdAt": "2026-06-24"
+    }
+  ],
+  "collection_summary": {
+    "totalProgrammesFound": 23,
+    "programmesCollected": 23,
+    "programmesSkipped": [],
+    "fieldsUsingMissingMarkers": [
+      {
+        "programmeIndex": 1,
+        "nameEn": "Master in Education Management",
+        "field": "tuitionMYR",
+        "marker": null
+      },
+      {
+        "programmeIndex": 1,
+        "nameEn": "Master in Education Management",
+        "field": "careerProspects",
+        "marker": null
+      },
+      {
+        "programmeIndex": 2,
+        "nameEn": "Master in Education Management (Online Learning)",
+        "field": "tuitionMYR",
+        "marker": null
+      },
+      {
+        "programmeIndex": 3,
+        "nameEn": "Master in Health Administration",
+        "field": "tuitionMYR",
+        "marker": null
+      },
+      {
+        "programmeIndex": 4,
+        "nameEn": "Master in Health Sciences (Physiotherapy) (by Research)",
+        "field": "ielts",
+        "marker": null
+      },
+      {
+        "programmeIndex": 4,
+        "nameEn": "Master in Health Sciences (Physiotherapy) (by Research)",
+        "field": "tuitionMYR",
+        "marker": null
+      },
+      {
+        "programmeIndex": 5,
+        "nameEn": "Master in Information Systems (MIS)",
+        "field": "tuitionMYR",
+        "marker": null
+      },
+      {
+        "programmeIndex": 6,
+        "nameEn": "Master in Information Technology (MIT)",
+        "field": "tuitionMYR",
+        "marker": null
+      },
+      {
+        "programmeIndex": 7,
+        "nameEn": "Master in Information Technology (Online Learning)",
+        "field": "tuitionMYR",
+        "marker": null
+      },
+      {
+        "programmeIndex": 8,
+        "nameEn": "Master of Biotechnological Innovations and Application (by Research)",
+        "field": "ielts",
+        "marker": null
+      },
+      {
+        "programmeIndex": 8,
+        "nameEn": "Master of Biotechnological Innovations and Application (by Research)",
+        "field": "tuitionMYR",
+        "marker": null
+      },
+      {
+        "programmeIndex": 9,
+        "nameEn": "Master of Business Administration (Business Analytics)",
+        "field": "tuitionMYR",
+        "marker": null
+      },
+      {
+        "programmeIndex": 10,
+        "nameEn": "Master of Business Administration (MBA)",
+        "field": "tuitionMYR",
+        "marker": null
+      },
+      {
+        "programmeIndex": 11,
+        "nameEn": "Master of Business Administration (MBA) in collaboration with INTI International University",
+        "field": "tuitionMYR",
+        "marker": null
+      },
+      {
+        "programmeIndex": 12,
+        "nameEn": "Master of Business Administration (Online Learning)",
+        "field": "tuitionMYR",
+        "marker": null
+      },
+      {
+        "programmeIndex": 13,
+        "nameEn": "Master of Education in Learning, Design and Technology (by Research)",
+        "field": "tuitionMYR",
+        "marker": null
+      },
+      {
+        "programmeIndex": 14,
+        "nameEn": "Master of Science in Construction Management (Building Information Modelling)",
+        "field": "tuitionMYR",
+        "marker": null
+      },
+      {
+        "programmeIndex": 15,
+        "nameEn": "Master of Science in Construction Management (Building Information Modelling) – (Online Learning)",
+        "field": "tuitionMYR",
+        "marker": null
+      },
+      {
+        "programmeIndex": 16,
+        "nameEn": "Master of Science in Construction Management (Facility Management)",
+        "field": "tuitionMYR",
+        "marker": null
+      },
+      {
+        "programmeIndex": 17,
+        "nameEn": "Master of Science in Data Science (by Research)",
+        "field": "tuitionMYR",
+        "marker": null
+      },
+      {
+        "programmeIndex": 18,
+        "nameEn": "Master of Science in Engineering and Eco-Innovation (by Research)",
+        "field": "ielts",
+        "marker": null
+      },
+      {
+        "programmeIndex": 18,
+        "nameEn": "Master of Science in Engineering and Eco-Innovation (by Research)",
+        "field": "tuitionMYR",
+        "marker": null
+      },
+      {
+        "programmeIndex": 19,
+        "nameEn": "Master of Science in Facilities Management (Online Learning)",
+        "field": "ielts",
+        "marker": null
+      },
+      {
+        "programmeIndex": 19,
+        "nameEn": "Master of Science in Facilities Management (Online Learning)",
+        "field": "tuitionMYR",
+        "marker": null
+      },
+      {
+        "programmeIndex": 20,
+        "nameEn": "Master of Science in Information Systems (by Research)",
+        "field": "tuitionMYR",
+        "marker": null
+      },
+      {
+        "programmeIndex": 21,
+        "nameEn": "Master of Science in Innovation and Technology (by Research)",
+        "field": "tuitionMYR",
+        "marker": null
+      },
+      {
+        "programmeIndex": 22,
+        "nameEn": "Master of Science in Integrated Project Management (Online Learning)",
+        "field": "tuitionMYR",
+        "marker": null
+      },
+      {
+        "programmeIndex": 22,
+        "nameEn": "Master of Science in Integrated Project Management (Online Learning)",
+        "field": "careerProspects",
+        "marker": null
+      },
+      {
+        "programmeIndex": 23,
+        "nameEn": "Master of Traditional Chinese Medicine",
+        "field": "tuitionMYR",
+        "marker": null
+      }
+    ],
+    "qualityGateResults": {
+      "ready": 0,
+      "needsReview": 23,
+      "needsReviewItems": [
+        {
+          "programmeIndex": 1,
+          "nameEn": "Master in Education Management",
+          "failedChecks": [
+            "Q5",
+            "Q11"
+          ],
+          "details": "官方未公布精确国际学生总学费；字段保持 needs-review。"
+        },
+        {
+          "programmeIndex": 2,
+          "nameEn": "Master in Education Management (Online Learning)",
+          "failedChecks": [
+            "Q5",
+            "Q11"
+          ],
+          "details": "官方未公布精确国际学生总学费；字段保持 needs-review。"
+        },
+        {
+          "programmeIndex": 3,
+          "nameEn": "Master in Health Administration",
+          "failedChecks": [
+            "Q5",
+            "Q11"
+          ],
+          "details": "官方未公布精确国际学生总学费；字段保持 needs-review。"
+        },
+        {
+          "programmeIndex": 4,
+          "nameEn": "Master in Health Sciences (Physiotherapy) (by Research)",
+          "failedChecks": [
+            "Q5",
+            "Q7",
+            "Q11"
+          ],
+          "details": "官方未公布精确国际学生总学费；字段保持 needs-review。 IELTS 未能从官方来源稳定确认。"
+        },
+        {
+          "programmeIndex": 5,
+          "nameEn": "Master in Information Systems (MIS)",
+          "failedChecks": [
+            "Q5",
+            "Q11"
+          ],
+          "details": "官方未公布精确国际学生总学费；字段保持 needs-review。"
+        },
+        {
+          "programmeIndex": 6,
+          "nameEn": "Master in Information Technology (MIT)",
+          "failedChecks": [
+            "Q5",
+            "Q11"
+          ],
+          "details": "官方未公布精确国际学生总学费；字段保持 needs-review。"
+        },
+        {
+          "programmeIndex": 7,
+          "nameEn": "Master in Information Technology (Online Learning)",
+          "failedChecks": [
+            "Q5",
+            "Q11"
+          ],
+          "details": "官方未公布精确国际学生总学费；字段保持 needs-review。"
+        },
+        {
+          "programmeIndex": 8,
+          "nameEn": "Master of Biotechnological Innovations and Application (by Research)",
+          "failedChecks": [
+            "Q5",
+            "Q7",
+            "Q11"
+          ],
+          "details": "官方未公布精确国际学生总学费；字段保持 needs-review。 IELTS 未能从官方来源稳定确认。"
+        },
+        {
+          "programmeIndex": 9,
+          "nameEn": "Master of Business Administration (Business Analytics)",
+          "failedChecks": [
+            "Q5",
+            "Q11"
+          ],
+          "details": "官方未公布精确国际学生总学费；字段保持 needs-review。"
+        },
+        {
+          "programmeIndex": 10,
+          "nameEn": "Master of Business Administration (MBA)",
+          "failedChecks": [
+            "Q5",
+            "Q11"
+          ],
+          "details": "官方未公布精确国际学生总学费；字段保持 needs-review。"
+        },
+        {
+          "programmeIndex": 11,
+          "nameEn": "Master of Business Administration (MBA) in collaboration with INTI International University",
+          "failedChecks": [
+            "Q5",
+            "Q11"
+          ],
+          "details": "官方未公布精确国际学生总学费；字段保持 needs-review。"
+        },
+        {
+          "programmeIndex": 12,
+          "nameEn": "Master of Business Administration (Online Learning)",
+          "failedChecks": [
+            "Q5",
+            "Q11"
+          ],
+          "details": "官方未公布精确国际学生总学费；字段保持 needs-review。"
+        },
+        {
+          "programmeIndex": 13,
+          "nameEn": "Master of Education in Learning, Design and Technology (by Research)",
+          "failedChecks": [
+            "Q5",
+            "Q11"
+          ],
+          "details": "官方未公布精确国际学生总学费；字段保持 needs-review。"
+        },
+        {
+          "programmeIndex": 14,
+          "nameEn": "Master of Science in Construction Management (Building Information Modelling)",
+          "failedChecks": [
+            "Q5",
+            "Q11"
+          ],
+          "details": "官方未公布精确国际学生总学费；字段保持 needs-review。"
+        },
+        {
+          "programmeIndex": 15,
+          "nameEn": "Master of Science in Construction Management (Building Information Modelling) – (Online Learning)",
+          "failedChecks": [
+            "Q5",
+            "Q11"
+          ],
+          "details": "官方未公布精确国际学生总学费；字段保持 needs-review。"
+        },
+        {
+          "programmeIndex": 16,
+          "nameEn": "Master of Science in Construction Management (Facility Management)",
+          "failedChecks": [
+            "Q5",
+            "Q11"
+          ],
+          "details": "官方未公布精确国际学生总学费；字段保持 needs-review。"
+        },
+        {
+          "programmeIndex": 17,
+          "nameEn": "Master of Science in Data Science (by Research)",
+          "failedChecks": [
+            "Q5",
+            "Q11"
+          ],
+          "details": "官方未公布精确国际学生总学费；字段保持 needs-review。"
+        },
+        {
+          "programmeIndex": 18,
+          "nameEn": "Master of Science in Engineering and Eco-Innovation (by Research)",
+          "failedChecks": [
+            "Q5",
+            "Q7",
+            "Q11"
+          ],
+          "details": "官方未公布精确国际学生总学费；字段保持 needs-review。 IELTS 未能从官方来源稳定确认。"
+        },
+        {
+          "programmeIndex": 19,
+          "nameEn": "Master of Science in Facilities Management (Online Learning)",
+          "failedChecks": [
+            "Q5",
+            "Q7",
+            "Q11"
+          ],
+          "details": "官方未公布精确国际学生总学费；字段保持 needs-review。 IELTS 未能从官方来源稳定确认。"
+        },
+        {
+          "programmeIndex": 20,
+          "nameEn": "Master of Science in Information Systems (by Research)",
+          "failedChecks": [
+            "Q5",
+            "Q11"
+          ],
+          "details": "官方未公布精确国际学生总学费；字段保持 needs-review。"
+        },
+        {
+          "programmeIndex": 21,
+          "nameEn": "Master of Science in Innovation and Technology (by Research)",
+          "failedChecks": [
+            "Q5",
+            "Q11"
+          ],
+          "details": "官方未公布精确国际学生总学费；字段保持 needs-review。"
+        },
+        {
+          "programmeIndex": 22,
+          "nameEn": "Master of Science in Integrated Project Management (Online Learning)",
+          "failedChecks": [
+            "Q5",
+            "Q11"
+          ],
+          "details": "官方未公布精确国际学生总学费；字段保持 needs-review。"
+        },
+        {
+          "programmeIndex": 23,
+          "nameEn": "Master of Traditional Chinese Medicine",
+          "failedChecks": [
+            "Q5",
+            "Q11"
+          ],
+          "details": "官方未公布精确国际学生总学费；字段保持 needs-review。"
+        }
+      ]
+    }
+  }
+}

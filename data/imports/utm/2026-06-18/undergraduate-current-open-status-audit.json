@@ -1,0 +1,89 @@
+{
+  "checkedAt": "2026-06-18T23:54:46+08:00",
+  "institution": "Universiti Teknologi Malaysia",
+  "universityCode": "UTM",
+  "level": "bachelor",
+  "applicantScope": "international",
+  "academicSession": "2026/2027",
+  "scope": "User-reported review of the four UTM undergraduate programmes previously marked current-cycle-not-open.",
+  "programmes": [
+    {
+      "code": "UTM-UG-015",
+      "nameEnOfficial": "Bachelor of Mechanical Engineering (Manufacturing) with Honours",
+      "detailUrl": "https://mech.utm.my/ug-programme/",
+      "currentOfficialDecision": "current-cycle-not-open"
+    },
+    {
+      "code": "UTM-UG-018",
+      "nameEnOfficial": "Bachelor in Accounting with Honours",
+      "detailUrl": "https://management.utm.my/accounting/",
+      "currentOfficialDecision": "current-cycle-not-open"
+    },
+    {
+      "code": "UTM-UG-019",
+      "nameEnOfficial": "Bachelor in Digital Marketing with Honours",
+      "detailUrl": "https://management.utm.my/management-marketing/",
+      "currentOfficialDecision": "current-cycle-not-open"
+    },
+    {
+      "code": "UTM-UG-020",
+      "nameEnOfficial": "Bachelor of Management with Honours",
+      "detailUrl": "https://management.utm.my/management-2/",
+      "currentOfficialDecision": "current-cycle-not-open"
+    }
+  ],
+  "sourceHierarchy": [
+    {
+      "sourceRole": "programme-level international catalogue",
+      "url": "https://admission.utm.my/offered-allcourses-international/",
+      "status": "current-web-verified",
+      "evidence": "The current UTM international programme catalogue lists all four rows with the text 'Not offered for both the September and February intakes for the 2026/2027 academic session' and a Closed action.",
+      "decisionWeight": "governs current-cycle programme availability"
+    },
+    {
+      "sourceRole": "institution-level application window",
+      "url": "https://admission.utm.my/apply-now/",
+      "status": "current-local-fetch-verified",
+      "sha256": "1cb34100a4dc3792475194b9cf0e166a3d21d284c0ceeb82fc97e9b020a3dc64",
+      "evidence": "The Apply Now page publishes the general International Undergraduate September 2026 intake window: Phase 1 from 1 April 2026 to 15 May 2026, Phase 2 from 23 June 2026 to 17 July 2026.",
+      "decisionWeight": "confirms the undergraduate application season, but does not override programme-level closed rows"
+    },
+    {
+      "sourceRole": "current-intake programme PDF",
+      "url": "https://admission.utm.my/wp-content/uploads/sites/461/2026/03/LATEST-UG-PROGRAMME-SEPT-2026-INTAKE.pdf",
+      "status": "current-local-fetch-verified",
+      "sha256": "1b5881979a0b54b2a4df1ff7bcac65479c32dbed71402cccf5648a8d91882f1a",
+      "localExtraction": {
+        "pages": 5,
+        "chars": 4672,
+        "containsBachelorOfMechanicalEngineeringManufacturing": false,
+        "containsBachelorInAccounting": false,
+        "containsBachelorInDigitalMarketing": false,
+        "containsBachelorOfManagement": false
+      },
+      "decisionWeight": "supports that the four disputed programmes are not in the September 2026 offered list"
+    },
+    {
+      "sourceRole": "programme detail pages",
+      "urls": [
+        "https://mech.utm.my/ug-programme/",
+        "https://management.utm.my/accounting/",
+        "https://management.utm.my/management-marketing/",
+        "https://management.utm.my/management-2/"
+      ],
+      "status": "current-web-verified",
+      "evidence": "The faculty detail pages confirm programme existence, study duration, generic Apply Now links, fees links, and international entry requirement links.",
+      "decisionWeight": "confirms programme existence and field evidence, but not current-cycle opening"
+    }
+  ],
+  "decision": {
+    "programmeLevelOpenForCurrentCycle": false,
+    "programmesExist": true,
+    "internationalGeneralRequirementsExist": true,
+    "generalApplicationSeasonExists": true,
+    "shouldConvertToReady": false,
+    "shouldRemoveCurrentCycleNotOpenState": false,
+    "rationale": "Strict source hierarchy requires the programme-level international catalogue and current-intake programme list to govern current-cycle availability. Generic application windows and detail-page Apply Now links cannot override a programme row marked Closed/Not offered for both September and February intakes."
+  },
+  "nextReviewTrigger": "Reopen and update to ready only if UTM publishes a newer programme-level international catalogue, current-intake PDF, or authenticated SMARt programme choice list showing one or more of these four programmes as selectable/open for the target intake."
+}

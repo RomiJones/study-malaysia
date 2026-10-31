@@ -1,0 +1,93 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-06-16T14:58:53Z",
+  "sourceCount": 8,
+  "sources": [
+    {
+      "id": "master-official-source",
+      "localPath": "data/imports/usm/2026-06-14/master-official-source.json",
+      "sha256": "ee7e131915bc4161aae4eb55fe2e27dabb629af1e1ba3fb08772ef3e0451f190",
+      "role": "master-official-source",
+      "relatedLevel": "master",
+      "currentSha256": "ee7e131915bc4161aae4eb55fe2e27dabb629af1e1ba3fb08772ef3e0451f190",
+      "hashMatches": true
+    },
+    {
+      "id": "onlineips-application-guide-2026",
+      "url": "https://onlineips.usm.my/images/ONLINE%20APPLICATION%20GUIDELINE%20012026%20v1.pdf",
+      "localPath": "data/imports/usm/2026-06-14/sources/online-application-guide-2026.pdf",
+      "sha256": "92559bbca13240e19d9cec7b761c7718eace5fa86648f3a13a0ea46fd443ece3",
+      "published": "2026-01",
+      "role": "onlineips-application-guide-2026",
+      "relatedLevel": "master",
+      "currentSha256": "92559bbca13240e19d9cec7b761c7718eace5fa86648f3a13a0ea46fd443ece3",
+      "hashMatches": true
+    },
+    {
+      "id": "coursework-mixed-candidature",
+      "url": "https://ips.usm.my/index.php/current-student-v2/candidature-matters/coursework-and-mixed-mode-programme",
+      "localPath": "data/imports/usm/2026-06-14/sources/coursework-mixed-candidature.html",
+      "sha256": "10a840d099c43a52c4dfaf7ab9b1173549eded928a2a55b8d9e987554afd77a0",
+      "role": "coursework-mixed-candidature",
+      "relatedLevel": "master",
+      "currentSha256": "10a840d099c43a52c4dfaf7ab9b1173549eded928a2a55b8d9e987554afd77a0",
+      "hashMatches": true
+    },
+    {
+      "id": "master-commercial-candidate",
+      "role": "candidate_dataset",
+      "localPath": "data/imports/usm/2026-06-14/master-commercial-candidate.json",
+      "sha256": "6861ddd984675774170e6cdfad93ea2dc79a22225fa29012c08e559a9b9a6c4e",
+      "relatedLevel": "master"
+    },
+    {
+      "id": "master-official-source",
+      "role": "official_source_manifest",
+      "localPath": "data/imports/usm/2026-06-14/master-official-source.json",
+      "sha256": "ee7e131915bc4161aae4eb55fe2e27dabb629af1e1ba3fb08772ef3e0451f190",
+      "relatedLevel": "master"
+    },
+    {
+      "id": "current-official-html-cache",
+      "role": "current-official-html-cache",
+      "localPath": "tmp/usm-master-current-html",
+      "fileCount": 187,
+      "relatedLevel": "master",
+      "sampleFiles": [
+        "tmp/usm-master-current-html/usm-pg-article-114.html",
+        "tmp/usm-master-current-html/usm-pg-article-118.html",
+        "tmp/usm-master-current-html/usm-pg-article-1226.html",
+        "tmp/usm-master-current-html/usm-pg-article-124.html",
+        "tmp/usm-master-current-html/usm-pg-article-125.html"
+      ]
+    },
+    {
+      "id": "current-reader-cache",
+      "role": "current-reader-cache",
+      "localPath": "tmp/usm-master-current-jina",
+      "fileCount": 68,
+      "relatedLevel": "master",
+      "sampleFiles": [
+        "tmp/usm-master-current-jina/usm-pg-article-106.md",
+        "tmp/usm-master-current-jina/usm-pg-article-107.md",
+        "tmp/usm-master-current-jina/usm-pg-article-112.md",
+        "tmp/usm-master-current-jina/usm-pg-article-113.md",
+        "tmp/usm-master-current-jina/usm-pg-article-115.md"
+      ]
+    },
+    {
+      "id": "legacy-detail-reader-cache",
+      "role": "legacy-detail-reader-cache",
+      "localPath": "tmp/usm-master-details",
+      "fileCount": 317,
+      "relatedLevel": "master",
+      "sampleFiles": [
+        "tmp/usm-master-details/usm-pg-article-106.md",
+        "tmp/usm-master-details/usm-pg-article-107.md",
+        "tmp/usm-master-details/usm-pg-article-112.md",
+        "tmp/usm-master-details/usm-pg-article-113.md",
+        "tmp/usm-master-details/usm-pg-article-114.md"
+      ]
+    }
+  ]
+}

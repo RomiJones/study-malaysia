@@ -4,6 +4,19 @@
 
 本任务只处理 USM、博士层级、国际申请人。授权为 `collect`，流水线止于完整审计候选，不连接业务数据库。
 
+## 2026-06-17 发布后补充校对说明
+
+原始技术方案记录的是博士候选采集阶段边界。用户后续已明确要求继续完成最终标准，因此 2026-06-16 已执行受控入库与商业发布门禁，2026-06-17 又执行发布后补充校对和两条 Doctor of Education 修复。本补充不改变原始候选采集事实，但将最终验收口径更新如下：
+
+- 当前发布授权：`publish` 已执行；2026-06-17 已重新受控入库并完成发布后校验。
+- 博士规范记录：95；公开记录：95；`needs-review`：0；国际生不可用：0。
+- 修复根因：旧动态目录标题中的 `Malaysian Candidate Only` 覆盖了当前详情页证据；当前详情页 H1、国际申请语言要求和官方国际费用表共同确认两条 Doctor of Education 可供国际申请人申请。
+- 采集器修复：当前详情页 H1 不含 Malaysian-only 标记时清理旧标题；当前详情页国际申请语言要求和官方国际费用同时存在时判定 `eligible`。
+- 公开 API 当前费用分区：博士公开层 `matched-official=13`、`calculated-from-official-rate=62`、`not-published=20`；USM 全公开层 `matched-official=196`、`calculated-from-official-rate=213`、`not-published=53`。
+- DBA 当前官方 HTML 学制字段为 `Full time: 7 semesters to 10 semesters Part time: 10 semesters to 14 semesters`。
+- 补充审计产物：`data/imports/usm/2026-06-17/phd-supplemental-audit/acceptance_recheck.json`。
+- 商业发布门禁报告：`tmp/reports/usm-commercial-release-gate-95-phd-public-20260617.json`，决策 `commercial-release-ready`。
+
 ## 来源图
 
 1. USM 新版 Postgraduate Programme 动态表：当前规范项目身份、模式、学位类型、院系和精确数量。
@@ -42,7 +55,7 @@ USM Admission 页面受 WAF 保护时，使用只读公开渲染或浏览器动�
 - 研究型费用按官方院系映射国际全日制每学期费率，标记为 `official-rate-only`；不计算 4–10 学期总额或费用范围。
 - DBA、Doctor of Neuroscience、Doctor of Public Health、Doctor of Education 和联合 Doctor of Psychology 使用官方总学费。
 - 仅有费率或没有唯一当前总学费的项目保持 `official-unpublished`；offshore、USM@KL 非联合心理学博士和 Newcastle 联合 PhD 同样适用。
-- `Malaysian Candidate Only` 进入 `not-available-for-international`。
+- `Malaysian Candidate Only` 只有在当前详情页和当前国际费用证据不能推翻旧标题时才进入 `not-available-for-international`；当前详情页 H1、国际申请语言要求和国际费用表共同确认适用于国际申请人时，以当前证据为准。
 - 详情页或当前国际费用权威来源无法确认国际范围时进入 `needs-review`。
 - 专业级字段缺失时使用 `general-rule`、`official-unpublished` 或 `not-confirmed`，不伪装为专业原文。
 

@@ -134,6 +134,20 @@
               <template #default="scope"><el-tag :type="issueStatusTagType(scope.row.status)">{{ issueStatusLabel(scope.row.status) }}</el-tag></template>
             </el-table-column>
             <el-table-column prop="message" label="问题描述" min-width="300" show-overflow-tooltip />
+            <el-table-column label="前台风险" min-width="340">
+              <template #default="scope">
+                <div class="quality-risk-cell">
+                  <div class="quality-risk-cell__title">
+                    <el-tag size="small" :type="qualityRiskTagType(qualityIssueFrontendRisk(scope.row))" effect="plain">
+                      {{ qualityIssueFrontendRisk(scope.row).ability }}
+                    </el-tag>
+                    <strong>{{ qualityIssueFrontendRisk(scope.row).title }}</strong>
+                  </div>
+                  <span>{{ qualityIssueFrontendRisk(scope.row).summary }}</span>
+                  <small>影响页面：{{ qualityIssueFrontendRisk(scope.row).pages.join("、") }}</small>
+                </div>
+              </template>
+            </el-table-column>
             <el-table-column label="检测时间" min-width="160">
               <template #default="scope">{{ formatCheckedAt(scope.row.detectedAt) }}</template>
             </el-table-column>
@@ -143,7 +157,7 @@
                   <RouterLink v-if="isFeeQualityIssue(scope.row)" :to="feeReviewRoute(scope.row)">
                     <el-button link type="primary">费用工作台</el-button>
                   </RouterLink>
-                  <RouterLink :to="issueTargetRoute(scope.row)"><el-button link type="primary">去编辑</el-button></RouterLink>
+                  <RouterLink :to="issueTargetRoute(scope.row)"><el-button link type="primary">去修复</el-button></RouterLink>
                   <el-button link type="warning" :disabled="!canUpdate || scope.row.status === 'ignored'" @click="updateQualityIssue(scope.row, 'ignored')">忽略</el-button>
                   <el-button link type="success" :disabled="!canUpdate || scope.row.status === 'resolved'" @click="updateQualityIssue(scope.row, 'resolved')">已解决</el-button>
                 </div>
@@ -161,6 +175,163 @@
           <div class="section-subtitle import-checked-at">最近校验：{{ formatCheckedAt(importOverview.checkedAt) }}</div>
         </div>
       </section>
+    </el-tab-pane>
+
+    <el-tab-pane label="多语言治理" name="catalog-i18n">
+      <div class="i18n-admin-page">
+        <section class="page-card i18n-admin-hero" v-loading="catalogI18nLoading">
+          <div class="page-toolbar i18n-admin-hero__toolbar">
+            <div>
+              <div class="i18n-admin-hero__title">业务数据多语言治理</div>
+              <div class="section-subtitle">
+                检查学校和专业目录字段是否具备 zh-CN、zh-TW、en、ms 四语言业务内容；这里不检查前端 UI 文案 key。
+              </div>
+            </div>
+            <div class="page-toolbar__right">
+              <el-button :loading="catalogI18nLoading" :disabled="!canViewCatalogI18n" @click="refreshCatalogI18nCoverage">刷新治理结果</el-button>
+              <el-button @click="resetCatalogI18nFilters">重置筛选</el-button>
+            </div>
+          </div>
+
+          <el-alert
+            class="i18n-admin-alert"
+            title="业务数据多语言治理只判断学校、专业等数据库字段，不代表前端 i18n 文案审计已经通过，也不会自动补齐翻译。"
+            type="info"
+            show-icon
+            :closable="false"
+          />
+          <el-alert
+            v-if="catalogI18nError"
+            class="i18n-admin-alert"
+            :title="catalogI18nError"
+            type="warning"
+            show-icon
+            :closable="false"
+          />
+
+          <div class="metrics-grid i18n-admin-metrics">
+            <div class="metric-card">
+              <div class="metric-card__label">扫描记录</div>
+              <div class="metric-card__value">{{ catalogI18nSummary.scanned.total }}</div>
+            </div>
+            <div class="metric-card">
+              <div class="metric-card__label">完整记录</div>
+              <div class="metric-card__value">{{ catalogI18nSummary.completeRecords.total }}</div>
+            </div>
+            <div class="metric-card">
+              <div class="metric-card__label">问题总数</div>
+              <div class="metric-card__value">{{ catalogI18nSummary.issues.total }}</div>
+            </div>
+            <div class="metric-card">
+              <div class="metric-card__label">中文泄漏</div>
+              <div class="metric-card__value">{{ catalogI18nSummary.issues.byCode["non-cjk-locale-has-cjk-content"] }}</div>
+            </div>
+            <div class="metric-card">
+              <div class="metric-card__label">缺失语言</div>
+              <div class="metric-card__value">{{ catalogI18nSummary.issues.byCode["missing-locale"] }}</div>
+            </div>
+            <div class="metric-card">
+              <div class="metric-card__label">结构异常</div>
+              <div class="metric-card__value">{{ catalogI18nSummary.issues.byCode["invalid-localized-shape"] }}</div>
+            </div>
+          </div>
+        </section>
+
+        <section class="page-card">
+          <div class="page-toolbar">
+            <div class="page-toolbar__left">
+              <el-select v-model="catalogI18nQuery.entityType" placeholder="实体" @change="refreshCatalogI18nCoverage">
+                <el-option v-for="item in CATALOG_I18N_ENTITY_OPTIONS" :key="item.value" :label="item.label" :value="item.value" />
+              </el-select>
+              <el-select v-model="catalogI18nQuery.locale" clearable placeholder="语言" @change="refreshCatalogI18nCoverage">
+                <el-option v-for="item in CATALOG_I18N_LOCALE_OPTIONS" :key="item.value" :label="item.label" :value="item.value" />
+              </el-select>
+              <el-select v-model="catalogI18nQuery.field" clearable filterable placeholder="字段" @change="refreshCatalogI18nCoverage">
+                <el-option v-for="item in catalogI18nFieldSelectOptions" :key="item.value" :label="item.label" :value="item.value" />
+              </el-select>
+              <el-select v-model="catalogI18nQuery.publicDisplayStatus" clearable placeholder="公开状态" @change="refreshCatalogI18nCoverage">
+                <el-option v-for="item in publicDisplayOptions" :key="item.value" :label="item.label" :value="item.value" />
+              </el-select>
+              <el-select v-model="catalogI18nQuery.limit" placeholder="返回数量" @change="refreshCatalogI18nCoverage">
+                <el-option label="50 条" :value="50" />
+                <el-option label="100 条" :value="100" />
+                <el-option label="200 条" :value="200" />
+              </el-select>
+            </div>
+            <div class="page-toolbar__right">
+              <el-switch
+                v-model="catalogI18nQuery.includeHidden"
+                active-text="含隐藏"
+                inactive-text="仅 Ready"
+                @change="refreshCatalogI18nCoverage"
+              />
+            </div>
+          </div>
+
+          <div class="section-subtitle import-issue-title">多语言业务字段问题</div>
+          <div class="i18n-admin-table-wrap">
+            <el-table :data="catalogI18nIssues" border max-height="520" empty-text="当前筛选下暂无多语言业务数据问题">
+              <el-table-column label="风险" min-width="320">
+                <template #default="scope">
+                  <div class="quality-risk-cell">
+                    <div class="quality-risk-cell__title">
+                      <el-tag size="small" :type="catalogI18nRiskTagType(catalogI18nFrontendRisk(scope.row))" effect="plain">
+                        {{ catalogI18nFrontendRisk(scope.row).ability }}
+                      </el-tag>
+                      <strong>{{ catalogI18nFrontendRisk(scope.row).title }}</strong>
+                    </div>
+                    <span>{{ catalogI18nFrontendRisk(scope.row).summary }}</span>
+                    <small>影响页面：{{ catalogI18nFrontendRisk(scope.row).pages.join("、") }}</small>
+                  </div>
+                </template>
+              </el-table-column>
+              <el-table-column label="对象" min-width="220">
+                <template #default="scope">
+                  <div class="quality-risk-cell quality-risk-cell--compact">
+                    <strong>{{ catalogI18nEntityLabel(scope.row.entityType) }} #{{ scope.row.entityId }}</strong>
+                    <span>{{ scope.row.slug || "-" }}</span>
+                  </div>
+                </template>
+              </el-table-column>
+              <el-table-column label="字段 / 语言" min-width="220">
+                <template #default="scope">
+                  <div class="quality-risk-cell quality-risk-cell--compact">
+                    <strong>{{ catalogI18nFieldLabel(scope.row) }}</strong>
+                    <span>{{ scope.row.field }} · {{ catalogI18nLocaleLabel(scope.row.locale) }}</span>
+                    <small>{{ catalogI18nIssueCodeLabel(scope.row.code) }}</small>
+                  </div>
+                </template>
+              </el-table-column>
+              <el-table-column label="公开状态" min-width="150">
+                <template #default="scope">
+                  <el-tag :type="statusTagType(scope.row.publicDisplayStatus)" effect="plain">
+                    {{ optionLabel(publicDisplayOptions, scope.row.publicDisplayStatus) }}
+                  </el-tag>
+                </template>
+              </el-table-column>
+              <el-table-column prop="message" label="问题说明" min-width="260" show-overflow-tooltip />
+              <el-table-column label="样本" min-width="180" show-overflow-tooltip>
+                <template #default="scope">{{ scope.row.sample || "-" }}</template>
+              </el-table-column>
+              <el-table-column label="操作" width="120" fixed="right">
+                <template #default="scope">
+                  <RouterLink :to="catalogI18nIssueRoute(scope.row)">
+                    <el-button link type="primary">去修复</el-button>
+                  </RouterLink>
+                </template>
+              </el-table-column>
+            </el-table>
+          </div>
+          <el-alert
+            v-if="catalogI18nSummary.issues.total > catalogI18nSummary.issues.returned"
+            class="import-issue-limit"
+            type="info"
+            :title="`当前返回 ${catalogI18nSummary.issues.returned} 条，共 ${catalogI18nSummary.issues.total} 条。请通过实体、语言、字段或公开状态继续缩小范围。`"
+            show-icon
+            :closable="false"
+          />
+        </section>
+      </div>
     </el-tab-pane>
 
     <el-tab-pane label="操作日志" name="logs">
@@ -255,7 +426,23 @@ import { useRoute } from "vue-router";
 import { ElMessage, ElMessageBox, type FormInstance, type FormRules } from "element-plus";
 import { adminApi } from "@/api/admin";
 import { useAccess } from "@/utils/access";
-import { DEFAULT_OPTIONS, dictionaryOptions, statusTagType, type DictionaryItem } from "@/utils/adminOptions";
+import { DEFAULT_OPTIONS, dictionaryOptions, optionLabel, statusTagType, type DictionaryItem } from "@/utils/adminOptions";
+import {
+  CATALOG_I18N_ENTITY_OPTIONS,
+  CATALOG_I18N_LOCALE_OPTIONS,
+  catalogI18nEntityLabel,
+  catalogI18nFieldLabel,
+  catalogI18nFieldOptions,
+  catalogI18nFrontendRisk,
+  catalogI18nIssueCodeLabel,
+  catalogI18nIssueRoute,
+  catalogI18nLocaleLabel,
+  catalogI18nRiskTagType,
+  normalizeCatalogI18nReport,
+  type CatalogI18nEntityFilter,
+  type CatalogI18nReport
+} from "@/utils/catalogI18nGovernance";
+import { qualityIssueFrontendRisk, qualityRiskTagType } from "@/utils/qualityRisk";
 
 const route = useRoute();
 const { hasPermission } = useAccess();
@@ -263,6 +450,7 @@ const canUpdate = computed(() => hasPermission("settings:update"));
 const canViewLogs = computed(() => hasPermission("log:view"));
 const canRefreshImport = computed(() => hasPermission("settings:view") && hasPermission("school:view") && hasPermission("program:view"));
 const canRunQualityCheck = computed(() => canUpdate.value && canRefreshImport.value);
+const canViewCatalogI18n = computed(() => hasPermission("settings:view") && hasPermission("school:view") && hasPermission("program:view"));
 const activeTab = ref(typeof route.query.tab === "string" ? route.query.tab : "configs");
 const configs = ref<any[]>([]);
 const dictionaries = ref<DictionaryItem[]>([]);
@@ -313,11 +501,25 @@ const importError = ref("");
 const catalogIssues = ref<any[]>([]);
 const catalogIssueLimit = ref(0);
 const hasMoreCatalogIssues = ref(false);
+const catalogI18nLoading = ref(false);
+const catalogI18nError = ref("");
+const catalogI18nIssues = ref<CatalogI18nReport["issues"]>([]);
+const catalogI18nSummary = reactive(normalizeCatalogI18nReport({}).summary);
+const catalogI18nQuery = reactive({
+  entityType: "all" as CatalogI18nEntityFilter,
+  locale: "",
+  field: "",
+  publicDisplayStatus: "",
+  includeHidden: true,
+  limit: 200
+});
 
 const dictionaryTypeOptions = computed(() => {
   const fromDictionary = dictionaryOptions(dictionaries.value, "dictionary_type");
   return fromDictionary.length ? fromDictionary : DEFAULT_OPTIONS.dictionary_type;
 });
+const publicDisplayOptions = computed(() => dictionaryOptions(dictionaries.value, "public_display_status"));
+const catalogI18nFieldSelectOptions = computed(() => catalogI18nFieldOptions(catalogI18nQuery.entityType));
 const filteredDictionaries = computed(() => (dictFilter.value ? dictionaries.value.filter((item) => item.dictType === dictFilter.value) : dictionaries.value));
 const issueRows = computed(() => [
   { label: "High 级未处理问题", count: importOverview.issueSeverityCounts.high || 0, hint: "处理后才允许发布为 Ready" },
@@ -350,6 +552,15 @@ watch(
   () => route.query.tab,
   (tab) => {
     if (typeof tab === "string") activeTab.value = tab;
+  }
+);
+
+watch(
+  () => catalogI18nQuery.entityType,
+  () => {
+    if (catalogI18nQuery.field && !catalogI18nFieldSelectOptions.value.some((option) => option.value === catalogI18nQuery.field)) {
+      catalogI18nQuery.field = "";
+    }
   }
 );
 
@@ -500,6 +711,51 @@ const updateQualityIssue = async (issue: any, status: "resolved" | "ignored") =>
   }
 };
 
+const refreshCatalogI18nCoverage = async () => {
+  catalogI18nError.value = "";
+  if (!canViewCatalogI18n.value) {
+    catalogI18nError.value = "当前账号缺少设置、学校或专业查看权限，无法读取业务数据多语言治理结果。";
+    catalogI18nIssues.value = [];
+    Object.assign(catalogI18nSummary, normalizeCatalogI18nReport({}).summary);
+    return;
+  }
+
+  catalogI18nLoading.value = true;
+  try {
+    const params: Record<string, unknown> = {
+      includeHidden: catalogI18nQuery.includeHidden,
+      limit: catalogI18nQuery.limit
+    };
+    if (catalogI18nQuery.entityType !== "all") params.entityType = catalogI18nQuery.entityType;
+    if (catalogI18nQuery.locale) params.locale = catalogI18nQuery.locale;
+    if (catalogI18nQuery.field) params.field = catalogI18nQuery.field;
+    if (catalogI18nQuery.publicDisplayStatus) params.publicDisplayStatus = catalogI18nQuery.publicDisplayStatus;
+
+    const data = await adminApi.catalogLocalizationCoverage(params);
+    const report = normalizeCatalogI18nReport(data);
+    Object.assign(catalogI18nSummary, report.summary);
+    catalogI18nIssues.value = report.issues;
+  } catch (error) {
+    catalogI18nError.value = errorMessage(error);
+    catalogI18nIssues.value = [];
+    Object.assign(catalogI18nSummary, normalizeCatalogI18nReport({}).summary);
+  } finally {
+    catalogI18nLoading.value = false;
+  }
+};
+
+const resetCatalogI18nFilters = async () => {
+  Object.assign(catalogI18nQuery, {
+    entityType: "all",
+    locale: "",
+    field: "",
+    publicDisplayStatus: "",
+    includeHidden: true,
+    limit: 200
+  });
+  await refreshCatalogI18nCoverage();
+};
+
 const parseExtraJson = () => {
   const text = dictExtraText.value.trim();
   if (!text) return null;
@@ -583,6 +839,6 @@ const errorMessage = (error: unknown) => (error instanceof Error ? error.message
 
 onMounted(async () => {
   await load();
-  await Promise.all([loadLogs(), refreshImportOverview()]);
+  await Promise.all([loadLogs(), refreshImportOverview(), refreshCatalogI18nCoverage()]);
 });
 </script>

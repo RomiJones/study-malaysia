@@ -3,7 +3,7 @@ import { JwtService } from "@nestjs/jwt";
 import { InjectRepository } from "@nestjs/typeorm";
 import { compare, hash } from "bcryptjs";
 import { Repository } from "typeorm";
-import type { AuthPayload, AuthResponse } from "@studymy/shared";
+import { SMART_RECOMMENDATION_REQUIRED_PROFILE_FIELDS, type AuthPayload, type AuthResponse } from "@studymy/shared";
 import { PlannerProfileEntity, UserEntity } from "../db/entities.js";
 
 @Injectable()
@@ -41,6 +41,13 @@ export class AuthService {
     await this.plannerProfileRepository.save(
       this.plannerProfileRepository.create({
         userId: user.id,
+        profileVersion: 1,
+        completenessStatus: "incomplete",
+        requiredProfileFields: [...SMART_RECOMMENDATION_REQUIRED_PROFILE_FIELDS],
+        missingProfileFields: [...SMART_RECOMMENDATION_REQUIRED_PROFILE_FIELDS],
+        profileSnapshotHash: "",
+        profileCompletedAt: null,
+        recommendationRefreshedAt: null,
         materialProgress: {},
         visaChecklist: {
           offerAccepted: false,

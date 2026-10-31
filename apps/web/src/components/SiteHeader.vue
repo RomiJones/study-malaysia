@@ -45,7 +45,7 @@
             </option>
           </select>
         </label>
-        <RouterLink v-if="session.isLoggedIn" class="primary-action" to="/member">{{ session.user?.displayName || headerMemberLabel }}</RouterLink>
+        <RouterLink v-if="session.isLoggedIn" class="primary-action" to="/member">{{ headerMemberLabel }}</RouterLink>
         <button v-else class="primary-action" @click="$emit('open-auth', 'login')">{{ headerLoginLabel }}</button>
       </div>
     </div>

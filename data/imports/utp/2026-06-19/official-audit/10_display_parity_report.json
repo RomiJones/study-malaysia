@@ -1,0 +1,119 @@
+{
+  "schemaVersion": 1,
+  "surfaces": [
+    {
+      "surface": "institution",
+      "fields": {
+        "profile": {
+          "state": "ready",
+          "sourceId": "institution-home",
+          "sourceUrl": "https://www.utp.edu.my/Pages/Home.aspx"
+        },
+        "officialLinks": {
+          "state": "ready",
+          "sourceId": "institution-home",
+          "sourceUrl": "https://www.utp.edu.my/Pages/Home.aspx"
+        },
+        "auditSummary": {
+          "state": "review",
+          "reason": "Programme records remain needs-review before publication."
+        }
+      }
+    },
+    {
+      "surface": "catalogue",
+      "fields": {
+        "levelCounts": {
+          "state": "review",
+          "reason": "Bachelor official count conflict: overview 14 vs 15 detail URLs."
+        },
+        "statusPartitions": {
+          "state": "ready",
+          "sourceId": "08_candidate_dataset.json",
+          "sourceUrl": "data/imports/utp/2026-06-19/official-audit/08_candidate_dataset.json"
+        },
+        "publicFilter": {
+          "state": "ready",
+          "reason": "No needs-review record is marked ready for public list."
+        }
+      }
+    },
+    {
+      "surface": "program-list",
+      "fields": {
+        "programmeName": {
+          "state": "review",
+          "reason": "Names are official but records are not public-ready."
+        },
+        "faculty": {
+          "state": "review",
+          "reason": "Faculty/department mapping needs Ian review for some postgraduate rows."
+        },
+        "durationYears": {
+          "state": "review",
+          "reason": "Some UG durations differ across official overview and fee table."
+        },
+        "totalTuition": {
+          "state": "review",
+          "reason": "Research fees are annual/rate-only; some coursework fees conflict."
+        },
+        "ieltsSummary": {
+          "state": "review",
+          "reason": "Language rules captured; TOEFL label/scale in PG source needs review."
+        },
+        "intakeMonths": {
+          "state": "ready",
+          "sourceId": "ug-international-apply",
+          "sourceUrl": "https://www.utp.edu.my/Pages/Admission/Undergraduate/International/How-To-Apply.aspx"
+        }
+      }
+    },
+    {
+      "surface": "program-detail",
+      "fields": {
+        "identity": {
+          "state": "review",
+          "reason": "One MPhil detail page transport-blocked."
+        },
+        "requirements": {
+          "state": "review",
+          "reason": "General-rule and programme-specific requirements captured; mapping needs review before ready."
+        },
+        "languageRoutes": {
+          "state": "review",
+          "reason": "IELTS/TOEFL captured; PG TOEFL wording requires review."
+        },
+        "courseSetting": {
+          "state": "review",
+          "reason": "Curriculum/course extraction incomplete for several records."
+        },
+        "careerDirections": {
+          "state": "review",
+          "reason": "Career fields are official where extracted; absent fields remain official-unpublished."
+        },
+        "studyTypeArrangement": {
+          "state": "review",
+          "reason": "ODL separated from study type; conventional attendance needs review."
+        },
+        "officialSources": {
+          "state": "ready",
+          "sourceId": "05_source_cache_index.json",
+          "sourceUrl": "data/imports/utp/2026-06-19/official-audit/05_source_cache_index.json"
+        }
+      }
+    },
+    {
+      "surface": "leakage",
+      "fields": {
+        "readyPublicRecordsOnly": {
+          "state": "ready",
+          "reason": "All 63 records are needs-review; public ready count is 0."
+        },
+        "reviewLeakage": {
+          "state": "ready",
+          "reason": "No record is marked publicDisplayStatus=ready."
+        }
+      }
+    }
+  ]
+}

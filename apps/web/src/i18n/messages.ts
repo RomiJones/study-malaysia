@@ -206,6 +206,9 @@ const en = {
     displayNamePlaceholder: "Your display name",
     submitLogin: "Sign in and continue",
     submitRegister: "Register and continue",
+    testAccountTitle: "Member test account",
+    testAccountHint: "Testing only. Use this account to open the member center quickly.",
+    testAccountLogin: "Use test account",
     failed: "Authentication failed. Please check your account details and try again.",
     syncNotice: "Syncing local shortlist and application planner...",
     guestSyncHint: "Guest shortlist, compare list and planner data will sync after sign-in."
@@ -759,6 +762,9 @@ const zhCN = {
     displayNamePlaceholder: "你的昵称",
     submitLogin: "登录并继续",
     submitRegister: "注册并继续",
+    testAccountTitle: "会员测试账号",
+    testAccountHint: "测试阶段专用，可直接进入会员中心验证流程。",
+    testAccountLogin: "使用测试账号登录",
     failed: "认证失败，请检查账号信息后重试。",
     syncNotice: "正在同步本地收藏和申请规划...",
     guestSyncHint: "访客态的收藏、对比和申请规划会保存在本机，登录后可同步。"
@@ -1314,6 +1320,9 @@ const ms = mergeMessages(en, {
     displayNamePlaceholder: "Nama paparan anda",
     submitLogin: "Log masuk dan teruskan",
     submitRegister: "Daftar dan teruskan",
+    testAccountTitle: "Akaun ujian ahli",
+    testAccountHint: "Untuk fasa ujian sahaja. Gunakan akaun ini untuk membuka pusat ahli dengan cepat.",
+    testAccountLogin: "Guna akaun ujian",
     failed: "Pengesahan gagal. Sila semak butiran akaun dan cuba lagi.",
     syncNotice: "Menyegerakkan senarai pendek tempatan dan perancang permohonan...",
     guestSyncHint: "Senarai pendek, senarai perbandingan dan perancang tetamu akan disegerakkan selepas log masuk."

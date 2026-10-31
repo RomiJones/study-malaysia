@@ -306,8 +306,17 @@ export function mapPlannerProfile(entity?: PlannerProfileEntity | null): Planner
     gpa: entity?.gpa ?? 3,
     ielts: entity?.ielts ?? 5.5,
     experience: entity?.experience ?? "0-1 years",
-    acceptNoLanguage: entity?.acceptNoLanguage ?? true
+    acceptNoLanguage: entity?.acceptNoLanguage ?? true,
+    contactInfo: normalizeProfileSection(entity?.contactInfo),
+    academicBackground: normalizeProfileSection(entity?.academicBackground),
+    languageProfile: normalizeProfileSection(entity?.languageProfile),
+    studyPreferences: normalizeProfileSection(entity?.studyPreferences),
+    serviceNeeds: normalizeProfileSection(entity?.serviceNeeds)
   };
+}
+
+function normalizeProfileSection<T extends object>(value?: unknown): T {
+  return value && typeof value === "object" ? value as T : {} as T;
 }
 
 export function mapPlannerMaterials(entity?: PlannerProfileEntity | null): PlannerMaterialItem[] {

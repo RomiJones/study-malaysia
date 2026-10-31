@@ -14,6 +14,7 @@
       "official-rate-only": 14
     },
     "fieldOfResearchRows": 37,
+    "courseSettingRows": 52,
     "odlRows": 24,
     "reviewedDecisionRows": 58
   },
@@ -24,9 +25,11 @@
     "nonPrimaryOfficialFeeStatus": "21/153",
     "academicRequirement": "153/153 via UTM general master entry requirement",
     "languageRequirement": "153/153 via UTM English language requirement page",
+    "languageRequirementScores": "153/153 structured official score rows; 3 TESL rows use the TESL postgraduate higher-score rule",
     "intake": "153/153 via UTM FAQ / ODL source",
     "applicationDocuments": "153/153 via UTM international registration document checklist",
-    "curriculum": "not required for this statistical collection baseline; ODL page provides curriculum for selected ODL programmes and faculty brochures are captured for follow-up enrichment."
+    "curriculum": "52/153 rows have official research-field or specialization labels from UTM programme rows; remaining rows are official-unpublished for detailed course/module structure after current UTM international postgraduate faculty pages, admissions sources, ODL sources and captured brochures were reviewed.",
+    "careers": "official-unpublished after current UTM international postgraduate faculty pages, admissions sources, ODL sources and captured brochures were reviewed for this baseline; no structured programme-level career list is published for every master row."
   },
   "needsReview": [],
   "transportExceptions": []

@@ -89,6 +89,9 @@ describe("catalog localization API service", () => {
     const report = await service.getCoverageReport({ limit: "20" });
 
     assert.equal(report.contract.endpoint, "/api/i18n/catalog-localization/coverage");
+    assert.ok(report.contract.query.field.includes("university.name"));
+    assert.ok(report.contract.query.field.includes("program.requirement.note"));
+    assert.ok(report.contract.query.publicDisplayStatus.includes("hidden-unverified"));
     assert.equal(report.query.entityType, "all");
     assert.equal(report.summary.scanned.universities, 1);
     assert.equal(report.summary.scanned.programs, 1);
@@ -108,7 +111,7 @@ describe("catalog localization API service", () => {
     );
   });
 
-  test("supports entity, locale, hidden-record and limit query controls", async () => {
+  test("supports entity, locale, field, public status, hidden-record and limit query controls", async () => {
     const service = new CatalogLocalizationService(
       repository([university()]) as any,
       repository([
@@ -119,12 +122,16 @@ describe("catalog localization API service", () => {
     const report = await service.getCoverageReport({
       entityType: "program",
       locale: "en",
+      field: "program.faculty",
+      publicDisplayStatus: "hidden-unverified",
       includeHidden: "true",
       limit: "1"
     });
 
     assert.equal(report.query.entityType, "program");
     assert.equal(report.query.locale, "en");
+    assert.equal(report.query.field, "program.faculty");
+    assert.equal(report.query.publicDisplayStatus, "hidden-unverified");
     assert.equal(report.query.includeHidden, true);
     assert.equal(report.summary.scanned.universities, 0);
     assert.equal(report.summary.scanned.programs, 1);
@@ -269,6 +276,16 @@ describe("catalog localization API service", () => {
         assert.deepEqual(response.details.supportedLocales, ["en", "ms", "zh-CN", "zh-TW"]);
         return true;
       }
+    );
+
+    await assert.rejects(
+      () => service.getCoverageReport({ field: "program.unknown" }),
+      (error) => getExceptionResponse(error).code === "INVALID_FIELD"
+    );
+
+    await assert.rejects(
+      () => service.getCoverageReport({ publicDisplayStatus: "draft" }),
+      (error) => getExceptionResponse(error).code === "INVALID_PUBLIC_DISPLAY_STATUS"
     );
 
     await assert.rejects(

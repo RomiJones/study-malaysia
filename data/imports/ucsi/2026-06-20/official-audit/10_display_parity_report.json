@@ -1,0 +1,140 @@
+{
+  "schemaVersion": 1,
+  "surfaces": [
+    {
+      "surface": "institution",
+      "fields": {
+        "name": {
+          "state": "ready",
+          "sourceUrl": "https://www.ucsiuniversity.edu.my/",
+          "evidencePointer": "institution-homepage"
+        },
+        "website": {
+          "state": "ready",
+          "sourceUrl": "https://www.ucsiuniversity.edu.my/",
+          "evidencePointer": "institution-homepage"
+        },
+        "internationalLinks": {
+          "state": "ready",
+          "sourceUrl": "https://www.ucsiuniversity.edu.my/international-students",
+          "evidencePointer": "international-students"
+        },
+        "profileLocalization": {
+          "state": "review",
+          "reason": "Localized profile copy requires Ian review.",
+          "evidencePointer": "candidate_dataset.university"
+        }
+      }
+    },
+    {
+      "surface": "catalogue",
+      "fields": {
+        "levelCounts": {
+          "state": "review",
+          "reason": "Counts are candidate counts pending fee and eligibility review.",
+          "evidencePointer": "03_level_manifest.json"
+        },
+        "statusPartitions": {
+          "state": "review",
+          "reason": "All candidates remain needs-review.",
+          "evidencePointer": "08_candidate_dataset.json"
+        },
+        "publicFiltering": {
+          "state": "ready",
+          "reason": "All candidates are needs-review and non-public.",
+          "evidencePointer": "08_candidate_dataset.json"
+        }
+      }
+    },
+    {
+      "surface": "program-list",
+      "fields": {
+        "programmeName": {
+          "state": "ready",
+          "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/Kuala-Lumpur",
+          "evidencePointer": "08_candidate_dataset.json"
+        },
+        "faculty": {
+          "state": "ready",
+          "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/Kuala-Lumpur",
+          "evidencePointer": "08_candidate_dataset.json"
+        },
+        "duration": {
+          "state": "review",
+          "reason": "Duration extracted but not normalized for all list rows.",
+          "evidencePointer": "07_field_coverage_matrix.json"
+        },
+        "tuition": {
+          "state": "review",
+          "reason": "Exact full-duration international tuition is unresolved.",
+          "evidencePointer": "11_exception_queue.json"
+        },
+        "ieltsSummary": {
+          "state": "review",
+          "reason": "IELTS summary extraction needs a dedicated language parser.",
+          "evidencePointer": "07_field_coverage_matrix.json"
+        },
+        "intakeMonths": {
+          "state": "review",
+          "reason": "Intake months extracted but require list formatter review.",
+          "evidencePointer": "07_field_coverage_matrix.json"
+        }
+      }
+    },
+    {
+      "surface": "program-detail",
+      "fields": {
+        "requirements": {
+          "state": "review",
+          "reason": "Academic requirements were extracted but need per-route normalization.",
+          "evidencePointer": "07_field_coverage_matrix.json"
+        },
+        "languageRoutes": {
+          "state": "review",
+          "reason": "Language routes were extracted but need score parser review.",
+          "evidencePointer": "07_field_coverage_matrix.json"
+        },
+        "courseSetting": {
+          "state": "review",
+          "reason": "Course setting was extracted where present; module grouping needs localization review.",
+          "evidencePointer": "07_field_coverage_matrix.json"
+        },
+        "careers": {
+          "state": "review",
+          "reason": "Career fields require official-source-backed localization review.",
+          "evidencePointer": "07_field_coverage_matrix.json"
+        },
+        "sourceLinks": {
+          "state": "ready",
+          "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/Kuala-Lumpur",
+          "evidencePointer": "09_source_to_candidate_trace.json"
+        },
+        "localization": {
+          "state": "review",
+          "reason": "Chinese/Malay localization not finalized.",
+          "evidencePointer": "15_public_display_hygiene_audit.json"
+        }
+      }
+    },
+    {
+      "surface": "leakage",
+      "fields": {
+        "needsReviewHiddenFromPublic": {
+          "state": "ready",
+          "reason": "publicDisplayStatus=needs-review for all candidates.",
+          "evidencePointer": "08_candidate_dataset.json"
+        },
+        "unavailableHiddenFromPublic": {
+          "state": "ready",
+          "reason": "No unavailable candidates in this collect-only dataset.",
+          "evidencePointer": "08_candidate_dataset.json"
+        },
+        "rawEnglishChineseLeakage": {
+          "state": "ready",
+          "reason": "No public Chinese output is generated in this collect-only batch; all candidate rows remain needs-review.",
+          "evidencePointer": "15_public_display_hygiene_audit.json"
+        }
+      }
+    }
+  ]
+}

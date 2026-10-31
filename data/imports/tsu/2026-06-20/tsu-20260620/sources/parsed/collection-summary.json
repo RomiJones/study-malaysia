@@ -1,0 +1,15 @@
+{
+  "retrievedAt": "2026-06-20T15:54:12+00:00",
+  "officialRows": 95,
+  "candidateRows": 89,
+  "byLevel": {
+    "bachelor": 46,
+    "master": 28,
+    "phd": 15
+  },
+  "ready": 89,
+  "needsReview": 0,
+  "outOfScopeRows": 6,
+  "feePdfsCached": 53,
+  "reviewExceptions": 0
+}

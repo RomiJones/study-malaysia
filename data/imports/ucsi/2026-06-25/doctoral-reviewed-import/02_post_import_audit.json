@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "mode": "reviewed-doctoral-published",
+  "createdAt": "2026-06-24T17:34:13.025Z",
+  "institution": {
+    "code": "UCSI",
+    "level": "doctoral",
+    "importedRows": 18,
+    "byLevel": {
+      "bachelor": 0,
+      "master": 0,
+      "phd": 18
+    }
+  },
+  "database": {
+    "backupPath": "tmp/backups/ucsi-reviewed-doctoral-before-2026-06-24T17-34-12-915Z.json",
+    "transactionalImport": "passed",
+    "catalogCacheCleared": false,
+    "scopedRows": 18,
+    "publicReviewedDoctoralRows": 18,
+    "oldReviewRowsVisible": 0,
+    "oldReviewRowsHidden": 118,
+    "legacyActiveRowsPreserved": 124,
+    "existingPublicRowsPreserved": true
+  },
+  "publicVisibility": {
+    "before": {
+      "universityExists": true,
+      "universityId": 10,
+      "code": "UCSI",
+      "slug": "ucsi-university",
+      "isPublished": true,
+      "publicDisplayStatus": "ready",
+      "publicProgramRows": 24,
+      "readyProgramRows": 24,
+      "reviewProgramRows": 118,
+      "reviewImportRows": 118
+    },
+    "after": {
+      "universityExists": true,
+      "universityId": 10,
+      "code": "UCSI",
+      "slug": "ucsi-university",
+      "isPublished": true,
+      "publicDisplayStatus": "ready",
+      "publicProgramRows": 24,
+      "readyProgramRows": 24,
+      "reviewProgramRows": 118,
+      "reviewImportRows": 118
+    },
+    "reviewedDoctoralRowsPublished": true,
+    "publicReadyPrefixRows": 18,
+    "publicUniversityReviewLeakage": 0
+  },
+  "reviewSurface": {
+    "expectedRows": 18,
+    "actualRows": 18,
+    "statusPartition": {
+      "ready": 18,
+      "needsReview": 0,
+      "published": 18
+    },
+    "feePartition": {
+      "matched-official": 18
+    },
+    "officialSourceStatusPartition": {
+      "official-verified": 18
+    },
+    "officialUnpublishedFieldRows": 18,
+    "warnRows": 1
+  },
+  "acceptedDisplayExceptions": [
+    "Doctor of Business Administration keeps UCSI's currently published approval code display while retaining a WARN note.",
+    "Fields not published by UCSI remain displayed as official unpublished.",
+    "No inferred application deadline, supervisor system, credit hour or China-specific equivalency is added where UCSI did not publish it."
+  ],
+  "rollback": {
+    "available": true,
+    "path": "tmp/backups/ucsi-reviewed-doctoral-before-2026-06-24T17-34-12-915Z.json",
+    "scope": "UCSI university row and all UCSI programmes captured before reviewed doctoral publication."
+  }
+}

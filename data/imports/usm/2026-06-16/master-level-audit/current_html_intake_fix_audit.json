@@ -1,0 +1,426 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-06-16T14:16:06.508Z",
+  "auditMode": "current-official-html-intake-diff-and-fix",
+  "coverage": {
+    "directHtmlRecordChecks": 233,
+    "jinaFallbackRecordChecks": 29,
+    "transportUnavailableRecordChecks": 64,
+    "recordsWithCurrentIntakeEvidence": 116
+  },
+  "differencesDetectedBeforeFix": 23,
+  "remainingDifferencesAfterRegeneration": 0,
+  "orderOnlyDifferencesAfterRegeneration": 2,
+  "refreshedCandidateRows20260616": 107,
+  "officialUnpublishedCandidateRowsAfterFix": 13,
+  "samples": [
+    {
+      "code": "USM-PG-ARTICLE-356-6C394BC4",
+      "officialName": "MASTER IN GLOBAL ISLAMIC FINANCE",
+      "previousCandidate": "Programme-specific intake not published on the public detail page",
+      "currentHtmlIntake": "April & October",
+      "candidateIntake": {
+        "textEnOfficial": "April & October",
+        "status": "official-programme-page-refreshed-2026-06-16"
+      },
+      "databaseOfficialIntake": "April & October",
+      "databaseIntakeMonths": [
+        "April",
+        "October"
+      ],
+      "fixed": true
+    },
+    {
+      "code": "USM-PG-ARTICLE-190-DE25AD0C",
+      "officialName": "MASTER OF ARCHITECTURE",
+      "previousCandidate": "Programme-specific intake not published on the public detail page",
+      "currentHtmlIntake": "October",
+      "candidateIntake": {
+        "textEnOfficial": "October",
+        "status": "official-programme-page-refreshed-2026-06-16"
+      },
+      "databaseOfficialIntake": "October",
+      "databaseIntakeMonths": [
+        "October"
+      ],
+      "fixed": true
+    },
+    {
+      "code": "USM-PG-ARTICLE-185-36AA5C56",
+      "officialName": "MASTER OF SCIENCE (COMPUTER SCIENCE)",
+      "previousCandidate": "Semester I: September-February; Semester II: March-August",
+      "currentHtmlIntake": "April & October",
+      "candidateIntake": {
+        "textEnOfficial": "April & October",
+        "status": "official-programme-page-refreshed-2026-06-16"
+      },
+      "databaseOfficialIntake": "April & October",
+      "databaseIntakeMonths": [
+        "April",
+        "October"
+      ],
+      "fixed": true
+    }
+  ],
+  "fixedRecords": [
+    {
+      "code": "USM-PG-ARTICLE-356-6C394BC4",
+      "officialName": "MASTER IN GLOBAL ISLAMIC FINANCE",
+      "previousCandidate": "Programme-specific intake not published on the public detail page",
+      "currentHtmlIntake": "April & October",
+      "candidateIntake": {
+        "textEnOfficial": "April & October",
+        "status": "official-programme-page-refreshed-2026-06-16"
+      },
+      "databaseOfficialIntake": "April & October",
+      "databaseIntakeMonths": [
+        "April",
+        "October"
+      ],
+      "fixed": true
+    },
+    {
+      "code": "USM-PG-ARTICLE-190-DE25AD0C",
+      "officialName": "MASTER OF ARCHITECTURE",
+      "previousCandidate": "Programme-specific intake not published on the public detail page",
+      "currentHtmlIntake": "October",
+      "candidateIntake": {
+        "textEnOfficial": "October",
+        "status": "official-programme-page-refreshed-2026-06-16"
+      },
+      "databaseOfficialIntake": "October",
+      "databaseIntakeMonths": [
+        "October"
+      ],
+      "fixed": true
+    },
+    {
+      "code": "USM-PG-ARTICLE-562-2AAFA9B6",
+      "officialName": "MASTER OF BUSINESS ADMINISTRATION (MBA) DOUBLE DEGREE - UNIVERSITY OF GLASGOW",
+      "previousCandidate": "Programme-specific intake not published on the public detail page",
+      "currentHtmlIntake": "October",
+      "candidateIntake": {
+        "textEnOfficial": "October",
+        "status": "official-programme-page-refreshed-2026-06-16"
+      },
+      "databaseOfficialIntake": "October",
+      "databaseIntakeMonths": [
+        "October"
+      ],
+      "fixed": true
+    },
+    {
+      "code": "USM-PG-ARTICLE-345-346DCB40",
+      "officialName": "MASTER OF COMMUNICATION IN INTEGRATED MARKETING COMMUNICATION *USM@KL",
+      "previousCandidate": "Programme-specific intake not published on the public detail page",
+      "currentHtmlIntake": "April & October",
+      "candidateIntake": {
+        "textEnOfficial": "April & October",
+        "status": "official-programme-page-refreshed-2026-06-16"
+      },
+      "databaseOfficialIntake": "April & October",
+      "databaseIntakeMonths": [
+        "April",
+        "October"
+      ],
+      "fixed": true
+    },
+    {
+      "code": "USM-PG-ARTICLE-198-D33A1020",
+      "officialName": "MASTER OF COMPUTER SCIENCE",
+      "previousCandidate": "Programme-specific intake not published on the public detail page",
+      "currentHtmlIntake": "April & October",
+      "candidateIntake": {
+        "textEnOfficial": "April & October",
+        "status": "official-programme-page-refreshed-2026-06-16"
+      },
+      "databaseOfficialIntake": "April & October",
+      "databaseIntakeMonths": [
+        "April",
+        "October"
+      ],
+      "fixed": true
+    },
+    {
+      "code": "USM-PG-ARTICLE-191-42EA011D",
+      "officialName": "MASTER OF DATA SCIENCE",
+      "previousCandidate": "Programme-specific intake not published on the public detail page",
+      "currentHtmlIntake": "April & October",
+      "candidateIntake": {
+        "textEnOfficial": "April & October",
+        "status": "official-programme-page-refreshed-2026-06-16"
+      },
+      "databaseOfficialIntake": "April & October",
+      "databaseIntakeMonths": [
+        "April",
+        "October"
+      ],
+      "fixed": true
+    },
+    {
+      "code": "USM-PG-ARTICLE-816-97D94C5C",
+      "officialName": "MASTER OF DESIGN IN CREATIVE INDUSTRY",
+      "previousCandidate": "Programme-specific intake not published on the public detail page",
+      "currentHtmlIntake": "October",
+      "candidateIntake": {
+        "textEnOfficial": "October",
+        "status": "official-programme-page-refreshed-2026-06-16"
+      },
+      "databaseOfficialIntake": "October",
+      "databaseIntakeMonths": [
+        "October"
+      ],
+      "fixed": true
+    },
+    {
+      "code": "USM-PG-ARTICLE-1478-65126CE8",
+      "officialName": "MASTER OF DESIGN IN CREATIVE INDUSTRY (OFFSHORE USM INTERNATIONAL)",
+      "previousCandidate": "Programme-specific intake not published on the public detail page",
+      "currentHtmlIntake": "September",
+      "candidateIntake": {
+        "textEnOfficial": "September",
+        "status": "official-programme-page-refreshed-2026-06-16"
+      },
+      "databaseOfficialIntake": "September",
+      "databaseIntakeMonths": [
+        "September"
+      ],
+      "fixed": true
+    },
+    {
+      "code": "USM-PG-ARTICLE-1226-61E0EF9C",
+      "officialName": "MASTER OF DESIGN IN CREATIVE INDUSTRY *USM@KL",
+      "previousCandidate": "Programme-specific intake not published on the public detail page",
+      "currentHtmlIntake": "March",
+      "candidateIntake": {
+        "textEnOfficial": "March",
+        "status": "official-programme-page-refreshed-2026-06-16"
+      },
+      "databaseOfficialIntake": "March",
+      "databaseIntakeMonths": [
+        "March"
+      ],
+      "fixed": true
+    },
+    {
+      "code": "USM-PG-ARTICLE-192-E15D3E0E",
+      "officialName": "MASTER OF ENVIRONMENTAL SCIENCE",
+      "previousCandidate": "Programme-specific intake not published on the public detail page",
+      "currentHtmlIntake": "April & October",
+      "candidateIntake": {
+        "textEnOfficial": "April & October",
+        "status": "official-programme-page-refreshed-2026-06-16"
+      },
+      "databaseOfficialIntake": "April & October",
+      "databaseIntakeMonths": [
+        "April",
+        "October"
+      ],
+      "fixed": true
+    },
+    {
+      "code": "USM-PG-ARTICLE-341-25F866C6",
+      "officialName": "MASTER OF MANAGEMENT IN GLOBAL ISLAMIC FINANCE",
+      "previousCandidate": "Programme-specific intake not published on the public detail page",
+      "currentHtmlIntake": "April & October",
+      "candidateIntake": {
+        "textEnOfficial": "April & October",
+        "status": "official-programme-page-refreshed-2026-06-16"
+      },
+      "databaseOfficialIntake": "April & October",
+      "databaseIntakeMonths": [
+        "April",
+        "October"
+      ],
+      "fixed": true
+    },
+    {
+      "code": "USM-PG-ARTICLE-357-1651A3F3",
+      "officialName": "MASTER OF PROFESSIONAL MANAGEMENT",
+      "previousCandidate": "Programme-specific intake not published on the public detail page",
+      "currentHtmlIntake": "April & October",
+      "candidateIntake": {
+        "textEnOfficial": "April & October",
+        "status": "official-programme-page-refreshed-2026-06-16"
+      },
+      "databaseOfficialIntake": "April & October",
+      "databaseIntakeMonths": [
+        "April",
+        "October"
+      ],
+      "fixed": true
+    },
+    {
+      "code": "USM-PG-ARTICLE-890-22D7982F",
+      "officialName": "MASTER OF PROFESSIONAL MANAGEMENT *USM@KL",
+      "previousCandidate": "Programme-specific intake not published on the public detail page",
+      "currentHtmlIntake": "April & October",
+      "candidateIntake": {
+        "textEnOfficial": "April & October",
+        "status": "official-programme-page-refreshed-2026-06-16"
+      },
+      "databaseOfficialIntake": "April & October",
+      "databaseIntakeMonths": [
+        "April",
+        "October"
+      ],
+      "fixed": true
+    },
+    {
+      "code": "USM-PG-ARTICLE-335-083F609A",
+      "officialName": "MASTER OF PROFESSIONAL MANAGEMENT - EMPM",
+      "previousCandidate": "Programme-specific intake not published on the public detail page",
+      "currentHtmlIntake": "April & October",
+      "candidateIntake": {
+        "textEnOfficial": "April & October",
+        "status": "official-programme-page-refreshed-2026-06-16"
+      },
+      "databaseOfficialIntake": "April & October",
+      "databaseIntakeMonths": [
+        "April",
+        "October"
+      ],
+      "fixed": true
+    },
+    {
+      "code": "USM-PG-ARTICLE-335-CAAB9128",
+      "officialName": "MASTER OF PROFESSIONAL MANAGEMENT - EMPM (MALAYSIA HEC - CENTRAL ASIA)",
+      "previousCandidate": "Programme-specific intake not published on the public detail page",
+      "currentHtmlIntake": "April & October",
+      "candidateIntake": {
+        "textEnOfficial": "April & October",
+        "status": "official-programme-page-refreshed-2026-06-16"
+      },
+      "databaseOfficialIntake": "April & October",
+      "databaseIntakeMonths": [
+        "April",
+        "October"
+      ],
+      "fixed": true
+    },
+    {
+      "code": "USM-PG-ARTICLE-1499-54A1B24B",
+      "officialName": "MASTER OF PROFESSIONAL MANAGEMENT -(OFFSHORE OXUS UNIVERSITY,UZBEKISTAN)",
+      "previousCandidate": "Programme-specific intake not published on the public detail page",
+      "currentHtmlIntake": "April & October",
+      "candidateIntake": {
+        "textEnOfficial": "April & October",
+        "status": "official-programme-page-refreshed-2026-06-16"
+      },
+      "databaseOfficialIntake": "April & October",
+      "databaseIntakeMonths": [
+        "April",
+        "October"
+      ],
+      "fixed": true
+    },
+    {
+      "code": "USM-PG-ARTICLE-1500-3149EB02",
+      "officialName": "MASTER OF PROFESSIONAL MANAGEMENT -(OFFSHORE USM INTERNATIONAL)",
+      "previousCandidate": "Programme-specific intake not published on the public detail page",
+      "currentHtmlIntake": "March & September",
+      "candidateIntake": {
+        "textEnOfficial": "March & September",
+        "status": "official-programme-page-refreshed-2026-06-16"
+      },
+      "databaseOfficialIntake": "March & September",
+      "databaseIntakeMonths": [
+        "March",
+        "September"
+      ],
+      "fixed": true
+    },
+    {
+      "code": "USM-PG-ARTICLE-423-8DE050DC",
+      "officialName": "MASTER OF PUBLIC HEALTH",
+      "previousCandidate": "Programme-specific intake not published on the public detail page",
+      "currentHtmlIntake": "October",
+      "candidateIntake": {
+        "textEnOfficial": "October",
+        "status": "official-programme-page-refreshed-2026-06-16"
+      },
+      "databaseOfficialIntake": "October",
+      "databaseIntakeMonths": [
+        "October"
+      ],
+      "fixed": true
+    },
+    {
+      "code": "USM-PG-ARTICLE-1488-CA798095",
+      "officialName": "MASTER OF SCIENCE (CLINICAL ANATOMY)-(OFFSHORE AL-MUSTAQBAL UNIVERSITY)",
+      "previousCandidate": "Programme-specific intake not published on the public detail page",
+      "currentHtmlIntake": "September",
+      "candidateIntake": {
+        "textEnOfficial": "September",
+        "status": "official-programme-page-refreshed-2026-06-16"
+      },
+      "databaseOfficialIntake": "September",
+      "databaseIntakeMonths": [
+        "September"
+      ],
+      "fixed": true
+    },
+    {
+      "code": "USM-PG-ARTICLE-477-6F3EC668",
+      "officialName": "MASTER OF SCIENCE (COMMUNITY MEDICINE)",
+      "previousCandidate": "Semester I: September-February; Semester II: March-August",
+      "currentHtmlIntake": "April & October",
+      "candidateIntake": {
+        "textEnOfficial": "April & October",
+        "status": "official-programme-page-refreshed-2026-06-16"
+      },
+      "databaseOfficialIntake": "April & October",
+      "databaseIntakeMonths": [
+        "April",
+        "October"
+      ],
+      "fixed": true
+    },
+    {
+      "code": "USM-PG-ARTICLE-185-36AA5C56",
+      "officialName": "MASTER OF SCIENCE (COMPUTER SCIENCE)",
+      "previousCandidate": "Semester I: September-February; Semester II: March-August",
+      "currentHtmlIntake": "April & October",
+      "candidateIntake": {
+        "textEnOfficial": "April & October",
+        "status": "official-programme-page-refreshed-2026-06-16"
+      },
+      "databaseOfficialIntake": "April & October",
+      "databaseIntakeMonths": [
+        "April",
+        "October"
+      ],
+      "fixed": true
+    },
+    {
+      "code": "USM-PG-ARTICLE-387-909293EB",
+      "officialName": "MASTER OF SCIENCE (FIRE SAFETY ENGINEERING)",
+      "previousCandidate": "Programme-specific intake not published on the public detail page",
+      "currentHtmlIntake": "October",
+      "candidateIntake": {
+        "textEnOfficial": "October",
+        "status": "official-programme-page-refreshed-2026-06-16"
+      },
+      "databaseOfficialIntake": "October",
+      "databaseIntakeMonths": [
+        "October"
+      ],
+      "fixed": true
+    },
+    {
+      "code": "USM-PG-ARTICLE-118-E8F9BDA4",
+      "officialName": "MASTER OF SCIENCE (SOLID STATE PHYSICS) DUAL DEGREE - OTH REGENSBURG",
+      "previousCandidate": "Programme-specific intake not published on the public detail page",
+      "currentHtmlIntake": "October",
+      "candidateIntake": {
+        "textEnOfficial": "October",
+        "status": "official-programme-page-refreshed-2026-06-16"
+      },
+      "databaseOfficialIntake": "October",
+      "databaseIntakeMonths": [
+        "October"
+      ],
+      "fixed": true
+    }
+  ]
+}

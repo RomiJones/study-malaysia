@@ -1,0 +1,56 @@
+{
+  "mode": "publish-dry-run",
+  "universityCode": "SUNWAY",
+  "candidatePath": "/Users/ian/Desktop/dev/study-malaysia/data/imports/sunway/2026-06-20/sunway-20260620/08_candidate_dataset.json",
+  "reportOutput": "/Users/ian/Desktop/dev/study-malaysia/data/imports/sunway/2026-06-20/sunway-20260620/20_publish_dry_run.json",
+  "writePolicy": {
+    "authorization": "publish",
+    "upsertPrefix": "sunway-official-2026-row-",
+    "importRows": 97,
+    "university": "Update Sunway as public ready with 97 official bachelor/master/doctoral programmes.",
+    "programmes": {
+      "isPublished": true,
+      "publicDisplayStatus": "ready",
+      "officialSourceStatus": "official-verified"
+    },
+    "archiveLegacyRows": "No legacy non-prefix public Sunway rows are expected; verification fails if any public legacy rows remain.",
+    "backupRequired": true,
+    "publicProgrammeCountExpected": 97,
+    "rollback": "Restore the scoped JSON backup written before --confirm-publish, then rerun --verify-published after correction.",
+    "nextStep": "Review this dry-run, then rerun with --confirm-publish to create a scoped backup and publish transactionally."
+  },
+  "summary": {
+    "candidateRows": 97,
+    "importRows": 97,
+    "byLevel": {
+      "bachelor": 48,
+      "master": 33,
+      "phd": 16
+    },
+    "readyRows": 97,
+    "needsReviewRows": 0,
+    "publishedRows": 97,
+    "uniqueSlugs": 97,
+    "pendingFeeRows": 0,
+    "notPublishedFeeRows": 7,
+    "officialDurationRows": 97,
+    "officialIntakeRows": 94,
+    "officialLanguageRows": 97,
+    "academicRequirementRows": 97,
+    "applicationDocumentRows": 97,
+    "courseSettingRows": 95,
+    "careerRows": 83,
+    "sourceLinkedRows": 97,
+    "publicDisplayStatusCounts": {
+      "ready": 97
+    },
+    "officialSourceStatusCounts": {
+      "official-verified": 97
+    },
+    "feeAuditStatusCounts": {
+      "official-rate-verified": 83,
+      "not-published": 7,
+      "matched-official": 7
+    }
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "tags": [
+    {
+      "name": "school-of-biosciences",
+      "title": "School of Biosciences"
+    },
+    {
+      "name": "school-of-architecture,-building-and-design",
+      "title": "School of Architecture, Building and Design"
+    },
+    {
+      "name": "school-of-computer-science",
+      "title": "School of Computer Science"
+    },
+    {
+      "name": "school-of-medicine",
+      "title": "School of Medicine"
+    },
+    {
+      "name": "taylor's-business-school",
+      "title": "Taylor's Business School"
+    },
+    {
+      "name": "taylor's-culinary-institute",
+      "title": "Taylor's Culinary Institute"
+    },
+    {
+      "name": "school-of-media-and-communication",
+      "title": "School of Media and Communication"
+    },
+    {
+      "name": "the-design-school-at-taylor-s",
+      "title": "The Design School at Taylor’s"
+    },
+    {
+      "name": "school-of-education",
+      "title": "School of Education"
+    },
+    {
+      "name": "school-of-engineering",
+      "title": "School of Engineering"
+    },
+    {
+      "name": "school-of-hospitality,-tourism-&-events",
+      "title": "School of Hospitality, Tourism & Events"
+    },
+    {
+      "name": "school-of-law-and-governance",
+      "title": "School of Law and Governance"
+    },
+    {
+      "name": "school-of-liberal-arts-and-sciences",
+      "title": "School of Liberal Arts and Sciences"
+    },
+    {
+      "name": "school-of-pharmacy",
+      "title": "School of Pharmacy"
+    },
+    {
+      "name": "school-of-computer-science-and-engineering",
+      "title": "School of Computer Science and Engineering"
+    },
+    {
+      "name": "american-degree-transfer-program",
+      "title": "American Degree Transfer Program"
+    },
+    {
+      "name": "school-of-general-studies-and-languages",
+      "title": "School of General Studies and Languages"
+    }
+  ],
+  "name": "schools",
+  "title": "Schools"
+}

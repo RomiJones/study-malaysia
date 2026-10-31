@@ -14,6 +14,7 @@ export const useSmartRecommendationsStore = defineStore("smartRecommendations", 
   const error = ref("");
   const loadedToken = ref<string | null>(null);
   const session = useSessionStore();
+  let latestRequestId = 0;
 
   const hasCurrentSessionResponse = computed(() => Boolean(session.token && response.value && loadedToken.value === session.token));
   const status = computed(() => {
@@ -34,8 +35,10 @@ export const useSmartRecommendationsStore = defineStore("smartRecommendations", 
   async function load(locale: SupportedLocale, options: { force?: boolean } = {}) {
     const session = useSessionStore();
     if (!session.token) {
+      latestRequestId += 1;
       loadedToken.value = null;
       response.value = buildLoginRequiredResponse();
+      loading.value = false;
       error.value = "";
       return;
     }
@@ -46,34 +49,48 @@ export const useSmartRecommendationsStore = defineStore("smartRecommendations", 
     }
     if (!options.force && response.value) return;
 
+    const requestId = ++latestRequestId;
+    const requestToken = session.token;
+    const requestUserId = session.user?.id ?? null;
     loading.value = true;
     try {
-      response.value = await apiFetch<SmartRecommendationResponseDto>(
+      const nextResponse = await apiFetch<SmartRecommendationResponseDto>(
         `/recommendations/me?locale=${encodeURIComponent(locale)}`,
         {},
-        session.token
+        requestToken
       );
-      loadedToken.value = session.token;
+      if (!isCurrentRequest(requestId, requestToken, requestUserId)) return;
+
+      response.value = nextResponse;
+      loadedToken.value = requestToken;
       error.value = "";
     } catch {
+      if (!isCurrentRequest(requestId, requestToken, requestUserId)) return;
+
       response.value = buildErrorResponse();
       error.value = "recommendation-load-failed";
     } finally {
-      loading.value = false;
+      if (requestId === latestRequestId) loading.value = false;
     }
   }
 
   async function refresh(locale: SupportedLocale) {
     const session = useSessionStore();
     if (!session.token) {
+      latestRequestId += 1;
       response.value = buildLoginRequiredResponse();
+      loadedToken.value = null;
+      loading.value = false;
       error.value = "";
       return;
     }
 
+    const requestId = ++latestRequestId;
+    const requestToken = session.token;
+    const requestUserId = session.user?.id ?? null;
     loading.value = true;
     try {
-      response.value = await apiFetch<SmartRecommendationResponseDto>(
+      const nextResponse = await apiFetch<SmartRecommendationResponseDto>(
         "/recommendations/refresh",
         {
           method: "POST",
@@ -82,23 +99,36 @@ export const useSmartRecommendationsStore = defineStore("smartRecommendations", 
             locale
           })
         },
-        session.token
+        requestToken
       );
-      loadedToken.value = session.token;
+      if (!isCurrentRequest(requestId, requestToken, requestUserId)) return;
+
+      response.value = nextResponse;
+      loadedToken.value = requestToken;
       error.value = "";
     } catch {
-      loadedToken.value = session.token;
+      if (!isCurrentRequest(requestId, requestToken, requestUserId)) return;
+
+      loadedToken.value = requestToken;
       response.value = buildErrorResponse();
       error.value = "recommendation-refresh-failed";
     } finally {
-      loading.value = false;
+      if (requestId === latestRequestId) loading.value = false;
     }
   }
 
   function clear() {
+    latestRequestId += 1;
     response.value = null;
+    loading.value = false;
     error.value = "";
     loadedToken.value = null;
+  }
+
+  function isCurrentRequest(requestId: number, requestToken: string, requestUserId: number | null) {
+    return requestId === latestRequestId
+      && session.token === requestToken
+      && (session.user?.id ?? null) === requestUserId;
   }
 
   return {

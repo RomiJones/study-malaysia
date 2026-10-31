@@ -1,0 +1,434 @@
+{
+  "institution": "Universiti Teknologi Malaysia (UTM)",
+  "levelScope": [
+    "master",
+    "phd"
+  ],
+  "auditedAt": "2026-06-18",
+  "rule": "StudyMY displays postgraduate primary teaching type first (Coursework, Research, Mixed Mode), then secondary study schedule such as ODL, full-time, or part-time.",
+  "sources": [
+    "https://admission.utm.my/odl/",
+    "https://odl.utm.my/fees-structure/",
+    "https://fest.utm.my/edd-programmes/",
+    "https://admission.utm.my/fees-pg-inter/"
+  ],
+  "master": {
+    "summary": {
+      "candidateRows": 153,
+      "importRows": 153,
+      "readyRows": 153,
+      "uniqueSlugs": 153,
+      "officialTotalFeeRows": 138,
+      "calculatedFromOfficialRateRows": 14,
+      "officialRateOnlyRows": 0,
+      "conflictFeeRows": 1,
+      "academicRequirementGpaRows": 153,
+      "publicDisplayStatusCounts": {
+        "ready": 153
+      },
+      "feeAuditStatusCounts": {
+        "matched-official": 138,
+        "calculated-from-official-rate": 14,
+        "official-non-scalar": 1
+      },
+      "modes": {
+        "Research": 46,
+        "Coursework": 77,
+        "Coursework / Open and Distance Learning": 24,
+        "Mixed Mode": 6
+      }
+    },
+    "scheduleRows": [
+      {
+        "code": "UTM-M-025",
+        "nameEnOfficial": "Master of Science (Energy Management)",
+        "studyMode": "Coursework / Open and Distance Learning"
+      },
+      {
+        "code": "UTM-M-062",
+        "nameEnOfficial": "Master of Education (Technical and Vocational Education)",
+        "studyMode": "Coursework / Open and Distance Learning"
+      },
+      {
+        "code": "UTM-M-063",
+        "nameEnOfficial": "Master of Education (Physics)",
+        "studyMode": "Coursework / Open and Distance Learning"
+      },
+      {
+        "code": "UTM-M-064",
+        "nameEnOfficial": "Master of Education (Mathematics)",
+        "studyMode": "Coursework / Open and Distance Learning"
+      },
+      {
+        "code": "UTM-M-065",
+        "nameEnOfficial": "Master of Education (Educational Technology)",
+        "studyMode": "Coursework / Open and Distance Learning"
+      },
+      {
+        "code": "UTM-M-066",
+        "nameEnOfficial": "Master in Education Specialization : Management and Administration",
+        "studyMode": "Coursework / Open and Distance Learning"
+      },
+      {
+        "code": "UTM-M-067",
+        "nameEnOfficial": "Master in Education Specialization : Guidance and Counselling",
+        "studyMode": "Coursework / Open and Distance Learning"
+      },
+      {
+        "code": "UTM-M-068",
+        "nameEnOfficial": "Master in Education Specialization : Curriculum and Instruction",
+        "studyMode": "Coursework / Open and Distance Learning"
+      },
+      {
+        "code": "UTM-M-069",
+        "nameEnOfficial": "Master in Education Specialization : Education and Development",
+        "studyMode": "Coursework / Open and Distance Learning"
+      },
+      {
+        "code": "UTM-M-070",
+        "nameEnOfficial": "Master in Education Specialization : Educational Psychology",
+        "studyMode": "Coursework / Open and Distance Learning"
+      },
+      {
+        "code": "UTM-M-071",
+        "nameEnOfficial": "Master in Education Specialization : Physical Education and Sports Science",
+        "studyMode": "Coursework / Open and Distance Learning"
+      },
+      {
+        "code": "UTM-M-072",
+        "nameEnOfficial": "Master in Education Specialization : Islamic Studies",
+        "studyMode": "Coursework / Open and Distance Learning"
+      },
+      {
+        "code": "UTM-M-073",
+        "nameEnOfficial": "Master in Education Specialization : Chemistry",
+        "studyMode": "Coursework / Open and Distance Learning"
+      },
+      {
+        "code": "UTM-M-074",
+        "nameEnOfficial": "Master in Education Specialization : Mathematics",
+        "studyMode": "Coursework / Open and Distance Learning"
+      },
+      {
+        "code": "UTM-M-075",
+        "nameEnOfficial": "Master in Education Specialization : Educational Technology",
+        "studyMode": "Coursework / Open and Distance Learning"
+      },
+      {
+        "code": "UTM-M-076",
+        "nameEnOfficial": "Master in Education Specialization : Measurement & Evaluation",
+        "studyMode": "Coursework / Open and Distance Learning"
+      },
+      {
+        "code": "UTM-M-077",
+        "nameEnOfficial": "Master in Education Specialization : Science",
+        "studyMode": "Coursework / Open and Distance Learning"
+      },
+      {
+        "code": "UTM-M-078",
+        "nameEnOfficial": "Master in Education Specialization : Early Childhood Education",
+        "studyMode": "Coursework / Open and Distance Learning"
+      },
+      {
+        "code": "UTM-M-079",
+        "nameEnOfficial": "Master in Education Specialization : Teaching English as a Second Language",
+        "studyMode": "Coursework / Open and Distance Learning"
+      },
+      {
+        "code": "UTM-M-115",
+        "nameEnOfficial": "Master of Cyber Security",
+        "studyMode": "Coursework / Open and Distance Learning"
+      },
+      {
+        "code": "UTM-M-116",
+        "nameEnOfficial": "Master of Computer Science",
+        "studyMode": "Coursework / Open and Distance Learning"
+      },
+      {
+        "code": "UTM-M-131",
+        "nameEnOfficial": "Master of Business Administration",
+        "studyMode": "Coursework / Open and Distance Learning"
+      },
+      {
+        "code": "UTM-M-142",
+        "nameEnOfficial": "Master of Science in Business Intelligence and Analytics",
+        "studyMode": "Coursework / Open and Distance Learning"
+      },
+      {
+        "code": "UTM-M-153",
+        "nameEnOfficial": "Master in Sustainable Systems",
+        "studyMode": "Coursework / Open and Distance Learning"
+      }
+    ],
+    "scheduleOnlyRows": [],
+    "correctedRows": [
+      {
+        "code": "UTM-M-025",
+        "nameEnOfficial": "Master of Science (Energy Management)",
+        "studyMode": "Coursework / Open and Distance Learning",
+        "tuitionDisplay": "MYR 40,950 total programme fee",
+        "officialFeeAuditStatus": "matched-official",
+        "officialTuitionMYR": 40950
+      },
+      {
+        "code": "UTM-M-062",
+        "nameEnOfficial": "Master of Education (Technical and Vocational Education)",
+        "studyMode": "Coursework / Open and Distance Learning",
+        "tuitionDisplay": "MYR 34,650 standard ODL total tuition",
+        "officialFeeAuditStatus": "matched-official",
+        "officialTuitionMYR": 34650
+      },
+      {
+        "code": "UTM-M-063",
+        "nameEnOfficial": "Master of Education (Physics)",
+        "studyMode": "Coursework / Open and Distance Learning",
+        "tuitionDisplay": "MYR 34,650 standard ODL total tuition",
+        "officialFeeAuditStatus": "matched-official",
+        "officialTuitionMYR": 34650
+      },
+      {
+        "code": "UTM-M-064",
+        "nameEnOfficial": "Master of Education (Mathematics)",
+        "studyMode": "Coursework / Open and Distance Learning",
+        "tuitionDisplay": "MYR 34,650 standard ODL total tuition",
+        "officialFeeAuditStatus": "matched-official",
+        "officialTuitionMYR": 34650
+      },
+      {
+        "code": "UTM-M-065",
+        "nameEnOfficial": "Master of Education (Educational Technology)",
+        "studyMode": "Coursework / Open and Distance Learning",
+        "tuitionDisplay": "MYR 34,650 standard ODL total tuition",
+        "officialFeeAuditStatus": "matched-official",
+        "officialTuitionMYR": 34650
+      },
+      {
+        "code": "UTM-M-066",
+        "nameEnOfficial": "Master in Education Specialization : Management and Administration",
+        "studyMode": "Coursework / Open and Distance Learning",
+        "tuitionDisplay": "MYR 34,650 calculated total tuition",
+        "officialFeeAuditStatus": "calculated-from-official-rate",
+        "officialTuitionMYR": 34650
+      },
+      {
+        "code": "UTM-M-067",
+        "nameEnOfficial": "Master in Education Specialization : Guidance and Counselling",
+        "studyMode": "Coursework / Open and Distance Learning",
+        "tuitionDisplay": "MYR 34,650 calculated total tuition",
+        "officialFeeAuditStatus": "calculated-from-official-rate",
+        "officialTuitionMYR": 34650
+      },
+      {
+        "code": "UTM-M-068",
+        "nameEnOfficial": "Master in Education Specialization : Curriculum and Instruction",
+        "studyMode": "Coursework / Open and Distance Learning",
+        "tuitionDisplay": "MYR 34,650 calculated total tuition",
+        "officialFeeAuditStatus": "calculated-from-official-rate",
+        "officialTuitionMYR": 34650
+      },
+      {
+        "code": "UTM-M-069",
+        "nameEnOfficial": "Master in Education Specialization : Education and Development",
+        "studyMode": "Coursework / Open and Distance Learning",
+        "tuitionDisplay": "MYR 34,650 calculated total tuition",
+        "officialFeeAuditStatus": "calculated-from-official-rate",
+        "officialTuitionMYR": 34650
+      },
+      {
+        "code": "UTM-M-070",
+        "nameEnOfficial": "Master in Education Specialization : Educational Psychology",
+        "studyMode": "Coursework / Open and Distance Learning",
+        "tuitionDisplay": "MYR 34,650 calculated total tuition",
+        "officialFeeAuditStatus": "calculated-from-official-rate",
+        "officialTuitionMYR": 34650
+      },
+      {
+        "code": "UTM-M-071",
+        "nameEnOfficial": "Master in Education Specialization : Physical Education and Sports Science",
+        "studyMode": "Coursework / Open and Distance Learning",
+        "tuitionDisplay": "MYR 34,650 calculated total tuition",
+        "officialFeeAuditStatus": "calculated-from-official-rate",
+        "officialTuitionMYR": 34650
+      },
+      {
+        "code": "UTM-M-072",
+        "nameEnOfficial": "Master in Education Specialization : Islamic Studies",
+        "studyMode": "Coursework / Open and Distance Learning",
+        "tuitionDisplay": "MYR 34,650 calculated total tuition",
+        "officialFeeAuditStatus": "calculated-from-official-rate",
+        "officialTuitionMYR": 34650
+      },
+      {
+        "code": "UTM-M-073",
+        "nameEnOfficial": "Master in Education Specialization : Chemistry",
+        "studyMode": "Coursework / Open and Distance Learning",
+        "tuitionDisplay": "MYR 34,650 calculated total tuition",
+        "officialFeeAuditStatus": "calculated-from-official-rate",
+        "officialTuitionMYR": 34650
+      },
+      {
+        "code": "UTM-M-074",
+        "nameEnOfficial": "Master in Education Specialization : Mathematics",
+        "studyMode": "Coursework / Open and Distance Learning",
+        "tuitionDisplay": "MYR 34,650 calculated total tuition",
+        "officialFeeAuditStatus": "calculated-from-official-rate",
+        "officialTuitionMYR": 34650
+      },
+      {
+        "code": "UTM-M-075",
+        "nameEnOfficial": "Master in Education Specialization : Educational Technology",
+        "studyMode": "Coursework / Open and Distance Learning",
+        "tuitionDisplay": "MYR 34,650 calculated total tuition",
+        "officialFeeAuditStatus": "calculated-from-official-rate",
+        "officialTuitionMYR": 34650
+      },
+      {
+        "code": "UTM-M-076",
+        "nameEnOfficial": "Master in Education Specialization : Measurement & Evaluation",
+        "studyMode": "Coursework / Open and Distance Learning",
+        "tuitionDisplay": "MYR 34,650 calculated total tuition",
+        "officialFeeAuditStatus": "calculated-from-official-rate",
+        "officialTuitionMYR": 34650
+      },
+      {
+        "code": "UTM-M-077",
+        "nameEnOfficial": "Master in Education Specialization : Science",
+        "studyMode": "Coursework / Open and Distance Learning",
+        "tuitionDisplay": "MYR 34,650 calculated total tuition",
+        "officialFeeAuditStatus": "calculated-from-official-rate",
+        "officialTuitionMYR": 34650
+      },
+      {
+        "code": "UTM-M-078",
+        "nameEnOfficial": "Master in Education Specialization : Early Childhood Education",
+        "studyMode": "Coursework / Open and Distance Learning",
+        "tuitionDisplay": "MYR 34,650 calculated total tuition",
+        "officialFeeAuditStatus": "calculated-from-official-rate",
+        "officialTuitionMYR": 34650
+      },
+      {
+        "code": "UTM-M-079",
+        "nameEnOfficial": "Master in Education Specialization : Teaching English as a Second Language",
+        "studyMode": "Coursework / Open and Distance Learning",
+        "tuitionDisplay": "MYR 34,650 calculated total tuition",
+        "officialFeeAuditStatus": "calculated-from-official-rate",
+        "officialTuitionMYR": 34650
+      },
+      {
+        "code": "UTM-M-115",
+        "nameEnOfficial": "Master of Cyber Security",
+        "studyMode": "Coursework / Open and Distance Learning",
+        "tuitionDisplay": "MYR 34,650 standard ODL total tuition",
+        "officialFeeAuditStatus": "matched-official",
+        "officialTuitionMYR": 34650
+      },
+      {
+        "code": "UTM-M-116",
+        "nameEnOfficial": "Master of Computer Science",
+        "studyMode": "Coursework / Open and Distance Learning",
+        "tuitionDisplay": "MYR 34,650 standard ODL total tuition",
+        "officialFeeAuditStatus": "matched-official",
+        "officialTuitionMYR": 34650
+      },
+      {
+        "code": "UTM-M-131",
+        "nameEnOfficial": "Master of Business Administration",
+        "studyMode": "Coursework / Open and Distance Learning",
+        "tuitionDisplay": "MYR 37,400 total programme fee",
+        "officialFeeAuditStatus": "matched-official",
+        "officialTuitionMYR": 37400
+      },
+      {
+        "code": "UTM-M-142",
+        "nameEnOfficial": "Master of Science in Business Intelligence and Analytics",
+        "studyMode": "Coursework / Open and Distance Learning",
+        "tuitionDisplay": "MYR 34,650 total programme fee",
+        "officialFeeAuditStatus": "matched-official",
+        "officialTuitionMYR": 34650
+      },
+      {
+        "code": "UTM-M-153",
+        "nameEnOfficial": "Master in Sustainable Systems",
+        "studyMode": "Coursework / Open and Distance Learning",
+        "tuitionDisplay": "Official fee variants: MYR 31,440 / MYR 38,790",
+        "officialFeeAuditStatus": "official-non-scalar",
+        "officialTuitionMYR": null
+      }
+    ],
+    "remainingNoScalarFeeRows": [
+      {
+        "code": "UTM-M-153",
+        "nameEnOfficial": "Master in Sustainable Systems",
+        "studyMode": "Coursework / Open and Distance Learning",
+        "tuitionDisplay": "Official fee variants: MYR 31,440 / MYR 38,790",
+        "officialTuitionNote": "No StudyMY scalar total is written because UTM publishes more than one applicable fee value or a non-primary total. Official note: International fee is published as a range: RM31,440 - RM38,790. No single primary total is written.",
+        "officialFeeAuditStatus": "official-non-scalar"
+      }
+    ]
+  },
+  "phd": {
+    "summary": {
+      "candidateRows": 55,
+      "importRows": 55,
+      "readyRows": 55,
+      "uniqueSlugs": 55,
+      "officialTotalFeeRows": 54,
+      "calculatedFromOfficialRateRows": 1,
+      "officialRateOnlyRows": 0,
+      "officialNonScalarRows": 0,
+      "noScalarTotalRows": 0,
+      "officialAcademicRequirementRows": 55,
+      "dppOfficialOccurrenceRows": 8,
+      "publicDisplayStatusCounts": {
+        "ready": 55
+      },
+      "feeAuditStatusCounts": {
+        "matched-official": 54,
+        "calculated-from-official-rate": 1
+      },
+      "modes": {
+        "Research": 49,
+        "Mixed Mode": 4,
+        "Mixed mode / Open and Distance Learning": 1,
+        "Mixed Mode / Full-Time / Part-Time": 1
+      }
+    },
+    "scheduleRows": [
+      {
+        "code": "UTM-PHD-005",
+        "nameEnOfficial": "Doctor of Professional Practice (DPP)",
+        "studyMode": "Mixed mode / Open and Distance Learning"
+      },
+      {
+        "code": "UTM-PHD-023",
+        "nameEnOfficial": "Doctor in Education (EdD)",
+        "studyMode": "Mixed Mode / Full-Time / Part-Time"
+      }
+    ],
+    "scheduleOnlyRows": [],
+    "dpp": [
+      {
+        "code": "UTM-PHD-005",
+        "nameEnOfficial": "Doctor of Professional Practice (DPP)",
+        "studyMode": "Mixed mode / Open and Distance Learning",
+        "tuitionDisplay": "MYR 71,490 calculated standard minimum total tuition",
+        "officialTuitionMYR": 71490,
+        "specializations": 8
+      }
+    ],
+    "edd": [
+      {
+        "code": "UTM-PHD-023",
+        "nameEnOfficial": "Doctor in Education (EdD)",
+        "studyMode": "Mixed Mode / Full-Time / Part-Time",
+        "tuitionDisplay": "MYR 49,100 total programme fee",
+        "officialTuitionMYR": 49100,
+        "intakeMonths": [
+          "March",
+          "October"
+        ],
+        "specializations": 9
+      }
+    ]
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "mode": "alias-migrated",
+  "decision": "review-imported",
+  "checkedAt": "2026-06-21T01:16:00+08:00",
+  "targetUniversityId": 3,
+  "targetUniversityCode": "TAYLORS",
+  "sourceUniversityCode": "TSU",
+  "backupFiles": [
+    "/Users/ian/Desktop/dev/study-malaysia/data/imports/tsu/2026-06-20/tsu-20260620/24_review_import_backup_before_alias_migration_universities.sql",
+    "/Users/ian/Desktop/dev/study-malaysia/data/imports/tsu/2026-06-20/tsu-20260620/24_review_import_backup_before_alias_migration_programs.sql"
+  ],
+  "publicContinuityPolicy": "Existing Taylor's public university row is preserved; imported TSU programme rows are attached as non-public needs-review review rows.",
+  "universities": [
+    {
+      "id": "3",
+      "code": "TAYLORS",
+      "slug": "taylor-s-university",
+      "isPublished": "1",
+      "publicDisplayStatus": "ready",
+      "programCount": "89"
+    }
+  ],
+  "programPartition": {
+    "universityId": "3",
+    "total": "99",
+    "tsu_imported": "89",
+    "published": "0",
+    "ready": "0",
+    "review": "89",
+    "archived": "10"
+  },
+  "importedPartition": {
+    "imported_rows": "89",
+    "imported_published_rows": "0",
+    "imported_ready_rows": "0",
+    "imported_review_rows": "89",
+    "official_total_rows": "89"
+  },
+  "publicVisiblePrograms": {
+    "public_visible_taylor_programs": "0"
+  },
+  "pass": true
+}

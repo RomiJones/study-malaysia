@@ -15,6 +15,8 @@ export type CatalogLocalizationIssueCode =
 export interface CatalogLocalizationQuery {
   entityType?: unknown;
   locale?: unknown;
+  field?: unknown;
+  publicDisplayStatus?: unknown;
   includeHidden?: unknown;
   limit?: unknown;
 }
@@ -47,6 +49,8 @@ export interface CatalogLocalizationCoverageReport {
     query: {
       entityType: CatalogLocalizationEntityType[];
       locale: SupportedLocale[];
+      field: string[];
+      publicDisplayStatus: PublicDisplayStatus[];
       includeHidden: boolean;
       limit: { default: number; max: number };
     };
@@ -56,6 +60,8 @@ export interface CatalogLocalizationCoverageReport {
   query: {
     entityType: CatalogLocalizationEntityType;
     locale: SupportedLocale | null;
+    field: string | null;
+    publicDisplayStatus: PublicDisplayStatus | null;
     includeHidden: boolean;
     limit: number;
   };
@@ -77,6 +83,15 @@ type CatalogRecord = UniversityEntity | ProgramEntity;
 type EntityTypeWithoutAll = Exclude<CatalogLocalizationEntityType, "all">;
 
 const ENTITY_TYPES = ["all", "university", "program"] as const satisfies readonly CatalogLocalizationEntityType[];
+const PUBLIC_DISPLAY_STATUSES = [
+  "ready",
+  "current-cycle-not-open",
+  "official-language-requirement-not-published",
+  "not-available-for-international",
+  "needs-review",
+  "hidden-unverified",
+  "archived"
+] as const satisfies readonly PublicDisplayStatus[];
 const DEFAULT_LIMIT = 50;
 const MAX_LIMIT = 200;
 const CJK_PATTERN = /[\u3400-\u9fff]/;
@@ -124,6 +139,18 @@ const ERROR_MESSAGES = {
     "\u4e0d\u652f\u63f4\u7684\u76ee\u9304\u591a\u8a9e\u8a00\u8a9e\u8a00\u4ee3\u78bc\u3002",
     "Lokal penyetempatan katalog tidak disokong."
   ),
+  invalidField: localized(
+    "Unsupported catalog localization field.",
+    "\u4e0d\u652f\u6301\u7684\u76ee\u5f55\u591a\u8bed\u8a00\u5b57\u6bb5\u3002",
+    "\u4e0d\u652f\u63f4\u7684\u76ee\u9304\u591a\u8a9e\u8a00\u6b04\u4f4d\u3002",
+    "Medan penyetempatan katalog tidak disokong."
+  ),
+  invalidPublicDisplayStatus: localized(
+    "Unsupported public display status.",
+    "\u4e0d\u652f\u6301\u7684\u516c\u5f00\u5c55\u793a\u72b6\u6001\u3002",
+    "\u4e0d\u652f\u63f4\u7684\u516c\u958b\u5c55\u793a\u72c0\u614b\u3002",
+    "Status paparan awam tidak disokong."
+  ),
   invalidBoolean: localized(
     "includeHidden must be true or false.",
     "includeHidden \u5fc5\u987b\u662f true \u6216 false\u3002",
@@ -155,6 +182,10 @@ export class CatalogLocalizationService {
       normalized.entityType === "program" ? Promise.resolve([]) : this.findUniversities(normalized.includeHidden),
       normalized.entityType === "university" ? Promise.resolve([]) : this.findPrograms(normalized.includeHidden)
     ]);
+    const filteredUniversities = filterByPublicDisplayStatus(universities, normalized.publicDisplayStatus);
+    const filteredPrograms = filterByPublicDisplayStatus(programs, normalized.publicDisplayStatus);
+    const universityFields = filterFields(UNIVERSITY_FIELDS, normalized.field);
+    const programFields = filterFields(PROGRAM_FIELDS, normalized.field);
 
     const issues: CatalogLocalizationIssue[] = [];
     const recordIssues = {
@@ -162,13 +193,13 @@ export class CatalogLocalizationService {
       program: new Set<number>()
     };
 
-    for (const university of universities) {
-      const recordIssueCount = this.inspectRecord("university", university, UNIVERSITY_FIELDS, normalized.locale, issues);
+    for (const university of filteredUniversities) {
+      const recordIssueCount = this.inspectRecord("university", university, universityFields, normalized.locale, issues);
       if (recordIssueCount > 0) recordIssues.university.add(university.id);
     }
 
-    for (const program of programs) {
-      const recordIssueCount = this.inspectRecord("program", program, PROGRAM_FIELDS, normalized.locale, issues);
+    for (const program of filteredPrograms) {
+      const recordIssueCount = this.inspectRecord("program", program, programFields, normalized.locale, issues);
       if (recordIssueCount > 0) recordIssues.program.add(program.id);
     }
 
@@ -179,9 +210,9 @@ export class CatalogLocalizationService {
       query: normalized,
       summary: {
         scanned: {
-          universities: universities.length,
-          programs: programs.length,
-          total: universities.length + programs.length
+          universities: filteredUniversities.length,
+          programs: filteredPrograms.length,
+          total: filteredUniversities.length + filteredPrograms.length
         },
         issues: {
           total: issues.length,
@@ -191,9 +222,9 @@ export class CatalogLocalizationService {
           byEntityType: countByEntityType(issues)
         },
         completeRecords: {
-          universities: universities.length - recordIssues.university.size,
-          programs: programs.length - recordIssues.program.size,
-          total: universities.length + programs.length - recordIssues.university.size - recordIssues.program.size
+          universities: filteredUniversities.length - recordIssues.university.size,
+          programs: filteredPrograms.length - recordIssues.program.size,
+          total: filteredUniversities.length + filteredPrograms.length - recordIssues.university.size - recordIssues.program.size
         }
       },
       issues: limitedIssues
@@ -305,12 +336,16 @@ export class CatalogLocalizationService {
   private normalizeQuery(query: CatalogLocalizationQuery) {
     const entityType = this.normalizeEntityType(query.entityType);
     const locale = this.normalizeLocale(query.locale);
+    const field = this.normalizeField(query.field);
+    const publicDisplayStatus = this.normalizePublicDisplayStatus(query.publicDisplayStatus);
     const includeHidden = this.normalizeBoolean(query.includeHidden);
     const limit = this.normalizeLimit(query.limit);
 
     return {
       entityType,
       locale,
+      field,
+      publicDisplayStatus,
       includeHidden,
       limit
     };
@@ -354,6 +389,44 @@ export class CatalogLocalizationService {
     return normalized as SupportedLocale;
   }
 
+  private normalizeField(value: unknown): string | null {
+    if (value == null || value === "") return null;
+    if (typeof value !== "string") {
+      throw localizedBadRequest("INVALID_FIELD", ERROR_MESSAGES.invalidField, {
+        supportedFields: checkedFieldValues()
+      });
+    }
+
+    const normalized = value.trim();
+    if (!checkedFieldValues().includes(normalized)) {
+      throw localizedBadRequest("INVALID_FIELD", ERROR_MESSAGES.invalidField, {
+        supportedFields: checkedFieldValues(),
+        received: normalized
+      });
+    }
+
+    return normalized;
+  }
+
+  private normalizePublicDisplayStatus(value: unknown): PublicDisplayStatus | null {
+    if (value == null || value === "") return null;
+    if (typeof value !== "string") {
+      throw localizedBadRequest("INVALID_PUBLIC_DISPLAY_STATUS", ERROR_MESSAGES.invalidPublicDisplayStatus, {
+        supportedStatuses: [...PUBLIC_DISPLAY_STATUSES]
+      });
+    }
+
+    const normalized = value.trim();
+    if (!PUBLIC_DISPLAY_STATUSES.includes(normalized as PublicDisplayStatus)) {
+      throw localizedBadRequest("INVALID_PUBLIC_DISPLAY_STATUS", ERROR_MESSAGES.invalidPublicDisplayStatus, {
+        supportedStatuses: [...PUBLIC_DISPLAY_STATUSES],
+        received: normalized
+      });
+    }
+
+    return normalized as PublicDisplayStatus;
+  }
+
   private normalizeBoolean(value: unknown): boolean {
     if (value == null || value === "") return false;
     if (value === true || value === "true") return true;
@@ -381,6 +454,8 @@ export class CatalogLocalizationService {
       query: {
         entityType: [...ENTITY_TYPES],
         locale: [...SUPPORTED_LOCALES],
+        field: checkedFieldValues(),
+        publicDisplayStatus: [...PUBLIC_DISPLAY_STATUSES],
         includeHidden: false,
         limit: { default: DEFAULT_LIMIT, max: MAX_LIMIT }
       },
@@ -428,6 +503,20 @@ function readField(record: CatalogRecord, field: string): unknown {
     if (!current || typeof current !== "object") return undefined;
     return (current as Record<string, unknown>)[key];
   }, record);
+}
+
+function checkedFieldValues(): string[] {
+  return [...new Set(CHECKED_FIELDS.flatMap((field) => [field.field, `${field.entityType}.${field.field}`]))];
+}
+
+function filterFields<T extends CatalogLocalizationFieldContract>(fields: readonly T[], field: string | null): T[] {
+  if (!field) return [...fields];
+  return fields.filter((item) => item.field === field || `${item.entityType}.${item.field}` === field);
+}
+
+function filterByPublicDisplayStatus<T extends CatalogRecord>(records: T[], publicDisplayStatus: PublicDisplayStatus | null): T[] {
+  if (!publicDisplayStatus) return records;
+  return records.filter((record) => normalizePublicDisplayStatus(record.publicDisplayStatus, record.isPublished) === publicDisplayStatus);
 }
 
 function isLocalizedPayload(value: unknown): value is LocalizedText | LocalizedStringArray {

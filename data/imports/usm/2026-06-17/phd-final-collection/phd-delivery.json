@@ -1,0 +1,236 @@
+{
+  "schemaVersion": 1,
+  "officialDomains": [
+    "usm.my",
+    "admission.usm.my",
+    "ips.usm.my"
+  ],
+  "scope": {
+    "universityCode": "USM",
+    "level": "phd",
+    "applicantScope": "international",
+    "academicSession": "current-directory-and-2025/2026-fees"
+  },
+  "authorization": "collect",
+  "counts": {
+    "directoryOccurrences": 95,
+    "uniqueOfficialEntries": 95,
+    "canonicalProgrammes": 95,
+    "ready": 95,
+    "needsReview": 0,
+    "notAvailableForInternational": 0
+  },
+  "coverage": {
+    "identity": {
+      "covered": 95,
+      "unpublished": 0,
+      "review": 0
+    },
+    "faculty": {
+      "covered": 95,
+      "unpublished": 0,
+      "review": 0
+    },
+    "studyMode": {
+      "covered": 95,
+      "unpublished": 0,
+      "review": 0
+    },
+    "campus": {
+      "covered": 95,
+      "unpublished": 0,
+      "review": 0
+    },
+    "duration": {
+      "covered": 95,
+      "unpublished": 0,
+      "review": 0
+    },
+    "intake": {
+      "covered": 23,
+      "unpublished": 72,
+      "review": 0
+    },
+    "internationalEligibility": {
+      "covered": 95,
+      "unpublished": 0,
+      "review": 0
+    },
+    "academicRequirement": {
+      "covered": 95,
+      "unpublished": 0,
+      "review": 0
+    },
+    "languageRequirement": {
+      "covered": 95,
+      "unpublished": 0,
+      "review": 0
+    },
+    "applicationDocuments": {
+      "covered": 95,
+      "unpublished": 0,
+      "review": 0
+    },
+    "fee": {
+      "covered": 13,
+      "unpublished": 82,
+      "review": 0
+    },
+    "evidence": {
+      "covered": 95,
+      "unpublished": 0,
+      "review": 0
+    }
+  },
+  "sources": [
+    {
+      "id": "usm-pg-current-catalogue",
+      "title": "USM Current Postgraduate Programme Catalogue",
+      "url": "https://admission.usm.my/index.php/main/postgraduate",
+      "sourceType": "official-page",
+      "role": "canonical",
+      "retrievedAt": "2026-06-14T14:58:27.756Z",
+      "academicSession": null,
+      "status": "verified",
+      "sha256": "03be7bc3fadfbb2313e6ddefbdf02457481832041724176bccdd60ad878c9372",
+      "localPath": "data/imports/usm/2026-06-14/phd-current-catalogue.json",
+      "evidenceNote": "Showing 1 to 95 of 95 entries (filtered from 400 total entries)"
+    },
+    {
+      "id": "usm-pg-directory-current",
+      "title": "USM Postgraduate Programme Directory",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes",
+      "sourceType": "official-page",
+      "role": "cross-check",
+      "retrievedAt": "2026-06-14T15:01:36Z",
+      "academicSession": null,
+      "status": "verified",
+      "sha256": "ccb852d13ccb650d2d80006c1ff18bf9129002fca83175db9158436d66f6be5f",
+      "localPath": "data/imports/usm/2026-06-14/sources/pg-current-directory.md",
+      "transport": "public-reader-proxy because direct requests are blocked by USM WAF"
+    },
+    {
+      "id": "usm-pg-fee-page-current",
+      "title": "USM Postgraduate Fees",
+      "url": "https://admission.usm.my/index.php/postgraduate/fee-pg",
+      "sourceType": "official-page",
+      "role": "field-authority",
+      "retrievedAt": "2026-06-14T15:01:36Z",
+      "academicSession": "2025/2026",
+      "status": "verified",
+      "sha256": "3597c8977755aa2f18fb3b389c813435989bd62cc54318f26b8e573c10401076",
+      "localPath": "data/imports/usm/2026-06-14/sources/pg-fee-page.md"
+    },
+    {
+      "id": "usm-pg-fees-2025-2026",
+      "title": "USM Postgraduate Fees 2025/2026",
+      "url": "https://admission.usm.my/images/PG%20FEE%20-%20YURAN%20PG/PG%20FEES%2011.03.2025.pdf",
+      "sourceType": "official-pdf",
+      "role": "cross-check",
+      "retrievedAt": "2026-06-14T15:01:36Z",
+      "academicSession": "2025/2026",
+      "status": "verified",
+      "sha256": "24bc178e7da6de039ff9e5cd866c580a5f3ed1c73db04d08b8f7ca42cb75bcef",
+      "localPath": "data/imports/usm/2026-06-14/sources/pg-fees-2025-2026.pdf",
+      "sourcePage": 2
+    },
+    {
+      "id": "usm-pg-general-requirements",
+      "title": "USM General Entry Requirements",
+      "url": "https://admission.usm.my/index.php/postgraduate/programmes?catid=48&id=785%3Ageneral-entry-requirement&view=article",
+      "sourceType": "official-page",
+      "role": "field-authority",
+      "retrievedAt": "2026-06-14T15:01:36Z",
+      "academicSession": null,
+      "status": "verified",
+      "sha256": "ccb852d13ccb650d2d80006c1ff18bf9129002fca83175db9158436d66f6be5f",
+      "localPath": "data/imports/usm/2026-06-14/sources/pg-current-directory.md",
+      "evidenceNote": "The same general requirement text is embedded in the canonical directory snapshot."
+    },
+    {
+      "id": "usm-ips-admission-downloads",
+      "title": "USM IPS Admission and Registration Downloads",
+      "url": "https://ips.usm.my/index.php/download/admission",
+      "sourceType": "official-page",
+      "role": "cross-check",
+      "retrievedAt": "2026-06-14T15:01:36Z",
+      "academicSession": "2026/2027",
+      "status": "verified",
+      "sha256": "8bc410b05fc4909de3d3bf6187cd6acd92bc760bfc293f0b2a2b3490476bec9c",
+      "localPath": "data/imports/usm/2026-06-14/sources/ips-admission-downloads.html"
+    },
+    {
+      "id": "usm-ips-research-mode-registration",
+      "title": "USM IPS Research Mode Programme",
+      "url": "https://ips.usm.my/index.php/current-student-v2/candidature-matters/research-mode-programme",
+      "sourceType": "official-page",
+      "role": "cross-check",
+      "retrievedAt": "2026-06-14T15:01:36Z",
+      "academicSession": null,
+      "status": "verified",
+      "sha256": "604bd880c1a0c8528cb7c4233e86c08f80ba4075a126c14b15d46bb23eff2d3e",
+      "localPath": "data/imports/usm/2026-06-14/sources/ips-research-mode-registration.html"
+    },
+    {
+      "id": "usm-onlineips-application-guide-2026",
+      "title": "USM OnlineIPS Online Application Guideline",
+      "url": "https://onlineips.usm.my/images/ONLINE%20APPLICATION%20GUIDELINE%20012026%20v1.pdf",
+      "sourceType": "official-pdf",
+      "role": "field-authority",
+      "retrievedAt": "2026-06-14T15:01:36Z",
+      "academicSession": "2026",
+      "status": "verified",
+      "sha256": "92559bbca13240e19d9cec7b761c7718eace5fa86648f3a13a0ea46fd443ece3",
+      "localPath": "data/imports/usm/2026-06-14/sources/online-application-guide-2026.pdf"
+    },
+    {
+      "id": "usm-coursework-mixed-candidature",
+      "title": "USM Coursework and Mixed Mode Programme",
+      "url": "https://ips.usm.my/index.php/current-student-v2/candidature-matters/coursework-and-mixed-mode-programme",
+      "sourceType": "official-page",
+      "role": "field-authority",
+      "retrievedAt": "2026-06-14T15:01:36Z",
+      "academicSession": null,
+      "status": "verified",
+      "sha256": "10a840d099c43a52c4dfaf7ab9b1173549eded928a2a55b8d9e987554afd77a0",
+      "localPath": "data/imports/usm/2026-06-14/sources/coursework-mixed-candidature.html"
+    }
+  ],
+  "artifacts": [
+    {
+      "role": "manifest",
+      "path": "data/imports/usm/2026-06-14/phd-official-source.json",
+      "sha256": "9e889a530617c4bfb0b178f38574962e9936fbabd20320b4f6e3fa21ac53b4bc"
+    },
+    {
+      "role": "candidate",
+      "path": "data/imports/usm/2026-06-17/phd-final-collection/phd-candidate.json",
+      "sha256": "e2d916114ab356b38dee09adc5cb7607a5c0169a190eee4de875c2fee1f441fe"
+    },
+    {
+      "role": "audit",
+      "path": "data/imports/usm/2026-06-17/phd-final-collection/phd-audit.json",
+      "sha256": "8bd058f98731c461b470e2fbcff2ef57ac25bf8829d7531a4c7c69f3369ff29f"
+    }
+  ],
+  "exceptions": {
+    "blocking": [],
+    "review": []
+  },
+  "verification": {
+    "sourceHashes": "passed",
+    "directoryParse": "passed",
+    "identityReconciliation": "passed",
+    "fieldCoverage": "passed",
+    "feeReconciliation": "passed",
+    "manifestAudit": "passed",
+    "sourceCollection": "passed",
+    "candidateBuild": "passed",
+    "recordAudit": "passed",
+    "deliveryAudit": "not-required",
+    "databaseWrite": "pending",
+    "apiUiVerification": "pending"
+  },
+  "decision": "ready-for-controlled-import",
+  "databaseWrite": "not-performed"
+}

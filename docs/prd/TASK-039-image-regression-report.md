@@ -3,12 +3,12 @@
 ## 摘要
 
 - **任务编号**: TASK-039
-- **运行编号**: task039-20260524T104827Z
-- **生成时间**: 2026-05-24T10:49:19.895Z
+- **运行编号**: task039-20260524T105314Z
+- **生成时间**: 2026-05-24T10:54:09.118Z
 - **状态**: passed
 - **静态 HTML**: `D:\mydev\StudyMY_UM_v58_na_display_tidy.html`
 - **用户端地址**: `http://127.0.0.1:5200`
-- **输出目录**: `D:/mydev/study-malaysia/output/playwright/task039-20260524T104827Z`
+- **输出目录**: `D:/mydev/study-malaysia/output/playwright/task039-20260524T105314Z`
 
 ## 验收结论
 
@@ -29,28 +29,28 @@
 
 | 页面 | 视口 | DOM 图片 | 外链图片请求 | 失败图片 | 破图 | fallback | Vue 截图 | 静态截图 |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | --- | --- |
-| 首页首屏 | 桌面端 1440x1000 | 6 | 0 | 0 | 0 | 4 | `D:/mydev/study-malaysia/output/playwright/task039-20260524T104827Z/desktop-home-web.png` | `D:/mydev/study-malaysia/output/playwright/task039-20260524T104827Z/desktop-home-static.png` |
-| 院校列表 | 桌面端 1440x1000 | 6 | 0 | 0 | 0 | 4 | `D:/mydev/study-malaysia/output/playwright/task039-20260524T104827Z/desktop-university-list-web.png` | `D:/mydev/study-malaysia/output/playwright/task039-20260524T104827Z/desktop-university-list-static.png` |
-| 院校详情 | 桌面端 1440x1000 | 1 | 0 | 0 | 0 | 1 | `D:/mydev/study-malaysia/output/playwright/task039-20260524T104827Z/desktop-university-detail-web.png` | `D:/mydev/study-malaysia/output/playwright/task039-20260524T104827Z/desktop-university-detail-static.png` |
-| 专业列表 | 桌面端 1440x1000 | 1 | 0 | 0 | 0 | 1 | `D:/mydev/study-malaysia/output/playwright/task039-20260524T104827Z/desktop-program-list-web.png` | `D:/mydev/study-malaysia/output/playwright/task039-20260524T104827Z/desktop-program-list-static.png` |
-| 专业详情弹窗 | 桌面端 1440x1000 | 1 | 0 | 0 | 0 | 1 | `D:/mydev/study-malaysia/output/playwright/task039-20260524T104827Z/desktop-program-modal-web.png` | `D:/mydev/study-malaysia/output/playwright/task039-20260524T104827Z/desktop-program-modal-static.png` |
-| 收藏页 | 桌面端 1440x1000 | 2 | 0 | 0 | 0 | 2 | `D:/mydev/study-malaysia/output/playwright/task039-20260524T104827Z/desktop-favorites-web.png` | `D:/mydev/study-malaysia/output/playwright/task039-20260524T104827Z/desktop-favorites-static.png` |
-| 对比页 | 桌面端 1440x1000 | 2 | 0 | 0 | 0 | 2 | `D:/mydev/study-malaysia/output/playwright/task039-20260524T104827Z/desktop-compare-web.png` | `D:/mydev/study-malaysia/output/playwright/task039-20260524T104827Z/desktop-compare-static.png` |
-| 规划页 | 桌面端 1440x1000 | 2 | 0 | 0 | 0 | 2 | `D:/mydev/study-malaysia/output/playwright/task039-20260524T104827Z/desktop-planner-web.png` | `D:/mydev/study-malaysia/output/playwright/task039-20260524T104827Z/desktop-planner-static.png` |
-| 登录弹窗 | 桌面端 1440x1000 | 6 | 0 | 0 | 0 | 4 | `D:/mydev/study-malaysia/output/playwright/task039-20260524T104827Z/desktop-auth-modal-web.png` | `D:/mydev/study-malaysia/output/playwright/task039-20260524T104827Z/desktop-auth-modal-static.png` |
-| 费用计算弹窗 | 桌面端 1440x1000 | 6 | 0 | 0 | 0 | 4 | `D:/mydev/study-malaysia/output/playwright/task039-20260524T104827Z/desktop-calculator-modal-web.png` | `D:/mydev/study-malaysia/output/playwright/task039-20260524T104827Z/desktop-calculator-modal-static.png` |
-| 推荐弹窗 | 桌面端 1440x1000 | 8 | 0 | 0 | 0 | 6 | `D:/mydev/study-malaysia/output/playwright/task039-20260524T104827Z/desktop-recommend-modal-web.png` | `D:/mydev/study-malaysia/output/playwright/task039-20260524T104827Z/desktop-recommend-modal-static.png` |
-| 首页首屏 | 移动端 390x844 | 6 | 0 | 0 | 0 | 4 | `D:/mydev/study-malaysia/output/playwright/task039-20260524T104827Z/mobile-home-web.png` | `D:/mydev/study-malaysia/output/playwright/task039-20260524T104827Z/mobile-home-static.png` |
-| 院校列表 | 移动端 390x844 | 6 | 0 | 0 | 0 | 4 | `D:/mydev/study-malaysia/output/playwright/task039-20260524T104827Z/mobile-university-list-web.png` | `D:/mydev/study-malaysia/output/playwright/task039-20260524T104827Z/mobile-university-list-static.png` |
-| 院校详情 | 移动端 390x844 | 1 | 0 | 0 | 0 | 1 | `D:/mydev/study-malaysia/output/playwright/task039-20260524T104827Z/mobile-university-detail-web.png` | `D:/mydev/study-malaysia/output/playwright/task039-20260524T104827Z/mobile-university-detail-static.png` |
-| 专业列表 | 移动端 390x844 | 1 | 0 | 0 | 0 | 1 | `D:/mydev/study-malaysia/output/playwright/task039-20260524T104827Z/mobile-program-list-web.png` | `D:/mydev/study-malaysia/output/playwright/task039-20260524T104827Z/mobile-program-list-static.png` |
-| 专业详情弹窗 | 移动端 390x844 | 1 | 0 | 0 | 0 | 1 | `D:/mydev/study-malaysia/output/playwright/task039-20260524T104827Z/mobile-program-modal-web.png` | `D:/mydev/study-malaysia/output/playwright/task039-20260524T104827Z/mobile-program-modal-static.png` |
-| 收藏页 | 移动端 390x844 | 2 | 0 | 0 | 0 | 2 | `D:/mydev/study-malaysia/output/playwright/task039-20260524T104827Z/mobile-favorites-web.png` | `D:/mydev/study-malaysia/output/playwright/task039-20260524T104827Z/mobile-favorites-static.png` |
-| 对比页 | 移动端 390x844 | 2 | 0 | 0 | 0 | 2 | `D:/mydev/study-malaysia/output/playwright/task039-20260524T104827Z/mobile-compare-web.png` | `D:/mydev/study-malaysia/output/playwright/task039-20260524T104827Z/mobile-compare-static.png` |
-| 规划页 | 移动端 390x844 | 2 | 0 | 0 | 0 | 2 | `D:/mydev/study-malaysia/output/playwright/task039-20260524T104827Z/mobile-planner-web.png` | `D:/mydev/study-malaysia/output/playwright/task039-20260524T104827Z/mobile-planner-static.png` |
-| 登录弹窗 | 移动端 390x844 | 6 | 0 | 0 | 0 | 4 | `D:/mydev/study-malaysia/output/playwright/task039-20260524T104827Z/mobile-auth-modal-web.png` | `D:/mydev/study-malaysia/output/playwright/task039-20260524T104827Z/mobile-auth-modal-static.png` |
-| 费用计算弹窗 | 移动端 390x844 | 6 | 0 | 0 | 0 | 4 | `D:/mydev/study-malaysia/output/playwright/task039-20260524T104827Z/mobile-calculator-modal-web.png` | `D:/mydev/study-malaysia/output/playwright/task039-20260524T104827Z/mobile-calculator-modal-static.png` |
-| 推荐弹窗 | 移动端 390x844 | 8 | 0 | 0 | 0 | 6 | `D:/mydev/study-malaysia/output/playwright/task039-20260524T104827Z/mobile-recommend-modal-web.png` | `D:/mydev/study-malaysia/output/playwright/task039-20260524T104827Z/mobile-recommend-modal-static.png` |
+| 首页首屏 | 桌面端 1440x1000 | 6 | 0 | 0 | 0 | 4 | `D:/mydev/study-malaysia/output/playwright/task039-20260524T105314Z/desktop-home-web.png` | `D:/mydev/study-malaysia/output/playwright/task039-20260524T105314Z/desktop-home-static.png` |
+| 院校列表 | 桌面端 1440x1000 | 6 | 0 | 0 | 0 | 4 | `D:/mydev/study-malaysia/output/playwright/task039-20260524T105314Z/desktop-university-list-web.png` | `D:/mydev/study-malaysia/output/playwright/task039-20260524T105314Z/desktop-university-list-static.png` |
+| 院校详情 | 桌面端 1440x1000 | 1 | 0 | 0 | 0 | 1 | `D:/mydev/study-malaysia/output/playwright/task039-20260524T105314Z/desktop-university-detail-web.png` | `D:/mydev/study-malaysia/output/playwright/task039-20260524T105314Z/desktop-university-detail-static.png` |
+| 专业列表 | 桌面端 1440x1000 | 1 | 0 | 0 | 0 | 1 | `D:/mydev/study-malaysia/output/playwright/task039-20260524T105314Z/desktop-program-list-web.png` | `D:/mydev/study-malaysia/output/playwright/task039-20260524T105314Z/desktop-program-list-static.png` |
+| 专业详情弹窗 | 桌面端 1440x1000 | 1 | 0 | 0 | 0 | 1 | `D:/mydev/study-malaysia/output/playwright/task039-20260524T105314Z/desktop-program-modal-web.png` | `D:/mydev/study-malaysia/output/playwright/task039-20260524T105314Z/desktop-program-modal-static.png` |
+| 收藏页 | 桌面端 1440x1000 | 2 | 0 | 0 | 0 | 2 | `D:/mydev/study-malaysia/output/playwright/task039-20260524T105314Z/desktop-favorites-web.png` | `D:/mydev/study-malaysia/output/playwright/task039-20260524T105314Z/desktop-favorites-static.png` |
+| 对比页 | 桌面端 1440x1000 | 2 | 0 | 0 | 0 | 2 | `D:/mydev/study-malaysia/output/playwright/task039-20260524T105314Z/desktop-compare-web.png` | `D:/mydev/study-malaysia/output/playwright/task039-20260524T105314Z/desktop-compare-static.png` |
+| 规划页 | 桌面端 1440x1000 | 2 | 0 | 0 | 0 | 2 | `D:/mydev/study-malaysia/output/playwright/task039-20260524T105314Z/desktop-planner-web.png` | `D:/mydev/study-malaysia/output/playwright/task039-20260524T105314Z/desktop-planner-static.png` |
+| 登录弹窗 | 桌面端 1440x1000 | 6 | 0 | 0 | 0 | 4 | `D:/mydev/study-malaysia/output/playwright/task039-20260524T105314Z/desktop-auth-modal-web.png` | `D:/mydev/study-malaysia/output/playwright/task039-20260524T105314Z/desktop-auth-modal-static.png` |
+| 费用计算弹窗 | 桌面端 1440x1000 | 6 | 0 | 0 | 0 | 4 | `D:/mydev/study-malaysia/output/playwright/task039-20260524T105314Z/desktop-calculator-modal-web.png` | `D:/mydev/study-malaysia/output/playwright/task039-20260524T105314Z/desktop-calculator-modal-static.png` |
+| 推荐弹窗 | 桌面端 1440x1000 | 8 | 0 | 0 | 0 | 6 | `D:/mydev/study-malaysia/output/playwright/task039-20260524T105314Z/desktop-recommend-modal-web.png` | `D:/mydev/study-malaysia/output/playwright/task039-20260524T105314Z/desktop-recommend-modal-static.png` |
+| 首页首屏 | 移动端 390x844 | 6 | 0 | 0 | 0 | 4 | `D:/mydev/study-malaysia/output/playwright/task039-20260524T105314Z/mobile-home-web.png` | `D:/mydev/study-malaysia/output/playwright/task039-20260524T105314Z/mobile-home-static.png` |
+| 院校列表 | 移动端 390x844 | 6 | 0 | 0 | 0 | 4 | `D:/mydev/study-malaysia/output/playwright/task039-20260524T105314Z/mobile-university-list-web.png` | `D:/mydev/study-malaysia/output/playwright/task039-20260524T105314Z/mobile-university-list-static.png` |
+| 院校详情 | 移动端 390x844 | 1 | 0 | 0 | 0 | 1 | `D:/mydev/study-malaysia/output/playwright/task039-20260524T105314Z/mobile-university-detail-web.png` | `D:/mydev/study-malaysia/output/playwright/task039-20260524T105314Z/mobile-university-detail-static.png` |
+| 专业列表 | 移动端 390x844 | 1 | 0 | 0 | 0 | 1 | `D:/mydev/study-malaysia/output/playwright/task039-20260524T105314Z/mobile-program-list-web.png` | `D:/mydev/study-malaysia/output/playwright/task039-20260524T105314Z/mobile-program-list-static.png` |
+| 专业详情弹窗 | 移动端 390x844 | 1 | 0 | 0 | 0 | 1 | `D:/mydev/study-malaysia/output/playwright/task039-20260524T105314Z/mobile-program-modal-web.png` | `D:/mydev/study-malaysia/output/playwright/task039-20260524T105314Z/mobile-program-modal-static.png` |
+| 收藏页 | 移动端 390x844 | 2 | 0 | 0 | 0 | 2 | `D:/mydev/study-malaysia/output/playwright/task039-20260524T105314Z/mobile-favorites-web.png` | `D:/mydev/study-malaysia/output/playwright/task039-20260524T105314Z/mobile-favorites-static.png` |
+| 对比页 | 移动端 390x844 | 2 | 0 | 0 | 0 | 2 | `D:/mydev/study-malaysia/output/playwright/task039-20260524T105314Z/mobile-compare-web.png` | `D:/mydev/study-malaysia/output/playwright/task039-20260524T105314Z/mobile-compare-static.png` |
+| 规划页 | 移动端 390x844 | 2 | 0 | 0 | 0 | 2 | `D:/mydev/study-malaysia/output/playwright/task039-20260524T105314Z/mobile-planner-web.png` | `D:/mydev/study-malaysia/output/playwright/task039-20260524T105314Z/mobile-planner-static.png` |
+| 登录弹窗 | 移动端 390x844 | 6 | 0 | 0 | 0 | 4 | `D:/mydev/study-malaysia/output/playwright/task039-20260524T105314Z/mobile-auth-modal-web.png` | `D:/mydev/study-malaysia/output/playwright/task039-20260524T105314Z/mobile-auth-modal-static.png` |
+| 费用计算弹窗 | 移动端 390x844 | 6 | 0 | 0 | 0 | 4 | `D:/mydev/study-malaysia/output/playwright/task039-20260524T105314Z/mobile-calculator-modal-web.png` | `D:/mydev/study-malaysia/output/playwright/task039-20260524T105314Z/mobile-calculator-modal-static.png` |
+| 推荐弹窗 | 移动端 390x844 | 8 | 0 | 0 | 0 | 6 | `D:/mydev/study-malaysia/output/playwright/task039-20260524T105314Z/mobile-recommend-modal-web.png` | `D:/mydev/study-malaysia/output/playwright/task039-20260524T105314Z/mobile-recommend-modal-static.png` |
 
 ## 图片尺寸、裁切和 fallback 记录
 

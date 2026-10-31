@@ -1,0 +1,191 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-06-17T05:51:04.723Z",
+  "auditMode": "supplemental-acceptance-recheck-95-public-fix",
+  "scope": {
+    "universityCode": "USM",
+    "level": "phd",
+    "applicantScope": "international",
+    "academicSession": "current-directory-and-2025/2026-fees",
+    "authorization": "post-fix-controlled-publication-recheck"
+  },
+  "rootCause": {
+    "summary": "Two Doctor of Education records were previously excluded because the dynamic catalogue title carried an old Malaysian Candidate Only marker. Current official detail pages publish international-applicant language requirements and the current official fee authority publishes international USD 18,000 fees for both records, so the current detail page and fee table supersede the stale title marker.",
+    "affectedRecords": [
+      {
+        "code": "USM-PHD-ARTICLE-348-5EFB3077",
+        "officialName": "DOCTOR OF EDUCATION IN CURRICULUM & INSTRUCTION",
+        "currentEvidence": "Current programme detail page title has no Malaysian-only marker; language section states applicable for international applicants only; current fee table publishes International USD 18,000."
+      },
+      {
+        "code": "USM-PHD-ARTICLE-349-8BE97FAD",
+        "officialName": "DOCTOR OF EDUCATION IN TESOL",
+        "currentEvidence": "Current detail H1 has no Malaysian-only marker; language section states applicable for international applicants only; current fee table publishes International USD 18,000."
+      }
+    ]
+  },
+  "sourceArtifacts": {
+    "candidate": {
+      "path": "data/imports/usm/2026-06-17/phd-final-collection/phd-candidate.json",
+      "sha256": "e2d916114ab356b38dee09adc5cb7607a5c0169a190eee4de875c2fee1f441fe"
+    },
+    "audit": {
+      "path": "data/imports/usm/2026-06-17/phd-final-collection/phd-audit.json",
+      "sha256": "8bd058f98731c461b470e2fbcff2ef57ac25bf8829d7531a4c7c69f3369ff29f"
+    },
+    "delivery": {
+      "path": "data/imports/usm/2026-06-17/phd-final-collection/phd-delivery.json",
+      "sha256": "128ca9e75a41a45860c9a73830d01e044c748b66daded9fed27aa154530f37ce"
+    },
+    "releaseGate": {
+      "path": "tmp/reports/usm-commercial-release-gate-95-phd-public-20260617.json",
+      "sha256": "8465f96adc2bdd4fd83119c9e8964f6cc829feb043769e03e1711177d11055d5",
+      "decision": "commercial-release-ready",
+      "status": "passed"
+    }
+  },
+  "candidateCoverage": {
+    "records": 95,
+    "statuses": {
+      "ready": 95
+    },
+    "modes": {
+      "mixed": 6,
+      "online": 1,
+      "coursework": 6,
+      "research": 82
+    },
+    "fee": {
+      "verified-current-official-fee": 13,
+      "official-rate-only": 62,
+      "official-unpublished": 20
+    },
+    "academicGeneralRule": 24,
+    "languageGeneralRule": 26,
+    "academicCurrentHtml": 21,
+    "languageCurrentHtml": 19
+  },
+  "publicApiList": {
+    "url": "http://127.0.0.1:3000/api/universities/universiti-sains-malaysia-usm",
+    "programCount": 462,
+    "returnedPrograms": 462,
+    "byLevel": {
+      "bachelor": 63,
+      "master": 304,
+      "phd": 95
+    },
+    "catalogStatusSummary": {
+      "all": {
+        "ready": 462,
+        "total": 463,
+        "needsReview": 0,
+        "notAvailableForInternational": 1
+      },
+      "byLevel": {
+        "phd": {
+          "ready": 95,
+          "total": 95,
+          "needsReview": 0,
+          "notAvailableForInternational": 0
+        },
+        "master": {
+          "ready": 304,
+          "total": 305,
+          "needsReview": 0,
+          "notAvailableForInternational": 1
+        },
+        "bachelor": {
+          "ready": 63,
+          "total": 63,
+          "needsReview": 0,
+          "notAvailableForInternational": 0
+        }
+      }
+    },
+    "allFeeStatus": {
+      "matched-official": 196,
+      "not-published": 53,
+      "calculated-from-official-rate": 213
+    },
+    "phdPublicRows": 95,
+    "phdFeeStatus": {
+      "matched-official": 13,
+      "calculated-from-official-rate": 62,
+      "not-published": 20
+    },
+    "nonReadyPublicRows": 0,
+    "forbiddenFeeRangeRows": 0
+  },
+  "publicApiDetail": {
+    "checkedRows": 95,
+    "issueCounts": {
+      "http": 0,
+      "nonReady": 0,
+      "missingRequirement": 0,
+      "missingLanguage": 0,
+      "missingSource": 0,
+      "feeRange": 0,
+      "estimatedFee": 0,
+      "statusMismatch": 0,
+      "feeStatusMismatch": 0,
+      "nonOfficialSource": 0
+    },
+    "issueSamples": {
+      "http": [],
+      "nonReady": [],
+      "missingRequirement": [],
+      "missingLanguage": [],
+      "missingSource": [],
+      "feeRange": [],
+      "estimatedFee": [],
+      "statusMismatch": [],
+      "feeStatusMismatch": [],
+      "nonOfficialSource": []
+    },
+    "samples": [
+      {
+        "slug": "usm-phd-commercial-2026-usm-d-article-340-f6b2dbbe",
+        "name": "DOCTOR OF BUSINESS ADMINISTRATION (DBA)",
+        "publicDisplayStatus": "ready",
+        "durationOfficial": "Full time: 7 semesters to 10 semesters Part time: 10 semesters to 14 semesters",
+        "tuitionDisplay": "USD 16,200 total tuition",
+        "feeStatus": "matched-official",
+        "source": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=340&catid=53"
+      },
+      {
+        "slug": "usm-phd-commercial-2026-usm-d-article-336-17719538",
+        "name": "DOCTOR OF BUSINESS ADMINISTRATION (E-DBA)",
+        "publicDisplayStatus": "ready",
+        "durationOfficial": "Full time : 7 semesters to 10 semesters (3.5 years to 5 years) Part time : 9 semesters to 14 semesters (4.5 years to 7 years)",
+        "tuitionDisplay": "USD 18,225 total tuition",
+        "feeStatus": "matched-official",
+        "source": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=336&catid=53"
+      },
+      {
+        "slug": "usm-phd-commercial-2026-usm-d-article-348-5efb3077",
+        "name": "DOCTOR OF EDUCATION IN CURRICULUM & INSTRUCTION",
+        "publicDisplayStatus": "ready",
+        "durationOfficial": "Full Time: Min 6 semesters / Max 10 semesters Part Time: Min 8 semesters / Max 14 semesters",
+        "tuitionDisplay": "USD 18,000 total tuition",
+        "feeStatus": "matched-official",
+        "source": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=348&catid=53"
+      },
+      {
+        "slug": "usm-phd-commercial-2026-usm-d-article-349-8be97fad",
+        "name": "DOCTOR OF EDUCATION IN TESOL",
+        "publicDisplayStatus": "ready",
+        "durationOfficial": "Full-time: Min 6 semesters / Max 10 semesters Part-time: Min 8 semesters / Max 14 semesters",
+        "tuitionDisplay": "USD 18,000 total tuition",
+        "feeStatus": "matched-official",
+        "source": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=349&catid=53"
+      }
+    ]
+  },
+  "documentationCorrections": [
+    "Current PhD acceptance standard is 95 canonical doctoral records, 95 public ready records, 0 needs-review, and 0 not-available-for-international.",
+    "USM all-level current public API count is 462: bachelor 63, master 304, PhD 95. Canonical all-level count remains 463 because one master record is not available for international applicants.",
+    "Current all-level public API fee partition is matched-official 196, calculated-from-official-rate 213, not-published 53.",
+    "The two Doctor of Education records are now public ready and display USD 18,000 total tuition; stale Malaysian-only text is removed from public names."
+  ],
+  "decision": "passed"
+}

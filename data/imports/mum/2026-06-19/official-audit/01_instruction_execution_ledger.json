@@ -1,0 +1,202 @@
+[
+  {
+    "id": "user-task",
+    "instruction": "采集统计莫纳什大学马来西亚校区的本硕博专业信息，使用 StudyMY official university collector skill 和验收标准，严格执行；仅采集统计，不入库不发布。",
+    "scope": "run",
+    "status": "completed",
+    "evidencePointer": "12_operator_review_report.md",
+    "reason": "Completed for collect-only Monash University Malaysia official audit batch."
+  },
+  {
+    "id": "run-contract",
+    "instruction": "Record run contract and one-input defaults.",
+    "scope": "run",
+    "status": "completed",
+    "evidencePointer": "00_run_contract.json",
+    "reason": "Completed for collect-only Monash University Malaysia official audit batch."
+  },
+  {
+    "id": "source-registry",
+    "instruction": "Discover official source registry and accepted domains.",
+    "scope": "source",
+    "status": "completed",
+    "evidencePointer": "02_official_source_registry.json",
+    "reason": "Completed for collect-only Monash University Malaysia official audit batch."
+  },
+  {
+    "id": "baseline",
+    "instruction": "Lock official programme baseline by level before enrichment.",
+    "scope": "level",
+    "status": "completed",
+    "evidencePointer": "03_level_manifest.json",
+    "reason": "Completed for collect-only Monash University Malaysia official audit batch."
+  },
+  {
+    "id": "row-disposal",
+    "instruction": "Dispose every official row with a reviewed state.",
+    "scope": "level",
+    "status": "completed",
+    "evidencePointer": "04_official_row_disposal.json",
+    "reason": "Completed for collect-only Monash University Malaysia official audit batch."
+  },
+  {
+    "id": "source-cache",
+    "instruction": "Snapshot/cache official authorities with retrieval metadata and hash.",
+    "scope": "source",
+    "status": "completed",
+    "evidencePointer": "05_source_cache_index.json",
+    "reason": "Completed for collect-only Monash University Malaysia official audit batch."
+  },
+  {
+    "id": "page-options",
+    "instruction": "Inventory every programme detail page option, panel, selector, and same-programme link.",
+    "scope": "programme",
+    "status": "completed",
+    "evidencePointer": "06_page_option_inventory.json",
+    "reason": "Completed for collect-only Monash University Malaysia official audit batch."
+  },
+  {
+    "id": "field-coverage",
+    "instruction": "Build field coverage matrix for every material field and canonical programme.",
+    "scope": "field",
+    "status": "completed",
+    "evidencePointer": "07_field_coverage_matrix.json",
+    "reason": "Completed for collect-only Monash University Malaysia official audit batch."
+  },
+  {
+    "id": "candidate",
+    "instruction": "Build deterministic StudyMY candidate dataset.",
+    "scope": "programme",
+    "status": "completed",
+    "evidencePointer": "08_candidate_dataset.json",
+    "reason": "Completed for collect-only Monash University Malaysia official audit batch."
+  },
+  {
+    "id": "trace",
+    "instruction": "Trace ready public values to official evidence.",
+    "scope": "field",
+    "status": "completed",
+    "evidencePointer": "09_source_to_candidate_trace.json",
+    "reason": "Completed for collect-only Monash University Malaysia official audit batch."
+  },
+  {
+    "id": "display-parity",
+    "instruction": "Verify institution, catalogue, list, detail, and leakage display parity.",
+    "scope": "display",
+    "status": "completed",
+    "evidencePointer": "10_display_parity_report.json",
+    "reason": "Completed for collect-only Monash University Malaysia official audit batch."
+  },
+  {
+    "id": "exceptions",
+    "instruction": "Record blocking/review exceptions with evidence and next action.",
+    "scope": "run",
+    "status": "completed",
+    "evidencePointer": "11_exception_queue.json",
+    "reason": "Completed for collect-only Monash University Malaysia official audit batch."
+  },
+  {
+    "id": "operator-report",
+    "instruction": "Generate Ian review report with counts, gaps, and validation results.",
+    "scope": "run",
+    "status": "completed",
+    "evidencePointer": "12_operator_review_report.md",
+    "reason": "Completed for collect-only Monash University Malaysia official audit batch."
+  },
+  {
+    "id": "monash-transport-block",
+    "instruction": "Record direct official-site transport blocks and switch route after one confirmed block.",
+    "scope": "source",
+    "status": "completed",
+    "evidencePointer": "05_source_cache_index.json",
+    "reason": "Completed for collect-only Monash University Malaysia official audit batch."
+  },
+  {
+    "id": "monash-fee-policy",
+    "instruction": "Do not convert official per-year fees into full-duration public tuition without authorization.",
+    "scope": "field",
+    "status": "completed",
+    "evidencePointer": "07_field_coverage_matrix.json",
+    "reason": "Completed for collect-only Monash University Malaysia official audit batch."
+  },
+  {
+    "id": "monash-notion-status",
+    "instruction": "Update Chinese development notes or state Notion was not updated.",
+    "scope": "run",
+    "status": "completed",
+    "evidencePointer": "tmp/dev-logs/2026-06-19-mum-official-audit.md",
+    "reason": "Completed for collect-only Monash University Malaysia official audit batch."
+  },
+  {
+    "id": "monash-transport-block",
+    "instruction": "Record direct official-site transport blocks and switch route after one confirmed block.",
+    "scope": "source",
+    "status": "completed",
+    "evidencePointer": "05_source_cache_index.json",
+    "reason": "Completed for collect-only Monash University Malaysia official audit batch."
+  },
+  {
+    "id": "monash-fee-policy",
+    "instruction": "Do not convert official per-year fees into full-duration public tuition without authorization.",
+    "scope": "field",
+    "status": "completed",
+    "evidencePointer": "07_field_coverage_matrix.json",
+    "reason": "Completed for collect-only Monash University Malaysia official audit batch."
+  },
+  {
+    "id": "monash-notion-status",
+    "instruction": "Update Chinese development notes or state Notion was not updated.",
+    "scope": "run",
+    "status": "completed",
+    "evidencePointer": "tmp/dev-logs/2026-06-19-mum-official-audit.md",
+    "reason": "Completed for collect-only Monash University Malaysia official audit batch."
+  },
+  {
+    "id": "monash-transport-block",
+    "instruction": "Record direct official-site transport blocks and switch route after one confirmed block.",
+    "scope": "source",
+    "status": "completed",
+    "evidencePointer": "05_source_cache_index.json",
+    "reason": "Completed for collect-only Monash University Malaysia official audit batch."
+  },
+  {
+    "id": "monash-fee-policy",
+    "instruction": "Do not convert official per-year fees into full-duration public tuition without authorization.",
+    "scope": "field",
+    "status": "completed",
+    "evidencePointer": "07_field_coverage_matrix.json",
+    "reason": "Completed for collect-only Monash University Malaysia official audit batch."
+  },
+  {
+    "id": "monash-notion-status",
+    "instruction": "Update Chinese development notes or state Notion was not updated.",
+    "scope": "run",
+    "status": "completed",
+    "evidencePointer": "tmp/dev-logs/2026-06-19-mum-official-audit.md",
+    "reason": "Completed for collect-only Monash University Malaysia official audit batch."
+  },
+  {
+    "id": "monash-transport-block",
+    "instruction": "Record direct official-site transport blocks and switch route after one confirmed block.",
+    "scope": "source",
+    "status": "completed",
+    "evidencePointer": "05_source_cache_index.json",
+    "reason": "Direct requests returned Cloudflare verification; reader snapshots or transport-blocked entries were recorded."
+  },
+  {
+    "id": "monash-fee-policy",
+    "instruction": "Do not convert official per-year fees into full-duration public tuition without authorization.",
+    "scope": "field",
+    "status": "completed",
+    "evidencePointer": "07_field_coverage_matrix.json",
+    "reason": "Per-year rows are retained as official-rate-only and candidate records remain needs-review."
+  },
+  {
+    "id": "monash-notion-status",
+    "instruction": "Update Chinese development notes or state Notion was not updated.",
+    "scope": "run",
+    "status": "completed",
+    "evidencePointer": "tmp/dev-logs/2026-06-19-mum-official-audit.md",
+    "reason": "Local Chinese development note is written; Notion is not writable in this session."
+  }
+]

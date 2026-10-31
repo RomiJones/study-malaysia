@@ -1,0 +1,1791 @@
+[
+  {
+    "code": "MUM-UG-ARTS-SOCIAL-SCIENC-BACHELOR-OF-ARTS-AND-SOCIAL-SCIENCES-01",
+    "nameEnOfficial": "Bachelor of Arts and Social Sciences",
+    "sources": [
+      {
+        "field": "identity",
+        "sourceId": "detail-mum-ug-arts-social-scienc-bachelor-of-arts-and-social-sciences-01",
+        "sourceUrl": "https://www.monash.edu.my/study/undergraduate/arts-social-sciences/bachelor-arts-social-sciences"
+      },
+      {
+        "field": "fees",
+        "sourceId": "undergraduate-fees",
+        "sourceUrl": "https://www.monash.edu.my/study/undergraduate/fees",
+        "sourceText": "49,920"
+      },
+      {
+        "field": "requirements",
+        "sourceId": "detail-mum-ug-arts-social-scienc-bachelor-of-arts-and-social-sciences-01",
+        "sourceUrl": "https://www.monash.edu.my/study/undergraduate/arts-social-sciences/bachelor-arts-social-sciences",
+        "state": "official-unpublished"
+      },
+      {
+        "field": "language",
+        "sourceId": "english-tests",
+        "sourceUrl": "https://www.monash.edu.my/study/entry-requirements/english/tests",
+        "state": "general-rule"
+      }
+    ]
+  },
+  {
+    "code": "MUM-UG-ARTS-SOCIAL-SCIENC-BACHELOR-OF-DIGITAL-MEDIA-AND-COMMUNICATION-02",
+    "nameEnOfficial": "Bachelor of Digital Media and Communication",
+    "sources": [
+      {
+        "field": "identity",
+        "sourceId": "detail-mum-ug-arts-social-scienc-bachelor-of-digital-media-and-communication-02",
+        "sourceUrl": "https://www.monash.edu.my/study/undergraduate/arts-social-sciences/bachelor-of-digital-media-and-communication"
+      },
+      {
+        "field": "fees",
+        "sourceId": "undergraduate-fees",
+        "sourceUrl": "https://www.monash.edu.my/study/undergraduate/fees",
+        "sourceText": "49,920"
+      },
+      {
+        "field": "requirements",
+        "sourceId": "detail-mum-ug-arts-social-scienc-bachelor-of-digital-media-and-communication-02",
+        "sourceUrl": "https://www.monash.edu.my/study/undergraduate/arts-social-sciences/bachelor-of-digital-media-and-communication",
+        "state": "official-unpublished"
+      },
+      {
+        "field": "language",
+        "sourceId": "english-tests",
+        "sourceUrl": "https://www.monash.edu.my/study/entry-requirements/english/tests",
+        "state": "general-rule"
+      }
+    ]
+  },
+  {
+    "code": "MUM-UG-ARTS-SOCIAL-SCIENC-BACHELOR-OF-ARTS-HONOURS-03",
+    "nameEnOfficial": "Bachelor of Arts (Honours)",
+    "sources": [
+      {
+        "field": "identity",
+        "sourceId": "detail-mum-ug-arts-social-scienc-bachelor-of-arts-honours-03",
+        "sourceUrl": "https://www.monash.edu.my/study/undergraduate/arts-social-sciences/bachelor-arts-honours"
+      },
+      {
+        "field": "fees",
+        "sourceId": "undergraduate-fees",
+        "sourceUrl": "https://www.monash.edu.my/study/undergraduate/fees",
+        "sourceText": "49,920"
+      },
+      {
+        "field": "requirements",
+        "sourceId": "detail-mum-ug-arts-social-scienc-bachelor-of-arts-honours-03",
+        "sourceUrl": "https://www.monash.edu.my/study/undergraduate/arts-social-sciences/bachelor-arts-honours",
+        "state": "official-unpublished"
+      },
+      {
+        "field": "language",
+        "sourceId": "english-tests",
+        "sourceUrl": "https://www.monash.edu.my/study/entry-requirements/english/tests",
+        "state": "general-rule"
+      }
+    ]
+  },
+  {
+    "code": "MUM-UG-BUSINESS-BACHELOR-OF-BUSINESS-AND-COMMERCE-04",
+    "nameEnOfficial": "Bachelor of Business and Commerce",
+    "sources": [
+      {
+        "field": "identity",
+        "sourceId": "detail-mum-ug-business-bachelor-of-business-and-commerce-04",
+        "sourceUrl": "https://www.monash.edu.my/study/undergraduate/business/bachelor-business-commerce"
+      },
+      {
+        "field": "fees",
+        "sourceId": "undergraduate-fees",
+        "sourceUrl": "https://www.monash.edu.my/study/undergraduate/fees",
+        "sourceText": "51,840"
+      },
+      {
+        "field": "requirements",
+        "sourceId": "detail-mum-ug-business-bachelor-of-business-and-commerce-04",
+        "sourceUrl": "https://www.monash.edu.my/study/undergraduate/business/bachelor-business-commerce",
+        "state": "transport-blocked"
+      },
+      {
+        "field": "language",
+        "sourceId": "english-tests",
+        "sourceUrl": "https://www.monash.edu.my/study/entry-requirements/english/tests",
+        "state": "general-rule"
+      }
+    ]
+  },
+  {
+    "code": "MUM-UG-BUSINESS-BACHELOR-IN-ACTUARIAL-ANALYTICS-05",
+    "nameEnOfficial": "Bachelor in Actuarial Analytics",
+    "sources": [
+      {
+        "field": "identity",
+        "sourceId": "detail-mum-ug-business-bachelor-in-actuarial-analytics-05",
+        "sourceUrl": "https://www.monash.edu.my/study/undergraduate/business/bachelor-in-actuarial-analytics"
+      },
+      {
+        "field": "fees",
+        "sourceId": "undergraduate-fees",
+        "sourceUrl": "https://www.monash.edu.my/study/undergraduate/fees",
+        "sourceText": "54,720"
+      },
+      {
+        "field": "requirements",
+        "sourceId": "detail-mum-ug-business-bachelor-in-actuarial-analytics-05",
+        "sourceUrl": "https://www.monash.edu.my/study/undergraduate/business/bachelor-in-actuarial-analytics",
+        "state": "official-unpublished"
+      },
+      {
+        "field": "language",
+        "sourceId": "english-tests",
+        "sourceUrl": "https://www.monash.edu.my/study/entry-requirements/english/tests",
+        "state": "general-rule"
+      }
+    ]
+  },
+  {
+    "code": "MUM-UG-BUSINESS-BACHELOR-OF-DIGITAL-BUSINESS-06",
+    "nameEnOfficial": "Bachelor of Digital Business",
+    "sources": [
+      {
+        "field": "identity",
+        "sourceId": "detail-mum-ug-business-bachelor-of-digital-business-06",
+        "sourceUrl": "https://www.monash.edu.my/study/undergraduate/business/bachelor-of-digital-business"
+      },
+      {
+        "field": "fees",
+        "sourceId": "undergraduate-fees",
+        "sourceUrl": "https://www.monash.edu.my/study/undergraduate/fees",
+        "sourceText": "51,840"
+      },
+      {
+        "field": "requirements",
+        "sourceId": "detail-mum-ug-business-bachelor-of-digital-business-06",
+        "sourceUrl": "https://www.monash.edu.my/study/undergraduate/business/bachelor-of-digital-business",
+        "state": "transport-blocked"
+      },
+      {
+        "field": "language",
+        "sourceId": "english-tests",
+        "sourceUrl": "https://www.monash.edu.my/study/entry-requirements/english/tests",
+        "state": "general-rule"
+      }
+    ]
+  },
+  {
+    "code": "MUM-UG-BUSINESS-BACHELOR-OF-BUSINESS-AND-COMMERCE-HONOURS-07",
+    "nameEnOfficial": "Bachelor of Business and Commerce (Honours)",
+    "sources": [
+      {
+        "field": "identity",
+        "sourceId": "detail-mum-ug-business-bachelor-of-business-and-commerce-honours-07",
+        "sourceUrl": "https://www.monash.edu.my/study/undergraduate/business/bachelor-business-commerce-honours"
+      },
+      {
+        "field": "fees",
+        "sourceId": "undergraduate-fees",
+        "sourceUrl": "https://www.monash.edu.my/study/undergraduate/fees",
+        "sourceText": "51,840"
+      },
+      {
+        "field": "requirements",
+        "sourceId": "detail-mum-ug-business-bachelor-of-business-and-commerce-honours-07",
+        "sourceUrl": "https://www.monash.edu.my/study/undergraduate/business/bachelor-business-commerce-honours",
+        "state": "official-unpublished"
+      },
+      {
+        "field": "language",
+        "sourceId": "english-tests",
+        "sourceUrl": "https://www.monash.edu.my/study/entry-requirements/english/tests",
+        "state": "general-rule"
+      }
+    ]
+  },
+  {
+    "code": "MUM-UG-BUSINESS-BACHELOR-OF-BUSINESS-AND-COMMERCE-AND-BACHEL-08",
+    "nameEnOfficial": "Bachelor of Business and Commerce and Bachelor of Computer Science",
+    "sources": [
+      {
+        "field": "identity",
+        "sourceId": "detail-mum-ug-business-bachelor-of-business-and-commerce-and-bachel-08",
+        "sourceUrl": "https://www.monash.edu.my/study/undergraduate/business/bachelor-business-commerce-bachelor-computer-science"
+      },
+      {
+        "field": "fees",
+        "sourceId": "undergraduate-fees",
+        "sourceUrl": "https://www.monash.edu.my/study/undergraduate/fees",
+        "sourceText": "54,720"
+      },
+      {
+        "field": "requirements",
+        "sourceId": "detail-mum-ug-business-bachelor-of-business-and-commerce-and-bachel-08",
+        "sourceUrl": "https://www.monash.edu.my/study/undergraduate/business/bachelor-business-commerce-bachelor-computer-science",
+        "state": "transport-blocked"
+      },
+      {
+        "field": "language",
+        "sourceId": "english-tests",
+        "sourceUrl": "https://www.monash.edu.my/study/entry-requirements/english/tests",
+        "state": "general-rule"
+      }
+    ]
+  },
+  {
+    "code": "MUM-UG-BUSINESS-BACHELOR-OF-BUSINESS-AND-COMMERCE-AND-BACHEL-09",
+    "nameEnOfficial": "Bachelor of Business and Commerce and Bachelor of Digital Media and Communication",
+    "sources": [
+      {
+        "field": "identity",
+        "sourceId": "detail-mum-ug-business-bachelor-of-business-and-commerce-and-bachel-09",
+        "sourceUrl": "https://www.monash.edu.my/study/undergraduate/business/bachelor-business-commerce-bachelor-communication"
+      },
+      {
+        "field": "fees",
+        "sourceId": "undergraduate-fees",
+        "sourceUrl": "https://www.monash.edu.my/study/undergraduate/fees",
+        "sourceText": "51,840"
+      },
+      {
+        "field": "requirements",
+        "sourceId": "detail-mum-ug-business-bachelor-of-business-and-commerce-and-bachel-09",
+        "sourceUrl": "https://www.monash.edu.my/study/undergraduate/business/bachelor-business-commerce-bachelor-communication",
+        "state": "transport-blocked"
+      },
+      {
+        "field": "language",
+        "sourceId": "english-tests",
+        "sourceUrl": "https://www.monash.edu.my/study/entry-requirements/english/tests",
+        "state": "general-rule"
+      }
+    ]
+  },
+  {
+    "code": "MUM-UG-ENGINEERING-BACHELOR-OF-BIOMEDICAL-ENGINEERING-HONOURS-10",
+    "nameEnOfficial": "Bachelor of Biomedical Engineering (Honours)",
+    "sources": [
+      {
+        "field": "identity",
+        "sourceId": "detail-mum-ug-engineering-bachelor-of-biomedical-engineering-honours-10",
+        "sourceUrl": "https://www.monash.edu.my/study/undergraduate/engineering/bachelor-of-biomedical-engineering-honours"
+      },
+      {
+        "field": "fees",
+        "sourceId": "undergraduate-fees",
+        "sourceUrl": "https://www.monash.edu.my/study/undergraduate/fees",
+        "sourceText": "64,800"
+      },
+      {
+        "field": "requirements",
+        "sourceId": "detail-mum-ug-engineering-bachelor-of-biomedical-engineering-honours-10",
+        "sourceUrl": "https://www.monash.edu.my/study/undergraduate/engineering/bachelor-of-biomedical-engineering-honours",
+        "state": "official-unpublished"
+      },
+      {
+        "field": "language",
+        "sourceId": "english-tests",
+        "sourceUrl": "https://www.monash.edu.my/study/entry-requirements/english/tests",
+        "state": "general-rule"
+      }
+    ]
+  },
+  {
+    "code": "MUM-UG-ENGINEERING-BACHELOR-OF-CHEMICAL-ENGINEERING-HONOURS-11",
+    "nameEnOfficial": "Bachelor of Chemical Engineering (Honours)",
+    "sources": [
+      {
+        "field": "identity",
+        "sourceId": "detail-mum-ug-engineering-bachelor-of-chemical-engineering-honours-11",
+        "sourceUrl": "https://www.monash.edu.my/study/undergraduate/engineering/bachelor-of-engineering-honours-in-chemical-engineering"
+      },
+      {
+        "field": "fees",
+        "sourceId": "undergraduate-fees",
+        "sourceUrl": "https://www.monash.edu.my/study/undergraduate/fees",
+        "sourceText": "64,800"
+      },
+      {
+        "field": "requirements",
+        "sourceId": "detail-mum-ug-engineering-bachelor-of-chemical-engineering-honours-11",
+        "sourceUrl": "https://www.monash.edu.my/study/undergraduate/engineering/bachelor-of-engineering-honours-in-chemical-engineering",
+        "state": "official-unpublished"
+      },
+      {
+        "field": "language",
+        "sourceId": "english-tests",
+        "sourceUrl": "https://www.monash.edu.my/study/entry-requirements/english/tests",
+        "state": "general-rule"
+      }
+    ]
+  },
+  {
+    "code": "MUM-UG-ENGINEERING-BACHELOR-OF-CIVIL-ENGINEERING-HONOURS-12",
+    "nameEnOfficial": "Bachelor of Civil Engineering (Honours)",
+    "sources": [
+      {
+        "field": "identity",
+        "sourceId": "detail-mum-ug-engineering-bachelor-of-civil-engineering-honours-12",
+        "sourceUrl": "https://www.monash.edu.my/study/undergraduate/engineering/bachelor-of-engineering-honours-in-civil-engineering"
+      },
+      {
+        "field": "fees",
+        "sourceId": "undergraduate-fees",
+        "sourceUrl": "https://www.monash.edu.my/study/undergraduate/fees",
+        "sourceText": "64,800"
+      },
+      {
+        "field": "requirements",
+        "sourceId": "detail-mum-ug-engineering-bachelor-of-civil-engineering-honours-12",
+        "sourceUrl": "https://www.monash.edu.my/study/undergraduate/engineering/bachelor-of-engineering-honours-in-civil-engineering",
+        "state": "official-unpublished"
+      },
+      {
+        "field": "language",
+        "sourceId": "english-tests",
+        "sourceUrl": "https://www.monash.edu.my/study/entry-requirements/english/tests",
+        "state": "general-rule"
+      }
+    ]
+  },
+  {
+    "code": "MUM-UG-ENGINEERING-BACHELOR-OF-ELECTRICAL-AND-COMPUTER-SYSTEMS--13",
+    "nameEnOfficial": "Bachelor of Electrical and Computer Systems Engineering (Honours)",
+    "sources": [
+      {
+        "field": "identity",
+        "sourceId": "detail-mum-ug-engineering-bachelor-of-electrical-and-computer-systems--13",
+        "sourceUrl": "https://www.monash.edu.my/study/undergraduate/engineering/bachelor-of-engineering-honours-in-electrical-and-computer-systems-engineering"
+      },
+      {
+        "field": "fees",
+        "sourceId": "undergraduate-fees",
+        "sourceUrl": "https://www.monash.edu.my/study/undergraduate/fees",
+        "sourceText": "64,800"
+      },
+      {
+        "field": "requirements",
+        "sourceId": "detail-mum-ug-engineering-bachelor-of-electrical-and-computer-systems--13",
+        "sourceUrl": "https://www.monash.edu.my/study/undergraduate/engineering/bachelor-of-engineering-honours-in-electrical-and-computer-systems-engineering",
+        "state": "official-unpublished"
+      },
+      {
+        "field": "language",
+        "sourceId": "english-tests",
+        "sourceUrl": "https://www.monash.edu.my/study/entry-requirements/english/tests",
+        "state": "general-rule"
+      }
+    ]
+  },
+  {
+    "code": "MUM-UG-ENGINEERING-BACHELOR-OF-MATERIALS-ENGINEERING-HONOURS-14",
+    "nameEnOfficial": "Bachelor of Materials Engineering (Honours)",
+    "sources": [
+      {
+        "field": "identity",
+        "sourceId": "detail-mum-ug-engineering-bachelor-of-materials-engineering-honours-14",
+        "sourceUrl": "https://www.monash.edu.my/study/undergraduate/engineering/bachelor-of-materials-engineering-honours"
+      },
+      {
+        "field": "fees",
+        "sourceId": "undergraduate-fees",
+        "sourceUrl": "https://www.monash.edu.my/study/undergraduate/fees",
+        "sourceText": "64,800"
+      },
+      {
+        "field": "requirements",
+        "sourceId": "detail-mum-ug-engineering-bachelor-of-materials-engineering-honours-14",
+        "sourceUrl": "https://www.monash.edu.my/study/undergraduate/engineering/bachelor-of-materials-engineering-honours",
+        "state": "official-unpublished"
+      },
+      {
+        "field": "language",
+        "sourceId": "english-tests",
+        "sourceUrl": "https://www.monash.edu.my/study/entry-requirements/english/tests",
+        "state": "general-rule"
+      }
+    ]
+  },
+  {
+    "code": "MUM-UG-ENGINEERING-BACHELOR-OF-MECHANICAL-ENGINEERING-HONOURS-15",
+    "nameEnOfficial": "Bachelor of Mechanical Engineering (Honours)",
+    "sources": [
+      {
+        "field": "identity",
+        "sourceId": "detail-mum-ug-engineering-bachelor-of-mechanical-engineering-honours-15",
+        "sourceUrl": "https://www.monash.edu.my/study/undergraduate/engineering/bachelor-of-engineering-honours-in-mechanical-engineering"
+      },
+      {
+        "field": "fees",
+        "sourceId": "undergraduate-fees",
+        "sourceUrl": "https://www.monash.edu.my/study/undergraduate/fees",
+        "sourceText": "64,800"
+      },
+      {
+        "field": "requirements",
+        "sourceId": "detail-mum-ug-engineering-bachelor-of-mechanical-engineering-honours-15",
+        "sourceUrl": "https://www.monash.edu.my/study/undergraduate/engineering/bachelor-of-engineering-honours-in-mechanical-engineering",
+        "state": "official-unpublished"
+      },
+      {
+        "field": "language",
+        "sourceId": "english-tests",
+        "sourceUrl": "https://www.monash.edu.my/study/entry-requirements/english/tests",
+        "state": "general-rule"
+      }
+    ]
+  },
+  {
+    "code": "MUM-UG-ENGINEERING-BACHELOR-OF-ROBOTICS-AND-MECHATRONICS-ENGINE-16",
+    "nameEnOfficial": "Bachelor of Robotics and Mechatronics Engineering (Honours)",
+    "sources": [
+      {
+        "field": "identity",
+        "sourceId": "detail-mum-ug-engineering-bachelor-of-robotics-and-mechatronics-engine-16",
+        "sourceUrl": "https://www.monash.edu.my/study/undergraduate/engineering/bachelor-of-engineering-honours-in-mechatronics-engineering"
+      },
+      {
+        "field": "fees",
+        "sourceId": "undergraduate-fees",
+        "sourceUrl": "https://www.monash.edu.my/study/undergraduate/fees",
+        "sourceText": "64,800"
+      },
+      {
+        "field": "requirements",
+        "sourceId": "detail-mum-ug-engineering-bachelor-of-robotics-and-mechatronics-engine-16",
+        "sourceUrl": "https://www.monash.edu.my/study/undergraduate/engineering/bachelor-of-engineering-honours-in-mechatronics-engineering",
+        "state": "transport-blocked"
+      },
+      {
+        "field": "language",
+        "sourceId": "english-tests",
+        "sourceUrl": "https://www.monash.edu.my/study/entry-requirements/english/tests",
+        "state": "general-rule"
+      }
+    ]
+  },
+  {
+    "code": "MUM-UG-ENGINEERING-BACHELOR-OF-SOFTWARE-ENGINEERING-HONOURS-17",
+    "nameEnOfficial": "Bachelor of Software Engineering (Honours)",
+    "sources": [
+      {
+        "field": "identity",
+        "sourceId": "detail-mum-ug-engineering-bachelor-of-software-engineering-honours-17",
+        "sourceUrl": "https://www.monash.edu.my/study/undergraduate/engineering/bachelor-of-software-engineering-honours"
+      },
+      {
+        "field": "fees",
+        "sourceId": "undergraduate-fees",
+        "sourceUrl": "https://www.monash.edu.my/study/undergraduate/fees",
+        "sourceText": "64,800"
+      },
+      {
+        "field": "requirements",
+        "sourceId": "detail-mum-ug-engineering-bachelor-of-software-engineering-honours-17",
+        "sourceUrl": "https://www.monash.edu.my/study/undergraduate/engineering/bachelor-of-software-engineering-honours",
+        "state": "transport-blocked"
+      },
+      {
+        "field": "language",
+        "sourceId": "english-tests",
+        "sourceUrl": "https://www.monash.edu.my/study/entry-requirements/english/tests",
+        "state": "general-rule"
+      }
+    ]
+  },
+  {
+    "code": "MUM-UG-INFORMATION-TECHNO-BACHELOR-OF-COMPUTER-SCIENCE-18",
+    "nameEnOfficial": "Bachelor of Computer Science",
+    "sources": [
+      {
+        "field": "identity",
+        "sourceId": "detail-mum-ug-information-techno-bachelor-of-computer-science-18",
+        "sourceUrl": "https://www.monash.edu.my/study/undergraduate/information-technology/bachelor-computer-science"
+      },
+      {
+        "field": "fees",
+        "sourceId": "undergraduate-fees",
+        "sourceUrl": "https://www.monash.edu.my/study/undergraduate/fees",
+        "sourceText": "54,720"
+      },
+      {
+        "field": "requirements",
+        "sourceId": "detail-mum-ug-information-techno-bachelor-of-computer-science-18",
+        "sourceUrl": "https://www.monash.edu.my/study/undergraduate/information-technology/bachelor-computer-science",
+        "state": "official-unpublished"
+      },
+      {
+        "field": "language",
+        "sourceId": "english-tests",
+        "sourceUrl": "https://www.monash.edu.my/study/entry-requirements/english/tests",
+        "state": "general-rule"
+      }
+    ]
+  },
+  {
+    "code": "MUM-UG-INFORMATION-TECHNO-BACHELOR-OF-COMPUTER-SCIENCE-IN-ARTIFICIAL-I-19",
+    "nameEnOfficial": "Bachelor of Computer Science in Artificial Intelligence",
+    "sources": [
+      {
+        "field": "identity",
+        "sourceId": "detail-mum-ug-information-techno-bachelor-of-computer-science-in-artificial-i-19",
+        "sourceUrl": "https://www.monash.edu.my/study/undergraduate/information-technology/bachelor-of-computer-science-in-artificial-intelligence"
+      },
+      {
+        "field": "fees",
+        "sourceId": "undergraduate-fees",
+        "sourceUrl": "https://www.monash.edu.my/study/undergraduate/fees",
+        "sourceText": "54,720"
+      },
+      {
+        "field": "requirements",
+        "sourceId": "detail-mum-ug-information-techno-bachelor-of-computer-science-in-artificial-i-19",
+        "sourceUrl": "https://www.monash.edu.my/study/undergraduate/information-technology/bachelor-of-computer-science-in-artificial-intelligence",
+        "state": "transport-blocked"
+      },
+      {
+        "field": "language",
+        "sourceId": "english-tests",
+        "sourceUrl": "https://www.monash.edu.my/study/entry-requirements/english/tests",
+        "state": "general-rule"
+      }
+    ]
+  },
+  {
+    "code": "MUM-UG-INFORMATION-TECHNO-BACHELOR-OF-COMPUTER-SCIENCE-IN-DATA-SCIENCE-20",
+    "nameEnOfficial": "Bachelor of Computer Science in Data Science",
+    "sources": [
+      {
+        "field": "identity",
+        "sourceId": "detail-mum-ug-information-techno-bachelor-of-computer-science-in-data-science-20",
+        "sourceUrl": "https://www.monash.edu.my/study/undergraduate/information-technology/bachelor-of-computer-science-in-data-science"
+      },
+      {
+        "field": "fees",
+        "sourceId": "undergraduate-fees",
+        "sourceUrl": "https://www.monash.edu.my/study/undergraduate/fees",
+        "sourceText": "54,720"
+      },
+      {
+        "field": "requirements",
+        "sourceId": "detail-mum-ug-information-techno-bachelor-of-computer-science-in-data-science-20",
+        "sourceUrl": "https://www.monash.edu.my/study/undergraduate/information-technology/bachelor-of-computer-science-in-data-science",
+        "state": "transport-blocked"
+      },
+      {
+        "field": "language",
+        "sourceId": "english-tests",
+        "sourceUrl": "https://www.monash.edu.my/study/entry-requirements/english/tests",
+        "state": "general-rule"
+      }
+    ]
+  },
+  {
+    "code": "MUM-UG-INFORMATION-TECHNO-BACHELOR-OF-COMPUTER-SCIENCE-HONOURS-21",
+    "nameEnOfficial": "Bachelor of Computer Science (Honours)",
+    "sources": [
+      {
+        "field": "identity",
+        "sourceId": "detail-mum-ug-information-techno-bachelor-of-computer-science-honours-21",
+        "sourceUrl": "https://www.monash.edu.my/study/undergraduate/information-technology/bachelor-of-computer-science-honours"
+      },
+      {
+        "field": "fees",
+        "sourceId": "undergraduate-fees",
+        "sourceUrl": "https://www.monash.edu.my/study/undergraduate/fees",
+        "sourceText": "54,240"
+      },
+      {
+        "field": "requirements",
+        "sourceId": "detail-mum-ug-information-techno-bachelor-of-computer-science-honours-21",
+        "sourceUrl": "https://www.monash.edu.my/study/undergraduate/information-technology/bachelor-of-computer-science-honours",
+        "state": "transport-blocked"
+      },
+      {
+        "field": "language",
+        "sourceId": "english-tests",
+        "sourceUrl": "https://www.monash.edu.my/study/entry-requirements/english/tests",
+        "state": "general-rule"
+      }
+    ]
+  },
+  {
+    "code": "MUM-UG-MEDICINE-AND-HEALT-BACHELOR-OF-MEDICAL-SCIENCE-AND-DOCTOR-OF-ME-22",
+    "nameEnOfficial": "Bachelor of Medical Science and Doctor of Medicine",
+    "sources": [
+      {
+        "field": "identity",
+        "sourceId": "detail-mum-ug-medicine-and-healt-bachelor-of-medical-science-and-doctor-of-me-22",
+        "sourceUrl": "https://www.monash.edu.my/study/undergraduate/jeffrey-cheah-school-medicine-health-sciences/bachelor-medical-science-doctor-medicine"
+      },
+      {
+        "field": "fees",
+        "sourceId": "undergraduate-fees",
+        "sourceUrl": "https://www.monash.edu.my/study/undergraduate/fees",
+        "sourceText": "138,720"
+      },
+      {
+        "field": "requirements",
+        "sourceId": "detail-mum-ug-medicine-and-healt-bachelor-of-medical-science-and-doctor-of-me-22",
+        "sourceUrl": "https://www.monash.edu.my/study/undergraduate/jeffrey-cheah-school-medicine-health-sciences/bachelor-medical-science-doctor-medicine",
+        "state": "transport-blocked"
+      },
+      {
+        "field": "language",
+        "sourceId": "english-tests",
+        "sourceUrl": "https://www.monash.edu.my/study/entry-requirements/english/tests",
+        "state": "general-rule"
+      }
+    ]
+  },
+  {
+    "code": "MUM-UG-MEDICINE-AND-HEALT-BACHELOR-OF-PSYCHOLOGY-23",
+    "nameEnOfficial": "Bachelor of Psychology",
+    "sources": [
+      {
+        "field": "identity",
+        "sourceId": "detail-mum-ug-medicine-and-healt-bachelor-of-psychology-23",
+        "sourceUrl": "https://www.monash.edu.my/study/undergraduate/jeffrey-cheah-school-medicine-health-sciences/bachelor-of-psychology"
+      },
+      {
+        "field": "fees",
+        "sourceId": "undergraduate-fees",
+        "sourceUrl": "https://www.monash.edu.my/study/undergraduate/fees",
+        "sourceText": "49,920"
+      },
+      {
+        "field": "requirements",
+        "sourceId": "detail-mum-ug-medicine-and-healt-bachelor-of-psychology-23",
+        "sourceUrl": "https://www.monash.edu.my/study/undergraduate/jeffrey-cheah-school-medicine-health-sciences/bachelor-of-psychology",
+        "state": "transport-blocked"
+      },
+      {
+        "field": "language",
+        "sourceId": "english-tests",
+        "sourceUrl": "https://www.monash.edu.my/study/entry-requirements/english/tests",
+        "state": "general-rule"
+      }
+    ]
+  },
+  {
+    "code": "MUM-UG-MEDICINE-AND-HEALT-BACHELOR-OF-PSYCHOLOGY-AND-BUSINESS-24",
+    "nameEnOfficial": "Bachelor of Psychology and Business",
+    "sources": [
+      {
+        "field": "identity",
+        "sourceId": "detail-mum-ug-medicine-and-healt-bachelor-of-psychology-and-business-24",
+        "sourceUrl": "https://www.monash.edu.my/study/undergraduate/jeffrey-cheah-school-medicine-health-sciences/bachelor-psychological-science-business"
+      },
+      {
+        "field": "fees",
+        "sourceId": "undergraduate-fees",
+        "sourceUrl": "https://www.monash.edu.my/study/undergraduate/fees",
+        "sourceText": "51,840"
+      },
+      {
+        "field": "requirements",
+        "sourceId": "detail-mum-ug-medicine-and-healt-bachelor-of-psychology-and-business-24",
+        "sourceUrl": "https://www.monash.edu.my/study/undergraduate/jeffrey-cheah-school-medicine-health-sciences/bachelor-psychological-science-business",
+        "state": "transport-blocked"
+      },
+      {
+        "field": "language",
+        "sourceId": "english-tests",
+        "sourceUrl": "https://www.monash.edu.my/study/entry-requirements/english/tests",
+        "state": "general-rule"
+      }
+    ]
+  },
+  {
+    "code": "MUM-UG-MEDICINE-AND-HEALT-BACHELOR-OF-HUMAN-NUTRITION-25",
+    "nameEnOfficial": "Bachelor of Human Nutrition",
+    "sources": [
+      {
+        "field": "identity",
+        "sourceId": "detail-mum-ug-medicine-and-healt-bachelor-of-human-nutrition-25",
+        "sourceUrl": "https://www.monash.edu.my/study/undergraduate/jeffrey-cheah-school-medicine-health-sciences/bachelor-of-human-nutrition"
+      },
+      {
+        "field": "fees",
+        "sourceId": "undergraduate-fees",
+        "sourceUrl": "https://www.monash.edu.my/study/undergraduate/fees",
+        "sourceText": "60,480"
+      },
+      {
+        "field": "requirements",
+        "sourceId": "detail-mum-ug-medicine-and-healt-bachelor-of-human-nutrition-25",
+        "sourceUrl": "https://www.monash.edu.my/study/undergraduate/jeffrey-cheah-school-medicine-health-sciences/bachelor-of-human-nutrition",
+        "state": "transport-blocked"
+      },
+      {
+        "field": "language",
+        "sourceId": "english-tests",
+        "sourceUrl": "https://www.monash.edu.my/study/entry-requirements/english/tests",
+        "state": "general-rule"
+      }
+    ]
+  },
+  {
+    "code": "MUM-UG-MEDICINE-AND-HEALT-BACHELOR-OF-HEALTH-SCIENCES-HONOURS-26",
+    "nameEnOfficial": "Bachelor of Health Sciences (Honours)",
+    "sources": [
+      {
+        "field": "identity",
+        "sourceId": "detail-mum-ug-medicine-and-healt-bachelor-of-health-sciences-honours-26",
+        "sourceUrl": "https://www.monash.edu.my/study/undergraduate/jeffrey-cheah-school-medicine-health-sciences/bachelor-of-health-sciences-honours"
+      },
+      {
+        "field": "fees",
+        "sourceId": "undergraduate-fees",
+        "sourceUrl": "https://www.monash.edu.my/study/undergraduate/fees",
+        "sourceText": "51,360"
+      },
+      {
+        "field": "requirements",
+        "sourceId": "detail-mum-ug-medicine-and-healt-bachelor-of-health-sciences-honours-26",
+        "sourceUrl": "https://www.monash.edu.my/study/undergraduate/jeffrey-cheah-school-medicine-health-sciences/bachelor-of-health-sciences-honours",
+        "state": "transport-blocked"
+      },
+      {
+        "field": "language",
+        "sourceId": "english-tests",
+        "sourceUrl": "https://www.monash.edu.my/study/entry-requirements/english/tests",
+        "state": "general-rule"
+      }
+    ]
+  },
+  {
+    "code": "MUM-UG-MEDICINE-AND-HEALT-BACHELOR-OF-MEDICAL-SCIENCE-HONOURS-27",
+    "nameEnOfficial": "Bachelor of Medical Science (Honours)",
+    "sources": [
+      {
+        "field": "identity",
+        "sourceId": "detail-mum-ug-medicine-and-healt-bachelor-of-medical-science-honours-27",
+        "sourceUrl": "https://www.monash.edu.my/study/undergraduate/jeffrey-cheah-school-medicine-health-sciences/bachelor-medical-science-honours"
+      },
+      {
+        "field": "fees",
+        "sourceId": "undergraduate-fees",
+        "sourceUrl": "https://www.monash.edu.my/study/undergraduate/fees",
+        "sourceText": "60,000"
+      },
+      {
+        "field": "requirements",
+        "sourceId": "detail-mum-ug-medicine-and-healt-bachelor-of-medical-science-honours-27",
+        "sourceUrl": "https://www.monash.edu.my/study/undergraduate/jeffrey-cheah-school-medicine-health-sciences/bachelor-medical-science-honours",
+        "state": "transport-blocked"
+      },
+      {
+        "field": "language",
+        "sourceId": "english-tests",
+        "sourceUrl": "https://www.monash.edu.my/study/entry-requirements/english/tests",
+        "state": "general-rule"
+      }
+    ]
+  },
+  {
+    "code": "MUM-UG-MEDICINE-AND-HEALT-BACHELOR-OF-PSYCHOLOGY-HONOURS-28",
+    "nameEnOfficial": "Bachelor of Psychology (Honours)",
+    "sources": [
+      {
+        "field": "identity",
+        "sourceId": "detail-mum-ug-medicine-and-healt-bachelor-of-psychology-honours-28",
+        "sourceUrl": "https://www.monash.edu.my/study/undergraduate/jeffrey-cheah-school-medicine-health-sciences/bachelor-psychology-honours"
+      },
+      {
+        "field": "fees",
+        "sourceId": "undergraduate-fees",
+        "sourceUrl": "https://www.monash.edu.my/study/undergraduate/fees",
+        "sourceText": "51,360"
+      },
+      {
+        "field": "requirements",
+        "sourceId": "detail-mum-ug-medicine-and-healt-bachelor-of-psychology-honours-28",
+        "sourceUrl": "https://www.monash.edu.my/study/undergraduate/jeffrey-cheah-school-medicine-health-sciences/bachelor-psychology-honours",
+        "state": "transport-blocked"
+      },
+      {
+        "field": "language",
+        "sourceId": "english-tests",
+        "sourceUrl": "https://www.monash.edu.my/study/entry-requirements/english/tests",
+        "state": "general-rule"
+      }
+    ]
+  },
+  {
+    "code": "MUM-UG-PHARMACY-COURSE-DU-BACHELOR-OF-PHARMACY-HONOURS-29",
+    "nameEnOfficial": "Bachelor of Pharmacy (Honours)",
+    "sources": [
+      {
+        "field": "identity",
+        "sourceId": "detail-mum-ug-pharmacy-course-du-bachelor-of-pharmacy-honours-29",
+        "sourceUrl": "https://www.monash.edu.my/study/undergraduate/pharmacy/bachelor-pharmacy"
+      },
+      {
+        "field": "fees",
+        "sourceId": "undergraduate-fees",
+        "sourceUrl": "https://www.monash.edu.my/study/undergraduate/fees",
+        "sourceText": "71,040"
+      },
+      {
+        "field": "requirements",
+        "sourceId": "detail-mum-ug-pharmacy-course-du-bachelor-of-pharmacy-honours-29",
+        "sourceUrl": "https://www.monash.edu.my/study/undergraduate/pharmacy/bachelor-pharmacy",
+        "state": "transport-blocked"
+      },
+      {
+        "field": "language",
+        "sourceId": "english-tests",
+        "sourceUrl": "https://www.monash.edu.my/study/entry-requirements/english/tests",
+        "state": "general-rule"
+      }
+    ]
+  },
+  {
+    "code": "MUM-UG-PHARMACY-COURSE-DU-BACHELOR-OF-PHARMACEUTICAL-SCIENCE-30",
+    "nameEnOfficial": "Bachelor of Pharmaceutical Science",
+    "sources": [
+      {
+        "field": "identity",
+        "sourceId": "detail-mum-ug-pharmacy-course-du-bachelor-of-pharmaceutical-science-30",
+        "sourceUrl": "https://www.monash.edu.my/study/undergraduate/pharmacy/bachelor-of-pharmaceutical-science"
+      },
+      {
+        "field": "fees",
+        "sourceId": "undergraduate-fees",
+        "sourceUrl": "https://www.monash.edu.my/study/undergraduate/fees",
+        "sourceText": "60,480"
+      },
+      {
+        "field": "requirements",
+        "sourceId": "detail-mum-ug-pharmacy-course-du-bachelor-of-pharmaceutical-science-30",
+        "sourceUrl": "https://www.monash.edu.my/study/undergraduate/pharmacy/bachelor-of-pharmaceutical-science",
+        "state": "transport-blocked"
+      },
+      {
+        "field": "language",
+        "sourceId": "english-tests",
+        "sourceUrl": "https://www.monash.edu.my/study/entry-requirements/english/tests",
+        "state": "general-rule"
+      }
+    ]
+  },
+  {
+    "code": "MUM-UG-PHARMACY-COURSE-DU-BACHELOR-OF-PHARMACEUTICAL-SCIENCE-HONOURS-31",
+    "nameEnOfficial": "Bachelor of Pharmaceutical Science (Honours)",
+    "sources": [
+      {
+        "field": "identity",
+        "sourceId": "detail-mum-ug-pharmacy-course-du-bachelor-of-pharmaceutical-science-honours-31",
+        "sourceUrl": "https://www.monash.edu.my/study/undergraduate/pharmacy/bachelor-of-pharmaceutical-science-honours"
+      },
+      {
+        "field": "fees",
+        "sourceId": "undergraduate-fees",
+        "sourceUrl": "https://www.monash.edu.my/study/undergraduate/fees",
+        "sourceText": "58,080"
+      },
+      {
+        "field": "requirements",
+        "sourceId": "detail-mum-ug-pharmacy-course-du-bachelor-of-pharmaceutical-science-honours-31",
+        "sourceUrl": "https://www.monash.edu.my/study/undergraduate/pharmacy/bachelor-of-pharmaceutical-science-honours",
+        "state": "transport-blocked"
+      },
+      {
+        "field": "language",
+        "sourceId": "english-tests",
+        "sourceUrl": "https://www.monash.edu.my/study/entry-requirements/english/tests",
+        "state": "general-rule"
+      }
+    ]
+  },
+  {
+    "code": "MUM-UG-SCIENCE-COURSE-DUR-BACHELOR-OF-SCIENCE-32",
+    "nameEnOfficial": "Bachelor of Science",
+    "sources": [
+      {
+        "field": "identity",
+        "sourceId": "detail-mum-ug-science-course-dur-bachelor-of-science-32",
+        "sourceUrl": "https://www.monash.edu.my/study/undergraduate/science/bachelor-science"
+      },
+      {
+        "field": "fees",
+        "sourceId": "undergraduate-fees",
+        "sourceUrl": "https://www.monash.edu.my/study/undergraduate/fees",
+        "sourceText": "60,480"
+      },
+      {
+        "field": "requirements",
+        "sourceId": "detail-mum-ug-science-course-dur-bachelor-of-science-32",
+        "sourceUrl": "https://www.monash.edu.my/study/undergraduate/science/bachelor-science",
+        "state": "transport-blocked"
+      },
+      {
+        "field": "language",
+        "sourceId": "english-tests",
+        "sourceUrl": "https://www.monash.edu.my/study/entry-requirements/english/tests",
+        "state": "general-rule"
+      }
+    ]
+  },
+  {
+    "code": "MUM-UG-SCIENCE-COURSE-DUR-BACHELOR-OF-APPLIED-DATA-SCIENCE-33",
+    "nameEnOfficial": "Bachelor of Applied Data Science",
+    "sources": [
+      {
+        "field": "identity",
+        "sourceId": "detail-mum-ug-science-course-dur-bachelor-of-applied-data-science-33",
+        "sourceUrl": "https://www.monash.edu.my/study/undergraduate/science/bachelor-of-applied-data-science"
+      },
+      {
+        "field": "fees",
+        "sourceId": "undergraduate-fees",
+        "sourceUrl": "https://www.monash.edu.my/study/undergraduate/fees",
+        "sourceText": "60,480"
+      },
+      {
+        "field": "requirements",
+        "sourceId": "detail-mum-ug-science-course-dur-bachelor-of-applied-data-science-33",
+        "sourceUrl": "https://www.monash.edu.my/study/undergraduate/science/bachelor-of-applied-data-science",
+        "state": "transport-blocked"
+      },
+      {
+        "field": "language",
+        "sourceId": "english-tests",
+        "sourceUrl": "https://www.monash.edu.my/study/entry-requirements/english/tests",
+        "state": "general-rule"
+      }
+    ]
+  },
+  {
+    "code": "MUM-UG-SCIENCE-COURSE-DUR-BACHELOR-OF-FOOD-SCIENCE-AND-TECHNOLOGY-34",
+    "nameEnOfficial": "Bachelor of Food Science and Technology",
+    "sources": [
+      {
+        "field": "identity",
+        "sourceId": "detail-mum-ug-science-course-dur-bachelor-of-food-science-and-technology-34",
+        "sourceUrl": "https://www.monash.edu.my/study/undergraduate/science/bachelor-science-food-science-technology"
+      },
+      {
+        "field": "fees",
+        "sourceId": "undergraduate-fees",
+        "sourceUrl": "https://www.monash.edu.my/study/undergraduate/fees",
+        "sourceText": "60,480"
+      },
+      {
+        "field": "requirements",
+        "sourceId": "detail-mum-ug-science-course-dur-bachelor-of-food-science-and-technology-34",
+        "sourceUrl": "https://www.monash.edu.my/study/undergraduate/science/bachelor-science-food-science-technology",
+        "state": "transport-blocked"
+      },
+      {
+        "field": "language",
+        "sourceId": "english-tests",
+        "sourceUrl": "https://www.monash.edu.my/study/entry-requirements/english/tests",
+        "state": "general-rule"
+      }
+    ]
+  },
+  {
+    "code": "MUM-UG-SCIENCE-COURSE-DUR-BACHELOR-OF-MEDICAL-BIOSCIENCE-35",
+    "nameEnOfficial": "Bachelor of Medical Bioscience",
+    "sources": [
+      {
+        "field": "identity",
+        "sourceId": "detail-mum-ug-science-course-dur-bachelor-of-medical-bioscience-35",
+        "sourceUrl": "https://www.monash.edu.my/study/undergraduate/science/bachelor-science-medical-bioscience"
+      },
+      {
+        "field": "fees",
+        "sourceId": "undergraduate-fees",
+        "sourceUrl": "https://www.monash.edu.my/study/undergraduate/fees",
+        "sourceText": "60,480"
+      },
+      {
+        "field": "requirements",
+        "sourceId": "detail-mum-ug-science-course-dur-bachelor-of-medical-bioscience-35",
+        "sourceUrl": "https://www.monash.edu.my/study/undergraduate/science/bachelor-science-medical-bioscience",
+        "state": "transport-blocked"
+      },
+      {
+        "field": "language",
+        "sourceId": "english-tests",
+        "sourceUrl": "https://www.monash.edu.my/study/entry-requirements/english/tests",
+        "state": "general-rule"
+      }
+    ]
+  },
+  {
+    "code": "MUM-UG-SCIENCE-COURSE-DUR-BACHELOR-OF-SCIENCE-HONOURS-36",
+    "nameEnOfficial": "Bachelor of Science (Honours)",
+    "sources": [
+      {
+        "field": "identity",
+        "sourceId": "detail-mum-ug-science-course-dur-bachelor-of-science-honours-36",
+        "sourceUrl": "https://www.monash.edu.my/study/undergraduate/science/bachelor-science-honours"
+      },
+      {
+        "field": "fees",
+        "sourceId": "undergraduate-fees",
+        "sourceUrl": "https://www.monash.edu.my/study/undergraduate/fees",
+        "sourceText": "60,480"
+      },
+      {
+        "field": "requirements",
+        "sourceId": "detail-mum-ug-science-course-dur-bachelor-of-science-honours-36",
+        "sourceUrl": "https://www.monash.edu.my/study/undergraduate/science/bachelor-science-honours",
+        "state": "transport-blocked"
+      },
+      {
+        "field": "language",
+        "sourceId": "english-tests",
+        "sourceUrl": "https://www.monash.edu.my/study/entry-requirements/english/tests",
+        "state": "general-rule"
+      }
+    ]
+  },
+  {
+    "code": "MUM-MA-ARTS-AND-SOCIAL-SC-MASTER-OF-COMMUNICATIONS-AND-MEDIA-STUDIES-37",
+    "nameEnOfficial": "Master of Communications and Media Studies",
+    "sources": [
+      {
+        "field": "identity",
+        "sourceId": "detail-mum-ma-arts-and-social-sc-master-of-communications-and-media-studies-37",
+        "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research/arts-social-sciences/master-communications-media-studies"
+      },
+      {
+        "field": "fees",
+        "sourceId": "postgraduate-fees",
+        "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research/fees",
+        "sourceText": "66,240 (full course)"
+      },
+      {
+        "field": "requirements",
+        "sourceId": "detail-mum-ma-arts-and-social-sc-master-of-communications-and-media-studies-37",
+        "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research/arts-social-sciences/master-communications-media-studies",
+        "state": "official-unpublished"
+      },
+      {
+        "field": "language",
+        "sourceId": "english-tests",
+        "sourceUrl": "https://www.monash.edu.my/study/entry-requirements/english/tests",
+        "state": "general-rule"
+      }
+    ]
+  },
+  {
+    "code": "MUM-PHD-ARTS-AND-SOCIAL-SC-PHD-PHD-38",
+    "nameEnOfficial": "Doctor of Philosophy (PhD)",
+    "sources": [
+      {
+        "field": "identity",
+        "sourceId": "detail-mum-phd-arts-and-social-sc-phd-phd-38",
+        "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research/arts-social-sciences/phd"
+      },
+      {
+        "field": "fees",
+        "sourceId": "postgraduate-fees",
+        "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research/fees",
+        "sourceText": "54,720 (per year)"
+      },
+      {
+        "field": "requirements",
+        "sourceId": "detail-mum-phd-arts-and-social-sc-phd-phd-38",
+        "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research/arts-social-sciences/phd",
+        "state": "transport-blocked"
+      },
+      {
+        "field": "language",
+        "sourceId": "english-tests",
+        "sourceUrl": "https://www.monash.edu.my/study/entry-requirements/english/tests",
+        "state": "general-rule"
+      },
+      {
+        "field": "academicPerformanceRequirement",
+        "sourceId": "graduate-research-admission-criteria",
+        "sourceUrl": "https://www.monash.edu/graduate-research/study/apply/admission-criteria",
+        "sourceText": "Monash Graduate Research admission criteria: PhD standard entry requires a relevant four-year bachelor degree with a research thesis/project and minimum overall average grade equivalent to Second Class Honours Division A, or a relevant master degree with at least 25% one full-time equivalent year research thesis/project and the same grade threshold, or GRC/delegate-approved equivalent qualifications.",
+        "state": "official-value"
+      }
+    ]
+  },
+  {
+    "code": "MUM-MA-BUSINESS-MASTER-OF-INTERNATIONAL-BUSINESS-39",
+    "nameEnOfficial": "Master of International Business",
+    "sources": [
+      {
+        "field": "identity",
+        "sourceId": "detail-mum-ma-business-master-of-international-business-39",
+        "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research/business/master-international-business"
+      },
+      {
+        "field": "fees",
+        "sourceId": "postgraduate-fees",
+        "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research/fees",
+        "sourceText": "74,160 (full course)"
+      },
+      {
+        "field": "requirements",
+        "sourceId": "detail-mum-ma-business-master-of-international-business-39",
+        "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research/business/master-international-business",
+        "state": "official-unpublished"
+      },
+      {
+        "field": "language",
+        "sourceId": "english-tests",
+        "sourceUrl": "https://www.monash.edu.my/study/entry-requirements/english/tests",
+        "state": "general-rule"
+      }
+    ]
+  },
+  {
+    "code": "MUM-MA-BUSINESS-MASTER-OF-DIGITAL-BUSINESS-40",
+    "nameEnOfficial": "Master of Digital Business",
+    "sources": [
+      {
+        "field": "identity",
+        "sourceId": "detail-mum-ma-business-master-of-digital-business-40",
+        "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research/business/master-of-digital-business"
+      },
+      {
+        "field": "fees",
+        "sourceId": "postgraduate-fees",
+        "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research/fees",
+        "sourceText": "74,160 (full course)"
+      },
+      {
+        "field": "requirements",
+        "sourceId": "detail-mum-ma-business-master-of-digital-business-40",
+        "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research/business/master-of-digital-business",
+        "state": "transport-blocked"
+      },
+      {
+        "field": "language",
+        "sourceId": "english-tests",
+        "sourceUrl": "https://www.monash.edu.my/study/entry-requirements/english/tests",
+        "state": "general-rule"
+      }
+    ]
+  },
+  {
+    "code": "MUM-MA-BUSINESS-MPHIL-MPHIL-41",
+    "nameEnOfficial": "Master of Philosophy (MPhil)",
+    "sources": [
+      {
+        "field": "identity",
+        "sourceId": "detail-mum-ma-business-mphil-mphil-41",
+        "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research/business/master-philosophy"
+      },
+      {
+        "field": "fees",
+        "sourceId": "postgraduate-fees",
+        "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research/fees",
+        "sourceText": "54,720 (per year)"
+      },
+      {
+        "field": "requirements",
+        "sourceId": "detail-mum-ma-business-mphil-mphil-41",
+        "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research/business/master-philosophy",
+        "state": "official-value"
+      },
+      {
+        "field": "language",
+        "sourceId": "english-tests",
+        "sourceUrl": "https://www.monash.edu.my/study/entry-requirements/english/tests",
+        "state": "general-rule"
+      }
+    ]
+  },
+  {
+    "code": "MUM-PHD-BUSINESS-PHD-PHD-42",
+    "nameEnOfficial": "Doctor of Philosophy (PhD)",
+    "sources": [
+      {
+        "field": "identity",
+        "sourceId": "detail-mum-phd-business-phd-phd-42",
+        "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research/business/phd"
+      },
+      {
+        "field": "fees",
+        "sourceId": "postgraduate-fees",
+        "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research/fees",
+        "sourceText": "54,720 (per year)"
+      },
+      {
+        "field": "requirements",
+        "sourceId": "detail-mum-phd-business-phd-phd-42",
+        "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research/business/phd",
+        "state": "official-value"
+      },
+      {
+        "field": "language",
+        "sourceId": "english-tests",
+        "sourceUrl": "https://www.monash.edu.my/study/entry-requirements/english/tests",
+        "state": "general-rule"
+      },
+      {
+        "field": "academicPerformanceRequirement",
+        "sourceId": "graduate-research-admission-criteria",
+        "sourceUrl": "https://www.monash.edu/graduate-research/study/apply/admission-criteria",
+        "sourceText": "Monash Graduate Research admission criteria: PhD standard entry requires a relevant four-year bachelor degree with a research thesis/project and minimum overall average grade equivalent to Second Class Honours Division A, or a relevant master degree with at least 25% one full-time equivalent year research thesis/project and the same grade threshold, or GRC/delegate-approved equivalent qualifications.",
+        "state": "official-value"
+      }
+    ]
+  },
+  {
+    "code": "MUM-MA-ENGINEERING-MASTER-OF-APPLIED-ENGINEERING-43",
+    "nameEnOfficial": "Master of Applied Engineering",
+    "sources": [
+      {
+        "field": "identity",
+        "sourceId": "detail-mum-ma-engineering-master-of-applied-engineering-43",
+        "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research/engineering/master-of-applied-engineering"
+      },
+      {
+        "field": "fees",
+        "sourceId": "postgraduate-fees",
+        "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research/fees",
+        "sourceText": "65,280 (full course)"
+      },
+      {
+        "field": "requirements",
+        "sourceId": "detail-mum-ma-engineering-master-of-applied-engineering-43",
+        "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research/engineering/master-of-applied-engineering",
+        "state": "transport-blocked"
+      },
+      {
+        "field": "language",
+        "sourceId": "english-tests",
+        "sourceUrl": "https://www.monash.edu.my/study/entry-requirements/english/tests",
+        "state": "general-rule"
+      }
+    ]
+  },
+  {
+    "code": "MUM-MA-ENGINEERING-MASTER-OF-ENGINEERING-SCIENCE-RESEARCH-44",
+    "nameEnOfficial": "Master of Engineering Science (Research)",
+    "sources": [
+      {
+        "field": "identity",
+        "sourceId": "detail-mum-ma-engineering-master-of-engineering-science-research-44",
+        "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research/engineering/master-engineering-science-research"
+      },
+      {
+        "field": "fees",
+        "sourceId": "postgraduate-fees",
+        "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research/fees",
+        "sourceText": "54,720 (per year)"
+      },
+      {
+        "field": "requirements",
+        "sourceId": "detail-mum-ma-engineering-master-of-engineering-science-research-44",
+        "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research/engineering/master-engineering-science-research",
+        "state": "official-value"
+      },
+      {
+        "field": "language",
+        "sourceId": "english-tests",
+        "sourceUrl": "https://www.monash.edu.my/study/entry-requirements/english/tests",
+        "state": "general-rule"
+      }
+    ]
+  },
+  {
+    "code": "MUM-PHD-ENGINEERING-PHD-PHD-45",
+    "nameEnOfficial": "Doctor of Philosophy (PhD)",
+    "sources": [
+      {
+        "field": "identity",
+        "sourceId": "detail-mum-phd-engineering-phd-phd-45",
+        "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research/engineering/phd"
+      },
+      {
+        "field": "fees",
+        "sourceId": "postgraduate-fees",
+        "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research/fees",
+        "sourceText": "54,720 (per year)"
+      },
+      {
+        "field": "requirements",
+        "sourceId": "detail-mum-phd-engineering-phd-phd-45",
+        "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research/engineering/phd",
+        "state": "official-value"
+      },
+      {
+        "field": "language",
+        "sourceId": "english-tests",
+        "sourceUrl": "https://www.monash.edu.my/study/entry-requirements/english/tests",
+        "state": "general-rule"
+      },
+      {
+        "field": "academicPerformanceRequirement",
+        "sourceId": "graduate-research-admission-criteria",
+        "sourceUrl": "https://www.monash.edu/graduate-research/study/apply/admission-criteria",
+        "sourceText": "Monash Graduate Research admission criteria: PhD standard entry requires a relevant four-year bachelor degree with a research thesis/project and minimum overall average grade equivalent to Second Class Honours Division A, or a relevant master degree with at least 25% one full-time equivalent year research thesis/project and the same grade threshold, or GRC/delegate-approved equivalent qualifications.",
+        "state": "official-value"
+      }
+    ]
+  },
+  {
+    "code": "MUM-MA-INFORMATION-TECHNO-MASTER-OF-ARTIFICIAL-INTELLIGENCE-46",
+    "nameEnOfficial": "Master of Artificial Intelligence",
+    "sources": [
+      {
+        "field": "identity",
+        "sourceId": "detail-mum-ma-information-techno-master-of-artificial-intelligence-46",
+        "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research/information-technology/master-of-artificial-intelligence"
+      },
+      {
+        "field": "fees",
+        "sourceId": "postgraduate-fees",
+        "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research/fees",
+        "sourceText": "74,160 (full course)"
+      },
+      {
+        "field": "requirements",
+        "sourceId": "detail-mum-ma-information-techno-master-of-artificial-intelligence-46",
+        "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research/information-technology/master-of-artificial-intelligence",
+        "state": "transport-blocked"
+      },
+      {
+        "field": "language",
+        "sourceId": "english-tests",
+        "sourceUrl": "https://www.monash.edu.my/study/entry-requirements/english/tests",
+        "state": "general-rule"
+      }
+    ]
+  },
+  {
+    "code": "MUM-MA-INFORMATION-TECHNO-MASTER-OF-BUSINESS-INFORMATION-SYSTEMS-47",
+    "nameEnOfficial": "Master of Business Information Systems",
+    "sources": [
+      {
+        "field": "identity",
+        "sourceId": "detail-mum-ma-information-techno-master-of-business-information-systems-47",
+        "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research/information-technology/master-business-information-systems"
+      },
+      {
+        "field": "fees",
+        "sourceId": "postgraduate-fees",
+        "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research/fees",
+        "sourceText": "74,160 (full course)"
+      },
+      {
+        "field": "requirements",
+        "sourceId": "detail-mum-ma-information-techno-master-of-business-information-systems-47",
+        "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research/information-technology/master-business-information-systems",
+        "state": "official-unpublished"
+      },
+      {
+        "field": "language",
+        "sourceId": "english-tests",
+        "sourceUrl": "https://www.monash.edu.my/study/entry-requirements/english/tests",
+        "state": "general-rule"
+      }
+    ]
+  },
+  {
+    "code": "MUM-MA-INFORMATION-TECHNO-MASTER-OF-DATA-SCIENCE-48",
+    "nameEnOfficial": "Master of Data Science",
+    "sources": [
+      {
+        "field": "identity",
+        "sourceId": "detail-mum-ma-information-techno-master-of-data-science-48",
+        "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research/information-technology/master-of-data-science"
+      },
+      {
+        "field": "fees",
+        "sourceId": "postgraduate-fees",
+        "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research/fees",
+        "sourceText": "74,160 (full course)"
+      },
+      {
+        "field": "requirements",
+        "sourceId": "detail-mum-ma-information-techno-master-of-data-science-48",
+        "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research/information-technology/master-of-data-science",
+        "state": "official-unpublished"
+      },
+      {
+        "field": "language",
+        "sourceId": "english-tests",
+        "sourceUrl": "https://www.monash.edu.my/study/entry-requirements/english/tests",
+        "state": "general-rule"
+      }
+    ]
+  },
+  {
+    "code": "MUM-MA-INFORMATION-TECHNO-MPHIL-MPHIL-49",
+    "nameEnOfficial": "Master of Philosophy (MPhil)",
+    "sources": [
+      {
+        "field": "identity",
+        "sourceId": "detail-mum-ma-information-techno-mphil-mphil-49",
+        "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research/information-technology/master-philosophy"
+      },
+      {
+        "field": "fees",
+        "sourceId": "postgraduate-fees",
+        "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research/fees",
+        "sourceText": "54,720 (per year)"
+      },
+      {
+        "field": "requirements",
+        "sourceId": "detail-mum-ma-information-techno-mphil-mphil-49",
+        "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research/information-technology/master-philosophy",
+        "state": "official-value"
+      },
+      {
+        "field": "language",
+        "sourceId": "english-tests",
+        "sourceUrl": "https://www.monash.edu.my/study/entry-requirements/english/tests",
+        "state": "general-rule"
+      }
+    ]
+  },
+  {
+    "code": "MUM-PHD-INFORMATION-TECHNO-PHD-PHD-50",
+    "nameEnOfficial": "Doctor of Philosophy (PhD)",
+    "sources": [
+      {
+        "field": "identity",
+        "sourceId": "detail-mum-phd-information-techno-phd-phd-50",
+        "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research/information-technology/phd"
+      },
+      {
+        "field": "fees",
+        "sourceId": "postgraduate-fees",
+        "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research/fees",
+        "sourceText": "54,720 (per year)"
+      },
+      {
+        "field": "requirements",
+        "sourceId": "detail-mum-phd-information-techno-phd-phd-50",
+        "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research/information-technology/phd",
+        "state": "transport-blocked"
+      },
+      {
+        "field": "language",
+        "sourceId": "english-tests",
+        "sourceUrl": "https://www.monash.edu.my/study/entry-requirements/english/tests",
+        "state": "general-rule"
+      },
+      {
+        "field": "academicPerformanceRequirement",
+        "sourceId": "graduate-research-admission-criteria",
+        "sourceUrl": "https://www.monash.edu/graduate-research/study/apply/admission-criteria",
+        "sourceText": "Monash Graduate Research admission criteria: PhD standard entry requires a relevant four-year bachelor degree with a research thesis/project and minimum overall average grade equivalent to Second Class Honours Division A, or a relevant master degree with at least 25% one full-time equivalent year research thesis/project and the same grade threshold, or GRC/delegate-approved equivalent qualifications.",
+        "state": "official-value"
+      }
+    ]
+  },
+  {
+    "code": "MUM-MA-MEDICINE-AND-HEALT-MASTER-OF-PROFESSIONAL-COUNSELLING-51",
+    "nameEnOfficial": "Master of Professional Counselling",
+    "sources": [
+      {
+        "field": "identity",
+        "sourceId": "detail-mum-ma-medicine-and-healt-master-of-professional-counselling-51",
+        "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research/medicine-health-sciences/master-of-professional-counselling"
+      },
+      {
+        "field": "fees",
+        "sourceId": "postgraduate-fees",
+        "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research/fees",
+        "sourceText": "83,520 (full course)"
+      },
+      {
+        "field": "requirements",
+        "sourceId": "detail-mum-ma-medicine-and-healt-master-of-professional-counselling-51",
+        "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research/medicine-health-sciences/master-of-professional-counselling",
+        "state": "transport-blocked"
+      },
+      {
+        "field": "language",
+        "sourceId": "english-tests",
+        "sourceUrl": "https://www.monash.edu.my/study/entry-requirements/english/tests",
+        "state": "general-rule"
+      }
+    ]
+  },
+  {
+    "code": "MUM-MA-MEDICINE-AND-HEALT-MASTER-OF-BIOMEDICAL-SCIENCE-52",
+    "nameEnOfficial": "Master of Biomedical Science",
+    "sources": [
+      {
+        "field": "identity",
+        "sourceId": "detail-mum-ma-medicine-and-healt-master-of-biomedical-science-52",
+        "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research/medicine-health-sciences/master-biomedical-science"
+      },
+      {
+        "field": "fees",
+        "sourceId": "postgraduate-fees",
+        "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research/fees",
+        "sourceText": "54,720 (per year)"
+      },
+      {
+        "field": "requirements",
+        "sourceId": "detail-mum-ma-medicine-and-healt-master-of-biomedical-science-52",
+        "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research/medicine-health-sciences/master-biomedical-science",
+        "state": "official-value"
+      },
+      {
+        "field": "language",
+        "sourceId": "english-tests",
+        "sourceUrl": "https://www.monash.edu.my/study/entry-requirements/english/tests",
+        "state": "general-rule"
+      }
+    ]
+  },
+  {
+    "code": "MUM-MA-MEDICINE-AND-HEALT-MASTER-OF-BIOTECHNOLOGY-53",
+    "nameEnOfficial": "Master of Biotechnology",
+    "sources": [
+      {
+        "field": "identity",
+        "sourceId": "detail-mum-ma-medicine-and-healt-master-of-biotechnology-53",
+        "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research/medicine-health-sciences/master-of-biotechnology"
+      },
+      {
+        "field": "fees",
+        "sourceId": "postgraduate-fees",
+        "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research/fees",
+        "sourceText": "54,720 (per year)"
+      },
+      {
+        "field": "requirements",
+        "sourceId": "detail-mum-ma-medicine-and-healt-master-of-biotechnology-53",
+        "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research/medicine-health-sciences/master-of-biotechnology",
+        "state": "official-unpublished"
+      },
+      {
+        "field": "language",
+        "sourceId": "english-tests",
+        "sourceUrl": "https://www.monash.edu.my/study/entry-requirements/english/tests",
+        "state": "general-rule"
+      }
+    ]
+  },
+  {
+    "code": "MUM-MA-MEDICINE-AND-HEALT-MASTER-OF-CLINICAL-PSYCHOLOGY-54",
+    "nameEnOfficial": "Master of Clinical Psychology",
+    "sources": [
+      {
+        "field": "identity",
+        "sourceId": "detail-mum-ma-medicine-and-healt-master-of-clinical-psychology-54",
+        "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research/medicine-health-sciences/master-of-clinical-psychology"
+      },
+      {
+        "field": "fees",
+        "sourceId": "postgraduate-fees",
+        "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research/fees",
+        "sourceText": "89,000 (full course)"
+      },
+      {
+        "field": "requirements",
+        "sourceId": "detail-mum-ma-medicine-and-healt-master-of-clinical-psychology-54",
+        "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research/medicine-health-sciences/master-of-clinical-psychology",
+        "state": "transport-blocked"
+      },
+      {
+        "field": "language",
+        "sourceId": "english-tests",
+        "sourceUrl": "https://www.monash.edu.my/study/entry-requirements/english/tests",
+        "state": "general-rule"
+      }
+    ]
+  },
+  {
+    "code": "MUM-PHD-MEDICINE-AND-HEALT-PHD-PHD-55",
+    "nameEnOfficial": "Doctor of Philosophy (PhD)",
+    "sources": [
+      {
+        "field": "identity",
+        "sourceId": "detail-mum-phd-medicine-and-healt-phd-phd-55",
+        "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research/medicine-health-sciences/phd"
+      },
+      {
+        "field": "fees",
+        "sourceId": "postgraduate-fees",
+        "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research/fees",
+        "sourceText": "54,720 (per year)"
+      },
+      {
+        "field": "requirements",
+        "sourceId": "detail-mum-phd-medicine-and-healt-phd-phd-55",
+        "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research/medicine-health-sciences/phd",
+        "state": "transport-blocked"
+      },
+      {
+        "field": "language",
+        "sourceId": "english-tests",
+        "sourceUrl": "https://www.monash.edu.my/study/entry-requirements/english/tests",
+        "state": "general-rule"
+      },
+      {
+        "field": "academicPerformanceRequirement",
+        "sourceId": "graduate-research-admission-criteria",
+        "sourceUrl": "https://www.monash.edu/graduate-research/study/apply/admission-criteria",
+        "sourceText": "Monash Graduate Research admission criteria: PhD standard entry requires a relevant four-year bachelor degree with a research thesis/project and minimum overall average grade equivalent to Second Class Honours Division A, or a relevant master degree with at least 25% one full-time equivalent year research thesis/project and the same grade threshold, or GRC/delegate-approved equivalent qualifications.",
+        "state": "official-value"
+      }
+    ]
+  },
+  {
+    "code": "MUM-MA-PHARMACY-MASTER-OF-PHARMACEUTICAL-SCIENCE-56",
+    "nameEnOfficial": "Master of Pharmaceutical Science",
+    "sources": [
+      {
+        "field": "identity",
+        "sourceId": "detail-mum-ma-pharmacy-master-of-pharmaceutical-science-56",
+        "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research/pharmacy/master-of-pharmaceutical-science"
+      },
+      {
+        "field": "fees",
+        "sourceId": "postgraduate-fees",
+        "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research/fees",
+        "sourceText": "54,720 (per year)"
+      },
+      {
+        "field": "requirements",
+        "sourceId": "detail-mum-ma-pharmacy-master-of-pharmaceutical-science-56",
+        "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research/pharmacy/master-of-pharmaceutical-science",
+        "state": "transport-blocked"
+      },
+      {
+        "field": "language",
+        "sourceId": "english-tests",
+        "sourceUrl": "https://www.monash.edu.my/study/entry-requirements/english/tests",
+        "state": "general-rule"
+      }
+    ]
+  },
+  {
+    "code": "MUM-MA-PHARMACY-MPHIL-57",
+    "nameEnOfficial": "Master of Philosophy",
+    "sources": [
+      {
+        "field": "identity",
+        "sourceId": "detail-mum-ma-pharmacy-mphil-57",
+        "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research/pharmacy/master-of-philosophy"
+      },
+      {
+        "field": "fees",
+        "sourceId": "postgraduate-fees",
+        "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research/fees",
+        "sourceText": "54,720 (per year)"
+      },
+      {
+        "field": "requirements",
+        "sourceId": "detail-mum-ma-pharmacy-mphil-57",
+        "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research/pharmacy/master-of-philosophy",
+        "state": "transport-blocked"
+      },
+      {
+        "field": "language",
+        "sourceId": "english-tests",
+        "sourceUrl": "https://www.monash.edu.my/study/entry-requirements/english/tests",
+        "state": "general-rule"
+      }
+    ]
+  },
+  {
+    "code": "MUM-PHD-PHARMACY-PHD-PHD-58",
+    "nameEnOfficial": "Doctor of Philosophy (PhD)",
+    "sources": [
+      {
+        "field": "identity",
+        "sourceId": "detail-mum-phd-pharmacy-phd-phd-58",
+        "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research/pharmacy/doctor-of-philosophy-phd"
+      },
+      {
+        "field": "fees",
+        "sourceId": "postgraduate-fees",
+        "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research/fees",
+        "sourceText": "54,720 (per year)"
+      },
+      {
+        "field": "requirements",
+        "sourceId": "detail-mum-phd-pharmacy-phd-phd-58",
+        "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research/pharmacy/doctor-of-philosophy-phd",
+        "state": "transport-blocked"
+      },
+      {
+        "field": "language",
+        "sourceId": "english-tests",
+        "sourceUrl": "https://www.monash.edu.my/study/entry-requirements/english/tests",
+        "state": "general-rule"
+      },
+      {
+        "field": "academicPerformanceRequirement",
+        "sourceId": "graduate-research-admission-criteria",
+        "sourceUrl": "https://www.monash.edu/graduate-research/study/apply/admission-criteria",
+        "sourceText": "Monash Graduate Research admission criteria: PhD standard entry requires a relevant four-year bachelor degree with a research thesis/project and minimum overall average grade equivalent to Second Class Honours Division A, or a relevant master degree with at least 25% one full-time equivalent year research thesis/project and the same grade threshold, or GRC/delegate-approved equivalent qualifications.",
+        "state": "official-value"
+      }
+    ]
+  },
+  {
+    "code": "MUM-MA-SCIENCE-MASTER-OF-SCIENCE-59",
+    "nameEnOfficial": "Master of Science",
+    "sources": [
+      {
+        "field": "identity",
+        "sourceId": "detail-mum-ma-science-master-of-science-59",
+        "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research/science/master-science"
+      },
+      {
+        "field": "fees",
+        "sourceId": "postgraduate-fees",
+        "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research/fees",
+        "sourceText": "54,720 (per year)"
+      },
+      {
+        "field": "requirements",
+        "sourceId": "detail-mum-ma-science-master-of-science-59",
+        "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research/science/master-science",
+        "state": "transport-blocked"
+      },
+      {
+        "field": "language",
+        "sourceId": "english-tests",
+        "sourceUrl": "https://www.monash.edu.my/study/entry-requirements/english/tests",
+        "state": "general-rule"
+      }
+    ]
+  },
+  {
+    "code": "MUM-PHD-SCIENCE-PHD-PHD-60",
+    "nameEnOfficial": "Doctor of Philosophy (PhD)",
+    "sources": [
+      {
+        "field": "identity",
+        "sourceId": "detail-mum-phd-science-phd-phd-60",
+        "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research/science/phd"
+      },
+      {
+        "field": "fees",
+        "sourceId": "postgraduate-fees",
+        "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research/fees",
+        "sourceText": "54,720 (per year)"
+      },
+      {
+        "field": "requirements",
+        "sourceId": "detail-mum-phd-science-phd-phd-60",
+        "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research/science/phd",
+        "state": "transport-blocked"
+      },
+      {
+        "field": "language",
+        "sourceId": "english-tests",
+        "sourceUrl": "https://www.monash.edu.my/study/entry-requirements/english/tests",
+        "state": "general-rule"
+      },
+      {
+        "field": "academicPerformanceRequirement",
+        "sourceId": "graduate-research-admission-criteria",
+        "sourceUrl": "https://www.monash.edu/graduate-research/study/apply/admission-criteria",
+        "sourceText": "Monash Graduate Research admission criteria: PhD standard entry requires a relevant four-year bachelor degree with a research thesis/project and minimum overall average grade equivalent to Second Class Honours Division A, or a relevant master degree with at least 25% one full-time equivalent year research thesis/project and the same grade threshold, or GRC/delegate-approved equivalent qualifications.",
+        "state": "official-value"
+      }
+    ]
+  }
+]

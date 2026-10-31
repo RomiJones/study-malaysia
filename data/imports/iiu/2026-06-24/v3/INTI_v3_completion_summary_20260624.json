@@ -1,0 +1,37 @@
+{
+  "generatedAt": "2026-06-24",
+  "sourceCandidateDataset": "data/imports/iiu/2026-06-20/iiu-20260620/08_candidate_dataset.json",
+  "officialDomain": "newinti.edu.my",
+  "outputs": [
+    {
+      "path": "data/imports/iiu/2026-06-24/v3/INTI_audit_undergraduate_20260624.json",
+      "programmes": 74,
+      "ready": 0,
+      "needsReview": 74,
+      "exceptions": 14,
+      "sha256": "e9aa09b779d12130b1d972934ac505f630515853621b44df9400ad2c90a749d7"
+    },
+    {
+      "path": "data/imports/iiu/2026-06-24/v3/INTI_audit_master_20260624.json",
+      "programmes": 23,
+      "ready": 0,
+      "needsReview": 23,
+      "exceptions": 15,
+      "sha256": "c7d9adabb05afec0163f9c30e3ca0073bd7bf6e59ce99cbeda5e9d6c6f210c39"
+    },
+    {
+      "path": "data/imports/iiu/2026-06-24/v3/INTI_audit_doctoral_20260624.json",
+      "programmes": 10,
+      "ready": 0,
+      "needsReview": 10,
+      "exceptions": 10,
+      "sha256": "71d87636eaa37a801eb977fe2288c60a1f89cbdec63e0adc8f4b9bd11f822ecd"
+    }
+  ],
+  "officialLimitations": {
+    "exactInternationalTotalTuition": "not published; official pages use Approx. RM and exclude 6% SST for international students",
+    "allRecordsPublicReady": false,
+    "readyCount": 0,
+    "needsReviewCount": 107
+  }
+}

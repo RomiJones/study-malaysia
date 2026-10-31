@@ -54,7 +54,7 @@ test("INTI official audit import publishes official approximate fees as public p
   assert.equal(summary.publishedRows, 107);
   assert.equal(summary.uniqueSlugs, 107);
   assert.equal(summary.pendingFeeRows, 0);
-  assert.equal(summary.officialApproximateFeeRows, 91);
+  assert.equal(summary.officialApproximateFeeRows, 107);
   assert.equal(summary.approximateFeeRows, 91);
   assert.equal(summary.nonScalarApproximateFeeRows, 16);
   assert.equal(summary.rowsWithApproximateFeeEvidence, 107);
@@ -62,14 +62,13 @@ test("INTI official audit import publishes official approximate fees as public p
   assert.equal(summary.rowsWithDurationYears, 107);
   assert.deepEqual(summary.publicDisplayStatusCounts, { ready: 107 });
   assert.deepEqual(summary.officialSourceStatusCounts, { "official-verified": 107 });
-  assert.deepEqual(summary.feeAuditStatusCounts, { "official-approximate": 91, "official-non-scalar": 16 });
+  assert.deepEqual(summary.feeAuditStatusCounts, { "official-approximate": 107 });
 
   assert.ok(rows.every((row) => row.isPublished === true));
   assert.ok(rows.every((row) => row.publicDisplayStatus === "ready"));
   assert.ok(rows.every((row) => row.officialSourceStatus === "official-verified"));
-  assert.ok(rows.every((row) => row.officialFeeAuditStatus === "official-approximate" || row.officialFeeAuditStatus === "official-non-scalar"));
-  assert.equal(rows.filter((row) => row.officialFeeAuditStatus === "official-approximate").every((row) => Number(row.tuitionAmount) > 0), true);
-  assert.equal(rows.filter((row) => row.officialFeeAuditStatus === "official-non-scalar").every((row) => row.tuitionAmount == null), true);
+  assert.ok(rows.every((row) => row.officialFeeAuditStatus === "official-approximate"));
+  assert.ok(rows.every((row) => Number(row.tuitionAmount) > 0));
   assert.ok(rows.every((row) => row.officialTuitionMYR == null));
   assert.ok(rows.every((row) => row.tuitionCurrency === "MYR"));
   assert.ok(rows.every((row) => Number(row.annualTuitionCny) > 0));
@@ -111,9 +110,11 @@ test("INTI official audit import publishes official approximate fees as public p
   assert.match(String(physiotherapy?.officialTuitionNote), /RM 105,027/);
 
   const actuarialScience = rows.find((row) => row.code === "INTI-B-001");
-  assert.equal(actuarialScience?.officialFeeAuditStatus, "official-non-scalar");
-  assert.equal(actuarialScience?.tuitionAmount, null);
-  assert.equal(actuarialScience?.tuitionDisplay, "Official fee variants verified");
+  assert.equal(actuarialScience?.officialFeeAuditStatus, "official-approximate");
+  assert.equal(Number(actuarialScience?.tuitionAmount), 48820);
+  assert.equal(actuarialScience?.tuitionDisplay, "Approx. RM 48,820");
+  assert.match(String(actuarialScience?.officialTuitionNote), /Selected public tuition option: INTI International College Subang: Approx\. RM 48,820/);
+  assert.match(String(actuarialScience?.officialTuitionNote), /INTI International College Penang: Approx\. RM 46,012/);
   assert.equal((actuarialScience?.name as any)?.["zh-CN"], "精算科学课程（美国大学转学分课程）（Actuarial Science Program (American University Program)）");
   assert.equal((actuarialScience?.faculty as any)?.["zh-CN"], "美国大学课程");
 });

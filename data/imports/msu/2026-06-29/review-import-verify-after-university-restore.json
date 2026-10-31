@@ -1,0 +1,69 @@
+{
+  "mode": "verified",
+  "universityId": 43,
+  "databaseUniversityCode": "MSU",
+  "summary": {
+    "importRows": 80,
+    "byLevel": {
+      "bachelor": 80,
+      "master": 0,
+      "phd": 0
+    },
+    "readyRows": 0,
+    "needsReviewRows": 80,
+    "publishedRows": 0,
+    "uniqueSlugs": 80,
+    "officialFeeRows": 0,
+    "pendingFeeRows": 80,
+    "directIeltsRows": 19,
+    "missingDirectIeltsRows": 61,
+    "durationReviewRows": 4,
+    "curriculumRows": 75,
+    "careerRows": 72,
+    "sourceRows": 80,
+    "publicDisplayStatusCounts": {
+      "needs-review": 80
+    },
+    "officialSourceStatusCounts": {
+      "needs-review": 80
+    },
+    "feeAuditStatusCounts": {
+      "pending-review": 80
+    }
+  },
+  "verification": {
+    "importRows": 80,
+    "byLevel": {
+      "bachelor": 80,
+      "master": 0,
+      "phd": 0
+    },
+    "readyRows": 0,
+    "needsReviewRows": 80,
+    "publishedRows": 0,
+    "uniqueSlugs": 80,
+    "officialFeeRows": 0,
+    "pendingFeeRows": 80,
+    "directIeltsRows": 19,
+    "missingDirectIeltsRows": 61,
+    "durationReviewRows": 4,
+    "curriculumRows": 75,
+    "careerRows": 72,
+    "sourceRows": 80,
+    "publicDisplayStatusCounts": {
+      "needs-review": 80
+    },
+    "officialSourceStatusCounts": {
+      "needs-review": 80
+    },
+    "feeAuditStatusCounts": {
+      "pending-review": 80
+    },
+    "universityPublicDisplayStatus": "ready",
+    "universityIsPublished": true,
+    "universityProgramCount": 80,
+    "publicLeakageRows": 0,
+    "adminNeedsReviewRows": 80,
+    "activeSupersededRows": 0
+  }
+}

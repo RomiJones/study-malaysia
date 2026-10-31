@@ -2,7 +2,7 @@
 
 - **任务编号**: TASK-051
 - **任务标题**: 新增需求边界和验收标准补充
-- **状态**: 待评审
+- **状态**: 已完成
 - **优先级**: 高
 - **任务类型**: 产品
 - **负责人**: Codex
@@ -54,3 +54,18 @@
 - **验证结果**: `npm run test` 通过，44 个测试全部通过；`npm run build` 通过，API、Web、Admin、Shared 构建成功，管理端存在既有大 chunk 警告。
 - **更新文件**: `docs/prd/TASK-051-um-data-import-requirement-boundary.md`、`docs/notion-snapshot/产品需求文档.md`、`docs/notion-snapshot/requirements/REQ-2026-05-24T12-55-06-287Z.md`、`docs/notion-snapshot/tasks/TASK-051.md`、`docs/notion-snapshot/开发进度日志.md`
 - **Notion 更新**: 未更新实际 Notion；本轮没有可写入的 Notion 页面 ID，已更新本地中文文档快照。
+
+### 2026-05-24T13:45:36.540Z - 自动状态更新
+
+- **状态**: 待评审
+- **说明**: Codex 已完成实现并返回完成状态。
+
+### 2026-05-24T13:48:10.227Z - 自动状态更新
+
+- **状态**: 已完成
+- **说明**: Review 通过：Review 通过。TASK-051 的提交 932fdaf 只新增/更新中文文档，已覆盖新增 UM 数据导入需求的目标、用户价值、功能范围、非目标、历史任务关系、验收标准、人工确认问题和阻塞条件；文档明确 Notion、Markdown 快照、静态 HTML 和 task.json 都不是业务数据库。当前工作区存在大量其他未提交改动，但本次提交本身未修改业务代码。
+
+### 2026-05-24T13:48:10.253Z - 自动状态更新
+
+- **状态**: 已完成
+- **说明**: Review 通过：Review 通过。TASK-051 的提交 932fdaf 只新增/更新中文文档，已覆盖新增 UM 数据导入需求的目标、用户价值、功能范围、非目标、历史任务关系、验收标准、人工确认问题和阻塞条件；文档明确 Notion、Markdown 快照、静态 HTML 和 task.json 都不是业务数据库。当前工作区存在大量其他未提交改动，但本次提交本身未修改业务代码。

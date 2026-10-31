@@ -1,0 +1,340 @@
+{
+  "schemaVersion": 1,
+  "createdAt": "2026-06-27T13:56:42.720Z",
+  "institution": {
+    "code": "UITM",
+    "shortName": "UiTM",
+    "name": "Universiti Teknologi MARA",
+    "slug": "universiti-teknologi-mara-uitm"
+  },
+  "authorization": "ian-approved-international-unavailable-publication",
+  "sourceInputs": {
+    "undergraduateAudit": "audits/UiTM_audit_undergraduate_20260627_reviewed_v4.json",
+    "sourceAuditSafeToImport": false,
+    "sourceAuditReason": "StudyMY audit JSON stays safe_to_import=false by contract; this importer publishes only after explicit operator command and maps rows to not-available-for-international."
+  },
+  "writePolicy": {
+    "importer": "apps/api/src/db/import-uitm-official-audit.ts",
+    "mode": "publish-undergraduate-reference-international-unavailable",
+    "upsertPrefix": "uitm-undergraduate-20260627-",
+    "universityRow": "upsert by code UITM or slug universiti-teknologi-mara-uitm",
+    "programmeRows": "upsert 164 current UiTM undergraduate reference rows and archive non-current UiTM bachelor rows",
+    "transactional": true,
+    "backupRequired": true
+  },
+  "publicationHardGate": {
+    "result": "passed-for-international-unavailable-display",
+    "standard": "UiTM undergraduate may be displayed only as official programme data with international students not open.",
+    "rules": [
+      "Official programme data only",
+      "Chinese bilingual programme name",
+      "Chinese faculty",
+      "positive numeric duration years",
+      "programme source links retained",
+      "all programme rows publicDisplayStatus=not-available-for-international",
+      "no row may be publicDisplayStatus=ready",
+      "no international tuition or application-document inference",
+      "direct IELTS retained only where official source directly publishes IELTS"
+    ]
+  },
+  "expectedSurface": {
+    "programmeCount": 164,
+    "byLevel": {
+      "bachelor": 164
+    },
+    "summary": {
+      "importRows": 164,
+      "byLevel": {
+        "bachelor": 164
+      },
+      "readyRows": 0,
+      "notAvailableForInternationalRows": 164,
+      "publishedRows": 164,
+      "uniqueSlugs": 164,
+      "officialFeeNotPublishedRows": 164,
+      "directIeltsRows": 3,
+      "muetRows": 164,
+      "chineseNameRows": 164,
+      "translatedEnglishNameRows": 4,
+      "chineseFacultyRows": 164,
+      "chineseCurriculumRows": 164,
+      "chineseCareerRows": 164,
+      "englishPublicTextRows": 164,
+      "sourceRows": 164,
+      "officialUnpublishedCurriculumRows": 163,
+      "officialUnpublishedCareerRows": 163,
+      "publicDisplayStatusCounts": {
+        "not-available-for-international": 164
+      },
+      "officialSourceStatusCounts": {
+        "official-page-verified-international-not-available": 164
+      },
+      "feeAuditStatusCounts": {
+        "not-published": 164
+      }
+    },
+    "validationMeta": {
+      "validatedBy": "study-audit-validator",
+      "validatedAt": "2026-06-27",
+      "originalAuditFile": "audits/UiTM_audit_undergraduate_20260627.json",
+      "originalAuditDate": "2026-06-27",
+      "schemaStyle": "study-collector-current",
+      "validationVersion": "1.0.4",
+      "reviewVersion": 4,
+      "overallDecision": "PASS-WITH-EXCEPTIONS",
+      "qualityScore": {
+        "overall": 0.98,
+        "formatCompliance": 1,
+        "sourceValidity": 0.98,
+        "completeness": 0.96,
+        "safety": 0.99
+      },
+      "counts": {
+        "totalProgrammesValidated": 164,
+        "pass": 164,
+        "warn": 0,
+        "repair": 0,
+        "reject": 0,
+        "issuesFound": 1,
+        "issuesRepaired": 170,
+        "issuesPending": 0
+      },
+      "languageGateStats": {
+        "directIeltsRows": 3,
+        "noDirectIeltsRows": 161,
+        "languageSlotMismatchRows": 0,
+        "equivalentPathMisusedAsIeltsRows": 0,
+        "formOptionContaminationRows": 0,
+        "officialIeltsDistribution": {
+          "6.0": 3,
+          "null/no-direct-IELTS": 161
+        },
+        "directIeltsProgrammeCodes": [
+          "LG240",
+          "LG241",
+          "LG243"
+        ]
+      },
+      "programmeNameGateStats": {
+        "bilingualProgrammeNameRows": 164,
+        "pureEnglishNameRows": 0,
+        "pureChineseNameRows": 0,
+        "namePrefixContaminationRows": 0,
+        "bilingualScopeLeakRows": 0,
+        "missingOrSourceBlockedRows": [],
+        "translatedFromOfficialMalayRows": [
+          "AD292",
+          "AD293",
+          "BE267",
+          "PH260"
+        ]
+      },
+      "qualityRuleCandidates": [
+        "For public universities whose official FAQ excludes non-citizens/permanent residents from the target level, force all affected programmes to needs-review/not-available-international and block international tuition publication.",
+        "When programme PDFs contain route-specific MUET bands, treat language.muet as non-scalar review data and never convert MUET to IELTS; only direct IELTS strings may populate language.ielts.",
+        "When official shortlink/PDF hosting is outside the university domain but linked from an official university page, preserve an authority exception and keep the official page as governing source.",
+        "当官方本科目录存在专业代码，但 HEA/e-Syarat/学院页未能给出同一代码的官方英文名时，不得从相邻代码、旧代码或相关学院前缀自动推断 nameEn。",
+        "AD/AS、BE/CFAP 等跨学院或跨代码体系的双学位/重编码线索必须进入 source-conflict pending，由 Ian 或官方来源确认后才能双语化专业名称。",
+        "国际学生未开放的官方政策可解除国际学费和国际申请材料缺失，但不能解除专业身份、官方英文名、学制等基础字段的来源要求。",
+        "若 Ian 明确批准，可用官方马来语专业名生成英文译名补齐展示字段，但必须在 fieldEvidence 标记 isOfficialEnglishText=false，避免冒充官方英文原文。",
+        "马来语 Sarjana Muda ... Dengan Kepujian 翻译为 Bachelor ... with Honours 或 (Honours) 时，应优先参考同校 HEA 已发布英文命名风格。",
+        "当官方明确某层级不开放国际学生时，该状态应作为 internationalAdmission 备注/展示状态处理，不应继续计入 tuitionMYR/applicationDocs 缺失或专业级验收失败。",
+        "When an official e-Syarat page link label/code differs from the linked PDF content, validate the PDF text itself and record the code-label conflict instead of treating the programme as missing.",
+        "For UiTM Pharmacy, PH260 appears in the online catalogue and in the official linked PDF, while faculty detail pages may still label the same Bachelor of Pharmacy programme as PH240; keep both sources and scope notes."
+      ],
+      "officialSourceValidation": {
+        "officialDomain": "uitm.edu.my",
+        "authorityExceptionsRetained": [
+          "afb.my",
+          "drive.google.com"
+        ],
+        "authorityExceptionReason": "afb.my shortlinks and Google Drive PDFs are linked from UiTM official e-Syarat pages; UiTM official pages remain governing sources.",
+        "unexpectedThirdPartySources": [],
+        "checkedOfficialSources": [
+          "https://online.uitm.edu.my/degree.cfm",
+          "https://pengambilan.uitm.edu.my/index.php/e-aplikasi/e-syarat",
+          "https://hea.uitm.edu.my/index.php/academic/program-pelaksana-pu",
+          "https://pengambilan.uitm.edu.my/index.php/faq"
+        ]
+      },
+      "reviewerNotes": [
+        "UiTM undergraduate admission is officially not open to non-citizens/permanent residents; per Ian instruction this is treated as an informational status/remark, not a validation failure.",
+        "International tuition and international application document gaps are not counted as missing because international admission is officially not open.",
+        "All 164 programme names pass the bilingual name gate; AD292/AD293/BE267/PH260 nameEn values include reviewed English translations from official Malay catalogue names where exact English rows were not published.",
+        "PH260 pending issue resolved: official e-Syarat linked PDF reached via UITM-PH240 shortlink identifies PH260/UE6727001 with 4 years/8 semesters and September-only intake; Faculty of Pharmacy page provides same-title Bachelor of Pharmacy structure/career context under PH240 label."
+      ]
+    },
+    "exceptionQueue": [
+      {
+        "type": "publication-leakage",
+        "severity": "high",
+        "affectedProgramme": null,
+        "affectedField": "publicDisplayStatus",
+        "description": "UiTM undergraduate programmes are not open to non-citizens/permanent residents per official FAQ; all records must remain needs-review and must not be published as international-student ready.",
+        "evidence": [
+          {
+            "sourceUrl": "https://pengambilan.uitm.edu.my/index.php/faq",
+            "value": "TIDAK BOLEH; open to Malaysian citizens of specified groups only."
+          }
+        ],
+        "recommendation": "Do not import UiTM undergraduate records into public international catalogue unless Ian explicitly creates a non-international display category.",
+        "status": "open"
+      },
+      {
+        "type": "collection-omission",
+        "severity": "high",
+        "affectedProgramme": "PH260",
+        "affectedField": "officialSourceUrl/duration/programmeDetailPdf",
+        "description": "PH260 details were found through the UiTM e-Syarat PH240 shortlink whose official PDF text identifies PH260/UE6727001; Faculty of Pharmacy page provides same-title Bachelor of Pharmacy structure/careers under PH240.",
+        "evidence": [
+          {
+            "sourceUrl": "https://online.uitm.edu.my/degree.cfm",
+            "value": "Online degree catalogue lists PH260 SARJANA MUDA FARMASI DENGAN KEPUJIAN."
+          },
+          {
+            "sourceUrl": "https://afb.my/UITM-PH240",
+            "value": "Official linked PDF text: Sarjana Muda Farmasi Dengan Kepujian PH260/UE6727001 (4 Tahun/8 Semester); September intake only; Program Bertemu Duga."
+          },
+          {
+            "sourceUrl": "https://pharmacy.uitm.edu.my/index.php/component/content/category/8-programme/9-undergraduate?Itemid=101",
+            "value": "Faculty page: Bachelor of Pharmacy - PH240, duration four years, programme structure and careers."
+          }
+        ],
+        "recommendation": "Retain code-label conflict note; use PH260 PDF for exact code/duration/intake/entry and Faculty page for same-title pharmacy structure/career context.",
+        "status": "resolved-with-official-pdf-and-faculty-source"
+      },
+      {
+        "type": "source-conflict",
+        "severity": "medium",
+        "affectedProgramme": "AS277",
+        "affectedField": "officialSourceUrl",
+        "description": "The e-Syarat row for AS277 appears to link to UITM-AS247, while the programme-specific shortlink UITM-AS277 resolves to the matching AS277 PDF.",
+        "evidence": [
+          {
+            "sourceUrl": "https://pengambilan.uitm.edu.my/index.php/e-aplikasi/e-syarat",
+            "value": "AS277 row link observed as https://afb.my/UITM-AS247"
+          },
+          {
+            "sourceUrl": "https://afb.my/UITM-AS277",
+            "value": "Resolved to AS277 Google Drive PDF during deep crawl"
+          }
+        ],
+        "recommendation": "Reviewer should confirm AS277 source URL before any downstream use.",
+        "status": "open"
+      },
+      {
+        "type": "source-authority-ambiguous",
+        "severity": "medium",
+        "affectedProgramme": null,
+        "affectedField": "officialSourceUrl",
+        "description": "e-Syarat links use afb.my shortlinks and Google Drive PDFs. They are official-linked from UiTM, but the file host is not an uitm.edu.my domain.",
+        "evidence": [
+          {
+            "sourceUrl": "https://pengambilan.uitm.edu.my/index.php/e-aplikasi/e-syarat",
+            "value": "Official page links to afb.my/Google Drive PDF files"
+          }
+        ],
+        "recommendation": "Keep authority exception in audit; reviewer should retain UiTM e-Syarat page as governing source.",
+        "status": "open"
+      },
+      {
+        "type": "source-conflict",
+        "severity": "medium",
+        "affectedProgramme": null,
+        "affectedField": "nameEn",
+        "description": "33 programmes have different English names between HEA Program Pelaksana and iCEPS part-time page; audit retains HEA full-time value.",
+        "evidence": [
+          {
+            "sourceUrl": "https://hea.uitm.edu.my/index.php/academic/program-pelaksana-pu",
+            "value": "AC240, AD250, AD252, AD261, AD264, AD265, AM238, LG242, AS249, BA274, BA275, BA279, BA280, BE221, BE247, BE249, BE252, BE255, CS230, CS240, CS255, CS264, ED241, ED260, HM252, HM260, HM265, IC220, MC242, MC247, MC248, SI262, SI263"
+          }
+        ],
+        "recommendation": "Use HEA full-time table for undergraduate full-time nameEn unless Ian decides otherwise.",
+        "status": "open"
+      },
+      {
+        "type": "schema-gap",
+        "severity": "high",
+        "affectedProgramme": null,
+        "affectedField": "tuitionMYR",
+        "description": "UiTM undergraduate admission is officially unavailable to non-citizens/permanent residents; tuitionMYR is intentionally null and should be displayed/handled as international students not open, not as a missing fee to infer.",
+        "evidence": [
+          {
+            "sourceUrl": "https://pengambilan.uitm.edu.my/index.php/faq",
+            "value": "Non-citizens/permanent residents cannot apply."
+          },
+          {
+            "sourceUrl": "https://bendahari.uitm.edu.my/index.php/component/content/article/37-pelajar/73-struktur-yuran-perdana?Itemid=101",
+            "value": "Fee page does not provide an international undergraduate total tuition path for this catalogue."
+          }
+        ],
+        "recommendation": "Keep tuitionMYR null and surface “国际学生未开放” if this dataset is reviewed for reference use; do not substitute local-student fees.",
+        "status": "open"
+      },
+      {
+        "type": "collection-omission",
+        "severity": "medium",
+        "affectedProgramme": null,
+        "affectedField": "curriculum/careerProspects",
+        "description": "Commercial-ready Chinese curriculum and career prospects were not completed for all programmes because the whole level is blocked for international publication; international application documents are handled separately as not open/not applicable.",
+        "evidence": [
+          {
+            "sourceUrl": "https://online.uitm.edu.my/degree.cfm",
+            "value": "Programme list and e-Syarat PDFs focus on eligibility, not full commercial-ready programme detail."
+          }
+        ],
+        "recommendation": "Only continue faculty-by-faculty curriculum/career crawling if Ian wants a non-import reference dataset.",
+        "status": "open"
+      },
+      {
+        "type": "quality-rule-regression",
+        "severity": "high",
+        "affectedProgramme": null,
+        "affectedField": "language.ielts",
+        "description": "UiTM PDFs commonly publish route-specific MUET bands; only three language programmes directly mention IELTS 6.0. The collector must not infer IELTS from MUET or route-specific language rows.",
+        "evidence": [
+          {
+            "sourceUrl": "https://a.uitm.edu.my/SyaratAm/UE",
+            "value": "General MUET Band 1 requirement"
+          },
+          {
+            "sourceUrl": "https://pengambilan.uitm.edu.my/index.php/e-aplikasi/e-syarat",
+            "value": "Programme PDFs include route-specific MUET bands; LG240/LG241/LG243 include direct IELTS 6.0."
+          }
+        ],
+        "recommendation": "Existing language score firewall applies: direct IELTS only; MUET remains MUET/non-scalar where route-specific.",
+        "status": "open"
+      },
+      {
+        "type": "collection-omission",
+        "severity": "high",
+        "affectedProgramme": null,
+        "affectedField": "nameEn/name",
+        "description": "Four catalogue rows lacked confirmed official English names; reviewed_v2 fills nameEn/name using English translations from official Malay programme names under Ian instruction, with fieldEvidence.isOfficialEnglishText=false.",
+        "evidence": [
+          {
+            "sourceUrl": "https://hea.uitm.edu.my/index.php/academic/program-pelaksana-pu",
+            "value": "AD292, AD293, BE267, PH260"
+          }
+        ],
+        "recommendation": "Retain translation status metadata; do not treat these as source-published English names unless official English rows are later found.",
+        "status": "resolved-with-reviewed-translation-and-ph260-official-support"
+      },
+      {
+        "type": "schema-gap",
+        "severity": "medium",
+        "affectedProgramme": null,
+        "affectedField": "internationalApplicationDocs",
+        "description": "UiTM undergraduate international application documents are intentionally empty because official FAQ says non-citizens/permanent residents cannot apply.",
+        "evidence": [
+          {
+            "sourceUrl": "https://pengambilan.uitm.edu.my/index.php/faq",
+            "value": "Bukan Warganegara atau Penduduk Tetap: TIDAK BOLEH"
+          }
+        ],
+        "recommendation": "Treat as “国际学生未开放” rather than missing documents.",
+        "status": "open"
+      }
+    ]
+  }
+}

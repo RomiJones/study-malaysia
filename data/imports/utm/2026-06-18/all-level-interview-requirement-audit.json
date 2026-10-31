@@ -1,0 +1,98 @@
+{
+  "auditId": "utm-all-level-interview-requirement-audit-2026-06-19",
+  "institution": "Universiti Teknologi Malaysia",
+  "levels": ["bachelor", "master", "phd"],
+  "applicantScope": "international",
+  "academicSession": "2026/2027",
+  "auditedAt": "2026-06-19T04:05:00+08:00",
+  "authorization": "official-interview-requirement-display-fix",
+  "officialSources": [
+    {
+      "title": "UTM Entry Requirements UG International",
+      "url": "https://admission.utm.my/entry-requirements-ug-international/",
+      "role": "undergraduate interview requirement authority",
+      "evidence": "The undergraduate page states: Pass the UTM interview (for Bachelor of Architecture & Bachelor of Science Industrial Design)."
+    },
+    {
+      "title": "UTM International Postgraduate Entry Requirements",
+      "url": "https://admission.utm.my/int-pg-entry-requirements/",
+      "role": "postgraduate academic entry requirement authority",
+      "evidence": "The postgraduate page lists Doctor of Philosophy and Master's Degree requirements, Master by Coursework, Master by Mixed Mode/Research and APEL assessment rules; no interview requirement is published for the imported master or doctoral catalogue."
+    }
+  ],
+  "finalDecision": {
+    "bachelor": {
+      "programmesChecked": 44,
+      "interviewRequiredCount": 2,
+      "interviewNotRequiredCount": 42,
+      "interviewRequiredProgrammes": [
+        {
+          "code": "UTM-UG-021",
+          "nameEnOfficial": "Bachelor of Science in Architecture with Honours",
+          "displayTextZhCN": "需要面试：该专业需通过 UTM 面试。"
+        },
+        {
+          "code": "UTM-UG-041",
+          "nameEnOfficial": "Bachelor of Science with Honours (Industrial Design)",
+          "displayTextZhCN": "需要面试：该专业需通过 UTM 面试。"
+        }
+      ],
+      "falsePositiveRowsFixed": [
+        {
+          "code": "UTM-UG-016",
+          "nameEnOfficial": "Bachelor of Naval Architecture & Offshore Engineering with Honours",
+          "reason": "The official interview parenthetical refers to Bachelor of Architecture, not Naval Architecture."
+        },
+        {
+          "code": "UTM-UG-025",
+          "nameEnOfficial": "Bachelor of Landscape Architecture with Honours",
+          "reason": "The official interview parenthetical refers to Bachelor of Architecture, not Landscape Architecture."
+        }
+      ]
+    },
+    "master": {
+      "programmesChecked": 153,
+      "interviewRequiredCount": 0,
+      "interviewNotRequiredCount": 153,
+      "notes": "UTM postgraduate official page publishes academic, work-experience, LAM Part 1 and APEL assessment rules; no interview requirement was found for the imported master catalogue."
+    },
+    "phd": {
+      "programmesChecked": 55,
+      "interviewRequiredCount": 0,
+      "interviewNotRequiredCount": 55,
+      "notes": "UTM postgraduate official page publishes doctoral degree and APEL assessment routes; no interview requirement was found for the imported doctoral catalogue."
+    }
+  },
+  "publicApiVerification": {
+    "checkedAt": "2026-06-19T04:02:00+08:00",
+    "endpoint": "http://127.0.0.1:3000/api/universities/utm",
+    "totalProgrammes": 252,
+    "byLevel": {
+      "bachelor": 44,
+      "master": 153,
+      "phd": 55
+    },
+    "interviewHitCount": 2,
+    "interviewHits": ["UTM-UG-021", "UTM-UG-041"]
+  },
+  "implementation": {
+    "databaseMutation": true,
+    "importCommand": "npm --workspace @studymy/api run import:utm:undergraduate -- --confirm-import",
+    "backupPath": "apps/api/tmp/backups/utm-undergraduate-before-2026-06-18T19-08-24-760Z.json",
+    "filesChanged": [
+      "apps/api/src/db/import-utm-undergraduate-official.ts",
+      "apps/web/src/pages/UniversityPage.vue",
+      "apps/web/src/pages/ProgramPage.vue",
+      "apps/web/src/i18n/messages.ts",
+      "apps/web/src/utils/format.ts",
+      "tests/api/utm-undergraduate-import.test.ts",
+      "tests/web/format.test.ts"
+    ]
+  },
+  "browserVerification": {
+    "architectureDetail": "Standalone detail page shows 面试要求: 需要面试：该专业需通过 UTM 面试。",
+    "navalArchitectureDetail": "Standalone detail page does not show 面试要求.",
+    "masterDetail": "Standalone detail page does not show 面试要求.",
+    "phdDetail": "Standalone detail page does not show 面试要求."
+  }
+}

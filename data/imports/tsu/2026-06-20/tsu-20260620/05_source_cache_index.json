@@ -1,0 +1,2742 @@
+[
+  {
+    "id": "homepage",
+    "url": "https://university.taylors.edu.my/en.html",
+    "role": "institution-authority",
+    "sourceType": "official-page",
+    "fields": [
+      "institution"
+    ],
+    "retrievedAt": "2026-06-20T15:54:12+00:00",
+    "academicSession": "2026",
+    "status": "cached",
+    "localPath": "sources/raw/homepage.html",
+    "sha256": "39c3730f2c7b6a0ea5e254f8c57898b956efb03411904216ffb9ae58300c36cd"
+  },
+  {
+    "id": "explore",
+    "url": "https://university.taylors.edu.my/en/study/explore-all-programmes.html",
+    "role": "canonical",
+    "sourceType": "official-page",
+    "fields": [
+      "programmes"
+    ],
+    "retrievedAt": "2026-06-20T15:54:12+00:00",
+    "academicSession": "2026",
+    "status": "cached",
+    "localPath": "sources/raw/explore-all-programmes.html",
+    "sha256": "08864bc124778e0016ae3f6855c16ea7ce63313d5b798835a1b6ccacf27ff08f"
+  },
+  {
+    "id": "fees",
+    "url": "https://university.taylors.edu.my/en/study/scholarships-and-financial-aid/fees-schedules.html",
+    "role": "field-authority",
+    "sourceType": "official-page",
+    "fields": [
+      "programmes"
+    ],
+    "retrievedAt": "2026-06-20T15:54:12+00:00",
+    "academicSession": "2026",
+    "status": "cached",
+    "localPath": "sources/raw/fees-schedules.html",
+    "sha256": "cd47aadc3b8a6a437fc8daa4694a87cb5889765c9905d257c1cf10be5540fc80"
+  },
+  {
+    "id": "undergraduate_admission",
+    "url": "https://university.taylors.edu.my/en/study/how-to-apply/undergraduate-admission.html",
+    "role": "field-authority",
+    "sourceType": "official-page",
+    "fields": [
+      "programmes"
+    ],
+    "retrievedAt": "2026-06-20T15:54:12+00:00",
+    "academicSession": "2026",
+    "status": "cached",
+    "localPath": "sources/raw/undergraduate-admission.html",
+    "sha256": "8207fb3e35f3d50369dd020752eaf6bfc4d4aa9d6af9834771b90dcf595646b3"
+  },
+  {
+    "id": "postgraduate_admission",
+    "url": "https://university.taylors.edu.my/en/study/how-to-apply/postgraduate-admission.html",
+    "role": "field-authority",
+    "sourceType": "official-page",
+    "fields": [
+      "programmes"
+    ],
+    "retrievedAt": "2026-06-20T15:54:12+00:00",
+    "academicSession": "2026",
+    "status": "cached",
+    "localPath": "sources/raw/postgraduate-admission.html",
+    "sha256": "3944571de66a55019f043521645deeffccac0279999c2e8d96ab73949db1b981"
+  },
+  {
+    "id": "online_postgraduate",
+    "url": "https://university.taylors.edu.my/en/study/online-postgraduate-programmes.html",
+    "role": "field-authority",
+    "sourceType": "official-page",
+    "fields": [
+      "programmes"
+    ],
+    "retrievedAt": "2026-06-20T15:54:12+00:00",
+    "academicSession": "2026",
+    "status": "cached",
+    "localPath": "sources/raw/online-postgraduate-programmes.html",
+    "sha256": "7837f1e479756404eb0d633d4b1f5c9d48690a70776d6163835fc914c3993dbf"
+  },
+  {
+    "id": "key_intakes",
+    "url": "https://university.taylors.edu.my/en/study/how-to-apply/key-intakes.html",
+    "role": "field-authority",
+    "sourceType": "official-page",
+    "fields": [
+      "programmes"
+    ],
+    "retrievedAt": "2026-06-20T15:54:12+00:00",
+    "academicSession": "2026",
+    "status": "cached",
+    "localPath": "sources/raw/key-intakes.html",
+    "sha256": "5731cdcec786dc0b8a43b8101d4058fe44a576b9d48060c071e3d1745017c698"
+  },
+  {
+    "id": "application_portal",
+    "url": "https://topas.taylors.edu.my/",
+    "role": "field-authority",
+    "sourceType": "official-page",
+    "fields": [
+      "programmes"
+    ],
+    "retrievedAt": "2026-06-20T15:54:12+00:00",
+    "academicSession": "2026",
+    "status": "cached",
+    "localPath": "sources/raw/application-portal.html",
+    "sha256": "2b750eeb13577f7c980f0e3918a04eee528dce0aa2b56ec790e8cc819edd29d7"
+  },
+  {
+    "id": "detail-tsu-b-001",
+    "url": "https://university.taylors.edu.my/en/study/explore-all-programmes/architecture-building-and-design/undergraduate/bachelor-of-science-in-architecture.html",
+    "role": "field-authority",
+    "sourceType": "official-page",
+    "fields": [
+      "identity",
+      "duration",
+      "intake",
+      "tuition",
+      "requirements",
+      "curriculum",
+      "careers"
+    ],
+    "retrievedAt": "2026-06-20T15:54:12+00:00",
+    "academicSession": "2026",
+    "status": "cached",
+    "localPath": "sources/raw/programme-details/tsu-b-001-bachelor-of-science-honours-in-architecture.html",
+    "sha256": "cf4295c0a578f0f31c988454e140bc5373560f54f63cfcd81f7a22b7012b2b84"
+  },
+  {
+    "id": "detail-tsu-b-002",
+    "url": "https://university.taylors.edu.my/en/study/explore-all-programmes/architecture-building-and-design/undergraduate/bachelor-of-art-in-interior-architecture.html",
+    "role": "field-authority",
+    "sourceType": "official-page",
+    "fields": [
+      "identity",
+      "duration",
+      "intake",
+      "tuition",
+      "requirements",
+      "curriculum",
+      "careers"
+    ],
+    "retrievedAt": "2026-06-20T15:54:12+00:00",
+    "academicSession": "2026",
+    "status": "cached",
+    "localPath": "sources/raw/programme-details/tsu-b-002-bachelor-of-arts-honours-in-interior-architecture.html",
+    "sha256": "6b11097de7ecc71afb88110cd9a830e8c464cfe935e7972c8adeba1e074431be"
+  },
+  {
+    "id": "detail-tsu-b-003",
+    "url": "https://university.taylors.edu.my/en/study/explore-all-programmes/architecture-building-and-design/undergraduate/bachelor-of-quantity-surveying.html",
+    "role": "field-authority",
+    "sourceType": "official-page",
+    "fields": [
+      "identity",
+      "duration",
+      "intake",
+      "tuition",
+      "requirements",
+      "curriculum",
+      "careers"
+    ],
+    "retrievedAt": "2026-06-20T15:54:12+00:00",
+    "academicSession": "2026",
+    "status": "cached",
+    "localPath": "sources/raw/programme-details/tsu-b-003-bachelor-of-quantity-surveying-honours.html",
+    "sha256": "5ce80596e432c8ee3f75a889317a647bbda53998294949c01b8d058ad2120df1"
+  },
+  {
+    "id": "detail-tsu-b-004",
+    "url": "https://university.taylors.edu.my/en/study/explore-all-programmes/architecture-building-and-design/undergraduate/bachelor-of-science-honours-in-sustainable-digital-construction-management.html",
+    "role": "field-authority",
+    "sourceType": "official-page",
+    "fields": [
+      "identity",
+      "duration",
+      "intake",
+      "tuition",
+      "requirements",
+      "curriculum",
+      "careers"
+    ],
+    "retrievedAt": "2026-06-20T15:54:12+00:00",
+    "academicSession": "2026",
+    "status": "cached",
+    "localPath": "sources/raw/programme-details/tsu-b-004-bachelor-of-science-honours-in-sustainable-digital-construction-management.html",
+    "sha256": "b1f500ab0a1a588f9b8b1e5d65743c5d71443895b8814e9a6330ac8d52ff2bf2"
+  },
+  {
+    "id": "detail-tsu-m-001",
+    "url": "https://university.taylors.edu.my/en/study/explore-all-programmes/architecture-building-and-design/master-coursework/master-of-architecture.html",
+    "role": "field-authority",
+    "sourceType": "official-page",
+    "fields": [
+      "identity",
+      "duration",
+      "intake",
+      "tuition",
+      "requirements",
+      "curriculum",
+      "careers"
+    ],
+    "retrievedAt": "2026-06-20T15:54:12+00:00",
+    "academicSession": "2026",
+    "status": "cached",
+    "localPath": "sources/raw/programme-details/tsu-m-001-master-of-architecture.html",
+    "sha256": "9435e0c82c4f350c57e0f9bcf3d095e0d4dcdf893feab992a5f58adb9d6fce3e"
+  },
+  {
+    "id": "detail-tsu-m-002",
+    "url": "https://university.taylors.edu.my/en/study/explore-all-programmes/architecture-building-and-design/master-coursework/master-of-science-in-virtual-design-and-construction.html",
+    "role": "field-authority",
+    "sourceType": "official-page",
+    "fields": [
+      "identity",
+      "duration",
+      "intake",
+      "tuition",
+      "requirements",
+      "curriculum",
+      "careers"
+    ],
+    "retrievedAt": "2026-06-20T15:54:12+00:00",
+    "academicSession": "2026",
+    "status": "cached",
+    "localPath": "sources/raw/programme-details/tsu-m-002-master-of-science-in-virtual-design-and-construction.html",
+    "sha256": "1bebb373dbcc67037b76eac4429f1c2671a9c945ccfc1defa89de8a5e96da45b"
+  },
+  {
+    "id": "detail-tsu-d-001",
+    "url": "https://university.taylors.edu.my/en/study/explore-all-programmes/architecture-building-and-design/phd-research/doctor-of-philosophy-in-architecture.html",
+    "role": "field-authority",
+    "sourceType": "official-page",
+    "fields": [
+      "identity",
+      "duration",
+      "intake",
+      "tuition",
+      "requirements",
+      "curriculum",
+      "careers"
+    ],
+    "retrievedAt": "2026-06-20T15:54:12+00:00",
+    "academicSession": "2026",
+    "status": "cached",
+    "localPath": "sources/raw/programme-details/tsu-d-001-doctor-of-philosophy-phd-in-architecture.html",
+    "sha256": "a5cc2e7fb87aa039cd56e695ebbea820899e5cf6c8bfb88bdcecceb62fe85fd8"
+  },
+  {
+    "id": "detail-tsu-b-005",
+    "url": "https://university.taylors.edu.my/en/study/explore-all-programmes/biosciences/undergraduate/bachelor-of-biomedical-science.html",
+    "role": "field-authority",
+    "sourceType": "official-page",
+    "fields": [
+      "identity",
+      "duration",
+      "intake",
+      "tuition",
+      "requirements",
+      "curriculum",
+      "careers"
+    ],
+    "retrievedAt": "2026-06-20T15:54:12+00:00",
+    "academicSession": "2026",
+    "status": "cached",
+    "localPath": "sources/raw/programme-details/tsu-b-005-bachelor-of-biomedical-science-honours.html",
+    "sha256": "df03bcc282ed18cfdbc4da847c8061d65dceb34750f992525cf27a78199b2b77"
+  },
+  {
+    "id": "detail-tsu-b-006",
+    "url": "https://university.taylors.edu.my/en/study/explore-all-programmes/biosciences/undergraduate/bachelor-of-food-science.html",
+    "role": "field-authority",
+    "sourceType": "official-page",
+    "fields": [
+      "identity",
+      "duration",
+      "intake",
+      "tuition",
+      "requirements",
+      "curriculum",
+      "careers"
+    ],
+    "retrievedAt": "2026-06-20T15:54:12+00:00",
+    "academicSession": "2026",
+    "status": "cached",
+    "localPath": "sources/raw/programme-details/tsu-b-006-bachelor-of-food-science-honours.html",
+    "sha256": "d6bb5328e3d79f4847c93c9baf51686d16bca8acd9501863892c7f278c1ee41f"
+  },
+  {
+    "id": "detail-tsu-b-007",
+    "url": "https://university.taylors.edu.my/en/study/explore-all-programmes/biosciences/undergraduate/bachelor-of-biotechnology.html",
+    "role": "field-authority",
+    "sourceType": "official-page",
+    "fields": [
+      "identity",
+      "duration",
+      "intake",
+      "tuition",
+      "requirements",
+      "curriculum",
+      "careers"
+    ],
+    "retrievedAt": "2026-06-20T15:54:12+00:00",
+    "academicSession": "2026",
+    "status": "cached",
+    "localPath": "sources/raw/programme-details/tsu-b-007-bachelor-of-biotechnology-honours.html",
+    "sha256": "df2a2ef485880a73cd79bcb09e95048e4609ed44a439fa434fac3e89043b9d66"
+  },
+  {
+    "id": "detail-tsu-b-008",
+    "url": "https://university.taylors.edu.my/en/study/explore-all-programmes/biosciences/undergraduate/bachelor-of-applied-health-sciences.html",
+    "role": "field-authority",
+    "sourceType": "official-page",
+    "fields": [
+      "identity",
+      "duration",
+      "intake",
+      "tuition",
+      "requirements",
+      "curriculum",
+      "careers"
+    ],
+    "retrievedAt": "2026-06-20T15:54:12+00:00",
+    "academicSession": "2026",
+    "status": "cached",
+    "localPath": "sources/raw/programme-details/tsu-b-008-bachelor-of-applied-health-sciences-honours.html",
+    "sha256": "7d164438d322b12c72b7a137d82f77556c6725b70df86fdd0778a10dfef707e3"
+  },
+  {
+    "id": "detail-tsu-m-003",
+    "url": "https://university.taylors.edu.my/en/study/explore-all-programmes/biosciences/master-research/master-of-science.html",
+    "role": "field-authority",
+    "sourceType": "official-page",
+    "fields": [
+      "identity",
+      "duration",
+      "intake",
+      "tuition",
+      "requirements",
+      "curriculum",
+      "careers"
+    ],
+    "retrievedAt": "2026-06-20T15:54:12+00:00",
+    "academicSession": "2026",
+    "status": "cached",
+    "localPath": "sources/raw/programme-details/tsu-m-003-master-of-science.html",
+    "sha256": "5110703bf8de517eff9452f8a57dd1c250b22f58cfcb42c5068ad5bee2296303"
+  },
+  {
+    "id": "detail-tsu-d-002",
+    "url": "https://university.taylors.edu.my/en/study/explore-all-programmes/biosciences/phd-research/doctor-of-philosophy-in-science.html",
+    "role": "field-authority",
+    "sourceType": "official-page",
+    "fields": [
+      "identity",
+      "duration",
+      "intake",
+      "tuition",
+      "requirements",
+      "curriculum",
+      "careers"
+    ],
+    "retrievedAt": "2026-06-20T15:54:12+00:00",
+    "academicSession": "2026",
+    "status": "cached",
+    "localPath": "sources/raw/programme-details/tsu-d-002-doctor-of-philosophy-phd-in-science.html",
+    "sha256": "2b8d313b774eb5bdd1299481bb97cf4c4f844c6f4851d0c4d1894ba5992c036d"
+  },
+  {
+    "id": "detail-tsu-b-009",
+    "url": "https://university.taylors.edu.my/en/study/explore-all-programmes/business/undergraduate/bachelor-of-business.html",
+    "role": "field-authority",
+    "sourceType": "official-page",
+    "fields": [
+      "identity",
+      "duration",
+      "intake",
+      "tuition",
+      "requirements",
+      "curriculum",
+      "careers"
+    ],
+    "retrievedAt": "2026-06-20T15:54:12+00:00",
+    "academicSession": "2026",
+    "status": "cached",
+    "localPath": "sources/raw/programme-details/tsu-b-009-bachelor-of-business-honours.html",
+    "sha256": "4b5026804fdd737cf13efa025c44ce8bfbba79c0a00043d8a6a975a03b8ea120"
+  },
+  {
+    "id": "detail-tsu-b-010",
+    "url": "https://university.taylors.edu.my/en/study/explore-all-programmes/business/undergraduate/bachelor-of-business-in-international-business-and-marketing.html",
+    "role": "field-authority",
+    "sourceType": "official-page",
+    "fields": [
+      "identity",
+      "duration",
+      "intake",
+      "tuition",
+      "requirements",
+      "curriculum",
+      "careers"
+    ],
+    "retrievedAt": "2026-06-20T15:54:12+00:00",
+    "academicSession": "2026",
+    "status": "cached",
+    "localPath": "sources/raw/programme-details/tsu-b-010-bachelor-of-business-honours-in-international-business-and-marketing.html",
+    "sha256": "52745e581c93a206b0e95a5543555d0f81ea79caac98fdcff815f69b28fdb4b7"
+  },
+  {
+    "id": "detail-tsu-b-011",
+    "url": "https://university.taylors.edu.my/en/study/explore-all-programmes/business/undergraduate/bachelor-of-accounting-and-finance.html",
+    "role": "field-authority",
+    "sourceType": "official-page",
+    "fields": [
+      "identity",
+      "duration",
+      "intake",
+      "tuition",
+      "requirements",
+      "curriculum",
+      "careers"
+    ],
+    "retrievedAt": "2026-06-20T15:54:12+00:00",
+    "academicSession": "2026",
+    "status": "cached",
+    "localPath": "sources/raw/programme-details/tsu-b-011-bachelor-of-accounting-finance-honours.html",
+    "sha256": "7cc9ce6b201387a61defefb0aadc0f9247bc1a8c8c9f970ddca90d87275886d0"
+  },
+  {
+    "id": "detail-tsu-b-012",
+    "url": "https://university.taylors.edu.my/en/study/explore-all-programmes/business/undergraduate/bachelor-of-banking-and-finance.html",
+    "role": "field-authority",
+    "sourceType": "official-page",
+    "fields": [
+      "identity",
+      "duration",
+      "intake",
+      "tuition",
+      "requirements",
+      "curriculum",
+      "careers"
+    ],
+    "retrievedAt": "2026-06-20T15:54:12+00:00",
+    "academicSession": "2026",
+    "status": "cached",
+    "localPath": "sources/raw/programme-details/tsu-b-012-bachelor-of-banking-and-finance-honours.html",
+    "sha256": "e3e9f24ba2134b2a2311bafc2fe71ba0cc6ea3d611163596429749a71bcd1614"
+  },
+  {
+    "id": "detail-tsu-b-013",
+    "url": "https://university.taylors.edu.my/en/study/explore-all-programmes/business/undergraduate/bachelor-of-finance-and-economics.html",
+    "role": "field-authority",
+    "sourceType": "official-page",
+    "fields": [
+      "identity",
+      "duration",
+      "intake",
+      "tuition",
+      "requirements",
+      "curriculum",
+      "careers"
+    ],
+    "retrievedAt": "2026-06-20T15:54:12+00:00",
+    "academicSession": "2026",
+    "status": "cached",
+    "localPath": "sources/raw/programme-details/tsu-b-013-bachelor-of-finance-and-economics-honours.html",
+    "sha256": "29b1bff21665fdea261dc7550e1f063eab6d17daa3b9f62f34b14925aa903a7f"
+  },
+  {
+    "id": "detail-tsu-b-014",
+    "url": "https://university.taylors.edu.my/en/study/explore-all-programmes/business/undergraduate/bachelor-of-actuarial-studies.html",
+    "role": "field-authority",
+    "sourceType": "official-page",
+    "fields": [
+      "identity",
+      "duration",
+      "intake",
+      "tuition",
+      "requirements",
+      "curriculum",
+      "careers"
+    ],
+    "retrievedAt": "2026-06-20T15:54:12+00:00",
+    "academicSession": "2026",
+    "status": "cached",
+    "localPath": "sources/raw/programme-details/tsu-b-014-bachelor-of-actuarial-studies-honours.html",
+    "sha256": "b5163069673b1fc9b2cb9c19c2c9f750374ecf88306584c2b10f350a61fe7f93"
+  },
+  {
+    "id": "detail-tsu-b-015",
+    "url": "https://university.taylors.edu.my/en/study/explore-all-programmes/business/undergraduate/bachelor-of-entrepreneurship-in-team-enterpreneurship.html",
+    "role": "field-authority",
+    "sourceType": "official-page",
+    "fields": [
+      "identity",
+      "duration",
+      "intake",
+      "tuition",
+      "requirements",
+      "curriculum",
+      "careers"
+    ],
+    "retrievedAt": "2026-06-20T15:54:12+00:00",
+    "academicSession": "2026",
+    "status": "cached",
+    "localPath": "sources/raw/programme-details/tsu-b-015-bachelor-of-entrepreneurship-honours-in-team-entrepreneurship.html",
+    "sha256": "ca496acdc6a19501024e6eabfdc5398552e14d595911d1869e012b023d9e8a51"
+  },
+  {
+    "id": "detail-tsu-b-016",
+    "url": "https://university.taylors.edu.my/en/study/explore-all-programmes/business/undergraduate/bachelor-of-accounting-fintech.html",
+    "role": "field-authority",
+    "sourceType": "official-page",
+    "fields": [
+      "identity",
+      "duration",
+      "intake",
+      "tuition",
+      "requirements",
+      "curriculum",
+      "careers"
+    ],
+    "retrievedAt": "2026-06-20T15:54:12+00:00",
+    "academicSession": "2026",
+    "status": "cached",
+    "localPath": "sources/raw/programme-details/tsu-b-016-bachelor-of-accounting-with-fintech-honours.html",
+    "sha256": "ed09a0e7a08112401105c8b0379b6dd230cffe04fe48a0cf10c9d9af2e396807"
+  },
+  {
+    "id": "detail-tsu-m-004",
+    "url": "https://university.taylors.edu.my/en/study/explore-all-programmes/business/master-coursework/master-of-business-administration.html",
+    "role": "field-authority",
+    "sourceType": "official-page",
+    "fields": [
+      "identity",
+      "duration",
+      "intake",
+      "tuition",
+      "requirements",
+      "curriculum",
+      "careers"
+    ],
+    "retrievedAt": "2026-06-20T15:54:12+00:00",
+    "academicSession": "2026",
+    "status": "cached",
+    "localPath": "sources/raw/programme-details/tsu-m-004-master-of-business-administration.html",
+    "sha256": "07e7e3e29971510ff9c0e6f0082c36914670f6989b23a9ce80dffa5b1d6f0de0"
+  },
+  {
+    "id": "detail-tsu-m-005",
+    "url": "https://university.taylors.edu.my/en/study/explore-all-programmes/business/master-coursework/master-of-management.html",
+    "role": "field-authority",
+    "sourceType": "official-page",
+    "fields": [
+      "identity",
+      "duration",
+      "intake",
+      "tuition",
+      "requirements",
+      "curriculum",
+      "careers"
+    ],
+    "retrievedAt": "2026-06-20T15:54:12+00:00",
+    "academicSession": "2026",
+    "status": "cached",
+    "localPath": "sources/raw/programme-details/tsu-m-005-master-of-management.html",
+    "sha256": "ee18badbbf1837ed702bc826bea46668e3a96d3387e17da8ba8be71a9f17e2e3"
+  },
+  {
+    "id": "detail-tsu-m-006",
+    "url": "https://university.taylors.edu.my/en/study/explore-all-programmes/business/master-online/master-of-business-administration-online.html",
+    "role": "field-authority",
+    "sourceType": "official-page",
+    "fields": [
+      "identity",
+      "duration",
+      "intake",
+      "tuition",
+      "requirements",
+      "curriculum",
+      "careers"
+    ],
+    "retrievedAt": "2026-06-20T15:54:12+00:00",
+    "academicSession": "2026",
+    "status": "cached",
+    "localPath": "sources/raw/programme-details/tsu-m-006-master-of-business-administration-100-online.html",
+    "sha256": "9f3655221498c308c27042b8ccfb5b8bb2b355ff241ec59ec3302159d35ca916"
+  },
+  {
+    "id": "detail-tsu-m-007",
+    "url": "https://university.taylors.edu.my/en/study/explore-all-programmes/business/master-online/master-of-management-online.html",
+    "role": "field-authority",
+    "sourceType": "official-page",
+    "fields": [
+      "identity",
+      "duration",
+      "intake",
+      "tuition",
+      "requirements",
+      "curriculum",
+      "careers"
+    ],
+    "retrievedAt": "2026-06-20T15:54:12+00:00",
+    "academicSession": "2026",
+    "status": "cached",
+    "localPath": "sources/raw/programme-details/tsu-m-007-master-of-management-100-online.html",
+    "sha256": "efa7f0ffa333f687fecf0e213a245a3a88437e96dfead9c0048704db7c7eeeac"
+  },
+  {
+    "id": "detail-tsu-d-003",
+    "url": "https://university.taylors.edu.my/en/study/explore-all-programmes/business/phd-coursework/doctor-of-business-administration.html",
+    "role": "field-authority",
+    "sourceType": "official-page",
+    "fields": [
+      "identity",
+      "duration",
+      "intake",
+      "tuition",
+      "requirements",
+      "curriculum",
+      "careers"
+    ],
+    "retrievedAt": "2026-06-20T15:54:12+00:00",
+    "academicSession": "2026",
+    "status": "cached",
+    "localPath": "sources/raw/programme-details/tsu-d-003-doctor-of-business-administration-programme-dba.html",
+    "sha256": "4b0ee164a12bc6db924f60744d5bca810999c5dd9eb61a0246be171119dea521"
+  },
+  {
+    "id": "detail-tsu-d-004",
+    "url": "https://university.taylors.edu.my/en/study/explore-all-programmes/business/phd-research/doctor-of-philosophy-in-business.html",
+    "role": "field-authority",
+    "sourceType": "official-page",
+    "fields": [
+      "identity",
+      "duration",
+      "intake",
+      "tuition",
+      "requirements",
+      "curriculum",
+      "careers"
+    ],
+    "retrievedAt": "2026-06-20T15:54:12+00:00",
+    "academicSession": "2026",
+    "status": "cached",
+    "localPath": "sources/raw/programme-details/tsu-d-004-doctor-of-philosophy-phd-in-business.html",
+    "sha256": "548b81e0a1daaf1f89b344de3bdb60df135abe4b1f5a97c2d17fde8250aa74d9"
+  },
+  {
+    "id": "detail-tsu-b-017",
+    "url": "https://university.taylors.edu.my/en/study/explore-all-programmes/taylors-culinary-institute/undergraduate/bachelor-of-patisserie-arts.html",
+    "role": "field-authority",
+    "sourceType": "official-page",
+    "fields": [
+      "identity",
+      "duration",
+      "intake",
+      "tuition",
+      "requirements",
+      "curriculum",
+      "careers"
+    ],
+    "retrievedAt": "2026-06-20T15:54:12+00:00",
+    "academicSession": "2026",
+    "status": "cached",
+    "localPath": "sources/raw/programme-details/tsu-b-017-bachelor-of-patisserie-arts-honours.html",
+    "sha256": "993ff228116f8a407edf392ea8b63c10bf4781b4477ec0b435c3f037fe7ae271"
+  },
+  {
+    "id": "detail-tsu-b-018",
+    "url": "https://university.taylors.edu.my/en/study/explore-all-programmes/taylors-culinary-institute/undergraduate/bachelor-of-science-culinology.html",
+    "role": "field-authority",
+    "sourceType": "official-page",
+    "fields": [
+      "identity",
+      "duration",
+      "intake",
+      "tuition",
+      "requirements",
+      "curriculum",
+      "careers"
+    ],
+    "retrievedAt": "2026-06-20T15:54:12+00:00",
+    "academicSession": "2026",
+    "status": "cached",
+    "localPath": "sources/raw/programme-details/tsu-b-018-bachelor-of-science-honours-in-culinology.html",
+    "sha256": "09a22429eb33e1ecaa551cc12f7aaca8a01e9c51fe7870fa2c79aff8572c900c"
+  },
+  {
+    "id": "detail-tsu-b-019",
+    "url": "https://university.taylors.edu.my/en/study/explore-all-programmes/taylors-culinary-institute/undergraduate/bachelor-of-culinary-management.html",
+    "role": "field-authority",
+    "sourceType": "official-page",
+    "fields": [
+      "identity",
+      "duration",
+      "intake",
+      "tuition",
+      "requirements",
+      "curriculum",
+      "careers"
+    ],
+    "retrievedAt": "2026-06-20T15:54:12+00:00",
+    "academicSession": "2026",
+    "status": "cached",
+    "localPath": "sources/raw/programme-details/tsu-b-019-bachelor-of-culinary-management-honours.html",
+    "sha256": "ad92a898fc2fdbeaf0eb75717bf06f49200ee4a90b92467846b8a1e28ba94d5a"
+  },
+  {
+    "id": "detail-tsu-m-008",
+    "url": "https://university.taylors.edu.my/en/study/explore-all-programmes/taylors-culinary-institute/master-coursework/master-of-food-studies-and-gastronomy.html",
+    "role": "field-authority",
+    "sourceType": "official-page",
+    "fields": [
+      "identity",
+      "duration",
+      "intake",
+      "tuition",
+      "requirements",
+      "curriculum",
+      "careers"
+    ],
+    "retrievedAt": "2026-06-20T15:54:12+00:00",
+    "academicSession": "2026",
+    "status": "cached",
+    "localPath": "sources/raw/programme-details/tsu-m-008-master-of-food-studies-and-gastronomy.html",
+    "sha256": "c7ccb957580a42f5e9ed844af1bfe6ef0205a323a23e4941b51977570ee65556"
+  },
+  {
+    "id": "detail-tsu-m-009",
+    "url": "https://university.taylors.edu.my/en/study/explore-all-programmes/taylors-culinary-institute/master-research/master-of-food-studies.html",
+    "role": "field-authority",
+    "sourceType": "official-page",
+    "fields": [
+      "identity",
+      "duration",
+      "intake",
+      "tuition",
+      "requirements",
+      "curriculum",
+      "careers"
+    ],
+    "retrievedAt": "2026-06-20T15:54:12+00:00",
+    "academicSession": "2026",
+    "status": "cached",
+    "localPath": "sources/raw/programme-details/tsu-m-009-master-of-food-studies.html",
+    "sha256": "3a90d3c4a6b5f9904ec284ed4554bb6d0d32ad8831761e9ef431f6019909e7ca"
+  },
+  {
+    "id": "detail-tsu-d-005",
+    "url": "https://university.taylors.edu.my/en/study/explore-all-programmes/taylors-culinary-institute/phd-research/doctor-of-philosophy-in-food-studies.html",
+    "role": "field-authority",
+    "sourceType": "official-page",
+    "fields": [
+      "identity",
+      "duration",
+      "intake",
+      "tuition",
+      "requirements",
+      "curriculum",
+      "careers"
+    ],
+    "retrievedAt": "2026-06-20T15:54:12+00:00",
+    "academicSession": "2026",
+    "status": "cached",
+    "localPath": "sources/raw/programme-details/tsu-d-005-doctor-of-philosophy-phd-in-food-studies.html",
+    "sha256": "386434fab4fdbb96c35432905de9ef7fc7e82c10450c5f49b00efb5d55aebe7b"
+  },
+  {
+    "id": "detail-tsu-b-020",
+    "url": "https://university.taylors.edu.my/en/study/explore-all-programmes/media-and-communication/undergraduate/bachelor-of-mass-communication-in-advertising-and-brand-management.html",
+    "role": "field-authority",
+    "sourceType": "official-page",
+    "fields": [
+      "identity",
+      "duration",
+      "intake",
+      "tuition",
+      "requirements",
+      "curriculum",
+      "careers"
+    ],
+    "retrievedAt": "2026-06-20T15:54:12+00:00",
+    "academicSession": "2026",
+    "status": "cached",
+    "localPath": "sources/raw/programme-details/tsu-b-020-bachelor-of-mass-communication-honours-in-advertising-and-brand-management.html",
+    "sha256": "720f0bcb1f18403a967db8358cd56a62cb41a04c119e5672938f324319a6100f"
+  },
+  {
+    "id": "detail-tsu-b-021",
+    "url": "https://university.taylors.edu.my/en/study/explore-all-programmes/media-and-communication/undergraduate/bachelor-of-mass-communication-digital-media-production.html",
+    "role": "field-authority",
+    "sourceType": "official-page",
+    "fields": [
+      "identity",
+      "duration",
+      "intake",
+      "tuition",
+      "requirements",
+      "curriculum",
+      "careers"
+    ],
+    "retrievedAt": "2026-06-20T15:54:12+00:00",
+    "academicSession": "2026",
+    "status": "cached",
+    "localPath": "sources/raw/programme-details/tsu-b-021-bachelor-of-mass-communication-honours-digital-media-production.html",
+    "sha256": "4777da40f4c991d83f74a51ddf328961f540423fea7053e4f6f729c53a94475d"
+  },
+  {
+    "id": "detail-tsu-b-022",
+    "url": "https://university.taylors.edu.my/en/study/explore-all-programmes/media-and-communication/undergraduate/bachelor-of-mass-communication.html",
+    "role": "field-authority",
+    "sourceType": "official-page",
+    "fields": [
+      "identity",
+      "duration",
+      "intake",
+      "tuition",
+      "requirements",
+      "curriculum",
+      "careers"
+    ],
+    "retrievedAt": "2026-06-20T15:54:12+00:00",
+    "academicSession": "2026",
+    "status": "cached",
+    "localPath": "sources/raw/programme-details/tsu-b-022-bachelor-of-mass-communication-honours.html",
+    "sha256": "0de85b1fa1a144d4a8aed4547ab52c78d0d207fc90d583e754d41a3bd25788de"
+  },
+  {
+    "id": "detail-tsu-b-023",
+    "url": "https://university.taylors.edu.my/en/study/explore-all-programmes/media-and-communication/undergraduate/bachelor-of-mass-communication-in-public-relations-and-event-management.html",
+    "role": "field-authority",
+    "sourceType": "official-page",
+    "fields": [
+      "identity",
+      "duration",
+      "intake",
+      "tuition",
+      "requirements",
+      "curriculum",
+      "careers"
+    ],
+    "retrievedAt": "2026-06-20T15:54:12+00:00",
+    "academicSession": "2026",
+    "status": "cached",
+    "localPath": "sources/raw/programme-details/tsu-b-023-bachelor-of-mass-communication-honours-in-public-relations-and-event-management.html",
+    "sha256": "e829a97ef5ccf0bc098bde4ec89f4204c05029b675f63b66f597bc5a523f5385"
+  },
+  {
+    "id": "detail-tsu-b-024",
+    "url": "https://university.taylors.edu.my/en/study/explore-all-programmes/media-and-communication/undergraduate/bachelor-of-mass-communication-in-public-relations-and-marketing.html",
+    "role": "field-authority",
+    "sourceType": "official-page",
+    "fields": [
+      "identity",
+      "duration",
+      "intake",
+      "tuition",
+      "requirements",
+      "curriculum",
+      "careers"
+    ],
+    "retrievedAt": "2026-06-20T15:54:12+00:00",
+    "academicSession": "2026",
+    "status": "cached",
+    "localPath": "sources/raw/programme-details/tsu-b-024-bachelor-of-mass-communication-honours-in-public-relations-and-marketing.html",
+    "sha256": "a67e8e7db8efa3e8f485d752499e580ef0987af03be632b1932af81410b05db2"
+  },
+  {
+    "id": "detail-tsu-m-010",
+    "url": "https://university.taylors.edu.my/en/study/explore-all-programmes/media-and-communication/master-coursework/master-of-communication.html",
+    "role": "field-authority",
+    "sourceType": "official-page",
+    "fields": [
+      "identity",
+      "duration",
+      "intake",
+      "tuition",
+      "requirements",
+      "curriculum",
+      "careers"
+    ],
+    "retrievedAt": "2026-06-20T15:54:12+00:00",
+    "academicSession": "2026",
+    "status": "cached",
+    "localPath": "sources/raw/programme-details/tsu-m-010-master-of-communication.html",
+    "sha256": "9a91bdf1c5e97e5ceff6a7ff6b88c19f69b40857c11f19f856944e5e492efd04"
+  },
+  {
+    "id": "detail-tsu-d-006",
+    "url": "https://university.taylors.edu.my/en/study/explore-all-programmes/media-and-communication/phd-research/doctor-of-philosophy-in-media-and-communication-studies.html",
+    "role": "field-authority",
+    "sourceType": "official-page",
+    "fields": [
+      "identity",
+      "duration",
+      "intake",
+      "tuition",
+      "requirements",
+      "curriculum",
+      "careers"
+    ],
+    "retrievedAt": "2026-06-20T15:54:12+00:00",
+    "academicSession": "2026",
+    "status": "cached",
+    "localPath": "sources/raw/programme-details/tsu-d-006-doctor-of-philosophy-phd-in-media-and-communication-studies.html",
+    "sha256": "cb37c42aa9ec8b1eceb7fc87e7a1ce13d058317fef24e85e9f336f161de03abb"
+  },
+  {
+    "id": "detail-tsu-b-025",
+    "url": "https://university.taylors.edu.my/en/study/explore-all-programmes/computer-science/undergraduate/bachelor-of-computer-science.html",
+    "role": "field-authority",
+    "sourceType": "official-page",
+    "fields": [
+      "identity",
+      "duration",
+      "intake",
+      "tuition",
+      "requirements",
+      "curriculum",
+      "careers"
+    ],
+    "retrievedAt": "2026-06-20T15:54:12+00:00",
+    "academicSession": "2026",
+    "status": "cached",
+    "localPath": "sources/raw/programme-details/tsu-b-025-bachelor-of-computer-science-honours.html",
+    "sha256": "6215c076015a591a547ea97536c4fa431e1b3f0a24f2297893909caf7180d9dc"
+  },
+  {
+    "id": "detail-tsu-b-026",
+    "url": "https://university.taylors.edu.my/en/study/explore-all-programmes/computer-science/undergraduate/bachelor-of-software-engineering.html",
+    "role": "field-authority",
+    "sourceType": "official-page",
+    "fields": [
+      "identity",
+      "duration",
+      "intake",
+      "tuition",
+      "requirements",
+      "curriculum",
+      "careers"
+    ],
+    "retrievedAt": "2026-06-20T15:54:12+00:00",
+    "academicSession": "2026",
+    "status": "cached",
+    "localPath": "sources/raw/programme-details/tsu-b-026-bachelor-of-software-engineering-honours.html",
+    "sha256": "94b12fbc158f9aeb19ab450f2a7fad1858cd2ce44594799827b67d0e12666803"
+  },
+  {
+    "id": "detail-tsu-b-027",
+    "url": "https://university.taylors.edu.my/en/study/explore-all-programmes/computer-science/undergraduate/bachelor-of-information-technology.html",
+    "role": "field-authority",
+    "sourceType": "official-page",
+    "fields": [
+      "identity",
+      "duration",
+      "intake",
+      "tuition",
+      "requirements",
+      "curriculum",
+      "careers"
+    ],
+    "retrievedAt": "2026-06-20T15:54:12+00:00",
+    "academicSession": "2026",
+    "status": "cached",
+    "localPath": "sources/raw/programme-details/tsu-b-027-bachelor-of-information-technology-honours.html",
+    "sha256": "1cd91d9ddc48717cb59dd17b17fe1a2ac85335593b987bb25a839be24b50fa89"
+  },
+  {
+    "id": "detail-tsu-m-011",
+    "url": "https://university.taylors.edu.my/en/study/explore-all-programmes/computer-science/master-coursework/master-in-applied-computing.html",
+    "role": "field-authority",
+    "sourceType": "official-page",
+    "fields": [
+      "identity",
+      "duration",
+      "intake",
+      "tuition",
+      "requirements",
+      "curriculum",
+      "careers"
+    ],
+    "retrievedAt": "2026-06-20T15:54:12+00:00",
+    "academicSession": "2026",
+    "status": "cached",
+    "localPath": "sources/raw/programme-details/tsu-m-011-master-in-applied-computing-coursework.html",
+    "sha256": "8734bb30d0b70376c25092d193cd69ad0937f8ad7472bddecc1c0f59d6963b3c"
+  },
+  {
+    "id": "detail-tsu-m-012",
+    "url": "https://university.taylors.edu.my/en/study/explore-all-programmes/computer-science/master-research/master-of-computer-science.html",
+    "role": "field-authority",
+    "sourceType": "official-page",
+    "fields": [
+      "identity",
+      "duration",
+      "intake",
+      "tuition",
+      "requirements",
+      "curriculum",
+      "careers"
+    ],
+    "retrievedAt": "2026-06-20T15:54:12+00:00",
+    "academicSession": "2026",
+    "status": "cached",
+    "localPath": "sources/raw/programme-details/tsu-m-012-master-of-computer-science.html",
+    "sha256": "2e43720e5648606ae993cc4e766dbcc0da6b67837211c3bc99f99603c78631ee"
+  },
+  {
+    "id": "detail-tsu-m-013",
+    "url": "https://university.taylors.edu.my/en/study/explore-all-programmes/computer-science/master-online/master-in-applied-computing-online.html",
+    "role": "field-authority",
+    "sourceType": "official-page",
+    "fields": [
+      "identity",
+      "duration",
+      "intake",
+      "tuition",
+      "requirements",
+      "curriculum",
+      "careers"
+    ],
+    "retrievedAt": "2026-06-20T15:54:12+00:00",
+    "academicSession": "2026",
+    "status": "cached",
+    "localPath": "sources/raw/programme-details/tsu-m-013-master-in-applied-computing-100-online.html",
+    "sha256": "845e81e025a2fcb5637fa9040591c11940626beaf91b33549413997ca6dae0de"
+  },
+  {
+    "id": "detail-tsu-d-007",
+    "url": "https://university.taylors.edu.my/en/study/explore-all-programmes/computer-science/phd-research/doctor-of-philosophy-in-computer-science.html",
+    "role": "field-authority",
+    "sourceType": "official-page",
+    "fields": [
+      "identity",
+      "duration",
+      "intake",
+      "tuition",
+      "requirements",
+      "curriculum",
+      "careers"
+    ],
+    "retrievedAt": "2026-06-20T15:54:12+00:00",
+    "academicSession": "2026",
+    "status": "cached",
+    "localPath": "sources/raw/programme-details/tsu-d-007-doctor-of-philosophy-phd-in-computer-science.html",
+    "sha256": "fbf1c07d303071447ce5f696b2d620d9b3cf679c8f5b32ba2ac3e54306528242"
+  },
+  {
+    "id": "detail-tsu-b-028",
+    "url": "https://university.taylors.edu.my/en/study/explore-all-programmes/design/undergraduate/bachelor-of-interactive-spatial-design.html",
+    "role": "field-authority",
+    "sourceType": "official-page",
+    "fields": [
+      "identity",
+      "duration",
+      "intake",
+      "tuition",
+      "requirements",
+      "curriculum",
+      "careers"
+    ],
+    "retrievedAt": "2026-06-20T15:54:12+00:00",
+    "academicSession": "2026",
+    "status": "cached",
+    "localPath": "sources/raw/programme-details/tsu-b-028-bachelor-of-interactive-spatial-design-honours.html",
+    "sha256": "672c8aeb416e2d4f60e615249367903606c929cf7a26407c60b7820b27c458f6"
+  },
+  {
+    "id": "detail-tsu-b-029",
+    "url": "https://university.taylors.edu.my/en/study/explore-all-programmes/design/undergraduate/bachelor-of-fashion-design-technology.html",
+    "role": "field-authority",
+    "sourceType": "official-page",
+    "fields": [
+      "identity",
+      "duration",
+      "intake",
+      "tuition",
+      "requirements",
+      "curriculum",
+      "careers"
+    ],
+    "retrievedAt": "2026-06-20T15:54:12+00:00",
+    "academicSession": "2026",
+    "status": "cached",
+    "localPath": "sources/raw/programme-details/tsu-b-029-bachelor-of-fashion-design-technology-honours.html",
+    "sha256": "8b0fb3e0722acf141d51924cc6c0232d5d23704e9fcef26bec6b5a10264fae77"
+  },
+  {
+    "id": "detail-tsu-b-030",
+    "url": "https://university.taylors.edu.my/en/study/explore-all-programmes/design/undergraduate/bachelor-of-design-in-creative-media.html",
+    "role": "field-authority",
+    "sourceType": "official-page",
+    "fields": [
+      "identity",
+      "duration",
+      "intake",
+      "tuition",
+      "requirements",
+      "curriculum",
+      "careers"
+    ],
+    "retrievedAt": "2026-06-20T15:54:12+00:00",
+    "academicSession": "2026",
+    "status": "cached",
+    "localPath": "sources/raw/programme-details/tsu-b-030-bachelor-of-design-honours-in-creative-media.html",
+    "sha256": "05c32865201d871a09de522837918bb158fb5ff008d87db37870853e48135324"
+  },
+  {
+    "id": "detail-tsu-m-014",
+    "url": "https://university.taylors.edu.my/en/study/explore-all-programmes/design/master-research/master-of-design.html",
+    "role": "field-authority",
+    "sourceType": "official-page",
+    "fields": [
+      "identity",
+      "duration",
+      "intake",
+      "tuition",
+      "requirements",
+      "curriculum",
+      "careers"
+    ],
+    "retrievedAt": "2026-06-20T15:54:12+00:00",
+    "academicSession": "2026",
+    "status": "cached",
+    "localPath": "sources/raw/programme-details/tsu-m-014-master-of-design.html",
+    "sha256": "4735bd172bbbc72816803a1d80bb666853366aad2da8b24a8e6720138e137f68"
+  },
+  {
+    "id": "detail-tsu-d-008",
+    "url": "https://university.taylors.edu.my/en/study/explore-all-programmes/design/phd-research/doctor-of-philosophy-in-design-management.html",
+    "role": "field-authority",
+    "sourceType": "official-page",
+    "fields": [
+      "identity",
+      "duration",
+      "intake",
+      "tuition",
+      "requirements",
+      "curriculum",
+      "careers"
+    ],
+    "retrievedAt": "2026-06-20T15:54:12+00:00",
+    "academicSession": "2026",
+    "status": "cached",
+    "localPath": "sources/raw/programme-details/tsu-d-008-doctor-of-philosophy-in-design-management.html",
+    "sha256": "995e20043bbf74f3f75caaa0a211932308edd3a859ec90b5beaf60e09d747261"
+  },
+  {
+    "id": "detail-tsu-b-031",
+    "url": "https://university.taylors.edu.my/en/study/explore-all-programmes/education/undergraduate/bachelor-of-education.html",
+    "role": "field-authority",
+    "sourceType": "official-page",
+    "fields": [
+      "identity",
+      "duration",
+      "intake",
+      "tuition",
+      "requirements",
+      "curriculum",
+      "careers"
+    ],
+    "retrievedAt": "2026-06-20T15:54:12+00:00",
+    "academicSession": "2026",
+    "status": "cached",
+    "localPath": "sources/raw/programme-details/tsu-b-031-bachelor-of-education-honours.html",
+    "sha256": "843e669b97efcef69554e85dacbbf6514033a13263ba193550e9d385c48a7914"
+  },
+  {
+    "id": "detail-tsu-m-015",
+    "url": "https://university.taylors.edu.my/en/study/explore-all-programmes/education/master-coursework/master-of-teaching-and-learning.html",
+    "role": "field-authority",
+    "sourceType": "official-page",
+    "fields": [
+      "identity",
+      "duration",
+      "intake",
+      "tuition",
+      "requirements",
+      "curriculum",
+      "careers"
+    ],
+    "retrievedAt": "2026-06-20T15:54:12+00:00",
+    "academicSession": "2026",
+    "status": "cached",
+    "localPath": "sources/raw/programme-details/tsu-m-015-master-of-teaching-and-learning.html",
+    "sha256": "0c1e5d169d7ded27cced05862d12a332f70348bd82f36f05b6bea279f7df4665"
+  },
+  {
+    "id": "detail-tsu-m-016",
+    "url": "https://university.taylors.edu.my/en/study/explore-all-programmes/education/master-research/master-of-education.html",
+    "role": "field-authority",
+    "sourceType": "official-page",
+    "fields": [
+      "identity",
+      "duration",
+      "intake",
+      "tuition",
+      "requirements",
+      "curriculum",
+      "careers"
+    ],
+    "retrievedAt": "2026-06-20T15:54:12+00:00",
+    "academicSession": "2026",
+    "status": "cached",
+    "localPath": "sources/raw/programme-details/tsu-m-016-master-of-education.html",
+    "sha256": "3ffb53b79b67f0b2d7fb8daab108d9d8c7a58414d8c546280d118e64b384bd4d"
+  },
+  {
+    "id": "detail-tsu-m-017",
+    "url": "https://university.taylors.edu.my/en/study/explore-all-programmes/education/master-online/master-of-teaching-and-learning-online.html",
+    "role": "field-authority",
+    "sourceType": "official-page",
+    "fields": [
+      "identity",
+      "duration",
+      "intake",
+      "tuition",
+      "requirements",
+      "curriculum",
+      "careers"
+    ],
+    "retrievedAt": "2026-06-20T15:54:12+00:00",
+    "academicSession": "2026",
+    "status": "cached",
+    "localPath": "sources/raw/programme-details/tsu-m-017-master-of-teaching-and-learning-100-online.html",
+    "sha256": "2d0df8d4529a866be0295fe40c44d2b44b9dcef346f9f8c36de44af4d471c153"
+  },
+  {
+    "id": "detail-tsu-d-009",
+    "url": "https://university.taylors.edu.my/en/study/explore-all-programmes/education/phd-research/doctor-of-philosophy-in-education.html",
+    "role": "field-authority",
+    "sourceType": "official-page",
+    "fields": [
+      "identity",
+      "duration",
+      "intake",
+      "tuition",
+      "requirements",
+      "curriculum",
+      "careers"
+    ],
+    "retrievedAt": "2026-06-20T15:54:12+00:00",
+    "academicSession": "2026",
+    "status": "cached",
+    "localPath": "sources/raw/programme-details/tsu-d-009-doctor-of-philosophy-in-education.html",
+    "sha256": "f0db8a1d0693975f5dee98a4e4ae2f31f2ed34d6b9a4ff520a1a37f6bd64a1ea"
+  },
+  {
+    "id": "detail-tsu-b-032",
+    "url": "https://university.taylors.edu.my/en/study/explore-all-programmes/engineering/undergraduate/bachelor-of-chemical-engineering.html",
+    "role": "field-authority",
+    "sourceType": "official-page",
+    "fields": [
+      "identity",
+      "duration",
+      "intake",
+      "tuition",
+      "requirements",
+      "curriculum",
+      "careers"
+    ],
+    "retrievedAt": "2026-06-20T15:54:12+00:00",
+    "academicSession": "2026",
+    "status": "cached",
+    "localPath": "sources/raw/programme-details/tsu-b-032-bachelor-of-chemical-engineering-honours.html",
+    "sha256": "cecce75747d52ef1954b746093ad441615d6b5481f7d3bdb32db6ea000a6a582"
+  },
+  {
+    "id": "detail-tsu-b-033",
+    "url": "https://university.taylors.edu.my/en/study/explore-all-programmes/engineering/undergraduate/bachelor-of-electrical-and-electronic-engineering.html",
+    "role": "field-authority",
+    "sourceType": "official-page",
+    "fields": [
+      "identity",
+      "duration",
+      "intake",
+      "tuition",
+      "requirements",
+      "curriculum",
+      "careers"
+    ],
+    "retrievedAt": "2026-06-20T15:54:12+00:00",
+    "academicSession": "2026",
+    "status": "cached",
+    "localPath": "sources/raw/programme-details/tsu-b-033-bachelor-of-electrical-and-electronic-engineering-honours.html",
+    "sha256": "3fe7293b829b69f8129bb9d3e5a0cd3e1a7fe09dfb8c2d86bba38ed4198dccda"
+  },
+  {
+    "id": "detail-tsu-b-034",
+    "url": "https://university.taylors.edu.my/en/study/explore-all-programmes/engineering/undergraduate/bachelor-of-mechanical-engineering.html",
+    "role": "field-authority",
+    "sourceType": "official-page",
+    "fields": [
+      "identity",
+      "duration",
+      "intake",
+      "tuition",
+      "requirements",
+      "curriculum",
+      "careers"
+    ],
+    "retrievedAt": "2026-06-20T15:54:12+00:00",
+    "academicSession": "2026",
+    "status": "cached",
+    "localPath": "sources/raw/programme-details/tsu-b-034-bachelor-of-mechanical-engineering-honours.html",
+    "sha256": "7bc79bb9be6eb465c1b520c16a32085242ab484ebd4c26a88cfd195b729f742c"
+  },
+  {
+    "id": "detail-tsu-b-035",
+    "url": "https://university.taylors.edu.my/en/study/explore-all-programmes/engineering/undergraduate/bachelor-of-mechatronics-engineering.html",
+    "role": "field-authority",
+    "sourceType": "official-page",
+    "fields": [
+      "identity",
+      "duration",
+      "intake",
+      "tuition",
+      "requirements",
+      "curriculum",
+      "careers"
+    ],
+    "retrievedAt": "2026-06-20T15:54:12+00:00",
+    "academicSession": "2026",
+    "status": "cached",
+    "localPath": "sources/raw/programme-details/tsu-b-035-bachelor-of-mechatronics-engineering-with-honours.html",
+    "sha256": "277af0ca27755d8e6a848c08b589fe7bab498ff3d60aab31c97c2bf8fdf9f9f5"
+  },
+  {
+    "id": "detail-tsu-m-018",
+    "url": "https://university.taylors.edu.my/en/study/explore-all-programmes/engineering/master-research/master-of-science-in-engineering.html",
+    "role": "field-authority",
+    "sourceType": "official-page",
+    "fields": [
+      "identity",
+      "duration",
+      "intake",
+      "tuition",
+      "requirements",
+      "curriculum",
+      "careers"
+    ],
+    "retrievedAt": "2026-06-20T15:54:12+00:00",
+    "academicSession": "2026",
+    "status": "cached",
+    "localPath": "sources/raw/programme-details/tsu-m-018-master-of-science-in-engineering.html",
+    "sha256": "f01a837215992c8ad32f553c16df6c39045c92a83559fcab18def1f05739f05c"
+  },
+  {
+    "id": "detail-tsu-d-010",
+    "url": "https://university.taylors.edu.my/en/study/explore-all-programmes/engineering/phd-research/doctor-of-philosophy-in-engineering.html",
+    "role": "field-authority",
+    "sourceType": "official-page",
+    "fields": [
+      "identity",
+      "duration",
+      "intake",
+      "tuition",
+      "requirements",
+      "curriculum",
+      "careers"
+    ],
+    "retrievedAt": "2026-06-20T15:54:12+00:00",
+    "academicSession": "2026",
+    "status": "cached",
+    "localPath": "sources/raw/programme-details/tsu-d-010-doctor-of-philosophy-in-engineering.html",
+    "sha256": "c0e690deb8a6e50f71e3fc014fae2dada4e15eee603a68208f95073ebc07e1d9"
+  },
+  {
+    "id": "detail-tsu-b-036",
+    "url": "https://university.taylors.edu.my/en/study/explore-all-programmes/hospitality-tourism-and-events/undergraduate/bachelor-of-international-hospitality-management.html",
+    "role": "field-authority",
+    "sourceType": "official-page",
+    "fields": [
+      "identity",
+      "duration",
+      "intake",
+      "tuition",
+      "requirements",
+      "curriculum",
+      "careers"
+    ],
+    "retrievedAt": "2026-06-20T15:54:12+00:00",
+    "academicSession": "2026",
+    "status": "cached",
+    "localPath": "sources/raw/programme-details/tsu-b-036-bachelor-of-international-hospitality-management-honours.html",
+    "sha256": "835c9ad2562e1b636e6e97aaa0d0372c0c7a795cf74ac691b6be4601d71fd9da"
+  },
+  {
+    "id": "detail-tsu-b-037",
+    "url": "https://university.taylors.edu.my/en/study/explore-all-programmes/hospitality-tourism-and-events/undergraduate/bachelor-of-international-events-management.html",
+    "role": "field-authority",
+    "sourceType": "official-page",
+    "fields": [
+      "identity",
+      "duration",
+      "intake",
+      "tuition",
+      "requirements",
+      "curriculum",
+      "careers"
+    ],
+    "retrievedAt": "2026-06-20T15:54:12+00:00",
+    "academicSession": "2026",
+    "status": "cached",
+    "localPath": "sources/raw/programme-details/tsu-b-037-bachelor-of-international-events-management-honours.html",
+    "sha256": "84e37155886344582ccdaf3c37e9484a8aa4430e4a7ce05adc63ed2cf49b10f9"
+  },
+  {
+    "id": "detail-tsu-b-038",
+    "url": "https://university.taylors.edu.my/en/study/explore-all-programmes/hospitality-tourism-and-events/undergraduate/bachelor-of-international-tourism-management.html",
+    "role": "field-authority",
+    "sourceType": "official-page",
+    "fields": [
+      "identity",
+      "duration",
+      "intake",
+      "tuition",
+      "requirements",
+      "curriculum",
+      "careers"
+    ],
+    "retrievedAt": "2026-06-20T15:54:12+00:00",
+    "academicSession": "2026",
+    "status": "cached",
+    "localPath": "sources/raw/programme-details/tsu-b-038-bachelor-of-international-tourism-management-honours.html",
+    "sha256": "02eab689c19bc43fd50a862c7e868db69d3d745c38433a269abebcc35f4a84ee"
+  },
+  {
+    "id": "detail-tsu-m-019",
+    "url": "https://university.taylors.edu.my/en/study/explore-all-programmes/hospitality-tourism-and-events/master-online/master-of-global-hospitality-management.html",
+    "role": "field-authority",
+    "sourceType": "official-page",
+    "fields": [
+      "identity",
+      "duration",
+      "intake",
+      "tuition",
+      "requirements",
+      "curriculum",
+      "careers"
+    ],
+    "retrievedAt": "2026-06-20T15:54:12+00:00",
+    "academicSession": "2026",
+    "status": "cached",
+    "localPath": "sources/raw/programme-details/tsu-m-019-master-of-global-hospitality-management-100-online.html",
+    "sha256": "47dbddff77662503cd6683eae345aa40cc836a3028b693482988a7205526a332"
+  },
+  {
+    "id": "detail-tsu-m-020",
+    "url": "https://university.taylors.edu.my/en/study/explore-all-programmes/hospitality-tourism-and-events/master-coursework/master-of-international-hospitality-management.html",
+    "role": "field-authority",
+    "sourceType": "official-page",
+    "fields": [
+      "identity",
+      "duration",
+      "intake",
+      "tuition",
+      "requirements",
+      "curriculum",
+      "careers"
+    ],
+    "retrievedAt": "2026-06-20T15:54:12+00:00",
+    "academicSession": "2026",
+    "status": "cached",
+    "localPath": "sources/raw/programme-details/tsu-m-020-master-of-international-hospitality-management.html",
+    "sha256": "21c1a71ba571964dfee1d957f1be466255524de9d6abfc2245d849132e7a7373"
+  },
+  {
+    "id": "detail-tsu-m-021",
+    "url": "https://university.taylors.edu.my/en/study/explore-all-programmes/hospitality-tourism-and-events/master-research/master-of-science-in-tourism.html",
+    "role": "field-authority",
+    "sourceType": "official-page",
+    "fields": [
+      "identity",
+      "duration",
+      "intake",
+      "tuition",
+      "requirements",
+      "curriculum",
+      "careers"
+    ],
+    "retrievedAt": "2026-06-20T15:54:12+00:00",
+    "academicSession": "2026",
+    "status": "cached",
+    "localPath": "sources/raw/programme-details/tsu-m-021-master-of-science-in-tourism.html",
+    "sha256": "5cf2f84308176e01ccba7cd96d1b289b199b1f4ad4d312218bfe9f73e55613f4"
+  },
+  {
+    "id": "detail-tsu-d-011",
+    "url": "https://university.taylors.edu.my/en/study/explore-all-programmes/hospitality-tourism-and-events/phd-research/doctor-of-philosophy-in-hospitality-tourism.html",
+    "role": "field-authority",
+    "sourceType": "official-page",
+    "fields": [
+      "identity",
+      "duration",
+      "intake",
+      "tuition",
+      "requirements",
+      "curriculum",
+      "careers"
+    ],
+    "retrievedAt": "2026-06-20T15:54:12+00:00",
+    "academicSession": "2026",
+    "status": "cached",
+    "localPath": "sources/raw/programme-details/tsu-d-011-doctor-of-philosophy-in-hospitality-tourism.html",
+    "sha256": "7b0829f6c197880760e22e4eff42f26414235356150e34104a3dcf1953a56937"
+  },
+  {
+    "id": "detail-tsu-b-039",
+    "url": "https://university.taylors.edu.my/en/study/explore-all-programmes/law-and-governance/undergraduate/bachelor-of-laws.html",
+    "role": "field-authority",
+    "sourceType": "official-page",
+    "fields": [
+      "identity",
+      "duration",
+      "intake",
+      "tuition",
+      "requirements",
+      "curriculum",
+      "careers"
+    ],
+    "retrievedAt": "2026-06-20T15:54:12+00:00",
+    "academicSession": "2026",
+    "status": "cached",
+    "localPath": "sources/raw/programme-details/tsu-b-039-bachelor-of-laws-honours.html",
+    "sha256": "56684ecf7e1c06acada17f89c2e5be6d80097029d6b71c846c31572641bdae1b"
+  },
+  {
+    "id": "detail-tsu-b-040",
+    "url": "https://university.taylors.edu.my/en/study/explore-all-programmes/law-and-governance/undergraduate/bachelor-in-philosophy-politics-and-economics.html",
+    "role": "field-authority",
+    "sourceType": "official-page",
+    "fields": [
+      "identity",
+      "duration",
+      "intake",
+      "tuition",
+      "requirements",
+      "curriculum",
+      "careers"
+    ],
+    "retrievedAt": "2026-06-20T15:54:12+00:00",
+    "academicSession": "2026",
+    "status": "cached",
+    "localPath": "sources/raw/programme-details/tsu-b-040-bachelor-in-philosophy-politics-and-economics-honours.html",
+    "sha256": "b53100132b3e02b3f4ad40f1fcfbdfbd160670d171ab59d086cf5338400c49e0"
+  },
+  {
+    "id": "detail-tsu-m-022",
+    "url": "https://university.taylors.edu.my/en/study/explore-all-programmes/law-and-governance/master-coursework/master-of-laws-in-healthcare-and-medical-law.html",
+    "role": "field-authority",
+    "sourceType": "official-page",
+    "fields": [
+      "identity",
+      "duration",
+      "intake",
+      "tuition",
+      "requirements",
+      "curriculum",
+      "careers"
+    ],
+    "retrievedAt": "2026-06-20T15:54:12+00:00",
+    "academicSession": "2026",
+    "status": "cached",
+    "localPath": "sources/raw/programme-details/tsu-m-022-master-of-laws-in-healthcare-and-medical-law.html",
+    "sha256": "91a7d542290755fd3dec50394e23117dd5d13d9fabc07b815d71f3e5c57ecc8d"
+  },
+  {
+    "id": "detail-tsu-m-023",
+    "url": "https://university.taylors.edu.my/en/study/explore-all-programmes/law-and-governance/master-coursework/master-of-laws.html",
+    "role": "field-authority",
+    "sourceType": "official-page",
+    "fields": [
+      "identity",
+      "duration",
+      "intake",
+      "tuition",
+      "requirements",
+      "curriculum",
+      "careers"
+    ],
+    "retrievedAt": "2026-06-20T15:54:12+00:00",
+    "academicSession": "2026",
+    "status": "cached",
+    "localPath": "sources/raw/programme-details/tsu-m-023-master-of-laws.html",
+    "sha256": "76ff69995ec4d2ea6d3ff9cc2aa2c68b8054811ba50817c8173732e2b621cee5"
+  },
+  {
+    "id": "detail-tsu-d-012",
+    "url": "https://university.taylors.edu.my/en/study/explore-all-programmes/law-and-governance/phd-research/doctor-of-philosophy-in-law.html",
+    "role": "field-authority",
+    "sourceType": "official-page",
+    "fields": [
+      "identity",
+      "duration",
+      "intake",
+      "tuition",
+      "requirements",
+      "curriculum",
+      "careers"
+    ],
+    "retrievedAt": "2026-06-20T15:54:12+00:00",
+    "academicSession": "2026",
+    "status": "cached",
+    "localPath": "sources/raw/programme-details/tsu-d-012-doctor-of-philosophy-in-law.html",
+    "sha256": "0fb82d8c3a0f89fe6f09c96247004e529a21bd8b46be8b64f62ecf7c4a16b4ec"
+  },
+  {
+    "id": "detail-tsu-b-041",
+    "url": "https://university.taylors.edu.my/en/study/explore-all-programmes/liberal-arts-and-sciences/undergraduate/bachelor-of-performing-arts.html",
+    "role": "field-authority",
+    "sourceType": "official-page",
+    "fields": [
+      "identity",
+      "duration",
+      "intake",
+      "tuition",
+      "requirements",
+      "curriculum",
+      "careers"
+    ],
+    "retrievedAt": "2026-06-20T15:54:12+00:00",
+    "academicSession": "2026",
+    "status": "cached",
+    "localPath": "sources/raw/programme-details/tsu-b-041-bachelor-of-performing-arts-honours.html",
+    "sha256": "a1bf1fe841747d27830e2801ada4aa2d3637e317b3f00d1276473d854278c9f4"
+  },
+  {
+    "id": "detail-tsu-b-042",
+    "url": "https://university.taylors.edu.my/en/study/explore-all-programmes/liberal-arts-and-sciences/undergraduate/bachelor-of-psychology.html",
+    "role": "field-authority",
+    "sourceType": "official-page",
+    "fields": [
+      "identity",
+      "duration",
+      "intake",
+      "tuition",
+      "requirements",
+      "curriculum",
+      "careers"
+    ],
+    "retrievedAt": "2026-06-20T15:54:12+00:00",
+    "academicSession": "2026",
+    "status": "cached",
+    "localPath": "sources/raw/programme-details/tsu-b-042-bachelor-of-psychology-honours.html",
+    "sha256": "b1ae800a6e704c9dacaec33baddc4a5cfc6d62a069c93f40da1085f5814da68e"
+  },
+  {
+    "id": "detail-tsu-b-043",
+    "url": "https://university.taylors.edu.my/en/study/explore-all-programmes/liberal-arts-and-sciences/undergraduate/bachelor-of-social-science-in-international-relations.html",
+    "role": "field-authority",
+    "sourceType": "official-page",
+    "fields": [
+      "identity",
+      "duration",
+      "intake",
+      "tuition",
+      "requirements",
+      "curriculum",
+      "careers"
+    ],
+    "retrievedAt": "2026-06-20T15:54:12+00:00",
+    "academicSession": "2026",
+    "status": "cached",
+    "localPath": "sources/raw/programme-details/tsu-b-043-bachelor-of-social-science-honours-in-international-relations.html",
+    "sha256": "06e66e2f67109f80338844367595447e8f1d560acd6753eb20085712b5833917"
+  },
+  {
+    "id": "detail-tsu-m-024",
+    "url": "https://university.taylors.edu.my/en/study/explore-all-programmes/liberal-arts-and-sciences/master-coursework/master-of-counselling.html",
+    "role": "field-authority",
+    "sourceType": "official-page",
+    "fields": [
+      "identity",
+      "duration",
+      "intake",
+      "tuition",
+      "requirements",
+      "curriculum",
+      "careers"
+    ],
+    "retrievedAt": "2026-06-20T15:54:12+00:00",
+    "academicSession": "2026",
+    "status": "cached",
+    "localPath": "sources/raw/programme-details/tsu-m-024-master-of-counselling.html",
+    "sha256": "73da1e8ec96f4fa08fe75b669b2fd4f9dfc96900655162379fc3ad4c393cb993"
+  },
+  {
+    "id": "detail-tsu-m-025",
+    "url": "https://university.taylors.edu.my/en/study/explore-all-programmes/liberal-arts-and-sciences/master-coursework/master-of-clinical-psychology.html",
+    "role": "field-authority",
+    "sourceType": "official-page",
+    "fields": [
+      "identity",
+      "duration",
+      "intake",
+      "tuition",
+      "requirements",
+      "curriculum",
+      "careers"
+    ],
+    "retrievedAt": "2026-06-20T15:54:12+00:00",
+    "academicSession": "2026",
+    "status": "cached",
+    "localPath": "sources/raw/programme-details/tsu-m-025-master-of-clinical-psychology.html",
+    "sha256": "de2728f51b93831ad2471af331081086f0f0d5662cd7c3ce219b43839e2ff4ad"
+  },
+  {
+    "id": "detail-tsu-d-013",
+    "url": "https://university.taylors.edu.my/en/study/explore-all-programmes/liberal-arts-and-sciences/phd-research/doctor-of-philosophy-in-social-sciences.html",
+    "role": "field-authority",
+    "sourceType": "official-page",
+    "fields": [
+      "identity",
+      "duration",
+      "intake",
+      "tuition",
+      "requirements",
+      "curriculum",
+      "careers"
+    ],
+    "retrievedAt": "2026-06-20T15:54:12+00:00",
+    "academicSession": "2026",
+    "status": "cached",
+    "localPath": "sources/raw/programme-details/tsu-d-013-doctor-of-philosophy-in-social-sciences.html",
+    "sha256": "d1bef9c556a0b624badde78e1957f1db1a03956539fee7668e9bf024b8edc294"
+  },
+  {
+    "id": "detail-tsu-b-044",
+    "url": "https://university.taylors.edu.my/en/study/explore-all-programmes/pharmacy/undergraduate/bachelor-of-pharmacy.html",
+    "role": "field-authority",
+    "sourceType": "official-page",
+    "fields": [
+      "identity",
+      "duration",
+      "intake",
+      "tuition",
+      "requirements",
+      "curriculum",
+      "careers"
+    ],
+    "retrievedAt": "2026-06-20T15:54:12+00:00",
+    "academicSession": "2026",
+    "status": "cached",
+    "localPath": "sources/raw/programme-details/tsu-b-044-bachelor-of-pharmacy-with-honours.html",
+    "sha256": "fd6c5f9e851a67a9a8001d7600e2b4c805f1704cf2cfec8e6b800b5824d3fc4e"
+  },
+  {
+    "id": "detail-tsu-b-045",
+    "url": "https://university.taylors.edu.my/en/study/explore-all-programmes/pharmacy/undergraduate/bachelor-of-pharmaceutical-science.html",
+    "role": "field-authority",
+    "sourceType": "official-page",
+    "fields": [
+      "identity",
+      "duration",
+      "intake",
+      "tuition",
+      "requirements",
+      "curriculum",
+      "careers"
+    ],
+    "retrievedAt": "2026-06-20T15:54:12+00:00",
+    "academicSession": "2026",
+    "status": "cached",
+    "localPath": "sources/raw/programme-details/tsu-b-045-bachelor-of-pharmaceutical-science-honours.html",
+    "sha256": "f4622a48e3f67a705a48fb2500b4f7b5f9fe208327c0fdc2b34014ff19a8c51e"
+  },
+  {
+    "id": "detail-tsu-m-026",
+    "url": "https://university.taylors.edu.my/en/study/explore-all-programmes/pharmacy/master-research/master-of-philosophy-in-pharmaceutical-science.html",
+    "role": "field-authority",
+    "sourceType": "official-page",
+    "fields": [
+      "identity",
+      "duration",
+      "intake",
+      "tuition",
+      "requirements",
+      "curriculum",
+      "careers"
+    ],
+    "retrievedAt": "2026-06-20T15:54:12+00:00",
+    "academicSession": "2026",
+    "status": "cached",
+    "localPath": "sources/raw/programme-details/tsu-m-026-master-of-philosophy-in-pharmaceutical-sciences.html",
+    "sha256": "a5bc92cf7606f02a2d40e9d5080820bb82371a1ae033abd84773e9c650f6f0b1"
+  },
+  {
+    "id": "detail-tsu-m-027",
+    "url": "https://university.taylors.edu.my/en/study/explore-all-programmes/pharmacy/master-research/master-of-philosophy-in-pharmacy.html",
+    "role": "field-authority",
+    "sourceType": "official-page",
+    "fields": [
+      "identity",
+      "duration",
+      "intake",
+      "tuition",
+      "requirements",
+      "curriculum",
+      "careers"
+    ],
+    "retrievedAt": "2026-06-20T15:54:12+00:00",
+    "academicSession": "2026",
+    "status": "cached",
+    "localPath": "sources/raw/programme-details/tsu-m-027-master-of-philosophy-in-pharmacy.html",
+    "sha256": "dc05ceb5ff8445cd41e1a093e4484454185ceb6a788fd15797a51d960b0cc1cd"
+  },
+  {
+    "id": "detail-tsu-d-014",
+    "url": "https://university.taylors.edu.my/en/study/explore-all-programmes/pharmacy/phd-research/doctor-of-philosophy-in-pharmaceutical-science.html",
+    "role": "field-authority",
+    "sourceType": "official-page",
+    "fields": [
+      "identity",
+      "duration",
+      "intake",
+      "tuition",
+      "requirements",
+      "curriculum",
+      "careers"
+    ],
+    "retrievedAt": "2026-06-20T15:54:12+00:00",
+    "academicSession": "2026",
+    "status": "cached",
+    "localPath": "sources/raw/programme-details/tsu-d-014-doctor-of-philosophy-in-pharmaceutical-sciences.html",
+    "sha256": "016c024ee0d70160242c36bd059ce3bf605d25bba6159935219c6c0e92557dbf"
+  },
+  {
+    "id": "detail-tsu-b-046",
+    "url": "https://university.taylors.edu.my/en/study/explore-all-programmes/medicine/undergraduate/bachelor-of-medicine-bachelor-of-surgery.html",
+    "role": "field-authority",
+    "sourceType": "official-page",
+    "fields": [
+      "identity",
+      "duration",
+      "intake",
+      "tuition",
+      "requirements",
+      "curriculum",
+      "careers"
+    ],
+    "retrievedAt": "2026-06-20T15:54:12+00:00",
+    "academicSession": "2026",
+    "status": "cached",
+    "localPath": "sources/raw/programme-details/tsu-b-046-bachelor-of-medicine-bachelor-of-surgery-mbbs.html",
+    "sha256": "949095b8411f519fbb16b536e2e42a7aa2327562d17d4e3b91a60a991f486415"
+  },
+  {
+    "id": "detail-tsu-m-028",
+    "url": "https://university.taylors.edu.my/en/study/explore-all-programmes/medicine/master-research/master-of-science-in-medical-science.html",
+    "role": "field-authority",
+    "sourceType": "official-page",
+    "fields": [
+      "identity",
+      "duration",
+      "intake",
+      "tuition",
+      "requirements",
+      "curriculum",
+      "careers"
+    ],
+    "retrievedAt": "2026-06-20T15:54:12+00:00",
+    "academicSession": "2026",
+    "status": "cached",
+    "localPath": "sources/raw/programme-details/tsu-m-028-master-of-science-in-medical-science.html",
+    "sha256": "2cf7e0f853fb574a4fc97a2cb96f339e0f57a9903e24eb492c56f522e2fcb016"
+  },
+  {
+    "id": "detail-tsu-d-015",
+    "url": "https://university.taylors.edu.my/en/study/explore-all-programmes/medicine/phd-research/doctor-of-philosophy-in-medical-science.html",
+    "role": "field-authority",
+    "sourceType": "official-page",
+    "fields": [
+      "identity",
+      "duration",
+      "intake",
+      "tuition",
+      "requirements",
+      "curriculum",
+      "careers"
+    ],
+    "retrievedAt": "2026-06-20T15:54:12+00:00",
+    "academicSession": "2026",
+    "status": "cached",
+    "localPath": "sources/raw/programme-details/tsu-d-015-doctor-of-philosophy-in-medical-science.html",
+    "sha256": "e0d9526bd59e969f8c1a96a67b4e1756d4daa968a60f38d5da8de15c6931d882"
+  },
+  {
+    "id": "fee-pdf-taylors-fees-schedule-online-postgraduate-programme-myr-c08dd6d383",
+    "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/online-postgraduate-programme/taylors-fees-schedule-online-postgraduate-programme-myr.pdf",
+    "role": "field-authority",
+    "sourceType": "official-pdf",
+    "fields": [
+      "tuition",
+      "feeSession",
+      "internationalFee"
+    ],
+    "retrievedAt": "2026-06-20T15:54:12+00:00",
+    "academicSession": "2026",
+    "status": "cached",
+    "localPath": "sources/raw/fee-pdfs/taylors-fees-schedule-online-postgraduate-programme-myr.pdf",
+    "sha256": "eeec157d12ea9a09d6c2bb14114408e010624855f84ed231df12280d209902bd"
+  },
+  {
+    "id": "fee-pdf-taylors-fees-schedule-online-postgraduate-programme-usd-571b329ac3",
+    "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/online-postgraduate-programme/taylors-fees-schedule-online-postgraduate-programme-usd.pdf",
+    "role": "field-authority",
+    "sourceType": "official-pdf",
+    "fields": [
+      "tuition",
+      "feeSession",
+      "internationalFee"
+    ],
+    "retrievedAt": "2026-06-20T15:54:12+00:00",
+    "academicSession": "2026",
+    "status": "cached",
+    "localPath": "sources/raw/fee-pdfs/taylors-fees-schedule-online-postgraduate-programme-usd.pdf",
+    "sha256": "7e74d99d670454f1558a3d3c104c4f30eb2bda37044778f89772a2f5aa4f2d8e"
+  },
+  {
+    "id": "fee-pdf-taylors-fees-schedule-pg-master-research-myr-113a39b8d2",
+    "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/postgraduate-general/taylors-fees-schedule-pg-master-research-myr.pdf",
+    "role": "field-authority",
+    "sourceType": "official-pdf",
+    "fields": [
+      "tuition",
+      "feeSession",
+      "internationalFee"
+    ],
+    "retrievedAt": "2026-06-20T15:54:12+00:00",
+    "academicSession": "2026",
+    "status": "cached",
+    "localPath": "sources/raw/fee-pdfs/taylors-fees-schedule-pg-master-research-myr.pdf",
+    "sha256": "dd4b1428cfb5861b00d9fc74820452c8f3baf027e93600971f43a208caefd471"
+  },
+  {
+    "id": "fee-pdf-taylors-fees-schedule-pg-master-research-usd-2e13535583",
+    "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/postgraduate-general/taylors-fees-schedule-pg-master-research-usd.pdf",
+    "role": "field-authority",
+    "sourceType": "official-pdf",
+    "fields": [
+      "tuition",
+      "feeSession",
+      "internationalFee"
+    ],
+    "retrievedAt": "2026-06-20T15:54:12+00:00",
+    "academicSession": "2026",
+    "status": "cached",
+    "localPath": "sources/raw/fee-pdfs/taylors-fees-schedule-pg-master-research-usd.pdf",
+    "sha256": "d5e303b7075ae793fa084aa216281e9a073b17545d95c24bbc5dc465b1331bd5"
+  },
+  {
+    "id": "fee-pdf-taylors-fees-schedule-pg-phd-research-myr-02c5903000",
+    "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/postgraduate-general/taylors-fees-schedule-pg-phd-research-myr.pdf",
+    "role": "field-authority",
+    "sourceType": "official-pdf",
+    "fields": [
+      "tuition",
+      "feeSession",
+      "internationalFee"
+    ],
+    "retrievedAt": "2026-06-20T15:54:12+00:00",
+    "academicSession": "2026",
+    "status": "cached",
+    "localPath": "sources/raw/fee-pdfs/taylors-fees-schedule-pg-phd-research-myr.pdf",
+    "sha256": "27c2f8aff3b38a6581c061e49469b8b3024f14d6d2aa1957c626d71365574ef8"
+  },
+  {
+    "id": "fee-pdf-taylors-fees-schedule-pg-phd-research-usd-5877582ce0",
+    "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/postgraduate-general/taylors-fees-schedule-pg-phd-research-usd.pdf",
+    "role": "field-authority",
+    "sourceType": "official-pdf",
+    "fields": [
+      "tuition",
+      "feeSession",
+      "internationalFee"
+    ],
+    "retrievedAt": "2026-06-20T15:54:12+00:00",
+    "academicSession": "2026",
+    "status": "cached",
+    "localPath": "sources/raw/fee-pdfs/taylors-fees-schedule-pg-phd-research-usd.pdf",
+    "sha256": "883abd3dc3d98f7867cec9df1927b89298c501efe9ae6f5f5c35208d017d236a"
+  },
+  {
+    "id": "fee-pdf-taylors-fees-schedule-pg-master-of-achitecture-usd-b1057207ca",
+    "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/school-of-architecture-building-and-design/postgraduate/taylors-fees-schedule-pg-master-of-achitecture-usd.pdf",
+    "role": "field-authority",
+    "sourceType": "official-pdf",
+    "fields": [
+      "tuition",
+      "feeSession",
+      "internationalFee"
+    ],
+    "retrievedAt": "2026-06-20T15:54:12+00:00",
+    "academicSession": "2026",
+    "status": "cached",
+    "localPath": "sources/raw/fee-pdfs/taylors-fees-schedule-pg-master-of-achitecture-usd.pdf",
+    "sha256": "71efb2399144ceea5755d74db469c94a7fa1fd10423cebce1cb753d27ceec6a5"
+  },
+  {
+    "id": "fee-pdf-taylors-fees-schedule-pg-master-of-architecture-and-master-of-science-b9fd9da3a4",
+    "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/school-of-architecture-building-and-design/postgraduate/taylors-fees-schedule-pg-master-of-architecture-and-master-of-science-in-virtual-design-and-construction-myr.pdf",
+    "role": "field-authority",
+    "sourceType": "official-pdf",
+    "fields": [
+      "tuition",
+      "feeSession",
+      "internationalFee"
+    ],
+    "retrievedAt": "2026-06-20T15:54:12+00:00",
+    "academicSession": "2026",
+    "status": "cached",
+    "localPath": "sources/raw/fee-pdfs/taylors-fees-schedule-pg-master-of-architecture-and-master-of-science-in-virtual-design-and-construction-myr.pdf",
+    "sha256": "3776a20eb6db9c60a57510dde8da3d083ca374428ebd841d572edf2e25b51d24"
+  },
+  {
+    "id": "fee-pdf-taylors-fees-schedule-pg-master-of-science-in-virtual-design-construct-3449651933",
+    "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/school-of-architecture-building-and-design/postgraduate/taylors-fees-schedule-pg-master-of-science-in-virtual-design-construction-usd.pdf",
+    "role": "field-authority",
+    "sourceType": "official-pdf",
+    "fields": [
+      "tuition",
+      "feeSession",
+      "internationalFee"
+    ],
+    "retrievedAt": "2026-06-20T15:54:12+00:00",
+    "academicSession": "2026",
+    "status": "cached",
+    "localPath": "sources/raw/fee-pdfs/taylors-fees-schedule-pg-master-of-science-in-virtual-design-construction-usd.pdf",
+    "sha256": "acdada90aadb45b65452066e4395fb8c6a90e6c58b361fd7a262e356ceb8e0c3"
+  },
+  {
+    "id": "fee-pdf-taylors-fees-schedule-ug-architecture-building-and-design-myr-155cbafd17",
+    "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/school-of-architecture-building-and-design/undergraduate/taylors-fees-schedule-ug-architecture-building-and-design-myr.pdf",
+    "role": "field-authority",
+    "sourceType": "official-pdf",
+    "fields": [
+      "tuition",
+      "feeSession",
+      "internationalFee"
+    ],
+    "retrievedAt": "2026-06-20T15:54:12+00:00",
+    "academicSession": "2026",
+    "status": "cached",
+    "localPath": "sources/raw/fee-pdfs/taylors-fees-schedule-ug-architecture-building-and-design-myr.pdf",
+    "sha256": "bc1141deeb70c3f7e7a51b877fc829a9708132950f3036d66326f9a03df84b6b"
+  },
+  {
+    "id": "fee-pdf-taylors-fees-schedule-ug-architecture-building-and-design-usd-9fa4d31929",
+    "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/school-of-architecture-building-and-design/undergraduate/taylors-fees-schedule-ug-architecture-building-and-design-usd.pdf",
+    "role": "field-authority",
+    "sourceType": "official-pdf",
+    "fields": [
+      "tuition",
+      "feeSession",
+      "internationalFee"
+    ],
+    "retrievedAt": "2026-06-20T15:54:12+00:00",
+    "academicSession": "2026",
+    "status": "cached",
+    "localPath": "sources/raw/fee-pdfs/taylors-fees-schedule-ug-architecture-building-and-design-usd.pdf",
+    "sha256": "e23354a132da61395c72250a6cd706f80beb06e9ca0ee772cb28be0d3aac03f6"
+  },
+  {
+    "id": "fee-pdf-taylors-fees-schedule-ug-biosciences-myr-65a50b8c61",
+    "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/school-of-biosciences/undergraduate/taylors-fees-schedule-ug-biosciences-myr.pdf",
+    "role": "field-authority",
+    "sourceType": "official-pdf",
+    "fields": [
+      "tuition",
+      "feeSession",
+      "internationalFee"
+    ],
+    "retrievedAt": "2026-06-20T15:54:12+00:00",
+    "academicSession": "2026",
+    "status": "cached",
+    "localPath": "sources/raw/fee-pdfs/taylors-fees-schedule-ug-biosciences-myr.pdf",
+    "sha256": "fb4462b02910b748208e4fd135e0f941a639544cdf21a0c76266cead1ba6ceca"
+  },
+  {
+    "id": "fee-pdf-taylors-fees-schedule-ug-biosciences-usd-97d34b1aff",
+    "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/school-of-biosciences/undergraduate/taylors-fees-schedule-ug-biosciences-usd.pdf",
+    "role": "field-authority",
+    "sourceType": "official-pdf",
+    "fields": [
+      "tuition",
+      "feeSession",
+      "internationalFee"
+    ],
+    "retrievedAt": "2026-06-20T15:54:12+00:00",
+    "academicSession": "2026",
+    "status": "cached",
+    "localPath": "sources/raw/fee-pdfs/taylors-fees-schedule-ug-biosciences-usd.pdf",
+    "sha256": "539a2f72260ca53258fe0d1674310d19cfb89206b4fa66cf625095b4bf3ed889"
+  },
+  {
+    "id": "fee-pdf-taylors-fees-schedule-ug-computer-science-myr-94054b52e9",
+    "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/school-of-computer-science/undergraduate/taylors-fees-schedule-ug-computer-science-myr.pdf",
+    "role": "field-authority",
+    "sourceType": "official-pdf",
+    "fields": [
+      "tuition",
+      "feeSession",
+      "internationalFee"
+    ],
+    "retrievedAt": "2026-06-20T15:54:12+00:00",
+    "academicSession": "2026",
+    "status": "cached",
+    "localPath": "sources/raw/fee-pdfs/taylors-fees-schedule-ug-computer-science-myr.pdf",
+    "sha256": "228ee20cf34e01330431bed5611928eba051597ac1a0c4a1103dafd6fa272fb0"
+  },
+  {
+    "id": "fee-pdf-taylors-fees-schedule-ug-computer-science-usd-2ee4066f52",
+    "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/school-of-computer-science/undergraduate/taylors-fees-schedule-ug-computer-science-usd.pdf",
+    "role": "field-authority",
+    "sourceType": "official-pdf",
+    "fields": [
+      "tuition",
+      "feeSession",
+      "internationalFee"
+    ],
+    "retrievedAt": "2026-06-20T15:54:12+00:00",
+    "academicSession": "2026",
+    "status": "cached",
+    "localPath": "sources/raw/fee-pdfs/taylors-fees-schedule-ug-computer-science-usd.pdf",
+    "sha256": "dcd52af3b0bbc9e5e7f84a632c9887b333ca1e1c9fbdcfcf159b81868df34e84"
+  },
+  {
+    "id": "fee-pdf-taylors-fees-schedule-pg-master-of-teaching-and-learning-myr-380b2a4f18",
+    "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/school-of-education/postgraduate/taylors-fees-schedule-pg-master-of-teaching-and-learning-myr.pdf",
+    "role": "field-authority",
+    "sourceType": "official-pdf",
+    "fields": [
+      "tuition",
+      "feeSession",
+      "internationalFee"
+    ],
+    "retrievedAt": "2026-06-20T15:54:12+00:00",
+    "academicSession": "2026",
+    "status": "cached",
+    "localPath": "sources/raw/fee-pdfs/taylors-fees-schedule-pg-master-of-teaching-and-learning-myr.pdf",
+    "sha256": "ad62e0f91b81066bbd98bcff79e07c3cefd495de1d9348433b21833bdd986840"
+  },
+  {
+    "id": "fee-pdf-taylors-fees-schedule-pg-master-of-teaching-and-learning-usd-f763a7e7d5",
+    "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/school-of-education/postgraduate/taylors-fees-schedule-pg-master-of-teaching-and-learning-usd.pdf",
+    "role": "field-authority",
+    "sourceType": "official-pdf",
+    "fields": [
+      "tuition",
+      "feeSession",
+      "internationalFee"
+    ],
+    "retrievedAt": "2026-06-20T15:54:12+00:00",
+    "academicSession": "2026",
+    "status": "cached",
+    "localPath": "sources/raw/fee-pdfs/taylors-fees-schedule-pg-master-of-teaching-and-learning-usd.pdf",
+    "sha256": "166f7f515cc7ce666dc876e2c938b50712921df1021ce1c769f7528f8c9a154e"
+  },
+  {
+    "id": "fee-pdf-taylors-fees-schedule-ug-education-myr-ca3e9398ac",
+    "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/school-of-education/undergraduate/taylors-fees-schedule-ug-education-myr.pdf",
+    "role": "field-authority",
+    "sourceType": "official-pdf",
+    "fields": [
+      "tuition",
+      "feeSession",
+      "internationalFee"
+    ],
+    "retrievedAt": "2026-06-20T15:54:12+00:00",
+    "academicSession": "2026",
+    "status": "cached",
+    "localPath": "sources/raw/fee-pdfs/taylors-fees-schedule-ug-education-myr.pdf",
+    "sha256": "8073176b00d1780c3ec5f28fc2e9e9bafe5ad8b04778fd43bd77a79e8b1a54a7"
+  },
+  {
+    "id": "fee-pdf-taylors-fees-schedule-ug-education-usd-7421c00281",
+    "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/school-of-education/undergraduate/taylors-fees-schedule-ug-education-usd.pdf",
+    "role": "field-authority",
+    "sourceType": "official-pdf",
+    "fields": [
+      "tuition",
+      "feeSession",
+      "internationalFee"
+    ],
+    "retrievedAt": "2026-06-20T15:54:12+00:00",
+    "academicSession": "2026",
+    "status": "cached",
+    "localPath": "sources/raw/fee-pdfs/taylors-fees-schedule-ug-education-usd.pdf",
+    "sha256": "f46afbfec8e05d420bf2e11f0c8dbdcc6f353a99f8618eeb2498e165d8cd7506"
+  },
+  {
+    "id": "fee-pdf-taylors-fees-schedule-ug-engineering-myr-c6d0ad316b",
+    "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/school-of-engineering/undergraduate/taylors-fees-schedule-ug-engineering-myr.pdf",
+    "role": "field-authority",
+    "sourceType": "official-pdf",
+    "fields": [
+      "tuition",
+      "feeSession",
+      "internationalFee"
+    ],
+    "retrievedAt": "2026-06-20T15:54:12+00:00",
+    "academicSession": "2026",
+    "status": "cached",
+    "localPath": "sources/raw/fee-pdfs/taylors-fees-schedule-ug-engineering-myr.pdf",
+    "sha256": "2e2912ab21f40b7ac6f15c0b7acf21a6b35184d92d99f3b332f8f9360e5ab12f"
+  },
+  {
+    "id": "fee-pdf-taylors-fees-schedule-ug-engineering-usd-57de482ce1",
+    "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/school-of-engineering/undergraduate/taylors-fees-schedule-ug-engineering-usd.pdf",
+    "role": "field-authority",
+    "sourceType": "official-pdf",
+    "fields": [
+      "tuition",
+      "feeSession",
+      "internationalFee"
+    ],
+    "retrievedAt": "2026-06-20T15:54:12+00:00",
+    "academicSession": "2026",
+    "status": "cached",
+    "localPath": "sources/raw/fee-pdfs/taylors-fees-schedule-ug-engineering-usd.pdf",
+    "sha256": "ea21a6932d00fc9e4de2e4e8166c717239c1ce979bca72492db53d39fa872a24"
+  },
+  {
+    "id": "fee-pdf-taylors-fees-schedule-pg-master-of-international-hospitality-managemen-2200d12091",
+    "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/school-of-hospitality-tourism-and-events/postgraduate/taylors-fees-schedule-pg-master-of-international-hospitality-management-myr.pdf",
+    "role": "field-authority",
+    "sourceType": "official-pdf",
+    "fields": [
+      "tuition",
+      "feeSession",
+      "internationalFee"
+    ],
+    "retrievedAt": "2026-06-20T15:54:12+00:00",
+    "academicSession": "2026",
+    "status": "cached",
+    "localPath": "sources/raw/fee-pdfs/taylors-fees-schedule-pg-master-of-international-hospitality-management-myr.pdf",
+    "sha256": "58d1c23cee92637d5ac1acad6e37019acc5c53472f19d459d27a24a3d907ed6e"
+  },
+  {
+    "id": "fee-pdf-taylors-fees-schedule-pg-master-of-international-hospitality-managemen-f7d142633e",
+    "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/school-of-hospitality-tourism-and-events/postgraduate/taylors-fees-schedule-pg-master-of-international-hospitality-management-usd.pdf",
+    "role": "field-authority",
+    "sourceType": "official-pdf",
+    "fields": [
+      "tuition",
+      "feeSession",
+      "internationalFee"
+    ],
+    "retrievedAt": "2026-06-20T15:54:12+00:00",
+    "academicSession": "2026",
+    "status": "cached",
+    "localPath": "sources/raw/fee-pdfs/taylors-fees-schedule-pg-master-of-international-hospitality-management-usd.pdf",
+    "sha256": "e21a754ff10576c3bc826ddf464398a20ed2905209e723deaeda4f1363d34588"
+  },
+  {
+    "id": "fee-pdf-taylors-fees-schedule-ug-hospitality-myr-cb080122e6",
+    "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/school-of-hospitality-tourism-and-events/undergraduate/taylors-fees-schedule-ug-hospitality-myr.pdf",
+    "role": "field-authority",
+    "sourceType": "official-pdf",
+    "fields": [
+      "tuition",
+      "feeSession",
+      "internationalFee"
+    ],
+    "retrievedAt": "2026-06-20T15:54:12+00:00",
+    "academicSession": "2026",
+    "status": "cached",
+    "localPath": "sources/raw/fee-pdfs/taylors-fees-schedule-ug-hospitality-myr.pdf",
+    "sha256": "06515a9ef8c45f0f5d03a3892433c5cbbff10bcf6d9d664ac1526b38ac6f6855"
+  },
+  {
+    "id": "fee-pdf-taylors-fees-schedule-ug-hospitality-usd-4041568a63",
+    "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/school-of-hospitality-tourism-and-events/undergraduate/taylors-fees-schedule-ug-hospitality-usd.pdf",
+    "role": "field-authority",
+    "sourceType": "official-pdf",
+    "fields": [
+      "tuition",
+      "feeSession",
+      "internationalFee"
+    ],
+    "retrievedAt": "2026-06-20T15:54:12+00:00",
+    "academicSession": "2026",
+    "status": "cached",
+    "localPath": "sources/raw/fee-pdfs/taylors-fees-schedule-ug-hospitality-usd.pdf",
+    "sha256": "28f7de40794cf5a0f0bcb0b3fa87d79c6b21b6cd6890f6b2032aebed3a345fef"
+  },
+  {
+    "id": "fee-pdf-taylors-fees-schedule-pg-master-of-law-and-master-of-laws-in-healthcar-72a0b70f61",
+    "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/school-of-law-and-governance/postgraduate/taylors-fees-schedule-pg-master-of-law-and-master-of-laws-in-healthcare-and-medical-law-myr.pdf",
+    "role": "field-authority",
+    "sourceType": "official-pdf",
+    "fields": [
+      "tuition",
+      "feeSession",
+      "internationalFee"
+    ],
+    "retrievedAt": "2026-06-20T15:54:12+00:00",
+    "academicSession": "2026",
+    "status": "cached",
+    "localPath": "sources/raw/fee-pdfs/taylors-fees-schedule-pg-master-of-law-and-master-of-laws-in-healthcare-and-medical-law-myr.pdf",
+    "sha256": "8fb95fd880a580d2b4c71c75441e23dea1676813f312b3b70e889cdcd3aa239e"
+  },
+  {
+    "id": "fee-pdf-taylors-fees-schedule-pg-master-of-law-and-master-of-laws-in-healthcar-8ab87c4faf",
+    "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/school-of-law-and-governance/postgraduate/taylors-fees-schedule-pg-master-of-law-and-master-of-laws-in-healthcare-and-medical-law-usd.pdf",
+    "role": "field-authority",
+    "sourceType": "official-pdf",
+    "fields": [
+      "tuition",
+      "feeSession",
+      "internationalFee"
+    ],
+    "retrievedAt": "2026-06-20T15:54:12+00:00",
+    "academicSession": "2026",
+    "status": "cached",
+    "localPath": "sources/raw/fee-pdfs/taylors-fees-schedule-pg-master-of-law-and-master-of-laws-in-healthcare-and-medical-law-usd.pdf",
+    "sha256": "c7ccb6565c038362418eba9666af7c5245faa9bb15b48a01be226f85e8fbc9bf"
+  },
+  {
+    "id": "fee-pdf-taylors-fees-schedule-ug-law-and-governance-myr-de14fe36d3",
+    "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/school-of-law-and-governance/undergraduate/taylors-fees-schedule-ug-law-and-governance-myr.pdf",
+    "role": "field-authority",
+    "sourceType": "official-pdf",
+    "fields": [
+      "tuition",
+      "feeSession",
+      "internationalFee"
+    ],
+    "retrievedAt": "2026-06-20T15:54:12+00:00",
+    "academicSession": "2026",
+    "status": "cached",
+    "localPath": "sources/raw/fee-pdfs/taylors-fees-schedule-ug-law-and-governance-myr.pdf",
+    "sha256": "8b0ff6c0a93f94ffc6b73b90ed5f39cf47c6eaaad02113a3694ffa4cd1c7f374"
+  },
+  {
+    "id": "fee-pdf-taylors-fees-schedule-ug-law-and-governance-usd-3c430e15dc",
+    "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/school-of-law-and-governance/undergraduate/taylors-fees-schedule-ug-law-and-governance-usd.pdf",
+    "role": "field-authority",
+    "sourceType": "official-pdf",
+    "fields": [
+      "tuition",
+      "feeSession",
+      "internationalFee"
+    ],
+    "retrievedAt": "2026-06-20T15:54:12+00:00",
+    "academicSession": "2026",
+    "status": "cached",
+    "localPath": "sources/raw/fee-pdfs/taylors-fees-schedule-ug-law-and-governance-usd.pdf",
+    "sha256": "a633c28d61eb271d0b8ce4948014c09ffa3695a553df1abe2a83855d974642fa"
+  },
+  {
+    "id": "fee-pdf-taylors-fees-schedule-pg-master-of-clinical-psychology-myr-484758d30c",
+    "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/school-of-liberal-arts-and-sciences/postgraduate/taylors-fees-schedule-pg-master-of-clinical-psychology-myr.pdf",
+    "role": "field-authority",
+    "sourceType": "official-pdf",
+    "fields": [
+      "tuition",
+      "feeSession",
+      "internationalFee"
+    ],
+    "retrievedAt": "2026-06-20T15:54:12+00:00",
+    "academicSession": "2026",
+    "status": "cached",
+    "localPath": "sources/raw/fee-pdfs/taylors-fees-schedule-pg-master-of-clinical-psychology-myr.pdf",
+    "sha256": "9f3779892f6fe07107f6e3cb8a099dd5becb7a3bba4f670d4b20a889d6256f48"
+  },
+  {
+    "id": "fee-pdf-taylors-fees-schedule-pg-master-of-clinical-psychology-usd-9926368621",
+    "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/school-of-liberal-arts-and-sciences/postgraduate/taylors-fees-schedule-pg-master-of-clinical-psychology-usd.pdf",
+    "role": "field-authority",
+    "sourceType": "official-pdf",
+    "fields": [
+      "tuition",
+      "feeSession",
+      "internationalFee"
+    ],
+    "retrievedAt": "2026-06-20T15:54:12+00:00",
+    "academicSession": "2026",
+    "status": "cached",
+    "localPath": "sources/raw/fee-pdfs/taylors-fees-schedule-pg-master-of-clinical-psychology-usd.pdf",
+    "sha256": "14520390c605be5d27dbfe33c5f7d7b490b77be82bb09cff4f8691b45f62d67c"
+  },
+  {
+    "id": "fee-pdf-taylors-fees-schedule-pg-master-of-counselling-myr-14ee9ff14a",
+    "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/school-of-liberal-arts-and-sciences/postgraduate/taylors-fees-schedule-pg-master-of-counselling-myr.pdf",
+    "role": "field-authority",
+    "sourceType": "official-pdf",
+    "fields": [
+      "tuition",
+      "feeSession",
+      "internationalFee"
+    ],
+    "retrievedAt": "2026-06-20T15:54:12+00:00",
+    "academicSession": "2026",
+    "status": "cached",
+    "localPath": "sources/raw/fee-pdfs/taylors-fees-schedule-pg-master-of-counselling-myr.pdf",
+    "sha256": "bab937ee3ec0ae2c34537ea75364e7eae45ee90839447761a2a7dc479680b357"
+  },
+  {
+    "id": "fee-pdf-taylors-fees-schedule-pg-master-of-counselling-usd-104a7c24ac",
+    "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/school-of-liberal-arts-and-sciences/postgraduate/taylors-fees-schedule-pg-master-of-counselling-usd.pdf",
+    "role": "field-authority",
+    "sourceType": "official-pdf",
+    "fields": [
+      "tuition",
+      "feeSession",
+      "internationalFee"
+    ],
+    "retrievedAt": "2026-06-20T15:54:12+00:00",
+    "academicSession": "2026",
+    "status": "cached",
+    "localPath": "sources/raw/fee-pdfs/taylors-fees-schedule-pg-master-of-counselling-usd.pdf",
+    "sha256": "b916d0e056703787a69817e1c6c5d0830f9ebaee4111b5406c7197b2a2ec5afd"
+  },
+  {
+    "id": "fee-pdf-taylors-fees-schedule-ug-liberal-arts-and-sciences-myr-b75eecf79c",
+    "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/school-of-liberal-arts-and-sciences/undergraduate/liberal-arts/taylors-fees-schedule-ug-liberal-arts-and-sciences-myr.pdf",
+    "role": "field-authority",
+    "sourceType": "official-pdf",
+    "fields": [
+      "tuition",
+      "feeSession",
+      "internationalFee"
+    ],
+    "retrievedAt": "2026-06-20T15:54:12+00:00",
+    "academicSession": "2026",
+    "status": "cached",
+    "localPath": "sources/raw/fee-pdfs/taylors-fees-schedule-ug-liberal-arts-and-sciences-myr.pdf",
+    "sha256": "0245a78ce0fde8582ea2388fdbfd0474c06732bb044b4d110f6a8adccb57f1bc"
+  },
+  {
+    "id": "fee-pdf-taylors-fees-schedule-ug-liberal-arts-and-sciences-usd-caff27c5ca",
+    "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/school-of-liberal-arts-and-sciences/undergraduate/liberal-arts/taylors-fees-schedule-ug-liberal-arts-and-sciences-usd.pdf",
+    "role": "field-authority",
+    "sourceType": "official-pdf",
+    "fields": [
+      "tuition",
+      "feeSession",
+      "internationalFee"
+    ],
+    "retrievedAt": "2026-06-20T15:54:12+00:00",
+    "academicSession": "2026",
+    "status": "cached",
+    "localPath": "sources/raw/fee-pdfs/taylors-fees-schedule-ug-liberal-arts-and-sciences-usd.pdf",
+    "sha256": "c8991956c03ad1b07e9242e0191d68613a8a8878b20cd39901d76b893940cf2a"
+  },
+  {
+    "id": "fee-pdf-taylors-fees-schedule-pg-master-of-communication-myr-9d42096786",
+    "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/school-of-media-and-communication/postgraduate/taylors-fees-schedule-pg-master-of-communication-myr.pdf",
+    "role": "field-authority",
+    "sourceType": "official-pdf",
+    "fields": [
+      "tuition",
+      "feeSession",
+      "internationalFee"
+    ],
+    "retrievedAt": "2026-06-20T15:54:12+00:00",
+    "academicSession": "2026",
+    "status": "cached",
+    "localPath": "sources/raw/fee-pdfs/taylors-fees-schedule-pg-master-of-communication-myr.pdf",
+    "sha256": "cf091e82dbeb8feace0aec68d9812f3f254fb52e627ed4d02149cae9e33fde2d"
+  },
+  {
+    "id": "fee-pdf-taylors-fees-schedule-pg-master-of-communication-usd-ad186672f6",
+    "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/school-of-media-and-communication/postgraduate/taylors-fees-schedule-pg-master-of-communication-usd.pdf",
+    "role": "field-authority",
+    "sourceType": "official-pdf",
+    "fields": [
+      "tuition",
+      "feeSession",
+      "internationalFee"
+    ],
+    "retrievedAt": "2026-06-20T15:54:12+00:00",
+    "academicSession": "2026",
+    "status": "cached",
+    "localPath": "sources/raw/fee-pdfs/taylors-fees-schedule-pg-master-of-communication-usd.pdf",
+    "sha256": "6bcb39835fdfbbdcb0c0488a1ee4b6a2ccafe87da90b4e329189e02a7e9502a4"
+  },
+  {
+    "id": "fee-pdf-taylors-fees-schedule-ug-media-and-communication-myr-81083e7f15",
+    "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/school-of-media-and-communication/undergraduate/taylors-fees-schedule-ug-media-and-communication-myr.pdf",
+    "role": "field-authority",
+    "sourceType": "official-pdf",
+    "fields": [
+      "tuition",
+      "feeSession",
+      "internationalFee"
+    ],
+    "retrievedAt": "2026-06-20T15:54:12+00:00",
+    "academicSession": "2026",
+    "status": "cached",
+    "localPath": "sources/raw/fee-pdfs/taylors-fees-schedule-ug-media-and-communication-myr.pdf",
+    "sha256": "3e4afc4cd5661bf592b6a5295ede4c4661c2749a815fc5a9481be19420aa7d2b"
+  },
+  {
+    "id": "fee-pdf-taylors-fees-schedule-ug-media-and-communication-usd-6142002750",
+    "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/school-of-media-and-communication/undergraduate/taylors-fees-schedule-ug-media-and-communication-usd.pdf",
+    "role": "field-authority",
+    "sourceType": "official-pdf",
+    "fields": [
+      "tuition",
+      "feeSession",
+      "internationalFee"
+    ],
+    "retrievedAt": "2026-06-20T15:54:12+00:00",
+    "academicSession": "2026",
+    "status": "cached",
+    "localPath": "sources/raw/fee-pdfs/taylors-fees-schedule-ug-media-and-communication-usd.pdf",
+    "sha256": "c3a13f7f6f194d967cb9a53b875021b3f177d4e8f7bb160e31540db18f9b9ed6"
+  },
+  {
+    "id": "fee-pdf-taylors-fees-schedule-ug-medicine-myr-862390d41f",
+    "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/school-of-medicine/undergraduate/taylors-fees-schedule-ug-medicine-myr.pdf",
+    "role": "field-authority",
+    "sourceType": "official-pdf",
+    "fields": [
+      "tuition",
+      "feeSession",
+      "internationalFee"
+    ],
+    "retrievedAt": "2026-06-20T15:54:12+00:00",
+    "academicSession": "2026",
+    "status": "cached",
+    "localPath": "sources/raw/fee-pdfs/taylors-fees-schedule-ug-medicine-myr.pdf",
+    "sha256": "b6a4c86c7d51e3c4d8428036e87e2fd17b58afe4596979d6f01c694c9cb96d76"
+  },
+  {
+    "id": "fee-pdf-taylors-fees-schedule-ug-medicine-usd-8853bd3e8c",
+    "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/school-of-medicine/undergraduate/taylors-fees-schedule-ug-medicine-usd.pdf",
+    "role": "field-authority",
+    "sourceType": "official-pdf",
+    "fields": [
+      "tuition",
+      "feeSession",
+      "internationalFee"
+    ],
+    "retrievedAt": "2026-06-20T15:54:12+00:00",
+    "academicSession": "2026",
+    "status": "cached",
+    "localPath": "sources/raw/fee-pdfs/taylors-fees-schedule-ug-medicine-usd.pdf",
+    "sha256": "c1a23c1a82bee5dcad783f008ff5332dc603506c1db9506fdc6686b17dbf87dd"
+  },
+  {
+    "id": "fee-pdf-taylors-fees-schedule-ug-pharmacy-myr-d6575ff533",
+    "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/school-of-pharmacy/undergraduate/taylors-fees-schedule-ug-pharmacy-myr.pdf",
+    "role": "field-authority",
+    "sourceType": "official-pdf",
+    "fields": [
+      "tuition",
+      "feeSession",
+      "internationalFee"
+    ],
+    "retrievedAt": "2026-06-20T15:54:12+00:00",
+    "academicSession": "2026",
+    "status": "cached",
+    "localPath": "sources/raw/fee-pdfs/taylors-fees-schedule-ug-pharmacy-myr.pdf",
+    "sha256": "fcf715fc88c0b720292cf8c44f04988c77b07c5b05c31fafb4575477ab902194"
+  },
+  {
+    "id": "fee-pdf-taylors-fees-schedule-ug-pharmacy-usd-29d4366715",
+    "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/school-of-pharmacy/undergraduate/taylors-fees-schedule-ug-pharmacy-usd.pdf",
+    "role": "field-authority",
+    "sourceType": "official-pdf",
+    "fields": [
+      "tuition",
+      "feeSession",
+      "internationalFee"
+    ],
+    "retrievedAt": "2026-06-20T15:54:12+00:00",
+    "academicSession": "2026",
+    "status": "cached",
+    "localPath": "sources/raw/fee-pdfs/taylors-fees-schedule-ug-pharmacy-usd.pdf",
+    "sha256": "2aa6bec3283a93ebf8c1b081669d90571db07ca171031770dd16fdecf0a34db5"
+  },
+  {
+    "id": "fee-pdf-taylors-fees-schedule-pg-master-of-business-administration-and-master-4846923e4a",
+    "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/taylors-business-school/postgraduate/taylors-fees-schedule-pg-master-of-business-administration-and-master-of-management-usd.pdf",
+    "role": "field-authority",
+    "sourceType": "official-pdf",
+    "fields": [
+      "tuition",
+      "feeSession",
+      "internationalFee"
+    ],
+    "retrievedAt": "2026-06-20T15:54:12+00:00",
+    "academicSession": "2026",
+    "status": "cached",
+    "localPath": "sources/raw/fee-pdfs/taylors-fees-schedule-pg-master-of-business-administration-and-master-of-management-usd.pdf",
+    "sha256": "b9613a4346a7f2a52b5460a3fe7e4d564924ee76c6a72e8b686ce2c52937aecd"
+  },
+  {
+    "id": "fee-pdf-taylors-fees-schedule-pg-master-of-business-administration-myr-1076bfc298",
+    "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/taylors-business-school/postgraduate/taylors-fees-schedule-pg-master-of-business-administration-myr.pdf",
+    "role": "field-authority",
+    "sourceType": "official-pdf",
+    "fields": [
+      "tuition",
+      "feeSession",
+      "internationalFee"
+    ],
+    "retrievedAt": "2026-06-20T15:54:12+00:00",
+    "academicSession": "2026",
+    "status": "cached",
+    "localPath": "sources/raw/fee-pdfs/taylors-fees-schedule-pg-master-of-business-administration-myr.pdf",
+    "sha256": "4c876a531c2605627ee2d4b89a301547b29bc8d693ac59053a19767b2f21bdc4"
+  },
+  {
+    "id": "fee-pdf-taylors-fees-schedule-ug-business-myr-a6bb2b6ce7",
+    "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/taylors-business-school/undergraduate/taylors-fees-schedule-ug-business-myr.pdf",
+    "role": "field-authority",
+    "sourceType": "official-pdf",
+    "fields": [
+      "tuition",
+      "feeSession",
+      "internationalFee"
+    ],
+    "retrievedAt": "2026-06-20T15:54:12+00:00",
+    "academicSession": "2026",
+    "status": "cached",
+    "localPath": "sources/raw/fee-pdfs/taylors-fees-schedule-ug-business-myr.pdf",
+    "sha256": "c72132b2ee5155950fe393eec38ccd2afa12fb6c3fb8bd1bc7fad59ed141b90b"
+  },
+  {
+    "id": "fee-pdf-taylors-fees-schedule-ug-business-usd-63c574d06a",
+    "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/taylors-business-school/undergraduate/taylors-fees-schedule-ug-business-usd.pdf",
+    "role": "field-authority",
+    "sourceType": "official-pdf",
+    "fields": [
+      "tuition",
+      "feeSession",
+      "internationalFee"
+    ],
+    "retrievedAt": "2026-06-20T15:54:12+00:00",
+    "academicSession": "2026",
+    "status": "cached",
+    "localPath": "sources/raw/fee-pdfs/taylors-fees-schedule-ug-business-usd.pdf",
+    "sha256": "f111643e917d1303db5108532f0caae161852ad08e91549c7b231489de3cc612"
+  },
+  {
+    "id": "fee-pdf-taylors-fees-schedule-pg-master-of-food-studies-and-gastronomies-myr-0ca222d401",
+    "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/taylors-culinary-institute/postgraduate/taylors-fees-schedule-pg-master-of-food-studies-and-gastronomies-myr.pdf",
+    "role": "field-authority",
+    "sourceType": "official-pdf",
+    "fields": [
+      "tuition",
+      "feeSession",
+      "internationalFee"
+    ],
+    "retrievedAt": "2026-06-20T15:54:12+00:00",
+    "academicSession": "2026",
+    "status": "cached",
+    "localPath": "sources/raw/fee-pdfs/taylors-fees-schedule-pg-master-of-food-studies-and-gastronomies-myr.pdf",
+    "sha256": "317dfead64c75cae36124e92b1f098a223cd76a18321f8e04da199c2f429be50"
+  },
+  {
+    "id": "fee-pdf-taylors-fees-schedule-pg-master-of-food-studies-and-gastronomies-usd-066d5e04f0",
+    "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/taylors-culinary-institute/postgraduate/taylors-fees-schedule-pg-master-of-food-studies-and-gastronomies-usd.pdf",
+    "role": "field-authority",
+    "sourceType": "official-pdf",
+    "fields": [
+      "tuition",
+      "feeSession",
+      "internationalFee"
+    ],
+    "retrievedAt": "2026-06-20T15:54:12+00:00",
+    "academicSession": "2026",
+    "status": "cached",
+    "localPath": "sources/raw/fee-pdfs/taylors-fees-schedule-pg-master-of-food-studies-and-gastronomies-usd.pdf",
+    "sha256": "4025910903e8ba6cf4dee1d7510b648cbe1e4757d1648b4a29e2bc191de48247"
+  },
+  {
+    "id": "fee-pdf-taylors-fees-schedule-ug-tci-myr-1dc574d1cb",
+    "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/taylors-culinary-institute/undergraduate/taylors-fees-schedule-ug-tci-myr.pdf",
+    "role": "field-authority",
+    "sourceType": "official-pdf",
+    "fields": [
+      "tuition",
+      "feeSession",
+      "internationalFee"
+    ],
+    "retrievedAt": "2026-06-20T15:54:12+00:00",
+    "academicSession": "2026",
+    "status": "cached",
+    "localPath": "sources/raw/fee-pdfs/taylors-fees-schedule-ug-tci-myr.pdf",
+    "sha256": "019eb45bab822d3b98f32a4b8ceba403c7027e6647972c2fb1da9e45c2e91960"
+  },
+  {
+    "id": "fee-pdf-taylors-fees-schedule-ug-tci-usd-e035ee48ec",
+    "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/taylors-culinary-institute/undergraduate/taylors-fees-schedule-ug-tci-usd.pdf",
+    "role": "field-authority",
+    "sourceType": "official-pdf",
+    "fields": [
+      "tuition",
+      "feeSession",
+      "internationalFee"
+    ],
+    "retrievedAt": "2026-06-20T15:54:12+00:00",
+    "academicSession": "2026",
+    "status": "cached",
+    "localPath": "sources/raw/fee-pdfs/taylors-fees-schedule-ug-tci-usd.pdf",
+    "sha256": "9809f4ff96a9835fb22b55857197a009b4a39e5e60dbe9d4916dc552c252dbf7"
+  },
+  {
+    "id": "fee-pdf-taylors-fees-schedule-ug-design-myr-de2c86387d",
+    "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/the-design-school-at-taylors/undergraduate/taylors-fees-schedule-ug-design-myr.pdf",
+    "role": "field-authority",
+    "sourceType": "official-pdf",
+    "fields": [
+      "tuition",
+      "feeSession",
+      "internationalFee"
+    ],
+    "retrievedAt": "2026-06-20T15:54:12+00:00",
+    "academicSession": "2026",
+    "status": "cached",
+    "localPath": "sources/raw/fee-pdfs/taylors-fees-schedule-ug-design-myr.pdf",
+    "sha256": "bfa188f599556ea1694a38b0f3de46cd391cbefb1c96e1da9b7958968cd71fd8"
+  },
+  {
+    "id": "fee-pdf-taylors-fees-schedule-ug-design-usd-8640ac55a1",
+    "url": "https://university.taylors.edu.my/content/dam/taylorsrevamp/university/study/scholarships-and-financial-aid/fees-schedule/the-design-school-at-taylors/undergraduate/taylors-fees-schedule-ug-design-usd.pdf",
+    "role": "field-authority",
+    "sourceType": "official-pdf",
+    "fields": [
+      "tuition",
+      "feeSession",
+      "internationalFee"
+    ],
+    "retrievedAt": "2026-06-20T15:54:12+00:00",
+    "academicSession": "2026",
+    "status": "cached",
+    "localPath": "sources/raw/fee-pdfs/taylors-fees-schedule-ug-design-usd.pdf",
+    "sha256": "081463d405db6d245046cb846155f5434328d334a47573672e3e4f066ed1da6f"
+  }
+]

@@ -1,0 +1,95 @@
+{
+  "mode": "imported",
+  "decision": "review-imported",
+  "universityId": 120,
+  "backupPath": "/Users/ian/Desktop/dev/study-malaysia/data/imports/tsu/2026-06-20/tsu-20260620/20_review_import_backup_before.json",
+  "rollbackTarget": "/Users/ian/Desktop/dev/study-malaysia/data/imports/tsu/2026-06-20/tsu-20260620/20_review_import_backup_before.json",
+  "transaction": "completed",
+  "catalogCacheCleared": false,
+  "beforePublicVisibility": {
+    "universityExists": false,
+    "universityId": null,
+    "universityCode": null,
+    "universitySlug": null,
+    "universityIsPublished": false,
+    "universityPublicDisplayStatus": null,
+    "publicUniversityVisible": false,
+    "publicProgrammeRows": 0,
+    "reviewProgrammeRows": 0,
+    "importedReviewRows": 0
+  },
+  "afterPublicVisibility": {
+    "universityExists": true,
+    "universityId": 120,
+    "universityCode": "TSU",
+    "universitySlug": "taylors-university",
+    "universityIsPublished": false,
+    "universityPublicDisplayStatus": "needs-review",
+    "publicUniversityVisible": false,
+    "publicProgrammeRows": 0,
+    "reviewProgrammeRows": 89,
+    "importedReviewRows": 89
+  },
+  "publicContinuityPreserved": true,
+  "summary": {
+    "candidateRows": 89,
+    "importRows": 89,
+    "byLevel": {
+      "bachelor": 46,
+      "master": 28,
+      "phd": 15
+    },
+    "readyRows": 0,
+    "needsReviewRows": 89,
+    "publishedRows": 0,
+    "uniqueSlugs": 89,
+    "officialTotalRows": 89,
+    "ieltsOfficialValueRows": 77,
+    "noIeltsScalarRows": 12,
+    "localizedNameRows": 89,
+    "localizedFacultyRows": 89,
+    "publicDisplayStatusCounts": {
+      "needs-review": 89
+    },
+    "officialSourceStatusCounts": {
+      "official-verified": 89
+    },
+    "feeAuditStatusCounts": {
+      "matched-official": 89
+    }
+  },
+  "verification": {
+    "candidateRows": 89,
+    "importRows": 89,
+    "byLevel": {
+      "bachelor": 46,
+      "master": 28,
+      "phd": 15
+    },
+    "readyRows": 0,
+    "needsReviewRows": 89,
+    "publishedRows": 0,
+    "uniqueSlugs": 89,
+    "officialTotalRows": 89,
+    "ieltsOfficialValueRows": 77,
+    "noIeltsScalarRows": 12,
+    "localizedNameRows": 89,
+    "localizedFacultyRows": 89,
+    "publicDisplayStatusCounts": {
+      "needs-review": 89
+    },
+    "officialSourceStatusCounts": {
+      "official-verified": 89
+    },
+    "feeAuditStatusCounts": {
+      "matched-official": 89
+    },
+    "universityPublicDisplayStatus": "needs-review",
+    "universityIsPublished": false,
+    "universityProgramCount": 89,
+    "importedPublicLeakageRows": 0,
+    "importedAdminNeedsReviewRows": 89,
+    "legacyPublicRows": 0,
+    "staleReviewRows": 0
+  }
+}

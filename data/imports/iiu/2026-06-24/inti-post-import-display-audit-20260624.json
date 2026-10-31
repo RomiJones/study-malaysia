@@ -1,0 +1,122 @@
+{
+  "status": "failed",
+  "checkedAt": "2026-06-24T08:44:04.623Z",
+  "baseUrl": "http://127.0.0.1:3000",
+  "universityRoute": {
+    "path": "/api/universities/inti-international-university",
+    "code": "INTI",
+    "slug": "inti-international-university",
+    "publicDisplayStatus": "ready",
+    "exposedProgrammes": 5,
+    "catalogStatusSummary": {
+      "all": {
+        "total": 5,
+        "ready": 5,
+        "needsReview": 0,
+        "notAvailableForInternational": 0
+      },
+      "byLevel": {
+        "bachelor": {
+          "total": 4,
+          "ready": 4,
+          "needsReview": 0,
+          "notAvailableForInternational": 0
+        },
+        "master": {
+          "total": 1,
+          "ready": 1,
+          "needsReview": 0,
+          "notAvailableForInternational": 0
+        },
+        "postgraduate-certificate": {
+          "total": 0,
+          "ready": 0,
+          "needsReview": 0,
+          "notAvailableForInternational": 0
+        },
+        "postgraduate-diploma": {
+          "total": 0,
+          "ready": 0,
+          "needsReview": 0,
+          "notAvailableForInternational": 0
+        },
+        "phd": {
+          "total": 0,
+          "ready": 0,
+          "needsReview": 0,
+          "notAvailableForInternational": 0
+        }
+      }
+    }
+  },
+  "publicProgramSearch": {
+    "path": "/api/programs?search=INTI&pageSize=200",
+    "itemCount": 11,
+    "reviewSlugMatches": 0
+  },
+  "publicProgramListByUniversity": {
+    "path": "/api/programs?universityId=13&pageSize=200",
+    "itemCount": 5,
+    "reviewSlugMatches": 0
+  },
+  "reviewDetailRoute": {
+    "path": "/api/programs/inti-official-2026-review-row-001-actuarial-science-program-american-university-program",
+    "status": 404
+  },
+  "conclusion": "INTI review-only import is not safe for front-end review until the listed public leakage issues are fixed.",
+  "issues": [
+    {
+      "code": "public-program-leakage",
+      "message": "INTI public university detail exposes review-only programmes.",
+      "evidence": {
+        "publicProgramCount": 5
+      }
+    },
+    {
+      "code": "catalogue-summary-leakage",
+      "message": "INTI public catalogue summary exposes review-only partition counts.",
+      "evidence": {
+        "catalogueSummary": {
+          "all": {
+            "total": 5,
+            "ready": 5,
+            "needsReview": 0,
+            "notAvailableForInternational": 0
+          },
+          "byLevel": {
+            "bachelor": {
+              "total": 4,
+              "ready": 4,
+              "needsReview": 0,
+              "notAvailableForInternational": 0
+            },
+            "master": {
+              "total": 1,
+              "ready": 1,
+              "needsReview": 0,
+              "notAvailableForInternational": 0
+            },
+            "postgraduate-certificate": {
+              "total": 0,
+              "ready": 0,
+              "needsReview": 0,
+              "notAvailableForInternational": 0
+            },
+            "postgraduate-diploma": {
+              "total": 0,
+              "ready": 0,
+              "needsReview": 0,
+              "notAvailableForInternational": 0
+            },
+            "phd": {
+              "total": 0,
+              "ready": 0,
+              "needsReview": 0,
+              "notAvailableForInternational": 0
+            }
+          }
+        }
+      }
+    }
+  ]
+}

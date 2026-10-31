@@ -1,0 +1,985 @@
+{
+  "schemaVersion": 1,
+  "createdAt": "2026-06-28T10:13:39.017Z",
+  "institution": {
+    "code": "UITM",
+    "shortName": "UiTM",
+    "name": "Universiti Teknologi MARA",
+    "slug": "universiti-teknologi-mara-uitm"
+  },
+  "authorization": "ian-approved-all-level-official-publication",
+  "sourceInputs": {
+    "undergraduateAudit": "audits/UiTM_audit_undergraduate_20260627_reviewed_v4.json",
+    "masterAudit": "audits/UiTM_audit_master_20260628_reviewed_v3.json",
+    "doctoralAudit": "audits/UiTM_audit_doctoral_20260628_reviewed_v1.json",
+    "sourceAuditSafeToImport": false,
+    "sourceAuditReason": "StudyMY audit JSON stays safe_to_import=false by contract; this importer publishes only after explicit operator command."
+  },
+  "writePolicy": {
+    "importer": "apps/api/src/db/import-uitm-official-audit.ts",
+    "mode": "publish-all-levels",
+    "upsertPrefix": "uitm-public-20260628-",
+    "universityRow": "upsert by code UITM or slug universiti-teknologi-mara-uitm",
+    "programmeRows": "upsert 388 current UiTM public rows and archive non-current UiTM rows",
+    "transactional": true,
+    "backupRequired": true
+  },
+  "publicationHardGate": {
+    "result": "passed",
+    "standard": "docs/prd/StudyMY-official-programme-publication-hard-gate.md",
+    "rules": [
+      "Official-only source trail",
+      "Chinese bilingual programme name",
+      "Chinese faculty",
+      "ready rows must have direct IELTS scalar",
+      "ready rows must have one official MYR tuition amount",
+      "ready rows must have numeric duration years",
+      "international-unavailable rows must not invent IELTS, fee or application path",
+      "LG950 conditional international language requirement displays IELTS 5.0 in the list and retains IELTS 6.0 / 5.0 split details"
+    ]
+  },
+  "expectedSurface": {
+    "programmeCount": 388,
+    "byLevel": {
+      "bachelor": 164,
+      "master": 162,
+      "phd": 62
+    },
+    "summary": {
+      "importRows": 388,
+      "byLevel": {
+        "bachelor": 164,
+        "master": 162,
+        "phd": 62
+      },
+      "readyRows": 222,
+      "notAvailableForInternationalRows": 166,
+      "languageExceptionRows": 0,
+      "publishedRows": 388,
+      "uniqueSlugs": 388,
+      "officialFeeRows": 222,
+      "officialFeeNotPublishedRows": 166,
+      "directIeltsRows": 225,
+      "readyIeltsRows": 222,
+      "muetRows": 385,
+      "chineseNameRows": 388,
+      "translatedEnglishNameRows": 164,
+      "chineseFacultyRows": 388,
+      "chineseCurriculumRows": 388,
+      "chineseCareerRows": 388,
+      "englishPublicTextRows": 388,
+      "sourceRows": 388,
+      "officialUnpublishedCurriculumRows": 0,
+      "officialUnpublishedCareerRows": 381,
+      "publicDisplayStatusCounts": {
+        "not-available-for-international": 166,
+        "ready": 222
+      },
+      "officialSourceStatusCounts": {
+        "official-page-verified-international-not-available": 166,
+        "official-verified": 222
+      },
+      "feeAuditStatusCounts": {
+        "not-published": 166,
+        "matched-official": 222
+      }
+    },
+    "validationMeta": {
+      "undergraduate": {
+        "validatedBy": "study-audit-validator",
+        "validatedAt": "2026-06-27",
+        "originalAuditFile": "audits/UiTM_audit_undergraduate_20260627.json",
+        "originalAuditDate": "2026-06-27",
+        "schemaStyle": "study-collector-current",
+        "validationVersion": "1.0.4",
+        "reviewVersion": 4,
+        "overallDecision": "PASS-WITH-EXCEPTIONS",
+        "qualityScore": {
+          "overall": 0.98,
+          "formatCompliance": 1,
+          "sourceValidity": 0.98,
+          "completeness": 0.96,
+          "safety": 0.99
+        },
+        "counts": {
+          "totalProgrammesValidated": 164,
+          "pass": 164,
+          "warn": 0,
+          "repair": 0,
+          "reject": 0,
+          "issuesFound": 1,
+          "issuesRepaired": 170,
+          "issuesPending": 0
+        },
+        "languageGateStats": {
+          "directIeltsRows": 3,
+          "noDirectIeltsRows": 161,
+          "languageSlotMismatchRows": 0,
+          "equivalentPathMisusedAsIeltsRows": 0,
+          "formOptionContaminationRows": 0,
+          "officialIeltsDistribution": {
+            "6.0": 3,
+            "null/no-direct-IELTS": 161
+          },
+          "directIeltsProgrammeCodes": [
+            "LG240",
+            "LG241",
+            "LG243"
+          ]
+        },
+        "programmeNameGateStats": {
+          "bilingualProgrammeNameRows": 164,
+          "pureEnglishNameRows": 0,
+          "pureChineseNameRows": 0,
+          "namePrefixContaminationRows": 0,
+          "bilingualScopeLeakRows": 0,
+          "missingOrSourceBlockedRows": [],
+          "translatedFromOfficialMalayRows": [
+            "AD292",
+            "AD293",
+            "BE267",
+            "PH260"
+          ]
+        },
+        "qualityRuleCandidates": [
+          "For public universities whose official FAQ excludes non-citizens/permanent residents from the target level, force all affected programmes to needs-review/not-available-international and block international tuition publication.",
+          "When programme PDFs contain route-specific MUET bands, treat language.muet as non-scalar review data and never convert MUET to IELTS; only direct IELTS strings may populate language.ielts.",
+          "When official shortlink/PDF hosting is outside the university domain but linked from an official university page, preserve an authority exception and keep the official page as governing source.",
+          "当官方本科目录存在专业代码，但 HEA/e-Syarat/学院页未能给出同一代码的官方英文名时，不得从相邻代码、旧代码或相关学院前缀自动推断 nameEn。",
+          "AD/AS、BE/CFAP 等跨学院或跨代码体系的双学位/重编码线索必须进入 source-conflict pending，由 Ian 或官方来源确认后才能双语化专业名称。",
+          "国际学生未开放的官方政策可解除国际学费和国际申请材料缺失，但不能解除专业身份、官方英文名、学制等基础字段的来源要求。",
+          "若 Ian 明确批准，可用官方马来语专业名生成英文译名补齐展示字段，但必须在 fieldEvidence 标记 isOfficialEnglishText=false，避免冒充官方英文原文。",
+          "马来语 Sarjana Muda ... Dengan Kepujian 翻译为 Bachelor ... with Honours 或 (Honours) 时，应优先参考同校 HEA 已发布英文命名风格。",
+          "当官方明确某层级不开放国际学生时，该状态应作为 internationalAdmission 备注/展示状态处理，不应继续计入 tuitionMYR/applicationDocs 缺失或专业级验收失败。",
+          "When an official e-Syarat page link label/code differs from the linked PDF content, validate the PDF text itself and record the code-label conflict instead of treating the programme as missing.",
+          "For UiTM Pharmacy, PH260 appears in the online catalogue and in the official linked PDF, while faculty detail pages may still label the same Bachelor of Pharmacy programme as PH240; keep both sources and scope notes."
+        ],
+        "officialSourceValidation": {
+          "officialDomain": "uitm.edu.my",
+          "authorityExceptionsRetained": [
+            "afb.my",
+            "drive.google.com"
+          ],
+          "authorityExceptionReason": "afb.my shortlinks and Google Drive PDFs are linked from UiTM official e-Syarat pages; UiTM official pages remain governing sources.",
+          "unexpectedThirdPartySources": [],
+          "checkedOfficialSources": [
+            "https://online.uitm.edu.my/degree.cfm",
+            "https://pengambilan.uitm.edu.my/index.php/e-aplikasi/e-syarat",
+            "https://hea.uitm.edu.my/index.php/academic/program-pelaksana-pu",
+            "https://pengambilan.uitm.edu.my/index.php/faq"
+          ]
+        },
+        "reviewerNotes": [
+          "UiTM undergraduate admission is officially not open to non-citizens/permanent residents; per Ian instruction this is treated as an informational status/remark, not a validation failure.",
+          "International tuition and international application document gaps are not counted as missing because international admission is officially not open.",
+          "All 164 programme names pass the bilingual name gate; AD292/AD293/BE267/PH260 nameEn values include reviewed English translations from official Malay catalogue names where exact English rows were not published.",
+          "PH260 pending issue resolved: official e-Syarat linked PDF reached via UITM-PH240 shortlink identifies PH260/UE6727001 with 4 years/8 semesters and September-only intake; Faculty of Pharmacy page provides same-title Bachelor of Pharmacy structure/career context under PH240 label."
+        ]
+      },
+      "master": {
+        "validatedBy": "study-audit-validator + publication-hard-gate",
+        "validatedAt": "2026-06-28",
+        "originalAuditFile": "audits/UiTM_audit_master_20260628.json",
+        "originalAuditDate": "2026-06-28",
+        "schemaStyle": "study-collector-current",
+        "validationVersion": "1.0.4",
+        "reviewVersion": 3,
+        "overallDecision": "PASS-WITH-EXCEPTIONS",
+        "qualityScore": {
+          "overall": 0.97,
+          "formatCompliance": 1,
+          "sourceValidity": 0.98,
+          "completeness": 1,
+          "safety": 0.93
+        },
+        "counts": {
+          "totalProgrammesValidated": 162,
+          "pass": 160,
+          "warn": 2,
+          "repair": 0,
+          "reject": 0,
+          "issuesFound": 0,
+          "issuesRepaired": 0,
+          "issuesPending": 0,
+          "notAvailableForInternational": 2
+        },
+        "languageGateStats": {
+          "directIeltsRows": 160,
+          "noDirectIeltsRows": 2,
+          "languageSlotMismatchRows": 0,
+          "equivalentPathMisusedAsIeltsRows": 0,
+          "formOptionContaminationRows": 0,
+          "officialIeltsDistribution": {
+            "5.0": 106,
+            "6.5": 4,
+            "6.0": 30,
+            "5.5": 16,
+            "7.0": 1,
+            "None": 2,
+            "3.0": 3
+          }
+        },
+        "programmeNameGateStats": {
+          "bilingualProgrammeNameRows": 162,
+          "pureEnglishNameRows": 0,
+          "pureChineseNameRows": 0,
+          "namePrefixContaminationRows": 0,
+          "bilingualScopeLeakRows": 0
+        },
+        "qualityRuleCandidates": [
+          "目录页 programme code/name 必须与详情 PDF 或 international fee row 同时匹配；不得仅按 PDF 文件名或错误链接去重。",
+          "官方 language table 合并单元格时，IELTS 只能来自明确 IELTS 栏位/文本；不得把 MUET/TOEFL/CEFR 数值串入 IELTS。",
+          {
+            "issuePattern": "UiTM cluster 中部分硕士行链接到无关 PDF（例如多条医学/体育专业误链 AT734）；不能用 PDF 文件名命中来判定专业已在 brochure 中覆盖。",
+            "evidence": [
+              {
+                "sourceUrl": "https://ipsis.uitm.edu.my/index.php/apply-now-2-admission/program-by-cluster",
+                "value": "MD787/MD788/MD789/MD790/MD791/MD792/MD793/SR771 rows link to AT734.pdf or lack matching international brochure rows."
+              }
+            ],
+            "proposedGate": "将“目录行 programme code/name 必须与详情 PDF 或 international fee row 同时匹配；不得仅按 PDF 文件名去重”写入 collector/reviewer 门禁。",
+            "affectedSkillReference": "study-collector Phase 2 URL probe / validator V2 source relevance"
+          }
+        ],
+        "reviewDecisionPolicy": "Ian 校对口径：首先采用最新官方数据；若无法明确新旧，则以官方专业页面/学院页面信息为主。",
+        "publicationDecisionPolicy": "Ready rows must pass StudyMY official publication hard gates. MD786 and AM700 are displayed as not available for international applicants because their latest official programme pages do not open them to international applicants."
+      },
+      "doctoral": {
+        "validatedBy": "study-audit-validator + publication-hard-gate",
+        "validatedAt": "2026-06-28",
+        "originalAuditFile": "audits/UiTM_audit_doctoral_20260628.json",
+        "originalAuditDate": "2026-06-28",
+        "schemaStyle": "study-collector-current",
+        "validationVersion": "1.0.4",
+        "reviewVersion": 1,
+        "overallDecision": "PASS-WITH-EXCEPTIONS",
+        "qualityScore": {
+          "overall": 0.98,
+          "formatCompliance": 1,
+          "sourceValidity": 1,
+          "completeness": 0.99,
+          "safety": 0.98
+        },
+        "counts": {
+          "totalProgrammesValidated": 62,
+          "pass": 61,
+          "warn": 1,
+          "repair": 2,
+          "reject": 0,
+          "issuesFound": 3,
+          "issuesRepaired": 2,
+          "issuesPending": 0,
+          "officialLanguageScalarException": 1
+        },
+        "languageGateStats": {
+          "directIeltsRows": 61,
+          "noDirectIeltsRows": 1,
+          "languageSlotMismatchRows": 0,
+          "equivalentPathMisusedAsIeltsRows": 0,
+          "formOptionContaminationRows": 0
+        },
+        "publicationDecisionPolicy": "Ready rows must have a direct official IELTS scalar. LG950 remains visible only as an official language-scalar exception; its details retain the two official routes.",
+        "reviewDecisionPolicy": "Ian 校对口径：首先采用最新官方数据；若无法明确新旧，则以官方专业页面/学院页面信息为主。"
+      }
+    },
+    "exceptionQueue": [
+      {
+        "type": "publication-leakage",
+        "severity": "high",
+        "affectedProgramme": null,
+        "affectedField": "publicDisplayStatus",
+        "description": "UiTM undergraduate programmes are not open to non-citizens/permanent residents per official FAQ; all records must remain needs-review and must not be published as international-student ready.",
+        "evidence": [
+          {
+            "sourceUrl": "https://pengambilan.uitm.edu.my/index.php/faq",
+            "value": "TIDAK BOLEH; open to Malaysian citizens of specified groups only."
+          }
+        ],
+        "recommendation": "Do not import UiTM undergraduate records into public international catalogue unless Ian explicitly creates a non-international display category.",
+        "status": "open"
+      },
+      {
+        "type": "collection-omission",
+        "severity": "high",
+        "affectedProgramme": "PH260",
+        "affectedField": "officialSourceUrl/duration/programmeDetailPdf",
+        "description": "PH260 details were found through the UiTM e-Syarat PH240 shortlink whose official PDF text identifies PH260/UE6727001; Faculty of Pharmacy page provides same-title Bachelor of Pharmacy structure/careers under PH240.",
+        "evidence": [
+          {
+            "sourceUrl": "https://online.uitm.edu.my/degree.cfm",
+            "value": "Online degree catalogue lists PH260 SARJANA MUDA FARMASI DENGAN KEPUJIAN."
+          },
+          {
+            "sourceUrl": "https://afb.my/UITM-PH240",
+            "value": "Official linked PDF text: Sarjana Muda Farmasi Dengan Kepujian PH260/UE6727001 (4 Tahun/8 Semester); September intake only; Program Bertemu Duga."
+          },
+          {
+            "sourceUrl": "https://pharmacy.uitm.edu.my/index.php/component/content/category/8-programme/9-undergraduate?Itemid=101",
+            "value": "Faculty page: Bachelor of Pharmacy - PH240, duration four years, programme structure and careers."
+          }
+        ],
+        "recommendation": "Retain code-label conflict note; use PH260 PDF for exact code/duration/intake/entry and Faculty page for same-title pharmacy structure/career context.",
+        "status": "resolved-with-official-pdf-and-faculty-source"
+      },
+      {
+        "type": "source-conflict",
+        "severity": "medium",
+        "affectedProgramme": "AS277",
+        "affectedField": "officialSourceUrl",
+        "description": "The e-Syarat row for AS277 appears to link to UITM-AS247, while the programme-specific shortlink UITM-AS277 resolves to the matching AS277 PDF.",
+        "evidence": [
+          {
+            "sourceUrl": "https://pengambilan.uitm.edu.my/index.php/e-aplikasi/e-syarat",
+            "value": "AS277 row link observed as https://afb.my/UITM-AS247"
+          },
+          {
+            "sourceUrl": "https://afb.my/UITM-AS277",
+            "value": "Resolved to AS277 Google Drive PDF during deep crawl"
+          }
+        ],
+        "recommendation": "Reviewer should confirm AS277 source URL before any downstream use.",
+        "status": "open"
+      },
+      {
+        "type": "source-authority-ambiguous",
+        "severity": "medium",
+        "affectedProgramme": null,
+        "affectedField": "officialSourceUrl",
+        "description": "e-Syarat links use afb.my shortlinks and Google Drive PDFs. They are official-linked from UiTM, but the file host is not an uitm.edu.my domain.",
+        "evidence": [
+          {
+            "sourceUrl": "https://pengambilan.uitm.edu.my/index.php/e-aplikasi/e-syarat",
+            "value": "Official page links to afb.my/Google Drive PDF files"
+          }
+        ],
+        "recommendation": "Keep authority exception in audit; reviewer should retain UiTM e-Syarat page as governing source.",
+        "status": "open"
+      },
+      {
+        "type": "source-conflict",
+        "severity": "medium",
+        "affectedProgramme": null,
+        "affectedField": "nameEn",
+        "description": "33 programmes have different English names between HEA Program Pelaksana and iCEPS part-time page; audit retains HEA full-time value.",
+        "evidence": [
+          {
+            "sourceUrl": "https://hea.uitm.edu.my/index.php/academic/program-pelaksana-pu",
+            "value": "AC240, AD250, AD252, AD261, AD264, AD265, AM238, LG242, AS249, BA274, BA275, BA279, BA280, BE221, BE247, BE249, BE252, BE255, CS230, CS240, CS255, CS264, ED241, ED260, HM252, HM260, HM265, IC220, MC242, MC247, MC248, SI262, SI263"
+          }
+        ],
+        "recommendation": "Use HEA full-time table for undergraduate full-time nameEn unless Ian decides otherwise.",
+        "status": "open"
+      },
+      {
+        "type": "schema-gap",
+        "severity": "high",
+        "affectedProgramme": null,
+        "affectedField": "tuitionMYR",
+        "description": "UiTM undergraduate admission is officially unavailable to non-citizens/permanent residents; tuitionMYR is intentionally null and should be displayed/handled as international students not open, not as a missing fee to infer.",
+        "evidence": [
+          {
+            "sourceUrl": "https://pengambilan.uitm.edu.my/index.php/faq",
+            "value": "Non-citizens/permanent residents cannot apply."
+          },
+          {
+            "sourceUrl": "https://bendahari.uitm.edu.my/index.php/component/content/article/37-pelajar/73-struktur-yuran-perdana?Itemid=101",
+            "value": "Fee page does not provide an international undergraduate total tuition path for this catalogue."
+          }
+        ],
+        "recommendation": "Keep tuitionMYR null and surface “国际学生未开放” if this dataset is reviewed for reference use; do not substitute local-student fees.",
+        "status": "open"
+      },
+      {
+        "type": "collection-omission",
+        "severity": "medium",
+        "affectedProgramme": null,
+        "affectedField": "curriculum/careerProspects",
+        "description": "Commercial-ready Chinese curriculum and career prospects were not completed for all programmes because the whole level is blocked for international publication; international application documents are handled separately as not open/not applicable.",
+        "evidence": [
+          {
+            "sourceUrl": "https://online.uitm.edu.my/degree.cfm",
+            "value": "Programme list and e-Syarat PDFs focus on eligibility, not full commercial-ready programme detail."
+          }
+        ],
+        "recommendation": "Only continue faculty-by-faculty curriculum/career crawling if Ian wants a non-import reference dataset.",
+        "status": "open"
+      },
+      {
+        "type": "quality-rule-regression",
+        "severity": "high",
+        "affectedProgramme": null,
+        "affectedField": "language.ielts",
+        "description": "UiTM PDFs commonly publish route-specific MUET bands; only three language programmes directly mention IELTS 6.0. The collector must not infer IELTS from MUET or route-specific language rows.",
+        "evidence": [
+          {
+            "sourceUrl": "https://a.uitm.edu.my/SyaratAm/UE",
+            "value": "General MUET Band 1 requirement"
+          },
+          {
+            "sourceUrl": "https://pengambilan.uitm.edu.my/index.php/e-aplikasi/e-syarat",
+            "value": "Programme PDFs include route-specific MUET bands; LG240/LG241/LG243 include direct IELTS 6.0."
+          }
+        ],
+        "recommendation": "Existing language score firewall applies: direct IELTS only; MUET remains MUET/non-scalar where route-specific.",
+        "status": "open"
+      },
+      {
+        "type": "collection-omission",
+        "severity": "high",
+        "affectedProgramme": null,
+        "affectedField": "nameEn/name",
+        "description": "Four catalogue rows lacked confirmed official English names; reviewed_v2 fills nameEn/name using English translations from official Malay programme names under Ian instruction, with fieldEvidence.isOfficialEnglishText=false.",
+        "evidence": [
+          {
+            "sourceUrl": "https://hea.uitm.edu.my/index.php/academic/program-pelaksana-pu",
+            "value": "AD292, AD293, BE267, PH260"
+          }
+        ],
+        "recommendation": "Retain translation status metadata; do not treat these as source-published English names unless official English rows are later found.",
+        "status": "resolved-with-reviewed-translation-and-ph260-official-support"
+      },
+      {
+        "type": "schema-gap",
+        "severity": "medium",
+        "affectedProgramme": null,
+        "affectedField": "internationalApplicationDocs",
+        "description": "UiTM undergraduate international application documents are intentionally empty because official FAQ says non-citizens/permanent residents cannot apply.",
+        "evidence": [
+          {
+            "sourceUrl": "https://pengambilan.uitm.edu.my/index.php/faq",
+            "value": "Bukan Warganegara atau Penduduk Tetap: TIDAK BOLEH"
+          }
+        ],
+        "recommendation": "Treat as “国际学生未开放” rather than missing documents.",
+        "status": "open"
+      },
+      {
+        "type": "collection-omission",
+        "severity": "medium",
+        "affectedProgramme": "Master of Science in Forensic Infrastructure Engineering",
+        "affectedField": "officialSource/detail, entryRequirement, curriculum, creditHours, careerProspects",
+        "description": "原 Phase 4 source-blocked 项已通过 UiTM Penang/PPKAPP 官方 CEEC708 brochure 补齐。",
+        "evidence": [
+          {
+            "sourceUrl": "https://ppkapp.uitm.edu.my/downloaddata/Document/MSc%20FIE%20broshure%2005102022.pdf",
+            "value": "CEEC708 brochure contains entry requirements, 40 credit hours, syllabus, tuition/language and career-facing roles."
+          }
+        ],
+        "recommendation": "由 reviewer skill 复核翻译、费用版本和公开展示字段后再决定是否 ready。",
+        "status": "resolved-in-audit"
+      },
+      {
+        "type": "collection-omission",
+        "severity": "medium",
+        "affectedProgramme": "Master of Internal Medicine",
+        "affectedField": "officialSource/detail, entryRequirement, curriculum, careerProspects",
+        "description": "原 Phase 4 source-blocked 项已通过 UiTM Faculty of Medicine 官方 MD784 brochure 补齐。",
+        "evidence": [
+          {
+            "sourceUrl": "https://medicine.uitm.edu.my/images/OFFICE/dep-dean-PG/coursework/Master-of-Internal-Medicine-MD-784-Brochure.pdf",
+            "value": "MD784 brochure contains programme overview, structure and entry requirements including MBBS/MD, entrance exam/MRCP, APC/TPC."
+          }
+        ],
+        "recommendation": "由 reviewer skill 复核医学临床训练结构映射后再决定是否 ready。",
+        "status": "resolved-in-audit"
+      },
+      {
+        "type": "source-conflict",
+        "severity": "high",
+        "affectedProgramme": "Master of Paediatrics",
+        "affectedField": "internationalEligibility, entryRequirement, curriculum",
+        "description": "已通过 UiTM Faculty of Medicine 官方 MD786 brochure 补齐详情，但该 brochure 的 Essential Requirements 写明 Malaysian citizen and Bumiputera，与 IPSis 2024 international brochure 列出国际费用/语言存在冲突。",
+        "evidence": [
+          {
+            "sourceUrl": "https://medicine.uitm.edu.my/images/OFFICE/dep-dean-PG/coursework/Master-of-Paediatrics.pdf",
+            "value": "Essential Requirements: Malaysian citizen and Bumiputera; MMC registration; internship; minimum 4 months pediatrics experience."
+          },
+          {
+            "sourceUrl": "https://ipsis.uitm.edu.my/images/Admission/BROCHURE_INTERNATIONAL_2024.pdf",
+            "value": "IPSis 2024 international brochure lists MD786 with international fee and English requirements."
+          }
+        ],
+        "recommendation": "按最新/专业级官方来源采用 2026 医学院 PDF，判定国际学生未开放/不可作为国际学生可申请专业上线。",
+        "status": "resolved-by-ian-policy",
+        "publicationDisplayStatus": "not-available-for-international"
+      },
+      {
+        "type": "source-conflict",
+        "severity": "medium",
+        "affectedProgramme": "Master of Business Analytics",
+        "affectedField": "language.ielts, language.muet, tuitionMYR",
+        "description": "已通过 UiTM Kelantan 官方 BA767 PDF 补齐详情；该 2023 PDF 与 IPSis 2024 international brochure 对英语成绩和费用存在版本差异。",
+        "evidence": [
+          {
+            "sourceUrl": "https://kelantan.uitm.edu.my/kb/images/expertise/MASTER_OF_BUSINESS_ANALYTICS_BA767.pdf",
+            "value": "Kelantan 2023 PDF: IELTS Band 5.5, MUET Band 4, international tuition RM 36,550."
+          },
+          {
+            "sourceUrl": "https://ipsis.uitm.edu.my/images/Admission/BROCHURE_INTERNATIONAL_2024.pdf",
+            "value": "IPSis 2024 brochure: IELTS Band 5, MUET Band 3, international fee RM 37,000."
+          }
+        ],
+        "recommendation": "按最新官方数据优先采用 IPSis 2024 international brochure；旧版 March 2023 intake 专业 PDF 不作为当前费用/语言口径。",
+        "status": "resolved-by-ian-policy"
+      },
+      {
+        "type": "source-conflict",
+        "severity": "medium",
+        "affectedProgramme": "Master in Islamic Family Law",
+        "affectedField": "tuitionMYR, duration",
+        "description": "已通过 ACIS 官方 IC703 页面补齐详情；ACIS 页面与 IPSis 2024 international brochure 对费用和学制口径存在差异。",
+        "evidence": [
+          {
+            "sourceUrl": "https://acis.uitm.edu.my/index.php/component/content/article/80-ic703-master-in-islamic-family-law?Itemid=101&catid=27",
+            "value": "ACIS page: 42 credit hours; full-time 1.5-3 years; International Student total amount RM 17,270."
+          },
+          {
+            "sourceUrl": "https://ipsis.uitm.edu.my/images/Admission/BROCHURE_INTERNATIONAL_2024.pdf",
+            "value": "IPSis 2024 brochure: 4 semesters and RM 23,000."
+          }
+        ],
+        "recommendation": "按官方专业页面优先采用 ACIS 当前 IC703 页面费用/学制口径。",
+        "status": "resolved-by-ian-policy"
+      },
+      {
+        "type": "source-conflict",
+        "severity": "high",
+        "affectedProgramme": "Master of Corporate Administration",
+        "affectedField": "internationalEligibility, tuitionMYR, language",
+        "description": "原缺语言项已转为国际招生状态问题：FSPPP 官方 AM700 页面明确 Not offered for International Applicant；不应继续尝试补国际学生 IELTS 或展示国际学生费用。",
+        "evidence": [
+          {
+            "sourceUrl": "https://fsppp.uitm.edu.my/index.php/postgraduate/master/master-of-corporate-administration-moca-grad-icsa-am700",
+            "value": "Not offered for International Applicant."
+          },
+          {
+            "sourceUrl": "https://ipsis.uitm.edu.my/images/Admission/Prospectus/AM700.pdf",
+            "value": "Older prospectus used for curriculum/entry only; not used to infer current international availability."
+          }
+        ],
+        "recommendation": "按 FSPPP 官方专业页面判定国际学生未开放。",
+        "status": "resolved-by-ian-policy",
+        "publicationDisplayStatus": "not-available-for-international"
+      },
+      {
+        "type": "official-source-expired",
+        "severity": "medium",
+        "affectedProgramme": "AS728",
+        "affectedField": "availability",
+        "description": "当前官方 cluster 标注专业暂停招生或暂不提供。",
+        "evidence": [
+          {
+            "sourceUrl": "https://ipsis.uitm.edu.my/index.php/apply-now-2-admission/program-by-cluster",
+            "value": "(AS728) Master of Science in Environment Technology (Student admissions are suspended)"
+          }
+        ],
+        "recommendation": "不作为国际学生可申请硕士专业上线；后续以 UiTM 最新官方目录复核。",
+        "status": "resolved-in-review"
+      },
+      {
+        "type": "official-source-expired",
+        "severity": "medium",
+        "affectedProgramme": "AS746",
+        "affectedField": "availability",
+        "description": "当前官方 cluster 标注专业暂停招生或暂不提供。",
+        "evidence": [
+          {
+            "sourceUrl": "https://ipsis.uitm.edu.my/index.php/apply-now-2-admission/program-by-cluster",
+            "value": "(AS746) Master of Science in Food Science and Technology (Student admissions are suspended)"
+          }
+        ],
+        "recommendation": "不作为国际学生可申请硕士专业上线；后续以 UiTM 最新官方目录复核。",
+        "status": "resolved-in-review"
+      },
+      {
+        "type": "official-source-expired",
+        "severity": "medium",
+        "affectedProgramme": "AS720",
+        "affectedField": "availability",
+        "description": "当前官方 cluster 标注专业暂停招生或暂不提供。",
+        "evidence": [
+          {
+            "sourceUrl": "https://ipsis.uitm.edu.my/index.php/apply-now-2-admission/program-by-cluster",
+            "value": "(AS720) Master of Science in Textiles (Student admissions are suspended)"
+          }
+        ],
+        "recommendation": "不作为国际学生可申请硕士专业上线；后续以 UiTM 最新官方目录复核。",
+        "status": "resolved-in-review"
+      },
+      {
+        "type": "official-source-expired",
+        "severity": "medium",
+        "affectedProgramme": "AS724",
+        "affectedField": "availability",
+        "description": "当前官方 cluster 标注专业暂停招生或暂不提供。",
+        "evidence": [
+          {
+            "sourceUrl": "https://ipsis.uitm.edu.my/index.php/apply-now-2-admission/program-by-cluster",
+            "value": "(AS724) Master of Science in Applied Microbiology (Student admissions are suspended)"
+          }
+        ],
+        "recommendation": "不作为国际学生可申请硕士专业上线；后续以 UiTM 最新官方目录复核。",
+        "status": "resolved-in-review"
+      },
+      {
+        "type": "official-source-expired",
+        "severity": "medium",
+        "affectedProgramme": "AS730",
+        "affectedField": "availability",
+        "description": "当前官方 cluster 标注专业暂停招生或暂不提供。",
+        "evidence": [
+          {
+            "sourceUrl": "https://ipsis.uitm.edu.my/index.php/apply-now-2-admission/program-by-cluster",
+            "value": "(AS730) Master of Science in Applied Biology (Student admissions are suspended)"
+          }
+        ],
+        "recommendation": "不作为国际学生可申请硕士专业上线；后续以 UiTM 最新官方目录复核。",
+        "status": "resolved-in-review"
+      },
+      {
+        "type": "official-source-expired",
+        "severity": "medium",
+        "affectedProgramme": "DS701",
+        "affectedField": "availability",
+        "description": "当前官方 cluster 标注专业暂停招生或暂不提供。",
+        "evidence": [
+          {
+            "sourceUrl": "https://ipsis.uitm.edu.my/index.php/apply-now-2-admission/program-by-cluster",
+            "value": "(DS701) Master of Science in Dentistry (Intake October only ) This programme is not offered until further notice."
+          }
+        ],
+        "recommendation": "不作为国际学生可申请硕士专业上线；后续以 UiTM 最新官方目录复核。",
+        "status": "resolved-in-review"
+      },
+      {
+        "type": "publication-leakage",
+        "severity": "high",
+        "affectedProgramme": "Master of Applied Entrepreneurship",
+        "affectedField": "internationalAvailability",
+        "description": "not-available-international",
+        "evidence": [
+          {
+            "sourceUrl": "https://ipsis.uitm.edu.my/images/Admission/Prospectus/BA721.pdf",
+            "value": "Prospectus fee section states NOT OFFER FOR INTERNATIONAL."
+          }
+        ],
+        "recommendation": "不要进入国际学生可申请列表；必要时人工复核学院最新页面。",
+        "status": "resolved-in-review"
+      },
+      {
+        "type": "collection-omission",
+        "severity": "medium",
+        "affectedProgramme": "Masters in Construction Management",
+        "affectedField": "internationalAvailability",
+        "description": "source-unpublished-for-international",
+        "evidence": [
+          {
+            "sourceUrl": "https://ipsis.uitm.edu.my/index.php/apply-now-2-admission/program-by-cluster",
+            "value": "Cluster row has no prospectus link and programme is absent from international brochure."
+          }
+        ],
+        "recommendation": "不要进入国际学生可申请列表；必要时人工复核学院最新页面。",
+        "status": "resolved-in-review"
+      },
+      {
+        "type": "publication-leakage",
+        "severity": "high",
+        "affectedProgramme": "Master of Pathology (Forensic Pathology)",
+        "affectedField": "internationalAvailability",
+        "description": "not-available-international-or-local-only",
+        "evidence": [
+          {
+            "sourceUrl": "https://ipsis.uitm.edu.my/images/Admission/Prospectus/MD781.pdf",
+            "value": "Prospectus fee section contains Local fee only; no International fee and not present in international brochure."
+          }
+        ],
+        "recommendation": "不要进入国际学生可申请列表；必要时人工复核学院最新页面。",
+        "status": "resolved-in-review"
+      },
+      {
+        "type": "publication-leakage",
+        "severity": "high",
+        "affectedProgramme": "Master in Business Administration (MBA Executive)",
+        "affectedField": "internationalAvailability",
+        "description": "not-available-international",
+        "evidence": [
+          {
+            "sourceUrl": "https://ipsis.uitm.edu.my/images/Admission/Prospectus/AA701.pdf",
+            "value": "AA701/MBA Executive prospectus fee section states NOT OFFER FOR INTERNATIONAL."
+          }
+        ],
+        "recommendation": "不要进入国际学生可申请列表；必要时人工复核学院最新页面。",
+        "status": "resolved-in-review"
+      },
+      {
+        "type": "source-conflict",
+        "severity": "low",
+        "affectedProgramme": "Master of Science Urban Space Design",
+        "affectedField": "programmeCode",
+        "description": "cluster code BE778 与 international brochure canonical code CFAP778 不一致，按 international brochure 规范码处理。",
+        "evidence": [
+          {
+            "sourceUrl": "https://ipsis.uitm.edu.my/images/Admission/Prospectus/AP778.pdf",
+            "value": "(BE778) Master of Science Urban Space Design"
+          }
+        ],
+        "recommendation": "reviewer 复核 code alias，不应重复建专业。",
+        "status": "resolved-in-review"
+      },
+      {
+        "type": "source-conflict",
+        "severity": "low",
+        "affectedProgramme": "Master of Science in Electrical and Electronics Engineering Management",
+        "affectedField": "programmeCode",
+        "description": "cluster code EE771 与 international brochure canonical code CEEE770 不一致，按 international brochure 规范码处理。",
+        "evidence": [
+          {
+            "sourceUrl": "https://ipsis.uitm.edu.my/images/Admission/Prospectus/CEE770.pdf",
+            "value": "(EE771) Master of Science in Electrical and Electronics Engineering Management"
+          }
+        ],
+        "recommendation": "reviewer 复核 code alias，不应重复建专业。",
+        "status": "resolved-in-review"
+      },
+      {
+        "type": "collection-omission",
+        "severity": "medium",
+        "affectedProgramme": "Master of Orthopaedic Surgery And Traumatology",
+        "affectedField": "internationalAvailability",
+        "description": "cluster 中出现，但未在 international brochure/费用表中作为国际硕士候选确认，且部分链接指向无关 AT734 PDF。",
+        "evidence": [
+          {
+            "sourceUrl": "https://ipsis.uitm.edu.my/images/Admission/Prospectus/AT734.pdf",
+            "value": "(MD787) Master of Orthopaedic Surgery And Traumatology (Intake June only)"
+          }
+        ],
+        "recommendation": "不进入国际学生硕士列表；如 Ian 需要，可单独深挖学院/医学专科页面。",
+        "status": "resolved-in-review"
+      },
+      {
+        "type": "collection-omission",
+        "severity": "medium",
+        "affectedProgramme": "Master of Master Of Surgery (General Surgery)",
+        "affectedField": "internationalAvailability",
+        "description": "cluster 中出现，但未在 international brochure/费用表中作为国际硕士候选确认，且部分链接指向无关 AT734 PDF。",
+        "evidence": [
+          {
+            "sourceUrl": "https://ipsis.uitm.edu.my/images/Admission/Prospectus/AT734.pdf",
+            "value": "(MD788) Master of Master Of Surgery (General Surgery) (Intake June only)"
+          }
+        ],
+        "recommendation": "不进入国际学生硕士列表；如 Ian 需要，可单独深挖学院/医学专科页面。",
+        "status": "resolved-in-review"
+      },
+      {
+        "type": "collection-omission",
+        "severity": "medium",
+        "affectedProgramme": "Master of Master Of Obstetrics And Gynaecology",
+        "affectedField": "internationalAvailability",
+        "description": "cluster 中出现，但未在 international brochure/费用表中作为国际硕士候选确认，且部分链接指向无关 AT734 PDF。",
+        "evidence": [
+          {
+            "sourceUrl": "https://ipsis.uitm.edu.my/images/Admission/Prospectus/AT734.pdf",
+            "value": "(MD789) Master of Master Of Obstetrics And Gynaecology (Intake June only)"
+          }
+        ],
+        "recommendation": "不进入国际学生硕士列表；如 Ian 需要，可单独深挖学院/医学专科页面。",
+        "status": "resolved-in-review"
+      },
+      {
+        "type": "collection-omission",
+        "severity": "medium",
+        "affectedProgramme": "Master Of Pathology (Anatomic Pathology)",
+        "affectedField": "internationalAvailability",
+        "description": "cluster 中出现，但未在 international brochure/费用表中作为国际硕士候选确认，且部分链接指向无关 AT734 PDF。",
+        "evidence": [
+          {
+            "sourceUrl": "https://ipsis.uitm.edu.my/images/Admission/Prospectus/AT734.pdf",
+            "value": "(MD790) Master Of Pathology (Anatomic Pathology) (Intake June only)"
+          }
+        ],
+        "recommendation": "不进入国际学生硕士列表；如 Ian 需要，可单独深挖学院/医学专科页面。",
+        "status": "resolved-in-review"
+      },
+      {
+        "type": "collection-omission",
+        "severity": "medium",
+        "affectedProgramme": "Master Of Pathology (Chemical Pathology)",
+        "affectedField": "internationalAvailability",
+        "description": "cluster 中出现，但未在 international brochure/费用表中作为国际硕士候选确认，且部分链接指向无关 AT734 PDF。",
+        "evidence": [
+          {
+            "sourceUrl": "https://ipsis.uitm.edu.my/images/Admission/Prospectus/AT734.pdf",
+            "value": "(MD791) Master Of Pathology (Chemical Pathology) (Intake June only)"
+          }
+        ],
+        "recommendation": "不进入国际学生硕士列表；如 Ian 需要，可单独深挖学院/医学专科页面。",
+        "status": "resolved-in-review"
+      },
+      {
+        "type": "collection-omission",
+        "severity": "medium",
+        "affectedProgramme": "Master Of Pathology (Haematology)",
+        "affectedField": "internationalAvailability",
+        "description": "cluster 中出现，但未在 international brochure/费用表中作为国际硕士候选确认，且部分链接指向无关 AT734 PDF。",
+        "evidence": [
+          {
+            "sourceUrl": "https://ipsis.uitm.edu.my/images/Admission/Prospectus/AT734.pdf",
+            "value": "(MD792) Master Of Pathology (Haematology) (Intake June only)"
+          }
+        ],
+        "recommendation": "不进入国际学生硕士列表；如 Ian 需要，可单独深挖学院/医学专科页面。",
+        "status": "resolved-in-review"
+      },
+      {
+        "type": "collection-omission",
+        "severity": "medium",
+        "affectedProgramme": "Master Of Pathology (Medical Microbiology)",
+        "affectedField": "internationalAvailability",
+        "description": "cluster 中出现，但未在 international brochure/费用表中作为国际硕士候选确认，且部分链接指向无关 AT734 PDF。",
+        "evidence": [
+          {
+            "sourceUrl": "https://ipsis.uitm.edu.my/images/Admission/Prospectus/AT734.pdf",
+            "value": "(MD793) Master Of Pathology (Medical Microbiology) (Intake June only)"
+          }
+        ],
+        "recommendation": "不进入国际学生硕士列表；如 Ian 需要，可单独深挖学院/医学专科页面。",
+        "status": "resolved-in-review"
+      },
+      {
+        "type": "collection-omission",
+        "severity": "medium",
+        "affectedProgramme": "Master of Science in Sports Industry Management",
+        "affectedField": "internationalAvailability",
+        "description": "cluster 中出现，但未在 international brochure/费用表中作为国际硕士候选确认，且部分链接指向无关 AT734 PDF。",
+        "evidence": [
+          {
+            "sourceUrl": "https://ipsis.uitm.edu.my/images/Admission/Prospectus/AT734.pdf",
+            "value": "(SR771) Master of Science in Sports Industry Management (Intake October only)"
+          }
+        ],
+        "recommendation": "不进入国际学生硕士列表；如 Ian 需要，可单独深挖学院/医学专科页面。",
+        "status": "resolved-in-review"
+      },
+      {
+        "type": "source-conflict",
+        "severity": "low",
+        "affectedProgramme": "Master in Islamic Banking and Finance",
+        "affectedField": "programmeCode",
+        "description": "cluster code AA707 与 international brochure canonical code AA706 不一致，按 international brochure 规范码处理。",
+        "evidence": [
+          {
+            "sourceUrl": "https://ipsis.uitm.edu.my/images/Admission/Prospectus/AA706.pdf",
+            "value": "(AA707) Master in Islamic Banking and Finance"
+          }
+        ],
+        "recommendation": "reviewer 复核 code alias，不应重复建专业。",
+        "status": "resolved-in-review"
+      },
+      {
+        "type": "quality-rule-regression",
+        "severity": "high",
+        "affectedProgramme": null,
+        "affectedField": "programmeBaseline.detailUrl",
+        "description": "UiTM cluster 中部分硕士行链接到无关 PDF（例如多条医学/体育专业误链 AT734）；不能用 PDF 文件名命中来判定专业已在 brochure 中覆盖。",
+        "evidence": [
+          {
+            "sourceUrl": "https://ipsis.uitm.edu.my/index.php/apply-now-2-admission/program-by-cluster",
+            "value": "MD787/MD788/MD789/MD790/MD791/MD792/MD793/SR771 rows link to AT734.pdf or lack matching international brochure rows."
+          }
+        ],
+        "recommendation": "将“目录行 programme code/name 必须与详情 PDF 或 international fee row 同时匹配；不得仅按 PDF 文件名去重”写入 collector/reviewer 门禁。",
+        "status": "resolved-in-review"
+      },
+      {
+        "type": "collection-omission",
+        "severity": "high",
+        "affectedProgramme": "Doctor of Philosophy (Science)",
+        "affectedField": "programmeBaseline/scope",
+        "description": "AS950 存在于 UiTM official Prospectus 与 official international brochure，但未出现在当前 IPSis Program by Cluster 目录行中。",
+        "evidence": [
+          {
+            "sourceUrl": "https://ipsis.uitm.edu.my/images/Admission/Prospectus/AS950.pdf",
+            "value": "AS950 official prospectus returns 200 PDF and lists Doctor of Philosophy (Science)."
+          },
+          {
+            "sourceUrl": "https://ipsis.uitm.edu.my/images/Admission/BROCHURE_INTERNATIONAL_2024.pdf",
+            "value": "International brochure page lists AS950 Doctor of Philosophy (Science)."
+          }
+        ],
+        "recommendation": "请 reviewer/Ian 判断 AS950 是否作为当前可申请博士项目上线；在裁定前保持 needs-review。",
+        "status": "resolved-in-review",
+        "publicationDisplayStatus": "ready",
+        "reviewEvidence": "Official AS950 Prospectus, Faculty of Applied Sciences page and IPSis international brochure confirm AS950."
+      },
+      {
+        "type": "format-decoupling-risk",
+        "severity": "high",
+        "affectedProgramme": "Doctor of Philosophy (Applied Language Studies)",
+        "affectedField": "language.ielts",
+        "description": "LG950 官方语言要求按 English major 与其他语言方向分成两套 IELTS/MUET/CEFR，无法安全输出单一列表 IELTS。",
+        "evidence": [
+          {
+            "sourceUrl": "https://ipsis.uitm.edu.my/images/Admission/Prospectus/LG950.pdf",
+            "value": "English major: IELTS 6.0/MUET Band 4; other language major: IELTS 5.0/MUET Band 3."
+          }
+        ],
+        "recommendation": "保留 language.ielts=null 并在详情显示方向分流要求；如要列表单值需 Ian 裁定。",
+        "status": "resolved-as-display-exception",
+        "publicationDisplayStatus": "official-language-requirement-not-published",
+        "reviewEvidence": "Official LG950 prospectus has two language routes; no single IELTS scalar is safe for ready display."
+      },
+      {
+        "type": "format-decoupling-risk",
+        "severity": "medium",
+        "affectedProgramme": "Doctor of Philosophy in Transport and Logistics",
+        "affectedField": "language.ielts",
+        "description": "LT990 Prospectus 未列独立语言段落；官方 international brochure 在 MITRANS 区块以合并栏展示 LT780/LT990 语言要求。",
+        "evidence": [
+          {
+            "sourceUrl": "https://ipsis.uitm.edu.my/images/Admission/BROCHURE_INTERNATIONAL_2024.pdf",
+            "value": "MITRANS section shows LT990 and merged MUET Band 3 / IELTS Band 5 / TOEFL IBT 35-45 language column."
+          }
+        ],
+        "recommendation": "当前保留对应分数但标 needs-review，由 reviewer 复核合并栏适用范围。",
+        "status": "resolved-in-review",
+        "publicationDisplayStatus": "ready",
+        "reviewEvidence": "Official LT990 prospectus, Centre of Excellence cluster and MITRANS merged international brochure language row confirm LT990."
+      },
+      {
+        "type": "source-conflict",
+        "severity": "low",
+        "affectedProgramme": null,
+        "affectedField": "tuitionMYR",
+        "description": "UiTM programme prospectus 多数列出精确 International total estimation，central international brochure 多为四舍五入总费用。collector 采用当前 programme prospectus 作为主费用来源。",
+        "evidence": [
+          {
+            "sourceUrl": "https://ipsis.uitm.edu.my/images/Admission/BROCHURE_INTERNATIONAL_2024.pdf",
+            "value": "central brochure rounded examples: RM 34,000 / RM 50,000 / RM 61,000"
+          },
+          {
+            "sourceUrl": "https://ipsis.uitm.edu.my/images/Admission/Prospectus/BA950.pdf",
+            "value": "programme prospectus example: International total estimation RM 34,280"
+          }
+        ],
+        "recommendation": "费用审核时继续遵循当前专业页/Prospectus 精确金额优先；central brochure 仅作佐证或非采纳来源。",
+        "status": "acknowledged-publication-rule"
+      },
+      {
+        "type": "quality-rule-regression",
+        "severity": "low",
+        "affectedProgramme": null,
+        "affectedField": "code",
+        "description": "UiTM 博士目录存在 catalogue code 与 Prospectus title code/PDF filename 不一致的官方 alias 模式。",
+        "evidence": [
+          {
+            "sourceUrl": "https://ipsis.uitm.edu.my/index.php/apply-now-2-admission/program-by-cluster/business-management-cluster",
+            "value": "SI951 links to IM950.pdf; AA902 links to AA901.pdf; engineering and creative arts use CEEE/CAAD/CAMU/CAFF title codes."
+          }
+        ],
+        "recommendation": "后续采集/验收门禁应保留 officialCodeAlias，不应因 code 不一致直接判为重复或错误。",
+        "status": "acknowledged-publication-rule"
+      }
+    ]
+  }
+}

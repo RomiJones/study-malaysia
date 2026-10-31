@@ -91,7 +91,19 @@ export interface UTMMasterCandidateRecord {
     note: string;
   };
   academicRequirement: { status: string; sourceUrl: string; summary: string };
-  languageRequirement: { status: string; sourceUrl: string; summary: string };
+  languageRequirement: {
+    status: string;
+    sourceUrl: string;
+    summary: string;
+    scores?: {
+      muet?: number | null;
+      ielts?: number | null;
+      toeflIbt?: number | null;
+      pteAcademic?: number | null;
+      cambridgeCeq?: number | null;
+      ciepElsLevel?: number | null;
+    };
+  };
   applicationDocumentsPolicy: { status: string; sourceUrl: string; documents: string[] };
   sourceUrls: UTMSourceUrls;
   evidence: Array<Record<string, unknown>>;
@@ -120,6 +132,7 @@ interface UTMMasterImportSummary {
   importRows: number;
   readyRows: number;
   uniqueSlugs: number;
+  officialDurationRows: number;
   officialTotalFeeRows: number;
   calculatedFromOfficialRateRows: number;
   officialRateOnlyRows: number;
@@ -135,12 +148,14 @@ interface UTMMasterImportVerification {
   readyRows: number;
   publishedRows: number;
   legacyMasterPublicRows: number;
+  officialDurationRows: number;
   officialTotalFeeRows: number;
   calculatedFromOfficialRateRows: number;
   officialRateOnlyRows: number;
   conflictFeeRows: number;
   noScalarTotalRows: number;
   academicRequirementGpaRows: number;
+  levelRows: number;
   languageRows: number;
   sourceLinkedRows: number;
   publicDisplayStatusCounts: Record<string, number>;
@@ -200,6 +215,7 @@ const traditionalCharacterMap = Object.fromEntries(
     ["气", "氣"], ["职", "職"], ["业", "業"], ["创", "創"], ["医", "醫"], ["电", "電"], ["无", "無"],
     ["线", "線"], ["机", "機"], ["复", "復"], ["技", "技"], ["术", "術"], ["资", "資"], ["开", "開"],
     ["发", "發"], ["数", "數"], ["课", "課"], ["评", "評"], ["询", "詢"], ["体", "體"], ["儿", "兒"],
+    ["说", "說"], ["该", "該"], ["习", "習"], ["论", "論"], ["导", "導"],
     ["区", "區"], ["遥", "遙"], ["测", "測"], ["绘", "繪"], ["产", "產"], ["规", "規"], ["划", "劃"],
     ["计", "計"], ["软", "軟"], ["据", "據"], ["经", "經"], ["济", "濟"], ["预", "預"], ["灾", "災"],
     ["风", "風"], ["险", "險"], ["续", "續"], ["设", "設"], ["联", "聯"], ["双", "雙"], ["国", "國"],
@@ -405,11 +421,77 @@ function localizedFaculty(faculty: string): LocalizedText {
   return t(faculty, zhCN, toTraditional(zhCN), faculty);
 }
 
+function normalizedMasterFocus(name: string) {
+  const normalized = normalizeText(name);
+  const fieldMatch = normalized.match(/^Master of Philosophy Field of Research\s*:?\s*(.*)$/i);
+  if (fieldMatch?.[1]) {
+    return { kind: "research-field" as const, value: normalizeText(fieldMatch[1]) };
+  }
+  const specializationMatch = normalized.match(/Specialization\s*:?\s*(.*)$/i);
+  if (specializationMatch?.[1]) {
+    return { kind: "specialization" as const, value: normalizeText(specializationMatch[1]) };
+  }
+  return null;
+}
+
+function masterCourseSetting(candidate: UTMMasterCandidateRecord): LocalizedStringArray {
+  const focus = normalizedMasterFocus(candidate.nameEnOfficial);
+  if (!focus) return arr([]);
+  const subjectZh = translateSubject(focus.value);
+  if (focus.kind === "research-field") {
+    const zh = `研究领域：${subjectZh}`;
+    return arr(
+      [`Research field: ${focus.value}`],
+      [zh],
+      [toTraditional(zh)],
+      [`Research field: ${focus.value}`]
+    );
+  }
+  const zh = `官方专业方向：${subjectZh}`;
+  return arr(
+    [`Official specialization: ${focus.value}`],
+    [zh],
+    [toTraditional(zh)],
+    [`Official specialization: ${focus.value}`]
+  );
+}
+
+function masterSpecializations(candidate: UTMMasterCandidateRecord): LocalizedStringArray {
+  const focus = normalizedMasterFocus(candidate.nameEnOfficial);
+  if (!focus || focus.kind !== "specialization") return arr([]);
+  const zh = translateSubject(focus.value);
+  return arr([focus.value], [zh], [toTraditional(zh)], [focus.value]);
+}
+
 function studyModeDisplay(mode: StudyMode, official: string) {
-  if (mode === "distance") return official || "Open and Distance Learning";
+  if (mode === "distance") {
+    const arrangement = official || "Open and Distance Learning";
+    return /coursework|mixed|research/i.test(arrangement) ? arrangement : `Coursework / ${arrangement}`;
+  }
   if (mode === "mixed") return official || "Mixed mode";
   if (mode === "research") return official || "Research";
   return official || "Coursework";
+}
+
+function isOdlCandidate(candidate: UTMMasterCandidateRecord) {
+  return /open\s+and\s+distance\s+learning|\bodl\b/i.test(candidate.studyModeOfficial);
+}
+
+function formatYears(value: number) {
+  return `${Number.isInteger(value) ? value.toFixed(0) : value.toFixed(1)} years`;
+}
+
+function semesterEvidenceText(value: string) {
+  const match = value.match(/(\d+(?:\.\d+)?(?:\s*[-–—]\s*\d+(?:\.\d+)?)?)\s*semesters?/i);
+  return match?.[1]?.replace(/\s*[-–—]\s*/g, "-");
+}
+
+function standardizedDurationOfficial(candidate: UTMMasterCandidateRecord) {
+  const raw = normalizeText(candidate.durationOfficial, 600);
+  if (/^Standardized duration:/i.test(raw)) return raw;
+  const semesters = semesterEvidenceText(raw);
+  const semesterNote = semesters ? ` (${semesters} semesters)` : "";
+  return `Standardized duration: ${formatYears(candidate.durationYears)}${semesterNote}. Official source: ${raw}`;
 }
 
 function annualTuitionCny(totalMyr: number | null, years: number) {
@@ -419,7 +501,7 @@ function annualTuitionCny(totalMyr: number | null, years: number) {
 
 function academicRequirementPresentation(candidate: UTMMasterCandidateRecord) {
   const name = candidate.nameEnOfficial.toLowerCase();
-  if (candidate.studyMode === "distance") {
+  if (isOdlCandidate(candidate)) {
     return {
       gpa: 2.5,
       sourceUrl: utmOdlAdmissionRequirementUrl,
@@ -534,6 +616,21 @@ function feePresentation(candidate: UTMMasterCandidateRecord): {
       officialTuitionMYR: null
     };
   }
+  const prerequisiteFeeNumbers = [...fee.note.matchAll(/RM\s?([\d,]+)/gi)].map((match) => Number(match[1].replace(/,/g, "")));
+  const hasPrerequisiteVariant = /with(?:out)?[-\s]?prerequisite/i.test(fee.note) && prerequisiteFeeNumbers.length >= 2;
+  if (fee.status === "conflict" && hasPrerequisiteVariant) {
+    const standardAmount = Math.min(...prerequisiteFeeNumbers);
+    const prerequisiteAmount = Math.max(...prerequisiteFeeNumbers);
+    return {
+      amount: standardAmount,
+      currency: "MYR",
+      display: `MYR ${standardAmount.toLocaleString("en-US")} standard ODL total tuition`,
+      note: `UTM ODL official international fee source publishes prerequisite-dependent totals. StudyMY displays the standard without-prerequisite total of MYR ${standardAmount.toLocaleString("en-US")} in the list; the with-prerequisite variant is MYR ${prerequisiteAmount.toLocaleString("en-US")}. Official note: ${fee.note}`,
+      sourceUrl: fee.officialFeeSourceUrl,
+      auditStatus: "matched-official",
+      officialTuitionMYR: standardAmount
+    };
+  }
   const feeNumbers = [...fee.note.matchAll(/RM\s?([\d,]+)/gi)].map((match) => Number(match[1].replace(/,/g, "")));
   const officialVariantDisplay = feeNumbers.length
     ? `Official fee variants: ${feeNumbers.map((amount) => `MYR ${amount.toLocaleString("en-US")}`).join(" / ")}`
@@ -544,7 +641,7 @@ function feePresentation(candidate: UTMMasterCandidateRecord): {
     display: officialVariantDisplay,
     note: `No StudyMY scalar total is written because UTM publishes more than one applicable fee value or a non-primary total. Official note: ${fee.note}`,
     sourceUrl: fee.officialFeeSourceUrl,
-    auditStatus: "not-published",
+    auditStatus: "official-non-scalar",
     officialTuitionMYR: null
   };
 }
@@ -629,6 +726,10 @@ export function validateUtmMasterCandidate(dataset: UTMMasterCandidateDataset) {
     if (!record.facultyEn) errors.push(`Row ${record.ordinal} has no faculty.`);
     if (!record.officialSourceUrl) errors.push(`Row ${record.ordinal} has no official source URL.`);
     if (!record.fee.officialFeeSourceUrl) errors.push(`Row ${record.ordinal} has no official fee source URL.`);
+    if (!(record.durationYears > 0)) errors.push(`Row ${record.ordinal} has no standardized duration years.`);
+    if (Math.abs(record.durationYears - 1.5) > 0.01 || !/(?:3\s*semesters?|1\.5\s*years?)/i.test(record.durationOfficial)) {
+      errors.push(`Row ${record.ordinal} has no official evidence for the 1.5-year duration.`);
+    }
     if (record.fee.status === "verified-official-total" && !record.fee.tuitionAmount) {
       errors.push(`Row ${record.ordinal} verified official total fee has no amount.`);
     }
@@ -659,7 +760,7 @@ export function buildUtmMasterProgramRows(dataset: UTMMasterCandidateDataset): A
       studyMode: studyModeDisplay(candidate.studyMode, candidate.studyModeOfficial),
       campus: candidate.campus,
       durationYears: candidate.durationYears,
-      durationOfficial: candidate.durationOfficial,
+      durationOfficial: standardizedDurationOfficial(candidate),
       annualTuitionCny: annualTuitionCny(fee.officialTuitionMYR, candidate.durationYears),
       tuitionAmount: fee.amount,
       tuitionCurrency: fee.currency,
@@ -673,7 +774,12 @@ export function buildUtmMasterProgramRows(dataset: UTMMasterCandidateDataset): A
       intakeMonths: ["February", "September"],
       officialIntake: normalizeText(candidate.officialIntake, 255),
       officialIntakeNote: "Captured from UTM official postgraduate admission FAQ and ODL intake page where applicable.",
-      languageRequirement: { ielts: 6, toefl: null, pte: null, muet: null },
+      languageRequirement: {
+        ielts: candidate.languageRequirement.scores?.ielts ?? 6,
+        toefl: candidate.languageRequirement.scores?.toeflIbt ?? null,
+        pte: candidate.languageRequirement.scores?.pteAcademic ?? null,
+        muet: candidate.languageRequirement.scores?.muet ?? null
+      },
       officialLanguageRequirement: normalizeText(candidate.languageRequirement.summary),
       requirement: {
         gpa: academicRequirement.gpa,
@@ -692,9 +798,9 @@ export function buildUtmMasterProgramRows(dataset: UTMMasterCandidateDataset): A
         ["UTM 錄取信", "白底照片", "護照", "學歷證書", "成績單", "健康狀況聲明表", "如適用，提交資格信/無異議信"],
         applicationDocuments
       ),
-      curriculum: arr([]),
-      careers: arr(["UTM does not publish a structured career list for this programme in the collected official source."]),
-      specializations: arr([]),
+      curriculum: masterCourseSetting(candidate),
+      careers: arr([]),
+      specializations: masterSpecializations(candidate),
       description: t(
         `${candidate.nameEnOfficial} is listed by UTM for international postgraduate admission under ${candidate.facultyEn}.`,
         `${candidate.nameEnOfficial} 已列入 UTM 国际硕士招生目录，隶属 ${candidate.facultyEn}。`,
@@ -733,10 +839,11 @@ export function summarizeUtmMasterImport(dataset: UTMMasterCandidateDataset, row
     importRows: rows.length,
     readyRows: rows.filter((row) => row.publicDisplayStatus === "ready" && row.isPublished).length,
     uniqueSlugs: new Set(rows.map((row) => row.slug)).size,
+    officialDurationRows: rows.filter((row) => Number(row.durationYears || 0) > 0 && /^Standardized duration:\s*1\.5 years\b/i.test(String(row.durationOfficial))).length,
     officialTotalFeeRows: rows.filter((row) => row.officialTuitionMYR != null && row.officialFeeAuditStatus === "matched-official").length,
     calculatedFromOfficialRateRows: rows.filter((row) => row.officialFeeAuditStatus === "calculated-from-official-rate").length,
     officialRateOnlyRows: rows.filter((row) => row.officialFeeAuditStatus === "official-rate-verified").length,
-    conflictFeeRows: rows.filter((row) => row.officialFeeAuditStatus === "not-published").length,
+    conflictFeeRows: rows.filter((row) => row.officialFeeAuditStatus === "official-non-scalar").length,
     academicRequirementGpaRows: rows.filter((row) => Number(row.requirement?.gpa || 0) > 0).length,
     publicDisplayStatusCounts: countBy(rows, (row) => String(row.publicDisplayStatus)),
     feeAuditStatusCounts: countBy(rows, (row) => String(row.officialFeeAuditStatus)),
@@ -747,32 +854,38 @@ export function summarizeUtmMasterImport(dataset: UTMMasterCandidateDataset, row
 function verifyUtmMasterImportedRecordSet(rows: ProgramEntity[], legacyMasterPublicRows: number, expectedRows: number): UTMMasterImportVerification {
   const readyRows = rows.filter((row) => row.publicDisplayStatus === "ready");
   const publishedRows = rows.filter((row) => row.isPublished);
+  const officialDurationRows = rows.filter(
+    (row) => Number(row.durationYears || 0) > 0 && /^Standardized duration:\s*1\.5 years\b/i.test(String(row.durationOfficial))
+  );
   const officialTotalFeeRows = rows.filter((row) => row.officialTuitionMYR != null && row.officialFeeAuditStatus === "matched-official");
   const calculatedFromOfficialRateRows = rows.filter(
     (row) => row.officialTuitionMYR != null && row.tuitionAmount != null && row.officialFeeAuditStatus === "calculated-from-official-rate"
   );
   const officialRateOnlyRows = rows.filter((row) => row.officialFeeAuditStatus === "official-rate-verified" && row.officialTuitionMYR == null);
-  const conflictFeeRows = rows.filter((row) => row.officialFeeAuditStatus === "not-published" && row.officialTuitionMYR == null);
+  const conflictFeeRows = rows.filter((row) => row.officialFeeAuditStatus === "official-non-scalar" && row.officialTuitionMYR == null);
   const noScalarTotalRows = rows.filter((row) => row.officialTuitionMYR == null && row.tuitionAmount == null).length;
   const academicRequirementGpaRows = rows.filter((row) => Number(row.requirement?.gpa || 0) > 0).length;
+  const levelRows = rows.filter((row) => row.level === "master");
   const languageRows = rows.filter((row) => Number(row.languageRequirement?.ielts || 0) >= 6).length;
   const sourceLinkedRows = rows.filter((row) => (row.sourceUrls || []).length >= 5).length;
   if (
     rows.length !== expectedRows ||
     readyRows.length !== expectedRows ||
     publishedRows.length !== expectedRows ||
-    officialTotalFeeRows.length !== 132 ||
+    officialDurationRows.length !== expectedRows ||
+    officialTotalFeeRows.length !== 138 ||
     calculatedFromOfficialRateRows.length !== 14 ||
     officialRateOnlyRows.length !== 0 ||
-    conflictFeeRows.length !== 7 ||
-    noScalarTotalRows !== 7 ||
+    conflictFeeRows.length !== 1 ||
+    noScalarTotalRows !== 1 ||
     academicRequirementGpaRows !== expectedRows ||
+    levelRows.length !== expectedRows ||
     languageRows !== expectedRows ||
     sourceLinkedRows !== expectedRows ||
     legacyMasterPublicRows !== 0
   ) {
     throw new Error(
-      `UTM master import verification failed: expected=${expectedRows}, actual=${rows.length}, ready=${readyRows.length}, published=${publishedRows.length}, officialTotal=${officialTotalFeeRows.length}, calculated=${calculatedFromOfficialRateRows.length}, rateOnly=${officialRateOnlyRows.length}, conflict=${conflictFeeRows.length}, noScalarTotal=${noScalarTotalRows}, academicGpa=${academicRequirementGpaRows}, language=${languageRows}, sourceLinks=${sourceLinkedRows}, legacyPublic=${legacyMasterPublicRows}.`
+      `UTM master import verification failed: expected=${expectedRows}, actual=${rows.length}, ready=${readyRows.length}, published=${publishedRows.length}, officialDurations=${officialDurationRows.length}, officialTotal=${officialTotalFeeRows.length}, calculated=${calculatedFromOfficialRateRows.length}, rateOnly=${officialRateOnlyRows.length}, conflict=${conflictFeeRows.length}, noScalarTotal=${noScalarTotalRows}, academicGpa=${academicRequirementGpaRows}, level=${levelRows.length}, language=${languageRows}, sourceLinks=${sourceLinkedRows}, legacyPublic=${legacyMasterPublicRows}.`
     );
   }
   return {
@@ -780,12 +893,14 @@ function verifyUtmMasterImportedRecordSet(rows: ProgramEntity[], legacyMasterPub
     readyRows: readyRows.length,
     publishedRows: publishedRows.length,
     legacyMasterPublicRows,
+    officialDurationRows: officialDurationRows.length,
     officialTotalFeeRows: officialTotalFeeRows.length,
     calculatedFromOfficialRateRows: calculatedFromOfficialRateRows.length,
     officialRateOnlyRows: officialRateOnlyRows.length,
     conflictFeeRows: conflictFeeRows.length,
     noScalarTotalRows,
     academicRequirementGpaRows,
+    levelRows: levelRows.length,
     languageRows,
     sourceLinkedRows,
     publicDisplayStatusCounts: countBy(rows, (row) => row.publicDisplayStatus),
@@ -811,11 +926,12 @@ async function verifyImportedRows(manager: EntityManager | DataSource, universit
 
 async function visibleLevelSummary(repository: ReturnType<EntityManager["getRepository"]>, universityId: number, level: "bachelor" | "master" | "phd") {
   const rows = await repository.find({
-    where: { universityId, level, isPublished: true, publicDisplayStatus: In(["ready", "not-available-for-international"]) }
+    where: { universityId, level, isPublished: true, publicDisplayStatus: In(["ready", "current-cycle-not-open", "not-available-for-international"]) }
   });
   return {
     total: rows.length,
     ready: rows.filter((row) => row.publicDisplayStatus === "ready").length,
+    currentCycleNotOpen: rows.filter((row) => row.publicDisplayStatus === "current-cycle-not-open").length,
     needsReview: 0,
     notAvailableForInternational: rows.filter((row) => row.publicDisplayStatus === "not-available-for-international").length
   };
@@ -828,6 +944,7 @@ async function updateUniversityAfterMasterImport(manager: EntityManager, univers
   const master = {
     total: summary.importRows,
     ready: summary.readyRows,
+    currentCycleNotOpen: 0,
     needsReview: 0,
     notAvailableForInternational: 0
   };
@@ -835,6 +952,7 @@ async function updateUniversityAfterMasterImport(manager: EntityManager, univers
   const all = {
     total: bachelor.total + master.total + phd.total,
     ready: bachelor.ready + master.ready + phd.ready,
+    currentCycleNotOpen: bachelor.currentCycleNotOpen + master.currentCycleNotOpen + phd.currentCycleNotOpen,
     needsReview: 0,
     notAvailableForInternational: bachelor.notAvailableForInternational + master.notAvailableForInternational + phd.notAvailableForInternational
   };

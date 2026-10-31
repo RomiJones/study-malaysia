@@ -1,0 +1,2840 @@
+{
+  "checkedAt": "2026-06-20T17:10:39.205Z",
+  "base": "http://127.0.0.1:3100/api",
+  "publicUniversitySearchRows": 1,
+  "publicProgramSearchRows": 0,
+  "publicUniversityDetailStatus": 404,
+  "publicProgramDetailStatus": 404,
+  "adminUniversityRows": null,
+  "adminProgramRows": null,
+  "adminProgramTotal": 0,
+  "pass": false,
+  "checks": [
+    {
+      "path": "/universities?search=taylor&includeMeta=true&pageSize=20",
+      "status": 200,
+      "body": {
+        "items": [
+          {
+            "id": 3,
+            "slug": "taylor-s-university",
+            "code": "TAYLORS",
+            "name": {
+              "en": "Taylor's University",
+              "ms": "Taylor's University",
+              "zh-CN": "泰莱大学",
+              "zh-TW": "泰莱大学"
+            },
+            "shortName": "Taylor's",
+            "nameEn": "Taylor's University",
+            "logoUrl": "/assets/static-html/fallback-university-logo.svg",
+            "imageUrl": "/assets/static-html/card-image-photo-1568792923760-d70635a89fdc-73d28b5b6ef9.jpg",
+            "color": "#8B0000",
+            "qsRank": 272,
+            "qsRankDisplay": "272",
+            "qsRankYear": 2027,
+            "qsRankStatus": "ranked",
+            "qsRankContext": "malaysia-institution",
+            "qsRankSourceUrl": "https://www.topuniversities.com/rankings/endpoint?nid=4153156&page=0&items_per_page=100&tab=indicators&region=&countries=my&cities=&search=&star=&sort_by=rank&order_by=asc&program_type=&scholarship=&fee=&english_score=&academic_score=&mix_student=&loggedincache=&study_level=&subjects=",
+            "qsAsiaRank": 27,
+            "location": {
+              "en": "雪兰莪·双威城",
+              "ms": "雪兰莪·双威城",
+              "zh-CN": "雪兰莪·双威城",
+              "zh-TW": "雪兰莪·双威城"
+            },
+            "region": {
+              "en": "雪兰莪州",
+              "ms": "雪兰莪州",
+              "zh-CN": "雪兰莪州",
+              "zh-TW": "雪兰莪州"
+            },
+            "ownership": "private",
+            "institutionType": "comprehensive",
+            "foundedYear": 1969,
+            "students": 16000,
+            "intlStudents": 4500,
+            "csrCertified": true,
+            "description": {
+              "en": "泰莱大学（Taylor's University）是马来西亚私立大学综合排名最高的院校，QS WUR 2027 #272，QS亚洲排名第41。位于雪兰莪双威城，以酒店旅游管理（QS学科全球Top 50）、商科、法律、建筑、医学和设计著称。泰莱提供与澳洲、英国、美国顶尖院校的学分转移和双学位项目。注意：自2025年7月起对国际生加征6% SST服务税，学费已含税。",
+              "ms": "泰莱大学（Taylor's University）是马来西亚私立大学综合排名最高的院校，QS WUR 2027 #272，QS亚洲排名第41。位于雪兰莪双威城，以酒店旅游管理（QS学科全球Top 50）、商科、法律、建筑、医学和设计著称。泰莱提供与澳洲、英国、美国顶尖院校的学分转移和双学位项目。注意：自2025年7月起对国际生加征6% SST服务税，学费已含税。",
+              "zh-CN": "泰莱大学（Taylor's University）是马来西亚私立大学综合排名最高的院校，QS WUR 2027 #272，QS亚洲排名第41。位于雪兰莪双威城，以酒店旅游管理（QS学科全球Top 50）、商科、法律、建筑、医学和设计著称。泰莱提供与澳洲、英国、美国顶尖院校的学分转移和双学位项目。注意：自2025年7月起对国际生加征6% SST服务税，学费已含税。",
+              "zh-TW": "泰莱大学（Taylor's University）是马来西亚私立大学综合排名最高的院校，QS WUR 2027 #272，QS亚洲排名第41。位于雪兰莪双威城，以酒店旅游管理（QS学科全球Top 50）、商科、法律、建筑、医学和设计著称。泰莱提供与澳洲、英国、美国顶尖院校的学分转移和双学位项目。注意：自2025年7月起对国际生加征6% SST服务税，学费已含税。"
+            },
+            "website": "https://university.taylors.edu.my",
+            "admissionEmail": "intl.enquiry@taylors.edu.my",
+            "nameEnOfficial": "Taylor's University",
+            "officialWebsite": "https://university.taylors.edu.my",
+            "studyPortalUrl": "",
+            "internationalPageUrl": "",
+            "applicationPortalUrl": "",
+            "officialAddress": "",
+            "applicationPeriods": [],
+            "applicationFees": [],
+            "applicationDocuments": {
+              "en": [],
+              "ms": [],
+              "zh-CN": [],
+              "zh-TW": []
+            },
+            "chinaStudentRequirements": {
+              "en": [],
+              "ms": [],
+              "zh-CN": [],
+              "zh-TW": []
+            },
+            "officialProfile": {
+              "rankings": {
+                "qsWorld": {
+                  "name": "QS World University Rankings",
+                  "year": 2027,
+                  "qsCity": "Kuala Lumpur",
+                  "status": "ranked",
+                  "context": "malaysia-institution",
+                  "qsTitle": "Taylor's University",
+                  "rankSort": 272,
+                  "qsCountry": "Malaysia",
+                  "sourceUrl": "https://www.topuniversities.com/rankings/endpoint?nid=4153156&page=0&items_per_page=100&tab=indicators&region=&countries=my&cities=&search=&star=&sort_by=rank&order_by=asc&program_type=&scholarship=&fee=&english_score=&academic_score=&mix_student=&loggedincache=&study_level=&subjects=",
+                  "profileUrl": "https://www.topuniversities.com/universities/taylors-university",
+                  "publishedAt": "2026-06-18",
+                  "rankDisplay": "272",
+                  "retrievedAt": "2026-06-19T00:00:00+08:00",
+                  "overallScore": "48.4",
+                  "officialSortRank": 272
+                }
+              }
+            },
+            "officialSources": [
+              {
+                "title": "Official website",
+                "url": "https://university.taylors.edu.my",
+                "sourceType": "official-website",
+                "verifiedAt": null,
+                "status": "official-verified",
+                "note": null
+              }
+            ],
+            "officialVerifiedAt": null,
+            "officialSourceStatus": "official-verified",
+            "officialAuditSummary": "",
+            "publicDisplayStatus": "ready",
+            "livingCostOfficialNote": "",
+            "tuitionMinCny": 68000,
+            "tuitionMaxCny": 255000,
+            "livingCostCny": 28000,
+            "minIelts": "6.0",
+            "acceptNoLanguage": false,
+            "facilities": {
+              "en": [
+                "泰莱图书馆",
+                "The Lakeside校园",
+                "模拟酒店（The Decanter）",
+                "法律诊所",
+                "建筑工作室",
+                "传媒制作中心",
+                "商科模拟交易室",
+                "学生宿舍"
+              ],
+              "ms": [
+                "泰莱图书馆",
+                "The Lakeside校园",
+                "模拟酒店（The Decanter）",
+                "法律诊所",
+                "建筑工作室",
+                "传媒制作中心",
+                "商科模拟交易室",
+                "学生宿舍"
+              ],
+              "zh-CN": [
+                "泰莱图书馆",
+                "The Lakeside校园",
+                "模拟酒店（The Decanter）",
+                "法律诊所",
+                "建筑工作室",
+                "传媒制作中心",
+                "商科模拟交易室",
+                "学生宿舍"
+              ],
+              "zh-TW": [
+                "泰莱图书馆",
+                "The Lakeside校园",
+                "模拟酒店（The Decanter）",
+                "法律诊所",
+                "建筑工作室",
+                "传媒制作中心",
+                "商科模拟交易室",
+                "学生宿舍"
+              ]
+            },
+            "highlights": {
+              "en": [
+                "QS WUR 2027 #272",
+                "酒店管理QS全球Top 50",
+                "与200+院校学分转移",
+                "双威城国际化生活环境"
+              ],
+              "ms": [
+                "QS WUR 2027 #272",
+                "酒店管理QS全球Top 50",
+                "与200+院校学分转移",
+                "双威城国际化生活环境"
+              ],
+              "zh-CN": [
+                "QS WUR 2027 #272",
+                "酒店管理QS全球Top 50",
+                "与200+院校学分转移",
+                "双威城国际化生活环境"
+              ],
+              "zh-TW": [
+                "QS WUR 2027 #272",
+                "酒店管理QS全球Top 50",
+                "与200+院校学分转移",
+                "双威城国际化生活环境"
+              ]
+            },
+            "programCount": 0
+          }
+        ],
+        "pagination": {
+          "page": 1,
+          "pageSize": 20,
+          "total": 1,
+          "totalPages": 1
+        },
+        "facets": [
+          {
+            "key": "ownerships",
+            "label": {
+              "en": "Institution ownership",
+              "ms": "Institution ownership",
+              "zh-CN": "Institution ownership",
+              "zh-TW": "Institution ownership"
+            },
+            "options": [
+              {
+                "value": "private",
+                "count": 97,
+                "label": {
+                  "en": "private",
+                  "ms": "private",
+                  "zh-CN": "private",
+                  "zh-TW": "private"
+                }
+              },
+              {
+                "value": "public",
+                "count": 22,
+                "label": {
+                  "en": "public",
+                  "ms": "public",
+                  "zh-CN": "public",
+                  "zh-TW": "public"
+                }
+              }
+            ]
+          },
+          {
+            "key": "institutionTypes",
+            "label": {
+              "en": "Institution type",
+              "ms": "Institution type",
+              "zh-CN": "Institution type",
+              "zh-TW": "Institution type"
+            },
+            "options": [
+              {
+                "value": "comprehensive",
+                "count": 113,
+                "label": {
+                  "en": "comprehensive",
+                  "ms": "comprehensive",
+                  "zh-CN": "comprehensive",
+                  "zh-TW": "comprehensive"
+                }
+              },
+              {
+                "value": "research",
+                "count": 6,
+                "label": {
+                  "en": "research",
+                  "ms": "research",
+                  "zh-CN": "research",
+                  "zh-TW": "research"
+                }
+              }
+            ]
+          },
+          {
+            "key": "levels",
+            "label": {
+              "en": "Degree level",
+              "ms": "Degree level",
+              "zh-CN": "Degree level",
+              "zh-TW": "Degree level"
+            },
+            "options": [
+              {
+                "value": "master",
+                "count": 235,
+                "label": {
+                  "en": "Master",
+                  "ms": "Sarjana",
+                  "zh-CN": "硕士",
+                  "zh-TW": "碩士"
+                }
+              },
+              {
+                "value": "bachelor",
+                "count": 131,
+                "label": {
+                  "en": "Bachelor",
+                  "ms": "Ijazah Sarjana Muda",
+                  "zh-CN": "本科",
+                  "zh-TW": "本科"
+                }
+              },
+              {
+                "value": "phd",
+                "count": 88,
+                "label": {
+                  "en": "PhD",
+                  "ms": "Doktor Falsafah",
+                  "zh-CN": "博士",
+                  "zh-TW": "博士"
+                }
+              },
+              {
+                "value": "postgraduate-certificate",
+                "count": 1,
+                "label": {
+                  "en": "Postgraduate Certificate",
+                  "ms": "Sijil Pascasiswazah",
+                  "zh-CN": "研究生证书",
+                  "zh-TW": "研究生證書"
+                }
+              },
+              {
+                "value": "postgraduate-diploma",
+                "count": 1,
+                "label": {
+                  "en": "Postgraduate Diploma",
+                  "ms": "Diploma Pascasiswazah",
+                  "zh-CN": "研究生文凭",
+                  "zh-TW": "研究生文憑"
+                }
+              }
+            ]
+          },
+          {
+            "key": "categories",
+            "label": {
+              "en": "Program category",
+              "ms": "Program category",
+              "zh-CN": "Program category",
+              "zh-TW": "Program category"
+            },
+            "options": [
+              {
+                "value": "arts",
+                "count": 282,
+                "label": {
+                  "en": "arts",
+                  "ms": "arts",
+                  "zh-CN": "arts",
+                  "zh-TW": "arts"
+                }
+              },
+              {
+                "value": "engineering",
+                "count": 239,
+                "label": {
+                  "en": "engineering",
+                  "ms": "engineering",
+                  "zh-CN": "engineering",
+                  "zh-TW": "engineering"
+                }
+              },
+              {
+                "value": "science",
+                "count": 223,
+                "label": {
+                  "en": "science",
+                  "ms": "science",
+                  "zh-CN": "science",
+                  "zh-TW": "science"
+                }
+              },
+              {
+                "value": "medicine",
+                "count": 176,
+                "label": {
+                  "en": "medicine",
+                  "ms": "medicine",
+                  "zh-CN": "medicine",
+                  "zh-TW": "medicine"
+                }
+              },
+              {
+                "value": "business",
+                "count": 168,
+                "label": {
+                  "en": "business",
+                  "ms": "business",
+                  "zh-CN": "business",
+                  "zh-TW": "business"
+                }
+              },
+              {
+                "value": "it",
+                "count": 96,
+                "label": {
+                  "en": "it",
+                  "ms": "it",
+                  "zh-CN": "it",
+                  "zh-TW": "it"
+                }
+              },
+              {
+                "value": "理科",
+                "count": 44,
+                "label": {
+                  "en": "理科",
+                  "ms": "理科",
+                  "zh-CN": "理科",
+                  "zh-TW": "理科"
+                }
+              },
+              {
+                "value": "理学",
+                "count": 40,
+                "label": {
+                  "en": "理学",
+                  "ms": "理学",
+                  "zh-CN": "理学",
+                  "zh-TW": "理学"
+                }
+              },
+              {
+                "value": "医学",
+                "count": 35,
+                "label": {
+                  "en": "医学",
+                  "ms": "医学",
+                  "zh-CN": "医学",
+                  "zh-TW": "医学"
+                }
+              },
+              {
+                "value": "博士研究型课程",
+                "count": 33,
+                "label": {
+                  "en": "博士研究型课程",
+                  "ms": "博士研究型课程",
+                  "zh-CN": "博士研究型课程",
+                  "zh-TW": "博士研究型课程"
+                }
+              },
+              {
+                "value": "Clinical Medicine",
+                "count": 23,
+                "label": {
+                  "en": "Clinical Medicine",
+                  "ms": "Clinical Medicine",
+                  "zh-CN": "Clinical Medicine",
+                  "zh-TW": "Clinical Medicine"
+                }
+              },
+              {
+                "value": "人文社科",
+                "count": 22,
+                "label": {
+                  "en": "人文社科",
+                  "ms": "人文社科",
+                  "zh-CN": "人文社科",
+                  "zh-TW": "人文社科"
+                }
+              },
+              {
+                "value": "文科",
+                "count": 20,
+                "label": {
+                  "en": "文科",
+                  "ms": "文科",
+                  "zh-CN": "文科",
+                  "zh-TW": "文科"
+                }
+              },
+              {
+                "value": "Education",
+                "count": 19,
+                "label": {
+                  "en": "Education",
+                  "ms": "Education",
+                  "zh-CN": "Education",
+                  "zh-TW": "Education"
+                }
+              },
+              {
+                "value": "工科",
+                "count": 17,
+                "label": {
+                  "en": "工科",
+                  "ms": "工科",
+                  "zh-CN": "工科",
+                  "zh-TW": "工科"
+                }
+              },
+              {
+                "value": "IT",
+                "count": 16,
+                "label": {
+                  "en": "IT",
+                  "ms": "IT",
+                  "zh-CN": "IT",
+                  "zh-TW": "IT"
+                }
+              },
+              {
+                "value": "健康科学",
+                "count": 15,
+                "label": {
+                  "en": "健康科学",
+                  "ms": "健康科学",
+                  "zh-CN": "健康科学",
+                  "zh-TW": "健康科学"
+                }
+              },
+              {
+                "value": "教育",
+                "count": 14,
+                "label": {
+                  "en": "教育",
+                  "ms": "教育",
+                  "zh-CN": "教育",
+                  "zh-TW": "教育"
+                }
+              },
+              {
+                "value": "Arts and Social Sciences",
+                "count": 13,
+                "label": {
+                  "en": "Arts and Social Sciences",
+                  "ms": "Arts and Social Sciences",
+                  "zh-CN": "Arts and Social Sciences",
+                  "zh-TW": "Arts and Social Sciences"
+                }
+              },
+              {
+                "value": "商科",
+                "count": 13,
+                "label": {
+                  "en": "商科",
+                  "ms": "商科",
+                  "zh-CN": "商科",
+                  "zh-TW": "商科"
+                }
+              },
+              {
+                "value": "Dentistry",
+                "count": 12,
+                "label": {
+                  "en": "Dentistry",
+                  "ms": "Dentistry",
+                  "zh-CN": "Dentistry",
+                  "zh-TW": "Dentistry"
+                }
+              },
+              {
+                "value": "计算机与信息科技",
+                "count": 11,
+                "label": {
+                  "en": "计算机与信息科技",
+                  "ms": "计算机与信息科技",
+                  "zh-CN": "计算机与信息科技",
+                  "zh-TW": "计算机与信息科技"
+                }
+              },
+              {
+                "value": "Islamic Studies",
+                "count": 10,
+                "label": {
+                  "en": "Islamic Studies",
+                  "ms": "Islamic Studies",
+                  "zh-CN": "Islamic Studies",
+                  "zh-TW": "Islamic Studies"
+                }
+              },
+              {
+                "value": "伊斯兰研究",
+                "count": 10,
+                "label": {
+                  "en": "伊斯兰研究",
+                  "ms": "伊斯兰研究",
+                  "zh-CN": "伊斯兰研究",
+                  "zh-TW": "伊斯兰研究"
+                }
+              },
+              {
+                "value": "工程与建筑环境",
+                "count": 7,
+                "label": {
+                  "en": "工程与建筑环境",
+                  "ms": "工程与建筑环境",
+                  "zh-CN": "工程与建筑环境",
+                  "zh-TW": "工程与建筑环境"
+                }
+              },
+              {
+                "value": "Built Environment",
+                "count": 6,
+                "label": {
+                  "en": "Built Environment",
+                  "ms": "Built Environment",
+                  "zh-CN": "Built Environment",
+                  "zh-TW": "Built Environment"
+                }
+              },
+              {
+                "value": "Creative Arts",
+                "count": 6,
+                "label": {
+                  "en": "Creative Arts",
+                  "ms": "Creative Arts",
+                  "zh-CN": "Creative Arts",
+                  "zh-TW": "Creative Arts"
+                }
+              },
+              {
+                "value": "医学与健康",
+                "count": 6,
+                "label": {
+                  "en": "医学与健康",
+                  "ms": "医学与健康",
+                  "zh-CN": "医学与健康",
+                  "zh-TW": "医学与健康"
+                }
+              },
+              {
+                "value": "国际与区域研究",
+                "count": 6,
+                "label": {
+                  "en": "国际与区域研究",
+                  "ms": "国际与区域研究",
+                  "zh-CN": "国际与区域研究",
+                  "zh-TW": "国际与区域研究"
+                }
+              },
+              {
+                "value": "法律",
+                "count": 6,
+                "label": {
+                  "en": "法律",
+                  "ms": "法律",
+                  "zh-CN": "法律",
+                  "zh-TW": "法律"
+                }
+              },
+              {
+                "value": "Advanced Studies",
+                "count": 5,
+                "label": {
+                  "en": "Advanced Studies",
+                  "ms": "Advanced Studies",
+                  "zh-CN": "Advanced Studies",
+                  "zh-TW": "Advanced Studies"
+                }
+              },
+              {
+                "value": "建筑",
+                "count": 5,
+                "label": {
+                  "en": "建筑",
+                  "ms": "建筑",
+                  "zh-CN": "建筑",
+                  "zh-TW": "建筑"
+                }
+              },
+              {
+                "value": "社会科学",
+                "count": 5,
+                "label": {
+                  "en": "社会科学",
+                  "ms": "社会科学",
+                  "zh-CN": "社会科学",
+                  "zh-TW": "社会科学"
+                }
+              },
+              {
+                "value": "Law",
+                "count": 4,
+                "label": {
+                  "en": "Law",
+                  "ms": "Law",
+                  "zh-CN": "Law",
+                  "zh-TW": "Law"
+                }
+              },
+              {
+                "value": "Pharmacy",
+                "count": 4,
+                "label": {
+                  "en": "Pharmacy",
+                  "ms": "Pharmacy",
+                  "zh-CN": "Pharmacy",
+                  "zh-TW": "Pharmacy"
+                }
+              },
+              {
+                "value": "商科与经济管理",
+                "count": 4,
+                "label": {
+                  "en": "商科与经济管理",
+                  "ms": "商科与经济管理",
+                  "zh-CN": "商科与经济管理",
+                  "zh-TW": "商科与经济管理"
+                }
+              },
+              {
+                "value": "艺术",
+                "count": 4,
+                "label": {
+                  "en": "艺术",
+                  "ms": "艺术",
+                  "zh-CN": "艺术",
+                  "zh-TW": "艺术"
+                }
+              },
+              {
+                "value": "Languages and Linguistics",
+                "count": 3,
+                "label": {
+                  "en": "Languages and Linguistics",
+                  "ms": "Languages and Linguistics",
+                  "zh-CN": "Languages and Linguistics",
+                  "zh-TW": "Languages and Linguistics"
+                }
+              },
+              {
+                "value": "Malay Studies",
+                "count": 3,
+                "label": {
+                  "en": "Malay Studies",
+                  "ms": "Malay Studies",
+                  "zh-CN": "Malay Studies",
+                  "zh-TW": "Malay Studies"
+                }
+              },
+              {
+                "value": "Sports & Exercise Science",
+                "count": 3,
+                "label": {
+                  "en": "Sports & Exercise Science",
+                  "ms": "Sports & Exercise Science",
+                  "zh-CN": "Sports & Exercise Science",
+                  "zh-TW": "Sports & Exercise Science"
+                }
+              },
+              {
+                "value": "Asia-Europe Studies",
+                "count": 2,
+                "label": {
+                  "en": "Asia-Europe Studies",
+                  "ms": "Asia-Europe Studies",
+                  "zh-CN": "Asia-Europe Studies",
+                  "zh-TW": "Asia-Europe Studies"
+                }
+              },
+              {
+                "value": "law",
+                "count": 2,
+                "label": {
+                  "en": "law",
+                  "ms": "law",
+                  "zh-CN": "law",
+                  "zh-TW": "law"
+                }
+              },
+              {
+                "value": "Public Health",
+                "count": 2,
+                "label": {
+                  "en": "Public Health",
+                  "ms": "Public Health",
+                  "zh-CN": "Public Health",
+                  "zh-TW": "Public Health"
+                }
+              },
+              {
+                "value": "体育",
+                "count": 2,
+                "label": {
+                  "en": "体育",
+                  "ms": "体育",
+                  "zh-CN": "体育",
+                  "zh-TW": "体育"
+                }
+              },
+              {
+                "value": "环境与可持续发展",
+                "count": 2,
+                "label": {
+                  "en": "环境与可持续发展",
+                  "ms": "环境与可持续发展",
+                  "zh-CN": "环境与可持续发展",
+                  "zh-TW": "环境与可持续发展"
+                }
+              },
+              {
+                "value": "Area Studies / International Studies",
+                "count": 1,
+                "label": {
+                  "en": "Area Studies / International Studies",
+                  "ms": "Area Studies / International Studies",
+                  "zh-CN": "Area Studies / International Studies",
+                  "zh-TW": "Area Studies / International Studies"
+                }
+              },
+              {
+                "value": "Epidemiology",
+                "count": 1,
+                "label": {
+                  "en": "Epidemiology",
+                  "ms": "Epidemiology",
+                  "zh-CN": "Epidemiology",
+                  "zh-TW": "Epidemiology"
+                }
+              },
+              {
+                "value": "Health Research Ethics",
+                "count": 1,
+                "label": {
+                  "en": "Health Research Ethics",
+                  "ms": "Health Research Ethics",
+                  "zh-CN": "Health Research Ethics",
+                  "zh-TW": "Health Research Ethics"
+                }
+              },
+              {
+                "value": "Interdisciplinary Studies",
+                "count": 1,
+                "label": {
+                  "en": "Interdisciplinary Studies",
+                  "ms": "Interdisciplinary Studies",
+                  "zh-CN": "Interdisciplinary Studies",
+                  "zh-TW": "Interdisciplinary Studies"
+                }
+              },
+              {
+                "value": "Medical Education",
+                "count": 1,
+                "label": {
+                  "en": "Medical Education",
+                  "ms": "Medical Education",
+                  "zh-CN": "Medical Education",
+                  "zh-TW": "Medical Education"
+                }
+              },
+              {
+                "value": "Medical Parasitology and Entomology",
+                "count": 1,
+                "label": {
+                  "en": "Medical Parasitology and Entomology",
+                  "ms": "Medical Parasitology and Entomology",
+                  "zh-CN": "Medical Parasitology and Entomology",
+                  "zh-TW": "Medical Parasitology and Entomology"
+                }
+              },
+              {
+                "value": "Medical Physics",
+                "count": 1,
+                "label": {
+                  "en": "Medical Physics",
+                  "ms": "Medical Physics",
+                  "zh-CN": "Medical Physics",
+                  "zh-TW": "Medical Physics"
+                }
+              },
+              {
+                "value": "Medicine",
+                "count": 1,
+                "label": {
+                  "en": "Medicine",
+                  "ms": "Medicine",
+                  "zh-CN": "Medicine",
+                  "zh-TW": "Medicine"
+                }
+              },
+              {
+                "value": "Medicine / Nursing",
+                "count": 1,
+                "label": {
+                  "en": "Medicine / Nursing",
+                  "ms": "Medicine / Nursing",
+                  "zh-CN": "Medicine / Nursing",
+                  "zh-TW": "Medicine / Nursing"
+                }
+              },
+              {
+                "value": "Public Policy",
+                "count": 1,
+                "label": {
+                  "en": "Public Policy",
+                  "ms": "Public Policy",
+                  "zh-CN": "Public Policy",
+                  "zh-TW": "Public Policy"
+                }
+              },
+              {
+                "value": "Regenerative Medicine",
+                "count": 1,
+                "label": {
+                  "en": "Regenerative Medicine",
+                  "ms": "Regenerative Medicine",
+                  "zh-CN": "Regenerative Medicine",
+                  "zh-TW": "Regenerative Medicine"
+                }
+              },
+              {
+                "value": "Sports and Exercise Science",
+                "count": 1,
+                "label": {
+                  "en": "Sports and Exercise Science",
+                  "ms": "Sports and Exercise Science",
+                  "zh-CN": "Sports and Exercise Science",
+                  "zh-TW": "Sports and Exercise Science"
+                }
+              },
+              {
+                "value": "人文与区域研究",
+                "count": 1,
+                "label": {
+                  "en": "人文与区域研究",
+                  "ms": "人文与区域研究",
+                  "zh-CN": "人文与区域研究",
+                  "zh-TW": "人文与区域研究"
+                }
+              },
+              {
+                "value": "人文与文学",
+                "count": 1,
+                "label": {
+                  "en": "人文与文学",
+                  "ms": "人文与文学",
+                  "zh-CN": "人文与文学",
+                  "zh-TW": "人文与文学"
+                }
+              },
+              {
+                "value": "人文与语言",
+                "count": 1,
+                "label": {
+                  "en": "人文与语言",
+                  "ms": "人文与语言",
+                  "zh-CN": "人文与语言",
+                  "zh-TW": "人文与语言"
+                }
+              },
+              {
+                "value": "人机交互",
+                "count": 1,
+                "label": {
+                  "en": "人机交互",
+                  "ms": "人机交互",
+                  "zh-CN": "人机交互",
+                  "zh-TW": "人机交互"
+                }
+              },
+              {
+                "value": "伊斯兰文明",
+                "count": 1,
+                "label": {
+                  "en": "伊斯兰文明",
+                  "ms": "伊斯兰文明",
+                  "zh-CN": "伊斯兰文明",
+                  "zh-TW": "伊斯兰文明"
+                }
+              },
+              {
+                "value": "会计",
+                "count": 1,
+                "label": {
+                  "en": "会计",
+                  "ms": "会计",
+                  "zh-CN": "会计",
+                  "zh-TW": "会计"
+                }
+              },
+              {
+                "value": "传媒",
+                "count": 1,
+                "label": {
+                  "en": "传媒",
+                  "ms": "传媒",
+                  "zh-CN": "传媒",
+                  "zh-TW": "传媒"
+                }
+              },
+              {
+                "value": "传播学",
+                "count": 1,
+                "label": {
+                  "en": "传播学",
+                  "ms": "传播学",
+                  "zh-CN": "传播学",
+                  "zh-TW": "传播学"
+                }
+              },
+              {
+                "value": "公共管理",
+                "count": 1,
+                "label": {
+                  "en": "公共管理",
+                  "ms": "公共管理",
+                  "zh-CN": "公共管理",
+                  "zh-TW": "公共管理"
+                }
+              },
+              {
+                "value": "分子医学",
+                "count": 1,
+                "label": {
+                  "en": "分子医学",
+                  "ms": "分子医学",
+                  "zh-CN": "分子医学",
+                  "zh-TW": "分子医学"
+                }
+              },
+              {
+                "value": "医学与健康科学",
+                "count": 1,
+                "label": {
+                  "en": "医学与健康科学",
+                  "ms": "医学与健康科学",
+                  "zh-CN": "医学与健康科学",
+                  "zh-TW": "医学与健康科学"
+                }
+              },
+              {
+                "value": "发展研究",
+                "count": 1,
+                "label": {
+                  "en": "发展研究",
+                  "ms": "发展研究",
+                  "zh-CN": "发展研究",
+                  "zh-TW": "发展研究"
+                }
+              },
+              {
+                "value": "可再生能源",
+                "count": 1,
+                "label": {
+                  "en": "可再生能源",
+                  "ms": "可再生能源",
+                  "zh-CN": "可再生能源",
+                  "zh-TW": "可再生能源"
+                }
+              },
+              {
+                "value": "可视化信息学",
+                "count": 1,
+                "label": {
+                  "en": "可视化信息学",
+                  "ms": "可视化信息学",
+                  "zh-CN": "可视化信息学",
+                  "zh-TW": "可视化信息学"
+                }
+              },
+              {
+                "value": "商科/经济",
+                "count": 1,
+                "label": {
+                  "en": "商科/经济",
+                  "ms": "商科/经济",
+                  "zh-CN": "商科/经济",
+                  "zh-TW": "商科/经济"
+                }
+              },
+              {
+                "value": "地理空间",
+                "count": 1,
+                "label": {
+                  "en": "地理空间",
+                  "ms": "地理空间",
+                  "zh-CN": "地理空间",
+                  "zh-TW": "地理空间"
+                }
+              },
+              {
+                "value": "宇航学",
+                "count": 1,
+                "label": {
+                  "en": "宇航学",
+                  "ms": "宇航学",
+                  "zh-CN": "宇航学",
+                  "zh-TW": "宇航学"
+                }
+              },
+              {
+                "value": "工程与纳米技术",
+                "count": 1,
+                "label": {
+                  "en": "工程与纳米技术",
+                  "ms": "工程与纳米技术",
+                  "zh-CN": "工程与纳米技术",
+                  "zh-TW": "工程与纳米技术"
+                }
+              },
+              {
+                "value": "心理学",
+                "count": 1,
+                "label": {
+                  "en": "心理学",
+                  "ms": "心理学",
+                  "zh-CN": "心理学",
+                  "zh-TW": "心理学"
+                }
+              },
+              {
+                "value": "族群研究",
+                "count": 1,
+                "label": {
+                  "en": "族群研究",
+                  "ms": "族群研究",
+                  "zh-CN": "族群研究",
+                  "zh-TW": "族群研究"
+                }
+              },
+              {
+                "value": "气候变化",
+                "count": 1,
+                "label": {
+                  "en": "气候变化",
+                  "ms": "气候变化",
+                  "zh-CN": "气候变化",
+                  "zh-TW": "气候变化"
+                }
+              },
+              {
+                "value": "气候变化与社会科学",
+                "count": 1,
+                "label": {
+                  "en": "气候变化与社会科学",
+                  "ms": "气候变化与社会科学",
+                  "zh-CN": "气候变化与社会科学",
+                  "zh-TW": "气候变化与社会科学"
+                }
+              },
+              {
+                "value": "气候变化政策",
+                "count": 1,
+                "label": {
+                  "en": "气候变化政策",
+                  "ms": "气候变化政策",
+                  "zh-CN": "气候变化政策",
+                  "zh-TW": "气候变化政策"
+                }
+              },
+              {
+                "value": "气候变化科学",
+                "count": 1,
+                "label": {
+                  "en": "气候变化科学",
+                  "ms": "气候变化科学",
+                  "zh-CN": "气候变化科学",
+                  "zh-TW": "气候变化科学"
+                }
+              },
+              {
+                "value": "氢能",
+                "count": 1,
+                "label": {
+                  "en": "氢能",
+                  "ms": "氢能",
+                  "zh-CN": "氢能",
+                  "zh-TW": "氢能"
+                }
+              },
+              {
+                "value": "燃料电池",
+                "count": 1,
+                "label": {
+                  "en": "燃料电池",
+                  "ms": "燃料电池",
+                  "zh-CN": "燃料电池",
+                  "zh-TW": "燃料电池"
+                }
+              },
+              {
+                "value": "牙科",
+                "count": 1,
+                "label": {
+                  "en": "牙科",
+                  "ms": "牙科",
+                  "zh-CN": "牙科",
+                  "zh-TW": "牙科"
+                }
+              },
+              {
+                "value": "生物分子科学",
+                "count": 1,
+                "label": {
+                  "en": "生物分子科学",
+                  "ms": "生物分子科学",
+                  "zh-CN": "生物分子科学",
+                  "zh-TW": "生物分子科学"
+                }
+              },
+              {
+                "value": "硅内生物学",
+                "count": 1,
+                "label": {
+                  "en": "硅内生物学",
+                  "ms": "硅内生物学",
+                  "zh-CN": "硅内生物学",
+                  "zh-TW": "硅内生物学"
+                }
+              },
+              {
+                "value": "视觉数据分析",
+                "count": 1,
+                "label": {
+                  "en": "视觉数据分析",
+                  "ms": "视觉数据分析",
+                  "zh-CN": "视觉数据分析",
+                  "zh-TW": "视觉数据分析"
+                }
+              },
+              {
+                "value": "空间科学",
+                "count": 1,
+                "label": {
+                  "en": "空间科学",
+                  "ms": "空间科学",
+                  "zh-CN": "空间科学",
+                  "zh-TW": "空间科学"
+                }
+              },
+              {
+                "value": "空间管理与政策",
+                "count": 1,
+                "label": {
+                  "en": "空间管理与政策",
+                  "ms": "空间管理与政策",
+                  "zh-CN": "空间管理与政策",
+                  "zh-TW": "空间管理与政策"
+                }
+              },
+              {
+                "value": "经济",
+                "count": 1,
+                "label": {
+                  "en": "经济",
+                  "ms": "经济",
+                  "zh-CN": "经济",
+                  "zh-TW": "经济"
+                }
+              },
+              {
+                "value": "统计/商科",
+                "count": 1,
+                "label": {
+                  "en": "统计/商科",
+                  "ms": "统计/商科",
+                  "zh-CN": "统计/商科",
+                  "zh-TW": "统计/商科"
+                }
+              },
+              {
+                "value": "能源政策",
+                "count": 1,
+                "label": {
+                  "en": "能源政策",
+                  "ms": "能源政策",
+                  "zh-CN": "能源政策",
+                  "zh-TW": "能源政策"
+                }
+              },
+              {
+                "value": "药学",
+                "count": 1,
+                "label": {
+                  "en": "药学",
+                  "ms": "药学",
+                  "zh-CN": "药学",
+                  "zh-TW": "药学"
+                }
+              },
+              {
+                "value": "蛋白质组科学",
+                "count": 1,
+                "label": {
+                  "en": "蛋白质组科学",
+                  "ms": "蛋白质组科学",
+                  "zh-CN": "蛋白质组科学",
+                  "zh-TW": "蛋白质组科学"
+                }
+              },
+              {
+                "value": "计算机视觉",
+                "count": 1,
+                "label": {
+                  "en": "计算机视觉",
+                  "ms": "计算机视觉",
+                  "zh-CN": "计算机视觉",
+                  "zh-TW": "计算机视觉"
+                }
+              },
+              {
+                "value": "计算生物学",
+                "count": 1,
+                "label": {
+                  "en": "计算生物学",
+                  "ms": "计算生物学",
+                  "zh-CN": "计算生物学",
+                  "zh-TW": "计算生物学"
+                }
+              },
+              {
+                "value": "语言学",
+                "count": 1,
+                "label": {
+                  "en": "语言学",
+                  "ms": "语言学",
+                  "zh-CN": "语言学",
+                  "zh-TW": "语言学"
+                }
+              },
+              {
+                "value": "跨学科",
+                "count": 1,
+                "label": {
+                  "en": "跨学科",
+                  "ms": "跨学科",
+                  "zh-CN": "跨学科",
+                  "zh-TW": "跨学科"
+                }
+              }
+            ]
+          },
+          {
+            "key": "qsRankMax",
+            "label": {
+              "en": "QS WUR 2027",
+              "ms": "QS WUR 2027",
+              "zh-CN": "QS WUR 2027",
+              "zh-TW": "QS WUR 2027"
+            },
+            "options": [
+              {
+                "value": "100",
+                "label": {
+                  "en": "Top 100",
+                  "ms": "Top 100",
+                  "zh-CN": "Top 100",
+                  "zh-TW": "Top 100"
+                },
+                "count": 3
+              },
+              {
+                "value": "200",
+                "label": {
+                  "en": "Top 200",
+                  "ms": "Top 200",
+                  "zh-CN": "Top 200",
+                  "zh-TW": "Top 200"
+                },
+                "count": 7
+              },
+              {
+                "value": "300",
+                "label": {
+                  "en": "Top 300",
+                  "ms": "Top 300",
+                  "zh-CN": "Top 300",
+                  "zh-TW": "Top 300"
+                },
+                "count": 10
+              },
+              {
+                "value": "500",
+                "label": {
+                  "en": "Top 500",
+                  "ms": "Top 500",
+                  "zh-CN": "Top 500",
+                  "zh-TW": "Top 500"
+                },
+                "count": 12
+              },
+              {
+                "value": "800",
+                "label": {
+                  "en": "Top 800",
+                  "ms": "Top 800",
+                  "zh-CN": "Top 800",
+                  "zh-TW": "Top 800"
+                },
+                "count": 23
+              }
+            ]
+          },
+          {
+            "key": "tuitionMax",
+            "label": {
+              "en": "Annual tuition budget",
+              "ms": "Annual tuition budget",
+              "zh-CN": "Annual tuition budget",
+              "zh-TW": "Annual tuition budget"
+            },
+            "options": [
+              {
+                "value": "30000",
+                "label": {
+                  "en": "Under 30000 CNY",
+                  "ms": "Under 30000 CNY",
+                  "zh-CN": "Under 30000 CNY",
+                  "zh-TW": "Under 30000 CNY"
+                },
+                "count": 887
+              },
+              {
+                "value": "50000",
+                "label": {
+                  "en": "Under 50000 CNY",
+                  "ms": "Under 50000 CNY",
+                  "zh-CN": "Under 50000 CNY",
+                  "zh-TW": "Under 50000 CNY"
+                },
+                "count": 1205
+              },
+              {
+                "value": "80000",
+                "label": {
+                  "en": "Under 80000 CNY",
+                  "ms": "Under 80000 CNY",
+                  "zh-CN": "Under 80000 CNY",
+                  "zh-TW": "Under 80000 CNY"
+                },
+                "count": 1401
+              },
+              {
+                "value": "120000",
+                "label": {
+                  "en": "Under 120000 CNY",
+                  "ms": "Under 120000 CNY",
+                  "zh-CN": "Under 120000 CNY",
+                  "zh-TW": "Under 120000 CNY"
+                },
+                "count": 1612
+              }
+            ]
+          },
+          {
+            "key": "language",
+            "label": {
+              "en": "Language requirement",
+              "ms": "Language requirement",
+              "zh-CN": "Language requirement",
+              "zh-TW": "Language requirement"
+            },
+            "options": [
+              {
+                "value": "accept-no-language",
+                "label": {
+                  "en": "accept-no-language",
+                  "ms": "accept-no-language",
+                  "zh-CN": "accept-no-language",
+                  "zh-TW": "accept-no-language"
+                },
+                "count": 104
+              },
+              {
+                "value": "ielts-5.5",
+                "label": {
+                  "en": "ielts-5.5",
+                  "ms": "ielts-5.5",
+                  "zh-CN": "ielts-5.5",
+                  "zh-TW": "ielts-5.5"
+                },
+                "count": 873
+              },
+              {
+                "value": "ielts-6.0",
+                "label": {
+                  "en": "ielts-6.0",
+                  "ms": "ielts-6.0",
+                  "zh-CN": "ielts-6.0",
+                  "zh-TW": "ielts-6.0"
+                },
+                "count": 1506
+              },
+              {
+                "value": "ielts-6.5",
+                "label": {
+                  "en": "ielts-6.5",
+                  "ms": "ielts-6.5",
+                  "zh-CN": "ielts-6.5",
+                  "zh-TW": "ielts-6.5"
+                },
+                "count": 1663
+              }
+            ]
+          }
+        ],
+        "activeFilters": [
+          {
+            "key": "search",
+            "value": "taylor",
+            "label": {
+              "en": "taylor",
+              "ms": "taylor",
+              "zh-CN": "taylor",
+              "zh-TW": "taylor"
+            }
+          }
+        ],
+        "total": 1
+      }
+    },
+    {
+      "path": "/programs?search=taylor&includeMeta=true&pageSize=20",
+      "status": 200,
+      "body": {
+        "items": [],
+        "pagination": {
+          "page": 1,
+          "pageSize": 20,
+          "total": 0,
+          "totalPages": 1
+        },
+        "facets": [
+          {
+            "key": "ownerships",
+            "label": {
+              "en": "Institution ownership",
+              "ms": "Institution ownership",
+              "zh-CN": "Institution ownership",
+              "zh-TW": "Institution ownership"
+            },
+            "options": [
+              {
+                "value": "private",
+                "count": 97,
+                "label": {
+                  "en": "private",
+                  "ms": "private",
+                  "zh-CN": "private",
+                  "zh-TW": "private"
+                }
+              },
+              {
+                "value": "public",
+                "count": 22,
+                "label": {
+                  "en": "public",
+                  "ms": "public",
+                  "zh-CN": "public",
+                  "zh-TW": "public"
+                }
+              }
+            ]
+          },
+          {
+            "key": "institutionTypes",
+            "label": {
+              "en": "Institution type",
+              "ms": "Institution type",
+              "zh-CN": "Institution type",
+              "zh-TW": "Institution type"
+            },
+            "options": [
+              {
+                "value": "comprehensive",
+                "count": 113,
+                "label": {
+                  "en": "comprehensive",
+                  "ms": "comprehensive",
+                  "zh-CN": "comprehensive",
+                  "zh-TW": "comprehensive"
+                }
+              },
+              {
+                "value": "research",
+                "count": 6,
+                "label": {
+                  "en": "research",
+                  "ms": "research",
+                  "zh-CN": "research",
+                  "zh-TW": "research"
+                }
+              }
+            ]
+          },
+          {
+            "key": "levels",
+            "label": {
+              "en": "Degree level",
+              "ms": "Degree level",
+              "zh-CN": "Degree level",
+              "zh-TW": "Degree level"
+            },
+            "options": [
+              {
+                "value": "master",
+                "count": 235,
+                "label": {
+                  "en": "Master",
+                  "ms": "Sarjana",
+                  "zh-CN": "硕士",
+                  "zh-TW": "碩士"
+                }
+              },
+              {
+                "value": "bachelor",
+                "count": 131,
+                "label": {
+                  "en": "Bachelor",
+                  "ms": "Ijazah Sarjana Muda",
+                  "zh-CN": "本科",
+                  "zh-TW": "本科"
+                }
+              },
+              {
+                "value": "phd",
+                "count": 88,
+                "label": {
+                  "en": "PhD",
+                  "ms": "Doktor Falsafah",
+                  "zh-CN": "博士",
+                  "zh-TW": "博士"
+                }
+              },
+              {
+                "value": "postgraduate-certificate",
+                "count": 1,
+                "label": {
+                  "en": "Postgraduate Certificate",
+                  "ms": "Sijil Pascasiswazah",
+                  "zh-CN": "研究生证书",
+                  "zh-TW": "研究生證書"
+                }
+              },
+              {
+                "value": "postgraduate-diploma",
+                "count": 1,
+                "label": {
+                  "en": "Postgraduate Diploma",
+                  "ms": "Diploma Pascasiswazah",
+                  "zh-CN": "研究生文凭",
+                  "zh-TW": "研究生文憑"
+                }
+              }
+            ]
+          },
+          {
+            "key": "categories",
+            "label": {
+              "en": "Program category",
+              "ms": "Program category",
+              "zh-CN": "Program category",
+              "zh-TW": "Program category"
+            },
+            "options": [
+              {
+                "value": "arts",
+                "count": 282,
+                "label": {
+                  "en": "arts",
+                  "ms": "arts",
+                  "zh-CN": "arts",
+                  "zh-TW": "arts"
+                }
+              },
+              {
+                "value": "engineering",
+                "count": 239,
+                "label": {
+                  "en": "engineering",
+                  "ms": "engineering",
+                  "zh-CN": "engineering",
+                  "zh-TW": "engineering"
+                }
+              },
+              {
+                "value": "science",
+                "count": 223,
+                "label": {
+                  "en": "science",
+                  "ms": "science",
+                  "zh-CN": "science",
+                  "zh-TW": "science"
+                }
+              },
+              {
+                "value": "medicine",
+                "count": 176,
+                "label": {
+                  "en": "medicine",
+                  "ms": "medicine",
+                  "zh-CN": "medicine",
+                  "zh-TW": "medicine"
+                }
+              },
+              {
+                "value": "business",
+                "count": 168,
+                "label": {
+                  "en": "business",
+                  "ms": "business",
+                  "zh-CN": "business",
+                  "zh-TW": "business"
+                }
+              },
+              {
+                "value": "it",
+                "count": 96,
+                "label": {
+                  "en": "it",
+                  "ms": "it",
+                  "zh-CN": "it",
+                  "zh-TW": "it"
+                }
+              },
+              {
+                "value": "理科",
+                "count": 44,
+                "label": {
+                  "en": "理科",
+                  "ms": "理科",
+                  "zh-CN": "理科",
+                  "zh-TW": "理科"
+                }
+              },
+              {
+                "value": "理学",
+                "count": 40,
+                "label": {
+                  "en": "理学",
+                  "ms": "理学",
+                  "zh-CN": "理学",
+                  "zh-TW": "理学"
+                }
+              },
+              {
+                "value": "医学",
+                "count": 35,
+                "label": {
+                  "en": "医学",
+                  "ms": "医学",
+                  "zh-CN": "医学",
+                  "zh-TW": "医学"
+                }
+              },
+              {
+                "value": "博士研究型课程",
+                "count": 33,
+                "label": {
+                  "en": "博士研究型课程",
+                  "ms": "博士研究型课程",
+                  "zh-CN": "博士研究型课程",
+                  "zh-TW": "博士研究型课程"
+                }
+              },
+              {
+                "value": "Clinical Medicine",
+                "count": 23,
+                "label": {
+                  "en": "Clinical Medicine",
+                  "ms": "Clinical Medicine",
+                  "zh-CN": "Clinical Medicine",
+                  "zh-TW": "Clinical Medicine"
+                }
+              },
+              {
+                "value": "人文社科",
+                "count": 22,
+                "label": {
+                  "en": "人文社科",
+                  "ms": "人文社科",
+                  "zh-CN": "人文社科",
+                  "zh-TW": "人文社科"
+                }
+              },
+              {
+                "value": "文科",
+                "count": 20,
+                "label": {
+                  "en": "文科",
+                  "ms": "文科",
+                  "zh-CN": "文科",
+                  "zh-TW": "文科"
+                }
+              },
+              {
+                "value": "Education",
+                "count": 19,
+                "label": {
+                  "en": "Education",
+                  "ms": "Education",
+                  "zh-CN": "Education",
+                  "zh-TW": "Education"
+                }
+              },
+              {
+                "value": "工科",
+                "count": 17,
+                "label": {
+                  "en": "工科",
+                  "ms": "工科",
+                  "zh-CN": "工科",
+                  "zh-TW": "工科"
+                }
+              },
+              {
+                "value": "IT",
+                "count": 16,
+                "label": {
+                  "en": "IT",
+                  "ms": "IT",
+                  "zh-CN": "IT",
+                  "zh-TW": "IT"
+                }
+              },
+              {
+                "value": "健康科学",
+                "count": 15,
+                "label": {
+                  "en": "健康科学",
+                  "ms": "健康科学",
+                  "zh-CN": "健康科学",
+                  "zh-TW": "健康科学"
+                }
+              },
+              {
+                "value": "教育",
+                "count": 14,
+                "label": {
+                  "en": "教育",
+                  "ms": "教育",
+                  "zh-CN": "教育",
+                  "zh-TW": "教育"
+                }
+              },
+              {
+                "value": "Arts and Social Sciences",
+                "count": 13,
+                "label": {
+                  "en": "Arts and Social Sciences",
+                  "ms": "Arts and Social Sciences",
+                  "zh-CN": "Arts and Social Sciences",
+                  "zh-TW": "Arts and Social Sciences"
+                }
+              },
+              {
+                "value": "商科",
+                "count": 13,
+                "label": {
+                  "en": "商科",
+                  "ms": "商科",
+                  "zh-CN": "商科",
+                  "zh-TW": "商科"
+                }
+              },
+              {
+                "value": "Dentistry",
+                "count": 12,
+                "label": {
+                  "en": "Dentistry",
+                  "ms": "Dentistry",
+                  "zh-CN": "Dentistry",
+                  "zh-TW": "Dentistry"
+                }
+              },
+              {
+                "value": "计算机与信息科技",
+                "count": 11,
+                "label": {
+                  "en": "计算机与信息科技",
+                  "ms": "计算机与信息科技",
+                  "zh-CN": "计算机与信息科技",
+                  "zh-TW": "计算机与信息科技"
+                }
+              },
+              {
+                "value": "Islamic Studies",
+                "count": 10,
+                "label": {
+                  "en": "Islamic Studies",
+                  "ms": "Islamic Studies",
+                  "zh-CN": "Islamic Studies",
+                  "zh-TW": "Islamic Studies"
+                }
+              },
+              {
+                "value": "伊斯兰研究",
+                "count": 10,
+                "label": {
+                  "en": "伊斯兰研究",
+                  "ms": "伊斯兰研究",
+                  "zh-CN": "伊斯兰研究",
+                  "zh-TW": "伊斯兰研究"
+                }
+              },
+              {
+                "value": "工程与建筑环境",
+                "count": 7,
+                "label": {
+                  "en": "工程与建筑环境",
+                  "ms": "工程与建筑环境",
+                  "zh-CN": "工程与建筑环境",
+                  "zh-TW": "工程与建筑环境"
+                }
+              },
+              {
+                "value": "Built Environment",
+                "count": 6,
+                "label": {
+                  "en": "Built Environment",
+                  "ms": "Built Environment",
+                  "zh-CN": "Built Environment",
+                  "zh-TW": "Built Environment"
+                }
+              },
+              {
+                "value": "Creative Arts",
+                "count": 6,
+                "label": {
+                  "en": "Creative Arts",
+                  "ms": "Creative Arts",
+                  "zh-CN": "Creative Arts",
+                  "zh-TW": "Creative Arts"
+                }
+              },
+              {
+                "value": "医学与健康",
+                "count": 6,
+                "label": {
+                  "en": "医学与健康",
+                  "ms": "医学与健康",
+                  "zh-CN": "医学与健康",
+                  "zh-TW": "医学与健康"
+                }
+              },
+              {
+                "value": "国际与区域研究",
+                "count": 6,
+                "label": {
+                  "en": "国际与区域研究",
+                  "ms": "国际与区域研究",
+                  "zh-CN": "国际与区域研究",
+                  "zh-TW": "国际与区域研究"
+                }
+              },
+              {
+                "value": "法律",
+                "count": 6,
+                "label": {
+                  "en": "法律",
+                  "ms": "法律",
+                  "zh-CN": "法律",
+                  "zh-TW": "法律"
+                }
+              },
+              {
+                "value": "Advanced Studies",
+                "count": 5,
+                "label": {
+                  "en": "Advanced Studies",
+                  "ms": "Advanced Studies",
+                  "zh-CN": "Advanced Studies",
+                  "zh-TW": "Advanced Studies"
+                }
+              },
+              {
+                "value": "建筑",
+                "count": 5,
+                "label": {
+                  "en": "建筑",
+                  "ms": "建筑",
+                  "zh-CN": "建筑",
+                  "zh-TW": "建筑"
+                }
+              },
+              {
+                "value": "社会科学",
+                "count": 5,
+                "label": {
+                  "en": "社会科学",
+                  "ms": "社会科学",
+                  "zh-CN": "社会科学",
+                  "zh-TW": "社会科学"
+                }
+              },
+              {
+                "value": "Law",
+                "count": 4,
+                "label": {
+                  "en": "Law",
+                  "ms": "Law",
+                  "zh-CN": "Law",
+                  "zh-TW": "Law"
+                }
+              },
+              {
+                "value": "Pharmacy",
+                "count": 4,
+                "label": {
+                  "en": "Pharmacy",
+                  "ms": "Pharmacy",
+                  "zh-CN": "Pharmacy",
+                  "zh-TW": "Pharmacy"
+                }
+              },
+              {
+                "value": "商科与经济管理",
+                "count": 4,
+                "label": {
+                  "en": "商科与经济管理",
+                  "ms": "商科与经济管理",
+                  "zh-CN": "商科与经济管理",
+                  "zh-TW": "商科与经济管理"
+                }
+              },
+              {
+                "value": "艺术",
+                "count": 4,
+                "label": {
+                  "en": "艺术",
+                  "ms": "艺术",
+                  "zh-CN": "艺术",
+                  "zh-TW": "艺术"
+                }
+              },
+              {
+                "value": "Languages and Linguistics",
+                "count": 3,
+                "label": {
+                  "en": "Languages and Linguistics",
+                  "ms": "Languages and Linguistics",
+                  "zh-CN": "Languages and Linguistics",
+                  "zh-TW": "Languages and Linguistics"
+                }
+              },
+              {
+                "value": "Malay Studies",
+                "count": 3,
+                "label": {
+                  "en": "Malay Studies",
+                  "ms": "Malay Studies",
+                  "zh-CN": "Malay Studies",
+                  "zh-TW": "Malay Studies"
+                }
+              },
+              {
+                "value": "Sports & Exercise Science",
+                "count": 3,
+                "label": {
+                  "en": "Sports & Exercise Science",
+                  "ms": "Sports & Exercise Science",
+                  "zh-CN": "Sports & Exercise Science",
+                  "zh-TW": "Sports & Exercise Science"
+                }
+              },
+              {
+                "value": "Asia-Europe Studies",
+                "count": 2,
+                "label": {
+                  "en": "Asia-Europe Studies",
+                  "ms": "Asia-Europe Studies",
+                  "zh-CN": "Asia-Europe Studies",
+                  "zh-TW": "Asia-Europe Studies"
+                }
+              },
+              {
+                "value": "law",
+                "count": 2,
+                "label": {
+                  "en": "law",
+                  "ms": "law",
+                  "zh-CN": "law",
+                  "zh-TW": "law"
+                }
+              },
+              {
+                "value": "Public Health",
+                "count": 2,
+                "label": {
+                  "en": "Public Health",
+                  "ms": "Public Health",
+                  "zh-CN": "Public Health",
+                  "zh-TW": "Public Health"
+                }
+              },
+              {
+                "value": "体育",
+                "count": 2,
+                "label": {
+                  "en": "体育",
+                  "ms": "体育",
+                  "zh-CN": "体育",
+                  "zh-TW": "体育"
+                }
+              },
+              {
+                "value": "环境与可持续发展",
+                "count": 2,
+                "label": {
+                  "en": "环境与可持续发展",
+                  "ms": "环境与可持续发展",
+                  "zh-CN": "环境与可持续发展",
+                  "zh-TW": "环境与可持续发展"
+                }
+              },
+              {
+                "value": "Area Studies / International Studies",
+                "count": 1,
+                "label": {
+                  "en": "Area Studies / International Studies",
+                  "ms": "Area Studies / International Studies",
+                  "zh-CN": "Area Studies / International Studies",
+                  "zh-TW": "Area Studies / International Studies"
+                }
+              },
+              {
+                "value": "Epidemiology",
+                "count": 1,
+                "label": {
+                  "en": "Epidemiology",
+                  "ms": "Epidemiology",
+                  "zh-CN": "Epidemiology",
+                  "zh-TW": "Epidemiology"
+                }
+              },
+              {
+                "value": "Health Research Ethics",
+                "count": 1,
+                "label": {
+                  "en": "Health Research Ethics",
+                  "ms": "Health Research Ethics",
+                  "zh-CN": "Health Research Ethics",
+                  "zh-TW": "Health Research Ethics"
+                }
+              },
+              {
+                "value": "Interdisciplinary Studies",
+                "count": 1,
+                "label": {
+                  "en": "Interdisciplinary Studies",
+                  "ms": "Interdisciplinary Studies",
+                  "zh-CN": "Interdisciplinary Studies",
+                  "zh-TW": "Interdisciplinary Studies"
+                }
+              },
+              {
+                "value": "Medical Education",
+                "count": 1,
+                "label": {
+                  "en": "Medical Education",
+                  "ms": "Medical Education",
+                  "zh-CN": "Medical Education",
+                  "zh-TW": "Medical Education"
+                }
+              },
+              {
+                "value": "Medical Parasitology and Entomology",
+                "count": 1,
+                "label": {
+                  "en": "Medical Parasitology and Entomology",
+                  "ms": "Medical Parasitology and Entomology",
+                  "zh-CN": "Medical Parasitology and Entomology",
+                  "zh-TW": "Medical Parasitology and Entomology"
+                }
+              },
+              {
+                "value": "Medical Physics",
+                "count": 1,
+                "label": {
+                  "en": "Medical Physics",
+                  "ms": "Medical Physics",
+                  "zh-CN": "Medical Physics",
+                  "zh-TW": "Medical Physics"
+                }
+              },
+              {
+                "value": "Medicine",
+                "count": 1,
+                "label": {
+                  "en": "Medicine",
+                  "ms": "Medicine",
+                  "zh-CN": "Medicine",
+                  "zh-TW": "Medicine"
+                }
+              },
+              {
+                "value": "Medicine / Nursing",
+                "count": 1,
+                "label": {
+                  "en": "Medicine / Nursing",
+                  "ms": "Medicine / Nursing",
+                  "zh-CN": "Medicine / Nursing",
+                  "zh-TW": "Medicine / Nursing"
+                }
+              },
+              {
+                "value": "Public Policy",
+                "count": 1,
+                "label": {
+                  "en": "Public Policy",
+                  "ms": "Public Policy",
+                  "zh-CN": "Public Policy",
+                  "zh-TW": "Public Policy"
+                }
+              },
+              {
+                "value": "Regenerative Medicine",
+                "count": 1,
+                "label": {
+                  "en": "Regenerative Medicine",
+                  "ms": "Regenerative Medicine",
+                  "zh-CN": "Regenerative Medicine",
+                  "zh-TW": "Regenerative Medicine"
+                }
+              },
+              {
+                "value": "Sports and Exercise Science",
+                "count": 1,
+                "label": {
+                  "en": "Sports and Exercise Science",
+                  "ms": "Sports and Exercise Science",
+                  "zh-CN": "Sports and Exercise Science",
+                  "zh-TW": "Sports and Exercise Science"
+                }
+              },
+              {
+                "value": "人文与区域研究",
+                "count": 1,
+                "label": {
+                  "en": "人文与区域研究",
+                  "ms": "人文与区域研究",
+                  "zh-CN": "人文与区域研究",
+                  "zh-TW": "人文与区域研究"
+                }
+              },
+              {
+                "value": "人文与文学",
+                "count": 1,
+                "label": {
+                  "en": "人文与文学",
+                  "ms": "人文与文学",
+                  "zh-CN": "人文与文学",
+                  "zh-TW": "人文与文学"
+                }
+              },
+              {
+                "value": "人文与语言",
+                "count": 1,
+                "label": {
+                  "en": "人文与语言",
+                  "ms": "人文与语言",
+                  "zh-CN": "人文与语言",
+                  "zh-TW": "人文与语言"
+                }
+              },
+              {
+                "value": "人机交互",
+                "count": 1,
+                "label": {
+                  "en": "人机交互",
+                  "ms": "人机交互",
+                  "zh-CN": "人机交互",
+                  "zh-TW": "人机交互"
+                }
+              },
+              {
+                "value": "伊斯兰文明",
+                "count": 1,
+                "label": {
+                  "en": "伊斯兰文明",
+                  "ms": "伊斯兰文明",
+                  "zh-CN": "伊斯兰文明",
+                  "zh-TW": "伊斯兰文明"
+                }
+              },
+              {
+                "value": "会计",
+                "count": 1,
+                "label": {
+                  "en": "会计",
+                  "ms": "会计",
+                  "zh-CN": "会计",
+                  "zh-TW": "会计"
+                }
+              },
+              {
+                "value": "传媒",
+                "count": 1,
+                "label": {
+                  "en": "传媒",
+                  "ms": "传媒",
+                  "zh-CN": "传媒",
+                  "zh-TW": "传媒"
+                }
+              },
+              {
+                "value": "传播学",
+                "count": 1,
+                "label": {
+                  "en": "传播学",
+                  "ms": "传播学",
+                  "zh-CN": "传播学",
+                  "zh-TW": "传播学"
+                }
+              },
+              {
+                "value": "公共管理",
+                "count": 1,
+                "label": {
+                  "en": "公共管理",
+                  "ms": "公共管理",
+                  "zh-CN": "公共管理",
+                  "zh-TW": "公共管理"
+                }
+              },
+              {
+                "value": "分子医学",
+                "count": 1,
+                "label": {
+                  "en": "分子医学",
+                  "ms": "分子医学",
+                  "zh-CN": "分子医学",
+                  "zh-TW": "分子医学"
+                }
+              },
+              {
+                "value": "医学与健康科学",
+                "count": 1,
+                "label": {
+                  "en": "医学与健康科学",
+                  "ms": "医学与健康科学",
+                  "zh-CN": "医学与健康科学",
+                  "zh-TW": "医学与健康科学"
+                }
+              },
+              {
+                "value": "发展研究",
+                "count": 1,
+                "label": {
+                  "en": "发展研究",
+                  "ms": "发展研究",
+                  "zh-CN": "发展研究",
+                  "zh-TW": "发展研究"
+                }
+              },
+              {
+                "value": "可再生能源",
+                "count": 1,
+                "label": {
+                  "en": "可再生能源",
+                  "ms": "可再生能源",
+                  "zh-CN": "可再生能源",
+                  "zh-TW": "可再生能源"
+                }
+              },
+              {
+                "value": "可视化信息学",
+                "count": 1,
+                "label": {
+                  "en": "可视化信息学",
+                  "ms": "可视化信息学",
+                  "zh-CN": "可视化信息学",
+                  "zh-TW": "可视化信息学"
+                }
+              },
+              {
+                "value": "商科/经济",
+                "count": 1,
+                "label": {
+                  "en": "商科/经济",
+                  "ms": "商科/经济",
+                  "zh-CN": "商科/经济",
+                  "zh-TW": "商科/经济"
+                }
+              },
+              {
+                "value": "地理空间",
+                "count": 1,
+                "label": {
+                  "en": "地理空间",
+                  "ms": "地理空间",
+                  "zh-CN": "地理空间",
+                  "zh-TW": "地理空间"
+                }
+              },
+              {
+                "value": "宇航学",
+                "count": 1,
+                "label": {
+                  "en": "宇航学",
+                  "ms": "宇航学",
+                  "zh-CN": "宇航学",
+                  "zh-TW": "宇航学"
+                }
+              },
+              {
+                "value": "工程与纳米技术",
+                "count": 1,
+                "label": {
+                  "en": "工程与纳米技术",
+                  "ms": "工程与纳米技术",
+                  "zh-CN": "工程与纳米技术",
+                  "zh-TW": "工程与纳米技术"
+                }
+              },
+              {
+                "value": "心理学",
+                "count": 1,
+                "label": {
+                  "en": "心理学",
+                  "ms": "心理学",
+                  "zh-CN": "心理学",
+                  "zh-TW": "心理学"
+                }
+              },
+              {
+                "value": "族群研究",
+                "count": 1,
+                "label": {
+                  "en": "族群研究",
+                  "ms": "族群研究",
+                  "zh-CN": "族群研究",
+                  "zh-TW": "族群研究"
+                }
+              },
+              {
+                "value": "气候变化",
+                "count": 1,
+                "label": {
+                  "en": "气候变化",
+                  "ms": "气候变化",
+                  "zh-CN": "气候变化",
+                  "zh-TW": "气候变化"
+                }
+              },
+              {
+                "value": "气候变化与社会科学",
+                "count": 1,
+                "label": {
+                  "en": "气候变化与社会科学",
+                  "ms": "气候变化与社会科学",
+                  "zh-CN": "气候变化与社会科学",
+                  "zh-TW": "气候变化与社会科学"
+                }
+              },
+              {
+                "value": "气候变化政策",
+                "count": 1,
+                "label": {
+                  "en": "气候变化政策",
+                  "ms": "气候变化政策",
+                  "zh-CN": "气候变化政策",
+                  "zh-TW": "气候变化政策"
+                }
+              },
+              {
+                "value": "气候变化科学",
+                "count": 1,
+                "label": {
+                  "en": "气候变化科学",
+                  "ms": "气候变化科学",
+                  "zh-CN": "气候变化科学",
+                  "zh-TW": "气候变化科学"
+                }
+              },
+              {
+                "value": "氢能",
+                "count": 1,
+                "label": {
+                  "en": "氢能",
+                  "ms": "氢能",
+                  "zh-CN": "氢能",
+                  "zh-TW": "氢能"
+                }
+              },
+              {
+                "value": "燃料电池",
+                "count": 1,
+                "label": {
+                  "en": "燃料电池",
+                  "ms": "燃料电池",
+                  "zh-CN": "燃料电池",
+                  "zh-TW": "燃料电池"
+                }
+              },
+              {
+                "value": "牙科",
+                "count": 1,
+                "label": {
+                  "en": "牙科",
+                  "ms": "牙科",
+                  "zh-CN": "牙科",
+                  "zh-TW": "牙科"
+                }
+              },
+              {
+                "value": "生物分子科学",
+                "count": 1,
+                "label": {
+                  "en": "生物分子科学",
+                  "ms": "生物分子科学",
+                  "zh-CN": "生物分子科学",
+                  "zh-TW": "生物分子科学"
+                }
+              },
+              {
+                "value": "硅内生物学",
+                "count": 1,
+                "label": {
+                  "en": "硅内生物学",
+                  "ms": "硅内生物学",
+                  "zh-CN": "硅内生物学",
+                  "zh-TW": "硅内生物学"
+                }
+              },
+              {
+                "value": "视觉数据分析",
+                "count": 1,
+                "label": {
+                  "en": "视觉数据分析",
+                  "ms": "视觉数据分析",
+                  "zh-CN": "视觉数据分析",
+                  "zh-TW": "视觉数据分析"
+                }
+              },
+              {
+                "value": "空间科学",
+                "count": 1,
+                "label": {
+                  "en": "空间科学",
+                  "ms": "空间科学",
+                  "zh-CN": "空间科学",
+                  "zh-TW": "空间科学"
+                }
+              },
+              {
+                "value": "空间管理与政策",
+                "count": 1,
+                "label": {
+                  "en": "空间管理与政策",
+                  "ms": "空间管理与政策",
+                  "zh-CN": "空间管理与政策",
+                  "zh-TW": "空间管理与政策"
+                }
+              },
+              {
+                "value": "经济",
+                "count": 1,
+                "label": {
+                  "en": "经济",
+                  "ms": "经济",
+                  "zh-CN": "经济",
+                  "zh-TW": "经济"
+                }
+              },
+              {
+                "value": "统计/商科",
+                "count": 1,
+                "label": {
+                  "en": "统计/商科",
+                  "ms": "统计/商科",
+                  "zh-CN": "统计/商科",
+                  "zh-TW": "统计/商科"
+                }
+              },
+              {
+                "value": "能源政策",
+                "count": 1,
+                "label": {
+                  "en": "能源政策",
+                  "ms": "能源政策",
+                  "zh-CN": "能源政策",
+                  "zh-TW": "能源政策"
+                }
+              },
+              {
+                "value": "药学",
+                "count": 1,
+                "label": {
+                  "en": "药学",
+                  "ms": "药学",
+                  "zh-CN": "药学",
+                  "zh-TW": "药学"
+                }
+              },
+              {
+                "value": "蛋白质组科学",
+                "count": 1,
+                "label": {
+                  "en": "蛋白质组科学",
+                  "ms": "蛋白质组科学",
+                  "zh-CN": "蛋白质组科学",
+                  "zh-TW": "蛋白质组科学"
+                }
+              },
+              {
+                "value": "计算机视觉",
+                "count": 1,
+                "label": {
+                  "en": "计算机视觉",
+                  "ms": "计算机视觉",
+                  "zh-CN": "计算机视觉",
+                  "zh-TW": "计算机视觉"
+                }
+              },
+              {
+                "value": "计算生物学",
+                "count": 1,
+                "label": {
+                  "en": "计算生物学",
+                  "ms": "计算生物学",
+                  "zh-CN": "计算生物学",
+                  "zh-TW": "计算生物学"
+                }
+              },
+              {
+                "value": "语言学",
+                "count": 1,
+                "label": {
+                  "en": "语言学",
+                  "ms": "语言学",
+                  "zh-CN": "语言学",
+                  "zh-TW": "语言学"
+                }
+              },
+              {
+                "value": "跨学科",
+                "count": 1,
+                "label": {
+                  "en": "跨学科",
+                  "ms": "跨学科",
+                  "zh-CN": "跨学科",
+                  "zh-TW": "跨学科"
+                }
+              }
+            ]
+          },
+          {
+            "key": "qsRankMax",
+            "label": {
+              "en": "QS WUR 2027",
+              "ms": "QS WUR 2027",
+              "zh-CN": "QS WUR 2027",
+              "zh-TW": "QS WUR 2027"
+            },
+            "options": [
+              {
+                "value": "100",
+                "label": {
+                  "en": "Top 100",
+                  "ms": "Top 100",
+                  "zh-CN": "Top 100",
+                  "zh-TW": "Top 100"
+                },
+                "count": 3
+              },
+              {
+                "value": "200",
+                "label": {
+                  "en": "Top 200",
+                  "ms": "Top 200",
+                  "zh-CN": "Top 200",
+                  "zh-TW": "Top 200"
+                },
+                "count": 7
+              },
+              {
+                "value": "300",
+                "label": {
+                  "en": "Top 300",
+                  "ms": "Top 300",
+                  "zh-CN": "Top 300",
+                  "zh-TW": "Top 300"
+                },
+                "count": 10
+              },
+              {
+                "value": "500",
+                "label": {
+                  "en": "Top 500",
+                  "ms": "Top 500",
+                  "zh-CN": "Top 500",
+                  "zh-TW": "Top 500"
+                },
+                "count": 12
+              },
+              {
+                "value": "800",
+                "label": {
+                  "en": "Top 800",
+                  "ms": "Top 800",
+                  "zh-CN": "Top 800",
+                  "zh-TW": "Top 800"
+                },
+                "count": 23
+              }
+            ]
+          },
+          {
+            "key": "tuitionMax",
+            "label": {
+              "en": "Annual tuition budget",
+              "ms": "Annual tuition budget",
+              "zh-CN": "Annual tuition budget",
+              "zh-TW": "Annual tuition budget"
+            },
+            "options": [
+              {
+                "value": "30000",
+                "label": {
+                  "en": "Under 30000 CNY",
+                  "ms": "Under 30000 CNY",
+                  "zh-CN": "Under 30000 CNY",
+                  "zh-TW": "Under 30000 CNY"
+                },
+                "count": 887
+              },
+              {
+                "value": "50000",
+                "label": {
+                  "en": "Under 50000 CNY",
+                  "ms": "Under 50000 CNY",
+                  "zh-CN": "Under 50000 CNY",
+                  "zh-TW": "Under 50000 CNY"
+                },
+                "count": 1205
+              },
+              {
+                "value": "80000",
+                "label": {
+                  "en": "Under 80000 CNY",
+                  "ms": "Under 80000 CNY",
+                  "zh-CN": "Under 80000 CNY",
+                  "zh-TW": "Under 80000 CNY"
+                },
+                "count": 1401
+              },
+              {
+                "value": "120000",
+                "label": {
+                  "en": "Under 120000 CNY",
+                  "ms": "Under 120000 CNY",
+                  "zh-CN": "Under 120000 CNY",
+                  "zh-TW": "Under 120000 CNY"
+                },
+                "count": 1612
+              }
+            ]
+          },
+          {
+            "key": "language",
+            "label": {
+              "en": "Language requirement",
+              "ms": "Language requirement",
+              "zh-CN": "Language requirement",
+              "zh-TW": "Language requirement"
+            },
+            "options": [
+              {
+                "value": "accept-no-language",
+                "label": {
+                  "en": "accept-no-language",
+                  "ms": "accept-no-language",
+                  "zh-CN": "accept-no-language",
+                  "zh-TW": "accept-no-language"
+                },
+                "count": 104
+              },
+              {
+                "value": "ielts-5.5",
+                "label": {
+                  "en": "ielts-5.5",
+                  "ms": "ielts-5.5",
+                  "zh-CN": "ielts-5.5",
+                  "zh-TW": "ielts-5.5"
+                },
+                "count": 873
+              },
+              {
+                "value": "ielts-6.0",
+                "label": {
+                  "en": "ielts-6.0",
+                  "ms": "ielts-6.0",
+                  "zh-CN": "ielts-6.0",
+                  "zh-TW": "ielts-6.0"
+                },
+                "count": 1506
+              },
+              {
+                "value": "ielts-6.5",
+                "label": {
+                  "en": "ielts-6.5",
+                  "ms": "ielts-6.5",
+                  "zh-CN": "ielts-6.5",
+                  "zh-TW": "ielts-6.5"
+                },
+                "count": 1663
+              }
+            ]
+          }
+        ],
+        "activeFilters": [
+          {
+            "key": "search",
+            "value": "taylor",
+            "label": {
+              "en": "taylor",
+              "ms": "taylor",
+              "zh-CN": "taylor",
+              "zh-TW": "taylor"
+            }
+          }
+        ],
+        "total": 0
+      }
+    },
+    {
+      "path": "/universities/taylors-university",
+      "status": 404,
+      "body": {
+        "message": "University not found",
+        "error": "Not Found",
+        "statusCode": 404
+      }
+    },
+    {
+      "path": "/programs/tsu-official-2026-row-001-bachelor-of-science-honours-in-architecture",
+      "status": 404,
+      "body": {
+        "message": "Program not found",
+        "error": "Not Found",
+        "statusCode": 404
+      }
+    },
+    {
+      "path": "/admin/universities?search=TSU&published=false&publicDisplayStatus=needs-review&pageSize=20",
+      "status": 401,
+      "body": {
+        "message": "Missing admin bearer token",
+        "error": "Unauthorized",
+        "statusCode": 401
+      }
+    },
+    {
+      "path": "/admin/programs?universityId=120&published=false&publicDisplayStatus=needs-review&pageSize=100",
+      "status": 401,
+      "body": {
+        "message": "Missing admin bearer token",
+        "error": "Unauthorized",
+        "statusCode": 401
+      }
+    }
+  ]
+}

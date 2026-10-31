@@ -1,0 +1,23 @@
+{
+  "status": "passed",
+  "recordKey": "programmes",
+  "baselineKey": "official_row_disposal",
+  "pageOptionKey": "page_option_inventory",
+  "coverageKey": "field_coverage_matrix",
+  "displayParityKey": "display_parity_report.surfaces",
+  "instructionLedgerKey": "instruction_execution_ledger",
+  "officialDomains": [
+    "ucsiuniversity.edu.my"
+  ],
+  "recordCount": 118,
+  "baselineCount": 230,
+  "pageOptionCount": 118,
+  "coverageRowCount": 118,
+  "displayParityRowCount": 5,
+  "instructionLedgerCount": 16,
+  "recordsByPublicStatus": {
+    "needs-review": 118
+  },
+  "issueCounts": {},
+  "issues": []
+}

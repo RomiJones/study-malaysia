@@ -3,12 +3,17 @@ import {
   LOCAL_UNIVERSITY_LOGO_FALLBACK,
   type AuthMethod,
   type DegreeLevel,
+  type FeeAuditStatus,
   type InstitutionOwnership,
   type InstitutionType,
   type LocalizedStringArray,
   type LocalizedText,
+  type OfficialSourceLink,
+  type OfficialSourceStatus,
   type ProgramCategory,
-  type SupportedLocale
+  type PublicDisplayStatus,
+  type SupportedLocale,
+  type TuitionCurrency
 } from "@studymy/shared";
 import { umExtraPrograms } from "./seed-um-extra.js";
 
@@ -79,29 +84,61 @@ export interface SeedProgram {
   slug: string;
   code: string;
   name: LocalizedText;
+  nameEnOfficial?: string;
   level: DegreeLevel;
   category: ProgramCategory;
   faculty: LocalizedText;
+  facultyZh?: string;
+  studyMode?: string;
+  campus?: string;
   durationYears: number;
+  durationOfficial?: string;
   annualTuitionCny: number;
+  tuitionAmount?: number | null;
+  tuitionCurrency?: TuitionCurrency;
+  tuitionDisplay?: string;
+  officialTuitionMYR?: number | null;
+  officialTuitionNote?: string | null;
+  officialFeeSourceUrl?: string;
+  secondaryOfficialFeeSourceUrl?: string;
+  officialFeeAuditStatus?: FeeAuditStatus;
+  officialFeeAuditedAt?: string | null;
   intakeMonths: string[];
+  officialIntake?: string;
+  officialIntakeNote?: string | null;
   languageRequirement: {
     ielts: number;
     toefl?: number;
     pte?: number;
     muet?: number;
   };
+  officialLanguageRequirement?: string | null;
   requirement: {
     gpa: number;
     gaokaoRequired: boolean;
     huikaoRequired: boolean;
     note: LocalizedText;
   };
+  officialAcademicRequirement?: string | null;
+  chinaStudentRequirement?: string | null;
+  specialRequirementsNote?: string | null;
   applicationDocs: LocalizedStringArray;
   curriculum: LocalizedStringArray;
   careers: LocalizedStringArray;
   specializations: LocalizedStringArray;
   description: LocalizedText;
+  officialAccreditationNote?: string | null;
+  officialSourceUrl?: string;
+  officialEntryRequirementSourceUrl?: string;
+  officialAccreditationSourceUrl?: string;
+  sourceUrls?: OfficialSourceLink[] | null;
+  officialVerifiedAt?: string | null;
+  officialSourceStatus?: OfficialSourceStatus;
+  publicDisplayStatus?: PublicDisplayStatus;
+  publicDisplayNote?: string | null;
+  reviewReason?: string | null;
+  auditNote?: string | null;
+  listTuitionText?: string;
 }
 
 export interface SeedContentBlock {
@@ -111,13 +148,6 @@ export interface SeedContentBlock {
 }
 
 export const seedUsers: SeedUser[] = [
-  {
-    role: "admin",
-    method: "email",
-    account: "admin@studymy.local",
-    password: "Admin123!",
-    displayName: "StudyMY Admin"
-  },
   {
     role: "student",
     method: "email",
@@ -169,7 +199,7 @@ export const seedUniversities: SeedUniversity[] = [
     logoUrl: LOCAL_UNIVERSITY_LOGO_FALLBACK,
     imageUrl: localCover("card-image-photo-1562774053-701939374585-81c45bbca274.jpg"),
     color: "#003DA5",
-    qsRank: 60,
+    qsRank: 56,
     qsAsiaRank: 12,
     location: t("Kuala Lumpur", "Kuala Lumpur", "吉隆坡", "吉隆坡"),
     region: t("Federal Territory of Kuala Lumpur", "Wilayah Persekutuan Kuala Lumpur", "吉隆坡联邦直辖区", "吉隆坡聯邦直轄區"),
@@ -213,7 +243,7 @@ export const seedUniversities: SeedUniversity[] = [
     logoUrl: LOCAL_UNIVERSITY_LOGO_FALLBACK,
     imageUrl: localCover("card-image-photo-1541339907198-e08756dedf3f-8421a6bf5c1a.jpg"),
     color: "#6A1B9A",
-    qsRank: 137,
+    qsRank: 128,
     qsAsiaRank: 37,
     location: t("Penang", "Pulau Pinang", "槟城", "檳城"),
     region: t("Penang", "Pulau Pinang", "槟城州", "檳城州"),
@@ -257,7 +287,7 @@ export const seedUniversities: SeedUniversity[] = [
     logoUrl: LOCAL_UNIVERSITY_LOGO_FALLBACK,
     imageUrl: LOCAL_UNIVERSITY_COVER_FALLBACK,
     color: "#E91E63",
-    qsRank: 253,
+    qsRank: 272,
     qsAsiaRank: 41,
     location: t("Subang Jaya", "Subang Jaya", "梳邦再也", "梳邦再也"),
     region: t("Selangor", "Selangor", "雪兰莪州", "雪蘭莪州"),
@@ -301,7 +331,7 @@ export const seedUniversities: SeedUniversity[] = [
     logoUrl: LOCAL_UNIVERSITY_LOGO_FALLBACK,
     imageUrl: LOCAL_UNIVERSITY_COVER_FALLBACK,
     color: "#0F766E",
-    qsRank: 611,
+    qsRank: 528,
     qsAsiaRank: 179,
     location: t("Kuala Lumpur", "Kuala Lumpur", "吉隆坡", "吉隆坡"),
     region: t("Bukit Jalil", "Bukit Jalil", "武吉加里尔", "武吉加里爾"),
@@ -345,7 +375,7 @@ export const seedUniversities: SeedUniversity[] = [
     logoUrl: LOCAL_UNIVERSITY_LOGO_FALLBACK,
     imageUrl: localCover("card-image-photo-1607237138185-eedd9c632b0b-8554be173a93.jpg"),
     color: "#005EB8",
-    qsRank: 42,
+    qsRank: 31,
     qsAsiaRank: 8,
     location: t("Subang Jaya", "Subang Jaya", "梳邦再也", "梳邦再也"),
     region: t("Selangor", "Selangor", "雪兰莪州", "雪蘭莪州"),
@@ -390,7 +420,7 @@ export const seedUniversities: SeedUniversity[] = [
     logoUrl: LOCAL_UNIVERSITY_LOGO_FALLBACK,
     imageUrl: localCover("card-image-photo-1541339907198-e08756dedf3f-8421a6bf5c1a.jpg"),
     color: "#006633",
-    qsRank: 158,
+    qsRank: 138,
     qsAsiaRank: 28,
     location: t("Serdang", "Serdang", "沙登", "沙登"),
     region: t("Selangor", "Selangor", "雪兰莪州", "雪蘭莪州"),
@@ -434,7 +464,7 @@ export const seedUniversities: SeedUniversity[] = [
     logoUrl: LOCAL_UNIVERSITY_LOGO_FALLBACK,
     imageUrl: localCover("card-image-photo-1498243691581-b145c3f54a5a-35fe71643bf3.jpg"),
     color: "#A00000",
-    qsRank: 159,
+    qsRank: 130,
     qsAsiaRank: 30,
     location: t("Bangi", "Bangi", "万宜", "萬宜"),
     region: t("Selangor", "Selangor", "雪兰莪州", "雪蘭莪州"),
@@ -478,7 +508,7 @@ export const seedUniversities: SeedUniversity[] = [
     logoUrl: LOCAL_UNIVERSITY_LOGO_FALLBACK,
     imageUrl: localCover("card-image-photo-1580582932707-520aed937b7b-4b277f493eec.jpg"),
     color: "#003087",
-    qsRank: 191,
+    qsRank: 158,
     qsAsiaRank: 32,
     location: t("Skudai", "Skudai", "士姑来", "士姑來"),
     region: t("Johor", "Johor", "柔佛州", "柔佛州"),
@@ -522,7 +552,7 @@ export const seedUniversities: SeedUniversity[] = [
     logoUrl: LOCAL_UNIVERSITY_LOGO_FALLBACK,
     imageUrl: LOCAL_UNIVERSITY_COVER_FALLBACK,
     color: "#F7941D",
-    qsRank: 401,
+    qsRank: 354,
     qsAsiaRank: 88,
     location: t("Subang Jaya", "Subang Jaya", "梳邦再也", "梳邦再也"),
     region: t("Selangor", "Selangor", "雪兰莪州", "雪蘭莪州"),
@@ -566,7 +596,7 @@ export const seedUniversities: SeedUniversity[] = [
     logoUrl: LOCAL_UNIVERSITY_LOGO_FALLBACK,
     imageUrl: localCover("card-image-photo-1607237138185-eedd9c632b0b-a31f29138620.jpg"),
     color: "#CC0000",
-    qsRank: 521,
+    qsRank: 282,
     qsAsiaRank: 110,
     location: t("Kuala Lumpur", "Kuala Lumpur", "吉隆坡", "吉隆坡"),
     region: t("Federal Territory of Kuala Lumpur", "Wilayah Persekutuan Kuala Lumpur", "吉隆坡联邦直辖区", "吉隆坡聯邦直轄區"),
@@ -601,6 +631,50 @@ export const seedUniversities: SeedUniversity[] = [
       ["应用型学科较强", "位于吉隆坡市区", "支持条件录取路径"],
       ["應用型學科較強", "位於吉隆坡市區", "支援條件錄取路徑"]
     )
+  },
+  {
+    slug: "segi-university",
+    code: "SEGI",
+    name: t("SEGi University", "SEGi University", "世纪大学", "世紀大學"),
+    shortName: "SEGi",
+    logoUrl: LOCAL_UNIVERSITY_LOGO_FALLBACK,
+    imageUrl: LOCAL_UNIVERSITY_COVER_FALLBACK,
+    color: "#7C3AED",
+    qsRank: 701,
+    qsAsiaRank: 999,
+    location: t("Petaling Jaya", "Petaling Jaya", "八打灵再也", "八打靈再也"),
+    region: t("Selangor", "Selangor", "雪兰莪州", "雪蘭莪州"),
+    ownership: "private",
+    institutionType: "comprehensive",
+    foundedYear: 1977,
+    students: 0,
+    intlStudents: 0,
+    csrCertified: true,
+    description: t(
+      "SEGi University is a private Malaysian university represented in this seed with 2026 fee-sheet verified programme fee records.",
+      "SEGi University ialah universiti swasta Malaysia yang direkodkan di sini dengan yuran program yang disahkan melalui jadual yuran 2026.",
+      "世纪大学是马来西亚私立大学；本次根据 2026 学费单先补齐可匹配专业的费用信息。",
+      "世紀大學是馬來西亞私立大學；本次根據 2026 學費單先補齊可匹配專業的費用資訊。"
+    ),
+    website: "https://www.segi.edu.my",
+    admissionEmail: "pending-update@studymy.local",
+    tuitionMinCny: 49000,
+    tuitionMaxCny: 131000,
+    livingCostCny: 26000,
+    minIelts: 5.5,
+    acceptNoLanguage: true,
+    facilities: arr(
+      ["Campus facilities pending official detail-page verification"],
+      ["Kemudahan kampus menunggu pengesahan halaman rasmi terperinci"],
+      ["校园设施待后续官方详情页复核"],
+      ["校園設施待後續官方詳情頁覆核"]
+    ),
+    highlights: arr(
+      ["2026 fee sheet mapped for matched programmes", "Private university in Selangor"],
+      ["Jadual yuran 2026 dipetakan untuk program yang sepadan", "Universiti swasta di Selangor"],
+      ["已匹配专业补入 2026 学费单", "雪兰莪私立大学"],
+      ["已匹配專業補入 2026 學費單", "雪蘭莪私立大學"]
+    )
   }
 ];
 
@@ -610,6 +684,22 @@ const standardDocs = arr(
   ["护照", "成绩单", "英语成绩单", "个人陈述"],
   ["護照", "成績單", "英語成績單", "個人陳述"]
 );
+
+const segiFeeSheetSource =
+  "/Users/ian/Library/Containers/com.tencent.xinWeChat/Data/Documents/xwechat_files/wxid_fuzvc3f0qbm521_40c0/temp/drag/世纪大学学费单2026.pdf";
+const segiFeeSheetVerifiedAt = "2026-06-16";
+const segiFeeSheetHash = "sha256:205ad0382161d445a2f849a8dae6df08ac6300594aaaebf074d1c2358eb094db";
+
+const segiFeeSource = (programme: string): OfficialSourceLink[] => [
+  {
+    url: segiFeeSheetSource,
+    title: `2026 SEGi University fee sheet - ${programme}`,
+    sourceType: "fee",
+    verifiedAt: segiFeeSheetVerifiedAt,
+    status: "needs-review",
+    note: segiFeeSheetHash
+  }
+];
 
 export const seedPrograms: SeedProgram[] = [
   {
@@ -1334,6 +1424,153 @@ export const seedPrograms: SeedProgram[] = [
     careers: arr(["Mechanical engineer", "Manufacturing engineer", "Design engineer"],["Jurutera mekanikal", "Jurutera pembuatan", "Jurutera reka bentuk"],["机械工程师", "制造工程师", "设计工程师"],["機械工程師", "製造工程師", "設計工程師"]),
     specializations: arr(["Manufacturing", "Design"],["Pembuatan", "Reka bentuk"],["制造", "设计"],["製造", "設計"]),
     description: t("A representative UTM engineering degree with broad industrial applications.", "Ijazah kejuruteraan perwakilan UTM dengan aplikasi industri yang luas.", "具有广泛工业应用场景的 UTM 代表性工科本科。", "具有廣泛工業應用場景的 UTM 代表性工科本科。")
+  },
+  {
+    universityCode: "SEGI",
+    slug: "segi-bachelor-medicine-surgery-mbbs",
+    code: "SEGI-MBBS",
+    name: t("Bachelor of Medicine and Bachelor of Surgery (MBBS)", "Bachelor of Medicine and Bachelor of Surgery (MBBS)", "医学和外科学士学位 (MBBS)", "醫學和外科學士學位 (MBBS)"),
+    nameEnOfficial: "Bachelor of Medicine and Bachelor of Surgery (MBBS)",
+    level: "bachelor",
+    category: "medicine",
+    faculty: t("Health and Medical Sciences", "Sains Kesihatan dan Perubatan", "健康医学", "健康醫學"),
+    facultyZh: "健康医学",
+    studyMode: "Full-time",
+    campus: "SEGi University",
+    durationYears: 5,
+    durationOfficial: "Duration not published in the provided 2026 fee sheet; retained from existing StudyMY seed baseline.",
+    annualTuitionCny: 130158,
+    tuitionAmount: 419864,
+    tuitionCurrency: "MYR",
+    tuitionDisplay: "MYR 419,864.00 total 2026 fee sheet amount",
+    officialTuitionMYR: 419864,
+    officialTuitionNote: "Provided 2026 SEGi fee sheet total is MYR 419,864.00, including registration, visa/renewal, application/admin, handling, miscellaneous fees, deposit, tuition component MYR 358,500.00, and 6% SST MYR 23,364.00. Accommodation is excluded.",
+    officialFeeSourceUrl: segiFeeSheetSource,
+    officialFeeAuditStatus: "matched-official",
+    officialFeeAuditedAt: segiFeeSheetVerifiedAt,
+    intakeMonths: ["May", "September"],
+    officialIntake: "May 11, September 21",
+    officialIntakeNote: "Dates transcribed from the provided 2026 SEGi fee sheet.",
+    languageRequirement: { ielts: 7.0, toefl: 100, pte: 50, muet: 3 },
+    officialLanguageRequirement: "Not published in the provided 2026 fee sheet.",
+    requirement: { gpa: 3.8, gaokaoRequired: false, huikaoRequired: false, note: t("Existing StudyMY baseline requirement retained; confirm against SEGi admission page before counselling use.", "Syarat asas StudyMY sedia ada dikekalkan; sahkan dengan halaman kemasukan SEGi sebelum digunakan untuk kaunseling.", "沿用现有 StudyMY 基线要求；正式咨询前需用 SEGi 入学页面复核。", "沿用現有 StudyMY 基線要求；正式諮詢前需用 SEGi 入學頁面覆核。") },
+    officialAcademicRequirement: "Not published in the provided 2026 fee sheet.",
+    chinaStudentRequirement: "Not published in the provided 2026 fee sheet.",
+    applicationDocs: standardDocs,
+    curriculum: arr(["Anatomy", "Physiology", "Pathology", "Clinical practice"],["Anatomi", "Fisiologi", "Patologi", "Amalan klinikal"],["解剖学", "生理学", "病理学", "临床实践"],["解剖學", "生理學", "病理學", "臨床實踐"]),
+    careers: arr(["Medical practitioner", "Hospital doctor", "Medical researcher"],["Pengamal perubatan", "Doktor hospital", "Penyelidik perubatan"],["医疗从业者", "医院医生", "医学研究员"],["醫療從業者", "醫院醫師", "醫學研究員"]),
+    specializations: arr([], [], [], []),
+    description: t("SEGi MBBS is mapped here with the 2026 fee-sheet total and intake dates from the provided PDF.", "SEGi MBBS dipetakan di sini dengan jumlah yuran 2026 dan tarikh ambilan daripada PDF yang diberikan.", "SEGi MBBS 已根据本次提供的 2026 学费单补入总额与开课日期。", "SEGi MBBS 已根據本次提供的 2026 學費單補入總額與開課日期。"),
+    officialAccreditationNote: "Accreditation details are not published in the provided 2026 fee sheet.",
+    officialSourceUrl: segiFeeSheetSource,
+    officialEntryRequirementSourceUrl: "",
+    officialAccreditationSourceUrl: "",
+    sourceUrls: segiFeeSource("Bachelor of Medicine and Bachelor of Surgery (MBBS)"),
+    officialVerifiedAt: segiFeeSheetVerifiedAt,
+    officialSourceStatus: "needs-review",
+    publicDisplayStatus: "ready",
+    publicDisplayNote: "Fee fields are verified against the provided 2026 SEGi fee sheet; non-fee fields still need official detail-page verification.",
+    reviewReason: null,
+    auditNote: "PDF row matched by Chinese title 医学和外科学士学位 (MBBS).",
+    listTuitionText: "MYR 419,864.00 total"
+  },
+  {
+    universityCode: "SEGI",
+    slug: "segi-bachelor-business-management-hons",
+    code: "SEGI-BBM",
+    name: t("Bachelor of Business Management (Hons)", "Bachelor of Business Management (Hons)", "商务管理（荣誉）学士学位", "商務管理（榮譽）學士學位"),
+    nameEnOfficial: "Bachelor of Business Management (Hons)",
+    level: "bachelor",
+    category: "business",
+    faculty: t("Business and Accounting", "Perniagaan dan Perakaunan", "工商管理、会计", "工商管理、會計"),
+    facultyZh: "工商管理、会计",
+    studyMode: "Full-time",
+    campus: "SEGi University",
+    durationYears: 3,
+    durationOfficial: "Duration not published in the provided 2026 fee sheet; retained from existing StudyMY seed baseline.",
+    annualTuitionCny: 48856,
+    tuitionAmount: 94558.7,
+    tuitionCurrency: "MYR",
+    tuitionDisplay: "MYR 94,558.70 total 2026 fee sheet amount",
+    officialTuitionMYR: 94559,
+    officialTuitionNote: "Provided 2026 SEGi fee sheet total is MYR 94,558.70, including registration, visa/renewal, application/admin, handling, miscellaneous fees, deposit, tuition component MYR 63,295.00, and 6% SST MYR 5,063.70. Accommodation is excluded.",
+    officialFeeSourceUrl: segiFeeSheetSource,
+    officialFeeAuditStatus: "matched-official",
+    officialFeeAuditedAt: segiFeeSheetVerifiedAt,
+    intakeMonths: ["January", "May", "September"],
+    officialIntake: "January 12, May 11, September 14",
+    officialIntakeNote: "Dates transcribed from the provided 2026 SEGi fee sheet.",
+    languageRequirement: { ielts: 5.5, toefl: 60, pte: 50, muet: 3 },
+    officialLanguageRequirement: "Not published in the provided 2026 fee sheet.",
+    requirement: { gpa: 2.5, gaokaoRequired: true, huikaoRequired: false, note: t("Existing StudyMY baseline requirement retained; confirm against SEGi admission page before counselling use.", "Syarat asas StudyMY sedia ada dikekalkan; sahkan dengan halaman kemasukan SEGi sebelum digunakan untuk kaunseling.", "沿用现有 StudyMY 基线要求；正式咨询前需用 SEGi 入学页面复核。", "沿用現有 StudyMY 基線要求；正式諮詢前需用 SEGi 入學頁面覆核。") },
+    officialAcademicRequirement: "Not published in the provided 2026 fee sheet.",
+    chinaStudentRequirement: "Not published in the provided 2026 fee sheet.",
+    applicationDocs: standardDocs,
+    curriculum: arr(["Management", "Marketing", "Finance", "Business strategy"],["Pengurusan", "Pemasaran", "Kewangan", "Strategi perniagaan"],["管理学", "市场营销", "财务管理", "商业战略"],["管理學", "市場行銷", "財務管理", "商業策略"]),
+    careers: arr(["Management trainee", "Marketing executive", "Business consultant"],["Pelatih pengurusan", "Eksekutif pemasaran", "Perunding perniagaan"],["管理培训生", "市场专员", "商业顾问"],["管理培訓生", "市場專員", "商業顧問"]),
+    specializations: arr([], [], [], []),
+    description: t("SEGi business management is mapped here with the 2026 fee-sheet total and January, May, and September intakes from the provided PDF.", "Pengurusan perniagaan SEGi dipetakan di sini dengan jumlah yuran 2026 dan ambilan Januari, Mei dan September daripada PDF yang diberikan.", "SEGi 商务管理已根据本次提供的 2026 学费单补入总额与 1 月、5 月、9 月开课日期。", "SEGi 商務管理已根據本次提供的 2026 學費單補入總額與 1 月、5 月、9 月開課日期。"),
+    officialAccreditationNote: "Accreditation details are not published in the provided 2026 fee sheet.",
+    officialSourceUrl: segiFeeSheetSource,
+    officialEntryRequirementSourceUrl: "",
+    officialAccreditationSourceUrl: "",
+    sourceUrls: segiFeeSource("Bachelor of Business Management (Hons)"),
+    officialVerifiedAt: segiFeeSheetVerifiedAt,
+    officialSourceStatus: "needs-review",
+    publicDisplayStatus: "ready",
+    publicDisplayNote: "Fee fields are verified against the provided 2026 SEGi fee sheet; non-fee fields still need official detail-page verification.",
+    reviewReason: null,
+    auditNote: "PDF row matched by Chinese title 商务管理（荣誉）学士学位 BBM.",
+    listTuitionText: "MYR 94,558.70 total"
+  },
+  {
+    universityCode: "SEGI",
+    slug: "segi-bachelor-computer-science-hons",
+    code: "SEGI-BCS",
+    name: t("Bachelor of Computer Science (Hons)", "Bachelor of Computer Science (Hons)", "电脑科学（荣誉）学士学位", "電腦科學（榮譽）學士學位"),
+    nameEnOfficial: "Bachelor of Computer Science (Hons)",
+    level: "bachelor",
+    category: "it",
+    faculty: t("Computing", "Pengkomputeran", "计算机", "電腦"),
+    facultyZh: "计算机",
+    studyMode: "Full-time",
+    campus: "SEGi University",
+    durationYears: 3,
+    durationOfficial: "Duration not published in the provided 2026 fee sheet; retained from existing StudyMY seed baseline.",
+    annualTuitionCny: 52894,
+    tuitionAmount: 102376.2,
+    tuitionCurrency: "MYR",
+    tuitionDisplay: "MYR 102,376.20 total 2026 fee sheet amount",
+    officialTuitionMYR: 102376,
+    officialTuitionNote: "Provided 2026 SEGi fee sheet total is MYR 102,376.20, including registration, visa/renewal, application/admin, handling, miscellaneous fees, deposit, tuition component MYR 70,670.00, and 6% SST MYR 5,506.20. Accommodation is excluded.",
+    officialFeeSourceUrl: segiFeeSheetSource,
+    officialFeeAuditStatus: "matched-official",
+    officialFeeAuditedAt: segiFeeSheetVerifiedAt,
+    intakeMonths: ["January", "May", "September"],
+    officialIntake: "January 12, May 11, September 14",
+    officialIntakeNote: "Dates transcribed from the provided 2026 SEGi fee sheet.",
+    languageRequirement: { ielts: 5.5, toefl: 60, pte: 50, muet: 3 },
+    officialLanguageRequirement: "Not published in the provided 2026 fee sheet.",
+    requirement: { gpa: 2.5, gaokaoRequired: true, huikaoRequired: false, note: t("Existing StudyMY baseline requirement retained; confirm against SEGi admission page before counselling use.", "Syarat asas StudyMY sedia ada dikekalkan; sahkan dengan halaman kemasukan SEGi sebelum digunakan untuk kaunseling.", "沿用现有 StudyMY 基线要求；正式咨询前需用 SEGi 入学页面复核。", "沿用現有 StudyMY 基線要求；正式諮詢前需用 SEGi 入學頁面覆核。") },
+    officialAcademicRequirement: "Not published in the provided 2026 fee sheet.",
+    chinaStudentRequirement: "Not published in the provided 2026 fee sheet.",
+    applicationDocs: standardDocs,
+    curriculum: arr(["Programming", "Software engineering", "Artificial intelligence", "Data science"],["Pengaturcaraan", "Kejuruteraan perisian", "Kecerdasan buatan", "Sains data"],["程序设计", "软件工程", "人工智能", "数据科学"],["程式設計", "軟體工程", "人工智慧", "資料科學"]),
+    careers: arr(["Software engineer", "Data analyst", "IT consultant"],["Jurutera perisian", "Penganalisis data", "Perunding IT"],["软件工程师", "数据分析师", "IT 顾问"],["軟體工程師", "資料分析師", "IT 顧問"]),
+    specializations: arr(["Artificial Intelligence", "Digital Transformation", "Network Transformation", "Data Science"],["Kecerdasan Buatan", "Transformasi Digital", "Transformasi Rangkaian", "Sains Data"],["人工智能", "数字转型", "网络转型", "数据科学"],["人工智慧", "數位轉型", "網路轉型", "資料科學"]),
+    description: t("SEGi computer science is mapped here with the 2026 fee-sheet total, intake dates, and track names from the provided PDF.", "Sains komputer SEGi dipetakan di sini dengan jumlah yuran 2026, tarikh ambilan dan nama trek daripada PDF yang diberikan.", "SEGi 电脑科学已根据本次提供的 2026 学费单补入总额、开课日期和方向名称。", "SEGi 電腦科學已根據本次提供的 2026 學費單補入總額、開課日期和方向名稱。"),
+    officialAccreditationNote: "Accreditation details are not published in the provided 2026 fee sheet.",
+    officialSourceUrl: segiFeeSheetSource,
+    officialEntryRequirementSourceUrl: "",
+    officialAccreditationSourceUrl: "",
+    sourceUrls: segiFeeSource("Bachelor of Computer Science (Hons)"),
+    officialVerifiedAt: segiFeeSheetVerifiedAt,
+    officialSourceStatus: "needs-review",
+    publicDisplayStatus: "ready",
+    publicDisplayNote: "Fee fields are verified against the provided 2026 SEGi fee sheet; non-fee fields still need official detail-page verification.",
+    reviewReason: null,
+    auditNote: "PDF row matched by Chinese title 电脑科学（荣誉）学士学位 (BCS).",
+    listTuitionText: "MYR 102,376.20 total"
   }];
 
 seedPrograms.push(...umExtraPrograms);

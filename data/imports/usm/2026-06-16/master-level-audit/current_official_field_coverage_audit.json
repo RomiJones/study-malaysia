@@ -1,0 +1,107 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-06-16T14:58:53Z",
+  "auditMode": "current-official-field-coverage-audit-after-builder-fix",
+  "coverage": {
+    "candidateRecords": 305,
+    "uniqueOfficialUrls": 255,
+    "currentHtmlCacheFiles": 187,
+    "currentReaderCacheFiles": 68,
+    "legacyReaderCacheFiles": 317
+  },
+  "batchFix": {
+    "fieldClass": "academicRequirement/languageRequirement from current official HTML panels",
+    "beforeGeneralRuleCount": 56,
+    "afterGeneralRuleCount": 9,
+    "closedByParserOrMapping": 47,
+    "remainingGeneralRuleRecords": [
+      {
+        "code": "USM-PG-ARTICLE-352-D31C8D58",
+        "detailCode": "USM-PG-ARTICLE-352",
+        "officialName": "MASTER OF EDUCATION IN EDUCATION PSYCHOLOGY (OFFSHORE - POLITEKNIK S.PERAI)",
+        "reason": "current transport has no parseable programme-level admission/language panel; general USM postgraduate rule retained with provenance"
+      },
+      {
+        "code": "USM-PG-ARTICLE-352-DA22F697",
+        "detailCode": "USM-PG-ARTICLE-352",
+        "officialName": "MASTER OF EDUCATION IN EDUCATIONAL MANAGEMENT AND ADMINISTRATION (OFFSHORE - MRSM KUCHING)",
+        "reason": "current transport has no parseable programme-level admission/language panel; general USM postgraduate rule retained with provenance"
+      },
+      {
+        "code": "USM-PG-ARTICLE-229-C322F888",
+        "detailCode": "USM-PG-ARTICLE-229",
+        "officialName": "MASTER OF SCIENCE IN BUILDING SURVEYING",
+        "reason": "current transport has no parseable programme-level admission/language panel; general USM postgraduate rule retained with provenance"
+      },
+      {
+        "code": "USM-PG-ARTICLE-226-D47C7183",
+        "detailCode": "USM-PG-ARTICLE-226",
+        "officialName": "MASTER OF SCIENCE IN BUILDING TECHNOLOGY",
+        "reason": "current transport has no parseable programme-level admission/language panel; general USM postgraduate rule retained with provenance"
+      },
+      {
+        "code": "USM-PG-ARTICLE-394-2431529A",
+        "detailCode": "USM-PG-ARTICLE-394",
+        "officialName": "MASTER OF SCIENCE IN CHEMICAL ENGINEERING",
+        "reason": "current transport has no parseable programme-level admission/language panel; general USM postgraduate rule retained with provenance"
+      },
+      {
+        "code": "USM-PG-ARTICLE-1513-8022424A",
+        "detailCode": "USM-PG-ARTICLE-1513",
+        "officialName": "MASTER OF SCIENCE IN ELECTRONIC SYSTEMS DESIGN ENGINEERING -(OFFSHORE XIAMEN UNIVERSITY OF TECHNOLOGY (XMUT), CHINA)",
+        "reason": "current transport has no parseable programme-level admission/language panel; general USM postgraduate rule retained with provenance"
+      },
+      {
+        "code": "USM-PG-ARTICLE-195-3919140E",
+        "detailCode": "USM-PG-ARTICLE-195",
+        "officialName": "MASTER OF SCIENCE IN NANO-OPTOELECTRONICS",
+        "reason": "current transport has no parseable programme-level admission/language panel; general USM postgraduate rule retained with provenance"
+      },
+      {
+        "code": "USM-PG-ARTICLE-106-8E379C40",
+        "detailCode": "USM-PG-ARTICLE-106",
+        "officialName": "MASTER OF SCIENCE IN TROPICAL PLANT DISEASE MANAGEMENT",
+        "reason": "current transport has no parseable programme-level admission/language panel; general USM postgraduate rule retained with provenance"
+      },
+      {
+        "code": "USM-PG-ARTICLE-351-57741454",
+        "detailCode": "USM-PG-ARTICLE-351",
+        "officialName": "MASTERS IN SUSTAINABLE DEVELOPMENT PRACTICE - *USM@KL",
+        "reason": "current transport has no parseable programme-level admission/language panel; general USM postgraduate rule retained with provenance"
+      }
+    ]
+  },
+  "statusCounts": {
+    "academicRequirement": {
+      "official-programme-page-refreshed-2026-06-16": 229,
+      "official-programme-page-refreshed-2026-06-12": 1,
+      "official-general-rule": 9,
+      "official-programme-specific": 66
+    },
+    "languageRequirement": {
+      "official-programme-page-refreshed-2026-06-16": 229,
+      "official-programme-page-refreshed-2026-06-12": 1,
+      "official-general-rule": 9,
+      "official-programme-specific": 66
+    },
+    "duration": {
+      "official-programme-page-refreshed-2026-06-16": 205,
+      "official-programme-page-refreshed-2026-06-12": 30,
+      "official-research-mode-rule": 4,
+      "official-programme-specific": 66
+    },
+    "intake": {
+      "official-programme-page-refreshed-2026-06-16": 107,
+      "official-unpublished": 13,
+      "official-programme-page-refreshed-2026-06-12": 1,
+      "official-research-semester-rule": 161,
+      "official-programme-specific": 23
+    },
+    "fee": {
+      "verified-current-official-fee": 121,
+      "official-current-fee-not-published-for-directory-entry": 33,
+      "official-rate-only": 151
+    }
+  },
+  "decision": "candidate-audit-ready-no-db-write"
+}

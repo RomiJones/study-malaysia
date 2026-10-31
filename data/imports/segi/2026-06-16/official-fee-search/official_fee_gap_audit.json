@@ -1,0 +1,55 @@
+{
+  "institution": "SEGi University",
+  "verifiedAt": "2026-06-17",
+  "scope": "Official-source supplementation for the three SEGi public programmes that remain without a unique total tuition after the 2026 fee-sheet backfill.",
+  "decision": "No additional tuition amount was written because SEGi official sources did not publish a unique total tuition for these exact programmes.",
+  "sourcePolicy": {
+    "accepted": "Exact official programme page, exact official SEGi brochure/PDF, or official SEGi fee/admission source that publishes a programme-specific total tuition.",
+    "rejected": "Application fee, visa fee, registration fee, generic financial-aid text, adjacent programme fee, third-party fee, or inferred amount."
+  },
+  "officialSourcesChecked": [
+    {
+      "title": "SEGi official Postgraduate Studies brochure",
+      "url": "https://www.segi.edu.my/brochures/Postgraduate%20Studies.pdf",
+      "sha256": "73b3957880f8164e29908ac89b52bb4052aa522e30d765ca4edbff9881d9a609",
+      "finding": "Programme identities and descriptions are present; no RM/MYR total tuition amount is published for the unresolved postgraduate programmes."
+    },
+    {
+      "title": "SEGi official Business & Accounting brochure",
+      "url": "https://www.segi.edu.my/brochures/Business%20%26%20Accounting.pdf",
+      "sha256": "85f405207cc6efc9ce05a9d21eb4de95537157f11ffcc10cf60dc49cbc164c87",
+      "finding": "Bachelor of Business Analytics ODL identity and curriculum are present; no RM/MYR total tuition amount is published."
+    },
+    {
+      "title": "SEGi official international-student page",
+      "url": "https://university.segi.edu.my/international-students/",
+      "finding": "Publishes admission and international-student visa application fees only; not usable as programme tuition."
+    }
+  ],
+  "programmes": [
+    {
+      "id": 6506,
+      "name": "Master of Science in Environmental Sustainability with Artificial Intelligence",
+      "programmeUrl": "https://university.segi.edu.my/course/master-of-science-in-environmental-sustainability-with-artificial-intelligence/",
+      "officialBrochureUrl": "https://www.segi.edu.my/brochures/Postgraduate%20Studies.pdf",
+      "finalFeeAuditStatus": "not-published",
+      "writeDecision": "Keep tuitionAmount and officialTuitionMYR null; add official fee-gap evidence to sourceUrls and officialTuitionNote."
+    },
+    {
+      "id": 6540,
+      "name": "Doctor of Philosophy in Medical Science",
+      "programmeUrl": "https://university.segi.edu.my/course/doctor-of-philosophy-in-medical-science/",
+      "officialBrochureUrl": "https://www.segi.edu.my/brochures/Postgraduate%20Studies.pdf",
+      "finalFeeAuditStatus": "not-published",
+      "writeDecision": "Keep tuitionAmount and officialTuitionMYR null; add official fee-gap evidence to sourceUrls and officialTuitionNote."
+    },
+    {
+      "id": 6559,
+      "name": "Bachelor of Business Analytics (Online Mode)",
+      "programmeUrl": "https://university.segi.edu.my/course/bachelor-of-business-analytics-odl/",
+      "officialBrochureUrl": "https://www.segi.edu.my/brochures/Business%20%26%20Accounting.pdf",
+      "finalFeeAuditStatus": "not-published",
+      "writeDecision": "Keep tuitionAmount and officialTuitionMYR null; add official fee-gap evidence to sourceUrls and officialTuitionNote."
+    }
+  ]
+}

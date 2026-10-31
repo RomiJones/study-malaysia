@@ -54,7 +54,7 @@ npm run seed
 ```
 
 默认账号：
-- 管理员：`superadmin / Admin123!`
+- 管理员：运行种子前通过 `STUDYMY_SEED_ADMIN_PASSWORD` 配置，不提供默认密码。
 - 演示学生：`demo@studymy.local / Demo123!`
 
 ## 本地开发

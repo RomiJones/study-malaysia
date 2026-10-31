@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-06-16T14:58:53Z",
+  "institution": {
+    "code": "USM",
+    "name": "Universiti Sains Malaysia"
+  },
+  "collectionScope": "programmes",
+  "level": "master",
+  "applicantScope": "international",
+  "academicSession": {
+    "baseFeeSchedule": "2025/2026",
+    "programmeOverrides": "2026/2027 where explicitly published"
+  },
+  "authorization": "collect",
+  "selectedChineseTasks": [
+    "docs/notion-snapshot/tasks/TASK-USM-MASTER-COLLECT-20260614.md",
+    "docs/notion-snapshot/tasks/TASK-USM-FINAL-LANGUAGE-CONFIRMATION-20260616.md"
+  ],
+  "prdOrTechnicalDesign": [
+    "docs/prd/USM-master-official-collection-technical-design.md",
+    "docs/prd/USM-commercial-release-workflow.md"
+  ],
+  "outputPaths": {
+    "candidate": "data/imports/usm/2026-06-14/master-commercial-candidate.json",
+    "auditDirectory": "data/imports/usm/2026-06-16/master-level-audit"
+  },
+  "verificationCommands": [
+    "python3 scripts/verify-usm-master-commercial-candidate.py --manifest data/imports/usm/2026-06-14/master-commercial-candidate.json",
+    "npm test -- tests/api/usm-master-commercial-import.test.ts tests/web/format.test.ts"
+  ],
+  "rollbackTarget": "No database write authorized in this run; candidate changes are reversible from git diff and prior artifacts.",
+  "notionStatus": "No writable Notion connector in this environment; local Chinese snapshot updated only."
+}

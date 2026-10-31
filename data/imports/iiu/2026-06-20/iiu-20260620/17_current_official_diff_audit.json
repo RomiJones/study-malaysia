@@ -1,0 +1,894 @@
+{
+  "status": "passed",
+  "checkedAt": "2026-06-24T07:58:33+00:00",
+  "currentAsOf": "2026-06-21",
+  "sourceCount": 146,
+  "changedCount": 126,
+  "unchangedCount": 20,
+  "newSourceCount": 0,
+  "changedSources": [
+    {
+      "id": "homepage",
+      "url": "https://newinti.edu.my/",
+      "sourceType": "official-page",
+      "previousSha256": "87ae4902bfbf51a2a599bbd1f1773af3908859c691727eec11370dc5d48213cf",
+      "currentSha256": "352776cbed2fbcef5a9e21677fa3b29b11f5708e41945662fb528a17b819e0ff"
+    },
+    {
+      "id": "campuses",
+      "url": "https://newinti.edu.my/campuses/",
+      "sourceType": "official-page",
+      "previousSha256": "cb1fd9eec58947416fc69a247d1b8d23a760a0145c7e1e405a64370050f00ae7",
+      "currentSha256": "01fba5160a2939765c15f7259e7cbcb724ff60ff144edeb8455ab6545470f700"
+    },
+    {
+      "id": "campus-inti-international-university",
+      "url": "https://newinti.edu.my/campuses/inti-international-university/",
+      "sourceType": "official-page",
+      "previousSha256": "7e0e8b8c088d33030e4853506c09d147881aacb7b19e29753d4a97f523de0ad0",
+      "currentSha256": "e8c37f1190d4c999319a164021f67b5b3fe3eafa4d1da37f54f55467ed0c674c"
+    },
+    {
+      "id": "history",
+      "url": "https://newinti.edu.my/why-inti/our-history/",
+      "sourceType": "official-page",
+      "previousSha256": "127b6bd23c0e9272ae59b3ffbe51feb3118e336969c1ea78fdd37dda18854e0f",
+      "currentSha256": "d1b85fe6eaba8a441a5685953b7100c3352d170422f78d377c84cd10d792e354"
+    },
+    {
+      "id": "international-students",
+      "url": "https://newinti.edu.my/international-students/",
+      "sourceType": "official-page",
+      "previousSha256": "9f902559d9d859e0cc69e3e1c7c3e7ccd3737beee147c45638b1fdf9870e9198",
+      "currentSha256": "3b05472d57977653a3eb54b607db4be342899028060bf14ca6a0e14656ecef5a"
+    },
+    {
+      "id": "international-how-to-apply",
+      "url": "https://newinti.edu.my/international-students/how-to-apply/",
+      "sourceType": "official-page",
+      "previousSha256": "633f2bdd824710bc7b35be7cbb6aef1f52a7ac4c1fa9c290c2747e57f3cc247e",
+      "currentSha256": "d259bededa92c2222cf099b7d1d5899f8750350d94139df5f743abcda0428231"
+    },
+    {
+      "id": "international-entry-requirements",
+      "url": "https://newinti.edu.my/international-students/entry-requirements/",
+      "sourceType": "official-page",
+      "previousSha256": "69030eef5f1193f992460e5c87c805ae4f07d56b95939431a8a917c34d1011d5",
+      "currentSha256": "5df7f2b0f19da02edf91ee63f9c2b29b1daba0a6531ff6c9d52eb3bfebceac7b"
+    },
+    {
+      "id": "academic-programmes",
+      "url": "https://newinti.edu.my/academic-programmes/",
+      "sourceType": "official-page",
+      "previousSha256": "3426e2f4469fb0d48c89e9b71edef89c5ffba5f89ea98e9094ca66535aaea618",
+      "currentSha256": "6483e8dddf4f73b75c05c753de0737064e431b331afa3f7091ecd989e206a0d2"
+    },
+    {
+      "id": "degree-taxonomy",
+      "url": "https://newinti.edu.my/certifications/degree/",
+      "sourceType": "official-page",
+      "previousSha256": "79ccaf7682ff178f29dadf293c45f8b5fdd8025a1b8311204c5e3de1a5da67cb",
+      "currentSha256": "131479584bbdcffbbea5caaaef0013b96a6f269fc13fc0a1ffa3d3b496b1d247"
+    },
+    {
+      "id": "masters-taxonomy",
+      "url": "https://newinti.edu.my/certifications/masters/",
+      "sourceType": "official-page",
+      "previousSha256": "c0c71c17765729c45e834a10fac42108ba32dedf13fe1c614be8604094d043aa",
+      "currentSha256": "f186c78c61e51feeec7910c208cc8eccdf7e63eb777f08514994c32da9e5fcf8"
+    },
+    {
+      "id": "phd-taxonomy",
+      "url": "https://newinti.edu.my/certifications/phd/",
+      "sourceType": "official-page",
+      "previousSha256": "fe08404942dd410cf696c3885d69aaf9cab555385b251566ac2e51b4c147b843",
+      "currentSha256": "25c8573f92ba1606a2dbe196e63ded10259d0c31b3b495a4541c75852ed1423b"
+    },
+    {
+      "id": "degree-taxonomy-page-2",
+      "url": "https://newinti.edu.my/certifications/degree/page/2/",
+      "sourceType": "official-page",
+      "previousSha256": "c27638cc8cf8ed6ea099df2231566e3fe22ecec42c6a24494e192fc7344bd892",
+      "currentSha256": "d23d80a0660eaf1c711fa13a4db1a506d482adf6c90f36f6068eceabb773bfe6"
+    },
+    {
+      "id": "degree-taxonomy-page-3",
+      "url": "https://newinti.edu.my/certifications/degree/page/3/",
+      "sourceType": "official-page",
+      "previousSha256": "956fa23ea6f76cae88d140ba8726f163de887e4af72bf943002bb4af3050d342",
+      "currentSha256": "445d32ea7d306b7cefb86c27733ecd7584164e0d214f3f540c247b7fd7750678"
+    },
+    {
+      "id": "degree-taxonomy-page-4",
+      "url": "https://newinti.edu.my/certifications/degree/page/4/",
+      "sourceType": "official-page",
+      "previousSha256": "93023aab4276ca61d13a3dc49334e5d2702617f17b63808fd2c70dc283f1c712",
+      "currentSha256": "a308878eab4eabd36a7a9d665487f71a7de9e54b5cf7108b76f854c0e86d5d4c"
+    },
+    {
+      "id": "degree-taxonomy-page-5",
+      "url": "https://newinti.edu.my/certifications/degree/page/5/",
+      "sourceType": "official-page",
+      "previousSha256": "1e393e283be150e2d2338150c9fbfc9bac149e7dde27b1785ff5c250c7d07a9d",
+      "currentSha256": "fdb7a9ef93588e43eb653c0c35b972d547b61303fee33ba2ae0e128cbdb3d5fa"
+    },
+    {
+      "id": "degree-taxonomy-page-6",
+      "url": "https://newinti.edu.my/certifications/degree/",
+      "sourceType": "official-page",
+      "previousSha256": "79ccaf7682ff178f29dadf293c45f8b5fdd8025a1b8311204c5e3de1a5da67cb",
+      "currentSha256": "78296ef04741b1ff82239743cbad0b69e44cac9474c1cf7591c6215e427b60a4"
+    },
+    {
+      "id": "masters-taxonomy-page-2",
+      "url": "https://newinti.edu.my/certifications/masters/page/2/",
+      "sourceType": "official-page",
+      "previousSha256": "58584fd12cea8aeeab11aedbfc4cedc88c8d10723b44b07aeef62fbf94c7ea06",
+      "currentSha256": "a6df2deeecdd6cb44f37ddb214d827ceaf5768bf8cbafff545b2c641aca8d579"
+    },
+    {
+      "id": "masters-taxonomy-page-3",
+      "url": "https://newinti.edu.my/certifications/masters/",
+      "sourceType": "official-page",
+      "previousSha256": "c0c71c17765729c45e834a10fac42108ba32dedf13fe1c614be8604094d043aa",
+      "currentSha256": "f186c78c61e51feeec7910c208cc8eccdf7e63eb777f08514994c32da9e5fcf8"
+    },
+    {
+      "id": "programme-001-programme-actuarial-science-american-university",
+      "url": "https://newinti.edu.my/programme/actuarial-science-american-university/",
+      "sourceType": "official-page",
+      "previousSha256": "646df922126e0ab90a71040fdacd266726a70fb06886762ab1da381a4d3967ff",
+      "currentSha256": "a37c031c1810b9830fb4cf4ccc37c410eaaff2e2f733b2bdd5f9f0db375d1770"
+    },
+    {
+      "id": "programme-002-programme-australian-degree-transfer-programme-commerce",
+      "url": "https://newinti.edu.my/programme/australian-degree-transfer-programme-commerce/",
+      "sourceType": "official-page",
+      "previousSha256": "d59fbdde20ef58c4c363c017e43fb3bea2d0abdd378b76ba11c47675147cb1d1",
+      "currentSha256": "c5fbd1da3903ae87000fbce36b97b9b907579dad950c0f2346649549472c1b0a"
+    },
+    {
+      "id": "brochure-brochures-business-pdf",
+      "url": "https://newinti.edu.my/brochures/business.pdf",
+      "sourceType": "official-pdf",
+      "previousSha256": "d7ba5e010a2ffbac14d64e82ea7b200aca070bfe633d8ee44ea2cfb479a09182",
+      "currentSha256": "959e304541c8edc9b4b11d5f683bd027270d250e479a05eac40fbb259dd0c5ff"
+    },
+    {
+      "id": "programme-003-programme-australian-degree-transfer-programme-science",
+      "url": "https://newinti.edu.my/programme/australian-degree-transfer-programme-science/",
+      "sourceType": "official-page",
+      "previousSha256": "d81a64376b03e5c09769a24eeb544af9db7051dbf7e44a002e02ca6286041045",
+      "currentSha256": "ec69ceb42c2c1f063214266ba68fb3053f8717910b8a6e5702de24505ddb077f"
+    },
+    {
+      "id": "programme-004-programme-b-a-hons-in-fashion-management-and-communication-30-in-collaboration-with-sheffield-hallam-university-uk",
+      "url": "https://newinti.edu.my/programme/b-a-hons-in-fashion-management-and-communication-30-in-collaboration-with-sheffield-hallam-university-uk/",
+      "sourceType": "official-page",
+      "previousSha256": "4ef37cea5d751fe0306b6327f76e6c70be8775a7a98f19c4194c2d9cac9f0e13",
+      "currentSha256": "cd133e37ee401d316cf9f6d5605d00c758792823fb805fa0c8c13eef5c866dca"
+    },
+    {
+      "id": "programme-005-programme-bsc-hons-physiotherapy",
+      "url": "https://newinti.edu.my/programme/bsc-hons-physiotherapy/",
+      "sourceType": "official-page",
+      "previousSha256": "5ef57673bf21f079309e80830c58e248683ba6d4ea3be0a973d61a0a9879762a",
+      "currentSha256": "f59ef24016e8b8b42560565bc794662a2fee1e9237f878e8fefe7770cb06174e"
+    },
+    {
+      "id": "programme-006-programme-ba-hons-graphic-design-3-0-sheffield-hallam-uk",
+      "url": "https://newinti.edu.my/programme/ba-hons-graphic-design-3-0-sheffield-hallam-uk/",
+      "sourceType": "official-page",
+      "previousSha256": "173184d8d92436b63eb280dc3e8c135045bd15928891a9853e25c31557b5da7f",
+      "currentSha256": "9842538022310a065bc38667f5001f226dfe799d08035decf0c970b36f0165ff"
+    },
+    {
+      "id": "programme-007-programme-bachelor-in-music-production-and-audio-technology-honours",
+      "url": "https://newinti.edu.my/programme/bachelor-in-music-production-and-audio-technology-honours/",
+      "sourceType": "official-page",
+      "previousSha256": "c5454cad29701de0fd3bb80d7b6c99ec1844228a4265428f2ef1f2774a255345",
+      "currentSha256": "51ed820b5ac7dba300e891fe5e536f9a03f0c4487107648c21c6aff1e65967d8"
+    },
+    {
+      "id": "programme-008-programme-bachelor-in-sports-management-honours",
+      "url": "https://newinti.edu.my/programme/bachelor-in-sports-management-honours/",
+      "sourceType": "official-page",
+      "previousSha256": "9dabde3c9a335890f72ae14bdb6f7982db4560b6f2942e3a853de3215550afce",
+      "currentSha256": "c99497c4f8db2a3755ad11c87bd444b90b60951d597e6263a859957414731b7a"
+    },
+    {
+      "id": "programme-009-programme-bachelor-of-accountancy-hons",
+      "url": "https://newinti.edu.my/programme/bachelor-of-accountancy-hons/",
+      "sourceType": "official-page",
+      "previousSha256": "f219bf98581247079d64b882a13d9d06fc95832baf1f8d25fee89cb85fb3c705",
+      "currentSha256": "70e8c418180e9a3812a0a20a4d8e2e57affb28ad8860140b7380840f2244a715"
+    },
+    {
+      "id": "programme-010-programme-bachelor-of-accounting-finance-hons",
+      "url": "https://newinti.edu.my/programme/bachelor-of-accounting-finance-hons/",
+      "sourceType": "official-page",
+      "previousSha256": "d6ea1f65069cbb0f5f4de9fec807b7d5d8fe9c8538a5ecf81f260bc660dee739",
+      "currentSha256": "b37841a7c470fc61fdc2544398bd891e6a8641d12429ac7e0fc7d58a387ca139"
+    },
+    {
+      "id": "programme-011-programme-bachelor-of-art-honours-interior-architecture-design-3-5-0-sheffield-hallam-uk",
+      "url": "https://newinti.edu.my/programme/bachelor-of-art-honours-interior-architecture-design-3-5-0-sheffield-hallam-uk/",
+      "sourceType": "official-page",
+      "previousSha256": "9b9e2af94fc28fca03257c7eb905a52ef9e0757327022ff279594a02ae513fcb",
+      "currentSha256": "585fcba6168cd3a8dfd4b6cf91c7701397ba89383c13c7c5f3d5e6001ed07e1e"
+    },
+    {
+      "id": "programme-012-programme-ba-hons-accounting-and-finance-3-0-hertfordshire-uk",
+      "url": "https://newinti.edu.my/programme/ba-hons-accounting-and-finance-3-0-hertfordshire-uk/",
+      "sourceType": "official-page",
+      "previousSha256": "5cbda68b0d28ef75557dedf878b1e410b2ebadf372f874047e4764218fd36d10",
+      "currentSha256": "0c7b1883ee370433cb8c13148fc86cf47a11a90b47d258dcef7b22c39afec1c1"
+    },
+    {
+      "id": "programme-013-programme-bachelor-of-arts-honours-advertising-and-digital-marketing-30-in-collaboration-with-university-of-hertfordshir",
+      "url": "https://newinti.edu.my/programme/bachelor-of-arts-honours-advertising-and-digital-marketing-30-in-collaboration-with-university-of-hertfordshire-uk/",
+      "sourceType": "official-page",
+      "previousSha256": "4bad9adb6a658b4d4556cf5664fdbaff3cfe9154cff395e31ed2b220f463b301",
+      "currentSha256": "f8b85c13226a582ba152fe92c34736719eabb2f3c91c79ec31b8ef146b1773d1"
+    },
+    {
+      "id": "programme-014-programme-ba-hons-business-administration-3-0-in-university-of-hertfordshire-uk",
+      "url": "https://newinti.edu.my/programme/ba-hons-business-administration-3-0-in-university-of-hertfordshire-uk/",
+      "sourceType": "official-page",
+      "previousSha256": "ecf7f899c3525fb057391c03c1ca36441e17e6586340d91e2bd7c9c3f6b7ea2e",
+      "currentSha256": "a48cacbf7ce7d7d7e83944dfdfe5e23544d857871e17b92215ec87f062db4658"
+    },
+    {
+      "id": "programme-015-programme-bachelor-of-arts-honours-digital-media",
+      "url": "https://newinti.edu.my/programme/bachelor-of-arts-honours-digital-media/",
+      "sourceType": "official-page",
+      "previousSha256": "70474fecf6796dc69b7a08412adc1131fce58d45335f693b2e9736197bc8b9a9",
+      "currentSha256": "502a46f8b35fb4ae820501ef8bf99d264eff8aafda90368d000222668416674e"
+    },
+    {
+      "id": "programme-016-programme-ba-hons-finance-30in-collaboration-with-university-of-hertfordshire-uk",
+      "url": "https://newinti.edu.my/programme/ba-hons-finance-30in-collaboration-with-university-of-hertfordshire-uk/",
+      "sourceType": "official-page",
+      "previousSha256": "e3cf45b9535b463d120eee34fe72250ece3874d4e8c5efa02b94366a961a9b95",
+      "currentSha256": "f617a796a27e856d4c834daae57e53735d97a299a219949a0e75b73d27da20c1"
+    },
+    {
+      "id": "programme-017-programme-ba-hons-marketing-30-university-of-hertfordshire-uk",
+      "url": "https://newinti.edu.my/programme/ba-hons-marketing-30-university-of-hertfordshire-uk/",
+      "sourceType": "official-page",
+      "previousSha256": "a4e54b8b2e9fed9d9e142fbb802f8f1208908f6f95dc9ee5df34178e48dc81bd",
+      "currentSha256": "64ca2bae40a8496d53896bad042addb56d286fc86a2f54336acf903a71b817a2"
+    },
+    {
+      "id": "programme-018-programme-3-0-ba-hons-mass-communications-collaboration-university-hertfordshire-uk",
+      "url": "https://newinti.edu.my/programme/3-0-ba-hons-mass-communications-collaboration-university-hertfordshire-uk/",
+      "sourceType": "official-page",
+      "previousSha256": "e57c0c322bda0fed91e6a22c4c47dfa51aa3b9f6dc43d3070cc9cada6e01be4f",
+      "currentSha256": "74fe0105961f65ba3f38e17208ac0bc57716e464becf73f55b250d7a8d552b9a"
+    },
+    {
+      "id": "programme-019-programme-4-0-bachelor-arts-communication-collaboration-southern-new-hampshire-university-usa",
+      "url": "https://newinti.edu.my/programme/4-0-bachelor-arts-communication-collaboration-southern-new-hampshire-university-usa/",
+      "sourceType": "official-page",
+      "previousSha256": "98893d533cdd06444403eb6fd241da68d61313a0135591c0f6372ce1d463dc6e",
+      "currentSha256": "2c8af0b39e8567c6910acc5f517af7ab181ca4514ed1ec0219f0ffc5a81698b6"
+    },
+    {
+      "id": "programme-020-programme-4-0-bachelor-arts-psychology-collaboration-southern-new-hampshire-university-usa",
+      "url": "https://newinti.edu.my/programme/4-0-bachelor-arts-psychology-collaboration-southern-new-hampshire-university-usa/",
+      "sourceType": "official-page",
+      "previousSha256": "fe3cc83427e2337f5f37d4cfe6f906663ddc2e35c6a58beb4a5bd68a96fb871d",
+      "currentSha256": "ecdda15aa3ba7db3e63ca5be210095e698fdd62511ee6136141d8dd08544dc91"
+    },
+    {
+      "id": "programme-021-programme-bachelor-of-banking-and-finance-hons",
+      "url": "https://newinti.edu.my/programme/bachelor-of-banking-and-finance-hons/",
+      "sourceType": "official-page",
+      "previousSha256": "1e2effcff84a0f25b956cc9b89b0e2eb0bbbf4a97ec459c0af3fa4b9031ce6a7",
+      "currentSha256": "556a350fd19f8ca68a8ef72ff6301aa689cac7e182638c2d381012440a4539f4"
+    },
+    {
+      "id": "programme-022-programme-bachelor-of-biotechnology-hons",
+      "url": "https://newinti.edu.my/programme/bachelor-of-biotechnology-hons/",
+      "sourceType": "official-page",
+      "previousSha256": "ed2f6bd402b6a66f1f8851f5517776e5ff58ef4ae85226bd0eda7f4340ee1b67",
+      "currentSha256": "02cd9ff28737c802ead34010e7495686f4df6ad8f6be7302362e7581f3354940"
+    },
+    {
+      "id": "programme-023-programme-bachelor-of-business-30-in-collaboration-with-swinburne-university-of-technology-australia",
+      "url": "https://newinti.edu.my/programme/bachelor-of-business-30-in-collaboration-with-swinburne-university-of-technology-australia/",
+      "sourceType": "official-page",
+      "previousSha256": "726a9a77b9c01139da7031c3de80a934a4adf66fca5e01134883524c8b62bffb",
+      "currentSha256": "584818c511676cda216f6c1cb196404759ef5280bade2165f857f679e119db62"
+    },
+    {
+      "id": "programme-024-programme-bachelor-of-business-hons-in-accounting",
+      "url": "https://newinti.edu.my/programme/bachelor-of-business-hons-in-accounting/",
+      "sourceType": "official-page",
+      "previousSha256": "0bfbd19113f7ef6a9f0a3f9f2a2965a86ee08433d9e705ad8a42eba365bec379",
+      "currentSha256": "19c7924db44de936ca0ba49bfc63d4d15a7549a3696724d1a06c8fbf379761fa"
+    },
+    {
+      "id": "programme-025-programme-bachelor-of-business-hons-in-business-administration",
+      "url": "https://newinti.edu.my/programme/bachelor-of-business-hons-in-business-administration/",
+      "sourceType": "official-page",
+      "previousSha256": "6aa582a878aea7009085ba3f2392e59bf7cde224b37bfeb846704ba5cf44df2a",
+      "currentSha256": "cbd6a03f5eb05e78fbc1ab9c8a994a9134a16a6eb07e3732b379abb1a89c0d3b"
+    },
+    {
+      "id": "programme-026-programme-bachelor-of-business-hons-business-administration-learning-simplified",
+      "url": "https://newinti.edu.my/programme/bachelor-of-business-hons-business-administration-learning-simplified/",
+      "sourceType": "official-page",
+      "previousSha256": "709dd731cfa40d23495f70a80947fe22808f12713ec1dbe1314710a4ab00a926",
+      "currentSha256": "16cf88c22cd6219441fa05f14e6e55bb196ef031447dbfce557bfa6ff41e318b"
+    },
+    {
+      "id": "programme-027-programme-bachelor-of-business-honours-digital-enterprise-management",
+      "url": "https://newinti.edu.my/programme/bachelor-of-business-honours-digital-enterprise-management/",
+      "sourceType": "official-page",
+      "previousSha256": "42be89beeb2623a0b35551fa0bf9df93d6f3c219b3e1c6d1ce4cc431541c0eb7",
+      "currentSha256": "7199bc7969dfb1aa2068b3eae67fe72cea9cf3c6c6d4f8038ca04d0750a1bd68"
+    },
+    {
+      "id": "programme-028-programme-bachelor-of-business-hons-in-finance",
+      "url": "https://newinti.edu.my/programme/bachelor-of-business-hons-in-finance/",
+      "sourceType": "official-page",
+      "previousSha256": "adcb3fd556dbe1048f8604bac247535a80f1a19421313ce7c5b20c5539afcf2b",
+      "currentSha256": "7d2e33acec1a33b8dc6eaa18ef793a6fb5b1714b31ca2a135d09f03606fd37cf"
+    },
+    {
+      "id": "programme-029-programme-bachelor-of-business-hons-in-human-resource-management",
+      "url": "https://newinti.edu.my/programme/bachelor-of-business-hons-in-human-resource-management/",
+      "sourceType": "official-page",
+      "previousSha256": "9d1b8626a0aeded14766681519ac356145b624239d2a8d065313147a17d55e5c",
+      "currentSha256": "23f84b3a9a604545b967389c39bd25a79207198414e685730e3291820bf43c62"
+    },
+    {
+      "id": "programme-030-programme-bachelor-business-hons-human-resource-management-learning-simplified",
+      "url": "https://newinti.edu.my/programme/bachelor-business-hons-human-resource-management-learning-simplified/",
+      "sourceType": "official-page",
+      "previousSha256": "a0e06cba2e3dc55217ae3be7f71c65bab3047590c4700936bb741a861535282a",
+      "currentSha256": "8ebc205d3efa581988870042b0f332859cc501b9e7142650441db6989a306968"
+    },
+    {
+      "id": "programme-031-programme-bachelor-of-business-honours-in-entrepreneurship-and-marketing",
+      "url": "https://newinti.edu.my/programme/bachelor-of-business-honours-in-entrepreneurship-and-marketing/",
+      "sourceType": "official-page",
+      "previousSha256": "863223cae21c44ba3f0f1c756f303d5e11f6134274dda68b311612ff9423fd37",
+      "currentSha256": "a2dfe98f526e2cff7725fa8b0f766224266f8f28c96dc23316174caeb0fe41f0"
+    },
+    {
+      "id": "programme-032-programme-bachelor-of-business-honours-in-international-business-and-logistics-supply-chain-management",
+      "url": "https://newinti.edu.my/programme/bachelor-of-business-honours-in-international-business-and-logistics-supply-chain-management/",
+      "sourceType": "official-page",
+      "previousSha256": "903459a06599b8d6c664eeefbb1a3d93a44d44708fb3c65ffff9528af63f29b8",
+      "currentSha256": "5ac860cb3b2d4b00c85e76101e6b5c197e0cd5a6134c9f20b63de783cc08c379"
+    },
+    {
+      "id": "programme-033-programme-bachelor-of-business-hons-international-business",
+      "url": "https://newinti.edu.my/programme/bachelor-of-business-hons-international-business/",
+      "sourceType": "official-page",
+      "previousSha256": "493e7e710a5aa0bbd84cdaa391d970e9778e5aece57aa863b83d09bfec1f0231",
+      "currentSha256": "28d6ba9043d7313dd736acc16b3095900774f8abbe3f80c98c967587742146fc"
+    },
+    {
+      "id": "programme-034-programme-bachelor-business-hons-international-business-learning-simplified",
+      "url": "https://newinti.edu.my/programme/bachelor-business-hons-international-business-learning-simplified/",
+      "sourceType": "official-page",
+      "previousSha256": "3f2a457456c7c82f667ecf53a32ea0ac7b883f1c2787c7ad5fa2e5c7edcb77d2",
+      "currentSha256": "8796fee81dd6014350e87428ac6127a8efdd3e2292c4f5b9db9c4dde9a8b4e5f"
+    },
+    {
+      "id": "programme-035-programme-bachelor-of-business-hons-logistics-and-supply-chain-management",
+      "url": "https://newinti.edu.my/programme/bachelor-of-business-hons-logistics-and-supply-chain-management/",
+      "sourceType": "official-page",
+      "previousSha256": "b6cc4066fee6a6c971998ac326d83890a81d130fd10b38e9a62f0f4d2319dba3",
+      "currentSha256": "a92b657cad3177f6e2acd3d4522a43f518973a5b751db29bc3d9db545907a0a8"
+    },
+    {
+      "id": "programme-036-programme-bachelor-of-business-hons-management",
+      "url": "https://newinti.edu.my/programme/bachelor-of-business-hons-management/",
+      "sourceType": "official-page",
+      "previousSha256": "254dfd2a8bd35751f9639b51a4bfd471bd480e64dd72121f42e1f1fd5249238a",
+      "currentSha256": "0e00f01db2021d2cc3f077908d9f004cc1f9445baea38855aef876dccee7cd00"
+    },
+    {
+      "id": "programme-037-programme-bachelor-of-business-hons-marketing-learning-simplified",
+      "url": "https://newinti.edu.my/programme/bachelor-of-business-hons-marketing-learning-simplified/",
+      "sourceType": "official-page",
+      "previousSha256": "b45abe4366eccdab768503344475f9bd1467ac4a1025e62ee0285e0fb7984612",
+      "currentSha256": "59cf7c36a0416ff278ffce36c9da06a90e61949a3575625073e1405bb5e4bd41"
+    },
+    {
+      "id": "programme-038-programme-bachelor-of-business-hons-with-psychology",
+      "url": "https://newinti.edu.my/programme/bachelor-of-business-hons-with-psychology/",
+      "sourceType": "official-page",
+      "previousSha256": "043fd5b2d9fc99ff34afb0ca05b743d633f7b9dc8d7319699f3326c24cf1f7ba",
+      "currentSha256": "d978148502bd7bc19ba957fa3d4faacc433fc6350bf56a5a3feefe03f8939437"
+    },
+    {
+      "id": "programme-039-programme-bachelor-of-business-hons-in-marketing",
+      "url": "https://newinti.edu.my/programme/bachelor-of-business-hons-in-marketing/",
+      "sourceType": "official-page",
+      "previousSha256": "39a9d135865d889cec71b8274ffa6c967e1626b7a15b07408c78c2aedcb00ce8",
+      "currentSha256": "95bc31075a0e3c4dc80da4b8938ba6c0a1d470738e099abb47b8a5520b25a8a4"
+    },
+    {
+      "id": "programme-040-programme-bachelor-of-engineering-hons-in-civil-engineering",
+      "url": "https://newinti.edu.my/programme/bachelor-of-engineering-hons-in-civil-engineering/",
+      "sourceType": "official-page",
+      "previousSha256": "38c48cf20097ca3557db00599ad92ae35f6fad205db5711c6820aec56fbb1408",
+      "currentSha256": "4c61a86e13780b95ab49dd54e685e9013786bf396c9e7d23c982b5a9374f01bc"
+    },
+    {
+      "id": "programme-041-programme-bachelor-of-computer-science-30-in-collaboration-with-swinburne-university-of-technology-australia",
+      "url": "https://newinti.edu.my/programme/bachelor-of-computer-science-30-in-collaboration-with-swinburne-university-of-technology-australia/",
+      "sourceType": "official-page",
+      "previousSha256": "cb58ff8d36077682de6af5a2282da518d6fc70ba9f515b3ef49bf45d9e73cbd0",
+      "currentSha256": "b07e7917db627178b82c16e0c593462c70954336f460014c3d8a45ab69ce5164"
+    },
+    {
+      "id": "programme-042-programme-bachelor-of-computer-science-online-learning",
+      "url": "https://newinti.edu.my/programme/bachelor-of-computer-science-online-learning/",
+      "sourceType": "official-page",
+      "previousSha256": "8b085c2f631f188972c4bbabe525d2ec065764cdbbfbe6a8664c06c08d0e172e",
+      "currentSha256": "305a8e9abe5d39e9e4de1b2527ce376471146d32171a1d9ff31debb270cf9d27"
+    },
+    {
+      "id": "programme-043-programme-bachelor-of-computer-science-hons-coventry-uk",
+      "url": "https://newinti.edu.my/programme/bachelor-of-computer-science-hons-coventry-uk/",
+      "sourceType": "official-page",
+      "previousSha256": "3cb7f3e5656698e5b74529f1a8f1d6c035e47be69a37f85ab285228c18aae74b",
+      "currentSha256": "9fc98e3c6cf73faf611803b0dc35ca65ad4764e0c582035d71e750cdf5471ba6"
+    },
+    {
+      "id": "programme-044-programme-bachelor-computer-science-hons-business-analytics",
+      "url": "https://newinti.edu.my/programme/bachelor-computer-science-hons-business-analytics/",
+      "sourceType": "official-page",
+      "previousSha256": "69b2f9a0d9a6f0799423a30624fb4364642963d319276b6c8e169f8f39f5970f",
+      "currentSha256": "c586605330770c92c93ec8fabaf0d69d98c4e8e28d4b03b6c691a63f9a0dfeb6"
+    },
+    {
+      "id": "programme-045-programme-bachelor-computer-science-hons-cloud-computing",
+      "url": "https://newinti.edu.my/programme/bachelor-computer-science-hons-cloud-computing/",
+      "sourceType": "official-page",
+      "previousSha256": "e6bdaeaf71bdac7d087ec2ddd5582dcad18c975e80b4db69f57513006808b8be",
+      "currentSha256": "a66d5c65956c629774dc1e7b22d2204b4f657cf3b1dc4250dc1acab143fcbd13"
+    },
+    {
+      "id": "programme-046-programme-bachelor-of-computer-science-hons-in-network-and-mobile-computing-coventry-uk",
+      "url": "https://newinti.edu.my/programme/bachelor-of-computer-science-hons-in-network-and-mobile-computing-coventry-uk/",
+      "sourceType": "official-page",
+      "previousSha256": "4c777157fb17f1b6d598cdfba2a96c3d5d9669c0a7d932958dd1192e5529961e",
+      "currentSha256": "6b08fa2d5f7d7412de9614ed87d794141fcb14d70f820a5ff608005388c3c492"
+    },
+    {
+      "id": "programme-047-programme-bachelor-of-computer-science-hons-in-network-security-coventry-uk",
+      "url": "https://newinti.edu.my/programme/bachelor-of-computer-science-hons-in-network-security-coventry-uk/",
+      "sourceType": "official-page",
+      "previousSha256": "6a169365e5d0c71daff07bae3fd1d9e053eb43a544f48beca30711c41d02c1e6",
+      "currentSha256": "4f094f81b7723606ef563ae170a35c8eff819bea83520dddaead5b204463826d"
+    },
+    {
+      "id": "programme-048-programme-bachelor-of-computer-science-hons-in-software-development-coventry-uk",
+      "url": "https://newinti.edu.my/programme/bachelor-of-computer-science-hons-in-software-development-coventry-uk/",
+      "sourceType": "official-page",
+      "previousSha256": "a399130428b36a7e324c609cc564b1b61bfccace82930b50a7b5be7cd4b353ca",
+      "currentSha256": "8a639d9a4a77a19f178e338582f945696c13abd4f738a377280bfdec9f6c6036"
+    },
+    {
+      "id": "programme-049-programme-bachelor-of-education-honours-in-teaching-chinese-as-a-second-language",
+      "url": "https://newinti.edu.my/programme/bachelor-of-education-honours-in-teaching-chinese-as-a-second-language/",
+      "sourceType": "official-page",
+      "previousSha256": "0ce27459a18a1afeaaed5c1058546412bbaa1ee5f08f2dc23b8eb206d6063973",
+      "currentSha256": "4dc059ebf945d1bb4e69b6aafb2813ef236a41a8ac4d13a8b866112354ca45c1"
+    },
+    {
+      "id": "programme-050-programme-bachelor-of-food-service-management-with-culinary-arts-honours-30",
+      "url": "https://newinti.edu.my/programme/bachelor-of-food-service-management-with-culinary-arts-honours-30/",
+      "sourceType": "official-page",
+      "previousSha256": "98bdb59b2a5241a4244f1fffc3cd0ad4521d1bd9ba8e20872f95831566291680",
+      "currentSha256": "c4d54296f4933152322ec6edece212d17d54de2f8288a1563206bb65e8633af4"
+    },
+    {
+      "id": "programme-051-programme-bachelor-of-information-and-communication-technology-30-in-collaboration-with-swinburne-university-of-technolo",
+      "url": "https://newinti.edu.my/programme/bachelor-of-information-and-communication-technology-30-in-collaboration-with-swinburne-university-of-technology-australia/",
+      "sourceType": "official-page",
+      "previousSha256": "1d06afe8c34c557b81be8da18464b691d16a664cc8b770e41a3dd1678cf22757",
+      "currentSha256": "9af8973b6f745b7807b4dacfa5f2fcd0a7111c1f5d278a0e5ca2c0b650cdadfd"
+    },
+    {
+      "id": "programme-052-programme-bachelor-of-information-technology-hons-coventry-uk",
+      "url": "https://newinti.edu.my/programme/bachelor-of-information-technology-hons-coventry-uk/",
+      "sourceType": "official-page",
+      "previousSha256": "aa29df09aeaa330896442ca9566c0cb7d67f05ab94c79e72efb803c6185fe771",
+      "currentSha256": "31c4cbf34a5db847f7bebe5f0d544e40f7da32d5389dc8466704561deac6f5c4"
+    },
+    {
+      "id": "programme-053-programme-bachelor-information-technology-hons-business-analytics",
+      "url": "https://newinti.edu.my/programme/bachelor-information-technology-hons-business-analytics/",
+      "sourceType": "official-page",
+      "previousSha256": "592927fd51d3fba8a09f2e08f640a2b6f5e481823fba4d63255da91288293c46",
+      "currentSha256": "92ca2ca643eef8196b592aa6a3ad32be5769abe312e725cbc66c2ab66e9961c7"
+    },
+    {
+      "id": "programme-054-programme-bachelor-of-mass-communication-honours",
+      "url": "https://newinti.edu.my/programme/bachelor-of-mass-communication-honours/",
+      "sourceType": "official-page",
+      "previousSha256": "906c4ea008ad4057bcacd10e7b65343657463dde5277f562f4a8b9b662826cf3",
+      "currentSha256": "a4a2df05d24d3e53072841822e573581a7d6721a5b45b03d1f063f8b6df8f8ac"
+    },
+    {
+      "id": "programme-055-programme-bachelor-mass-communication-hons-collaboration-university-hertfordshire-uk",
+      "url": "https://newinti.edu.my/programme/bachelor-mass-communication-hons-collaboration-university-hertfordshire-uk/",
+      "sourceType": "official-page",
+      "previousSha256": "a7e7df90266e5c79ea93c2e6862c1cdba3eb812f68788bb111aef288f1a2da31",
+      "currentSha256": "7c17ce2140fc79e42b5c082a46638af1746932aa91b6f7b823311182ace1886f"
+    },
+    {
+      "id": "programme-056-programme-bachelor-of-engineering-hons-in-mechanical-engineering",
+      "url": "https://newinti.edu.my/programme/bachelor-of-engineering-hons-in-mechanical-engineering/",
+      "sourceType": "official-page",
+      "previousSha256": "961e1ac8a80778c664ec453c580b161d54f846575fc4f918905823396dd665b8",
+      "currentSha256": "157b65eb0ce2ca27b83736bbdfe34d1fb560a9d579210be1eaba0724280bb4d1"
+    },
+    {
+      "id": "programme-057-programme-bachelor-of-media-and-communication-30-in-collaboration-with-swinburne-university-of-technology-australia",
+      "url": "https://newinti.edu.my/programme/bachelor-of-media-and-communication-30-in-collaboration-with-swinburne-university-of-technology-australia/",
+      "sourceType": "official-page",
+      "previousSha256": "614ba781af1cf86192c1484346e5992b4c4e11efd9e1a70a8a5cf729efbcf89c",
+      "currentSha256": "c00385d0ecf23a5444d3477d33c48683a98ffcc1c3ea00d73cae3a56aea761ac"
+    },
+    {
+      "id": "programme-058-programme-bsc-hons-quantity-surveying",
+      "url": "https://newinti.edu.my/programme/bsc-hons-quantity-surveying/",
+      "sourceType": "official-page",
+      "previousSha256": "d4a549193470d0799bc96e352c37655dcee8fac75b770d52a2bc8f4c0d9fabfc",
+      "currentSha256": "b1ceaf2cd92c2cfbf3b8eb15b6b4b561a4f2ea8d2e79e3f9261f3c381c0f2ae7"
+    },
+    {
+      "id": "programme-059-programme-4-0-bachelor-science-business-studies-collaboration-southern-new-hampshire-university-usa",
+      "url": "https://newinti.edu.my/programme/4-0-bachelor-science-business-studies-collaboration-southern-new-hampshire-university-usa/",
+      "sourceType": "official-page",
+      "previousSha256": "62fe503178fd4d37dbae0cb8c016a1038453675c738beb69ccc70e0aed775b6b",
+      "currentSha256": "36de11606aa86e6765f8f76c2b7c7bd2df7ea8a31864eb5a2fa3b219049f8300"
+    },
+    {
+      "id": "programme-060-programme-3-0-bachelor-of-science-hons-in-computer-science-in-collaboration-with-coventry-uk",
+      "url": "https://newinti.edu.my/programme/3-0-bachelor-of-science-hons-in-computer-science-in-collaboration-with-coventry-uk/",
+      "sourceType": "official-page",
+      "previousSha256": "d854ca2516d7475883b5389fadc9c31019e1dab3557ad2890b6b3b537b5046c5",
+      "currentSha256": "ab95d5c090b7dbed6db6e2daf469f4b2b3db41f5ec10d894e0e9bfb5c3ea2590"
+    },
+    {
+      "id": "programme-061-programme-bachelor-of-technology-honours-data-science",
+      "url": "https://newinti.edu.my/programme/bachelor-of-technology-honours-data-science/",
+      "sourceType": "official-page",
+      "previousSha256": "e0fbb2e45b0d0ecb5414989e5106248f444c9b6f0f80dbb9497eb8d6b8fd6edd",
+      "currentSha256": "d7fcfd20f1f3ad67a19539e8709139186bb9b9c0a03525aaca1fef06d5467662"
+    },
+    {
+      "id": "programme-062-programme-bachelor-of-technology-in-digital-construction-management",
+      "url": "https://newinti.edu.my/programme/bachelor-of-technology-in-digital-construction-management/",
+      "sourceType": "official-page",
+      "previousSha256": "e5eb0219b59abc878995e3ae6d155a168027b48a3eb7dac6879974e58fd154b1",
+      "currentSha256": "0ea7463b9d0b94bf506e347facd27c662ef670eb5490997b3cb470e96444e286"
+    },
+    {
+      "id": "programme-063-programme-bachelor-of-technology-in-intelligent-manufacturing",
+      "url": "https://newinti.edu.my/programme/bachelor-of-technology-in-intelligent-manufacturing/",
+      "sourceType": "official-page",
+      "previousSha256": "a8aaf471be0a19404ea6f02f59afcf04ddc59c61d78981295c6b12e3e7257195",
+      "currentSha256": "64af7fc8741a81982144c43c8c6910d1588c9dfd2a466d7a3cb5232825771295"
+    },
+    {
+      "id": "programme-064-programme-bachelor-of-technology-in-intelligent-process-and-product-design",
+      "url": "https://newinti.edu.my/programme/bachelor-of-technology-in-intelligent-process-and-product-design/",
+      "sourceType": "official-page",
+      "previousSha256": "0a17cd4d31ab50ade389858aa13119ca9c22ce73aadc9930b1b112f232933c3a",
+      "currentSha256": "7d573356727e9654b84d42f498a5cf570ad4cdf763e15c5cd9e192e343213017"
+    },
+    {
+      "id": "programme-065-programme-bachelor-of-traditional-chinese-medicine-hons",
+      "url": "https://newinti.edu.my/programme/bachelor-of-traditional-chinese-medicine-hons/",
+      "sourceType": "official-page",
+      "previousSha256": "879381959a9619496d38c79dcec71c52bc908b3521a995bb74755108f63c2afc",
+      "currentSha256": "daa0fe13db7d62f60986f9a1e43153782011511aebeee8bf8594809cd01466b3"
+    },
+    {
+      "id": "programme-066-programme-biosciences-american-university",
+      "url": "https://newinti.edu.my/programme/biosciences-american-university/",
+      "sourceType": "official-page",
+      "previousSha256": "d42bbc38a37223f7815f08eb90d1dd98a95ceab1a61aeca1797627646caf7d3a",
+      "currentSha256": "51d268a38e91eb28ac9fde8208344aaa96af91ecf9ed575a7beb11642030f702"
+    },
+    {
+      "id": "programme-067-programme-business-american-university",
+      "url": "https://newinti.edu.my/programme/business-american-university/",
+      "sourceType": "official-page",
+      "previousSha256": "ef6972d5e5fde194574413c39d4693e06ae42697c12d567b5e16fb0804b04d54",
+      "currentSha256": "26cc978a08715cb3eaca14b67f5a854e4235cfdcf800081e037e9b372eda44c2"
+    },
+    {
+      "id": "programme-068-programme-computer-science-american-university",
+      "url": "https://newinti.edu.my/programme/computer-science-american-university/",
+      "sourceType": "official-page",
+      "previousSha256": "ec5d82334130c3907b17f757646491cea51c4a7d12450152f106df0356a6538e",
+      "currentSha256": "595b3859f77d3e17485f73c4f2d17132ec06fd2f5d3355d729e6dc48f5414d57"
+    },
+    {
+      "id": "programme-069-programme-doctor-of-business-administration",
+      "url": "https://newinti.edu.my/programme/doctor-of-business-administration/",
+      "sourceType": "official-page",
+      "previousSha256": "3bf8e023e78a54659d93636d50d1a0e926c1a4af3273d15cb92812f438ada5eb",
+      "currentSha256": "5d23bdd147b78fd09f73204e42b3bece401729464089ba79140972be8b5b8799"
+    },
+    {
+      "id": "programme-070-programme-doctor-of-business-administration-fully-online",
+      "url": "https://newinti.edu.my/programme/doctor-of-business-administration-fully-online/",
+      "sourceType": "official-page",
+      "previousSha256": "0add139f4cba70cc41a76e740b359220ad96fabeb3c89c67732be7aa23ae84e7",
+      "currentSha256": "ab4102bf029a1f4ff9c839da46b1fb07dae40385d8fd98b0423e69d6f9e24efc"
+    },
+    {
+      "id": "programme-071-programme-doctor-of-education",
+      "url": "https://newinti.edu.my/programme/doctor-of-education/",
+      "sourceType": "official-page",
+      "previousSha256": "7e6d7779e610d3406c2a0288a8f8d62b7c8eb7e2eb31c865ede70d85c062dd3c",
+      "currentSha256": "13cf072d6bb28844b9ab18f2c82506b0e62d3136df41b613b1bd3b5a58b02bd4"
+    },
+    {
+      "id": "programme-072-programme-doctor-of-philosophy-education-by-research",
+      "url": "https://newinti.edu.my/programme/doctor-of-philosophy-education-by-research/",
+      "sourceType": "official-page",
+      "previousSha256": "417d6803b00bf27ff1747d82cd0e95c2ff91927c386a5d42fe93dfea6ef9dda6",
+      "currentSha256": "f5bff52242f2da668e11cfba9fb94feb40d133d7da59498c52aed9547f6b2ff5"
+    },
+    {
+      "id": "programme-073-programme-doctor-of-philosophy-phd-in-applied-physics-by-research-2",
+      "url": "https://newinti.edu.my/programme/doctor-of-philosophy-phd-in-applied-physics-by-research-2/",
+      "sourceType": "official-page",
+      "previousSha256": "9f75bfba49731f469ca6eb6af31b4420a420374c66b391b1a279685cf4816bd0",
+      "currentSha256": "20ae2bcc2be10a2b2fc4aacde22cc2207f4ff7704a7bb8e70a5f2971bad20c87"
+    },
+    {
+      "id": "programme-074-programme-doctor-of-philosophy-phd-financial-technology",
+      "url": "https://newinti.edu.my/programme/doctor-of-philosophy-phd-financial-technology/",
+      "sourceType": "official-page",
+      "previousSha256": "553192aa5abdc0517d044055b187d16554d1ee03fcebab8e94c7df937474f0a0",
+      "currentSha256": "59c235a0fe7946dc6eb15421fd7ff753f197171d7fe0a3f417bd497e5190c832"
+    },
+    {
+      "id": "programme-075-programme-doctor-of-philosophy-phd-information-systems",
+      "url": "https://newinti.edu.my/programme/doctor-of-philosophy-phd-information-systems/",
+      "sourceType": "official-page",
+      "previousSha256": "d61054e1b6657e63867d1fb33e7402a8f6ce584422f44ade276442ee6fcc5ffe",
+      "currentSha256": "e3600735aff73bb47bc51fc8feca672d2314169d784ae200c08b979761ac487e"
+    },
+    {
+      "id": "programme-076-programme-doctor-of-philosophy-phd-innovation-and-technology-2",
+      "url": "https://newinti.edu.my/programme/doctor-of-philosophy-phd-innovation-and-technology-2/",
+      "sourceType": "official-page",
+      "previousSha256": "0f8d198e2d6d0b774973ec276dd2bcddd75687d79d56fe2c20c436c348406280",
+      "currentSha256": "c86aebbf814f7547225f67d698b26fe08e0f296c68314b8a1b44bfa867589fa9"
+    },
+    {
+      "id": "programme-077-programme-doctor-of-philosophy-phd-management",
+      "url": "https://newinti.edu.my/programme/doctor-of-philosophy-phd-management/",
+      "sourceType": "official-page",
+      "previousSha256": "7037fc16d7df1ffdf89e07ea84ff3dcff46fde602022b1c296bfa1fa33b82f33",
+      "currentSha256": "e5ff992c41d52673a357410335b77a5f22b9b918bbb51e6469a6c788a4e27f51"
+    },
+    {
+      "id": "programme-078-programme-doctor-of-philosophy-phd-in-data-science",
+      "url": "https://newinti.edu.my/programme/doctor-of-philosophy-phd-in-data-science/",
+      "sourceType": "official-page",
+      "previousSha256": "4b6e48030d1acc55e01829996985b34c06c18868f68a5bdc8ad646e5ea3f1dcd",
+      "currentSha256": "8bbb0221ec197055cd5d38357b93ea118dee56137cc8d67893f29b37e408ca1f"
+    },
+    {
+      "id": "programme-079-programme-engineering-american-university",
+      "url": "https://newinti.edu.my/programme/engineering-american-university/",
+      "sourceType": "official-page",
+      "previousSha256": "27cfd28ab6d00d3e47d4c57fc069dbe70e843c21f234035a394fcb153c387113",
+      "currentSha256": "0c9af3048e226bc4b110fbfe5956abf51eb63fe1a384097ad5d659f26d753a91"
+    },
+    {
+      "id": "programme-080-programme-health-applied-sciences-american-university",
+      "url": "https://newinti.edu.my/programme/health-applied-sciences-american-university/",
+      "sourceType": "official-page",
+      "previousSha256": "12eca489ab92ac9fd856b0a4a8c819b5c2f929fe4beee4a68a97d770b51fe80e",
+      "currentSha256": "576d4a6e416d38479ea6a58a18b66712a51288ba1f863fd39172aaba118fa636"
+    },
+    {
+      "id": "programme-081-programme-mass-communication-american-university",
+      "url": "https://newinti.edu.my/programme/mass-communication-american-university/",
+      "sourceType": "official-page",
+      "previousSha256": "7ffa0ddae1bb3a42b529ddc1fda283fa77774d2989cf8a9a4d2904929b388b47",
+      "currentSha256": "32c2a9fafe2174d6aefe29d9e8bb1f72325bc827b0c5e547110caeae83251f80"
+    },
+    {
+      "id": "programme-082-programme-master-in-education-management",
+      "url": "https://newinti.edu.my/programme/master-in-education-management/",
+      "sourceType": "official-page",
+      "previousSha256": "1b8b7b10dcb61340f7545ac950419594fbfb51c06d56f5885dfa24f02503240a",
+      "currentSha256": "07f3effde8fd1a9bfa2109cae4617914a7e1f680efa9d3092f0b5d0eef4d2082"
+    },
+    {
+      "id": "programme-083-programme-master-in-education-management-online-learning",
+      "url": "https://newinti.edu.my/programme/master-in-education-management-online-learning/",
+      "sourceType": "official-page",
+      "previousSha256": "c9331f84f090ad9f72c070bde2a8287a1b07ed91df2c80a17bf6ee9085e72f2e",
+      "currentSha256": "e40e79f7e2ad73a231aa2e532921351413cad85191fb5f3654c7d046fd8e082b"
+    },
+    {
+      "id": "programme-084-programme-master-in-health-administration",
+      "url": "https://newinti.edu.my/programme/master-in-health-administration/",
+      "sourceType": "official-page",
+      "previousSha256": "4fd17c46c3364d20ef0c83106ad000f2b26382c9e23ba144d53870a5b2b00464",
+      "currentSha256": "6befc21c6dbdaa9fdfe37294a39f52470c205116d6b4ff82f63a5989caa436dc"
+    },
+    {
+      "id": "programme-085-programme-master-in-health-sciences-physiotherapy-by-research",
+      "url": "https://newinti.edu.my/programme/master-in-health-sciences-physiotherapy-by-research/",
+      "sourceType": "official-page",
+      "previousSha256": "833d3d80919b885de94fed8af3a1628349491b37e576fe9b9a397cc428531664",
+      "currentSha256": "3e7985af8e0a4282b9ba4e43a66ea12dd0881e36d37bdfda55ab6241fd3525bf"
+    },
+    {
+      "id": "programme-086-programme-master-in-information-systems-mis",
+      "url": "https://newinti.edu.my/programme/master-in-information-systems-mis/",
+      "sourceType": "official-page",
+      "previousSha256": "7ee06b9f634f81258870481a62d3b70bfcc8b2b61ad2f73736bfcb54b0c938ee",
+      "currentSha256": "a68d4cd3f0df33e276f90b53863a66a258f6b278ccb4a300985307d0cccad0fc"
+    },
+    {
+      "id": "programme-087-programme-master-in-information-technology-mit",
+      "url": "https://newinti.edu.my/programme/master-in-information-technology-mit/",
+      "sourceType": "official-page",
+      "previousSha256": "8f91e6228cb73495c565d9bb8ee92ba230240eced927a8e27d7b82404836557e",
+      "currentSha256": "e8ab9ca121363ce5e06251c86a0309a6d64cf7590a19c20415b35c0e08629043"
+    },
+    {
+      "id": "programme-088-programme-master-in-information-technology-fully-online-learning-simplified",
+      "url": "https://newinti.edu.my/programme/master-in-information-technology-fully-online-learning-simplified/",
+      "sourceType": "official-page",
+      "previousSha256": "2c5aae6bbcb84ebb46855e60ce0e5e391b2a7407fc76e8d75bf41ef6b3ed7ee4",
+      "currentSha256": "65a059fbcf50ba389fa9f44fc6c54574ed8be67475f3d13d3c7210554cbdd464"
+    },
+    {
+      "id": "programme-089-programme-master-of-biotechnological-innovations-and-application-by-research",
+      "url": "https://newinti.edu.my/programme/master-of-biotechnological-innovations-and-application-by-research/",
+      "sourceType": "official-page",
+      "previousSha256": "9977cfb30d6a8bc54bec7b3fc81c818be6eb9d05572d218ff0d0c8489f9ad21e",
+      "currentSha256": "f09fc1084d60802a8de1e36262e725db69f9a4b0cf9fba2e311262379cc4ffdf"
+    },
+    {
+      "id": "programme-090-programme-master-of-business-administration-business-analytics",
+      "url": "https://newinti.edu.my/programme/master-of-business-administration-business-analytics/",
+      "sourceType": "official-page",
+      "previousSha256": "cee420f1056f9b3329d87e4c72eb1959ed17e5597659bca19ba0adbffc8c0fcb",
+      "currentSha256": "5201b889cbfc26861dfe48c5ed1e954f00b2d90a2ee078ace59cb388178384c1"
+    },
+    {
+      "id": "programme-091-programme-master-of-business-administration-mba-by-inti-international-university-1",
+      "url": "https://newinti.edu.my/programme/master-of-business-administration-mba-by-inti-international-university_1/",
+      "sourceType": "official-page",
+      "previousSha256": "edddd2450a6a125f3ed2959e96381b944a595dc26679842ff577f192cba3a0e3",
+      "currentSha256": "c33006acf87bcb91c4f8dd995c8099318371c05ce6b89a5b292d4fb4751c0563"
+    },
+    {
+      "id": "programme-092-programme-master-of-business-administration-mba-in-collaboration-with-inti-international-university",
+      "url": "https://newinti.edu.my/programme/master-of-business-administration-mba-in-collaboration-with-inti-international-university/",
+      "sourceType": "official-page",
+      "previousSha256": "4b43d20ca2012100a71684a19f4627602861ea18a71d44dd9981079a056d6a50",
+      "currentSha256": "1afc74effe822d7a7f4c8fe1847f736cac1a1139a1b919b5ec8b8275cc51f89b"
+    },
+    {
+      "id": "programme-093-programme-master-of-business-administration-mba-learning-simplified",
+      "url": "https://newinti.edu.my/programme/master-of-business-administration-mba-learning-simplified/",
+      "sourceType": "official-page",
+      "previousSha256": "843437fcdc7ac0b5d6e4dee0c177de164c8e47ae9bb52a7b2bfdbc6066936ef9",
+      "currentSha256": "421c004b6f9f8ef35dcd4ea63b5a7450b671d570c238a553c3691030b4d09ace"
+    },
+    {
+      "id": "programme-094-programme-master-of-education-in-learning-design-and-technology",
+      "url": "https://newinti.edu.my/programme/master-of-education-in-learning-design-and-technology/",
+      "sourceType": "official-page",
+      "previousSha256": "fc8aaef523d147cf7c460d926044f24ef4872fdf0ef13c8750ea5aa413cd12ae",
+      "currentSha256": "d9698fbaeec9a998207b84f2867d753c7435608c6655e6a7abe9228227214e6a"
+    },
+    {
+      "id": "programme-095-programme-master-of-engineering-in-electrical-and-electronic-engineering-40-in-collaboration-with-coventry-university-uk",
+      "url": "https://newinti.edu.my/programme/master-of-engineering-in-electrical-and-electronic-engineering-40-in-collaboration-with-coventry-university-uk/",
+      "sourceType": "official-page",
+      "previousSha256": "031eb160ec59ee8b9e1004df35c61506e1e4ff2e6cbbb45591939a8baccbef37",
+      "currentSha256": "b75cf85b004a18a50906dd2ac64269313cba3cf1e86d25567a816d2fc5a4c7f9"
+    },
+    {
+      "id": "programme-096-programme-master-of-engineering-in-mechanical-engineering-40-in-collaboration-with-coventry-university-uk",
+      "url": "https://newinti.edu.my/programme/master-of-engineering-in-mechanical-engineering-40-in-collaboration-with-coventry-university-uk/",
+      "sourceType": "official-page",
+      "previousSha256": "0a518f03bdbc6f739f0af33a411688460ccf298a3ef8534147c5c97a1fc9523c",
+      "currentSha256": "10eb3b7fee67edf168705d0d032dc5b9c182da725094ae6b4e285ab3ad74cad6"
+    },
+    {
+      "id": "programme-097-programme-master-of-science-in-construction-management-building-information-modelling",
+      "url": "https://newinti.edu.my/programme/master-of-science-in-construction-management-building-information-modelling/",
+      "sourceType": "official-page",
+      "previousSha256": "843fbceaf2ae1acaf38c913c72bb73f0ec919ca126a2d61e031f7555552ced5e",
+      "currentSha256": "f1d1bd18331931bc6905b2983842b9c90298e422a5c039ff34c106ff4f118329"
+    },
+    {
+      "id": "programme-098-programme-master-of-science-in-construction-management-building-information-modelling-fully-online",
+      "url": "https://newinti.edu.my/programme/master-of-science-in-construction-management-building-information-modelling-fully-online/",
+      "sourceType": "official-page",
+      "previousSha256": "284a60172cc3596838af15a7b98d47f7b1f9641131c84699a75b1a96649b46b9",
+      "currentSha256": "874dd3838b840494dceb7c1da561a9cb03b0095cb5badbb580b6bfebc9f6f1ae"
+    },
+    {
+      "id": "programme-099-programme-master-of-science-in-construction-management-with-facility-management",
+      "url": "https://newinti.edu.my/programme/master-of-science-in-construction-management-with-facility-management/",
+      "sourceType": "official-page",
+      "previousSha256": "e9eb2f08d5fe8ecc1695e4f40f7cd365f20808d6023e009faf891623bcc224de",
+      "currentSha256": "729864392e25eac8fd62c80d22b82e0b91d35cd5b8c92b3893a55c132405df0c"
+    },
+    {
+      "id": "programme-100-programme-master-of-science-in-data-science",
+      "url": "https://newinti.edu.my/programme/master-of-science-in-data-science/",
+      "sourceType": "official-page",
+      "previousSha256": "fe1a58bff729cc56de85adc1e5792e8282b7463c538b77f6593c2b7f98d503ea",
+      "currentSha256": "684431eb9112c65055be1ff5ca284de48f16a6a3e5fa454911cc1cb83666f476"
+    },
+    {
+      "id": "programme-101-programme-master-of-science-in-engineering-and-eco-innovation-by-research",
+      "url": "https://newinti.edu.my/programme/master-of-science-in-engineering-and-eco-innovation-by-research/",
+      "sourceType": "official-page",
+      "previousSha256": "eebf2dffa7828294fbd94d8a2633a4651e12ef63715dca8f27db7a139bc0c590",
+      "currentSha256": "13eeb393a9677fb02752f68aaf6434769551ccea33e1a99fa18d6b1fc93b7620"
+    },
+    {
+      "id": "programme-102-programme-master-of-science-in-facilities-management-online-learning",
+      "url": "https://newinti.edu.my/programme/master-of-science-in-facilities-management-online-learning/",
+      "sourceType": "official-page",
+      "previousSha256": "fa5ac8a2ed4a3e8e7e3da94f5347a53ca80a98d92ac865a656406e9672a90041",
+      "currentSha256": "33af8ca9e28ca61950c7397becdca3d29224386018c1e5b01c014b772dcb247f"
+    },
+    {
+      "id": "programme-103-programme-master-of-science-in-information-systems-by-research",
+      "url": "https://newinti.edu.my/programme/master-of-science-in-information-systems-by-research/",
+      "sourceType": "official-page",
+      "previousSha256": "b8439760f5bd880bbcb86aa0045fb1246bfedc59172b086d79612139e4ed630a",
+      "currentSha256": "e13625f8c0cd867927116714bf9cbe6c486efc6e518c8056085f885983c1674f"
+    },
+    {
+      "id": "programme-104-programme-master-of-science-in-innovation-and-technology",
+      "url": "https://newinti.edu.my/programme/master-of-science-in-innovation-and-technology/",
+      "sourceType": "official-page",
+      "previousSha256": "094497252be24bd4f27324d713e4c753de96973976b6598c34d6a4c3578d0662",
+      "currentSha256": "db4c0d64fbb620b042eaf221d605a7974bf5981ca90a7b89d9cb89b0435d45b0"
+    },
+    {
+      "id": "programme-105-programme-master-of-science-in-integrated-project-management-online-learning",
+      "url": "https://newinti.edu.my/programme/master-of-science-in-integrated-project-management-online-learning/",
+      "sourceType": "official-page",
+      "previousSha256": "6be4a6d92ceb639c4811aec1541acd43f51c1d3e54f0ac3b739d98c3a453fd60",
+      "currentSha256": "c0725e32ab504cd96ae62eda98c4a8aa91d78628c20dce1342aff69c624bc5b1"
+    },
+    {
+      "id": "programme-106-programme-master-of-traditional-chinese-medicine",
+      "url": "https://newinti.edu.my/programme/master-of-traditional-chinese-medicine/",
+      "sourceType": "official-page",
+      "previousSha256": "122398b775d7e999080066f652cc0adfd0aae3bbab4f4739dadf1f8a87068260",
+      "currentSha256": "4a8148d7f95af1f6d474dc954a582bcbcb6b7b0c4963d00b7e1a979c5225d225"
+    },
+    {
+      "id": "programme-107-programme-psychology-american-university",
+      "url": "https://newinti.edu.my/programme/psychology-american-university/",
+      "sourceType": "official-page",
+      "previousSha256": "3ce518bbc581d5dbbe30d1d9743e296b5567f0a5c0129af9ed181b174c0b519d",
+      "currentSha256": "845644622331e7e665eaac3048d6ba87b8fd56eec46bec9cda88fd1b10b6b54a"
+    }
+  ],
+  "newSources": []
+}

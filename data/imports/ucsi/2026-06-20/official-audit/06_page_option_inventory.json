@@ -1,0 +1,4132 @@
+[
+  {
+    "code": "UCSI-PHD-001",
+    "candidateCode": "UCSI-PHD-001",
+    "nameEnOfficial": "Doctor Of Philosophy (Business And Management)",
+    "detailPageUrl": "https://www.ucsiuniversity.edu.my/programmes/doctor-philosophy-business-and-management",
+    "sourceId": "detail-001-item",
+    "hasOptions": true,
+    "retrievalMethod": "rendered DOM via Playwright",
+    "options": [
+      {
+        "optionType": "same-programme official sublink",
+        "label": "programme related official links",
+        "governedFields": [
+          "brochure",
+          "application",
+          "requirements",
+          "courseSetting"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-PHD-001:sameProgrammeLinks",
+        "reviewReason": "Related links were inventoried but not fully followed in this collect-only baseline pass."
+      },
+      {
+        "optionType": "fee panel",
+        "label": "fee amount snippets",
+        "governedFields": [
+          "fee"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-PHD-001:feeSnippets",
+        "reviewReason": "Fee-like snippets require exact international full-duration tuition reconciliation."
+      }
+    ],
+    "rawSnapshotPath": "data/imports/ucsi/2026-06-20/official-audit/raw/detail-001-item.html"
+  },
+  {
+    "code": "UCSI-PHD-002",
+    "candidateCode": "UCSI-PHD-002",
+    "nameEnOfficial": "DBA (Doctor Of Business Administration)",
+    "detailPageUrl": "https://www.ucsiuniversity.edu.my/programmes/dba-doctor-business-administration",
+    "sourceId": "detail-002-item",
+    "hasOptions": true,
+    "retrievalMethod": "rendered DOM via Playwright",
+    "options": [
+      {
+        "optionType": "same-programme official sublink",
+        "label": "programme related official links",
+        "governedFields": [
+          "brochure",
+          "application",
+          "requirements",
+          "courseSetting"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-PHD-002:sameProgrammeLinks",
+        "reviewReason": "Related links were inventoried but not fully followed in this collect-only baseline pass."
+      },
+      {
+        "optionType": "fee panel",
+        "label": "fee amount snippets",
+        "governedFields": [
+          "fee"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-PHD-002:feeSnippets",
+        "reviewReason": "Fee-like snippets require exact international full-duration tuition reconciliation."
+      }
+    ],
+    "rawSnapshotPath": "data/imports/ucsi/2026-06-20/official-audit/raw/detail-002-item.html"
+  },
+  {
+    "code": "UCSI-MASTER-003",
+    "candidateCode": "UCSI-MASTER-003",
+    "nameEnOfficial": "MBA",
+    "detailPageUrl": "https://www.ucsiuniversity.edu.my/programmes/mba",
+    "sourceId": "detail-003-item",
+    "hasOptions": true,
+    "retrievalMethod": "rendered DOM via Playwright",
+    "options": [
+      {
+        "optionType": "same-programme official sublink",
+        "label": "programme related official links",
+        "governedFields": [
+          "brochure",
+          "application",
+          "requirements",
+          "courseSetting"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-MASTER-003:sameProgrammeLinks",
+        "reviewReason": "Related links were inventoried but not fully followed in this collect-only baseline pass."
+      },
+      {
+        "optionType": "fee panel",
+        "label": "fee amount snippets",
+        "governedFields": [
+          "fee"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-MASTER-003:feeSnippets",
+        "reviewReason": "Fee-like snippets require exact international full-duration tuition reconciliation."
+      }
+    ],
+    "rawSnapshotPath": "data/imports/ucsi/2026-06-20/official-audit/raw/detail-003-item.html"
+  },
+  {
+    "code": "UCSI-MASTER-004",
+    "candidateCode": "UCSI-MASTER-004",
+    "nameEnOfficial": "MBA (ODL Mode)",
+    "detailPageUrl": "https://www.ucsiuniversity.edu.my/programmes/mba-odl-mode",
+    "sourceId": "detail-004-item",
+    "hasOptions": true,
+    "retrievalMethod": "rendered DOM via Playwright",
+    "options": [
+      {
+        "optionType": "same-programme official sublink",
+        "label": "programme related official links",
+        "governedFields": [
+          "brochure",
+          "application",
+          "requirements",
+          "courseSetting"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-MASTER-004:sameProgrammeLinks",
+        "reviewReason": "Related links were inventoried but not fully followed in this collect-only baseline pass."
+      },
+      {
+        "optionType": "fee panel",
+        "label": "fee amount snippets",
+        "governedFields": [
+          "fee"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-MASTER-004:feeSnippets",
+        "reviewReason": "Fee-like snippets require exact international full-duration tuition reconciliation."
+      }
+    ],
+    "rawSnapshotPath": "data/imports/ucsi/2026-06-20/official-audit/raw/detail-004-item.html"
+  },
+  {
+    "code": "UCSI-MASTER-005",
+    "candidateCode": "UCSI-MASTER-005",
+    "nameEnOfficial": "Master Of Philosophy (Business And Management)",
+    "detailPageUrl": "https://www.ucsiuniversity.edu.my/programmes/master-philosophy-business-and-management",
+    "sourceId": "detail-005-item",
+    "hasOptions": true,
+    "retrievalMethod": "rendered DOM via Playwright",
+    "options": [
+      {
+        "optionType": "same-programme official sublink",
+        "label": "programme related official links",
+        "governedFields": [
+          "brochure",
+          "application",
+          "requirements",
+          "courseSetting"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-MASTER-005:sameProgrammeLinks",
+        "reviewReason": "Related links were inventoried but not fully followed in this collect-only baseline pass."
+      },
+      {
+        "optionType": "fee panel",
+        "label": "fee amount snippets",
+        "governedFields": [
+          "fee"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-MASTER-005:feeSnippets",
+        "reviewReason": "Fee-like snippets require exact international full-duration tuition reconciliation."
+      }
+    ],
+    "rawSnapshotPath": "data/imports/ucsi/2026-06-20/official-audit/raw/detail-005-item.html"
+  },
+  {
+    "code": "UCSI-MASTER-006",
+    "candidateCode": "UCSI-MASTER-006",
+    "nameEnOfficial": "MBA (Healthcare And Hospital Management)",
+    "detailPageUrl": "https://www.ucsiuniversity.edu.my/programmes/mba-healthcare-and-hospital-management",
+    "sourceId": "detail-006-item",
+    "hasOptions": true,
+    "retrievalMethod": "rendered DOM via Playwright",
+    "options": [
+      {
+        "optionType": "same-programme official sublink",
+        "label": "programme related official links",
+        "governedFields": [
+          "brochure",
+          "application",
+          "requirements",
+          "courseSetting"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-MASTER-006:sameProgrammeLinks",
+        "reviewReason": "Related links were inventoried but not fully followed in this collect-only baseline pass."
+      },
+      {
+        "optionType": "fee panel",
+        "label": "fee amount snippets",
+        "governedFields": [
+          "fee"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-MASTER-006:feeSnippets",
+        "reviewReason": "Fee-like snippets require exact international full-duration tuition reconciliation."
+      }
+    ],
+    "rawSnapshotPath": "data/imports/ucsi/2026-06-20/official-audit/raw/detail-006-item.html"
+  },
+  {
+    "code": "UCSI-PHD-007",
+    "candidateCode": "UCSI-PHD-007",
+    "nameEnOfficial": "Doctor Of Philosophy (Science)",
+    "detailPageUrl": "https://www.ucsiuniversity.edu.my/programme/doctorate-philosophy-science",
+    "sourceId": "detail-007-item",
+    "hasOptions": true,
+    "retrievalMethod": "rendered DOM via Playwright",
+    "options": [
+      {
+        "optionType": "same-programme official sublink",
+        "label": "programme related official links",
+        "governedFields": [
+          "brochure",
+          "application",
+          "requirements",
+          "courseSetting"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-PHD-007:sameProgrammeLinks",
+        "reviewReason": "Related links were inventoried but not fully followed in this collect-only baseline pass."
+      },
+      {
+        "optionType": "fee panel",
+        "label": "fee amount snippets",
+        "governedFields": [
+          "fee"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-PHD-007:feeSnippets",
+        "reviewReason": "Fee-like snippets require exact international full-duration tuition reconciliation."
+      }
+    ],
+    "rawSnapshotPath": "data/imports/ucsi/2026-06-20/official-audit/raw/detail-007-item.html"
+  },
+  {
+    "code": "UCSI-MASTER-008",
+    "candidateCode": "UCSI-MASTER-008",
+    "nameEnOfficial": "Master Of Science In Applied Sciences",
+    "detailPageUrl": "https://www.ucsiuniversity.edu.my/programmes/master-science-applied-sciences",
+    "sourceId": "detail-008-item",
+    "hasOptions": true,
+    "retrievalMethod": "rendered DOM via Playwright",
+    "options": [
+      {
+        "optionType": "same-programme official sublink",
+        "label": "programme related official links",
+        "governedFields": [
+          "brochure",
+          "application",
+          "requirements",
+          "courseSetting"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-MASTER-008:sameProgrammeLinks",
+        "reviewReason": "Related links were inventoried but not fully followed in this collect-only baseline pass."
+      },
+      {
+        "optionType": "fee panel",
+        "label": "fee amount snippets",
+        "governedFields": [
+          "fee"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-MASTER-008:feeSnippets",
+        "reviewReason": "Fee-like snippets require exact international full-duration tuition reconciliation."
+      }
+    ],
+    "rawSnapshotPath": "data/imports/ucsi/2026-06-20/official-audit/raw/detail-008-item.html"
+  },
+  {
+    "code": "UCSI-MASTER-009",
+    "candidateCode": "UCSI-MASTER-009",
+    "nameEnOfficial": "Master Of Science Biotechnology",
+    "detailPageUrl": "https://www.ucsiuniversity.edu.my/programmes/master-science-biotechnology",
+    "sourceId": "detail-009-item",
+    "hasOptions": true,
+    "retrievalMethod": "rendered DOM via Playwright",
+    "options": [
+      {
+        "optionType": "same-programme official sublink",
+        "label": "programme related official links",
+        "governedFields": [
+          "brochure",
+          "application",
+          "requirements",
+          "courseSetting"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-MASTER-009:sameProgrammeLinks",
+        "reviewReason": "Related links were inventoried but not fully followed in this collect-only baseline pass."
+      },
+      {
+        "optionType": "fee panel",
+        "label": "fee amount snippets",
+        "governedFields": [
+          "fee"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-MASTER-009:feeSnippets",
+        "reviewReason": "Fee-like snippets require exact international full-duration tuition reconciliation."
+      }
+    ],
+    "rawSnapshotPath": "data/imports/ucsi/2026-06-20/official-audit/raw/detail-009-item.html"
+  },
+  {
+    "code": "UCSI-MASTER-010",
+    "candidateCode": "UCSI-MASTER-010",
+    "nameEnOfficial": "Master Of Science In Biotechnology With Business Management",
+    "detailPageUrl": "https://www.ucsiuniversity.edu.my/programmes/master-science-biotechnology-business-management",
+    "sourceId": "detail-010-item",
+    "hasOptions": true,
+    "retrievalMethod": "rendered DOM via Playwright",
+    "options": [
+      {
+        "optionType": "same-programme official sublink",
+        "label": "programme related official links",
+        "governedFields": [
+          "brochure",
+          "application",
+          "requirements",
+          "courseSetting"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-MASTER-010:sameProgrammeLinks",
+        "reviewReason": "Related links were inventoried but not fully followed in this collect-only baseline pass."
+      },
+      {
+        "optionType": "fee panel",
+        "label": "fee amount snippets",
+        "governedFields": [
+          "fee"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-MASTER-010:feeSnippets",
+        "reviewReason": "Fee-like snippets require exact international full-duration tuition reconciliation."
+      }
+    ],
+    "rawSnapshotPath": "data/imports/ucsi/2026-06-20/official-audit/raw/detail-010-item.html"
+  },
+  {
+    "code": "UCSI-MASTER-011",
+    "candidateCode": "UCSI-MASTER-011",
+    "nameEnOfficial": "Master Of Science Food Science With Business Management",
+    "detailPageUrl": "https://www.ucsiuniversity.edu.my/programmes/master-science-food-science-business-management",
+    "sourceId": "detail-011-item",
+    "hasOptions": true,
+    "retrievalMethod": "rendered DOM via Playwright",
+    "options": [
+      {
+        "optionType": "same-programme official sublink",
+        "label": "programme related official links",
+        "governedFields": [
+          "brochure",
+          "application",
+          "requirements",
+          "courseSetting"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-MASTER-011:sameProgrammeLinks",
+        "reviewReason": "Related links were inventoried but not fully followed in this collect-only baseline pass."
+      },
+      {
+        "optionType": "fee panel",
+        "label": "fee amount snippets",
+        "governedFields": [
+          "fee"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-MASTER-011:feeSnippets",
+        "reviewReason": "Fee-like snippets require exact international full-duration tuition reconciliation."
+      }
+    ],
+    "rawSnapshotPath": "data/imports/ucsi/2026-06-20/official-audit/raw/detail-011-item.html"
+  },
+  {
+    "code": "UCSI-MASTER-012",
+    "candidateCode": "UCSI-MASTER-012",
+    "nameEnOfficial": "Master Of Science In Nutrition With Management",
+    "detailPageUrl": "https://www.ucsiuniversity.edu.my/programmes/msc-nutrition-management",
+    "sourceId": "detail-012-item",
+    "hasOptions": true,
+    "retrievalMethod": "rendered DOM via Playwright",
+    "options": [
+      {
+        "optionType": "same-programme official sublink",
+        "label": "programme related official links",
+        "governedFields": [
+          "brochure",
+          "application",
+          "requirements",
+          "courseSetting"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-MASTER-012:sameProgrammeLinks",
+        "reviewReason": "Related links were inventoried but not fully followed in this collect-only baseline pass."
+      },
+      {
+        "optionType": "fee panel",
+        "label": "fee amount snippets",
+        "governedFields": [
+          "fee"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-MASTER-012:feeSnippets",
+        "reviewReason": "Fee-like snippets require exact international full-duration tuition reconciliation."
+      }
+    ],
+    "rawSnapshotPath": "data/imports/ucsi/2026-06-20/official-audit/raw/detail-012-item.html"
+  },
+  {
+    "code": "UCSI-BACHELOR-013",
+    "candidateCode": "UCSI-BACHELOR-013",
+    "nameEnOfficial": "Bachelor Of Science (Honours) Applied Microbiology",
+    "detailPageUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-science-honours-applied-microbiology",
+    "sourceId": "detail-013-item",
+    "hasOptions": true,
+    "retrievalMethod": "rendered DOM via Playwright",
+    "options": [
+      {
+        "optionType": "same-programme official sublink",
+        "label": "programme related official links",
+        "governedFields": [
+          "brochure",
+          "application",
+          "requirements",
+          "courseSetting"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-BACHELOR-013:sameProgrammeLinks",
+        "reviewReason": "Related links were inventoried but not fully followed in this collect-only baseline pass."
+      },
+      {
+        "optionType": "fee panel",
+        "label": "fee amount snippets",
+        "governedFields": [
+          "fee"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-BACHELOR-013:feeSnippets",
+        "reviewReason": "Fee-like snippets require exact international full-duration tuition reconciliation."
+      }
+    ],
+    "rawSnapshotPath": "data/imports/ucsi/2026-06-20/official-audit/raw/detail-013-item.html"
+  },
+  {
+    "code": "UCSI-BACHELOR-014",
+    "candidateCode": "UCSI-BACHELOR-014",
+    "nameEnOfficial": "Bachelor Of Science (Honours) Aquatic Science",
+    "detailPageUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-science-honours-aquatic-science",
+    "sourceId": "detail-014-item",
+    "hasOptions": true,
+    "retrievalMethod": "rendered DOM via Playwright",
+    "options": [
+      {
+        "optionType": "same-programme official sublink",
+        "label": "programme related official links",
+        "governedFields": [
+          "brochure",
+          "application",
+          "requirements",
+          "courseSetting"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-BACHELOR-014:sameProgrammeLinks",
+        "reviewReason": "Related links were inventoried but not fully followed in this collect-only baseline pass."
+      },
+      {
+        "optionType": "fee panel",
+        "label": "fee amount snippets",
+        "governedFields": [
+          "fee"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-BACHELOR-014:feeSnippets",
+        "reviewReason": "Fee-like snippets require exact international full-duration tuition reconciliation."
+      }
+    ],
+    "rawSnapshotPath": "data/imports/ucsi/2026-06-20/official-audit/raw/detail-014-item.html"
+  },
+  {
+    "code": "UCSI-BACHELOR-015",
+    "candidateCode": "UCSI-BACHELOR-015",
+    "nameEnOfficial": "Bachelor Of Science (Honours) In Biotechnology",
+    "detailPageUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-science-honours-biotechnology",
+    "sourceId": "detail-015-item",
+    "hasOptions": true,
+    "retrievalMethod": "rendered DOM via Playwright",
+    "options": [
+      {
+        "optionType": "same-programme official sublink",
+        "label": "programme related official links",
+        "governedFields": [
+          "brochure",
+          "application",
+          "requirements",
+          "courseSetting"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-BACHELOR-015:sameProgrammeLinks",
+        "reviewReason": "Related links were inventoried but not fully followed in this collect-only baseline pass."
+      },
+      {
+        "optionType": "fee panel",
+        "label": "fee amount snippets",
+        "governedFields": [
+          "fee"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-BACHELOR-015:feeSnippets",
+        "reviewReason": "Fee-like snippets require exact international full-duration tuition reconciliation."
+      }
+    ],
+    "rawSnapshotPath": "data/imports/ucsi/2026-06-20/official-audit/raw/detail-015-item.html"
+  },
+  {
+    "code": "UCSI-BACHELOR-016",
+    "candidateCode": "UCSI-BACHELOR-016",
+    "nameEnOfficial": "Bachelor Of Science (Honours) Food Science With Nutrition",
+    "detailPageUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-science-honours-food-science-nutrition",
+    "sourceId": "detail-016-item",
+    "hasOptions": true,
+    "retrievalMethod": "rendered DOM via Playwright",
+    "options": [
+      {
+        "optionType": "same-programme official sublink",
+        "label": "programme related official links",
+        "governedFields": [
+          "brochure",
+          "application",
+          "requirements",
+          "courseSetting"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-BACHELOR-016:sameProgrammeLinks",
+        "reviewReason": "Related links were inventoried but not fully followed in this collect-only baseline pass."
+      },
+      {
+        "optionType": "fee panel",
+        "label": "fee amount snippets",
+        "governedFields": [
+          "fee"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-BACHELOR-016:feeSnippets",
+        "reviewReason": "Fee-like snippets require exact international full-duration tuition reconciliation."
+      }
+    ],
+    "rawSnapshotPath": "data/imports/ucsi/2026-06-20/official-audit/raw/detail-016-item.html"
+  },
+  {
+    "code": "UCSI-BACHELOR-017",
+    "candidateCode": "UCSI-BACHELOR-017",
+    "nameEnOfficial": "Bachelor Of Science (Honours) Forensic Science",
+    "detailPageUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-science-honours-forensic-science",
+    "sourceId": "detail-017-item",
+    "hasOptions": true,
+    "retrievalMethod": "rendered DOM via Playwright",
+    "options": [
+      {
+        "optionType": "same-programme official sublink",
+        "label": "programme related official links",
+        "governedFields": [
+          "brochure",
+          "application",
+          "requirements",
+          "courseSetting"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-BACHELOR-017:sameProgrammeLinks",
+        "reviewReason": "Related links were inventoried but not fully followed in this collect-only baseline pass."
+      },
+      {
+        "optionType": "fee panel",
+        "label": "fee amount snippets",
+        "governedFields": [
+          "fee"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-BACHELOR-017:feeSnippets",
+        "reviewReason": "Fee-like snippets require exact international full-duration tuition reconciliation."
+      }
+    ],
+    "rawSnapshotPath": "data/imports/ucsi/2026-06-20/official-audit/raw/detail-017-item.html"
+  },
+  {
+    "code": "UCSI-BACHELOR-018",
+    "candidateCode": "UCSI-BACHELOR-018",
+    "nameEnOfficial": "Bachelor Of Science (Honours) Nutrition With Wellness",
+    "detailPageUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-science-honours-nutrition-wellness",
+    "sourceId": "detail-018-item",
+    "hasOptions": true,
+    "retrievalMethod": "rendered DOM via Playwright",
+    "options": [
+      {
+        "optionType": "same-programme official sublink",
+        "label": "programme related official links",
+        "governedFields": [
+          "brochure",
+          "application",
+          "requirements",
+          "courseSetting"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-BACHELOR-018:sameProgrammeLinks",
+        "reviewReason": "Related links were inventoried but not fully followed in this collect-only baseline pass."
+      },
+      {
+        "optionType": "fee panel",
+        "label": "fee amount snippets",
+        "governedFields": [
+          "fee"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-BACHELOR-018:feeSnippets",
+        "reviewReason": "Fee-like snippets require exact international full-duration tuition reconciliation."
+      }
+    ],
+    "rawSnapshotPath": "data/imports/ucsi/2026-06-20/official-audit/raw/detail-018-item.html"
+  },
+  {
+    "code": "UCSI-PHD-019",
+    "candidateCode": "UCSI-PHD-019",
+    "nameEnOfficial": "Doctor Of Philosophy (Science) By Prior Publication",
+    "detailPageUrl": "https://www.ucsiuniversity.edu.my/programmes/doctor-philosophy-science-prior-publication",
+    "sourceId": "detail-019-item",
+    "hasOptions": true,
+    "retrievalMethod": "rendered DOM via Playwright",
+    "options": [
+      {
+        "optionType": "same-programme official sublink",
+        "label": "programme related official links",
+        "governedFields": [
+          "brochure",
+          "application",
+          "requirements",
+          "courseSetting"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-PHD-019:sameProgrammeLinks",
+        "reviewReason": "Related links were inventoried but not fully followed in this collect-only baseline pass."
+      },
+      {
+        "optionType": "fee panel",
+        "label": "fee amount snippets",
+        "governedFields": [
+          "fee"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-PHD-019:feeSnippets",
+        "reviewReason": "Fee-like snippets require exact international full-duration tuition reconciliation."
+      }
+    ],
+    "rawSnapshotPath": "data/imports/ucsi/2026-06-20/official-audit/raw/detail-019-item.html"
+  },
+  {
+    "code": "UCSI-MASTER-020",
+    "candidateCode": "UCSI-MASTER-020",
+    "nameEnOfficial": "Master In Logistics And Supply Chain Management",
+    "detailPageUrl": "https://www.ucsiuniversity.edu.my/programmes/master-logistics-and-supply-chain-management",
+    "sourceId": "detail-020-item",
+    "hasOptions": true,
+    "retrievalMethod": "rendered DOM via Playwright",
+    "options": [
+      {
+        "optionType": "same-programme official sublink",
+        "label": "programme related official links",
+        "governedFields": [
+          "brochure",
+          "application",
+          "requirements",
+          "courseSetting"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-MASTER-020:sameProgrammeLinks",
+        "reviewReason": "Related links were inventoried but not fully followed in this collect-only baseline pass."
+      },
+      {
+        "optionType": "fee panel",
+        "label": "fee amount snippets",
+        "governedFields": [
+          "fee"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-MASTER-020:feeSnippets",
+        "reviewReason": "Fee-like snippets require exact international full-duration tuition reconciliation."
+      }
+    ],
+    "rawSnapshotPath": "data/imports/ucsi/2026-06-20/official-audit/raw/detail-020-item.html"
+  },
+  {
+    "code": "UCSI-BACHELOR-021",
+    "candidateCode": "UCSI-BACHELOR-021",
+    "nameEnOfficial": "Bachelor Of Arts (Hons) Accounting",
+    "detailPageUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-arts-hons-accounting",
+    "sourceId": "detail-021-item",
+    "hasOptions": true,
+    "retrievalMethod": "rendered DOM via Playwright",
+    "options": [
+      {
+        "optionType": "same-programme official sublink",
+        "label": "programme related official links",
+        "governedFields": [
+          "brochure",
+          "application",
+          "requirements",
+          "courseSetting"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-BACHELOR-021:sameProgrammeLinks",
+        "reviewReason": "Related links were inventoried but not fully followed in this collect-only baseline pass."
+      },
+      {
+        "optionType": "fee panel",
+        "label": "fee amount snippets",
+        "governedFields": [
+          "fee"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-BACHELOR-021:feeSnippets",
+        "reviewReason": "Fee-like snippets require exact international full-duration tuition reconciliation."
+      }
+    ],
+    "rawSnapshotPath": "data/imports/ucsi/2026-06-20/official-audit/raw/detail-021-item.html"
+  },
+  {
+    "code": "UCSI-BACHELOR-022",
+    "candidateCode": "UCSI-BACHELOR-022",
+    "nameEnOfficial": "Bachelor Of Arts (Hons) Accounting And Finance",
+    "detailPageUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-arts-hons-accounting-and-finance",
+    "sourceId": "detail-022-item",
+    "hasOptions": true,
+    "retrievalMethod": "rendered DOM via Playwright",
+    "options": [
+      {
+        "optionType": "same-programme official sublink",
+        "label": "programme related official links",
+        "governedFields": [
+          "brochure",
+          "application",
+          "requirements",
+          "courseSetting"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-BACHELOR-022:sameProgrammeLinks",
+        "reviewReason": "Related links were inventoried but not fully followed in this collect-only baseline pass."
+      },
+      {
+        "optionType": "fee panel",
+        "label": "fee amount snippets",
+        "governedFields": [
+          "fee"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-BACHELOR-022:feeSnippets",
+        "reviewReason": "Fee-like snippets require exact international full-duration tuition reconciliation."
+      }
+    ],
+    "rawSnapshotPath": "data/imports/ucsi/2026-06-20/official-audit/raw/detail-022-item.html"
+  },
+  {
+    "code": "UCSI-BACHELOR-023",
+    "candidateCode": "UCSI-BACHELOR-023",
+    "nameEnOfficial": "Bachelor Of Arts (Hons) Entrepreneurship",
+    "detailPageUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-arts-hons-entrepreneurship",
+    "sourceId": "detail-023-item",
+    "hasOptions": true,
+    "retrievalMethod": "rendered DOM via Playwright",
+    "options": [
+      {
+        "optionType": "same-programme official sublink",
+        "label": "programme related official links",
+        "governedFields": [
+          "brochure",
+          "application",
+          "requirements",
+          "courseSetting"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-BACHELOR-023:sameProgrammeLinks",
+        "reviewReason": "Related links were inventoried but not fully followed in this collect-only baseline pass."
+      },
+      {
+        "optionType": "fee panel",
+        "label": "fee amount snippets",
+        "governedFields": [
+          "fee"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-BACHELOR-023:feeSnippets",
+        "reviewReason": "Fee-like snippets require exact international full-duration tuition reconciliation."
+      }
+    ],
+    "rawSnapshotPath": "data/imports/ucsi/2026-06-20/official-audit/raw/detail-023-item.html"
+  },
+  {
+    "code": "UCSI-BACHELOR-024",
+    "candidateCode": "UCSI-BACHELOR-024",
+    "nameEnOfficial": "Bachelor Of Arts (Hons) In Branding And Advertising",
+    "detailPageUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-arts-hons-branding-and-advertising",
+    "sourceId": "detail-024-item",
+    "hasOptions": true,
+    "retrievalMethod": "rendered DOM via Playwright",
+    "options": [
+      {
+        "optionType": "same-programme official sublink",
+        "label": "programme related official links",
+        "governedFields": [
+          "brochure",
+          "application",
+          "requirements",
+          "courseSetting"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-BACHELOR-024:sameProgrammeLinks",
+        "reviewReason": "Related links were inventoried but not fully followed in this collect-only baseline pass."
+      },
+      {
+        "optionType": "fee panel",
+        "label": "fee amount snippets",
+        "governedFields": [
+          "fee"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-BACHELOR-024:feeSnippets",
+        "reviewReason": "Fee-like snippets require exact international full-duration tuition reconciliation."
+      }
+    ],
+    "rawSnapshotPath": "data/imports/ucsi/2026-06-20/official-audit/raw/detail-024-item.html"
+  },
+  {
+    "code": "UCSI-BACHELOR-025",
+    "candidateCode": "UCSI-BACHELOR-025",
+    "nameEnOfficial": "Bachelor Of Arts (Hons) In Business Administration",
+    "detailPageUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-arts-hons-business-administration",
+    "sourceId": "detail-025-item",
+    "hasOptions": true,
+    "retrievalMethod": "rendered DOM via Playwright",
+    "options": [
+      {
+        "optionType": "same-programme official sublink",
+        "label": "programme related official links",
+        "governedFields": [
+          "brochure",
+          "application",
+          "requirements",
+          "courseSetting"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-BACHELOR-025:sameProgrammeLinks",
+        "reviewReason": "Related links were inventoried but not fully followed in this collect-only baseline pass."
+      },
+      {
+        "optionType": "fee panel",
+        "label": "fee amount snippets",
+        "governedFields": [
+          "fee"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-BACHELOR-025:feeSnippets",
+        "reviewReason": "Fee-like snippets require exact international full-duration tuition reconciliation."
+      }
+    ],
+    "rawSnapshotPath": "data/imports/ucsi/2026-06-20/official-audit/raw/detail-025-item.html"
+  },
+  {
+    "code": "UCSI-BACHELOR-026",
+    "candidateCode": "UCSI-BACHELOR-026",
+    "nameEnOfficial": "Bachelor Of Arts (Hons) In Marketing",
+    "detailPageUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-arts-hons-marketing",
+    "sourceId": "detail-026-item",
+    "hasOptions": true,
+    "retrievalMethod": "rendered DOM via Playwright",
+    "options": [
+      {
+        "optionType": "same-programme official sublink",
+        "label": "programme related official links",
+        "governedFields": [
+          "brochure",
+          "application",
+          "requirements",
+          "courseSetting"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-BACHELOR-026:sameProgrammeLinks",
+        "reviewReason": "Related links were inventoried but not fully followed in this collect-only baseline pass."
+      },
+      {
+        "optionType": "fee panel",
+        "label": "fee amount snippets",
+        "governedFields": [
+          "fee"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-BACHELOR-026:feeSnippets",
+        "reviewReason": "Fee-like snippets require exact international full-duration tuition reconciliation."
+      }
+    ],
+    "rawSnapshotPath": "data/imports/ucsi/2026-06-20/official-audit/raw/detail-026-item.html"
+  },
+  {
+    "code": "UCSI-BACHELOR-027",
+    "candidateCode": "UCSI-BACHELOR-027",
+    "nameEnOfficial": "Bachelor Of Arts (Hons) Logistics Management",
+    "detailPageUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-arts-hons-logistics-management",
+    "sourceId": "detail-027-item",
+    "hasOptions": true,
+    "retrievalMethod": "rendered DOM via Playwright",
+    "options": [
+      {
+        "optionType": "same-programme official sublink",
+        "label": "programme related official links",
+        "governedFields": [
+          "brochure",
+          "application",
+          "requirements",
+          "courseSetting"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-BACHELOR-027:sameProgrammeLinks",
+        "reviewReason": "Related links were inventoried but not fully followed in this collect-only baseline pass."
+      },
+      {
+        "optionType": "fee panel",
+        "label": "fee amount snippets",
+        "governedFields": [
+          "fee"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-BACHELOR-027:feeSnippets",
+        "reviewReason": "Fee-like snippets require exact international full-duration tuition reconciliation."
+      }
+    ],
+    "rawSnapshotPath": "data/imports/ucsi/2026-06-20/official-audit/raw/detail-027-item.html"
+  },
+  {
+    "code": "UCSI-BACHELOR-028",
+    "candidateCode": "UCSI-BACHELOR-028",
+    "nameEnOfficial": "Bachelor Of Arts (Honours) Supply Chain Operations Management",
+    "detailPageUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-arts-honours-supply-chain-operations-management",
+    "sourceId": "detail-028-item",
+    "hasOptions": true,
+    "retrievalMethod": "rendered DOM via Playwright",
+    "options": [
+      {
+        "optionType": "same-programme official sublink",
+        "label": "programme related official links",
+        "governedFields": [
+          "brochure",
+          "application",
+          "requirements",
+          "courseSetting"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-BACHELOR-028:sameProgrammeLinks",
+        "reviewReason": "Related links were inventoried but not fully followed in this collect-only baseline pass."
+      },
+      {
+        "optionType": "fee panel",
+        "label": "fee amount snippets",
+        "governedFields": [
+          "fee"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-BACHELOR-028:feeSnippets",
+        "reviewReason": "Fee-like snippets require exact international full-duration tuition reconciliation."
+      }
+    ],
+    "rawSnapshotPath": "data/imports/ucsi/2026-06-20/official-audit/raw/detail-028-item.html"
+  },
+  {
+    "code": "UCSI-BACHELOR-029",
+    "candidateCode": "UCSI-BACHELOR-029",
+    "nameEnOfficial": "Bachelor In Human Capital Management (Honours)",
+    "detailPageUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-human-capital-management-honours",
+    "sourceId": "detail-029-item",
+    "hasOptions": true,
+    "retrievalMethod": "rendered DOM via Playwright",
+    "options": [
+      {
+        "optionType": "same-programme official sublink",
+        "label": "programme related official links",
+        "governedFields": [
+          "brochure",
+          "application",
+          "requirements",
+          "courseSetting"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-BACHELOR-029:sameProgrammeLinks",
+        "reviewReason": "Related links were inventoried but not fully followed in this collect-only baseline pass."
+      },
+      {
+        "optionType": "fee panel",
+        "label": "fee amount snippets",
+        "governedFields": [
+          "fee"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-BACHELOR-029:feeSnippets",
+        "reviewReason": "Fee-like snippets require exact international full-duration tuition reconciliation."
+      }
+    ],
+    "rawSnapshotPath": "data/imports/ucsi/2026-06-20/official-audit/raw/detail-029-item.html"
+  },
+  {
+    "code": "UCSI-BACHELOR-030",
+    "candidateCode": "UCSI-BACHELOR-030",
+    "nameEnOfficial": "Bachelor Of Business Analytics (Honours)",
+    "detailPageUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-business-analytics-honours",
+    "sourceId": "detail-030-item",
+    "hasOptions": true,
+    "retrievalMethod": "rendered DOM via Playwright",
+    "options": [
+      {
+        "optionType": "same-programme official sublink",
+        "label": "programme related official links",
+        "governedFields": [
+          "brochure",
+          "application",
+          "requirements",
+          "courseSetting"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-BACHELOR-030:sameProgrammeLinks",
+        "reviewReason": "Related links were inventoried but not fully followed in this collect-only baseline pass."
+      },
+      {
+        "optionType": "fee panel",
+        "label": "fee amount snippets",
+        "governedFields": [
+          "fee"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-BACHELOR-030:feeSnippets",
+        "reviewReason": "Fee-like snippets require exact international full-duration tuition reconciliation."
+      }
+    ],
+    "rawSnapshotPath": "data/imports/ucsi/2026-06-20/official-audit/raw/detail-030-item.html"
+  },
+  {
+    "code": "UCSI-BACHELOR-031",
+    "candidateCode": "UCSI-BACHELOR-031",
+    "nameEnOfficial": "Bachelor Of Financial Economics (Hons)",
+    "detailPageUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-financial-economics-hons",
+    "sourceId": "detail-031-item",
+    "hasOptions": true,
+    "retrievalMethod": "rendered DOM via Playwright",
+    "options": [
+      {
+        "optionType": "same-programme official sublink",
+        "label": "programme related official links",
+        "governedFields": [
+          "brochure",
+          "application",
+          "requirements",
+          "courseSetting"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-BACHELOR-031:sameProgrammeLinks",
+        "reviewReason": "Related links were inventoried but not fully followed in this collect-only baseline pass."
+      },
+      {
+        "optionType": "fee panel",
+        "label": "fee amount snippets",
+        "governedFields": [
+          "fee"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-BACHELOR-031:feeSnippets",
+        "reviewReason": "Fee-like snippets require exact international full-duration tuition reconciliation."
+      }
+    ],
+    "rawSnapshotPath": "data/imports/ucsi/2026-06-20/official-audit/raw/detail-031-item.html"
+  },
+  {
+    "code": "UCSI-BACHELOR-032",
+    "candidateCode": "UCSI-BACHELOR-032",
+    "nameEnOfficial": "Bachelor Of Financial Technology (Honours)",
+    "detailPageUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-financial-technology-honours",
+    "sourceId": "detail-032-item",
+    "hasOptions": true,
+    "retrievalMethod": "rendered DOM via Playwright",
+    "options": [
+      {
+        "optionType": "same-programme official sublink",
+        "label": "programme related official links",
+        "governedFields": [
+          "brochure",
+          "application",
+          "requirements",
+          "courseSetting"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-BACHELOR-032:sameProgrammeLinks",
+        "reviewReason": "Related links were inventoried but not fully followed in this collect-only baseline pass."
+      },
+      {
+        "optionType": "fee panel",
+        "label": "fee amount snippets",
+        "governedFields": [
+          "fee"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-BACHELOR-032:feeSnippets",
+        "reviewReason": "Fee-like snippets require exact international full-duration tuition reconciliation."
+      }
+    ],
+    "rawSnapshotPath": "data/imports/ucsi/2026-06-20/official-audit/raw/detail-032-item.html"
+  },
+  {
+    "code": "UCSI-BACHELOR-033",
+    "candidateCode": "UCSI-BACHELOR-033",
+    "nameEnOfficial": "Bachelor Of International And Sustainable Business (Honours)",
+    "detailPageUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-international-and-sustainable-business-honours",
+    "sourceId": "detail-033-item",
+    "hasOptions": true,
+    "retrievalMethod": "rendered DOM via Playwright",
+    "options": [
+      {
+        "optionType": "same-programme official sublink",
+        "label": "programme related official links",
+        "governedFields": [
+          "brochure",
+          "application",
+          "requirements",
+          "courseSetting"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-BACHELOR-033:sameProgrammeLinks",
+        "reviewReason": "Related links were inventoried but not fully followed in this collect-only baseline pass."
+      },
+      {
+        "optionType": "fee panel",
+        "label": "fee amount snippets",
+        "governedFields": [
+          "fee"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-BACHELOR-033:feeSnippets",
+        "reviewReason": "Fee-like snippets require exact international full-duration tuition reconciliation."
+      }
+    ],
+    "rawSnapshotPath": "data/imports/ucsi/2026-06-20/official-audit/raw/detail-033-item.html"
+  },
+  {
+    "code": "UCSI-BACHELOR-034",
+    "candidateCode": "UCSI-BACHELOR-034",
+    "nameEnOfficial": "Bachelor Of Science (Honours) Finance And Investment",
+    "detailPageUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-science-honours-finance-and-investment",
+    "sourceId": "detail-034-item",
+    "hasOptions": true,
+    "retrievalMethod": "rendered DOM via Playwright",
+    "options": [
+      {
+        "optionType": "same-programme official sublink",
+        "label": "programme related official links",
+        "governedFields": [
+          "brochure",
+          "application",
+          "requirements",
+          "courseSetting"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-BACHELOR-034:sameProgrammeLinks",
+        "reviewReason": "Related links were inventoried but not fully followed in this collect-only baseline pass."
+      },
+      {
+        "optionType": "fee panel",
+        "label": "fee amount snippets",
+        "governedFields": [
+          "fee"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-BACHELOR-034:feeSnippets",
+        "reviewReason": "Fee-like snippets require exact international full-duration tuition reconciliation."
+      }
+    ],
+    "rawSnapshotPath": "data/imports/ucsi/2026-06-20/official-audit/raw/detail-034-item.html"
+  },
+  {
+    "code": "UCSI-PHD-035",
+    "candidateCode": "UCSI-PHD-035",
+    "nameEnOfficial": "Doctor Of Philosophy In Architecture",
+    "detailPageUrl": "https://www.ucsiuniversity.edu.my/programmes/doctor-philosophy-architecture",
+    "sourceId": "detail-035-item",
+    "hasOptions": true,
+    "retrievalMethod": "rendered DOM via Playwright",
+    "options": [
+      {
+        "optionType": "same-programme official sublink",
+        "label": "programme related official links",
+        "governedFields": [
+          "brochure",
+          "application",
+          "requirements",
+          "courseSetting"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-PHD-035:sameProgrammeLinks",
+        "reviewReason": "Related links were inventoried but not fully followed in this collect-only baseline pass."
+      },
+      {
+        "optionType": "fee panel",
+        "label": "fee amount snippets",
+        "governedFields": [
+          "fee"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-PHD-035:feeSnippets",
+        "reviewReason": "Fee-like snippets require exact international full-duration tuition reconciliation."
+      }
+    ],
+    "rawSnapshotPath": "data/imports/ucsi/2026-06-20/official-audit/raw/detail-035-item.html"
+  },
+  {
+    "code": "UCSI-PHD-036",
+    "candidateCode": "UCSI-PHD-036",
+    "nameEnOfficial": "Doctor Of Philosophy (Engineering)",
+    "detailPageUrl": "https://www.ucsiuniversity.edu.my/programmes/doctor-philosophy-engineering",
+    "sourceId": "detail-036-item",
+    "hasOptions": true,
+    "retrievalMethod": "rendered DOM via Playwright",
+    "options": [
+      {
+        "optionType": "same-programme official sublink",
+        "label": "programme related official links",
+        "governedFields": [
+          "brochure",
+          "application",
+          "requirements",
+          "courseSetting"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-PHD-036:sameProgrammeLinks",
+        "reviewReason": "Related links were inventoried but not fully followed in this collect-only baseline pass."
+      },
+      {
+        "optionType": "fee panel",
+        "label": "fee amount snippets",
+        "governedFields": [
+          "fee"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-PHD-036:feeSnippets",
+        "reviewReason": "Fee-like snippets require exact international full-duration tuition reconciliation."
+      }
+    ],
+    "rawSnapshotPath": "data/imports/ucsi/2026-06-20/official-audit/raw/detail-036-item.html"
+  },
+  {
+    "code": "UCSI-PHD-037",
+    "candidateCode": "UCSI-PHD-037",
+    "nameEnOfficial": "Doctor Of Philosophy (Engineering) By Prior Publication",
+    "detailPageUrl": "https://www.ucsiuniversity.edu.my/programmes/doctor-philosophy-engineering-prior-publication",
+    "sourceId": "detail-037-item",
+    "hasOptions": true,
+    "retrievalMethod": "rendered DOM via Playwright",
+    "options": [
+      {
+        "optionType": "same-programme official sublink",
+        "label": "programme related official links",
+        "governedFields": [
+          "brochure",
+          "application",
+          "requirements",
+          "courseSetting"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-PHD-037:sameProgrammeLinks",
+        "reviewReason": "Related links were inventoried but not fully followed in this collect-only baseline pass."
+      },
+      {
+        "optionType": "fee panel",
+        "label": "fee amount snippets",
+        "governedFields": [
+          "fee"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-PHD-037:feeSnippets",
+        "reviewReason": "Fee-like snippets require exact international full-duration tuition reconciliation."
+      }
+    ],
+    "rawSnapshotPath": "data/imports/ucsi/2026-06-20/official-audit/raw/detail-037-item.html"
+  },
+  {
+    "code": "UCSI-PHD-038",
+    "candidateCode": "UCSI-PHD-038",
+    "nameEnOfficial": "Industrial PhD In Engineering",
+    "detailPageUrl": "https://www.ucsiuniversity.edu.my/programmes/industrial-phd-engineering",
+    "sourceId": "detail-038-item",
+    "hasOptions": true,
+    "retrievalMethod": "rendered DOM via Playwright",
+    "options": [
+      {
+        "optionType": "same-programme official sublink",
+        "label": "programme related official links",
+        "governedFields": [
+          "brochure",
+          "application",
+          "requirements",
+          "courseSetting"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-PHD-038:sameProgrammeLinks",
+        "reviewReason": "Related links were inventoried but not fully followed in this collect-only baseline pass."
+      },
+      {
+        "optionType": "fee panel",
+        "label": "fee amount snippets",
+        "governedFields": [
+          "fee"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-PHD-038:feeSnippets",
+        "reviewReason": "Fee-like snippets require exact international full-duration tuition reconciliation."
+      }
+    ],
+    "rawSnapshotPath": "data/imports/ucsi/2026-06-20/official-audit/raw/detail-038-item.html"
+  },
+  {
+    "code": "UCSI-MASTER-039",
+    "candidateCode": "UCSI-MASTER-039",
+    "nameEnOfficial": "Master In Engineering (Smart Engineering Management)",
+    "detailPageUrl": "https://www.ucsiuniversity.edu.my/programmes/master-engineering-smart-engineering-management",
+    "sourceId": "detail-039-item",
+    "hasOptions": true,
+    "retrievalMethod": "rendered DOM via Playwright",
+    "options": [
+      {
+        "optionType": "same-programme official sublink",
+        "label": "programme related official links",
+        "governedFields": [
+          "brochure",
+          "application",
+          "requirements",
+          "courseSetting"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-MASTER-039:sameProgrammeLinks",
+        "reviewReason": "Related links were inventoried but not fully followed in this collect-only baseline pass."
+      },
+      {
+        "optionType": "fee panel",
+        "label": "fee amount snippets",
+        "governedFields": [
+          "fee"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-MASTER-039:feeSnippets",
+        "reviewReason": "Fee-like snippets require exact international full-duration tuition reconciliation."
+      }
+    ],
+    "rawSnapshotPath": "data/imports/ucsi/2026-06-20/official-audit/raw/detail-039-item.html"
+  },
+  {
+    "code": "UCSI-MASTER-040",
+    "candidateCode": "UCSI-MASTER-040",
+    "nameEnOfficial": "Master Of Architecture",
+    "detailPageUrl": "https://www.ucsiuniversity.edu.my/programmes/master-architecture",
+    "sourceId": "detail-040-item",
+    "hasOptions": true,
+    "retrievalMethod": "rendered DOM via Playwright",
+    "options": [
+      {
+        "optionType": "same-programme official sublink",
+        "label": "programme related official links",
+        "governedFields": [
+          "brochure",
+          "application",
+          "requirements",
+          "courseSetting"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-MASTER-040:sameProgrammeLinks",
+        "reviewReason": "Related links were inventoried but not fully followed in this collect-only baseline pass."
+      },
+      {
+        "optionType": "fee panel",
+        "label": "fee amount snippets",
+        "governedFields": [
+          "fee"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-MASTER-040:feeSnippets",
+        "reviewReason": "Fee-like snippets require exact international full-duration tuition reconciliation."
+      }
+    ],
+    "rawSnapshotPath": "data/imports/ucsi/2026-06-20/official-audit/raw/detail-040-item.html"
+  },
+  {
+    "code": "UCSI-MASTER-041",
+    "candidateCode": "UCSI-MASTER-041",
+    "nameEnOfficial": "Master Of Petroleum Engineering",
+    "detailPageUrl": "https://www.ucsiuniversity.edu.my/programmes/master-petroleum-engineering",
+    "sourceId": "detail-041-item",
+    "hasOptions": true,
+    "retrievalMethod": "rendered DOM via Playwright",
+    "options": [
+      {
+        "optionType": "same-programme official sublink",
+        "label": "programme related official links",
+        "governedFields": [
+          "brochure",
+          "application",
+          "requirements",
+          "courseSetting"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-MASTER-041:sameProgrammeLinks",
+        "reviewReason": "Related links were inventoried but not fully followed in this collect-only baseline pass."
+      },
+      {
+        "optionType": "fee panel",
+        "label": "fee amount snippets",
+        "governedFields": [
+          "fee"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-MASTER-041:feeSnippets",
+        "reviewReason": "Fee-like snippets require exact international full-duration tuition reconciliation."
+      }
+    ],
+    "rawSnapshotPath": "data/imports/ucsi/2026-06-20/official-audit/raw/detail-041-item.html"
+  },
+  {
+    "code": "UCSI-MASTER-042",
+    "candidateCode": "UCSI-MASTER-042",
+    "nameEnOfficial": "Master Of Philosophy In Built Environment",
+    "detailPageUrl": "https://www.ucsiuniversity.edu.my/programmes/master-philosophy-built-environment",
+    "sourceId": "detail-042-item",
+    "hasOptions": true,
+    "retrievalMethod": "rendered DOM via Playwright",
+    "options": [
+      {
+        "optionType": "same-programme official sublink",
+        "label": "programme related official links",
+        "governedFields": [
+          "brochure",
+          "application",
+          "requirements",
+          "courseSetting"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-MASTER-042:sameProgrammeLinks",
+        "reviewReason": "Related links were inventoried but not fully followed in this collect-only baseline pass."
+      },
+      {
+        "optionType": "fee panel",
+        "label": "fee amount snippets",
+        "governedFields": [
+          "fee"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-MASTER-042:feeSnippets",
+        "reviewReason": "Fee-like snippets require exact international full-duration tuition reconciliation."
+      }
+    ],
+    "rawSnapshotPath": "data/imports/ucsi/2026-06-20/official-audit/raw/detail-042-item.html"
+  },
+  {
+    "code": "UCSI-MASTER-043",
+    "candidateCode": "UCSI-MASTER-043",
+    "nameEnOfficial": "Master Of Philosophy In Engineering",
+    "detailPageUrl": "https://www.ucsiuniversity.edu.my/programmes/master-philosophy-engineering",
+    "sourceId": "detail-043-item",
+    "hasOptions": true,
+    "retrievalMethod": "rendered DOM via Playwright",
+    "options": [
+      {
+        "optionType": "same-programme official sublink",
+        "label": "programme related official links",
+        "governedFields": [
+          "brochure",
+          "application",
+          "requirements",
+          "courseSetting"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-MASTER-043:sameProgrammeLinks",
+        "reviewReason": "Related links were inventoried but not fully followed in this collect-only baseline pass."
+      },
+      {
+        "optionType": "fee panel",
+        "label": "fee amount snippets",
+        "governedFields": [
+          "fee"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-MASTER-043:feeSnippets",
+        "reviewReason": "Fee-like snippets require exact international full-duration tuition reconciliation."
+      }
+    ],
+    "rawSnapshotPath": "data/imports/ucsi/2026-06-20/official-audit/raw/detail-043-item.html"
+  },
+  {
+    "code": "UCSI-BACHELOR-044",
+    "candidateCode": "UCSI-BACHELOR-044",
+    "nameEnOfficial": "Bachelor Of Arts (Hons) In Interior Architecture",
+    "detailPageUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-arts-hons-interior-architecture",
+    "sourceId": "detail-044-item",
+    "hasOptions": true,
+    "retrievalMethod": "rendered DOM via Playwright",
+    "options": [
+      {
+        "optionType": "same-programme official sublink",
+        "label": "programme related official links",
+        "governedFields": [
+          "brochure",
+          "application",
+          "requirements",
+          "courseSetting"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-BACHELOR-044:sameProgrammeLinks",
+        "reviewReason": "Related links were inventoried but not fully followed in this collect-only baseline pass."
+      },
+      {
+        "optionType": "fee panel",
+        "label": "fee amount snippets",
+        "governedFields": [
+          "fee"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-BACHELOR-044:feeSnippets",
+        "reviewReason": "Fee-like snippets require exact international full-duration tuition reconciliation."
+      }
+    ],
+    "rawSnapshotPath": "data/imports/ucsi/2026-06-20/official-audit/raw/detail-044-item.html"
+  },
+  {
+    "code": "UCSI-BACHELOR-045",
+    "candidateCode": "UCSI-BACHELOR-045",
+    "nameEnOfficial": "Bachelor Of Chemical Engineering With Honours",
+    "detailPageUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-chemical-engineering-honours",
+    "sourceId": "detail-045-item",
+    "hasOptions": true,
+    "retrievalMethod": "rendered DOM via Playwright",
+    "options": [
+      {
+        "optionType": "same-programme official sublink",
+        "label": "programme related official links",
+        "governedFields": [
+          "brochure",
+          "application",
+          "requirements",
+          "courseSetting"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-BACHELOR-045:sameProgrammeLinks",
+        "reviewReason": "Related links were inventoried but not fully followed in this collect-only baseline pass."
+      },
+      {
+        "optionType": "fee panel",
+        "label": "fee amount snippets",
+        "governedFields": [
+          "fee"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-BACHELOR-045:feeSnippets",
+        "reviewReason": "Fee-like snippets require exact international full-duration tuition reconciliation."
+      }
+    ],
+    "rawSnapshotPath": "data/imports/ucsi/2026-06-20/official-audit/raw/detail-045-item.html"
+  },
+  {
+    "code": "UCSI-BACHELOR-046",
+    "candidateCode": "UCSI-BACHELOR-046",
+    "nameEnOfficial": "Bachelor Of Civil Engineering With Honours",
+    "detailPageUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-civil-engineering-honours",
+    "sourceId": "detail-046-item",
+    "hasOptions": true,
+    "retrievalMethod": "rendered DOM via Playwright",
+    "options": [
+      {
+        "optionType": "same-programme official sublink",
+        "label": "programme related official links",
+        "governedFields": [
+          "brochure",
+          "application",
+          "requirements",
+          "courseSetting"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-BACHELOR-046:sameProgrammeLinks",
+        "reviewReason": "Related links were inventoried but not fully followed in this collect-only baseline pass."
+      },
+      {
+        "optionType": "fee panel",
+        "label": "fee amount snippets",
+        "governedFields": [
+          "fee"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-BACHELOR-046:feeSnippets",
+        "reviewReason": "Fee-like snippets require exact international full-duration tuition reconciliation."
+      }
+    ],
+    "rawSnapshotPath": "data/imports/ucsi/2026-06-20/official-audit/raw/detail-046-item.html"
+  },
+  {
+    "code": "UCSI-BACHELOR-047",
+    "candidateCode": "UCSI-BACHELOR-047",
+    "nameEnOfficial": "Bachelor Of Computer Engineering (Artificial Intelligence) With Honours",
+    "detailPageUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-computer-engineering-artificial-intelligence-honours",
+    "sourceId": "detail-047-item",
+    "hasOptions": true,
+    "retrievalMethod": "rendered DOM via Playwright",
+    "options": [
+      {
+        "optionType": "same-programme official sublink",
+        "label": "programme related official links",
+        "governedFields": [
+          "brochure",
+          "application",
+          "requirements",
+          "courseSetting"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-BACHELOR-047:sameProgrammeLinks",
+        "reviewReason": "Related links were inventoried but not fully followed in this collect-only baseline pass."
+      },
+      {
+        "optionType": "fee panel",
+        "label": "fee amount snippets",
+        "governedFields": [
+          "fee"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-BACHELOR-047:feeSnippets",
+        "reviewReason": "Fee-like snippets require exact international full-duration tuition reconciliation."
+      }
+    ],
+    "rawSnapshotPath": "data/imports/ucsi/2026-06-20/official-audit/raw/detail-047-item.html"
+  },
+  {
+    "code": "UCSI-BACHELOR-048",
+    "candidateCode": "UCSI-BACHELOR-048",
+    "nameEnOfficial": "Bachelor Of Digital Mechanical Technology With Honours",
+    "detailPageUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-digital-mechanical-technology-honours",
+    "sourceId": "detail-048-item",
+    "hasOptions": true,
+    "retrievalMethod": "rendered DOM via Playwright",
+    "options": [
+      {
+        "optionType": "same-programme official sublink",
+        "label": "programme related official links",
+        "governedFields": [
+          "brochure",
+          "application",
+          "requirements",
+          "courseSetting"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-BACHELOR-048:sameProgrammeLinks",
+        "reviewReason": "Related links were inventoried but not fully followed in this collect-only baseline pass."
+      },
+      {
+        "optionType": "fee panel",
+        "label": "fee amount snippets",
+        "governedFields": [
+          "fee"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-BACHELOR-048:feeSnippets",
+        "reviewReason": "Fee-like snippets require exact international full-duration tuition reconciliation."
+      }
+    ],
+    "rawSnapshotPath": "data/imports/ucsi/2026-06-20/official-audit/raw/detail-048-item.html"
+  },
+  {
+    "code": "UCSI-BACHELOR-049",
+    "candidateCode": "UCSI-BACHELOR-049",
+    "nameEnOfficial": "Bachelor Of Electrical And Electronics Engineering With Honours",
+    "detailPageUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-electrical-and-electronics-engineering-honours",
+    "sourceId": "detail-049-item",
+    "hasOptions": true,
+    "retrievalMethod": "rendered DOM via Playwright",
+    "options": [
+      {
+        "optionType": "same-programme official sublink",
+        "label": "programme related official links",
+        "governedFields": [
+          "brochure",
+          "application",
+          "requirements",
+          "courseSetting"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-BACHELOR-049:sameProgrammeLinks",
+        "reviewReason": "Related links were inventoried but not fully followed in this collect-only baseline pass."
+      },
+      {
+        "optionType": "fee panel",
+        "label": "fee amount snippets",
+        "governedFields": [
+          "fee"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-BACHELOR-049:feeSnippets",
+        "reviewReason": "Fee-like snippets require exact international full-duration tuition reconciliation."
+      }
+    ],
+    "rawSnapshotPath": "data/imports/ucsi/2026-06-20/official-audit/raw/detail-049-item.html"
+  },
+  {
+    "code": "UCSI-BACHELOR-050",
+    "candidateCode": "UCSI-BACHELOR-050",
+    "nameEnOfficial": "Bachelor Of Energy Engineering With Honours",
+    "detailPageUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-energy-engineering-honours",
+    "sourceId": "detail-050-item",
+    "hasOptions": true,
+    "retrievalMethod": "rendered DOM via Playwright",
+    "options": [
+      {
+        "optionType": "same-programme official sublink",
+        "label": "programme related official links",
+        "governedFields": [
+          "brochure",
+          "application",
+          "requirements",
+          "courseSetting"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-BACHELOR-050:sameProgrammeLinks",
+        "reviewReason": "Related links were inventoried but not fully followed in this collect-only baseline pass."
+      },
+      {
+        "optionType": "fee panel",
+        "label": "fee amount snippets",
+        "governedFields": [
+          "fee"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-BACHELOR-050:feeSnippets",
+        "reviewReason": "Fee-like snippets require exact international full-duration tuition reconciliation."
+      }
+    ],
+    "rawSnapshotPath": "data/imports/ucsi/2026-06-20/official-audit/raw/detail-050-item.html"
+  },
+  {
+    "code": "UCSI-BACHELOR-051",
+    "candidateCode": "UCSI-BACHELOR-051",
+    "nameEnOfficial": "Bachelor Of Mechanical Engineering With Honours",
+    "detailPageUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-mechanical-engineering-honours",
+    "sourceId": "detail-051-item",
+    "hasOptions": true,
+    "retrievalMethod": "rendered DOM via Playwright",
+    "options": [
+      {
+        "optionType": "same-programme official sublink",
+        "label": "programme related official links",
+        "governedFields": [
+          "brochure",
+          "application",
+          "requirements",
+          "courseSetting"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-BACHELOR-051:sameProgrammeLinks",
+        "reviewReason": "Related links were inventoried but not fully followed in this collect-only baseline pass."
+      },
+      {
+        "optionType": "fee panel",
+        "label": "fee amount snippets",
+        "governedFields": [
+          "fee"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-BACHELOR-051:feeSnippets",
+        "reviewReason": "Fee-like snippets require exact international full-duration tuition reconciliation."
+      }
+    ],
+    "rawSnapshotPath": "data/imports/ucsi/2026-06-20/official-audit/raw/detail-051-item.html"
+  },
+  {
+    "code": "UCSI-BACHELOR-052",
+    "candidateCode": "UCSI-BACHELOR-052",
+    "nameEnOfficial": "Bachelor Of Mechatronics Engineering With Honours",
+    "detailPageUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-mechatronics-engineering-honours",
+    "sourceId": "detail-052-item",
+    "hasOptions": true,
+    "retrievalMethod": "rendered DOM via Playwright",
+    "options": [
+      {
+        "optionType": "same-programme official sublink",
+        "label": "programme related official links",
+        "governedFields": [
+          "brochure",
+          "application",
+          "requirements",
+          "courseSetting"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-BACHELOR-052:sameProgrammeLinks",
+        "reviewReason": "Related links were inventoried but not fully followed in this collect-only baseline pass."
+      },
+      {
+        "optionType": "fee panel",
+        "label": "fee amount snippets",
+        "governedFields": [
+          "fee"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-BACHELOR-052:feeSnippets",
+        "reviewReason": "Fee-like snippets require exact international full-duration tuition reconciliation."
+      }
+    ],
+    "rawSnapshotPath": "data/imports/ucsi/2026-06-20/official-audit/raw/detail-052-item.html"
+  },
+  {
+    "code": "UCSI-BACHELOR-053",
+    "candidateCode": "UCSI-BACHELOR-053",
+    "nameEnOfficial": "Bachelor Of Microelectronic Technology With Honours",
+    "detailPageUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-microelectronic-technology-honours",
+    "sourceId": "detail-053-item",
+    "hasOptions": true,
+    "retrievalMethod": "rendered DOM via Playwright",
+    "options": [
+      {
+        "optionType": "same-programme official sublink",
+        "label": "programme related official links",
+        "governedFields": [
+          "brochure",
+          "application",
+          "requirements",
+          "courseSetting"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-BACHELOR-053:sameProgrammeLinks",
+        "reviewReason": "Related links were inventoried but not fully followed in this collect-only baseline pass."
+      },
+      {
+        "optionType": "fee panel",
+        "label": "fee amount snippets",
+        "governedFields": [
+          "fee"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-BACHELOR-053:feeSnippets",
+        "reviewReason": "Fee-like snippets require exact international full-duration tuition reconciliation."
+      }
+    ],
+    "rawSnapshotPath": "data/imports/ucsi/2026-06-20/official-audit/raw/detail-053-item.html"
+  },
+  {
+    "code": "UCSI-BACHELOR-054",
+    "candidateCode": "UCSI-BACHELOR-054",
+    "nameEnOfficial": "Bachelor Of Petroleum Engineering With Honours",
+    "detailPageUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-petroleum-engineering-honours",
+    "sourceId": "detail-054-item",
+    "hasOptions": true,
+    "retrievalMethod": "rendered DOM via Playwright",
+    "options": [
+      {
+        "optionType": "same-programme official sublink",
+        "label": "programme related official links",
+        "governedFields": [
+          "brochure",
+          "application",
+          "requirements",
+          "courseSetting"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-BACHELOR-054:sameProgrammeLinks",
+        "reviewReason": "Related links were inventoried but not fully followed in this collect-only baseline pass."
+      },
+      {
+        "optionType": "fee panel",
+        "label": "fee amount snippets",
+        "governedFields": [
+          "fee"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-BACHELOR-054:feeSnippets",
+        "reviewReason": "Fee-like snippets require exact international full-duration tuition reconciliation."
+      }
+    ],
+    "rawSnapshotPath": "data/imports/ucsi/2026-06-20/official-audit/raw/detail-054-item.html"
+  },
+  {
+    "code": "UCSI-BACHELOR-055",
+    "candidateCode": "UCSI-BACHELOR-055",
+    "nameEnOfficial": "Bachelor Of Quantity Surveying (Hons)",
+    "detailPageUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-quantity-surveying-hons",
+    "sourceId": "detail-055-item",
+    "hasOptions": true,
+    "retrievalMethod": "rendered DOM via Playwright",
+    "options": [
+      {
+        "optionType": "same-programme official sublink",
+        "label": "programme related official links",
+        "governedFields": [
+          "brochure",
+          "application",
+          "requirements",
+          "courseSetting"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-BACHELOR-055:sameProgrammeLinks",
+        "reviewReason": "Related links were inventoried but not fully followed in this collect-only baseline pass."
+      },
+      {
+        "optionType": "fee panel",
+        "label": "fee amount snippets",
+        "governedFields": [
+          "fee"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-BACHELOR-055:feeSnippets",
+        "reviewReason": "Fee-like snippets require exact international full-duration tuition reconciliation."
+      }
+    ],
+    "rawSnapshotPath": "data/imports/ucsi/2026-06-20/official-audit/raw/detail-055-item.html"
+  },
+  {
+    "code": "UCSI-BACHELOR-056",
+    "candidateCode": "UCSI-BACHELOR-056",
+    "nameEnOfficial": "Bachelor Of Science (Hons) In Architecture",
+    "detailPageUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-science-hons-architecture",
+    "sourceId": "detail-056-item",
+    "hasOptions": true,
+    "retrievalMethod": "rendered DOM via Playwright",
+    "options": [
+      {
+        "optionType": "same-programme official sublink",
+        "label": "programme related official links",
+        "governedFields": [
+          "brochure",
+          "application",
+          "requirements",
+          "courseSetting"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-BACHELOR-056:sameProgrammeLinks",
+        "reviewReason": "Related links were inventoried but not fully followed in this collect-only baseline pass."
+      },
+      {
+        "optionType": "fee panel",
+        "label": "fee amount snippets",
+        "governedFields": [
+          "fee"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-BACHELOR-056:feeSnippets",
+        "reviewReason": "Fee-like snippets require exact international full-duration tuition reconciliation."
+      }
+    ],
+    "rawSnapshotPath": "data/imports/ucsi/2026-06-20/official-audit/raw/detail-056-item.html"
+  },
+  {
+    "code": "UCSI-MASTER-057",
+    "candidateCode": "UCSI-MASTER-057",
+    "nameEnOfficial": "Master Of Sustainable Built Environment",
+    "detailPageUrl": "https://www.ucsiuniversity.edu.my/programmes/master-sustainable-built-environment",
+    "sourceId": "detail-057-item",
+    "hasOptions": true,
+    "retrievalMethod": "rendered DOM via Playwright",
+    "options": [
+      {
+        "optionType": "same-programme official sublink",
+        "label": "programme related official links",
+        "governedFields": [
+          "brochure",
+          "application",
+          "requirements",
+          "courseSetting"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-MASTER-057:sameProgrammeLinks",
+        "reviewReason": "Related links were inventoried but not fully followed in this collect-only baseline pass."
+      },
+      {
+        "optionType": "fee panel",
+        "label": "fee amount snippets",
+        "governedFields": [
+          "fee"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-MASTER-057:feeSnippets",
+        "reviewReason": "Fee-like snippets require exact international full-duration tuition reconciliation."
+      }
+    ],
+    "rawSnapshotPath": "data/imports/ucsi/2026-06-20/official-audit/raw/detail-057-item.html"
+  },
+  {
+    "code": "UCSI-MASTER-058",
+    "candidateCode": "UCSI-MASTER-058",
+    "nameEnOfficial": "Master In Engineering (Applied Artificial Intelligence)",
+    "detailPageUrl": "https://www.ucsiuniversity.edu.my/programmes/master-engineering-applied-artificial-intelligence",
+    "sourceId": "detail-058-item",
+    "hasOptions": true,
+    "retrievalMethod": "rendered DOM via Playwright",
+    "options": [
+      {
+        "optionType": "same-programme official sublink",
+        "label": "programme related official links",
+        "governedFields": [
+          "brochure",
+          "application",
+          "requirements",
+          "courseSetting"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-MASTER-058:sameProgrammeLinks",
+        "reviewReason": "Related links were inventoried but not fully followed in this collect-only baseline pass."
+      },
+      {
+        "optionType": "fee panel",
+        "label": "fee amount snippets",
+        "governedFields": [
+          "fee"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-MASTER-058:feeSnippets",
+        "reviewReason": "Fee-like snippets require exact international full-duration tuition reconciliation."
+      }
+    ],
+    "rawSnapshotPath": "data/imports/ucsi/2026-06-20/official-audit/raw/detail-058-item.html"
+  },
+  {
+    "code": "UCSI-PHD-059",
+    "candidateCode": "UCSI-PHD-059",
+    "nameEnOfficial": "Doctor Of Philosophy (Hospitality And Tourism)",
+    "detailPageUrl": "https://www.ucsiuniversity.edu.my/programmes/doctor-philosophy-hospitality-and-tourism",
+    "sourceId": "detail-059-item",
+    "hasOptions": true,
+    "retrievalMethod": "rendered DOM via Playwright",
+    "options": [
+      {
+        "optionType": "same-programme official sublink",
+        "label": "programme related official links",
+        "governedFields": [
+          "brochure",
+          "application",
+          "requirements",
+          "courseSetting"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-PHD-059:sameProgrammeLinks",
+        "reviewReason": "Related links were inventoried but not fully followed in this collect-only baseline pass."
+      },
+      {
+        "optionType": "fee panel",
+        "label": "fee amount snippets",
+        "governedFields": [
+          "fee"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-PHD-059:feeSnippets",
+        "reviewReason": "Fee-like snippets require exact international full-duration tuition reconciliation."
+      }
+    ],
+    "rawSnapshotPath": "data/imports/ucsi/2026-06-20/official-audit/raw/detail-059-item.html"
+  },
+  {
+    "code": "UCSI-MASTER-060",
+    "candidateCode": "UCSI-MASTER-060",
+    "nameEnOfficial": "Master In International Hospitality Management",
+    "detailPageUrl": "https://www.ucsiuniversity.edu.my/programmes/master-international-hospitality-management",
+    "sourceId": "detail-060-item",
+    "hasOptions": true,
+    "retrievalMethod": "rendered DOM via Playwright",
+    "options": [
+      {
+        "optionType": "same-programme official sublink",
+        "label": "programme related official links",
+        "governedFields": [
+          "brochure",
+          "application",
+          "requirements",
+          "courseSetting"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-MASTER-060:sameProgrammeLinks",
+        "reviewReason": "Related links were inventoried but not fully followed in this collect-only baseline pass."
+      },
+      {
+        "optionType": "fee panel",
+        "label": "fee amount snippets",
+        "governedFields": [
+          "fee"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-MASTER-060:feeSnippets",
+        "reviewReason": "Fee-like snippets require exact international full-duration tuition reconciliation."
+      }
+    ],
+    "rawSnapshotPath": "data/imports/ucsi/2026-06-20/official-audit/raw/detail-060-item.html"
+  },
+  {
+    "code": "UCSI-MASTER-061",
+    "candidateCode": "UCSI-MASTER-061",
+    "nameEnOfficial": "Master Of Science In Gastronomy",
+    "detailPageUrl": "https://www.ucsiuniversity.edu.my/programmes/master-science-gastronomy",
+    "sourceId": "detail-061-item",
+    "hasOptions": true,
+    "retrievalMethod": "rendered DOM via Playwright",
+    "options": [
+      {
+        "optionType": "same-programme official sublink",
+        "label": "programme related official links",
+        "governedFields": [
+          "brochure",
+          "application",
+          "requirements",
+          "courseSetting"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-MASTER-061:sameProgrammeLinks",
+        "reviewReason": "Related links were inventoried but not fully followed in this collect-only baseline pass."
+      },
+      {
+        "optionType": "fee panel",
+        "label": "fee amount snippets",
+        "governedFields": [
+          "fee"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-MASTER-061:feeSnippets",
+        "reviewReason": "Fee-like snippets require exact international full-duration tuition reconciliation."
+      }
+    ],
+    "rawSnapshotPath": "data/imports/ucsi/2026-06-20/official-audit/raw/detail-061-item.html"
+  },
+  {
+    "code": "UCSI-BACHELOR-062",
+    "candidateCode": "UCSI-BACHELOR-062",
+    "nameEnOfficial": "Bachelor Of Arts (Honours) In Culinary Management",
+    "detailPageUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-arts-honours-culinary-management",
+    "sourceId": "detail-062-item",
+    "hasOptions": true,
+    "retrievalMethod": "rendered DOM via Playwright",
+    "options": [
+      {
+        "optionType": "same-programme official sublink",
+        "label": "programme related official links",
+        "governedFields": [
+          "brochure",
+          "application",
+          "requirements",
+          "courseSetting"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-BACHELOR-062:sameProgrammeLinks",
+        "reviewReason": "Related links were inventoried but not fully followed in this collect-only baseline pass."
+      },
+      {
+        "optionType": "fee panel",
+        "label": "fee amount snippets",
+        "governedFields": [
+          "fee"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-BACHELOR-062:feeSnippets",
+        "reviewReason": "Fee-like snippets require exact international full-duration tuition reconciliation."
+      }
+    ],
+    "rawSnapshotPath": "data/imports/ucsi/2026-06-20/official-audit/raw/detail-062-item.html"
+  },
+  {
+    "code": "UCSI-BACHELOR-063",
+    "candidateCode": "UCSI-BACHELOR-063",
+    "nameEnOfficial": "Bachelor Of Arts (Honours) In Global Sustainable Tourism",
+    "detailPageUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-arts-honours-global-sustainable-tourism",
+    "sourceId": "detail-063-item",
+    "hasOptions": true,
+    "retrievalMethod": "rendered DOM via Playwright",
+    "options": [
+      {
+        "optionType": "same-programme official sublink",
+        "label": "programme related official links",
+        "governedFields": [
+          "brochure",
+          "application",
+          "requirements",
+          "courseSetting"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-BACHELOR-063:sameProgrammeLinks",
+        "reviewReason": "Related links were inventoried but not fully followed in this collect-only baseline pass."
+      },
+      {
+        "optionType": "fee panel",
+        "label": "fee amount snippets",
+        "governedFields": [
+          "fee"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-BACHELOR-063:feeSnippets",
+        "reviewReason": "Fee-like snippets require exact international full-duration tuition reconciliation."
+      }
+    ],
+    "rawSnapshotPath": "data/imports/ucsi/2026-06-20/official-audit/raw/detail-063-item.html"
+  },
+  {
+    "code": "UCSI-BACHELOR-064",
+    "candidateCode": "UCSI-BACHELOR-064",
+    "nameEnOfficial": "Bachelor Of Hospitality Administration",
+    "detailPageUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-hospitality-administration",
+    "sourceId": "detail-064-item",
+    "hasOptions": true,
+    "retrievalMethod": "rendered DOM via Playwright",
+    "options": [
+      {
+        "optionType": "same-programme official sublink",
+        "label": "programme related official links",
+        "governedFields": [
+          "brochure",
+          "application",
+          "requirements",
+          "courseSetting"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-BACHELOR-064:sameProgrammeLinks",
+        "reviewReason": "Related links were inventoried but not fully followed in this collect-only baseline pass."
+      },
+      {
+        "optionType": "fee panel",
+        "label": "fee amount snippets",
+        "governedFields": [
+          "fee"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-BACHELOR-064:feeSnippets",
+        "reviewReason": "Fee-like snippets require exact international full-duration tuition reconciliation."
+      }
+    ],
+    "rawSnapshotPath": "data/imports/ucsi/2026-06-20/official-audit/raw/detail-064-item.html"
+  },
+  {
+    "code": "UCSI-MASTER-065",
+    "candidateCode": "UCSI-MASTER-065",
+    "nameEnOfficial": "MSc (Healthy Aging, Medical Aesthetic And Regenerative Medicine)",
+    "detailPageUrl": "https://www.ucsiuniversity.edu.my/programmes/msc-healthy-aging-medical-aesthetic-and-regenerative-medicine",
+    "sourceId": "detail-065-item",
+    "hasOptions": true,
+    "retrievalMethod": "rendered DOM via Playwright",
+    "options": [
+      {
+        "optionType": "same-programme official sublink",
+        "label": "programme related official links",
+        "governedFields": [
+          "brochure",
+          "application",
+          "requirements",
+          "courseSetting"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-MASTER-065:sameProgrammeLinks",
+        "reviewReason": "Related links were inventoried but not fully followed in this collect-only baseline pass."
+      },
+      {
+        "optionType": "fee panel",
+        "label": "fee amount snippets",
+        "governedFields": [
+          "fee"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-MASTER-065:feeSnippets",
+        "reviewReason": "Fee-like snippets require exact international full-duration tuition reconciliation."
+      }
+    ],
+    "rawSnapshotPath": "data/imports/ucsi/2026-06-20/official-audit/raw/detail-065-item.html"
+  },
+  {
+    "code": "UCSI-BACHELOR-066",
+    "candidateCode": "UCSI-BACHELOR-066",
+    "nameEnOfficial": "Bachelor Of Optometry (Hons)",
+    "detailPageUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-optometry-hons",
+    "sourceId": "detail-066-item",
+    "hasOptions": true,
+    "retrievalMethod": "rendered DOM via Playwright",
+    "options": [
+      {
+        "optionType": "same-programme official sublink",
+        "label": "programme related official links",
+        "governedFields": [
+          "brochure",
+          "application",
+          "requirements",
+          "courseSetting"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-BACHELOR-066:sameProgrammeLinks",
+        "reviewReason": "Related links were inventoried but not fully followed in this collect-only baseline pass."
+      },
+      {
+        "optionType": "fee panel",
+        "label": "fee amount snippets",
+        "governedFields": [
+          "fee"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-BACHELOR-066:feeSnippets",
+        "reviewReason": "Fee-like snippets require exact international full-duration tuition reconciliation."
+      }
+    ],
+    "rawSnapshotPath": "data/imports/ucsi/2026-06-20/official-audit/raw/detail-066-item.html"
+  },
+  {
+    "code": "UCSI-PHD-067",
+    "candidateCode": "UCSI-PHD-067",
+    "nameEnOfficial": "Doctor Of Philosophy (Pharmaceutical Sciences)",
+    "detailPageUrl": "https://www.ucsiuniversity.edu.my/programmes/doctor-philosophy-pharmaceutical-sciences",
+    "sourceId": "detail-067-item",
+    "hasOptions": true,
+    "retrievalMethod": "rendered DOM via Playwright",
+    "options": [
+      {
+        "optionType": "same-programme official sublink",
+        "label": "programme related official links",
+        "governedFields": [
+          "brochure",
+          "application",
+          "requirements",
+          "courseSetting"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-PHD-067:sameProgrammeLinks",
+        "reviewReason": "Related links were inventoried but not fully followed in this collect-only baseline pass."
+      },
+      {
+        "optionType": "fee panel",
+        "label": "fee amount snippets",
+        "governedFields": [
+          "fee"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-PHD-067:feeSnippets",
+        "reviewReason": "Fee-like snippets require exact international full-duration tuition reconciliation."
+      }
+    ],
+    "rawSnapshotPath": "data/imports/ucsi/2026-06-20/official-audit/raw/detail-067-item.html"
+  },
+  {
+    "code": "UCSI-MASTER-068",
+    "candidateCode": "UCSI-MASTER-068",
+    "nameEnOfficial": "Master Of Clinical Pharmacy Practice",
+    "detailPageUrl": "https://www.ucsiuniversity.edu.my/programmes/master-clinical-pharmacy-practice",
+    "sourceId": "detail-068-item",
+    "hasOptions": true,
+    "retrievalMethod": "rendered DOM via Playwright",
+    "options": [
+      {
+        "optionType": "same-programme official sublink",
+        "label": "programme related official links",
+        "governedFields": [
+          "brochure",
+          "application",
+          "requirements",
+          "courseSetting"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-MASTER-068:sameProgrammeLinks",
+        "reviewReason": "Related links were inventoried but not fully followed in this collect-only baseline pass."
+      },
+      {
+        "optionType": "fee panel",
+        "label": "fee amount snippets",
+        "governedFields": [
+          "fee"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-MASTER-068:feeSnippets",
+        "reviewReason": "Fee-like snippets require exact international full-duration tuition reconciliation."
+      }
+    ],
+    "rawSnapshotPath": "data/imports/ucsi/2026-06-20/official-audit/raw/detail-068-item.html"
+  },
+  {
+    "code": "UCSI-MASTER-069",
+    "candidateCode": "UCSI-MASTER-069",
+    "nameEnOfficial": "Master Of Science (Pharmaceutical Sciences)",
+    "detailPageUrl": "https://www.ucsiuniversity.edu.my/programmes/master-science-pharmaceutical-sciences",
+    "sourceId": "detail-069-item",
+    "hasOptions": true,
+    "retrievalMethod": "rendered DOM via Playwright",
+    "options": [
+      {
+        "optionType": "same-programme official sublink",
+        "label": "programme related official links",
+        "governedFields": [
+          "brochure",
+          "application",
+          "requirements",
+          "courseSetting"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-MASTER-069:sameProgrammeLinks",
+        "reviewReason": "Related links were inventoried but not fully followed in this collect-only baseline pass."
+      },
+      {
+        "optionType": "fee panel",
+        "label": "fee amount snippets",
+        "governedFields": [
+          "fee"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-MASTER-069:feeSnippets",
+        "reviewReason": "Fee-like snippets require exact international full-duration tuition reconciliation."
+      }
+    ],
+    "rawSnapshotPath": "data/imports/ucsi/2026-06-20/official-audit/raw/detail-069-item.html"
+  },
+  {
+    "code": "UCSI-MASTER-070",
+    "candidateCode": "UCSI-MASTER-070",
+    "nameEnOfficial": "MSc Pharmaceutical Chemistry",
+    "detailPageUrl": "https://www.ucsiuniversity.edu.my/programmes/msc-pharmaceutical-chemistry",
+    "sourceId": "detail-070-item",
+    "hasOptions": true,
+    "retrievalMethod": "rendered DOM via Playwright",
+    "options": [
+      {
+        "optionType": "same-programme official sublink",
+        "label": "programme related official links",
+        "governedFields": [
+          "brochure",
+          "application",
+          "requirements",
+          "courseSetting"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-MASTER-070:sameProgrammeLinks",
+        "reviewReason": "Related links were inventoried but not fully followed in this collect-only baseline pass."
+      },
+      {
+        "optionType": "fee panel",
+        "label": "fee amount snippets",
+        "governedFields": [
+          "fee"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-MASTER-070:feeSnippets",
+        "reviewReason": "Fee-like snippets require exact international full-duration tuition reconciliation."
+      }
+    ],
+    "rawSnapshotPath": "data/imports/ucsi/2026-06-20/official-audit/raw/detail-070-item.html"
+  },
+  {
+    "code": "UCSI-MASTER-071",
+    "candidateCode": "UCSI-MASTER-071",
+    "nameEnOfficial": "MSc Pharmaceutical Technology",
+    "detailPageUrl": "https://www.ucsiuniversity.edu.my/programmes/msc-pharmaceutical-technology",
+    "sourceId": "detail-071-item",
+    "hasOptions": true,
+    "retrievalMethod": "rendered DOM via Playwright",
+    "options": [
+      {
+        "optionType": "same-programme official sublink",
+        "label": "programme related official links",
+        "governedFields": [
+          "brochure",
+          "application",
+          "requirements",
+          "courseSetting"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-MASTER-071:sameProgrammeLinks",
+        "reviewReason": "Related links were inventoried but not fully followed in this collect-only baseline pass."
+      },
+      {
+        "optionType": "fee panel",
+        "label": "fee amount snippets",
+        "governedFields": [
+          "fee"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-MASTER-071:feeSnippets",
+        "reviewReason": "Fee-like snippets require exact international full-duration tuition reconciliation."
+      }
+    ],
+    "rawSnapshotPath": "data/imports/ucsi/2026-06-20/official-audit/raw/detail-071-item.html"
+  },
+  {
+    "code": "UCSI-BACHELOR-072",
+    "candidateCode": "UCSI-BACHELOR-072",
+    "nameEnOfficial": "Bachelor In Formulation Science (Honours)",
+    "detailPageUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-formulation-science-honours",
+    "sourceId": "detail-072-item",
+    "hasOptions": true,
+    "retrievalMethod": "rendered DOM via Playwright",
+    "options": [
+      {
+        "optionType": "same-programme official sublink",
+        "label": "programme related official links",
+        "governedFields": [
+          "brochure",
+          "application",
+          "requirements",
+          "courseSetting"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-BACHELOR-072:sameProgrammeLinks",
+        "reviewReason": "Related links were inventoried but not fully followed in this collect-only baseline pass."
+      },
+      {
+        "optionType": "fee panel",
+        "label": "fee amount snippets",
+        "governedFields": [
+          "fee"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-BACHELOR-072:feeSnippets",
+        "reviewReason": "Fee-like snippets require exact international full-duration tuition reconciliation."
+      }
+    ],
+    "rawSnapshotPath": "data/imports/ucsi/2026-06-20/official-audit/raw/detail-072-item.html"
+  },
+  {
+    "code": "UCSI-BACHELOR-073",
+    "candidateCode": "UCSI-BACHELOR-073",
+    "nameEnOfficial": "Bachelor Of Pharmacy (Honours)",
+    "detailPageUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-pharmacy-honours",
+    "sourceId": "detail-073-item",
+    "hasOptions": true,
+    "retrievalMethod": "rendered DOM via Playwright",
+    "options": [
+      {
+        "optionType": "same-programme official sublink",
+        "label": "programme related official links",
+        "governedFields": [
+          "brochure",
+          "application",
+          "requirements",
+          "courseSetting"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-BACHELOR-073:sameProgrammeLinks",
+        "reviewReason": "Related links were inventoried but not fully followed in this collect-only baseline pass."
+      },
+      {
+        "optionType": "fee panel",
+        "label": "fee amount snippets",
+        "governedFields": [
+          "fee"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-BACHELOR-073:feeSnippets",
+        "reviewReason": "Fee-like snippets require exact international full-duration tuition reconciliation."
+      }
+    ],
+    "rawSnapshotPath": "data/imports/ucsi/2026-06-20/official-audit/raw/detail-073-item.html"
+  },
+  {
+    "code": "UCSI-PHD-074",
+    "candidateCode": "UCSI-PHD-074",
+    "nameEnOfficial": "Doctor Of Philosophy (Education)",
+    "detailPageUrl": "https://www.ucsiuniversity.edu.my/programmes/doctor-philosophy-education",
+    "sourceId": "detail-074-item",
+    "hasOptions": true,
+    "retrievalMethod": "rendered DOM via Playwright",
+    "options": [
+      {
+        "optionType": "same-programme official sublink",
+        "label": "programme related official links",
+        "governedFields": [
+          "brochure",
+          "application",
+          "requirements",
+          "courseSetting"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-PHD-074:sameProgrammeLinks",
+        "reviewReason": "Related links were inventoried but not fully followed in this collect-only baseline pass."
+      },
+      {
+        "optionType": "fee panel",
+        "label": "fee amount snippets",
+        "governedFields": [
+          "fee"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-PHD-074:feeSnippets",
+        "reviewReason": "Fee-like snippets require exact international full-duration tuition reconciliation."
+      }
+    ],
+    "rawSnapshotPath": "data/imports/ucsi/2026-06-20/official-audit/raw/detail-074-item.html"
+  },
+  {
+    "code": "UCSI-PHD-075",
+    "candidateCode": "UCSI-PHD-075",
+    "nameEnOfficial": "Doctor Of Philosophy In Psychology",
+    "detailPageUrl": "https://www.ucsiuniversity.edu.my/programmes/doctor-philosophy-psychology",
+    "sourceId": "detail-075-item",
+    "hasOptions": true,
+    "retrievalMethod": "rendered DOM via Playwright",
+    "options": [
+      {
+        "optionType": "same-programme official sublink",
+        "label": "programme related official links",
+        "governedFields": [
+          "brochure",
+          "application",
+          "requirements",
+          "courseSetting"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-PHD-075:sameProgrammeLinks",
+        "reviewReason": "Related links were inventoried but not fully followed in this collect-only baseline pass."
+      },
+      {
+        "optionType": "fee panel",
+        "label": "fee amount snippets",
+        "governedFields": [
+          "fee"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-PHD-075:feeSnippets",
+        "reviewReason": "Fee-like snippets require exact international full-duration tuition reconciliation."
+      }
+    ],
+    "rawSnapshotPath": "data/imports/ucsi/2026-06-20/official-audit/raw/detail-075-item.html"
+  },
+  {
+    "code": "UCSI-MASTER-076",
+    "candidateCode": "UCSI-MASTER-076",
+    "nameEnOfficial": "Master Of Child Psychology",
+    "detailPageUrl": "https://www.ucsiuniversity.edu.my/programmes/master-child-psychology",
+    "sourceId": "detail-076-item",
+    "hasOptions": true,
+    "retrievalMethod": "rendered DOM via Playwright",
+    "options": [
+      {
+        "optionType": "same-programme official sublink",
+        "label": "programme related official links",
+        "governedFields": [
+          "brochure",
+          "application",
+          "requirements",
+          "courseSetting"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-MASTER-076:sameProgrammeLinks",
+        "reviewReason": "Related links were inventoried but not fully followed in this collect-only baseline pass."
+      },
+      {
+        "optionType": "fee panel",
+        "label": "fee amount snippets",
+        "governedFields": [
+          "fee"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-MASTER-076:feeSnippets",
+        "reviewReason": "Fee-like snippets require exact international full-duration tuition reconciliation."
+      }
+    ],
+    "rawSnapshotPath": "data/imports/ucsi/2026-06-20/official-audit/raw/detail-076-item.html"
+  },
+  {
+    "code": "UCSI-MASTER-077",
+    "candidateCode": "UCSI-MASTER-077",
+    "nameEnOfficial": "Master Of Clinical Psychology",
+    "detailPageUrl": "https://www.ucsiuniversity.edu.my/programmes/master-clinical-psychology",
+    "sourceId": "detail-077-item",
+    "hasOptions": true,
+    "retrievalMethod": "rendered DOM via Playwright",
+    "options": [
+      {
+        "optionType": "same-programme official sublink",
+        "label": "programme related official links",
+        "governedFields": [
+          "brochure",
+          "application",
+          "requirements",
+          "courseSetting"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-MASTER-077:sameProgrammeLinks",
+        "reviewReason": "Related links were inventoried but not fully followed in this collect-only baseline pass."
+      },
+      {
+        "optionType": "fee panel",
+        "label": "fee amount snippets",
+        "governedFields": [
+          "fee"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-MASTER-077:feeSnippets",
+        "reviewReason": "Fee-like snippets require exact international full-duration tuition reconciliation."
+      }
+    ],
+    "rawSnapshotPath": "data/imports/ucsi/2026-06-20/official-audit/raw/detail-077-item.html"
+  },
+  {
+    "code": "UCSI-MASTER-078",
+    "candidateCode": "UCSI-MASTER-078",
+    "nameEnOfficial": "Master Of Education",
+    "detailPageUrl": "https://www.ucsiuniversity.edu.my/programmes/master-education",
+    "sourceId": "detail-078-item",
+    "hasOptions": true,
+    "retrievalMethod": "rendered DOM via Playwright",
+    "options": [
+      {
+        "optionType": "same-programme official sublink",
+        "label": "programme related official links",
+        "governedFields": [
+          "brochure",
+          "application",
+          "requirements",
+          "courseSetting"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-MASTER-078:sameProgrammeLinks",
+        "reviewReason": "Related links were inventoried but not fully followed in this collect-only baseline pass."
+      },
+      {
+        "optionType": "fee panel",
+        "label": "fee amount snippets",
+        "governedFields": [
+          "fee"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-MASTER-078:feeSnippets",
+        "reviewReason": "Fee-like snippets require exact international full-duration tuition reconciliation."
+      }
+    ],
+    "rawSnapshotPath": "data/imports/ucsi/2026-06-20/official-audit/raw/detail-078-item.html"
+  },
+  {
+    "code": "UCSI-MASTER-079",
+    "candidateCode": "UCSI-MASTER-079",
+    "nameEnOfficial": "Master In Strategic Communication",
+    "detailPageUrl": "https://www.ucsiuniversity.edu.my/programmes/master-strategic-communication",
+    "sourceId": "detail-079-item",
+    "hasOptions": true,
+    "retrievalMethod": "rendered DOM via Playwright",
+    "options": [
+      {
+        "optionType": "same-programme official sublink",
+        "label": "programme related official links",
+        "governedFields": [
+          "brochure",
+          "application",
+          "requirements",
+          "courseSetting"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-MASTER-079:sameProgrammeLinks",
+        "reviewReason": "Related links were inventoried but not fully followed in this collect-only baseline pass."
+      },
+      {
+        "optionType": "fee panel",
+        "label": "fee amount snippets",
+        "governedFields": [
+          "fee"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-MASTER-079:feeSnippets",
+        "reviewReason": "Fee-like snippets require exact international full-duration tuition reconciliation."
+      }
+    ],
+    "rawSnapshotPath": "data/imports/ucsi/2026-06-20/official-audit/raw/detail-079-item.html"
+  },
+  {
+    "code": "UCSI-BACHELOR-080",
+    "candidateCode": "UCSI-BACHELOR-080",
+    "nameEnOfficial": "Bachelor Of Early Childhood Education (Honours)",
+    "detailPageUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-early-childhood-education-honours",
+    "sourceId": "detail-080-item",
+    "hasOptions": true,
+    "retrievalMethod": "rendered DOM via Playwright",
+    "options": [
+      {
+        "optionType": "same-programme official sublink",
+        "label": "programme related official links",
+        "governedFields": [
+          "brochure",
+          "application",
+          "requirements",
+          "courseSetting"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-BACHELOR-080:sameProgrammeLinks",
+        "reviewReason": "Related links were inventoried but not fully followed in this collect-only baseline pass."
+      },
+      {
+        "optionType": "fee panel",
+        "label": "fee amount snippets",
+        "governedFields": [
+          "fee"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-BACHELOR-080:feeSnippets",
+        "reviewReason": "Fee-like snippets require exact international full-duration tuition reconciliation."
+      }
+    ],
+    "rawSnapshotPath": "data/imports/ucsi/2026-06-20/official-audit/raw/detail-080-item.html"
+  },
+  {
+    "code": "UCSI-BACHELOR-081",
+    "candidateCode": "UCSI-BACHELOR-081",
+    "nameEnOfficial": "Bachelor Of Digital Media Production And Broadcasting (Honours)",
+    "detailPageUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-digital-media-production-and-broadcasting-honours",
+    "sourceId": "detail-081-item",
+    "hasOptions": true,
+    "retrievalMethod": "rendered DOM via Playwright",
+    "options": [
+      {
+        "optionType": "same-programme official sublink",
+        "label": "programme related official links",
+        "governedFields": [
+          "brochure",
+          "application",
+          "requirements",
+          "courseSetting"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-BACHELOR-081:sameProgrammeLinks",
+        "reviewReason": "Related links were inventoried but not fully followed in this collect-only baseline pass."
+      },
+      {
+        "optionType": "fee panel",
+        "label": "fee amount snippets",
+        "governedFields": [
+          "fee"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-BACHELOR-081:feeSnippets",
+        "reviewReason": "Fee-like snippets require exact international full-duration tuition reconciliation."
+      }
+    ],
+    "rawSnapshotPath": "data/imports/ucsi/2026-06-20/official-audit/raw/detail-081-item.html"
+  },
+  {
+    "code": "UCSI-PHD-082",
+    "candidateCode": "UCSI-PHD-082",
+    "nameEnOfficial": "Doctor Of Philosophy In Art, Design And Creative Media",
+    "detailPageUrl": "https://www.ucsiuniversity.edu.my/programmes/doctor-philosophy-art-design-and-creative-media",
+    "sourceId": "detail-082-item",
+    "hasOptions": true,
+    "retrievalMethod": "rendered DOM via Playwright",
+    "options": [
+      {
+        "optionType": "same-programme official sublink",
+        "label": "programme related official links",
+        "governedFields": [
+          "brochure",
+          "application",
+          "requirements",
+          "courseSetting"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-PHD-082:sameProgrammeLinks",
+        "reviewReason": "Related links were inventoried but not fully followed in this collect-only baseline pass."
+      },
+      {
+        "optionType": "fee panel",
+        "label": "fee amount snippets",
+        "governedFields": [
+          "fee"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-PHD-082:feeSnippets",
+        "reviewReason": "Fee-like snippets require exact international full-duration tuition reconciliation."
+      }
+    ],
+    "rawSnapshotPath": "data/imports/ucsi/2026-06-20/official-audit/raw/detail-082-item.html"
+  },
+  {
+    "code": "UCSI-MASTER-083",
+    "candidateCode": "UCSI-MASTER-083",
+    "nameEnOfficial": "Master Of Arts And Design",
+    "detailPageUrl": "https://www.ucsiuniversity.edu.my/programmes/master-arts-and-design",
+    "sourceId": "detail-083-item",
+    "hasOptions": true,
+    "retrievalMethod": "rendered DOM via Playwright",
+    "options": [
+      {
+        "optionType": "same-programme official sublink",
+        "label": "programme related official links",
+        "governedFields": [
+          "brochure",
+          "application",
+          "requirements",
+          "courseSetting"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-MASTER-083:sameProgrammeLinks",
+        "reviewReason": "Related links were inventoried but not fully followed in this collect-only baseline pass."
+      },
+      {
+        "optionType": "fee panel",
+        "label": "fee amount snippets",
+        "governedFields": [
+          "fee"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-MASTER-083:feeSnippets",
+        "reviewReason": "Fee-like snippets require exact international full-duration tuition reconciliation."
+      }
+    ],
+    "rawSnapshotPath": "data/imports/ucsi/2026-06-20/official-audit/raw/detail-083-item.html"
+  },
+  {
+    "code": "UCSI-MASTER-084",
+    "candidateCode": "UCSI-MASTER-084",
+    "nameEnOfficial": "Master Of Art, Design And Creative Media",
+    "detailPageUrl": "https://www.ucsiuniversity.edu.my/programmes/master-art-design-and-creative-media",
+    "sourceId": "detail-084-item",
+    "hasOptions": true,
+    "retrievalMethod": "rendered DOM via Playwright",
+    "options": [
+      {
+        "optionType": "same-programme official sublink",
+        "label": "programme related official links",
+        "governedFields": [
+          "brochure",
+          "application",
+          "requirements",
+          "courseSetting"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-MASTER-084:sameProgrammeLinks",
+        "reviewReason": "Related links were inventoried but not fully followed in this collect-only baseline pass."
+      },
+      {
+        "optionType": "fee panel",
+        "label": "fee amount snippets",
+        "governedFields": [
+          "fee"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-MASTER-084:feeSnippets",
+        "reviewReason": "Fee-like snippets require exact international full-duration tuition reconciliation."
+      }
+    ],
+    "rawSnapshotPath": "data/imports/ucsi/2026-06-20/official-audit/raw/detail-084-item.html"
+  },
+  {
+    "code": "UCSI-PHD-085",
+    "candidateCode": "UCSI-PHD-085",
+    "nameEnOfficial": "Doctor Of Philosophy In Mathematical Sciences",
+    "detailPageUrl": "https://www.ucsiuniversity.edu.my/programmes/doctor-philosophy-mathematical-sciences",
+    "sourceId": "detail-085-item",
+    "hasOptions": true,
+    "retrievalMethod": "rendered DOM via Playwright",
+    "options": [
+      {
+        "optionType": "same-programme official sublink",
+        "label": "programme related official links",
+        "governedFields": [
+          "brochure",
+          "application",
+          "requirements",
+          "courseSetting"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-PHD-085:sameProgrammeLinks",
+        "reviewReason": "Related links were inventoried but not fully followed in this collect-only baseline pass."
+      },
+      {
+        "optionType": "fee panel",
+        "label": "fee amount snippets",
+        "governedFields": [
+          "fee"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-PHD-085:feeSnippets",
+        "reviewReason": "Fee-like snippets require exact international full-duration tuition reconciliation."
+      }
+    ],
+    "rawSnapshotPath": "data/imports/ucsi/2026-06-20/official-audit/raw/detail-085-item.html"
+  },
+  {
+    "code": "UCSI-MASTER-086",
+    "candidateCode": "UCSI-MASTER-086",
+    "nameEnOfficial": "Master Of Science (Actuarial Management) - (Mixed Mode Or Coursework)",
+    "detailPageUrl": "https://www.ucsiuniversity.edu.my/programmes/master-science-actuarial-management-mixed-mode-or-coursework",
+    "sourceId": "detail-086-item",
+    "hasOptions": true,
+    "retrievalMethod": "rendered DOM via Playwright",
+    "options": [
+      {
+        "optionType": "same-programme official sublink",
+        "label": "programme related official links",
+        "governedFields": [
+          "brochure",
+          "application",
+          "requirements",
+          "courseSetting"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-MASTER-086:sameProgrammeLinks",
+        "reviewReason": "Related links were inventoried but not fully followed in this collect-only baseline pass."
+      },
+      {
+        "optionType": "fee panel",
+        "label": "fee amount snippets",
+        "governedFields": [
+          "fee"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-MASTER-086:feeSnippets",
+        "reviewReason": "Fee-like snippets require exact international full-duration tuition reconciliation."
+      }
+    ],
+    "rawSnapshotPath": "data/imports/ucsi/2026-06-20/official-audit/raw/detail-086-item.html"
+  },
+  {
+    "code": "UCSI-MASTER-087",
+    "candidateCode": "UCSI-MASTER-087",
+    "nameEnOfficial": "Master Of Science In Mathematical Sciences",
+    "detailPageUrl": "https://www.ucsiuniversity.edu.my/programmes/master-science-mathematical-sciences",
+    "sourceId": "detail-087-item",
+    "hasOptions": true,
+    "retrievalMethod": "rendered DOM via Playwright",
+    "options": [
+      {
+        "optionType": "same-programme official sublink",
+        "label": "programme related official links",
+        "governedFields": [
+          "brochure",
+          "application",
+          "requirements",
+          "courseSetting"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-MASTER-087:sameProgrammeLinks",
+        "reviewReason": "Related links were inventoried but not fully followed in this collect-only baseline pass."
+      },
+      {
+        "optionType": "fee panel",
+        "label": "fee amount snippets",
+        "governedFields": [
+          "fee"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-MASTER-087:feeSnippets",
+        "reviewReason": "Fee-like snippets require exact international full-duration tuition reconciliation."
+      }
+    ],
+    "rawSnapshotPath": "data/imports/ucsi/2026-06-20/official-audit/raw/detail-087-item.html"
+  },
+  {
+    "code": "UCSI-BACHELOR-088",
+    "candidateCode": "UCSI-BACHELOR-088",
+    "nameEnOfficial": "Bachelor Of Science (Honours) Actuarial Science",
+    "detailPageUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-science-honours-actuarial-science",
+    "sourceId": "detail-088-item",
+    "hasOptions": true,
+    "retrievalMethod": "rendered DOM via Playwright",
+    "options": [
+      {
+        "optionType": "same-programme official sublink",
+        "label": "programme related official links",
+        "governedFields": [
+          "brochure",
+          "application",
+          "requirements",
+          "courseSetting"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-BACHELOR-088:sameProgrammeLinks",
+        "reviewReason": "Related links were inventoried but not fully followed in this collect-only baseline pass."
+      },
+      {
+        "optionType": "fee panel",
+        "label": "fee amount snippets",
+        "governedFields": [
+          "fee"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-BACHELOR-088:feeSnippets",
+        "reviewReason": "Fee-like snippets require exact international full-duration tuition reconciliation."
+      }
+    ],
+    "rawSnapshotPath": "data/imports/ucsi/2026-06-20/official-audit/raw/detail-088-item.html"
+  },
+  {
+    "code": "UCSI-BACHELOR-089",
+    "candidateCode": "UCSI-BACHELOR-089",
+    "nameEnOfficial": "Bachelor Of Science (Honours) Actuarial Science And Finance",
+    "detailPageUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-science-honours-actuarial-science-and-finance",
+    "sourceId": "detail-089-item",
+    "hasOptions": true,
+    "retrievalMethod": "rendered DOM via Playwright",
+    "options": [
+      {
+        "optionType": "same-programme official sublink",
+        "label": "programme related official links",
+        "governedFields": [
+          "brochure",
+          "application",
+          "requirements",
+          "courseSetting"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-BACHELOR-089:sameProgrammeLinks",
+        "reviewReason": "Related links were inventoried but not fully followed in this collect-only baseline pass."
+      },
+      {
+        "optionType": "fee panel",
+        "label": "fee amount snippets",
+        "governedFields": [
+          "fee"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-BACHELOR-089:feeSnippets",
+        "reviewReason": "Fee-like snippets require exact international full-duration tuition reconciliation."
+      }
+    ],
+    "rawSnapshotPath": "data/imports/ucsi/2026-06-20/official-audit/raw/detail-089-item.html"
+  },
+  {
+    "code": "UCSI-BACHELOR-090",
+    "candidateCode": "UCSI-BACHELOR-090",
+    "nameEnOfficial": "Bachelor Of Science (Honours) Actuarial Science With Data Analytics",
+    "detailPageUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-science-honours-actuarial-science-data-analytics",
+    "sourceId": "detail-090-item",
+    "hasOptions": true,
+    "retrievalMethod": "rendered DOM via Playwright",
+    "options": [
+      {
+        "optionType": "same-programme official sublink",
+        "label": "programme related official links",
+        "governedFields": [
+          "brochure",
+          "application",
+          "requirements",
+          "courseSetting"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-BACHELOR-090:sameProgrammeLinks",
+        "reviewReason": "Related links were inventoried but not fully followed in this collect-only baseline pass."
+      },
+      {
+        "optionType": "fee panel",
+        "label": "fee amount snippets",
+        "governedFields": [
+          "fee"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-BACHELOR-090:feeSnippets",
+        "reviewReason": "Fee-like snippets require exact international full-duration tuition reconciliation."
+      }
+    ],
+    "rawSnapshotPath": "data/imports/ucsi/2026-06-20/official-audit/raw/detail-090-item.html"
+  },
+  {
+    "code": "UCSI-PHD-091",
+    "candidateCode": "UCSI-PHD-091",
+    "nameEnOfficial": "Doctor Of Philosophy In Computer Science",
+    "detailPageUrl": "https://www.ucsiuniversity.edu.my/programmes/doctor-philosophy-computer-science",
+    "sourceId": "detail-091-item",
+    "hasOptions": true,
+    "retrievalMethod": "rendered DOM via Playwright",
+    "options": [
+      {
+        "optionType": "same-programme official sublink",
+        "label": "programme related official links",
+        "governedFields": [
+          "brochure",
+          "application",
+          "requirements",
+          "courseSetting"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-PHD-091:sameProgrammeLinks",
+        "reviewReason": "Related links were inventoried but not fully followed in this collect-only baseline pass."
+      },
+      {
+        "optionType": "fee panel",
+        "label": "fee amount snippets",
+        "governedFields": [
+          "fee"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-PHD-091:feeSnippets",
+        "reviewReason": "Fee-like snippets require exact international full-duration tuition reconciliation."
+      }
+    ],
+    "rawSnapshotPath": "data/imports/ucsi/2026-06-20/official-audit/raw/detail-091-item.html"
+  },
+  {
+    "code": "UCSI-MASTER-092",
+    "candidateCode": "UCSI-MASTER-092",
+    "nameEnOfficial": "Master Of Science In Computer Science",
+    "detailPageUrl": "https://www.ucsiuniversity.edu.my/programmes/master-science-computer-science",
+    "sourceId": "detail-092-item",
+    "hasOptions": true,
+    "retrievalMethod": "rendered DOM via Playwright",
+    "options": [
+      {
+        "optionType": "same-programme official sublink",
+        "label": "programme related official links",
+        "governedFields": [
+          "brochure",
+          "application",
+          "requirements",
+          "courseSetting"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-MASTER-092:sameProgrammeLinks",
+        "reviewReason": "Related links were inventoried but not fully followed in this collect-only baseline pass."
+      },
+      {
+        "optionType": "fee panel",
+        "label": "fee amount snippets",
+        "governedFields": [
+          "fee"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-MASTER-092:feeSnippets",
+        "reviewReason": "Fee-like snippets require exact international full-duration tuition reconciliation."
+      }
+    ],
+    "rawSnapshotPath": "data/imports/ucsi/2026-06-20/official-audit/raw/detail-092-item.html"
+  },
+  {
+    "code": "UCSI-MASTER-093",
+    "candidateCode": "UCSI-MASTER-093",
+    "nameEnOfficial": "Master Of Science In Digital Technology And Analytics",
+    "detailPageUrl": "https://www.ucsiuniversity.edu.my/programmes/master-science-digital-technology-and-analytics",
+    "sourceId": "detail-093-item",
+    "hasOptions": true,
+    "retrievalMethod": "rendered DOM via Playwright",
+    "options": [
+      {
+        "optionType": "same-programme official sublink",
+        "label": "programme related official links",
+        "governedFields": [
+          "brochure",
+          "application",
+          "requirements",
+          "courseSetting"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-MASTER-093:sameProgrammeLinks",
+        "reviewReason": "Related links were inventoried but not fully followed in this collect-only baseline pass."
+      },
+      {
+        "optionType": "fee panel",
+        "label": "fee amount snippets",
+        "governedFields": [
+          "fee"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-MASTER-093:feeSnippets",
+        "reviewReason": "Fee-like snippets require exact international full-duration tuition reconciliation."
+      }
+    ],
+    "rawSnapshotPath": "data/imports/ucsi/2026-06-20/official-audit/raw/detail-093-item.html"
+  },
+  {
+    "code": "UCSI-MASTER-094",
+    "candidateCode": "UCSI-MASTER-094",
+    "nameEnOfficial": "MSc In Technopreneurship",
+    "detailPageUrl": "https://www.ucsiuniversity.edu.my/programmes/msc-technopreneurship",
+    "sourceId": "detail-094-item",
+    "hasOptions": true,
+    "retrievalMethod": "rendered DOM via Playwright",
+    "options": [
+      {
+        "optionType": "same-programme official sublink",
+        "label": "programme related official links",
+        "governedFields": [
+          "brochure",
+          "application",
+          "requirements",
+          "courseSetting"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-MASTER-094:sameProgrammeLinks",
+        "reviewReason": "Related links were inventoried but not fully followed in this collect-only baseline pass."
+      },
+      {
+        "optionType": "fee panel",
+        "label": "fee amount snippets",
+        "governedFields": [
+          "fee"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-MASTER-094:feeSnippets",
+        "reviewReason": "Fee-like snippets require exact international full-duration tuition reconciliation."
+      }
+    ],
+    "rawSnapshotPath": "data/imports/ucsi/2026-06-20/official-audit/raw/detail-094-item.html"
+  },
+  {
+    "code": "UCSI-BACHELOR-095",
+    "candidateCode": "UCSI-BACHELOR-095",
+    "nameEnOfficial": "Bachelor Of Computer Science (Honours)",
+    "detailPageUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-computer-science-honours",
+    "sourceId": "detail-095-item",
+    "hasOptions": true,
+    "retrievalMethod": "rendered DOM via Playwright",
+    "options": [
+      {
+        "optionType": "same-programme official sublink",
+        "label": "programme related official links",
+        "governedFields": [
+          "brochure",
+          "application",
+          "requirements",
+          "courseSetting"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-BACHELOR-095:sameProgrammeLinks",
+        "reviewReason": "Related links were inventoried but not fully followed in this collect-only baseline pass."
+      },
+      {
+        "optionType": "fee panel",
+        "label": "fee amount snippets",
+        "governedFields": [
+          "fee"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-BACHELOR-095:feeSnippets",
+        "reviewReason": "Fee-like snippets require exact international full-duration tuition reconciliation."
+      }
+    ],
+    "rawSnapshotPath": "data/imports/ucsi/2026-06-20/official-audit/raw/detail-095-item.html"
+  },
+  {
+    "code": "UCSI-BACHELOR-096",
+    "candidateCode": "UCSI-BACHELOR-096",
+    "nameEnOfficial": "Bachelor Of Computer Science In Artificial Intelligence With Honours",
+    "detailPageUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-computer-science-artificial-intelligence-honours",
+    "sourceId": "detail-096-item",
+    "hasOptions": true,
+    "retrievalMethod": "rendered DOM via Playwright",
+    "options": [
+      {
+        "optionType": "same-programme official sublink",
+        "label": "programme related official links",
+        "governedFields": [
+          "brochure",
+          "application",
+          "requirements",
+          "courseSetting"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-BACHELOR-096:sameProgrammeLinks",
+        "reviewReason": "Related links were inventoried but not fully followed in this collect-only baseline pass."
+      },
+      {
+        "optionType": "fee panel",
+        "label": "fee amount snippets",
+        "governedFields": [
+          "fee"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-BACHELOR-096:feeSnippets",
+        "reviewReason": "Fee-like snippets require exact international full-duration tuition reconciliation."
+      }
+    ],
+    "rawSnapshotPath": "data/imports/ucsi/2026-06-20/official-audit/raw/detail-096-item.html"
+  },
+  {
+    "code": "UCSI-BACHELOR-097",
+    "candidateCode": "UCSI-BACHELOR-097",
+    "nameEnOfficial": "Bachelor Of Computer Science In Cyber Security With Honours",
+    "detailPageUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-computer-science-cyber-security-honours",
+    "sourceId": "detail-097-item",
+    "hasOptions": true,
+    "retrievalMethod": "rendered DOM via Playwright",
+    "options": [
+      {
+        "optionType": "same-programme official sublink",
+        "label": "programme related official links",
+        "governedFields": [
+          "brochure",
+          "application",
+          "requirements",
+          "courseSetting"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-BACHELOR-097:sameProgrammeLinks",
+        "reviewReason": "Related links were inventoried but not fully followed in this collect-only baseline pass."
+      },
+      {
+        "optionType": "fee panel",
+        "label": "fee amount snippets",
+        "governedFields": [
+          "fee"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-BACHELOR-097:feeSnippets",
+        "reviewReason": "Fee-like snippets require exact international full-duration tuition reconciliation."
+      }
+    ],
+    "rawSnapshotPath": "data/imports/ucsi/2026-06-20/official-audit/raw/detail-097-item.html"
+  },
+  {
+    "code": "UCSI-BACHELOR-098",
+    "candidateCode": "UCSI-BACHELOR-098",
+    "nameEnOfficial": "Bachelor Of Computer Science (Hons) Mobile Computing And Networking",
+    "detailPageUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-computer-science-hons-mobile-computing-and-networking",
+    "sourceId": "detail-098-item",
+    "hasOptions": true,
+    "retrievalMethod": "rendered DOM via Playwright",
+    "options": [
+      {
+        "optionType": "same-programme official sublink",
+        "label": "programme related official links",
+        "governedFields": [
+          "brochure",
+          "application",
+          "requirements",
+          "courseSetting"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-BACHELOR-098:sameProgrammeLinks",
+        "reviewReason": "Related links were inventoried but not fully followed in this collect-only baseline pass."
+      },
+      {
+        "optionType": "fee panel",
+        "label": "fee amount snippets",
+        "governedFields": [
+          "fee"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-BACHELOR-098:feeSnippets",
+        "reviewReason": "Fee-like snippets require exact international full-duration tuition reconciliation."
+      }
+    ],
+    "rawSnapshotPath": "data/imports/ucsi/2026-06-20/official-audit/raw/detail-098-item.html"
+  },
+  {
+    "code": "UCSI-BACHELOR-099",
+    "candidateCode": "UCSI-BACHELOR-099",
+    "nameEnOfficial": "Bachelor Of Computer Science In Data Science With Honours",
+    "detailPageUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-computer-science-data-science-honours",
+    "sourceId": "detail-099-item",
+    "hasOptions": true,
+    "retrievalMethod": "rendered DOM via Playwright",
+    "options": [
+      {
+        "optionType": "same-programme official sublink",
+        "label": "programme related official links",
+        "governedFields": [
+          "brochure",
+          "application",
+          "requirements",
+          "courseSetting"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-BACHELOR-099:sameProgrammeLinks",
+        "reviewReason": "Related links were inventoried but not fully followed in this collect-only baseline pass."
+      },
+      {
+        "optionType": "fee panel",
+        "label": "fee amount snippets",
+        "governedFields": [
+          "fee"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-BACHELOR-099:feeSnippets",
+        "reviewReason": "Fee-like snippets require exact international full-duration tuition reconciliation."
+      }
+    ],
+    "rawSnapshotPath": "data/imports/ucsi/2026-06-20/official-audit/raw/detail-099-item.html"
+  },
+  {
+    "code": "UCSI-BACHELOR-100",
+    "candidateCode": "UCSI-BACHELOR-100",
+    "nameEnOfficial": "Bachelor Of Science In Business Information Systems (Honours)",
+    "detailPageUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-science-business-information-systems-honours",
+    "sourceId": "detail-100-item",
+    "hasOptions": true,
+    "retrievalMethod": "rendered DOM via Playwright",
+    "options": [
+      {
+        "optionType": "same-programme official sublink",
+        "label": "programme related official links",
+        "governedFields": [
+          "brochure",
+          "application",
+          "requirements",
+          "courseSetting"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-BACHELOR-100:sameProgrammeLinks",
+        "reviewReason": "Related links were inventoried but not fully followed in this collect-only baseline pass."
+      },
+      {
+        "optionType": "fee panel",
+        "label": "fee amount snippets",
+        "governedFields": [
+          "fee"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-BACHELOR-100:feeSnippets",
+        "reviewReason": "Fee-like snippets require exact international full-duration tuition reconciliation."
+      }
+    ],
+    "rawSnapshotPath": "data/imports/ucsi/2026-06-20/official-audit/raw/detail-100-item.html"
+  },
+  {
+    "code": "UCSI-PHD-101",
+    "candidateCode": "UCSI-PHD-101",
+    "nameEnOfficial": "Doctor Of Philosophy In Music Performance",
+    "detailPageUrl": "https://www.ucsiuniversity.edu.my/programmes/doctor-philosophy-music-performance",
+    "sourceId": "detail-101-item",
+    "hasOptions": true,
+    "retrievalMethod": "rendered DOM via Playwright",
+    "options": [
+      {
+        "optionType": "same-programme official sublink",
+        "label": "programme related official links",
+        "governedFields": [
+          "brochure",
+          "application",
+          "requirements",
+          "courseSetting"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-PHD-101:sameProgrammeLinks",
+        "reviewReason": "Related links were inventoried but not fully followed in this collect-only baseline pass."
+      },
+      {
+        "optionType": "fee panel",
+        "label": "fee amount snippets",
+        "governedFields": [
+          "fee"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-PHD-101:feeSnippets",
+        "reviewReason": "Fee-like snippets require exact international full-duration tuition reconciliation."
+      }
+    ],
+    "rawSnapshotPath": "data/imports/ucsi/2026-06-20/official-audit/raw/detail-101-item.html"
+  },
+  {
+    "code": "UCSI-PHD-102",
+    "candidateCode": "UCSI-PHD-102",
+    "nameEnOfficial": "Doctor Of Philosophy In Music",
+    "detailPageUrl": "https://www.ucsiuniversity.edu.my/programmes/doctor-philosophy-music",
+    "sourceId": "detail-102-item",
+    "hasOptions": true,
+    "retrievalMethod": "rendered DOM via Playwright",
+    "options": [
+      {
+        "optionType": "same-programme official sublink",
+        "label": "programme related official links",
+        "governedFields": [
+          "brochure",
+          "application",
+          "requirements",
+          "courseSetting"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-PHD-102:sameProgrammeLinks",
+        "reviewReason": "Related links were inventoried but not fully followed in this collect-only baseline pass."
+      },
+      {
+        "optionType": "fee panel",
+        "label": "fee amount snippets",
+        "governedFields": [
+          "fee"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-PHD-102:feeSnippets",
+        "reviewReason": "Fee-like snippets require exact international full-duration tuition reconciliation."
+      }
+    ],
+    "rawSnapshotPath": "data/imports/ucsi/2026-06-20/official-audit/raw/detail-102-item.html"
+  },
+  {
+    "code": "UCSI-MASTER-103",
+    "candidateCode": "UCSI-MASTER-103",
+    "nameEnOfficial": "Master Of Music (Performance Studies)",
+    "detailPageUrl": "https://www.ucsiuniversity.edu.my/programmes/mmus-performance-studies",
+    "sourceId": "detail-103-item",
+    "hasOptions": true,
+    "retrievalMethod": "rendered DOM via Playwright",
+    "options": [
+      {
+        "optionType": "same-programme official sublink",
+        "label": "programme related official links",
+        "governedFields": [
+          "brochure",
+          "application",
+          "requirements",
+          "courseSetting"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-MASTER-103:sameProgrammeLinks",
+        "reviewReason": "Related links were inventoried but not fully followed in this collect-only baseline pass."
+      },
+      {
+        "optionType": "fee panel",
+        "label": "fee amount snippets",
+        "governedFields": [
+          "fee"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-MASTER-103:feeSnippets",
+        "reviewReason": "Fee-like snippets require exact international full-duration tuition reconciliation."
+      }
+    ],
+    "rawSnapshotPath": "data/imports/ucsi/2026-06-20/official-audit/raw/detail-103-item.html"
+  },
+  {
+    "code": "UCSI-BACHELOR-104",
+    "candidateCode": "UCSI-BACHELOR-104",
+    "nameEnOfficial": "Bachelor Of Classical Music (Hons.)",
+    "detailPageUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-classical-music-hons",
+    "sourceId": "detail-104-item",
+    "hasOptions": true,
+    "retrievalMethod": "rendered DOM via Playwright",
+    "options": [
+      {
+        "optionType": "same-programme official sublink",
+        "label": "programme related official links",
+        "governedFields": [
+          "brochure",
+          "application",
+          "requirements",
+          "courseSetting"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-BACHELOR-104:sameProgrammeLinks",
+        "reviewReason": "Related links were inventoried but not fully followed in this collect-only baseline pass."
+      },
+      {
+        "optionType": "fee panel",
+        "label": "fee amount snippets",
+        "governedFields": [
+          "fee"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-BACHELOR-104:feeSnippets",
+        "reviewReason": "Fee-like snippets require exact international full-duration tuition reconciliation."
+      }
+    ],
+    "rawSnapshotPath": "data/imports/ucsi/2026-06-20/official-audit/raw/detail-104-item.html"
+  },
+  {
+    "code": "UCSI-BACHELOR-105",
+    "candidateCode": "UCSI-BACHELOR-105",
+    "nameEnOfficial": "Bachelor Of Contemporary Music (Hons.)",
+    "detailPageUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-contemporary-music-hons",
+    "sourceId": "detail-105-item",
+    "hasOptions": true,
+    "retrievalMethod": "rendered DOM via Playwright",
+    "options": [
+      {
+        "optionType": "same-programme official sublink",
+        "label": "programme related official links",
+        "governedFields": [
+          "brochure",
+          "application",
+          "requirements",
+          "courseSetting"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-BACHELOR-105:sameProgrammeLinks",
+        "reviewReason": "Related links were inventoried but not fully followed in this collect-only baseline pass."
+      },
+      {
+        "optionType": "fee panel",
+        "label": "fee amount snippets",
+        "governedFields": [
+          "fee"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-BACHELOR-105:feeSnippets",
+        "reviewReason": "Fee-like snippets require exact international full-duration tuition reconciliation."
+      }
+    ],
+    "rawSnapshotPath": "data/imports/ucsi/2026-06-20/official-audit/raw/detail-105-item.html"
+  },
+  {
+    "code": "UCSI-MASTER-106",
+    "candidateCode": "UCSI-MASTER-106",
+    "nameEnOfficial": "Master Of Science Policy And Communication",
+    "detailPageUrl": "https://www.ucsiuniversity.edu.my/programmes/master-science-policy-and-communication",
+    "sourceId": "detail-106-item",
+    "hasOptions": true,
+    "retrievalMethod": "rendered DOM via Playwright",
+    "options": [
+      {
+        "optionType": "same-programme official sublink",
+        "label": "programme related official links",
+        "governedFields": [
+          "brochure",
+          "application",
+          "requirements",
+          "courseSetting"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-MASTER-106:sameProgrammeLinks",
+        "reviewReason": "Related links were inventoried but not fully followed in this collect-only baseline pass."
+      },
+      {
+        "optionType": "fee panel",
+        "label": "fee amount snippets",
+        "governedFields": [
+          "fee"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-MASTER-106:feeSnippets",
+        "reviewReason": "Fee-like snippets require exact international full-duration tuition reconciliation."
+      }
+    ],
+    "rawSnapshotPath": "data/imports/ucsi/2026-06-20/official-audit/raw/detail-106-item.html"
+  },
+  {
+    "code": "UCSI-MASTER-107",
+    "candidateCode": "UCSI-MASTER-107",
+    "nameEnOfficial": "Master In Science Diplomacy",
+    "detailPageUrl": "https://www.ucsiuniversity.edu.my/programmes/master-science-diplomacy",
+    "sourceId": "detail-107-item",
+    "hasOptions": true,
+    "retrievalMethod": "rendered DOM via Playwright",
+    "options": [
+      {
+        "optionType": "same-programme official sublink",
+        "label": "programme related official links",
+        "governedFields": [
+          "brochure",
+          "application",
+          "requirements",
+          "courseSetting"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-MASTER-107:sameProgrammeLinks",
+        "reviewReason": "Related links were inventoried but not fully followed in this collect-only baseline pass."
+      },
+      {
+        "optionType": "fee panel",
+        "label": "fee amount snippets",
+        "governedFields": [
+          "fee"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-MASTER-107:feeSnippets",
+        "reviewReason": "Fee-like snippets require exact international full-duration tuition reconciliation."
+      }
+    ],
+    "rawSnapshotPath": "data/imports/ucsi/2026-06-20/official-audit/raw/detail-107-item.html"
+  },
+  {
+    "code": "UCSI-MASTER-108",
+    "candidateCode": "UCSI-MASTER-108",
+    "nameEnOfficial": "Master In Environmental, Social And Governance Leadership",
+    "detailPageUrl": "https://www.ucsiuniversity.edu.my/programmes/master-environmental-social-and-governance-leadership",
+    "sourceId": "detail-108-item",
+    "hasOptions": true,
+    "retrievalMethod": "rendered DOM via Playwright",
+    "options": [
+      {
+        "optionType": "same-programme official sublink",
+        "label": "programme related official links",
+        "governedFields": [
+          "brochure",
+          "application",
+          "requirements",
+          "courseSetting"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-MASTER-108:sameProgrammeLinks",
+        "reviewReason": "Related links were inventoried but not fully followed in this collect-only baseline pass."
+      },
+      {
+        "optionType": "fee panel",
+        "label": "fee amount snippets",
+        "governedFields": [
+          "fee"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-MASTER-108:feeSnippets",
+        "reviewReason": "Fee-like snippets require exact international full-duration tuition reconciliation."
+      }
+    ],
+    "rawSnapshotPath": "data/imports/ucsi/2026-06-20/official-audit/raw/detail-108-item.html"
+  },
+  {
+    "code": "UCSI-MASTER-109",
+    "candidateCode": "UCSI-MASTER-109",
+    "nameEnOfficial": "Master Of Business Administration (Blue Ocean Strategy)",
+    "detailPageUrl": "https://www.ucsiuniversity.edu.my/programmes/master-business-administration-blue-ocean-strategy",
+    "sourceId": "detail-109-item",
+    "hasOptions": true,
+    "retrievalMethod": "rendered DOM via Playwright",
+    "options": [
+      {
+        "optionType": "same-programme official sublink",
+        "label": "programme related official links",
+        "governedFields": [
+          "brochure",
+          "application",
+          "requirements",
+          "courseSetting"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-MASTER-109:sameProgrammeLinks",
+        "reviewReason": "Related links were inventoried but not fully followed in this collect-only baseline pass."
+      },
+      {
+        "optionType": "fee panel",
+        "label": "fee amount snippets",
+        "governedFields": [
+          "fee"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-MASTER-109:feeSnippets",
+        "reviewReason": "Fee-like snippets require exact international full-duration tuition reconciliation."
+      }
+    ],
+    "rawSnapshotPath": "data/imports/ucsi/2026-06-20/official-audit/raw/detail-109-item.html"
+  },
+  {
+    "code": "UCSI-BACHELOR-110",
+    "candidateCode": "UCSI-BACHELOR-110",
+    "nameEnOfficial": "Bachelor In Business Management (Honours)",
+    "detailPageUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-business-management-honours",
+    "sourceId": "detail-110-item",
+    "hasOptions": true,
+    "retrievalMethod": "rendered DOM via Playwright",
+    "options": [
+      {
+        "optionType": "same-programme official sublink",
+        "label": "programme related official links",
+        "governedFields": [
+          "brochure",
+          "application",
+          "requirements",
+          "courseSetting"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-BACHELOR-110:sameProgrammeLinks",
+        "reviewReason": "Related links were inventoried but not fully followed in this collect-only baseline pass."
+      },
+      {
+        "optionType": "fee panel",
+        "label": "fee amount snippets",
+        "governedFields": [
+          "fee"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-BACHELOR-110:feeSnippets",
+        "reviewReason": "Fee-like snippets require exact international full-duration tuition reconciliation."
+      }
+    ],
+    "rawSnapshotPath": "data/imports/ucsi/2026-06-20/official-audit/raw/detail-110-item.html"
+  },
+  {
+    "code": "UCSI-BACHELOR-111",
+    "candidateCode": "UCSI-BACHELOR-111",
+    "nameEnOfficial": "Bachelor In International Business (Honours)",
+    "detailPageUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-international-business-honours",
+    "sourceId": "detail-111-item",
+    "hasOptions": true,
+    "retrievalMethod": "rendered DOM via Playwright",
+    "options": [
+      {
+        "optionType": "same-programme official sublink",
+        "label": "programme related official links",
+        "governedFields": [
+          "brochure",
+          "application",
+          "requirements",
+          "courseSetting"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-BACHELOR-111:sameProgrammeLinks",
+        "reviewReason": "Related links were inventoried but not fully followed in this collect-only baseline pass."
+      },
+      {
+        "optionType": "fee panel",
+        "label": "fee amount snippets",
+        "governedFields": [
+          "fee"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-BACHELOR-111:feeSnippets",
+        "reviewReason": "Fee-like snippets require exact international full-duration tuition reconciliation."
+      }
+    ],
+    "rawSnapshotPath": "data/imports/ucsi/2026-06-20/official-audit/raw/detail-111-item.html"
+  },
+  {
+    "code": "UCSI-BACHELOR-112",
+    "candidateCode": "UCSI-BACHELOR-112",
+    "nameEnOfficial": "Bachelor Of Commerce (Hons) In Accounting And Finance",
+    "detailPageUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-commerce-hons-accounting-and-finance-kuching-campus",
+    "sourceId": "detail-112-item",
+    "hasOptions": true,
+    "retrievalMethod": "rendered DOM via Playwright",
+    "options": [
+      {
+        "optionType": "same-programme official sublink",
+        "label": "programme related official links",
+        "governedFields": [
+          "brochure",
+          "application",
+          "requirements",
+          "courseSetting"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-BACHELOR-112:sameProgrammeLinks",
+        "reviewReason": "Related links were inventoried but not fully followed in this collect-only baseline pass."
+      },
+      {
+        "optionType": "fee panel",
+        "label": "fee amount snippets",
+        "governedFields": [
+          "fee"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-BACHELOR-112:feeSnippets",
+        "reviewReason": "Fee-like snippets require exact international full-duration tuition reconciliation."
+      }
+    ],
+    "rawSnapshotPath": "data/imports/ucsi/2026-06-20/official-audit/raw/detail-112-item.html"
+  },
+  {
+    "code": "UCSI-BACHELOR-113",
+    "candidateCode": "UCSI-BACHELOR-113",
+    "nameEnOfficial": "Bachelor Of Commerce (Hons) In Marketing",
+    "detailPageUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-commerce-hons-marketing",
+    "sourceId": "detail-113-item",
+    "hasOptions": true,
+    "retrievalMethod": "rendered DOM via Playwright",
+    "options": [
+      {
+        "optionType": "same-programme official sublink",
+        "label": "programme related official links",
+        "governedFields": [
+          "brochure",
+          "application",
+          "requirements",
+          "courseSetting"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-BACHELOR-113:sameProgrammeLinks",
+        "reviewReason": "Related links were inventoried but not fully followed in this collect-only baseline pass."
+      },
+      {
+        "optionType": "fee panel",
+        "label": "fee amount snippets",
+        "governedFields": [
+          "fee"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-BACHELOR-113:feeSnippets",
+        "reviewReason": "Fee-like snippets require exact international full-duration tuition reconciliation."
+      }
+    ],
+    "rawSnapshotPath": "data/imports/ucsi/2026-06-20/official-audit/raw/detail-113-item.html"
+  },
+  {
+    "code": "UCSI-BACHELOR-114",
+    "candidateCode": "UCSI-BACHELOR-114",
+    "nameEnOfficial": "Bachelor Of Arts (Honours) In Culinary Management",
+    "detailPageUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-arts-honours-culinary-management-kuching-campus",
+    "sourceId": "detail-114-item",
+    "hasOptions": true,
+    "retrievalMethod": "rendered DOM via Playwright",
+    "options": [
+      {
+        "optionType": "same-programme official sublink",
+        "label": "programme related official links",
+        "governedFields": [
+          "brochure",
+          "application",
+          "requirements",
+          "courseSetting"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-BACHELOR-114:sameProgrammeLinks",
+        "reviewReason": "Related links were inventoried but not fully followed in this collect-only baseline pass."
+      },
+      {
+        "optionType": "fee panel",
+        "label": "fee amount snippets",
+        "governedFields": [
+          "fee"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-BACHELOR-114:feeSnippets",
+        "reviewReason": "Fee-like snippets require exact international full-duration tuition reconciliation."
+      }
+    ],
+    "rawSnapshotPath": "data/imports/ucsi/2026-06-20/official-audit/raw/detail-114-item.html"
+  },
+  {
+    "code": "UCSI-PHD-115",
+    "candidateCode": "UCSI-PHD-115",
+    "nameEnOfficial": "Doctor Of Philosophy (Medical Sciences)",
+    "detailPageUrl": "https://www.ucsiuniversity.edu.my/programmes/doctor-philosophy-medical-sciences",
+    "sourceId": "detail-115-item",
+    "hasOptions": true,
+    "retrievalMethod": "rendered DOM via Playwright",
+    "options": [
+      {
+        "optionType": "same-programme official sublink",
+        "label": "programme related official links",
+        "governedFields": [
+          "brochure",
+          "application",
+          "requirements",
+          "courseSetting"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-PHD-115:sameProgrammeLinks",
+        "reviewReason": "Related links were inventoried but not fully followed in this collect-only baseline pass."
+      },
+      {
+        "optionType": "fee panel",
+        "label": "fee amount snippets",
+        "governedFields": [
+          "fee"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-PHD-115:feeSnippets",
+        "reviewReason": "Fee-like snippets require exact international full-duration tuition reconciliation."
+      }
+    ],
+    "rawSnapshotPath": "data/imports/ucsi/2026-06-20/official-audit/raw/detail-115-item.html"
+  },
+  {
+    "code": "UCSI-BACHELOR-116",
+    "candidateCode": "UCSI-BACHELOR-116",
+    "nameEnOfficial": "Doctor Of Medicine (MD)",
+    "detailPageUrl": "https://www.ucsiuniversity.edu.my/programmes/doctor-medicine-md",
+    "sourceId": "detail-116-item",
+    "hasOptions": true,
+    "retrievalMethod": "rendered DOM via Playwright",
+    "options": [
+      {
+        "optionType": "same-programme official sublink",
+        "label": "programme related official links",
+        "governedFields": [
+          "brochure",
+          "application",
+          "requirements",
+          "courseSetting"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-BACHELOR-116:sameProgrammeLinks",
+        "reviewReason": "Related links were inventoried but not fully followed in this collect-only baseline pass."
+      },
+      {
+        "optionType": "fee panel",
+        "label": "fee amount snippets",
+        "governedFields": [
+          "fee"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-BACHELOR-116:feeSnippets",
+        "reviewReason": "Fee-like snippets require exact international full-duration tuition reconciliation."
+      }
+    ],
+    "rawSnapshotPath": "data/imports/ucsi/2026-06-20/official-audit/raw/detail-116-item.html"
+  },
+  {
+    "code": "UCSI-BACHELOR-117",
+    "candidateCode": "UCSI-BACHELOR-117",
+    "nameEnOfficial": "Bachelor Of Nursing (Hons)",
+    "detailPageUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-nursing-hons",
+    "sourceId": "detail-117-item",
+    "hasOptions": true,
+    "retrievalMethod": "rendered DOM via Playwright",
+    "options": [
+      {
+        "optionType": "same-programme official sublink",
+        "label": "programme related official links",
+        "governedFields": [
+          "brochure",
+          "application",
+          "requirements",
+          "courseSetting"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-BACHELOR-117:sameProgrammeLinks",
+        "reviewReason": "Related links were inventoried but not fully followed in this collect-only baseline pass."
+      },
+      {
+        "optionType": "fee panel",
+        "label": "fee amount snippets",
+        "governedFields": [
+          "fee"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-BACHELOR-117:feeSnippets",
+        "reviewReason": "Fee-like snippets require exact international full-duration tuition reconciliation."
+      }
+    ],
+    "rawSnapshotPath": "data/imports/ucsi/2026-06-20/official-audit/raw/detail-117-item.html"
+  },
+  {
+    "code": "UCSI-BACHELOR-118",
+    "candidateCode": "UCSI-BACHELOR-118",
+    "nameEnOfficial": "Bachelor Of Arts (Honours) In Hospitality Management",
+    "detailPageUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-arts-honours-hospitality-management",
+    "sourceId": "detail-118-item",
+    "hasOptions": true,
+    "retrievalMethod": "rendered DOM via Playwright",
+    "options": [
+      {
+        "optionType": "same-programme official sublink",
+        "label": "programme related official links",
+        "governedFields": [
+          "brochure",
+          "application",
+          "requirements",
+          "courseSetting"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-BACHELOR-118:sameProgrammeLinks",
+        "reviewReason": "Related links were inventoried but not fully followed in this collect-only baseline pass."
+      },
+      {
+        "optionType": "fee panel",
+        "label": "fee amount snippets",
+        "governedFields": [
+          "fee"
+        ],
+        "state": "needs-review",
+        "evidencePointer": "UCSI-BACHELOR-118:feeSnippets",
+        "reviewReason": "Fee-like snippets require exact international full-duration tuition reconciliation."
+      }
+    ],
+    "rawSnapshotPath": "data/imports/ucsi/2026-06-20/official-audit/raw/detail-118-item.html"
+  }
+]

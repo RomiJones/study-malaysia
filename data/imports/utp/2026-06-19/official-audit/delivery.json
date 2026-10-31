@@ -1,0 +1,838 @@
+{
+  "schemaVersion": 2,
+  "officialDomains": [
+    "utp.edu.my",
+    "utpdec.microsoftcrmportals.com"
+  ],
+  "scope": {
+    "universityCode": "UTP",
+    "collectionScope": "full",
+    "levels": [
+      "bachelor",
+      "master",
+      "phd"
+    ],
+    "applicantScope": "international",
+    "academicSession": "Current official intake cycle as of 2026-06-19; UG fees effective May 2026; 2026 UG/PG intakes; PG tuition page states effective January 2020/current intake year."
+  },
+  "authorization": "publish",
+  "counts": {
+    "directoryOccurrences": 63,
+    "uniqueOfficialEntries": 63,
+    "canonicalProgrammes": 63,
+    "ready": 63,
+    "needsReview": 0,
+    "notAvailableForInternational": 0,
+    "byLevel": {
+      "bachelor": 15,
+      "master": 37,
+      "phd": 11
+    }
+  },
+  "coverage": {
+    "identity": {
+      "covered": 63,
+      "unpublished": 0,
+      "review": 0
+    },
+    "faculty": {
+      "covered": 63,
+      "unpublished": 0,
+      "review": 0
+    },
+    "studyMode": {
+      "covered": 63,
+      "unpublished": 0,
+      "review": 0
+    },
+    "campus": {
+      "covered": 63,
+      "unpublished": 0,
+      "review": 0
+    },
+    "duration": {
+      "covered": 63,
+      "unpublished": 0,
+      "review": 0
+    },
+    "intake": {
+      "covered": 63,
+      "unpublished": 0,
+      "review": 0
+    },
+    "internationalEligibility": {
+      "covered": 63,
+      "unpublished": 0,
+      "review": 0
+    },
+    "academicRequirement": {
+      "covered": 63,
+      "unpublished": 0,
+      "review": 0
+    },
+    "languageRequirement": {
+      "covered": 63,
+      "unpublished": 0,
+      "review": 0
+    },
+    "applicationDocuments": {
+      "covered": 63,
+      "unpublished": 0,
+      "review": 0
+    },
+    "fee": {
+      "covered": 63,
+      "unpublished": 0,
+      "review": 0
+    },
+    "evidence": {
+      "covered": 63,
+      "unpublished": 0,
+      "review": 0
+    },
+    "institutionProfile": {
+      "covered": 1,
+      "unpublished": 0,
+      "review": 0
+    },
+    "officialTitle": {
+      "covered": 63,
+      "unpublished": 0,
+      "review": 0
+    },
+    "level": {
+      "covered": 63,
+      "unpublished": 0,
+      "review": 0
+    },
+    "mode": {
+      "covered": 63,
+      "unpublished": 0,
+      "review": 0
+    },
+    "applicantScope": {
+      "covered": 63,
+      "unpublished": 0,
+      "review": 0
+    },
+    "studyType": {
+      "covered": 63,
+      "unpublished": 0,
+      "review": 0
+    },
+    "studyArrangement": {
+      "covered": 63,
+      "unpublished": 0,
+      "review": 0
+    },
+    "tuitionAmount": {
+      "covered": 63,
+      "unpublished": 0,
+      "review": 0
+    },
+    "tuitionCurrency": {
+      "covered": 63,
+      "unpublished": 0,
+      "review": 0
+    },
+    "tuitionBasis": {
+      "covered": 63,
+      "unpublished": 0,
+      "review": 0
+    },
+    "feeSession": {
+      "covered": 63,
+      "unpublished": 0,
+      "review": 0
+    },
+    "feeStatus": {
+      "covered": 63,
+      "unpublished": 0,
+      "review": 0
+    },
+    "academicEntry": {
+      "covered": 63,
+      "unpublished": 0,
+      "review": 0
+    },
+    "gpaCgpa": {
+      "covered": 63,
+      "unpublished": 0,
+      "review": 0
+    },
+    "languageScores": {
+      "covered": 63,
+      "unpublished": 0,
+      "review": 0
+    },
+    "overview": {
+      "covered": 63,
+      "unpublished": 0,
+      "review": 0
+    },
+    "courseSetting": {
+      "covered": 63,
+      "unpublished": 0,
+      "review": 0
+    },
+    "individualCourseTitles": {
+      "covered": 36,
+      "unpublished": 27,
+      "review": 0
+    },
+    "curriculumStructure": {
+      "covered": 63,
+      "unpublished": 0,
+      "review": 0
+    },
+    "internshipProjectDissertation": {
+      "covered": 40,
+      "unpublished": 23,
+      "review": 0
+    },
+    "specializationsResearchAreas": {
+      "covered": 41,
+      "unpublished": 22,
+      "review": 0
+    },
+    "careers": {
+      "covered": 36,
+      "unpublished": 27,
+      "review": 0
+    },
+    "officialSourceUrl": {
+      "covered": 63,
+      "unpublished": 0,
+      "review": 0
+    },
+    "verifiedAt": {
+      "covered": 63,
+      "unpublished": 0,
+      "review": 0
+    },
+    "chineseLocalization": {
+      "covered": 63,
+      "unpublished": 0,
+      "review": 0
+    },
+    "localization": {
+      "covered": 63,
+      "unpublished": 0,
+      "review": 0
+    }
+  },
+  "sources": [
+    {
+      "id": "institution-home",
+      "url": "https://www.utp.edu.my/Pages/Home.aspx",
+      "role": "institution-authority",
+      "sourceType": "official-page",
+      "fields": [
+        "officialName",
+        "officialWebsite",
+        "profile",
+        "admissionLinks"
+      ],
+      "retrievedAt": "2026-06-19T14:51:42.670124+00:00",
+      "academicSession": "Current official intake cycle as of 2026-06-19; UG fees effective May 2026; 2026 UG/PG intakes; PG tuition page states effective January 2020/current intake year.",
+      "status": "cached",
+      "localPath": "data/imports/utp/2026-06-19/official-audit/sources/html/home.html",
+      "sha256": "1fb1d84bd63e37e0be4d493307feac534b05166b8a24928219ecaa14ca93869f"
+    },
+    {
+      "id": "undergraduate-home",
+      "url": "https://www.utp.edu.my/Pages/Admission/Home/Undergraduate.aspx",
+      "role": "canonical",
+      "sourceType": "official-page",
+      "fields": [
+        "bachelorProgrammeDirectory",
+        "bachelorDuration"
+      ],
+      "retrievedAt": "2026-06-19T14:51:43.154505+00:00",
+      "academicSession": "Current official intake cycle as of 2026-06-19; UG fees effective May 2026; 2026 UG/PG intakes; PG tuition page states effective January 2020/current intake year.",
+      "status": "cached",
+      "localPath": "data/imports/utp/2026-06-19/official-audit/sources/html/undergraduate-home.html",
+      "sha256": "1e39d8d9e9adadc941ac4541fd4bcaf5353d09fd073bfe4140d14290482a7524"
+    },
+    {
+      "id": "programme-offered",
+      "url": "https://www.utp.edu.my/Pages/Students/Prospective%20Files/Programme-Offered.aspx",
+      "role": "canonical",
+      "sourceType": "official-page",
+      "fields": [
+        "programmeRows",
+        "mqaCodes"
+      ],
+      "retrievedAt": "2026-06-19T14:51:43.911397+00:00",
+      "academicSession": "Current official intake cycle as of 2026-06-19; UG fees effective May 2026; 2026 UG/PG intakes; PG tuition page states effective January 2020/current intake year.",
+      "status": "cached",
+      "localPath": "data/imports/utp/2026-06-19/official-audit/sources/html/programme-offered.html",
+      "sha256": "23f2c5a08f1deb09c8625511d03b7ea2541112dc8f02eec39c2bde61fd04cd41"
+    },
+    {
+      "id": "ug-international-tuition",
+      "url": "https://www.utp.edu.my/Pages/Admission/Undergraduate/International/Tuition-fees.aspx",
+      "role": "field-authority",
+      "sourceType": "official-page",
+      "fields": [
+        "undergraduateTuition",
+        "feeSession"
+      ],
+      "retrievedAt": "2026-06-19T14:51:44.826214+00:00",
+      "academicSession": "Current official intake cycle as of 2026-06-19; UG fees effective May 2026; 2026 UG/PG intakes; PG tuition page states effective January 2020/current intake year.",
+      "status": "cached",
+      "localPath": "data/imports/utp/2026-06-19/official-audit/sources/html/undergraduate-international-tuition.html",
+      "sha256": "3628352fb3ff36bbdc9545f3db80e965b8e36e05ada396e6e4fb3959fa40cf68"
+    },
+    {
+      "id": "ug-international-entry",
+      "url": "https://www.utp.edu.my/Pages/Admission/Undergraduate/International/Entry-Requirement.aspx",
+      "role": "field-authority",
+      "sourceType": "official-page",
+      "fields": [
+        "undergraduateEntry",
+        "undergraduateLanguage"
+      ],
+      "retrievedAt": "2026-06-19T14:51:45.380823+00:00",
+      "academicSession": "Current official intake cycle as of 2026-06-19; UG fees effective May 2026; 2026 UG/PG intakes; PG tuition page states effective January 2020/current intake year.",
+      "status": "cached",
+      "localPath": "data/imports/utp/2026-06-19/official-audit/sources/html/undergraduate-international-entry-requirement.html",
+      "sha256": "ff347c4f4e8ff6d59de298d214e8991e7c75039bd9421230bae3929146944f95"
+    },
+    {
+      "id": "ug-international-apply",
+      "url": "https://www.utp.edu.my/Pages/Admission/Undergraduate/International/How-To-Apply.aspx",
+      "role": "field-authority",
+      "sourceType": "official-page",
+      "fields": [
+        "undergraduateDocuments",
+        "undergraduateIntake"
+      ],
+      "retrievedAt": "2026-06-19T14:51:46.029514+00:00",
+      "academicSession": "Current official intake cycle as of 2026-06-19; UG fees effective May 2026; 2026 UG/PG intakes; PG tuition page states effective January 2020/current intake year.",
+      "status": "cached",
+      "localPath": "data/imports/utp/2026-06-19/official-audit/sources/html/undergraduate-international-how-to-apply.html",
+      "sha256": "f7130846c37ce8f0a33a01ab7f5cdbd4d857af77c11427cb9777058c4a290f72"
+    },
+    {
+      "id": "postgraduate-home",
+      "url": "https://www.utp.edu.my/Pages/Admission/Home/Postgraduate.aspx",
+      "role": "cross-check",
+      "sourceType": "official-page",
+      "fields": [
+        "postgraduateOverview"
+      ],
+      "retrievedAt": "2026-06-19T14:51:46.679303+00:00",
+      "academicSession": "Current official intake cycle as of 2026-06-19; UG fees effective May 2026; 2026 UG/PG intakes; PG tuition page states effective January 2020/current intake year.",
+      "status": "cached",
+      "localPath": "data/imports/utp/2026-06-19/official-audit/sources/html/postgraduate-home.html",
+      "sha256": "2c4449c23017413c183ba8e0060edfd7aa2d5a86210e4b85024b7f3551fbcffc"
+    },
+    {
+      "id": "master-coursework-directory",
+      "url": "https://www.utp.edu.my/Pages/Admission/Postgraduate/Master-by-Coursework.aspx",
+      "role": "canonical",
+      "sourceType": "official-page",
+      "fields": [
+        "masterCourseworkRows",
+        "courseworkDuration"
+      ],
+      "retrievedAt": "2026-06-19T14:51:47.463376+00:00",
+      "academicSession": "Current official intake cycle as of 2026-06-19; UG fees effective May 2026; 2026 UG/PG intakes; PG tuition page states effective January 2020/current intake year.",
+      "status": "cached",
+      "localPath": "data/imports/utp/2026-06-19/official-audit/sources/html/master-by-coursework.html",
+      "sha256": "db3fb525465bcfbe9ba7b2d9b36455a6a044666356515c350f8c16e4961061fc"
+    },
+    {
+      "id": "master-research-directory",
+      "url": "https://www.utp.edu.my/Pages/Admission/Postgraduate/Master-by-Research.aspx",
+      "role": "canonical",
+      "sourceType": "official-page",
+      "fields": [
+        "masterResearchRows",
+        "researchDuration",
+        "researchAreas"
+      ],
+      "retrievedAt": "2026-06-19T14:51:48.059404+00:00",
+      "academicSession": "Current official intake cycle as of 2026-06-19; UG fees effective May 2026; 2026 UG/PG intakes; PG tuition page states effective January 2020/current intake year.",
+      "status": "cached",
+      "localPath": "data/imports/utp/2026-06-19/official-audit/sources/html/master-by-research.html",
+      "sha256": "1b13e1065b69f7f9e65198a6c37dd195b4e65b4190bca8ffe07cf89f0f864eef"
+    },
+    {
+      "id": "phd-directory",
+      "url": "https://www.utp.edu.my/Pages/Admission/Postgraduate/PhD.aspx",
+      "role": "canonical",
+      "sourceType": "official-page",
+      "fields": [
+        "phdRows",
+        "phdDuration",
+        "researchAreas"
+      ],
+      "retrievedAt": "2026-06-19T14:51:48.853890+00:00",
+      "academicSession": "Current official intake cycle as of 2026-06-19; UG fees effective May 2026; 2026 UG/PG intakes; PG tuition page states effective January 2020/current intake year.",
+      "status": "cached",
+      "localPath": "data/imports/utp/2026-06-19/official-audit/sources/html/phd.html",
+      "sha256": "59cf6d7aaa38917ccc7869f3e62d287d24de56713e2dd1651150dd16739b03df"
+    },
+    {
+      "id": "pg-international-tuition",
+      "url": "https://www.utp.edu.my/Pages/Admission/Postgraduate/International-Applicants/Tuition-fees.aspx",
+      "role": "field-authority",
+      "sourceType": "official-page",
+      "fields": [
+        "postgraduateTuition",
+        "assistantship",
+        "feeNotes"
+      ],
+      "retrievedAt": "2026-06-19T14:51:49.304136+00:00",
+      "academicSession": "Current official intake cycle as of 2026-06-19; UG fees effective May 2026; 2026 UG/PG intakes; PG tuition page states effective January 2020/current intake year.",
+      "status": "cached",
+      "localPath": "data/imports/utp/2026-06-19/official-audit/sources/html/postgraduate-international-tuition.html",
+      "sha256": "a27c047e0bb0fe558f492a29b0ff8fd1381c167e6b54cf2746df47c6926a0efc"
+    },
+    {
+      "id": "pg-international-entry",
+      "url": "https://www.utp.edu.my/Pages/Admission/Postgraduate/International-Applicants/Entry-Requirement.aspx",
+      "role": "field-authority",
+      "sourceType": "official-page",
+      "fields": [
+        "postgraduateEntry",
+        "postgraduateLanguage"
+      ],
+      "retrievedAt": "2026-06-19T14:51:50.032556+00:00",
+      "academicSession": "Current official intake cycle as of 2026-06-19; UG fees effective May 2026; 2026 UG/PG intakes; PG tuition page states effective January 2020/current intake year.",
+      "status": "cached",
+      "localPath": "data/imports/utp/2026-06-19/official-audit/sources/html/postgraduate-international-entry-requirement.html",
+      "sha256": "803a9b55425b6742024efa9e47e0b9cab2d0512d2c867c8564d4b0cfbf85d3e5"
+    },
+    {
+      "id": "pg-international-apply",
+      "url": "https://www.utp.edu.my/Pages/Admission/Postgraduate/International-Applicants/How-To-Apply.aspx",
+      "role": "field-authority",
+      "sourceType": "official-page",
+      "fields": [
+        "postgraduateDocuments",
+        "postgraduateIntake"
+      ],
+      "retrievedAt": "2026-06-19T14:51:50.455933+00:00",
+      "academicSession": "Current official intake cycle as of 2026-06-19; UG fees effective May 2026; 2026 UG/PG intakes; PG tuition page states effective January 2020/current intake year.",
+      "status": "cached",
+      "localPath": "data/imports/utp/2026-06-19/official-audit/sources/html/postgraduate-international-how-to-apply.html",
+      "sha256": "4c7668128bb22fa46850c89258dbbce88358c60eb580745be9269dc693751a67"
+    },
+    {
+      "id": "pg-brochure-2025",
+      "url": "https://www.utp.edu.my/sites/Publishing/PublishingContent/Academic/Brochures/2025/PG%40UTP.pdf",
+      "role": "cross-check",
+      "sourceType": "official-pdf",
+      "fields": [
+        "postgraduateCrossCheck"
+      ],
+      "retrievedAt": "2026-06-19T14:51:51.076532+00:00",
+      "academicSession": "Current official intake cycle as of 2026-06-19; UG fees effective May 2026; 2026 UG/PG intakes; PG tuition page states effective January 2020/current intake year.",
+      "status": "cached",
+      "localPath": "data/imports/utp/2026-06-19/official-audit/sources/pdf/pg-utp-2025.pdf",
+      "sha256": "78f0323a3c8e1e1cd02e44c927ad88d21bc41f6e5f3da799ca6fe1ddbfd56d6d"
+    },
+    {
+      "id": "ug-brochure-2025",
+      "url": "https://www.utp.edu.my/sites/Publishing/PublishingContent/Admission/e-Brochures/Undergraduate/2025/Brochure%20Undergraduate%20Programmes_20%20January%202025.pdf",
+      "role": "cross-check",
+      "sourceType": "official-pdf",
+      "fields": [
+        "undergraduateCrossCheck"
+      ],
+      "retrievedAt": "2026-06-19T14:51:54.122351+00:00",
+      "academicSession": "Current official intake cycle as of 2026-06-19; UG fees effective May 2026; 2026 UG/PG intakes; PG tuition page states effective January 2020/current intake year.",
+      "status": "cached",
+      "localPath": "data/imports/utp/2026-06-19/official-audit/sources/pdf/ug-programmes-2025.pdf",
+      "sha256": "944e8f40b63bc2bad576b72971f3e8b6980e11bb5e7cb2963f04638db575f34f"
+    },
+    {
+      "id": "pg-admission-terms-2026",
+      "url": "https://www.utp.edu.my/sites/Publishing/PublishingContent/2026/UCampus/Offer%20Package%20Document/Research%20%26%20Conventional/Admission%20Terms%20%26%20Conditions%20-%20International%20Postgraduate%20%28Research%20%26%20Conventional%29.pdf",
+      "role": "cross-check",
+      "sourceType": "official-pdf",
+      "fields": [
+        "postgraduateAdmissionTerms",
+        "postgraduateFeeCrossCheck"
+      ],
+      "retrievedAt": "2026-06-19T14:51:54.306048+00:00",
+      "academicSession": "Current official intake cycle as of 2026-06-19; UG fees effective May 2026; 2026 UG/PG intakes; PG tuition page states effective January 2020/current intake year.",
+      "status": "cached",
+      "localPath": "data/imports/utp/2026-06-19/official-audit/sources/pdf/pg-admission-terms-international-2026.pdf",
+      "sha256": "6d4beec10675401c074eb82fa3e7595d392baaa28fdaeb35014a9567ab21714a"
+    }
+  ],
+  "artifacts": [
+    {
+      "role": "manifest",
+      "path": "00_run_contract.json",
+      "sha256": "291f95e7f45f07ca3b794c292ead2b5caee6a7ba92578ecf1da1f0b0eb2ae9cc",
+      "description": "Run contract"
+    },
+    {
+      "role": "instruction-execution-ledger",
+      "path": "01_instruction_execution_ledger.json",
+      "sha256": "bec07c04ce577e1b60ce39d6943fa211aa70b0d1753f42fc65e13b86f1b1d63e",
+      "description": "Instruction execution ledger"
+    },
+    {
+      "role": "manifest",
+      "path": "03_level_manifest.json",
+      "sha256": "c75cb591a16970e2e00412f41980fe307a104c2416eb3f3496cfc1dc9369dc6f",
+      "description": "Level manifest"
+    },
+    {
+      "role": "official-row-disposal",
+      "path": "04_official_row_disposal.json",
+      "sha256": "349a1f5a40fcf7bf07973bd1a1f040cb7b7fe8dc96543cb5e9fed9f07758633b",
+      "description": "Official row disposal"
+    },
+    {
+      "path": "05_source_cache_index.json",
+      "role": "source-snapshot",
+      "title": "Source cache index",
+      "sha256": "0cc9d5a311f261e6f2f3f4c476f110deaa683fc463b6d080331c5960758d3f8c"
+    },
+    {
+      "role": "page-option-inventory",
+      "path": "06_page_option_inventory.json",
+      "sha256": "d0774c2bb18fc5654a7a97f1f3283b845ae60309139e0c7cfd86e13e2d83d8b8",
+      "description": "Programme page option inventory"
+    },
+    {
+      "path": "07_field_coverage_matrix.json",
+      "role": "field-coverage-matrix",
+      "title": "Field coverage matrix",
+      "sha256": "74a308b986667a7e004bb43deebc5106e21683c8c95bd0a125de5e22e19ef01d"
+    },
+    {
+      "path": "08_candidate_dataset.json",
+      "role": "candidate",
+      "title": "Candidate dataset",
+      "sha256": "b9e8d31fa849a07ef7b7114e0c7ae5a8e5d374b9e855df0d29155255aaa99057"
+    },
+    {
+      "role": "source-trace",
+      "path": "09_source_to_candidate_trace.json",
+      "sha256": "5d284c1c548df6123d3bd7a901335b9d7eb50f43396546fab83782744ed3a46c",
+      "description": "Source to candidate trace"
+    },
+    {
+      "role": "display-parity-report",
+      "path": "10_display_parity_report.json",
+      "sha256": "6e93ee32cee8fca233e29f2d030fe1e8b2af846c376b9ee9477207b09d2313d5",
+      "description": "Display parity report"
+    },
+    {
+      "role": "audit",
+      "path": "11_exception_queue.json",
+      "sha256": "1710d11c74236b474679908d0694025805900b7bf007e5acd83e20cebeb8827e",
+      "description": "Exception queue"
+    },
+    {
+      "role": "report",
+      "path": "12_operator_review_report.md",
+      "sha256": "e7ff9fff4a91e252e17adebf2e26045b71a554d7c13718aa8502875fdfb7cca5",
+      "description": "Operator review report"
+    },
+    {
+      "role": "audit",
+      "path": "13_pre_import_gap_audit.json",
+      "sha256": "2f92cca85f4deaa6a12d39c51c6048ba7a25b36f362362fdc9cc6cfb885e5733",
+      "description": "Pre-import gap audit"
+    },
+    {
+      "role": "audit",
+      "path": "14_current_official_diff_audit.json",
+      "sha256": "4fabd0f9dd505dd921309b1a38463f56507a54147e3fbec8d69233193859561d",
+      "description": "Current official diff audit"
+    },
+    {
+      "path": "15_published_programme_completeness_audit.json",
+      "role": "audit",
+      "title": "Published programme completeness audit",
+      "sha256": "6431869fbaa6cfa41353377cadef4defe0f6faaf2499b34b5f3d2ac5a7a78e79"
+    },
+    {
+      "path": "18_review_import_acceptance_standard.md",
+      "role": "report",
+      "title": "Review import acceptance standard",
+      "sha256": "1ba963dff744dca57a028d56641d090e60944c2ebed03bb62f91562f11f1bd1e"
+    },
+    {
+      "path": "19_hard_issue_resolution_audit.json",
+      "role": "audit",
+      "title": "Hard issue resolution audit",
+      "sha256": "3824724253c2389c7c75ecabfbbdc4f8440f2b0ba6f47e2cc81ddc12b94e0d2e"
+    },
+    {
+      "path": "20_hard_issue_refresh_post_import_audit.json",
+      "role": "audit",
+      "title": "Hard issue refresh post-import audit",
+      "sha256": "bd3917940bbef1212302dee87dd40fa4785ec6bd908856e6854e69fb20e61f9f"
+    },
+    {
+      "path": "21_hard_issue_refresh_verify_audit.json",
+      "role": "audit",
+      "title": "Hard issue refresh verify audit",
+      "sha256": "26febe54b5f8fe2203adff0a4a161ef0dc0314e7d7b4720e9f6ad6f360860358"
+    },
+    {
+      "path": "22_public_release_readiness_audit.json",
+      "role": "audit",
+      "title": "Public release readiness audit",
+      "sha256": "9ea2755fac6b454bfc37e683f18e00facb6b122cc98b412770611a39868d5ee5"
+    },
+    {
+      "path": "23_public_release_repair_audit.json",
+      "role": "audit",
+      "title": "Public release repair audit",
+      "sha256": "28e767b7bb200caa3cb1ee4fe233892ca48d54a9ad60ca5be941578f854ecb6e"
+    },
+    {
+      "path": "24_public_release_repair_verify_audit.json",
+      "role": "audit",
+      "title": "Public release repair verify audit",
+      "sha256": "26febe54b5f8fe2203adff0a4a161ef0dc0314e7d7b4720e9f6ad6f360860358"
+    },
+    {
+      "path": "25_research_fee_authority_audit.json",
+      "role": "audit",
+      "title": "Research fee authority audit",
+      "sha256": "0c4ffb993132e63753ced51bcb811b16ffbaaa0d00e16fee76cfe126a7e49271"
+    },
+    {
+      "path": "26_chinese_localization_audit.json",
+      "role": "audit",
+      "title": "Chinese localization audit",
+      "sha256": "3405eab2d672d6a39c5e70bd1049440d3be3f3e56c0e053927695f52e6278b35"
+    },
+    {
+      "path": "27_public_release_remediation_audit.json",
+      "role": "audit",
+      "title": "Public release remediation audit",
+      "sha256": "3debd2076bdbed8aea32056e390387a1cb4da0f520bf2c9debf14f877494222c"
+    },
+    {
+      "path": "02_official_source_registry.json",
+      "role": "source-snapshot",
+      "title": "Official source registry",
+      "sha256": "78e6d64aaf4d926f6e59d45964862093908c252569e2df90be34ed7c3fe157aa"
+    },
+    {
+      "path": "28_public_release_remediation_post_import_audit.json",
+      "role": "audit",
+      "title": "Public release remediation post-import audit",
+      "sha256": "4b52120dd8e3dfd38f145dab36579056f0b3e62939a07df6419bd8a7e93a95d6"
+    },
+    {
+      "path": "29_public_release_remediation_verify_audit.json",
+      "role": "audit",
+      "title": "Public release remediation verify audit",
+      "sha256": "26febe54b5f8fe2203adff0a4a161ef0dc0314e7d7b4720e9f6ad6f360860358"
+    },
+    {
+      "path": "30_candidate_integrity_after_remediation.json",
+      "role": "audit",
+      "title": "Candidate integrity after remediation",
+      "sha256": "2ab18e49c8a4a5c6de1b6a0c8e4197f9297dc6b83cccb577bee70f7562baca08"
+    },
+    {
+      "path": "32_final_frontend_review_readiness.json",
+      "role": "audit",
+      "title": "Final frontend review readiness summary",
+      "sha256": "df7b254aa52ec08a330e0c472ef1197b853380cf3bab3b2ef9bfacabbd812723"
+    },
+    {
+      "role": "audit",
+      "path": "33_publication_post_import_audit.json",
+      "sha256": "ce2620401eac1d8064cf52022ed88ebd49e8875717a016bf19bda0b8cc4514ac",
+      "description": "Authorized publication import post-import audit"
+    },
+    {
+      "role": "audit",
+      "path": "34_publication_verify_audit.json",
+      "sha256": "52930c8158c0672e169ce3628fde81a58f8c519ac02467425127e900a0c706a0",
+      "description": "Authorized publication database verification audit"
+    },
+    {
+      "role": "audit",
+      "path": "35_public_api_ui_publication_audit.json",
+      "sha256": "9c593b8c28b1d8a4a60d044f0077a3751a6d6c1bb33723dcae8a0ee8056cb304",
+      "description": "Public API and four-locale UI verification audit"
+    },
+    {
+      "role": "report",
+      "path": "36_final_publication_delivery_audit.json",
+      "sha256": "d580ff29bf18bd219c1868f7df92abfd114fbb1f65908afc6aa165f18555efe0",
+      "description": "Final publication delivery audit and admin review boundary"
+    },
+    {
+      "role": "audit",
+      "path": "37_pipeline_import_publish_after_publication.json",
+      "sha256": "a418db1a27224f98956495f2cf7924fa394497806b511d8cdd84c77912724fef",
+      "description": "Pipeline import_publish stage audit after authorized publication"
+    },
+    {
+      "role": "backup",
+      "path": "38_publication_database_backup_before_import.json",
+      "sha256": "2dd69ebbcf463a0890f778f7c23cdaa60e2e5b9c4dc1f0bf3681b55975918dd9",
+      "description": "Archived database backup before authorized UTP publication import"
+    },
+    {
+      "role": "backup",
+      "path": "39_qs2027_before_sorting_fix_backup.json",
+      "sha256": "391ad1b38226c6ff1175de4b03164830dbca869a54c506fcb630fb4411af4516",
+      "description": "QS WUR 2027 ranking sync backup before UTP sorting correction"
+    },
+    {
+      "role": "audit",
+      "path": "40_qs2027_utp_sorting_fix_report.json",
+      "sha256": "f57858da047f12c946e01db9d5b9b82482b37dec082792c9171695ea24b846de",
+      "description": "QS WUR 2027 sync report correcting UTP rank"
+    },
+    {
+      "role": "audit",
+      "path": "41_qs2027_sorting_correction_audit.json",
+      "sha256": "90007b0d0fdae5cfe53263a536958efad5012a29df9020671803b9f419a1b9bb",
+      "description": "UTP QS WUR 2027 public ordering correction audit"
+    },
+    {
+      "path": "42_missing_field_remediation_audit.json",
+      "role": "audit",
+      "title": "UTP missing field remediation audit",
+      "description": "Official-supported missing field remediation audit for UTP academic requirements, curriculum, overviews, research settings and page-option closure",
+      "sha256": "52d1f36304c40a2d5f03f7eacf53059bd47ec9fe25bfb600c7c667b951ff4e43"
+    },
+    {
+      "role": "audit",
+      "path": "43_missing_field_remediation_post_import_audit.json",
+      "sha256": "d375abc99b682f10e35ade51414879a50219c250532d4c95e45eb52f420408f1",
+      "description": "Post-import verification for UTP missing-field remediation import",
+      "title": "UTP missing-field remediation post-import audit"
+    },
+    {
+      "role": "backup",
+      "path": "44_missing_field_remediation_database_backup_before_import.json",
+      "sha256": "8a303c5d0bfd2e94ed82b83117812255b60e80a821d9905eb7f8bfd32552dee1",
+      "description": "Scoped database backup created before the UTP missing-field remediation publication import",
+      "title": "UTP missing-field remediation database backup before import"
+    }
+  ],
+  "exceptions": {
+    "blocking": [],
+    "review": [],
+    "resolved": [
+      {
+        "id": "resolved-ug-count-conflict",
+        "resolvedAt": "2026-06-19T23:59:00+08:00",
+        "decision": "Resolved for catalogue coverage: retain 15 bachelor rows.",
+        "evidence": {
+          "sourceUrl": "https://www.utp.edu.my/Pages/Home.aspx",
+          "sourceText": "UTP homepage publishes Fifteen programmes and lists the same 15 undergraduate programme labels; Undergraduate page text still says fourteen but its links list 15."
+        }
+      },
+      {
+        "id": "resolved-mphil-directory-authority",
+        "resolvedAt": "2026-06-19T23:59:00+08:00",
+        "decision": "Use working Master by Research directory as official source authority; keep blocked detail URL as secondary audit evidence.",
+        "evidence": {
+          "sourceUrl": "https://www.utp.edu.my/Pages/Admission/Postgraduate/Master-by-Research.aspx",
+          "sourceText": "Master of Philosophy row, MQA/SWA2158, intakes, duration and contact are published on the directory."
+        }
+      },
+      {
+        "id": "resolved-process-safety-odl-canonical",
+        "resolvedAt": "2026-06-19T23:59:00+08:00",
+        "decision": "MSc in Process Safety (ODL) remains a canonical candidate.",
+        "evidence": {
+          "sourceUrl": "https://www.utp.edu.my/Pages/Admission/Postgraduate/Master-by-Coursework/MSc-in-Process-Safety-%28ODL%29.aspx",
+          "sourceText": "ODL page and Master by Coursework ODL navigation publish MSc in Process Safety (ODL)."
+        }
+      },
+      {
+        "id": "resolved-mcw-fee-source-priority",
+        "resolvedAt": "2026-06-19T23:59:00+08:00",
+        "decision": "Four coursework/ODL pending fee rows use exact programme detail pages as source-priority fee authority for review import.",
+        "affectedCount": 4,
+        "evidence": {
+          "sourceText": "Exact programme detail pages publish scalar international Estimated Total Cost Fee values; central table conflicts or omits exact row."
+        }
+      },
+      {
+        "id": "resolved-materials-engineering-fee",
+        "resolvedAt": "2026-06-19T23:59:00+08:00",
+        "decision": "Materials Engineering uses the exact programme detail FAQ fee as official fee authority.",
+        "evidence": {
+          "sourceUrl": "https://www.utp.edu.my/Pages/Admission/Undergraduate/Bachelor-of-Materials-Engineering-with-Honours.aspx",
+          "sourceText": "Fee for international students: RM115,500."
+        }
+      },
+      {
+        "id": "resolved-research-fee-rate-derived-publication",
+        "resolvedAt": "2026-06-19T17:00:40.290Z",
+        "decision": "Resolved for authorized public release: 22 research rows use calculated-from-official-rate totals, not unlabelled official total fees.",
+        "affectedCount": 22,
+        "evidence": {
+          "sourceUrl": "https://www.utp.edu.my/Pages/Admission/Postgraduate/International-Applicants/Tuition-fees.aspx",
+          "sourceText": "Official postgraduate tuition page states research fees are annual; public totals are calculated only from official annual fee and official minimum full-time duration, with formula retained."
+        }
+      }
+    ]
+  },
+  "verification": {
+    "instructionExecution": "passed",
+    "candidateIntegrity": "passed",
+    "sourceHashes": "passed",
+    "fieldCoverage": "passed",
+    "manifestAudit": "passed",
+    "directoryParse": "passed",
+    "identityReconciliation": "passed",
+    "feeReconciliation": "passed",
+    "hardIssueResolution": "passed",
+    "hardIssueRemediation": "passed",
+    "publicLeakageExpected": "passed",
+    "frontendReviewReadiness": "passed",
+    "publicStudentCatalogueRelease": "passed",
+    "builds": "passed",
+    "databaseAudit": "passed",
+    "apiAudit": "passed",
+    "uiAudit": "passed",
+    "displayParity": "passed",
+    "localizationAudit": "passed",
+    "databaseBackup": "passed",
+    "importDryRun": "passed",
+    "transactionalImport": "passed",
+    "tests": "passed",
+    "browserConsole": "passed",
+    "focusedDiff": "passed",
+    "feePolicy": "passed",
+    "publicInstitutionPreservation": "passed",
+    "qsWorldRankingOrder": "passed",
+    "missingFieldRemediation": "passed"
+  },
+  "decision": "published",
+  "generatedAt": "2026-06-20T14:10:00+08:00",
+  "artifactCount": 42,
+  "reviewReadiness": {
+    "frontendAdminReview": "ready-after-controlled-publication-import",
+    "publicStudentCatalogue": "ready-and-visible",
+    "note": "UTP is now published for frontend review. Public catalogue shows 63 ready/published programmes; backend unfiltered UTP search may also show 5 archived legacy rows, which are not public and not part of the official 63 published set."
+  },
+  "verificationNotes": {
+    "hardIssueRemediation": "Resolved fee amount capture, annual CNY estimate policy, duration month parsing, and StudyMY Chinese localization for controlled frontend review.",
+    "feePolicy": "22 research-mode rows are no longer pending review after explicit publication authorization; each uses calculated-from-official-rate with formula and exclusions retained.",
+    "publicStudentCatalogueRelease": "Public API and Playwright UI checks passed for UTP university page and calculated-rate PhD detail page across zh-CN, zh-TW, en, and ms.",
+    "databaseAudit": "63 official UTP rows are ready/published; 0 needs-review; 0 legacy active rows; university is ready/published.",
+    "apiAudit": "Public university, program list, program detail, and cost-estimate API checks passed.",
+    "uiAudit": "Browser UI checks passed with zero console errors. Screenshots stored under output/playwright/utp-publication-2026-06-19/.",
+    "build": "Root npm run build passed. Admin chunk-size warning is non-blocking.",
+    "publicInstitutionPreservation": "UTP university record remains ready/published with programCount=63 and public university detail API/UI visible.",
+    "qsWorldRankingOrder": "UTP corrected from unranked fallback 9999 to QS WUR 2027 #=261 and now appears at public list position 8, between UTM #=158 and Taylor's #272.",
+    "missingFieldRemediation": "Official-supported missing fields were remediated, transactionally imported, and verified in DB: 63 ready/published UTP programmes, needs-review 0, public leakage 0, legacy active 0, QS #=261 retained.",
+    "databaseBackup": "Latest UTP remediation import backup copied to 44_missing_field_remediation_database_backup_before_import.json."
+  }
+}

@@ -1,0 +1,282 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-06-20T11:10:00+08:00",
+  "institution": "Universiti Teknologi PETRONAS",
+  "universityCode": "UTP",
+  "source": {
+    "url": "https://www.utp.edu.my/sites/Publishing/PublishingContent/2026/UCampus/Offer%20Package%20Document/Research%20%26%20Conventional/Admission%20Terms%20%26%20Conditions%20-%20International%20Postgraduate%20%28Research%20%26%20Conventional%29.pdf",
+    "localPath": "sources/pdf/admission-terms-international-postgraduate-research-conventional-2026.pdf",
+    "sha256": "6d4beec10675401c074eb82fa3e7595d392baaa28fdaeb35014a9567ab21714a",
+    "authority": "2026 official international postgraduate admission terms and conditions for research and conventional postgraduate offers",
+    "extractedPages": [
+      8,
+      9
+    ],
+    "renderStatus": "not-rendered-poppler-unavailable",
+    "extractionTool": "pdfplumber text/table extraction"
+  },
+  "selectedPolicy": {
+    "applicantScope": "international",
+    "selectedModeForPrimaryRate": "full-time",
+    "publishedMeaning": "estimated total yearly research fee, annual/rate-based, not full programme total",
+    "notAllowed": "Do not display as complete full-duration tuition total without an approved rate-derived formula."
+  },
+  "summary": {
+    "updatedResearchRows": 22,
+    "masterRows": 11,
+    "phdRows": 11,
+    "feeAmountsMYR": [
+      9900,
+      13000,
+      14400,
+      19000
+    ]
+  },
+  "mappings": [
+    {
+      "code": "UTP-MASTER-MSC_IN_CHEMICAL_ENGINEERING_RESEARCH",
+      "nameEnOfficial": "MSc in Chemical Engineering",
+      "level": "master",
+      "feeGroup": "MSc in Engineering/Geoscience/Information System/Information Technology/Science",
+      "fullTimeTotalYearlyMYR": 13000,
+      "partTimeTotalYearlyMYR": 4190,
+      "sourcePage": 8,
+      "conflictsResolvedByPriority": []
+    },
+    {
+      "code": "UTP-MASTER-MSC_IN_PETROLEUM_ENGINEERING_MASTERS_BY_RESEARCH_RESEARCH",
+      "nameEnOfficial": "MSc in Petroleum Engineering - Masters by Research",
+      "level": "master",
+      "feeGroup": "MSc in Engineering/Geoscience/Information System/Information Technology/Science",
+      "fullTimeTotalYearlyMYR": 13000,
+      "partTimeTotalYearlyMYR": 4190,
+      "sourcePage": 8,
+      "conflictsResolvedByPriority": []
+    },
+    {
+      "code": "UTP-MASTER-MSC_IN_PETROLEUM_GEOSCIENCE_MASTERS_BY_RESEARCH_RESEARCH",
+      "nameEnOfficial": "MSc in Petroleum Geoscience - Masters by Research",
+      "level": "master",
+      "feeGroup": "MSc in Engineering/Geoscience/Information System/Information Technology/Science",
+      "fullTimeTotalYearlyMYR": 13000,
+      "partTimeTotalYearlyMYR": 4190,
+      "sourcePage": 8,
+      "conflictsResolvedByPriority": []
+    },
+    {
+      "code": "UTP-MASTER-MSC_IN_CIVIL_ENGINEERING_BY_RESEARCH_RESEARCH",
+      "nameEnOfficial": "MSc in Civil Engineering by Research",
+      "level": "master",
+      "feeGroup": "MSc in Engineering/Geoscience/Information System/Information Technology/Science",
+      "fullTimeTotalYearlyMYR": 13000,
+      "partTimeTotalYearlyMYR": 4190,
+      "sourcePage": 8,
+      "conflictsResolvedByPriority": [
+        {
+          "source": "programme-detail-current-2026-06-20",
+          "note": "Current detail page confirms International (Annually) Full Time RM10,600 progression plus RM2,400 semester fee, matching RM13,000 total yearly in the 2026 admission terms."
+        }
+      ]
+    },
+    {
+      "code": "UTP-MASTER-MSC_IN_MECHANICAL_ENGINEERING_RESEARCH",
+      "nameEnOfficial": "MSc in Mechanical Engineering",
+      "level": "master",
+      "feeGroup": "MSc in Engineering/Geoscience/Information System/Information Technology/Science",
+      "fullTimeTotalYearlyMYR": 13000,
+      "partTimeTotalYearlyMYR": 4190,
+      "sourcePage": 8,
+      "conflictsResolvedByPriority": []
+    },
+    {
+      "code": "UTP-MASTER-MSC_IN_ELECTRICAL_ELECTRONIC_ENGINEERING_RESEARCH",
+      "nameEnOfficial": "MSc in Electrical & Electronic Engineering",
+      "level": "master",
+      "feeGroup": "MSc in Engineering/Geoscience/Information System/Information Technology/Science",
+      "fullTimeTotalYearlyMYR": 13000,
+      "partTimeTotalYearlyMYR": 4190,
+      "sourcePage": 8,
+      "conflictsResolvedByPriority": []
+    },
+    {
+      "code": "UTP-MASTER-MSC_IN_INFORMATION_TECHNOLOGY_RESEARCH_RESEARCH",
+      "nameEnOfficial": "MSc in Information Technology (Research)",
+      "level": "master",
+      "feeGroup": "MSc in Engineering/Geoscience/Information System/Information Technology/Science",
+      "fullTimeTotalYearlyMYR": 13000,
+      "partTimeTotalYearlyMYR": 4190,
+      "sourcePage": 8,
+      "conflictsResolvedByPriority": []
+    },
+    {
+      "code": "UTP-MASTER-MSC_IN_INFORMATION_SYSTEMS_RESEARCH",
+      "nameEnOfficial": "MSc in Information Systems",
+      "level": "master",
+      "feeGroup": "MSc in Engineering/Geoscience/Information System/Information Technology/Science",
+      "fullTimeTotalYearlyMYR": 13000,
+      "partTimeTotalYearlyMYR": 4190,
+      "sourcePage": 8,
+      "conflictsResolvedByPriority": [
+        {
+          "source": "programme-detail-current-2026-06-20",
+          "note": "Current detail page publishes an older/smaller Information Systems table; 2026 international admission terms selected as higher-priority offer-package fee authority."
+        }
+      ]
+    },
+    {
+      "code": "UTP-MASTER-MSC_OF_SCIENCE_BY_RESEARCH_RESEARCH",
+      "nameEnOfficial": "MSc of Science (by Research)",
+      "level": "master",
+      "feeGroup": "MSc in Engineering/Geoscience/Information System/Information Technology/Science",
+      "fullTimeTotalYearlyMYR": 13000,
+      "partTimeTotalYearlyMYR": 4190,
+      "sourcePage": 8,
+      "conflictsResolvedByPriority": []
+    },
+    {
+      "code": "UTP-MASTER-MASTER_OF_PHILOSOPHY_IN_MANAGEMENT_RESEARCH",
+      "nameEnOfficial": "Master of Philosophy in Management",
+      "level": "master",
+      "feeGroup": "MSc in Management",
+      "fullTimeTotalYearlyMYR": 9900,
+      "partTimeTotalYearlyMYR": 4190,
+      "sourcePage": 8,
+      "conflictsResolvedByPriority": []
+    },
+    {
+      "code": "UTP-MASTER-MASTER_OF_PHILOSOPHY_RESEARCH",
+      "nameEnOfficial": "Master of Philosophy",
+      "level": "master",
+      "feeGroup": "MSc in Social Science & Humanities",
+      "fullTimeTotalYearlyMYR": 9900,
+      "partTimeTotalYearlyMYR": 4190,
+      "sourcePage": 8,
+      "conflictsResolvedByPriority": []
+    },
+    {
+      "code": "UTP-PHD-PHD_IN_CHEMICAL_ENGINEERING",
+      "nameEnOfficial": "PhD in Chemical Engineering",
+      "level": "phd",
+      "feeGroup": "PhD in Engineering/Geoscience/Information System/Information Technology/Science",
+      "fullTimeTotalYearlyMYR": 19000,
+      "partTimeTotalYearlyMYR": 4800,
+      "sourcePage": 9,
+      "conflictsResolvedByPriority": []
+    },
+    {
+      "code": "UTP-PHD-PHD_IN_PETROLEUM_ENGINEERING",
+      "nameEnOfficial": "PhD in Petroleum Engineering",
+      "level": "phd",
+      "feeGroup": "PhD in Engineering/Geoscience/Information System/Information Technology/Science",
+      "fullTimeTotalYearlyMYR": 19000,
+      "partTimeTotalYearlyMYR": 4800,
+      "sourcePage": 9,
+      "conflictsResolvedByPriority": []
+    },
+    {
+      "code": "UTP-PHD-PHD_IN_PETROLEUM_GEOSCIENCE",
+      "nameEnOfficial": "PhD in Petroleum Geoscience",
+      "level": "phd",
+      "feeGroup": "PhD in Engineering/Geoscience/Information System/Information Technology/Science",
+      "fullTimeTotalYearlyMYR": 19000,
+      "partTimeTotalYearlyMYR": 4800,
+      "sourcePage": 9,
+      "conflictsResolvedByPriority": []
+    },
+    {
+      "code": "UTP-PHD-PHD_IN_CIVIL_ENGINEERING",
+      "nameEnOfficial": "PhD in Civil Engineering",
+      "level": "phd",
+      "feeGroup": "PhD in Engineering/Geoscience/Information System/Information Technology/Science",
+      "fullTimeTotalYearlyMYR": 19000,
+      "partTimeTotalYearlyMYR": 4800,
+      "sourcePage": 9,
+      "conflictsResolvedByPriority": [
+        {
+          "source": "programme-detail-current-2026-06-20",
+          "note": "Current detail page confirms International (Annually) Full Time RM16,600 progression plus RM2,400 semester fee, matching RM19,000 total yearly in the 2026 admission terms."
+        }
+      ]
+    },
+    {
+      "code": "UTP-PHD-PHD_IN_MECHANICAL_ENGINEERING",
+      "nameEnOfficial": "PhD in Mechanical Engineering",
+      "level": "phd",
+      "feeGroup": "PhD in Engineering/Geoscience/Information System/Information Technology/Science",
+      "fullTimeTotalYearlyMYR": 19000,
+      "partTimeTotalYearlyMYR": 4800,
+      "sourcePage": 9,
+      "conflictsResolvedByPriority": []
+    },
+    {
+      "code": "UTP-PHD-PHD_IN_ELECTRICAL_AND_ELECTRONIC_ENGINEERING",
+      "nameEnOfficial": "PhD in Electrical and Electronic Engineering",
+      "level": "phd",
+      "feeGroup": "PhD in Engineering/Geoscience/Information System/Information Technology/Science",
+      "fullTimeTotalYearlyMYR": 19000,
+      "partTimeTotalYearlyMYR": 4800,
+      "sourcePage": 9,
+      "conflictsResolvedByPriority": [
+        {
+          "source": "programme-detail-current-2026-06-20",
+          "note": "Current detail page displays International RM19,002.00; 2026 admission terms selected as rounded RM19,000 official total yearly authority."
+        }
+      ]
+    },
+    {
+      "code": "UTP-PHD-PHD_IN_INFORMATION_TECHNOLOGY",
+      "nameEnOfficial": "PhD in Information Technology",
+      "level": "phd",
+      "feeGroup": "PhD in Engineering/Geoscience/Information System/Information Technology/Science",
+      "fullTimeTotalYearlyMYR": 19000,
+      "partTimeTotalYearlyMYR": 4800,
+      "sourcePage": 9,
+      "conflictsResolvedByPriority": []
+    },
+    {
+      "code": "UTP-PHD-PHD_IN_INFORMATION_SYSTEMS",
+      "nameEnOfficial": "PhD in Information Systems",
+      "level": "phd",
+      "feeGroup": "PhD in Engineering/Geoscience/Information System/Information Technology/Science",
+      "fullTimeTotalYearlyMYR": 19000,
+      "partTimeTotalYearlyMYR": 4800,
+      "sourcePage": 9,
+      "conflictsResolvedByPriority": [
+        {
+          "source": "programme-detail-current-2026-06-20",
+          "note": "Current detail page publishes an older/smaller Information Systems table; 2026 international admission terms selected as higher-priority offer-package fee authority."
+        }
+      ]
+    },
+    {
+      "code": "UTP-PHD-PHD_IN_MANAGEMENT",
+      "nameEnOfficial": "PhD in Management",
+      "level": "phd",
+      "feeGroup": "PhD in Management",
+      "fullTimeTotalYearlyMYR": 14400,
+      "partTimeTotalYearlyMYR": 4800,
+      "sourcePage": 9,
+      "conflictsResolvedByPriority": []
+    },
+    {
+      "code": "UTP-PHD-PHD_IN_APPLIED_SCIENCE",
+      "nameEnOfficial": "PhD in Applied Science",
+      "level": "phd",
+      "feeGroup": "PhD in Engineering/Geoscience/Information System/Information Technology/Science",
+      "fullTimeTotalYearlyMYR": 19000,
+      "partTimeTotalYearlyMYR": 4800,
+      "sourcePage": 9,
+      "conflictsResolvedByPriority": []
+    },
+    {
+      "code": "UTP-PHD-PHD_IN_SOCIAL_SCIENCE_HUMANITIES",
+      "nameEnOfficial": "PhD in Social Science & Humanities",
+      "level": "phd",
+      "feeGroup": "PhD in Social Science & Humanities",
+      "fullTimeTotalYearlyMYR": 14400,
+      "partTimeTotalYearlyMYR": 4800,
+      "sourcePage": 9,
+      "conflictsResolvedByPriority": []
+    }
+  ]
+}

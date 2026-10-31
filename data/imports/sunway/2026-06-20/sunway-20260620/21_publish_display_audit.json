@@ -1,0 +1,253 @@
+{
+  "schemaVersion": 2,
+  "universityCode": "SUNWAY",
+  "mode": "published",
+  "generatedAtUtc": "2026-06-21T12:35:46Z",
+  "generatedAtLocal": "2026-06-21T20:35:46+08:00",
+  "authorization": "publish",
+  "decision": "published",
+  "scope": {
+    "levels": [
+      "bachelor",
+      "master",
+      "phd"
+    ],
+    "applicantScope": "international",
+    "academicSession": "Year 2026 fee/intake pages; current as of 2026-06-20, deep-reviewed and fee-policy corrected on 2026-06-21"
+  },
+  "importArtifacts": {
+    "publishDryRunReport": {
+      "path": "20_publish_dry_run.json",
+      "sha256": "fe5a7cd3b92142625e178da5d10f2d18c964591de55ae4390da7f6e3075f4b9b"
+    },
+    "confirmPublishReport": {
+      "path": "20_publish_report.json",
+      "sha256": "5484543c3752c222c6d01d5f08e31c51412b1a431b610fcebf00c9086df67c58"
+    },
+    "verifyPublishedReport": {
+      "path": "20_publish_verify.json",
+      "sha256": "5a7cda5aba18c9887f7ce4979f2b536bad601789f1a7c4ae8d77d3c45f25c73c"
+    },
+    "backup": {
+      "path": "../../../../../tmp/backups/sunway-official-publish-before-20260621-display-hygiene-fix.json",
+      "absolutePath": "/Users/ian/Desktop/dev/study-malaysia/tmp/backups/sunway-official-publish-before-20260621-display-hygiene-fix.json",
+      "sha256": "e9ae901ca35a8373c23c23ae9969f15b537d83d2de22b0c0682b19cf930fe174"
+    }
+  },
+  "databaseAudit": {
+    "universityId": 9,
+    "universityCode": "SUNWAY",
+    "universitySlug": "sunway-university",
+    "universityIsPublished": true,
+    "universityPublicDisplayStatus": "ready",
+    "importedRows": 97,
+    "importedReadyRows": 97,
+    "importedNeedsReviewRows": 0,
+    "importedPublishedRows": 97,
+    "importedPublicRows": 97,
+    "importedPublicLeakageRows": 0,
+    "legacyPublicRows": 0,
+    "publicProgrammeCount": 97,
+    "rowsByLevel": {
+      "bachelor": 48,
+      "master": 33,
+      "phd": 16
+    },
+    "feeAuditStatusCounts": {
+      "official-rate-verified": 83,
+      "not-published": 7,
+      "matched-official": 7
+    },
+    "studentFacingHygieneIssueCount": 0,
+    "studentFacingHygieneIssueSamples": []
+  },
+  "publicInstitutionPreservation": {
+    "before": {
+      "exists": true,
+      "id": 9,
+      "slug": "sunway-university",
+      "code": "SUNWAY",
+      "isPublished": true,
+      "publicDisplayStatus": "ready",
+      "publicProgrammeCount": 97,
+      "publicDetailRouteAccessible": true
+    },
+    "after": {
+      "exists": true,
+      "id": 9,
+      "slug": "sunway-university",
+      "code": "SUNWAY",
+      "isPublished": true,
+      "publicDisplayStatus": "ready",
+      "publicProgrammeCount": 97,
+      "publicDetailRouteAccessible": true
+    },
+    "result": "passed",
+    "note": "Sunway public university row remained ready; public programme count stayed at the published 97-row official catalogue during the display-hygiene correction."
+  },
+  "publicApiAudit": {
+    "universityDetail": {
+      "url": "http://localhost:3000/api/universities/sunway-university",
+      "statusCode": 200,
+      "programCount": 97,
+      "programsCount": 97,
+      "publicDisplayStatus": "ready",
+      "officialSourceStatus": "official-verified",
+      "catalogStatusSummary": {
+        "all": {
+          "ready": 97,
+          "total": 97,
+          "needsReview": 0,
+          "notAvailableForInternational": 0
+        },
+        "byLevel": {
+          "phd": {
+            "ready": 16,
+            "total": 16,
+            "needsReview": 0,
+            "notAvailableForInternational": 0
+          },
+          "master": {
+            "ready": 33,
+            "total": 33,
+            "needsReview": 0,
+            "notAvailableForInternational": 0
+          },
+          "bachelor": {
+            "ready": 48,
+            "total": 48,
+            "needsReview": 0,
+            "notAvailableForInternational": 0
+          }
+        }
+      },
+      "blockedReviewTextMatches": [],
+      "studentFacingHygieneIssueCount": 0
+    },
+    "programmeList": {
+      "url": "http://localhost:3000/api/programs?universityId=9&pageSize=120&includeMeta=true",
+      "statusCode": 200,
+      "total": 97,
+      "itemCount": 97,
+      "publicDisplayStatusCounts": {
+        "ready": 97
+      },
+      "officialSourceStatusCounts": {
+        "official-verified": 97
+      },
+      "feeAuditStatusCounts": {
+        "matched-official": 7,
+        "official-rate-verified": 83,
+        "not-published": 7
+      }
+    },
+    "programmeDetail": {
+      "url": "http://localhost:3000/api/programs/detail/7235",
+      "statusCode": 200,
+      "slug": "sunway-official-2026-row-020-bachelor-of-arts-honours-in-digital-media-communication",
+      "code": "SUNWAY-BACHELOR-020",
+      "publicDisplayStatus": "ready",
+      "officialSourceStatus": "official-verified",
+      "tuitionDisplay": "Official fee not published",
+      "tuitionCurrency": "UNKNOWN",
+      "officialFeeAuditStatus": "not-published",
+      "descriptionZh": "Bachelor of Arts (Honours) in Digital Media Communication 是双威大学面向国际申请人的本科专业，依据双威大学官方来源核验后展示。",
+      "chinaStudentRequirement": "双威大学通过官方专业页面和申请页面公布国际申请要求；中国学生学历等值认定由学校招生流程评估。",
+      "applicationDocsZh": [
+        "已关联双威大学官方申请材料依据，供申请人参考；最终材料审核以双威大学招生评估为准。",
+        "来源：双威大学官方申请表。"
+      ],
+      "auditNote": ""
+    }
+  },
+  "uiAudit": {
+    "frontendUniversityUrl": "http://localhost:5173/universities/sunway-university",
+    "frontendProgrammeDetailUrl": "http://localhost:5173/universities/sunway-university?program=7235",
+    "status": "passed",
+    "observations": [
+      "University page renders Sunway University with current available programmes 97 and pending/not-open 0.",
+      "Programme detail renders Chinese level wording, Chinese China-student note, clean application document source, and no internal audit note.",
+      "A programme with official-unpublished fee renders 官方未公布 without an inferred amount.",
+      "Programme detail data note renders localized Sunway official-publication wording."
+    ],
+    "console": {
+      "errors": 0,
+      "warnings": 0
+    },
+    "network": [
+      {
+        "method": "GET",
+        "url": "http://localhost:3000/api/universities/meta/home",
+        "statusCode": 200
+      },
+      {
+        "method": "GET",
+        "url": "http://localhost:3000/api/universities",
+        "statusCode": 200
+      },
+      {
+        "method": "GET",
+        "url": "http://localhost:3000/api/programs",
+        "statusCode": 200
+      },
+      {
+        "method": "GET",
+        "url": "http://localhost:3000/api/universities/sunway-university",
+        "statusCode": 200
+      },
+      {
+        "method": "GET",
+        "url": "http://localhost:3000/api/programs/detail/7235",
+        "statusCode": 200
+      }
+    ]
+  },
+  "verificationCommands": [
+    {
+      "command": "npm test -- tests/api/sunway-official-audit-import.test.ts",
+      "result": "passed"
+    },
+    {
+      "command": "npm --workspace @studymy/api run build",
+      "result": "passed"
+    },
+    {
+      "command": "npm --workspace @studymy/web run build",
+      "result": "passed"
+    },
+    {
+      "command": "npm --workspace @studymy/api run import:sunway:official-audit -- --publish-dry-run --report-output data/imports/sunway/2026-06-20/sunway-20260620/20_publish_dry_run.json",
+      "result": "passed"
+    },
+    {
+      "command": "npm --workspace @studymy/api run import:sunway:official-audit -- --confirm-publish --report-output data/imports/sunway/2026-06-20/sunway-20260620/20_publish_report.json --backup-output tmp/backups/sunway-official-publish-before-20260621-display-hygiene-fix.json",
+      "result": "passed"
+    },
+    {
+      "command": "npm --workspace @studymy/api run import:sunway:official-audit -- --verify-published --report-output data/imports/sunway/2026-06-20/sunway-20260620/20_publish_verify.json",
+      "result": "passed"
+    },
+    {
+      "command": "Sunway public API student-facing hygiene scan",
+      "result": "passed"
+    },
+    {
+      "command": "Playwright snapshot http://localhost:5173/universities/sunway-university?program=7235",
+      "result": "passed"
+    },
+    {
+      "command": "Playwright console warning",
+      "result": "passed"
+    }
+  ],
+  "rollback": {
+    "backupPath": "/Users/ian/Desktop/dev/study-malaysia/tmp/backups/sunway-official-publish-before-20260621-display-hygiene-fix.json",
+    "strategy": "Restore the scoped JSON backup if Sunway publication needs to be reverted; rerun --verify-published after corrective import.",
+    "status": "available"
+  },
+  "acceptedOfficialUnpublished": [
+    "7 programmes retain officialFeeAuditStatus=not-published because Sunway did not publish a usable international fee block.",
+    "Official-unpublished optional intake/career/recognition/interview facts are displayed as controlled labels and not inferred."
+  ],
+  "remainingReviewReasons": []
+}

@@ -1,0 +1,757 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-06-17T05:54:58.452Z",
+  "auditMode": "final-phd-collection-report",
+  "decision": "final-collection-passed",
+  "scope": {
+    "schemaVersion": 1,
+    "generatedAt": "2026-06-16T17:03:59.222Z",
+    "institution": {
+      "code": "USM",
+      "name": "Universiti Sains Malaysia"
+    },
+    "collectionScope": "programmes",
+    "level": "phd",
+    "applicantScope": "international",
+    "academicSession": "current directory and 2025/2026 official postgraduate fees",
+    "currentAsOf": "2026-06-17",
+    "authorization": "collect",
+    "selectedChineseTask": "docs/notion-snapshot/tasks/TASK-USM-PHD-COLLECT-20260614.md",
+    "prdAndTechnicalDesign": [
+      "docs/prd/USM-phd-official-collection-technical-design.md",
+      "docs/prd/USM-all-level-official-publication-audit.md"
+    ],
+    "outputPaths": {
+      "finalCollectionDirectory": "data/imports/usm/2026-06-17/phd-final-collection",
+      "candidate": "data/imports/usm/2026-06-17/phd-final-collection/phd-candidate.json",
+      "audit": "data/imports/usm/2026-06-17/phd-final-collection/phd-audit.json",
+      "delivery": "data/imports/usm/2026-06-17/phd-final-collection/phd-delivery.json",
+      "runContract": "data/imports/usm/2026-06-17/phd-final-collection/run_contract.json",
+      "levelManifest": "data/imports/usm/2026-06-17/phd-final-collection/level_manifest.json",
+      "sourceCacheIndex": "data/imports/usm/2026-06-17/phd-final-collection/source_cache_index.json",
+      "exceptionQueue": "data/imports/usm/2026-06-17/phd-final-collection/exception_queue.json",
+      "preImportGapAudit": "data/imports/usm/2026-06-17/phd-final-collection/pre_import_gap_audit.json",
+      "currentOfficialDiffAudit": "data/imports/usm/2026-06-17/phd-final-collection/current_official_diff_audit.json",
+      "finalCollectionReport": "data/imports/usm/2026-06-17/phd-final-collection/final_collection_report.json"
+    },
+    "verificationCommands": [
+      "python3 scripts/verify-usm-phd-candidate.py --manifest data/imports/usm/2026-06-17/phd-final-collection/phd-candidate.json",
+      "python3 /Users/ian/.codex/skills/studymy-official-university-collector/scripts/audit_records.py data/imports/usm/2026-06-17/phd-final-collection/phd-candidate.json --profile candidate --expected-count 95 --official-domain admission.usm.my --allow-official-rate-calculation --summary-only",
+      "python3 /Users/ian/.codex/skills/studymy-official-university-collector/scripts/audit_delivery.py data/imports/usm/2026-06-17/phd-final-collection/phd-delivery.json --summary-only",
+      "python3 scripts/audit-official-total-tuition.py data/imports/usm/2026-06-17/phd-final-collection/phd-candidate.json --summary-only"
+    ],
+    "rollbackTarget": "No database write in this collection run; remove the 2026-06-17 final collection directory to discard this generated package.",
+    "notionUpdate": "local snapshot only; writable Notion connector not available"
+  },
+  "sourceHashes": {
+    "candidate": "e2d916114ab356b38dee09adc5cb7607a5c0169a190eee4de875c2fee1f441fe",
+    "audit": "8bd058f98731c461b470e2fbcff2ef57ac25bf8829d7531a4c7c69f3369ff29f",
+    "delivery": "128ca9e75a41a45860c9a73830d01e044c748b66daded9fed27aa154530f37ce",
+    "officialSource": "9e889a530617c4bfb0b178f38574962e9936fbabd20320b4f6e3fa21ac53b4bc",
+    "currentCatalogue": "03be7bc3fadfbb2313e6ddefbdf02457481832041724176bccdd60ad878c9372",
+    "currentHtmlFetchIndex": "51faba86e07c430d7d756531ef95a5aaea681f6461342d3c1286accf85c5cbbf",
+    "supplementalAcceptanceRecheck": "a3bb7e1d5c390660fd49ecdc466f0d84e044a79a6d94d3687e75686492871a2e",
+    "levelManifest": "62daea062e790c1212f971272dc7f64f5efb3f3163a52b848b39899c33659699",
+    "commercialReleaseGate95PublicFix": "8465f96adc2bdd4fd83119c9e8964f6cc829feb043769e03e1711177d11055d5",
+    "candidateDataset": "a6be517ae534e31fcde4d76e49cfb6c68fd37657e370a777ad54196494a2092f"
+  },
+  "counts": {
+    "directoryOccurrences": 95,
+    "uniqueOfficialEntries": 95,
+    "canonicalProgrammes": 95,
+    "ready": 95,
+    "needsReview": 0,
+    "notAvailableForInternational": 0
+  },
+  "fieldCoverage": {
+    "identity": {
+      "covered": 95,
+      "unpublished": 0,
+      "review": 0
+    },
+    "faculty": {
+      "covered": 95,
+      "unpublished": 0,
+      "review": 0
+    },
+    "studyMode": {
+      "covered": 95,
+      "unpublished": 0,
+      "review": 0
+    },
+    "campus": {
+      "covered": 95,
+      "unpublished": 0,
+      "review": 0
+    },
+    "duration": {
+      "covered": 95,
+      "unpublished": 0,
+      "review": 0
+    },
+    "intake": {
+      "covered": 23,
+      "unpublished": 72,
+      "review": 0
+    },
+    "internationalEligibility": {
+      "covered": 95,
+      "unpublished": 0,
+      "review": 0
+    },
+    "academicRequirement": {
+      "covered": 95,
+      "unpublished": 0,
+      "review": 0
+    },
+    "languageRequirement": {
+      "covered": 95,
+      "unpublished": 0,
+      "review": 0
+    },
+    "applicationDocuments": {
+      "covered": 95,
+      "unpublished": 0,
+      "review": 0
+    },
+    "fee": {
+      "covered": 13,
+      "unpublished": 82,
+      "review": 0
+    },
+    "evidence": {
+      "covered": 95,
+      "unpublished": 0,
+      "review": 0
+    }
+  },
+  "modes": {
+    "mixed": 6,
+    "online": 1,
+    "coursework": 6,
+    "research": 82
+  },
+  "deliveries": {
+    "on-campus-or-unspecified": 70,
+    "dual-degree": 2,
+    "joint-degree": 3,
+    "offshore": 20
+  },
+  "fees": {
+    "verified-current-official-fee": 13,
+    "official-rate-only": 62,
+    "official-unpublished": 20
+  },
+  "currentOfficialHtml": {
+    "candidateRecords": 95,
+    "uniqueOfficialUrls": 91,
+    "currentHtmlAttemptedUniqueUrls": 91,
+    "currentHtmlSuccessUniqueUrls": 20,
+    "currentHtmlTransportFailures": 71,
+    "currentHtmlRecordMatches": 22
+  },
+  "exceptions": {
+    "schemaVersion": 1,
+    "generatedAt": "2026-06-16T17:03:59.222Z",
+    "blocking": [],
+    "review": [],
+    "transportExceptions": [
+      {
+        "id": "558",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=558&catid=55",
+        "status": "000",
+        "transport": "curl-http1.1",
+        "stderr": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+      },
+      {
+        "id": "555",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=555&catid=55",
+        "status": "000",
+        "transport": "curl-http1.1",
+        "stderr": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+      },
+      {
+        "id": "807",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=807&catid=55",
+        "status": "000",
+        "transport": "curl-http1.1",
+        "stderr": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+      },
+      {
+        "id": "233",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=233&catid=51",
+        "status": "000",
+        "transport": "curl-http1.1",
+        "stderr": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+      },
+      {
+        "id": "234",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=234&catid=51",
+        "status": "000",
+        "transport": "curl-http1.1",
+        "stderr": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+      },
+      {
+        "id": "888",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=888&catid=55",
+        "status": "000",
+        "transport": "curl-http1.1",
+        "stderr": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+      },
+      {
+        "id": "244",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=244&catid=51",
+        "status": "000",
+        "transport": "curl-http1.1",
+        "stderr": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+      },
+      {
+        "id": "169",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=169&catid=50",
+        "status": "000",
+        "transport": "curl-http1.1",
+        "stderr": "curl: (52) Empty reply from server\n"
+      },
+      {
+        "id": "217",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=217&catid=51",
+        "status": "000",
+        "transport": "curl-http1.1",
+        "stderr": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+      },
+      {
+        "id": "333",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=333&catid=52",
+        "status": "000",
+        "transport": "curl-http1.1",
+        "stderr": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+      },
+      {
+        "id": "372",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=372&catid=53",
+        "status": "000",
+        "transport": "curl-http1.1",
+        "stderr": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+      },
+      {
+        "id": "273",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=273&catid=52",
+        "status": "000",
+        "transport": "curl-http1.1",
+        "stderr": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+      },
+      {
+        "id": "170",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=170&catid=50",
+        "status": "000",
+        "transport": "curl-http1.1",
+        "stderr": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+      },
+      {
+        "id": "271",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=271&catid=52",
+        "status": "000",
+        "transport": "curl-http1.1",
+        "stderr": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+      },
+      {
+        "id": "809",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=809&catid=53",
+        "status": "000",
+        "transport": "curl-http1.1",
+        "stderr": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+      },
+      {
+        "id": "388",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=388&catid=54",
+        "status": "000",
+        "transport": "curl-http1.1",
+        "stderr": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+      },
+      {
+        "id": "219",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=219&catid=51",
+        "status": "000",
+        "transport": "curl-http1.1",
+        "stderr": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+      },
+      {
+        "id": "338",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=338&catid=53",
+        "status": "000",
+        "transport": "curl-http1.1",
+        "stderr": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+      },
+      {
+        "id": "510",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=510&catid=55",
+        "status": "000",
+        "transport": "curl-http1.1",
+        "stderr": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+      },
+      {
+        "id": "215",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=215&catid=51",
+        "status": "000",
+        "transport": "curl-http1.1",
+        "stderr": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+      },
+      {
+        "id": "218",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=218&catid=51",
+        "status": "000",
+        "transport": "curl-http1.1",
+        "stderr": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+      },
+      {
+        "id": "325",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=325&catid=52",
+        "status": "000",
+        "transport": "curl-http1.1",
+        "stderr": "curl: (28) Connection timed out after 25006 milliseconds\ncurl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+      },
+      {
+        "id": "220",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=220&catid=51",
+        "status": "000",
+        "transport": "curl-http1.1",
+        "stderr": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+      },
+      {
+        "id": "376",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=376&catid=53",
+        "status": "000",
+        "transport": "curl-http1.1",
+        "stderr": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+      },
+      {
+        "id": "375",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=375&catid=53",
+        "status": "000",
+        "transport": "curl-http1.1",
+        "stderr": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+      },
+      {
+        "id": "221",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=221&catid=51",
+        "status": "000",
+        "transport": "curl-http1.1",
+        "stderr": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+      },
+      {
+        "id": "361",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=361&catid=53",
+        "status": "000",
+        "transport": "curl-http1.1",
+        "stderr": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+      },
+      {
+        "id": "887",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=887&catid=52",
+        "status": "000",
+        "transport": "curl-http1.1",
+        "stderr": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+      },
+      {
+        "id": "243",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=243&catid=51",
+        "status": "000",
+        "transport": "curl-http1.1",
+        "stderr": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+      },
+      {
+        "id": "315",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=315&catid=52",
+        "status": "000",
+        "transport": "curl-http1.1",
+        "stderr": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+      },
+      {
+        "id": "378",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=378&catid=53",
+        "status": "000",
+        "transport": "curl-http1.1",
+        "stderr": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+      },
+      {
+        "id": "147",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=147&catid=50",
+        "status": "000",
+        "transport": "curl-http1.1",
+        "stderr": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+      },
+      {
+        "id": "241",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=241&catid=51",
+        "status": "000",
+        "transport": "curl-http1.1",
+        "stderr": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+      },
+      {
+        "id": "145",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=145&catid=50",
+        "status": "000",
+        "transport": "curl-http1.1",
+        "stderr": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+      },
+      {
+        "id": "326",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=326&catid=52",
+        "status": "000",
+        "transport": "curl-http1.1",
+        "stderr": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+      },
+      {
+        "id": "247",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=247&catid=51",
+        "status": "000",
+        "transport": "curl-http1.1",
+        "stderr": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+      },
+      {
+        "id": "313",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=313&catid=52",
+        "status": "000",
+        "transport": "curl-http1.1",
+        "stderr": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+      },
+      {
+        "id": "379",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=379&catid=53",
+        "status": "000",
+        "transport": "curl-http1.1",
+        "stderr": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+      },
+      {
+        "id": "561",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=561&catid=55",
+        "status": "000",
+        "transport": "curl-http1.1",
+        "stderr": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+      },
+      {
+        "id": "560",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=560&catid=55",
+        "status": "000",
+        "transport": "curl-http1.1",
+        "stderr": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+      },
+      {
+        "id": "559",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=559&catid=55",
+        "status": "000",
+        "transport": "curl-http1.1",
+        "stderr": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+      },
+      {
+        "id": "1475",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1475&catid=55",
+        "status": "000",
+        "transport": "curl-http1.1",
+        "stderr": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+      },
+      {
+        "id": "1476",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1476&catid=55",
+        "status": "000",
+        "transport": "curl-http1.1",
+        "stderr": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+      },
+      {
+        "id": "1474",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1474&catid=54",
+        "status": "000",
+        "transport": "curl-http1.1",
+        "stderr": "curl: (52) Empty reply from server\n"
+      },
+      {
+        "id": "1482",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1482&catid=50",
+        "status": "000",
+        "transport": "curl-http1.1",
+        "stderr": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+      },
+      {
+        "id": "1501",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1501&catid=54",
+        "status": "000",
+        "transport": "curl-http1.1",
+        "stderr": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+      },
+      {
+        "id": "1506",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1506&catid=55",
+        "status": "000",
+        "transport": "curl-http1.1",
+        "stderr": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+      },
+      {
+        "id": "1508",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1508&catid=52",
+        "status": "000",
+        "transport": "curl-http1.1",
+        "stderr": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+      },
+      {
+        "id": "1503",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1503&catid=54",
+        "status": "000",
+        "transport": "curl-http1.1",
+        "stderr": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+      },
+      {
+        "id": "1515",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1515&catid=52",
+        "status": "000",
+        "transport": "curl-http1.1",
+        "stderr": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+      },
+      {
+        "id": "1519",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1519&catid=52",
+        "status": "000",
+        "transport": "curl-http1.1",
+        "stderr": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+      },
+      {
+        "id": "1492",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1492&catid=53",
+        "status": "000",
+        "transport": "curl-http1.1",
+        "stderr": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+      },
+      {
+        "id": "1491",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1491&catid=50",
+        "status": "000",
+        "transport": "curl-http1.1",
+        "stderr": "curl: (52) Empty reply from server\n"
+      },
+      {
+        "id": "1490",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1490&catid=54",
+        "status": "000",
+        "transport": "curl-http1.1",
+        "stderr": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+      },
+      {
+        "id": "1487",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1487&catid=51",
+        "status": "000",
+        "transport": "curl-http1.1",
+        "stderr": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+      },
+      {
+        "id": "1486",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1486&catid=52",
+        "status": "000",
+        "transport": "curl-http1.1",
+        "stderr": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+      },
+      {
+        "id": "1493",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1493&catid=53",
+        "status": "000",
+        "transport": "curl-http1.1",
+        "stderr": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+      },
+      {
+        "id": "1516",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1516&catid=52",
+        "status": "000",
+        "transport": "curl-http1.1",
+        "stderr": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+      },
+      {
+        "id": "1494",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1494&catid=53",
+        "status": "000",
+        "transport": "curl-http1.1",
+        "stderr": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+      },
+      {
+        "id": "1517",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1517&catid=52",
+        "status": "000",
+        "transport": "curl-http1.1",
+        "stderr": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+      },
+      {
+        "id": "222",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=222&catid=51",
+        "status": "000",
+        "transport": "curl-http1.1",
+        "stderr": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+      },
+      {
+        "id": "232",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=232&catid=51",
+        "status": "000",
+        "transport": "curl-http1.1",
+        "stderr": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+      },
+      {
+        "id": "235",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=235&catid=51",
+        "status": "000",
+        "transport": "curl-http1.1",
+        "stderr": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+      },
+      {
+        "id": "556",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=556&catid=55",
+        "status": "000",
+        "transport": "curl-http1.1",
+        "stderr": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+      },
+      {
+        "id": "1479",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1479&catid=50",
+        "status": "000",
+        "transport": "curl-http1.1",
+        "stderr": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+      },
+      {
+        "id": "567",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=567&catid=59",
+        "status": "000",
+        "transport": "curl-http1.1",
+        "stderr": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+      },
+      {
+        "id": "566",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=566&catid=59",
+        "status": "000",
+        "transport": "curl-http1.1",
+        "stderr": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+      },
+      {
+        "id": "416",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=416&catid=55",
+        "status": "000",
+        "transport": "curl-http1.1",
+        "stderr": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+      },
+      {
+        "id": "417",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=417&catid=55",
+        "status": "000",
+        "transport": "curl-http1.1",
+        "stderr": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+      },
+      {
+        "id": "415",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=415&catid=55",
+        "status": "000",
+        "transport": "curl-http1.1",
+        "stderr": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+      },
+      {
+        "id": "420",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=420&catid=55",
+        "status": "000",
+        "transport": "curl-http1.1",
+        "stderr": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+      }
+    ],
+    "reviewedNonBlocking": [
+      {
+        "code": "official-unpublished-careers",
+        "count": 95,
+        "decision": "Retain official-unpublished state; do not fabricate careers."
+      },
+      {
+        "code": "official-rate-only-fees",
+        "count": 62,
+        "decision": "Allowed by publication contract only with separate calculated-from-official-rate public status and formula."
+      },
+      {
+        "code": "international-not-available",
+        "count": 2,
+        "decision": "Retain in audit data and exclude from public international catalogue."
+      }
+    ]
+  },
+  "supplementalPublicationCheck": {
+    "decision": "passed",
+    "public": 460,
+    "phdPublicRows": 93,
+    "detailIssueCounts": {
+      "http": 0,
+      "nonReady": 0,
+      "missingRequirement": 0,
+      "missingLanguage": 0,
+      "missingSource": 0,
+      "feeRange": 0,
+      "estimatedFee": 0,
+      "statusMismatch": 0
+    }
+  },
+  "verification": {
+    "candidateVerifier": "passed",
+    "genericRecordAudit": "passed",
+    "deliveryAudit": "ready-for-controlled-import",
+    "tuitionAudit": "passed"
+  },
+  "postFixAcceptance": {
+    "publicApiProgramCount": 462,
+    "publicApiLevelCounts": {
+      "bachelor": 63,
+      "master": 304,
+      "phd": 95
+    },
+    "catalogStatusSummary": {
+      "all": {
+        "ready": 462,
+        "total": 463,
+        "needsReview": 0,
+        "notAvailableForInternational": 1
+      },
+      "byLevel": {
+        "phd": {
+          "ready": 95,
+          "total": 95,
+          "needsReview": 0,
+          "notAvailableForInternational": 0
+        },
+        "master": {
+          "ready": 304,
+          "total": 305,
+          "needsReview": 0,
+          "notAvailableForInternational": 1
+        },
+        "bachelor": {
+          "ready": 63,
+          "total": 63,
+          "needsReview": 0,
+          "notAvailableForInternational": 0
+        }
+      }
+    },
+    "allFeeStatus": {
+      "matched-official": 196,
+      "not-published": 53,
+      "calculated-from-official-rate": 213
+    },
+    "phdFeeStatus": {
+      "matched-official": 13,
+      "calculated-from-official-rate": 62,
+      "not-published": 20
+    },
+    "detailCheckedRows": 95,
+    "detailIssueCounts": {
+      "http": 0,
+      "nonReady": 0,
+      "missingRequirement": 0,
+      "missingLanguage": 0,
+      "missingSource": 0,
+      "feeRange": 0,
+      "estimatedFee": 0,
+      "statusMismatch": 0,
+      "feeStatusMismatch": 0,
+      "nonOfficialSource": 0
+    },
+    "acceptanceRecheckPath": "data/imports/usm/2026-06-17/phd-supplemental-audit/acceptance_recheck.json",
+    "releaseGateReportPath": "tmp/reports/usm-commercial-release-gate-95-phd-public-20260617.json"
+  }
+}

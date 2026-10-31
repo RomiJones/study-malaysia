@@ -1,0 +1,125 @@
+{
+  "schemaVersion": 1,
+  "scope": {
+    "universityCode": "USM",
+    "level": "phd",
+    "applicantScope": "international",
+    "academicSession": "current-directory-and-2025/2026-fees"
+  },
+  "retrievedAt": "2026-06-14T15:01:36Z",
+  "counts": {
+    "currentOfficialCatalogueRows": 95,
+    "currentOfficialUniqueUrls": 91,
+    "legacyDirectoryDetailOccurrences": 129,
+    "offshoreApplicationCodeOccurrences": 24,
+    "directoryOccurrences": 95,
+    "uniqueOfficialEntries": 95,
+    "canonicalProgrammes": 95,
+    "currentDetailsAddedBeyondLegacyDirectory": 9,
+    "applicationCodeOnlyOfferings": 5,
+    "offshoreApplicationCodesReconciled": 24,
+    "statusCounts": {
+      "ready": 95
+    },
+    "modeCounts": {
+      "mixed": 6,
+      "online": 1,
+      "coursework": 6,
+      "research": 82
+    },
+    "deliveryCounts": {
+      "on-campus-or-unspecified": 70,
+      "dual-degree": 2,
+      "joint-degree": 3,
+      "offshore": 20
+    },
+    "feeCounts": {
+      "verified-current-official-fee": 13,
+      "official-rate-only": 62,
+      "official-unpublished": 20
+    },
+    "doctoralNamedFeeRows": 13,
+    "coverage": {
+      "identity": {
+        "covered": 95,
+        "unpublished": 0,
+        "review": 0
+      },
+      "faculty": {
+        "covered": 95,
+        "unpublished": 0,
+        "review": 0
+      },
+      "studyMode": {
+        "covered": 95,
+        "unpublished": 0,
+        "review": 0
+      },
+      "campus": {
+        "covered": 95,
+        "unpublished": 0,
+        "review": 0
+      },
+      "duration": {
+        "covered": 95,
+        "unpublished": 0,
+        "review": 0
+      },
+      "intake": {
+        "covered": 23,
+        "unpublished": 72,
+        "review": 0
+      },
+      "internationalEligibility": {
+        "covered": 95,
+        "unpublished": 0,
+        "review": 0
+      },
+      "academicRequirement": {
+        "covered": 95,
+        "unpublished": 0,
+        "review": 0
+      },
+      "languageRequirement": {
+        "covered": 95,
+        "unpublished": 0,
+        "review": 0
+      },
+      "applicationDocuments": {
+        "covered": 95,
+        "unpublished": 0,
+        "review": 0
+      },
+      "fee": {
+        "covered": 13,
+        "unpublished": 82,
+        "review": 0
+      },
+      "evidence": {
+        "covered": 95,
+        "unpublished": 0,
+        "review": 0
+      }
+    },
+    "exceptionCount": 0,
+    "publicationDecision": "publish-international-eligible-catalogue",
+    "blockingReasons": [
+      "Malaysian-only records must remain excluded from the public international catalogue.",
+      "Four-language commercial localization must pass import and API/UI verification before release."
+    ]
+  },
+  "exceptions": [],
+  "sourceHashes": {
+    "usm-pg-current-catalogue": "03be7bc3fadfbb2313e6ddefbdf02457481832041724176bccdd60ad878c9372",
+    "usm-pg-directory-current": "ccb852d13ccb650d2d80006c1ff18bf9129002fca83175db9158436d66f6be5f",
+    "usm-pg-fee-page-current": "3597c8977755aa2f18fb3b389c813435989bd62cc54318f26b8e573c10401076",
+    "usm-pg-fees-2025-2026": "24bc178e7da6de039ff9e5cd866c580a5f3ed1c73db04d08b8f7ca42cb75bcef",
+    "usm-pg-general-requirements": "ccb852d13ccb650d2d80006c1ff18bf9129002fca83175db9158436d66f6be5f",
+    "usm-ips-admission-downloads": "8bc410b05fc4909de3d3bf6187cd6acd92bc760bfc293f0b2a2b3490476bec9c",
+    "usm-ips-research-mode-registration": "604bd880c1a0c8528cb7c4233e86c08f80ba4075a126c14b15d46bb23eff2d3e",
+    "usm-onlineips-application-guide-2026": "92559bbca13240e19d9cec7b761c7718eace5fa86648f3a13a0ea46fd443ece3",
+    "usm-coursework-mixed-candidature": "10a840d099c43a52c4dfaf7ab9b1173549eded928a2a55b8d9e987554afd77a0"
+  },
+  "databaseWrite": "not-performed",
+  "publicationDecision": "publish-international-eligible-catalogue"
+}

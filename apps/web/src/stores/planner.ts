@@ -51,7 +51,12 @@ const DEFAULT_PROFILE: PlannerProfileState = {
   gpa: 2.9,
   ielts: 5.5,
   experience: "0-1 years",
-  acceptNoLanguage: true
+  acceptNoLanguage: true,
+  contactInfo: {},
+  academicBackground: {},
+  languageProfile: {},
+  studyPreferences: {},
+  serviceNeeds: { needs: [] }
 };
 
 const DEFAULT_VISA: PlannerVisaChecklist = {
@@ -319,6 +324,10 @@ function buildMaterials(profile: PlannerProfileState, progress: Record<string, M
     material("language", "Language score", "英语成绩证明", "Bukti skor bahasa Inggeris", "IELTS, TOEFL or university-accepted conditional-language route.", "IELTS、TOEFL 或院校认可的条件语言路径。", "IELTS, TOEFL atau laluan bahasa bersyarat yang diterima universiti.")
   ];
   const levelMaterials: Record<DegreeLevel, PlannerMaterialItem[]> = {
+    diploma: [
+      material("high_school", "High school certificate", "高中毕业证或在读证明", "Sijil sekolah menengah atau surat pengesahan pelajar", "Graduation certificate or enrollment certificate.", "高中毕业证，或仍在读学生的在读证明。", "Sijil tamat sekolah atau surat pengesahan masih belajar."),
+      material("personal_statement", "Personal statement", "个人陈述", "Penyataan peribadi", "Draft your study motivation and academic fit.", "说明学习动机、专业匹配度和未来规划。", "Terangkan motivasi belajar, kesesuaian akademik dan rancangan masa depan.")
+    ],
     bachelor: [
       material("high_school", "High school certificate", "高中毕业证或在读证明", "Sijil sekolah menengah atau surat pengesahan pelajar", "Graduation certificate or enrollment certificate.", "高中毕业证，或仍在读学生的在读证明。", "Sijil tamat sekolah atau surat pengesahan masih belajar."),
       material("personal_statement", "Personal statement", "个人陈述", "Penyataan peribadi", "Draft your study motivation and academic fit.", "说明学习动机、专业匹配度和未来规划。", "Terangkan motivasi belajar, kesesuaian akademik dan rancangan masa depan.")
@@ -567,7 +576,12 @@ function normalizeProfile(value: unknown): PlannerProfileState {
     gpa: normalizeNumber(source.gpa, DEFAULT_PROFILE.gpa),
     ielts: normalizeNumber(source.ielts, DEFAULT_PROFILE.ielts),
     experience: typeof source.experience === "string" && source.experience ? source.experience : DEFAULT_PROFILE.experience,
-    acceptNoLanguage: typeof source.acceptNoLanguage === "boolean" ? source.acceptNoLanguage : DEFAULT_PROFILE.acceptNoLanguage
+    acceptNoLanguage: typeof source.acceptNoLanguage === "boolean" ? source.acceptNoLanguage : DEFAULT_PROFILE.acceptNoLanguage,
+    contactInfo: normalizeObjectSection(source.contactInfo),
+    academicBackground: normalizeObjectSection(source.academicBackground),
+    languageProfile: normalizeObjectSection(source.languageProfile),
+    studyPreferences: normalizeStudyPreferences(source.studyPreferences),
+    serviceNeeds: normalizeServiceNeeds(source.serviceNeeds)
   };
 }
 
@@ -706,12 +720,44 @@ function getProfileCompleteness(profile: PlannerProfileState) {
   let score = 0;
   if (profile.level) score += 16;
   if (profile.targetCategory) score += 16;
-  if (profile.budgetCny > 0) score += 16;
-  if (profile.gpa > 0) score += 18;
-  if (profile.ielts > 0) score += 16;
-  if (profile.experience) score += 8;
-  if (typeof profile.acceptNoLanguage === "boolean") score += 10;
+  if (profile.budgetCny > 0) score += 12;
+  if (profile.gpa > 0) score += 12;
+  if (profile.ielts > 0) score += 10;
+  if (profile.experience) score += 6;
+  if (typeof profile.acceptNoLanguage === "boolean") score += 8;
+  if (hasAnyValue(profile.contactInfo)) score += 10;
+  if (hasAnyValue(profile.academicBackground)) score += 10;
+  if (hasAnyValue(profile.languageProfile)) score += 8;
+  if (hasAnyValue(profile.studyPreferences)) score += 4;
+  if (hasAnyValue(profile.serviceNeeds)) score += 4;
   return Math.min(100, score);
+}
+
+function normalizeObjectSection(value: unknown): Record<string, unknown> {
+  return value && typeof value === "object" && !Array.isArray(value) ? { ...(value as Record<string, unknown>) } : {};
+}
+
+function normalizeStudyPreferences(value: unknown): Record<string, unknown> {
+  const source = normalizeObjectSection(value);
+  const preferredCities = Array.isArray(source.preferredCities)
+    ? source.preferredCities.filter((item): item is string => typeof item === "string")
+    : [];
+  return { ...source, preferredCities };
+}
+
+function normalizeServiceNeeds(value: unknown): Record<string, unknown> {
+  const source = normalizeObjectSection(value);
+  const needs = Array.isArray(source.needs) ? source.needs.filter((item): item is string => typeof item === "string") : [];
+  return { ...source, needs };
+}
+
+function hasAnyValue(value: unknown) {
+  if (!value || typeof value !== "object") return false;
+  return Object.values(value).some((item) => {
+    if (Array.isArray(item)) return item.length > 0;
+    if (typeof item === "boolean") return item;
+    return typeof item === "string" ? item.trim().length > 0 : item != null;
+  });
 }
 
 function getReadiness(profile: PlannerProfileState, materialCompletion: number, recommendationCount: number) {

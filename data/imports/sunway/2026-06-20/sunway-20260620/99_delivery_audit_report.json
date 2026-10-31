@@ -1,0 +1,58 @@
+{
+  "status": "published",
+  "scope": {
+    "universityCode": "SUNWAY",
+    "collectionScope": "full",
+    "levels": [
+      "bachelor",
+      "master",
+      "phd"
+    ],
+    "applicantScope": "international",
+    "academicSession": "Year 2026 fee/intake pages; current as of 2026-06-20, deep-reviewed and fee-policy corrected on 2026-06-21"
+  },
+  "levels": [
+    "bachelor",
+    "master",
+    "phd"
+  ],
+  "authorization": "publish",
+  "counts": {
+    "directoryOccurrences": 104,
+    "uniqueOfficialEntries": 104,
+    "canonicalProgrammes": 97,
+    "ready": 97,
+    "needsReview": 0,
+    "notAvailableForInternational": 0,
+    "byLevel": {
+      "bachelor": 48,
+      "master": 33,
+      "phd": 16
+    },
+    "outOfScope": 7
+  },
+  "coverageKeys": [
+    "academicRequirement",
+    "applicationDocuments",
+    "campus",
+    "deepSourceFieldExploration",
+    "duration",
+    "evidence",
+    "faculty",
+    "fee",
+    "identity",
+    "institutionProfile",
+    "intake",
+    "internationalEligibility",
+    "languageRequirement",
+    "localization",
+    "studentFacingContentHygiene",
+    "studyMode"
+  ],
+  "sourceCount": 106,
+  "artifactCount": 25,
+  "blockingExceptionCount": 0,
+  "reviewExceptionCount": 0,
+  "issueCounts": {},
+  "issues": []
+}

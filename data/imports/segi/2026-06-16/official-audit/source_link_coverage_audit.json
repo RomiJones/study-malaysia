@@ -1,0 +1,995 @@
+{
+  "auditType": "source-link-coverage-incident",
+  "institution": "SEGI",
+  "currentAsOf": "2026-06-17",
+  "officialDomain": "university.segi.edu.my",
+  "checkedRows": 49,
+  "reachableRows": 49,
+  "unreachableRows": [],
+  "needsReviewRows": [
+    {
+      "code": "SEGI-BAHM",
+      "title": "Bachelor of Hospitality and Tourism Management (Hons)",
+      "status": "needs-review",
+      "url": "https://university.segi.edu.my/course/bachelor-of-hospitality-management-hons/",
+      "httpStatus": 200,
+      "finalUrl": "https://university.segi.edu.my/course/bachelor-of-hospitality-management-hons/",
+      "reachable": true,
+      "sampleSha256": "sha256:bd90dde0c7d059918744f1ed15d7635d1eb015939496ed6c6180548ecfa6cb1a"
+    },
+    {
+      "code": "SEGI-BEPR",
+      "title": "Bachelor of English and Public Relations (Hons)",
+      "status": "needs-review",
+      "url": "https://university.segi.edu.my/course/bachelor-of-arts-hons-in-english-and-public-relations/",
+      "httpStatus": 200,
+      "finalUrl": "https://university.segi.edu.my/course/bachelor-of-arts-hons-in-english-and-public-relations/",
+      "reachable": true,
+      "sampleSha256": "sha256:b7d0218b95124e033bd50e42bcf8c62937e37b6a839e0a9a7ff901130743dc22"
+    },
+    {
+      "code": "SEGI-BPHARM",
+      "title": "Bachelor of Pharmacy",
+      "status": "needs-review",
+      "url": "https://university.segi.edu.my/course/bachelor-of-pharmacy-hons/",
+      "httpStatus": 200,
+      "finalUrl": "https://university.segi.edu.my/course/bachelor-of-pharmacy-hons/",
+      "reachable": true,
+      "sampleSha256": "sha256:ff59e2e4f49a7be57b0616262e79608592b6602093154b1c7ecf4cfc3e8c2788"
+    },
+    {
+      "code": "SEGI-BQS",
+      "title": "Bachelor of Arts (Hons) in Quantity Surveying",
+      "status": "needs-review",
+      "url": "https://university.segi.edu.my/course/bachelor-in-quantity-surveying/",
+      "httpStatus": 200,
+      "finalUrl": "https://university.segi.edu.my/course/bachelor-in-quantity-surveying/",
+      "reachable": true,
+      "sampleSha256": "sha256:38e756122d7f771b5edb6ef1976dddf3ae16591346570e5c374230444140d9d9"
+    },
+    {
+      "code": "SEGI-MA",
+      "title": "Master of Accounting",
+      "status": "needs-review",
+      "url": "https://university.segi.edu.my/course/master-of-accountancy/",
+      "httpStatus": 200,
+      "finalUrl": "https://university.segi.edu.my/course/master-of-accountancy/",
+      "reachable": true,
+      "sampleSha256": "sha256:ff5e8aada5bde1a213f8cd8131367ecab1e26ad0639e334fda0250d05c921073"
+    },
+    {
+      "code": "SEGI-MBA-5PLUS1",
+      "title": "Master of Business Administration (5+1)",
+      "status": "needs-review",
+      "url": "https://university.segi.edu.my/course/master-of-business-administration/",
+      "httpStatus": 200,
+      "finalUrl": "https://university.segi.edu.my/course/master-of-business-administration/",
+      "reachable": true,
+      "sampleSha256": "sha256:85f13ed743055750d165cd1e182df3b2dacba37fd0f53fca2afb07c5c63a1b14"
+    },
+    {
+      "code": "SEGI-MED-CW",
+      "title": "Master of Education (Coursework)",
+      "status": "needs-review",
+      "url": "https://university.segi.edu.my/course/master-of-education/",
+      "httpStatus": 200,
+      "finalUrl": "https://university.segi.edu.my/course/master-of-education/",
+      "reachable": true,
+      "sampleSha256": "sha256:a512be5f4deb48b6dae0134a686b77c450557a13fd0551ea6033fa38cdd15446"
+    },
+    {
+      "code": "SEGI-MENG-RES",
+      "title": "Master of Engineering (By Research)",
+      "status": "needs-review",
+      "url": "https://university.segi.edu.my/course/msc-engineering-by-research/",
+      "httpStatus": 200,
+      "finalUrl": "https://university.segi.edu.my/course/msc-engineering-by-research/",
+      "reachable": true,
+      "sampleSha256": "sha256:393999264dde15be0f4e00be0caaf29c8f1ee49478e02dfa8b6de9843a84759d"
+    },
+    {
+      "code": "SEGI-MIL",
+      "title": "Master of International Law (LL.M)",
+      "status": "needs-review",
+      "url": "https://university.segi.edu.my/course/master-of-laws/",
+      "httpStatus": 200,
+      "finalUrl": "https://university.segi.edu.my/course/master-of-laws/",
+      "reachable": true,
+      "sampleSha256": "sha256:738ffea87edccb93cdc7ffb54295d356a647241a17528e4997c9dbf1646e86b2"
+    },
+    {
+      "code": "SEGI-MIT-CW",
+      "title": "Master of Information Technology (Coursework)",
+      "status": "needs-review",
+      "url": "https://university.segi.edu.my/course/msc-in-information-technology-coursework/",
+      "httpStatus": 200,
+      "finalUrl": "https://university.segi.edu.my/course/msc-in-information-technology-coursework/",
+      "reachable": true,
+      "sampleSha256": "sha256:69af0c072b12503e38905321c4b13693d918ee4c957042ca58777b889220fd39"
+    },
+    {
+      "code": "SEGI-MIT-RES",
+      "title": "Master of Information Technology (By Research)",
+      "status": "needs-review",
+      "url": "https://university.segi.edu.my/course/msc-information-technology-by-research/",
+      "httpStatus": 200,
+      "finalUrl": "https://university.segi.edu.my/course/msc-information-technology-by-research/",
+      "reachable": true,
+      "sampleSha256": "sha256:be0e42c43994139915207ff07d6b8b89952d556ceba14339c006cfcc1485195d"
+    },
+    {
+      "code": "SEGI-MMED",
+      "title": "Master in Medicine",
+      "status": "needs-review",
+      "url": "https://university.segi.edu.my/course/master-of-medical-science-by-research/",
+      "httpStatus": 200,
+      "finalUrl": "https://university.segi.edu.my/course/master-of-medical-science-by-research/",
+      "reachable": true,
+      "sampleSha256": "sha256:8ae9f39b33e5e6109ce56e0a2d4c64d8ecf41b78fa8d300586673e4dce0871f8"
+    },
+    {
+      "code": "SEGI-MSC-MGMT",
+      "title": "Master of Science in Management (By Research)",
+      "status": "needs-review",
+      "url": "https://university.segi.edu.my/course/master-of-science-in-management/",
+      "httpStatus": 200,
+      "finalUrl": "https://university.segi.edu.my/course/master-of-science-in-management/",
+      "reachable": true,
+      "sampleSha256": "sha256:ac107eae05b02f17f898e946d41734ba00540e7ac00df8cfc7430c1993894151"
+    }
+  ],
+  "verifiedRows": [
+    {
+      "code": "SEGI-BAF",
+      "title": "Bachelor of Accounting and Finance (Hons)",
+      "status": "official-verified",
+      "url": "https://university.segi.edu.my/course/bachelor-of-accounting-and-finance-honours/",
+      "httpStatus": 200,
+      "finalUrl": "https://university.segi.edu.my/course/bachelor-of-accounting-and-finance-honours/",
+      "reachable": true,
+      "sampleSha256": "sha256:3db69221db41947d3abf3958b5b81d7c3c708d53f3ce29105ab696370b21884c"
+    },
+    {
+      "code": "SEGI-BBM",
+      "title": "Bachelor of Business Management (Hons)",
+      "status": "official-verified",
+      "url": "https://university.segi.edu.my/course/bachelor-of-business-management-honours/",
+      "httpStatus": 200,
+      "finalUrl": "https://university.segi.edu.my/course/bachelor-of-business-management-honours/",
+      "reachable": true,
+      "sampleSha256": "sha256:589a5394d4ea4df24ccc889cd894445c9e9eda15f1341f77cfd7c024a222c306"
+    },
+    {
+      "code": "SEGI-BCE",
+      "title": "Bachelor of Civil Engineering (Hons)",
+      "status": "official-verified",
+      "url": "https://university.segi.edu.my/course/bachelor-of-civil-engineering-hons/",
+      "httpStatus": 200,
+      "finalUrl": "https://university.segi.edu.my/course/bachelor-of-civil-engineering-hons/",
+      "reachable": true,
+      "sampleSha256": "sha256:56d76499d58259f1bc6a20ba899fe09ff63688e94dfeb7ade3e7609d3a477a61"
+    },
+    {
+      "code": "SEGI-BCHEM",
+      "title": "Bachelor of Chemical Engineering (Hons)",
+      "status": "official-verified",
+      "url": "https://university.segi.edu.my/course/bachelor-of-chemical-engineering-hons/",
+      "httpStatus": 200,
+      "finalUrl": "https://university.segi.edu.my/course/bachelor-of-chemical-engineering-hons/",
+      "reachable": true,
+      "sampleSha256": "sha256:8212bdc2896ede586d0df8b9f7e4bea37f37f7273deeaaea597080ee4b619a55"
+    },
+    {
+      "code": "SEGI-BCS",
+      "title": "Bachelor of Computer Science (Hons)",
+      "status": "official-verified",
+      "url": "https://university.segi.edu.my/course/bachelor-of-computer-science-hons/",
+      "httpStatus": 200,
+      "finalUrl": "https://university.segi.edu.my/course/bachelor-of-computer-science-hons/",
+      "reachable": true,
+      "sampleSha256": "sha256:15cd42d515ef80e9701c3919c7b585eb7d2db95bf0a6ad6caeaf9d8118cbcae8"
+    },
+    {
+      "code": "SEGI-BDS",
+      "title": "Bachelor of Dental Surgery",
+      "status": "official-verified",
+      "url": "https://university.segi.edu.my/course/bachelor-of-dental-surgery-bds/",
+      "httpStatus": 200,
+      "finalUrl": "https://university.segi.edu.my/course/bachelor-of-dental-surgery-bds/",
+      "reachable": true,
+      "sampleSha256": "sha256:605588c12fa0f33cbc252f3c6568346985bc7e117cdc13dfc79bdd82719e99ab"
+    },
+    {
+      "code": "SEGI-BED",
+      "title": "Bachelor of Education (Hons)",
+      "status": "official-verified",
+      "url": "https://university.segi.edu.my/course/bachelor-of-education-hons/",
+      "httpStatus": 200,
+      "finalUrl": "https://university.segi.edu.my/course/bachelor-of-education-hons/",
+      "reachable": true,
+      "sampleSha256": "sha256:4bd716d615948010baa139ff1f11e82b518010e48365047f9863a370853d975f"
+    },
+    {
+      "code": "SEGI-BEE",
+      "title": "Bachelor of Electrical and Electronic Engineering (Hons)",
+      "status": "official-verified",
+      "url": "https://university.segi.edu.my/course/bachelor-of-electrical-and-electronics-engineering-hons/",
+      "httpStatus": 200,
+      "finalUrl": "https://university.segi.edu.my/course/bachelor-of-electrical-and-electronics-engineering-hons/",
+      "reachable": true,
+      "sampleSha256": "sha256:111e148dac18ff51038eaa02c68848b7f4f8601812ec5c457a671b9c6bec3cc8"
+    },
+    {
+      "code": "SEGI-BIA",
+      "title": "Bachelor of Arts (Hons) in Interior Architecture",
+      "status": "official-verified",
+      "url": "https://university.segi.edu.my/course/bachelor-of-art-in-interior-architecture-hons/",
+      "httpStatus": 200,
+      "finalUrl": "https://university.segi.edu.my/course/bachelor-of-art-in-interior-architecture-hons/",
+      "reachable": true,
+      "sampleSha256": "sha256:a2ea4a69f8ec90a8ceb5e74c5a6ff8ce7f567341baf5ece6bd13633946e32ca9"
+    },
+    {
+      "code": "SEGI-BIB",
+      "title": "Bachelor of International Business (Hons)",
+      "status": "official-verified",
+      "url": "https://university.segi.edu.my/course/bachelor-of-international-business-honours/",
+      "httpStatus": 200,
+      "finalUrl": "https://university.segi.edu.my/course/bachelor-of-international-business-honours/",
+      "reachable": true,
+      "sampleSha256": "sha256:e87521f4e99919e0c475e05449e8c8d26a1d698c271d33184cfd399cd87f4c10"
+    },
+    {
+      "code": "SEGI-BIT",
+      "title": "Bachelor of Information Technology (Hons)",
+      "status": "official-verified",
+      "url": "https://university.segi.edu.my/course/bachelor-of-information-technology-hons/",
+      "httpStatus": 200,
+      "finalUrl": "https://university.segi.edu.my/course/bachelor-of-information-technology-hons/",
+      "reachable": true,
+      "sampleSha256": "sha256:dc2017af78162b862b4a51ba48821dac265bb41316dde2be2315a815f8f4d290"
+    },
+    {
+      "code": "SEGI-BMC",
+      "title": "Bachelor of Mass Communication (Hons)",
+      "status": "official-verified",
+      "url": "https://university.segi.edu.my/course/bachelor-of-mass-communication-hons/",
+      "httpStatus": 200,
+      "finalUrl": "https://university.segi.edu.my/course/bachelor-of-mass-communication-hons/",
+      "reachable": true,
+      "sampleSha256": "sha256:371862753131557b41007862f75cdc229686118789c27ade352074cfb668e802"
+    },
+    {
+      "code": "SEGI-BME",
+      "title": "Bachelor of Mechanical Engineering (Hons)",
+      "status": "official-verified",
+      "url": "https://university.segi.edu.my/course/bachelor-of-mechanical-engineering-hons/",
+      "httpStatus": 200,
+      "finalUrl": "https://university.segi.edu.my/course/bachelor-of-mechanical-engineering-hons/",
+      "reachable": true,
+      "sampleSha256": "sha256:2becb7023fb30e399de8a5cce69a90d2621b8e9e3d87b5e33c1731a5e9bc5b50"
+    },
+    {
+      "code": "SEGI-BMH",
+      "title": "Bachelor of Mechatronics Engineering (Hons)",
+      "status": "official-verified",
+      "url": "https://university.segi.edu.my/course/bachelor-of-mechatronics-engineering-hons/",
+      "httpStatus": 200,
+      "finalUrl": "https://university.segi.edu.my/course/bachelor-of-mechatronics-engineering-hons/",
+      "reachable": true,
+      "sampleSha256": "sha256:411aa2da2a962672899100c4c4850b245026ae05804c4a4d5eccd3081bd04495"
+    },
+    {
+      "code": "SEGI-BMMD",
+      "title": "Bachelor of Arts (Hons) in Multimedia Design",
+      "status": "official-verified",
+      "url": "https://university.segi.edu.my/course/bachelor-of-arts-hons-multimedia-design/",
+      "httpStatus": 200,
+      "finalUrl": "https://university.segi.edu.my/course/bachelor-of-arts-hons-multimedia-design/",
+      "reachable": true,
+      "sampleSha256": "sha256:f853d3f606ca0fe0e1feadec2f0da35ca707f66f1b04b51040f4504bdd914a25"
+    },
+    {
+      "code": "SEGI-BMMS",
+      "title": "Bachelor of Biomedical Science (Hons)",
+      "status": "official-verified",
+      "url": "https://university.segi.edu.my/course/bachelor-of-biomedical-science-hons/",
+      "httpStatus": 200,
+      "finalUrl": "https://university.segi.edu.my/course/bachelor-of-biomedical-science-hons/",
+      "reachable": true,
+      "sampleSha256": "sha256:3891d2ca1184415c81781b08c9221401ffd96d7487d4df9d387abc7a02b8b3b6"
+    },
+    {
+      "code": "SEGI-BMUSIC",
+      "title": "Bachelor of Music (Hons)",
+      "status": "official-verified",
+      "url": "https://university.segi.edu.my/course/bachelor-of-music-honours/",
+      "httpStatus": 200,
+      "finalUrl": "https://university.segi.edu.my/course/bachelor-of-music-honours/",
+      "reachable": true,
+      "sampleSha256": "sha256:6001276a1c69372c39d916b39205687734da5c60da3d1739e1377182370ead0f"
+    },
+    {
+      "code": "SEGI-BOPTO",
+      "title": "Bachelor of Optometry (Hons)",
+      "status": "official-verified",
+      "url": "https://university.segi.edu.my/course/bachelor-of-optometry-hons/",
+      "httpStatus": 200,
+      "finalUrl": "https://university.segi.edu.my/course/bachelor-of-optometry-hons/",
+      "reachable": true,
+      "sampleSha256": "sha256:4c9c6fc5252d337e3c427d44ab417a8e41f9f0f98850c57a0c99d5b9e9dd6473"
+    },
+    {
+      "code": "SEGI-BPHYSIO",
+      "title": "Bachelor of Physiotherapy (Hons)",
+      "status": "official-verified",
+      "url": "https://university.segi.edu.my/course/bachelor-of-physiotherapy-hons/",
+      "httpStatus": 200,
+      "finalUrl": "https://university.segi.edu.my/course/bachelor-of-physiotherapy-hons/",
+      "reachable": true,
+      "sampleSha256": "sha256:371fce4b8443ecfba5a8632664baeb33d611ef67b6081f5c5f657228855a894a"
+    },
+    {
+      "code": "SEGI-BPSY",
+      "title": "Bachelor of Psychology (Hons)",
+      "status": "official-verified",
+      "url": "https://university.segi.edu.my/course/bachelor-of-psychology-honours/",
+      "httpStatus": 200,
+      "finalUrl": "https://university.segi.edu.my/course/bachelor-of-psychology-honours/",
+      "reachable": true,
+      "sampleSha256": "sha256:95318d9dd523bed3a083252d8682259291eff93dacd92df4651c09ec3cd32ab0"
+    },
+    {
+      "code": "SEGI-BSCAR",
+      "title": "Bachelor of Science (Hons) in Architecture",
+      "status": "official-verified",
+      "url": "https://university.segi.edu.my/course/bachelor-of-science-in-architecture-hons/",
+      "httpStatus": 200,
+      "finalUrl": "https://university.segi.edu.my/course/bachelor-of-science-in-architecture-hons/",
+      "reachable": true,
+      "sampleSha256": "sha256:a000a468f3db0f2ff722f15dfe41b78d822338eced0fc5bc7e49dd0e4c585311"
+    },
+    {
+      "code": "SEGI-BVCD",
+      "title": "Bachelor of Arts (Hons) in Visual Communication Design",
+      "status": "official-verified",
+      "url": "https://university.segi.edu.my/course/bachelor-of-arts-hons-visual-communication-design/",
+      "httpStatus": 200,
+      "finalUrl": "https://university.segi.edu.my/course/bachelor-of-arts-hons-visual-communication-design/",
+      "reachable": true,
+      "sampleSha256": "sha256:dbcf190a105fae84df744ba46eb4b520d36ba090677b0f1c553627784b2e1bd8"
+    },
+    {
+      "code": "SEGI-DRBA",
+      "title": "Doctor of Business Administration",
+      "status": "official-verified",
+      "url": "https://university.segi.edu.my/course/doctor-of-business-administration/",
+      "httpStatus": 200,
+      "finalUrl": "https://university.segi.edu.my/course/doctor-of-business-administration/",
+      "reachable": true,
+      "sampleSha256": "sha256:86016b0aa88055acb4163753bc4f11d765658ba24da00a36a4384316f2d8219a"
+    },
+    {
+      "code": "SEGI-MACC",
+      "title": "Master of Arts in Corporate Communication",
+      "status": "official-verified",
+      "url": "https://university.segi.edu.my/course/master-of-arts-in-corporate-communications/",
+      "httpStatus": 200,
+      "finalUrl": "https://university.segi.edu.my/course/master-of-arts-in-corporate-communications/",
+      "reachable": true,
+      "sampleSha256": "sha256:6b7712eed51ccb05d7ecff7ba64bfd8b166dd1744abd283564d11a154c1b14df"
+    },
+    {
+      "code": "SEGI-MBA",
+      "title": "Master of Business Administration",
+      "status": "official-verified",
+      "url": "https://university.segi.edu.my/course/master-of-business-administration/",
+      "httpStatus": 200,
+      "finalUrl": "https://university.segi.edu.my/course/master-of-business-administration/",
+      "reachable": true,
+      "sampleSha256": "sha256:85f13ed743055750d165cd1e182df3b2dacba37fd0f53fca2afb07c5c63a1b14"
+    },
+    {
+      "code": "SEGI-MBBS",
+      "title": "Bachelor of Medicine and Bachelor of Surgery (MBBS)",
+      "status": "official-verified",
+      "url": "https://university.segi.edu.my/course/bachelor-of-medicine-bachelor-of-surgery-mbbs/",
+      "httpStatus": 200,
+      "finalUrl": "https://university.segi.edu.my/course/bachelor-of-medicine-bachelor-of-surgery-mbbs/",
+      "reachable": true,
+      "sampleSha256": "sha256:22efc5a95c7e2e18f44654f6a45b07c20b3a4e411d40f169c7ad77476ce27313"
+    },
+    {
+      "code": "SEGI-MCDM",
+      "title": "Master of Arts in Creative Design Management",
+      "status": "official-verified",
+      "url": "https://university.segi.edu.my/course/master-of-creative-design-management/",
+      "httpStatus": 200,
+      "finalUrl": "https://university.segi.edu.my/course/master-of-creative-design-management/",
+      "reachable": true,
+      "sampleSha256": "sha256:14a5cd0d34e4b810d2877d648963a554a9a48b0c4f4090ca8abb8b5b6a204371"
+    },
+    {
+      "code": "SEGI-MED-RES",
+      "title": "Master of Education (By Research)",
+      "status": "official-verified",
+      "url": "https://university.segi.edu.my/course/master-of-education-by-research/",
+      "httpStatus": 200,
+      "finalUrl": "https://university.segi.edu.my/course/master-of-education-by-research/",
+      "reachable": true,
+      "sampleSha256": "sha256:d296ff7bb33b0bde02f6b7213ac3c982331201261c99bdf3b831c1bad6b59473"
+    },
+    {
+      "code": "SEGI-MFP",
+      "title": "Master of Financial Planning",
+      "status": "official-verified",
+      "url": "https://university.segi.edu.my/course/master-in-financial-planning/",
+      "httpStatus": 200,
+      "finalUrl": "https://university.segi.edu.my/course/master-in-financial-planning/",
+      "reachable": true,
+      "sampleSha256": "sha256:378a32032240cc10e5beda119dafec89909e9d53185e87e9ee340b9f7caac6ea"
+    },
+    {
+      "code": "SEGI-MSC-VS",
+      "title": "Master of Science in Vision Science",
+      "status": "official-verified",
+      "url": "https://university.segi.edu.my/course/master-of-science-in-vision-science-by-research/",
+      "httpStatus": 200,
+      "finalUrl": "https://university.segi.edu.my/course/master-of-science-in-vision-science-by-research/",
+      "reachable": true,
+      "sampleSha256": "sha256:dd9c2e8677594202901a04ff704648aeae25ea8be2f3a7fd3ea4ad6fbda306f2"
+    },
+    {
+      "code": "SEGI-MSPS",
+      "title": "Master of Science in Pharmaceutical Sciences",
+      "status": "official-verified",
+      "url": "https://university.segi.edu.my/course/master-of-science-pharmaceutical-sciences/",
+      "httpStatus": 200,
+      "finalUrl": "https://university.segi.edu.my/course/master-of-science-pharmaceutical-sciences/",
+      "reachable": true,
+      "sampleSha256": "sha256:ae1e91326c492dba9cf0d220515f5237022ecb91b827ae1351b2e25a9e1af7fe"
+    },
+    {
+      "code": "SEGI-MSSP",
+      "title": "Master of Science in Psychology",
+      "status": "official-verified",
+      "url": "https://university.segi.edu.my/course/master-of-social-science-in-psychology/",
+      "httpStatus": 200,
+      "finalUrl": "https://university.segi.edu.my/course/master-of-social-science-in-psychology/",
+      "reachable": true,
+      "sampleSha256": "sha256:9024e8fd1832cbaf9f8717570a4b0fc226cdfc4dd84575712045945f10ae002c"
+    },
+    {
+      "code": "SEGI-PHD-EDU",
+      "title": "Doctor of Philosophy in Education",
+      "status": "official-verified",
+      "url": "https://university.segi.edu.my/course/phd-education-by-research/",
+      "httpStatus": 200,
+      "finalUrl": "https://university.segi.edu.my/course/phd-education-by-research/",
+      "reachable": true,
+      "sampleSha256": "sha256:f7548dd5f4aa68b16d5a523100336e31a1990e61c37e15e95b3324114045f94c"
+    },
+    {
+      "code": "SEGI-PHD-ENG",
+      "title": "Doctor of Philosophy in Engineering",
+      "status": "official-verified",
+      "url": "https://university.segi.edu.my/course/phd-engineering-by-research/",
+      "httpStatus": 200,
+      "finalUrl": "https://university.segi.edu.my/course/phd-engineering-by-research/",
+      "reachable": true,
+      "sampleSha256": "sha256:31bf924d26f3050a4f6a82a700e9dc87760193d3a44b3c23ef0b902ff5690c1c"
+    },
+    {
+      "code": "SEGI-PHD-IT",
+      "title": "Doctor of Philosophy in Information Technology",
+      "status": "official-verified",
+      "url": "https://university.segi.edu.my/course/phd-information-technology-by-research/",
+      "httpStatus": 200,
+      "finalUrl": "https://university.segi.edu.my/course/phd-information-technology-by-research/",
+      "reachable": true,
+      "sampleSha256": "sha256:8e23f51dcc7e07499333353e6a5f3c4f59e26c727005802c4c87e71c9c19868f"
+    },
+    {
+      "code": "SEGI-PHD-MGMT",
+      "title": "Doctor of Philosophy in Management",
+      "status": "official-verified",
+      "url": "https://university.segi.edu.my/course/doctor-of-philosophy-in-management/",
+      "httpStatus": 200,
+      "finalUrl": "https://university.segi.edu.my/course/doctor-of-philosophy-in-management/",
+      "reachable": true,
+      "sampleSha256": "sha256:12c3b149aaef4c239cff97a1e899f147e42bcfd6410e859793c42004752b3eaf"
+    }
+  ],
+  "records": [
+    {
+      "code": "SEGI-BAF",
+      "title": "Bachelor of Accounting and Finance (Hons)",
+      "status": "official-verified",
+      "url": "https://university.segi.edu.my/course/bachelor-of-accounting-and-finance-honours/",
+      "httpStatus": 200,
+      "finalUrl": "https://university.segi.edu.my/course/bachelor-of-accounting-and-finance-honours/",
+      "reachable": true,
+      "sampleSha256": "sha256:3db69221db41947d3abf3958b5b81d7c3c708d53f3ce29105ab696370b21884c"
+    },
+    {
+      "code": "SEGI-BAHM",
+      "title": "Bachelor of Hospitality and Tourism Management (Hons)",
+      "status": "needs-review",
+      "url": "https://university.segi.edu.my/course/bachelor-of-hospitality-management-hons/",
+      "httpStatus": 200,
+      "finalUrl": "https://university.segi.edu.my/course/bachelor-of-hospitality-management-hons/",
+      "reachable": true,
+      "sampleSha256": "sha256:bd90dde0c7d059918744f1ed15d7635d1eb015939496ed6c6180548ecfa6cb1a"
+    },
+    {
+      "code": "SEGI-BBM",
+      "title": "Bachelor of Business Management (Hons)",
+      "status": "official-verified",
+      "url": "https://university.segi.edu.my/course/bachelor-of-business-management-honours/",
+      "httpStatus": 200,
+      "finalUrl": "https://university.segi.edu.my/course/bachelor-of-business-management-honours/",
+      "reachable": true,
+      "sampleSha256": "sha256:589a5394d4ea4df24ccc889cd894445c9e9eda15f1341f77cfd7c024a222c306"
+    },
+    {
+      "code": "SEGI-BCE",
+      "title": "Bachelor of Civil Engineering (Hons)",
+      "status": "official-verified",
+      "url": "https://university.segi.edu.my/course/bachelor-of-civil-engineering-hons/",
+      "httpStatus": 200,
+      "finalUrl": "https://university.segi.edu.my/course/bachelor-of-civil-engineering-hons/",
+      "reachable": true,
+      "sampleSha256": "sha256:56d76499d58259f1bc6a20ba899fe09ff63688e94dfeb7ade3e7609d3a477a61"
+    },
+    {
+      "code": "SEGI-BCHEM",
+      "title": "Bachelor of Chemical Engineering (Hons)",
+      "status": "official-verified",
+      "url": "https://university.segi.edu.my/course/bachelor-of-chemical-engineering-hons/",
+      "httpStatus": 200,
+      "finalUrl": "https://university.segi.edu.my/course/bachelor-of-chemical-engineering-hons/",
+      "reachable": true,
+      "sampleSha256": "sha256:8212bdc2896ede586d0df8b9f7e4bea37f37f7273deeaaea597080ee4b619a55"
+    },
+    {
+      "code": "SEGI-BCS",
+      "title": "Bachelor of Computer Science (Hons)",
+      "status": "official-verified",
+      "url": "https://university.segi.edu.my/course/bachelor-of-computer-science-hons/",
+      "httpStatus": 200,
+      "finalUrl": "https://university.segi.edu.my/course/bachelor-of-computer-science-hons/",
+      "reachable": true,
+      "sampleSha256": "sha256:15cd42d515ef80e9701c3919c7b585eb7d2db95bf0a6ad6caeaf9d8118cbcae8"
+    },
+    {
+      "code": "SEGI-BDS",
+      "title": "Bachelor of Dental Surgery",
+      "status": "official-verified",
+      "url": "https://university.segi.edu.my/course/bachelor-of-dental-surgery-bds/",
+      "httpStatus": 200,
+      "finalUrl": "https://university.segi.edu.my/course/bachelor-of-dental-surgery-bds/",
+      "reachable": true,
+      "sampleSha256": "sha256:605588c12fa0f33cbc252f3c6568346985bc7e117cdc13dfc79bdd82719e99ab"
+    },
+    {
+      "code": "SEGI-BED",
+      "title": "Bachelor of Education (Hons)",
+      "status": "official-verified",
+      "url": "https://university.segi.edu.my/course/bachelor-of-education-hons/",
+      "httpStatus": 200,
+      "finalUrl": "https://university.segi.edu.my/course/bachelor-of-education-hons/",
+      "reachable": true,
+      "sampleSha256": "sha256:4bd716d615948010baa139ff1f11e82b518010e48365047f9863a370853d975f"
+    },
+    {
+      "code": "SEGI-BEE",
+      "title": "Bachelor of Electrical and Electronic Engineering (Hons)",
+      "status": "official-verified",
+      "url": "https://university.segi.edu.my/course/bachelor-of-electrical-and-electronics-engineering-hons/",
+      "httpStatus": 200,
+      "finalUrl": "https://university.segi.edu.my/course/bachelor-of-electrical-and-electronics-engineering-hons/",
+      "reachable": true,
+      "sampleSha256": "sha256:111e148dac18ff51038eaa02c68848b7f4f8601812ec5c457a671b9c6bec3cc8"
+    },
+    {
+      "code": "SEGI-BEPR",
+      "title": "Bachelor of English and Public Relations (Hons)",
+      "status": "needs-review",
+      "url": "https://university.segi.edu.my/course/bachelor-of-arts-hons-in-english-and-public-relations/",
+      "httpStatus": 200,
+      "finalUrl": "https://university.segi.edu.my/course/bachelor-of-arts-hons-in-english-and-public-relations/",
+      "reachable": true,
+      "sampleSha256": "sha256:b7d0218b95124e033bd50e42bcf8c62937e37b6a839e0a9a7ff901130743dc22"
+    },
+    {
+      "code": "SEGI-BIA",
+      "title": "Bachelor of Arts (Hons) in Interior Architecture",
+      "status": "official-verified",
+      "url": "https://university.segi.edu.my/course/bachelor-of-art-in-interior-architecture-hons/",
+      "httpStatus": 200,
+      "finalUrl": "https://university.segi.edu.my/course/bachelor-of-art-in-interior-architecture-hons/",
+      "reachable": true,
+      "sampleSha256": "sha256:a2ea4a69f8ec90a8ceb5e74c5a6ff8ce7f567341baf5ece6bd13633946e32ca9"
+    },
+    {
+      "code": "SEGI-BIB",
+      "title": "Bachelor of International Business (Hons)",
+      "status": "official-verified",
+      "url": "https://university.segi.edu.my/course/bachelor-of-international-business-honours/",
+      "httpStatus": 200,
+      "finalUrl": "https://university.segi.edu.my/course/bachelor-of-international-business-honours/",
+      "reachable": true,
+      "sampleSha256": "sha256:e87521f4e99919e0c475e05449e8c8d26a1d698c271d33184cfd399cd87f4c10"
+    },
+    {
+      "code": "SEGI-BIT",
+      "title": "Bachelor of Information Technology (Hons)",
+      "status": "official-verified",
+      "url": "https://university.segi.edu.my/course/bachelor-of-information-technology-hons/",
+      "httpStatus": 200,
+      "finalUrl": "https://university.segi.edu.my/course/bachelor-of-information-technology-hons/",
+      "reachable": true,
+      "sampleSha256": "sha256:dc2017af78162b862b4a51ba48821dac265bb41316dde2be2315a815f8f4d290"
+    },
+    {
+      "code": "SEGI-BMC",
+      "title": "Bachelor of Mass Communication (Hons)",
+      "status": "official-verified",
+      "url": "https://university.segi.edu.my/course/bachelor-of-mass-communication-hons/",
+      "httpStatus": 200,
+      "finalUrl": "https://university.segi.edu.my/course/bachelor-of-mass-communication-hons/",
+      "reachable": true,
+      "sampleSha256": "sha256:371862753131557b41007862f75cdc229686118789c27ade352074cfb668e802"
+    },
+    {
+      "code": "SEGI-BME",
+      "title": "Bachelor of Mechanical Engineering (Hons)",
+      "status": "official-verified",
+      "url": "https://university.segi.edu.my/course/bachelor-of-mechanical-engineering-hons/",
+      "httpStatus": 200,
+      "finalUrl": "https://university.segi.edu.my/course/bachelor-of-mechanical-engineering-hons/",
+      "reachable": true,
+      "sampleSha256": "sha256:2becb7023fb30e399de8a5cce69a90d2621b8e9e3d87b5e33c1731a5e9bc5b50"
+    },
+    {
+      "code": "SEGI-BMH",
+      "title": "Bachelor of Mechatronics Engineering (Hons)",
+      "status": "official-verified",
+      "url": "https://university.segi.edu.my/course/bachelor-of-mechatronics-engineering-hons/",
+      "httpStatus": 200,
+      "finalUrl": "https://university.segi.edu.my/course/bachelor-of-mechatronics-engineering-hons/",
+      "reachable": true,
+      "sampleSha256": "sha256:411aa2da2a962672899100c4c4850b245026ae05804c4a4d5eccd3081bd04495"
+    },
+    {
+      "code": "SEGI-BMMD",
+      "title": "Bachelor of Arts (Hons) in Multimedia Design",
+      "status": "official-verified",
+      "url": "https://university.segi.edu.my/course/bachelor-of-arts-hons-multimedia-design/",
+      "httpStatus": 200,
+      "finalUrl": "https://university.segi.edu.my/course/bachelor-of-arts-hons-multimedia-design/",
+      "reachable": true,
+      "sampleSha256": "sha256:f853d3f606ca0fe0e1feadec2f0da35ca707f66f1b04b51040f4504bdd914a25"
+    },
+    {
+      "code": "SEGI-BMMS",
+      "title": "Bachelor of Biomedical Science (Hons)",
+      "status": "official-verified",
+      "url": "https://university.segi.edu.my/course/bachelor-of-biomedical-science-hons/",
+      "httpStatus": 200,
+      "finalUrl": "https://university.segi.edu.my/course/bachelor-of-biomedical-science-hons/",
+      "reachable": true,
+      "sampleSha256": "sha256:3891d2ca1184415c81781b08c9221401ffd96d7487d4df9d387abc7a02b8b3b6"
+    },
+    {
+      "code": "SEGI-BMUSIC",
+      "title": "Bachelor of Music (Hons)",
+      "status": "official-verified",
+      "url": "https://university.segi.edu.my/course/bachelor-of-music-honours/",
+      "httpStatus": 200,
+      "finalUrl": "https://university.segi.edu.my/course/bachelor-of-music-honours/",
+      "reachable": true,
+      "sampleSha256": "sha256:6001276a1c69372c39d916b39205687734da5c60da3d1739e1377182370ead0f"
+    },
+    {
+      "code": "SEGI-BOPTO",
+      "title": "Bachelor of Optometry (Hons)",
+      "status": "official-verified",
+      "url": "https://university.segi.edu.my/course/bachelor-of-optometry-hons/",
+      "httpStatus": 200,
+      "finalUrl": "https://university.segi.edu.my/course/bachelor-of-optometry-hons/",
+      "reachable": true,
+      "sampleSha256": "sha256:4c9c6fc5252d337e3c427d44ab417a8e41f9f0f98850c57a0c99d5b9e9dd6473"
+    },
+    {
+      "code": "SEGI-BPHARM",
+      "title": "Bachelor of Pharmacy",
+      "status": "needs-review",
+      "url": "https://university.segi.edu.my/course/bachelor-of-pharmacy-hons/",
+      "httpStatus": 200,
+      "finalUrl": "https://university.segi.edu.my/course/bachelor-of-pharmacy-hons/",
+      "reachable": true,
+      "sampleSha256": "sha256:ff59e2e4f49a7be57b0616262e79608592b6602093154b1c7ecf4cfc3e8c2788"
+    },
+    {
+      "code": "SEGI-BPHYSIO",
+      "title": "Bachelor of Physiotherapy (Hons)",
+      "status": "official-verified",
+      "url": "https://university.segi.edu.my/course/bachelor-of-physiotherapy-hons/",
+      "httpStatus": 200,
+      "finalUrl": "https://university.segi.edu.my/course/bachelor-of-physiotherapy-hons/",
+      "reachable": true,
+      "sampleSha256": "sha256:371fce4b8443ecfba5a8632664baeb33d611ef67b6081f5c5f657228855a894a"
+    },
+    {
+      "code": "SEGI-BPSY",
+      "title": "Bachelor of Psychology (Hons)",
+      "status": "official-verified",
+      "url": "https://university.segi.edu.my/course/bachelor-of-psychology-honours/",
+      "httpStatus": 200,
+      "finalUrl": "https://university.segi.edu.my/course/bachelor-of-psychology-honours/",
+      "reachable": true,
+      "sampleSha256": "sha256:95318d9dd523bed3a083252d8682259291eff93dacd92df4651c09ec3cd32ab0"
+    },
+    {
+      "code": "SEGI-BQS",
+      "title": "Bachelor of Arts (Hons) in Quantity Surveying",
+      "status": "needs-review",
+      "url": "https://university.segi.edu.my/course/bachelor-in-quantity-surveying/",
+      "httpStatus": 200,
+      "finalUrl": "https://university.segi.edu.my/course/bachelor-in-quantity-surveying/",
+      "reachable": true,
+      "sampleSha256": "sha256:38e756122d7f771b5edb6ef1976dddf3ae16591346570e5c374230444140d9d9"
+    },
+    {
+      "code": "SEGI-BSCAR",
+      "title": "Bachelor of Science (Hons) in Architecture",
+      "status": "official-verified",
+      "url": "https://university.segi.edu.my/course/bachelor-of-science-in-architecture-hons/",
+      "httpStatus": 200,
+      "finalUrl": "https://university.segi.edu.my/course/bachelor-of-science-in-architecture-hons/",
+      "reachable": true,
+      "sampleSha256": "sha256:a000a468f3db0f2ff722f15dfe41b78d822338eced0fc5bc7e49dd0e4c585311"
+    },
+    {
+      "code": "SEGI-BVCD",
+      "title": "Bachelor of Arts (Hons) in Visual Communication Design",
+      "status": "official-verified",
+      "url": "https://university.segi.edu.my/course/bachelor-of-arts-hons-visual-communication-design/",
+      "httpStatus": 200,
+      "finalUrl": "https://university.segi.edu.my/course/bachelor-of-arts-hons-visual-communication-design/",
+      "reachable": true,
+      "sampleSha256": "sha256:dbcf190a105fae84df744ba46eb4b520d36ba090677b0f1c553627784b2e1bd8"
+    },
+    {
+      "code": "SEGI-DRBA",
+      "title": "Doctor of Business Administration",
+      "status": "official-verified",
+      "url": "https://university.segi.edu.my/course/doctor-of-business-administration/",
+      "httpStatus": 200,
+      "finalUrl": "https://university.segi.edu.my/course/doctor-of-business-administration/",
+      "reachable": true,
+      "sampleSha256": "sha256:86016b0aa88055acb4163753bc4f11d765658ba24da00a36a4384316f2d8219a"
+    },
+    {
+      "code": "SEGI-MA",
+      "title": "Master of Accounting",
+      "status": "needs-review",
+      "url": "https://university.segi.edu.my/course/master-of-accountancy/",
+      "httpStatus": 200,
+      "finalUrl": "https://university.segi.edu.my/course/master-of-accountancy/",
+      "reachable": true,
+      "sampleSha256": "sha256:ff5e8aada5bde1a213f8cd8131367ecab1e26ad0639e334fda0250d05c921073"
+    },
+    {
+      "code": "SEGI-MACC",
+      "title": "Master of Arts in Corporate Communication",
+      "status": "official-verified",
+      "url": "https://university.segi.edu.my/course/master-of-arts-in-corporate-communications/",
+      "httpStatus": 200,
+      "finalUrl": "https://university.segi.edu.my/course/master-of-arts-in-corporate-communications/",
+      "reachable": true,
+      "sampleSha256": "sha256:6b7712eed51ccb05d7ecff7ba64bfd8b166dd1744abd283564d11a154c1b14df"
+    },
+    {
+      "code": "SEGI-MBA",
+      "title": "Master of Business Administration",
+      "status": "official-verified",
+      "url": "https://university.segi.edu.my/course/master-of-business-administration/",
+      "httpStatus": 200,
+      "finalUrl": "https://university.segi.edu.my/course/master-of-business-administration/",
+      "reachable": true,
+      "sampleSha256": "sha256:85f13ed743055750d165cd1e182df3b2dacba37fd0f53fca2afb07c5c63a1b14"
+    },
+    {
+      "code": "SEGI-MBA-5PLUS1",
+      "title": "Master of Business Administration (5+1)",
+      "status": "needs-review",
+      "url": "https://university.segi.edu.my/course/master-of-business-administration/",
+      "httpStatus": 200,
+      "finalUrl": "https://university.segi.edu.my/course/master-of-business-administration/",
+      "reachable": true,
+      "sampleSha256": "sha256:85f13ed743055750d165cd1e182df3b2dacba37fd0f53fca2afb07c5c63a1b14"
+    },
+    {
+      "code": "SEGI-MBBS",
+      "title": "Bachelor of Medicine and Bachelor of Surgery (MBBS)",
+      "status": "official-verified",
+      "url": "https://university.segi.edu.my/course/bachelor-of-medicine-bachelor-of-surgery-mbbs/",
+      "httpStatus": 200,
+      "finalUrl": "https://university.segi.edu.my/course/bachelor-of-medicine-bachelor-of-surgery-mbbs/",
+      "reachable": true,
+      "sampleSha256": "sha256:22efc5a95c7e2e18f44654f6a45b07c20b3a4e411d40f169c7ad77476ce27313"
+    },
+    {
+      "code": "SEGI-MCDM",
+      "title": "Master of Arts in Creative Design Management",
+      "status": "official-verified",
+      "url": "https://university.segi.edu.my/course/master-of-creative-design-management/",
+      "httpStatus": 200,
+      "finalUrl": "https://university.segi.edu.my/course/master-of-creative-design-management/",
+      "reachable": true,
+      "sampleSha256": "sha256:14a5cd0d34e4b810d2877d648963a554a9a48b0c4f4090ca8abb8b5b6a204371"
+    },
+    {
+      "code": "SEGI-MED-CW",
+      "title": "Master of Education (Coursework)",
+      "status": "needs-review",
+      "url": "https://university.segi.edu.my/course/master-of-education/",
+      "httpStatus": 200,
+      "finalUrl": "https://university.segi.edu.my/course/master-of-education/",
+      "reachable": true,
+      "sampleSha256": "sha256:a512be5f4deb48b6dae0134a686b77c450557a13fd0551ea6033fa38cdd15446"
+    },
+    {
+      "code": "SEGI-MED-RES",
+      "title": "Master of Education (By Research)",
+      "status": "official-verified",
+      "url": "https://university.segi.edu.my/course/master-of-education-by-research/",
+      "httpStatus": 200,
+      "finalUrl": "https://university.segi.edu.my/course/master-of-education-by-research/",
+      "reachable": true,
+      "sampleSha256": "sha256:d296ff7bb33b0bde02f6b7213ac3c982331201261c99bdf3b831c1bad6b59473"
+    },
+    {
+      "code": "SEGI-MENG-RES",
+      "title": "Master of Engineering (By Research)",
+      "status": "needs-review",
+      "url": "https://university.segi.edu.my/course/msc-engineering-by-research/",
+      "httpStatus": 200,
+      "finalUrl": "https://university.segi.edu.my/course/msc-engineering-by-research/",
+      "reachable": true,
+      "sampleSha256": "sha256:393999264dde15be0f4e00be0caaf29c8f1ee49478e02dfa8b6de9843a84759d"
+    },
+    {
+      "code": "SEGI-MFP",
+      "title": "Master of Financial Planning",
+      "status": "official-verified",
+      "url": "https://university.segi.edu.my/course/master-in-financial-planning/",
+      "httpStatus": 200,
+      "finalUrl": "https://university.segi.edu.my/course/master-in-financial-planning/",
+      "reachable": true,
+      "sampleSha256": "sha256:378a32032240cc10e5beda119dafec89909e9d53185e87e9ee340b9f7caac6ea"
+    },
+    {
+      "code": "SEGI-MIL",
+      "title": "Master of International Law (LL.M)",
+      "status": "needs-review",
+      "url": "https://university.segi.edu.my/course/master-of-laws/",
+      "httpStatus": 200,
+      "finalUrl": "https://university.segi.edu.my/course/master-of-laws/",
+      "reachable": true,
+      "sampleSha256": "sha256:738ffea87edccb93cdc7ffb54295d356a647241a17528e4997c9dbf1646e86b2"
+    },
+    {
+      "code": "SEGI-MIT-CW",
+      "title": "Master of Information Technology (Coursework)",
+      "status": "needs-review",
+      "url": "https://university.segi.edu.my/course/msc-in-information-technology-coursework/",
+      "httpStatus": 200,
+      "finalUrl": "https://university.segi.edu.my/course/msc-in-information-technology-coursework/",
+      "reachable": true,
+      "sampleSha256": "sha256:69af0c072b12503e38905321c4b13693d918ee4c957042ca58777b889220fd39"
+    },
+    {
+      "code": "SEGI-MIT-RES",
+      "title": "Master of Information Technology (By Research)",
+      "status": "needs-review",
+      "url": "https://university.segi.edu.my/course/msc-information-technology-by-research/",
+      "httpStatus": 200,
+      "finalUrl": "https://university.segi.edu.my/course/msc-information-technology-by-research/",
+      "reachable": true,
+      "sampleSha256": "sha256:be0e42c43994139915207ff07d6b8b89952d556ceba14339c006cfcc1485195d"
+    },
+    {
+      "code": "SEGI-MMED",
+      "title": "Master in Medicine",
+      "status": "needs-review",
+      "url": "https://university.segi.edu.my/course/master-of-medical-science-by-research/",
+      "httpStatus": 200,
+      "finalUrl": "https://university.segi.edu.my/course/master-of-medical-science-by-research/",
+      "reachable": true,
+      "sampleSha256": "sha256:8ae9f39b33e5e6109ce56e0a2d4c64d8ecf41b78fa8d300586673e4dce0871f8"
+    },
+    {
+      "code": "SEGI-MSC-MGMT",
+      "title": "Master of Science in Management (By Research)",
+      "status": "needs-review",
+      "url": "https://university.segi.edu.my/course/master-of-science-in-management/",
+      "httpStatus": 200,
+      "finalUrl": "https://university.segi.edu.my/course/master-of-science-in-management/",
+      "reachable": true,
+      "sampleSha256": "sha256:ac107eae05b02f17f898e946d41734ba00540e7ac00df8cfc7430c1993894151"
+    },
+    {
+      "code": "SEGI-MSC-VS",
+      "title": "Master of Science in Vision Science",
+      "status": "official-verified",
+      "url": "https://university.segi.edu.my/course/master-of-science-in-vision-science-by-research/",
+      "httpStatus": 200,
+      "finalUrl": "https://university.segi.edu.my/course/master-of-science-in-vision-science-by-research/",
+      "reachable": true,
+      "sampleSha256": "sha256:dd9c2e8677594202901a04ff704648aeae25ea8be2f3a7fd3ea4ad6fbda306f2"
+    },
+    {
+      "code": "SEGI-MSPS",
+      "title": "Master of Science in Pharmaceutical Sciences",
+      "status": "official-verified",
+      "url": "https://university.segi.edu.my/course/master-of-science-pharmaceutical-sciences/",
+      "httpStatus": 200,
+      "finalUrl": "https://university.segi.edu.my/course/master-of-science-pharmaceutical-sciences/",
+      "reachable": true,
+      "sampleSha256": "sha256:ae1e91326c492dba9cf0d220515f5237022ecb91b827ae1351b2e25a9e1af7fe"
+    },
+    {
+      "code": "SEGI-MSSP",
+      "title": "Master of Science in Psychology",
+      "status": "official-verified",
+      "url": "https://university.segi.edu.my/course/master-of-social-science-in-psychology/",
+      "httpStatus": 200,
+      "finalUrl": "https://university.segi.edu.my/course/master-of-social-science-in-psychology/",
+      "reachable": true,
+      "sampleSha256": "sha256:9024e8fd1832cbaf9f8717570a4b0fc226cdfc4dd84575712045945f10ae002c"
+    },
+    {
+      "code": "SEGI-PHD-EDU",
+      "title": "Doctor of Philosophy in Education",
+      "status": "official-verified",
+      "url": "https://university.segi.edu.my/course/phd-education-by-research/",
+      "httpStatus": 200,
+      "finalUrl": "https://university.segi.edu.my/course/phd-education-by-research/",
+      "reachable": true,
+      "sampleSha256": "sha256:f7548dd5f4aa68b16d5a523100336e31a1990e61c37e15e95b3324114045f94c"
+    },
+    {
+      "code": "SEGI-PHD-ENG",
+      "title": "Doctor of Philosophy in Engineering",
+      "status": "official-verified",
+      "url": "https://university.segi.edu.my/course/phd-engineering-by-research/",
+      "httpStatus": 200,
+      "finalUrl": "https://university.segi.edu.my/course/phd-engineering-by-research/",
+      "reachable": true,
+      "sampleSha256": "sha256:31bf924d26f3050a4f6a82a700e9dc87760193d3a44b3c23ef0b902ff5690c1c"
+    },
+    {
+      "code": "SEGI-PHD-IT",
+      "title": "Doctor of Philosophy in Information Technology",
+      "status": "official-verified",
+      "url": "https://university.segi.edu.my/course/phd-information-technology-by-research/",
+      "httpStatus": 200,
+      "finalUrl": "https://university.segi.edu.my/course/phd-information-technology-by-research/",
+      "reachable": true,
+      "sampleSha256": "sha256:8e23f51dcc7e07499333353e6a5f3c4f59e26c727005802c4c87e71c9c19868f"
+    },
+    {
+      "code": "SEGI-PHD-MGMT",
+      "title": "Doctor of Philosophy in Management",
+      "status": "official-verified",
+      "url": "https://university.segi.edu.my/course/doctor-of-philosophy-in-management/",
+      "httpStatus": 200,
+      "finalUrl": "https://university.segi.edu.my/course/doctor-of-philosophy-in-management/",
+      "reachable": true,
+      "sampleSha256": "sha256:12c3b149aaef4c239cff97a1e899f147e42bcfd6410e859793c42004752b3eaf"
+    }
+  ]
+}

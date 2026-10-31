@@ -4,13 +4,17 @@ import type { SearchSuggestionItem } from "@studymy/shared";
 import { Repository } from "typeorm";
 import { CacheService } from "../common/cache.service.js";
 import { isReadyForPublicCatalog } from "../common/mappers.js";
-import { buildProgramSearchText, buildUniversitySearchText, normalizeSearch, publicReadyPrograms } from "../common/public-catalog.js";
+import { buildProgramSuggestionSearchFields, buildUniversitySearchText, normalizeSearch, publicReadyPrograms } from "../common/public-catalog.js";
 import { ProgramEntity, UniversityEntity } from "../db/entities.js";
 
 export interface SearchSuggestionQuery {
   q?: string;
   limit?: number;
 }
+
+const CITY_ALIAS_GROUPS = [
+  { displayTitle: "Kuala Lumpur", aliases: ["kuala lumpur", "吉隆坡"] }
+];
 
 function displayText(value: Record<string, string> | null | undefined, fallback = "") {
   if (!value) return fallback;
@@ -36,6 +40,23 @@ function scoreFields(query: string, fields: string[]) {
   return { score: bestScore, highlight: bestField };
 }
 
+function scoreCityField(query: string, field: string) {
+  const direct = scoreFields(query, [field]);
+  if (direct.score > 0) return { ...direct, title: field };
+
+  const aliasGroup = CITY_ALIAS_GROUPS.find((group) => group.aliases.includes(query));
+  if (!aliasGroup) return { ...direct, title: field };
+
+  for (const alias of aliasGroup.aliases) {
+    const aliasScore = scoreFields(alias, [field]);
+    if (aliasScore.score > 0) {
+      return { score: aliasScore.score, highlight: aliasGroup.displayTitle, title: aliasGroup.displayTitle };
+    }
+  }
+
+  return { ...direct, title: field };
+}
+
 @Injectable()
 export class SearchService {
   constructor(
@@ -49,7 +70,7 @@ export class SearchService {
     const limit = Math.max(1, Math.min(Number(query.limit || 8), 20));
     if (!search) return [];
 
-    const cacheKey = `catalog:search-suggest:${JSON.stringify({ search, limit })}`;
+    const cacheKey = `catalog:search-suggest:v4:${JSON.stringify({ search, limit })}`;
     const cached = await this.cacheService.getJson<SearchSuggestionItem[]>(cacheKey);
     if (cached) return cached;
 
@@ -61,19 +82,19 @@ export class SearchService {
     const universityMap = new Map(universities.map((university) => [university.id, university]));
     const readyPrograms = publicReadyPrograms(universities.flatMap((university) => university.programs || []), universityMap);
     const suggestions: SearchSuggestionItem[] = [];
-    const cityCounts = new Map<string, { count: number; score: number; highlight: string }>();
+    const cityCounts = new Map<string, { universityIds: Set<number>; score: number; highlight: string }>();
 
     for (const university of universities) {
       const locationFields = [...Object.values(university.location), ...Object.values(university.region)].filter(Boolean);
-      const universityScore = scoreFields(search, [
+      const identityScore = scoreFields(search, [
         university.shortName,
         university.nameEnOfficial,
         university.code,
-        ...Object.values(university.name),
-        ...locationFields
+        ...Object.values(university.name)
       ]);
+      const locationScore = scoreFields(search, locationFields);
 
-      if (universityScore.score > 0 || buildUniversitySearchText(university).includes(search)) {
+      if (identityScore.score > 0 || locationScore.score > 0 || buildUniversitySearchText(university).includes(search)) {
         suggestions.push({
           type: "university",
           id: `university:${university.id}`,
@@ -81,19 +102,20 @@ export class SearchService {
           universitySlug: university.slug,
           title: displayText(university.name, university.shortName),
           subtitle: `${university.shortName} · ${displayText(university.location)}`,
-          highlight: universityScore.highlight || university.shortName,
-          score: universityScore.score || 35
+          highlight: identityScore.highlight || locationScore.highlight || university.shortName,
+          score: identityScore.score ? identityScore.score + 200 : Math.max(locationScore.score - 20, 25)
         });
       }
 
       for (const field of locationFields) {
-        const cityScore = scoreFields(search, [field]);
+        const cityScore = scoreCityField(search, field);
         if (cityScore.score <= 0) continue;
-        const current = cityCounts.get(field) || { count: 0, score: 0, highlight: field };
-        cityCounts.set(field, {
-          count: current.count + 1,
+        const current = cityCounts.get(cityScore.title) || { universityIds: new Set<number>(), score: 0, highlight: cityScore.title };
+        current.universityIds.add(university.id);
+        cityCounts.set(cityScore.title, {
+          universityIds: current.universityIds,
           score: Math.max(current.score, cityScore.score),
-          highlight: cityScore.highlight || field
+          highlight: cityScore.highlight || cityScore.title
         });
       }
     }
@@ -101,15 +123,9 @@ export class SearchService {
     for (const program of readyPrograms) {
       const university = universityMap.get(program.universityId);
       if (!university || !isReadyForPublicCatalog(university)) continue;
-      const programScore = scoreFields(search, [
-        program.nameEnOfficial,
-        program.category,
-        program.facultyZh,
-        ...Object.values(program.name),
-        ...Object.values(program.faculty)
-      ]);
+      const programScore = scoreFields(search, buildProgramSuggestionSearchFields(program));
 
-      if (programScore.score <= 0 && !buildProgramSearchText(program).includes(search)) continue;
+      if (programScore.score <= 0) continue;
       suggestions.push({
         type: "program",
         id: `program:${program.id}`,
@@ -120,7 +136,7 @@ export class SearchService {
         title: displayText(program.name, program.nameEnOfficial),
         subtitle: `${university.shortName} · ${program.level} · ${program.category}`,
         highlight: programScore.highlight || program.category,
-        score: (programScore.score || 35) + 5
+        score: (programScore.score || 35) + 120
       });
     }
 
@@ -129,9 +145,11 @@ export class SearchService {
         type: "city",
         id: `city:${city}`,
         title: city,
-        subtitle: `${item.count} universities`,
+        subtitle: "",
         highlight: item.highlight,
-        score: item.score - 5
+        score: item.score,
+        count: item.universityIds.size,
+        countType: "university"
       });
     }
 
@@ -142,9 +160,15 @@ export class SearchService {
     }
 
     const payload = [...deduped.values()]
-      .sort((a, b) => b.score - a.score || a.title.localeCompare(b.title))
+      .sort((a, b) => b.score - a.score || suggestionTypePriority(b.type) - suggestionTypePriority(a.type) || a.title.localeCompare(b.title))
       .slice(0, limit);
     await this.cacheService.setJson(cacheKey, payload, 300);
     return payload;
   }
+}
+
+function suggestionTypePriority(type: SearchSuggestionItem["type"]) {
+  if (type === "university") return 3;
+  if (type === "program") return 2;
+  return 1;
 }

@@ -1,0 +1,300 @@
+{
+  "schemaVersion": 1,
+  "createdAt": "2026-06-27T15:47:16.293Z",
+  "institution": {
+    "code": "UUM",
+    "shortName": "UUM",
+    "name": "Universiti Utara Malaysia",
+    "slug": "universiti-utara-malaysia-uum"
+  },
+  "authorization": "ian-requested-publication-after-review-v5",
+  "sourceInputs": {
+    "undergraduateAudit": "audits/UUM_audit_undergraduate_20260627_reviewed_v5.json",
+    "sourceAuditSafeToImport": false,
+    "sourceAuditReason": "StudyMY audit JSON stays safe_to_import=false by contract; this importer publishes only after explicit operator command."
+  },
+  "writePolicy": {
+    "importer": "apps/api/src/db/import-uum-official-audit.ts",
+    "mode": "publish-undergraduate",
+    "upsertPrefix": "uum-undergraduate-20260627-",
+    "universityRow": "upsert by code UUM or slug universiti-utara-malaysia-uum",
+    "programmeRows": "upsert 38 current UUM undergraduate public rows and archive non-current UUM rows",
+    "transactional": true,
+    "backupRequired": true
+  },
+  "publicationPolicy": {
+    "readyRows": 1,
+    "officialLanguageRequirementNotPublishedRows": 37,
+    "rationale": "UUM directly publishes IELTS for only UU6481001. Other rows remain visible official reference records without being treated as ready application-planning rows.",
+    "languageGateStats": {
+      "directIeltsRows": 1,
+      "noDirectIeltsRows": 37,
+      "languageSlotMismatchRows": 0,
+      "equivalentPathMisusedAsIeltsRows": 0,
+      "formOptionContaminationRows": 0,
+      "officialIeltsDistribution": {
+        "5.5": 1
+      }
+    }
+  },
+  "expectedSurface": {
+    "programmeCount": 38,
+    "byLevel": {
+      "bachelor": 38
+    },
+    "summary": {
+      "importRows": 38,
+      "byLevel": {
+        "bachelor": 38
+      },
+      "readyRows": 1,
+      "officialLanguageRequirementNotPublishedRows": 37,
+      "publishedRows": 38,
+      "uniqueSlugs": 38,
+      "officialFeeRows": 38,
+      "directIeltsRows": 1,
+      "missingDirectIeltsRows": 37,
+      "durationKnownRows": 35,
+      "chineseNameRows": 38,
+      "chineseFacultyRows": 38,
+      "chineseCurriculumRows": 38,
+      "chineseCareerRows": 38,
+      "sourceRows": 38,
+      "publicDisplayStatusCounts": {
+        "official-language-requirement-not-published": 37,
+        "ready": 1
+      },
+      "officialSourceStatusCounts": {
+        "official-verified": 38
+      },
+      "feeAuditStatusCounts": {
+        "matched-official": 38
+      }
+    },
+    "validationMeta": {
+      "validatedBy": "study-audit-validator",
+      "validatedAt": "2026-06-27",
+      "originalAuditFile": "/Users/ian/Desktop/dev/study-malaysia/audits/UUM_audit_undergraduate_20260627.json",
+      "originalAuditDate": "2026-06-27",
+      "schemaStyle": "study-collector-current",
+      "validationVersion": "1.0.4",
+      "reviewVersion": 5,
+      "overallDecision": "PASS-WITH-EXCEPTIONS",
+      "qualityScore": {
+        "overall": 0.995,
+        "formatCompliance": 1,
+        "sourceValidity": 0.99,
+        "completeness": 0.995,
+        "safety": 1
+      },
+      "counts": {
+        "totalProgrammesValidated": 38,
+        "pass": 38,
+        "warn": 0,
+        "repair": 0,
+        "reject": 0,
+        "issuesFound": 15,
+        "issuesRepaired": 36,
+        "issuesPending": 2
+      },
+      "originalCounts": {
+        "ready": 12,
+        "needsReview": 26,
+        "exceptionQueue": 10
+      },
+      "reviewedCounts": {
+        "ready": 38,
+        "needsReview": 0,
+        "exceptionQueue": 10,
+        "pendingIssues": 2
+      },
+      "languageGateStats": {
+        "directIeltsRows": 1,
+        "noDirectIeltsRows": 37,
+        "languageSlotMismatchRows": 0,
+        "equivalentPathMisusedAsIeltsRows": 0,
+        "formOptionContaminationRows": 0,
+        "officialIeltsDistribution": {
+          "5.5": 1
+        }
+      },
+      "programmeNameGateStats": {
+        "bilingualProgrammeNameRows": 38,
+        "pureEnglishNameRows": 0,
+        "pureChineseNameRows": 0,
+        "namePrefixContaminationRows": 0,
+        "bilingualScopeLeakRows": 0
+      },
+      "qualityRuleCandidates": [
+        {
+          "ruleName": "Do not use MUET equivalence table as direct IELTS evidence",
+          "description": "When a university page has programme-specific MUET requirements plus a separate MUET-to-IELTS equivalence table, language.ielts must remain null unless the programme requirement itself directly states IELTS.",
+          "triggeredBy": "UUM HEA English Language Requirements page and SOC generic IELTS wording"
+        },
+        {
+          "ruleName": "Differentiate academic duration from fee charging semesters",
+          "description": "When official fee PDFs list chargeable semesters and programme pages list academic duration, do not overwrite duration without source-conflict review.",
+          "triggeredBy": "UUM local detail pages vs international fee PDF semester differences"
+        },
+        {
+          "ruleName": "Ready curriculum must not contain structure labels",
+          "description": "For publicDisplayStatus=ready, curriculum must contain actual Chinese course items or an official-unpublished status; section headings such as core/elective/major/track labels cannot be displayed as courses.",
+          "triggeredBy": "UUM undergraduate reviewed rows UU6210001, UU6224001, UU6222001, UU6222002 and UU6213001"
+        },
+        {
+          "ruleName": "Direct programme-page IELTS evidence can override equivalence-table caution only when slot evidence is explicit",
+          "description": "If a programme detail page directly states IELTS and TOEFL requirements in an admission language paragraph, IELTS may be written to language.ielts while MUET remains in language.muet; equivalence tables remain excluded.",
+          "triggeredBy": "UUM UU6481001 SOC programme page direct IELTS 5.5 evidence"
+        },
+        {
+          "ruleName": "Treat fee-table semesters as fee charging evidence, not academic duration",
+          "description": "When a fee PDF lists chargeable semesters and a school/faculty programme page or brochure lists academic duration/semester structure, use the school/faculty academic evidence for duration and keep fee semesters only in tuition notes.",
+          "triggeredBy": "UUM reviewed_v3 duration repairs for SMMTC, SQS, SBM and STHEM programmes"
+        },
+        {
+          "ruleName": "Programme-page intake months override academic-calendar registration months",
+          "description": "For programme-level intake data, use explicit intake months from the programme page; central academic-calendar registration dates should be recorded as calendar context and not overwrite programme intake.",
+          "triggeredBy": "UUM STHEM Hospitality/Tourism/Event programme pages"
+        },
+        {
+          "ruleName": "Official-unpublished detail fields may pass ready with explicit fieldStatus",
+          "description": "If official programme pages publish programme identity/admission/fee data but no curriculum or career detail after deep crawl, ready rows may keep empty arrays with fieldStatus official-unpublished so public UI displays 官网未公布 rather than invented data.",
+          "triggeredBy": "UUM SAPSP, STML and SCIMPA reviewed_v4 repairs"
+        },
+        {
+          "ruleName": "HEA international catalogue is identity source of truth for international undergraduate audit",
+          "description": "When faculty pages contain old/alternate codes but HEA international catalogue and fee PDF agree on code/name, use HEA for programme identity and retain faculty page only as supplementary curriculum source.",
+          "triggeredBy": "UUM UU6462002 reviewed_v4 repair"
+        },
+        {
+          "ruleName": "Official flyer SUBJECTS/SPECIALIZATION can be used as public curriculum topics with note",
+          "description": "When an official faculty flyer publishes a SUBJECTS or SPECIALIZATION list but no handbook-level full curriculum, use those items as curriculum topics with curriculumNote and fieldEvidence instead of blocking indefinitely.",
+          "triggeredBy": "UUM SEFB reviewed_v4 repairs"
+        },
+        {
+          "ruleName": "Official scanned or flipbook pages may be used after visual review with explicit evidence note",
+          "description": "When official PDFs or official-page-linked flipbooks are image-based and machine text extraction fails, rendered page visual review can repair curriculum fields if the reviewed pages are recorded; do not claim OCR/text extraction success.",
+          "triggeredBy": "UUM SoIS scanned academic handbooks and SOL official FlipHTML5 LL.B handbook"
+        }
+      ],
+      "repairPolicy": "No invented curriculum values. Official flyer SUBJECTS, scanned PDF visual review and official FlipHTML5 page images were used only when tied to official university pages; unknown public fields remain official-unpublished.",
+      "repairRound": 5,
+      "round2RepairSummary": {
+        "curriculumRowsRestoredToReady": [
+          "UU6213001",
+          "UU6222001",
+          "UU6222002",
+          "UU6224001"
+        ],
+        "languageRowsRestoredToReady": [
+          "UU6481001"
+        ],
+        "remainingNeedsReviewReason": "official source conflicts, official unpublished fields, incomplete curriculum evidence, OCR/source-authority blockers or Ian decision required"
+      },
+      "round3RepairSummary": {
+        "durationRowsRestoredToReady": [
+          "UU6321001",
+          "UU6461001",
+          "UU6462001",
+          "UU6345003",
+          "UU6345011"
+        ],
+        "durationAndIntakeRowsRestoredToReady": [
+          "UU6811001",
+          "UU6812001",
+          "UU6812002"
+        ],
+        "remainingNeedsReviewReason": "official unpublished fields, incomplete curriculum evidence, OCR/FlipHTML5 blockers, programme identity/source conflict, or curriculum category-only evidence"
+      },
+      "round4RepairSummary": {
+        "officialUnpublishedRowsRestoredToReady": [
+          "UU6762001",
+          "UU6762002",
+          "UU6210001",
+          "UU6481002",
+          "UU6840001",
+          "UU6345012"
+        ],
+        "identityOrCurriculumConflictRowsRestoredToReady": [
+          "UU6462002",
+          "UU6343002"
+        ],
+        "sefbRowsRestoredToReady": [
+          "UU6314001",
+          "UU6343001",
+          "UU6343004"
+        ],
+        "accountingRowsRestoredToReady": [
+          "UU6344001",
+          "UU6344002"
+        ],
+        "remainingNeedsReview": [
+          "UU6343003",
+          "UU6345004",
+          "UU6345006",
+          "UU6345007",
+          "UU6380001"
+        ]
+      },
+      "round5RepairSummary": {
+        "sefbRowsRestoredToReady": [
+          "UU6343003",
+          "UU6345004"
+        ],
+        "soisRowsRestoredToReadyByVisualPdfReview": [
+          "UU6345006",
+          "UU6345007"
+        ],
+        "solRowsRestoredToReadyByFliphtml5VisualReview": [
+          "UU6380001"
+        ],
+        "remainingNeedsReview": [],
+        "remainingPendingIssues": [
+          "EXCEPTION-01",
+          "EXCEPTION-02"
+        ],
+        "note": "All 38 undergraduate programmes are publicDisplayStatus=ready. Remaining pending issues are global quality/source caveats and do not represent programme-level needs-review rows."
+      }
+    },
+    "pendingIssues": [
+      {
+        "issueId": "EXCEPTION-01",
+        "programmeIndex": null,
+        "programmeNameEn": null,
+        "field": "language.ielts",
+        "issueType": "quality-rule-regression",
+        "priority": "P2",
+        "description": "HEA 页面同时存在逐专业 MUET 表、EPC IELTS 说明和 MUET-to-IELTS equivalence table；采集时必须阻断把等效表或 EPC 说明写入 IELTS。",
+        "requiresIanDecision": true,
+        "suggestedAction": "该模式已命中 skill 的语言成绩不得串字段门禁；后续验收继续检查 IELTS 必须为 null。",
+        "evidence": [
+          {
+            "sourceUrl": "http://hea.uum.edu.my/index.php/undergraduate-international#english",
+            "value": "Programme table gives MUET Band; equivalence table lists IELTS values separately."
+          }
+        ]
+      },
+      {
+        "issueId": "EXCEPTION-02",
+        "programmeIndex": null,
+        "programmeNameEn": null,
+        "field": "officialFeeSourceUrl",
+        "issueType": "source-authority-ambiguous",
+        "priority": "P3",
+        "description": "国际本科费用 PDF 由 HEA 官方页面链接，但托管在 Google Drive。",
+        "requiresIanDecision": false,
+        "suggestedAction": "保留为官方页面外链证据；验收时可确认是否接受 Google Drive 托管的 HEA 外链。",
+        "evidence": [
+          {
+            "sourceUrl": "http://hea.uum.edu.my/index.php/undergraduate-international#fees",
+            "value": "Click here links to Google Drive fee PDF"
+          },
+          {
+            "sourceUrl": "https://drive.google.com/file/d/1ZBVne2hdOeI7gqIGaaGLyklMKNMRppOE/view?usp=drive_link",
+            "value": "Official fee PDF"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "mode": "write",
+  "sourcePath": "/Users/ian/Desktop/dev/study-malaysia/data/imports/qs/2026-06-19/qs-wur-2027-study-my/rankings.json",
+  "source": {
+    "rankingName": "QS World University Rankings",
+    "rankingYear": 2027,
+    "publishedAt": "2026-06-18",
+    "retrievedAt": "2026-06-19T00:00:00+08:00",
+    "entries": 34
+  },
+  "counts": {
+    "universities": 119,
+    "ranked": 34,
+    "unranked": 85,
+    "changed": 1,
+    "unmatchedSourceCodes": 0
+  },
+  "rankedCodes": [
+    "APU",
+    "IIUM",
+    "IMU",
+    "INTI",
+    "LUC",
+    "MMU",
+    "MONASH",
+    "MSU",
+    "SEGI",
+    "SUNWAY",
+    "TAYLORS",
+    "UCSI",
+    "UITM",
+    "UKM",
+    "UM",
+    "UMK",
+    "UMPSA",
+    "UMS",
+    "UMT",
+    "UNIKL",
+    "UNIMAP",
+    "UNIMAS",
+    "UNITEN",
+    "UNM",
+    "UOC",
+    "UPM",
+    "UPSI",
+    "USM",
+    "UTAR",
+    "UTEM",
+    "UTHM",
+    "UTM",
+    "UTP",
+    "UUM"
+  ],
+  "unmatchedSourceCodes": [],
+  "changes": [
+    {
+      "code": "UTP",
+      "slug": "universiti-teknologi-petronas",
+      "nameEn": "Universiti Teknologi PETRONAS",
+      "beforeRank": 9999,
+      "afterRank": 261,
+      "beforeDisplay": null,
+      "afterDisplay": "=261",
+      "context": "malaysia-institution",
+      "changed": true
+    }
+  ]
+}

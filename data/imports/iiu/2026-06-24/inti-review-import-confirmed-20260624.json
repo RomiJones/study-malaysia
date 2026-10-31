@@ -1,0 +1,91 @@
+{
+  "mode": "review-imported",
+  "universityId": 13,
+  "backupPath": "/Users/ian/Desktop/dev/study-malaysia/apps/api/apps/api/tmp/backups/inti-official-audit-review-before-2026-06-24T084400Z.json",
+  "catalogCacheCleared": false,
+  "publicVisibilityBefore": {
+    "exists": true,
+    "isPublished": true,
+    "publicDisplayStatus": "ready",
+    "slug": "inti-international-university",
+    "publicProgrammeCount": 5
+  },
+  "summary": {
+    "candidateRows": 107,
+    "importRows": 107,
+    "byLevel": {
+      "bachelor": 74,
+      "master": 23,
+      "phd": 10
+    },
+    "readyRows": 0,
+    "needsReviewRows": 107,
+    "publishedRows": 0,
+    "uniqueSlugs": 107,
+    "pendingFeeRows": 107,
+    "approximateFeeRows": 91,
+    "nonScalarApproximateFeeRows": 16,
+    "rowsWithApproximateFeeEvidence": 107,
+    "rowsWithOfficialSourceUrl": 107,
+    "rowsWithLanguageSummary": 86,
+    "rowsWithDurationYears": 107,
+    "publicDisplayStatusCounts": {
+      "needs-review": 107
+    },
+    "officialSourceStatusCounts": {
+      "needs-review": 107
+    },
+    "feeAuditStatusCounts": {
+      "pending-review": 107
+    }
+  },
+  "verification": {
+    "candidateRows": 107,
+    "importRows": 107,
+    "byLevel": {
+      "bachelor": 74,
+      "master": 23,
+      "phd": 10
+    },
+    "readyRows": 0,
+    "needsReviewRows": 107,
+    "publishedRows": 0,
+    "uniqueSlugs": 107,
+    "pendingFeeRows": 107,
+    "approximateFeeRows": 91,
+    "nonScalarApproximateFeeRows": 16,
+    "rowsWithApproximateFeeEvidence": 107,
+    "rowsWithOfficialSourceUrl": 107,
+    "rowsWithLanguageSummary": 86,
+    "rowsWithDurationYears": 107,
+    "publicDisplayStatusCounts": {
+      "needs-review": 107
+    },
+    "officialSourceStatusCounts": {
+      "needs-review": 107
+    },
+    "feeAuditStatusCounts": {
+      "pending-review": 107
+    },
+    "universityPublicDisplayStatus": "ready",
+    "universityIsPublished": true,
+    "universityProgramCount": 5,
+    "reviewRows": 107,
+    "publicLeakageRows": 0,
+    "beforeUniversityPublicState": {
+      "exists": true,
+      "isPublished": true,
+      "publicDisplayStatus": "ready",
+      "slug": "inti-international-university",
+      "publicProgrammeCount": 5
+    },
+    "afterUniversityPublicState": {
+      "exists": true,
+      "isPublished": true,
+      "publicDisplayStatus": "ready",
+      "slug": "inti-international-university",
+      "publicProgrammeCount": 0
+    },
+    "existingPublicInstitutionPreserved": true
+  }
+}

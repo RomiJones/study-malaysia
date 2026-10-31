@@ -7,7 +7,7 @@ import { ADMIN_TOKEN_KEY, ADMIN_USER_KEY, apiFetch } from "../../../lib/api";
 export default function LoginPage() {
   const router = useRouter();
   const [account, setAccount] = useState("admin@studymy.local");
-  const [password, setPassword] = useState("Admin123!");
+  const [password, setPassword] = useState("");
   const [error, setError] = useState("");
 
   async function handleSubmit(event: React.FormEvent) {
@@ -34,7 +34,7 @@ export default function LoginPage() {
       <form className="login-card stack" onSubmit={handleSubmit}>
         <div>
           <h1>StudyMY Admin</h1>
-          <p className="small">默认演示账号：admin@studymy.local / Admin123!</p>
+          <p className="small">请使用已配置的管理员账号登录。</p>
         </div>
         <label className="stack">
           <span>账号</span>
@@ -50,4 +50,3 @@ export default function LoginPage() {
     </div>
   );
 }
-

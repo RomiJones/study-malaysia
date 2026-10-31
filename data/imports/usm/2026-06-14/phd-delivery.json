@@ -11,14 +11,14 @@
     "applicantScope": "international",
     "academicSession": "current-directory-and-2025/2026-fees"
   },
-  "authorization": "publish",
+  "authorization": "collect",
   "counts": {
     "directoryOccurrences": 95,
     "uniqueOfficialEntries": 95,
     "canonicalProgrammes": 95,
-    "ready": 93,
+    "ready": 95,
     "needsReview": 0,
-    "notAvailableForInternational": 2
+    "notAvailableForInternational": 0
   },
   "coverage": {
     "identity": {
@@ -47,8 +47,8 @@
       "review": 0
     },
     "intake": {
-      "covered": 20,
-      "unpublished": 75,
+      "covered": 23,
+      "unpublished": 72,
       "review": 0
     },
     "internationalEligibility": {
@@ -72,8 +72,8 @@
       "review": 0
     },
     "fee": {
-      "covered": 75,
-      "unpublished": 20,
+      "covered": 13,
+      "unpublished": 82,
       "review": 0
     },
     "evidence": {
@@ -205,22 +205,12 @@
     {
       "role": "candidate",
       "path": "data/imports/usm/2026-06-14/phd-candidate.json",
-      "sha256": "9707efdd4d730a54159ef0b59e6057d303d44700604cb0ddf1967c9f71ccc8d1"
+      "sha256": "e2d916114ab356b38dee09adc5cb7607a5c0169a190eee4de875c2fee1f441fe"
     },
     {
       "role": "audit",
       "path": "data/imports/usm/2026-06-14/phd-audit.json",
-      "sha256": "ccbff2b6c864e38a6399dd9e607498a6ca252d66ed53e076b78948c83743a1c1"
-    },
-    {
-      "role": "backup",
-      "path": "data/imports/usm/2026-06-14/publication/usm-phd-before-official-rate-display.json.gz",
-      "sha256": "bb0ab9360a398238be531a63fb351d2cbb65dde19b16d0f0540cf1a086e8821e"
-    },
-    {
-      "role": "release-report",
-      "path": "data/imports/usm/2026-06-14/publication/usm-official-rate-display-release-report.json",
-      "sha256": "00f103434e88c44e8ab869dafdee65b5af6104776f8f842bb18d99633dc7a1d3"
+      "sha256": "8bd058f98731c461b470e2fbcff2ef57ac25bf8829d7531a4c7c69f3369ff29f"
     }
   ],
   "exceptions": {
@@ -237,14 +227,10 @@
     "sourceCollection": "passed",
     "candidateBuild": "passed",
     "recordAudit": "passed",
-    "deliveryAudit": "passed",
-    "feePolicy": "passed",
-    "localization": "passed",
-    "tests": "passed",
-    "build": "passed",
-    "databaseWrite": "passed",
-    "apiUiVerification": "passed"
+    "deliveryAudit": "not-required",
+    "databaseWrite": "pending",
+    "apiUiVerification": "pending"
   },
-  "decision": "published",
-  "databaseWrite": "performed"
+  "decision": "ready-for-controlled-import",
+  "databaseWrite": "not-performed"
 }

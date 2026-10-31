@@ -730,7 +730,7 @@ function buildPublishPlan(
       mode: "publish-all-levels",
       upsertPrefix: UOC_PUBLIC_ALL_LEVEL_SLUG_PREFIX,
       universityRow: "upsert by code UOC or slug university-of-cyberjaya",
-      programmeRows: "upsert 42 current UoC public rows and archive non-current UoC rows",
+      programmeRows: "upsert 38 current UoC public rows and archive non-current UoC rows",
       transactional: true,
       backupRequired: true
     },

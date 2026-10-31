@@ -1,0 +1,1228 @@
+{
+  "generatedAt": "2026-06-29T17:00:29.062Z",
+  "scope": {
+    "university": "Management and Science University",
+    "shortName": "MSU",
+    "levels": [
+      "master",
+      "phd"
+    ],
+    "authorization": "MSU-only non-official 2026 annual tuition candidates authorized by Ian on 2026-06-30; does not change StudyMY skills or global standards."
+  },
+  "sources": {
+    "officialApplyData": "https://apply.msu.edu.my/newdata.json",
+    "officialMasterCatalogue": "https://apply.msu.edu.my/course/?faculty=all&qualification=master",
+    "officialPhdCatalogue": "https://apply.msu.edu.my/course/?faculty=all&qualification=phd",
+    "yourUni": "https://en.your-uni.com/university/msu-university",
+    "easyUni": "https://www.easyuni.com/malaysia/management-science-university-msu-218/courses/"
+  },
+  "sourcePolicy": {
+    "officialTuitionNotAdopted": "MSU official apply data has programme and requirement fields but no programme-level tuition amount.",
+    "nonOfficialFeePolicy": "Use EasyUni/Your-Uni style 2026 foreign/international annual tuition candidates for MSU only. When multiple annual MYR candidates conflict, select the higher amount and keep needs-review/source-conflict. For postgraduate, EasyUni main MSU courses page exposed no master/phd foreign annual rows, so matched annual fees come from Your-Uni only."
+  },
+  "duplicateOfficialEntries": [
+    {
+      "duplicate": {
+        "level": "phd",
+        "officialCategory": "Postgraduate Studies (Masters & Doctorate)",
+        "name": "Doctor of Philosophy (Management/Business)",
+        "mode": "",
+        "registrationDate": "11 July 2026",
+        "requirement": "Entry Requirements:\nProspective applicants must have at least a Master’s degree or equivalent from an institution approved by MSU Senate.\nPhD Management/Business (PMB) is a research programme by the MSU School of Graduate Studies (SGS).",
+        "sourceUrl": "https://apply.msu.edu.my/course/?faculty=all&qualification=phd"
+      },
+      "kept": {
+        "level": "phd",
+        "officialCategory": "Business and Management",
+        "name": "Doctor of Philosophy (Management/Business)",
+        "mode": "",
+        "registrationDate": "11 July 2026",
+        "requirement": "Entry Requirements:\nProspective applicants must have at least a Master’s degree or equivalent from an institution approved by MSU Senate.\nPhD Management/Business (PMB) is a research programme by the MSU School of Graduate Studies (SGS).",
+        "sourceUrl": "https://apply.msu.edu.my/course/?faculty=all&qualification=phd"
+      }
+    }
+  ],
+  "officialProgrammes": [
+    {
+      "level": "phd",
+      "officialCategory": "Business and Management",
+      "name": "Doctor of Philosophy (Management/Business)",
+      "mode": "",
+      "registrationDate": "11 July 2026",
+      "requirement": "Entry Requirements:\nProspective applicants must have at least a Master’s degree or equivalent from an institution approved by MSU Senate.\nPhD Management/Business (PMB) is a research programme by the MSU School of Graduate Studies (SGS).",
+      "sourceUrl": "https://apply.msu.edu.my/course/?faculty=all&qualification=phd",
+      "tuitionCandidate": null
+    },
+    {
+      "level": "master",
+      "officialCategory": "Postgraduate Studies (Masters & Doctorate)",
+      "name": "Master in Fashion Business",
+      "mode": "",
+      "registrationDate": "11 July 2026",
+      "requirement": "Entry Requirements:\nProspective applicants must have a Bachelors degree (MQF Level 6) with at least 2.50 CGPA out of 4.00, or an equivalent qualification as accepted by MSU Senate; CGPAs below 2.50 out of 4.00 must be supported by at least five (5) years working experience in a relevant field. Any other qualifications recognized by the Malaysian Government may also be presented.\nInternational students must score at least 6.00 in IELTS or equivalent, or 550 overall in TOEFL, or Credit in English 1119.",
+      "sourceUrl": "https://apply.msu.edu.my/course/?faculty=all&qualification=master",
+      "tuitionCandidate": null
+    },
+    {
+      "level": "master",
+      "officialCategory": "Postgraduate Studies (Masters & Doctorate)",
+      "name": "Master in Educational Management and Leadership",
+      "mode": "",
+      "registrationDate": "11 July 2026",
+      "requirement": "Entry Requirements:\nProspective applicants must have a Bachelor’s degree or equivalent as accepted by MSU Senate, with at least 2.50 CGPA; CGPAs below 2.50 must be accompanied by 5 years working experience in a related field and will be subject to MSU Senate approval; any other equivalent qualifications are also subject to MSU Senate approval.",
+      "sourceUrl": "https://apply.msu.edu.my/course/?faculty=all&qualification=master",
+      "tuitionCandidate": {
+        "amountMYR": 51170,
+        "displayText": "RM 51,170 / year",
+        "selectedSource": {
+          "source": "Your-Uni",
+          "sourceUrl": "https://en.your-uni.com/university/msu-university",
+          "sourceProgrammeName": "Master in Educational Management and Leadership",
+          "amountMYR": 51170,
+          "duration": "1 year(s)"
+        },
+        "sourceRows": [
+          {
+            "source": "Your-Uni",
+            "sourceUrl": "https://en.your-uni.com/university/msu-university",
+            "sourceProgrammeName": "Master in Educational Management and Leadership",
+            "amountMYR": 51170,
+            "duration": "1 year(s)"
+          }
+        ],
+        "status": "single-source",
+        "note": "Only Your-Uni 2026 international annual tuition was available in the authorized postgraduate source set."
+      }
+    },
+    {
+      "level": "master",
+      "officialCategory": "Postgraduate Studies (Masters & Doctorate)",
+      "name": "Master in Early Childhood Education (MECE)",
+      "mode": "",
+      "registrationDate": "11 July 2026",
+      "requirement": "Entry Requirements:\ni. A bachelors degree in the field or related fields with a minimum CGPA of 2.50 or equivalent, as accepted by the HEP Senate; or\nii. A bachelors degree in the field or related fields or equivalent with a minimum CGPA of 2.00 and not meeting a CGPA of 2.50, can be accepted subject to rigorous internal assessment.\niii. Candidates without a qualification in the related fields or working experience in the relevant fields must undergo appropriate prerequisite courses determined by the HEP and meet the minimum CGPA based on (i) to (ii).",
+      "sourceUrl": "https://apply.msu.edu.my/course/?faculty=all&qualification=master",
+      "tuitionCandidate": {
+        "amountMYR": 34450,
+        "displayText": "RM 34,450 / year",
+        "selectedSource": {
+          "source": "Your-Uni",
+          "sourceUrl": "https://en.your-uni.com/university/msu-university",
+          "sourceProgrammeName": "Master in Early Childhood Education (MECE)",
+          "amountMYR": 34450,
+          "duration": "1.4 year(s)"
+        },
+        "sourceRows": [
+          {
+            "source": "Your-Uni",
+            "sourceUrl": "https://en.your-uni.com/university/msu-university",
+            "sourceProgrammeName": "Master in Early Childhood Education (MECE)",
+            "amountMYR": 34450,
+            "duration": "1.4 year(s)"
+          }
+        ],
+        "status": "single-source",
+        "note": "Only Your-Uni 2026 international annual tuition was available in the authorized postgraduate source set."
+      }
+    },
+    {
+      "level": "master",
+      "officialCategory": "Postgraduate Studies (Masters & Doctorate)",
+      "name": "Master in Counselling and Guidance (MCG)",
+      "mode": "",
+      "registrationDate": "11 July 2026",
+      "requirement": "Entry Requirements:\ni. A Bachelors Degree or its equivalent, with a minimum CGPA of 2.50, as accepted by the HEPs Senate; OR\nii. A Bachelors Degree or its equivalent, not meeting CGPA of 2.50, can be accepted subject to a minimum of five (5) years working experience in a relevant field.",
+      "sourceUrl": "https://apply.msu.edu.my/course/?faculty=all&qualification=master",
+      "tuitionCandidate": {
+        "amountMYR": 37460,
+        "displayText": "RM 37,460 / year",
+        "selectedSource": {
+          "source": "Your-Uni",
+          "sourceUrl": "https://en.your-uni.com/university/msu-university",
+          "sourceProgrammeName": "Master in Counselling and Guidance (MCG)",
+          "amountMYR": 37460,
+          "duration": "1.5 year(s)"
+        },
+        "sourceRows": [
+          {
+            "source": "Your-Uni",
+            "sourceUrl": "https://en.your-uni.com/university/msu-university",
+            "sourceProgrammeName": "Master in Counselling and Guidance (MCG)",
+            "amountMYR": 37460,
+            "duration": "1.5 year(s)"
+          }
+        ],
+        "status": "single-source",
+        "note": "Only Your-Uni 2026 international annual tuition was available in the authorized postgraduate source set."
+      }
+    },
+    {
+      "level": "master",
+      "officialCategory": "Postgraduate Studies (Masters & Doctorate)",
+      "name": "Master in Business Administration",
+      "mode": "",
+      "registrationDate": "11 July 2026",
+      "requirement": "Entry Requirements:\ni. A Bachelor’s degree with minimum CGPA of 2.50 out of 4.00, or its equivalent qualifications as accepted by the HEP Senate;OR\nii. A Bachelor’s degree with CGPA below 2.50 out of 4.00, or its equivalent qualifications can be accepted, subject to a minimum of 5 years of working experience in relevant field",
+      "sourceUrl": "https://apply.msu.edu.my/course/?faculty=all&qualification=master",
+      "tuitionCandidate": {
+        "amountMYR": 22117,
+        "displayText": "RM 22,117 / year",
+        "selectedSource": {
+          "source": "Your-Uni",
+          "sourceUrl": "https://en.your-uni.com/university/msu-university",
+          "sourceProgrammeName": "Master in Business Administration",
+          "amountMYR": 22117,
+          "duration": "1.5 year(s)"
+        },
+        "sourceRows": [
+          {
+            "source": "Your-Uni",
+            "sourceUrl": "https://en.your-uni.com/university/msu-university",
+            "sourceProgrammeName": "Master in Business Administration",
+            "amountMYR": 22117,
+            "duration": "1.5 year(s)"
+          }
+        ],
+        "status": "single-source",
+        "note": "Only Your-Uni 2026 international annual tuition was available in the authorized postgraduate source set."
+      }
+    },
+    {
+      "level": "master",
+      "officialCategory": "Postgraduate Studies (Masters & Doctorate)",
+      "name": "Master in Accounting/Finance (By Research)",
+      "mode": "",
+      "registrationDate": "11 July 2026",
+      "requirement": "Entry Requirements:\n(i) A Bachelors Degree with good honours from KUTPM(MSU) OR\n(ii) A Bachelors Degree with good honours from any other university or equivalent qualification from institution recognised by the Senate",
+      "sourceUrl": "https://apply.msu.edu.my/course/?faculty=all&qualification=master",
+      "tuitionCandidate": {
+        "amountMYR": 8901,
+        "displayText": "RM 8,901 / year",
+        "selectedSource": {
+          "source": "Your-Uni",
+          "sourceUrl": "https://en.your-uni.com/university/msu-university",
+          "sourceProgrammeName": "Master in Accounting/Finance (By Research)",
+          "amountMYR": 8901,
+          "duration": "2 year(s)"
+        },
+        "sourceRows": [
+          {
+            "source": "Your-Uni",
+            "sourceUrl": "https://en.your-uni.com/university/msu-university",
+            "sourceProgrammeName": "Master in Accounting/Finance (By Research)",
+            "amountMYR": 8901,
+            "duration": "2 year(s)"
+          }
+        ],
+        "status": "single-source",
+        "note": "Only Your-Uni 2026 international annual tuition was available in the authorized postgraduate source set."
+      }
+    },
+    {
+      "level": "master",
+      "officialCategory": "Postgraduate Studies (Masters & Doctorate)",
+      "name": "Master of Science In Public Health",
+      "mode": "",
+      "registrationDate": "11 July 2026",
+      "requirement": "Entry Requirements:\nA Bachelor of Medicine and Bachelor of Surgery (MBBS) or Bachelors degree (Level 6 MQF) or its equivalent from related fields with minimum CGPA of 2.50; OR\nA Bachelors degree (Level 6 MQF) or equivalent from related fields with CGPA not meeting 2.5 with at least 5 years experience in related fields; OR\nOther equivalent qualifications recognized by the Malaysian Government.\nInternational candidates:\ni. Pass English Language Proficiency Level of either International English Language Testing System (IELTS) Band 6.0 or Test of English as a Foreign Language (TOEFL) 550.",
+      "sourceUrl": "https://apply.msu.edu.my/course/?faculty=all&qualification=master",
+      "tuitionCandidate": {
+        "amountMYR": 63640,
+        "displayText": "RM 63,640 / year",
+        "selectedSource": {
+          "source": "Your-Uni",
+          "sourceUrl": "https://en.your-uni.com/university/msu-university",
+          "sourceProgrammeName": "Master of Science In Public Health",
+          "amountMYR": 63640,
+          "duration": "1 year(s)"
+        },
+        "sourceRows": [
+          {
+            "source": "Your-Uni",
+            "sourceUrl": "https://en.your-uni.com/university/msu-university",
+            "sourceProgrammeName": "Master of Science In Public Health",
+            "amountMYR": 63640,
+            "duration": "1 year(s)"
+          }
+        ],
+        "status": "single-source",
+        "note": "Only Your-Uni 2026 international annual tuition was available in the authorized postgraduate source set."
+      }
+    },
+    {
+      "level": "master",
+      "officialCategory": "Postgraduate Studies (Masters & Doctorate)",
+      "name": "Master of Science in Engineering",
+      "mode": "",
+      "registrationDate": "11 July 2026",
+      "requirement": "Entry Requirements:\nBachelor of Engineering / Engineering Technology degree (MQF Level 6) with 2.75 CGPA as approved by MSU Senate;\nBachelor of Engineering / Engineering Technology / Science or Technology (MQF Level 6) with:\nCGPA below 2.75 but above 2.50 may be accepted subject to rigorous internal assessment; CGPA below 2.50 may be accepted if accompanied by ten (10) years working experience in a relevant field;\nOR\nOther qualifications equivalent to Bachelor (MQF Level 6) with CGPA 2.75 as approved by MSU Senate.\nInternational students must present a TOEFL score of 500 or IELTS 6.0 or equivalent.",
+      "sourceUrl": "https://apply.msu.edu.my/course/?faculty=all&qualification=master",
+      "tuitionCandidate": {
+        "amountMYR": 11180,
+        "displayText": "RM 11,180 / year",
+        "selectedSource": {
+          "source": "Your-Uni",
+          "sourceUrl": "https://en.your-uni.com/university/msu-university",
+          "sourceProgrammeName": "Master of Science in Engineering",
+          "amountMYR": 11180,
+          "duration": "2 year(s)"
+        },
+        "sourceRows": [
+          {
+            "source": "Your-Uni",
+            "sourceUrl": "https://en.your-uni.com/university/msu-university",
+            "sourceProgrammeName": "Master of Science in Engineering",
+            "amountMYR": 11180,
+            "duration": "2 year(s)"
+          }
+        ],
+        "status": "single-source",
+        "note": "Only Your-Uni 2026 international annual tuition was available in the authorized postgraduate source set."
+      }
+    },
+    {
+      "level": "master",
+      "officialCategory": "Postgraduate Studies (Masters & Doctorate)",
+      "name": "Master of Science (Medical Physiology)",
+      "mode": "",
+      "registrationDate": "11 July 2026",
+      "requirement": "Entry Requirements:\nA Bachelor's degree of MBBS / Bachelor of Medical Science (BMS) / Bachelor of Medical Science or a Bachelor degree (MQF Level 6) in any allied health programme or its equivalent from related fields with minimum CGPA of 2.50; OR\nA Bachelor's degree (MQF Level 6) or equivalent from related fields with CGPA not meeting 2.5 with at least 5 years experience in related fields; OR\nOther equivalent qualifications approved by the Ministry of Higher Education and accredited from MQA including recognized by the MSU Senate; OR\nAny other qualifications that are recognized by the Malaysian Government.",
+      "sourceUrl": "https://apply.msu.edu.my/course/?faculty=all&qualification=master",
+      "tuitionCandidate": {
+        "amountMYR": 49820,
+        "displayText": "RM 49,820 / year",
+        "selectedSource": {
+          "source": "Your-Uni",
+          "sourceUrl": "https://en.your-uni.com/university/msu-university",
+          "sourceProgrammeName": "Master of Science (Medical Physiology)",
+          "amountMYR": 49820,
+          "duration": "1.5 year(s)"
+        },
+        "sourceRows": [
+          {
+            "source": "Your-Uni",
+            "sourceUrl": "https://en.your-uni.com/university/msu-university",
+            "sourceProgrammeName": "Master of Science (Medical Physiology)",
+            "amountMYR": 49820,
+            "duration": "1.5 year(s)"
+          }
+        ],
+        "status": "single-source",
+        "note": "Only Your-Uni 2026 international annual tuition was available in the authorized postgraduate source set."
+      }
+    },
+    {
+      "level": "master",
+      "officialCategory": "Postgraduate Studies (Masters & Doctorate)",
+      "name": "Master of Science (Applied Science)",
+      "mode": "",
+      "registrationDate": "11 July 2026",
+      "requirement": "Entry Requirements:\nProspective applicants must have a Masters degree (MQF Level 7) accepted by MSU Senate OR\nother qualifications accepted by MSU Senate as equivalent to a Masters degree (MQF Level 7).",
+      "sourceUrl": "https://apply.msu.edu.my/course/?faculty=all&qualification=master",
+      "tuitionCandidate": {
+        "amountMYR": 19135,
+        "displayText": "RM 19,135 / year",
+        "selectedSource": {
+          "source": "Your-Uni",
+          "sourceUrl": "https://en.your-uni.com/university/msu-university",
+          "sourceProgrammeName": "Master of Science (Applied Science)",
+          "amountMYR": 19135,
+          "duration": "2 year(s)"
+        },
+        "sourceRows": [
+          {
+            "source": "Your-Uni",
+            "sourceUrl": "https://en.your-uni.com/university/msu-university",
+            "sourceProgrammeName": "Master of Science (Applied Science)",
+            "amountMYR": 19135,
+            "duration": "2 year(s)"
+          }
+        ],
+        "status": "single-source",
+        "note": "Only Your-Uni 2026 international annual tuition was available in the authorized postgraduate source set."
+      }
+    },
+    {
+      "level": "master",
+      "officialCategory": "Postgraduate Studies (Masters & Doctorate)",
+      "name": "Master of Pharmacy",
+      "mode": "FT",
+      "registrationDate": "11 July 2026",
+      "requirement": "Entry Requirements:\n1. A bachelors degree with minimum CGPA of 2.75 or equivalent, as accepted by the HEP Senate; or\n2. A bachelors degree or equivalent with minimum CGPA of 2.50 and not meeting CGPA of 2.75, can be accepted subject to rigorous internal assessment; or\n3. A bachelors degree or equivalent not meeting CGPA of 2.50, can be accepted subject to a minimum of 5 years working experience in relevant field.",
+      "sourceUrl": "https://apply.msu.edu.my/course/?faculty=all&qualification=master",
+      "tuitionCandidate": {
+        "amountMYR": 30745,
+        "displayText": "RM 30,745 / year",
+        "selectedSource": {
+          "source": "Your-Uni",
+          "sourceUrl": "https://en.your-uni.com/university/msu-university",
+          "sourceProgrammeName": "Master of Pharmacy",
+          "amountMYR": 30745,
+          "duration": "2 year(s)"
+        },
+        "sourceRows": [
+          {
+            "source": "Your-Uni",
+            "sourceUrl": "https://en.your-uni.com/university/msu-university",
+            "sourceProgrammeName": "Master of Pharmacy",
+            "amountMYR": 30745,
+            "duration": "2 year(s)"
+          }
+        ],
+        "status": "single-source",
+        "note": "Only Your-Uni 2026 international annual tuition was available in the authorized postgraduate source set."
+      }
+    },
+    {
+      "level": "master",
+      "officialCategory": "Postgraduate Studies (Masters & Doctorate)",
+      "name": "Master of Design",
+      "mode": "",
+      "registrationDate": "11 July 2026",
+      "requirement": "Entry Requirements:\nProspective applicants must submit a research proposal and pass an interview. Required qualifications include a recognized Bachelors degree (MQF Level 6) or equivalent, in Art and Design or related fields, and at least 2.75 CGPA; CGPAs between 2.50 and 2.75 may be supported by three (3) years working experience in Art and Design; CGPAs below 2.50 may be supported by five (5) years working experience in related fields.",
+      "sourceUrl": "https://apply.msu.edu.my/course/?faculty=all&qualification=master",
+      "tuitionCandidate": {
+        "amountMYR": 31175,
+        "displayText": "RM 31,175 / year",
+        "selectedSource": {
+          "source": "Your-Uni",
+          "sourceUrl": "https://en.your-uni.com/university/msu-university",
+          "sourceProgrammeName": "Master of Design",
+          "amountMYR": 31175,
+          "duration": "2 year(s)"
+        },
+        "sourceRows": [
+          {
+            "source": "Your-Uni",
+            "sourceUrl": "https://en.your-uni.com/university/msu-university",
+            "sourceProgrammeName": "Master of Design",
+            "amountMYR": 31175,
+            "duration": "2 year(s)"
+          }
+        ],
+        "status": "single-source",
+        "note": "Only Your-Uni 2026 international annual tuition was available in the authorized postgraduate source set."
+      }
+    },
+    {
+      "level": "master",
+      "officialCategory": "Postgraduate Studies (Masters & Doctorate)",
+      "name": "Master of Clinical Pharmacy",
+      "mode": "FT",
+      "registrationDate": "11 July 2026",
+      "requirement": "Entry Requirements:\n(i) A Bachelors Degree in Pharmacy with minimum CGPA of 2.75, as accepted by the HEP Senate;\nOR\n(ii) A Bachelors Degree in Pharmacy not meeting CGPA of 2.75 but above CGPA of 2.50, can be accepted subject to rigorous internal assessment;\nOR\n(iii) A Bachelors Degree in Pharmacy not meeting CGPA of 2.50, can be accepted subject to a minimum ten years working experience in relevant field",
+      "sourceUrl": "https://apply.msu.edu.my/course/?faculty=all&qualification=master",
+      "tuitionCandidate": {
+        "amountMYR": 58480,
+        "displayText": "RM 58,480 / year",
+        "selectedSource": {
+          "source": "Your-Uni",
+          "sourceUrl": "https://en.your-uni.com/university/msu-university",
+          "sourceProgrammeName": "Master of Clinical Pharmacy",
+          "amountMYR": 58480,
+          "duration": "1 year(s)"
+        },
+        "sourceRows": [
+          {
+            "source": "Your-Uni",
+            "sourceUrl": "https://en.your-uni.com/university/msu-university",
+            "sourceProgrammeName": "Master of Clinical Pharmacy",
+            "amountMYR": 58480,
+            "duration": "1 year(s)"
+          }
+        ],
+        "status": "single-source",
+        "note": "Only Your-Uni 2026 international annual tuition was available in the authorized postgraduate source set."
+      }
+    },
+    {
+      "level": "master",
+      "officialCategory": "Postgraduate Studies (Masters & Doctorate)",
+      "name": "Master of Anatomy",
+      "mode": "",
+      "registrationDate": "11 July 2026",
+      "requirement": "Entry Requirements:\nA Bachelor of Medicine and Bachelor of Surgery (MBBS) or Bachelors degree or its equivalent (Level 6, MQF) from related fields with minimum CGPA of 2.50; OR\nA Bachelors degree or equivalent (Level 6, MQF) from related fields with CGPA not meeting 2.5 with at least 5 years experience in related fields; OR\nOther equivalent qualifications (Level 6, MQF) approved by the Minister of Education and accreditation from MQA including recognized by the MSU Senate; OR\nAny other qualifications (Level 6, MQF) that are recognized by the Malaysian Government.",
+      "sourceUrl": "https://apply.msu.edu.my/course/?faculty=all&qualification=master",
+      "tuitionCandidate": {
+        "amountMYR": 57620,
+        "displayText": "RM 57,620 / year",
+        "selectedSource": {
+          "source": "Your-Uni",
+          "sourceUrl": "https://en.your-uni.com/university/msu-university",
+          "sourceProgrammeName": "Master of Anatomy",
+          "amountMYR": 57620,
+          "duration": "1 year(s)"
+        },
+        "sourceRows": [
+          {
+            "source": "Your-Uni",
+            "sourceUrl": "https://en.your-uni.com/university/msu-university",
+            "sourceProgrammeName": "Master of Anatomy",
+            "amountMYR": 57620,
+            "duration": "1 year(s)"
+          }
+        ],
+        "status": "single-source",
+        "note": "Only Your-Uni 2026 international annual tuition was available in the authorized postgraduate source set."
+      }
+    },
+    {
+      "level": "master",
+      "officialCategory": "Postgraduate Studies (Masters & Doctorate)",
+      "name": "Master in Science (by Research) Biomedicine",
+      "mode": "",
+      "registrationDate": "11 July 2026",
+      "requirement": "Entry Requirements:\nProspective applicants must have a Masters degree or\nan equivalent qualification approved by MSU Senate.",
+      "sourceUrl": "https://apply.msu.edu.my/course/?faculty=all&qualification=master",
+      "tuitionCandidate": {
+        "amountMYR": 12610,
+        "displayText": "RM 12,610 / year",
+        "selectedSource": {
+          "source": "Your-Uni",
+          "sourceUrl": "https://en.your-uni.com/university/msu-university",
+          "sourceProgrammeName": "Master in Science (by Research) Biomedicine",
+          "amountMYR": 12610,
+          "duration": "2 year(s)"
+        },
+        "sourceRows": [
+          {
+            "source": "Your-Uni",
+            "sourceUrl": "https://en.your-uni.com/university/msu-university",
+            "sourceProgrammeName": "Master in Science (by Research) Biomedicine",
+            "amountMYR": 12610,
+            "duration": "2 year(s)"
+          }
+        ],
+        "status": "single-source",
+        "note": "Only Your-Uni 2026 international annual tuition was available in the authorized postgraduate source set."
+      }
+    },
+    {
+      "level": "master",
+      "officialCategory": "Postgraduate Studies (Masters & Doctorate)",
+      "name": "Master in Information Technology",
+      "mode": "",
+      "registrationDate": "11 July 2026",
+      "requirement": "Entry Requirements:\n(i) A Bachelors Degree in Computing field with minimum 2.75 CGPA;\nOR\n(ii) A Bachelors Degree in Computing field with CGPA below 2.75 but above 2.5 may be accepted, subject to rigorous internal review process;\nOR\n(iii) Other equivalent qualification recognised by Malaysian Government",
+      "sourceUrl": "https://apply.msu.edu.my/course/?faculty=all&qualification=master",
+      "tuitionCandidate": {
+        "amountMYR": 10750,
+        "displayText": "RM 10,750 / year",
+        "selectedSource": {
+          "source": "Your-Uni",
+          "sourceUrl": "https://en.your-uni.com/university/msu-university",
+          "sourceProgrammeName": "Master in Information Technology",
+          "amountMYR": 10750,
+          "duration": "2 year(s)"
+        },
+        "sourceRows": [
+          {
+            "source": "Your-Uni",
+            "sourceUrl": "https://en.your-uni.com/university/msu-university",
+            "sourceProgrammeName": "Master in Information Technology",
+            "amountMYR": 10750,
+            "duration": "2 year(s)"
+          }
+        ],
+        "status": "single-source",
+        "note": "Only Your-Uni 2026 international annual tuition was available in the authorized postgraduate source set."
+      }
+    },
+    {
+      "level": "master",
+      "officialCategory": "Postgraduate Studies (Masters & Doctorate)",
+      "name": "Master in Food Service Technology (by Research)",
+      "mode": "",
+      "registrationDate": "11 July 2026",
+      "requirement": "Entry Requirements:\nYou will need a Masters degree or\nan equivalent qualification approved by MSU Senate.",
+      "sourceUrl": "https://apply.msu.edu.my/course/?faculty=all&qualification=master",
+      "tuitionCandidate": {
+        "amountMYR": 12610,
+        "displayText": "RM 12,610 / year",
+        "selectedSource": {
+          "source": "Your-Uni",
+          "sourceUrl": "https://en.your-uni.com/university/msu-university",
+          "sourceProgrammeName": "Master in Food Service Technology (by Research)",
+          "amountMYR": 12610,
+          "duration": "2 year(s)"
+        },
+        "sourceRows": [
+          {
+            "source": "Your-Uni",
+            "sourceUrl": "https://en.your-uni.com/university/msu-university",
+            "sourceProgrammeName": "Master in Food Service Technology (by Research)",
+            "amountMYR": 12610,
+            "duration": "2 year(s)"
+          }
+        ],
+        "status": "single-source",
+        "note": "Only Your-Uni 2026 international annual tuition was available in the authorized postgraduate source set."
+      }
+    },
+    {
+      "level": "master",
+      "officialCategory": "Postgraduate Studies (Masters & Doctorate)",
+      "name": "Master in Computer Science",
+      "mode": "",
+      "registrationDate": "11 July 2026",
+      "requirement": "Entry Requirements:\n(i) A Bachelor’s Degree in Computing field with CGPA of 2.5 and above. Candidate with a CGPA below 2.5 but above 2.0 may be accepted, subject to rigorous internal review process;\nOR\n(ii) Other equivalent qualification recognised by Malaysian Government",
+      "sourceUrl": "https://apply.msu.edu.my/course/?faculty=all&qualification=master",
+      "tuitionCandidate": {
+        "amountMYR": 10750,
+        "displayText": "RM 10,750 / year",
+        "selectedSource": {
+          "source": "Your-Uni",
+          "sourceUrl": "https://en.your-uni.com/university/msu-university",
+          "sourceProgrammeName": "Master in Computer Science",
+          "amountMYR": 10750,
+          "duration": "2 year(s)"
+        },
+        "sourceRows": [
+          {
+            "source": "Your-Uni",
+            "sourceUrl": "https://en.your-uni.com/university/msu-university",
+            "sourceProgrammeName": "Master in Computer Science",
+            "amountMYR": 10750,
+            "duration": "2 year(s)"
+          }
+        ],
+        "status": "single-source",
+        "note": "Only Your-Uni 2026 international annual tuition was available in the authorized postgraduate source set."
+      }
+    },
+    {
+      "level": "master",
+      "officialCategory": "Postgraduate Studies (Masters & Doctorate)",
+      "name": "Master in Clinical Psychology",
+      "mode": "",
+      "registrationDate": "11 July 2026",
+      "requirement": "Entry Requirements:\nApplied Psychology (practitioner):\ni. A Bachelors degree in Psychology (Level 6, MQF) with a minimum CGPA of 2.75 or its equivalent as accepted by the HEP Senate. OR\nii. A Bachelors degree in Psychology with a minimum CGPA of 2.00 and not meeting a CGPA of 2.75, can be accepted subject to rigorous internal assessment.* OR\niii. Candidates with a Bachelors degree (non-psychology, Level 6, MQF) with a minimum CGPA of 2.75 with a minimum 45 credits of prerequisites modules in Psychology or a graduate diploma in Psychology or its equivalent as accepted by the HEP Senate OR\niv. Candidates with a Bachelors degree (non-psychology, Level 6, MQF) with a minimum CGPA of 2.75 and a Masters degree in Psychology with a minimum 45 credits of prerequisites modules in Psychology or a graduate diploma in Psychology or its equivalent as accepted by the HEP Senate OR\nv. Other relevant equivalent qualifications recognised by Malaysian government as equivalent to the above requirements.\n*Rigorous internal assessment may include independent panel interview, GRE psychology examination, and relevant extensive experience.\n• Additional requirements\ni. Personal statement (no more than 500 words) which outlines why the applicants wish to be considered for the course and their relevant skills. While clinically relevant work/volunteer experience is not a course entry requirement, applicants who have undertaken relevant work/volunteer experience may wish to include this as part of their personal statement.\nii. Minimum two confidential referee reports (1 academic referee - research supervisor is highly encouraged; 1 professional referee outside academic context) to be submitted; and\niii. Pass a structured competency-based selection panel interview (short-listed applicants only).\n• For international students only\n- Minimum Test of English as a Foreign Language (TOEFL) score 580 (PBT) or 230 (cBT) or 90-91 (iBT) or IELTS Band 6.5.",
+      "sourceUrl": "https://apply.msu.edu.my/course/?faculty=all&qualification=master",
+      "tuitionCandidate": {
+        "amountMYR": 36550,
+        "displayText": "RM 36,550 / year",
+        "selectedSource": {
+          "source": "Your-Uni",
+          "sourceUrl": "https://en.your-uni.com/university/msu-university",
+          "sourceProgrammeName": "Master in Clinical Psychology",
+          "amountMYR": 36550,
+          "duration": "2 year(s)"
+        },
+        "sourceRows": [
+          {
+            "source": "Your-Uni",
+            "sourceUrl": "https://en.your-uni.com/university/msu-university",
+            "sourceProgrammeName": "Master in Clinical Psychology",
+            "amountMYR": 36550,
+            "duration": "2 year(s)"
+          }
+        ],
+        "status": "single-source",
+        "note": "Only Your-Uni 2026 international annual tuition was available in the authorized postgraduate source set."
+      }
+    },
+    {
+      "level": "master",
+      "officialCategory": "Postgraduate Studies (Masters & Doctorate)",
+      "name": "Master in Biomedical Sciences",
+      "mode": "",
+      "registrationDate": "11 July 2026",
+      "requirement": "Entry Requirements:\n(i) A Bachelors Degree or its equivalent in related field with minimum CGPA of 2.50;\nOR\n(ii) A Bachelors Degree or its equivalent with CGPA below 2.50 and 3 years working experience",
+      "sourceUrl": "https://apply.msu.edu.my/course/?faculty=all&qualification=master",
+      "tuitionCandidate": {
+        "amountMYR": 49820,
+        "displayText": "RM 49,820 / year",
+        "selectedSource": {
+          "source": "Your-Uni",
+          "sourceUrl": "https://en.your-uni.com/university/msu-university",
+          "sourceProgrammeName": "Master in Biomedical Sciences",
+          "amountMYR": 49820,
+          "duration": "1.5 year(s)"
+        },
+        "sourceRows": [
+          {
+            "source": "Your-Uni",
+            "sourceUrl": "https://en.your-uni.com/university/msu-university",
+            "sourceProgrammeName": "Master in Biomedical Sciences",
+            "amountMYR": 49820,
+            "duration": "1.5 year(s)"
+          }
+        ],
+        "status": "single-source",
+        "note": "Only Your-Uni 2026 international annual tuition was available in the authorized postgraduate source set."
+      }
+    },
+    {
+      "level": "phd",
+      "officialCategory": "Postgraduate Studies (Masters & Doctorate)",
+      "name": "Doctor of Philosophy (Accounting/Finance)",
+      "mode": "",
+      "registrationDate": "11 July 2026",
+      "requirement": "Entry Requirements:\nProspective applicants must have at least a Masters Degree or an equivalent qualification approved by MSU Senate.\nPhD (Accounting/Finance) (PAF) is a research programme by the MSU School of Graduate Studies (SGS).",
+      "sourceUrl": "https://apply.msu.edu.my/course/?faculty=all&qualification=phd",
+      "tuitionCandidate": null
+    },
+    {
+      "level": "phd",
+      "officialCategory": "Postgraduate Studies (Masters & Doctorate)",
+      "name": "PhD in Food Service Technology",
+      "mode": "",
+      "registrationDate": "11 July 2026",
+      "requirement": "Entry Requirements:\nYou will need a Masters degree or\nan equivalent qualification approved by MSU Senate.",
+      "sourceUrl": "https://apply.msu.edu.my/course/?faculty=all&qualification=phd",
+      "tuitionCandidate": {
+        "amountMYR": 15079,
+        "displayText": "RM 15,079 / year",
+        "selectedSource": {
+          "source": "Your-Uni",
+          "sourceUrl": "https://en.your-uni.com/university/msu-university",
+          "sourceProgrammeName": "PhD (Food Service Technology)",
+          "amountMYR": 15079,
+          "duration": "3 year(s)"
+        },
+        "sourceRows": [
+          {
+            "source": "Your-Uni",
+            "sourceUrl": "https://en.your-uni.com/university/msu-university",
+            "sourceProgrammeName": "PhD (Food Service Technology)",
+            "amountMYR": 15079,
+            "duration": "3 year(s)"
+          }
+        ],
+        "status": "single-source",
+        "note": "Only Your-Uni 2026 international annual tuition was available in the authorized postgraduate source set."
+      }
+    },
+    {
+      "level": "phd",
+      "officialCategory": "Postgraduate Studies (Masters & Doctorate)",
+      "name": "Doctor of Philosophy in Engineering",
+      "mode": "",
+      "registrationDate": "11 July 2026",
+      "requirement": "Entry Requirements:\nProspective applicants must have a Masters degree or an equivalent qualification as approved by MSU Senate.\nInternational applicants must also score 500 in TOEFL or 5.0 in IELTS.",
+      "sourceUrl": "https://apply.msu.edu.my/course/?faculty=all&qualification=phd",
+      "tuitionCandidate": {
+        "amountMYR": 35833,
+        "displayText": "RM 35,833 / year",
+        "selectedSource": {
+          "source": "Your-Uni",
+          "sourceUrl": "https://en.your-uni.com/university/msu-university",
+          "sourceProgrammeName": "Doctor of Philosophy in Engineering",
+          "amountMYR": 35833,
+          "duration": "3 year(s)"
+        },
+        "sourceRows": [
+          {
+            "source": "Your-Uni",
+            "sourceUrl": "https://en.your-uni.com/university/msu-university",
+            "sourceProgrammeName": "Doctor of Philosophy in Engineering",
+            "amountMYR": 35833,
+            "duration": "3 year(s)"
+          }
+        ],
+        "status": "single-source",
+        "note": "Only Your-Uni 2026 international annual tuition was available in the authorized postgraduate source set."
+      }
+    },
+    {
+      "level": "phd",
+      "officialCategory": "Postgraduate Studies (Masters & Doctorate)",
+      "name": "Doctor of Philosophy in Education (by research)",
+      "mode": "",
+      "registrationDate": "11 July 2026",
+      "requirement": "Entry Requirements:\ni. A Masters Degree, as accepted by the HEPs Senate, OR\nii. Other qualifications equivalent to a masters degree, as accepted by the HEP Senate.",
+      "sourceUrl": "https://apply.msu.edu.my/course/?faculty=all&qualification=phd",
+      "tuitionCandidate": {
+        "amountMYR": 15996,
+        "displayText": "RM 15,996 / year",
+        "selectedSource": {
+          "source": "Your-Uni",
+          "sourceUrl": "https://en.your-uni.com/university/msu-university",
+          "sourceProgrammeName": "Doctor of Philosophy in Education (by Research)",
+          "amountMYR": 15996,
+          "duration": "3 year(s)"
+        },
+        "sourceRows": [
+          {
+            "source": "Your-Uni",
+            "sourceUrl": "https://en.your-uni.com/university/msu-university",
+            "sourceProgrammeName": "Doctor of Philosophy in Education (by Research)",
+            "amountMYR": 15996,
+            "duration": "3 year(s)"
+          }
+        ],
+        "status": "single-source",
+        "note": "Only Your-Uni 2026 international annual tuition was available in the authorized postgraduate source set."
+      }
+    },
+    {
+      "level": "phd",
+      "officialCategory": "Postgraduate Studies (Masters & Doctorate)",
+      "name": "Doctor of Philosophy (Information and Communication Technology)",
+      "mode": "",
+      "registrationDate": "11 July 2026",
+      "requirement": "Entry Requirements:\nDoctoral Degree by Mixed Mode / Research / **Industrial Doctoral Degrees / Doctor of Philosophy by Retrospective or Prior Publications\nA Master’s degree (Level 7, MQF) in Computing or related fields as accepted by the HEP Senate; OR\nA Master’s degree (Level 7, MQF) in Non-Computing fields with a minimum of FIVE (5) years of working experience in Computing or related fields must undergo appropriate prerequisite courses as determined by the HEP; OR\nA Master’s degree (Level 7, MQF) in Non-Computing fields with less than FIVE (5) years of working experience in Computing or related fields must undergo a thorough rigorous assessment as determined by the HEP to identify the appropriate prerequisite courses that equivalent to their working experience in the Computing or related fields; OR\nOther qualifications equivalent to a Masters degree (Level 7, MQF) in Computing or related fields recognised by the Government of Malaysia as equivalent to the above requirement.",
+      "sourceUrl": "https://apply.msu.edu.my/course/?faculty=all&qualification=phd",
+      "tuitionCandidate": {
+        "amountMYR": 13101,
+        "displayText": "RM 13,101 / year",
+        "selectedSource": {
+          "source": "Your-Uni",
+          "sourceUrl": "https://en.your-uni.com/university/msu-university",
+          "sourceProgrammeName": "PhD (Information and Communication Technology)",
+          "amountMYR": 13101,
+          "duration": "3 year(s)"
+        },
+        "sourceRows": [
+          {
+            "source": "Your-Uni",
+            "sourceUrl": "https://en.your-uni.com/university/msu-university",
+            "sourceProgrammeName": "PhD (Information and Communication Technology)",
+            "amountMYR": 13101,
+            "duration": "3 year(s)"
+          }
+        ],
+        "status": "single-source",
+        "note": "Only Your-Uni 2026 international annual tuition was available in the authorized postgraduate source set."
+      }
+    },
+    {
+      "level": "phd",
+      "officialCategory": "Postgraduate Studies (Masters & Doctorate)",
+      "name": "Doctor of Philosophy (Health Science)",
+      "mode": "",
+      "registrationDate": "11 July 2026",
+      "requirement": "Entry Requirements:\nProspective applicants must have a Masters degree (MQF Level 7) accepted by MSU Senate OR\nother qualifications accepted by MSU Senate as equivalent to a Masters degree (MQF Level 7).",
+      "sourceUrl": "https://apply.msu.edu.my/course/?faculty=all&qualification=phd",
+      "tuitionCandidate": {
+        "amountMYR": 27233,
+        "displayText": "RM 27,233 / year",
+        "selectedSource": {
+          "source": "Your-Uni",
+          "sourceUrl": "https://en.your-uni.com/university/msu-university",
+          "sourceProgrammeName": "Doctor of Philosophy (Health Science)",
+          "amountMYR": 27233,
+          "duration": "3 year(s)"
+        },
+        "sourceRows": [
+          {
+            "source": "Your-Uni",
+            "sourceUrl": "https://en.your-uni.com/university/msu-university",
+            "sourceProgrammeName": "Doctor of Philosophy (Health Science)",
+            "amountMYR": 27233,
+            "duration": "3 year(s)"
+          }
+        ],
+        "status": "single-source",
+        "note": "Only Your-Uni 2026 international annual tuition was available in the authorized postgraduate source set."
+      }
+    },
+    {
+      "level": "phd",
+      "officialCategory": "Postgraduate Studies (Masters & Doctorate)",
+      "name": "Doctor of Philosophy (Computer Science)",
+      "mode": "",
+      "registrationDate": "11 July 2026",
+      "requirement": "Entry Requirements:\nProspective applicants must have at least a Masters degree in Computer Science or Information Technology and Communication or\nan equivalent qualification approved by MSU Senate.",
+      "sourceUrl": "https://apply.msu.edu.my/course/?faculty=all&qualification=phd",
+      "tuitionCandidate": {
+        "amountMYR": 13101,
+        "displayText": "RM 13,101 / year",
+        "selectedSource": {
+          "source": "Your-Uni",
+          "sourceUrl": "https://en.your-uni.com/university/msu-university",
+          "sourceProgrammeName": "Doctor of Philosophy (Computer Science)",
+          "amountMYR": 13101,
+          "duration": "3 year(s)"
+        },
+        "sourceRows": [
+          {
+            "source": "Your-Uni",
+            "sourceUrl": "https://en.your-uni.com/university/msu-university",
+            "sourceProgrammeName": "Doctor of Philosophy (Computer Science)",
+            "amountMYR": 13101,
+            "duration": "3 year(s)"
+          }
+        ],
+        "status": "single-source",
+        "note": "Only Your-Uni 2026 international annual tuition was available in the authorized postgraduate source set."
+      }
+    },
+    {
+      "level": "phd",
+      "officialCategory": "Postgraduate Studies (Masters & Doctorate)",
+      "name": "Doctor of Philosophy (by Research) in Biomedicine",
+      "mode": "",
+      "registrationDate": "11 July 2026",
+      "requirement": "Entry Requirements:\nProspective applicants must have a Masters degree or\nan equivalent qualification approved by MSU Senate.",
+      "sourceUrl": "https://apply.msu.edu.my/course/?faculty=all&qualification=phd",
+      "tuitionCandidate": {
+        "amountMYR": 15079,
+        "displayText": "RM 15,079 / year",
+        "selectedSource": {
+          "source": "Your-Uni",
+          "sourceUrl": "https://en.your-uni.com/university/msu-university",
+          "sourceProgrammeName": "PhD - by Research (Biomedicine)",
+          "amountMYR": 15079,
+          "duration": "3 year(s)"
+        },
+        "sourceRows": [
+          {
+            "source": "Your-Uni",
+            "sourceUrl": "https://en.your-uni.com/university/msu-university",
+            "sourceProgrammeName": "PhD - by Research (Biomedicine)",
+            "amountMYR": 15079,
+            "duration": "3 year(s)"
+          }
+        ],
+        "status": "single-source",
+        "note": "Only Your-Uni 2026 international annual tuition was available in the authorized postgraduate source set."
+      }
+    },
+    {
+      "level": "phd",
+      "officialCategory": "Postgraduate Studies (Masters & Doctorate)",
+      "name": "Doctor of Philosophy (Applied Science)",
+      "mode": "",
+      "registrationDate": "11 July 2026",
+      "requirement": "Entry Requirements:\nProspective applicants must have a Masters degree (MQF Level 7) accepted by MSU Senate OR other qualifications accepted by MSU Senate as equivalent to a Masters degree (MQF Level 7).",
+      "sourceUrl": "https://apply.msu.edu.my/course/?faculty=all&qualification=phd",
+      "tuitionCandidate": {
+        "amountMYR": 29369,
+        "displayText": "RM 29,369 / year",
+        "selectedSource": {
+          "source": "Your-Uni",
+          "sourceUrl": "https://en.your-uni.com/university/msu-university",
+          "sourceProgrammeName": "Doctor of Philosophy (Applied Science)",
+          "amountMYR": 29369,
+          "duration": "3 year(s)"
+        },
+        "sourceRows": [
+          {
+            "source": "Your-Uni",
+            "sourceUrl": "https://en.your-uni.com/university/msu-university",
+            "sourceProgrammeName": "Doctor of Philosophy (Applied Science)",
+            "amountMYR": 29369,
+            "duration": "3 year(s)"
+          }
+        ],
+        "status": "single-source",
+        "note": "Only Your-Uni 2026 international annual tuition was available in the authorized postgraduate source set."
+      }
+    }
+  ],
+  "sourceCoverage": {
+    "officialUniquePostgraduateProgrammes": 30,
+    "master": 20,
+    "phd": 10,
+    "yourUniPostgraduateRows": 36,
+    "easyUniPostgraduateRows": 0,
+    "matchedAnnualTuitionRows": 27,
+    "missingAnnualTuitionRows": 3
+  },
+  "yourUniPostgraduate": [
+    {
+      "source": "Your-Uni",
+      "sourceUrl": "https://en.your-uni.com/university/msu-university",
+      "name": "Master in Computer Science",
+      "tuitionPerYearMYR": 10750,
+      "duration": "2 year(s)",
+      "interpretation": "Your-Uni page metadata states fees/courses for international students; table label is tuition fees per year."
+    },
+    {
+      "source": "Your-Uni",
+      "sourceUrl": "https://en.your-uni.com/university/msu-university",
+      "name": "Master in Information Technology",
+      "tuitionPerYearMYR": 10750,
+      "duration": "2 year(s)",
+      "interpretation": "Your-Uni page metadata states fees/courses for international students; table label is tuition fees per year."
+    },
+    {
+      "source": "Your-Uni",
+      "sourceUrl": "https://en.your-uni.com/university/msu-university",
+      "name": "Doctor of Philosophy (Computer Science)",
+      "tuitionPerYearMYR": 13101,
+      "duration": "3 year(s)",
+      "interpretation": "Your-Uni page metadata states fees/courses for international students; table label is tuition fees per year."
+    },
+    {
+      "source": "Your-Uni",
+      "sourceUrl": "https://en.your-uni.com/university/msu-university",
+      "name": "PhD (Information and Communication Technology)",
+      "tuitionPerYearMYR": 13101,
+      "duration": "3 year(s)",
+      "interpretation": "Your-Uni page metadata states fees/courses for international students; table label is tuition fees per year."
+    },
+    {
+      "source": "Your-Uni",
+      "sourceUrl": "https://en.your-uni.com/university/msu-university",
+      "name": "Master in Accounting/Finance (By Research)",
+      "tuitionPerYearMYR": 8901,
+      "duration": "2 year(s)",
+      "interpretation": "Your-Uni page metadata states fees/courses for international students; table label is tuition fees per year."
+    },
+    {
+      "source": "Your-Uni",
+      "sourceUrl": "https://en.your-uni.com/university/msu-university",
+      "name": "Master in Business Administration",
+      "tuitionPerYearMYR": 22117,
+      "duration": "1.5 year(s)",
+      "interpretation": "Your-Uni page metadata states fees/courses for international students; table label is tuition fees per year."
+    },
+    {
+      "source": "Your-Uni",
+      "sourceUrl": "https://en.your-uni.com/university/msu-university",
+      "name": "Master in Educational Management and Leadership",
+      "tuitionPerYearMYR": 51170,
+      "duration": "1 year(s)",
+      "interpretation": "Your-Uni page metadata states fees/courses for international students; table label is tuition fees per year."
+    },
+    {
+      "source": "Your-Uni",
+      "sourceUrl": "https://en.your-uni.com/university/msu-university",
+      "name": "Master in Business Administration (Fashion Business)",
+      "tuitionPerYearMYR": 57190,
+      "duration": "1 year(s)",
+      "interpretation": "Your-Uni page metadata states fees/courses for international students; table label is tuition fees per year."
+    },
+    {
+      "source": "Your-Uni",
+      "sourceUrl": "https://en.your-uni.com/university/msu-university",
+      "name": "Master in International Event Management",
+      "tuitionPerYearMYR": 51810,
+      "duration": "1.5 year(s)",
+      "interpretation": "Your-Uni page metadata states fees/courses for international students; table label is tuition fees per year."
+    },
+    {
+      "source": "Your-Uni",
+      "sourceUrl": "https://en.your-uni.com/university/msu-university",
+      "name": "Master in International Hospitality and Tourism Management",
+      "tuitionPerYearMYR": 51810,
+      "duration": "1.5 year(s)",
+      "interpretation": "Your-Uni page metadata states fees/courses for international students; table label is tuition fees per year."
+    },
+    {
+      "source": "Your-Uni",
+      "sourceUrl": "https://en.your-uni.com/university/msu-university",
+      "name": "Master in Management",
+      "tuitionPerYearMYR": 8901,
+      "duration": "2 year(s)",
+      "interpretation": "Your-Uni page metadata states fees/courses for international students; table label is tuition fees per year."
+    },
+    {
+      "source": "Your-Uni",
+      "sourceUrl": "https://en.your-uni.com/university/msu-university",
+      "name": "Doctor of Philosophy in Accounting",
+      "tuitionPerYearMYR": 11123,
+      "duration": "3 year(s)",
+      "interpretation": "Your-Uni page metadata states fees/courses for international students; table label is tuition fees per year."
+    },
+    {
+      "source": "Your-Uni",
+      "sourceUrl": "https://en.your-uni.com/university/msu-university",
+      "name": "Doctor of Philosophy in Management",
+      "tuitionPerYearMYR": 11123,
+      "duration": "3 year(s)",
+      "interpretation": "Your-Uni page metadata states fees/courses for international students; table label is tuition fees per year."
+    },
+    {
+      "source": "Your-Uni",
+      "sourceUrl": "https://en.your-uni.com/university/msu-university",
+      "name": "Master of Science in Engineering",
+      "tuitionPerYearMYR": 11180,
+      "duration": "2 year(s)",
+      "interpretation": "Your-Uni page metadata states fees/courses for international students; table label is tuition fees per year."
+    },
+    {
+      "source": "Your-Uni",
+      "sourceUrl": "https://en.your-uni.com/university/msu-university",
+      "name": "Doctor of Philosophy in Engineering",
+      "tuitionPerYearMYR": 35833,
+      "duration": "3 year(s)",
+      "interpretation": "Your-Uni page metadata states fees/courses for international students; table label is tuition fees per year."
+    },
+    {
+      "source": "Your-Uni",
+      "sourceUrl": "https://en.your-uni.com/university/msu-university",
+      "name": "Master of Anatomy",
+      "tuitionPerYearMYR": 57620,
+      "duration": "1 year(s)",
+      "interpretation": "Your-Uni page metadata states fees/courses for international students; table label is tuition fees per year."
+    },
+    {
+      "source": "Your-Uni",
+      "sourceUrl": "https://en.your-uni.com/university/msu-university",
+      "name": "Master in Biomedical Sciences",
+      "tuitionPerYearMYR": 49820,
+      "duration": "1.5 year(s)",
+      "interpretation": "Your-Uni page metadata states fees/courses for international students; table label is tuition fees per year."
+    },
+    {
+      "source": "Your-Uni",
+      "sourceUrl": "https://en.your-uni.com/university/msu-university",
+      "name": "Master in Science (by Research) Biomedicine",
+      "tuitionPerYearMYR": 12610,
+      "duration": "2 year(s)",
+      "interpretation": "Your-Uni page metadata states fees/courses for international students; table label is tuition fees per year."
+    },
+    {
+      "source": "Your-Uni",
+      "sourceUrl": "https://en.your-uni.com/university/msu-university",
+      "name": "Master of Clinical Pharmacy",
+      "tuitionPerYearMYR": 58480,
+      "duration": "1 year(s)",
+      "interpretation": "Your-Uni page metadata states fees/courses for international students; table label is tuition fees per year."
+    },
+    {
+      "source": "Your-Uni",
+      "sourceUrl": "https://en.your-uni.com/university/msu-university",
+      "name": "Master in Clinical Psychology",
+      "tuitionPerYearMYR": 36550,
+      "duration": "2 year(s)",
+      "interpretation": "Your-Uni page metadata states fees/courses for international students; table label is tuition fees per year."
+    },
+    {
+      "source": "Your-Uni",
+      "sourceUrl": "https://en.your-uni.com/university/msu-university",
+      "name": "Master of Science (Medical Physiology)",
+      "tuitionPerYearMYR": 49820,
+      "duration": "1.5 year(s)",
+      "interpretation": "Your-Uni page metadata states fees/courses for international students; table label is tuition fees per year."
+    },
+    {
+      "source": "Your-Uni",
+      "sourceUrl": "https://en.your-uni.com/university/msu-university",
+      "name": "Master of Science In Public Health",
+      "tuitionPerYearMYR": 63640,
+      "duration": "1 year(s)",
+      "interpretation": "Your-Uni page metadata states fees/courses for international students; table label is tuition fees per year."
+    },
+    {
+      "source": "Your-Uni",
+      "sourceUrl": "https://en.your-uni.com/university/msu-university",
+      "name": "PhD - by Research (Biomedicine)",
+      "tuitionPerYearMYR": 15079,
+      "duration": "3 year(s)",
+      "interpretation": "Your-Uni page metadata states fees/courses for international students; table label is tuition fees per year."
+    },
+    {
+      "source": "Your-Uni",
+      "sourceUrl": "https://en.your-uni.com/university/msu-university",
+      "name": "Doctor of Philosophy (Health Science)",
+      "tuitionPerYearMYR": 27233,
+      "duration": "3 year(s)",
+      "interpretation": "Your-Uni page metadata states fees/courses for international students; table label is tuition fees per year."
+    },
+    {
+      "source": "Your-Uni",
+      "sourceUrl": "https://en.your-uni.com/university/msu-university",
+      "name": "Master of Pharmacy",
+      "tuitionPerYearMYR": 30745,
+      "duration": "2 year(s)",
+      "interpretation": "Your-Uni page metadata states fees/courses for international students; table label is tuition fees per year."
+    },
+    {
+      "source": "Your-Uni",
+      "sourceUrl": "https://en.your-uni.com/university/msu-university",
+      "name": "Doctor of Veterinary Medicine",
+      "tuitionPerYearMYR": 126000,
+      "duration": "5 year(s)",
+      "interpretation": "Your-Uni page metadata states fees/courses for international students; table label is tuition fees per year."
+    },
+    {
+      "source": "Your-Uni",
+      "sourceUrl": "https://en.your-uni.com/university/msu-university",
+      "name": "Master in Counselling and Guidance (MCG)",
+      "tuitionPerYearMYR": 37460,
+      "duration": "1.5 year(s)",
+      "interpretation": "Your-Uni page metadata states fees/courses for international students; table label is tuition fees per year."
+    },
+    {
+      "source": "Your-Uni",
+      "sourceUrl": "https://en.your-uni.com/university/msu-university",
+      "name": "PhD in Social Sciences",
+      "tuitionPerYearMYR": 15996,
+      "duration": "3 year(s)",
+      "interpretation": "Your-Uni page metadata states fees/courses for international students; table label is tuition fees per year."
+    },
+    {
+      "source": "Your-Uni",
+      "sourceUrl": "https://en.your-uni.com/university/msu-university",
+      "name": "Master in Early Childhood Education (MECE)",
+      "tuitionPerYearMYR": 34450,
+      "duration": "1.4 year(s)",
+      "interpretation": "Your-Uni page metadata states fees/courses for international students; table label is tuition fees per year."
+    },
+    {
+      "source": "Your-Uni",
+      "sourceUrl": "https://en.your-uni.com/university/msu-university",
+      "name": "Master of Education (Teaching English as a Second Language)",
+      "tuitionPerYearMYR": 52460,
+      "duration": "1 year(s)",
+      "interpretation": "Your-Uni page metadata states fees/courses for international students; table label is tuition fees per year."
+    },
+    {
+      "source": "Your-Uni",
+      "sourceUrl": "https://en.your-uni.com/university/msu-university",
+      "name": "Doctor of Philosophy in Education (by Research)",
+      "tuitionPerYearMYR": 15996,
+      "duration": "3 year(s)",
+      "interpretation": "Your-Uni page metadata states fees/courses for international students; table label is tuition fees per year."
+    },
+    {
+      "source": "Your-Uni",
+      "sourceUrl": "https://en.your-uni.com/university/msu-university",
+      "name": "Master of Design",
+      "tuitionPerYearMYR": 31175,
+      "duration": "2 year(s)",
+      "interpretation": "Your-Uni page metadata states fees/courses for international students; table label is tuition fees per year."
+    },
+    {
+      "source": "Your-Uni",
+      "sourceUrl": "https://en.your-uni.com/university/msu-university",
+      "name": "Master of Science (Applied Science)",
+      "tuitionPerYearMYR": 19135,
+      "duration": "2 year(s)",
+      "interpretation": "Your-Uni page metadata states fees/courses for international students; table label is tuition fees per year."
+    },
+    {
+      "source": "Your-Uni",
+      "sourceUrl": "https://en.your-uni.com/university/msu-university",
+      "name": "Master in Food Service Technology (by Research)",
+      "tuitionPerYearMYR": 12610,
+      "duration": "2 year(s)",
+      "interpretation": "Your-Uni page metadata states fees/courses for international students; table label is tuition fees per year."
+    },
+    {
+      "source": "Your-Uni",
+      "sourceUrl": "https://en.your-uni.com/university/msu-university",
+      "name": "Doctor of Philosophy (Applied Science)",
+      "tuitionPerYearMYR": 29369,
+      "duration": "3 year(s)",
+      "interpretation": "Your-Uni page metadata states fees/courses for international students; table label is tuition fees per year."
+    },
+    {
+      "source": "Your-Uni",
+      "sourceUrl": "https://en.your-uni.com/university/msu-university",
+      "name": "PhD (Food Service Technology)",
+      "tuitionPerYearMYR": 15079,
+      "duration": "3 year(s)",
+      "interpretation": "Your-Uni page metadata states fees/courses for international students; table label is tuition fees per year."
+    }
+  ],
+  "easyUniPostgraduate": [],
+  "missingAnnualTuition": [
+    {
+      "level": "phd",
+      "name": "Doctor of Philosophy (Management/Business)"
+    },
+    {
+      "level": "master",
+      "name": "Master in Fashion Business"
+    },
+    {
+      "level": "phd",
+      "name": "Doctor of Philosophy (Accounting/Finance)"
+    }
+  ]
+}
