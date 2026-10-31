@@ -1,0 +1,55 @@
+{
+  "artifacts": [
+    "run_contract.json",
+    "source_cache_index.json",
+    "level_manifest.json",
+    "candidate_dataset.json",
+    "current_official_diff_audit.json",
+    "exception_queue.json",
+    "pre_import_gap_audit.json",
+    "official_directory_all.json"
+  ],
+  "levelManifest": {
+    "institution": "SEGi University",
+    "institutionCode": "SEGI",
+    "runDate": "2026-06-16",
+    "fetchedAt": "2026-06-16T17:20:08+00:00",
+    "officialDirectoryUrl": "https://university.segi.edu.my/course-search/",
+    "scope": "Bachelor, Master, PhD programmes published under Campus = SEGi University",
+    "officialDirectoryTotal": 90,
+    "officialDegreeCandidateTotal": 76,
+    "officialCountsByStandardLevel": {
+      "bachelor": 39,
+      "master": 28,
+      "phd": 9
+    },
+    "officialCountsByRawLevel": {
+      "Bachelor Degree": 39,
+      "Diploma": 8,
+      "Executive Diploma": 1,
+      "Foundation": 4,
+      "Postgraduate": 38
+    },
+    "currentProjectReadyTotal": 49,
+    "currentProjectCountsByLevel": {
+      "bachelor": 27,
+      "master": 17,
+      "phd": 5
+    },
+    "matchedCount": 36,
+    "officialOnlyCount": 40,
+    "currentOnlyCount": 13,
+    "titleVariantMatchCount": 16
+  },
+  "preImportGate": {
+    "status": "not-import-ready",
+    "reason": "This run is a standardized official audit. It found scope and title gaps that require human confirmation before any write/publish action.",
+    "blockingItems": {
+      "officialOnlyProgrammes": 40,
+      "currentOnlyProgrammes": 13,
+      "titleVariantMatches": 16,
+      "officialDetailPagesWithoutTuition": 76
+    },
+    "recommendedNextStep": "Confirm whether SEGi University Online / ODL variants should be separate public programmes, then prepare a reviewed import candidate."
+  }
+}

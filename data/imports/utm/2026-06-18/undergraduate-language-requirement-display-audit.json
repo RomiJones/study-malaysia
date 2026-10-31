@@ -1,0 +1,131 @@
+{
+  "auditId": "utm-undergraduate-language-requirement-display-audit-2026-06-19",
+  "institution": "Universiti Teknologi Malaysia",
+  "level": "bachelor",
+  "applicantScope": "international",
+  "academicSession": "2026/2027",
+  "auditedAt": "2026-06-19T00:39:00+08:00",
+  "authorization": "display-fix-with-official-field-audit",
+  "officialSources": [
+    {
+      "title": "UTM Undergraduate International",
+      "url": "https://admission.utm.my/undergraduate-international/",
+      "role": "international undergraduate entry route"
+    },
+    {
+      "title": "UTM English Language Requirements",
+      "url": "https://admission.utm.my/english-language-requirements-3/",
+      "role": "language requirement authority"
+    },
+    {
+      "title": "UTM Entry Requirements UG International",
+      "url": "https://admission.utm.my/entry-requirements-ug-international/",
+      "role": "country-specific academic entry requirement authority"
+    }
+  ],
+  "officialRule": {
+    "scope": "Undergraduate candidates joining UTM from September 2023; all undergraduate programmes except TESL.",
+    "routes": {
+      "IELTS": 5.5,
+      "TOEFL_iBT": 46,
+      "PTE_Academic": 51,
+      "MUET": 4,
+      "Cambridge_Linguaskill": 160,
+      "ELS_CIEP": 108
+    },
+    "mainlandChinaExemption": false,
+    "notes": [
+      "Mainland China is not listed in UTM's English language exempted countries list; Hong Kong is listed separately.",
+      "Other undergraduate exemptions remain International School, A-Level, International Baccalaureate, UTM Foundation, or another Foundation programme in Malaysia.",
+      "Cambridge Linguaskill Online has UTM-specific registration and location restrictions; candidates outside Malaysia, Singapore and Philippines cannot book and take the online test according to UTM's note."
+    ]
+  },
+  "candidateDatasetAudit": {
+    "sourcePath": "data/imports/utm/2026-06-16/undergraduate/candidate-dataset.json",
+    "programmesChecked": 44,
+    "programmesWithCompleteSixRoutes": 44,
+    "programmesMissingAnyRoute": 0,
+    "scoreShapeCounts": {
+      "IELTS:5.5|TOEFL_iBT:46|PTE_Academic:51|MUET:4|Cambridge_Linguaskill:160|ELS_CIEP:108": 44
+    },
+    "checkedProgrammeOrdinals": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44
+    ]
+  },
+  "publicDisplayDecision": {
+    "listSurfaces": {
+      "decision": "ielts-only",
+      "expectedDisplay": "IELTS 5.5+",
+      "affectedSurfaces": [
+        "Home university cards",
+        "University detail hero stats",
+        "University programme list rows",
+        "Favorites programme cards",
+        "Smart recommendation cards",
+        "Compare table"
+      ]
+    },
+    "detailSurfaces": {
+      "decision": "show-full-accepted-language-test-score-routes",
+      "expectedDisplay": "IELTS 5.5+ / TOEFL iBT 46+ / PTE 51+ / MUET 4+ / Cambridge/Linguaskill 160+ / ELS CIEP 108+",
+      "affectedSurfaces": [
+        "University programme detail modal",
+        "Standalone programme detail page"
+      ]
+    }
+  },
+  "implementation": {
+    "filesChanged": [
+      "apps/web/src/pages/UniversityPage.vue",
+      "apps/web/src/pages/ProgramPage.vue",
+      "apps/web/src/i18n/messages.ts",
+      "apps/web/src/utils/format.ts",
+      "tests/web/format.test.ts"
+    ],
+    "databaseMutation": false,
+    "candidateDataMutation": false
+  }
+}

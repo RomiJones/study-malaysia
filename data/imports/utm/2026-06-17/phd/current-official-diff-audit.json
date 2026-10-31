@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "universityCode": "UTM",
+  "level": "phd",
+  "currentAsOf": "2026-06-17",
+  "decision": "baseline-locked-for-collection",
+  "checks": [
+    "Parsed current UTM international postgraduate faculty pages.",
+    "Separated duplicate DPP faculty listings from canonical doctoral candidate.",
+    "Fee-only Doctor of Software Engineering row is retained as review evidence, not promoted to candidate without a directory row."
+  ],
+  "counts": {
+    "directoryOccurrences": 62,
+    "canonicalProgrammes": 55,
+    "ready": 55,
+    "needsReview": 0,
+    "notAvailableForInternational": 0
+  }
+}

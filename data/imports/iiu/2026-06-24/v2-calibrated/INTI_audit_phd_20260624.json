@@ -1,0 +1,691 @@
+{
+  "safe_to_import": false,
+  "import_approved_by": null,
+  "import_approved_at": null,
+  "audit_metadata": {
+    "university": "INTI International University & Colleges",
+    "universityShortName": "INTI",
+    "level": "phd",
+    "auditDate": "2026-06-24",
+    "auditor": "codex-collector-v2-calibrated",
+    "officialDomain": "newinti.edu.my",
+    "sourceRegistry": {
+      "programmeCatalogUrl": "https://newinti.edu.my/academic-programmes/postgraduate/doctorate/",
+      "feeInfoUrl": "https://newinti.edu.my/academic-programmes/postgraduate/doctorate/",
+      "entryReqUrl": "https://newinti.edu.my/international-students/entry-requirements/",
+      "languageReqUrl": "https://newinti.edu.my/international-students/entry-requirements/",
+      "otherUrls": [
+        "https://newinti.edu.my/international-students/",
+        "https://newinti.edu.my/international-students/how-to-apply/",
+        "https://newinti.edu.my/international-students/brochures/"
+      ]
+    },
+    "inventoryCount": 10,
+    "collectedCount": 10,
+    "skippedCount": 0,
+    "readyCount": 0,
+    "needsReviewCount": 10,
+    "calibrationSource": "data/imports/iiu/2026-06-24/v3-calibrated/INTI_audit_doctoral_20260624.json"
+  },
+  "programmes": [
+    {
+      "nameEn": "Doctor of Business Administration",
+      "name": "工商管理博士",
+      "faculty": "Business",
+      "level": "phd",
+      "duration": 3,
+      "tuitionMYR": null,
+      "intake": [
+        1,
+        5,
+        9
+      ],
+      "ielts": 6.0,
+      "curriculum": [
+        "第一年高级管理经济学",
+        "创新与技术管理",
+        "业务流程管理",
+        "高级统计与决策分析",
+        "决策会计与金融",
+        "高级市场营销管理",
+        "高级商业研究方法",
+        "战略人力资源管理",
+        "企业创业战略",
+        "高级战略管理",
+        "第二至第三年论文"
+      ],
+      "curriculumTotal": 11,
+      "studyMode": "research",
+      "gpaRequirement": "A Master’s Degree (Level 7, MQF) in related fields as accepted by the University Senate; OR A Master’s Degree (Level 7, MQF) in non-related fields as accepted by the Senate, subject to having relevant working experience and rigorous internal assessment; OR A Master’s Degree (Level 7, MQF) in non-related fields as accepted by the Senate and without relevant working experience, subject to passing prerequisite courses; OR Other qualifications equivalent to a Master’s Degree (Level 7, MQF) recognised by the Malaysian Government. Meet any of one the following English language requirements: A Master’s Degree conducted in English*; OR Credit 6 in MCE / SPM / GCE level; OR MUET Band 4 / TOEFL score of 550 / IELTS score of 6.0; OR Equivalent score from any of the above obtained at undergraduate level at a recognised university* *A copy of document from the university is required during submission as a proof of English proficiency Note: International students are subject to meet entry requirements that reflect similar qualifications and experience as stated above. To find country-specific entry requirements visit our international entry requirement page",
+      "interviewRequired": null,
+      "careerProspects": "工商管理和管理领域的高级专业人士、研究型管理者、商业决策与组织管理岗位",
+      "otherLanguageReqs": {
+        "toefl": 550,
+        "muet": 4
+      },
+      "otherEntryReqs": [
+        "国际学生须满足与官方页面列出的同等学历和经验要求。",
+        "中国学生资格参照官方国际入学要求页面中的高中、职业技术学校、专科或技工学校等条目。",
+        "部分非相关背景路径可能需要相关工作经验、严格内部评估或先修课程。"
+      ],
+      "remarks": "官方学制文本为“4 years (PT), 3 years (FT)”，本次按全日制路径或官方区间上限规范为3年。官方费用列出国际学生近似金额：INTI International University：约马币59,796令吉。官网费用为近似金额且注明国际学生费用另受销售与服务税影响，需人工复核后才可公开。官网课程结构为英文，本次已生成中文课程数组，术语翻译需人工复核。四语公开本地化尚未完成，本条保持待复核。官方未公布可作为公开上线依据的精确国际学生总学费；官网费用为近似金额或多费用选项且不含 SST，tuitionMYR 按默认采集标准置为 null。官网仅发布近似费用（INTI International University：约 RM 59,796），并注明公布费用不含 SST，国际学生费用另加 6% SST。未发现同一专业、同一国际学生口径的精确总学费。课程和职业中文公开前仍需 Ian 终审。",
+      "officialFeeSourceUrl": "https://newinti.edu.my/programme/doctor-of-business-administration/",
+      "officialSourceUrl": "https://newinti.edu.my/programme/doctor-of-business-administration/",
+      "officialVerifiedAt": "2026-06-24",
+      "publicDisplayStatus": "needs-review",
+      "auditStatus": "needs-manual-review"
+    },
+    {
+      "nameEn": "Doctor of Business Administration (Online Learning)",
+      "name": "工商管理博士（在线学习）",
+      "faculty": "Business",
+      "level": "phd",
+      "duration": 3,
+      "tuitionMYR": null,
+      "intake": [
+        1,
+        3,
+        5,
+        8,
+        10
+      ],
+      "ielts": 6.0,
+      "curriculum": [
+        "高级商业研究方法",
+        "高级市场营销管理",
+        "决策会计与金融",
+        "创新与技术管理",
+        "高级统计与决策分析",
+        "业务流程管理",
+        "高级管理经济学",
+        "战略人力资源管理",
+        "企业创业战略",
+        "高级战略管理",
+        "论文"
+      ],
+      "curriculumTotal": 11,
+      "studyMode": "research",
+      "gpaRequirement": "A Master’s Degree (Level 7, MQF) in related fields as accepted by the University Senate; OR A Master’s Degree (Level 7, MQF) in non-related fields as accepted by the University Senate, subject to having relevant working experience and rigorous internal assessment; OR A Master’s Degree (Level 7, MQF) in non-related fields as accepted by the University Senate and without relevant working experience, subject to passing prerequisite courses; OR Other qualifications equivalent to a Master’s Degree (Level 7, MQF) recognised by the Malaysian Government. Meet any of these following English language requirements: i. A Master’s Degree conducted in English*; OR ii. Credit 6 in MCE / SPM / GCE level; OR iii. MUET Band 4 / TOEFL score of 550 / IELTS score of 6.0; OR iv. Equivalent score from any of the above obtained at undergraduate level at a recognised university* *A copy of document from the university is required during submission as a proof of English proficiency Note: International students are subject to meet entry requirements that reflect similar qualifications and experience as stated above. To find country-specific entry requirements visit our international entry requirement page",
+      "interviewRequired": null,
+      "careerProspects": "管理分析师、市场研究分析师、高校教师、商业或管理顾问",
+      "otherLanguageReqs": {
+        "toefl": 550,
+        "muet": 4
+      },
+      "otherEntryReqs": [
+        "国际学生须满足与官方页面列出的同等学历和经验要求。",
+        "中国学生资格参照官方国际入学要求页面中的高中、职业技术学校、专科或技工学校等条目。",
+        "部分非相关背景路径可能需要相关工作经验、严格内部评估或先修课程。"
+      ],
+      "remarks": "官方学制文本为“3 years (FT), 4 years (PT)”，本次按全日制路径或官方区间上限规范为3年。官方费用列出国际学生近似金额：INTI International University：约马币50,400令吉。官网费用为近似金额且注明国际学生费用另受销售与服务税影响，需人工复核后才可公开。官网课程结构为英文，本次已生成中文课程数组，术语翻译需人工复核。四语公开本地化尚未完成，本条保持待复核。官方未公布可作为公开上线依据的精确国际学生总学费；官网费用为近似金额或多费用选项且不含 SST，tuitionMYR 按默认采集标准置为 null。官网仅发布近似费用（INTI International University：约 RM 50,400），并注明公布费用不含 SST，国际学生费用另加 6% SST。未发现同一专业、同一国际学生口径的精确总学费。课程和职业中文公开前仍需 Ian 终审。",
+      "officialFeeSourceUrl": "https://newinti.edu.my/programme/doctor-of-business-administration-fully-online/",
+      "officialSourceUrl": "https://newinti.edu.my/programme/doctor-of-business-administration-fully-online/",
+      "officialVerifiedAt": "2026-06-24",
+      "publicDisplayStatus": "needs-review",
+      "auditStatus": "needs-manual-review"
+    },
+    {
+      "nameEn": "Doctor of Education",
+      "name": "教育博士",
+      "faculty": "Education",
+      "level": "phd",
+      "duration": 3,
+      "tuitionMYR": null,
+      "intake": [
+        1,
+        5,
+        9
+      ],
+      "ielts": 4.0,
+      "curriculum": [
+        "第一年学术写作理论与实践",
+        "课程理论与实施",
+        "教育行政与政策",
+        "教育创业领导力",
+        "国际教育与全球化",
+        "研究方法",
+        "第二年教育技术",
+        "教育评价与评估",
+        "专业发展与终身教育",
+        "战略课堂管理",
+        "博士论文",
+        "第三年博士论文"
+      ],
+      "curriculumTotal": 12,
+      "studyMode": "research",
+      "gpaRequirement": "i. A Master’s Degree (Level 7, MQF) in education fields as accepted by the University Senate; OR ii. A Master’s Degree (Level 7, MQF) in non-education fields subject to passing prerequisite courses; OR iii. Other qualifications equivalent to a Master’s Degree (Level 7, MQF) recognised by the Malaysian Government. Meet any of these following English language requirements: i. A Master’s Degree conducted in English*; OR ii. Credit 6 in MCE / SPM / GCE level; OR iii. MUET Band 3 / TOELF IBT (30-31) / IELTS 4.0; OR iv. Equivalent score from any of the above obtained at undergraduate level at a recognised university* *A copy of document from the university is required during submission as a proof of English proficiency Note: International students are subject to meet entry requirements that reflect similar qualifications and experience as stated above. To find country-specific entry requirements visit our international entry requirement page",
+      "interviewRequired": null,
+      "careerProspects": "大学教授或讲师、学院院长、校长、教育顾问、企业培训师、学习专员、教育研究员、教育政策分析师、立法政策顾问",
+      "otherLanguageReqs": {
+        "muet": 3
+      },
+      "otherEntryReqs": [
+        "国际学生须满足与官方页面列出的同等学历和经验要求。",
+        "中国学生资格参照官方国际入学要求页面中的高中、职业技术学校、专科或技工学校等条目。"
+      ],
+      "remarks": "官方学制文本为“4 years (PT), 3 years (FT)”，本次按全日制路径或官方区间上限规范为3年。官方费用列出国际学生近似金额：INTI International University：约马币59,796令吉。官网费用为近似金额且注明国际学生费用另受销售与服务税影响，需人工复核后才可公开。官网课程结构为英文，本次已生成中文课程数组，术语翻译需人工复核。四语公开本地化尚未完成，本条保持待复核。官方未公布可作为公开上线依据的精确国际学生总学费；官网费用为近似金额或多费用选项且不含 SST，tuitionMYR 按默认采集标准置为 null。官网仅发布近似费用（INTI International University：约 RM 59,796），并注明公布费用不含 SST，国际学生费用另加 6% SST。未发现同一专业、同一国际学生口径的精确总学费。课程和职业中文公开前仍需 Ian 终审。",
+      "officialFeeSourceUrl": "https://newinti.edu.my/programme/doctor-of-education/",
+      "officialSourceUrl": "https://newinti.edu.my/programme/doctor-of-education/",
+      "officialVerifiedAt": "2026-06-24",
+      "publicDisplayStatus": "needs-review",
+      "auditStatus": "needs-manual-review"
+    },
+    {
+      "nameEn": "Doctor of Philosophy (Education) (by Research)",
+      "name": "哲学博士（教育）（研究型）",
+      "faculty": "Education",
+      "level": "phd",
+      "duration": 3,
+      "tuitionMYR": null,
+      "intake": [
+        1,
+        5,
+        9
+      ],
+      "ielts": 4.0,
+      "curriculum": [
+        "研究方法论",
+        "开题答辩",
+        "研究论文",
+        "最终学年口试答辩",
+        "博士论文",
+        "课程与教学研究领域",
+        "指导与咨询研究领域",
+        "教育领导与管理研究领域",
+        "英语作为第二语言教学研究领域",
+        "特殊教育研究领域",
+        "幼儿教育研究领域"
+      ],
+      "curriculumTotal": 11,
+      "studyMode": "research",
+      "gpaRequirement": "A Master’s Degree (Level 7, MQF) in education fields as accepted by the University Senate; OR A Master’s Degree (Level 7, MQF) in non-education fields subject to passing prerequisite courses; OR Other qualifications equivalent to a Master’s Degree (Level 7, MQF) recognised by the Malaysian Government. Meet any of these English language requirements: A Master’s Degree conducted in English*; OR Credit 6 in MCE / SPM / GCE level; OR MUET Band 3 / TOELF IBT (30-31) / IELTS 4.0; OR Equivalent score from any of the above obtained at undergraduate level at a recognised university* *A copy of document from the university is required during submission as a proof of English proficiency Note: International students are subject to meet entry requirements that reflect similar qualifications and experience as stated above. To find country-specific entry requirements visit our international entry requirement page",
+      "interviewRequired": null,
+      "careerProspects": "讲师、企业培训师、儿童照护主管、校长、顾问、媒体与技术专员、非政府组织或社会工作经理、部门主管、项目管理人员",
+      "otherLanguageReqs": {
+        "muet": 3
+      },
+      "otherEntryReqs": [
+        "国际学生须满足与官方页面列出的同等学历和经验要求。",
+        "中国学生资格参照官方国际入学要求页面中的高中、职业技术学校、专科或技工学校等条目。",
+        "研究型路径可能需要开题、研究指导或论文相关要求。"
+      ],
+      "remarks": "官方学制文本为“4 years (PT), 3 years (FT)”，本次按全日制路径或官方区间上限规范为3年。官方费用列出国际学生近似金额：INTI International University：约马币59,796令吉。官网费用为近似金额且注明国际学生费用另受销售与服务税影响，需人工复核后才可公开。官网课程结构为英文，本次已生成中文课程数组，术语翻译需人工复核。四语公开本地化尚未完成，本条保持待复核。官方未公布可作为公开上线依据的精确国际学生总学费；官网费用为近似金额或多费用选项且不含 SST，tuitionMYR 按默认采集标准置为 null。官网仅发布近似费用（INTI International University：约 RM 59,796），并注明公布费用不含 SST，国际学生费用另加 6% SST。未发现同一专业、同一国际学生口径的精确总学费。课程和职业中文公开前仍需 Ian 终审。",
+      "officialFeeSourceUrl": "https://newinti.edu.my/programme/doctor-of-philosophy-education-by-research/",
+      "officialSourceUrl": "https://newinti.edu.my/programme/doctor-of-philosophy-education-by-research/",
+      "officialVerifiedAt": "2026-06-24",
+      "publicDisplayStatus": "needs-review",
+      "auditStatus": "needs-manual-review"
+    },
+    {
+      "nameEn": "Doctor of Philosophy (PhD) (Applied Physics) (by Research)",
+      "name": "哲学博士（应用物理）（研究型）",
+      "faculty": "INTI Programmes for Working Professionals",
+      "level": "phd",
+      "duration": 3,
+      "tuitionMYR": null,
+      "intake": [
+        1,
+        5,
+        9
+      ],
+      "ielts": 6.0,
+      "curriculum": [
+        "研究方法论",
+        "开题答辩",
+        "研究论文",
+        "研究指导",
+        "最终学年口试答辩",
+        "毕业论文",
+        "等离子体物理研究领域",
+        "脉冲功率技术研究领域",
+        "凝聚态物理研究领域",
+        "超导材料研究领域",
+        "光子学研究领域"
+      ],
+      "curriculumTotal": 11,
+      "studyMode": "research",
+      "gpaRequirement": "A Master’s Degree in the field or related fields accepted by the University Senate; OR Other qualifications equivalent to a Master’s Degree recognised by the Government of Malaysia; OR Candidates without a related qualification in the field(s) or working experience in the relevant fields must undergo appropriate prerequisite courses determined by the university. Meet any of these English language requirements: A Master’s Degree conducted in English*; OR Credit 6 in MCE / SPM / GCE level; OR MUET Band 4 / TOEFL score of 550 / IELTS score of 6.0;OR Equivalent score from any of the above obtained at undergraduate level at a recognised university* * A copy of the document from the university is required during submission as proof of English proficiency Note: International students are subject to meet entry requirements that reflect similar qualifications and experience as stated above. To find country-specific entry requirements visit our international entry requirement page",
+      "interviewRequired": null,
+      "careerProspects": "科学与技术领域的学术机构、研究机构和国内外组织领导岗位",
+      "otherLanguageReqs": {
+        "toefl": 550,
+        "muet": 4
+      },
+      "otherEntryReqs": [
+        "国际学生须满足与官方页面列出的同等学历和经验要求。",
+        "中国学生资格参照官方国际入学要求页面中的高中、职业技术学校、专科或技工学校等条目。",
+        "部分非相关背景路径可能需要相关工作经验、严格内部评估或先修课程。",
+        "研究型路径可能需要开题、研究指导或论文相关要求。"
+      ],
+      "remarks": "官方学制文本为“4 years (PT), 3 years (FT)”，本次按全日制路径或官方区间上限规范为3年。官方费用列出国际学生近似金额：INTI International University：约马币59,796令吉。官网费用为近似金额且注明国际学生费用另受销售与服务税影响，需人工复核后才可公开。官网课程结构为英文，本次已生成中文课程数组，术语翻译需人工复核。四语公开本地化尚未完成，本条保持待复核。官方未公布可作为公开上线依据的精确国际学生总学费；官网费用为近似金额或多费用选项且不含 SST，tuitionMYR 按默认采集标准置为 null。官网仅发布近似费用（INTI International University：约 RM 59,796），并注明公布费用不含 SST，国际学生费用另加 6% SST。未发现同一专业、同一国际学生口径的精确总学费。课程和职业中文公开前仍需 Ian 终审。",
+      "officialFeeSourceUrl": "https://newinti.edu.my/programme/doctor-of-philosophy-phd-in-applied-physics-by-research-2/",
+      "officialSourceUrl": "https://newinti.edu.my/programme/doctor-of-philosophy-phd-in-applied-physics-by-research-2/",
+      "officialVerifiedAt": "2026-06-24",
+      "publicDisplayStatus": "needs-review",
+      "auditStatus": "needs-manual-review"
+    },
+    {
+      "nameEn": "Doctor of Philosophy (PhD) (Financial Technology) (by Research)",
+      "name": "哲学博士（金融科技）（研究型）",
+      "faculty": "Business",
+      "level": "phd",
+      "duration": 3,
+      "tuitionMYR": null,
+      "intake": [
+        1,
+        5,
+        9
+      ],
+      "ielts": null,
+      "curriculum": [
+        "研究方法论",
+        "开题答辩",
+        "研究论文",
+        "最终学年口试答辩",
+        "六万至十万字博士论文",
+        "会计与金融研究领域",
+        "金融人工智能研究领域",
+        "金融机器学习研究领域",
+        "金融数据科学与战略研究领域",
+        "区块链研究领域"
+      ],
+      "curriculumTotal": 10,
+      "studyMode": "research",
+      "gpaRequirement": "A Master’s Degree in Finance, Banking, Insurance or related field as accepted by the University Senate. International students are required to achieve a minimum score of 6.5 in International English Language Testing System (IELTS) or its equivalent. Note: International students are subject to meet entry requirements that reflect similar qualifications and experience as stated above. To find country-specific entry requirements visit our international entry requirement page",
+      "interviewRequired": null,
+      "careerProspects": "区块链开发者、应用开发者、金融分析师、组织文化推动者、业务发展经理、数据专员",
+      "otherLanguageReqs": null,
+      "otherEntryReqs": [
+        "国际学生须满足与官方页面列出的同等学历和经验要求。",
+        "中国学生资格参照官方国际入学要求页面中的高中、职业技术学校、专科或技工学校等条目。",
+        "研究型路径可能需要开题、研究指导或论文相关要求。"
+      ],
+      "remarks": "官方学制文本为“4 years (PT), 3 years (FT)”，本次按全日制路径或官方区间上限规范为3年。官方费用列出国际学生近似金额：INTI International University：约马币59,796令吉。官网费用为近似金额且注明国际学生费用另受销售与服务税影响，需人工复核后才可公开。官方页面未解析到稳定雅思分数，列表级雅思保持空值。官网课程结构为英文，本次已生成中文课程数组，术语翻译需人工复核。四语公开本地化尚未完成，本条保持待复核。官方未公布可作为公开上线依据的精确国际学生总学费；官网费用为近似金额或多费用选项且不含 SST，tuitionMYR 按默认采集标准置为 null。官网仅发布近似费用（INTI International University：约 RM 59,796），并注明公布费用不含 SST，国际学生费用另加 6% SST。未发现同一专业、同一国际学生口径的精确总学费。课程和职业中文公开前仍需 Ian 终审。",
+      "officialFeeSourceUrl": "https://newinti.edu.my/programme/doctor-of-philosophy-phd-financial-technology/",
+      "officialSourceUrl": "https://newinti.edu.my/programme/doctor-of-philosophy-phd-financial-technology/",
+      "officialVerifiedAt": "2026-06-24",
+      "publicDisplayStatus": "needs-review",
+      "auditStatus": "needs-manual-review"
+    },
+    {
+      "nameEn": "Doctor of Philosophy (PhD) (Information Systems) (by Research)",
+      "name": "哲学博士（信息系统）（研究型）",
+      "faculty": "Computing & IT",
+      "level": "phd",
+      "duration": 3,
+      "tuitionMYR": null,
+      "intake": [
+        1,
+        5,
+        9
+      ],
+      "ielts": 6.0,
+      "curriculum": [
+        "研究方法论",
+        "开题答辩",
+        "研究论文",
+        "研究指导",
+        "至少四万字博士论文",
+        "最终学年口试答辩",
+        "物联网研究领域",
+        "搜索引擎优化研究领域",
+        "知识管理系统研究领域",
+        "云计算研究领域",
+        "商业分析研究领域",
+        "网络安全研究领域",
+        "软件工程研究领域"
+      ],
+      "curriculumTotal": 13,
+      "studyMode": "research",
+      "gpaRequirement": "A Master’s Degree (Level 7, MQF) in Computing or related fields as accepted by the University Senate; OR A Master’s Degree (Level 7, MQF) in non-Computing fields with a minimum of FIVE (5) years of working experience in Computing or related fields must undergo appropriate prerequisite courses as determined by the university; OR A Master’s Degree (Level 7, MQF) in non-Computing fields with less than FIVE (5) years of working experience in Computing or related fields must undergo a thorough rigorous assessment as determined by the university to identify the appropriate prerequisite courses that equivalent to their working experience in the Computing or related fields; OR Other qualifications equivalent to a Master’s Degree (Level 7, MQF) in Computing or related fields recognised by the Government of Malaysia as equivalent to the above requirement. Meet any of one the following English language requirements: A Master’s Degree conducted in English*; OR IELTS score of 6.0; OR Equivalent score from any of the above obtained at undergraduate level at a recognised university*. * A copy of the document from the university is required during submission as a part during submission as a proof of English proficiency Note: International students are subject to meet entry requirements that reflect similar qualifications and experience as stated above. To find country-specific entry requirements visit our international entry requirement page",
+      "interviewRequired": null,
+      "careerProspects": "高校学术岗位、政府部门高级岗位、公私营机构高级岗位、信息系统咨询岗位",
+      "otherLanguageReqs": null,
+      "otherEntryReqs": [
+        "国际学生须满足与官方页面列出的同等学历和经验要求。",
+        "中国学生资格参照官方国际入学要求页面中的高中、职业技术学校、专科或技工学校等条目。",
+        "部分非相关背景路径可能需要相关工作经验、严格内部评估或先修课程。",
+        "研究型路径可能需要开题、研究指导或论文相关要求。"
+      ],
+      "remarks": "官方学制文本为“4 years (PT), 3 years (FT)”，本次按全日制路径或官方区间上限规范为3年。官方费用列出国际学生近似金额：INTI International University：约马币59,796令吉。官网费用为近似金额且注明国际学生费用另受销售与服务税影响，需人工复核后才可公开。官网课程结构为英文，本次已生成中文课程数组，术语翻译需人工复核。四语公开本地化尚未完成，本条保持待复核。官方未公布可作为公开上线依据的精确国际学生总学费；官网费用为近似金额或多费用选项且不含 SST，tuitionMYR 按默认采集标准置为 null。官网仅发布近似费用（INTI International University：约 RM 59,796），并注明公布费用不含 SST，国际学生费用另加 6% SST。未发现同一专业、同一国际学生口径的精确总学费。课程和职业中文公开前仍需 Ian 终审。",
+      "officialFeeSourceUrl": "https://newinti.edu.my/programme/doctor-of-philosophy-phd-information-systems/",
+      "officialSourceUrl": "https://newinti.edu.my/programme/doctor-of-philosophy-phd-information-systems/",
+      "officialVerifiedAt": "2026-06-24",
+      "publicDisplayStatus": "needs-review",
+      "auditStatus": "needs-manual-review"
+    },
+    {
+      "nameEn": "Doctor of Philosophy (PhD) (Innovation and Technology) (by Research)",
+      "name": "哲学博士（创新与技术）（研究型）",
+      "faculty": "INTI Programmes for Working Professionals",
+      "level": "phd",
+      "duration": 3,
+      "tuitionMYR": null,
+      "intake": [
+        1,
+        5,
+        9
+      ],
+      "ielts": 5.0,
+      "curriculum": [
+        "研究方法论",
+        "开题答辩",
+        "研究论文",
+        "研究指导",
+        "最终学年口试答辩",
+        "毕业论文",
+        "逆向工程研究领域",
+        "智能制造研究领域",
+        "流程与生产优化研究领域",
+        "数据数字化研究领域",
+        "工业与环境技术研究领域",
+        "数字建造研究领域",
+        "增材制造研究领域",
+        "数据挖掘研究领域",
+        "人工智能研究领域",
+        "智慧医疗研究领域"
+      ],
+      "curriculumTotal": 16,
+      "studyMode": "research",
+      "gpaRequirement": "A Master’s Degree in the field or related fields accepted by the University Senate; OR Other qualifications equivalent to a Master’s Degree recognised by the Government of Malaysia; OR Candidates without a related qualification in the field(s) or working experience in the relevant fields must undergo appropriate prerequisite courses determined by the university. Meet any of the following English language requirements: A Master’s Degree conducted in English*; OR Credit 6 in MCE/SPM/GCE level; MUET Band 3.5 / TOEFL score of 500 / IELTS score of 5.0; OR Equivalent score from any of the above obtained at undergraduate level at a recognised university* * A copy of document from the university is required during submission as a proof of English proficiency Note: International students are subject to meet entry requirements that reflect similar qualifications and experience as stated above. To find country-specific entry requirements visit our international entry requirement page",
+      "interviewRequired": null,
+      "careerProspects": null,
+      "otherLanguageReqs": {
+        "toefl": 500,
+        "muet": 3.5
+      },
+      "otherEntryReqs": [
+        "国际学生须满足与官方页面列出的同等学历和经验要求。",
+        "中国学生资格参照官方国际入学要求页面中的高中、职业技术学校、专科或技工学校等条目。",
+        "部分非相关背景路径可能需要相关工作经验、严格内部评估或先修课程。",
+        "研究型路径可能需要开题、研究指导或论文相关要求。"
+      ],
+      "remarks": "官方学制文本为“4 years (PT), 3 years (FT)”，本次按全日制路径或官方区间上限规范为3年。官方费用列出国际学生近似金额：INTI International University：约马币59,796令吉。官网费用为近似金额且注明国际学生费用另受销售与服务税影响，需人工复核后才可公开。官网课程结构为英文，本次已生成中文课程数组，术语翻译需人工复核。四语公开本地化尚未完成，本条保持待复核。官方未公布可作为公开上线依据的精确国际学生总学费；官网费用为近似金额或多费用选项且不含 SST，tuitionMYR 按默认采集标准置为 null。官网仅发布近似费用（INTI International University：约 RM 59,796），并注明公布费用不含 SST，国际学生费用另加 6% SST。未发现同一专业、同一国际学生口径的精确总学费。课程和职业中文公开前仍需 Ian 终审。官方职业方向未公布或中文字段仍需人工复核，careerProspects 保持 null。",
+      "officialFeeSourceUrl": "https://newinti.edu.my/programme/doctor-of-philosophy-phd-innovation-and-technology-2/",
+      "officialSourceUrl": "https://newinti.edu.my/programme/doctor-of-philosophy-phd-innovation-and-technology-2/",
+      "officialVerifiedAt": "2026-06-24",
+      "publicDisplayStatus": "needs-review",
+      "auditStatus": "needs-manual-review"
+    },
+    {
+      "nameEn": "Doctor of Philosophy (PhD) (Management) (by Research)",
+      "name": "哲学博士（管理）（研究型）",
+      "faculty": "Business",
+      "level": "phd",
+      "duration": 3,
+      "tuitionMYR": null,
+      "intake": [
+        1,
+        5,
+        9
+      ],
+      "ielts": 6.0,
+      "curriculum": [
+        "研究方法论",
+        "开题答辩",
+        "研究论文",
+        "研究指导",
+        "最终学年口试答辩",
+        "六万至十万字博士论文",
+        "商业管理研究领域",
+        "市场营销研究领域",
+        "人力资源管理研究领域",
+        "会计与金融研究领域",
+        "创业研究领域",
+        "产业与组织心理学研究领域",
+        "教育管理研究领域",
+        "新兴商业学科研究领域"
+      ],
+      "curriculumTotal": 14,
+      "studyMode": "research",
+      "gpaRequirement": "A Master’s Degree in related fields as accepted by the University Senate; OR A Master’s Degree in nonrelated fields as accepted by the Senate, subject to having relevant working experience and rigorous internal assessment; OR A Master’s Degree in nonrelated fields as accepted by the Senate and without relevant working experience, subject to passing prerequisite courses; OR Other qualifications equivalent to a Master’s Degree recognised by the Malaysian Government. Meet any of these English language requirements: A Master’s Degree conducted in English*; OR Credit 6 in MCE / SPM / GCE level; OR MUET Band 4 / TOEFL score of 550 / IELTS score of 6.0; OR Equivalent score from any of the above obtained at undergraduate level at a recognised university* *A copy of the document from the university is required during submission as a proof of English proficiency. Note: International students are subject to meet entry requirements that reflect similar qualifications and experience as stated above. To find country-specific entry requirements visit our international entry requirement page",
+      "interviewRequired": null,
+      "careerProspects": "高校学术岗位、政府部门、公私营机构、商业研究与管理咨询岗位",
+      "otherLanguageReqs": {
+        "toefl": 550,
+        "muet": 4
+      },
+      "otherEntryReqs": [
+        "国际学生须满足与官方页面列出的同等学历和经验要求。",
+        "中国学生资格参照官方国际入学要求页面中的高中、职业技术学校、专科或技工学校等条目。",
+        "部分非相关背景路径可能需要相关工作经验、严格内部评估或先修课程。",
+        "研究型路径可能需要开题、研究指导或论文相关要求。"
+      ],
+      "remarks": "官方学制文本为“4 years (PT), 3 years (FT)”，本次按全日制路径或官方区间上限规范为3年。官方费用列出国际学生近似金额：INTI International University：约马币59,796令吉。官网费用为近似金额且注明国际学生费用另受销售与服务税影响，需人工复核后才可公开。官网课程结构为英文，本次已生成中文课程数组，术语翻译需人工复核。四语公开本地化尚未完成，本条保持待复核。官方未公布可作为公开上线依据的精确国际学生总学费；官网费用为近似金额或多费用选项且不含 SST，tuitionMYR 按默认采集标准置为 null。官网仅发布近似费用（INTI International University：约 RM 59,796），并注明公布费用不含 SST，国际学生费用另加 6% SST。未发现同一专业、同一国际学生口径的精确总学费。课程和职业中文公开前仍需 Ian 终审。",
+      "officialFeeSourceUrl": "https://newinti.edu.my/programme/doctor-of-philosophy-phd-management/",
+      "officialSourceUrl": "https://newinti.edu.my/programme/doctor-of-philosophy-phd-management/",
+      "officialVerifiedAt": "2026-06-24",
+      "publicDisplayStatus": "needs-review",
+      "auditStatus": "needs-manual-review"
+    },
+    {
+      "nameEn": "Doctor of Philosophy (PhD) in Data Science (by Research)",
+      "name": "哲学博士（数据科学）（研究型）",
+      "faculty": "INTI Programmes for Working Professionals",
+      "level": "phd",
+      "duration": 3,
+      "tuitionMYR": null,
+      "intake": [
+        1,
+        5,
+        9
+      ],
+      "ielts": 6.0,
+      "curriculum": [
+        "研究方法论",
+        "开题答辩",
+        "研究论文",
+        "研究指导",
+        "至少四万字博士论文",
+        "最终学年口试答辩"
+      ],
+      "curriculumTotal": 6,
+      "studyMode": "research",
+      "gpaRequirement": "A Master’s Degree (Level 7, MQF) in Computing or related fields as accepted by the University Senate; OR A Master’s Degree (Level 7, MQF) in non-Computing fields with a minimum of FIVE (5) years of working experience in Computing or related fields must undergo appropriate prerequisite courses as determined by the university; OR A Master’s Degree (Level 7, MQF) in non-Computing fields with less than FIVE (5) years of working experience in Computing or related fields must undergo a thorough rigorous assessment as determined by the university to identify the appropriate prerequisite courses that equivalent to their working experience in the Computing or related fields; OR Other qualifications equivalent to a Master’s Degree (Level 7, MQF) in Computing or related fields recognised by the Government of Malaysia as equivalent to the above requirement. Meet any of one the following English language requirements: A Master’s Degree conducted in English*; or Credit 6 in MCE / SPM / GCE level; or IELTS score of 6.0; or Equivalent score from any of the above obtained at undergraduate level at a recognised university*. * A copy of the document from the university is required during submission as proof of English proficiency Note: International students are subject to meet entry requirements that reflect similar qualifications and experience as stated above. To find country-specific entry requirements visit our international entry requirement page",
+      "interviewRequired": null,
+      "careerProspects": "数据分析师、商业分析师、数据科学家、机器学习工程师、机器学习科学家、应用架构师、企业架构师、数据架构师、基础设施架构师、数据工程师、合规专员、商业研究顾问",
+      "otherLanguageReqs": null,
+      "otherEntryReqs": [
+        "国际学生须满足与官方页面列出的同等学历和经验要求。",
+        "中国学生资格参照官方国际入学要求页面中的高中、职业技术学校、专科或技工学校等条目。",
+        "部分非相关背景路径可能需要相关工作经验、严格内部评估或先修课程。",
+        "研究型路径可能需要开题、研究指导或论文相关要求。"
+      ],
+      "remarks": "官方学制文本为“4 years (PT), 3 years (FT)”，本次按全日制路径或官方区间上限规范为3年。官方费用列出国际学生近似金额：INTI International University：约马币59,796令吉。官网费用为近似金额且注明国际学生费用另受销售与服务税影响，需人工复核后才可公开。官网课程结构为英文，本次已生成中文课程数组，术语翻译需人工复核。四语公开本地化尚未完成，本条保持待复核。官方未公布可作为公开上线依据的精确国际学生总学费；官网费用为近似金额或多费用选项且不含 SST，tuitionMYR 按默认采集标准置为 null。官网仅发布近似费用（INTI International University：约 RM 59,796），并注明公布费用不含 SST，国际学生费用另加 6% SST。未发现同一专业、同一国际学生口径的精确总学费。课程和职业中文公开前仍需 Ian 终审。",
+      "officialFeeSourceUrl": "https://newinti.edu.my/programme/doctor-of-philosophy-phd-in-data-science/",
+      "officialSourceUrl": "https://newinti.edu.my/programme/doctor-of-philosophy-phd-in-data-science/",
+      "officialVerifiedAt": "2026-06-24",
+      "publicDisplayStatus": "needs-review",
+      "auditStatus": "needs-manual-review"
+    }
+  ],
+  "exception_queue": [
+    {
+      "type": "fee-authority-ambiguous",
+      "severity": "high",
+      "affectedProgramme": null,
+      "affectedField": "tuitionMYR",
+      "description": "INTI 官方页面当前只发布近似费用或多费用选项，并注明国际学生费用另加 6% SST；默认 v2 calibrated 输出不得把近似金额写成精确总学费。",
+      "evidence": "https://newinti.edu.my/academic-programmes/postgraduate/doctorate/",
+      "recommendation": "保持 needs-review；除非 INTI 官方提供精确总学费或 Ian 批准近似费用展示策略，否则不得转 ready。",
+      "status": "open",
+      "createdAt": "2026-06-24"
+    }
+  ],
+  "collection_summary": {
+    "totalProgrammesFound": 10,
+    "programmesCollected": 10,
+    "programmesSkipped": [],
+    "fieldsUsingMissingMarkers": [
+      {
+        "programmeIndex": 1,
+        "nameEn": "Doctor of Business Administration",
+        "field": "tuitionMYR",
+        "marker": null
+      },
+      {
+        "programmeIndex": 2,
+        "nameEn": "Doctor of Business Administration (Online Learning)",
+        "field": "tuitionMYR",
+        "marker": null
+      },
+      {
+        "programmeIndex": 3,
+        "nameEn": "Doctor of Education",
+        "field": "tuitionMYR",
+        "marker": null
+      },
+      {
+        "programmeIndex": 4,
+        "nameEn": "Doctor of Philosophy (Education) (by Research)",
+        "field": "tuitionMYR",
+        "marker": null
+      },
+      {
+        "programmeIndex": 5,
+        "nameEn": "Doctor of Philosophy (PhD) (Applied Physics) (by Research)",
+        "field": "tuitionMYR",
+        "marker": null
+      },
+      {
+        "programmeIndex": 6,
+        "nameEn": "Doctor of Philosophy (PhD) (Financial Technology) (by Research)",
+        "field": "ielts",
+        "marker": null
+      },
+      {
+        "programmeIndex": 6,
+        "nameEn": "Doctor of Philosophy (PhD) (Financial Technology) (by Research)",
+        "field": "tuitionMYR",
+        "marker": null
+      },
+      {
+        "programmeIndex": 7,
+        "nameEn": "Doctor of Philosophy (PhD) (Information Systems) (by Research)",
+        "field": "tuitionMYR",
+        "marker": null
+      },
+      {
+        "programmeIndex": 8,
+        "nameEn": "Doctor of Philosophy (PhD) (Innovation and Technology) (by Research)",
+        "field": "tuitionMYR",
+        "marker": null
+      },
+      {
+        "programmeIndex": 8,
+        "nameEn": "Doctor of Philosophy (PhD) (Innovation and Technology) (by Research)",
+        "field": "careerProspects",
+        "marker": null
+      },
+      {
+        "programmeIndex": 9,
+        "nameEn": "Doctor of Philosophy (PhD) (Management) (by Research)",
+        "field": "tuitionMYR",
+        "marker": null
+      },
+      {
+        "programmeIndex": 10,
+        "nameEn": "Doctor of Philosophy (PhD) in Data Science (by Research)",
+        "field": "tuitionMYR",
+        "marker": null
+      }
+    ],
+    "qualityGateResults": {
+      "ready": 0,
+      "needsReview": 10,
+      "needsReviewItems": [
+        {
+          "programmeIndex": 1,
+          "nameEn": "Doctor of Business Administration",
+          "failedChecks": [
+            "Q5",
+            "Q11"
+          ],
+          "details": "官方未公布精确国际学生总学费；字段保持 needs-review。"
+        },
+        {
+          "programmeIndex": 2,
+          "nameEn": "Doctor of Business Administration (Online Learning)",
+          "failedChecks": [
+            "Q5",
+            "Q11"
+          ],
+          "details": "官方未公布精确国际学生总学费；字段保持 needs-review。"
+        },
+        {
+          "programmeIndex": 3,
+          "nameEn": "Doctor of Education",
+          "failedChecks": [
+            "Q5",
+            "Q11"
+          ],
+          "details": "官方未公布精确国际学生总学费；字段保持 needs-review。"
+        },
+        {
+          "programmeIndex": 4,
+          "nameEn": "Doctor of Philosophy (Education) (by Research)",
+          "failedChecks": [
+            "Q5",
+            "Q11"
+          ],
+          "details": "官方未公布精确国际学生总学费；字段保持 needs-review。"
+        },
+        {
+          "programmeIndex": 5,
+          "nameEn": "Doctor of Philosophy (PhD) (Applied Physics) (by Research)",
+          "failedChecks": [
+            "Q5",
+            "Q11"
+          ],
+          "details": "官方未公布精确国际学生总学费；字段保持 needs-review。"
+        },
+        {
+          "programmeIndex": 6,
+          "nameEn": "Doctor of Philosophy (PhD) (Financial Technology) (by Research)",
+          "failedChecks": [
+            "Q5",
+            "Q7",
+            "Q11"
+          ],
+          "details": "官方未公布精确国际学生总学费；字段保持 needs-review。 IELTS 未能从官方来源稳定确认。"
+        },
+        {
+          "programmeIndex": 7,
+          "nameEn": "Doctor of Philosophy (PhD) (Information Systems) (by Research)",
+          "failedChecks": [
+            "Q5",
+            "Q11"
+          ],
+          "details": "官方未公布精确国际学生总学费；字段保持 needs-review。"
+        },
+        {
+          "programmeIndex": 8,
+          "nameEn": "Doctor of Philosophy (PhD) (Innovation and Technology) (by Research)",
+          "failedChecks": [
+            "Q5",
+            "Q11"
+          ],
+          "details": "官方未公布精确国际学生总学费；字段保持 needs-review。"
+        },
+        {
+          "programmeIndex": 9,
+          "nameEn": "Doctor of Philosophy (PhD) (Management) (by Research)",
+          "failedChecks": [
+            "Q5",
+            "Q11"
+          ],
+          "details": "官方未公布精确国际学生总学费；字段保持 needs-review。"
+        },
+        {
+          "programmeIndex": 10,
+          "nameEn": "Doctor of Philosophy (PhD) in Data Science (by Research)",
+          "failedChecks": [
+            "Q5",
+            "Q11"
+          ],
+          "details": "官方未公布精确国际学生总学费；字段保持 needs-review。"
+        }
+      ]
+    }
+  }
+}

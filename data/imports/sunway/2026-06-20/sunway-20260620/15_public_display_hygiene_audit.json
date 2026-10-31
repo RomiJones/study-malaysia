@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "status": "passed",
+  "checks": {
+    "noRawEnglishParagraphsOnChinesePages": "passed",
+    "noCrawlerDebugProcessNotes": "passed",
+    "noAuditLabelsOrLocalPaths": "passed",
+    "descriptionsAreStudentFacing": "passed",
+    "languageAcademicFeeInterviewSeparated": "passed",
+    "courseAndCareerLocalizedOrFlagged": "passed"
+  },
+  "samples": [
+    "Candidate rows are ready for controlled review import, while review-only database import remains non-public until publication approval.",
+    "Official English overview text is retained in evidence fields; zh-CN, zh-TW and ms summary fields are generated from stable official facts rather than raw English dumps."
+  ],
+  "issues": []
+}

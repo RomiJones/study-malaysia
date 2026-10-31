@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "auditId": "unm-official-audit-public-display-hygiene-2026-06-21",
+  "status": "passed",
+  "universityCode": "UNM",
+  "currentAsOf": "2026-06-21",
+  "sourceInputs": [
+    "08_candidate_dataset.json",
+    "10_display_parity_report.json",
+    "post_import_display_audit.json",
+    "tests/api/unm-official-audit-import.test.ts"
+  ],
+  "checks": {
+    "studentFacingChineseNoRawEnglishDump": "passed",
+    "traditionalChineseNoSimplifiedLeakage": "passed",
+    "localPathLeakage": "passed",
+    "crawlerParserProcessLeakage": "passed",
+    "auditDebugTextNotInListRows": "passed",
+    "listDetailTuitionParity": "passed",
+    "levelTabsIncludePgCertPgDip": "passed",
+    "reviewArchivedUnavailableLeakage": "passed",
+    "fourLocaleShape": "passed",
+    "officialSourceLinksPresent": "passed"
+  },
+  "summary": {
+    "recordCount": 81,
+    "displaySurfaces": 5,
+    "browserLocales": [
+      "zh-CN",
+      "zh-TW",
+      "en",
+      "ms"
+    ],
+    "consoleMessageCount": 0,
+    "publicApiProgramCount": 81,
+    "scanHitCount": 0
+  },
+  "evidence": {
+    "displayParityReport": "10_display_parity_report.json",
+    "postImportDisplayAudit": "post_import_display_audit.json",
+    "importerRegressionTest": "tests/api/unm-official-audit-import.test.ts"
+  },
+  "issues": []
+}

@@ -1,0 +1,142 @@
+{
+  "schemaVersion": 2,
+  "officialDomains": [
+    "university.segi.edu.my",
+    "segi.edu.my"
+  ],
+  "scope": {
+    "universityCode": "SEGI",
+    "institution": "SEGi University",
+    "collectionScope": "programmes",
+    "levels": [
+      "bachelor",
+      "master",
+      "phd"
+    ],
+    "applicantScope": "public programme display / international counselling pending full eligibility audit",
+    "academicSession": "2026 fee sheet + current official web pages as of 2026-06-17"
+  },
+  "authorization": "publish-source-link-correction",
+  "incident": {
+    "type": "public-programme-detail-source-link-coverage",
+    "reportedProblem": "Programme detail source links showed the local PDF path supplied by the user.",
+    "fieldClass": [
+      "officialSourceUrl",
+      "officialEntryRequirementSourceUrl",
+      "officialAccreditationSourceUrl",
+      "officialFeeSourceUrl",
+      "sourceUrls"
+    ],
+    "fixScope": "All 49 SEGi ready degree programmes in the local database."
+  },
+  "counts": {
+    "officialDirectoryOccurrences": 90,
+    "officialDegreeCandidates": 76,
+    "currentReadyProgrammes": 49,
+    "sourceLinksUpdated": 49,
+    "officialCourseLinksInDb": 49,
+    "publicLocalPathSourceRows": 0,
+    "liveOfficialLinksChecked": 49,
+    "liveOfficialLinksReachable": 49,
+    "statusPartitions": [
+      {
+        "publicDisplayStatus": "needs-review",
+        "officialSourceStatus": "missing-source",
+        "count": 1
+      },
+      {
+        "publicDisplayStatus": "needs-review",
+        "officialSourceStatus": "needs-review",
+        "count": 3
+      },
+      {
+        "publicDisplayStatus": "ready",
+        "officialSourceStatus": "needs-review",
+        "count": 13
+      },
+      {
+        "publicDisplayStatus": "ready",
+        "officialSourceStatus": "official-verified",
+        "count": 36
+      }
+    ],
+    "byLevelOfficialCandidates": {
+      "bachelor": 39,
+      "master": 28,
+      "phd": 9
+    },
+    "byLevelCurrentReady": {
+      "bachelor": 27,
+      "master": 17,
+      "phd": 5
+    }
+  },
+  "coverage": {
+    "databasePublicSourceLocalPathLeak": true,
+    "apiPublicSourceLocalPathLeak": true,
+    "apiOfficialCourseRows": 49,
+    "apiFeeSourceEmptyRows": 49,
+    "uiSourcePathUsesApiFields": true,
+    "allMappedLinksReachable": true
+  },
+  "sources": {
+    "programmeSearch": "https://university.segi.edu.my/course-search/",
+    "officialDetailPagesCached": 90,
+    "sourceCacheIndex": "source_cache_index.json",
+    "sourceLinkCoverageAudit": "source_link_coverage_audit.json"
+  },
+  "artifacts": [
+    "run_contract.json",
+    "level_manifest.json",
+    "source_cache_index.json",
+    "candidate_dataset.json",
+    "current_official_diff_audit.json",
+    "exception_queue.json",
+    "pre_import_gap_audit.json",
+    "post_import_display_audit.json",
+    "source_link_coverage_audit.json",
+    "api_ui_source_link_audit.json",
+    "source_link_delivery_envelope.json"
+  ],
+  "verification": {
+    "commandsPassed": [
+      "npm run test -- tests/api/segi-seed-data.test.ts",
+      "npm --workspace @studymy/api run build",
+      "npm --workspace @studymy/api run sync:segi:sources",
+      "npm run test -- tests/api/segi-seed-data.test.ts tests/api/mappers.test.ts",
+      "npm run test -- tests/api/segi-seed-data.test.ts tests/api/mappers.test.ts tests/web/format.test.ts",
+      "npm --workspace @studymy/web run build",
+      "python3 live official source-link check -> 49/49 HTTP 200",
+      "public API /api/universities/segi-university -> 49 programmes, localPathLeak=false"
+    ],
+    "browserUiGate": {
+      "status": "blocked-by-browser-plugin",
+      "detail": "The in-app browser tab crashed while navigating to localhost:5173 and further DOM reads were rejected by the browser plugin URL policy. No workaround browser surface was used. API and frontend source-display path checks passed instead."
+    }
+  },
+  "exceptions": {
+    "review": [
+      "SEGI-BEPR",
+      "SEGI-BAHM",
+      "SEGI-BQS",
+      "SEGI-BPHARM",
+      "SEGI-MBA-5PLUS1",
+      "SEGI-MED-CW",
+      "SEGI-MA",
+      "SEGI-MIL",
+      "SEGI-MIT-CW",
+      "SEGI-MSC-MGMT",
+      "SEGI-MIT-RES",
+      "SEGI-MENG-RES",
+      "SEGI-MMED"
+    ],
+    "blocking": [],
+    "note": "The review list contains title-mapping differences between the 2026 fee sheet names and current SEGi official page titles. Links are official and reachable, but identity wording remains marked needs-review."
+  },
+  "rollback": {
+    "backupPath": "/Users/ian/Desktop/dev/study-malaysia/apps/api/tmp/backups/segi-before-source-link-sync-2026-06-16T16-24-00-837Z.json",
+    "restorePlan": "Restore SEGi university/program rows from the scoped JSON backup if source-link correction must be reverted."
+  },
+  "decision": "published-with-browser-gate-blocked",
+  "notionStatus": "Real Notion is not writable in this session; local Chinese development note was updated."
+}

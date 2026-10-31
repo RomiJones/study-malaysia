@@ -1,0 +1,705 @@
+{
+  "schemaVersion": 1,
+  "createdAt": "2026-06-29T14:54:56.106Z",
+  "institution": {
+    "code": "IIUM",
+    "shortName": "IIUM",
+    "name": "International Islamic University Malaysia",
+    "slug": "international-islamic-university-malaysia"
+  },
+  "authorization": "operator-requested-publication",
+  "sourceInputs": {
+    "undergraduateAudit": "audits/IIUM_audit_undergraduate_20260629_verified_20260629_r16.json",
+    "sourceAuditSafeToImport": false,
+    "sourceAuditReason": "StudyMY audit JSON stays safe_to_import=false by validator contract; this importer publishes only after explicit operator command."
+  },
+  "writePolicy": {
+    "importer": "apps/api/src/db/import-iium-undergraduate-official.ts",
+    "mode": "publish-undergraduate",
+    "upsertPrefix": "iium-undergraduate-20260629-",
+    "universityRow": "upsert by code IIUM or slug international-islamic-university-malaysia",
+    "programmeRows": "upsert 58 current IIUM undergraduate public rows and archive legacy visible IIUM bachelor rows only",
+    "preserveOtherLevels": true,
+    "transactional": true,
+    "backupRequired": true
+  },
+  "publicationGate": {
+    "result": "passed",
+    "rules": [
+      "58 ready PASS programme rows",
+      "Chinese programme names",
+      "Chinese faculty names",
+      "official international tuition rows",
+      "numeric duration years",
+      "official source URLs",
+      "official-unpublished language/career fields displayed as official-unpublished, not inferred"
+    ]
+  },
+  "acceptedGaps": {
+    "pendingIssues": [
+      {
+        "issue_id": "PI-IIUM-2026-BASELINE-001",
+        "field": "programme_baseline",
+        "programme": null,
+        "reason": "Baseline confidence is medium because no public central choice list could be extracted; official Kulliyyah pages were combined.",
+        "status": "accepted_gap",
+        "created_at": "2026-06-29",
+        "last_checked": "2026-06-29",
+        "resolution_note": "Ian accepts the 58-row IIUM undergraduate baseline assembled from official IIUM central/Kulliyyah pages because no public central eAdmission choice enumeration is available.",
+        "programmeIndex": null,
+        "programmeNameEn": null,
+        "issueType": "baseline-confidence-medium",
+        "priority": "P3",
+        "description": "Baseline confidence remains medium because no public central IIUM undergraduate choice list could be extracted; 58-row baseline is assembled from official Kulliyyah pages and official admissions/finance evidence.",
+        "unresolvable_by_bot": false,
+        "repairAttempts": 1,
+        "requiresIanDecision": false,
+        "suggestedAction": "Cross-check against authenticated eAdmission choices or an official IIUM programme catalogue if Ian can provide access.",
+        "evidence": [
+          {
+            "sourceUrl": "https://www.iium.edu.my/v2/academics/",
+            "value": "Central Kulliyyah directory"
+          },
+          {
+            "sourceUrl": "https://eadmission.iium.edu.my/index.php/student/eas_login",
+            "value": "Public eAdmission login does not expose full programme choices without application context"
+          }
+        ],
+        "accepted_by": "Ian",
+        "accepted_at": "2026-06-29"
+      },
+      {
+        "issue_id": "PI-IIUM-2026-FEE-001",
+        "field": "tuitionMYR",
+        "programme": null,
+        "reason": "Resolved by Ian-approved fee source priority: use official programme page direct fee first; if no direct programme-page fee, use IIUM Finance official international bachelor fee table/PDF.",
+        "status": "resolved",
+        "created_at": "2026-06-29",
+        "last_checked": "2026-06-29",
+        "resolution_note": "Resolved in r10 by applying Ian's explicit decision to adopt the official IIUM Finance Bachelor Degree Programmes (International) table/PDF as fallback for programme pages without direct fee amounts. LLBS tuitionMYR set to RM 90,865 from the current AIKOL row; 5-year programme duration vs 4-year Finance row retained as evidence note.",
+        "programmeIndex": null,
+        "programmeNameEn": null,
+        "issueType": "strict-fee-gate-failed",
+        "priority": "P2",
+        "description": "All repairable non-LLBS fee gaps have been fixed. The only remaining fee gap is AIKOL LLBS (#12): the AIKOL programme page states LLBS/Double Degree normally takes five years, but the current official Finance UG International table and older AIKOL international Finance PDF only expose a 4-year AIKOL Bachelor Degree fee row. No separate 5-year LLBS fee was found after Finance media search and AIKOL page/API search.",
+        "unresolvable_by_bot": false,
+        "repairAttempts": 2,
+        "requiresIanDecision": false,
+        "suggestedAction": "No further tuition repair required unless IIUM later publishes a separate LLBS-specific international fee.",
+        "evidence": [
+          {
+            "sourceUrl": "https://division.iium.edu.my/finance/3d-flip-book/bachelor-degree-programmes-international/",
+            "value": "Official IIUM Finance Bachelor Degree Programmes (International) page confirmed by Ian as fallback fee source."
+          },
+          {
+            "sourceUrl": "https://division.iium.edu.my/finance/wp-content/uploads/sites/6/2026/05/2.4.2-UG-International-After-Discount-Sem-1-2024-2025-1.7-Mar26.pdf",
+            "value": "Current AIKOL row: DURATION 4 YEARS; Tuition RM 67,200.00; TOTAL RM 90,865.00; SST excluded."
+          },
+          {
+            "sourceUrl": "https://kulliyyah.iium.edu.my/aikol/programmes/",
+            "value": "AIKOL programme page states LLBS/Double Degree stream normally takes five years and requires 210 credit hours; no direct fee amount found."
+          }
+        ],
+        "resolved_by_ian_decision": true
+      },
+      {
+        "issue_id": "PI-IIUM-2026-CURRICULUM-001",
+        "field": "curriculum",
+        "programme": null,
+        "reason": "6 creditHours fields remain null after r15: AHAS RKUD 134/132 variants; KAHS Dietetics page/MQA conflict; KAHS Physiotherapy no scalar; KAHS Medical Imaging 140/142 range; KON Nursing no scalar; KOM MBBS no scalar credit (guidebook totals found are assessment marks).",
+        "status": "accepted_gap",
+        "created_at": "2026-06-29",
+        "last_checked": "2026-06-29",
+        "resolution_note": "Ian accepts current published curriculum summaries for launch; detailed semester-by-semester curriculum and unresolved credit-hour refinements can be completed later.",
+        "programmeIndex": null,
+        "programmeNameEn": null,
+        "issueType": "curriculum-completeness-not-public-ready",
+        "priority": "P4",
+        "description": "r15 repaired KSTCL ACOM and ECOM creditHours from official non-Malaysian student programme structure PDFs. 6 creditHours fields remain unresolved due to official path variants, official range/conflict evidence, no public scalar total credit, or non-credit assessment totals.",
+        "unresolvable_by_bot": false,
+        "repairAttempts": 2,
+        "requiresIanDecision": false,
+        "suggestedAction": "Run a later targeted curriculum completion pass if public-ready detailed curriculum is required.",
+        "evidence": [
+          {
+            "sourceUrl": "https://drive.google.com/file/d/12na4OXxD4s9NoJsJo8M4h5qPFVR5PnxJ/view",
+            "value": "Bachelor of Science (Architectural Studies) (Honours): 124 credit hours (Programme Structure ARCH 231 & Above (502 Senate Meeting) (v2).pdf)"
+          },
+          {
+            "sourceUrl": "https://drive.google.com/file/d/10GT6qh3RRgeozOqaVOCQ2-1WF5t5YxD8/view",
+            "value": "Bachelor of Applied Arts and Design (Honours): 138 credit hours (Programme Structure AAD 211 & Above (479TH Senate Meeting).pdf)"
+          },
+          {
+            "sourceUrl": "https://drive.google.com/file/d/1X6VgI_N9q4w7DsUnFsBfeZfhNEcb4MiX/view",
+            "value": "Bachelor of Interior Architecture (Honours): 128 credit hours (Programme Structure BINA 251 & Above (502 Senate Meeting).pdf)"
+          },
+          {
+            "sourceUrl": "https://drive.google.com/file/d/114LTwDFh6When3ycI-UDRlVW4ZLdufGf/view",
+            "value": "Bachelor of Landscape Architecture (Honours): 132 credit hours (Programme Structure ALA 231 & Above (502 Senate Meeting).pdf)"
+          },
+          {
+            "sourceUrl": "https://drive.google.com/file/d/1b7P4bWqsKga6tqJSGczWKJvsU6k6f8fx/view",
+            "value": "Bachelor of Quantity Surveying (Honours): 142 credit hours (Programme Structure AQS 211 & Above (475th Senate Meeting).pdf)"
+          },
+          {
+            "sourceUrl": "https://drive.google.com/file/d/1Z6iETITKQWwq4DV_kIKthdEeWQE0FYZh/view",
+            "value": "Bachelor of Urban and Regional Planning (Honours): 136 credit hours (Programme Structure AUP 211 & Above - 483th Senate Meeting.pdf)"
+          },
+          {
+            "sourceUrl": "https://kulliyyah.iium.edu.my/ahaskirkhs/wp-content/uploads/sites/7/2026/05/COMM-Proposed-Study-Plan-by-Semester.pdf",
+            "value": "Bachelor of Human Sciences in Communication: 125 credit hours"
+          },
+          {
+            "sourceUrl": "https://kulliyyah.iium.edu.my/ahaskirkhs/wp-content/uploads/sites/7/2026/05/ENGL-Proposed-Study-Plan-by-Semester.pdf",
+            "value": "Bachelor of Human Sciences in English Language and Literature: 125 credit hours"
+          },
+          {
+            "sourceUrl": "https://kulliyyah.iium.edu.my/ahaskirkhs/wp-content/uploads/sites/7/2026/05/HIST-Proposed-Study-Plan-by-Semester.pdf",
+            "value": "Bachelor of Human Sciences in History and Civilization: 125 credit hours"
+          },
+          {
+            "sourceUrl": "https://kulliyyah.iium.edu.my/ahaskirkhs/wp-content/uploads/sites/7/2026/05/PSCI-Proposed-Study-Plan-by-Semester.pdf",
+            "value": "Bachelor of Human Sciences in Political Science: 125 credit hours"
+          },
+          {
+            "sourceUrl": "https://kulliyyah.iium.edu.my/kahs/wp-content/uploads/sites/19/2024/09/Bachelor-of-AudiologyHonoursMQASWA13933.pdf",
+            "value": "Bachelor of Audiology (Honours): 143 credit hours"
+          },
+          {
+            "sourceUrl": "https://kulliyyah.iium.edu.my/kahs/wp-content/uploads/sites/19/2024/09/Bachelor-of-Speech-Language-Pathology-HonoursMQASWA04962.pdf",
+            "value": "Bachelor of Speech-Language Pathology (Honours): 144 credit hours"
+          },
+          {
+            "sourceUrl": "https://kulliyyah.iium.edu.my/kstcl/wp-content/uploads/sites/14/2023/10/Study-Plan-MLCOM-231-Non-Malaysian-Students.pdf",
+            "value": "Bachelor of Arts in Malay for International Communication (Honours): 126 credit hours"
+          },
+          {
+            "sourceUrl": "https://kulliyyah.iium.edu.my/kstcl/wp-content/uploads/sites/14/2023/10/Study-Plan-TMGT-202-International-Stdt-SECOND-COPY.pdf",
+            "value": "Bachelor in Tourism Management (Honours): 124 credit hours"
+          },
+          {
+            "sourceUrl": "https://kulliyyah.iium.edu.my/kstcl/wp-content/uploads/sites/14/2023/10/Study-Plan-ARCOM-221-Non-Msian-Students-03052023.pdf",
+            "value": "Bachelor of Arts in Arabic for International Communication (Honours): 126 credit hours"
+          },
+          {
+            "sourceUrl": "https://kulliyyah.iium.edu.my/kstcl/wp-content/uploads/sites/14/2023/10/Study-Plan-ENCOM-201-Non-Msian-Students-03052023.pdf",
+            "value": "Bachelor of Arts in English for International Communication (Honours): 126 credit hours"
+          }
+        ],
+        "accepted_by": "Ian",
+        "accepted_at": "2026-06-29"
+      },
+      {
+        "issue_id": "PI-IIUM-2026-DURATION-001",
+        "field": "duration",
+        "programme": null,
+        "programmeIndex": null,
+        "programmeNameEn": null,
+        "issueType": "duration-not-confirmed-on-programme-page",
+        "priority": "P3",
+        "description": "Five KENMS duration fields remain null. KENMS Finance table has 4-year and 3-year rows but programme-level duration mapping is not uniquely stated on the current KENMS undergraduate page or programme-specific structure PDFs.",
+        "reason": "Official programme information page/programme-specific structure files checked so far do not directly state duration for these KENMS rows; central Finance PDF is supporting-only under the latest source-priority rule.",
+        "status": "resolved",
+        "created_at": "2026-06-29",
+        "last_checked": "2026-06-29",
+        "resolution_note": "Resolved in r8. KENMS durations were adopted from Ian-confirmed official IIUM Finance Bachelor Degree Programmes (International) fee table: BBA uses the specific KENMS - BBA 3-year row; Accounting/Economics/Finance/Business Management use the general KENMS 4-year row.",
+        "unresolvable_by_bot": false,
+        "repairAttempts": 2,
+        "requiresIanDecision": false,
+        "suggestedAction": "Keep duration null for these rows, or provide a programme information page/official programme-specific file that directly states duration.",
+        "evidence": [
+          {
+            "programmeIndex": 31,
+            "programmeNameEn": "Bachelor of Accounting (Honours)",
+            "sourceUrl": "https://kulliyyah.iium.edu.my/kenms/undergraduate/"
+          },
+          {
+            "programmeIndex": 32,
+            "programmeNameEn": "Bachelor of Business Administration (Honours)",
+            "sourceUrl": "https://kulliyyah.iium.edu.my/kenms/undergraduate/"
+          },
+          {
+            "programmeIndex": 33,
+            "programmeNameEn": "Bachelor of Economics (Honours)",
+            "sourceUrl": "https://kulliyyah.iium.edu.my/kenms/undergraduate/"
+          },
+          {
+            "programmeIndex": 34,
+            "programmeNameEn": "Bachelor of Finance (Islamic Finance) (Honours)",
+            "sourceUrl": "https://kulliyyah.iium.edu.my/kenms/undergraduate/"
+          },
+          {
+            "programmeIndex": 35,
+            "programmeNameEn": "Bachelor of Business Management (Honours)",
+            "sourceUrl": "https://kulliyyah.iium.edu.my/kenms/undergraduate/"
+          }
+        ]
+      },
+      {
+        "issue_id": "PI-IIUM-2026-KON-ODL-001",
+        "field": "studyMode",
+        "programme": "Bachelor of Nursing (Honours)",
+        "programmeIndex": 53,
+        "programmeNameEn": "Bachelor of Nursing (Honours)",
+        "issueType": "delivery-mode-variant-decision",
+        "priority": "P3",
+        "description": "KON public site has a separate ODL path; current row represents the main Bachelor of Nursing (Honours). Ian must decide whether ODL should become a separate future collection item or remain a non-public variant note.",
+        "reason": "KON public site separately advertises an Undergraduate ODL path but current audit scope collected the main undergraduate programme only.",
+        "status": "accepted_gap",
+        "created_at": "2026-06-29",
+        "last_checked": "2026-06-29",
+        "resolution_note": "Ian accepts collecting what is currently published in this undergraduate scope; KON ODL remains a future/separate variant candidate and does not block the main Nursing row.",
+        "unresolvable_by_bot": false,
+        "repairAttempts": 0,
+        "requiresIanDecision": false,
+        "suggestedAction": "Decide whether to collect KON ODL as a separate future undergraduate variant.",
+        "evidence": [
+          {
+            "sourceUrl": "https://kulliyyah.iium.edu.my/kon/open-distance-learning-odl/",
+            "value": "Undergraduate ODL path exists"
+          }
+        ],
+        "accepted_by": "Ian",
+        "accepted_at": "2026-06-29"
+      },
+      {
+        "issue_id": "PI-IIUM-2026-CAREER-001",
+        "field": "careerProspects",
+        "programme": null,
+        "programmeIndex": null,
+        "programmeNameEn": null,
+        "issueType": "career-prospects-unpublished",
+        "priority": "P4",
+        "description": "r14 repaired MBBS careerProspects from the official KOM MBBS Student Guidebook. 26 programmes still lack explicit programme-level career prospects after targeted official-source checks.",
+        "reason": "26 careerProspects arrays remain empty; official pages/handbooks either publish outcomes/aims without explicit role destinations or do not publish programme-level career prospects.",
+        "status": "accepted_gap",
+        "created_at": "2026-06-29",
+        "last_checked": "2026-06-29",
+        "resolution_note": "Ian accepts that missing official careerProspects do not block import. The official audit JSON keeps these as official-unpublished; any editorial/inferred career content should be managed outside this official-source audit boundary.",
+        "unresolvable_by_bot": true,
+        "repairAttempts": 2,
+        "requiresIanDecision": false,
+        "suggestedAction": "Accept empty careerProspects with official-unpublished fieldStatus, or provide new official source/handbook pages for a future resumed repair.",
+        "evidence": [
+          {
+            "programmeIndex": 1,
+            "programmeNameEn": "Bachelor of Education (Teaching Arabic as a Second Language) (Honours)"
+          },
+          {
+            "programmeIndex": 2,
+            "programmeNameEn": "Bachelor of Education (Teaching English as a Second Language) (Honours)"
+          },
+          {
+            "programmeIndex": 3,
+            "programmeNameEn": "Bachelor of Education (Islamic Education) (Honours)"
+          },
+          {
+            "programmeIndex": 4,
+            "programmeNameEn": "Bachelor of Education (Guidance and Counseling) (Honours)"
+          },
+          {
+            "programmeIndex": 13,
+            "programmeNameEn": "Bachelor of Islamic Revealed Knowledge and Heritage (Honours) in Arabic Language, Literature, and Linguistics"
+          },
+          {
+            "programmeIndex": 14,
+            "programmeNameEn": "Bachelor of Islamic Revealed Knowledge and Heritage in Fiqh and Usul Al-Fiqh"
+          },
+          {
+            "programmeIndex": 15,
+            "programmeNameEn": "Bachelor of Islamic Revealed Knowledge and Heritage in Qur’an and Sunnah Studies"
+          },
+          {
+            "programmeIndex": 16,
+            "programmeNameEn": "Bachelor of Islamic Revealed Knowledge and Heritage in Usul al-Din and Comparative Religion"
+          },
+          {
+            "programmeIndex": 19,
+            "programmeNameEn": "Bachelor of Human Sciences in History and Civilization"
+          },
+          {
+            "programmeIndex": 20,
+            "programmeNameEn": "Bachelor of Human Sciences in Political Science"
+          },
+          {
+            "programmeIndex": 23,
+            "programmeNameEn": "Bachelor of Chemical Engineering with Honours"
+          },
+          {
+            "programmeIndex": 24,
+            "programmeNameEn": "Bachelor of Mechanical Engineering with Honours"
+          },
+          {
+            "programmeIndex": 25,
+            "programmeNameEn": "Bachelor of Aerospace Engineering with Honours"
+          },
+          {
+            "programmeIndex": 26,
+            "programmeNameEn": "Bachelor of Mechatronics Engineering with Honours"
+          },
+          {
+            "programmeIndex": 27,
+            "programmeNameEn": "Bachelor of Civil Engineering with Honours"
+          },
+          {
+            "programmeIndex": 28,
+            "programmeNameEn": "Bachelor of Materials Engineering with Honours"
+          },
+          {
+            "programmeIndex": 29,
+            "programmeNameEn": "Bachelor of Manufacturing Engineering with Honours"
+          },
+          {
+            "programmeIndex": 30,
+            "programmeNameEn": "Bachelor of Electrical and Electronics Engineering with Honours"
+          },
+          {
+            "programmeIndex": 32,
+            "programmeNameEn": "Bachelor of Business Administration (Honours)"
+          },
+          {
+            "programmeIndex": 33,
+            "programmeNameEn": "Bachelor of Economics (Honours)"
+          },
+          {
+            "programmeIndex": 34,
+            "programmeNameEn": "Bachelor of Finance (Islamic Finance) (Honours)"
+          },
+          {
+            "programmeIndex": 35,
+            "programmeNameEn": "Bachelor of Business Management (Honours)"
+          },
+          {
+            "programmeIndex": 45,
+            "programmeNameEn": "Bachelor of Biotechnology (Honours)"
+          },
+          {
+            "programmeIndex": 46,
+            "programmeNameEn": "Bachelor of Mathematical Sciences (Honours)"
+          },
+          {
+            "programmeIndex": 47,
+            "programmeNameEn": "Bachelor of Science in Applied Chemistry (Honours)"
+          },
+          {
+            "programmeIndex": 49,
+            "programmeNameEn": "Bachelor of Science in Marine Science and Technology (Honours)"
+          },
+          {
+            "programmeIndex": 54,
+            "programmeNameEn": "Bachelor of Medicine and Bachelor of Surgery (MBBS)"
+          },
+          {
+            "sourceUrl": "https://kulliyyah.iium.edu.my/kom/wp-content/uploads/sites/15/2026/03/MBBSStudentGuidebook2025-2026PhaseIII.pdf",
+            "value": "Bachelor of Medicine and Bachelor of Surgery (MBBS): ['医生/医师']"
+          }
+        ],
+        "accepted_by": "Ian",
+        "accepted_at": "2026-06-29"
+      },
+      {
+        "issue_id": "PI-IIUM-2026-DEADLINE-001",
+        "field": "applicationDeadline",
+        "programme": null,
+        "programmeIndex": null,
+        "programmeNameEn": null,
+        "issueType": "application-deadline-unpublished",
+        "priority": "P4",
+        "description": "All 58 programmes still have applicationDeadline=null after repeated checks of eAdmission, AMAD admissions, AMAD calendar, and IIUM admissions pages.",
+        "reason": "Official accessible pages publish intake/application access information but not a concrete closing date/deadline.",
+        "status": "accepted_gap",
+        "created_at": "2026-06-29",
+        "last_checked": "2026-06-29",
+        "resolution_note": "Ian accepts using currently published official intake/application access information. eAdmission states Semester 1, 2026/2027 intake is open for applicants with international qualifications, while no concrete closing date is published.",
+        "unresolvable_by_bot": true,
+        "repairAttempts": 2,
+        "requiresIanDecision": false,
+        "suggestedAction": "Use authenticated eAdmission workflow or a future AMAD announcement if a dated deadline is required.",
+        "evidence": [
+          {
+            "sourceUrl": "https://eadmission.iium.edu.my/index.php/student/eas_login",
+            "value": "Semester 1, 2026/2027 intake application access for international qualifications; no closing date shown"
+          },
+          {
+            "sourceUrl": "https://division.iium.edu.my/amad/admission-2/",
+            "value": "Undergraduate Programme (International Qualifications) links; no concrete closing date shown"
+          },
+          {
+            "sourceUrl": "https://division.iium.edu.my/amad/faq/",
+            "value": "FAQ says online application open/close dates should be referred to AMAD announcements and closing date important dates should be referred to announcements/UPU context; no specific international undergraduate deadline shown"
+          }
+        ],
+        "accepted_by": "Ian",
+        "accepted_at": "2026-06-29"
+      },
+      {
+        "issue_id": "PI-IIUM-2026-ACCOUNTING-CREDIT-CONFLICT",
+        "field": "creditHours",
+        "programme": "Bachelor of Accounting (Honours)",
+        "programmeIndex": 31,
+        "programmeNameEn": "Bachelor of Accounting (Honours)",
+        "issueType": "source-conflict",
+        "priority": "P3",
+        "description": "KENMS 2025 Accounting curriculum PDF states Total Credit Hours 132, while KENMS Accounting introduction states local/international students graduate with 148/146 credit hours inclusive of industrial training. The verified audit keeps 132 from the current programme-specific curriculum PDF and records the introduction as non-adopted conflicting context.",
+        "reason": "Official source conflict discovered during third targeted crawl.",
+        "status": "resolved",
+        "created_at": "2026-06-29",
+        "last_checked": "2026-06-29",
+        "resolution_note": "Resolved by Ian decision on 2026-06-29: use the latest official published source; if no publication date is available, use the programme introduction page. Current verified value keeps 132 credit hours from the dated official KENMS Accounting curriculum PDF (amended 2025-08-07), while the undated/introduction-page 146-credit statement remains non-adopted evidence.",
+        "unresolvable_by_bot": false,
+        "repairAttempts": 1,
+        "requiresIanDecision": false,
+        "suggestedAction": "Ian/validator should decide whether current curriculum PDF supersedes the KENMS introduction before import.",
+        "evidence": [
+          {
+            "sourceUrl": "https://kulliyyah.iium.edu.my/kenms/wp-content/uploads/sites/22/2025/08/BACC-241XXXX-Amended-2025-08-07.pdf",
+            "value": "Total Credit Hours 132"
+          },
+          {
+            "sourceUrl": "https://kulliyyah.iium.edu.my/kenms/introduction/",
+            "value": "Local and international students will graduate with 148 and 146 credit hours respectively, inclusive of 6 months industrial training"
+          }
+        ]
+      }
+    ],
+    "exceptionQueue": [
+      {
+        "issue_id": "EQ-IIUM-2026-001",
+        "type": "collection-omission",
+        "severity": "medium",
+        "affectedProgramme": null,
+        "affectedField": "programme_baseline",
+        "description": "No single public IIUM central catalogue or public eAdmission choice list exposed all undergraduate programmes; baseline was assembled from official Kulliyyah pages and official brochure/admission sources.",
+        "evidence": [
+          {
+            "sourceUrl": "https://www.iium.edu.my/v2/academics/",
+            "value": "Central Kulliyyah directory"
+          },
+          {
+            "sourceUrl": "https://eadmission.iium.edu.my/index.php/student/eas_login",
+            "value": "Application system public AJAX did not enumerate choices without application context"
+          }
+        ],
+        "recommendation": "Validator should cross-check the 58-row baseline against eAdmission choices if authenticated or official manual access is available.",
+        "status": "accepted_gap",
+        "created_at": "2026-06-29",
+        "last_checked": "2026-06-29",
+        "resolution_note": "Ian accepts the official Kulliyyah-page assembled 58-row baseline for launch because no public central choice enumeration is available.",
+        "unresolvable_by_bot": false,
+        "accepted_by": "Ian",
+        "accepted_at": "2026-06-29"
+      },
+      {
+        "issue_id": "EQ-IIUM-2026-002",
+        "type": "source-conflict",
+        "severity": "medium",
+        "affectedProgramme": "Bachelor of Dental Surgery",
+        "affectedField": "tuitionMYR",
+        "description": "KOD programme page publishes RM 487,290.00 International Student fee, while the latest official Finance UG International PDF lists TOTAL RM 387,540.00 for KOD.",
+        "evidence": [
+          {
+            "sourceUrl": "https://kulliyyah.iium.edu.my/kod/programmes/undergraduate/",
+            "value": "RM 487,290.00 (International Student); page API modified=2025-06-17"
+          },
+          {
+            "sourceUrl": "https://kulliyyah.iium.edu.my/kod/wp-json/wp/v2/pages/879",
+            "value": "Official KOD WordPress API timestamp: modified=2025-06-17T10:08:39"
+          },
+          {
+            "sourceUrl": "https://division.iium.edu.my/finance/wp-content/uploads/sites/6/2026/05/2.4.2-UG-International-After-Discount-Sem-1-2024-2025-1.7-Mar26.pdf",
+            "value": "Latest Finance PDF Last-Modified=2026-05-12; KOD row: INTERNATIONAL & PERMANENT RESIDENT; TOTAL RM 387,540.00"
+          }
+        ],
+        "recommendation": "Use the latest official international student fee: Finance UG International PDF TOTAL RM 387,540.00. Keep KOD programme page RM 487,290.00 as older non-adopted official evidence.",
+        "status": "resolved",
+        "created_at": "2026-06-29",
+        "last_checked": "2026-06-29",
+        "resolution_note": "Resolved in r11 by Ian instruction to consider publication/update order and use the latest official international student fee. KOD programme page WP API modified=2025-06-17; Finance PDF Last-Modified=2026-05-12 and lists NATIONALITY: INTERNATIONAL & PERMANENT RESIDENT, TOTAL RM 387,540.00.",
+        "unresolvable_by_bot": false
+      },
+      {
+        "issue_id": "EQ-IIUM-2026-003",
+        "type": "format-decoupling-risk",
+        "severity": "medium",
+        "affectedProgramme": null,
+        "affectedField": "tuitionMYR",
+        "description": "Earlier strict fee gate treated broad Finance PDF rows as supporting-only. Ian has now approved the official IIUM Finance Bachelor Degree Programmes (International) fee table/PDF as fallback when current programme information pages do not publish direct fees.",
+        "evidence": [
+          {
+            "sourceUrl": "https://division.iium.edu.my/finance/wp-content/uploads/sites/6/2026/05/2.4.2-UG-International-After-Discount-Sem-1-2024-2025-1.7-Mar26.pdf",
+            "value": "Kulliyyah-level international bachelor tuition rows"
+          },
+          {
+            "sourceUrl": "https://kulliyyah.iium.edu.my/kos/undergraduate-programmes/",
+            "value": "Study plan list without direct fee amount"
+          }
+        ],
+        "recommendation": "Keep programme-page direct fees as primary; use the official Finance international bachelor fee table/PDF only where the programme page has no direct fee. Recheck if IIUM later publishes LLBS-specific fee material.",
+        "status": "resolved",
+        "created_at": "2026-06-29",
+        "last_checked": "2026-06-29",
+        "resolution_note": "Resolved in r10 by Ian source-priority decision. LLBS fee set to RM 90,865 from current AIKOL Finance row; KOD still keeps programme-page direct fee because direct programme page amount wins conflicts.",
+        "unresolvable_by_bot": false
+      },
+      {
+        "issue_id": "EQ-IIUM-2026-004",
+        "type": "schema-gap",
+        "severity": "medium",
+        "affectedProgramme": "Bachelor of Nursing (Honours)",
+        "affectedField": "studyMode",
+        "description": "KON public site separately advertises an Undergraduate ODL path, but current audit row represents the main Bachelor of Nursing (Honours) undergraduate programme and audit schema has no separate delivery-mode variant row for this collection scope.",
+        "evidence": [
+          {
+            "sourceUrl": "https://kulliyyah.iium.edu.my/kon/open-distance-learning-odl/",
+            "value": "Undergraduate (ODL) path exists"
+          }
+        ],
+        "recommendation": "Ian should decide whether ODL should be a separate future collection item or a non-public variant note.",
+        "status": "accepted_gap",
+        "created_at": "2026-06-29",
+        "last_checked": "2026-06-29",
+        "resolution_note": "Ian accepts that KON ODL is not part of this main undergraduate row import and can be collected separately later.",
+        "unresolvable_by_bot": false,
+        "accepted_by": "Ian",
+        "accepted_at": "2026-06-29"
+      },
+      {
+        "issue_id": "EQ-IIUM-2026-005",
+        "type": "field-format-violation",
+        "severity": "medium",
+        "affectedProgramme": null,
+        "affectedField": "language.ielts",
+        "description": "Several IIUM sources publish EPT or MUET pathways without direct IELTS values. Collector kept IELTS null except MBBS and KSTCL pages where official direct IELTS was published.",
+        "evidence": [
+          {
+            "sourceUrl": "https://division.iium.edu.my/amad/faq/",
+            "value": "EPT is compulsory for all new students"
+          },
+          {
+            "sourceUrl": "https://kulliyyah.iium.edu.my/kon/undergraduate-programme/",
+            "value": "MUET Band 3, no IELTS direct value in crawled section"
+          }
+        ],
+        "recommendation": "Validator should preserve separated language slots and avoid converting EPT/MUET into IELTS.",
+        "status": "resolved",
+        "created_at": "2026-06-29",
+        "last_checked": "2026-06-29",
+        "resolution_note": "Validator rechecked language slots: direct IELTS appears only for MBBS and KSTCL rows with official direct IELTS evidence; MUET/EPT pathways were not converted into IELTS.",
+        "unresolvable_by_bot": false
+      }
+    ],
+    "validationAcceptedGaps": [
+      {
+        "issue_id": "PI-IIUM-2026-BASELINE-001",
+        "field": "programme_baseline",
+        "accepted_by": "Ian",
+        "accepted_at": "2026-06-29",
+        "decision_id": "pi_iium_2026_baseline_001",
+        "accepted_scope": "58 undergraduate programmes collected from official IIUM central/Kulliyyah pages",
+        "note": "Ian accepts the 58-row IIUM undergraduate baseline assembled from official IIUM central/Kulliyyah pages because no public central eAdmission choice enumeration is available.",
+        "source_urls": [
+          "https://www.iium.edu.my/v2/academics/",
+          "https://eadmission.iium.edu.my/"
+        ]
+      },
+      {
+        "issue_id": "PI-IIUM-2026-CURRICULUM-001",
+        "field": "curriculum",
+        "accepted_by": "Ian",
+        "accepted_at": "2026-06-29",
+        "decision_id": "pi_iium_2026_curriculum_001",
+        "accepted_scope": "current official published curriculum summaries and available credit-hour evidence",
+        "note": "Ian accepts current published curriculum summaries for launch; detailed semester-by-semester curriculum and unresolved credit-hour refinements can be completed later.",
+        "source_urls": []
+      },
+      {
+        "issue_id": "PI-IIUM-2026-KON-ODL-001",
+        "field": "studyMode",
+        "accepted_by": "Ian",
+        "accepted_at": "2026-06-29",
+        "decision_id": "pi_iium_2026_kon_odl_001",
+        "accepted_scope": "main Bachelor of Nursing (Honours) row only",
+        "note": "Ian accepts collecting what is currently published in this undergraduate scope; KON ODL remains a future/separate variant candidate and does not block the main Nursing row.",
+        "source_urls": [
+          "https://kulliyyah.iium.edu.my/kon/open-distance-learning-odl/"
+        ]
+      },
+      {
+        "issue_id": "PI-IIUM-2026-CAREER-001",
+        "field": "careerProspects",
+        "accepted_by": "Ian",
+        "accepted_at": "2026-06-29",
+        "decision_id": "pi_iium_2026_career_001",
+        "accepted_scope": "official-unpublished careerProspects are accepted for launch",
+        "note": "Ian accepts that missing official careerProspects do not block import. The official audit JSON keeps these as official-unpublished; any editorial/inferred career content should be managed outside this official-source audit boundary.",
+        "source_urls": []
+      },
+      {
+        "issue_id": "PI-IIUM-2026-DEADLINE-001",
+        "field": "applicationDeadline",
+        "accepted_by": "Ian",
+        "accepted_at": "2026-06-29",
+        "decision_id": "pi_iium_2026_deadline_001",
+        "accepted_scope": "applicationDeadline stores intake/opening rule plus no-published-closing-date note",
+        "note": "Ian accepts using currently published official intake/application access information. eAdmission states Semester 1, 2026/2027 intake is open for applicants with international qualifications, while no concrete closing date is published.",
+        "source_urls": [
+          "https://eadmission.iium.edu.my/",
+          "https://division.iium.edu.my/amad/admission-2/",
+          "https://division.iium.edu.my/amad/academic-calendar/"
+        ]
+      }
+    ],
+    "acceptedGapSummary": {
+      "acceptedBy": "Ian",
+      "acceptedAt": "2026-06-29",
+      "baselineAccepted": true,
+      "curriculumSummaryAcceptedForLaunch": true,
+      "careerOfficialUnpublishedAccepted": true,
+      "applicationDeadlineUsesCurrentIntakeNotice": true,
+      "konOdlFutureSeparateVariant": true,
+      "accountingCreditConflictDecision": "latest official dated source first; if no date then programme page",
+      "editorialCareerBoundary": "No inferred or third-party career prospects are written into this official audit JSON."
+    }
+  },
+  "expectedSurface": {
+    "programmeCount": 58,
+    "byLevel": {
+      "bachelor": 58,
+      "master": 0,
+      "phd": 0
+    },
+    "summary": {
+      "importRows": 58,
+      "byLevel": {
+        "bachelor": 58,
+        "master": 0,
+        "phd": 0
+      },
+      "readyRows": 58,
+      "publishedRows": 58,
+      "uniqueSlugs": 58,
+      "officialFeeRows": 58,
+      "officialDirectIeltsRows": 5,
+      "muetEquivalentIeltsRows": 9,
+      "listIeltsRows": 14,
+      "noListIeltsRows": 44,
+      "officialUnpublishedDirectIeltsRows": 53,
+      "languageCoverageRows": 58,
+      "chineseNameRows": 58,
+      "chineseFacultyRows": 58,
+      "chineseCurriculumRows": 58,
+      "careerDisplayRows": 58,
+      "officialUnpublishedCareerRows": 26,
+      "sourceRows": 58,
+      "publicDisplayStatusCounts": {
+        "ready": 58
+      },
+      "officialSourceStatusCounts": {
+        "official-verified": 58
+      },
+      "feeAuditStatusCounts": {
+        "matched-official": 58
+      }
+    }
+  }
+}

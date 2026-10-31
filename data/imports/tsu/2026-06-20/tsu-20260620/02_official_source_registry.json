@@ -1,0 +1,93 @@
+{
+  "schemaVersion": 1,
+  "officialDomains": [
+    "taylors.edu.my"
+  ],
+  "sources": [
+    {
+      "id": "homepage",
+      "url": "https://university.taylors.edu.my/en.html",
+      "sourceType": "official-page",
+      "role": "institution-authority",
+      "fields": [
+        "officialName",
+        "officialWebsite",
+        "address",
+        "profile"
+      ],
+      "retrievedAt": "2026-06-20T15:54:12+00:00",
+      "academicSession": "2026",
+      "status": "cached",
+      "localPath": "sources/raw/homepage.html",
+      "sha256": "39c3730f2c7b6a0ea5e254f8c57898b956efb03411904216ffb9ae58300c36cd"
+    },
+    {
+      "id": "explore",
+      "url": "https://university.taylors.edu.my/en/study/explore-all-programmes.html",
+      "sourceType": "official-page",
+      "role": "canonical",
+      "fields": [
+        "programmeDirectory",
+        "levelTags",
+        "faculty",
+        "intakeTags"
+      ],
+      "retrievedAt": "2026-06-20T15:54:12+00:00",
+      "academicSession": "2026",
+      "status": "cached",
+      "localPath": "sources/raw/explore-all-programmes.html",
+      "sha256": "08864bc124778e0016ae3f6855c16ea7ce63313d5b798835a1b6ccacf27ff08f"
+    },
+    {
+      "id": "fees",
+      "url": "https://university.taylors.edu.my/en/study/scholarships-and-financial-aid/fees-schedules.html",
+      "sourceType": "official-page",
+      "role": "field-authority",
+      "fields": [
+        "feeScheduleLinks",
+        "tuition"
+      ],
+      "retrievedAt": "2026-06-20T15:54:12+00:00",
+      "academicSession": "2026",
+      "status": "cached",
+      "localPath": "sources/raw/fees-schedules.html",
+      "sha256": "cd47aadc3b8a6a437fc8daa4694a87cb5889765c9905d257c1cf10be5540fc80"
+    },
+    {
+      "id": "undergraduate-admission",
+      "url": "https://university.taylors.edu.my/en/study/how-to-apply/undergraduate-admission.html",
+      "sourceType": "official-page",
+      "role": "field-authority",
+      "fields": [
+        "undergraduateApplication",
+        "documents",
+        "internationalAdmission"
+      ],
+      "retrievedAt": "2026-06-20T15:54:12+00:00",
+      "academicSession": "2026",
+      "status": "cached",
+      "localPath": "sources/raw/undergraduate-admission.html",
+      "sha256": "8207fb3e35f3d50369dd020752eaf6bfc4d4aa9d6af9834771b90dcf595646b3"
+    },
+    {
+      "id": "postgraduate-admission",
+      "url": "https://university.taylors.edu.my/en/study/how-to-apply/postgraduate-admission.html",
+      "sourceType": "official-page",
+      "role": "field-authority",
+      "fields": [
+        "postgraduateApplication",
+        "documents",
+        "researchDocuments"
+      ],
+      "retrievedAt": "2026-06-20T15:54:12+00:00",
+      "academicSession": "2026",
+      "status": "cached",
+      "localPath": "sources/raw/postgraduate-admission.html",
+      "sha256": "3944571de66a55019f043521645deeffccac0279999c2e8d96ab73949db1b981"
+    }
+  ],
+  "notes": [
+    "Programme detail pages and fee PDFs are fully listed in 05_source_cache_index.json.",
+    "Search snippets and third-party pages were not used as evidence."
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "status": "review-imported",
+  "scope": {
+    "universityCode": "UCSI",
+    "collectionScope": "full",
+    "levels": [
+      "bachelor",
+      "master",
+      "phd"
+    ],
+    "applicantScope": "international",
+    "academicSession": "current official UCSI website as of 2026-06-20"
+  },
+  "levels": [
+    "bachelor",
+    "master",
+    "phd"
+  ],
+  "authorization": "publish",
+  "counts": {
+    "directoryOccurrences": 230,
+    "uniqueOfficialEntries": 177,
+    "canonicalProgrammes": 118,
+    "ready": 0,
+    "needsReview": 118,
+    "notAvailableForInternational": 0,
+    "byLevel": {
+      "bachelor": 60,
+      "master": 40,
+      "phd": 18
+    }
+  },
+  "coverageKeys": [
+    "academicRequirement",
+    "applicationDocuments",
+    "campus",
+    "careers",
+    "courseSetting",
+    "deepSourceFieldExploration",
+    "duration",
+    "evidence",
+    "faculty",
+    "fee",
+    "identity",
+    "institutionProfile",
+    "intake",
+    "internationalEligibility",
+    "languageRequirement",
+    "localization",
+    "studentFacingContentHygiene",
+    "studyArrangement",
+    "studyMode",
+    "studyType"
+  ],
+  "sourceCount": 125,
+  "artifactCount": 26,
+  "blockingExceptionCount": 0,
+  "reviewExceptionCount": 5,
+  "issueCounts": {},
+  "issues": []
+}

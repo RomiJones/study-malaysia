@@ -19,8 +19,8 @@
   "canonicalCount": 44,
   "publicCandidateCount": 40,
   "needsReviewCount": 0,
-  "internationalUnavailableCount": 4,
-  "detailSourceCount": 30,
+  "internationalUnavailableCount": 0,
+  "detailSourceCount": 33,
   "detailTransportErrorCount": 0,
   "programmeOrder": [
     {
@@ -125,7 +125,7 @@
       "ordinal": 15,
       "nameEnOfficial": "Bachelor of Mechanical Engineering (Manufacturing) with Honours",
       "facultyEn": "Faculty of Mechanical Engineering",
-      "status": "international-unavailable-current-cycle",
+      "status": "current-cycle-not-open",
       "detailUrl": "https://mech.utm.my/ug-programme/"
     },
     {
@@ -146,21 +146,21 @@
       "ordinal": 18,
       "nameEnOfficial": "Bachelor in Accounting with Honours",
       "facultyEn": "Faculty of Management",
-      "status": "international-unavailable-current-cycle",
+      "status": "current-cycle-not-open",
       "detailUrl": "https://management.utm.my/undergraduates/"
     },
     {
       "ordinal": 19,
       "nameEnOfficial": "Bachelor in Digital Marketing with Honours",
       "facultyEn": "Faculty of Management",
-      "status": "international-unavailable-current-cycle",
+      "status": "current-cycle-not-open",
       "detailUrl": "https://management.utm.my/undergraduates/"
     },
     {
       "ordinal": 20,
       "nameEnOfficial": "Bachelor of Management with Honours",
       "facultyEn": "Faculty of Management",
-      "status": "international-unavailable-current-cycle",
+      "status": "current-cycle-not-open",
       "detailUrl": "https://management.utm.my/undergraduates/"
     },
     {
@@ -331,5 +331,6 @@
       "status": "ready-for-detail-enrichment",
       "detailUrl": "https://mjiit.utm.my/undergraduate/"
     }
-  ]
+  ],
+  "currentCycleNotOpenCount": 4
 }

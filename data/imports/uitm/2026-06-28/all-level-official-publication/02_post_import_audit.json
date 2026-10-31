@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "mode": "uitm-all-level-published",
+  "createdAt": "2026-06-28T10:13:31.373Z",
+  "institution": {
+    "code": "UITM",
+    "name": "Universiti Teknologi MARA",
+    "importedRows": 388,
+    "byLevel": {
+      "bachelor": 164,
+      "master": 162,
+      "phd": 62
+    }
+  },
+  "database": {
+    "backupPath": "tmp/backups/uitm-all-level-public-before-2026-06-28T10-13-30-021Z.json",
+    "transactionalImport": "passed",
+    "catalogCacheCleared": false,
+    "scopedRows": 388,
+    "activeSupersededRows": 0,
+    "legacyVisibleRows": 0,
+    "visibleCurrentRows": 388
+  },
+  "publicVisibility": {
+    "universityPublicDisplayStatus": "ready",
+    "universityOfficialSourceStatus": "official-verified",
+    "universityIsPublished": true,
+    "universityProgramCount": 388,
+    "rowsPublished": 388,
+    "rowsReady": 222,
+    "rowsNotAvailableForInternational": 166,
+    "rowsOfficialLanguageScalarException": 0
+  },
+  "displayHardGate": {
+    "chineseNameRows": 388,
+    "chineseFacultyRows": 388,
+    "chineseCurriculumRows": 388,
+    "chineseCareerRows": 388,
+    "englishPublicTextRows": 388,
+    "directIeltsRows": 225,
+    "readyIeltsRows": 222,
+    "muetRows": 385,
+    "officialFeeRows": 222,
+    "officialFeeNotPublishedRows": 166,
+    "sourceRows": 388,
+    "officialUnpublishedCurriculumRows": 0,
+    "officialUnpublishedCareerRows": 381
+  }
+}

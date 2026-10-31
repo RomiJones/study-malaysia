@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "auditId": "unm-official-audit-runtime-continuity-2026-06-21",
+  "status": "passed",
+  "universityCode": "UNM",
+  "checkedAt": "2026-06-21T00:00:00+08:00",
+  "checks": {
+    "existingApiRuntimePreserved": "passed",
+    "existingWebRuntimePreserved": "passed",
+    "noProcessKilledOrRestarted": "passed",
+    "separateVerificationCommandsUsed": "passed"
+  },
+  "evidence": {
+    "apiPort": "127.0.0.1:3000 was already listening and reused for API checks",
+    "webPort": "127.0.0.1:5173 was already listening and reused for browser checks",
+    "notes": "No StudyMY project runtime was stopped, killed, booted, or restarted during this publication verification."
+  },
+  "issues": []
+}

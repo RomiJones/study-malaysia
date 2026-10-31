@@ -50,3 +50,18 @@
 - **后续建议**:
   - 后续任务应继续按各自任务编号处理历史 open Review issue，不要把历史问题混入 TASK-050。
   - 若需要真实 Notion 同步，应提供可写入的 TASK-050 Notion 页面 ID 或恢复 NOTION_PROJECT_HOME。
+
+### 2026-05-25T01:10:12.437Z - 自动状态更新
+
+- **状态**: 待评审
+- **说明**: Codex 已完成实现并返回完成状态。
+
+### 2026-05-25T01:12:27.155Z - 自动状态更新
+
+- **状态**: 已完成
+- **说明**: Review 通过：Review 通过。TASK-050 提交范围仅包含验收记录文档，记录内容覆盖 Review 结论、autoFixable 问题处理、验证命令、视觉验收、剩余风险和后续建议；TASK-049-REV-001 与 TASK-049-REV-002 已在 review-issues.json 中标记 verified。
+
+### 2026-05-25T01:12:27.177Z - 自动状态更新
+
+- **状态**: 已完成
+- **说明**: Review 通过：Review 通过。TASK-050 提交范围仅包含验收记录文档，记录内容覆盖 Review 结论、autoFixable 问题处理、验证命令、视觉验收、剩余风险和后续建议；TASK-049-REV-001 与 TASK-049-REV-002 已在 review-issues.json 中标记 verified。

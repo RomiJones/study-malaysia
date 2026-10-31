@@ -1,0 +1,200 @@
+{
+  "schemaVersion": 1,
+  "createdAt": "2026-06-29T14:54:56.117Z",
+  "institution": {
+    "code": "IIUM",
+    "shortName": "IIUM",
+    "name": "International Islamic University Malaysia",
+    "slug": "international-islamic-university-malaysia"
+  },
+  "authorization": "operator-requested-publication-for-ian-review",
+  "sourceInputs": {
+    "masterAudit": "audits/IIUM_audit_master_20260629_verified_20260629_r3.json",
+    "sourceAuditSafeToImport": false,
+    "sourceAuditRecommendedForImport": false,
+    "sourceAuditWorkflowStatus": "validated_with_gaps",
+    "sourceAuditReason": "The StudyMY audit JSON remains validated_with_gaps and safe_to_import=false; this importer publishes a review surface only after explicit operator command."
+  },
+  "writePolicy": {
+    "importer": "apps/api/src/db/import-iium-master-official.ts",
+    "mode": "publish-master-for-review",
+    "upsertPrefix": "iium-master-20260629-",
+    "universityRow": "upsert by code IIUM or slug international-islamic-university-malaysia",
+    "programmeRows": "upsert 81 current IIUM master public rows and archive legacy visible IIUM master rows only",
+    "preserveOtherLevels": true,
+    "transactional": true,
+    "backupRequired": true
+  },
+  "publicationGate": {
+    "result": "passed-for-review",
+    "rules": [
+      "81 master rows",
+      "81 official IIUM Finance PDF TOTAL tuition rows",
+      "81 direct IELTS rows from CPS/Kulliyyah language evidence",
+      "81 EPT details preserved as IIUM-administered test pathway",
+      "81 Chinese bilingual programme names",
+      "81 Chinese faculty names",
+      "81 official source URL rows",
+      "all rows publicDisplayStatus=ready only for Ian review"
+    ]
+  },
+  "acceptedGapsAndOpenIssues": {
+    "acceptedGaps": [
+      {
+        "issue_id": "PI-IIUM-2026-MASTER-002",
+        "accepted_by_instruction": "Ian",
+        "accepted_at": "2026-06-29",
+        "scope": "Use latest official IIUM Finance PDF TOTAL fee when programme page has no direct amount; safe_to_import remains false."
+      },
+      {
+        "issue_id": "PI-IIUM-2026-MASTER-008",
+        "accepted_by_instruction": "Ian",
+        "accepted_at": "2026-06-29",
+        "scope": "Finance PDF candidate fee rows can populate tuitionMYR as total tuition; GRAND TOTAL/Mahallah excluded."
+      }
+    ],
+    "openIssues": [
+      {
+        "issue_id": "PI-IIUM-2026-MASTER-001",
+        "status": "open",
+        "field": "all 81 master programmes",
+        "title": "CPS master baseline rows conflict with faculty mode/specialisation splits",
+        "requiresIanDecision": true
+      },
+      {
+        "issue_id": "PI-IIUM-2026-MASTER-003",
+        "status": "open",
+        "field": "all 81 master programmes",
+        "title": "Language values are direct CPS table values but programme category mapping needs validation",
+        "requiresIanDecision": true
+      },
+      {
+        "issue_id": "PI-IIUM-2026-MASTER-004",
+        "status": "open",
+        "field": "KOP, KAHS, KOM, KON, KOD, KSTCL and related rows",
+        "title": "Several faculties expose additional directions not cleanly represented by the CPS baseline row",
+        "requiresIanDecision": true
+      },
+      {
+        "issue_id": "PI-IIUM-2026-MASTER-005",
+        "status": "open",
+        "field": "faculty PDFs/prospectuses and old linked pages where encountered",
+        "title": "Official-linked external or legacy assets were not adopted as clean authority",
+        "requiresIanDecision": true
+      },
+      {
+        "issue_id": "PI-IIUM-2026-MASTER-006",
+        "status": "open",
+        "field": "language.toefl",
+        "title": "TOEFL reading/writing band rows must not be collapsed into scalar TOEFL totals",
+        "requiresIanDecision": false
+      },
+      {
+        "issue_id": "PI-IIUM-2026-MASTER-007",
+        "status": "open",
+        "field": "intake",
+        "title": "Finance PDF gives Semester 1 onwards and CPS says applications open throughout year, but no stable programme-level month array was verified for all 81 programmes",
+        "requiresIanDecision": true
+      },
+      {
+        "issue_id": "EQ-IIUM-2026-MASTER-001",
+        "status": "open",
+        "requiresIanDecision": false
+      },
+      {
+        "issue_id": "EQ-IIUM-2026-MASTER-002",
+        "status": "open",
+        "requiresIanDecision": false
+      },
+      {
+        "issue_id": "EQ-IIUM-2026-MASTER-003",
+        "status": "open",
+        "requiresIanDecision": false
+      },
+      {
+        "issue_id": "EQ-IIUM-2026-MASTER-004",
+        "status": "open",
+        "requiresIanDecision": false
+      },
+      {
+        "issue_id": "EQ-IIUM-2026-MASTER-007",
+        "status": "open",
+        "requiresIanDecision": false
+      }
+    ],
+    "strictFeeGateStats": {
+      "primaryFeePolicy": "ian-approved-current-programme-page-or-latest-official-finance-pdf-total",
+      "totalProgrammesChecked": 81,
+      "programmePageDirectAmountRows": 0,
+      "programmePageDirectAmountMissRows": 81,
+      "supportingSourceOnlyRows": 81,
+      "officialDomainRows": 81,
+      "openHighFeeConflictRows": 0,
+      "pdfTotalFeeRowsPopulated": 81,
+      "grandTotalRowsExcluded": 81,
+      "decision": "PASS_BY_IAN_APPROVED_FINANCE_PDF_TOTAL_POLICY"
+    },
+    "languageGateStats": {
+      "directIeltsRows": 81,
+      "noDirectIeltsRows": 0,
+      "languageSlotMismatchRows": 0,
+      "equivalentPathMisusedAsIeltsRows": 0,
+      "formOptionContaminationRows": 0,
+      "officialIeltsDistribution": {
+        "3.0": 4,
+        "4.0": 1,
+        "5.0": 37,
+        "6.0": 34,
+        "6.5": 1,
+        "7.0": 4
+      }
+    }
+  },
+  "expectedSurface": {
+    "programmeCount": 81,
+    "byLevel": {
+      "bachelor": 0,
+      "master": 81,
+      "phd": 0
+    },
+    "summary": {
+      "importRows": 81,
+      "byLevel": {
+        "bachelor": 0,
+        "master": 81,
+        "phd": 0
+      },
+      "readyRows": 81,
+      "publishedRows": 81,
+      "uniqueSlugs": 81,
+      "officialFeeRows": 81,
+      "directIeltsRows": 81,
+      "languageCoverageRows": 81,
+      "eptMentionRows": 81,
+      "chineseNameRows": 81,
+      "chineseFacultyRows": 81,
+      "curriculumDisplayRows": 81,
+      "officialCurriculumRows": 6,
+      "careerDisplayRows": 81,
+      "officialCareerRows": 5,
+      "inferredCareerRows": 76,
+      "sourceRows": 81,
+      "publicDisplayStatusCounts": {
+        "ready": 81
+      },
+      "feeAuditStatusCounts": {
+        "matched-official": 81
+      },
+      "officialSourceStatusCounts": {
+        "official-verified": 81
+      },
+      "studyModeCounts": {
+        "Mode pending faculty split review": 18,
+        "Mixed mode": 11,
+        "Research": 18,
+        "Coursework": 25,
+        "Clinical specialist training": 9
+      }
+    }
+  }
+}

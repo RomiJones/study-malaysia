@@ -1,0 +1,137 @@
+{
+  "schemaVersion": 1,
+  "mode": "iium-doctoral-published-for-review",
+  "createdAt": "2026-06-29T12:46:53.579Z",
+  "institution": {
+    "code": "IIUM",
+    "name": "International Islamic University Malaysia",
+    "importedRows": 35,
+    "byLevel": {
+      "bachelor": 0,
+      "master": 0,
+      "phd": 35
+    }
+  },
+  "sourceAudit": {
+    "workflowStatus": "validated_with_gaps",
+    "safeToImport": false,
+    "recommendedForImport": false,
+    "strictFeeGateStats": {
+      "primaryFeePolicy": "ian-approved-total-fee-from-current-official-finance-pdf-when-programme-page-has-no-direct-fee",
+      "totalProgrammesChecked": 35,
+      "programmePageDirectAmountRows": 0,
+      "programmePageDirectAmountMissRows": 35,
+      "supportingSourceOnlyRows": 35,
+      "officialDomainRows": 35,
+      "openHighFeeConflictRows": 0,
+      "pdfTotalFeeRowsPopulated": 35,
+      "grandTotalRowsExcluded": 35,
+      "integerRoundedRows": 1,
+      "approximateRows": 3,
+      "decision": "ACCEPTED_GAP_BY_IAN_POLICY_REQUIRES_IMPORT_REVIEW"
+    },
+    "languageGateStats": {
+      "directIeltsRows": 35,
+      "noDirectIeltsRows": 0,
+      "languageSlotMismatchRows": 0,
+      "equivalentPathMisusedAsIeltsRows": 0,
+      "formOptionContaminationRows": 0,
+      "officialIeltsDistribution": {
+        "3.0": 1,
+        "5.0": 12,
+        "6.0": 20,
+        "7.0": 2
+      },
+      "eptPolicy": "EPT is retained in language.otherRequirement as IIUM placement/proficiency pathway and is not converted into IELTS."
+    },
+    "openIssues": [
+      {
+        "issue_id": "PI-IIUM-DOCTORAL-20260629-002",
+        "status": "open",
+        "field": "generic/split doctoral programme rows",
+        "requiresIanDecision": true
+      },
+      {
+        "issue_id": "PI-IIUM-DOCTORAL-20260629-003",
+        "status": "open",
+        "field": "applicationDeadline",
+        "requiresIanDecision": true
+      },
+      {
+        "issue_id": "EQ-IIUM-DOCTORAL-20260629-002",
+        "status": "open",
+        "field": "programme_baseline/nameEn",
+        "requiresIanDecision": true
+      },
+      {
+        "issue_id": "EQ-IIUM-DOCTORAL-20260629-003",
+        "status": "open",
+        "field": "programme_baseline/nameEn",
+        "requiresIanDecision": true
+      },
+      {
+        "issue_id": "EQ-IIUM-DOCTORAL-20260629-004",
+        "status": "open",
+        "field": "nameEn/officialSourceUrl",
+        "requiresIanDecision": true
+      },
+      {
+        "issue_id": "EQ-IIUM-DOCTORAL-20260629-005",
+        "status": "open",
+        "field": "officialSourceUrl",
+        "requiresIanDecision": true
+      },
+      {
+        "issue_id": "EQ-IIUM-DOCTORAL-20260629-006",
+        "status": "open",
+        "field": "curriculum/fieldEvidence",
+        "requiresIanDecision": false
+      },
+      {
+        "issue_id": "EQ-IIUM-DOCTORAL-20260629-007",
+        "status": "open",
+        "field": "language.otherRequirement",
+        "requiresIanDecision": false
+      },
+      {
+        "issue_id": "EQ-IIUM-DOCTORAL-20260629-008",
+        "status": "open",
+        "field": "nameEn/applicationDeadline/tuitionMYR",
+        "requiresIanDecision": true
+      }
+    ],
+    "acceptedGapSummary": null
+  },
+  "database": {
+    "backupPath": "tmp/backups/iium-doctoral-public-before-2026-06-29T12-46-53-445Z.json",
+    "transactionalImport": "passed",
+    "catalogCacheCleared": false,
+    "scopedRows": 35,
+    "activeSupersededDoctoralRows": 0,
+    "legacyVisibleDoctoralRows": 0,
+    "visibleCurrentRows": 35,
+    "visibleBachelorRowsPreserved": 58,
+    "visibleMasterRowsPreserved": 81
+  },
+  "publicVisibility": {
+    "universityPublicDisplayStatus": "ready",
+    "universityIsPublished": true,
+    "universityProgramCount": 174,
+    "rowsPublished": 35,
+    "rowsReady": 35
+  },
+  "displayGate": {
+    "chineseNameRows": 35,
+    "chineseFacultyRows": 35,
+    "curriculumDisplayRows": 35,
+    "officialCurriculumRows": 35,
+    "careerDisplayRows": 35,
+    "officialCareerRows": 35,
+    "inferredCareerRows": 0,
+    "directIeltsRows": 35,
+    "eptMentionRows": 35,
+    "languageCoverageRows": 35,
+    "officialFeeRows": 35,
+    "sourceRows": 35
+  }
+}

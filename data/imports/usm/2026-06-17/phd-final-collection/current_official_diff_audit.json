@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-06-16T17:03:59.222Z",
+  "auditMode": "final-current-official-diff-audit",
+  "coverage": {
+    "candidateRecords": 95,
+    "uniqueOfficialUrls": 91,
+    "currentHtmlAttemptedUniqueUrls": 91,
+    "currentHtmlSuccessUniqueUrls": 20,
+    "currentHtmlTransportFailures": 71,
+    "currentHtmlRecordMatches": 22
+  },
+  "parserResult": {
+    "beforeAcademicGeneralRuleCount": 32,
+    "afterAcademicGeneralRuleCount": 24,
+    "closedAcademicByParserOrMapping": 8,
+    "beforeLanguageGeneralRuleCount": 32,
+    "afterLanguageGeneralRuleCount": 26,
+    "closedLanguageByParserOrMapping": 6,
+    "dbaDurationOfficial": "Full time: 7 semesters to 10 semesters Part time: 10 semesters to 14 semesters"
+  },
+  "transportPolicy": "Transport failures are recorded as transport exceptions and are not treated as official-unpublished facts."
+}

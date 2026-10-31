@@ -1,0 +1,992 @@
+{
+  "schemaVersion": 1,
+  "institution": "Sunway University",
+  "levels": [
+    "bachelor",
+    "master",
+    "phd"
+  ],
+  "declaredCounts": {
+    "bachelor": 48,
+    "master": 33,
+    "phd": 16
+  },
+  "directoryOccurrences": 104,
+  "canonicalProgrammes": 97,
+  "entries": [
+    {
+      "code": "SUNWAY-BACHELOR-001",
+      "level": "bachelor",
+      "directoryTitle": "Accounting and Finance",
+      "nameEnOfficial": "Bachelor of Science (Hons) in Accounting and Finance",
+      "facultyEn": "Accounting, Finance and Economics",
+      "sourceUrl": "https://sunwayuniversity.edu.my/sunway-business-school/courses/bachelor-of-science-hons-accounting-and-finance",
+      "canonicalStatus": "ready",
+      "collectionStatus": "collected"
+    },
+    {
+      "code": "SUNWAY-BACHELOR-002",
+      "level": "bachelor",
+      "directoryTitle": "Finance",
+      "nameEnOfficial": "Bachelor (Honours) in Finance",
+      "facultyEn": "Accounting, Finance and Economics",
+      "sourceUrl": "https://sunwayuniversity.edu.my/sunway-business-school/courses/bachelor-honours-finance",
+      "canonicalStatus": "ready",
+      "collectionStatus": "collected"
+    },
+    {
+      "code": "SUNWAY-BACHELOR-003",
+      "level": "bachelor",
+      "directoryTitle": "Financial Analysis",
+      "nameEnOfficial": "Bachelor of Science (Honours) Financial Analysis",
+      "facultyEn": "Accounting, Finance and Economics",
+      "sourceUrl": "https://sunwayuniversity.edu.my/sunway-business-school/courses/bachelor-of-science-honours-financial-analysis",
+      "canonicalStatus": "ready",
+      "collectionStatus": "collected"
+    },
+    {
+      "code": "SUNWAY-BACHELOR-004",
+      "level": "bachelor",
+      "directoryTitle": "Financial Economics",
+      "nameEnOfficial": "Bachelor of Science (Honours) Financial Economics",
+      "facultyEn": "Accounting, Finance and Economics",
+      "sourceUrl": "https://sunwayuniversity.edu.my/sunway-business-school/courses/bachelor-of-science-honours-financial-economics",
+      "canonicalStatus": "ready",
+      "collectionStatus": "collected"
+    },
+    {
+      "code": "SUNWAY-BACHELOR-005",
+      "level": "bachelor",
+      "directoryTitle": "Actuarial Studies",
+      "nameEnOfficial": "Bachelor of Science (Hons) in Actuarial Studies",
+      "facultyEn": "Actuarial Science and Risk",
+      "sourceUrl": "https://sunwayuniversity.edu.my/school-of-mathematical-sciences/courses/bachelor-of-science-hons-actuarial-studies",
+      "canonicalStatus": "ready",
+      "collectionStatus": "collected"
+    },
+    {
+      "code": "SUNWAY-BACHELOR-006",
+      "level": "bachelor",
+      "directoryTitle": "Computer Science (Artificial Intelligence)",
+      "nameEnOfficial": "Bachelor of Science (Honors) Computer Science (Artificial Intelligence)",
+      "facultyEn": "American Degree Program in partnership with Arizona State University®",
+      "sourceUrl": "https://sunwayuniversity.edu.my/school-of-american-education/courses/bachelor-of-science-honors-computer-science-artificial",
+      "canonicalStatus": "ready",
+      "collectionStatus": "collected"
+    },
+    {
+      "code": "SUNWAY-BACHELOR-007",
+      "level": "bachelor",
+      "directoryTitle": "Digital Communication (Advertising)",
+      "nameEnOfficial": "Bachelor in Digital Communication (Advertising) with Honors",
+      "facultyEn": "American Degree Program in partnership with Arizona State University®",
+      "sourceUrl": "https://sunwayuniversity.edu.my/school-of-american-education/courses/bachelor-digital-communication-advertising-honors",
+      "canonicalStatus": "ready",
+      "collectionStatus": "collected"
+    },
+    {
+      "code": "SUNWAY-BACHELOR-008",
+      "level": "bachelor",
+      "directoryTitle": "Digital Media Design",
+      "nameEnOfficial": "Bachelor in Digital Media Design with Honors",
+      "facultyEn": "American Degree Program in partnership with Arizona State University®",
+      "sourceUrl": "https://sunwayuniversity.edu.my/school-of-american-education/courses/bachelor-digital-media-design-honors",
+      "canonicalStatus": "ready",
+      "collectionStatus": "collected"
+    },
+    {
+      "code": "SUNWAY-BACHELOR-009",
+      "level": "bachelor",
+      "directoryTitle": "Global Management",
+      "nameEnOfficial": "Bachelor of Arts (Honors) Global Management",
+      "facultyEn": "American Degree Program in partnership with Arizona State University®",
+      "sourceUrl": "https://sunwayuniversity.edu.my/school-of-american-education/courses/bachelor-of-arts-honors-global-management",
+      "canonicalStatus": "ready",
+      "collectionStatus": "collected"
+    },
+    {
+      "code": "SUNWAY-BACHELOR-010",
+      "level": "bachelor",
+      "directoryTitle": "Psychology (Honors)",
+      "nameEnOfficial": "Bachelor of Arts in Psychology (Honors)",
+      "facultyEn": "American Degree Program in partnership with Arizona State University®",
+      "sourceUrl": "https://sunwayuniversity.edu.my/school-of-american-education/courses/bachelor-of-arts-psychology-honors",
+      "canonicalStatus": "ready",
+      "collectionStatus": "collected"
+    },
+    {
+      "code": "SUNWAY-BACHELOR-011",
+      "level": "bachelor",
+      "directoryTitle": "Statistical Data Modelling",
+      "nameEnOfficial": "Bachelor of Science (Honours) in Statistical Data Modelling",
+      "facultyEn": "Applied Statistics",
+      "sourceUrl": "https://sunwayuniversity.edu.my/school-of-mathematical-sciences/courses/bachelor-of-science-honours-statistical-data-modelling",
+      "canonicalStatus": "ready",
+      "collectionStatus": "collected"
+    },
+    {
+      "code": "SUNWAY-BACHELOR-012",
+      "level": "bachelor",
+      "directoryTitle": "Architecture",
+      "nameEnOfficial": "Bachelor of Arts (Honours) in Architecture",
+      "facultyEn": "Architecture and Design",
+      "sourceUrl": "https://sunwayuniversity.edu.my/faculty-of-arts-and-social-sciences/courses/bachelor-of-arts-honours-architecture",
+      "canonicalStatus": "ready",
+      "collectionStatus": "collected"
+    },
+    {
+      "code": "SUNWAY-BACHELOR-013",
+      "level": "bachelor",
+      "directoryTitle": "Design Communication",
+      "nameEnOfficial": "Bachelor of Arts (Honours) Design Communication",
+      "facultyEn": "Architecture and Design",
+      "sourceUrl": "https://sunwayuniversity.edu.my/faculty-of-arts-and-social-sciences/courses/bachelor-of-arts-honours-design-communication",
+      "canonicalStatus": "ready",
+      "collectionStatus": "collected"
+    },
+    {
+      "code": "SUNWAY-BACHELOR-014",
+      "level": "bachelor",
+      "directoryTitle": "Interior Architecture",
+      "nameEnOfficial": "Bachelor of Arts (Honours) in Interior Architecture",
+      "facultyEn": "Architecture and Design",
+      "sourceUrl": "https://sunwayuniversity.edu.my/faculty-of-arts-and-social-sciences/courses/bachelor-of-arts-honours-interior-architecture",
+      "canonicalStatus": "ready",
+      "collectionStatus": "collected"
+    },
+    {
+      "code": "SUNWAY-BACHELOR-015",
+      "level": "bachelor",
+      "directoryTitle": "Biomedicine",
+      "nameEnOfficial": "Bachelor of Science (Honours) Biomedicine",
+      "facultyEn": "Biomedical Sciences",
+      "sourceUrl": "https://sunwayuniversity.edu.my/faculty-of-medical-and-life-sciences/courses/bachelor-of-science-honours-biomedicine",
+      "canonicalStatus": "ready",
+      "collectionStatus": "collected"
+    },
+    {
+      "code": "SUNWAY-BACHELOR-016",
+      "level": "bachelor",
+      "directoryTitle": "Medical Biotechnology",
+      "nameEnOfficial": "BSc (Hons) Medical Biotechnology",
+      "facultyEn": "Biomedical Sciences",
+      "sourceUrl": "https://sunwayuniversity.edu.my/faculty-of-medical-and-life-sciences/courses/bsc-hons-medical-biotechnology",
+      "canonicalStatus": "ready",
+      "collectionStatus": "collected"
+    },
+    {
+      "code": "SUNWAY-BACHELOR-017",
+      "level": "bachelor",
+      "directoryTitle": "Business Analytics",
+      "nameEnOfficial": "Bachelor of Business Analytics (Honours)",
+      "facultyEn": "Business Analytics",
+      "sourceUrl": "https://sunwayuniversity.edu.my/sunway-business-school/courses/bachelor-of-business-analytics-honours",
+      "canonicalStatus": "ready",
+      "collectionStatus": "collected"
+    },
+    {
+      "code": "SUNWAY-BACHELOR-018",
+      "level": "bachelor",
+      "directoryTitle": "Advertising and Branding",
+      "nameEnOfficial": "Bachelor of Arts (Honours) in Advertising and Branding",
+      "facultyEn": "Communications and Media Studies",
+      "sourceUrl": "https://sunwayuniversity.edu.my/faculty-of-arts-and-social-sciences/courses/bachelor-of-arts-honours-advertising-and-branding",
+      "canonicalStatus": "ready",
+      "collectionStatus": "collected"
+    },
+    {
+      "code": "SUNWAY-BACHELOR-019",
+      "level": "bachelor",
+      "directoryTitle": "Communication",
+      "nameEnOfficial": "BA (Hons) in Communication",
+      "facultyEn": "Communications and Media Studies",
+      "sourceUrl": "https://sunwayuniversity.edu.my/faculty-of-arts-and-social-sciences/courses/ba-hons-communication",
+      "canonicalStatus": "ready",
+      "collectionStatus": "collected"
+    },
+    {
+      "code": "SUNWAY-BACHELOR-020",
+      "level": "bachelor",
+      "directoryTitle": "Digital Media Communication",
+      "nameEnOfficial": "Bachelor of Arts (Honours) in Digital Media Communication",
+      "facultyEn": "Communications and Media Studies",
+      "sourceUrl": "https://sunwayuniversity.edu.my/faculty-of-arts-and-social-sciences/courses/bachelor-of-arts-honours-digital-media-communication",
+      "canonicalStatus": "ready",
+      "collectionStatus": "collected"
+    },
+    {
+      "code": "SUNWAY-BACHELOR-021",
+      "level": "bachelor",
+      "directoryTitle": "Artificial Intelligence",
+      "nameEnOfficial": "Bachelor of Science (Honours) in Artificial Intelligence",
+      "facultyEn": "Computing",
+      "sourceUrl": "https://sunwayuniversity.edu.my/faculty-of-engineering-and-technology/courses/bachelor-of-science-honours-artificial-intelligence",
+      "canonicalStatus": "ready",
+      "collectionStatus": "collected"
+    },
+    {
+      "code": "SUNWAY-BACHELOR-022",
+      "level": "bachelor",
+      "directoryTitle": "Computer Science",
+      "nameEnOfficial": "Bachelor of Science (Honours) in Computer Science",
+      "facultyEn": "Computing",
+      "sourceUrl": "https://sunwayuniversity.edu.my/faculty-of-engineering-and-technology/courses/bachelor-of-science-honours-computer-science",
+      "canonicalStatus": "ready",
+      "collectionStatus": "collected"
+    },
+    {
+      "code": "SUNWAY-BACHELOR-023",
+      "level": "bachelor",
+      "directoryTitle": "Information Systems (Data Analytics)",
+      "nameEnOfficial": "Bachelor of Information Systems (Honours) (Data Analytics)",
+      "facultyEn": "Computing",
+      "sourceUrl": "https://sunwayuniversity.edu.my/faculty-of-engineering-and-technology/courses/bachelor-of-information-systems-honours-data",
+      "canonicalStatus": "ready",
+      "collectionStatus": "collected"
+    },
+    {
+      "code": "SUNWAY-BACHELOR-024",
+      "level": "bachelor",
+      "directoryTitle": "Information Technology",
+      "nameEnOfficial": "Bachelor of Science (Honours) in Information Technology",
+      "facultyEn": "Computing",
+      "sourceUrl": "https://sunwayuniversity.edu.my/faculty-of-engineering-and-technology/courses/bachelor-of-science-honours-information-technology",
+      "canonicalStatus": "ready",
+      "collectionStatus": "collected"
+    },
+    {
+      "code": "SUNWAY-BACHELOR-025",
+      "level": "bachelor",
+      "directoryTitle": "Information Technology (Computer Networking and Security)",
+      "nameEnOfficial": "BSc (Hons) Information Technology (Computer Networking and Security)",
+      "facultyEn": "Computing",
+      "sourceUrl": "https://sunwayuniversity.edu.my/faculty-of-engineering-and-technology/courses/bsc-hons-information-technology-computer-networking",
+      "canonicalStatus": "ready",
+      "collectionStatus": "collected"
+    },
+    {
+      "code": "SUNWAY-BACHELOR-026",
+      "level": "bachelor",
+      "directoryTitle": "Software Engineering",
+      "nameEnOfficial": "Bachelor of Software Engineering (Hons)",
+      "facultyEn": "Computing",
+      "sourceUrl": "https://sunwayuniversity.edu.my/faculty-of-engineering-and-technology/courses/bachelor-of-software-engineering-hons",
+      "canonicalStatus": "ready",
+      "collectionStatus": "collected"
+    },
+    {
+      "code": "SUNWAY-BACHELOR-027",
+      "level": "bachelor",
+      "directoryTitle": "Culinary Management",
+      "nameEnOfficial": "Bachelor of Science (Honours) in Culinary Management",
+      "facultyEn": "Culinary and Food Studies",
+      "sourceUrl": "https://sunwayuniversity.edu.my/school-of-hospitality-and-tourism-management/courses/bachelor-of-science-honours-culinary-management",
+      "canonicalStatus": "ready",
+      "collectionStatus": "collected"
+    },
+    {
+      "code": "SUNWAY-BACHELOR-028",
+      "level": "bachelor",
+      "directoryTitle": "Food Innovation",
+      "nameEnOfficial": "Bachelor of Science (Honours) in Food Innovation",
+      "facultyEn": "Culinary and Food Studies",
+      "sourceUrl": "https://sunwayuniversity.edu.my/school-of-hospitality-and-tourism-management/courses/bachelor-of-science-honours-food-innovation",
+      "canonicalStatus": "ready",
+      "collectionStatus": "collected"
+    },
+    {
+      "code": "SUNWAY-BACHELOR-029",
+      "level": "bachelor",
+      "directoryTitle": "Chemical Engineering",
+      "nameEnOfficial": "Bachelor of Chemical Engineering with Honours",
+      "facultyEn": "Engineering",
+      "sourceUrl": "https://sunwayuniversity.edu.my/faculty-of-engineering-and-technology/courses/bachelor-of-chemical-engineering-honours",
+      "canonicalStatus": "ready",
+      "collectionStatus": "collected"
+    },
+    {
+      "code": "SUNWAY-BACHELOR-030",
+      "level": "bachelor",
+      "directoryTitle": "Civil Engineering",
+      "nameEnOfficial": "Bachelor of Civil Engineering with Honours",
+      "facultyEn": "Engineering",
+      "sourceUrl": "https://sunwayuniversity.edu.my/faculty-of-engineering-and-technology/courses/bachelor-of-civil-engineering-honours",
+      "canonicalStatus": "ready",
+      "collectionStatus": "collected"
+    },
+    {
+      "code": "SUNWAY-BACHELOR-031",
+      "level": "bachelor",
+      "directoryTitle": "Electronic and Electrical Engineering",
+      "nameEnOfficial": "Bachelor of Electronic and Electrical Engineering with Honours",
+      "facultyEn": "Engineering",
+      "sourceUrl": "https://sunwayuniversity.edu.my/faculty-of-engineering-and-technology/courses/bachelor-of-electronic-and-electrical-engineering",
+      "canonicalStatus": "ready",
+      "collectionStatus": "collected"
+    },
+    {
+      "code": "SUNWAY-BACHELOR-032",
+      "level": "bachelor",
+      "directoryTitle": "Mechanical Engineering",
+      "nameEnOfficial": "Bachelor of Mechanical Engineering with Honours",
+      "facultyEn": "Engineering",
+      "sourceUrl": "https://sunwayuniversity.edu.my/faculty-of-engineering-and-technology/courses/bachelor-of-mechanical-engineering-honours",
+      "canonicalStatus": "ready",
+      "collectionStatus": "collected"
+    },
+    {
+      "code": "SUNWAY-BACHELOR-033",
+      "level": "bachelor",
+      "directoryTitle": "Mechatronic Engineering (Robotics)",
+      "nameEnOfficial": "Bachelor of Mechatronic Engineering (Robotics) with Honours",
+      "facultyEn": "Engineering",
+      "sourceUrl": "https://sunwayuniversity.edu.my/faculty-of-engineering-and-technology/courses/bachelor-of-mechatronic-engineering-robotics-honours",
+      "canonicalStatus": "ready",
+      "collectionStatus": "collected"
+    },
+    {
+      "code": "SUNWAY-BACHELOR-034",
+      "level": "bachelor",
+      "directoryTitle": "Contemporary Music (Audio Technology)",
+      "nameEnOfficial": "Bachelor of Arts (Honours) Contemporary Music (Audio Technology)",
+      "facultyEn": "Film and Performing Arts",
+      "sourceUrl": "https://sunwayuniversity.edu.my/faculty-of-arts-and-social-sciences/courses/bachelor-of-arts-honours-contemporary-music-audio",
+      "canonicalStatus": "ready",
+      "collectionStatus": "collected"
+    },
+    {
+      "code": "SUNWAY-BACHELOR-035",
+      "level": "bachelor",
+      "directoryTitle": "Digital Film Production",
+      "nameEnOfficial": "Bachelor of Arts (Honours) Digital Film Production",
+      "facultyEn": "Film and Performing Arts",
+      "sourceUrl": "https://sunwayuniversity.edu.my/faculty-of-arts-and-social-sciences/courses/bachelor-of-arts-honours-digital-film-production",
+      "canonicalStatus": "ready",
+      "collectionStatus": "collected"
+    },
+    {
+      "code": "SUNWAY-BACHELOR-036",
+      "level": "bachelor",
+      "directoryTitle": "Music Performance",
+      "nameEnOfficial": "Bachelor of Arts (Honours) Music Performance",
+      "facultyEn": "Film and Performing Arts",
+      "sourceUrl": "https://sunwayuniversity.edu.my/faculty-of-arts-and-social-sciences/courses/bachelor-of-arts-honours-music-performance",
+      "canonicalStatus": "ready",
+      "collectionStatus": "collected"
+    },
+    {
+      "code": "SUNWAY-BACHELOR-037",
+      "level": "bachelor",
+      "directoryTitle": "Theatre Production",
+      "nameEnOfficial": "Bachelor of Arts (Honours) in Theatre Production",
+      "facultyEn": "Film and Performing Arts",
+      "sourceUrl": "https://sunwayuniversity.edu.my/faculty-of-arts-and-social-sciences/courses/bachelor-of-arts-honours-theatre-production",
+      "canonicalStatus": "ready",
+      "collectionStatus": "collected"
+    },
+    {
+      "code": "SUNWAY-BACHELOR-038",
+      "level": "bachelor",
+      "directoryTitle": "Conventions and Events Management",
+      "nameEnOfficial": "Bachelor of Science (Honours) in Conventions and Events Management",
+      "facultyEn": "Hospitality and Events",
+      "sourceUrl": "https://sunwayuniversity.edu.my/school-of-hospitality-and-tourism-management/courses/bachelor-of-science-honours-conventions-and-events-management",
+      "canonicalStatus": "ready",
+      "collectionStatus": "collected"
+    },
+    {
+      "code": "SUNWAY-BACHELOR-039",
+      "level": "bachelor",
+      "directoryTitle": "International Hospitality Management",
+      "nameEnOfficial": "Bachelor of Science (Honours) in International Hospitality Management",
+      "facultyEn": "Hospitality and Events",
+      "sourceUrl": "https://sunwayuniversity.edu.my/school-of-hospitality-and-tourism-management/courses/bachelor-of-science-honours-international-hospitality-management",
+      "canonicalStatus": "ready",
+      "collectionStatus": "collected"
+    },
+    {
+      "code": "SUNWAY-BACHELOR-040",
+      "level": "bachelor",
+      "directoryTitle": "Business Management",
+      "nameEnOfficial": "Bachelor of Science (Honours) in Business Management",
+      "facultyEn": "Management",
+      "sourceUrl": "https://sunwayuniversity.edu.my/sunway-business-school/courses/bachelor-of-science-honours-business-management",
+      "canonicalStatus": "ready",
+      "collectionStatus": "collected"
+    },
+    {
+      "code": "SUNWAY-BACHELOR-041",
+      "level": "bachelor",
+      "directoryTitle": "Entrepreneurship",
+      "nameEnOfficial": "Bachelor of Arts (Honours) Entrepreneurship",
+      "facultyEn": "Management",
+      "sourceUrl": "https://sunwayuniversity.edu.my/sunway-business-school/courses/bachelor-of-arts-honours-entrepreneurship",
+      "canonicalStatus": "ready",
+      "collectionStatus": "collected"
+    },
+    {
+      "code": "SUNWAY-BACHELOR-042",
+      "level": "bachelor",
+      "directoryTitle": "Global Supply Chain Management",
+      "nameEnOfficial": "Bachelor of Science (Honours) Global Supply Chain Management",
+      "facultyEn": "Management",
+      "sourceUrl": "https://sunwayuniversity.edu.my/sunway-business-school/courses/bachelor-of-science-honours-global-supply-chain-management",
+      "canonicalStatus": "ready",
+      "collectionStatus": "collected"
+    },
+    {
+      "code": "SUNWAY-BACHELOR-043",
+      "level": "bachelor",
+      "directoryTitle": "International Business",
+      "nameEnOfficial": "Bachelor of Science (Honours) in International Business",
+      "facultyEn": "Management",
+      "sourceUrl": "https://sunwayuniversity.edu.my/sunway-business-school/courses/bachelor-of-science-honours-international-business",
+      "canonicalStatus": "ready",
+      "collectionStatus": "collected"
+    },
+    {
+      "code": "SUNWAY-BACHELOR-044",
+      "level": "bachelor",
+      "directoryTitle": "Business Studies",
+      "nameEnOfficial": "Bachelor of Science (Honours) in Business Studies",
+      "facultyEn": "Marketing Strategy and Innovation",
+      "sourceUrl": "https://sunwayuniversity.edu.my/sunway-business-school/courses/bachelor-of-science-honours-business-studies",
+      "canonicalStatus": "ready",
+      "collectionStatus": "collected"
+    },
+    {
+      "code": "SUNWAY-BACHELOR-045",
+      "level": "bachelor",
+      "directoryTitle": "Marketing",
+      "nameEnOfficial": "Bachelor of Science (Honours) Marketing",
+      "facultyEn": "Marketing Strategy and Innovation",
+      "sourceUrl": "https://sunwayuniversity.edu.my/sunway-business-school/courses/bachelor-of-science-honours-marketing",
+      "canonicalStatus": "ready",
+      "collectionStatus": "collected"
+    },
+    {
+      "code": "SUNWAY-BACHELOR-046",
+      "level": "bachelor",
+      "directoryTitle": "Doctor of Medicine",
+      "nameEnOfficial": "Doctor of Medicine (MD)",
+      "facultyEn": "Medical Education",
+      "sourceUrl": "https://sunwayuniversity.edu.my/faculty-of-medical-and-life-sciences/courses/doctor-of-medicine",
+      "canonicalStatus": "ready",
+      "collectionStatus": "collected"
+    },
+    {
+      "code": "SUNWAY-BACHELOR-047",
+      "level": "bachelor",
+      "directoryTitle": "Bachelor of Nursing (Honours)",
+      "nameEnOfficial": "Bachelor of Nursing (Honours)",
+      "facultyEn": "Nursing",
+      "sourceUrl": "https://sunwayuniversity.edu.my/faculty-of-medical-and-life-sciences/courses/bachelor-of-nursing-honours",
+      "canonicalStatus": "ready",
+      "collectionStatus": "collected"
+    },
+    {
+      "code": "SUNWAY-BACHELOR-048",
+      "level": "bachelor",
+      "directoryTitle": "Psychology",
+      "nameEnOfficial": "Bachelor of Science (Honours) in Psychology",
+      "facultyEn": "Psychology",
+      "sourceUrl": "https://sunwayuniversity.edu.my/faculty-of-medical-and-life-sciences/courses/bachelor-of-science-honours-psychology",
+      "canonicalStatus": "ready",
+      "collectionStatus": "collected"
+    },
+    {
+      "code": "SUNWAY-PHD-001",
+      "level": "phd",
+      "directoryTitle": "Biology",
+      "nameEnOfficial": "Doctor of Philosophy in Biology",
+      "facultyEn": "Doctor of Philosophy (PhD) Degrees",
+      "sourceUrl": "https://sunwayuniversity.edu.my/faculty-of-medical-and-life-sciences/courses/doctor-of-philosophy-biology",
+      "canonicalStatus": "ready",
+      "collectionStatus": "collected"
+    },
+    {
+      "code": "SUNWAY-PHD-002",
+      "level": "phd",
+      "directoryTitle": "Business",
+      "nameEnOfficial": "Doctor of Philosophy (Business)",
+      "facultyEn": "Doctor of Philosophy (PhD) Degrees",
+      "sourceUrl": "https://sunwayuniversity.edu.my/sunway-business-school/courses/doctor-of-philosophy-business",
+      "canonicalStatus": "ready",
+      "collectionStatus": "collected"
+    },
+    {
+      "code": "SUNWAY-PHD-003",
+      "level": "phd",
+      "directoryTitle": "Computing",
+      "nameEnOfficial": "Doctor of Philosophy (Computing)",
+      "facultyEn": "Doctor of Philosophy (PhD) Degrees",
+      "sourceUrl": "https://sunwayuniversity.edu.my/faculty-of-engineering-and-technology/courses/doctor-of-philosophy-computing",
+      "canonicalStatus": "ready",
+      "collectionStatus": "collected"
+    },
+    {
+      "code": "SUNWAY-PHD-004",
+      "level": "phd",
+      "directoryTitle": "Creative Arts and Media",
+      "nameEnOfficial": "Doctor of Philosophy in Creative Arts and Media",
+      "facultyEn": "Doctor of Philosophy (PhD) Degrees",
+      "sourceUrl": "https://sunwayuniversity.edu.my/faculty-of-arts-and-social-sciences/courses/doctor-of-philosophy-creative-arts-and-media",
+      "canonicalStatus": "ready",
+      "collectionStatus": "collected"
+    },
+    {
+      "code": "SUNWAY-PHD-005",
+      "level": "phd",
+      "directoryTitle": "Education",
+      "nameEnOfficial": "Doctor of Philosophy in Education",
+      "facultyEn": "Doctor of Philosophy (PhD) Degrees",
+      "sourceUrl": "https://sunwayuniversity.edu.my/school-of-education/courses/doctor-of-philosophy-education",
+      "canonicalStatus": "ready",
+      "collectionStatus": "collected"
+    },
+    {
+      "code": "SUNWAY-PHD-006",
+      "level": "phd",
+      "directoryTitle": "Hospitality and Tourism",
+      "nameEnOfficial": "Doctor of Philosophy in Hospitality and Tourism",
+      "facultyEn": "Doctor of Philosophy (PhD) Degrees",
+      "sourceUrl": "https://sunwayuniversity.edu.my/school-of-hospitality-and-tourism-management/courses/doctor-of-philosophy-hospitality-and-tourism",
+      "canonicalStatus": "ready",
+      "collectionStatus": "collected"
+    },
+    {
+      "code": "SUNWAY-PHD-007",
+      "level": "phd",
+      "directoryTitle": "Mathematical Sciences",
+      "nameEnOfficial": "Doctor of Philosophy in Mathematical Sciences",
+      "facultyEn": "Doctor of Philosophy (PhD) Degrees",
+      "sourceUrl": "https://sunwayuniversity.edu.my/school-of-mathematical-sciences/courses/doctor-of-philosophy-mathematical-sciences",
+      "canonicalStatus": "ready",
+      "collectionStatus": "collected"
+    },
+    {
+      "code": "SUNWAY-PHD-008",
+      "level": "phd",
+      "directoryTitle": "Medical Science",
+      "nameEnOfficial": "Doctor of Philosophy in Medical Science",
+      "facultyEn": "Doctor of Philosophy (PhD) Degrees",
+      "sourceUrl": "https://sunwayuniversity.edu.my/faculty-of-medical-and-life-sciences/courses/doctor-of-philosophy-medical-science",
+      "canonicalStatus": "ready",
+      "collectionStatus": "collected"
+    },
+    {
+      "code": "SUNWAY-PHD-009",
+      "level": "phd",
+      "directoryTitle": "Nursing",
+      "nameEnOfficial": "Doctor of Philosophy in Nursing",
+      "facultyEn": "Doctor of Philosophy (PhD) Degrees",
+      "sourceUrl": "https://sunwayuniversity.edu.my/faculty-of-medical-and-life-sciences/courses/doctor-of-philosophy-nursing",
+      "canonicalStatus": "ready",
+      "collectionStatus": "collected"
+    },
+    {
+      "code": "SUNWAY-PHD-010",
+      "level": "phd",
+      "directoryTitle": "Psychology",
+      "nameEnOfficial": "Doctor of Philosophy in Psychology",
+      "facultyEn": "Doctor of Philosophy (PhD) Degrees",
+      "sourceUrl": "https://sunwayuniversity.edu.my/faculty-of-medical-and-life-sciences/courses/doctor-of-philosophy-psychology",
+      "canonicalStatus": "ready",
+      "collectionStatus": "collected"
+    },
+    {
+      "code": "SUNWAY-PHD-011",
+      "level": "phd",
+      "directoryTitle": "Sustainability Science and Engineering",
+      "nameEnOfficial": "Doctor of Philosophy in Sustainability Science and Engineering",
+      "facultyEn": "Doctor of Philosophy (PhD) Degrees",
+      "sourceUrl": "https://sunwayuniversity.edu.my/faculty-of-engineering-and-technology/courses/doctor-of-philosophy-sustainability-science-and",
+      "canonicalStatus": "ready",
+      "collectionStatus": "collected"
+    },
+    {
+      "code": "SUNWAY-PHD-012",
+      "level": "phd",
+      "directoryTitle": "Sustainable Development",
+      "nameEnOfficial": "Doctor of Philosophy in Sustainable Development",
+      "facultyEn": "Doctor of Philosophy (PhD) Degrees",
+      "sourceUrl": "https://sunwayuniversity.edu.my/jsc/courses/doctor-of-philosophy-sustainable-development",
+      "canonicalStatus": "ready",
+      "collectionStatus": "collected"
+    },
+    {
+      "code": "SUNWAY-PHD-013",
+      "level": "phd",
+      "directoryTitle": "Business Administration",
+      "nameEnOfficial": "Doctor of Business Administration",
+      "facultyEn": "Doctorate",
+      "sourceUrl": "https://sunwayuniversity.edu.my/sunway-business-school/courses/doctor-of-business-administration",
+      "canonicalStatus": "ready",
+      "collectionStatus": "collected"
+    },
+    {
+      "code": "SUNWAY-PHD-014",
+      "level": "phd",
+      "directoryTitle": "Computing",
+      "nameEnOfficial": "Doctor of Computing",
+      "facultyEn": "Doctorate",
+      "sourceUrl": "https://sunwayuniversity.edu.my/faculty-of-engineering-and-technology/courses/doctor-of-computing",
+      "canonicalStatus": "ready",
+      "collectionStatus": "collected"
+    },
+    {
+      "code": "SUNWAY-PHD-015",
+      "level": "phd",
+      "directoryTitle": "Education",
+      "nameEnOfficial": "Doctor of Education",
+      "facultyEn": "Doctorate",
+      "sourceUrl": "https://sunwayuniversity.edu.my/school-of-education/courses/doctor-of-education",
+      "canonicalStatus": "ready",
+      "collectionStatus": "collected"
+    },
+    {
+      "code": "SUNWAY-PHD-016",
+      "level": "phd",
+      "directoryTitle": "Engineering",
+      "nameEnOfficial": "Doctor of Engineering",
+      "facultyEn": "Doctorate",
+      "sourceUrl": "https://sunwayuniversity.edu.my/faculty-of-engineering-and-technology/courses/doctor-of-engineering",
+      "canonicalStatus": "ready",
+      "collectionStatus": "collected"
+    },
+    {
+      "code": "SUNWAY-MASTER-001",
+      "level": "master",
+      "directoryTitle": "Computer Science",
+      "nameEnOfficial": "Master of Science in Computer Science",
+      "facultyEn": "Master's Degree (By Research)",
+      "sourceUrl": "https://sunwayuniversity.edu.my/faculty-of-engineering-and-technology/courses/master-of-science-computer-science",
+      "canonicalStatus": "ready",
+      "collectionStatus": "collected"
+    },
+    {
+      "code": "SUNWAY-MASTER-002",
+      "level": "master",
+      "directoryTitle": "Creative Arts and Media",
+      "nameEnOfficial": "Master of Arts in Creative Arts and Media",
+      "facultyEn": "Master's Degree (By Research)",
+      "sourceUrl": "https://sunwayuniversity.edu.my/faculty-of-arts-and-social-sciences/courses/master-of-arts-creative-arts-and-media",
+      "canonicalStatus": "ready",
+      "collectionStatus": "collected"
+    },
+    {
+      "code": "SUNWAY-MASTER-003",
+      "level": "master",
+      "directoryTitle": "Education",
+      "nameEnOfficial": "Master of Education",
+      "facultyEn": "Master's Degree (By Research)",
+      "sourceUrl": "https://sunwayuniversity.edu.my/school-of-education/courses/master-of-education-research",
+      "canonicalStatus": "ready",
+      "collectionStatus": "collected"
+    },
+    {
+      "code": "SUNWAY-MASTER-004",
+      "level": "master",
+      "directoryTitle": "Life Sciences",
+      "nameEnOfficial": "Master of Science in Life Sciences",
+      "facultyEn": "Master's Degree (By Research)",
+      "sourceUrl": "https://sunwayuniversity.edu.my/faculty-of-medical-and-life-sciences/courses/master-of-science-life-sciences",
+      "canonicalStatus": "ready",
+      "collectionStatus": "collected"
+    },
+    {
+      "code": "SUNWAY-MASTER-005",
+      "level": "master",
+      "directoryTitle": "Mathematical Sciences",
+      "nameEnOfficial": "Master of Science in Mathematical Sciences",
+      "facultyEn": "Master's Degree (By Research)",
+      "sourceUrl": "https://sunwayuniversity.edu.my/school-of-mathematical-sciences/courses/master-of-science-mathematical-sciences",
+      "canonicalStatus": "ready",
+      "collectionStatus": "collected"
+    },
+    {
+      "code": "SUNWAY-MASTER-006",
+      "level": "master",
+      "directoryTitle": "Medical Science",
+      "nameEnOfficial": "Master in Medical Science",
+      "facultyEn": "Master's Degree (By Research)",
+      "sourceUrl": "https://sunwayuniversity.edu.my/faculty-of-medical-and-life-sciences/courses/master-medical-science",
+      "canonicalStatus": "ready",
+      "collectionStatus": "collected"
+    },
+    {
+      "code": "SUNWAY-MASTER-007",
+      "level": "master",
+      "directoryTitle": "Nursing",
+      "nameEnOfficial": "Master in Nursing",
+      "facultyEn": "Master's Degree (By Research)",
+      "sourceUrl": "https://sunwayuniversity.edu.my/faculty-of-medical-and-life-sciences/courses/master-nursing",
+      "canonicalStatus": "ready",
+      "collectionStatus": "collected"
+    },
+    {
+      "code": "SUNWAY-MASTER-008",
+      "level": "master",
+      "directoryTitle": "Philosophy (Business Administration)",
+      "nameEnOfficial": "Master of Philosophy (Business Administration)",
+      "facultyEn": "Master's Degree (By Research)",
+      "sourceUrl": "https://sunwayuniversity.edu.my/sunway-business-school/courses/master-of-philosophy-business-administration",
+      "canonicalStatus": "ready",
+      "collectionStatus": "collected"
+    },
+    {
+      "code": "SUNWAY-MASTER-009",
+      "level": "master",
+      "directoryTitle": "Psychology",
+      "nameEnOfficial": "Master of Science in Psychology",
+      "facultyEn": "Master's Degree (By Research)",
+      "sourceUrl": "https://sunwayuniversity.edu.my/faculty-of-medical-and-life-sciences/courses/master-of-science-psychology",
+      "canonicalStatus": "ready",
+      "collectionStatus": "collected"
+    },
+    {
+      "code": "SUNWAY-MASTER-010",
+      "level": "master",
+      "directoryTitle": "Actuarial Analytics",
+      "nameEnOfficial": "Master of Science in Actuarial Analytics",
+      "facultyEn": "Master's Degree (Taught)",
+      "sourceUrl": "https://sunwayuniversity.edu.my/school-of-mathematical-sciences/courses/master-of-science-actuarial-analytics",
+      "canonicalStatus": "ready",
+      "collectionStatus": "collected"
+    },
+    {
+      "code": "SUNWAY-MASTER-011",
+      "level": "master",
+      "directoryTitle": "Advanced Computing",
+      "nameEnOfficial": "Master in Advanced Computing",
+      "facultyEn": "Master's Degree (Taught)",
+      "sourceUrl": "https://sunwayuniversity.edu.my/faculty-of-engineering-and-technology/courses/master-advanced-computing",
+      "canonicalStatus": "ready",
+      "collectionStatus": "collected"
+    },
+    {
+      "code": "SUNWAY-MASTER-012",
+      "level": "master",
+      "directoryTitle": "Applied Behaviour Analysis",
+      "nameEnOfficial": "Master of Applied Behaviour Analysis",
+      "facultyEn": "Master's Degree (Taught)",
+      "sourceUrl": "https://sunwayuniversity.edu.my/faculty-of-medical-and-life-sciences/courses/master-of-applied-behaviour-analysis",
+      "canonicalStatus": "ready",
+      "collectionStatus": "collected"
+    },
+    {
+      "code": "SUNWAY-MASTER-013",
+      "level": "master",
+      "directoryTitle": "Applied Mathematics",
+      "nameEnOfficial": "Master of Science in Applied Mathematics",
+      "facultyEn": "Master's Degree (Taught)",
+      "sourceUrl": "https://sunwayuniversity.edu.my/school-of-mathematical-sciences/courses/master-of-science-applied-mathematics",
+      "canonicalStatus": "ready",
+      "collectionStatus": "collected"
+    },
+    {
+      "code": "SUNWAY-MASTER-014",
+      "level": "master",
+      "directoryTitle": "Artificial Intelligence",
+      "nameEnOfficial": "Master in Artificial Intelligence",
+      "facultyEn": "Master's Degree (Taught)",
+      "sourceUrl": "https://sunwayuniversity.edu.my/faculty-of-engineering-and-technology/courses/master-artificial-intelligence",
+      "canonicalStatus": "ready",
+      "collectionStatus": "collected"
+    },
+    {
+      "code": "SUNWAY-MASTER-015",
+      "level": "master",
+      "directoryTitle": "Business Administration",
+      "nameEnOfficial": "Master of Business Administration",
+      "facultyEn": "Master's Degree (Taught)",
+      "sourceUrl": "https://sunwayuniversity.edu.my/sunway-business-school/courses/master-of-business-administration",
+      "canonicalStatus": "ready",
+      "collectionStatus": "collected"
+    },
+    {
+      "code": "SUNWAY-MASTER-016",
+      "level": "master",
+      "directoryTitle": "Business Analytics",
+      "nameEnOfficial": "Master of Business Analytics",
+      "facultyEn": "Master's Degree (Taught)",
+      "sourceUrl": "https://sunwayuniversity.edu.my/sunway-business-school/courses/master-of-business-analytics",
+      "canonicalStatus": "ready",
+      "collectionStatus": "collected"
+    },
+    {
+      "code": "SUNWAY-MASTER-017",
+      "level": "master",
+      "directoryTitle": "Communication",
+      "nameEnOfficial": "Master of Arts in Communication",
+      "facultyEn": "Master's Degree (Taught)",
+      "sourceUrl": "https://sunwayuniversity.edu.my/faculty-of-arts-and-social-sciences/courses/master-of-arts-communication",
+      "canonicalStatus": "ready",
+      "collectionStatus": "collected"
+    },
+    {
+      "code": "SUNWAY-MASTER-018",
+      "level": "master",
+      "directoryTitle": "Counselling",
+      "nameEnOfficial": "Master of Counselling",
+      "facultyEn": "Master's Degree (Taught)",
+      "sourceUrl": "https://sunwayuniversity.edu.my/faculty-of-medical-and-life-sciences/courses/master-of-counselling",
+      "canonicalStatus": "ready",
+      "collectionStatus": "collected"
+    },
+    {
+      "code": "SUNWAY-MASTER-019",
+      "level": "master",
+      "directoryTitle": "Counselling (Clinical Mental Health)",
+      "nameEnOfficial": "Masters of Counselling (Clinical Mental Health)",
+      "facultyEn": "Master's Degree (Taught)",
+      "sourceUrl": "https://sunwayuniversity.edu.my/faculty-of-medical-and-life-sciences/courses/masters-of-counselling-clinical-mental-health",
+      "canonicalStatus": "ready",
+      "collectionStatus": "collected"
+    },
+    {
+      "code": "SUNWAY-MASTER-020",
+      "level": "master",
+      "directoryTitle": "Digital Engineering",
+      "nameEnOfficial": "Master in Digital Engineering",
+      "facultyEn": "Master's Degree (Taught)",
+      "sourceUrl": "https://sunwayuniversity.edu.my/faculty-of-engineering-and-technology/courses/master-digital-engineering",
+      "canonicalStatus": "ready",
+      "collectionStatus": "collected"
+    },
+    {
+      "code": "SUNWAY-MASTER-021",
+      "level": "master",
+      "directoryTitle": "Education",
+      "nameEnOfficial": "Master of Education",
+      "facultyEn": "Master's Degree (Taught)",
+      "sourceUrl": "https://sunwayuniversity.edu.my/school-of-education/courses/master-of-education",
+      "canonicalStatus": "ready",
+      "collectionStatus": "collected"
+    },
+    {
+      "code": "SUNWAY-MASTER-022",
+      "level": "master",
+      "directoryTitle": "Human Resource Management",
+      "nameEnOfficial": "Master of Human Resource Management",
+      "facultyEn": "Master's Degree (Taught)",
+      "sourceUrl": "https://sunwayuniversity.edu.my/sunway-business-school/courses/master-of-human-resource-management",
+      "canonicalStatus": "ready",
+      "collectionStatus": "collected"
+    },
+    {
+      "code": "SUNWAY-MASTER-023",
+      "level": "master",
+      "directoryTitle": "International Hospitality Management",
+      "nameEnOfficial": "Master in International Hospitality Management",
+      "facultyEn": "Master's Degree (Taught)",
+      "sourceUrl": "https://sunwayuniversity.edu.my/school-of-hospitality-and-tourism-management/courses/master-international-hospitality-management",
+      "canonicalStatus": "ready",
+      "collectionStatus": "collected"
+    },
+    {
+      "code": "SUNWAY-MASTER-024",
+      "level": "master",
+      "directoryTitle": "Marketing",
+      "nameEnOfficial": "Master of Marketing",
+      "facultyEn": "Master's Degree (Taught)",
+      "sourceUrl": "https://sunwayuniversity.edu.my/sunway-business-school/courses/master-of-marketing",
+      "canonicalStatus": "ready",
+      "collectionStatus": "collected"
+    },
+    {
+      "code": "SUNWAY-MASTER-025",
+      "level": "master",
+      "directoryTitle": "Sustainable Development Management",
+      "nameEnOfficial": "Master in Sustainable Development Management",
+      "facultyEn": "Master's Degree (Taught)",
+      "sourceUrl": "https://sunwayuniversity.edu.my/jsc/courses/master-sustainable-development-management-0",
+      "canonicalStatus": "ready",
+      "collectionStatus": "collected"
+    },
+    {
+      "code": "SUNWAY-MASTER-026",
+      "level": "master",
+      "directoryTitle": "Visual Communication and Media Studies",
+      "nameEnOfficial": "Master of Arts in Visual Communication and Media Studies",
+      "facultyEn": "Master's Degree (Taught)",
+      "sourceUrl": "https://sunwayuniversity.edu.my/faculty-of-arts-and-social-sciences/courses/master-of-arts-visual-communication-and-media-studies",
+      "canonicalStatus": "ready",
+      "collectionStatus": "collected"
+    },
+    {
+      "code": "SUNWAY-MASTER-027",
+      "level": "master",
+      "directoryTitle": "Business Administration (Online)",
+      "nameEnOfficial": "Master of Business Administration",
+      "facultyEn": "Master's Degrees (Online)",
+      "sourceUrl": "https://sunwayuniversity.edu.my/sunway-business-school/courses/master-of-business-administration-online",
+      "canonicalStatus": "ready",
+      "collectionStatus": "collected"
+    },
+    {
+      "code": "SUNWAY-MASTER-028",
+      "level": "master",
+      "directoryTitle": "Business Analytics (Online)",
+      "nameEnOfficial": "Master of Business Analytics",
+      "facultyEn": "Master's Degrees (Online)",
+      "sourceUrl": "https://sunwayuniversity.edu.my/sunway-business-school/courses/master-of-business-analytics-online",
+      "canonicalStatus": "ready",
+      "collectionStatus": "collected"
+    },
+    {
+      "code": "SUNWAY-MASTER-029",
+      "level": "master",
+      "directoryTitle": "Data Science (Online)",
+      "nameEnOfficial": "Master in Data Science",
+      "facultyEn": "Master's Degrees (Online)",
+      "sourceUrl": "https://sunwayuniversity.edu.my/faculty-of-engineering-and-technology/courses/master-data-science-online",
+      "canonicalStatus": "ready",
+      "collectionStatus": "collected"
+    },
+    {
+      "code": "SUNWAY-MASTER-030",
+      "level": "master",
+      "directoryTitle": "Education (Online)",
+      "nameEnOfficial": "Master of Education",
+      "facultyEn": "Master's Degrees (Online)",
+      "sourceUrl": "https://sunwayuniversity.edu.my/school-of-education/courses/master-of-education-online",
+      "canonicalStatus": "ready",
+      "collectionStatus": "collected"
+    },
+    {
+      "code": "SUNWAY-MASTER-031",
+      "level": "master",
+      "directoryTitle": "Finance (Online)",
+      "nameEnOfficial": "Master of Finance",
+      "facultyEn": "Master's Degrees (Online)",
+      "sourceUrl": "https://sunwayuniversity.edu.my/sunway-business-school/courses/master-of-finance-online",
+      "canonicalStatus": "ready",
+      "collectionStatus": "collected"
+    },
+    {
+      "code": "SUNWAY-MASTER-032",
+      "level": "master",
+      "directoryTitle": "Management (Online)",
+      "nameEnOfficial": "Master of Management",
+      "facultyEn": "Master's Degrees (Online)",
+      "sourceUrl": "https://sunwayuniversity.edu.my/sunway-business-school/courses/master-of-management-online",
+      "canonicalStatus": "ready",
+      "collectionStatus": "collected"
+    },
+    {
+      "code": "SUNWAY-MASTER-033",
+      "level": "master",
+      "directoryTitle": "Marketing (Online)",
+      "nameEnOfficial": "Master of Marketing",
+      "facultyEn": "Master's Degrees (Online)",
+      "sourceUrl": "https://sunwayuniversity.edu.my/sunway-business-school/courses/master-of-marketing-online",
+      "canonicalStatus": "ready",
+      "collectionStatus": "collected"
+    }
+  ],
+  "notes": [
+    "Undergraduate transfer/pathway rows and postgraduate certificate/diploma rows are disposed as out-of-scope for this 本硕博 run.",
+    "Doctor of Medicine is retained under the StudyMY bachelor/undergraduate tab as an official undergraduate programme row, with its official award title preserved."
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "status": "passed",
+  "recordKey": "programmes",
+  "baselineKey": "official_row_disposal",
+  "pageOptionKey": "page_option_inventory",
+  "coverageKey": "field_coverage_matrix",
+  "displayParityKey": "display_parity_report.surfaces",
+  "instructionLedgerKey": "instruction_execution_ledger",
+  "officialDomains": [
+    "admission.utm.my",
+    "fest.utm.my",
+    "odl.utm.my",
+    "utm.my"
+  ],
+  "recordCount": 55,
+  "baselineCount": 63,
+  "pageOptionCount": 55,
+  "coverageRowCount": 55,
+  "displayParityRowCount": 5,
+  "instructionLedgerCount": 6,
+  "recordsByPublicStatus": {
+    "ready": 55
+  },
+  "issueCounts": {},
+  "issues": []
+}

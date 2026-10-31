@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-06-16T15:28:44Z",
+  "institution": {
+    "code": "USM",
+    "name": "Universiti Sains Malaysia"
+  },
+  "collectionScope": "programmes",
+  "level": "phd",
+  "applicantScope": "international",
+  "academicSession": "current directory and 2025/2026 official postgraduate fees",
+  "currentAsOf": "2026-06-16",
+  "authorization": "collect",
+  "taskPage": "docs/notion-snapshot/tasks/TASK-USM-PHD-COLLECT-20260614.md",
+  "technicalDesign": "docs/prd/USM-phd-official-collection-technical-design.md",
+  "outputPaths": {
+    "candidate": "data/imports/usm/2026-06-14/phd-candidate.json",
+    "auditDirectory": "data/imports/usm/2026-06-16/phd-level-audit"
+  },
+  "verificationCommands": [
+    "python3 scripts/verify-usm-phd-candidate.py --manifest data/imports/usm/2026-06-14/phd-candidate.json",
+    "npm test -- tests/api/usm-phd-commercial-import.test.ts tests/web/format.test.ts",
+    "python3 -m py_compile scripts/build-usm-phd-candidate.py scripts/verify-usm-phd-candidate.py scripts/audit-official-total-tuition.py"
+  ],
+  "databaseWrite": "not-performed",
+  "notionUpdate": "local snapshot only; writable Notion connector not available"
+}

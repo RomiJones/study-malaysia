@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 2,
+  "decision": "published-with-fee-unpublished-exceptions",
+  "backupPath": "/Users/ian/Desktop/dev/study-malaysia/apps/api/tmp/backups/segi-before-official-catalog-publish-2026-06-17T10-18-52-771Z.json",
+  "verification": {
+    "verifiedAt": "2026-06-17",
+    "readyRows": 76,
+    "byLevel": {
+      "phd": 9,
+      "master": 28,
+      "bachelor": 39
+    },
+    "officialSourceRows": 76,
+    "academicRequirementRows": 76,
+    "languageRequirementRows": 76,
+    "curriculumRows": 76,
+    "careerRows": 76,
+    "feeMatchedRows": 0,
+    "feeSheetEvidenceRows": 73,
+    "feeSheetBackfilledRows": 25,
+    "feePendingOfficialPublicationRows": 0,
+    "feeNotPublishedRows": 3,
+    "intakeConcreteRows": 50,
+    "intakeOfficialUnpublishedRows": 26,
+    "publicLocalPathLeak": false
+  }
+}

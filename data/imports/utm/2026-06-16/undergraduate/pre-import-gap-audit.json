@@ -7,7 +7,7 @@
     "tuitionTotal": 44,
     "detailUrl": 44,
     "detailPageParsed": 41,
-    "duration": 40,
+    "duration": 44,
     "entryRequirements": 44,
     "programmeSpecificAcademicRequirements": 18,
     "languageRequirements": 44,
@@ -17,7 +17,7 @@
   },
   "missingOrWeakFields": {
     "languageRequirements": 0,
-    "duration": 4,
+    "duration": 0,
     "curriculum": 24,
     "programmeSpecificAcademicRequirements": 26,
     "careers": 15,
@@ -27,6 +27,7 @@
     "The current All Courses HTML governs live catalogue rows and current application status.",
     "The September 2026 PDF governs the current advertised intake list and application dates.",
     "The international fee page publishes field-level totals and selected programme-level MJIIT totals.",
-    "Faculty detail pages govern programme overview, duration, curriculum, accreditation, and careers when parsed."
+    "Faculty detail pages govern programme overview, duration, curriculum, accreditation, and careers when parsed.",
+    "Supplemental official programme handbooks are used only when the live faculty detail page omits a programme-specific duration field."
   ]
 }

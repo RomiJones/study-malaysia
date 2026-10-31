@@ -1,0 +1,163 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-06-19T06:35:39.701Z",
+  "scope": {
+    "schemaVersion": 1,
+    "generatedAt": "2026-06-19T06:35:39.701Z",
+    "institution": {
+      "code": "USM",
+      "name": "Universiti Sains Malaysia"
+    },
+    "collectionScope": "full",
+    "levels": [
+      "bachelor",
+      "master",
+      "phd"
+    ],
+    "applicantScope": "international",
+    "academicSession": "current official directory pages and 2025/2026 official postgraduate fees",
+    "currentAsOf": "2026-06-19",
+    "authorization": "publish-verification-recheck-no-new-database-write",
+    "selectedChineseTask": "docs/notion-snapshot/tasks/TASK-USM-FINAL-LANGUAGE-CONFIRMATION-20260616.md plus docs/prd/USM-all-level-official-publication-audit.md latest 2026-06-17 baseline",
+    "prdAndTechnicalDesign": [
+      "docs/prd/USM-all-level-official-publication-audit.md",
+      "docs/prd/USM-commercial-release-workflow.md",
+      "docs/prd/USM-master-official-collection-technical-design.md",
+      "docs/prd/USM-phd-official-collection-technical-design.md"
+    ],
+    "outputPaths": {
+      "batchDir": "data/imports/usm/2026-06-19/current-official-recheck",
+      "runContract": "data/imports/usm/2026-06-19/current-official-recheck/run_contract.json",
+      "instructionExecutionLedger": "data/imports/usm/2026-06-19/current-official-recheck/instruction_execution_ledger.json",
+      "sourceCacheIndex": "data/imports/usm/2026-06-19/current-official-recheck/source_cache_index.json",
+      "acceptanceRecheck": "data/imports/usm/2026-06-19/current-official-recheck/reports/acceptance_recheck.json",
+      "operatorReviewReport": "data/imports/usm/2026-06-19/current-official-recheck/operator_review_report.md",
+      "releaseGateReport": "tmp/reports/usm-commercial-release-gate-20260619-usm-recheck-final2.json"
+    },
+    "verificationCommands": [
+      "python3 scripts/verify-usm-master-commercial-candidate.py --manifest data/imports/usm/2026-06-14/master-commercial-candidate.json",
+      "python3 scripts/verify-usm-phd-candidate.py --manifest data/imports/usm/2026-06-14/phd-candidate.json",
+      "python3 scripts/audit-official-total-tuition.py data/imports/usm/2026-06-13/undergraduate-commercial-source.json data/imports/usm/2026-06-14/master-commercial-candidate.json data/imports/usm/2026-06-14/phd-candidate.json http://127.0.0.1:3000/api/universities/universiti-sains-malaysia-usm --summary-only",
+      "npm --workspace @studymy/api run verify:usm:undergraduate:commercial",
+      "npm --workspace @studymy/api run verify:usm:master:commercial",
+      "npm --workspace @studymy/api run verify:usm:phd:commercial",
+      "npm test",
+      "npm run build",
+      "npm run verify:task040:i18n",
+      "node scripts/verify-usm-commercial-release.mjs --web-url http://localhost:5173/universities/universiti-sains-malaysia-usm --report tmp/reports/usm-commercial-release-gate-20260619-usm-recheck-final2.json"
+    ],
+    "rollbackTarget": "No database import was performed in this recheck. Frontend changes can be reverted by the focused UI diff; generated recheck artifacts can be removed as a batch.",
+    "notionUpdate": "Writable Notion connector not available; local Chinese development note updated instead."
+  },
+  "officialSourceRefresh": {
+    "programmePageLastUpdate": "Thursday 18 June 2026",
+    "feePageLastUpdate": "Thursday 18 June 2026",
+    "sourceHashes": {
+      "usm-postgraduate-programmes-current-20260619": "b9f7b576c3291e7e0592cd2355998dc6abca474c9960c2f0cec80ece5bafbfc6",
+      "usm-postgraduate-fees-current-20260619": "e6ff281c050918c76ac31125079cf2b2b8093277892ec932054a15d8c1f81664"
+    },
+    "transportExceptions": [
+      "Plain curl to admission.usm.my returned HTTP 403; browser user-agent retrieval succeeded. This is recorded as transport behavior, not as official absence."
+    ]
+  },
+  "currentBaseline": {
+    "canonicalProgrammes": 463,
+    "publicProgrammes": 462,
+    "levelCounts": {
+      "bachelor": 63,
+      "master": 304,
+      "phd": 95
+    },
+    "feeStatusCounts": {
+      "matched-official": 196,
+      "calculated-from-official-rate": 213,
+      "not-published": 53
+    },
+    "forbiddenFee": 0,
+    "invalidCalculatedTotals": 0,
+    "nonReadyPublicRows": 0
+  },
+  "fixesApplied": [
+    {
+      "files": [
+        "apps/web/src/utils/format.ts",
+        "tests/web/format.test.ts"
+      ],
+      "summary": "Unknown ordinary English language requirement text now respects the caller fallback instead of leaking or being forced into an unpublished label."
+    },
+    {
+      "files": [
+        "apps/web/src/pages/UniversityPage.vue",
+        "apps/web/src/i18n/messages.ts"
+      ],
+      "summary": "USM overview and programme-list tabs now expose the official-rate calculated total tuition basis in all supported locales."
+    }
+  ],
+  "verification": {
+    "releaseGateDecision": "commercial-release-ready",
+    "releaseGateStatus": "passed",
+    "checks": [
+      {
+        "name": "verify undergraduate database",
+        "status": "passed"
+      },
+      {
+        "name": "verify master candidate",
+        "status": "passed"
+      },
+      {
+        "name": "verify master database",
+        "status": "passed"
+      },
+      {
+        "name": "verify doctoral candidate",
+        "status": "passed"
+      },
+      {
+        "name": "verify doctoral delivery",
+        "status": "passed"
+      },
+      {
+        "name": "verify doctoral database",
+        "status": "passed"
+      },
+      {
+        "name": "audit tuition policy",
+        "status": "passed"
+      },
+      {
+        "name": "full tests",
+        "status": "passed"
+      },
+      {
+        "name": "production build",
+        "status": "passed"
+      },
+      {
+        "name": "four-locale audit",
+        "status": "passed"
+      },
+      {
+        "name": "public API invariants",
+        "status": "passed"
+      },
+      {
+        "name": "four-locale browser tuition audit",
+        "status": "passed"
+      }
+    ],
+    "browserLocales": [
+      "zh-CN",
+      "zh-TW",
+      "en",
+      "ms"
+    ],
+    "browserConsoleErrors": 0
+  },
+  "decision": "commercial-release-ready",
+  "remainingRisks": [
+    "Current official page permalinks and canonical programme identities are not one-to-one; URL counts are not used as official programme counts.",
+    "No database import was performed in this recheck because database/API invariants already matched the latest accepted 463/462 baseline."
+  ],
+  "notionStatus": "Notion not updated: no writable Notion connector is available in this Codex session."
+}

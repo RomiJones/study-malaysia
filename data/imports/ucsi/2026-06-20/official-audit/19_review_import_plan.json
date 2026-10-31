@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "createdAt": "2026-06-21T11:59:58.008Z",
+  "institution": {
+    "code": "UCSI",
+    "name": "UCSI University",
+    "batchDir": "data/imports/ucsi/2026-06-20/official-audit"
+  },
+  "authorization": "review-import",
+  "sourceInputs": {
+    "candidateDataset": "data/imports/ucsi/2026-06-20/official-audit/08_candidate_dataset.json",
+    "sourceRegistry": "data/imports/ucsi/2026-06-20/official-audit/02_official_source_registry.json"
+  },
+  "writePolicy": {
+    "importer": "apps/api/src/db/import-ucsi-official-audit.ts",
+    "mode": "review-only",
+    "upsertPrefix": "ucsi-official-2026-row-",
+    "universityRow": "upsert by code UCSI or slug ucsi-university; preserve any existing public isPublished/publicDisplayStatus values",
+    "programmeRows": "upsert only UCSI review rows with the ucsi-official-2026-row-* slug prefix",
+    "legacyRows": "preserve all non-prefix rows; do not archive or unpublish existing public UCSI rows",
+    "removedRows": "only stale rows inside the UCSI review-import slug prefix may be removed to keep the review namespace exact",
+    "transactional": true,
+    "backupRequired": true,
+    "rollbackPath": "Restore the scoped backup JSON through a one-off TypeORM transaction or database backup restore if verification fails."
+  },
+  "publicSafety": {
+    "importedRowsArePublished": false,
+    "importedRowsPublicDisplayStatus": "needs-review",
+    "expectedPublicLeakageRows": 0,
+    "studentCatalogBehaviour": "No review row is public-visible because public APIs require isPublished=true and ready/status-allowed rows."
+  },
+  "expectedReviewSurface": {
+    "universityCode": "UCSI",
+    "programmeCount": 118,
+    "byLevel": {
+      "bachelor": 60,
+      "master": 40,
+      "phd": 18
+    },
+    "statusPartition": {
+      "ready": 0,
+      "needsReview": 118
+    }
+  }
+}

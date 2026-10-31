@@ -42,3 +42,13 @@
 - **mapper/DTO**: mapper 已显式输出 `officialSources`、`tuitionInfo`、`requirementInfo`、`publicDisplayStatus`、`officialSourceStatus` 和审计字段，不把官方来源或审计信息塞进 `description`；管理端保存 DTO 已允许提交新增官方字段。
 - **验证结果**: `npm run build` 通过；`npx tsc -p apps/api/tsconfig.json --noEmit` 通过；管理端仍有既有大 chunk 警告，不阻塞本任务。
 - **Notion 更新**: 未直接更新真实 Notion；`NOTION_PROJECT_HOME` 为空且未提供 TASK-010 页面 URL，本轮只更新本地中文快照。
+
+### 2026-05-22T16:42:22.306Z - 自动状态更新
+
+- **状态**: 待评审
+- **说明**: Codex 已完成实现并返回完成状态。
+
+### 2026-05-24T21:26:38.961Z - 自动状态更新
+
+- **状态**: 已完成
+- **说明**: Review 通过：Review 通过。共享类型、后端实体、公开 mapper、管理端 DTO/校验和公开 API 边界已覆盖 TASK-010 的核心验收点；此前隐藏父院校 relation 泄漏问题已修复，专业列表、专业详情、院校搜索与 programCount、收藏、对比、规划和费用估算均按公开目录条件过滤。构建和测试通过；管理端仍只有既有 Vite chunk 大小警告，不阻塞本任务。真实 Notion 本轮未更新。

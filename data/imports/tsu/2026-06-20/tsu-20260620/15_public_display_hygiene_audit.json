@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 1,
+  "status": "passed",
+  "checks": {
+    "noRawEnglishParagraphsOnChinesePages": "passed",
+    "noCrawlerDebugProcessNotes": "passed",
+    "noAuditLabelsOrLocalPaths": "passed",
+    "descriptionsAreStudentFacing": "passed",
+    "languageAcademicFeeInterviewSeparated": "passed",
+    "courseAndCareerLocalizedOrFlagged": "passed"
+  },
+  "samples": [
+    {
+      "code": "TSU-B-001",
+      "nameEnOfficial": "Bachelor of Science (Honours) in Architecture",
+      "status": "ready",
+      "checks": {
+        "description": "review",
+        "curriculum": "review",
+        "careers": "review",
+        "sourceUrls": "ready"
+      }
+    },
+    {
+      "code": "TSU-B-002",
+      "nameEnOfficial": "Bachelor of Arts (Honours) in Interior Architecture",
+      "status": "ready",
+      "checks": {
+        "description": "review",
+        "curriculum": "review",
+        "careers": "review",
+        "sourceUrls": "ready"
+      }
+    },
+    {
+      "code": "TSU-B-003",
+      "nameEnOfficial": "Bachelor of Quantity Surveying (Honours)",
+      "status": "ready",
+      "checks": {
+        "description": "review",
+        "curriculum": "review",
+        "careers": "review",
+        "sourceUrls": "ready"
+      }
+    },
+    {
+      "code": "TSU-B-004",
+      "nameEnOfficial": "Bachelor of Science (Honours) in Sustainable Digital Construction Management",
+      "status": "ready",
+      "checks": {
+        "description": "review",
+        "curriculum": "review",
+        "careers": "review",
+        "sourceUrls": "ready"
+      }
+    },
+    {
+      "code": "TSU-M-001",
+      "nameEnOfficial": "Master of Architecture",
+      "status": "ready",
+      "checks": {
+        "description": "review",
+        "curriculum": "review",
+        "careers": "review",
+        "sourceUrls": "ready"
+      }
+    },
+    {
+      "code": "TSU-M-002",
+      "nameEnOfficial": "Master of Science in Virtual Design and Construction",
+      "status": "ready",
+      "checks": {
+        "description": "review",
+        "curriculum": "review",
+        "careers": "review",
+        "sourceUrls": "ready"
+      }
+    },
+    {
+      "code": "TSU-D-001",
+      "nameEnOfficial": "Doctor of Philosophy (PhD) in Architecture",
+      "status": "ready",
+      "checks": {
+        "description": "review",
+        "curriculum": "review",
+        "careers": "review",
+        "sourceUrls": "ready"
+      }
+    },
+    {
+      "code": "TSU-B-005",
+      "nameEnOfficial": "Bachelor of Biomedical Science (Honours)",
+      "status": "ready",
+      "checks": {
+        "description": "review",
+        "curriculum": "review",
+        "careers": "review",
+        "sourceUrls": "ready"
+      }
+    },
+    {
+      "code": "TSU-B-006",
+      "nameEnOfficial": "Bachelor of Food Science (Honours)",
+      "status": "ready",
+      "checks": {
+        "description": "review",
+        "curriculum": "review",
+        "careers": "review",
+        "sourceUrls": "ready"
+      }
+    },
+    {
+      "code": "TSU-B-007",
+      "nameEnOfficial": "Bachelor of Biotechnology (Honours)",
+      "status": "ready",
+      "checks": {
+        "description": "review",
+        "curriculum": "review",
+        "careers": "review",
+        "sourceUrls": "ready"
+      }
+    },
+    {
+      "code": "TSU-B-008",
+      "nameEnOfficial": "Bachelor of Applied Health Sciences (Honours)",
+      "status": "ready",
+      "checks": {
+        "description": "review",
+        "curriculum": "review",
+        "careers": "review",
+        "sourceUrls": "ready"
+      }
+    },
+    {
+      "code": "TSU-M-003",
+      "nameEnOfficial": "Master of Science",
+      "status": "ready",
+      "checks": {
+        "description": "review",
+        "curriculum": "review",
+        "careers": "review",
+        "sourceUrls": "ready"
+      }
+    }
+  ],
+  "issues": [],
+  "notes": [
+    "Candidate dataset keeps official English evidence in official/evidence fields.",
+    "Chinese public-facing fields are controlled review summaries, not raw crawler text or local paths.",
+    "Curriculum and career Chinese localization is marked for review before import/public display."
+  ]
+}

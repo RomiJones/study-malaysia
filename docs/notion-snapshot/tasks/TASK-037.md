@@ -39,3 +39,13 @@
 - **Review 问题处理**: 已处理与当前任务相关的 `TASK-031-ASSET-001`，院校卡片图片加载失败时改为本地占位渲染，不显示浏览器破图图标。TASK-030 的多语言 Review 问题不属于当前图片任务范围，未在本轮处理。
 - **验证命令**: `npm run verify:task037:images`、`npm run verify:static-assets`、`npm run verify:task037:browser`、`npm run test`、`npm run build`。
 - **截图目录**: `output/playwright/task037-20260524T002035Z`，包含首页、院校详情、收藏、对比、规划、推荐弹窗和移动端页面截图。
+
+### 2026-05-24T00:24:57.114Z - 自动状态更新
+
+- **状态**: 待评审
+- **说明**: Codex 已完成实现并返回完成状态。
+
+### 2026-05-24T09:44:39.982Z - 自动状态更新
+
+- **状态**: 已完成
+- **说明**: Review 通过：Review 通过。实现已把用户端院校 logo、卡片图、详情页 logo、收藏、对比、规划和推荐弹窗中的图片接入本地资源或本地 fallback；公开 API mapper 和静态 HTML 导入结果未再向用户端返回外部图片。未发现需要进入 Fix Agent 的问题。

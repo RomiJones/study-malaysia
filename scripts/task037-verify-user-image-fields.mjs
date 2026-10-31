@@ -41,10 +41,28 @@ async function checkSharedLocalAssetReferences() {
   assertIncludes(source, "LOCAL_UNIVERSITY_COVER_FALLBACK", "shared exports cover fallback");
   assertIncludes(source, "localizeUniversityImageUrl", "shared exports image localization helper");
   assertIncludes(source, "localizeUniversityLogoUrl", "shared exports logo localization helper");
+  assertIncludes(source, "getLocalUniversityCoverByCode", "shared exports university cover code mapping");
+  assertIncludes(source, "getLocalUniversityLogoByCode", "shared exports university logo code mapping");
   assertIncludes(source, "LOCAL_CARD_IMAGE_BY_UNSPLASH_KEY", "shared maps static HTML Unsplash image keys");
 
   for (const publicPath of extractStaticAssetPublicPaths(source)) {
     await assertPublicAsset(publicPath, `shared referenced local asset exists: ${publicPath}`);
+  }
+
+  const logoMapPath = path.join(projectRoot, "packages", "shared", "src", "university-logo-assets.ts");
+  const logoMapSource = await readText(logoMapPath);
+  const logoPaths = extractStaticAssetPublicPaths(logoMapSource).filter((item) => item.includes("/university-logos/"));
+  assert(logoPaths.length > 0, "university logo map contains local logo assets");
+  for (const publicPath of logoPaths) {
+    await assertPublicAsset(publicPath, `mapped university logo exists: ${publicPath}`);
+  }
+
+  const coverMapPath = path.join(projectRoot, "packages", "shared", "src", "university-cover-assets.ts");
+  const coverMapSource = await readText(coverMapPath);
+  const coverPaths = extractStaticAssetPublicPaths(coverMapSource).filter((item) => item.includes("/university-covers/"));
+  assert(coverPaths.length === 119, `university cover map contains 119 local cover assets: ${coverPaths.length}`);
+  for (const publicPath of coverPaths) {
+    await assertPublicAsset(publicPath, `mapped university cover exists: ${publicPath}`);
   }
 }
 
@@ -68,10 +86,10 @@ async function checkApiMappers() {
   const mapperSource = await readText(mapperPath);
   const staticCatalogSource = await readText(staticCatalogPath);
 
-  assertIncludes(mapperSource, "localizeUniversityLogoUrl(entity.logoUrl)", "API mapper localizes logoUrl before public response");
-  assertIncludes(mapperSource, "localizeUniversityImageUrl(entity.imageUrl)", "API mapper localizes imageUrl before public response");
-  assertIncludes(staticCatalogSource, "localizeUniversityLogoUrl(readString(raw, \"logo\") || readString(raw, \"logoUrl\"))", "static HTML import localizes logo fields");
-  assertIncludes(staticCatalogSource, "localizeUniversityImageUrl(readString(raw, \"image\") || readString(raw, \"imageUrl\"))", "static HTML import localizes image fields");
+  assertIncludes(mapperSource, "localizeUniversityLogoUrl(entity.logoUrl, entity.code)", "API mapper localizes logoUrl before public response");
+  assertIncludes(mapperSource, "localizeUniversityImageUrl(entity.imageUrl, entity.code)", "API mapper localizes imageUrl before public response");
+  assertIncludes(staticCatalogSource, "localizeUniversityLogoUrl(readString(raw, \"logo\") || readString(raw, \"logoUrl\"), code)", "static HTML import localizes logo fields");
+  assertIncludes(staticCatalogSource, "localizeUniversityImageUrl(readString(raw, \"image\") || readString(raw, \"imageUrl\"), code)", "static HTML import localizes image fields");
 }
 
 async function checkUserFacingSource() {

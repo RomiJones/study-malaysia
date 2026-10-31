@@ -1,0 +1,365 @@
+{
+  "auditName": "UTM all-level public API completion audit",
+  "checkedAt": "2026-06-18T14:17:50.596Z",
+  "apiBase": "http://127.0.0.1:3000/api",
+  "institution": {
+    "code": "UTM",
+    "slug": "utm",
+    "nameEn": "Universiti Teknologi Malaysia",
+    "programCount": 252,
+    "catalogStatusSummary": {
+      "all": {
+        "ready": 248,
+        "total": 252,
+        "needsReview": 0,
+        "currentCycleNotOpen": 4,
+        "notAvailableForInternational": 0
+      },
+      "byLevel": {
+        "phd": {
+          "ready": 55,
+          "total": 55,
+          "needsReview": 0,
+          "currentCycleNotOpen": 0,
+          "notAvailableForInternational": 0
+        },
+        "master": {
+          "ready": 153,
+          "total": 153,
+          "needsReview": 0,
+          "currentCycleNotOpen": 0,
+          "notAvailableForInternational": 0
+        },
+        "bachelor": {
+          "ready": 40,
+          "total": 44,
+          "needsReview": 0,
+          "currentCycleNotOpen": 4,
+          "notAvailableForInternational": 0
+        }
+      }
+    }
+  },
+  "levels": {
+    "bachelor": {
+      "level": "bachelor",
+      "apiTotal": 44,
+      "listRows": 44,
+      "detailRows": 44,
+      "detailErrors": [],
+      "publicDisplayStatusCounts": {
+        "current-cycle-not-open": 4,
+        "ready": 40
+      },
+      "officialSourceStatusCounts": {
+        "official-page-verified-current-cycle-not-open": 4,
+        "official-verified": 40
+      },
+      "feeAuditStatusCounts": {
+        "matched-official": 44
+      },
+      "coverage": {
+        "withTuitionDisplayOrStatus": 44,
+        "withSourceEvidence": 44,
+        "withLanguageRequirement": 44,
+        "withAcademicRequirement": 44,
+        "withIntakeEvidence": 44,
+        "withDurationEvidence": 44
+      },
+      "samples": [
+        {
+          "code": "UTM-UG-020",
+          "slug": "utm-ug-official-2026-row-020-bachelor-of-management-with-honours",
+          "nameEnOfficial": "Bachelor of Management with Honours",
+          "status": "current-cycle-not-open",
+          "sourceStatus": "official-page-verified-current-cycle-not-open",
+          "feeStatus": "matched-official",
+          "tuition": "MYR 45,788 total programme tuition",
+          "intake": [
+            "September",
+            "February"
+          ],
+          "studyMode": "Full Time and Part Time"
+        },
+        {
+          "code": "UTM-UG-019",
+          "slug": "utm-ug-official-2026-row-019-bachelor-in-digital-marketing-with-honours",
+          "nameEnOfficial": "Bachelor in Digital Marketing with Honours",
+          "status": "current-cycle-not-open",
+          "sourceStatus": "official-page-verified-current-cycle-not-open",
+          "feeStatus": "matched-official",
+          "tuition": "MYR 63,000 total programme tuition",
+          "intake": [
+            "September",
+            "February"
+          ],
+          "studyMode": "Full Time and Part Time"
+        },
+        {
+          "code": "UTM-UG-018",
+          "slug": "utm-ug-official-2026-row-018-bachelor-in-accounting-with-honours",
+          "nameEnOfficial": "Bachelor in Accounting with Honours",
+          "status": "current-cycle-not-open",
+          "sourceStatus": "official-page-verified-current-cycle-not-open",
+          "feeStatus": "matched-official",
+          "tuition": "MYR 63,000 total programme tuition",
+          "intake": [
+            "September",
+            "February"
+          ],
+          "studyMode": "Full Time and Part Time"
+        },
+        {
+          "code": "UTM-UG-015",
+          "slug": "utm-ug-official-2026-row-015-bachelor-of-mechanical-engineering-manufacturing-with-honours",
+          "nameEnOfficial": "Bachelor of Mechanical Engineering (Manufacturing) with Honours",
+          "status": "current-cycle-not-open",
+          "sourceStatus": "official-page-verified-current-cycle-not-open",
+          "feeStatus": "matched-official",
+          "tuition": "MYR 75,000 total programme tuition",
+          "intake": [
+            "September",
+            "February"
+          ],
+          "studyMode": "full-time"
+        }
+      ]
+    },
+    "master": {
+      "level": "master",
+      "apiTotal": 100,
+      "listRows": 100,
+      "detailRows": 100,
+      "detailErrors": [],
+      "publicDisplayStatusCounts": {
+        "ready": 100
+      },
+      "officialSourceStatusCounts": {
+        "official-verified": 100
+      },
+      "feeAuditStatusCounts": {
+        "official-non-scalar": 1,
+        "matched-official": 85,
+        "calculated-from-official-rate": 14
+      },
+      "coverage": {
+        "withTuitionDisplayOrStatus": 100,
+        "withSourceEvidence": 100,
+        "withLanguageRequirement": 100,
+        "withAcademicRequirement": 100,
+        "withIntakeEvidence": 100,
+        "withDurationEvidence": 100
+      },
+      "samples": [
+        {
+          "code": "UTM-M-153",
+          "slug": "utm-master-official-2026-153-master-in-sustainable-systems",
+          "nameEnOfficial": "Master in Sustainable Systems",
+          "status": "ready",
+          "sourceStatus": "official-verified",
+          "feeStatus": "official-non-scalar",
+          "tuition": "Official fee variants: MYR 31,440 / MYR 38,790",
+          "intake": [
+            "February",
+            "September"
+          ],
+          "studyMode": "Coursework / Open and Distance Learning"
+        },
+        {
+          "code": "UTM-M-152",
+          "slug": "utm-master-official-2026-152-master-of-philosophy-generic",
+          "nameEnOfficial": "Master of Philosophy (Generic)",
+          "status": "ready",
+          "sourceStatus": "official-verified",
+          "feeStatus": "matched-official",
+          "tuition": "MYR 28,400 total programme fee",
+          "intake": [
+            "February",
+            "September"
+          ],
+          "studyMode": "Research"
+        },
+        {
+          "code": "UTM-M-151",
+          "slug": "utm-master-official-2026-151-master-of-engineering-specialization-electronic-systems-engineering",
+          "nameEnOfficial": "Master of Engineering Specialization : Electronic Systems Engineering",
+          "status": "ready",
+          "sourceStatus": "official-verified",
+          "feeStatus": "matched-official",
+          "tuition": "MYR 31,000 total programme fee",
+          "intake": [
+            "February",
+            "September"
+          ],
+          "studyMode": "Coursework"
+        },
+        {
+          "code": "UTM-M-150",
+          "slug": "utm-master-official-2026-150-master-of-sustainability-and-environmental-sciences-joint-degree-with-ts",
+          "nameEnOfficial": "Master of Sustainability and Environmental Sciences (Joint Degree) with Tsukuba University",
+          "status": "ready",
+          "sourceStatus": "official-verified",
+          "feeStatus": "matched-official",
+          "tuition": "MYR 31,000 total programme fee",
+          "intake": [
+            "February",
+            "September"
+          ],
+          "studyMode": "Coursework"
+        }
+      ]
+    },
+    "phd": {
+      "level": "phd",
+      "apiTotal": 55,
+      "listRows": 55,
+      "detailRows": 55,
+      "detailErrors": [],
+      "publicDisplayStatusCounts": {
+        "ready": 55
+      },
+      "officialSourceStatusCounts": {
+        "official-verified": 55
+      },
+      "feeAuditStatusCounts": {
+        "matched-official": 54,
+        "calculated-from-official-rate": 1
+      },
+      "coverage": {
+        "withTuitionDisplayOrStatus": 55,
+        "withSourceEvidence": 55,
+        "withLanguageRequirement": 55,
+        "withAcademicRequirement": 55,
+        "withIntakeEvidence": 55,
+        "withDurationEvidence": 55
+      },
+      "samples": [
+        {
+          "code": "UTM-PHD-055",
+          "slug": "utm-phd-official-2026-055-doctor-of-philosophy-field-of-research-engineering-education",
+          "nameEnOfficial": "Doctor of Philosophy Field of Research : Engineering Education",
+          "status": "ready",
+          "sourceStatus": "official-verified",
+          "feeStatus": "matched-official",
+          "tuition": "MYR 51,600 total programme fee",
+          "intake": [
+            "February",
+            "September"
+          ],
+          "studyMode": "Research"
+        },
+        {
+          "code": "UTM-PHD-054",
+          "slug": "utm-phd-official-2026-054-doctor-of-philosophy-generic",
+          "nameEnOfficial": "Doctor of Philosophy (Generic)",
+          "status": "ready",
+          "sourceStatus": "official-verified",
+          "feeStatus": "matched-official",
+          "tuition": "MYR 51,600 total programme fee",
+          "intake": [
+            "February",
+            "September"
+          ],
+          "studyMode": "Research"
+        },
+        {
+          "code": "UTM-PHD-053",
+          "slug": "utm-phd-official-2026-053-doctor-of-philosophy-generic",
+          "nameEnOfficial": "Doctor of Philosophy (Generic)",
+          "status": "ready",
+          "sourceStatus": "official-verified",
+          "feeStatus": "matched-official",
+          "tuition": "MYR 51,600 total programme fee",
+          "intake": [
+            "February",
+            "September"
+          ],
+          "studyMode": "Research"
+        },
+        {
+          "code": "UTM-PHD-052",
+          "slug": "utm-phd-official-2026-052-doctor-of-engineering-in-engineering-business-management",
+          "nameEnOfficial": "Doctor of Engineering in Engineering Business Management",
+          "status": "ready",
+          "sourceStatus": "official-verified",
+          "feeStatus": "matched-official",
+          "tuition": "MYR 56,204 total programme fee",
+          "intake": [
+            "February",
+            "September"
+          ],
+          "studyMode": "Mixed Mode"
+        }
+      ]
+    }
+  },
+  "currentCycleNotOpenAcceptance": {
+    "count": 4,
+    "notAvailableForInternationalCount": 0,
+    "rows": [
+      {
+        "code": "UTM-UG-015",
+        "slug": "utm-ug-official-2026-row-015-bachelor-of-mechanical-engineering-manufacturing-with-honours",
+        "nameEnOfficial": "Bachelor of Mechanical Engineering (Manufacturing) with Honours",
+        "status": "current-cycle-not-open",
+        "sourceStatus": "official-page-verified-current-cycle-not-open",
+        "tuition": "MYR 75,000 total programme tuition",
+        "officialTuitionMYR": 75000,
+        "ielts": 5.5,
+        "intake": "Not offered for both the September and February intakes for the 2026/2027 academic session",
+        "chinaRequirementHas70": true,
+        "detailSource": "https://mech.utm.my/ug-programme/"
+      },
+      {
+        "code": "UTM-UG-018",
+        "slug": "utm-ug-official-2026-row-018-bachelor-in-accounting-with-honours",
+        "nameEnOfficial": "Bachelor in Accounting with Honours",
+        "status": "current-cycle-not-open",
+        "sourceStatus": "official-page-verified-current-cycle-not-open",
+        "tuition": "MYR 63,000 total programme tuition",
+        "officialTuitionMYR": 63000,
+        "ielts": 5.5,
+        "intake": "Not offered for both the September and February intakes for the 2026/2027 academic session",
+        "chinaRequirementHas70": true,
+        "detailSource": "https://management.utm.my/accounting/"
+      },
+      {
+        "code": "UTM-UG-019",
+        "slug": "utm-ug-official-2026-row-019-bachelor-in-digital-marketing-with-honours",
+        "nameEnOfficial": "Bachelor in Digital Marketing with Honours",
+        "status": "current-cycle-not-open",
+        "sourceStatus": "official-page-verified-current-cycle-not-open",
+        "tuition": "MYR 63,000 total programme tuition",
+        "officialTuitionMYR": 63000,
+        "ielts": 5.5,
+        "intake": "Not offered for both the September and February intakes for the 2026/2027 academic session",
+        "chinaRequirementHas70": true,
+        "detailSource": "https://management.utm.my/management-marketing/"
+      },
+      {
+        "code": "UTM-UG-020",
+        "slug": "utm-ug-official-2026-row-020-bachelor-of-management-with-honours",
+        "nameEnOfficial": "Bachelor of Management with Honours",
+        "status": "current-cycle-not-open",
+        "sourceStatus": "official-page-verified-current-cycle-not-open",
+        "tuition": "MYR 45,788 total programme tuition",
+        "officialTuitionMYR": 45788,
+        "ielts": 5.5,
+        "intake": "Not offered for both the September and February intakes for the 2026/2027 academic session",
+        "chinaRequirementHas70": true,
+        "detailSource": "https://management.utm.my/management-2/"
+      }
+    ]
+  },
+  "verification": {
+    "undergraduate": "npm --workspace @studymy/api run verify:utm:undergraduate",
+    "master": "npm --workspace @studymy/api run verify:utm:master",
+    "phd": "npm --workspace @studymy/api run verify:utm:phd",
+    "focusedTests": "npm run test -- tests/api/utm-undergraduate-import.test.ts tests/api/utm-public-catalog-display.test.ts tests/web/format.test.ts",
+    "builds": [
+      "npm --workspace @studymy/api run build",
+      "npm --workspace @studymy/web run build"
+    ],
+    "browser": "Four current-cycle-not-open standalone programme pages show current-cycle notice, tuition, China 70% requirement, and no Add to planner button."
+  }
+}

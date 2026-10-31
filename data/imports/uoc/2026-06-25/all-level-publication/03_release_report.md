@@ -2,16 +2,16 @@
 
 - Decision: published for operator review
 - Scope: University of Cyberjaya official bachelor, master and doctoral programmes
-- Published rows: 42
-- By level: bachelor 21, master 16, phd 5
-- Ready rows: 42
-- Official fee rows: 42
-- Language rows: 42
+- Published rows: 38
+- By level: bachelor 19, master 14, phd 5
+- Ready rows: 38
+- Official fee rows: 38
+- Language rows: 38
 - Active superseded rows: 0
 - Legacy visible rows: 0
-- University programCount: 42
+- University programCount: 38
 - Catalog cache cleared: not configured
-- Backup: tmp/backups/uoc-all-level-public-before-2026-06-25T12-00-33-210Z.json
+- Backup: tmp/backups/uoc-all-level-public-before-2026-07-08T10-14-11-100Z.json
 
 ## Accepted Exceptions
 

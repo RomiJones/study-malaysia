@@ -1,0 +1,2745 @@
+[
+  {
+    "code": "MUM-UG-ARTS-SOCIAL-SCIENC-BACHELOR-OF-ARTS-AND-SOCIAL-SCIENCES-01",
+    "nameEnOfficial": "Bachelor of Arts and Social Sciences",
+    "detailPageUrl": "https://www.monash.edu.my/study/undergraduate/arts-social-sciences/bachelor-arts-social-sciences",
+    "sourceId": "detail-mum-ug-arts-social-scienc-bachelor-of-arts-and-social-sciences-01",
+    "hasOptions": true,
+    "retrievalMethod": "jina-reader",
+    "options": [
+      {
+        "label": "At a Glance",
+        "optionType": "tab",
+        "governedFields": [
+          "programme detail"
+        ],
+        "state": "captured",
+        "evidence": {
+          "sourceId": "detail-mum-ug-arts-social-scienc-bachelor-of-arts-and-social-sciences-01",
+          "sourceUrl": "https://www.monash.edu.my/study/undergraduate/arts-social-sciences/bachelor-arts-social-sciences",
+          "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ug-arts-social-scienc-bachelor-of-arts-and-social-sciences-01.md"
+        }
+      },
+      {
+        "label": "Areas of study",
+        "optionType": "tab",
+        "governedFields": [
+          "programme detail"
+        ],
+        "state": "captured",
+        "evidence": {
+          "sourceId": "detail-mum-ug-arts-social-scienc-bachelor-of-arts-and-social-sciences-01",
+          "sourceUrl": "https://www.monash.edu.my/study/undergraduate/arts-social-sciences/bachelor-arts-social-sciences",
+          "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ug-arts-social-scienc-bachelor-of-arts-and-social-sciences-01.md"
+        }
+      },
+      {
+        "label": "Why Monash?",
+        "optionType": "tab",
+        "governedFields": [
+          "programme detail"
+        ],
+        "state": "captured",
+        "evidence": {
+          "sourceId": "detail-mum-ug-arts-social-scienc-bachelor-of-arts-and-social-sciences-01",
+          "sourceUrl": "https://www.monash.edu.my/study/undergraduate/arts-social-sciences/bachelor-arts-social-sciences",
+          "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ug-arts-social-scienc-bachelor-of-arts-and-social-sciences-01.md"
+        }
+      },
+      {
+        "label": "Career Paths",
+        "optionType": "tab",
+        "governedFields": [
+          "programme detail"
+        ],
+        "state": "captured",
+        "evidence": {
+          "sourceId": "detail-mum-ug-arts-social-scienc-bachelor-of-arts-and-social-sciences-01",
+          "sourceUrl": "https://www.monash.edu.my/study/undergraduate/arts-social-sciences/bachelor-arts-social-sciences",
+          "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ug-arts-social-scienc-bachelor-of-arts-and-social-sciences-01.md"
+        }
+      },
+      {
+        "label": "Entry requirements",
+        "optionType": "tab",
+        "governedFields": [
+          "programme detail"
+        ],
+        "state": "captured",
+        "evidence": {
+          "sourceId": "detail-mum-ug-arts-social-scienc-bachelor-of-arts-and-social-sciences-01",
+          "sourceUrl": "https://www.monash.edu.my/study/undergraduate/arts-social-sciences/bachelor-arts-social-sciences",
+          "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ug-arts-social-scienc-bachelor-of-arts-and-social-sciences-01.md"
+        }
+      }
+    ],
+    "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ug-arts-social-scienc-bachelor-of-arts-and-social-sciences-01.md"
+  },
+  {
+    "code": "MUM-UG-ARTS-SOCIAL-SCIENC-BACHELOR-OF-DIGITAL-MEDIA-AND-COMMUNICATION-02",
+    "nameEnOfficial": "Bachelor of Digital Media and Communication",
+    "detailPageUrl": "https://www.monash.edu.my/study/undergraduate/arts-social-sciences/bachelor-of-digital-media-and-communication",
+    "sourceId": "detail-mum-ug-arts-social-scienc-bachelor-of-digital-media-and-communication-02",
+    "hasOptions": true,
+    "retrievalMethod": "jina-reader",
+    "options": [
+      {
+        "label": "At a glance",
+        "optionType": "tab",
+        "governedFields": [
+          "programme detail"
+        ],
+        "state": "captured",
+        "evidence": {
+          "sourceId": "detail-mum-ug-arts-social-scienc-bachelor-of-digital-media-and-communication-02",
+          "sourceUrl": "https://www.monash.edu.my/study/undergraduate/arts-social-sciences/bachelor-of-digital-media-and-communication",
+          "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ug-arts-social-scienc-bachelor-of-digital-media-and-communication-02.md"
+        }
+      },
+      {
+        "label": "Course structure",
+        "optionType": "tab",
+        "governedFields": [
+          "programme detail"
+        ],
+        "state": "captured",
+        "evidence": {
+          "sourceId": "detail-mum-ug-arts-social-scienc-bachelor-of-digital-media-and-communication-02",
+          "sourceUrl": "https://www.monash.edu.my/study/undergraduate/arts-social-sciences/bachelor-of-digital-media-and-communication",
+          "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ug-arts-social-scienc-bachelor-of-digital-media-and-communication-02.md"
+        }
+      },
+      {
+        "label": "Why Monash?",
+        "optionType": "tab",
+        "governedFields": [
+          "programme detail"
+        ],
+        "state": "captured",
+        "evidence": {
+          "sourceId": "detail-mum-ug-arts-social-scienc-bachelor-of-digital-media-and-communication-02",
+          "sourceUrl": "https://www.monash.edu.my/study/undergraduate/arts-social-sciences/bachelor-of-digital-media-and-communication",
+          "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ug-arts-social-scienc-bachelor-of-digital-media-and-communication-02.md"
+        }
+      },
+      {
+        "label": "Career paths",
+        "optionType": "tab",
+        "governedFields": [
+          "programme detail"
+        ],
+        "state": "captured",
+        "evidence": {
+          "sourceId": "detail-mum-ug-arts-social-scienc-bachelor-of-digital-media-and-communication-02",
+          "sourceUrl": "https://www.monash.edu.my/study/undergraduate/arts-social-sciences/bachelor-of-digital-media-and-communication",
+          "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ug-arts-social-scienc-bachelor-of-digital-media-and-communication-02.md"
+        }
+      },
+      {
+        "label": "Entry requirements",
+        "optionType": "tab",
+        "governedFields": [
+          "programme detail"
+        ],
+        "state": "captured",
+        "evidence": {
+          "sourceId": "detail-mum-ug-arts-social-scienc-bachelor-of-digital-media-and-communication-02",
+          "sourceUrl": "https://www.monash.edu.my/study/undergraduate/arts-social-sciences/bachelor-of-digital-media-and-communication",
+          "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ug-arts-social-scienc-bachelor-of-digital-media-and-communication-02.md"
+        }
+      }
+    ],
+    "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ug-arts-social-scienc-bachelor-of-digital-media-and-communication-02.md"
+  },
+  {
+    "code": "MUM-UG-ARTS-SOCIAL-SCIENC-BACHELOR-OF-ARTS-HONOURS-03",
+    "nameEnOfficial": "Bachelor of Arts (Honours)",
+    "detailPageUrl": "https://www.monash.edu.my/study/undergraduate/arts-social-sciences/bachelor-arts-honours",
+    "sourceId": "detail-mum-ug-arts-social-scienc-bachelor-of-arts-honours-03",
+    "hasOptions": true,
+    "retrievalMethod": "jina-reader",
+    "options": [
+      {
+        "label": "At a glance",
+        "optionType": "tab",
+        "governedFields": [
+          "programme detail"
+        ],
+        "state": "captured",
+        "evidence": {
+          "sourceId": "detail-mum-ug-arts-social-scienc-bachelor-of-arts-honours-03",
+          "sourceUrl": "https://www.monash.edu.my/study/undergraduate/arts-social-sciences/bachelor-arts-honours",
+          "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ug-arts-social-scienc-bachelor-of-arts-honours-03.md"
+        }
+      },
+      {
+        "label": "Areas of study",
+        "optionType": "tab",
+        "governedFields": [
+          "programme detail"
+        ],
+        "state": "captured",
+        "evidence": {
+          "sourceId": "detail-mum-ug-arts-social-scienc-bachelor-of-arts-honours-03",
+          "sourceUrl": "https://www.monash.edu.my/study/undergraduate/arts-social-sciences/bachelor-arts-honours",
+          "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ug-arts-social-scienc-bachelor-of-arts-honours-03.md"
+        }
+      },
+      {
+        "label": "Course structure",
+        "optionType": "tab",
+        "governedFields": [
+          "programme detail"
+        ],
+        "state": "captured",
+        "evidence": {
+          "sourceId": "detail-mum-ug-arts-social-scienc-bachelor-of-arts-honours-03",
+          "sourceUrl": "https://www.monash.edu.my/study/undergraduate/arts-social-sciences/bachelor-arts-honours",
+          "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ug-arts-social-scienc-bachelor-of-arts-honours-03.md"
+        }
+      },
+      {
+        "label": "Career paths",
+        "optionType": "tab",
+        "governedFields": [
+          "programme detail"
+        ],
+        "state": "captured",
+        "evidence": {
+          "sourceId": "detail-mum-ug-arts-social-scienc-bachelor-of-arts-honours-03",
+          "sourceUrl": "https://www.monash.edu.my/study/undergraduate/arts-social-sciences/bachelor-arts-honours",
+          "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ug-arts-social-scienc-bachelor-of-arts-honours-03.md"
+        }
+      },
+      {
+        "label": "Entry requirements",
+        "optionType": "tab",
+        "governedFields": [
+          "programme detail"
+        ],
+        "state": "captured",
+        "evidence": {
+          "sourceId": "detail-mum-ug-arts-social-scienc-bachelor-of-arts-honours-03",
+          "sourceUrl": "https://www.monash.edu.my/study/undergraduate/arts-social-sciences/bachelor-arts-honours",
+          "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ug-arts-social-scienc-bachelor-of-arts-honours-03.md"
+        }
+      }
+    ],
+    "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ug-arts-social-scienc-bachelor-of-arts-honours-03.md"
+  },
+  {
+    "code": "MUM-UG-BUSINESS-BACHELOR-OF-BUSINESS-AND-COMMERCE-04",
+    "nameEnOfficial": "Bachelor of Business and Commerce",
+    "detailPageUrl": "https://www.monash.edu.my/study/undergraduate/business/bachelor-business-commerce",
+    "sourceId": "detail-mum-ug-business-bachelor-of-business-and-commerce-04",
+    "hasOptions": true,
+    "retrievalMethod": "jina-reader",
+    "options": [
+      {
+        "label": "programme detail page",
+        "optionType": "same-programme official sublink",
+        "governedFields": [
+          "duration",
+          "intake",
+          "requirements",
+          "course setting",
+          "careers"
+        ],
+        "state": "captured",
+        "evidence": {
+          "sourceId": "rendered-mum-ug-business-bachelor-of-business-and-commerce-04",
+          "sourceUrl": "https://www.monash.edu.my/study/undergraduate/business/bachelor-business-commerce",
+          "localPath": "data/imports/mum/2026-06-19/official-audit/rendered/004-mum-ug-business-bachelor-of-business-and-commerce-04.json",
+          "sourceText": "Rendered official Monash DOM page captured the previously blocked programme detail tabs."
+        }
+      }
+    ],
+    "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ug-business-bachelor-of-business-and-commerce-04.blocked.md"
+  },
+  {
+    "code": "MUM-UG-BUSINESS-BACHELOR-IN-ACTUARIAL-ANALYTICS-05",
+    "nameEnOfficial": "Bachelor in Actuarial Analytics",
+    "detailPageUrl": "https://www.monash.edu.my/study/undergraduate/business/bachelor-in-actuarial-analytics",
+    "sourceId": "detail-mum-ug-business-bachelor-in-actuarial-analytics-05",
+    "hasOptions": true,
+    "retrievalMethod": "jina-reader",
+    "options": [
+      {
+        "label": "At a glance",
+        "optionType": "tab",
+        "governedFields": [
+          "programme detail"
+        ],
+        "state": "captured",
+        "evidence": {
+          "sourceId": "detail-mum-ug-business-bachelor-in-actuarial-analytics-05",
+          "sourceUrl": "https://www.monash.edu.my/study/undergraduate/business/bachelor-in-actuarial-analytics",
+          "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ug-business-bachelor-in-actuarial-analytics-05.md"
+        }
+      },
+      {
+        "label": "Course structure",
+        "optionType": "tab",
+        "governedFields": [
+          "programme detail"
+        ],
+        "state": "captured",
+        "evidence": {
+          "sourceId": "detail-mum-ug-business-bachelor-in-actuarial-analytics-05",
+          "sourceUrl": "https://www.monash.edu.my/study/undergraduate/business/bachelor-in-actuarial-analytics",
+          "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ug-business-bachelor-in-actuarial-analytics-05.md"
+        }
+      },
+      {
+        "label": "Why Monash?",
+        "optionType": "tab",
+        "governedFields": [
+          "programme detail"
+        ],
+        "state": "captured",
+        "evidence": {
+          "sourceId": "detail-mum-ug-business-bachelor-in-actuarial-analytics-05",
+          "sourceUrl": "https://www.monash.edu.my/study/undergraduate/business/bachelor-in-actuarial-analytics",
+          "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ug-business-bachelor-in-actuarial-analytics-05.md"
+        }
+      },
+      {
+        "label": "Career paths",
+        "optionType": "tab",
+        "governedFields": [
+          "programme detail"
+        ],
+        "state": "captured",
+        "evidence": {
+          "sourceId": "detail-mum-ug-business-bachelor-in-actuarial-analytics-05",
+          "sourceUrl": "https://www.monash.edu.my/study/undergraduate/business/bachelor-in-actuarial-analytics",
+          "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ug-business-bachelor-in-actuarial-analytics-05.md"
+        }
+      },
+      {
+        "label": "Entry requirements",
+        "optionType": "tab",
+        "governedFields": [
+          "programme detail"
+        ],
+        "state": "captured",
+        "evidence": {
+          "sourceId": "detail-mum-ug-business-bachelor-in-actuarial-analytics-05",
+          "sourceUrl": "https://www.monash.edu.my/study/undergraduate/business/bachelor-in-actuarial-analytics",
+          "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ug-business-bachelor-in-actuarial-analytics-05.md"
+        }
+      }
+    ],
+    "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ug-business-bachelor-in-actuarial-analytics-05.md"
+  },
+  {
+    "code": "MUM-UG-BUSINESS-BACHELOR-OF-DIGITAL-BUSINESS-06",
+    "nameEnOfficial": "Bachelor of Digital Business",
+    "detailPageUrl": "https://www.monash.edu.my/study/undergraduate/business/bachelor-of-digital-business",
+    "sourceId": "detail-mum-ug-business-bachelor-of-digital-business-06",
+    "hasOptions": true,
+    "retrievalMethod": "jina-reader",
+    "options": [
+      {
+        "label": "programme detail page",
+        "optionType": "same-programme official sublink",
+        "governedFields": [
+          "duration",
+          "intake",
+          "requirements",
+          "course setting",
+          "careers"
+        ],
+        "state": "captured",
+        "evidence": {
+          "sourceId": "rendered-mum-ug-business-bachelor-of-digital-business-06",
+          "sourceUrl": "https://www.monash.edu.my/study/undergraduate/business/bachelor-of-digital-business",
+          "localPath": "data/imports/mum/2026-06-19/official-audit/rendered/006-mum-ug-business-bachelor-of-digital-business-06.json",
+          "sourceText": "Rendered official Monash DOM page captured the previously blocked programme detail tabs."
+        }
+      }
+    ],
+    "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ug-business-bachelor-of-digital-business-06.blocked.md"
+  },
+  {
+    "code": "MUM-UG-BUSINESS-BACHELOR-OF-BUSINESS-AND-COMMERCE-HONOURS-07",
+    "nameEnOfficial": "Bachelor of Business and Commerce (Honours)",
+    "detailPageUrl": "https://www.monash.edu.my/study/undergraduate/business/bachelor-business-commerce-honours",
+    "sourceId": "detail-mum-ug-business-bachelor-of-business-and-commerce-honours-07",
+    "hasOptions": true,
+    "retrievalMethod": "jina-reader",
+    "options": [
+      {
+        "label": "At a glance",
+        "optionType": "tab",
+        "governedFields": [
+          "programme detail"
+        ],
+        "state": "captured",
+        "evidence": {
+          "sourceId": "detail-mum-ug-business-bachelor-of-business-and-commerce-honours-07",
+          "sourceUrl": "https://www.monash.edu.my/study/undergraduate/business/bachelor-business-commerce-honours",
+          "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ug-business-bachelor-of-business-and-commerce-honours-07.md"
+        }
+      },
+      {
+        "label": "Areas of study",
+        "optionType": "tab",
+        "governedFields": [
+          "programme detail"
+        ],
+        "state": "captured",
+        "evidence": {
+          "sourceId": "detail-mum-ug-business-bachelor-of-business-and-commerce-honours-07",
+          "sourceUrl": "https://www.monash.edu.my/study/undergraduate/business/bachelor-business-commerce-honours",
+          "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ug-business-bachelor-of-business-and-commerce-honours-07.md"
+        }
+      },
+      {
+        "label": "Course structure",
+        "optionType": "tab",
+        "governedFields": [
+          "programme detail"
+        ],
+        "state": "captured",
+        "evidence": {
+          "sourceId": "detail-mum-ug-business-bachelor-of-business-and-commerce-honours-07",
+          "sourceUrl": "https://www.monash.edu.my/study/undergraduate/business/bachelor-business-commerce-honours",
+          "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ug-business-bachelor-of-business-and-commerce-honours-07.md"
+        }
+      },
+      {
+        "label": "Career outcomes",
+        "optionType": "tab",
+        "governedFields": [
+          "programme detail"
+        ],
+        "state": "captured",
+        "evidence": {
+          "sourceId": "detail-mum-ug-business-bachelor-of-business-and-commerce-honours-07",
+          "sourceUrl": "https://www.monash.edu.my/study/undergraduate/business/bachelor-business-commerce-honours",
+          "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ug-business-bachelor-of-business-and-commerce-honours-07.md"
+        }
+      },
+      {
+        "label": "Entry requirements",
+        "optionType": "tab",
+        "governedFields": [
+          "programme detail"
+        ],
+        "state": "captured",
+        "evidence": {
+          "sourceId": "detail-mum-ug-business-bachelor-of-business-and-commerce-honours-07",
+          "sourceUrl": "https://www.monash.edu.my/study/undergraduate/business/bachelor-business-commerce-honours",
+          "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ug-business-bachelor-of-business-and-commerce-honours-07.md"
+        }
+      }
+    ],
+    "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ug-business-bachelor-of-business-and-commerce-honours-07.md"
+  },
+  {
+    "code": "MUM-UG-BUSINESS-BACHELOR-OF-BUSINESS-AND-COMMERCE-AND-BACHEL-08",
+    "nameEnOfficial": "Bachelor of Business and Commerce and Bachelor of Computer Science",
+    "detailPageUrl": "https://www.monash.edu.my/study/undergraduate/business/bachelor-business-commerce-bachelor-computer-science",
+    "sourceId": "detail-mum-ug-business-bachelor-of-business-and-commerce-and-bachel-08",
+    "hasOptions": true,
+    "retrievalMethod": "jina-reader",
+    "options": [
+      {
+        "label": "programme detail page",
+        "optionType": "same-programme official sublink",
+        "governedFields": [
+          "duration",
+          "intake",
+          "requirements",
+          "course setting",
+          "careers"
+        ],
+        "state": "captured",
+        "evidence": {
+          "sourceId": "rendered-mum-ug-business-bachelor-of-business-and-commerce-and-bachel-08",
+          "sourceUrl": "https://www.monash.edu.my/study/undergraduate/business/bachelor-business-commerce-bachelor-computer-science",
+          "localPath": "data/imports/mum/2026-06-19/official-audit/rendered/008-mum-ug-business-bachelor-of-business-and-commerce-and-bachel-08.json",
+          "sourceText": "Rendered official Monash DOM page captured the previously blocked programme detail tabs."
+        }
+      }
+    ],
+    "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ug-business-bachelor-of-business-and-commerce-and-bachel-08.blocked.md"
+  },
+  {
+    "code": "MUM-UG-BUSINESS-BACHELOR-OF-BUSINESS-AND-COMMERCE-AND-BACHEL-09",
+    "nameEnOfficial": "Bachelor of Business and Commerce and Bachelor of Digital Media and Communication",
+    "detailPageUrl": "https://www.monash.edu.my/study/undergraduate/business/bachelor-business-commerce-bachelor-communication",
+    "sourceId": "detail-mum-ug-business-bachelor-of-business-and-commerce-and-bachel-09",
+    "hasOptions": true,
+    "retrievalMethod": "jina-reader",
+    "options": [
+      {
+        "label": "programme detail page",
+        "optionType": "same-programme official sublink",
+        "governedFields": [
+          "duration",
+          "intake",
+          "requirements",
+          "course setting",
+          "careers"
+        ],
+        "state": "captured",
+        "evidence": {
+          "sourceId": "rendered-mum-ug-business-bachelor-of-business-and-commerce-and-bachel-09",
+          "sourceUrl": "https://www.monash.edu.my/study/undergraduate/business/bachelor-business-commerce-bachelor-communication",
+          "localPath": "data/imports/mum/2026-06-19/official-audit/rendered/009-mum-ug-business-bachelor-of-business-and-commerce-and-bachel-09.json",
+          "sourceText": "Rendered official Monash DOM page captured the previously blocked programme detail tabs."
+        }
+      }
+    ],
+    "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ug-business-bachelor-of-business-and-commerce-and-bachel-09.blocked.md"
+  },
+  {
+    "code": "MUM-UG-ENGINEERING-BACHELOR-OF-BIOMEDICAL-ENGINEERING-HONOURS-10",
+    "nameEnOfficial": "Bachelor of Biomedical Engineering (Honours)",
+    "detailPageUrl": "https://www.monash.edu.my/study/undergraduate/engineering/bachelor-of-biomedical-engineering-honours",
+    "sourceId": "detail-mum-ug-engineering-bachelor-of-biomedical-engineering-honours-10",
+    "hasOptions": true,
+    "retrievalMethod": "jina-reader",
+    "options": [
+      {
+        "label": "At a glance",
+        "optionType": "tab",
+        "governedFields": [
+          "programme detail"
+        ],
+        "state": "captured",
+        "evidence": {
+          "sourceId": "detail-mum-ug-engineering-bachelor-of-biomedical-engineering-honours-10",
+          "sourceUrl": "https://www.monash.edu.my/study/undergraduate/engineering/bachelor-of-biomedical-engineering-honours",
+          "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ug-engineering-bachelor-of-biomedical-engineering-honours-10.md"
+        }
+      },
+      {
+        "label": "Course structure",
+        "optionType": "tab",
+        "governedFields": [
+          "programme detail"
+        ],
+        "state": "captured",
+        "evidence": {
+          "sourceId": "detail-mum-ug-engineering-bachelor-of-biomedical-engineering-honours-10",
+          "sourceUrl": "https://www.monash.edu.my/study/undergraduate/engineering/bachelor-of-biomedical-engineering-honours",
+          "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ug-engineering-bachelor-of-biomedical-engineering-honours-10.md"
+        }
+      },
+      {
+        "label": "Why Monash?",
+        "optionType": "tab",
+        "governedFields": [
+          "programme detail"
+        ],
+        "state": "captured",
+        "evidence": {
+          "sourceId": "detail-mum-ug-engineering-bachelor-of-biomedical-engineering-honours-10",
+          "sourceUrl": "https://www.monash.edu.my/study/undergraduate/engineering/bachelor-of-biomedical-engineering-honours",
+          "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ug-engineering-bachelor-of-biomedical-engineering-honours-10.md"
+        }
+      },
+      {
+        "label": "Career paths",
+        "optionType": "tab",
+        "governedFields": [
+          "programme detail"
+        ],
+        "state": "captured",
+        "evidence": {
+          "sourceId": "detail-mum-ug-engineering-bachelor-of-biomedical-engineering-honours-10",
+          "sourceUrl": "https://www.monash.edu.my/study/undergraduate/engineering/bachelor-of-biomedical-engineering-honours",
+          "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ug-engineering-bachelor-of-biomedical-engineering-honours-10.md"
+        }
+      },
+      {
+        "label": "Entry requirements",
+        "optionType": "tab",
+        "governedFields": [
+          "programme detail"
+        ],
+        "state": "captured",
+        "evidence": {
+          "sourceId": "detail-mum-ug-engineering-bachelor-of-biomedical-engineering-honours-10",
+          "sourceUrl": "https://www.monash.edu.my/study/undergraduate/engineering/bachelor-of-biomedical-engineering-honours",
+          "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ug-engineering-bachelor-of-biomedical-engineering-honours-10.md"
+        }
+      }
+    ],
+    "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ug-engineering-bachelor-of-biomedical-engineering-honours-10.md"
+  },
+  {
+    "code": "MUM-UG-ENGINEERING-BACHELOR-OF-CHEMICAL-ENGINEERING-HONOURS-11",
+    "nameEnOfficial": "Bachelor of Chemical Engineering (Honours)",
+    "detailPageUrl": "https://www.monash.edu.my/study/undergraduate/engineering/bachelor-of-engineering-honours-in-chemical-engineering",
+    "sourceId": "detail-mum-ug-engineering-bachelor-of-chemical-engineering-honours-11",
+    "hasOptions": true,
+    "retrievalMethod": "jina-reader",
+    "options": [
+      {
+        "label": "At a glance",
+        "optionType": "tab",
+        "governedFields": [
+          "programme detail"
+        ],
+        "state": "captured",
+        "evidence": {
+          "sourceId": "detail-mum-ug-engineering-bachelor-of-chemical-engineering-honours-11",
+          "sourceUrl": "https://www.monash.edu.my/study/undergraduate/engineering/bachelor-of-engineering-honours-in-chemical-engineering",
+          "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ug-engineering-bachelor-of-chemical-engineering-honours-11.md"
+        }
+      },
+      {
+        "label": "Course structure",
+        "optionType": "tab",
+        "governedFields": [
+          "programme detail"
+        ],
+        "state": "captured",
+        "evidence": {
+          "sourceId": "detail-mum-ug-engineering-bachelor-of-chemical-engineering-honours-11",
+          "sourceUrl": "https://www.monash.edu.my/study/undergraduate/engineering/bachelor-of-engineering-honours-in-chemical-engineering",
+          "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ug-engineering-bachelor-of-chemical-engineering-honours-11.md"
+        }
+      },
+      {
+        "label": "Why Monash?",
+        "optionType": "tab",
+        "governedFields": [
+          "programme detail"
+        ],
+        "state": "captured",
+        "evidence": {
+          "sourceId": "detail-mum-ug-engineering-bachelor-of-chemical-engineering-honours-11",
+          "sourceUrl": "https://www.monash.edu.my/study/undergraduate/engineering/bachelor-of-engineering-honours-in-chemical-engineering",
+          "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ug-engineering-bachelor-of-chemical-engineering-honours-11.md"
+        }
+      },
+      {
+        "label": "Career paths",
+        "optionType": "tab",
+        "governedFields": [
+          "programme detail"
+        ],
+        "state": "captured",
+        "evidence": {
+          "sourceId": "detail-mum-ug-engineering-bachelor-of-chemical-engineering-honours-11",
+          "sourceUrl": "https://www.monash.edu.my/study/undergraduate/engineering/bachelor-of-engineering-honours-in-chemical-engineering",
+          "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ug-engineering-bachelor-of-chemical-engineering-honours-11.md"
+        }
+      },
+      {
+        "label": "Entry requirements",
+        "optionType": "tab",
+        "governedFields": [
+          "programme detail"
+        ],
+        "state": "captured",
+        "evidence": {
+          "sourceId": "detail-mum-ug-engineering-bachelor-of-chemical-engineering-honours-11",
+          "sourceUrl": "https://www.monash.edu.my/study/undergraduate/engineering/bachelor-of-engineering-honours-in-chemical-engineering",
+          "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ug-engineering-bachelor-of-chemical-engineering-honours-11.md"
+        }
+      }
+    ],
+    "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ug-engineering-bachelor-of-chemical-engineering-honours-11.md"
+  },
+  {
+    "code": "MUM-UG-ENGINEERING-BACHELOR-OF-CIVIL-ENGINEERING-HONOURS-12",
+    "nameEnOfficial": "Bachelor of Civil Engineering (Honours)",
+    "detailPageUrl": "https://www.monash.edu.my/study/undergraduate/engineering/bachelor-of-engineering-honours-in-civil-engineering",
+    "sourceId": "detail-mum-ug-engineering-bachelor-of-civil-engineering-honours-12",
+    "hasOptions": true,
+    "retrievalMethod": "jina-reader",
+    "options": [
+      {
+        "label": "At a glance",
+        "optionType": "tab",
+        "governedFields": [
+          "programme detail"
+        ],
+        "state": "captured",
+        "evidence": {
+          "sourceId": "detail-mum-ug-engineering-bachelor-of-civil-engineering-honours-12",
+          "sourceUrl": "https://www.monash.edu.my/study/undergraduate/engineering/bachelor-of-engineering-honours-in-civil-engineering",
+          "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ug-engineering-bachelor-of-civil-engineering-honours-12.md"
+        }
+      },
+      {
+        "label": "Course structure",
+        "optionType": "tab",
+        "governedFields": [
+          "programme detail"
+        ],
+        "state": "captured",
+        "evidence": {
+          "sourceId": "detail-mum-ug-engineering-bachelor-of-civil-engineering-honours-12",
+          "sourceUrl": "https://www.monash.edu.my/study/undergraduate/engineering/bachelor-of-engineering-honours-in-civil-engineering",
+          "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ug-engineering-bachelor-of-civil-engineering-honours-12.md"
+        }
+      },
+      {
+        "label": "Why Monash?",
+        "optionType": "tab",
+        "governedFields": [
+          "programme detail"
+        ],
+        "state": "captured",
+        "evidence": {
+          "sourceId": "detail-mum-ug-engineering-bachelor-of-civil-engineering-honours-12",
+          "sourceUrl": "https://www.monash.edu.my/study/undergraduate/engineering/bachelor-of-engineering-honours-in-civil-engineering",
+          "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ug-engineering-bachelor-of-civil-engineering-honours-12.md"
+        }
+      },
+      {
+        "label": "Career paths",
+        "optionType": "tab",
+        "governedFields": [
+          "programme detail"
+        ],
+        "state": "captured",
+        "evidence": {
+          "sourceId": "detail-mum-ug-engineering-bachelor-of-civil-engineering-honours-12",
+          "sourceUrl": "https://www.monash.edu.my/study/undergraduate/engineering/bachelor-of-engineering-honours-in-civil-engineering",
+          "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ug-engineering-bachelor-of-civil-engineering-honours-12.md"
+        }
+      },
+      {
+        "label": "Entry requirements",
+        "optionType": "tab",
+        "governedFields": [
+          "programme detail"
+        ],
+        "state": "captured",
+        "evidence": {
+          "sourceId": "detail-mum-ug-engineering-bachelor-of-civil-engineering-honours-12",
+          "sourceUrl": "https://www.monash.edu.my/study/undergraduate/engineering/bachelor-of-engineering-honours-in-civil-engineering",
+          "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ug-engineering-bachelor-of-civil-engineering-honours-12.md"
+        }
+      }
+    ],
+    "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ug-engineering-bachelor-of-civil-engineering-honours-12.md"
+  },
+  {
+    "code": "MUM-UG-ENGINEERING-BACHELOR-OF-ELECTRICAL-AND-COMPUTER-SYSTEMS--13",
+    "nameEnOfficial": "Bachelor of Electrical and Computer Systems Engineering (Honours)",
+    "detailPageUrl": "https://www.monash.edu.my/study/undergraduate/engineering/bachelor-of-engineering-honours-in-electrical-and-computer-systems-engineering",
+    "sourceId": "detail-mum-ug-engineering-bachelor-of-electrical-and-computer-systems--13",
+    "hasOptions": true,
+    "retrievalMethod": "jina-reader",
+    "options": [
+      {
+        "label": "At a glance",
+        "optionType": "tab",
+        "governedFields": [
+          "programme detail"
+        ],
+        "state": "captured",
+        "evidence": {
+          "sourceId": "detail-mum-ug-engineering-bachelor-of-electrical-and-computer-systems--13",
+          "sourceUrl": "https://www.monash.edu.my/study/undergraduate/engineering/bachelor-of-engineering-honours-in-electrical-and-computer-systems-engineering",
+          "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ug-engineering-bachelor-of-electrical-and-computer-systems--13.md"
+        }
+      },
+      {
+        "label": "Course structure",
+        "optionType": "tab",
+        "governedFields": [
+          "programme detail"
+        ],
+        "state": "captured",
+        "evidence": {
+          "sourceId": "detail-mum-ug-engineering-bachelor-of-electrical-and-computer-systems--13",
+          "sourceUrl": "https://www.monash.edu.my/study/undergraduate/engineering/bachelor-of-engineering-honours-in-electrical-and-computer-systems-engineering",
+          "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ug-engineering-bachelor-of-electrical-and-computer-systems--13.md"
+        }
+      },
+      {
+        "label": "Why Monash?",
+        "optionType": "tab",
+        "governedFields": [
+          "programme detail"
+        ],
+        "state": "captured",
+        "evidence": {
+          "sourceId": "detail-mum-ug-engineering-bachelor-of-electrical-and-computer-systems--13",
+          "sourceUrl": "https://www.monash.edu.my/study/undergraduate/engineering/bachelor-of-engineering-honours-in-electrical-and-computer-systems-engineering",
+          "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ug-engineering-bachelor-of-electrical-and-computer-systems--13.md"
+        }
+      },
+      {
+        "label": "Career paths",
+        "optionType": "tab",
+        "governedFields": [
+          "programme detail"
+        ],
+        "state": "captured",
+        "evidence": {
+          "sourceId": "detail-mum-ug-engineering-bachelor-of-electrical-and-computer-systems--13",
+          "sourceUrl": "https://www.monash.edu.my/study/undergraduate/engineering/bachelor-of-engineering-honours-in-electrical-and-computer-systems-engineering",
+          "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ug-engineering-bachelor-of-electrical-and-computer-systems--13.md"
+        }
+      },
+      {
+        "label": "Entry requirements",
+        "optionType": "tab",
+        "governedFields": [
+          "programme detail"
+        ],
+        "state": "captured",
+        "evidence": {
+          "sourceId": "detail-mum-ug-engineering-bachelor-of-electrical-and-computer-systems--13",
+          "sourceUrl": "https://www.monash.edu.my/study/undergraduate/engineering/bachelor-of-engineering-honours-in-electrical-and-computer-systems-engineering",
+          "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ug-engineering-bachelor-of-electrical-and-computer-systems--13.md"
+        }
+      }
+    ],
+    "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ug-engineering-bachelor-of-electrical-and-computer-systems--13.md"
+  },
+  {
+    "code": "MUM-UG-ENGINEERING-BACHELOR-OF-MATERIALS-ENGINEERING-HONOURS-14",
+    "nameEnOfficial": "Bachelor of Materials Engineering (Honours)",
+    "detailPageUrl": "https://www.monash.edu.my/study/undergraduate/engineering/bachelor-of-materials-engineering-honours",
+    "sourceId": "detail-mum-ug-engineering-bachelor-of-materials-engineering-honours-14",
+    "hasOptions": true,
+    "retrievalMethod": "jina-reader",
+    "options": [
+      {
+        "label": "At a glance",
+        "optionType": "tab",
+        "governedFields": [
+          "programme detail"
+        ],
+        "state": "captured",
+        "evidence": {
+          "sourceId": "detail-mum-ug-engineering-bachelor-of-materials-engineering-honours-14",
+          "sourceUrl": "https://www.monash.edu.my/study/undergraduate/engineering/bachelor-of-materials-engineering-honours",
+          "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ug-engineering-bachelor-of-materials-engineering-honours-14.md"
+        }
+      },
+      {
+        "label": "Course structure",
+        "optionType": "tab",
+        "governedFields": [
+          "programme detail"
+        ],
+        "state": "captured",
+        "evidence": {
+          "sourceId": "detail-mum-ug-engineering-bachelor-of-materials-engineering-honours-14",
+          "sourceUrl": "https://www.monash.edu.my/study/undergraduate/engineering/bachelor-of-materials-engineering-honours",
+          "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ug-engineering-bachelor-of-materials-engineering-honours-14.md"
+        }
+      },
+      {
+        "label": "Why Monash?",
+        "optionType": "tab",
+        "governedFields": [
+          "programme detail"
+        ],
+        "state": "captured",
+        "evidence": {
+          "sourceId": "detail-mum-ug-engineering-bachelor-of-materials-engineering-honours-14",
+          "sourceUrl": "https://www.monash.edu.my/study/undergraduate/engineering/bachelor-of-materials-engineering-honours",
+          "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ug-engineering-bachelor-of-materials-engineering-honours-14.md"
+        }
+      },
+      {
+        "label": "Career paths",
+        "optionType": "tab",
+        "governedFields": [
+          "programme detail"
+        ],
+        "state": "captured",
+        "evidence": {
+          "sourceId": "detail-mum-ug-engineering-bachelor-of-materials-engineering-honours-14",
+          "sourceUrl": "https://www.monash.edu.my/study/undergraduate/engineering/bachelor-of-materials-engineering-honours",
+          "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ug-engineering-bachelor-of-materials-engineering-honours-14.md"
+        }
+      },
+      {
+        "label": "Entry requirements",
+        "optionType": "tab",
+        "governedFields": [
+          "programme detail"
+        ],
+        "state": "captured",
+        "evidence": {
+          "sourceId": "detail-mum-ug-engineering-bachelor-of-materials-engineering-honours-14",
+          "sourceUrl": "https://www.monash.edu.my/study/undergraduate/engineering/bachelor-of-materials-engineering-honours",
+          "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ug-engineering-bachelor-of-materials-engineering-honours-14.md"
+        }
+      }
+    ],
+    "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ug-engineering-bachelor-of-materials-engineering-honours-14.md"
+  },
+  {
+    "code": "MUM-UG-ENGINEERING-BACHELOR-OF-MECHANICAL-ENGINEERING-HONOURS-15",
+    "nameEnOfficial": "Bachelor of Mechanical Engineering (Honours)",
+    "detailPageUrl": "https://www.monash.edu.my/study/undergraduate/engineering/bachelor-of-engineering-honours-in-mechanical-engineering",
+    "sourceId": "detail-mum-ug-engineering-bachelor-of-mechanical-engineering-honours-15",
+    "hasOptions": true,
+    "retrievalMethod": "jina-reader",
+    "options": [
+      {
+        "label": "At a glance",
+        "optionType": "tab",
+        "governedFields": [
+          "programme detail"
+        ],
+        "state": "captured",
+        "evidence": {
+          "sourceId": "detail-mum-ug-engineering-bachelor-of-mechanical-engineering-honours-15",
+          "sourceUrl": "https://www.monash.edu.my/study/undergraduate/engineering/bachelor-of-engineering-honours-in-mechanical-engineering",
+          "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ug-engineering-bachelor-of-mechanical-engineering-honours-15.md"
+        }
+      },
+      {
+        "label": "Course structure",
+        "optionType": "tab",
+        "governedFields": [
+          "programme detail"
+        ],
+        "state": "captured",
+        "evidence": {
+          "sourceId": "detail-mum-ug-engineering-bachelor-of-mechanical-engineering-honours-15",
+          "sourceUrl": "https://www.monash.edu.my/study/undergraduate/engineering/bachelor-of-engineering-honours-in-mechanical-engineering",
+          "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ug-engineering-bachelor-of-mechanical-engineering-honours-15.md"
+        }
+      },
+      {
+        "label": "Why Monash?",
+        "optionType": "tab",
+        "governedFields": [
+          "programme detail"
+        ],
+        "state": "captured",
+        "evidence": {
+          "sourceId": "detail-mum-ug-engineering-bachelor-of-mechanical-engineering-honours-15",
+          "sourceUrl": "https://www.monash.edu.my/study/undergraduate/engineering/bachelor-of-engineering-honours-in-mechanical-engineering",
+          "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ug-engineering-bachelor-of-mechanical-engineering-honours-15.md"
+        }
+      },
+      {
+        "label": "Career paths",
+        "optionType": "tab",
+        "governedFields": [
+          "programme detail"
+        ],
+        "state": "captured",
+        "evidence": {
+          "sourceId": "detail-mum-ug-engineering-bachelor-of-mechanical-engineering-honours-15",
+          "sourceUrl": "https://www.monash.edu.my/study/undergraduate/engineering/bachelor-of-engineering-honours-in-mechanical-engineering",
+          "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ug-engineering-bachelor-of-mechanical-engineering-honours-15.md"
+        }
+      },
+      {
+        "label": "Entry requirements",
+        "optionType": "tab",
+        "governedFields": [
+          "programme detail"
+        ],
+        "state": "captured",
+        "evidence": {
+          "sourceId": "detail-mum-ug-engineering-bachelor-of-mechanical-engineering-honours-15",
+          "sourceUrl": "https://www.monash.edu.my/study/undergraduate/engineering/bachelor-of-engineering-honours-in-mechanical-engineering",
+          "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ug-engineering-bachelor-of-mechanical-engineering-honours-15.md"
+        }
+      }
+    ],
+    "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ug-engineering-bachelor-of-mechanical-engineering-honours-15.md"
+  },
+  {
+    "code": "MUM-UG-ENGINEERING-BACHELOR-OF-ROBOTICS-AND-MECHATRONICS-ENGINE-16",
+    "nameEnOfficial": "Bachelor of Robotics and Mechatronics Engineering (Honours)",
+    "detailPageUrl": "https://www.monash.edu.my/study/undergraduate/engineering/bachelor-of-engineering-honours-in-mechatronics-engineering",
+    "sourceId": "detail-mum-ug-engineering-bachelor-of-robotics-and-mechatronics-engine-16",
+    "hasOptions": true,
+    "retrievalMethod": "jina-reader",
+    "options": [
+      {
+        "label": "programme detail page",
+        "optionType": "same-programme official sublink",
+        "governedFields": [
+          "duration",
+          "intake",
+          "requirements",
+          "course setting",
+          "careers"
+        ],
+        "state": "captured",
+        "evidence": {
+          "sourceId": "rendered-mum-ug-engineering-bachelor-of-robotics-and-mechatronics-engine-16",
+          "sourceUrl": "https://www.monash.edu.my/study/undergraduate/engineering/bachelor-of-engineering-honours-in-mechatronics-engineering",
+          "localPath": "data/imports/mum/2026-06-19/official-audit/rendered/016-mum-ug-engineering-bachelor-of-robotics-and-mechatronics-engine-16.json",
+          "sourceText": "Rendered official Monash DOM page captured the previously blocked programme detail tabs."
+        }
+      }
+    ],
+    "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ug-engineering-bachelor-of-robotics-and-mechatronics-engine-16.blocked.md"
+  },
+  {
+    "code": "MUM-UG-ENGINEERING-BACHELOR-OF-SOFTWARE-ENGINEERING-HONOURS-17",
+    "nameEnOfficial": "Bachelor of Software Engineering (Honours)",
+    "detailPageUrl": "https://www.monash.edu.my/study/undergraduate/engineering/bachelor-of-software-engineering-honours",
+    "sourceId": "detail-mum-ug-engineering-bachelor-of-software-engineering-honours-17",
+    "hasOptions": true,
+    "retrievalMethod": "jina-reader",
+    "options": [
+      {
+        "label": "programme detail page",
+        "optionType": "same-programme official sublink",
+        "governedFields": [
+          "duration",
+          "intake",
+          "requirements",
+          "course setting",
+          "careers"
+        ],
+        "state": "captured",
+        "evidence": {
+          "sourceId": "rendered-mum-ug-engineering-bachelor-of-software-engineering-honours-17",
+          "sourceUrl": "https://www.monash.edu.my/study/undergraduate/engineering/bachelor-of-software-engineering-honours",
+          "localPath": "data/imports/mum/2026-06-19/official-audit/rendered/017-mum-ug-engineering-bachelor-of-software-engineering-honours-17.json",
+          "sourceText": "Rendered official Monash DOM page captured the previously blocked programme detail tabs."
+        }
+      }
+    ],
+    "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ug-engineering-bachelor-of-software-engineering-honours-17.blocked.md"
+  },
+  {
+    "code": "MUM-UG-INFORMATION-TECHNO-BACHELOR-OF-COMPUTER-SCIENCE-18",
+    "nameEnOfficial": "Bachelor of Computer Science",
+    "detailPageUrl": "https://www.monash.edu.my/study/undergraduate/information-technology/bachelor-computer-science",
+    "sourceId": "detail-mum-ug-information-techno-bachelor-of-computer-science-18",
+    "hasOptions": true,
+    "retrievalMethod": "jina-reader",
+    "options": [
+      {
+        "label": "At a glance",
+        "optionType": "tab",
+        "governedFields": [
+          "programme detail"
+        ],
+        "state": "captured",
+        "evidence": {
+          "sourceId": "detail-mum-ug-information-techno-bachelor-of-computer-science-18",
+          "sourceUrl": "https://www.monash.edu.my/study/undergraduate/information-technology/bachelor-computer-science",
+          "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ug-information-techno-bachelor-of-computer-science-18.md"
+        }
+      },
+      {
+        "label": "Areas of study",
+        "optionType": "tab",
+        "governedFields": [
+          "programme detail"
+        ],
+        "state": "captured",
+        "evidence": {
+          "sourceId": "detail-mum-ug-information-techno-bachelor-of-computer-science-18",
+          "sourceUrl": "https://www.monash.edu.my/study/undergraduate/information-technology/bachelor-computer-science",
+          "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ug-information-techno-bachelor-of-computer-science-18.md"
+        }
+      },
+      {
+        "label": "Why Monash?",
+        "optionType": "tab",
+        "governedFields": [
+          "programme detail"
+        ],
+        "state": "captured",
+        "evidence": {
+          "sourceId": "detail-mum-ug-information-techno-bachelor-of-computer-science-18",
+          "sourceUrl": "https://www.monash.edu.my/study/undergraduate/information-technology/bachelor-computer-science",
+          "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ug-information-techno-bachelor-of-computer-science-18.md"
+        }
+      },
+      {
+        "label": "Career paths",
+        "optionType": "tab",
+        "governedFields": [
+          "programme detail"
+        ],
+        "state": "captured",
+        "evidence": {
+          "sourceId": "detail-mum-ug-information-techno-bachelor-of-computer-science-18",
+          "sourceUrl": "https://www.monash.edu.my/study/undergraduate/information-technology/bachelor-computer-science",
+          "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ug-information-techno-bachelor-of-computer-science-18.md"
+        }
+      },
+      {
+        "label": "Entry requirements",
+        "optionType": "tab",
+        "governedFields": [
+          "programme detail"
+        ],
+        "state": "captured",
+        "evidence": {
+          "sourceId": "detail-mum-ug-information-techno-bachelor-of-computer-science-18",
+          "sourceUrl": "https://www.monash.edu.my/study/undergraduate/information-technology/bachelor-computer-science",
+          "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ug-information-techno-bachelor-of-computer-science-18.md"
+        }
+      }
+    ],
+    "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ug-information-techno-bachelor-of-computer-science-18.md"
+  },
+  {
+    "code": "MUM-UG-INFORMATION-TECHNO-BACHELOR-OF-COMPUTER-SCIENCE-IN-ARTIFICIAL-I-19",
+    "nameEnOfficial": "Bachelor of Computer Science in Artificial Intelligence",
+    "detailPageUrl": "https://www.monash.edu.my/study/undergraduate/information-technology/bachelor-of-computer-science-in-artificial-intelligence",
+    "sourceId": "detail-mum-ug-information-techno-bachelor-of-computer-science-in-artificial-i-19",
+    "hasOptions": true,
+    "retrievalMethod": "jina-reader",
+    "options": [
+      {
+        "label": "programme detail page",
+        "optionType": "same-programme official sublink",
+        "governedFields": [
+          "duration",
+          "intake",
+          "requirements",
+          "course setting",
+          "careers"
+        ],
+        "state": "captured",
+        "evidence": {
+          "sourceId": "rendered-mum-ug-information-techno-bachelor-of-computer-science-in-artificial-i-19",
+          "sourceUrl": "https://www.monash.edu.my/study/undergraduate/information-technology/bachelor-of-computer-science-in-artificial-intelligence",
+          "localPath": "data/imports/mum/2026-06-19/official-audit/rendered/019-mum-ug-information-techno-bachelor-of-computer-science-in-artificial-i-19.json",
+          "sourceText": "Rendered official Monash DOM page captured the previously blocked programme detail tabs."
+        }
+      }
+    ],
+    "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ug-information-techno-bachelor-of-computer-science-in-artificial-i-19.blocked.md"
+  },
+  {
+    "code": "MUM-UG-INFORMATION-TECHNO-BACHELOR-OF-COMPUTER-SCIENCE-IN-DATA-SCIENCE-20",
+    "nameEnOfficial": "Bachelor of Computer Science in Data Science",
+    "detailPageUrl": "https://www.monash.edu.my/study/undergraduate/information-technology/bachelor-of-computer-science-in-data-science",
+    "sourceId": "detail-mum-ug-information-techno-bachelor-of-computer-science-in-data-science-20",
+    "hasOptions": true,
+    "retrievalMethod": "jina-reader",
+    "options": [
+      {
+        "label": "programme detail page",
+        "optionType": "same-programme official sublink",
+        "governedFields": [
+          "duration",
+          "intake",
+          "requirements",
+          "course setting",
+          "careers"
+        ],
+        "state": "captured",
+        "evidence": {
+          "sourceId": "rendered-mum-ug-information-techno-bachelor-of-computer-science-in-data-science-20",
+          "sourceUrl": "https://www.monash.edu.my/study/undergraduate/information-technology/bachelor-of-computer-science-in-data-science",
+          "localPath": "data/imports/mum/2026-06-19/official-audit/rendered/020-mum-ug-information-techno-bachelor-of-computer-science-in-data-science-20.json",
+          "sourceText": "Rendered official Monash DOM page captured the previously blocked programme detail tabs."
+        }
+      }
+    ],
+    "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ug-information-techno-bachelor-of-computer-science-in-data-science-20.blocked.md"
+  },
+  {
+    "code": "MUM-UG-INFORMATION-TECHNO-BACHELOR-OF-COMPUTER-SCIENCE-HONOURS-21",
+    "nameEnOfficial": "Bachelor of Computer Science (Honours)",
+    "detailPageUrl": "https://www.monash.edu.my/study/undergraduate/information-technology/bachelor-of-computer-science-honours",
+    "sourceId": "detail-mum-ug-information-techno-bachelor-of-computer-science-honours-21",
+    "hasOptions": true,
+    "retrievalMethod": "jina-reader",
+    "options": [
+      {
+        "label": "programme detail page",
+        "optionType": "same-programme official sublink",
+        "governedFields": [
+          "duration",
+          "intake",
+          "requirements",
+          "course setting",
+          "careers"
+        ],
+        "state": "captured",
+        "evidence": {
+          "sourceId": "rendered-mum-ug-information-techno-bachelor-of-computer-science-honours-21",
+          "sourceUrl": "https://www.monash.edu.my/study/undergraduate/information-technology/bachelor-of-computer-science-honours",
+          "localPath": "data/imports/mum/2026-06-19/official-audit/rendered/021-mum-ug-information-techno-bachelor-of-computer-science-honours-21.json",
+          "sourceText": "Rendered official Monash DOM page captured the previously blocked programme detail tabs."
+        }
+      }
+    ],
+    "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ug-information-techno-bachelor-of-computer-science-honours-21.blocked.md"
+  },
+  {
+    "code": "MUM-UG-MEDICINE-AND-HEALT-BACHELOR-OF-MEDICAL-SCIENCE-AND-DOCTOR-OF-ME-22",
+    "nameEnOfficial": "Bachelor of Medical Science and Doctor of Medicine",
+    "detailPageUrl": "https://www.monash.edu.my/study/undergraduate/jeffrey-cheah-school-medicine-health-sciences/bachelor-medical-science-doctor-medicine",
+    "sourceId": "detail-mum-ug-medicine-and-healt-bachelor-of-medical-science-and-doctor-of-me-22",
+    "hasOptions": true,
+    "retrievalMethod": "jina-reader",
+    "options": [
+      {
+        "label": "programme detail page",
+        "optionType": "same-programme official sublink",
+        "governedFields": [
+          "duration",
+          "intake",
+          "requirements",
+          "course setting",
+          "careers"
+        ],
+        "state": "captured",
+        "evidence": {
+          "sourceId": "rendered-mum-ug-medicine-and-healt-bachelor-of-medical-science-and-doctor-of-me-22",
+          "sourceUrl": "https://www.monash.edu.my/study/undergraduate/jeffrey-cheah-school-medicine-health-sciences/bachelor-medical-science-doctor-medicine",
+          "localPath": "data/imports/mum/2026-06-19/official-audit/rendered/022-mum-ug-medicine-and-healt-bachelor-of-medical-science-and-doctor-of-me-22.json",
+          "sourceText": "Rendered official Monash DOM page captured the previously blocked programme detail tabs."
+        }
+      }
+    ],
+    "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ug-medicine-and-healt-bachelor-of-medical-science-and-doctor-of-me-22.blocked.md"
+  },
+  {
+    "code": "MUM-UG-MEDICINE-AND-HEALT-BACHELOR-OF-PSYCHOLOGY-23",
+    "nameEnOfficial": "Bachelor of Psychology",
+    "detailPageUrl": "https://www.monash.edu.my/study/undergraduate/jeffrey-cheah-school-medicine-health-sciences/bachelor-of-psychology",
+    "sourceId": "detail-mum-ug-medicine-and-healt-bachelor-of-psychology-23",
+    "hasOptions": true,
+    "retrievalMethod": "jina-reader",
+    "options": [
+      {
+        "label": "programme detail page",
+        "optionType": "same-programme official sublink",
+        "governedFields": [
+          "duration",
+          "intake",
+          "requirements",
+          "course setting",
+          "careers"
+        ],
+        "state": "captured",
+        "evidence": {
+          "sourceId": "rendered-mum-ug-medicine-and-healt-bachelor-of-psychology-23",
+          "sourceUrl": "https://www.monash.edu.my/study/undergraduate/jeffrey-cheah-school-medicine-health-sciences/bachelor-of-psychology",
+          "localPath": "data/imports/mum/2026-06-19/official-audit/rendered/023-mum-ug-medicine-and-healt-bachelor-of-psychology-23.json",
+          "sourceText": "Rendered official Monash DOM page captured the previously blocked programme detail tabs."
+        }
+      }
+    ],
+    "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ug-medicine-and-healt-bachelor-of-psychology-23.blocked.md"
+  },
+  {
+    "code": "MUM-UG-MEDICINE-AND-HEALT-BACHELOR-OF-PSYCHOLOGY-AND-BUSINESS-24",
+    "nameEnOfficial": "Bachelor of Psychology and Business",
+    "detailPageUrl": "https://www.monash.edu.my/study/undergraduate/jeffrey-cheah-school-medicine-health-sciences/bachelor-psychological-science-business",
+    "sourceId": "detail-mum-ug-medicine-and-healt-bachelor-of-psychology-and-business-24",
+    "hasOptions": true,
+    "retrievalMethod": "jina-reader",
+    "options": [
+      {
+        "label": "programme detail page",
+        "optionType": "same-programme official sublink",
+        "governedFields": [
+          "duration",
+          "intake",
+          "requirements",
+          "course setting",
+          "careers"
+        ],
+        "state": "captured",
+        "evidence": {
+          "sourceId": "rendered-mum-ug-medicine-and-healt-bachelor-of-psychology-and-business-24",
+          "sourceUrl": "https://www.monash.edu.my/study/undergraduate/jeffrey-cheah-school-medicine-health-sciences/bachelor-psychological-science-business",
+          "localPath": "data/imports/mum/2026-06-19/official-audit/rendered/024-mum-ug-medicine-and-healt-bachelor-of-psychology-and-business-24.json",
+          "sourceText": "Rendered official Monash DOM page captured the previously blocked programme detail tabs."
+        }
+      }
+    ],
+    "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ug-medicine-and-healt-bachelor-of-psychology-and-business-24.blocked.md"
+  },
+  {
+    "code": "MUM-UG-MEDICINE-AND-HEALT-BACHELOR-OF-HUMAN-NUTRITION-25",
+    "nameEnOfficial": "Bachelor of Human Nutrition",
+    "detailPageUrl": "https://www.monash.edu.my/study/undergraduate/jeffrey-cheah-school-medicine-health-sciences/bachelor-of-human-nutrition",
+    "sourceId": "detail-mum-ug-medicine-and-healt-bachelor-of-human-nutrition-25",
+    "hasOptions": true,
+    "retrievalMethod": "jina-reader",
+    "options": [
+      {
+        "label": "programme detail page",
+        "optionType": "same-programme official sublink",
+        "governedFields": [
+          "duration",
+          "intake",
+          "requirements",
+          "course setting",
+          "careers"
+        ],
+        "state": "captured",
+        "evidence": {
+          "sourceId": "rendered-mum-ug-medicine-and-healt-bachelor-of-human-nutrition-25",
+          "sourceUrl": "https://www.monash.edu.my/study/undergraduate/jeffrey-cheah-school-medicine-health-sciences/bachelor-of-human-nutrition",
+          "localPath": "data/imports/mum/2026-06-19/official-audit/rendered/025-mum-ug-medicine-and-healt-bachelor-of-human-nutrition-25.json",
+          "sourceText": "Rendered official Monash DOM page captured the previously blocked programme detail tabs."
+        }
+      }
+    ],
+    "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ug-medicine-and-healt-bachelor-of-human-nutrition-25.blocked.md"
+  },
+  {
+    "code": "MUM-UG-MEDICINE-AND-HEALT-BACHELOR-OF-HEALTH-SCIENCES-HONOURS-26",
+    "nameEnOfficial": "Bachelor of Health Sciences (Honours)",
+    "detailPageUrl": "https://www.monash.edu.my/study/undergraduate/jeffrey-cheah-school-medicine-health-sciences/bachelor-of-health-sciences-honours",
+    "sourceId": "detail-mum-ug-medicine-and-healt-bachelor-of-health-sciences-honours-26",
+    "hasOptions": true,
+    "retrievalMethod": "jina-reader",
+    "options": [
+      {
+        "label": "programme detail page",
+        "optionType": "same-programme official sublink",
+        "governedFields": [
+          "duration",
+          "intake",
+          "requirements",
+          "course setting",
+          "careers"
+        ],
+        "state": "captured",
+        "evidence": {
+          "sourceId": "rendered-mum-ug-medicine-and-healt-bachelor-of-health-sciences-honours-26",
+          "sourceUrl": "https://www.monash.edu.my/study/undergraduate/jeffrey-cheah-school-medicine-health-sciences/bachelor-of-health-sciences-honours",
+          "localPath": "data/imports/mum/2026-06-19/official-audit/rendered/026-mum-ug-medicine-and-healt-bachelor-of-health-sciences-honours-26.json",
+          "sourceText": "Rendered official Monash DOM page captured the previously blocked programme detail tabs."
+        }
+      }
+    ],
+    "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ug-medicine-and-healt-bachelor-of-health-sciences-honours-26.blocked.md"
+  },
+  {
+    "code": "MUM-UG-MEDICINE-AND-HEALT-BACHELOR-OF-MEDICAL-SCIENCE-HONOURS-27",
+    "nameEnOfficial": "Bachelor of Medical Science (Honours)",
+    "detailPageUrl": "https://www.monash.edu.my/study/undergraduate/jeffrey-cheah-school-medicine-health-sciences/bachelor-medical-science-honours",
+    "sourceId": "detail-mum-ug-medicine-and-healt-bachelor-of-medical-science-honours-27",
+    "hasOptions": true,
+    "retrievalMethod": "jina-reader",
+    "options": [
+      {
+        "label": "programme detail page",
+        "optionType": "same-programme official sublink",
+        "governedFields": [
+          "duration",
+          "intake",
+          "requirements",
+          "course setting",
+          "careers"
+        ],
+        "state": "captured",
+        "evidence": {
+          "sourceId": "rendered-mum-ug-medicine-and-healt-bachelor-of-medical-science-honours-27",
+          "sourceUrl": "https://www.monash.edu.my/study/undergraduate/jeffrey-cheah-school-medicine-health-sciences/bachelor-medical-science-honours",
+          "localPath": "data/imports/mum/2026-06-19/official-audit/rendered/027-mum-ug-medicine-and-healt-bachelor-of-medical-science-honours-27.json",
+          "sourceText": "Rendered official Monash DOM page captured the previously blocked programme detail tabs."
+        }
+      }
+    ],
+    "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ug-medicine-and-healt-bachelor-of-medical-science-honours-27.blocked.md"
+  },
+  {
+    "code": "MUM-UG-MEDICINE-AND-HEALT-BACHELOR-OF-PSYCHOLOGY-HONOURS-28",
+    "nameEnOfficial": "Bachelor of Psychology (Honours)",
+    "detailPageUrl": "https://www.monash.edu.my/study/undergraduate/jeffrey-cheah-school-medicine-health-sciences/bachelor-psychology-honours",
+    "sourceId": "detail-mum-ug-medicine-and-healt-bachelor-of-psychology-honours-28",
+    "hasOptions": true,
+    "retrievalMethod": "jina-reader",
+    "options": [
+      {
+        "label": "programme detail page",
+        "optionType": "same-programme official sublink",
+        "governedFields": [
+          "duration",
+          "intake",
+          "requirements",
+          "course setting",
+          "careers"
+        ],
+        "state": "captured",
+        "evidence": {
+          "sourceId": "rendered-mum-ug-medicine-and-healt-bachelor-of-psychology-honours-28",
+          "sourceUrl": "https://www.monash.edu.my/study/undergraduate/jeffrey-cheah-school-medicine-health-sciences/bachelor-psychology-honours",
+          "localPath": "data/imports/mum/2026-06-19/official-audit/rendered/028-mum-ug-medicine-and-healt-bachelor-of-psychology-honours-28.json",
+          "sourceText": "Rendered official Monash DOM page captured the previously blocked programme detail tabs."
+        }
+      }
+    ],
+    "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ug-medicine-and-healt-bachelor-of-psychology-honours-28.blocked.md"
+  },
+  {
+    "code": "MUM-UG-PHARMACY-COURSE-DU-BACHELOR-OF-PHARMACY-HONOURS-29",
+    "nameEnOfficial": "Bachelor of Pharmacy (Honours)",
+    "detailPageUrl": "https://www.monash.edu.my/study/undergraduate/pharmacy/bachelor-pharmacy",
+    "sourceId": "detail-mum-ug-pharmacy-course-du-bachelor-of-pharmacy-honours-29",
+    "hasOptions": true,
+    "retrievalMethod": "jina-reader",
+    "options": [
+      {
+        "label": "programme detail page",
+        "optionType": "same-programme official sublink",
+        "governedFields": [
+          "duration",
+          "intake",
+          "requirements",
+          "course setting",
+          "careers"
+        ],
+        "state": "captured",
+        "evidence": {
+          "sourceId": "rendered-mum-ug-pharmacy-course-du-bachelor-of-pharmacy-honours-29",
+          "sourceUrl": "https://www.monash.edu.my/study/undergraduate/pharmacy/bachelor-pharmacy",
+          "localPath": "data/imports/mum/2026-06-19/official-audit/rendered/029-mum-ug-pharmacy-course-du-bachelor-of-pharmacy-honours-29.json",
+          "sourceText": "Rendered official Monash DOM page captured the previously blocked programme detail tabs."
+        }
+      }
+    ],
+    "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ug-pharmacy-course-du-bachelor-of-pharmacy-honours-29.blocked.md"
+  },
+  {
+    "code": "MUM-UG-PHARMACY-COURSE-DU-BACHELOR-OF-PHARMACEUTICAL-SCIENCE-30",
+    "nameEnOfficial": "Bachelor of Pharmaceutical Science",
+    "detailPageUrl": "https://www.monash.edu.my/study/undergraduate/pharmacy/bachelor-of-pharmaceutical-science",
+    "sourceId": "detail-mum-ug-pharmacy-course-du-bachelor-of-pharmaceutical-science-30",
+    "hasOptions": true,
+    "retrievalMethod": "jina-reader",
+    "options": [
+      {
+        "label": "programme detail page",
+        "optionType": "same-programme official sublink",
+        "governedFields": [
+          "duration",
+          "intake",
+          "requirements",
+          "course setting",
+          "careers"
+        ],
+        "state": "captured",
+        "evidence": {
+          "sourceId": "rendered-mum-ug-pharmacy-course-du-bachelor-of-pharmaceutical-science-30",
+          "sourceUrl": "https://www.monash.edu.my/study/undergraduate/pharmacy/bachelor-of-pharmaceutical-science",
+          "localPath": "data/imports/mum/2026-06-19/official-audit/rendered/030-mum-ug-pharmacy-course-du-bachelor-of-pharmaceutical-science-30.json",
+          "sourceText": "Rendered official Monash DOM page captured the previously blocked programme detail tabs."
+        }
+      }
+    ],
+    "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ug-pharmacy-course-du-bachelor-of-pharmaceutical-science-30.blocked.md"
+  },
+  {
+    "code": "MUM-UG-PHARMACY-COURSE-DU-BACHELOR-OF-PHARMACEUTICAL-SCIENCE-HONOURS-31",
+    "nameEnOfficial": "Bachelor of Pharmaceutical Science (Honours)",
+    "detailPageUrl": "https://www.monash.edu.my/study/undergraduate/pharmacy/bachelor-of-pharmaceutical-science-honours",
+    "sourceId": "detail-mum-ug-pharmacy-course-du-bachelor-of-pharmaceutical-science-honours-31",
+    "hasOptions": true,
+    "retrievalMethod": "jina-reader",
+    "options": [
+      {
+        "label": "programme detail page",
+        "optionType": "same-programme official sublink",
+        "governedFields": [
+          "duration",
+          "intake",
+          "requirements",
+          "course setting",
+          "careers"
+        ],
+        "state": "captured",
+        "evidence": {
+          "sourceId": "rendered-mum-ug-pharmacy-course-du-bachelor-of-pharmaceutical-science-honours-31",
+          "sourceUrl": "https://www.monash.edu.my/study/undergraduate/pharmacy/bachelor-of-pharmaceutical-science-honours",
+          "localPath": "data/imports/mum/2026-06-19/official-audit/rendered/031-mum-ug-pharmacy-course-du-bachelor-of-pharmaceutical-science-honours-31.json",
+          "sourceText": "Rendered official Monash DOM page captured the previously blocked programme detail tabs."
+        }
+      }
+    ],
+    "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ug-pharmacy-course-du-bachelor-of-pharmaceutical-science-honours-31.blocked.md"
+  },
+  {
+    "code": "MUM-UG-SCIENCE-COURSE-DUR-BACHELOR-OF-SCIENCE-32",
+    "nameEnOfficial": "Bachelor of Science",
+    "detailPageUrl": "https://www.monash.edu.my/study/undergraduate/science/bachelor-science",
+    "sourceId": "detail-mum-ug-science-course-dur-bachelor-of-science-32",
+    "hasOptions": true,
+    "retrievalMethod": "jina-reader",
+    "options": [
+      {
+        "label": "programme detail page",
+        "optionType": "same-programme official sublink",
+        "governedFields": [
+          "duration",
+          "intake",
+          "requirements",
+          "course setting",
+          "careers"
+        ],
+        "state": "captured",
+        "evidence": {
+          "sourceId": "rendered-mum-ug-science-course-dur-bachelor-of-science-32",
+          "sourceUrl": "https://www.monash.edu.my/study/undergraduate/science/bachelor-science",
+          "localPath": "data/imports/mum/2026-06-19/official-audit/rendered/032-mum-ug-science-course-dur-bachelor-of-science-32.json",
+          "sourceText": "Rendered official Monash DOM page captured the previously blocked programme detail tabs."
+        }
+      }
+    ],
+    "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ug-science-course-dur-bachelor-of-science-32.blocked.md"
+  },
+  {
+    "code": "MUM-UG-SCIENCE-COURSE-DUR-BACHELOR-OF-APPLIED-DATA-SCIENCE-33",
+    "nameEnOfficial": "Bachelor of Applied Data Science",
+    "detailPageUrl": "https://www.monash.edu.my/study/undergraduate/science/bachelor-of-applied-data-science",
+    "sourceId": "detail-mum-ug-science-course-dur-bachelor-of-applied-data-science-33",
+    "hasOptions": true,
+    "retrievalMethod": "jina-reader",
+    "options": [
+      {
+        "label": "programme detail page",
+        "optionType": "same-programme official sublink",
+        "governedFields": [
+          "duration",
+          "intake",
+          "requirements",
+          "course setting",
+          "careers"
+        ],
+        "state": "captured",
+        "evidence": {
+          "sourceId": "rendered-mum-ug-science-course-dur-bachelor-of-applied-data-science-33",
+          "sourceUrl": "https://www.monash.edu.my/study/undergraduate/science/bachelor-of-applied-data-science",
+          "localPath": "data/imports/mum/2026-06-19/official-audit/rendered/033-mum-ug-science-course-dur-bachelor-of-applied-data-science-33.json",
+          "sourceText": "Rendered official Monash DOM page captured the previously blocked programme detail tabs."
+        }
+      }
+    ],
+    "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ug-science-course-dur-bachelor-of-applied-data-science-33.blocked.md"
+  },
+  {
+    "code": "MUM-UG-SCIENCE-COURSE-DUR-BACHELOR-OF-FOOD-SCIENCE-AND-TECHNOLOGY-34",
+    "nameEnOfficial": "Bachelor of Food Science and Technology",
+    "detailPageUrl": "https://www.monash.edu.my/study/undergraduate/science/bachelor-science-food-science-technology",
+    "sourceId": "detail-mum-ug-science-course-dur-bachelor-of-food-science-and-technology-34",
+    "hasOptions": true,
+    "retrievalMethod": "jina-reader",
+    "options": [
+      {
+        "label": "programme detail page",
+        "optionType": "same-programme official sublink",
+        "governedFields": [
+          "duration",
+          "intake",
+          "requirements",
+          "course setting",
+          "careers"
+        ],
+        "state": "captured",
+        "evidence": {
+          "sourceId": "rendered-mum-ug-science-course-dur-bachelor-of-food-science-and-technology-34",
+          "sourceUrl": "https://www.monash.edu.my/study/undergraduate/science/bachelor-science-food-science-technology",
+          "localPath": "data/imports/mum/2026-06-19/official-audit/rendered/034-mum-ug-science-course-dur-bachelor-of-food-science-and-technology-34.json",
+          "sourceText": "Rendered official Monash DOM page captured the previously blocked programme detail tabs."
+        }
+      }
+    ],
+    "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ug-science-course-dur-bachelor-of-food-science-and-technology-34.blocked.md"
+  },
+  {
+    "code": "MUM-UG-SCIENCE-COURSE-DUR-BACHELOR-OF-MEDICAL-BIOSCIENCE-35",
+    "nameEnOfficial": "Bachelor of Medical Bioscience",
+    "detailPageUrl": "https://www.monash.edu.my/study/undergraduate/science/bachelor-science-medical-bioscience",
+    "sourceId": "detail-mum-ug-science-course-dur-bachelor-of-medical-bioscience-35",
+    "hasOptions": true,
+    "retrievalMethod": "jina-reader",
+    "options": [
+      {
+        "label": "programme detail page",
+        "optionType": "same-programme official sublink",
+        "governedFields": [
+          "duration",
+          "intake",
+          "requirements",
+          "course setting",
+          "careers"
+        ],
+        "state": "captured",
+        "evidence": {
+          "sourceId": "rendered-mum-ug-science-course-dur-bachelor-of-medical-bioscience-35",
+          "sourceUrl": "https://www.monash.edu.my/study/undergraduate/science/bachelor-science-medical-bioscience",
+          "localPath": "data/imports/mum/2026-06-19/official-audit/rendered/035-mum-ug-science-course-dur-bachelor-of-medical-bioscience-35.json",
+          "sourceText": "Rendered official Monash DOM page captured the previously blocked programme detail tabs."
+        }
+      }
+    ],
+    "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ug-science-course-dur-bachelor-of-medical-bioscience-35.blocked.md"
+  },
+  {
+    "code": "MUM-UG-SCIENCE-COURSE-DUR-BACHELOR-OF-SCIENCE-HONOURS-36",
+    "nameEnOfficial": "Bachelor of Science (Honours)",
+    "detailPageUrl": "https://www.monash.edu.my/study/undergraduate/science/bachelor-science-honours",
+    "sourceId": "detail-mum-ug-science-course-dur-bachelor-of-science-honours-36",
+    "hasOptions": true,
+    "retrievalMethod": "jina-reader",
+    "options": [
+      {
+        "label": "programme detail page",
+        "optionType": "same-programme official sublink",
+        "governedFields": [
+          "duration",
+          "intake",
+          "requirements",
+          "course setting",
+          "careers"
+        ],
+        "state": "captured",
+        "evidence": {
+          "sourceId": "rendered-mum-ug-science-course-dur-bachelor-of-science-honours-36",
+          "sourceUrl": "https://www.monash.edu.my/study/undergraduate/science/bachelor-science-honours",
+          "localPath": "data/imports/mum/2026-06-19/official-audit/rendered/036-mum-ug-science-course-dur-bachelor-of-science-honours-36.json",
+          "sourceText": "Rendered official Monash DOM page captured the previously blocked programme detail tabs."
+        }
+      }
+    ],
+    "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ug-science-course-dur-bachelor-of-science-honours-36.blocked.md"
+  },
+  {
+    "code": "MUM-MA-ARTS-AND-SOCIAL-SC-MASTER-OF-COMMUNICATIONS-AND-MEDIA-STUDIES-37",
+    "nameEnOfficial": "Master of Communications and Media Studies",
+    "detailPageUrl": "https://www.monash.edu.my/study/postgraduate-and-research/arts-social-sciences/master-communications-media-studies",
+    "sourceId": "detail-mum-ma-arts-and-social-sc-master-of-communications-and-media-studies-37",
+    "hasOptions": true,
+    "retrievalMethod": "jina-reader",
+    "options": [
+      {
+        "label": "At a glance",
+        "optionType": "tab",
+        "governedFields": [
+          "programme detail"
+        ],
+        "state": "captured",
+        "evidence": {
+          "sourceId": "detail-mum-ma-arts-and-social-sc-master-of-communications-and-media-studies-37",
+          "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research/arts-social-sciences/master-communications-media-studies",
+          "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ma-arts-and-social-sc-master-of-communications-and-media-studies-37.md"
+        }
+      },
+      {
+        "label": "What you'll learn",
+        "optionType": "tab",
+        "governedFields": [
+          "programme detail"
+        ],
+        "state": "captured",
+        "evidence": {
+          "sourceId": "detail-mum-ma-arts-and-social-sc-master-of-communications-and-media-studies-37",
+          "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research/arts-social-sciences/master-communications-media-studies",
+          "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ma-arts-and-social-sc-master-of-communications-and-media-studies-37.md"
+        }
+      },
+      {
+        "label": "Why Monash?",
+        "optionType": "tab",
+        "governedFields": [
+          "programme detail"
+        ],
+        "state": "captured",
+        "evidence": {
+          "sourceId": "detail-mum-ma-arts-and-social-sc-master-of-communications-and-media-studies-37",
+          "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research/arts-social-sciences/master-communications-media-studies",
+          "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ma-arts-and-social-sc-master-of-communications-and-media-studies-37.md"
+        }
+      },
+      {
+        "label": "Career paths",
+        "optionType": "tab",
+        "governedFields": [
+          "programme detail"
+        ],
+        "state": "captured",
+        "evidence": {
+          "sourceId": "detail-mum-ma-arts-and-social-sc-master-of-communications-and-media-studies-37",
+          "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research/arts-social-sciences/master-communications-media-studies",
+          "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ma-arts-and-social-sc-master-of-communications-and-media-studies-37.md"
+        }
+      },
+      {
+        "label": "Entry requirements",
+        "optionType": "tab",
+        "governedFields": [
+          "programme detail"
+        ],
+        "state": "captured",
+        "evidence": {
+          "sourceId": "detail-mum-ma-arts-and-social-sc-master-of-communications-and-media-studies-37",
+          "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research/arts-social-sciences/master-communications-media-studies",
+          "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ma-arts-and-social-sc-master-of-communications-and-media-studies-37.md"
+        }
+      }
+    ],
+    "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ma-arts-and-social-sc-master-of-communications-and-media-studies-37.md"
+  },
+  {
+    "code": "MUM-PHD-ARTS-AND-SOCIAL-SC-PHD-PHD-38",
+    "nameEnOfficial": "Doctor of Philosophy (PhD)",
+    "detailPageUrl": "https://www.monash.edu.my/study/postgraduate-and-research/arts-social-sciences/phd",
+    "sourceId": "detail-mum-phd-arts-and-social-sc-phd-phd-38",
+    "hasOptions": true,
+    "retrievalMethod": "jina-reader",
+    "options": [
+      {
+        "label": "programme detail page",
+        "optionType": "same-programme official sublink",
+        "governedFields": [
+          "duration",
+          "intake",
+          "requirements",
+          "course setting",
+          "careers"
+        ],
+        "state": "captured",
+        "evidence": {
+          "sourceId": "rendered-mum-phd-arts-and-social-sc-phd-phd-38",
+          "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research/arts-social-sciences/phd",
+          "localPath": "data/imports/mum/2026-06-19/official-audit/rendered/038-mum-phd-arts-and-social-sc-phd-phd-38.json",
+          "sourceText": "Rendered official Monash DOM page captured the previously blocked programme detail tabs."
+        }
+      }
+    ],
+    "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-phd-arts-and-social-sc-phd-phd-38.blocked.md"
+  },
+  {
+    "code": "MUM-MA-BUSINESS-MASTER-OF-INTERNATIONAL-BUSINESS-39",
+    "nameEnOfficial": "Master of International Business",
+    "detailPageUrl": "https://www.monash.edu.my/study/postgraduate-and-research/business/master-international-business",
+    "sourceId": "detail-mum-ma-business-master-of-international-business-39",
+    "hasOptions": true,
+    "retrievalMethod": "jina-reader",
+    "options": [
+      {
+        "label": "At a glance",
+        "optionType": "tab",
+        "governedFields": [
+          "programme detail"
+        ],
+        "state": "captured",
+        "evidence": {
+          "sourceId": "detail-mum-ma-business-master-of-international-business-39",
+          "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research/business/master-international-business",
+          "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ma-business-master-of-international-business-39.md"
+        }
+      },
+      {
+        "label": "Course structure",
+        "optionType": "tab",
+        "governedFields": [
+          "programme detail"
+        ],
+        "state": "captured",
+        "evidence": {
+          "sourceId": "detail-mum-ma-business-master-of-international-business-39",
+          "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research/business/master-international-business",
+          "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ma-business-master-of-international-business-39.md"
+        }
+      },
+      {
+        "label": "Why Monash?",
+        "optionType": "tab",
+        "governedFields": [
+          "programme detail"
+        ],
+        "state": "captured",
+        "evidence": {
+          "sourceId": "detail-mum-ma-business-master-of-international-business-39",
+          "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research/business/master-international-business",
+          "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ma-business-master-of-international-business-39.md"
+        }
+      },
+      {
+        "label": "Career paths",
+        "optionType": "tab",
+        "governedFields": [
+          "programme detail"
+        ],
+        "state": "captured",
+        "evidence": {
+          "sourceId": "detail-mum-ma-business-master-of-international-business-39",
+          "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research/business/master-international-business",
+          "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ma-business-master-of-international-business-39.md"
+        }
+      },
+      {
+        "label": "Entry requirements",
+        "optionType": "tab",
+        "governedFields": [
+          "programme detail"
+        ],
+        "state": "captured",
+        "evidence": {
+          "sourceId": "detail-mum-ma-business-master-of-international-business-39",
+          "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research/business/master-international-business",
+          "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ma-business-master-of-international-business-39.md"
+        }
+      }
+    ],
+    "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ma-business-master-of-international-business-39.md"
+  },
+  {
+    "code": "MUM-MA-BUSINESS-MASTER-OF-DIGITAL-BUSINESS-40",
+    "nameEnOfficial": "Master of Digital Business",
+    "detailPageUrl": "https://www.monash.edu.my/study/postgraduate-and-research/business/master-of-digital-business",
+    "sourceId": "detail-mum-ma-business-master-of-digital-business-40",
+    "hasOptions": true,
+    "retrievalMethod": "jina-reader",
+    "options": [
+      {
+        "label": "programme detail page",
+        "optionType": "same-programme official sublink",
+        "governedFields": [
+          "duration",
+          "intake",
+          "requirements",
+          "course setting",
+          "careers"
+        ],
+        "state": "captured",
+        "evidence": {
+          "sourceId": "rendered-mum-ma-business-master-of-digital-business-40",
+          "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research/business/master-of-digital-business",
+          "localPath": "data/imports/mum/2026-06-19/official-audit/rendered/040-mum-ma-business-master-of-digital-business-40.json",
+          "sourceText": "Rendered official Monash DOM page captured the previously blocked programme detail tabs."
+        }
+      }
+    ],
+    "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ma-business-master-of-digital-business-40.blocked.md"
+  },
+  {
+    "code": "MUM-MA-BUSINESS-MPHIL-MPHIL-41",
+    "nameEnOfficial": "Master of Philosophy (MPhil)",
+    "detailPageUrl": "https://www.monash.edu.my/study/postgraduate-and-research/business/master-philosophy",
+    "sourceId": "detail-mum-ma-business-mphil-mphil-41",
+    "hasOptions": true,
+    "retrievalMethod": "jina-reader",
+    "options": [
+      {
+        "label": "At a glance",
+        "optionType": "tab",
+        "governedFields": [
+          "programme detail"
+        ],
+        "state": "captured",
+        "evidence": {
+          "sourceId": "detail-mum-ma-business-mphil-mphil-41",
+          "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research/business/master-philosophy",
+          "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ma-business-mphil-mphil-41.md"
+        }
+      },
+      {
+        "label": "Areas of research and Career Paths",
+        "optionType": "tab",
+        "governedFields": [
+          "programme detail"
+        ],
+        "state": "captured",
+        "evidence": {
+          "sourceId": "detail-mum-ma-business-mphil-mphil-41",
+          "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research/business/master-philosophy",
+          "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ma-business-mphil-mphil-41.md"
+        }
+      },
+      {
+        "label": "Why Monash?",
+        "optionType": "tab",
+        "governedFields": [
+          "programme detail"
+        ],
+        "state": "captured",
+        "evidence": {
+          "sourceId": "detail-mum-ma-business-mphil-mphil-41",
+          "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research/business/master-philosophy",
+          "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ma-business-mphil-mphil-41.md"
+        }
+      },
+      {
+        "label": "How to apply",
+        "optionType": "tab",
+        "governedFields": [
+          "programme detail"
+        ],
+        "state": "captured",
+        "evidence": {
+          "sourceId": "detail-mum-ma-business-mphil-mphil-41",
+          "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research/business/master-philosophy",
+          "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ma-business-mphil-mphil-41.md"
+        }
+      }
+    ],
+    "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ma-business-mphil-mphil-41.md"
+  },
+  {
+    "code": "MUM-PHD-BUSINESS-PHD-PHD-42",
+    "nameEnOfficial": "Doctor of Philosophy (PhD)",
+    "detailPageUrl": "https://www.monash.edu.my/study/postgraduate-and-research/business/phd",
+    "sourceId": "detail-mum-phd-business-phd-phd-42",
+    "hasOptions": true,
+    "retrievalMethod": "jina-reader",
+    "options": [
+      {
+        "label": "At a glance",
+        "optionType": "tab",
+        "governedFields": [
+          "programme detail"
+        ],
+        "state": "captured",
+        "evidence": {
+          "sourceId": "detail-mum-phd-business-phd-phd-42",
+          "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research/business/phd",
+          "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-phd-business-phd-phd-42.md"
+        }
+      },
+      {
+        "label": "Areas of research and career paths",
+        "optionType": "tab",
+        "governedFields": [
+          "programme detail"
+        ],
+        "state": "captured",
+        "evidence": {
+          "sourceId": "detail-mum-phd-business-phd-phd-42",
+          "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research/business/phd",
+          "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-phd-business-phd-phd-42.md"
+        }
+      },
+      {
+        "label": "Why Monash?",
+        "optionType": "tab",
+        "governedFields": [
+          "programme detail"
+        ],
+        "state": "captured",
+        "evidence": {
+          "sourceId": "detail-mum-phd-business-phd-phd-42",
+          "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research/business/phd",
+          "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-phd-business-phd-phd-42.md"
+        }
+      },
+      {
+        "label": "How to apply",
+        "optionType": "tab",
+        "governedFields": [
+          "programme detail"
+        ],
+        "state": "captured",
+        "evidence": {
+          "sourceId": "detail-mum-phd-business-phd-phd-42",
+          "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research/business/phd",
+          "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-phd-business-phd-phd-42.md"
+        }
+      }
+    ],
+    "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-phd-business-phd-phd-42.md"
+  },
+  {
+    "code": "MUM-MA-ENGINEERING-MASTER-OF-APPLIED-ENGINEERING-43",
+    "nameEnOfficial": "Master of Applied Engineering",
+    "detailPageUrl": "https://www.monash.edu.my/study/postgraduate-and-research/engineering/master-of-applied-engineering",
+    "sourceId": "detail-mum-ma-engineering-master-of-applied-engineering-43",
+    "hasOptions": true,
+    "retrievalMethod": "jina-reader",
+    "options": [
+      {
+        "label": "programme detail page",
+        "optionType": "same-programme official sublink",
+        "governedFields": [
+          "duration",
+          "intake",
+          "requirements",
+          "course setting",
+          "careers"
+        ],
+        "state": "captured",
+        "evidence": {
+          "sourceId": "rendered-mum-ma-engineering-master-of-applied-engineering-43",
+          "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research/engineering/master-of-applied-engineering",
+          "localPath": "data/imports/mum/2026-06-19/official-audit/rendered/043-mum-ma-engineering-master-of-applied-engineering-43.json",
+          "sourceText": "Rendered official Monash DOM page captured the previously blocked programme detail tabs."
+        }
+      }
+    ],
+    "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ma-engineering-master-of-applied-engineering-43.blocked.md"
+  },
+  {
+    "code": "MUM-MA-ENGINEERING-MASTER-OF-ENGINEERING-SCIENCE-RESEARCH-44",
+    "nameEnOfficial": "Master of Engineering Science (Research)",
+    "detailPageUrl": "https://www.monash.edu.my/study/postgraduate-and-research/engineering/master-engineering-science-research",
+    "sourceId": "detail-mum-ma-engineering-master-of-engineering-science-research-44",
+    "hasOptions": true,
+    "retrievalMethod": "jina-reader",
+    "options": [
+      {
+        "label": "At a glance",
+        "optionType": "tab",
+        "governedFields": [
+          "programme detail"
+        ],
+        "state": "captured",
+        "evidence": {
+          "sourceId": "detail-mum-ma-engineering-master-of-engineering-science-research-44",
+          "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research/engineering/master-engineering-science-research",
+          "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ma-engineering-master-of-engineering-science-research-44.md"
+        }
+      },
+      {
+        "label": "Areas of study and Career Paths",
+        "optionType": "tab",
+        "governedFields": [
+          "programme detail"
+        ],
+        "state": "captured",
+        "evidence": {
+          "sourceId": "detail-mum-ma-engineering-master-of-engineering-science-research-44",
+          "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research/engineering/master-engineering-science-research",
+          "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ma-engineering-master-of-engineering-science-research-44.md"
+        }
+      },
+      {
+        "label": "Why Monash?",
+        "optionType": "tab",
+        "governedFields": [
+          "programme detail"
+        ],
+        "state": "captured",
+        "evidence": {
+          "sourceId": "detail-mum-ma-engineering-master-of-engineering-science-research-44",
+          "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research/engineering/master-engineering-science-research",
+          "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ma-engineering-master-of-engineering-science-research-44.md"
+        }
+      },
+      {
+        "label": "How to apply",
+        "optionType": "tab",
+        "governedFields": [
+          "programme detail"
+        ],
+        "state": "captured",
+        "evidence": {
+          "sourceId": "detail-mum-ma-engineering-master-of-engineering-science-research-44",
+          "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research/engineering/master-engineering-science-research",
+          "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ma-engineering-master-of-engineering-science-research-44.md"
+        }
+      }
+    ],
+    "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ma-engineering-master-of-engineering-science-research-44.md"
+  },
+  {
+    "code": "MUM-PHD-ENGINEERING-PHD-PHD-45",
+    "nameEnOfficial": "Doctor of Philosophy (PhD)",
+    "detailPageUrl": "https://www.monash.edu.my/study/postgraduate-and-research/engineering/phd",
+    "sourceId": "detail-mum-phd-engineering-phd-phd-45",
+    "hasOptions": true,
+    "retrievalMethod": "jina-reader",
+    "options": [
+      {
+        "label": "At a glance",
+        "optionType": "tab",
+        "governedFields": [
+          "programme detail"
+        ],
+        "state": "captured",
+        "evidence": {
+          "sourceId": "detail-mum-phd-engineering-phd-phd-45",
+          "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research/engineering/phd",
+          "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-phd-engineering-phd-phd-45.md"
+        }
+      },
+      {
+        "label": "Areas of study and Career Paths",
+        "optionType": "tab",
+        "governedFields": [
+          "programme detail"
+        ],
+        "state": "captured",
+        "evidence": {
+          "sourceId": "detail-mum-phd-engineering-phd-phd-45",
+          "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research/engineering/phd",
+          "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-phd-engineering-phd-phd-45.md"
+        }
+      },
+      {
+        "label": "Why Monash?",
+        "optionType": "tab",
+        "governedFields": [
+          "programme detail"
+        ],
+        "state": "captured",
+        "evidence": {
+          "sourceId": "detail-mum-phd-engineering-phd-phd-45",
+          "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research/engineering/phd",
+          "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-phd-engineering-phd-phd-45.md"
+        }
+      },
+      {
+        "label": "How to apply",
+        "optionType": "tab",
+        "governedFields": [
+          "programme detail"
+        ],
+        "state": "captured",
+        "evidence": {
+          "sourceId": "detail-mum-phd-engineering-phd-phd-45",
+          "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research/engineering/phd",
+          "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-phd-engineering-phd-phd-45.md"
+        }
+      }
+    ],
+    "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-phd-engineering-phd-phd-45.md"
+  },
+  {
+    "code": "MUM-MA-INFORMATION-TECHNO-MASTER-OF-ARTIFICIAL-INTELLIGENCE-46",
+    "nameEnOfficial": "Master of Artificial Intelligence",
+    "detailPageUrl": "https://www.monash.edu.my/study/postgraduate-and-research/information-technology/master-of-artificial-intelligence",
+    "sourceId": "detail-mum-ma-information-techno-master-of-artificial-intelligence-46",
+    "hasOptions": true,
+    "retrievalMethod": "jina-reader",
+    "options": [
+      {
+        "label": "programme detail page",
+        "optionType": "same-programme official sublink",
+        "governedFields": [
+          "duration",
+          "intake",
+          "requirements",
+          "course setting",
+          "careers"
+        ],
+        "state": "captured",
+        "evidence": {
+          "sourceId": "rendered-mum-ma-information-techno-master-of-artificial-intelligence-46",
+          "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research/information-technology/master-of-artificial-intelligence",
+          "localPath": "data/imports/mum/2026-06-19/official-audit/rendered/046-mum-ma-information-techno-master-of-artificial-intelligence-46.json",
+          "sourceText": "Rendered official Monash DOM page captured the previously blocked programme detail tabs."
+        }
+      }
+    ],
+    "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ma-information-techno-master-of-artificial-intelligence-46.blocked.md"
+  },
+  {
+    "code": "MUM-MA-INFORMATION-TECHNO-MASTER-OF-BUSINESS-INFORMATION-SYSTEMS-47",
+    "nameEnOfficial": "Master of Business Information Systems",
+    "detailPageUrl": "https://www.monash.edu.my/study/postgraduate-and-research/information-technology/master-business-information-systems",
+    "sourceId": "detail-mum-ma-information-techno-master-of-business-information-systems-47",
+    "hasOptions": true,
+    "retrievalMethod": "jina-reader",
+    "options": [
+      {
+        "label": "At a glance",
+        "optionType": "tab",
+        "governedFields": [
+          "programme detail"
+        ],
+        "state": "captured",
+        "evidence": {
+          "sourceId": "detail-mum-ma-information-techno-master-of-business-information-systems-47",
+          "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research/information-technology/master-business-information-systems",
+          "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ma-information-techno-master-of-business-information-systems-47.md"
+        }
+      },
+      {
+        "label": "Course structure",
+        "optionType": "tab",
+        "governedFields": [
+          "programme detail"
+        ],
+        "state": "captured",
+        "evidence": {
+          "sourceId": "detail-mum-ma-information-techno-master-of-business-information-systems-47",
+          "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research/information-technology/master-business-information-systems",
+          "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ma-information-techno-master-of-business-information-systems-47.md"
+        }
+      },
+      {
+        "label": "Why Monash?",
+        "optionType": "tab",
+        "governedFields": [
+          "programme detail"
+        ],
+        "state": "captured",
+        "evidence": {
+          "sourceId": "detail-mum-ma-information-techno-master-of-business-information-systems-47",
+          "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research/information-technology/master-business-information-systems",
+          "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ma-information-techno-master-of-business-information-systems-47.md"
+        }
+      },
+      {
+        "label": "Career paths",
+        "optionType": "tab",
+        "governedFields": [
+          "programme detail"
+        ],
+        "state": "captured",
+        "evidence": {
+          "sourceId": "detail-mum-ma-information-techno-master-of-business-information-systems-47",
+          "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research/information-technology/master-business-information-systems",
+          "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ma-information-techno-master-of-business-information-systems-47.md"
+        }
+      },
+      {
+        "label": "Entry requirements",
+        "optionType": "tab",
+        "governedFields": [
+          "programme detail"
+        ],
+        "state": "captured",
+        "evidence": {
+          "sourceId": "detail-mum-ma-information-techno-master-of-business-information-systems-47",
+          "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research/information-technology/master-business-information-systems",
+          "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ma-information-techno-master-of-business-information-systems-47.md"
+        }
+      }
+    ],
+    "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ma-information-techno-master-of-business-information-systems-47.md"
+  },
+  {
+    "code": "MUM-MA-INFORMATION-TECHNO-MASTER-OF-DATA-SCIENCE-48",
+    "nameEnOfficial": "Master of Data Science",
+    "detailPageUrl": "https://www.monash.edu.my/study/postgraduate-and-research/information-technology/master-of-data-science",
+    "sourceId": "detail-mum-ma-information-techno-master-of-data-science-48",
+    "hasOptions": true,
+    "retrievalMethod": "jina-reader",
+    "options": [
+      {
+        "label": "At a glance",
+        "optionType": "tab",
+        "governedFields": [
+          "programme detail"
+        ],
+        "state": "captured",
+        "evidence": {
+          "sourceId": "detail-mum-ma-information-techno-master-of-data-science-48",
+          "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research/information-technology/master-of-data-science",
+          "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ma-information-techno-master-of-data-science-48.md"
+        }
+      },
+      {
+        "label": "Course structure",
+        "optionType": "tab",
+        "governedFields": [
+          "programme detail"
+        ],
+        "state": "captured",
+        "evidence": {
+          "sourceId": "detail-mum-ma-information-techno-master-of-data-science-48",
+          "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research/information-technology/master-of-data-science",
+          "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ma-information-techno-master-of-data-science-48.md"
+        }
+      },
+      {
+        "label": "Why Monash?",
+        "optionType": "tab",
+        "governedFields": [
+          "programme detail"
+        ],
+        "state": "captured",
+        "evidence": {
+          "sourceId": "detail-mum-ma-information-techno-master-of-data-science-48",
+          "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research/information-technology/master-of-data-science",
+          "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ma-information-techno-master-of-data-science-48.md"
+        }
+      },
+      {
+        "label": "Career paths",
+        "optionType": "tab",
+        "governedFields": [
+          "programme detail"
+        ],
+        "state": "captured",
+        "evidence": {
+          "sourceId": "detail-mum-ma-information-techno-master-of-data-science-48",
+          "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research/information-technology/master-of-data-science",
+          "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ma-information-techno-master-of-data-science-48.md"
+        }
+      },
+      {
+        "label": "Entry requirements",
+        "optionType": "tab",
+        "governedFields": [
+          "programme detail"
+        ],
+        "state": "captured",
+        "evidence": {
+          "sourceId": "detail-mum-ma-information-techno-master-of-data-science-48",
+          "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research/information-technology/master-of-data-science",
+          "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ma-information-techno-master-of-data-science-48.md"
+        }
+      }
+    ],
+    "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ma-information-techno-master-of-data-science-48.md"
+  },
+  {
+    "code": "MUM-MA-INFORMATION-TECHNO-MPHIL-MPHIL-49",
+    "nameEnOfficial": "Master of Philosophy (MPhil)",
+    "detailPageUrl": "https://www.monash.edu.my/study/postgraduate-and-research/information-technology/master-philosophy",
+    "sourceId": "detail-mum-ma-information-techno-mphil-mphil-49",
+    "hasOptions": true,
+    "retrievalMethod": "jina-reader",
+    "options": [
+      {
+        "label": "At a glance",
+        "optionType": "tab",
+        "governedFields": [
+          "programme detail"
+        ],
+        "state": "captured",
+        "evidence": {
+          "sourceId": "detail-mum-ma-information-techno-mphil-mphil-49",
+          "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research/information-technology/master-philosophy",
+          "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ma-information-techno-mphil-mphil-49.md"
+        }
+      },
+      {
+        "label": "Areas of research and career paths",
+        "optionType": "tab",
+        "governedFields": [
+          "programme detail"
+        ],
+        "state": "captured",
+        "evidence": {
+          "sourceId": "detail-mum-ma-information-techno-mphil-mphil-49",
+          "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research/information-technology/master-philosophy",
+          "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ma-information-techno-mphil-mphil-49.md"
+        }
+      },
+      {
+        "label": "Why Monash?",
+        "optionType": "tab",
+        "governedFields": [
+          "programme detail"
+        ],
+        "state": "captured",
+        "evidence": {
+          "sourceId": "detail-mum-ma-information-techno-mphil-mphil-49",
+          "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research/information-technology/master-philosophy",
+          "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ma-information-techno-mphil-mphil-49.md"
+        }
+      },
+      {
+        "label": "How to apply",
+        "optionType": "tab",
+        "governedFields": [
+          "programme detail"
+        ],
+        "state": "captured",
+        "evidence": {
+          "sourceId": "detail-mum-ma-information-techno-mphil-mphil-49",
+          "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research/information-technology/master-philosophy",
+          "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ma-information-techno-mphil-mphil-49.md"
+        }
+      }
+    ],
+    "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ma-information-techno-mphil-mphil-49.md"
+  },
+  {
+    "code": "MUM-PHD-INFORMATION-TECHNO-PHD-PHD-50",
+    "nameEnOfficial": "Doctor of Philosophy (PhD)",
+    "detailPageUrl": "https://www.monash.edu.my/study/postgraduate-and-research/information-technology/phd",
+    "sourceId": "detail-mum-phd-information-techno-phd-phd-50",
+    "hasOptions": true,
+    "retrievalMethod": "jina-reader",
+    "options": [
+      {
+        "label": "programme detail page",
+        "optionType": "same-programme official sublink",
+        "governedFields": [
+          "duration",
+          "intake",
+          "requirements",
+          "course setting",
+          "careers"
+        ],
+        "state": "captured",
+        "evidence": {
+          "sourceId": "rendered-mum-phd-information-techno-phd-phd-50",
+          "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research/information-technology/phd",
+          "localPath": "data/imports/mum/2026-06-19/official-audit/rendered/050-mum-phd-information-techno-phd-phd-50.json",
+          "sourceText": "Rendered official Monash DOM page captured the previously blocked programme detail tabs."
+        }
+      }
+    ],
+    "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-phd-information-techno-phd-phd-50.blocked.md"
+  },
+  {
+    "code": "MUM-MA-MEDICINE-AND-HEALT-MASTER-OF-PROFESSIONAL-COUNSELLING-51",
+    "nameEnOfficial": "Master of Professional Counselling",
+    "detailPageUrl": "https://www.monash.edu.my/study/postgraduate-and-research/medicine-health-sciences/master-of-professional-counselling",
+    "sourceId": "detail-mum-ma-medicine-and-healt-master-of-professional-counselling-51",
+    "hasOptions": true,
+    "retrievalMethod": "jina-reader",
+    "options": [
+      {
+        "label": "programme detail page",
+        "optionType": "same-programme official sublink",
+        "governedFields": [
+          "duration",
+          "intake",
+          "requirements",
+          "course setting",
+          "careers"
+        ],
+        "state": "captured",
+        "evidence": {
+          "sourceId": "rendered-mum-ma-medicine-and-healt-master-of-professional-counselling-51",
+          "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research/medicine-health-sciences/master-of-professional-counselling",
+          "localPath": "data/imports/mum/2026-06-19/official-audit/rendered/051-mum-ma-medicine-and-healt-master-of-professional-counselling-51.json",
+          "sourceText": "Rendered official Monash DOM page captured the previously blocked programme detail tabs."
+        }
+      }
+    ],
+    "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ma-medicine-and-healt-master-of-professional-counselling-51.blocked.md"
+  },
+  {
+    "code": "MUM-MA-MEDICINE-AND-HEALT-MASTER-OF-BIOMEDICAL-SCIENCE-52",
+    "nameEnOfficial": "Master of Biomedical Science",
+    "detailPageUrl": "https://www.monash.edu.my/study/postgraduate-and-research/medicine-health-sciences/master-biomedical-science",
+    "sourceId": "detail-mum-ma-medicine-and-healt-master-of-biomedical-science-52",
+    "hasOptions": true,
+    "retrievalMethod": "jina-reader",
+    "options": [
+      {
+        "label": "At a glance",
+        "optionType": "tab",
+        "governedFields": [
+          "programme detail"
+        ],
+        "state": "captured",
+        "evidence": {
+          "sourceId": "detail-mum-ma-medicine-and-healt-master-of-biomedical-science-52",
+          "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research/medicine-health-sciences/master-biomedical-science",
+          "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ma-medicine-and-healt-master-of-biomedical-science-52.md"
+        }
+      },
+      {
+        "label": "Areas of study and Career Paths",
+        "optionType": "tab",
+        "governedFields": [
+          "programme detail"
+        ],
+        "state": "captured",
+        "evidence": {
+          "sourceId": "detail-mum-ma-medicine-and-healt-master-of-biomedical-science-52",
+          "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research/medicine-health-sciences/master-biomedical-science",
+          "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ma-medicine-and-healt-master-of-biomedical-science-52.md"
+        }
+      },
+      {
+        "label": "Why Monash?",
+        "optionType": "tab",
+        "governedFields": [
+          "programme detail"
+        ],
+        "state": "captured",
+        "evidence": {
+          "sourceId": "detail-mum-ma-medicine-and-healt-master-of-biomedical-science-52",
+          "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research/medicine-health-sciences/master-biomedical-science",
+          "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ma-medicine-and-healt-master-of-biomedical-science-52.md"
+        }
+      },
+      {
+        "label": "How to apply",
+        "optionType": "tab",
+        "governedFields": [
+          "programme detail"
+        ],
+        "state": "captured",
+        "evidence": {
+          "sourceId": "detail-mum-ma-medicine-and-healt-master-of-biomedical-science-52",
+          "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research/medicine-health-sciences/master-biomedical-science",
+          "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ma-medicine-and-healt-master-of-biomedical-science-52.md"
+        }
+      }
+    ],
+    "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ma-medicine-and-healt-master-of-biomedical-science-52.md"
+  },
+  {
+    "code": "MUM-MA-MEDICINE-AND-HEALT-MASTER-OF-BIOTECHNOLOGY-53",
+    "nameEnOfficial": "Master of Biotechnology",
+    "detailPageUrl": "https://www.monash.edu.my/study/postgraduate-and-research/medicine-health-sciences/master-of-biotechnology",
+    "sourceId": "detail-mum-ma-medicine-and-healt-master-of-biotechnology-53",
+    "hasOptions": true,
+    "retrievalMethod": "jina-reader",
+    "options": [
+      {
+        "label": "At a glance",
+        "optionType": "tab",
+        "governedFields": [
+          "programme detail"
+        ],
+        "state": "captured",
+        "evidence": {
+          "sourceId": "detail-mum-ma-medicine-and-healt-master-of-biotechnology-53",
+          "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research/medicine-health-sciences/master-of-biotechnology",
+          "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ma-medicine-and-healt-master-of-biotechnology-53.md"
+        }
+      },
+      {
+        "label": "Course structure",
+        "optionType": "tab",
+        "governedFields": [
+          "programme detail"
+        ],
+        "state": "captured",
+        "evidence": {
+          "sourceId": "detail-mum-ma-medicine-and-healt-master-of-biotechnology-53",
+          "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research/medicine-health-sciences/master-of-biotechnology",
+          "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ma-medicine-and-healt-master-of-biotechnology-53.md"
+        }
+      },
+      {
+        "label": "Why Monash?",
+        "optionType": "tab",
+        "governedFields": [
+          "programme detail"
+        ],
+        "state": "captured",
+        "evidence": {
+          "sourceId": "detail-mum-ma-medicine-and-healt-master-of-biotechnology-53",
+          "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research/medicine-health-sciences/master-of-biotechnology",
+          "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ma-medicine-and-healt-master-of-biotechnology-53.md"
+        }
+      },
+      {
+        "label": "Career paths",
+        "optionType": "tab",
+        "governedFields": [
+          "programme detail"
+        ],
+        "state": "captured",
+        "evidence": {
+          "sourceId": "detail-mum-ma-medicine-and-healt-master-of-biotechnology-53",
+          "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research/medicine-health-sciences/master-of-biotechnology",
+          "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ma-medicine-and-healt-master-of-biotechnology-53.md"
+        }
+      },
+      {
+        "label": "Entry requirements",
+        "optionType": "tab",
+        "governedFields": [
+          "programme detail"
+        ],
+        "state": "captured",
+        "evidence": {
+          "sourceId": "detail-mum-ma-medicine-and-healt-master-of-biotechnology-53",
+          "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research/medicine-health-sciences/master-of-biotechnology",
+          "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ma-medicine-and-healt-master-of-biotechnology-53.md"
+        }
+      }
+    ],
+    "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ma-medicine-and-healt-master-of-biotechnology-53.md"
+  },
+  {
+    "code": "MUM-MA-MEDICINE-AND-HEALT-MASTER-OF-CLINICAL-PSYCHOLOGY-54",
+    "nameEnOfficial": "Master of Clinical Psychology",
+    "detailPageUrl": "https://www.monash.edu.my/study/postgraduate-and-research/medicine-health-sciences/master-of-clinical-psychology",
+    "sourceId": "detail-mum-ma-medicine-and-healt-master-of-clinical-psychology-54",
+    "hasOptions": true,
+    "retrievalMethod": "jina-reader",
+    "options": [
+      {
+        "label": "programme detail page",
+        "optionType": "same-programme official sublink",
+        "governedFields": [
+          "duration",
+          "intake",
+          "requirements",
+          "course setting",
+          "careers"
+        ],
+        "state": "captured",
+        "evidence": {
+          "sourceId": "rendered-mum-ma-medicine-and-healt-master-of-clinical-psychology-54",
+          "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research/medicine-health-sciences/master-of-clinical-psychology",
+          "localPath": "data/imports/mum/2026-06-19/official-audit/rendered/054-mum-ma-medicine-and-healt-master-of-clinical-psychology-54.json",
+          "sourceText": "Rendered official Monash DOM page captured the previously blocked programme detail tabs."
+        }
+      }
+    ],
+    "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ma-medicine-and-healt-master-of-clinical-psychology-54.blocked.md"
+  },
+  {
+    "code": "MUM-PHD-MEDICINE-AND-HEALT-PHD-PHD-55",
+    "nameEnOfficial": "Doctor of Philosophy (PhD)",
+    "detailPageUrl": "https://www.monash.edu.my/study/postgraduate-and-research/medicine-health-sciences/phd",
+    "sourceId": "detail-mum-phd-medicine-and-healt-phd-phd-55",
+    "hasOptions": true,
+    "retrievalMethod": "jina-reader",
+    "options": [
+      {
+        "label": "programme detail page",
+        "optionType": "same-programme official sublink",
+        "governedFields": [
+          "duration",
+          "intake",
+          "requirements",
+          "course setting",
+          "careers"
+        ],
+        "state": "captured",
+        "evidence": {
+          "sourceId": "rendered-mum-phd-medicine-and-healt-phd-phd-55",
+          "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research/medicine-health-sciences/phd",
+          "localPath": "data/imports/mum/2026-06-19/official-audit/rendered/055-mum-phd-medicine-and-healt-phd-phd-55.json",
+          "sourceText": "Rendered official Monash DOM page captured the previously blocked programme detail tabs."
+        }
+      }
+    ],
+    "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-phd-medicine-and-healt-phd-phd-55.blocked.md"
+  },
+  {
+    "code": "MUM-MA-PHARMACY-MASTER-OF-PHARMACEUTICAL-SCIENCE-56",
+    "nameEnOfficial": "Master of Pharmaceutical Science",
+    "detailPageUrl": "https://www.monash.edu.my/study/postgraduate-and-research/pharmacy/master-of-pharmaceutical-science",
+    "sourceId": "detail-mum-ma-pharmacy-master-of-pharmaceutical-science-56",
+    "hasOptions": true,
+    "retrievalMethod": "jina-reader",
+    "options": [
+      {
+        "label": "programme detail page",
+        "optionType": "same-programme official sublink",
+        "governedFields": [
+          "duration",
+          "intake",
+          "requirements",
+          "course setting",
+          "careers"
+        ],
+        "state": "captured",
+        "evidence": {
+          "sourceId": "rendered-mum-ma-pharmacy-master-of-pharmaceutical-science-56",
+          "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research/pharmacy/master-of-pharmaceutical-science",
+          "localPath": "data/imports/mum/2026-06-19/official-audit/rendered/056-mum-ma-pharmacy-master-of-pharmaceutical-science-56.json",
+          "sourceText": "Rendered official Monash DOM page captured the previously blocked programme detail tabs."
+        }
+      }
+    ],
+    "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ma-pharmacy-master-of-pharmaceutical-science-56.blocked.md"
+  },
+  {
+    "code": "MUM-MA-PHARMACY-MPHIL-57",
+    "nameEnOfficial": "Master of Philosophy",
+    "detailPageUrl": "https://www.monash.edu.my/study/postgraduate-and-research/pharmacy/master-of-philosophy",
+    "sourceId": "detail-mum-ma-pharmacy-mphil-57",
+    "hasOptions": true,
+    "retrievalMethod": "jina-reader",
+    "options": [
+      {
+        "label": "programme detail page",
+        "optionType": "same-programme official sublink",
+        "governedFields": [
+          "duration",
+          "intake",
+          "requirements",
+          "course setting",
+          "careers"
+        ],
+        "state": "captured",
+        "evidence": {
+          "sourceId": "rendered-mum-ma-pharmacy-mphil-57",
+          "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research/pharmacy/master-of-philosophy",
+          "localPath": "data/imports/mum/2026-06-19/official-audit/rendered/057-mum-ma-pharmacy-mphil-57.json",
+          "sourceText": "Rendered official Monash DOM page captured the previously blocked programme detail tabs."
+        }
+      }
+    ],
+    "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ma-pharmacy-mphil-57.blocked.md"
+  },
+  {
+    "code": "MUM-PHD-PHARMACY-PHD-PHD-58",
+    "nameEnOfficial": "Doctor of Philosophy (PhD)",
+    "detailPageUrl": "https://www.monash.edu.my/study/postgraduate-and-research/pharmacy/doctor-of-philosophy-phd",
+    "sourceId": "detail-mum-phd-pharmacy-phd-phd-58",
+    "hasOptions": true,
+    "retrievalMethod": "jina-reader",
+    "options": [
+      {
+        "label": "programme detail page",
+        "optionType": "same-programme official sublink",
+        "governedFields": [
+          "duration",
+          "intake",
+          "requirements",
+          "course setting",
+          "careers"
+        ],
+        "state": "captured",
+        "evidence": {
+          "sourceId": "rendered-mum-phd-pharmacy-phd-phd-58",
+          "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research/pharmacy/doctor-of-philosophy-phd",
+          "localPath": "data/imports/mum/2026-06-19/official-audit/rendered/058-mum-phd-pharmacy-phd-phd-58.json",
+          "sourceText": "Rendered official Monash DOM page captured the previously blocked programme detail tabs."
+        }
+      }
+    ],
+    "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-phd-pharmacy-phd-phd-58.blocked.md"
+  },
+  {
+    "code": "MUM-MA-SCIENCE-MASTER-OF-SCIENCE-59",
+    "nameEnOfficial": "Master of Science",
+    "detailPageUrl": "https://www.monash.edu.my/study/postgraduate-and-research/science/master-science",
+    "sourceId": "detail-mum-ma-science-master-of-science-59",
+    "hasOptions": true,
+    "retrievalMethod": "jina-reader",
+    "options": [
+      {
+        "label": "programme detail page",
+        "optionType": "same-programme official sublink",
+        "governedFields": [
+          "duration",
+          "intake",
+          "requirements",
+          "course setting",
+          "careers"
+        ],
+        "state": "captured",
+        "evidence": {
+          "sourceId": "rendered-mum-ma-science-master-of-science-59",
+          "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research/science/master-science",
+          "localPath": "data/imports/mum/2026-06-19/official-audit/rendered/059-mum-ma-science-master-of-science-59.json",
+          "sourceText": "Rendered official Monash DOM page captured the previously blocked programme detail tabs."
+        }
+      }
+    ],
+    "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-ma-science-master-of-science-59.blocked.md"
+  },
+  {
+    "code": "MUM-PHD-SCIENCE-PHD-PHD-60",
+    "nameEnOfficial": "Doctor of Philosophy (PhD)",
+    "detailPageUrl": "https://www.monash.edu.my/study/postgraduate-and-research/science/phd",
+    "sourceId": "detail-mum-phd-science-phd-phd-60",
+    "hasOptions": true,
+    "retrievalMethod": "jina-reader",
+    "options": [
+      {
+        "label": "programme detail page",
+        "optionType": "same-programme official sublink",
+        "governedFields": [
+          "duration",
+          "intake",
+          "requirements",
+          "course setting",
+          "careers"
+        ],
+        "state": "captured",
+        "evidence": {
+          "sourceId": "rendered-mum-phd-science-phd-phd-60",
+          "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research/science/phd",
+          "localPath": "data/imports/mum/2026-06-19/official-audit/rendered/060-mum-phd-science-phd-phd-60.json",
+          "sourceText": "Rendered official Monash DOM page captured the previously blocked programme detail tabs."
+        }
+      }
+    ],
+    "localPath": "data/imports/mum/2026-06-19/official-audit/raw/detail-mum-phd-science-phd-phd-60.blocked.md"
+  }
+]

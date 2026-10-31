@@ -1,0 +1,34 @@
+{
+  "tags": [
+    {
+      "name": "undergraduate",
+      "title": "Undergraduate"
+    },
+    {
+      "name": "undergraduate-specialisation",
+      "title": "Undergraduate Specialisation"
+    },
+    {
+      "name": "postgraduate-coursework",
+      "title": "Master (Coursework)"
+    },
+    {
+      "name": "postgraduate-research",
+      "title": "Master (Research)"
+    },
+    {
+      "name": "online-postgraduate-programmes",
+      "title": "Master (Online)"
+    },
+    {
+      "name": "phd-research",
+      "title": "PhD (Research)"
+    },
+    {
+      "name": "phd-coursework",
+      "title": "PhD (Coursework)"
+    }
+  ],
+  "name": "level-of-study",
+  "title": "Level of Study"
+}

@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "mode": "umpsa-all-level-published",
+  "createdAt": "2026-06-28T09:07:36.922Z",
+  "institution": {
+    "code": "UMPSA",
+    "name": "Universiti Malaysia Pahang Al-Sultan Abdullah",
+    "importedRows": 58,
+    "byLevel": {
+      "bachelor": 34,
+      "master": 19,
+      "phd": 5
+    }
+  },
+  "database": {
+    "backupPath": "tmp/backups/umpsa-all-level-public-before-2026-06-28T09-07-36-630Z.json",
+    "transactionalImport": "passed",
+    "catalogCacheCleared": false,
+    "scopedRows": 58,
+    "activeSupersededRows": 0,
+    "legacyVisibleRows": 0,
+    "visibleCurrentRows": 58
+  },
+  "publicVisibility": {
+    "universityPublicDisplayStatus": "ready",
+    "universityIsPublished": true,
+    "universityProgramCount": 58,
+    "rowsPublished": 58,
+    "rowsReady": 58
+  },
+  "displayHardGate": {
+    "chineseNameRows": 58,
+    "chineseFacultyRows": 58,
+    "chineseCurriculumRows": 58,
+    "chineseCareerRows": 58,
+    "englishPublicTextRows": 58,
+    "languageRows": 58,
+    "officialFeeRows": 58,
+    "sourceRows": 58,
+    "officialUnpublishedCurriculumRows": 28
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "createdAt": "2026-06-20T17:09:05.957Z",
+  "university": null,
+  "programs": [],
+  "publicVisibility": {
+    "universityExists": false,
+    "universityId": null,
+    "universityCode": null,
+    "universitySlug": null,
+    "universityIsPublished": false,
+    "universityPublicDisplayStatus": null,
+    "publicUniversityVisible": false,
+    "publicProgrammeRows": 0,
+    "reviewProgrammeRows": 0,
+    "importedReviewRows": 0
+  }
+}

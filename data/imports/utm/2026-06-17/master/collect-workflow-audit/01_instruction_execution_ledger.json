@@ -1,0 +1,44 @@
+[
+  {
+    "id": "latest-user-instruction",
+    "instruction": "Continue supplemental collection and checking for UTM master data using the StudyMY official collector skill.",
+    "scope": "run",
+    "status": "completed",
+    "evidencePointer": "candidate-dataset.json and language-requirement-supplement-audit.json"
+  },
+  {
+    "id": "collect-only-authorization",
+    "instruction": "Supplemental collection and checking only; do not mutate database without publish authorization.",
+    "scope": "run",
+    "status": "completed",
+    "evidencePointer": "run-contract.json authorization=collect"
+  },
+  {
+    "id": "lock-utm-master-baseline",
+    "instruction": "Preserve the locked UTM international master canonical baseline and status partition.",
+    "scope": "level",
+    "status": "completed",
+    "evidencePointer": "153 canonical programmes, 153 ready, 0 needs-review, 0 not-available-for-international"
+  },
+  {
+    "id": "language-score-supplement",
+    "instruction": "Replace generic postgraduate English requirement text with structured official score routes, including TESL exception rows.",
+    "scope": "field",
+    "status": "completed",
+    "evidencePointer": "language-requirement-supplement-audit.json"
+  },
+  {
+    "id": "official-source-trace",
+    "instruction": "Ready values must trace to official UTM source evidence.",
+    "scope": "field",
+    "status": "completed",
+    "evidencePointer": "collect-workflow-audit/09_source_to_candidate_trace.json"
+  },
+  {
+    "id": "notion-update",
+    "instruction": "Update Notion or clearly state Notion was not updated.",
+    "scope": "run",
+    "status": "not-applicable",
+    "evidencePointer": "No writable Notion connector is available in this Codex environment; local Chinese development note is updated separately."
+  }
+]

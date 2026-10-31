@@ -1,0 +1,13 @@
+{
+  "institution": "SEGi University",
+  "institutionCode": "SEGI",
+  "requestedByUser": "现在开始对世纪大学的本硕博信息与官方公布的最新数据进行标准化的校对",
+  "mode": "audit-only",
+  "noDatabaseMutation": true,
+  "currentAsOf": "2026-06-16",
+  "timezone": "Asia/Kuala_Lumpur",
+  "sourcePolicy": "Use SEGi official public programme directory and detail pages as current programme source; use existing project DB only for comparison.",
+  "selectedChineseTaskContext": "TASK-096 数据模型和数据准备技术边界",
+  "outputDirectory": "data/imports/segi/2026-06-16/official-audit",
+  "blockingGateBeforeImport": "Do not import until official-only/current-only and ODL/Online Mode scope are manually approved."
+}

@@ -1,0 +1,1200 @@
+{
+  "schemaVersion": 1,
+  "levels": [
+    "bachelor",
+    "master",
+    "phd"
+  ],
+  "declaredCounts": {
+    "phd": 18,
+    "master": 40,
+    "bachelor": 60
+  },
+  "entries": [
+    {
+      "order": 1,
+      "code": "UCSI-PHD-001",
+      "level": "phd",
+      "nameEnOfficial": "Doctor Of Philosophy (Business And Management)",
+      "facultyEn": "UCSI GRADUATE BUSINESS SCHOOL",
+      "campus": "Kuala Lumpur",
+      "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/doctor-philosophy-business-and-management",
+      "status": "candidate"
+    },
+    {
+      "order": 2,
+      "code": "UCSI-PHD-002",
+      "level": "phd",
+      "nameEnOfficial": "DBA (Doctor Of Business Administration)",
+      "facultyEn": "UCSI GRADUATE BUSINESS SCHOOL",
+      "campus": "Kuala Lumpur",
+      "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/dba-doctor-business-administration",
+      "status": "candidate"
+    },
+    {
+      "order": 3,
+      "code": "UCSI-MASTER-003",
+      "level": "master",
+      "nameEnOfficial": "MBA",
+      "facultyEn": "UCSI GRADUATE BUSINESS SCHOOL",
+      "campus": "Kuala Lumpur",
+      "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/mba",
+      "status": "candidate"
+    },
+    {
+      "order": 4,
+      "code": "UCSI-MASTER-004",
+      "level": "master",
+      "nameEnOfficial": "MBA (ODL Mode)",
+      "facultyEn": "UCSI GRADUATE BUSINESS SCHOOL",
+      "campus": "Kuala Lumpur",
+      "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/mba-odl-mode",
+      "status": "candidate"
+    },
+    {
+      "order": 5,
+      "code": "UCSI-MASTER-005",
+      "level": "master",
+      "nameEnOfficial": "Master Of Philosophy (Business And Management)",
+      "facultyEn": "UCSI GRADUATE BUSINESS SCHOOL",
+      "campus": "Kuala Lumpur",
+      "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/master-philosophy-business-and-management",
+      "status": "candidate"
+    },
+    {
+      "order": 6,
+      "code": "UCSI-MASTER-006",
+      "level": "master",
+      "nameEnOfficial": "MBA (Healthcare And Hospital Management)",
+      "facultyEn": "UCSI GRADUATE BUSINESS SCHOOL",
+      "campus": "Kuala Lumpur",
+      "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/mba-healthcare-and-hospital-management",
+      "status": "candidate"
+    },
+    {
+      "order": 7,
+      "code": "UCSI-PHD-007",
+      "level": "phd",
+      "nameEnOfficial": "Doctor Of Philosophy (Science)",
+      "facultyEn": "FACULTY OF APPLIED SCIENCES",
+      "campus": "Kuala Lumpur",
+      "sourceUrl": "https://www.ucsiuniversity.edu.my/programme/doctorate-philosophy-science",
+      "status": "candidate"
+    },
+    {
+      "order": 8,
+      "code": "UCSI-MASTER-008",
+      "level": "master",
+      "nameEnOfficial": "Master Of Science In Applied Sciences",
+      "facultyEn": "FACULTY OF APPLIED SCIENCES",
+      "campus": "Kuala Lumpur",
+      "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/master-science-applied-sciences",
+      "status": "candidate"
+    },
+    {
+      "order": 9,
+      "code": "UCSI-MASTER-009",
+      "level": "master",
+      "nameEnOfficial": "Master Of Science Biotechnology",
+      "facultyEn": "FACULTY OF APPLIED SCIENCES",
+      "campus": "Kuala Lumpur",
+      "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/master-science-biotechnology",
+      "status": "candidate"
+    },
+    {
+      "order": 10,
+      "code": "UCSI-MASTER-010",
+      "level": "master",
+      "nameEnOfficial": "Master Of Science In Biotechnology With Business Management",
+      "facultyEn": "FACULTY OF APPLIED SCIENCES",
+      "campus": "Kuala Lumpur",
+      "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/master-science-biotechnology-business-management",
+      "status": "candidate"
+    },
+    {
+      "order": 11,
+      "code": "UCSI-MASTER-011",
+      "level": "master",
+      "nameEnOfficial": "Master Of Science Food Science With Business Management",
+      "facultyEn": "FACULTY OF APPLIED SCIENCES",
+      "campus": "Kuala Lumpur",
+      "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/master-science-food-science-business-management",
+      "status": "candidate"
+    },
+    {
+      "order": 12,
+      "code": "UCSI-MASTER-012",
+      "level": "master",
+      "nameEnOfficial": "Master Of Science In Nutrition With Management",
+      "facultyEn": "FACULTY OF APPLIED SCIENCES",
+      "campus": "Kuala Lumpur",
+      "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/msc-nutrition-management",
+      "status": "candidate"
+    },
+    {
+      "order": 13,
+      "code": "UCSI-BACHELOR-013",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor Of Science (Honours) Applied Microbiology",
+      "facultyEn": "FACULTY OF APPLIED SCIENCES",
+      "campus": "Kuala Lumpur",
+      "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-science-honours-applied-microbiology",
+      "status": "candidate"
+    },
+    {
+      "order": 14,
+      "code": "UCSI-BACHELOR-014",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor Of Science (Honours) Aquatic Science",
+      "facultyEn": "FACULTY OF APPLIED SCIENCES",
+      "campus": "Kuala Lumpur",
+      "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-science-honours-aquatic-science",
+      "status": "candidate"
+    },
+    {
+      "order": 15,
+      "code": "UCSI-BACHELOR-015",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor Of Science (Honours) In Biotechnology",
+      "facultyEn": "FACULTY OF APPLIED SCIENCES",
+      "campus": "Kuala Lumpur",
+      "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-science-honours-biotechnology",
+      "status": "candidate"
+    },
+    {
+      "order": 16,
+      "code": "UCSI-BACHELOR-016",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor Of Science (Honours) Food Science With Nutrition",
+      "facultyEn": "FACULTY OF APPLIED SCIENCES",
+      "campus": "Kuala Lumpur",
+      "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-science-honours-food-science-nutrition",
+      "status": "candidate"
+    },
+    {
+      "order": 17,
+      "code": "UCSI-BACHELOR-017",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor Of Science (Honours) Forensic Science",
+      "facultyEn": "FACULTY OF APPLIED SCIENCES",
+      "campus": "Kuala Lumpur",
+      "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-science-honours-forensic-science",
+      "status": "candidate"
+    },
+    {
+      "order": 18,
+      "code": "UCSI-BACHELOR-018",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor Of Science (Honours) Nutrition With Wellness",
+      "facultyEn": "FACULTY OF APPLIED SCIENCES",
+      "campus": "Kuala Lumpur",
+      "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-science-honours-nutrition-wellness",
+      "status": "candidate"
+    },
+    {
+      "order": 19,
+      "code": "UCSI-PHD-019",
+      "level": "phd",
+      "nameEnOfficial": "Doctor Of Philosophy (Science) By Prior Publication",
+      "facultyEn": "FACULTY OF APPLIED SCIENCES",
+      "campus": "Kuala Lumpur",
+      "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/doctor-philosophy-science-prior-publication",
+      "status": "candidate"
+    },
+    {
+      "order": 20,
+      "code": "UCSI-MASTER-020",
+      "level": "master",
+      "nameEnOfficial": "Master In Logistics And Supply Chain Management",
+      "facultyEn": "FACULTY OF BUSINESS AND MANAGEMENT",
+      "campus": "Kuala Lumpur",
+      "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/master-logistics-and-supply-chain-management",
+      "status": "candidate"
+    },
+    {
+      "order": 21,
+      "code": "UCSI-BACHELOR-021",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor Of Arts (Hons) Accounting",
+      "facultyEn": "FACULTY OF BUSINESS AND MANAGEMENT",
+      "campus": "Kuala Lumpur",
+      "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-arts-hons-accounting",
+      "status": "candidate"
+    },
+    {
+      "order": 22,
+      "code": "UCSI-BACHELOR-022",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor Of Arts (Hons) Accounting And Finance",
+      "facultyEn": "FACULTY OF BUSINESS AND MANAGEMENT",
+      "campus": "Kuala Lumpur",
+      "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-arts-hons-accounting-and-finance",
+      "status": "candidate"
+    },
+    {
+      "order": 23,
+      "code": "UCSI-BACHELOR-023",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor Of Arts (Hons) Entrepreneurship",
+      "facultyEn": "FACULTY OF BUSINESS AND MANAGEMENT",
+      "campus": "Kuala Lumpur",
+      "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-arts-hons-entrepreneurship",
+      "status": "candidate"
+    },
+    {
+      "order": 24,
+      "code": "UCSI-BACHELOR-024",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor Of Arts (Hons) In Branding And Advertising",
+      "facultyEn": "FACULTY OF BUSINESS AND MANAGEMENT",
+      "campus": "Kuala Lumpur",
+      "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-arts-hons-branding-and-advertising",
+      "status": "candidate"
+    },
+    {
+      "order": 25,
+      "code": "UCSI-BACHELOR-025",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor Of Arts (Hons) In Business Administration",
+      "facultyEn": "FACULTY OF BUSINESS AND MANAGEMENT",
+      "campus": "Kuala Lumpur",
+      "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-arts-hons-business-administration",
+      "status": "candidate"
+    },
+    {
+      "order": 26,
+      "code": "UCSI-BACHELOR-026",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor Of Arts (Hons) In Marketing",
+      "facultyEn": "FACULTY OF BUSINESS AND MANAGEMENT",
+      "campus": "Kuala Lumpur",
+      "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-arts-hons-marketing",
+      "status": "candidate"
+    },
+    {
+      "order": 27,
+      "code": "UCSI-BACHELOR-027",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor Of Arts (Hons) Logistics Management",
+      "facultyEn": "FACULTY OF BUSINESS AND MANAGEMENT",
+      "campus": "Kuala Lumpur",
+      "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-arts-hons-logistics-management",
+      "status": "candidate"
+    },
+    {
+      "order": 28,
+      "code": "UCSI-BACHELOR-028",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor Of Arts (Honours) Supply Chain Operations Management",
+      "facultyEn": "FACULTY OF BUSINESS AND MANAGEMENT",
+      "campus": "Kuala Lumpur",
+      "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-arts-honours-supply-chain-operations-management",
+      "status": "candidate"
+    },
+    {
+      "order": 29,
+      "code": "UCSI-BACHELOR-029",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor In Human Capital Management (Honours)",
+      "facultyEn": "FACULTY OF BUSINESS AND MANAGEMENT",
+      "campus": "Kuala Lumpur",
+      "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-human-capital-management-honours",
+      "status": "candidate"
+    },
+    {
+      "order": 30,
+      "code": "UCSI-BACHELOR-030",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor Of Business Analytics (Honours)",
+      "facultyEn": "FACULTY OF BUSINESS AND MANAGEMENT",
+      "campus": "Kuala Lumpur",
+      "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-business-analytics-honours",
+      "status": "candidate"
+    },
+    {
+      "order": 31,
+      "code": "UCSI-BACHELOR-031",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor Of Financial Economics (Hons)",
+      "facultyEn": "FACULTY OF BUSINESS AND MANAGEMENT",
+      "campus": "Kuala Lumpur",
+      "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-financial-economics-hons",
+      "status": "candidate"
+    },
+    {
+      "order": 32,
+      "code": "UCSI-BACHELOR-032",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor Of Financial Technology (Honours)",
+      "facultyEn": "FACULTY OF BUSINESS AND MANAGEMENT",
+      "campus": "Kuala Lumpur",
+      "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-financial-technology-honours",
+      "status": "candidate"
+    },
+    {
+      "order": 33,
+      "code": "UCSI-BACHELOR-033",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor Of International And Sustainable Business (Honours)",
+      "facultyEn": "FACULTY OF BUSINESS AND MANAGEMENT",
+      "campus": "Kuala Lumpur",
+      "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-international-and-sustainable-business-honours",
+      "status": "candidate"
+    },
+    {
+      "order": 34,
+      "code": "UCSI-BACHELOR-034",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor Of Science (Honours) Finance And Investment",
+      "facultyEn": "FACULTY OF BUSINESS AND MANAGEMENT",
+      "campus": "Kuala Lumpur",
+      "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-science-honours-finance-and-investment",
+      "status": "candidate"
+    },
+    {
+      "order": 35,
+      "code": "UCSI-PHD-035",
+      "level": "phd",
+      "nameEnOfficial": "Doctor Of Philosophy In Architecture",
+      "facultyEn": "FACULTY OF ENGINEERING, TECHNOLOGY & BUILT ENVIRONMENT",
+      "campus": "Kuala Lumpur",
+      "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/doctor-philosophy-architecture",
+      "status": "candidate"
+    },
+    {
+      "order": 36,
+      "code": "UCSI-PHD-036",
+      "level": "phd",
+      "nameEnOfficial": "Doctor Of Philosophy (Engineering)",
+      "facultyEn": "FACULTY OF ENGINEERING, TECHNOLOGY & BUILT ENVIRONMENT",
+      "campus": "Kuala Lumpur",
+      "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/doctor-philosophy-engineering",
+      "status": "candidate"
+    },
+    {
+      "order": 37,
+      "code": "UCSI-PHD-037",
+      "level": "phd",
+      "nameEnOfficial": "Doctor Of Philosophy (Engineering) By Prior Publication",
+      "facultyEn": "FACULTY OF ENGINEERING, TECHNOLOGY & BUILT ENVIRONMENT",
+      "campus": "Kuala Lumpur",
+      "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/doctor-philosophy-engineering-prior-publication",
+      "status": "candidate"
+    },
+    {
+      "order": 38,
+      "code": "UCSI-PHD-038",
+      "level": "phd",
+      "nameEnOfficial": "Industrial PhD In Engineering",
+      "facultyEn": "FACULTY OF ENGINEERING, TECHNOLOGY & BUILT ENVIRONMENT",
+      "campus": "Kuala Lumpur",
+      "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/industrial-phd-engineering",
+      "status": "candidate"
+    },
+    {
+      "order": 39,
+      "code": "UCSI-MASTER-039",
+      "level": "master",
+      "nameEnOfficial": "Master In Engineering (Smart Engineering Management)",
+      "facultyEn": "FACULTY OF ENGINEERING, TECHNOLOGY & BUILT ENVIRONMENT",
+      "campus": "Kuala Lumpur",
+      "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/master-engineering-smart-engineering-management",
+      "status": "candidate"
+    },
+    {
+      "order": 40,
+      "code": "UCSI-MASTER-040",
+      "level": "master",
+      "nameEnOfficial": "Master Of Architecture",
+      "facultyEn": "FACULTY OF ENGINEERING, TECHNOLOGY & BUILT ENVIRONMENT",
+      "campus": "Kuala Lumpur",
+      "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/master-architecture",
+      "status": "candidate"
+    },
+    {
+      "order": 41,
+      "code": "UCSI-MASTER-041",
+      "level": "master",
+      "nameEnOfficial": "Master Of Petroleum Engineering",
+      "facultyEn": "FACULTY OF ENGINEERING, TECHNOLOGY & BUILT ENVIRONMENT",
+      "campus": "Kuala Lumpur",
+      "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/master-petroleum-engineering",
+      "status": "candidate"
+    },
+    {
+      "order": 42,
+      "code": "UCSI-MASTER-042",
+      "level": "master",
+      "nameEnOfficial": "Master Of Philosophy In Built Environment",
+      "facultyEn": "FACULTY OF ENGINEERING, TECHNOLOGY & BUILT ENVIRONMENT",
+      "campus": "Kuala Lumpur",
+      "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/master-philosophy-built-environment",
+      "status": "candidate"
+    },
+    {
+      "order": 43,
+      "code": "UCSI-MASTER-043",
+      "level": "master",
+      "nameEnOfficial": "Master Of Philosophy In Engineering",
+      "facultyEn": "FACULTY OF ENGINEERING, TECHNOLOGY & BUILT ENVIRONMENT",
+      "campus": "Kuala Lumpur",
+      "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/master-philosophy-engineering",
+      "status": "candidate"
+    },
+    {
+      "order": 44,
+      "code": "UCSI-BACHELOR-044",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor Of Arts (Hons) In Interior Architecture",
+      "facultyEn": "FACULTY OF ENGINEERING, TECHNOLOGY & BUILT ENVIRONMENT",
+      "campus": "Kuala Lumpur",
+      "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-arts-hons-interior-architecture",
+      "status": "candidate"
+    },
+    {
+      "order": 45,
+      "code": "UCSI-BACHELOR-045",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor Of Chemical Engineering With Honours",
+      "facultyEn": "FACULTY OF ENGINEERING, TECHNOLOGY & BUILT ENVIRONMENT",
+      "campus": "Kuala Lumpur",
+      "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-chemical-engineering-honours",
+      "status": "candidate"
+    },
+    {
+      "order": 46,
+      "code": "UCSI-BACHELOR-046",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor Of Civil Engineering With Honours",
+      "facultyEn": "FACULTY OF ENGINEERING, TECHNOLOGY & BUILT ENVIRONMENT",
+      "campus": "Kuala Lumpur",
+      "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-civil-engineering-honours",
+      "status": "candidate"
+    },
+    {
+      "order": 47,
+      "code": "UCSI-BACHELOR-047",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor Of Computer Engineering (Artificial Intelligence) With Honours",
+      "facultyEn": "FACULTY OF ENGINEERING, TECHNOLOGY & BUILT ENVIRONMENT",
+      "campus": "Kuala Lumpur",
+      "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-computer-engineering-artificial-intelligence-honours",
+      "status": "candidate"
+    },
+    {
+      "order": 48,
+      "code": "UCSI-BACHELOR-048",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor Of Digital Mechanical Technology With Honours",
+      "facultyEn": "FACULTY OF ENGINEERING, TECHNOLOGY & BUILT ENVIRONMENT",
+      "campus": "Kuala Lumpur",
+      "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-digital-mechanical-technology-honours",
+      "status": "candidate"
+    },
+    {
+      "order": 49,
+      "code": "UCSI-BACHELOR-049",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor Of Electrical And Electronics Engineering With Honours",
+      "facultyEn": "FACULTY OF ENGINEERING, TECHNOLOGY & BUILT ENVIRONMENT",
+      "campus": "Kuala Lumpur",
+      "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-electrical-and-electronics-engineering-honours",
+      "status": "candidate"
+    },
+    {
+      "order": 50,
+      "code": "UCSI-BACHELOR-050",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor Of Energy Engineering With Honours",
+      "facultyEn": "FACULTY OF ENGINEERING, TECHNOLOGY & BUILT ENVIRONMENT",
+      "campus": "Kuala Lumpur",
+      "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-energy-engineering-honours",
+      "status": "candidate"
+    },
+    {
+      "order": 51,
+      "code": "UCSI-BACHELOR-051",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor Of Mechanical Engineering With Honours",
+      "facultyEn": "FACULTY OF ENGINEERING, TECHNOLOGY & BUILT ENVIRONMENT",
+      "campus": "Kuala Lumpur",
+      "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-mechanical-engineering-honours",
+      "status": "candidate"
+    },
+    {
+      "order": 52,
+      "code": "UCSI-BACHELOR-052",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor Of Mechatronics Engineering With Honours",
+      "facultyEn": "FACULTY OF ENGINEERING, TECHNOLOGY & BUILT ENVIRONMENT",
+      "campus": "Kuala Lumpur",
+      "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-mechatronics-engineering-honours",
+      "status": "candidate"
+    },
+    {
+      "order": 53,
+      "code": "UCSI-BACHELOR-053",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor Of Microelectronic Technology With Honours",
+      "facultyEn": "FACULTY OF ENGINEERING, TECHNOLOGY & BUILT ENVIRONMENT",
+      "campus": "Kuala Lumpur",
+      "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-microelectronic-technology-honours",
+      "status": "candidate"
+    },
+    {
+      "order": 54,
+      "code": "UCSI-BACHELOR-054",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor Of Petroleum Engineering With Honours",
+      "facultyEn": "FACULTY OF ENGINEERING, TECHNOLOGY & BUILT ENVIRONMENT",
+      "campus": "Kuala Lumpur",
+      "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-petroleum-engineering-honours",
+      "status": "candidate"
+    },
+    {
+      "order": 55,
+      "code": "UCSI-BACHELOR-055",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor Of Quantity Surveying (Hons)",
+      "facultyEn": "FACULTY OF ENGINEERING, TECHNOLOGY & BUILT ENVIRONMENT",
+      "campus": "Kuala Lumpur",
+      "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-quantity-surveying-hons",
+      "status": "candidate"
+    },
+    {
+      "order": 56,
+      "code": "UCSI-BACHELOR-056",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor Of Science (Hons) In Architecture",
+      "facultyEn": "FACULTY OF ENGINEERING, TECHNOLOGY & BUILT ENVIRONMENT",
+      "campus": "Kuala Lumpur",
+      "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-science-hons-architecture",
+      "status": "candidate"
+    },
+    {
+      "order": 57,
+      "code": "UCSI-MASTER-057",
+      "level": "master",
+      "nameEnOfficial": "Master Of Sustainable Built Environment",
+      "facultyEn": "FACULTY OF ENGINEERING, TECHNOLOGY & BUILT ENVIRONMENT",
+      "campus": "Kuala Lumpur",
+      "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/master-sustainable-built-environment",
+      "status": "candidate"
+    },
+    {
+      "order": 58,
+      "code": "UCSI-MASTER-058",
+      "level": "master",
+      "nameEnOfficial": "Master In Engineering (Applied Artificial Intelligence)",
+      "facultyEn": "FACULTY OF ENGINEERING, TECHNOLOGY & BUILT ENVIRONMENT",
+      "campus": "Kuala Lumpur",
+      "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/master-engineering-applied-artificial-intelligence",
+      "status": "candidate"
+    },
+    {
+      "order": 59,
+      "code": "UCSI-PHD-059",
+      "level": "phd",
+      "nameEnOfficial": "Doctor Of Philosophy (Hospitality And Tourism)",
+      "facultyEn": "FACULTY OF HOSPITALITY & TOURISM MANAGEMENT",
+      "campus": "Kuala Lumpur",
+      "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/doctor-philosophy-hospitality-and-tourism",
+      "status": "candidate"
+    },
+    {
+      "order": 60,
+      "code": "UCSI-MASTER-060",
+      "level": "master",
+      "nameEnOfficial": "Master In International Hospitality Management",
+      "facultyEn": "FACULTY OF HOSPITALITY & TOURISM MANAGEMENT",
+      "campus": "Kuala Lumpur , Kuching",
+      "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/master-international-hospitality-management",
+      "status": "candidate"
+    },
+    {
+      "order": 61,
+      "code": "UCSI-MASTER-061",
+      "level": "master",
+      "nameEnOfficial": "Master Of Science In Gastronomy",
+      "facultyEn": "FACULTY OF HOSPITALITY & TOURISM MANAGEMENT",
+      "campus": "Kuala Lumpur",
+      "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/master-science-gastronomy",
+      "status": "candidate"
+    },
+    {
+      "order": 62,
+      "code": "UCSI-BACHELOR-062",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor Of Arts (Honours) In Culinary Management",
+      "facultyEn": "FACULTY OF HOSPITALITY & TOURISM MANAGEMENT",
+      "campus": "Kuala Lumpur",
+      "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-arts-honours-culinary-management",
+      "status": "candidate"
+    },
+    {
+      "order": 63,
+      "code": "UCSI-BACHELOR-063",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor Of Arts (Honours) In Global Sustainable Tourism",
+      "facultyEn": "FACULTY OF HOSPITALITY & TOURISM MANAGEMENT",
+      "campus": "Kuala Lumpur",
+      "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-arts-honours-global-sustainable-tourism",
+      "status": "candidate"
+    },
+    {
+      "order": 64,
+      "code": "UCSI-BACHELOR-064",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor Of Hospitality Administration",
+      "facultyEn": "FACULTY OF HOSPITALITY & TOURISM MANAGEMENT",
+      "campus": "Kuala Lumpur",
+      "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-hospitality-administration",
+      "status": "candidate"
+    },
+    {
+      "order": 65,
+      "code": "UCSI-MASTER-065",
+      "level": "master",
+      "nameEnOfficial": "MSc (Healthy Aging, Medical Aesthetic And Regenerative Medicine)",
+      "facultyEn": "FACULTY OF MEDICINE & HEALTH SCIENCES",
+      "campus": "Kuala Lumpur",
+      "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/msc-healthy-aging-medical-aesthetic-and-regenerative-medicine",
+      "status": "candidate"
+    },
+    {
+      "order": 66,
+      "code": "UCSI-BACHELOR-066",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor Of Optometry (Hons)",
+      "facultyEn": "FACULTY OF MEDICINE & HEALTH SCIENCES",
+      "campus": "Kuala Lumpur",
+      "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-optometry-hons",
+      "status": "candidate"
+    },
+    {
+      "order": 67,
+      "code": "UCSI-PHD-067",
+      "level": "phd",
+      "nameEnOfficial": "Doctor Of Philosophy (Pharmaceutical Sciences)",
+      "facultyEn": "FACULTY OF PHARMACEUTICAL SCIENCES",
+      "campus": "Kuala Lumpur",
+      "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/doctor-philosophy-pharmaceutical-sciences",
+      "status": "candidate"
+    },
+    {
+      "order": 68,
+      "code": "UCSI-MASTER-068",
+      "level": "master",
+      "nameEnOfficial": "Master Of Clinical Pharmacy Practice",
+      "facultyEn": "FACULTY OF PHARMACEUTICAL SCIENCES",
+      "campus": "Kuala Lumpur",
+      "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/master-clinical-pharmacy-practice",
+      "status": "candidate"
+    },
+    {
+      "order": 69,
+      "code": "UCSI-MASTER-069",
+      "level": "master",
+      "nameEnOfficial": "Master Of Science (Pharmaceutical Sciences)",
+      "facultyEn": "FACULTY OF PHARMACEUTICAL SCIENCES",
+      "campus": "Kuala Lumpur",
+      "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/master-science-pharmaceutical-sciences",
+      "status": "candidate"
+    },
+    {
+      "order": 70,
+      "code": "UCSI-MASTER-070",
+      "level": "master",
+      "nameEnOfficial": "MSc Pharmaceutical Chemistry",
+      "facultyEn": "FACULTY OF PHARMACEUTICAL SCIENCES",
+      "campus": "Kuala Lumpur",
+      "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/msc-pharmaceutical-chemistry",
+      "status": "candidate"
+    },
+    {
+      "order": 71,
+      "code": "UCSI-MASTER-071",
+      "level": "master",
+      "nameEnOfficial": "MSc Pharmaceutical Technology",
+      "facultyEn": "FACULTY OF PHARMACEUTICAL SCIENCES",
+      "campus": "Kuala Lumpur",
+      "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/msc-pharmaceutical-technology",
+      "status": "candidate"
+    },
+    {
+      "order": 72,
+      "code": "UCSI-BACHELOR-072",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor In Formulation Science (Honours)",
+      "facultyEn": "FACULTY OF PHARMACEUTICAL SCIENCES",
+      "campus": "Kuala Lumpur",
+      "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-formulation-science-honours",
+      "status": "candidate"
+    },
+    {
+      "order": 73,
+      "code": "UCSI-BACHELOR-073",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor Of Pharmacy (Honours)",
+      "facultyEn": "FACULTY OF PHARMACEUTICAL SCIENCES",
+      "campus": "Kuala Lumpur",
+      "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-pharmacy-honours",
+      "status": "candidate"
+    },
+    {
+      "order": 74,
+      "code": "UCSI-PHD-074",
+      "level": "phd",
+      "nameEnOfficial": "Doctor Of Philosophy (Education)",
+      "facultyEn": "FACULTY OF SOCIAL SCIENCES & LIBERAL ARTS",
+      "campus": "Kuala Lumpur",
+      "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/doctor-philosophy-education",
+      "status": "candidate"
+    },
+    {
+      "order": 75,
+      "code": "UCSI-PHD-075",
+      "level": "phd",
+      "nameEnOfficial": "Doctor Of Philosophy In Psychology",
+      "facultyEn": "FACULTY OF SOCIAL SCIENCES & LIBERAL ARTS",
+      "campus": "Kuala Lumpur",
+      "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/doctor-philosophy-psychology",
+      "status": "candidate"
+    },
+    {
+      "order": 76,
+      "code": "UCSI-MASTER-076",
+      "level": "master",
+      "nameEnOfficial": "Master Of Child Psychology",
+      "facultyEn": "FACULTY OF SOCIAL SCIENCES & LIBERAL ARTS",
+      "campus": "Kuala Lumpur",
+      "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/master-child-psychology",
+      "status": "candidate"
+    },
+    {
+      "order": 77,
+      "code": "UCSI-MASTER-077",
+      "level": "master",
+      "nameEnOfficial": "Master Of Clinical Psychology",
+      "facultyEn": "FACULTY OF SOCIAL SCIENCES & LIBERAL ARTS",
+      "campus": "Kuala Lumpur",
+      "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/master-clinical-psychology",
+      "status": "candidate"
+    },
+    {
+      "order": 78,
+      "code": "UCSI-MASTER-078",
+      "level": "master",
+      "nameEnOfficial": "Master Of Education",
+      "facultyEn": "FACULTY OF SOCIAL SCIENCES & LIBERAL ARTS",
+      "campus": "Kuala Lumpur",
+      "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/master-education",
+      "status": "candidate"
+    },
+    {
+      "order": 79,
+      "code": "UCSI-MASTER-079",
+      "level": "master",
+      "nameEnOfficial": "Master In Strategic Communication",
+      "facultyEn": "FACULTY OF SOCIAL SCIENCES & LIBERAL ARTS",
+      "campus": "Kuala Lumpur",
+      "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/master-strategic-communication",
+      "status": "candidate"
+    },
+    {
+      "order": 80,
+      "code": "UCSI-BACHELOR-080",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor Of Early Childhood Education (Honours)",
+      "facultyEn": "FACULTY OF SOCIAL SCIENCES & LIBERAL ARTS",
+      "campus": "Kuala Lumpur",
+      "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-early-childhood-education-honours",
+      "status": "candidate"
+    },
+    {
+      "order": 81,
+      "code": "UCSI-BACHELOR-081",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor Of Digital Media Production And Broadcasting (Honours)",
+      "facultyEn": "FACULTY OF SOCIAL SCIENCES & LIBERAL ARTS",
+      "campus": "Kuala Lumpur",
+      "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-digital-media-production-and-broadcasting-honours",
+      "status": "candidate"
+    },
+    {
+      "order": 82,
+      "code": "UCSI-PHD-082",
+      "level": "phd",
+      "nameEnOfficial": "Doctor Of Philosophy In Art, Design And Creative Media",
+      "facultyEn": "DE INSTITUTE OF CREATIVE ARTS AND DESIGN",
+      "campus": "Kuala Lumpur",
+      "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/doctor-philosophy-art-design-and-creative-media",
+      "status": "candidate"
+    },
+    {
+      "order": 83,
+      "code": "UCSI-MASTER-083",
+      "level": "master",
+      "nameEnOfficial": "Master Of Arts And Design",
+      "facultyEn": "DE INSTITUTE OF CREATIVE ARTS AND DESIGN",
+      "campus": "Kuala Lumpur",
+      "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/master-arts-and-design",
+      "status": "candidate"
+    },
+    {
+      "order": 84,
+      "code": "UCSI-MASTER-084",
+      "level": "master",
+      "nameEnOfficial": "Master Of Art, Design And Creative Media",
+      "facultyEn": "DE INSTITUTE OF CREATIVE ARTS AND DESIGN",
+      "campus": "Kuala Lumpur",
+      "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/master-art-design-and-creative-media",
+      "status": "candidate"
+    },
+    {
+      "order": 85,
+      "code": "UCSI-PHD-085",
+      "level": "phd",
+      "nameEnOfficial": "Doctor Of Philosophy In Mathematical Sciences",
+      "facultyEn": "INSTITUTE OF ACTUARIAL SCIENCE AND DATA ANALYTICS",
+      "campus": "Kuala Lumpur",
+      "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/doctor-philosophy-mathematical-sciences",
+      "status": "candidate"
+    },
+    {
+      "order": 86,
+      "code": "UCSI-MASTER-086",
+      "level": "master",
+      "nameEnOfficial": "Master Of Science (Actuarial Management) - (Mixed Mode Or Coursework)",
+      "facultyEn": "INSTITUTE OF ACTUARIAL SCIENCE AND DATA ANALYTICS",
+      "campus": "Kuala Lumpur",
+      "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/master-science-actuarial-management-mixed-mode-or-coursework",
+      "status": "candidate"
+    },
+    {
+      "order": 87,
+      "code": "UCSI-MASTER-087",
+      "level": "master",
+      "nameEnOfficial": "Master Of Science In Mathematical Sciences",
+      "facultyEn": "INSTITUTE OF ACTUARIAL SCIENCE AND DATA ANALYTICS",
+      "campus": "Kuala Lumpur",
+      "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/master-science-mathematical-sciences",
+      "status": "candidate"
+    },
+    {
+      "order": 88,
+      "code": "UCSI-BACHELOR-088",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor Of Science (Honours) Actuarial Science",
+      "facultyEn": "INSTITUTE OF ACTUARIAL SCIENCE AND DATA ANALYTICS",
+      "campus": "Kuala Lumpur",
+      "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-science-honours-actuarial-science",
+      "status": "candidate"
+    },
+    {
+      "order": 89,
+      "code": "UCSI-BACHELOR-089",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor Of Science (Honours) Actuarial Science And Finance",
+      "facultyEn": "INSTITUTE OF ACTUARIAL SCIENCE AND DATA ANALYTICS",
+      "campus": "Kuala Lumpur",
+      "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-science-honours-actuarial-science-and-finance",
+      "status": "candidate"
+    },
+    {
+      "order": 90,
+      "code": "UCSI-BACHELOR-090",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor Of Science (Honours) Actuarial Science With Data Analytics",
+      "facultyEn": "INSTITUTE OF ACTUARIAL SCIENCE AND DATA ANALYTICS",
+      "campus": "Kuala Lumpur",
+      "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-science-honours-actuarial-science-data-analytics",
+      "status": "candidate"
+    },
+    {
+      "order": 91,
+      "code": "UCSI-PHD-091",
+      "level": "phd",
+      "nameEnOfficial": "Doctor Of Philosophy In Computer Science",
+      "facultyEn": "INSTITUTE OF COMPUTER SCIENCE AND DIGITAL INNOVATION",
+      "campus": "Kuala Lumpur",
+      "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/doctor-philosophy-computer-science",
+      "status": "candidate"
+    },
+    {
+      "order": 92,
+      "code": "UCSI-MASTER-092",
+      "level": "master",
+      "nameEnOfficial": "Master Of Science In Computer Science",
+      "facultyEn": "INSTITUTE OF COMPUTER SCIENCE AND DIGITAL INNOVATION",
+      "campus": "Kuala Lumpur",
+      "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/master-science-computer-science",
+      "status": "candidate"
+    },
+    {
+      "order": 93,
+      "code": "UCSI-MASTER-093",
+      "level": "master",
+      "nameEnOfficial": "Master Of Science In Digital Technology And Analytics",
+      "facultyEn": "INSTITUTE OF COMPUTER SCIENCE AND DIGITAL INNOVATION",
+      "campus": "Kuala Lumpur",
+      "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/master-science-digital-technology-and-analytics",
+      "status": "candidate"
+    },
+    {
+      "order": 94,
+      "code": "UCSI-MASTER-094",
+      "level": "master",
+      "nameEnOfficial": "MSc In Technopreneurship",
+      "facultyEn": "INSTITUTE OF COMPUTER SCIENCE AND DIGITAL INNOVATION",
+      "campus": "Kuala Lumpur",
+      "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/msc-technopreneurship",
+      "status": "candidate"
+    },
+    {
+      "order": 95,
+      "code": "UCSI-BACHELOR-095",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor Of Computer Science (Honours)",
+      "facultyEn": "INSTITUTE OF COMPUTER SCIENCE AND DIGITAL INNOVATION",
+      "campus": "Kuala Lumpur",
+      "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-computer-science-honours",
+      "status": "candidate"
+    },
+    {
+      "order": 96,
+      "code": "UCSI-BACHELOR-096",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor Of Computer Science In Artificial Intelligence With Honours",
+      "facultyEn": "INSTITUTE OF COMPUTER SCIENCE AND DIGITAL INNOVATION",
+      "campus": "Kuala Lumpur",
+      "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-computer-science-artificial-intelligence-honours",
+      "status": "candidate"
+    },
+    {
+      "order": 97,
+      "code": "UCSI-BACHELOR-097",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor Of Computer Science In Cyber Security With Honours",
+      "facultyEn": "INSTITUTE OF COMPUTER SCIENCE AND DIGITAL INNOVATION",
+      "campus": "Kuala Lumpur",
+      "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-computer-science-cyber-security-honours",
+      "status": "candidate"
+    },
+    {
+      "order": 98,
+      "code": "UCSI-BACHELOR-098",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor Of Computer Science (Hons) Mobile Computing And Networking",
+      "facultyEn": "INSTITUTE OF COMPUTER SCIENCE AND DIGITAL INNOVATION",
+      "campus": "Kuala Lumpur",
+      "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-computer-science-hons-mobile-computing-and-networking",
+      "status": "candidate"
+    },
+    {
+      "order": 99,
+      "code": "UCSI-BACHELOR-099",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor Of Computer Science In Data Science With Honours",
+      "facultyEn": "INSTITUTE OF COMPUTER SCIENCE AND DIGITAL INNOVATION",
+      "campus": "Kuala Lumpur",
+      "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-computer-science-data-science-honours",
+      "status": "candidate"
+    },
+    {
+      "order": 100,
+      "code": "UCSI-BACHELOR-100",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor Of Science In Business Information Systems (Honours)",
+      "facultyEn": "INSTITUTE OF COMPUTER SCIENCE AND DIGITAL INNOVATION",
+      "campus": "Kuala Lumpur",
+      "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-science-business-information-systems-honours",
+      "status": "candidate"
+    },
+    {
+      "order": 101,
+      "code": "UCSI-PHD-101",
+      "level": "phd",
+      "nameEnOfficial": "Doctor Of Philosophy In Music Performance",
+      "facultyEn": "INSTITUTE OF MUSIC",
+      "campus": "Kuala Lumpur",
+      "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/doctor-philosophy-music-performance",
+      "status": "candidate"
+    },
+    {
+      "order": 102,
+      "code": "UCSI-PHD-102",
+      "level": "phd",
+      "nameEnOfficial": "Doctor Of Philosophy In Music",
+      "facultyEn": "INSTITUTE OF MUSIC",
+      "campus": "Kuala Lumpur",
+      "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/doctor-philosophy-music",
+      "status": "candidate"
+    },
+    {
+      "order": 103,
+      "code": "UCSI-MASTER-103",
+      "level": "master",
+      "nameEnOfficial": "Master Of Music (Performance Studies)",
+      "facultyEn": "INSTITUTE OF MUSIC",
+      "campus": "Kuala Lumpur",
+      "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/mmus-performance-studies",
+      "status": "candidate"
+    },
+    {
+      "order": 104,
+      "code": "UCSI-BACHELOR-104",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor Of Classical Music (Hons.)",
+      "facultyEn": "INSTITUTE OF MUSIC",
+      "campus": "Kuala Lumpur",
+      "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-classical-music-hons",
+      "status": "candidate"
+    },
+    {
+      "order": 105,
+      "code": "UCSI-BACHELOR-105",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor Of Contemporary Music (Hons.)",
+      "facultyEn": "INSTITUTE OF MUSIC",
+      "campus": "Kuala Lumpur",
+      "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-contemporary-music-hons",
+      "status": "candidate"
+    },
+    {
+      "order": 106,
+      "code": "UCSI-MASTER-106",
+      "level": "master",
+      "nameEnOfficial": "Master Of Science Policy And Communication",
+      "facultyEn": "INTERNATIONAL INSTITUTE OF SCIENCE DIPLOMACY AND SUSTAINABILITY",
+      "campus": "Kuala Lumpur",
+      "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/master-science-policy-and-communication",
+      "status": "candidate"
+    },
+    {
+      "order": 107,
+      "code": "UCSI-MASTER-107",
+      "level": "master",
+      "nameEnOfficial": "Master In Science Diplomacy",
+      "facultyEn": "INTERNATIONAL INSTITUTE OF SCIENCE DIPLOMACY AND SUSTAINABILITY",
+      "campus": "Kuala Lumpur",
+      "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/master-science-diplomacy",
+      "status": "candidate"
+    },
+    {
+      "order": 108,
+      "code": "UCSI-MASTER-108",
+      "level": "master",
+      "nameEnOfficial": "Master In Environmental, Social And Governance Leadership",
+      "facultyEn": "INTERNATIONAL INSTITUTE OF SCIENCE DIPLOMACY AND SUSTAINABILITY",
+      "campus": "Kuala Lumpur",
+      "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/master-environmental-social-and-governance-leadership",
+      "status": "candidate"
+    },
+    {
+      "order": 109,
+      "code": "UCSI-MASTER-109",
+      "level": "master",
+      "nameEnOfficial": "Master Of Business Administration (Blue Ocean Strategy)",
+      "facultyEn": "FACULTY OF BUSINESS AND MANAGEMENT",
+      "campus": "Kuching",
+      "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/master-business-administration-blue-ocean-strategy",
+      "status": "candidate"
+    },
+    {
+      "order": 110,
+      "code": "UCSI-BACHELOR-110",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor In Business Management (Honours)",
+      "facultyEn": "FACULTY OF BUSINESS AND MANAGEMENT",
+      "campus": "Kuching",
+      "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-business-management-honours",
+      "status": "candidate"
+    },
+    {
+      "order": 111,
+      "code": "UCSI-BACHELOR-111",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor In International Business (Honours)",
+      "facultyEn": "FACULTY OF BUSINESS AND MANAGEMENT",
+      "campus": "Kuching",
+      "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-international-business-honours",
+      "status": "candidate"
+    },
+    {
+      "order": 112,
+      "code": "UCSI-BACHELOR-112",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor Of Commerce (Hons) In Accounting And Finance",
+      "facultyEn": "FACULTY OF BUSINESS AND MANAGEMENT",
+      "campus": "Kuching",
+      "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-commerce-hons-accounting-and-finance-kuching-campus",
+      "status": "candidate"
+    },
+    {
+      "order": 113,
+      "code": "UCSI-BACHELOR-113",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor Of Commerce (Hons) In Marketing",
+      "facultyEn": "FACULTY OF BUSINESS AND MANAGEMENT",
+      "campus": "Kuching",
+      "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-commerce-hons-marketing",
+      "status": "candidate"
+    },
+    {
+      "order": 114,
+      "code": "UCSI-BACHELOR-114",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor Of Arts (Honours) In Culinary Management",
+      "facultyEn": "FACULTY OF HOSPITALITY AND TOURISM MANAGEMENT",
+      "campus": "Kuching",
+      "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-arts-honours-culinary-management-kuching-campus",
+      "status": "candidate"
+    },
+    {
+      "order": 115,
+      "code": "UCSI-PHD-115",
+      "level": "phd",
+      "nameEnOfficial": "Doctor Of Philosophy (Medical Sciences)",
+      "facultyEn": "FACULTY OF MEDICINE AND HEALTH SCIENCES",
+      "campus": "Springhill",
+      "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/doctor-philosophy-medical-sciences",
+      "status": "candidate"
+    },
+    {
+      "order": 116,
+      "code": "UCSI-BACHELOR-116",
+      "level": "bachelor",
+      "nameEnOfficial": "Doctor Of Medicine (MD)",
+      "facultyEn": "FACULTY OF MEDICINE AND HEALTH SCIENCES",
+      "campus": "Springhill",
+      "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/doctor-medicine-md",
+      "status": "candidate"
+    },
+    {
+      "order": 117,
+      "code": "UCSI-BACHELOR-117",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor Of Nursing (Hons)",
+      "facultyEn": "FACULTY OF MEDICINE AND HEALTH SCIENCES",
+      "campus": "Springhill",
+      "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-nursing-hons",
+      "status": "candidate"
+    },
+    {
+      "order": 118,
+      "code": "UCSI-BACHELOR-118",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor Of Arts (Honours) In Hospitality Management",
+      "facultyEn": "SCHOOL OF HOSPITALITY AND TOURISM MANAGEMENT",
+      "campus": "Springhill",
+      "sourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-arts-honours-hospitality-management",
+      "status": "candidate"
+    }
+  ],
+  "excludedOfficialLevels": [
+    "out-of-scope",
+    "postgraduate-certificate",
+    "postgraduate-diploma"
+  ]
+}

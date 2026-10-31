@@ -1,0 +1,525 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-06-20T12:45:00+08:00",
+  "universityCode": "UTP",
+  "institution": "Universiti Teknologi PETRONAS",
+  "scope": "StudyMY public/admin display names for the 63 official UTP bachelor/master/phd candidates.",
+  "policy": {
+    "sourceOfTruth": "Official English programme names remain the authoritative UTP titles.",
+    "displayUse": "Chinese names are StudyMY localized display values for review and public UX, not official UTP Chinese titles.",
+    "acceptance": "All 63 official English names have zh-CN and zh-TW values; no row falls back to English.",
+    "acceptedCoverageState": "general-rule"
+  },
+  "counts": {
+    "candidateRows": 63,
+    "localizedRows": 63,
+    "zhCNFallbackToEnglishRows": 0,
+    "zhTWFallbackToEnglishRows": 0
+  },
+  "rows": [
+    {
+      "code": "UTP-BACHELOR-BACHELOR_OF_INTEGRATED_ENGINEERING_WITH_HONOURS",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor of Integrated Engineering with Honours",
+      "zhCN": "综合工程荣誉学士",
+      "zhTW": "綜合工程榮譽學士",
+      "status": "general-rule"
+    },
+    {
+      "code": "UTP-BACHELOR-BACHELOR_OF_CHEMICAL_ENGINEERING_WITH_HONOURS",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor of Chemical Engineering with Honours",
+      "zhCN": "化学工程荣誉学士",
+      "zhTW": "化學工程榮譽學士",
+      "status": "general-rule"
+    },
+    {
+      "code": "UTP-BACHELOR-BACHELOR_OF_CIVIL_ENGINEERING_WITH_HONOURS_CIVIL_ENGINEERING_COURSE_IN_MALAYSIA",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor of Civil Engineering with Honours - Civil Engineering Course in Malaysia",
+      "zhCN": "土木工程荣誉学士",
+      "zhTW": "土木工程榮譽學士",
+      "status": "general-rule"
+    },
+    {
+      "code": "UTP-BACHELOR-BACHELOR_OF_COMPUTER_ENGINEERING_WITH_HONOURS",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor of Computer Engineering with Honours",
+      "zhCN": "计算机工程荣誉学士",
+      "zhTW": "電腦工程榮譽學士",
+      "status": "general-rule"
+    },
+    {
+      "code": "UTP-BACHELOR-BACHELOR_OF_ELECTRICAL_AND_ELECTRONICS_ENGINEERING_WITH_HONOURS",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor of Electrical and Electronics Engineering with Honours",
+      "zhCN": "电气与电子工程荣誉学士",
+      "zhTW": "電氣與電子工程榮譽學士",
+      "status": "general-rule"
+    },
+    {
+      "code": "UTP-BACHELOR-BACHELOR_OF_MATERIALS_ENGINEERING_WITH_HONOURS",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor of Materials Engineering with Honours",
+      "zhCN": "材料工程荣誉学士",
+      "zhTW": "材料工程榮譽學士",
+      "status": "general-rule"
+    },
+    {
+      "code": "UTP-BACHELOR-BACHELOR_OF_MECHANICAL_ENGINEERING_WITH_HONOURS",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor of Mechanical Engineering with Honours",
+      "zhCN": "机械工程荣誉学士",
+      "zhTW": "機械工程榮譽學士",
+      "status": "general-rule"
+    },
+    {
+      "code": "UTP-BACHELOR-BACHELOR_OF_PETROLEUM_ENGINEERING_WITH_HONOURS",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor of Petroleum Engineering with Honours",
+      "zhCN": "石油工程荣誉学士",
+      "zhTW": "石油工程榮譽學士",
+      "status": "general-rule"
+    },
+    {
+      "code": "UTP-BACHELOR-BACHELOR_IN_INFORMATION_SYSTEMS_HONS",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor in Information Systems (Hons)",
+      "zhCN": "信息系统荣誉学士",
+      "zhTW": "資訊系統榮譽學士",
+      "status": "general-rule"
+    },
+    {
+      "code": "UTP-BACHELOR-BACHELOR_IN_INFORMATION_TECHNOLOGY_HONS_IT_COURSE_IN_MALAYSIA",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor in Information Technology (Hons) - IT Course in Malaysia",
+      "zhCN": "信息技术荣誉学士",
+      "zhTW": "資訊科技榮譽學士",
+      "status": "general-rule"
+    },
+    {
+      "code": "UTP-BACHELOR-BACHELOR_OF_COMPUTER_SCIENCE_HONS_COMPUTER_SCIENCE_COURSE_IN_MALAYSIA",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor of Computer Science (Hons) - Computer Science Course in Malaysia",
+      "zhCN": "计算机科学荣誉学士",
+      "zhTW": "電腦科學榮譽學士",
+      "status": "general-rule"
+    },
+    {
+      "code": "UTP-BACHELOR-BACHELOR_IN_BUSINESS_MANAGEMENT_HONS",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor in Business Management (Hons)",
+      "zhCN": "商业管理荣誉学士",
+      "zhTW": "商業管理榮譽學士",
+      "status": "general-rule"
+    },
+    {
+      "code": "UTP-BACHELOR-BACHELOR_OF_SCIENCE_HONS_APPLIED_CHEMISTRY",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor of Science (Hons) Applied Chemistry",
+      "zhCN": "应用化学理学荣誉学士",
+      "zhTW": "應用化學理學榮譽學士",
+      "status": "general-rule"
+    },
+    {
+      "code": "UTP-BACHELOR-BACHELOR_OF_SCIENCE_IN_INDUSTRIAL_PHYSICS",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor-of-Science-in-Industrial-Physics",
+      "zhCN": "工业物理理学荣誉学士",
+      "zhTW": "工業物理理學榮譽學士",
+      "status": "general-rule"
+    },
+    {
+      "code": "UTP-BACHELOR-BACHELOR_OF_SCIENCE_HONS_GEOSCIENCE",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor of Science (Hons) Geoscience",
+      "zhCN": "地球科学理学荣誉学士",
+      "zhTW": "地球科學理學榮譽學士",
+      "status": "general-rule"
+    },
+    {
+      "code": "UTP-MASTER-MBA_IN_EN_ERGY_MANAGEMENT",
+      "level": "master",
+      "nameEnOfficial": "MBA in En ergy Management",
+      "zhCN": "能源管理工商管理硕士",
+      "zhTW": "能源管理工商管理碩士",
+      "status": "general-rule"
+    },
+    {
+      "code": "UTP-MASTER-MASTER_OF_SCIENCE_IN_APPLIED_COMPUTING",
+      "level": "master",
+      "nameEnOfficial": "Master of Science in Applied Computing",
+      "zhCN": "应用计算理学硕士",
+      "zhTW": "應用計算理學碩士",
+      "status": "general-rule"
+    },
+    {
+      "code": "UTP-MASTER-MSC_IN_ASSET_MANAGEMENT_AND_MAINTENANCE",
+      "level": "master",
+      "nameEnOfficial": "MSc in Asset Management and Maintenance",
+      "zhCN": "资产管理与维护理学硕士",
+      "zhTW": "資產管理與維護理學碩士",
+      "status": "general-rule"
+    },
+    {
+      "code": "UTP-MASTER-MSC_IN_CORROSION_ENGINEERING",
+      "level": "master",
+      "nameEnOfficial": "MSc in Corrosion Engineering",
+      "zhCN": "腐蚀工程理学硕士",
+      "zhTW": "腐蝕工程理學碩士",
+      "status": "general-rule"
+    },
+    {
+      "code": "UTP-MASTER-MSC_IN_DRILLING_ENGINEERING_BY_COURSEWORK_AND_DISSERTATION",
+      "level": "master",
+      "nameEnOfficial": "MSC in Drilling Engineering by Coursework and Dissertation",
+      "zhCN": "钻井工程理学硕士",
+      "zhTW": "鑽井工程理學碩士",
+      "status": "general-rule"
+    },
+    {
+      "code": "UTP-MASTER-MSC_IN_ELECTRONIC_SYSTEM_ENGINEERING",
+      "level": "master",
+      "nameEnOfficial": "MSc in Electronic System Engineering",
+      "zhCN": "电子系统工程理学硕士",
+      "zhTW": "電子系統工程理學碩士",
+      "status": "general-rule"
+    },
+    {
+      "code": "UTP-MASTER-MSC_IN_INDUSTRIAL_ENVIRONMENTAL_ENGINEERING",
+      "level": "master",
+      "nameEnOfficial": "MSc in Industrial Environmental Engineering",
+      "zhCN": "工业环境工程理学硕士",
+      "zhTW": "工業環境工程理學碩士",
+      "status": "general-rule"
+    },
+    {
+      "code": "UTP-MASTER-MSC_IN_OFFSHORE_ENGINEERING_BY_COURSEWORK_AND_DISSERTATION",
+      "level": "master",
+      "nameEnOfficial": "MSc in Offshore Engineering by Coursework and Dissertation",
+      "zhCN": "海洋工程理学硕士",
+      "zhTW": "海洋工程理學碩士",
+      "status": "general-rule"
+    },
+    {
+      "code": "UTP-MASTER-MSC_IN_PETROLEUM_GEOSCIENCE",
+      "level": "master",
+      "nameEnOfficial": "MSc in Petroleum Geoscience",
+      "zhCN": "石油地球科学理学硕士",
+      "zhTW": "石油地球科學理學碩士",
+      "status": "general-rule"
+    },
+    {
+      "code": "UTP-MASTER-MSC_IN_PROCESS_INTEGRATION",
+      "level": "master",
+      "nameEnOfficial": "MSc in Process Integration",
+      "zhCN": "过程集成理学硕士",
+      "zhTW": "製程整合理學碩士",
+      "status": "general-rule"
+    },
+    {
+      "code": "UTP-MASTER-MSC_IN_PROCESS_SAFETY",
+      "level": "master",
+      "nameEnOfficial": "MSc in Process Safety",
+      "zhCN": "过程安全理学硕士",
+      "zhTW": "製程安全理學碩士",
+      "status": "general-rule"
+    },
+    {
+      "code": "UTP-MASTER-MSC_IN_PETROLEUM_ENGINEERING_MASTERS_BY_COURSEWORK",
+      "level": "master",
+      "nameEnOfficial": "MSc in Petroleum Engineering - Masters by Coursework",
+      "zhCN": "石油工程理学硕士",
+      "zhTW": "石油工程理學碩士",
+      "status": "general-rule"
+    },
+    {
+      "code": "UTP-MASTER-MASTER_OF_SCIENCE_IN_PREDICTIVE_ANALYTICS_ODL",
+      "level": "master",
+      "nameEnOfficial": "Master of Science in Predictive Analytics ODL",
+      "zhCN": "预测分析理学硕士（开放与远程学习）",
+      "zhTW": "預測分析理學碩士（開放與遠距學習）",
+      "status": "general-rule"
+    },
+    {
+      "code": "UTP-MASTER-MBA_IN_EN_ERGY_MANAGEMENT_ODL",
+      "level": "master",
+      "nameEnOfficial": "MBA in En ergy Management (ODL)",
+      "zhCN": "能源管理工商管理硕士（开放与远程学习）",
+      "zhTW": "能源管理工商管理碩士（開放與遠距學習）",
+      "status": "general-rule"
+    },
+    {
+      "code": "UTP-MASTER-MSC_IN_ELECTRONIC_SYSTEMS_ENGINEERING_ODL",
+      "level": "master",
+      "nameEnOfficial": "MSc in Electronic Systems Engineering (ODL)",
+      "zhCN": "电子系统工程理学硕士（开放与远程学习）",
+      "zhTW": "電子系統工程理學碩士（開放與遠距學習）",
+      "status": "general-rule"
+    },
+    {
+      "code": "UTP-MASTER-MASTER_OF_SCIENCE_IN_APPLIED_COMPUTING_ODL",
+      "level": "master",
+      "nameEnOfficial": "Master of Science in Applied Computing ODL",
+      "zhCN": "应用计算理学硕士（开放与远程学习）",
+      "zhTW": "應用計算理學碩士（開放與遠距學習）",
+      "status": "general-rule"
+    },
+    {
+      "code": "UTP-MASTER-MSC_IN_ASSET_MANAGEMENT_AND_MAINTENANCE_ODL",
+      "level": "master",
+      "nameEnOfficial": "MSc in Asset Management and Maintenance (ODL)",
+      "zhCN": "资产管理与维护理学硕士（开放与远程学习）",
+      "zhTW": "資產管理與維護理學碩士（開放與遠距學習）",
+      "status": "general-rule"
+    },
+    {
+      "code": "UTP-MASTER-MSC_IN_CORROSION_ENGINEERING_ODL",
+      "level": "master",
+      "nameEnOfficial": "MSc in Corrosion Engineering ODL",
+      "zhCN": "腐蚀工程理学硕士（开放与远程学习）",
+      "zhTW": "腐蝕工程理學碩士（開放與遠距學習）",
+      "status": "general-rule"
+    },
+    {
+      "code": "UTP-MASTER-MSC_IN_DATA_SCIENCE_ODL",
+      "level": "master",
+      "nameEnOfficial": "MSc in Data Science (ODL)",
+      "zhCN": "数据科学理学硕士（开放与远程学习）",
+      "zhTW": "資料科學理學碩士（開放與遠距學習）",
+      "status": "general-rule"
+    },
+    {
+      "code": "UTP-MASTER-MSC_IN_DRILLING_ENGINEERING_BY_COURSEWORK_AND_DISSERTATION_ODL",
+      "level": "master",
+      "nameEnOfficial": "MSC in Drilling Engineering by Coursework and Dissertation ODL",
+      "zhCN": "钻井工程理学硕士（开放与远程学习）",
+      "zhTW": "鑽井工程理學碩士（開放與遠距學習）",
+      "status": "general-rule"
+    },
+    {
+      "code": "UTP-MASTER-MSC_IN_INDUSTRIAL_ENVIRONMENTAL_ENGINEERING_ODL",
+      "level": "master",
+      "nameEnOfficial": "MSc in Industrial Environmental Engineering ODL",
+      "zhCN": "工业环境工程理学硕士（开放与远程学习）",
+      "zhTW": "工業環境工程理學碩士（開放與遠距學習）",
+      "status": "general-rule"
+    },
+    {
+      "code": "UTP-MASTER-MSC_IN_OFFSHORE_ENGINEERING_ODL",
+      "level": "master",
+      "nameEnOfficial": "MSc in Offshore Engineering ODL",
+      "zhCN": "海洋工程理学硕士（开放与远程学习）",
+      "zhTW": "海洋工程理學碩士（開放與遠距學習）",
+      "status": "general-rule"
+    },
+    {
+      "code": "UTP-MASTER-MSC_IN_PETROLEUM_ENGINEERING_ODL",
+      "level": "master",
+      "nameEnOfficial": "MSc in Petroleum Engineering (ODL)",
+      "zhCN": "石油工程理学硕士（开放与远程学习）",
+      "zhTW": "石油工程理學碩士（開放與遠距學習）",
+      "status": "general-rule"
+    },
+    {
+      "code": "UTP-MASTER-MSC_PETROLEUM_GEOSCIENCE_ODL",
+      "level": "master",
+      "nameEnOfficial": "MSc Petroleum Geoscience (ODL)",
+      "zhCN": "石油地球科学理学硕士（开放与远程学习）",
+      "zhTW": "石油地球科學理學碩士（開放與遠距學習）",
+      "status": "general-rule"
+    },
+    {
+      "code": "UTP-MASTER-MSC_IN_PROCESS_INTEGRATION_BY_COURSEWORK_ODL",
+      "level": "master",
+      "nameEnOfficial": "MSc in Process Integration by Coursework (ODL)",
+      "zhCN": "过程集成理学硕士（开放与远程学习）",
+      "zhTW": "製程整合理學碩士（開放與遠距學習）",
+      "status": "general-rule"
+    },
+    {
+      "code": "UTP-MASTER-MSC_IN_CHEMICAL_ENGINEERING_RESEARCH",
+      "level": "master",
+      "nameEnOfficial": "MSc in Chemical Engineering",
+      "zhCN": "化学工程理学硕士",
+      "zhTW": "化學工程理學碩士",
+      "status": "general-rule"
+    },
+    {
+      "code": "UTP-MASTER-MSC_IN_PETROLEUM_ENGINEERING_MASTERS_BY_RESEARCH_RESEARCH",
+      "level": "master",
+      "nameEnOfficial": "MSc in Petroleum Engineering - Masters by Research",
+      "zhCN": "石油工程理学硕士（研究型）",
+      "zhTW": "石油工程理學碩士（研究型）",
+      "status": "general-rule"
+    },
+    {
+      "code": "UTP-MASTER-MSC_IN_PETROLEUM_GEOSCIENCE_MASTERS_BY_RESEARCH_RESEARCH",
+      "level": "master",
+      "nameEnOfficial": "MSc in Petroleum Geoscience - Masters by Research",
+      "zhCN": "石油地球科学理学硕士（研究型）",
+      "zhTW": "石油地球科學理學碩士（研究型）",
+      "status": "general-rule"
+    },
+    {
+      "code": "UTP-MASTER-MSC_IN_CIVIL_ENGINEERING_BY_RESEARCH_RESEARCH",
+      "level": "master",
+      "nameEnOfficial": "MSc in Civil Engineering by Research",
+      "zhCN": "土木工程理学硕士（研究型）",
+      "zhTW": "土木工程理學碩士（研究型）",
+      "status": "general-rule"
+    },
+    {
+      "code": "UTP-MASTER-MSC_IN_MECHANICAL_ENGINEERING_RESEARCH",
+      "level": "master",
+      "nameEnOfficial": "MSc in Mechanical Engineering",
+      "zhCN": "机械工程理学硕士",
+      "zhTW": "機械工程理學碩士",
+      "status": "general-rule"
+    },
+    {
+      "code": "UTP-MASTER-MSC_IN_ELECTRICAL_ELECTRONIC_ENGINEERING_RESEARCH",
+      "level": "master",
+      "nameEnOfficial": "MSc in Electrical & Electronic Engineering",
+      "zhCN": "电气与电子工程理学硕士",
+      "zhTW": "電氣與電子工程理學碩士",
+      "status": "general-rule"
+    },
+    {
+      "code": "UTP-MASTER-MSC_IN_INFORMATION_TECHNOLOGY_RESEARCH_RESEARCH",
+      "level": "master",
+      "nameEnOfficial": "MSc in Information Technology (Research)",
+      "zhCN": "信息技术理学硕士（研究型）",
+      "zhTW": "資訊科技理學碩士（研究型）",
+      "status": "general-rule"
+    },
+    {
+      "code": "UTP-MASTER-MSC_IN_INFORMATION_SYSTEMS_RESEARCH",
+      "level": "master",
+      "nameEnOfficial": "MSc in Information Systems",
+      "zhCN": "信息系统理学硕士",
+      "zhTW": "資訊系統理學碩士",
+      "status": "general-rule"
+    },
+    {
+      "code": "UTP-MASTER-MSC_OF_SCIENCE_BY_RESEARCH_RESEARCH",
+      "level": "master",
+      "nameEnOfficial": "MSc of Science (by Research)",
+      "zhCN": "理学硕士（研究型）",
+      "zhTW": "理學碩士（研究型）",
+      "status": "general-rule"
+    },
+    {
+      "code": "UTP-MASTER-MASTER_OF_PHILOSOPHY_IN_MANAGEMENT_RESEARCH",
+      "level": "master",
+      "nameEnOfficial": "Master of Philosophy in Management",
+      "zhCN": "管理哲学硕士",
+      "zhTW": "管理哲學碩士",
+      "status": "general-rule"
+    },
+    {
+      "code": "UTP-MASTER-MASTER_OF_PHILOSOPHY_RESEARCH",
+      "level": "master",
+      "nameEnOfficial": "Master of Philosophy",
+      "zhCN": "哲学硕士",
+      "zhTW": "哲學碩士",
+      "status": "general-rule"
+    },
+    {
+      "code": "UTP-PHD-PHD_IN_CHEMICAL_ENGINEERING",
+      "level": "phd",
+      "nameEnOfficial": "PhD in Chemical Engineering",
+      "zhCN": "化学工程哲学博士",
+      "zhTW": "化學工程哲學博士",
+      "status": "general-rule"
+    },
+    {
+      "code": "UTP-PHD-PHD_IN_PETROLEUM_ENGINEERING",
+      "level": "phd",
+      "nameEnOfficial": "PhD in Petroleum Engineering",
+      "zhCN": "石油工程哲学博士",
+      "zhTW": "石油工程哲學博士",
+      "status": "general-rule"
+    },
+    {
+      "code": "UTP-PHD-PHD_IN_PETROLEUM_GEOSCIENCE",
+      "level": "phd",
+      "nameEnOfficial": "PhD in Petroleum Geoscience",
+      "zhCN": "石油地球科学哲学博士",
+      "zhTW": "石油地球科學哲學博士",
+      "status": "general-rule"
+    },
+    {
+      "code": "UTP-PHD-PHD_IN_CIVIL_ENGINEERING",
+      "level": "phd",
+      "nameEnOfficial": "PhD in Civil Engineering",
+      "zhCN": "土木工程哲学博士",
+      "zhTW": "土木工程哲學博士",
+      "status": "general-rule"
+    },
+    {
+      "code": "UTP-PHD-PHD_IN_MECHANICAL_ENGINEERING",
+      "level": "phd",
+      "nameEnOfficial": "PhD in Mechanical Engineering",
+      "zhCN": "机械工程哲学博士",
+      "zhTW": "機械工程哲學博士",
+      "status": "general-rule"
+    },
+    {
+      "code": "UTP-PHD-PHD_IN_ELECTRICAL_AND_ELECTRONIC_ENGINEERING",
+      "level": "phd",
+      "nameEnOfficial": "PhD in Electrical and Electronic Engineering",
+      "zhCN": "电气与电子工程哲学博士",
+      "zhTW": "電氣與電子工程哲學博士",
+      "status": "general-rule"
+    },
+    {
+      "code": "UTP-PHD-PHD_IN_INFORMATION_TECHNOLOGY",
+      "level": "phd",
+      "nameEnOfficial": "PhD in Information Technology",
+      "zhCN": "信息技术哲学博士",
+      "zhTW": "資訊科技哲學博士",
+      "status": "general-rule"
+    },
+    {
+      "code": "UTP-PHD-PHD_IN_INFORMATION_SYSTEMS",
+      "level": "phd",
+      "nameEnOfficial": "PhD in Information Systems",
+      "zhCN": "信息系统哲学博士",
+      "zhTW": "資訊系統哲學博士",
+      "status": "general-rule"
+    },
+    {
+      "code": "UTP-PHD-PHD_IN_MANAGEMENT",
+      "level": "phd",
+      "nameEnOfficial": "PhD in Management",
+      "zhCN": "管理哲学博士",
+      "zhTW": "管理哲學博士",
+      "status": "general-rule"
+    },
+    {
+      "code": "UTP-PHD-PHD_IN_APPLIED_SCIENCE",
+      "level": "phd",
+      "nameEnOfficial": "PhD in Applied Science",
+      "zhCN": "应用科学哲学博士",
+      "zhTW": "應用科學哲學博士",
+      "status": "general-rule"
+    },
+    {
+      "code": "UTP-PHD-PHD_IN_SOCIAL_SCIENCE_HUMANITIES",
+      "level": "phd",
+      "nameEnOfficial": "PhD in Social Science & Humanities",
+      "zhCN": "社会科学与人文学科哲学博士",
+      "zhTW": "社會科學與人文學科哲學博士",
+      "status": "general-rule"
+    },
+    {
+      "code": "UTP-MASTER-MSC_IN_PROCESS_SAFETY_ODL",
+      "level": "master",
+      "nameEnOfficial": "MSc in Process Safety (ODL)",
+      "zhCN": "过程安全理学硕士（开放与远程学习）",
+      "zhTW": "製程安全理學碩士（開放與遠距學習）",
+      "status": "general-rule"
+    }
+  ]
+}

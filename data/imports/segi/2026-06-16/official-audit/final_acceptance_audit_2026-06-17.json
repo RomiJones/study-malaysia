@@ -1,0 +1,126 @@
+{
+  "auditType": "segi-final-programme-count-and-detail-completeness-audit",
+  "institution": "SEGi University",
+  "institutionCode": "SEGI",
+  "auditedAt": "2026-06-17T01:05:35+08:00",
+  "authorization": "audit-only-no-database-mutation",
+  "officialSources": [
+    {
+      "role": "official programme directory",
+      "url": "https://university.segi.edu.my/course-search/"
+    },
+    {
+      "role": "official programme detail pages",
+      "urlPattern": "https://university.segi.edu.my/course/{programme-slug}/"
+    },
+    {
+      "role": "provided fee evidence, not public URL",
+      "path": "/Users/ian/Library/Containers/com.tencent.xinWeChat/Data/Documents/xwechat_files/wxid_fuzvc3f0qbm521_40c0/temp/drag/世纪大学学费单2026.pdf"
+    }
+  ],
+  "officialLiveDirectoryCheck": {
+    "checkedPages": 10,
+    "httpStatus": "10/10 pages HTTP 200",
+    "directoryOccurrences": 90,
+    "segiUniversityDegreeCandidates": 76,
+    "byLevel": {
+      "bachelor": 39,
+      "master": 28,
+      "phd": 9
+    }
+  },
+  "projectPublicApiAndDatabase": {
+    "readyProgrammes": 49,
+    "byLevel": {
+      "bachelor": 27,
+      "master": 17,
+      "phd": 5
+    },
+    "universityProgramCount": 49,
+    "apiEndpoint": "http://localhost:3000/api/universities/segi-university",
+    "apiStatus": 200,
+    "apiLocalPathLeak": false
+  },
+  "countReconciliation": {
+    "netShortfallAgainstOfficialDegreeCandidates": 27,
+    "matchedCurrentToOfficial": 36,
+    "officialOnlyCandidates": 40,
+    "currentOnlyReadyRows": 13,
+    "titleVariantMatchesFromPriorAudit": 16,
+    "interpretation": "Official catalogue has 76 SEGi University bachelor/master/phd candidates while the public project exposes 49 ready programmes. Exact identity reconciliation still needs reviewed rules for ODL/Online variants and title changes."
+  },
+  "sourceLinkAudit": {
+    "checkedRows": 49,
+    "reachableRows": 49,
+    "unreachableRows": 0,
+    "readyNeedsReviewRows": 13,
+    "publicLocalPathLeaks": 0,
+    "officialFeeSourceRows": 0,
+    "decision": "pass-for-public-source-link-display; fee public source intentionally empty because public official programme detail pages do not publish tuition totals."
+  },
+  "fieldCoverageReadyRows": {
+    "officialProgrammeSourceUrl": "49/49",
+    "officialEntryRequirementSourceUrl": "49/49 link only; detailed official requirement text not imported",
+    "officialAccreditationSourceUrl": "49/49 link only",
+    "officialTuitionMYR": "49/49 from provided 2026 fee sheet",
+    "officialFeeSourceUrl": "0/49 public official fee URL",
+    "officialIntake": "49/49 from provided 2026 fee sheet",
+    "durationOfficial": "49/49 present but many are pending programme-page verification text from fee-sheet import",
+    "officialAcademicRequirementDetailText": "0/49",
+    "officialLanguageRequirementDetailText": "0/49",
+    "applicationDocs": "49/49 generic application docs",
+    "curriculum": "0/49",
+    "careers": "0/49",
+    "officialAccreditationNote": "49/49 generic or link-backed accreditation note"
+  },
+  "blockingExceptions": {
+    "exceptionQueueItems": 70,
+    "officialDetailPagesWithoutTuition": 76,
+    "readyRowsNeedingSourceTitleReview": [
+      "SEGI-BEPR",
+      "SEGI-BAHM",
+      "SEGI-BQS",
+      "SEGI-BPHARM",
+      "SEGI-MBA-5PLUS1",
+      "SEGI-MED-CW",
+      "SEGI-MA",
+      "SEGI-MIL",
+      "SEGI-MIT-CW",
+      "SEGI-MSC-MGMT",
+      "SEGI-MIT-RES",
+      "SEGI-MENG-RES",
+      "SEGI-MMED"
+    ]
+  },
+  "verification": [
+    {
+      "command": "python3 live official directory check",
+      "result": "pass: 10 pages HTTP 200; 90 occurrences; 76 degree candidates"
+    },
+    {
+      "command": "node mysql final DB coverage query",
+      "result": "pass: DB readable; counts and field coverage calculated"
+    },
+    {
+      "command": "node fetch http://localhost:3000/api/universities/segi-university",
+      "result": "pass: HTTP 200; 49 programmes; localPathLeak=false"
+    },
+    {
+      "command": "npm run test -- tests/api/segi-seed-data.test.ts tests/api/mappers.test.ts tests/web/format.test.ts",
+      "result": "pass: 22 tests"
+    },
+    {
+      "command": "npm --workspace @studymy/api run build",
+      "result": "pass"
+    }
+  ],
+  "finalDecision": {
+    "sourceLinks": "pass",
+    "feeSheetScope": "pass-for-49-imported-public-programmes",
+    "officialFullCatalogueCount": "fail",
+    "officialDetailCompleteness": "fail",
+    "commercialReadyFinalStandard": "not-passed",
+    "summary": "SEGi source links are corrected, but programme count and programme detail fields are not yet complete and accurate against the latest official SEGi catalogue."
+  },
+  "notionStatus": "Real Notion was not updated; local Chinese development log will be updated."
+}

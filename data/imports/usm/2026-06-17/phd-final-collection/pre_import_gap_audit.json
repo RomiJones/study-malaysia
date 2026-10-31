@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-06-16T17:03:59.222Z",
+  "auditMode": "final-collection-pre-import-gap-audit",
+  "summary": {
+    "issueCounts": {
+      "career_outcomes_official_unpublished": 95,
+      "tuition_total_missing_or_rate_only": 82,
+      "tuition_total_official_unpublished": 20,
+      "intake_missing_or_unpublished": 95,
+      "academic_requirement_general_rule": 24,
+      "language_requirement_general_rule": 26,
+      "current_html_transport_failed_unique_urls": 71
+    },
+    "displayFieldCounts": {
+      "academicRequirementSource:official-programme-page-refreshed-2026-06-16": 21,
+      "languageRequirementSource:official-programme-page-refreshed-2026-06-16": 19,
+      "fee:official-total-ready": 13,
+      "fee:official-rate-ready": 62,
+      "fee:official-unpublished": 20
+    }
+  },
+  "nonBlockingRationale": {
+    "careers": "USM does not publish structured career outcomes for doctoral records; store official-unpublished rather than generated claims.",
+    "fees": "Official totals are used where unique; official rates remain separate evidence with formula handled by publication layer.",
+    "intake": "Research/open or unpublished intake is represented explicitly; missing programme-specific intake is not fabricated.",
+    "generalRules": "General rules retain USM official source provenance where current programme HTML was unavailable or did not expose a parseable panel."
+  }
+}

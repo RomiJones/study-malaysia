@@ -1,0 +1,30 @@
+{
+  "createdAt": "2026-06-19T00:00:00+08:00",
+  "files": [
+    {
+      "path": "data/imports/qs/2026-06-19/qs-wur-2027-study-my/qs-wur-2027-malaysia-endpoint-page0.json",
+      "bytes": 52703,
+      "sha256": "2867fd3a1d37520ea7cb45428dc386892cb6246b875c59b17252456e1fffadde"
+    },
+    {
+      "path": "data/imports/qs/2026-06-19/qs-wur-2027-study-my/qs-wur-2027-malaysia.html",
+      "bytes": 226999,
+      "sha256": "c3f71769ed41be59a9d8f8a92c8e09934f8cfdd24eadacde28f04cb20211346e"
+    },
+    {
+      "path": "data/imports/qs/2026-06-19/qs-wur-2027-study-my/qs-wur-2027-search-monash.json",
+      "bytes": 1678,
+      "sha256": "997a88aa3eaffef0f4d40373f555d8a8849a8e5d8d26edc574cd79031e9eb226"
+    },
+    {
+      "path": "data/imports/qs/2026-06-19/qs-wur-2027-study-my/qs-wur-2027-search-university-of-nottingham.json",
+      "bytes": 1736,
+      "sha256": "88f0c9b921c70268efa9c3d276bddd8d52e98d8f08b23476f66c96a19b248df3"
+    },
+    {
+      "path": "data/imports/qs/2026-06-19/qs-wur-2027-study-my/rankings.json",
+      "bytes": 27505,
+      "sha256": "a31c0dfd0e208e73ef0226bdad9478fab933e8215cfe18e957cfcd3d1cb8ee0d"
+    }
+  ]
+}

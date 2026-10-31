@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-06-16T17:03:59.222Z",
+  "institution": {
+    "code": "USM",
+    "name": "Universiti Sains Malaysia"
+  },
+  "collectionScope": "programmes",
+  "level": "phd",
+  "applicantScope": "international",
+  "academicSession": "current directory and 2025/2026 official postgraduate fees",
+  "currentAsOf": "2026-06-17",
+  "authorization": "collect",
+  "selectedChineseTask": "docs/notion-snapshot/tasks/TASK-USM-PHD-COLLECT-20260614.md",
+  "prdAndTechnicalDesign": [
+    "docs/prd/USM-phd-official-collection-technical-design.md",
+    "docs/prd/USM-all-level-official-publication-audit.md"
+  ],
+  "outputPaths": {
+    "finalCollectionDirectory": "data/imports/usm/2026-06-17/phd-final-collection",
+    "candidate": "data/imports/usm/2026-06-17/phd-final-collection/phd-candidate.json",
+    "audit": "data/imports/usm/2026-06-17/phd-final-collection/phd-audit.json",
+    "delivery": "data/imports/usm/2026-06-17/phd-final-collection/phd-delivery.json",
+    "runContract": "data/imports/usm/2026-06-17/phd-final-collection/run_contract.json",
+    "levelManifest": "data/imports/usm/2026-06-17/phd-final-collection/level_manifest.json",
+    "sourceCacheIndex": "data/imports/usm/2026-06-17/phd-final-collection/source_cache_index.json",
+    "exceptionQueue": "data/imports/usm/2026-06-17/phd-final-collection/exception_queue.json",
+    "preImportGapAudit": "data/imports/usm/2026-06-17/phd-final-collection/pre_import_gap_audit.json",
+    "currentOfficialDiffAudit": "data/imports/usm/2026-06-17/phd-final-collection/current_official_diff_audit.json",
+    "finalCollectionReport": "data/imports/usm/2026-06-17/phd-final-collection/final_collection_report.json"
+  },
+  "verificationCommands": [
+    "python3 scripts/verify-usm-phd-candidate.py --manifest data/imports/usm/2026-06-17/phd-final-collection/phd-candidate.json",
+    "python3 /Users/ian/.codex/skills/studymy-official-university-collector/scripts/audit_records.py data/imports/usm/2026-06-17/phd-final-collection/phd-candidate.json --profile candidate --expected-count 95 --official-domain admission.usm.my --allow-official-rate-calculation --summary-only",
+    "python3 /Users/ian/.codex/skills/studymy-official-university-collector/scripts/audit_delivery.py data/imports/usm/2026-06-17/phd-final-collection/phd-delivery.json --summary-only",
+    "python3 scripts/audit-official-total-tuition.py data/imports/usm/2026-06-17/phd-final-collection/phd-candidate.json --summary-only"
+  ],
+  "rollbackTarget": "No database write in this collection run; remove the 2026-06-17 final collection directory to discard this generated package.",
+  "notionUpdate": "local snapshot only; writable Notion connector not available"
+}

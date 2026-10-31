@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 3,
+  "status": "passed",
+  "executionMode": "single-institution-data-only",
+  "targetInstitution": "INTI International University & Colleges",
+  "targetShortName": "INTI",
+  "officialDomains": [
+    "newinti.edu.my"
+  ],
+  "collectionAuthorization": "collect",
+  "batchDirectory": "data/imports/iiu/2026-06-20/iiu-20260620",
+  "authorizedWriteScope": [
+    "data/imports/iiu/2026-06-20/iiu-20260620",
+    "data/imports/iiu/2026-06-24/v3"
+  ],
+  "prohibitedPathScope": [
+    "apps/web/**",
+    "apps/admin/**",
+    "apps/api/**",
+    "packages/shared/**",
+    "production data sources",
+    "database/publication writes"
+  ],
+  "designPreservationPolicy": "No frontend, admin, backend, API, renderer, navigation, tab, search, filter, or style changes were performed for this collection run.",
+  "localeDisplayPolicy": "Official English evidence remains in source/audit fields; student-facing Chinese fields are localized or marked review/unpublished.",
+  "formatNormalizationPolicy": "Duration, tuition, intake, language, curriculum, and career fields are normalized only when official evidence supports it; ambiguous values stay needs-review/status-coded.",
+  "databasePublicationPolicy": "No import, publication, safe_to_import promotion, row archival, public API mutation, or database write was performed.",
+  "singleInstitutionCheck": {
+    "passed": true,
+    "evidence": "All candidate source URLs and official source registry entries are under newinti.edu.my for INTI."
+  },
+  "singleLevelRuleNote": "Ian requested v3 completion for the existing INTI all-level batch; outputs are split into separate v3 audit JSON files per level.",
+  "createdAt": "2026-06-24",
+  "authorization": "collect",
+  "checks": {
+    "oneInstitutionOnly": "passed",
+    "dataOnlyCollection": "passed",
+    "designPreservation": "passed",
+    "noFrontendOrAdminMutation": "passed",
+    "noDatabaseWriteWithoutAuthorization": "passed",
+    "officialRowAndFieldCompleteness": "passed",
+    "localeSpecificPublicContent": "passed",
+    "durationFormatNormalization": "passed",
+    "tuitionLanguageIntakeFormatNormalization": "passed",
+    "listDetailDisplayContract": "passed",
+    "instructionLedgerClosure": "passed"
+  },
+  "prohibitedChanges": [],
+  "modifiedPaths": [
+    "data/imports/iiu/2026-06-20/iiu-20260620/18_single_institution_collection_audit.json",
+    "data/imports/iiu/2026-06-20/iiu-20260620/delivery.json",
+    "data/imports/iiu/2026-06-20/iiu-20260620/99_integrity_manifest.json",
+    "data/imports/iiu/2026-06-24/v3/INTI_audit_undergraduate_20260624.json",
+    "data/imports/iiu/2026-06-24/v3/INTI_audit_master_20260624.json",
+    "data/imports/iiu/2026-06-24/v3/INTI_audit_doctoral_20260624.json",
+    "data/imports/iiu/2026-06-24/v3/INTI_v3_completion_summary_20260624.json"
+  ]
+}

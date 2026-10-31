@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "institutionIdentifier": "UCSI University",
+  "universityCode": "UCSI",
+  "shortName": "UCSI",
+  "collectionScope": "full",
+  "levels": [
+    "bachelor",
+    "master",
+    "phd"
+  ],
+  "applicantScope": "international",
+  "authorization": "collect",
+  "academicSession": "current official UCSI website as of 2026-06-20",
+  "currentAsOf": "2026-06-20",
+  "taskInstruction": "采用最新优化的标准化流程和专用 skill 对思特雅（UCSI University）本硕博专业信息进行官方来源采集",
+  "officialDomains": [
+    "ucsiuniversity.edu.my"
+  ],
+  "status": "review-required",
+  "notes": [
+    "Discover official name, domains, session, and programme counts from official sources.",
+    "Do not mark candidates ready until required gates pass.",
+    "Do not close or restart Ian's running StudyMY project端 during collection unless explicitly approved.",
+    "Deeply search official source routes before marking material fields unpublished or review-needed.",
+    "Keep public localized fields useful and free of raw English dumps, crawler/debug/process notes, audit labels, and local paths."
+  ],
+  "officialNameDiscovered": "UCSI University",
+  "selectedChineseTask": "No dedicated UCSI Notion task snapshot was available in the local repository; latest user instruction is recorded as the task source.",
+  "prdAndTechnicalDesignRead": [
+    "docs/notion-snapshot/产品需求文档.md",
+    "docs/notion-snapshot/技术方案.md",
+    "docs/notion-snapshot/tasks/TASK-STUDYMY-COLLECTOR-SKILL-20260614.md"
+  ],
+  "outputPath": "data/imports/ucsi/2026-06-20/official-audit",
+  "verificationCommands": [
+    "python3 scripts/audit_pipeline_stage.py data/imports/ucsi/2026-06-20/official-audit --stage delivery_review --summary-only",
+    "python3 scripts/audit_candidate_integrity.py data/imports/ucsi/2026-06-20/official-audit/99_integrity_manifest.json --official-domain ucsiuniversity.edu.my --require-instruction-ledger --summary-only"
+  ],
+  "notionStatus": "Notion connector was unavailable; local Chinese snapshot/report was updated instead."
+}

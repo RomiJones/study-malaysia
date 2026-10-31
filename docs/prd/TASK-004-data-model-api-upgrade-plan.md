@@ -41,6 +41,16 @@ TASK-004 后续实现应先升级共享类型和后端实体，再扩展管理�
 
 静态页主列表展示规则为：用户端公开专业主列表只展示 `publicDisplayStatus === "ready"`；不开放国际学生、隐藏未核验和缺少公开状态的记录不得进入主列表，但需要在数据层或管理端保留以便追溯。
 
+#### 3.1.1 数据统计口径
+
+静态 HTML 中的数据需要按三层口径区分，避免后续导入任务把展示合并结果误判为原始官方数据：
+
+- `universitiesBase`：本方案表格中的 18 所院校、431 个专业统计口径，作为第一阶段官方基础数据 dry-run 的主目标。
+- `universitiesSupplement`：静态页补充或演示兼容数据，不计入上表的 base 统计；后续 dry-run 必须单独输出 supplement 数量、重复项、覆盖项和来源状态，不能静默合并进 base 统计。
+- `dedupeUniversities([...universitiesBase, ...universitiesSupplement])`：静态页运行时 merged 展示口径，用于用户端视觉和交互校验，以及导入校验报告中的去重结果对照；它不是原始导入事实源。
+
+因此，后续 `API-IMPORT-001` 的 dry-run 报告应至少包含 base、supplement 和 merged 三组统计，并明确标记最终可确认导入的候选层级。默认自动导入候选只来自 `universitiesBase`；`universitiesSupplement` 只能在管理端确认来源、重复处理和保留策略后进入人工导入或补录流程。
+
 ### 3.2 院校字段清单
 
 静态页院校对象包含以下主要字段：
@@ -372,7 +382,7 @@ TASK-004 后续实现应先升级共享类型和后端实体，再扩展管理�
 | `GET` | `/universities` | 院校列表和筛选 | items、pagination、facets、activeFilters |
 | `GET` | `/universities/:slug` | 院校详情 | officialProfile、applicationInfo、programGroups、sources |
 | `GET` | `/programs` | 专业列表 | items、pagination、facets |
-| `GET` | `/programs/:id` | 专业弹窗详情 | tuitionInfo、requirements、materials、sources、audit |
+| `GET` | `/programs/detail/:id` | 专业弹窗详情 | tuitionInfo、requirements、materials、sources、audit |
 | `GET` | `/programs/:slug` | 专业 SEO/直达详情 | 与 id 详情等价 |
 | `POST` | `/favorites/sync` | 登录后合并本地收藏 | merged favorites |
 | `GET` | `/favorites` | 收藏列表 | universities、programs |
@@ -386,6 +396,8 @@ TASK-004 后续实现应先升级共享类型和后端实体，再扩展管理�
 | `PATCH` | `/planner/visa` | 更新签证清单 | visaChecklist |
 | `POST` | `/tools/cost-estimate` | 费用估算 | total、breakdown、currency |
 | `GET` | `/programs/recommendations` | 智能推荐 | score、reasons、university、program、cost |
+
+专业详情路由只保留一个顶层动态段：`GET /programs/:slug`。按 id 获取详情必须使用 `GET /programs/detail/:id`，避免 NestJS/Express 中两个顶层动态专业详情路径形态相同导致顺序依赖或误匹配；实现时还应先注册 `/programs/detail/:id`、`/programs/recommendations` 等字面量路径，再注册 `/programs/:slug`。
 
 ### 9.2 管理端 API
 

@@ -1,0 +1,96 @@
+{
+  "schemaVersion": 1,
+  "blocking": [],
+  "review": [
+    {
+      "rowId": "utm-phd-fee-only-doctor-of-software-engineering",
+      "sourceId": "fees-pg-inter",
+      "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+      "level": "phd",
+      "faculty": "Faculty of Artificial Intelligence",
+      "nameEnOfficial": "Doctor of Software Engineering",
+      "status": "needs-review",
+      "reason": "UTM fee page publishes a named doctoral fee row, but the current collected international doctoral programme directory did not expose a matching programme row."
+    }
+  ],
+  "resolved": [
+    {
+      "rowId": "utm-phd-official-row-013",
+      "sourceId": "faculty-chemical-energy-engineering",
+      "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-chemical-energy-engineering/",
+      "level": "phd",
+      "faculty": "Faculty of Chemical and Energy Engineering",
+      "nameEnOfficial": "Doctor of Professional Practice (DPP)",
+      "status": "duplicate-of",
+      "duplicateOf": "UTM-PHD-005",
+      "reason": "UTM lists the same DPP doctoral offering under multiple faculty pages; retained once as a cross-faculty ODL doctorate."
+    },
+    {
+      "rowId": "utm-phd-official-row-017",
+      "sourceId": "faculty-electrical-engineering",
+      "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-electrical-engineering/",
+      "level": "phd",
+      "faculty": "Faculty of Electrical Engineering",
+      "nameEnOfficial": "Doctor of Professional Practice (DPP)",
+      "status": "duplicate-of",
+      "duplicateOf": "UTM-PHD-005",
+      "reason": "UTM lists the same DPP doctoral offering under multiple faculty pages; retained once as a cross-faculty ODL doctorate."
+    },
+    {
+      "rowId": "utm-phd-official-row-019",
+      "sourceId": "faculty-mechanical-engineering",
+      "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-mechanical-engineering/",
+      "level": "phd",
+      "faculty": "Faculty of Mechanical Engineering",
+      "nameEnOfficial": "Doctor of Professional Practice (DPP)",
+      "status": "duplicate-of",
+      "duplicateOf": "UTM-PHD-005",
+      "reason": "UTM lists the same DPP doctoral offering under multiple faculty pages; retained once as a cross-faculty ODL doctorate."
+    },
+    {
+      "rowId": "utm-phd-official-row-044",
+      "sourceId": "faculty-built-environment-surveying",
+      "sourceUrl": "https://admission.utm.my/int-faculty-of-built-environment-surveying/",
+      "level": "phd",
+      "faculty": "Faculty of Built Environment and Surveying",
+      "nameEnOfficial": "Doctor of Professional Practice (DPP)",
+      "status": "duplicate-of",
+      "duplicateOf": "UTM-PHD-005",
+      "reason": "UTM lists the same DPP doctoral offering under multiple faculty pages; retained once as a cross-faculty ODL doctorate."
+    },
+    {
+      "rowId": "utm-phd-official-row-048",
+      "sourceId": "faculty-computing",
+      "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-computing/",
+      "level": "phd",
+      "faculty": "Faculty of Computing",
+      "nameEnOfficial": "Doctor of Professional Practice (DPP)",
+      "status": "duplicate-of",
+      "duplicateOf": "UTM-PHD-005",
+      "reason": "UTM lists the same DPP doctoral offering under multiple faculty pages; retained once as a cross-faculty ODL doctorate."
+    },
+    {
+      "rowId": "utm-phd-official-row-059",
+      "sourceId": "faculty-artificial-intelligence",
+      "sourceUrl": "https://admission.utm.my/int-razak-faculty-of-technology-informatics/",
+      "level": "phd",
+      "faculty": "Faculty of Artificial Intelligence",
+      "nameEnOfficial": "Doctor of Professional Practice (DPP)",
+      "status": "duplicate-of",
+      "duplicateOf": "UTM-PHD-005",
+      "reason": "UTM lists the same DPP doctoral offering under multiple faculty pages; retained once as a cross-faculty ODL doctorate."
+    },
+    {
+      "rowId": "utm-phd-official-row-062",
+      "sourceId": "faculty-mjiit",
+      "sourceUrl": "https://admission.utm.my/int-malaysia-japan-international-institute-of-technology/",
+      "level": "phd",
+      "faculty": "Malaysia-Japan International Institute of Technology",
+      "nameEnOfficial": "Doctor of Professional Practice (DPP)",
+      "status": "duplicate-of",
+      "duplicateOf": "UTM-PHD-005",
+      "reason": "UTM lists the same DPP doctoral offering under multiple faculty pages; retained once as a cross-faculty ODL doctorate."
+    }
+  ],
+  "transport": []
+}

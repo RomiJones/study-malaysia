@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 1,
+  "surfaces": [
+    {
+      "surface": "institution profile",
+      "fields": {
+        "officialName": {
+          "state": "ready",
+          "sourceUrl": "https://sunwayuniversity.edu.my/"
+        },
+        "officialWebsite": {
+          "state": "ready",
+          "sourceUrl": "https://sunwayuniversity.edu.my/"
+        },
+        "admissionsLinks": {
+          "state": "ready",
+          "sourceUrl": "https://sunwayuniversity.edu.my/apply"
+        }
+      }
+    },
+    {
+      "surface": "catalogue tabs and counts",
+      "fields": {
+        "bachelorCount": {
+          "state": "ready",
+          "note": "03_level_manifest.json"
+        },
+        "masterCount": {
+          "state": "ready",
+          "note": "03_level_manifest.json"
+        },
+        "phdCount": {
+          "state": "ready",
+          "note": "03_level_manifest.json"
+        },
+        "publicFilterRule": {
+          "state": "ready",
+          "reason": "Candidate rows are ready for controlled review import; database import still writes non-public review-only rows until publication is separately authorized."
+        }
+      }
+    },
+    {
+      "surface": "program-list rows",
+      "fields": {
+        "programmeName": {
+          "state": "ready",
+          "note": "08_candidate_dataset.json"
+        },
+        "duration": {
+          "state": "ready",
+          "note": "07_field_coverage_matrix.json"
+        },
+        "tuition": {
+          "state": "ready",
+          "reason": "Official USD values are copied as displayed; RM-equivalent payment notes are retained for detail pages. Official-unpublished fee rows show controlled unpublished labels."
+        },
+        "ieltsSummary": {
+          "state": "ready",
+          "note": "07_field_coverage_matrix.json"
+        },
+        "intakeMonths": {
+          "state": "ready",
+          "note": "07_field_coverage_matrix.json"
+        }
+      }
+    },
+    {
+      "surface": "program-detail pages",
+      "fields": {
+        "overview": {
+          "state": "ready",
+          "note": "08_candidate_dataset.json"
+        },
+        "requirements": {
+          "state": "ready",
+          "note": "07_field_coverage_matrix.json"
+        },
+        "languageRoutes": {
+          "state": "ready",
+          "note": "07_field_coverage_matrix.json"
+        },
+        "courseSetting": {
+          "state": "ready",
+          "note": "08_candidate_dataset.json"
+        },
+        "careers": {
+          "state": "ready",
+          "note": "08_candidate_dataset.json"
+        }
+      }
+    },
+    {
+      "surface": "leakage and public filter",
+      "fields": {
+        "needsReviewLeakage": {
+          "state": "ready",
+          "note": "Review-only database import forces isPublished=false/publicDisplayStatus=needs-review; public API leakage must stay zero."
+        },
+        "publicReadyRows": {
+          "state": "ready",
+          "note": "Candidate ready rows=97 for controlled import review; publication remains separately gated."
+        }
+      }
+    }
+  ]
+}

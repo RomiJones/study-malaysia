@@ -25,7 +25,10 @@ import { useAuthStore } from "@/stores/auth";
 const auth = useAuthStore();
 const router = useRouter();
 const route = useRoute();
-const form = reactive({ username: "", password: "" });
+const form = reactive({
+  username: import.meta.env.DEV ? import.meta.env.VITE_ADMIN_TEST_USERNAME || "" : "",
+  password: import.meta.env.DEV ? import.meta.env.VITE_ADMIN_TEST_PASSWORD || "" : ""
+});
 
 const submit = async () => {
   try {

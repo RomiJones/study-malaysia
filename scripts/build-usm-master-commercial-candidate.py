@@ -55,6 +55,38 @@ PROGRAMME_DURATION_OVERRIDES = {
     "USM-PG-ARTICLE-351-57741454": "Full-time: Minimum 4 semesters / Maximum 8 semesters Part-time: Minimum 6 semesters / Maximum 10 semesters",
 }
 
+PROGRAMME_INTAKE_OVERRIDES = {
+    "USM-PG-ARTICLE-342-733AE3B5": "October",
+}
+
+PROGRAMME_ACADEMIC_REQUIREMENT_OVERRIDES = {
+    "USM-PG-ARTICLE-342-733AE3B5": (
+        "Applicants should possess the following: A. Bachelor's degree in related field: "
+        "1. CGPA of at least 2.75/4.00; or 2. CGPA between 2.50-2.74 with one of the following: "
+        "research experience for at least one year; work experience in a related field for at least one year; "
+        "at least one academic publication in the relevant field; Grade B for major/elective courses; "
+        "or Grade B+ for final year project. 3. CGPA between 2.00-2.49 (Bachelor's Degree with Honours) "
+        "with one of the following: research experience for at least five years; work experience in a related "
+        "field for at least five years and at least one academic publication in the relevant field; Grade B "
+        "for major/elective courses; or Grade B+ for final year project. B. Experienced in psychology and "
+        "counselling, especially guidance activities and helping processes. Applicants will be interviewed "
+        "before acceptance."
+    ),
+}
+
+PROGRAMME_LANGUAGE_REQUIREMENT_OVERRIDES = {
+    "USM-PG-ARTICLE-342-733AE3B5": (
+        "(Applicable for International Applicants Only) A minimum score of 40 for TOEFL (Internet-based); "
+        "or a minimum of Band 7.5 for TOEFL Essentials (Online); or a minimum of Band 5 for IELTS; "
+        "or a minimum score of 47 for PTE; or a minimum score of 154 for Cambridge English (CAE/CPE); "
+        "or a minimum score of 154 for Linguaskill Online; or a minimum of Band 107 for CIEP Level (ELS); "
+        "or a minimum of Band 3.5 for MUET. Exemption can be given if English is the candidate's mother "
+        "tongue or national language, or the candidate graduated from an institution of higher learning "
+        "in which the medium of instruction is English. Candidates are required to provide any of the above "
+        "English result upon application. Incomplete application will be rejected."
+    ),
+}
+
 # Officially reviewed international eligibility decisions that are not
 # recoverable from fee availability alone.
 INTERNATIONAL_ELIGIBILITY_OVERRIDES = {
@@ -328,6 +360,248 @@ def clean_duration(value: str | None) -> str:
     return clean(value).split("Postgraduate Institute of Postgraduate Studies", 1)[0].strip()
 
 
+def clean_markdown_line(value: str) -> str:
+    value = re.sub(r"!\[[^\]]*]\([^)]+\)", "", value)
+    value = re.sub(r"\[([^\]]+)]\([^)]+\)", r"\1", value)
+    value = re.sub(r"^\s*(?:[*+-]|\d+[.)])\s*", "", value)
+    value = re.sub(r"^\s{4,}", "", value)
+    value = re.sub(r"^#+\s*", "", value)
+    value = re.sub(r"^\*+\s*|\s*\*+$", "", value)
+    value = value.replace("**", "")
+    return clean(value)
+
+
+def detail_markdown_path(detail_cache: Path | None, code: str) -> Path | None:
+    if not detail_cache:
+        return None
+    article = re.search(r"USM-PG-ARTICLE-(\d+)", code)
+    if not article:
+        return None
+    path = detail_cache / f"usm-pg-article-{article.group(1)}.md"
+    return path if path.exists() else None
+
+
+def detail_html_path(html_cache: Path | None, code: str) -> Path | None:
+    if not html_cache:
+        return None
+    article = re.search(r"USM-PG-ARTICLE-(\d+)", code)
+    if not article:
+        return None
+    path = html_cache / f"usm-pg-article-{article.group(1)}.html"
+    return path if path.exists() and path.stat().st_size > 1000 else None
+
+
+def strip_html(value: str) -> str:
+    import html
+
+    value = re.sub(r"<script.*?</script>|<style.*?</style>", " ", value, flags=re.I | re.S)
+    value = re.sub(r"<[^>]+>", " ", value)
+    return clean(html.unescape(value))
+
+
+def programme_sections_from_html(html_text: str) -> dict[str, str]:
+    from bs4 import BeautifulSoup
+
+    target_headings = {
+        "OVERVIEW",
+        "ADMISSION REQUIREMENTS",
+        "LANGUAGE REQUIREMENTS",
+        "DURATION",
+        "SEMESTER INTAKE",
+    }
+    soup = BeautifulSoup(html_text, "html.parser")
+    sections: dict[str, str] = {}
+    for heading in soup.find_all(re.compile(r"^h[1-6]$")):
+        title = clean(heading.get_text(" ", strip=True)).upper()
+        if title not in target_headings:
+            continue
+        chunks: list[str] = []
+        for sibling in heading.find_next_siblings():
+            if sibling.name and re.fullmatch(r"h[1-6]", sibling.name, re.I):
+                break
+            text = clean(sibling.get_text(" ", strip=True))
+            if text:
+                chunks.append(text)
+        sections[title] = clean(" ".join(chunks))
+    return sections
+
+
+def semester_intake_from_html(html_text: str) -> str:
+    months = [
+        "January",
+        "February",
+        "March",
+        "April",
+        "May",
+        "June",
+        "July",
+        "August",
+        "September",
+        "October",
+        "November",
+        "December",
+    ]
+    section = re.search(
+        r"<h3[^>]*>\s*SEMESTER\s+INTAKE\s*</h3>(.*?)(?=<h3[^>]*>|</li>\s*<li|<footer|$)",
+        html_text,
+        re.I | re.S,
+    )
+    if not section:
+        return ""
+    text = strip_html(section.group(1))
+    found = []
+    for month in months:
+        if re.search(rf"\b{month}\b", text, re.I):
+            found.append(month)
+    if not found:
+        return ""
+    if len(found) > 1 or re.search(r"&|\band\b|/", text, re.I):
+        return " & ".join(found)
+    return found[0]
+
+
+def overview_markdown(markdown: str) -> str:
+    body = markdown.split("Markdown Content:", 1)[-1]
+    overview = re.search(
+        r"###\s+OVERVIEW\s*(.*?)(?=\n\s*\*\s+###\s+(?:ADMISSION|LANGUAGE|DURATION|SEMESTER|FEES)|\n\s*###\s+(?:ADMISSION|LANGUAGE|DURATION|SEMESTER|FEES)|\n#\s+Postgraduate|\Z)",
+        body,
+        re.I | re.S,
+    )
+    if overview:
+        return overview.group(1)
+    # Some public-reader snapshots contain only the programme body. Keep it,
+    # but stop before footer material when present.
+    return re.split(r"\n#\s+Postgraduate|\n#\s+Disclaimer|\n\s*Last Update:", body, 1, flags=re.I)[0]
+
+
+def programme_content_from_markdown(markdown: str) -> dict:
+    overview = overview_markdown(markdown)
+    content = {
+        "status": "official-programme-detail-markdown",
+        "overviewText": "",
+        "curriculumStructure": [],
+        "courses": [],
+        "specializations": [],
+        "researchAreas": [],
+        "internship": [],
+        "project": [],
+        "expertise": [],
+    }
+    current = "overview"
+    overview_lines: list[str] = []
+    paragraph_buffer: list[str] = []
+
+    def flush_paragraph() -> None:
+        nonlocal paragraph_buffer
+        if not paragraph_buffer:
+            return
+        text = clean(" ".join(paragraph_buffer))
+        paragraph_buffer = []
+        if not text:
+            return
+        if current == "overview":
+            overview_lines.append(text)
+        elif current in {"internship", "project"}:
+            content[current].append(text)
+
+    for raw_line in overview.splitlines():
+        stripped = raw_line.strip()
+        if not stripped:
+            flush_paragraph()
+            continue
+        line = clean_markdown_line(stripped)
+        if not line:
+            continue
+        if re.search(r"^(?:Skip to main content|Postgraduate|Undergraduate|Foundation)$", line, re.I):
+            continue
+        normalized = line.rstrip(":").lower()
+        is_list_item = bool(re.match(r"^\s*(?:[*+-]|\d+[.)])\s+", raw_line))
+        section = None
+        if current == "ignore":
+            continue
+        if re.search(r"^contact person", normalized):
+            flush_paragraph()
+            current = "ignore"
+            continue
+        if (
+            current == "overview"
+            and not is_list_item
+            and re.search(r"\b(?:areas?|fields?)\s+of\s+[\w\s-]*speciali[sz]ation\b.*\boffered\b", line, re.I)
+        ):
+            overview_lines.append(line)
+            current = "specializations"
+            continue
+        if not is_list_item:
+            if re.search(r"^(?:research\s+(?:thrust\s+)?areas?|fields?\s+of\s+(?:study|research))$", normalized):
+                section = "researchAreas"
+            elif re.search(r"^(?:speciali[sz]ation(?: courses?)?|areas?\s+of\s+speciali[sz]ation|major|track)(?:\s*\([^)]*\))?$", normalized):
+                section = "specializations"
+            elif re.search(r"^(?:curriculum\s+structure|course\s+structure|credit\s+requirement)$", normalized):
+                section = "curriculumStructure"
+            elif (
+                re.search(r"^(?:(?:taught|core|elective)\s+)?courses?$", normalized)
+                and not re.search(r"\d+\s*units?", normalized)
+            ):
+                section = "courses"
+            elif re.search(r"^(?:internship|clinical practicum|industrial training)$", normalized):
+                section = "internship"
+            elif re.search(r"^(?:project|research project|dissertation|thesis)$", normalized):
+                section = "project"
+            elif re.search(r"^expertise available", normalized):
+                section = "expertise"
+        if section:
+            flush_paragraph()
+            current = section
+            if section not in {"specializations", "courses", "curriculumStructure", "researchAreas"} and (
+                line != stripped or not re.search(r":$", stripped)
+            ):
+                remainder = re.sub(
+                    r"^(?:research\s+(?:thrust\s+)?areas?|fields?\s+of\s+(?:study|research)|speciali[sz]ation courses?|areas?\s+of\s+speciali[sz]ation|curriculum\s+structure|course\s+structure|(?:taught\s+)?courses?|core courses?|elective courses?|internship|practicum|project|research project|dissertation|thesis|expertise available in the following school)\s*:?",
+                    "",
+                    line,
+                    flags=re.I,
+                ).strip()
+                if remainder:
+                    content[current].append(remainder)
+            continue
+        if is_list_item and current != "overview":
+            flush_paragraph()
+            content[current].append(line)
+            continue
+        if current in {"internship", "project"}:
+            paragraph_buffer.append(line)
+            continue
+        if current == "expertise":
+            content["expertise"].append(line)
+            continue
+        if current != "overview" and len(line) < 140:
+            content[current].append(line)
+            continue
+        overview_lines.append(line)
+
+    flush_paragraph()
+    content["overviewText"] = clean(" ".join(overview_lines))
+    for key, value in list(content.items()):
+        if isinstance(value, list):
+            deduped = []
+            seen = set()
+            for item in value:
+                item = clean(item)
+                if re.search(r"^(?:contact person|associate professor|professor|dr\.?)\b", item, re.I):
+                    continue
+                if re.search(r"@|^\+?\d[\d\s-]{5,}$|^https?://", item):
+                    continue
+                if key in {"specializations", "researchAreas"} and len(item) > 160:
+                    overview_lines.append(item)
+                    continue
+                if not item or item.lower() in seen:
+                    continue
+                seen.add(item.lower())
+                deduped.append(item)
+            content[key] = deduped
+    return content
+
+
 def has_numeric_duration(value: str) -> bool:
     return bool(re.search(r"\d+(?:\.\d+)?\s*(?:years?|months?|semesters?)", value, re.I))
 
@@ -570,6 +844,8 @@ def main() -> None:
     parser.add_argument("--source", required=True, type=Path)
     parser.add_argument("--application-guide", required=True, type=Path)
     parser.add_argument("--coursework-mixed-html", required=True, type=Path)
+    parser.add_argument("--detail-cache", type=Path, default=Path("tmp/usm-master-details"))
+    parser.add_argument("--current-html-cache", type=Path, default=Path("tmp/usm-master-current-html"))
     parser.add_argument("--output", required=True, type=Path)
     args = parser.parse_args()
 
@@ -698,6 +974,19 @@ def main() -> None:
     exceptions = []
     for record in current_records:
         detail = details[normalized_official_url(record["officialSourceUrl"])]
+        raw_programme_content = {}
+        markdown_path = detail_markdown_path(args.detail_cache, record["detailCode"])
+        if markdown_path:
+            raw_programme_content = programme_content_from_markdown(
+                markdown_path.read_text(encoding="utf-8")
+            )
+        html_path = detail_html_path(args.current_html_cache, record["detailCode"])
+        current_html_intake = ""
+        current_html_sections: dict[str, str] = {}
+        if html_path:
+            html_text = html_path.read_text(encoding="utf-8", errors="ignore")
+            current_html_sections = programme_sections_from_html(html_text)
+            current_html_intake = semester_intake_from_html(html_text)
         attached_rows = list(direct_allocations[record["code"]])
         attached_rows.extend(direct_allocations[record["detailCode"]])
         attached_rows.extend(specialisation_allocations[record["detailCode"]])
@@ -752,24 +1041,51 @@ def main() -> None:
             fee = latest_programme_fee(record["detailCode"], detail, fee)
         fee_status_counts[fee["status"]] += 1
 
-        academic = clean(detail.get("officialAcademicRequirement"))
-        language = clean(detail.get("officialLanguageRequirement"))
-        duration = PROGRAMME_DURATION_OVERRIDES.get(record["code"]) or clean_duration(
-            detail.get("durationOfficial")
+        html_academic = clean(current_html_sections.get("ADMISSION REQUIREMENTS"))
+        html_language = clean(current_html_sections.get("LANGUAGE REQUIREMENTS"))
+        html_duration = clean_duration(current_html_sections.get("DURATION"))
+        academic = (
+            PROGRAMME_ACADEMIC_REQUIREMENT_OVERRIDES.get(record["code"])
+            or html_academic
+            or clean(detail.get("officialAcademicRequirement"))
+        )
+        language = (
+            PROGRAMME_LANGUAGE_REQUIREMENT_OVERRIDES.get(record["code"])
+            or html_language
+            or clean(detail.get("officialLanguageRequirement"))
+        )
+        duration = (
+            PROGRAMME_DURATION_OVERRIDES.get(record["code"])
+            or html_duration
+            or clean_duration(detail.get("durationOfficial"))
         )
         if duration and not has_numeric_duration(duration):
             duration = ""
-        intake = clean(detail.get("officialIntake"))
+        intake = PROGRAMME_INTAKE_OVERRIDES.get(record["code"]) or current_html_intake or clean(
+            detail.get("officialIntake")
+        )
         if not academic:
             academic = source["generalRequirements"]["officialAcademicRequirement"]
             academic_status = "official-general-rule"
         else:
-            academic_status = "official-programme-specific"
+            academic_status = (
+                "official-programme-page-refreshed-2026-06-12"
+                if record["code"] in PROGRAMME_ACADEMIC_REQUIREMENT_OVERRIDES
+                else "official-programme-page-refreshed-2026-06-16"
+                if html_academic
+                else "official-programme-specific"
+            )
         if not language:
             language = source["generalRequirements"]["officialLanguageRequirement"]
             language_status = "official-general-rule"
         else:
-            language_status = "official-programme-specific"
+            language_status = (
+                "official-programme-page-refreshed-2026-06-12"
+                if record["code"] in PROGRAMME_LANGUAGE_REQUIREMENT_OVERRIDES
+                else "official-programme-page-refreshed-2026-06-16"
+                if html_language
+                else "official-programme-specific"
+            )
         if not duration and mode == "research":
             duration = "Full-time: 2-6 semesters; Part-time: 4-12 semesters"
             duration_status = "official-research-mode-rule"
@@ -777,6 +1093,8 @@ def main() -> None:
             duration_status = (
                 "official-programme-page-refreshed-2026-06-12"
                 if record["code"] in PROGRAMME_DURATION_OVERRIDES
+                else "official-programme-page-refreshed-2026-06-16"
+                if html_duration
                 else "official-programme-specific"
             )
         else:
@@ -786,7 +1104,13 @@ def main() -> None:
             intake = "Semester I: September-February; Semester II: March-August"
             intake_status = "official-research-semester-rule"
         elif intake:
-            intake_status = "official-programme-specific"
+            intake_status = (
+                "official-programme-page-refreshed-2026-06-12"
+                if record["code"] in PROGRAMME_INTAKE_OVERRIDES
+                else "official-programme-page-refreshed-2026-06-16"
+                if current_html_intake
+                else "official-programme-specific"
+            )
         else:
             intake = "Programme-specific intake not published on the public detail page"
             intake_status = "official-unpublished"
@@ -841,13 +1165,21 @@ def main() -> None:
                     else {}
                 ),
                 "identityStatus": "verified-official-public-directory-entry",
-                "overviewOfficial": detail.get("overviewExcerpt") or "",
+                "overviewOfficial": (
+                    detail.get("overviewExcerpt")
+                    or raw_programme_content.get("overviewText")
+                    or ""
+                ),
+                "programmeContent": {
+                    **raw_programme_content,
+                    "sourceLocalPath": str(markdown_path) if markdown_path else None,
+                },
                 "academicRequirement": {
                     "textEnOfficial": academic,
                     "status": academic_status,
                     "officialSourceUrl": (
                         detail["officialSourceUrl"]
-                        if academic_status == "official-programme-specific"
+                        if academic_status.startswith("official-programme")
                         else source["generalRequirements"]["officialSourceUrl"]
                     ),
                 },
@@ -856,7 +1188,7 @@ def main() -> None:
                     "status": language_status,
                     "officialSourceUrl": (
                         detail["officialSourceUrl"]
-                        if language_status == "official-programme-specific"
+                        if language_status.startswith("official-programme")
                         else source["generalRequirements"]["officialSourceUrl"]
                     ),
                 },

@@ -1,0 +1,1489 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-06-21T00:28:54.298+08:00",
+  "status": "review-required",
+  "institution": "UCSI University",
+  "authorization": "collect",
+  "officialDomains": [
+    "ucsiuniversity.edu.my"
+  ],
+  "academicSession": "current official UCSI website as of 2026-06-20",
+  "counts": {
+    "canonicalProgrammes": 118,
+    "ready": 0,
+    "needsReview": 118,
+    "byLevel": {
+      "phd": 18,
+      "master": 40,
+      "bachelor": 60
+    }
+  },
+  "gates": {
+    "officialIdentityAndSource": {
+      "passed": 118,
+      "review": 0
+    },
+    "duration": {
+      "passed": 118,
+      "review": 0
+    },
+    "intake": {
+      "passed": 118,
+      "review": 0
+    },
+    "academicRequirement": {
+      "passed": 118,
+      "review": 0
+    },
+    "languageRequirement": {
+      "passed": 115,
+      "review": 3
+    },
+    "courseSetting": {
+      "passed": 118,
+      "review": 0
+    },
+    "careerDirections": {
+      "passed": 113,
+      "review": 5
+    },
+    "fee": {
+      "passed": 0,
+      "review": 118
+    },
+    "internationalEligibility": {
+      "passed": 0,
+      "review": 118
+    },
+    "studentFacingLocalization": {
+      "passed": 0,
+      "review": 118
+    }
+  },
+  "records": [
+    {
+      "code": "UCSI-PHD-001",
+      "level": "phd",
+      "nameEnOfficial": "Doctor Of Philosophy (Business And Management)",
+      "ready": false,
+      "reviewReasons": [
+        "publicDisplayStatus is needs-review",
+        "Exact international full-duration tuition is not closed",
+        "Per-programme international availability is not confirmed",
+        "Student-facing Chinese localization is not finalized"
+      ]
+    },
+    {
+      "code": "UCSI-PHD-002",
+      "level": "phd",
+      "nameEnOfficial": "DBA (Doctor Of Business Administration)",
+      "ready": false,
+      "reviewReasons": [
+        "publicDisplayStatus is needs-review",
+        "Exact international full-duration tuition is not closed",
+        "Per-programme international availability is not confirmed",
+        "Student-facing Chinese localization is not finalized"
+      ]
+    },
+    {
+      "code": "UCSI-MASTER-003",
+      "level": "master",
+      "nameEnOfficial": "MBA",
+      "ready": false,
+      "reviewReasons": [
+        "publicDisplayStatus is needs-review",
+        "Exact international full-duration tuition is not closed",
+        "Per-programme international availability is not confirmed",
+        "Career directions need review",
+        "Student-facing Chinese localization is not finalized"
+      ]
+    },
+    {
+      "code": "UCSI-MASTER-004",
+      "level": "master",
+      "nameEnOfficial": "MBA (ODL Mode)",
+      "ready": false,
+      "reviewReasons": [
+        "publicDisplayStatus is needs-review",
+        "Exact international full-duration tuition is not closed",
+        "Per-programme international availability is not confirmed",
+        "Career directions need review",
+        "Student-facing Chinese localization is not finalized"
+      ]
+    },
+    {
+      "code": "UCSI-MASTER-005",
+      "level": "master",
+      "nameEnOfficial": "Master Of Philosophy (Business And Management)",
+      "ready": false,
+      "reviewReasons": [
+        "publicDisplayStatus is needs-review",
+        "Exact international full-duration tuition is not closed",
+        "Per-programme international availability is not confirmed",
+        "Student-facing Chinese localization is not finalized"
+      ]
+    },
+    {
+      "code": "UCSI-MASTER-006",
+      "level": "master",
+      "nameEnOfficial": "MBA (Healthcare And Hospital Management)",
+      "ready": false,
+      "reviewReasons": [
+        "publicDisplayStatus is needs-review",
+        "Exact international full-duration tuition is not closed",
+        "Per-programme international availability is not confirmed",
+        "Student-facing Chinese localization is not finalized"
+      ]
+    },
+    {
+      "code": "UCSI-PHD-007",
+      "level": "phd",
+      "nameEnOfficial": "Doctor Of Philosophy (Science)",
+      "ready": false,
+      "reviewReasons": [
+        "publicDisplayStatus is needs-review",
+        "Exact international full-duration tuition is not closed",
+        "Per-programme international availability is not confirmed",
+        "Student-facing Chinese localization is not finalized"
+      ]
+    },
+    {
+      "code": "UCSI-MASTER-008",
+      "level": "master",
+      "nameEnOfficial": "Master Of Science In Applied Sciences",
+      "ready": false,
+      "reviewReasons": [
+        "publicDisplayStatus is needs-review",
+        "Exact international full-duration tuition is not closed",
+        "Per-programme international availability is not confirmed",
+        "Student-facing Chinese localization is not finalized"
+      ]
+    },
+    {
+      "code": "UCSI-MASTER-009",
+      "level": "master",
+      "nameEnOfficial": "Master Of Science Biotechnology",
+      "ready": false,
+      "reviewReasons": [
+        "publicDisplayStatus is needs-review",
+        "Exact international full-duration tuition is not closed",
+        "Per-programme international availability is not confirmed",
+        "Student-facing Chinese localization is not finalized"
+      ]
+    },
+    {
+      "code": "UCSI-MASTER-010",
+      "level": "master",
+      "nameEnOfficial": "Master Of Science In Biotechnology With Business Management",
+      "ready": false,
+      "reviewReasons": [
+        "publicDisplayStatus is needs-review",
+        "Exact international full-duration tuition is not closed",
+        "Per-programme international availability is not confirmed",
+        "Student-facing Chinese localization is not finalized"
+      ]
+    },
+    {
+      "code": "UCSI-MASTER-011",
+      "level": "master",
+      "nameEnOfficial": "Master Of Science Food Science With Business Management",
+      "ready": false,
+      "reviewReasons": [
+        "publicDisplayStatus is needs-review",
+        "Exact international full-duration tuition is not closed",
+        "Per-programme international availability is not confirmed",
+        "Student-facing Chinese localization is not finalized"
+      ]
+    },
+    {
+      "code": "UCSI-MASTER-012",
+      "level": "master",
+      "nameEnOfficial": "Master Of Science In Nutrition With Management",
+      "ready": false,
+      "reviewReasons": [
+        "publicDisplayStatus is needs-review",
+        "Exact international full-duration tuition is not closed",
+        "Per-programme international availability is not confirmed",
+        "Student-facing Chinese localization is not finalized"
+      ]
+    },
+    {
+      "code": "UCSI-BACHELOR-013",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor Of Science (Honours) Applied Microbiology",
+      "ready": false,
+      "reviewReasons": [
+        "publicDisplayStatus is needs-review",
+        "Exact international full-duration tuition is not closed",
+        "Per-programme international availability is not confirmed",
+        "Student-facing Chinese localization is not finalized"
+      ]
+    },
+    {
+      "code": "UCSI-BACHELOR-014",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor Of Science (Honours) Aquatic Science",
+      "ready": false,
+      "reviewReasons": [
+        "publicDisplayStatus is needs-review",
+        "Exact international full-duration tuition is not closed",
+        "Per-programme international availability is not confirmed",
+        "Student-facing Chinese localization is not finalized"
+      ]
+    },
+    {
+      "code": "UCSI-BACHELOR-015",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor Of Science (Honours) In Biotechnology",
+      "ready": false,
+      "reviewReasons": [
+        "publicDisplayStatus is needs-review",
+        "Exact international full-duration tuition is not closed",
+        "Per-programme international availability is not confirmed",
+        "Student-facing Chinese localization is not finalized"
+      ]
+    },
+    {
+      "code": "UCSI-BACHELOR-016",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor Of Science (Honours) Food Science With Nutrition",
+      "ready": false,
+      "reviewReasons": [
+        "publicDisplayStatus is needs-review",
+        "Exact international full-duration tuition is not closed",
+        "Per-programme international availability is not confirmed",
+        "Student-facing Chinese localization is not finalized"
+      ]
+    },
+    {
+      "code": "UCSI-BACHELOR-017",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor Of Science (Honours) Forensic Science",
+      "ready": false,
+      "reviewReasons": [
+        "publicDisplayStatus is needs-review",
+        "Exact international full-duration tuition is not closed",
+        "Per-programme international availability is not confirmed",
+        "Student-facing Chinese localization is not finalized"
+      ]
+    },
+    {
+      "code": "UCSI-BACHELOR-018",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor Of Science (Honours) Nutrition With Wellness",
+      "ready": false,
+      "reviewReasons": [
+        "publicDisplayStatus is needs-review",
+        "Exact international full-duration tuition is not closed",
+        "Per-programme international availability is not confirmed",
+        "Student-facing Chinese localization is not finalized"
+      ]
+    },
+    {
+      "code": "UCSI-PHD-019",
+      "level": "phd",
+      "nameEnOfficial": "Doctor Of Philosophy (Science) By Prior Publication",
+      "ready": false,
+      "reviewReasons": [
+        "publicDisplayStatus is needs-review",
+        "Exact international full-duration tuition is not closed",
+        "Per-programme international availability is not confirmed",
+        "English language requirement needs review",
+        "Student-facing Chinese localization is not finalized"
+      ]
+    },
+    {
+      "code": "UCSI-MASTER-020",
+      "level": "master",
+      "nameEnOfficial": "Master In Logistics And Supply Chain Management",
+      "ready": false,
+      "reviewReasons": [
+        "publicDisplayStatus is needs-review",
+        "Exact international full-duration tuition is not closed",
+        "Per-programme international availability is not confirmed",
+        "Student-facing Chinese localization is not finalized"
+      ]
+    },
+    {
+      "code": "UCSI-BACHELOR-021",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor Of Arts (Hons) Accounting",
+      "ready": false,
+      "reviewReasons": [
+        "publicDisplayStatus is needs-review",
+        "Exact international full-duration tuition is not closed",
+        "Per-programme international availability is not confirmed",
+        "Student-facing Chinese localization is not finalized"
+      ]
+    },
+    {
+      "code": "UCSI-BACHELOR-022",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor Of Arts (Hons) Accounting And Finance",
+      "ready": false,
+      "reviewReasons": [
+        "publicDisplayStatus is needs-review",
+        "Exact international full-duration tuition is not closed",
+        "Per-programme international availability is not confirmed",
+        "Student-facing Chinese localization is not finalized"
+      ]
+    },
+    {
+      "code": "UCSI-BACHELOR-023",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor Of Arts (Hons) Entrepreneurship",
+      "ready": false,
+      "reviewReasons": [
+        "publicDisplayStatus is needs-review",
+        "Exact international full-duration tuition is not closed",
+        "Per-programme international availability is not confirmed",
+        "Student-facing Chinese localization is not finalized"
+      ]
+    },
+    {
+      "code": "UCSI-BACHELOR-024",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor Of Arts (Hons) In Branding And Advertising",
+      "ready": false,
+      "reviewReasons": [
+        "publicDisplayStatus is needs-review",
+        "Exact international full-duration tuition is not closed",
+        "Per-programme international availability is not confirmed",
+        "Student-facing Chinese localization is not finalized"
+      ]
+    },
+    {
+      "code": "UCSI-BACHELOR-025",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor Of Arts (Hons) In Business Administration",
+      "ready": false,
+      "reviewReasons": [
+        "publicDisplayStatus is needs-review",
+        "Exact international full-duration tuition is not closed",
+        "Per-programme international availability is not confirmed",
+        "Student-facing Chinese localization is not finalized"
+      ]
+    },
+    {
+      "code": "UCSI-BACHELOR-026",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor Of Arts (Hons) In Marketing",
+      "ready": false,
+      "reviewReasons": [
+        "publicDisplayStatus is needs-review",
+        "Exact international full-duration tuition is not closed",
+        "Per-programme international availability is not confirmed",
+        "Student-facing Chinese localization is not finalized"
+      ]
+    },
+    {
+      "code": "UCSI-BACHELOR-027",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor Of Arts (Hons) Logistics Management",
+      "ready": false,
+      "reviewReasons": [
+        "publicDisplayStatus is needs-review",
+        "Exact international full-duration tuition is not closed",
+        "Per-programme international availability is not confirmed",
+        "Student-facing Chinese localization is not finalized"
+      ]
+    },
+    {
+      "code": "UCSI-BACHELOR-028",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor Of Arts (Honours) Supply Chain Operations Management",
+      "ready": false,
+      "reviewReasons": [
+        "publicDisplayStatus is needs-review",
+        "Exact international full-duration tuition is not closed",
+        "Per-programme international availability is not confirmed",
+        "Student-facing Chinese localization is not finalized"
+      ]
+    },
+    {
+      "code": "UCSI-BACHELOR-029",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor In Human Capital Management (Honours)",
+      "ready": false,
+      "reviewReasons": [
+        "publicDisplayStatus is needs-review",
+        "Exact international full-duration tuition is not closed",
+        "Per-programme international availability is not confirmed",
+        "Student-facing Chinese localization is not finalized"
+      ]
+    },
+    {
+      "code": "UCSI-BACHELOR-030",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor Of Business Analytics (Honours)",
+      "ready": false,
+      "reviewReasons": [
+        "publicDisplayStatus is needs-review",
+        "Exact international full-duration tuition is not closed",
+        "Per-programme international availability is not confirmed",
+        "Student-facing Chinese localization is not finalized"
+      ]
+    },
+    {
+      "code": "UCSI-BACHELOR-031",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor Of Financial Economics (Hons)",
+      "ready": false,
+      "reviewReasons": [
+        "publicDisplayStatus is needs-review",
+        "Exact international full-duration tuition is not closed",
+        "Per-programme international availability is not confirmed",
+        "Student-facing Chinese localization is not finalized"
+      ]
+    },
+    {
+      "code": "UCSI-BACHELOR-032",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor Of Financial Technology (Honours)",
+      "ready": false,
+      "reviewReasons": [
+        "publicDisplayStatus is needs-review",
+        "Exact international full-duration tuition is not closed",
+        "Per-programme international availability is not confirmed",
+        "Student-facing Chinese localization is not finalized"
+      ]
+    },
+    {
+      "code": "UCSI-BACHELOR-033",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor Of International And Sustainable Business (Honours)",
+      "ready": false,
+      "reviewReasons": [
+        "publicDisplayStatus is needs-review",
+        "Exact international full-duration tuition is not closed",
+        "Per-programme international availability is not confirmed",
+        "Student-facing Chinese localization is not finalized"
+      ]
+    },
+    {
+      "code": "UCSI-BACHELOR-034",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor Of Science (Honours) Finance And Investment",
+      "ready": false,
+      "reviewReasons": [
+        "publicDisplayStatus is needs-review",
+        "Exact international full-duration tuition is not closed",
+        "Per-programme international availability is not confirmed",
+        "Student-facing Chinese localization is not finalized"
+      ]
+    },
+    {
+      "code": "UCSI-PHD-035",
+      "level": "phd",
+      "nameEnOfficial": "Doctor Of Philosophy In Architecture",
+      "ready": false,
+      "reviewReasons": [
+        "publicDisplayStatus is needs-review",
+        "Exact international full-duration tuition is not closed",
+        "Per-programme international availability is not confirmed",
+        "Student-facing Chinese localization is not finalized"
+      ]
+    },
+    {
+      "code": "UCSI-PHD-036",
+      "level": "phd",
+      "nameEnOfficial": "Doctor Of Philosophy (Engineering)",
+      "ready": false,
+      "reviewReasons": [
+        "publicDisplayStatus is needs-review",
+        "Exact international full-duration tuition is not closed",
+        "Per-programme international availability is not confirmed",
+        "Student-facing Chinese localization is not finalized"
+      ]
+    },
+    {
+      "code": "UCSI-PHD-037",
+      "level": "phd",
+      "nameEnOfficial": "Doctor Of Philosophy (Engineering) By Prior Publication",
+      "ready": false,
+      "reviewReasons": [
+        "publicDisplayStatus is needs-review",
+        "Exact international full-duration tuition is not closed",
+        "Per-programme international availability is not confirmed",
+        "Student-facing Chinese localization is not finalized"
+      ]
+    },
+    {
+      "code": "UCSI-PHD-038",
+      "level": "phd",
+      "nameEnOfficial": "Industrial PhD In Engineering",
+      "ready": false,
+      "reviewReasons": [
+        "publicDisplayStatus is needs-review",
+        "Exact international full-duration tuition is not closed",
+        "Per-programme international availability is not confirmed",
+        "Student-facing Chinese localization is not finalized"
+      ]
+    },
+    {
+      "code": "UCSI-MASTER-039",
+      "level": "master",
+      "nameEnOfficial": "Master In Engineering (Smart Engineering Management)",
+      "ready": false,
+      "reviewReasons": [
+        "publicDisplayStatus is needs-review",
+        "Exact international full-duration tuition is not closed",
+        "Per-programme international availability is not confirmed",
+        "Student-facing Chinese localization is not finalized"
+      ]
+    },
+    {
+      "code": "UCSI-MASTER-040",
+      "level": "master",
+      "nameEnOfficial": "Master Of Architecture",
+      "ready": false,
+      "reviewReasons": [
+        "publicDisplayStatus is needs-review",
+        "Exact international full-duration tuition is not closed",
+        "Per-programme international availability is not confirmed",
+        "Student-facing Chinese localization is not finalized"
+      ]
+    },
+    {
+      "code": "UCSI-MASTER-041",
+      "level": "master",
+      "nameEnOfficial": "Master Of Petroleum Engineering",
+      "ready": false,
+      "reviewReasons": [
+        "publicDisplayStatus is needs-review",
+        "Exact international full-duration tuition is not closed",
+        "Per-programme international availability is not confirmed",
+        "Student-facing Chinese localization is not finalized"
+      ]
+    },
+    {
+      "code": "UCSI-MASTER-042",
+      "level": "master",
+      "nameEnOfficial": "Master Of Philosophy In Built Environment",
+      "ready": false,
+      "reviewReasons": [
+        "publicDisplayStatus is needs-review",
+        "Exact international full-duration tuition is not closed",
+        "Per-programme international availability is not confirmed",
+        "Student-facing Chinese localization is not finalized"
+      ]
+    },
+    {
+      "code": "UCSI-MASTER-043",
+      "level": "master",
+      "nameEnOfficial": "Master Of Philosophy In Engineering",
+      "ready": false,
+      "reviewReasons": [
+        "publicDisplayStatus is needs-review",
+        "Exact international full-duration tuition is not closed",
+        "Per-programme international availability is not confirmed",
+        "Student-facing Chinese localization is not finalized"
+      ]
+    },
+    {
+      "code": "UCSI-BACHELOR-044",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor Of Arts (Hons) In Interior Architecture",
+      "ready": false,
+      "reviewReasons": [
+        "publicDisplayStatus is needs-review",
+        "Exact international full-duration tuition is not closed",
+        "Per-programme international availability is not confirmed",
+        "Student-facing Chinese localization is not finalized"
+      ]
+    },
+    {
+      "code": "UCSI-BACHELOR-045",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor Of Chemical Engineering With Honours",
+      "ready": false,
+      "reviewReasons": [
+        "publicDisplayStatus is needs-review",
+        "Exact international full-duration tuition is not closed",
+        "Per-programme international availability is not confirmed",
+        "Student-facing Chinese localization is not finalized"
+      ]
+    },
+    {
+      "code": "UCSI-BACHELOR-046",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor Of Civil Engineering With Honours",
+      "ready": false,
+      "reviewReasons": [
+        "publicDisplayStatus is needs-review",
+        "Exact international full-duration tuition is not closed",
+        "Per-programme international availability is not confirmed",
+        "Student-facing Chinese localization is not finalized"
+      ]
+    },
+    {
+      "code": "UCSI-BACHELOR-047",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor Of Computer Engineering (Artificial Intelligence) With Honours",
+      "ready": false,
+      "reviewReasons": [
+        "publicDisplayStatus is needs-review",
+        "Exact international full-duration tuition is not closed",
+        "Per-programme international availability is not confirmed",
+        "Student-facing Chinese localization is not finalized"
+      ]
+    },
+    {
+      "code": "UCSI-BACHELOR-048",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor Of Digital Mechanical Technology With Honours",
+      "ready": false,
+      "reviewReasons": [
+        "publicDisplayStatus is needs-review",
+        "Exact international full-duration tuition is not closed",
+        "Per-programme international availability is not confirmed",
+        "Student-facing Chinese localization is not finalized"
+      ]
+    },
+    {
+      "code": "UCSI-BACHELOR-049",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor Of Electrical And Electronics Engineering With Honours",
+      "ready": false,
+      "reviewReasons": [
+        "publicDisplayStatus is needs-review",
+        "Exact international full-duration tuition is not closed",
+        "Per-programme international availability is not confirmed",
+        "Student-facing Chinese localization is not finalized"
+      ]
+    },
+    {
+      "code": "UCSI-BACHELOR-050",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor Of Energy Engineering With Honours",
+      "ready": false,
+      "reviewReasons": [
+        "publicDisplayStatus is needs-review",
+        "Exact international full-duration tuition is not closed",
+        "Per-programme international availability is not confirmed",
+        "Student-facing Chinese localization is not finalized"
+      ]
+    },
+    {
+      "code": "UCSI-BACHELOR-051",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor Of Mechanical Engineering With Honours",
+      "ready": false,
+      "reviewReasons": [
+        "publicDisplayStatus is needs-review",
+        "Exact international full-duration tuition is not closed",
+        "Per-programme international availability is not confirmed",
+        "Student-facing Chinese localization is not finalized"
+      ]
+    },
+    {
+      "code": "UCSI-BACHELOR-052",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor Of Mechatronics Engineering With Honours",
+      "ready": false,
+      "reviewReasons": [
+        "publicDisplayStatus is needs-review",
+        "Exact international full-duration tuition is not closed",
+        "Per-programme international availability is not confirmed",
+        "English language requirement needs review",
+        "Student-facing Chinese localization is not finalized"
+      ]
+    },
+    {
+      "code": "UCSI-BACHELOR-053",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor Of Microelectronic Technology With Honours",
+      "ready": false,
+      "reviewReasons": [
+        "publicDisplayStatus is needs-review",
+        "Exact international full-duration tuition is not closed",
+        "Per-programme international availability is not confirmed",
+        "Student-facing Chinese localization is not finalized"
+      ]
+    },
+    {
+      "code": "UCSI-BACHELOR-054",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor Of Petroleum Engineering With Honours",
+      "ready": false,
+      "reviewReasons": [
+        "publicDisplayStatus is needs-review",
+        "Exact international full-duration tuition is not closed",
+        "Per-programme international availability is not confirmed",
+        "Student-facing Chinese localization is not finalized"
+      ]
+    },
+    {
+      "code": "UCSI-BACHELOR-055",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor Of Quantity Surveying (Hons)",
+      "ready": false,
+      "reviewReasons": [
+        "publicDisplayStatus is needs-review",
+        "Exact international full-duration tuition is not closed",
+        "Per-programme international availability is not confirmed",
+        "Student-facing Chinese localization is not finalized"
+      ]
+    },
+    {
+      "code": "UCSI-BACHELOR-056",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor Of Science (Hons) In Architecture",
+      "ready": false,
+      "reviewReasons": [
+        "publicDisplayStatus is needs-review",
+        "Exact international full-duration tuition is not closed",
+        "Per-programme international availability is not confirmed",
+        "Student-facing Chinese localization is not finalized"
+      ]
+    },
+    {
+      "code": "UCSI-MASTER-057",
+      "level": "master",
+      "nameEnOfficial": "Master Of Sustainable Built Environment",
+      "ready": false,
+      "reviewReasons": [
+        "publicDisplayStatus is needs-review",
+        "Exact international full-duration tuition is not closed",
+        "Per-programme international availability is not confirmed",
+        "Student-facing Chinese localization is not finalized"
+      ]
+    },
+    {
+      "code": "UCSI-MASTER-058",
+      "level": "master",
+      "nameEnOfficial": "Master In Engineering (Applied Artificial Intelligence)",
+      "ready": false,
+      "reviewReasons": [
+        "publicDisplayStatus is needs-review",
+        "Exact international full-duration tuition is not closed",
+        "Per-programme international availability is not confirmed",
+        "Student-facing Chinese localization is not finalized"
+      ]
+    },
+    {
+      "code": "UCSI-PHD-059",
+      "level": "phd",
+      "nameEnOfficial": "Doctor Of Philosophy (Hospitality And Tourism)",
+      "ready": false,
+      "reviewReasons": [
+        "publicDisplayStatus is needs-review",
+        "Exact international full-duration tuition is not closed",
+        "Per-programme international availability is not confirmed",
+        "Student-facing Chinese localization is not finalized"
+      ]
+    },
+    {
+      "code": "UCSI-MASTER-060",
+      "level": "master",
+      "nameEnOfficial": "Master In International Hospitality Management",
+      "ready": false,
+      "reviewReasons": [
+        "publicDisplayStatus is needs-review",
+        "Exact international full-duration tuition is not closed",
+        "Per-programme international availability is not confirmed",
+        "Student-facing Chinese localization is not finalized"
+      ]
+    },
+    {
+      "code": "UCSI-MASTER-061",
+      "level": "master",
+      "nameEnOfficial": "Master Of Science In Gastronomy",
+      "ready": false,
+      "reviewReasons": [
+        "publicDisplayStatus is needs-review",
+        "Exact international full-duration tuition is not closed",
+        "Per-programme international availability is not confirmed",
+        "Student-facing Chinese localization is not finalized"
+      ]
+    },
+    {
+      "code": "UCSI-BACHELOR-062",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor Of Arts (Honours) In Culinary Management",
+      "ready": false,
+      "reviewReasons": [
+        "publicDisplayStatus is needs-review",
+        "Exact international full-duration tuition is not closed",
+        "Per-programme international availability is not confirmed",
+        "Student-facing Chinese localization is not finalized"
+      ]
+    },
+    {
+      "code": "UCSI-BACHELOR-063",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor Of Arts (Honours) In Global Sustainable Tourism",
+      "ready": false,
+      "reviewReasons": [
+        "publicDisplayStatus is needs-review",
+        "Exact international full-duration tuition is not closed",
+        "Per-programme international availability is not confirmed",
+        "Student-facing Chinese localization is not finalized"
+      ]
+    },
+    {
+      "code": "UCSI-BACHELOR-064",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor Of Hospitality Administration",
+      "ready": false,
+      "reviewReasons": [
+        "publicDisplayStatus is needs-review",
+        "Exact international full-duration tuition is not closed",
+        "Per-programme international availability is not confirmed",
+        "Student-facing Chinese localization is not finalized"
+      ]
+    },
+    {
+      "code": "UCSI-MASTER-065",
+      "level": "master",
+      "nameEnOfficial": "MSc (Healthy Aging, Medical Aesthetic And Regenerative Medicine)",
+      "ready": false,
+      "reviewReasons": [
+        "publicDisplayStatus is needs-review",
+        "Exact international full-duration tuition is not closed",
+        "Per-programme international availability is not confirmed",
+        "Student-facing Chinese localization is not finalized"
+      ]
+    },
+    {
+      "code": "UCSI-BACHELOR-066",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor Of Optometry (Hons)",
+      "ready": false,
+      "reviewReasons": [
+        "publicDisplayStatus is needs-review",
+        "Exact international full-duration tuition is not closed",
+        "Per-programme international availability is not confirmed",
+        "Student-facing Chinese localization is not finalized"
+      ]
+    },
+    {
+      "code": "UCSI-PHD-067",
+      "level": "phd",
+      "nameEnOfficial": "Doctor Of Philosophy (Pharmaceutical Sciences)",
+      "ready": false,
+      "reviewReasons": [
+        "publicDisplayStatus is needs-review",
+        "Exact international full-duration tuition is not closed",
+        "Per-programme international availability is not confirmed",
+        "Student-facing Chinese localization is not finalized"
+      ]
+    },
+    {
+      "code": "UCSI-MASTER-068",
+      "level": "master",
+      "nameEnOfficial": "Master Of Clinical Pharmacy Practice",
+      "ready": false,
+      "reviewReasons": [
+        "publicDisplayStatus is needs-review",
+        "Exact international full-duration tuition is not closed",
+        "Per-programme international availability is not confirmed",
+        "Student-facing Chinese localization is not finalized"
+      ]
+    },
+    {
+      "code": "UCSI-MASTER-069",
+      "level": "master",
+      "nameEnOfficial": "Master Of Science (Pharmaceutical Sciences)",
+      "ready": false,
+      "reviewReasons": [
+        "publicDisplayStatus is needs-review",
+        "Exact international full-duration tuition is not closed",
+        "Per-programme international availability is not confirmed",
+        "Student-facing Chinese localization is not finalized"
+      ]
+    },
+    {
+      "code": "UCSI-MASTER-070",
+      "level": "master",
+      "nameEnOfficial": "MSc Pharmaceutical Chemistry",
+      "ready": false,
+      "reviewReasons": [
+        "publicDisplayStatus is needs-review",
+        "Exact international full-duration tuition is not closed",
+        "Per-programme international availability is not confirmed",
+        "Student-facing Chinese localization is not finalized"
+      ]
+    },
+    {
+      "code": "UCSI-MASTER-071",
+      "level": "master",
+      "nameEnOfficial": "MSc Pharmaceutical Technology",
+      "ready": false,
+      "reviewReasons": [
+        "publicDisplayStatus is needs-review",
+        "Exact international full-duration tuition is not closed",
+        "Per-programme international availability is not confirmed",
+        "Student-facing Chinese localization is not finalized"
+      ]
+    },
+    {
+      "code": "UCSI-BACHELOR-072",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor In Formulation Science (Honours)",
+      "ready": false,
+      "reviewReasons": [
+        "publicDisplayStatus is needs-review",
+        "Exact international full-duration tuition is not closed",
+        "Per-programme international availability is not confirmed",
+        "Student-facing Chinese localization is not finalized"
+      ]
+    },
+    {
+      "code": "UCSI-BACHELOR-073",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor Of Pharmacy (Honours)",
+      "ready": false,
+      "reviewReasons": [
+        "publicDisplayStatus is needs-review",
+        "Exact international full-duration tuition is not closed",
+        "Per-programme international availability is not confirmed",
+        "English language requirement needs review",
+        "Student-facing Chinese localization is not finalized"
+      ]
+    },
+    {
+      "code": "UCSI-PHD-074",
+      "level": "phd",
+      "nameEnOfficial": "Doctor Of Philosophy (Education)",
+      "ready": false,
+      "reviewReasons": [
+        "publicDisplayStatus is needs-review",
+        "Exact international full-duration tuition is not closed",
+        "Per-programme international availability is not confirmed",
+        "Student-facing Chinese localization is not finalized"
+      ]
+    },
+    {
+      "code": "UCSI-PHD-075",
+      "level": "phd",
+      "nameEnOfficial": "Doctor Of Philosophy In Psychology",
+      "ready": false,
+      "reviewReasons": [
+        "publicDisplayStatus is needs-review",
+        "Exact international full-duration tuition is not closed",
+        "Per-programme international availability is not confirmed",
+        "Student-facing Chinese localization is not finalized"
+      ]
+    },
+    {
+      "code": "UCSI-MASTER-076",
+      "level": "master",
+      "nameEnOfficial": "Master Of Child Psychology",
+      "ready": false,
+      "reviewReasons": [
+        "publicDisplayStatus is needs-review",
+        "Exact international full-duration tuition is not closed",
+        "Per-programme international availability is not confirmed",
+        "Student-facing Chinese localization is not finalized"
+      ]
+    },
+    {
+      "code": "UCSI-MASTER-077",
+      "level": "master",
+      "nameEnOfficial": "Master Of Clinical Psychology",
+      "ready": false,
+      "reviewReasons": [
+        "publicDisplayStatus is needs-review",
+        "Exact international full-duration tuition is not closed",
+        "Per-programme international availability is not confirmed",
+        "Student-facing Chinese localization is not finalized"
+      ]
+    },
+    {
+      "code": "UCSI-MASTER-078",
+      "level": "master",
+      "nameEnOfficial": "Master Of Education",
+      "ready": false,
+      "reviewReasons": [
+        "publicDisplayStatus is needs-review",
+        "Exact international full-duration tuition is not closed",
+        "Per-programme international availability is not confirmed",
+        "Student-facing Chinese localization is not finalized"
+      ]
+    },
+    {
+      "code": "UCSI-MASTER-079",
+      "level": "master",
+      "nameEnOfficial": "Master In Strategic Communication",
+      "ready": false,
+      "reviewReasons": [
+        "publicDisplayStatus is needs-review",
+        "Exact international full-duration tuition is not closed",
+        "Per-programme international availability is not confirmed",
+        "Student-facing Chinese localization is not finalized"
+      ]
+    },
+    {
+      "code": "UCSI-BACHELOR-080",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor Of Early Childhood Education (Honours)",
+      "ready": false,
+      "reviewReasons": [
+        "publicDisplayStatus is needs-review",
+        "Exact international full-duration tuition is not closed",
+        "Per-programme international availability is not confirmed",
+        "Student-facing Chinese localization is not finalized"
+      ]
+    },
+    {
+      "code": "UCSI-BACHELOR-081",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor Of Digital Media Production And Broadcasting (Honours)",
+      "ready": false,
+      "reviewReasons": [
+        "publicDisplayStatus is needs-review",
+        "Exact international full-duration tuition is not closed",
+        "Per-programme international availability is not confirmed",
+        "Student-facing Chinese localization is not finalized"
+      ]
+    },
+    {
+      "code": "UCSI-PHD-082",
+      "level": "phd",
+      "nameEnOfficial": "Doctor Of Philosophy In Art, Design And Creative Media",
+      "ready": false,
+      "reviewReasons": [
+        "publicDisplayStatus is needs-review",
+        "Exact international full-duration tuition is not closed",
+        "Per-programme international availability is not confirmed",
+        "Student-facing Chinese localization is not finalized"
+      ]
+    },
+    {
+      "code": "UCSI-MASTER-083",
+      "level": "master",
+      "nameEnOfficial": "Master Of Arts And Design",
+      "ready": false,
+      "reviewReasons": [
+        "publicDisplayStatus is needs-review",
+        "Exact international full-duration tuition is not closed",
+        "Per-programme international availability is not confirmed",
+        "Career directions need review",
+        "Student-facing Chinese localization is not finalized"
+      ]
+    },
+    {
+      "code": "UCSI-MASTER-084",
+      "level": "master",
+      "nameEnOfficial": "Master Of Art, Design And Creative Media",
+      "ready": false,
+      "reviewReasons": [
+        "publicDisplayStatus is needs-review",
+        "Exact international full-duration tuition is not closed",
+        "Per-programme international availability is not confirmed",
+        "Student-facing Chinese localization is not finalized"
+      ]
+    },
+    {
+      "code": "UCSI-PHD-085",
+      "level": "phd",
+      "nameEnOfficial": "Doctor Of Philosophy In Mathematical Sciences",
+      "ready": false,
+      "reviewReasons": [
+        "publicDisplayStatus is needs-review",
+        "Exact international full-duration tuition is not closed",
+        "Per-programme international availability is not confirmed",
+        "Student-facing Chinese localization is not finalized"
+      ]
+    },
+    {
+      "code": "UCSI-MASTER-086",
+      "level": "master",
+      "nameEnOfficial": "Master Of Science (Actuarial Management) - (Mixed Mode Or Coursework)",
+      "ready": false,
+      "reviewReasons": [
+        "publicDisplayStatus is needs-review",
+        "Exact international full-duration tuition is not closed",
+        "Per-programme international availability is not confirmed",
+        "Student-facing Chinese localization is not finalized"
+      ]
+    },
+    {
+      "code": "UCSI-MASTER-087",
+      "level": "master",
+      "nameEnOfficial": "Master Of Science In Mathematical Sciences",
+      "ready": false,
+      "reviewReasons": [
+        "publicDisplayStatus is needs-review",
+        "Exact international full-duration tuition is not closed",
+        "Per-programme international availability is not confirmed",
+        "Student-facing Chinese localization is not finalized"
+      ]
+    },
+    {
+      "code": "UCSI-BACHELOR-088",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor Of Science (Honours) Actuarial Science",
+      "ready": false,
+      "reviewReasons": [
+        "publicDisplayStatus is needs-review",
+        "Exact international full-duration tuition is not closed",
+        "Per-programme international availability is not confirmed",
+        "Student-facing Chinese localization is not finalized"
+      ]
+    },
+    {
+      "code": "UCSI-BACHELOR-089",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor Of Science (Honours) Actuarial Science And Finance",
+      "ready": false,
+      "reviewReasons": [
+        "publicDisplayStatus is needs-review",
+        "Exact international full-duration tuition is not closed",
+        "Per-programme international availability is not confirmed",
+        "Student-facing Chinese localization is not finalized"
+      ]
+    },
+    {
+      "code": "UCSI-BACHELOR-090",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor Of Science (Honours) Actuarial Science With Data Analytics",
+      "ready": false,
+      "reviewReasons": [
+        "publicDisplayStatus is needs-review",
+        "Exact international full-duration tuition is not closed",
+        "Per-programme international availability is not confirmed",
+        "Student-facing Chinese localization is not finalized"
+      ]
+    },
+    {
+      "code": "UCSI-PHD-091",
+      "level": "phd",
+      "nameEnOfficial": "Doctor Of Philosophy In Computer Science",
+      "ready": false,
+      "reviewReasons": [
+        "publicDisplayStatus is needs-review",
+        "Exact international full-duration tuition is not closed",
+        "Per-programme international availability is not confirmed",
+        "Student-facing Chinese localization is not finalized"
+      ]
+    },
+    {
+      "code": "UCSI-MASTER-092",
+      "level": "master",
+      "nameEnOfficial": "Master Of Science In Computer Science",
+      "ready": false,
+      "reviewReasons": [
+        "publicDisplayStatus is needs-review",
+        "Exact international full-duration tuition is not closed",
+        "Per-programme international availability is not confirmed",
+        "Student-facing Chinese localization is not finalized"
+      ]
+    },
+    {
+      "code": "UCSI-MASTER-093",
+      "level": "master",
+      "nameEnOfficial": "Master Of Science In Digital Technology And Analytics",
+      "ready": false,
+      "reviewReasons": [
+        "publicDisplayStatus is needs-review",
+        "Exact international full-duration tuition is not closed",
+        "Per-programme international availability is not confirmed",
+        "Student-facing Chinese localization is not finalized"
+      ]
+    },
+    {
+      "code": "UCSI-MASTER-094",
+      "level": "master",
+      "nameEnOfficial": "MSc In Technopreneurship",
+      "ready": false,
+      "reviewReasons": [
+        "publicDisplayStatus is needs-review",
+        "Exact international full-duration tuition is not closed",
+        "Per-programme international availability is not confirmed",
+        "Student-facing Chinese localization is not finalized"
+      ]
+    },
+    {
+      "code": "UCSI-BACHELOR-095",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor Of Computer Science (Honours)",
+      "ready": false,
+      "reviewReasons": [
+        "publicDisplayStatus is needs-review",
+        "Exact international full-duration tuition is not closed",
+        "Per-programme international availability is not confirmed",
+        "Student-facing Chinese localization is not finalized"
+      ]
+    },
+    {
+      "code": "UCSI-BACHELOR-096",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor Of Computer Science In Artificial Intelligence With Honours",
+      "ready": false,
+      "reviewReasons": [
+        "publicDisplayStatus is needs-review",
+        "Exact international full-duration tuition is not closed",
+        "Per-programme international availability is not confirmed",
+        "Student-facing Chinese localization is not finalized"
+      ]
+    },
+    {
+      "code": "UCSI-BACHELOR-097",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor Of Computer Science In Cyber Security With Honours",
+      "ready": false,
+      "reviewReasons": [
+        "publicDisplayStatus is needs-review",
+        "Exact international full-duration tuition is not closed",
+        "Per-programme international availability is not confirmed",
+        "Student-facing Chinese localization is not finalized"
+      ]
+    },
+    {
+      "code": "UCSI-BACHELOR-098",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor Of Computer Science (Hons) Mobile Computing And Networking",
+      "ready": false,
+      "reviewReasons": [
+        "publicDisplayStatus is needs-review",
+        "Exact international full-duration tuition is not closed",
+        "Per-programme international availability is not confirmed",
+        "Student-facing Chinese localization is not finalized"
+      ]
+    },
+    {
+      "code": "UCSI-BACHELOR-099",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor Of Computer Science In Data Science With Honours",
+      "ready": false,
+      "reviewReasons": [
+        "publicDisplayStatus is needs-review",
+        "Exact international full-duration tuition is not closed",
+        "Per-programme international availability is not confirmed",
+        "Student-facing Chinese localization is not finalized"
+      ]
+    },
+    {
+      "code": "UCSI-BACHELOR-100",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor Of Science In Business Information Systems (Honours)",
+      "ready": false,
+      "reviewReasons": [
+        "publicDisplayStatus is needs-review",
+        "Exact international full-duration tuition is not closed",
+        "Per-programme international availability is not confirmed",
+        "Student-facing Chinese localization is not finalized"
+      ]
+    },
+    {
+      "code": "UCSI-PHD-101",
+      "level": "phd",
+      "nameEnOfficial": "Doctor Of Philosophy In Music Performance",
+      "ready": false,
+      "reviewReasons": [
+        "publicDisplayStatus is needs-review",
+        "Exact international full-duration tuition is not closed",
+        "Per-programme international availability is not confirmed",
+        "Career directions need review",
+        "Student-facing Chinese localization is not finalized"
+      ]
+    },
+    {
+      "code": "UCSI-PHD-102",
+      "level": "phd",
+      "nameEnOfficial": "Doctor Of Philosophy In Music",
+      "ready": false,
+      "reviewReasons": [
+        "publicDisplayStatus is needs-review",
+        "Exact international full-duration tuition is not closed",
+        "Per-programme international availability is not confirmed",
+        "Career directions need review",
+        "Student-facing Chinese localization is not finalized"
+      ]
+    },
+    {
+      "code": "UCSI-MASTER-103",
+      "level": "master",
+      "nameEnOfficial": "Master Of Music (Performance Studies)",
+      "ready": false,
+      "reviewReasons": [
+        "publicDisplayStatus is needs-review",
+        "Exact international full-duration tuition is not closed",
+        "Per-programme international availability is not confirmed",
+        "Student-facing Chinese localization is not finalized"
+      ]
+    },
+    {
+      "code": "UCSI-BACHELOR-104",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor Of Classical Music (Hons.)",
+      "ready": false,
+      "reviewReasons": [
+        "publicDisplayStatus is needs-review",
+        "Exact international full-duration tuition is not closed",
+        "Per-programme international availability is not confirmed",
+        "Student-facing Chinese localization is not finalized"
+      ]
+    },
+    {
+      "code": "UCSI-BACHELOR-105",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor Of Contemporary Music (Hons.)",
+      "ready": false,
+      "reviewReasons": [
+        "publicDisplayStatus is needs-review",
+        "Exact international full-duration tuition is not closed",
+        "Per-programme international availability is not confirmed",
+        "Student-facing Chinese localization is not finalized"
+      ]
+    },
+    {
+      "code": "UCSI-MASTER-106",
+      "level": "master",
+      "nameEnOfficial": "Master Of Science Policy And Communication",
+      "ready": false,
+      "reviewReasons": [
+        "publicDisplayStatus is needs-review",
+        "Exact international full-duration tuition is not closed",
+        "Per-programme international availability is not confirmed",
+        "Student-facing Chinese localization is not finalized"
+      ]
+    },
+    {
+      "code": "UCSI-MASTER-107",
+      "level": "master",
+      "nameEnOfficial": "Master In Science Diplomacy",
+      "ready": false,
+      "reviewReasons": [
+        "publicDisplayStatus is needs-review",
+        "Exact international full-duration tuition is not closed",
+        "Per-programme international availability is not confirmed",
+        "Student-facing Chinese localization is not finalized"
+      ]
+    },
+    {
+      "code": "UCSI-MASTER-108",
+      "level": "master",
+      "nameEnOfficial": "Master In Environmental, Social And Governance Leadership",
+      "ready": false,
+      "reviewReasons": [
+        "publicDisplayStatus is needs-review",
+        "Exact international full-duration tuition is not closed",
+        "Per-programme international availability is not confirmed",
+        "Student-facing Chinese localization is not finalized"
+      ]
+    },
+    {
+      "code": "UCSI-MASTER-109",
+      "level": "master",
+      "nameEnOfficial": "Master Of Business Administration (Blue Ocean Strategy)",
+      "ready": false,
+      "reviewReasons": [
+        "publicDisplayStatus is needs-review",
+        "Exact international full-duration tuition is not closed",
+        "Per-programme international availability is not confirmed",
+        "Student-facing Chinese localization is not finalized"
+      ]
+    },
+    {
+      "code": "UCSI-BACHELOR-110",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor In Business Management (Honours)",
+      "ready": false,
+      "reviewReasons": [
+        "publicDisplayStatus is needs-review",
+        "Exact international full-duration tuition is not closed",
+        "Per-programme international availability is not confirmed",
+        "Student-facing Chinese localization is not finalized"
+      ]
+    },
+    {
+      "code": "UCSI-BACHELOR-111",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor In International Business (Honours)",
+      "ready": false,
+      "reviewReasons": [
+        "publicDisplayStatus is needs-review",
+        "Exact international full-duration tuition is not closed",
+        "Per-programme international availability is not confirmed",
+        "Student-facing Chinese localization is not finalized"
+      ]
+    },
+    {
+      "code": "UCSI-BACHELOR-112",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor Of Commerce (Hons) In Accounting And Finance",
+      "ready": false,
+      "reviewReasons": [
+        "publicDisplayStatus is needs-review",
+        "Exact international full-duration tuition is not closed",
+        "Per-programme international availability is not confirmed",
+        "Student-facing Chinese localization is not finalized"
+      ]
+    },
+    {
+      "code": "UCSI-BACHELOR-113",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor Of Commerce (Hons) In Marketing",
+      "ready": false,
+      "reviewReasons": [
+        "publicDisplayStatus is needs-review",
+        "Exact international full-duration tuition is not closed",
+        "Per-programme international availability is not confirmed",
+        "Student-facing Chinese localization is not finalized"
+      ]
+    },
+    {
+      "code": "UCSI-BACHELOR-114",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor Of Arts (Honours) In Culinary Management",
+      "ready": false,
+      "reviewReasons": [
+        "publicDisplayStatus is needs-review",
+        "Exact international full-duration tuition is not closed",
+        "Per-programme international availability is not confirmed",
+        "Student-facing Chinese localization is not finalized"
+      ]
+    },
+    {
+      "code": "UCSI-PHD-115",
+      "level": "phd",
+      "nameEnOfficial": "Doctor Of Philosophy (Medical Sciences)",
+      "ready": false,
+      "reviewReasons": [
+        "publicDisplayStatus is needs-review",
+        "Exact international full-duration tuition is not closed",
+        "Per-programme international availability is not confirmed",
+        "Student-facing Chinese localization is not finalized"
+      ]
+    },
+    {
+      "code": "UCSI-BACHELOR-116",
+      "level": "bachelor",
+      "nameEnOfficial": "Doctor Of Medicine (MD)",
+      "ready": false,
+      "reviewReasons": [
+        "publicDisplayStatus is needs-review",
+        "Exact international full-duration tuition is not closed",
+        "Per-programme international availability is not confirmed",
+        "Student-facing Chinese localization is not finalized"
+      ]
+    },
+    {
+      "code": "UCSI-BACHELOR-117",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor Of Nursing (Hons)",
+      "ready": false,
+      "reviewReasons": [
+        "publicDisplayStatus is needs-review",
+        "Exact international full-duration tuition is not closed",
+        "Per-programme international availability is not confirmed",
+        "Student-facing Chinese localization is not finalized"
+      ]
+    },
+    {
+      "code": "UCSI-BACHELOR-118",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor Of Arts (Honours) In Hospitality Management",
+      "ready": false,
+      "reviewReasons": [
+        "publicDisplayStatus is needs-review",
+        "Exact international full-duration tuition is not closed",
+        "Per-programme international availability is not confirmed",
+        "Student-facing Chinese localization is not finalized"
+      ]
+    }
+  ]
+}

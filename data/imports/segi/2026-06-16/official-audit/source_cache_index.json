@@ -1,0 +1,802 @@
+[
+  {
+    "url": "https://university.segi.edu.my/course-search/",
+    "localPath": "data/imports/segi/2026-06-16/official-audit/raw/course-search-page-1.html",
+    "sha256": "sha256:60baed059ed1d7e6239b6e7dbfdc1fced5280d6a589d853f7ce6d24c3c558293",
+    "statusCode": 200,
+    "byteLength": 144497,
+    "fetchedAt": "2026-06-16T17:20:10+00:00"
+  },
+  {
+    "url": "https://university.segi.edu.my/course-search/page/2/",
+    "localPath": "data/imports/segi/2026-06-16/official-audit/raw/course-search-page-2.html",
+    "sha256": "sha256:1ba7e13f31d5efc067484173ed8a6d826d87f00010b651c117461b25bf83f5eb",
+    "statusCode": 200,
+    "byteLength": 144974,
+    "fetchedAt": "2026-06-16T17:20:11+00:00"
+  },
+  {
+    "url": "https://university.segi.edu.my/course-search/page/3/",
+    "localPath": "data/imports/segi/2026-06-16/official-audit/raw/course-search-page-3.html",
+    "sha256": "sha256:b4963611468ec3356e5efa11db04f1a701fa0db073552ac64342af4e9e9a227c",
+    "statusCode": 200,
+    "byteLength": 145467,
+    "fetchedAt": "2026-06-16T17:20:12+00:00"
+  },
+  {
+    "url": "https://university.segi.edu.my/course-search/page/4/",
+    "localPath": "data/imports/segi/2026-06-16/official-audit/raw/course-search-page-4.html",
+    "sha256": "sha256:1a458c1d1c2020431c09111dde9d62f7a43a71935a8e9e572bb6cf24cb44d899",
+    "statusCode": 200,
+    "byteLength": 145311,
+    "fetchedAt": "2026-06-16T17:20:13+00:00"
+  },
+  {
+    "url": "https://university.segi.edu.my/course-search/page/5/",
+    "localPath": "data/imports/segi/2026-06-16/official-audit/raw/course-search-page-5.html",
+    "sha256": "sha256:798cf1305a2e0b3f8492b5eb10f5a6fe96d700dc123c24a796f5387a9eaad3c7",
+    "statusCode": 200,
+    "byteLength": 144857,
+    "fetchedAt": "2026-06-16T17:20:14+00:00"
+  },
+  {
+    "url": "https://university.segi.edu.my/course-search/page/6/",
+    "localPath": "data/imports/segi/2026-06-16/official-audit/raw/course-search-page-6.html",
+    "sha256": "sha256:9c5f07fac9b1197990119ed4ee002dc0eaad7e251dc631d065724a10baa9a3a9",
+    "statusCode": 200,
+    "byteLength": 145777,
+    "fetchedAt": "2026-06-16T17:20:16+00:00"
+  },
+  {
+    "url": "https://university.segi.edu.my/course-search/page/7/",
+    "localPath": "data/imports/segi/2026-06-16/official-audit/raw/course-search-page-7.html",
+    "sha256": "sha256:1e992edadf5f939f005470de7196ff1bb003d6f16320f103e81b9e817124005c",
+    "statusCode": 200,
+    "byteLength": 145982,
+    "fetchedAt": "2026-06-16T17:20:17+00:00"
+  },
+  {
+    "url": "https://university.segi.edu.my/course-search/page/8/",
+    "localPath": "data/imports/segi/2026-06-16/official-audit/raw/course-search-page-8.html",
+    "sha256": "sha256:fe35af7715960dc00805c96d5f23158128b73132d50a8f567820ca6bbcced9f8",
+    "statusCode": 200,
+    "byteLength": 145476,
+    "fetchedAt": "2026-06-16T17:20:18+00:00"
+  },
+  {
+    "url": "https://university.segi.edu.my/course-search/page/9/",
+    "localPath": "data/imports/segi/2026-06-16/official-audit/raw/course-search-page-9.html",
+    "sha256": "sha256:d270cbcf4bd927fecd5c01edfdc7d4762f090c4a77b8b6d93afb13b9cb74d488",
+    "statusCode": 200,
+    "byteLength": 145214,
+    "fetchedAt": "2026-06-16T17:20:19+00:00"
+  },
+  {
+    "url": "https://university.segi.edu.my/course-search/page/10/",
+    "localPath": "data/imports/segi/2026-06-16/official-audit/raw/course-search-page-10.html",
+    "sha256": "sha256:1cf256d4d0eba9beb60ab7ca6ca02cd187d7c2a45b25cd2bdd5fb22bcf65bc48",
+    "statusCode": 200,
+    "byteLength": 144475,
+    "fetchedAt": "2026-06-16T17:20:20+00:00"
+  },
+  {
+    "url": "https://university.segi.edu.my/course/phd-engineering-by-research/",
+    "localPath": "data/imports/segi/2026-06-16/official-audit/raw/course-course-phd-engineering-by-research.html",
+    "sha256": "sha256:2872d6fd394573caf287e6193402a1f3614e1b1462c27a9d679b9f48dfa51bf8",
+    "statusCode": 200,
+    "byteLength": 150951,
+    "fetchedAt": "2026-06-16T17:20:22+00:00"
+  },
+  {
+    "url": "https://university.segi.edu.my/course/doctor-of-philosophy-information-technology-by-research-odl/",
+    "localPath": "data/imports/segi/2026-06-16/official-audit/raw/course-course-doctor-of-philosophy-information-technology-by-research-odl.html",
+    "sha256": "sha256:2dc45805bb20027b7211320dba4746e7a5a2e987056565a9c5ec14f9b3c9a940",
+    "statusCode": 200,
+    "byteLength": 149665,
+    "fetchedAt": "2026-06-16T17:20:23+00:00"
+  },
+  {
+    "url": "https://university.segi.edu.my/course/phd-information-technology-by-research/",
+    "localPath": "data/imports/segi/2026-06-16/official-audit/raw/course-course-phd-information-technology-by-research.html",
+    "sha256": "sha256:403c284eeef11c87b73cba233c49bf017bb197ee1d7c3c2a02f25b81b6ce8bcf",
+    "statusCode": 200,
+    "byteLength": 152981,
+    "fetchedAt": "2026-06-16T17:20:24+00:00"
+  },
+  {
+    "url": "https://university.segi.edu.my/course/phd-education-by-research/",
+    "localPath": "data/imports/segi/2026-06-16/official-audit/raw/course-course-phd-education-by-research.html",
+    "sha256": "sha256:b598d947b0333d9ebc34fc2c2600e47007897f377e1338966da957259b1dd27d",
+    "statusCode": 200,
+    "byteLength": 151548,
+    "fetchedAt": "2026-06-16T17:20:25+00:00"
+  },
+  {
+    "url": "https://university.segi.edu.my/course/doctor-of-philosophy-in-management/",
+    "localPath": "data/imports/segi/2026-06-16/official-audit/raw/course-course-doctor-of-philosophy-in-management.html",
+    "sha256": "sha256:e599a351cc0cce88d8d179632a37d2b77db77dcc669db42a493e8c945afea4e8",
+    "statusCode": 200,
+    "byteLength": 154619,
+    "fetchedAt": "2026-06-16T17:20:27+00:00"
+  },
+  {
+    "url": "https://university.segi.edu.my/course/doctor-of-philosophy-education-by-research-odl/",
+    "localPath": "data/imports/segi/2026-06-16/official-audit/raw/course-course-doctor-of-philosophy-education-by-research-odl.html",
+    "sha256": "sha256:020cb6db9dc119710383389adaef89c3915a7bf316165cfad186bfdc2061363b",
+    "statusCode": 200,
+    "byteLength": 151477,
+    "fetchedAt": "2026-06-16T17:20:28+00:00"
+  },
+  {
+    "url": "https://university.segi.edu.my/course/doctor-of-business-administration/",
+    "localPath": "data/imports/segi/2026-06-16/official-audit/raw/course-course-doctor-of-business-administration.html",
+    "sha256": "sha256:7a8be69c00ba2abc3e310b9d325041b41fc5b3de06c48d5d5e0262982b5409a3",
+    "statusCode": 200,
+    "byteLength": 160455,
+    "fetchedAt": "2026-06-16T17:20:30+00:00"
+  },
+  {
+    "url": "https://university.segi.edu.my/course/doctor-of-philosophy-management-by-research-odl/",
+    "localPath": "data/imports/segi/2026-06-16/official-audit/raw/course-course-doctor-of-philosophy-management-by-research-odl.html",
+    "sha256": "sha256:c83867739ec2198321bf0060fc5aab8a5dc77ac4229fe2f0a1b5e1f00f1dc5a0",
+    "statusCode": 200,
+    "byteLength": 151266,
+    "fetchedAt": "2026-06-16T17:20:31+00:00"
+  },
+  {
+    "url": "https://university.segi.edu.my/course/msc-engineering-by-research/",
+    "localPath": "data/imports/segi/2026-06-16/official-audit/raw/course-course-msc-engineering-by-research.html",
+    "sha256": "sha256:e288861aa1852d6b6bbd0423d22b46f624bbf8248c3baa786a45b0b9d5c3199b",
+    "statusCode": 200,
+    "byteLength": 151342,
+    "fetchedAt": "2026-06-16T17:20:32+00:00"
+  },
+  {
+    "url": "https://university.segi.edu.my/course/master-of-science-in-vision-science-by-research/",
+    "localPath": "data/imports/segi/2026-06-16/official-audit/raw/course-course-master-of-science-in-vision-science-by-research.html",
+    "sha256": "sha256:139ff446ed67b4a57624b419f24ee34f940e53c950b1e185ae172df711d8f3fc",
+    "statusCode": 200,
+    "byteLength": 152548,
+    "fetchedAt": "2026-06-16T17:20:33+00:00"
+  },
+  {
+    "url": "https://university.segi.edu.my/course/master-of-science-in-environmental-sustainability-with-artificial-intelligence/",
+    "localPath": "data/imports/segi/2026-06-16/official-audit/raw/course-course-master-of-science-in-environmental-sustainability-with-artificial-intelligence.html",
+    "sha256": "sha256:6e9fdefad177bd6c24f83742b8f850b1b7fcfe34565f0d951b8ce4991cd05ab4",
+    "statusCode": 200,
+    "byteLength": 148460,
+    "fetchedAt": "2026-06-16T17:20:34+00:00"
+  },
+  {
+    "url": "https://university.segi.edu.my/course/msc-in-information-technology-coursework/",
+    "localPath": "data/imports/segi/2026-06-16/official-audit/raw/course-course-msc-in-information-technology-coursework.html",
+    "sha256": "sha256:46067d52ea598299364c42672c8b3efa420de325e6732989c6385c9ac386ea8f",
+    "statusCode": 200,
+    "byteLength": 159447,
+    "fetchedAt": "2026-06-16T17:20:36+00:00"
+  },
+  {
+    "url": "https://university.segi.edu.my/course/msc-information-technology-by-research-odl/",
+    "localPath": "data/imports/segi/2026-06-16/official-audit/raw/course-course-msc-information-technology-by-research-odl.html",
+    "sha256": "sha256:9d733b4977a91d514984916bc84685d8bfd9395a2ead0752d726c1a15c4f409a",
+    "statusCode": 200,
+    "byteLength": 152122,
+    "fetchedAt": "2026-06-16T17:20:37+00:00"
+  },
+  {
+    "url": "https://university.segi.edu.my/course/msc-information-technology-by-research/",
+    "localPath": "data/imports/segi/2026-06-16/official-audit/raw/course-course-msc-information-technology-by-research.html",
+    "sha256": "sha256:43b0029d498a127fafbffef73ecb61a466ba213cfca5e9a75491596aab24f7ac",
+    "statusCode": 200,
+    "byteLength": 152079,
+    "fetchedAt": "2026-06-16T17:20:38+00:00"
+  },
+  {
+    "url": "https://university.segi.edu.my/course/master-of-science-in-management/",
+    "localPath": "data/imports/segi/2026-06-16/official-audit/raw/course-course-master-of-science-in-management.html",
+    "sha256": "sha256:8ddf653ee4755665b13af517a7e6e34b0607088a42a769fde845c185cd85534f",
+    "statusCode": 200,
+    "byteLength": 153548,
+    "fetchedAt": "2026-06-16T17:20:40+00:00"
+  },
+  {
+    "url": "https://university.segi.edu.my/course/master-in-financial-planning/",
+    "localPath": "data/imports/segi/2026-06-16/official-audit/raw/course-course-master-in-financial-planning.html",
+    "sha256": "sha256:c8c50ee594a697415c4b126b8e33b0d313b97a30dd7e605405df6699ca8a7944",
+    "statusCode": 200,
+    "byteLength": 159421,
+    "fetchedAt": "2026-06-16T17:20:41+00:00"
+  },
+  {
+    "url": "https://university.segi.edu.my/course/master-of-science-pharmaceutical-sciences/",
+    "localPath": "data/imports/segi/2026-06-16/official-audit/raw/course-course-master-of-science-pharmaceutical-sciences.html",
+    "sha256": "sha256:4abda138840bd3ca289c0db75aa833447eec19e9b8db0db544031e9a5d2c60c6",
+    "statusCode": 200,
+    "byteLength": 153379,
+    "fetchedAt": "2026-06-16T17:20:42+00:00"
+  },
+  {
+    "url": "https://university.segi.edu.my/course/master-of-laws/",
+    "localPath": "data/imports/segi/2026-06-16/official-audit/raw/course-course-master-of-laws.html",
+    "sha256": "sha256:9a74d4308ba9a9ed303439df514df4e726d332e5b6203ce414e705f5483a5d3b",
+    "statusCode": 200,
+    "byteLength": 151991,
+    "fetchedAt": "2026-06-16T17:20:44+00:00"
+  },
+  {
+    "url": "https://university.segi.edu.my/course/postgraduate-certificate-in-law/",
+    "localPath": "data/imports/segi/2026-06-16/official-audit/raw/course-course-postgraduate-certificate-in-law.html",
+    "sha256": "sha256:8a77c201c8c32b89bcc92e7d78daf5397200bad89ea04274d096bfa09c95e0b0",
+    "statusCode": 200,
+    "byteLength": 145913,
+    "fetchedAt": "2026-06-16T17:20:45+00:00"
+  },
+  {
+    "url": "https://university.segi.edu.my/course/master-of-education/",
+    "localPath": "data/imports/segi/2026-06-16/official-audit/raw/course-course-master-of-education.html",
+    "sha256": "sha256:73c0323674924ce26668648106bf2736f87f7dba55242dfb9fdd25029bfdb638",
+    "statusCode": 200,
+    "byteLength": 158912,
+    "fetchedAt": "2026-06-16T17:20:46+00:00"
+  },
+  {
+    "url": "https://university.segi.edu.my/course/master-of-education-by-research/",
+    "localPath": "data/imports/segi/2026-06-16/official-audit/raw/course-course-master-of-education-by-research.html",
+    "sha256": "sha256:ad431d92ce37dec2cfe0add2bde651abba1703f74b161d2393db8f6c441403ec",
+    "statusCode": 200,
+    "byteLength": 151765,
+    "fetchedAt": "2026-06-16T17:20:47+00:00"
+  },
+  {
+    "url": "https://university.segi.edu.my/course/master-of-education-by-research-odl/",
+    "localPath": "data/imports/segi/2026-06-16/official-audit/raw/course-course-master-of-education-by-research-odl.html",
+    "sha256": "sha256:0e7abe3c1df63d76ed338ac3804de8020729938f2f4c5df1cab5d065b3001f1c",
+    "statusCode": 200,
+    "byteLength": 151906,
+    "fetchedAt": "2026-06-16T17:20:49+00:00"
+  },
+  {
+    "url": "https://university.segi.edu.my/course/master-of-education-by-coursework-odl/",
+    "localPath": "data/imports/segi/2026-06-16/official-audit/raw/course-course-master-of-education-by-coursework-odl.html",
+    "sha256": "sha256:93cee90ee75f40dfc39d5898a1f0acec3f20bb031dc24a78cda2de5ddcb974ae",
+    "statusCode": 200,
+    "byteLength": 155926,
+    "fetchedAt": "2026-06-16T17:20:50+00:00"
+  },
+  {
+    "url": "https://university.segi.edu.my/course/master-of-business-administration-marketing/",
+    "localPath": "data/imports/segi/2026-06-16/official-audit/raw/course-course-master-of-business-administration-marketing.html",
+    "sha256": "sha256:cc6298062b241e08b1932a84f93dc0910a41d7d749437218cb09d9f385579963",
+    "statusCode": 200,
+    "byteLength": 173395,
+    "fetchedAt": "2026-06-16T17:20:52+00:00"
+  },
+  {
+    "url": "https://university.segi.edu.my/course/master-of-business-administration-human-resource-management/",
+    "localPath": "data/imports/segi/2026-06-16/official-audit/raw/course-course-master-of-business-administration-human-resource-management.html",
+    "sha256": "sha256:ecad03cb4bbf6a7a87f2abf3bf24806aeb45ebb54b5fd0d50d069dfd0bb655ba",
+    "statusCode": 200,
+    "byteLength": 173242,
+    "fetchedAt": "2026-06-16T17:20:53+00:00"
+  },
+  {
+    "url": "https://university.segi.edu.my/course/master-of-business-administration-global-business-2/",
+    "localPath": "data/imports/segi/2026-06-16/official-audit/raw/course-course-master-of-business-administration-global-business-2.html",
+    "sha256": "sha256:0af78243270f2712ac4f9ab61a7a9a6c1fdc47c55391b2e0db0fd85e250fd9de",
+    "statusCode": 200,
+    "byteLength": 173751,
+    "fetchedAt": "2026-06-16T17:20:55+00:00"
+  },
+  {
+    "url": "https://university.segi.edu.my/course/master-of-business-administration-global-business-odl/",
+    "localPath": "data/imports/segi/2026-06-16/official-audit/raw/course-course-master-of-business-administration-global-business-odl.html",
+    "sha256": "sha256:4012b55c535a2a6e645fe8f4b38ec714c9ea5dd9b153b2103293a078a47bc118",
+    "statusCode": 200,
+    "byteLength": 158670,
+    "fetchedAt": "2026-06-16T17:20:56+00:00"
+  },
+  {
+    "url": "https://university.segi.edu.my/course/master-of-business-administration-general-management-odl/",
+    "localPath": "data/imports/segi/2026-06-16/official-audit/raw/course-course-master-of-business-administration-general-management-odl.html",
+    "sha256": "sha256:541f8e2407c63650fea34882a179ad2d6d7505c29c4efd09117bb49524038a49",
+    "statusCode": 200,
+    "byteLength": 158389,
+    "fetchedAt": "2026-06-16T17:20:57+00:00"
+  },
+  {
+    "url": "https://university.segi.edu.my/course/master-of-business-administration/",
+    "localPath": "data/imports/segi/2026-06-16/official-audit/raw/course-course-master-of-business-administration.html",
+    "sha256": "sha256:35bed8ae5c6a57ee2bfde8fa4f060a0c07ac782bdb72e86109737f388eb90371",
+    "statusCode": 200,
+    "byteLength": 159661,
+    "fetchedAt": "2026-06-16T17:20:59+00:00"
+  },
+  {
+    "url": "https://university.segi.edu.my/course/master-of-business-administration-general-management-2/",
+    "localPath": "data/imports/segi/2026-06-16/official-audit/raw/course-course-master-of-business-administration-general-management-2.html",
+    "sha256": "sha256:5c94babcfae23da3095b6664d225a8becb698ac2f06ad6a3aec80a0c5b600a27",
+    "statusCode": 200,
+    "byteLength": 173435,
+    "fetchedAt": "2026-06-16T17:21:00+00:00"
+  },
+  {
+    "url": "https://university.segi.edu.my/course/mba-finance/",
+    "localPath": "data/imports/segi/2026-06-16/official-audit/raw/course-course-mba-finance.html",
+    "sha256": "sha256:e8c1bd49138b2991d140f6c901f2d852ed87704414ae38b64bb62c9dff18abd3",
+    "statusCode": 200,
+    "byteLength": 170637,
+    "fetchedAt": "2026-06-16T17:21:02+00:00"
+  },
+  {
+    "url": "https://university.segi.edu.my/course/master-of-arts-in-corporate-communications/",
+    "localPath": "data/imports/segi/2026-06-16/official-audit/raw/course-course-master-of-arts-in-corporate-communications.html",
+    "sha256": "sha256:799ddf4a6531c3a2d10a1a87445c92fb9b926a567a2d485e9d93c4568a3d37f2",
+    "statusCode": 200,
+    "byteLength": 158575,
+    "fetchedAt": "2026-06-16T17:21:03+00:00"
+  },
+  {
+    "url": "https://university.segi.edu.my/course/master-of-accountancy/",
+    "localPath": "data/imports/segi/2026-06-16/official-audit/raw/course-course-master-of-accountancy.html",
+    "sha256": "sha256:005d92c7602e9b0796812b272ae9788fa779d9edb27d37e7fcc21a9cb3487bda",
+    "statusCode": 200,
+    "byteLength": 161049,
+    "fetchedAt": "2026-06-16T17:21:04+00:00"
+  },
+  {
+    "url": "https://university.segi.edu.my/course/master-of-accountancy-odl/",
+    "localPath": "data/imports/segi/2026-06-16/official-audit/raw/course-course-master-of-accountancy-odl.html",
+    "sha256": "sha256:a57d6eea2323fbfe24a3b267c2ec017f8d0f8cdc5b22073adde4fc797390db72",
+    "statusCode": 200,
+    "byteLength": 153544,
+    "fetchedAt": "2026-06-16T17:21:06+00:00"
+  },
+  {
+    "url": "https://university.segi.edu.my/course/master-of-social-science-in-psychology/",
+    "localPath": "data/imports/segi/2026-06-16/official-audit/raw/course-course-master-of-social-science-in-psychology.html",
+    "sha256": "sha256:ce44fce349501c7ed102f4fd179b4d10eca0e2acad7712f3be4f1249aaaf1210",
+    "statusCode": 200,
+    "byteLength": 159767,
+    "fetchedAt": "2026-06-16T17:21:10+00:00"
+  },
+  {
+    "url": "https://university.segi.edu.my/course/bachelor-of-music-honours/",
+    "localPath": "data/imports/segi/2026-06-16/official-audit/raw/course-course-bachelor-of-music-honours.html",
+    "sha256": "sha256:d763e86222781c522d4a3a834ee9f8e6455ecaa7f954e3e99258689830d2b23a",
+    "statusCode": 200,
+    "byteLength": 149713,
+    "fetchedAt": "2026-06-16T17:21:11+00:00"
+  },
+  {
+    "url": "https://university.segi.edu.my/course/bachelor-of-physiotherapy-hons/",
+    "localPath": "data/imports/segi/2026-06-16/official-audit/raw/course-course-bachelor-of-physiotherapy-hons.html",
+    "sha256": "sha256:0d4bf2fa620e7b8bccacdb0aabb825d6a6220ddf48acd534cab9e60059a7fd49",
+    "statusCode": 200,
+    "byteLength": 153654,
+    "fetchedAt": "2026-06-16T17:21:12+00:00"
+  },
+  {
+    "url": "https://university.segi.edu.my/course/bachelor-in-quantity-surveying/",
+    "localPath": "data/imports/segi/2026-06-16/official-audit/raw/course-course-bachelor-in-quantity-surveying.html",
+    "sha256": "sha256:235fd71ec50f8341e4c16a068241da13b884a22d22233d034bfae9bdb2160475",
+    "statusCode": 200,
+    "byteLength": 171082,
+    "fetchedAt": "2026-06-16T17:21:13+00:00"
+  },
+  {
+    "url": "https://university.segi.edu.my/course/bachelor-of-science-in-architecture-hons/",
+    "localPath": "data/imports/segi/2026-06-16/official-audit/raw/course-course-bachelor-of-science-in-architecture-hons.html",
+    "sha256": "sha256:0767e0fdfc2a87d1b57f4d3c34f630a73ea4dd8f72a7f8058e08c54180fd5bef",
+    "statusCode": 200,
+    "byteLength": 160980,
+    "fetchedAt": "2026-06-16T17:21:15+00:00"
+  },
+  {
+    "url": "https://university.segi.edu.my/course/bachelor-of-psychology-honours-odl/",
+    "localPath": "data/imports/segi/2026-06-16/official-audit/raw/course-course-bachelor-of-psychology-honours-odl.html",
+    "sha256": "sha256:a57472f7d7a33a7733f8572851daad1992e4711ae3096651c39843cd5f4ead41",
+    "statusCode": 200,
+    "byteLength": 166766,
+    "fetchedAt": "2026-06-16T17:21:16+00:00"
+  },
+  {
+    "url": "https://university.segi.edu.my/course/bachelor-of-psychology-honours/",
+    "localPath": "data/imports/segi/2026-06-16/official-audit/raw/course-course-bachelor-of-psychology-honours.html",
+    "sha256": "sha256:f303d6acceab194e40e231aab769fb9d92c29e0a16c984ec9411986c87988dc0",
+    "statusCode": 200,
+    "byteLength": 185126,
+    "fetchedAt": "2026-06-16T17:21:18+00:00"
+  },
+  {
+    "url": "https://university.segi.edu.my/course/bachelor-of-pharmacy-hons/",
+    "localPath": "data/imports/segi/2026-06-16/official-audit/raw/course-course-bachelor-of-pharmacy-hons.html",
+    "sha256": "sha256:881a907c70c8fc4af126c0135eb88293248bf8776fbccd8bef968730e32d60c6",
+    "statusCode": 200,
+    "byteLength": 174367,
+    "fetchedAt": "2026-06-16T17:21:19+00:00"
+  },
+  {
+    "url": "https://university.segi.edu.my/course/bachelor-of-science-hons-optometry/",
+    "localPath": "data/imports/segi/2026-06-16/official-audit/raw/course-course-bachelor-of-science-hons-optometry.html",
+    "sha256": "sha256:d1b983137ace85cb80d064608d56801b0843ca822ac438984bd9984e6317d223",
+    "statusCode": 200,
+    "byteLength": 156121,
+    "fetchedAt": "2026-06-16T17:21:20+00:00"
+  },
+  {
+    "url": "https://university.segi.edu.my/course/bachelor-of-optometry-hons/",
+    "localPath": "data/imports/segi/2026-06-16/official-audit/raw/course-course-bachelor-of-optometry-hons.html",
+    "sha256": "sha256:bb99dd129d8c36fcf546e6b18130c3474826b719306f3b4b183bbcc1ef932e02",
+    "statusCode": 200,
+    "byteLength": 161013,
+    "fetchedAt": "2026-06-16T17:21:22+00:00"
+  },
+  {
+    "url": "https://university.segi.edu.my/course/bachelor-of-medicine-bachelor-of-surgery-mbbs/",
+    "localPath": "data/imports/segi/2026-06-16/official-audit/raw/course-course-bachelor-of-medicine-bachelor-of-surgery-mbbs.html",
+    "sha256": "sha256:4b7c3805e11d71f8435048a62c45bce0586f235503ee60eff2adf5aa99fe16d1",
+    "statusCode": 200,
+    "byteLength": 163003,
+    "fetchedAt": "2026-06-16T17:21:23+00:00"
+  },
+  {
+    "url": "https://university.segi.edu.my/course/doctor-of-philosophy-in-medical-science/",
+    "localPath": "data/imports/segi/2026-06-16/official-audit/raw/course-course-doctor-of-philosophy-in-medical-science.html",
+    "sha256": "sha256:de3bda73dab251e5d0c7508d206dd53ef63823b175a2702d868380fb65af6b89",
+    "statusCode": 200,
+    "byteLength": 156809,
+    "fetchedAt": "2026-06-16T17:21:24+00:00"
+  },
+  {
+    "url": "https://university.segi.edu.my/course/master-of-medical-science-by-research/",
+    "localPath": "data/imports/segi/2026-06-16/official-audit/raw/course-course-master-of-medical-science-by-research.html",
+    "sha256": "sha256:1e6efc1f37fd6bfa1f3f3fc59e3490faa75f6162b9b59fcf784141295b736df2",
+    "statusCode": 200,
+    "byteLength": 150938,
+    "fetchedAt": "2026-06-16T17:21:25+00:00"
+  },
+  {
+    "url": "https://university.segi.edu.my/course/bachelor-of-mechatronics-engineering-hons/",
+    "localPath": "data/imports/segi/2026-06-16/official-audit/raw/course-course-bachelor-of-mechatronics-engineering-hons.html",
+    "sha256": "sha256:9631b4f41bd0373a7806410230435fc8f37449ab4bb6ce26f2f2ba1f98cce3a5",
+    "statusCode": 200,
+    "byteLength": 166425,
+    "fetchedAt": "2026-06-16T17:21:27+00:00"
+  },
+  {
+    "url": "https://university.segi.edu.my/course/bachelor-of-mechanical-engineering-hons/",
+    "localPath": "data/imports/segi/2026-06-16/official-audit/raw/course-course-bachelor-of-mechanical-engineering-hons.html",
+    "sha256": "sha256:140f1330b301e22c341541626e4f5cc2666cc2602445444521ff01d9094822e8",
+    "statusCode": 200,
+    "byteLength": 168777,
+    "fetchedAt": "2026-06-16T17:21:28+00:00"
+  },
+  {
+    "url": "https://university.segi.edu.my/course/bachelor-of-mass-communication-hons-odl/",
+    "localPath": "data/imports/segi/2026-06-16/official-audit/raw/course-course-bachelor-of-mass-communication-hons-odl.html",
+    "sha256": "sha256:84ab08723290564e747e5475fc92017dc8ebe270011fcc5b59c4c82ca267e2ec",
+    "statusCode": 200,
+    "byteLength": 156590,
+    "fetchedAt": "2026-06-16T17:21:29+00:00"
+  },
+  {
+    "url": "https://university.segi.edu.my/course/bachelor-of-mass-communication-hons/",
+    "localPath": "data/imports/segi/2026-06-16/official-audit/raw/course-course-bachelor-of-mass-communication-hons.html",
+    "sha256": "sha256:c716b93f694bf2710e9f655c87dbcc31a85a9ce6152a20c2837e04584b5aa71d",
+    "statusCode": 200,
+    "byteLength": 172428,
+    "fetchedAt": "2026-06-16T17:21:31+00:00"
+  },
+  {
+    "url": "https://university.segi.edu.my/course/bachelor-of-information-technology-hons-odl/",
+    "localPath": "data/imports/segi/2026-06-16/official-audit/raw/course-course-bachelor-of-information-technology-hons-odl.html",
+    "sha256": "sha256:e4a7077d96721c33556996d917052fc0de605a7a050f3baa1931f5f1f97ddb3e",
+    "statusCode": 200,
+    "byteLength": 154003,
+    "fetchedAt": "2026-06-16T17:21:32+00:00"
+  },
+  {
+    "url": "https://university.segi.edu.my/course/bachelor-of-information-technology-hons/",
+    "localPath": "data/imports/segi/2026-06-16/official-audit/raw/course-course-bachelor-of-information-technology-hons.html",
+    "sha256": "sha256:ed1814116ad9a14644a58c66d5a62884f19797071e155ac6a97e62309378dc6c",
+    "statusCode": 200,
+    "byteLength": 173848,
+    "fetchedAt": "2026-06-16T17:21:33+00:00"
+  },
+  {
+    "url": "https://university.segi.edu.my/course/bachelor-of-hospitality-management-honours-odl/",
+    "localPath": "data/imports/segi/2026-06-16/official-audit/raw/course-course-bachelor-of-hospitality-management-honours-odl.html",
+    "sha256": "sha256:b1060b84610ec0f0b963a5f78c3f281d532c7ff0405d195eebb085e0a07ca0f1",
+    "statusCode": 200,
+    "byteLength": 151611,
+    "fetchedAt": "2026-06-16T17:21:35+00:00"
+  },
+  {
+    "url": "https://university.segi.edu.my/course/bachelor-of-hospitality-management-hons/",
+    "localPath": "data/imports/segi/2026-06-16/official-audit/raw/course-course-bachelor-of-hospitality-management-hons.html",
+    "sha256": "sha256:027229f4d782809157b42b18b9bc9494d57008b1c2579f4a1c627a84ee4f306f",
+    "statusCode": 200,
+    "byteLength": 169990,
+    "fetchedAt": "2026-06-16T17:21:36+00:00"
+  },
+  {
+    "url": "https://university.segi.edu.my/course/bachelor-of-electrical-and-electronics-engineering-hons/",
+    "localPath": "data/imports/segi/2026-06-16/official-audit/raw/course-course-bachelor-of-electrical-and-electronics-engineering-hons.html",
+    "sha256": "sha256:adad03f277cd23b35b4537989278075bdf4defb0647c352b3279dc751b74cb0c",
+    "statusCode": 200,
+    "byteLength": 169938,
+    "fetchedAt": "2026-06-16T17:21:38+00:00"
+  },
+  {
+    "url": "https://university.segi.edu.my/course/bachelor-of-education-hons/",
+    "localPath": "data/imports/segi/2026-06-16/official-audit/raw/course-course-bachelor-of-education-hons.html",
+    "sha256": "sha256:f1e363e135d77d0cc7ae74709d87a9351e977c25988643f573785dae56505782",
+    "statusCode": 200,
+    "byteLength": 178751,
+    "fetchedAt": "2026-06-16T17:21:39+00:00"
+  },
+  {
+    "url": "https://university.segi.edu.my/course/bachelor-of-education-hons-odl/",
+    "localPath": "data/imports/segi/2026-06-16/official-audit/raw/course-course-bachelor-of-education-hons-odl.html",
+    "sha256": "sha256:8c8b3a198b39886695e830b3d0dd428bc6ee02f2ce8c0127126ae27b365d2964",
+    "statusCode": 200,
+    "byteLength": 152821,
+    "fetchedAt": "2026-06-16T17:21:40+00:00"
+  },
+  {
+    "url": "https://university.segi.edu.my/course/bachelor-of-dental-surgery-bds/",
+    "localPath": "data/imports/segi/2026-06-16/official-audit/raw/course-course-bachelor-of-dental-surgery-bds.html",
+    "sha256": "sha256:60cd5171615f198988615fbf9b6adb61152199fc30353bd375bbab25c84e1cd1",
+    "statusCode": 200,
+    "byteLength": 177034,
+    "fetchedAt": "2026-06-16T17:21:42+00:00"
+  },
+  {
+    "url": "https://university.segi.edu.my/course/bachelor-of-computer-science-honours-odl/",
+    "localPath": "data/imports/segi/2026-06-16/official-audit/raw/course-course-bachelor-of-computer-science-honours-odl.html",
+    "sha256": "sha256:9e6d5b0084897cf19c1085e49666100540af0fb91829d620fcb6f2906bd6c486",
+    "statusCode": 200,
+    "byteLength": 155649,
+    "fetchedAt": "2026-06-16T17:21:43+00:00"
+  },
+  {
+    "url": "https://university.segi.edu.my/course/bachelor-of-computer-science-hons/",
+    "localPath": "data/imports/segi/2026-06-16/official-audit/raw/course-course-bachelor-of-computer-science-hons.html",
+    "sha256": "sha256:7f55c9e55b8a2a8f9b62c57dd2d3f9d4f6cf23c39d3b40f80fdbdb98cf495344",
+    "statusCode": 200,
+    "byteLength": 174567,
+    "fetchedAt": "2026-06-16T17:21:44+00:00"
+  },
+  {
+    "url": "https://university.segi.edu.my/course/bachelor-of-civil-engineering-hons/",
+    "localPath": "data/imports/segi/2026-06-16/official-audit/raw/course-course-bachelor-of-civil-engineering-hons.html",
+    "sha256": "sha256:c0580b9530037f811733ad63010e61bbc6b11ef827640aec7553e49960acb5ac",
+    "statusCode": 200,
+    "byteLength": 169614,
+    "fetchedAt": "2026-06-16T17:21:46+00:00"
+  },
+  {
+    "url": "https://university.segi.edu.my/course/bachelor-of-chemical-engineering-hons/",
+    "localPath": "data/imports/segi/2026-06-16/official-audit/raw/course-course-bachelor-of-chemical-engineering-hons.html",
+    "sha256": "sha256:6e00c8fc43b702a466e071f2b9d6e33d05e5d32ccf5e01517ae94bde0dca4ed1",
+    "statusCode": 200,
+    "byteLength": 169838,
+    "fetchedAt": "2026-06-16T17:21:47+00:00"
+  },
+  {
+    "url": "https://university.segi.edu.my/course/bachelor-of-biomedical-science-hons/",
+    "localPath": "data/imports/segi/2026-06-16/official-audit/raw/course-course-bachelor-of-biomedical-science-hons.html",
+    "sha256": "sha256:e20ba05400f46f730bed1cdd126662017bfc87cf800f035d56a47f19ad0c2f26",
+    "statusCode": 200,
+    "byteLength": 156714,
+    "fetchedAt": "2026-06-16T17:21:48+00:00"
+  },
+  {
+    "url": "https://university.segi.edu.my/course/bachelor-of-business-analytics-odl/",
+    "localPath": "data/imports/segi/2026-06-16/official-audit/raw/course-course-bachelor-of-business-analytics-odl.html",
+    "sha256": "sha256:0538903d9b65cedd4f162f133fb7d5a33d347a149096ab5f5a48226aef861984",
+    "statusCode": 200,
+    "byteLength": 163419,
+    "fetchedAt": "2026-06-16T17:21:49+00:00"
+  },
+  {
+    "url": "https://university.segi.edu.my/course/bachelor-of-business-management-honours-odl/",
+    "localPath": "data/imports/segi/2026-06-16/official-audit/raw/course-course-bachelor-of-business-management-honours-odl.html",
+    "sha256": "sha256:37c7d05e06f883d3e236af58fcea5aeda1cac2f4a85722c088d7c34dcc3079ea",
+    "statusCode": 200,
+    "byteLength": 162684,
+    "fetchedAt": "2026-06-16T17:21:51+00:00"
+  },
+  {
+    "url": "https://university.segi.edu.my/course/bachelor-of-business-management-honours/",
+    "localPath": "data/imports/segi/2026-06-16/official-audit/raw/course-course-bachelor-of-business-management-honours.html",
+    "sha256": "sha256:ab44e0f5512f3c7588ed7870b12ee2f8390c08fdb057785b1bab46206cf71e75",
+    "statusCode": 200,
+    "byteLength": 178928,
+    "fetchedAt": "2026-06-16T17:21:52+00:00"
+  },
+  {
+    "url": "https://university.segi.edu.my/course/bachelor-of-international-business-honours/",
+    "localPath": "data/imports/segi/2026-06-16/official-audit/raw/course-course-bachelor-of-international-business-honours.html",
+    "sha256": "sha256:d4b8dd28b75c89f0cc1f1b9e71b68e356780e2573b6c18b22148d68abe45d3fa",
+    "statusCode": 200,
+    "byteLength": 164596,
+    "fetchedAt": "2026-06-16T17:21:53+00:00"
+  },
+  {
+    "url": "https://university.segi.edu.my/course/bachelor-of-arts-hons-visual-communication-design-odl/",
+    "localPath": "data/imports/segi/2026-06-16/official-audit/raw/course-course-bachelor-of-arts-hons-visual-communication-design-odl.html",
+    "sha256": "sha256:cef7ce406db13b3209384a137d1e449844c0e561724e5130f63c6c1bb492b9f2",
+    "statusCode": 200,
+    "byteLength": 154017,
+    "fetchedAt": "2026-06-16T17:21:55+00:00"
+  },
+  {
+    "url": "https://university.segi.edu.my/course/bachelor-of-arts-hons-visual-communication-design/",
+    "localPath": "data/imports/segi/2026-06-16/official-audit/raw/course-course-bachelor-of-arts-hons-visual-communication-design.html",
+    "sha256": "sha256:21e9149bdedfce401aefc8675cd39c6208a62bc27f5c972543c82af0f23828bc",
+    "statusCode": 200,
+    "byteLength": 162068,
+    "fetchedAt": "2026-06-16T17:21:56+00:00"
+  },
+  {
+    "url": "https://university.segi.edu.my/course/bachelor-in-multimedia-design-honours-odl/",
+    "localPath": "data/imports/segi/2026-06-16/official-audit/raw/course-course-bachelor-in-multimedia-design-honours-odl.html",
+    "sha256": "sha256:ace4b8c10c1deb4d4855606947deb8d60a5aa7f10028f0a43440f3d4a23dc352",
+    "statusCode": 200,
+    "byteLength": 153705,
+    "fetchedAt": "2026-06-16T17:21:57+00:00"
+  },
+  {
+    "url": "https://university.segi.edu.my/course/bachelor-of-arts-hons-multimedia-design/",
+    "localPath": "data/imports/segi/2026-06-16/official-audit/raw/course-course-bachelor-of-arts-hons-multimedia-design.html",
+    "sha256": "sha256:42b0da8778ff773505f8d1c4c61d862d34c371688f54b7d72b147ff0654f9b85",
+    "statusCode": 200,
+    "byteLength": 161654,
+    "fetchedAt": "2026-06-16T17:21:59+00:00"
+  },
+  {
+    "url": "https://university.segi.edu.my/course/master-of-creative-design-management/",
+    "localPath": "data/imports/segi/2026-06-16/official-audit/raw/course-course-master-of-creative-design-management.html",
+    "sha256": "sha256:ecc88df0b2b795e5b1fc5f222cffefaa0f0e97c0095ef6b0f5a9df58f0347dbd",
+    "statusCode": 200,
+    "byteLength": 150058,
+    "fetchedAt": "2026-06-16T17:22:00+00:00"
+  },
+  {
+    "url": "https://university.segi.edu.my/course/bachelor-of-arts-hons-in-english-and-public-relations/",
+    "localPath": "data/imports/segi/2026-06-16/official-audit/raw/course-course-bachelor-of-arts-hons-in-english-and-public-relations.html",
+    "sha256": "sha256:3e01471807dd1bf98721ae70c9c7fe18051fe70482aae5c603d4f70f62686a7f",
+    "statusCode": 200,
+    "byteLength": 172113,
+    "fetchedAt": "2026-06-16T17:22:02+00:00"
+  },
+  {
+    "url": "https://university.segi.edu.my/course/bachelor-of-art-in-interior-architecture-hons/",
+    "localPath": "data/imports/segi/2026-06-16/official-audit/raw/course-course-bachelor-of-art-in-interior-architecture-hons.html",
+    "sha256": "sha256:db9ded82598365948d3675b3229011694bd5cc5ec185ffc2a3390d3430825923",
+    "statusCode": 200,
+    "byteLength": 157384,
+    "fetchedAt": "2026-06-16T17:22:03+00:00"
+  },
+  {
+    "url": "https://university.segi.edu.my/course/bachelor-of-accounting-and-finance-honours-odl/",
+    "localPath": "data/imports/segi/2026-06-16/official-audit/raw/course-course-bachelor-of-accounting-and-finance-honours-odl.html",
+    "sha256": "sha256:dacfc95c100f54581fba7dfca3a89cb2897f5bd6997561432f1baf1286b394d2",
+    "statusCode": 200,
+    "byteLength": 155369,
+    "fetchedAt": "2026-06-16T17:22:05+00:00"
+  },
+  {
+    "url": "https://university.segi.edu.my/course/bachelor-of-accounting-and-finance-honours/",
+    "localPath": "data/imports/segi/2026-06-16/official-audit/raw/course-course-bachelor-of-accounting-and-finance-honours.html",
+    "sha256": "sha256:ae44599f458be22c02b04d85c63f837492d3fcad3202c158f29beb83fcd2d2a4",
+    "statusCode": 200,
+    "byteLength": 174900,
+    "fetchedAt": "2026-06-16T17:22:06+00:00"
+  },
+  {
+    "url": "https://university.segi.edu.my/course/diploma-in-hotel-management-odl/",
+    "localPath": "data/imports/segi/2026-06-16/official-audit/raw/course-course-diploma-in-hotel-management-odl.html",
+    "sha256": "sha256:bf620deea567894d14c32ce38e911b41d586ba7e11b271b24e44814b59515a73",
+    "statusCode": 200,
+    "byteLength": 149067,
+    "fetchedAt": "2026-06-16T17:22:08+00:00"
+  },
+  {
+    "url": "https://university.segi.edu.my/course/diploma-in-information-technology-odl/",
+    "localPath": "data/imports/segi/2026-06-16/official-audit/raw/course-course-diploma-in-information-technology-odl.html",
+    "sha256": "sha256:148d6925c65264c998769d8a62a6e9cb161a17045ef1863437db43893e9b05df",
+    "statusCode": 200,
+    "byteLength": 151750,
+    "fetchedAt": "2026-06-16T17:22:09+00:00"
+  },
+  {
+    "url": "https://university.segi.edu.my/course/diploma-in-psychology-odl/",
+    "localPath": "data/imports/segi/2026-06-16/official-audit/raw/course-course-diploma-in-psychology-odl.html",
+    "sha256": "sha256:3e1b10be942e46fb2d80180fed948ade59e1b9748484ef27782f12fbbc94c6ff",
+    "statusCode": 200,
+    "byteLength": 155837,
+    "fetchedAt": "2026-06-16T17:22:14+00:00"
+  },
+  {
+    "url": "https://university.segi.edu.my/course/diploma-in-multimedia-design-odl/",
+    "localPath": "data/imports/segi/2026-06-16/official-audit/raw/course-course-diploma-in-multimedia-design-odl.html",
+    "sha256": "sha256:6695d6e268d35adaa56534d99a7d890636ca97bdf903420fff04f6adc95de581",
+    "statusCode": 200,
+    "byteLength": 150916,
+    "fetchedAt": "2026-06-16T17:22:15+00:00"
+  },
+  {
+    "url": "https://university.segi.edu.my/course/diploma-in-graphic-design-odl/",
+    "localPath": "data/imports/segi/2026-06-16/official-audit/raw/course-course-diploma-in-graphic-design-odl.html",
+    "sha256": "sha256:8bacfe0b5d759aef170b492a33379d2bc7603484febc3e0c36d2b65f3d70aec1",
+    "statusCode": 200,
+    "byteLength": 150824,
+    "fetchedAt": "2026-06-16T17:22:17+00:00"
+  },
+  {
+    "url": "https://university.segi.edu.my/course/diploma-in-business-administration-odl/",
+    "localPath": "data/imports/segi/2026-06-16/official-audit/raw/course-course-diploma-in-business-administration-odl.html",
+    "sha256": "sha256:a81b7a1095fd9658a28ab59fb1f57f7d855280f3454ba2ebcb7a91079d04f52e",
+    "statusCode": 200,
+    "byteLength": 150279,
+    "fetchedAt": "2026-06-16T17:22:18+00:00"
+  },
+  {
+    "url": "https://university.segi.edu.my/course/diploma-of-accountancy-odl/",
+    "localPath": "data/imports/segi/2026-06-16/official-audit/raw/course-course-diploma-of-accountancy-odl.html",
+    "sha256": "sha256:c00f38f488890adae437f7a51cbf791cb7293fbd51ed470ef766821eefc2184d",
+    "statusCode": 200,
+    "byteLength": 149592,
+    "fetchedAt": "2026-06-16T17:22:19+00:00"
+  },
+  {
+    "url": "https://university.segi.edu.my/course/diploma-in-early-childhood-education-odl/",
+    "localPath": "data/imports/segi/2026-06-16/official-audit/raw/course-course-diploma-in-early-childhood-education-odl.html",
+    "sha256": "sha256:e0c70763701e00dd25173706a5ae821e77b8104fd66bc137110becdfec19eb8a",
+    "statusCode": 200,
+    "byteLength": 155728,
+    "fetchedAt": "2026-06-16T17:22:20+00:00"
+  },
+  {
+    "url": "https://university.segi.edu.my/course/executive-diploma-in-business-administration-odl/",
+    "localPath": "data/imports/segi/2026-06-16/official-audit/raw/course-course-executive-diploma-in-business-administration-odl.html",
+    "sha256": "sha256:6447f983be0287a749a48892f38d09238e353a3418a5a84061395b2c0d3b4b16",
+    "statusCode": 200,
+    "byteLength": 155790,
+    "fetchedAt": "2026-06-16T17:22:21+00:00"
+  },
+  {
+    "url": "https://university.segi.edu.my/course/foundation-in-science-odl/",
+    "localPath": "data/imports/segi/2026-06-16/official-audit/raw/course-course-foundation-in-science-odl.html",
+    "sha256": "sha256:a794462e7b6af179c888f558806d23f8c8d4aa036c4939ab06a81d15d3dd625d",
+    "statusCode": 200,
+    "byteLength": 149667,
+    "fetchedAt": "2026-06-16T17:22:23+00:00"
+  },
+  {
+    "url": "https://university.segi.edu.my/course/foundation-in-science/",
+    "localPath": "data/imports/segi/2026-06-16/official-audit/raw/course-course-foundation-in-science.html",
+    "sha256": "sha256:433125ca5993eee67c7bfe3168c3952f0551e08ff16e1a6f1ec34f938a944806",
+    "statusCode": 200,
+    "byteLength": 152283,
+    "fetchedAt": "2026-06-16T17:22:24+00:00"
+  },
+  {
+    "url": "https://university.segi.edu.my/course/foundation-in-arts-odl/",
+    "localPath": "data/imports/segi/2026-06-16/official-audit/raw/course-course-foundation-in-arts-odl.html",
+    "sha256": "sha256:4632c304a5cc9ed7d91a5df6b3898aa669ebc4009229621f1f880fb02a385c01",
+    "statusCode": 200,
+    "byteLength": 148595,
+    "fetchedAt": "2026-06-16T17:22:25+00:00"
+  },
+  {
+    "url": "https://university.segi.edu.my/course/foundation-in-arts/",
+    "localPath": "data/imports/segi/2026-06-16/official-audit/raw/course-course-foundation-in-arts.html",
+    "sha256": "sha256:c56d0abdb7afe67013d607ad0138e2b90ffedb6cb2a5ef3d55b7e7f0c4b21ef1",
+    "statusCode": 200,
+    "byteLength": 151866,
+    "fetchedAt": "2026-06-16T17:22:27+00:00"
+  }
+]

@@ -1,0 +1,18 @@
+{
+  "blocking": [],
+  "review": [],
+  "resolved": [
+    {
+      "id": "fee-total-policy",
+      "scope": "fee",
+      "affectedRecords": 68,
+      "resolution": "Official annual/per-year fee rows are converted to StudyMY full-duration total tuition only when official minimum full-time duration is available; each candidate preserves the original official rate, duration, formula, and fee source."
+    },
+    {
+      "id": "localization-identity",
+      "scope": "localization",
+      "affectedRecords": 81,
+      "resolution": "Collect-only candidate keeps exact official English programme names in all locale slots as identity-safe StudyMY text. This does not claim official translation and does not alter facts."
+    }
+  ]
+}

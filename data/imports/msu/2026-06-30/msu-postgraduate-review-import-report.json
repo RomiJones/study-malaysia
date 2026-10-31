@@ -1,0 +1,72 @@
+{
+  "mode": "imported",
+  "universityId": 43,
+  "backupPath": "/Users/ian/Desktop/dev/study-malaysia/apps/api/tmp/backups/msu-postgraduate-review-before-authorized-fees-2026-06-30.json",
+  "catalogCacheCleared": false,
+  "summary": {
+    "importRows": 30,
+    "byLevel": {
+      "bachelor": 0,
+      "master": 20,
+      "phd": 10
+    },
+    "readyRows": 0,
+    "needsReviewRows": 30,
+    "publishedRows": 0,
+    "uniqueSlugs": 30,
+    "officialFeeRows": 0,
+    "nonOfficialCandidateFeeRows": 27,
+    "missingNonOfficialCandidateFeeRows": 3,
+    "sourceConflictFeeRows": 0,
+    "pendingFeeRows": 30,
+    "directIeltsRows": 4,
+    "missingDirectIeltsRows": 26,
+    "durationReviewRows": 3,
+    "sourceRows": 30,
+    "publicDisplayStatusCounts": {
+      "needs-review": 30
+    },
+    "officialSourceStatusCounts": {
+      "needs-review": 30
+    },
+    "feeAuditStatusCounts": {
+      "pending-review": 30
+    }
+  },
+  "verification": {
+    "importRows": 30,
+    "byLevel": {
+      "bachelor": 0,
+      "master": 20,
+      "phd": 10
+    },
+    "readyRows": 0,
+    "needsReviewRows": 30,
+    "publishedRows": 0,
+    "uniqueSlugs": 30,
+    "officialFeeRows": 0,
+    "nonOfficialCandidateFeeRows": 27,
+    "missingNonOfficialCandidateFeeRows": 3,
+    "sourceConflictFeeRows": 0,
+    "pendingFeeRows": 30,
+    "directIeltsRows": 4,
+    "missingDirectIeltsRows": 26,
+    "durationReviewRows": 3,
+    "sourceRows": 30,
+    "publicDisplayStatusCounts": {
+      "needs-review": 30
+    },
+    "officialSourceStatusCounts": {
+      "needs-review": 30
+    },
+    "feeAuditStatusCounts": {
+      "pending-review": 30
+    },
+    "universityPublicDisplayStatus": "ready",
+    "universityIsPublished": true,
+    "universityProgramCount": 110,
+    "publicLeakageRows": 0,
+    "adminNeedsReviewRows": 30,
+    "activeSupersededRows": 0
+  }
+}

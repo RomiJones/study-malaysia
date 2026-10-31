@@ -1,0 +1,22 @@
+{
+  "auditMeta": {
+    "institution": "University of Nottingham Malaysia",
+    "currentAsOf": "2026-06-19",
+    "authorization": "collect",
+    "canonicalProgrammes": 81
+  },
+  "gaps": [
+    {
+      "field": "applicationDocuments",
+      "affectedRecords": 81,
+      "state": "resolved",
+      "reason": "Official checklist for applications page publishes general, undergraduate, postgraduate taught and postgraduate research supporting document requirements; every candidate now links to that official checklist."
+    },
+    {
+      "field": "rateDerivedTuitionFormula",
+      "affectedRecords": 68,
+      "state": "resolved",
+      "reason": "Official annual/per-year rates are converted with official minimum full-time duration and preserved as formula-backed candidate data."
+    }
+  ]
+}

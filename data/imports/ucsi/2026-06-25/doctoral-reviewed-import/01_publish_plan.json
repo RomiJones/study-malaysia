@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "createdAt": "2026-06-24T17:34:15.490Z",
+  "institution": {
+    "code": "UCSI",
+    "name": "UCSI University",
+    "level": "doctoral",
+    "importDir": "data/imports/ucsi/2026-06-25/doctoral-reviewed-import"
+  },
+  "authorization": "public-operator-review",
+  "sourceInputs": {
+    "reviewedAudit": "audits/UCSI_audit_doctoral_20260625_reviewed_v2.json",
+    "sourceAuditSafeToImport": false,
+    "sourceAuditReason": "Validator output remains safe_to_import=false by contract; this project importer publishes only after explicit operator command."
+  },
+  "writePolicy": {
+    "importer": "apps/api/src/db/import-ucsi-official-audit.ts",
+    "mode": "publish-reviewed-doctoral",
+    "upsertPrefix": "ucsi-doctoral-20260625-",
+    "universityRow": "upsert by code UCSI or slug ucsi-university; publish institution surface if not already public",
+    "programmeRows": "upsert only UCSI reviewed doctoral rows with the ucsi-doctoral-20260625-* slug prefix",
+    "oldReviewRows": "preserve old ucsi-official-2026-row-* rows as hidden needs-review rows; fail verification if they become visible",
+    "removedRows": "only stale rows inside the UCSI reviewed doctoral slug prefix may be removed",
+    "transactional": true,
+    "backupRequired": true
+  },
+  "publicDisplay": {
+    "expectedPublishedRows": 18,
+    "expectedPublicDisplayStatus": "ready",
+    "expectedLevelCounts": {
+      "phd": 18
+    },
+    "officialUnpublishedPolicy": "Display UCSI-unpublished fields as official unpublished; do not infer or estimate missing official data."
+  },
+  "expectedSurface": {
+    "programmeCount": 18,
+    "byLevel": {
+      "bachelor": 0,
+      "master": 0,
+      "phd": 18
+    },
+    "statusPartition": {
+      "ready": 18,
+      "needsReview": 0,
+      "published": 18
+    },
+    "feeAuditStatus": {
+      "matched-official": 18
+    }
+  }
+}

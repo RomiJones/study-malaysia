@@ -20,3 +20,5 @@ output
 /apps/api/apps/
 /audits/
 /docs/notion-snapshot/
+.idea
+

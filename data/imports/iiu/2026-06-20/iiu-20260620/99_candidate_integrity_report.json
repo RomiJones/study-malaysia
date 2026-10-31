@@ -1,0 +1,23 @@
+{
+  "status": "passed",
+  "recordKey": "programmes",
+  "baselineKey": "official_row_disposal",
+  "pageOptionKey": "page_option_inventory",
+  "coverageKey": "field_coverage_matrix",
+  "displayParityKey": "display_parity_report.surfaces",
+  "instructionLedgerKey": "instruction_execution_ledger",
+  "officialDomains": [
+    "newinti.edu.my"
+  ],
+  "recordCount": 107,
+  "baselineCount": 151,
+  "pageOptionCount": 107,
+  "coverageRowCount": 107,
+  "displayParityRowCount": 5,
+  "instructionLedgerCount": 9,
+  "recordsByPublicStatus": {
+    "needs-review": 107
+  },
+  "issueCounts": {},
+  "issues": []
+}

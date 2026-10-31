@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "mode": "iium-undergraduate-published",
+  "createdAt": "2026-06-29T08:15:56.070Z",
+  "institution": {
+    "code": "IIUM",
+    "name": "International Islamic University Malaysia",
+    "importedRows": 58,
+    "byLevel": {
+      "bachelor": 58,
+      "master": 0,
+      "phd": 0
+    }
+  },
+  "sourceAudit": {
+    "workflowStatus": "verified_candidate",
+    "safeToImport": false,
+    "recommendedForImport": true,
+    "validationDecision": "PASS-WITH-EXCEPTIONS",
+    "acceptedGapSummary": {
+      "acceptedBy": "Ian",
+      "acceptedAt": "2026-06-29",
+      "baselineAccepted": true,
+      "curriculumSummaryAcceptedForLaunch": true,
+      "careerOfficialUnpublishedAccepted": true,
+      "applicationDeadlineUsesCurrentIntakeNotice": true,
+      "konOdlFutureSeparateVariant": true,
+      "accountingCreditConflictDecision": "latest official dated source first; if no date then programme page",
+      "editorialCareerBoundary": "No inferred or third-party career prospects are written into this official audit JSON."
+    }
+  },
+  "database": {
+    "backupPath": "tmp/backups/iium-undergraduate-public-before-2026-06-29T08-15-55-890Z.json",
+    "transactionalImport": "passed",
+    "catalogCacheCleared": false,
+    "scopedRows": 58,
+    "activeSupersededBachelorRows": 0,
+    "legacyVisibleBachelorRows": 0,
+    "visibleCurrentRows": 58
+  },
+  "publicVisibility": {
+    "universityPublicDisplayStatus": "ready",
+    "universityIsPublished": true,
+    "universityProgramCount": 58,
+    "rowsPublished": 58,
+    "rowsReady": 58
+  },
+  "displayGate": {
+    "chineseNameRows": 58,
+    "chineseFacultyRows": 58,
+    "chineseCurriculumRows": 58,
+    "careerDisplayRows": 58,
+    "officialUnpublishedCareerRows": 26,
+    "officialDirectIeltsRows": 5,
+    "muetEquivalentIeltsRows": 9,
+    "listIeltsRows": 14,
+    "noListIeltsRows": 44,
+    "officialUnpublishedDirectIeltsRows": 53,
+    "languageCoverageRows": 58,
+    "officialFeeRows": 58,
+    "sourceRows": 58
+  }
+}

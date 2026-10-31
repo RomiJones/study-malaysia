@@ -1,0 +1,3081 @@
+{
+  "schemaVersion": 1,
+  "institution": "Taylor's University",
+  "universityCode": "TSU",
+  "officialDomains": [
+    "taylors.edu.my"
+  ],
+  "retrievedAt": "2026-06-20T16:23:03+00:00",
+  "recordCount": 89,
+  "recordsByLevel": {
+    "bachelor": 46,
+    "master": 28,
+    "phd": 15
+  },
+  "metrics": {
+    "ieltsSummaryOfficialValue": 77,
+    "academicPerformanceStructured": 89,
+    "interviewOfficialValue": 35,
+    "aptitudeAssessmentOfficialValue": 1,
+    "portfolioOfficialValue": 3,
+    "workExperienceOfficialValue": 48,
+    "referenceLetterOfficialValue": 2,
+    "bridgingModuleOfficialValue": 32,
+    "proposalOfficialValue": 20,
+    "supervisorOfficialValue": 4,
+    "priorPublicationOfficialValue": 14,
+    "ieltsSummaryOfficialUnpublished": 12,
+    "healthMedicalOfficialValue": 1
+  },
+  "samples": {
+    "interview": [
+      {
+        "code": "TSU-B-001",
+        "nameEnOfficial": "Bachelor of Science (Honours) in Architecture",
+        "sourceText": [
+          "oth admission process, please take note of our entry requirements listed below. Prerequisites SPM/O-level or equivalent A pass in SPM/O-level or equivalent with 5 credits, including Mathematics. (Except for UEC) Pass an Interview and Aptitude Assessment (AA) Note : All information is subject to change. Readers are responsible for verifying information that pertains to them by contacting the university. Entry Pathway AUSMAT (SACEi) Min. ATAR 70 A",
+          "credit in Mathematic subject at SPM or equivalent level) Taylor's Foundation in Design (FID) Pass with min. CGPA 2.00 Taylor's Foundation in Natural and Built Environments (FNBE) Pass with min. CGPA 2.00 (not subject to interview and AA) Other Taylor's Foundation in related field Pass with min. CGPA 2.00 Taylor's Diploma Pass with min. CGPA 2.67 International Baccalaureate (IB) Min. 28 points and above based on 6 subjects Monash University Found"
+        ]
+      },
+      {
+        "code": "TSU-M-001",
+        "nameEnOfficial": "Master of Architecture",
+        "sourceText": [
+          "gramme offers an exciting opportunity for individuals passionate about pursuing a Master of Architecture. To ensure a smooth admission process, please take note of our entry requirements listed below. Pre-requisite Pass interview which includes review of Design Portfolio and Personal Statement. Entry Pathway Bachelor of Science or Arts in Architectural Studies with a minimum CGPA 2.67; Any other qualifications recognised by the Board of Architec"
+        ]
+      },
+      {
+        "code": "TSU-M-002",
+        "nameEnOfficial": "Master of Science in Virtual Design and Construction",
+        "sourceText": [
+          "ed by the Higher Education Provider (HEP) Senate; OR A Bachelor's Degree (Level 6, MQF) in the field or related fields or equivalent with a minimum CGPA of 2.00 and not meeting a CGPA of 2.50, can be accepted subject to rigorous internal assessment. International Students IELTS 5.5 / TOEFL 46 (May join IEN preparatory course and achieve the IELTS score). Note : Students without a qualification in the related fields or relevant working experience requires to underg"
+        ]
+      },
+      {
+        "code": "TSU-D-001",
+        "nameEnOfficial": "Doctor of Philosophy (PhD) in Architecture",
+        "sourceText": [
+          "el 6) or equivalent (accepted by HEP) in Architecture or related field. Applications are admitted who meet the course requirements and whose research interests match those of an available member of the doctoral faculty. Interview & Review Candidates are required to submit a statement of purpose of their motivation for engaging in this programme of study. Qualified applicants may be invited to interview with a member of the doctoral faculty. Engl",
+          "n available member of the doctoral faculty. Interview & Review Candidates are required to submit a statement of purpose of their motivation for engaging in this programme of study. Qualified applicants may be invited to interview with a member of the doctoral faculty. English Requirement International students must have proof of good proficiency in verbal and written English: International English Language Testing System (IELTS) score of 6.0 or"
+        ]
+      },
+      {
+        "code": "TSU-M-003",
+        "nameEnOfficial": "Master of Science",
+        "sourceText": [
+          "research project component in related field or 2 years working experience in Science related industry; OR Bachelor's Degree in Science (Tier 2) With CGPA less than 2.75 but more than 2.50, candidates will be subject to rigorous internal assessment; OR Bachelor's Degree in Science (Tier 3) With a CGPA less than 2.50 but more than 2.00, recognised by the Malaysian or National Government, AND a minimum of 5 years related working experience; OR Other Qualifications A"
+        ]
+      },
+      {
+        "code": "TSU-M-004",
+        "nameEnOfficial": "Master of Business Administration",
+        "sourceText": [
+          "equirements listed below: Bachelor's degree in the field or related fields with CGPA above 2.75; OR Bachelor's degree in the field or related fields with CGPA between 2.75 and 2.50 with 2 years working experience and an interview; OR Bachelor's degree in the field or relevant fields with CGPA less than 2.5 and minimum 5 years working experience OR Accreditation of Prior Experiential Learning (APEL) in accordance to Malaysian Qualification Agency",
+          "ns: CGPA above 2.50 must have at least two (2) years of relevant working experience; or CGPA 2.00 to 2.50 must have at least five (5) years of relevant working experience; 3. In addition, students will need to undergo a rigorous internal assessment Note : All information is subject to change. Readers are responsible for verifying information that pertains to them by contacting the university."
+        ]
+      },
+      {
+        "code": "TSU-M-005",
+        "nameEnOfficial": "Master of Management",
+        "sourceText": [
+          "ons: CGPA above 2.50 must have at least one (1) year of relevant working experience; or CGPA 2.00 to 2.50 must have at least five (5) years of relevant working experience; 3. In addition, students will need to undergo a rigorous internal assessment. Note : All information is subject to change. Readers are responsible for verifying information that pertains to them by contacting the university."
+        ]
+      },
+      {
+        "code": "TSU-M-006",
+        "nameEnOfficial": "Master of Business Administration (100% Online)",
+        "sourceText": [
+          "rements listed below: A Bachelor's degree in the field or related fields with CGPA above 2.75; OR A Bachelor's degree in the field or related fields with CGPA between 2.50 and 2.75 with 2 years working experience and an interview; OR A Bachelor's degree in the field or relevant fields with a CGPA below 2.50 and a minimum of 5 years of working experience; OR Any other academic qualification that are equivalent to the above and recognised by the M",
+          "ns: CGPA above 2.50 must have at least one (2) years of relevant working experience; or CGPA 2.00 to 2.50 must have at least five (5) years of relevant working experience; 3. In addition, students will need to undergo a rigorous internal assessment Note : All information is subject to change. Readers are responsible for verifying information that pertains to them by contacting the university."
+        ]
+      }
+    ],
+    "aptitudeAssessment": [
+      {
+        "code": "TSU-B-001",
+        "nameEnOfficial": "Bachelor of Science (Honours) in Architecture",
+        "sourceText": [
+          "process, please take note of our entry requirements listed below. Prerequisites SPM/O-level or equivalent A pass in SPM/O-level or equivalent with 5 credits, including Mathematics. (Except for UEC) Pass an Interview and Aptitude Assessment (AA) Note : All information is subject to change. Readers are responsible for verifying information that pertains to them by contacting the university. Entry Pathway AUSMAT (SACEi) Min. ATAR 70 A Level Min. CDD excludin"
+        ]
+      }
+    ],
+    "portfolio": [
+      {
+        "code": "TSU-M-001",
+        "nameEnOfficial": "Master of Architecture",
+        "sourceText": [
+          "individuals passionate about pursuing a Master of Architecture. To ensure a smooth admission process, please take note of our entry requirements listed below. Pre-requisite Pass interview which includes review of Design Portfolio and Personal Statement. Entry Pathway Bachelor of Science or Arts in Architectural Studies with a minimum CGPA 2.67; Any other qualifications recognised by the Board of Architects Malaysia and Malaysian Ministry of High",
+          "rganisation or practice within the building industry.* As evidence, students are to provide a reference letter from the company that clearly indicates the duration of work experience, supported by a company profile, and portfolio of their practical experience For International Students English Requirements: IELTS 5.0 / TOEFL 40 (May join IEN preparatory course and achieve the IELTS score). Note : *The list of registered architect offices, approv"
+        ]
+      },
+      {
+        "code": "TSU-M-010",
+        "nameEnOfficial": "Master of Communication",
+        "sourceText": [
+          "ed by the Government of Malaysia must undergo rigorous internal assessment (the requirement of CGPA is based on item i – ii) Application via APEL A is allowed. Notes: Rigorous assessments can be done through interviews, portfolios, written tests, video resumes or any form of assessment as stipulated by the HEP. For candidates from non-media graduate backgrounds, a rigorous assessment should include an English proficiency test requirement. Candid"
+        ]
+      },
+      {
+        "code": "TSU-M-014",
+        "nameEnOfficial": "Master of Design",
+        "sourceText": [
+          "0 in the relevant field and a minimum of five (5) years working experience in the relevant field; Other relevant equivalent qualifications recognized by the Malaysian Government. AND Pass an interview OR submission of a portfolio determined by the HEP as required. International Students Malaysian University English Test (MUET) with Band 4; IELTS 6.0 / TOEFL 60 (Internet Based Test) (May join IEN preparatory course and achieve the IELTS score) Th"
+        ]
+      }
+    ],
+    "workExperience": [
+      {
+        "code": "TSU-M-001",
+        "nameEnOfficial": "Master of Architecture",
+        "sourceText": [
+          "ther qualifications recognised by the Board of Architects Malaysia and Malaysian Ministry of Higher Education; Students must obtain LAM Part I exemption/recognition prior to joining the programme. Minimum six (6) months practical experience after graduating from the first stage of architectural education at a registered architect office, approved architectural related organization or practice within the building industry.* OR Bachelor of Science or Arts in",
+          "r qualifications recognised by the Board of Architects Malaysia and Malaysian Ministry of Higher Education Students must obtain LAM Part I exemption/recognition prior to joining the programme. Minimum twelve (12) months practical experience after graduating from the first stage of architectural education at a registered architect office , approved architectural related organisation or practice within the building industry.* As evidence, students are to pro"
+        ]
+      },
+      {
+        "code": "TSU-M-002",
+        "nameEnOfficial": "Master of Science in Virtual Design and Construction",
+        "sourceText": [
+          "bject to rigorous internal assessment. International Students IELTS 5.5 / TOEFL 46 (May join IEN preparatory course and achieve the IELTS score). Note : Students without a qualification in the related fields or relevant working experience requires to undergo and pass a bridging module. All information is subject to change. Readers are responsible for verifying information that pertains to them by contacting the university."
+        ]
+      },
+      {
+        "code": "TSU-D-001",
+        "nameEnOfficial": "Doctor of Philosophy (PhD) in Architecture",
+        "sourceText": [
+          "ch at doctoral level through rigorous internal evaluation Approval of the Taylor's University Senate If Your Bachelor's Degree is from a Different Field Students without a qualification in the related fields or relevant working experience are required to undergo and pass a bridging module. Note : Any of the condition of the above would require student's research proposal to be approved. All information is subject to change. Readers are responsible for ve",
+          "in the field or related fields accepted by the HEP Senate Obtain other qualifications equivalent to a master's degree recognised by the Government of Malaysia Candidates without a related qualification in the field/s or working experience in the relevant fields must undergo appropriate prerequisite courses determined by the HEP In addition to the above criteria, those who want to join Doctoral Degree by Retrospective or Prior Publication mode must includ"
+        ]
+      },
+      {
+        "code": "TSU-M-003",
+        "nameEnOfficial": "Master of Science",
+        "sourceText": [
+          "dmission process, please take note of our entry requirements listed below. Requirements Bachelor's Degree in Science (Tier 1) With CGPA equal or more than 2.75 with research project component in related field or 2 years working experience in Science related industry; OR Bachelor's Degree in Science (Tier 2) With CGPA less than 2.75 but more than 2.50, candidates will be subject to rigorous internal assessment; OR Bachelor's Degree in Science (Tier 3) Wit",
+          "ll be subject to rigorous internal assessment; OR Bachelor's Degree in Science (Tier 3) With a CGPA less than 2.50 but more than 2.00, recognised by the Malaysian or National Government, AND a minimum of 5 years related working experience; OR Other Qualifications Any other equivalent qualification recognised by the Malaysian Government or accepted by the Taylor's University Senate, AND any of the above conditions would require student's research proposal"
+        ]
+      },
+      {
+        "code": "TSU-D-002",
+        "nameEnOfficial": "Doctor of Philosophy (PhD) in Science",
+        "sourceText": [
+          "in the field or related fields accepted by the HEP Senate Obtain other qualifications equivalent to a master's degree recognised by the Government of Malaysia Candidates without a related qualification in the field/s or working experience in the relevant fields must undergo appropriate prerequisite courses determined by the HEP In addition to the above criteria, those who want to join Doctoral Degree by Retrospective or Prior Publication mode must includ"
+        ]
+      },
+      {
+        "code": "TSU-M-004",
+        "nameEnOfficial": "Master of Business Administration",
+        "sourceText": [
+          "w. Fulfilling one of the requirements listed below: Bachelor's degree in the field or related fields with CGPA above 2.75; OR Bachelor's degree in the field or related fields with CGPA between 2.75 and 2.50 with 2 years working experience and an interview; OR Bachelor's degree in the field or relevant fields with CGPA less than 2.5 and minimum 5 years working experience OR Accreditation of Prior Experiential Learning (APEL) in accordance to Malaysian Qua",
+          "'s degree in the field or related fields with CGPA between 2.75 and 2.50 with 2 years working experience and an interview; OR Bachelor's degree in the field or relevant fields with CGPA less than 2.5 and minimum 5 years working experience OR Accreditation of Prior Experiential Learning (APEL) in accordance to Malaysian Qualification Agency requirement and 2 years managerial/ supervisory experience; OR Other academic qualification that are equivalent to t"
+        ]
+      },
+      {
+        "code": "TSU-M-005",
+        "nameEnOfficial": "Master of Management",
+        "sourceText": [
+          "or National Government; OR A Bachelor's degree in the field or related fields with a CGPA equal or below 2.50 but above 2.00, recognised by the Malaysian Government or National Government, AND a minimum 5 years related work experience; OR Accreditation of Prior Experiential Learning (APEL) as approved by MoHE; OR Postgraduate Diploma Level 7 in same field recognised by the Malaysian Government, with credit transfer; OR Any other equivalent qualificat",
+          "aysian Qualifications Agency (MQA) The APEL provision is only to be applied to Malaysian nationalities If Your Bachelor Degree Are From Different Fields Students without a qualification in the related fields or relevant working experience requires to undergo and pass a bridging module. Students without a qualification in the related field but with relevant working experience requires to fulfil the following conditions: CGPA above 2.50 must have at least"
+        ]
+      },
+      {
+        "code": "TSU-M-006",
+        "nameEnOfficial": "Master of Business Administration (100% Online)",
+        "sourceText": [
+          "ulfilling one of the requirements listed below: A Bachelor's degree in the field or related fields with CGPA above 2.75; OR A Bachelor's degree in the field or related fields with CGPA between 2.50 and 2.75 with 2 years working experience and an interview; OR A Bachelor's degree in the field or relevant fields with a CGPA below 2.50 and a minimum of 5 years of working experience; OR Any other academic qualification that are equivalent to the above and re",
+          "'s degree in the field or related fields with CGPA between 2.50 and 2.75 with 2 years working experience and an interview; OR A Bachelor's degree in the field or relevant fields with a CGPA below 2.50 and a minimum of 5 years of working experience; OR Any other academic qualification that are equivalent to the above and recognised by the Malaysian Qualification Agency (MQA) and the Malaysian Ministry of Education. International Students English Requirements : IELTS 6.0 (May join IEN preparatory course and achieve the IELTS score). Accreditation of Prior Experiential Learning (APEL) The following criteria shall apply for working adults applying for Accreditation of Prior Experiential Learning (APEL): All applicants are subjected to appropriate APEL assessments conducted by the Malaysian Qualifications Agency (MQA) The APEL provision is only to be applied to Malaysian nationalities If Your Bachelor Degree Are From Different Fields 1. Students without a qualification in the related fields or relevant working experience requires to undergo and pass a bridging module. 2.Students without a qualification in the related field but with relevant working experience requires to fulfil the following conditions: CGPA above 2.50 must have at least one (2) years of relevant working experience; or CGPA 2.00 to 2.50 must have at least five (5) years of relevant working experience; 3. In addition, students will need to undergo a rigorous internal assessment Note : All information is subject to change. Readers are responsible for verifying information that pertains to them by contacting the univer"
+        ]
+      }
+    ],
+    "referenceLetter": [
+      {
+        "code": "TSU-M-001",
+        "nameEnOfficial": "Master of Architecture",
+        "sourceText": [
+          "graduating from the first stage of architectural education at a registered architect office , approved architectural related organisation or practice within the building industry.* As evidence, students are to provide a reference letter from the company that clearly indicates the duration of work experience, supported by a company profile, and portfolio of their practical experience For International Students English Requirements: IELTS 5.0 / TOEFL 40"
+        ]
+      },
+      {
+        "code": "TSU-M-025",
+        "nameEnOfficial": "Master of Clinical Psychology",
+        "sourceText": [
+          "evant work/volunteer experience is not a course entry requirement, applicants who have undertaken relevant work/volunteer experience may wish to include this as part of their personal statement. Minimum two confidential referee reports 1 academic referee - research supervisor is highly encouraged; 1 professional referee outside academic context) to be submitted; and Pass Candidate Selection Interview arranged by Taylor's University (short-list",
+          "ence is not a course entry requirement, applicants who have undertaken relevant work/volunteer experience may wish to include this as part of their personal statement. Minimum two confidential referee reports 1 academic referee - research supervisor is highly encouraged; 1 professional referee outside academic context) to be submitted; and Pass Candidate Selection Interview arranged by Taylor's University (short-listed applicants only) English"
+        ]
+      }
+    ],
+    "bridgingModule": [
+      {
+        "code": "TSU-M-002",
+        "nameEnOfficial": "Master of Science in Virtual Design and Construction",
+        "sourceText": [
+          "al Students IELTS 5.5 / TOEFL 46 (May join IEN preparatory course and achieve the IELTS score). Note : Students without a qualification in the related fields or relevant working experience requires to undergo and pass a bridging module. All information is subject to change. Readers are responsible for verifying information that pertains to them by contacting the university."
+        ]
+      },
+      {
+        "code": "TSU-D-001",
+        "nameEnOfficial": "Doctor of Philosophy (PhD) in Architecture",
+        "sourceText": [
+          "ion Approval of the Taylor's University Senate If Your Bachelor's Degree is from a Different Field Students without a qualification in the related fields or relevant working experience are required to undergo and pass a bridging module. Note : Any of the condition of the above would require student's research proposal to be approved. All information is subject to change. Readers are responsible for verifying information that pertains to them by contac",
+          "her qualifications equivalent to a master's degree recognised by the Government of Malaysia Candidates without a related qualification in the field/s or working experience in the relevant fields must undergo appropriate prerequisite courses determined by the HEP In addition to the above criteria, those who want to join Doctoral Degree by Retrospective or Prior Publication mode must include the below to the formal application: Minimum of 5 publications or e"
+        ]
+      },
+      {
+        "code": "TSU-D-002",
+        "nameEnOfficial": "Doctor of Philosophy (PhD) in Science",
+        "sourceText": [
+          "her qualifications equivalent to a master's degree recognised by the Government of Malaysia Candidates without a related qualification in the field/s or working experience in the relevant fields must undergo appropriate prerequisite courses determined by the HEP In addition to the above criteria, those who want to join Doctoral Degree by Retrospective or Prior Publication mode must include the below to the formal application: Minimum of 5 publications or e"
+        ]
+      },
+      {
+        "code": "TSU-M-004",
+        "nameEnOfficial": "Master of Business Administration",
+        "sourceText": [
+          "managerial or supervisory experience is required If Your Bachelor Degree Are From Different Fields 1. Students without a qualification in the related fields or relevant working experience requires to undergo and pass a bridging module. 2. Students without a qualification in the related field but with relevant working experience requires to fulfil the following conditions: CGPA above 2.50 must have at least two (2) years of relevant working experience"
+        ]
+      },
+      {
+        "code": "TSU-M-005",
+        "nameEnOfficial": "Master of Management",
+        "sourceText": [
+          "ion is only to be applied to Malaysian nationalities If Your Bachelor Degree Are From Different Fields Students without a qualification in the related fields or relevant working experience requires to undergo and pass a bridging module. Students without a qualification in the related field but with relevant working experience requires to fulfil the following conditions: CGPA above 2.50 must have at least one (1) year of relevant working experience; or"
+        ]
+      },
+      {
+        "code": "TSU-M-006",
+        "nameEnOfficial": "Master of Business Administration (100% Online)",
+        "sourceText": [
+          "is only to be applied to Malaysian nationalities If Your Bachelor Degree Are From Different Fields 1. Students without a qualification in the related fields or relevant working experience requires to undergo and pass a bridging module. 2.Students without a qualification in the related field but with relevant working experience requires to fulfil the following conditions: CGPA above 2.50 must have at least one (2) years of relevant working experience;"
+        ]
+      },
+      {
+        "code": "TSU-M-007",
+        "nameEnOfficial": "Master of Management (100% Online)",
+        "sourceText": [
+          "experience, subject to a rigorous internal assessment; OR A Bachelor's Degree in non-related fields with a minimum CGPA of 2.00 as accepted by the HEP Senate and without relevant working experience, subject to passsing prerequisite courses; OR Other academic qualifications that are equivalent to the above and recognised by the MQA and the Malaysian Ministry of Higher Education. International Students English Requirements : IELTS 6.0 (May join IEN preparat"
+        ]
+      },
+      {
+        "code": "TSU-D-003",
+        "nameEnOfficial": "Doctor of Business Administration Programme (DBA)",
+        "sourceText": [
+          "to having relevant working experience and rigorous internal assessment; OR iii. A Master’s degree (Level 7, MQF) in non-related fields, without relevant working experience, accepted by the HEP Senate, subject to passing prerequisite courses; OR iv. Other qualifications equivalent to a Master’s degree (Level 7, MQF) recognised by the Malaysian Government. Accreditation of Prior Experiential Learning (APEL) The following criteria shall apply for working adul",
+          "developed, for example, teamwork, leadership, problem-solving, negotiating and analytical skills. How you will contribute to your class and what experiences you can bring to the institution. (Lancaster University, 2021) Prerequisite Courses The prerequisite courses must equip the applicant with necessary business knowledge of one level lower than the programme level: Managing People Managing Financial Resources Understanding Customers Understanding Environ"
+        ]
+      }
+    ],
+    "proposal": [
+      {
+        "code": "TSU-D-001",
+        "nameEnOfficial": "Doctor of Philosophy (PhD) in Architecture",
+        "sourceText": [
+          "r related field. Applications are admitted who meet the course requirements and whose research interests match those of an available member of the doctoral faculty. Interview & Review Candidates are required to submit a statement of purpose of their motivation for engaging in this programme of study. Qualified applicants may be invited to interview with a member of the doctoral faculty. English Requirement International students must have proof of good pro",
+          "Different Field Students without a qualification in the related fields or relevant working experience are required to undergo and pass a bridging module. Note : Any of the condition of the above would require student's research proposal to be approved. All information is subject to change. Readers are responsible for verifying information that pertains to them by contacting the university. Prior Publication Mode You will need to fulfil one of the below"
+        ]
+      },
+      {
+        "code": "TSU-M-003",
+        "nameEnOfficial": "Master of Science",
+        "sourceText": [
+          "orking experience; OR Other Qualifications Any other equivalent qualification recognised by the Malaysian Government or accepted by the Taylor's University Senate, AND any of the above conditions would require student's research proposal to be approved International Students English Requirement: IELTS 6.0 / TOEFL 60 (Internet Based Test) (May join IEN preparatory course and achieve the IELTS score) The validity of the IELTS or equivalent is within 2 yea"
+        ]
+      },
+      {
+        "code": "TSU-D-002",
+        "nameEnOfficial": "Doctor of Philosophy (PhD) in Science",
+        "sourceText": [
+          "ssessment Other equivalent qualifications Any other equivalent qualification recognised by the Malaysian Government or accepted by the Taylor's University Senate and any of condition of the above would require student's research proposal to be approved. English Requirement for international students : IELTS 6.0 / TOEFL 60 (Internet Based Test) (May join IEN preparatory course and achieve the IELTS score) The validity of the IELTS or equivalent is within"
+        ]
+      },
+      {
+        "code": "TSU-D-003",
+        "nameEnOfficial": "Doctor of Business Administration Programme (DBA)",
+        "sourceText": [
+          "level of study. However, the experience must be relevant to the level of study as well as the content. Rigorous Internal Assessment Rigorous assessment to evaluate the suitability of an applicant for a programme through statement of purpose, interview and other methods may cover the following criteria: Demonstration of strong business experience, and that you have held significant managerial responsibilities. Evidence of any achievements in your profession"
+        ]
+      },
+      {
+        "code": "TSU-D-004",
+        "nameEnOfficial": "Doctor of Philosophy (PhD) in Business",
+        "sourceText": [
+          "e and passed related qualifying assessment OR Any other equivalent qualification recognized by Malaysian government or accepted by the Taylor's University Senate and any of condition of the above would require student's research proposal to be approved. Accreditation of Prior Experiential Learning (APEL) The following criteria shall apply for working adults applying for Accreditation of Prior Experiential Learning (APEL): All applicants are subjected to"
+        ]
+      },
+      {
+        "code": "TSU-M-009",
+        "nameEnOfficial": "Master of Food Studies",
+        "sourceText": [
+          "ce; OR b) CGPA 2.00 to 2.50 must have at least five (5) years of relevant working experience; In addition, students will need to undergo a rigorous internal assessment Any of the above conditions would require student's research proposal to be approved. All information is subject to change. The above entry requirements serve as a guideline. Readers are responsible to verify the information by contacting the university's Admissions Department."
+        ]
+      },
+      {
+        "code": "TSU-D-005",
+        "nameEnOfficial": "Doctor of Philosophy (PhD) In Food Studies",
+        "sourceText": [
+          "Taylor’s University Senate. Notes Students without a qualification in the related fields or relevant working experience requires to undergo and pass a bridging module. Any of the above conditions would require student's research proposal to be approved. All information is subject to change. The above entry requirements serve as a guideline. Readers are responsible to verify the information by contacting the university's Admissions Department. Entry Requ"
+        ]
+      },
+      {
+        "code": "TSU-D-006",
+        "nameEnOfficial": "Doctor of Philosophy (PhD) in Media and Communication Studies",
+        "sourceText": [
+          "e of the examination. Note: Students without a qualification in the related fields or relevant working experience requires to undergo and pass a bridging module. Any of the condition of the above would require student's research proposal to be approved. All information is subject to change. The above entry requirements serve as a guideline. Readers are responsible to verify the information by contacting the university’s Admissions Department. Prior Publ"
+        ]
+      }
+    ],
+    "supervisor": [
+      {
+        "code": "TSU-D-001",
+        "nameEnOfficial": "Doctor of Philosophy (PhD) in Architecture",
+        "sourceText": [
+          "ion Framework, Level 6) or equivalent (accepted by HEP) in Architecture or related field. Applications are admitted who meet the course requirements and whose research interests match those of an available member of the doctoral faculty. Interview & Review Candidates are required to submit a statement of purpose of their motivation for engaging in this programme of study. Qualified applicants may be invited to interview with a member of the doctoral fa",
+          "ral faculty. Interview & Review Candidates are required to submit a statement of purpose of their motivation for engaging in this programme of study. Qualified applicants may be invited to interview with a member of the doctoral faculty. English Requirement International students must have proof of good proficiency in verbal and written English: International English Language Testing System (IELTS) score of 6.0 or its equivalent. The validity of the IE"
+        ]
+      },
+      {
+        "code": "TSU-M-004",
+        "nameEnOfficial": "Master of Business Administration",
+        "sourceText": [
+          "r relevant fields with CGPA less than 2.5 and minimum 5 years working experience OR Accreditation of Prior Experiential Learning (APEL) in accordance to Malaysian Qualification Agency requirement and 2 years managerial/ supervisory experience; OR Other academic qualification that are equivalent to the above and recognized by the Malaysian Qualification Agency (MQA) and the Malaysian Ministry of Education. International Students IELTS 6.0 (May joi",
+          "shall apply for working adults applying for Accreditation of Prior Experiential Learning (APEL): Applicants must meet the requirements set by the Malaysian Qualifications Agency (MQA) A minimum of 2 years' managerial or supervisory experience is required If Your Bachelor Degree Are From Different Fields 1. Students without a qualification in the related fields or relevant working experience requires to undergo and pass a bridging module. 2. Stude"
+        ]
+      },
+      {
+        "code": "TSU-M-007",
+        "nameEnOfficial": "Master of Management (100% Online)",
+        "sourceText": [
+          "shall apply for working adults applying for Accreditation of Prior Experiential Learning (APEL): Applicants must meet the requirements set by the Malaysian Qualifications Agency (MQA) A minimum of 2 years' managerial or supervisory experience is required Note : All information is subject to change. Readers are responsible for verifying information that pertains to them by contacting the university."
+        ]
+      },
+      {
+        "code": "TSU-M-025",
+        "nameEnOfficial": "Master of Clinical Psychology",
+        "sourceText": [
+          "e entry requirement, applicants who have undertaken relevant work/volunteer experience may wish to include this as part of their personal statement. Minimum two confidential referee reports 1 academic referee - research supervisor is highly encouraged; 1 professional referee outside academic context) to be submitted; and Pass Candidate Selection Interview arranged by Taylor's University (short-listed applicants only) English Requirement For Inter"
+        ]
+      }
+    ],
+    "priorPublication": [
+      {
+        "code": "TSU-D-001",
+        "nameEnOfficial": "Doctor of Philosophy (PhD) in Architecture",
+        "sourceText": [
+          "Entry Requirements We offer two entry pathways for this PhD programme, which are normal mode and prior to publication mode. Our PhD by Prior Publication mode provides a unique pathway for you to achieve a Doctoral award based on your existing body of work. We recognise the value of your prior publications and include them as a significant part of your submission for the",
+          "e, which are normal mode and prior to publication mode. Our PhD by Prior Publication mode provides a unique pathway for you to achieve a Doctoral award based on your existing body of work. We recognise the value of your prior publications and include them as a significant part of your submission for the Doctoral award. Normal Mode Master's A Master's Degree (Malaysian Qualification Framework, Level 6) or equivalent (accepted by HEP) in Architecture or r"
+        ]
+      },
+      {
+        "code": "TSU-D-002",
+        "nameEnOfficial": "Doctor of Philosophy (PhD) in Science",
+        "sourceText": [
+          "Entry Requirements We offered two entry pathway for this PhD programme, which is normal mode and prior to publication mode. Our PhD by Prior Publication mode provides a unique pathway for you to achieve a Doctoral award based on your existing body of work. We recognise the value of your prior publications and include them as a significant part of your submission for the",
+          "me, which is normal mode and prior to publication mode. Our PhD by Prior Publication mode provides a unique pathway for you to achieve a Doctoral award based on your existing body of work. We recognise the value of your prior publications and include them as a significant part of your submission for the Doctoral award. Normal Mode Master's Degree Masters in the field of Science; OR Bachelor's Degree Passed Bachelor's degree in Science with min. CGPA 3.6"
+        ]
+      },
+      {
+        "code": "TSU-D-004",
+        "nameEnOfficial": "Doctor of Philosophy (PhD) in Business",
+        "sourceText": [
+          "Entry Requirements We offered two entry pathway for this PhD programme, which is normal mode and prior to publication mode. Our PhD by Prior Publication mode provides a unique pathway for you to achieve a Doctoral award based on your existing body of work. We recognise the value of your prior publications and include them as a significant part of your submission for the",
+          "me, which is normal mode and prior to publication mode. Our PhD by Prior Publication mode provides a unique pathway for you to achieve a Doctoral award based on your existing body of work. We recognise the value of your prior publications and include them as a significant part of your submission for the Doctoral award. Normal Mode You need to fulfil one of the requirements below: Masters in the related discipline; OR Passed Bachelor's degree with min. C"
+        ]
+      },
+      {
+        "code": "TSU-D-005",
+        "nameEnOfficial": "Doctor of Philosophy (PhD) In Food Studies",
+        "sourceText": [
+          "roved. All information is subject to change. The above entry requirements serve as a guideline. Readers are responsible to verify the information by contacting the university's Admissions Department. Entry Requirements (Prior Publication Mode) You will need to fulfil one of the below: Obtain a master's degree in the field or related fields accepted by the HEP Senate Obtain other qualifications equivalent to a master's degree recognised by the Government",
+          "qualification in the field/s or working experience in the relevant fields must undergo appropriate prerequisite courses determined by the HEP; In addition to the above criteria, those who want to join Doctoral Degree by Retrospective or Prior Publication mode must include the below to the formal application: Minimum of 5 publications or equivalent works in alignment with the theme of the specialisation; An executive summary of the above publications"
+        ]
+      },
+      {
+        "code": "TSU-D-006",
+        "nameEnOfficial": "Doctor of Philosophy (PhD) in Media and Communication Studies",
+        "sourceText": [
+          "Entry Requirements We offered two entry pathway for this PhD programme, which is normal mode and prior to publication mode. Our PhD by Prior Publication mode provides a unique pathway for you to achieve a Doctoral award based on your existing body of work. We recognise the value of your prior publications and include them as a significant part of your submission for the",
+          "me, which is normal mode and prior to publication mode. Our PhD by Prior Publication mode provides a unique pathway for you to achieve a Doctoral award based on your existing body of work. We recognise the value of your prior publications and include them as a significant part of your submission for the Doctoral award. Normal Mode Pre-Requisites A Master’s Degree (Level 7, MQF) in Media and Communication with a minimum CGPA of 3.00 or equivalent, as acc"
+        ]
+      },
+      {
+        "code": "TSU-D-007",
+        "nameEnOfficial": "Doctor of Philosophy (PhD) in Computer Science",
+        "sourceText": [
+          "Entry Requirements We offer two entry pathways for this PhD programme, which are normal mode and prior to publication mode. Our PhD by Prior Publication mode provides a unique pathway for you to achieve a Doctoral award based on your existing body of work. We recognise the value of your prior publications and include them as a significant part of your submission for the",
+          "e, which are normal mode and prior to publication mode. Our PhD by Prior Publication mode provides a unique pathway for you to achieve a Doctoral award based on your existing body of work. We recognise the value of your prior publications and include them as a significant part of your submission for the Doctoral award. Normal Mode Pre-requisites: A Master’s degree (Level 7, MQF) in the field of Computing or related fields as accepted by the HEP Senate;"
+        ]
+      },
+      {
+        "code": "TSU-D-008",
+        "nameEnOfficial": "Doctor of Philosophy In Design Management",
+        "sourceText": [
+          "We offered two entry pathway for this PhD programme, which is normal mode and prior to publication mode. Our PhD by Prior Publication mode provides a unique pathway for you to achieve a Doctoral award based on your existing body of work. We recognize the value of your prior publications and include them as a significant part of your submission for the",
+          "me, which is normal mode and prior to publication mode. Our PhD by Prior Publication mode provides a unique pathway for you to achieve a Doctoral award based on your existing body of work. We recognize the value of your prior publications and include them as a significant part of your submission for the Doctoral award. Normal Mode Pre-requisites: A Recognised Master's Degree preferably in Art and Design or a relevant field Equivalent qualification and /"
+        ]
+      },
+      {
+        "code": "TSU-D-009",
+        "nameEnOfficial": "Doctor of Philosophy in Education",
+        "sourceText": [
+          "We offer two entry pathways for this PhD programme, normal mode and prior to publication mode. Our PhD by Prior Publication mode provides a unique pathway for you to achieve a Doctoral award based on your existing body of work. We recognise the value of your prior publications and include them as a significant part of your submission for the",
+          "D programme, normal mode and prior to publication mode. Our PhD by Prior Publication mode provides a unique pathway for you to achieve a Doctoral award based on your existing body of work. We recognise the value of your prior publications and include them as a significant part of your submission for the Doctoral award. Normal Mode Pre-Requisites A Master’s degree in Education field (Level 7, MQF) as accepted by the HEP Senate; or A Master’s degree in no"
+        ]
+      }
+    ],
+    "ieltsSummaryOfficialUnpublished": [
+      {
+        "code": "TSU-B-009",
+        "nameEnOfficial": "Bachelor of Business (Honours)",
+        "languageSummary": "MUET Band 3"
+      },
+      {
+        "code": "TSU-B-010",
+        "nameEnOfficial": "Bachelor of Business (Honours) in International Business and Marketing",
+        "languageSummary": "MUET Band 3"
+      },
+      {
+        "code": "TSU-B-014",
+        "nameEnOfficial": "Bachelor of Actuarial Studies (Honours)",
+        "languageSummary": "MUET Band 3"
+      },
+      {
+        "code": "TSU-B-015",
+        "nameEnOfficial": "Bachelor of Entrepreneurship (Honours) in Team Entrepreneurship",
+        "languageSummary": "Official English requirement published"
+      },
+      {
+        "code": "TSU-M-011",
+        "nameEnOfficial": "Master in Applied Computing (Coursework)",
+        "languageSummary": "MUET Band 4"
+      },
+      {
+        "code": "TSU-M-012",
+        "nameEnOfficial": "Master of Computer Science",
+        "languageSummary": "MUET Band 4"
+      },
+      {
+        "code": "TSU-M-013",
+        "nameEnOfficial": "Master in Applied Computing (100% Online)",
+        "languageSummary": "MUET Band 4"
+      },
+      {
+        "code": "TSU-D-007",
+        "nameEnOfficial": "Doctor of Philosophy (PhD) in Computer Science",
+        "languageSummary": "MUET Band 4"
+      },
+      {
+        "code": "TSU-B-028",
+        "nameEnOfficial": "Bachelor of Interactive Spatial Design (Honours)",
+        "languageSummary": "MUET Band 3"
+      },
+      {
+        "code": "TSU-B-030",
+        "nameEnOfficial": "Bachelor of Design (Honours) In Creative Media",
+        "languageSummary": "MUET Band 3"
+      },
+      {
+        "code": "TSU-D-008",
+        "nameEnOfficial": "Doctor of Philosophy In Design Management",
+        "languageSummary": "Official English requirement published"
+      },
+      {
+        "code": "TSU-B-039",
+        "nameEnOfficial": "Bachelor of Laws (Honours)",
+        "languageSummary": "Official English requirement published"
+      }
+    ],
+    "healthMedical": [
+      {
+        "code": "TSU-B-046",
+        "nameEnOfficial": "Bachelor of Medicine, Bachelor of Surgery (MBBS)",
+        "sourceText": [
+          "ove entry requirements serve as a guideline. Readers are responsible to verify the information by contacting the university’s Admissions Department. Interview All eligible candidates are required to attend an interview. Health Requirements The student should be at least 18 years. Prior to admission, students are required to undergo a medical examination to ensure they are in good health and free of transmissible diseases. They also need to comply with th",
+          "versity’s Admissions Department. Interview All eligible candidates are required to attend an interview. Health Requirements The student should be at least 18 years. Prior to admission, students are required to undergo a medical examination to ensure they are in good health and free of transmissible diseases. They also need to comply with the immunisation and infection risk policy."
+        ]
+      }
+    ]
+  },
+  "records": [
+    {
+      "code": "TSU-B-001",
+      "nameEnOfficial": "Bachelor of Science (Honours) in Architecture",
+      "level": "bachelor",
+      "sourceUrl": "https://university.taylors.edu.my/en/study/explore-all-programmes/architecture-building-and-design/undergraduate/bachelor-of-science-in-architecture.html",
+      "languageStatus": "official-value",
+      "ieltsOnlySummaryStatus": "official-value",
+      "academicPerformanceStatus": "official-value",
+      "documentRoute": "undergraduate-general",
+      "specialRequirementStates": {
+        "interview": "official-value",
+        "aptitudeAssessment": "official-value",
+        "portfolio": "official-unpublished",
+        "workExperience": "official-unpublished",
+        "proposal": "official-unpublished",
+        "supervisor": "official-unpublished",
+        "priorPublication": "official-unpublished",
+        "healthMedical": "official-unpublished",
+        "bridgingModule": "official-unpublished",
+        "referenceLetter": "official-unpublished"
+      },
+      "publicDisplayStatus": "needs-review",
+      "remainingDisplayWork": [
+        "localized programme/faculty names",
+        "student-facing Chinese overview",
+        "localized course setting",
+        "localized career directions"
+      ]
+    },
+    {
+      "code": "TSU-B-002",
+      "nameEnOfficial": "Bachelor of Arts (Honours) in Interior Architecture",
+      "level": "bachelor",
+      "sourceUrl": "https://university.taylors.edu.my/en/study/explore-all-programmes/architecture-building-and-design/undergraduate/bachelor-of-art-in-interior-architecture.html",
+      "languageStatus": "official-value",
+      "ieltsOnlySummaryStatus": "official-value",
+      "academicPerformanceStatus": "official-value",
+      "documentRoute": "undergraduate-general",
+      "specialRequirementStates": {
+        "interview": "official-unpublished",
+        "aptitudeAssessment": "official-unpublished",
+        "portfolio": "official-unpublished",
+        "workExperience": "official-unpublished",
+        "proposal": "official-unpublished",
+        "supervisor": "official-unpublished",
+        "priorPublication": "official-unpublished",
+        "healthMedical": "official-unpublished",
+        "bridgingModule": "official-unpublished",
+        "referenceLetter": "official-unpublished"
+      },
+      "publicDisplayStatus": "needs-review",
+      "remainingDisplayWork": [
+        "localized programme/faculty names",
+        "student-facing Chinese overview",
+        "localized course setting",
+        "localized career directions"
+      ]
+    },
+    {
+      "code": "TSU-B-003",
+      "nameEnOfficial": "Bachelor of Quantity Surveying (Honours)",
+      "level": "bachelor",
+      "sourceUrl": "https://university.taylors.edu.my/en/study/explore-all-programmes/architecture-building-and-design/undergraduate/bachelor-of-quantity-surveying.html",
+      "languageStatus": "official-value",
+      "ieltsOnlySummaryStatus": "official-value",
+      "academicPerformanceStatus": "official-value",
+      "documentRoute": "undergraduate-general",
+      "specialRequirementStates": {
+        "interview": "official-unpublished",
+        "aptitudeAssessment": "official-unpublished",
+        "portfolio": "official-unpublished",
+        "workExperience": "official-unpublished",
+        "proposal": "official-unpublished",
+        "supervisor": "official-unpublished",
+        "priorPublication": "official-unpublished",
+        "healthMedical": "official-unpublished",
+        "bridgingModule": "official-unpublished",
+        "referenceLetter": "official-unpublished"
+      },
+      "publicDisplayStatus": "needs-review",
+      "remainingDisplayWork": [
+        "localized programme/faculty names",
+        "student-facing Chinese overview",
+        "localized course setting",
+        "localized career directions"
+      ]
+    },
+    {
+      "code": "TSU-B-004",
+      "nameEnOfficial": "Bachelor of Science (Honours) in Sustainable Digital Construction Management",
+      "level": "bachelor",
+      "sourceUrl": "https://university.taylors.edu.my/en/study/explore-all-programmes/architecture-building-and-design/undergraduate/bachelor-of-science-honours-in-sustainable-digital-construction-management.html",
+      "languageStatus": "official-value",
+      "ieltsOnlySummaryStatus": "official-value",
+      "academicPerformanceStatus": "official-value",
+      "documentRoute": "undergraduate-general",
+      "specialRequirementStates": {
+        "interview": "official-unpublished",
+        "aptitudeAssessment": "official-unpublished",
+        "portfolio": "official-unpublished",
+        "workExperience": "official-unpublished",
+        "proposal": "official-unpublished",
+        "supervisor": "official-unpublished",
+        "priorPublication": "official-unpublished",
+        "healthMedical": "official-unpublished",
+        "bridgingModule": "official-unpublished",
+        "referenceLetter": "official-unpublished"
+      },
+      "publicDisplayStatus": "needs-review",
+      "remainingDisplayWork": [
+        "localized programme/faculty names",
+        "student-facing Chinese overview",
+        "localized course setting",
+        "localized career directions"
+      ]
+    },
+    {
+      "code": "TSU-M-001",
+      "nameEnOfficial": "Master of Architecture",
+      "level": "master",
+      "sourceUrl": "https://university.taylors.edu.my/en/study/explore-all-programmes/architecture-building-and-design/master-coursework/master-of-architecture.html",
+      "languageStatus": "official-value",
+      "ieltsOnlySummaryStatus": "official-value",
+      "academicPerformanceStatus": "official-value",
+      "documentRoute": "postgraduate-coursework-international",
+      "specialRequirementStates": {
+        "interview": "official-value",
+        "aptitudeAssessment": "official-unpublished",
+        "portfolio": "official-value",
+        "workExperience": "official-value",
+        "proposal": "official-unpublished",
+        "supervisor": "official-unpublished",
+        "priorPublication": "official-unpublished",
+        "healthMedical": "official-unpublished",
+        "bridgingModule": "official-unpublished",
+        "referenceLetter": "official-value"
+      },
+      "publicDisplayStatus": "needs-review",
+      "remainingDisplayWork": [
+        "localized programme/faculty names",
+        "student-facing Chinese overview",
+        "localized course setting",
+        "localized career directions"
+      ]
+    },
+    {
+      "code": "TSU-M-002",
+      "nameEnOfficial": "Master of Science in Virtual Design and Construction",
+      "level": "master",
+      "sourceUrl": "https://university.taylors.edu.my/en/study/explore-all-programmes/architecture-building-and-design/master-coursework/master-of-science-in-virtual-design-and-construction.html",
+      "languageStatus": "official-value",
+      "ieltsOnlySummaryStatus": "official-value",
+      "academicPerformanceStatus": "official-value",
+      "documentRoute": "postgraduate-coursework-international",
+      "specialRequirementStates": {
+        "interview": "official-value",
+        "aptitudeAssessment": "official-unpublished",
+        "portfolio": "official-unpublished",
+        "workExperience": "official-value",
+        "proposal": "official-unpublished",
+        "supervisor": "official-unpublished",
+        "priorPublication": "official-unpublished",
+        "healthMedical": "official-unpublished",
+        "bridgingModule": "official-value",
+        "referenceLetter": "official-unpublished"
+      },
+      "publicDisplayStatus": "needs-review",
+      "remainingDisplayWork": [
+        "localized programme/faculty names",
+        "student-facing Chinese overview",
+        "localized course setting",
+        "localized career directions"
+      ]
+    },
+    {
+      "code": "TSU-D-001",
+      "nameEnOfficial": "Doctor of Philosophy (PhD) in Architecture",
+      "level": "phd",
+      "sourceUrl": "https://university.taylors.edu.my/en/study/explore-all-programmes/architecture-building-and-design/phd-research/doctor-of-philosophy-in-architecture.html",
+      "languageStatus": "official-value",
+      "ieltsOnlySummaryStatus": "official-value",
+      "academicPerformanceStatus": "official-value",
+      "documentRoute": "postgraduate-research-international",
+      "specialRequirementStates": {
+        "interview": "official-value",
+        "aptitudeAssessment": "official-unpublished",
+        "portfolio": "official-unpublished",
+        "workExperience": "official-value",
+        "proposal": "official-value",
+        "supervisor": "official-value",
+        "priorPublication": "official-value",
+        "healthMedical": "official-unpublished",
+        "bridgingModule": "official-value",
+        "referenceLetter": "official-unpublished"
+      },
+      "publicDisplayStatus": "needs-review",
+      "remainingDisplayWork": [
+        "localized programme/faculty names",
+        "student-facing Chinese overview",
+        "localized course setting",
+        "localized career directions"
+      ]
+    },
+    {
+      "code": "TSU-B-005",
+      "nameEnOfficial": "Bachelor of Biomedical Science (Honours)",
+      "level": "bachelor",
+      "sourceUrl": "https://university.taylors.edu.my/en/study/explore-all-programmes/biosciences/undergraduate/bachelor-of-biomedical-science.html",
+      "languageStatus": "official-value",
+      "ieltsOnlySummaryStatus": "official-value",
+      "academicPerformanceStatus": "official-value",
+      "documentRoute": "undergraduate-general",
+      "specialRequirementStates": {
+        "interview": "official-unpublished",
+        "aptitudeAssessment": "official-unpublished",
+        "portfolio": "official-unpublished",
+        "workExperience": "official-unpublished",
+        "proposal": "official-unpublished",
+        "supervisor": "official-unpublished",
+        "priorPublication": "official-unpublished",
+        "healthMedical": "official-unpublished",
+        "bridgingModule": "official-unpublished",
+        "referenceLetter": "official-unpublished"
+      },
+      "publicDisplayStatus": "needs-review",
+      "remainingDisplayWork": [
+        "localized programme/faculty names",
+        "student-facing Chinese overview",
+        "localized course setting",
+        "localized career directions"
+      ]
+    },
+    {
+      "code": "TSU-B-006",
+      "nameEnOfficial": "Bachelor of Food Science (Honours)",
+      "level": "bachelor",
+      "sourceUrl": "https://university.taylors.edu.my/en/study/explore-all-programmes/biosciences/undergraduate/bachelor-of-food-science.html",
+      "languageStatus": "official-value",
+      "ieltsOnlySummaryStatus": "official-value",
+      "academicPerformanceStatus": "official-value",
+      "documentRoute": "undergraduate-general",
+      "specialRequirementStates": {
+        "interview": "official-unpublished",
+        "aptitudeAssessment": "official-unpublished",
+        "portfolio": "official-unpublished",
+        "workExperience": "official-unpublished",
+        "proposal": "official-unpublished",
+        "supervisor": "official-unpublished",
+        "priorPublication": "official-unpublished",
+        "healthMedical": "official-unpublished",
+        "bridgingModule": "official-unpublished",
+        "referenceLetter": "official-unpublished"
+      },
+      "publicDisplayStatus": "needs-review",
+      "remainingDisplayWork": [
+        "localized programme/faculty names",
+        "student-facing Chinese overview",
+        "localized course setting",
+        "localized career directions"
+      ]
+    },
+    {
+      "code": "TSU-B-007",
+      "nameEnOfficial": "Bachelor of Biotechnology (Honours)",
+      "level": "bachelor",
+      "sourceUrl": "https://university.taylors.edu.my/en/study/explore-all-programmes/biosciences/undergraduate/bachelor-of-biotechnology.html",
+      "languageStatus": "official-value",
+      "ieltsOnlySummaryStatus": "official-value",
+      "academicPerformanceStatus": "official-value",
+      "documentRoute": "undergraduate-general",
+      "specialRequirementStates": {
+        "interview": "official-unpublished",
+        "aptitudeAssessment": "official-unpublished",
+        "portfolio": "official-unpublished",
+        "workExperience": "official-unpublished",
+        "proposal": "official-unpublished",
+        "supervisor": "official-unpublished",
+        "priorPublication": "official-unpublished",
+        "healthMedical": "official-unpublished",
+        "bridgingModule": "official-unpublished",
+        "referenceLetter": "official-unpublished"
+      },
+      "publicDisplayStatus": "needs-review",
+      "remainingDisplayWork": [
+        "localized programme/faculty names",
+        "student-facing Chinese overview",
+        "localized course setting",
+        "localized career directions"
+      ]
+    },
+    {
+      "code": "TSU-B-008",
+      "nameEnOfficial": "Bachelor of Applied Health Sciences (Honours)",
+      "level": "bachelor",
+      "sourceUrl": "https://university.taylors.edu.my/en/study/explore-all-programmes/biosciences/undergraduate/bachelor-of-applied-health-sciences.html",
+      "languageStatus": "official-value",
+      "ieltsOnlySummaryStatus": "official-value",
+      "academicPerformanceStatus": "official-value",
+      "documentRoute": "undergraduate-general",
+      "specialRequirementStates": {
+        "interview": "official-unpublished",
+        "aptitudeAssessment": "official-unpublished",
+        "portfolio": "official-unpublished",
+        "workExperience": "official-unpublished",
+        "proposal": "official-unpublished",
+        "supervisor": "official-unpublished",
+        "priorPublication": "official-unpublished",
+        "healthMedical": "official-unpublished",
+        "bridgingModule": "official-unpublished",
+        "referenceLetter": "official-unpublished"
+      },
+      "publicDisplayStatus": "needs-review",
+      "remainingDisplayWork": [
+        "localized programme/faculty names",
+        "student-facing Chinese overview",
+        "localized course setting",
+        "localized career directions"
+      ]
+    },
+    {
+      "code": "TSU-M-003",
+      "nameEnOfficial": "Master of Science",
+      "level": "master",
+      "sourceUrl": "https://university.taylors.edu.my/en/study/explore-all-programmes/biosciences/master-research/master-of-science.html",
+      "languageStatus": "official-value",
+      "ieltsOnlySummaryStatus": "official-value",
+      "academicPerformanceStatus": "official-value",
+      "documentRoute": "postgraduate-research-international",
+      "specialRequirementStates": {
+        "interview": "official-value",
+        "aptitudeAssessment": "official-unpublished",
+        "portfolio": "official-unpublished",
+        "workExperience": "official-value",
+        "proposal": "official-value",
+        "supervisor": "official-unpublished",
+        "priorPublication": "official-unpublished",
+        "healthMedical": "official-unpublished",
+        "bridgingModule": "official-unpublished",
+        "referenceLetter": "official-unpublished"
+      },
+      "publicDisplayStatus": "needs-review",
+      "remainingDisplayWork": [
+        "localized programme/faculty names",
+        "student-facing Chinese overview",
+        "localized course setting",
+        "localized career directions"
+      ]
+    },
+    {
+      "code": "TSU-D-002",
+      "nameEnOfficial": "Doctor of Philosophy (PhD) in Science",
+      "level": "phd",
+      "sourceUrl": "https://university.taylors.edu.my/en/study/explore-all-programmes/biosciences/phd-research/doctor-of-philosophy-in-science.html",
+      "languageStatus": "official-value",
+      "ieltsOnlySummaryStatus": "official-value",
+      "academicPerformanceStatus": "official-value",
+      "documentRoute": "postgraduate-research-international",
+      "specialRequirementStates": {
+        "interview": "official-unpublished",
+        "aptitudeAssessment": "official-unpublished",
+        "portfolio": "official-unpublished",
+        "workExperience": "official-value",
+        "proposal": "official-value",
+        "supervisor": "official-unpublished",
+        "priorPublication": "official-value",
+        "healthMedical": "official-unpublished",
+        "bridgingModule": "official-value",
+        "referenceLetter": "official-unpublished"
+      },
+      "publicDisplayStatus": "needs-review",
+      "remainingDisplayWork": [
+        "localized programme/faculty names",
+        "student-facing Chinese overview",
+        "localized course setting",
+        "localized career directions"
+      ]
+    },
+    {
+      "code": "TSU-B-009",
+      "nameEnOfficial": "Bachelor of Business (Honours)",
+      "level": "bachelor",
+      "sourceUrl": "https://university.taylors.edu.my/en/study/explore-all-programmes/business/undergraduate/bachelor-of-business.html",
+      "languageStatus": "official-value",
+      "ieltsOnlySummaryStatus": "official-unpublished",
+      "academicPerformanceStatus": "official-value",
+      "documentRoute": "undergraduate-general",
+      "specialRequirementStates": {
+        "interview": "official-unpublished",
+        "aptitudeAssessment": "official-unpublished",
+        "portfolio": "official-unpublished",
+        "workExperience": "official-unpublished",
+        "proposal": "official-unpublished",
+        "supervisor": "official-unpublished",
+        "priorPublication": "official-unpublished",
+        "healthMedical": "official-unpublished",
+        "bridgingModule": "official-unpublished",
+        "referenceLetter": "official-unpublished"
+      },
+      "publicDisplayStatus": "needs-review",
+      "remainingDisplayWork": [
+        "localized programme/faculty names",
+        "student-facing Chinese overview",
+        "localized course setting",
+        "localized career directions"
+      ]
+    },
+    {
+      "code": "TSU-B-010",
+      "nameEnOfficial": "Bachelor of Business (Honours) in International Business and Marketing",
+      "level": "bachelor",
+      "sourceUrl": "https://university.taylors.edu.my/en/study/explore-all-programmes/business/undergraduate/bachelor-of-business-in-international-business-and-marketing.html",
+      "languageStatus": "official-value",
+      "ieltsOnlySummaryStatus": "official-unpublished",
+      "academicPerformanceStatus": "official-value",
+      "documentRoute": "undergraduate-general",
+      "specialRequirementStates": {
+        "interview": "official-unpublished",
+        "aptitudeAssessment": "official-unpublished",
+        "portfolio": "official-unpublished",
+        "workExperience": "official-unpublished",
+        "proposal": "official-unpublished",
+        "supervisor": "official-unpublished",
+        "priorPublication": "official-unpublished",
+        "healthMedical": "official-unpublished",
+        "bridgingModule": "official-unpublished",
+        "referenceLetter": "official-unpublished"
+      },
+      "publicDisplayStatus": "needs-review",
+      "remainingDisplayWork": [
+        "localized programme/faculty names",
+        "student-facing Chinese overview",
+        "localized course setting",
+        "localized career directions"
+      ]
+    },
+    {
+      "code": "TSU-B-011",
+      "nameEnOfficial": "Bachelor of Accounting (Finance) (Honours)",
+      "level": "bachelor",
+      "sourceUrl": "https://university.taylors.edu.my/en/study/explore-all-programmes/business/undergraduate/bachelor-of-accounting-and-finance.html",
+      "languageStatus": "official-value",
+      "ieltsOnlySummaryStatus": "official-value",
+      "academicPerformanceStatus": "official-value",
+      "documentRoute": "undergraduate-general",
+      "specialRequirementStates": {
+        "interview": "official-unpublished",
+        "aptitudeAssessment": "official-unpublished",
+        "portfolio": "official-unpublished",
+        "workExperience": "official-unpublished",
+        "proposal": "official-unpublished",
+        "supervisor": "official-unpublished",
+        "priorPublication": "official-unpublished",
+        "healthMedical": "official-unpublished",
+        "bridgingModule": "official-unpublished",
+        "referenceLetter": "official-unpublished"
+      },
+      "publicDisplayStatus": "needs-review",
+      "remainingDisplayWork": [
+        "localized programme/faculty names",
+        "student-facing Chinese overview",
+        "localized course setting",
+        "localized career directions"
+      ]
+    },
+    {
+      "code": "TSU-B-012",
+      "nameEnOfficial": "Bachelor of Banking and Finance (Honours)",
+      "level": "bachelor",
+      "sourceUrl": "https://university.taylors.edu.my/en/study/explore-all-programmes/business/undergraduate/bachelor-of-banking-and-finance.html",
+      "languageStatus": "official-value",
+      "ieltsOnlySummaryStatus": "official-value",
+      "academicPerformanceStatus": "official-value",
+      "documentRoute": "undergraduate-general",
+      "specialRequirementStates": {
+        "interview": "official-unpublished",
+        "aptitudeAssessment": "official-unpublished",
+        "portfolio": "official-unpublished",
+        "workExperience": "official-unpublished",
+        "proposal": "official-unpublished",
+        "supervisor": "official-unpublished",
+        "priorPublication": "official-unpublished",
+        "healthMedical": "official-unpublished",
+        "bridgingModule": "official-unpublished",
+        "referenceLetter": "official-unpublished"
+      },
+      "publicDisplayStatus": "needs-review",
+      "remainingDisplayWork": [
+        "localized programme/faculty names",
+        "student-facing Chinese overview",
+        "localized course setting",
+        "localized career directions"
+      ]
+    },
+    {
+      "code": "TSU-B-013",
+      "nameEnOfficial": "Bachelor of Finance and Economics (Honours)",
+      "level": "bachelor",
+      "sourceUrl": "https://university.taylors.edu.my/en/study/explore-all-programmes/business/undergraduate/bachelor-of-finance-and-economics.html",
+      "languageStatus": "official-value",
+      "ieltsOnlySummaryStatus": "official-value",
+      "academicPerformanceStatus": "official-value",
+      "documentRoute": "undergraduate-general",
+      "specialRequirementStates": {
+        "interview": "official-unpublished",
+        "aptitudeAssessment": "official-unpublished",
+        "portfolio": "official-unpublished",
+        "workExperience": "official-unpublished",
+        "proposal": "official-unpublished",
+        "supervisor": "official-unpublished",
+        "priorPublication": "official-unpublished",
+        "healthMedical": "official-unpublished",
+        "bridgingModule": "official-unpublished",
+        "referenceLetter": "official-unpublished"
+      },
+      "publicDisplayStatus": "needs-review",
+      "remainingDisplayWork": [
+        "localized programme/faculty names",
+        "student-facing Chinese overview",
+        "localized course setting",
+        "localized career directions"
+      ]
+    },
+    {
+      "code": "TSU-B-014",
+      "nameEnOfficial": "Bachelor of Actuarial Studies (Honours)",
+      "level": "bachelor",
+      "sourceUrl": "https://university.taylors.edu.my/en/study/explore-all-programmes/business/undergraduate/bachelor-of-actuarial-studies.html",
+      "languageStatus": "official-value",
+      "ieltsOnlySummaryStatus": "official-unpublished",
+      "academicPerformanceStatus": "official-value",
+      "documentRoute": "undergraduate-general",
+      "specialRequirementStates": {
+        "interview": "official-unpublished",
+        "aptitudeAssessment": "official-unpublished",
+        "portfolio": "official-unpublished",
+        "workExperience": "official-unpublished",
+        "proposal": "official-unpublished",
+        "supervisor": "official-unpublished",
+        "priorPublication": "official-unpublished",
+        "healthMedical": "official-unpublished",
+        "bridgingModule": "official-unpublished",
+        "referenceLetter": "official-unpublished"
+      },
+      "publicDisplayStatus": "needs-review",
+      "remainingDisplayWork": [
+        "localized programme/faculty names",
+        "student-facing Chinese overview",
+        "localized course setting",
+        "localized career directions"
+      ]
+    },
+    {
+      "code": "TSU-B-015",
+      "nameEnOfficial": "Bachelor of Entrepreneurship (Honours) in Team Entrepreneurship",
+      "level": "bachelor",
+      "sourceUrl": "https://university.taylors.edu.my/en/study/explore-all-programmes/business/undergraduate/bachelor-of-entrepreneurship-in-team-enterpreneurship.html",
+      "languageStatus": "official-value",
+      "ieltsOnlySummaryStatus": "official-unpublished",
+      "academicPerformanceStatus": "official-value",
+      "documentRoute": "undergraduate-general",
+      "specialRequirementStates": {
+        "interview": "official-unpublished",
+        "aptitudeAssessment": "official-unpublished",
+        "portfolio": "official-unpublished",
+        "workExperience": "official-unpublished",
+        "proposal": "official-unpublished",
+        "supervisor": "official-unpublished",
+        "priorPublication": "official-unpublished",
+        "healthMedical": "official-unpublished",
+        "bridgingModule": "official-unpublished",
+        "referenceLetter": "official-unpublished"
+      },
+      "publicDisplayStatus": "needs-review",
+      "remainingDisplayWork": [
+        "localized programme/faculty names",
+        "student-facing Chinese overview",
+        "localized course setting",
+        "localized career directions"
+      ]
+    },
+    {
+      "code": "TSU-B-016",
+      "nameEnOfficial": "Bachelor of Accounting With Fintech (Honours)",
+      "level": "bachelor",
+      "sourceUrl": "https://university.taylors.edu.my/en/study/explore-all-programmes/business/undergraduate/bachelor-of-accounting-fintech.html",
+      "languageStatus": "official-value",
+      "ieltsOnlySummaryStatus": "official-value",
+      "academicPerformanceStatus": "official-value",
+      "documentRoute": "undergraduate-general",
+      "specialRequirementStates": {
+        "interview": "official-unpublished",
+        "aptitudeAssessment": "official-unpublished",
+        "portfolio": "official-unpublished",
+        "workExperience": "official-unpublished",
+        "proposal": "official-unpublished",
+        "supervisor": "official-unpublished",
+        "priorPublication": "official-unpublished",
+        "healthMedical": "official-unpublished",
+        "bridgingModule": "official-unpublished",
+        "referenceLetter": "official-unpublished"
+      },
+      "publicDisplayStatus": "needs-review",
+      "remainingDisplayWork": [
+        "localized programme/faculty names",
+        "student-facing Chinese overview",
+        "localized course setting",
+        "localized career directions"
+      ]
+    },
+    {
+      "code": "TSU-M-004",
+      "nameEnOfficial": "Master of Business Administration",
+      "level": "master",
+      "sourceUrl": "https://university.taylors.edu.my/en/study/explore-all-programmes/business/master-coursework/master-of-business-administration.html",
+      "languageStatus": "official-value",
+      "ieltsOnlySummaryStatus": "official-value",
+      "academicPerformanceStatus": "official-value",
+      "documentRoute": "postgraduate-coursework-international",
+      "specialRequirementStates": {
+        "interview": "official-value",
+        "aptitudeAssessment": "official-unpublished",
+        "portfolio": "official-unpublished",
+        "workExperience": "official-value",
+        "proposal": "official-unpublished",
+        "supervisor": "official-value",
+        "priorPublication": "official-unpublished",
+        "healthMedical": "official-unpublished",
+        "bridgingModule": "official-value",
+        "referenceLetter": "official-unpublished"
+      },
+      "publicDisplayStatus": "needs-review",
+      "remainingDisplayWork": [
+        "localized programme/faculty names",
+        "student-facing Chinese overview",
+        "localized course setting",
+        "localized career directions"
+      ]
+    },
+    {
+      "code": "TSU-M-005",
+      "nameEnOfficial": "Master of Management",
+      "level": "master",
+      "sourceUrl": "https://university.taylors.edu.my/en/study/explore-all-programmes/business/master-coursework/master-of-management.html",
+      "languageStatus": "official-value",
+      "ieltsOnlySummaryStatus": "official-value",
+      "academicPerformanceStatus": "official-value",
+      "documentRoute": "postgraduate-coursework-international",
+      "specialRequirementStates": {
+        "interview": "official-value",
+        "aptitudeAssessment": "official-unpublished",
+        "portfolio": "official-unpublished",
+        "workExperience": "official-value",
+        "proposal": "official-unpublished",
+        "supervisor": "official-unpublished",
+        "priorPublication": "official-unpublished",
+        "healthMedical": "official-unpublished",
+        "bridgingModule": "official-value",
+        "referenceLetter": "official-unpublished"
+      },
+      "publicDisplayStatus": "needs-review",
+      "remainingDisplayWork": [
+        "localized programme/faculty names",
+        "student-facing Chinese overview",
+        "localized course setting",
+        "localized career directions"
+      ]
+    },
+    {
+      "code": "TSU-M-006",
+      "nameEnOfficial": "Master of Business Administration (100% Online)",
+      "level": "master",
+      "sourceUrl": "https://university.taylors.edu.my/en/study/explore-all-programmes/business/master-online/master-of-business-administration-online.html",
+      "languageStatus": "official-value",
+      "ieltsOnlySummaryStatus": "official-value",
+      "academicPerformanceStatus": "official-value",
+      "documentRoute": "postgraduate-coursework-international",
+      "specialRequirementStates": {
+        "interview": "official-value",
+        "aptitudeAssessment": "official-unpublished",
+        "portfolio": "official-unpublished",
+        "workExperience": "official-value",
+        "proposal": "official-unpublished",
+        "supervisor": "official-unpublished",
+        "priorPublication": "official-unpublished",
+        "healthMedical": "official-unpublished",
+        "bridgingModule": "official-value",
+        "referenceLetter": "official-unpublished"
+      },
+      "publicDisplayStatus": "needs-review",
+      "remainingDisplayWork": [
+        "localized programme/faculty names",
+        "student-facing Chinese overview",
+        "localized course setting",
+        "localized career directions"
+      ]
+    },
+    {
+      "code": "TSU-M-007",
+      "nameEnOfficial": "Master of Management (100% Online)",
+      "level": "master",
+      "sourceUrl": "https://university.taylors.edu.my/en/study/explore-all-programmes/business/master-online/master-of-management-online.html",
+      "languageStatus": "official-value",
+      "ieltsOnlySummaryStatus": "official-value",
+      "academicPerformanceStatus": "official-value",
+      "documentRoute": "postgraduate-coursework-international",
+      "specialRequirementStates": {
+        "interview": "official-value",
+        "aptitudeAssessment": "official-unpublished",
+        "portfolio": "official-unpublished",
+        "workExperience": "official-value",
+        "proposal": "official-unpublished",
+        "supervisor": "official-value",
+        "priorPublication": "official-unpublished",
+        "healthMedical": "official-unpublished",
+        "bridgingModule": "official-value",
+        "referenceLetter": "official-unpublished"
+      },
+      "publicDisplayStatus": "needs-review",
+      "remainingDisplayWork": [
+        "localized programme/faculty names",
+        "student-facing Chinese overview",
+        "localized course setting",
+        "localized career directions"
+      ]
+    },
+    {
+      "code": "TSU-D-003",
+      "nameEnOfficial": "Doctor of Business Administration Programme (DBA)",
+      "level": "phd",
+      "sourceUrl": "https://university.taylors.edu.my/en/study/explore-all-programmes/business/phd-coursework/doctor-of-business-administration.html",
+      "languageStatus": "official-value",
+      "ieltsOnlySummaryStatus": "official-value",
+      "academicPerformanceStatus": "official-value",
+      "documentRoute": "postgraduate-research-international",
+      "specialRequirementStates": {
+        "interview": "official-value",
+        "aptitudeAssessment": "official-unpublished",
+        "portfolio": "official-unpublished",
+        "workExperience": "official-value",
+        "proposal": "official-value",
+        "supervisor": "official-unpublished",
+        "priorPublication": "official-unpublished",
+        "healthMedical": "official-unpublished",
+        "bridgingModule": "official-value",
+        "referenceLetter": "official-unpublished"
+      },
+      "publicDisplayStatus": "needs-review",
+      "remainingDisplayWork": [
+        "localized programme/faculty names",
+        "student-facing Chinese overview",
+        "localized course setting",
+        "localized career directions"
+      ]
+    },
+    {
+      "code": "TSU-D-004",
+      "nameEnOfficial": "Doctor of Philosophy (PhD) in Business",
+      "level": "phd",
+      "sourceUrl": "https://university.taylors.edu.my/en/study/explore-all-programmes/business/phd-research/doctor-of-philosophy-in-business.html",
+      "languageStatus": "official-value",
+      "ieltsOnlySummaryStatus": "official-value",
+      "academicPerformanceStatus": "official-value",
+      "documentRoute": "postgraduate-research-international",
+      "specialRequirementStates": {
+        "interview": "official-value",
+        "aptitudeAssessment": "official-unpublished",
+        "portfolio": "official-unpublished",
+        "workExperience": "official-value",
+        "proposal": "official-value",
+        "supervisor": "official-unpublished",
+        "priorPublication": "official-value",
+        "healthMedical": "official-unpublished",
+        "bridgingModule": "official-value",
+        "referenceLetter": "official-unpublished"
+      },
+      "publicDisplayStatus": "needs-review",
+      "remainingDisplayWork": [
+        "localized programme/faculty names",
+        "student-facing Chinese overview",
+        "localized course setting",
+        "localized career directions"
+      ]
+    },
+    {
+      "code": "TSU-B-017",
+      "nameEnOfficial": "Bachelor of Patisserie Arts (Honours)",
+      "level": "bachelor",
+      "sourceUrl": "https://university.taylors.edu.my/en/study/explore-all-programmes/taylors-culinary-institute/undergraduate/bachelor-of-patisserie-arts.html",
+      "languageStatus": "official-value",
+      "ieltsOnlySummaryStatus": "official-value",
+      "academicPerformanceStatus": "official-value",
+      "documentRoute": "undergraduate-general",
+      "specialRequirementStates": {
+        "interview": "official-unpublished",
+        "aptitudeAssessment": "official-unpublished",
+        "portfolio": "official-unpublished",
+        "workExperience": "official-value",
+        "proposal": "official-unpublished",
+        "supervisor": "official-unpublished",
+        "priorPublication": "official-unpublished",
+        "healthMedical": "official-unpublished",
+        "bridgingModule": "official-unpublished",
+        "referenceLetter": "official-unpublished"
+      },
+      "publicDisplayStatus": "needs-review",
+      "remainingDisplayWork": [
+        "localized programme/faculty names",
+        "student-facing Chinese overview",
+        "localized course setting",
+        "localized career directions"
+      ]
+    },
+    {
+      "code": "TSU-B-018",
+      "nameEnOfficial": "Bachelor of Science (Honours) in Culinology",
+      "level": "bachelor",
+      "sourceUrl": "https://university.taylors.edu.my/en/study/explore-all-programmes/taylors-culinary-institute/undergraduate/bachelor-of-science-culinology.html",
+      "languageStatus": "official-value",
+      "ieltsOnlySummaryStatus": "official-value",
+      "academicPerformanceStatus": "official-value",
+      "documentRoute": "undergraduate-general",
+      "specialRequirementStates": {
+        "interview": "official-unpublished",
+        "aptitudeAssessment": "official-unpublished",
+        "portfolio": "official-unpublished",
+        "workExperience": "official-value",
+        "proposal": "official-unpublished",
+        "supervisor": "official-unpublished",
+        "priorPublication": "official-unpublished",
+        "healthMedical": "official-unpublished",
+        "bridgingModule": "official-unpublished",
+        "referenceLetter": "official-unpublished"
+      },
+      "publicDisplayStatus": "needs-review",
+      "remainingDisplayWork": [
+        "localized programme/faculty names",
+        "student-facing Chinese overview",
+        "localized course setting",
+        "localized career directions"
+      ]
+    },
+    {
+      "code": "TSU-B-019",
+      "nameEnOfficial": "Bachelor of Culinary Management (Honours)",
+      "level": "bachelor",
+      "sourceUrl": "https://university.taylors.edu.my/en/study/explore-all-programmes/taylors-culinary-institute/undergraduate/bachelor-of-culinary-management.html",
+      "languageStatus": "official-value",
+      "ieltsOnlySummaryStatus": "official-value",
+      "academicPerformanceStatus": "official-value",
+      "documentRoute": "undergraduate-general",
+      "specialRequirementStates": {
+        "interview": "official-unpublished",
+        "aptitudeAssessment": "official-unpublished",
+        "portfolio": "official-unpublished",
+        "workExperience": "official-value",
+        "proposal": "official-unpublished",
+        "supervisor": "official-unpublished",
+        "priorPublication": "official-unpublished",
+        "healthMedical": "official-unpublished",
+        "bridgingModule": "official-unpublished",
+        "referenceLetter": "official-unpublished"
+      },
+      "publicDisplayStatus": "needs-review",
+      "remainingDisplayWork": [
+        "localized programme/faculty names",
+        "student-facing Chinese overview",
+        "localized course setting",
+        "localized career directions"
+      ]
+    },
+    {
+      "code": "TSU-M-008",
+      "nameEnOfficial": "Master of Food Studies and Gastronomy",
+      "level": "master",
+      "sourceUrl": "https://university.taylors.edu.my/en/study/explore-all-programmes/taylors-culinary-institute/master-coursework/master-of-food-studies-and-gastronomy.html",
+      "languageStatus": "official-value",
+      "ieltsOnlySummaryStatus": "official-value",
+      "academicPerformanceStatus": "official-value",
+      "documentRoute": "postgraduate-coursework-international",
+      "specialRequirementStates": {
+        "interview": "official-value",
+        "aptitudeAssessment": "official-unpublished",
+        "portfolio": "official-unpublished",
+        "workExperience": "official-value",
+        "proposal": "official-unpublished",
+        "supervisor": "official-unpublished",
+        "priorPublication": "official-unpublished",
+        "healthMedical": "official-unpublished",
+        "bridgingModule": "official-value",
+        "referenceLetter": "official-unpublished"
+      },
+      "publicDisplayStatus": "needs-review",
+      "remainingDisplayWork": [
+        "localized programme/faculty names",
+        "student-facing Chinese overview",
+        "localized course setting",
+        "localized career directions"
+      ]
+    },
+    {
+      "code": "TSU-M-009",
+      "nameEnOfficial": "Master of Food Studies",
+      "level": "master",
+      "sourceUrl": "https://university.taylors.edu.my/en/study/explore-all-programmes/taylors-culinary-institute/master-research/master-of-food-studies.html",
+      "languageStatus": "official-value",
+      "ieltsOnlySummaryStatus": "official-value",
+      "academicPerformanceStatus": "official-value",
+      "documentRoute": "postgraduate-research-international",
+      "specialRequirementStates": {
+        "interview": "official-value",
+        "aptitudeAssessment": "official-unpublished",
+        "portfolio": "official-unpublished",
+        "workExperience": "official-value",
+        "proposal": "official-value",
+        "supervisor": "official-unpublished",
+        "priorPublication": "official-unpublished",
+        "healthMedical": "official-unpublished",
+        "bridgingModule": "official-value",
+        "referenceLetter": "official-unpublished"
+      },
+      "publicDisplayStatus": "needs-review",
+      "remainingDisplayWork": [
+        "localized programme/faculty names",
+        "student-facing Chinese overview",
+        "localized course setting",
+        "localized career directions"
+      ]
+    },
+    {
+      "code": "TSU-D-005",
+      "nameEnOfficial": "Doctor of Philosophy (PhD) In Food Studies",
+      "level": "phd",
+      "sourceUrl": "https://university.taylors.edu.my/en/study/explore-all-programmes/taylors-culinary-institute/phd-research/doctor-of-philosophy-in-food-studies.html",
+      "languageStatus": "official-value",
+      "ieltsOnlySummaryStatus": "official-value",
+      "academicPerformanceStatus": "official-value",
+      "documentRoute": "postgraduate-research-international",
+      "specialRequirementStates": {
+        "interview": "official-unpublished",
+        "aptitudeAssessment": "official-unpublished",
+        "portfolio": "official-unpublished",
+        "workExperience": "official-value",
+        "proposal": "official-value",
+        "supervisor": "official-unpublished",
+        "priorPublication": "official-value",
+        "healthMedical": "official-unpublished",
+        "bridgingModule": "official-value",
+        "referenceLetter": "official-unpublished"
+      },
+      "publicDisplayStatus": "needs-review",
+      "remainingDisplayWork": [
+        "localized programme/faculty names",
+        "student-facing Chinese overview",
+        "localized course setting",
+        "localized career directions"
+      ]
+    },
+    {
+      "code": "TSU-B-020",
+      "nameEnOfficial": "Bachelor of Mass Communication (Honours) in Advertising and Brand Management",
+      "level": "bachelor",
+      "sourceUrl": "https://university.taylors.edu.my/en/study/explore-all-programmes/media-and-communication/undergraduate/bachelor-of-mass-communication-in-advertising-and-brand-management.html",
+      "languageStatus": "official-value",
+      "ieltsOnlySummaryStatus": "official-value",
+      "academicPerformanceStatus": "official-value",
+      "documentRoute": "undergraduate-general",
+      "specialRequirementStates": {
+        "interview": "official-unpublished",
+        "aptitudeAssessment": "official-unpublished",
+        "portfolio": "official-unpublished",
+        "workExperience": "official-unpublished",
+        "proposal": "official-unpublished",
+        "supervisor": "official-unpublished",
+        "priorPublication": "official-unpublished",
+        "healthMedical": "official-unpublished",
+        "bridgingModule": "official-unpublished",
+        "referenceLetter": "official-unpublished"
+      },
+      "publicDisplayStatus": "needs-review",
+      "remainingDisplayWork": [
+        "localized programme/faculty names",
+        "student-facing Chinese overview",
+        "localized course setting",
+        "localized career directions"
+      ]
+    },
+    {
+      "code": "TSU-B-021",
+      "nameEnOfficial": "Bachelor of Mass Communication (Honours) (Digital Media Production)",
+      "level": "bachelor",
+      "sourceUrl": "https://university.taylors.edu.my/en/study/explore-all-programmes/media-and-communication/undergraduate/bachelor-of-mass-communication-digital-media-production.html",
+      "languageStatus": "official-value",
+      "ieltsOnlySummaryStatus": "official-value",
+      "academicPerformanceStatus": "official-value",
+      "documentRoute": "undergraduate-general",
+      "specialRequirementStates": {
+        "interview": "official-unpublished",
+        "aptitudeAssessment": "official-unpublished",
+        "portfolio": "official-unpublished",
+        "workExperience": "official-unpublished",
+        "proposal": "official-unpublished",
+        "supervisor": "official-unpublished",
+        "priorPublication": "official-unpublished",
+        "healthMedical": "official-unpublished",
+        "bridgingModule": "official-unpublished",
+        "referenceLetter": "official-unpublished"
+      },
+      "publicDisplayStatus": "needs-review",
+      "remainingDisplayWork": [
+        "localized programme/faculty names",
+        "student-facing Chinese overview",
+        "localized course setting",
+        "localized career directions"
+      ]
+    },
+    {
+      "code": "TSU-B-022",
+      "nameEnOfficial": "Bachelor of Mass Communication (Honours)",
+      "level": "bachelor",
+      "sourceUrl": "https://university.taylors.edu.my/en/study/explore-all-programmes/media-and-communication/undergraduate/bachelor-of-mass-communication.html",
+      "languageStatus": "official-value",
+      "ieltsOnlySummaryStatus": "official-value",
+      "academicPerformanceStatus": "official-value",
+      "documentRoute": "undergraduate-general",
+      "specialRequirementStates": {
+        "interview": "official-unpublished",
+        "aptitudeAssessment": "official-unpublished",
+        "portfolio": "official-unpublished",
+        "workExperience": "official-unpublished",
+        "proposal": "official-unpublished",
+        "supervisor": "official-unpublished",
+        "priorPublication": "official-unpublished",
+        "healthMedical": "official-unpublished",
+        "bridgingModule": "official-unpublished",
+        "referenceLetter": "official-unpublished"
+      },
+      "publicDisplayStatus": "needs-review",
+      "remainingDisplayWork": [
+        "localized programme/faculty names",
+        "student-facing Chinese overview",
+        "localized course setting",
+        "localized career directions"
+      ]
+    },
+    {
+      "code": "TSU-B-023",
+      "nameEnOfficial": "Bachelor of Mass Communication (Honours) in Public Relations and Event Management",
+      "level": "bachelor",
+      "sourceUrl": "https://university.taylors.edu.my/en/study/explore-all-programmes/media-and-communication/undergraduate/bachelor-of-mass-communication-in-public-relations-and-event-management.html",
+      "languageStatus": "official-value",
+      "ieltsOnlySummaryStatus": "official-value",
+      "academicPerformanceStatus": "official-value",
+      "documentRoute": "undergraduate-general",
+      "specialRequirementStates": {
+        "interview": "official-unpublished",
+        "aptitudeAssessment": "official-unpublished",
+        "portfolio": "official-unpublished",
+        "workExperience": "official-unpublished",
+        "proposal": "official-unpublished",
+        "supervisor": "official-unpublished",
+        "priorPublication": "official-unpublished",
+        "healthMedical": "official-unpublished",
+        "bridgingModule": "official-unpublished",
+        "referenceLetter": "official-unpublished"
+      },
+      "publicDisplayStatus": "needs-review",
+      "remainingDisplayWork": [
+        "localized programme/faculty names",
+        "student-facing Chinese overview",
+        "localized course setting",
+        "localized career directions"
+      ]
+    },
+    {
+      "code": "TSU-B-024",
+      "nameEnOfficial": "Bachelor of Mass Communication (Honours) in Public Relations and Marketing",
+      "level": "bachelor",
+      "sourceUrl": "https://university.taylors.edu.my/en/study/explore-all-programmes/media-and-communication/undergraduate/bachelor-of-mass-communication-in-public-relations-and-marketing.html",
+      "languageStatus": "official-value",
+      "ieltsOnlySummaryStatus": "official-value",
+      "academicPerformanceStatus": "official-value",
+      "documentRoute": "undergraduate-general",
+      "specialRequirementStates": {
+        "interview": "official-unpublished",
+        "aptitudeAssessment": "official-unpublished",
+        "portfolio": "official-unpublished",
+        "workExperience": "official-unpublished",
+        "proposal": "official-unpublished",
+        "supervisor": "official-unpublished",
+        "priorPublication": "official-unpublished",
+        "healthMedical": "official-unpublished",
+        "bridgingModule": "official-unpublished",
+        "referenceLetter": "official-unpublished"
+      },
+      "publicDisplayStatus": "needs-review",
+      "remainingDisplayWork": [
+        "localized programme/faculty names",
+        "student-facing Chinese overview",
+        "localized course setting",
+        "localized career directions"
+      ]
+    },
+    {
+      "code": "TSU-M-010",
+      "nameEnOfficial": "Master of Communication",
+      "level": "master",
+      "sourceUrl": "https://university.taylors.edu.my/en/study/explore-all-programmes/media-and-communication/master-coursework/master-of-communication.html",
+      "languageStatus": "official-value",
+      "ieltsOnlySummaryStatus": "official-value",
+      "academicPerformanceStatus": "official-value",
+      "documentRoute": "postgraduate-coursework-international",
+      "specialRequirementStates": {
+        "interview": "official-value",
+        "aptitudeAssessment": "official-unpublished",
+        "portfolio": "official-value",
+        "workExperience": "official-value",
+        "proposal": "official-unpublished",
+        "supervisor": "official-unpublished",
+        "priorPublication": "official-unpublished",
+        "healthMedical": "official-unpublished",
+        "bridgingModule": "official-value",
+        "referenceLetter": "official-unpublished"
+      },
+      "publicDisplayStatus": "needs-review",
+      "remainingDisplayWork": [
+        "localized programme/faculty names",
+        "student-facing Chinese overview",
+        "localized course setting",
+        "localized career directions"
+      ]
+    },
+    {
+      "code": "TSU-D-006",
+      "nameEnOfficial": "Doctor of Philosophy (PhD) in Media and Communication Studies",
+      "level": "phd",
+      "sourceUrl": "https://university.taylors.edu.my/en/study/explore-all-programmes/media-and-communication/phd-research/doctor-of-philosophy-in-media-and-communication-studies.html",
+      "languageStatus": "official-value",
+      "ieltsOnlySummaryStatus": "official-value",
+      "academicPerformanceStatus": "official-value",
+      "documentRoute": "postgraduate-research-international",
+      "specialRequirementStates": {
+        "interview": "official-value",
+        "aptitudeAssessment": "official-unpublished",
+        "portfolio": "official-unpublished",
+        "workExperience": "official-value",
+        "proposal": "official-value",
+        "supervisor": "official-unpublished",
+        "priorPublication": "official-value",
+        "healthMedical": "official-unpublished",
+        "bridgingModule": "official-value",
+        "referenceLetter": "official-unpublished"
+      },
+      "publicDisplayStatus": "needs-review",
+      "remainingDisplayWork": [
+        "localized programme/faculty names",
+        "student-facing Chinese overview",
+        "localized course setting",
+        "localized career directions"
+      ]
+    },
+    {
+      "code": "TSU-B-025",
+      "nameEnOfficial": "Bachelor of Computer Science (Honours)",
+      "level": "bachelor",
+      "sourceUrl": "https://university.taylors.edu.my/en/study/explore-all-programmes/computer-science/undergraduate/bachelor-of-computer-science.html",
+      "languageStatus": "official-value",
+      "ieltsOnlySummaryStatus": "official-value",
+      "academicPerformanceStatus": "official-value",
+      "documentRoute": "undergraduate-general",
+      "specialRequirementStates": {
+        "interview": "official-unpublished",
+        "aptitudeAssessment": "official-unpublished",
+        "portfolio": "official-unpublished",
+        "workExperience": "official-unpublished",
+        "proposal": "official-unpublished",
+        "supervisor": "official-unpublished",
+        "priorPublication": "official-unpublished",
+        "healthMedical": "official-unpublished",
+        "bridgingModule": "official-unpublished",
+        "referenceLetter": "official-unpublished"
+      },
+      "publicDisplayStatus": "needs-review",
+      "remainingDisplayWork": [
+        "localized programme/faculty names",
+        "student-facing Chinese overview",
+        "localized course setting",
+        "localized career directions"
+      ]
+    },
+    {
+      "code": "TSU-B-026",
+      "nameEnOfficial": "Bachelor of Software Engineering (Honours)",
+      "level": "bachelor",
+      "sourceUrl": "https://university.taylors.edu.my/en/study/explore-all-programmes/computer-science/undergraduate/bachelor-of-software-engineering.html",
+      "languageStatus": "official-value",
+      "ieltsOnlySummaryStatus": "official-value",
+      "academicPerformanceStatus": "official-value",
+      "documentRoute": "undergraduate-general",
+      "specialRequirementStates": {
+        "interview": "official-unpublished",
+        "aptitudeAssessment": "official-unpublished",
+        "portfolio": "official-unpublished",
+        "workExperience": "official-unpublished",
+        "proposal": "official-unpublished",
+        "supervisor": "official-unpublished",
+        "priorPublication": "official-unpublished",
+        "healthMedical": "official-unpublished",
+        "bridgingModule": "official-unpublished",
+        "referenceLetter": "official-unpublished"
+      },
+      "publicDisplayStatus": "needs-review",
+      "remainingDisplayWork": [
+        "localized programme/faculty names",
+        "student-facing Chinese overview",
+        "localized course setting",
+        "localized career directions"
+      ]
+    },
+    {
+      "code": "TSU-B-027",
+      "nameEnOfficial": "Bachelor of Information Technology (Honours)",
+      "level": "bachelor",
+      "sourceUrl": "https://university.taylors.edu.my/en/study/explore-all-programmes/computer-science/undergraduate/bachelor-of-information-technology.html",
+      "languageStatus": "official-value",
+      "ieltsOnlySummaryStatus": "official-value",
+      "academicPerformanceStatus": "official-value",
+      "documentRoute": "undergraduate-general",
+      "specialRequirementStates": {
+        "interview": "official-unpublished",
+        "aptitudeAssessment": "official-unpublished",
+        "portfolio": "official-unpublished",
+        "workExperience": "official-unpublished",
+        "proposal": "official-unpublished",
+        "supervisor": "official-unpublished",
+        "priorPublication": "official-unpublished",
+        "healthMedical": "official-unpublished",
+        "bridgingModule": "official-unpublished",
+        "referenceLetter": "official-unpublished"
+      },
+      "publicDisplayStatus": "needs-review",
+      "remainingDisplayWork": [
+        "localized programme/faculty names",
+        "student-facing Chinese overview",
+        "localized course setting",
+        "localized career directions"
+      ]
+    },
+    {
+      "code": "TSU-M-011",
+      "nameEnOfficial": "Master in Applied Computing (Coursework)",
+      "level": "master",
+      "sourceUrl": "https://university.taylors.edu.my/en/study/explore-all-programmes/computer-science/master-coursework/master-in-applied-computing.html",
+      "languageStatus": "official-value",
+      "ieltsOnlySummaryStatus": "official-unpublished",
+      "academicPerformanceStatus": "official-value",
+      "documentRoute": "postgraduate-coursework-international",
+      "specialRequirementStates": {
+        "interview": "official-unpublished",
+        "aptitudeAssessment": "official-unpublished",
+        "portfolio": "official-unpublished",
+        "workExperience": "official-value",
+        "proposal": "official-unpublished",
+        "supervisor": "official-unpublished",
+        "priorPublication": "official-unpublished",
+        "healthMedical": "official-unpublished",
+        "bridgingModule": "official-value",
+        "referenceLetter": "official-unpublished"
+      },
+      "publicDisplayStatus": "needs-review",
+      "remainingDisplayWork": [
+        "localized programme/faculty names",
+        "student-facing Chinese overview",
+        "localized course setting",
+        "localized career directions"
+      ]
+    },
+    {
+      "code": "TSU-M-012",
+      "nameEnOfficial": "Master of Computer Science",
+      "level": "master",
+      "sourceUrl": "https://university.taylors.edu.my/en/study/explore-all-programmes/computer-science/master-research/master-of-computer-science.html",
+      "languageStatus": "official-value",
+      "ieltsOnlySummaryStatus": "official-unpublished",
+      "academicPerformanceStatus": "official-value",
+      "documentRoute": "postgraduate-research-international",
+      "specialRequirementStates": {
+        "interview": "official-unpublished",
+        "aptitudeAssessment": "official-unpublished",
+        "portfolio": "official-unpublished",
+        "workExperience": "official-value",
+        "proposal": "official-unpublished",
+        "supervisor": "official-unpublished",
+        "priorPublication": "official-unpublished",
+        "healthMedical": "official-unpublished",
+        "bridgingModule": "official-value",
+        "referenceLetter": "official-unpublished"
+      },
+      "publicDisplayStatus": "needs-review",
+      "remainingDisplayWork": [
+        "localized programme/faculty names",
+        "student-facing Chinese overview",
+        "localized course setting",
+        "localized career directions"
+      ]
+    },
+    {
+      "code": "TSU-M-013",
+      "nameEnOfficial": "Master in Applied Computing (100% Online)",
+      "level": "master",
+      "sourceUrl": "https://university.taylors.edu.my/en/study/explore-all-programmes/computer-science/master-online/master-in-applied-computing-online.html",
+      "languageStatus": "official-value",
+      "ieltsOnlySummaryStatus": "official-unpublished",
+      "academicPerformanceStatus": "official-value",
+      "documentRoute": "postgraduate-coursework-international",
+      "specialRequirementStates": {
+        "interview": "official-unpublished",
+        "aptitudeAssessment": "official-unpublished",
+        "portfolio": "official-unpublished",
+        "workExperience": "official-value",
+        "proposal": "official-unpublished",
+        "supervisor": "official-unpublished",
+        "priorPublication": "official-unpublished",
+        "healthMedical": "official-unpublished",
+        "bridgingModule": "official-value",
+        "referenceLetter": "official-unpublished"
+      },
+      "publicDisplayStatus": "needs-review",
+      "remainingDisplayWork": [
+        "localized programme/faculty names",
+        "student-facing Chinese overview",
+        "localized course setting",
+        "localized career directions"
+      ]
+    },
+    {
+      "code": "TSU-D-007",
+      "nameEnOfficial": "Doctor of Philosophy (PhD) in Computer Science",
+      "level": "phd",
+      "sourceUrl": "https://university.taylors.edu.my/en/study/explore-all-programmes/computer-science/phd-research/doctor-of-philosophy-in-computer-science.html",
+      "languageStatus": "official-value",
+      "ieltsOnlySummaryStatus": "official-unpublished",
+      "academicPerformanceStatus": "official-value",
+      "documentRoute": "postgraduate-research-international",
+      "specialRequirementStates": {
+        "interview": "official-value",
+        "aptitudeAssessment": "official-unpublished",
+        "portfolio": "official-unpublished",
+        "workExperience": "official-value",
+        "proposal": "official-unpublished",
+        "supervisor": "official-unpublished",
+        "priorPublication": "official-value",
+        "healthMedical": "official-unpublished",
+        "bridgingModule": "official-value",
+        "referenceLetter": "official-unpublished"
+      },
+      "publicDisplayStatus": "needs-review",
+      "remainingDisplayWork": [
+        "localized programme/faculty names",
+        "student-facing Chinese overview",
+        "localized course setting",
+        "localized career directions"
+      ]
+    },
+    {
+      "code": "TSU-B-028",
+      "nameEnOfficial": "Bachelor of Interactive Spatial Design (Honours)",
+      "level": "bachelor",
+      "sourceUrl": "https://university.taylors.edu.my/en/study/explore-all-programmes/design/undergraduate/bachelor-of-interactive-spatial-design.html",
+      "languageStatus": "official-value",
+      "ieltsOnlySummaryStatus": "official-unpublished",
+      "academicPerformanceStatus": "official-value",
+      "documentRoute": "undergraduate-general",
+      "specialRequirementStates": {
+        "interview": "official-unpublished",
+        "aptitudeAssessment": "official-unpublished",
+        "portfolio": "official-unpublished",
+        "workExperience": "official-unpublished",
+        "proposal": "official-unpublished",
+        "supervisor": "official-unpublished",
+        "priorPublication": "official-unpublished",
+        "healthMedical": "official-unpublished",
+        "bridgingModule": "official-unpublished",
+        "referenceLetter": "official-unpublished"
+      },
+      "publicDisplayStatus": "needs-review",
+      "remainingDisplayWork": [
+        "localized programme/faculty names",
+        "student-facing Chinese overview",
+        "localized course setting",
+        "localized career directions"
+      ]
+    },
+    {
+      "code": "TSU-B-029",
+      "nameEnOfficial": "Bachelor of Fashion Design Technology (Honours)",
+      "level": "bachelor",
+      "sourceUrl": "https://university.taylors.edu.my/en/study/explore-all-programmes/design/undergraduate/bachelor-of-fashion-design-technology.html",
+      "languageStatus": "official-value",
+      "ieltsOnlySummaryStatus": "official-value",
+      "academicPerformanceStatus": "official-value",
+      "documentRoute": "undergraduate-general",
+      "specialRequirementStates": {
+        "interview": "official-unpublished",
+        "aptitudeAssessment": "official-unpublished",
+        "portfolio": "official-unpublished",
+        "workExperience": "official-value",
+        "proposal": "official-unpublished",
+        "supervisor": "official-unpublished",
+        "priorPublication": "official-unpublished",
+        "healthMedical": "official-unpublished",
+        "bridgingModule": "official-unpublished",
+        "referenceLetter": "official-unpublished"
+      },
+      "publicDisplayStatus": "needs-review",
+      "remainingDisplayWork": [
+        "localized programme/faculty names",
+        "student-facing Chinese overview",
+        "localized course setting",
+        "localized career directions"
+      ]
+    },
+    {
+      "code": "TSU-B-030",
+      "nameEnOfficial": "Bachelor of Design (Honours) In Creative Media",
+      "level": "bachelor",
+      "sourceUrl": "https://university.taylors.edu.my/en/study/explore-all-programmes/design/undergraduate/bachelor-of-design-in-creative-media.html",
+      "languageStatus": "official-value",
+      "ieltsOnlySummaryStatus": "official-unpublished",
+      "academicPerformanceStatus": "official-value",
+      "documentRoute": "undergraduate-general",
+      "specialRequirementStates": {
+        "interview": "official-unpublished",
+        "aptitudeAssessment": "official-unpublished",
+        "portfolio": "official-unpublished",
+        "workExperience": "official-unpublished",
+        "proposal": "official-unpublished",
+        "supervisor": "official-unpublished",
+        "priorPublication": "official-unpublished",
+        "healthMedical": "official-unpublished",
+        "bridgingModule": "official-unpublished",
+        "referenceLetter": "official-unpublished"
+      },
+      "publicDisplayStatus": "needs-review",
+      "remainingDisplayWork": [
+        "localized programme/faculty names",
+        "student-facing Chinese overview",
+        "localized course setting",
+        "localized career directions"
+      ]
+    },
+    {
+      "code": "TSU-M-014",
+      "nameEnOfficial": "Master of Design",
+      "level": "master",
+      "sourceUrl": "https://university.taylors.edu.my/en/study/explore-all-programmes/design/master-research/master-of-design.html",
+      "languageStatus": "official-value",
+      "ieltsOnlySummaryStatus": "official-value",
+      "academicPerformanceStatus": "official-value",
+      "documentRoute": "postgraduate-research-international",
+      "specialRequirementStates": {
+        "interview": "official-value",
+        "aptitudeAssessment": "official-unpublished",
+        "portfolio": "official-value",
+        "workExperience": "official-value",
+        "proposal": "official-value",
+        "supervisor": "official-unpublished",
+        "priorPublication": "official-unpublished",
+        "healthMedical": "official-unpublished",
+        "bridgingModule": "official-unpublished",
+        "referenceLetter": "official-unpublished"
+      },
+      "publicDisplayStatus": "needs-review",
+      "remainingDisplayWork": [
+        "localized programme/faculty names",
+        "student-facing Chinese overview",
+        "localized course setting",
+        "localized career directions"
+      ]
+    },
+    {
+      "code": "TSU-D-008",
+      "nameEnOfficial": "Doctor of Philosophy In Design Management",
+      "level": "phd",
+      "sourceUrl": "https://university.taylors.edu.my/en/study/explore-all-programmes/design/phd-research/doctor-of-philosophy-in-design-management.html",
+      "languageStatus": "official-value",
+      "ieltsOnlySummaryStatus": "official-unpublished",
+      "academicPerformanceStatus": "official-value",
+      "documentRoute": "postgraduate-research-international",
+      "specialRequirementStates": {
+        "interview": "official-value",
+        "aptitudeAssessment": "official-unpublished",
+        "portfolio": "official-unpublished",
+        "workExperience": "official-value",
+        "proposal": "official-value",
+        "supervisor": "official-unpublished",
+        "priorPublication": "official-value",
+        "healthMedical": "official-unpublished",
+        "bridgingModule": "official-value",
+        "referenceLetter": "official-unpublished"
+      },
+      "publicDisplayStatus": "needs-review",
+      "remainingDisplayWork": [
+        "localized programme/faculty names",
+        "student-facing Chinese overview",
+        "localized course setting",
+        "localized career directions"
+      ]
+    },
+    {
+      "code": "TSU-B-031",
+      "nameEnOfficial": "Bachelor of Education (Honours)",
+      "level": "bachelor",
+      "sourceUrl": "https://university.taylors.edu.my/en/study/explore-all-programmes/education/undergraduate/bachelor-of-education.html",
+      "languageStatus": "official-value",
+      "ieltsOnlySummaryStatus": "official-value",
+      "academicPerformanceStatus": "official-value",
+      "documentRoute": "undergraduate-general",
+      "specialRequirementStates": {
+        "interview": "official-unpublished",
+        "aptitudeAssessment": "official-unpublished",
+        "portfolio": "official-unpublished",
+        "workExperience": "official-unpublished",
+        "proposal": "official-unpublished",
+        "supervisor": "official-unpublished",
+        "priorPublication": "official-unpublished",
+        "healthMedical": "official-unpublished",
+        "bridgingModule": "official-unpublished",
+        "referenceLetter": "official-unpublished"
+      },
+      "publicDisplayStatus": "needs-review",
+      "remainingDisplayWork": [
+        "localized programme/faculty names",
+        "student-facing Chinese overview",
+        "localized course setting",
+        "localized career directions"
+      ]
+    },
+    {
+      "code": "TSU-M-015",
+      "nameEnOfficial": "Master of Teaching and Learning",
+      "level": "master",
+      "sourceUrl": "https://university.taylors.edu.my/en/study/explore-all-programmes/education/master-coursework/master-of-teaching-and-learning.html",
+      "languageStatus": "official-value",
+      "ieltsOnlySummaryStatus": "official-value",
+      "academicPerformanceStatus": "official-value",
+      "documentRoute": "postgraduate-coursework-international",
+      "specialRequirementStates": {
+        "interview": "official-value",
+        "aptitudeAssessment": "official-unpublished",
+        "portfolio": "official-unpublished",
+        "workExperience": "official-value",
+        "proposal": "official-unpublished",
+        "supervisor": "official-unpublished",
+        "priorPublication": "official-unpublished",
+        "healthMedical": "official-unpublished",
+        "bridgingModule": "official-value",
+        "referenceLetter": "official-unpublished"
+      },
+      "publicDisplayStatus": "needs-review",
+      "remainingDisplayWork": [
+        "localized programme/faculty names",
+        "student-facing Chinese overview",
+        "localized course setting",
+        "localized career directions"
+      ]
+    },
+    {
+      "code": "TSU-M-016",
+      "nameEnOfficial": "Master of Education",
+      "level": "master",
+      "sourceUrl": "https://university.taylors.edu.my/en/study/explore-all-programmes/education/master-research/master-of-education.html",
+      "languageStatus": "official-value",
+      "ieltsOnlySummaryStatus": "official-value",
+      "academicPerformanceStatus": "official-value",
+      "documentRoute": "postgraduate-research-international",
+      "specialRequirementStates": {
+        "interview": "official-value",
+        "aptitudeAssessment": "official-unpublished",
+        "portfolio": "official-unpublished",
+        "workExperience": "official-value",
+        "proposal": "official-value",
+        "supervisor": "official-unpublished",
+        "priorPublication": "official-unpublished",
+        "healthMedical": "official-unpublished",
+        "bridgingModule": "official-value",
+        "referenceLetter": "official-unpublished"
+      },
+      "publicDisplayStatus": "needs-review",
+      "remainingDisplayWork": [
+        "localized programme/faculty names",
+        "student-facing Chinese overview",
+        "localized course setting",
+        "localized career directions"
+      ]
+    },
+    {
+      "code": "TSU-M-017",
+      "nameEnOfficial": "Master of Teaching and Learning (100% online)",
+      "level": "master",
+      "sourceUrl": "https://university.taylors.edu.my/en/study/explore-all-programmes/education/master-online/master-of-teaching-and-learning-online.html",
+      "languageStatus": "official-value",
+      "ieltsOnlySummaryStatus": "official-value",
+      "academicPerformanceStatus": "official-value",
+      "documentRoute": "postgraduate-coursework-international",
+      "specialRequirementStates": {
+        "interview": "official-value",
+        "aptitudeAssessment": "official-unpublished",
+        "portfolio": "official-unpublished",
+        "workExperience": "official-value",
+        "proposal": "official-unpublished",
+        "supervisor": "official-unpublished",
+        "priorPublication": "official-unpublished",
+        "healthMedical": "official-unpublished",
+        "bridgingModule": "official-value",
+        "referenceLetter": "official-unpublished"
+      },
+      "publicDisplayStatus": "needs-review",
+      "remainingDisplayWork": [
+        "localized programme/faculty names",
+        "student-facing Chinese overview",
+        "localized course setting",
+        "localized career directions"
+      ]
+    },
+    {
+      "code": "TSU-D-009",
+      "nameEnOfficial": "Doctor of Philosophy in Education",
+      "level": "phd",
+      "sourceUrl": "https://university.taylors.edu.my/en/study/explore-all-programmes/education/phd-research/doctor-of-philosophy-in-education.html",
+      "languageStatus": "official-value",
+      "ieltsOnlySummaryStatus": "official-value",
+      "academicPerformanceStatus": "official-value",
+      "documentRoute": "postgraduate-research-international",
+      "specialRequirementStates": {
+        "interview": "official-unpublished",
+        "aptitudeAssessment": "official-unpublished",
+        "portfolio": "official-unpublished",
+        "workExperience": "official-value",
+        "proposal": "official-value",
+        "supervisor": "official-unpublished",
+        "priorPublication": "official-value",
+        "healthMedical": "official-unpublished",
+        "bridgingModule": "official-value",
+        "referenceLetter": "official-unpublished"
+      },
+      "publicDisplayStatus": "needs-review",
+      "remainingDisplayWork": [
+        "localized programme/faculty names",
+        "student-facing Chinese overview",
+        "localized course setting",
+        "localized career directions"
+      ]
+    },
+    {
+      "code": "TSU-B-032",
+      "nameEnOfficial": "Bachelor of Chemical Engineering (Honours)",
+      "level": "bachelor",
+      "sourceUrl": "https://university.taylors.edu.my/en/study/explore-all-programmes/engineering/undergraduate/bachelor-of-chemical-engineering.html",
+      "languageStatus": "official-value",
+      "ieltsOnlySummaryStatus": "official-value",
+      "academicPerformanceStatus": "official-value",
+      "documentRoute": "undergraduate-general",
+      "specialRequirementStates": {
+        "interview": "official-unpublished",
+        "aptitudeAssessment": "official-unpublished",
+        "portfolio": "official-unpublished",
+        "workExperience": "official-unpublished",
+        "proposal": "official-unpublished",
+        "supervisor": "official-unpublished",
+        "priorPublication": "official-unpublished",
+        "healthMedical": "official-unpublished",
+        "bridgingModule": "official-unpublished",
+        "referenceLetter": "official-unpublished"
+      },
+      "publicDisplayStatus": "needs-review",
+      "remainingDisplayWork": [
+        "localized programme/faculty names",
+        "student-facing Chinese overview",
+        "localized course setting",
+        "localized career directions"
+      ]
+    },
+    {
+      "code": "TSU-B-033",
+      "nameEnOfficial": "Bachelor of Electrical and Electronic Engineering (Honours)",
+      "level": "bachelor",
+      "sourceUrl": "https://university.taylors.edu.my/en/study/explore-all-programmes/engineering/undergraduate/bachelor-of-electrical-and-electronic-engineering.html",
+      "languageStatus": "official-value",
+      "ieltsOnlySummaryStatus": "official-value",
+      "academicPerformanceStatus": "official-value",
+      "documentRoute": "undergraduate-general",
+      "specialRequirementStates": {
+        "interview": "official-unpublished",
+        "aptitudeAssessment": "official-unpublished",
+        "portfolio": "official-unpublished",
+        "workExperience": "official-unpublished",
+        "proposal": "official-unpublished",
+        "supervisor": "official-unpublished",
+        "priorPublication": "official-unpublished",
+        "healthMedical": "official-unpublished",
+        "bridgingModule": "official-unpublished",
+        "referenceLetter": "official-unpublished"
+      },
+      "publicDisplayStatus": "needs-review",
+      "remainingDisplayWork": [
+        "localized programme/faculty names",
+        "student-facing Chinese overview",
+        "localized course setting",
+        "localized career directions"
+      ]
+    },
+    {
+      "code": "TSU-B-034",
+      "nameEnOfficial": "Bachelor of Mechanical Engineering (Honours)",
+      "level": "bachelor",
+      "sourceUrl": "https://university.taylors.edu.my/en/study/explore-all-programmes/engineering/undergraduate/bachelor-of-mechanical-engineering.html",
+      "languageStatus": "official-value",
+      "ieltsOnlySummaryStatus": "official-value",
+      "academicPerformanceStatus": "official-value",
+      "documentRoute": "undergraduate-general",
+      "specialRequirementStates": {
+        "interview": "official-unpublished",
+        "aptitudeAssessment": "official-unpublished",
+        "portfolio": "official-unpublished",
+        "workExperience": "official-unpublished",
+        "proposal": "official-unpublished",
+        "supervisor": "official-unpublished",
+        "priorPublication": "official-unpublished",
+        "healthMedical": "official-unpublished",
+        "bridgingModule": "official-unpublished",
+        "referenceLetter": "official-unpublished"
+      },
+      "publicDisplayStatus": "needs-review",
+      "remainingDisplayWork": [
+        "localized programme/faculty names",
+        "student-facing Chinese overview",
+        "localized course setting",
+        "localized career directions"
+      ]
+    },
+    {
+      "code": "TSU-B-035",
+      "nameEnOfficial": "Bachelor of Mechatronics Engineering with Honours",
+      "level": "bachelor",
+      "sourceUrl": "https://university.taylors.edu.my/en/study/explore-all-programmes/engineering/undergraduate/bachelor-of-mechatronics-engineering.html",
+      "languageStatus": "official-value",
+      "ieltsOnlySummaryStatus": "official-value",
+      "academicPerformanceStatus": "official-value",
+      "documentRoute": "undergraduate-general",
+      "specialRequirementStates": {
+        "interview": "official-unpublished",
+        "aptitudeAssessment": "official-unpublished",
+        "portfolio": "official-unpublished",
+        "workExperience": "official-unpublished",
+        "proposal": "official-unpublished",
+        "supervisor": "official-unpublished",
+        "priorPublication": "official-unpublished",
+        "healthMedical": "official-unpublished",
+        "bridgingModule": "official-unpublished",
+        "referenceLetter": "official-unpublished"
+      },
+      "publicDisplayStatus": "needs-review",
+      "remainingDisplayWork": [
+        "localized programme/faculty names",
+        "student-facing Chinese overview",
+        "localized course setting",
+        "localized career directions"
+      ]
+    },
+    {
+      "code": "TSU-M-018",
+      "nameEnOfficial": "Master of Science in Engineering",
+      "level": "master",
+      "sourceUrl": "https://university.taylors.edu.my/en/study/explore-all-programmes/engineering/master-research/master-of-science-in-engineering.html",
+      "languageStatus": "official-value",
+      "ieltsOnlySummaryStatus": "official-value",
+      "academicPerformanceStatus": "official-value",
+      "documentRoute": "postgraduate-research-international",
+      "specialRequirementStates": {
+        "interview": "official-value",
+        "aptitudeAssessment": "official-unpublished",
+        "portfolio": "official-unpublished",
+        "workExperience": "official-value",
+        "proposal": "official-value",
+        "supervisor": "official-unpublished",
+        "priorPublication": "official-unpublished",
+        "healthMedical": "official-unpublished",
+        "bridgingModule": "official-unpublished",
+        "referenceLetter": "official-unpublished"
+      },
+      "publicDisplayStatus": "needs-review",
+      "remainingDisplayWork": [
+        "localized programme/faculty names",
+        "student-facing Chinese overview",
+        "localized course setting",
+        "localized career directions"
+      ]
+    },
+    {
+      "code": "TSU-D-010",
+      "nameEnOfficial": "Doctor of Philosophy in Engineering",
+      "level": "phd",
+      "sourceUrl": "https://university.taylors.edu.my/en/study/explore-all-programmes/engineering/phd-research/doctor-of-philosophy-in-engineering.html",
+      "languageStatus": "official-value",
+      "ieltsOnlySummaryStatus": "official-value",
+      "academicPerformanceStatus": "official-value",
+      "documentRoute": "postgraduate-research-international",
+      "specialRequirementStates": {
+        "interview": "official-unpublished",
+        "aptitudeAssessment": "official-unpublished",
+        "portfolio": "official-unpublished",
+        "workExperience": "official-value",
+        "proposal": "official-value",
+        "supervisor": "official-unpublished",
+        "priorPublication": "official-value",
+        "healthMedical": "official-unpublished",
+        "bridgingModule": "official-value",
+        "referenceLetter": "official-unpublished"
+      },
+      "publicDisplayStatus": "needs-review",
+      "remainingDisplayWork": [
+        "localized programme/faculty names",
+        "student-facing Chinese overview",
+        "localized course setting",
+        "localized career directions"
+      ]
+    },
+    {
+      "code": "TSU-B-036",
+      "nameEnOfficial": "Bachelor of International Hospitality Management (Honours)",
+      "level": "bachelor",
+      "sourceUrl": "https://university.taylors.edu.my/en/study/explore-all-programmes/hospitality-tourism-and-events/undergraduate/bachelor-of-international-hospitality-management.html",
+      "languageStatus": "official-value",
+      "ieltsOnlySummaryStatus": "official-value",
+      "academicPerformanceStatus": "official-value",
+      "documentRoute": "undergraduate-general",
+      "specialRequirementStates": {
+        "interview": "official-unpublished",
+        "aptitudeAssessment": "official-unpublished",
+        "portfolio": "official-unpublished",
+        "workExperience": "official-unpublished",
+        "proposal": "official-unpublished",
+        "supervisor": "official-unpublished",
+        "priorPublication": "official-unpublished",
+        "healthMedical": "official-unpublished",
+        "bridgingModule": "official-unpublished",
+        "referenceLetter": "official-unpublished"
+      },
+      "publicDisplayStatus": "needs-review",
+      "remainingDisplayWork": [
+        "localized programme/faculty names",
+        "student-facing Chinese overview",
+        "localized course setting",
+        "localized career directions"
+      ]
+    },
+    {
+      "code": "TSU-B-037",
+      "nameEnOfficial": "Bachelor of International Events Management (Honours)",
+      "level": "bachelor",
+      "sourceUrl": "https://university.taylors.edu.my/en/study/explore-all-programmes/hospitality-tourism-and-events/undergraduate/bachelor-of-international-events-management.html",
+      "languageStatus": "official-value",
+      "ieltsOnlySummaryStatus": "official-value",
+      "academicPerformanceStatus": "official-value",
+      "documentRoute": "undergraduate-general",
+      "specialRequirementStates": {
+        "interview": "official-unpublished",
+        "aptitudeAssessment": "official-unpublished",
+        "portfolio": "official-unpublished",
+        "workExperience": "official-unpublished",
+        "proposal": "official-unpublished",
+        "supervisor": "official-unpublished",
+        "priorPublication": "official-unpublished",
+        "healthMedical": "official-unpublished",
+        "bridgingModule": "official-unpublished",
+        "referenceLetter": "official-unpublished"
+      },
+      "publicDisplayStatus": "needs-review",
+      "remainingDisplayWork": [
+        "localized programme/faculty names",
+        "student-facing Chinese overview",
+        "localized course setting",
+        "localized career directions"
+      ]
+    },
+    {
+      "code": "TSU-B-038",
+      "nameEnOfficial": "Bachelor of International Tourism Management (Honours)",
+      "level": "bachelor",
+      "sourceUrl": "https://university.taylors.edu.my/en/study/explore-all-programmes/hospitality-tourism-and-events/undergraduate/bachelor-of-international-tourism-management.html",
+      "languageStatus": "official-value",
+      "ieltsOnlySummaryStatus": "official-value",
+      "academicPerformanceStatus": "official-value",
+      "documentRoute": "undergraduate-general",
+      "specialRequirementStates": {
+        "interview": "official-unpublished",
+        "aptitudeAssessment": "official-unpublished",
+        "portfolio": "official-unpublished",
+        "workExperience": "official-unpublished",
+        "proposal": "official-unpublished",
+        "supervisor": "official-unpublished",
+        "priorPublication": "official-unpublished",
+        "healthMedical": "official-unpublished",
+        "bridgingModule": "official-unpublished",
+        "referenceLetter": "official-unpublished"
+      },
+      "publicDisplayStatus": "needs-review",
+      "remainingDisplayWork": [
+        "localized programme/faculty names",
+        "student-facing Chinese overview",
+        "localized course setting",
+        "localized career directions"
+      ]
+    },
+    {
+      "code": "TSU-M-019",
+      "nameEnOfficial": "Master of Global Hospitality Management (100% Online)",
+      "level": "master",
+      "sourceUrl": "https://university.taylors.edu.my/en/study/explore-all-programmes/hospitality-tourism-and-events/master-online/master-of-global-hospitality-management.html",
+      "languageStatus": "official-value",
+      "ieltsOnlySummaryStatus": "official-value",
+      "academicPerformanceStatus": "official-value",
+      "documentRoute": "postgraduate-coursework-international",
+      "specialRequirementStates": {
+        "interview": "official-value",
+        "aptitudeAssessment": "official-unpublished",
+        "portfolio": "official-unpublished",
+        "workExperience": "official-value",
+        "proposal": "official-unpublished",
+        "supervisor": "official-unpublished",
+        "priorPublication": "official-unpublished",
+        "healthMedical": "official-unpublished",
+        "bridgingModule": "official-value",
+        "referenceLetter": "official-unpublished"
+      },
+      "publicDisplayStatus": "needs-review",
+      "remainingDisplayWork": [
+        "localized programme/faculty names",
+        "student-facing Chinese overview",
+        "localized course setting",
+        "localized career directions"
+      ]
+    },
+    {
+      "code": "TSU-M-020",
+      "nameEnOfficial": "Master of International Hospitality Management",
+      "level": "master",
+      "sourceUrl": "https://university.taylors.edu.my/en/study/explore-all-programmes/hospitality-tourism-and-events/master-coursework/master-of-international-hospitality-management.html",
+      "languageStatus": "official-value",
+      "ieltsOnlySummaryStatus": "official-value",
+      "academicPerformanceStatus": "official-value",
+      "documentRoute": "postgraduate-coursework-international",
+      "specialRequirementStates": {
+        "interview": "official-value",
+        "aptitudeAssessment": "official-unpublished",
+        "portfolio": "official-unpublished",
+        "workExperience": "official-value",
+        "proposal": "official-unpublished",
+        "supervisor": "official-unpublished",
+        "priorPublication": "official-unpublished",
+        "healthMedical": "official-unpublished",
+        "bridgingModule": "official-value",
+        "referenceLetter": "official-unpublished"
+      },
+      "publicDisplayStatus": "needs-review",
+      "remainingDisplayWork": [
+        "localized programme/faculty names",
+        "student-facing Chinese overview",
+        "localized course setting",
+        "localized career directions"
+      ]
+    },
+    {
+      "code": "TSU-M-021",
+      "nameEnOfficial": "Master of Science in Tourism",
+      "level": "master",
+      "sourceUrl": "https://university.taylors.edu.my/en/study/explore-all-programmes/hospitality-tourism-and-events/master-research/master-of-science-in-tourism.html",
+      "languageStatus": "official-value",
+      "ieltsOnlySummaryStatus": "official-value",
+      "academicPerformanceStatus": "official-value",
+      "documentRoute": "postgraduate-research-international",
+      "specialRequirementStates": {
+        "interview": "official-value",
+        "aptitudeAssessment": "official-unpublished",
+        "portfolio": "official-unpublished",
+        "workExperience": "official-value",
+        "proposal": "official-value",
+        "supervisor": "official-unpublished",
+        "priorPublication": "official-unpublished",
+        "healthMedical": "official-unpublished",
+        "bridgingModule": "official-value",
+        "referenceLetter": "official-unpublished"
+      },
+      "publicDisplayStatus": "needs-review",
+      "remainingDisplayWork": [
+        "localized programme/faculty names",
+        "student-facing Chinese overview",
+        "localized course setting",
+        "localized career directions"
+      ]
+    },
+    {
+      "code": "TSU-D-011",
+      "nameEnOfficial": "Doctor of Philosophy In Hospitality & Tourism",
+      "level": "phd",
+      "sourceUrl": "https://university.taylors.edu.my/en/study/explore-all-programmes/hospitality-tourism-and-events/phd-research/doctor-of-philosophy-in-hospitality-tourism.html",
+      "languageStatus": "official-value",
+      "ieltsOnlySummaryStatus": "official-value",
+      "academicPerformanceStatus": "official-value",
+      "documentRoute": "postgraduate-research-international",
+      "specialRequirementStates": {
+        "interview": "official-value",
+        "aptitudeAssessment": "official-unpublished",
+        "portfolio": "official-unpublished",
+        "workExperience": "official-value",
+        "proposal": "official-value",
+        "supervisor": "official-unpublished",
+        "priorPublication": "official-value",
+        "healthMedical": "official-unpublished",
+        "bridgingModule": "official-value",
+        "referenceLetter": "official-unpublished"
+      },
+      "publicDisplayStatus": "needs-review",
+      "remainingDisplayWork": [
+        "localized programme/faculty names",
+        "student-facing Chinese overview",
+        "localized course setting",
+        "localized career directions"
+      ]
+    },
+    {
+      "code": "TSU-B-039",
+      "nameEnOfficial": "Bachelor of Laws (Honours)",
+      "level": "bachelor",
+      "sourceUrl": "https://university.taylors.edu.my/en/study/explore-all-programmes/law-and-governance/undergraduate/bachelor-of-laws.html",
+      "languageStatus": "official-value",
+      "ieltsOnlySummaryStatus": "official-unpublished",
+      "academicPerformanceStatus": "official-value",
+      "documentRoute": "undergraduate-general",
+      "specialRequirementStates": {
+        "interview": "official-unpublished",
+        "aptitudeAssessment": "official-unpublished",
+        "portfolio": "official-unpublished",
+        "workExperience": "official-unpublished",
+        "proposal": "official-unpublished",
+        "supervisor": "official-unpublished",
+        "priorPublication": "official-unpublished",
+        "healthMedical": "official-unpublished",
+        "bridgingModule": "official-unpublished",
+        "referenceLetter": "official-unpublished"
+      },
+      "publicDisplayStatus": "needs-review",
+      "remainingDisplayWork": [
+        "localized programme/faculty names",
+        "student-facing Chinese overview",
+        "localized course setting",
+        "localized career directions"
+      ]
+    },
+    {
+      "code": "TSU-B-040",
+      "nameEnOfficial": "Bachelor in Philosophy, Politics, and Economics (Honours)",
+      "level": "bachelor",
+      "sourceUrl": "https://university.taylors.edu.my/en/study/explore-all-programmes/law-and-governance/undergraduate/bachelor-in-philosophy-politics-and-economics.html",
+      "languageStatus": "official-value",
+      "ieltsOnlySummaryStatus": "official-value",
+      "academicPerformanceStatus": "official-value",
+      "documentRoute": "undergraduate-general",
+      "specialRequirementStates": {
+        "interview": "official-value",
+        "aptitudeAssessment": "official-unpublished",
+        "portfolio": "official-unpublished",
+        "workExperience": "official-unpublished",
+        "proposal": "official-unpublished",
+        "supervisor": "official-unpublished",
+        "priorPublication": "official-unpublished",
+        "healthMedical": "official-unpublished",
+        "bridgingModule": "official-unpublished",
+        "referenceLetter": "official-unpublished"
+      },
+      "publicDisplayStatus": "needs-review",
+      "remainingDisplayWork": [
+        "localized programme/faculty names",
+        "student-facing Chinese overview",
+        "localized course setting",
+        "localized career directions"
+      ]
+    },
+    {
+      "code": "TSU-M-022",
+      "nameEnOfficial": "Master of Laws in Healthcare and Medical Law",
+      "level": "master",
+      "sourceUrl": "https://university.taylors.edu.my/en/study/explore-all-programmes/law-and-governance/master-coursework/master-of-laws-in-healthcare-and-medical-law.html",
+      "languageStatus": "official-value",
+      "ieltsOnlySummaryStatus": "official-value",
+      "academicPerformanceStatus": "official-value",
+      "documentRoute": "postgraduate-coursework-international",
+      "specialRequirementStates": {
+        "interview": "official-unpublished",
+        "aptitudeAssessment": "official-unpublished",
+        "portfolio": "official-unpublished",
+        "workExperience": "official-value",
+        "proposal": "official-unpublished",
+        "supervisor": "official-unpublished",
+        "priorPublication": "official-unpublished",
+        "healthMedical": "official-unpublished",
+        "bridgingModule": "official-unpublished",
+        "referenceLetter": "official-unpublished"
+      },
+      "publicDisplayStatus": "needs-review",
+      "remainingDisplayWork": [
+        "localized programme/faculty names",
+        "student-facing Chinese overview",
+        "localized course setting",
+        "localized career directions"
+      ]
+    },
+    {
+      "code": "TSU-M-023",
+      "nameEnOfficial": "Master of Laws",
+      "level": "master",
+      "sourceUrl": "https://university.taylors.edu.my/en/study/explore-all-programmes/law-and-governance/master-coursework/master-of-laws.html",
+      "languageStatus": "official-value",
+      "ieltsOnlySummaryStatus": "official-value",
+      "academicPerformanceStatus": "official-value",
+      "documentRoute": "postgraduate-coursework-international",
+      "specialRequirementStates": {
+        "interview": "official-unpublished",
+        "aptitudeAssessment": "official-unpublished",
+        "portfolio": "official-unpublished",
+        "workExperience": "official-value",
+        "proposal": "official-unpublished",
+        "supervisor": "official-unpublished",
+        "priorPublication": "official-unpublished",
+        "healthMedical": "official-unpublished",
+        "bridgingModule": "official-unpublished",
+        "referenceLetter": "official-unpublished"
+      },
+      "publicDisplayStatus": "needs-review",
+      "remainingDisplayWork": [
+        "localized programme/faculty names",
+        "student-facing Chinese overview",
+        "localized course setting",
+        "localized career directions"
+      ]
+    },
+    {
+      "code": "TSU-D-012",
+      "nameEnOfficial": "Doctor of Philosophy in Law",
+      "level": "phd",
+      "sourceUrl": "https://university.taylors.edu.my/en/study/explore-all-programmes/law-and-governance/phd-research/doctor-of-philosophy-in-law.html",
+      "languageStatus": "official-value",
+      "ieltsOnlySummaryStatus": "official-value",
+      "academicPerformanceStatus": "official-value",
+      "documentRoute": "postgraduate-research-international",
+      "specialRequirementStates": {
+        "interview": "official-unpublished",
+        "aptitudeAssessment": "official-unpublished",
+        "portfolio": "official-unpublished",
+        "workExperience": "official-value",
+        "proposal": "official-unpublished",
+        "supervisor": "official-unpublished",
+        "priorPublication": "official-value",
+        "healthMedical": "official-unpublished",
+        "bridgingModule": "official-value",
+        "referenceLetter": "official-unpublished"
+      },
+      "publicDisplayStatus": "needs-review",
+      "remainingDisplayWork": [
+        "localized programme/faculty names",
+        "student-facing Chinese overview",
+        "localized course setting",
+        "localized career directions"
+      ]
+    },
+    {
+      "code": "TSU-B-041",
+      "nameEnOfficial": "Bachelor of Performing Arts (Honours)",
+      "level": "bachelor",
+      "sourceUrl": "https://university.taylors.edu.my/en/study/explore-all-programmes/liberal-arts-and-sciences/undergraduate/bachelor-of-performing-arts.html",
+      "languageStatus": "official-value",
+      "ieltsOnlySummaryStatus": "official-value",
+      "academicPerformanceStatus": "official-value",
+      "documentRoute": "undergraduate-general",
+      "specialRequirementStates": {
+        "interview": "official-value",
+        "aptitudeAssessment": "official-unpublished",
+        "portfolio": "official-unpublished",
+        "workExperience": "official-unpublished",
+        "proposal": "official-unpublished",
+        "supervisor": "official-unpublished",
+        "priorPublication": "official-unpublished",
+        "healthMedical": "official-unpublished",
+        "bridgingModule": "official-unpublished",
+        "referenceLetter": "official-unpublished"
+      },
+      "publicDisplayStatus": "needs-review",
+      "remainingDisplayWork": [
+        "localized programme/faculty names",
+        "student-facing Chinese overview",
+        "localized course setting",
+        "localized career directions"
+      ]
+    },
+    {
+      "code": "TSU-B-042",
+      "nameEnOfficial": "Bachelor of Psychology (Honours)",
+      "level": "bachelor",
+      "sourceUrl": "https://university.taylors.edu.my/en/study/explore-all-programmes/liberal-arts-and-sciences/undergraduate/bachelor-of-psychology.html",
+      "languageStatus": "official-value",
+      "ieltsOnlySummaryStatus": "official-value",
+      "academicPerformanceStatus": "official-value",
+      "documentRoute": "undergraduate-general",
+      "specialRequirementStates": {
+        "interview": "official-unpublished",
+        "aptitudeAssessment": "official-unpublished",
+        "portfolio": "official-unpublished",
+        "workExperience": "official-value",
+        "proposal": "official-unpublished",
+        "supervisor": "official-unpublished",
+        "priorPublication": "official-unpublished",
+        "healthMedical": "official-unpublished",
+        "bridgingModule": "official-unpublished",
+        "referenceLetter": "official-unpublished"
+      },
+      "publicDisplayStatus": "needs-review",
+      "remainingDisplayWork": [
+        "localized programme/faculty names",
+        "student-facing Chinese overview",
+        "localized course setting",
+        "localized career directions"
+      ]
+    },
+    {
+      "code": "TSU-B-043",
+      "nameEnOfficial": "Bachelor of Social Science (Honours) in International Relations",
+      "level": "bachelor",
+      "sourceUrl": "https://university.taylors.edu.my/en/study/explore-all-programmes/liberal-arts-and-sciences/undergraduate/bachelor-of-social-science-in-international-relations.html",
+      "languageStatus": "official-value",
+      "ieltsOnlySummaryStatus": "official-value",
+      "academicPerformanceStatus": "official-value",
+      "documentRoute": "undergraduate-general",
+      "specialRequirementStates": {
+        "interview": "official-unpublished",
+        "aptitudeAssessment": "official-unpublished",
+        "portfolio": "official-unpublished",
+        "workExperience": "official-unpublished",
+        "proposal": "official-unpublished",
+        "supervisor": "official-unpublished",
+        "priorPublication": "official-unpublished",
+        "healthMedical": "official-unpublished",
+        "bridgingModule": "official-unpublished",
+        "referenceLetter": "official-unpublished"
+      },
+      "publicDisplayStatus": "needs-review",
+      "remainingDisplayWork": [
+        "localized programme/faculty names",
+        "student-facing Chinese overview",
+        "localized course setting",
+        "localized career directions"
+      ]
+    },
+    {
+      "code": "TSU-M-024",
+      "nameEnOfficial": "Master of Counselling",
+      "level": "master",
+      "sourceUrl": "https://university.taylors.edu.my/en/study/explore-all-programmes/liberal-arts-and-sciences/master-coursework/master-of-counselling.html",
+      "languageStatus": "official-value",
+      "ieltsOnlySummaryStatus": "official-value",
+      "academicPerformanceStatus": "official-value",
+      "documentRoute": "postgraduate-coursework-international",
+      "specialRequirementStates": {
+        "interview": "official-value",
+        "aptitudeAssessment": "official-unpublished",
+        "portfolio": "official-unpublished",
+        "workExperience": "official-value",
+        "proposal": "official-unpublished",
+        "supervisor": "official-unpublished",
+        "priorPublication": "official-unpublished",
+        "healthMedical": "official-unpublished",
+        "bridgingModule": "official-unpublished",
+        "referenceLetter": "official-unpublished"
+      },
+      "publicDisplayStatus": "needs-review",
+      "remainingDisplayWork": [
+        "localized programme/faculty names",
+        "student-facing Chinese overview",
+        "localized course setting",
+        "localized career directions"
+      ]
+    },
+    {
+      "code": "TSU-M-025",
+      "nameEnOfficial": "Master of Clinical Psychology",
+      "level": "master",
+      "sourceUrl": "https://university.taylors.edu.my/en/study/explore-all-programmes/liberal-arts-and-sciences/master-coursework/master-of-clinical-psychology.html",
+      "languageStatus": "official-value",
+      "ieltsOnlySummaryStatus": "official-value",
+      "academicPerformanceStatus": "official-value",
+      "documentRoute": "postgraduate-coursework-international",
+      "specialRequirementStates": {
+        "interview": "official-value",
+        "aptitudeAssessment": "official-unpublished",
+        "portfolio": "official-unpublished",
+        "workExperience": "official-unpublished",
+        "proposal": "official-unpublished",
+        "supervisor": "official-value",
+        "priorPublication": "official-unpublished",
+        "healthMedical": "official-unpublished",
+        "bridgingModule": "official-unpublished",
+        "referenceLetter": "official-value"
+      },
+      "publicDisplayStatus": "needs-review",
+      "remainingDisplayWork": [
+        "localized programme/faculty names",
+        "student-facing Chinese overview",
+        "localized course setting",
+        "localized career directions"
+      ]
+    },
+    {
+      "code": "TSU-D-013",
+      "nameEnOfficial": "Doctor of Philosophy in Social Sciences",
+      "level": "phd",
+      "sourceUrl": "https://university.taylors.edu.my/en/study/explore-all-programmes/liberal-arts-and-sciences/phd-research/doctor-of-philosophy-in-social-sciences.html",
+      "languageStatus": "official-value",
+      "ieltsOnlySummaryStatus": "official-value",
+      "academicPerformanceStatus": "official-value",
+      "documentRoute": "postgraduate-research-international",
+      "specialRequirementStates": {
+        "interview": "official-value",
+        "aptitudeAssessment": "official-unpublished",
+        "portfolio": "official-unpublished",
+        "workExperience": "official-value",
+        "proposal": "official-unpublished",
+        "supervisor": "official-unpublished",
+        "priorPublication": "official-value",
+        "healthMedical": "official-unpublished",
+        "bridgingModule": "official-value",
+        "referenceLetter": "official-unpublished"
+      },
+      "publicDisplayStatus": "needs-review",
+      "remainingDisplayWork": [
+        "localized programme/faculty names",
+        "student-facing Chinese overview",
+        "localized course setting",
+        "localized career directions"
+      ]
+    },
+    {
+      "code": "TSU-B-044",
+      "nameEnOfficial": "Bachelor of Pharmacy with Honours",
+      "level": "bachelor",
+      "sourceUrl": "https://university.taylors.edu.my/en/study/explore-all-programmes/pharmacy/undergraduate/bachelor-of-pharmacy.html",
+      "languageStatus": "official-value",
+      "ieltsOnlySummaryStatus": "official-value",
+      "academicPerformanceStatus": "official-value",
+      "documentRoute": "undergraduate-general",
+      "specialRequirementStates": {
+        "interview": "official-value",
+        "aptitudeAssessment": "official-unpublished",
+        "portfolio": "official-unpublished",
+        "workExperience": "official-unpublished",
+        "proposal": "official-unpublished",
+        "supervisor": "official-unpublished",
+        "priorPublication": "official-unpublished",
+        "healthMedical": "official-unpublished",
+        "bridgingModule": "official-unpublished",
+        "referenceLetter": "official-unpublished"
+      },
+      "publicDisplayStatus": "needs-review",
+      "remainingDisplayWork": [
+        "localized programme/faculty names",
+        "student-facing Chinese overview",
+        "localized course setting",
+        "localized career directions"
+      ]
+    },
+    {
+      "code": "TSU-B-045",
+      "nameEnOfficial": "Bachelor of Pharmaceutical Science (Honours)",
+      "level": "bachelor",
+      "sourceUrl": "https://university.taylors.edu.my/en/study/explore-all-programmes/pharmacy/undergraduate/bachelor-of-pharmaceutical-science.html",
+      "languageStatus": "official-value",
+      "ieltsOnlySummaryStatus": "official-value",
+      "academicPerformanceStatus": "official-value",
+      "documentRoute": "undergraduate-general",
+      "specialRequirementStates": {
+        "interview": "official-unpublished",
+        "aptitudeAssessment": "official-unpublished",
+        "portfolio": "official-unpublished",
+        "workExperience": "official-value",
+        "proposal": "official-unpublished",
+        "supervisor": "official-unpublished",
+        "priorPublication": "official-unpublished",
+        "healthMedical": "official-unpublished",
+        "bridgingModule": "official-unpublished",
+        "referenceLetter": "official-unpublished"
+      },
+      "publicDisplayStatus": "needs-review",
+      "remainingDisplayWork": [
+        "localized programme/faculty names",
+        "student-facing Chinese overview",
+        "localized course setting",
+        "localized career directions"
+      ]
+    },
+    {
+      "code": "TSU-M-026",
+      "nameEnOfficial": "Master of Philosophy in Pharmaceutical Sciences",
+      "level": "master",
+      "sourceUrl": "https://university.taylors.edu.my/en/study/explore-all-programmes/pharmacy/master-research/master-of-philosophy-in-pharmaceutical-science.html",
+      "languageStatus": "official-value",
+      "ieltsOnlySummaryStatus": "official-value",
+      "academicPerformanceStatus": "official-value",
+      "documentRoute": "postgraduate-research-international",
+      "specialRequirementStates": {
+        "interview": "official-unpublished",
+        "aptitudeAssessment": "official-unpublished",
+        "portfolio": "official-unpublished",
+        "workExperience": "official-value",
+        "proposal": "official-value",
+        "supervisor": "official-unpublished",
+        "priorPublication": "official-unpublished",
+        "healthMedical": "official-unpublished",
+        "bridgingModule": "official-unpublished",
+        "referenceLetter": "official-unpublished"
+      },
+      "publicDisplayStatus": "needs-review",
+      "remainingDisplayWork": [
+        "localized programme/faculty names",
+        "student-facing Chinese overview",
+        "localized course setting",
+        "localized career directions"
+      ]
+    },
+    {
+      "code": "TSU-M-027",
+      "nameEnOfficial": "Master of Philosophy in Pharmacy",
+      "level": "master",
+      "sourceUrl": "https://university.taylors.edu.my/en/study/explore-all-programmes/pharmacy/master-research/master-of-philosophy-in-pharmacy.html",
+      "languageStatus": "official-value",
+      "ieltsOnlySummaryStatus": "official-value",
+      "academicPerformanceStatus": "official-value",
+      "documentRoute": "postgraduate-research-international",
+      "specialRequirementStates": {
+        "interview": "official-unpublished",
+        "aptitudeAssessment": "official-unpublished",
+        "portfolio": "official-unpublished",
+        "workExperience": "official-value",
+        "proposal": "official-value",
+        "supervisor": "official-unpublished",
+        "priorPublication": "official-unpublished",
+        "healthMedical": "official-unpublished",
+        "bridgingModule": "official-unpublished",
+        "referenceLetter": "official-unpublished"
+      },
+      "publicDisplayStatus": "needs-review",
+      "remainingDisplayWork": [
+        "localized programme/faculty names",
+        "student-facing Chinese overview",
+        "localized course setting",
+        "localized career directions"
+      ]
+    },
+    {
+      "code": "TSU-D-014",
+      "nameEnOfficial": "Doctor of Philosophy in Pharmaceutical Sciences",
+      "level": "phd",
+      "sourceUrl": "https://university.taylors.edu.my/en/study/explore-all-programmes/pharmacy/phd-research/doctor-of-philosophy-in-pharmaceutical-science.html",
+      "languageStatus": "official-value",
+      "ieltsOnlySummaryStatus": "official-value",
+      "academicPerformanceStatus": "official-value",
+      "documentRoute": "postgraduate-research-international",
+      "specialRequirementStates": {
+        "interview": "official-unpublished",
+        "aptitudeAssessment": "official-unpublished",
+        "portfolio": "official-unpublished",
+        "workExperience": "official-value",
+        "proposal": "official-value",
+        "supervisor": "official-unpublished",
+        "priorPublication": "official-value",
+        "healthMedical": "official-unpublished",
+        "bridgingModule": "official-value",
+        "referenceLetter": "official-unpublished"
+      },
+      "publicDisplayStatus": "needs-review",
+      "remainingDisplayWork": [
+        "localized programme/faculty names",
+        "student-facing Chinese overview",
+        "localized course setting",
+        "localized career directions"
+      ]
+    },
+    {
+      "code": "TSU-B-046",
+      "nameEnOfficial": "Bachelor of Medicine, Bachelor of Surgery (MBBS)",
+      "level": "bachelor",
+      "sourceUrl": "https://university.taylors.edu.my/en/study/explore-all-programmes/medicine/undergraduate/bachelor-of-medicine-bachelor-of-surgery.html",
+      "languageStatus": "official-value",
+      "ieltsOnlySummaryStatus": "official-value",
+      "academicPerformanceStatus": "official-value",
+      "documentRoute": "undergraduate-general",
+      "specialRequirementStates": {
+        "interview": "official-value",
+        "aptitudeAssessment": "official-unpublished",
+        "portfolio": "official-unpublished",
+        "workExperience": "official-unpublished",
+        "proposal": "official-unpublished",
+        "supervisor": "official-unpublished",
+        "priorPublication": "official-unpublished",
+        "healthMedical": "official-value",
+        "bridgingModule": "official-unpublished",
+        "referenceLetter": "official-unpublished"
+      },
+      "publicDisplayStatus": "needs-review",
+      "remainingDisplayWork": [
+        "localized programme/faculty names",
+        "student-facing Chinese overview",
+        "localized course setting",
+        "localized career directions"
+      ]
+    },
+    {
+      "code": "TSU-M-028",
+      "nameEnOfficial": "Master of Science in Medical Science",
+      "level": "master",
+      "sourceUrl": "https://university.taylors.edu.my/en/study/explore-all-programmes/medicine/master-research/master-of-science-in-medical-science.html",
+      "languageStatus": "official-value",
+      "ieltsOnlySummaryStatus": "official-value",
+      "academicPerformanceStatus": "official-value",
+      "documentRoute": "postgraduate-research-international",
+      "specialRequirementStates": {
+        "interview": "official-value",
+        "aptitudeAssessment": "official-unpublished",
+        "portfolio": "official-unpublished",
+        "workExperience": "official-value",
+        "proposal": "official-value",
+        "supervisor": "official-unpublished",
+        "priorPublication": "official-unpublished",
+        "healthMedical": "official-unpublished",
+        "bridgingModule": "official-unpublished",
+        "referenceLetter": "official-unpublished"
+      },
+      "publicDisplayStatus": "needs-review",
+      "remainingDisplayWork": [
+        "localized programme/faculty names",
+        "student-facing Chinese overview",
+        "localized course setting",
+        "localized career directions"
+      ]
+    },
+    {
+      "code": "TSU-D-015",
+      "nameEnOfficial": "Doctor of Philosophy in Medical Science",
+      "level": "phd",
+      "sourceUrl": "https://university.taylors.edu.my/en/study/explore-all-programmes/medicine/phd-research/doctor-of-philosophy-in-medical-science.html",
+      "languageStatus": "official-value",
+      "ieltsOnlySummaryStatus": "official-value",
+      "academicPerformanceStatus": "official-value",
+      "documentRoute": "postgraduate-research-international",
+      "specialRequirementStates": {
+        "interview": "official-value",
+        "aptitudeAssessment": "official-unpublished",
+        "portfolio": "official-unpublished",
+        "workExperience": "official-value",
+        "proposal": "official-unpublished",
+        "supervisor": "official-unpublished",
+        "priorPublication": "official-value",
+        "healthMedical": "official-unpublished",
+        "bridgingModule": "official-value",
+        "referenceLetter": "official-unpublished"
+      },
+      "publicDisplayStatus": "needs-review",
+      "remainingDisplayWork": [
+        "localized programme/faculty names",
+        "student-facing Chinese overview",
+        "localized course setting",
+        "localized career directions"
+      ]
+    }
+  ],
+  "decision": "review-required"
+}

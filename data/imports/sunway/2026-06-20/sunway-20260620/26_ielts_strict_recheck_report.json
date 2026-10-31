@@ -1,0 +1,1151 @@
+{
+  "task": "TASK-SUNWAY-IELTS-STRICT-RECHECK-20260627",
+  "generatedAt": "2026-06-27T07:36:39.490Z",
+  "sourcePath": "data/imports/sunway/2026-06-20/sunway-20260620/08_candidate_dataset.json",
+  "university": "Sunway University",
+  "officialDomains": [
+    "sunwayuniversity.edu.my",
+    "studyonline.sunwayuniversity.edu.my"
+  ],
+  "scope": "All currently published StudyMY Sunway bachelor/master/phd programmes",
+  "totals": {
+    "programmes": 97,
+    "fetchedOfficialPages": 97,
+    "directOfficialIeltsRows": 96,
+    "noDirectOfficialIeltsRows": 1,
+    "currentOfficialIeltsDistribution": {
+      "6": 85,
+      "7": 2,
+      "5.5": 6,
+      "null": 1,
+      "6.5": 3
+    },
+    "byLevel": {
+      "bachelor": {
+        "total": 48,
+        "directIelts": 48,
+        "noDirectIelts": 0
+      },
+      "phd": {
+        "total": 16,
+        "directIelts": 15,
+        "noDirectIelts": 1
+      },
+      "master": {
+        "total": 33,
+        "directIelts": 33,
+        "noDirectIelts": 0
+      }
+    }
+  },
+  "findings": {
+    "correctedByImporter": [
+      {
+        "code": "SUNWAY-PHD-008",
+        "issue": "candidate language.tests.IELTS incorrectly carried MUET Band 4 as IELTS 4; current official page and official text state IELTS 6.0."
+      }
+    ],
+    "noDirectOfficialIelts": [
+      {
+        "code": "SUNWAY-PHD-009",
+        "level": "phd",
+        "nameEnOfficial": "Doctor of Philosophy in Nursing",
+        "officialSourceUrl": "https://sunwayuniversity.edu.my/faculty-of-medical-and-life-sciences/courses/doctor-of-philosophy-nursing",
+        "evidenceExcerpt": "English Language Requirements English Competency Requirements for International Students: Achieve a minimum Band 4 in Malaysian University English Test (MUET) OR equivalent to Common European Framework of Reference (CEFR)(Mid B2). *Please refer to JPT/GS 1000/630 Jld.3 (12),6th of March 2023 – English Language Proficiency Requirements for International Students for equivalent English language assessments and scores. "
+      }
+    ]
+  },
+  "mismatchRows": [
+    {
+      "code": "SUNWAY-PHD-008",
+      "level": "phd",
+      "nameEnOfficial": "Doctor of Philosophy in Medical Science",
+      "officialSourceUrl": "https://sunwayuniversity.edu.my/faculty-of-medical-and-life-sciences/courses/doctor-of-philosophy-medical-science",
+      "httpStatus": 200,
+      "currentOfficialDirectIelts": 6,
+      "candidateOfficialDirectIelts": 6,
+      "candidateTestsIelts": 4,
+      "evidenceExcerpt": "English Language Requirements Local Students: Achieve a minimum score of 6.0 in the IELTS or equivalent; or Achieve a minimum Band 4 in Malaysian University English Test (MUET), OR equivalent to Common European Framework of Reference (CEFR) (Mid B2) International Students: Achieve a minimum score of 6.0 in the IELTS or equivalent. Note: The following students will be exempted from the English Language requirement: i. Students from countries that use English as the official language, or ii. Students with academic qualifications from institutions that use English as a full medium of instruction. "
+    },
+    {
+      "code": "SUNWAY-PHD-009",
+      "level": "phd",
+      "nameEnOfficial": "Doctor of Philosophy in Nursing",
+      "officialSourceUrl": "https://sunwayuniversity.edu.my/faculty-of-medical-and-life-sciences/courses/doctor-of-philosophy-nursing",
+      "httpStatus": 200,
+      "currentOfficialDirectIelts": null,
+      "candidateOfficialDirectIelts": null,
+      "candidateTestsIelts": null,
+      "evidenceExcerpt": "English Language Requirements English Competency Requirements for International Students: Achieve a minimum Band 4 in Malaysian University English Test (MUET) OR equivalent to Common European Framework of Reference (CEFR)(Mid B2). *Please refer to JPT/GS 1000/630 Jld.3 (12),6th of March 2023 – English Language Proficiency Requirements for International Students for equivalent English language assessments and scores. "
+    }
+  ],
+  "rows": [
+    {
+      "code": "SUNWAY-BACHELOR-001",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor of Science (Hons) in Accounting and Finance",
+      "officialSourceUrl": "https://sunwayuniversity.edu.my/sunway-business-school/courses/bachelor-of-science-hons-accounting-and-finance",
+      "httpStatus": 200,
+      "currentOfficialDirectIelts": 6,
+      "candidateOfficialDirectIelts": 6,
+      "candidateTestsIelts": 6,
+      "evidenceExcerpt": "English Language Requirements IELTS or equivalent 6.0 MUET Band 4 SPM English B UEC English B6 O-Level English (1119) Credit Sunway Intensive English Programme (IEP) Pass Level 4 with minimum 65% ESL/English Satisfactory level in Pre-University programmes, where the medium of instruction is English Scholarships and Financial Aid For more information about the scholarships and financial aid, please visit the SEG Scholarships website . Other Recommended Courses Image Bachelor (Honours) in Finance Image Bachelor of Science (Honours) Financial Analysis Image Bachelor of Science (Honours) Financial Economics View All Sunway Business School Courses Ask a question If you’d like to know more about s"
+    },
+    {
+      "code": "SUNWAY-BACHELOR-002",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor (Honours) in Finance",
+      "officialSourceUrl": "https://sunwayuniversity.edu.my/sunway-business-school/courses/bachelor-honours-finance",
+      "httpStatus": 200,
+      "currentOfficialDirectIelts": 6,
+      "candidateOfficialDirectIelts": 6,
+      "candidateTestsIelts": 6,
+      "evidenceExcerpt": "English Language Requirements TOEFL 550 paper-based, 213 computer-based, 80 internet-based IELTS or equivalent 6.0 PTE Academic 50 overall (minimum 46 in each skill) MUET Band 4 SPM English B UEC English B6 O-Level English Credit Sunway Intensive English Programme (IEP) Pass Level 4 with minimum 65% ESL/English Satisfactory level in Pre-University programmes, where the medium of instruction is English Scholarships and Financial Aid For more information about the scholarships and financial aid, please visit the SEG Scholarships website . Other Recommended Courses Image Bachelor of Science (Hons) in Accounting and Finance Image Bachelor of Science (Honours) Financial Analysis Image Bachelor of"
+    },
+    {
+      "code": "SUNWAY-BACHELOR-003",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor of Science (Honours) Financial Analysis",
+      "officialSourceUrl": "https://sunwayuniversity.edu.my/sunway-business-school/courses/bachelor-of-science-honours-financial-analysis",
+      "httpStatus": 200,
+      "currentOfficialDirectIelts": 6,
+      "candidateOfficialDirectIelts": 6,
+      "candidateTestsIelts": 6,
+      "evidenceExcerpt": "English Language Requirements IELTS or equivalent 6.0 MUET Band 4 SPM English B UEC English B6 O-Level English (1119) Credit Sunway Intensive English Programme (IEP) Pass Level 4 with minimum 65% ESL/English Satisfactory level in Pre-University programmes, where the medium of instruction is English Scholarships and Financial Aid For more information about the scholarships and financial aid, please visit the SEG Scholarships website . Other Recommended Courses Image Bachelor of Science (Hons) in Accounting and Finance Image Bachelor (Honours) in Finance Image Bachelor of Science (Honours) Financial Economics View All Sunway Business School Courses Ask a question If you’d like to know more abo"
+    },
+    {
+      "code": "SUNWAY-BACHELOR-004",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor of Science (Honours) Financial Economics",
+      "officialSourceUrl": "https://sunwayuniversity.edu.my/sunway-business-school/courses/bachelor-of-science-honours-financial-economics",
+      "httpStatus": 200,
+      "currentOfficialDirectIelts": 6,
+      "candidateOfficialDirectIelts": 6,
+      "candidateTestsIelts": 6,
+      "evidenceExcerpt": "English Language Requirements IELTS or equivalent 6.0 MUET Band 4 SPM English B UEC English B6 O-Level English (1119) Credit Sunway Intensive English Programme (IEP) Pass Level 4 with minimum 65% ESL/English Satisfactory level in Pre-University programmes, where the medium of instruction is English Scholarships and Financial Aid For more information about the scholarships and financial aid, please visit the SEG Scholarships website . Other Recommended Courses Image Bachelor of Science (Hons) in Accounting and Finance Image Bachelor (Honours) in Finance Image Bachelor of Science (Honours) Financial Analysis View All Sunway Business School Courses Ask a question If you’d like to know more abou"
+    },
+    {
+      "code": "SUNWAY-BACHELOR-005",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor of Science (Hons) in Actuarial Studies",
+      "officialSourceUrl": "https://sunwayuniversity.edu.my/school-of-mathematical-sciences/courses/bachelor-of-science-hons-actuarial-studies",
+      "httpStatus": 200,
+      "currentOfficialDirectIelts": 6,
+      "candidateOfficialDirectIelts": 6,
+      "candidateTestsIelts": 6,
+      "evidenceExcerpt": "English Language Requirements IELTS or equivalent 6.0 MUET Band 4 SPM English B UEC English B6 O-Level English (1119) Credit Sunway Intensive English Programme (IEP) Pass Level 4 with minimum 65% ESL/English Satisfactory level in Pre-University programmes, where the medium of instruction is English Professional Pathways & Exemptions Image Institute and Faculty of Actuaries (iFoA) UK Our programme has been fully accredited by the Institute and Faculty of Actuaries (iFoA), UK. Students in our programme who attain an overall average of 65% and above are eligible for block exemptions from the iFoA professional exams for CS1, CS2, CM1, CM2, CB1, and CB2. Students who did not attain an overall ave"
+    },
+    {
+      "code": "SUNWAY-BACHELOR-006",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor of Science (Honors) Computer Science (Artificial Intelligence)",
+      "officialSourceUrl": "https://sunwayuniversity.edu.my/school-of-american-education/courses/bachelor-of-science-honors-computer-science-artificial",
+      "httpStatus": 200,
+      "currentOfficialDirectIelts": 6,
+      "candidateOfficialDirectIelts": 6,
+      "candidateTestsIelts": 6,
+      "evidenceExcerpt": "English Language Requirements SPM English or equivalent Credit IELTS or equivalent Band 6.0 or equivalent MUET Band 4 UEC English B4 O-Level English (1119) Credit Sunway Intensive English Programme (IEP) Pass Level 4 with a minimum of 65% ESL/English Satisfactory level in Pre-University programs, Diploma or ADTP where the medium of instruction is English Specific Requirements Credit in Additional Mathematics at SPM level or its equivalent; OR If a candidate does not have a credit in Additional Mathematics at SPM level or its equivalent but has a credit in Mathematics and in one of the Science, Technology or Engineering subjects at SPM level or its equivalent, the candidate must take and pass"
+    },
+    {
+      "code": "SUNWAY-BACHELOR-007",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor in Digital Communication (Advertising) with Honors",
+      "officialSourceUrl": "https://sunwayuniversity.edu.my/school-of-american-education/courses/bachelor-digital-communication-advertising-honors",
+      "httpStatus": 200,
+      "currentOfficialDirectIelts": 6,
+      "candidateOfficialDirectIelts": 6,
+      "candidateTestsIelts": 6,
+      "evidenceExcerpt": "English Language Requirements SPM English or equivalent Credit IELTS Band 6 or equivalent MUET Band 4 UEC English B4 O-Level English (1119) Credit Sunway Intensive English Programme (IEP) Pass Level 4 with a minimum of 65% ESL/English Satisfactory level in Pre-University programs, Diploma or ADTP where the medium of instruction is English Scholarships and Financial Aid For more information about the scholarships and financial aid, please visit the SEG Scholarships website . Ask a question If you’d like to know more about studying at Sunway University, we’d love to hear from you. Submit an enquiry We’ll find the answer and email you back. Ask us now Call one of our course specialists Monday t"
+    },
+    {
+      "code": "SUNWAY-BACHELOR-008",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor in Digital Media Design with Honors",
+      "officialSourceUrl": "https://sunwayuniversity.edu.my/school-of-american-education/courses/bachelor-digital-media-design-honors",
+      "httpStatus": 200,
+      "currentOfficialDirectIelts": 6,
+      "candidateOfficialDirectIelts": 6,
+      "candidateTestsIelts": 6,
+      "evidenceExcerpt": "English Language Requirements IELTS Band 6.0 or equivalent MUET Band 4 SPM English or equivalent Credit UEC English B6 O-Level English (1119) Credit Sunway Intensive English Programme (IEP) Pass Level 4 with minimum 65% ESL/English Satisfactory level in Pre-University programs, Diploma or ADTP where the medium of instruction is English. Specific Requirements Pass a Portfolio review by the University Why is a Portfolio necessary? A portfolio provides some indication of your ability in design and allows us to assess your creative potential. What should a Portfolio contain? The portfolio requires a minimum of 5 artworks which show variation and usage of different mediums and applications. Candi"
+    },
+    {
+      "code": "SUNWAY-BACHELOR-009",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor of Arts (Honors) Global Management",
+      "officialSourceUrl": "https://sunwayuniversity.edu.my/school-of-american-education/courses/bachelor-of-arts-honors-global-management",
+      "httpStatus": 200,
+      "currentOfficialDirectIelts": 6,
+      "candidateOfficialDirectIelts": 6,
+      "candidateTestsIelts": 6,
+      "evidenceExcerpt": "English Language Requirements IELTS Band 6.0 or equivalent MUET Band 4 SPM English or equivalent Credit UEC English B6 O-Level English (1119) Credit Sunway Intensive English Programme (IEP) Pass Level 4 with a minimum 65% ESL/English Satisfactory level in Pre-University programs, Diploma or ADTP where the medium of instruction is English. Specific Requirements Pass in Mathematics at SPM or its equivalent Scholarships and Financial Aid For more information about the scholarships and financial aid, please visit the SEG Scholarships website . Ask a question If you’d like to know more about studying at Sunway University, we’d love to hear from you. Submit an enquiry We’ll find the answer and ema"
+    },
+    {
+      "code": "SUNWAY-BACHELOR-010",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor of Arts in Psychology (Honors)",
+      "officialSourceUrl": "https://sunwayuniversity.edu.my/school-of-american-education/courses/bachelor-of-arts-psychology-honors",
+      "httpStatus": 200,
+      "currentOfficialDirectIelts": 6,
+      "candidateOfficialDirectIelts": 6,
+      "candidateTestsIelts": 6,
+      "evidenceExcerpt": "English Language Requirements SPM English or its equivalent Credit IELTS Band 6.0 or its equivalent MUET Band 4 UEC English B4 O-Level English (1119) Credit Sunway Intensive English Programme (IEP) Pass Level 4 with a minimum of 65% ESL/English Satisfactory level in Pre-University programs, Diploma or ADTP where the medium of instruction is English Specific Requirements Credit in Mathematics and one Science subject at the SPM level or its equivalent or at a higher level. Note: Candidates who do not meet this requirement can still be accepted but they will be required to take and pass the reinforcement course(s) as prerequisite(s) to the related core courses(s) in the programme. Scholarships "
+    },
+    {
+      "code": "SUNWAY-BACHELOR-011",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor of Science (Honours) in Statistical Data Modelling",
+      "officialSourceUrl": "https://sunwayuniversity.edu.my/school-of-mathematical-sciences/courses/bachelor-of-science-honours-statistical-data-modelling",
+      "httpStatus": 200,
+      "currentOfficialDirectIelts": 6,
+      "candidateOfficialDirectIelts": 6,
+      "candidateTestsIelts": 6,
+      "evidenceExcerpt": "English Language Requirements IELTS or equivalent 6.0 MUET Band 4 SPM English B+ UEC English B6 O-Level English (1119) Credit Sunway Intensive English Programme (IEP) Pass Level 4 with minimum 65% ESL/English Satisfactory level in Pre-University programmes, where the medium of instruction is English Uniqueness and Comparison Uniqueness of BSc (Hons) in Statistical Data Modelling (BSM) Image Click here to download Comparison between Statistical Data Modelling Analytics vs AI Image Click here to download Image Click here to download Professional Pathways Statistical Knowledge Industrial Project (SKIP) Image Image The Statistical Knowledge Industrial Project (SKIP) is an innovative initiative d"
+    },
+    {
+      "code": "SUNWAY-BACHELOR-012",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor of Arts (Honours) in Architecture",
+      "officialSourceUrl": "https://sunwayuniversity.edu.my/faculty-of-arts-and-social-sciences/courses/bachelor-of-arts-honours-architecture",
+      "httpStatus": 200,
+      "currentOfficialDirectIelts": 6,
+      "candidateOfficialDirectIelts": 6,
+      "candidateTestsIelts": 6,
+      "evidenceExcerpt": "English Language Requirements IELTS or equivalent 6.0 MUET Band 4 SPM English B UEC English B6 O-Level English (1119) Credit Sunway Intensive English Programme (IEP) Pass Level 4 with minimum 65% ESL / English Satisfactory level in Pre-University programmes, where the medium of instruction is English Bachelor of Arts (Honours) in Architecture Preview Session For further information about this programme, you are invited to join us for a preview. To register for the preview. Register Here Scholarships and Financial Aid For more information about the scholarships and financial aid, please visit the SEG Scholarships website . Ask a question If you’d like to know more about studying at Sunway Uni"
+    },
+    {
+      "code": "SUNWAY-BACHELOR-013",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor of Arts (Honours) Design Communication",
+      "officialSourceUrl": "https://sunwayuniversity.edu.my/faculty-of-arts-and-social-sciences/courses/bachelor-of-arts-honours-design-communication",
+      "httpStatus": 200,
+      "currentOfficialDirectIelts": 6,
+      "candidateOfficialDirectIelts": 6,
+      "candidateTestsIelts": 6,
+      "evidenceExcerpt": "English Language Requirements IELTS or equivalent 6.0 MUET Band 4 SPM English B UEC English B6 O-Level English (1119) Credit Sunway Intensive English Programme (IEP) Pass Level 4 with minimum 65% ESL / English Satisfactory level in Pre-University programmes, where the medium of instruction is English Scholarships and Financial Aid For more information about the scholarships and financial aid, please visit the SEG Scholarships website . Other Recommended Courses Image BA (Hons) in Communication Image Bachelor of Arts (Honours) in Advertising and Branding Image Bachelor of Arts (Honours) in Interior Architecture View All Faculty of Arts and Social Sciences Courses Ask a question If you’d like "
+    },
+    {
+      "code": "SUNWAY-BACHELOR-014",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor of Arts (Honours) in Interior Architecture",
+      "officialSourceUrl": "https://sunwayuniversity.edu.my/faculty-of-arts-and-social-sciences/courses/bachelor-of-arts-honours-interior-architecture",
+      "httpStatus": 200,
+      "currentOfficialDirectIelts": 6,
+      "candidateOfficialDirectIelts": 6,
+      "candidateTestsIelts": 6,
+      "evidenceExcerpt": "English Language Requirements IELTS or equivalent 6.0 MUET Band 4 SPM English B UEC English B6 O-Level English (1119) Credit Sunway Intensive English Programme (IEP) Pass Level 4 with minimum 65% ESL / English Satisfactory level in Pre-University programmes, where the medium of instruction is English Scholarships and Financial Aid For more information about the scholarships and financial aid, please visit the SEG Scholarships website . Other Recommended Courses Image BA (Hons) in Communication Image Bachelor of Arts (Honours) in Advertising and Branding Image Bachelor of Arts (Honours) Design Communication View All Faculty of Arts and Social Sciences Courses Ask a question If you’d like to k"
+    },
+    {
+      "code": "SUNWAY-BACHELOR-015",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor of Science (Honours) Biomedicine",
+      "officialSourceUrl": "https://sunwayuniversity.edu.my/faculty-of-medical-and-life-sciences/courses/bachelor-of-science-honours-biomedicine",
+      "httpStatus": 200,
+      "currentOfficialDirectIelts": 6,
+      "candidateOfficialDirectIelts": 6,
+      "candidateTestsIelts": 6,
+      "evidenceExcerpt": "English Language Requirements IELTS or equivalent 6.0 MUET Band 4 SPM English B+ UEC English B4 O-Level English (1119)Credit B3 Sunway Intensive English Programme (IEP) Pass Level 4 with minimum 65% ESL/English Satisfactory level in Pre-University programmes, where the medium of instruction is English Note: For Malaysian students entering using an entry qualification whereby the medium of instruction is not in English, MQA requires the student to possess a MUET or international English proficiency qualification in order to register for the programme. Scholarships and Financial Aid For more information about the scholarships and financial aid, please visit the SEG Scholarships website . Other"
+    },
+    {
+      "code": "SUNWAY-BACHELOR-016",
+      "level": "bachelor",
+      "nameEnOfficial": "BSc (Hons) Medical Biotechnology",
+      "officialSourceUrl": "https://sunwayuniversity.edu.my/faculty-of-medical-and-life-sciences/courses/bsc-hons-medical-biotechnology",
+      "httpStatus": 200,
+      "currentOfficialDirectIelts": 6,
+      "candidateOfficialDirectIelts": 6,
+      "candidateTestsIelts": 6,
+      "evidenceExcerpt": "English Language Requirements IELTS or equivalent 6.0 MUET Band 4 SPM English B+ UEC English B4 O-Level English (1119)Credit B3 Sunway Intensive English Programme (IEP) Pass Level 4 with minimum 65% ESL/English Satisfactory level in Pre-University programmes, where the medium of instruction is English Note: The credit requirement at SPM level can be waived should the grades obtained at the Pre-University level are equivalent or higher. Scholarships and Financial Aid For more information about the scholarships and financial aid, please visit the SEG Scholarships website . Other Recommended Courses Image Bachelor of Science (Honours) Biomedicine Image Doctor of Medicine Image Bachelor of Scien"
+    },
+    {
+      "code": "SUNWAY-BACHELOR-017",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor of Business Analytics (Honours)",
+      "officialSourceUrl": "https://sunwayuniversity.edu.my/sunway-business-school/courses/bachelor-of-business-analytics-honours",
+      "httpStatus": 200,
+      "currentOfficialDirectIelts": 6,
+      "candidateOfficialDirectIelts": 6,
+      "candidateTestsIelts": 6,
+      "evidenceExcerpt": "English Language Requirements IELTS or equivalent 6.0 TOEFL 550 (paper-based), 213 (computer-based), 80 (internet-based) MUET Band 4 SPM English B+ UEC English B6 O-Level English (1119) Credit Sunway Intensive English Programme (IEP) Pass Level 4 with minimum 65% ESL/English Satisfactory level in Pre-University programmes, where the medium of instruction is English Scholarships and Financial Aid For more information about the scholarships and financial aid, please visit the SEG Scholarships website . Other Recommended Courses Image Bachelor of Arts (Honours) Entrepreneurship Image Bachelor of Science (Honours) in Business Management Image Bachelor of Science (Honours) Financial Analysis Imag"
+    },
+    {
+      "code": "SUNWAY-BACHELOR-018",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor of Arts (Honours) in Advertising and Branding",
+      "officialSourceUrl": "https://sunwayuniversity.edu.my/faculty-of-arts-and-social-sciences/courses/bachelor-of-arts-honours-advertising-and-branding",
+      "httpStatus": 200,
+      "currentOfficialDirectIelts": 6,
+      "candidateOfficialDirectIelts": 6,
+      "candidateTestsIelts": 6,
+      "evidenceExcerpt": "English Language Requirements IELTS or equivalent 6.0 MUET Band 4 SPM English B UEC English B6 O-Level English (1119) Credit ESL / English Satisfactory level in Pre-University programmes, where the medium of instruction is English Candidates who do not have a credit in English at SPM level or its equivalent may be admitted with a pass in English at SPM level or its equivalent. Candidates need to enrol and pass the Intensive English Programme (IEP) before the beginning of the study. Scholarships and Financial Aid For more information about the scholarships and financial aid, please visit the SEG Scholarships website . Other Recommended Courses Image BA (Hons) in Communication Image Bachelor o"
+    },
+    {
+      "code": "SUNWAY-BACHELOR-019",
+      "level": "bachelor",
+      "nameEnOfficial": "BA (Hons) in Communication",
+      "officialSourceUrl": "https://sunwayuniversity.edu.my/faculty-of-arts-and-social-sciences/courses/ba-hons-communication",
+      "httpStatus": 200,
+      "currentOfficialDirectIelts": 6,
+      "candidateOfficialDirectIelts": 6,
+      "candidateTestsIelts": 6,
+      "evidenceExcerpt": "English Language Requirements IELTS or equivalent 6.0 MUET Band 4 SPM English B UEC English B6 O-Level English (1119) Credit ESL / English Satisfactory level in Pre-University programmes, where the medium of instruction is English Candidates who do not have a credit in English at SPM level or its equivalent may be admitted with a pass in English at SPM level or its equivalent. Candidates need to enrol and pass the Intensive English Programme (IEP) before the beginning of the study. Scholarships and Financial Aid For more information about the scholarships and financial aid, please visit the SEG Scholarships website . Other Recommended Courses Image Bachelor of Arts (Honours) Design Communica"
+    },
+    {
+      "code": "SUNWAY-BACHELOR-020",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor of Arts (Honours) in Digital Media Communication",
+      "officialSourceUrl": "https://sunwayuniversity.edu.my/faculty-of-arts-and-social-sciences/courses/bachelor-of-arts-honours-digital-media-communication",
+      "httpStatus": 200,
+      "currentOfficialDirectIelts": 5.5,
+      "candidateOfficialDirectIelts": 5.5,
+      "candidateTestsIelts": 5.5,
+      "evidenceExcerpt": "English Language Requirements IELTS or equivalent 5.5 (With no individual band below 5.0) MUET Band 4 SPM English B UEC English B6 O-Level English (1119) Credit Sunway Intensive English Programme (IEP) Pass Level 4 ESL/English Satisfactory level in Pre-University programmes, where the medium of instruction is English Candidates who do not have a credit in English at SPM level or its equivalent may be admitted with a pass in English at SPM level or its equivalent. Candidates need to enrol and pass the Intensive English Programme (IEP) before the beginning of the study. Scholarships and Financial Aid For more information about the scholarships and financial aid, please visit the SEG Scholarshi"
+    },
+    {
+      "code": "SUNWAY-BACHELOR-021",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor of Science (Honours) in Artificial Intelligence",
+      "officialSourceUrl": "https://sunwayuniversity.edu.my/faculty-of-engineering-and-technology/courses/bachelor-of-science-honours-artificial-intelligence",
+      "httpStatus": 200,
+      "currentOfficialDirectIelts": 6,
+      "candidateOfficialDirectIelts": 6,
+      "candidateTestsIelts": 6,
+      "evidenceExcerpt": "English Language Requirements IELTS or equivalent 6.0 MUET Band 4 SPM English B UEC English B6 O-Level English (1119) Credit Sunway Intensive English Programme (IEP) Pass Level 4 with minimum 65% ESL/English Satisfactory level in Pre-University programmes, where the medium of instruction is English Scholarships and Financial Aid For more information about the scholarships and financial aid, please visit the SEG Scholarships website . Other Recommended Courses Image Bachelor of Science (Honors) Computer Science (Artificial Intelligence) Image Bachelor of Science (Honours) in Computer Science Image Bachelor of Software Engineering (Hons) View All Faculty of Engineering and Technology Courses A"
+    },
+    {
+      "code": "SUNWAY-BACHELOR-022",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor of Science (Honours) in Computer Science",
+      "officialSourceUrl": "https://sunwayuniversity.edu.my/faculty-of-engineering-and-technology/courses/bachelor-of-science-honours-computer-science",
+      "httpStatus": 200,
+      "currentOfficialDirectIelts": 6,
+      "candidateOfficialDirectIelts": 6,
+      "candidateTestsIelts": 6,
+      "evidenceExcerpt": "English Language Requirements IELTS or equivalent 6.0 MUET Band 4 SPM English B UEC English B6 O-Level English (1119) Credit Sunway Intensive English Programme (IEP) Pass Level 4 with minimum 65% ESL/English Satisfactory level in Pre-University programmes, where the medium of instruction is English Note: The following students will be exempted from the English Language requirement: Students from countries that use English as the official language; OR Students with academic qualifications from institutions that use English as full medium of instruction. Scholarships and Financial Aid For more information about the scholarships and financial aid, please visit the SEG Scholarships website . Oth"
+    },
+    {
+      "code": "SUNWAY-BACHELOR-023",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor of Information Systems (Honours) (Data Analytics)",
+      "officialSourceUrl": "https://sunwayuniversity.edu.my/faculty-of-engineering-and-technology/courses/bachelor-of-information-systems-honours-data",
+      "httpStatus": 200,
+      "currentOfficialDirectIelts": 6,
+      "candidateOfficialDirectIelts": 6,
+      "candidateTestsIelts": 6,
+      "evidenceExcerpt": "English Language Requirements IELTS or equivalent 6.0 MUET Band 4 SPM English B UEC English B6 O-Level English (1119) Credit Sunway Intensive English Programme (IEP) Pass Level 4 with minimum 65% ESL/English Satisfactory level in Pre-University programmes, where the medium of instruction is English Scholarships and Financial Aid For more information about the scholarships and financial aid, please visit the SEG Scholarships website . Other Recommended Courses Image Bachelor of Science (Honours) in Computer Science Image Bachelor of Software Engineering (Hons) Image BSc (Hons) Information Technology (Computer Networking and Security) View All Faculty of Engineering and Technology Courses Ask "
+    },
+    {
+      "code": "SUNWAY-BACHELOR-024",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor of Science (Honours) in Information Technology",
+      "officialSourceUrl": "https://sunwayuniversity.edu.my/faculty-of-engineering-and-technology/courses/bachelor-of-science-honours-information-technology",
+      "httpStatus": 200,
+      "currentOfficialDirectIelts": 6,
+      "candidateOfficialDirectIelts": 6,
+      "candidateTestsIelts": 6,
+      "evidenceExcerpt": "English Language Requirements IELTS or equivalent 6.0 MUET Band 4 SPM English B UEC English B6 O-Level English (1119) Credit Sunway Intensive English Programme (IEP) Pass Level 4 with minimum 65% ESL/English Satisfactory level in Pre-University programmes, where the medium of instruction is English Scholarships and Financial Aid For more information about the scholarships and financial aid, please visit the SEG Scholarships website . Other Recommended Courses Image Bachelor of Science (Honours) in Computer Science Image Bachelor of Information Systems (Honours) (Data Analytics) Image BSc (Hons) Information Technology (Computer Networking and Security) View All Faculty of Engineering and Tech"
+    },
+    {
+      "code": "SUNWAY-BACHELOR-025",
+      "level": "bachelor",
+      "nameEnOfficial": "BSc (Hons) Information Technology (Computer Networking and Security)",
+      "officialSourceUrl": "https://sunwayuniversity.edu.my/faculty-of-engineering-and-technology/courses/bsc-hons-information-technology-computer-networking",
+      "httpStatus": 200,
+      "currentOfficialDirectIelts": 6,
+      "candidateOfficialDirectIelts": 6,
+      "candidateTestsIelts": 6,
+      "evidenceExcerpt": "English Language Requirements IELTS or equivalent 6.0 MUET Band 4 SPM English B UEC English B6 O-Level English (1119) Credit Sunway Intensive English Programme (IEP) Pass Level 4 with minimum 65% ESL/English Satisfactory level in Pre-University programmes, where the medium of instruction is English Scholarships and Financial Aid For more information about the scholarships and financial aid, please visit the SEG Scholarships website . Other Recommended Courses Image Bachelor of Science (Honours) in Computer Science Image Bachelor of Information Systems (Honours) (Data Analytics) Image Bachelor of Software Engineering (Hons) View All Faculty of Engineering and Technology Courses Ask a question"
+    },
+    {
+      "code": "SUNWAY-BACHELOR-026",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor of Software Engineering (Hons)",
+      "officialSourceUrl": "https://sunwayuniversity.edu.my/faculty-of-engineering-and-technology/courses/bachelor-of-software-engineering-hons",
+      "httpStatus": 200,
+      "currentOfficialDirectIelts": 6,
+      "candidateOfficialDirectIelts": 6,
+      "candidateTestsIelts": 6,
+      "evidenceExcerpt": "English Language Requirements IELTS or equivalent 6.0 MUET Band 4 SPM English B UEC English B6 O-Level English (1119) Credit Sunway Intensive English Programme (IEP) Pass Level 4 with minimum 65% ESL/English Satisfactory level in Pre-University programmes, where the medium of instruction is English Scholarships and Financial Aid For more information about the scholarships and financial aid, please visit the SEG Scholarships website . Other Recommended Courses Image Bachelor of Science (Honours) in Computer Science Image Bachelor of Information Systems (Honours) (Data Analytics) Image Bachelor of Science (Honours) in Information Technology View All Faculty of Engineering and Technology Course"
+    },
+    {
+      "code": "SUNWAY-BACHELOR-027",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor of Science (Honours) in Culinary Management",
+      "officialSourceUrl": "https://sunwayuniversity.edu.my/school-of-hospitality-and-tourism-management/courses/bachelor-of-science-honours-culinary-management",
+      "httpStatus": 200,
+      "currentOfficialDirectIelts": 5.5,
+      "candidateOfficialDirectIelts": 5.5,
+      "candidateTestsIelts": 5.5,
+      "evidenceExcerpt": "English Language Requirements IELTS or equivalent 5.5 (With no individual band below 5.0) MUET Band 4 SPM English B UEC English B6 O-Level English (1119) Credit Sunway Intensive English Programme (IEP) Pass Level 4 ESL/English Satisfactory level in Pre-University programmes, where the medium of instruction is English Scholarships and Financial Aid For more information about the scholarships and financial aid, please visit the SEG Scholarships website . Other Recommended Courses Image Bachelor of Science (Honours) in Conventions and Events Management Image Bachelor of Science (Honours) in International Hospitality Management Image Bachelor of Arts (Honours) in Advertising and Branding View Al"
+    },
+    {
+      "code": "SUNWAY-BACHELOR-028",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor of Science (Honours) in Food Innovation",
+      "officialSourceUrl": "https://sunwayuniversity.edu.my/school-of-hospitality-and-tourism-management/courses/bachelor-of-science-honours-food-innovation",
+      "httpStatus": 200,
+      "currentOfficialDirectIelts": 5.5,
+      "candidateOfficialDirectIelts": 5.5,
+      "candidateTestsIelts": 5.5,
+      "evidenceExcerpt": "English Language Requirements IELTS or equivalent 5.5 (With no individual band below 5.0) MUET Band 4 SPM English B UEC English B6 O-Level English (1119) Credit Sunway Intensive English Programme (IEP) Pass Level 4 ESL/English Satisfactory level in Pre-University programmes, where the medium of instruction is English Bachelor of Science (Honours) in Food Innovation Preview Session For further information about this premier programme, you are invited to join us for a preview. To register for the preview. Register Here Scholarships and Financial Aid For more information about the scholarships and financial aid, please visit the SEG Scholarships website . Ask a question If you’d like to know mo"
+    },
+    {
+      "code": "SUNWAY-BACHELOR-029",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor of Chemical Engineering with Honours",
+      "officialSourceUrl": "https://sunwayuniversity.edu.my/faculty-of-engineering-and-technology/courses/bachelor-of-chemical-engineering-honours",
+      "httpStatus": 200,
+      "currentOfficialDirectIelts": 6,
+      "candidateOfficialDirectIelts": 6,
+      "candidateTestsIelts": 6,
+      "evidenceExcerpt": "English Language Requirements IELTS or equivalent 6.0 or equivalent MUET Band 4 SPM English B UEC English B6 O-Level English (1119) Credit Sunway Intensive English Programme (IEP) Pass Level 4 with minimum 65% ESL/English Satisfactory level at Pre-University programmes with English as the medium of instruction. Scholarships and Financial Aid For more information about the scholarships and financial aid, please visit the SEG Scholarships website . Other Recommended Courses Image Bachelor of Electronic and Electrical Engineering with Honours Image Bachelor of Mechanical Engineering with Honours Image Bachelor of Software Engineering (Hons) View All Faculty of Engineering and Technology Courses"
+    },
+    {
+      "code": "SUNWAY-BACHELOR-030",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor of Civil Engineering with Honours",
+      "officialSourceUrl": "https://sunwayuniversity.edu.my/faculty-of-engineering-and-technology/courses/bachelor-of-civil-engineering-honours",
+      "httpStatus": 200,
+      "currentOfficialDirectIelts": 6,
+      "candidateOfficialDirectIelts": 6,
+      "candidateTestsIelts": 6,
+      "evidenceExcerpt": "English Language Requirements IELTS or equivalent 6.0 or equivalent MUET Band 4 SPM English B UEC English B6 O-Level English (1119) Credit Sunway Intensive English Programme (IEP) Pass Level 4 with minimum 65% ESL/English Satisfactory level at Pre-University programmes with English as the medium of instruction. Scholarships and Financial Aid For more information about the scholarships and financial aid, please visit the SEG Scholarships website . Other Recommended Courses Image Bachelor of Chemical Engineering with Honours Image Bachelor of Electronic and Electrical Engineering with Honours Image Bachelor of Software Engineering (Hons) Image Bachelor of Science (Honours) in Computer Science "
+    },
+    {
+      "code": "SUNWAY-BACHELOR-031",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor of Electronic and Electrical Engineering with Honours",
+      "officialSourceUrl": "https://sunwayuniversity.edu.my/faculty-of-engineering-and-technology/courses/bachelor-of-electronic-and-electrical-engineering",
+      "httpStatus": 200,
+      "currentOfficialDirectIelts": 6,
+      "candidateOfficialDirectIelts": 6,
+      "candidateTestsIelts": 6,
+      "evidenceExcerpt": "English Language Requirements IELTS or equivalent 6.0 or equivalent MUET Band 4 SPM English B UEC English B6 O-Level English (1119) Credit Sunway Intensive English Programme (IEP) Pass Level 4 with minimum 65% ESL/English Satisfactory level at Pre-University programmes with English as the medium of instruction. Scholarships and Financial Aid For more information about the scholarships and financial aid, please visit the SEG Scholarships website . Other Recommended Courses Image Bachelor of Chemical Engineering with Honours Image Bachelor of Mechanical Engineering with Honours Image Bachelor of Science (Honours) in Computer Science View All Faculty of Engineering and Technology Courses Ask a "
+    },
+    {
+      "code": "SUNWAY-BACHELOR-032",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor of Mechanical Engineering with Honours",
+      "officialSourceUrl": "https://sunwayuniversity.edu.my/faculty-of-engineering-and-technology/courses/bachelor-of-mechanical-engineering-honours",
+      "httpStatus": 200,
+      "currentOfficialDirectIelts": 6,
+      "candidateOfficialDirectIelts": 6,
+      "candidateTestsIelts": 6,
+      "evidenceExcerpt": "English Language Requirements IELTS or equivalent 6.0 or equivalent MUET Band 4 SPM English B UEC English B6 O-Level English (1119) Credit Sunway Intensive English Programme (IEP) Pass Level 4 with minimum 65% ESL/English Satisfactory level at Pre-University programmes with English as the medium of instruction. Scholarships and Financial Aid For more information about the scholarships and financial aid, please visit the SEG Scholarships website . Other Recommended Courses Image Bachelor of Chemical Engineering with Honours Image Bachelor of Electronic and Electrical Engineering with Honours Image Bachelor of Science (Honours) in Computer Science Image Bachelor of Software Engineering (Hons) "
+    },
+    {
+      "code": "SUNWAY-BACHELOR-033",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor of Mechatronic Engineering (Robotics) with Honours",
+      "officialSourceUrl": "https://sunwayuniversity.edu.my/faculty-of-engineering-and-technology/courses/bachelor-of-mechatronic-engineering-robotics-honours",
+      "httpStatus": 200,
+      "currentOfficialDirectIelts": 6,
+      "candidateOfficialDirectIelts": 6,
+      "candidateTestsIelts": 6,
+      "evidenceExcerpt": "English Language Requirements IELTS or equivalent 6.0 or equivalent MUET Band 4 SPM English B UEC English B6 O-Level English (1119) Credit Sunway Intensive English Programme (IEP) Pass Level 4 with minimum 65% ESL/English Satisfactory level at Pre-University programmes with English as the medium of instruction. Scholarships and Financial Aid For more information about the scholarships and financial aid, please visit the SEG Scholarships website . Other Recommended Courses Image Bachelor of Software Engineering (Hons) Image Bachelor of Chemical Engineering with Honours Image Bachelor of Science (Honours) in Computer Science Image Bachelor of Electronic and Electrical Engineering with Honours "
+    },
+    {
+      "code": "SUNWAY-BACHELOR-034",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor of Arts (Honours) Contemporary Music (Audio Technology)",
+      "officialSourceUrl": "https://sunwayuniversity.edu.my/faculty-of-arts-and-social-sciences/courses/bachelor-of-arts-honours-contemporary-music-audio",
+      "httpStatus": 200,
+      "currentOfficialDirectIelts": 6,
+      "candidateOfficialDirectIelts": 6,
+      "candidateTestsIelts": 6,
+      "evidenceExcerpt": "English Language Requirements IELTS or equivalent 6.0 MUET Band 4 SPM English B UEC English B6 O-Level English (1119) Credit Sunway Intensive English Programme (IEP) Pass Level 4 with minimum 65% ESL / English Satisfactory level in Pre-University programmes, where the medium of instruction is English Scholarships and Financial Aid For more information about the scholarships and financial aid, please visit the SEG Scholarships website . Other Recommended Courses Image Bachelor of Arts (Honours) Digital Film Production Image Bachelor of Arts (Honours) Music Performance Image BA (Hons) in Communication View All Faculty of Arts and Social Sciences Courses Ask a question If you’d like to know mor"
+    },
+    {
+      "code": "SUNWAY-BACHELOR-035",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor of Arts (Honours) Digital Film Production",
+      "officialSourceUrl": "https://sunwayuniversity.edu.my/faculty-of-arts-and-social-sciences/courses/bachelor-of-arts-honours-digital-film-production",
+      "httpStatus": 200,
+      "currentOfficialDirectIelts": 6,
+      "candidateOfficialDirectIelts": 6,
+      "candidateTestsIelts": 6,
+      "evidenceExcerpt": "English Language Requirements IELTS or equivalent 6.0 MUET Band 4 SPM English B UEC English B6 O-Level English (1119) Credit Sunway Intensive English Programme (IEP) Pass Level 4 with minimum 65% ESL / English Satisfactory level in Pre-University programmes, where the medium of instruction is English Scholarships and Financial Aid For more information about the scholarships and financial aid, please visit the SEG Scholarships website . Other Recommended Courses Image Bachelor of Arts (Honours) Contemporary Music (Audio Technology) Image Bachelor of Arts (Honours) Music Performance Image Bachelor of Arts (Honours) in Theatre Production View All Faculty of Arts and Social Sciences Courses Ask "
+    },
+    {
+      "code": "SUNWAY-BACHELOR-036",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor of Arts (Honours) Music Performance",
+      "officialSourceUrl": "https://sunwayuniversity.edu.my/faculty-of-arts-and-social-sciences/courses/bachelor-of-arts-honours-music-performance",
+      "httpStatus": 200,
+      "currentOfficialDirectIelts": 6,
+      "candidateOfficialDirectIelts": 6,
+      "candidateTestsIelts": 6,
+      "evidenceExcerpt": "English Language Requirements IELTS or equivalent 6.0 MUET Band 4 SPM English B UEC English B6 O-Level English (1119) Credit Sunway Intensive English Programme (IEP) Pass Level 4 with minimum 65% ESL / English Satisfactory level in Pre-University programmes, where the medium of instruction is English Scholarships and Financial Aid For more information about the scholarships and financial aid, please visit the SEG Scholarships website . Other Recommended Courses Image Bachelor of Arts (Honours) Contemporary Music (Audio Technology) Image Bachelor of Arts (Honours) Digital Film Production Image BA (Hons) in Communication View All Faculty of Arts and Social Sciences Courses Ask a question If yo"
+    },
+    {
+      "code": "SUNWAY-BACHELOR-037",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor of Arts (Honours) in Theatre Production",
+      "officialSourceUrl": "https://sunwayuniversity.edu.my/faculty-of-arts-and-social-sciences/courses/bachelor-of-arts-honours-theatre-production",
+      "httpStatus": 200,
+      "currentOfficialDirectIelts": 6,
+      "candidateOfficialDirectIelts": 6,
+      "candidateTestsIelts": 6,
+      "evidenceExcerpt": "English Language Requirements IELTS or equivalent 6.0 MUET Band 4 SPM English B UEC English B6 O-Level English (1119) Credit Sunway Intensive English Programme (IEP) Pass Level 4 with minimum 65% ESL / English Satisfactory level in Pre-University programmes, where the medium of instruction is English Scholarships and Financial Aid For more information about the scholarships and financial aid, please visit the SEG Scholarships website . Other Recommended Courses Image Bachelor of Arts (Honours) Digital Film Production Image Diploma in Performing Arts Image Bachelor of Arts (Honours) Music Performance View All Faculty of Arts and Social Sciences Courses Ask a question If you’d like to know mor"
+    },
+    {
+      "code": "SUNWAY-BACHELOR-038",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor of Science (Honours) in Conventions and Events Management",
+      "officialSourceUrl": "https://sunwayuniversity.edu.my/school-of-hospitality-and-tourism-management/courses/bachelor-of-science-honours-conventions-and-events-management",
+      "httpStatus": 200,
+      "currentOfficialDirectIelts": 5.5,
+      "candidateOfficialDirectIelts": 5.5,
+      "candidateTestsIelts": 5.5,
+      "evidenceExcerpt": "English Language Requirements IELTS or equivalent 5.5 (With no individual band below 5.0) MUET Band 4 SPM English B UEC English B6 O-Level English (1119) Credit Sunway Intensive English Programme (IEP) Pass Level 4 ESL/English Satisfactory level in Pre-University programmes, where the medium of instruction is English Scholarships and Financial Aid For more information about the scholarships and financial aid, please visit the SEG Scholarships website . Other Recommended Courses Image Bachelor of Science (Honours) in Culinary Management Image Bachelor of Science (Honours) in International Hospitality Management Image Bachelor of Arts (Honours) in Interior Architecture View All School of Hospi"
+    },
+    {
+      "code": "SUNWAY-BACHELOR-039",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor of Science (Honours) in International Hospitality Management",
+      "officialSourceUrl": "https://sunwayuniversity.edu.my/school-of-hospitality-and-tourism-management/courses/bachelor-of-science-honours-international-hospitality-management",
+      "httpStatus": 200,
+      "currentOfficialDirectIelts": 5.5,
+      "candidateOfficialDirectIelts": 5.5,
+      "candidateTestsIelts": 5.5,
+      "evidenceExcerpt": "English Language Requirements IELTS or equivalent 5.5 (With no individual band below 5.0) MUET Band 4 SPM English B UEC English B6 O-Level English (1119) Credit Sunway Intensive English Programme (IEP) Pass Level 4 ESL/English Satisfactory level in Pre-University programmes, where the medium of instruction is English Scholarships and Financial Aid For more information about the scholarships and financial aid, please visit the SEG Scholarships website . Other Recommended Courses Image Bachelor of Science (Honours) in Conventions and Events Management Image Bachelor of Science (Honours) in Culinary Management Image Bachelor of Arts (Honours) Design Communication View All School of Hospitality "
+    },
+    {
+      "code": "SUNWAY-BACHELOR-040",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor of Science (Honours) in Business Management",
+      "officialSourceUrl": "https://sunwayuniversity.edu.my/sunway-business-school/courses/bachelor-of-science-honours-business-management",
+      "httpStatus": 200,
+      "currentOfficialDirectIelts": 6,
+      "candidateOfficialDirectIelts": 6,
+      "candidateTestsIelts": 6,
+      "evidenceExcerpt": "English Language Requirements IELTS or equivalent 6.0 MUET Band 4 SPM English B UEC English B6 O-Level English (1119) Credit Sunway Intensive English Programme (IEP) Pass Level 4 with minimum 65% ESL/English Satisfactory level in Pre-University programmes, where the medium of instruction is English Specific Requirements Pass in Mathematics at SPM or its equivalent Any other qualifications will be considered on a case-to-case basis Scholarships and Financial Aid For more information about the scholarships and financial aid, please visit the SEG Scholarships website . Other Recommended Courses Image Bachelor of Business Analytics (Honours) Image Bachelor of Arts (Honours) Entrepreneurship Imag"
+    },
+    {
+      "code": "SUNWAY-BACHELOR-041",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor of Arts (Honours) Entrepreneurship",
+      "officialSourceUrl": "https://sunwayuniversity.edu.my/sunway-business-school/courses/bachelor-of-arts-honours-entrepreneurship",
+      "httpStatus": 200,
+      "currentOfficialDirectIelts": 6,
+      "candidateOfficialDirectIelts": 6,
+      "candidateTestsIelts": 6,
+      "evidenceExcerpt": "English Language Requirements IELTS or equivalent 6.0 MUET Band 4 SPM English B UEC English B6 O-Level English (1119) Credit Sunway Intensive English Programme (IEP) Pass Level 4 with minimum 65% ESL/English Satisfactory level in Pre-University programmes, where the medium of instruction is English Scholarships and Financial Aid For more information about the scholarships and financial aid, please visit the SEG Scholarships website . Other Recommended Courses Image Bachelor of Science (Honours) in Business Management Image Bachelor of Science (Honours) in International Business Image Bachelor of Science (Honours) Global Supply Chain Management View All Sunway Business School Courses Ask a qu"
+    },
+    {
+      "code": "SUNWAY-BACHELOR-042",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor of Science (Honours) Global Supply Chain Management",
+      "officialSourceUrl": "https://sunwayuniversity.edu.my/sunway-business-school/courses/bachelor-of-science-honours-global-supply-chain-management",
+      "httpStatus": 200,
+      "currentOfficialDirectIelts": 6,
+      "candidateOfficialDirectIelts": 6,
+      "candidateTestsIelts": 6,
+      "evidenceExcerpt": "English Language Requirements IELTS 6.0 MUET Band 4 SPM English B UEC English B6 O-Level English (1119) Credit Sunway Intensive English Programme (IEP) Pass Level 4 with minimum 65% ESL/English Satisfactory level in Pre-University programmes, where the medium of instruction is English Scholarships and Financial Aid For more information about the scholarships and financial aid, please visit the SEG Scholarships website . Other Recommended Courses Image Bachelor of Science (Honours) in Business Management Image Bachelor of Business Analytics (Honours) Image Bachelor of Arts (Honours) Entrepreneurship View All Sunway Business School Courses Ask a question If you’d like to know more about studyi"
+    },
+    {
+      "code": "SUNWAY-BACHELOR-043",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor of Science (Honours) in International Business",
+      "officialSourceUrl": "https://sunwayuniversity.edu.my/sunway-business-school/courses/bachelor-of-science-honours-international-business",
+      "httpStatus": 200,
+      "currentOfficialDirectIelts": 6,
+      "candidateOfficialDirectIelts": 6,
+      "candidateTestsIelts": 6,
+      "evidenceExcerpt": "English Language Requirements IELTS or equivalent 6.0 MUET Band 4 SPM English B UEC English B6 O-Level English (1119) Credit Sunway Intensive English Programme (IEP) Pass Level 4 with minimum 65% ESL/English Satisfactory level in Pre-University programmes, where the medium of instruction is English Scholarships and Financial Aid For more information about the scholarships and financial aid, please visit the SEG Scholarships website . Other Recommended Courses Image Bachelor of Science (Honours) in Business Management Image Bachelor of Science (Honours) in Business Studies Image Bachelor of Science (Honours) Global Supply Chain Management View All Sunway Business School Courses Ask a question"
+    },
+    {
+      "code": "SUNWAY-BACHELOR-044",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor of Science (Honours) in Business Studies",
+      "officialSourceUrl": "https://sunwayuniversity.edu.my/sunway-business-school/courses/bachelor-of-science-honours-business-studies",
+      "httpStatus": 200,
+      "currentOfficialDirectIelts": 6,
+      "candidateOfficialDirectIelts": 6,
+      "candidateTestsIelts": 6,
+      "evidenceExcerpt": "English Language Requirements IELTS or equivalent 6.0 MUET Band 4 SPM English B UEC English B6 O-Level English (1119) Credit Sunway Intensive English Programme (IEP) Pass Level 4 with minimum 65% ESL/English Satisfactory level in Pre-University programmes, where the medium of instruction is English Scholarships and Financial Aid For more information about the scholarships and financial aid, please visit the SEG Scholarships website . Other Recommended Courses Image Bachelor of Science (Honours) in Business Management Image Bachelor of Arts (Honours) Entrepreneurship Image Bachelor of Science (Honours) in International Business View All Sunway Business School Courses Ask a question If you’d l"
+    },
+    {
+      "code": "SUNWAY-BACHELOR-045",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor of Science (Honours) Marketing",
+      "officialSourceUrl": "https://sunwayuniversity.edu.my/sunway-business-school/courses/bachelor-of-science-honours-marketing",
+      "httpStatus": 200,
+      "currentOfficialDirectIelts": 6,
+      "candidateOfficialDirectIelts": 6,
+      "candidateTestsIelts": 6,
+      "evidenceExcerpt": "IELTS 6.0 PTE Academic 50 overall (minimum 46 in each skill) MUET Band 4 SPM English B UEC English B6 O-Level English (1119) Credit Sunway Intensive English Programme (IEP) Pass Level 4 with minimum 65% ESL/English Satisfactory level in Pre-University programmes, where the medium of instruction is English Scholarships and Financial Aid For more information about the scholarships and financial aid, please visit the SEG Scholarships website . Other Recommended Courses Image Bachelor of Science (Honours) in Business Management Image Bachelor of Business Analytics (Honours) Image Bachelor of Arts (Honours) Entrepreneurship View All Sunway Business School Courses Ask a question If you’d like to k"
+    },
+    {
+      "code": "SUNWAY-BACHELOR-046",
+      "level": "bachelor",
+      "nameEnOfficial": "Doctor of Medicine (MD)",
+      "officialSourceUrl": "https://sunwayuniversity.edu.my/faculty-of-medical-and-life-sciences/courses/doctor-of-medicine",
+      "httpStatus": 200,
+      "currentOfficialDirectIelts": 6,
+      "candidateOfficialDirectIelts": 6,
+      "candidateTestsIelts": 6,
+      "evidenceExcerpt": "English Language Requirements MUET Band 4 IELTS or equivalent 6.0 SPM English B+ O-Level English (1119) Credit UEC English B4 Pre-University/Diploma/foundation or equivalent Programme conducted in English Specific Requirements Applicants are required to pass an interview and a medical check-up Age Requirement As per the Malaysian Medical Council (MMC) guidelines, students need to be 18 years of age at the commencement of this programme. Doctor of Medicine Preview Session For further information about this programme, you are invited to join us for a preview. To register for the preview. Register Here Scholarships and Financial Aid For more information about the scholarships and financial aid,"
+    },
+    {
+      "code": "SUNWAY-BACHELOR-047",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor of Nursing (Honours)",
+      "officialSourceUrl": "https://sunwayuniversity.edu.my/faculty-of-medical-and-life-sciences/courses/bachelor-of-nursing-honours",
+      "httpStatus": 200,
+      "currentOfficialDirectIelts": 5.5,
+      "candidateOfficialDirectIelts": 5.5,
+      "candidateTestsIelts": 5.5,
+      "evidenceExcerpt": "English Language Requirements Malaysian students Minimum credit in Bahasa Melayu in SPM / Grade C in SVM,AND Attained one of the proficiency in English Language examination result International students Attained one of the proficiency in English Language examination result English Language Proficiency Requirements MUET: Band 3 IELTS: 5.5 TOEFL: 453 (Paper based test) / 133 (Computer based test) / 46 (Internet based test) Pearson Test of English: 51 Cambridge English Qualifications (Test A2 Key / B1 Prelim / B2 First / C1 Advanced / C2 Proficiency / Linguaskill): Minimum score of 160 Cambridge English Qualifications (OET): Minimum score of 200 Specific Requirements As per the Malaysian Nursin"
+    },
+    {
+      "code": "SUNWAY-BACHELOR-048",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor of Science (Honours) in Psychology",
+      "officialSourceUrl": "https://sunwayuniversity.edu.my/faculty-of-medical-and-life-sciences/courses/bachelor-of-science-honours-psychology",
+      "httpStatus": 200,
+      "currentOfficialDirectIelts": 6,
+      "candidateOfficialDirectIelts": 6,
+      "candidateTestsIelts": 6,
+      "evidenceExcerpt": "English Language Requirements IELTS or equivalent 6.0 MUET Band 5 SPM English B3 UEC English B4 O-Level English (1119) B3 Sunway Intensive English Programme (IEP) Pass Level 4 with minimum 65% ESL/English Satisfactory level in Pre-University programmes, where the medium of instruction is English Note: Any other qualifications will be considered on a case-by-case basis. *Sunway Diploma holders may obtain advanced standing if credit transfer requirements are met. "
+    },
+    {
+      "code": "SUNWAY-PHD-001",
+      "level": "phd",
+      "nameEnOfficial": "Doctor of Philosophy in Biology",
+      "officialSourceUrl": "https://sunwayuniversity.edu.my/faculty-of-medical-and-life-sciences/courses/doctor-of-philosophy-biology",
+      "httpStatus": 200,
+      "currentOfficialDirectIelts": 6,
+      "candidateOfficialDirectIelts": 6,
+      "candidateTestsIelts": 6,
+      "evidenceExcerpt": "English Language Requirements Any of the following IELTS 6.0 or equivalent TOEFL 550 (paper-based), 213 (computer-based), or 80 (internet-based) PTE Academic 50 overall (minimum 46 in each skill) For International/Malaysian applicants English is the medium of instruction of previous degree for candidates from universities in non-English speaking countries outside Malaysia. "
+    },
+    {
+      "code": "SUNWAY-PHD-002",
+      "level": "phd",
+      "nameEnOfficial": "Doctor of Philosophy (Business)",
+      "officialSourceUrl": "https://sunwayuniversity.edu.my/sunway-business-school/courses/doctor-of-philosophy-business",
+      "httpStatus": 200,
+      "currentOfficialDirectIelts": 7,
+      "candidateOfficialDirectIelts": 7,
+      "candidateTestsIelts": 7,
+      "evidenceExcerpt": "English Language Requirements IELTS: 7.0 or equivalent Application Procedure Candidates are requested to send the completed application with the following supporting documents to Doctor of Philosophy (Business) at @email and @email Sunway postgraduate application form A copy of National Identity Card (Malaysians only) or Passport (all pages for international students) Certified copies of transcripts of Master’s and undergraduate degrees Curriculum Vitae (CV) IELTS score or its equivalent (if relevant) Two (2) passport-sized photographs Research proposal in softcopy Research proposal, which includes Working title Nature of the research that interest you and why; and References to anything you"
+    },
+    {
+      "code": "SUNWAY-PHD-003",
+      "level": "phd",
+      "nameEnOfficial": "Doctor of Philosophy (Computing)",
+      "officialSourceUrl": "https://sunwayuniversity.edu.my/faculty-of-engineering-and-technology/courses/doctor-of-philosophy-computing",
+      "httpStatus": 200,
+      "currentOfficialDirectIelts": 6,
+      "candidateOfficialDirectIelts": 6,
+      "candidateTestsIelts": 6,
+      "evidenceExcerpt": "English Language Requirements IELTS 6.0 Note: Candidates who have completed a Bachelor's degree or equivalent in English would have met the language requirement. "
+    },
+    {
+      "code": "SUNWAY-PHD-004",
+      "level": "phd",
+      "nameEnOfficial": "Doctor of Philosophy in Creative Arts and Media",
+      "officialSourceUrl": "https://sunwayuniversity.edu.my/faculty-of-arts-and-social-sciences/courses/doctor-of-philosophy-creative-arts-and-media",
+      "httpStatus": 200,
+      "currentOfficialDirectIelts": 6,
+      "candidateOfficialDirectIelts": 6,
+      "candidateTestsIelts": 6,
+      "evidenceExcerpt": "English Language Requirements IELTS 6.0 or equivalent Application Procedure Candidates are requested to send the completed Sunway Postgraduate Application Form with the following supporting documents to @email : Kindly email the following documents for an eligibility check: Curriculum Vitae Bachelor's/Master’s degree transcript Completion certificate Report from 2 academic or professional referees After passing the eligibility check, the faculty administrator will brief the student further regarding the application process and other documents (Research Proposal, Personal Statment, Portfolio) that are required. Research Proposal Please submit a 2,000 word research proposal that includes the f"
+    },
+    {
+      "code": "SUNWAY-PHD-005",
+      "level": "phd",
+      "nameEnOfficial": "Doctor of Philosophy in Education",
+      "officialSourceUrl": "https://sunwayuniversity.edu.my/school-of-education/courses/doctor-of-philosophy-education",
+      "httpStatus": 200,
+      "currentOfficialDirectIelts": 6,
+      "candidateOfficialDirectIelts": 6,
+      "candidateTestsIelts": 6,
+      "evidenceExcerpt": "English Competency Requirement for International Student Achieve a minimum score of 6.0 for International English Language Testing System (IELTS) OR its equivalent. Academic Staff At the School of Education, our supervisors bring research expertise across a wide spectrum of educational disciplines. Whether your focus is on curriculum and instruction, educational psychology, educational technology, or leadership and management, our supervisors provide mentorship and guidance to support your research journey. Here is a list of academic staff who are currently available to supervise. Click the name to view their research areas and explore supervision opportunities. Professor Malissa Maria Mahmu"
+    },
+    {
+      "code": "SUNWAY-PHD-006",
+      "level": "phd",
+      "nameEnOfficial": "Doctor of Philosophy in Hospitality and Tourism",
+      "officialSourceUrl": "https://sunwayuniversity.edu.my/school-of-hospitality-and-tourism-management/courses/doctor-of-philosophy-hospitality-and-tourism",
+      "httpStatus": 200,
+      "currentOfficialDirectIelts": 6,
+      "candidateOfficialDirectIelts": 6,
+      "candidateTestsIelts": 6,
+      "evidenceExcerpt": "English Language Requirements Applicants whose medium of instruction for their Bachelor’s / Master’s degree was not English will be required to provide evidence of language ability of: International English Language Testing System (IELTS): 6.0 or equivalent; OR TOEFL: 100 (internet-based); OR PTE Academic: 70 overall "
+    },
+    {
+      "code": "SUNWAY-PHD-007",
+      "level": "phd",
+      "nameEnOfficial": "Doctor of Philosophy in Mathematical Sciences",
+      "officialSourceUrl": "https://sunwayuniversity.edu.my/school-of-mathematical-sciences/courses/doctor-of-philosophy-mathematical-sciences",
+      "httpStatus": 200,
+      "currentOfficialDirectIelts": 6,
+      "candidateOfficialDirectIelts": 6,
+      "candidateTestsIelts": 6,
+      "evidenceExcerpt": "English Language Requirements IELTS 6.0 or equivalent Application Procedure As part of your application, please nominate TWO (2) referees who can provide reference letters about your suitability to undertake the programme. Applicants will be required to submit the following documents: Sunway Postgraduate Application Form Research Statement Curriculum Vitae (CV) Scholarship Application Form (if any) English Language qualification (IELTS / TOEFL / Others) for International Students Academic qualifications/results (certificates and complete transcripts) (Degree / Others) One (1) Passport-sized photograph A copy of national identity card (Malaysians only) or passport (all pages for international"
+    },
+    {
+      "code": "SUNWAY-PHD-008",
+      "level": "phd",
+      "nameEnOfficial": "Doctor of Philosophy in Medical Science",
+      "officialSourceUrl": "https://sunwayuniversity.edu.my/faculty-of-medical-and-life-sciences/courses/doctor-of-philosophy-medical-science",
+      "httpStatus": 200,
+      "currentOfficialDirectIelts": 6,
+      "candidateOfficialDirectIelts": 6,
+      "candidateTestsIelts": 4,
+      "evidenceExcerpt": "English Language Requirements Local Students: Achieve a minimum score of 6.0 in the IELTS or equivalent; or Achieve a minimum Band 4 in Malaysian University English Test (MUET), OR equivalent to Common European Framework of Reference (CEFR) (Mid B2) International Students: Achieve a minimum score of 6.0 in the IELTS or equivalent. Note: The following students will be exempted from the English Language requirement: i. Students from countries that use English as the official language, or ii. Students with academic qualifications from institutions that use English as a full medium of instruction. "
+    },
+    {
+      "code": "SUNWAY-PHD-009",
+      "level": "phd",
+      "nameEnOfficial": "Doctor of Philosophy in Nursing",
+      "officialSourceUrl": "https://sunwayuniversity.edu.my/faculty-of-medical-and-life-sciences/courses/doctor-of-philosophy-nursing",
+      "httpStatus": 200,
+      "currentOfficialDirectIelts": null,
+      "candidateOfficialDirectIelts": null,
+      "candidateTestsIelts": null,
+      "evidenceExcerpt": "English Language Requirements English Competency Requirements for International Students: Achieve a minimum Band 4 in Malaysian University English Test (MUET) OR equivalent to Common European Framework of Reference (CEFR)(Mid B2). *Please refer to JPT/GS 1000/630 Jld.3 (12),6th of March 2023 – English Language Proficiency Requirements for International Students for equivalent English language assessments and scores. "
+    },
+    {
+      "code": "SUNWAY-PHD-010",
+      "level": "phd",
+      "nameEnOfficial": "Doctor of Philosophy in Psychology",
+      "officialSourceUrl": "https://sunwayuniversity.edu.my/faculty-of-medical-and-life-sciences/courses/doctor-of-philosophy-psychology",
+      "httpStatus": 200,
+      "currentOfficialDirectIelts": 7,
+      "candidateOfficialDirectIelts": 7,
+      "candidateTestsIelts": 7,
+      "evidenceExcerpt": "English Language Requirements Any of the following: IELTS: 7.0 TOEFL: 600 (paper-based), 250 (computer-based), 95 (Internet-based) PTE Academic: 65 MUET: Band 5 Cambridge English: Advanced/CEFR 185 (Grade A)/C1 SPM English 1119: 2A Note: Any other qualifications will be considered on a case-by-case basis. "
+    },
+    {
+      "code": "SUNWAY-PHD-011",
+      "level": "phd",
+      "nameEnOfficial": "Doctor of Philosophy in Sustainability Science and Engineering",
+      "officialSourceUrl": "https://sunwayuniversity.edu.my/faculty-of-engineering-and-technology/courses/doctor-of-philosophy-sustainability-science-and",
+      "httpStatus": 200,
+      "currentOfficialDirectIelts": 6,
+      "candidateOfficialDirectIelts": 6,
+      "candidateTestsIelts": 6,
+      "evidenceExcerpt": "English Language Requirements IELTS 6.0 Note: Candidates who have completed a Bachelor's degree or equivalent in English would have met the language requirement. "
+    },
+    {
+      "code": "SUNWAY-PHD-012",
+      "level": "phd",
+      "nameEnOfficial": "Doctor of Philosophy in Sustainable Development",
+      "officialSourceUrl": "https://sunwayuniversity.edu.my/jsc/courses/doctor-of-philosophy-sustainable-development",
+      "httpStatus": 200,
+      "currentOfficialDirectIelts": 6,
+      "candidateOfficialDirectIelts": 6,
+      "candidateTestsIelts": 6,
+      "evidenceExcerpt": "English Language Requirements IELTS 6.0 TOEFL 550 (paper-based), 213 (computer-based), 80 (internet-based) PTE Academic 50 overall (minimum 46 in each skill) OR Medium of instruction should be English at undergraduate and Master’s level. "
+    },
+    {
+      "code": "SUNWAY-PHD-013",
+      "level": "phd",
+      "nameEnOfficial": "Doctor of Business Administration",
+      "officialSourceUrl": "https://sunwayuniversity.edu.my/sunway-business-school/courses/doctor-of-business-administration",
+      "httpStatus": 200,
+      "currentOfficialDirectIelts": 6,
+      "candidateOfficialDirectIelts": 6,
+      "candidateTestsIelts": 6,
+      "evidenceExcerpt": "English Language Requirements IELTS or equivalent: 6.0 Specific Requirements Applicants are required to pass an interview Doctor of Business Administration Preview Session For further information about this programme, you are invited to join us for a preview. Register Here Contact Details Dr Jesrina Ann Xavier (Progamme Leader): @email Jason Peter Jan Piter (Programme Admin): @email General enquiries: @email "
+    },
+    {
+      "code": "SUNWAY-PHD-014",
+      "level": "phd",
+      "nameEnOfficial": "Doctor of Computing",
+      "officialSourceUrl": "https://sunwayuniversity.edu.my/faculty-of-engineering-and-technology/courses/doctor-of-computing",
+      "httpStatus": 200,
+      "currentOfficialDirectIelts": 6,
+      "candidateOfficialDirectIelts": 6,
+      "candidateTestsIelts": 6,
+      "evidenceExcerpt": "English Language Requirements English Requirement for International Students: IELTS or equivalent: Band 6.0 MUET: Band 4 Doctor of Computing Preview Session For further information about this programme, you are invited to join us for a preview. Register Here Scholarships and Financial Aid For more information about the scholarships and financial aid, please visit the SEG Scholarships website . Ask a question If you’d like to know more about studying at Sunway University, we’d love to hear from you. Submit an enquiry We’ll find the answer and email you back. Ask us now Call one of our course specialists Monday to Friday: 9am - 5:30pm MYT Call +6 (03) 7491 8622 Share on, Copied to clipboard To"
+    },
+    {
+      "code": "SUNWAY-PHD-015",
+      "level": "phd",
+      "nameEnOfficial": "Doctor of Education",
+      "officialSourceUrl": "https://sunwayuniversity.edu.my/school-of-education/courses/doctor-of-education",
+      "httpStatus": 200,
+      "currentOfficialDirectIelts": 6,
+      "candidateOfficialDirectIelts": 6,
+      "candidateTestsIelts": 6,
+      "evidenceExcerpt": "English Language Requirement for International Students International applicants must achieve a minimum score of 6.0 in the International English Language Testing System (IELTS) or an equivalent English proficiency test, as required for postgraduate studies. "
+    },
+    {
+      "code": "SUNWAY-PHD-016",
+      "level": "phd",
+      "nameEnOfficial": "Doctor of Engineering",
+      "officialSourceUrl": "https://sunwayuniversity.edu.my/faculty-of-engineering-and-technology/courses/doctor-of-engineering",
+      "httpStatus": 200,
+      "currentOfficialDirectIelts": 6,
+      "candidateOfficialDirectIelts": 6,
+      "candidateTestsIelts": 6,
+      "evidenceExcerpt": "English Language Requirements English Requirement for International Students: IELTS or equivalent: Band 6.0 MUET: Band 4 Doctor of Engineering Preview Session For further information about this programme, you are invited to join us for a preview. Register Here Scholarships and Financial Aid For more information about the scholarships and financial aid, please visit the SEG Scholarships website . Ask a question If you’d like to know more about studying at Sunway University, we’d love to hear from you. Submit an enquiry We’ll find the answer and email you back. Ask us now Call one of our course specialists Monday to Friday: 9am - 5:30pm MYT Call +6 (03) 7491 8622 Share on, Copied to clipboard "
+    },
+    {
+      "code": "SUNWAY-MASTER-001",
+      "level": "master",
+      "nameEnOfficial": "Master of Science in Computer Science",
+      "officialSourceUrl": "https://sunwayuniversity.edu.my/faculty-of-engineering-and-technology/courses/master-of-science-computer-science",
+      "httpStatus": 200,
+      "currentOfficialDirectIelts": 6,
+      "candidateOfficialDirectIelts": 6,
+      "candidateTestsIelts": 6,
+      "evidenceExcerpt": "English Language Requirements IELTS 6.0 or equivalent Note: Candidates who have completed a Bachelor's degree or equivalent in English would have met the language requirement. "
+    },
+    {
+      "code": "SUNWAY-MASTER-002",
+      "level": "master",
+      "nameEnOfficial": "Master of Arts in Creative Arts and Media",
+      "officialSourceUrl": "https://sunwayuniversity.edu.my/faculty-of-arts-and-social-sciences/courses/master-of-arts-creative-arts-and-media",
+      "httpStatus": 200,
+      "currentOfficialDirectIelts": 6,
+      "candidateOfficialDirectIelts": 6,
+      "candidateTestsIelts": 6,
+      "evidenceExcerpt": "English Language Requirements IELTS 6.0 OR its equivalent Application Procedure Candidates are requested to send the completed Sunway Postgraduate Application Form with the following supporting documents to @email : Kindly email the following documents for an eligibility check: Curriculum Vitae Bachelor's/ Master’s degree transcript Completion certificate Report from 2 academic or professional referees After passing the eligibility check, the faculty administrator will brief the student further regarding the application process and other documents (Research Proposal, Personal Statement, Portfolio) that are required. Research Proposal Please submit a 2,000 word research proposal that includes"
+    },
+    {
+      "code": "SUNWAY-MASTER-003",
+      "level": "master",
+      "nameEnOfficial": "Master of Education",
+      "officialSourceUrl": "https://sunwayuniversity.edu.my/school-of-education/courses/master-of-education-research",
+      "httpStatus": 200,
+      "currentOfficialDirectIelts": 6,
+      "candidateOfficialDirectIelts": 6,
+      "candidateTestsIelts": 6,
+      "evidenceExcerpt": "English Language Requirements IELTS 6.0 Students are required to achieve a minimum score of 6.0 for International English Language Testing System (IELTS) OR its equivalent Academic Staff At the School of Education, our supervisors bring research expertise across a wide spectrum of educational disciplines. Whether your focus is on curriculum and instruction, educational psychology, educational technology, or leadership and management, our supervisors provide mentorship and guidance to support your research journey. Here is a list of academic staff who are currently available to supervise. Click the name to view their research areas and explore supervision opportunities. Professor Malissa Mari"
+    },
+    {
+      "code": "SUNWAY-MASTER-004",
+      "level": "master",
+      "nameEnOfficial": "Master of Science in Life Sciences",
+      "officialSourceUrl": "https://sunwayuniversity.edu.my/faculty-of-medical-and-life-sciences/courses/master-of-science-life-sciences",
+      "httpStatus": 200,
+      "currentOfficialDirectIelts": 6,
+      "candidateOfficialDirectIelts": 6,
+      "candidateTestsIelts": 6,
+      "evidenceExcerpt": "English Language Requirements IELTS 6.0 TOEFL 550 (paper-based), 213 (computer-based) or 80 (Internet-based) PTE Academic 50 overall (minimum 46 in each skill) "
+    },
+    {
+      "code": "SUNWAY-MASTER-005",
+      "level": "master",
+      "nameEnOfficial": "Master of Science in Mathematical Sciences",
+      "officialSourceUrl": "https://sunwayuniversity.edu.my/school-of-mathematical-sciences/courses/master-of-science-mathematical-sciences",
+      "httpStatus": 200,
+      "currentOfficialDirectIelts": 6,
+      "candidateOfficialDirectIelts": 6,
+      "candidateTestsIelts": 6,
+      "evidenceExcerpt": "English Language Requirements IELTS 6.0 or equivalent Application Procedure As part of your application, please nominate TWO (2) referees who can provide reference letters about your suitability to undertake the programme. Applicants will be required to submit the following documents: Sunway Postgraduate Application Form Research Statement Curriculum Vitae (CV) Scholarship Application Form (if any) English Language qualification (IELTS / TOEFL / Others) for International Students Academic qualifications/results (certificates and complete transcripts) (Degree / Others) One (1) Passport-sized photograph A copy of national identity card (Malaysians only) or passport (all pages for international"
+    },
+    {
+      "code": "SUNWAY-MASTER-006",
+      "level": "master",
+      "nameEnOfficial": "Master in Medical Science",
+      "officialSourceUrl": "https://sunwayuniversity.edu.my/faculty-of-medical-and-life-sciences/courses/master-medical-science",
+      "httpStatus": 200,
+      "currentOfficialDirectIelts": 6,
+      "candidateOfficialDirectIelts": 6,
+      "candidateTestsIelts": 6,
+      "evidenceExcerpt": "English Language Requirements Any of the following: IELTS 6.0 TOEFL 550 (paper-based), 213 (computer-based), 80 (internet-based) For International/Malaysian Applicants English is the medium of instruction of previous degree for candidates from universities in non-English speaking countries outside Malaysia. "
+    },
+    {
+      "code": "SUNWAY-MASTER-007",
+      "level": "master",
+      "nameEnOfficial": "Master in Nursing",
+      "officialSourceUrl": "https://sunwayuniversity.edu.my/faculty-of-medical-and-life-sciences/courses/master-nursing",
+      "httpStatus": 200,
+      "currentOfficialDirectIelts": 6,
+      "candidateOfficialDirectIelts": 6,
+      "candidateTestsIelts": 6,
+      "evidenceExcerpt": "English Language Requirements Local students: Achieved any of the following: IELTS 6.0 TOEFL 550 (paper-based), 200 (computer-based), 75 (internet-based) PTE (Academic) 59 overall MUET Band 4 Cambridge English: First/CEFR 170 (Grade B)/B2 International students: Achieve a minimum score of 6.0 in the IELTS or equivalent. Note: The following students will be exempted from the English Language requirement: Students from countries that use English as the official language, or students with academic qualifications from institutions that use English as a full medium of instruction. "
+    },
+    {
+      "code": "SUNWAY-MASTER-008",
+      "level": "master",
+      "nameEnOfficial": "Master of Philosophy (Business Administration)",
+      "officialSourceUrl": "https://sunwayuniversity.edu.my/sunway-business-school/courses/master-of-philosophy-business-administration",
+      "httpStatus": 200,
+      "currentOfficialDirectIelts": 6,
+      "candidateOfficialDirectIelts": 6,
+      "candidateTestsIelts": 6,
+      "evidenceExcerpt": "English Language Requirements IELTS: 6.0 or equivalent Application Procedure Candidates are requested to send the completed application with the following supporting documents to Master of Philosophy at @email Sunway postgraduate application form A copy of National Identity Card (Malaysians only) or Passport (all pages for international students) Certified copies of transcripts of Master’s and undergraduate degrees Curriculum Vitae (CV) IELTS score or its equivalent (if relevant) Two (2) passport-sized photographs Research proposal in softcopy Research proposal, which includes Working title Nature of the research that interest you and why; and References to anything you have read relevant to"
+    },
+    {
+      "code": "SUNWAY-MASTER-009",
+      "level": "master",
+      "nameEnOfficial": "Master of Science in Psychology",
+      "officialSourceUrl": "https://sunwayuniversity.edu.my/faculty-of-medical-and-life-sciences/courses/master-of-science-psychology",
+      "httpStatus": 200,
+      "currentOfficialDirectIelts": 6,
+      "candidateOfficialDirectIelts": 6,
+      "candidateTestsIelts": 6,
+      "evidenceExcerpt": "English Language Requirements Any of the following: IELTS 6.0 TOEFL 550 (paper-based), 200 (computer-based) or 75 (Internet-based) PTE Academic 50 overall MUET Band 4 Cambridge English: First/CEFR 170 (Grade B)/B2 Cambridge English: Advanced/CEFR 170 (Grade B)/B2 SPM English 11195C "
+    },
+    {
+      "code": "SUNWAY-MASTER-010",
+      "level": "master",
+      "nameEnOfficial": "Master of Science in Actuarial Analytics",
+      "officialSourceUrl": "https://sunwayuniversity.edu.my/school-of-mathematical-sciences/courses/master-of-science-actuarial-analytics",
+      "httpStatus": 200,
+      "currentOfficialDirectIelts": 6,
+      "candidateOfficialDirectIelts": 6,
+      "candidateTestsIelts": 6,
+      "evidenceExcerpt": "English Language Requirements IELTS or equivalent: 6.0 (For International Students) Preview Session For further information about this premier programme, you are invited to join us for a preview. To register for the preview. Register Here "
+    },
+    {
+      "code": "SUNWAY-MASTER-011",
+      "level": "master",
+      "nameEnOfficial": "Master in Advanced Computing",
+      "officialSourceUrl": "https://sunwayuniversity.edu.my/faculty-of-engineering-and-technology/courses/master-advanced-computing",
+      "httpStatus": 200,
+      "currentOfficialDirectIelts": 6,
+      "candidateOfficialDirectIelts": 6,
+      "candidateTestsIelts": 6,
+      "evidenceExcerpt": "IELTS or equivalent: 6.0 Application Procedure Step 1: Check to ensure you understand the programme and "
+    },
+    {
+      "code": "SUNWAY-MASTER-012",
+      "level": "master",
+      "nameEnOfficial": "Master of Applied Behaviour Analysis",
+      "officialSourceUrl": "https://sunwayuniversity.edu.my/faculty-of-medical-and-life-sciences/courses/master-of-applied-behaviour-analysis",
+      "httpStatus": 200,
+      "currentOfficialDirectIelts": 6,
+      "candidateOfficialDirectIelts": 6,
+      "candidateTestsIelts": 6,
+      "evidenceExcerpt": "English Language Requirements IELTS: 6.0 or equivalent TOEFL: 550 (paper-based), 200 (computer-based) or 75 (internet-based) PTE Academic: 50 overall Cambridge English: 170 (Grade B)/B2 (First/CEFR) Cambridge English: 170 (Grade B)/B2 (Advanced/CEFR) SPM English 1119: 5C Mode of Delivery Lectures Workshops Practical Placements Industrial Visits Behavioural Research Projects "
+    },
+    {
+      "code": "SUNWAY-MASTER-013",
+      "level": "master",
+      "nameEnOfficial": "Master of Science in Applied Mathematics",
+      "officialSourceUrl": "https://sunwayuniversity.edu.my/school-of-mathematical-sciences/courses/master-of-science-applied-mathematics",
+      "httpStatus": 200,
+      "currentOfficialDirectIelts": 6,
+      "candidateOfficialDirectIelts": 6,
+      "candidateTestsIelts": 6,
+      "evidenceExcerpt": "English Language Requirements (For International Applicants) IELTS 6.0 Application Procedure Step 1: Check to ensure you understand the programme and "
+    },
+    {
+      "code": "SUNWAY-MASTER-014",
+      "level": "master",
+      "nameEnOfficial": "Master in Artificial Intelligence",
+      "officialSourceUrl": "https://sunwayuniversity.edu.my/faculty-of-engineering-and-technology/courses/master-artificial-intelligence",
+      "httpStatus": 200,
+      "currentOfficialDirectIelts": 6,
+      "candidateOfficialDirectIelts": 6,
+      "candidateTestsIelts": 6,
+      "evidenceExcerpt": "IELTS or equivalent: 6.0 Application Procedure Step 1: Check to ensure you understand the programme and "
+    },
+    {
+      "code": "SUNWAY-MASTER-015",
+      "level": "master",
+      "nameEnOfficial": "Master of Business Administration",
+      "officialSourceUrl": "https://sunwayuniversity.edu.my/sunway-business-school/courses/master-of-business-administration",
+      "httpStatus": 200,
+      "currentOfficialDirectIelts": 6,
+      "candidateOfficialDirectIelts": 6,
+      "candidateTestsIelts": 6,
+      "evidenceExcerpt": "English Language Requirements IELTS or equivalent: 6.0 Specific Requirements Applicants are required to pass an interview Master of Business Administration Preview Session For further information about this programme, you are invited to join us for a preview. To register for the preview. Register Here Contact Details Associate Professor Dr Eugene Poon Wai Chuen (Programme Leader): @email Jason Peter Jan Piter (Programme Admin) : @email General enquiries: @email "
+    },
+    {
+      "code": "SUNWAY-MASTER-016",
+      "level": "master",
+      "nameEnOfficial": "Master of Business Analytics",
+      "officialSourceUrl": "https://sunwayuniversity.edu.my/sunway-business-school/courses/master-of-business-analytics",
+      "httpStatus": 200,
+      "currentOfficialDirectIelts": 6,
+      "candidateOfficialDirectIelts": 6,
+      "candidateTestsIelts": 6,
+      "evidenceExcerpt": "English Language Requirements IELTS: 6.0 or equivalent Master of Business Analytics (MsBA) Preview Session For further information about this premier programme, you are invited to join us for a preview. To register for the preview. Register Here Contact Details Dr Fathey Mohammed Abdualrakeb Mohammed (Programme Leader): @email Nur Faizatul (Programme Admin) : @email General enquiries: [email protected] "
+    },
+    {
+      "code": "SUNWAY-MASTER-017",
+      "level": "master",
+      "nameEnOfficial": "Master of Arts in Communication",
+      "officialSourceUrl": "https://sunwayuniversity.edu.my/faculty-of-arts-and-social-sciences/courses/master-of-arts-communication",
+      "httpStatus": 200,
+      "currentOfficialDirectIelts": 6,
+      "candidateOfficialDirectIelts": 6,
+      "candidateTestsIelts": 6,
+      "evidenceExcerpt": "English Language Requirements International candidates should demonstrate English proficiency sufficient to meet the needs of the programme: IELTS: 6.0 / CEFR: B2 TOEFL: PBT (550) or IBT (75) Cambridge English (Advanced): 180 / CEFR: B2 or Cambridge English (Proficiency): 180 / CEFR: C1 PTE Academic: 50 Malaysian University English Test: Band 4 If a student does not meet this requirement, the HEP offers English proficiency courses to ensure that the student’s proficiency is sufficient to meet the needs of the programme. This is normally conducted through an English language proficiency assessment. * Candidates who have completed a Bachelor’s degree or equivalent in English would have met the"
+    },
+    {
+      "code": "SUNWAY-MASTER-018",
+      "level": "master",
+      "nameEnOfficial": "Master of Counselling",
+      "officialSourceUrl": "https://sunwayuniversity.edu.my/faculty-of-medical-and-life-sciences/courses/master-of-counselling",
+      "httpStatus": 200,
+      "currentOfficialDirectIelts": 6,
+      "candidateOfficialDirectIelts": 6,
+      "candidateTestsIelts": 6,
+      "evidenceExcerpt": "English Language Requirements IELTS 6.0 TOEFL 550 (paper-based), 200 (computer-based), 75 (internet-based) PTE Academic 50 overall MUET Band 4 Cambridge English: First/CEFR 170 (Grade B)/B2 Cambridge English: Advanced/CEFR 170 (Grade B)/B2 Note: Candidates who have completed a bachelor's degree or equivalent in English would have met the language requirement; hence, the above does not apply to you. Specific Requirements Candidates who fulfil the previous requirements must also: Provide a personal statement (500 words) of why they would like to join this programme Pass an interview "
+    },
+    {
+      "code": "SUNWAY-MASTER-019",
+      "level": "master",
+      "nameEnOfficial": "Masters of Counselling (Clinical Mental Health)",
+      "officialSourceUrl": "https://sunwayuniversity.edu.my/faculty-of-medical-and-life-sciences/courses/masters-of-counselling-clinical-mental-health",
+      "httpStatus": 200,
+      "currentOfficialDirectIelts": 6,
+      "candidateOfficialDirectIelts": 6,
+      "candidateTestsIelts": 6,
+      "evidenceExcerpt": "English Language Requirements IELTS 6.0 TOEFL 550 (paper-based), 200 (computer-based), 75 (internet-based) PTE Academic 50 overall MUET Band 4 Cambridge English: First/CEFR 170 (Grade B)/B2 Cambridge English: Advanced/CEFR 170 (Grade B)/B2 Note: Candidates who have completed a bachelor's degree or equivalent in English would have met the language requirement; hence, the above does not apply to you. Specific Requirements Candidates who fulfil the previous requirements must also: Provide a personal statement (500 words) of why they would like to join this programme Pass an interview "
+    },
+    {
+      "code": "SUNWAY-MASTER-020",
+      "level": "master",
+      "nameEnOfficial": "Master in Digital Engineering",
+      "officialSourceUrl": "https://sunwayuniversity.edu.my/faculty-of-engineering-and-technology/courses/master-digital-engineering",
+      "httpStatus": 200,
+      "currentOfficialDirectIelts": 6,
+      "candidateOfficialDirectIelts": 6,
+      "candidateTestsIelts": 6,
+      "evidenceExcerpt": "English Language Requirements English Requirement for International Students: IELTS or equivalent: Band 6.0 MUET: Band 4 Master in Digital Engineering Preview Session For further information about this programme, you are invited to join us for a preview. Register Here Scholarships and Financial Aid For more information about the scholarships and financial aid, please visit the SEG Scholarships website . Ask a question If you’d like to know more about studying at Sunway University, we’d love to hear from you. Submit an enquiry We’ll find the answer and email you back. Ask us now Call one of our course specialists Monday to Friday: 9am - 5:30pm MYT Call +6 (03) 7491 8622 Share on, Copied to cl"
+    },
+    {
+      "code": "SUNWAY-MASTER-021",
+      "level": "master",
+      "nameEnOfficial": "Master of Education",
+      "officialSourceUrl": "https://sunwayuniversity.edu.my/school-of-education/courses/master-of-education",
+      "httpStatus": 200,
+      "currentOfficialDirectIelts": 6,
+      "candidateOfficialDirectIelts": 6,
+      "candidateTestsIelts": 6,
+      "evidenceExcerpt": "English Language Requirements English Competency Requirement for International Students: For postgraduate studies, international students are required to achieve a minimum score of 6.0 for the International English Language Testing System (IELTS) OR its equivalent. Master of Education Preview Session Click here for the preview session. "
+    },
+    {
+      "code": "SUNWAY-MASTER-022",
+      "level": "master",
+      "nameEnOfficial": "Master of Human Resource Management",
+      "officialSourceUrl": "https://sunwayuniversity.edu.my/sunway-business-school/courses/master-of-human-resource-management",
+      "httpStatus": 200,
+      "currentOfficialDirectIelts": 6.5,
+      "candidateOfficialDirectIelts": 6.5,
+      "candidateTestsIelts": 6.5,
+      "evidenceExcerpt": "English Language Requirements IELTS 6.5 or equivalent For further information and to arrange for an appointment to meet with Prof Kenneth Cafferkey (Programme Leader), please email to @email Master of Human Resource Management Preview Session For further information about this premier programme, you are invited to join us for a preview. To register for the preview. Register Here Contact Details Prof. Kenneth Anthony (Programme Leader): [email protected] Iva Mariam (Programme Admin): @email General enquiries: @email "
+    },
+    {
+      "code": "SUNWAY-MASTER-023",
+      "level": "master",
+      "nameEnOfficial": "Master in International Hospitality Management",
+      "officialSourceUrl": "https://sunwayuniversity.edu.my/school-of-hospitality-and-tourism-management/courses/master-international-hospitality-management",
+      "httpStatus": 200,
+      "currentOfficialDirectIelts": 6,
+      "candidateOfficialDirectIelts": 6,
+      "candidateTestsIelts": 6,
+      "evidenceExcerpt": "English Language Requirements Applicants whose medium of instruction for their Bachelor’s / Master’s degree was not English will be required to provide evidence of language ability of: International English Language Testing System (IELTS): 6.0 or equivalent; OR TOEFL: 100 (internet-based); OR PTE Academic: 70 overall International Hospitality Management Preview Session Click here for the preview session "
+    },
+    {
+      "code": "SUNWAY-MASTER-024",
+      "level": "master",
+      "nameEnOfficial": "Master of Marketing",
+      "officialSourceUrl": "https://sunwayuniversity.edu.my/sunway-business-school/courses/master-of-marketing",
+      "httpStatus": 200,
+      "currentOfficialDirectIelts": 6.5,
+      "candidateOfficialDirectIelts": 6.5,
+      "candidateTestsIelts": 6.5,
+      "evidenceExcerpt": "English Language Requirements IELTS 6.5 or equivalent For further information and to arrange for an appointment to meet with Dr Suzanne Tan (Programme Leader), please email to @email Master of Marketing Preview Session For further information about this premier programme, you are invited to join us for a preview. To register for the preview. Register Here Contact Details Dr Suzanne Tan Ser Zian (Programme Leader): [email protected] Iva Mariam (Programme Admin): @email General enquiries: @email "
+    },
+    {
+      "code": "SUNWAY-MASTER-025",
+      "level": "master",
+      "nameEnOfficial": "Master in Sustainable Development Management",
+      "officialSourceUrl": "https://sunwayuniversity.edu.my/jsc/courses/master-sustainable-development-management-0",
+      "httpStatus": 200,
+      "currentOfficialDirectIelts": 6,
+      "candidateOfficialDirectIelts": 6,
+      "candidateTestsIelts": 6,
+      "evidenceExcerpt": "English Language Requirement International candidates should demonstrate English proficiency sufficient to meet the needs of the programme: IELTS: 6.0 / CEFR: B2 TOEFL: PBT (550) or IBT (75) Cambridge English (Advanced): 180 / CEFR: B2 or Cambridge English (Proficiency): 180 / CEFR: C1 PTE Academic: 50 Malaysian University English Test: Band 4 If a student does not meet this requirement, the HEP offers English proficiency courses to ensure that the student’s proficiency is sufficient to meet the needs of the programme. This is normally conducted through an English language proficiency assessment. "
+    },
+    {
+      "code": "SUNWAY-MASTER-026",
+      "level": "master",
+      "nameEnOfficial": "Master of Arts in Visual Communication and Media Studies",
+      "officialSourceUrl": "https://sunwayuniversity.edu.my/faculty-of-arts-and-social-sciences/courses/master-of-arts-visual-communication-and-media-studies",
+      "httpStatus": 200,
+      "currentOfficialDirectIelts": 6,
+      "candidateOfficialDirectIelts": 6,
+      "candidateTestsIelts": 6,
+      "evidenceExcerpt": "English Language Requirements IELTS 6.0 OR its equivalent For International students, Test of English as a Foreign Language (TOEFL) score of 600 OR International English Language Testing System (IELTS) score of 6.0 OR its equivalent is needed. "
+    },
+    {
+      "code": "SUNWAY-MASTER-027",
+      "level": "master",
+      "nameEnOfficial": "Master of Business Administration",
+      "officialSourceUrl": "https://studyonline.sunwayuniversity.edu.my/online-programmes/master-business-administration",
+      "httpStatus": 200,
+      "currentOfficialDirectIelts": 6,
+      "candidateOfficialDirectIelts": 6,
+      "candidateTestsIelts": 6,
+      "evidenceExcerpt": "English Language Requirement Applicants whose medium of instruction for their first degree was not English will be required to provide evidence of language ability via an IELTS (average score of 6.0) or TOEFL (score of 600 - paper-based or score of 250 - computer-based) test result. "
+    },
+    {
+      "code": "SUNWAY-MASTER-028",
+      "level": "master",
+      "nameEnOfficial": "Master of Business Analytics",
+      "officialSourceUrl": "https://studyonline.sunwayuniversity.edu.my/online-programmes/master-business-analytics",
+      "httpStatus": 200,
+      "currentOfficialDirectIelts": 6,
+      "candidateOfficialDirectIelts": 6,
+      "candidateTestsIelts": 6,
+      "evidenceExcerpt": "English Language Requirement Applicants whose academic qualifications were not attained in the English medium will be required to provide evidence of language ability via an IELTS result (minimum score of 6.0). "
+    },
+    {
+      "code": "SUNWAY-MASTER-029",
+      "level": "master",
+      "nameEnOfficial": "Master in Data Science",
+      "officialSourceUrl": "https://studyonline.sunwayuniversity.edu.my/ppc/master-data-science?utm_campaign=MDS-Brand-PM-Data-Science&utm_source=Google&utm",
+      "httpStatus": 200,
+      "currentOfficialDirectIelts": 6,
+      "candidateOfficialDirectIelts": 6,
+      "candidateTestsIelts": 6,
+      "evidenceExcerpt": "English Language Requirement Applicants whose medium of instruction for their first degree was not English will be required to provide evidence of language ability via an IELTS test result (minimum score of 6.0). "
+    },
+    {
+      "code": "SUNWAY-MASTER-030",
+      "level": "master",
+      "nameEnOfficial": "Master of Education",
+      "officialSourceUrl": "https://studyonline.sunwayuniversity.edu.my/online-programmes/master-education",
+      "httpStatus": 200,
+      "currentOfficialDirectIelts": 6,
+      "candidateOfficialDirectIelts": 6,
+      "candidateTestsIelts": 6,
+      "evidenceExcerpt": "English Language Requirement Applicants whose academic qualifications were not attained in the English medium will be required to provide evidence of language ability via an IELTS result (minimum score of 6.0). "
+    },
+    {
+      "code": "SUNWAY-MASTER-031",
+      "level": "master",
+      "nameEnOfficial": "Master of Finance",
+      "officialSourceUrl": "https://studyonline.sunwayuniversity.edu.my/online-programmes/master-finance",
+      "httpStatus": 200,
+      "currentOfficialDirectIelts": 6.5,
+      "candidateOfficialDirectIelts": 6.5,
+      "candidateTestsIelts": 6.5,
+      "evidenceExcerpt": "English Language Requirement Applicants who are not from countries that use English as the official language or whose academic qualifications were not attained in the English medium will be required to provide evidence of language ability via an IELTS result (minimum score of 6.5) or equivalent, or a minimum Band 4.5 in the Malaysian University English Test or equivalent to Common European Framework of Reference (High B2). "
+    },
+    {
+      "code": "SUNWAY-MASTER-032",
+      "level": "master",
+      "nameEnOfficial": "Master of Management",
+      "officialSourceUrl": "https://studyonline.sunwayuniversity.edu.my/online-programmes/master-management",
+      "httpStatus": 200,
+      "currentOfficialDirectIelts": 6,
+      "candidateOfficialDirectIelts": 6,
+      "candidateTestsIelts": 6,
+      "evidenceExcerpt": "English Language Requirement Applicants whose academic qualifications were not attained in the English medium will be required to provide evidence of language ability via an IELTS result (minimum score of 6.0). "
+    },
+    {
+      "code": "SUNWAY-MASTER-033",
+      "level": "master",
+      "nameEnOfficial": "Master of Marketing",
+      "officialSourceUrl": "https://studyonline.sunwayuniversity.edu.my/online-programmes/master-marketing",
+      "httpStatus": 200,
+      "currentOfficialDirectIelts": 6,
+      "candidateOfficialDirectIelts": 6,
+      "candidateTestsIelts": 6,
+      "evidenceExcerpt": "English Language Requirement Applicants whose academic qualifications were not attained in the English medium will be required to provide evidence of language ability via an IELTS (minimum score of 6.0) or TOEFL (minimum score of 570 - paper-based or 88 - internet-based) result. "
+    }
+  ]
+}

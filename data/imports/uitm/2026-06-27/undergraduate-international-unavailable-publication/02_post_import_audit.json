@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "mode": "uitm-undergraduate-international-unavailable-published",
+  "createdAt": "2026-06-27T13:56:29.581Z",
+  "institution": {
+    "code": "UITM",
+    "name": "Universiti Teknologi MARA",
+    "importedRows": 164,
+    "byLevel": {
+      "bachelor": 164
+    }
+  },
+  "database": {
+    "backupPath": "tmp/backups/uitm-undergraduate-public-before-2026-06-27T13-56-29-105Z.json",
+    "transactionalImport": "passed",
+    "catalogCacheCleared": false,
+    "scopedRows": 164,
+    "activeSupersededBachelorRows": 0,
+    "legacyVisibleBachelorRows": 0,
+    "visibleCurrentRows": 164
+  },
+  "publicVisibility": {
+    "universityPublicDisplayStatus": "ready",
+    "universityOfficialSourceStatus": "official-page-verified-international-not-available",
+    "universityIsPublished": true,
+    "universityProgramCount": 164,
+    "rowsPublished": 164,
+    "rowsReady": 0,
+    "rowsNotAvailableForInternational": 164
+  },
+  "displayHardGate": {
+    "chineseNameRows": 164,
+    "chineseFacultyRows": 164,
+    "chineseCurriculumRows": 164,
+    "chineseCareerRows": 164,
+    "englishPublicTextRows": 164,
+    "directIeltsRows": 3,
+    "muetRows": 164,
+    "officialFeeNotPublishedRows": 164,
+    "sourceRows": 164,
+    "officialUnpublishedCurriculumRows": 163,
+    "officialUnpublishedCareerRows": 163
+  }
+}

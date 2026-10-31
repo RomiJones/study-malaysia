@@ -1,0 +1,19 @@
+{
+  "blocking": [],
+  "review": [
+    {
+      "code": "TSU-CALIBRATION-LOCALIZATION",
+      "scope": "display",
+      "affectedRecords": 89,
+      "issue": "Official facts are calibrated, but Chinese student-facing localization is still not ready for public display.",
+      "nextAction": "Translate and review programme names, faculty names, overview, course setting, and career directions before publication."
+    },
+    {
+      "code": "TSU-CALIBRATION-IELTS-LIST",
+      "scope": "program-list",
+      "affectedRecords": 12,
+      "issue": "Some records publish official English routes without a direct IELTS scalar summary.",
+      "nextAction": "Decide list display policy for official MUET/equivalent-only records without inventing IELTS."
+    }
+  ]
+}

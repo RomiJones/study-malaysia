@@ -1,0 +1,40 @@
+{
+  "mode": "published",
+  "universityId": 43,
+  "backupPath": "/Users/ian/Desktop/dev/study-malaysia/apps/api/tmp/backups/msu-direct-publication-before-clean-public-fields-2026-06-30.json",
+  "catalogCacheCleared": false,
+  "verification": {
+    "totalRows": 110,
+    "byLevel": {
+      "bachelor": 80,
+      "master": 20,
+      "phd": 10
+    },
+    "readyRows": 110,
+    "needsReviewRows": 0,
+    "publishedRows": 110,
+    "officialSourceVerifiedRows": 110,
+    "officialFeeRows": 0,
+    "nonOfficialCandidateFeeRows": 101,
+    "missingFeeRows": 9,
+    "sourceConflictFeeRows": 6,
+    "pendingFeeCandidateRows": 95,
+    "notPublishedFeeRows": 9,
+    "forbiddenPublicTextRows": 0,
+    "publicDisplayStatusCounts": {
+      "ready": 110
+    },
+    "officialSourceStatusCounts": {
+      "official-verified": 110
+    },
+    "feeAuditStatusCounts": {
+      "not-published": 9,
+      "pending-review": 95,
+      "source-conflict": 6
+    },
+    "universityPublicDisplayStatus": "ready",
+    "universityIsPublished": true,
+    "universityProgramCount": 110,
+    "activeSupersededRows": 0
+  }
+}

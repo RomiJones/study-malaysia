@@ -1,0 +1,117 @@
+{
+  "schemaVersion": 1,
+  "institution": "Universiti Teknologi PETRONAS",
+  "universityCode": "UTP",
+  "generatedAt": "2026-06-19T16:57:43.640Z",
+  "routes": {
+    "university": "http://localhost:5173/universities/universiti-teknologi-petronas",
+    "calculatedRateProgramme": "http://localhost:5173/programs/utp-official-2026-row-052-phd-in-chemical-engineering"
+  },
+  "apiSummary": {
+    "universityId": 54,
+    "universitySlug": "universiti-teknologi-petronas",
+    "universityPublicDisplayStatus": "ready",
+    "programCount": 63,
+    "universityEmbeddedProgramCount": 63,
+    "listTotal": 63,
+    "listCount": 63,
+    "calculatedProgramme": {
+      "id": 6891,
+      "slug": "utp-official-2026-row-052-phd-in-chemical-engineering",
+      "publicDisplayStatus": "ready",
+      "officialSourceStatus": "official-verified",
+      "officialFeeAuditStatus": "calculated-from-official-rate",
+      "durationYears": 3,
+      "tuitionAmount": 57000,
+      "officialTuitionMYR": 57000,
+      "tuitionDisplay": "RM 57,000 calculated total tuition",
+      "tuitionNoteHasFormula": true,
+      "tuitionNoteHasExclusion": true
+    },
+    "costEstimate": {
+      "durationYears": 3,
+      "tuitionTotal": 88350,
+      "grandTotal": 88350
+    }
+  },
+  "uiChecks": [
+    {
+      "locale": "zh-CN",
+      "passed": true,
+      "universityChecks": {
+        "63": true,
+        "国油科技大学": true,
+        "UTP": true
+      },
+      "programChecks": {
+        "化学工程哲学博士": true,
+        "国油科技大学": true,
+        "RM 57,000": true,
+        "官方已核验": true
+      },
+      "universityConsoleErrors": [],
+      "programConsoleErrors": [],
+      "universityScreenshot": "../../../../../output/playwright/utp-publication-2026-06-19/university-zh-CN.png",
+      "programScreenshot": "../../../../../output/playwright/utp-publication-2026-06-19/program-phd-chemical-zh-CN.png"
+    },
+    {
+      "locale": "zh-TW",
+      "passed": true,
+      "universityChecks": {
+        "63": true,
+        "國油科技大學": true,
+        "UTP": true
+      },
+      "programChecks": {
+        "化學工程哲學博士": true,
+        "國油科技大學": true,
+        "RM 57,000": true,
+        "官方已核驗": true
+      },
+      "universityConsoleErrors": [],
+      "programConsoleErrors": [],
+      "universityScreenshot": "../../../../../output/playwright/utp-publication-2026-06-19/university-zh-TW.png",
+      "programScreenshot": "../../../../../output/playwright/utp-publication-2026-06-19/program-phd-chemical-zh-TW.png"
+    },
+    {
+      "locale": "en",
+      "passed": true,
+      "universityChecks": {
+        "63": true,
+        "Universiti Teknologi PETRONAS": true,
+        "UTP": true
+      },
+      "programChecks": {
+        "PhD in Chemical Engineering": true,
+        "Universiti Teknologi PETRONAS": true,
+        "RM 57,000": true,
+        "Officially verified": true
+      },
+      "universityConsoleErrors": [],
+      "programConsoleErrors": [],
+      "universityScreenshot": "../../../../../output/playwright/utp-publication-2026-06-19/university-en.png",
+      "programScreenshot": "../../../../../output/playwright/utp-publication-2026-06-19/program-phd-chemical-en.png"
+    },
+    {
+      "locale": "ms",
+      "passed": true,
+      "universityChecks": {
+        "63": true,
+        "Universiti Teknologi PETRONAS": true,
+        "UTP": true
+      },
+      "programChecks": {
+        "PhD in Chemical Engineering": true,
+        "Universiti Teknologi PETRONAS": true,
+        "RM 57,000": true,
+        "Disahkan rasmi": true
+      },
+      "universityConsoleErrors": [],
+      "programConsoleErrors": [],
+      "universityScreenshot": "../../../../../output/playwright/utp-publication-2026-06-19/university-ms.png",
+      "programScreenshot": "../../../../../output/playwright/utp-publication-2026-06-19/program-phd-chemical-ms.png"
+    }
+  ],
+  "browserConsoleErrors": [],
+  "decision": "passed"
+}

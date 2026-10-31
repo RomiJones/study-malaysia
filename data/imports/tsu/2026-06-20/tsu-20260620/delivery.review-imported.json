@@ -1,0 +1,94 @@
+{
+  "schemaVersion": 3,
+  "officialDomains": [
+    "taylors.edu.my"
+  ],
+  "scope": {
+    "universityCode": "TSU",
+    "databaseUniversityCode": "TAYLORS",
+    "databaseUniversityId": 3,
+    "collectionScope": "full",
+    "levels": [
+      "bachelor",
+      "master",
+      "phd"
+    ],
+    "applicantScope": "international",
+    "academicSession": "2026"
+  },
+  "authorization": "review-import",
+  "decision": "review-imported",
+  "counts": {
+    "directoryOccurrences": 95,
+    "uniqueOfficialEntries": 95,
+    "canonicalProgrammes": 89,
+    "ready": 0,
+    "needsReview": 89,
+    "notAvailableForInternational": 0,
+    "byLevel": {
+      "bachelor": 46,
+      "master": 28,
+      "phd": 15
+    },
+    "outOfScopeRows": 6
+  },
+  "databaseImport": {
+    "mode": "review-only",
+    "targetUniversityId": 3,
+    "targetUniversityCode": "TAYLORS",
+    "sourceUniversityCode": "TSU",
+    "importNamespace": "tsu-official-2026-row-",
+    "importedRows": 89,
+    "importedRowsIsPublished": false,
+    "importedRowsPublicDisplayStatus": "needs-review",
+    "officialTotalFeeRows": 89,
+    "ieltsOfficialValueRows": 77,
+    "officialEquivalentLanguageRowsWithoutIeltsScalar": 12,
+    "archivedLegacyNonPublicRows": 10,
+    "publicInstitutionContinuity": {
+      "existingPublicUniversityPreserved": true,
+      "publicUniversitySlug": "taylor-s-university",
+      "hiddenDuplicateReviewUniversityRemoved": true,
+      "publicVisibleImportedProgrammeRows": 0
+    },
+    "adminReviewVisibility": {
+      "evidence": "database-query",
+      "needsReviewRows": 89,
+      "publishedRows": 0,
+      "readyRows": 0,
+      "adminHttpStatus": "requires-admin-bearer-token"
+    },
+    "rollbackTargets": [
+      "/Users/ian/Desktop/dev/study-malaysia/data/imports/tsu/2026-06-20/tsu-20260620/20_review_import_backup_before.json",
+      "/Users/ian/Desktop/dev/study-malaysia/data/imports/tsu/2026-06-20/tsu-20260620/24_review_import_backup_before_alias_migration_universities.sql",
+      "/Users/ian/Desktop/dev/study-malaysia/data/imports/tsu/2026-06-20/tsu-20260620/24_review_import_backup_before_alias_migration_programs.sql"
+    ]
+  },
+  "reports": {
+    "dryRun": "/Users/ian/Desktop/dev/study-malaysia/data/imports/tsu/2026-06-20/tsu-20260620/19_review_import_dry_run.json",
+    "initialPostImport": "/Users/ian/Desktop/dev/study-malaysia/data/imports/tsu/2026-06-20/tsu-20260620/21_post_import_display_audit.json",
+    "initialVerify": "/Users/ian/Desktop/dev/study-malaysia/data/imports/tsu/2026-06-20/tsu-20260620/22_verify_review_import.json",
+    "aliasMigrationAudit": "/Users/ian/Desktop/dev/study-malaysia/data/imports/tsu/2026-06-20/tsu-20260620/25_post_import_alias_migration_audit.json",
+    "publicHttpLeakageCheck": "/Users/ian/Desktop/dev/study-malaysia/data/imports/tsu/2026-06-20/tsu-20260620/26_public_http_leakage_check.json"
+  },
+  "publication": {
+    "status": "not-published",
+    "reason": "Review-only import completed. Public release still requires Ian approval plus ready conversion and publication gates.",
+    "publicLeakage": 0
+  },
+  "reviewExceptions": [
+    {
+      "id": "TSU-LOCALIZATION-FINAL-REVIEW",
+      "severity": "review",
+      "count": 89,
+      "status": "imported-for-admin-review"
+    },
+    {
+      "id": "TSU-NON-IELTS-SCALAR-DISPLAY-POLICY",
+      "severity": "review",
+      "count": 12,
+      "status": "imported-for-admin-review"
+    }
+  ],
+  "originalDeliveryJsonStatus": "not-updated-in-place: macOS Operation not permitted on delivery.json; use this delivery.review-imported.json as the final review-imported envelope."
+}

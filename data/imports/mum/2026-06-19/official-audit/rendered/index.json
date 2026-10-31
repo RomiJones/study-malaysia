@@ -1,0 +1,478 @@
+[
+  {
+    "code": "MUM-UG-ARTS-SOCIAL-SCIENC-BACHELOR-OF-ARTS-AND-SOCIAL-SCIENCES-01",
+    "url": "https://www.monash.edu.my/study/undergraduate/arts-social-sciences/bachelor-arts-social-sciences",
+    "path": "data/imports/mum/2026-06-19/official-audit/rendered/001-mum-ug-arts-social-scienc-bachelor-of-arts-and-social-sciences-01.json",
+    "status": "rendered",
+    "title": "Bachelor of Arts and Social Sciences - Monash University Malaysia"
+  },
+  {
+    "code": "MUM-UG-ARTS-SOCIAL-SCIENC-BACHELOR-OF-DIGITAL-MEDIA-AND-COMMUNICATION-02",
+    "url": "https://www.monash.edu.my/study/undergraduate/arts-social-sciences/bachelor-of-digital-media-and-communication",
+    "path": "data/imports/mum/2026-06-19/official-audit/rendered/002-mum-ug-arts-social-scienc-bachelor-of-digital-media-and-communication-02.json",
+    "status": "rendered",
+    "title": "Bachelor of Digital Media and Communication - Malaysia"
+  },
+  {
+    "code": "MUM-UG-ARTS-SOCIAL-SCIENC-BACHELOR-OF-ARTS-HONOURS-03",
+    "url": "https://www.monash.edu.my/study/undergraduate/arts-social-sciences/bachelor-arts-honours",
+    "path": "data/imports/mum/2026-06-19/official-audit/rendered/003-mum-ug-arts-social-scienc-bachelor-of-arts-honours-03.json",
+    "status": "rendered",
+    "title": "Bachelor of Arts (Honours) - Monash University Malaysia"
+  },
+  {
+    "code": "MUM-UG-BUSINESS-BACHELOR-OF-BUSINESS-AND-COMMERCE-04",
+    "url": "https://www.monash.edu.my/study/undergraduate/business/bachelor-business-commerce",
+    "path": "data/imports/mum/2026-06-19/official-audit/rendered/004-mum-ug-business-bachelor-of-business-and-commerce-04.json",
+    "status": "rendered",
+    "title": "Bachelor of Business and Commerce - Monash Malaysia"
+  },
+  {
+    "code": "MUM-UG-BUSINESS-BACHELOR-IN-ACTUARIAL-ANALYTICS-05",
+    "url": "https://www.monash.edu.my/study/undergraduate/business/bachelor-in-actuarial-analytics",
+    "path": "data/imports/mum/2026-06-19/official-audit/rendered/005-mum-ug-business-bachelor-in-actuarial-analytics-05.json",
+    "status": "rendered",
+    "title": "Bachelor in Actuarial Analytics - Malaysia"
+  },
+  {
+    "code": "MUM-UG-BUSINESS-BACHELOR-OF-DIGITAL-BUSINESS-06",
+    "url": "https://www.monash.edu.my/study/undergraduate/business/bachelor-of-digital-business",
+    "path": "data/imports/mum/2026-06-19/official-audit/rendered/006-mum-ug-business-bachelor-of-digital-business-06.json",
+    "status": "rendered",
+    "title": "Bachelor of Digital Business | Enrol Now"
+  },
+  {
+    "code": "MUM-UG-BUSINESS-BACHELOR-OF-BUSINESS-AND-COMMERCE-HONOURS-07",
+    "url": "https://www.monash.edu.my/study/undergraduate/business/bachelor-business-commerce-honours",
+    "path": "data/imports/mum/2026-06-19/official-audit/rendered/007-mum-ug-business-bachelor-of-business-and-commerce-honours-07.json",
+    "status": "rendered",
+    "title": "Bachelor of Business and Commerce (Honours) - Monash University Malaysia"
+  },
+  {
+    "code": "MUM-UG-BUSINESS-BACHELOR-OF-BUSINESS-AND-COMMERCE-AND-BACHEL-08",
+    "url": "https://www.monash.edu.my/study/undergraduate/business/bachelor-business-commerce-bachelor-computer-science",
+    "path": "data/imports/mum/2026-06-19/official-audit/rendered/008-mum-ug-business-bachelor-of-business-and-commerce-and-bachel-08.json",
+    "status": "rendered",
+    "title": "Bachelor of Business and Commerce and Bachelor of Computer Science - Malaysia"
+  },
+  {
+    "code": "MUM-UG-BUSINESS-BACHELOR-OF-BUSINESS-AND-COMMERCE-AND-BACHEL-09",
+    "url": "https://www.monash.edu.my/study/undergraduate/business/bachelor-business-commerce-bachelor-communication",
+    "path": "data/imports/mum/2026-06-19/official-audit/rendered/009-mum-ug-business-bachelor-of-business-and-commerce-and-bachel-09.json",
+    "status": "rendered",
+    "title": "Bachelor of Business and Commerce and Bachelor of Digital Media and Communication - Monash University Malaysia"
+  },
+  {
+    "code": "MUM-UG-ENGINEERING-BACHELOR-OF-BIOMEDICAL-ENGINEERING-HONOURS-10",
+    "url": "https://www.monash.edu.my/study/undergraduate/engineering/bachelor-of-biomedical-engineering-honours",
+    "path": "data/imports/mum/2026-06-19/official-audit/rendered/010-mum-ug-engineering-bachelor-of-biomedical-engineering-honours-10.json",
+    "status": "rendered",
+    "title": "Bachelor of Biomedical Engineering (Honours) - Malaysia"
+  },
+  {
+    "code": "MUM-UG-ENGINEERING-BACHELOR-OF-CHEMICAL-ENGINEERING-HONOURS-11",
+    "url": "https://www.monash.edu.my/study/undergraduate/engineering/bachelor-of-engineering-honours-in-chemical-engineering",
+    "path": "data/imports/mum/2026-06-19/official-audit/rendered/011-mum-ug-engineering-bachelor-of-chemical-engineering-honours-11.json",
+    "status": "rendered",
+    "title": "Bachelor of Chemical Engineering (Honours) - Study Chemical Engineering Course in Malaysia"
+  },
+  {
+    "code": "MUM-UG-ENGINEERING-BACHELOR-OF-CIVIL-ENGINEERING-HONOURS-12",
+    "url": "https://www.monash.edu.my/study/undergraduate/engineering/bachelor-of-engineering-honours-in-civil-engineering",
+    "path": "data/imports/mum/2026-06-19/official-audit/rendered/012-mum-ug-engineering-bachelor-of-civil-engineering-honours-12.json",
+    "status": "rendered",
+    "title": "Bachelor of Civil Engineering (Honours) - Monash Malaysia"
+  },
+  {
+    "code": "MUM-UG-ENGINEERING-BACHELOR-OF-ELECTRICAL-AND-COMPUTER-SYSTEMS--13",
+    "url": "https://www.monash.edu.my/study/undergraduate/engineering/bachelor-of-engineering-honours-in-electrical-and-computer-systems-engineering",
+    "path": "data/imports/mum/2026-06-19/official-audit/rendered/013-mum-ug-engineering-bachelor-of-electrical-and-computer-systems-13.json",
+    "status": "rendered",
+    "title": "Bachelor of Electrical and Computer Systems Engineering (Honours) - Monash"
+  },
+  {
+    "code": "MUM-UG-ENGINEERING-BACHELOR-OF-MATERIALS-ENGINEERING-HONOURS-14",
+    "url": "https://www.monash.edu.my/study/undergraduate/engineering/bachelor-of-materials-engineering-honours",
+    "path": "data/imports/mum/2026-06-19/official-audit/rendered/014-mum-ug-engineering-bachelor-of-materials-engineering-honours-14.json",
+    "status": "rendered",
+    "title": "Bachelor of Materials Engineering (Honours) - Malaysia"
+  },
+  {
+    "code": "MUM-UG-ENGINEERING-BACHELOR-OF-MECHANICAL-ENGINEERING-HONOURS-15",
+    "url": "https://www.monash.edu.my/study/undergraduate/engineering/bachelor-of-engineering-honours-in-mechanical-engineering",
+    "path": "data/imports/mum/2026-06-19/official-audit/rendered/015-mum-ug-engineering-bachelor-of-mechanical-engineering-honours-15.json",
+    "status": "rendered",
+    "title": "Bachelor of Mechanical Engineering (Honours) | Monash Malaysia"
+  },
+  {
+    "code": "MUM-UG-ENGINEERING-BACHELOR-OF-ROBOTICS-AND-MECHATRONICS-ENGINE-16",
+    "url": "https://www.monash.edu.my/study/undergraduate/engineering/bachelor-of-engineering-honours-in-mechatronics-engineering",
+    "path": "data/imports/mum/2026-06-19/official-audit/rendered/016-mum-ug-engineering-bachelor-of-robotics-and-mechatronics-engine-16.json",
+    "status": "rendered",
+    "title": "Bachelor of Robotics and Mechatronics Engineering (Honours) - Monash University Malaysia"
+  },
+  {
+    "code": "MUM-UG-ENGINEERING-BACHELOR-OF-SOFTWARE-ENGINEERING-HONOURS-17",
+    "url": "https://www.monash.edu.my/study/undergraduate/engineering/bachelor-of-software-engineering-honours",
+    "path": "data/imports/mum/2026-06-19/official-audit/rendered/017-mum-ug-engineering-bachelor-of-software-engineering-honours-17.json",
+    "status": "rendered",
+    "title": "Bachelor of SoftwBachelor of Software Engineering (Honours) - Study Malaysiaare Engineering (Honours) - Study Software Engineering Course in Malaysia"
+  },
+  {
+    "code": "MUM-UG-INFORMATION-TECHNO-BACHELOR-OF-COMPUTER-SCIENCE-18",
+    "url": "https://www.monash.edu.my/study/undergraduate/information-technology/bachelor-computer-science",
+    "path": "data/imports/mum/2026-06-19/official-audit/rendered/018-mum-ug-information-techno-bachelor-of-computer-science-18.json",
+    "status": "rendered",
+    "title": "Bachelor of Computer Science at Monash | Enroll Today"
+  },
+  {
+    "code": "MUM-UG-INFORMATION-TECHNO-BACHELOR-OF-COMPUTER-SCIENCE-IN-ARTIFICIAL-I-19",
+    "url": "https://www.monash.edu.my/study/undergraduate/information-technology/bachelor-of-computer-science-in-artificial-intelligence",
+    "path": "data/imports/mum/2026-06-19/official-audit/rendered/019-mum-ug-information-techno-bachelor-of-computer-science-in-artificial-i-19.json",
+    "status": "rendered",
+    "title": "Bachelor of Computer Science in Artificial Intelligence - Malaysia"
+  },
+  {
+    "code": "MUM-UG-INFORMATION-TECHNO-BACHELOR-OF-COMPUTER-SCIENCE-IN-DATA-SCIENCE-20",
+    "url": "https://www.monash.edu.my/study/undergraduate/information-technology/bachelor-of-computer-science-in-data-science",
+    "path": "data/imports/mum/2026-06-19/official-audit/rendered/020-mum-ug-information-techno-bachelor-of-computer-science-in-data-science-20.json",
+    "status": "rendered",
+    "title": "Bachelor of Computer Science in Data Science - Malaysia"
+  },
+  {
+    "code": "MUM-UG-INFORMATION-TECHNO-BACHELOR-OF-COMPUTER-SCIENCE-HONOURS-21",
+    "url": "https://www.monash.edu.my/study/undergraduate/information-technology/bachelor-of-computer-science-honours",
+    "path": "data/imports/mum/2026-06-19/official-audit/rendered/021-mum-ug-information-techno-bachelor-of-computer-science-honours-21.json",
+    "status": "rendered",
+    "title": "Bachelor of Computer Science (Honours) - Monash University Malaysia"
+  },
+  {
+    "code": "MUM-UG-MEDICINE-AND-HEALT-BACHELOR-OF-MEDICAL-SCIENCE-AND-DOCTOR-OF-ME-22",
+    "url": "https://www.monash.edu.my/study/undergraduate/jeffrey-cheah-school-medicine-health-sciences/bachelor-medical-science-doctor-medicine",
+    "path": "data/imports/mum/2026-06-19/official-audit/rendered/022-mum-ug-medicine-and-healt-bachelor-of-medical-science-and-doctor-of-me-22.json",
+    "status": "rendered",
+    "title": "Bachelor of Medical Science and Doctor of Medicine - MBBS in Malaysia - Monash University"
+  },
+  {
+    "code": "MUM-UG-MEDICINE-AND-HEALT-BACHELOR-OF-PSYCHOLOGY-23",
+    "url": "https://www.monash.edu.my/study/undergraduate/jeffrey-cheah-school-medicine-health-sciences/bachelor-of-psychology",
+    "path": "data/imports/mum/2026-06-19/official-audit/rendered/023-mum-ug-medicine-and-healt-bachelor-of-psychology-23.json",
+    "status": "rendered",
+    "title": "Bachelor of Psychology - Study Psychology Course in Malaysia"
+  },
+  {
+    "code": "MUM-UG-MEDICINE-AND-HEALT-BACHELOR-OF-PSYCHOLOGY-AND-BUSINESS-24",
+    "url": "https://www.monash.edu.my/study/undergraduate/jeffrey-cheah-school-medicine-health-sciences/bachelor-psychological-science-business",
+    "path": "data/imports/mum/2026-06-19/official-audit/rendered/024-mum-ug-medicine-and-healt-bachelor-of-psychology-and-business-24.json",
+    "status": "rendered",
+    "title": "Bachelor of Psychology and Business - Degree in Business Psychology Malaysia"
+  },
+  {
+    "code": "MUM-UG-MEDICINE-AND-HEALT-BACHELOR-OF-HUMAN-NUTRITION-25",
+    "url": "https://www.monash.edu.my/study/undergraduate/jeffrey-cheah-school-medicine-health-sciences/bachelor-of-human-nutrition",
+    "path": "data/imports/mum/2026-06-19/official-audit/rendered/025-mum-ug-medicine-and-healt-bachelor-of-human-nutrition-25.json",
+    "status": "rendered",
+    "title": "Bachelor of Human Nutrition - Dietetics Course in malaysia"
+  },
+  {
+    "code": "MUM-UG-MEDICINE-AND-HEALT-BACHELOR-OF-HEALTH-SCIENCES-HONOURS-26",
+    "url": "https://www.monash.edu.my/study/undergraduate/jeffrey-cheah-school-medicine-health-sciences/bachelor-of-health-sciences-honours",
+    "path": "data/imports/mum/2026-06-19/official-audit/rendered/026-mum-ug-medicine-and-healt-bachelor-of-health-sciences-honours-26.json",
+    "status": "rendered",
+    "title": "Bachelor of Medical Science (Honours) - Medical Sciences Degree in Malaysia"
+  },
+  {
+    "code": "MUM-UG-MEDICINE-AND-HEALT-BACHELOR-OF-MEDICAL-SCIENCE-HONOURS-27",
+    "url": "https://www.monash.edu.my/study/undergraduate/jeffrey-cheah-school-medicine-health-sciences/bachelor-medical-science-honours",
+    "path": "data/imports/mum/2026-06-19/official-audit/rendered/027-mum-ug-medicine-and-healt-bachelor-of-medical-science-honours-27.json",
+    "status": "rendered",
+    "title": "Bachelor of Medical Science (Honours) - Medical Sciences Degree in Malaysia"
+  },
+  {
+    "code": "MUM-UG-MEDICINE-AND-HEALT-BACHELOR-OF-PSYCHOLOGY-HONOURS-28",
+    "url": "https://www.monash.edu.my/study/undergraduate/jeffrey-cheah-school-medicine-health-sciences/bachelor-psychology-honours",
+    "path": "data/imports/mum/2026-06-19/official-audit/rendered/028-mum-ug-medicine-and-healt-bachelor-of-psychology-honours-28.json",
+    "status": "rendered",
+    "title": "Bachelor of Psychological Science (Honours) - Psychology Degree Malaysia"
+  },
+  {
+    "code": "MUM-UG-PHARMACY-COURSE-DU-BACHELOR-OF-PHARMACY-HONOURS-29",
+    "url": "https://www.monash.edu.my/study/undergraduate/pharmacy/bachelor-pharmacy",
+    "path": "data/imports/mum/2026-06-19/official-audit/rendered/029-mum-ug-pharmacy-course-du-bachelor-of-pharmacy-honours-29.json",
+    "status": "rendered",
+    "title": "Bachelor of Pharmacy (Honours) - Study Pharmacy Course in Malaysia"
+  },
+  {
+    "code": "MUM-UG-PHARMACY-COURSE-DU-BACHELOR-OF-PHARMACEUTICAL-SCIENCE-30",
+    "url": "https://www.monash.edu.my/study/undergraduate/pharmacy/bachelor-of-pharmaceutical-science",
+    "path": "data/imports/mum/2026-06-19/official-audit/rendered/030-mum-ug-pharmacy-course-du-bachelor-of-pharmaceutical-science-30.json",
+    "status": "rendered",
+    "title": "Bachelor of Pharmaceutical Science - Monash Malaysia"
+  },
+  {
+    "code": "MUM-UG-PHARMACY-COURSE-DU-BACHELOR-OF-PHARMACEUTICAL-SCIENCE-HONOURS-31",
+    "url": "https://www.monash.edu.my/study/undergraduate/pharmacy/bachelor-of-pharmaceutical-science-honours",
+    "path": "data/imports/mum/2026-06-19/official-audit/rendered/031-mum-ug-pharmacy-course-du-bachelor-of-pharmaceutical-science-honours-31.json",
+    "status": "rendered",
+    "title": "Bachelor of Pharmaceutical Science (Honours) - Malaysia"
+  },
+  {
+    "code": "MUM-UG-SCIENCE-COURSE-DUR-BACHELOR-OF-SCIENCE-32",
+    "url": "https://www.monash.edu.my/study/undergraduate/science/bachelor-science",
+    "path": "data/imports/mum/2026-06-19/official-audit/rendered/032-mum-ug-science-course-dur-bachelor-of-science-32.json",
+    "status": "rendered",
+    "title": "Bachelor of Science - Monash University Malaysia"
+  },
+  {
+    "code": "MUM-UG-SCIENCE-COURSE-DUR-BACHELOR-OF-APPLIED-DATA-SCIENCE-33",
+    "url": "https://www.monash.edu.my/study/undergraduate/science/bachelor-of-applied-data-science",
+    "path": "data/imports/mum/2026-06-19/official-audit/rendered/033-mum-ug-science-course-dur-bachelor-of-applied-data-science-33.json",
+    "status": "rendered",
+    "title": "Bachelor of Applied Data Science - Malaysia"
+  },
+  {
+    "code": "MUM-UG-SCIENCE-COURSE-DUR-BACHELOR-OF-FOOD-SCIENCE-AND-TECHNOLOGY-34",
+    "url": "https://www.monash.edu.my/study/undergraduate/science/bachelor-science-food-science-technology",
+    "path": "data/imports/mum/2026-06-19/official-audit/rendered/034-mum-ug-science-course-dur-bachelor-of-food-science-and-technology-34.json",
+    "status": "rendered",
+    "title": "Bachelor of Food Science and Technology - Monash University Malaysia"
+  },
+  {
+    "code": "MUM-UG-SCIENCE-COURSE-DUR-BACHELOR-OF-MEDICAL-BIOSCIENCE-35",
+    "url": "https://www.monash.edu.my/study/undergraduate/science/bachelor-science-medical-bioscience",
+    "path": "data/imports/mum/2026-06-19/official-audit/rendered/035-mum-ug-science-course-dur-bachelor-of-medical-bioscience-35.json",
+    "status": "rendered",
+    "title": "Bachelor of Medical Bioscience - Monash University Malaysia"
+  },
+  {
+    "code": "MUM-UG-SCIENCE-COURSE-DUR-BACHELOR-OF-SCIENCE-HONOURS-36",
+    "url": "https://www.monash.edu.my/study/undergraduate/science/bachelor-science-honours",
+    "path": "data/imports/mum/2026-06-19/official-audit/rendered/036-mum-ug-science-course-dur-bachelor-of-science-honours-36.json",
+    "status": "rendered",
+    "title": "Bachelor of Science (Honours) - Monash University Malaysia"
+  },
+  {
+    "code": "MUM-MA-ARTS-AND-SOCIAL-SC-MASTER-OF-COMMUNICATIONS-AND-MEDIA-STUDIES-37",
+    "url": "https://www.monash.edu.my/study/postgraduate-and-research/arts-social-sciences/master-communications-media-studies",
+    "path": "data/imports/mum/2026-06-19/official-audit/rendered/037-mum-ma-arts-and-social-sc-master-of-communications-and-media-studies-37.json",
+    "status": "rendered",
+    "title": "Master of Communications and Media Studies - Monash University Malaysia"
+  },
+  {
+    "code": "MUM-PHD-ARTS-AND-SOCIAL-SC-PHD-PHD-38",
+    "url": "https://www.monash.edu.my/study/postgraduate-and-research/arts-social-sciences/phd",
+    "path": "data/imports/mum/2026-06-19/official-audit/rendered/038-mum-phd-arts-and-social-sc-phd-phd-38.json",
+    "status": "rendered",
+    "title": "Doctor of Philosophy (PhD) - Arts and Social Sciences - Monash University Malaysia"
+  },
+  {
+    "code": "MUM-MA-BUSINESS-MASTER-OF-INTERNATIONAL-BUSINESS-39",
+    "url": "https://www.monash.edu.my/study/postgraduate-and-research/business/master-international-business",
+    "path": "data/imports/mum/2026-06-19/official-audit/rendered/039-mum-ma-business-master-of-international-business-39.json",
+    "status": "rendered",
+    "title": "Master of International Business - Monash University Malaysia"
+  },
+  {
+    "code": "MUM-MA-BUSINESS-MASTER-OF-DIGITAL-BUSINESS-40",
+    "url": "https://www.monash.edu.my/study/postgraduate-and-research/business/master-of-digital-business",
+    "path": "data/imports/mum/2026-06-19/official-audit/rendered/040-mum-ma-business-master-of-digital-business-40.json",
+    "status": "rendered",
+    "title": "Master of Digital Business - Malaysia"
+  },
+  {
+    "code": "MUM-MA-BUSINESS-MPHIL-MPHIL-41",
+    "url": "https://www.monash.edu.my/study/postgraduate-and-research/business/master-philosophy",
+    "path": "data/imports/mum/2026-06-19/official-audit/rendered/041-mum-ma-business-mphil-mphil-41.json",
+    "status": "rendered",
+    "title": "Master of Philosophy (Business) Monash Malaysia"
+  },
+  {
+    "code": "MUM-PHD-BUSINESS-PHD-PHD-42",
+    "url": "https://www.monash.edu.my/study/postgraduate-and-research/business/phd",
+    "path": "data/imports/mum/2026-06-19/official-audit/rendered/042-mum-phd-business-phd-phd-42.json",
+    "status": "rendered",
+    "title": "Doctor of Philosophy (PhD) - Business - Monash University Malaysia"
+  },
+  {
+    "code": "MUM-MA-ENGINEERING-MASTER-OF-APPLIED-ENGINEERING-43",
+    "url": "https://www.monash.edu.my/study/postgraduate-and-research/engineering/master-of-applied-engineering",
+    "path": "data/imports/mum/2026-06-19/official-audit/rendered/043-mum-ma-engineering-master-of-applied-engineering-43.json",
+    "status": "rendered",
+    "title": "Master of Applied Engineering - Malaysia"
+  },
+  {
+    "code": "MUM-MA-ENGINEERING-MASTER-OF-ENGINEERING-SCIENCE-RESEARCH-44",
+    "url": "https://www.monash.edu.my/study/postgraduate-and-research/engineering/master-engineering-science-research",
+    "path": "data/imports/mum/2026-06-19/official-audit/rendered/044-mum-ma-engineering-master-of-engineering-science-research-44.json",
+    "status": "rendered",
+    "title": "Master of Engineering Science (Research) - Monash Malaysia"
+  },
+  {
+    "code": "MUM-PHD-ENGINEERING-PHD-PHD-45",
+    "url": "https://www.monash.edu.my/study/postgraduate-and-research/engineering/phd",
+    "path": "data/imports/mum/2026-06-19/official-audit/rendered/045-mum-phd-engineering-phd-phd-45.json",
+    "status": "rendered",
+    "title": "Doctor of Philosophy (PhD) - Engineering - Monash University Malaysia"
+  },
+  {
+    "code": "MUM-MA-INFORMATION-TECHNO-MASTER-OF-ARTIFICIAL-INTELLIGENCE-46",
+    "url": "https://www.monash.edu.my/study/postgraduate-and-research/information-technology/master-of-artificial-intelligence",
+    "path": "data/imports/mum/2026-06-19/official-audit/rendered/046-mum-ma-information-techno-master-of-artificial-intelligence-46.json",
+    "status": "rendered",
+    "title": "Master of Artificial Intelligence Course in Malaysia"
+  },
+  {
+    "code": "MUM-MA-INFORMATION-TECHNO-MASTER-OF-BUSINESS-INFORMATION-SYSTEMS-47",
+    "url": "https://www.monash.edu.my/study/postgraduate-and-research/information-technology/master-business-information-systems",
+    "path": "data/imports/mum/2026-06-19/official-audit/rendered/047-mum-ma-information-techno-master-of-business-information-systems-47.json",
+    "status": "rendered",
+    "title": "Master of Business Information Systems"
+  },
+  {
+    "code": "MUM-MA-INFORMATION-TECHNO-MASTER-OF-DATA-SCIENCE-48",
+    "url": "https://www.monash.edu.my/study/postgraduate-and-research/information-technology/master-of-data-science",
+    "path": "data/imports/mum/2026-06-19/official-audit/rendered/048-mum-ma-information-techno-master-of-data-science-48.json",
+    "status": "rendered",
+    "title": "Master of Data Science | Monash University Malaysia"
+  },
+  {
+    "code": "MUM-MA-INFORMATION-TECHNO-MPHIL-MPHIL-49",
+    "url": "https://www.monash.edu.my/study/postgraduate-and-research/information-technology/master-philosophy",
+    "path": "data/imports/mum/2026-06-19/official-audit/rendered/049-mum-ma-information-techno-mphil-mphil-49.json",
+    "status": "rendered",
+    "title": "Master of Philosophy - Information Technology - Monash University Malaysia"
+  },
+  {
+    "code": "MUM-PHD-INFORMATION-TECHNO-PHD-PHD-50",
+    "url": "https://www.monash.edu.my/study/postgraduate-and-research/information-technology/phd",
+    "path": "data/imports/mum/2026-06-19/official-audit/rendered/050-mum-phd-information-techno-phd-phd-50.json",
+    "status": "rendered",
+    "title": "Doctor of Philosophy (PhD) - Information Technology IT - Monash University Malaysia"
+  },
+  {
+    "code": "MUM-MA-MEDICINE-AND-HEALT-MASTER-OF-PROFESSIONAL-COUNSELLING-51",
+    "url": "https://www.monash.edu.my/study/postgraduate-and-research/medicine-health-sciences/master-of-professional-counselling",
+    "path": "data/imports/mum/2026-06-19/official-audit/rendered/051-mum-ma-medicine-and-healt-master-of-professional-counselling-51.json",
+    "status": "rendered",
+    "title": "Master of Professional Counselling in Malaysia | Apply Now"
+  },
+  {
+    "code": "MUM-MA-MEDICINE-AND-HEALT-MASTER-OF-BIOMEDICAL-SCIENCE-52",
+    "url": "https://www.monash.edu.my/study/postgraduate-and-research/medicine-health-sciences/master-biomedical-science",
+    "path": "data/imports/mum/2026-06-19/official-audit/rendered/052-mum-ma-medicine-and-healt-master-of-biomedical-science-52.json",
+    "status": "rendered",
+    "title": "Master of Biomedical Science - Study Biomedical Science Degree in Malaysia"
+  },
+  {
+    "code": "MUM-MA-MEDICINE-AND-HEALT-MASTER-OF-BIOTECHNOLOGY-53",
+    "url": "https://www.monash.edu.my/study/postgraduate-and-research/medicine-health-sciences/master-of-biotechnology",
+    "path": "data/imports/mum/2026-06-19/official-audit/rendered/053-mum-ma-medicine-and-healt-master-of-biotechnology-53.json",
+    "status": "rendered",
+    "title": "Master of Biotechnology - Malaysia"
+  },
+  {
+    "code": "MUM-MA-MEDICINE-AND-HEALT-MASTER-OF-CLINICAL-PSYCHOLOGY-54",
+    "url": "https://www.monash.edu.my/study/postgraduate-and-research/medicine-health-sciences/master-of-clinical-psychology",
+    "path": "data/imports/mum/2026-06-19/official-audit/rendered/054-mum-ma-medicine-and-healt-master-of-clinical-psychology-54.json",
+    "status": "rendered",
+    "title": "Master of Clinical Psychology in Malaysia | Apply Now"
+  },
+  {
+    "code": "MUM-PHD-MEDICINE-AND-HEALT-PHD-PHD-55",
+    "url": "https://www.monash.edu.my/study/postgraduate-and-research/medicine-health-sciences/phd",
+    "path": "data/imports/mum/2026-06-19/official-audit/rendered/055-mum-phd-medicine-and-healt-phd-phd-55.json",
+    "status": "rendered",
+    "title": "Doctor of Philosophy (PhD) - Medicine and Health Sciences - PhD in Psychology Malaysia"
+  },
+  {
+    "code": "MUM-MA-PHARMACY-MASTER-OF-PHARMACEUTICAL-SCIENCE-56",
+    "url": "https://www.monash.edu.my/study/postgraduate-and-research/pharmacy/master-of-pharmaceutical-science",
+    "path": "data/imports/mum/2026-06-19/official-audit/rendered/056-mum-ma-pharmacy-master-of-pharmaceutical-science-56.json",
+    "status": "rendered",
+    "title": "Master of Pharmaceutical Science | Monash Malaysia"
+  },
+  {
+    "code": "MUM-MA-PHARMACY-MPHIL-57",
+    "url": "https://www.monash.edu.my/study/postgraduate-and-research/pharmacy/master-of-philosophy",
+    "path": "data/imports/mum/2026-06-19/official-audit/rendered/057-mum-ma-pharmacy-mphil-57.json",
+    "status": "rendered",
+    "title": "Master of Philosophy - Pharmacy - Monash University Malaysia"
+  },
+  {
+    "code": "MUM-PHD-PHARMACY-PHD-PHD-58",
+    "url": "https://www.monash.edu.my/study/postgraduate-and-research/pharmacy/doctor-of-philosophy-phd",
+    "path": "data/imports/mum/2026-06-19/official-audit/rendered/058-mum-phd-pharmacy-phd-phd-58.json",
+    "status": "rendered",
+    "title": "Doctor of Philosophy (PhD) - Pharmacy - Monash University Malaysia"
+  },
+  {
+    "code": "MUM-MA-SCIENCE-MASTER-OF-SCIENCE-59",
+    "url": "https://www.monash.edu.my/study/postgraduate-and-research/science/master-science",
+    "path": "data/imports/mum/2026-06-19/official-audit/rendered/059-mum-ma-science-master-of-science-59.json",
+    "status": "rendered",
+    "title": "Master of Science (Research) Degree Program - Apply Now"
+  },
+  {
+    "code": "MUM-PHD-SCIENCE-PHD-PHD-60",
+    "url": "https://www.monash.edu.my/study/postgraduate-and-research/science/phd",
+    "path": "data/imports/mum/2026-06-19/official-audit/rendered/060-mum-phd-science-phd-phd-60.json",
+    "status": "rendered",
+    "title": "Doctor of Philosophy (PhD) in Science - Monah Malaysia"
+  },
+  {
+    "code": "source-application-form",
+    "url": "https://www.monash.edu.my/study/apply/application-form",
+    "path": "data/imports/mum/2026-06-19/official-audit/rendered/061-source-application-form.json",
+    "status": "rendered",
+    "title": "Complete the application details - Monash University Malaysia"
+  },
+  {
+    "code": "source-online-application",
+    "url": "https://www.monash.edu.my/study/apply/application-form/online-application",
+    "path": "data/imports/mum/2026-06-19/official-audit/rendered/062-source-online-application.json",
+    "status": "rendered",
+    "title": "Online application - Monash University Malaysia"
+  },
+  {
+    "code": "source-undergraduate-academic",
+    "url": "https://www.monash.edu.my/study/entry-requirements/academic/undergraduate",
+    "path": "data/imports/mum/2026-06-19/official-audit/rendered/063-source-undergraduate-academic.json",
+    "status": "rendered",
+    "title": "Undergraduate - Academic Entry Requirements - Monash University Malaysia"
+  },
+  {
+    "code": "source-postgraduate-coursework-academic",
+    "url": "https://www.monash.edu.my/study/entry-requirements/academic/postgraduate-coursework",
+    "path": "data/imports/mum/2026-06-19/official-audit/rendered/064-source-postgraduate-coursework-academic.json",
+    "status": "rendered",
+    "title": "Postgraduate coursework - Monash University Malaysia"
+  },
+  {
+    "code": "source-english-tests",
+    "url": "https://www.monash.edu.my/study/entry-requirements/english/tests",
+    "path": "data/imports/mum/2026-06-19/official-audit/rendered/065-source-english-tests.json",
+    "status": "rendered",
+    "title": "English Proficiency Tests - Monash University Malaysia"
+  },
+  {
+    "code": "source-research-english",
+    "url": "https://www.monash.edu/graduate-research/study/apply/english-language-proficiency-requirements-for-admission",
+    "path": "data/imports/mum/2026-06-19/official-audit/rendered/066-source-research-english.json",
+    "status": "rendered",
+    "title": "English language proficiency requirements for admission - Graduate Research"
+  },
+  {
+    "code": "source-international-students",
+    "url": "https://www.monash.edu.my/study/entry-requirements/international-students2",
+    "path": "data/imports/mum/2026-06-19/official-audit/rendered/067-source-international-students.json",
+    "status": "rendered",
+    "title": "International students - Monash University Malaysia"
+  },
+  {
+    "code": "source-institution-homepage",
+    "url": "https://www.monash.edu.my/",
+    "path": "data/imports/mum/2026-06-19/official-audit/rendered/068-source-institution-homepage.json",
+    "status": "rendered",
+    "title": "Monash University Malaysia | Top University in Malaysia"
+  }
+]

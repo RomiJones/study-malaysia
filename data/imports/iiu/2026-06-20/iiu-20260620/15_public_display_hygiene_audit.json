@@ -1,0 +1,18 @@
+{
+  "status": "passed",
+  "checks": {
+    "noRawCrawlerText": "passed",
+    "noLocalPathInPublicFields": "passed",
+    "noAuditProseInPublicFields": "passed",
+    "localizedFieldsReviewBoundary": "passed",
+    "notCommercialDisplayReady": "passed"
+  },
+  "issues": [
+    {
+      "severity": "review",
+      "code": "localization-not-finalized",
+      "count": 107,
+      "message": "Official English evidence is retained; zh-CN/zh-TW/ms public localization requires a separate pass before publication."
+    }
+  ]
+}

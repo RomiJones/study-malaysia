@@ -1,0 +1,202 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-06-20T14:45:00+08:00",
+  "institution": "Universiti Teknologi PETRONAS (UTP)",
+  "scope": "field-level remediation after official count and publication audit",
+  "officialProgrammeCount": {
+    "directoryOccurrences": 63,
+    "uniqueOfficialEntries": 63,
+    "canonicalProgrammes": 63,
+    "ready": 63,
+    "needsReview": 0,
+    "notAvailableForInternational": 0,
+    "byLevel": {
+      "bachelor": 15,
+      "master": 37,
+      "phd": 11
+    }
+  },
+  "sourcesAdded": [
+    {
+      "id": "programme-detail-057-integrated-curriculum-current-2026-06-20",
+      "url": "https://www.utp.edu.my/Pages/Admission/Undergraduate/Bachelor-of-Integrated-Engineering%E2%80%8B-with-Honours%E2%80%8B/Curriculum-Structure.aspx",
+      "localPath": "data/imports/utp/2026-06-19/official-audit/sources/html/programme-details/integrated-engineering/curriculum-current-2026-06-20.html",
+      "sha256": "118282cac8d272809e62209a64257a089251139753bb68ca397208ac0d6671f4"
+    },
+    {
+      "id": "programme-detail-057-integrated-career-current-2026-06-20",
+      "url": "https://www.utp.edu.my/Pages/Admission/Undergraduate/Bachelor-of-Integrated-Engineering%E2%80%8B-with-Honours%E2%80%8B/Career-Opportunities.aspx",
+      "localPath": "data/imports/utp/2026-06-19/official-audit/sources/html/programme-details/integrated-engineering/career-current-2026-06-20.html",
+      "sha256": "db088a0cfb2d4f77a94a6709ff862ad4295381388c30727a2b9754d372e7197a"
+    },
+    {
+      "id": "programme-detail-057-integrated-reasons-current-2026-06-20",
+      "url": "https://www.utp.edu.my/Pages/Admission/Undergraduate/Bachelor-of-Integrated-Engineering%E2%80%8B-with-Honours%E2%80%8B/Top-5-Reasons.aspx",
+      "localPath": "data/imports/utp/2026-06-19/official-audit/sources/html/programme-details/integrated-engineering/reasons-current-2026-06-20.html",
+      "sha256": "892fe3d0b01763c8e503976fcaca224b9c804f761618e795e0e61a53e8a2df4d"
+    }
+  ],
+  "remediatedFields": {
+    "academicRequirement": {
+      "covered": 63,
+      "unpublished": 0,
+      "review": 0
+    },
+    "gpaCgpa": {
+      "covered": 63,
+      "unpublished": 0,
+      "review": 0
+    },
+    "overview": {
+      "covered": 63,
+      "unpublished": 0,
+      "review": 0
+    },
+    "courseSetting": {
+      "covered": 63,
+      "unpublished": 0,
+      "review": 0
+    },
+    "curriculumStructure": {
+      "covered": 63,
+      "unpublished": 0,
+      "review": 0
+    },
+    "individualCourseTitles": {
+      "covered": 36,
+      "unpublished": 27,
+      "review": 0
+    },
+    "internshipProjectDissertation": {
+      "covered": 40,
+      "unpublished": 23,
+      "review": 0
+    },
+    "specializationsResearchAreas": {
+      "covered": 41,
+      "unpublished": 22,
+      "review": 0
+    },
+    "careers": {
+      "covered": 36,
+      "unpublished": 27,
+      "review": 0
+    }
+  },
+  "decisions": [
+    "No programme count changed: 63 official UTP programmes remain published-ready/published, by level bachelor 15, master 37, phd 11.",
+    "Master academic CGPA requirements use UTP official postgraduate international entry requirement rules; PhD uses official non-numeric Master degree threshold and does not invent numeric CGPA.",
+    "Integrated Engineering curriculum/career/reasons subpages were fetched and tied to the previously missing overview/course/career fields.",
+    "Electronic Systems Engineering ODL course text was removed from careerDirections and stored under courseSetting/curriculum evidence.",
+    "Research rows with official research areas now expose research-based course setting parity instead of appearing as courseSetting omissions."
+  ],
+  "remainingOfficialUnpublishedOrNotApplicable": {
+    "individualCourseTitles": [
+      "UTP-BACHELOR-BACHELOR_OF_INTEGRATED_ENGINEERING_WITH_HONOURS",
+      "UTP-MASTER-MBA_IN_EN_ERGY_MANAGEMENT",
+      "UTP-MASTER-MSC_IN_INDUSTRIAL_ENVIRONMENTAL_ENGINEERING",
+      "UTP-MASTER-MBA_IN_EN_ERGY_MANAGEMENT_ODL",
+      "UTP-MASTER-MSC_IN_INDUSTRIAL_ENVIRONMENTAL_ENGINEERING_ODL",
+      "UTP-MASTER-MSC_IN_CHEMICAL_ENGINEERING_RESEARCH",
+      "UTP-MASTER-MSC_IN_PETROLEUM_ENGINEERING_MASTERS_BY_RESEARCH_RESEARCH",
+      "UTP-MASTER-MSC_IN_PETROLEUM_GEOSCIENCE_MASTERS_BY_RESEARCH_RESEARCH",
+      "UTP-MASTER-MSC_IN_CIVIL_ENGINEERING_BY_RESEARCH_RESEARCH",
+      "UTP-MASTER-MSC_IN_MECHANICAL_ENGINEERING_RESEARCH",
+      "UTP-MASTER-MSC_IN_ELECTRICAL_ELECTRONIC_ENGINEERING_RESEARCH",
+      "UTP-MASTER-MSC_IN_INFORMATION_TECHNOLOGY_RESEARCH_RESEARCH",
+      "UTP-MASTER-MSC_IN_INFORMATION_SYSTEMS_RESEARCH",
+      "UTP-MASTER-MSC_OF_SCIENCE_BY_RESEARCH_RESEARCH",
+      "UTP-MASTER-MASTER_OF_PHILOSOPHY_IN_MANAGEMENT_RESEARCH",
+      "UTP-MASTER-MASTER_OF_PHILOSOPHY_RESEARCH",
+      "UTP-PHD-PHD_IN_CHEMICAL_ENGINEERING",
+      "UTP-PHD-PHD_IN_PETROLEUM_ENGINEERING",
+      "UTP-PHD-PHD_IN_PETROLEUM_GEOSCIENCE",
+      "UTP-PHD-PHD_IN_CIVIL_ENGINEERING",
+      "UTP-PHD-PHD_IN_MECHANICAL_ENGINEERING",
+      "UTP-PHD-PHD_IN_ELECTRICAL_AND_ELECTRONIC_ENGINEERING",
+      "UTP-PHD-PHD_IN_INFORMATION_TECHNOLOGY",
+      "UTP-PHD-PHD_IN_INFORMATION_SYSTEMS",
+      "UTP-PHD-PHD_IN_MANAGEMENT",
+      "UTP-PHD-PHD_IN_APPLIED_SCIENCE",
+      "UTP-PHD-PHD_IN_SOCIAL_SCIENCE_HUMANITIES"
+    ],
+    "internshipProjectDissertation": [
+      "UTP-BACHELOR-BACHELOR_OF_INTEGRATED_ENGINEERING_WITH_HONOURS",
+      "UTP-BACHELOR-BACHELOR_OF_CHEMICAL_ENGINEERING_WITH_HONOURS",
+      "UTP-BACHELOR-BACHELOR_OF_CIVIL_ENGINEERING_WITH_HONOURS_CIVIL_ENGINEERING_COURSE_IN_MALAYSIA",
+      "UTP-BACHELOR-BACHELOR_IN_INFORMATION_TECHNOLOGY_HONS_IT_COURSE_IN_MALAYSIA",
+      "UTP-MASTER-MSC_IN_ASSET_MANAGEMENT_AND_MAINTENANCE",
+      "UTP-MASTER-MSC_IN_PROCESS_SAFETY",
+      "UTP-MASTER-MSC_IN_ASSET_MANAGEMENT_AND_MAINTENANCE_ODL",
+      "UTP-MASTER-MSC_IN_DATA_SCIENCE_ODL",
+      "UTP-MASTER-MSC_IN_PETROLEUM_GEOSCIENCE_MASTERS_BY_RESEARCH_RESEARCH",
+      "UTP-MASTER-MSC_IN_CIVIL_ENGINEERING_BY_RESEARCH_RESEARCH",
+      "UTP-MASTER-MSC_IN_MECHANICAL_ENGINEERING_RESEARCH",
+      "UTP-MASTER-MSC_IN_ELECTRICAL_ELECTRONIC_ENGINEERING_RESEARCH",
+      "UTP-MASTER-MSC_IN_INFORMATION_TECHNOLOGY_RESEARCH_RESEARCH",
+      "UTP-MASTER-MASTER_OF_PHILOSOPHY_IN_MANAGEMENT_RESEARCH",
+      "UTP-MASTER-MASTER_OF_PHILOSOPHY_RESEARCH",
+      "UTP-PHD-PHD_IN_PETROLEUM_ENGINEERING",
+      "UTP-PHD-PHD_IN_PETROLEUM_GEOSCIENCE",
+      "UTP-PHD-PHD_IN_CIVIL_ENGINEERING",
+      "UTP-PHD-PHD_IN_MECHANICAL_ENGINEERING",
+      "UTP-PHD-PHD_IN_MANAGEMENT",
+      "UTP-PHD-PHD_IN_APPLIED_SCIENCE",
+      "UTP-PHD-PHD_IN_SOCIAL_SCIENCE_HUMANITIES",
+      "UTP-MASTER-MSC_IN_PROCESS_SAFETY_ODL"
+    ],
+    "specializationsResearchAreas": [
+      "UTP-BACHELOR-BACHELOR_OF_CHEMICAL_ENGINEERING_WITH_HONOURS",
+      "UTP-BACHELOR-BACHELOR_OF_CIVIL_ENGINEERING_WITH_HONOURS_CIVIL_ENGINEERING_COURSE_IN_MALAYSIA",
+      "UTP-BACHELOR-BACHELOR_IN_INFORMATION_TECHNOLOGY_HONS_IT_COURSE_IN_MALAYSIA",
+      "UTP-BACHELOR-BACHELOR_OF_COMPUTER_SCIENCE_HONS_COMPUTER_SCIENCE_COURSE_IN_MALAYSIA",
+      "UTP-MASTER-MSC_IN_ASSET_MANAGEMENT_AND_MAINTENANCE",
+      "UTP-MASTER-MSC_IN_CORROSION_ENGINEERING",
+      "UTP-MASTER-MSC_IN_DRILLING_ENGINEERING_BY_COURSEWORK_AND_DISSERTATION",
+      "UTP-MASTER-MSC_IN_ELECTRONIC_SYSTEM_ENGINEERING",
+      "UTP-MASTER-MSC_IN_INDUSTRIAL_ENVIRONMENTAL_ENGINEERING",
+      "UTP-MASTER-MSC_IN_OFFSHORE_ENGINEERING_BY_COURSEWORK_AND_DISSERTATION",
+      "UTP-MASTER-MSC_IN_PROCESS_INTEGRATION",
+      "UTP-MASTER-MSC_IN_PROCESS_SAFETY",
+      "UTP-MASTER-MSC_IN_PETROLEUM_ENGINEERING_MASTERS_BY_COURSEWORK",
+      "UTP-MASTER-MSC_IN_ELECTRONIC_SYSTEMS_ENGINEERING_ODL",
+      "UTP-MASTER-MSC_IN_ASSET_MANAGEMENT_AND_MAINTENANCE_ODL",
+      "UTP-MASTER-MSC_IN_CORROSION_ENGINEERING_ODL",
+      "UTP-MASTER-MSC_IN_DRILLING_ENGINEERING_BY_COURSEWORK_AND_DISSERTATION_ODL",
+      "UTP-MASTER-MSC_IN_INDUSTRIAL_ENVIRONMENTAL_ENGINEERING_ODL",
+      "UTP-MASTER-MSC_IN_OFFSHORE_ENGINEERING_ODL",
+      "UTP-MASTER-MSC_IN_PETROLEUM_ENGINEERING_ODL",
+      "UTP-MASTER-MSC_IN_PROCESS_INTEGRATION_BY_COURSEWORK_ODL",
+      "UTP-MASTER-MSC_IN_PROCESS_SAFETY_ODL"
+    ],
+    "careers": [
+      "UTP-BACHELOR-BACHELOR_OF_CHEMICAL_ENGINEERING_WITH_HONOURS",
+      "UTP-BACHELOR-BACHELOR_OF_CIVIL_ENGINEERING_WITH_HONOURS_CIVIL_ENGINEERING_COURSE_IN_MALAYSIA",
+      "UTP-BACHELOR-BACHELOR_OF_COMPUTER_ENGINEERING_WITH_HONOURS",
+      "UTP-BACHELOR-BACHELOR_OF_ELECTRICAL_AND_ELECTRONICS_ENGINEERING_WITH_HONOURS",
+      "UTP-BACHELOR-BACHELOR_OF_MECHANICAL_ENGINEERING_WITH_HONOURS",
+      "UTP-BACHELOR-BACHELOR_OF_PETROLEUM_ENGINEERING_WITH_HONOURS",
+      "UTP-BACHELOR-BACHELOR_IN_INFORMATION_SYSTEMS_HONS",
+      "UTP-BACHELOR-BACHELOR_IN_INFORMATION_TECHNOLOGY_HONS_IT_COURSE_IN_MALAYSIA",
+      "UTP-BACHELOR-BACHELOR_OF_COMPUTER_SCIENCE_HONS_COMPUTER_SCIENCE_COURSE_IN_MALAYSIA",
+      "UTP-BACHELOR-BACHELOR_OF_SCIENCE_HONS_APPLIED_CHEMISTRY",
+      "UTP-BACHELOR-BACHELOR_OF_SCIENCE_IN_INDUSTRIAL_PHYSICS",
+      "UTP-BACHELOR-BACHELOR_OF_SCIENCE_HONS_GEOSCIENCE",
+      "UTP-MASTER-MBA_IN_EN_ERGY_MANAGEMENT",
+      "UTP-MASTER-MSC_IN_ASSET_MANAGEMENT_AND_MAINTENANCE",
+      "UTP-MASTER-MSC_IN_INDUSTRIAL_ENVIRONMENTAL_ENGINEERING",
+      "UTP-MASTER-MSC_IN_OFFSHORE_ENGINEERING_BY_COURSEWORK_AND_DISSERTATION",
+      "UTP-MASTER-MBA_IN_EN_ERGY_MANAGEMENT_ODL",
+      "UTP-MASTER-MSC_IN_ASSET_MANAGEMENT_AND_MAINTENANCE_ODL",
+      "UTP-MASTER-MSC_IN_CORROSION_ENGINEERING_ODL",
+      "UTP-MASTER-MSC_IN_DRILLING_ENGINEERING_BY_COURSEWORK_AND_DISSERTATION_ODL",
+      "UTP-MASTER-MSC_IN_OFFSHORE_ENGINEERING_ODL",
+      "UTP-MASTER-MASTER_OF_PHILOSOPHY_IN_MANAGEMENT_RESEARCH",
+      "UTP-MASTER-MASTER_OF_PHILOSOPHY_RESEARCH",
+      "UTP-PHD-PHD_IN_ELECTRICAL_AND_ELECTRONIC_ENGINEERING",
+      "UTP-PHD-PHD_IN_MANAGEMENT",
+      "UTP-PHD-PHD_IN_APPLIED_SCIENCE",
+      "UTP-PHD-PHD_IN_SOCIAL_SCIENCE_HUMANITIES"
+    ]
+  }
+}

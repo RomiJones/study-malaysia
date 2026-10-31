@@ -1,0 +1,333 @@
+{
+  "schemaVersion": 3,
+  "officialDomains": [
+    "taylors.edu.my"
+  ],
+  "scope": {
+    "universityCode": "TSU",
+    "collectionScope": "full",
+    "levels": [
+      "bachelor",
+      "master",
+      "phd"
+    ],
+    "applicantScope": "international",
+    "academicSession": "2026"
+  },
+  "authorization": "collect",
+  "counts": {
+    "directoryOccurrences": 95,
+    "uniqueOfficialEntries": 95,
+    "canonicalProgrammes": 89,
+    "ready": 0,
+    "needsReview": 89,
+    "notAvailableForInternational": 0,
+    "byLevel": {
+      "bachelor": 46,
+      "master": 28,
+      "phd": 15
+    },
+    "outOfScopeRows": 6
+  },
+  "coverage": {
+    "identity": {
+      "covered": 89,
+      "unpublished": 0,
+      "review": 0
+    },
+    "faculty": {
+      "covered": 89,
+      "unpublished": 0,
+      "review": 0
+    },
+    "studyMode": {
+      "covered": 89,
+      "unpublished": 0,
+      "review": 0
+    },
+    "campus": {
+      "covered": 89,
+      "unpublished": 0,
+      "review": 0
+    },
+    "duration": {
+      "covered": 89,
+      "unpublished": 0,
+      "review": 0
+    },
+    "intake": {
+      "covered": 89,
+      "unpublished": 0,
+      "review": 0
+    },
+    "internationalEligibility": {
+      "covered": 89,
+      "unpublished": 0,
+      "review": 0
+    },
+    "academicRequirement": {
+      "covered": 89,
+      "unpublished": 0,
+      "review": 0
+    },
+    "languageRequirement": {
+      "covered": 89,
+      "unpublished": 0,
+      "review": 0
+    },
+    "applicationDocuments": {
+      "covered": 89,
+      "unpublished": 0,
+      "review": 0
+    },
+    "fee": {
+      "covered": 89,
+      "unpublished": 0,
+      "review": 0
+    },
+    "evidence": {
+      "covered": 89,
+      "unpublished": 0,
+      "review": 0
+    },
+    "deepSourceFieldExploration": {
+      "covered": 89,
+      "unpublished": 0,
+      "review": 0
+    },
+    "studentFacingContentHygiene": {
+      "covered": 89,
+      "unpublished": 0,
+      "review": 0
+    },
+    "institutionProfile": {
+      "covered": 1,
+      "unpublished": 0,
+      "review": 0
+    },
+    "localization": {
+      "covered": 0,
+      "unpublished": 0,
+      "review": 89
+    },
+    "languageScores": {
+      "covered": 89,
+      "unpublished": 0,
+      "review": 0
+    },
+    "academicPerformanceRequirement": {
+      "covered": 89,
+      "unpublished": 0,
+      "review": 0
+    }
+  },
+  "sources": [
+    {
+      "id": "homepage",
+      "url": "https://university.taylors.edu.my/en.html",
+      "sourceType": "official-page",
+      "role": "institution-authority",
+      "fields": [
+        "officialName",
+        "officialWebsite",
+        "address",
+        "profile"
+      ],
+      "retrievedAt": "2026-06-20T15:54:12+00:00",
+      "academicSession": "2026",
+      "status": "cached",
+      "localPath": "sources/raw/homepage.html",
+      "sha256": "39c3730f2c7b6a0ea5e254f8c57898b956efb03411904216ffb9ae58300c36cd"
+    },
+    {
+      "id": "explore",
+      "url": "https://university.taylors.edu.my/en/study/explore-all-programmes.html",
+      "sourceType": "official-page",
+      "role": "canonical",
+      "fields": [
+        "programmeDirectory",
+        "levelTags",
+        "faculty",
+        "intakeTags"
+      ],
+      "retrievedAt": "2026-06-20T15:54:12+00:00",
+      "academicSession": "2026",
+      "status": "cached",
+      "localPath": "sources/raw/explore-all-programmes.html",
+      "sha256": "08864bc124778e0016ae3f6855c16ea7ce63313d5b798835a1b6ccacf27ff08f"
+    },
+    {
+      "id": "fees",
+      "url": "https://university.taylors.edu.my/en/study/scholarships-and-financial-aid/fees-schedules.html",
+      "sourceType": "official-page",
+      "role": "field-authority",
+      "fields": [
+        "feeScheduleLinks",
+        "tuition"
+      ],
+      "retrievedAt": "2026-06-20T15:54:12+00:00",
+      "academicSession": "2026",
+      "status": "cached",
+      "localPath": "sources/raw/fees-schedules.html",
+      "sha256": "cd47aadc3b8a6a437fc8daa4694a87cb5889765c9905d257c1cf10be5540fc80"
+    },
+    {
+      "id": "undergraduate-admission",
+      "url": "https://university.taylors.edu.my/en/study/how-to-apply/undergraduate-admission.html",
+      "sourceType": "official-page",
+      "role": "field-authority",
+      "fields": [
+        "undergraduateApplication",
+        "documents",
+        "internationalAdmission"
+      ],
+      "retrievedAt": "2026-06-20T15:54:12+00:00",
+      "academicSession": "2026",
+      "status": "cached",
+      "localPath": "sources/raw/undergraduate-admission.html",
+      "sha256": "8207fb3e35f3d50369dd020752eaf6bfc4d4aa9d6af9834771b90dcf595646b3"
+    },
+    {
+      "id": "postgraduate-admission",
+      "url": "https://university.taylors.edu.my/en/study/how-to-apply/postgraduate-admission.html",
+      "sourceType": "official-page",
+      "role": "field-authority",
+      "fields": [
+        "postgraduateApplication",
+        "documents",
+        "researchDocuments"
+      ],
+      "retrievedAt": "2026-06-20T15:54:12+00:00",
+      "academicSession": "2026",
+      "status": "cached",
+      "localPath": "sources/raw/postgraduate-admission.html",
+      "sha256": "3944571de66a55019f043521645deeffccac0279999c2e8d96ab73949db1b981"
+    }
+  ],
+  "artifacts": [
+    {
+      "role": "manifest",
+      "path": "00_run_contract.json",
+      "sha256": "ec837a5148913b8eadb6c03ad2c58daf4f34d4043e9f3e3d0932561ca4f0547b",
+      "description": "Run contract"
+    },
+    {
+      "role": "instruction-execution-ledger",
+      "path": "01_instruction_execution_ledger.json",
+      "sha256": "47872278de3eccefca543dba286f17cf49e4f9d00c2f5bddf2d3c0c4933d745f",
+      "description": "Instruction ledger"
+    },
+    {
+      "role": "official-row-disposal",
+      "path": "04_official_row_disposal.json",
+      "sha256": "68762bdbeb5ab7f0d958250a83eaccb2aabcc3d89f47a5ad3802d51f6fc03114",
+      "description": "Official row disposal"
+    },
+    {
+      "role": "page-option-inventory",
+      "path": "06_page_option_inventory.json",
+      "sha256": "06470a5139292e71a43f58a1045ea2bd27eef5bc5c95ecd4ae10b31f27f9e4de",
+      "description": "Programme page option inventory"
+    },
+    {
+      "role": "field-coverage-matrix",
+      "path": "07_field_coverage_matrix.json",
+      "sha256": "72fae976b84285c984ea9f7ba0cd1bd606c7c51a618217cd146ba0afecbbef49",
+      "description": "Field coverage matrix"
+    },
+    {
+      "role": "candidate",
+      "path": "08_candidate_dataset.json",
+      "sha256": "570d8a300938bac2fdd64e6af24abf20a732fa0d7b39944b9fce837a7e4b8b99",
+      "description": "Candidate dataset"
+    },
+    {
+      "role": "source-trace",
+      "path": "09_source_to_candidate_trace.json",
+      "sha256": "c9cc5fe12f9b963dd035b33ddd8dc7fff444a6b1aef41265669b220ff12ade20",
+      "description": "Source-to-candidate trace"
+    },
+    {
+      "role": "display-parity-report",
+      "path": "10_display_parity_report.json",
+      "sha256": "89d2193ddf69eaaf9bbcbbf52ea6171d9010a3d778ac6a0643ea617942e71353",
+      "description": "Display parity report"
+    },
+    {
+      "role": "audit",
+      "path": "11_exception_queue.json",
+      "sha256": "a5ca4073c4ac7ea44c9d6036b3d815c2fcc215b695a98e46f977ef71d85ed4f9",
+      "description": "Exception queue"
+    },
+    {
+      "role": "report",
+      "path": "12_operator_review_report.md",
+      "sha256": "94fce39597455df54acccecf77babd10f57f1501c7b904e801a2d036bcab3f7e",
+      "description": "Operator review report"
+    },
+    {
+      "role": "runtime-continuity-check",
+      "path": "13_runtime_continuity_check.json",
+      "sha256": "4537d747011738418127bec31ce928b2546720ca68b3557fb7cc844978e7fc54",
+      "description": "Runtime continuity check"
+    },
+    {
+      "role": "deep-source-field-audit",
+      "path": "14_deep_source_field_audit.json",
+      "sha256": "8522814703bed02758c5329ae69d0586a15b3934218dcf09576cd193a4993b3b",
+      "description": "Deep-source field audit"
+    },
+    {
+      "role": "public-display-hygiene-audit",
+      "path": "15_public_display_hygiene_audit.json",
+      "sha256": "e5bc1a8bf93b5eadfbff22e6ad6bc3b698a6c8185b8c21abb3c1f1277e2e3337",
+      "description": "Public display hygiene audit"
+    },
+    {
+      "role": "report",
+      "path": "18_deep_calibration_report.md",
+      "sha256": "cdf5a4a166c4200bf5d4dd70020a674df9c54ac89582327b9a15b62ee6807939",
+      "description": "18_deep_calibration_report.md"
+    },
+    {
+      "role": "audit",
+      "path": "17_deep_calibration_audit.json",
+      "sha256": "d9e94906566ad0668d6e3a4580d24dce05de78c9dab72b4049c8815fa061da87",
+      "description": "17_deep_calibration_audit.json"
+    }
+  ],
+  "exceptions": {
+    "blocking": [],
+    "review": [
+      {
+        "code": "TSU-CALIBRATION-LOCALIZATION",
+        "scope": "display",
+        "affectedRecords": 89,
+        "issue": "Official facts are calibrated, but Chinese student-facing localization is still not ready for public display.",
+        "nextAction": "Translate and review programme names, faculty names, overview, course setting, and career directions before publication."
+      },
+      {
+        "code": "TSU-CALIBRATION-IELTS-LIST",
+        "scope": "program-list",
+        "affectedRecords": 12,
+        "issue": "Some records publish official English routes without a direct IELTS scalar summary.",
+        "nextAction": "Decide list display policy for official MUET/equivalent-only records without inventing IELTS."
+      }
+    ]
+  },
+  "verification": {
+    "instructionExecution": "passed",
+    "runtimeContinuity": "passed",
+    "candidateIntegrity": "passed",
+    "deepSourceFieldExploration": "passed",
+    "publicDisplayHygiene": "passed",
+    "sourceHashes": "passed",
+    "fieldCoverage": "passed",
+    "manifestAudit": "passed",
+    "directoryParse": "passed",
+    "identityReconciliation": "passed",
+    "feeReconciliation": "passed",
+    "deepCalibration": "passed"
+  },
+  "decision": "review-required"
+}

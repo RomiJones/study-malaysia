@@ -1,0 +1,1351 @@
+{
+  "createdAt": "2026-06-17T05:56:28.595Z",
+  "feeRows": 44,
+  "missingRows": 28,
+  "audit": [
+    {
+      "id": 6497,
+      "name": "Doctor of Philosophy in Information Technology (Online Mode)",
+      "level": "phd",
+      "url": "https://university.segi.edu.my/course/doctor-of-philosophy-information-technology-by-research-odl/",
+      "candidates": [
+        {
+          "code": "SEGI-PHD-IT",
+          "name": "Doctor of Philosophy in Information Technology",
+          "totalMYR": 77619.9,
+          "score": 1,
+          "normProgram": "doctor philosophy in information technology",
+          "normFee": "doctor philosophy in information technology"
+        },
+        {
+          "code": "SEGI-PHD-MGMT",
+          "name": "Doctor of Philosophy in Management",
+          "totalMYR": 77619.9,
+          "score": 0.6,
+          "normProgram": "doctor philosophy in information technology",
+          "normFee": "doctor philosophy in management"
+        },
+        {
+          "code": "SEGI-PHD-EDU",
+          "name": "Doctor of Philosophy in Education",
+          "totalMYR": 86301.3,
+          "score": 0.6,
+          "normProgram": "doctor philosophy in information technology",
+          "normFee": "doctor philosophy in education"
+        },
+        {
+          "code": "SEGI-PHD-ENG",
+          "name": "Doctor of Philosophy in Engineering",
+          "totalMYR": 86301.3,
+          "score": 0.6,
+          "normProgram": "doctor philosophy in information technology",
+          "normFee": "doctor philosophy in engineering"
+        },
+        {
+          "code": "SEGI-DRBA",
+          "name": "Doctor of Business Administration",
+          "totalMYR": 90085.5,
+          "score": 0.2,
+          "normProgram": "doctor philosophy in information technology",
+          "normFee": "doctor of business administration"
+        }
+      ]
+    },
+    {
+      "id": 6501,
+      "name": "Doctor of Philosophy (Education) – ODL (Online Mode)",
+      "level": "phd",
+      "url": "https://university.segi.edu.my/course/doctor-of-philosophy-education-by-research-odl/",
+      "candidates": [
+        {
+          "code": "SEGI-PHD-EDU",
+          "name": "Doctor of Philosophy in Education",
+          "totalMYR": 86301.3,
+          "score": 0.75,
+          "normProgram": "doctor philosophy education",
+          "normFee": "doctor philosophy in education"
+        },
+        {
+          "code": "SEGI-PHD-MGMT",
+          "name": "Doctor of Philosophy in Management",
+          "totalMYR": 77619.9,
+          "score": 0.5,
+          "normProgram": "doctor philosophy education",
+          "normFee": "doctor philosophy in management"
+        },
+        {
+          "code": "SEGI-PHD-ENG",
+          "name": "Doctor of Philosophy in Engineering",
+          "totalMYR": 86301.3,
+          "score": 0.5,
+          "normProgram": "doctor philosophy education",
+          "normFee": "doctor philosophy in engineering"
+        },
+        {
+          "code": "SEGI-PHD-IT",
+          "name": "Doctor of Philosophy in Information Technology",
+          "totalMYR": 77619.9,
+          "score": 0.4,
+          "normProgram": "doctor philosophy education",
+          "normFee": "doctor philosophy in information technology"
+        },
+        {
+          "code": "SEGI-DRBA",
+          "name": "Doctor of Business Administration",
+          "totalMYR": 90085.5,
+          "score": 0.25,
+          "normProgram": "doctor philosophy education",
+          "normFee": "doctor of business administration"
+        }
+      ]
+    },
+    {
+      "id": 6503,
+      "name": "PhD (Management) (Online Mode)",
+      "level": "phd",
+      "url": "https://university.segi.edu.my/course/doctor-of-philosophy-management-by-research-odl/",
+      "candidates": [
+        {
+          "code": "SEGI-PHD-MGMT",
+          "name": "Doctor of Philosophy in Management",
+          "totalMYR": 77619.9,
+          "score": 0.75,
+          "normProgram": "doctor philosophy management",
+          "normFee": "doctor philosophy in management"
+        },
+        {
+          "code": "SEGI-PHD-EDU",
+          "name": "Doctor of Philosophy in Education",
+          "totalMYR": 86301.3,
+          "score": 0.5,
+          "normProgram": "doctor philosophy management",
+          "normFee": "doctor philosophy in education"
+        },
+        {
+          "code": "SEGI-PHD-ENG",
+          "name": "Doctor of Philosophy in Engineering",
+          "totalMYR": 86301.3,
+          "score": 0.5,
+          "normProgram": "doctor philosophy management",
+          "normFee": "doctor philosophy in engineering"
+        },
+        {
+          "code": "SEGI-PHD-IT",
+          "name": "Doctor of Philosophy in Information Technology",
+          "totalMYR": 77619.9,
+          "score": 0.4,
+          "normProgram": "doctor philosophy management",
+          "normFee": "doctor philosophy in information technology"
+        },
+        {
+          "code": "SEGI-DRBA",
+          "name": "Doctor of Business Administration",
+          "totalMYR": 90085.5,
+          "score": 0.25,
+          "normProgram": "doctor philosophy management",
+          "normFee": "doctor of business administration"
+        }
+      ]
+    },
+    {
+      "id": 6506,
+      "name": "Master of Science in Environmental Sustainability with Artificial Intelligence",
+      "level": "master",
+      "url": "https://university.segi.edu.my/course/master-of-science-in-environmental-sustainability-with-artificial-intelligence/",
+      "candidates": [
+        {
+          "code": "SEGI-MSSP",
+          "name": "Master of Science in Psychology",
+          "totalMYR": 55411,
+          "score": 0.6,
+          "normProgram": "master science in environmental sustainability",
+          "normFee": "master science in psychology"
+        },
+        {
+          "code": "SEGI-MSC-MGMT",
+          "name": "Master of Science in Management (By Research)",
+          "totalMYR": 60534.4,
+          "score": 0.6,
+          "normProgram": "master science in environmental sustainability",
+          "normFee": "master science in management"
+        },
+        {
+          "code": "SEGI-MSC-VS",
+          "name": "Master of Science in Vision Science",
+          "totalMYR": 63258.6,
+          "score": 0.6,
+          "normProgram": "master science in environmental sustainability",
+          "normFee": "master science in vision science"
+        },
+        {
+          "code": "SEGI-MSPS",
+          "name": "Master of Science in Pharmaceutical Sciences",
+          "totalMYR": 57025.8,
+          "score": 0.6,
+          "normProgram": "master science in environmental sustainability",
+          "normFee": "master science in pharmaceutical sciences"
+        },
+        {
+          "code": "SEGI-MIT-CW",
+          "name": "Master of Information Technology (Coursework)",
+          "totalMYR": 52999.5,
+          "score": 0.4,
+          "normProgram": "master science in environmental sustainability",
+          "normFee": "master science information technology"
+        }
+      ]
+    },
+    {
+      "id": 6508,
+      "name": "Master of Science in Information Technology (Online Mode)",
+      "level": "master",
+      "url": "https://university.segi.edu.my/course/msc-information-technology-by-research-odl/",
+      "candidates": [
+        {
+          "code": "SEGI-MIT-CW",
+          "name": "Master of Information Technology (Coursework)",
+          "totalMYR": 52999.5,
+          "score": 0.8,
+          "normProgram": "master science in information technology",
+          "normFee": "master science information technology"
+        },
+        {
+          "code": "SEGI-MIT-RES",
+          "name": "Master of Information Technology (By Research)",
+          "totalMYR": 59474.4,
+          "score": 0.8,
+          "normProgram": "master science in information technology",
+          "normFee": "master science information technology"
+        },
+        {
+          "code": "SEGI-MSSP",
+          "name": "Master of Science in Psychology",
+          "totalMYR": 55411,
+          "score": 0.6,
+          "normProgram": "master science in information technology",
+          "normFee": "master science in psychology"
+        },
+        {
+          "code": "SEGI-MSC-MGMT",
+          "name": "Master of Science in Management (By Research)",
+          "totalMYR": 60534.4,
+          "score": 0.6,
+          "normProgram": "master science in information technology",
+          "normFee": "master science in management"
+        },
+        {
+          "code": "SEGI-MSC-VS",
+          "name": "Master of Science in Vision Science",
+          "totalMYR": 63258.6,
+          "score": 0.6,
+          "normProgram": "master science in information technology",
+          "normFee": "master science in vision science"
+        }
+      ]
+    },
+    {
+      "id": 6516,
+      "name": "Master of Education by Research – ODL (Online Mode)",
+      "level": "master",
+      "url": "https://university.segi.edu.my/course/master-of-education-by-research-odl/",
+      "candidates": [
+        {
+          "code": "SEGI-MED-CW",
+          "name": "Master of Education (Coursework)",
+          "totalMYR": 52013.7,
+          "score": 1,
+          "normProgram": "master of education",
+          "normFee": "master of education"
+        },
+        {
+          "code": "SEGI-MED-RES",
+          "name": "Master of Education (By Research)",
+          "totalMYR": 56135.4,
+          "score": 1,
+          "normProgram": "master of education",
+          "normFee": "master of education"
+        },
+        {
+          "code": "SEGI-MENG-RES",
+          "name": "Master of Engineering (By Research)",
+          "totalMYR": 65929.8,
+          "score": 0.667,
+          "normProgram": "master of education",
+          "normFee": "master of engineering"
+        },
+        {
+          "code": "SEGI-MMED",
+          "name": "Master in Medicine",
+          "totalMYR": 57025.8,
+          "score": 0.667,
+          "normProgram": "master of education",
+          "normFee": "master of medicine"
+        },
+        {
+          "code": "SEGI-MBA",
+          "name": "Master of Business Administration",
+          "totalMYR": 59916,
+          "score": 0.5,
+          "normProgram": "master of education",
+          "normFee": "master of business administration"
+        }
+      ]
+    },
+    {
+      "id": 6517,
+      "name": "Master of Education – ODL (Online Mode)",
+      "level": "master",
+      "url": "https://university.segi.edu.my/course/master-of-education-by-coursework-odl/",
+      "candidates": [
+        {
+          "code": "SEGI-MED-CW",
+          "name": "Master of Education (Coursework)",
+          "totalMYR": 52013.7,
+          "score": 1,
+          "normProgram": "master of education",
+          "normFee": "master of education"
+        },
+        {
+          "code": "SEGI-MED-RES",
+          "name": "Master of Education (By Research)",
+          "totalMYR": 56135.4,
+          "score": 1,
+          "normProgram": "master of education",
+          "normFee": "master of education"
+        },
+        {
+          "code": "SEGI-MENG-RES",
+          "name": "Master of Engineering (By Research)",
+          "totalMYR": 65929.8,
+          "score": 0.667,
+          "normProgram": "master of education",
+          "normFee": "master of engineering"
+        },
+        {
+          "code": "SEGI-MMED",
+          "name": "Master in Medicine",
+          "totalMYR": 57025.8,
+          "score": 0.667,
+          "normProgram": "master of education",
+          "normFee": "master of medicine"
+        },
+        {
+          "code": "SEGI-MBA",
+          "name": "Master of Business Administration",
+          "totalMYR": 59916,
+          "score": 0.5,
+          "normProgram": "master of education",
+          "normFee": "master of business administration"
+        }
+      ]
+    },
+    {
+      "id": 6518,
+      "name": "Master of Business Administration (Marketing)",
+      "level": "master",
+      "url": "https://university.segi.edu.my/course/master-of-business-administration-marketing/",
+      "candidates": [
+        {
+          "code": "SEGI-MBA",
+          "name": "Master of Business Administration",
+          "totalMYR": 59916,
+          "score": 0.8,
+          "normProgram": "master of business administration marketing",
+          "normFee": "master of business administration"
+        },
+        {
+          "code": "SEGI-MBA-5PLUS1",
+          "name": "Master of Business Administration (5+1)",
+          "totalMYR": 49676.4,
+          "score": 0.8,
+          "normProgram": "master of business administration marketing",
+          "normFee": "master of business administration"
+        },
+        {
+          "code": "SEGI-MED-CW",
+          "name": "Master of Education (Coursework)",
+          "totalMYR": 52013.7,
+          "score": 0.4,
+          "normProgram": "master of business administration marketing",
+          "normFee": "master of education"
+        },
+        {
+          "code": "SEGI-MFP",
+          "name": "Master of Financial Planning",
+          "totalMYR": 59804.7,
+          "score": 0.4,
+          "normProgram": "master of business administration marketing",
+          "normFee": "master of financial planning"
+        },
+        {
+          "code": "SEGI-MED-RES",
+          "name": "Master of Education (By Research)",
+          "totalMYR": 56135.4,
+          "score": 0.4,
+          "normProgram": "master of business administration marketing",
+          "normFee": "master of education"
+        }
+      ]
+    },
+    {
+      "id": 6519,
+      "name": "Master of Business Administration (Human Resource Management)",
+      "level": "master",
+      "url": "https://university.segi.edu.my/course/master-of-business-administration-human-resource-management/",
+      "candidates": [
+        {
+          "code": "SEGI-MBA",
+          "name": "Master of Business Administration",
+          "totalMYR": 59916,
+          "score": 0.571,
+          "normProgram": "master of business administration human resource management",
+          "normFee": "master of business administration"
+        },
+        {
+          "code": "SEGI-MBA-5PLUS1",
+          "name": "Master of Business Administration (5+1)",
+          "totalMYR": 49676.4,
+          "score": 0.571,
+          "normProgram": "master of business administration human resource management",
+          "normFee": "master of business administration"
+        },
+        {
+          "code": "SEGI-MCDM",
+          "name": "Master of Arts in Creative Design Management",
+          "totalMYR": 55411,
+          "score": 0.429,
+          "normProgram": "master of business administration human resource management",
+          "normFee": "master of arts in creative design management"
+        },
+        {
+          "code": "SEGI-MED-CW",
+          "name": "Master of Education (Coursework)",
+          "totalMYR": 52013.7,
+          "score": 0.286,
+          "normProgram": "master of business administration human resource management",
+          "normFee": "master of education"
+        },
+        {
+          "code": "SEGI-MFP",
+          "name": "Master of Financial Planning",
+          "totalMYR": 59804.7,
+          "score": 0.286,
+          "normProgram": "master of business administration human resource management",
+          "normFee": "master of financial planning"
+        }
+      ]
+    },
+    {
+      "id": 6520,
+      "name": "Master of Business Administration (Global Business)",
+      "level": "master",
+      "url": "https://university.segi.edu.my/course/master-of-business-administration-global-business-2/",
+      "candidates": [
+        {
+          "code": "SEGI-MBA",
+          "name": "Master of Business Administration",
+          "totalMYR": 59916,
+          "score": 0.8,
+          "normProgram": "master of business administration global business",
+          "normFee": "master of business administration"
+        },
+        {
+          "code": "SEGI-MBA-5PLUS1",
+          "name": "Master of Business Administration (5+1)",
+          "totalMYR": 49676.4,
+          "score": 0.8,
+          "normProgram": "master of business administration global business",
+          "normFee": "master of business administration"
+        },
+        {
+          "code": "SEGI-MED-CW",
+          "name": "Master of Education (Coursework)",
+          "totalMYR": 52013.7,
+          "score": 0.4,
+          "normProgram": "master of business administration global business",
+          "normFee": "master of education"
+        },
+        {
+          "code": "SEGI-MFP",
+          "name": "Master of Financial Planning",
+          "totalMYR": 59804.7,
+          "score": 0.4,
+          "normProgram": "master of business administration global business",
+          "normFee": "master of financial planning"
+        },
+        {
+          "code": "SEGI-MED-RES",
+          "name": "Master of Education (By Research)",
+          "totalMYR": 56135.4,
+          "score": 0.4,
+          "normProgram": "master of business administration global business",
+          "normFee": "master of education"
+        }
+      ]
+    },
+    {
+      "id": 6521,
+      "name": "Master of Business Administration (Global Business) – ODL (Online Mode)",
+      "level": "master",
+      "url": "https://university.segi.edu.my/course/master-of-business-administration-global-business-odl/",
+      "candidates": [
+        {
+          "code": "SEGI-MBA",
+          "name": "Master of Business Administration",
+          "totalMYR": 59916,
+          "score": 0.8,
+          "normProgram": "master of business administration global business",
+          "normFee": "master of business administration"
+        },
+        {
+          "code": "SEGI-MBA-5PLUS1",
+          "name": "Master of Business Administration (5+1)",
+          "totalMYR": 49676.4,
+          "score": 0.8,
+          "normProgram": "master of business administration global business",
+          "normFee": "master of business administration"
+        },
+        {
+          "code": "SEGI-MED-CW",
+          "name": "Master of Education (Coursework)",
+          "totalMYR": 52013.7,
+          "score": 0.4,
+          "normProgram": "master of business administration global business",
+          "normFee": "master of education"
+        },
+        {
+          "code": "SEGI-MFP",
+          "name": "Master of Financial Planning",
+          "totalMYR": 59804.7,
+          "score": 0.4,
+          "normProgram": "master of business administration global business",
+          "normFee": "master of financial planning"
+        },
+        {
+          "code": "SEGI-MED-RES",
+          "name": "Master of Education (By Research)",
+          "totalMYR": 56135.4,
+          "score": 0.4,
+          "normProgram": "master of business administration global business",
+          "normFee": "master of education"
+        }
+      ]
+    },
+    {
+      "id": 6522,
+      "name": "Master of Business Administration (General Management) – ODL (Online Mode)",
+      "level": "master",
+      "url": "https://university.segi.edu.my/course/master-of-business-administration-general-management-odl/",
+      "candidates": [
+        {
+          "code": "SEGI-MBA",
+          "name": "Master of Business Administration",
+          "totalMYR": 59916,
+          "score": 0.667,
+          "normProgram": "master of business administration general management",
+          "normFee": "master of business administration"
+        },
+        {
+          "code": "SEGI-MBA-5PLUS1",
+          "name": "Master of Business Administration (5+1)",
+          "totalMYR": 49676.4,
+          "score": 0.667,
+          "normProgram": "master of business administration general management",
+          "normFee": "master of business administration"
+        },
+        {
+          "code": "SEGI-MCDM",
+          "name": "Master of Arts in Creative Design Management",
+          "totalMYR": 55411,
+          "score": 0.429,
+          "normProgram": "master of business administration general management",
+          "normFee": "master of arts in creative design management"
+        },
+        {
+          "code": "SEGI-MED-CW",
+          "name": "Master of Education (Coursework)",
+          "totalMYR": 52013.7,
+          "score": 0.333,
+          "normProgram": "master of business administration general management",
+          "normFee": "master of education"
+        },
+        {
+          "code": "SEGI-MFP",
+          "name": "Master of Financial Planning",
+          "totalMYR": 59804.7,
+          "score": 0.333,
+          "normProgram": "master of business administration general management",
+          "normFee": "master of financial planning"
+        }
+      ]
+    },
+    {
+      "id": 6524,
+      "name": "Master of Business Administration (General Management)",
+      "level": "master",
+      "url": "https://university.segi.edu.my/course/master-of-business-administration-general-management-2/",
+      "candidates": [
+        {
+          "code": "SEGI-MBA",
+          "name": "Master of Business Administration",
+          "totalMYR": 59916,
+          "score": 0.667,
+          "normProgram": "master of business administration general management",
+          "normFee": "master of business administration"
+        },
+        {
+          "code": "SEGI-MBA-5PLUS1",
+          "name": "Master of Business Administration (5+1)",
+          "totalMYR": 49676.4,
+          "score": 0.667,
+          "normProgram": "master of business administration general management",
+          "normFee": "master of business administration"
+        },
+        {
+          "code": "SEGI-MCDM",
+          "name": "Master of Arts in Creative Design Management",
+          "totalMYR": 55411,
+          "score": 0.429,
+          "normProgram": "master of business administration general management",
+          "normFee": "master of arts in creative design management"
+        },
+        {
+          "code": "SEGI-MED-CW",
+          "name": "Master of Education (Coursework)",
+          "totalMYR": 52013.7,
+          "score": 0.333,
+          "normProgram": "master of business administration general management",
+          "normFee": "master of education"
+        },
+        {
+          "code": "SEGI-MFP",
+          "name": "Master of Financial Planning",
+          "totalMYR": 59804.7,
+          "score": 0.333,
+          "normProgram": "master of business administration general management",
+          "normFee": "master of financial planning"
+        }
+      ]
+    },
+    {
+      "id": 6525,
+      "name": "Master of Business Administration (Finance)",
+      "level": "master",
+      "url": "https://university.segi.edu.my/course/mba-finance/",
+      "candidates": [
+        {
+          "code": "SEGI-MBA",
+          "name": "Master of Business Administration",
+          "totalMYR": 59916,
+          "score": 0.8,
+          "normProgram": "master of business administration finance",
+          "normFee": "master of business administration"
+        },
+        {
+          "code": "SEGI-MBA-5PLUS1",
+          "name": "Master of Business Administration (5+1)",
+          "totalMYR": 49676.4,
+          "score": 0.8,
+          "normProgram": "master of business administration finance",
+          "normFee": "master of business administration"
+        },
+        {
+          "code": "SEGI-MED-CW",
+          "name": "Master of Education (Coursework)",
+          "totalMYR": 52013.7,
+          "score": 0.4,
+          "normProgram": "master of business administration finance",
+          "normFee": "master of education"
+        },
+        {
+          "code": "SEGI-MFP",
+          "name": "Master of Financial Planning",
+          "totalMYR": 59804.7,
+          "score": 0.4,
+          "normProgram": "master of business administration finance",
+          "normFee": "master of financial planning"
+        },
+        {
+          "code": "SEGI-MED-RES",
+          "name": "Master of Education (By Research)",
+          "totalMYR": 56135.4,
+          "score": 0.4,
+          "normProgram": "master of business administration finance",
+          "normFee": "master of education"
+        }
+      ]
+    },
+    {
+      "id": 6528,
+      "name": "Master of Accountancy – ODL (Online Mode)",
+      "level": "master",
+      "url": "https://university.segi.edu.my/course/master-of-accountancy-odl/",
+      "candidates": [
+        {
+          "code": "SEGI-MED-CW",
+          "name": "Master of Education (Coursework)",
+          "totalMYR": 52013.7,
+          "score": 0.667,
+          "normProgram": "master of accounting",
+          "normFee": "master of education"
+        },
+        {
+          "code": "SEGI-MA",
+          "name": "Master of Accounting",
+          "totalMYR": 63032.4,
+          "score": 0.667,
+          "normProgram": "master of accounting",
+          "normFee": "master accounting"
+        },
+        {
+          "code": "SEGI-MED-RES",
+          "name": "Master of Education (By Research)",
+          "totalMYR": 56135.4,
+          "score": 0.667,
+          "normProgram": "master of accounting",
+          "normFee": "master of education"
+        },
+        {
+          "code": "SEGI-MENG-RES",
+          "name": "Master of Engineering (By Research)",
+          "totalMYR": 65929.8,
+          "score": 0.667,
+          "normProgram": "master of accounting",
+          "normFee": "master of engineering"
+        },
+        {
+          "code": "SEGI-MMED",
+          "name": "Master in Medicine",
+          "totalMYR": 57025.8,
+          "score": 0.667,
+          "normProgram": "master of accounting",
+          "normFee": "master of medicine"
+        }
+      ]
+    },
+    {
+      "id": 6534,
+      "name": "Bachelor of Psychology (Honours) – ODL (Online Mode)",
+      "level": "bachelor",
+      "url": "https://university.segi.edu.my/course/bachelor-of-psychology-honours-odl/",
+      "candidates": [
+        {
+          "code": "SEGI-BPSY",
+          "name": "Bachelor of Psychology (Hons)",
+          "totalMYR": 104713.5,
+          "score": 1,
+          "normProgram": "bachelor of psychology honours",
+          "normFee": "bachelor of psychology honours"
+        },
+        {
+          "code": "SEGI-BED",
+          "name": "Bachelor of Education (Hons)",
+          "totalMYR": 98676.8,
+          "score": 0.75,
+          "normProgram": "bachelor of psychology honours",
+          "normFee": "bachelor of education honours"
+        },
+        {
+          "code": "SEGI-BMUSIC",
+          "name": "Bachelor of Music (Hons)",
+          "totalMYR": 95253,
+          "score": 0.75,
+          "normProgram": "bachelor of psychology honours",
+          "normFee": "bachelor of music honours"
+        },
+        {
+          "code": "SEGI-BOPTO",
+          "name": "Bachelor of Optometry (Hons)",
+          "totalMYR": 141324.2,
+          "score": 0.75,
+          "normProgram": "bachelor of psychology honours",
+          "normFee": "bachelor of optometry honours"
+        },
+        {
+          "code": "SEGI-BPHYSIO",
+          "name": "Bachelor of Physiotherapy (Hons)",
+          "totalMYR": 131667.6,
+          "score": 0.75,
+          "normProgram": "bachelor of psychology honours",
+          "normFee": "bachelor of physiotherapy honours"
+        }
+      ]
+    },
+    {
+      "id": 6537,
+      "name": "Bachelor of Science (Hons) Optometry",
+      "level": "bachelor",
+      "url": "https://university.segi.edu.my/course/bachelor-of-science-hons-optometry/",
+      "candidates": [
+        {
+          "code": "SEGI-BCS",
+          "name": "Bachelor of Computer Science (Hons)",
+          "totalMYR": 102376.2,
+          "score": 0.8,
+          "normProgram": "bachelor of science honours optometry",
+          "normFee": "bachelor of computer science honours"
+        },
+        {
+          "code": "SEGI-BMMS",
+          "name": "Bachelor of Biomedical Science (Hons)",
+          "totalMYR": 131833.6,
+          "score": 0.8,
+          "normProgram": "bachelor of science honours optometry",
+          "normFee": "bachelor of biomedical science honours"
+        },
+        {
+          "code": "SEGI-BOPTO",
+          "name": "Bachelor of Optometry (Hons)",
+          "totalMYR": 141324.2,
+          "score": 0.8,
+          "normProgram": "bachelor of science honours optometry",
+          "normFee": "bachelor of optometry honours"
+        },
+        {
+          "code": "SEGI-BSCAR",
+          "name": "Bachelor of Science (Hons) in Architecture",
+          "totalMYR": 115287,
+          "score": 0.667,
+          "normProgram": "bachelor of science honours optometry",
+          "normFee": "bachelor of science honours in architecture"
+        },
+        {
+          "code": "SEGI-BBM",
+          "name": "Bachelor of Business Management (Hons)",
+          "totalMYR": 94558.7,
+          "score": 0.6,
+          "normProgram": "bachelor of science honours optometry",
+          "normFee": "bachelor of business management honours"
+        }
+      ]
+    },
+    {
+      "id": 6540,
+      "name": "Doctor of Philosophy in Medical Science",
+      "level": "phd",
+      "url": "https://university.segi.edu.my/course/doctor-of-philosophy-in-medical-science/",
+      "candidates": [
+        {
+          "code": "SEGI-PHD-MGMT",
+          "name": "Doctor of Philosophy in Management",
+          "totalMYR": 77619.9,
+          "score": 0.6,
+          "normProgram": "doctor philosophy in medical science",
+          "normFee": "doctor philosophy in management"
+        },
+        {
+          "code": "SEGI-PHD-EDU",
+          "name": "Doctor of Philosophy in Education",
+          "totalMYR": 86301.3,
+          "score": 0.6,
+          "normProgram": "doctor philosophy in medical science",
+          "normFee": "doctor philosophy in education"
+        },
+        {
+          "code": "SEGI-PHD-IT",
+          "name": "Doctor of Philosophy in Information Technology",
+          "totalMYR": 77619.9,
+          "score": 0.6,
+          "normProgram": "doctor philosophy in medical science",
+          "normFee": "doctor philosophy in information technology"
+        },
+        {
+          "code": "SEGI-PHD-ENG",
+          "name": "Doctor of Philosophy in Engineering",
+          "totalMYR": 86301.3,
+          "score": 0.6,
+          "normProgram": "doctor philosophy in medical science",
+          "normFee": "doctor philosophy in engineering"
+        },
+        {
+          "code": "SEGI-DRBA",
+          "name": "Doctor of Business Administration",
+          "totalMYR": 90085.5,
+          "score": 0.2,
+          "normProgram": "doctor philosophy in medical science",
+          "normFee": "doctor of business administration"
+        }
+      ]
+    },
+    {
+      "id": 6544,
+      "name": "Bachelor of Mass Communication (Hons) – ODL (Online Mode)",
+      "level": "bachelor",
+      "url": "https://university.segi.edu.my/course/bachelor-of-mass-communication-hons-odl/",
+      "candidates": [
+        {
+          "code": "SEGI-BMC",
+          "name": "Bachelor of Mass Communication (Hons)",
+          "totalMYR": 97648.6,
+          "score": 1,
+          "normProgram": "bachelor of mass communication honours",
+          "normFee": "bachelor of mass communication honours"
+        },
+        {
+          "code": "SEGI-BBM",
+          "name": "Bachelor of Business Management (Hons)",
+          "totalMYR": 94558.7,
+          "score": 0.6,
+          "normProgram": "bachelor of mass communication honours",
+          "normFee": "bachelor of business management honours"
+        },
+        {
+          "code": "SEGI-BIB",
+          "name": "Bachelor of International Business (Hons)",
+          "totalMYR": 94558.7,
+          "score": 0.6,
+          "normProgram": "bachelor of mass communication honours",
+          "normFee": "bachelor of international business honours"
+        },
+        {
+          "code": "SEGI-BED",
+          "name": "Bachelor of Education (Hons)",
+          "totalMYR": 98676.8,
+          "score": 0.6,
+          "normProgram": "bachelor of mass communication honours",
+          "normFee": "bachelor of education honours"
+        },
+        {
+          "code": "SEGI-BMUSIC",
+          "name": "Bachelor of Music (Hons)",
+          "totalMYR": 95253,
+          "score": 0.6,
+          "normProgram": "bachelor of mass communication honours",
+          "normFee": "bachelor of music honours"
+        }
+      ]
+    },
+    {
+      "id": 6546,
+      "name": "Bachelor of Information Technology (Hons) – ODL (Online Mode)",
+      "level": "bachelor",
+      "url": "https://university.segi.edu.my/course/bachelor-of-information-technology-hons-odl/",
+      "candidates": [
+        {
+          "code": "SEGI-BIT",
+          "name": "Bachelor of Information Technology (Hons)",
+          "totalMYR": 94558.7,
+          "score": 1,
+          "normProgram": "bachelor of information technology honours",
+          "normFee": "bachelor of information technology honours"
+        },
+        {
+          "code": "SEGI-BBM",
+          "name": "Bachelor of Business Management (Hons)",
+          "totalMYR": 94558.7,
+          "score": 0.6,
+          "normProgram": "bachelor of information technology honours",
+          "normFee": "bachelor of business management honours"
+        },
+        {
+          "code": "SEGI-BIB",
+          "name": "Bachelor of International Business (Hons)",
+          "totalMYR": 94558.7,
+          "score": 0.6,
+          "normProgram": "bachelor of information technology honours",
+          "normFee": "bachelor of international business honours"
+        },
+        {
+          "code": "SEGI-BED",
+          "name": "Bachelor of Education (Hons)",
+          "totalMYR": 98676.8,
+          "score": 0.6,
+          "normProgram": "bachelor of information technology honours",
+          "normFee": "bachelor of education honours"
+        },
+        {
+          "code": "SEGI-BMUSIC",
+          "name": "Bachelor of Music (Hons)",
+          "totalMYR": 95253,
+          "score": 0.6,
+          "normProgram": "bachelor of information technology honours",
+          "normFee": "bachelor of music honours"
+        }
+      ]
+    },
+    {
+      "id": 6548,
+      "name": "Bachelor of Hospitality Management (Honours) – ODL (Online Mode)",
+      "level": "bachelor",
+      "url": "https://university.segi.edu.my/course/bachelor-of-hospitality-management-honours-odl/",
+      "candidates": [
+        {
+          "code": "SEGI-BBM",
+          "name": "Bachelor of Business Management (Hons)",
+          "totalMYR": 94558.7,
+          "score": 0.8,
+          "normProgram": "bachelor of hospitality management honours",
+          "normFee": "bachelor of business management honours"
+        },
+        {
+          "code": "SEGI-BAHM",
+          "name": "Bachelor of Hospitality and Tourism Management (Hons)",
+          "totalMYR": 94558.7,
+          "score": 0.714,
+          "normProgram": "bachelor of hospitality management honours",
+          "normFee": "bachelor of hospitality and tourism management honours"
+        },
+        {
+          "code": "SEGI-BIB",
+          "name": "Bachelor of International Business (Hons)",
+          "totalMYR": 94558.7,
+          "score": 0.6,
+          "normProgram": "bachelor of hospitality management honours",
+          "normFee": "bachelor of international business honours"
+        },
+        {
+          "code": "SEGI-BED",
+          "name": "Bachelor of Education (Hons)",
+          "totalMYR": 98676.8,
+          "score": 0.6,
+          "normProgram": "bachelor of hospitality management honours",
+          "normFee": "bachelor of education honours"
+        },
+        {
+          "code": "SEGI-BMUSIC",
+          "name": "Bachelor of Music (Hons)",
+          "totalMYR": 95253,
+          "score": 0.6,
+          "normProgram": "bachelor of hospitality management honours",
+          "normFee": "bachelor of music honours"
+        }
+      ]
+    },
+    {
+      "id": 6552,
+      "name": "Bachelor of Education (Hons) – ODL (Online Mode)",
+      "level": "bachelor",
+      "url": "https://university.segi.edu.my/course/bachelor-of-education-hons-odl/",
+      "candidates": [
+        {
+          "code": "SEGI-BED",
+          "name": "Bachelor of Education (Hons)",
+          "totalMYR": 98676.8,
+          "score": 1,
+          "normProgram": "bachelor of education honours",
+          "normFee": "bachelor of education honours"
+        },
+        {
+          "code": "SEGI-BMUSIC",
+          "name": "Bachelor of Music (Hons)",
+          "totalMYR": 95253,
+          "score": 0.75,
+          "normProgram": "bachelor of education honours",
+          "normFee": "bachelor of music honours"
+        },
+        {
+          "code": "SEGI-BPSY",
+          "name": "Bachelor of Psychology (Hons)",
+          "totalMYR": 104713.5,
+          "score": 0.75,
+          "normProgram": "bachelor of education honours",
+          "normFee": "bachelor of psychology honours"
+        },
+        {
+          "code": "SEGI-BOPTO",
+          "name": "Bachelor of Optometry (Hons)",
+          "totalMYR": 141324.2,
+          "score": 0.75,
+          "normProgram": "bachelor of education honours",
+          "normFee": "bachelor of optometry honours"
+        },
+        {
+          "code": "SEGI-BPHYSIO",
+          "name": "Bachelor of Physiotherapy (Hons)",
+          "totalMYR": 131667.6,
+          "score": 0.75,
+          "normProgram": "bachelor of education honours",
+          "normFee": "bachelor of physiotherapy honours"
+        }
+      ]
+    },
+    {
+      "id": 6554,
+      "name": "Bachelor of Computer Science (Honours) – ODL (Online Mode)",
+      "level": "bachelor",
+      "url": "https://university.segi.edu.my/course/bachelor-of-computer-science-honours-odl/",
+      "candidates": [
+        {
+          "code": "SEGI-BCS",
+          "name": "Bachelor of Computer Science (Hons)",
+          "totalMYR": 102376.2,
+          "score": 1,
+          "normProgram": "bachelor of computer science honours",
+          "normFee": "bachelor of computer science honours"
+        },
+        {
+          "code": "SEGI-BMMS",
+          "name": "Bachelor of Biomedical Science (Hons)",
+          "totalMYR": 131833.6,
+          "score": 0.8,
+          "normProgram": "bachelor of computer science honours",
+          "normFee": "bachelor of biomedical science honours"
+        },
+        {
+          "code": "SEGI-BSCAR",
+          "name": "Bachelor of Science (Hons) in Architecture",
+          "totalMYR": 115287,
+          "score": 0.667,
+          "normProgram": "bachelor of computer science honours",
+          "normFee": "bachelor of science honours in architecture"
+        },
+        {
+          "code": "SEGI-BBM",
+          "name": "Bachelor of Business Management (Hons)",
+          "totalMYR": 94558.7,
+          "score": 0.6,
+          "normProgram": "bachelor of computer science honours",
+          "normFee": "bachelor of business management honours"
+        },
+        {
+          "code": "SEGI-BIB",
+          "name": "Bachelor of International Business (Hons)",
+          "totalMYR": 94558.7,
+          "score": 0.6,
+          "normProgram": "bachelor of computer science honours",
+          "normFee": "bachelor of international business honours"
+        }
+      ]
+    },
+    {
+      "id": 6559,
+      "name": "Bachelor of Business Analytics (Online Mode)",
+      "level": "bachelor",
+      "url": "https://university.segi.edu.my/course/bachelor-of-business-analytics-odl/",
+      "candidates": [
+        {
+          "code": "SEGI-BBM",
+          "name": "Bachelor of Business Management (Hons)",
+          "totalMYR": 94558.7,
+          "score": 0.6,
+          "normProgram": "bachelor of business analytics",
+          "normFee": "bachelor of business management honours"
+        },
+        {
+          "code": "SEGI-BIB",
+          "name": "Bachelor of International Business (Hons)",
+          "totalMYR": 94558.7,
+          "score": 0.6,
+          "normProgram": "bachelor of business analytics",
+          "normFee": "bachelor of international business honours"
+        },
+        {
+          "code": "SEGI-BED",
+          "name": "Bachelor of Education (Hons)",
+          "totalMYR": 98676.8,
+          "score": 0.5,
+          "normProgram": "bachelor of business analytics",
+          "normFee": "bachelor of education honours"
+        },
+        {
+          "code": "SEGI-BMUSIC",
+          "name": "Bachelor of Music (Hons)",
+          "totalMYR": 95253,
+          "score": 0.5,
+          "normProgram": "bachelor of business analytics",
+          "normFee": "bachelor of music honours"
+        },
+        {
+          "code": "SEGI-BPSY",
+          "name": "Bachelor of Psychology (Hons)",
+          "totalMYR": 104713.5,
+          "score": 0.5,
+          "normProgram": "bachelor of business analytics",
+          "normFee": "bachelor of psychology honours"
+        }
+      ]
+    },
+    {
+      "id": 6560,
+      "name": "Bachelor of Business Management (Honours) – ODL (Online Mode)",
+      "level": "bachelor",
+      "url": "https://university.segi.edu.my/course/bachelor-of-business-management-honours-odl/",
+      "candidates": [
+        {
+          "code": "SEGI-BBM",
+          "name": "Bachelor of Business Management (Hons)",
+          "totalMYR": 94558.7,
+          "score": 1,
+          "normProgram": "bachelor of business management honours",
+          "normFee": "bachelor of business management honours"
+        },
+        {
+          "code": "SEGI-BIB",
+          "name": "Bachelor of International Business (Hons)",
+          "totalMYR": 94558.7,
+          "score": 0.8,
+          "normProgram": "bachelor of business management honours",
+          "normFee": "bachelor of international business honours"
+        },
+        {
+          "code": "SEGI-BED",
+          "name": "Bachelor of Education (Hons)",
+          "totalMYR": 98676.8,
+          "score": 0.6,
+          "normProgram": "bachelor of business management honours",
+          "normFee": "bachelor of education honours"
+        },
+        {
+          "code": "SEGI-BMUSIC",
+          "name": "Bachelor of Music (Hons)",
+          "totalMYR": 95253,
+          "score": 0.6,
+          "normProgram": "bachelor of business management honours",
+          "normFee": "bachelor of music honours"
+        },
+        {
+          "code": "SEGI-BPSY",
+          "name": "Bachelor of Psychology (Hons)",
+          "totalMYR": 104713.5,
+          "score": 0.6,
+          "normProgram": "bachelor of business management honours",
+          "normFee": "bachelor of psychology honours"
+        }
+      ]
+    },
+    {
+      "id": 6563,
+      "name": "Bachelor of Arts (Honours) Visual Communication Design – ODL (Online Mode)",
+      "level": "bachelor",
+      "url": "https://university.segi.edu.my/course/bachelor-of-arts-hons-visual-communication-design-odl/",
+      "candidates": [
+        {
+          "code": "SEGI-BVCD",
+          "name": "Bachelor of Arts (Hons) in Visual Communication Design",
+          "totalMYR": 95253,
+          "score": 0.875,
+          "normProgram": "bachelor of arts honours visual communication design",
+          "normFee": "bachelor of arts honours in visual communication design"
+        },
+        {
+          "code": "SEGI-BMMD",
+          "name": "Bachelor of Arts (Hons) in Multimedia Design",
+          "totalMYR": 95253,
+          "score": 0.714,
+          "normProgram": "bachelor of arts honours visual communication design",
+          "normFee": "bachelor of arts honours in multimedia design"
+        },
+        {
+          "code": "SEGI-BMC",
+          "name": "Bachelor of Mass Communication (Hons)",
+          "totalMYR": 97648.6,
+          "score": 0.571,
+          "normProgram": "bachelor of arts honours visual communication design",
+          "normFee": "bachelor of mass communication honours"
+        },
+        {
+          "code": "SEGI-BIA",
+          "name": "Bachelor of Arts (Hons) in Interior Architecture",
+          "totalMYR": 105114.6,
+          "score": 0.571,
+          "normProgram": "bachelor of arts honours visual communication design",
+          "normFee": "bachelor of arts honours in interior architecture"
+        },
+        {
+          "code": "SEGI-BQS",
+          "name": "Bachelor of Arts (Hons) in Quantity Surveying",
+          "totalMYR": 92452.9,
+          "score": 0.571,
+          "normProgram": "bachelor of arts honours visual communication design",
+          "normFee": "bachelor of arts honours in quantity surveying"
+        }
+      ]
+    },
+    {
+      "id": 6565,
+      "name": "Bachelor in Multimedia Design (Honours) – ODL (Online Mode)",
+      "level": "bachelor",
+      "url": "https://university.segi.edu.my/course/bachelor-in-multimedia-design-honours-odl/",
+      "candidates": [
+        {
+          "code": "SEGI-BMMD",
+          "name": "Bachelor of Arts (Hons) in Multimedia Design",
+          "totalMYR": 95253,
+          "score": 0.714,
+          "normProgram": "bachelor of multimedia design honours",
+          "normFee": "bachelor of arts honours in multimedia design"
+        },
+        {
+          "code": "SEGI-BBM",
+          "name": "Bachelor of Business Management (Hons)",
+          "totalMYR": 94558.7,
+          "score": 0.6,
+          "normProgram": "bachelor of multimedia design honours",
+          "normFee": "bachelor of business management honours"
+        },
+        {
+          "code": "SEGI-BIB",
+          "name": "Bachelor of International Business (Hons)",
+          "totalMYR": 94558.7,
+          "score": 0.6,
+          "normProgram": "bachelor of multimedia design honours",
+          "normFee": "bachelor of international business honours"
+        },
+        {
+          "code": "SEGI-BED",
+          "name": "Bachelor of Education (Hons)",
+          "totalMYR": 98676.8,
+          "score": 0.6,
+          "normProgram": "bachelor of multimedia design honours",
+          "normFee": "bachelor of education honours"
+        },
+        {
+          "code": "SEGI-BMUSIC",
+          "name": "Bachelor of Music (Hons)",
+          "totalMYR": 95253,
+          "score": 0.6,
+          "normProgram": "bachelor of multimedia design honours",
+          "normFee": "bachelor of music honours"
+        }
+      ]
+    },
+    {
+      "id": 6570,
+      "name": "Bachelor of Accounting and Finance (Honours) – ODL (Online Mode)",
+      "level": "bachelor",
+      "url": "https://university.segi.edu.my/course/bachelor-of-accounting-and-finance-honours-odl/",
+      "candidates": [
+        {
+          "code": "SEGI-BAF",
+          "name": "Bachelor of Accounting and Finance (Hons)",
+          "totalMYR": 89550.2,
+          "score": 1,
+          "normProgram": "bachelor of accounting and finance honours",
+          "normFee": "bachelor of accounting and finance honours"
+        },
+        {
+          "code": "SEGI-BEPR",
+          "name": "Bachelor of English and Public Relations (Hons)",
+          "totalMYR": 92083.6,
+          "score": 0.571,
+          "normProgram": "bachelor of accounting and finance honours",
+          "normFee": "bachelor of english and public relations honours"
+        },
+        {
+          "code": "SEGI-BAHM",
+          "name": "Bachelor of Hospitality and Tourism Management (Hons)",
+          "totalMYR": 94558.7,
+          "score": 0.571,
+          "normProgram": "bachelor of accounting and finance honours",
+          "normFee": "bachelor of hospitality and tourism management honours"
+        },
+        {
+          "code": "SEGI-BBM",
+          "name": "Bachelor of Business Management (Hons)",
+          "totalMYR": 94558.7,
+          "score": 0.5,
+          "normProgram": "bachelor of accounting and finance honours",
+          "normFee": "bachelor of business management honours"
+        },
+        {
+          "code": "SEGI-BIB",
+          "name": "Bachelor of International Business (Hons)",
+          "totalMYR": 94558.7,
+          "score": 0.5,
+          "normProgram": "bachelor of accounting and finance honours",
+          "normFee": "bachelor of international business honours"
+        }
+      ]
+    }
+  ]
+}

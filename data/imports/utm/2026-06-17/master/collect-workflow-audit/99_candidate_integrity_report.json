@@ -1,0 +1,956 @@
+{
+  "status": "blocked",
+  "recordKey": "unknown",
+  "baselineKey": "official_row_disposal",
+  "pageOptionKey": "page_option_inventory",
+  "coverageKey": "field_coverage_matrix",
+  "displayParityKey": "display_parity_report.surfaces",
+  "instructionLedgerKey": "instruction_execution_ledger",
+  "officialDomains": [],
+  "recordCount": 0,
+  "baselineCount": 153,
+  "pageOptionCount": 153,
+  "coverageRowCount": 153,
+  "displayParityRowCount": 0,
+  "instructionLedgerCount": 6,
+  "recordsByPublicStatus": {},
+  "issueCounts": {
+    "error": 155,
+    "warning": 1
+  },
+  "issues": [
+    {
+      "severity": "error",
+      "code": "missing-official-domains",
+      "message": "Official domains are required."
+    },
+    {
+      "severity": "error",
+      "code": "missing-candidate-records",
+      "message": "No candidate records found."
+    },
+    {
+      "severity": "error",
+      "code": "baseline-candidate-missing-record",
+      "message": "Official row is marked candidate but has no matching candidate record.",
+      "item": "utm-master-official-row-001"
+    },
+    {
+      "severity": "error",
+      "code": "baseline-candidate-missing-record",
+      "message": "Official row is marked candidate but has no matching candidate record.",
+      "item": "utm-master-official-row-002"
+    },
+    {
+      "severity": "error",
+      "code": "baseline-candidate-missing-record",
+      "message": "Official row is marked candidate but has no matching candidate record.",
+      "item": "utm-master-official-row-003"
+    },
+    {
+      "severity": "error",
+      "code": "baseline-candidate-missing-record",
+      "message": "Official row is marked candidate but has no matching candidate record.",
+      "item": "utm-master-official-row-004"
+    },
+    {
+      "severity": "error",
+      "code": "baseline-candidate-missing-record",
+      "message": "Official row is marked candidate but has no matching candidate record.",
+      "item": "utm-master-official-row-005"
+    },
+    {
+      "severity": "error",
+      "code": "baseline-candidate-missing-record",
+      "message": "Official row is marked candidate but has no matching candidate record.",
+      "item": "utm-master-official-row-006"
+    },
+    {
+      "severity": "error",
+      "code": "baseline-candidate-missing-record",
+      "message": "Official row is marked candidate but has no matching candidate record.",
+      "item": "utm-master-official-row-007"
+    },
+    {
+      "severity": "error",
+      "code": "baseline-candidate-missing-record",
+      "message": "Official row is marked candidate but has no matching candidate record.",
+      "item": "utm-master-official-row-008"
+    },
+    {
+      "severity": "error",
+      "code": "baseline-candidate-missing-record",
+      "message": "Official row is marked candidate but has no matching candidate record.",
+      "item": "utm-master-official-row-009"
+    },
+    {
+      "severity": "error",
+      "code": "baseline-candidate-missing-record",
+      "message": "Official row is marked candidate but has no matching candidate record.",
+      "item": "utm-master-official-row-010"
+    },
+    {
+      "severity": "error",
+      "code": "baseline-candidate-missing-record",
+      "message": "Official row is marked candidate but has no matching candidate record.",
+      "item": "utm-master-official-row-011"
+    },
+    {
+      "severity": "error",
+      "code": "baseline-candidate-missing-record",
+      "message": "Official row is marked candidate but has no matching candidate record.",
+      "item": "utm-master-official-row-012"
+    },
+    {
+      "severity": "error",
+      "code": "baseline-candidate-missing-record",
+      "message": "Official row is marked candidate but has no matching candidate record.",
+      "item": "utm-master-official-row-013"
+    },
+    {
+      "severity": "error",
+      "code": "baseline-candidate-missing-record",
+      "message": "Official row is marked candidate but has no matching candidate record.",
+      "item": "utm-master-official-row-014"
+    },
+    {
+      "severity": "error",
+      "code": "baseline-candidate-missing-record",
+      "message": "Official row is marked candidate but has no matching candidate record.",
+      "item": "utm-master-official-row-015"
+    },
+    {
+      "severity": "error",
+      "code": "baseline-candidate-missing-record",
+      "message": "Official row is marked candidate but has no matching candidate record.",
+      "item": "utm-master-official-row-016"
+    },
+    {
+      "severity": "error",
+      "code": "baseline-candidate-missing-record",
+      "message": "Official row is marked candidate but has no matching candidate record.",
+      "item": "utm-master-official-row-017"
+    },
+    {
+      "severity": "error",
+      "code": "baseline-candidate-missing-record",
+      "message": "Official row is marked candidate but has no matching candidate record.",
+      "item": "utm-master-official-row-018"
+    },
+    {
+      "severity": "error",
+      "code": "baseline-candidate-missing-record",
+      "message": "Official row is marked candidate but has no matching candidate record.",
+      "item": "utm-master-official-row-019"
+    },
+    {
+      "severity": "error",
+      "code": "baseline-candidate-missing-record",
+      "message": "Official row is marked candidate but has no matching candidate record.",
+      "item": "utm-master-official-row-020"
+    },
+    {
+      "severity": "error",
+      "code": "baseline-candidate-missing-record",
+      "message": "Official row is marked candidate but has no matching candidate record.",
+      "item": "utm-master-official-row-021"
+    },
+    {
+      "severity": "error",
+      "code": "baseline-candidate-missing-record",
+      "message": "Official row is marked candidate but has no matching candidate record.",
+      "item": "utm-master-official-row-022"
+    },
+    {
+      "severity": "error",
+      "code": "baseline-candidate-missing-record",
+      "message": "Official row is marked candidate but has no matching candidate record.",
+      "item": "utm-master-official-row-023"
+    },
+    {
+      "severity": "error",
+      "code": "baseline-candidate-missing-record",
+      "message": "Official row is marked candidate but has no matching candidate record.",
+      "item": "utm-master-official-row-024"
+    },
+    {
+      "severity": "error",
+      "code": "baseline-candidate-missing-record",
+      "message": "Official row is marked candidate but has no matching candidate record.",
+      "item": "utm-master-official-row-025"
+    },
+    {
+      "severity": "error",
+      "code": "baseline-candidate-missing-record",
+      "message": "Official row is marked candidate but has no matching candidate record.",
+      "item": "utm-master-official-row-026"
+    },
+    {
+      "severity": "error",
+      "code": "baseline-candidate-missing-record",
+      "message": "Official row is marked candidate but has no matching candidate record.",
+      "item": "utm-master-official-row-027"
+    },
+    {
+      "severity": "error",
+      "code": "baseline-candidate-missing-record",
+      "message": "Official row is marked candidate but has no matching candidate record.",
+      "item": "utm-master-official-row-028"
+    },
+    {
+      "severity": "error",
+      "code": "baseline-candidate-missing-record",
+      "message": "Official row is marked candidate but has no matching candidate record.",
+      "item": "utm-master-official-row-029"
+    },
+    {
+      "severity": "error",
+      "code": "baseline-candidate-missing-record",
+      "message": "Official row is marked candidate but has no matching candidate record.",
+      "item": "utm-master-official-row-030"
+    },
+    {
+      "severity": "error",
+      "code": "baseline-candidate-missing-record",
+      "message": "Official row is marked candidate but has no matching candidate record.",
+      "item": "utm-master-official-row-031"
+    },
+    {
+      "severity": "error",
+      "code": "baseline-candidate-missing-record",
+      "message": "Official row is marked candidate but has no matching candidate record.",
+      "item": "utm-master-official-row-032"
+    },
+    {
+      "severity": "error",
+      "code": "baseline-candidate-missing-record",
+      "message": "Official row is marked candidate but has no matching candidate record.",
+      "item": "utm-master-official-row-033"
+    },
+    {
+      "severity": "error",
+      "code": "baseline-candidate-missing-record",
+      "message": "Official row is marked candidate but has no matching candidate record.",
+      "item": "utm-master-official-row-034"
+    },
+    {
+      "severity": "error",
+      "code": "baseline-candidate-missing-record",
+      "message": "Official row is marked candidate but has no matching candidate record.",
+      "item": "utm-master-official-row-035"
+    },
+    {
+      "severity": "error",
+      "code": "baseline-candidate-missing-record",
+      "message": "Official row is marked candidate but has no matching candidate record.",
+      "item": "utm-master-official-row-036"
+    },
+    {
+      "severity": "error",
+      "code": "baseline-candidate-missing-record",
+      "message": "Official row is marked candidate but has no matching candidate record.",
+      "item": "utm-master-official-row-037"
+    },
+    {
+      "severity": "error",
+      "code": "baseline-candidate-missing-record",
+      "message": "Official row is marked candidate but has no matching candidate record.",
+      "item": "utm-master-official-row-038"
+    },
+    {
+      "severity": "error",
+      "code": "baseline-candidate-missing-record",
+      "message": "Official row is marked candidate but has no matching candidate record.",
+      "item": "utm-master-official-row-039"
+    },
+    {
+      "severity": "error",
+      "code": "baseline-candidate-missing-record",
+      "message": "Official row is marked candidate but has no matching candidate record.",
+      "item": "utm-master-official-row-040"
+    },
+    {
+      "severity": "error",
+      "code": "baseline-candidate-missing-record",
+      "message": "Official row is marked candidate but has no matching candidate record.",
+      "item": "utm-master-official-row-041"
+    },
+    {
+      "severity": "error",
+      "code": "baseline-candidate-missing-record",
+      "message": "Official row is marked candidate but has no matching candidate record.",
+      "item": "utm-master-official-row-042"
+    },
+    {
+      "severity": "error",
+      "code": "baseline-candidate-missing-record",
+      "message": "Official row is marked candidate but has no matching candidate record.",
+      "item": "utm-master-official-row-043"
+    },
+    {
+      "severity": "error",
+      "code": "baseline-candidate-missing-record",
+      "message": "Official row is marked candidate but has no matching candidate record.",
+      "item": "utm-master-official-row-044"
+    },
+    {
+      "severity": "error",
+      "code": "baseline-candidate-missing-record",
+      "message": "Official row is marked candidate but has no matching candidate record.",
+      "item": "utm-master-official-row-045"
+    },
+    {
+      "severity": "error",
+      "code": "baseline-candidate-missing-record",
+      "message": "Official row is marked candidate but has no matching candidate record.",
+      "item": "utm-master-official-row-046"
+    },
+    {
+      "severity": "error",
+      "code": "baseline-candidate-missing-record",
+      "message": "Official row is marked candidate but has no matching candidate record.",
+      "item": "utm-master-official-row-047"
+    },
+    {
+      "severity": "error",
+      "code": "baseline-candidate-missing-record",
+      "message": "Official row is marked candidate but has no matching candidate record.",
+      "item": "utm-master-official-row-048"
+    },
+    {
+      "severity": "error",
+      "code": "baseline-candidate-missing-record",
+      "message": "Official row is marked candidate but has no matching candidate record.",
+      "item": "utm-master-official-row-049"
+    },
+    {
+      "severity": "error",
+      "code": "baseline-candidate-missing-record",
+      "message": "Official row is marked candidate but has no matching candidate record.",
+      "item": "utm-master-official-row-050"
+    },
+    {
+      "severity": "error",
+      "code": "baseline-candidate-missing-record",
+      "message": "Official row is marked candidate but has no matching candidate record.",
+      "item": "utm-master-official-row-051"
+    },
+    {
+      "severity": "error",
+      "code": "baseline-candidate-missing-record",
+      "message": "Official row is marked candidate but has no matching candidate record.",
+      "item": "utm-master-official-row-052"
+    },
+    {
+      "severity": "error",
+      "code": "baseline-candidate-missing-record",
+      "message": "Official row is marked candidate but has no matching candidate record.",
+      "item": "utm-master-official-row-053"
+    },
+    {
+      "severity": "error",
+      "code": "baseline-candidate-missing-record",
+      "message": "Official row is marked candidate but has no matching candidate record.",
+      "item": "utm-master-official-row-054"
+    },
+    {
+      "severity": "error",
+      "code": "baseline-candidate-missing-record",
+      "message": "Official row is marked candidate but has no matching candidate record.",
+      "item": "utm-master-official-row-055"
+    },
+    {
+      "severity": "error",
+      "code": "baseline-candidate-missing-record",
+      "message": "Official row is marked candidate but has no matching candidate record.",
+      "item": "utm-master-official-row-056"
+    },
+    {
+      "severity": "error",
+      "code": "baseline-candidate-missing-record",
+      "message": "Official row is marked candidate but has no matching candidate record.",
+      "item": "utm-master-official-row-057"
+    },
+    {
+      "severity": "error",
+      "code": "baseline-candidate-missing-record",
+      "message": "Official row is marked candidate but has no matching candidate record.",
+      "item": "utm-master-official-row-058"
+    },
+    {
+      "severity": "error",
+      "code": "baseline-candidate-missing-record",
+      "message": "Official row is marked candidate but has no matching candidate record.",
+      "item": "utm-master-official-row-059"
+    },
+    {
+      "severity": "error",
+      "code": "baseline-candidate-missing-record",
+      "message": "Official row is marked candidate but has no matching candidate record.",
+      "item": "utm-master-official-row-060"
+    },
+    {
+      "severity": "error",
+      "code": "baseline-candidate-missing-record",
+      "message": "Official row is marked candidate but has no matching candidate record.",
+      "item": "utm-master-official-row-061"
+    },
+    {
+      "severity": "error",
+      "code": "baseline-candidate-missing-record",
+      "message": "Official row is marked candidate but has no matching candidate record.",
+      "item": "utm-master-official-row-062"
+    },
+    {
+      "severity": "error",
+      "code": "baseline-candidate-missing-record",
+      "message": "Official row is marked candidate but has no matching candidate record.",
+      "item": "utm-master-official-row-063"
+    },
+    {
+      "severity": "error",
+      "code": "baseline-candidate-missing-record",
+      "message": "Official row is marked candidate but has no matching candidate record.",
+      "item": "utm-master-official-row-064"
+    },
+    {
+      "severity": "error",
+      "code": "baseline-candidate-missing-record",
+      "message": "Official row is marked candidate but has no matching candidate record.",
+      "item": "utm-master-official-row-065"
+    },
+    {
+      "severity": "error",
+      "code": "baseline-candidate-missing-record",
+      "message": "Official row is marked candidate but has no matching candidate record.",
+      "item": "utm-master-official-row-066"
+    },
+    {
+      "severity": "error",
+      "code": "baseline-candidate-missing-record",
+      "message": "Official row is marked candidate but has no matching candidate record.",
+      "item": "utm-master-official-row-067"
+    },
+    {
+      "severity": "error",
+      "code": "baseline-candidate-missing-record",
+      "message": "Official row is marked candidate but has no matching candidate record.",
+      "item": "utm-master-official-row-068"
+    },
+    {
+      "severity": "error",
+      "code": "baseline-candidate-missing-record",
+      "message": "Official row is marked candidate but has no matching candidate record.",
+      "item": "utm-master-official-row-069"
+    },
+    {
+      "severity": "error",
+      "code": "baseline-candidate-missing-record",
+      "message": "Official row is marked candidate but has no matching candidate record.",
+      "item": "utm-master-official-row-070"
+    },
+    {
+      "severity": "error",
+      "code": "baseline-candidate-missing-record",
+      "message": "Official row is marked candidate but has no matching candidate record.",
+      "item": "utm-master-official-row-071"
+    },
+    {
+      "severity": "error",
+      "code": "baseline-candidate-missing-record",
+      "message": "Official row is marked candidate but has no matching candidate record.",
+      "item": "utm-master-official-row-072"
+    },
+    {
+      "severity": "error",
+      "code": "baseline-candidate-missing-record",
+      "message": "Official row is marked candidate but has no matching candidate record.",
+      "item": "utm-master-official-row-073"
+    },
+    {
+      "severity": "error",
+      "code": "baseline-candidate-missing-record",
+      "message": "Official row is marked candidate but has no matching candidate record.",
+      "item": "utm-master-official-row-074"
+    },
+    {
+      "severity": "error",
+      "code": "baseline-candidate-missing-record",
+      "message": "Official row is marked candidate but has no matching candidate record.",
+      "item": "utm-master-official-row-075"
+    },
+    {
+      "severity": "error",
+      "code": "baseline-candidate-missing-record",
+      "message": "Official row is marked candidate but has no matching candidate record.",
+      "item": "utm-master-official-row-076"
+    },
+    {
+      "severity": "error",
+      "code": "baseline-candidate-missing-record",
+      "message": "Official row is marked candidate but has no matching candidate record.",
+      "item": "utm-master-official-row-077"
+    },
+    {
+      "severity": "error",
+      "code": "baseline-candidate-missing-record",
+      "message": "Official row is marked candidate but has no matching candidate record.",
+      "item": "utm-master-official-row-078"
+    },
+    {
+      "severity": "error",
+      "code": "baseline-candidate-missing-record",
+      "message": "Official row is marked candidate but has no matching candidate record.",
+      "item": "utm-master-official-row-079"
+    },
+    {
+      "severity": "error",
+      "code": "baseline-candidate-missing-record",
+      "message": "Official row is marked candidate but has no matching candidate record.",
+      "item": "utm-master-official-row-080"
+    },
+    {
+      "severity": "error",
+      "code": "baseline-candidate-missing-record",
+      "message": "Official row is marked candidate but has no matching candidate record.",
+      "item": "utm-master-official-row-081"
+    },
+    {
+      "severity": "error",
+      "code": "baseline-candidate-missing-record",
+      "message": "Official row is marked candidate but has no matching candidate record.",
+      "item": "utm-master-official-row-082"
+    },
+    {
+      "severity": "error",
+      "code": "baseline-candidate-missing-record",
+      "message": "Official row is marked candidate but has no matching candidate record.",
+      "item": "utm-master-official-row-083"
+    },
+    {
+      "severity": "error",
+      "code": "baseline-candidate-missing-record",
+      "message": "Official row is marked candidate but has no matching candidate record.",
+      "item": "utm-master-official-row-084"
+    },
+    {
+      "severity": "error",
+      "code": "baseline-candidate-missing-record",
+      "message": "Official row is marked candidate but has no matching candidate record.",
+      "item": "utm-master-official-row-085"
+    },
+    {
+      "severity": "error",
+      "code": "baseline-candidate-missing-record",
+      "message": "Official row is marked candidate but has no matching candidate record.",
+      "item": "utm-master-official-row-086"
+    },
+    {
+      "severity": "error",
+      "code": "baseline-candidate-missing-record",
+      "message": "Official row is marked candidate but has no matching candidate record.",
+      "item": "utm-master-official-row-087"
+    },
+    {
+      "severity": "error",
+      "code": "baseline-candidate-missing-record",
+      "message": "Official row is marked candidate but has no matching candidate record.",
+      "item": "utm-master-official-row-088"
+    },
+    {
+      "severity": "error",
+      "code": "baseline-candidate-missing-record",
+      "message": "Official row is marked candidate but has no matching candidate record.",
+      "item": "utm-master-official-row-089"
+    },
+    {
+      "severity": "error",
+      "code": "baseline-candidate-missing-record",
+      "message": "Official row is marked candidate but has no matching candidate record.",
+      "item": "utm-master-official-row-090"
+    },
+    {
+      "severity": "error",
+      "code": "baseline-candidate-missing-record",
+      "message": "Official row is marked candidate but has no matching candidate record.",
+      "item": "utm-master-official-row-091"
+    },
+    {
+      "severity": "error",
+      "code": "baseline-candidate-missing-record",
+      "message": "Official row is marked candidate but has no matching candidate record.",
+      "item": "utm-master-official-row-092"
+    },
+    {
+      "severity": "error",
+      "code": "baseline-candidate-missing-record",
+      "message": "Official row is marked candidate but has no matching candidate record.",
+      "item": "utm-master-official-row-093"
+    },
+    {
+      "severity": "error",
+      "code": "baseline-candidate-missing-record",
+      "message": "Official row is marked candidate but has no matching candidate record.",
+      "item": "utm-master-official-row-094"
+    },
+    {
+      "severity": "error",
+      "code": "baseline-candidate-missing-record",
+      "message": "Official row is marked candidate but has no matching candidate record.",
+      "item": "utm-master-official-row-095"
+    },
+    {
+      "severity": "error",
+      "code": "baseline-candidate-missing-record",
+      "message": "Official row is marked candidate but has no matching candidate record.",
+      "item": "utm-master-official-row-096"
+    },
+    {
+      "severity": "error",
+      "code": "baseline-candidate-missing-record",
+      "message": "Official row is marked candidate but has no matching candidate record.",
+      "item": "utm-master-official-row-097"
+    },
+    {
+      "severity": "error",
+      "code": "baseline-candidate-missing-record",
+      "message": "Official row is marked candidate but has no matching candidate record.",
+      "item": "utm-master-official-row-098"
+    },
+    {
+      "severity": "error",
+      "code": "baseline-candidate-missing-record",
+      "message": "Official row is marked candidate but has no matching candidate record.",
+      "item": "utm-master-official-row-099"
+    },
+    {
+      "severity": "error",
+      "code": "baseline-candidate-missing-record",
+      "message": "Official row is marked candidate but has no matching candidate record.",
+      "item": "utm-master-official-row-100"
+    },
+    {
+      "severity": "error",
+      "code": "baseline-candidate-missing-record",
+      "message": "Official row is marked candidate but has no matching candidate record.",
+      "item": "utm-master-official-row-101"
+    },
+    {
+      "severity": "error",
+      "code": "baseline-candidate-missing-record",
+      "message": "Official row is marked candidate but has no matching candidate record.",
+      "item": "utm-master-official-row-102"
+    },
+    {
+      "severity": "error",
+      "code": "baseline-candidate-missing-record",
+      "message": "Official row is marked candidate but has no matching candidate record.",
+      "item": "utm-master-official-row-103"
+    },
+    {
+      "severity": "error",
+      "code": "baseline-candidate-missing-record",
+      "message": "Official row is marked candidate but has no matching candidate record.",
+      "item": "utm-master-official-row-104"
+    },
+    {
+      "severity": "error",
+      "code": "baseline-candidate-missing-record",
+      "message": "Official row is marked candidate but has no matching candidate record.",
+      "item": "utm-master-official-row-105"
+    },
+    {
+      "severity": "error",
+      "code": "baseline-candidate-missing-record",
+      "message": "Official row is marked candidate but has no matching candidate record.",
+      "item": "utm-master-official-row-106"
+    },
+    {
+      "severity": "error",
+      "code": "baseline-candidate-missing-record",
+      "message": "Official row is marked candidate but has no matching candidate record.",
+      "item": "utm-master-official-row-107"
+    },
+    {
+      "severity": "error",
+      "code": "baseline-candidate-missing-record",
+      "message": "Official row is marked candidate but has no matching candidate record.",
+      "item": "utm-master-official-row-108"
+    },
+    {
+      "severity": "error",
+      "code": "baseline-candidate-missing-record",
+      "message": "Official row is marked candidate but has no matching candidate record.",
+      "item": "utm-master-official-row-109"
+    },
+    {
+      "severity": "error",
+      "code": "baseline-candidate-missing-record",
+      "message": "Official row is marked candidate but has no matching candidate record.",
+      "item": "utm-master-official-row-110"
+    },
+    {
+      "severity": "error",
+      "code": "baseline-candidate-missing-record",
+      "message": "Official row is marked candidate but has no matching candidate record.",
+      "item": "utm-master-official-row-111"
+    },
+    {
+      "severity": "error",
+      "code": "baseline-candidate-missing-record",
+      "message": "Official row is marked candidate but has no matching candidate record.",
+      "item": "utm-master-official-row-112"
+    },
+    {
+      "severity": "error",
+      "code": "baseline-candidate-missing-record",
+      "message": "Official row is marked candidate but has no matching candidate record.",
+      "item": "utm-master-official-row-113"
+    },
+    {
+      "severity": "error",
+      "code": "baseline-candidate-missing-record",
+      "message": "Official row is marked candidate but has no matching candidate record.",
+      "item": "utm-master-official-row-114"
+    },
+    {
+      "severity": "error",
+      "code": "baseline-candidate-missing-record",
+      "message": "Official row is marked candidate but has no matching candidate record.",
+      "item": "utm-master-official-row-115"
+    },
+    {
+      "severity": "error",
+      "code": "baseline-candidate-missing-record",
+      "message": "Official row is marked candidate but has no matching candidate record.",
+      "item": "utm-master-official-row-116"
+    },
+    {
+      "severity": "error",
+      "code": "baseline-candidate-missing-record",
+      "message": "Official row is marked candidate but has no matching candidate record.",
+      "item": "utm-master-official-row-117"
+    },
+    {
+      "severity": "error",
+      "code": "baseline-candidate-missing-record",
+      "message": "Official row is marked candidate but has no matching candidate record.",
+      "item": "utm-master-official-row-118"
+    },
+    {
+      "severity": "error",
+      "code": "baseline-candidate-missing-record",
+      "message": "Official row is marked candidate but has no matching candidate record.",
+      "item": "utm-master-official-row-119"
+    },
+    {
+      "severity": "error",
+      "code": "baseline-candidate-missing-record",
+      "message": "Official row is marked candidate but has no matching candidate record.",
+      "item": "utm-master-official-row-120"
+    },
+    {
+      "severity": "error",
+      "code": "baseline-candidate-missing-record",
+      "message": "Official row is marked candidate but has no matching candidate record.",
+      "item": "utm-master-official-row-121"
+    },
+    {
+      "severity": "error",
+      "code": "baseline-candidate-missing-record",
+      "message": "Official row is marked candidate but has no matching candidate record.",
+      "item": "utm-master-official-row-122"
+    },
+    {
+      "severity": "error",
+      "code": "baseline-candidate-missing-record",
+      "message": "Official row is marked candidate but has no matching candidate record.",
+      "item": "utm-master-official-row-123"
+    },
+    {
+      "severity": "error",
+      "code": "baseline-candidate-missing-record",
+      "message": "Official row is marked candidate but has no matching candidate record.",
+      "item": "utm-master-official-row-124"
+    },
+    {
+      "severity": "error",
+      "code": "baseline-candidate-missing-record",
+      "message": "Official row is marked candidate but has no matching candidate record.",
+      "item": "utm-master-official-row-125"
+    },
+    {
+      "severity": "error",
+      "code": "baseline-candidate-missing-record",
+      "message": "Official row is marked candidate but has no matching candidate record.",
+      "item": "utm-master-official-row-126"
+    },
+    {
+      "severity": "error",
+      "code": "baseline-candidate-missing-record",
+      "message": "Official row is marked candidate but has no matching candidate record.",
+      "item": "utm-master-official-row-127"
+    },
+    {
+      "severity": "error",
+      "code": "baseline-candidate-missing-record",
+      "message": "Official row is marked candidate but has no matching candidate record.",
+      "item": "utm-master-official-row-128"
+    },
+    {
+      "severity": "error",
+      "code": "baseline-candidate-missing-record",
+      "message": "Official row is marked candidate but has no matching candidate record.",
+      "item": "utm-master-official-row-129"
+    },
+    {
+      "severity": "error",
+      "code": "baseline-candidate-missing-record",
+      "message": "Official row is marked candidate but has no matching candidate record.",
+      "item": "utm-master-official-row-130"
+    },
+    {
+      "severity": "error",
+      "code": "baseline-candidate-missing-record",
+      "message": "Official row is marked candidate but has no matching candidate record.",
+      "item": "utm-master-official-row-131"
+    },
+    {
+      "severity": "error",
+      "code": "baseline-candidate-missing-record",
+      "message": "Official row is marked candidate but has no matching candidate record.",
+      "item": "utm-master-official-row-132"
+    },
+    {
+      "severity": "error",
+      "code": "baseline-candidate-missing-record",
+      "message": "Official row is marked candidate but has no matching candidate record.",
+      "item": "utm-master-official-row-133"
+    },
+    {
+      "severity": "error",
+      "code": "baseline-candidate-missing-record",
+      "message": "Official row is marked candidate but has no matching candidate record.",
+      "item": "utm-master-official-row-134"
+    },
+    {
+      "severity": "error",
+      "code": "baseline-candidate-missing-record",
+      "message": "Official row is marked candidate but has no matching candidate record.",
+      "item": "utm-master-official-row-135"
+    },
+    {
+      "severity": "error",
+      "code": "baseline-candidate-missing-record",
+      "message": "Official row is marked candidate but has no matching candidate record.",
+      "item": "utm-master-official-row-136"
+    },
+    {
+      "severity": "error",
+      "code": "baseline-candidate-missing-record",
+      "message": "Official row is marked candidate but has no matching candidate record.",
+      "item": "utm-master-official-row-137"
+    },
+    {
+      "severity": "error",
+      "code": "baseline-candidate-missing-record",
+      "message": "Official row is marked candidate but has no matching candidate record.",
+      "item": "utm-master-official-row-138"
+    },
+    {
+      "severity": "error",
+      "code": "baseline-candidate-missing-record",
+      "message": "Official row is marked candidate but has no matching candidate record.",
+      "item": "utm-master-official-row-139"
+    },
+    {
+      "severity": "error",
+      "code": "baseline-candidate-missing-record",
+      "message": "Official row is marked candidate but has no matching candidate record.",
+      "item": "utm-master-official-row-140"
+    },
+    {
+      "severity": "error",
+      "code": "baseline-candidate-missing-record",
+      "message": "Official row is marked candidate but has no matching candidate record.",
+      "item": "utm-master-official-row-141"
+    },
+    {
+      "severity": "error",
+      "code": "baseline-candidate-missing-record",
+      "message": "Official row is marked candidate but has no matching candidate record.",
+      "item": "utm-master-official-row-142"
+    },
+    {
+      "severity": "error",
+      "code": "baseline-candidate-missing-record",
+      "message": "Official row is marked candidate but has no matching candidate record.",
+      "item": "utm-master-official-row-143"
+    },
+    {
+      "severity": "error",
+      "code": "baseline-candidate-missing-record",
+      "message": "Official row is marked candidate but has no matching candidate record.",
+      "item": "utm-master-official-row-144"
+    },
+    {
+      "severity": "error",
+      "code": "baseline-candidate-missing-record",
+      "message": "Official row is marked candidate but has no matching candidate record.",
+      "item": "utm-master-official-row-145"
+    },
+    {
+      "severity": "error",
+      "code": "baseline-candidate-missing-record",
+      "message": "Official row is marked candidate but has no matching candidate record.",
+      "item": "utm-master-official-row-146"
+    },
+    {
+      "severity": "error",
+      "code": "baseline-candidate-missing-record",
+      "message": "Official row is marked candidate but has no matching candidate record.",
+      "item": "utm-master-official-row-147"
+    },
+    {
+      "severity": "error",
+      "code": "baseline-candidate-missing-record",
+      "message": "Official row is marked candidate but has no matching candidate record.",
+      "item": "utm-master-official-row-148"
+    },
+    {
+      "severity": "error",
+      "code": "baseline-candidate-missing-record",
+      "message": "Official row is marked candidate but has no matching candidate record.",
+      "item": "utm-master-official-row-149"
+    },
+    {
+      "severity": "error",
+      "code": "baseline-candidate-missing-record",
+      "message": "Official row is marked candidate but has no matching candidate record.",
+      "item": "utm-master-official-row-150"
+    },
+    {
+      "severity": "error",
+      "code": "baseline-candidate-missing-record",
+      "message": "Official row is marked candidate but has no matching candidate record.",
+      "item": "utm-master-official-row-151"
+    },
+    {
+      "severity": "error",
+      "code": "baseline-candidate-missing-record",
+      "message": "Official row is marked candidate but has no matching candidate record.",
+      "item": "utm-master-official-row-152"
+    },
+    {
+      "severity": "error",
+      "code": "baseline-candidate-missing-record",
+      "message": "Official row is marked candidate but has no matching candidate record.",
+      "item": "utm-master-official-row-153"
+    },
+    {
+      "severity": "warning",
+      "code": "missing-display-parity-report",
+      "message": "No display parity report was provided."
+    }
+  ]
+}

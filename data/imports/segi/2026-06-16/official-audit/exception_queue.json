@@ -1,0 +1,699 @@
+[
+  {
+    "type": "official-programme-missing-in-project",
+    "severity": "high",
+    "level": "phd",
+    "title": "Doctor of Philosophy in Information Technology (Online Mode)",
+    "detailUrl": "https://university.segi.edu.my/course/doctor-of-philosophy-information-technology-by-research-odl/",
+    "bestCurrentCandidate": "Doctor of Philosophy in Information Technology",
+    "bestScore": 0.7642,
+    "recommendedAction": "人工确认是否将该官网当前专业新增到 SEGi University 板块；ODL/Online Mode 不应自动合并到普通授课版本。"
+  },
+  {
+    "type": "official-programme-missing-in-project",
+    "severity": "high",
+    "level": "phd",
+    "title": "Doctor of Philosophy (Education) – ODL (Online Mode)",
+    "detailUrl": "https://university.segi.edu.my/course/doctor-of-philosophy-education-by-research-odl/",
+    "bestCurrentCandidate": "Doctor of Philosophy in Education",
+    "bestScore": 0.6016,
+    "recommendedAction": "人工确认是否将该官网当前专业新增到 SEGi University 板块；ODL/Online Mode 不应自动合并到普通授课版本。"
+  },
+  {
+    "type": "official-programme-missing-in-project",
+    "severity": "high",
+    "level": "phd",
+    "title": "PhD (Management) (Online Mode)",
+    "detailUrl": "https://university.segi.edu.my/course/doctor-of-philosophy-management-by-research-odl/",
+    "bestCurrentCandidate": "Doctor of Philosophy in Management",
+    "bestScore": 0.2608,
+    "recommendedAction": "人工确认是否将该官网当前专业新增到 SEGi University 板块；ODL/Online Mode 不应自动合并到普通授课版本。"
+  },
+  {
+    "type": "official-programme-missing-in-project",
+    "severity": "high",
+    "level": "master",
+    "title": "Master of Science (Engineering)",
+    "detailUrl": "https://university.segi.edu.my/course/msc-engineering-by-research/",
+    "bestCurrentCandidate": "Master of Engineering (By Research)",
+    "bestScore": 0.6783,
+    "recommendedAction": "人工确认是否将该官网当前专业新增到 SEGi University 板块；ODL/Online Mode 不应自动合并到普通授课版本。"
+  },
+  {
+    "type": "official-programme-missing-in-project",
+    "severity": "high",
+    "level": "master",
+    "title": "Master of Science in Environmental Sustainability with Artificial Intelligence",
+    "detailUrl": "https://university.segi.edu.my/course/master-of-science-in-environmental-sustainability-with-artificial-intelligence/",
+    "bestCurrentCandidate": "Master of Science in Vision Science",
+    "bestScore": 0.5288,
+    "recommendedAction": "人工确认是否将该官网当前专业新增到 SEGi University 板块；ODL/Online Mode 不应自动合并到普通授课版本。"
+  },
+  {
+    "type": "official-programme-missing-in-project",
+    "severity": "high",
+    "level": "master",
+    "title": "Master of Science in Information Technology",
+    "detailUrl": "https://university.segi.edu.my/course/msc-in-information-technology-coursework/",
+    "bestCurrentCandidate": "Master of Information Technology (By Research)",
+    "bestScore": 0.7048,
+    "recommendedAction": "人工确认是否将该官网当前专业新增到 SEGi University 板块；ODL/Online Mode 不应自动合并到普通授课版本。"
+  },
+  {
+    "type": "official-programme-missing-in-project",
+    "severity": "high",
+    "level": "master",
+    "title": "Master of Science in Information Technology (Online Mode)",
+    "detailUrl": "https://university.segi.edu.my/course/msc-information-technology-by-research-odl/",
+    "bestCurrentCandidate": "Master of Information Technology (Coursework)",
+    "bestScore": 0.5676,
+    "recommendedAction": "人工确认是否将该官网当前专业新增到 SEGi University 板块；ODL/Online Mode 不应自动合并到普通授课版本。"
+  },
+  {
+    "type": "official-programme-missing-in-project",
+    "severity": "high",
+    "level": "master",
+    "title": "Master of Science (Information Technology)",
+    "detailUrl": "https://university.segi.edu.my/course/msc-information-technology-by-research/",
+    "bestCurrentCandidate": "Master of Information Technology (By Research)",
+    "bestScore": 0.7531,
+    "recommendedAction": "人工确认是否将该官网当前专业新增到 SEGi University 板块；ODL/Online Mode 不应自动合并到普通授课版本。"
+  },
+  {
+    "type": "official-programme-missing-in-project",
+    "severity": "high",
+    "level": "master",
+    "title": "Master of Science (Management)",
+    "detailUrl": "https://university.segi.edu.my/course/master-of-science-in-management/",
+    "bestCurrentCandidate": "Master of Science in Management (By Research)",
+    "bestScore": 0.7765,
+    "recommendedAction": "人工确认是否将该官网当前专业新增到 SEGi University 板块；ODL/Online Mode 不应自动合并到普通授课版本。"
+  },
+  {
+    "type": "official-programme-missing-in-project",
+    "severity": "high",
+    "level": "master",
+    "title": "Master of Laws (LL.M) in Advanced Legal Practice",
+    "detailUrl": "https://university.segi.edu.my/course/master-of-laws/",
+    "bestCurrentCandidate": "Master of Financial Planning",
+    "bestScore": 0.4627,
+    "recommendedAction": "人工确认是否将该官网当前专业新增到 SEGi University 板块；ODL/Online Mode 不应自动合并到普通授课版本。"
+  },
+  {
+    "type": "official-programme-missing-in-project",
+    "severity": "high",
+    "level": "master",
+    "title": "Master of Education",
+    "detailUrl": "https://university.segi.edu.my/course/master-of-education/",
+    "bestCurrentCandidate": "Master of Education (By Research)",
+    "bestScore": 0.791,
+    "recommendedAction": "人工确认是否将该官网当前专业新增到 SEGi University 板块；ODL/Online Mode 不应自动合并到普通授课版本。"
+  },
+  {
+    "type": "official-programme-missing-in-project",
+    "severity": "high",
+    "level": "master",
+    "title": "Master of Education by Research – ODL (Online Mode)",
+    "detailUrl": "https://university.segi.edu.my/course/master-of-education-by-research-odl/",
+    "bestCurrentCandidate": "Master of Education (By Research)",
+    "bestScore": 0.6359,
+    "recommendedAction": "人工确认是否将该官网当前专业新增到 SEGi University 板块；ODL/Online Mode 不应自动合并到普通授课版本。"
+  },
+  {
+    "type": "official-programme-missing-in-project",
+    "severity": "high",
+    "level": "master",
+    "title": "Master of Education – ODL (Online Mode)",
+    "detailUrl": "https://university.segi.edu.my/course/master-of-education-by-coursework-odl/",
+    "bestCurrentCandidate": "Master of Education (Coursework)",
+    "bestScore": 0.544,
+    "recommendedAction": "人工确认是否将该官网当前专业新增到 SEGi University 板块；ODL/Online Mode 不应自动合并到普通授课版本。"
+  },
+  {
+    "type": "official-programme-missing-in-project",
+    "severity": "high",
+    "level": "master",
+    "title": "Master of Business Administration (Marketing)",
+    "detailUrl": "https://university.segi.edu.my/course/master-of-business-administration-marketing/",
+    "bestCurrentCandidate": "Master of Business Administration",
+    "bestScore": 0.8479,
+    "recommendedAction": "人工确认是否将该官网当前专业新增到 SEGi University 板块；ODL/Online Mode 不应自动合并到普通授课版本。"
+  },
+  {
+    "type": "official-programme-missing-in-project",
+    "severity": "high",
+    "level": "master",
+    "title": "Master of Business Administration (Human Resource Management)",
+    "detailUrl": "https://university.segi.edu.my/course/master-of-business-administration-human-resource-management/",
+    "bestCurrentCandidate": "Master of Business Administration",
+    "bestScore": 0.6736,
+    "recommendedAction": "人工确认是否将该官网当前专业新增到 SEGi University 板块；ODL/Online Mode 不应自动合并到普通授课版本。"
+  },
+  {
+    "type": "official-programme-missing-in-project",
+    "severity": "high",
+    "level": "master",
+    "title": "Master of Business Administration (Global Business)",
+    "detailUrl": "https://university.segi.edu.my/course/master-of-business-administration-global-business-2/",
+    "bestCurrentCandidate": "Master of Business Administration",
+    "bestScore": 0.8034,
+    "recommendedAction": "人工确认是否将该官网当前专业新增到 SEGi University 板块；ODL/Online Mode 不应自动合并到普通授课版本。"
+  },
+  {
+    "type": "official-programme-missing-in-project",
+    "severity": "high",
+    "level": "master",
+    "title": "Master of Business Administration (Global Business) – ODL (Online Mode)",
+    "detailUrl": "https://university.segi.edu.my/course/master-of-business-administration-global-business-odl/",
+    "bestCurrentCandidate": "Master of Business Administration",
+    "bestScore": 0.5414,
+    "recommendedAction": "人工确认是否将该官网当前专业新增到 SEGi University 板块；ODL/Online Mode 不应自动合并到普通授课版本。"
+  },
+  {
+    "type": "official-programme-missing-in-project",
+    "severity": "high",
+    "level": "master",
+    "title": "Master of Business Administration (General Management) – ODL (Online Mode)",
+    "detailUrl": "https://university.segi.edu.my/course/master-of-business-administration-general-management-odl/",
+    "bestCurrentCandidate": "Master of Business Administration",
+    "bestScore": 0.5108,
+    "recommendedAction": "人工确认是否将该官网当前专业新增到 SEGi University 板块；ODL/Online Mode 不应自动合并到普通授课版本。"
+  },
+  {
+    "type": "official-programme-missing-in-project",
+    "severity": "high",
+    "level": "master",
+    "title": "Master of Business Administration (with 11 emphasis to choose from)",
+    "detailUrl": "https://university.segi.edu.my/course/master-of-business-administration/",
+    "bestCurrentCandidate": "Master of Business Administration (5+1)",
+    "bestScore": 0.5941,
+    "recommendedAction": "人工确认是否将该官网当前专业新增到 SEGi University 板块；ODL/Online Mode 不应自动合并到普通授课版本。"
+  },
+  {
+    "type": "official-programme-missing-in-project",
+    "severity": "high",
+    "level": "master",
+    "title": "Master of Business Administration (General Management)",
+    "detailUrl": "https://university.segi.edu.my/course/master-of-business-administration-general-management-2/",
+    "bestCurrentCandidate": "Master of Business Administration",
+    "bestScore": 0.7435,
+    "recommendedAction": "人工确认是否将该官网当前专业新增到 SEGi University 板块；ODL/Online Mode 不应自动合并到普通授课版本。"
+  },
+  {
+    "type": "official-programme-missing-in-project",
+    "severity": "high",
+    "level": "master",
+    "title": "Master of Accountancy",
+    "detailUrl": "https://university.segi.edu.my/course/master-of-accountancy/",
+    "bestCurrentCandidate": "Master of Accounting",
+    "bestScore": 0.7646,
+    "recommendedAction": "人工确认是否将该官网当前专业新增到 SEGi University 板块；ODL/Online Mode 不应自动合并到普通授课版本。"
+  },
+  {
+    "type": "official-programme-missing-in-project",
+    "severity": "high",
+    "level": "master",
+    "title": "Master of Accountancy – ODL (Online Mode)",
+    "detailUrl": "https://university.segi.edu.my/course/master-of-accountancy-odl/",
+    "bestCurrentCandidate": "Master of Accounting",
+    "bestScore": 0.4724,
+    "recommendedAction": "人工确认是否将该官网当前专业新增到 SEGi University 板块；ODL/Online Mode 不应自动合并到普通授课版本。"
+  },
+  {
+    "type": "official-programme-missing-in-project",
+    "severity": "high",
+    "level": "bachelor",
+    "title": "Bachelor in Quantity Surveying",
+    "detailUrl": "https://university.segi.edu.my/course/bachelor-in-quantity-surveying/",
+    "bestCurrentCandidate": "Bachelor of Arts (Hons) in Quantity Surveying",
+    "bestScore": 0.7241,
+    "recommendedAction": "人工确认是否将该官网当前专业新增到 SEGi University 板块；ODL/Online Mode 不应自动合并到普通授课版本。"
+  },
+  {
+    "type": "official-programme-missing-in-project",
+    "severity": "high",
+    "level": "bachelor",
+    "title": "Bachelor of Psychology (Honours) – ODL (Online Mode)",
+    "detailUrl": "https://university.segi.edu.my/course/bachelor-of-psychology-honours-odl/",
+    "bestCurrentCandidate": "Bachelor of Psychology (Hons)",
+    "bestScore": 0.6441,
+    "recommendedAction": "人工确认是否将该官网当前专业新增到 SEGi University 板块；ODL/Online Mode 不应自动合并到普通授课版本。"
+  },
+  {
+    "type": "official-programme-missing-in-project",
+    "severity": "high",
+    "level": "bachelor",
+    "title": "Bachelor of Pharmacy with Honours",
+    "detailUrl": "https://university.segi.edu.my/course/bachelor-of-pharmacy-hons/",
+    "bestCurrentCandidate": "Bachelor of Pharmacy",
+    "bestScore": 0.8083,
+    "recommendedAction": "人工确认是否将该官网当前专业新增到 SEGi University 板块；ODL/Online Mode 不应自动合并到普通授课版本。"
+  },
+  {
+    "type": "official-programme-missing-in-project",
+    "severity": "high",
+    "level": "bachelor",
+    "title": "Bachelor of Science (Hons) Optometry",
+    "detailUrl": "https://university.segi.edu.my/course/bachelor-of-science-hons-optometry/",
+    "bestCurrentCandidate": "Bachelor of Computer Science (Hons)",
+    "bestScore": 0.7178,
+    "recommendedAction": "人工确认是否将该官网当前专业新增到 SEGi University 板块；ODL/Online Mode 不应自动合并到普通授课版本。"
+  },
+  {
+    "type": "official-programme-missing-in-project",
+    "severity": "high",
+    "level": "phd",
+    "title": "Doctor of Philosophy in Medical Science",
+    "detailUrl": "https://university.segi.edu.my/course/doctor-of-philosophy-in-medical-science/",
+    "bestCurrentCandidate": "Doctor of Philosophy in Education",
+    "bestScore": 0.7548,
+    "recommendedAction": "人工确认是否将该官网当前专业新增到 SEGi University 板块；ODL/Online Mode 不应自动合并到普通授课版本。"
+  },
+  {
+    "type": "official-programme-missing-in-project",
+    "severity": "high",
+    "level": "master",
+    "title": "Master of Medical Science",
+    "detailUrl": "https://university.segi.edu.my/course/master-of-medical-science-by-research/",
+    "bestCurrentCandidate": "Master of Science in Pharmaceutical Sciences",
+    "bestScore": 0.5952,
+    "recommendedAction": "人工确认是否将该官网当前专业新增到 SEGi University 板块；ODL/Online Mode 不应自动合并到普通授课版本。"
+  },
+  {
+    "type": "official-programme-missing-in-project",
+    "severity": "high",
+    "level": "bachelor",
+    "title": "Bachelor of Mass Communication (Hons) – ODL (Online Mode)",
+    "detailUrl": "https://university.segi.edu.my/course/bachelor-of-mass-communication-hons-odl/",
+    "bestCurrentCandidate": "Bachelor of Mass Communication (Hons)",
+    "bestScore": 0.6858,
+    "recommendedAction": "人工确认是否将该官网当前专业新增到 SEGi University 板块；ODL/Online Mode 不应自动合并到普通授课版本。"
+  },
+  {
+    "type": "official-programme-missing-in-project",
+    "severity": "high",
+    "level": "bachelor",
+    "title": "Bachelor of Information Technology (Hons) – ODL (Online Mode)",
+    "detailUrl": "https://university.segi.edu.my/course/bachelor-of-information-technology-hons-odl/",
+    "bestCurrentCandidate": "Bachelor of Information Technology (Hons)",
+    "bestScore": 0.6955,
+    "recommendedAction": "人工确认是否将该官网当前专业新增到 SEGi University 板块；ODL/Online Mode 不应自动合并到普通授课版本。"
+  },
+  {
+    "type": "official-programme-missing-in-project",
+    "severity": "high",
+    "level": "bachelor",
+    "title": "Bachelor of Hospitality Management (Honours) – ODL (Online Mode)",
+    "detailUrl": "https://university.segi.edu.my/course/bachelor-of-hospitality-management-honours-odl/",
+    "bestCurrentCandidate": "Bachelor of Hospitality and Tourism Management (Hons)",
+    "bestScore": 0.595,
+    "recommendedAction": "人工确认是否将该官网当前专业新增到 SEGi University 板块；ODL/Online Mode 不应自动合并到普通授课版本。"
+  },
+  {
+    "type": "official-programme-missing-in-project",
+    "severity": "high",
+    "level": "bachelor",
+    "title": "Bachelor of Hospitality Management (Honours)",
+    "detailUrl": "https://university.segi.edu.my/course/bachelor-of-hospitality-management-hons/",
+    "bestCurrentCandidate": "Bachelor of Hospitality and Tourism Management (Hons)",
+    "bestScore": 0.8268,
+    "recommendedAction": "人工确认是否将该官网当前专业新增到 SEGi University 板块；ODL/Online Mode 不应自动合并到普通授课版本。"
+  },
+  {
+    "type": "official-programme-missing-in-project",
+    "severity": "high",
+    "level": "bachelor",
+    "title": "Bachelor of Education (Hons) – ODL (Online Mode)",
+    "detailUrl": "https://university.segi.edu.my/course/bachelor-of-education-hons-odl/",
+    "bestCurrentCandidate": "Bachelor of Education (Hons)",
+    "bestScore": 0.6401,
+    "recommendedAction": "人工确认是否将该官网当前专业新增到 SEGi University 板块；ODL/Online Mode 不应自动合并到普通授课版本。"
+  },
+  {
+    "type": "official-programme-missing-in-project",
+    "severity": "high",
+    "level": "bachelor",
+    "title": "Bachelor of Computer Science (Honours) – ODL (Online Mode)",
+    "detailUrl": "https://university.segi.edu.my/course/bachelor-of-computer-science-honours-odl/",
+    "bestCurrentCandidate": "Bachelor of Computer Science (Hons)",
+    "bestScore": 0.6802,
+    "recommendedAction": "人工确认是否将该官网当前专业新增到 SEGi University 板块；ODL/Online Mode 不应自动合并到普通授课版本。"
+  },
+  {
+    "type": "official-programme-missing-in-project",
+    "severity": "high",
+    "level": "bachelor",
+    "title": "Bachelor of Business Analytics (Online Mode)",
+    "detailUrl": "https://university.segi.edu.my/course/bachelor-of-business-analytics-odl/",
+    "bestCurrentCandidate": "Bachelor of Business Management (Hons)",
+    "bestScore": 0.5337,
+    "recommendedAction": "人工确认是否将该官网当前专业新增到 SEGi University 板块；ODL/Online Mode 不应自动合并到普通授课版本。"
+  },
+  {
+    "type": "official-programme-missing-in-project",
+    "severity": "high",
+    "level": "bachelor",
+    "title": "Bachelor of Business Management (Honours) – ODL (Online Mode)",
+    "detailUrl": "https://university.segi.edu.my/course/bachelor-of-business-management-honours-odl/",
+    "bestCurrentCandidate": "Bachelor of Business Management (Hons)",
+    "bestScore": 0.6884,
+    "recommendedAction": "人工确认是否将该官网当前专业新增到 SEGi University 板块；ODL/Online Mode 不应自动合并到普通授课版本。"
+  },
+  {
+    "type": "official-programme-missing-in-project",
+    "severity": "high",
+    "level": "bachelor",
+    "title": "Bachelor of Arts (Honours) Visual Communication Design – ODL (Online Mode)",
+    "detailUrl": "https://university.segi.edu.my/course/bachelor-of-arts-hons-visual-communication-design-odl/",
+    "bestCurrentCandidate": "Bachelor of Arts (Hons) in Visual Communication Design",
+    "bestScore": 0.7028,
+    "recommendedAction": "人工确认是否将该官网当前专业新增到 SEGi University 板块；ODL/Online Mode 不应自动合并到普通授课版本。"
+  },
+  {
+    "type": "official-programme-missing-in-project",
+    "severity": "high",
+    "level": "bachelor",
+    "title": "Bachelor in Multimedia Design (Honours) – ODL (Online Mode)",
+    "detailUrl": "https://university.segi.edu.my/course/bachelor-in-multimedia-design-honours-odl/",
+    "bestCurrentCandidate": "Bachelor of Arts (Hons) in Multimedia Design",
+    "bestScore": 0.4843,
+    "recommendedAction": "人工确认是否将该官网当前专业新增到 SEGi University 板块；ODL/Online Mode 不应自动合并到普通授课版本。"
+  },
+  {
+    "type": "official-programme-missing-in-project",
+    "severity": "high",
+    "level": "bachelor",
+    "title": "Bachelor of Arts (Hons) in English and Public Relations",
+    "detailUrl": "https://university.segi.edu.my/course/bachelor-of-arts-hons-in-english-and-public-relations/",
+    "bestCurrentCandidate": "Bachelor of English and Public Relations (Hons)",
+    "bestScore": 0.7718,
+    "recommendedAction": "人工确认是否将该官网当前专业新增到 SEGi University 板块；ODL/Online Mode 不应自动合并到普通授课版本。"
+  },
+  {
+    "type": "official-programme-missing-in-project",
+    "severity": "high",
+    "level": "bachelor",
+    "title": "Bachelor of Accounting and Finance (Honours) – ODL (Online Mode)",
+    "detailUrl": "https://university.segi.edu.my/course/bachelor-of-accounting-and-finance-honours-odl/",
+    "bestCurrentCandidate": "Bachelor of Accounting and Finance (Hons)",
+    "bestScore": 0.708,
+    "recommendedAction": "人工确认是否将该官网当前专业新增到 SEGi University 板块；ODL/Online Mode 不应自动合并到普通授课版本。"
+  },
+  {
+    "type": "project-programme-not-found-on-official-directory",
+    "severity": "high",
+    "level": "bachelor",
+    "title": "Bachelor of Arts (Hons) in Quantity Surveying",
+    "code": "SEGI-BQS",
+    "bestOfficialCandidate": "Bachelor in Quantity Surveying",
+    "bestScore": 0.7241,
+    "recommendedAction": "复核 2026 PDF 与官网目录命名差异；若官网已改名，先更新官方详情来源和标题后再发布。"
+  },
+  {
+    "type": "project-programme-not-found-on-official-directory",
+    "severity": "high",
+    "level": "bachelor",
+    "title": "Bachelor of English and Public Relations (Hons)",
+    "code": "SEGI-BEPR",
+    "bestOfficialCandidate": "Bachelor of Arts (Hons) in English and Public Relations",
+    "bestScore": 0.7718,
+    "recommendedAction": "复核 2026 PDF 与官网目录命名差异；若官网已改名，先更新官方详情来源和标题后再发布。"
+  },
+  {
+    "type": "project-programme-not-found-on-official-directory",
+    "severity": "high",
+    "level": "bachelor",
+    "title": "Bachelor of Hospitality and Tourism Management (Hons)",
+    "code": "SEGI-BAHM",
+    "bestOfficialCandidate": "Bachelor of Hospitality Management (Honours)",
+    "bestScore": 0.8268,
+    "recommendedAction": "复核 2026 PDF 与官网目录命名差异；若官网已改名，先更新官方详情来源和标题后再发布。"
+  },
+  {
+    "type": "project-programme-not-found-on-official-directory",
+    "severity": "high",
+    "level": "bachelor",
+    "title": "Bachelor of Pharmacy",
+    "code": "SEGI-BPHARM",
+    "bestOfficialCandidate": "Bachelor of Pharmacy with Honours",
+    "bestScore": 0.8083,
+    "recommendedAction": "复核 2026 PDF 与官网目录命名差异；若官网已改名，先更新官方详情来源和标题后再发布。"
+  },
+  {
+    "type": "project-programme-not-found-on-official-directory",
+    "severity": "high",
+    "level": "master",
+    "title": "Master in Medicine",
+    "code": "SEGI-MMED",
+    "bestOfficialCandidate": "Master of Medical Science",
+    "bestScore": 0.5709,
+    "recommendedAction": "复核 2026 PDF 与官网目录命名差异；若官网已改名，先更新官方详情来源和标题后再发布。"
+  },
+  {
+    "type": "project-programme-not-found-on-official-directory",
+    "severity": "high",
+    "level": "master",
+    "title": "Master of Accounting",
+    "code": "SEGI-MA",
+    "bestOfficialCandidate": "Master of Accountancy",
+    "bestScore": 0.7646,
+    "recommendedAction": "复核 2026 PDF 与官网目录命名差异；若官网已改名，先更新官方详情来源和标题后再发布。"
+  },
+  {
+    "type": "project-programme-not-found-on-official-directory",
+    "severity": "high",
+    "level": "master",
+    "title": "Master of Business Administration (5+1)",
+    "code": "SEGI-MBA-5PLUS1",
+    "bestOfficialCandidate": "Master of Business Administration (Finance)",
+    "bestScore": 0.7817,
+    "recommendedAction": "复核 2026 PDF 与官网目录命名差异；若官网已改名，先更新官方详情来源和标题后再发布。"
+  },
+  {
+    "type": "project-programme-not-found-on-official-directory",
+    "severity": "high",
+    "level": "master",
+    "title": "Master of Education (Coursework)",
+    "code": "SEGI-MED-CW",
+    "bestOfficialCandidate": "Master of Education",
+    "bestScore": 0.7679,
+    "recommendedAction": "复核 2026 PDF 与官网目录命名差异；若官网已改名，先更新官方详情来源和标题后再发布。"
+  },
+  {
+    "type": "project-programme-not-found-on-official-directory",
+    "severity": "high",
+    "level": "master",
+    "title": "Master of Engineering (By Research)",
+    "code": "SEGI-MENG-RES",
+    "bestOfficialCandidate": "Master of Education by Research",
+    "bestScore": 0.6869,
+    "recommendedAction": "复核 2026 PDF 与官网目录命名差异；若官网已改名，先更新官方详情来源和标题后再发布。"
+  },
+  {
+    "type": "project-programme-not-found-on-official-directory",
+    "severity": "high",
+    "level": "master",
+    "title": "Master of Information Technology (By Research)",
+    "code": "SEGI-MIT-RES",
+    "bestOfficialCandidate": "Master of Science (Information Technology)",
+    "bestScore": 0.7531,
+    "recommendedAction": "复核 2026 PDF 与官网目录命名差异；若官网已改名，先更新官方详情来源和标题后再发布。"
+  },
+  {
+    "type": "project-programme-not-found-on-official-directory",
+    "severity": "high",
+    "level": "master",
+    "title": "Master of Information Technology (Coursework)",
+    "code": "SEGI-MIT-CW",
+    "bestOfficialCandidate": "Master of Science (Information Technology)",
+    "bestScore": 0.7398,
+    "recommendedAction": "复核 2026 PDF 与官网目录命名差异；若官网已改名，先更新官方详情来源和标题后再发布。"
+  },
+  {
+    "type": "project-programme-not-found-on-official-directory",
+    "severity": "high",
+    "level": "master",
+    "title": "Master of International Law (LL.M)",
+    "code": "SEGI-MIL",
+    "bestOfficialCandidate": "Master of Education",
+    "bestScore": 0.548,
+    "recommendedAction": "复核 2026 PDF 与官网目录命名差异；若官网已改名，先更新官方详情来源和标题后再发布。"
+  },
+  {
+    "type": "project-programme-not-found-on-official-directory",
+    "severity": "high",
+    "level": "master",
+    "title": "Master of Science in Management (By Research)",
+    "code": "SEGI-MSC-MGMT",
+    "bestOfficialCandidate": "Master of Science (Management)",
+    "bestScore": 0.7765,
+    "recommendedAction": "复核 2026 PDF 与官网目录命名差异；若官网已改名，先更新官方详情来源和标题后再发布。"
+  },
+  {
+    "type": "title-variant-needs-human-review",
+    "severity": "medium",
+    "level": "bachelor",
+    "currentTitle": "Bachelor of Arts (Hons) in Visual Communication Design",
+    "officialTitle": "Bachelor of Arts (Hons) Visual Communication Design",
+    "detailUrl": "https://university.segi.edu.my/course/bachelor-of-arts-hons-visual-communication-design/",
+    "score": 0.9429,
+    "recommendedAction": "将官网标题作为英文官方名候选；中文名和商业展示名需单独确认。"
+  },
+  {
+    "type": "title-variant-needs-human-review",
+    "severity": "medium",
+    "level": "bachelor",
+    "currentTitle": "Bachelor of Arts (Hons) in Multimedia Design",
+    "officialTitle": "Bachelor of Arts (Hons) Multimedia Design",
+    "detailUrl": "https://university.segi.edu.my/course/bachelor-of-arts-hons-multimedia-design/",
+    "score": 0.933,
+    "recommendedAction": "将官网标题作为英文官方名候选；中文名和商业展示名需单独确认。"
+  },
+  {
+    "type": "title-variant-needs-human-review",
+    "severity": "medium",
+    "level": "phd",
+    "currentTitle": "Doctor of Philosophy in Information Technology",
+    "officialTitle": "Doctor of Philosophy (Information Technology)",
+    "detailUrl": "https://university.segi.edu.my/course/phd-information-technology-by-research/",
+    "score": 0.9264,
+    "recommendedAction": "将官网标题作为英文官方名候选；中文名和商业展示名需单独确认。"
+  },
+  {
+    "type": "title-variant-needs-human-review",
+    "severity": "medium",
+    "level": "master",
+    "currentTitle": "Master of Science in Pharmaceutical Sciences",
+    "officialTitle": "Master of Science (Pharmaceutical Sciences)",
+    "detailUrl": "https://university.segi.edu.my/course/master-of-science-pharmaceutical-sciences/",
+    "score": 0.9253,
+    "recommendedAction": "将官网标题作为英文官方名候选；中文名和商业展示名需单独确认。"
+  },
+  {
+    "type": "title-variant-needs-human-review",
+    "severity": "medium",
+    "level": "bachelor",
+    "currentTitle": "Bachelor of Science (Hons) in Architecture",
+    "officialTitle": "Bachelor of Science (Hons) Architecture",
+    "detailUrl": "https://university.segi.edu.my/course/bachelor-of-science-in-architecture-hons/",
+    "score": 0.9247,
+    "recommendedAction": "将官网标题作为英文官方名候选；中文名和商业展示名需单独确认。"
+  },
+  {
+    "type": "title-variant-needs-human-review",
+    "severity": "medium",
+    "level": "bachelor",
+    "currentTitle": "Bachelor of Electrical and Electronic Engineering (Hons)",
+    "officialTitle": "Bachelor of Electrical and Electronics Engineering with Honours",
+    "detailUrl": "https://university.segi.edu.my/course/bachelor-of-electrical-and-electronics-engineering-hons/",
+    "score": 0.9189,
+    "recommendedAction": "将官网标题作为英文官方名候选；中文名和商业展示名需单独确认。"
+  },
+  {
+    "type": "title-variant-needs-human-review",
+    "severity": "medium",
+    "level": "master",
+    "currentTitle": "Master of Science in Vision Science",
+    "officialTitle": "Master of Science (Vision Science)",
+    "detailUrl": "https://university.segi.edu.my/course/master-of-science-in-vision-science-by-research/",
+    "score": 0.9087,
+    "recommendedAction": "将官网标题作为英文官方名候选；中文名和商业展示名需单独确认。"
+  },
+  {
+    "type": "title-variant-needs-human-review",
+    "severity": "medium",
+    "level": "phd",
+    "currentTitle": "Doctor of Philosophy in Engineering",
+    "officialTitle": "Doctor of Philosophy (Engineering)",
+    "detailUrl": "https://university.segi.edu.my/course/phd-engineering-by-research/",
+    "score": 0.9087,
+    "recommendedAction": "将官网标题作为英文官方名候选；中文名和商业展示名需单独确认。"
+  },
+  {
+    "type": "title-variant-needs-human-review",
+    "severity": "medium",
+    "level": "phd",
+    "currentTitle": "Doctor of Philosophy in Management",
+    "officialTitle": "Doctor of Philosophy (Management)",
+    "detailUrl": "https://university.segi.edu.my/course/doctor-of-philosophy-in-management/",
+    "score": 0.9077,
+    "recommendedAction": "将官网标题作为英文官方名候选；中文名和商业展示名需单独确认。"
+  },
+  {
+    "type": "title-variant-needs-human-review",
+    "severity": "medium",
+    "level": "phd",
+    "currentTitle": "Doctor of Philosophy in Education",
+    "officialTitle": "Doctor of Philosophy (Education)",
+    "detailUrl": "https://university.segi.edu.my/course/phd-education-by-research/",
+    "score": 0.9067,
+    "recommendedAction": "将官网标题作为英文官方名候选；中文名和商业展示名需单独确认。"
+  },
+  {
+    "type": "title-variant-needs-human-review",
+    "severity": "medium",
+    "level": "master",
+    "currentTitle": "Master of Arts in Corporate Communication",
+    "officialTitle": "Master of Arts in Corporate Communications",
+    "detailUrl": "https://university.segi.edu.my/course/master-of-arts-in-corporate-communications/",
+    "score": 0.9059,
+    "recommendedAction": "将官网标题作为英文官方名候选；中文名和商业展示名需单独确认。"
+  },
+  {
+    "type": "title-variant-needs-human-review",
+    "severity": "medium",
+    "level": "bachelor",
+    "currentTitle": "Bachelor of Biomedical Science (Hons)",
+    "officialTitle": "Bachelor of Biomedical Sciences (Hons)",
+    "detailUrl": "https://university.segi.edu.my/course/bachelor-of-biomedical-science-hons/",
+    "score": 0.8909,
+    "recommendedAction": "将官网标题作为英文官方名候选；中文名和商业展示名需单独确认。"
+  },
+  {
+    "type": "title-variant-needs-human-review",
+    "severity": "medium",
+    "level": "bachelor",
+    "currentTitle": "Bachelor of Dental Surgery",
+    "officialTitle": "Bachelor of Dental Surgery (BDS)",
+    "detailUrl": "https://university.segi.edu.my/course/bachelor-of-dental-surgery-bds/",
+    "score": 0.89,
+    "recommendedAction": "将官网标题作为英文官方名候选；中文名和商业展示名需单独确认。"
+  },
+  {
+    "type": "title-variant-needs-human-review",
+    "severity": "medium",
+    "level": "master",
+    "currentTitle": "Master of Science in Psychology",
+    "officialTitle": "Master of Social Science in Psychology",
+    "detailUrl": "https://university.segi.edu.my/course/master-of-social-science-in-psychology/",
+    "score": 0.879,
+    "recommendedAction": "将官网标题作为英文官方名候选；中文名和商业展示名需单独确认。"
+  },
+  {
+    "type": "title-variant-needs-human-review",
+    "severity": "medium",
+    "level": "master",
+    "currentTitle": "Master of Business Administration",
+    "officialTitle": "Master of Business Administration (Finance)",
+    "detailUrl": "https://university.segi.edu.my/course/mba-finance/",
+    "score": 0.8643,
+    "recommendedAction": "将官网标题作为英文官方名候选；中文名和商业展示名需单独确认。"
+  },
+  {
+    "type": "title-variant-needs-human-review",
+    "severity": "medium",
+    "level": "master",
+    "currentTitle": "Master of Arts in Creative Design Management",
+    "officialTitle": "Master of Creative Design Management",
+    "detailUrl": "https://university.segi.edu.my/course/master-of-creative-design-management/",
+    "score": 0.8443,
+    "recommendedAction": "将官网标题作为英文官方名候选；中文名和商业展示名需单独确认。"
+  },
+  {
+    "type": "official-detail-pages-do-not-publish-tuition",
+    "severity": "medium",
+    "affectedProgrammes": 76,
+    "source": "SEGi official programme detail pages",
+    "recommendedAction": "费用字段继续以用户提供的 2026 fee sheet 或官方可下载 fee document 为费用证据；官网详情页只能作为专业、入学、英语与认证来源。"
+  }
+]

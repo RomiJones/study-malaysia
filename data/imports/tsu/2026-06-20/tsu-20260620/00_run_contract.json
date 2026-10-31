@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "institutionIdentifier": "Taylor's University",
+  "officialName": "Taylor's University",
+  "universityCode": "TSU",
+  "shortName": "Taylor's",
+  "collectionScope": "full",
+  "levels": [
+    "bachelor",
+    "master",
+    "phd"
+  ],
+  "applicantScope": "international",
+  "authorization": "collect",
+  "academicSession": "2026",
+  "currentAsOf": "2026-06-20",
+  "taskInstruction": "现在采用最新优化的标准化流程和我的专用skill进行对泰莱大学的本硕博专业信息采集",
+  "officialDomains": [
+    "taylors.edu.my"
+  ],
+  "selectedChineseTask": "Current user instruction in this Codex thread; no dedicated Taylor's Notion task page was available in local snapshot.",
+  "prdOrTechnicalDesign": [
+    "docs/notion-snapshot/复盘总结.md",
+    "docs/notion-snapshot/技术方案.md",
+    "docs/prd/TASK-096-data-models-data-preparation-requirement-boundary.md",
+    "studymy-official-university-collector references"
+  ],
+  "outputPath": "data/imports/tsu/2026-06-20/tsu-20260620",
+  "verificationCommands": [
+    "python3 scripts/audit_pipeline_stage.py data/imports/tsu/2026-06-20/tsu-20260620 --stage delivery_review --summary-only",
+    "python3 /Users/ian/.codex/skills/studymy-official-university-collector/scripts/audit_delivery.py data/imports/tsu/2026-06-20/tsu-20260620/delivery.json --summary-only"
+  ],
+  "rollbackTarget": "No database writes; remove this batch directory and generated script changes if needed.",
+  "notionUpdatePath": "No writable Notion connector; local Chinese development notes only.",
+  "status": "collected"
+}

@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "mode": "uum-all-level-published",
+  "createdAt": "2026-06-28T10:33:24.360Z",
+  "institution": {
+    "code": "UUM",
+    "name": "Universiti Utara Malaysia",
+    "importedRows": 105,
+    "byLevel": {
+      "bachelor": 38,
+      "master": 61,
+      "phd": 6
+    }
+  },
+  "database": {
+    "backupPath": "tmp/backups/uum-all-level-public-before-2026-06-28T10-33-23-900Z.json",
+    "transactionalImport": "passed",
+    "catalogCacheCleared": false,
+    "scopedRows": 105,
+    "activeSupersededRows": 0,
+    "legacyVisibleRows": 0,
+    "visibleCurrentRows": 105
+  },
+  "publicVisibility": {
+    "universityPublicDisplayStatus": "ready",
+    "universityIsPublished": true,
+    "universityProgramCount": 105,
+    "rowsPublished": 105,
+    "rowsReady": 105
+  },
+  "displayGate": {
+    "chineseNameRows": 105,
+    "chineseFacultyRows": 105,
+    "chineseCurriculumRows": 105,
+    "chineseCareerRows": 105,
+    "languageRows": 105,
+    "undergraduateEquivalentIeltsRows": 37,
+    "officialTotalFeeRows": 38,
+    "calculatedFromOfficialRateRows": 67,
+    "officialRateFeeRows": 0,
+    "scalarTuitionRows": 105,
+    "rateOnlyDisplayRows": 0,
+    "durationKnownRows": 105,
+    "durationOfficialUnpublishedRows": 0,
+    "sourceRows": 105
+  },
+  "designBoundary": {
+    "frontendFilesModified": false,
+    "note": "This publication imports data only and does not alter StudyMY page design, layout, CSS or components."
+  }
+}

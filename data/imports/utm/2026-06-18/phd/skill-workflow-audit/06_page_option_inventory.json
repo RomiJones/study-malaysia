@@ -1,0 +1,3632 @@
+[
+  {
+    "code": "UTM-PHD-001",
+    "nameEnOfficial": "Doctor of Philosophy (Generic)",
+    "detailPageUrl": "https://admission.utm.my/int-postgraduate-school-of-biomedical-engineering-health-science/",
+    "retrievalMethod": "static HTML official programme list plus official field-authority pages",
+    "hasOptions": true,
+    "options": [
+      {
+        "label": "Programme list row",
+        "optionType": "same-programme official sublink",
+        "governedFields": [
+          "officialTitle",
+          "faculty",
+          "level",
+          "studyMode",
+          "internationalEligibility"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-biomedical-engineering-health-science/",
+        "evidencePointer": "https://admission.utm.my/int-postgraduate-school-of-biomedical-engineering-health-science/"
+      },
+      {
+        "label": "Programme research field, specialization or EdD structure",
+        "optionType": "course-setting/curriculum/course panel",
+        "governedFields": [
+          "courseSetting",
+          "curriculum"
+        ],
+        "state": "not-applicable",
+        "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-biomedical-engineering-health-science/",
+        "evidencePointer": "No programme-level course structure, module list, dissertation structure, or explicit research-field/specialization label was published in the collected official listing for this row.",
+        "reviewReason": "No explicit course structure, Field of Research, Specialization or EdD coursework/dissertation structure is published for this official row."
+      },
+      {
+        "label": "International postgraduate fee authority",
+        "optionType": "fee panel",
+        "governedFields": [
+          "tuition",
+          "feeStatus"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "evidencePointer": "https://admission.utm.my/fees-pg-inter/"
+      },
+      {
+        "label": "International postgraduate entry requirement authority",
+        "optionType": "entry requirement panel",
+        "governedFields": [
+          "academicRequirement"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/int-pg-entry-requirements/",
+        "evidencePointer": "https://admission.utm.my/int-pg-entry-requirements/"
+      },
+      {
+        "label": "English language requirement authority",
+        "optionType": "language requirement panel",
+        "governedFields": [
+          "languageRequirement"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/english-language-requirements-3/",
+        "evidencePointer": "https://admission.utm.my/english-language-requirements-3/"
+      }
+    ]
+  },
+  {
+    "code": "UTM-PHD-002",
+    "nameEnOfficial": "Doctor of Philosophy (Engineering Education)",
+    "detailPageUrl": "https://admission.utm.my/int-postgraduate-school-of-biomedical-engineering-health-science/",
+    "retrievalMethod": "static HTML official programme list plus official field-authority pages",
+    "hasOptions": true,
+    "options": [
+      {
+        "label": "Programme list row",
+        "optionType": "same-programme official sublink",
+        "governedFields": [
+          "officialTitle",
+          "faculty",
+          "level",
+          "studyMode",
+          "internationalEligibility"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-biomedical-engineering-health-science/",
+        "evidencePointer": "https://admission.utm.my/int-postgraduate-school-of-biomedical-engineering-health-science/"
+      },
+      {
+        "label": "Programme research field, specialization or EdD structure",
+        "optionType": "course-setting/curriculum/course panel",
+        "governedFields": [
+          "courseSetting",
+          "curriculum"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-biomedical-engineering-health-science/",
+        "evidencePointer": "Doctor of Philosophy (Engineering Education)",
+        "reviewReason": null
+      },
+      {
+        "label": "International postgraduate fee authority",
+        "optionType": "fee panel",
+        "governedFields": [
+          "tuition",
+          "feeStatus"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "evidencePointer": "https://admission.utm.my/fees-pg-inter/"
+      },
+      {
+        "label": "International postgraduate entry requirement authority",
+        "optionType": "entry requirement panel",
+        "governedFields": [
+          "academicRequirement"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/int-pg-entry-requirements/",
+        "evidencePointer": "https://admission.utm.my/int-pg-entry-requirements/"
+      },
+      {
+        "label": "English language requirement authority",
+        "optionType": "language requirement panel",
+        "governedFields": [
+          "languageRequirement"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/english-language-requirements-3/",
+        "evidencePointer": "https://admission.utm.my/english-language-requirements-3/"
+      }
+    ]
+  },
+  {
+    "code": "UTM-PHD-003",
+    "nameEnOfficial": "Doctor of Engineering Specialization : Construction Technology and Management",
+    "detailPageUrl": "https://admission.utm.my/int-postgraduate-school-of-civil-engineering/",
+    "retrievalMethod": "static HTML official programme list plus official field-authority pages",
+    "hasOptions": true,
+    "options": [
+      {
+        "label": "Programme list row",
+        "optionType": "same-programme official sublink",
+        "governedFields": [
+          "officialTitle",
+          "faculty",
+          "level",
+          "studyMode",
+          "internationalEligibility"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-civil-engineering/",
+        "evidencePointer": "https://admission.utm.my/int-postgraduate-school-of-civil-engineering/"
+      },
+      {
+        "label": "Programme research field, specialization or EdD structure",
+        "optionType": "course-setting/curriculum/course panel",
+        "governedFields": [
+          "courseSetting",
+          "curriculum"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-civil-engineering/",
+        "evidencePointer": "Doctor of Engineering Specialization : Construction Technology and Management",
+        "reviewReason": null
+      },
+      {
+        "label": "International postgraduate fee authority",
+        "optionType": "fee panel",
+        "governedFields": [
+          "tuition",
+          "feeStatus"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "evidencePointer": "https://admission.utm.my/fees-pg-inter/"
+      },
+      {
+        "label": "International postgraduate entry requirement authority",
+        "optionType": "entry requirement panel",
+        "governedFields": [
+          "academicRequirement"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/int-pg-entry-requirements/",
+        "evidencePointer": "https://admission.utm.my/int-pg-entry-requirements/"
+      },
+      {
+        "label": "English language requirement authority",
+        "optionType": "language requirement panel",
+        "governedFields": [
+          "languageRequirement"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/english-language-requirements-3/",
+        "evidencePointer": "https://admission.utm.my/english-language-requirements-3/"
+      }
+    ]
+  },
+  {
+    "code": "UTM-PHD-004",
+    "nameEnOfficial": "Doctor of Philosophy",
+    "detailPageUrl": "https://admission.utm.my/int-postgraduate-school-of-civil-engineering/",
+    "retrievalMethod": "static HTML official programme list plus official field-authority pages",
+    "hasOptions": true,
+    "options": [
+      {
+        "label": "Programme list row",
+        "optionType": "same-programme official sublink",
+        "governedFields": [
+          "officialTitle",
+          "faculty",
+          "level",
+          "studyMode",
+          "internationalEligibility"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-civil-engineering/",
+        "evidencePointer": "https://admission.utm.my/int-postgraduate-school-of-civil-engineering/"
+      },
+      {
+        "label": "Programme research field, specialization or EdD structure",
+        "optionType": "course-setting/curriculum/course panel",
+        "governedFields": [
+          "courseSetting",
+          "curriculum"
+        ],
+        "state": "not-applicable",
+        "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-civil-engineering/",
+        "evidencePointer": "No programme-level course structure, module list, dissertation structure, or explicit research-field/specialization label was published in the collected official listing for this row.",
+        "reviewReason": "No explicit course structure, Field of Research, Specialization or EdD coursework/dissertation structure is published for this official row."
+      },
+      {
+        "label": "International postgraduate fee authority",
+        "optionType": "fee panel",
+        "governedFields": [
+          "tuition",
+          "feeStatus"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "evidencePointer": "https://admission.utm.my/fees-pg-inter/"
+      },
+      {
+        "label": "International postgraduate entry requirement authority",
+        "optionType": "entry requirement panel",
+        "governedFields": [
+          "academicRequirement"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/int-pg-entry-requirements/",
+        "evidencePointer": "https://admission.utm.my/int-pg-entry-requirements/"
+      },
+      {
+        "label": "English language requirement authority",
+        "optionType": "language requirement panel",
+        "governedFields": [
+          "languageRequirement"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/english-language-requirements-3/",
+        "evidencePointer": "https://admission.utm.my/english-language-requirements-3/"
+      }
+    ]
+  },
+  {
+    "code": "UTM-PHD-005",
+    "nameEnOfficial": "Doctor of Professional Practice (DPP)",
+    "detailPageUrl": "https://admission.utm.my/odl/",
+    "retrievalMethod": "static HTML official programme list plus official field-authority pages",
+    "hasOptions": true,
+    "options": [
+      {
+        "label": "Programme list row",
+        "optionType": "same-programme official sublink",
+        "governedFields": [
+          "officialTitle",
+          "faculty",
+          "level",
+          "studyMode",
+          "internationalEligibility"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/odl/",
+        "evidencePointer": "https://admission.utm.my/odl/"
+      },
+      {
+        "label": "Programme research field, specialization or EdD structure",
+        "optionType": "course-setting/curriculum/course panel",
+        "governedFields": [
+          "courseSetting",
+          "curriculum"
+        ],
+        "state": "not-applicable",
+        "sourceUrl": "https://admission.utm.my/odl/",
+        "evidencePointer": "No programme-level course structure, module list, dissertation structure, or explicit research-field/specialization label was published in the collected official listing for this row.",
+        "reviewReason": "No explicit course structure, Field of Research, Specialization or EdD coursework/dissertation structure is published for this official row."
+      },
+      {
+        "label": "International postgraduate fee authority",
+        "optionType": "fee panel",
+        "governedFields": [
+          "tuition",
+          "feeStatus"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://odl.utm.my/fees-structure/",
+        "evidencePointer": "https://odl.utm.my/fees-structure/"
+      },
+      {
+        "label": "International postgraduate entry requirement authority",
+        "optionType": "entry requirement panel",
+        "governedFields": [
+          "academicRequirement"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/odl/",
+        "evidencePointer": "https://admission.utm.my/odl/"
+      },
+      {
+        "label": "English language requirement authority",
+        "optionType": "language requirement panel",
+        "governedFields": [
+          "languageRequirement"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/english-language-requirements-3/",
+        "evidencePointer": "https://admission.utm.my/english-language-requirements-3/"
+      }
+    ]
+  },
+  {
+    "code": "UTM-PHD-006",
+    "nameEnOfficial": "Doctor of Engineering Specialization : Process Plant Management",
+    "detailPageUrl": "https://admission.utm.my/int-postgraduate-school-of-chemical-energy-engineering/",
+    "retrievalMethod": "static HTML official programme list plus official field-authority pages",
+    "hasOptions": true,
+    "options": [
+      {
+        "label": "Programme list row",
+        "optionType": "same-programme official sublink",
+        "governedFields": [
+          "officialTitle",
+          "faculty",
+          "level",
+          "studyMode",
+          "internationalEligibility"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-chemical-energy-engineering/",
+        "evidencePointer": "https://admission.utm.my/int-postgraduate-school-of-chemical-energy-engineering/"
+      },
+      {
+        "label": "Programme research field, specialization or EdD structure",
+        "optionType": "course-setting/curriculum/course panel",
+        "governedFields": [
+          "courseSetting",
+          "curriculum"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-chemical-energy-engineering/",
+        "evidencePointer": "Doctor of Engineering Specialization: Process Plant Management",
+        "reviewReason": null
+      },
+      {
+        "label": "International postgraduate fee authority",
+        "optionType": "fee panel",
+        "governedFields": [
+          "tuition",
+          "feeStatus"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "evidencePointer": "https://admission.utm.my/fees-pg-inter/"
+      },
+      {
+        "label": "International postgraduate entry requirement authority",
+        "optionType": "entry requirement panel",
+        "governedFields": [
+          "academicRequirement"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/int-pg-entry-requirements/",
+        "evidencePointer": "https://admission.utm.my/int-pg-entry-requirements/"
+      },
+      {
+        "label": "English language requirement authority",
+        "optionType": "language requirement panel",
+        "governedFields": [
+          "languageRequirement"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/english-language-requirements-3/",
+        "evidencePointer": "https://admission.utm.my/english-language-requirements-3/"
+      }
+    ]
+  },
+  {
+    "code": "UTM-PHD-007",
+    "nameEnOfficial": "Doctor of Philosophy Field of Research : Chemical Engineering",
+    "detailPageUrl": "https://admission.utm.my/int-postgraduate-school-of-chemical-energy-engineering/",
+    "retrievalMethod": "static HTML official programme list plus official field-authority pages",
+    "hasOptions": true,
+    "options": [
+      {
+        "label": "Programme list row",
+        "optionType": "same-programme official sublink",
+        "governedFields": [
+          "officialTitle",
+          "faculty",
+          "level",
+          "studyMode",
+          "internationalEligibility"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-chemical-energy-engineering/",
+        "evidencePointer": "https://admission.utm.my/int-postgraduate-school-of-chemical-energy-engineering/"
+      },
+      {
+        "label": "Programme research field, specialization or EdD structure",
+        "optionType": "course-setting/curriculum/course panel",
+        "governedFields": [
+          "courseSetting",
+          "curriculum"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-chemical-energy-engineering/",
+        "evidencePointer": "Master / Doctor of Philosophy Field of Research : Chemical Engineering",
+        "reviewReason": null
+      },
+      {
+        "label": "International postgraduate fee authority",
+        "optionType": "fee panel",
+        "governedFields": [
+          "tuition",
+          "feeStatus"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "evidencePointer": "https://admission.utm.my/fees-pg-inter/"
+      },
+      {
+        "label": "International postgraduate entry requirement authority",
+        "optionType": "entry requirement panel",
+        "governedFields": [
+          "academicRequirement"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/int-pg-entry-requirements/",
+        "evidencePointer": "https://admission.utm.my/int-pg-entry-requirements/"
+      },
+      {
+        "label": "English language requirement authority",
+        "optionType": "language requirement panel",
+        "governedFields": [
+          "languageRequirement"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/english-language-requirements-3/",
+        "evidencePointer": "https://admission.utm.my/english-language-requirements-3/"
+      }
+    ]
+  },
+  {
+    "code": "UTM-PHD-008",
+    "nameEnOfficial": "Doctor of Philosophy Field of Research : Bioprocess Engineering",
+    "detailPageUrl": "https://admission.utm.my/int-postgraduate-school-of-chemical-energy-engineering/",
+    "retrievalMethod": "static HTML official programme list plus official field-authority pages",
+    "hasOptions": true,
+    "options": [
+      {
+        "label": "Programme list row",
+        "optionType": "same-programme official sublink",
+        "governedFields": [
+          "officialTitle",
+          "faculty",
+          "level",
+          "studyMode",
+          "internationalEligibility"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-chemical-energy-engineering/",
+        "evidencePointer": "https://admission.utm.my/int-postgraduate-school-of-chemical-energy-engineering/"
+      },
+      {
+        "label": "Programme research field, specialization or EdD structure",
+        "optionType": "course-setting/curriculum/course panel",
+        "governedFields": [
+          "courseSetting",
+          "curriculum"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-chemical-energy-engineering/",
+        "evidencePointer": "Master / Doctor of Philosophy Field of Research : Bioprocess Engineering",
+        "reviewReason": null
+      },
+      {
+        "label": "International postgraduate fee authority",
+        "optionType": "fee panel",
+        "governedFields": [
+          "tuition",
+          "feeStatus"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "evidencePointer": "https://admission.utm.my/fees-pg-inter/"
+      },
+      {
+        "label": "International postgraduate entry requirement authority",
+        "optionType": "entry requirement panel",
+        "governedFields": [
+          "academicRequirement"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/int-pg-entry-requirements/",
+        "evidencePointer": "https://admission.utm.my/int-pg-entry-requirements/"
+      },
+      {
+        "label": "English language requirement authority",
+        "optionType": "language requirement panel",
+        "governedFields": [
+          "languageRequirement"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/english-language-requirements-3/",
+        "evidencePointer": "https://admission.utm.my/english-language-requirements-3/"
+      }
+    ]
+  },
+  {
+    "code": "UTM-PHD-009",
+    "nameEnOfficial": "Doctor of Philosophy Field of Research : Gas Engineering",
+    "detailPageUrl": "https://admission.utm.my/int-postgraduate-school-of-chemical-energy-engineering/",
+    "retrievalMethod": "static HTML official programme list plus official field-authority pages",
+    "hasOptions": true,
+    "options": [
+      {
+        "label": "Programme list row",
+        "optionType": "same-programme official sublink",
+        "governedFields": [
+          "officialTitle",
+          "faculty",
+          "level",
+          "studyMode",
+          "internationalEligibility"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-chemical-energy-engineering/",
+        "evidencePointer": "https://admission.utm.my/int-postgraduate-school-of-chemical-energy-engineering/"
+      },
+      {
+        "label": "Programme research field, specialization or EdD structure",
+        "optionType": "course-setting/curriculum/course panel",
+        "governedFields": [
+          "courseSetting",
+          "curriculum"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-chemical-energy-engineering/",
+        "evidencePointer": "Master / Doctor of Philosophy Field of Research : Gas Engineering",
+        "reviewReason": null
+      },
+      {
+        "label": "International postgraduate fee authority",
+        "optionType": "fee panel",
+        "governedFields": [
+          "tuition",
+          "feeStatus"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "evidencePointer": "https://admission.utm.my/fees-pg-inter/"
+      },
+      {
+        "label": "International postgraduate entry requirement authority",
+        "optionType": "entry requirement panel",
+        "governedFields": [
+          "academicRequirement"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/int-pg-entry-requirements/",
+        "evidencePointer": "https://admission.utm.my/int-pg-entry-requirements/"
+      },
+      {
+        "label": "English language requirement authority",
+        "optionType": "language requirement panel",
+        "governedFields": [
+          "languageRequirement"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/english-language-requirements-3/",
+        "evidencePointer": "https://admission.utm.my/english-language-requirements-3/"
+      }
+    ]
+  },
+  {
+    "code": "UTM-PHD-010",
+    "nameEnOfficial": "Doctor of Philosophy Field of Research : Petroleum Engineering",
+    "detailPageUrl": "https://admission.utm.my/int-postgraduate-school-of-chemical-energy-engineering/",
+    "retrievalMethod": "static HTML official programme list plus official field-authority pages",
+    "hasOptions": true,
+    "options": [
+      {
+        "label": "Programme list row",
+        "optionType": "same-programme official sublink",
+        "governedFields": [
+          "officialTitle",
+          "faculty",
+          "level",
+          "studyMode",
+          "internationalEligibility"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-chemical-energy-engineering/",
+        "evidencePointer": "https://admission.utm.my/int-postgraduate-school-of-chemical-energy-engineering/"
+      },
+      {
+        "label": "Programme research field, specialization or EdD structure",
+        "optionType": "course-setting/curriculum/course panel",
+        "governedFields": [
+          "courseSetting",
+          "curriculum"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-chemical-energy-engineering/",
+        "evidencePointer": "Master / Doctor of Philosophy Field of Research : Petroleum Engineering",
+        "reviewReason": null
+      },
+      {
+        "label": "International postgraduate fee authority",
+        "optionType": "fee panel",
+        "governedFields": [
+          "tuition",
+          "feeStatus"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "evidencePointer": "https://admission.utm.my/fees-pg-inter/"
+      },
+      {
+        "label": "International postgraduate entry requirement authority",
+        "optionType": "entry requirement panel",
+        "governedFields": [
+          "academicRequirement"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/int-pg-entry-requirements/",
+        "evidencePointer": "https://admission.utm.my/int-pg-entry-requirements/"
+      },
+      {
+        "label": "English language requirement authority",
+        "optionType": "language requirement panel",
+        "governedFields": [
+          "languageRequirement"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/english-language-requirements-3/",
+        "evidencePointer": "https://admission.utm.my/english-language-requirements-3/"
+      }
+    ]
+  },
+  {
+    "code": "UTM-PHD-011",
+    "nameEnOfficial": "Doctor of Philosophy Field of Research : Polymer Engineering",
+    "detailPageUrl": "https://admission.utm.my/int-postgraduate-school-of-chemical-energy-engineering/",
+    "retrievalMethod": "static HTML official programme list plus official field-authority pages",
+    "hasOptions": true,
+    "options": [
+      {
+        "label": "Programme list row",
+        "optionType": "same-programme official sublink",
+        "governedFields": [
+          "officialTitle",
+          "faculty",
+          "level",
+          "studyMode",
+          "internationalEligibility"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-chemical-energy-engineering/",
+        "evidencePointer": "https://admission.utm.my/int-postgraduate-school-of-chemical-energy-engineering/"
+      },
+      {
+        "label": "Programme research field, specialization or EdD structure",
+        "optionType": "course-setting/curriculum/course panel",
+        "governedFields": [
+          "courseSetting",
+          "curriculum"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-chemical-energy-engineering/",
+        "evidencePointer": "Master / Doctor of Philosophy Field of Research : Polymer Engineering",
+        "reviewReason": null
+      },
+      {
+        "label": "International postgraduate fee authority",
+        "optionType": "fee panel",
+        "governedFields": [
+          "tuition",
+          "feeStatus"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "evidencePointer": "https://admission.utm.my/fees-pg-inter/"
+      },
+      {
+        "label": "International postgraduate entry requirement authority",
+        "optionType": "entry requirement panel",
+        "governedFields": [
+          "academicRequirement"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/int-pg-entry-requirements/",
+        "evidencePointer": "https://admission.utm.my/int-pg-entry-requirements/"
+      },
+      {
+        "label": "English language requirement authority",
+        "optionType": "language requirement panel",
+        "governedFields": [
+          "languageRequirement"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/english-language-requirements-3/",
+        "evidencePointer": "https://admission.utm.my/english-language-requirements-3/"
+      }
+    ]
+  },
+  {
+    "code": "UTM-PHD-012",
+    "nameEnOfficial": "Doctor of Philosophy Field of Research : Environmental Engineering",
+    "detailPageUrl": "https://admission.utm.my/int-postgraduate-school-of-chemical-energy-engineering/",
+    "retrievalMethod": "static HTML official programme list plus official field-authority pages",
+    "hasOptions": true,
+    "options": [
+      {
+        "label": "Programme list row",
+        "optionType": "same-programme official sublink",
+        "governedFields": [
+          "officialTitle",
+          "faculty",
+          "level",
+          "studyMode",
+          "internationalEligibility"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-chemical-energy-engineering/",
+        "evidencePointer": "https://admission.utm.my/int-postgraduate-school-of-chemical-energy-engineering/"
+      },
+      {
+        "label": "Programme research field, specialization or EdD structure",
+        "optionType": "course-setting/curriculum/course panel",
+        "governedFields": [
+          "courseSetting",
+          "curriculum"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-chemical-energy-engineering/",
+        "evidencePointer": "Master / Doctor of Philosophy Field of Research : Environmental Engineering",
+        "reviewReason": null
+      },
+      {
+        "label": "International postgraduate fee authority",
+        "optionType": "fee panel",
+        "governedFields": [
+          "tuition",
+          "feeStatus"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "evidencePointer": "https://admission.utm.my/fees-pg-inter/"
+      },
+      {
+        "label": "International postgraduate entry requirement authority",
+        "optionType": "entry requirement panel",
+        "governedFields": [
+          "academicRequirement"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/int-pg-entry-requirements/",
+        "evidencePointer": "https://admission.utm.my/int-pg-entry-requirements/"
+      },
+      {
+        "label": "English language requirement authority",
+        "optionType": "language requirement panel",
+        "governedFields": [
+          "languageRequirement"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/english-language-requirements-3/",
+        "evidencePointer": "https://admission.utm.my/english-language-requirements-3/"
+      }
+    ]
+  },
+  {
+    "code": "UTM-PHD-013",
+    "nameEnOfficial": "Doctor of Philosophy Field of Research : Biomedical Engineering",
+    "detailPageUrl": "https://admission.utm.my/int-postgraduate-school-of-electrical-engineering/",
+    "retrievalMethod": "static HTML official programme list plus official field-authority pages",
+    "hasOptions": true,
+    "options": [
+      {
+        "label": "Programme list row",
+        "optionType": "same-programme official sublink",
+        "governedFields": [
+          "officialTitle",
+          "faculty",
+          "level",
+          "studyMode",
+          "internationalEligibility"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-electrical-engineering/",
+        "evidencePointer": "https://admission.utm.my/int-postgraduate-school-of-electrical-engineering/"
+      },
+      {
+        "label": "Programme research field, specialization or EdD structure",
+        "optionType": "course-setting/curriculum/course panel",
+        "governedFields": [
+          "courseSetting",
+          "curriculum"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-electrical-engineering/",
+        "evidencePointer": "Doctor of Philosophy Field of Research : Biomedical Engineering",
+        "reviewReason": null
+      },
+      {
+        "label": "International postgraduate fee authority",
+        "optionType": "fee panel",
+        "governedFields": [
+          "tuition",
+          "feeStatus"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "evidencePointer": "https://admission.utm.my/fees-pg-inter/"
+      },
+      {
+        "label": "International postgraduate entry requirement authority",
+        "optionType": "entry requirement panel",
+        "governedFields": [
+          "academicRequirement"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/int-pg-entry-requirements/",
+        "evidencePointer": "https://admission.utm.my/int-pg-entry-requirements/"
+      },
+      {
+        "label": "English language requirement authority",
+        "optionType": "language requirement panel",
+        "governedFields": [
+          "languageRequirement"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/english-language-requirements-3/",
+        "evidencePointer": "https://admission.utm.my/english-language-requirements-3/"
+      }
+    ]
+  },
+  {
+    "code": "UTM-PHD-014",
+    "nameEnOfficial": "Doctor of Philosophy Field of Research : Electrical Engineering",
+    "detailPageUrl": "https://admission.utm.my/int-postgraduate-school-of-electrical-engineering/",
+    "retrievalMethod": "static HTML official programme list plus official field-authority pages",
+    "hasOptions": true,
+    "options": [
+      {
+        "label": "Programme list row",
+        "optionType": "same-programme official sublink",
+        "governedFields": [
+          "officialTitle",
+          "faculty",
+          "level",
+          "studyMode",
+          "internationalEligibility"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-electrical-engineering/",
+        "evidencePointer": "https://admission.utm.my/int-postgraduate-school-of-electrical-engineering/"
+      },
+      {
+        "label": "Programme research field, specialization or EdD structure",
+        "optionType": "course-setting/curriculum/course panel",
+        "governedFields": [
+          "courseSetting",
+          "curriculum"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-electrical-engineering/",
+        "evidencePointer": "Doctor of Philosophy Field of Research : Electrical Engineering",
+        "reviewReason": null
+      },
+      {
+        "label": "International postgraduate fee authority",
+        "optionType": "fee panel",
+        "governedFields": [
+          "tuition",
+          "feeStatus"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "evidencePointer": "https://admission.utm.my/fees-pg-inter/"
+      },
+      {
+        "label": "International postgraduate entry requirement authority",
+        "optionType": "entry requirement panel",
+        "governedFields": [
+          "academicRequirement"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/int-pg-entry-requirements/",
+        "evidencePointer": "https://admission.utm.my/int-pg-entry-requirements/"
+      },
+      {
+        "label": "English language requirement authority",
+        "optionType": "language requirement panel",
+        "governedFields": [
+          "languageRequirement"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/english-language-requirements-3/",
+        "evidencePointer": "https://admission.utm.my/english-language-requirements-3/"
+      }
+    ]
+  },
+  {
+    "code": "UTM-PHD-015",
+    "nameEnOfficial": "Doctor of Philosophy Field of Research : Health Science",
+    "detailPageUrl": "https://admission.utm.my/int-postgraduate-school-of-electrical-engineering/",
+    "retrievalMethod": "static HTML official programme list plus official field-authority pages",
+    "hasOptions": true,
+    "options": [
+      {
+        "label": "Programme list row",
+        "optionType": "same-programme official sublink",
+        "governedFields": [
+          "officialTitle",
+          "faculty",
+          "level",
+          "studyMode",
+          "internationalEligibility"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-electrical-engineering/",
+        "evidencePointer": "https://admission.utm.my/int-postgraduate-school-of-electrical-engineering/"
+      },
+      {
+        "label": "Programme research field, specialization or EdD structure",
+        "optionType": "course-setting/curriculum/course panel",
+        "governedFields": [
+          "courseSetting",
+          "curriculum"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-electrical-engineering/",
+        "evidencePointer": "Doctor of Philosophy Field of Research : Health Science",
+        "reviewReason": null
+      },
+      {
+        "label": "International postgraduate fee authority",
+        "optionType": "fee panel",
+        "governedFields": [
+          "tuition",
+          "feeStatus"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "evidencePointer": "https://admission.utm.my/fees-pg-inter/"
+      },
+      {
+        "label": "International postgraduate entry requirement authority",
+        "optionType": "entry requirement panel",
+        "governedFields": [
+          "academicRequirement"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/int-pg-entry-requirements/",
+        "evidencePointer": "https://admission.utm.my/int-pg-entry-requirements/"
+      },
+      {
+        "label": "English language requirement authority",
+        "optionType": "language requirement panel",
+        "governedFields": [
+          "languageRequirement"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/english-language-requirements-3/",
+        "evidencePointer": "https://admission.utm.my/english-language-requirements-3/"
+      }
+    ]
+  },
+  {
+    "code": "UTM-PHD-016",
+    "nameEnOfficial": "Doctor of Philosophy Field of Research : Mechanical Engineering",
+    "detailPageUrl": "https://admission.utm.my/int-postgraduate-school-of-mechanical-engineering/",
+    "retrievalMethod": "static HTML official programme list plus official field-authority pages",
+    "hasOptions": true,
+    "options": [
+      {
+        "label": "Programme list row",
+        "optionType": "same-programme official sublink",
+        "governedFields": [
+          "officialTitle",
+          "faculty",
+          "level",
+          "studyMode",
+          "internationalEligibility"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-mechanical-engineering/",
+        "evidencePointer": "https://admission.utm.my/int-postgraduate-school-of-mechanical-engineering/"
+      },
+      {
+        "label": "Programme research field, specialization or EdD structure",
+        "optionType": "course-setting/curriculum/course panel",
+        "governedFields": [
+          "courseSetting",
+          "curriculum"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-mechanical-engineering/",
+        "evidencePointer": "Doctor of Philosophy Field of Research : Mechanical Engineering",
+        "reviewReason": null
+      },
+      {
+        "label": "International postgraduate fee authority",
+        "optionType": "fee panel",
+        "governedFields": [
+          "tuition",
+          "feeStatus"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "evidencePointer": "https://admission.utm.my/fees-pg-inter/"
+      },
+      {
+        "label": "International postgraduate entry requirement authority",
+        "optionType": "entry requirement panel",
+        "governedFields": [
+          "academicRequirement"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/int-pg-entry-requirements/",
+        "evidencePointer": "https://admission.utm.my/int-pg-entry-requirements/"
+      },
+      {
+        "label": "English language requirement authority",
+        "optionType": "language requirement panel",
+        "governedFields": [
+          "languageRequirement"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/english-language-requirements-3/",
+        "evidencePointer": "https://admission.utm.my/english-language-requirements-3/"
+      }
+    ]
+  },
+  {
+    "code": "UTM-PHD-017",
+    "nameEnOfficial": "Doctor of Philosophy",
+    "detailPageUrl": "https://admission.utm.my/int-faculty-of-social-science-and-humanities/",
+    "retrievalMethod": "static HTML official programme list plus official field-authority pages",
+    "hasOptions": true,
+    "options": [
+      {
+        "label": "Programme list row",
+        "optionType": "same-programme official sublink",
+        "governedFields": [
+          "officialTitle",
+          "faculty",
+          "level",
+          "studyMode",
+          "internationalEligibility"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/int-faculty-of-social-science-and-humanities/",
+        "evidencePointer": "https://admission.utm.my/int-faculty-of-social-science-and-humanities/"
+      },
+      {
+        "label": "Programme research field, specialization or EdD structure",
+        "optionType": "course-setting/curriculum/course panel",
+        "governedFields": [
+          "courseSetting",
+          "curriculum"
+        ],
+        "state": "not-applicable",
+        "sourceUrl": "https://admission.utm.my/int-faculty-of-social-science-and-humanities/",
+        "evidencePointer": "No programme-level course structure, module list, dissertation structure, or explicit research-field/specialization label was published in the collected official listing for this row.",
+        "reviewReason": "No explicit course structure, Field of Research, Specialization or EdD coursework/dissertation structure is published for this official row."
+      },
+      {
+        "label": "International postgraduate fee authority",
+        "optionType": "fee panel",
+        "governedFields": [
+          "tuition",
+          "feeStatus"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "evidencePointer": "https://admission.utm.my/fees-pg-inter/"
+      },
+      {
+        "label": "International postgraduate entry requirement authority",
+        "optionType": "entry requirement panel",
+        "governedFields": [
+          "academicRequirement"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/int-pg-entry-requirements/",
+        "evidencePointer": "https://admission.utm.my/int-pg-entry-requirements/"
+      },
+      {
+        "label": "English language requirement authority",
+        "optionType": "language requirement panel",
+        "governedFields": [
+          "languageRequirement"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/english-language-requirements-3/",
+        "evidencePointer": "https://admission.utm.my/english-language-requirements-3/"
+      }
+    ]
+  },
+  {
+    "code": "UTM-PHD-018",
+    "nameEnOfficial": "Doctor of Philosophy Field of Research : Policy Studies",
+    "detailPageUrl": "https://admission.utm.my/int-faculty-of-social-science-and-humanities/",
+    "retrievalMethod": "static HTML official programme list plus official field-authority pages",
+    "hasOptions": true,
+    "options": [
+      {
+        "label": "Programme list row",
+        "optionType": "same-programme official sublink",
+        "governedFields": [
+          "officialTitle",
+          "faculty",
+          "level",
+          "studyMode",
+          "internationalEligibility"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/int-faculty-of-social-science-and-humanities/",
+        "evidencePointer": "https://admission.utm.my/int-faculty-of-social-science-and-humanities/"
+      },
+      {
+        "label": "Programme research field, specialization or EdD structure",
+        "optionType": "course-setting/curriculum/course panel",
+        "governedFields": [
+          "courseSetting",
+          "curriculum"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/int-faculty-of-social-science-and-humanities/",
+        "evidencePointer": "Doctor of Philosophy Field of Research : Policy Studies",
+        "reviewReason": null
+      },
+      {
+        "label": "International postgraduate fee authority",
+        "optionType": "fee panel",
+        "governedFields": [
+          "tuition",
+          "feeStatus"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "evidencePointer": "https://admission.utm.my/fees-pg-inter/"
+      },
+      {
+        "label": "International postgraduate entry requirement authority",
+        "optionType": "entry requirement panel",
+        "governedFields": [
+          "academicRequirement"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/int-pg-entry-requirements/",
+        "evidencePointer": "https://admission.utm.my/int-pg-entry-requirements/"
+      },
+      {
+        "label": "English language requirement authority",
+        "optionType": "language requirement panel",
+        "governedFields": [
+          "languageRequirement"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/english-language-requirements-3/",
+        "evidencePointer": "https://admission.utm.my/english-language-requirements-3/"
+      }
+    ]
+  },
+  {
+    "code": "UTM-PHD-019",
+    "nameEnOfficial": "Doctor of Philosophy (Generic)",
+    "detailPageUrl": "https://admission.utm.my/int-postgraduate-school-of-hrd-psycohology/",
+    "retrievalMethod": "static HTML official programme list plus official field-authority pages",
+    "hasOptions": true,
+    "options": [
+      {
+        "label": "Programme list row",
+        "optionType": "same-programme official sublink",
+        "governedFields": [
+          "officialTitle",
+          "faculty",
+          "level",
+          "studyMode",
+          "internationalEligibility"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-hrd-psycohology/",
+        "evidencePointer": "https://admission.utm.my/int-postgraduate-school-of-hrd-psycohology/"
+      },
+      {
+        "label": "Programme research field, specialization or EdD structure",
+        "optionType": "course-setting/curriculum/course panel",
+        "governedFields": [
+          "courseSetting",
+          "curriculum"
+        ],
+        "state": "not-applicable",
+        "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-hrd-psycohology/",
+        "evidencePointer": "No programme-level course structure, module list, dissertation structure, or explicit research-field/specialization label was published in the collected official listing for this row.",
+        "reviewReason": "No explicit course structure, Field of Research, Specialization or EdD coursework/dissertation structure is published for this official row."
+      },
+      {
+        "label": "International postgraduate fee authority",
+        "optionType": "fee panel",
+        "governedFields": [
+          "tuition",
+          "feeStatus"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "evidencePointer": "https://admission.utm.my/fees-pg-inter/"
+      },
+      {
+        "label": "International postgraduate entry requirement authority",
+        "optionType": "entry requirement panel",
+        "governedFields": [
+          "academicRequirement"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/int-pg-entry-requirements/",
+        "evidencePointer": "https://admission.utm.my/int-pg-entry-requirements/"
+      },
+      {
+        "label": "English language requirement authority",
+        "optionType": "language requirement panel",
+        "governedFields": [
+          "languageRequirement"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/english-language-requirements-3/",
+        "evidencePointer": "https://admission.utm.my/english-language-requirements-3/"
+      }
+    ]
+  },
+  {
+    "code": "UTM-PHD-020",
+    "nameEnOfficial": "Doctor of Philosophy (Generic)",
+    "detailPageUrl": "https://admission.utm.my/int-postgraduate-islamic-civilisation-academic/",
+    "retrievalMethod": "static HTML official programme list plus official field-authority pages",
+    "hasOptions": true,
+    "options": [
+      {
+        "label": "Programme list row",
+        "optionType": "same-programme official sublink",
+        "governedFields": [
+          "officialTitle",
+          "faculty",
+          "level",
+          "studyMode",
+          "internationalEligibility"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/int-postgraduate-islamic-civilisation-academic/",
+        "evidencePointer": "https://admission.utm.my/int-postgraduate-islamic-civilisation-academic/"
+      },
+      {
+        "label": "Programme research field, specialization or EdD structure",
+        "optionType": "course-setting/curriculum/course panel",
+        "governedFields": [
+          "courseSetting",
+          "curriculum"
+        ],
+        "state": "not-applicable",
+        "sourceUrl": "https://admission.utm.my/int-postgraduate-islamic-civilisation-academic/",
+        "evidencePointer": "No programme-level course structure, module list, dissertation structure, or explicit research-field/specialization label was published in the collected official listing for this row.",
+        "reviewReason": "No explicit course structure, Field of Research, Specialization or EdD coursework/dissertation structure is published for this official row."
+      },
+      {
+        "label": "International postgraduate fee authority",
+        "optionType": "fee panel",
+        "governedFields": [
+          "tuition",
+          "feeStatus"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "evidencePointer": "https://admission.utm.my/fees-pg-inter/"
+      },
+      {
+        "label": "International postgraduate entry requirement authority",
+        "optionType": "entry requirement panel",
+        "governedFields": [
+          "academicRequirement"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/int-pg-entry-requirements/",
+        "evidencePointer": "https://admission.utm.my/int-pg-entry-requirements/"
+      },
+      {
+        "label": "English language requirement authority",
+        "optionType": "language requirement panel",
+        "governedFields": [
+          "languageRequirement"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/english-language-requirements-3/",
+        "evidencePointer": "https://admission.utm.my/english-language-requirements-3/"
+      }
+    ]
+  },
+  {
+    "code": "UTM-PHD-021",
+    "nameEnOfficial": "Doctor of Philosophy Field of Research : Fiqh Science and Technology",
+    "detailPageUrl": "https://admission.utm.my/int-postgraduate-islamic-civilisation-academic/",
+    "retrievalMethod": "static HTML official programme list plus official field-authority pages",
+    "hasOptions": true,
+    "options": [
+      {
+        "label": "Programme list row",
+        "optionType": "same-programme official sublink",
+        "governedFields": [
+          "officialTitle",
+          "faculty",
+          "level",
+          "studyMode",
+          "internationalEligibility"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/int-postgraduate-islamic-civilisation-academic/",
+        "evidencePointer": "https://admission.utm.my/int-postgraduate-islamic-civilisation-academic/"
+      },
+      {
+        "label": "Programme research field, specialization or EdD structure",
+        "optionType": "course-setting/curriculum/course panel",
+        "governedFields": [
+          "courseSetting",
+          "curriculum"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/int-postgraduate-islamic-civilisation-academic/",
+        "evidencePointer": "Doctor of Philosophy Field of Research : Fiqh Science and Technology",
+        "reviewReason": null
+      },
+      {
+        "label": "International postgraduate fee authority",
+        "optionType": "fee panel",
+        "governedFields": [
+          "tuition",
+          "feeStatus"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "evidencePointer": "https://admission.utm.my/fees-pg-inter/"
+      },
+      {
+        "label": "International postgraduate entry requirement authority",
+        "optionType": "entry requirement panel",
+        "governedFields": [
+          "academicRequirement"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/int-pg-entry-requirements/",
+        "evidencePointer": "https://admission.utm.my/int-pg-entry-requirements/"
+      },
+      {
+        "label": "English language requirement authority",
+        "optionType": "language requirement panel",
+        "governedFields": [
+          "languageRequirement"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/english-language-requirements-3/",
+        "evidencePointer": "https://admission.utm.my/english-language-requirements-3/"
+      }
+    ]
+  },
+  {
+    "code": "UTM-PHD-022",
+    "nameEnOfficial": "Doctor of Philosophy (Generic)",
+    "detailPageUrl": "https://admission.utm.my/int-postgraduate-language-academy/",
+    "retrievalMethod": "static HTML official programme list plus official field-authority pages",
+    "hasOptions": true,
+    "options": [
+      {
+        "label": "Programme list row",
+        "optionType": "same-programme official sublink",
+        "governedFields": [
+          "officialTitle",
+          "faculty",
+          "level",
+          "studyMode",
+          "internationalEligibility"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/int-postgraduate-language-academy/",
+        "evidencePointer": "https://admission.utm.my/int-postgraduate-language-academy/"
+      },
+      {
+        "label": "Programme research field, specialization or EdD structure",
+        "optionType": "course-setting/curriculum/course panel",
+        "governedFields": [
+          "courseSetting",
+          "curriculum"
+        ],
+        "state": "not-applicable",
+        "sourceUrl": "https://admission.utm.my/int-postgraduate-language-academy/",
+        "evidencePointer": "No programme-level course structure, module list, dissertation structure, or explicit research-field/specialization label was published in the collected official listing for this row.",
+        "reviewReason": "No explicit course structure, Field of Research, Specialization or EdD coursework/dissertation structure is published for this official row."
+      },
+      {
+        "label": "International postgraduate fee authority",
+        "optionType": "fee panel",
+        "governedFields": [
+          "tuition",
+          "feeStatus"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "evidencePointer": "https://admission.utm.my/fees-pg-inter/"
+      },
+      {
+        "label": "International postgraduate entry requirement authority",
+        "optionType": "entry requirement panel",
+        "governedFields": [
+          "academicRequirement"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/int-pg-entry-requirements/",
+        "evidencePointer": "https://admission.utm.my/int-pg-entry-requirements/"
+      },
+      {
+        "label": "English language requirement authority",
+        "optionType": "language requirement panel",
+        "governedFields": [
+          "languageRequirement"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/english-language-requirements-3/",
+        "evidencePointer": "https://admission.utm.my/english-language-requirements-3/"
+      }
+    ]
+  },
+  {
+    "code": "UTM-PHD-023",
+    "nameEnOfficial": "Doctor in Education (EdD)",
+    "detailPageUrl": "https://fest.utm.my/edd-programmes/",
+    "retrievalMethod": "static HTML official programme list plus official field-authority pages",
+    "hasOptions": true,
+    "options": [
+      {
+        "label": "Programme list row",
+        "optionType": "same-programme official sublink",
+        "governedFields": [
+          "officialTitle",
+          "faculty",
+          "level",
+          "studyMode",
+          "internationalEligibility"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://fest.utm.my/edd-programmes/",
+        "evidencePointer": "https://fest.utm.my/edd-programmes/"
+      },
+      {
+        "label": "Programme research field, specialization or EdD structure",
+        "optionType": "course-setting/curriculum/course panel",
+        "governedFields": [
+          "courseSetting",
+          "curriculum"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://fest.utm.my/edd-programmes/",
+        "evidencePointer": "UTM FEST EdD page states Mode: Mixed mode (coursework and dissertation) and publishes the EdD concentration list.",
+        "reviewReason": null
+      },
+      {
+        "label": "International postgraduate fee authority",
+        "optionType": "fee panel",
+        "governedFields": [
+          "tuition",
+          "feeStatus"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://fest.utm.my/edd-programmes/",
+        "evidencePointer": "https://fest.utm.my/edd-programmes/"
+      },
+      {
+        "label": "International postgraduate entry requirement authority",
+        "optionType": "entry requirement panel",
+        "governedFields": [
+          "academicRequirement"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://fest.utm.my/edd-programmes/",
+        "evidencePointer": "https://fest.utm.my/edd-programmes/"
+      },
+      {
+        "label": "English language requirement authority",
+        "optionType": "language requirement panel",
+        "governedFields": [
+          "languageRequirement"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/english-language-requirements-3/",
+        "evidencePointer": "https://admission.utm.my/english-language-requirements-3/"
+      }
+    ]
+  },
+  {
+    "code": "UTM-PHD-024",
+    "nameEnOfficial": "Doctor of Philosophy Field of Research : Chemistry Education",
+    "detailPageUrl": "https://admission.utm.my/int-postgraduate-school-of-education/",
+    "retrievalMethod": "static HTML official programme list plus official field-authority pages",
+    "hasOptions": true,
+    "options": [
+      {
+        "label": "Programme list row",
+        "optionType": "same-programme official sublink",
+        "governedFields": [
+          "officialTitle",
+          "faculty",
+          "level",
+          "studyMode",
+          "internationalEligibility"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-education/",
+        "evidencePointer": "https://admission.utm.my/int-postgraduate-school-of-education/"
+      },
+      {
+        "label": "Programme research field, specialization or EdD structure",
+        "optionType": "course-setting/curriculum/course panel",
+        "governedFields": [
+          "courseSetting",
+          "curriculum"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-education/",
+        "evidencePointer": "Master / Doctor of Philosophy Field of Research : Chemistry Education",
+        "reviewReason": null
+      },
+      {
+        "label": "International postgraduate fee authority",
+        "optionType": "fee panel",
+        "governedFields": [
+          "tuition",
+          "feeStatus"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "evidencePointer": "https://admission.utm.my/fees-pg-inter/"
+      },
+      {
+        "label": "International postgraduate entry requirement authority",
+        "optionType": "entry requirement panel",
+        "governedFields": [
+          "academicRequirement"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/int-pg-entry-requirements/",
+        "evidencePointer": "https://admission.utm.my/int-pg-entry-requirements/"
+      },
+      {
+        "label": "English language requirement authority",
+        "optionType": "language requirement panel",
+        "governedFields": [
+          "languageRequirement"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/english-language-requirements-3/",
+        "evidencePointer": "https://admission.utm.my/english-language-requirements-3/"
+      }
+    ]
+  },
+  {
+    "code": "UTM-PHD-025",
+    "nameEnOfficial": "Doctor of Philosophy Field of Research : Curriculum and Instruction",
+    "detailPageUrl": "https://admission.utm.my/int-postgraduate-school-of-education/",
+    "retrievalMethod": "static HTML official programme list plus official field-authority pages",
+    "hasOptions": true,
+    "options": [
+      {
+        "label": "Programme list row",
+        "optionType": "same-programme official sublink",
+        "governedFields": [
+          "officialTitle",
+          "faculty",
+          "level",
+          "studyMode",
+          "internationalEligibility"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-education/",
+        "evidencePointer": "https://admission.utm.my/int-postgraduate-school-of-education/"
+      },
+      {
+        "label": "Programme research field, specialization or EdD structure",
+        "optionType": "course-setting/curriculum/course panel",
+        "governedFields": [
+          "courseSetting",
+          "curriculum"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-education/",
+        "evidencePointer": "Master / Doctor of Philosophy Field of Research : Curriculum and Instruction",
+        "reviewReason": null
+      },
+      {
+        "label": "International postgraduate fee authority",
+        "optionType": "fee panel",
+        "governedFields": [
+          "tuition",
+          "feeStatus"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "evidencePointer": "https://admission.utm.my/fees-pg-inter/"
+      },
+      {
+        "label": "International postgraduate entry requirement authority",
+        "optionType": "entry requirement panel",
+        "governedFields": [
+          "academicRequirement"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/int-pg-entry-requirements/",
+        "evidencePointer": "https://admission.utm.my/int-pg-entry-requirements/"
+      },
+      {
+        "label": "English language requirement authority",
+        "optionType": "language requirement panel",
+        "governedFields": [
+          "languageRequirement"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/english-language-requirements-3/",
+        "evidencePointer": "https://admission.utm.my/english-language-requirements-3/"
+      }
+    ]
+  },
+  {
+    "code": "UTM-PHD-026",
+    "nameEnOfficial": "Doctor of Philosophy Field of Research : Education and Development",
+    "detailPageUrl": "https://admission.utm.my/int-postgraduate-school-of-education/",
+    "retrievalMethod": "static HTML official programme list plus official field-authority pages",
+    "hasOptions": true,
+    "options": [
+      {
+        "label": "Programme list row",
+        "optionType": "same-programme official sublink",
+        "governedFields": [
+          "officialTitle",
+          "faculty",
+          "level",
+          "studyMode",
+          "internationalEligibility"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-education/",
+        "evidencePointer": "https://admission.utm.my/int-postgraduate-school-of-education/"
+      },
+      {
+        "label": "Programme research field, specialization or EdD structure",
+        "optionType": "course-setting/curriculum/course panel",
+        "governedFields": [
+          "courseSetting",
+          "curriculum"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-education/",
+        "evidencePointer": "Master / Doctor of Philosophy Field of Research : Education and Development",
+        "reviewReason": null
+      },
+      {
+        "label": "International postgraduate fee authority",
+        "optionType": "fee panel",
+        "governedFields": [
+          "tuition",
+          "feeStatus"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "evidencePointer": "https://admission.utm.my/fees-pg-inter/"
+      },
+      {
+        "label": "International postgraduate entry requirement authority",
+        "optionType": "entry requirement panel",
+        "governedFields": [
+          "academicRequirement"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/int-pg-entry-requirements/",
+        "evidencePointer": "https://admission.utm.my/int-pg-entry-requirements/"
+      },
+      {
+        "label": "English language requirement authority",
+        "optionType": "language requirement panel",
+        "governedFields": [
+          "languageRequirement"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/english-language-requirements-3/",
+        "evidencePointer": "https://admission.utm.my/english-language-requirements-3/"
+      }
+    ]
+  },
+  {
+    "code": "UTM-PHD-027",
+    "nameEnOfficial": "Doctor of Philosophy Field of Research : Educational Psychology",
+    "detailPageUrl": "https://admission.utm.my/int-postgraduate-school-of-education/",
+    "retrievalMethod": "static HTML official programme list plus official field-authority pages",
+    "hasOptions": true,
+    "options": [
+      {
+        "label": "Programme list row",
+        "optionType": "same-programme official sublink",
+        "governedFields": [
+          "officialTitle",
+          "faculty",
+          "level",
+          "studyMode",
+          "internationalEligibility"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-education/",
+        "evidencePointer": "https://admission.utm.my/int-postgraduate-school-of-education/"
+      },
+      {
+        "label": "Programme research field, specialization or EdD structure",
+        "optionType": "course-setting/curriculum/course panel",
+        "governedFields": [
+          "courseSetting",
+          "curriculum"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-education/",
+        "evidencePointer": "Master / Doctor of Philosophy Field of Research : Educational Psychology",
+        "reviewReason": null
+      },
+      {
+        "label": "International postgraduate fee authority",
+        "optionType": "fee panel",
+        "governedFields": [
+          "tuition",
+          "feeStatus"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "evidencePointer": "https://admission.utm.my/fees-pg-inter/"
+      },
+      {
+        "label": "International postgraduate entry requirement authority",
+        "optionType": "entry requirement panel",
+        "governedFields": [
+          "academicRequirement"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/int-pg-entry-requirements/",
+        "evidencePointer": "https://admission.utm.my/int-pg-entry-requirements/"
+      },
+      {
+        "label": "English language requirement authority",
+        "optionType": "language requirement panel",
+        "governedFields": [
+          "languageRequirement"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/english-language-requirements-3/",
+        "evidencePointer": "https://admission.utm.my/english-language-requirements-3/"
+      }
+    ]
+  },
+  {
+    "code": "UTM-PHD-028",
+    "nameEnOfficial": "Doctor of Philosophy Field of Research : Educational Technology",
+    "detailPageUrl": "https://admission.utm.my/int-postgraduate-school-of-education/",
+    "retrievalMethod": "static HTML official programme list plus official field-authority pages",
+    "hasOptions": true,
+    "options": [
+      {
+        "label": "Programme list row",
+        "optionType": "same-programme official sublink",
+        "governedFields": [
+          "officialTitle",
+          "faculty",
+          "level",
+          "studyMode",
+          "internationalEligibility"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-education/",
+        "evidencePointer": "https://admission.utm.my/int-postgraduate-school-of-education/"
+      },
+      {
+        "label": "Programme research field, specialization or EdD structure",
+        "optionType": "course-setting/curriculum/course panel",
+        "governedFields": [
+          "courseSetting",
+          "curriculum"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-education/",
+        "evidencePointer": "Master / Doctor of Philosophy Field of Research : Educational Technology",
+        "reviewReason": null
+      },
+      {
+        "label": "International postgraduate fee authority",
+        "optionType": "fee panel",
+        "governedFields": [
+          "tuition",
+          "feeStatus"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "evidencePointer": "https://admission.utm.my/fees-pg-inter/"
+      },
+      {
+        "label": "International postgraduate entry requirement authority",
+        "optionType": "entry requirement panel",
+        "governedFields": [
+          "academicRequirement"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/int-pg-entry-requirements/",
+        "evidencePointer": "https://admission.utm.my/int-pg-entry-requirements/"
+      },
+      {
+        "label": "English language requirement authority",
+        "optionType": "language requirement panel",
+        "governedFields": [
+          "languageRequirement"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/english-language-requirements-3/",
+        "evidencePointer": "https://admission.utm.my/english-language-requirements-3/"
+      }
+    ]
+  },
+  {
+    "code": "UTM-PHD-029",
+    "nameEnOfficial": "Doctor of Philosophy Field of Research : Guidance and Counselling in Education",
+    "detailPageUrl": "https://admission.utm.my/int-postgraduate-school-of-education/",
+    "retrievalMethod": "static HTML official programme list plus official field-authority pages",
+    "hasOptions": true,
+    "options": [
+      {
+        "label": "Programme list row",
+        "optionType": "same-programme official sublink",
+        "governedFields": [
+          "officialTitle",
+          "faculty",
+          "level",
+          "studyMode",
+          "internationalEligibility"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-education/",
+        "evidencePointer": "https://admission.utm.my/int-postgraduate-school-of-education/"
+      },
+      {
+        "label": "Programme research field, specialization or EdD structure",
+        "optionType": "course-setting/curriculum/course panel",
+        "governedFields": [
+          "courseSetting",
+          "curriculum"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-education/",
+        "evidencePointer": "Master / Doctor of Philosophy Field of Research : Guidance and Counselling in Education",
+        "reviewReason": null
+      },
+      {
+        "label": "International postgraduate fee authority",
+        "optionType": "fee panel",
+        "governedFields": [
+          "tuition",
+          "feeStatus"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "evidencePointer": "https://admission.utm.my/fees-pg-inter/"
+      },
+      {
+        "label": "International postgraduate entry requirement authority",
+        "optionType": "entry requirement panel",
+        "governedFields": [
+          "academicRequirement"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/int-pg-entry-requirements/",
+        "evidencePointer": "https://admission.utm.my/int-pg-entry-requirements/"
+      },
+      {
+        "label": "English language requirement authority",
+        "optionType": "language requirement panel",
+        "governedFields": [
+          "languageRequirement"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/english-language-requirements-3/",
+        "evidencePointer": "https://admission.utm.my/english-language-requirements-3/"
+      }
+    ]
+  },
+  {
+    "code": "UTM-PHD-030",
+    "nameEnOfficial": "Doctor of Philosophy Field of Research : Management and Administration in Education",
+    "detailPageUrl": "https://admission.utm.my/int-postgraduate-school-of-education/",
+    "retrievalMethod": "static HTML official programme list plus official field-authority pages",
+    "hasOptions": true,
+    "options": [
+      {
+        "label": "Programme list row",
+        "optionType": "same-programme official sublink",
+        "governedFields": [
+          "officialTitle",
+          "faculty",
+          "level",
+          "studyMode",
+          "internationalEligibility"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-education/",
+        "evidencePointer": "https://admission.utm.my/int-postgraduate-school-of-education/"
+      },
+      {
+        "label": "Programme research field, specialization or EdD structure",
+        "optionType": "course-setting/curriculum/course panel",
+        "governedFields": [
+          "courseSetting",
+          "curriculum"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-education/",
+        "evidencePointer": "Master / Doctor of Philosophy Field of Research : Management and Administration in Education",
+        "reviewReason": null
+      },
+      {
+        "label": "International postgraduate fee authority",
+        "optionType": "fee panel",
+        "governedFields": [
+          "tuition",
+          "feeStatus"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "evidencePointer": "https://admission.utm.my/fees-pg-inter/"
+      },
+      {
+        "label": "International postgraduate entry requirement authority",
+        "optionType": "entry requirement panel",
+        "governedFields": [
+          "academicRequirement"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/int-pg-entry-requirements/",
+        "evidencePointer": "https://admission.utm.my/int-pg-entry-requirements/"
+      },
+      {
+        "label": "English language requirement authority",
+        "optionType": "language requirement panel",
+        "governedFields": [
+          "languageRequirement"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/english-language-requirements-3/",
+        "evidencePointer": "https://admission.utm.my/english-language-requirements-3/"
+      }
+    ]
+  },
+  {
+    "code": "UTM-PHD-031",
+    "nameEnOfficial": "Doctor of Philosophy Field of Research : Mathematics Education",
+    "detailPageUrl": "https://admission.utm.my/int-postgraduate-school-of-education/",
+    "retrievalMethod": "static HTML official programme list plus official field-authority pages",
+    "hasOptions": true,
+    "options": [
+      {
+        "label": "Programme list row",
+        "optionType": "same-programme official sublink",
+        "governedFields": [
+          "officialTitle",
+          "faculty",
+          "level",
+          "studyMode",
+          "internationalEligibility"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-education/",
+        "evidencePointer": "https://admission.utm.my/int-postgraduate-school-of-education/"
+      },
+      {
+        "label": "Programme research field, specialization or EdD structure",
+        "optionType": "course-setting/curriculum/course panel",
+        "governedFields": [
+          "courseSetting",
+          "curriculum"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-education/",
+        "evidencePointer": "Master / Doctor of Philosophy Field of Research : Mathematics Education",
+        "reviewReason": null
+      },
+      {
+        "label": "International postgraduate fee authority",
+        "optionType": "fee panel",
+        "governedFields": [
+          "tuition",
+          "feeStatus"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "evidencePointer": "https://admission.utm.my/fees-pg-inter/"
+      },
+      {
+        "label": "International postgraduate entry requirement authority",
+        "optionType": "entry requirement panel",
+        "governedFields": [
+          "academicRequirement"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/int-pg-entry-requirements/",
+        "evidencePointer": "https://admission.utm.my/int-pg-entry-requirements/"
+      },
+      {
+        "label": "English language requirement authority",
+        "optionType": "language requirement panel",
+        "governedFields": [
+          "languageRequirement"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/english-language-requirements-3/",
+        "evidencePointer": "https://admission.utm.my/english-language-requirements-3/"
+      }
+    ]
+  },
+  {
+    "code": "UTM-PHD-032",
+    "nameEnOfficial": "Doctor of Philosophy Field of Research : Measurement and Evaluation in Education",
+    "detailPageUrl": "https://admission.utm.my/int-postgraduate-school-of-education/",
+    "retrievalMethod": "static HTML official programme list plus official field-authority pages",
+    "hasOptions": true,
+    "options": [
+      {
+        "label": "Programme list row",
+        "optionType": "same-programme official sublink",
+        "governedFields": [
+          "officialTitle",
+          "faculty",
+          "level",
+          "studyMode",
+          "internationalEligibility"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-education/",
+        "evidencePointer": "https://admission.utm.my/int-postgraduate-school-of-education/"
+      },
+      {
+        "label": "Programme research field, specialization or EdD structure",
+        "optionType": "course-setting/curriculum/course panel",
+        "governedFields": [
+          "courseSetting",
+          "curriculum"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-education/",
+        "evidencePointer": "Master / Doctor of Philosophy Field of Research : Measurement and Evaluation in Education",
+        "reviewReason": null
+      },
+      {
+        "label": "International postgraduate fee authority",
+        "optionType": "fee panel",
+        "governedFields": [
+          "tuition",
+          "feeStatus"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "evidencePointer": "https://admission.utm.my/fees-pg-inter/"
+      },
+      {
+        "label": "International postgraduate entry requirement authority",
+        "optionType": "entry requirement panel",
+        "governedFields": [
+          "academicRequirement"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/int-pg-entry-requirements/",
+        "evidencePointer": "https://admission.utm.my/int-pg-entry-requirements/"
+      },
+      {
+        "label": "English language requirement authority",
+        "optionType": "language requirement panel",
+        "governedFields": [
+          "languageRequirement"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/english-language-requirements-3/",
+        "evidencePointer": "https://admission.utm.my/english-language-requirements-3/"
+      }
+    ]
+  },
+  {
+    "code": "UTM-PHD-033",
+    "nameEnOfficial": "Doctor of Philosophy Field of Research : Multimedia in Education",
+    "detailPageUrl": "https://admission.utm.my/int-postgraduate-school-of-education/",
+    "retrievalMethod": "static HTML official programme list plus official field-authority pages",
+    "hasOptions": true,
+    "options": [
+      {
+        "label": "Programme list row",
+        "optionType": "same-programme official sublink",
+        "governedFields": [
+          "officialTitle",
+          "faculty",
+          "level",
+          "studyMode",
+          "internationalEligibility"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-education/",
+        "evidencePointer": "https://admission.utm.my/int-postgraduate-school-of-education/"
+      },
+      {
+        "label": "Programme research field, specialization or EdD structure",
+        "optionType": "course-setting/curriculum/course panel",
+        "governedFields": [
+          "courseSetting",
+          "curriculum"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-education/",
+        "evidencePointer": "Master / Doctor of Philosophy Field of Research : Multimedia in Education",
+        "reviewReason": null
+      },
+      {
+        "label": "International postgraduate fee authority",
+        "optionType": "fee panel",
+        "governedFields": [
+          "tuition",
+          "feeStatus"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "evidencePointer": "https://admission.utm.my/fees-pg-inter/"
+      },
+      {
+        "label": "International postgraduate entry requirement authority",
+        "optionType": "entry requirement panel",
+        "governedFields": [
+          "academicRequirement"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/int-pg-entry-requirements/",
+        "evidencePointer": "https://admission.utm.my/int-pg-entry-requirements/"
+      },
+      {
+        "label": "English language requirement authority",
+        "optionType": "language requirement panel",
+        "governedFields": [
+          "languageRequirement"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/english-language-requirements-3/",
+        "evidencePointer": "https://admission.utm.my/english-language-requirements-3/"
+      }
+    ]
+  },
+  {
+    "code": "UTM-PHD-034",
+    "nameEnOfficial": "Doctor of Philosophy Field of Research : Physical Education and Sports Science",
+    "detailPageUrl": "https://admission.utm.my/int-postgraduate-school-of-education/",
+    "retrievalMethod": "static HTML official programme list plus official field-authority pages",
+    "hasOptions": true,
+    "options": [
+      {
+        "label": "Programme list row",
+        "optionType": "same-programme official sublink",
+        "governedFields": [
+          "officialTitle",
+          "faculty",
+          "level",
+          "studyMode",
+          "internationalEligibility"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-education/",
+        "evidencePointer": "https://admission.utm.my/int-postgraduate-school-of-education/"
+      },
+      {
+        "label": "Programme research field, specialization or EdD structure",
+        "optionType": "course-setting/curriculum/course panel",
+        "governedFields": [
+          "courseSetting",
+          "curriculum"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-education/",
+        "evidencePointer": "Master / Doctor of Philosophy Field of Research : Physical Education and Sports Science",
+        "reviewReason": null
+      },
+      {
+        "label": "International postgraduate fee authority",
+        "optionType": "fee panel",
+        "governedFields": [
+          "tuition",
+          "feeStatus"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "evidencePointer": "https://admission.utm.my/fees-pg-inter/"
+      },
+      {
+        "label": "International postgraduate entry requirement authority",
+        "optionType": "entry requirement panel",
+        "governedFields": [
+          "academicRequirement"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/int-pg-entry-requirements/",
+        "evidencePointer": "https://admission.utm.my/int-pg-entry-requirements/"
+      },
+      {
+        "label": "English language requirement authority",
+        "optionType": "language requirement panel",
+        "governedFields": [
+          "languageRequirement"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/english-language-requirements-3/",
+        "evidencePointer": "https://admission.utm.my/english-language-requirements-3/"
+      }
+    ]
+  },
+  {
+    "code": "UTM-PHD-035",
+    "nameEnOfficial": "Doctor of Philosophy Field of Research : Physics Education",
+    "detailPageUrl": "https://admission.utm.my/int-postgraduate-school-of-education/",
+    "retrievalMethod": "static HTML official programme list plus official field-authority pages",
+    "hasOptions": true,
+    "options": [
+      {
+        "label": "Programme list row",
+        "optionType": "same-programme official sublink",
+        "governedFields": [
+          "officialTitle",
+          "faculty",
+          "level",
+          "studyMode",
+          "internationalEligibility"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-education/",
+        "evidencePointer": "https://admission.utm.my/int-postgraduate-school-of-education/"
+      },
+      {
+        "label": "Programme research field, specialization or EdD structure",
+        "optionType": "course-setting/curriculum/course panel",
+        "governedFields": [
+          "courseSetting",
+          "curriculum"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-education/",
+        "evidencePointer": "Master / Doctor of Philosophy Field of Research : Physics Education",
+        "reviewReason": null
+      },
+      {
+        "label": "International postgraduate fee authority",
+        "optionType": "fee panel",
+        "governedFields": [
+          "tuition",
+          "feeStatus"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "evidencePointer": "https://admission.utm.my/fees-pg-inter/"
+      },
+      {
+        "label": "International postgraduate entry requirement authority",
+        "optionType": "entry requirement panel",
+        "governedFields": [
+          "academicRequirement"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/int-pg-entry-requirements/",
+        "evidencePointer": "https://admission.utm.my/int-pg-entry-requirements/"
+      },
+      {
+        "label": "English language requirement authority",
+        "optionType": "language requirement panel",
+        "governedFields": [
+          "languageRequirement"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/english-language-requirements-3/",
+        "evidencePointer": "https://admission.utm.my/english-language-requirements-3/"
+      }
+    ]
+  },
+  {
+    "code": "UTM-PHD-036",
+    "nameEnOfficial": "Doctor of Philosophy Field of Research : Teaching English as a Second Language (TESL)",
+    "detailPageUrl": "https://admission.utm.my/int-postgraduate-school-of-education/",
+    "retrievalMethod": "static HTML official programme list plus official field-authority pages",
+    "hasOptions": true,
+    "options": [
+      {
+        "label": "Programme list row",
+        "optionType": "same-programme official sublink",
+        "governedFields": [
+          "officialTitle",
+          "faculty",
+          "level",
+          "studyMode",
+          "internationalEligibility"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-education/",
+        "evidencePointer": "https://admission.utm.my/int-postgraduate-school-of-education/"
+      },
+      {
+        "label": "Programme research field, specialization or EdD structure",
+        "optionType": "course-setting/curriculum/course panel",
+        "governedFields": [
+          "courseSetting",
+          "curriculum"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-education/",
+        "evidencePointer": "Master / Doctor of Philosophy Field of Research : Teaching English as a Second Language (TESL)",
+        "reviewReason": null
+      },
+      {
+        "label": "International postgraduate fee authority",
+        "optionType": "fee panel",
+        "governedFields": [
+          "tuition",
+          "feeStatus"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "evidencePointer": "https://admission.utm.my/fees-pg-inter/"
+      },
+      {
+        "label": "International postgraduate entry requirement authority",
+        "optionType": "entry requirement panel",
+        "governedFields": [
+          "academicRequirement"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/int-pg-entry-requirements/",
+        "evidencePointer": "https://admission.utm.my/int-pg-entry-requirements/"
+      },
+      {
+        "label": "English language requirement authority",
+        "optionType": "language requirement panel",
+        "governedFields": [
+          "languageRequirement"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/english-language-requirements-3/",
+        "evidencePointer": "https://admission.utm.my/english-language-requirements-3/"
+      }
+    ]
+  },
+  {
+    "code": "UTM-PHD-037",
+    "nameEnOfficial": "Doctor of Philosophy Field of Research : Technical and Vocational Education",
+    "detailPageUrl": "https://admission.utm.my/int-postgraduate-school-of-education/",
+    "retrievalMethod": "static HTML official programme list plus official field-authority pages",
+    "hasOptions": true,
+    "options": [
+      {
+        "label": "Programme list row",
+        "optionType": "same-programme official sublink",
+        "governedFields": [
+          "officialTitle",
+          "faculty",
+          "level",
+          "studyMode",
+          "internationalEligibility"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-education/",
+        "evidencePointer": "https://admission.utm.my/int-postgraduate-school-of-education/"
+      },
+      {
+        "label": "Programme research field, specialization or EdD structure",
+        "optionType": "course-setting/curriculum/course panel",
+        "governedFields": [
+          "courseSetting",
+          "curriculum"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-education/",
+        "evidencePointer": "Master / Doctor of Philosophy Field of Research : Technical and Vocational Education",
+        "reviewReason": null
+      },
+      {
+        "label": "International postgraduate fee authority",
+        "optionType": "fee panel",
+        "governedFields": [
+          "tuition",
+          "feeStatus"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "evidencePointer": "https://admission.utm.my/fees-pg-inter/"
+      },
+      {
+        "label": "International postgraduate entry requirement authority",
+        "optionType": "entry requirement panel",
+        "governedFields": [
+          "academicRequirement"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/int-pg-entry-requirements/",
+        "evidencePointer": "https://admission.utm.my/int-pg-entry-requirements/"
+      },
+      {
+        "label": "English language requirement authority",
+        "optionType": "language requirement panel",
+        "governedFields": [
+          "languageRequirement"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/english-language-requirements-3/",
+        "evidencePointer": "https://admission.utm.my/english-language-requirements-3/"
+      }
+    ]
+  },
+  {
+    "code": "UTM-PHD-038",
+    "nameEnOfficial": "Doctor of Philosophy Field of Research : Online Learning",
+    "detailPageUrl": "https://admission.utm.my/int-postgraduate-school-of-education/",
+    "retrievalMethod": "static HTML official programme list plus official field-authority pages",
+    "hasOptions": true,
+    "options": [
+      {
+        "label": "Programme list row",
+        "optionType": "same-programme official sublink",
+        "governedFields": [
+          "officialTitle",
+          "faculty",
+          "level",
+          "studyMode",
+          "internationalEligibility"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-education/",
+        "evidencePointer": "https://admission.utm.my/int-postgraduate-school-of-education/"
+      },
+      {
+        "label": "Programme research field, specialization or EdD structure",
+        "optionType": "course-setting/curriculum/course panel",
+        "governedFields": [
+          "courseSetting",
+          "curriculum"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-education/",
+        "evidencePointer": "Master / Doctor of Philosophy Field of Research : Online Learning",
+        "reviewReason": null
+      },
+      {
+        "label": "International postgraduate fee authority",
+        "optionType": "fee panel",
+        "governedFields": [
+          "tuition",
+          "feeStatus"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "evidencePointer": "https://admission.utm.my/fees-pg-inter/"
+      },
+      {
+        "label": "International postgraduate entry requirement authority",
+        "optionType": "entry requirement panel",
+        "governedFields": [
+          "academicRequirement"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/int-pg-entry-requirements/",
+        "evidencePointer": "https://admission.utm.my/int-pg-entry-requirements/"
+      },
+      {
+        "label": "English language requirement authority",
+        "optionType": "language requirement panel",
+        "governedFields": [
+          "languageRequirement"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/english-language-requirements-3/",
+        "evidencePointer": "https://admission.utm.my/english-language-requirements-3/"
+      }
+    ]
+  },
+  {
+    "code": "UTM-PHD-039",
+    "nameEnOfficial": "Doctor of Philosophy Field of Research : Early Childhood Education",
+    "detailPageUrl": "https://admission.utm.my/int-postgraduate-school-of-education/",
+    "retrievalMethod": "static HTML official programme list plus official field-authority pages",
+    "hasOptions": true,
+    "options": [
+      {
+        "label": "Programme list row",
+        "optionType": "same-programme official sublink",
+        "governedFields": [
+          "officialTitle",
+          "faculty",
+          "level",
+          "studyMode",
+          "internationalEligibility"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-education/",
+        "evidencePointer": "https://admission.utm.my/int-postgraduate-school-of-education/"
+      },
+      {
+        "label": "Programme research field, specialization or EdD structure",
+        "optionType": "course-setting/curriculum/course panel",
+        "governedFields": [
+          "courseSetting",
+          "curriculum"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-education/",
+        "evidencePointer": "Doctor of Philosophy Field of Research : Early Childhood Education",
+        "reviewReason": null
+      },
+      {
+        "label": "International postgraduate fee authority",
+        "optionType": "fee panel",
+        "governedFields": [
+          "tuition",
+          "feeStatus"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "evidencePointer": "https://admission.utm.my/fees-pg-inter/"
+      },
+      {
+        "label": "International postgraduate entry requirement authority",
+        "optionType": "entry requirement panel",
+        "governedFields": [
+          "academicRequirement"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/int-pg-entry-requirements/",
+        "evidencePointer": "https://admission.utm.my/int-pg-entry-requirements/"
+      },
+      {
+        "label": "English language requirement authority",
+        "optionType": "language requirement panel",
+        "governedFields": [
+          "languageRequirement"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/english-language-requirements-3/",
+        "evidencePointer": "https://admission.utm.my/english-language-requirements-3/"
+      }
+    ]
+  },
+  {
+    "code": "UTM-PHD-040",
+    "nameEnOfficial": "Doctor of Philosophy Field of Research",
+    "detailPageUrl": "https://admission.utm.my/int-faculty-of-built-environment-surveying/",
+    "retrievalMethod": "static HTML official programme list plus official field-authority pages",
+    "hasOptions": true,
+    "options": [
+      {
+        "label": "Programme list row",
+        "optionType": "same-programme official sublink",
+        "governedFields": [
+          "officialTitle",
+          "faculty",
+          "level",
+          "studyMode",
+          "internationalEligibility"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/int-faculty-of-built-environment-surveying/",
+        "evidencePointer": "https://admission.utm.my/int-faculty-of-built-environment-surveying/"
+      },
+      {
+        "label": "Programme research field, specialization or EdD structure",
+        "optionType": "course-setting/curriculum/course panel",
+        "governedFields": [
+          "courseSetting",
+          "curriculum"
+        ],
+        "state": "not-applicable",
+        "sourceUrl": "https://admission.utm.my/int-faculty-of-built-environment-surveying/",
+        "evidencePointer": "No programme-level course structure, module list, dissertation structure, or explicit research-field/specialization label was published in the collected official listing for this row.",
+        "reviewReason": "No explicit course structure, Field of Research, Specialization or EdD coursework/dissertation structure is published for this official row."
+      },
+      {
+        "label": "International postgraduate fee authority",
+        "optionType": "fee panel",
+        "governedFields": [
+          "tuition",
+          "feeStatus"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "evidencePointer": "https://admission.utm.my/fees-pg-inter/"
+      },
+      {
+        "label": "International postgraduate entry requirement authority",
+        "optionType": "entry requirement panel",
+        "governedFields": [
+          "academicRequirement"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/int-pg-entry-requirements/",
+        "evidencePointer": "https://admission.utm.my/int-pg-entry-requirements/"
+      },
+      {
+        "label": "English language requirement authority",
+        "optionType": "language requirement panel",
+        "governedFields": [
+          "languageRequirement"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/english-language-requirements-3/",
+        "evidencePointer": "https://admission.utm.my/english-language-requirements-3/"
+      }
+    ]
+  },
+  {
+    "code": "UTM-PHD-041",
+    "nameEnOfficial": "Doctor of Philosophy Field of Research : Software Engineering",
+    "detailPageUrl": "https://admission.utm.my/int-postgraduate-school-of-computing/",
+    "retrievalMethod": "static HTML official programme list plus official field-authority pages",
+    "hasOptions": true,
+    "options": [
+      {
+        "label": "Programme list row",
+        "optionType": "same-programme official sublink",
+        "governedFields": [
+          "officialTitle",
+          "faculty",
+          "level",
+          "studyMode",
+          "internationalEligibility"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-computing/",
+        "evidencePointer": "https://admission.utm.my/int-postgraduate-school-of-computing/"
+      },
+      {
+        "label": "Programme research field, specialization or EdD structure",
+        "optionType": "course-setting/curriculum/course panel",
+        "governedFields": [
+          "courseSetting",
+          "curriculum"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-computing/",
+        "evidencePointer": "Doctor of Philosophy Field of Research : Software Engineering",
+        "reviewReason": null
+      },
+      {
+        "label": "International postgraduate fee authority",
+        "optionType": "fee panel",
+        "governedFields": [
+          "tuition",
+          "feeStatus"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "evidencePointer": "https://admission.utm.my/fees-pg-inter/"
+      },
+      {
+        "label": "International postgraduate entry requirement authority",
+        "optionType": "entry requirement panel",
+        "governedFields": [
+          "academicRequirement"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/int-pg-entry-requirements/",
+        "evidencePointer": "https://admission.utm.my/int-pg-entry-requirements/"
+      },
+      {
+        "label": "English language requirement authority",
+        "optionType": "language requirement panel",
+        "governedFields": [
+          "languageRequirement"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/english-language-requirements-3/",
+        "evidencePointer": "https://admission.utm.my/english-language-requirements-3/"
+      }
+    ]
+  },
+  {
+    "code": "UTM-PHD-042",
+    "nameEnOfficial": "Doctor of Philosophy Field of Research : Computer Science",
+    "detailPageUrl": "https://admission.utm.my/int-postgraduate-school-of-computing/",
+    "retrievalMethod": "static HTML official programme list plus official field-authority pages",
+    "hasOptions": true,
+    "options": [
+      {
+        "label": "Programme list row",
+        "optionType": "same-programme official sublink",
+        "governedFields": [
+          "officialTitle",
+          "faculty",
+          "level",
+          "studyMode",
+          "internationalEligibility"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-computing/",
+        "evidencePointer": "https://admission.utm.my/int-postgraduate-school-of-computing/"
+      },
+      {
+        "label": "Programme research field, specialization or EdD structure",
+        "optionType": "course-setting/curriculum/course panel",
+        "governedFields": [
+          "courseSetting",
+          "curriculum"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-computing/",
+        "evidencePointer": "Doctor of Philosophy Field of Research : Computer Science",
+        "reviewReason": null
+      },
+      {
+        "label": "International postgraduate fee authority",
+        "optionType": "fee panel",
+        "governedFields": [
+          "tuition",
+          "feeStatus"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "evidencePointer": "https://admission.utm.my/fees-pg-inter/"
+      },
+      {
+        "label": "International postgraduate entry requirement authority",
+        "optionType": "entry requirement panel",
+        "governedFields": [
+          "academicRequirement"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/int-pg-entry-requirements/",
+        "evidencePointer": "https://admission.utm.my/int-pg-entry-requirements/"
+      },
+      {
+        "label": "English language requirement authority",
+        "optionType": "language requirement panel",
+        "governedFields": [
+          "languageRequirement"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/english-language-requirements-3/",
+        "evidencePointer": "https://admission.utm.my/english-language-requirements-3/"
+      }
+    ]
+  },
+  {
+    "code": "UTM-PHD-043",
+    "nameEnOfficial": "Doctor of Philosophy Field of Research : Informatics Engineering",
+    "detailPageUrl": "https://admission.utm.my/int-postgraduate-school-of-computing/",
+    "retrievalMethod": "static HTML official programme list plus official field-authority pages",
+    "hasOptions": true,
+    "options": [
+      {
+        "label": "Programme list row",
+        "optionType": "same-programme official sublink",
+        "governedFields": [
+          "officialTitle",
+          "faculty",
+          "level",
+          "studyMode",
+          "internationalEligibility"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-computing/",
+        "evidencePointer": "https://admission.utm.my/int-postgraduate-school-of-computing/"
+      },
+      {
+        "label": "Programme research field, specialization or EdD structure",
+        "optionType": "course-setting/curriculum/course panel",
+        "governedFields": [
+          "courseSetting",
+          "curriculum"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/int-postgraduate-school-of-computing/",
+        "evidencePointer": "Doctor of Philosophy Field of Research : Informatics Engineering",
+        "reviewReason": null
+      },
+      {
+        "label": "International postgraduate fee authority",
+        "optionType": "fee panel",
+        "governedFields": [
+          "tuition",
+          "feeStatus"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "evidencePointer": "https://admission.utm.my/fees-pg-inter/"
+      },
+      {
+        "label": "International postgraduate entry requirement authority",
+        "optionType": "entry requirement panel",
+        "governedFields": [
+          "academicRequirement"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/int-pg-entry-requirements/",
+        "evidencePointer": "https://admission.utm.my/int-pg-entry-requirements/"
+      },
+      {
+        "label": "English language requirement authority",
+        "optionType": "language requirement panel",
+        "governedFields": [
+          "languageRequirement"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/english-language-requirements-3/",
+        "evidencePointer": "https://admission.utm.my/english-language-requirements-3/"
+      }
+    ]
+  },
+  {
+    "code": "UTM-PHD-044",
+    "nameEnOfficial": "Doctor of Philosophy Field of Research : Management",
+    "detailPageUrl": "https://admission.utm.my/int-faculty-of-management/",
+    "retrievalMethod": "static HTML official programme list plus official field-authority pages",
+    "hasOptions": true,
+    "options": [
+      {
+        "label": "Programme list row",
+        "optionType": "same-programme official sublink",
+        "governedFields": [
+          "officialTitle",
+          "faculty",
+          "level",
+          "studyMode",
+          "internationalEligibility"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/int-faculty-of-management/",
+        "evidencePointer": "https://admission.utm.my/int-faculty-of-management/"
+      },
+      {
+        "label": "Programme research field, specialization or EdD structure",
+        "optionType": "course-setting/curriculum/course panel",
+        "governedFields": [
+          "courseSetting",
+          "curriculum"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/int-faculty-of-management/",
+        "evidencePointer": "Doctor of Philosophy Field of Research : Management",
+        "reviewReason": null
+      },
+      {
+        "label": "International postgraduate fee authority",
+        "optionType": "fee panel",
+        "governedFields": [
+          "tuition",
+          "feeStatus"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "evidencePointer": "https://admission.utm.my/fees-pg-inter/"
+      },
+      {
+        "label": "International postgraduate entry requirement authority",
+        "optionType": "entry requirement panel",
+        "governedFields": [
+          "academicRequirement"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/int-pg-entry-requirements/",
+        "evidencePointer": "https://admission.utm.my/int-pg-entry-requirements/"
+      },
+      {
+        "label": "English language requirement authority",
+        "optionType": "language requirement panel",
+        "governedFields": [
+          "languageRequirement"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/english-language-requirements-3/",
+        "evidencePointer": "https://admission.utm.my/english-language-requirements-3/"
+      }
+    ]
+  },
+  {
+    "code": "UTM-PHD-045",
+    "nameEnOfficial": "Doctor of Philosophy (Generic)",
+    "detailPageUrl": "https://admission.utm.my/int-faculty-of-science/",
+    "retrievalMethod": "static HTML official programme list plus official field-authority pages",
+    "hasOptions": true,
+    "options": [
+      {
+        "label": "Programme list row",
+        "optionType": "same-programme official sublink",
+        "governedFields": [
+          "officialTitle",
+          "faculty",
+          "level",
+          "studyMode",
+          "internationalEligibility"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/int-faculty-of-science/",
+        "evidencePointer": "https://admission.utm.my/int-faculty-of-science/"
+      },
+      {
+        "label": "Programme research field, specialization or EdD structure",
+        "optionType": "course-setting/curriculum/course panel",
+        "governedFields": [
+          "courseSetting",
+          "curriculum"
+        ],
+        "state": "not-applicable",
+        "sourceUrl": "https://admission.utm.my/int-faculty-of-science/",
+        "evidencePointer": "No programme-level course structure, module list, dissertation structure, or explicit research-field/specialization label was published in the collected official listing for this row.",
+        "reviewReason": "No explicit course structure, Field of Research, Specialization or EdD coursework/dissertation structure is published for this official row."
+      },
+      {
+        "label": "International postgraduate fee authority",
+        "optionType": "fee panel",
+        "governedFields": [
+          "tuition",
+          "feeStatus"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "evidencePointer": "https://admission.utm.my/fees-pg-inter/"
+      },
+      {
+        "label": "International postgraduate entry requirement authority",
+        "optionType": "entry requirement panel",
+        "governedFields": [
+          "academicRequirement"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/int-pg-entry-requirements/",
+        "evidencePointer": "https://admission.utm.my/int-pg-entry-requirements/"
+      },
+      {
+        "label": "English language requirement authority",
+        "optionType": "language requirement panel",
+        "governedFields": [
+          "languageRequirement"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/english-language-requirements-3/",
+        "evidencePointer": "https://admission.utm.my/english-language-requirements-3/"
+      }
+    ]
+  },
+  {
+    "code": "UTM-PHD-046",
+    "nameEnOfficial": "Doctor of Philosophy Field of Research : Chemistry",
+    "detailPageUrl": "https://admission.utm.my/int-faculty-of-science/",
+    "retrievalMethod": "static HTML official programme list plus official field-authority pages",
+    "hasOptions": true,
+    "options": [
+      {
+        "label": "Programme list row",
+        "optionType": "same-programme official sublink",
+        "governedFields": [
+          "officialTitle",
+          "faculty",
+          "level",
+          "studyMode",
+          "internationalEligibility"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/int-faculty-of-science/",
+        "evidencePointer": "https://admission.utm.my/int-faculty-of-science/"
+      },
+      {
+        "label": "Programme research field, specialization or EdD structure",
+        "optionType": "course-setting/curriculum/course panel",
+        "governedFields": [
+          "courseSetting",
+          "curriculum"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/int-faculty-of-science/",
+        "evidencePointer": "Master / Doctor of Philosophy Field of Research : Chemistry",
+        "reviewReason": null
+      },
+      {
+        "label": "International postgraduate fee authority",
+        "optionType": "fee panel",
+        "governedFields": [
+          "tuition",
+          "feeStatus"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "evidencePointer": "https://admission.utm.my/fees-pg-inter/"
+      },
+      {
+        "label": "International postgraduate entry requirement authority",
+        "optionType": "entry requirement panel",
+        "governedFields": [
+          "academicRequirement"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/int-pg-entry-requirements/",
+        "evidencePointer": "https://admission.utm.my/int-pg-entry-requirements/"
+      },
+      {
+        "label": "English language requirement authority",
+        "optionType": "language requirement panel",
+        "governedFields": [
+          "languageRequirement"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/english-language-requirements-3/",
+        "evidencePointer": "https://admission.utm.my/english-language-requirements-3/"
+      }
+    ]
+  },
+  {
+    "code": "UTM-PHD-047",
+    "nameEnOfficial": "Doctor of Philosophy Field of Research : Physics",
+    "detailPageUrl": "https://admission.utm.my/int-faculty-of-science/",
+    "retrievalMethod": "static HTML official programme list plus official field-authority pages",
+    "hasOptions": true,
+    "options": [
+      {
+        "label": "Programme list row",
+        "optionType": "same-programme official sublink",
+        "governedFields": [
+          "officialTitle",
+          "faculty",
+          "level",
+          "studyMode",
+          "internationalEligibility"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/int-faculty-of-science/",
+        "evidencePointer": "https://admission.utm.my/int-faculty-of-science/"
+      },
+      {
+        "label": "Programme research field, specialization or EdD structure",
+        "optionType": "course-setting/curriculum/course panel",
+        "governedFields": [
+          "courseSetting",
+          "curriculum"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/int-faculty-of-science/",
+        "evidencePointer": "Master / Doctor of Philosophy Field of Research : Physics",
+        "reviewReason": null
+      },
+      {
+        "label": "International postgraduate fee authority",
+        "optionType": "fee panel",
+        "governedFields": [
+          "tuition",
+          "feeStatus"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "evidencePointer": "https://admission.utm.my/fees-pg-inter/"
+      },
+      {
+        "label": "International postgraduate entry requirement authority",
+        "optionType": "entry requirement panel",
+        "governedFields": [
+          "academicRequirement"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/int-pg-entry-requirements/",
+        "evidencePointer": "https://admission.utm.my/int-pg-entry-requirements/"
+      },
+      {
+        "label": "English language requirement authority",
+        "optionType": "language requirement panel",
+        "governedFields": [
+          "languageRequirement"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/english-language-requirements-3/",
+        "evidencePointer": "https://admission.utm.my/english-language-requirements-3/"
+      }
+    ]
+  },
+  {
+    "code": "UTM-PHD-048",
+    "nameEnOfficial": "Doctor of Philosophy Field of Research : Mathematics",
+    "detailPageUrl": "https://admission.utm.my/int-faculty-of-science/",
+    "retrievalMethod": "static HTML official programme list plus official field-authority pages",
+    "hasOptions": true,
+    "options": [
+      {
+        "label": "Programme list row",
+        "optionType": "same-programme official sublink",
+        "governedFields": [
+          "officialTitle",
+          "faculty",
+          "level",
+          "studyMode",
+          "internationalEligibility"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/int-faculty-of-science/",
+        "evidencePointer": "https://admission.utm.my/int-faculty-of-science/"
+      },
+      {
+        "label": "Programme research field, specialization or EdD structure",
+        "optionType": "course-setting/curriculum/course panel",
+        "governedFields": [
+          "courseSetting",
+          "curriculum"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/int-faculty-of-science/",
+        "evidencePointer": "Master / Doctor of Philosophy Field of Research : Mathematics",
+        "reviewReason": null
+      },
+      {
+        "label": "International postgraduate fee authority",
+        "optionType": "fee panel",
+        "governedFields": [
+          "tuition",
+          "feeStatus"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "evidencePointer": "https://admission.utm.my/fees-pg-inter/"
+      },
+      {
+        "label": "International postgraduate entry requirement authority",
+        "optionType": "entry requirement panel",
+        "governedFields": [
+          "academicRequirement"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/int-pg-entry-requirements/",
+        "evidencePointer": "https://admission.utm.my/int-pg-entry-requirements/"
+      },
+      {
+        "label": "English language requirement authority",
+        "optionType": "language requirement panel",
+        "governedFields": [
+          "languageRequirement"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/english-language-requirements-3/",
+        "evidencePointer": "https://admission.utm.my/english-language-requirements-3/"
+      }
+    ]
+  },
+  {
+    "code": "UTM-PHD-049",
+    "nameEnOfficial": "Doctor of Philosophy Field of Research : Bioscience",
+    "detailPageUrl": "https://admission.utm.my/int-faculty-of-science/",
+    "retrievalMethod": "static HTML official programme list plus official field-authority pages",
+    "hasOptions": true,
+    "options": [
+      {
+        "label": "Programme list row",
+        "optionType": "same-programme official sublink",
+        "governedFields": [
+          "officialTitle",
+          "faculty",
+          "level",
+          "studyMode",
+          "internationalEligibility"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/int-faculty-of-science/",
+        "evidencePointer": "https://admission.utm.my/int-faculty-of-science/"
+      },
+      {
+        "label": "Programme research field, specialization or EdD structure",
+        "optionType": "course-setting/curriculum/course panel",
+        "governedFields": [
+          "courseSetting",
+          "curriculum"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/int-faculty-of-science/",
+        "evidencePointer": "Master / Doctor of Philosophy Field of Research : Bioscience",
+        "reviewReason": null
+      },
+      {
+        "label": "International postgraduate fee authority",
+        "optionType": "fee panel",
+        "governedFields": [
+          "tuition",
+          "feeStatus"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "evidencePointer": "https://admission.utm.my/fees-pg-inter/"
+      },
+      {
+        "label": "International postgraduate entry requirement authority",
+        "optionType": "entry requirement panel",
+        "governedFields": [
+          "academicRequirement"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/int-pg-entry-requirements/",
+        "evidencePointer": "https://admission.utm.my/int-pg-entry-requirements/"
+      },
+      {
+        "label": "English language requirement authority",
+        "optionType": "language requirement panel",
+        "governedFields": [
+          "languageRequirement"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/english-language-requirements-3/",
+        "evidencePointer": "https://admission.utm.my/english-language-requirements-3/"
+      }
+    ]
+  },
+  {
+    "code": "UTM-PHD-050",
+    "nameEnOfficial": "Doctor of Business Administration",
+    "detailPageUrl": "https://admission.utm.my/int-azman-hashim-international-business-school/",
+    "retrievalMethod": "static HTML official programme list plus official field-authority pages",
+    "hasOptions": true,
+    "options": [
+      {
+        "label": "Programme list row",
+        "optionType": "same-programme official sublink",
+        "governedFields": [
+          "officialTitle",
+          "faculty",
+          "level",
+          "studyMode",
+          "internationalEligibility"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/int-azman-hashim-international-business-school/",
+        "evidencePointer": "https://admission.utm.my/int-azman-hashim-international-business-school/"
+      },
+      {
+        "label": "Programme research field, specialization or EdD structure",
+        "optionType": "course-setting/curriculum/course panel",
+        "governedFields": [
+          "courseSetting",
+          "curriculum"
+        ],
+        "state": "not-applicable",
+        "sourceUrl": "https://admission.utm.my/int-azman-hashim-international-business-school/",
+        "evidencePointer": "No programme-level course structure, module list, dissertation structure, or explicit research-field/specialization label was published in the collected official listing for this row.",
+        "reviewReason": "No explicit course structure, Field of Research, Specialization or EdD coursework/dissertation structure is published for this official row."
+      },
+      {
+        "label": "International postgraduate fee authority",
+        "optionType": "fee panel",
+        "governedFields": [
+          "tuition",
+          "feeStatus"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "evidencePointer": "https://admission.utm.my/fees-pg-inter/"
+      },
+      {
+        "label": "International postgraduate entry requirement authority",
+        "optionType": "entry requirement panel",
+        "governedFields": [
+          "academicRequirement"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/int-pg-entry-requirements/",
+        "evidencePointer": "https://admission.utm.my/int-pg-entry-requirements/"
+      },
+      {
+        "label": "English language requirement authority",
+        "optionType": "language requirement panel",
+        "governedFields": [
+          "languageRequirement"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/english-language-requirements-3/",
+        "evidencePointer": "https://admission.utm.my/english-language-requirements-3/"
+      }
+    ]
+  },
+  {
+    "code": "UTM-PHD-051",
+    "nameEnOfficial": "Doctor of Philosophy (Generic)",
+    "detailPageUrl": "https://admission.utm.my/int-azman-hashim-international-business-school/",
+    "retrievalMethod": "static HTML official programme list plus official field-authority pages",
+    "hasOptions": true,
+    "options": [
+      {
+        "label": "Programme list row",
+        "optionType": "same-programme official sublink",
+        "governedFields": [
+          "officialTitle",
+          "faculty",
+          "level",
+          "studyMode",
+          "internationalEligibility"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/int-azman-hashim-international-business-school/",
+        "evidencePointer": "https://admission.utm.my/int-azman-hashim-international-business-school/"
+      },
+      {
+        "label": "Programme research field, specialization or EdD structure",
+        "optionType": "course-setting/curriculum/course panel",
+        "governedFields": [
+          "courseSetting",
+          "curriculum"
+        ],
+        "state": "not-applicable",
+        "sourceUrl": "https://admission.utm.my/int-azman-hashim-international-business-school/",
+        "evidencePointer": "No programme-level course structure, module list, dissertation structure, or explicit research-field/specialization label was published in the collected official listing for this row.",
+        "reviewReason": "No explicit course structure, Field of Research, Specialization or EdD coursework/dissertation structure is published for this official row."
+      },
+      {
+        "label": "International postgraduate fee authority",
+        "optionType": "fee panel",
+        "governedFields": [
+          "tuition",
+          "feeStatus"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "evidencePointer": "https://admission.utm.my/fees-pg-inter/"
+      },
+      {
+        "label": "International postgraduate entry requirement authority",
+        "optionType": "entry requirement panel",
+        "governedFields": [
+          "academicRequirement"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/int-pg-entry-requirements/",
+        "evidencePointer": "https://admission.utm.my/int-pg-entry-requirements/"
+      },
+      {
+        "label": "English language requirement authority",
+        "optionType": "language requirement panel",
+        "governedFields": [
+          "languageRequirement"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/english-language-requirements-3/",
+        "evidencePointer": "https://admission.utm.my/english-language-requirements-3/"
+      }
+    ]
+  },
+  {
+    "code": "UTM-PHD-052",
+    "nameEnOfficial": "Doctor of Engineering in Engineering Business Management",
+    "detailPageUrl": "https://admission.utm.my/int-razak-faculty-of-technology-informatics/",
+    "retrievalMethod": "static HTML official programme list plus official field-authority pages",
+    "hasOptions": true,
+    "options": [
+      {
+        "label": "Programme list row",
+        "optionType": "same-programme official sublink",
+        "governedFields": [
+          "officialTitle",
+          "faculty",
+          "level",
+          "studyMode",
+          "internationalEligibility"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/int-razak-faculty-of-technology-informatics/",
+        "evidencePointer": "https://admission.utm.my/int-razak-faculty-of-technology-informatics/"
+      },
+      {
+        "label": "Programme research field, specialization or EdD structure",
+        "optionType": "course-setting/curriculum/course panel",
+        "governedFields": [
+          "courseSetting",
+          "curriculum"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/int-razak-faculty-of-technology-informatics/",
+        "evidencePointer": "Doctor of Engineering in Engineering Business Management",
+        "reviewReason": null
+      },
+      {
+        "label": "International postgraduate fee authority",
+        "optionType": "fee panel",
+        "governedFields": [
+          "tuition",
+          "feeStatus"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "evidencePointer": "https://admission.utm.my/fees-pg-inter/"
+      },
+      {
+        "label": "International postgraduate entry requirement authority",
+        "optionType": "entry requirement panel",
+        "governedFields": [
+          "academicRequirement"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/int-pg-entry-requirements/",
+        "evidencePointer": "https://admission.utm.my/int-pg-entry-requirements/"
+      },
+      {
+        "label": "English language requirement authority",
+        "optionType": "language requirement panel",
+        "governedFields": [
+          "languageRequirement"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/english-language-requirements-3/",
+        "evidencePointer": "https://admission.utm.my/english-language-requirements-3/"
+      }
+    ]
+  },
+  {
+    "code": "UTM-PHD-053",
+    "nameEnOfficial": "Doctor of Philosophy (Generic)",
+    "detailPageUrl": "https://admission.utm.my/int-razak-faculty-of-technology-informatics/",
+    "retrievalMethod": "static HTML official programme list plus official field-authority pages",
+    "hasOptions": true,
+    "options": [
+      {
+        "label": "Programme list row",
+        "optionType": "same-programme official sublink",
+        "governedFields": [
+          "officialTitle",
+          "faculty",
+          "level",
+          "studyMode",
+          "internationalEligibility"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/int-razak-faculty-of-technology-informatics/",
+        "evidencePointer": "https://admission.utm.my/int-razak-faculty-of-technology-informatics/"
+      },
+      {
+        "label": "Programme research field, specialization or EdD structure",
+        "optionType": "course-setting/curriculum/course panel",
+        "governedFields": [
+          "courseSetting",
+          "curriculum"
+        ],
+        "state": "not-applicable",
+        "sourceUrl": "https://admission.utm.my/int-razak-faculty-of-technology-informatics/",
+        "evidencePointer": "No programme-level course structure, module list, dissertation structure, or explicit research-field/specialization label was published in the collected official listing for this row.",
+        "reviewReason": "No explicit course structure, Field of Research, Specialization or EdD coursework/dissertation structure is published for this official row."
+      },
+      {
+        "label": "International postgraduate fee authority",
+        "optionType": "fee panel",
+        "governedFields": [
+          "tuition",
+          "feeStatus"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "evidencePointer": "https://admission.utm.my/fees-pg-inter/"
+      },
+      {
+        "label": "International postgraduate entry requirement authority",
+        "optionType": "entry requirement panel",
+        "governedFields": [
+          "academicRequirement"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/int-pg-entry-requirements/",
+        "evidencePointer": "https://admission.utm.my/int-pg-entry-requirements/"
+      },
+      {
+        "label": "English language requirement authority",
+        "optionType": "language requirement panel",
+        "governedFields": [
+          "languageRequirement"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/english-language-requirements-3/",
+        "evidencePointer": "https://admission.utm.my/english-language-requirements-3/"
+      }
+    ]
+  },
+  {
+    "code": "UTM-PHD-054",
+    "nameEnOfficial": "Doctor of Philosophy (Generic)",
+    "detailPageUrl": "https://admission.utm.my/int-malaysia-japan-international-institute-of-technology/",
+    "retrievalMethod": "static HTML official programme list plus official field-authority pages",
+    "hasOptions": true,
+    "options": [
+      {
+        "label": "Programme list row",
+        "optionType": "same-programme official sublink",
+        "governedFields": [
+          "officialTitle",
+          "faculty",
+          "level",
+          "studyMode",
+          "internationalEligibility"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/int-malaysia-japan-international-institute-of-technology/",
+        "evidencePointer": "https://admission.utm.my/int-malaysia-japan-international-institute-of-technology/"
+      },
+      {
+        "label": "Programme research field, specialization or EdD structure",
+        "optionType": "course-setting/curriculum/course panel",
+        "governedFields": [
+          "courseSetting",
+          "curriculum"
+        ],
+        "state": "not-applicable",
+        "sourceUrl": "https://admission.utm.my/int-malaysia-japan-international-institute-of-technology/",
+        "evidencePointer": "No programme-level course structure, module list, dissertation structure, or explicit research-field/specialization label was published in the collected official listing for this row.",
+        "reviewReason": "No explicit course structure, Field of Research, Specialization or EdD coursework/dissertation structure is published for this official row."
+      },
+      {
+        "label": "International postgraduate fee authority",
+        "optionType": "fee panel",
+        "governedFields": [
+          "tuition",
+          "feeStatus"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "evidencePointer": "https://admission.utm.my/fees-pg-inter/"
+      },
+      {
+        "label": "International postgraduate entry requirement authority",
+        "optionType": "entry requirement panel",
+        "governedFields": [
+          "academicRequirement"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/int-pg-entry-requirements/",
+        "evidencePointer": "https://admission.utm.my/int-pg-entry-requirements/"
+      },
+      {
+        "label": "English language requirement authority",
+        "optionType": "language requirement panel",
+        "governedFields": [
+          "languageRequirement"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/english-language-requirements-3/",
+        "evidencePointer": "https://admission.utm.my/english-language-requirements-3/"
+      }
+    ]
+  },
+  {
+    "code": "UTM-PHD-055",
+    "nameEnOfficial": "Doctor of Philosophy Field of Research : Engineering Education",
+    "detailPageUrl": "https://admission.utm.my/int-malaysia-japan-international-institute-of-technology/",
+    "retrievalMethod": "static HTML official programme list plus official field-authority pages",
+    "hasOptions": true,
+    "options": [
+      {
+        "label": "Programme list row",
+        "optionType": "same-programme official sublink",
+        "governedFields": [
+          "officialTitle",
+          "faculty",
+          "level",
+          "studyMode",
+          "internationalEligibility"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/int-malaysia-japan-international-institute-of-technology/",
+        "evidencePointer": "https://admission.utm.my/int-malaysia-japan-international-institute-of-technology/"
+      },
+      {
+        "label": "Programme research field, specialization or EdD structure",
+        "optionType": "course-setting/curriculum/course panel",
+        "governedFields": [
+          "courseSetting",
+          "curriculum"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/int-malaysia-japan-international-institute-of-technology/",
+        "evidencePointer": "Doctor of Philosophy Field of Research : Engineering Education",
+        "reviewReason": null
+      },
+      {
+        "label": "International postgraduate fee authority",
+        "optionType": "fee panel",
+        "governedFields": [
+          "tuition",
+          "feeStatus"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/fees-pg-inter/",
+        "evidencePointer": "https://admission.utm.my/fees-pg-inter/"
+      },
+      {
+        "label": "International postgraduate entry requirement authority",
+        "optionType": "entry requirement panel",
+        "governedFields": [
+          "academicRequirement"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/int-pg-entry-requirements/",
+        "evidencePointer": "https://admission.utm.my/int-pg-entry-requirements/"
+      },
+      {
+        "label": "English language requirement authority",
+        "optionType": "language requirement panel",
+        "governedFields": [
+          "languageRequirement"
+        ],
+        "state": "candidate-field",
+        "sourceUrl": "https://admission.utm.my/english-language-requirements-3/",
+        "evidencePointer": "https://admission.utm.my/english-language-requirements-3/"
+      }
+    ]
+  }
+]

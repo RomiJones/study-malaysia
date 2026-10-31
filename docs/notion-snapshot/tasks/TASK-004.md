@@ -2,7 +2,7 @@
 
 - **任务编号**: TASK-004
 - **任务标题**: 院校与专业数据模型及 API 升级
-- **状态**: 待评审
+- **状态**: 已阻塞
 - **优先级**: 高
 - **任务类型**: 后端
 - **负责人**: Codex
@@ -11,7 +11,7 @@
 - **实现说明**: 根据静态页面字段升级后端实体、共享类型、种子数据和 API，使用户端和管理端能支撑新展示功能。
 - **测试计划**: 运行 API 构建、种子数据或接口验证；必要时补充 mock 数据。
 - **验证结果**: 已产出中文方案文档 `docs/prd/TASK-004-data-model-api-upgrade-plan.md`；已读取并分析静态 HTML 和旧系统；已明确后端数据模型、API、管理端维护能力、用户端数据依赖和后续中文任务项；已运行 `npm run build` 并通过。本任务未修改 `apps/web`、`apps/api`、`apps/admin` 的业务实现文件。
-- **阻塞说明**: 未发现会阻塞本地文档产出的技术问题；实际 Notion 页面未更新，因为 `NOTION_PROJECT_HOME` 为空且 Notion 搜索未定位到 TASK-004 页面。
+- **阻塞说明**: Review 未通过：本轮按后端/API 独立 Review 复核，未修改代码。实际 Notion 搜索未定位到 TASK-004 页面，因此以用户提供的任务页内容、本地任务快照、PRD 文档和当前工作区代码为依据。`npm test -- tests/api/public-api-services.test.ts`、`npm test -- tests/api/compare-service.test.ts`、`npm test -- tests/web/format.test.ts`、`npm test -- tests/api` 和 `npm run build` 均通过，构建仅保留 admin chunk 体积警告。但仍有 2 个问题：TASK-004 任务记录仍声明未改业务实现，和当前大范围代码变更不一致；费用估算在官方 MYR programId 默认路径下仍不纳入生活费，且 `/tools/cost-estimate` 与 `/programs/cost-estimate/:id` 口径不统一。
 
 ## 依赖任务
 - TASK-003
@@ -43,3 +43,8 @@
 
 - **状态**: 待评审
 - **说明**: Codex 已完成实现并返回完成状态。
+
+### 2026-05-24T22:19:16.094Z - 自动状态更新
+
+- **状态**: 已阻塞
+- **说明**: Review 未通过：本轮按后端/API 独立 Review 复核，未修改代码。实际 Notion 搜索未定位到 TASK-004 页面，因此以用户提供的任务页内容、本地任务快照、PRD 文档和当前工作区代码为依据。`npm test -- tests/api/public-api-services.test.ts`、`npm test -- tests/api/compare-service.test.ts`、`npm test -- tests/web/format.test.ts`、`npm test -- tests/api` 和 `npm run build` 均通过，构建仅保留 admin chunk 体积警告。但仍有 2 个问题：TASK-004 任务记录仍声明未改业务实现，和当前大范围代码变更不一致；费用估算在官方 MYR programId 默认路径下仍不纳入生活费，且 `/tools/cost-estimate` 与 `/programs/cost-estimate/:id` 口径不统一。

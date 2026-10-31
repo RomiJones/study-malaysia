@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "institutionIdentifier": "英迪大学 / INTI International University",
+  "officialInstitutionName": "INTI International University & Colleges",
+  "universityCode": "INTI",
+  "shortName": "INTI",
+  "collectionScope": "full",
+  "levels": [
+    "bachelor",
+    "master",
+    "phd"
+  ],
+  "applicantScope": "international",
+  "authorization": "collect",
+  "academicSession": "Current official programme pages rechecked 2026-06-21",
+  "currentAsOf": "2026-06-21",
+  "taskInstruction": "对已采集的英迪大学本硕博专业信息按标准工作流深挖校对准确性",
+  "officialDomains": [
+    "newinti.edu.my"
+  ],
+  "status": "completed",
+  "notes": [
+    "Official identity follows the official website brand INTI International University & Colleges.",
+    "Candidate campus is preserved per programme detail page.",
+    "This rerun rechecks official HTML/PDF sources and tightens fee, language, duration, route-specific and China-specific evidence states.",
+    "No database write, import, publish, project restart, or public UI change was performed."
+  ]
+}

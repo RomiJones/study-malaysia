@@ -1,0 +1,632 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-06-16T15:28:44Z",
+  "sourceArtifacts": [
+    {
+      "role": "candidate",
+      "path": "data/imports/usm/2026-06-14/phd-candidate.json",
+      "sha256": "5920f855a59f8113061deaf5ae0e4afb98873d9c0335e074c553c443a15dd492"
+    },
+    {
+      "role": "official-source",
+      "path": "data/imports/usm/2026-06-14/phd-official-source.json",
+      "sha256": "9e889a530617c4bfb0b178f38574962e9936fbabd20320b4f6e3fa21ac53b4bc"
+    },
+    {
+      "role": "current-catalogue",
+      "path": "data/imports/usm/2026-06-14/phd-current-catalogue.json",
+      "sha256": "03be7bc3fadfbb2313e6ddefbdf02457481832041724176bccdd60ad878c9372"
+    },
+    {
+      "role": "candidate-audit",
+      "path": "data/imports/usm/2026-06-14/phd-audit.json",
+      "sha256": "8b62b8406c49ea50281c348bee6429048000af76ed499c2bf31161607b1b87a8"
+    },
+    {
+      "role": "delivery",
+      "path": "data/imports/usm/2026-06-14/phd-delivery.json",
+      "sha256": "4b25929c2a33702c7ccdfc90242146e9e1bf96d0fe987688440d2d75882dba01"
+    },
+    {
+      "role": "current-html-fetch-index",
+      "path": "tmp/usm-phd-current-html/fetch-index.json",
+      "sha256": "51faba86e07c430d7d756531ef95a5aaea681f6461342d3c1286accf85c5cbbf"
+    }
+  ],
+  "currentHtmlCache": {
+    "path": "tmp/usm-phd-current-html",
+    "requestedUniqueUrls": 91,
+    "retrieved": 20,
+    "transportFailures": 71,
+    "files": [
+      {
+        "articleId": "340",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=340&catid=53",
+        "path": "tmp/usm-phd-current-html/usm-pg-article-340.html",
+        "sha256": "93d7d3b273db3aa8cf9c9de2f2ca76b1aac136730c4906091dda14fe5af2255a",
+        "bytes": 32342,
+        "status": 200
+      },
+      {
+        "articleId": "336",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=336&catid=53",
+        "path": "tmp/usm-phd-current-html/usm-pg-article-336.html",
+        "sha256": "178c5efbc9ded5fc476877bd67a155ada3525108c195c7e5ea8a01e9a922308f",
+        "bytes": 31499,
+        "status": 200
+      },
+      {
+        "articleId": "348",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=348&catid=53",
+        "path": "tmp/usm-phd-current-html/usm-pg-article-348.html",
+        "sha256": "eb3484cf0138d5ea801e1e8727b436641e11426a6e3bcdbc0ad6a7281f68aa64",
+        "bytes": 31061,
+        "status": 200
+      },
+      {
+        "articleId": "347",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=347&catid=53",
+        "path": "tmp/usm-phd-current-html/usm-pg-article-347.html",
+        "sha256": "bed4b6bb0b75bc51b90045a6f81aa4558f43bda73caa6518306c39ef6fdfe455",
+        "bytes": 31089,
+        "status": 200
+      },
+      {
+        "articleId": "346",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=346&catid=53",
+        "path": "tmp/usm-phd-current-html/usm-pg-article-346.html",
+        "sha256": "711a70c0ef6b1ede7990b873c98ea8d9b5100349f3c8598695c64f8a78f89e82",
+        "bytes": 31001,
+        "status": 200
+      },
+      {
+        "articleId": "349",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=349&catid=53",
+        "path": "tmp/usm-phd-current-html/usm-pg-article-349.html",
+        "sha256": "cf90e6f430746aba0f43569fb47ec42362c445270e3f47a6b13f2137dd0dfa30",
+        "bytes": 30965,
+        "status": 200
+      },
+      {
+        "articleId": "413",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=413&catid=55",
+        "path": "tmp/usm-phd-current-html/usm-pg-article-413.html",
+        "sha256": "111e0bf3f4954ef7a69a24271db60228c25ec699802fa3ec7379eb1cfd1ea491",
+        "bytes": 29447,
+        "status": 200
+      },
+      {
+        "articleId": "202",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=202&catid=51",
+        "path": "tmp/usm-phd-current-html/usm-pg-article-202.html",
+        "sha256": "c4d365f42a9e7e1029de96b9e94c0dcac01bca4b221abab91bd07a1f3f2fb7a9",
+        "bytes": 32411,
+        "status": 200
+      },
+      {
+        "articleId": "557",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=557&catid=55",
+        "path": "tmp/usm-phd-current-html/usm-pg-article-557.html",
+        "sha256": "5ff25b1cd5e34607362e45886d30b47f91002619bb6a212f7798d0df45011093",
+        "bytes": 30887,
+        "status": 200
+      },
+      {
+        "articleId": "246",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=246&catid=51",
+        "path": "tmp/usm-phd-current-html/usm-pg-article-246.html",
+        "sha256": "baaeea84498ecff0668aeffe68d788eb0b1935cdf2dc155422a240052cf1cb4d",
+        "bytes": 33465,
+        "status": 200
+      },
+      {
+        "articleId": "200",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=200&catid=51",
+        "path": "tmp/usm-phd-current-html/usm-pg-article-200.html",
+        "sha256": "25192b2f8e18150981ac4d7d2a23f9d0f17c2b8feea230f2fd8465c7d847f29f",
+        "bytes": 32440,
+        "status": 200
+      },
+      {
+        "articleId": "167",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=167&catid=50",
+        "path": "tmp/usm-phd-current-html/usm-pg-article-167.html",
+        "sha256": "29708f307f95b5e7ea212e40e6e23bd9ef93dfdb4271209d1833769ce4f0ce23",
+        "bytes": 43859,
+        "status": 200
+      },
+      {
+        "articleId": "153",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=153&catid=50",
+        "path": "tmp/usm-phd-current-html/usm-pg-article-153.html",
+        "sha256": "f6a2f3d3c5ca399952d1822caea6fcc467511eecf28306e31930e2e86f6d3c59",
+        "bytes": 31770,
+        "status": 200
+      },
+      {
+        "articleId": "390",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=390&catid=54",
+        "path": "tmp/usm-phd-current-html/usm-pg-article-390.html",
+        "sha256": "664055ccc0c28ba633e66c2a0c348b649538b9c2c7a619b31aa373a8479e2dcb",
+        "bytes": 31806,
+        "status": 200
+      },
+      {
+        "articleId": "392",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=392&catid=54",
+        "path": "tmp/usm-phd-current-html/usm-pg-article-392.html",
+        "sha256": "52917769b8d9adccf0a09feb1e687b4e94100fec99f42544dd6a2cbec2d4793a",
+        "bytes": 32809,
+        "status": 200
+      },
+      {
+        "articleId": "395",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=395&catid=54",
+        "path": "tmp/usm-phd-current-html/usm-pg-article-395.html",
+        "sha256": "cfebc2b27f3dab9ad225330d7c0825cb788b3a7ed9d2c267fb82ee335d1a2de3",
+        "bytes": 33172,
+        "status": 200
+      },
+      {
+        "articleId": "402",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=402&catid=54",
+        "path": "tmp/usm-phd-current-html/usm-pg-article-402.html",
+        "sha256": "bbcea0529cf7fd9b63f1ce33e6380ed3525a788e1f75b5adcad271db69975c0c",
+        "bytes": 34444,
+        "status": 200
+      },
+      {
+        "articleId": "403",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=403&catid=54",
+        "path": "tmp/usm-phd-current-html/usm-pg-article-403.html",
+        "sha256": "2add729d77c8137d7b4363f1430a82e7fa00fde91efb778d2e4d1bbd7d4cd8f5",
+        "bytes": 31956,
+        "status": 200
+      },
+      {
+        "articleId": "407",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=407&catid=54",
+        "path": "tmp/usm-phd-current-html/usm-pg-article-407.html",
+        "sha256": "a79210ee9f55282a4876eb4e80ecb92392f4a2ad0a2699edf87814691cd17279",
+        "bytes": 33609,
+        "status": 200
+      },
+      {
+        "articleId": "404",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=404&catid=54",
+        "path": "tmp/usm-phd-current-html/usm-pg-article-404.html",
+        "sha256": "5c2e24d61474e062f7461098a15e0f87381b42609668c88c08c70b93f3bbe739",
+        "bytes": 2444,
+        "status": 200
+      }
+    ],
+    "failures": [
+      {
+        "articleId": "558",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=558&catid=55",
+        "status": "000",
+        "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+      },
+      {
+        "articleId": "555",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=555&catid=55",
+        "status": "000",
+        "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+      },
+      {
+        "articleId": "807",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=807&catid=55",
+        "status": "000",
+        "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+      },
+      {
+        "articleId": "233",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=233&catid=51",
+        "status": "000",
+        "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+      },
+      {
+        "articleId": "234",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=234&catid=51",
+        "status": "000",
+        "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+      },
+      {
+        "articleId": "888",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=888&catid=55",
+        "status": "000",
+        "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+      },
+      {
+        "articleId": "244",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=244&catid=51",
+        "status": "000",
+        "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+      },
+      {
+        "articleId": "169",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=169&catid=50",
+        "status": "000",
+        "error": "curl: (52) Empty reply from server\n"
+      },
+      {
+        "articleId": "217",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=217&catid=51",
+        "status": "000",
+        "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+      },
+      {
+        "articleId": "333",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=333&catid=52",
+        "status": "000",
+        "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+      },
+      {
+        "articleId": "372",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=372&catid=53",
+        "status": "000",
+        "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+      },
+      {
+        "articleId": "273",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=273&catid=52",
+        "status": "000",
+        "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+      },
+      {
+        "articleId": "170",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=170&catid=50",
+        "status": "000",
+        "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+      },
+      {
+        "articleId": "271",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=271&catid=52",
+        "status": "000",
+        "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+      },
+      {
+        "articleId": "809",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=809&catid=53",
+        "status": "000",
+        "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+      },
+      {
+        "articleId": "388",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=388&catid=54",
+        "status": "000",
+        "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+      },
+      {
+        "articleId": "219",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=219&catid=51",
+        "status": "000",
+        "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+      },
+      {
+        "articleId": "338",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=338&catid=53",
+        "status": "000",
+        "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+      },
+      {
+        "articleId": "510",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=510&catid=55",
+        "status": "000",
+        "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+      },
+      {
+        "articleId": "215",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=215&catid=51",
+        "status": "000",
+        "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+      },
+      {
+        "articleId": "218",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=218&catid=51",
+        "status": "000",
+        "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+      },
+      {
+        "articleId": "325",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=325&catid=52",
+        "status": "000",
+        "error": "curl: (28) Connection timed out after 25006 milliseconds\ncurl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+      },
+      {
+        "articleId": "220",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=220&catid=51",
+        "status": "000",
+        "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+      },
+      {
+        "articleId": "376",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=376&catid=53",
+        "status": "000",
+        "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+      },
+      {
+        "articleId": "375",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=375&catid=53",
+        "status": "000",
+        "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+      },
+      {
+        "articleId": "221",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=221&catid=51",
+        "status": "000",
+        "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+      },
+      {
+        "articleId": "361",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=361&catid=53",
+        "status": "000",
+        "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+      },
+      {
+        "articleId": "887",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=887&catid=52",
+        "status": "000",
+        "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+      },
+      {
+        "articleId": "243",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=243&catid=51",
+        "status": "000",
+        "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+      },
+      {
+        "articleId": "315",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=315&catid=52",
+        "status": "000",
+        "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+      },
+      {
+        "articleId": "378",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=378&catid=53",
+        "status": "000",
+        "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+      },
+      {
+        "articleId": "147",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=147&catid=50",
+        "status": "000",
+        "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+      },
+      {
+        "articleId": "241",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=241&catid=51",
+        "status": "000",
+        "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+      },
+      {
+        "articleId": "145",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=145&catid=50",
+        "status": "000",
+        "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+      },
+      {
+        "articleId": "326",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=326&catid=52",
+        "status": "000",
+        "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+      },
+      {
+        "articleId": "247",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=247&catid=51",
+        "status": "000",
+        "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+      },
+      {
+        "articleId": "313",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=313&catid=52",
+        "status": "000",
+        "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+      },
+      {
+        "articleId": "379",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=379&catid=53",
+        "status": "000",
+        "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+      },
+      {
+        "articleId": "561",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=561&catid=55",
+        "status": "000",
+        "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+      },
+      {
+        "articleId": "560",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=560&catid=55",
+        "status": "000",
+        "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+      },
+      {
+        "articleId": "559",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=559&catid=55",
+        "status": "000",
+        "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+      },
+      {
+        "articleId": "1475",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1475&catid=55",
+        "status": "000",
+        "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+      },
+      {
+        "articleId": "1476",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1476&catid=55",
+        "status": "000",
+        "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+      },
+      {
+        "articleId": "1474",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1474&catid=54",
+        "status": "000",
+        "error": "curl: (52) Empty reply from server\n"
+      },
+      {
+        "articleId": "1482",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1482&catid=50",
+        "status": "000",
+        "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+      },
+      {
+        "articleId": "1501",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1501&catid=54",
+        "status": "000",
+        "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+      },
+      {
+        "articleId": "1506",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1506&catid=55",
+        "status": "000",
+        "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+      },
+      {
+        "articleId": "1508",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1508&catid=52",
+        "status": "000",
+        "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+      },
+      {
+        "articleId": "1503",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1503&catid=54",
+        "status": "000",
+        "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+      },
+      {
+        "articleId": "1515",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1515&catid=52",
+        "status": "000",
+        "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+      },
+      {
+        "articleId": "1519",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1519&catid=52",
+        "status": "000",
+        "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+      },
+      {
+        "articleId": "1492",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1492&catid=53",
+        "status": "000",
+        "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+      },
+      {
+        "articleId": "1491",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1491&catid=50",
+        "status": "000",
+        "error": "curl: (52) Empty reply from server\n"
+      },
+      {
+        "articleId": "1490",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1490&catid=54",
+        "status": "000",
+        "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+      },
+      {
+        "articleId": "1487",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1487&catid=51",
+        "status": "000",
+        "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+      },
+      {
+        "articleId": "1486",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1486&catid=52",
+        "status": "000",
+        "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+      },
+      {
+        "articleId": "1493",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1493&catid=53",
+        "status": "000",
+        "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+      },
+      {
+        "articleId": "1516",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1516&catid=52",
+        "status": "000",
+        "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+      },
+      {
+        "articleId": "1494",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1494&catid=53",
+        "status": "000",
+        "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+      },
+      {
+        "articleId": "1517",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1517&catid=52",
+        "status": "000",
+        "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+      },
+      {
+        "articleId": "222",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=222&catid=51",
+        "status": "000",
+        "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+      },
+      {
+        "articleId": "232",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=232&catid=51",
+        "status": "000",
+        "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+      },
+      {
+        "articleId": "235",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=235&catid=51",
+        "status": "000",
+        "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+      },
+      {
+        "articleId": "556",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=556&catid=55",
+        "status": "000",
+        "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+      },
+      {
+        "articleId": "1479",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=1479&catid=50",
+        "status": "000",
+        "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+      },
+      {
+        "articleId": "567",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=567&catid=59",
+        "status": "000",
+        "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+      },
+      {
+        "articleId": "566",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=566&catid=59",
+        "status": "000",
+        "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+      },
+      {
+        "articleId": "416",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=416&catid=55",
+        "status": "000",
+        "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+      },
+      {
+        "articleId": "417",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=417&catid=55",
+        "status": "000",
+        "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+      },
+      {
+        "articleId": "415",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=415&catid=55",
+        "status": "000",
+        "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+      },
+      {
+        "articleId": "420",
+        "url": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=420&catid=55",
+        "status": "000",
+        "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to admission.usm.my:443 \n"
+      }
+    ]
+  }
+}

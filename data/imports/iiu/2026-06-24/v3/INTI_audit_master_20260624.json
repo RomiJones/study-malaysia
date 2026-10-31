@@ -1,0 +1,1971 @@
+{
+  "safe_to_import": false,
+  "import_approved_by": null,
+  "import_approved_at": null,
+  "auditMeta": {
+    "generatedBy": "Codex StudyMY Collector v3.0",
+    "generatedAt": "2026-06-24",
+    "targetUniversity": "INTI International University & Colleges",
+    "targetUniversityShortName": "INTI",
+    "targetLevel": "master",
+    "sourceRegistryConfirmedAt": "2026-06-24",
+    "programmeBaselineConfirmedAt": "2026-06-24",
+    "totalProgrammesCollected": 23,
+    "totalProgrammesBaseline": 23,
+    "collectionCompleteness": "23/23",
+    "commercialDisplayAuditResult": "needs-review",
+    "exceptionCount": 15
+  },
+  "sourceRegistry": {
+    "universityName": "INTI International University & Colleges",
+    "shortName": "INTI",
+    "officialDomain": "newinti.edu.my",
+    "targetLevel": "master",
+    "sources": {
+      "programmeCatalogueUrl": "https://newinti.edu.my/academic-programmes/postgraduate/masters/",
+      "feeUrl": "https://newinti.edu.my/academic-programmes/postgraduate/masters/",
+      "entryRequirementUrl": "https://newinti.edu.my/international-students/entry-requirements/",
+      "languageRequirementUrl": "https://newinti.edu.my/international-students/entry-requirements/",
+      "applicationIntakeUrl": "https://newinti.edu.my/international-students/how-to-apply/"
+    },
+    "sourceStatuses": [
+      {
+        "role": "internationalFee",
+        "status": "needs-manual-check",
+        "note": "官方专业详情页发布 Approx. RM 费用并注明不含 SST；未发现精确总学费 authority。"
+      }
+    ],
+    "registeredAt": "2026-06-24",
+    "registeredBy": "Codex StudyMY Collector v3"
+  },
+  "programmeBaseline": [
+    {
+      "sequence": 1,
+      "nameEn": "Master in Education Management",
+      "faculty": "Education",
+      "detailUrl": "https://newinti.edu.my/programme/master-in-education-management/",
+      "baselineStatus": "pending"
+    },
+    {
+      "sequence": 2,
+      "nameEn": "Master in Education Management (Online Learning)",
+      "faculty": "Education",
+      "detailUrl": "https://newinti.edu.my/programme/master-in-education-management-online-learning/",
+      "baselineStatus": "pending"
+    },
+    {
+      "sequence": 3,
+      "nameEn": "Master in Health Administration",
+      "faculty": "Health Sciences",
+      "detailUrl": "https://newinti.edu.my/programme/master-in-health-administration/",
+      "baselineStatus": "pending"
+    },
+    {
+      "sequence": 4,
+      "nameEn": "Master in Health Sciences (Physiotherapy) (by Research)",
+      "faculty": "Health Sciences",
+      "detailUrl": "https://newinti.edu.my/programme/master-in-health-sciences-physiotherapy-by-research/",
+      "baselineStatus": "pending"
+    },
+    {
+      "sequence": 5,
+      "nameEn": "Master in Information Systems (MIS)",
+      "faculty": "Computing & IT",
+      "detailUrl": "https://newinti.edu.my/programme/master-in-information-systems-mis/",
+      "baselineStatus": "pending"
+    },
+    {
+      "sequence": 6,
+      "nameEn": "Master in Information Technology (MIT)",
+      "faculty": "Computing & IT",
+      "detailUrl": "https://newinti.edu.my/programme/master-in-information-technology-mit/",
+      "baselineStatus": "pending"
+    },
+    {
+      "sequence": 7,
+      "nameEn": "Master in Information Technology (Online Learning)",
+      "faculty": "Computing & IT",
+      "detailUrl": "https://newinti.edu.my/programme/master-in-information-technology-fully-online-learning-simplified/",
+      "baselineStatus": "pending"
+    },
+    {
+      "sequence": 8,
+      "nameEn": "Master of Biotechnological Innovations and Application (by Research)",
+      "faculty": "Biotechnology & Life Sciences",
+      "detailUrl": "https://newinti.edu.my/programme/master-of-biotechnological-innovations-and-application-by-research/",
+      "baselineStatus": "pending"
+    },
+    {
+      "sequence": 9,
+      "nameEn": "Master of Business Administration (Business Analytics)",
+      "faculty": "Business",
+      "detailUrl": "https://newinti.edu.my/programme/master-of-business-administration-business-analytics/",
+      "baselineStatus": "pending"
+    },
+    {
+      "sequence": 10,
+      "nameEn": "Master of Business Administration (MBA)",
+      "faculty": "Business",
+      "detailUrl": "https://newinti.edu.my/programme/master-of-business-administration-mba-by-inti-international-university_1/",
+      "baselineStatus": "pending"
+    },
+    {
+      "sequence": 11,
+      "nameEn": "Master of Business Administration (MBA) in collaboration with INTI International University",
+      "faculty": "Business",
+      "detailUrl": "https://newinti.edu.my/programme/master-of-business-administration-mba-in-collaboration-with-inti-international-university/",
+      "baselineStatus": "pending"
+    },
+    {
+      "sequence": 12,
+      "nameEn": "Master of Business Administration (Online Learning)",
+      "faculty": "Business",
+      "detailUrl": "https://newinti.edu.my/programme/master-of-business-administration-mba-learning-simplified/",
+      "baselineStatus": "pending"
+    },
+    {
+      "sequence": 13,
+      "nameEn": "Master of Education in Learning, Design and Technology (by Research)",
+      "faculty": "Education",
+      "detailUrl": "https://newinti.edu.my/programme/master-of-education-in-learning-design-and-technology/",
+      "baselineStatus": "pending"
+    },
+    {
+      "sequence": 14,
+      "nameEn": "Master of Science in Construction Management (Building Information Modelling)",
+      "faculty": "Engineering",
+      "detailUrl": "https://newinti.edu.my/programme/master-of-science-in-construction-management-building-information-modelling/",
+      "baselineStatus": "pending"
+    },
+    {
+      "sequence": 15,
+      "nameEn": "Master of Science in Construction Management (Building Information Modelling) – (Online Learning)",
+      "faculty": "Engineering",
+      "detailUrl": "https://newinti.edu.my/programme/master-of-science-in-construction-management-building-information-modelling-fully-online/",
+      "baselineStatus": "pending"
+    },
+    {
+      "sequence": 16,
+      "nameEn": "Master of Science in Construction Management (Facility Management)",
+      "faculty": "Engineering",
+      "detailUrl": "https://newinti.edu.my/programme/master-of-science-in-construction-management-with-facility-management/",
+      "baselineStatus": "pending"
+    },
+    {
+      "sequence": 17,
+      "nameEn": "Master of Science in Data Science (by Research)",
+      "faculty": "Computing & IT",
+      "detailUrl": "https://newinti.edu.my/programme/master-of-science-in-data-science/",
+      "baselineStatus": "pending"
+    },
+    {
+      "sequence": 18,
+      "nameEn": "Master of Science in Engineering and Eco-Innovation (by Research)",
+      "faculty": "Engineering",
+      "detailUrl": "https://newinti.edu.my/programme/master-of-science-in-engineering-and-eco-innovation-by-research/",
+      "baselineStatus": "pending"
+    },
+    {
+      "sequence": 19,
+      "nameEn": "Master of Science in Facilities Management (Online Learning)",
+      "faculty": "Engineering",
+      "detailUrl": "https://newinti.edu.my/programme/master-of-science-in-facilities-management-online-learning/",
+      "baselineStatus": "pending"
+    },
+    {
+      "sequence": 20,
+      "nameEn": "Master of Science in Information Systems (by Research)",
+      "faculty": "Computing & IT",
+      "detailUrl": "https://newinti.edu.my/programme/master-of-science-in-information-systems-by-research/",
+      "baselineStatus": "pending"
+    },
+    {
+      "sequence": 21,
+      "nameEn": "Master of Science in Innovation and Technology (by Research)",
+      "faculty": "Engineering",
+      "detailUrl": "https://newinti.edu.my/programme/master-of-science-in-innovation-and-technology/",
+      "baselineStatus": "pending"
+    },
+    {
+      "sequence": 22,
+      "nameEn": "Master of Science in Integrated Project Management (Online Learning)",
+      "faculty": "Engineering",
+      "detailUrl": "https://newinti.edu.my/programme/master-of-science-in-integrated-project-management-online-learning/",
+      "baselineStatus": "pending"
+    },
+    {
+      "sequence": 23,
+      "nameEn": "Master of Traditional Chinese Medicine",
+      "faculty": "Health Sciences",
+      "detailUrl": "https://newinti.edu.my/programme/master-of-traditional-chinese-medicine/",
+      "baselineStatus": "pending"
+    }
+  ],
+  "programmes": [
+    {
+      "nameEn": "Master in Education Management",
+      "name": "教育管理硕士",
+      "faculty": "Education",
+      "facultyZh": "教育学院",
+      "level": "master",
+      "duration": 1,
+      "tuitionMYR": "official-total-unpublished",
+      "tuitionNote": "官网仅发布近似费用（INTI International University：约 RM 41,415），并注明公布费用不含 SST，国际学生费用另加 6% SST。未发现同一专业、同一国际学生口径的精确总学费。",
+      "feeStatus": "official-total-unpublished",
+      "intake": [
+        1,
+        5,
+        9
+      ],
+      "applicationDeadline": "official-unpublished",
+      "language": {
+        "ielts": 4,
+        "toefl": null,
+        "otherRequirement": "MUET：3",
+        "waiver": null
+      },
+      "curriculum": [
+        "教育管理者财务基础",
+        "教育心理学",
+        "教育分析",
+        "组织管理",
+        "教育研究方法",
+        "创新与知识管理",
+        "统计与决策分析",
+        "课程开发与管理",
+        "新兴技术赋能教育转型",
+        "教育政策与咨询角色",
+        "最终项目"
+      ],
+      "curriculumNote": "课程结构来自官方专业页面，已翻译为中文；术语仍需人工复核。",
+      "careerProspects": "official-unpublished",
+      "officialFeeSourceUrl": "https://newinti.edu.my/programme/master-in-education-management/",
+      "officialSourceUrl": "https://newinti.edu.my/programme/master-in-education-management/",
+      "officialVerifiedAt": "2026-06-24",
+      "publicDisplayStatus": "needs-review",
+      "auditStatus": "needs-manual-review",
+      "fieldAuditResult": "FAIL",
+      "fieldAuditFailedItems": [
+        "fee-authority-ambiguous",
+        "career-official-unpublished",
+        "collector-review-required"
+      ],
+      "entryRequirement": {
+        "minGPA": 2.0,
+        "gpaScale": 4.0,
+        "gpaNote": "官方原文包含多条 CGPA、内部评估、工作经验或先修课程路径；请以 officialAcademicRequirement 证据为准。",
+        "degreeLevel": "通常要求相关或非相关领域本科学位，具体路径以官方条目为准。",
+        "degreeRelevance": "not-confirmed",
+        "workExperience": null
+      },
+      "studyMode": "coursework",
+      "studyModeNote": "full-time/part-time as published",
+      "thesisRequired": false,
+      "thesisNote": "官方课程结构包含：最终项目、项目。",
+      "interviewRequired": "case-by-case",
+      "interviewNote": "官方入学路径提到严格内部评估，但未明确写成统一面试要求。",
+      "supervisorSystem": null,
+      "creditHours": "official-unpublished"
+    },
+    {
+      "nameEn": "Master in Education Management (Online Learning)",
+      "name": "教育管理硕士（在线学习）",
+      "faculty": "Education",
+      "facultyZh": "教育学院",
+      "level": "master",
+      "duration": 1,
+      "tuitionMYR": "official-total-unpublished",
+      "tuitionNote": "官网仅发布近似费用（INTI International University：约 RM 33,220），并注明公布费用不含 SST，国际学生费用另加 6% SST。未发现同一专业、同一国际学生口径的精确总学费。",
+      "feeStatus": "official-total-unpublished",
+      "intake": [
+        1,
+        3,
+        5,
+        8,
+        10
+      ],
+      "applicationDeadline": "official-unpublished",
+      "language": {
+        "ielts": 4,
+        "toefl": null,
+        "otherRequirement": "MUET：3",
+        "waiver": null
+      },
+      "curriculum": [
+        "课程开发与管理",
+        "教育分析",
+        "教育政策与咨询角色",
+        "教育心理学",
+        "教育管理者财务基础",
+        "创新与知识管理",
+        "组织行为",
+        "教育研究方法",
+        "统计与决策分析",
+        "新兴技术赋能教育转型",
+        "项目"
+      ],
+      "curriculumNote": "课程结构来自官方专业页面，已翻译为中文；术语仍需人工复核。",
+      "careerProspects": [
+        "教育行业部门主管",
+        "中心负责人",
+        "运营负责人",
+        "教师",
+        "讲师",
+        "培训人员"
+      ],
+      "officialFeeSourceUrl": "https://newinti.edu.my/programme/master-in-education-management-online-learning/",
+      "officialSourceUrl": "https://newinti.edu.my/programme/master-in-education-management-online-learning/",
+      "officialVerifiedAt": "2026-06-24",
+      "publicDisplayStatus": "needs-review",
+      "auditStatus": "needs-manual-review",
+      "fieldAuditResult": "FAIL",
+      "fieldAuditFailedItems": [
+        "fee-authority-ambiguous",
+        "collector-review-required"
+      ],
+      "entryRequirement": {
+        "minGPA": 2.0,
+        "gpaScale": 4.0,
+        "gpaNote": "官方原文包含多条 CGPA、内部评估、工作经验或先修课程路径；请以 officialAcademicRequirement 证据为准。",
+        "degreeLevel": "通常要求相关或非相关领域本科学位，具体路径以官方条目为准。",
+        "degreeRelevance": "not-confirmed",
+        "workExperience": null
+      },
+      "studyMode": "coursework",
+      "studyModeNote": "在线学习",
+      "thesisRequired": false,
+      "thesisNote": "官方课程结构包含：项目。",
+      "interviewRequired": "case-by-case",
+      "interviewNote": "官方入学路径提到严格内部评估，但未明确写成统一面试要求。",
+      "supervisorSystem": null,
+      "creditHours": "official-unpublished"
+    },
+    {
+      "nameEn": "Master in Health Administration",
+      "name": "健康管理硕士",
+      "faculty": "Health Sciences",
+      "facultyZh": "健康科学学院",
+      "level": "master",
+      "duration": 1,
+      "tuitionMYR": "official-total-unpublished",
+      "tuitionNote": "官网仅发布近似费用（INTI International University：约 RM 41,398），并注明公布费用不含 SST，国际学生费用另加 6% SST。未发现同一专业、同一国际学生口径的精确总学费。",
+      "feeStatus": "official-total-unpublished",
+      "intake": [
+        1,
+        5,
+        9
+      ],
+      "applicationDeadline": "official-unpublished",
+      "language": {
+        "ielts": 6,
+        "toefl": null,
+        "otherRequirement": null,
+        "waiver": null
+      },
+      "curriculum": [
+        "商业研究方法",
+        "创业管理",
+        "全球商业议题",
+        "电子商务",
+        "商业经济学",
+        "组织行为",
+        "医疗卫生质量与安全管理",
+        "医疗卫生技术与支持服务",
+        "市场营销管理",
+        "商业会计与金融",
+        "战略人力资源管理",
+        "战略管理",
+        "医疗法律、法规与伦理",
+        "工商管理项目"
+      ],
+      "curriculumNote": "课程结构来自官方专业页面，已翻译为中文；术语仍需人工复核。",
+      "careerProspects": [
+        "医院运营总监",
+        "诊所经理",
+        "患者安全总监",
+        "业务发展总监",
+        "首席官员",
+        "首席执行官"
+      ],
+      "officialFeeSourceUrl": "https://newinti.edu.my/programme/master-in-health-administration/",
+      "officialSourceUrl": "https://newinti.edu.my/programme/master-in-health-administration/",
+      "officialVerifiedAt": "2026-06-24",
+      "publicDisplayStatus": "needs-review",
+      "auditStatus": "needs-manual-review",
+      "fieldAuditResult": "FAIL",
+      "fieldAuditFailedItems": [
+        "fee-authority-ambiguous",
+        "collector-review-required"
+      ],
+      "entryRequirement": {
+        "minGPA": 2.0,
+        "gpaScale": 4.0,
+        "gpaNote": "官方原文包含多条 CGPA、内部评估、工作经验或先修课程路径；请以 officialAcademicRequirement 证据为准。",
+        "degreeLevel": "通常要求相关或非相关领域本科学位，具体路径以官方条目为准。",
+        "degreeRelevance": "open",
+        "workExperience": "部分非相关背景或较低 CGPA 路径需要相关工作经验、严格内部评估或先修课程，具体以官方条目为准。"
+      },
+      "studyMode": "coursework",
+      "studyModeNote": "full-time/part-time as published",
+      "thesisRequired": false,
+      "thesisNote": "官方课程结构包含：项目。",
+      "interviewRequired": "case-by-case",
+      "interviewNote": "官方入学路径提到严格内部评估，但未明确写成统一面试要求。",
+      "supervisorSystem": null,
+      "creditHours": "official-unpublished"
+    },
+    {
+      "nameEn": "Master in Health Sciences (Physiotherapy) (by Research)",
+      "name": "健康科学硕士（物理治疗）（研究型）",
+      "faculty": "Health Sciences",
+      "facultyZh": "健康科学学院",
+      "level": "master",
+      "duration": 2,
+      "tuitionMYR": "official-total-unpublished",
+      "tuitionNote": "官网仅发布近似费用（INTI International University：约 RM 39,600），并注明公布费用不含 SST，国际学生费用另加 6% SST。未发现同一专业、同一国际学生口径的精确总学费。",
+      "feeStatus": "official-total-unpublished",
+      "intake": [
+        1,
+        5,
+        9
+      ],
+      "applicationDeadline": "official-unpublished",
+      "language": {
+        "ielts": null,
+        "toefl": null,
+        "otherRequirement": "官方公布了语言要求文本，但未能稳定拆分为列表分数；需人工复核。",
+        "waiver": null
+      },
+      "curriculum": [
+        "研究方法论",
+        "开题答辩",
+        "研究论文",
+        "最终学年口试答辩",
+        "毕业论文"
+      ],
+      "curriculumNote": "课程结构来自官方专业页面，已翻译为中文；术语仍需人工复核。",
+      "careerProspects": [
+        "物理治疗师",
+        "讲师",
+        "学术研究员",
+        "创业者",
+        "中心经理",
+        "临床研究员"
+      ],
+      "officialFeeSourceUrl": "https://newinti.edu.my/programme/master-in-health-sciences-physiotherapy-by-research/",
+      "officialSourceUrl": "https://newinti.edu.my/programme/master-in-health-sciences-physiotherapy-by-research/",
+      "officialVerifiedAt": "2026-06-24",
+      "publicDisplayStatus": "needs-review",
+      "auditStatus": "needs-manual-review",
+      "fieldAuditResult": "FAIL",
+      "fieldAuditFailedItems": [
+        "fee-authority-ambiguous",
+        "collector-review-required"
+      ],
+      "entryRequirement": {
+        "minGPA": 2.0,
+        "gpaScale": 4.0,
+        "gpaNote": "官方原文包含多条 CGPA、内部评估、工作经验或先修课程路径；请以 officialAcademicRequirement 证据为准。",
+        "degreeLevel": "通常要求相关或非相关领域本科学位，具体路径以官方条目为准。",
+        "degreeRelevance": "preferred",
+        "workExperience": "部分非相关背景或较低 CGPA 路径需要相关工作经验、严格内部评估或先修课程，具体以官方条目为准。"
+      },
+      "studyMode": "research",
+      "studyModeNote": "full-time/part-time as published",
+      "thesisRequired": true,
+      "thesisNote": "官方课程结构包含：研究方法论、开题答辩、研究论文、论文、口试答辩。",
+      "interviewRequired": "case-by-case",
+      "interviewNote": "官方入学路径提到严格内部评估，但未明确写成统一面试要求。",
+      "supervisorSystem": true,
+      "creditHours": "official-unpublished"
+    },
+    {
+      "nameEn": "Master in Information Systems (MIS)",
+      "name": "信息系统硕士",
+      "faculty": "Computing & IT",
+      "facultyZh": "计算机与信息技术学院",
+      "level": "master",
+      "duration": 1,
+      "tuitionMYR": "official-total-unpublished",
+      "tuitionNote": "官网仅发布近似费用（INTI International University：约 RM 41,410），并注明公布费用不含 SST，国际学生费用另加 6% SST。未发现同一专业、同一国际学生口径的精确总学费。",
+      "feeStatus": "official-total-unpublished",
+      "intake": [
+        1,
+        5,
+        9
+      ],
+      "applicationDeadline": "official-unpublished",
+      "language": {
+        "ielts": 6,
+        "toefl": null,
+        "otherRequirement": null,
+        "waiver": null
+      },
+      "curriculum": [
+        "智能决策支持系统",
+        "未来信息学",
+        "计算研究方法",
+        "系统开发工具与技术",
+        "创新与知识管理",
+        "信息技术战略项目",
+        "企业系统",
+        "大数据应用",
+        "商业模拟"
+      ],
+      "curriculumNote": "课程结构来自官方专业页面，已翻译为中文；术语仍需人工复核。",
+      "careerProspects": [
+        "技术管理",
+        "数字化业务领导",
+        "企业系统",
+        "大数据与商业模拟相关岗位"
+      ],
+      "officialFeeSourceUrl": "https://newinti.edu.my/programme/master-in-information-systems-mis/",
+      "officialSourceUrl": "https://newinti.edu.my/programme/master-in-information-systems-mis/",
+      "officialVerifiedAt": "2026-06-24",
+      "publicDisplayStatus": "needs-review",
+      "auditStatus": "needs-manual-review",
+      "fieldAuditResult": "FAIL",
+      "fieldAuditFailedItems": [
+        "fee-authority-ambiguous",
+        "collector-review-required"
+      ],
+      "entryRequirement": {
+        "minGPA": 2.0,
+        "gpaScale": 4.0,
+        "gpaNote": "官方原文包含多条 CGPA、内部评估、工作经验或先修课程路径；请以 officialAcademicRequirement 证据为准。",
+        "degreeLevel": "通常要求相关或非相关领域本科学位，具体路径以官方条目为准。",
+        "degreeRelevance": "preferred",
+        "workExperience": null
+      },
+      "studyMode": "coursework",
+      "studyModeNote": "full-time/part-time as published",
+      "thesisRequired": false,
+      "thesisNote": "官方课程结构包含：项目。",
+      "interviewRequired": "official-unpublished",
+      "interviewNote": "官方页面未明确公布统一面试要求。",
+      "supervisorSystem": null,
+      "creditHours": "official-unpublished"
+    },
+    {
+      "nameEn": "Master in Information Technology (MIT)",
+      "name": "信息技术硕士",
+      "faculty": "Computing & IT",
+      "facultyZh": "计算机与信息技术学院",
+      "level": "master",
+      "duration": 1,
+      "tuitionMYR": "official-total-unpublished",
+      "tuitionNote": "官网仅发布近似费用（INTI International University：约 RM 41,410），并注明公布费用不含 SST，国际学生费用另加 6% SST。未发现同一专业、同一国际学生口径的精确总学费。",
+      "feeStatus": "official-total-unpublished",
+      "intake": [
+        1,
+        5,
+        9
+      ],
+      "applicationDeadline": "official-unpublished",
+      "language": {
+        "ielts": 6,
+        "toefl": null,
+        "otherRequirement": null,
+        "waiver": null
+      },
+      "curriculum": [
+        "智能决策支持系统",
+        "未来信息学",
+        "计算研究方法",
+        "系统开发工具与技术",
+        "创新与知识管理",
+        "信息技术战略项目",
+        "网络安全",
+        "信息技术项目管理",
+        "泛在计算"
+      ],
+      "curriculumNote": "课程结构来自官方专业页面，已翻译为中文；术语仍需人工复核。",
+      "careerProspects": [
+        "计算",
+        "分布式计算",
+        "空间信息",
+        "人机交互",
+        "人工智能",
+        "数据分析与信息技术管理相关岗位"
+      ],
+      "officialFeeSourceUrl": "https://newinti.edu.my/programme/master-in-information-technology-mit/",
+      "officialSourceUrl": "https://newinti.edu.my/programme/master-in-information-technology-mit/",
+      "officialVerifiedAt": "2026-06-24",
+      "publicDisplayStatus": "needs-review",
+      "auditStatus": "needs-manual-review",
+      "fieldAuditResult": "FAIL",
+      "fieldAuditFailedItems": [
+        "fee-authority-ambiguous",
+        "collector-review-required"
+      ],
+      "entryRequirement": {
+        "minGPA": 2.0,
+        "gpaScale": 4.0,
+        "gpaNote": "官方原文包含多条 CGPA、内部评估、工作经验或先修课程路径；请以 officialAcademicRequirement 证据为准。",
+        "degreeLevel": "通常要求相关或非相关领域本科学位，具体路径以官方条目为准。",
+        "degreeRelevance": "preferred",
+        "workExperience": null
+      },
+      "studyMode": "coursework",
+      "studyModeNote": "full-time/part-time as published",
+      "thesisRequired": false,
+      "thesisNote": "官方课程结构包含：项目。",
+      "interviewRequired": "official-unpublished",
+      "interviewNote": "官方页面未明确公布统一面试要求。",
+      "supervisorSystem": null,
+      "creditHours": "official-unpublished"
+    },
+    {
+      "nameEn": "Master in Information Technology (Online Learning)",
+      "name": "信息技术硕士（在线学习）",
+      "faculty": "Computing & IT",
+      "facultyZh": "计算机与信息技术学院",
+      "level": "master",
+      "duration": 1,
+      "tuitionMYR": "official-total-unpublished",
+      "tuitionNote": "官网仅发布近似费用（INTI International University：约 RM 33,330），并注明公布费用不含 SST，国际学生费用另加 6% SST。未发现同一专业、同一国际学生口径的精确总学费。",
+      "feeStatus": "official-total-unpublished",
+      "intake": [
+        1,
+        3,
+        5,
+        8,
+        10
+      ],
+      "applicationDeadline": "official-unpublished",
+      "language": {
+        "ielts": 6,
+        "toefl": null,
+        "otherRequirement": null,
+        "waiver": null
+      },
+      "curriculum": [
+        "智能决策支持系统",
+        "未来信息学",
+        "计算研究方法",
+        "系统开发工具与技术",
+        "创新与知识管理",
+        "信息技术战略项目",
+        "网络安全",
+        "信息技术项目管理",
+        "泛在计算"
+      ],
+      "curriculumNote": "课程结构来自官方专业页面，已翻译为中文；术语仍需人工复核。",
+      "careerProspects": [
+        "计算机系统管理",
+        "信息技术实施",
+        "行业学习项目",
+        "信息技术团队协作与技术管理相关岗位"
+      ],
+      "officialFeeSourceUrl": "https://newinti.edu.my/programme/master-in-information-technology-fully-online-learning-simplified/",
+      "officialSourceUrl": "https://newinti.edu.my/programme/master-in-information-technology-fully-online-learning-simplified/",
+      "officialVerifiedAt": "2026-06-24",
+      "publicDisplayStatus": "needs-review",
+      "auditStatus": "needs-manual-review",
+      "fieldAuditResult": "FAIL",
+      "fieldAuditFailedItems": [
+        "fee-authority-ambiguous",
+        "collector-review-required"
+      ],
+      "entryRequirement": {
+        "minGPA": 2.0,
+        "gpaScale": 4.0,
+        "gpaNote": "官方原文包含多条 CGPA、内部评估、工作经验或先修课程路径；请以 officialAcademicRequirement 证据为准。",
+        "degreeLevel": "通常要求相关或非相关领域本科学位，具体路径以官方条目为准。",
+        "degreeRelevance": "preferred",
+        "workExperience": null
+      },
+      "studyMode": "coursework",
+      "studyModeNote": "在线学习",
+      "thesisRequired": false,
+      "thesisNote": "官方课程结构包含：项目。",
+      "interviewRequired": "official-unpublished",
+      "interviewNote": "官方页面未明确公布统一面试要求。",
+      "supervisorSystem": null,
+      "creditHours": "official-unpublished"
+    },
+    {
+      "nameEn": "Master of Biotechnological Innovations and Application (by Research)",
+      "name": "生物技术创新与应用硕士（研究型）",
+      "faculty": "Biotechnology & Life Sciences",
+      "facultyZh": "生物技术与生命科学学院",
+      "level": "master",
+      "duration": 2,
+      "tuitionMYR": "official-total-unpublished",
+      "tuitionNote": "官网仅发布近似费用（INTI International University：约 RM 39,600），并注明公布费用不含 SST，国际学生费用另加 6% SST。未发现同一专业、同一国际学生口径的精确总学费。",
+      "feeStatus": "official-total-unpublished",
+      "intake": [
+        1,
+        5,
+        9
+      ],
+      "applicationDeadline": "official-unpublished",
+      "language": {
+        "ielts": null,
+        "toefl": null,
+        "otherRequirement": "官方公布了语言要求文本，但未能稳定拆分为列表分数；需人工复核。",
+        "waiver": null
+      },
+      "curriculum": [
+        "研究方法论",
+        "开题答辩",
+        "研究论文",
+        "最终学年口试答辩",
+        "毕业论文"
+      ],
+      "curriculumNote": "课程结构来自官方专业页面，已翻译为中文；术语仍需人工复核。",
+      "careerProspects": [
+        "高校教师",
+        "生物技术产品专员",
+        "微生物学家",
+        "研发经理",
+        "生物技术产品分析师",
+        "工艺开发科学家"
+      ],
+      "officialFeeSourceUrl": "https://newinti.edu.my/programme/master-of-biotechnological-innovations-and-application-by-research/",
+      "officialSourceUrl": "https://newinti.edu.my/programme/master-of-biotechnological-innovations-and-application-by-research/",
+      "officialVerifiedAt": "2026-06-24",
+      "publicDisplayStatus": "needs-review",
+      "auditStatus": "needs-manual-review",
+      "fieldAuditResult": "FAIL",
+      "fieldAuditFailedItems": [
+        "fee-authority-ambiguous",
+        "collector-review-required"
+      ],
+      "entryRequirement": {
+        "minGPA": 2.5,
+        "gpaScale": 4.0,
+        "gpaNote": "官方原文包含多条 CGPA、内部评估、工作经验或先修课程路径；请以 officialAcademicRequirement 证据为准。",
+        "degreeLevel": "通常要求相关或非相关领域本科学位，具体路径以官方条目为准。",
+        "degreeRelevance": "preferred",
+        "workExperience": "部分非相关背景或较低 CGPA 路径需要相关工作经验、严格内部评估或先修课程，具体以官方条目为准。"
+      },
+      "studyMode": "research",
+      "studyModeNote": "full-time/part-time as published",
+      "thesisRequired": true,
+      "thesisNote": "官方课程结构包含：研究方法论、开题答辩、研究论文、论文、口试答辩。",
+      "interviewRequired": "case-by-case",
+      "interviewNote": "官方入学路径提到严格内部评估，但未明确写成统一面试要求。",
+      "supervisorSystem": true,
+      "creditHours": "official-unpublished"
+    },
+    {
+      "nameEn": "Master of Business Administration (Business Analytics)",
+      "name": "工商管理硕士（商业分析）",
+      "faculty": "Business",
+      "facultyZh": "商学院",
+      "level": "master",
+      "duration": 1,
+      "tuitionMYR": "official-total-unpublished",
+      "tuitionNote": "官网仅发布近似费用（INTI International University：约 RM 41,412），并注明公布费用不含 SST，国际学生费用另加 6% SST。未发现同一专业、同一国际学生口径的精确总学费。",
+      "feeStatus": "official-total-unpublished",
+      "intake": [
+        1,
+        5,
+        9
+      ],
+      "applicationDeadline": "official-unpublished",
+      "language": {
+        "ielts": 6,
+        "toefl": null,
+        "otherRequirement": null,
+        "waiver": null
+      },
+      "curriculum": [
+        "大数据应用",
+        "商业会计与金融",
+        "商业经济学",
+        "商业研究方法",
+        "数据科学分析",
+        "未来信息学",
+        "管理信息系统",
+        "市场营销管理",
+        "运营管理",
+        "组织行为",
+        "战略人力资源",
+        "战略管理",
+        "统计与决策分析",
+        "项目"
+      ],
+      "curriculumNote": "课程结构来自官方专业页面，已翻译为中文；术语仍需人工复核。",
+      "careerProspects": [
+        "商业分析师",
+        "大数据分析岗位",
+        "数据驱动业务顾问",
+        "战略与领导力相关管理岗位"
+      ],
+      "officialFeeSourceUrl": "https://newinti.edu.my/programme/master-of-business-administration-business-analytics/",
+      "officialSourceUrl": "https://newinti.edu.my/programme/master-of-business-administration-business-analytics/",
+      "officialVerifiedAt": "2026-06-24",
+      "publicDisplayStatus": "needs-review",
+      "auditStatus": "needs-manual-review",
+      "fieldAuditResult": "FAIL",
+      "fieldAuditFailedItems": [
+        "fee-authority-ambiguous",
+        "collector-review-required"
+      ],
+      "entryRequirement": {
+        "minGPA": 2.0,
+        "gpaScale": 4.0,
+        "gpaNote": "官方原文包含多条 CGPA、内部评估、工作经验或先修课程路径；请以 officialAcademicRequirement 证据为准。",
+        "degreeLevel": "通常要求相关或非相关领域本科学位，具体路径以官方条目为准。",
+        "degreeRelevance": "open",
+        "workExperience": "部分非相关背景或较低 CGPA 路径需要相关工作经验、严格内部评估或先修课程，具体以官方条目为准。"
+      },
+      "studyMode": "coursework",
+      "studyModeNote": "full-time/part-time as published",
+      "thesisRequired": false,
+      "thesisNote": "官方课程结构包含：项目。",
+      "interviewRequired": "case-by-case",
+      "interviewNote": "官方入学路径提到严格内部评估，但未明确写成统一面试要求。",
+      "supervisorSystem": null,
+      "creditHours": "official-unpublished"
+    },
+    {
+      "nameEn": "Master of Business Administration (MBA)",
+      "name": "工商管理硕士",
+      "faculty": "Business",
+      "facultyZh": "商学院",
+      "level": "master",
+      "duration": 1,
+      "tuitionMYR": "not-confirmed",
+      "tuitionNote": "官网仅发布近似费用（INTI International University - Dual Award：约 RM 47,112；INTI International University - Single Award：约 RM 41,405），并注明公布费用不含 SST，国际学生费用另加 6% SST。该专业还有多个校区、授予路径或学习模式费用选项，未能证明唯一精确国际学生总学费。",
+      "feeStatus": "not-confirmed",
+      "intake": [
+        1,
+        5,
+        9
+      ],
+      "applicationDeadline": "official-unpublished",
+      "language": {
+        "ielts": 6,
+        "toefl": null,
+        "otherRequirement": "MUET：4",
+        "waiver": "官方接受以英语授课的既有学位作为英语能力证明路径。"
+      },
+      "curriculum": [
+        "商业会计与金融",
+        "商业经济学",
+        "商业伦理与法律",
+        "商业研究方法",
+        "全球数字创业",
+        "管理信息系统",
+        "市场营销管理",
+        "运营管理",
+        "组织行为",
+        "项目",
+        "战略管理",
+        "战略人力资源管理",
+        "统计与决策分析"
+      ],
+      "curriculumNote": "课程结构来自官方专业页面，已翻译为中文；术语仍需人工复核。",
+      "careerProspects": [
+        "市场经理",
+        "财务经理",
+        "首席技术官",
+        "投资银行从业者",
+        "销售经理",
+        "管理顾问"
+      ],
+      "officialFeeSourceUrl": "https://newinti.edu.my/programme/master-of-business-administration-mba-by-inti-international-university_1/",
+      "officialSourceUrl": "https://newinti.edu.my/programme/master-of-business-administration-mba-by-inti-international-university_1/",
+      "officialVerifiedAt": "2026-06-24",
+      "publicDisplayStatus": "needs-review",
+      "auditStatus": "needs-manual-review",
+      "fieldAuditResult": "FAIL",
+      "fieldAuditFailedItems": [
+        "fee-authority-ambiguous",
+        "collector-review-required"
+      ],
+      "entryRequirement": {
+        "minGPA": 2.0,
+        "gpaScale": 4.0,
+        "gpaNote": "官方原文包含多条 CGPA、内部评估、工作经验或先修课程路径；请以 officialAcademicRequirement 证据为准。",
+        "degreeLevel": "通常要求相关或非相关领域本科学位，具体路径以官方条目为准。",
+        "degreeRelevance": "open",
+        "workExperience": "部分非相关背景或较低 CGPA 路径需要相关工作经验、严格内部评估或先修课程，具体以官方条目为准。"
+      },
+      "studyMode": "coursework",
+      "studyModeNote": "full-time/part-time as published",
+      "thesisRequired": false,
+      "thesisNote": "官方课程结构包含：项目。",
+      "interviewRequired": "case-by-case",
+      "interviewNote": "官方入学路径提到严格内部评估，但未明确写成统一面试要求。",
+      "supervisorSystem": null,
+      "creditHours": "official-unpublished"
+    },
+    {
+      "nameEn": "Master of Business Administration (MBA) in collaboration with INTI International University",
+      "name": "工商管理硕士（与英迪国际大学合作）",
+      "faculty": "Business",
+      "facultyZh": "商学院",
+      "level": "master",
+      "duration": 1,
+      "tuitionMYR": "not-confirmed",
+      "tuitionNote": "官网仅发布近似费用（INTI International College Subang：约 RM 41,405；INTI International College Penang：约 RM 35,009），并注明公布费用不含 SST，国际学生费用另加 6% SST。该专业还有多个校区、授予路径或学习模式费用选项，未能证明唯一精确国际学生总学费。",
+      "feeStatus": "not-confirmed",
+      "intake": [
+        1,
+        5,
+        9
+      ],
+      "applicationDeadline": "official-unpublished",
+      "language": {
+        "ielts": 6,
+        "toefl": null,
+        "otherRequirement": "MUET：4",
+        "waiver": "官方接受以英语授课的既有学位作为英语能力证明路径。"
+      },
+      "curriculum": [
+        "商业会计与金融",
+        "商业经济学",
+        "商业伦理与法律",
+        "商业研究方法",
+        "全球数字创业",
+        "管理信息系统",
+        "市场营销管理",
+        "运营管理",
+        "组织行为",
+        "项目",
+        "战略管理",
+        "战略人力资源管理",
+        "统计与决策分析"
+      ],
+      "curriculumNote": "课程结构来自官方专业页面，已翻译为中文；术语仍需人工复核。",
+      "careerProspects": [
+        "市场经理",
+        "财务经理",
+        "首席技术官",
+        "投资银行从业者",
+        "销售经理",
+        "管理顾问"
+      ],
+      "officialFeeSourceUrl": "https://newinti.edu.my/programme/master-of-business-administration-mba-in-collaboration-with-inti-international-university/",
+      "officialSourceUrl": "https://newinti.edu.my/programme/master-of-business-administration-mba-in-collaboration-with-inti-international-university/",
+      "officialVerifiedAt": "2026-06-24",
+      "publicDisplayStatus": "needs-review",
+      "auditStatus": "needs-manual-review",
+      "fieldAuditResult": "FAIL",
+      "fieldAuditFailedItems": [
+        "fee-authority-ambiguous",
+        "collector-review-required"
+      ],
+      "entryRequirement": {
+        "minGPA": 2.0,
+        "gpaScale": 4.0,
+        "gpaNote": "官方原文包含多条 CGPA、内部评估、工作经验或先修课程路径；请以 officialAcademicRequirement 证据为准。",
+        "degreeLevel": "通常要求相关或非相关领域本科学位，具体路径以官方条目为准。",
+        "degreeRelevance": "open",
+        "workExperience": "部分非相关背景或较低 CGPA 路径需要相关工作经验、严格内部评估或先修课程，具体以官方条目为准。"
+      },
+      "studyMode": "coursework",
+      "studyModeNote": "full-time/part-time as published",
+      "thesisRequired": false,
+      "thesisNote": "官方课程结构包含：项目。",
+      "interviewRequired": "case-by-case",
+      "interviewNote": "官方入学路径提到严格内部评估，但未明确写成统一面试要求。",
+      "supervisorSystem": null,
+      "creditHours": "official-unpublished"
+    },
+    {
+      "nameEn": "Master of Business Administration (Online Learning)",
+      "name": "工商管理硕士（在线学习）",
+      "faculty": "Business",
+      "facultyZh": "商学院",
+      "level": "master",
+      "duration": 1,
+      "tuitionMYR": "official-total-unpublished",
+      "tuitionNote": "官网仅发布近似费用（INTI International University：约 RM 33,228），并注明公布费用不含 SST，国际学生费用另加 6% SST。未发现同一专业、同一国际学生口径的精确总学费。",
+      "feeStatus": "official-total-unpublished",
+      "intake": [
+        1,
+        3,
+        5,
+        8,
+        10
+      ],
+      "applicationDeadline": "official-unpublished",
+      "language": {
+        "ielts": 6,
+        "toefl": null,
+        "otherRequirement": null,
+        "waiver": "官方接受以英语授课的既有学位作为英语能力证明路径。"
+      },
+      "curriculum": [
+        "商业会计与金融",
+        "商业经济学",
+        "商业伦理与法律",
+        "商业研究方法",
+        "全球数字创业",
+        "管理信息系统",
+        "组织行为",
+        "市场营销管理",
+        "运营管理",
+        "统计与决策分析",
+        "战略人力资源管理",
+        "战略管理",
+        "项目或论文"
+      ],
+      "curriculumNote": "课程结构来自官方专业页面，已翻译为中文；术语仍需人工复核。",
+      "careerProspects": [
+        "在职专业人士的工商管理",
+        "运营管理",
+        "战略管理与组织管理相关岗位"
+      ],
+      "officialFeeSourceUrl": "https://newinti.edu.my/programme/master-of-business-administration-mba-learning-simplified/",
+      "officialSourceUrl": "https://newinti.edu.my/programme/master-of-business-administration-mba-learning-simplified/",
+      "officialVerifiedAt": "2026-06-24",
+      "publicDisplayStatus": "needs-review",
+      "auditStatus": "needs-manual-review",
+      "fieldAuditResult": "FAIL",
+      "fieldAuditFailedItems": [
+        "fee-authority-ambiguous",
+        "collector-review-required"
+      ],
+      "entryRequirement": {
+        "minGPA": 2.0,
+        "gpaScale": 4.0,
+        "gpaNote": "官方原文包含多条 CGPA、内部评估、工作经验或先修课程路径；请以 officialAcademicRequirement 证据为准。",
+        "degreeLevel": "通常要求相关或非相关领域本科学位，具体路径以官方条目为准。",
+        "degreeRelevance": "open",
+        "workExperience": "部分非相关背景或较低 CGPA 路径需要相关工作经验、严格内部评估或先修课程，具体以官方条目为准。"
+      },
+      "studyMode": "coursework",
+      "studyModeNote": "在线学习",
+      "thesisRequired": true,
+      "thesisNote": "官方课程结构包含：论文、项目。",
+      "interviewRequired": "case-by-case",
+      "interviewNote": "官方入学路径提到严格内部评估，但未明确写成统一面试要求。",
+      "supervisorSystem": null,
+      "creditHours": "official-unpublished"
+    },
+    {
+      "nameEn": "Master of Education in Learning, Design and Technology (by Research)",
+      "name": "教育硕士（学习、设计与技术）（研究型）",
+      "faculty": "Education",
+      "facultyZh": "教育学院",
+      "level": "master",
+      "duration": 4,
+      "tuitionMYR": "official-total-unpublished",
+      "tuitionNote": "官网仅发布近似费用（INTI International University：约 RM 38,178），并注明公布费用不含 SST，国际学生费用另加 6% SST。未发现同一专业、同一国际学生口径的精确总学费。",
+      "feeStatus": "official-total-unpublished",
+      "intake": [
+        1,
+        5,
+        9
+      ],
+      "applicationDeadline": "official-unpublished",
+      "language": {
+        "ielts": 4,
+        "toefl": null,
+        "otherRequirement": "MUET：3",
+        "waiver": null
+      },
+      "curriculum": [
+        "第一年研究方法与论文",
+        "第二年论文"
+      ],
+      "curriculumNote": "课程结构来自官方专业页面，已翻译为中文；术语仍需人工复核。",
+      "careerProspects": [
+        "教育项目设计师",
+        "学习策略师",
+        "教学设计与评估专员",
+        "绩效评估经理",
+        "培训总监",
+        "远程学习总监",
+        "教育总监"
+      ],
+      "officialFeeSourceUrl": "https://newinti.edu.my/programme/master-of-education-in-learning-design-and-technology/",
+      "officialSourceUrl": "https://newinti.edu.my/programme/master-of-education-in-learning-design-and-technology/",
+      "officialVerifiedAt": "2026-06-24",
+      "publicDisplayStatus": "needs-review",
+      "auditStatus": "needs-manual-review",
+      "fieldAuditResult": "FAIL",
+      "fieldAuditFailedItems": [
+        "fee-authority-ambiguous",
+        "collector-review-required"
+      ],
+      "entryRequirement": {
+        "minGPA": 2.0,
+        "gpaScale": 4.0,
+        "gpaNote": "官方原文包含多条 CGPA、内部评估、工作经验或先修课程路径；请以 officialAcademicRequirement 证据为准。",
+        "degreeLevel": "通常要求相关或非相关领域本科学位，具体路径以官方条目为准。",
+        "degreeRelevance": "not-confirmed",
+        "workExperience": "部分非相关背景或较低 CGPA 路径需要相关工作经验、严格内部评估或先修课程，具体以官方条目为准。"
+      },
+      "studyMode": "research",
+      "studyModeNote": "full-time/part-time as published",
+      "thesisRequired": true,
+      "thesisNote": "官方课程结构包含：研究方法论、论文。",
+      "interviewRequired": "case-by-case",
+      "interviewNote": "官方入学路径提到严格内部评估，但未明确写成统一面试要求。",
+      "supervisorSystem": "needs-review",
+      "creditHours": "official-unpublished"
+    },
+    {
+      "nameEn": "Master of Science in Construction Management (Building Information Modelling)",
+      "name": "建筑管理理学硕士（建筑信息模型）",
+      "faculty": "Engineering",
+      "facultyZh": "工程学院",
+      "level": "master",
+      "duration": 1,
+      "tuitionMYR": "official-total-unpublished",
+      "tuitionNote": "官网仅发布近似费用（INTI International University：约 RM 41,415），并注明公布费用不含 SST，国际学生费用另加 6% SST。未发现同一专业、同一国际学生口径的精确总学费。",
+      "feeStatus": "official-total-unpublished",
+      "intake": [
+        1,
+        5,
+        9
+      ],
+      "applicationDeadline": "official-unpublished",
+      "language": {
+        "ielts": 5,
+        "toefl": null,
+        "otherRequirement": null,
+        "waiver": null
+      },
+      "curriculum": [
+        "建筑信息模型理论与实践",
+        "职业安全与健康",
+        "高级建设项目管理",
+        "研究方法",
+        "建设管理战略管理",
+        "建设管理组织管理",
+        "综合模拟项目",
+        "建筑信息模型应用",
+        "基于建筑信息模型的电子采购",
+        "建筑信息模型管理"
+      ],
+      "curriculumNote": "课程结构来自官方专业页面，已翻译为中文；术语仍需人工复核。",
+      "careerProspects": [
+        "建设行业数字化管理",
+        "建筑信息模型管理",
+        "建设项目管理与施工业务领导岗位"
+      ],
+      "officialFeeSourceUrl": "https://newinti.edu.my/programme/master-of-science-in-construction-management-building-information-modelling/",
+      "officialSourceUrl": "https://newinti.edu.my/programme/master-of-science-in-construction-management-building-information-modelling/",
+      "officialVerifiedAt": "2026-06-24",
+      "publicDisplayStatus": "needs-review",
+      "auditStatus": "needs-manual-review",
+      "fieldAuditResult": "FAIL",
+      "fieldAuditFailedItems": [
+        "fee-authority-ambiguous",
+        "collector-review-required"
+      ],
+      "entryRequirement": {
+        "minGPA": 2.0,
+        "gpaScale": 4.0,
+        "gpaNote": "官方原文包含多条 CGPA、内部评估、工作经验或先修课程路径；请以 officialAcademicRequirement 证据为准。",
+        "degreeLevel": "通常要求相关或非相关领域本科学位，具体路径以官方条目为准。",
+        "degreeRelevance": "not-confirmed",
+        "workExperience": "部分非相关背景或较低 CGPA 路径需要相关工作经验、严格内部评估或先修课程，具体以官方条目为准。"
+      },
+      "studyMode": "coursework",
+      "studyModeNote": "full-time/part-time as published",
+      "thesisRequired": false,
+      "thesisNote": "官方课程结构包含：项目。",
+      "interviewRequired": "official-unpublished",
+      "interviewNote": "官方页面未明确公布统一面试要求。",
+      "supervisorSystem": null,
+      "creditHours": "official-unpublished"
+    },
+    {
+      "nameEn": "Master of Science in Construction Management (Building Information Modelling) – (Online Learning)",
+      "name": "建筑管理理学硕士（建筑信息模型）（在线学习）",
+      "faculty": "Engineering",
+      "facultyZh": "工程学院",
+      "level": "master",
+      "duration": 1,
+      "tuitionMYR": "official-total-unpublished",
+      "tuitionNote": "官网仅发布近似费用（INTI International University：约 RM 33,228），并注明公布费用不含 SST，国际学生费用另加 6% SST。未发现同一专业、同一国际学生口径的精确总学费。",
+      "feeStatus": "official-total-unpublished",
+      "intake": [
+        1,
+        3,
+        5,
+        8,
+        10
+      ],
+      "applicationDeadline": "official-unpublished",
+      "language": {
+        "ielts": 5,
+        "toefl": null,
+        "otherRequirement": null,
+        "waiver": null
+      },
+      "curriculum": [
+        "高级建设项目管理",
+        "建筑信息模型应用",
+        "基于建筑信息模型的电子采购",
+        "建筑信息模型管理",
+        "建筑信息模型理论与实践",
+        "综合模拟项目",
+        "建设管理组织管理",
+        "职业安全与健康",
+        "研究方法",
+        "建设管理战略管理",
+        "项目第一部分",
+        "项目第二部分"
+      ],
+      "curriculumNote": "课程结构来自官方专业页面，已翻译为中文；术语仍需人工复核。",
+      "careerProspects": [
+        "建筑信息模型经理",
+        "模型师",
+        "顾问",
+        "设计师",
+        "设计工程师",
+        "项目经理",
+        "建设管理主管"
+      ],
+      "officialFeeSourceUrl": "https://newinti.edu.my/programme/master-of-science-in-construction-management-building-information-modelling-fully-online/",
+      "officialSourceUrl": "https://newinti.edu.my/programme/master-of-science-in-construction-management-building-information-modelling-fully-online/",
+      "officialVerifiedAt": "2026-06-24",
+      "publicDisplayStatus": "needs-review",
+      "auditStatus": "needs-manual-review",
+      "fieldAuditResult": "FAIL",
+      "fieldAuditFailedItems": [
+        "fee-authority-ambiguous",
+        "collector-review-required"
+      ],
+      "entryRequirement": {
+        "minGPA": 2.0,
+        "gpaScale": 4.0,
+        "gpaNote": "官方原文包含多条 CGPA、内部评估、工作经验或先修课程路径；请以 officialAcademicRequirement 证据为准。",
+        "degreeLevel": "通常要求相关或非相关领域本科学位，具体路径以官方条目为准。",
+        "degreeRelevance": "not-confirmed",
+        "workExperience": "部分非相关背景或较低 CGPA 路径需要相关工作经验、严格内部评估或先修课程，具体以官方条目为准。"
+      },
+      "studyMode": "coursework",
+      "studyModeNote": "在线学习",
+      "thesisRequired": false,
+      "thesisNote": "官方课程结构包含：项目。",
+      "interviewRequired": "official-unpublished",
+      "interviewNote": "官方页面未明确公布统一面试要求。",
+      "supervisorSystem": null,
+      "creditHours": "official-unpublished"
+    },
+    {
+      "nameEn": "Master of Science in Construction Management (Facility Management)",
+      "name": "建筑管理理学硕士（设施管理）",
+      "faculty": "Engineering",
+      "facultyZh": "工程学院",
+      "level": "master",
+      "duration": 1,
+      "tuitionMYR": "official-total-unpublished",
+      "tuitionNote": "官网仅发布近似费用（INTI International University：约 RM 41,415），并注明公布费用不含 SST，国际学生费用另加 6% SST。未发现同一专业、同一国际学生口径的精确总学费。",
+      "feeStatus": "official-total-unpublished",
+      "intake": [
+        1,
+        5,
+        9
+      ],
+      "applicationDeadline": "official-unpublished",
+      "language": {
+        "ielts": 5,
+        "toefl": null,
+        "otherRequirement": null,
+        "waiver": null
+      },
+      "curriculum": [
+        "建筑信息模型理论与实践",
+        "职业安全与健康",
+        "研究方法",
+        "建设管理战略管理",
+        "建设管理组织管理",
+        "综合模拟项目",
+        "设施规划与应急准备计划",
+        "建筑病理与改造",
+        "设施管理专业实践",
+        "建筑规范与法规"
+      ],
+      "curriculumNote": "课程结构来自官方专业页面，已翻译为中文；术语仍需人工复核。",
+      "careerProspects": [
+        "房地产开发",
+        "住房",
+        "咨询",
+        "金融",
+        "项目管理",
+        "设施管理与建筑维护相关岗位"
+      ],
+      "officialFeeSourceUrl": "https://newinti.edu.my/programme/master-of-science-in-construction-management-with-facility-management/",
+      "officialSourceUrl": "https://newinti.edu.my/programme/master-of-science-in-construction-management-with-facility-management/",
+      "officialVerifiedAt": "2026-06-24",
+      "publicDisplayStatus": "needs-review",
+      "auditStatus": "needs-manual-review",
+      "fieldAuditResult": "FAIL",
+      "fieldAuditFailedItems": [
+        "fee-authority-ambiguous",
+        "collector-review-required"
+      ],
+      "entryRequirement": {
+        "minGPA": 2.0,
+        "gpaScale": 4.0,
+        "gpaNote": "官方原文包含多条 CGPA、内部评估、工作经验或先修课程路径；请以 officialAcademicRequirement 证据为准。",
+        "degreeLevel": "通常要求相关或非相关领域本科学位，具体路径以官方条目为准。",
+        "degreeRelevance": "not-confirmed",
+        "workExperience": "部分非相关背景或较低 CGPA 路径需要相关工作经验、严格内部评估或先修课程，具体以官方条目为准。"
+      },
+      "studyMode": "coursework",
+      "studyModeNote": "full-time/part-time as published",
+      "thesisRequired": false,
+      "thesisNote": "官方课程结构包含：项目。",
+      "interviewRequired": "official-unpublished",
+      "interviewNote": "官方页面未明确公布统一面试要求。",
+      "supervisorSystem": null,
+      "creditHours": "official-unpublished"
+    },
+    {
+      "nameEn": "Master of Science in Data Science (by Research)",
+      "name": "数据科学理学硕士（研究型）",
+      "faculty": "Computing & IT",
+      "facultyZh": "计算机与信息技术学院",
+      "level": "master",
+      "duration": 2,
+      "tuitionMYR": "official-total-unpublished",
+      "tuitionNote": "官网仅发布近似费用（INTI International University：约 RM 32,310），并注明公布费用不含 SST，国际学生费用另加 6% SST。未发现同一专业、同一国际学生口径的精确总学费。",
+      "feeStatus": "official-total-unpublished",
+      "intake": [
+        1,
+        5,
+        9
+      ],
+      "applicationDeadline": "official-unpublished",
+      "language": {
+        "ielts": 6,
+        "toefl": null,
+        "otherRequirement": null,
+        "waiver": null
+      },
+      "curriculum": [
+        "研究方法论",
+        "开题答辩",
+        "研究论文",
+        "研究指导",
+        "最终学年口试答辩",
+        "毕业论文"
+      ],
+      "curriculumNote": "课程结构来自官方专业页面，已翻译为中文；术语仍需人工复核。",
+      "careerProspects": [
+        "数据分析师",
+        "商业分析师",
+        "项目经理",
+        "系统工程师",
+        "企业经理",
+        "数据科学家",
+        "机器学习工程师",
+        "应用架构师",
+        "企业架构师",
+        "数据架构师",
+        "基础设施架构师",
+        "数据工程师",
+        "合规专员",
+        "商业研究顾问"
+      ],
+      "officialFeeSourceUrl": "https://newinti.edu.my/programme/master-of-science-in-data-science/",
+      "officialSourceUrl": "https://newinti.edu.my/programme/master-of-science-in-data-science/",
+      "officialVerifiedAt": "2026-06-24",
+      "publicDisplayStatus": "needs-review",
+      "auditStatus": "needs-manual-review",
+      "fieldAuditResult": "FAIL",
+      "fieldAuditFailedItems": [
+        "fee-authority-ambiguous",
+        "collector-review-required"
+      ],
+      "entryRequirement": {
+        "minGPA": 3.0,
+        "gpaScale": 4.0,
+        "gpaNote": "官方原文包含多条 CGPA、内部评估、工作经验或先修课程路径；请以 officialAcademicRequirement 证据为准。",
+        "degreeLevel": "通常要求相关或非相关领域本科学位，具体路径以官方条目为准。",
+        "degreeRelevance": "preferred",
+        "workExperience": "部分非相关背景或较低 CGPA 路径需要相关工作经验、严格内部评估或先修课程，具体以官方条目为准。"
+      },
+      "studyMode": "research",
+      "studyModeNote": "full-time/part-time as published",
+      "thesisRequired": true,
+      "thesisNote": "官方课程结构包含：研究方法论、开题答辩、研究论文、论文、口试答辩。",
+      "interviewRequired": "case-by-case",
+      "interviewNote": "官方入学路径提到严格内部评估，但未明确写成统一面试要求。",
+      "supervisorSystem": true,
+      "creditHours": "official-unpublished"
+    },
+    {
+      "nameEn": "Master of Science in Engineering and Eco-Innovation (by Research)",
+      "name": "工程与生态创新理学硕士（研究型）",
+      "faculty": "Engineering",
+      "facultyZh": "工程学院",
+      "level": "master",
+      "duration": 2,
+      "tuitionMYR": "official-total-unpublished",
+      "tuitionNote": "官网仅发布近似费用（INTI International University：约 RM 38,178），并注明公布费用不含 SST，国际学生费用另加 6% SST。未发现同一专业、同一国际学生口径的精确总学费。",
+      "feeStatus": "official-total-unpublished",
+      "intake": [
+        1,
+        5,
+        9
+      ],
+      "applicationDeadline": "official-unpublished",
+      "language": {
+        "ielts": null,
+        "toefl": null,
+        "otherRequirement": "official-unpublished",
+        "waiver": null
+      },
+      "curriculum": [
+        "第一年研究方法论",
+        "第一年研究论文",
+        "第二年研究论文"
+      ],
+      "curriculumNote": "课程结构来自官方专业页面，已翻译为中文；术语仍需人工复核。",
+      "careerProspects": [
+        "生态创新工程师",
+        "环境或绿色技术工程师",
+        "环境政策顾问或分析师",
+        "产品生命周期分析师",
+        "可持续产品研发工程师",
+        "可持续发展工程师"
+      ],
+      "officialFeeSourceUrl": "https://newinti.edu.my/programme/master-of-science-in-engineering-and-eco-innovation-by-research/",
+      "officialSourceUrl": "https://newinti.edu.my/programme/master-of-science-in-engineering-and-eco-innovation-by-research/",
+      "officialVerifiedAt": "2026-06-24",
+      "publicDisplayStatus": "needs-review",
+      "auditStatus": "needs-manual-review",
+      "fieldAuditResult": "FAIL",
+      "fieldAuditFailedItems": [
+        "fee-authority-ambiguous",
+        "language-requirement-incomplete",
+        "collector-review-required"
+      ],
+      "entryRequirement": {
+        "minGPA": 2.0,
+        "gpaScale": 4.0,
+        "gpaNote": "官方原文包含多条 CGPA、内部评估、工作经验或先修课程路径；请以 officialAcademicRequirement 证据为准。",
+        "degreeLevel": "通常要求相关或非相关领域本科学位，具体路径以官方条目为准。",
+        "degreeRelevance": "preferred",
+        "workExperience": "部分非相关背景或较低 CGPA 路径需要相关工作经验、严格内部评估或先修课程，具体以官方条目为准。"
+      },
+      "studyMode": "research",
+      "studyModeNote": "full-time/part-time as published",
+      "thesisRequired": true,
+      "thesisNote": "官方课程结构包含：研究方法论、研究论文、论文。",
+      "interviewRequired": "case-by-case",
+      "interviewNote": "官方入学路径提到严格内部评估，但未明确写成统一面试要求。",
+      "supervisorSystem": "needs-review",
+      "creditHours": "official-unpublished"
+    },
+    {
+      "nameEn": "Master of Science in Facilities Management (Online Learning)",
+      "name": "设施管理理学硕士（在线学习）",
+      "faculty": "Engineering",
+      "facultyZh": "工程学院",
+      "level": "master",
+      "duration": 1,
+      "tuitionMYR": "official-total-unpublished",
+      "tuitionNote": "官网仅发布近似费用（INTI International University：约 RM 33,220），并注明公布费用不含 SST，国际学生费用另加 6% SST。未发现同一专业、同一国际学生口径的精确总学费。",
+      "feeStatus": "official-total-unpublished",
+      "intake": [
+        1,
+        3,
+        5,
+        8,
+        10
+      ],
+      "applicationDeadline": "official-unpublished",
+      "language": {
+        "ielts": null,
+        "toefl": null,
+        "otherRequirement": "official-unpublished",
+        "waiver": null
+      },
+      "curriculum": [
+        "建筑规范与法规",
+        "建筑病理与改造",
+        "设施规划与应急准备计划",
+        "财务管理",
+        "组织管理",
+        "职业安全与健康",
+        "设施管理专业实践",
+        "研究方法",
+        "战略管理",
+        "综合模拟项目",
+        "项目一",
+        "项目二"
+      ],
+      "curriculumNote": "课程结构来自官方专业页面，已翻译为中文；术语仍需人工复核。",
+      "careerProspects": [
+        "建筑性能分析师",
+        "施工经理",
+        "设施经理",
+        "维护经理",
+        "项目经理",
+        "可持续发展顾问"
+      ],
+      "officialFeeSourceUrl": "https://newinti.edu.my/programme/master-of-science-in-facilities-management-online-learning/",
+      "officialSourceUrl": "https://newinti.edu.my/programme/master-of-science-in-facilities-management-online-learning/",
+      "officialVerifiedAt": "2026-06-24",
+      "publicDisplayStatus": "needs-review",
+      "auditStatus": "needs-manual-review",
+      "fieldAuditResult": "FAIL",
+      "fieldAuditFailedItems": [
+        "fee-authority-ambiguous",
+        "language-requirement-incomplete",
+        "collector-review-required"
+      ],
+      "entryRequirement": {
+        "minGPA": 2.0,
+        "gpaScale": 4.0,
+        "gpaNote": "官方原文包含多条 CGPA、内部评估、工作经验或先修课程路径；请以 officialAcademicRequirement 证据为准。",
+        "degreeLevel": "通常要求相关或非相关领域本科学位，具体路径以官方条目为准。",
+        "degreeRelevance": "not-confirmed",
+        "workExperience": "部分非相关背景或较低 CGPA 路径需要相关工作经验、严格内部评估或先修课程，具体以官方条目为准。"
+      },
+      "studyMode": "coursework",
+      "studyModeNote": "在线学习",
+      "thesisRequired": false,
+      "thesisNote": "官方课程结构包含：项目。",
+      "interviewRequired": "official-unpublished",
+      "interviewNote": "官方页面未明确公布统一面试要求。",
+      "supervisorSystem": null,
+      "creditHours": "official-unpublished"
+    },
+    {
+      "nameEn": "Master of Science in Information Systems (by Research)",
+      "name": "信息系统理学硕士（研究型）",
+      "faculty": "Computing & IT",
+      "facultyZh": "计算机与信息技术学院",
+      "level": "master",
+      "duration": 2,
+      "tuitionMYR": "official-total-unpublished",
+      "tuitionNote": "官网仅发布近似费用（INTI International University：约 RM 38,178），并注明公布费用不含 SST，国际学生费用另加 6% SST。未发现同一专业、同一国际学生口径的精确总学费。",
+      "feeStatus": "official-total-unpublished",
+      "intake": [
+        1,
+        5,
+        9
+      ],
+      "applicationDeadline": "official-unpublished",
+      "language": {
+        "ielts": 5.5,
+        "toefl": null,
+        "otherRequirement": null,
+        "waiver": null
+      },
+      "curriculum": [
+        "第一年研究方法论",
+        "第一年论文",
+        "第二年论文"
+      ],
+      "curriculumNote": "课程结构来自官方专业页面，已翻译为中文；术语仍需人工复核。",
+      "careerProspects": [
+        "软件工程师",
+        "数据工程师",
+        "嵌入式系统工程师",
+        "系统分析师",
+        "信息技术顾问",
+        "数字创新经理",
+        "数据治理专员",
+        "人工智能产品经理"
+      ],
+      "officialFeeSourceUrl": "https://newinti.edu.my/programme/master-of-science-in-information-systems-by-research/",
+      "officialSourceUrl": "https://newinti.edu.my/programme/master-of-science-in-information-systems-by-research/",
+      "officialVerifiedAt": "2026-06-24",
+      "publicDisplayStatus": "needs-review",
+      "auditStatus": "needs-manual-review",
+      "fieldAuditResult": "FAIL",
+      "fieldAuditFailedItems": [
+        "fee-authority-ambiguous",
+        "collector-review-required"
+      ],
+      "entryRequirement": {
+        "minGPA": 2.0,
+        "gpaScale": 4.0,
+        "gpaNote": "官方原文包含多条 CGPA、内部评估、工作经验或先修课程路径；请以 officialAcademicRequirement 证据为准。",
+        "degreeLevel": "通常要求相关或非相关领域本科学位，具体路径以官方条目为准。",
+        "degreeRelevance": "preferred",
+        "workExperience": "部分非相关背景或较低 CGPA 路径需要相关工作经验、严格内部评估或先修课程，具体以官方条目为准。"
+      },
+      "studyMode": "research",
+      "studyModeNote": "full-time/part-time as published",
+      "thesisRequired": true,
+      "thesisNote": "官方课程结构包含：研究方法论、论文。",
+      "interviewRequired": "official-unpublished",
+      "interviewNote": "官方页面未明确公布统一面试要求。",
+      "supervisorSystem": "needs-review",
+      "creditHours": "official-unpublished"
+    },
+    {
+      "nameEn": "Master of Science in Innovation and Technology (by Research)",
+      "name": "创新与技术理学硕士（研究型）",
+      "faculty": "Engineering",
+      "facultyZh": "工程学院",
+      "level": "master",
+      "duration": 4,
+      "tuitionMYR": "official-total-unpublished",
+      "tuitionNote": "官网仅发布近似费用（INTI International University：约 RM 38,178），并注明公布费用不含 SST，国际学生费用另加 6% SST。未发现同一专业、同一国际学生口径的精确总学费。",
+      "feeStatus": "official-total-unpublished",
+      "intake": [
+        1,
+        5,
+        9
+      ],
+      "applicationDeadline": "official-unpublished",
+      "language": {
+        "ielts": 5,
+        "toefl": 500,
+        "otherRequirement": "MUET：3.5",
+        "waiver": "官方接受以英语授课的既有学位作为英语能力证明路径。 官方接受指定英语科目成绩作为英语能力证明路径。"
+      },
+      "curriculum": [
+        "第一年研究方法与论文",
+        "第二年论文"
+      ],
+      "curriculumNote": "课程结构来自官方专业页面，已翻译为中文；术语仍需人工复核。",
+      "careerProspects": [
+        "技术分析师",
+        "工程科学家",
+        "商业与管理战略师",
+        "健康与诊断设计师",
+        "生命科学专员",
+        "创新推动者",
+        "流程专员",
+        "数字化转型专家",
+        "科技企业管理与咨询岗位"
+      ],
+      "officialFeeSourceUrl": "https://newinti.edu.my/programme/master-of-science-in-innovation-and-technology/",
+      "officialSourceUrl": "https://newinti.edu.my/programme/master-of-science-in-innovation-and-technology/",
+      "officialVerifiedAt": "2026-06-24",
+      "publicDisplayStatus": "needs-review",
+      "auditStatus": "needs-manual-review",
+      "fieldAuditResult": "FAIL",
+      "fieldAuditFailedItems": [
+        "fee-authority-ambiguous",
+        "collector-review-required"
+      ],
+      "entryRequirement": {
+        "minGPA": 2.0,
+        "gpaScale": 4.0,
+        "gpaNote": "官方原文包含多条 CGPA、内部评估、工作经验或先修课程路径；请以 officialAcademicRequirement 证据为准。",
+        "degreeLevel": "通常要求相关或非相关领域本科学位，具体路径以官方条目为准。",
+        "degreeRelevance": "preferred",
+        "workExperience": "部分非相关背景或较低 CGPA 路径需要相关工作经验、严格内部评估或先修课程，具体以官方条目为准。"
+      },
+      "studyMode": "research",
+      "studyModeNote": "full-time/part-time as published",
+      "thesisRequired": true,
+      "thesisNote": "官方课程结构包含：研究方法论、论文。",
+      "interviewRequired": "case-by-case",
+      "interviewNote": "官方入学路径提到严格内部评估，但未明确写成统一面试要求。",
+      "supervisorSystem": "needs-review",
+      "creditHours": "official-unpublished"
+    },
+    {
+      "nameEn": "Master of Science in Integrated Project Management (Online Learning)",
+      "name": "综合项目管理理学硕士（在线学习）",
+      "faculty": "Engineering",
+      "facultyZh": "工程学院",
+      "level": "master",
+      "duration": 1,
+      "tuitionMYR": "official-total-unpublished",
+      "tuitionNote": "官网仅发布近似费用（INTI International University：约 RM 33,220），并注明公布费用不含 SST，国际学生费用另加 6% SST。未发现同一专业、同一国际学生口径的精确总学费。",
+      "feeStatus": "official-total-unpublished",
+      "intake": [
+        1,
+        3,
+        5,
+        8,
+        10
+      ],
+      "applicationDeadline": "official-unpublished",
+      "language": {
+        "ielts": 5,
+        "toefl": null,
+        "otherRequirement": null,
+        "waiver": null
+      },
+      "curriculum": [
+        "合同与采购管理",
+        "财务管理",
+        "综合模拟项目",
+        "组织与领导管理",
+        "职业安全与健康",
+        "可持续项目管理实践原则",
+        "项目管理理论与实践",
+        "研究方法",
+        "风险与质量管理",
+        "战略管理与决策",
+        "项目一",
+        "项目二"
+      ],
+      "curriculumNote": "课程结构来自官方专业页面，已翻译为中文；术语仍需人工复核。",
+      "careerProspects": "official-unpublished",
+      "officialFeeSourceUrl": "https://newinti.edu.my/programme/master-of-science-in-integrated-project-management-online-learning/",
+      "officialSourceUrl": "https://newinti.edu.my/programme/master-of-science-in-integrated-project-management-online-learning/",
+      "officialVerifiedAt": "2026-06-24",
+      "publicDisplayStatus": "needs-review",
+      "auditStatus": "needs-manual-review",
+      "fieldAuditResult": "FAIL",
+      "fieldAuditFailedItems": [
+        "fee-authority-ambiguous",
+        "career-official-unpublished",
+        "collector-review-required"
+      ],
+      "entryRequirement": {
+        "minGPA": 2.0,
+        "gpaScale": 4.0,
+        "gpaNote": "官方原文包含多条 CGPA、内部评估、工作经验或先修课程路径；请以 officialAcademicRequirement 证据为准。",
+        "degreeLevel": "通常要求相关或非相关领域本科学位，具体路径以官方条目为准。",
+        "degreeRelevance": "preferred",
+        "workExperience": "部分非相关背景或较低 CGPA 路径需要相关工作经验、严格内部评估或先修课程，具体以官方条目为准。"
+      },
+      "studyMode": "coursework",
+      "studyModeNote": "在线学习",
+      "thesisRequired": false,
+      "thesisNote": "官方课程结构包含：项目。",
+      "interviewRequired": "official-unpublished",
+      "interviewNote": "官方页面未明确公布统一面试要求。",
+      "supervisorSystem": null,
+      "creditHours": "official-unpublished"
+    },
+    {
+      "nameEn": "Master of Traditional Chinese Medicine",
+      "name": "中医硕士",
+      "faculty": "Health Sciences",
+      "facultyZh": "健康科学学院",
+      "level": "master",
+      "duration": 2,
+      "tuitionMYR": "official-total-unpublished",
+      "tuitionNote": "官网仅发布近似费用（INTI International University：约 RM 70,002），并注明公布费用不含 SST，国际学生费用另加 6% SST。未发现同一专业、同一国际学生口径的精确总学费。",
+      "feeStatus": "official-total-unpublished",
+      "intake": [
+        1,
+        5,
+        9
+      ],
+      "applicationDeadline": "official-unpublished",
+      "language": {
+        "ielts": 5,
+        "toefl": null,
+        "otherRequirement": null,
+        "waiver": null
+      },
+      "curriculum": [
+        "第一年研究方法论",
+        "中医经典选读",
+        "仲景理论选读",
+        "针灸方向文献报告",
+        "历代针灸医案",
+        "推拿方向文献报告",
+        "历代推拿医案",
+        "妇科方向文献报告",
+        "历代妇科医案",
+        "内科方向文献报告",
+        "历代内科医案",
+        "临床一",
+        "第二年临床二",
+        "临床三",
+        "中医项目",
+        "选修课"
+      ],
+      "curriculumNote": "课程结构来自官方专业页面，已翻译为中文；术语仍需人工复核。 官方结构包含实习、临床或实践相关内容。",
+      "careerProspects": [
+        "执业中医师",
+        "中医讲师或教授",
+        "医疗机构管理人员",
+        "中医政策顾问",
+        "健康管理专员"
+      ],
+      "officialFeeSourceUrl": "https://newinti.edu.my/programme/master-of-traditional-chinese-medicine/",
+      "officialSourceUrl": "https://newinti.edu.my/programme/master-of-traditional-chinese-medicine/",
+      "officialVerifiedAt": "2026-06-24",
+      "publicDisplayStatus": "needs-review",
+      "auditStatus": "needs-manual-review",
+      "fieldAuditResult": "FAIL",
+      "fieldAuditFailedItems": [
+        "fee-authority-ambiguous",
+        "collector-review-required"
+      ],
+      "entryRequirement": {
+        "minGPA": 2.0,
+        "gpaScale": 4.0,
+        "gpaNote": "官方原文包含多条 CGPA、内部评估、工作经验或先修课程路径；请以 officialAcademicRequirement 证据为准。",
+        "degreeLevel": "通常要求相关或非相关领域本科学位，具体路径以官方条目为准。",
+        "degreeRelevance": "not-confirmed",
+        "workExperience": null
+      },
+      "studyMode": "coursework",
+      "studyModeNote": "full-time/part-time as published",
+      "thesisRequired": false,
+      "thesisNote": "官方课程结构包含：研究方法论、项目。",
+      "interviewRequired": "case-by-case",
+      "interviewNote": "官方入学路径提到严格内部评估，但未明确写成统一面试要求。",
+      "supervisorSystem": null,
+      "creditHours": "official-unpublished"
+    }
+  ],
+  "exception_queue": [
+    {
+      "type": "fee-authority-ambiguous",
+      "severity": "high",
+      "affectedProgramme": null,
+      "affectedField": "tuitionMYR",
+      "description": "INTI 官方页面当前只发布近似费用，并注明国际学生费用另加 6% SST；未发现可证明精确国际学生总学费的官方 authority。",
+      "evidence": "https://newinti.edu.my/academic-programmes/postgraduate/masters/",
+      "recommendation": "保持 needs-review；除非 INTI 官方提供精确总学费或 Ian 批准近似费用展示策略，否则不得转 ready。",
+      "status": "open",
+      "createdAt": "2026-06-24"
+    },
+    {
+      "type": "field-format-violation",
+      "severity": "medium",
+      "affectedProgramme": null,
+      "affectedField": "curriculum",
+      "description": "官方课程结构为英文，本批次已提供中文课程数组，但专业术语仍需人工复核。",
+      "evidence": "https://newinti.edu.my/academic-programmes/postgraduate/masters/",
+      "recommendation": "公开前由 Ian 或人工审核者逐条确认课程中文翻译。",
+      "status": "open",
+      "createdAt": "2026-06-24"
+    },
+    {
+      "type": "collection-omission",
+      "severity": "low",
+      "affectedProgramme": "Master in Education Management",
+      "affectedField": "careerProspects",
+      "description": "官方页面未发布该专业职业方向。",
+      "evidence": "https://newinti.edu.my/programme/master-in-education-management/",
+      "recommendation": "字段保留 official-unpublished，不使用第三方就业方向补齐。",
+      "status": "open",
+      "createdAt": "2026-06-24"
+    },
+    {
+      "type": "collection-omission",
+      "severity": "low",
+      "affectedProgramme": "Master in Information Systems (MIS)",
+      "affectedField": "interviewRequired",
+      "description": "官方页面未明确统一面试要求。",
+      "evidence": "https://newinti.edu.my/programme/master-in-information-systems-mis/",
+      "recommendation": "字段保留 official-unpublished，不推断为否。",
+      "status": "open",
+      "createdAt": "2026-06-24"
+    },
+    {
+      "type": "collection-omission",
+      "severity": "low",
+      "affectedProgramme": "Master in Information Technology (MIT)",
+      "affectedField": "interviewRequired",
+      "description": "官方页面未明确统一面试要求。",
+      "evidence": "https://newinti.edu.my/programme/master-in-information-technology-mit/",
+      "recommendation": "字段保留 official-unpublished，不推断为否。",
+      "status": "open",
+      "createdAt": "2026-06-24"
+    },
+    {
+      "type": "collection-omission",
+      "severity": "low",
+      "affectedProgramme": "Master in Information Technology (Online Learning)",
+      "affectedField": "interviewRequired",
+      "description": "官方页面未明确统一面试要求。",
+      "evidence": "https://newinti.edu.my/programme/master-in-information-technology-fully-online-learning-simplified/",
+      "recommendation": "字段保留 official-unpublished，不推断为否。",
+      "status": "open",
+      "createdAt": "2026-06-24"
+    },
+    {
+      "type": "collection-omission",
+      "severity": "low",
+      "affectedProgramme": "Master of Science in Construction Management (Building Information Modelling)",
+      "affectedField": "interviewRequired",
+      "description": "官方页面未明确统一面试要求。",
+      "evidence": "https://newinti.edu.my/programme/master-of-science-in-construction-management-building-information-modelling/",
+      "recommendation": "字段保留 official-unpublished，不推断为否。",
+      "status": "open",
+      "createdAt": "2026-06-24"
+    },
+    {
+      "type": "collection-omission",
+      "severity": "low",
+      "affectedProgramme": "Master of Science in Construction Management (Building Information Modelling) – (Online Learning)",
+      "affectedField": "interviewRequired",
+      "description": "官方页面未明确统一面试要求。",
+      "evidence": "https://newinti.edu.my/programme/master-of-science-in-construction-management-building-information-modelling-fully-online/",
+      "recommendation": "字段保留 official-unpublished，不推断为否。",
+      "status": "open",
+      "createdAt": "2026-06-24"
+    },
+    {
+      "type": "collection-omission",
+      "severity": "low",
+      "affectedProgramme": "Master of Science in Construction Management (Facility Management)",
+      "affectedField": "interviewRequired",
+      "description": "官方页面未明确统一面试要求。",
+      "evidence": "https://newinti.edu.my/programme/master-of-science-in-construction-management-with-facility-management/",
+      "recommendation": "字段保留 official-unpublished，不推断为否。",
+      "status": "open",
+      "createdAt": "2026-06-24"
+    },
+    {
+      "type": "collection-omission",
+      "severity": "medium",
+      "affectedProgramme": "Master of Science in Engineering and Eco-Innovation (by Research)",
+      "affectedField": "language",
+      "description": "官方页面未发布或未稳定解析该专业 IELTS/其他语言要求。",
+      "evidence": "https://newinti.edu.my/programme/master-of-science-in-engineering-and-eco-innovation-by-research/",
+      "recommendation": "继续保持 needs-review，必要时向 INTI 招生处确认。",
+      "status": "open",
+      "createdAt": "2026-06-24"
+    },
+    {
+      "type": "collection-omission",
+      "severity": "medium",
+      "affectedProgramme": "Master of Science in Facilities Management (Online Learning)",
+      "affectedField": "language",
+      "description": "官方页面未发布或未稳定解析该专业 IELTS/其他语言要求。",
+      "evidence": "https://newinti.edu.my/programme/master-of-science-in-facilities-management-online-learning/",
+      "recommendation": "继续保持 needs-review，必要时向 INTI 招生处确认。",
+      "status": "open",
+      "createdAt": "2026-06-24"
+    },
+    {
+      "type": "collection-omission",
+      "severity": "low",
+      "affectedProgramme": "Master of Science in Facilities Management (Online Learning)",
+      "affectedField": "interviewRequired",
+      "description": "官方页面未明确统一面试要求。",
+      "evidence": "https://newinti.edu.my/programme/master-of-science-in-facilities-management-online-learning/",
+      "recommendation": "字段保留 official-unpublished，不推断为否。",
+      "status": "open",
+      "createdAt": "2026-06-24"
+    },
+    {
+      "type": "collection-omission",
+      "severity": "low",
+      "affectedProgramme": "Master of Science in Information Systems (by Research)",
+      "affectedField": "interviewRequired",
+      "description": "官方页面未明确统一面试要求。",
+      "evidence": "https://newinti.edu.my/programme/master-of-science-in-information-systems-by-research/",
+      "recommendation": "字段保留 official-unpublished，不推断为否。",
+      "status": "open",
+      "createdAt": "2026-06-24"
+    },
+    {
+      "type": "collection-omission",
+      "severity": "low",
+      "affectedProgramme": "Master of Science in Integrated Project Management (Online Learning)",
+      "affectedField": "careerProspects",
+      "description": "官方页面未发布该专业职业方向。",
+      "evidence": "https://newinti.edu.my/programme/master-of-science-in-integrated-project-management-online-learning/",
+      "recommendation": "字段保留 official-unpublished，不使用第三方就业方向补齐。",
+      "status": "open",
+      "createdAt": "2026-06-24"
+    },
+    {
+      "type": "collection-omission",
+      "severity": "low",
+      "affectedProgramme": "Master of Science in Integrated Project Management (Online Learning)",
+      "affectedField": "interviewRequired",
+      "description": "官方页面未明确统一面试要求。",
+      "evidence": "https://newinti.edu.my/programme/master-of-science-in-integrated-project-management-online-learning/",
+      "recommendation": "字段保留 official-unpublished，不推断为否。",
+      "status": "open",
+      "createdAt": "2026-06-24"
+    }
+  ]
+}

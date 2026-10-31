@@ -1,0 +1,512 @@
+{
+  "task": "TSU language and duration display incident fix",
+  "generatedAt": "2026-06-21T12:38:48.835Z",
+  "scope": "Taylor's University public programme rows tsu-official-2026-row-%",
+  "languageFix": "Reparsed languageRequirement from the official International Students section only; removed Local Students score pollution; preserved official IELTS/TOEFL/PTE/MUET/CEFR scalar routes when published.",
+  "durationFix": "Frontend formatter now renders year durations as clean year labels such as 3年, 3.5年, and 2至4年.",
+  "counts": {
+    "total": 89,
+    "parsedIelts": 79,
+    "parsedToefl": 35,
+    "parsedPte": 4,
+    "parsedMuet": 12,
+    "parsedCefr": 10
+  },
+  "changedRows": 26,
+  "diffs": [
+    {
+      "slug": "tsu-official-2026-row-001-bachelor-of-science-honours-in-architecture",
+      "nameEnOfficial": "Bachelor of Science (Honours) in Architecture",
+      "before": {
+        "ielts": 5.5,
+        "toefl": 60,
+        "pte": null,
+        "muet": 4,
+        "cefr": null
+      },
+      "after": {
+        "ielts": 5.5,
+        "toefl": null,
+        "pte": null,
+        "muet": null,
+        "cefr": null
+      },
+      "internationalEvidence": "IELTS score of 5.5 OR its equivalent Completed Pre-U/Diploma that was conducted in English"
+    },
+    {
+      "slug": "tsu-official-2026-row-002-bachelor-of-arts-honours-in-interior-architecture",
+      "nameEnOfficial": "Bachelor of Arts (Honours) in Interior Architecture",
+      "before": {
+        "ielts": 5.5,
+        "toefl": null,
+        "pte": null,
+        "muet": 4,
+        "cefr": null
+      },
+      "after": {
+        "ielts": 5.5,
+        "toefl": null,
+        "pte": null,
+        "muet": null,
+        "cefr": null
+      },
+      "internationalEvidence": "IELTS score of 5.5 OR its equivalent Completed Pre-U/Diploma that was conducted in English"
+    },
+    {
+      "slug": "tsu-official-2026-row-003-bachelor-of-quantity-surveying-honours",
+      "nameEnOfficial": "Bachelor of Quantity Surveying (Honours)",
+      "before": {
+        "ielts": 5,
+        "toefl": 40,
+        "pte": null,
+        "muet": 3,
+        "cefr": null
+      },
+      "after": {
+        "ielts": 5,
+        "toefl": null,
+        "pte": null,
+        "muet": null,
+        "cefr": null
+      },
+      "internationalEvidence": "IELTS score of 5.0 OR its equivalent Completed Pre-U/Diploma that was conducted in English"
+    },
+    {
+      "slug": "tsu-official-2026-row-008-bachelor-of-biomedical-science-honours",
+      "nameEnOfficial": "Bachelor of Biomedical Science (Honours)",
+      "before": {
+        "ielts": 5.5,
+        "toefl": 46,
+        "pte": 51,
+        "muet": 3,
+        "cefr": null
+      },
+      "after": {
+        "ielts": 5.5,
+        "toefl": 46,
+        "pte": 51,
+        "muet": null,
+        "cefr": null
+      },
+      "internationalEvidence": "IELTS Band 5.5 TOEFL iBT 46 PTE 51 Linguaskill 160 Pre-University / Foundation in Science Completed Pre-University / Foundation in Science programme that was conducted in English Cambridge English / ELS the minimum score varies by programme"
+    },
+    {
+      "slug": "tsu-official-2026-row-009-bachelor-of-food-science-honours",
+      "nameEnOfficial": "Bachelor of Food Science (Honours)",
+      "before": {
+        "ielts": 5.5,
+        "toefl": 46,
+        "pte": 51,
+        "muet": 3,
+        "cefr": null
+      },
+      "after": {
+        "ielts": 5.5,
+        "toefl": 46,
+        "pte": 51,
+        "muet": null,
+        "cefr": null
+      },
+      "internationalEvidence": "IELTS Band 5.5 TOEFL iBT 46 PTE 51 Linguaskill 160 Pre-University / Foundation in Science Completed Pre-University / Foundation in Science programme that was conducted in English Cambridge English / ELS the minimum score varies by programme"
+    },
+    {
+      "slug": "tsu-official-2026-row-011-bachelor-of-applied-health-sciences-honours",
+      "nameEnOfficial": "Bachelor of Applied Health Sciences (Honours)",
+      "before": {
+        "ielts": 5.5,
+        "toefl": 46,
+        "pte": 51,
+        "muet": 3,
+        "cefr": null
+      },
+      "after": {
+        "ielts": 5.5,
+        "toefl": 46,
+        "pte": 51,
+        "muet": null,
+        "cefr": null
+      },
+      "internationalEvidence": "IELTS Band 5.5 TOEFL iBT 46 PTE 51 Linguaskill 160 Pre-University / Diploma Completed Pre-University / Diploma that was conducted in English Cambridge English / ELS the minimum score varies by programme"
+    },
+    {
+      "slug": "tsu-official-2026-row-014-bachelor-of-business-honours",
+      "nameEnOfficial": "Bachelor of Business (Honours)",
+      "before": {
+        "ielts": null,
+        "toefl": null,
+        "pte": null,
+        "muet": 3,
+        "cefr": null
+      },
+      "after": {
+        "ielts": null,
+        "toefl": null,
+        "pte": null,
+        "muet": 3,
+        "cefr": "Low B2"
+      },
+      "internationalEvidence": "MUET Band 3 CEFR Low B2 Pre-U / Diploma Completed Pre-U / Diploma that was conducted in English Cambridge English / ELS the minimum score varies by programme"
+    },
+    {
+      "slug": "tsu-official-2026-row-015-bachelor-of-business-honours-in-international-business-and-marketing",
+      "nameEnOfficial": "Bachelor of Business (Honours) in International Business and Marketing",
+      "before": {
+        "ielts": null,
+        "toefl": null,
+        "pte": null,
+        "muet": 3,
+        "cefr": null
+      },
+      "after": {
+        "ielts": null,
+        "toefl": null,
+        "pte": null,
+        "muet": 3,
+        "cefr": "Low B2"
+      },
+      "internationalEvidence": "MUET Band 3 CEFR Low B2 Pre-U / Diploma Completed Pre-U / Diploma that was conducted in English Cambridge English / ELS the minimum score varies by programme"
+    },
+    {
+      "slug": "tsu-official-2026-row-017-bachelor-of-banking-and-finance-honours",
+      "nameEnOfficial": "Bachelor of Banking and Finance (Honours)",
+      "before": {
+        "ielts": 6,
+        "toefl": 60,
+        "pte": null,
+        "muet": 4,
+        "cefr": null
+      },
+      "after": {
+        "ielts": 6,
+        "toefl": null,
+        "pte": null,
+        "muet": null,
+        "cefr": null
+      },
+      "internationalEvidence": "IELTS Band 6.0 Pre-U / Diploma Completed Pre-U / Diploma that was conducted in English Cambridge English / ELS the minimum score varies by programme"
+    },
+    {
+      "slug": "tsu-official-2026-row-018-bachelor-of-finance-and-economics-honours",
+      "nameEnOfficial": "Bachelor of Finance and Economics (Honours)",
+      "before": {
+        "ielts": 6,
+        "toefl": 60,
+        "pte": null,
+        "muet": 4,
+        "cefr": null
+      },
+      "after": {
+        "ielts": 6,
+        "toefl": null,
+        "pte": null,
+        "muet": null,
+        "cefr": null
+      },
+      "internationalEvidence": "IELTS Band 6.0 Pre-U / Diploma Completed Pre-U / Diploma that was conducted in English Cambridge English / ELS the minimum score varies by programme"
+    },
+    {
+      "slug": "tsu-official-2026-row-019-bachelor-of-actuarial-studies-honours",
+      "nameEnOfficial": "Bachelor of Actuarial Studies (Honours)",
+      "before": {
+        "ielts": null,
+        "toefl": null,
+        "pte": null,
+        "muet": 3,
+        "cefr": null
+      },
+      "after": {
+        "ielts": null,
+        "toefl": null,
+        "pte": null,
+        "muet": 3,
+        "cefr": "Low B2"
+      },
+      "internationalEvidence": "MUET Band 3 CEFR Low B2 Pre-U / Diploma Completed Pre-U / Diploma that was conducted in English Cambridge English / ELS the minimum score varies by programme"
+    },
+    {
+      "slug": "tsu-official-2026-row-020-bachelor-of-entrepreneurship-honours-in-team-entrepreneurship",
+      "nameEnOfficial": "Bachelor of Entrepreneurship (Honours) in Team Entrepreneurship",
+      "before": {
+        "ielts": null,
+        "toefl": null,
+        "pte": null,
+        "muet": null,
+        "cefr": null
+      },
+      "after": {
+        "ielts": null,
+        "toefl": null,
+        "pte": null,
+        "muet": 3,
+        "cefr": "Low B2"
+      },
+      "internationalEvidence": "MUET Min. band 3 CEFR Min. Low B2 Pre-University/ Diploma Complete Pre-University/ Diploma that was conducted in English"
+    },
+    {
+      "slug": "tsu-official-2026-row-044-master-in-applied-computing-coursework",
+      "nameEnOfficial": "Master in Applied Computing (Coursework)",
+      "before": {
+        "ielts": null,
+        "toefl": null,
+        "pte": null,
+        "muet": null,
+        "cefr": null
+      },
+      "after": {
+        "ielts": null,
+        "toefl": null,
+        "pte": null,
+        "muet": 4,
+        "cefr": "Low B2"
+      },
+      "internationalEvidence": "English Requirement: Achieve a minimum of Band 4 in MUET or equivalent to CEFR (Low B2)."
+    },
+    {
+      "slug": "tsu-official-2026-row-045-master-of-computer-science",
+      "nameEnOfficial": "Master of Computer Science",
+      "before": {
+        "ielts": null,
+        "toefl": null,
+        "pte": null,
+        "muet": null,
+        "cefr": null
+      },
+      "after": {
+        "ielts": null,
+        "toefl": null,
+        "pte": null,
+        "muet": 4,
+        "cefr": "Mid B2"
+      },
+      "internationalEvidence": "English Requirement: Achieve a minimum of Band 4 in MUET or equivalent to CEFR (Mid B2)."
+    },
+    {
+      "slug": "tsu-official-2026-row-046-master-in-applied-computing-100-online",
+      "nameEnOfficial": "Master in Applied Computing (100% Online)",
+      "before": {
+        "ielts": null,
+        "toefl": null,
+        "pte": null,
+        "muet": null,
+        "cefr": null
+      },
+      "after": {
+        "ielts": null,
+        "toefl": null,
+        "pte": null,
+        "muet": 4,
+        "cefr": "Low B2"
+      },
+      "internationalEvidence": "English Requirement: Achieve a minimum of Band 4 in MUET or equivalent to CEFR (Low B2)."
+    },
+    {
+      "slug": "tsu-official-2026-row-047-doctor-of-philosophy-phd-in-computer-science",
+      "nameEnOfficial": "Doctor of Philosophy (PhD) in Computer Science",
+      "before": {
+        "ielts": null,
+        "toefl": null,
+        "pte": null,
+        "muet": null,
+        "cefr": null
+      },
+      "after": {
+        "ielts": null,
+        "toefl": null,
+        "pte": null,
+        "muet": 4,
+        "cefr": "Mid B2"
+      },
+      "internationalEvidence": "Achieve a minimum of Band 4 in MUET or equivalent to CEFR (Mid B2)."
+    },
+    {
+      "slug": "tsu-official-2026-row-048-bachelor-of-interactive-spatial-design-honours",
+      "nameEnOfficial": "Bachelor of Interactive Spatial Design (Honours)",
+      "before": {
+        "ielts": null,
+        "toefl": null,
+        "pte": null,
+        "muet": null,
+        "cefr": null
+      },
+      "after": {
+        "ielts": null,
+        "toefl": null,
+        "pte": null,
+        "muet": 3,
+        "cefr": "Low B2"
+      },
+      "internationalEvidence": "Achieve a minimum score of Band 3 in MUET or equivalent to CEFR Low B2. Completed Pre-U/Diploma that was conducted in English"
+    },
+    {
+      "slug": "tsu-official-2026-row-050-bachelor-of-design-honours-in-creative-media",
+      "nameEnOfficial": "Bachelor of Design (Honours) In Creative Media",
+      "before": {
+        "ielts": null,
+        "toefl": null,
+        "pte": null,
+        "muet": null,
+        "cefr": null
+      },
+      "after": {
+        "ielts": null,
+        "toefl": null,
+        "pte": null,
+        "muet": 3,
+        "cefr": "Low B2"
+      },
+      "internationalEvidence": "Achieve a minimum score of Band 3 in MUET or equivalent to CEFR Low B2. Completed Pre-U/Diploma that was conducted in English"
+    },
+    {
+      "slug": "tsu-official-2026-row-058-bachelor-of-chemical-engineering-honours",
+      "nameEnOfficial": "Bachelor of Chemical Engineering (Honours)",
+      "before": {
+        "ielts": 5,
+        "toefl": 30,
+        "pte": null,
+        "muet": 3,
+        "cefr": null
+      },
+      "after": {
+        "ielts": 5,
+        "toefl": null,
+        "pte": null,
+        "muet": null,
+        "cefr": null
+      },
+      "internationalEvidence": "IELTS score of 5.0 OR its equivalent Completed Pre-U/Diploma that was conducted in English"
+    },
+    {
+      "slug": "tsu-official-2026-row-059-bachelor-of-electrical-and-electronic-engineering-honours",
+      "nameEnOfficial": "Bachelor of Electrical and Electronic Engineering (Honours)",
+      "before": {
+        "ielts": 5,
+        "toefl": 30,
+        "pte": null,
+        "muet": 3,
+        "cefr": null
+      },
+      "after": {
+        "ielts": 5,
+        "toefl": null,
+        "pte": null,
+        "muet": null,
+        "cefr": null
+      },
+      "internationalEvidence": "IELTS score of 5.0 OR its equivalent Completed Pre-U/Diploma that was conducted in English"
+    },
+    {
+      "slug": "tsu-official-2026-row-060-bachelor-of-mechanical-engineering-honours",
+      "nameEnOfficial": "Bachelor of Mechanical Engineering (Honours)",
+      "before": {
+        "ielts": 5,
+        "toefl": 30,
+        "pte": null,
+        "muet": 3,
+        "cefr": null
+      },
+      "after": {
+        "ielts": 5,
+        "toefl": null,
+        "pte": null,
+        "muet": null,
+        "cefr": null
+      },
+      "internationalEvidence": "IELTS score of 5.0 OR its equivalent Completed Pre-U/Diploma that was conducted in English"
+    },
+    {
+      "slug": "tsu-official-2026-row-061-bachelor-of-mechatronics-engineering-with-honours",
+      "nameEnOfficial": "Bachelor of Mechatronics Engineering with Honours",
+      "before": {
+        "ielts": 5,
+        "toefl": 30,
+        "pte": null,
+        "muet": 3,
+        "cefr": null
+      },
+      "after": {
+        "ielts": 5,
+        "toefl": null,
+        "pte": null,
+        "muet": null,
+        "cefr": null
+      },
+      "internationalEvidence": "IELTS score of 5.0 OR its equivalent Completed Pre-U/Diploma that was conducted in English"
+    },
+    {
+      "slug": "tsu-official-2026-row-071-bachelor-of-laws-honours",
+      "nameEnOfficial": "Bachelor of Laws (Honours)",
+      "before": {
+        "ielts": 6,
+        "toefl": 60,
+        "pte": null,
+        "muet": 4,
+        "cefr": null
+      },
+      "after": {
+        "ielts": 6,
+        "toefl": null,
+        "pte": null,
+        "muet": null,
+        "cefr": null
+      },
+      "internationalEvidence": "IELTS (or Equivalent) Band 6.0 Pre-University / Diploma Completed Pre-University / Diploma that was conducted in English Cambridge English / ELS the minimum score varies by programme"
+    },
+    {
+      "slug": "tsu-official-2026-row-072-bachelor-in-philosophy-politics-and-economics-honours",
+      "nameEnOfficial": "Bachelor in Philosophy, Politics, and Economics (Honours)",
+      "before": {
+        "ielts": 6,
+        "toefl": null,
+        "pte": null,
+        "muet": 4,
+        "cefr": null
+      },
+      "after": {
+        "ielts": 6,
+        "toefl": null,
+        "pte": null,
+        "muet": null,
+        "cefr": null
+      },
+      "internationalEvidence": "IELTS Band 6.0 Pre-University / Diploma Completed Pre-University / Diploma that was conducted in English Cambridge English / ELS the minimum score varies by programme"
+    },
+    {
+      "slug": "tsu-official-2026-row-083-bachelor-of-pharmaceutical-science-honours",
+      "nameEnOfficial": "Bachelor of Pharmaceutical Science (Honours)",
+      "before": {
+        "ielts": 5.5,
+        "toefl": null,
+        "pte": null,
+        "muet": 3,
+        "cefr": null
+      },
+      "after": {
+        "ielts": 5.5,
+        "toefl": null,
+        "pte": null,
+        "muet": null,
+        "cefr": null
+      },
+      "internationalEvidence": "IELTS Band 5.5 Pre-University / Foundation / Diploma Completed Pre-University / Foundation / Diploma programme that was conducted in English Cambridge English / ELS the minimum score varies by programme"
+    },
+    {
+      "slug": "tsu-official-2026-row-087-bachelor-of-medicine-bachelor-of-surgery-mbbs",
+      "nameEnOfficial": "Bachelor of Medicine, Bachelor of Surgery (MBBS)",
+      "before": {
+        "ielts": 6,
+        "toefl": 60,
+        "pte": null,
+        "muet": 4,
+        "cefr": null
+      },
+      "after": {
+        "ielts": 6,
+        "toefl": 60,
+        "pte": null,
+        "muet": null,
+        "cefr": null
+      },
+      "internationalEvidence": "IELTS Band 6.0 TOEFL iBT 60 Cambridge English / ELS the minimum score varies by programme"
+    }
+  ]
+}

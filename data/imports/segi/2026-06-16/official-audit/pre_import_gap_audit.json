@@ -1,0 +1,11 @@
+{
+  "status": "not-import-ready",
+  "reason": "This run is a standardized official audit. It found scope and title gaps that require human confirmation before any write/publish action.",
+  "blockingItems": {
+    "officialOnlyProgrammes": 40,
+    "currentOnlyProgrammes": 13,
+    "titleVariantMatches": 16,
+    "officialDetailPagesWithoutTuition": 76
+  },
+  "recommendedNextStep": "Confirm whether SEGi University Online / ODL variants should be separate public programmes, then prepare a reviewed import candidate."
+}

@@ -1,0 +1,130 @@
+[
+  {
+    "id": "user-task",
+    "instruction": "采用最新优化的标准化流程和专用 skill 对思特雅（UCSI University）本硕博专业信息进行官方来源采集",
+    "scope": "run",
+    "status": "completed",
+    "evidencePointer": "12_operator_review_report.md",
+    "reason": "Collect-only UCSI bachelor/master/phd baseline was generated with review exceptions recorded."
+  },
+  {
+    "id": "run-contract",
+    "instruction": "Record run contract and one-input defaults.",
+    "scope": "run",
+    "status": "completed",
+    "evidencePointer": "00_run_contract.json",
+    "reason": "Completed or recorded in the linked artifact for this collect-only run."
+  },
+  {
+    "id": "source-registry",
+    "instruction": "Discover official source registry and accepted domains.",
+    "scope": "source",
+    "status": "completed",
+    "evidencePointer": "02_official_source_registry.json",
+    "reason": "Completed or recorded in the linked artifact for this collect-only run."
+  },
+  {
+    "id": "baseline",
+    "instruction": "Lock official programme baseline by level before enrichment.",
+    "scope": "level",
+    "status": "completed",
+    "evidencePointer": "03_level_manifest.json",
+    "reason": "Completed or recorded in the linked artifact for this collect-only run."
+  },
+  {
+    "id": "row-disposal",
+    "instruction": "Dispose every official row with a reviewed state.",
+    "scope": "level",
+    "status": "completed",
+    "evidencePointer": "04_official_row_disposal.json",
+    "reason": "Completed or recorded in the linked artifact for this collect-only run."
+  },
+  {
+    "id": "source-cache",
+    "instruction": "Snapshot/cache official authorities with retrieval metadata and hash.",
+    "scope": "source",
+    "status": "completed",
+    "evidencePointer": "05_source_cache_index.json",
+    "reason": "Completed or recorded in the linked artifact for this collect-only run."
+  },
+  {
+    "id": "page-options",
+    "instruction": "Inventory every programme detail page option, panel, selector, and same-programme link.",
+    "scope": "programme",
+    "status": "completed",
+    "evidencePointer": "06_page_option_inventory.json",
+    "reason": "Completed or recorded in the linked artifact for this collect-only run."
+  },
+  {
+    "id": "runtime-continuity",
+    "instruction": "Keep Ian's running StudyMY project端 available during collection; document any approved interruption and recovery check.",
+    "scope": "run",
+    "status": "completed",
+    "evidencePointer": "13_runtime_continuity_check.json",
+    "reason": "Completed or recorded in the linked artifact for this collect-only run."
+  },
+  {
+    "id": "deep-source-field-audit",
+    "instruction": "Deeply search official detail pages, panels, sublinks, PDFs, handbooks, prospectuses, faculty/admission pages, and application evidence before marking material fields unpublished or review-needed.",
+    "scope": "field",
+    "status": "completed",
+    "evidencePointer": "14_deep_source_field_audit.json",
+    "reason": "Completed or recorded in the linked artifact for this collect-only run."
+  },
+  {
+    "id": "field-coverage",
+    "instruction": "Build field coverage matrix for every material field and canonical programme.",
+    "scope": "field",
+    "status": "completed",
+    "evidencePointer": "07_field_coverage_matrix.json",
+    "reason": "Completed or recorded in the linked artifact for this collect-only run."
+  },
+  {
+    "id": "candidate",
+    "instruction": "Build deterministic StudyMY candidate dataset.",
+    "scope": "programme",
+    "status": "completed",
+    "evidencePointer": "08_candidate_dataset.json",
+    "reason": "Completed or recorded in the linked artifact for this collect-only run."
+  },
+  {
+    "id": "trace",
+    "instruction": "Trace ready public values to official evidence.",
+    "scope": "field",
+    "status": "completed",
+    "evidencePointer": "09_source_to_candidate_trace.json",
+    "reason": "Completed or recorded in the linked artifact for this collect-only run."
+  },
+  {
+    "id": "public-display-hygiene",
+    "instruction": "Verify public Chinese detail fields contain useful localized student-facing content and no raw English dumps, crawler/debug/process notes, audit labels, or local paths.",
+    "scope": "display",
+    "status": "completed",
+    "evidencePointer": "15_public_display_hygiene_audit.json",
+    "reason": "Completed or recorded in the linked artifact for this collect-only run."
+  },
+  {
+    "id": "display-parity",
+    "instruction": "Verify institution, catalogue, list, detail, and leakage display parity.",
+    "scope": "display",
+    "status": "completed",
+    "evidencePointer": "10_display_parity_report.json",
+    "reason": "Completed or recorded in the linked artifact for this collect-only run."
+  },
+  {
+    "id": "exceptions",
+    "instruction": "Record blocking/review exceptions with evidence and next action.",
+    "scope": "run",
+    "status": "completed",
+    "evidencePointer": "11_exception_queue.json",
+    "reason": "Completed or recorded in the linked artifact for this collect-only run."
+  },
+  {
+    "id": "operator-report",
+    "instruction": "Generate Ian review report with counts, gaps, and validation results.",
+    "scope": "run",
+    "status": "completed",
+    "evidencePointer": "12_operator_review_report.md",
+    "reason": "Completed or recorded in the linked artifact for this collect-only run."
+  }
+]

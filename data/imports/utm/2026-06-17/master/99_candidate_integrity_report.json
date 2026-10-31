@@ -1,0 +1,58 @@
+{
+  "status": "blocked",
+  "recordKey": "unknown",
+  "baselineKey": "official_row_disposal",
+  "pageOptionKey": "page_option_inventory",
+  "coverageKey": "field_coverage_matrix",
+  "displayParityKey": "display_parity_report.surfaces",
+  "instructionLedgerKey": "instruction_execution_ledger",
+  "officialDomains": [],
+  "recordCount": 0,
+  "baselineCount": 0,
+  "pageOptionCount": 0,
+  "coverageRowCount": 0,
+  "displayParityRowCount": 0,
+  "instructionLedgerCount": 0,
+  "recordsByPublicStatus": {},
+  "issueCounts": {
+    "error": 5,
+    "warning": 2
+  },
+  "issues": [
+    {
+      "severity": "error",
+      "code": "missing-official-domains",
+      "message": "Official domains are required."
+    },
+    {
+      "severity": "error",
+      "code": "missing-candidate-records",
+      "message": "No candidate records found."
+    },
+    {
+      "severity": "error",
+      "code": "missing-official-row-disposal",
+      "message": "No official row disposal or programme baseline found."
+    },
+    {
+      "severity": "error",
+      "code": "missing-page-option-inventory",
+      "message": "No page option inventory was provided."
+    },
+    {
+      "severity": "warning",
+      "code": "missing-field-coverage-matrix",
+      "message": "No field coverage matrix was provided."
+    },
+    {
+      "severity": "warning",
+      "code": "missing-display-parity-report",
+      "message": "No display parity report was provided."
+    },
+    {
+      "severity": "error",
+      "code": "missing-instruction-execution-ledger",
+      "message": "No instruction execution ledger was provided."
+    }
+  ]
+}

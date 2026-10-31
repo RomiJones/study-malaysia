@@ -1,0 +1,1748 @@
+{
+  "mode": "applied",
+  "generatedAt": "2026-06-30T06:33:43.609Z",
+  "safety": {
+    "writesRequireConfirmFlag": true,
+    "overwriteExistingValues": false,
+    "synchronizeSchema": false
+  },
+  "summary": {
+    "universitiesScanned": 119,
+    "programsScanned": 4078,
+    "universityRowsChanged": 1,
+    "programRowsChanged": 171,
+    "totalPatches": 172,
+    "patchesByEntity": {
+      "university": 1,
+      "program": 171
+    },
+    "patchesByField": {
+      "studyPortalUrl": 1,
+      "nameEnOfficial": 118,
+      "tuitionDisplay": 53
+    },
+    "reportPath": "/Users/ian/Desktop/dev/study-malaysia/data/admin-field-sync/admin-official-field-sync-applied-2026-06-30T06-33-43-609Z.json"
+  },
+  "patches": [
+    {
+      "entityType": "university",
+      "entityId": 7,
+      "code": "UKM",
+      "name": "马来西亚国立大学",
+      "field": "studyPortalUrl",
+      "sourcePath": "officialProfile.officialLinks",
+      "previous": "",
+      "next": "https://www.ukm.my/studyukm/"
+    },
+    {
+      "entityType": "program",
+      "entityId": 7325,
+      "code": "UCSI-BACHELOR-013",
+      "name": "Bachelor Of Science (Honours) Applied Microbiology",
+      "field": "nameEnOfficial",
+      "sourcePath": "name.en",
+      "previous": "",
+      "next": "Bachelor Of Science (Honours) Applied Microbiology"
+    },
+    {
+      "entityType": "program",
+      "entityId": 7326,
+      "code": "UCSI-BACHELOR-014",
+      "name": "Bachelor Of Science (Honours) Aquatic Science",
+      "field": "nameEnOfficial",
+      "sourcePath": "name.en",
+      "previous": "",
+      "next": "Bachelor Of Science (Honours) Aquatic Science"
+    },
+    {
+      "entityType": "program",
+      "entityId": 7327,
+      "code": "UCSI-BACHELOR-015",
+      "name": "Bachelor Of Science (Honours) In Biotechnology",
+      "field": "nameEnOfficial",
+      "sourcePath": "name.en",
+      "previous": "",
+      "next": "Bachelor Of Science (Honours) In Biotechnology"
+    },
+    {
+      "entityType": "program",
+      "entityId": 7328,
+      "code": "UCSI-BACHELOR-016",
+      "name": "Bachelor Of Science (Honours) Food Science With Nutrition",
+      "field": "nameEnOfficial",
+      "sourcePath": "name.en",
+      "previous": "",
+      "next": "Bachelor Of Science (Honours) Food Science With Nutrition"
+    },
+    {
+      "entityType": "program",
+      "entityId": 7329,
+      "code": "UCSI-BACHELOR-017",
+      "name": "Bachelor Of Science (Honours) Forensic Science",
+      "field": "nameEnOfficial",
+      "sourcePath": "name.en",
+      "previous": "",
+      "next": "Bachelor Of Science (Honours) Forensic Science"
+    },
+    {
+      "entityType": "program",
+      "entityId": 7330,
+      "code": "UCSI-BACHELOR-018",
+      "name": "Bachelor Of Science (Honours) Nutrition With Wellness",
+      "field": "nameEnOfficial",
+      "sourcePath": "name.en",
+      "previous": "",
+      "next": "Bachelor Of Science (Honours) Nutrition With Wellness"
+    },
+    {
+      "entityType": "program",
+      "entityId": 7333,
+      "code": "UCSI-BACHELOR-021",
+      "name": "Bachelor Of Arts (Hons) Accounting",
+      "field": "nameEnOfficial",
+      "sourcePath": "name.en",
+      "previous": "",
+      "next": "Bachelor Of Arts (Hons) Accounting"
+    },
+    {
+      "entityType": "program",
+      "entityId": 7334,
+      "code": "UCSI-BACHELOR-022",
+      "name": "Bachelor Of Arts (Hons) Accounting And Finance",
+      "field": "nameEnOfficial",
+      "sourcePath": "name.en",
+      "previous": "",
+      "next": "Bachelor Of Arts (Hons) Accounting And Finance"
+    },
+    {
+      "entityType": "program",
+      "entityId": 7335,
+      "code": "UCSI-BACHELOR-023",
+      "name": "Bachelor Of Arts (Hons) Entrepreneurship",
+      "field": "nameEnOfficial",
+      "sourcePath": "name.en",
+      "previous": "",
+      "next": "Bachelor Of Arts (Hons) Entrepreneurship"
+    },
+    {
+      "entityType": "program",
+      "entityId": 7336,
+      "code": "UCSI-BACHELOR-024",
+      "name": "Bachelor Of Arts (Hons) In Branding And Advertising",
+      "field": "nameEnOfficial",
+      "sourcePath": "name.en",
+      "previous": "",
+      "next": "Bachelor Of Arts (Hons) In Branding And Advertising"
+    },
+    {
+      "entityType": "program",
+      "entityId": 7337,
+      "code": "UCSI-BACHELOR-025",
+      "name": "Bachelor Of Arts (Hons) In Business Administration",
+      "field": "nameEnOfficial",
+      "sourcePath": "name.en",
+      "previous": "",
+      "next": "Bachelor Of Arts (Hons) In Business Administration"
+    },
+    {
+      "entityType": "program",
+      "entityId": 7338,
+      "code": "UCSI-BACHELOR-026",
+      "name": "Bachelor Of Arts (Hons) In Marketing",
+      "field": "nameEnOfficial",
+      "sourcePath": "name.en",
+      "previous": "",
+      "next": "Bachelor Of Arts (Hons) In Marketing"
+    },
+    {
+      "entityType": "program",
+      "entityId": 7339,
+      "code": "UCSI-BACHELOR-027",
+      "name": "Bachelor Of Arts (Hons) Logistics Management",
+      "field": "nameEnOfficial",
+      "sourcePath": "name.en",
+      "previous": "",
+      "next": "Bachelor Of Arts (Hons) Logistics Management"
+    },
+    {
+      "entityType": "program",
+      "entityId": 7340,
+      "code": "UCSI-BACHELOR-028",
+      "name": "Bachelor Of Arts (Honours) Supply Chain Operations Management",
+      "field": "nameEnOfficial",
+      "sourcePath": "name.en",
+      "previous": "",
+      "next": "Bachelor Of Arts (Honours) Supply Chain Operations Management"
+    },
+    {
+      "entityType": "program",
+      "entityId": 7341,
+      "code": "UCSI-BACHELOR-029",
+      "name": "Bachelor In Human Capital Management (Honours)",
+      "field": "nameEnOfficial",
+      "sourcePath": "name.en",
+      "previous": "",
+      "next": "Bachelor In Human Capital Management (Honours)"
+    },
+    {
+      "entityType": "program",
+      "entityId": 7342,
+      "code": "UCSI-BACHELOR-030",
+      "name": "Bachelor Of Business Analytics (Honours)",
+      "field": "nameEnOfficial",
+      "sourcePath": "name.en",
+      "previous": "",
+      "next": "Bachelor Of Business Analytics (Honours)"
+    },
+    {
+      "entityType": "program",
+      "entityId": 7343,
+      "code": "UCSI-BACHELOR-031",
+      "name": "Bachelor Of Financial Economics (Hons)",
+      "field": "nameEnOfficial",
+      "sourcePath": "name.en",
+      "previous": "",
+      "next": "Bachelor Of Financial Economics (Hons)"
+    },
+    {
+      "entityType": "program",
+      "entityId": 7344,
+      "code": "UCSI-BACHELOR-032",
+      "name": "Bachelor Of Financial Technology (Honours)",
+      "field": "nameEnOfficial",
+      "sourcePath": "name.en",
+      "previous": "",
+      "next": "Bachelor Of Financial Technology (Honours)"
+    },
+    {
+      "entityType": "program",
+      "entityId": 7345,
+      "code": "UCSI-BACHELOR-033",
+      "name": "Bachelor Of International And Sustainable Business (Honours)",
+      "field": "nameEnOfficial",
+      "sourcePath": "name.en",
+      "previous": "",
+      "next": "Bachelor Of International And Sustainable Business (Honours)"
+    },
+    {
+      "entityType": "program",
+      "entityId": 7346,
+      "code": "UCSI-BACHELOR-034",
+      "name": "Bachelor Of Science (Honours) Finance And Investment",
+      "field": "nameEnOfficial",
+      "sourcePath": "name.en",
+      "previous": "",
+      "next": "Bachelor Of Science (Honours) Finance And Investment"
+    },
+    {
+      "entityType": "program",
+      "entityId": 7356,
+      "code": "UCSI-BACHELOR-044",
+      "name": "Bachelor Of Arts (Hons) In Interior Architecture",
+      "field": "nameEnOfficial",
+      "sourcePath": "name.en",
+      "previous": "",
+      "next": "Bachelor Of Arts (Hons) In Interior Architecture"
+    },
+    {
+      "entityType": "program",
+      "entityId": 7357,
+      "code": "UCSI-BACHELOR-045",
+      "name": "Bachelor Of Chemical Engineering With Honours",
+      "field": "nameEnOfficial",
+      "sourcePath": "name.en",
+      "previous": "",
+      "next": "Bachelor Of Chemical Engineering With Honours"
+    },
+    {
+      "entityType": "program",
+      "entityId": 7358,
+      "code": "UCSI-BACHELOR-046",
+      "name": "Bachelor Of Civil Engineering With Honours",
+      "field": "nameEnOfficial",
+      "sourcePath": "name.en",
+      "previous": "",
+      "next": "Bachelor Of Civil Engineering With Honours"
+    },
+    {
+      "entityType": "program",
+      "entityId": 7359,
+      "code": "UCSI-BACHELOR-047",
+      "name": "Bachelor Of Computer Engineering (Artificial Intelligence) With Honours",
+      "field": "nameEnOfficial",
+      "sourcePath": "name.en",
+      "previous": "",
+      "next": "Bachelor Of Computer Engineering (Artificial Intelligence) With Honours"
+    },
+    {
+      "entityType": "program",
+      "entityId": 7360,
+      "code": "UCSI-BACHELOR-048",
+      "name": "Bachelor Of Digital Mechanical Technology With Honours",
+      "field": "nameEnOfficial",
+      "sourcePath": "name.en",
+      "previous": "",
+      "next": "Bachelor Of Digital Mechanical Technology With Honours"
+    },
+    {
+      "entityType": "program",
+      "entityId": 7361,
+      "code": "UCSI-BACHELOR-049",
+      "name": "Bachelor Of Electrical And Electronics Engineering With Honours",
+      "field": "nameEnOfficial",
+      "sourcePath": "name.en",
+      "previous": "",
+      "next": "Bachelor Of Electrical And Electronics Engineering With Honours"
+    },
+    {
+      "entityType": "program",
+      "entityId": 7362,
+      "code": "UCSI-BACHELOR-050",
+      "name": "Bachelor Of Energy Engineering With Honours",
+      "field": "nameEnOfficial",
+      "sourcePath": "name.en",
+      "previous": "",
+      "next": "Bachelor Of Energy Engineering With Honours"
+    },
+    {
+      "entityType": "program",
+      "entityId": 7363,
+      "code": "UCSI-BACHELOR-051",
+      "name": "Bachelor Of Mechanical Engineering With Honours",
+      "field": "nameEnOfficial",
+      "sourcePath": "name.en",
+      "previous": "",
+      "next": "Bachelor Of Mechanical Engineering With Honours"
+    },
+    {
+      "entityType": "program",
+      "entityId": 7364,
+      "code": "UCSI-BACHELOR-052",
+      "name": "Bachelor Of Mechatronics Engineering With Honours",
+      "field": "nameEnOfficial",
+      "sourcePath": "name.en",
+      "previous": "",
+      "next": "Bachelor Of Mechatronics Engineering With Honours"
+    },
+    {
+      "entityType": "program",
+      "entityId": 7365,
+      "code": "UCSI-BACHELOR-053",
+      "name": "Bachelor Of Microelectronic Technology With Honours",
+      "field": "nameEnOfficial",
+      "sourcePath": "name.en",
+      "previous": "",
+      "next": "Bachelor Of Microelectronic Technology With Honours"
+    },
+    {
+      "entityType": "program",
+      "entityId": 7366,
+      "code": "UCSI-BACHELOR-054",
+      "name": "Bachelor Of Petroleum Engineering With Honours",
+      "field": "nameEnOfficial",
+      "sourcePath": "name.en",
+      "previous": "",
+      "next": "Bachelor Of Petroleum Engineering With Honours"
+    },
+    {
+      "entityType": "program",
+      "entityId": 7367,
+      "code": "UCSI-BACHELOR-055",
+      "name": "Bachelor Of Quantity Surveying (Hons)",
+      "field": "nameEnOfficial",
+      "sourcePath": "name.en",
+      "previous": "",
+      "next": "Bachelor Of Quantity Surveying (Hons)"
+    },
+    {
+      "entityType": "program",
+      "entityId": 7368,
+      "code": "UCSI-BACHELOR-056",
+      "name": "Bachelor Of Science (Hons) In Architecture",
+      "field": "nameEnOfficial",
+      "sourcePath": "name.en",
+      "previous": "",
+      "next": "Bachelor Of Science (Hons) In Architecture"
+    },
+    {
+      "entityType": "program",
+      "entityId": 7374,
+      "code": "UCSI-BACHELOR-062",
+      "name": "Bachelor Of Arts (Honours) In Culinary Management",
+      "field": "nameEnOfficial",
+      "sourcePath": "name.en",
+      "previous": "",
+      "next": "Bachelor Of Arts (Honours) In Culinary Management"
+    },
+    {
+      "entityType": "program",
+      "entityId": 7375,
+      "code": "UCSI-BACHELOR-063",
+      "name": "Bachelor Of Arts (Honours) In Global Sustainable Tourism",
+      "field": "nameEnOfficial",
+      "sourcePath": "name.en",
+      "previous": "",
+      "next": "Bachelor Of Arts (Honours) In Global Sustainable Tourism"
+    },
+    {
+      "entityType": "program",
+      "entityId": 7376,
+      "code": "UCSI-BACHELOR-064",
+      "name": "Bachelor Of Hospitality Administration",
+      "field": "nameEnOfficial",
+      "sourcePath": "name.en",
+      "previous": "",
+      "next": "Bachelor Of Hospitality Administration"
+    },
+    {
+      "entityType": "program",
+      "entityId": 7378,
+      "code": "UCSI-BACHELOR-066",
+      "name": "Bachelor Of Optometry (Hons)",
+      "field": "nameEnOfficial",
+      "sourcePath": "name.en",
+      "previous": "",
+      "next": "Bachelor Of Optometry (Hons)"
+    },
+    {
+      "entityType": "program",
+      "entityId": 7384,
+      "code": "UCSI-BACHELOR-072",
+      "name": "Bachelor In Formulation Science (Honours)",
+      "field": "nameEnOfficial",
+      "sourcePath": "name.en",
+      "previous": "",
+      "next": "Bachelor In Formulation Science (Honours)"
+    },
+    {
+      "entityType": "program",
+      "entityId": 7385,
+      "code": "UCSI-BACHELOR-073",
+      "name": "Bachelor Of Pharmacy (Honours)",
+      "field": "nameEnOfficial",
+      "sourcePath": "name.en",
+      "previous": "",
+      "next": "Bachelor Of Pharmacy (Honours)"
+    },
+    {
+      "entityType": "program",
+      "entityId": 7392,
+      "code": "UCSI-BACHELOR-080",
+      "name": "Bachelor Of Early Childhood Education (Honours)",
+      "field": "nameEnOfficial",
+      "sourcePath": "name.en",
+      "previous": "",
+      "next": "Bachelor Of Early Childhood Education (Honours)"
+    },
+    {
+      "entityType": "program",
+      "entityId": 7393,
+      "code": "UCSI-BACHELOR-081",
+      "name": "Bachelor Of Digital Media Production And Broadcasting (Honours)",
+      "field": "nameEnOfficial",
+      "sourcePath": "name.en",
+      "previous": "",
+      "next": "Bachelor Of Digital Media Production And Broadcasting (Honours)"
+    },
+    {
+      "entityType": "program",
+      "entityId": 7400,
+      "code": "UCSI-BACHELOR-088",
+      "name": "Bachelor Of Science (Honours) Actuarial Science",
+      "field": "nameEnOfficial",
+      "sourcePath": "name.en",
+      "previous": "",
+      "next": "Bachelor Of Science (Honours) Actuarial Science"
+    },
+    {
+      "entityType": "program",
+      "entityId": 7401,
+      "code": "UCSI-BACHELOR-089",
+      "name": "Bachelor Of Science (Honours) Actuarial Science And Finance",
+      "field": "nameEnOfficial",
+      "sourcePath": "name.en",
+      "previous": "",
+      "next": "Bachelor Of Science (Honours) Actuarial Science And Finance"
+    },
+    {
+      "entityType": "program",
+      "entityId": 7402,
+      "code": "UCSI-BACHELOR-090",
+      "name": "Bachelor Of Science (Honours) Actuarial Science With Data Analytics",
+      "field": "nameEnOfficial",
+      "sourcePath": "name.en",
+      "previous": "",
+      "next": "Bachelor Of Science (Honours) Actuarial Science With Data Analytics"
+    },
+    {
+      "entityType": "program",
+      "entityId": 7407,
+      "code": "UCSI-BACHELOR-095",
+      "name": "Bachelor Of Computer Science (Honours)",
+      "field": "nameEnOfficial",
+      "sourcePath": "name.en",
+      "previous": "",
+      "next": "Bachelor Of Computer Science (Honours)"
+    },
+    {
+      "entityType": "program",
+      "entityId": 7408,
+      "code": "UCSI-BACHELOR-096",
+      "name": "Bachelor Of Computer Science In Artificial Intelligence With Honours",
+      "field": "nameEnOfficial",
+      "sourcePath": "name.en",
+      "previous": "",
+      "next": "Bachelor Of Computer Science In Artificial Intelligence With Honours"
+    },
+    {
+      "entityType": "program",
+      "entityId": 7409,
+      "code": "UCSI-BACHELOR-097",
+      "name": "Bachelor Of Computer Science In Cyber Security With Honours",
+      "field": "nameEnOfficial",
+      "sourcePath": "name.en",
+      "previous": "",
+      "next": "Bachelor Of Computer Science In Cyber Security With Honours"
+    },
+    {
+      "entityType": "program",
+      "entityId": 7410,
+      "code": "UCSI-BACHELOR-098",
+      "name": "Bachelor Of Computer Science (Hons) Mobile Computing And Networking",
+      "field": "nameEnOfficial",
+      "sourcePath": "name.en",
+      "previous": "",
+      "next": "Bachelor Of Computer Science (Hons) Mobile Computing And Networking"
+    },
+    {
+      "entityType": "program",
+      "entityId": 7411,
+      "code": "UCSI-BACHELOR-099",
+      "name": "Bachelor Of Computer Science In Data Science With Honours",
+      "field": "nameEnOfficial",
+      "sourcePath": "name.en",
+      "previous": "",
+      "next": "Bachelor Of Computer Science In Data Science With Honours"
+    },
+    {
+      "entityType": "program",
+      "entityId": 7412,
+      "code": "UCSI-BACHELOR-100",
+      "name": "Bachelor Of Science In Business Information Systems (Honours)",
+      "field": "nameEnOfficial",
+      "sourcePath": "name.en",
+      "previous": "",
+      "next": "Bachelor Of Science In Business Information Systems (Honours)"
+    },
+    {
+      "entityType": "program",
+      "entityId": 7416,
+      "code": "UCSI-BACHELOR-104",
+      "name": "Bachelor Of Classical Music (Hons.)",
+      "field": "nameEnOfficial",
+      "sourcePath": "name.en",
+      "previous": "",
+      "next": "Bachelor Of Classical Music (Hons.)"
+    },
+    {
+      "entityType": "program",
+      "entityId": 7417,
+      "code": "UCSI-BACHELOR-105",
+      "name": "Bachelor Of Contemporary Music (Hons.)",
+      "field": "nameEnOfficial",
+      "sourcePath": "name.en",
+      "previous": "",
+      "next": "Bachelor Of Contemporary Music (Hons.)"
+    },
+    {
+      "entityType": "program",
+      "entityId": 7422,
+      "code": "UCSI-BACHELOR-110",
+      "name": "Bachelor In Business Management (Honours)",
+      "field": "nameEnOfficial",
+      "sourcePath": "name.en",
+      "previous": "",
+      "next": "Bachelor In Business Management (Honours)"
+    },
+    {
+      "entityType": "program",
+      "entityId": 7423,
+      "code": "UCSI-BACHELOR-111",
+      "name": "Bachelor In International Business (Honours)",
+      "field": "nameEnOfficial",
+      "sourcePath": "name.en",
+      "previous": "",
+      "next": "Bachelor In International Business (Honours)"
+    },
+    {
+      "entityType": "program",
+      "entityId": 7424,
+      "code": "UCSI-BACHELOR-112",
+      "name": "Bachelor Of Commerce (Hons) In Accounting And Finance",
+      "field": "nameEnOfficial",
+      "sourcePath": "name.en",
+      "previous": "",
+      "next": "Bachelor Of Commerce (Hons) In Accounting And Finance"
+    },
+    {
+      "entityType": "program",
+      "entityId": 7425,
+      "code": "UCSI-BACHELOR-113",
+      "name": "Bachelor Of Commerce (Hons) In Marketing",
+      "field": "nameEnOfficial",
+      "sourcePath": "name.en",
+      "previous": "",
+      "next": "Bachelor Of Commerce (Hons) In Marketing"
+    },
+    {
+      "entityType": "program",
+      "entityId": 7426,
+      "code": "UCSI-BACHELOR-114",
+      "name": "Bachelor Of Arts (Honours) In Culinary Management",
+      "field": "nameEnOfficial",
+      "sourcePath": "name.en",
+      "previous": "",
+      "next": "Bachelor Of Arts (Honours) In Culinary Management"
+    },
+    {
+      "entityType": "program",
+      "entityId": 7428,
+      "code": "UCSI-BACHELOR-116",
+      "name": "Doctor Of Medicine (MD)",
+      "field": "nameEnOfficial",
+      "sourcePath": "name.en",
+      "previous": "",
+      "next": "Doctor Of Medicine (MD)"
+    },
+    {
+      "entityType": "program",
+      "entityId": 7429,
+      "code": "UCSI-BACHELOR-117",
+      "name": "Bachelor Of Nursing (Hons)",
+      "field": "nameEnOfficial",
+      "sourcePath": "name.en",
+      "previous": "",
+      "next": "Bachelor Of Nursing (Hons)"
+    },
+    {
+      "entityType": "program",
+      "entityId": 7430,
+      "code": "UCSI-BACHELOR-118",
+      "name": "Bachelor Of Arts (Honours) In Hospitality Management",
+      "field": "nameEnOfficial",
+      "sourcePath": "name.en",
+      "previous": "",
+      "next": "Bachelor Of Arts (Honours) In Hospitality Management"
+    },
+    {
+      "entityType": "program",
+      "entityId": 7315,
+      "code": "UCSI-MASTER-003",
+      "name": "MBA",
+      "field": "nameEnOfficial",
+      "sourcePath": "name.en",
+      "previous": "",
+      "next": "MBA"
+    },
+    {
+      "entityType": "program",
+      "entityId": 7316,
+      "code": "UCSI-MASTER-004",
+      "name": "MBA (ODL Mode)",
+      "field": "nameEnOfficial",
+      "sourcePath": "name.en",
+      "previous": "",
+      "next": "MBA (ODL Mode)"
+    },
+    {
+      "entityType": "program",
+      "entityId": 7317,
+      "code": "UCSI-MASTER-005",
+      "name": "Master Of Philosophy (Business And Management)",
+      "field": "nameEnOfficial",
+      "sourcePath": "name.en",
+      "previous": "",
+      "next": "Master Of Philosophy (Business And Management)"
+    },
+    {
+      "entityType": "program",
+      "entityId": 7318,
+      "code": "UCSI-MASTER-006",
+      "name": "MBA (Healthcare And Hospital Management)",
+      "field": "nameEnOfficial",
+      "sourcePath": "name.en",
+      "previous": "",
+      "next": "MBA (Healthcare And Hospital Management)"
+    },
+    {
+      "entityType": "program",
+      "entityId": 7320,
+      "code": "UCSI-MASTER-008",
+      "name": "Master Of Science In Applied Sciences",
+      "field": "nameEnOfficial",
+      "sourcePath": "name.en",
+      "previous": "",
+      "next": "Master Of Science In Applied Sciences"
+    },
+    {
+      "entityType": "program",
+      "entityId": 7321,
+      "code": "UCSI-MASTER-009",
+      "name": "Master Of Science Biotechnology",
+      "field": "nameEnOfficial",
+      "sourcePath": "name.en",
+      "previous": "",
+      "next": "Master Of Science Biotechnology"
+    },
+    {
+      "entityType": "program",
+      "entityId": 7322,
+      "code": "UCSI-MASTER-010",
+      "name": "Master Of Science In Biotechnology With Business Management",
+      "field": "nameEnOfficial",
+      "sourcePath": "name.en",
+      "previous": "",
+      "next": "Master Of Science In Biotechnology With Business Management"
+    },
+    {
+      "entityType": "program",
+      "entityId": 7323,
+      "code": "UCSI-MASTER-011",
+      "name": "Master Of Science Food Science With Business Management",
+      "field": "nameEnOfficial",
+      "sourcePath": "name.en",
+      "previous": "",
+      "next": "Master Of Science Food Science With Business Management"
+    },
+    {
+      "entityType": "program",
+      "entityId": 7324,
+      "code": "UCSI-MASTER-012",
+      "name": "Master Of Science In Nutrition With Management",
+      "field": "nameEnOfficial",
+      "sourcePath": "name.en",
+      "previous": "",
+      "next": "Master Of Science In Nutrition With Management"
+    },
+    {
+      "entityType": "program",
+      "entityId": 7332,
+      "code": "UCSI-MASTER-020",
+      "name": "Master In Logistics And Supply Chain Management",
+      "field": "nameEnOfficial",
+      "sourcePath": "name.en",
+      "previous": "",
+      "next": "Master In Logistics And Supply Chain Management"
+    },
+    {
+      "entityType": "program",
+      "entityId": 7351,
+      "code": "UCSI-MASTER-039",
+      "name": "Master In Engineering (Smart Engineering Management)",
+      "field": "nameEnOfficial",
+      "sourcePath": "name.en",
+      "previous": "",
+      "next": "Master In Engineering (Smart Engineering Management)"
+    },
+    {
+      "entityType": "program",
+      "entityId": 7352,
+      "code": "UCSI-MASTER-040",
+      "name": "Master Of Architecture",
+      "field": "nameEnOfficial",
+      "sourcePath": "name.en",
+      "previous": "",
+      "next": "Master Of Architecture"
+    },
+    {
+      "entityType": "program",
+      "entityId": 7353,
+      "code": "UCSI-MASTER-041",
+      "name": "Master Of Petroleum Engineering",
+      "field": "nameEnOfficial",
+      "sourcePath": "name.en",
+      "previous": "",
+      "next": "Master Of Petroleum Engineering"
+    },
+    {
+      "entityType": "program",
+      "entityId": 7354,
+      "code": "UCSI-MASTER-042",
+      "name": "Master Of Philosophy In Built Environment",
+      "field": "nameEnOfficial",
+      "sourcePath": "name.en",
+      "previous": "",
+      "next": "Master Of Philosophy In Built Environment"
+    },
+    {
+      "entityType": "program",
+      "entityId": 7355,
+      "code": "UCSI-MASTER-043",
+      "name": "Master Of Philosophy In Engineering",
+      "field": "nameEnOfficial",
+      "sourcePath": "name.en",
+      "previous": "",
+      "next": "Master Of Philosophy In Engineering"
+    },
+    {
+      "entityType": "program",
+      "entityId": 7369,
+      "code": "UCSI-MASTER-057",
+      "name": "Master Of Sustainable Built Environment",
+      "field": "nameEnOfficial",
+      "sourcePath": "name.en",
+      "previous": "",
+      "next": "Master Of Sustainable Built Environment"
+    },
+    {
+      "entityType": "program",
+      "entityId": 7370,
+      "code": "UCSI-MASTER-058",
+      "name": "Master In Engineering (Applied Artificial Intelligence)",
+      "field": "nameEnOfficial",
+      "sourcePath": "name.en",
+      "previous": "",
+      "next": "Master In Engineering (Applied Artificial Intelligence)"
+    },
+    {
+      "entityType": "program",
+      "entityId": 7372,
+      "code": "UCSI-MASTER-060",
+      "name": "Master In International Hospitality Management",
+      "field": "nameEnOfficial",
+      "sourcePath": "name.en",
+      "previous": "",
+      "next": "Master In International Hospitality Management"
+    },
+    {
+      "entityType": "program",
+      "entityId": 7373,
+      "code": "UCSI-MASTER-061",
+      "name": "Master Of Science In Gastronomy",
+      "field": "nameEnOfficial",
+      "sourcePath": "name.en",
+      "previous": "",
+      "next": "Master Of Science In Gastronomy"
+    },
+    {
+      "entityType": "program",
+      "entityId": 7377,
+      "code": "UCSI-MASTER-065",
+      "name": "MSc (Healthy Aging, Medical Aesthetic And Regenerative Medicine)",
+      "field": "nameEnOfficial",
+      "sourcePath": "name.en",
+      "previous": "",
+      "next": "MSc (Healthy Aging, Medical Aesthetic And Regenerative Medicine)"
+    },
+    {
+      "entityType": "program",
+      "entityId": 7380,
+      "code": "UCSI-MASTER-068",
+      "name": "Master Of Clinical Pharmacy Practice",
+      "field": "nameEnOfficial",
+      "sourcePath": "name.en",
+      "previous": "",
+      "next": "Master Of Clinical Pharmacy Practice"
+    },
+    {
+      "entityType": "program",
+      "entityId": 7381,
+      "code": "UCSI-MASTER-069",
+      "name": "Master Of Science (Pharmaceutical Sciences)",
+      "field": "nameEnOfficial",
+      "sourcePath": "name.en",
+      "previous": "",
+      "next": "Master Of Science (Pharmaceutical Sciences)"
+    },
+    {
+      "entityType": "program",
+      "entityId": 7382,
+      "code": "UCSI-MASTER-070",
+      "name": "MSc Pharmaceutical Chemistry",
+      "field": "nameEnOfficial",
+      "sourcePath": "name.en",
+      "previous": "",
+      "next": "MSc Pharmaceutical Chemistry"
+    },
+    {
+      "entityType": "program",
+      "entityId": 7383,
+      "code": "UCSI-MASTER-071",
+      "name": "MSc Pharmaceutical Technology",
+      "field": "nameEnOfficial",
+      "sourcePath": "name.en",
+      "previous": "",
+      "next": "MSc Pharmaceutical Technology"
+    },
+    {
+      "entityType": "program",
+      "entityId": 7388,
+      "code": "UCSI-MASTER-076",
+      "name": "Master Of Child Psychology",
+      "field": "nameEnOfficial",
+      "sourcePath": "name.en",
+      "previous": "",
+      "next": "Master Of Child Psychology"
+    },
+    {
+      "entityType": "program",
+      "entityId": 7389,
+      "code": "UCSI-MASTER-077",
+      "name": "Master Of Clinical Psychology",
+      "field": "nameEnOfficial",
+      "sourcePath": "name.en",
+      "previous": "",
+      "next": "Master Of Clinical Psychology"
+    },
+    {
+      "entityType": "program",
+      "entityId": 7390,
+      "code": "UCSI-MASTER-078",
+      "name": "Master Of Education",
+      "field": "nameEnOfficial",
+      "sourcePath": "name.en",
+      "previous": "",
+      "next": "Master Of Education"
+    },
+    {
+      "entityType": "program",
+      "entityId": 7391,
+      "code": "UCSI-MASTER-079",
+      "name": "Master In Strategic Communication",
+      "field": "nameEnOfficial",
+      "sourcePath": "name.en",
+      "previous": "",
+      "next": "Master In Strategic Communication"
+    },
+    {
+      "entityType": "program",
+      "entityId": 7395,
+      "code": "UCSI-MASTER-083",
+      "name": "Master Of Arts And Design",
+      "field": "nameEnOfficial",
+      "sourcePath": "name.en",
+      "previous": "",
+      "next": "Master Of Arts And Design"
+    },
+    {
+      "entityType": "program",
+      "entityId": 7396,
+      "code": "UCSI-MASTER-084",
+      "name": "Master Of Art, Design And Creative Media",
+      "field": "nameEnOfficial",
+      "sourcePath": "name.en",
+      "previous": "",
+      "next": "Master Of Art, Design And Creative Media"
+    },
+    {
+      "entityType": "program",
+      "entityId": 7398,
+      "code": "UCSI-MASTER-086",
+      "name": "Master Of Science (Actuarial Management) - (Mixed Mode Or Coursework)",
+      "field": "nameEnOfficial",
+      "sourcePath": "name.en",
+      "previous": "",
+      "next": "Master Of Science (Actuarial Management) - (Mixed Mode Or Coursework)"
+    },
+    {
+      "entityType": "program",
+      "entityId": 7399,
+      "code": "UCSI-MASTER-087",
+      "name": "Master Of Science In Mathematical Sciences",
+      "field": "nameEnOfficial",
+      "sourcePath": "name.en",
+      "previous": "",
+      "next": "Master Of Science In Mathematical Sciences"
+    },
+    {
+      "entityType": "program",
+      "entityId": 7404,
+      "code": "UCSI-MASTER-092",
+      "name": "Master Of Science In Computer Science",
+      "field": "nameEnOfficial",
+      "sourcePath": "name.en",
+      "previous": "",
+      "next": "Master Of Science In Computer Science"
+    },
+    {
+      "entityType": "program",
+      "entityId": 7405,
+      "code": "UCSI-MASTER-093",
+      "name": "Master Of Science In Digital Technology And Analytics",
+      "field": "nameEnOfficial",
+      "sourcePath": "name.en",
+      "previous": "",
+      "next": "Master Of Science In Digital Technology And Analytics"
+    },
+    {
+      "entityType": "program",
+      "entityId": 7406,
+      "code": "UCSI-MASTER-094",
+      "name": "MSc In Technopreneurship",
+      "field": "nameEnOfficial",
+      "sourcePath": "name.en",
+      "previous": "",
+      "next": "MSc In Technopreneurship"
+    },
+    {
+      "entityType": "program",
+      "entityId": 7415,
+      "code": "UCSI-MASTER-103",
+      "name": "Master Of Music (Performance Studies)",
+      "field": "nameEnOfficial",
+      "sourcePath": "name.en",
+      "previous": "",
+      "next": "Master Of Music (Performance Studies)"
+    },
+    {
+      "entityType": "program",
+      "entityId": 7418,
+      "code": "UCSI-MASTER-106",
+      "name": "Master Of Science Policy And Communication",
+      "field": "nameEnOfficial",
+      "sourcePath": "name.en",
+      "previous": "",
+      "next": "Master Of Science Policy And Communication"
+    },
+    {
+      "entityType": "program",
+      "entityId": 7419,
+      "code": "UCSI-MASTER-107",
+      "name": "Master In Science Diplomacy",
+      "field": "nameEnOfficial",
+      "sourcePath": "name.en",
+      "previous": "",
+      "next": "Master In Science Diplomacy"
+    },
+    {
+      "entityType": "program",
+      "entityId": 7420,
+      "code": "UCSI-MASTER-108",
+      "name": "Master In Environmental, Social And Governance Leadership",
+      "field": "nameEnOfficial",
+      "sourcePath": "name.en",
+      "previous": "",
+      "next": "Master In Environmental, Social And Governance Leadership"
+    },
+    {
+      "entityType": "program",
+      "entityId": 7421,
+      "code": "UCSI-MASTER-109",
+      "name": "Master Of Business Administration (Blue Ocean Strategy)",
+      "field": "nameEnOfficial",
+      "sourcePath": "name.en",
+      "previous": "",
+      "next": "Master Of Business Administration (Blue Ocean Strategy)"
+    },
+    {
+      "entityType": "program",
+      "entityId": 7313,
+      "code": "UCSI-PHD-001",
+      "name": "Doctor Of Philosophy (Business And Management)",
+      "field": "nameEnOfficial",
+      "sourcePath": "name.en",
+      "previous": "",
+      "next": "Doctor Of Philosophy (Business And Management)"
+    },
+    {
+      "entityType": "program",
+      "entityId": 7314,
+      "code": "UCSI-PHD-002",
+      "name": "DBA (Doctor Of Business Administration)",
+      "field": "nameEnOfficial",
+      "sourcePath": "name.en",
+      "previous": "",
+      "next": "DBA (Doctor Of Business Administration)"
+    },
+    {
+      "entityType": "program",
+      "entityId": 7319,
+      "code": "UCSI-PHD-007",
+      "name": "Doctor Of Philosophy (Science)",
+      "field": "nameEnOfficial",
+      "sourcePath": "name.en",
+      "previous": "",
+      "next": "Doctor Of Philosophy (Science)"
+    },
+    {
+      "entityType": "program",
+      "entityId": 7331,
+      "code": "UCSI-PHD-019",
+      "name": "Doctor Of Philosophy (Science) By Prior Publication",
+      "field": "nameEnOfficial",
+      "sourcePath": "name.en",
+      "previous": "",
+      "next": "Doctor Of Philosophy (Science) By Prior Publication"
+    },
+    {
+      "entityType": "program",
+      "entityId": 7347,
+      "code": "UCSI-PHD-035",
+      "name": "Doctor Of Philosophy In Architecture",
+      "field": "nameEnOfficial",
+      "sourcePath": "name.en",
+      "previous": "",
+      "next": "Doctor Of Philosophy In Architecture"
+    },
+    {
+      "entityType": "program",
+      "entityId": 7348,
+      "code": "UCSI-PHD-036",
+      "name": "Doctor Of Philosophy (Engineering)",
+      "field": "nameEnOfficial",
+      "sourcePath": "name.en",
+      "previous": "",
+      "next": "Doctor Of Philosophy (Engineering)"
+    },
+    {
+      "entityType": "program",
+      "entityId": 7349,
+      "code": "UCSI-PHD-037",
+      "name": "Doctor Of Philosophy (Engineering) By Prior Publication",
+      "field": "nameEnOfficial",
+      "sourcePath": "name.en",
+      "previous": "",
+      "next": "Doctor Of Philosophy (Engineering) By Prior Publication"
+    },
+    {
+      "entityType": "program",
+      "entityId": 7350,
+      "code": "UCSI-PHD-038",
+      "name": "Industrial PhD In Engineering",
+      "field": "nameEnOfficial",
+      "sourcePath": "name.en",
+      "previous": "",
+      "next": "Industrial PhD In Engineering"
+    },
+    {
+      "entityType": "program",
+      "entityId": 7371,
+      "code": "UCSI-PHD-059",
+      "name": "Doctor Of Philosophy (Hospitality And Tourism)",
+      "field": "nameEnOfficial",
+      "sourcePath": "name.en",
+      "previous": "",
+      "next": "Doctor Of Philosophy (Hospitality And Tourism)"
+    },
+    {
+      "entityType": "program",
+      "entityId": 7379,
+      "code": "UCSI-PHD-067",
+      "name": "Doctor Of Philosophy (Pharmaceutical Sciences)",
+      "field": "nameEnOfficial",
+      "sourcePath": "name.en",
+      "previous": "",
+      "next": "Doctor Of Philosophy (Pharmaceutical Sciences)"
+    },
+    {
+      "entityType": "program",
+      "entityId": 7386,
+      "code": "UCSI-PHD-074",
+      "name": "Doctor Of Philosophy (Education)",
+      "field": "nameEnOfficial",
+      "sourcePath": "name.en",
+      "previous": "",
+      "next": "Doctor Of Philosophy (Education)"
+    },
+    {
+      "entityType": "program",
+      "entityId": 7387,
+      "code": "UCSI-PHD-075",
+      "name": "Doctor Of Philosophy In Psychology",
+      "field": "nameEnOfficial",
+      "sourcePath": "name.en",
+      "previous": "",
+      "next": "Doctor Of Philosophy In Psychology"
+    },
+    {
+      "entityType": "program",
+      "entityId": 7394,
+      "code": "UCSI-PHD-082",
+      "name": "Doctor Of Philosophy In Art, Design And Creative Media",
+      "field": "nameEnOfficial",
+      "sourcePath": "name.en",
+      "previous": "",
+      "next": "Doctor Of Philosophy In Art, Design And Creative Media"
+    },
+    {
+      "entityType": "program",
+      "entityId": 7397,
+      "code": "UCSI-PHD-085",
+      "name": "Doctor Of Philosophy In Mathematical Sciences",
+      "field": "nameEnOfficial",
+      "sourcePath": "name.en",
+      "previous": "",
+      "next": "Doctor Of Philosophy In Mathematical Sciences"
+    },
+    {
+      "entityType": "program",
+      "entityId": 7403,
+      "code": "UCSI-PHD-091",
+      "name": "Doctor Of Philosophy In Computer Science",
+      "field": "nameEnOfficial",
+      "sourcePath": "name.en",
+      "previous": "",
+      "next": "Doctor Of Philosophy In Computer Science"
+    },
+    {
+      "entityType": "program",
+      "entityId": 7413,
+      "code": "UCSI-PHD-101",
+      "name": "Doctor Of Philosophy In Music Performance",
+      "field": "nameEnOfficial",
+      "sourcePath": "name.en",
+      "previous": "",
+      "next": "Doctor Of Philosophy In Music Performance"
+    },
+    {
+      "entityType": "program",
+      "entityId": 7414,
+      "code": "UCSI-PHD-102",
+      "name": "Doctor Of Philosophy In Music",
+      "field": "nameEnOfficial",
+      "sourcePath": "name.en",
+      "previous": "",
+      "next": "Doctor Of Philosophy In Music"
+    },
+    {
+      "entityType": "program",
+      "entityId": 7427,
+      "code": "UCSI-PHD-115",
+      "name": "Doctor Of Philosophy (Medical Sciences)",
+      "field": "nameEnOfficial",
+      "sourcePath": "name.en",
+      "previous": "",
+      "next": "Doctor Of Philosophy (Medical Sciences)"
+    },
+    {
+      "entityType": "program",
+      "entityId": 6375,
+      "code": "USM-D-ARTICLE-1474-13A979E2",
+      "name": "航空航天工程学院哲学博士（离岸项目）",
+      "field": "tuitionDisplay",
+      "sourcePath": "listTuitionText",
+      "previous": "",
+      "next": "Official fee not published"
+    },
+    {
+      "entityType": "program",
+      "entityId": 6373,
+      "code": "USM-D-ARTICLE-1475-DFD9E09D",
+      "name": "分子医学研究所哲学博士（离岸项目）",
+      "field": "tuitionDisplay",
+      "sourcePath": "listTuitionText",
+      "previous": "",
+      "next": "Official fee not published"
+    },
+    {
+      "entityType": "program",
+      "entityId": 6374,
+      "code": "USM-D-ARTICLE-1476-EDCE896B",
+      "name": "敦阿都拉·阿末·巴达维癌症中心哲学博士（离岸项目）",
+      "field": "tuitionDisplay",
+      "sourcePath": "listTuitionText",
+      "previous": "",
+      "next": "Official fee not published"
+    },
+    {
+      "entityType": "program",
+      "entityId": 6396,
+      "code": "USM-D-ARTICLE-1479-0BF3C6B6",
+      "name": "生物科学学院哲学博士（离岸项目）",
+      "field": "tuitionDisplay",
+      "sourcePath": "listTuitionText",
+      "previous": "",
+      "next": "Official fee not published"
+    },
+    {
+      "entityType": "program",
+      "entityId": 6376,
+      "code": "USM-D-ARTICLE-1482-71AFD600",
+      "name": "化学科学学院哲学博士（离岸项目）",
+      "field": "tuitionDisplay",
+      "sourcePath": "listTuitionText",
+      "previous": "",
+      "next": "Official fee not published"
+    },
+    {
+      "entityType": "program",
+      "entityId": 6387,
+      "code": "USM-D-ARTICLE-1486-350D1D27",
+      "name": "社会科学学院哲学博士（离岸项目）",
+      "field": "tuitionDisplay",
+      "sourcePath": "listTuitionText",
+      "previous": "",
+      "next": "Official fee not published"
+    },
+    {
+      "entityType": "program",
+      "entityId": 6386,
+      "code": "USM-D-ARTICLE-1487-68D66E5A",
+      "name": "药学学院哲学博士（离岸项目）",
+      "field": "tuitionDisplay",
+      "sourcePath": "listTuitionText",
+      "previous": "",
+      "next": "Official fee not published"
+    },
+    {
+      "entityType": "program",
+      "entityId": 6385,
+      "code": "USM-D-ARTICLE-1490-21A1FFAC",
+      "name": "机械工程学院哲学博士（离岸项目）",
+      "field": "tuitionDisplay",
+      "sourcePath": "listTuitionText",
+      "previous": "",
+      "next": "Official fee not published"
+    },
+    {
+      "entityType": "program",
+      "entityId": 6384,
+      "code": "USM-D-ARTICLE-1491-B0781791",
+      "name": "数学科学学院哲学博士（离岸项目）",
+      "field": "tuitionDisplay",
+      "sourcePath": "listTuitionText",
+      "previous": "",
+      "next": "Official fee not published"
+    },
+    {
+      "entityType": "program",
+      "entityId": 6383,
+      "code": "USM-D-ARTICLE-1492-B74C2ACF",
+      "name": "管理学院哲学博士（离岸项目）",
+      "field": "tuitionDisplay",
+      "sourcePath": "listTuitionText",
+      "previous": "",
+      "next": "Official fee not published"
+    },
+    {
+      "entityType": "program",
+      "entityId": 6388,
+      "code": "USM-D-ARTICLE-1493-9DF5CFA5",
+      "name": "管理学院哲学博士（离岸项目）",
+      "field": "tuitionDisplay",
+      "sourcePath": "listTuitionText",
+      "previous": "",
+      "next": "Official fee not published"
+    },
+    {
+      "entityType": "program",
+      "entityId": 6390,
+      "code": "USM-D-ARTICLE-1494-9A5B9F7D",
+      "name": "管理学院哲学博士（离岸项目）",
+      "field": "tuitionDisplay",
+      "sourcePath": "listTuitionText",
+      "previous": "",
+      "next": "Official fee not published"
+    },
+    {
+      "entityType": "program",
+      "entityId": 6377,
+      "code": "USM-D-ARTICLE-1501-AA166411",
+      "name": "土木工程学院哲学博士（离岸项目）",
+      "field": "tuitionDisplay",
+      "sourcePath": "listTuitionText",
+      "previous": "",
+      "next": "Official fee not published"
+    },
+    {
+      "entityType": "program",
+      "entityId": 6380,
+      "code": "USM-D-ARTICLE-1503-7E2AA05C",
+      "name": "电气与电子工程学院哲学博士（离岸项目）",
+      "field": "tuitionDisplay",
+      "sourcePath": "listTuitionText",
+      "previous": "",
+      "next": "Official fee not published"
+    },
+    {
+      "entityType": "program",
+      "entityId": 6378,
+      "code": "USM-D-ARTICLE-1506-E0F6CDF0",
+      "name": "牙科科学学院哲学博士（离岸项目）",
+      "field": "tuitionDisplay",
+      "sourcePath": "listTuitionText",
+      "previous": "",
+      "next": "Official fee not published"
+    },
+    {
+      "entityType": "program",
+      "entityId": 6379,
+      "code": "USM-D-ARTICLE-1508-17AAC296",
+      "name": "远程教育学院哲学博士（离岸项目）",
+      "field": "tuitionDisplay",
+      "sourcePath": "listTuitionText",
+      "previous": "",
+      "next": "Official fee not published"
+    },
+    {
+      "entityType": "program",
+      "entityId": 6381,
+      "code": "USM-D-ARTICLE-1515-A74EBF7B",
+      "name": "人文学院哲学博士（离岸项目）",
+      "field": "tuitionDisplay",
+      "sourcePath": "listTuitionText",
+      "previous": "",
+      "next": "Official fee not published"
+    },
+    {
+      "entityType": "program",
+      "entityId": 6389,
+      "code": "USM-D-ARTICLE-1516-5FCB065D",
+      "name": "人文学院哲学博士（离岸项目）",
+      "field": "tuitionDisplay",
+      "sourcePath": "listTuitionText",
+      "previous": "",
+      "next": "Official fee not published"
+    },
+    {
+      "entityType": "program",
+      "entityId": 6391,
+      "code": "USM-D-ARTICLE-1517-D53FD044",
+      "name": "人文学院哲学博士（离岸项目）",
+      "field": "tuitionDisplay",
+      "sourcePath": "listTuitionText",
+      "previous": "",
+      "next": "Official fee not published"
+    },
+    {
+      "entityType": "program",
+      "entityId": 6382,
+      "code": "USM-D-ARTICLE-1519-B908433A",
+      "name": "语言、读写与翻译学院哲学博士（离岸项目）",
+      "field": "tuitionDisplay",
+      "sourcePath": "listTuitionText",
+      "previous": "",
+      "next": "Official fee not published"
+    },
+    {
+      "entityType": "program",
+      "entityId": 6192,
+      "code": "USM-M-ARTICLE-107-D6CFA2CC",
+      "name": "数学理学硕士（离岸项目）",
+      "field": "tuitionDisplay",
+      "sourcePath": "listTuitionText",
+      "previous": "",
+      "next": "Official fee not published"
+    },
+    {
+      "entityType": "program",
+      "entityId": 6210,
+      "code": "USM-M-ARTICLE-112-A646627B",
+      "name": "统计学理学硕士（离岸项目）",
+      "field": "tuitionDisplay",
+      "sourcePath": "listTuitionText",
+      "previous": "",
+      "next": "Official fee not published"
+    },
+    {
+      "entityType": "program",
+      "entityId": 6212,
+      "code": "USM-M-ARTICLE-1426-F341B171",
+      "name": "数学科学学院理学硕士（USM@KL）",
+      "field": "tuitionDisplay",
+      "sourcePath": "listTuitionText",
+      "previous": "",
+      "next": "Official fee not published"
+    },
+    {
+      "entityType": "program",
+      "entityId": 6160,
+      "code": "USM-M-ARTICLE-1473-F1A247B3",
+      "name": "航空航天工程理学硕士（离岸项目）",
+      "field": "tuitionDisplay",
+      "sourcePath": "listTuitionText",
+      "previous": "",
+      "next": "Official fee not published"
+    },
+    {
+      "entityType": "program",
+      "entityId": 6176,
+      "code": "USM-M-ARTICLE-1477-0C5C1946",
+      "name": "临床运动科学理学硕士（离岸项目）",
+      "field": "tuitionDisplay",
+      "sourcePath": "listTuitionText",
+      "previous": "",
+      "next": "Official fee not published"
+    },
+    {
+      "entityType": "program",
+      "entityId": 6001,
+      "code": "USM-M-ARTICLE-1478-65126CE8",
+      "name": "设计 IN 创意产业硕士（离岸项目）",
+      "field": "tuitionDisplay",
+      "sourcePath": "listTuitionText",
+      "previous": "",
+      "next": "Official fee not published"
+    },
+    {
+      "entityType": "program",
+      "entityId": 6067,
+      "code": "USM-M-ARTICLE-1480-6E88FF27",
+      "name": "生物科学学院理学硕士（离岸项目）",
+      "field": "tuitionDisplay",
+      "sourcePath": "listTuitionText",
+      "previous": "",
+      "next": "Official fee not published"
+    },
+    {
+      "entityType": "program",
+      "entityId": 6118,
+      "code": "USM-M-ARTICLE-1481-61E18A9C",
+      "name": "生物科学学院理学硕士（离岸项目）",
+      "field": "tuitionDisplay",
+      "sourcePath": "listTuitionText",
+      "previous": "",
+      "next": "Official fee not published"
+    },
+    {
+      "entityType": "program",
+      "entityId": 6174,
+      "code": "USM-M-ARTICLE-1484-EFA1B5D2",
+      "name": "化学理学硕士（离岸项目）",
+      "field": "tuitionDisplay",
+      "sourcePath": "listTuitionText",
+      "previous": "",
+      "next": "Official fee not published"
+    },
+    {
+      "entityType": "program",
+      "entityId": 6134,
+      "code": "USM-M-ARTICLE-1485-0F791FC9",
+      "name": "理学硕士（离岸项目）",
+      "field": "tuitionDisplay",
+      "sourcePath": "listTuitionText",
+      "previous": "",
+      "next": "Official fee not published"
+    },
+    {
+      "entityType": "program",
+      "entityId": 6073,
+      "code": "USM-M-ARTICLE-1488-CA798095",
+      "name": "临床解剖学理学硕士（离岸项目）",
+      "field": "tuitionDisplay",
+      "sourcePath": "listTuitionText",
+      "previous": "",
+      "next": "Official fee not published"
+    },
+    {
+      "entityType": "program",
+      "entityId": 6100,
+      "code": "USM-M-ARTICLE-1489-DF2451AF",
+      "name": "机械工程理学硕士（离岸项目）",
+      "field": "tuitionDisplay",
+      "sourcePath": "listTuitionText",
+      "previous": "",
+      "next": "Official fee not published"
+    },
+    {
+      "entityType": "program",
+      "entityId": 5967,
+      "code": "USM-M-ARTICLE-1496-2163A709",
+      "name": "文学硕士（离岸项目）",
+      "field": "tuitionDisplay",
+      "sourcePath": "listTuitionText",
+      "previous": "",
+      "next": "Official fee not published"
+    },
+    {
+      "entityType": "program",
+      "entityId": 5990,
+      "code": "USM-M-ARTICLE-1497-FBBCAC64",
+      "name": "商业分析硕士（离岸项目）",
+      "field": "tuitionDisplay",
+      "sourcePath": "listTuitionText",
+      "previous": "",
+      "next": "Official fee not published"
+    },
+    {
+      "entityType": "program",
+      "entityId": 6051,
+      "code": "USM-M-ARTICLE-1499-54A1B24B",
+      "name": "专业管理硕士（离岸项目）",
+      "field": "tuitionDisplay",
+      "sourcePath": "listTuitionText",
+      "previous": "",
+      "next": "Official fee not published"
+    },
+    {
+      "entityType": "program",
+      "entityId": 6052,
+      "code": "USM-M-ARTICLE-1500-3149EB02",
+      "name": "专业管理硕士（离岸项目）",
+      "field": "tuitionDisplay",
+      "sourcePath": "listTuitionText",
+      "previous": "",
+      "next": "Official fee not published"
+    },
+    {
+      "entityType": "program",
+      "entityId": 6071,
+      "code": "USM-M-ARTICLE-1502-CF3DE0E8",
+      "name": "土木工程理学硕士（离岸项目）",
+      "field": "tuitionDisplay",
+      "sourcePath": "listTuitionText",
+      "previous": "",
+      "next": "Official fee not published"
+    },
+    {
+      "entityType": "program",
+      "entityId": 6083,
+      "code": "USM-M-ARTICLE-1504-93009E16",
+      "name": "电气与电子工程理学硕士（离岸项目）",
+      "field": "tuitionDisplay",
+      "sourcePath": "listTuitionText",
+      "previous": "",
+      "next": "Official fee not published"
+    },
+    {
+      "entityType": "program",
+      "entityId": 6179,
+      "code": "USM-M-ARTICLE-1505-7ED21583",
+      "name": "电子系统设计工程理学硕士（离岸项目）",
+      "field": "tuitionDisplay",
+      "sourcePath": "listTuitionText",
+      "previous": "",
+      "next": "Official fee not published"
+    },
+    {
+      "entityType": "program",
+      "entityId": 6082,
+      "code": "USM-M-ARTICLE-1507-E8EDCEC2",
+      "name": "牙科学理学硕士（离岸项目）",
+      "field": "tuitionDisplay",
+      "sourcePath": "listTuitionText",
+      "previous": "",
+      "next": "Official fee not published"
+    },
+    {
+      "entityType": "program",
+      "entityId": 5966,
+      "code": "USM-M-ARTICLE-1509-3DFF6CF6",
+      "name": "文学硕士（离岸项目）",
+      "field": "tuitionDisplay",
+      "sourcePath": "listTuitionText",
+      "previous": "",
+      "next": "Official fee not published"
+    },
+    {
+      "entityType": "program",
+      "entityId": 6135,
+      "code": "USM-M-ARTICLE-1510-D8F51993",
+      "name": "理学硕士（离岸项目）",
+      "field": "tuitionDisplay",
+      "sourcePath": "listTuitionText",
+      "previous": "",
+      "next": "Official fee not published"
+    },
+    {
+      "entityType": "program",
+      "entityId": 6215,
+      "code": "USM-M-ARTICLE-1512-CD60C923",
+      "name": "社会科学硕士（离岸项目）",
+      "field": "tuitionDisplay",
+      "sourcePath": "listTuitionText",
+      "previous": "",
+      "next": "Official fee not published"
+    },
+    {
+      "entityType": "program",
+      "entityId": 6180,
+      "code": "USM-M-ARTICLE-1513-8022424A",
+      "name": "电子系统设计工程理学硕士（离岸项目）",
+      "field": "tuitionDisplay",
+      "sourcePath": "listTuitionText",
+      "previous": "",
+      "next": "Official fee not published"
+    },
+    {
+      "entityType": "program",
+      "entityId": 6147,
+      "code": "USM-M-ARTICLE-1514-6A9EA009",
+      "name": "项目管理理学硕士（离岸项目）",
+      "field": "tuitionDisplay",
+      "sourcePath": "listTuitionText",
+      "previous": "",
+      "next": "Official fee not published"
+    },
+    {
+      "entityType": "program",
+      "entityId": 5959,
+      "code": "USM-M-ARTICLE-1518-3027AA5A",
+      "name": "圣训研究文学硕士（离岸项目）",
+      "field": "tuitionDisplay",
+      "sourcePath": "listTuitionText",
+      "previous": "",
+      "next": "Official fee not published"
+    },
+    {
+      "entityType": "program",
+      "entityId": 5933,
+      "code": "USM-M-ARTICLE-224-334B0077",
+      "name": "生物过程技术硕士",
+      "field": "tuitionDisplay",
+      "sourcePath": "listTuitionText",
+      "previous": "",
+      "next": "Official fee not published"
+    },
+    {
+      "entityType": "program",
+      "entityId": 5970,
+      "code": "USM-M-ARTICLE-286-6131841A",
+      "name": "翻译学文学硕士（离岸项目）",
+      "field": "tuitionDisplay",
+      "sourcePath": "listTuitionText",
+      "previous": "",
+      "next": "Official fee not published"
+    },
+    {
+      "entityType": "program",
+      "entityId": 6216,
+      "code": "USM-M-ARTICLE-289-89E1F915",
+      "name": "社会科学硕士（离岸项目）",
+      "field": "tuitionDisplay",
+      "sourcePath": "listTuitionText",
+      "previous": "",
+      "next": "Official fee not published"
+    },
+    {
+      "entityType": "program",
+      "entityId": 6009,
+      "code": "USM-M-ARTICLE-352-D31C8D58",
+      "name": "教育学 心理学教育学硕士（离岸项目）",
+      "field": "tuitionDisplay",
+      "sourcePath": "listTuitionText",
+      "previous": "",
+      "next": "Official fee not published"
+    },
+    {
+      "entityType": "program",
+      "entityId": 6011,
+      "code": "USM-M-ARTICLE-352-DA22F697",
+      "name": "教育管理与行政教育学硕士（离岸项目）",
+      "field": "tuitionDisplay",
+      "sourcePath": "listTuitionText",
+      "previous": "",
+      "next": "Official fee not published"
+    },
+    {
+      "entityType": "program",
+      "entityId": 6157,
+      "code": "USM-M-ARTICLE-882-4E737064",
+      "name": "机械工程学院理学硕士",
+      "field": "tuitionDisplay",
+      "sourcePath": "listTuitionText",
+      "previous": "",
+      "next": "Official fee not published"
+    },
+    {
+      "entityType": "program",
+      "entityId": 6158,
+      "code": "USM-M-ARTICLE-892-3347606A",
+      "name": "先进半导体封装理学硕士",
+      "field": "tuitionDisplay",
+      "sourcePath": "listTuitionText",
+      "previous": "",
+      "next": "Official fee not published"
+    }
+  ]
+}

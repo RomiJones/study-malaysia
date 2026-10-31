@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-06-16T15:56:10.008Z",
+  "auditMode": "post-import-display-audit",
+  "institution": {
+    "code": "USM",
+    "name": "Universiti Sains Malaysia"
+  },
+  "level": "phd",
+  "authorization": "publish",
+  "sourceCandidate": "data/imports/usm/2026-06-14/phd-candidate.json",
+  "sourceCandidateSha256": "5920f855a59f8113061deaf5ae0e4afb98873d9c0335e074c553c443a15dd492",
+  "backupPath": "apps/api/tmp/backups/usm-phd-commercial-before-final-standard-2026-06-16.json",
+  "database": {
+    "canonicalRows": 95,
+    "publicReadyRows": 93,
+    "notAvailableForInternationalRows": 2,
+    "needsReviewRows": 0,
+    "leakedLegacyRows": 0,
+    "totalCanonicalRowsAfterImport": 463,
+    "totalPublicRowsAfterImport": 460,
+    "bachelorPublicRows": 63,
+    "masterPublicRows": 304,
+    "phdPublicRows": 93,
+    "feeStatusCounts": {
+      "matched-official": 11,
+      "calculated-from-official-rate": 62,
+      "not-published": 20
+    }
+  },
+  "publicApi": {
+    "url": "http://127.0.0.1:3000/api/universities/universiti-sains-malaysia-usm",
+    "programCount": 460,
+    "returnedPrograms": 460,
+    "byLevel": {
+      "bachelor": 63,
+      "master": 304,
+      "phd": 93
+    },
+    "catalogStatusSummary": {
+      "all": {
+        "ready": 460,
+        "total": 463,
+        "needsReview": 0,
+        "notAvailableForInternational": 3
+      },
+      "byLevel": {
+        "phd": {
+          "ready": 93,
+          "total": 95,
+          "needsReview": 0,
+          "notAvailableForInternational": 2
+        },
+        "master": {
+          "ready": 304,
+          "total": 305,
+          "needsReview": 0,
+          "notAvailableForInternational": 1
+        },
+        "bachelor": {
+          "ready": 63,
+          "total": 63,
+          "needsReview": 0,
+          "notAvailableForInternational": 0
+        }
+      }
+    },
+    "nonReadyPublicRows": 0,
+    "forbiddenFeeRangeRows": 0
+  },
+  "releaseGate": {
+    "reportPath": "tmp/reports/usm-commercial-release-gate.json",
+    "decision": "commercial-release-ready"
+  },
+  "candidateCoverage": {
+    "canonicalRecords": 95,
+    "ready": 93,
+    "notAvailableForInternational": 2,
+    "needsReview": 0,
+    "officialTotals": 13,
+    "officialRateOnly": 62,
+    "officialUnpublished": 20
+  },
+  "samples": [
+    {
+      "officialName": "DOCTOR OF BUSINESS ADMINISTRATION (DBA)",
+      "slug": "usm-phd-commercial-2026-usm-d-article-340-f6b2dbbe",
+      "durationOfficial": "Full time: 7 semesters to 10 semesters Part time: 10 semesters to 14 semesters",
+      "tuitionDisplay": "USD 16,200 total tuition",
+      "officialFeeAuditStatus": "matched-official",
+      "publicDisplayStatus": "ready",
+      "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=340&catid=53"
+    }
+  ]
+}

@@ -19,8 +19,7 @@
     "applicationCodeOnlyOfferings": 5,
     "offshoreApplicationCodesReconciled": 24,
     "statusCounts": {
-      "ready": 93,
-      "not-available-for-international": 2
+      "ready": 95
     },
     "modeCounts": {
       "mixed": 6,
@@ -67,8 +66,8 @@
         "review": 0
       },
       "intake": {
-        "covered": 20,
-        "unpublished": 75,
+        "covered": 23,
+        "unpublished": 72,
         "review": 0
       },
       "internationalEligibility": {

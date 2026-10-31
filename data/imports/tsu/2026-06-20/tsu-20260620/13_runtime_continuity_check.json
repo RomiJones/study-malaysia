@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "status": "passed",
+  "projectRuntimePolicy": "do-not-close-or-restart-without-ian-approval",
+  "observedEndpoints": [],
+  "interruptions": [],
+  "recoveryChecks": [],
+  "notes": [
+    "Collection used read-only HTTP downloads and local artifact generation only.",
+    "No StudyMY frontend/API/admin process was stopped, restarted, killed, or occupied."
+  ]
+}

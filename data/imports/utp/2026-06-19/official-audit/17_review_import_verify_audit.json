@@ -1,0 +1,65 @@
+{
+  "mode": "verified",
+  "universityId": 54,
+  "databaseUniversityCode": "UTP",
+  "summary": {
+    "candidateRows": 63,
+    "importRows": 63,
+    "byLevel": {
+      "bachelor": 15,
+      "master": 37,
+      "phd": 11
+    },
+    "readyRows": 0,
+    "needsReviewRows": 63,
+    "publishedRows": 0,
+    "uniqueSlugs": 63,
+    "officialTotalRows": 36,
+    "officialRateRows": 22,
+    "pendingFeeRows": 5,
+    "publicDisplayStatusCounts": {
+      "needs-review": 63
+    },
+    "officialSourceStatusCounts": {
+      "needs-review": 63
+    },
+    "feeAuditStatusCounts": {
+      "matched-official": 36,
+      "pending-review": 5,
+      "official-rate-verified": 22
+    }
+  },
+  "verification": {
+    "candidateRows": 63,
+    "importRows": 63,
+    "byLevel": {
+      "bachelor": 15,
+      "master": 37,
+      "phd": 11
+    },
+    "readyRows": 0,
+    "needsReviewRows": 63,
+    "publishedRows": 0,
+    "uniqueSlugs": 63,
+    "officialTotalRows": 36,
+    "officialRateRows": 22,
+    "pendingFeeRows": 5,
+    "publicDisplayStatusCounts": {
+      "needs-review": 63
+    },
+    "officialSourceStatusCounts": {
+      "needs-review": 63
+    },
+    "feeAuditStatusCounts": {
+      "matched-official": 36,
+      "pending-review": 5,
+      "official-rate-verified": 22
+    },
+    "universityPublicDisplayStatus": "needs-review",
+    "universityIsPublished": false,
+    "universityProgramCount": 63,
+    "publicLeakageRows": 0,
+    "adminNeedsReviewRows": 63,
+    "legacyActiveRows": 0
+  }
+}

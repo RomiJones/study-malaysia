@@ -1,0 +1,43 @@
+{
+  "mode": "dry-run",
+  "universityCode": "MSU",
+  "writePolicy": {
+    "authorization": "MSU-only direct public import",
+    "programmes": {
+      "isPublished": true,
+      "publicDisplayStatus": "ready"
+    },
+    "officialTuitionPolicy": "officialTuitionMYR remains null for non-official candidate fees; missing fees become not-published.",
+    "nextStep": "Review this dry-run, then rerun with --confirm-publish to write transactionally."
+  },
+  "summary": {
+    "totalRows": 110,
+    "byLevel": {
+      "bachelor": 80,
+      "master": 20,
+      "phd": 10
+    },
+    "readyRows": 110,
+    "needsReviewRows": 0,
+    "publishedRows": 110,
+    "officialSourceVerifiedRows": 110,
+    "officialFeeRows": 0,
+    "nonOfficialCandidateFeeRows": 101,
+    "missingFeeRows": 9,
+    "sourceConflictFeeRows": 6,
+    "pendingFeeCandidateRows": 95,
+    "notPublishedFeeRows": 9,
+    "forbiddenPublicTextRows": 0,
+    "publicDisplayStatusCounts": {
+      "ready": 110
+    },
+    "officialSourceStatusCounts": {
+      "official-verified": 110
+    },
+    "feeAuditStatusCounts": {
+      "not-published": 9,
+      "pending-review": 95,
+      "source-conflict": 6
+    }
+  }
+}

@@ -1,0 +1,130 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-06-20T10:30:00+08:00",
+  "institution": "Universiti Teknologi PETRONAS",
+  "universityCode": "UTP",
+  "scope": {
+    "collectionScope": "full",
+    "levels": [
+      "bachelor",
+      "master",
+      "phd"
+    ],
+    "applicantScope": "international",
+    "repairObjective": "Resolve previously listed hard issues only when official evidence and StudyMY publication rules allow it."
+  },
+  "verdict": {
+    "canGoLive": false,
+    "canPublishToPublicStudentCatalog": false,
+    "acceptedForFrontendReview": true,
+    "currentState": "review-imported only"
+  },
+  "repairedThisRun": [
+    {
+      "id": "study-arrangement-needs-review",
+      "status": "resolved-for-review-import",
+      "affectedCount": 27,
+      "before": "field_coverage_matrix.studyArrangement=needs-review",
+      "after": "field_coverage_matrix.studyArrangement=official-value with publicDisplayGuardrail",
+      "guardrail": "Display captured official arrangement only; do not infer full-time/part-time labels."
+    }
+  ],
+  "deliberatelyNotAutoFixed": [
+    {
+      "id": "chinese-localization-not-approved",
+      "affectedCount": 63,
+      "reason": "StudyMY Chinese localization still requires approval or a controlled official-English display policy. Auto-marking it ready would violate the publication standard."
+    },
+    {
+      "id": "research-fee-international-amount-not-captured",
+      "affectedCount": 22,
+      "reason": "The official page confirms research fees are annual/rate-based, but current candidate rows have null tuitionAmount and the visible research table is Malaysian (RM). This is not publishable international tuition."
+    },
+    {
+      "id": "public-ready-conversion",
+      "affectedCount": 63,
+      "reason": "Rows remain needs-review/isPublished=false by design until localization, fee, cost-estimate and public UI gates pass."
+    }
+  ],
+  "remainingPublicReleaseBlockers": [
+    {
+      "id": "all-records-review-status",
+      "severity": "blocking",
+      "affectedCount": 63,
+      "currentState": "publicDisplayStatus=needs-review and isPublished=false",
+      "whyItBlocksPublication": "Published public catalogue rows must pass the per-record ready gate. Current database state intentionally keeps all UTP rows in review-only mode."
+    },
+    {
+      "id": "chinese-localization-not-approved",
+      "severity": "blocking",
+      "affectedCount": 63,
+      "currentState": "field_coverage_matrix.chineseLocalization=needs-review",
+      "whyItBlocksPublication": "Public release requires accepted StudyMY Chinese localization or an approved official-English display policy. Current localization is explicitly not approved."
+    },
+    {
+      "id": "research-fee-international-amount-not-captured",
+      "severity": "blocking",
+      "affectedCount": 22,
+      "currentState": "candidate fee.status=official-rate-only; tuitionAmount=null for all 22 research master/phd rows",
+      "whyItBlocksPublication": "The official postgraduate fee page proves research fees are annual/rate-based, but the research table exposed in the current official HTML is Malaysian (RM). For an international-applicant catalogue, StudyMY cannot publish a Malaysian research fee or an empty amount as international tuition.",
+      "officialEvidence": [
+        {
+          "sourceUrl": "https://www.utp.edu.my/Pages/Admission/Postgraduate/International-Applicants/Tuition-fees.aspx",
+          "sourceText": "Research fee table header is Malaysian (RM); notes state research fees are annual."
+        },
+        {
+          "sourceUrl": "https://www.utp.edu.my/Pages/Admission/Postgraduate/Master-by-Research.aspx",
+          "sourceText": "Master by Research duration is published by study mode, not as a single fixed total."
+        },
+        {
+          "sourceUrl": "https://www.utp.edu.my/Pages/Admission/Postgraduate/PhD.aspx",
+          "sourceText": "PhD duration is published by study mode, not as a single fixed total."
+        }
+      ]
+    },
+    {
+      "id": "public-cost-estimate-cny-policy-missing",
+      "severity": "blocking",
+      "affectedCount": 63,
+      "currentState": "import rows set annualTuitionCny=0 in review-only lane",
+      "whyItBlocksPublication": "Public recommendations, filters, planner and cost-estimate APIs consume annualTuitionCny. Publishing UTP rows with zero CNY tuition would create false public budget output."
+    },
+    {
+      "id": "public-api-ui-release-not-run",
+      "severity": "blocking",
+      "affectedCount": 63,
+      "currentState": "No UTP public rows exist to verify as published catalogue output.",
+      "whyItBlocksPublication": "Publication requires DB/API/list/detail/aggregate/four-locale browser and console checks after a ready/public conversion. The current lane remains review-only."
+    }
+  ],
+  "officialEvidence": [
+    {
+      "sourceUrl": "https://www.utp.edu.my/Pages/Admission/Postgraduate/International-Applicants/Tuition-fees.aspx",
+      "evidenceSummary": "Postgraduate international tuition page: coursework table has International (RM) columns; research tables expose Malaysian (RM) and notes state research fees are annual."
+    },
+    {
+      "sourceUrl": "https://www.utp.edu.my/Pages/Admission/Postgraduate/Master-by-Research.aspx",
+      "evidenceSummary": "Master by Research page publishes duration ranges by full-time/part-time mode."
+    },
+    {
+      "sourceUrl": "https://www.utp.edu.my/Pages/Admission/Postgraduate/PhD.aspx",
+      "evidenceSummary": "PhD page publishes duration ranges by full-time/part-time mode."
+    }
+  ],
+  "verificationTargets": [
+    "field_coverage_matrix now has 0 studyArrangement needs-review cells",
+    "candidate dataset remains 63 rows: bachelor=15, master=37, phd=11",
+    "database/public state remains review-only with public leakage 0",
+    "public release remains blocked until localization, research fee, cost estimate and public UI gates pass"
+  ],
+  "verificationResults": {
+    "generatedAt": "2026-06-20T10:55:00+08:00",
+    "candidateIntegrity": "passed",
+    "deliveryAudit": "passed-review-required",
+    "pipelineDeliveryReview": "passed",
+    "utpImportUnitTest": "passed",
+    "utpDatabaseVerifyOnly": "passed",
+    "rootBuild": "passed",
+    "verificationArtifact": "24_public_release_repair_verify_audit.json"
+  }
+}

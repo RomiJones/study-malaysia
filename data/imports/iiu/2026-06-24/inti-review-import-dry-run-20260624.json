@@ -1,0 +1,59 @@
+{
+  "mode": "dry-run",
+  "universityCode": "INTI",
+  "candidatePath": "/Users/ian/Desktop/dev/study-malaysia/data/imports/iiu/2026-06-20/iiu-20260620/08_candidate_dataset.json",
+  "sourceRegistryPath": "/Users/ian/Desktop/dev/study-malaysia/data/imports/iiu/2026-06-20/iiu-20260620/02_official_source_registry.json",
+  "decision": "ready-for-controlled-import",
+  "writePolicy": {
+    "authorization": "review-import",
+    "requestedMode": "review-import",
+    "upsertPrefix": "inti-official-2026-review-row-",
+    "importRows": 107,
+    "university": {
+      "preserveExistingPublicInstitution": true,
+      "newInstitutionFallback": {
+        "isPublished": false,
+        "publicDisplayStatus": "needs-review"
+      }
+    },
+    "programmes": {
+      "isPublished": false,
+      "publicDisplayStatus": "needs-review",
+      "officialFeeAuditStatus": "pending-review"
+    },
+    "archiveLegacyRows": "No. Review-only import updates/removes only previous rows with the INTI review slug prefix.",
+    "publicLeakageExpected": 0,
+    "feePolicy": "No approximate INTI amount is imported as public total tuition; every fee stays pending-review with approximate/SST notes.",
+    "rollbackTarget": "/Users/ian/Desktop/dev/study-malaysia/apps/api/tmp/backups/inti-official-audit-review-before-2026-06-24T08-43-22-826Z.json",
+    "nextStep": "Review this dry-run, then rerun with --confirm-import to create a scoped backup and write transactionally."
+  },
+  "summary": {
+    "candidateRows": 107,
+    "importRows": 107,
+    "byLevel": {
+      "bachelor": 74,
+      "master": 23,
+      "phd": 10
+    },
+    "readyRows": 0,
+    "needsReviewRows": 107,
+    "publishedRows": 0,
+    "uniqueSlugs": 107,
+    "pendingFeeRows": 107,
+    "approximateFeeRows": 91,
+    "nonScalarApproximateFeeRows": 16,
+    "rowsWithApproximateFeeEvidence": 107,
+    "rowsWithOfficialSourceUrl": 107,
+    "rowsWithLanguageSummary": 86,
+    "rowsWithDurationYears": 107,
+    "publicDisplayStatusCounts": {
+      "needs-review": 107
+    },
+    "officialSourceStatusCounts": {
+      "needs-review": 107
+    },
+    "feeAuditStatusCounts": {
+      "pending-review": 107
+    }
+  }
+}

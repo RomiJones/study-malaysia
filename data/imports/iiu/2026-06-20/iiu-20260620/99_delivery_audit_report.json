@@ -1,0 +1,61 @@
+{
+  "status": "review-required",
+  "scope": {
+    "universityCode": "INTI",
+    "collectionScope": "full",
+    "levels": [
+      "bachelor",
+      "master",
+      "phd"
+    ],
+    "applicantScope": "international",
+    "academicSession": "Current official programme pages rechecked 2026-06-21"
+  },
+  "levels": [
+    "bachelor",
+    "master",
+    "phd"
+  ],
+  "authorization": "collect",
+  "counts": {
+    "directoryOccurrences": 151,
+    "uniqueOfficialEntries": 151,
+    "canonicalProgrammes": 107,
+    "ready": 0,
+    "needsReview": 107,
+    "notAvailableForInternational": 0,
+    "byLevel": {
+      "bachelor": 74,
+      "master": 23,
+      "phd": 10
+    }
+  },
+  "coverageKeys": [
+    "academicRequirement",
+    "applicationDocuments",
+    "campus",
+    "chinaSpecificRequirement",
+    "deepSourceFieldExploration",
+    "duration",
+    "evidence",
+    "faculty",
+    "fee",
+    "identity",
+    "institutionProfile",
+    "intake",
+    "internationalEligibility",
+    "languageRequirement",
+    "listDurationYears",
+    "listIeltsSummary",
+    "localization",
+    "routeSpecificRequirements",
+    "studentFacingContentHygiene",
+    "studyMode"
+  ],
+  "sourceCount": 146,
+  "artifactCount": 18,
+  "blockingExceptionCount": 0,
+  "reviewExceptionCount": 107,
+  "issueCounts": {},
+  "issues": []
+}

@@ -1,0 +1,23 @@
+{
+  "mode": "dry-run",
+  "generatedAt": "2026-06-30T06:34:03.064Z",
+  "safety": {
+    "writesRequireConfirmFlag": true,
+    "overwriteExistingValues": false,
+    "synchronizeSchema": false
+  },
+  "summary": {
+    "universitiesScanned": 119,
+    "programsScanned": 4078,
+    "universityRowsChanged": 0,
+    "programRowsChanged": 0,
+    "totalPatches": 0,
+    "patchesByEntity": {
+      "university": 0,
+      "program": 0
+    },
+    "patchesByField": {},
+    "reportPath": "/Users/ian/Desktop/dev/study-malaysia/data/admin-field-sync/admin-official-field-sync-dry-run-2026-06-30T06-34-03-063Z.json"
+  },
+  "patches": []
+}

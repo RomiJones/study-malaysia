@@ -1,0 +1,79 @@
+{
+  "status": "published",
+  "scope": {
+    "universityCode": "UTP",
+    "collectionScope": "full",
+    "levels": [
+      "bachelor",
+      "master",
+      "phd"
+    ],
+    "applicantScope": "international",
+    "academicSession": "Current official intake cycle as of 2026-06-19; UG fees effective May 2026; 2026 UG/PG intakes; PG tuition page states effective January 2020/current intake year."
+  },
+  "levels": [
+    "bachelor",
+    "master",
+    "phd"
+  ],
+  "authorization": "publish",
+  "counts": {
+    "directoryOccurrences": 63,
+    "uniqueOfficialEntries": 63,
+    "canonicalProgrammes": 63,
+    "ready": 63,
+    "needsReview": 0,
+    "notAvailableForInternational": 0,
+    "byLevel": {
+      "bachelor": 15,
+      "master": 37,
+      "phd": 11
+    }
+  },
+  "coverageKeys": [
+    "academicEntry",
+    "academicRequirement",
+    "applicantScope",
+    "applicationDocuments",
+    "campus",
+    "careers",
+    "chineseLocalization",
+    "courseSetting",
+    "curriculumStructure",
+    "duration",
+    "evidence",
+    "faculty",
+    "fee",
+    "feeSession",
+    "feeStatus",
+    "gpaCgpa",
+    "identity",
+    "individualCourseTitles",
+    "institutionProfile",
+    "intake",
+    "internationalEligibility",
+    "internshipProjectDissertation",
+    "languageRequirement",
+    "languageScores",
+    "level",
+    "localization",
+    "mode",
+    "officialSourceUrl",
+    "officialTitle",
+    "overview",
+    "specializationsResearchAreas",
+    "studyArrangement",
+    "studyMode",
+    "studyType",
+    "tuitionAmount",
+    "tuitionBasis",
+    "tuitionCurrency",
+    "verifiedAt"
+  ],
+  "sourceCount": 16,
+  "artifactCount": 42,
+  "blockingExceptionCount": 0,
+  "reviewExceptionCount": 0,
+  "issueCounts": {},
+  "issues": []
+}

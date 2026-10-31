@@ -1,0 +1,240 @@
+{
+  "schemaVersion": 1,
+  "surfaces": [
+    {
+      "surface": "institution profile",
+      "fields": {
+        "officialName": {
+          "state": "ready",
+          "sourceUrl": "https://university.taylors.edu.my/en.html"
+        },
+        "officialWebsite": {
+          "state": "ready",
+          "sourceUrl": "https://university.taylors.edu.my/en.html"
+        },
+        "address": {
+          "state": "ready",
+          "sourceUrl": "https://university.taylors.edu.my/en.html"
+        },
+        "applicationLinks": {
+          "state": "ready",
+          "sourceUrl": "https://university.taylors.edu.my/en/study/how-to-apply/undergraduate-admission.html"
+        }
+      }
+    },
+    {
+      "surface": "catalogue tabs and counts",
+      "fields": {
+        "bachelorCount": {
+          "state": "ready",
+          "sourceUrl": "https://university.taylors.edu.my/en/study/explore-all-programmes.html"
+        },
+        "masterCount": {
+          "state": "ready",
+          "sourceUrl": "https://university.taylors.edu.my/en/study/explore-all-programmes.html"
+        },
+        "phdCount": {
+          "state": "ready",
+          "sourceUrl": "https://university.taylors.edu.my/en/study/explore-all-programmes.html"
+        },
+        "reviewPartition": {
+          "state": "review",
+          "reason": "Some records require localization or language split review before public import."
+        }
+      }
+    },
+    {
+      "surface": "program-list rows",
+      "fields": {
+        "nameFacultyDurationTuitionIntake": {
+          "state": "ready",
+          "sourceUrl": "https://university.taylors.edu.my/en/study/explore-all-programmes.html"
+        },
+        "ieltsOnlySummary": {
+          "state": "review",
+          "reason": "77/89 records have official IELTS summary; non-IELTS official language routes require display decision."
+        },
+        "structuredLanguageRoutes": {
+          "state": "ready",
+          "reason": "Language requirements were split into structured official routes where published."
+        }
+      }
+    },
+    {
+      "surface": "program-detail sections",
+      "fields": {
+        "overview": {
+          "state": "review",
+          "reason": "Chinese localization remains required before public student display."
+        },
+        "requirements": {
+          "state": "ready",
+          "sourceUrl": "programme detail pages"
+        },
+        "courseSetting": {
+          "state": "review",
+          "reason": "Official structure captured; Chinese course localization remains required."
+        },
+        "careers": {
+          "state": "review",
+          "reason": "Official career content captured; Chinese career localization remains required."
+        },
+        "sources": {
+          "state": "ready",
+          "sourceUrl": "https://university.taylors.edu.my/en/study/explore-all-programmes.html"
+        },
+        "structuredRequirements": {
+          "state": "ready",
+          "reason": "Academic performance, language routes, documents, and special requirements were calibrated into structured fields."
+        }
+      }
+    },
+    {
+      "surface": "leakage public-filter",
+      "fields": {
+        "nonReadyLeakage": {
+          "state": "ready",
+          "reason": "Collect-only batch was not imported; no public API/list leakage."
+        },
+        "reviewRowsHiddenFromPublic": {
+          "state": "ready",
+          "reason": "No database writes were performed."
+        }
+      }
+    }
+  ],
+  "samples": [
+    {
+      "code": "TSU-B-001",
+      "nameEnOfficial": "Bachelor of Science (Honours) in Architecture",
+      "status": "ready",
+      "checks": {
+        "description": "review",
+        "curriculum": "review",
+        "careers": "review",
+        "sourceUrls": "ready"
+      }
+    },
+    {
+      "code": "TSU-B-002",
+      "nameEnOfficial": "Bachelor of Arts (Honours) in Interior Architecture",
+      "status": "ready",
+      "checks": {
+        "description": "review",
+        "curriculum": "review",
+        "careers": "review",
+        "sourceUrls": "ready"
+      }
+    },
+    {
+      "code": "TSU-B-003",
+      "nameEnOfficial": "Bachelor of Quantity Surveying (Honours)",
+      "status": "ready",
+      "checks": {
+        "description": "review",
+        "curriculum": "review",
+        "careers": "review",
+        "sourceUrls": "ready"
+      }
+    },
+    {
+      "code": "TSU-B-004",
+      "nameEnOfficial": "Bachelor of Science (Honours) in Sustainable Digital Construction Management",
+      "status": "ready",
+      "checks": {
+        "description": "review",
+        "curriculum": "review",
+        "careers": "review",
+        "sourceUrls": "ready"
+      }
+    },
+    {
+      "code": "TSU-M-001",
+      "nameEnOfficial": "Master of Architecture",
+      "status": "ready",
+      "checks": {
+        "description": "review",
+        "curriculum": "review",
+        "careers": "review",
+        "sourceUrls": "ready"
+      }
+    },
+    {
+      "code": "TSU-M-002",
+      "nameEnOfficial": "Master of Science in Virtual Design and Construction",
+      "status": "ready",
+      "checks": {
+        "description": "review",
+        "curriculum": "review",
+        "careers": "review",
+        "sourceUrls": "ready"
+      }
+    },
+    {
+      "code": "TSU-D-001",
+      "nameEnOfficial": "Doctor of Philosophy (PhD) in Architecture",
+      "status": "ready",
+      "checks": {
+        "description": "review",
+        "curriculum": "review",
+        "careers": "review",
+        "sourceUrls": "ready"
+      }
+    },
+    {
+      "code": "TSU-B-005",
+      "nameEnOfficial": "Bachelor of Biomedical Science (Honours)",
+      "status": "ready",
+      "checks": {
+        "description": "review",
+        "curriculum": "review",
+        "careers": "review",
+        "sourceUrls": "ready"
+      }
+    },
+    {
+      "code": "TSU-B-006",
+      "nameEnOfficial": "Bachelor of Food Science (Honours)",
+      "status": "ready",
+      "checks": {
+        "description": "review",
+        "curriculum": "review",
+        "careers": "review",
+        "sourceUrls": "ready"
+      }
+    },
+    {
+      "code": "TSU-B-007",
+      "nameEnOfficial": "Bachelor of Biotechnology (Honours)",
+      "status": "ready",
+      "checks": {
+        "description": "review",
+        "curriculum": "review",
+        "careers": "review",
+        "sourceUrls": "ready"
+      }
+    },
+    {
+      "code": "TSU-B-008",
+      "nameEnOfficial": "Bachelor of Applied Health Sciences (Honours)",
+      "status": "ready",
+      "checks": {
+        "description": "review",
+        "curriculum": "review",
+        "careers": "review",
+        "sourceUrls": "ready"
+      }
+    },
+    {
+      "code": "TSU-M-003",
+      "nameEnOfficial": "Master of Science",
+      "status": "ready",
+      "checks": {
+        "description": "review",
+        "curriculum": "review",
+        "careers": "review",
+        "sourceUrls": "ready"
+      }
+    }
+  ]
+}

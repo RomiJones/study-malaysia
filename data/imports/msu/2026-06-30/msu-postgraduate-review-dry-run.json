@@ -1,0 +1,45 @@
+{
+  "mode": "dry-run",
+  "universityCode": "MSU",
+  "candidatePath": "/Users/ian/Desktop/dev/study-malaysia/data/imports/msu/2026-06-30/msu-postgraduate-2026-authorized-fee-candidates.json",
+  "writePolicy": {
+    "authorization": "review-import-msu-only-non-official-fee-candidates",
+    "importRows": 30,
+    "programmes": {
+      "isPublished": false,
+      "publicDisplayStatus": "needs-review"
+    },
+    "publicLeakageExpected": 0,
+    "nextStep": "Review this dry-run, then rerun with --confirm-import to create a scoped backup and write transactionally."
+  },
+  "summary": {
+    "importRows": 30,
+    "byLevel": {
+      "bachelor": 0,
+      "master": 20,
+      "phd": 10
+    },
+    "readyRows": 0,
+    "needsReviewRows": 30,
+    "publishedRows": 0,
+    "uniqueSlugs": 30,
+    "officialFeeRows": 0,
+    "nonOfficialCandidateFeeRows": 27,
+    "missingNonOfficialCandidateFeeRows": 3,
+    "sourceConflictFeeRows": 0,
+    "pendingFeeRows": 30,
+    "directIeltsRows": 4,
+    "missingDirectIeltsRows": 26,
+    "durationReviewRows": 3,
+    "sourceRows": 30,
+    "publicDisplayStatusCounts": {
+      "needs-review": 30
+    },
+    "officialSourceStatusCounts": {
+      "needs-review": 30
+    },
+    "feeAuditStatusCounts": {
+      "pending-review": 30
+    }
+  }
+}

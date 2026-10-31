@@ -1,0 +1,118 @@
+{
+  "status": "review-required",
+  "surfaces": [
+    {
+      "surface": "institution profile",
+      "fields": {
+        "officialName": {
+          "state": "ready",
+          "sourceUrl": "https://newinti.edu.my/"
+        },
+        "officialWebsite": {
+          "state": "ready",
+          "sourceUrl": "https://newinti.edu.my/"
+        },
+        "campusAddress": {
+          "state": "ready",
+          "sourceUrl": "https://newinti.edu.my/campuses/"
+        },
+        "internationalLinks": {
+          "state": "ready",
+          "sourceUrl": "https://newinti.edu.my/international-students/"
+        }
+      }
+    },
+    {
+      "surface": "catalogue tabs and counts",
+      "fields": {
+        "levelCounts": {
+          "state": "ready",
+          "sourceUrl": "https://newinti.edu.my/academic-programmes/"
+        },
+        "readyReviewPartition": {
+          "state": "review",
+          "reason": "ready=0, needs-review=107"
+        }
+      }
+    },
+    {
+      "surface": "program-list rows",
+      "fields": {
+        "nameFacultyDuration": {
+          "state": "ready",
+          "sourceUrl": "https://newinti.edu.my/academic-programmes/"
+        },
+        "durationYears": {
+          "state": "review",
+          "reason": "Rows with non-normalized official duration require review before public list display."
+        },
+        "tuition": {
+          "state": "review",
+          "reason": "Official fees are approximate and exclude SST, or have multiple official fee options."
+        },
+        "ieltsSummary": {
+          "state": "review",
+          "reason": "Rows without stable IELTS list summary are kept needs-review."
+        },
+        "intakeMonths": {
+          "state": "ready",
+          "sourceUrl": "https://newinti.edu.my/academic-programmes/"
+        },
+        "localizedNames": {
+          "state": "review",
+          "reason": "zh-CN/zh-TW/ms localized programme and faculty names are not finalized in this collect-only batch."
+        }
+      }
+    },
+    {
+      "surface": "program-detail pages",
+      "fields": {
+        "requirements": {
+          "state": "ready",
+          "sourceUrl": "https://newinti.edu.my/academic-programmes/"
+        },
+        "feeDetails": {
+          "state": "review",
+          "reason": "Non-scalar fee options require Ian review before public primary total."
+        },
+        "courseSetting": {
+          "state": "ready",
+          "sourceUrl": "https://newinti.edu.my/academic-programmes/"
+        },
+        "careerDirections": {
+          "state": "ready",
+          "sourceUrl": "https://newinti.edu.my/academic-programmes/"
+        },
+        "routeSpecificRequirements": {
+          "state": "ready",
+          "sourceUrl": "https://newinti.edu.my/academic-programmes/"
+        },
+        "chinaSpecificRequirement": {
+          "state": "ready",
+          "sourceUrl": "https://newinti.edu.my/international-students/entry-requirements/"
+        },
+        "localizedDescriptionAndContent": {
+          "state": "review",
+          "reason": "Descriptions, course setting, and career text retain official English evidence; public Chinese localization still requires a separate pass."
+        },
+        "sourceLinks": {
+          "state": "ready",
+          "sourceUrl": "https://newinti.edu.my/academic-programmes/"
+        }
+      }
+    },
+    {
+      "surface": "leakage public-filter",
+      "fields": {
+        "needsReviewHiddenFromPublic": {
+          "state": "ready",
+          "reason": "Collect-only run does not import or publish review rows."
+        },
+        "databaseMutation": {
+          "state": "ready",
+          "reason": "Authorization is collect; no database write was performed."
+        }
+      }
+    }
+  ]
+}

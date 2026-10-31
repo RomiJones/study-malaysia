@@ -75,10 +75,11 @@ SUPPLEMENTAL_PDF_SOURCES = {
         "url": "https://mech.utm.my/wp-content/uploads/2023/10/UNDERGRADUATE-HANDBOOK-FACULTY-OF-MECHANICAL-ENGINEERING-SESSION-20232024.pdf",
         "programmes": [
             "Bachelor of Mechanical Engineering with Honours",
+            "Bachelor of Mechanical Engineering (Manufacturing) with Honours",
             "Bachelor of Naval Architecture & Offshore Engineering with Honours",
             "Bachelor of Mechanical Engineering (Aeronautics) with Honours",
         ],
-        "pageWindows": [[1, 40]],
+        "pageWindows": [[1, 40], [70, 85], [95, 106], [142, 153]],
     },
     "science-academic-handbook-2025-2026": {
         "url": "https://science.utm.my/undergraduate/wp-content/uploads/sites/584/2025/09/UGFS-Academic-Handbook-20252026-v2.pdf",
@@ -125,6 +126,22 @@ FACULTY_SHARED_DURATION_EVIDENCE = {
     },
 }
 
+SUPPLEMENTAL_DURATION_OVERRIDES_BY_PROGRAMME = {
+    "Bachelor of Mechanical Engineering (Manufacturing) with Honours": {
+        "sourceId": "mechanical-undergraduate-handbook-2023-2024",
+        "duration": {
+            "status": "programme-specific",
+            "officialText": (
+                "The Bachelor of Mechanical Engineering (Manufacturing) with Honours Programme Specifications state: "
+                "Study Duration Minimum: 4 years; Maximum: 6 years; Normal 8 semesters."
+            ),
+            "semesters": 8,
+            "minYears": 4,
+            "maxYears": 6,
+        },
+    },
+}
+
 FEE_CATEGORY_BY_PROGRAMME = {
     "Bachelor in Accounting with Honours": "Accountancy",
     "Bachelor in Digital Marketing with Honours": "HRD/ Management Technology",
@@ -161,6 +178,12 @@ MJIIT_PROGRAMMES = {
     "Bachelor of Electronic Systems Engineering with Honours",
     "Bachelor of Mechanical Precision Engineering with Honours",
     "Bachelor of Chemical Process Engineering with Honours",
+}
+
+PROGRAMME_DETAIL_URL_OVERRIDES_BY_NAME = {
+    "Bachelor in Accounting with Honours": "https://management.utm.my/accounting/",
+    "Bachelor in Digital Marketing with Honours": "https://management.utm.my/management-marketing/",
+    "Bachelor of Management with Honours": "https://management.utm.my/management-2/",
 }
 
 DETAIL_URL_OVERRIDES = {
@@ -319,6 +342,7 @@ def parse_catalogue(path: Path) -> list[dict[str, Any]]:
         intake_text = cells[4] if len(cells) > 4 else ""
         detail_url = urllib.parse.urljoin("https://admission.utm.my/", detail_links[-1]) if detail_links else None
         name = normalize_name(cells[0])
+        detail_url = PROGRAMME_DETAIL_URL_OVERRIDES_BY_NAME.get(name, detail_url)
         records.append(
             {
                 "ordinal": len(records) + 1,
@@ -401,6 +425,10 @@ def extract_general_requirements(path: Path) -> dict[str, Any]:
         "academicRequirementSummary": clean(academic.group(0)) if academic else "official-page-present-but-summary-not-parsed",
         "languageRequirementStatus": "official-linked-page-not-parsed",
         "countryRequirementStatus": "official-country-table-present",
+        "chinaRequirementByField": {
+            "Engineering": "Senior Secondary School Graduation Certificate, or Graduation Certificate from a Vocational / Technical Secondary School (Zhixiao / Zhigao) or Skilled Worker School (Jixiao); scores of at least 70% in Mathematics and Physics, plus Chemistry or Biology.",
+            "Social Science": "Senior Secondary School Graduation Certificate, or Graduation Certificate from a Vocational / Technical Secondary School (Zhixiao / Zhigao) or Skilled Worker School (Jixiao); scores of at least 70% in any three accepted subjects, including Mathematics, Physics, Biology, Chemistry, Geography, Economy, Accounting, Business Management, ICT, Computer Science, Programming, Computing, Art and Design, or Visual Arts.",
+        },
         "healthRequirementStatus": "official-linked-form-present",
     }
 
@@ -663,7 +691,7 @@ def fetch_detail_sources(
         {
             canonical_detail_url(item.get("detailUrl"))
             for item in programmes
-            if item["canonicalDecision"]["currentCycleStatus"] == "ready-for-detail-enrichment"
+            if item["canonicalDecision"]["currentCycleStatus"] in {"ready-for-detail-enrichment", "current-cycle-not-open"}
             and canonical_detail_url(item.get("detailUrl"))
         }
     )
@@ -795,6 +823,15 @@ def build_supplemental_duration_by_programme(supplemental_sources: dict[str, dic
             continue
         for programme_name in SUPPLEMENTAL_PDF_SOURCES[source_id]["programmes"]:
             duration_by_programme[programme_name] = dict(duration)
+    for programme_name, override in SUPPLEMENTAL_DURATION_OVERRIDES_BY_PROGRAMME.items():
+        source = supplemental_sources.get(override["sourceId"])
+        if not source or source.get("status") == "transport-error":
+            continue
+        duration = dict(override["duration"])
+        duration["sourceId"] = source["id"]
+        duration["sourceUrl"] = source.get("finalUrl") or source["url"]
+        duration["sourcePath"] = source["localPath"]
+        duration_by_programme[programme_name] = duration
     return duration_by_programme
 
 
@@ -1054,7 +1091,7 @@ def build_outputs(args: argparse.Namespace) -> dict[str, Any]:
         in_pdf = key in pdf_keys
         status = "ready-for-detail-enrichment" if is_open and in_pdf and fee else "needs-review"
         if not is_open:
-            status = "international-unavailable-current-cycle"
+            status = "current-cycle-not-open"
         if is_open and not in_pdf:
             exceptions.append(
                 {
@@ -1134,7 +1171,7 @@ def build_outputs(args: argparse.Namespace) -> dict[str, Any]:
     supplemental_duration_by_programme = build_supplemental_duration_by_programme(supplemental_sources_by_id)
     detail_url_counts: dict[str, int] = {}
     for item in programmes:
-        if item["canonicalDecision"]["currentCycleStatus"] != "ready-for-detail-enrichment":
+        if item["canonicalDecision"]["currentCycleStatus"] not in {"ready-for-detail-enrichment", "current-cycle-not-open"}:
             continue
         detail_url = canonical_detail_url(item.get("detailUrl"))
         if detail_url:
@@ -1183,6 +1220,7 @@ def build_outputs(args: argparse.Namespace) -> dict[str, Any]:
     closed_programmes = [item for item in programmes if item["applicationStatus"] != "open"]
     ready = [item for item in programmes if item["canonicalDecision"]["currentCycleStatus"] == "ready-for-detail-enrichment"]
     review = [item for item in programmes if item["canonicalDecision"]["currentCycleStatus"] == "needs-review"]
+    current_cycle_not_open = [item for item in programmes if item["canonicalDecision"]["currentCycleStatus"] == "current-cycle-not-open"]
 
     pdf_unique_names = sorted({item["nameEnOfficial"] for item in pdf_programmes})
     html_keys = {name_key(item["nameEnOfficial"]) for item in catalogue}
@@ -1237,7 +1275,8 @@ def build_outputs(args: argparse.Namespace) -> dict[str, Any]:
         "canonicalCount": len(programmes),
         "publicCandidateCount": len(ready),
         "needsReviewCount": len(review),
-        "internationalUnavailableCount": len(closed_programmes),
+        "currentCycleNotOpenCount": len(current_cycle_not_open),
+        "internationalUnavailableCount": 0,
         "detailSourceCount": len(detail_source_records),
         "detailTransportErrorCount": sum(1 for item in detail_source_records if item["status"] == "transport-error"),
         "programmeOrder": [
@@ -1378,10 +1417,12 @@ def verify(output_dir: Path) -> list[str]:
         issues.append(f"expected 40 unique current-intake PDF programmes, got {manifest['currentIntakePdfUniqueEntries']}")
     if manifest["publicCandidateCount"] != 40:
         issues.append(f"expected 40 public candidate rows, got {manifest['publicCandidateCount']}")
-    if manifest["internationalUnavailableCount"] != 4:
+    if manifest.get("currentCycleNotOpenCount") != 4:
         issues.append(
-            f"expected 4 current-cycle unavailable HTML rows, got {manifest['internationalUnavailableCount']}"
+            f"expected 4 current-cycle not-open HTML rows, got {manifest.get('currentCycleNotOpenCount')}"
         )
+    if manifest["internationalUnavailableCount"] != 0:
+        issues.append(f"expected 0 international unavailable rows, got {manifest['internationalUnavailableCount']}")
     if manifest.get("detailSourceCount", 0) < 30:
         issues.append(f"expected at least 30 unique programme detail sources, got {manifest.get('detailSourceCount', 0)}")
     if manifest.get("detailTransportErrorCount", 0) != 0:
@@ -1397,15 +1438,27 @@ def verify(output_dir: Path) -> list[str]:
     public_records = [
         item
         for item in candidate["programmes"]
-        if item["canonicalDecision"]["currentCycleStatus"] == "ready-for-detail-enrichment"
+        if item["canonicalDecision"]["currentCycleStatus"] in {"ready-for-detail-enrichment", "current-cycle-not-open"}
     ]
     parsed_details = [
         item for item in public_records if item.get("programmeDetail", {}).get("status") == "official-detail-parsed"
     ]
     if len(parsed_details) < 38:
-        issues.append(f"expected at least 38 parsed public programme details, got {len(parsed_details)}")
+        issues.append(f"expected at least 38 parsed visible programme details, got {len(parsed_details)}")
     if not any(item.get("languageRequirements", {}).get("scores") for item in candidate["programmes"]):
         issues.append("general English language scores were not parsed")
+    official_duration_records = [
+        item
+        for item in candidate["programmes"]
+        if item.get("programmeDetail", {}).get("duration", {}).get("status") == "programme-specific"
+        and item.get("programmeDetail", {}).get("duration", {}).get("officialText")
+        and (
+            item.get("programmeDetail", {}).get("duration", {}).get("minYears")
+            or item.get("programmeDetail", {}).get("duration", {}).get("semesters")
+        )
+    ]
+    if len(official_duration_records) != 44:
+        issues.append(f"expected 44 official duration records, got {len(official_duration_records)}")
     first_scores = candidate["programmes"][0].get("languageRequirements", {}).get("scores", {})
     expected_scores = {"IELTS": 5.5, "TOEFL_iBT": 46, "MUET": 4.0, "PTE_Academic": 51}
     for key, expected in expected_scores.items():

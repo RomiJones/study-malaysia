@@ -1,0 +1,84 @@
+{
+  "schemaVersion": 1,
+  "surfaces": [
+    {
+      "surface": "institution profile",
+      "fields": {
+        "officialLinks": {
+          "state": "ready",
+          "sourceUrl": "https://admission.utm.my/international-postgraduate-study/"
+        }
+      }
+    },
+    {
+      "surface": "catalogue tabs and aggregate counts",
+      "fields": {
+        "masterCount": {
+          "state": "ready",
+          "note": "Existing UTM master audit locks 153 rows."
+        },
+        "phdCount": {
+          "state": "ready",
+          "note": "55 doctoral rows"
+        },
+        "reviewLeakage": {
+          "state": "ready",
+          "note": "0 needs-review candidate rows"
+        }
+      }
+    },
+    {
+      "surface": "program-list rows",
+      "fields": {
+        "localizedName": {
+          "state": "ready",
+          "sourceUrl": "https://admission.utm.my/international-postgraduate-study/"
+        },
+        "faculty": {
+          "state": "ready",
+          "sourceUrl": "https://admission.utm.my/international-postgraduate-study/"
+        },
+        "tuitionDisplay": {
+          "state": "ready",
+          "sourceUrl": "https://admission.utm.my/fees-pg-inter/"
+        }
+      }
+    },
+    {
+      "surface": "program-detail sections",
+      "fields": {
+        "officialAcademicRequirement": {
+          "state": "ready",
+          "sourceUrl": "https://admission.utm.my/int-pg-entry-requirements/"
+        },
+        "officialLanguageRequirement": {
+          "state": "ready",
+          "sourceUrl": "https://admission.utm.my/english-language-requirements-3/"
+        },
+        "curriculum": {
+          "state": "ready",
+          "officialValueRows": 42,
+          "unpublishedRows": 13,
+          "note": "Official research-field, specialization and EdD coursework/dissertation structure populate course setting where published; detailed course/module lists remain unpublished for other rows."
+        },
+        "careers": {
+          "state": "unpublished",
+          "reason": "Structured programme-level career list is not published in collected source set."
+        }
+      }
+    },
+    {
+      "surface": "leakage and public filter checks",
+      "fields": {
+        "needsReviewLeakage": {
+          "state": "ready",
+          "note": "0 needs-review doctoral candidates"
+        },
+        "duplicateLeakage": {
+          "state": "ready",
+          "note": "DPP duplicate rows disposed as duplicate-of"
+        }
+      }
+    }
+  ]
+}

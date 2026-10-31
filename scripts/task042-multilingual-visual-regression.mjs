@@ -30,6 +30,9 @@ const locales = [
 
 const viewports = [
   { key: "desktop", label: "桌面端 1440x1000", width: 1440, height: 1000 },
+  { key: "breakpoint-1180", label: "中间断点 1180x900", width: 1180, height: 900 },
+  { key: "breakpoint-900", label: "中间断点 900x900", width: 900, height: 900 },
+  { key: "breakpoint-760", label: "中间断点 760x900", width: 760, height: 900 },
   { key: "mobile", label: "移动端 390x844", width: 390, height: 844 }
 ];
 
@@ -64,6 +67,9 @@ const scenarios = [
   scenario("university-facilities", "校园设施", "/universities/universiti-malaya-um", ".highlight-item--facility", async (page) => clickDetailTab(page, 4)),
   scenario("university-apply", "申请信息", "/universities/universiti-malaya-um", ".official-apply-card", async (page) => clickDetailTab(page, 5)),
   scenario("program-modal", "专业详情弹窗", "/universities/universiti-malaya-um?program=1670", ".program-detail-modal", undefined, { kind: "modal" }),
+  scenario("program-modal-composite-duration", "复合学制专业详情弹窗", "/universities/universiti-malaya-um?program=1671", ".program-detail-modal", undefined, { kind: "modal" }),
+  scenario("program-modal-split-duration", "多模式学制专业详情弹窗", "/universities/universiti-malaya-um?program=1672", ".program-detail-modal", undefined, { kind: "modal" }),
+  scenario("program-modal-missing-duration", "缺失学制专业详情弹窗", "/universities/universiti-malaya-um?program=1673", ".program-detail-modal", undefined, { kind: "modal" }),
   scenario("favorites", "收藏", "/favorites", ".favorite-university-card, .fav-empty"),
   scenario("compare", "对比", "/compare", ".compare-table"),
   scenario("planner-overview", "规划", "/planner", ".planner-tabs"),
@@ -939,6 +945,10 @@ const forbiddenEnglishRuntimeSamples = [
   "Fee follows the latest official page.",
   "Subject to official intake availability.",
   "Full-Time Duration",
+  "Part-Time Duration",
+  "Open and Distance Learning Duration",
+  "Special Semester",
+  "Special Semesters",
   "Language requirements are subject to official review.",
   "Applications may be submitted through the official system.",
   "May be submitted through the official system.",
@@ -1102,9 +1112,9 @@ const universities = [
 
 const programs = [
   program(1670, 1, "bachelor", "理科", "program-1670", "Bachelor of Software Engineering (Software Technology)", "软件工程学士（软件技术）", "軟體工程學士（軟體技術）", "Faculty of Computer Science", "计算机科学学院", "Sains Komputer", 42000, 5.5, "Full-Time Duration: 6 Semesters, (Clinical) — official page title is Doctor of Public Health (Mixed-Mode)"),
-  program(1671, 1, "master", "商科", "program-1671", "Master of Responsible Management and Agricultural Biosecurity", "管理责任与农业生物安全硕士", "管理責任與農業生物安全碩士", "Faculty of Business", "商学院", "Fakulti Perniagaan", 52000, 6, "1.5 Years"),
-  program(1672, 1, "master", "IT", "program-1672", "Master of Data Science", "数据科学硕士", "資料科學碩士", "Faculty of Computer Science", "计算机科学学院", "Fakulti Sains Komputer", 46000, 6, "2 Years"),
-  program(1673, 1, "phd", "Clinical Medicine", "program-1673", "Doctor of Philosophy in Clinical Medicine", "临床医学博士", "臨床醫學博士", "Faculty of Medicine", "医学院", "Fakulti Perubatan", 38000, 6, "3 Years"),
+  program(1671, 1, "master", "商科", "program-1671", "Master of Responsible Management and Agricultural Biosecurity", "管理责任与农业生物安全硕士", "管理責任與農業生物安全碩士", "Faculty of Business", "商学院", "Fakulti Perniagaan", 52000, 6, "Full-Time Duration: 2 Semester + 1 Special Semester, (Coursework). Open and Distance Learning Duration: 2 Semester + 1 Special Semesters, (Coursework)."),
+  program(1672, 1, "master", "IT", "program-1672", "Master of Data Science", "数据科学硕士", "資料科學碩士", "Faculty of Computer Science", "计算机科学学院", "Fakulti Sains Komputer", 46000, 6, "Full-Time Duration: 6 Semesters, (Research). Part-Time Duration: 8 Semesters, (Research)."),
+  program(1673, 1, "phd", "Clinical Medicine", "program-1673", "Doctor of Philosophy in Clinical Medicine", "临床医学博士", "臨床醫學博士", "Faculty of Medicine", "医学院", "Fakulti Perubatan", 38000, 6, ""),
   program(2670, 2, "master", "IT", "program-2670", "Master of Software Engineering", "软件工程硕士", "軟體工程碩士", "Faculty of Computing", "计算机学院", "Fakulti Pengkomputeran", 39000, 6, "2 Years"),
   program(2671, 2, "bachelor", "engineering", "program-2671", "Bachelor of Engineering", "工程学士", "工程學士", "Faculty of Engineering", "工程学院", "Fakulti Kejuruteraan", 41000, 5.5, "3.5 Years"),
   program(3670, 3, "master", "business", "program-3670", "Master of International Hospitality", "国际酒店管理硕士", "國際酒店管理碩士", "School of Hospitality", "酒店管理学院", "Pusat Pengajian Hospitaliti", 56000, 6, "1.5 Years")

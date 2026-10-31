@@ -1,0 +1,126 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-06-16T13:28:42.536Z",
+  "auditMode": "post-import-display-audit",
+  "institution": {
+    "code": "USM",
+    "name": "Universiti Sains Malaysia"
+  },
+  "level": "master",
+  "sourceCandidate": "data/imports/usm/2026-06-14/master-commercial-candidate.json",
+  "database": {
+    "canonicalRows": 305,
+    "archivedLegacyMasterRows": 3,
+    "publicReadyRows": 304,
+    "notAvailableForInternationalRows": 1,
+    "needsReviewRows": 0,
+    "curriculumRowsWithMultipleItems": 175,
+    "specializationRows": 160,
+    "officialOverviewDescriptionRows": 304
+  },
+  "candidateProgrammeContent": {
+    "recordsWithProgrammeContent": 305,
+    "overviewTextRows": 291,
+    "curriculumStructureRows": 52,
+    "courseRows": 11,
+    "specializationRows": 29,
+    "researchAreaRows": 114,
+    "internshipRows": 1,
+    "projectRows": 4,
+    "expertiseRows": 169
+  },
+  "releaseGate": {
+    "reportPath": "tmp/reports/usm-commercial-release-gate.json",
+    "decision": "commercial-release-ready"
+  },
+  "samples": [
+    {
+      "officialName": "MASTER IN BIOMEDICAL SCIENCE",
+      "descriptionZhCN": "School of Health Sciences开设的混合型硕士项目。申请、学制与费用以所列 USM 官方来源为准。 USM 官方项目页概述已采集，课程、研究方向或项目结构见详情字段。",
+      "curriculumZhCN": [
+        "课程结构：Taught courses - 20 units",
+        "课程结构：Research Project - 20 units",
+        "课程结构：Total Credit Unit - 40 units",
+        "课程：Qualitative and Quantitative Research Methods",
+        "课程：Research Ethics",
+        "课程：Techniques in Biomedicine Laboratories",
+        "课程：Cell Biology and Genetics",
+        "课程：Biochemistry",
+        "课程：Pharmacology and Toxicology",
+        "课程：医学微生物学"
+      ],
+      "specializationsZhCN": [],
+      "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=453&catid=55"
+    },
+    {
+      "officialName": "MASTER IN BIOPROCESS TECHNOLOGY",
+      "descriptionZhCN": "School of Industrial Technology开设的混合型硕士项目。申请、学制与费用以所列 USM 官方来源为准。 USM 官方项目页概述已采集，课程、研究方向或项目结构见详情字段。",
+      "curriculumZhCN": [
+        "研究方向：生物过程技术",
+        "研究方向：酶学／酶技术／生物催化剂",
+        "研究方向：发酵技术",
+        "研究方向：生物过程废弃物处理技术",
+        "研究方向：制药生物过程技术",
+        "研究方向：生化／代谢物技术",
+        "研究方向：过程控制／自动化",
+        "研究方向：食品／营养制品生物过程技术",
+        "开设单位：School of Industrial Technology"
+      ],
+      "specializationsZhCN": [
+        "生物过程技术",
+        "酶学／酶技术／生物催化剂",
+        "发酵技术",
+        "生物过程废弃物处理技术",
+        "制药生物过程技术",
+        "生化／代谢物技术",
+        "过程控制／自动化",
+        "食品／营养制品生物过程技术"
+      ],
+      "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=224&catid=51"
+    },
+    {
+      "officialName": "MASTER OF ARTS (EDUCATION) - CURRICULUM STUDIES",
+      "descriptionZhCN": "School of Educational Studies开设的混合型硕士项目。申请、学制与费用以所列 USM 官方来源为准。 USM 官方项目页概述已采集，课程、研究方向或项目结构见详情字段。",
+      "curriculumZhCN": [
+        "课程与研究方向以 USM 官方项目页为准。"
+      ],
+      "specializationsZhCN": [
+        "特殊教育",
+        "课程研究",
+        "幼儿教育",
+        "教育管理与行政",
+        "教育心理学",
+        "教育技术与多媒体",
+        "英语教育／TESOL",
+        "马来语教育",
+        "数学教育",
+        "心理测量与教育测量",
+        "科学教育"
+      ],
+      "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=362&catid=53"
+    },
+    {
+      "officialName": "MASTER IN COUNSELING",
+      "descriptionZhCN": "该授课型辅导学硕士面向辅导教师、私立及公立学院辅导与心理学讲师，以及具有辅导与心理学经验、尤其参与指导活动和助人过程的申请人。课程涵盖辅导体系、行政管理、课程与相关辅导议题，并提供四个辅导专修方向。",
+      "curriculumZhCN": [
+        "专修课程：学生可在儿童与青少年、婚姻与家庭、危机、组织四个方向中选择 2 门，共 6 学分。",
+        "辅导实践理论应用",
+        "个人辅导：过程、策略与技巧",
+        "团体辅导：过程、策略与技巧",
+        "指导与职业辅导",
+        "毕生发展心理学",
+        "多元文化辅导",
+        "辅导伦理与法律",
+        "个体评估",
+        "职业辅导"
+      ],
+      "specializationsZhCN": [
+        "儿童与青少年",
+        "婚姻与家庭",
+        "危机辅导",
+        "组织辅导"
+      ],
+      "officialSourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes?view=article&id=342&catid=53"
+    }
+  ]
+}

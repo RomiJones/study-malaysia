@@ -1,0 +1,295 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-06-19T17:00:40.288Z",
+  "institution": "Universiti Teknologi PETRONAS",
+  "universityCode": "UTP",
+  "decision": "published",
+  "publicationMode": "authorized-public-release",
+  "officialScope": {
+    "levels": [
+      "bachelor",
+      "master",
+      "phd"
+    ],
+    "applicantScope": "international",
+    "academicSession": "Current official intake cycle as of 2026-06-19; UG fees effective May 2026; 2026 UG/PG intakes; PG tuition page states effective January 2020/current intake year.",
+    "officialProgrammes": 63,
+    "byLevel": {
+      "bachelor": 15,
+      "master": 37,
+      "phd": 11
+    }
+  },
+  "importVerification": {
+    "mode": "imported",
+    "universityId": 54,
+    "backupPath": "/Users/ian/Desktop/dev/study-malaysia/apps/api/tmp/backups/utp-official-audit-publish-before-2026-06-19T16-53-01-663Z.json",
+    "summary": {
+      "candidateRows": 63,
+      "importRows": 63,
+      "byLevel": {
+        "bachelor": 15,
+        "master": 37,
+        "phd": 11
+      },
+      "readyRows": 63,
+      "needsReviewRows": 0,
+      "publishedRows": 63,
+      "uniqueSlugs": 63,
+      "officialTotalRows": 41,
+      "officialRateRows": 0,
+      "calculatedFromOfficialRateRows": 22,
+      "pendingFeeRows": 0,
+      "publicDisplayStatusCounts": {
+        "ready": 63
+      },
+      "officialSourceStatusCounts": {
+        "official-verified": 63
+      },
+      "feeAuditStatusCounts": {
+        "matched-official": 41,
+        "calculated-from-official-rate": 22
+      }
+    },
+    "verification": {
+      "candidateRows": 63,
+      "importRows": 63,
+      "byLevel": {
+        "bachelor": 15,
+        "master": 37,
+        "phd": 11
+      },
+      "readyRows": 63,
+      "needsReviewRows": 0,
+      "publishedRows": 63,
+      "uniqueSlugs": 63,
+      "officialTotalRows": 41,
+      "officialRateRows": 0,
+      "calculatedFromOfficialRateRows": 22,
+      "pendingFeeRows": 0,
+      "publicDisplayStatusCounts": {
+        "ready": 63
+      },
+      "officialSourceStatusCounts": {
+        "official-verified": 63
+      },
+      "feeAuditStatusCounts": {
+        "matched-official": 41,
+        "calculated-from-official-rate": 22
+      },
+      "universityPublicDisplayStatus": "ready",
+      "universityIsPublished": true,
+      "universityProgramCount": 63,
+      "publicLeakageRows": 0,
+      "adminNeedsReviewRows": 0,
+      "legacyActiveRows": 0
+    },
+    "archivedBackupPath": "38_publication_database_backup_before_import.json",
+    "archivedBackupSha256": "2dd69ebbcf463a0890f778f7c23cdaa60e2e5b9c4dc1f0bf3681b55975918dd9"
+  },
+  "databaseVerification": {
+    "candidateRows": 63,
+    "importRows": 63,
+    "byLevel": {
+      "bachelor": 15,
+      "master": 37,
+      "phd": 11
+    },
+    "readyRows": 63,
+    "needsReviewRows": 0,
+    "publishedRows": 63,
+    "uniqueSlugs": 63,
+    "officialTotalRows": 41,
+    "officialRateRows": 0,
+    "calculatedFromOfficialRateRows": 22,
+    "pendingFeeRows": 0,
+    "publicDisplayStatusCounts": {
+      "ready": 63
+    },
+    "officialSourceStatusCounts": {
+      "official-verified": 63
+    },
+    "feeAuditStatusCounts": {
+      "matched-official": 41,
+      "calculated-from-official-rate": 22
+    },
+    "universityPublicDisplayStatus": "ready",
+    "universityIsPublished": true,
+    "universityProgramCount": 63,
+    "publicLeakageRows": 0,
+    "adminNeedsReviewRows": 0,
+    "legacyActiveRows": 0
+  },
+  "publicApiUiVerification": {
+    "decision": "passed",
+    "apiSummary": {
+      "universityId": 54,
+      "universitySlug": "universiti-teknologi-petronas",
+      "universityPublicDisplayStatus": "ready",
+      "programCount": 63,
+      "universityEmbeddedProgramCount": 63,
+      "listTotal": 63,
+      "listCount": 63,
+      "calculatedProgramme": {
+        "id": 6891,
+        "slug": "utp-official-2026-row-052-phd-in-chemical-engineering",
+        "publicDisplayStatus": "ready",
+        "officialSourceStatus": "official-verified",
+        "officialFeeAuditStatus": "calculated-from-official-rate",
+        "durationYears": 3,
+        "tuitionAmount": 57000,
+        "officialTuitionMYR": 57000,
+        "tuitionDisplay": "RM 57,000 calculated total tuition",
+        "tuitionNoteHasFormula": true,
+        "tuitionNoteHasExclusion": true
+      },
+      "costEstimate": {
+        "durationYears": 3,
+        "tuitionTotal": 88350,
+        "grandTotal": 88350
+      }
+    },
+    "browserConsoleErrors": [],
+    "localePasses": [
+      {
+        "locale": "zh-CN",
+        "passed": true
+      },
+      {
+        "locale": "zh-TW",
+        "passed": true
+      },
+      {
+        "locale": "en",
+        "passed": true
+      },
+      {
+        "locale": "ms",
+        "passed": true
+      }
+    ]
+  },
+  "feePolicy": {
+    "officialTotalRows": 41,
+    "calculatedFromOfficialRateRows": 22,
+    "pendingFeeRows": 0,
+    "publicRule": "Official total fees are displayed as official totals. Research rows without official full-programme totals are displayed only after authorized calculation from official annual international fee and official minimum full-time duration, with formula and exclusion note retained in API/detail payloads.",
+    "sample": {
+      "slug": "utp-official-2026-row-052-phd-in-chemical-engineering",
+      "officialFeeAuditStatus": "calculated-from-official-rate",
+      "durationYears": 3,
+      "tuitionAmount": 57000,
+      "tuitionDisplay": "RM 57,000 calculated total tuition",
+      "tuitionNoteHasFormula": true,
+      "tuitionNoteHasExclusion": true
+    }
+  },
+  "adminReviewBoundary": {
+    "adminSearchUtpTotalRows": 68,
+    "officialPublishedRows": 63,
+    "archivedLegacyRows": 5,
+    "officialPublishedStatusCounts": {
+      "publicDisplayStatus": {
+        "ready": 63
+      },
+      "officialSourceStatus": {
+        "official-verified": 63
+      },
+      "officialFeeAuditStatus": {
+        "matched-official": 41,
+        "calculated-from-official-rate": 22
+      },
+      "isPublished": {
+        "true": 63
+      }
+    },
+    "archivedLegacyRowsSummary": [
+      {
+        "id": 649,
+        "code": "UTPP13605",
+        "slug": "universiti-teknologi-petronas-master-of-science-in-petroleum-engineering-13605",
+        "publicDisplayStatus": "archived",
+        "officialSourceStatus": "missing-source",
+        "officialFeeAuditStatus": "not-published",
+        "isPublished": false
+      },
+      {
+        "id": 648,
+        "code": "UTPP13604",
+        "slug": "universiti-teknologi-petronas-bachelor-of-technology-hons-in-information-and-communication-technology-13604",
+        "publicDisplayStatus": "archived",
+        "officialSourceStatus": "missing-source",
+        "officialFeeAuditStatus": "not-published",
+        "isPublished": false
+      },
+      {
+        "id": 647,
+        "code": "UTPP13603",
+        "slug": "universiti-teknologi-petronas-bachelor-of-engineering-hons-in-electrical-and-electronics-engineering-13603",
+        "publicDisplayStatus": "archived",
+        "officialSourceStatus": "missing-source",
+        "officialFeeAuditStatus": "not-published",
+        "isPublished": false
+      },
+      {
+        "id": 646,
+        "code": "UTPP13602",
+        "slug": "universiti-teknologi-petronas-bachelor-of-engineering-hons-in-chemical-engineering-13602",
+        "publicDisplayStatus": "archived",
+        "officialSourceStatus": "missing-source",
+        "officialFeeAuditStatus": "not-published",
+        "isPublished": false
+      },
+      {
+        "id": 645,
+        "code": "UTPP13601",
+        "slug": "universiti-teknologi-petronas-bachelor-of-engineering-hons-in-petroleum-engineering-13601",
+        "publicDisplayStatus": "archived",
+        "officialSourceStatus": "missing-source",
+        "officialFeeAuditStatus": "not-published",
+        "isPublished": false
+      }
+    ],
+    "operatorInstruction": "For admin review of the official UTP 2026 set, filter by university UTP and publicDisplayStatus=ready/isPublished=true; archived legacy rows are not public and are not part of the 63 official published catalogue."
+  },
+  "verificationCommands": [
+    {
+      "command": "npm run test -- tests/api/utp-official-audit-import.test.ts",
+      "status": "passed",
+      "detail": "2 tests passed"
+    },
+    {
+      "command": "npm run build",
+      "status": "passed",
+      "detail": "shared/api/web/admin builds passed; admin chunk-size warning is non-blocking"
+    },
+    {
+      "command": "npm --workspace @studymy/api run import:utp:official-audit -- --publish --allow-rate-derived",
+      "status": "passed",
+      "detail": "dry-run passed with 63 ready/published projection"
+    },
+    {
+      "command": "npm --workspace @studymy/api run import:utp:official-audit -- --confirm-publish --publish --allow-rate-derived",
+      "status": "passed",
+      "detail": "transactional publish import completed with backup"
+    },
+    {
+      "command": "npm --workspace @studymy/api run verify:utp:official-audit -- --publish --allow-rate-derived",
+      "status": "passed",
+      "detail": "database verification passed"
+    },
+    {
+      "command": "Playwright four-locale public UI audit",
+      "status": "passed",
+      "detail": "zh-CN, zh-TW, en, ms passed with zero browser console errors"
+    }
+  ],
+  "publicInstitutionPreservation": {
+    "status": "passed",
+    "universityId": 54,
+    "publicDisplayStatus": "ready",
+    "isPublished": true,
+    "programCount": 63,
+    "publicRoute": "http://localhost:5173/universities/universiti-teknologi-petronas"
+  }
+}

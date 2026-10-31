@@ -1,0 +1,136 @@
+# TASK-COVERS 院校校门/校园主图采集报告
+
+生成时间：2026-06-26T13:52:49.021Z
+
+- 院校总数：119
+- 已配置主图：119
+- 待继续复核：0
+- 本轮筛选替换：87
+
+## 口径
+
+- 优先使用校门、入口、校园外立面、校园建筑或可识别的院校所在建筑。
+- 剔除纯 logo、招生海报、活动合照、室内会议、实验室特写、错校校园图。
+- 少数线上/已改名/停办或小型学院使用可验证地址对应的楼体/门面作为展示主图。
+
+## 已配置清单
+
+- AIMST AIMST University：downloaded /assets/static-html/university-covers/aimst-aimst-university-92d84fa6e9.jpg
+- AIU Albukhary International University：downloaded /assets/static-html/university-covers/aiu-albukhary-international-university-e0f4e3b1c1.jpg
+- ALAM Malaysian Maritime Academy：downloaded /assets/static-html/university-covers/alam-malaysian-maritime-academy-ae4a5ecf4b.jpg
+- ALFA ALFA University College：downloaded /assets/static-html/university-covers/alfa-alfa-university-college-74abd3cb5c.jpg
+- AMU Asia Metropolitan University：downloaded /assets/static-html/university-covers/amu-asia-metropolitan-university-e0c3437d8d.jpg
+- APU Asia Pacific University of Technology & Innovation (APU)：downloaded /assets/static-html/university-covers/apu-asia-pacific-university-of-technology-and-innovation-apu-1e9018bec5.jpg
+- ASB Asia School of Business：downloaded /assets/static-html/university-covers/asb-asia-school-of-business-82f5cf0d1f.png
+- ASWARA Akademi Seni Budaya dan Warisan Kebangsaan：downloaded /assets/static-html/university-covers/aswara-akademi-seni-budaya-dan-warisan-kebangsaan-630d2fc2d0.jpg
+- AUCMS Allianze University College of Medical Sciences：downloaded /assets/static-html/university-covers/aucms-allianze-university-college-of-medical-sciences-b43f19792a.jpg
+- BAC Brickfields Asia College：downloaded /assets/static-html/university-covers/bac-brickfields-asia-college-045eec5803.jpg
+- BERJAYA BERJAYA University College：downloaded /assets/static-html/university-covers/berjaya-berjaya-university-college-ae59524b0f.jpg
+- BINARY Binary University of Management and Entrepreneurship：downloaded /assets/static-html/university-covers/binary-binary-university-of-management-and-entrepreneurship-a3e018a66b.jpg
+- CITYU City University：downloaded /assets/static-html/university-covers/cityu-city-university-338675240d.webp
+- CRESCENDO Crescendo International College：downloaded /assets/static-html/university-covers/crescendo-crescendo-international-college-82ba256c46.jpg
+- CUCMS Cyberjaya University College of Medical Sciences：downloaded /assets/static-html/university-covers/cucms-cyberjaya-university-college-of-medical-sciences-36afd27686.jpg
+- DHU DRB-HICOM University of Automotive Malaysia：downloaded /assets/static-html/university-covers/dhu-drb-hicom-university-of-automotive-malaysia-09ea9d699e.jpg
+- ERICAN Erican College：downloaded /assets/static-html/university-covers/erican-erican-college-f8fb64589d.jpg
+- FCUC First City University College：downloaded /assets/static-html/university-covers/fcuc-first-city-university-college-86509ac8ac.jpg
+- GEOMATIKA Universiti Geomatika Malaysia：downloaded /assets/static-html/university-covers/geomatika-universiti-geomatika-malaysia-6fa488bd2b.webp
+- GLOBALNXT GlobalNxt University：downloaded /assets/static-html/university-covers/globalnxt-globalnxt-university-30ecad7f7d.png
+- HCUC Han Chiang University College of Communication：downloaded /assets/static-html/university-covers/hcuc-han-chiang-university-college-of-communication-4b15a5b48b.jpg
+- HELP HELP University：downloaded /assets/static-html/university-covers/help-help-university-231c9b2b5d.jpg
+- IBS IBS College：downloaded /assets/static-html/university-covers/ibs-ibs-college-b9934a4b51.jpg
+- IIUM International Islamic University Malaysia (IIUM)：downloaded /assets/static-html/university-covers/iium-international-islamic-university-malaysia-iium-9dffc345db.jpg
+- IMU International Medical University：downloaded /assets/static-html/university-covers/imu-international-medical-university-f11d86c59f.jpg
+- INCEIF International Centre for Education in Islamic Finance：downloaded /assets/static-html/university-covers/inceif-international-centre-for-education-in-islamic-finance-eb5188c594.jpg
+- INSANIAH INSANIAH University College：downloaded /assets/static-html/university-covers/insaniah-insaniah-university-college-24c9d20537.jpg
+- INTI INTI International University：downloaded /assets/static-html/university-covers/inti-inti-international-university-4966094c14.jpg
+- IPG Institut Pendidikan Guru：downloaded /assets/static-html/university-covers/ipg-institut-pendidikan-guru-beede2b01d.jpg
+- IUCAS International University College of Arts and Science：downloaded /assets/static-html/university-covers/iucas-international-university-college-of-arts-and-science-7cb3efb8c1.jpg
+- IUCTT International University College of Technology Twintech：downloaded /assets/static-html/university-covers/iuctt-international-university-college-of-technology-twintech-6aaad3d8de.jpg
+- IUKL Infrastructure University Kuala Lumpur：downloaded /assets/static-html/university-covers/iukl-infrastructure-university-kuala-lumpur-68d678cb9b.jpg
+- IUMW International University of Malaya-Wales：downloaded /assets/static-html/university-covers/iumw-international-university-of-malaya-wales-b13f081fab.jpg
+- KDU KDU University College：downloaded /assets/static-html/university-covers/kdu-kdu-university-college-fcb3357b16.jpg
+- KLMUC Kuala Lumpur Metropolitan University College：downloaded /assets/static-html/university-covers/klmuc-kuala-lumpur-metropolitan-university-college-eb0a739f88.jpg
+- KPJ KPJ Healthcare University College：downloaded /assets/static-html/university-covers/kpj-kpj-healthcare-university-college-1e3ec6ab89.jpg
+- KUIM University College of Islam Malacca：downloaded /assets/static-html/university-covers/kuim-university-college-of-islam-malacca-75e5517b35.jpg
+- KUIS International Islamic University College Selangor：downloaded /assets/static-html/university-covers/kuis-international-islamic-university-college-selangor-bf4858d1c8.jpg
+- KUISAS Sultan Azlan Shah Islamic University College：downloaded /assets/static-html/university-covers/kuisas-sultan-azlan-shah-islamic-university-college-b41e07b49c.jpg
+- LELC Limkokwing Executive Leadership College：downloaded /assets/static-html/university-covers/lelc-limkokwing-executive-leadership-college-2d1c5d076e.jpg
+- LINTON Linton University College：downloaded /assets/static-html/university-covers/linton-linton-university-college-2722965525.jpg
+- LUC Lincoln University College：downloaded /assets/static-html/university-covers/luc-lincoln-university-college-01a4ca0283.jpg
+- LUCT Limkokwing University of Creative Technology：downloaded /assets/static-html/university-covers/luct-limkokwing-university-of-creative-technology-d49fac39f2.jpg
+- MAHSA MAHSA University：downloaded /assets/static-html/university-covers/mahsa-mahsa-university-47a18a242c.jpg
+- MANTISSA Mantissa College：downloaded /assets/static-html/university-covers/mantissa-mantissa-college-48c929bb72.png
+- MEDIU Al-Madinah International University：downloaded /assets/static-html/university-covers/mediu-al-madinah-international-university-88ba92fba5.webp
+- MERITUS Meritus University：downloaded /assets/static-html/university-covers/meritus-meritus-university-16680657f3.jpg
+- MIA Malaysian Institute of Art：downloaded /assets/static-html/university-covers/mia-malaysian-institute-of-art-8a4f4ea8e0.png
+- MIBC Malaysian Integrated Business College：downloaded /assets/static-html/university-covers/mibc-malaysian-integrated-business-college-e8fc1cd088.jpg
+- MIM Malaysian Institute of Management：downloaded /assets/static-html/university-covers/mim-malaysian-institute-of-management-89876d8ea6.jpg
+- MISI Malaysian Institute for Supply Chain Innovation：downloaded /assets/static-html/university-covers/misi-malaysian-institute-for-supply-chain-innovation-ba23b0883e.jpg
+- MIU Manipal International University：downloaded /assets/static-html/university-covers/miu-manipal-international-university-75cf0801f0.jpg
+- MMU Multimedia University (MMU)：downloaded /assets/static-html/university-covers/mmu-multimedia-university-mmu-5f0c6313f2.jpg
+- MONASH Monash University Malaysia：downloaded /assets/static-html/university-covers/monash-monash-university-malaysia-0b15b9b9d8.jpg
+- MPI Methodist Pilley Institute：downloaded /assets/static-html/university-covers/mpi-methodist-pilley-institute-5eaaa1925a.webp
+- MSU Management and Science University：downloaded /assets/static-html/university-covers/msu-management-and-science-university-352a8a22b3.webp
+- MUST Malaysia University of Science and Technology：downloaded /assets/static-html/university-covers/must-malaysia-university-of-science-and-technology-c51d9fc518.jpg
+- NBUC North Borneo University College：downloaded /assets/static-html/university-covers/nbuc-north-borneo-university-college-18bd3e6933.webp
+- NEUC New Era University College：downloaded /assets/static-html/university-covers/neuc-new-era-university-college-ab58227c0a.jpg
+- NILAI Nilai University：downloaded /assets/static-html/university-covers/nilai-nilai-university-eb99f0cb63.png
+- NKL Northern Kuala Lumpur International College：downloaded /assets/static-html/university-covers/nkl-northern-kuala-lumpur-international-college-b269af4316.jpg
+- OLYMPIA Olympia College：downloaded /assets/static-html/university-covers/olympia-olympia-college-8adf7edbef.jpg
+- PBS Putra Business School：downloaded /assets/static-html/university-covers/pbs-putra-business-school-4d4beaef9e.png
+- PERDANA Perdana University：downloaded /assets/static-html/university-covers/perdana-perdana-university-7544e49559.jpg
+- PIC Putra International College：downloaded /assets/static-html/university-covers/pic-putra-international-college-5b3be525f8.jpg
+- POLIMAS Politeknik Sultan Abdul Halim Mu'adzam Shah：downloaded /assets/static-html/university-covers/polimas-politeknik-sultan-abdul-halim-mu-adzam-shah-3fcce47d7f.jpg
+- PPD Politeknik Port Dickson：downloaded /assets/static-html/university-covers/ppd-politeknik-port-dickson-ec22907eb8.jpg
+- PSDC Penang Skills Development Centre：downloaded /assets/static-html/university-covers/psdc-penang-skills-development-centre-d87571f073.jpg
+- QIU Quest International University Perak：downloaded /assets/static-html/university-covers/qiu-quest-international-university-perak-2f9228f275.jpg
+- RAFFLES Raffles University：downloaded /assets/static-html/university-covers/raffles-raffles-university-1e8abb1343.jpg
+- RIYAZ Ri-Yaz College：downloaded /assets/static-html/university-covers/riyaz-ri-yaz-college-1f9d60c9eb.jpg
+- SAITO Saito University College：downloaded /assets/static-html/university-covers/saito-saito-university-college-00be5abbda.jpg
+- SEGI SEGi University：downloaded /assets/static-html/university-covers/segi-segi-university-6fd8bd557f.png
+- SOUTHERN Southern University College：downloaded /assets/static-html/university-covers/southern-southern-university-college-c77d2ee370.jpg
+- STAMFORD Stamford College Petaling Jaya：downloaded /assets/static-html/university-covers/stamford-stamford-college-petaling-jaya-5dd884729c.jpg
+- SUNWAY Sunway University：downloaded /assets/static-html/university-covers/sunway-sunway-university-007ec7f667.jpg
+- TARUC Tunku Abdul Rahman University College：downloaded /assets/static-html/university-covers/taruc-tunku-abdul-rahman-university-college-4ba94a0d9d.jpg
+- TATI TATI University College：downloaded /assets/static-html/university-covers/tati-tati-university-college-d8b0248805.png
+- TAYLORS Taylor's University：downloaded /assets/static-html/university-covers/taylors-taylor-s-university-c324c02dc9.webp
+- TOA The One Academy of Communication Design：downloaded /assets/static-html/university-covers/toa-the-one-academy-of-communication-design-62cf0cab42.webp
+- UCAM University College of Agroscience：downloaded /assets/static-html/university-covers/ucam-university-college-of-agroscience-9c14f3eb5d.jpg
+- UCB University College Bestari：downloaded /assets/static-html/university-covers/ucb-university-college-bestari-1098994ac5.png
+- UCMI University College of MAIWP International：downloaded /assets/static-html/university-covers/ucmi-university-college-of-maiwp-international-57515e6fe9.jpg
+- UCSA University College Shahputra：downloaded /assets/static-html/university-covers/ucsa-university-college-shahputra-d667619839.jpg
+- UCSI UCSI University：downloaded /assets/static-html/university-covers/ucsi-ucsi-university-e9984255f9.webp
+- UCTS University College of Technology Sarawak：downloaded /assets/static-html/university-covers/ucts-university-college-of-technology-sarawak-767f938253.jpg
+- UCYP University College of Yayasan Pahang：downloaded /assets/static-html/university-covers/ucyp-university-college-of-yayasan-pahang-635d0cb2ee.jpg
+- UITM Universiti Teknologi MARA (UiTM)：downloaded /assets/static-html/university-covers/uitm-universiti-teknologi-mara-uitm-755d4053a7.jpg
+- UKM Universiti Kebangsaan Malaysia (UKM)：downloaded /assets/static-html/university-covers/ukm-universiti-kebangsaan-malaysia-ukm-e92379f4a3.jpg
+- UM Universiti Malaya (UM)：downloaded /assets/static-html/university-covers/um-universiti-malaya-um-299d955410.jpg
+- UMK Universiti Malaysia Kelantan (UMK)：downloaded /assets/static-html/university-covers/umk-universiti-malaysia-kelantan-umk-82cfe142c8.jpg
+- UMPSA Universiti Malaysia Pahang Al-Sultan Abdullah (UMPSA)：downloaded /assets/static-html/university-covers/umpsa-universiti-malaysia-pahang-al-sultan-abdullah-umpsa-4a05c82caf.webp
+- UMS Universiti Malaysia Sabah：downloaded /assets/static-html/university-covers/ums-universiti-malaysia-sabah-04ce7ce47b.jpg
+- UMT Universiti Malaysia Terengganu：downloaded /assets/static-html/university-covers/umt-universiti-malaysia-terengganu-031b877e4c.jpg
+- UNIKL Universiti Kuala Lumpur：downloaded /assets/static-html/university-covers/unikl-universiti-kuala-lumpur-2651e62f63.webp
+- UNIMAP Universiti Malaysia Perlis (UniMAP)：downloaded /assets/static-html/university-covers/unimap-universiti-malaysia-perlis-unimap-502a91ffe6.jpg
+- UNIMAS Universiti Malaysia Sarawak (UNIMAS)：downloaded /assets/static-html/university-covers/unimas-universiti-malaysia-sarawak-unimas-bbdcf17085.jpg
+- UNIMEL University of Melaka：downloaded /assets/static-html/university-covers/unimel-university-of-melaka-75e5517b35.jpg
+- UNIMY University Malaysia of Computer Science and Engineering：downloaded /assets/static-html/university-covers/unimy-university-malaysia-of-computer-science-and-engineering-e4c69a2917.jpg
+- UNIRAZAK Universiti Tun Abdul Razak：downloaded /assets/static-html/university-covers/unirazak-universiti-tun-abdul-razak-617766e89f.jpg
+- UNISEL Universiti Selangor：downloaded /assets/static-html/university-covers/unisel-universiti-selangor-35526e41d1.jpg
+- UNISHAMS Universiti Islam Antarabangsa Sultan Abdul Halim Mu'adzam Shah：downloaded /assets/static-html/university-covers/unishams-universiti-islam-antarabangsa-sultan-abdul-halim-mu-adzam-shah-72cbe20709.png
+- UNISZA Universiti Sultan Zainal Abidin (UniSZA)：downloaded /assets/static-html/university-covers/unisza-universiti-sultan-zainal-abidin-unisza-772fd89279.jpg
+- UNITAR UNITAR International University：downloaded /assets/static-html/university-covers/unitar-unitar-international-university-eb0a739f88.jpg
+- UNITEN Universiti Tenaga Nasional：downloaded /assets/static-html/university-covers/uniten-universiti-tenaga-nasional-c08a58422a.jpg
+- UNM University of Nottingham Malaysia：downloaded /assets/static-html/university-covers/unm-university-of-nottingham-malaysia-41a9f4967b.jpg
+- UOC University of Cyberjaya：downloaded /assets/static-html/university-covers/uoc-university-of-cyberjaya-a7a73e4c23.jpg
+- UPM Universiti Putra Malaysia (UPM)：downloaded /assets/static-html/university-covers/upm-universiti-putra-malaysia-upm-dd4cbe3560.jpg
+- UPNM Universiti Pertahanan Nasional Malaysia：downloaded /assets/static-html/university-covers/upnm-universiti-pertahanan-nasional-malaysia-03e4e50af8.jpg
+- UPSI Universiti Pendidikan Sultan Idris (UPSI)：downloaded /assets/static-html/university-covers/upsi-universiti-pendidikan-sultan-idris-upsi-1ec99fab97.jpg
+- USIM Universiti Sains Islam Malaysia：downloaded /assets/static-html/university-covers/usim-universiti-sains-islam-malaysia-0d999c7a7c.jpg
+- USM Universiti Sains Malaysia：downloaded /assets/static-html/university-covers/usm-universiti-sains-malaysia-usm-e99b4d480c.jpg
+- UTAR Universiti Tunku Abdul Rahman (UTAR)：downloaded /assets/static-html/university-covers/utar-universiti-tunku-abdul-rahman-utar-a590246339.webp
+- UTEM Universiti Teknikal Malaysia Melaka (UTeM)：downloaded /assets/static-html/university-covers/utem-universiti-teknikal-malaysia-melaka-utem-386ee4317a.jpg
+- UTHM Universiti Tun Hussein Onn Malaysia (UTHM)：downloaded /assets/static-html/university-covers/uthm-universiti-tun-hussein-onn-malaysia-uthm-3937586133.jpg
+- UTM Universiti Teknologi Malaysia：downloaded /assets/static-html/university-covers/utm-utm-8aba9ad950.jpg
+- UTP Universiti Teknologi PETRONAS：downloaded /assets/static-html/university-covers/utp-universiti-teknologi-petronas-93d6206d48.jpg
+- UUM Universiti Utara Malaysia (UUM)：downloaded /assets/static-html/university-covers/uum-universiti-utara-malaysia-uum-f730b9f30a.jpg
+- VMIUC Vinayaka Mission International University College：downloaded /assets/static-html/university-covers/vmiuc-vinayaka-mission-international-university-college-ad7ea51076.jpg

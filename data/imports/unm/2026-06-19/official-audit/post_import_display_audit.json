@@ -1,0 +1,139 @@
+{
+  "schemaVersion": 2,
+  "auditId": "unm-official-audit-post-import-display-2026-06-21",
+  "auditedAt": "2026-06-21T00:00:00+08:00",
+  "universityCode": "UNM",
+  "universitySlug": "university-of-nottingham-malaysia",
+  "universityId": 18,
+  "authorization": "controlled-public-import",
+  "decision": "published",
+  "backupPath": "/Users/ian/Desktop/dev/study-malaysia/apps/api/tmp/backups/unm-official-audit-before-2026-06-21T00-00-00-000Z.json",
+  "reviewUrl": "http://127.0.0.1:5173/universities/university-of-nottingham-malaysia",
+  "programmeDetailReviewSamples": [
+    "http://127.0.0.1:5173/programs/unm-official-2026-row-045-postgraduate-certificate-in-education",
+    "http://127.0.0.1:5173/programs/unm-official-2026-row-046-postgraduate-diploma-in-education",
+    "http://127.0.0.1:5173/programs/unm-official-2026-row-081-psychology-phd"
+  ],
+  "databaseVerification": {
+    "candidateRows": 81,
+    "importRows": 81,
+    "publishedRows": 81,
+    "readyRows": 81,
+    "needsReviewRows": 0,
+    "legacyPublicRows": 0,
+    "universityIsPublished": true,
+    "universityPublicDisplayStatus": "ready",
+    "universityProgramCount": 81,
+    "byLevel": {
+      "bachelor": 36,
+      "master": 28,
+      "postgraduate-certificate": 1,
+      "postgraduate-diploma": 1,
+      "phd": 15
+    },
+    "feeAuditStatusCounts": {
+      "matched-official": 13,
+      "calculated-from-official-rate": 68
+    },
+    "applicationDocumentRows": 81,
+    "localizedNameRows": 81,
+    "localizedFacultyRows": 81
+  },
+  "publicApiVerification": {
+    "baseUrl": "http://127.0.0.1:3000/api",
+    "universityEndpoint": "/api/universities/university-of-nottingham-malaysia",
+    "programmesEndpoint": "/api/programs?universityId=18&pageSize=100&includeMeta=true",
+    "programCount": 81,
+    "actualProgramItems": 81,
+    "statusCounts": {
+      "ready": 81
+    },
+    "groupCounts": [
+      {
+        "level": "bachelor",
+        "count": 36
+      },
+      {
+        "level": "master",
+        "count": 28
+      },
+      {
+        "level": "postgraduate-certificate",
+        "count": 1
+      },
+      {
+        "level": "postgraduate-diploma",
+        "count": 1
+      },
+      {
+        "level": "phd",
+        "count": 15
+      }
+    ],
+    "pgCert": {
+      "slug": "unm-official-2026-row-045-postgraduate-certificate-in-education",
+      "nameEnOfficial": "Postgraduate Certificate in Education",
+      "officialTuitionMYR": 26000
+    },
+    "pgDip": {
+      "slug": "unm-official-2026-row-046-postgraduate-diploma-in-education",
+      "nameEnOfficial": "Postgraduate Diploma in Education",
+      "officialTuitionMYR": 40000
+    },
+    "psychologyPhdDetail": {
+      "slug": "unm-official-2026-row-081-psychology-phd",
+      "officialTuitionMYR": 174000,
+      "durationOfficialIncludes": "PhD: 3-4 years",
+      "applicationChecklistLink": "present"
+    },
+    "failures": []
+  },
+  "browserVerification": {
+    "baseUrl": "http://127.0.0.1:5173",
+    "locales": [
+      "zh-CN",
+      "zh-TW",
+      "en",
+      "ms"
+    ],
+    "consoleMessages": [],
+    "pageErrors": [],
+    "checks": {
+      "universityTitle": "passed",
+      "publicCount81": "passed",
+      "pgCertLevelVisible": "passed",
+      "pgDipLevelVisible": "passed",
+      "reviewLeakage": "passed",
+      "psychologyPhdDetail": "passed",
+      "psychologyPhdTuitionRm174000": "passed",
+      "psychologyPhdDuration3To4Years": "passed",
+      "applicationChecklistOrDocuments": "passed",
+      "brokenTextUndefinedObject": "passed"
+    }
+  },
+  "artifactVerification": {
+    "deepSourceFieldAudit": "passed",
+    "publicDisplayHygieneAudit": "passed",
+    "deliveryReview": "passed",
+    "candidateIntegrity": "passed",
+    "tuitionAudit": "passed"
+  },
+  "verificationCommands": [
+    "npm --workspace @studymy/api run publish:unm:official-audit -- --candidate /Users/ian/Desktop/dev/study-malaysia/data/imports/unm/2026-06-19/official-audit/08_candidate_dataset.json",
+    "python3 scripts/audit_candidate_integrity.py data/imports/unm/2026-06-19/official-audit/99_integrity_manifest.json --official-domain nottingham.edu.my --require-instruction-ledger --require-display-parity --summary-only",
+    "python3 scripts/audit_total_tuition.py data/imports/unm/2026-06-19/official-audit/99_integrity_manifest.json --allow-official-rate-calculation --summary-only",
+    "python3 scripts/audit_pipeline_stage.py data/imports/unm/2026-06-19/official-audit --stage delivery_review --summary-only",
+    "npm run test -- tests/api/unm-official-audit-import.test.ts tests/web/format.test.ts tests/shared/shared-contract.test.ts",
+    "npm --workspace @studymy/api run build",
+    "npm run build",
+    "npm --workspace @studymy/api run publish:unm:official-audit -- --candidate /Users/ian/Desktop/dev/study-malaysia/data/imports/unm/2026-06-19/official-audit/08_candidate_dataset.json --backup-output /Users/ian/Desktop/dev/study-malaysia/apps/api/tmp/backups/unm-official-audit-before-2026-06-21T00-00-00-000Z.json --confirm-import",
+    "npm --workspace @studymy/api run verify:unm:official-audit -- --candidate /Users/ian/Desktop/dev/study-malaysia/data/imports/unm/2026-06-19/official-audit/08_candidate_dataset.json",
+    "Playwright browser audit for /universities/university-of-nottingham-malaysia and /programs/unm-official-2026-row-081-psychology-phd across zh-CN, zh-TW, en, ms"
+  ],
+  "notes": [
+    "catalogCacheCleared was false because REDIS_URL is not configured in this local environment; public API responses were verified after import.",
+    "Existing local API and web runtimes were reused; no StudyMY project process was stopped or restarted.",
+    "The admin build emitted the existing Vite large chunk warning; build completed successfully.",
+    "Real Notion is not writable in this Codex session, so the local Chinese development log was updated instead."
+  ]
+}

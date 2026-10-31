@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "institutionIdentifier": "国油科技大学 / Universiti Teknologi PETRONAS",
+  "universityCode": "UTP",
+  "shortName": "UTP",
+  "collectionScope": "full",
+  "levels": [
+    "bachelor",
+    "master",
+    "phd"
+  ],
+  "applicantScope": "international",
+  "authorization": "collect",
+  "academicSession": "Current official intake cycle as of 2026-06-19; UG fees effective May 2026; 2026 UG/PG intakes; PG tuition page states effective January 2020/current intake year.",
+  "currentAsOf": "2026-06-19",
+  "taskInstruction": "采集统计国油科技大学的本硕博专业信息，使用 StudyMY official university collector skill 和验收标准，严格执行；仅采集统计，不入库不发布。",
+  "officialDomains": [
+    "utp.edu.my",
+    "utpdec.microsoftcrmportals.com"
+  ],
+  "status": "candidate-built-review-required",
+  "notes": [
+    "Collect-only run: no database writes and no publication.",
+    "Official count and fee conflicts are retained as review exceptions."
+  ],
+  "officialName": "Universiti Teknologi PETRONAS",
+  "selectedChineseTask": "No dedicated Notion task page supplied in this turn; executed from Ian current Chinese instruction plus StudyMY collector skill task snapshot.",
+  "prdAndTechnicalDesign": [
+    "docs/notion-snapshot/产品需求文档.md",
+    "docs/notion-snapshot/技术方案.md",
+    "tmp/dev-logs/2026-06-19-studymy-official-display-workflow-acceptance-standard.md"
+  ],
+  "outputPath": "data/imports/utp/2026-06-19/official-audit",
+  "verificationCommands": [
+    "python3 /Users/ian/.codex/skills/studymy-official-university-collector/scripts/audit_pipeline_stage.py data/imports/utp/2026-06-19/official-audit --stage discover_sources --summary-only",
+    "python3 /Users/ian/.codex/skills/studymy-official-university-collector/scripts/audit_pipeline_stage.py data/imports/utp/2026-06-19/official-audit --stage delivery_review --summary-only"
+  ],
+  "rollbackTarget": "Not applicable for collect-only run; no database mutation authorized.",
+  "notionOrLocalNotePath": "tmp/dev-logs/2026-06-19-utp-official-collection.md"
+}

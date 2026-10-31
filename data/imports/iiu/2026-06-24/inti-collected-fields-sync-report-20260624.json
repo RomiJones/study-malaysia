@@ -1,0 +1,969 @@
+{
+  "matched": 107,
+  "missing": [],
+  "updated": [
+    {
+      "code": "INTI-B-001",
+      "nameEnOfficial": "Actuarial Science Program (American University Program)",
+      "tuitionAmount": 48820,
+      "durationYears": 4,
+      "ielts": 5.5,
+      "curriculumZh": 17,
+      "careersZh": 5
+    },
+    {
+      "code": "INTI-B-002",
+      "nameEnOfficial": "Australian Degree Transfer Programme (Commerce)",
+      "tuitionAmount": 53262,
+      "durationYears": 2,
+      "ielts": null,
+      "curriculumZh": 14,
+      "careersZh": 9
+    },
+    {
+      "code": "INTI-B-003",
+      "nameEnOfficial": "Australian Degree Transfer Programme (Science)",
+      "tuitionAmount": 57182,
+      "durationYears": 3,
+      "ielts": null,
+      "curriculumZh": 21,
+      "careersZh": 6
+    },
+    {
+      "code": "INTI-B-004",
+      "nameEnOfficial": "B.A. (Hons) in Fashion Management and Communication 3+0 in collaboration with Sheffield Hallam University, UK",
+      "tuitionAmount": 90824,
+      "durationYears": 3,
+      "ielts": null,
+      "curriculumZh": 33,
+      "careersZh": 13
+    },
+    {
+      "code": "INTI-B-005",
+      "nameEnOfficial": "B.Sc. (Hons) in Physiotherapy",
+      "tuitionAmount": 105027,
+      "durationYears": 4,
+      "ielts": 5.5,
+      "curriculumZh": 24,
+      "careersZh": 7
+    },
+    {
+      "code": "INTI-B-006",
+      "nameEnOfficial": "BA (Hons) Graphic Design 3+0 in collaboration with Sheffield Hallam University, UK",
+      "tuitionAmount": 91660,
+      "durationYears": 3,
+      "ielts": 6,
+      "curriculumZh": 36,
+      "careersZh": 7
+    },
+    {
+      "code": "INTI-B-007",
+      "nameEnOfficial": "Bachelor in Music Production and Audio Technology (Honours)",
+      "tuitionAmount": 113192,
+      "durationYears": 3,
+      "ielts": 5,
+      "curriculumZh": 24,
+      "careersZh": 18
+    },
+    {
+      "code": "INTI-B-008",
+      "nameEnOfficial": "Bachelor in Sports Management (Honours)",
+      "tuitionAmount": 79451,
+      "durationYears": 3,
+      "ielts": null,
+      "curriculumZh": 34,
+      "careersZh": 6
+    },
+    {
+      "code": "INTI-B-009",
+      "nameEnOfficial": "Bachelor of Accountancy (Honours)",
+      "tuitionAmount": 98128,
+      "durationYears": 4,
+      "ielts": 6,
+      "curriculumZh": 43,
+      "careersZh": 4
+    },
+    {
+      "code": "INTI-B-010",
+      "nameEnOfficial": "Bachelor of Accounting & Finance (Honours)",
+      "tuitionAmount": 87551,
+      "durationYears": 3,
+      "ielts": 6,
+      "curriculumZh": 32,
+      "careersZh": 5
+    },
+    {
+      "code": "INTI-B-011",
+      "nameEnOfficial": "Bachelor of Art (Honours) Interior Architecture & Design 3.5+0 in collaboration with Sheffield Hallam University, UK",
+      "tuitionAmount": 97556,
+      "durationYears": 3.5,
+      "ielts": 6,
+      "curriculumZh": 42,
+      "careersZh": 9
+    },
+    {
+      "code": "INTI-B-012",
+      "nameEnOfficial": "Bachelor of Arts (Honours) Accounting and Finance 3+0 in collaboration with University of Hertfordshire, UK",
+      "tuitionAmount": 89508,
+      "durationYears": 3,
+      "ielts": 6,
+      "curriculumZh": 34,
+      "careersZh": 5
+    },
+    {
+      "code": "INTI-B-013",
+      "nameEnOfficial": "Bachelor of Arts (Honours) Advertising and Digital Marketing 3+0 in collaboration with University of Hertfordshire, UK",
+      "tuitionAmount": 89467,
+      "durationYears": 3,
+      "ielts": 6,
+      "curriculumZh": 23,
+      "careersZh": 9
+    },
+    {
+      "code": "INTI-B-014",
+      "nameEnOfficial": "Bachelor of Arts (Honours) Business Administration (3+0) in collaboration with University of Hertfordshire, UK",
+      "tuitionAmount": 89467,
+      "durationYears": 3,
+      "ielts": 6,
+      "curriculumZh": 25,
+      "careersZh": 7
+    },
+    {
+      "code": "INTI-B-015",
+      "nameEnOfficial": "Bachelor of Arts (Honours) Digital Media",
+      "tuitionAmount": 79640,
+      "durationYears": 3,
+      "ielts": 4.5,
+      "curriculumZh": 35,
+      "careersZh": 7
+    },
+    {
+      "code": "INTI-B-016",
+      "nameEnOfficial": "Bachelor of Arts (Honours) Finance 3+0 in collaboration with University of Hertfordshire, UK",
+      "tuitionAmount": 89467,
+      "durationYears": 3,
+      "ielts": 6,
+      "curriculumZh": 22,
+      "careersZh": 2
+    },
+    {
+      "code": "INTI-B-017",
+      "nameEnOfficial": "Bachelor of Arts (Honours) Marketing (3+0) in collaboration with University of Hertfordshire, UK",
+      "tuitionAmount": 89467,
+      "durationYears": 3,
+      "ielts": 6,
+      "curriculumZh": 23,
+      "careersZh": 4
+    },
+    {
+      "code": "INTI-B-018",
+      "nameEnOfficial": "Bachelor of Arts (Honours) Mass Communications 3+0 in collaboration with the University of Hertfordshire, UK",
+      "tuitionAmount": 88496,
+      "durationYears": 3,
+      "ielts": 6.5,
+      "curriculumZh": 26,
+      "careersZh": 5
+    },
+    {
+      "code": "INTI-B-019",
+      "nameEnOfficial": "Bachelor of Arts in Communication 4+0 in collaboration with Southern New Hampshire University, USA",
+      "tuitionAmount": 102920,
+      "durationYears": 4,
+      "ielts": 6.5,
+      "curriculumZh": 27,
+      "careersZh": 8
+    },
+    {
+      "code": "INTI-B-020",
+      "nameEnOfficial": "Bachelor of Arts in Psychology 4+0 in collaboration with Southern New Hampshire University, USA",
+      "tuitionAmount": 105320,
+      "durationYears": 4,
+      "ielts": 6.5,
+      "curriculumZh": 31,
+      "careersZh": 6
+    },
+    {
+      "code": "INTI-B-021",
+      "nameEnOfficial": "Bachelor of Banking and Finance (Honours)",
+      "tuitionAmount": 85166,
+      "durationYears": 3,
+      "ielts": 6,
+      "curriculumZh": 28,
+      "careersZh": 5
+    },
+    {
+      "code": "INTI-B-022",
+      "nameEnOfficial": "Bachelor of Biotechnology (Hons)",
+      "tuitionAmount": 92588,
+      "durationYears": 3,
+      "ielts": null,
+      "curriculumZh": 31,
+      "careersZh": 8
+    },
+    {
+      "code": "INTI-B-023",
+      "nameEnOfficial": "Bachelor of Business (3+0) in collaboration with Swinburne University of Technology, Australia",
+      "tuitionAmount": 95566,
+      "durationYears": 3,
+      "ielts": 6,
+      "curriculumZh": 49,
+      "careersZh": 23
+    },
+    {
+      "code": "INTI-B-024",
+      "nameEnOfficial": "Bachelor of Business (Honours) Accounting",
+      "tuitionAmount": 83449,
+      "durationYears": 3,
+      "ielts": 6,
+      "curriculumZh": 22,
+      "careersZh": 5
+    },
+    {
+      "code": "INTI-B-025",
+      "nameEnOfficial": "Bachelor of Business (Honours) Business Administration",
+      "tuitionAmount": 83449,
+      "durationYears": 3,
+      "ielts": 6,
+      "curriculumZh": 22,
+      "careersZh": 3
+    },
+    {
+      "code": "INTI-B-026",
+      "nameEnOfficial": "Bachelor of Business (Honours) Business Administration – Online Learning",
+      "tuitionAmount": 38756,
+      "durationYears": 3,
+      "ielts": 3.5,
+      "curriculumZh": 30,
+      "careersZh": 6
+    },
+    {
+      "code": "INTI-B-027",
+      "nameEnOfficial": "Bachelor of Business (Honours) Digital Enterprise Management",
+      "tuitionAmount": 79450,
+      "durationYears": 3,
+      "ielts": null,
+      "curriculumZh": 23,
+      "careersZh": 6
+    },
+    {
+      "code": "INTI-B-028",
+      "nameEnOfficial": "Bachelor of Business (Honours) Finance",
+      "tuitionAmount": 83449,
+      "durationYears": 3,
+      "ielts": 6,
+      "curriculumZh": 22,
+      "careersZh": 4
+    },
+    {
+      "code": "INTI-B-029",
+      "nameEnOfficial": "Bachelor of Business (Honours) Human Resource Management",
+      "tuitionAmount": 83449,
+      "durationYears": 3,
+      "ielts": 6,
+      "curriculumZh": 22,
+      "careersZh": 3
+    },
+    {
+      "code": "INTI-B-030",
+      "nameEnOfficial": "Bachelor of Business (Honours) Human Resource Management – Online Learning",
+      "tuitionAmount": 38756,
+      "durationYears": 3,
+      "ielts": 6,
+      "curriculumZh": 31,
+      "careersZh": 6
+    },
+    {
+      "code": "INTI-B-031",
+      "nameEnOfficial": "Bachelor of Business (Honours) in Entrepreneurship and Marketing",
+      "tuitionAmount": 79468,
+      "durationYears": 3,
+      "ielts": null,
+      "curriculumZh": 36,
+      "careersZh": 6
+    },
+    {
+      "code": "INTI-B-032",
+      "nameEnOfficial": "Bachelor of Business (Honours) in International Business and Logistics Supply Chain Management",
+      "tuitionAmount": 79468,
+      "durationYears": 3,
+      "ielts": null,
+      "curriculumZh": 29,
+      "careersZh": 7
+    },
+    {
+      "code": "INTI-B-033",
+      "nameEnOfficial": "Bachelor of Business (Honours) International Business",
+      "tuitionAmount": 83449,
+      "durationYears": 3,
+      "ielts": 6,
+      "curriculumZh": 22,
+      "careersZh": 9
+    },
+    {
+      "code": "INTI-B-034",
+      "nameEnOfficial": "Bachelor of Business (Honours) International Business – Online Learning",
+      "tuitionAmount": 38756,
+      "durationYears": 3,
+      "ielts": 3.5,
+      "curriculumZh": 32,
+      "careersZh": 2
+    },
+    {
+      "code": "INTI-B-035",
+      "nameEnOfficial": "Bachelor of Business (Honours) Logistics and Supply Chain Management",
+      "tuitionAmount": 83449,
+      "durationYears": 3,
+      "ielts": 6,
+      "curriculumZh": 22,
+      "careersZh": 2
+    },
+    {
+      "code": "INTI-B-036",
+      "nameEnOfficial": "Bachelor of Business (Honours) Management",
+      "tuitionAmount": 79450,
+      "durationYears": 3,
+      "ielts": null,
+      "curriculumZh": 30,
+      "careersZh": 5
+    },
+    {
+      "code": "INTI-B-037",
+      "nameEnOfficial": "Bachelor of Business (Honours) Marketing – Online Learning",
+      "tuitionAmount": 38756,
+      "durationYears": 3,
+      "ielts": 3.5,
+      "curriculumZh": 33,
+      "careersZh": 8
+    },
+    {
+      "code": "INTI-B-038",
+      "nameEnOfficial": "Bachelor of Business (Honours) with Psychology",
+      "tuitionAmount": 83449,
+      "durationYears": 3,
+      "ielts": 4,
+      "curriculumZh": 19,
+      "careersZh": 8
+    },
+    {
+      "code": "INTI-B-039",
+      "nameEnOfficial": "Bachelor of Business Honours (Marketing)",
+      "tuitionAmount": 83449,
+      "durationYears": 3,
+      "ielts": 6,
+      "curriculumZh": 22,
+      "careersZh": 7
+    },
+    {
+      "code": "INTI-B-040",
+      "nameEnOfficial": "Bachelor of Civil Engineering with Honours",
+      "tuitionAmount": 99848,
+      "durationYears": 4,
+      "ielts": null,
+      "curriculumZh": 33,
+      "careersZh": 1
+    },
+    {
+      "code": "INTI-B-041",
+      "nameEnOfficial": "Bachelor of Computer Science (3+0) in collaboration with Swinburne University of Technology, Australia",
+      "tuitionAmount": 95600,
+      "durationYears": 3,
+      "ielts": 6,
+      "curriculumZh": 48,
+      "careersZh": 16
+    },
+    {
+      "code": "INTI-B-042",
+      "nameEnOfficial": "Bachelor of Computer Science (Honours) (Online Learning)",
+      "tuitionAmount": 38752,
+      "durationYears": 3,
+      "ielts": 5,
+      "curriculumZh": 25,
+      "careersZh": 20
+    },
+    {
+      "code": "INTI-B-043",
+      "nameEnOfficial": "Bachelor of Computer Science (Hons)",
+      "tuitionAmount": 85848,
+      "durationYears": 3,
+      "ielts": null,
+      "curriculumZh": 44,
+      "careersZh": 8
+    },
+    {
+      "code": "INTI-B-044",
+      "nameEnOfficial": "Bachelor of Computer Science (Hons) major in Business Analytics",
+      "tuitionAmount": 85848,
+      "durationYears": 3,
+      "ielts": 6,
+      "curriculumZh": 44,
+      "careersZh": 3
+    },
+    {
+      "code": "INTI-B-045",
+      "nameEnOfficial": "Bachelor of Computer Science (Hons) major in Cloud Computing",
+      "tuitionAmount": 85848,
+      "durationYears": 3,
+      "ielts": 6,
+      "curriculumZh": 44,
+      "careersZh": 5
+    },
+    {
+      "code": "INTI-B-046",
+      "nameEnOfficial": "Bachelor of Computer Science (Hons) major in Mobile Computing",
+      "tuitionAmount": 85848,
+      "durationYears": 3,
+      "ielts": 6,
+      "curriculumZh": 44,
+      "careersZh": 8
+    },
+    {
+      "code": "INTI-B-047",
+      "nameEnOfficial": "Bachelor of Computer Science (Hons) major in Network and Security",
+      "tuitionAmount": 85848,
+      "durationYears": 3,
+      "ielts": 6,
+      "curriculumZh": 44,
+      "careersZh": 6
+    },
+    {
+      "code": "INTI-B-048",
+      "nameEnOfficial": "Bachelor of Computer Science (Hons) major in Software Development",
+      "tuitionAmount": 85848,
+      "durationYears": 3,
+      "ielts": 6,
+      "curriculumZh": 44,
+      "careersZh": 5
+    },
+    {
+      "code": "INTI-B-049",
+      "nameEnOfficial": "Bachelor of Education (Honours) in Teaching Chinese as a Second Language",
+      "tuitionAmount": 79456,
+      "durationYears": 3,
+      "ielts": 4.5,
+      "curriculumZh": 26,
+      "careersZh": 7
+    },
+    {
+      "code": "INTI-B-050",
+      "nameEnOfficial": "Bachelor of Food Service Management with Culinary Arts (Honours) 3+0 in collaboration with CY Cergy Paris Université, France",
+      "tuitionAmount": 93484,
+      "durationYears": 3,
+      "ielts": 5.5,
+      "curriculumZh": 58,
+      "careersZh": 1
+    },
+    {
+      "code": "INTI-B-051",
+      "nameEnOfficial": "Bachelor of Information and Communication Technology 3+0 in collaboration with Swinburne University of Technology, Australia",
+      "tuitionAmount": 95600,
+      "durationYears": 3,
+      "ielts": 6,
+      "curriculumZh": 17,
+      "careersZh": 8
+    },
+    {
+      "code": "INTI-B-052",
+      "nameEnOfficial": "Bachelor of Information Technology (Hons)",
+      "tuitionAmount": 77868,
+      "durationYears": 3,
+      "ielts": 6,
+      "curriculumZh": 34,
+      "careersZh": 7
+    },
+    {
+      "code": "INTI-B-053",
+      "nameEnOfficial": "Bachelor of Information Technology (Hons) major in Business Analytics",
+      "tuitionAmount": 77868,
+      "durationYears": 3,
+      "ielts": 6,
+      "curriculumZh": 34,
+      "careersZh": 3
+    },
+    {
+      "code": "INTI-B-054",
+      "nameEnOfficial": "Bachelor of Mass Communication (Honours)",
+      "tuitionAmount": 79451,
+      "durationYears": 3,
+      "ielts": 6.5,
+      "curriculumZh": 46,
+      "careersZh": 1
+    },
+    {
+      "code": "INTI-B-055",
+      "nameEnOfficial": "Bachelor of Mass Communication (Hons)",
+      "tuitionAmount": 79640,
+      "durationYears": 3,
+      "ielts": 6.5,
+      "curriculumZh": 45,
+      "careersZh": 1
+    },
+    {
+      "code": "INTI-B-056",
+      "nameEnOfficial": "Bachelor of Mechanical Engineering with Honours",
+      "tuitionAmount": 98036,
+      "durationYears": 4,
+      "ielts": null,
+      "curriculumZh": 37,
+      "careersZh": 3
+    },
+    {
+      "code": "INTI-B-057",
+      "nameEnOfficial": "Bachelor of Media and Communication (3+0) in collaboration with Swinburne University of Technology, Australia",
+      "tuitionAmount": 95600,
+      "durationYears": 3,
+      "ielts": 6,
+      "curriculumZh": 12,
+      "careersZh": 13
+    },
+    {
+      "code": "INTI-B-058",
+      "nameEnOfficial": "Bachelor of Science (Hons) Quantity Surveying",
+      "tuitionAmount": 87956,
+      "durationYears": 3.5,
+      "ielts": 5.5,
+      "curriculumZh": 37,
+      "careersZh": 1
+    },
+    {
+      "code": "INTI-B-059",
+      "nameEnOfficial": "Bachelor of Science in Business Administration 4+0 in collaboration with Southern New Hampshire University, USA",
+      "tuitionAmount": 102920,
+      "durationYears": 4,
+      "ielts": 6.5,
+      "curriculumZh": 38,
+      "careersZh": 2
+    },
+    {
+      "code": "INTI-B-060",
+      "nameEnOfficial": "Bachelor of Science with Honours in Computer Science 3+0 in collaboration with Coventry University, UK",
+      "tuitionAmount": 77296,
+      "durationYears": 3,
+      "ielts": 6,
+      "curriculumZh": 23,
+      "careersZh": 6
+    },
+    {
+      "code": "INTI-B-061",
+      "nameEnOfficial": "Bachelor of Technology (Honours) Data Science",
+      "tuitionAmount": 85848,
+      "durationYears": 3,
+      "ielts": 6,
+      "curriculumZh": 35,
+      "careersZh": 9
+    },
+    {
+      "code": "INTI-B-062",
+      "nameEnOfficial": "Bachelor of Technology in Digital Construction Management",
+      "tuitionAmount": 85831,
+      "durationYears": 3,
+      "ielts": 5,
+      "curriculumZh": 32,
+      "careersZh": 12
+    },
+    {
+      "code": "INTI-B-063",
+      "nameEnOfficial": "Bachelor of Technology in Intelligent Manufacturing",
+      "tuitionAmount": 85835,
+      "durationYears": 3,
+      "ielts": 5,
+      "curriculumZh": 40,
+      "careersZh": 10
+    },
+    {
+      "code": "INTI-B-064",
+      "nameEnOfficial": "Bachelor of Technology in Intelligent Process and Product Design",
+      "tuitionAmount": 85835,
+      "durationYears": 3,
+      "ielts": 5,
+      "curriculumZh": 40,
+      "careersZh": 7
+    },
+    {
+      "code": "INTI-B-065",
+      "nameEnOfficial": "Bachelor of Traditional Chinese Medicine (Hons)",
+      "tuitionAmount": 144702,
+      "durationYears": 5,
+      "ielts": 5,
+      "curriculumZh": 5,
+      "careersZh": 6
+    },
+    {
+      "code": "INTI-B-066",
+      "nameEnOfficial": "Biosciences Degree Program (American University Program)",
+      "tuitionAmount": 48820,
+      "durationYears": 4,
+      "ielts": 5.5,
+      "curriculumZh": 13,
+      "careersZh": 6
+    },
+    {
+      "code": "INTI-B-067",
+      "nameEnOfficial": "Business Degree Program (American Degree Transfer Program)",
+      "tuitionAmount": 48820,
+      "durationYears": 4,
+      "ielts": 5.5,
+      "curriculumZh": 21,
+      "careersZh": 10
+    },
+    {
+      "code": "INTI-B-068",
+      "nameEnOfficial": "Computer Science Degree Program (American Degree Transfer Program)",
+      "tuitionAmount": 48820,
+      "durationYears": 4,
+      "ielts": 5.5,
+      "curriculumZh": 18,
+      "careersZh": 15
+    },
+    {
+      "code": "INTI-P-001",
+      "nameEnOfficial": "Doctor of Business Administration",
+      "tuitionAmount": 59796,
+      "durationYears": 3,
+      "ielts": 6,
+      "curriculumZh": 11,
+      "careersZh": 3
+    },
+    {
+      "code": "INTI-P-002",
+      "nameEnOfficial": "Doctor of Business Administration (Online Learning)",
+      "tuitionAmount": 50400,
+      "durationYears": 3,
+      "ielts": 6,
+      "curriculumZh": 11,
+      "careersZh": 4
+    },
+    {
+      "code": "INTI-P-003",
+      "nameEnOfficial": "Doctor of Education",
+      "tuitionAmount": 59796,
+      "durationYears": 3,
+      "ielts": 4,
+      "curriculumZh": 12,
+      "careersZh": 9
+    },
+    {
+      "code": "INTI-P-004",
+      "nameEnOfficial": "Doctor of Philosophy (Education) (by Research)",
+      "tuitionAmount": 59796,
+      "durationYears": 3,
+      "ielts": 4,
+      "curriculumZh": 11,
+      "careersZh": 9
+    },
+    {
+      "code": "INTI-P-005",
+      "nameEnOfficial": "Doctor of Philosophy (PhD) (Applied Physics) (by Research)",
+      "tuitionAmount": 59796,
+      "durationYears": 3,
+      "ielts": 6,
+      "curriculumZh": 11,
+      "careersZh": 2
+    },
+    {
+      "code": "INTI-P-006",
+      "nameEnOfficial": "Doctor of Philosophy (PhD) (Financial Technology) (by Research)",
+      "tuitionAmount": 59796,
+      "durationYears": 3,
+      "ielts": null,
+      "curriculumZh": 10,
+      "careersZh": 6
+    },
+    {
+      "code": "INTI-P-007",
+      "nameEnOfficial": "Doctor of Philosophy (PhD) (Information Systems) (by Research)",
+      "tuitionAmount": 59796,
+      "durationYears": 3,
+      "ielts": 6,
+      "curriculumZh": 13,
+      "careersZh": 4
+    },
+    {
+      "code": "INTI-P-008",
+      "nameEnOfficial": "Doctor of Philosophy (PhD) (Innovation and Technology) (by Research)",
+      "tuitionAmount": 59796,
+      "durationYears": 3,
+      "ielts": 5,
+      "curriculumZh": 16,
+      "careersZh": 0
+    },
+    {
+      "code": "INTI-P-009",
+      "nameEnOfficial": "Doctor of Philosophy (PhD) (Management) (by Research)",
+      "tuitionAmount": 59796,
+      "durationYears": 3,
+      "ielts": 6,
+      "curriculumZh": 14,
+      "careersZh": 4
+    },
+    {
+      "code": "INTI-P-010",
+      "nameEnOfficial": "Doctor of Philosophy (PhD) in Data Science (by Research)",
+      "tuitionAmount": 59796,
+      "durationYears": 3,
+      "ielts": 6,
+      "curriculumZh": 6,
+      "careersZh": 12
+    },
+    {
+      "code": "INTI-B-069",
+      "nameEnOfficial": "Engineering Degree Program (American University Program)",
+      "tuitionAmount": 48820,
+      "durationYears": 4,
+      "ielts": 5.5,
+      "curriculumZh": 19,
+      "careersZh": 10
+    },
+    {
+      "code": "INTI-B-070",
+      "nameEnOfficial": "Health & Applied Sciences Program (American University Program)",
+      "tuitionAmount": 48820,
+      "durationYears": 4,
+      "ielts": 5.5,
+      "curriculumZh": 13,
+      "careersZh": 8
+    },
+    {
+      "code": "INTI-B-071",
+      "nameEnOfficial": "Mass Communication Degree Program (American Degree Transfer Program)",
+      "tuitionAmount": 48820,
+      "durationYears": 4,
+      "ielts": 5.5,
+      "curriculumZh": 16,
+      "careersZh": 7
+    },
+    {
+      "code": "INTI-M-001",
+      "nameEnOfficial": "Master in Education Management",
+      "tuitionAmount": 41415,
+      "durationYears": 1,
+      "ielts": 4,
+      "curriculumZh": 11,
+      "careersZh": 0
+    },
+    {
+      "code": "INTI-M-002",
+      "nameEnOfficial": "Master in Education Management (Online Learning)",
+      "tuitionAmount": 33220,
+      "durationYears": 1,
+      "ielts": 4,
+      "curriculumZh": 11,
+      "careersZh": 6
+    },
+    {
+      "code": "INTI-M-003",
+      "nameEnOfficial": "Master in Health Administration",
+      "tuitionAmount": 41398,
+      "durationYears": 1,
+      "ielts": 6,
+      "curriculumZh": 14,
+      "careersZh": 6
+    },
+    {
+      "code": "INTI-M-004",
+      "nameEnOfficial": "Master in Health Sciences (Physiotherapy) (by Research)",
+      "tuitionAmount": 39600,
+      "durationYears": 2,
+      "ielts": 4,
+      "curriculumZh": 5,
+      "careersZh": 6
+    },
+    {
+      "code": "INTI-M-005",
+      "nameEnOfficial": "Master in Information Systems (MIS)",
+      "tuitionAmount": 41410,
+      "durationYears": 1,
+      "ielts": 6,
+      "curriculumZh": 9,
+      "careersZh": 4
+    },
+    {
+      "code": "INTI-M-006",
+      "nameEnOfficial": "Master in Information Technology (MIT)",
+      "tuitionAmount": 41410,
+      "durationYears": 1,
+      "ielts": 6,
+      "curriculumZh": 9,
+      "careersZh": 6
+    },
+    {
+      "code": "INTI-M-007",
+      "nameEnOfficial": "Master in Information Technology (Online Learning)",
+      "tuitionAmount": 33330,
+      "durationYears": 1,
+      "ielts": 6,
+      "curriculumZh": 9,
+      "careersZh": 4
+    },
+    {
+      "code": "INTI-M-008",
+      "nameEnOfficial": "Master of Biotechnological Innovations and Application (by Research)",
+      "tuitionAmount": 39600,
+      "durationYears": 2,
+      "ielts": 4,
+      "curriculumZh": 5,
+      "careersZh": 6
+    },
+    {
+      "code": "INTI-M-009",
+      "nameEnOfficial": "Master of Business Administration (Business Analytics)",
+      "tuitionAmount": 41412,
+      "durationYears": 1,
+      "ielts": 6,
+      "curriculumZh": 14,
+      "careersZh": 4
+    },
+    {
+      "code": "INTI-M-010",
+      "nameEnOfficial": "Master of Business Administration (MBA)",
+      "tuitionAmount": 47112,
+      "durationYears": 1,
+      "ielts": 6,
+      "curriculumZh": 13,
+      "careersZh": 6
+    },
+    {
+      "code": "INTI-M-011",
+      "nameEnOfficial": "Master of Business Administration (MBA) in collaboration with INTI International University",
+      "tuitionAmount": 41405,
+      "durationYears": 1,
+      "ielts": 6,
+      "curriculumZh": 13,
+      "careersZh": 6
+    },
+    {
+      "code": "INTI-M-012",
+      "nameEnOfficial": "Master of Business Administration (Online Learning)",
+      "tuitionAmount": 33228,
+      "durationYears": 1,
+      "ielts": 6,
+      "curriculumZh": 13,
+      "careersZh": 3
+    },
+    {
+      "code": "INTI-M-013",
+      "nameEnOfficial": "Master of Education in Learning, Design and Technology (by Research)",
+      "tuitionAmount": 38178,
+      "durationYears": 4,
+      "ielts": 4,
+      "curriculumZh": 2,
+      "careersZh": 7
+    },
+    {
+      "code": "INTI-B-072",
+      "nameEnOfficial": "Master of Engineering in Electrical and Electronic Engineering 4+0 in collaboration with Coventry University, UK",
+      "tuitionAmount": 101996,
+      "durationYears": 4,
+      "ielts": 6,
+      "curriculumZh": 21,
+      "careersZh": 19
+    },
+    {
+      "code": "INTI-B-073",
+      "nameEnOfficial": "Master of Engineering in Mechanical Engineering 4+0 in collaboration with Coventry University, UK",
+      "tuitionAmount": 102009,
+      "durationYears": 4,
+      "ielts": 6,
+      "curriculumZh": 23,
+      "careersZh": 5
+    },
+    {
+      "code": "INTI-M-014",
+      "nameEnOfficial": "Master of Science in Construction Management (Building Information Modelling)",
+      "tuitionAmount": 41415,
+      "durationYears": 1,
+      "ielts": 5,
+      "curriculumZh": 10,
+      "careersZh": 3
+    },
+    {
+      "code": "INTI-M-015",
+      "nameEnOfficial": "Master of Science in Construction Management (Building Information Modelling) – (Online Learning)",
+      "tuitionAmount": 33228,
+      "durationYears": 1,
+      "ielts": 5,
+      "curriculumZh": 12,
+      "careersZh": 7
+    },
+    {
+      "code": "INTI-M-016",
+      "nameEnOfficial": "Master of Science in Construction Management (Facility Management)",
+      "tuitionAmount": 41415,
+      "durationYears": 1,
+      "ielts": 5,
+      "curriculumZh": 10,
+      "careersZh": 6
+    },
+    {
+      "code": "INTI-M-017",
+      "nameEnOfficial": "Master of Science in Data Science (by Research)",
+      "tuitionAmount": 32310,
+      "durationYears": 2,
+      "ielts": 6,
+      "curriculumZh": 6,
+      "careersZh": 14
+    },
+    {
+      "code": "INTI-M-018",
+      "nameEnOfficial": "Master of Science in Engineering and Eco-Innovation (by Research)",
+      "tuitionAmount": 38178,
+      "durationYears": 2,
+      "ielts": null,
+      "curriculumZh": 3,
+      "careersZh": 6
+    },
+    {
+      "code": "INTI-M-019",
+      "nameEnOfficial": "Master of Science in Facilities Management (Online Learning)",
+      "tuitionAmount": 33220,
+      "durationYears": 1,
+      "ielts": null,
+      "curriculumZh": 12,
+      "careersZh": 6
+    },
+    {
+      "code": "INTI-M-020",
+      "nameEnOfficial": "Master of Science in Information Systems (by Research)",
+      "tuitionAmount": 38178,
+      "durationYears": 2,
+      "ielts": 5.5,
+      "curriculumZh": 3,
+      "careersZh": 8
+    },
+    {
+      "code": "INTI-M-021",
+      "nameEnOfficial": "Master of Science in Innovation and Technology (by Research)",
+      "tuitionAmount": 38178,
+      "durationYears": 4,
+      "ielts": 5,
+      "curriculumZh": 2,
+      "careersZh": 9
+    },
+    {
+      "code": "INTI-M-022",
+      "nameEnOfficial": "Master of Science in Integrated Project Management (Online Learning)",
+      "tuitionAmount": 33220,
+      "durationYears": 1,
+      "ielts": 5,
+      "curriculumZh": 12,
+      "careersZh": 0
+    },
+    {
+      "code": "INTI-M-023",
+      "nameEnOfficial": "Master of Traditional Chinese Medicine",
+      "tuitionAmount": 70002,
+      "durationYears": 2,
+      "ielts": 5,
+      "curriculumZh": 16,
+      "careersZh": 5
+    },
+    {
+      "code": "INTI-B-074",
+      "nameEnOfficial": "Psychology Degree Program (American Degree Transfer Program)",
+      "tuitionAmount": 48820,
+      "durationYears": 4,
+      "ielts": 5.5,
+      "curriculumZh": 19,
+      "careersZh": 10
+    }
+  ]
+}

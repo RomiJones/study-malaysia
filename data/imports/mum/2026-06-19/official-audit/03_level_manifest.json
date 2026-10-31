@@ -1,0 +1,615 @@
+{
+  "schemaVersion": 1,
+  "levels": [
+    "bachelor",
+    "master",
+    "phd"
+  ],
+  "declaredCounts": {
+    "bachelor": 36,
+    "master": 17,
+    "phd": 7
+  },
+  "entries": [
+    {
+      "code": "MUM-UG-ARTS-SOCIAL-SCIENC-BACHELOR-OF-ARTS-AND-SOCIAL-SCIENCES-01",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor of Arts and Social Sciences",
+      "facultyEn": "School of Arts & Social Sciences",
+      "sourceUrl": "https://www.monash.edu.my/study/undergraduate/arts-social-sciences/bachelor-arts-social-sciences",
+      "canonicalStatus": "candidate",
+      "collectionStatus": "needs-review",
+      "officialOrder": 1
+    },
+    {
+      "code": "MUM-UG-ARTS-SOCIAL-SCIENC-BACHELOR-OF-DIGITAL-MEDIA-AND-COMMUNICATION-02",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor of Digital Media and Communication",
+      "facultyEn": "School of Arts & Social Sciences",
+      "sourceUrl": "https://www.monash.edu.my/study/undergraduate/arts-social-sciences/bachelor-of-digital-media-and-communication",
+      "canonicalStatus": "candidate",
+      "collectionStatus": "needs-review",
+      "officialOrder": 2
+    },
+    {
+      "code": "MUM-UG-ARTS-SOCIAL-SCIENC-BACHELOR-OF-ARTS-HONOURS-03",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor of Arts (Honours)",
+      "facultyEn": "School of Arts & Social Sciences",
+      "sourceUrl": "https://www.monash.edu.my/study/undergraduate/arts-social-sciences/bachelor-arts-honours",
+      "canonicalStatus": "candidate",
+      "collectionStatus": "needs-review",
+      "officialOrder": 3
+    },
+    {
+      "code": "MUM-UG-BUSINESS-BACHELOR-OF-BUSINESS-AND-COMMERCE-04",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor of Business and Commerce",
+      "facultyEn": "School of Business",
+      "sourceUrl": "https://www.monash.edu.my/study/undergraduate/business/bachelor-business-commerce",
+      "canonicalStatus": "candidate",
+      "collectionStatus": "needs-review",
+      "officialOrder": 4
+    },
+    {
+      "code": "MUM-UG-BUSINESS-BACHELOR-IN-ACTUARIAL-ANALYTICS-05",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor in Actuarial Analytics",
+      "facultyEn": "School of Business",
+      "sourceUrl": "https://www.monash.edu.my/study/undergraduate/business/bachelor-in-actuarial-analytics",
+      "canonicalStatus": "candidate",
+      "collectionStatus": "needs-review",
+      "officialOrder": 5
+    },
+    {
+      "code": "MUM-UG-BUSINESS-BACHELOR-OF-DIGITAL-BUSINESS-06",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor of Digital Business",
+      "facultyEn": "School of Business",
+      "sourceUrl": "https://www.monash.edu.my/study/undergraduate/business/bachelor-of-digital-business",
+      "canonicalStatus": "candidate",
+      "collectionStatus": "needs-review",
+      "officialOrder": 6
+    },
+    {
+      "code": "MUM-UG-BUSINESS-BACHELOR-OF-BUSINESS-AND-COMMERCE-HONOURS-07",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor of Business and Commerce (Honours)",
+      "facultyEn": "School of Business",
+      "sourceUrl": "https://www.monash.edu.my/study/undergraduate/business/bachelor-business-commerce-honours",
+      "canonicalStatus": "candidate",
+      "collectionStatus": "needs-review",
+      "officialOrder": 7
+    },
+    {
+      "code": "MUM-UG-BUSINESS-BACHELOR-OF-BUSINESS-AND-COMMERCE-AND-BACHEL-08",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor of Business and Commerce and Bachelor of Computer Science",
+      "facultyEn": "School of Business",
+      "sourceUrl": "https://www.monash.edu.my/study/undergraduate/business/bachelor-business-commerce-bachelor-computer-science",
+      "canonicalStatus": "candidate",
+      "collectionStatus": "needs-review",
+      "officialOrder": 8
+    },
+    {
+      "code": "MUM-UG-BUSINESS-BACHELOR-OF-BUSINESS-AND-COMMERCE-AND-BACHEL-09",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor of Business and Commerce and Bachelor of Digital Media and Communication",
+      "facultyEn": "School of Business",
+      "sourceUrl": "https://www.monash.edu.my/study/undergraduate/business/bachelor-business-commerce-bachelor-communication",
+      "canonicalStatus": "candidate",
+      "collectionStatus": "needs-review",
+      "officialOrder": 9
+    },
+    {
+      "code": "MUM-UG-ENGINEERING-BACHELOR-OF-BIOMEDICAL-ENGINEERING-HONOURS-10",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor of Biomedical Engineering (Honours)",
+      "facultyEn": "School of Engineering",
+      "sourceUrl": "https://www.monash.edu.my/study/undergraduate/engineering/bachelor-of-biomedical-engineering-honours",
+      "canonicalStatus": "candidate",
+      "collectionStatus": "needs-review",
+      "officialOrder": 10
+    },
+    {
+      "code": "MUM-UG-ENGINEERING-BACHELOR-OF-CHEMICAL-ENGINEERING-HONOURS-11",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor of Chemical Engineering (Honours)",
+      "facultyEn": "School of Engineering",
+      "sourceUrl": "https://www.monash.edu.my/study/undergraduate/engineering/bachelor-of-engineering-honours-in-chemical-engineering",
+      "canonicalStatus": "candidate",
+      "collectionStatus": "needs-review",
+      "officialOrder": 11
+    },
+    {
+      "code": "MUM-UG-ENGINEERING-BACHELOR-OF-CIVIL-ENGINEERING-HONOURS-12",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor of Civil Engineering (Honours)",
+      "facultyEn": "School of Engineering",
+      "sourceUrl": "https://www.monash.edu.my/study/undergraduate/engineering/bachelor-of-engineering-honours-in-civil-engineering",
+      "canonicalStatus": "candidate",
+      "collectionStatus": "needs-review",
+      "officialOrder": 12
+    },
+    {
+      "code": "MUM-UG-ENGINEERING-BACHELOR-OF-ELECTRICAL-AND-COMPUTER-SYSTEMS--13",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor of Electrical and Computer Systems Engineering (Honours)",
+      "facultyEn": "School of Engineering",
+      "sourceUrl": "https://www.monash.edu.my/study/undergraduate/engineering/bachelor-of-engineering-honours-in-electrical-and-computer-systems-engineering",
+      "canonicalStatus": "candidate",
+      "collectionStatus": "needs-review",
+      "officialOrder": 13
+    },
+    {
+      "code": "MUM-UG-ENGINEERING-BACHELOR-OF-MATERIALS-ENGINEERING-HONOURS-14",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor of Materials Engineering (Honours)",
+      "facultyEn": "School of Engineering",
+      "sourceUrl": "https://www.monash.edu.my/study/undergraduate/engineering/bachelor-of-materials-engineering-honours",
+      "canonicalStatus": "candidate",
+      "collectionStatus": "needs-review",
+      "officialOrder": 14
+    },
+    {
+      "code": "MUM-UG-ENGINEERING-BACHELOR-OF-MECHANICAL-ENGINEERING-HONOURS-15",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor of Mechanical Engineering (Honours)",
+      "facultyEn": "School of Engineering",
+      "sourceUrl": "https://www.monash.edu.my/study/undergraduate/engineering/bachelor-of-engineering-honours-in-mechanical-engineering",
+      "canonicalStatus": "candidate",
+      "collectionStatus": "needs-review",
+      "officialOrder": 15
+    },
+    {
+      "code": "MUM-UG-ENGINEERING-BACHELOR-OF-ROBOTICS-AND-MECHATRONICS-ENGINE-16",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor of Robotics and Mechatronics Engineering (Honours)",
+      "facultyEn": "School of Engineering",
+      "sourceUrl": "https://www.monash.edu.my/study/undergraduate/engineering/bachelor-of-engineering-honours-in-mechatronics-engineering",
+      "canonicalStatus": "candidate",
+      "collectionStatus": "needs-review",
+      "officialOrder": 16
+    },
+    {
+      "code": "MUM-UG-ENGINEERING-BACHELOR-OF-SOFTWARE-ENGINEERING-HONOURS-17",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor of Software Engineering (Honours)",
+      "facultyEn": "School of Engineering",
+      "sourceUrl": "https://www.monash.edu.my/study/undergraduate/engineering/bachelor-of-software-engineering-honours",
+      "canonicalStatus": "candidate",
+      "collectionStatus": "needs-review",
+      "officialOrder": 17
+    },
+    {
+      "code": "MUM-UG-INFORMATION-TECHNO-BACHELOR-OF-COMPUTER-SCIENCE-18",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor of Computer Science",
+      "facultyEn": "School of Information Technology  | Course | Duration (years) | Tuition fees per year (RM) |",
+      "sourceUrl": "https://www.monash.edu.my/study/undergraduate/information-technology/bachelor-computer-science",
+      "canonicalStatus": "candidate",
+      "collectionStatus": "needs-review",
+      "officialOrder": 18
+    },
+    {
+      "code": "MUM-UG-INFORMATION-TECHNO-BACHELOR-OF-COMPUTER-SCIENCE-IN-ARTIFICIAL-I-19",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor of Computer Science in Artificial Intelligence",
+      "facultyEn": "School of Information Technology  | Course | Duration (years) | Tuition fees per year (RM) |",
+      "sourceUrl": "https://www.monash.edu.my/study/undergraduate/information-technology/bachelor-of-computer-science-in-artificial-intelligence",
+      "canonicalStatus": "candidate",
+      "collectionStatus": "needs-review",
+      "officialOrder": 19
+    },
+    {
+      "code": "MUM-UG-INFORMATION-TECHNO-BACHELOR-OF-COMPUTER-SCIENCE-IN-DATA-SCIENCE-20",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor of Computer Science in Data Science",
+      "facultyEn": "School of Information Technology  | Course | Duration (years) | Tuition fees per year (RM) |",
+      "sourceUrl": "https://www.monash.edu.my/study/undergraduate/information-technology/bachelor-of-computer-science-in-data-science",
+      "canonicalStatus": "candidate",
+      "collectionStatus": "needs-review",
+      "officialOrder": 20
+    },
+    {
+      "code": "MUM-UG-INFORMATION-TECHNO-BACHELOR-OF-COMPUTER-SCIENCE-HONOURS-21",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor of Computer Science (Honours)",
+      "facultyEn": "School of Information Technology  | Course | Duration (years) | Tuition fees per year (RM) |",
+      "sourceUrl": "https://www.monash.edu.my/study/undergraduate/information-technology/bachelor-of-computer-science-honours",
+      "canonicalStatus": "candidate",
+      "collectionStatus": "needs-review",
+      "officialOrder": 21
+    },
+    {
+      "code": "MUM-UG-MEDICINE-AND-HEALT-BACHELOR-OF-MEDICAL-SCIENCE-AND-DOCTOR-OF-ME-22",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor of Medical Science and Doctor of Medicine",
+      "facultyEn": "Jeffrey Cheah School of Medicine and Health Sciences  | Course | Duration (years) | Tuition fees per year (RM) |",
+      "sourceUrl": "https://www.monash.edu.my/study/undergraduate/jeffrey-cheah-school-medicine-health-sciences/bachelor-medical-science-doctor-medicine",
+      "canonicalStatus": "candidate",
+      "collectionStatus": "needs-review",
+      "officialOrder": 22
+    },
+    {
+      "code": "MUM-UG-MEDICINE-AND-HEALT-BACHELOR-OF-PSYCHOLOGY-23",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor of Psychology",
+      "facultyEn": "Jeffrey Cheah School of Medicine and Health Sciences  | Course | Duration (years) | Tuition fees per year (RM) |",
+      "sourceUrl": "https://www.monash.edu.my/study/undergraduate/jeffrey-cheah-school-medicine-health-sciences/bachelor-of-psychology",
+      "canonicalStatus": "candidate",
+      "collectionStatus": "needs-review",
+      "officialOrder": 23
+    },
+    {
+      "code": "MUM-UG-MEDICINE-AND-HEALT-BACHELOR-OF-PSYCHOLOGY-AND-BUSINESS-24",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor of Psychology and Business",
+      "facultyEn": "Jeffrey Cheah School of Medicine and Health Sciences  | Course | Duration (years) | Tuition fees per year (RM) |",
+      "sourceUrl": "https://www.monash.edu.my/study/undergraduate/jeffrey-cheah-school-medicine-health-sciences/bachelor-psychological-science-business",
+      "canonicalStatus": "candidate",
+      "collectionStatus": "needs-review",
+      "officialOrder": 24
+    },
+    {
+      "code": "MUM-UG-MEDICINE-AND-HEALT-BACHELOR-OF-HUMAN-NUTRITION-25",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor of Human Nutrition",
+      "facultyEn": "Jeffrey Cheah School of Medicine and Health Sciences  | Course | Duration (years) | Tuition fees per year (RM) |",
+      "sourceUrl": "https://www.monash.edu.my/study/undergraduate/jeffrey-cheah-school-medicine-health-sciences/bachelor-of-human-nutrition",
+      "canonicalStatus": "candidate",
+      "collectionStatus": "needs-review",
+      "officialOrder": 25
+    },
+    {
+      "code": "MUM-UG-MEDICINE-AND-HEALT-BACHELOR-OF-HEALTH-SCIENCES-HONOURS-26",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor of Health Sciences (Honours)",
+      "facultyEn": "Jeffrey Cheah School of Medicine and Health Sciences  | Course | Duration (years) | Tuition fees per year (RM) |",
+      "sourceUrl": "https://www.monash.edu.my/study/undergraduate/jeffrey-cheah-school-medicine-health-sciences/bachelor-of-health-sciences-honours",
+      "canonicalStatus": "candidate",
+      "collectionStatus": "needs-review",
+      "officialOrder": 26
+    },
+    {
+      "code": "MUM-UG-MEDICINE-AND-HEALT-BACHELOR-OF-MEDICAL-SCIENCE-HONOURS-27",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor of Medical Science (Honours)",
+      "facultyEn": "Jeffrey Cheah School of Medicine and Health Sciences  | Course | Duration (years) | Tuition fees per year (RM) |",
+      "sourceUrl": "https://www.monash.edu.my/study/undergraduate/jeffrey-cheah-school-medicine-health-sciences/bachelor-medical-science-honours",
+      "canonicalStatus": "candidate",
+      "collectionStatus": "needs-review",
+      "officialOrder": 27
+    },
+    {
+      "code": "MUM-UG-MEDICINE-AND-HEALT-BACHELOR-OF-PSYCHOLOGY-HONOURS-28",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor of Psychology (Honours)",
+      "facultyEn": "Jeffrey Cheah School of Medicine and Health Sciences  | Course | Duration (years) | Tuition fees per year (RM) |",
+      "sourceUrl": "https://www.monash.edu.my/study/undergraduate/jeffrey-cheah-school-medicine-health-sciences/bachelor-psychology-honours",
+      "canonicalStatus": "candidate",
+      "collectionStatus": "needs-review",
+      "officialOrder": 28
+    },
+    {
+      "code": "MUM-UG-PHARMACY-COURSE-DU-BACHELOR-OF-PHARMACY-HONOURS-29",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor of Pharmacy (Honours)",
+      "facultyEn": "School of Pharmacy  | Course | Duration (years) | Tuition fees per year (RM) |",
+      "sourceUrl": "https://www.monash.edu.my/study/undergraduate/pharmacy/bachelor-pharmacy",
+      "canonicalStatus": "candidate",
+      "collectionStatus": "needs-review",
+      "officialOrder": 29
+    },
+    {
+      "code": "MUM-UG-PHARMACY-COURSE-DU-BACHELOR-OF-PHARMACEUTICAL-SCIENCE-30",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor of Pharmaceutical Science",
+      "facultyEn": "School of Pharmacy  | Course | Duration (years) | Tuition fees per year (RM) |",
+      "sourceUrl": "https://www.monash.edu.my/study/undergraduate/pharmacy/bachelor-of-pharmaceutical-science",
+      "canonicalStatus": "candidate",
+      "collectionStatus": "needs-review",
+      "officialOrder": 30
+    },
+    {
+      "code": "MUM-UG-PHARMACY-COURSE-DU-BACHELOR-OF-PHARMACEUTICAL-SCIENCE-HONOURS-31",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor of Pharmaceutical Science (Honours)",
+      "facultyEn": "School of Pharmacy  | Course | Duration (years) | Tuition fees per year (RM) |",
+      "sourceUrl": "https://www.monash.edu.my/study/undergraduate/pharmacy/bachelor-of-pharmaceutical-science-honours",
+      "canonicalStatus": "candidate",
+      "collectionStatus": "needs-review",
+      "officialOrder": 31
+    },
+    {
+      "code": "MUM-UG-SCIENCE-COURSE-DUR-BACHELOR-OF-SCIENCE-32",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor of Science",
+      "facultyEn": "School of Science  | Course | Duration (years) | Tuition fees per year (RM) |",
+      "sourceUrl": "https://www.monash.edu.my/study/undergraduate/science/bachelor-science",
+      "canonicalStatus": "candidate",
+      "collectionStatus": "needs-review",
+      "officialOrder": 32
+    },
+    {
+      "code": "MUM-UG-SCIENCE-COURSE-DUR-BACHELOR-OF-APPLIED-DATA-SCIENCE-33",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor of Applied Data Science",
+      "facultyEn": "School of Science  | Course | Duration (years) | Tuition fees per year (RM) |",
+      "sourceUrl": "https://www.monash.edu.my/study/undergraduate/science/bachelor-of-applied-data-science",
+      "canonicalStatus": "candidate",
+      "collectionStatus": "needs-review",
+      "officialOrder": 33
+    },
+    {
+      "code": "MUM-UG-SCIENCE-COURSE-DUR-BACHELOR-OF-FOOD-SCIENCE-AND-TECHNOLOGY-34",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor of Food Science and Technology",
+      "facultyEn": "School of Science  | Course | Duration (years) | Tuition fees per year (RM) |",
+      "sourceUrl": "https://www.monash.edu.my/study/undergraduate/science/bachelor-science-food-science-technology",
+      "canonicalStatus": "candidate",
+      "collectionStatus": "needs-review",
+      "officialOrder": 34
+    },
+    {
+      "code": "MUM-UG-SCIENCE-COURSE-DUR-BACHELOR-OF-MEDICAL-BIOSCIENCE-35",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor of Medical Bioscience",
+      "facultyEn": "School of Science  | Course | Duration (years) | Tuition fees per year (RM) |",
+      "sourceUrl": "https://www.monash.edu.my/study/undergraduate/science/bachelor-science-medical-bioscience",
+      "canonicalStatus": "candidate",
+      "collectionStatus": "needs-review",
+      "officialOrder": 35
+    },
+    {
+      "code": "MUM-UG-SCIENCE-COURSE-DUR-BACHELOR-OF-SCIENCE-HONOURS-36",
+      "level": "bachelor",
+      "nameEnOfficial": "Bachelor of Science (Honours)",
+      "facultyEn": "School of Science  | Course | Duration (years) | Tuition fees per year (RM) |",
+      "sourceUrl": "https://www.monash.edu.my/study/undergraduate/science/bachelor-science-honours",
+      "canonicalStatus": "candidate",
+      "collectionStatus": "needs-review",
+      "officialOrder": 36
+    },
+    {
+      "code": "MUM-MA-ARTS-AND-SOCIAL-SC-MASTER-OF-COMMUNICATIONS-AND-MEDIA-STUDIES-37",
+      "level": "master",
+      "nameEnOfficial": "Master of Communications and Media Studies",
+      "facultyEn": "School of Arts and Social Sciences",
+      "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research/arts-social-sciences/master-communications-media-studies",
+      "canonicalStatus": "candidate",
+      "collectionStatus": "needs-review",
+      "officialOrder": 37
+    },
+    {
+      "code": "MUM-PHD-ARTS-AND-SOCIAL-SC-PHD-PHD-38",
+      "level": "phd",
+      "nameEnOfficial": "Doctor of Philosophy (PhD)",
+      "facultyEn": "School of Arts and Social Sciences",
+      "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research/arts-social-sciences/phd",
+      "canonicalStatus": "candidate",
+      "collectionStatus": "needs-review",
+      "officialOrder": 38
+    },
+    {
+      "code": "MUM-MA-BUSINESS-MASTER-OF-INTERNATIONAL-BUSINESS-39",
+      "level": "master",
+      "nameEnOfficial": "Master of International Business",
+      "facultyEn": "School of Business",
+      "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research/business/master-international-business",
+      "canonicalStatus": "candidate",
+      "collectionStatus": "needs-review",
+      "officialOrder": 39
+    },
+    {
+      "code": "MUM-MA-BUSINESS-MASTER-OF-DIGITAL-BUSINESS-40",
+      "level": "master",
+      "nameEnOfficial": "Master of Digital Business",
+      "facultyEn": "School of Business",
+      "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research/business/master-of-digital-business",
+      "canonicalStatus": "candidate",
+      "collectionStatus": "needs-review",
+      "officialOrder": 40
+    },
+    {
+      "code": "MUM-MA-BUSINESS-MPHIL-MPHIL-41",
+      "level": "master",
+      "nameEnOfficial": "Master of Philosophy (MPhil)",
+      "facultyEn": "School of Business",
+      "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research/business/master-philosophy",
+      "canonicalStatus": "candidate",
+      "collectionStatus": "needs-review",
+      "officialOrder": 41
+    },
+    {
+      "code": "MUM-PHD-BUSINESS-PHD-PHD-42",
+      "level": "phd",
+      "nameEnOfficial": "Doctor of Philosophy (PhD)",
+      "facultyEn": "School of Business",
+      "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research/business/phd",
+      "canonicalStatus": "candidate",
+      "collectionStatus": "needs-review",
+      "officialOrder": 42
+    },
+    {
+      "code": "MUM-MA-ENGINEERING-MASTER-OF-APPLIED-ENGINEERING-43",
+      "level": "master",
+      "nameEnOfficial": "Master of Applied Engineering",
+      "facultyEn": "School of Engineering",
+      "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research/engineering/master-of-applied-engineering",
+      "canonicalStatus": "candidate",
+      "collectionStatus": "needs-review",
+      "officialOrder": 43
+    },
+    {
+      "code": "MUM-MA-ENGINEERING-MASTER-OF-ENGINEERING-SCIENCE-RESEARCH-44",
+      "level": "master",
+      "nameEnOfficial": "Master of Engineering Science (Research)",
+      "facultyEn": "School of Engineering",
+      "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research/engineering/master-engineering-science-research",
+      "canonicalStatus": "candidate",
+      "collectionStatus": "needs-review",
+      "officialOrder": 44
+    },
+    {
+      "code": "MUM-PHD-ENGINEERING-PHD-PHD-45",
+      "level": "phd",
+      "nameEnOfficial": "Doctor of Philosophy (PhD)",
+      "facultyEn": "School of Engineering",
+      "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research/engineering/phd",
+      "canonicalStatus": "candidate",
+      "collectionStatus": "needs-review",
+      "officialOrder": 45
+    },
+    {
+      "code": "MUM-MA-INFORMATION-TECHNO-MASTER-OF-ARTIFICIAL-INTELLIGENCE-46",
+      "level": "master",
+      "nameEnOfficial": "Master of Artificial Intelligence",
+      "facultyEn": "School of Information Technology",
+      "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research/information-technology/master-of-artificial-intelligence",
+      "canonicalStatus": "candidate",
+      "collectionStatus": "needs-review",
+      "officialOrder": 46
+    },
+    {
+      "code": "MUM-MA-INFORMATION-TECHNO-MASTER-OF-BUSINESS-INFORMATION-SYSTEMS-47",
+      "level": "master",
+      "nameEnOfficial": "Master of Business Information Systems",
+      "facultyEn": "School of Information Technology",
+      "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research/information-technology/master-business-information-systems",
+      "canonicalStatus": "candidate",
+      "collectionStatus": "needs-review",
+      "officialOrder": 47
+    },
+    {
+      "code": "MUM-MA-INFORMATION-TECHNO-MASTER-OF-DATA-SCIENCE-48",
+      "level": "master",
+      "nameEnOfficial": "Master of Data Science",
+      "facultyEn": "School of Information Technology",
+      "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research/information-technology/master-of-data-science",
+      "canonicalStatus": "candidate",
+      "collectionStatus": "needs-review",
+      "officialOrder": 48
+    },
+    {
+      "code": "MUM-MA-INFORMATION-TECHNO-MPHIL-MPHIL-49",
+      "level": "master",
+      "nameEnOfficial": "Master of Philosophy (MPhil)",
+      "facultyEn": "School of Information Technology",
+      "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research/information-technology/master-philosophy",
+      "canonicalStatus": "candidate",
+      "collectionStatus": "needs-review",
+      "officialOrder": 49
+    },
+    {
+      "code": "MUM-PHD-INFORMATION-TECHNO-PHD-PHD-50",
+      "level": "phd",
+      "nameEnOfficial": "Doctor of Philosophy (PhD)",
+      "facultyEn": "School of Information Technology",
+      "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research/information-technology/phd",
+      "canonicalStatus": "candidate",
+      "collectionStatus": "needs-review",
+      "officialOrder": 50
+    },
+    {
+      "code": "MUM-MA-MEDICINE-AND-HEALT-MASTER-OF-PROFESSIONAL-COUNSELLING-51",
+      "level": "master",
+      "nameEnOfficial": "Master of Professional Counselling",
+      "facultyEn": "Jeffrey Cheah School of Medicine and Health Sciences",
+      "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research/medicine-health-sciences/master-of-professional-counselling",
+      "canonicalStatus": "candidate",
+      "collectionStatus": "needs-review",
+      "officialOrder": 51
+    },
+    {
+      "code": "MUM-MA-MEDICINE-AND-HEALT-MASTER-OF-BIOMEDICAL-SCIENCE-52",
+      "level": "master",
+      "nameEnOfficial": "Master of Biomedical Science",
+      "facultyEn": "Jeffrey Cheah School of Medicine and Health Sciences",
+      "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research/medicine-health-sciences/master-biomedical-science",
+      "canonicalStatus": "candidate",
+      "collectionStatus": "needs-review",
+      "officialOrder": 52
+    },
+    {
+      "code": "MUM-MA-MEDICINE-AND-HEALT-MASTER-OF-BIOTECHNOLOGY-53",
+      "level": "master",
+      "nameEnOfficial": "Master of Biotechnology",
+      "facultyEn": "Jeffrey Cheah School of Medicine and Health Sciences",
+      "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research/medicine-health-sciences/master-of-biotechnology",
+      "canonicalStatus": "candidate",
+      "collectionStatus": "needs-review",
+      "officialOrder": 53
+    },
+    {
+      "code": "MUM-MA-MEDICINE-AND-HEALT-MASTER-OF-CLINICAL-PSYCHOLOGY-54",
+      "level": "master",
+      "nameEnOfficial": "Master of Clinical Psychology",
+      "facultyEn": "Jeffrey Cheah School of Medicine and Health Sciences",
+      "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research/medicine-health-sciences/master-of-clinical-psychology",
+      "canonicalStatus": "candidate",
+      "collectionStatus": "needs-review",
+      "officialOrder": 54
+    },
+    {
+      "code": "MUM-PHD-MEDICINE-AND-HEALT-PHD-PHD-55",
+      "level": "phd",
+      "nameEnOfficial": "Doctor of Philosophy (PhD)",
+      "facultyEn": "Jeffrey Cheah School of Medicine and Health Sciences",
+      "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research/medicine-health-sciences/phd",
+      "canonicalStatus": "candidate",
+      "collectionStatus": "needs-review",
+      "officialOrder": 55
+    },
+    {
+      "code": "MUM-MA-PHARMACY-MASTER-OF-PHARMACEUTICAL-SCIENCE-56",
+      "level": "master",
+      "nameEnOfficial": "Master of Pharmaceutical Science",
+      "facultyEn": "School of Pharmacy",
+      "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research/pharmacy/master-of-pharmaceutical-science",
+      "canonicalStatus": "candidate",
+      "collectionStatus": "needs-review",
+      "officialOrder": 56
+    },
+    {
+      "code": "MUM-MA-PHARMACY-MPHIL-57",
+      "level": "master",
+      "nameEnOfficial": "Master of Philosophy",
+      "facultyEn": "School of Pharmacy",
+      "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research/pharmacy/master-of-philosophy",
+      "canonicalStatus": "candidate",
+      "collectionStatus": "needs-review",
+      "officialOrder": 57
+    },
+    {
+      "code": "MUM-PHD-PHARMACY-PHD-PHD-58",
+      "level": "phd",
+      "nameEnOfficial": "Doctor of Philosophy (PhD)",
+      "facultyEn": "School of Pharmacy",
+      "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research/pharmacy/doctor-of-philosophy-phd",
+      "canonicalStatus": "candidate",
+      "collectionStatus": "needs-review",
+      "officialOrder": 58
+    },
+    {
+      "code": "MUM-MA-SCIENCE-MASTER-OF-SCIENCE-59",
+      "level": "master",
+      "nameEnOfficial": "Master of Science",
+      "facultyEn": "School of Science",
+      "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research/science/master-science",
+      "canonicalStatus": "candidate",
+      "collectionStatus": "needs-review",
+      "officialOrder": 59
+    },
+    {
+      "code": "MUM-PHD-SCIENCE-PHD-PHD-60",
+      "level": "phd",
+      "nameEnOfficial": "Doctor of Philosophy (PhD)",
+      "facultyEn": "School of Science",
+      "sourceUrl": "https://www.monash.edu.my/study/postgraduate-and-research/science/phd",
+      "canonicalStatus": "candidate",
+      "collectionStatus": "needs-review",
+      "officialOrder": 60
+    }
+  ]
+}

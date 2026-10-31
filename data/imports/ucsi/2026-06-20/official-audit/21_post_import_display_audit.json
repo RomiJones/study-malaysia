@@ -1,0 +1,89 @@
+{
+  "schemaVersion": 1,
+  "mode": "review-imported",
+  "createdAt": "2026-06-21T11:57:40.241Z",
+  "institution": {
+    "code": "UCSI",
+    "importedRows": 118,
+    "byLevel": {
+      "bachelor": 60,
+      "master": 40,
+      "phd": 18
+    }
+  },
+  "database": {
+    "backupPath": "tmp/backups/ucsi-official-audit-review-before-2026-06-21T11-57-39-892Z.json",
+    "transactionalImport": "passed",
+    "catalogCacheCleared": false,
+    "scopedRows": 118,
+    "adminNeedsReviewRows": 118,
+    "publicLeakageRows": 0,
+    "publicReadyPrefixRows": 0,
+    "legacyActiveRowsPreserved": 6,
+    "existingPublicRowsPreserved": true
+  },
+  "publicVisibility": {
+    "before": {
+      "universityExists": true,
+      "universityId": 10,
+      "code": "UCSI",
+      "slug": "ucsi-university",
+      "isPublished": true,
+      "publicDisplayStatus": "ready",
+      "publicProgramRows": 6,
+      "readyProgramRows": 0,
+      "reviewProgramRows": 124,
+      "reviewImportRows": 118
+    },
+    "after": {
+      "universityExists": true,
+      "universityId": 10,
+      "code": "UCSI",
+      "slug": "ucsi-university",
+      "isPublished": true,
+      "publicDisplayStatus": "ready",
+      "publicProgramRows": 6,
+      "readyProgramRows": 0,
+      "reviewProgramRows": 124,
+      "reviewImportRows": 118
+    },
+    "reviewImportRowsPublished": false,
+    "publicApiLeakage": 0,
+    "publicListLeakage": 0,
+    "publicDetailLeakage": 0,
+    "aggregatePublicCountDeltaFromReviewRows": 0
+  },
+  "reviewSurface": {
+    "expectedRows": 118,
+    "actualRows": 118,
+    "statusPartition": {
+      "ready": 0,
+      "needsReview": 118,
+      "published": 0
+    },
+    "feePartition": {
+      "pending-review": 118
+    },
+    "officialSourceStatusPartition": {
+      "needs-review": 118
+    }
+  },
+  "displayHygiene": {
+    "fourLocalePublicRelease": "not-claimed",
+    "chinesePublicDisplayReady": false,
+    "reviewRowsHiddenFromPublic": true,
+    "sourceLinksStoredForAdminReview": true
+  },
+  "rollback": {
+    "available": true,
+    "path": "tmp/backups/ucsi-official-audit-review-before-2026-06-21T11-57-39-892Z.json",
+    "scope": "UCSI university row and UCSI programmes captured before import."
+  },
+  "remainingReviewExceptions": [
+    "118 fee rows require exact official international full-duration tuition reconciliation.",
+    "118 programme-level international eligibility rows require admissions-route confirmation.",
+    "3 rows are missing official language requirements in the rendered detail capture.",
+    "5 rows are missing official career directions in the rendered detail capture.",
+    "Chinese/Traditional Chinese/Malay student-facing localization is not publication-ready."
+  ]
+}

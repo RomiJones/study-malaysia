@@ -1,0 +1,5313 @@
+{
+  "safe_to_import": false,
+  "import_approved_by": null,
+  "import_approved_at": null,
+  "audit_metadata": {
+    "university": "UCSI University",
+    "universityShortName": "UCSI",
+    "level": "bachelor",
+    "auditDate": "2026-06-24",
+    "auditor": "codex-collector-v2",
+    "officialDomain": "ucsiuniversity.edu.my",
+    "sourceRegistry": {
+      "programmeCatalogUrl": "https://www.ucsiuniversity.edu.my/programmes/Kuala-Lumpur",
+      "feeInfoUrl": "https://www.ucsiuniversity.edu.my/programmes/Kuala-Lumpur",
+      "entryReqUrl": "https://www.ucsiuniversity.edu.my/international-students/overview",
+      "languageReqUrl": "https://www.ucsiuniversity.edu.my/international-students/overview",
+      "otherUrls": [
+        "https://www.ucsiuniversity.edu.my/programmes/Kuching",
+        "https://www.ucsiuniversity.edu.my/programmes/Springhill",
+        "https://ch.ucsiuniversity.edu.my/undergraduate",
+        "https://www.ucsiuniversity.edu.my/undergraduate",
+        "https://www.ucsiuniversity.edu.my/programmes/ba-hons-psychology",
+        "https://www.ucsiuniversity.edu.my/programmes/ba-hons-mass-communication",
+        "https://www.ucsiuniversity.edu.my/programmes/ba-hons-english-language-communication",
+        "https://www.ucsiuniversity.edu.my/programmes/bca-hons-3d-animation-design",
+        "https://www.ucsiuniversity.edu.my/programmes/ba-hons-graphic-design",
+        "https://www.ucsiuniversity.edu.my/programmes/ba-hons-game-design",
+        "https://www.ucsiuniversity.edu.my/programmes/ba-hons-fashion-design-marketing",
+        "https://www.ucsiuniversity.edu.my/programmes/ba-hons-hospitality-management",
+        "https://www.ucsiuniversity.edu.my/programmes/ba-hons-event-and-tourism-management",
+        "https://www.ucsiuniversity.edu.my/programmes/ba-honours-multimedia-design"
+      ]
+    },
+    "inventoryCount": 70,
+    "collectedCount": 70,
+    "skippedCount": 0,
+    "readyCount": 0,
+    "needsReviewCount": 70,
+    "transportNote": "中文官方页面因浏览器安全校验，使用只读文本渲染作为传输层；JSON 中来源 URL 仅记录 UCSI 官方域名。",
+    "exceptionQueueCount": 18,
+    "lastFieldNormalization": "2026-06-24：按官方国际学生语言要求段落和官方缓存页修正英语成绩解析，并处理倒装写法、括号级别写法和相邻考试字段边界。",
+    "baselineCorrection": "2026-06-24：按官方本科总页复核后补入十个此前未纳入的本科专业。"
+  },
+  "programmes": [
+    {
+      "nameEn": "Bachelor Of Science (Honours) Applied Microbiology",
+      "name": "应用微生物学（荣誉）理学士",
+      "faculty": "FACULTY OF APPLIED SCIENCES",
+      "level": "bachelor",
+      "duration": 3,
+      "tuitionMYR": 114863,
+      "intake": [
+        1,
+        5,
+        9
+      ],
+      "ielts": 5,
+      "curriculum": [],
+      "curriculumTotal": 0,
+      "careerProspects": null,
+      "otherLanguageReqs": {
+        "toefl": 40,
+        "pte": 47,
+        "muet": 3.5,
+        "cambridge": 154,
+        "linguaskill": 154
+      },
+      "otherEntryReqs": null,
+      "remarks": "官方页面已发布课程大纲，但课程条目多为英文；本轮为避免中文字段混入英文，未将英文课程名写入课程字段，需人工完成中文逐项结构化后再入库。学费字段取官方详情页国际学生预估总费用；该金额仍受签证、行政费和税务说明影响。",
+      "officialFeeSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-science-honours-applied-microbiology",
+      "officialSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-science-honours-applied-microbiology",
+      "officialVerifiedAt": "2026-06-24",
+      "publicDisplayStatus": "needs-review",
+      "auditStatus": "needs-manual-review"
+    },
+    {
+      "nameEn": "Bachelor Of Science (Honours) Aquatic Science",
+      "name": "水产科学（荣誉）理学士",
+      "faculty": "FACULTY OF APPLIED SCIENCES",
+      "level": "bachelor",
+      "duration": 3,
+      "tuitionMYR": 117590,
+      "intake": [
+        1,
+        5,
+        9
+      ],
+      "ielts": 5,
+      "curriculum": [],
+      "curriculumTotal": 0,
+      "careerProspects": null,
+      "otherLanguageReqs": {
+        "toefl": 46,
+        "pte": 51,
+        "muet": 4,
+        "cambridge": 160,
+        "linguaskill": 154
+      },
+      "otherEntryReqs": null,
+      "remarks": "官方页面已发布课程大纲，但课程条目多为英文；本轮为避免中文字段混入英文，未将英文课程名写入课程字段，需人工完成中文逐项结构化后再入库。学费字段取官方详情页国际学生预估总费用；该金额仍受签证、行政费和税务说明影响。",
+      "officialFeeSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-science-honours-aquatic-science",
+      "officialSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-science-honours-aquatic-science",
+      "officialVerifiedAt": "2026-06-24",
+      "publicDisplayStatus": "needs-review",
+      "auditStatus": "needs-manual-review"
+    },
+    {
+      "nameEn": "Bachelor Of Science (Honours) In Biotechnology",
+      "name": "生物科技（荣誉）理学士",
+      "faculty": "FACULTY OF APPLIED SCIENCES",
+      "level": "bachelor",
+      "duration": 3,
+      "tuitionMYR": 120801,
+      "intake": [
+        1,
+        5,
+        9
+      ],
+      "ielts": 5,
+      "curriculum": [],
+      "curriculumTotal": 0,
+      "careerProspects": null,
+      "otherLanguageReqs": {
+        "toefl": 40,
+        "pte": 47,
+        "muet": 3.5,
+        "cambridge": 154,
+        "linguaskill": 154
+      },
+      "otherEntryReqs": null,
+      "remarks": "官方页面已发布课程大纲，但课程条目多为英文；本轮为避免中文字段混入英文，未将英文课程名写入课程字段，需人工完成中文逐项结构化后再入库。学费字段取官方详情页国际学生预估总费用；该金额仍受签证、行政费和税务说明影响。",
+      "officialFeeSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-science-honours-biotechnology",
+      "officialSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-science-honours-biotechnology",
+      "officialVerifiedAt": "2026-06-24",
+      "publicDisplayStatus": "needs-review",
+      "auditStatus": "needs-manual-review"
+    },
+    {
+      "nameEn": "Bachelor Of Science (Honours) Food Science With Nutrition",
+      "name": "食品科学与营养学（荣誉）理学士",
+      "faculty": "FACULTY OF APPLIED SCIENCES",
+      "level": "bachelor",
+      "duration": 3,
+      "tuitionMYR": 119707,
+      "intake": [
+        1,
+        5,
+        9
+      ],
+      "ielts": 5,
+      "curriculum": [],
+      "curriculumTotal": 0,
+      "careerProspects": null,
+      "otherLanguageReqs": {
+        "toefl": 40,
+        "pte": 47,
+        "muet": 3.5,
+        "cambridge": 154,
+        "linguaskill": 154
+      },
+      "otherEntryReqs": null,
+      "remarks": "官方页面已发布课程大纲，但课程条目多为英文；本轮为避免中文字段混入英文，未将英文课程名写入课程字段，需人工完成中文逐项结构化后再入库。学费字段取官方详情页国际学生预估总费用；该金额仍受签证、行政费和税务说明影响。",
+      "officialFeeSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-science-honours-food-science-nutrition",
+      "officialSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-science-honours-food-science-nutrition",
+      "officialVerifiedAt": "2026-06-24",
+      "publicDisplayStatus": "needs-review",
+      "auditStatus": "needs-manual-review"
+    },
+    {
+      "nameEn": "Bachelor Of Science (Honours) Forensic Science",
+      "name": "鉴证科学（荣誉）理学士",
+      "faculty": "FACULTY OF APPLIED SCIENCES",
+      "level": "bachelor",
+      "duration": 4,
+      "tuitionMYR": 145401,
+      "intake": [
+        1,
+        5,
+        9
+      ],
+      "ielts": 5,
+      "curriculum": [],
+      "curriculumTotal": 0,
+      "careerProspects": null,
+      "otherLanguageReqs": {
+        "toefl": 40,
+        "pte": 47,
+        "muet": 3.5,
+        "cambridge": 154
+      },
+      "otherEntryReqs": null,
+      "remarks": "官方页面已发布课程大纲，但课程条目多为英文；本轮为避免中文字段混入英文，未将英文课程名写入课程字段，需人工完成中文逐项结构化后再入库。学费字段取官方详情页国际学生预估总费用；该金额仍受签证、行政费和税务说明影响。",
+      "officialFeeSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-science-honours-forensic-science",
+      "officialSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-science-honours-forensic-science",
+      "officialVerifiedAt": "2026-06-24",
+      "publicDisplayStatus": "needs-review",
+      "auditStatus": "needs-manual-review"
+    },
+    {
+      "nameEn": "Bachelor Of Science (Honours) Nutrition With Wellness",
+      "name": "营养与保健（荣誉）理学士",
+      "faculty": "FACULTY OF APPLIED SCIENCES",
+      "level": "bachelor",
+      "duration": 3,
+      "tuitionMYR": 126677,
+      "intake": [
+        1,
+        5,
+        9
+      ],
+      "ielts": 5.5,
+      "curriculum": [],
+      "curriculumTotal": 0,
+      "careerProspects": null,
+      "otherLanguageReqs": {
+        "toefl": 46,
+        "pte": 51,
+        "muet": 4,
+        "cambridge": 160
+      },
+      "otherEntryReqs": null,
+      "remarks": "官方页面已发布课程大纲，但课程条目多为英文；本轮为避免中文字段混入英文，未将英文课程名写入课程字段，需人工完成中文逐项结构化后再入库。学费字段取官方详情页国际学生预估总费用；该金额仍受签证、行政费和税务说明影响。",
+      "officialFeeSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-science-honours-nutrition-wellness",
+      "officialSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-science-honours-nutrition-wellness",
+      "officialVerifiedAt": "2026-06-24",
+      "publicDisplayStatus": "needs-review",
+      "auditStatus": "needs-manual-review"
+    },
+    {
+      "nameEn": "Bachelor Of Arts (Hons) Accounting",
+      "name": "会计（荣誉）文学士",
+      "faculty": "FACULTY OF BUSINESS AND MANAGEMENT",
+      "level": "bachelor",
+      "duration": 3,
+      "tuitionMYR": 98136,
+      "intake": [
+        1,
+        5,
+        9
+      ],
+      "ielts": 5,
+      "curriculum": [],
+      "curriculumTotal": 0,
+      "careerProspects": null,
+      "otherLanguageReqs": {
+        "toefl": 40,
+        "pte": 47,
+        "muet": 3.5,
+        "cambridge": 154,
+        "linguaskill": 154
+      },
+      "otherEntryReqs": null,
+      "remarks": "官方页面已发布课程大纲，但课程条目多为英文；本轮为避免中文字段混入英文，未将英文课程名写入课程字段，需人工完成中文逐项结构化后再入库。学费字段取官方详情页国际学生预估总费用；该金额仍受签证、行政费和税务说明影响。",
+      "officialFeeSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-arts-hons-accounting",
+      "officialSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-arts-hons-accounting",
+      "officialVerifiedAt": "2026-06-24",
+      "publicDisplayStatus": "needs-review",
+      "auditStatus": "needs-manual-review"
+    },
+    {
+      "nameEn": "Bachelor Of Arts (Hons) Accounting And Finance",
+      "name": "会计与金融（荣誉）文学士",
+      "faculty": "FACULTY OF BUSINESS AND MANAGEMENT",
+      "level": "bachelor",
+      "duration": 3,
+      "tuitionMYR": 98136,
+      "intake": [
+        1,
+        5,
+        9
+      ],
+      "ielts": 5,
+      "curriculum": [],
+      "curriculumTotal": 0,
+      "careerProspects": null,
+      "otherLanguageReqs": {
+        "toefl": 40,
+        "pte": 47,
+        "muet": 3.5,
+        "cambridge": 154,
+        "linguaskill": 154
+      },
+      "otherEntryReqs": null,
+      "remarks": "官方页面已发布课程大纲，但课程条目多为英文；本轮为避免中文字段混入英文，未将英文课程名写入课程字段，需人工完成中文逐项结构化后再入库。学费字段取官方详情页国际学生预估总费用；该金额仍受签证、行政费和税务说明影响。",
+      "officialFeeSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-arts-hons-accounting-and-finance",
+      "officialSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-arts-hons-accounting-and-finance",
+      "officialVerifiedAt": "2026-06-24",
+      "publicDisplayStatus": "needs-review",
+      "auditStatus": "needs-manual-review"
+    },
+    {
+      "nameEn": "Bachelor Of Arts (Hons) Entrepreneurship",
+      "name": "创业学（荣誉）文学士",
+      "faculty": "FACULTY OF BUSINESS AND MANAGEMENT",
+      "level": "bachelor",
+      "duration": 3,
+      "tuitionMYR": 114004,
+      "intake": [
+        1,
+        5,
+        9
+      ],
+      "ielts": 5.5,
+      "curriculum": [],
+      "curriculumTotal": 0,
+      "careerProspects": null,
+      "otherLanguageReqs": {
+        "toefl": 46,
+        "pte": 51,
+        "muet": 4,
+        "cambridge": 160
+      },
+      "otherEntryReqs": null,
+      "remarks": "官方页面已发布课程大纲，但课程条目多为英文；本轮为避免中文字段混入英文，未将英文课程名写入课程字段，需人工完成中文逐项结构化后再入库。学费字段取官方详情页国际学生预估总费用；该金额仍受签证、行政费和税务说明影响。",
+      "officialFeeSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-arts-hons-entrepreneurship",
+      "officialSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-arts-hons-entrepreneurship",
+      "officialVerifiedAt": "2026-06-24",
+      "publicDisplayStatus": "needs-review",
+      "auditStatus": "needs-manual-review"
+    },
+    {
+      "nameEn": "Bachelor Of Arts (Hons) In Branding And Advertising",
+      "name": "品牌与广告（荣誉）文学士",
+      "faculty": "FACULTY OF BUSINESS AND MANAGEMENT",
+      "level": "bachelor",
+      "duration": 3,
+      "tuitionMYR": 95592,
+      "intake": [
+        1,
+        5,
+        9
+      ],
+      "ielts": 5.5,
+      "curriculum": [],
+      "curriculumTotal": 0,
+      "careerProspects": null,
+      "otherLanguageReqs": {
+        "toefl": 46,
+        "pte": 51,
+        "muet": 4,
+        "cambridge": 160
+      },
+      "otherEntryReqs": null,
+      "remarks": "官方页面已发布课程大纲，但课程条目多为英文；本轮为避免中文字段混入英文，未将英文课程名写入课程字段，需人工完成中文逐项结构化后再入库。学费字段取官方详情页国际学生预估总费用；该金额仍受签证、行政费和税务说明影响。",
+      "officialFeeSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-arts-hons-branding-and-advertising",
+      "officialSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-arts-hons-branding-and-advertising",
+      "officialVerifiedAt": "2026-06-24",
+      "publicDisplayStatus": "needs-review",
+      "auditStatus": "needs-manual-review"
+    },
+    {
+      "nameEn": "Bachelor Of Arts (Hons) In Business Administration",
+      "name": "工商管理（荣誉）文学士",
+      "faculty": "FACULTY OF BUSINESS AND MANAGEMENT",
+      "level": "bachelor",
+      "duration": 3,
+      "tuitionMYR": 95465,
+      "intake": [
+        1,
+        5,
+        9
+      ],
+      "ielts": 5.5,
+      "curriculum": [],
+      "curriculumTotal": 0,
+      "careerProspects": null,
+      "otherLanguageReqs": {
+        "toefl": 46,
+        "pte": 51,
+        "muet": 4,
+        "cambridge": 160
+      },
+      "otherEntryReqs": null,
+      "remarks": "官方页面已发布课程大纲，但课程条目多为英文；本轮为避免中文字段混入英文，未将英文课程名写入课程字段，需人工完成中文逐项结构化后再入库。学费字段取官方详情页国际学生预估总费用；该金额仍受签证、行政费和税务说明影响。",
+      "officialFeeSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-arts-hons-business-administration",
+      "officialSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-arts-hons-business-administration",
+      "officialVerifiedAt": "2026-06-24",
+      "publicDisplayStatus": "needs-review",
+      "auditStatus": "needs-manual-review"
+    },
+    {
+      "nameEn": "Bachelor Of Arts (Hons) In Marketing",
+      "name": "市场行销（荣誉）文学士",
+      "faculty": "FACULTY OF BUSINESS AND MANAGEMENT",
+      "level": "bachelor",
+      "duration": 3,
+      "tuitionMYR": 95465,
+      "intake": [
+        1,
+        5,
+        9
+      ],
+      "ielts": 5.5,
+      "curriculum": [],
+      "curriculumTotal": 0,
+      "careerProspects": null,
+      "otherLanguageReqs": {
+        "toefl": 46,
+        "pte": 51,
+        "muet": 4,
+        "cambridge": 160
+      },
+      "otherEntryReqs": null,
+      "remarks": "官方页面已发布课程大纲，但课程条目多为英文；本轮为避免中文字段混入英文，未将英文课程名写入课程字段，需人工完成中文逐项结构化后再入库。学费字段取官方详情页国际学生预估总费用；该金额仍受签证、行政费和税务说明影响。",
+      "officialFeeSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-arts-hons-marketing",
+      "officialSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-arts-hons-marketing",
+      "officialVerifiedAt": "2026-06-24",
+      "publicDisplayStatus": "needs-review",
+      "auditStatus": "needs-manual-review"
+    },
+    {
+      "nameEn": "Bachelor Of Arts (Hons) Logistics Management",
+      "name": "物流管理（荣誉）文学士",
+      "faculty": "FACULTY OF BUSINESS AND MANAGEMENT",
+      "level": "bachelor",
+      "duration": 3,
+      "tuitionMYR": 95497,
+      "intake": [
+        1,
+        5,
+        9
+      ],
+      "ielts": 5.5,
+      "curriculum": [],
+      "curriculumTotal": 0,
+      "careerProspects": null,
+      "otherLanguageReqs": {
+        "toefl": 46,
+        "pte": 51,
+        "muet": 4,
+        "cambridge": 160
+      },
+      "otherEntryReqs": null,
+      "remarks": "官方页面已发布课程大纲，但课程条目多为英文；本轮为避免中文字段混入英文，未将英文课程名写入课程字段，需人工完成中文逐项结构化后再入库。学费字段取官方详情页国际学生预估总费用；该金额仍受签证、行政费和税务说明影响。",
+      "officialFeeSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-arts-hons-logistics-management",
+      "officialSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-arts-hons-logistics-management",
+      "officialVerifiedAt": "2026-06-24",
+      "publicDisplayStatus": "needs-review",
+      "auditStatus": "needs-manual-review"
+    },
+    {
+      "nameEn": "Bachelor Of Arts (Honours) Supply Chain Operations Management",
+      "name": "供应链运营管理（荣誉）文学士",
+      "faculty": "FACULTY OF BUSINESS AND MANAGEMENT",
+      "level": "bachelor",
+      "duration": 3,
+      "tuitionMYR": 95751,
+      "intake": [
+        1,
+        5,
+        9
+      ],
+      "ielts": 5.5,
+      "curriculum": [],
+      "curriculumTotal": 0,
+      "careerProspects": null,
+      "otherLanguageReqs": {
+        "toefl": 46,
+        "pte": 51,
+        "muet": 4,
+        "cambridge": 160
+      },
+      "otherEntryReqs": null,
+      "remarks": "官方页面已发布课程大纲，但课程条目多为英文；本轮为避免中文字段混入英文，未将英文课程名写入课程字段，需人工完成中文逐项结构化后再入库。学费字段取官方详情页国际学生预估总费用；该金额仍受签证、行政费和税务说明影响。",
+      "officialFeeSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-arts-honours-supply-chain-operations-management",
+      "officialSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-arts-honours-supply-chain-operations-management",
+      "officialVerifiedAt": "2026-06-24",
+      "publicDisplayStatus": "needs-review",
+      "auditStatus": "needs-manual-review"
+    },
+    {
+      "nameEn": "Bachelor In Human Capital Management (Honours)",
+      "name": "人力资本管理（荣誉）学士",
+      "faculty": "FACULTY OF BUSINESS AND MANAGEMENT",
+      "level": "bachelor",
+      "duration": 3,
+      "tuitionMYR": 104501,
+      "intake": [
+        1,
+        5,
+        9
+      ],
+      "ielts": 5.5,
+      "curriculum": [],
+      "curriculumTotal": 0,
+      "careerProspects": null,
+      "otherLanguageReqs": {
+        "toefl": 46,
+        "pte": 51,
+        "muet": 4,
+        "cambridge": 160,
+        "linguaskill": 160
+      },
+      "otherEntryReqs": null,
+      "remarks": "官方页面已发布课程大纲，但课程条目多为英文；本轮为避免中文字段混入英文，未将英文课程名写入课程字段，需人工完成中文逐项结构化后再入库。学费字段取官方详情页国际学生预估总费用；该金额仍受签证、行政费和税务说明影响。",
+      "officialFeeSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-human-capital-management-honours",
+      "officialSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-human-capital-management-honours",
+      "officialVerifiedAt": "2026-06-24",
+      "publicDisplayStatus": "needs-review",
+      "auditStatus": "needs-manual-review"
+    },
+    {
+      "nameEn": "Bachelor Of Business Analytics (Honours)",
+      "name": "商业分析（荣誉）学士",
+      "faculty": "FACULTY OF BUSINESS AND MANAGEMENT",
+      "level": "bachelor",
+      "duration": 3,
+      "tuitionMYR": 99938,
+      "intake": [
+        1,
+        5,
+        9
+      ],
+      "ielts": 5.5,
+      "curriculum": [],
+      "curriculumTotal": 0,
+      "careerProspects": null,
+      "otherLanguageReqs": {
+        "toefl": 46,
+        "pte": 51,
+        "muet": 4,
+        "cambridge": 160,
+        "linguaskill": 160
+      },
+      "otherEntryReqs": null,
+      "remarks": "官方页面已发布课程大纲，但课程条目多为英文；本轮为避免中文字段混入英文，未将英文课程名写入课程字段，需人工完成中文逐项结构化后再入库。学费字段取官方详情页国际学生预估总费用；该金额仍受签证、行政费和税务说明影响。",
+      "officialFeeSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-business-analytics-honours",
+      "officialSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-business-analytics-honours",
+      "officialVerifiedAt": "2026-06-24",
+      "publicDisplayStatus": "needs-review",
+      "auditStatus": "needs-manual-review"
+    },
+    {
+      "nameEn": "Bachelor Of Financial Economics (Hons)",
+      "name": "金融经济（荣誉）学士",
+      "faculty": "FACULTY OF BUSINESS AND MANAGEMENT",
+      "level": "bachelor",
+      "duration": 3,
+      "tuitionMYR": 94956,
+      "intake": [
+        1,
+        5,
+        9
+      ],
+      "ielts": 6,
+      "curriculum": [],
+      "curriculumTotal": 0,
+      "careerProspects": null,
+      "otherLanguageReqs": {
+        "toefl": 60,
+        "pte": 59,
+        "muet": 4,
+        "cambridge": 169
+      },
+      "otherEntryReqs": null,
+      "remarks": "官方页面已发布课程大纲，但课程条目多为英文；本轮为避免中文字段混入英文，未将英文课程名写入课程字段，需人工完成中文逐项结构化后再入库。学费字段取官方详情页国际学生预估总费用；该金额仍受签证、行政费和税务说明影响。",
+      "officialFeeSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-financial-economics-hons",
+      "officialSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-financial-economics-hons",
+      "officialVerifiedAt": "2026-06-24",
+      "publicDisplayStatus": "needs-review",
+      "auditStatus": "needs-manual-review"
+    },
+    {
+      "nameEn": "Bachelor Of Financial Technology (Honours)",
+      "name": "金融科技(荣誉)学士",
+      "faculty": "FACULTY OF BUSINESS AND MANAGEMENT",
+      "level": "bachelor",
+      "duration": 3,
+      "tuitionMYR": 96652,
+      "intake": [
+        1,
+        5,
+        9
+      ],
+      "ielts": 6,
+      "curriculum": [],
+      "curriculumTotal": 0,
+      "careerProspects": null,
+      "otherLanguageReqs": {
+        "toefl": 60,
+        "pte": 59,
+        "muet": 4,
+        "cambridge": 169
+      },
+      "otherEntryReqs": null,
+      "remarks": "官方页面已发布课程大纲，但课程条目多为英文；本轮为避免中文字段混入英文，未将英文课程名写入课程字段，需人工完成中文逐项结构化后再入库。学费字段取官方详情页国际学生预估总费用；该金额仍受签证、行政费和税务说明影响。",
+      "officialFeeSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-financial-technology-honours",
+      "officialSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-financial-technology-honours",
+      "officialVerifiedAt": "2026-06-24",
+      "publicDisplayStatus": "needs-review",
+      "auditStatus": "needs-manual-review"
+    },
+    {
+      "nameEn": "Bachelor Of International And Sustainable Business (Honours)",
+      "name": "国际及可持续商务(荣誉)学士",
+      "faculty": "FACULTY OF BUSINESS AND MANAGEMENT",
+      "level": "bachelor",
+      "duration": 3,
+      "tuitionMYR": 98072,
+      "intake": [
+        1,
+        5,
+        9
+      ],
+      "ielts": 5.5,
+      "curriculum": [],
+      "curriculumTotal": 0,
+      "careerProspects": null,
+      "otherLanguageReqs": {
+        "toefl": 46,
+        "pte": 51,
+        "muet": 4,
+        "cambridge": 160
+      },
+      "otherEntryReqs": null,
+      "remarks": "官方页面已发布课程大纲，但课程条目多为英文；本轮为避免中文字段混入英文，未将英文课程名写入课程字段，需人工完成中文逐项结构化后再入库。学费字段取官方详情页国际学生预估总费用；该金额仍受签证、行政费和税务说明影响。",
+      "officialFeeSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-international-and-sustainable-business-honours",
+      "officialSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-international-and-sustainable-business-honours",
+      "officialVerifiedAt": "2026-06-24",
+      "publicDisplayStatus": "needs-review",
+      "auditStatus": "needs-manual-review"
+    },
+    {
+      "nameEn": "Bachelor Of Science (Honours) Finance And Investment",
+      "name": "金融与投资（荣誉）理学士",
+      "faculty": "FACULTY OF BUSINESS AND MANAGEMENT",
+      "level": "bachelor",
+      "duration": 3,
+      "tuitionMYR": 96005,
+      "intake": [
+        1,
+        5,
+        9
+      ],
+      "ielts": 6,
+      "curriculum": [],
+      "curriculumTotal": 0,
+      "careerProspects": null,
+      "otherLanguageReqs": {
+        "toefl": 60,
+        "pte": 59,
+        "muet": 4,
+        "cambridge": 169
+      },
+      "otherEntryReqs": null,
+      "remarks": "官方页面已发布课程大纲，但课程条目多为英文；本轮为避免中文字段混入英文，未将英文课程名写入课程字段，需人工完成中文逐项结构化后再入库。学费字段取官方详情页国际学生预估总费用；该金额仍受签证、行政费和税务说明影响。",
+      "officialFeeSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-science-honours-finance-and-investment",
+      "officialSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-science-honours-finance-and-investment",
+      "officialVerifiedAt": "2026-06-24",
+      "publicDisplayStatus": "needs-review",
+      "auditStatus": "needs-manual-review"
+    },
+    {
+      "nameEn": "Bachelor Of Arts (Hons) In Interior Architecture",
+      "name": "室内建筑（荣誉）文学士",
+      "faculty": "FACULTY OF ENGINEERING, TECHNOLOGY & BUILT ENVIRONMENT",
+      "level": "bachelor",
+      "duration": 3.5,
+      "tuitionMYR": 108821,
+      "intake": [
+        3,
+        9
+      ],
+      "ielts": 5,
+      "curriculum": [],
+      "curriculumTotal": 0,
+      "careerProspects": null,
+      "otherLanguageReqs": {
+        "toefl": 44,
+        "pte": 47,
+        "muet": 3.5,
+        "cambridge": 154,
+        "linguaskill": 154
+      },
+      "otherEntryReqs": null,
+      "remarks": "官方页面已发布课程大纲，但课程条目多为英文；本轮为避免中文字段混入英文，未将英文课程名写入课程字段，需人工完成中文逐项结构化后再入库。学费字段取官方详情页国际学生预估总费用；该金额仍受签证、行政费和税务说明影响。",
+      "officialFeeSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-arts-hons-interior-architecture",
+      "officialSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-arts-hons-interior-architecture",
+      "officialVerifiedAt": "2026-06-24",
+      "publicDisplayStatus": "needs-review",
+      "auditStatus": "needs-manual-review"
+    },
+    {
+      "nameEn": "Bachelor Of Chemical Engineering With Honours",
+      "name": "化学工程荣誉学士",
+      "faculty": "FACULTY OF ENGINEERING, TECHNOLOGY & BUILT ENVIRONMENT",
+      "level": "bachelor",
+      "duration": 4,
+      "tuitionMYR": 142730,
+      "intake": [
+        1,
+        5,
+        9
+      ],
+      "ielts": 5,
+      "curriculum": [],
+      "curriculumTotal": 0,
+      "careerProspects": null,
+      "otherLanguageReqs": {
+        "toefl": 44,
+        "pte": 47,
+        "muet": 3.5,
+        "cambridge": 154,
+        "linguaskill": 154
+      },
+      "otherEntryReqs": null,
+      "remarks": "官方页面已发布课程大纲，但课程条目多为英文；本轮为避免中文字段混入英文，未将英文课程名写入课程字段，需人工完成中文逐项结构化后再入库。费用页存在多组国际学生预估总费用，本条学费字段按官方金额上限记录，需人工确认具体适用情形。",
+      "officialFeeSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-chemical-engineering-honours",
+      "officialSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-chemical-engineering-honours",
+      "officialVerifiedAt": "2026-06-24",
+      "publicDisplayStatus": "needs-review",
+      "auditStatus": "needs-manual-review"
+    },
+    {
+      "nameEn": "Bachelor Of Civil Engineering With Honours",
+      "name": "土木工程荣誉学士",
+      "faculty": "FACULTY OF ENGINEERING, TECHNOLOGY & BUILT ENVIRONMENT",
+      "level": "bachelor",
+      "duration": 4,
+      "tuitionMYR": 140822,
+      "intake": [
+        1,
+        5,
+        9
+      ],
+      "ielts": 5,
+      "curriculum": [],
+      "curriculumTotal": 0,
+      "careerProspects": null,
+      "otherLanguageReqs": {
+        "toefl": 44,
+        "pte": 47,
+        "muet": 3.5,
+        "cambridge": 154,
+        "linguaskill": 154
+      },
+      "otherEntryReqs": null,
+      "remarks": "官方页面已发布课程大纲，但课程条目多为英文；本轮为避免中文字段混入英文，未将英文课程名写入课程字段，需人工完成中文逐项结构化后再入库。费用页存在多组国际学生预估总费用，本条学费字段按官方金额上限记录，需人工确认具体适用情形。",
+      "officialFeeSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-civil-engineering-honours",
+      "officialSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-civil-engineering-honours",
+      "officialVerifiedAt": "2026-06-24",
+      "publicDisplayStatus": "needs-review",
+      "auditStatus": "needs-manual-review"
+    },
+    {
+      "nameEn": "Bachelor Of Computer Engineering (Artificial Intelligence) With Honours",
+      "name": "电脑工程（人工智能）荣誉学士",
+      "faculty": "FACULTY OF ENGINEERING, TECHNOLOGY & BUILT ENVIRONMENT",
+      "level": "bachelor",
+      "duration": 4,
+      "tuitionMYR": 141267,
+      "intake": [
+        1,
+        5,
+        9
+      ],
+      "ielts": 5,
+      "curriculum": [],
+      "curriculumTotal": 0,
+      "careerProspects": null,
+      "otherLanguageReqs": {
+        "toefl": 44,
+        "pte": 47,
+        "muet": 3.5,
+        "cambridge": 154,
+        "linguaskill": 154
+      },
+      "otherEntryReqs": null,
+      "remarks": "官方页面已发布课程大纲，但课程条目多为英文；本轮为避免中文字段混入英文，未将英文课程名写入课程字段，需人工完成中文逐项结构化后再入库。费用页存在多组国际学生预估总费用，本条学费字段按官方金额上限记录，需人工确认具体适用情形。",
+      "officialFeeSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-computer-engineering-artificial-intelligence-honours",
+      "officialSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-computer-engineering-artificial-intelligence-honours",
+      "officialVerifiedAt": "2026-06-24",
+      "publicDisplayStatus": "needs-review",
+      "auditStatus": "needs-manual-review"
+    },
+    {
+      "nameEn": "Bachelor Of Digital Mechanical Technology With Honours",
+      "name": "数码机械科技荣誉学士",
+      "faculty": "FACULTY OF ENGINEERING, TECHNOLOGY & BUILT ENVIRONMENT",
+      "level": "bachelor",
+      "duration": 3,
+      "tuitionMYR": 113633,
+      "intake": [
+        1,
+        5,
+        9
+      ],
+      "ielts": 5,
+      "curriculum": [],
+      "curriculumTotal": 0,
+      "careerProspects": null,
+      "otherLanguageReqs": {
+        "toefl": 44,
+        "pte": 47,
+        "muet": 3.5,
+        "cambridge": 154,
+        "linguaskill": 154
+      },
+      "otherEntryReqs": null,
+      "remarks": "官方页面已发布课程大纲，但课程条目多为英文；本轮为避免中文字段混入英文，未将英文课程名写入课程字段，需人工完成中文逐项结构化后再入库。费用页存在多组国际学生预估总费用，本条学费字段按官方金额上限记录，需人工确认具体适用情形。",
+      "officialFeeSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-digital-mechanical-technology-honours",
+      "officialSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-digital-mechanical-technology-honours",
+      "officialVerifiedAt": "2026-06-24",
+      "publicDisplayStatus": "needs-review",
+      "auditStatus": "needs-manual-review"
+    },
+    {
+      "nameEn": "Bachelor Of Electrical And Electronics Engineering With Honours",
+      "name": "电机与电子工程荣誉学士",
+      "faculty": "FACULTY OF ENGINEERING, TECHNOLOGY & BUILT ENVIRONMENT",
+      "level": "bachelor",
+      "duration": 4,
+      "tuitionMYR": 139974,
+      "intake": [
+        1,
+        5,
+        9
+      ],
+      "ielts": 5,
+      "curriculum": [],
+      "curriculumTotal": 0,
+      "careerProspects": null,
+      "otherLanguageReqs": {
+        "toefl": 44,
+        "pte": 47,
+        "muet": 3.5,
+        "cambridge": 154,
+        "linguaskill": 154
+      },
+      "otherEntryReqs": null,
+      "remarks": "官方页面已发布课程大纲，但课程条目多为英文；本轮为避免中文字段混入英文，未将英文课程名写入课程字段，需人工完成中文逐项结构化后再入库。费用页存在多组国际学生预估总费用，本条学费字段按官方金额上限记录，需人工确认具体适用情形。",
+      "officialFeeSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-electrical-and-electronics-engineering-honours",
+      "officialSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-electrical-and-electronics-engineering-honours",
+      "officialVerifiedAt": "2026-06-24",
+      "publicDisplayStatus": "needs-review",
+      "auditStatus": "needs-manual-review"
+    },
+    {
+      "nameEn": "Bachelor Of Energy Engineering With Honours",
+      "name": "能源工程荣誉学士",
+      "faculty": "FACULTY OF ENGINEERING, TECHNOLOGY & BUILT ENVIRONMENT",
+      "level": "bachelor",
+      "duration": 4,
+      "tuitionMYR": 142518,
+      "intake": [
+        1,
+        5,
+        9
+      ],
+      "ielts": 5,
+      "curriculum": [],
+      "curriculumTotal": 0,
+      "careerProspects": null,
+      "otherLanguageReqs": {
+        "toefl": 44,
+        "pte": 47,
+        "muet": 3.5,
+        "cambridge": 154,
+        "linguaskill": 154
+      },
+      "otherEntryReqs": null,
+      "remarks": "官方页面已发布课程大纲，但课程条目多为英文；本轮为避免中文字段混入英文，未将英文课程名写入课程字段，需人工完成中文逐项结构化后再入库。费用页存在多组国际学生预估总费用，本条学费字段按官方金额上限记录，需人工确认具体适用情形。",
+      "officialFeeSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-energy-engineering-honours",
+      "officialSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-energy-engineering-honours",
+      "officialVerifiedAt": "2026-06-24",
+      "publicDisplayStatus": "needs-review",
+      "auditStatus": "needs-manual-review"
+    },
+    {
+      "nameEn": "Bachelor Of Mechanical Engineering With Honours",
+      "name": "机械工程荣誉学士",
+      "faculty": "FACULTY OF ENGINEERING, TECHNOLOGY & BUILT ENVIRONMENT",
+      "level": "bachelor",
+      "duration": 4,
+      "tuitionMYR": 140186,
+      "intake": [
+        1,
+        5,
+        9
+      ],
+      "ielts": 5,
+      "curriculum": [],
+      "curriculumTotal": 0,
+      "careerProspects": null,
+      "otherLanguageReqs": {
+        "toefl": 44,
+        "pte": 47,
+        "muet": 3.5,
+        "cambridge": 154,
+        "linguaskill": 154
+      },
+      "otherEntryReqs": null,
+      "remarks": "官方页面已发布课程大纲，但课程条目多为英文；本轮为避免中文字段混入英文，未将英文课程名写入课程字段，需人工完成中文逐项结构化后再入库。费用页存在多组国际学生预估总费用，本条学费字段按官方金额上限记录，需人工确认具体适用情形。",
+      "officialFeeSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-mechanical-engineering-honours",
+      "officialSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-mechanical-engineering-honours",
+      "officialVerifiedAt": "2026-06-24",
+      "publicDisplayStatus": "needs-review",
+      "auditStatus": "needs-manual-review"
+    },
+    {
+      "nameEn": "Bachelor Of Mechatronics Engineering With Honours",
+      "name": "机械电子工程荣誉学士",
+      "faculty": "FACULTY OF ENGINEERING, TECHNOLOGY & BUILT ENVIRONMENT",
+      "level": "bachelor",
+      "duration": 4,
+      "tuitionMYR": 140239,
+      "intake": [
+        1,
+        5,
+        9
+      ],
+      "ielts": 5,
+      "curriculum": [],
+      "curriculumTotal": 0,
+      "careerProspects": null,
+      "otherLanguageReqs": {
+        "toefl": 44,
+        "pte": 47,
+        "muet": 3.5,
+        "cambridge": 154,
+        "linguaskill": 154
+      },
+      "otherEntryReqs": null,
+      "remarks": "官方页面已发布课程大纲，但课程条目多为英文；本轮为避免中文字段混入英文，未将英文课程名写入课程字段，需人工完成中文逐项结构化后再入库。费用页存在多组国际学生预估总费用，本条学费字段按官方金额上限记录，需人工确认具体适用情形。",
+      "officialFeeSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-mechatronics-engineering-honours",
+      "officialSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-mechatronics-engineering-honours",
+      "officialVerifiedAt": "2026-06-24",
+      "publicDisplayStatus": "needs-review",
+      "auditStatus": "needs-manual-review"
+    },
+    {
+      "nameEn": "Bachelor Of Microelectronic Technology With Honours",
+      "name": "微电子科技（荣誉）学士",
+      "faculty": "FACULTY OF ENGINEERING, TECHNOLOGY & BUILT ENVIRONMENT",
+      "level": "bachelor",
+      "duration": 3,
+      "tuitionMYR": 112435,
+      "intake": [
+        1,
+        5,
+        9
+      ],
+      "ielts": 5,
+      "curriculum": [],
+      "curriculumTotal": 0,
+      "careerProspects": null,
+      "otherLanguageReqs": {
+        "toefl": 44,
+        "pte": 47,
+        "muet": 3.5,
+        "cambridge": 154,
+        "linguaskill": 154
+      },
+      "otherEntryReqs": null,
+      "remarks": "官方页面已发布课程大纲，但课程条目多为英文；本轮为避免中文字段混入英文，未将英文课程名写入课程字段，需人工完成中文逐项结构化后再入库。费用页存在多组国际学生预估总费用，本条学费字段按官方金额上限记录，需人工确认具体适用情形。",
+      "officialFeeSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-microelectronic-technology-honours",
+      "officialSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-microelectronic-technology-honours",
+      "officialVerifiedAt": "2026-06-24",
+      "publicDisplayStatus": "needs-review",
+      "auditStatus": "needs-manual-review"
+    },
+    {
+      "nameEn": "Bachelor Of Petroleum Engineering With Honours",
+      "name": "石油工程荣誉学士",
+      "faculty": "FACULTY OF ENGINEERING, TECHNOLOGY & BUILT ENVIRONMENT",
+      "level": "bachelor",
+      "duration": 4,
+      "tuitionMYR": 143207,
+      "intake": [
+        1,
+        5,
+        9
+      ],
+      "ielts": 5,
+      "curriculum": [],
+      "curriculumTotal": 0,
+      "careerProspects": null,
+      "otherLanguageReqs": {
+        "toefl": 44,
+        "pte": 47,
+        "muet": 3.5,
+        "cambridge": 154,
+        "linguaskill": 154
+      },
+      "otherEntryReqs": null,
+      "remarks": "官方页面已发布课程大纲，但课程条目多为英文；本轮为避免中文字段混入英文，未将英文课程名写入课程字段，需人工完成中文逐项结构化后再入库。费用页存在多组国际学生预估总费用，本条学费字段按官方金额上限记录，需人工确认具体适用情形。",
+      "officialFeeSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-petroleum-engineering-honours",
+      "officialSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-petroleum-engineering-honours",
+      "officialVerifiedAt": "2026-06-24",
+      "publicDisplayStatus": "needs-review",
+      "auditStatus": "needs-manual-review"
+    },
+    {
+      "nameEn": "Bachelor Of Quantity Surveying (Hons)",
+      "name": "工料测量（荣誉）学士",
+      "faculty": "FACULTY OF ENGINEERING, TECHNOLOGY & BUILT ENVIRONMENT",
+      "level": "bachelor",
+      "duration": 3.5,
+      "tuitionMYR": 109001,
+      "intake": [
+        3,
+        9
+      ],
+      "ielts": 5,
+      "curriculum": [],
+      "curriculumTotal": 0,
+      "careerProspects": null,
+      "otherLanguageReqs": {
+        "toefl": 44,
+        "pte": 47,
+        "muet": 3.5,
+        "cambridge": 154,
+        "linguaskill": 154
+      },
+      "otherEntryReqs": null,
+      "remarks": "官方页面已发布课程大纲，但课程条目多为英文；本轮为避免中文字段混入英文，未将英文课程名写入课程字段，需人工完成中文逐项结构化后再入库。学费字段取官方详情页国际学生预估总费用；该金额仍受签证、行政费和税务说明影响。",
+      "officialFeeSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-quantity-surveying-hons",
+      "officialSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-quantity-surveying-hons",
+      "officialVerifiedAt": "2026-06-24",
+      "publicDisplayStatus": "needs-review",
+      "auditStatus": "needs-manual-review"
+    },
+    {
+      "nameEn": "Bachelor Of Science (Hons) In Architecture",
+      "name": "建筑（荣誉）理学士",
+      "faculty": "FACULTY OF ENGINEERING, TECHNOLOGY & BUILT ENVIRONMENT",
+      "level": "bachelor",
+      "duration": 3.3,
+      "tuitionMYR": 129342,
+      "intake": [
+        3,
+        9
+      ],
+      "ielts": 5,
+      "curriculum": [],
+      "curriculumTotal": 0,
+      "careerProspects": null,
+      "otherLanguageReqs": {
+        "toefl": 44,
+        "pte": 47,
+        "muet": 3.5,
+        "cambridge": 154,
+        "linguaskill": 154
+      },
+      "otherEntryReqs": null,
+      "remarks": "官方页面已发布课程大纲，但课程条目多为英文；本轮为避免中文字段混入英文，未将英文课程名写入课程字段，需人工完成中文逐项结构化后再入库。学费字段取官方详情页国际学生预估总费用；该金额仍受签证、行政费和税务说明影响。",
+      "officialFeeSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-science-hons-architecture",
+      "officialSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-science-hons-architecture",
+      "officialVerifiedAt": "2026-06-24",
+      "publicDisplayStatus": "needs-review",
+      "auditStatus": "needs-manual-review"
+    },
+    {
+      "nameEn": "Bachelor Of Arts (Honours) In Culinary Management",
+      "name": "烹饪管理（荣誉）文学士",
+      "faculty": "FACULTY OF HOSPITALITY & TOURISM MANAGEMENT",
+      "level": "bachelor",
+      "duration": 3,
+      "tuitionMYR": 112372,
+      "intake": [
+        1,
+        5,
+        9
+      ],
+      "ielts": 5,
+      "curriculum": [],
+      "curriculumTotal": 0,
+      "careerProspects": null,
+      "otherLanguageReqs": {
+        "toefl": 42,
+        "pte": 47,
+        "muet": 3,
+        "cambridge": 154,
+        "linguaskill": 154
+      },
+      "otherEntryReqs": null,
+      "remarks": "官方页面已发布课程大纲，但课程条目多为英文；本轮为避免中文字段混入英文，未将英文课程名写入课程字段，需人工完成中文逐项结构化后再入库。学费字段取官方详情页国际学生预估总费用；该金额仍受签证、行政费和税务说明影响。",
+      "officialFeeSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-arts-honours-culinary-management",
+      "officialSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-arts-honours-culinary-management",
+      "officialVerifiedAt": "2026-06-24",
+      "publicDisplayStatus": "needs-review",
+      "auditStatus": "needs-manual-review"
+    },
+    {
+      "nameEn": "Bachelor Of Arts (Honours) In Global Sustainable Tourism",
+      "name": "全球可持续旅游（荣誉）文学士",
+      "faculty": "FACULTY OF HOSPITALITY & TOURISM MANAGEMENT",
+      "level": "bachelor",
+      "duration": 3,
+      "tuitionMYR": 100924,
+      "intake": [
+        1,
+        5,
+        9
+      ],
+      "ielts": 5,
+      "curriculum": [],
+      "curriculumTotal": 0,
+      "careerProspects": null,
+      "otherLanguageReqs": {
+        "toefl": 42,
+        "pte": 47,
+        "muet": 3,
+        "cambridge": 154,
+        "linguaskill": 154
+      },
+      "otherEntryReqs": null,
+      "remarks": "官方页面已发布课程大纲，但课程条目多为英文；本轮为避免中文字段混入英文，未将英文课程名写入课程字段，需人工完成中文逐项结构化后再入库。学费字段取官方详情页国际学生预估总费用；该金额仍受签证、行政费和税务说明影响。",
+      "officialFeeSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-arts-honours-global-sustainable-tourism",
+      "officialSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-arts-honours-global-sustainable-tourism",
+      "officialVerifiedAt": "2026-06-24",
+      "publicDisplayStatus": "needs-review",
+      "auditStatus": "needs-manual-review"
+    },
+    {
+      "nameEn": "Bachelor Of Hospitality Administration",
+      "name": "礼待行政学士",
+      "faculty": "FACULTY OF HOSPITALITY & TOURISM MANAGEMENT",
+      "level": "bachelor",
+      "duration": 3,
+      "tuitionMYR": 108286,
+      "intake": [
+        1,
+        5,
+        9
+      ],
+      "ielts": 5,
+      "curriculum": [],
+      "curriculumTotal": 0,
+      "careerProspects": null,
+      "otherLanguageReqs": {
+        "toefl": 42,
+        "pte": 47,
+        "muet": 3,
+        "cambridge": 154,
+        "linguaskill": 154
+      },
+      "otherEntryReqs": null,
+      "remarks": "官方页面已发布课程大纲，但课程条目多为英文；本轮为避免中文字段混入英文，未将英文课程名写入课程字段，需人工完成中文逐项结构化后再入库。学费字段取官方详情页国际学生预估总费用；该金额仍受签证、行政费和税务说明影响。",
+      "officialFeeSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-hospitality-administration",
+      "officialSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-hospitality-administration",
+      "officialVerifiedAt": "2026-06-24",
+      "publicDisplayStatus": "needs-review",
+      "auditStatus": "needs-manual-review"
+    },
+    {
+      "nameEn": "Bachelor Of Optometry (Hons)",
+      "name": "视光学（荣誉）学士",
+      "faculty": "FACULTY OF MEDICINE & HEALTH SCIENCES",
+      "level": "bachelor",
+      "duration": 4,
+      "tuitionMYR": 160803,
+      "intake": [
+        2,
+        9
+      ],
+      "ielts": 5.5,
+      "curriculum": [],
+      "curriculumTotal": 0,
+      "careerProspects": null,
+      "otherLanguageReqs": {
+        "toefl": 42,
+        "pte": 47,
+        "muet": 3,
+        "cambridge": 154,
+        "linguaskill": 154
+      },
+      "otherEntryReqs": null,
+      "remarks": "官方页面已发布课程大纲，但课程条目多为英文；本轮为避免中文字段混入英文，未将英文课程名写入课程字段，需人工完成中文逐项结构化后再入库。学费字段取官方详情页国际学生预估总费用；该金额仍受签证、行政费和税务说明影响。",
+      "officialFeeSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-optometry-hons",
+      "officialSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-optometry-hons",
+      "officialVerifiedAt": "2026-06-24",
+      "publicDisplayStatus": "needs-review",
+      "auditStatus": "needs-manual-review"
+    },
+    {
+      "nameEn": "Bachelor In Formulation Science (Honours)",
+      "name": "配方科学（荣誉）学士",
+      "faculty": "FACULTY OF PHARMACEUTICAL SCIENCES",
+      "level": "bachelor",
+      "duration": 3,
+      "tuitionMYR": 125145,
+      "intake": [
+        2,
+        9
+      ],
+      "ielts": 5,
+      "curriculum": [],
+      "curriculumTotal": 0,
+      "careerProspects": null,
+      "otherLanguageReqs": {
+        "toefl": 44,
+        "pte": 47,
+        "muet": 3,
+        "cambridge": 154
+      },
+      "otherEntryReqs": null,
+      "remarks": "官方页面已发布课程大纲，但课程条目多为英文；本轮为避免中文字段混入英文，未将英文课程名写入课程字段，需人工完成中文逐项结构化后再入库。费用页存在多组国际学生预估总费用，本条学费字段按官方金额上限记录，需人工确认具体适用情形。",
+      "officialFeeSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-formulation-science-honours",
+      "officialSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-formulation-science-honours",
+      "officialVerifiedAt": "2026-06-24",
+      "publicDisplayStatus": "needs-review",
+      "auditStatus": "needs-manual-review"
+    },
+    {
+      "nameEn": "Bachelor Of Pharmacy (Honours)",
+      "name": "药剂学（荣誉）学士",
+      "faculty": "FACULTY OF PHARMACEUTICAL SCIENCES",
+      "level": "bachelor",
+      "duration": 4,
+      "tuitionMYR": 232726,
+      "intake": [
+        2,
+        9
+      ],
+      "ielts": 5,
+      "curriculum": [],
+      "curriculumTotal": 0,
+      "careerProspects": null,
+      "otherLanguageReqs": {
+        "toefl": 44,
+        "pte": 47,
+        "muet": 3,
+        "cambridge": 154
+      },
+      "otherEntryReqs": null,
+      "remarks": "官方页面已发布课程大纲，但课程条目多为英文；本轮为避免中文字段混入英文，未将英文课程名写入课程字段，需人工完成中文逐项结构化后再入库。学费字段取官方详情页国际学生预估总费用；该金额仍受签证、行政费和税务说明影响。",
+      "officialFeeSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-pharmacy-honours",
+      "officialSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-pharmacy-honours",
+      "officialVerifiedAt": "2026-06-24",
+      "publicDisplayStatus": "needs-review",
+      "auditStatus": "needs-manual-review"
+    },
+    {
+      "nameEn": "Bachelor Of Early Childhood Education (Honours)",
+      "name": "幼儿教育（荣誉）学士",
+      "faculty": "FACULTY OF SOCIAL SCIENCES & LIBERAL ARTS",
+      "level": "bachelor",
+      "duration": 3,
+      "tuitionMYR": 95603,
+      "intake": [
+        1,
+        5,
+        9
+      ],
+      "ielts": 5.5,
+      "curriculum": [],
+      "curriculumTotal": 0,
+      "careerProspects": null,
+      "otherLanguageReqs": {
+        "toefl": 40,
+        "pte": 47,
+        "muet": 3,
+        "cambridge": 154,
+        "linguaskill": 154
+      },
+      "otherEntryReqs": null,
+      "remarks": "官方页面已发布课程大纲，但课程条目多为英文；本轮为避免中文字段混入英文，未将英文课程名写入课程字段，需人工完成中文逐项结构化后再入库。学费字段取官方详情页国际学生预估总费用；该金额仍受签证、行政费和税务说明影响。",
+      "officialFeeSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-early-childhood-education-honours",
+      "officialSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-early-childhood-education-honours",
+      "officialVerifiedAt": "2026-06-24",
+      "publicDisplayStatus": "needs-review",
+      "auditStatus": "needs-manual-review"
+    },
+    {
+      "nameEn": "Bachelor Of Digital Media Production And Broadcasting (Honours)",
+      "name": "数码媒体制作与广播（荣誉）学士",
+      "faculty": "FACULTY OF SOCIAL SCIENCES & LIBERAL ARTS",
+      "level": "bachelor",
+      "duration": 3,
+      "tuitionMYR": 102556,
+      "intake": [
+        1,
+        5,
+        9
+      ],
+      "ielts": 5,
+      "curriculum": [],
+      "curriculumTotal": 0,
+      "careerProspects": null,
+      "otherLanguageReqs": {
+        "toefl": 40,
+        "pte": 47,
+        "muet": 3.5,
+        "cambridge": 154,
+        "ciep": 107
+      },
+      "otherEntryReqs": null,
+      "remarks": "官方页面已发布课程大纲，但课程条目多为英文；本轮为避免中文字段混入英文，未将英文课程名写入课程字段，需人工完成中文逐项结构化后再入库。学费字段取官方详情页国际学生预估总费用；该金额仍受签证、行政费和税务说明影响。",
+      "officialFeeSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-digital-media-production-and-broadcasting-honours",
+      "officialSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-digital-media-production-and-broadcasting-honours",
+      "officialVerifiedAt": "2026-06-24",
+      "publicDisplayStatus": "needs-review",
+      "auditStatus": "needs-manual-review"
+    },
+    {
+      "nameEn": "Bachelor Of Science (Honours) Actuarial Science",
+      "name": "精算学（荣誉）理学士",
+      "faculty": "INSTITUTE OF ACTUARIAL SCIENCE AND DATA ANALYTICS",
+      "level": "bachelor",
+      "duration": 3,
+      "tuitionMYR": 100404,
+      "intake": [
+        1,
+        5,
+        9
+      ],
+      "ielts": 5,
+      "curriculum": [],
+      "curriculumTotal": 0,
+      "careerProspects": null,
+      "otherLanguageReqs": {
+        "toefl": 40,
+        "pte": 47,
+        "muet": 3.5,
+        "cambridge": 154,
+        "linguaskill": 154
+      },
+      "otherEntryReqs": null,
+      "remarks": "官方页面已发布课程大纲，但课程条目多为英文；本轮为避免中文字段混入英文，未将英文课程名写入课程字段，需人工完成中文逐项结构化后再入库。学费字段取官方详情页国际学生预估总费用；该金额仍受签证、行政费和税务说明影响。",
+      "officialFeeSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-science-honours-actuarial-science",
+      "officialSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-science-honours-actuarial-science",
+      "officialVerifiedAt": "2026-06-24",
+      "publicDisplayStatus": "needs-review",
+      "auditStatus": "needs-manual-review"
+    },
+    {
+      "nameEn": "Bachelor Of Science (Honours) Actuarial Science And Finance",
+      "name": "精算学与金融（荣誉）理学士",
+      "faculty": "INSTITUTE OF ACTUARIAL SCIENCE AND DATA ANALYTICS",
+      "level": "bachelor",
+      "duration": 3,
+      "tuitionMYR": 101178,
+      "intake": [
+        1,
+        5,
+        9
+      ],
+      "ielts": 5,
+      "curriculum": [],
+      "curriculumTotal": 0,
+      "careerProspects": null,
+      "otherLanguageReqs": {
+        "toefl": 40,
+        "pte": 47,
+        "muet": 3.5,
+        "cambridge": 154,
+        "linguaskill": 154
+      },
+      "otherEntryReqs": null,
+      "remarks": "官方页面已发布课程大纲，但课程条目多为英文；本轮为避免中文字段混入英文，未将英文课程名写入课程字段，需人工完成中文逐项结构化后再入库。学费字段取官方详情页国际学生预估总费用；该金额仍受签证、行政费和税务说明影响。",
+      "officialFeeSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-science-honours-actuarial-science-and-finance",
+      "officialSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-science-honours-actuarial-science-and-finance",
+      "officialVerifiedAt": "2026-06-24",
+      "publicDisplayStatus": "needs-review",
+      "auditStatus": "needs-manual-review"
+    },
+    {
+      "nameEn": "Bachelor Of Science (Honours) Actuarial Science With Data Analytics",
+      "name": "精算学与数据分析（荣誉）理学士",
+      "faculty": "INSTITUTE OF ACTUARIAL SCIENCE AND DATA ANALYTICS",
+      "level": "bachelor",
+      "duration": 3,
+      "tuitionMYR": 108015,
+      "intake": [
+        1,
+        5,
+        9
+      ],
+      "ielts": 5,
+      "curriculum": [],
+      "curriculumTotal": 0,
+      "careerProspects": null,
+      "otherLanguageReqs": {
+        "toefl": 40,
+        "pte": 47,
+        "muet": 3.5,
+        "cambridge": 154,
+        "linguaskill": 154
+      },
+      "otherEntryReqs": null,
+      "remarks": "官方页面已发布课程大纲，但课程条目多为英文；本轮为避免中文字段混入英文，未将英文课程名写入课程字段，需人工完成中文逐项结构化后再入库。学费字段取官方详情页国际学生预估总费用；该金额仍受签证、行政费和税务说明影响。",
+      "officialFeeSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-science-honours-actuarial-science-data-analytics",
+      "officialSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-science-honours-actuarial-science-data-analytics",
+      "officialVerifiedAt": "2026-06-24",
+      "publicDisplayStatus": "needs-review",
+      "auditStatus": "needs-manual-review"
+    },
+    {
+      "nameEn": "Bachelor Of Computer Science (Honours)",
+      "name": "电脑科学(荣誉)学士",
+      "faculty": "INSTITUTE OF COMPUTER SCIENCE AND DIGITAL INNOVATION",
+      "level": "bachelor",
+      "duration": 3,
+      "tuitionMYR": 106022,
+      "intake": [
+        1,
+        5,
+        9
+      ],
+      "ielts": 5,
+      "curriculum": [],
+      "curriculumTotal": 0,
+      "careerProspects": null,
+      "otherLanguageReqs": {
+        "toefl": 42,
+        "pte": 47,
+        "muet": 3.5,
+        "cambridge": 154,
+        "linguaskill": 154
+      },
+      "otherEntryReqs": null,
+      "remarks": "官方页面已发布课程大纲，但课程条目多为英文；本轮为避免中文字段混入英文，未将英文课程名写入课程字段，需人工完成中文逐项结构化后再入库。费用页存在多组国际学生预估总费用，本条学费字段按官方金额上限记录，需人工确认具体适用情形。",
+      "officialFeeSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-computer-science-honours",
+      "officialSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-computer-science-honours",
+      "officialVerifiedAt": "2026-06-24",
+      "publicDisplayStatus": "needs-review",
+      "auditStatus": "needs-manual-review"
+    },
+    {
+      "nameEn": "Bachelor Of Computer Science In Artificial Intelligence With Honours",
+      "name": "人工智能（荣誉）电脑科学学士",
+      "faculty": "INSTITUTE OF COMPUTER SCIENCE AND DIGITAL INNOVATION",
+      "level": "bachelor",
+      "duration": 3,
+      "tuitionMYR": 128134,
+      "intake": [
+        1,
+        5,
+        9
+      ],
+      "ielts": 5,
+      "curriculum": [],
+      "curriculumTotal": 0,
+      "careerProspects": null,
+      "otherLanguageReqs": null,
+      "otherEntryReqs": null,
+      "remarks": "官方页面已发布课程大纲，但课程条目多为英文；本轮为避免中文字段混入英文，未将英文课程名写入课程字段，需人工完成中文逐项结构化后再入库。费用页存在多组国际学生预估总费用，本条学费字段按官方金额上限记录，需人工确认具体适用情形。",
+      "officialFeeSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-computer-science-artificial-intelligence-honours",
+      "officialSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-computer-science-artificial-intelligence-honours",
+      "officialVerifiedAt": "2026-06-24",
+      "publicDisplayStatus": "needs-review",
+      "auditStatus": "needs-manual-review"
+    },
+    {
+      "nameEn": "Bachelor Of Computer Science In Cyber Security With Honours",
+      "name": "网络安全（荣誉）电脑科学学士",
+      "faculty": "INSTITUTE OF COMPUTER SCIENCE AND DIGITAL INNOVATION",
+      "level": "bachelor",
+      "duration": 3,
+      "tuitionMYR": 130837,
+      "intake": [
+        1,
+        5,
+        9
+      ],
+      "ielts": 5,
+      "curriculum": [],
+      "curriculumTotal": 0,
+      "careerProspects": null,
+      "otherLanguageReqs": null,
+      "otherEntryReqs": null,
+      "remarks": "官方页面已发布课程大纲，但课程条目多为英文；本轮为避免中文字段混入英文，未将英文课程名写入课程字段，需人工完成中文逐项结构化后再入库。费用页存在多组国际学生预估总费用，本条学费字段按官方金额上限记录，需人工确认具体适用情形。",
+      "officialFeeSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-computer-science-cyber-security-honours",
+      "officialSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-computer-science-cyber-security-honours",
+      "officialVerifiedAt": "2026-06-24",
+      "publicDisplayStatus": "needs-review",
+      "auditStatus": "needs-manual-review"
+    },
+    {
+      "nameEn": "Bachelor Of Computer Science (Hons) Mobile Computing And Networking",
+      "name": "移动计算与网络（荣誉）电脑科学学士",
+      "faculty": "INSTITUTE OF COMPUTER SCIENCE AND DIGITAL INNOVATION",
+      "level": "bachelor",
+      "duration": 3,
+      "tuitionMYR": 99546,
+      "intake": [
+        1,
+        5,
+        9
+      ],
+      "ielts": 5,
+      "curriculum": [],
+      "curriculumTotal": 0,
+      "careerProspects": null,
+      "otherLanguageReqs": {
+        "toefl": 42,
+        "pte": 47,
+        "muet": 3.5,
+        "cambridge": 154,
+        "linguaskill": 154
+      },
+      "otherEntryReqs": null,
+      "remarks": "官方页面已发布课程大纲，但课程条目多为英文；本轮为避免中文字段混入英文，未将英文课程名写入课程字段，需人工完成中文逐项结构化后再入库。费用页存在多组国际学生预估总费用，本条学费字段按官方金额上限记录，需人工确认具体适用情形。",
+      "officialFeeSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-computer-science-hons-mobile-computing-and-networking",
+      "officialSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-computer-science-hons-mobile-computing-and-networking",
+      "officialVerifiedAt": "2026-06-24",
+      "publicDisplayStatus": "needs-review",
+      "auditStatus": "needs-manual-review"
+    },
+    {
+      "nameEn": "Bachelor Of Computer Science In Data Science With Honours",
+      "name": "数据科学荣誉电脑科学学士",
+      "faculty": "INSTITUTE OF COMPUTER SCIENCE AND DIGITAL INNOVATION",
+      "level": "bachelor",
+      "duration": 3,
+      "tuitionMYR": 102811,
+      "intake": [
+        1,
+        5,
+        9
+      ],
+      "ielts": 5,
+      "curriculum": [],
+      "curriculumTotal": 0,
+      "careerProspects": null,
+      "otherLanguageReqs": {
+        "toefl": 42,
+        "pte": 47,
+        "muet": 3.5,
+        "cambridge": 154,
+        "linguaskill": 154
+      },
+      "otherEntryReqs": null,
+      "remarks": "官方页面已发布课程大纲，但课程条目多为英文；本轮为避免中文字段混入英文，未将英文课程名写入课程字段，需人工完成中文逐项结构化后再入库。费用页存在多组国际学生预估总费用，本条学费字段按官方金额上限记录，需人工确认具体适用情形。",
+      "officialFeeSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-computer-science-data-science-honours",
+      "officialSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-computer-science-data-science-honours",
+      "officialVerifiedAt": "2026-06-24",
+      "publicDisplayStatus": "needs-review",
+      "auditStatus": "needs-manual-review"
+    },
+    {
+      "nameEn": "Bachelor Of Science In Business Information Systems (Honours)",
+      "name": "商业资讯系统（荣誉）理学士",
+      "faculty": "INSTITUTE OF COMPUTER SCIENCE AND DIGITAL INNOVATION",
+      "level": "bachelor",
+      "duration": 3,
+      "tuitionMYR": 116792,
+      "intake": [
+        1,
+        5,
+        9
+      ],
+      "ielts": 5,
+      "curriculum": [],
+      "curriculumTotal": 0,
+      "careerProspects": null,
+      "otherLanguageReqs": {
+        "toefl": 42,
+        "pte": 47,
+        "muet": 3,
+        "cambridge": 154,
+        "linguaskill": 154
+      },
+      "otherEntryReqs": null,
+      "remarks": "官方页面已发布课程大纲，但课程条目多为英文；本轮为避免中文字段混入英文，未将英文课程名写入课程字段，需人工完成中文逐项结构化后再入库。费用页存在多组国际学生预估总费用，本条学费字段按官方金额上限记录，需人工确认具体适用情形。",
+      "officialFeeSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-science-business-information-systems-honours",
+      "officialSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-science-business-information-systems-honours",
+      "officialVerifiedAt": "2026-06-24",
+      "publicDisplayStatus": "needs-review",
+      "auditStatus": "needs-manual-review"
+    },
+    {
+      "nameEn": "Bachelor Of Classical Music (Hons.)",
+      "name": "古典音乐（荣誉）学士",
+      "faculty": "INSTITUTE OF MUSIC",
+      "level": "bachelor",
+      "duration": 3,
+      "tuitionMYR": 155726,
+      "intake": [
+        1,
+        5,
+        9
+      ],
+      "ielts": 5,
+      "curriculum": [],
+      "curriculumTotal": 0,
+      "careerProspects": null,
+      "otherLanguageReqs": {
+        "toefl": 40,
+        "pte": 47,
+        "muet": 3.5,
+        "cambridge": 154,
+        "linguaskill": 154
+      },
+      "otherEntryReqs": null,
+      "remarks": "官方页面已发布课程大纲，但课程条目多为英文；本轮为避免中文字段混入英文，未将英文课程名写入课程字段，需人工完成中文逐项结构化后再入库。学费字段取官方详情页国际学生预估总费用；该金额仍受签证、行政费和税务说明影响。",
+      "officialFeeSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-classical-music-hons",
+      "officialSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-classical-music-hons",
+      "officialVerifiedAt": "2026-06-24",
+      "publicDisplayStatus": "needs-review",
+      "auditStatus": "needs-manual-review"
+    },
+    {
+      "nameEn": "Bachelor Of Contemporary Music (Hons.)",
+      "name": "现代音乐（荣誉）学士",
+      "faculty": "INSTITUTE OF MUSIC",
+      "level": "bachelor",
+      "duration": 3,
+      "tuitionMYR": 155726,
+      "intake": [
+        1,
+        5,
+        9
+      ],
+      "ielts": 5,
+      "curriculum": [],
+      "curriculumTotal": 0,
+      "careerProspects": null,
+      "otherLanguageReqs": {
+        "toefl": 40,
+        "pte": 47,
+        "muet": 3.5,
+        "cambridge": 154,
+        "linguaskill": 154
+      },
+      "otherEntryReqs": null,
+      "remarks": "官方页面已发布课程大纲，但课程条目多为英文；本轮为避免中文字段混入英文，未将英文课程名写入课程字段，需人工完成中文逐项结构化后再入库。学费字段取官方详情页国际学生预估总费用；该金额仍受签证、行政费和税务说明影响。",
+      "officialFeeSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-contemporary-music-hons",
+      "officialSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-contemporary-music-hons",
+      "officialVerifiedAt": "2026-06-24",
+      "publicDisplayStatus": "needs-review",
+      "auditStatus": "needs-manual-review"
+    },
+    {
+      "nameEn": "Bachelor In Business Management (Honours)",
+      "name": "商务管理（荣誉）学士",
+      "faculty": "FACULTY OF BUSINESS AND MANAGEMENT",
+      "level": "bachelor",
+      "duration": 3,
+      "tuitionMYR": 86134,
+      "intake": [
+        1,
+        5,
+        9
+      ],
+      "ielts": 5.5,
+      "curriculum": [],
+      "curriculumTotal": 0,
+      "careerProspects": null,
+      "otherLanguageReqs": {
+        "toefl": 3.5,
+        "pte": 47,
+        "muet": 3,
+        "cambridge": 154,
+        "linguaskill": 154
+      },
+      "otherEntryReqs": null,
+      "remarks": "官方页面已发布课程大纲，但课程条目多为英文；本轮为避免中文字段混入英文，未将英文课程名写入课程字段，需人工完成中文逐项结构化后再入库。学费字段取官方详情页国际学生预估总费用；该金额仍受签证、行政费和税务说明影响。",
+      "officialFeeSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-business-management-honours",
+      "officialSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-business-management-honours",
+      "officialVerifiedAt": "2026-06-24",
+      "publicDisplayStatus": "needs-review",
+      "auditStatus": "needs-manual-review"
+    },
+    {
+      "nameEn": "Bachelor In International Business (Honours)",
+      "name": "国际商务（荣誉）学士",
+      "faculty": "FACULTY OF BUSINESS AND MANAGEMENT",
+      "level": "bachelor",
+      "duration": 3,
+      "tuitionMYR": 87088,
+      "intake": [
+        1,
+        5,
+        9
+      ],
+      "ielts": 5.5,
+      "curriculum": [],
+      "curriculumTotal": 0,
+      "careerProspects": null,
+      "otherLanguageReqs": {
+        "toefl": 3.5,
+        "pte": 51,
+        "cambridge": 160,
+        "linguaskill": 160
+      },
+      "otherEntryReqs": null,
+      "remarks": "官方页面已发布课程大纲，但课程条目多为英文；本轮为避免中文字段混入英文，未将英文课程名写入课程字段，需人工完成中文逐项结构化后再入库。学费字段取官方详情页国际学生预估总费用；该金额仍受签证、行政费和税务说明影响。",
+      "officialFeeSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-international-business-honours",
+      "officialSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-international-business-honours",
+      "officialVerifiedAt": "2026-06-24",
+      "publicDisplayStatus": "needs-review",
+      "auditStatus": "needs-manual-review"
+    },
+    {
+      "nameEn": "Bachelor Of Commerce (Hons) In Accounting And Finance",
+      "name": "会计与金融（荣誉）商学士",
+      "faculty": "FACULTY OF BUSINESS AND MANAGEMENT",
+      "level": "bachelor",
+      "duration": 3,
+      "tuitionMYR": 85180,
+      "intake": [
+        1,
+        5,
+        9
+      ],
+      "ielts": 5.5,
+      "curriculum": [],
+      "curriculumTotal": 0,
+      "careerProspects": null,
+      "otherLanguageReqs": {
+        "toefl": 3.5,
+        "pte": 51,
+        "muet": 4,
+        "cambridge": 160,
+        "linguaskill": 160
+      },
+      "otherEntryReqs": null,
+      "remarks": "官方页面已发布课程大纲，但课程条目多为英文；本轮为避免中文字段混入英文，未将英文课程名写入课程字段，需人工完成中文逐项结构化后再入库。学费字段取官方详情页国际学生预估总费用；该金额仍受签证、行政费和税务说明影响。",
+      "officialFeeSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-commerce-hons-accounting-and-finance-kuching-campus",
+      "officialSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-commerce-hons-accounting-and-finance-kuching-campus",
+      "officialVerifiedAt": "2026-06-24",
+      "publicDisplayStatus": "needs-review",
+      "auditStatus": "needs-manual-review"
+    },
+    {
+      "nameEn": "Bachelor Of Commerce (Hons) In Marketing",
+      "name": "市场营销（荣誉）商学士",
+      "faculty": "FACULTY OF BUSINESS AND MANAGEMENT",
+      "level": "bachelor",
+      "duration": 3,
+      "tuitionMYR": 87279,
+      "intake": [
+        1,
+        5,
+        9
+      ],
+      "ielts": 5.5,
+      "curriculum": [],
+      "curriculumTotal": 0,
+      "careerProspects": null,
+      "otherLanguageReqs": {
+        "toefl": 3.5,
+        "pte": 51,
+        "cambridge": 160,
+        "linguaskill": 160
+      },
+      "otherEntryReqs": null,
+      "remarks": "官方页面已发布课程大纲，但课程条目多为英文；本轮为避免中文字段混入英文，未将英文课程名写入课程字段，需人工完成中文逐项结构化后再入库。学费字段取官方详情页国际学生预估总费用；该金额仍受签证、行政费和税务说明影响。",
+      "officialFeeSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-commerce-hons-marketing",
+      "officialSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-commerce-hons-marketing",
+      "officialVerifiedAt": "2026-06-24",
+      "publicDisplayStatus": "needs-review",
+      "auditStatus": "needs-manual-review"
+    },
+    {
+      "nameEn": "Bachelor Of Arts (Honours) In Culinary Management",
+      "name": "烹饪管理（荣誉）文学士",
+      "faculty": "FACULTY OF HOSPITALITY AND TOURISM MANAGEMENT",
+      "level": "bachelor",
+      "duration": 3,
+      "tuitionMYR": 91293,
+      "intake": [
+        1,
+        5,
+        9
+      ],
+      "ielts": 5,
+      "curriculum": [],
+      "curriculumTotal": 0,
+      "careerProspects": null,
+      "otherLanguageReqs": {
+        "toefl": 42,
+        "pte": 47,
+        "muet": 3,
+        "cambridge": 154,
+        "linguaskill": 154
+      },
+      "otherEntryReqs": null,
+      "remarks": "官方页面已发布课程大纲，但课程条目多为英文；本轮为避免中文字段混入英文，未将英文课程名写入课程字段，需人工完成中文逐项结构化后再入库。学费字段取官方详情页国际学生预估总费用；该金额仍受签证、行政费和税务说明影响。",
+      "officialFeeSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-arts-honours-culinary-management-kuching-campus",
+      "officialSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-arts-honours-culinary-management-kuching-campus",
+      "officialVerifiedAt": "2026-06-24",
+      "publicDisplayStatus": "needs-review",
+      "auditStatus": "needs-manual-review"
+    },
+    {
+      "nameEn": "Doctor Of Medicine (MD)",
+      "name": "医学士",
+      "faculty": "FACULTY OF MEDICINE AND HEALTH SCIENCES",
+      "level": "bachelor",
+      "duration": 5,
+      "tuitionMYR": 532524,
+      "intake": [
+        9
+      ],
+      "ielts": 6,
+      "curriculum": [],
+      "curriculumTotal": 0,
+      "careerProspects": null,
+      "otherLanguageReqs": {
+        "toefl": 213,
+        "muet": 4
+      },
+      "otherEntryReqs": null,
+      "remarks": "官方页面已发布课程大纲，但课程条目多为英文；本轮为避免中文字段混入英文，未将英文课程名写入课程字段，需人工完成中文逐项结构化后再入库。学费字段取官方详情页国际学生预估总费用；该金额仍受签证、行政费和税务说明影响。",
+      "officialFeeSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/doctor-medicine-md",
+      "officialSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/doctor-medicine-md",
+      "officialVerifiedAt": "2026-06-24",
+      "publicDisplayStatus": "needs-review",
+      "auditStatus": "needs-manual-review"
+    },
+    {
+      "nameEn": "Bachelor Of Nursing (Hons)",
+      "name": "护理学（荣誉）学士",
+      "faculty": "FACULTY OF MEDICINE AND HEALTH SCIENCES",
+      "level": "bachelor",
+      "duration": 4,
+      "tuitionMYR": 117500,
+      "intake": [
+        1,
+        7
+      ],
+      "ielts": 5.5,
+      "curriculum": [],
+      "curriculumTotal": 0,
+      "careerProspects": null,
+      "otherLanguageReqs": {
+        "toefl": 453,
+        "muet": 3,
+        "cambridge": 160,
+        "linguaskill": 200
+      },
+      "otherEntryReqs": null,
+      "remarks": "官方页面已发布课程大纲，但课程条目多为英文；本轮为避免中文字段混入英文，未将英文课程名写入课程字段，需人工完成中文逐项结构化后再入库。学费字段取官方详情页国际学生预估总费用；该金额仍受签证、行政费和税务说明影响。",
+      "officialFeeSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-nursing-hons",
+      "officialSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-nursing-hons",
+      "officialVerifiedAt": "2026-06-24",
+      "publicDisplayStatus": "needs-review",
+      "auditStatus": "needs-manual-review"
+    },
+    {
+      "nameEn": "Bachelor Of Arts (Honours) In Hospitality Management",
+      "name": "礼待管理（荣誉）文学士",
+      "faculty": "SCHOOL OF HOSPITALITY AND TOURISM MANAGEMENT",
+      "level": "bachelor",
+      "duration": 3,
+      "tuitionMYR": 101285,
+      "intake": [
+        1,
+        5,
+        9
+      ],
+      "ielts": 5,
+      "curriculum": [],
+      "curriculumTotal": 0,
+      "careerProspects": null,
+      "otherLanguageReqs": {
+        "toefl": 3,
+        "muet": 3.5,
+        "linguaskill": 154
+      },
+      "otherEntryReqs": null,
+      "remarks": "官方页面已发布课程大纲，但课程条目多为英文；本轮为避免中文字段混入英文，未将英文课程名写入课程字段，需人工完成中文逐项结构化后再入库。学费字段取官方详情页国际学生预估总费用；该金额仍受签证、行政费和税务说明影响。",
+      "officialFeeSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-arts-honours-hospitality-management",
+      "officialSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-arts-honours-hospitality-management",
+      "officialVerifiedAt": "2026-06-24",
+      "publicDisplayStatus": "needs-review",
+      "auditStatus": "needs-manual-review"
+    },
+    {
+      "nameEn": "BA (Hons) Psychology",
+      "name": "心理学（荣誉）文学士",
+      "faculty": "FACULTY OF SOCIAL SCIENCES & LIBERAL ARTS",
+      "level": "bachelor",
+      "duration": 3,
+      "tuitionMYR": 101846,
+      "intake": [
+        1,
+        5,
+        9
+      ],
+      "ielts": 5,
+      "curriculum": [],
+      "curriculumTotal": 0,
+      "careerProspects": null,
+      "otherLanguageReqs": {
+        "linguaskill": 154,
+        "cambridge": 154,
+        "toefl": 40,
+        "pte": 47,
+        "muet": 3.5
+      },
+      "otherEntryReqs": null,
+      "remarks": "官方页面已发布课程大纲，但课程条目多为英文；本轮为避免中文字段混入英文，未将英文课程名写入课程字段，需人工完成中文逐项结构化后再入库。费用页存在多组国际学生预估总费用，本条学费字段按官方金额上限记录，需人工确认具体适用情形。官方详情页显示授课校区为吉隆坡。",
+      "officialFeeSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/ba-hons-psychology",
+      "officialSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/ba-hons-psychology",
+      "officialVerifiedAt": "2026-06-24",
+      "publicDisplayStatus": "needs-review",
+      "auditStatus": "needs-manual-review"
+    },
+    {
+      "nameEn": "BA (Hons) Mass Communication",
+      "name": "大众传播（荣誉）文学士",
+      "faculty": "FACULTY OF SOCIAL SCIENCES & LIBERAL ARTS",
+      "level": "bachelor",
+      "duration": 3,
+      "tuitionMYR": 96906,
+      "intake": [
+        1,
+        5,
+        9
+      ],
+      "ielts": 5,
+      "curriculum": [],
+      "curriculumTotal": 0,
+      "careerProspects": null,
+      "otherLanguageReqs": {
+        "linguaskill": 154,
+        "cambridge": 154,
+        "toefl": 40,
+        "pte": 47,
+        "muet": 3.5
+      },
+      "otherEntryReqs": null,
+      "remarks": "官方页面已发布课程大纲，但课程条目多为英文；本轮为避免中文字段混入英文，未将英文课程名写入课程字段，需人工完成中文逐项结构化后再入库。学费字段取官方详情页国际学生预估总费用；该金额仍受签证、行政费和税务说明影响。官方详情页显示授课校区为吉隆坡。",
+      "officialFeeSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/ba-hons-mass-communication",
+      "officialSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/ba-hons-mass-communication",
+      "officialVerifiedAt": "2026-06-24",
+      "publicDisplayStatus": "needs-review",
+      "auditStatus": "needs-manual-review"
+    },
+    {
+      "nameEn": "BA (Hons) English Language & Communication",
+      "name": "英语与传播（荣誉）文学士",
+      "faculty": "INSTITUTE OF LANGUAGES",
+      "level": "bachelor",
+      "duration": 3,
+      "tuitionMYR": 99525,
+      "intake": [
+        1,
+        5,
+        9
+      ],
+      "ielts": 6,
+      "curriculum": [],
+      "curriculumTotal": 0,
+      "careerProspects": null,
+      "otherLanguageReqs": {
+        "linguaskill": 169,
+        "cambridge": 169,
+        "toefl": 60,
+        "pte": 59,
+        "muet": 4,
+        "ciep": 108
+      },
+      "otherEntryReqs": null,
+      "remarks": "官方页面已发布课程大纲，但课程条目多为英文；本轮为避免中文字段混入英文，未将英文课程名写入课程字段，需人工完成中文逐项结构化后再入库。学费字段取官方详情页国际学生预估总费用；该金额仍受签证、行政费和税务说明影响。官方详情页显示授课校区为吉隆坡。",
+      "officialFeeSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/ba-hons-english-language-communication",
+      "officialSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/ba-hons-english-language-communication",
+      "officialVerifiedAt": "2026-06-24",
+      "publicDisplayStatus": "needs-review",
+      "auditStatus": "needs-manual-review"
+    },
+    {
+      "nameEn": "BCA (Hons) 3D Animation Design",
+      "name": "三维动画设计（荣誉）创意艺术学士",
+      "faculty": "DE INSTITUTE OF CREATIVE ARTS AND DESIGN",
+      "level": "bachelor",
+      "duration": 3,
+      "tuitionMYR": 99826,
+      "intake": [
+        1,
+        5,
+        9
+      ],
+      "ielts": 5.5,
+      "curriculum": [],
+      "curriculumTotal": 0,
+      "careerProspects": null,
+      "otherLanguageReqs": {
+        "toefl": 46,
+        "pte": 51,
+        "muet": 4,
+        "cambridge": 160,
+        "ciep": 108
+      },
+      "otherEntryReqs": null,
+      "remarks": "官方页面已发布课程大纲，但课程条目多为英文；本轮为避免中文字段混入英文，未将英文课程名写入课程字段，需人工完成中文逐项结构化后再入库。学费字段取官方详情页国际学生预估总费用；该金额仍受签证、行政费和税务说明影响。官方详情页显示授课校区为吉隆坡。",
+      "officialFeeSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bca-hons-3d-animation-design",
+      "officialSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bca-hons-3d-animation-design",
+      "officialVerifiedAt": "2026-06-24",
+      "publicDisplayStatus": "needs-review",
+      "auditStatus": "needs-manual-review"
+    },
+    {
+      "nameEn": "BA (Hons) Graphic Design",
+      "name": "平面设计（荣誉）文学士",
+      "faculty": "DE INSTITUTE OF CREATIVE ARTS AND DESIGN",
+      "level": "bachelor",
+      "duration": 3,
+      "tuitionMYR": 106061,
+      "intake": [
+        1,
+        5,
+        9
+      ],
+      "ielts": 4.5,
+      "curriculum": [],
+      "curriculumTotal": 0,
+      "careerProspects": null,
+      "otherLanguageReqs": {
+        "toefl": 33,
+        "pte": 43,
+        "muet": 3,
+        "cambridge": 147,
+        "ciep": 107
+      },
+      "otherEntryReqs": null,
+      "remarks": "官方页面已发布课程大纲，但课程条目多为英文；本轮为避免中文字段混入英文，未将英文课程名写入课程字段，需人工完成中文逐项结构化后再入库。学费字段取官方详情页国际学生预估总费用；该金额仍受签证、行政费和税务说明影响。官方详情页显示授课校区为吉隆坡。",
+      "officialFeeSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/ba-hons-graphic-design",
+      "officialSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/ba-hons-graphic-design",
+      "officialVerifiedAt": "2026-06-24",
+      "publicDisplayStatus": "needs-review",
+      "auditStatus": "needs-manual-review"
+    },
+    {
+      "nameEn": "BA (Hons) Game Design",
+      "name": "游戏设计（荣誉）学士",
+      "faculty": "DE INSTITUTE OF CREATIVE ARTS AND DESIGN",
+      "level": "bachelor",
+      "duration": 3,
+      "tuitionMYR": 107445,
+      "intake": [
+        1,
+        5,
+        9
+      ],
+      "ielts": 5.5,
+      "curriculum": [],
+      "curriculumTotal": 0,
+      "careerProspects": null,
+      "otherLanguageReqs": {
+        "toefl": 46,
+        "pte": 51,
+        "muet": 4,
+        "cambridge": 160,
+        "ciep": 108
+      },
+      "otherEntryReqs": null,
+      "remarks": "官方页面已发布课程大纲，但课程条目多为英文；本轮为避免中文字段混入英文，未将英文课程名写入课程字段，需人工完成中文逐项结构化后再入库。学费字段取官方详情页国际学生预估总费用；该金额仍受签证、行政费和税务说明影响。官方详情页显示授课校区为吉隆坡。",
+      "officialFeeSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/ba-hons-game-design",
+      "officialSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/ba-hons-game-design",
+      "officialVerifiedAt": "2026-06-24",
+      "publicDisplayStatus": "needs-review",
+      "auditStatus": "needs-manual-review"
+    },
+    {
+      "nameEn": "BA (Hons) Fashion Design with Marketing",
+      "name": "时装设计与市场营销（荣誉）文学士",
+      "faculty": "DE INSTITUTE OF CREATIVE ARTS AND DESIGN",
+      "level": "bachelor",
+      "duration": 3,
+      "tuitionMYR": 115764,
+      "intake": [
+        1,
+        5,
+        9
+      ],
+      "ielts": 4.5,
+      "curriculum": [],
+      "curriculumTotal": 0,
+      "careerProspects": null,
+      "otherLanguageReqs": {
+        "toefl": 33,
+        "pte": 43,
+        "muet": 3,
+        "cambridge": 147,
+        "ciep": 107
+      },
+      "otherEntryReqs": null,
+      "remarks": "官方页面已发布课程大纲，但课程条目多为英文；本轮为避免中文字段混入英文，未将英文课程名写入课程字段，需人工完成中文逐项结构化后再入库。学费字段取官方详情页国际学生预估总费用；该金额仍受签证、行政费和税务说明影响。官方详情页显示授课校区为吉隆坡。",
+      "officialFeeSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/ba-hons-fashion-design-marketing",
+      "officialSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/ba-hons-fashion-design-marketing",
+      "officialVerifiedAt": "2026-06-24",
+      "publicDisplayStatus": "needs-review",
+      "auditStatus": "needs-manual-review"
+    },
+    {
+      "nameEn": "BA (Hons) in Hospitality Management",
+      "name": "礼待管理（荣誉）文学士",
+      "faculty": "FACULTY OF HOSPITALITY AND TOURISM MANAGEMENT",
+      "level": "bachelor",
+      "duration": 3,
+      "tuitionMYR": 101285,
+      "intake": [
+        1,
+        5,
+        9
+      ],
+      "ielts": 5,
+      "curriculum": [],
+      "curriculumTotal": 0,
+      "careerProspects": null,
+      "otherLanguageReqs": {
+        "linguaskill": 154,
+        "cambridge": 154,
+        "toefl": 42,
+        "pte": 47,
+        "muet": 3,
+        "ciep": 107
+      },
+      "otherEntryReqs": null,
+      "remarks": "官方页面已发布课程大纲，但课程条目多为英文；本轮为避免中文字段混入英文，未将英文课程名写入课程字段，需人工完成中文逐项结构化后再入库。学费字段取官方详情页国际学生预估总费用；该金额仍受签证、行政费和税务说明影响。官方详情页显示授课校区为古晋。",
+      "officialFeeSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/ba-hons-hospitality-management",
+      "officialSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/ba-hons-hospitality-management",
+      "officialVerifiedAt": "2026-06-24",
+      "publicDisplayStatus": "needs-review",
+      "auditStatus": "needs-manual-review"
+    },
+    {
+      "nameEn": "BA (Hons) in Event and Tourism Management",
+      "name": "活动策划与旅游管理(荣誉)文学士",
+      "faculty": "FACULTY OF HOSPITALITY AND TOURISM MANAGEMENT",
+      "level": "bachelor",
+      "duration": 3,
+      "tuitionMYR": 86341,
+      "intake": [
+        1,
+        5,
+        9
+      ],
+      "ielts": 5,
+      "curriculum": [],
+      "curriculumTotal": 0,
+      "careerProspects": null,
+      "otherLanguageReqs": {
+        "linguaskill": 154,
+        "cambridge": 154,
+        "toefl": 42,
+        "pte": 47,
+        "muet": 3,
+        "ciep": 107
+      },
+      "otherEntryReqs": null,
+      "remarks": "官方页面已发布课程大纲，但课程条目多为英文；本轮为避免中文字段混入英文，未将英文课程名写入课程字段，需人工完成中文逐项结构化后再入库。学费字段取官方详情页国际学生预估总费用；该金额仍受签证、行政费和税务说明影响。官方详情页显示授课校区为古晋。",
+      "officialFeeSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/ba-hons-event-and-tourism-management",
+      "officialSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/ba-hons-event-and-tourism-management",
+      "officialVerifiedAt": "2026-06-24",
+      "publicDisplayStatus": "needs-review",
+      "auditStatus": "needs-manual-review"
+    },
+    {
+      "nameEn": "BA (Honours) Multimedia Design",
+      "name": "多媒体设计（荣誉）文学士",
+      "faculty": "DE INSTITUTE OF CREATIVE ARTS AND DESIGN",
+      "level": "bachelor",
+      "duration": 3,
+      "tuitionMYR": 113401,
+      "intake": [
+        1,
+        5,
+        9
+      ],
+      "ielts": 5.5,
+      "curriculum": [],
+      "curriculumTotal": 0,
+      "careerProspects": null,
+      "otherLanguageReqs": {
+        "toefl": 46,
+        "pte": 51,
+        "muet": 4,
+        "cambridge": 160,
+        "ciep": 108
+      },
+      "otherEntryReqs": null,
+      "remarks": "官方页面已发布课程大纲，但课程条目多为英文；本轮为避免中文字段混入英文，未将英文课程名写入课程字段，需人工完成中文逐项结构化后再入库。学费字段取官方详情页国际学生预估总费用；该金额仍受签证、行政费和税务说明影响。官方详情页显示授课校区为吉隆坡。",
+      "officialFeeSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/ba-honours-multimedia-design",
+      "officialSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/ba-honours-multimedia-design",
+      "officialVerifiedAt": "2026-06-24",
+      "publicDisplayStatus": "needs-review",
+      "auditStatus": "needs-manual-review"
+    }
+  ],
+  "exception_queue": [
+    {
+      "type": "fee-multiple-options",
+      "severity": "medium",
+      "programmeIndex": 22,
+      "description": "官方详情页展示多组国际学生费用选项，审计字段按上限记录，需人工确认具体展示口径。",
+      "source1": "https://www.ucsiuniversity.edu.my/programmes/bachelor-chemical-engineering-honours",
+      "source2": "https://www.ucsiuniversity.edu.my/programmes/bachelor-chemical-engineering-honours",
+      "suggestion": "请 Ian 确认是否按最高国际学生预估总费用入库，或按无衔接课程普通路径入库。"
+    },
+    {
+      "type": "fee-multiple-options",
+      "severity": "medium",
+      "programmeIndex": 23,
+      "description": "官方详情页展示多组国际学生费用选项，审计字段按上限记录，需人工确认具体展示口径。",
+      "source1": "https://www.ucsiuniversity.edu.my/programmes/bachelor-civil-engineering-honours",
+      "source2": "https://www.ucsiuniversity.edu.my/programmes/bachelor-civil-engineering-honours",
+      "suggestion": "请 Ian 确认是否按最高国际学生预估总费用入库，或按无衔接课程普通路径入库。"
+    },
+    {
+      "type": "fee-multiple-options",
+      "severity": "medium",
+      "programmeIndex": 24,
+      "description": "官方详情页展示多组国际学生费用选项，审计字段按上限记录，需人工确认具体展示口径。",
+      "source1": "https://www.ucsiuniversity.edu.my/programmes/bachelor-computer-engineering-artificial-intelligence-honours",
+      "source2": "https://www.ucsiuniversity.edu.my/programmes/bachelor-computer-engineering-artificial-intelligence-honours",
+      "suggestion": "请 Ian 确认是否按最高国际学生预估总费用入库，或按无衔接课程普通路径入库。"
+    },
+    {
+      "type": "fee-multiple-options",
+      "severity": "medium",
+      "programmeIndex": 25,
+      "description": "官方详情页展示多组国际学生费用选项，审计字段按上限记录，需人工确认具体展示口径。",
+      "source1": "https://www.ucsiuniversity.edu.my/programmes/bachelor-digital-mechanical-technology-honours",
+      "source2": "https://www.ucsiuniversity.edu.my/programmes/bachelor-digital-mechanical-technology-honours",
+      "suggestion": "请 Ian 确认是否按最高国际学生预估总费用入库，或按无衔接课程普通路径入库。"
+    },
+    {
+      "type": "fee-multiple-options",
+      "severity": "medium",
+      "programmeIndex": 26,
+      "description": "官方详情页展示多组国际学生费用选项，审计字段按上限记录，需人工确认具体展示口径。",
+      "source1": "https://www.ucsiuniversity.edu.my/programmes/bachelor-electrical-and-electronics-engineering-honours",
+      "source2": "https://www.ucsiuniversity.edu.my/programmes/bachelor-electrical-and-electronics-engineering-honours",
+      "suggestion": "请 Ian 确认是否按最高国际学生预估总费用入库，或按无衔接课程普通路径入库。"
+    },
+    {
+      "type": "fee-multiple-options",
+      "severity": "medium",
+      "programmeIndex": 27,
+      "description": "官方详情页展示多组国际学生费用选项，审计字段按上限记录，需人工确认具体展示口径。",
+      "source1": "https://www.ucsiuniversity.edu.my/programmes/bachelor-energy-engineering-honours",
+      "source2": "https://www.ucsiuniversity.edu.my/programmes/bachelor-energy-engineering-honours",
+      "suggestion": "请 Ian 确认是否按最高国际学生预估总费用入库，或按无衔接课程普通路径入库。"
+    },
+    {
+      "type": "fee-multiple-options",
+      "severity": "medium",
+      "programmeIndex": 28,
+      "description": "官方详情页展示多组国际学生费用选项，审计字段按上限记录，需人工确认具体展示口径。",
+      "source1": "https://www.ucsiuniversity.edu.my/programmes/bachelor-mechanical-engineering-honours",
+      "source2": "https://www.ucsiuniversity.edu.my/programmes/bachelor-mechanical-engineering-honours",
+      "suggestion": "请 Ian 确认是否按最高国际学生预估总费用入库，或按无衔接课程普通路径入库。"
+    },
+    {
+      "type": "fee-multiple-options",
+      "severity": "medium",
+      "programmeIndex": 29,
+      "description": "官方详情页展示多组国际学生费用选项，审计字段按上限记录，需人工确认具体展示口径。",
+      "source1": "https://www.ucsiuniversity.edu.my/programmes/bachelor-mechatronics-engineering-honours",
+      "source2": "https://www.ucsiuniversity.edu.my/programmes/bachelor-mechatronics-engineering-honours",
+      "suggestion": "请 Ian 确认是否按最高国际学生预估总费用入库，或按无衔接课程普通路径入库。"
+    },
+    {
+      "type": "fee-multiple-options",
+      "severity": "medium",
+      "programmeIndex": 30,
+      "description": "官方详情页展示多组国际学生费用选项，审计字段按上限记录，需人工确认具体展示口径。",
+      "source1": "https://www.ucsiuniversity.edu.my/programmes/bachelor-microelectronic-technology-honours",
+      "source2": "https://www.ucsiuniversity.edu.my/programmes/bachelor-microelectronic-technology-honours",
+      "suggestion": "请 Ian 确认是否按最高国际学生预估总费用入库，或按无衔接课程普通路径入库。"
+    },
+    {
+      "type": "fee-multiple-options",
+      "severity": "medium",
+      "programmeIndex": 31,
+      "description": "官方详情页展示多组国际学生费用选项，审计字段按上限记录，需人工确认具体展示口径。",
+      "source1": "https://www.ucsiuniversity.edu.my/programmes/bachelor-petroleum-engineering-honours",
+      "source2": "https://www.ucsiuniversity.edu.my/programmes/bachelor-petroleum-engineering-honours",
+      "suggestion": "请 Ian 确认是否按最高国际学生预估总费用入库，或按无衔接课程普通路径入库。"
+    },
+    {
+      "type": "fee-multiple-options",
+      "severity": "medium",
+      "programmeIndex": 38,
+      "description": "官方详情页展示多组国际学生费用选项，审计字段按上限记录，需人工确认具体展示口径。",
+      "source1": "https://www.ucsiuniversity.edu.my/programmes/bachelor-formulation-science-honours",
+      "source2": "https://www.ucsiuniversity.edu.my/programmes/bachelor-formulation-science-honours",
+      "suggestion": "请 Ian 确认是否按最高国际学生预估总费用入库，或按无衔接课程普通路径入库。"
+    },
+    {
+      "type": "fee-multiple-options",
+      "severity": "medium",
+      "programmeIndex": 45,
+      "description": "官方详情页展示多组国际学生费用选项，审计字段按上限记录，需人工确认具体展示口径。",
+      "source1": "https://www.ucsiuniversity.edu.my/programmes/bachelor-computer-science-honours",
+      "source2": "https://www.ucsiuniversity.edu.my/programmes/bachelor-computer-science-honours",
+      "suggestion": "请 Ian 确认是否按最高国际学生预估总费用入库，或按无衔接课程普通路径入库。"
+    },
+    {
+      "type": "fee-multiple-options",
+      "severity": "medium",
+      "programmeIndex": 46,
+      "description": "官方详情页展示多组国际学生费用选项，审计字段按上限记录，需人工确认具体展示口径。",
+      "source1": "https://www.ucsiuniversity.edu.my/programmes/bachelor-computer-science-artificial-intelligence-honours",
+      "source2": "https://www.ucsiuniversity.edu.my/programmes/bachelor-computer-science-artificial-intelligence-honours",
+      "suggestion": "请 Ian 确认是否按最高国际学生预估总费用入库，或按无衔接课程普通路径入库。"
+    },
+    {
+      "type": "fee-multiple-options",
+      "severity": "medium",
+      "programmeIndex": 47,
+      "description": "官方详情页展示多组国际学生费用选项，审计字段按上限记录，需人工确认具体展示口径。",
+      "source1": "https://www.ucsiuniversity.edu.my/programmes/bachelor-computer-science-cyber-security-honours",
+      "source2": "https://www.ucsiuniversity.edu.my/programmes/bachelor-computer-science-cyber-security-honours",
+      "suggestion": "请 Ian 确认是否按最高国际学生预估总费用入库，或按无衔接课程普通路径入库。"
+    },
+    {
+      "type": "fee-multiple-options",
+      "severity": "medium",
+      "programmeIndex": 48,
+      "description": "官方详情页展示多组国际学生费用选项，审计字段按上限记录，需人工确认具体展示口径。",
+      "source1": "https://www.ucsiuniversity.edu.my/programmes/bachelor-computer-science-hons-mobile-computing-and-networking",
+      "source2": "https://www.ucsiuniversity.edu.my/programmes/bachelor-computer-science-hons-mobile-computing-and-networking",
+      "suggestion": "请 Ian 确认是否按最高国际学生预估总费用入库，或按无衔接课程普通路径入库。"
+    },
+    {
+      "type": "fee-multiple-options",
+      "severity": "medium",
+      "programmeIndex": 49,
+      "description": "官方详情页展示多组国际学生费用选项，审计字段按上限记录，需人工确认具体展示口径。",
+      "source1": "https://www.ucsiuniversity.edu.my/programmes/bachelor-computer-science-data-science-honours",
+      "source2": "https://www.ucsiuniversity.edu.my/programmes/bachelor-computer-science-data-science-honours",
+      "suggestion": "请 Ian 确认是否按最高国际学生预估总费用入库，或按无衔接课程普通路径入库。"
+    },
+    {
+      "type": "fee-multiple-options",
+      "severity": "medium",
+      "programmeIndex": 50,
+      "description": "官方详情页展示多组国际学生费用选项，审计字段按上限记录，需人工确认具体展示口径。",
+      "source1": "https://www.ucsiuniversity.edu.my/programmes/bachelor-science-business-information-systems-honours",
+      "source2": "https://www.ucsiuniversity.edu.my/programmes/bachelor-science-business-information-systems-honours",
+      "suggestion": "请 Ian 确认是否按最高国际学生预估总费用入库，或按无衔接课程普通路径入库。"
+    },
+    {
+      "type": "fee-multiple-options",
+      "severity": "medium",
+      "programmeIndex": 61,
+      "description": "官方详情页展示多组国际学生费用选项，审计字段按上限记录，需人工确认具体展示口径。",
+      "source1": "https://www.ucsiuniversity.edu.my/programmes/ba-hons-psychology",
+      "source2": "https://www.ucsiuniversity.edu.my/programmes/ba-hons-psychology",
+      "suggestion": "请 Ian 确认是否按最高国际学生预估总费用入库，或按无衔接课程普通路径入库。"
+    }
+  ],
+  "collection_summary": {
+    "totalProgrammesFound": 70,
+    "programmesCollected": 70,
+    "programmesSkipped": [],
+    "fieldsUsingMissingMarkers": [
+      {
+        "programmeIndex": 1,
+        "fields": [
+          "curriculum"
+        ],
+        "reason": "官方课程大纲未完成合规中文逐项结构化，保留为需复核状态。"
+      },
+      {
+        "programmeIndex": 2,
+        "fields": [
+          "curriculum"
+        ],
+        "reason": "官方课程大纲未完成合规中文逐项结构化，保留为需复核状态。"
+      },
+      {
+        "programmeIndex": 3,
+        "fields": [
+          "curriculum"
+        ],
+        "reason": "官方课程大纲未完成合规中文逐项结构化，保留为需复核状态。"
+      },
+      {
+        "programmeIndex": 4,
+        "fields": [
+          "curriculum"
+        ],
+        "reason": "官方课程大纲未完成合规中文逐项结构化，保留为需复核状态。"
+      },
+      {
+        "programmeIndex": 5,
+        "fields": [
+          "curriculum"
+        ],
+        "reason": "官方课程大纲未完成合规中文逐项结构化，保留为需复核状态。"
+      },
+      {
+        "programmeIndex": 6,
+        "fields": [
+          "curriculum"
+        ],
+        "reason": "官方课程大纲未完成合规中文逐项结构化，保留为需复核状态。"
+      },
+      {
+        "programmeIndex": 7,
+        "fields": [
+          "curriculum"
+        ],
+        "reason": "官方课程大纲未完成合规中文逐项结构化，保留为需复核状态。"
+      },
+      {
+        "programmeIndex": 8,
+        "fields": [
+          "curriculum"
+        ],
+        "reason": "官方课程大纲未完成合规中文逐项结构化，保留为需复核状态。"
+      },
+      {
+        "programmeIndex": 9,
+        "fields": [
+          "curriculum"
+        ],
+        "reason": "官方课程大纲未完成合规中文逐项结构化，保留为需复核状态。"
+      },
+      {
+        "programmeIndex": 10,
+        "fields": [
+          "curriculum"
+        ],
+        "reason": "官方课程大纲未完成合规中文逐项结构化，保留为需复核状态。"
+      },
+      {
+        "programmeIndex": 11,
+        "fields": [
+          "curriculum"
+        ],
+        "reason": "官方课程大纲未完成合规中文逐项结构化，保留为需复核状态。"
+      },
+      {
+        "programmeIndex": 12,
+        "fields": [
+          "curriculum"
+        ],
+        "reason": "官方课程大纲未完成合规中文逐项结构化，保留为需复核状态。"
+      },
+      {
+        "programmeIndex": 13,
+        "fields": [
+          "curriculum"
+        ],
+        "reason": "官方课程大纲未完成合规中文逐项结构化，保留为需复核状态。"
+      },
+      {
+        "programmeIndex": 14,
+        "fields": [
+          "curriculum"
+        ],
+        "reason": "官方课程大纲未完成合规中文逐项结构化，保留为需复核状态。"
+      },
+      {
+        "programmeIndex": 15,
+        "fields": [
+          "curriculum"
+        ],
+        "reason": "官方课程大纲未完成合规中文逐项结构化，保留为需复核状态。"
+      },
+      {
+        "programmeIndex": 16,
+        "fields": [
+          "curriculum"
+        ],
+        "reason": "官方课程大纲未完成合规中文逐项结构化，保留为需复核状态。"
+      },
+      {
+        "programmeIndex": 17,
+        "fields": [
+          "curriculum"
+        ],
+        "reason": "官方课程大纲未完成合规中文逐项结构化，保留为需复核状态。"
+      },
+      {
+        "programmeIndex": 18,
+        "fields": [
+          "curriculum"
+        ],
+        "reason": "官方课程大纲未完成合规中文逐项结构化，保留为需复核状态。"
+      },
+      {
+        "programmeIndex": 19,
+        "fields": [
+          "curriculum"
+        ],
+        "reason": "官方课程大纲未完成合规中文逐项结构化，保留为需复核状态。"
+      },
+      {
+        "programmeIndex": 20,
+        "fields": [
+          "curriculum"
+        ],
+        "reason": "官方课程大纲未完成合规中文逐项结构化，保留为需复核状态。"
+      },
+      {
+        "programmeIndex": 21,
+        "fields": [
+          "curriculum"
+        ],
+        "reason": "官方课程大纲未完成合规中文逐项结构化，保留为需复核状态。"
+      },
+      {
+        "programmeIndex": 22,
+        "fields": [
+          "curriculum"
+        ],
+        "reason": "官方课程大纲未完成合规中文逐项结构化，保留为需复核状态。"
+      },
+      {
+        "programmeIndex": 23,
+        "fields": [
+          "curriculum"
+        ],
+        "reason": "官方课程大纲未完成合规中文逐项结构化，保留为需复核状态。"
+      },
+      {
+        "programmeIndex": 24,
+        "fields": [
+          "curriculum"
+        ],
+        "reason": "官方课程大纲未完成合规中文逐项结构化，保留为需复核状态。"
+      },
+      {
+        "programmeIndex": 25,
+        "fields": [
+          "curriculum"
+        ],
+        "reason": "官方课程大纲未完成合规中文逐项结构化，保留为需复核状态。"
+      },
+      {
+        "programmeIndex": 26,
+        "fields": [
+          "curriculum"
+        ],
+        "reason": "官方课程大纲未完成合规中文逐项结构化，保留为需复核状态。"
+      },
+      {
+        "programmeIndex": 27,
+        "fields": [
+          "curriculum"
+        ],
+        "reason": "官方课程大纲未完成合规中文逐项结构化，保留为需复核状态。"
+      },
+      {
+        "programmeIndex": 28,
+        "fields": [
+          "curriculum"
+        ],
+        "reason": "官方课程大纲未完成合规中文逐项结构化，保留为需复核状态。"
+      },
+      {
+        "programmeIndex": 29,
+        "fields": [
+          "curriculum"
+        ],
+        "reason": "官方课程大纲未完成合规中文逐项结构化，保留为需复核状态。"
+      },
+      {
+        "programmeIndex": 30,
+        "fields": [
+          "curriculum"
+        ],
+        "reason": "官方课程大纲未完成合规中文逐项结构化，保留为需复核状态。"
+      },
+      {
+        "programmeIndex": 31,
+        "fields": [
+          "curriculum"
+        ],
+        "reason": "官方课程大纲未完成合规中文逐项结构化，保留为需复核状态。"
+      },
+      {
+        "programmeIndex": 32,
+        "fields": [
+          "curriculum"
+        ],
+        "reason": "官方课程大纲未完成合规中文逐项结构化，保留为需复核状态。"
+      },
+      {
+        "programmeIndex": 33,
+        "fields": [
+          "curriculum"
+        ],
+        "reason": "官方课程大纲未完成合规中文逐项结构化，保留为需复核状态。"
+      },
+      {
+        "programmeIndex": 34,
+        "fields": [
+          "curriculum"
+        ],
+        "reason": "官方课程大纲未完成合规中文逐项结构化，保留为需复核状态。"
+      },
+      {
+        "programmeIndex": 35,
+        "fields": [
+          "curriculum"
+        ],
+        "reason": "官方课程大纲未完成合规中文逐项结构化，保留为需复核状态。"
+      },
+      {
+        "programmeIndex": 36,
+        "fields": [
+          "curriculum"
+        ],
+        "reason": "官方课程大纲未完成合规中文逐项结构化，保留为需复核状态。"
+      },
+      {
+        "programmeIndex": 37,
+        "fields": [
+          "curriculum"
+        ],
+        "reason": "官方课程大纲未完成合规中文逐项结构化，保留为需复核状态。"
+      },
+      {
+        "programmeIndex": 38,
+        "fields": [
+          "curriculum"
+        ],
+        "reason": "官方课程大纲未完成合规中文逐项结构化，保留为需复核状态。"
+      },
+      {
+        "programmeIndex": 39,
+        "fields": [
+          "curriculum"
+        ],
+        "reason": "官方课程大纲未完成合规中文逐项结构化，保留为需复核状态。"
+      },
+      {
+        "programmeIndex": 40,
+        "fields": [
+          "curriculum"
+        ],
+        "reason": "官方课程大纲未完成合规中文逐项结构化，保留为需复核状态。"
+      },
+      {
+        "programmeIndex": 41,
+        "fields": [
+          "curriculum"
+        ],
+        "reason": "官方课程大纲未完成合规中文逐项结构化，保留为需复核状态。"
+      },
+      {
+        "programmeIndex": 42,
+        "fields": [
+          "curriculum"
+        ],
+        "reason": "官方课程大纲未完成合规中文逐项结构化，保留为需复核状态。"
+      },
+      {
+        "programmeIndex": 43,
+        "fields": [
+          "curriculum"
+        ],
+        "reason": "官方课程大纲未完成合规中文逐项结构化，保留为需复核状态。"
+      },
+      {
+        "programmeIndex": 44,
+        "fields": [
+          "curriculum"
+        ],
+        "reason": "官方课程大纲未完成合规中文逐项结构化，保留为需复核状态。"
+      },
+      {
+        "programmeIndex": 45,
+        "fields": [
+          "curriculum"
+        ],
+        "reason": "官方课程大纲未完成合规中文逐项结构化，保留为需复核状态。"
+      },
+      {
+        "programmeIndex": 46,
+        "fields": [
+          "curriculum"
+        ],
+        "reason": "官方课程大纲未完成合规中文逐项结构化，保留为需复核状态。"
+      },
+      {
+        "programmeIndex": 47,
+        "fields": [
+          "curriculum"
+        ],
+        "reason": "官方课程大纲未完成合规中文逐项结构化，保留为需复核状态。"
+      },
+      {
+        "programmeIndex": 48,
+        "fields": [
+          "curriculum"
+        ],
+        "reason": "官方课程大纲未完成合规中文逐项结构化，保留为需复核状态。"
+      },
+      {
+        "programmeIndex": 49,
+        "fields": [
+          "curriculum"
+        ],
+        "reason": "官方课程大纲未完成合规中文逐项结构化，保留为需复核状态。"
+      },
+      {
+        "programmeIndex": 50,
+        "fields": [
+          "curriculum"
+        ],
+        "reason": "官方课程大纲未完成合规中文逐项结构化，保留为需复核状态。"
+      },
+      {
+        "programmeIndex": 51,
+        "fields": [
+          "curriculum"
+        ],
+        "reason": "官方课程大纲未完成合规中文逐项结构化，保留为需复核状态。"
+      },
+      {
+        "programmeIndex": 52,
+        "fields": [
+          "curriculum"
+        ],
+        "reason": "官方课程大纲未完成合规中文逐项结构化，保留为需复核状态。"
+      },
+      {
+        "programmeIndex": 53,
+        "fields": [
+          "curriculum"
+        ],
+        "reason": "官方课程大纲未完成合规中文逐项结构化，保留为需复核状态。"
+      },
+      {
+        "programmeIndex": 54,
+        "fields": [
+          "curriculum"
+        ],
+        "reason": "官方课程大纲未完成合规中文逐项结构化，保留为需复核状态。"
+      },
+      {
+        "programmeIndex": 55,
+        "fields": [
+          "curriculum"
+        ],
+        "reason": "官方课程大纲未完成合规中文逐项结构化，保留为需复核状态。"
+      },
+      {
+        "programmeIndex": 56,
+        "fields": [
+          "curriculum"
+        ],
+        "reason": "官方课程大纲未完成合规中文逐项结构化，保留为需复核状态。"
+      },
+      {
+        "programmeIndex": 57,
+        "fields": [
+          "curriculum"
+        ],
+        "reason": "官方课程大纲未完成合规中文逐项结构化，保留为需复核状态。"
+      },
+      {
+        "programmeIndex": 58,
+        "fields": [
+          "curriculum"
+        ],
+        "reason": "官方课程大纲未完成合规中文逐项结构化，保留为需复核状态。"
+      },
+      {
+        "programmeIndex": 59,
+        "fields": [
+          "curriculum"
+        ],
+        "reason": "官方课程大纲未完成合规中文逐项结构化，保留为需复核状态。"
+      },
+      {
+        "programmeIndex": 60,
+        "fields": [
+          "curriculum"
+        ],
+        "reason": "官方课程大纲未完成合规中文逐项结构化，保留为需复核状态。"
+      },
+      {
+        "programmeIndex": 61,
+        "fields": [
+          "curriculum"
+        ],
+        "reason": "官方课程大纲未完成合规中文逐项结构化，保留为需复核状态。"
+      },
+      {
+        "programmeIndex": 62,
+        "fields": [
+          "curriculum"
+        ],
+        "reason": "官方课程大纲未完成合规中文逐项结构化，保留为需复核状态。"
+      },
+      {
+        "programmeIndex": 63,
+        "fields": [
+          "curriculum"
+        ],
+        "reason": "官方课程大纲未完成合规中文逐项结构化，保留为需复核状态。"
+      },
+      {
+        "programmeIndex": 64,
+        "fields": [
+          "curriculum"
+        ],
+        "reason": "官方课程大纲未完成合规中文逐项结构化，保留为需复核状态。"
+      },
+      {
+        "programmeIndex": 65,
+        "fields": [
+          "curriculum"
+        ],
+        "reason": "官方课程大纲未完成合规中文逐项结构化，保留为需复核状态。"
+      },
+      {
+        "programmeIndex": 66,
+        "fields": [
+          "curriculum"
+        ],
+        "reason": "官方课程大纲未完成合规中文逐项结构化，保留为需复核状态。"
+      },
+      {
+        "programmeIndex": 67,
+        "fields": [
+          "curriculum"
+        ],
+        "reason": "官方课程大纲未完成合规中文逐项结构化，保留为需复核状态。"
+      },
+      {
+        "programmeIndex": 68,
+        "fields": [
+          "curriculum"
+        ],
+        "reason": "官方课程大纲未完成合规中文逐项结构化，保留为需复核状态。"
+      },
+      {
+        "programmeIndex": 69,
+        "fields": [
+          "curriculum"
+        ],
+        "reason": "官方课程大纲未完成合规中文逐项结构化，保留为需复核状态。"
+      },
+      {
+        "programmeIndex": 70,
+        "fields": [
+          "curriculum"
+        ],
+        "reason": "官方课程大纲未完成合规中文逐项结构化，保留为需复核状态。"
+      }
+    ],
+    "qualityGateResults": {
+      "ready": 0,
+      "needsReview": 70,
+      "needsReviewItems": [
+        {
+          "programmeIndex": 1,
+          "nameEn": "Bachelor Of Science (Honours) Applied Microbiology",
+          "failedChecks": [
+            "Q8"
+          ],
+          "details": "官方课程大纲存在，但课程名多为英文；为满足中文字段不得混入英文，本轮未写入课程字段，需人工中文结构化复核。"
+        },
+        {
+          "programmeIndex": 2,
+          "nameEn": "Bachelor Of Science (Honours) Aquatic Science",
+          "failedChecks": [
+            "Q8"
+          ],
+          "details": "官方课程大纲存在，但课程名多为英文；为满足中文字段不得混入英文，本轮未写入课程字段，需人工中文结构化复核。"
+        },
+        {
+          "programmeIndex": 3,
+          "nameEn": "Bachelor Of Science (Honours) In Biotechnology",
+          "failedChecks": [
+            "Q8"
+          ],
+          "details": "官方课程大纲存在，但课程名多为英文；为满足中文字段不得混入英文，本轮未写入课程字段，需人工中文结构化复核。"
+        },
+        {
+          "programmeIndex": 4,
+          "nameEn": "Bachelor Of Science (Honours) Food Science With Nutrition",
+          "failedChecks": [
+            "Q8"
+          ],
+          "details": "官方课程大纲存在，但课程名多为英文；为满足中文字段不得混入英文，本轮未写入课程字段，需人工中文结构化复核。"
+        },
+        {
+          "programmeIndex": 5,
+          "nameEn": "Bachelor Of Science (Honours) Forensic Science",
+          "failedChecks": [
+            "Q8"
+          ],
+          "details": "官方课程大纲存在，但课程名多为英文；为满足中文字段不得混入英文，本轮未写入课程字段，需人工中文结构化复核。"
+        },
+        {
+          "programmeIndex": 6,
+          "nameEn": "Bachelor Of Science (Honours) Nutrition With Wellness",
+          "failedChecks": [
+            "Q8"
+          ],
+          "details": "官方课程大纲存在，但课程名多为英文；为满足中文字段不得混入英文，本轮未写入课程字段，需人工中文结构化复核。"
+        },
+        {
+          "programmeIndex": 7,
+          "nameEn": "Bachelor Of Arts (Hons) Accounting",
+          "failedChecks": [
+            "Q8"
+          ],
+          "details": "官方课程大纲存在，但课程名多为英文；为满足中文字段不得混入英文，本轮未写入课程字段，需人工中文结构化复核。"
+        },
+        {
+          "programmeIndex": 8,
+          "nameEn": "Bachelor Of Arts (Hons) Accounting And Finance",
+          "failedChecks": [
+            "Q8"
+          ],
+          "details": "官方课程大纲存在，但课程名多为英文；为满足中文字段不得混入英文，本轮未写入课程字段，需人工中文结构化复核。"
+        },
+        {
+          "programmeIndex": 9,
+          "nameEn": "Bachelor Of Arts (Hons) Entrepreneurship",
+          "failedChecks": [
+            "Q8"
+          ],
+          "details": "官方课程大纲存在，但课程名多为英文；为满足中文字段不得混入英文，本轮未写入课程字段，需人工中文结构化复核。"
+        },
+        {
+          "programmeIndex": 10,
+          "nameEn": "Bachelor Of Arts (Hons) In Branding And Advertising",
+          "failedChecks": [
+            "Q8"
+          ],
+          "details": "官方课程大纲存在，但课程名多为英文；为满足中文字段不得混入英文，本轮未写入课程字段，需人工中文结构化复核。"
+        },
+        {
+          "programmeIndex": 11,
+          "nameEn": "Bachelor Of Arts (Hons) In Business Administration",
+          "failedChecks": [
+            "Q8"
+          ],
+          "details": "官方课程大纲存在，但课程名多为英文；为满足中文字段不得混入英文，本轮未写入课程字段，需人工中文结构化复核。"
+        },
+        {
+          "programmeIndex": 12,
+          "nameEn": "Bachelor Of Arts (Hons) In Marketing",
+          "failedChecks": [
+            "Q8"
+          ],
+          "details": "官方课程大纲存在，但课程名多为英文；为满足中文字段不得混入英文，本轮未写入课程字段，需人工中文结构化复核。"
+        },
+        {
+          "programmeIndex": 13,
+          "nameEn": "Bachelor Of Arts (Hons) Logistics Management",
+          "failedChecks": [
+            "Q8"
+          ],
+          "details": "官方课程大纲存在，但课程名多为英文；为满足中文字段不得混入英文，本轮未写入课程字段，需人工中文结构化复核。"
+        },
+        {
+          "programmeIndex": 14,
+          "nameEn": "Bachelor Of Arts (Honours) Supply Chain Operations Management",
+          "failedChecks": [
+            "Q8"
+          ],
+          "details": "官方课程大纲存在，但课程名多为英文；为满足中文字段不得混入英文，本轮未写入课程字段，需人工中文结构化复核。"
+        },
+        {
+          "programmeIndex": 15,
+          "nameEn": "Bachelor In Human Capital Management (Honours)",
+          "failedChecks": [
+            "Q8"
+          ],
+          "details": "官方课程大纲存在，但课程名多为英文；为满足中文字段不得混入英文，本轮未写入课程字段，需人工中文结构化复核。"
+        },
+        {
+          "programmeIndex": 16,
+          "nameEn": "Bachelor Of Business Analytics (Honours)",
+          "failedChecks": [
+            "Q8"
+          ],
+          "details": "官方课程大纲存在，但课程名多为英文；为满足中文字段不得混入英文，本轮未写入课程字段，需人工中文结构化复核。"
+        },
+        {
+          "programmeIndex": 17,
+          "nameEn": "Bachelor Of Financial Economics (Hons)",
+          "failedChecks": [
+            "Q8"
+          ],
+          "details": "官方课程大纲存在，但课程名多为英文；为满足中文字段不得混入英文，本轮未写入课程字段，需人工中文结构化复核。"
+        },
+        {
+          "programmeIndex": 18,
+          "nameEn": "Bachelor Of Financial Technology (Honours)",
+          "failedChecks": [
+            "Q8"
+          ],
+          "details": "官方课程大纲存在，但课程名多为英文；为满足中文字段不得混入英文，本轮未写入课程字段，需人工中文结构化复核。"
+        },
+        {
+          "programmeIndex": 19,
+          "nameEn": "Bachelor Of International And Sustainable Business (Honours)",
+          "failedChecks": [
+            "Q8"
+          ],
+          "details": "官方课程大纲存在，但课程名多为英文；为满足中文字段不得混入英文，本轮未写入课程字段，需人工中文结构化复核。"
+        },
+        {
+          "programmeIndex": 20,
+          "nameEn": "Bachelor Of Science (Honours) Finance And Investment",
+          "failedChecks": [
+            "Q8"
+          ],
+          "details": "官方课程大纲存在，但课程名多为英文；为满足中文字段不得混入英文，本轮未写入课程字段，需人工中文结构化复核。"
+        },
+        {
+          "programmeIndex": 21,
+          "nameEn": "Bachelor Of Arts (Hons) In Interior Architecture",
+          "failedChecks": [
+            "Q8"
+          ],
+          "details": "官方课程大纲存在，但课程名多为英文；为满足中文字段不得混入英文，本轮未写入课程字段，需人工中文结构化复核。"
+        },
+        {
+          "programmeIndex": 22,
+          "nameEn": "Bachelor Of Chemical Engineering With Honours",
+          "failedChecks": [
+            "Q8"
+          ],
+          "details": "官方课程大纲存在，但课程名多为英文；为满足中文字段不得混入英文，本轮未写入课程字段，需人工中文结构化复核。"
+        },
+        {
+          "programmeIndex": 23,
+          "nameEn": "Bachelor Of Civil Engineering With Honours",
+          "failedChecks": [
+            "Q8"
+          ],
+          "details": "官方课程大纲存在，但课程名多为英文；为满足中文字段不得混入英文，本轮未写入课程字段，需人工中文结构化复核。"
+        },
+        {
+          "programmeIndex": 24,
+          "nameEn": "Bachelor Of Computer Engineering (Artificial Intelligence) With Honours",
+          "failedChecks": [
+            "Q8"
+          ],
+          "details": "官方课程大纲存在，但课程名多为英文；为满足中文字段不得混入英文，本轮未写入课程字段，需人工中文结构化复核。"
+        },
+        {
+          "programmeIndex": 25,
+          "nameEn": "Bachelor Of Digital Mechanical Technology With Honours",
+          "failedChecks": [
+            "Q8"
+          ],
+          "details": "官方课程大纲存在，但课程名多为英文；为满足中文字段不得混入英文，本轮未写入课程字段，需人工中文结构化复核。"
+        },
+        {
+          "programmeIndex": 26,
+          "nameEn": "Bachelor Of Electrical And Electronics Engineering With Honours",
+          "failedChecks": [
+            "Q8"
+          ],
+          "details": "官方课程大纲存在，但课程名多为英文；为满足中文字段不得混入英文，本轮未写入课程字段，需人工中文结构化复核。"
+        },
+        {
+          "programmeIndex": 27,
+          "nameEn": "Bachelor Of Energy Engineering With Honours",
+          "failedChecks": [
+            "Q8"
+          ],
+          "details": "官方课程大纲存在，但课程名多为英文；为满足中文字段不得混入英文，本轮未写入课程字段，需人工中文结构化复核。"
+        },
+        {
+          "programmeIndex": 28,
+          "nameEn": "Bachelor Of Mechanical Engineering With Honours",
+          "failedChecks": [
+            "Q8"
+          ],
+          "details": "官方课程大纲存在，但课程名多为英文；为满足中文字段不得混入英文，本轮未写入课程字段，需人工中文结构化复核。"
+        },
+        {
+          "programmeIndex": 29,
+          "nameEn": "Bachelor Of Mechatronics Engineering With Honours",
+          "failedChecks": [
+            "Q8"
+          ],
+          "details": "官方课程大纲存在，但课程名多为英文；为满足中文字段不得混入英文，本轮未写入课程字段，需人工中文结构化复核。"
+        },
+        {
+          "programmeIndex": 30,
+          "nameEn": "Bachelor Of Microelectronic Technology With Honours",
+          "failedChecks": [
+            "Q8"
+          ],
+          "details": "官方课程大纲存在，但课程名多为英文；为满足中文字段不得混入英文，本轮未写入课程字段，需人工中文结构化复核。"
+        },
+        {
+          "programmeIndex": 31,
+          "nameEn": "Bachelor Of Petroleum Engineering With Honours",
+          "failedChecks": [
+            "Q8"
+          ],
+          "details": "官方课程大纲存在，但课程名多为英文；为满足中文字段不得混入英文，本轮未写入课程字段，需人工中文结构化复核。"
+        },
+        {
+          "programmeIndex": 32,
+          "nameEn": "Bachelor Of Quantity Surveying (Hons)",
+          "failedChecks": [
+            "Q8"
+          ],
+          "details": "官方课程大纲存在，但课程名多为英文；为满足中文字段不得混入英文，本轮未写入课程字段，需人工中文结构化复核。"
+        },
+        {
+          "programmeIndex": 33,
+          "nameEn": "Bachelor Of Science (Hons) In Architecture",
+          "failedChecks": [
+            "Q8"
+          ],
+          "details": "官方课程大纲存在，但课程名多为英文；为满足中文字段不得混入英文，本轮未写入课程字段，需人工中文结构化复核。"
+        },
+        {
+          "programmeIndex": 34,
+          "nameEn": "Bachelor Of Arts (Honours) In Culinary Management",
+          "failedChecks": [
+            "Q8"
+          ],
+          "details": "官方课程大纲存在，但课程名多为英文；为满足中文字段不得混入英文，本轮未写入课程字段，需人工中文结构化复核。"
+        },
+        {
+          "programmeIndex": 35,
+          "nameEn": "Bachelor Of Arts (Honours) In Global Sustainable Tourism",
+          "failedChecks": [
+            "Q8"
+          ],
+          "details": "官方课程大纲存在，但课程名多为英文；为满足中文字段不得混入英文，本轮未写入课程字段，需人工中文结构化复核。"
+        },
+        {
+          "programmeIndex": 36,
+          "nameEn": "Bachelor Of Hospitality Administration",
+          "failedChecks": [
+            "Q8"
+          ],
+          "details": "官方课程大纲存在，但课程名多为英文；为满足中文字段不得混入英文，本轮未写入课程字段，需人工中文结构化复核。"
+        },
+        {
+          "programmeIndex": 37,
+          "nameEn": "Bachelor Of Optometry (Hons)",
+          "failedChecks": [
+            "Q8"
+          ],
+          "details": "官方课程大纲存在，但课程名多为英文；为满足中文字段不得混入英文，本轮未写入课程字段，需人工中文结构化复核。"
+        },
+        {
+          "programmeIndex": 38,
+          "nameEn": "Bachelor In Formulation Science (Honours)",
+          "failedChecks": [
+            "Q8"
+          ],
+          "details": "官方课程大纲存在，但课程名多为英文；为满足中文字段不得混入英文，本轮未写入课程字段，需人工中文结构化复核。"
+        },
+        {
+          "programmeIndex": 39,
+          "nameEn": "Bachelor Of Pharmacy (Honours)",
+          "failedChecks": [
+            "Q8"
+          ],
+          "details": "官方课程大纲存在，但课程名多为英文；为满足中文字段不得混入英文，本轮未写入课程字段，需人工中文结构化复核。"
+        },
+        {
+          "programmeIndex": 40,
+          "nameEn": "Bachelor Of Early Childhood Education (Honours)",
+          "failedChecks": [
+            "Q8"
+          ],
+          "details": "官方课程大纲存在，但课程名多为英文；为满足中文字段不得混入英文，本轮未写入课程字段，需人工中文结构化复核。"
+        },
+        {
+          "programmeIndex": 41,
+          "nameEn": "Bachelor Of Digital Media Production And Broadcasting (Honours)",
+          "failedChecks": [
+            "Q8"
+          ],
+          "details": "官方课程大纲存在，但课程名多为英文；为满足中文字段不得混入英文，本轮未写入课程字段，需人工中文结构化复核。"
+        },
+        {
+          "programmeIndex": 42,
+          "nameEn": "Bachelor Of Science (Honours) Actuarial Science",
+          "failedChecks": [
+            "Q8"
+          ],
+          "details": "官方课程大纲存在，但课程名多为英文；为满足中文字段不得混入英文，本轮未写入课程字段，需人工中文结构化复核。"
+        },
+        {
+          "programmeIndex": 43,
+          "nameEn": "Bachelor Of Science (Honours) Actuarial Science And Finance",
+          "failedChecks": [
+            "Q8"
+          ],
+          "details": "官方课程大纲存在，但课程名多为英文；为满足中文字段不得混入英文，本轮未写入课程字段，需人工中文结构化复核。"
+        },
+        {
+          "programmeIndex": 44,
+          "nameEn": "Bachelor Of Science (Honours) Actuarial Science With Data Analytics",
+          "failedChecks": [
+            "Q8"
+          ],
+          "details": "官方课程大纲存在，但课程名多为英文；为满足中文字段不得混入英文，本轮未写入课程字段，需人工中文结构化复核。"
+        },
+        {
+          "programmeIndex": 45,
+          "nameEn": "Bachelor Of Computer Science (Honours)",
+          "failedChecks": [
+            "Q8"
+          ],
+          "details": "官方课程大纲存在，但课程名多为英文；为满足中文字段不得混入英文，本轮未写入课程字段，需人工中文结构化复核。"
+        },
+        {
+          "programmeIndex": 46,
+          "nameEn": "Bachelor Of Computer Science In Artificial Intelligence With Honours",
+          "failedChecks": [
+            "Q8"
+          ],
+          "details": "官方课程大纲存在，但课程名多为英文；为满足中文字段不得混入英文，本轮未写入课程字段，需人工中文结构化复核。"
+        },
+        {
+          "programmeIndex": 47,
+          "nameEn": "Bachelor Of Computer Science In Cyber Security With Honours",
+          "failedChecks": [
+            "Q8"
+          ],
+          "details": "官方课程大纲存在，但课程名多为英文；为满足中文字段不得混入英文，本轮未写入课程字段，需人工中文结构化复核。"
+        },
+        {
+          "programmeIndex": 48,
+          "nameEn": "Bachelor Of Computer Science (Hons) Mobile Computing And Networking",
+          "failedChecks": [
+            "Q8"
+          ],
+          "details": "官方课程大纲存在，但课程名多为英文；为满足中文字段不得混入英文，本轮未写入课程字段，需人工中文结构化复核。"
+        },
+        {
+          "programmeIndex": 49,
+          "nameEn": "Bachelor Of Computer Science In Data Science With Honours",
+          "failedChecks": [
+            "Q8"
+          ],
+          "details": "官方课程大纲存在，但课程名多为英文；为满足中文字段不得混入英文，本轮未写入课程字段，需人工中文结构化复核。"
+        },
+        {
+          "programmeIndex": 50,
+          "nameEn": "Bachelor Of Science In Business Information Systems (Honours)",
+          "failedChecks": [
+            "Q8"
+          ],
+          "details": "官方课程大纲存在，但课程名多为英文；为满足中文字段不得混入英文，本轮未写入课程字段，需人工中文结构化复核。"
+        },
+        {
+          "programmeIndex": 51,
+          "nameEn": "Bachelor Of Classical Music (Hons.)",
+          "failedChecks": [
+            "Q8"
+          ],
+          "details": "官方课程大纲存在，但课程名多为英文；为满足中文字段不得混入英文，本轮未写入课程字段，需人工中文结构化复核。"
+        },
+        {
+          "programmeIndex": 52,
+          "nameEn": "Bachelor Of Contemporary Music (Hons.)",
+          "failedChecks": [
+            "Q8"
+          ],
+          "details": "官方课程大纲存在，但课程名多为英文；为满足中文字段不得混入英文，本轮未写入课程字段，需人工中文结构化复核。"
+        },
+        {
+          "programmeIndex": 53,
+          "nameEn": "Bachelor In Business Management (Honours)",
+          "failedChecks": [
+            "Q8"
+          ],
+          "details": "官方课程大纲存在，但课程名多为英文；为满足中文字段不得混入英文，本轮未写入课程字段，需人工中文结构化复核。"
+        },
+        {
+          "programmeIndex": 54,
+          "nameEn": "Bachelor In International Business (Honours)",
+          "failedChecks": [
+            "Q8"
+          ],
+          "details": "官方课程大纲存在，但课程名多为英文；为满足中文字段不得混入英文，本轮未写入课程字段，需人工中文结构化复核。"
+        },
+        {
+          "programmeIndex": 55,
+          "nameEn": "Bachelor Of Commerce (Hons) In Accounting And Finance",
+          "failedChecks": [
+            "Q8"
+          ],
+          "details": "官方课程大纲存在，但课程名多为英文；为满足中文字段不得混入英文，本轮未写入课程字段，需人工中文结构化复核。"
+        },
+        {
+          "programmeIndex": 56,
+          "nameEn": "Bachelor Of Commerce (Hons) In Marketing",
+          "failedChecks": [
+            "Q8"
+          ],
+          "details": "官方课程大纲存在，但课程名多为英文；为满足中文字段不得混入英文，本轮未写入课程字段，需人工中文结构化复核。"
+        },
+        {
+          "programmeIndex": 57,
+          "nameEn": "Bachelor Of Arts (Honours) In Culinary Management",
+          "failedChecks": [
+            "Q8"
+          ],
+          "details": "官方课程大纲存在，但课程名多为英文；为满足中文字段不得混入英文，本轮未写入课程字段，需人工中文结构化复核。"
+        },
+        {
+          "programmeIndex": 58,
+          "nameEn": "Doctor Of Medicine (MD)",
+          "failedChecks": [
+            "Q8"
+          ],
+          "details": "官方课程大纲存在，但课程名多为英文；为满足中文字段不得混入英文，本轮未写入课程字段，需人工中文结构化复核。"
+        },
+        {
+          "programmeIndex": 59,
+          "nameEn": "Bachelor Of Nursing (Hons)",
+          "failedChecks": [
+            "Q8"
+          ],
+          "details": "官方课程大纲存在，但课程名多为英文；为满足中文字段不得混入英文，本轮未写入课程字段，需人工中文结构化复核。"
+        },
+        {
+          "programmeIndex": 60,
+          "nameEn": "Bachelor Of Arts (Honours) In Hospitality Management",
+          "failedChecks": [
+            "Q8"
+          ],
+          "details": "官方课程大纲存在，但课程名多为英文；为满足中文字段不得混入英文，本轮未写入课程字段，需人工中文结构化复核。"
+        },
+        {
+          "programmeIndex": 61,
+          "nameEn": "BA (Hons) Psychology",
+          "failedChecks": [
+            "Q8"
+          ],
+          "details": "官方课程大纲存在，但课程名多为英文；为满足中文字段不得混入英文，本轮未写入课程字段，需人工中文结构化复核。"
+        },
+        {
+          "programmeIndex": 62,
+          "nameEn": "BA (Hons) Mass Communication",
+          "failedChecks": [
+            "Q8"
+          ],
+          "details": "官方课程大纲存在，但课程名多为英文；为满足中文字段不得混入英文，本轮未写入课程字段，需人工中文结构化复核。"
+        },
+        {
+          "programmeIndex": 63,
+          "nameEn": "BA (Hons) English Language & Communication",
+          "failedChecks": [
+            "Q8"
+          ],
+          "details": "官方课程大纲存在，但课程名多为英文；为满足中文字段不得混入英文，本轮未写入课程字段，需人工中文结构化复核。"
+        },
+        {
+          "programmeIndex": 64,
+          "nameEn": "BCA (Hons) 3D Animation Design",
+          "failedChecks": [
+            "Q8"
+          ],
+          "details": "官方课程大纲存在，但课程名多为英文；为满足中文字段不得混入英文，本轮未写入课程字段，需人工中文结构化复核。"
+        },
+        {
+          "programmeIndex": 65,
+          "nameEn": "BA (Hons) Graphic Design",
+          "failedChecks": [
+            "Q8"
+          ],
+          "details": "官方课程大纲存在，但课程名多为英文；为满足中文字段不得混入英文，本轮未写入课程字段，需人工中文结构化复核。"
+        },
+        {
+          "programmeIndex": 66,
+          "nameEn": "BA (Hons) Game Design",
+          "failedChecks": [
+            "Q8"
+          ],
+          "details": "官方课程大纲存在，但课程名多为英文；为满足中文字段不得混入英文，本轮未写入课程字段，需人工中文结构化复核。"
+        },
+        {
+          "programmeIndex": 67,
+          "nameEn": "BA (Hons) Fashion Design with Marketing",
+          "failedChecks": [
+            "Q8"
+          ],
+          "details": "官方课程大纲存在，但课程名多为英文；为满足中文字段不得混入英文，本轮未写入课程字段，需人工中文结构化复核。"
+        },
+        {
+          "programmeIndex": 68,
+          "nameEn": "BA (Hons) in Hospitality Management",
+          "failedChecks": [
+            "Q8"
+          ],
+          "details": "官方课程大纲存在，但课程名多为英文；为满足中文字段不得混入英文，本轮未写入课程字段，需人工中文结构化复核。"
+        },
+        {
+          "programmeIndex": 69,
+          "nameEn": "BA (Hons) in Event and Tourism Management",
+          "failedChecks": [
+            "Q8"
+          ],
+          "details": "官方课程大纲存在，但课程名多为英文；为满足中文字段不得混入英文，本轮未写入课程字段，需人工中文结构化复核。"
+        },
+        {
+          "programmeIndex": 70,
+          "nameEn": "BA (Honours) Multimedia Design",
+          "failedChecks": [
+            "Q8"
+          ],
+          "details": "官方课程大纲存在，但课程名多为英文；为满足中文字段不得混入英文，本轮未写入课程字段，需人工中文结构化复核。"
+        }
+      ]
+    },
+    "phase3ProgrammeChecks": [
+      {
+        "programmeIndex": 1,
+        "nameEn": "Bachelor Of Science (Honours) Applied Microbiology",
+        "status": "needs-review",
+        "failedItems": [
+          "curriculum"
+        ],
+        "officialSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-science-honours-applied-microbiology"
+      },
+      {
+        "programmeIndex": 2,
+        "nameEn": "Bachelor Of Science (Honours) Aquatic Science",
+        "status": "needs-review",
+        "failedItems": [
+          "curriculum"
+        ],
+        "officialSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-science-honours-aquatic-science"
+      },
+      {
+        "programmeIndex": 3,
+        "nameEn": "Bachelor Of Science (Honours) In Biotechnology",
+        "status": "needs-review",
+        "failedItems": [
+          "curriculum"
+        ],
+        "officialSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-science-honours-biotechnology"
+      },
+      {
+        "programmeIndex": 4,
+        "nameEn": "Bachelor Of Science (Honours) Food Science With Nutrition",
+        "status": "needs-review",
+        "failedItems": [
+          "curriculum"
+        ],
+        "officialSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-science-honours-food-science-nutrition"
+      },
+      {
+        "programmeIndex": 5,
+        "nameEn": "Bachelor Of Science (Honours) Forensic Science",
+        "status": "needs-review",
+        "failedItems": [
+          "curriculum"
+        ],
+        "officialSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-science-honours-forensic-science"
+      },
+      {
+        "programmeIndex": 6,
+        "nameEn": "Bachelor Of Science (Honours) Nutrition With Wellness",
+        "status": "needs-review",
+        "failedItems": [
+          "curriculum"
+        ],
+        "officialSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-science-honours-nutrition-wellness"
+      },
+      {
+        "programmeIndex": 7,
+        "nameEn": "Bachelor Of Arts (Hons) Accounting",
+        "status": "needs-review",
+        "failedItems": [
+          "curriculum"
+        ],
+        "officialSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-arts-hons-accounting"
+      },
+      {
+        "programmeIndex": 8,
+        "nameEn": "Bachelor Of Arts (Hons) Accounting And Finance",
+        "status": "needs-review",
+        "failedItems": [
+          "curriculum"
+        ],
+        "officialSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-arts-hons-accounting-and-finance"
+      },
+      {
+        "programmeIndex": 9,
+        "nameEn": "Bachelor Of Arts (Hons) Entrepreneurship",
+        "status": "needs-review",
+        "failedItems": [
+          "curriculum"
+        ],
+        "officialSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-arts-hons-entrepreneurship"
+      },
+      {
+        "programmeIndex": 10,
+        "nameEn": "Bachelor Of Arts (Hons) In Branding And Advertising",
+        "status": "needs-review",
+        "failedItems": [
+          "curriculum"
+        ],
+        "officialSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-arts-hons-branding-and-advertising"
+      },
+      {
+        "programmeIndex": 11,
+        "nameEn": "Bachelor Of Arts (Hons) In Business Administration",
+        "status": "needs-review",
+        "failedItems": [
+          "curriculum"
+        ],
+        "officialSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-arts-hons-business-administration"
+      },
+      {
+        "programmeIndex": 12,
+        "nameEn": "Bachelor Of Arts (Hons) In Marketing",
+        "status": "needs-review",
+        "failedItems": [
+          "curriculum"
+        ],
+        "officialSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-arts-hons-marketing"
+      },
+      {
+        "programmeIndex": 13,
+        "nameEn": "Bachelor Of Arts (Hons) Logistics Management",
+        "status": "needs-review",
+        "failedItems": [
+          "curriculum"
+        ],
+        "officialSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-arts-hons-logistics-management"
+      },
+      {
+        "programmeIndex": 14,
+        "nameEn": "Bachelor Of Arts (Honours) Supply Chain Operations Management",
+        "status": "needs-review",
+        "failedItems": [
+          "curriculum"
+        ],
+        "officialSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-arts-honours-supply-chain-operations-management"
+      },
+      {
+        "programmeIndex": 15,
+        "nameEn": "Bachelor In Human Capital Management (Honours)",
+        "status": "needs-review",
+        "failedItems": [
+          "curriculum"
+        ],
+        "officialSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-human-capital-management-honours"
+      },
+      {
+        "programmeIndex": 16,
+        "nameEn": "Bachelor Of Business Analytics (Honours)",
+        "status": "needs-review",
+        "failedItems": [
+          "curriculum"
+        ],
+        "officialSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-business-analytics-honours"
+      },
+      {
+        "programmeIndex": 17,
+        "nameEn": "Bachelor Of Financial Economics (Hons)",
+        "status": "needs-review",
+        "failedItems": [
+          "curriculum"
+        ],
+        "officialSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-financial-economics-hons"
+      },
+      {
+        "programmeIndex": 18,
+        "nameEn": "Bachelor Of Financial Technology (Honours)",
+        "status": "needs-review",
+        "failedItems": [
+          "curriculum"
+        ],
+        "officialSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-financial-technology-honours"
+      },
+      {
+        "programmeIndex": 19,
+        "nameEn": "Bachelor Of International And Sustainable Business (Honours)",
+        "status": "needs-review",
+        "failedItems": [
+          "curriculum"
+        ],
+        "officialSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-international-and-sustainable-business-honours"
+      },
+      {
+        "programmeIndex": 20,
+        "nameEn": "Bachelor Of Science (Honours) Finance And Investment",
+        "status": "needs-review",
+        "failedItems": [
+          "curriculum"
+        ],
+        "officialSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-science-honours-finance-and-investment"
+      },
+      {
+        "programmeIndex": 21,
+        "nameEn": "Bachelor Of Arts (Hons) In Interior Architecture",
+        "status": "needs-review",
+        "failedItems": [
+          "curriculum"
+        ],
+        "officialSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-arts-hons-interior-architecture"
+      },
+      {
+        "programmeIndex": 22,
+        "nameEn": "Bachelor Of Chemical Engineering With Honours",
+        "status": "needs-review",
+        "failedItems": [
+          "curriculum"
+        ],
+        "officialSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-chemical-engineering-honours"
+      },
+      {
+        "programmeIndex": 23,
+        "nameEn": "Bachelor Of Civil Engineering With Honours",
+        "status": "needs-review",
+        "failedItems": [
+          "curriculum"
+        ],
+        "officialSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-civil-engineering-honours"
+      },
+      {
+        "programmeIndex": 24,
+        "nameEn": "Bachelor Of Computer Engineering (Artificial Intelligence) With Honours",
+        "status": "needs-review",
+        "failedItems": [
+          "curriculum"
+        ],
+        "officialSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-computer-engineering-artificial-intelligence-honours"
+      },
+      {
+        "programmeIndex": 25,
+        "nameEn": "Bachelor Of Digital Mechanical Technology With Honours",
+        "status": "needs-review",
+        "failedItems": [
+          "curriculum"
+        ],
+        "officialSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-digital-mechanical-technology-honours"
+      },
+      {
+        "programmeIndex": 26,
+        "nameEn": "Bachelor Of Electrical And Electronics Engineering With Honours",
+        "status": "needs-review",
+        "failedItems": [
+          "curriculum"
+        ],
+        "officialSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-electrical-and-electronics-engineering-honours"
+      },
+      {
+        "programmeIndex": 27,
+        "nameEn": "Bachelor Of Energy Engineering With Honours",
+        "status": "needs-review",
+        "failedItems": [
+          "curriculum"
+        ],
+        "officialSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-energy-engineering-honours"
+      },
+      {
+        "programmeIndex": 28,
+        "nameEn": "Bachelor Of Mechanical Engineering With Honours",
+        "status": "needs-review",
+        "failedItems": [
+          "curriculum"
+        ],
+        "officialSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-mechanical-engineering-honours"
+      },
+      {
+        "programmeIndex": 29,
+        "nameEn": "Bachelor Of Mechatronics Engineering With Honours",
+        "status": "needs-review",
+        "failedItems": [
+          "curriculum"
+        ],
+        "officialSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-mechatronics-engineering-honours"
+      },
+      {
+        "programmeIndex": 30,
+        "nameEn": "Bachelor Of Microelectronic Technology With Honours",
+        "status": "needs-review",
+        "failedItems": [
+          "curriculum"
+        ],
+        "officialSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-microelectronic-technology-honours"
+      },
+      {
+        "programmeIndex": 31,
+        "nameEn": "Bachelor Of Petroleum Engineering With Honours",
+        "status": "needs-review",
+        "failedItems": [
+          "curriculum"
+        ],
+        "officialSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-petroleum-engineering-honours"
+      },
+      {
+        "programmeIndex": 32,
+        "nameEn": "Bachelor Of Quantity Surveying (Hons)",
+        "status": "needs-review",
+        "failedItems": [
+          "curriculum"
+        ],
+        "officialSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-quantity-surveying-hons"
+      },
+      {
+        "programmeIndex": 33,
+        "nameEn": "Bachelor Of Science (Hons) In Architecture",
+        "status": "needs-review",
+        "failedItems": [
+          "curriculum"
+        ],
+        "officialSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-science-hons-architecture"
+      },
+      {
+        "programmeIndex": 34,
+        "nameEn": "Bachelor Of Arts (Honours) In Culinary Management",
+        "status": "needs-review",
+        "failedItems": [
+          "curriculum"
+        ],
+        "officialSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-arts-honours-culinary-management"
+      },
+      {
+        "programmeIndex": 35,
+        "nameEn": "Bachelor Of Arts (Honours) In Global Sustainable Tourism",
+        "status": "needs-review",
+        "failedItems": [
+          "curriculum"
+        ],
+        "officialSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-arts-honours-global-sustainable-tourism"
+      },
+      {
+        "programmeIndex": 36,
+        "nameEn": "Bachelor Of Hospitality Administration",
+        "status": "needs-review",
+        "failedItems": [
+          "curriculum"
+        ],
+        "officialSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-hospitality-administration"
+      },
+      {
+        "programmeIndex": 37,
+        "nameEn": "Bachelor Of Optometry (Hons)",
+        "status": "needs-review",
+        "failedItems": [
+          "curriculum"
+        ],
+        "officialSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-optometry-hons"
+      },
+      {
+        "programmeIndex": 38,
+        "nameEn": "Bachelor In Formulation Science (Honours)",
+        "status": "needs-review",
+        "failedItems": [
+          "curriculum"
+        ],
+        "officialSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-formulation-science-honours"
+      },
+      {
+        "programmeIndex": 39,
+        "nameEn": "Bachelor Of Pharmacy (Honours)",
+        "status": "needs-review",
+        "failedItems": [
+          "curriculum"
+        ],
+        "officialSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-pharmacy-honours"
+      },
+      {
+        "programmeIndex": 40,
+        "nameEn": "Bachelor Of Early Childhood Education (Honours)",
+        "status": "needs-review",
+        "failedItems": [
+          "curriculum"
+        ],
+        "officialSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-early-childhood-education-honours"
+      },
+      {
+        "programmeIndex": 41,
+        "nameEn": "Bachelor Of Digital Media Production And Broadcasting (Honours)",
+        "status": "needs-review",
+        "failedItems": [
+          "curriculum"
+        ],
+        "officialSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-digital-media-production-and-broadcasting-honours"
+      },
+      {
+        "programmeIndex": 42,
+        "nameEn": "Bachelor Of Science (Honours) Actuarial Science",
+        "status": "needs-review",
+        "failedItems": [
+          "curriculum"
+        ],
+        "officialSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-science-honours-actuarial-science"
+      },
+      {
+        "programmeIndex": 43,
+        "nameEn": "Bachelor Of Science (Honours) Actuarial Science And Finance",
+        "status": "needs-review",
+        "failedItems": [
+          "curriculum"
+        ],
+        "officialSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-science-honours-actuarial-science-and-finance"
+      },
+      {
+        "programmeIndex": 44,
+        "nameEn": "Bachelor Of Science (Honours) Actuarial Science With Data Analytics",
+        "status": "needs-review",
+        "failedItems": [
+          "curriculum"
+        ],
+        "officialSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-science-honours-actuarial-science-data-analytics"
+      },
+      {
+        "programmeIndex": 45,
+        "nameEn": "Bachelor Of Computer Science (Honours)",
+        "status": "needs-review",
+        "failedItems": [
+          "curriculum"
+        ],
+        "officialSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-computer-science-honours"
+      },
+      {
+        "programmeIndex": 46,
+        "nameEn": "Bachelor Of Computer Science In Artificial Intelligence With Honours",
+        "status": "needs-review",
+        "failedItems": [
+          "curriculum"
+        ],
+        "officialSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-computer-science-artificial-intelligence-honours"
+      },
+      {
+        "programmeIndex": 47,
+        "nameEn": "Bachelor Of Computer Science In Cyber Security With Honours",
+        "status": "needs-review",
+        "failedItems": [
+          "curriculum"
+        ],
+        "officialSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-computer-science-cyber-security-honours"
+      },
+      {
+        "programmeIndex": 48,
+        "nameEn": "Bachelor Of Computer Science (Hons) Mobile Computing And Networking",
+        "status": "needs-review",
+        "failedItems": [
+          "curriculum"
+        ],
+        "officialSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-computer-science-hons-mobile-computing-and-networking"
+      },
+      {
+        "programmeIndex": 49,
+        "nameEn": "Bachelor Of Computer Science In Data Science With Honours",
+        "status": "needs-review",
+        "failedItems": [
+          "curriculum"
+        ],
+        "officialSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-computer-science-data-science-honours"
+      },
+      {
+        "programmeIndex": 50,
+        "nameEn": "Bachelor Of Science In Business Information Systems (Honours)",
+        "status": "needs-review",
+        "failedItems": [
+          "curriculum"
+        ],
+        "officialSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-science-business-information-systems-honours"
+      },
+      {
+        "programmeIndex": 51,
+        "nameEn": "Bachelor Of Classical Music (Hons.)",
+        "status": "needs-review",
+        "failedItems": [
+          "curriculum"
+        ],
+        "officialSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-classical-music-hons"
+      },
+      {
+        "programmeIndex": 52,
+        "nameEn": "Bachelor Of Contemporary Music (Hons.)",
+        "status": "needs-review",
+        "failedItems": [
+          "curriculum"
+        ],
+        "officialSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-contemporary-music-hons"
+      },
+      {
+        "programmeIndex": 53,
+        "nameEn": "Bachelor In Business Management (Honours)",
+        "status": "needs-review",
+        "failedItems": [
+          "curriculum"
+        ],
+        "officialSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-business-management-honours"
+      },
+      {
+        "programmeIndex": 54,
+        "nameEn": "Bachelor In International Business (Honours)",
+        "status": "needs-review",
+        "failedItems": [
+          "curriculum"
+        ],
+        "officialSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-international-business-honours"
+      },
+      {
+        "programmeIndex": 55,
+        "nameEn": "Bachelor Of Commerce (Hons) In Accounting And Finance",
+        "status": "needs-review",
+        "failedItems": [
+          "curriculum"
+        ],
+        "officialSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-commerce-hons-accounting-and-finance-kuching-campus"
+      },
+      {
+        "programmeIndex": 56,
+        "nameEn": "Bachelor Of Commerce (Hons) In Marketing",
+        "status": "needs-review",
+        "failedItems": [
+          "curriculum"
+        ],
+        "officialSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-commerce-hons-marketing"
+      },
+      {
+        "programmeIndex": 57,
+        "nameEn": "Bachelor Of Arts (Honours) In Culinary Management",
+        "status": "needs-review",
+        "failedItems": [
+          "curriculum"
+        ],
+        "officialSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-arts-honours-culinary-management-kuching-campus"
+      },
+      {
+        "programmeIndex": 58,
+        "nameEn": "Doctor Of Medicine (MD)",
+        "status": "needs-review",
+        "failedItems": [
+          "curriculum"
+        ],
+        "officialSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/doctor-medicine-md"
+      },
+      {
+        "programmeIndex": 59,
+        "nameEn": "Bachelor Of Nursing (Hons)",
+        "status": "needs-review",
+        "failedItems": [
+          "curriculum"
+        ],
+        "officialSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-nursing-hons"
+      },
+      {
+        "programmeIndex": 60,
+        "nameEn": "Bachelor Of Arts (Honours) In Hospitality Management",
+        "status": "needs-review",
+        "failedItems": [
+          "curriculum"
+        ],
+        "officialSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bachelor-arts-honours-hospitality-management"
+      },
+      {
+        "programmeIndex": 61,
+        "nameEn": "BA (Hons) Psychology",
+        "status": "needs-review",
+        "failedItems": [
+          "curriculum"
+        ],
+        "officialSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/ba-hons-psychology"
+      },
+      {
+        "programmeIndex": 62,
+        "nameEn": "BA (Hons) Mass Communication",
+        "status": "needs-review",
+        "failedItems": [
+          "curriculum"
+        ],
+        "officialSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/ba-hons-mass-communication"
+      },
+      {
+        "programmeIndex": 63,
+        "nameEn": "BA (Hons) English Language & Communication",
+        "status": "needs-review",
+        "failedItems": [
+          "curriculum"
+        ],
+        "officialSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/ba-hons-english-language-communication"
+      },
+      {
+        "programmeIndex": 64,
+        "nameEn": "BCA (Hons) 3D Animation Design",
+        "status": "needs-review",
+        "failedItems": [
+          "curriculum"
+        ],
+        "officialSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/bca-hons-3d-animation-design"
+      },
+      {
+        "programmeIndex": 65,
+        "nameEn": "BA (Hons) Graphic Design",
+        "status": "needs-review",
+        "failedItems": [
+          "curriculum"
+        ],
+        "officialSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/ba-hons-graphic-design"
+      },
+      {
+        "programmeIndex": 66,
+        "nameEn": "BA (Hons) Game Design",
+        "status": "needs-review",
+        "failedItems": [
+          "curriculum"
+        ],
+        "officialSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/ba-hons-game-design"
+      },
+      {
+        "programmeIndex": 67,
+        "nameEn": "BA (Hons) Fashion Design with Marketing",
+        "status": "needs-review",
+        "failedItems": [
+          "curriculum"
+        ],
+        "officialSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/ba-hons-fashion-design-marketing"
+      },
+      {
+        "programmeIndex": 68,
+        "nameEn": "BA (Hons) in Hospitality Management",
+        "status": "needs-review",
+        "failedItems": [
+          "curriculum"
+        ],
+        "officialSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/ba-hons-hospitality-management"
+      },
+      {
+        "programmeIndex": 69,
+        "nameEn": "BA (Hons) in Event and Tourism Management",
+        "status": "needs-review",
+        "failedItems": [
+          "curriculum"
+        ],
+        "officialSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/ba-hons-event-and-tourism-management"
+      },
+      {
+        "programmeIndex": 70,
+        "nameEn": "BA (Honours) Multimedia Design",
+        "status": "needs-review",
+        "failedItems": [
+          "curriculum"
+        ],
+        "officialSourceUrl": "https://www.ucsiuniversity.edu.my/programmes/ba-honours-multimedia-design"
+      }
+    ],
+    "phase4QualityGate": [
+      {
+        "programmeIndex": 1,
+        "nameEn": "Bachelor Of Science (Honours) Applied Microbiology",
+        "Q1": "通过",
+        "Q2": "通过",
+        "Q3": "通过",
+        "Q4": "通过",
+        "Q5": "通过",
+        "Q6": "通过",
+        "Q7": "通过",
+        "Q8": "需复核",
+        "Q9": "不适用",
+        "Q10": "不适用",
+        "Q11": "不适用",
+        "Q12": "通过",
+        "publicDisplayStatus": "needs-review",
+        "auditStatus": "needs-manual-review"
+      },
+      {
+        "programmeIndex": 2,
+        "nameEn": "Bachelor Of Science (Honours) Aquatic Science",
+        "Q1": "通过",
+        "Q2": "通过",
+        "Q3": "通过",
+        "Q4": "通过",
+        "Q5": "通过",
+        "Q6": "通过",
+        "Q7": "通过",
+        "Q8": "需复核",
+        "Q9": "不适用",
+        "Q10": "不适用",
+        "Q11": "不适用",
+        "Q12": "通过",
+        "publicDisplayStatus": "needs-review",
+        "auditStatus": "needs-manual-review"
+      },
+      {
+        "programmeIndex": 3,
+        "nameEn": "Bachelor Of Science (Honours) In Biotechnology",
+        "Q1": "通过",
+        "Q2": "通过",
+        "Q3": "通过",
+        "Q4": "通过",
+        "Q5": "通过",
+        "Q6": "通过",
+        "Q7": "通过",
+        "Q8": "需复核",
+        "Q9": "不适用",
+        "Q10": "不适用",
+        "Q11": "不适用",
+        "Q12": "通过",
+        "publicDisplayStatus": "needs-review",
+        "auditStatus": "needs-manual-review"
+      },
+      {
+        "programmeIndex": 4,
+        "nameEn": "Bachelor Of Science (Honours) Food Science With Nutrition",
+        "Q1": "通过",
+        "Q2": "通过",
+        "Q3": "通过",
+        "Q4": "通过",
+        "Q5": "通过",
+        "Q6": "通过",
+        "Q7": "通过",
+        "Q8": "需复核",
+        "Q9": "不适用",
+        "Q10": "不适用",
+        "Q11": "不适用",
+        "Q12": "通过",
+        "publicDisplayStatus": "needs-review",
+        "auditStatus": "needs-manual-review"
+      },
+      {
+        "programmeIndex": 5,
+        "nameEn": "Bachelor Of Science (Honours) Forensic Science",
+        "Q1": "通过",
+        "Q2": "通过",
+        "Q3": "通过",
+        "Q4": "通过",
+        "Q5": "通过",
+        "Q6": "通过",
+        "Q7": "通过",
+        "Q8": "需复核",
+        "Q9": "不适用",
+        "Q10": "不适用",
+        "Q11": "不适用",
+        "Q12": "通过",
+        "publicDisplayStatus": "needs-review",
+        "auditStatus": "needs-manual-review"
+      },
+      {
+        "programmeIndex": 6,
+        "nameEn": "Bachelor Of Science (Honours) Nutrition With Wellness",
+        "Q1": "通过",
+        "Q2": "通过",
+        "Q3": "通过",
+        "Q4": "通过",
+        "Q5": "通过",
+        "Q6": "通过",
+        "Q7": "通过",
+        "Q8": "需复核",
+        "Q9": "不适用",
+        "Q10": "不适用",
+        "Q11": "不适用",
+        "Q12": "通过",
+        "publicDisplayStatus": "needs-review",
+        "auditStatus": "needs-manual-review"
+      },
+      {
+        "programmeIndex": 7,
+        "nameEn": "Bachelor Of Arts (Hons) Accounting",
+        "Q1": "通过",
+        "Q2": "通过",
+        "Q3": "通过",
+        "Q4": "通过",
+        "Q5": "通过",
+        "Q6": "通过",
+        "Q7": "通过",
+        "Q8": "需复核",
+        "Q9": "不适用",
+        "Q10": "不适用",
+        "Q11": "不适用",
+        "Q12": "通过",
+        "publicDisplayStatus": "needs-review",
+        "auditStatus": "needs-manual-review"
+      },
+      {
+        "programmeIndex": 8,
+        "nameEn": "Bachelor Of Arts (Hons) Accounting And Finance",
+        "Q1": "通过",
+        "Q2": "通过",
+        "Q3": "通过",
+        "Q4": "通过",
+        "Q5": "通过",
+        "Q6": "通过",
+        "Q7": "通过",
+        "Q8": "需复核",
+        "Q9": "不适用",
+        "Q10": "不适用",
+        "Q11": "不适用",
+        "Q12": "通过",
+        "publicDisplayStatus": "needs-review",
+        "auditStatus": "needs-manual-review"
+      },
+      {
+        "programmeIndex": 9,
+        "nameEn": "Bachelor Of Arts (Hons) Entrepreneurship",
+        "Q1": "通过",
+        "Q2": "通过",
+        "Q3": "通过",
+        "Q4": "通过",
+        "Q5": "通过",
+        "Q6": "通过",
+        "Q7": "通过",
+        "Q8": "需复核",
+        "Q9": "不适用",
+        "Q10": "不适用",
+        "Q11": "不适用",
+        "Q12": "通过",
+        "publicDisplayStatus": "needs-review",
+        "auditStatus": "needs-manual-review"
+      },
+      {
+        "programmeIndex": 10,
+        "nameEn": "Bachelor Of Arts (Hons) In Branding And Advertising",
+        "Q1": "通过",
+        "Q2": "通过",
+        "Q3": "通过",
+        "Q4": "通过",
+        "Q5": "通过",
+        "Q6": "通过",
+        "Q7": "通过",
+        "Q8": "需复核",
+        "Q9": "不适用",
+        "Q10": "不适用",
+        "Q11": "不适用",
+        "Q12": "通过",
+        "publicDisplayStatus": "needs-review",
+        "auditStatus": "needs-manual-review"
+      },
+      {
+        "programmeIndex": 11,
+        "nameEn": "Bachelor Of Arts (Hons) In Business Administration",
+        "Q1": "通过",
+        "Q2": "通过",
+        "Q3": "通过",
+        "Q4": "通过",
+        "Q5": "通过",
+        "Q6": "通过",
+        "Q7": "通过",
+        "Q8": "需复核",
+        "Q9": "不适用",
+        "Q10": "不适用",
+        "Q11": "不适用",
+        "Q12": "通过",
+        "publicDisplayStatus": "needs-review",
+        "auditStatus": "needs-manual-review"
+      },
+      {
+        "programmeIndex": 12,
+        "nameEn": "Bachelor Of Arts (Hons) In Marketing",
+        "Q1": "通过",
+        "Q2": "通过",
+        "Q3": "通过",
+        "Q4": "通过",
+        "Q5": "通过",
+        "Q6": "通过",
+        "Q7": "通过",
+        "Q8": "需复核",
+        "Q9": "不适用",
+        "Q10": "不适用",
+        "Q11": "不适用",
+        "Q12": "通过",
+        "publicDisplayStatus": "needs-review",
+        "auditStatus": "needs-manual-review"
+      },
+      {
+        "programmeIndex": 13,
+        "nameEn": "Bachelor Of Arts (Hons) Logistics Management",
+        "Q1": "通过",
+        "Q2": "通过",
+        "Q3": "通过",
+        "Q4": "通过",
+        "Q5": "通过",
+        "Q6": "通过",
+        "Q7": "通过",
+        "Q8": "需复核",
+        "Q9": "不适用",
+        "Q10": "不适用",
+        "Q11": "不适用",
+        "Q12": "通过",
+        "publicDisplayStatus": "needs-review",
+        "auditStatus": "needs-manual-review"
+      },
+      {
+        "programmeIndex": 14,
+        "nameEn": "Bachelor Of Arts (Honours) Supply Chain Operations Management",
+        "Q1": "通过",
+        "Q2": "通过",
+        "Q3": "通过",
+        "Q4": "通过",
+        "Q5": "通过",
+        "Q6": "通过",
+        "Q7": "通过",
+        "Q8": "需复核",
+        "Q9": "不适用",
+        "Q10": "不适用",
+        "Q11": "不适用",
+        "Q12": "通过",
+        "publicDisplayStatus": "needs-review",
+        "auditStatus": "needs-manual-review"
+      },
+      {
+        "programmeIndex": 15,
+        "nameEn": "Bachelor In Human Capital Management (Honours)",
+        "Q1": "通过",
+        "Q2": "通过",
+        "Q3": "通过",
+        "Q4": "通过",
+        "Q5": "通过",
+        "Q6": "通过",
+        "Q7": "通过",
+        "Q8": "需复核",
+        "Q9": "不适用",
+        "Q10": "不适用",
+        "Q11": "不适用",
+        "Q12": "通过",
+        "publicDisplayStatus": "needs-review",
+        "auditStatus": "needs-manual-review"
+      },
+      {
+        "programmeIndex": 16,
+        "nameEn": "Bachelor Of Business Analytics (Honours)",
+        "Q1": "通过",
+        "Q2": "通过",
+        "Q3": "通过",
+        "Q4": "通过",
+        "Q5": "通过",
+        "Q6": "通过",
+        "Q7": "通过",
+        "Q8": "需复核",
+        "Q9": "不适用",
+        "Q10": "不适用",
+        "Q11": "不适用",
+        "Q12": "通过",
+        "publicDisplayStatus": "needs-review",
+        "auditStatus": "needs-manual-review"
+      },
+      {
+        "programmeIndex": 17,
+        "nameEn": "Bachelor Of Financial Economics (Hons)",
+        "Q1": "通过",
+        "Q2": "通过",
+        "Q3": "通过",
+        "Q4": "通过",
+        "Q5": "通过",
+        "Q6": "通过",
+        "Q7": "通过",
+        "Q8": "需复核",
+        "Q9": "不适用",
+        "Q10": "不适用",
+        "Q11": "不适用",
+        "Q12": "通过",
+        "publicDisplayStatus": "needs-review",
+        "auditStatus": "needs-manual-review"
+      },
+      {
+        "programmeIndex": 18,
+        "nameEn": "Bachelor Of Financial Technology (Honours)",
+        "Q1": "通过",
+        "Q2": "通过",
+        "Q3": "通过",
+        "Q4": "通过",
+        "Q5": "通过",
+        "Q6": "通过",
+        "Q7": "通过",
+        "Q8": "需复核",
+        "Q9": "不适用",
+        "Q10": "不适用",
+        "Q11": "不适用",
+        "Q12": "通过",
+        "publicDisplayStatus": "needs-review",
+        "auditStatus": "needs-manual-review"
+      },
+      {
+        "programmeIndex": 19,
+        "nameEn": "Bachelor Of International And Sustainable Business (Honours)",
+        "Q1": "通过",
+        "Q2": "通过",
+        "Q3": "通过",
+        "Q4": "通过",
+        "Q5": "通过",
+        "Q6": "通过",
+        "Q7": "通过",
+        "Q8": "需复核",
+        "Q9": "不适用",
+        "Q10": "不适用",
+        "Q11": "不适用",
+        "Q12": "通过",
+        "publicDisplayStatus": "needs-review",
+        "auditStatus": "needs-manual-review"
+      },
+      {
+        "programmeIndex": 20,
+        "nameEn": "Bachelor Of Science (Honours) Finance And Investment",
+        "Q1": "通过",
+        "Q2": "通过",
+        "Q3": "通过",
+        "Q4": "通过",
+        "Q5": "通过",
+        "Q6": "通过",
+        "Q7": "通过",
+        "Q8": "需复核",
+        "Q9": "不适用",
+        "Q10": "不适用",
+        "Q11": "不适用",
+        "Q12": "通过",
+        "publicDisplayStatus": "needs-review",
+        "auditStatus": "needs-manual-review"
+      },
+      {
+        "programmeIndex": 21,
+        "nameEn": "Bachelor Of Arts (Hons) In Interior Architecture",
+        "Q1": "通过",
+        "Q2": "通过",
+        "Q3": "通过",
+        "Q4": "通过",
+        "Q5": "通过",
+        "Q6": "通过",
+        "Q7": "通过",
+        "Q8": "需复核",
+        "Q9": "不适用",
+        "Q10": "不适用",
+        "Q11": "不适用",
+        "Q12": "通过",
+        "publicDisplayStatus": "needs-review",
+        "auditStatus": "needs-manual-review"
+      },
+      {
+        "programmeIndex": 22,
+        "nameEn": "Bachelor Of Chemical Engineering With Honours",
+        "Q1": "通过",
+        "Q2": "通过",
+        "Q3": "通过",
+        "Q4": "通过",
+        "Q5": "通过",
+        "Q6": "通过",
+        "Q7": "通过",
+        "Q8": "需复核",
+        "Q9": "不适用",
+        "Q10": "不适用",
+        "Q11": "不适用",
+        "Q12": "通过",
+        "publicDisplayStatus": "needs-review",
+        "auditStatus": "needs-manual-review"
+      },
+      {
+        "programmeIndex": 23,
+        "nameEn": "Bachelor Of Civil Engineering With Honours",
+        "Q1": "通过",
+        "Q2": "通过",
+        "Q3": "通过",
+        "Q4": "通过",
+        "Q5": "通过",
+        "Q6": "通过",
+        "Q7": "通过",
+        "Q8": "需复核",
+        "Q9": "不适用",
+        "Q10": "不适用",
+        "Q11": "不适用",
+        "Q12": "通过",
+        "publicDisplayStatus": "needs-review",
+        "auditStatus": "needs-manual-review"
+      },
+      {
+        "programmeIndex": 24,
+        "nameEn": "Bachelor Of Computer Engineering (Artificial Intelligence) With Honours",
+        "Q1": "通过",
+        "Q2": "通过",
+        "Q3": "通过",
+        "Q4": "通过",
+        "Q5": "通过",
+        "Q6": "通过",
+        "Q7": "通过",
+        "Q8": "需复核",
+        "Q9": "不适用",
+        "Q10": "不适用",
+        "Q11": "不适用",
+        "Q12": "通过",
+        "publicDisplayStatus": "needs-review",
+        "auditStatus": "needs-manual-review"
+      },
+      {
+        "programmeIndex": 25,
+        "nameEn": "Bachelor Of Digital Mechanical Technology With Honours",
+        "Q1": "通过",
+        "Q2": "通过",
+        "Q3": "通过",
+        "Q4": "通过",
+        "Q5": "通过",
+        "Q6": "通过",
+        "Q7": "通过",
+        "Q8": "需复核",
+        "Q9": "不适用",
+        "Q10": "不适用",
+        "Q11": "不适用",
+        "Q12": "通过",
+        "publicDisplayStatus": "needs-review",
+        "auditStatus": "needs-manual-review"
+      },
+      {
+        "programmeIndex": 26,
+        "nameEn": "Bachelor Of Electrical And Electronics Engineering With Honours",
+        "Q1": "通过",
+        "Q2": "通过",
+        "Q3": "通过",
+        "Q4": "通过",
+        "Q5": "通过",
+        "Q6": "通过",
+        "Q7": "通过",
+        "Q8": "需复核",
+        "Q9": "不适用",
+        "Q10": "不适用",
+        "Q11": "不适用",
+        "Q12": "通过",
+        "publicDisplayStatus": "needs-review",
+        "auditStatus": "needs-manual-review"
+      },
+      {
+        "programmeIndex": 27,
+        "nameEn": "Bachelor Of Energy Engineering With Honours",
+        "Q1": "通过",
+        "Q2": "通过",
+        "Q3": "通过",
+        "Q4": "通过",
+        "Q5": "通过",
+        "Q6": "通过",
+        "Q7": "通过",
+        "Q8": "需复核",
+        "Q9": "不适用",
+        "Q10": "不适用",
+        "Q11": "不适用",
+        "Q12": "通过",
+        "publicDisplayStatus": "needs-review",
+        "auditStatus": "needs-manual-review"
+      },
+      {
+        "programmeIndex": 28,
+        "nameEn": "Bachelor Of Mechanical Engineering With Honours",
+        "Q1": "通过",
+        "Q2": "通过",
+        "Q3": "通过",
+        "Q4": "通过",
+        "Q5": "通过",
+        "Q6": "通过",
+        "Q7": "通过",
+        "Q8": "需复核",
+        "Q9": "不适用",
+        "Q10": "不适用",
+        "Q11": "不适用",
+        "Q12": "通过",
+        "publicDisplayStatus": "needs-review",
+        "auditStatus": "needs-manual-review"
+      },
+      {
+        "programmeIndex": 29,
+        "nameEn": "Bachelor Of Mechatronics Engineering With Honours",
+        "Q1": "通过",
+        "Q2": "通过",
+        "Q3": "通过",
+        "Q4": "通过",
+        "Q5": "通过",
+        "Q6": "通过",
+        "Q7": "通过",
+        "Q8": "需复核",
+        "Q9": "不适用",
+        "Q10": "不适用",
+        "Q11": "不适用",
+        "Q12": "通过",
+        "publicDisplayStatus": "needs-review",
+        "auditStatus": "needs-manual-review"
+      },
+      {
+        "programmeIndex": 30,
+        "nameEn": "Bachelor Of Microelectronic Technology With Honours",
+        "Q1": "通过",
+        "Q2": "通过",
+        "Q3": "通过",
+        "Q4": "通过",
+        "Q5": "通过",
+        "Q6": "通过",
+        "Q7": "通过",
+        "Q8": "需复核",
+        "Q9": "不适用",
+        "Q10": "不适用",
+        "Q11": "不适用",
+        "Q12": "通过",
+        "publicDisplayStatus": "needs-review",
+        "auditStatus": "needs-manual-review"
+      },
+      {
+        "programmeIndex": 31,
+        "nameEn": "Bachelor Of Petroleum Engineering With Honours",
+        "Q1": "通过",
+        "Q2": "通过",
+        "Q3": "通过",
+        "Q4": "通过",
+        "Q5": "通过",
+        "Q6": "通过",
+        "Q7": "通过",
+        "Q8": "需复核",
+        "Q9": "不适用",
+        "Q10": "不适用",
+        "Q11": "不适用",
+        "Q12": "通过",
+        "publicDisplayStatus": "needs-review",
+        "auditStatus": "needs-manual-review"
+      },
+      {
+        "programmeIndex": 32,
+        "nameEn": "Bachelor Of Quantity Surveying (Hons)",
+        "Q1": "通过",
+        "Q2": "通过",
+        "Q3": "通过",
+        "Q4": "通过",
+        "Q5": "通过",
+        "Q6": "通过",
+        "Q7": "通过",
+        "Q8": "需复核",
+        "Q9": "不适用",
+        "Q10": "不适用",
+        "Q11": "不适用",
+        "Q12": "通过",
+        "publicDisplayStatus": "needs-review",
+        "auditStatus": "needs-manual-review"
+      },
+      {
+        "programmeIndex": 33,
+        "nameEn": "Bachelor Of Science (Hons) In Architecture",
+        "Q1": "通过",
+        "Q2": "通过",
+        "Q3": "通过",
+        "Q4": "通过",
+        "Q5": "通过",
+        "Q6": "通过",
+        "Q7": "通过",
+        "Q8": "需复核",
+        "Q9": "不适用",
+        "Q10": "不适用",
+        "Q11": "不适用",
+        "Q12": "通过",
+        "publicDisplayStatus": "needs-review",
+        "auditStatus": "needs-manual-review"
+      },
+      {
+        "programmeIndex": 34,
+        "nameEn": "Bachelor Of Arts (Honours) In Culinary Management",
+        "Q1": "通过",
+        "Q2": "通过",
+        "Q3": "通过",
+        "Q4": "通过",
+        "Q5": "通过",
+        "Q6": "通过",
+        "Q7": "通过",
+        "Q8": "需复核",
+        "Q9": "不适用",
+        "Q10": "不适用",
+        "Q11": "不适用",
+        "Q12": "通过",
+        "publicDisplayStatus": "needs-review",
+        "auditStatus": "needs-manual-review"
+      },
+      {
+        "programmeIndex": 35,
+        "nameEn": "Bachelor Of Arts (Honours) In Global Sustainable Tourism",
+        "Q1": "通过",
+        "Q2": "通过",
+        "Q3": "通过",
+        "Q4": "通过",
+        "Q5": "通过",
+        "Q6": "通过",
+        "Q7": "通过",
+        "Q8": "需复核",
+        "Q9": "不适用",
+        "Q10": "不适用",
+        "Q11": "不适用",
+        "Q12": "通过",
+        "publicDisplayStatus": "needs-review",
+        "auditStatus": "needs-manual-review"
+      },
+      {
+        "programmeIndex": 36,
+        "nameEn": "Bachelor Of Hospitality Administration",
+        "Q1": "通过",
+        "Q2": "通过",
+        "Q3": "通过",
+        "Q4": "通过",
+        "Q5": "通过",
+        "Q6": "通过",
+        "Q7": "通过",
+        "Q8": "需复核",
+        "Q9": "不适用",
+        "Q10": "不适用",
+        "Q11": "不适用",
+        "Q12": "通过",
+        "publicDisplayStatus": "needs-review",
+        "auditStatus": "needs-manual-review"
+      },
+      {
+        "programmeIndex": 37,
+        "nameEn": "Bachelor Of Optometry (Hons)",
+        "Q1": "通过",
+        "Q2": "通过",
+        "Q3": "通过",
+        "Q4": "通过",
+        "Q5": "通过",
+        "Q6": "通过",
+        "Q7": "通过",
+        "Q8": "需复核",
+        "Q9": "不适用",
+        "Q10": "不适用",
+        "Q11": "不适用",
+        "Q12": "通过",
+        "publicDisplayStatus": "needs-review",
+        "auditStatus": "needs-manual-review"
+      },
+      {
+        "programmeIndex": 38,
+        "nameEn": "Bachelor In Formulation Science (Honours)",
+        "Q1": "通过",
+        "Q2": "通过",
+        "Q3": "通过",
+        "Q4": "通过",
+        "Q5": "通过",
+        "Q6": "通过",
+        "Q7": "通过",
+        "Q8": "需复核",
+        "Q9": "不适用",
+        "Q10": "不适用",
+        "Q11": "不适用",
+        "Q12": "通过",
+        "publicDisplayStatus": "needs-review",
+        "auditStatus": "needs-manual-review"
+      },
+      {
+        "programmeIndex": 39,
+        "nameEn": "Bachelor Of Pharmacy (Honours)",
+        "Q1": "通过",
+        "Q2": "通过",
+        "Q3": "通过",
+        "Q4": "通过",
+        "Q5": "通过",
+        "Q6": "通过",
+        "Q7": "通过",
+        "Q8": "需复核",
+        "Q9": "不适用",
+        "Q10": "不适用",
+        "Q11": "不适用",
+        "Q12": "通过",
+        "publicDisplayStatus": "needs-review",
+        "auditStatus": "needs-manual-review"
+      },
+      {
+        "programmeIndex": 40,
+        "nameEn": "Bachelor Of Early Childhood Education (Honours)",
+        "Q1": "通过",
+        "Q2": "通过",
+        "Q3": "通过",
+        "Q4": "通过",
+        "Q5": "通过",
+        "Q6": "通过",
+        "Q7": "通过",
+        "Q8": "需复核",
+        "Q9": "不适用",
+        "Q10": "不适用",
+        "Q11": "不适用",
+        "Q12": "通过",
+        "publicDisplayStatus": "needs-review",
+        "auditStatus": "needs-manual-review"
+      },
+      {
+        "programmeIndex": 41,
+        "nameEn": "Bachelor Of Digital Media Production And Broadcasting (Honours)",
+        "Q1": "通过",
+        "Q2": "通过",
+        "Q3": "通过",
+        "Q4": "通过",
+        "Q5": "通过",
+        "Q6": "通过",
+        "Q7": "通过",
+        "Q8": "需复核",
+        "Q9": "不适用",
+        "Q10": "不适用",
+        "Q11": "不适用",
+        "Q12": "通过",
+        "publicDisplayStatus": "needs-review",
+        "auditStatus": "needs-manual-review"
+      },
+      {
+        "programmeIndex": 42,
+        "nameEn": "Bachelor Of Science (Honours) Actuarial Science",
+        "Q1": "通过",
+        "Q2": "通过",
+        "Q3": "通过",
+        "Q4": "通过",
+        "Q5": "通过",
+        "Q6": "通过",
+        "Q7": "通过",
+        "Q8": "需复核",
+        "Q9": "不适用",
+        "Q10": "不适用",
+        "Q11": "不适用",
+        "Q12": "通过",
+        "publicDisplayStatus": "needs-review",
+        "auditStatus": "needs-manual-review"
+      },
+      {
+        "programmeIndex": 43,
+        "nameEn": "Bachelor Of Science (Honours) Actuarial Science And Finance",
+        "Q1": "通过",
+        "Q2": "通过",
+        "Q3": "通过",
+        "Q4": "通过",
+        "Q5": "通过",
+        "Q6": "通过",
+        "Q7": "通过",
+        "Q8": "需复核",
+        "Q9": "不适用",
+        "Q10": "不适用",
+        "Q11": "不适用",
+        "Q12": "通过",
+        "publicDisplayStatus": "needs-review",
+        "auditStatus": "needs-manual-review"
+      },
+      {
+        "programmeIndex": 44,
+        "nameEn": "Bachelor Of Science (Honours) Actuarial Science With Data Analytics",
+        "Q1": "通过",
+        "Q2": "通过",
+        "Q3": "通过",
+        "Q4": "通过",
+        "Q5": "通过",
+        "Q6": "通过",
+        "Q7": "通过",
+        "Q8": "需复核",
+        "Q9": "不适用",
+        "Q10": "不适用",
+        "Q11": "不适用",
+        "Q12": "通过",
+        "publicDisplayStatus": "needs-review",
+        "auditStatus": "needs-manual-review"
+      },
+      {
+        "programmeIndex": 45,
+        "nameEn": "Bachelor Of Computer Science (Honours)",
+        "Q1": "通过",
+        "Q2": "通过",
+        "Q3": "通过",
+        "Q4": "通过",
+        "Q5": "通过",
+        "Q6": "通过",
+        "Q7": "通过",
+        "Q8": "需复核",
+        "Q9": "不适用",
+        "Q10": "不适用",
+        "Q11": "不适用",
+        "Q12": "通过",
+        "publicDisplayStatus": "needs-review",
+        "auditStatus": "needs-manual-review"
+      },
+      {
+        "programmeIndex": 46,
+        "nameEn": "Bachelor Of Computer Science In Artificial Intelligence With Honours",
+        "Q1": "通过",
+        "Q2": "通过",
+        "Q3": "通过",
+        "Q4": "通过",
+        "Q5": "通过",
+        "Q6": "通过",
+        "Q7": "通过",
+        "Q8": "需复核",
+        "Q9": "不适用",
+        "Q10": "不适用",
+        "Q11": "不适用",
+        "Q12": "通过",
+        "publicDisplayStatus": "needs-review",
+        "auditStatus": "needs-manual-review"
+      },
+      {
+        "programmeIndex": 47,
+        "nameEn": "Bachelor Of Computer Science In Cyber Security With Honours",
+        "Q1": "通过",
+        "Q2": "通过",
+        "Q3": "通过",
+        "Q4": "通过",
+        "Q5": "通过",
+        "Q6": "通过",
+        "Q7": "通过",
+        "Q8": "需复核",
+        "Q9": "不适用",
+        "Q10": "不适用",
+        "Q11": "不适用",
+        "Q12": "通过",
+        "publicDisplayStatus": "needs-review",
+        "auditStatus": "needs-manual-review"
+      },
+      {
+        "programmeIndex": 48,
+        "nameEn": "Bachelor Of Computer Science (Hons) Mobile Computing And Networking",
+        "Q1": "通过",
+        "Q2": "通过",
+        "Q3": "通过",
+        "Q4": "通过",
+        "Q5": "通过",
+        "Q6": "通过",
+        "Q7": "通过",
+        "Q8": "需复核",
+        "Q9": "不适用",
+        "Q10": "不适用",
+        "Q11": "不适用",
+        "Q12": "通过",
+        "publicDisplayStatus": "needs-review",
+        "auditStatus": "needs-manual-review"
+      },
+      {
+        "programmeIndex": 49,
+        "nameEn": "Bachelor Of Computer Science In Data Science With Honours",
+        "Q1": "通过",
+        "Q2": "通过",
+        "Q3": "通过",
+        "Q4": "通过",
+        "Q5": "通过",
+        "Q6": "通过",
+        "Q7": "通过",
+        "Q8": "需复核",
+        "Q9": "不适用",
+        "Q10": "不适用",
+        "Q11": "不适用",
+        "Q12": "通过",
+        "publicDisplayStatus": "needs-review",
+        "auditStatus": "needs-manual-review"
+      },
+      {
+        "programmeIndex": 50,
+        "nameEn": "Bachelor Of Science In Business Information Systems (Honours)",
+        "Q1": "通过",
+        "Q2": "通过",
+        "Q3": "通过",
+        "Q4": "通过",
+        "Q5": "通过",
+        "Q6": "通过",
+        "Q7": "通过",
+        "Q8": "需复核",
+        "Q9": "不适用",
+        "Q10": "不适用",
+        "Q11": "不适用",
+        "Q12": "通过",
+        "publicDisplayStatus": "needs-review",
+        "auditStatus": "needs-manual-review"
+      },
+      {
+        "programmeIndex": 51,
+        "nameEn": "Bachelor Of Classical Music (Hons.)",
+        "Q1": "通过",
+        "Q2": "通过",
+        "Q3": "通过",
+        "Q4": "通过",
+        "Q5": "通过",
+        "Q6": "通过",
+        "Q7": "通过",
+        "Q8": "需复核",
+        "Q9": "不适用",
+        "Q10": "不适用",
+        "Q11": "不适用",
+        "Q12": "通过",
+        "publicDisplayStatus": "needs-review",
+        "auditStatus": "needs-manual-review"
+      },
+      {
+        "programmeIndex": 52,
+        "nameEn": "Bachelor Of Contemporary Music (Hons.)",
+        "Q1": "通过",
+        "Q2": "通过",
+        "Q3": "通过",
+        "Q4": "通过",
+        "Q5": "通过",
+        "Q6": "通过",
+        "Q7": "通过",
+        "Q8": "需复核",
+        "Q9": "不适用",
+        "Q10": "不适用",
+        "Q11": "不适用",
+        "Q12": "通过",
+        "publicDisplayStatus": "needs-review",
+        "auditStatus": "needs-manual-review"
+      },
+      {
+        "programmeIndex": 53,
+        "nameEn": "Bachelor In Business Management (Honours)",
+        "Q1": "通过",
+        "Q2": "通过",
+        "Q3": "通过",
+        "Q4": "通过",
+        "Q5": "通过",
+        "Q6": "通过",
+        "Q7": "通过",
+        "Q8": "需复核",
+        "Q9": "不适用",
+        "Q10": "不适用",
+        "Q11": "不适用",
+        "Q12": "通过",
+        "publicDisplayStatus": "needs-review",
+        "auditStatus": "needs-manual-review"
+      },
+      {
+        "programmeIndex": 54,
+        "nameEn": "Bachelor In International Business (Honours)",
+        "Q1": "通过",
+        "Q2": "通过",
+        "Q3": "通过",
+        "Q4": "通过",
+        "Q5": "通过",
+        "Q6": "通过",
+        "Q7": "通过",
+        "Q8": "需复核",
+        "Q9": "不适用",
+        "Q10": "不适用",
+        "Q11": "不适用",
+        "Q12": "通过",
+        "publicDisplayStatus": "needs-review",
+        "auditStatus": "needs-manual-review"
+      },
+      {
+        "programmeIndex": 55,
+        "nameEn": "Bachelor Of Commerce (Hons) In Accounting And Finance",
+        "Q1": "通过",
+        "Q2": "通过",
+        "Q3": "通过",
+        "Q4": "通过",
+        "Q5": "通过",
+        "Q6": "通过",
+        "Q7": "通过",
+        "Q8": "需复核",
+        "Q9": "不适用",
+        "Q10": "不适用",
+        "Q11": "不适用",
+        "Q12": "通过",
+        "publicDisplayStatus": "needs-review",
+        "auditStatus": "needs-manual-review"
+      },
+      {
+        "programmeIndex": 56,
+        "nameEn": "Bachelor Of Commerce (Hons) In Marketing",
+        "Q1": "通过",
+        "Q2": "通过",
+        "Q3": "通过",
+        "Q4": "通过",
+        "Q5": "通过",
+        "Q6": "通过",
+        "Q7": "通过",
+        "Q8": "需复核",
+        "Q9": "不适用",
+        "Q10": "不适用",
+        "Q11": "不适用",
+        "Q12": "通过",
+        "publicDisplayStatus": "needs-review",
+        "auditStatus": "needs-manual-review"
+      },
+      {
+        "programmeIndex": 57,
+        "nameEn": "Bachelor Of Arts (Honours) In Culinary Management",
+        "Q1": "通过",
+        "Q2": "通过",
+        "Q3": "通过",
+        "Q4": "通过",
+        "Q5": "通过",
+        "Q6": "通过",
+        "Q7": "通过",
+        "Q8": "需复核",
+        "Q9": "不适用",
+        "Q10": "不适用",
+        "Q11": "不适用",
+        "Q12": "通过",
+        "publicDisplayStatus": "needs-review",
+        "auditStatus": "needs-manual-review"
+      },
+      {
+        "programmeIndex": 58,
+        "nameEn": "Doctor Of Medicine (MD)",
+        "Q1": "通过",
+        "Q2": "通过",
+        "Q3": "通过",
+        "Q4": "通过",
+        "Q5": "通过",
+        "Q6": "通过",
+        "Q7": "通过",
+        "Q8": "需复核",
+        "Q9": "不适用",
+        "Q10": "不适用",
+        "Q11": "不适用",
+        "Q12": "通过",
+        "publicDisplayStatus": "needs-review",
+        "auditStatus": "needs-manual-review"
+      },
+      {
+        "programmeIndex": 59,
+        "nameEn": "Bachelor Of Nursing (Hons)",
+        "Q1": "通过",
+        "Q2": "通过",
+        "Q3": "通过",
+        "Q4": "通过",
+        "Q5": "通过",
+        "Q6": "通过",
+        "Q7": "通过",
+        "Q8": "需复核",
+        "Q9": "不适用",
+        "Q10": "不适用",
+        "Q11": "不适用",
+        "Q12": "通过",
+        "publicDisplayStatus": "needs-review",
+        "auditStatus": "needs-manual-review"
+      },
+      {
+        "programmeIndex": 60,
+        "nameEn": "Bachelor Of Arts (Honours) In Hospitality Management",
+        "Q1": "通过",
+        "Q2": "通过",
+        "Q3": "通过",
+        "Q4": "通过",
+        "Q5": "通过",
+        "Q6": "通过",
+        "Q7": "通过",
+        "Q8": "需复核",
+        "Q9": "不适用",
+        "Q10": "不适用",
+        "Q11": "不适用",
+        "Q12": "通过",
+        "publicDisplayStatus": "needs-review",
+        "auditStatus": "needs-manual-review"
+      },
+      {
+        "programmeIndex": 61,
+        "nameEn": "BA (Hons) Psychology",
+        "Q1": "通过",
+        "Q2": "通过",
+        "Q3": "通过",
+        "Q4": "通过",
+        "Q5": "通过",
+        "Q6": "通过",
+        "Q7": "通过",
+        "Q8": "需复核",
+        "Q9": "不适用",
+        "Q10": "不适用",
+        "Q11": "不适用",
+        "Q12": "通过",
+        "publicDisplayStatus": "needs-review",
+        "auditStatus": "needs-manual-review"
+      },
+      {
+        "programmeIndex": 62,
+        "nameEn": "BA (Hons) Mass Communication",
+        "Q1": "通过",
+        "Q2": "通过",
+        "Q3": "通过",
+        "Q4": "通过",
+        "Q5": "通过",
+        "Q6": "通过",
+        "Q7": "通过",
+        "Q8": "需复核",
+        "Q9": "不适用",
+        "Q10": "不适用",
+        "Q11": "不适用",
+        "Q12": "通过",
+        "publicDisplayStatus": "needs-review",
+        "auditStatus": "needs-manual-review"
+      },
+      {
+        "programmeIndex": 63,
+        "nameEn": "BA (Hons) English Language & Communication",
+        "Q1": "通过",
+        "Q2": "通过",
+        "Q3": "通过",
+        "Q4": "通过",
+        "Q5": "通过",
+        "Q6": "通过",
+        "Q7": "通过",
+        "Q8": "需复核",
+        "Q9": "不适用",
+        "Q10": "不适用",
+        "Q11": "不适用",
+        "Q12": "通过",
+        "publicDisplayStatus": "needs-review",
+        "auditStatus": "needs-manual-review"
+      },
+      {
+        "programmeIndex": 64,
+        "nameEn": "BCA (Hons) 3D Animation Design",
+        "Q1": "通过",
+        "Q2": "通过",
+        "Q3": "通过",
+        "Q4": "通过",
+        "Q5": "通过",
+        "Q6": "通过",
+        "Q7": "通过",
+        "Q8": "需复核",
+        "Q9": "不适用",
+        "Q10": "不适用",
+        "Q11": "不适用",
+        "Q12": "通过",
+        "publicDisplayStatus": "needs-review",
+        "auditStatus": "needs-manual-review"
+      },
+      {
+        "programmeIndex": 65,
+        "nameEn": "BA (Hons) Graphic Design",
+        "Q1": "通过",
+        "Q2": "通过",
+        "Q3": "通过",
+        "Q4": "通过",
+        "Q5": "通过",
+        "Q6": "通过",
+        "Q7": "通过",
+        "Q8": "需复核",
+        "Q9": "不适用",
+        "Q10": "不适用",
+        "Q11": "不适用",
+        "Q12": "通过",
+        "publicDisplayStatus": "needs-review",
+        "auditStatus": "needs-manual-review"
+      },
+      {
+        "programmeIndex": 66,
+        "nameEn": "BA (Hons) Game Design",
+        "Q1": "通过",
+        "Q2": "通过",
+        "Q3": "通过",
+        "Q4": "通过",
+        "Q5": "通过",
+        "Q6": "通过",
+        "Q7": "通过",
+        "Q8": "需复核",
+        "Q9": "不适用",
+        "Q10": "不适用",
+        "Q11": "不适用",
+        "Q12": "通过",
+        "publicDisplayStatus": "needs-review",
+        "auditStatus": "needs-manual-review"
+      },
+      {
+        "programmeIndex": 67,
+        "nameEn": "BA (Hons) Fashion Design with Marketing",
+        "Q1": "通过",
+        "Q2": "通过",
+        "Q3": "通过",
+        "Q4": "通过",
+        "Q5": "通过",
+        "Q6": "通过",
+        "Q7": "通过",
+        "Q8": "需复核",
+        "Q9": "不适用",
+        "Q10": "不适用",
+        "Q11": "不适用",
+        "Q12": "通过",
+        "publicDisplayStatus": "needs-review",
+        "auditStatus": "needs-manual-review"
+      },
+      {
+        "programmeIndex": 68,
+        "nameEn": "BA (Hons) in Hospitality Management",
+        "Q1": "通过",
+        "Q2": "通过",
+        "Q3": "通过",
+        "Q4": "通过",
+        "Q5": "通过",
+        "Q6": "通过",
+        "Q7": "通过",
+        "Q8": "需复核",
+        "Q9": "不适用",
+        "Q10": "不适用",
+        "Q11": "不适用",
+        "Q12": "通过",
+        "publicDisplayStatus": "needs-review",
+        "auditStatus": "needs-manual-review"
+      },
+      {
+        "programmeIndex": 69,
+        "nameEn": "BA (Hons) in Event and Tourism Management",
+        "Q1": "通过",
+        "Q2": "通过",
+        "Q3": "通过",
+        "Q4": "通过",
+        "Q5": "通过",
+        "Q6": "通过",
+        "Q7": "通过",
+        "Q8": "需复核",
+        "Q9": "不适用",
+        "Q10": "不适用",
+        "Q11": "不适用",
+        "Q12": "通过",
+        "publicDisplayStatus": "needs-review",
+        "auditStatus": "needs-manual-review"
+      },
+      {
+        "programmeIndex": 70,
+        "nameEn": "BA (Honours) Multimedia Design",
+        "Q1": "通过",
+        "Q2": "通过",
+        "Q3": "通过",
+        "Q4": "通过",
+        "Q5": "通过",
+        "Q6": "通过",
+        "Q7": "通过",
+        "Q8": "需复核",
+        "Q9": "不适用",
+        "Q10": "不适用",
+        "Q11": "不适用",
+        "Q12": "通过",
+        "publicDisplayStatus": "needs-review",
+        "auditStatus": "needs-manual-review"
+      }
+    ],
+    "baselineCorrection": {
+      "date": "2026-06-24",
+      "description": "按官方本科总页复核后补入十个此前未纳入的本科专业。",
+      "addedProgrammeIndices": [
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70
+      ]
+    }
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "generatedAt": "2026-06-24",
+  "source": "default collector v2 calibrated from v3-calibrated official audit evidence",
+  "officialDomain": "newinti.edu.my",
+  "outputs": [
+    {
+      "path": "data/imports/iiu/2026-06-24/v2-calibrated/INTI_audit_bachelor_20260624.json",
+      "programmes": 74,
+      "ready": 0,
+      "needsReview": 74,
+      "sha256": "db73c55480e106b0bfd8c5fa50d1ee265c7d6710c4412a795e571d3b66dc31bf"
+    },
+    {
+      "path": "data/imports/iiu/2026-06-24/v2-calibrated/INTI_audit_master_20260624.json",
+      "programmes": 23,
+      "ready": 0,
+      "needsReview": 23,
+      "sha256": "cc2bf3f651cb93d26da3d77f66e7e9c8f5f46d0517866e439d93b50b7113ae75"
+    },
+    {
+      "path": "data/imports/iiu/2026-06-24/v2-calibrated/INTI_audit_phd_20260624.json",
+      "programmes": 10,
+      "ready": 0,
+      "needsReview": 10,
+      "sha256": "351b734a6418ea291556dc051ced79910f6e49dce4a727cde31ed15ebcbe0d5f"
+    }
+  ],
+  "policy": {
+    "safe_to_import": false,
+    "tuitionMYR": "null for all programmes because exact official international total tuition is unpublished",
+    "publicDisplayStatus": "needs-review for all programmes"
+  },
+  "secondPass": {
+    "changedItems": [
+      {
+        "file": "v2-bachelor",
+        "programme": "Bachelor of Food Service Management with Culinary Arts (Honours) 3+0 in collaboration with CY Cergy Paris Université, France",
+        "field": "curriculum",
+        "oldEmpty": true,
+        "newCount": 58
+      },
+      {
+        "file": "v2-bachelor",
+        "programme": "Bachelor of Technology in Intelligent Manufacturing",
+        "field": "curriculum",
+        "oldEmpty": true,
+        "newCount": 40
+      },
+      {
+        "file": "v2-bachelor",
+        "programme": "Bachelor of Technology in Intelligent Process and Product Design",
+        "field": "curriculum",
+        "oldEmpty": true,
+        "newCount": 40
+      }
+    ],
+    "curriculumEmptyAfter": 0
+  }
+}

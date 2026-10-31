@@ -1,0 +1,66 @@
+{
+  "mode": "imported",
+  "universityId": 54,
+  "backupPath": "/Users/ian/Desktop/dev/study-malaysia/apps/api/tmp/backups/utp-official-audit-publish-before-2026-06-19T16-53-01-663Z.json",
+  "catalogCacheCleared": false,
+  "summary": {
+    "candidateRows": 63,
+    "importRows": 63,
+    "byLevel": {
+      "bachelor": 15,
+      "master": 37,
+      "phd": 11
+    },
+    "readyRows": 63,
+    "needsReviewRows": 0,
+    "publishedRows": 63,
+    "uniqueSlugs": 63,
+    "officialTotalRows": 41,
+    "officialRateRows": 0,
+    "calculatedFromOfficialRateRows": 22,
+    "pendingFeeRows": 0,
+    "publicDisplayStatusCounts": {
+      "ready": 63
+    },
+    "officialSourceStatusCounts": {
+      "official-verified": 63
+    },
+    "feeAuditStatusCounts": {
+      "matched-official": 41,
+      "calculated-from-official-rate": 22
+    }
+  },
+  "verification": {
+    "candidateRows": 63,
+    "importRows": 63,
+    "byLevel": {
+      "bachelor": 15,
+      "master": 37,
+      "phd": 11
+    },
+    "readyRows": 63,
+    "needsReviewRows": 0,
+    "publishedRows": 63,
+    "uniqueSlugs": 63,
+    "officialTotalRows": 41,
+    "officialRateRows": 0,
+    "calculatedFromOfficialRateRows": 22,
+    "pendingFeeRows": 0,
+    "publicDisplayStatusCounts": {
+      "ready": 63
+    },
+    "officialSourceStatusCounts": {
+      "official-verified": 63
+    },
+    "feeAuditStatusCounts": {
+      "matched-official": 41,
+      "calculated-from-official-rate": 22
+    },
+    "universityPublicDisplayStatus": "ready",
+    "universityIsPublished": true,
+    "universityProgramCount": 63,
+    "publicLeakageRows": 0,
+    "adminNeedsReviewRows": 0,
+    "legacyActiveRows": 0
+  }
+}

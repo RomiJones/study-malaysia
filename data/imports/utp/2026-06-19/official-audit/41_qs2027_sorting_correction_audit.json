@@ -1,0 +1,245 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-06-19T17:08:44.639Z",
+  "institution": "Universiti Teknologi PETRONAS",
+  "universityCode": "UTP",
+  "issue": {
+    "id": "utp-qs2027-sort-overwrite",
+    "status": "resolved",
+    "before": {
+      "qsRank": 9999,
+      "placement": "unranked fallback; sorted after ranked QS WUR 2027 institutions"
+    },
+    "after": {
+      "qsRank": 261,
+      "qsRankDisplay": "=261",
+      "qsRankYear": 2027,
+      "placement": "between UTM #=158 and Taylor's #272"
+    }
+  },
+  "officialQsEvidence": {
+    "rankingName": "QS World University Rankings",
+    "rankingYear": 2027,
+    "publishedAt": "2026-06-18",
+    "retrievedAt": "2026-06-19T00:00:00+08:00",
+    "sourcePageUrl": "https://www.topuniversities.com/world-university-rankings?countries=my",
+    "profileUrl": "https://www.topuniversities.com/universities/universiti-teknologi-petronas-utp",
+    "sourceUrl": "https://www.topuniversities.com/rankings/endpoint?nid=4153156&page=0&items_per_page=100&tab=indicators&region=&countries=my&cities=&search=&star=&sort_by=rank&order_by=asc&program_type=&scholarship=&fee=&english_score=&academic_score=&mix_student=&loggedincache=&study_level=&subjects=",
+    "qsTitle": "Universiti Teknologi PETRONAS (UTP)",
+    "rankDisplay": "=261",
+    "rankSort": 261,
+    "overallScore": "49.9",
+    "context": "malaysia-institution"
+  },
+  "syncResult": {
+    "mode": "write",
+    "counts": {
+      "universities": 119,
+      "ranked": 34,
+      "unranked": 85,
+      "changed": 1,
+      "unmatchedSourceCodes": 0
+    },
+    "changes": [
+      {
+        "code": "UTP",
+        "slug": "universiti-teknologi-petronas",
+        "nameEn": "Universiti Teknologi PETRONAS",
+        "beforeRank": 9999,
+        "afterRank": 261,
+        "beforeDisplay": null,
+        "afterDisplay": "=261",
+        "context": "malaysia-institution",
+        "changed": true
+      }
+    ],
+    "verified": false
+  },
+  "apiVerification": {
+    "university": {
+      "id": 54,
+      "slug": "universiti-teknologi-petronas",
+      "qsRank": 261,
+      "qsRankDisplay": "=261",
+      "qsRankYear": 2027,
+      "qsRankStatus": "ranked",
+      "publicDisplayStatus": "ready"
+    },
+    "publicListPosition": 8,
+    "previousInstitution": {
+      "code": "UTM",
+      "qsRank": 158,
+      "qsRankDisplay": "=158"
+    },
+    "nextInstitution": {
+      "code": "TAYLORS",
+      "qsRank": 272,
+      "qsRankDisplay": "272"
+    },
+    "first20": [
+      {
+        "position": 1,
+        "code": "MONASH",
+        "shortName": "Monash",
+        "qsRank": 31,
+        "qsRankDisplay": "31"
+      },
+      {
+        "position": 2,
+        "code": "UM",
+        "shortName": "UM",
+        "qsRank": 56,
+        "qsRankDisplay": "56"
+      },
+      {
+        "position": 3,
+        "code": "UNM",
+        "shortName": "UNM",
+        "qsRank": 97,
+        "qsRankDisplay": "97"
+      },
+      {
+        "position": 4,
+        "code": "USM",
+        "shortName": "USM",
+        "qsRank": 128,
+        "qsRankDisplay": "=128"
+      },
+      {
+        "position": 5,
+        "code": "UKM",
+        "shortName": "UKM",
+        "qsRank": 130,
+        "qsRankDisplay": "130"
+      },
+      {
+        "position": 6,
+        "code": "UPM",
+        "shortName": "UPM",
+        "qsRank": 138,
+        "qsRankDisplay": "138"
+      },
+      {
+        "position": 7,
+        "code": "UTM",
+        "shortName": "UTM",
+        "qsRank": 158,
+        "qsRankDisplay": "=158"
+      },
+      {
+        "position": 8,
+        "code": "UTP",
+        "shortName": "UTP",
+        "qsRank": 261,
+        "qsRankDisplay": "=261"
+      },
+      {
+        "position": 9,
+        "code": "TAYLORS",
+        "shortName": "Taylor's",
+        "qsRank": 272,
+        "qsRankDisplay": "272"
+      },
+      {
+        "position": 10,
+        "code": "UCSI",
+        "shortName": "UCSI",
+        "qsRank": 282,
+        "qsRankDisplay": "282"
+      },
+      {
+        "position": 11,
+        "code": "SUNWAY",
+        "shortName": "Sunway",
+        "qsRank": 354,
+        "qsRankDisplay": "=354"
+      },
+      {
+        "position": 12,
+        "code": "INTI",
+        "shortName": "INTI",
+        "qsRank": 406,
+        "qsRankDisplay": "=406"
+      },
+      {
+        "position": 13,
+        "code": "UNITEN",
+        "shortName": "UNITEN",
+        "qsRank": 518,
+        "qsRankDisplay": "=518"
+      },
+      {
+        "position": 14,
+        "code": "APU",
+        "shortName": "APU",
+        "qsRank": 528,
+        "qsRankDisplay": "=528"
+      },
+      {
+        "position": 15,
+        "code": "UUM",
+        "shortName": "UUM",
+        "qsRank": 540,
+        "qsRankDisplay": "=540"
+      },
+      {
+        "position": 16,
+        "code": "UITM",
+        "shortName": "UiTM",
+        "qsRank": 549,
+        "qsRankDisplay": "=549"
+      },
+      {
+        "position": 17,
+        "code": "UMPSA",
+        "shortName": "UMPSA",
+        "qsRank": 588,
+        "qsRankDisplay": "=588"
+      },
+      {
+        "position": 18,
+        "code": "MSU",
+        "shortName": "MSU",
+        "qsRank": 608,
+        "qsRankDisplay": "=608"
+      },
+      {
+        "position": 19,
+        "code": "IIUM",
+        "shortName": "IIUM",
+        "qsRank": 691,
+        "qsRankDisplay": "=691"
+      },
+      {
+        "position": 20,
+        "code": "LUC",
+        "shortName": "LUC",
+        "qsRank": 701,
+        "qsRankDisplay": "701-710"
+      }
+    ]
+  },
+  "regressionProtection": {
+    "importer": "apps/api/src/db/import-utp-official-audit.ts now writes UTP QS WUR 2027 #=261 into qsRank and officialProfile.rankings.qsWorld.",
+    "test": "tests/api/utp-official-audit-import.test.ts asserts UTP university qsRank=261 and qsWorld rankDisplay/year/status."
+  },
+  "commands": [
+    {
+      "command": "npm --workspace @studymy/api run sync:qs:wur2027 -- --confirm-import",
+      "status": "passed"
+    },
+    {
+      "command": "npm --workspace @studymy/api run verify:qs:wur2027",
+      "status": "passed"
+    },
+    {
+      "command": "npm --workspace @studymy/api run verify:utp:official-audit -- --publish --allow-rate-derived",
+      "status": "passed"
+    },
+    {
+      "command": "Public /api/universities order check",
+      "status": "passed"
+    }
+  ],
+  "decision": "passed"
+}

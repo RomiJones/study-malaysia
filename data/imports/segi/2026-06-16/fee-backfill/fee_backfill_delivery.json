@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 2,
+  "createdAt": "2026-06-17T14:00:00+08:00",
+  "scope": {
+    "universityCode": "SEGI",
+    "collectionScope": "programmes",
+    "levels": ["bachelor", "master", "phd"],
+    "field": "tuition",
+    "source": "provided 2026 SEGi fee sheet",
+    "sourceHash": "sha256:205ad0382161d445a2f849a8dae6df08ac6300594aaaebf074d1c2358eb094db"
+  },
+  "result": {
+    "publicProgrammes": 76,
+    "feeSheetEvidenceRowsBefore": 48,
+    "feeSheetBackfilledRows": 25,
+    "feeSheetEvidenceRowsAfter": 73,
+    "feeNotPublishedRowsAfter": 3,
+    "feePendingReviewRowsAfter": 0,
+    "publicLocalPathLeak": false
+  },
+  "backfilledProgramIds": [
+    6497,
+    6501,
+    6503,
+    6508,
+    6516,
+    6517,
+    6518,
+    6519,
+    6520,
+    6521,
+    6522,
+    6524,
+    6525,
+    6528,
+    6534,
+    6537,
+    6544,
+    6546,
+    6548,
+    6552,
+    6554,
+    6560,
+    6563,
+    6565,
+    6570
+  ],
+  "unresolved": [
+    {
+      "id": 6506,
+      "name": "Master of Science in Environmental Sustainability with Artificial Intelligence",
+      "reason": "No unique matching row in the provided structured 2026 SEGi fee-sheet data."
+    },
+    {
+      "id": 6540,
+      "name": "Doctor of Philosophy in Medical Science",
+      "reason": "No unique matching row in the provided structured 2026 SEGi fee-sheet data."
+    },
+    {
+      "id": 6559,
+      "name": "Bachelor of Business Analytics (Online Mode)",
+      "reason": "No unique matching row in the provided structured 2026 SEGi fee-sheet data."
+    }
+  ],
+  "verification": {
+    "apiBuild": "passed",
+    "webBuild": "passed",
+    "tests": "npm run test -- tests/web/format.test.ts tests/api/segi-seed-data.test.ts passed",
+    "publish": "npm --workspace @studymy/api run publish:segi:official passed",
+    "verify": "npm --workspace @studymy/api run verify:segi:official passed",
+    "browserSampleProgramIds": [6497, 6508, 6518, 6537, 6559],
+    "browserBadPublicTerms": []
+  },
+  "decision": "published-with-3-fee-unmatched-exceptions"
+}

@@ -1,0 +1,13 @@
+{
+  "status": "current-official-snapshotted",
+  "currentAsOf": "2026-06-19",
+  "sourceCounts": {
+    "snapshots": 73,
+    "undergraduateDirectoryRows": 36,
+    "undergraduateFeeRows": 36,
+    "postgraduateFeeRows": 28,
+    "detailPages": 64
+  },
+  "diffs": [],
+  "notes": "No prior UNM StudyMY candidate baseline was found in repository search; this is a new official baseline."
+}
