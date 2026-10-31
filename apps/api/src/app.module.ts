@@ -67,7 +67,7 @@ loadEnvFiles();
       password: process.env.MYSQL_PASSWORD || "123456",
       database: process.env.MYSQL_DATABASE || "study_malaysia",
       entities: [...ALL_ENTITIES],
-      synchronize: true,
+      synchronize: false,
       charset: "utf8mb4_unicode_ci"
     }),
     TypeOrmModule.forFeature([...ALL_ENTITIES])

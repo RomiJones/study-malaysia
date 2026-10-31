@@ -112,7 +112,7 @@ npm run preview --workspace @studymy/admin
 - 仪表盘统计概览
 
 ## 注意事项
-- 当前 TypeORM 使用 `synchronize: true`，适合开发和联调，不适合直接上生产；正式上线前应迁移为 migration
+- NestJS API 服务使用 `synchronize: false`，启动时不会自动同步数据库表结构；后续表结构变更需通过数据库迁移管理。独立种子和导入脚本使用各自的数据库连接配置。
 - Redis 是可选增强层，不配置不会影响基本功能
 - 如果本地 3000 端口上跑的是旧 API 进程，请先停止旧进程再启动最新代码
 - 管理后台联调请优先使用 `npm run dev:api` 与 `npm run dev:admin` 的同一批最新代码，避免旧进程导致接口不一致
