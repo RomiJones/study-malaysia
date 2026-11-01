@@ -10,6 +10,12 @@
   ],
   "scripts": {
     "dev:api": "npm --workspace @studymy/api run start:dev",
+    "build:api": "npm --workspace @studymy/shared run build && npm --workspace @studymy/api run build",
+    "start:prod": "pm2 start ecosystem.config.cjs --only studymy-api --env production",
+    "restart:prod": "pm2 restart ecosystem.config.cjs --only studymy-api --env production --update-env",
+    "stop:prod": "pm2 stop studymy-api",
+    "logs:prod": "pm2 logs studymy-api",
+    "status:prod": "pm2 show studymy-api",
     "dev:web": "npm --workspace @studymy/web run dev",
     "dev:admin": "npm --workspace @studymy/admin run dev",
     "preview:admin": "npm --workspace @studymy/admin run preview",

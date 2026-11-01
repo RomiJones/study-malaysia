@@ -8,6 +8,7 @@ loadEnvFiles();
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule, { cors: true });
+  app.enableShutdownHooks(["SIGINT", "SIGTERM"]);
   app.setGlobalPrefix("api");
   const rootInfo = {
     name: "StudyMY API",
@@ -35,7 +36,13 @@ async function bootstrap() {
 
   const port = Number(process.env.API_PORT || 3000);
   await app.listen(port);
+  if (process.send) {
+    process.send("ready");
+  }
   console.log(`StudyMY API running on http://localhost:${port}/api`);
 }
 
-bootstrap();
+bootstrap().catch((error: unknown) => {
+  console.error("StudyMY API failed to start", error);
+  process.exit(1);
+});

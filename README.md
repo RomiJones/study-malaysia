@@ -92,6 +92,61 @@ npm run build --workspace @studymy/admin
 npm run preview --workspace @studymy/admin
 ```
 
+## 使用 PM2 部署 API
+
+在服务器项目根目录执行，使用同一个部署用户管理 PM2：
+
+```bash
+npm install -g pm2
+npm ci
+npm run build:api
+npm run start:prod
+npm run status:prod
+```
+
+启动前配置根目录 `.env` 的数据库连接、`JWT_SECRET` 和 `API_PORT`。例如 `API_PORT=20026` 时，Nginx 将 `api.example.com` 的请求转发到 `http://127.0.0.1:20026`，并保留 `/api` 路径。启动前需确保数据库表结构已准备好；API 不会自动同步表结构。
+
+根目录 `ecosystem.config.cjs` 管理 `studymy-api` 单进程，直接运行 `apps/api/dist/main.js`。工作目录固定为 `apps/api`，根目录 `.env` 由现有环境加载器读取；`package.json` 的启动、重启命令通过 `--env production` 选择 `env_production`，设置 `NODE_ENV=production`，端口沿用 `.env`。已有进程环境变量优先于 `.env`，修改配置时也需检查服务器已有变量。
+
+API 监听成功后通知 PM2 就绪。停止或重启时响应 `SIGINT`、`SIGTERM`，执行 NestJS 关闭钩子释放数据库和 Redis 连接；PM2 最多等待 10 秒后强制结束进程。当前为单进程模式，重启会短暂中断服务。
+
+更新代码或 `.env` 后：
+
+```bash
+npm ci
+npm run build:api
+npm run restart:prod
+npm run status:prod
+```
+
+健康检查（端口应与 `.env` 一致）：
+
+```bash
+curl -f http://127.0.0.1:20026/health
+```
+
+查看日志：
+
+```bash
+npm run logs:prod
+```
+
+按 `Ctrl+C` 退出日志查看，不会停止 API。需要停止 API 时执行：
+
+```bash
+npm run stop:prod
+```
+
+Linux 服务器配置开机恢复：
+
+```bash
+pm2 startup
+# Run the command printed by PM2, then save the running process list.
+pm2 save
+```
+
+日志默认保存在部署用户的 `~/.pm2/logs`。API 更新后可再次执行 `pm2 save` 保存进程列表。前端仍需单独构建并通过 Nginx 等静态服务器部署。
+
 ## 管理后台迁移说明
 - 当前 admin 正式代码目录：`apps/admin/src`
 - 当前 admin 技术栈：Vue 3 + Vite + Element Plus
