@@ -449,7 +449,7 @@ export class CatalogLocalizationService {
 
   private buildContract(): CatalogLocalizationCoverageReport["contract"] {
     return {
-      endpoint: "/api/i18n/catalog-localization/coverage",
+      endpoint: "/i18n/catalog-localization/coverage",
       method: "GET",
       query: {
         entityType: [...ENTITY_TYPES],

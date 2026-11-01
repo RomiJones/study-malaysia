@@ -26,7 +26,7 @@ loadEnv();
 const apiPort = Number(process.env.TASK021_API_PORT || await getFreePort(3310));
 const webPort = Number(process.env.TASK021_WEB_PORT || await getFreePort(5176));
 const mysqlPort = process.env.STUDYMY_VISUAL_MYSQL_PORT || (process.env.MYSQL_PORT === "5306" ? "3306" : process.env.MYSQL_PORT || "3306");
-const apiBaseUrl = `http://127.0.0.1:${apiPort}/api`;
+const apiBaseUrl = `http://127.0.0.1:${apiPort}`;
 const webBaseUrl = `http://127.0.0.1:${webPort}`;
 const baseEnv = {
   ...process.env,

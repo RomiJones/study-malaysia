@@ -88,7 +88,7 @@ describe("catalog localization API service", () => {
 
     const report = await service.getCoverageReport({ limit: "20" });
 
-    assert.equal(report.contract.endpoint, "/api/i18n/catalog-localization/coverage");
+    assert.equal(report.contract.endpoint, "/i18n/catalog-localization/coverage");
     assert.ok(report.contract.query.field.includes("university.name"));
     assert.ok(report.contract.query.field.includes("program.requirement.note"));
     assert.ok(report.contract.query.publicDisplayStatus.includes("hidden-unverified"));
@@ -302,14 +302,14 @@ describe("catalog localization API service", () => {
   test("controller exposes contract and delegates coverage query", async () => {
     const calls: unknown[] = [];
     const controller = new CatalogLocalizationController({
-      getContract: () => ({ endpoint: "/api/i18n/catalog-localization/coverage" }),
+      getContract: () => ({ endpoint: "/i18n/catalog-localization/coverage" }),
       getCoverageReport: async (query: unknown) => {
         calls.push(query);
         return { summary: { scanned: { total: 0 } } };
       }
     } as any);
 
-    assert.deepEqual(controller.contract(), { endpoint: "/api/i18n/catalog-localization/coverage" });
+    assert.deepEqual(controller.contract(), { endpoint: "/i18n/catalog-localization/coverage" });
     assert.deepEqual(await controller.coverage({ entityType: "program", locale: "en" }), {
       summary: { scanned: { total: 0 } }
     });

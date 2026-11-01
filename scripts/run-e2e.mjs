@@ -43,7 +43,7 @@ const baseEnv = {
   MYSQL_DATABASE: dbName,
   REDIS_URL: "",
   JWT_SECRET: process.env.JWT_SECRET || "studymy-e2e-secret",
-  VITE_API_BASE_URL: `http://127.0.0.1:${apiPort}/api`,
+  VITE_API_BASE_URL: `http://127.0.0.1:${apiPort}`,
   VITE_ADMIN_API_BASE_URL: "/api",
   VITE_ADMIN_PROXY_TARGET: `http://127.0.0.1:${apiPort}`,
   WEB_BASE_URL: `http://127.0.0.1:${webPort}`,

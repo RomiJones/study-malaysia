@@ -5,7 +5,7 @@ import process from "node:process";
 import { chromium } from "playwright";
 
 const root = resolve(new URL("..", import.meta.url).pathname);
-const apiUrl = readArg("--api-url") || "http://127.0.0.1:3000/api/universities/universiti-sains-malaysia-usm";
+const apiUrl = readArg("--api-url") || "http://127.0.0.1:3000/universities/universiti-sains-malaysia-usm";
 const webUrl = readArg("--web-url") || "http://127.0.0.1:5173/universities/universiti-sains-malaysia-usm";
 const reportPath = resolve(readArg("--report") || "tmp/reports/usm-commercial-release-gate.json");
 const report = {

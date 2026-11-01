@@ -7,8 +7,8 @@ export class AppController {
     return {
       name: "StudyMY API",
       status: "ok",
-      apiBase: "/api",
-      endpoints: ["/api/status", "/api/universities", "/api/programs"]
+      apiBase: "/",
+      endpoints: ["/status", "/universities", "/programs"]
     };
   }
 

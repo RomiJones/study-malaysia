@@ -289,11 +289,11 @@ export class NotionService {
       schemaVersion: SNAPSHOT_SCHEMA_VERSION,
       available: existsSync(this.taskRoot),
       endpoints: [
-        "GET /api/notion/health",
-        "GET /api/notion/tasks",
-        "GET /api/notion/tasks/:taskId",
-        "GET /api/notion/tasks/:taskId/dependency-plan",
-        "POST /api/notion/tasks/validate"
+        "GET /notion/health",
+        "GET /notion/tasks",
+        "GET /notion/tasks/:taskId",
+        "GET /notion/tasks/:taskId/dependency-plan",
+        "POST /notion/tasks/validate"
       ],
       constraints: {
         readOnly: true,

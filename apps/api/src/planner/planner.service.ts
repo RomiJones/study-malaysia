@@ -301,8 +301,8 @@ export class PlannerService {
       dashboard: await this.getDashboard(userId),
       skippedTasks,
       mergeStrategy: {
-        favorites: "Call POST /api/favorites/merge with localStorage universityIds and programIds.",
-        compare: "Call POST /api/compare/merge with localStorage universityIds.",
+        favorites: "Call POST /favorites/merge with localStorage universityIds and programIds.",
+        compare: "Call POST /compare/merge with localStorage universityIds.",
         plannerProfile: "Explicit local profile fields overwrite server fields.",
         materialProgress: "Explicit local material statuses overwrite matching server keys.",
         visaChecklist: "Explicit local checklist flags overwrite matching server keys.",

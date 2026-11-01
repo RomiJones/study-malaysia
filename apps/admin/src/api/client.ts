@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const resolvedBaseUrl = import.meta.env.VITE_ADMIN_API_BASE_URL || import.meta.env.VITE_API_BASE_URL || "/api";
+const resolvedBaseUrl = import.meta.env.VITE_ADMIN_API_BASE_URL || import.meta.env.VITE_API_BASE_URL || "http://localhost:3000";
 
 export const http = axios.create({
   baseURL: resolvedBaseUrl

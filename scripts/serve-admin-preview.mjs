@@ -27,8 +27,9 @@ const server = http.createServer(async (req, res) => {
     return;
   }
 
-  if (req.url.startsWith("/api")) {
-    const targetUrl = new URL(req.url, apiTarget);
+  if (/^\/api(?=\/|$|\?)/.test(req.url)) {
+    const upstreamPath = req.url.replace(/^\/api(?=\/|$|\?)/, "") || "/";
+    const targetUrl = new URL(upstreamPath, apiTarget);
     const proxyReq = http.request(targetUrl, { method: req.method, headers: req.headers }, (proxyRes) => {
       res.writeHead(proxyRes.statusCode || 500, proxyRes.headers);
       proxyRes.pipe(res);

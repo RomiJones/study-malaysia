@@ -1,6 +1,6 @@
 const env = (import.meta as ImportMeta & { env?: Record<string, string | undefined> }).env || {};
 
-export const API_BASE_URL = env.VITE_API_BASE_URL || "http://localhost:3000/api";
+export const API_BASE_URL = env.VITE_API_BASE_URL || "http://localhost:3000";
 
 export async function apiFetch<T>(path: string, options: RequestInit = {}, token?: string): Promise<T> {
   const { headers, ...requestOptions } = options;

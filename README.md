@@ -29,15 +29,17 @@ StudyMY 是一个面向马来西亚留学选校、申请规划与内容管理的
 关键变量说明：
 - `MYSQL_PORT=5306`
 - `API_PORT=3000`
-- `VITE_API_BASE_URL=http://localhost:3000/api`
-- `VITE_ADMIN_API_BASE_URL=/api`
+- `VITE_API_BASE_URL=http://localhost:3000`
+- `VITE_ADMIN_API_BASE_URL=http://localhost:3000`
 - `VITE_ADMIN_PROXY_TARGET=http://localhost:3000`
 - `ADMIN_BASE_URL=http://localhost:3001`
 
 说明：
 - 前台默认直接访问 `VITE_API_BASE_URL`
-- 管理后台开发模式默认通过 Vite 代理把 `/api` 转发到 `VITE_ADMIN_PROXY_TARGET`
+- 管理后台默认直接请求 API 地址；若设置 `VITE_ADMIN_API_BASE_URL=/api`，开发代理会移除 `/api` 前缀后转发到 `VITE_ADMIN_PROXY_TARGET`
 - 管理后台如果独立部署，也可以把 `VITE_ADMIN_API_BASE_URL` 改成完整 API 地址
+- API 不使用全局 `/api` 前缀，例如状态接口为 `/status`，院校接口为 `/universities`
+- 前端 Vite 默认读取各应用目录的环境文件；生产环境分别在 `apps/web/.env.production` 和 `apps/admin/.env.production` 设置上述 API 地址，或通过构建环境变量注入。仅修改根目录 `.env` 不会自动更新前端构建配置
 
 ## 依赖服务
 - MySQL 8.0
@@ -104,7 +106,7 @@ npm run start:prod
 npm run status:prod
 ```
 
-启动前配置根目录 `.env` 的数据库连接、`JWT_SECRET` 和 `API_PORT`。例如 `API_PORT=20026` 时，Nginx 将 `api.example.com` 的请求转发到 `http://127.0.0.1:20026`，并保留 `/api` 路径。启动前需确保数据库表结构已准备好；API 不会自动同步表结构。
+启动前配置根目录 `.env` 的数据库连接、`JWT_SECRET` 和 `API_PORT`。例如 `API_PORT=20026` 时，Nginx 将 `api.example.com` 的请求原路径转发到 `http://127.0.0.1:20026`，不添加 `/api`；`https://api.example.com/status` 对应后端 `/status`。前端 API 地址设置为 `https://api.example.com`，修改后重新构建部署前台和管理后台。启动前需确保数据库表结构已准备好；API 不会自动同步表结构。
 
 根目录 `ecosystem.config.cjs` 管理 `studymy-api` 单进程，直接运行 `apps/api/dist/main.js`。工作目录固定为 `apps/api`，根目录 `.env` 由现有环境加载器读取；`package.json` 的启动、重启命令通过 `--env production` 选择 `env_production`，设置 `NODE_ENV=production`，端口沿用 `.env`。已有进程环境变量优先于 `.env`，修改配置时也需检查服务器已有变量。
 

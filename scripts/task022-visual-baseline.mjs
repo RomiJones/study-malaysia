@@ -84,7 +84,7 @@ async function main() {
   assert(/^[a-zA-Z0-9_]+$/.test(databaseName), "视觉验证数据库名只能包含字母、数字和下划线");
   apiPort = Number(process.env.STUDYMY_VISUAL_API_PORT || await getFreePort(3322));
   webPort = Number(process.env.STUDYMY_VISUAL_WEB_PORT || await getFreePort(5182));
-  apiBaseUrl = `http://127.0.0.1:${apiPort}/api`;
+  apiBaseUrl = `http://127.0.0.1:${apiPort}`;
   webBaseUrl = `http://127.0.0.1:${webPort}`;
   baseEnv = {
     ...process.env,

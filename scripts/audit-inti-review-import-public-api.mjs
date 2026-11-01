@@ -37,7 +37,7 @@ function addIssue(issues, code, message, evidence = {}) {
 }
 
 const issues = [];
-const university = await getJson("/api/universities/inti-international-university");
+const university = await getJson("/universities/inti-international-university");
 const publicPrograms = Array.isArray(university.programs) ? university.programs : [];
 const catalogueSummary = university.catalogStatusSummary || {};
 if (university.code !== "INTI") addIssue(issues, "wrong-university", "INTI public university route returned the wrong code.", { code: university.code });
@@ -47,20 +47,20 @@ if (catalogueSummary?.all?.total !== 0 || catalogueSummary?.all?.needsReview !==
   addIssue(issues, "catalogue-summary-leakage", "INTI public catalogue summary exposes review-only partition counts.", { catalogueSummary });
 }
 
-const publicSearch = await getJson("/api/programs?search=INTI&pageSize=200");
+const publicSearch = await getJson("/programs?search=INTI&pageSize=200");
 const publicSearchItems = listItems(publicSearch);
 const reviewSearchMatches = publicSearchItems.filter((item) => String(item.slug || "").startsWith("inti-official-2026-review-row-"));
 if (reviewSearchMatches.length !== 0) {
   addIssue(issues, "program-search-leakage", "Public programme search exposes INTI review-only rows.", { slugs: reviewSearchMatches.map((item) => item.slug) });
 }
 
-const publicUniversityPrograms = await getJson("/api/programs?universityId=13&pageSize=200");
+const publicUniversityPrograms = await getJson("/programs?universityId=13&pageSize=200");
 const publicUniversityProgramItems = listItems(publicUniversityPrograms);
 if (publicUniversityProgramItems.some((item) => String(item.slug || "").startsWith("inti-official-2026-review-row-"))) {
   addIssue(issues, "university-program-list-leakage", "Public programme list by university exposes INTI review-only rows.");
 }
 
-const reviewDetailStatus = await getStatus(`/api/programs/${reviewSlug}`);
+const reviewDetailStatus = await getStatus(`/programs/${reviewSlug}`);
 if (reviewDetailStatus !== 404) {
   addIssue(issues, "review-detail-route-leakage", "Public detail route for an INTI review-only row is accessible.", { status: reviewDetailStatus });
 }
@@ -70,7 +70,7 @@ const report = {
   checkedAt: new Date().toISOString(),
   baseUrl,
   universityRoute: {
-    path: "/api/universities/inti-international-university",
+    path: "/universities/inti-international-university",
     code: university.code,
     slug: university.slug,
     publicDisplayStatus: university.publicDisplayStatus,
@@ -78,17 +78,17 @@ const report = {
     catalogStatusSummary: catalogueSummary
   },
   publicProgramSearch: {
-    path: "/api/programs?search=INTI&pageSize=200",
+    path: "/programs?search=INTI&pageSize=200",
     itemCount: publicSearchItems.length,
     reviewSlugMatches: reviewSearchMatches.length
   },
   publicProgramListByUniversity: {
-    path: "/api/programs?universityId=13&pageSize=200",
+    path: "/programs?universityId=13&pageSize=200",
     itemCount: publicUniversityProgramItems.length,
     reviewSlugMatches: publicUniversityProgramItems.filter((item) => String(item.slug || "").startsWith("inti-official-2026-review-row-")).length
   },
   reviewDetailRoute: {
-    path: `/api/programs/${reviewSlug}`,
+    path: `/programs/${reviewSlug}`,
     status: reviewDetailStatus
   },
   conclusion: issues.length

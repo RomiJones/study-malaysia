@@ -9,12 +9,11 @@ loadEnvFiles();
 async function bootstrap() {
   const app = await NestFactory.create(AppModule, { cors: true });
   app.enableShutdownHooks(["SIGINT", "SIGTERM"]);
-  app.setGlobalPrefix("api");
   const rootInfo = {
     name: "StudyMY API",
     status: "ok",
-    apiBase: "/api",
-    endpoints: ["/api/status", "/api/universities", "/api/programs"]
+    apiBase: "/",
+    endpoints: ["/status", "/universities", "/programs"]
   };
   const expressApp = app.getHttpAdapter().getInstance();
   expressApp.get("/", (_request: unknown, response: { json: (body: unknown) => void }) => {
@@ -39,7 +38,7 @@ async function bootstrap() {
   if (process.send) {
     process.send("ready");
   }
-  console.log(`StudyMY API running on http://localhost:${port}/api`);
+  console.log(`StudyMY API running on http://localhost:${port}`);
 }
 
 bootstrap().catch((error: unknown) => {
