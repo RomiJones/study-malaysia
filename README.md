@@ -65,6 +65,16 @@ npm run seed
 npm run dev:api
 ```
 
+API 开发脚本使用 `nest start --watch --path tsconfig.build.json`，源码变化后自动重新编译并启动。首次运行前需执行 `npm --workspace @studymy/shared run build`，准备共享包构建产物。
+
+不监听源码变化时，在项目根目录执行：
+
+```bash
+npm --workspace @studymy/api run start
+```
+
+该命令使用 `nest start --path tsconfig.build.json`，先编译再启动。两种启动方式均沿用现有环境加载器读取 `.env`，不会自动设置 `NODE_ENV=production` 或按环境名加载 `.env.production`。生产部署使用下文的 PM2 命令。
+
 启动前台：
 ```bash
 npm run dev:web
